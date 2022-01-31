@@ -1,0 +1,1995 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Time15",
+      "text": "\"What I'd give,\" Lauchlan says, \"for a bite...\"\\n\\nYour own gut is eating itself, \\nacids [[churning|hub2]] their protest.\\n",
+      "links": [
+        {
+          "text": "churning",
+          "destination": {
+            "name": "hub2",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "do it",
+      "text": "You impale the cat and <<if $time lte 4>>[[roast|hub2]]<<endif>><<if $time is 5>>[[roast|Time1]]<<endif>><<if $time is 6>>[[roast|hub2]]<<endif>><<if $time is 7>>[[roast|Time2]]<<endif>><<if $time is 8>>[[roast|hub2]]<<endif>><<if $time is 9>>[[roast|hub2]]<<endif>><<if $time is 10>>[[roast|Time3]]<<endif>><<if $time is 11>>[[roast|hub2]]<<endif>><<if $time is 12>>[[roast|Time4]]<<endif>><<if $time is 13>>[[roast|Time5]]<<endif>><<if $time is 14>>[[roast|hub2]]<<endif>><<if $time is 15>>[[roast|Time6]]<<endif>><<if $time is 16>>[[roast|Time7]]<<endif>><<if $time is 17>>[[roast|hub2]]<<endif>><<if $time is 18>>[[roast|hub2]]<<endif>><<if $time is 19>>[[roast|Time8]]<<endif>><<if $time is 20>>[[roast|hub2]]<<endif>><<if $time is 21>>[[roast|Time9]]<<endif>><<if $time is 22>>[[roast|Time10]]<<endif>><<if $time is 23>>[[roast|Time11]]<<endif>><<if $time is 24>>[[roast|Time12]]<<endif>><<if $time is 25>>[[roast|Time13]]<<endif>><<if $time is 26>>[[roast|hub2]]<<endif>><<if $time is 27>>[[roast|hub2]]<<endif>><<if $time is 28>>[[roast|Time14]]<<endif>><<if $time is 29>>[[roast|Time15]]<<endif>><<if $time is 30>>[[roast|hub2]]<<endif>><<if $time is 31>>[[roast|hub2]]<<endif>><<if $time is 32>>[[roast|Time16]]<<endif>><<if $time is 33>>[[roast|Time17]]<<endif>><<if $time is 34>>[[roast|hub2]]<<endif>><<if $time is 35>>[[roast|hub2]]<<endif>><<if $time is 36>>[[roast|Time18]]<<endif>><<if $time is 37>>[[roast|Time19]]<<endif>><<if $time is 38>>[[roast|hub2]]<<endif>><<if $time is 39>>[[roast|Time20]]<<endif>><<if $time is 40>>[[roast|hub2]]<<endif>><<if $time is 41>>[[roast|hub2]]<<endif>><<if $time is 42>>[[roast|Time21]]<<endif>><<if $time is 43>>[[roast|hub2]]<<endif>><<if $time is 44>>[[roast|Time22]]<<endif>><<if $time is 45>>[[roast|Time23]]<<endif>><<if $time is 46>>[[roast|hub2]]<<endif>><<if $time is 47>>[[roast|hub2]]<<endif>><<if $time is 48>>[[roast|Time24]]<<endif>><<if $time is 49>>[[roast|hub2]]<<endif>><<if $time is 50>>[[roast|Time25]]<<endif>><<if $time is 51>>[[roast|hub2]]<<endif>><<if $time is 52>>[[roast|hub2]]<<endif>><<if $time is 53>>[[roast|Time26]]<<endif>><<if $time is 54>>[[roast|hub2]]<<endif>><<if $time is 55>>[[roast|Time23]]<<endif>><<if $time is 56>>[[roast|hub2]]<<endif>><<if $time is 57>>[[roast|Time27]]<<endif>> it\\non the spit over the flames.<<set $fire to $fire +1>><<set $time to $time +1>><<set $crank to 0>><<set $hub to 0>><<set $death to random(2)>><<if $death is 0>><<playsound \"Cat_Death.mp3\">><<endif>><<if $death is 1>><<playsound \"Cat_Death2.mp3\">><<endif>><<if $death is 2>><<playsound \"Cat_Death3.mp3\">><<endif>>",
+      "links": [
+        {
+          "text": "roast",
+          "destination": {
+            "name": "hub2",
+            "pid": 72
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time1",
+            "pid": 31
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time2",
+            "pid": 32
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time3",
+            "pid": 33
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time4",
+            "pid": 27
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time5",
+            "pid": 28
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time6",
+            "pid": 29
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time7",
+            "pid": 30
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time8",
+            "pid": 24
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time9",
+            "pid": 25
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time10",
+            "pid": 4
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time11",
+            "pid": 96
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time12",
+            "pid": 93
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time13",
+            "pid": 94
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time14",
+            "pid": 91
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time15",
+            "pid": 1
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time16",
+            "pid": 89
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time17",
+            "pid": 90
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time18",
+            "pid": 87
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time19",
+            "pid": 109
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time20",
+            "pid": 18
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time21",
+            "pid": 17
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time22",
+            "pid": 16
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time23",
+            "pid": 15
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time24",
+            "pid": 14
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time25",
+            "pid": 13
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time26",
+            "pid": 107
+          }
+        },
+        {
+          "text": "roast",
+          "destination": {
+            "name": "Time27",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "hitch",
+      "text": "\"What's the hitch?\" asks Lauchlan.\\n\"Never mind. I'll go ahead.\"<<timedgoto \"lauchskewer\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "lauchskewer",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Time10",
+      "text": "Above you in the darkness you can feel it \\nlooking down, and then you see the shadows\\nslink across the floor. Something smaller\\nthan a dog but [[larger|Time101]] than a rat.",
+      "links": [
+        {
+          "text": "larger",
+          "destination": {
+            "name": "Time101",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "cold",
+      "text": "Every person will learn soon enough.<<timedgoto \"ending\" 5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "ending",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "wood",
+      "text": "You cast more wood [[into the pit|hub4]].<<set $fire to 0>><<playsound \"Fire_Rush.mp3\">>",
+      "links": [
+        {
+          "text": "into the pit",
+          "destination": {
+            "name": "hub4",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "first sack",
+      "text": "You will take turns but the first sack\\ngoes to you. Lauchlan [[watches|cat]] as you\\nunfasten its mouth to reach inside.<<set $fire to 0>>",
+      "links": [
+        {
+          "text": "watches",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "combo",
+      "text": "(function () {\\n  \"use strict\";\\n  version.extensions['replaceMacrosCombined'] = {\\n    major: 1,\\n    minor: 0,\\n    revision: 0\\n  };\\n  var nullobj = { handler: function () {} };\\n  function showVer(n,notrans) {\\n\\tn.innerHTML = \"\";\\n\\tnew Wikifier(n, n.tweecode);\\n\\tn.setAttribute(\"data-enabled\", \"true\");\\n\\tn.style.display = \"inline\";\\n\\tn.classList.remove(\"revision-span-out\");\\n\\tif (!notrans) {\\n\\t  n.classList.add(\"revision-span-in\");\\n\\t  if (n.timeout) clearTimeout(n.timeout);\\n\\t  n.timeout = setTimeout(function () {\\n\\t    n.classList.remove(\"revision-span-in\");\\n\\t  }, 1);\\n\\t}\\n  }\\n  function hideVer(n,notrans) {\\n\\tn.setAttribute(\"data-enabled\", \"false\");\\n\\tn.classList.remove(\"revision-span-in\");\\n\\tif (n.timeout) clearTimeout(n.timeout);\\n\\tif (!notrans) {\\n\\t  n.classList.add(\"revision-span-out\");\\n\\t  n.timeout = setTimeout(function () {\\n\\t    if (n.getAttribute(\"data-enabled\") == \"false\") {\\n\\t      n.classList.remove(\"revision-span-out\");\\n\\t      n.style.display = \"none\";\\n\\t      n.innerHTML = \"\";\\n\\t    }\\n\\t  }, 1000);\\n\\t} else {\\n\\t    n.style.display = \"none\";\\n\\t    n.innerHTML = \"\";\\n\\t}\\n  }\\n  function tagcontents(b, starttags, desttags, endtags, k) {\\n    var l = 0,\\n      c = \"\",\\n      tg, a, i;\\n\\tfunction tagfound(i, e) {\\n      for (var j = 0; j < e.length; j++) {\\n        if (a.indexOf(\"<<\"+e[j], i) == i) {\\n          return e[j];\\n        }\\n      }\\n    }\\n    a = b.source.slice(k);\\n    for (i = 0; i < a.length; i++) {\\n      if (tg = tagfound(i, starttags)) {\\n        l++;\\n      }\\n      else if ((tg = tagfound(i, desttags)) && l == 0) {\\n        b.nextMatch = k + i + tg.length+4;\\n        return [c, tg];\\n      }\\n      else if (tg = tagfound(i, endtags)) {\\n        l--;\\n        if (l < 0) {\\n          return null;\\n        }\\n      }\\n      c += a.charAt(i);\\n    }\\n    return null;\\n  }\\n  var begintags = [];\\n  var endtags = [];\\n  function revisionSpanHandler(g, e, f, b) {\\n\\t  var k = b.source.indexOf('>>', b.matchStart) + 2,\\n\\t    vsns = [],\\n\\t\\tvtype = e,\\n\\t\\tflen = f.length,\\n\\t\\tbecomes, c, cn, m, h, vsn; \\n\\t  function mkspan(vtype) {\\n\\t      h = insertElement(m, \"span\", null, \"revision-span \"+vtype);\\n          h.setAttribute(\"data-enabled\", false);\\n          h.style.display = \"none\";\\n\\t\\t  h.tweecode = \"\";\\n\\t\\t  return h;\\n\\t  }\\n\\t  // Shorthand: <<tag \"first\">>second<<endtag>>\\n\\t  if (this.shorthand && flen) {\\n\\t    while(f.length > 0) {\\n\\t\\t  vsns.push([f.shift(),(this.flavour == \"insert\" ? \"gains\" : \"becomes\")]);\\n\\t\\t}\\n\\t  }\\n\\t  else if (this.flavour == \"insert\" || (this.flavour==\"continue\" && this.trigger==\"time\")) {\\n\\t    vsns.push([\"\",\"becomes\"]);\\n\\t  }\\n\\t  // Read all versions\\n\\t  if (this.flavour == \"continue\" && flen) {\\n\\t    // <<continue>> consumes the rest of the passage\\n\\t\\tb.nextMatch = k+b.source.slice(k).length;\\n\\t\\tvsns.push([b.source.slice(k),vtype]);\\n      }\\n\\t  else {\\n\\t    becomes = [\"becomes\", \"gains\"];\\n\\t\\tc = tagcontents(b, begintags, becomes.concat(endtags), endtags, k);\\n\\t\\tif (c && endtags.indexOf(c[1]) == -1) {\\n\\t\\t  while (c) {\\n\\t\\t\\tvsns.push(c);\\n\\t\\t\\tc = tagcontents(b, begintags, becomes, endtags, b.nextMatch);\\n\\t\\t  }\\n\\t\\t  c = tagcontents(b, begintags, [\"end\" + e], endtags, b.nextMatch);\\n\\t\\t}\\n\\t\\tif (!c) {\\n\\t\\t  throwError(g, \"can't find matching end\" + e);\\n\\t\\t  return;\\n\\t\\t}\\n        vsns.push(c);\\n\\t    if (this.flavour == \"continue\") {\\n\\t      // <<continue>> consumes the rest of the passage\\n\\t\\t  k = b.nextMatch;\\n\\t\\t  b.nextMatch = k+b.source.slice(k).length;\\n\\t\\t  vsns.push([b.source.slice(k),\"\"]);\\n        }\\n\\t  }\\n\\t  if (this.flavour == \"remove\") {\\n\\t    vsns.push([\"\",\"becomes\"]);\\n\\t  }\\n\\t  console.log(JSON.stringify(vsns));\\n\\t  // Create HTML\\n      cn = 0;\\n      m = insertElement(g, \"span\", null, e);\\n\\t  m.setAttribute(\"data-flavour\",this.flavour);\\n      h = mkspan(\"initial\");\\n\\t  vsn = vsns.shift();\\n\\t  console.log(e+\" \"+vsn[0]);\\n      h.tweecode = vsn[0];\\n\\t  showVer(h,true);\\n      while (vsns.length > 0) {\\n        if (vsn) {\\n\\t\\t  vtype = vsn[1];\\n\\t\\t}\\n        vsn = vsns.shift();\\n        h = mkspan(vtype);\\n        h.tweecode = vsn[0];\\n      }\\n\\t  // Make the trigger, if any\\n\\t  if (typeof this.setup == \"function\") {\\n\\t    this.setup(m,g,f);\\n\\t  }\\n  }\\n  function quantity(m) {\\n    return (m.children.length-1)+(m.getAttribute(\"data-flavour\")==\"remove\");\\n  }\\n  // Trigger setup functions;\\n  function revisionSetup(m,g,f) {\\n    m.className += \" \" + f[0].replace(\" \", \"_\");\\n    showVer(m.firstChild,true);\\n  }\\n  function timeSetup(m,g,f) {\\n\\tfunction cssTimeUnit(s) {\\n\\t\\tif (typeof s == \"string\") {\\n\\t\\t  if (s.slice(-2).toLowerCase() == \"ms\") {\\n\\t\\t\\treturn Number(s.slice(0, -2)) || 0;\\n\\t\\t  }\\n\\t\\t  else if (s.slice(-1).toLowerCase() == \"s\") {\\n\\t\\t\\treturn Number(s.slice(0, -1)) * 1000 || 0;\\n\\t\\t  }\\n\\t\\t}\\n\\t\\tthrowError(g, s + \" isn't a CSS time unit\");\\n\\t\\treturn 0;\\n\\t}\\n    var fl = this.flavour;\\n    var tm = cssTimeUnit(f[0]);\\n\\tsetTimeout(function timefn() {\\n\\t  var done = !revise(\"revise\", m);\\n\\t  if (!done) {\\n\\t    setTimeout(timefn,tm);\\n\\t  }\\n    }, tm);\\n  }\\n  function hoverSetup(m) {\\n\\tm.onmouseover = function () {\\n\\t\\trevise(\"revise\",m);\\n\\t};\\n\\tm.onmouseout = function () {\\n\\t\\trevise(\"revert\",m);\\n\\t};\\n  }\\n  function mouseSetup(m) {\\n\\tvar fl = this.flavour;\\n\\tm.onmouseenter = function () {\\n\\t\\tvar done = !revise(\"revise\", m);\\n\\t\\tif (done) {\\n\\t\\t  this.onmouseenter = null;\\n\\t\\t}\\n\\t};\\n  }\\n  function linkSetup(m,g,f) {\\n\\tvar fl = this.flavour,\\n\\t  l = Wikifier.createInternalLink(),\\n\\t  p = m.parentNode;\\n\\tl.className = \"internalLink replaceLink\";\\n\\tp.insertBefore(l, m);\\n\\tl.insertBefore(m, null);\\n\\tl.onclick = function () {\\n\\t\\tvar p, done = false;\\n\\t\\tif(m && m.parentNode == this) {\\n\\t\\t\\tdone = !revise(\"revise\",m);\\n\\t\\t\\tscrollWindowTo(m);\\n\\t\\t}\\n\\t\\tif (done) {\\n\\t\\t\\tthis.parentNode.insertBefore(m,this);\\n\\t\\t\\tthis.parentNode.removeChild(this);\\n\\t\\t}\\n\\t}\\n  }\\n  function visitedSetup(m,g,f) {\\n\\tvar i, done, shv = state.history[0].variables,\\n\\t\\tos = \"once seen\",\\n\\t\\td = (m.firstChild && (this.flavour == \"insert\"\\n\\t\\t    ? m.firstChild.nextSibling\\n\\t\\t    : m.firstChild).tweecode);\\n\\tshv[os] = shv[os] || {};\\n\\tif(d && !shv[os].hasOwnProperty(d)) {\\n\\t  shv[os][d]=1;\\n\\t} else {\\n\\t  for(i=shv[os][d]; i>0 && !done; i--) {\\n\\t    done=!revise(\"revise\",m,true);\\n\\t  }\\n\\t  if (shv[os].hasOwnProperty(d)) {\\n\\t    shv[os][d]+=1;\\n\\t  }\\n\\t}\\n  }\\n  // Variations\\n  [\\n    // Insert\\n    { name: \"insert\",\\n\\t  flavour: \"insert\",\\n\\t  trigger: \"link\",\\n\\t  setup: linkSetup\\n\\t},\\n    { name: \"timedinsert\",\\n\\t  flavour: \"insert\",\\n\\t  trigger: \"time\",\\n\\t  setup: timeSetup\\n\\t},\\n    { name: \"insertion\",\\n\\t  flavour: \"insert\",\\n\\t  trigger: \"revisemacro\",\\n\\t  setup: revisionSetup\\n\\t},\\n    { name: \"later\",\\n\\t  flavour: \"insert\",\\n\\t  trigger: \"visited\",\\n\\t  setup: visitedSetup\\n\\t},\\n\\t// Replace\\n    { name: \"replace\",\\n\\t  flavour: \"replace\",\\n\\t  trigger: \"link\",\\n\\t  setup: linkSetup\\n\\t},\\n    { name: \"timedreplace\",\\n\\t  flavour: \"replace\",\\n\\t  trigger: \"time\",\\n\\t  setup: timeSetup\\n\\t},\\n    { name: \"mousereplace\",\\n\\t  flavour: \"replace\",\\n\\t  trigger: \"mouse\",\\n\\t  setup: mouseSetup\\n\\t},\\n    { name: \"hoverreplace\",\\n\\t  flavour: \"replace\",\\n\\t  trigger: \"hover\",\\n\\t  setup: hoverSetup\\n\\t},\\n    { name: \"revision\",\\n\\t  flavour: \"replace\",\\n\\t  trigger: \"revisemacro\",\\n\\t  setup: revisionSetup\\n\\t},\\n\\t// Remove\\n\\t/*\\n    { name: \"remove\",\\n\\t  flavour: \"remove\",\\n\\t  trigger: \"link\",\\n\\t  setup: linkSetup\\n\\t},*/\\n    { name: \"timedremove\",\\n\\t  flavour: \"remove\",\\n\\t  trigger: \"time\",\\n\\t  setup: timeSetup\\n\\t},\\n    { name: \"mouseremove\",\\n\\t  flavour: \"remove\",\\n\\t  trigger: \"mouse\",\\n\\t  setup: mouseSetup\\n\\t},\\n    { name: \"hoverremove\",\\n\\t  flavour: \"remove\",\\n\\t  trigger: \"hover\",\\n\\t  setup: hoverSetup\\n\\t},\\n    { name: \"removal\",\\n\\t  flavour: \"remove\",\\n\\t  trigger: \"revisemacro\",\\n\\t  setup: revisionSetup\\n\\t},\\n    { name: \"once\",\\n\\t  flavour: \"remove\",\\n\\t  trigger: \"visited\",\\n\\t  setup: visitedSetup\\n\\t},\\n\\t// Continue\\n    { name: \"continue\",\\n\\t  flavour: \"continue\",\\n\\t  trigger: \"link\",\\n\\t  setup: linkSetup\\n\\t},\\n    { name: \"timedcontinue\",\\n\\t  flavour: \"continue\",\\n\\t  trigger: \"time\",\\n\\t  setup: timeSetup\\n\\t},\\n    { name: \"mousecontinue\",\\n\\t  flavour: \"continue\",\\n\\t  trigger: \"mouse\",\\n\\t  setup: mouseSetup\\n\\t},\\n\\t// Cycle\\n    { name: \"cycle\",\\n\\t  flavour: \"cycle\",\\n\\t  trigger: \"revisemacro\",\\n\\t  setup: revisionSetup\\n\\t},\\n    { name: \"mousecycle\",\\n\\t  flavour: \"cycle\",\\n\\t  trigger: \"mouse\",\\n\\t  setup: mouseSetup\\n\\t},\\n    { name: \"timedcycle\",\\n\\t  flavour: \"cycle\",\\n\\t  trigger: \"time\",\\n\\t  setup: timeSetup\\n\\t}\\n  ].forEach(function(e) {\\n\\t\\te.handler = revisionSpanHandler;\\n\\t\\te.shorthand = ([\"link\", \"mouse\", \"hover\"].indexOf(e.trigger)>-1);\\n\\t\\tmacros[e.name] = e;\\n\\t\\tmacros['end' + e.name] = nullobj;\\n\\t\\tbegintags.push(e.name);\\n\\t\\tendtags.push('end'+e.name);\\n  });\\n\\n  function reviseAll(rt, rname) {\\n    var rall = document.querySelectorAll(\".passage .\"+rname),\\n\\t  ret = false;\\n    for (var i = 0; i < rall.length; i++) {\\n      ret = ret || revise(rt,rall[i]);\\n\\t}\\n\\treturn ret;\\n  }\\n  function revise(rt, r, notrans) {\\n    var ind2, curr, next,\\n\\t  ind = -1,\\n      rev = (rt == \"revert\"),\\n      rnd = (rt.indexOf(\"random\") > -1),\\n\\t  fl = r.getAttribute(\"data-flavour\"),\\n\\t  rc = r.childNodes,\\n\\t  cyc = (fl==\"cycle\"),\\n\\t  rcl = rc.length - 1;\\n\\t  \\n    function doToGainerSpans(n, fn) {\\n      for (var k = n - 1; k >= 0; k--) {\\n        if (rc[k + 1].classList.contains(\"gains\")) {\\n          fn(rc[k],notrans);\\n        }\\n        else break;\\n      }\\n    }\\n\\n\\t  for (var k = 0; k <= rcl; k++) {\\n\\t\\tif (rc[k].getAttribute(\"data-enabled\") == \"true\") {\\n\\t\\t  ind = k;\\n\\t\\t}\\n\\t  }\\n\\t  if (rev) {\\n\\t\\tind -= 1;\\n\\t  }\\n\\t  curr = (ind >= 0 ? rc[ind] : (cyc ? rc[rcl] : null));\\n\\t  ind2 = ind;\\n\\t  if (rnd) {\\n\\t\\tind2 = (ind + (Math.floor(Math.random() * rcl))) % rcl;\\n\\t  } \\n\\t  next = ((ind2 < rcl) ? rc[ind2+1] : (cyc ? rc[0] : null));\\n\\t  var docurr = (rev ? showVer : hideVer);\\n\\t  var donext = (rev ? hideVer : showVer);\\n\\t  if (curr) {\\n\\t\\tif (!(next && next.classList.contains(\"gains\")) || rnd) {\\n\\t\\t  docurr(curr,notrans);\\n\\t\\t  doToGainerSpans(ind, docurr,notrans);\\n\\t\\t}\\n\\t  }\\n\\t  if (next) {\\n\\t\\tdonext(next,notrans);\\n\\t\\tif (rnd) {\\n\\t\\t  doToGainerSpans(ind2+1, donext,notrans);\\n\\t\\t}\\n\\t  }\\n\\t  return (cyc ? true : (rev ? (ind > 0) : (ind2 < rcl-1)));\\n  }\\n\\n  macros['revert'] = macros['revise'] = macros['randomise'] = macros['randomize'] = {\\n    handler: function (a, b, c) {\\n      var l, rev, rname;\\n      function disableLink(l) {\\n        l.style.display = \"none\";\\n      }\\n      function enableLink(l) {\\n        l.style.display = \"inline\";\\n      }\\n      function updateLink(l) {\\n        if (l.className.indexOf(\"random\") > -1) {\\n          enableLink(l);\\n          return;\\n        }\\n        var rall = document.querySelectorAll(\".passage .\"+rname),\\n          cannext, canprev, i, ind, r, fl;\\n        for (i = 0; i < rall.length; i++) {\\n             r = rall[i],\\n\\t\\t     fl = r.getAttribute(\"data-flavour\");\\n          if (fl==\"cycle\") {\\n            cannext = canprev = true;\\n          }\\n          else {\\n            if (r.firstChild.getAttribute(\"data-enabled\") == !1+\"\") {\\n              canprev = true;\\n            }\\n            if (r.lastChild.getAttribute(\"data-enabled\") == !1+\"\") {\\n\\t\\t\\t  cannext = true;\\n\\t\\t\\t}\\n          }\\n        }\\n        var can = (l.classList.contains(\"revert\") ? canprev : cannext);\\n        (can ? enableLink : disableLink)(l);\\n      }\\n      function toggleText(w) {\\n          w.classList.toggle(rl + \"Enabled\");\\n          w.classList.toggle(rl + \"Disabled\");\\n          w.style.display = ((w.style.display == \"none\") ? \"inline\" : \"none\");\\n      }\\n      var rl = \"reviseLink\";\\n      if (c.length < 2) {\\n        throwError(a, b + ' macro needs 2 parameters');\\n        return;\\n      }\\n      rname = c.shift().replace(\" \", \"_\");\\n      l = Wikifier.createInternalLink(a, null);\\n      l.className = \"internalLink \" + rl + \" \" + rl + \"_\" + rname + \" \" + b;\\n      var v = \"\";\\n      var end = false;\\n      var out = false;\\n      if(c.length>1 && c[0][0] == \"$\") {\\n        v = c[0].slice(1);\\n        c.shift();\\n      }\\n      switch(c[c.length - 1]) {\\n        case \"end\":\\n          end = true;\\n          c.pop();\\n          break;\\n        case \"out\":\\n          out = true;\\n          c.pop();\\n          break;\\n      }\\n      var h = state.history[0].variables;\\n      for(var i = 0; i < c.length; i++) {\\n        var on = (i == Math.max(c.indexOf(h[v]), 0));\\n        var d = insertElement(null, \"span\", null, rl + ((on) ? \"En\" : \"Dis\") + \"abled\");\\n        if(on) {\\n          h[v] = c[i];\\n          l.setAttribute(\"data-cycle\", i);\\n        } else {\\n          d.style.display=\"none\";\\n        }\\n        insertText(d, c[i]);\\n        l.appendChild(d);\\n      }\\n      l.onclick = function () {\\n        reviseAll(b, rname);\\n        var t = this.childNodes,\\n          u = this.getAttribute(\"data-cycle\") - 0,\\n          m = t.length,\\n\\t\\t  n, lall, i;\\n        if((end || out) && u == m - (end ? 2 : 1)) {\\n          if (end) {\\n            n = this.removeChild(t[u + 1]);\\n            n.className = rl + \"End\";\\n            n.style.display = \"inline\";\\n            this.parentNode.replaceChild(n, this);\\n          } else {\\n            this.parentNode.removeChild(this);\\n            return;\\n          }\\n        } else {\\n          toggleText(t[u]);\\n          u = (u + 1) % m;\\n          if(v) {\\n            h[v] = c[u];\\n          }\\n          toggleText(t[u]);\\n          this.setAttribute(\"data-cycle\", u);\\n        }\\n        lall = document.getElementsByClassName(rl + \"_\" + rname);\\n        for (i = 0; i < lall.length; i++) {\\n          updateLink(lall[i]);\\n        }\\n      };\\n      disableLink(l);\\n      setTimeout(function () {\\n        updateLink(l);\\n      }, 1);\\n    }\\n  }\\n  macros['mouserevise'] = macros['hoverrevise'] = {\\n    handler: function (a, b, c, d) {\\n      var endtags = [\"end\" + b];\\n      var t = tagcontents(d, [b], endtags, endtags, d.source.indexOf('>>', d.matchStart) + 2);\\n      if (t) {\\n        var rname = c[0].replace(\" \", \"_\"),\\n          h = insertElement(a, \"span\", null, \"hoverrevise hoverrevise_\" + rname),\\n\\t\\t  f = function() {\\n            var done = !reviseAll(\"revise\", rname);\\n\\t\\t    if (b != \"hoverrevise\" && done) {\\n\\t\\t      this.onmouseenter = null;\\n\\t\\t    }\\n          };\\n\\t\\tnew Wikifier(h, t[0]);\\n        if (b == \"hoverrevise\") {\\n\\t\\t  h.onmouseover = f;\\n\\t\\t  h.onmouseout = function () {\\n            reviseAll(\"revert\", rname);\\n          }\\n\\t\\t} else {\\n\\t\\t  h.onmouseenter = f;\\n\\t\\t}\\n      }\\n    }\\n  }\\n  macros['endmouserevise'] = nullobj;\\n  macros['endhoverrevise'] = nullobj;\\n}());",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "StoryTitle",
+      "text": "Taghairm",
+      "links": []
+    },
+    {
+      "pid": 10,
+      "name": "Sound",
+      "text": "(function () {\\n  \"use strict\";\\n  version.extensions['soundMacros'] = {\\n    major: 1,\\n    minor: 1,\\n    revision: 2\\n  };\\n  var p = macros['playsound'] = {\\n    soundtracks: {},\\n    handler: function (a, b, c, d) {\\n      var loop = function (m) {\\n          if (m.loop == undefined) {\\n            m.loopfn = function () {\\n              this.play();\\n            };\\n            m.addEventListener('ended', m.loopfn, 0);\\n          } else m.loop = true;\\n          m.play();\\n          };\\n      var s = eval(d.fullArgs());\\n      if (s) {\\n        s = s.toString();\\n        var m = this.soundtracks[s.slice(0, s.lastIndexOf(\".\"))];\\n        if (m) {\\n          if (b == \"playsound\") {\\n            m.play();\\n          } else if (b == \"loopsound\") {\\n            loop(m);\\n          } else if (b == \"pausesound\") {\\n            m.pause();\\n          } else if (b == \"unloopsound\") {\\n            if (m.loop != undefined) {\\n              m.loop = false;\\n            } else if (m.loopfn) {\\n              m.removeEventListener('ended', m.loopfn);\\n              delete m.loopfn;\\n            }\\n          } else if (b == \"stopsound\") {\\n            m.pause();\\n            m.currentTime = 0;\\n          } else if (b == \"fadeoutsound\" || b == \"fadeinsound\") {\\n            if (m.interval) clearInterval(m.interval);\\n            if (b == \"fadeinsound\") {\\n              if (m.currentTime>0) return;\\n              m.volume = 0;\\n              loop(m);\\n            } else {\\n              if (!m.currentTime) return;\\n              m.play();\\n            }\\n            var v = m.volume;\\n            m.interval = setInterval(function () {\\n              v = Math.min(1, Math.max(0, v + 0.005 * (b == \"fadeinsound\" ? 1 : -1)));\\n              m.volume = Math.easeInOut(v);\\n              if (v == 0 || v == 1) clearInterval(m.interval);\\n              if (v == 0) {\\n                m.pause();\\n                m.currentTime = 0;\\n                m.volume = 1;\\n              }\\n            }, 10);\\n          }\\n        }\\n      }\\n    }\\n  }\\n  macros['fadeinsound'] = p;\\n  macros['fadeoutsound'] = p;\\n  macros['unloopsound'] = p;\\n  macros['loopsound'] = p;\\n  macros['pausesound'] = p;\\n  macros['stopsound'] = p;\\n  macros['stopallsound'] = {\\n    handler: function () {\\n      var s = macros.playsound.soundtracks;\\n      for (var j in s) {\\n\\t\\tif (s.hasOwnProperty(j)) {\\n          s[j].pause();\\n          if (s[j].currentTime) {\\n\\t\\t    s[j].currentTime = 0;\\n\\t\\t  }\\n\\t\\t}\\n      }\\n    }\\n  }\\n  var div = document.getElementById(\"storeArea\").firstChild;\\n  var fe = [\"ogg\", \"mp3\", \"wav\", \"webm\"];\\n  while (div) {\\n    var b = String.fromCharCode(92);\\n    var q = '\"';\\n    var re = \"['\" + q + \"]([^\" + q + \"']*?)\" + b + \".(ogg|mp3|wav|webm)['\" + q + \"]\";\\n    k(new RegExp(re, \"gi\"));\\n    div = div.nextSibling;\\n  }\\n\\n  function k(c, e) {\\n    do {\\n      var d = c.exec(div.innerHTML);\\n      if (d) {\\n        var a = new Audio();\\n        if (a.canPlayType) {\\n          for (var i = -1; i < fe.length; i += 1) {\\n            if (i >= 0) d[2] = fe[i];\\n            if (a.canPlayType(\"audio/\" + d[2])) break;\\n          }\\n          if (i < fe.length) {\\n            a.setAttribute(\"src\", d[1] + \".\" + d[2]);\\n            a.interval = null;\\n            macros.playsound.soundtracks[d[1]] = a;\\n          } else console.log(\"Browser can't play '\" + d[1] + \"'\");\\n        }\\n      }\\n    } while (d);\\n  }\\n}());",
+      "links": []
+    },
+    {
+      "pid": 11,
+      "name": "Time27",
+      "text": "Timbers buckle. A storm rumbles.\\nSparks fly into the rafters and eyes \\nin the millions [[gleam|Time271]] down onto you.<<loopsound \"Storm.mp3\">>",
+      "links": [
+        {
+          "text": "gleam",
+          "destination": {
+            "name": "Time271",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "wood1",
+      "text": "You cast more wood [[into the pit|hub3]].<<set $fire to 0>><<playsound \"Fire_Rush.mp3\">>\\n",
+      "links": [
+        {
+          "text": "into the pit",
+          "destination": {
+            "name": "hub3",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Time25",
+      "text": "It begins with first one cat, then another.\\nIt must have something to do with the hour.\\nThey are howling. A chorus. [[Lamentation.|Time251]]<<set $watch to 5>><<loopsound \"Caterwaul.mp3\">><<fadeoutsound \"Hiss.mp3\">>",
+      "links": [
+        {
+          "text": "Lamentation.",
+          "destination": {
+            "name": "Time251",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Time24",
+      "text": "Your cousin's face is masked with ash,\\nhis hands and arms blistered. He chokes\\nwith smoke whenever he inhales.\\n\\nNothing but [[pain|cat]].",
+      "links": [
+        {
+          "text": "pain",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Time23",
+      "text": "Anathemas. Abominations. Murderers.<<timedgoto \"hub1\" 2s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Time22",
+      "text": "Their clowders crowd the rafters,\\neyes alive with firelight, \\namassed and sliding. Beasts. Demons.\\n\\nThere are [[hundreds|cat]].",
+      "links": [
+        {
+          "text": "hundreds",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Time21",
+      "text": "Their voices whisper to you in hisses.\\n\\nAnathemas. Abominations. Murderers.\\n\\nYou [[don't listen|Time212]].<<set $watch to 4>><<loopsound \"Hiss.mp3\">>",
+      "links": [
+        {
+          "text": "don't listen",
+          "destination": {
+            "name": "Time212",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Time20",
+      "text": "Still more arrive. They are waiting\\nin the shadows and the smoke,\\njust like the [[cats|Time201]] you've been spitting.<<set $clowder to 1>>",
+      "links": [
+        {
+          "text": "cats",
+          "destination": {
+            "name": "Time201",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "ending",
+      "text": "@@color:grey;font-size:2em;[[Taghairm|definition]]@@<<if $credits is 1>>\\nChandler Groover\\n\\n[[Sound Credits|sounds]]\\n[[About]]<<endif>>",
+      "links": [
+        {
+          "text": "Taghairm",
+          "destination": {
+            "name": "definition",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Sound Credits",
+          "destination": {
+            "name": "sounds",
+            "pid": 66
+          }
+        },
+        {
+          "text": "About",
+          "destination": {
+            "name": "About",
+            "pid": 99
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "morning",
+      "text": "Now that the morning's arrived\\nshe glances sideways from the bed\\nand says nothing.<<timedgoto \"nothing\" 5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "nothing",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "roast",
+      "text": "<<set $quickly to 1>>Not quickly.\\n\\nOtherwise you\\nwouldn't have [[enough|hub2]].",
+      "links": [
+        {
+          "text": "enough",
+          "destination": {
+            "name": "hub2",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "release",
+      "text": "You hesitate.<<timedgoto \"hitch\" 2s>><<set $fire to $fire +1>><<set $release to 1>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hitch",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "skewer",
+      "text": "Next you lift a skewer.\\n\\nYou could <<if $quickly is 0>>[[do it|doit]]<<endif>><<if $quickly is 1>>[[do it]]<<endif>>\\nor <<if $release is 0>>[[release]]<<endif>><<if $release is 1>>[[release|release2]]<<endif>><<if $release is 2>>[[release|release3]]<<endif>> the cat.",
+      "links": [
+        {
+          "text": "do it",
+          "destination": {
+            "name": "doit",
+            "pid": 102
+          }
+        },
+        {
+          "text": "do it",
+          "destination": {
+            "name": "do it",
+            "pid": 2
+          }
+        },
+        {
+          "text": "release",
+          "destination": {
+            "name": "release",
+            "pid": 22
+          }
+        },
+        {
+          "text": "release",
+          "destination": {
+            "name": "release2",
+            "pid": 64
+          }
+        },
+        {
+          "text": "release",
+          "destination": {
+            "name": "release3",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Time8",
+      "text": "More scurrying. More mice.\\nAnd nothing to [[catch|hub1]] them.",
+      "links": [
+        {
+          "text": "catch",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Time9",
+      "text": "As your second night deepens you hear\\nsomething moving again, but not a mouse.\\nIt's in the rafters.\\n\\n\"What's that?\" Lauchlan asks.\\n\\nYou [[couldn't say|hub1]] if you wanted.",
+      "links": [
+        {
+          "text": "couldn't say",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "fence",
+      "text": "Lauchlan's there, leaning onto the stone wall.\\n\\n\"Doesn't look like you've slept much,\" he says.\\n\\nYou could reply the [[same]].",
+      "links": [
+        {
+          "text": "same",
+          "destination": {
+            "name": "same",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Time4",
+      "text": "\"Devilish grueling, this,\" Lauchlan says.\\nYou can see that his own eyes are red\\nfrom the smoke, from no sleep.\\n\\nMore hours [[pass|hub1]].",
+      "links": [
+        {
+          "text": "pass",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Time5",
+      "text": "You catch yourself drifting and\\njolt back to attention.\\n\\nAnother [[sack|cat]], quickly.",
+      "links": [
+        {
+          "text": "sack",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Time6",
+      "text": "Lauchlan looks grim. It must've been\\none day by now. Longer. He ought to\\nhave slept more before this started.\\n\\nHe ought to have eaten more.\\n\\nYou ought to have eaten more [[too|hub1]].",
+      "links": [
+        {
+          "text": "too",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Time7",
+      "text": "Your hunger gnaws. Even these \\nroasted cats smell inviting.\\n\\n\"What I'd give for a [[bite|cat]],\" Lauchlan says.",
+      "links": [
+        {
+          "text": "bite",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Time1",
+      "text": "As the hours pass, you toss the roasted\\ncats into a heap. Their blackened flesh\\n[[smokes|cat]] even removed from the flames.",
+      "links": [
+        {
+          "text": "smokes",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Time2",
+      "text": "Something scuttles in the barn.\\n\\nA mouse [[perhaps|cat]].",
+      "links": [
+        {
+          "text": "perhaps",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Time3",
+      "text": "More hours pass. It must be afternoon\\nor early night outside, but in the barn\\nthere's only smoke and firelight.\\n\\nBoth your eyes [[sting|cat]].",
+      "links": [
+        {
+          "text": "sting",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Time213",
+      "text": "You [[shut your ears|cat]].",
+      "links": [
+        {
+          "text": "shut your ears",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "yes",
+      "text": "Yes, yes, you say. [[Yes.|master]]",
+      "links": [
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "master",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "barn",
+      "text": "It's empty before the harvest. Overhead the rafters \\nare shadows. A space has been cleared and a <<if $fire lte 1>>fire<<endif>><<if $fire is 2>>[[fire]]<<endif>> \\nkindled in a freshly excavated pit.\\n\\nThere are <<if $cords is 0>>[[cords]]<<endif>><<if $cords is 1>>cords<<endif>> stacked nearby.\\n<<if $sacks is 0>>[[Sacks]]<<endif>><<if $sacks is 1>>Sacks<<endif>> are piled against the walls.<<loopsound \"Fire_Pit.mp3\">><<set $crank to 0>><<set $hub to 0>>",
+      "links": [
+        {
+          "text": "fire",
+          "destination": {
+            "name": "fire",
+            "pid": 75
+          }
+        },
+        {
+          "text": "cords",
+          "destination": {
+            "name": "cords",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Sacks",
+          "destination": {
+            "name": "Sacks",
+            "pid": 100
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "hitch2",
+      "text": "\"Why the delay?\" asks Lauchlan.\\n\"Need to keep them burning. Here.\"<<timedgoto \"lauchskewer\" 5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "lauchskewer",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "hitch3",
+      "text": "You drop the cat.<<timedgoto \"hitch4\" 2s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hitch4",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "hitch4",
+      "text": "\"What've you done?\" Lauchlan cries.\\nToo late he thinks to grab another sack.<<timedgoto \"hitch5\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hitch5",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "hitch5",
+      "text": "The cat roasting above the fire dies\\nand in that moment something in the barn\\nseems to have <<if $clowder is 0>>[[gone]]<<endif>><<if $clowder is 1>>[[gone|gone1]]<<endif>>.<<fadeoutsound \"Caterwaul.mp3\">><<fadeoutsound \"Hiss.mp3\">>",
+      "links": [
+        {
+          "text": "gone",
+          "destination": {
+            "name": "gone",
+            "pid": 83
+          }
+        },
+        {
+          "text": "gone",
+          "destination": {
+            "name": "gone1",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "waiting",
+      "text": "You [[leave|waiting3]] the barn.",
+      "links": [
+        {
+          "text": "leave",
+          "destination": {
+            "name": "waiting3",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Time271",
+      "text": "Master, they say. Master. Master.<<timedgoto \"Time272\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "Time272",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Time273",
+      "text": "<<playsound \"Smash.mp3\">>A crack and the doors burst apart.\\n\\nWinds rush in to extinguish the fire.\\n\\nEverything blinks out like a candle.<<timedgoto \"candle\" 7s>><<fadeoutsound \"Fire_Pit.mp3\">>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "candle",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Time272",
+      "text": "Master.<<timedgoto \"Time273\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "Time273",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Time161",
+      "text": "Again.\\n\\n[[Snap|cat]] your head back.",
+      "links": [
+        {
+          "text": "Snap",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Untitled Script 1 1 1",
+      "text": "version.extensions.timedgotoMacro={major:1,minor:1,revision:0};macros[\"goto\"]=macros[\"timedgoto\"]={timer:null,handler:function(a,b,c,d){\\nfunction cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0;\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0;}}}throwError(a,s+\" isn't a CSS time unit\");\\nreturn 0;}var t,d,m,s;t=c[c.length-1];d=d.fullArgs();m=0;if(b!=\"goto\"){d=d.slice(0,d.lastIndexOf(t));\\nm=cssTimeUnit(t);}d=eval(Wikifier.parse(d));if(d+\"\"){if(this.timer){clearTimeout(this.timer);\\n}s=state.history[0].passage.title;this.timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a);\\n}},m);}}};",
+      "links": []
+    },
+    {
+      "pid": 47,
+      "name": "Time212",
+      "text": "Anathemas. Abominations. Murderers.<<timedgoto \"Time213\" 2s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "Time213",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "loose",
+      "text": "\"Well,\" your cousin says, \"unnatural transactions \\nnever turn out tidy-like. Somehow I think I'm glad. \\nCan't imagine how we got along that road.\"\\n\\nWhat you don't say is that [[you can]].",
+      "links": [
+        {
+          "text": "you can",
+          "destination": {
+            "name": "you can",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Time101",
+      "text": "Sitting beyond the firelight.\\n\\n[[Watching.|hub2]]<<set $watch to 1>>",
+      "links": [
+        {
+          "text": "Watching.",
+          "destination": {
+            "name": "hub2",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "same",
+      "text": "You've already discussed what happens next.\\n\\nThe barn stands open. You [[enter|barn]].",
+      "links": [
+        {
+          "text": "enter",
+          "destination": {
+            "name": "barn",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "smoldering",
+      "text": "Lauchlan collapses to his knees.\\n\\nYou do the [[same|bigears]].",
+      "links": [
+        {
+          "text": "same",
+          "destination": {
+            "name": "bigears",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "dwindling",
+      "text": "You should have listened to her \\nfrom the start.<<timedgoto \"gone2\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "gone2",
+            "pid": 110
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "definition",
+      "text": "[[Taghairm|ending]] (togherim). //Perhaps the most horrible of all recorded \\nmagical spells. It consisted of roasting a series of cats on spits until, \\nin the end, a gigantic cat appeared and granted the wishes of the \\noperants. The last known  performance of this rite was at the beginning \\nof the 17th century, and it was recorded in the //London Literary Gazette \\n(March 1824)//. It was quoted by Donald A. Mackenzie in //Scottish Folklore \\nand Folk-life//. The operants were Allan MacLean and Lauchlan MacLean, \\neach of whom wished to secure a boon. They continued the operation for \\nfour days without tasting food. The barn became full of demon black cats \\nyelling, and at length the master cat, Big Ears, appeared and granted them \\ntheir wishes, though it was said they would never look on the face of God, \\nand indeed it seems unlikely that they would.//\\n<p>--Katharine Briggs, //An Encyclopedia of Fairies</p><<set $credits to 1>>",
+      "links": [
+        {
+          "text": "Taghairm",
+          "destination": {
+            "name": "ending",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "lauchwood",
+      "text": "Lauchlan casts more wood <<if $hub is 2>>[[into the pit|hub3]]<<endif>><<if $hub is 1>>[[into the pit|hub4]]<<endif>>.<<set $fire to 0>><<playsound \"Fire_Rush.mp3\">>",
+      "links": [
+        {
+          "text": "into the pit",
+          "destination": {
+            "name": "hub3",
+            "pid": 71
+          }
+        },
+        {
+          "text": "into the pit",
+          "destination": {
+            "name": "hub4",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "timer",
+      "text": "version.extensions.timedgotoMacro={major:1,minor:1,revision:0};macros[\"goto\"]=macros[\"timedgoto\"]={timer:null,handler:function(a,b,c,d){\\nfunction cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0;\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0;}}}throwError(a,s+\" isn't a CSS time unit\");\\nreturn 0;}var t,d,m,s;t=c[c.length-1];d=d.fullArgs();m=0;if(b!=\"goto\"){d=d.slice(0,d.lastIndexOf(t));\\nm=cssTimeUnit(t);}d=eval(Wikifier.parse(d));if(d+\"\"){if(this.timer){clearTimeout(this.timer);\\n}s=state.history[0].passage.title;this.timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a);\\n}},m);}}};",
+      "links": []
+    },
+    {
+      "pid": 56,
+      "name": "turn",
+      "text": "<<set $crank to 1>>You crank the handle and the spit\\npresents a <<if $hub is 1>>[[new flank|hub1]]<<endif>><<if $hub is 2>>[[new flank|hub2]]<<endif>> to the fire.<<playsound \"Splatter.mp3\">>",
+      "links": [
+        {
+          "text": "new flank",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        },
+        {
+          "text": "new flank",
+          "destination": {
+            "name": "hub2",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Advance.",
+      "text": "She began against it.<<timedgoto \"coward\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "coward",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "Time172",
+      "text": "You [[drive|Time173]] a skewer into your own leg \\nto keep awake.<<playsound \"Stab.mp3\">>",
+      "links": [
+        {
+          "text": "drive",
+          "destination": {
+            "name": "Time173",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "StoryAuthor",
+      "text": "Chandler Groover",
+      "links": []
+    },
+    {
+      "pid": 60,
+      "name": "Time171",
+      "text": "No more drifting.<<timedgoto \"Time172\" 2s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "Time172",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "nostopping",
+      "text": "\"There's no stopping,\" says Lauchlan.\\n\"Won't you fetch [[another|cat]]?\"",
+      "links": [
+        {
+          "text": "another",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "Time201",
+      "text": "\"Then you see them too,\" Lauchlan says.\\n\\nThey continue to gather, stepping from hidden\\nregions. In your [[delirium|cat]] you cannot tell a\\nfever from the truth.<<set $watch to 3>>",
+      "links": [
+        {
+          "text": "delirium",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "release3",
+      "text": "This time you don't hesitate.<<timedgoto \"hitch3\" 2s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hitch3",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "release2",
+      "text": "Again you hesitate.<<timedgoto \"hitch2\" 2s>><<set $release to 2>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hitch2",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "Start",
+      "text": "@@color:grey;font-size:2em;[[Taghairm|Briggs]]@@",
+      "links": [
+        {
+          "text": "Taghairm",
+          "destination": {
+            "name": "Briggs",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "sounds",
+      "text": "All sounds in [[Taghairm|ending]] have been personally recorded\\nor remixed from free sources found at SoundBible.\\n\\n[[Public Domain|https://creativecommons.org/licenses/publicdomain]]\\n//Fireplace//, //Large Door Slam//, //Wind//\\n[[Sampling Plus 1.0|https://creativecommons.org/licenses/sampling+/1.0/]]\\n//Angry Cat//\\n[[Attribution 3.0|https://creativecommons.org/licenses/by/3.0/us/]]\\n//6 Cat Meows//, //Crickets at Night//, //Fire//, //Frying Circuits//, //Squish 1//, \\n//Stab//, //Thunder Strike 1//, //Thunder Strike 2//, //Thunder Strike 3//",
+      "links": [
+        {
+          "text": "Taghairm",
+          "destination": {
+            "name": "ending",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "Untitled Stylesheet 4 1",
+      "text": "#passages { margin-left: 18%; margin-top: 6%; margin-bottom: 0%; margin-right: 0%;}\\n\\n#passages { height:100%; width: 100%}\\n\\nbody [data-tags~=stars]{\\n    background-repeat: no-repeat;\\n    background-size: 100% 100%;\\n}\\nhtml [data-tags~=stars]{\\n    height: 100%\\n}\\n#passages p {\\n    text-indent: 10em;\\n}",
+      "links": []
+    },
+    {
+      "pid": 68,
+      "name": "cycling",
+      "text": "version.extensions[\"cyclinglinkMacro\"]={major:3,minor:2,revision:0};macros.cyclinglink={handler:function(a,b,c){var rl=\"cyclingLink\";\\nfunction toggleText(w){w.classList.toggle(rl+\"Enabled\");w.classList.toggle(rl+\"Disabled\");\\nw.style.display=((w.style.display==\"none\")?\"inline\":\"none\");}switch(c[c.length-1]){case\"end\":var end=true;\\nc.pop();break;case\"out\":var out=true;c.pop();break;}var v=\"\";if(c.length&&c[0][0]==\"$\"){v=c[0].slice(1);\\nc.shift();}var h=state.history[0].variables;if(out&&h[v]===\"\"){return;}var l=Wikifier.createInternalLink(a,null);\\nl.className=\"internalLink cyclingLink\";l.setAttribute(\"data-cycle\",0);for(var i=0;\\ni<c.length;i++){var on=(i==Math.max(c.indexOf(h[v]),0));var d=insertElement(null,\"span\",null,\"cyclingLink\"+((on)?\"En\":\"Dis\")+\"abled\");\\nif(on){h[v]=c[ i ];l.setAttribute(\"data-cycle\",i);}else{d.style.display=\"none\";}new Wikifier(d,c[ i ]);\\nif(on&&end&&i==c.length-1){l.parentNode.replaceChild(d,l);}else{l.appendChild(d);\\n}}l.onclick=function(){var t=this.childNodes;var u=this.getAttribute(\"data-cycle\")-0;\\nvar m=t.length;toggleText(t[u]);u=(u+1);if(!(out&&u==m)){u%=m;if(v){h[v]=c[u];}}else{h[v]=\"\";\\n}if((end||out)&&u==m-(end?1:0)){if(end){var n=this.removeChild(t[u]);n.className=rl+\"End\";\\nn.style.display=\"inline\";this.parentNode.replaceChild(n,this);}else{this.parentNode.removeChild(this);\\nreturn;}return;}toggleText(t[u]);this.setAttribute(\"data-cycle\",u);};}};",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "bigears",
+      "text": "You have blasphemed all holy and unholy things.\\nAtrocities against my kin have summoned me.\\nYou will have what you wish for \\nbut you will not have your souls.<<timedgoto \"yes\" 8s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "yes",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "master",
+      "text": "Master.<<timedgoto \"ending\" 5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "ending",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "hub3",
+      "text": "<<if $watch is 0>>You and Lauchlan watch the animal suffer.<<endif>><<if $watch is 1>>Something is watching you and Lauchlan suffer.<<endif>><<if $watch is 2>>Many eyes are watching you and Lauchlan suffer.<<endif>><<if $watch is 3>>Many hosts are watching you and Lauchlan suffer.<<endif>><<if $watch is 4>>Hisses whisper around you and Lauchlan.<<endif>><<if $watch is 5>>Lamentations wail around you and Lauchlan.<<endif>>\\nA handle's turn would turn the cat.\\n\\n<<if $crank is 0>>Burning flesh. Smoke. It's nearly dead.<<endif>><<if $crank is 1>>Sizzling fur. Spatters. Pops. It's nearly dead.<<endif>>\\n\\nFlames roar upward with a rush.\\n\\nMore wood remains to fuel the fire.\\nThere are other sacks ready at hand.<<timedgoto \"lauchturn\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "lauchturn",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "hub2",
+      "text": "<<if $watch is 0>>You and Lauchlan watch the animal suffer.<<endif>><<if $watch is 1>>Something is watching you and Lauchlan suffer.<<endif>><<if $watch is 2>>Many eyes are watching you and Lauchlan suffer.<<endif>><<if $watch is 3>>Many hosts are watching you and Lauchlan suffer.<<endif>><<if $watch is 4>>Hisses whisper around you and Lauchlan.<<endif>><<if $watch is 5>>Lamentations wail around you and Lauchlan.<<endif>>\\nA handle's <<if $crank is 0>>[[turn]]<<endif>><<if $crank is 1>>turn<<endif>> would turn the cat.\\n\\n<<if $crank is 0>><<timedreplace 3s >>Burning flesh. <<gains>> Smoke.<<gains>> It's nearly dead.<<endtimedreplace>><<endif>><<if $crank is 1>><<timedreplace 2s >>Sizzling fur. <<gains>>Spatters.<<gains>> Pops.<<gains>> It's nearly dead.<<endtimedreplace>><<endif>>\\n\\n<<if $fire is 0>>Flames roar upward with a rush.<<endif>><<if $fire is 1>>Flames lick beneath the spit.<<endif>><<if $fire is 2>>Logs crackle as the flames diminish.<<endif>><<if $fire is 3>>The flames in the pit are dwindling.<<endif>><<if $fire gte 4>>Embers smolder in the ash.<<endif>>\\n\\nMore [[wood|wood1]] remains to fuel the fire.\\nThere are other sacks ready at hand.<<if $fire gte 4>><<timedgoto \"lauchwood\" 5s>><<endif>><<if $fire lte 3>><<timedgoto \"lauchturn\" 10s>><<endif>><<set $hub to 2>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "lauchwood",
+            "pid": 54
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "lauchturn",
+            "pid": 106
+          }
+        },
+        {
+          "text": "turn",
+          "destination": {
+            "name": "turn",
+            "pid": 56
+          }
+        },
+        {
+          "text": "wood",
+          "destination": {
+            "name": "wood1",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "cords",
+      "text": "<<set $cords to 1>><<set $fire to $fire +1>>Enough wood to last\\nhowever long it needs to [[last|barn]].",
+      "links": [
+        {
+          "text": "last",
+          "destination": {
+            "name": "barn",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "hub4",
+      "text": "<<if $watch is 0>>You and Lauchlan watch the animal suffer.<<endif>><<if $watch is 1>>Something is watching you and Lauchlan suffer.<<endif>><<if $watch is 2>>Many eyes are watching you and Lauchlan suffer.<<endif>><<if $watch is 3>>Many hosts are watching you and Lauchlan suffer.<<endif>><<if $watch is 4>>Hisses whisper around you and Lauchlan.<<endif>><<if $watch is 5>>Lamentations wail around you and Lauchlan.<<endif>>\\nA handle's turn would turn the cat.\\n\\n<<if $crank is 0>>Burning flesh. Smoke. It's nearly dead.<<endif>><<if $crank is 1>>Sizzling fur. Spatters. Pops. It's nearly dead.<<endif>>\\n\\nFlames roar upward with a rush.\\n\\nMore wood remains to fuel the fire.\\nThere are [[other sacks|cat]] ready at hand.<<timedgoto \"nostopping\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "nostopping",
+            "pid": 61
+          }
+        },
+        {
+          "text": "other sacks",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "fire",
+      "text": "Over the fire Lauchlan has built a spit.\\nA handle at one end will rotate the skewer.\\nOther skewers lie along the [[floor]].",
+      "links": [
+        {
+          "text": "floor",
+          "destination": {
+            "name": "floor",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "lauchskewer",
+      "text": "He impales the cat and <<if $time lte 4>>[[roasts|hub1]]<<endif>><<if $time is 5>>[[roasts|Time1]]<<endif>><<if $time is 6>>[[roasts|hub1]]<<endif>><<if $time is 7>>[[roasts|Time2]]<<endif>><<if $time is 8>>[[roasts|hub1]]<<endif>><<if $time is 9>>[[roasts|hub1]]<<endif>><<if $time is 10>>[[roasts|Time3]]<<endif>><<if $time is 11>>[[roasts|hub1]]<<endif>><<if $time is 12>>[[roasts|Time4]]<<endif>><<if $time is 13>>[[roasts|Time5]]<<endif>><<if $time is 14>>[[roasts|hub1]]<<endif>><<if $time is 15>>[[roasts|Time6]]<<endif>><<if $time is 16>>[[roasts|Time7]]<<endif>><<if $time is 17>>[[roasts|hub1]]<<endif>><<if $time is 18>>[[roasts|hub1]]<<endif>><<if $time is 19>>[[roasts|Time8]]<<endif>><<if $time is 20>>[[roasts|hub1]]<<endif>><<if $time is 21>>[[roasts|Time9]]<<endif>><<if $time is 22>>[[roasts|Time10]]<<endif>><<if $time is 23>>[[roasts|Time11]]<<endif>><<if $time is 24>>[[roasts|Time12]]<<endif>><<if $time is 25>>[[roasts|Time13]]<<endif>><<if $time is 26>>[[roasts|hub1]]<<endif>><<if $time is 27>>[[roasts|hub1]]<<endif>><<if $time is 28>>[[roasts|Time14]]<<endif>><<if $time is 29>>[[roasts|Time15]]<<endif>><<if $time is 30>>[[roasts|hub1]]<<endif>><<if $time is 31>>[[roasts|hub1]]<<endif>><<if $time is 32>>[[roasts|Time16]]<<endif>><<if $time is 33>>[[roasts|Time17]]<<endif>><<if $time is 34>>[[roasts|hub1]]<<endif>><<if $time is 35>>[[roasts|hub1]]<<endif>><<if $time is 36>>[[roasts|Time18]]<<endif>><<if $time is 37>>[[roasts|Time19]]<<endif>><<if $time is 38>>[[roasts|hub1]]<<endif>><<if $time is 39>>[[roasts|Time20]]<<endif>><<if $time is 40>>[[roasts|hub1]]<<endif>><<if $time is 41>>[[roasts|hub1]]<<endif>><<if $time is 42>>[[roasts|Time21]]<<endif>><<if $time is 43>>[[roasts|hub1]]<<endif>><<if $time is 44>>[[roasts|Time22]]<<endif>><<if $time is 45>>[[roasts|Time23]]<<endif>><<if $time is 46>>[[roasts|hub1]]<<endif>><<if $time is 47>>[[roasts|hub1]]<<endif>><<if $time is 48>>[[roasts|Time24]]<<endif>><<if $time is 49>>[[roasts|hub1]]<<endif>><<if $time is 50>>[[roasts|Time25]]<<endif>><<if $time is 51>>[[roasts|hub1]]<<endif>><<if $time is 52>>[[roasts|hub1]]<<endif>><<if $time is 53>>[[roasts|Time26]]<<endif>><<if $time is 54>>[[roasts|hub1]]<<endif>><<if $time is 55>>[[roasts|Time23]]<<endif>><<if $time is 56>>[[roasts|hub1]]<<endif>><<if $time is 57>>[[roasts|Time27]]<<endif>> it\\non the spit over the flames.<<set $fire to $fire +1>><<set $time to $time +1>><<set $crank to 0>><<set $hub to 0>><<set $death to random(2)>><<if $death is 0>><<playsound \"Cat_Death.mp3\">><<endif>><<if $death is 1>><<playsound \"Cat_Death2.mp3\">><<endif>><<if $death is 2>><<playsound \"Cat_Death3.mp3\">><<endif>>",
+      "links": [
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time1",
+            "pid": 31
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time2",
+            "pid": 32
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time3",
+            "pid": 33
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time4",
+            "pid": 27
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time5",
+            "pid": 28
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time6",
+            "pid": 29
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time7",
+            "pid": 30
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time8",
+            "pid": 24
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time9",
+            "pid": 25
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time10",
+            "pid": 4
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time11",
+            "pid": 96
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time12",
+            "pid": 93
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time13",
+            "pid": 94
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time14",
+            "pid": 91
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time15",
+            "pid": 1
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time16",
+            "pid": 89
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time17",
+            "pid": 90
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time18",
+            "pid": 87
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time19",
+            "pid": 109
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time20",
+            "pid": 18
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time21",
+            "pid": 17
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time22",
+            "pid": 16
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time23",
+            "pid": 15
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time24",
+            "pid": 14
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time25",
+            "pid": 13
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time26",
+            "pid": 107
+          }
+        },
+        {
+          "text": "roasts",
+          "destination": {
+            "name": "Time27",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "hub1",
+      "text": "<<if $watch is 0>>You and Lauchlan watch the animal suffer.<<endif>><<if $watch is 1>>Something is watching you and Lauchlan suffer.<<endif>><<if $watch is 2>>Many eyes are watching you and Lauchlan suffer.<<endif>><<if $watch is 3>>Many hosts are watching you and Lauchlan suffer.<<endif>><<if $watch is 4>>Hisses whisper around you and Lauchlan.<<endif>><<if $watch is 5>>Lamentations wail around you and Lauchlan.<<endif>>\\nA handle's <<if $crank is 0>>[[turn]]<<endif>><<if $crank is 1>>turn<<endif>> would turn the cat.\\n\\n<<if $crank is 0>><<timedreplace 3s >>Burning flesh. <<gains>> Smoke.<<gains>> It's nearly dead.<<endtimedreplace>><<endif>><<if $crank is 1>><<timedreplace 2s >>Sizzling fur. <<gains>>Spatters. <<gains>>Pops.<<gains>> It's nearly dead.<<endtimedreplace>><<endif>>\\n\\n<<if $fire is 0>>Flames roar upward with a rush.<<endif>><<if $fire is 1>>Flames lick beneath the spit.<<endif>><<if $fire is 2>>Logs crackle as the flames diminish.<<endif>><<if $fire is 3>>The flames in the pit are dwindling.<<endif>><<if $fire gte 4>>Embers smolder in the ash.<<endif>>\\n\\nMore [[wood]] remains to fuel the fire.\\nThere are [[other sacks|cat]] ready at hand.<<if $fire gte 4>><<timedgoto \"lauchwood\" 5s>><<endif>><<if $fire lte 3>><<timedgoto \"nostopping\" 10s>><<endif>><<set $hub to 1>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "lauchwood",
+            "pid": 54
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "nostopping",
+            "pid": 61
+          }
+        },
+        {
+          "text": "turn",
+          "destination": {
+            "name": "turn",
+            "pid": 56
+          }
+        },
+        {
+          "text": "wood",
+          "destination": {
+            "name": "wood",
+            "pid": 6
+          }
+        },
+        {
+          "text": "other sacks",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "waiting3",
+      "text": "Outside you cannot see a storm.<<timedgoto \"waiting2\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "waiting2",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "waiting2",
+      "text": "Stars glimmer. Barley ripples.\\n\\nBefore you on the stone wall a great cat \\nperches larger than any man. Beneath its \\npaws the stones are [[smoldering]].",
+      "links": [
+        {
+          "text": "smoldering",
+          "destination": {
+            "name": "smoldering",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "coward",
+      "text": "Said it weren't right,\\nnor any use neither,\\ncalled you a coward.<<timedgoto \"morning\" 5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "morning",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "cat",
+      "text": "<<set $cat to random(80)>>You lift out <<if $cat is 0>>a tomcat<<endif>><<if $cat is 1>>a tabby cat<<endif>><<if $cat is 2>>a feral cat<<endif>><<if $cat is 3>>a tortoiseshell cat<<endif>><<if $cat is 4>>a mewling kitten<<endif>><<if $cat is 5>>a ginger cat<<endif>><<if $cat is 6>>a stunted kitten<<endif>><<if $cat is 7>>a rabid cat<<endif>><<if $cat is 8>>an elderly cat<<endif>><<if $cat is 9>>a pregnant cat<<endif>><<if $cat is 10>>a spotted cat<<endif>><<if $cat is 11>>a striped cat<<endif>><<if $cat is 12>>a three-legged cat<<endif>><<if $cat is 13>>a black cat<<endif>><<if $cat is 14>>a white cat<<endif>><<if $cat is 15>>a wounded cat<<endif>><<if $cat is 16>>a cat with a missing eye<<endif>><<if $cat is 17>>a long-haired cat<<endif>><<if $cat is 18>>a young cat<<endif>><<if $cat is 19>>an angry cat<<endif>><<if $cat is 20>>a fat cat<<endif>><<if $cat is 21>>an emaciated cat<<endif>><<if $cat is 22>>a green-eyed cat<<endif>><<if $cat is 23>>a blue-eyed cat<<endif>><<if $cat is 24>>a yellow-eyed cat<<endif>><<if $cat is 25>>a mangy cat<<endif>><<if $cat is 26>>a trembling cat<<endif>><<if $cat is 27>>a blind kitten<<endif>><<if $cat is 28>>a crippled cat<<endif>><<if $cat is 29>>a flea-infested cat<<endif>><<if $cat is 30>>a hissing cat<<endif>><<if $cat is 31>>a tailless cat<<endif>><<if $cat is 32>>a grey cat<<endif>><<if $cat is 33>>a deaf cat<<endif>><<if $cat is 34>>a starving cat<<endif>><<if $cat is 35>>a purebred cat<<endif>><<if $cat is 36>>a clawing cat<<endif>><<if $cat is 37>>a half-dead cat<<endif>><<if $cat is 38>>a vicious cat<<endif>><<if $cat is 39>>a terrified cat<<endif>><<if $cat is 40>>a housecat<<endif>><<if $cat is 41>>a bloody cat<<endif>><<if $cat is 42>>a battered cat<<endif>><<if $cat is 43>>a little cat<<endif>><<if $cat is 44>>a wild cat<<endif>><<if $cat is 45>>a filthy cat<<endif>><<if $cat is 46>>a scarred cat<<endif>><<if $cat is 47>>an injured cat<<endif>><<if $cat is 48>>a savage cat<<endif>><<if $cat is 49>>a calico cat<<endif>><<if $cat is 50>>a piebald cat<<endif>><<if $cat is 51>>a mitted cat<<endif>><<if $cat is 52>>a harlequin cat<<endif>><<if $cat is 53>>a bicolor cat<<endif>><<if $cat is 54>>an odd-eyed cat<<endif>><<if $cat is 55>>a cat with a bell<<endif>><<if $cat is 56>>a cat with a collar<<endif>><<if $cat is 57>>a sorrel cat<<endif>><<if $cat is 58>>a lilac cat<<endif>><<if $cat is 59>>a battle-torn cat<<endif>><<if $cat is 60>>a meowing cat<<endif>><<if $cat is 61>>a crying cat<<endif>><<if $cat is 62>>a pampered cat<<endif>><<if $cat is 63>>a cat with a broken jaw<<endif>><<if $cat is 64>>an anxious cat<<endif>><<if $cat is 65>>a diseased cat<<endif>><<if $cat is 66>>a brindled cat<<endif>><<if $cat is 67>>a caliby cat<<endif>><<if $cat is 68>>a well fed cat<<endif>><<if $cat is 69>>a lethargic cat<<endif>><<if $cat is 70>>a shaking kitten<<endif>><<if $cat is 71>>a frightened cat<<endif>><<if $cat is 72>>a yowling cat<<endif>><<if $cat is 73>>a wriggling cat<<endif>><<if $cat is 74>>a cream cat<<endif>><<if $cat is 75>>an orange-eyed cat<<endif>><<if $cat is 76>>a cat with a missing ear<<endif>><<if $cat is 77>>a retching cat<<endif>><<if $cat is 78>>a homeless cat<<endif>><<if $cat is 79>>a ferocious cat<<endif>><<if $cat is 80>>a brown cat<<endif>>.<<timedgoto \"skewer\" 2s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "skewer",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "remain",
+      "text": "When you leave the barn, the sky is dark.\\nIt is an [[early morning]] yet.<<loopsound \"Night.mp3\">>",
+      "links": [
+        {
+          "text": "early morning",
+          "destination": {
+            "name": "early morning",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "gone",
+      "text": "Lauchlan is staring at you, eyes bloodshot.\\n\\nThe flames in the pit are [[dwindling]].<<fadeoutsound \"Fire_Pit.mp3\">>",
+      "links": [
+        {
+          "text": "dwindling",
+          "destination": {
+            "name": "dwindling",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "Briggs",
+      "text": "//Perhaps the most horrible of all \\nrecorded magical spells.//\\n\\nCruelty. Violence. Sounds. \\nHeadphones recommended.\\n[[Advance.]]",
+      "links": [
+        {
+          "text": "Advance.",
+          "destination": {
+            "name": "Advance.",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "candle",
+      "text": "He is waiting.<<timedgoto \"waiting\" 5s>><<fadeoutsound \"Caterwaul.mp3\">>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "waiting",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "ready",
+      "text": "You haven't come \\nthis far to back away.<<timedgoto \"first sack\" 3s>><<set $release to 0>><<set $watch to 0>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "first sack",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "Time18",
+      "text": "Everything is black with soot and smoke.\\nThe air is foul with charring fur and bone. \\nYou smell the heaps have now begun to [[rot|cat]].",
+      "links": [
+        {
+          "text": "rot",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "floor",
+      "text": "As you settle down beside the pit\\nLauchlan shuts and bars the barn door.\\n\\n\"You [[ready]] then?\" he asks.",
+      "links": [
+        {
+          "text": "ready",
+          "destination": {
+            "name": "ready",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "Time16",
+      "text": "You catch yourself [[drifting|Time161]] again.",
+      "links": [
+        {
+          "text": "drifting",
+          "destination": {
+            "name": "Time161",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "Time17",
+      "text": "You stop your eyelids closing\\n[[practically too late|Time171]].",
+      "links": [
+        {
+          "text": "practically too late",
+          "destination": {
+            "name": "Time171",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "Time14",
+      "text": "Morning, midday, night.\\nAll hours scorch together.\\n\\nYour throat is parched.\\nYour muscles ache.\\nLauchlan is [[shivering|hub1]].",
+      "links": [
+        {
+          "text": "shivering",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "Untitled Passage 2 1 1",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n#sidebar { display: none; }\\n  \\n#passages { margin-left: 25%; margin-top: 8%;}\\n\\n#passages { border-left: 0px; padding-left: 0; }\\n\\n  html, body { height:75%; margin-top: 0 50% !important; }\\n  #passages { display:table; height:100%; }\\n  .passage { display: table-cell; vertical-align:middle; }\\n\\n #passages { box-sizing:border-box; padding: 0% } .passage { text-align:left; }\\n\\n.passage { max-width:100%; }\\n\\nbody {\\n\\t/* This affects the entire page */\\n\\t\\n\\t\\n}\\n.passage {font-size:1.75em;\\n\\t/* This only affects passages */\\n\\t\\n\\t\\n}\\n.passage a {\\n\\t/* This affects passage links */\\n\\t\\n\\t\\n}\\n.passage a:hover {\\n\\t/* This affects links while the cursor is over them */\\n\\n}\\n.passage a {\\n}\\n\\n#passages p {\\n    text-indent: 2.5em;\\n}\\n\\n#passages r {\\n\\ttext-align: right;\\n}",
+      "links": []
+    },
+    {
+      "pid": 93,
+      "name": "Time12",
+      "text": "It will not stop speaking.\\nIts litany [[burns|hub2]].",
+      "links": [
+        {
+          "text": "burns",
+          "destination": {
+            "name": "hub2",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "Time13",
+      "text": "Whatever it is [[stops|hub1]] speaking.<<fadeoutsound \"Hiss.mp3\">>",
+      "links": [
+        {
+          "text": "stops",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "nospace",
+      "text": "(function(){\\nvar bs = String.fromCharCode(92);\\nWikifier.formatters.unshift({\\n    name: \"continuedLine\",\\n    match: bs+bs+\"s\",\\n    handler: function(a) {\\n        a.nextMatch = a.matchStart+3;\\n    }\\n});\\n}());",
+      "links": []
+    },
+    {
+      "pid": 96,
+      "name": "Time11",
+      "text": "\"You hear that?\" Lauchlan says. \"God, you //hear// that?\"\\n\\nAnathemas. Abominations. Murderers.\\n\\nYou [[hear it|hub1]].<<loopsound \"Hiss.mp3\">>",
+      "links": [
+        {
+          "text": "hear it",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "that way",
+      "text": "You've got nothing to carry.\\n\\nWhen you leave the barley fields\\nyou see the [[barn|fence]].",
+      "links": [
+        {
+          "text": "barn",
+          "destination": {
+            "name": "fence",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "early morning",
+      "text": "The other cats you [[loose]] into the highlands.\\nAn unfinished taghairm cannot be repeated.",
+      "links": [
+        {
+          "text": "loose",
+          "destination": {
+            "name": "loose",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "About",
+      "text": "[[Taghairm|ending]] is copyright 2015 by Chandler Groover. \\nIt may be distributed for free, but not sold or included in any \\nfor-profit collection without written permission from the author. \\nIt was made for the 2015 Interactive Fiction Competition.\\n\\nMany thanks to PhoenixNine for testing and suggestions!\\n\\nThe game's cover image is modified from //A Sympsychograph \\nof a Cat// (1896).",
+      "links": [
+        {
+          "text": "Taghairm",
+          "destination": {
+            "name": "ending",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "Sacks",
+      "text": "<<set $sacks to 1>><<set $fire to $fire +1>>You can see them moving in the firelight\\nalthough they've long since stopped crying.\\n\\nIt took [[months|barn]] to gather them all.",
+      "links": [
+        {
+          "text": "months",
+          "destination": {
+            "name": "barn",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "Time251",
+      "text": "Lamentation.<<timedgoto \"cat\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "doit",
+      "text": "You impale the cat and [[roast]] it\\non the spit over the flames.<<set $crank to 0>><<set $hub to 0>><<set $time to $time +1>><<playsound \"Cat_Death.mp3\">>",
+      "links": [
+        {
+          "text": "roast",
+          "destination": {
+            "name": "roast",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "Time173",
+      "text": "\"I'll stay sharp,\" Lauchlan says.\\n\"Don't come near me.\"<<timedgoto \"hub1\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "nothing",
+      "text": "There's nothing [[left]] to say.",
+      "links": [
+        {
+          "text": "left",
+          "destination": {
+            "name": "left",
+            "pid": 112
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "you can",
+      "text": "Homeward you pause below a hill\\nwhere headstones populate the ground.\\n\\nYou wonder whether they are [[cold]] \\nresting beneath those stones.",
+      "links": [
+        {
+          "text": "cold",
+          "destination": {
+            "name": "cold",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "lauchturn",
+      "text": "<<set $cat to random(80)>>Lauchlan takes a sack\\nand lifts out <<if $cat is 0>>a tomcat<<endif>><<if $cat is 1>>a tabby cat<<endif>><<if $cat is 2>>a feral cat<<endif>><<if $cat is 3>>a tortoiseshell cat<<endif>><<if $cat is 4>>a mewling kitten<<endif>><<if $cat is 5>>a ginger cat<<endif>><<if $cat is 6>>a stunted kitten<<endif>><<if $cat is 7>>a rabid cat<<endif>><<if $cat is 8>>an elderly cat<<endif>><<if $cat is 9>>a pregnant cat<<endif>><<if $cat is 10>>a spotted cat<<endif>><<if $cat is 11>>a striped cat<<endif>><<if $cat is 12>>a three-legged cat<<endif>><<if $cat is 13>>a black cat<<endif>><<if $cat is 14>>a white cat<<endif>><<if $cat is 15>>a wounded cat<<endif>><<if $cat is 16>>a cat with a missing eye<<endif>><<if $cat is 17>>a long-haired cat<<endif>><<if $cat is 18>>a young cat<<endif>><<if $cat is 19>>an angry cat<<endif>><<if $cat is 20>>a fat cat<<endif>><<if $cat is 21>>an emaciated cat<<endif>><<if $cat is 22>>a green-eyed cat<<endif>><<if $cat is 23>>a blue-eyed cat<<endif>><<if $cat is 24>>a yellow-eyed cat<<endif>><<if $cat is 25>>a mangy cat<<endif>><<if $cat is 26>>a trembling cat<<endif>><<if $cat is 27>>a blind kitten<<endif>><<if $cat is 28>>a crippled cat<<endif>><<if $cat is 29>>a flea-infested cat<<endif>><<if $cat is 30>>a hissing cat<<endif>><<if $cat is 31>>a tailless cat<<endif>><<if $cat is 32>>a grey cat<<endif>><<if $cat is 33>>a deaf cat<<endif>><<if $cat is 34>>a starving cat<<endif>><<if $cat is 35>>a purebred cat<<endif>><<if $cat is 36>>a clawing cat<<endif>><<if $cat is 37>>a half-dead cat<<endif>><<if $cat is 38>>a vicious cat<<endif>><<if $cat is 39>>a terrified cat<<endif>><<if $cat is 40>>a housecat<<endif>><<if $cat is 41>>a bloody cat<<endif>><<if $cat is 42>>a battered cat<<endif>><<if $cat is 43>>a little cat<<endif>><<if $cat is 44>>a wild cat<<endif>><<if $cat is 45>>a filthy cat<<endif>><<if $cat is 46>>a scarred cat<<endif>><<if $cat is 47>>an injured cat<<endif>><<if $cat is 48>>a savage cat<<endif>><<if $cat is 49>>a calico cat<<endif>><<if $cat is 50>>a piebald cat<<endif>><<if $cat is 51>>a mitted cat<<endif>><<if $cat is 52>>a harlequin cat<<endif>><<if $cat is 53>>a bicolor cat<<endif>><<if $cat is 54>>an odd-eyed cat<<endif>><<if $cat is 55>>a cat with a bell<<endif>><<if $cat is 56>>a cat with a collar<<endif>><<if $cat is 57>>a sorrel cat<<endif>><<if $cat is 58>>a lilac cat<<endif>><<if $cat is 59>>a battle-torn cat<<endif>><<if $cat is 60>>a meowing cat<<endif>><<if $cat is 61>>a crying cat<<endif>><<if $cat is 62>>a pampered cat<<endif>><<if $cat is 63>>a cat with a broken jaw<<endif>><<if $cat is 64>>an anxious cat<<endif>><<if $cat is 65>>a diseased cat<<endif>><<if $cat is 66>>a brindled cat<<endif>><<if $cat is 67>>a caliby cat<<endif>><<if $cat is 68>>a well fed cat<<endif>><<if $cat is 69>>a lethargic cat<<endif>><<if $cat is 70>>a shaking kitten<<endif>><<if $cat is 71>>a frightened cat<<endif>><<if $cat is 72>>a yowling cat<<endif>><<if $cat is 73>>a wriggling cat<<endif>><<if $cat is 74>>a cream cat<<endif>><<if $cat is 75>>an orange-eyed cat<<endif>><<if $cat is 76>>a cat with a missing ear<<endif>><<if $cat is 77>>a retching cat<<endif>><<if $cat is 78>>a homeless cat<<endif>><<if $cat is 79>>a ferocious cat<<endif>><<if $cat is 80>>a brown cat<<endif>>.<<timedgoto \"lauchskewer\" 2s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "lauchskewer",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "Time26",
+      "text": "Everywhere you look you see black cats\\nwith fangs open. There are not hundreds. \\nThere are thousands.\\n\\nYour fire is a [[circle|cat]] against the darkness.",
+      "links": [
+        {
+          "text": "circle",
+          "destination": {
+            "name": "cat",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "timed goto",
+      "text": "version.extensions.timedgotoMacro={major:1,minor:1,revision:0};macros[\"goto\"]=macros[\"timedgoto\"]={timer:null,handler:function(a,b,c,d){\\nfunction cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0;\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0;}}}throwError(a,s+\" isn't a CSS time unit\");\\nreturn 0;}var t,d,m,s;t=c[c.length-1];d=d.fullArgs();m=0;if(b!=\"goto\"){d=d.slice(0,d.lastIndexOf(t));\\nm=cssTimeUnit(t);}d=eval(Wikifier.parse(d));if(d+\"\"){if(this.timer){clearTimeout(this.timer);\\n}s=state.history[0].passage.title;this.timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a);\\n}},m);}}};",
+      "links": []
+    },
+    {
+      "pid": 109,
+      "name": "Time19",
+      "text": "Another shadow slinks along the wall.\\nMore eyes [[watching|hub1]].<<set $watch to 2>>",
+      "links": [
+        {
+          "text": "watching",
+          "destination": {
+            "name": "hub1",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "gone2",
+      "text": "Now what awaits in the future will await, \\nand what remains in the past will [[remain]].",
+      "links": [
+        {
+          "text": "remain",
+          "destination": {
+            "name": "remain",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "gone1",
+      "text": "Shadows disperse into the dark\\nand now the dark is only [[emptiness|gone]].",
+      "links": [
+        {
+          "text": "emptiness",
+          "destination": {
+            "name": "gone",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 112,
+      "name": "left",
+      "text": "It's still dark when you cross the fields\\nto your cousin's land. Barley and stars.\\n\\nThe walk's not short.\\nNobody travels out [[that way]].",
+      "links": [
+        {
+          "text": "that way",
+          "destination": {
+            "name": "that way",
+            "pid": 97
+          }
+        }
+      ]
+    }
+  ]
+}

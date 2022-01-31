@@ -1,0 +1,2889 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "BadKitty",
+      "text": "You ignore it, and keep walking as you hear a sharp cry behind you. As you continue towards the [[Dragon]].\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Dragon",
+          "destination": {
+            "name": "Dragon",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "WeaponDisplay",
+      "text": "Weapon: <<if $weapon is 1>>Sword<<else if $weapon is 2>>Shield<<else if $weapon is 3>>Trident<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 3,
+      "name": "DragonWait",
+      "text": "..........................\\n\\nYou can't help but feel a little bad about this. You know that finishing him off is the best, most heroic thing to do. You're almost there! So why do you hesitate?\\n\"You do know I regenerate slowly, right?\" the dragon whispers. \"If you stand there all day eventually I'll be strong enough to take my revenge.\"\\nHe's right. For the good of all the people in the town and all those soldiers who would have had to lay their lives down! This must be done to [[complete your first quest.|Slay]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\nYou don't know why you feel compelled to reason with the beast. It's evil after all. But nonetheless, something tugs at you.\\n[[\"Why all this pillaging and terrorizing? Why not just keep to yourself?\"|DragonYield]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "complete your first quest.",
+          "destination": {
+            "name": "Slay",
+            "pid": 90
+          }
+        },
+        {
+          "text": "\"Why all this pillaging and terrorizing? Why not just keep to yourself?\"",
+          "destination": {
+            "name": "DragonYield",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "ScopeCharges",
+      "text": "<center> Scope Charges: <<print $role_changer>> </center>",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "Strength",
+      "text": "@@.str;<center>Strength: <<print $strength+$strength_pref>></center>@@",
+      "links": []
+    },
+    {
+      "pid": 6,
+      "name": "StatBook",
+      "text": "<<silently>>\\n<<set charisma_pref += 1>>\\n<<endsilently>>\\n\\nIt may not be about dragon, but this book may help you in a different way. It details an ancient ritual in which a strong warrior would meditate for days in order to become more powerful by connecting their essence to nature. Well you don't have days, but you may have an hour or two to clear your mind and experience a slight increase in power. Now what should you focus on?\\n\\n[[Draw strength from your environment|StrMeditate]]\\n[[Train your mind to be more adaptive|DexMeditate]]\\n[[Shape a strong will to endure the elements|ConstMeditate]]\\n[[Rehearse persuasion techniques|CharMeditate]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Draw strength from your environment",
+          "destination": {
+            "name": "StrMeditate",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Train your mind to be more adaptive",
+          "destination": {
+            "name": "DexMeditate",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Shape a strong will to endure the elements",
+          "destination": {
+            "name": "ConstMeditate",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Rehearse persuasion techniques",
+          "destination": {
+            "name": "CharMeditate",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Scope",
+      "text": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAC1AfQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7LrzT4k/FbTPDdy2mWLR3F8DhznKxn09zXT/EHV5dM0OVbVZWuJEbHlD5lGOo9+3/AOqvHvC2majqGgwi60u1toi28Yj3TSk87ncjJ/z24r57N8zlSfsaLs+rO/CYZTXPLY1NO8V+JtUAuJbuWFG5G5in5AVs2Hji6066WO71NbgfxRsu79c8Vwviu4v4NQj0LTMtqEw3O2OIl9Sav+HtCt9JRZGj+0XWMtPKNzZ749K+dhjK8Zcym7+p6TowatY9k0zxdo18F2zPEW/56LgA/XpW+CGAIIIPIIryC3vdv8W0+xxW1YeIbyBQiXR2jorcgV7mGz5rStH7jhqYBfYZ6LRXKWniibjzY4pB7HBrTt/ENlJgSCSI+4yP0r1aWbYWp9q3qcs8JVj0Niiqi6lYlN/2qMD3OKgbXdLDbTcj6hTiut4qgt5r70ZKlN9GaVFVoL+zn/1VzE3tu5qz1rWM4yV4u5DTW4UUUVQgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAx7e5s59bvUkZGktkXKnspyM/oawBcRy3nlwIqK7bVAGAorxb4h67fW/x/tLJJ5IoZfkkCsQHG9+tdV461+fRvCN9qFq5WdU2ow7FiB/WvhcXinUfLJbNv1u/wCke5Ro8uqfRHd3ejWs8hu7OAIZfmZyPmcds/h/OqM2kTIP9Xmm6fqs8VpArSbmWNQT6nAq7Hrjg8gEVytwk77GqU1oY01iRkOhH1FVXswPutg+xrqV1e0lGJoQM9xSOulXI4YIT61PIujHzPqjkylxH918/Wp7W4umDYwuzqxNb0ujxOCYLhT+NZq2knk4QEgnr61Li0UmmZtzqFx5mDux7UkWokHBb86sTWTKcsmKqy23XI/MUhlyO/Q9fzq/a6tNFjyLyWP2DcflXOPbso+Tj6VFmZD1/MVUakoO8XYlxUt0d9a+JdQXG6SKUf7S4/lWnbeKEOBcWpHujZrzEXciY4Pvipo9UYYy2PrXdSzXFU9p39dTCWEpS6HrMGuabLx5+w+jjFXop4ZRmKVHHsc15JDqhOM4I+tW4dRjDAhih9QcV6FPiCovjin6aHPLL19lnqlFefWuvXcePKvXYejHNaVv4pulx5sMUg9QcGvQp55hpfFdHPLA1VtqdfRXPp4rsBHmaOWNuwABzVRvGcZf93YOU9TIAf5V0vNcIlfn/MzWFrP7J1dFc/beLNNkwJVmhbvlcj9K0rfV9NuMeVeREnsTg1tTxuHqfDNESoVI7ovUUisrDKsGHqDS11J3MgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPHvHPhLRrjx0+tXVuWvofmhbcQOeenfnNYvjewttQ8KXsKrkmPcAD1xzXqnjzRJtRtFvLFc3kA+6P+Wi9x9f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",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "knowledge",
+      "text": "<<if $current_body != 4>>\\nSilas takes you over to a small table that has a couple of old dusty books sitting wide open, almost falling apart at the spine. Such a shame.\\n\"There you are! It's rather small but I think it should do for a nice history lesson! Just holler if you have any questions!\"\\n<<else>>\\nYou look through the library's files and find that this branch has a much smaller inventory than you hoped, especially on dragons. Let's see, they should be on...that table over there. You see a couple of wide-open books that are almost falling apart at the spine. Such a shame. They much be rich with history though.\\n<<endif>>\\nYou can take a look at [[Dragons for Dummies|DragonBook]], or [[Min-Maxing and You|StatBook]]. Despite their tame sounding titles, they're pretty lengthy, so given the time constraints, you think you can really only get information from one.\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Dragons for Dummies",
+          "destination": {
+            "name": "DragonBook",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Min-Maxing and You",
+          "destination": {
+            "name": "StatBook",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Trident",
+      "text": "<<silently>>\\n<<set $weapon = 1>>\\n<<if $current_body is 1>>\\n<<set $dexterity_pref += 4>>\\n<<set $strength_pref -= 2>>\\n<<set $charisma_pref += 2>>\\n<<else>>\\n<<set $dexterity_pref += 2>>\\n<<set $strength_pref -= 1>>\\n<<endif>>\\n<<endsilently>>\\nYou leave the blacksmith with your new trident which is presumably great against dragons. Now this a weapon that you are somewhat familiar with! It's a fancy pitchfork of the sea! You may either [[Embark]] now or return to town for more [[Prep]]\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<display WeaponDisplay>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Embark",
+          "destination": {
+            "name": "Embark",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Prep",
+          "destination": {
+            "name": "Prep",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "DragonSass",
+      "text": "\"You don't know me or my life. You don't know what they've done. It's a dragon-eat-dragon world out there! It's also a human-kill-dragon world as of late, what the the king's army. Yes, I know all about them. And I'm going to survive! This is the best spot in the region for gold and I'll defend it to the death! NOW ENOUGH WITH THE TALKING!\"\\nThe dragon stamps his giant feet and roars loudly. You get blasted with a huge gust of hot air. Heat was welcome up in the chilly peak of the mine entrance, but not that much all at once. This beast looks sufficiently riled up, it's time to [[dish out some justice|Attack]].\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "dish out some justice",
+          "destination": {
+            "name": "Attack",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "DragonRevelation",
+      "text": "The dragon smiles an evil smile.\\n\"Don't you see, human? Heroes must battle dragons! Dragons cause a ruckus, they're a threat to your safety! That's just the way things are!\"\\n\"Is that right?\"\\n\"You want to be a hero don't you? Go ahead and strike me down! Raise your weapon and fight me like a brave adventurer is bound to do!\"\\n[[\"Very well. For the good of the townsfolk and the kingdom!\"|Attack]]\\n[[\"Why this mine? Why pester the village? They haven't wronged you.\"|DragonSass]]\\n[[\"Why haven't you killed me yet?\"|DragonYield]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "\"Very well. For the good of the townsfolk and the kingdom!\"",
+          "destination": {
+            "name": "Attack",
+            "pid": 72
+          }
+        },
+        {
+          "text": "\"Why this mine? Why pester the village? They haven't wronged you.\"",
+          "destination": {
+            "name": "DragonSass",
+            "pid": 10
+          }
+        },
+        {
+          "text": "\"Why haven't you killed me yet?\"",
+          "destination": {
+            "name": "DragonYield",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "StoryTitle",
+      "text": "The First Quest",
+      "links": []
+    },
+    {
+      "pid": 13,
+      "name": "ConstMeditate",
+      "text": "<<silently>>\\n<<set $constitution_pref += 3>>\\n<<endsilently>>\\n<<display MeditateText>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "MeditateText",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Leave",
+      "text": "Perhaps wisely, you decide to turn away. A more capable adventurer can handle this. The stakes are too high for this one. You return to your farmhouse home and switch back into your original body. Soon you'll be back though. You won't give up on your dream to be a hero!\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "DragonYield",
+      "text": "You thought it was just a crazy thought when it first entered your brain, but that feeling never left your gut, leading you here. Calmly chatting with a dragon, could be killed at any moment. You never saw this stuff from heroes of old, but whoever got anywhere from not having their own style? You see what you thought might be there: a flash of sadness in the dragon's eyes.\\nDragon speaks once again.\\n\"Please do it. [[End the suffering.|Slay]]\"\\n[[\"Why do you suffer?\"|DragonBackstory]]",
+      "links": [
+        {
+          "text": "End the suffering.",
+          "destination": {
+            "name": "Slay",
+            "pid": 90
+          }
+        },
+        {
+          "text": "\"Why do you suffer?\"",
+          "destination": {
+            "name": "DragonBackstory",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Talk",
+      "text": "\"Hey buddy! Do you want to go ahead and move off that mine for me?\" You've always thought that the best heroes were always flippant and sassy with the big villains.\\n\"Hello, <<print $playername>>. A bit out of your league, don't you think?\"\\nYour facade of confidence falls away. Now you're a little frightened. How does it know your name?\\n\"That doesn't matter, pesky little hero wannabe. You want to play adventurer? Why not for me?\"\\n<<if $charisma + $charisma_pref >= 12>>\\n\"Never! I don't care how powerful you think you are, I will [[defeat you!\"|DeclineDeal]]\\n<<else if $charisma + $charisma_pref <= 11>>\\n\"[[..Uh...|AcceptOff]]\"\\n<<else if $charisma + $charisma_pref >= 20 and $role_changer >= 1>>\\n\"Why play adventurer, when I could play [[dragon|DragonSwitch]] instead?\"\\n<<else if $charisma + $charisma_pref >= 16>>\\n\"Or how about we settle this peacefully. [[Violence doesn't solve everything.|DragonRevelation]]\"\\n<<endif>>\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "defeat you!\"",
+          "destination": {
+            "name": "DeclineDeal",
+            "pid": 36
+          }
+        },
+        {
+          "text": "..Uh...",
+          "destination": {
+            "name": "AcceptOff",
+            "pid": 20
+          }
+        },
+        {
+          "text": "dragon",
+          "destination": {
+            "name": "DragonSwitch",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Violence doesn't solve everything.",
+          "destination": {
+            "name": "DragonRevelation",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Help",
+      "text": "<<if $strength + $strength_pref >= 10 or $constitution + $constitution_pref >= 15>>\\nYou're able to quickly dispatch the bone monsters, especially since you took them by surprise. You nod to your short-lived companion, and you turn to continue, when he blurts out,\\n<<if $potion is \"yes\">>\\n\"Wait! Let me come with you! I can help you!\"\\n\"Dude, I'm about to fight a dragon. It'll be too dangerous for you.\"\\n\"No hear me out! I've never been a good swordsman, but I have a talent for music!\"\\nHe whips out a guitar from who knows where and plays a nice little riff, and you must admit from that little snippet he's pretty good.\\nHe elaborates, \"My parents wanted me to be a great swordmaster, but I've been taking bard electives in my spare time. I can help boost your morale!\"\\nThe books you've read always chronicled the bards as the people who laud the real hero's accomplishments, so you're unsure about how much he can contribute in the face of a dragon. But you do rather like music, and you're a little curious of just what he can do.\\n[[\"Alright, let's roll.\"|Bard]]\\n[[Sorry. Just too dangerous.\"|NoBard]]\\n<<else>>\\n\"Espera! Me voy contigo! Te puedo ayudar!\"\\nWhat? You've heard bits of foreign languages like Elven and Dwarven when you were younger from library strangers, but you've never heard this tongue. And he's human, for gods' sakes!\\n\"No me oye hacia fuera! Nunca he sido un buen espadach\u00edn, pero tengo un talento para la m\u00fasica!\"\\nHe suddenly whips out a guitar from who knows where and plays a nice little riff, and from that little snippet, you can tell he's pretty good.\\n\"Mis padres me quer\u00edan ser un gran maestro de la espada, pero he estado tomando electivas Bardo en mi tiempo libre. \u00a1Puedo ayudar a elevar tu moral!\"\\nWell you have no idea what he's saying, but he seems to be done with his pitch. From what you can tell, he wants to join you and play some music. Despite the inherent danger of your quest, his sheer enthusiasm is enough to make you at least consider his proposal.\\n\\nYou [[nod|Bard]] and motion for the budding bard to follow you. Who knows how much of your language he knows, and you don't have the time to go through the motions. Might as well be mute for now.\\nYou [[shake your head|NoBard]].\\n<<endif>>\\n<<else>>\\nYou struggle against the skeletons. Real combat was harder than you thought! You hunch over for a bit to catch your breath before realizing you lost your short-lived battle companion! After a brief look, you see him limping down the mountain. Poor guy, he just might not be cut out for this life.\\n<<endif>>\\n\\nYou can sympathize with this guy. At the starting point just like you are. Even if he hasn't really done his homework. You could maybe pass on some skills by [[switching with the bard|BardSwitch]].\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>\\n\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "\"Alright, let's roll.\"",
+          "destination": {
+            "name": "Bard",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Sorry. Just too dangerous.\"",
+          "destination": {
+            "name": "NoBard",
+            "pid": 31
+          }
+        },
+        {
+          "text": "nod",
+          "destination": {
+            "name": "Bard",
+            "pid": 42
+          }
+        },
+        {
+          "text": "shake your head",
+          "destination": {
+            "name": "NoBard",
+            "pid": 31
+          }
+        },
+        {
+          "text": "switching with the bard",
+          "destination": {
+            "name": "BardSwitch",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "SmithSwitch",
+      "text": "<<silently>>\\n<<set $role_changer -= 1>>\\n<<set $current_body = 3>>\\n<<set $strength = 12>>\\n<<set $dexterity = 7>>\\n<<set $constitution = 15>>\\n<<set $charisma = 8>>\\n<<endsilently>>\\nMy, the world looks so much bigger from down here! Smithy here will be an excellent body to withstand the dragon's attacks. He also probably has a [[nice stash of weapons!|Weapons]]",
+      "links": [
+        {
+          "text": "nice stash of weapons!",
+          "destination": {
+            "name": "Weapons",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Shield",
+      "text": "<<silently>>\\n<<set $weapon = 2>>\\n<<if $current_body is 3 or 4>>\\n<<set $constitution_pref += 4>>\\n<<set $dexterity_pref -= 2>>\\n<<set $strength_pref += 2>>\\n<<else>>\\n<<set $constitution_pref +=2>>\\n<<set $dexterity_pref -= 1>>\\n<<endif>>\\n<<endsilently>>\\nYou leave the blacksmith with your new sword which is presumably great against dragons. Better than nothing at least. You may either [[Embark]] now or return to town for more [[Prep]]\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<display WeaponDisplay>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Embark",
+          "destination": {
+            "name": "Embark",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Prep",
+          "destination": {
+            "name": "Prep",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "AcceptOff",
+      "text": "Yeah sure. You go and kill people, building a reputation in a different way than how you originally set out to.\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "StrPref",
+      "text": "You can definitely pass on some knowledge about wielding a weapon. Now it's time to get started.\\n\\n<<display ScopeText>>\\n<<set $strength_pref += 2>>\\n<<set $dexterity_pref -= 2>>\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeText",
+            "pid": 69
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "StrMeditate",
+      "text": "<<silently>>\\n<<set $strength_pref += 3>>\\n<<endsilently>>\\n<<display MeditateText>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "MeditateText",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Stats",
+      "text": "<<display Strength>> \\s\\n<<display Dexterity>> \\s\\n<<display Constitution>> \\s\\n<<display Charisma>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Strength",
+            "pid": 5
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Dexterity",
+            "pid": 63
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Constitution",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Charisma",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Weapons",
+      "text": "You see an amazing number of weapons crammed into this closet. He may have been more into his weaponcraft than he let on. Most of them seem to be either too rusty to use, or only half finished.There is a however a small pile of weapons that has seemed to weather the years. There's <<if $dexterity + $dexterity_pref >= 12>>a [[sword|Sword]],<<else if $strength + $strength_pref >= 12>>a[[shield|Shield]], and<<else if $charisma + $charisma_pref >= 12>>...is that a [[trident|Trident]]?<<endif>>\\n\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "sword",
+          "destination": {
+            "name": "Sword",
+            "pid": 74
+          }
+        },
+        {
+          "text": "shield",
+          "destination": {
+            "name": "Shield",
+            "pid": 19
+          }
+        },
+        {
+          "text": "trident",
+          "destination": {
+            "name": "Trident",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Tail",
+      "text": "<<if $dexterity+$dexterity_pref gte 15>> You deftly make your way behind the dragon and take a swipe at his tail. The dragon recoils in pain, trying to knock you off the edge of the mountain with his tail, but your strike allows you to dodge the slow attempt. [[Attack]]<<endif>>\\n<<else>>\\nYou get behind the dragon and try to attack his tail, but doesn't seem to faze him whatsoever. He quickly swings his tail at you and sweeps you clear off the edge of the mountain, a landing that you simply [[can't survive.|Death]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Attack",
+          "destination": {
+            "name": "Attack",
+            "pid": 72
+          }
+        },
+        {
+          "text": "can't survive.",
+          "destination": {
+            "name": "Death",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "BardSwitch",
+      "text": "<<silently>>\\n<<set $role_changer -= 1>>\\n<<set $strength = 12>>\\n<<set $dexterity = 10>>\\n<<set $constitution = 6>>\\n<<set $charisma = 13>>\\n<<endsilently>>\\nBoy are you frail now. But you can sing well. Anyway, time for a [[dragon|Dragon]].",
+      "links": [
+        {
+          "text": "dragon",
+          "destination": {
+            "name": "Dragon",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Head",
+      "text": "<<silently>>\\n<<set $wary = \"yes\">>\\n<<endsilently>>\\nYou climb on top of the head and try to stab it through the head, or maybe get to its eyes. You manage a few blows when the dragon aggressively flings you off. The dragon's back is now well guarded.\\n\\n[[Time to attack head on.|AttackNOW]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Time to attack head on.",
+          "destination": {
+            "name": "AttackNOW",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "DragonSwitch",
+      "text": "<<silently>>\\n<<set $role_changer -= 1>>\\n<<set $strength = 18>>\\n<<set $dexterity = 3>>\\n<<set $constitution = 18>>\\n<<set $charisma = 6>>\\n<<endsilently>>\\n\\nHonestly kudos. You don't really need to do anything else now. You're a dragon. You can go explore the world, breathe fire and YOU CAN FLY. What more is there to be had? But first things, first. Time to get out of this dingy gold mine and to bigger and better places.\\n\\n\\n\\n\\n\\nBut you can't. Some unstoppable force is preventing you from leaving this area. And you've tried scoping into someone else and it's not working. You're a little worried now.\\n\\nIt's been a few months, and it's so boring up there at the entrance. Hopefully someone comes up to try and kill you soon. You're getting real tired of mountain goat.\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "DragonBook",
+      "text": "<<silently>>\\n<<set $dragon_book = \"yes\">>\\n<<endsilently>>\\nAfter a bit of reading, you begin to come to the conclusion that this is just a bad book. It contradicts itself at every turn, and it reads like someone was late on their deadline. Anything you might've gleaned is in jeopardy due to its shaky credibility. Just as you're about to give up, you start seeing amusing doodles in the margin.\\n\\nAs you follow the doodles through the pages, completely ignoring the text, the artist draws a dragon sitting atop a huge pile of gold! While this is a fairly common depiction, you recognize bits and pieces of a rough map drawn on the next page as the area around the town! You stop briefly and marvel at what a nerd you are right now. Anything in the pursuit of valor! Maybe you can learn from this bygone adventurer. You learn that this particular dragon has some injured @@.important;horns@@ from when someone tried to steal it at birth. However, it has killed many an adventurer with its @@.important;talons.@@ The dragon also appeared under mysterious circumstances in a previously uninhabited region by the species. Previously uninhabited, of course, due to the strength of the Adventurer's Guild, or the best exterminators.\\n\\nYou may either [[Embark]] now or return to town for more [[Prep]].\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Embark",
+          "destination": {
+            "name": "Embark",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Prep",
+          "destination": {
+            "name": "Prep",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Embark",
+      "text": "<<if $smith_visited is \"yes\" and $potion_visited is \"yes\" and $library_visited is \"yes\">>\\nAs you finally begin to embark, you hear uproarious cheers. Someone appears to be returning with the head of a dragon as a surprise. It's the captain of the army sent by the capital! You were too late.\\n<<else>>\\nThe time to embark on your quest is here. You may either take the [[Low Road]] to get to the Dragon, or you may choose to take the [[High Road]].\\n<<endif>>\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Low Road",
+          "destination": {
+            "name": "Low Road",
+            "pid": 32
+          }
+        },
+        {
+          "text": "High Road",
+          "destination": {
+            "name": "High Road",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "NoBard",
+      "text": "\"Aww, okay. I'll seek someone else, maybe a master bardman to learn from. Good luck!\"\\n\\nYou continue on. you dont much care for musician types. You approach the [[Dragon]].\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Dragon",
+          "destination": {
+            "name": "Dragon",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Low Road",
+      "text": "You take the low road, oft beset by criminals taking advantage of the high levels of foot traffic.\\nAs you progress, you see a bunch of very thin looking goblins with knives towering over a cat. They seem to be planning to kill it and eat it.<<if $lady_visited is \"yes\">> Upon further inspection, the cat looks like the lost Tibbles! How did he get this far out of town?<<endif>>\\nYou may proceed to either [[sneak around|BadKitty]] the goblins, thus damning the adorable cat to a very violent death, you may [[fight off|GoodKitty]] the goblins though to do so would be very difficult and life threatening, or you may decide to [[join the gremlins|BadderKitty]] becuase your tummy has been rumbling for a solid 30 minutes now and hell you've always wondered how cats taste.\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "sneak around",
+          "destination": {
+            "name": "BadKitty",
+            "pid": 1
+          }
+        },
+        {
+          "text": "fight off",
+          "destination": {
+            "name": "GoodKitty",
+            "pid": 46
+          }
+        },
+        {
+          "text": "join the gremlins",
+          "destination": {
+            "name": "BadderKitty",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Tavern",
+      "text": "You pull open the doors of the tavern and it's...actually just about what you expected. You see what seems to be a rough, [[no-nonsense bartender|Bartender]] mixing drinks at the bar,<<if $shady_visited is \"no\">> some real [[shady looking guys|Shady Guys]] with hoods whispering to each other at a table in the corner,<<endif>> and <<if $lady_visited is \"no\">> a [[young woman|Lady]] who seems to be rather distressed.<<else>> and not much else. <<endif>>\\n\\nNow, which one might have a noble quest for you?\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "no-nonsense bartender",
+          "destination": {
+            "name": "Bartender",
+            "pid": 56
+          }
+        },
+        {
+          "text": "shady looking guys",
+          "destination": {
+            "name": "Shady Guys",
+            "pid": 40
+          }
+        },
+        {
+          "text": "young woman",
+          "destination": {
+            "name": "Lady",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Ignore",
+      "text": "You pass by the chaos unnoticed. He'll be fiiine, it'll be a good learning experience. Some people are destined to take down dragons, and some people are destined to sweep up the skeletons. You continue on towards the [[Dragon]].\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Dragon",
+          "destination": {
+            "name": "Dragon",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "AttackNOW",
+      "text": "There are a couple areas that you think might deal some damage.\\n\\n[[Attack the tail|Tail]]\\n[[Attack the talons|Talons]]\\n[[Attack the stomach|Stomach]]",
+      "links": [
+        {
+          "text": "Attack the tail",
+          "destination": {
+            "name": "Tail",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Attack the talons",
+          "destination": {
+            "name": "Talons",
+            "pid": 80
+          }
+        },
+        {
+          "text": "Attack the stomach",
+          "destination": {
+            "name": "Stomach",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "DeclineDeal",
+      "text": "<<silently>>\\n<<if $charisma + $charisma_pref < 15>>\\n<<set $strength_pref -= 1>>\\n<<set $constitution_pref -= 2>>\\n<<endif>>\\n<<endsilently>>\\n\"That's a shame. Looks like I'll have to crush you before you end up crushing your hopes and dreams with this silly charade.\"\\n\\n[[Fight|Attack]]\\n[[Leave|Leave]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Fight",
+          "destination": {
+            "name": "Attack",
+            "pid": 72
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "Leave",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "LadyRedirect",
+      "text": "Now if you remember those tales correctly, the heroes would always [[talk to the bartender|Bartender]] to receive a quest or any sort of information they were looking for. It makes sense, bartenders get a lot of different people, they must be pretty knowledgeable. However, you could also [[talk to the hooded figures|Shady Guys]]. You're not entirely sure of their intentions, but they seem to be planning something big. Any information always helps when starting out.",
+      "links": [
+        {
+          "text": "talk to the bartender",
+          "destination": {
+            "name": "Bartender",
+            "pid": 56
+          }
+        },
+        {
+          "text": "talk to the hooded figures",
+          "destination": {
+            "name": "Shady Guys",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "BartenderBackstory",
+      "text": "\"You thought you were getting backstory. We've got a deadline to make! [[Next time bub!\"|Bartender]]",
+      "links": [
+        {
+          "text": "Next time bub!\"",
+          "destination": {
+            "name": "Bartender",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "ClimbDragon",
+      "text": "You can attack a couple places from here.\\n[[Wings]]\\n[[Head]]\\n<<if $dragon_book is \"yes\">>[[Horns]]<<endif>>\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Wings",
+          "destination": {
+            "name": "Wings",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Head",
+          "destination": {
+            "name": "Head",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Horns",
+          "destination": {
+            "name": "Horns",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Shady Guys",
+      "text": "<<silently>>\\n<<if $first_tavern_visitor is 0>>\\n<<set $first_tavern_visitor = 1>>\\n<<set $strength_pref += 1>>\\n<<endif>>\\n<<endsilently>>\\nYou approach the hooded men's table, trying not to let the feeling of fear creeping down your spine show in your eyes. One man stands up and makes to push you away, but the one in the center waves him off. He speaks in a gravelly voice, definitely not from around here, but you can't quite place the accent.\\n<<if $is_brother is \"yes\">>\\n\"You look like a...sturdy young man. Looking for a job.\"\\n\"I might be. What's the offer?\" Acting like a tough, experienced fighter is a lot easier in your brothers shoes.\\n<<endif>>\\n<<if $is_lady is \"yes\">>\\n\"Now what's a pretty lady like you talking to men like us for?\"\\n\"You guys look like you could use a woman's touch to your little operation you've got going.\"\\n<<endif>>\\n\"Very well. Our...organization has been following happenings on corruption in this kingdom and there's a caravan arriving later today with tens of pounds of illegal goods. They seem to think they have an easy getaway, so they won't be very well armed. We need someone from the outside to use as a distraction. You in?\"\\n\\nIt does seem like a noble cause, despite the unsavory appearance. Still, you have a tremor in your gut that is either trying to warn you or complaining that you haven't eaten anything since breakfast.\\n\\n[[\"I'm in. Just tell me where and when.\"|ShadyQuest]]\\n[[You guys seem like you have things handled.\"|Tavern]]\\n\\nThese men don't seem very much like hero material. Maybe anti-hero if they had prettier hair. Still, maybe they are quiet heroes. You could also definitively discover their intentions.\\n<<if $role_changer >= 1>>[[Switch into the Shady Leader|ShadySwitch]]<<endif>>\\n\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "\"I'm in. Just tell me where and when.\"",
+          "destination": {
+            "name": "ShadyQuest",
+            "pid": 82
+          }
+        },
+        {
+          "text": "You guys seem like you have things handled.\"",
+          "destination": {
+            "name": "Tavern",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Switch into the Shady Leader",
+          "destination": {
+            "name": "ShadySwitch",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "CharMeditate",
+      "text": "<<silently>>\\n<<set $charisma_pref += 3>>\\n<<endsilently>>\\n<<display MeditateText>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "MeditateText",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Bard",
+      "text": "<<set $bard_join = \"yes\">>\\n<<set $charisma_pref += 3>>\\n<<set $dexterity_pref -= 2>>\\nThank you so much, bard will chronicle your glory and accomplishments, and may grow to be a valuable friend and ally, if a bit obnoxious at times.\\n\\n[[Dragon Time.|Dragon]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Dragon Time.",
+          "destination": {
+            "name": "Dragon",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Set Out",
+      "text": "<<silently>>\\n<<set $role_changer -= 1>>\\n<<set $strength = 12>>\\n<<set $dexterity = 8>>\\n<<set $constitution = 13>>\\n<<set $charisma = 9>>\\n<<set $current_body = 1>>\\n<<endsilently>>\\nWow! You can feel everything your brother feels. The wind on your face, the uneven trail under your feet. Everything you do seems so real. I guess this means that @@.important;if you die as someone else, you will die as well.@@ This thought is a bit chilling, but that's how it would work if you were out there. You put this behind you and focus on the task at hand: finding a quest.\\n\\nNow you know how this whole quest thing works. People who need help with their quest-related problems hang out at the [[local tavern|Tavern]]. True, a lot of them may be there to try and drink these problems away, but it's still the best place to look for leads, according to the legends. You know, you would really think there would be a nice bulletin board for these kind of things, but no one's opened up an Adventurer's Guild here yet.\\n\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "local tavern",
+          "destination": {
+            "name": "Tavern",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Death",
+      "text": "[img[You-Died]]\\n@@.note;Picture from Dark Souls series@@\\n\\nAt first, all is black.  Slowly, a small light approaches from the distance.  You can't really make out quite what the form the glowing being takes, until you hear it speak with that familiar voice.\\n\\n\"Poor human. Like so many in this world, you have died before your time because of one mistake or another. Truly saddening. But there is a silver lining, my child! Unlike all the others, you are favored by the gods! The all-powerful authors of our existence have sent me to grant you another chance. Click the restart button on the left side of the screen to start anew. I don't know what the lords on high meant, but they said that you would know.\"",
+      "links": []
+    },
+    {
+      "pid": 45,
+      "name": "Constitution",
+      "text": "@@.const;<center>Constitution: <<print $constitution+$constitution_pref>></center>@@",
+      "links": []
+    },
+    {
+      "pid": 46,
+      "name": "GoodKitty",
+      "text": "You confront the gremlins. They are no match for a noble adventurer such as yourself! This cat is so adorable! You may either [[take|BestKitty]] this adorable ball of fluff with you on the adventure, [[leave|EhKitty]] the kitty behind to fend for himself after this encounter, or you can decide to [[eat|WorstKitty]] the cat because the gremlins are gone and you're still moderately hungry after all.\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>\\n\\nYou wonder if you can switch into the cat. Only one way to [[find out|CatSwitch]].",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "take",
+          "destination": {
+            "name": "BestKitty",
+            "pid": 88
+          }
+        },
+        {
+          "text": "leave",
+          "destination": {
+            "name": "EhKitty",
+            "pid": 58
+          }
+        },
+        {
+          "text": "eat",
+          "destination": {
+            "name": "WorstKitty",
+            "pid": 50
+          }
+        },
+        {
+          "text": "find out",
+          "destination": {
+            "name": "CatSwitch",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "High Road",
+      "text": "You decide to Take the high road to Dragon Mountain.\\n\\nOn the way, you see a ragged adventurer completely surrounded by small skeleton warriors, frantically waving his sword around. Correction: more of a dagger really. And you may not have much experience yet, but you're certain of his terrible fighting form. The poor guy looks like he could use some [[help|Help]], and this would be a good time to test your abilities. But you do have a higher cause to think about, and with the army coming ever closer, you may want to [[press on|Ignore]]. Besides, they're only skeleton warriors. He can't die to them, right?\\n\\n...Right?\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "help",
+          "destination": {
+            "name": "Help",
+            "pid": 17
+          }
+        },
+        {
+          "text": "press on",
+          "destination": {
+            "name": "Ignore",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Start",
+      "text": "<<nobr>>\\n<<set $strength = 10>>\\n<<set $dexterity = 10>>\\n<<set $charisma = 10>>\\n<<set $constitution = 10>>\\n<<set $strength_pref = 0>>\\n<<set $dexterity_pref = 0>>\\n<<set $charisma_pref = 0>>\\n<<set $constitution_pref = 0>>\\n<<set $lady_visited = \"no\">>\\n<<set $role_changer = 5>>\\n<<set $cat_quest = \"no\">>\\n<<set $current_body = 0>> <<silently>> 1 = brother, 2 = lady, 3 = smith, 4 = librarian, 5 = potion master, 6 = bard, 7 = cat, 8 = dragon<<endsilently>>\\n<<set $weapon = 0>> <<silently>> 1 = sword, 2 = shield, 3 = trident <<endsilently>>\\n<<set $smith_visited = \"no\">>\\n<<set $potion_visited = \"no\">>\\n<<set $library_visited = \"no\">>\\n<<set $wary = \"no\">>\\n<<set $bard_join = \"no\">>\\n<<set $cat_join = \"no\">>\\n<<set $ladder = \"no\">>\\n<<set $dragon_book = \"no\">>\\n<<set $potion = \"no\">>\\n<<endnobr>>\\nYou've done it! You vanquished the evil pig monster terrorizing the land! Surely your name will be forever etched in the Hall of Heroes for this epic deed!\\nAhhh...that's your favorite dream. You always wake up so energized and ready to conquer your day. Well...normally. Too bad you were cooped up in the house recovering from your latest adventure training escapade. But that's odd. You normally wake up right about now-[[\"Hey! Listen!\"|Fairy]]\\n\\n\\n<<silently>> If there are line breaks with if statements, add a \\s afterwards to fix <<endsilently>>",
+      "links": [
+        {
+          "text": "\"Hey! Listen!\"",
+          "destination": {
+            "name": "Fairy",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "LadyDecline",
+      "text": "<<silently>>\\n<<set $charisma -= 2>>\\n<<set $const += 1>>\\n<<endsilently>>\\n\"Woooooow! I guess chivalry really is dead! Now out of my way! I have to go write my essay, The Dos and Don'ts: Talking to Heroes!\"\\nShe storms out of the tavern. You're not sure she's very qualified to write on that subject, but that's unimportant. Now it's time to find a real quest befitting of a blossoming hero like yourself.\\n<<display LadyRedirect>>\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "LadyRedirect",
+            "pid": 37
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "WorstKitty",
+      "text": "<<set $charisma_pref -= 4>>\\n<<set $constitution_pref -= 1>>\\nYou slowly approach the kitty. Your mouth begins to water as he purrs and rubs up against you. The cat is near demanding that you pick it up and you proceed to do so. With the cat in your hands, you raise him up to your face. The cat seems very greatful for what you have done. He sticks his tongue out at you and licks your nose. You feel... powerful. You are holding this living being in your hands and it has no clue what fate will deliver next to it. You begin trembling with the satisfaction of knowing that you hold the power of choice in this moment. You can choose whether this fully functioning autonomous creature lives or dies. You can choose whether to end this genetic strain, which has been in existence in one form or another for the last 3.8 billion years. You can choose to live out the sickest of your fantasies today, right now, in real time, yet still be hailed as a hero. You have unlimited contol and... power. You look at the kitty in your hands and you rub your face against his belly. He appreciates it. You then turn your face into his belly and lick it. He appreciates it. And then you open your jaws and bite. And you bite harder and harder. He does not appreciate it. As he squirms more and more viciously, your grip becomes stronger. your jaws become stronger. You finally rip a chunk of flesh free from the kitty. He does not appreciate it. He is thrashing violently and yelping very loudly. You go in for another bite. And another. The kitty is running out of breath. It becomes limp. It appreciates it. You monster. Curiosity satisfied, you move on to your [[next conquest.|Dragon]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "next conquest.",
+          "destination": {
+            "name": "Dragon",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Stomach",
+      "text": "After dodging some of his attacks, you get under the dragon and stab your sword into the dragon as far as it will go. <<if $strength+$strength_pref >= 16>>The dragon screams out in agony and topples, while you barely roll out of the way.[[Success]]<<else if $dexterity+$dexterity_pref >= 14>> The dragon winces, but it doesn't seem like enough damage to kill. Miraculously, you're able to remove your sword and roll away before the dragon squashes you beneath his staggering weight.\\n[[Attack]]<<else>> The dragon winces, but senses your position and flattens you with his stomach before you're able to roll out of the way. You [[die|Death]] the way you think you've always wanted to: thinking of pancakes.\\n<<endif>>\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Success",
+          "destination": {
+            "name": "Success",
+            "pid": 57
+          }
+        },
+        {
+          "text": "Attack",
+          "destination": {
+            "name": "Attack",
+            "pid": 72
+          }
+        },
+        {
+          "text": "die",
+          "destination": {
+            "name": "Death",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "LadyAccept",
+      "text": "<<silently>>\\n<<set $cat_quest = \"yes\">>\\n<<set $charisma += 1>>\\n<<set $const -= 1>>\\n<<endsilently>>\\n\"Thank you thank you thank you! Now I have to go study for my Mythical Beings and How to Run From Them final, thankyoubye!\"\\nMy, she is a quick one. You watch as she bolts out the door to engage in academic suffering.\\n\\nWell you did think this was more sidequest material, so who says you can't multitask? You might just @@.important; find the cat along the way@@ of a more heroic and rewarding quest!\\n<<display LadyRedirect>>\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "LadyRedirect",
+            "pid": 37
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "WizardSwitch",
+      "text": "<<set $role_changer -= 2>>\\nAlright, cool. This won't get you anywhere. You smoke weed for a while and never return back to your original body. In fact, your original body withers and dies. You happy now? Probably.\\n\\nJust kidding, though after a good long while of smoking, you think it prudent to go and switch back into the last body you inhabited.\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "DragonBackstory",
+      "text": "\"Long ago, one of the legendary Heroes of Old had become a bit arrogant with all the great deeds he had performed. Towards the end of his career, he was getting sloppier and lazier with each victory, yearning for a challenge. But this sloppiness would cost him dearly, as during one of his fights, a young woman died courtesy of the collateral damage created from the conflict. Her mother was a witch of great power, and cursed the hero into the form of a dragon, forcing him to remain in an enclosed area, which would sure to cause a nuisance to the surrrounding towns. Any hero that could defeat the dragon would release the cursed soul, but then they would take its place the following morning. I am Emi, the very young apprentice of that first Hero, the last he ever trained. I sought to avenge his death, and befell to the same curse, not fully comprehending the consequences of my actions. That is why I ask to end my suffering, even though it will spell the beginning of yours.\"\\n[[\"Then why wouldn't you attack me at first when I was clearly here to try and kill you?\"|DragonCurse]]\\n[[\"There's no known cure for this curse?\"|DragonCurse]]",
+      "links": [
+        {
+          "text": "\"Then why wouldn't you attack me at first when I was clearly here to try and kill you?\"",
+          "destination": {
+            "name": "DragonCurse",
+            "pid": 76
+          }
+        },
+        {
+          "text": "\"There's no known cure for this curse?\"",
+          "destination": {
+            "name": "DragonCurse",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Wings",
+      "text": "You manage to poke a few holes in the wings of the dragon before falling off. The dragon looks at you with an expression that can only be described as offended. \"My wings were my best features! All the dragon ladies loved them! That is SO rude!\\n\\n[[Attack]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Attack",
+          "destination": {
+            "name": "Attack",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "Bartender",
+      "text": "<<silently>>\\n<<if $first_tavern_visitor is 0>>\\n<<set $dexterity_pref += 1>>\\n<<endif>>\\n<<endsilently>>\\nBartender looks you over and utters \"Drink or information? I know the type. Adventurer. I thought our town was too small to grace us with your presence.\"\\nYou're a little offended. Heroes and adventurers are vitally important in our society! They definitely fuel the economy at the minimum.\\n\"And what's wrong with that? I'm only trying to help this town flourish!\"\\n\"Answer the question. I don't give away private information. Especially backstory.\" She narrows her eyes at you.\\nThis woman is quite a piece of work. Why does she hate heroes so much?\\n<<if $charisma >= 16>>\\n\"Do you have a grudge with one of the heroes of old? [[What happened?|BartenderBackstory]]\\n<<endif>>\\n\"I actually am looking for a quest. Anything fit the bill?\"\\n\"Well there is one thing. There's this terrible dragon that has set up shop a few miles from here in the mountain where we mine for gold. Some soldiers from the capital are on their way to kill the dragon, but if you can beat them to it, that'd definitely elevate your career, or get you glory, or make you feel less empty inside, whatever.\"\\nWell regardless of how the quest is described, defeating a mighty dragon in battle is still one of the most incredible things a hero can do. A true hero must always battle a dragon.\\n[[\"I'm in. Where's this mine?|Prep]]\\n[[\"You know, I don't like your attitude. I'll find a better quest.\"|Tavern]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "What happened?",
+          "destination": {
+            "name": "BartenderBackstory",
+            "pid": 38
+          }
+        },
+        {
+          "text": "\"I'm in. Where's this mine?",
+          "destination": {
+            "name": "Prep",
+            "pid": 78
+          }
+        },
+        {
+          "text": "\"You know, I don't like your attitude. I'll find a better quest.\"",
+          "destination": {
+            "name": "Tavern",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Success",
+      "text": "The dragon is barely holding onto its life. Now's your chance to finish it off for good and catapult your way into the Hall of Heroes!\\n[[Slay the dragon|Slay]]\\n\\n[[...|DragonWait]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Slay the dragon",
+          "destination": {
+            "name": "Slay",
+            "pid": 90
+          }
+        },
+        {
+          "text": "...",
+          "destination": {
+            "name": "DragonWait",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "EhKitty",
+      "text": "You can't risk bringing the kitty along on a dangerous mission. He'll survive better on his own. You give him some fish from your pack and [[keep moving.|Dragon]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "keep moving.",
+          "destination": {
+            "name": "Dragon",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "ShadySwitch",
+      "text": "<<silently>> <<set $role_changer -= 1>><<endsilently>>\\nAs soon as you get into this man's body, you want out. You just feel so...slimy. Is this guy even human? Before <<if $is_brother is \"yes\">>your brother<<else if $is_lady is \"yes\">>the cat lady<<endif>> has a chance to react, you quickly switch back. Whew. You hope that kind of feeling is a rare occurrence in an epic adventure. [[Time to move past this.|Tavern]]\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<set $role_changer -= 1>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Time to move past this.",
+          "destination": {
+            "name": "Tavern",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Dragon",
+      "text": "You approach the mountain and you hear it. The most awfull soul wretching sounds of the song \"Photograph\" by nickleback. You are here. It is time to do battle. You approach the dragon. You may decide to [[Attack]] right away, throwing caution to the wind and going head to head with this massive beast who is honestly just the worst. You may also try [[Talking|Talk]] with the dragon, to see if a creature with this bad of a taste in music could possibly have any sense to him. Besides, you have a bit of a hunch. You may also decide that realistically, this was a crappy plan and there is not much you can do about this dragon because jesus christ that thing must be like 30 feet tall. Holy crap dude. What have you gotten yourself into? I say [[bail|Leave]].\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Attack",
+          "destination": {
+            "name": "Attack",
+            "pid": 72
+          }
+        },
+        {
+          "text": "Talking",
+          "destination": {
+            "name": "Talk",
+            "pid": 16
+          }
+        },
+        {
+          "text": "bail",
+          "destination": {
+            "name": "Leave",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "Blacksmith",
+      "text": "<<silently>><<set $smith_visited = \"yes\">><<endsilently>>\\nAs you arrive at the blacksmith, you hear the sound of turning cogs, fire crackling, and the rythmic noise of hammer on anvil.\\nYou enter and see a small and stocky man hammering something out. On the walls you see all sorts of what you assume are smithing tools, including a ladder in the corner. Ah yes, clearly at work crafting some sort of weapon. Now here's someone who can appreciate the finer points of heroism! You circle around and watch him work until he looks up a minute later.\\n\"Oh, I didn't hear ye come in!\" He has quite the accent.\\n<<if $current_body is 1>> \"Aw, nao whu did I miss thes time! Whech farm are ye from? I'll get right to work and I'll have yer farming equipment ready fer ye in a few deys.\"<<else if $current_body is 2>>\"Now wha-oh, ye must want me te fashion some jewelry for ye. Now I like that yer thinkin local instead of the fancy designer stoff they got in the capital, but it's ben a while and I've got a lot on me plate. Maybe-\"<<else if $current_body is 4>>The smith's face lights up. \"Ah Silas! Here to pick up your ladder I see! Well it's in the corner so go ahead and take it sweetie! Now I know your a busy man so you should get going! I'll see you tonight for drinks!\"\\nDid-did he just call you sweetie? And did his accent just disappear? What have you stumbled upon? As much fun as it would be to learn juicy town gossip, you must stay focus on your mission, and this ladder could prove of use. It doesn't look like you'll get any weapons at any rate. <<silently>><<set $ladder = \"yes\">> <<set $dexterity_pref += 1>><<endsilently>> You grab the ladder, wave goodbye, and return to the [[library|Library]] to drop off your ladder. <<else if $current_body is 5>>\"Luk miss, I told ye that the glasswork on the vials take time! I've got so meny mure erders pyling op, ye just have to mek du withou' yer damn vials! Now go back to yer [[mumbo jumbo!|Prep]]\" <<endif>>\\n\"What sort of weapon is that you're making?\"\\n\"Thes is no weapon! Et's a bedpost for the mayor herself! Does thes luk like a weapon te ye?\"\\nYou're a little disappointed. \"I guess I was just expecting some weaponry, that's all.\"\\n\"Luk <<if $current_body is 2>>miss,<<else>>son,<<endif>> I do so much more than weapons. In fact, I don' even make 'em anymore! There's no one to use 'em!\"\\nHis looks away, almost wistful, a little twinkle in his eye. \"I used te. Make weapons. Learned from the best. I had dreams like ye too. Ye want to adventure, I cen sense et. But smiths are always needed to build things. Adventurers aren't needed when there's nothing to destroy.\"\\nWhat happened to thes..er...this town that made them dislike adventurers? Even this man has become disillusioned.\\n\"Well do you have any weapons left over from that bygone age? I could really use one.\"\\n\"I suppose ye could raid the [[closet|Weapons]] o'er there. They're only collectin' dost anyhow.\"\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n\\n<<if $role_changer >= 1>>[[Switch into the Smith|SmithSwitch]]<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "library",
+          "destination": {
+            "name": "Library",
+            "pid": 67
+          }
+        },
+        {
+          "text": "mumbo jumbo!",
+          "destination": {
+            "name": "Prep",
+            "pid": 78
+          }
+        },
+        {
+          "text": "closet",
+          "destination": {
+            "name": "Weapons",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Switch into the Smith",
+          "destination": {
+            "name": "SmithSwitch",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "Fairy",
+      "text": "What? Who's there?\\n\"Hello! I've not much time in this realm, so heed my words! Now is the time to act on your dream! Darkness stirs in this world once more, so you must go and gain strength! Take on a quest! Fight for the good of all people! Your name will be revered foreve- what is your name anyway?\" <<textinput $player_name [[\"That's me!\"|Fairy1]]>>",
+      "links": [
+        {
+          "text": "\"That's me!\"",
+          "destination": {
+            "name": "Fairy1",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Dexterity",
+      "text": "@@.dex;<center>Dexterity: <<print $dexterity+$dexterity_pref>></center>@@",
+      "links": []
+    },
+    {
+      "pid": 64,
+      "name": "ConstPref",
+      "text": "<<display ScopeText>>\\n<<set $constitution_pref += 2>>\\n<<set $charisma_pref -= 2>>\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeText",
+            "pid": 69
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "CatSwitch",
+      "text": "<<silently>>\\n<<set $role_changer -= 1>>\\n<<set $strength = 5>>\\n<<set $dexterity = 16>>\\n<<set $constitution = 4>>\\n<<set $charisma = 15>>\\n<<set $current_body = 7>>\\n<<endsilently>>\\nMrow. Mrow? Mrowwwwwwwwww!\\nJust kidding. Although you can't quite speak human and wielding the telescope or any of your weapons is a bit of an issue, you do have your mental facilities. Now I guess it's time to face off against a [[dragon.|Dragon]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "dragon.",
+          "destination": {
+            "name": "Dragon",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Charisma",
+      "text": "@@.charisma;<center>Charisma: <<print $charisma + $charisma_pref>></center>@@",
+      "links": []
+    },
+    {
+      "pid": 67,
+      "name": "Library",
+      "text": "<<set $library_visited = \"yes\">>\\nAs you step foot into the library, you automatically breathe a sigh of relief. This is where you got all those books that have inspired you, and got you to where you are now. You wonder if the old lady librarian is still around.\\nOh my. You've found the librarian. He's new. And he's sooo pretty. You don't know how sexuality works with this whole body controlling thing, but all you know is that man is very attractive. The long blond hair, the muscles, the air of confidence...\\n\\nFocus. You approach the new librarian. His name tag reads... Silas.\\n<<if $current_body is 2>>\\n\"Hello, Helen! How are final preparations coming along?\"\\n\"F-f-fine, thanks.\" You've got to keep your composure, he knows this girl!\\n\"Doesn't sound too fine. Ha ha! Now what can I help you with?\"\\n\"Yes actually, I'm actually doing some research on dragons, and a case study of any living in this area. Know of any material?\"\\n\"Why yes I do! If you'll follow me I'll take you to the [[dragon section|knowledge]]!\\n<<else if $current_body is 3>>\\n\"Kirk! What are you doing here? You've already been by three times this week, what if people get suspicious? Besides, you've got a lot of work to do today! I'll come by during break to pick up the ladder! See you after work!\"\\nHe shoos you out of the library. Just what you needed, to wander into a soap opera in the middle of an important [[mission|Prep]]! Speaking of said mission, you may need more stuff.\\n<<else>>\\n\"E-excuse me, a-a-are you new?\" Great. How articulate of you.\\nHe smiles with his brilliantly white teeth. \"Sort of. I've been working here for a month now. I take it you've been coming here for a while then.\"\\n\"O-oh yes I have.\" FOCUS. \"D-do you have anything that could tell me about dragons?\"\\nHe laughs. \"Ah yes, the great pinnacle of fantasy. I'll take you right to the small [[section|knowledge]] we have.\"\\n<<endif>>\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>\\n\\n<<if $role_changer >= 1>>This beauty...you could actually take this for own, even if for a little bit. But do you really [[want to?|LibrarianSwitch]] <<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "dragon section",
+          "destination": {
+            "name": "knowledge",
+            "pid": 8
+          }
+        },
+        {
+          "text": "mission",
+          "destination": {
+            "name": "Prep",
+            "pid": 78
+          }
+        },
+        {
+          "text": "section",
+          "destination": {
+            "name": "knowledge",
+            "pid": 8
+          }
+        },
+        {
+          "text": "want to?",
+          "destination": {
+            "name": "LibrarianSwitch",
+            "pid": 92
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "StoryStyleSheet",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n\\nbody {\\n\\t/* This affects the entire page */\\n\\t\\n}\\n.passage {\\n\\t/* This only affects passages */\\n\\tfont-size: large;\\n\\t\\n}\\n.important {\\n\\tfont-weight: 900;\\n\\tcolor: orange;\\n}\\n.note {\\n\\tfont-size: 7pt;\\n}\\n.str {\\n\\tcolor: red;\\n}\\n.str a {\\n\\tcolor: red;\\n}\\n.dex {\\n\\tcolor: blue;\\n}\\n.dex a {\\n\\tcolor: blue;\\n}\\n.const {\\n\\tcolor: brown;\\n}\\n.const a {\\n\\tcolor: brown;\\n}\\n.charisma {\\n\\tcolor: purple;\\n}\\n.charisma a {\\n\\tcolor: purple;\\n}\\n.passage a {\\n\\t/* This affects passage links */\\n\\t\\n}\\n.passage a:hover {\\n\\t/* This affects links while the cursor is over them */\\n\\tcolor: green;\\n\\t\\n}",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "ScopeText",
+      "text": "You open your eyes and just as the voice said, a telescope sits on your lap.\\n[img[Scope]]\\nIt looks like an ordinary telescope that you've read that sailors use. Although for a kid your size, @@.important;the scope seems a bit too large. It might be a lot of work to wield this hefty item.@@\\n\\n\\nAfter some struggling, you manage to position yourself so you are looking out the window through the lens of the magical scope. The first step would be getting out of this room. After a few minutes of waiting, you spot your big brother out to market. Perfect. You stare at him through the scope and concentrate. You begin to feel...[[strange.|Set Out]]",
+      "links": [
+        {
+          "text": "strange.",
+          "destination": {
+            "name": "Set Out",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "grab it",
+      "text": "The wizard returns with a mason jar filled with roughly 10 tongues suspended in a liquid. \"Here man, you have to drink it here to make sure all your energies are aligned and stuff man\"\\n\\nAs you begin drinking the potion of literal tongues you can't help but think that this must be what its like to french kiss all of the animals on noahs ark at the same time. The people around the glass smoke filled apparatus are all trying to restrain laughter very audibly. As you finsih the potion, the room erupts into laughter.\\n\\n\"hehe hey man, that wasnt the potion of tongues,\" the wizard says while snickering, \"That was just like, a jar with tongues in it man! Heres the actual [[potion|Potion1]] man\"\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "potion",
+          "destination": {
+            "name": "Potion1",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "MeditateText",
+      "text": "Well you don't feel like some all powerful warrior, but you definitely think it helped you in some, intangible way. You feel more focused and relaxed, and ready to [[tackle the journey ahead|Embark]]. You could also use the little time you have left to [[prepare|Prep]].",
+      "links": [
+        {
+          "text": "tackle the journey ahead",
+          "destination": {
+            "name": "Embark",
+            "pid": 30
+          }
+        },
+        {
+          "text": "prepare",
+          "destination": {
+            "name": "Prep",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "Attack",
+      "text": "What is your strategy for attack?\\n\\n<<if $wary is \"yes\">>\\n[[Face it head on|AttackNOW]] \\n<<else>>\\n[[Climb the Dragon|ClimbDragon]]\\n[[Face it head on|AttackNOW]]\\n<<endif>>\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>\\n<<silently>>\\nAdd a time limit?\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Face it head on",
+          "destination": {
+            "name": "AttackNOW",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Climb the Dragon",
+          "destination": {
+            "name": "ClimbDragon",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "DexMeditate",
+      "text": "<<silently>>\\n<<set $dexterity_pref += 3>>\\n<<endsilently>>\\n<<display MeditateText>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "MeditateText",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "Sword",
+      "text": "<<silently>>\\n<<set $weapon = 1>>\\n<<if $current_body is 2 or 5>>\\n<<set $strength_pref += 4>>\\n<<set $constitution_pref -= 2>>\\n<<set $dexterity_pref +=2>>\\n<<else>>\\n<<set $strength_pref +=2>>\\n<<set $constitution_pref -= 1>>\\n<<endif>>\\n<<endsilently>>\\nYou leave the blacksmith with your new shield which is presumably great against dragons. Better than nothing at least. You may either [[embark|Embark]] now or return to town for more [[preparation|Prep]].\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<display WeaponDisplay>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "embark",
+          "destination": {
+            "name": "Embark",
+            "pid": 30
+          }
+        },
+        {
+          "text": "preparation",
+          "destination": {
+            "name": "Prep",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Potion1",
+      "text": "<<silently>>\\n<<set $potion = \"yes\">>\\n<<endsilently>>\\nYou cant help but snicker yourself, probably due to the smoke in the air. It must be a type of joy spell because you are feeling really great right now. Everything is super awesome and stuff man. But like, yeah. You grab the um, potion. And like, yeah dude you keep on like, adventuring and stuff. Oh yeah, and this like, potion, like makes it so that you can totally talk all kinds of languages n stuff man. Its hella rad.\\n\\n\\nYou may either [[Embark]] now or return to town for more [[Prep]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Embark",
+          "destination": {
+            "name": "Embark",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Prep",
+          "destination": {
+            "name": "Prep",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "DragonCurse",
+      "text": "\"The witch's disillusionment with heroes led her to specify that the dragon does not attack the hero. The hero is always painted as the aggressor, looking for fights to pick, to gain more experience, more money, more glory. And with some, she's right. I've seen many a hero in both my human and dragon form who adventure without care for the ripples their actions create. And I've hypothesized for a while that in this clause lies the cure. The curse has merely prevented me from communicating that until now.\"\\n\"So I must vow not to fight or kill you?\"\\n\"I think so. I've been able to feel more like myself the longer you stall. Perhaps a vow will tip it over the edge.\"\\n[[\"I vow that I will never fight or kill you, dragon, Emi.\"|TrueEnding]]\\nPart of you still knaws at you. This could potentially spell a massive trap. This dragon is smart, and could be very well trying to trick you. Plus, killing this dragon will help the entire town, and be a good start to your adventuring career.\\n[[Slay the dragon|Slay]]\\n",
+      "links": [
+        {
+          "text": "\"I vow that I will never fight or kill you, dragon, Emi.\"",
+          "destination": {
+            "name": "TrueEnding",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Slay the dragon",
+          "destination": {
+            "name": "Slay",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "CharPref",
+      "text": "<<display ScopeText>>\\n<<set $charisma_pref += 2>>\\n<<set $strength_pref -= 2>>\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeText",
+            "pid": 69
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "Prep",
+      "text": "<<if $smith_visited is \"no\" and $library_visited is \"no\" and $potion_visited is \"no\">>\\n\"Take the road out of town and walk for a few miles. You can't miss it. Big mountain. Lots of smoke.\"\\nVery helpful. As excited as you are, you aren't going to take out this dragon with pure excitement alone. You need to prepare, seek out items and allies. You must keep in mind that time is of the essence, since the army is already on the way and aims to slay the dragon as well. \\n\\nYou can visit the [[blacksmith|Blacksmith]] to pick up some nice, dragon-slaying weapons. You could also head to the local [[farmer's market|Apothecary]]. Maybe someone can give you a potion, or a mystical radish or something, but it seems like a bit of  a wild card. Or you could go to the [[library|Library]] and see if you can learn about the dragon and its weaknesses.\\n\\nOnce you feel adequately prepared, you may [[embark|Embark]], and finally begin your first ever quest. \\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n\\n<<else if $smith_visited is \"yes\" and $library_visited is \"yes\" and $potion_visited is \"yes\">>\\nAs you get ready to finally embark, you hear uproarious cheers. Someone appears to be returning with the head of a dragon as a surprise. Blast it, the soldiers killed the beast! You'll have better luck next time.\\n\\n<<display Stats>>\\n<<display WeaponDisplay>>\\n<<display ScopeCharges>>\\n<<else>>\\nYou feel decently prepared. You can go to more places for items, but remember that if you take too long, the army may get to the dragon before you get your chance.\\n\\n<<if $smith_visited is \"no\">>You can visit the [[Blacksmith]] to pick up some nice, dragon-slaying weapons.<<endif>><<if $potion_visited is \"no\">> You could also head to the local [[farmer's market|Apothecary]]. Maybe someone can give you a potion, or a mystical radish or something, but it seems like a bit of  a wild card.<<endif>><<if $library_visited is \"no\">> Or you could go to the [[Library]] and see if you can learn about the dragon and its weaknesses.<<endif>>\\n\\nOnce you feel adequately prepared, you may [[embark|Embark]], and finally begin your first ever quest.\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>\\n\\n<<endif>>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "blacksmith",
+          "destination": {
+            "name": "Blacksmith",
+            "pid": 61
+          }
+        },
+        {
+          "text": "farmer's market",
+          "destination": {
+            "name": "Apothecary",
+            "pid": 93
+          }
+        },
+        {
+          "text": "library",
+          "destination": {
+            "name": "Library",
+            "pid": 67
+          }
+        },
+        {
+          "text": "embark",
+          "destination": {
+            "name": "Embark",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Blacksmith",
+          "destination": {
+            "name": "Blacksmith",
+            "pid": 61
+          }
+        },
+        {
+          "text": "Library",
+          "destination": {
+            "name": "Library",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "You-Died",
+      "text": "data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAFeAj8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+f+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooxRQAUUUUAFFFAGTQAYPoaKcfbdTaACiiigAooooAKKKKACijFFABRRRQAUUUUAFFGMUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUYxQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAqjLCnpbNKQEVmOCcAZNNU/MK6/4N/ESD4aeLl1GezF7GIyhjO0jn/eBqZNpXRrQhGdRQm7J9Tlf7On/54Tf98mgadOf+WE3P+ya+2/hJ8QvDPxf0qSawsraK4gOZYHhTenuOBkV1GrabpGh6dcXl3a2UVtbIZJX8hcBQetePLN+Wfs5Qdz9Ewvh/HEUPrNHExcO9j8/v7MmX70UynGeUNV2Qhjx0r6b8a/ta+FBaTW+naEboyRNF5vlIiqTkZ5X+tfNNxN9ouJH6F2Jr06FWU1ecbHxOaYKhhqihRqqp3a6EW0+lSRWrTDKq7d+BmmjOe1eh/Af4vWvwpvbmS5077etyuMYQ7fpuBrSpJxjeKuceHp051FGrLlT6nAnTJwR+5m/74NKNMmI+aGYHt8pxX3V8Ntf0H4neFoNV0+xt/LlypWSBdyMOx4rjPi5+0B4V+Gt+2nR6fDf3qKRKsEUYVCfU4rzaeYynN01B3R9vieDKNDDRxdTFR5JbabnyFPA1vIUYEMOoI5FN2/Lk1u/EXxPF4y8Z32pQW/2WG6fesXHyj04ArM03S59WvYbe2jeWeZtsaIMlj7V6iel2fCzgudxjr28yukYKZ5zW/wCGPhV4g8YbTp2k3tyjdHWM7T+Pevoj4J/s56d8NtBOq+Lf7OE8gA2TjIhDAYU84z36d6wPi/8AtcJZF9M8KmW1ih+Tz49qKccZXgnH41w/W3OXLRV/M+nXDtLDYdYjManI3tFL3jzmb9lvxvDbtIdDuzjnaBzXJ+IPAmreFpvLv9PvLWTnh0PbrXT2v7R3i+C7E39uao5zkgznB/MEfpXsvww/as0XxhYJp3iiPErYQyXCI6y7uDk4GOtVOrXpx5pRuvIzw2CyrFz9lTqSpv8AvWt+B8uvHtHemYNfQ37R37Mvl27a/wCGobeSzZfMkhtwTx/eXk5/AV8+vE0T/MCCDj8a3oV41Y80TyczyutgazpVl6Po13QsFnJctiKN5D32rmrH9g3WP+PW66Z/1Z/wrc+GXxDl+HHiKLUI4vNMZPy/KeCpU8MD/e/SvrD4H/GDRfjHZNHFZxQahagNLE0a9DxkEAZrHGYmdBcyjdHpZBktDMqnsZVlCb2TR8Z/2BeHpa3J+kbf4U0aJdZ/49rj/v2a/QbUodN0nSpru6gtUggRpJGaMYCgZ9K8B8bftjaZFd3MGkaXvhA2rMY4lDdjwUNc2GzGdZ2hA9nOOD8PlqTxGIV3srHze8ewYIO7+VNAO4Crmrai2rajcXDY3TuzkAAAZ+nH6VUVvnGe1eotj4SSSbSJrfT5LpiI45Hxj7qlv5VL/YN3jP2a5/79n/Cuw+Cnxgf4UazNO1v9qguIwjIFU45PqD69q+uPhp420P4o+HRqOnW8GFYCWJkG+Mn8K4cZjJUNeW6PquH+HaOaN01WUZ9mt/Q+Fv7DuQ2Db3Hv+7P+FVzBsYhgQQcEEcivsf44fHjQ/hJIbKKzS51OQZZY0XCj3yK+SfFXiN/Eutz3kihGmdn2gDjJJxwB61phMRKtHmcbI489yihl9X2MKqnJb26GURg0UE5NFdZ4AUUUUAFFFA4NABipbe2a4OFV2PsM1Grc/jXUfC74gD4ceI11D7MtywRk2naeox/ECKUm0ro0pxi5JSdkc8dNmPIhlIP+waT+zbj/AJ4TccfdNfVfwx/ab8L+OtRgsL7SksryU4WSSGMpIegGQBivXZdA0y3Rne0sVWPO5zAuMAZzXlVszdJ8s4M+8y3ginjqTq4bEppb6bep+e/9m3H/ADwl/wC+TQdOmQZaKUD/AHTX1zrH7THw90i+e3aKOZo/lLR2YZSQexAqTTf2jPhxrDhG+yQluolswo/PbVvMKlr+yZy/6r4LndP67C58fmEqcEEe3ekeIoSMEEetfbMvw98CfFWyJsoNFuGkGcwqC/5DBryT4k/sUala3E9zoM9pPbKpYQfMsi4PT5s9qulmNOT5Ze6/Mwx3BuMow9rh2qse8dT5+xRirur6HdaBfyWt5by288f3kdcEc4qqAFz34r0NLXR8jKLjJxkrNDKVBuYDnk9qSljYLIpPQGgRKLRzjCOQRkYGc0psJf8AnjN/3zXtHw9/ak07wx4fstPvNBjuktI/LLCOLL8+u3P616d4E/aJ8CeNtVgsTp0dhcXDBIxNAu0knGCeB6Vw1cVUhd8lz6bAZJg8Uor61GMn0aZ8kfYJgf8AVyf98mnCxm/55zf98mv0E/4Q/Ssf8g6yJPT9wteb/Er48eCPhvq0tg2mxX15BxIkMKgKfQnpXLSzX2j5YQdz3cw4DWBpqricTGKfkz5CawkRsFHHfkYqFlKtivdfE/7WGl6tps9raeHY7dZ42TLRw5UkEZzsz+Rrw6Z/OmZ+7EmvTpTlJe9Gx8VjsNRpSUaFTnXpYFtmdlCqzFugAzmpP7NmAyIpiD6Ia2Ph/wCMV8E+KrXUfs63Atesfy/N+YIr37wJ+1v4c1i8SHWNIW3804aZoo2UenAUYrOvWnD4Y3OrLMBhsTLkq1lB+aZ80HTZweIJ/wAVNIdOnH/LCb/vk1+g9loul6lbQzQWlk8dwokQrCuGUjIOfyrhPH/xt8E/DjXTp9/BC10qBnWKzDbSexOK4IZtzy5IwbZ9di+AqeFpqtiMVGMXs7PU+M/7NuP+eE3/AHyaP7NuP+eE3/fJr6vP7Vvw+B/49T/4Aj/Ck/4at+H3/Pqf/AEf4Vv9dq/8+2eV/q7l/wD0Gx+5nyiNNuP+eE3/AHyad/Zc/wDzwm/74NfWNr+1J8O5id0SRD1Njkn/AMdrrvBfxE8EePJxHptxpUkxGRG0Co5/Ais5ZjUirukzqw/COEryUaWMg2fDstlJCMvHIg6ZZSKI7KSVdyxyMvqFJFfTv7bujW2n+CdLeG1t4m+1YJSMKSNuecV518Gv2irb4ZeHBp11pYvVWQuH2xnIJ6cqT+tdNLFOpS9pCJ4uPySGDx7wdeqkkviseVf2ZMUysMp/4AaaNOnP/LCb/vk19ufCj4ieFvi9YyS6faWsc9vgSwyQJvGe/TpWr431jw58PNFOoatDZW9vu2r/AKOrFj6AVxyzRqfs3B3Po6PAlOphvrixUfZ97M+DjptwP+WE3/fJpptJI87o3XHXIIxX1mn7U3w9ZwPJVOepsuo/75rZ0f4sfDTxkwjM2lB36+fB5Z/kK1ePqLekzhp8K4Oo7U8ZC58Y7CfWkKbWx7d+K+y/Gv7Mvhfx5p3naZBp9q7jIkjDFW98q4r57+JX7M/ib4dxzzPbfa7CHnz4MnAwTyOSAMetbUMfSq6bPszzs04Vx+CXO480P5o6o82waKlaIqTkYI4IPWo2XjjpXafNtWEooooEOQ4NKcE5plFAHY/B34lT/DPxta6hExMJOyZCeHT0r7N8X2MXxL+Gd7FayB4tUs2EUinqD2r4EDcV9VfsXfFE614duNBuZAbnT/3kW48mPuPwryM1oXSrxWqP0PgXNFzyyuu/cqJ28mfMetaNPoOoS21xE0UikjDDB4JH9KoEYzX0j+2f8JkgtbfxFYwgBGZLkIOBuYnP5mvm9zjtXoYWuqtNTR8lnWVVMvxc8NPpt6ADx7+9PiiMrbQMk8DA5PNRqM9eteifs1/Dd/iR8SLWN1zZWJ+03BbpgHpWlSajFyZxYTDTxFaNGnvJpHs3h/VW/Z2/ZoSaUiPU9QVmjjHBDvyD+ClTXy/qepS6rfz3M7tLLOxd2Y5JJOa9Z/a8+Ja+L/HC6VbMPsOkL5aqv3S+Ofy6fhXjj/8A1658HT5V7SS1ke1xFjlUrRwlJ+5SXKvVbseieZyDj8M19R/skfAlNA0VfEmpwg3t4u60V1H7lOu7nvXhXwK8BH4ifEbT9OZd1t5nmT+yKefz4r62+OHjBPhp8J7+eLEMgiW2gQfKFJIHH0Ug1yZjWd44eG7/ACPd4MyymoVM1xCvGltfa58+ftWfG+Xxr4qk0iwlYaVpz7RtOPOcZyx/z2rx0vuPTGBin3lw1zM0jsWdzlie5NQjqfpXo4elGlBQifHZlj6uMxEsRVd2xxkycdvrSo+O361HSocGtVpscB9LfsefGptSH/CLapNvYKfsjyHJI4ynPXNc1+1z8EI/B2qjXdMi2adfOfPRR8sMp/oa8j8G+IpvCviWy1GFyklpKHyPQGvuHWdMsvi58LGjkCvBqNpuDY6Pjgj/AIFj8K8bEv6tXjUjtLc/S8lSzvK6mBra1aSvF9bdj4NVdrA4yPavYf2KrpovjAsYziW1dTz9K8q1/SJfD+t3VjOCstpI0bAjBBHFen/sYnPxnh/693/mK9DF2lQl6HyGQKUMzoxe/MkfQX7TWpvp3wV1h49ykoqDBwQGYA/pXxEXynOOmOa+1P2sDj4Iap7lP/Q1r4pf7lcWTWVBtdz6XxHk3mS/woaDg96UfeByKbRXrH58P4J9/rX0N+wZqEh1rXLXdiE26ykdcNuUcfnXzv2r3z9hJyPFutDpmz/9mWuXHa0JXPouFJuOa0ZLv+h5p8a9bfxB8UtbuHdnxcsi89lOMCuPbjPNbXjs+Z4z1bJOftkv/oZrEYYNbUUlBWPHx03LETb6t/mJRRRWhyhRRRQAUUUUAGKesm1cUyigC1ZXrWd1HKjbZImDKwPTHNfdV3qsmpfBdrstiWbSySRyM7DzXwdGQWHtX3Hpv/JviZ6/2U3/AKAa8nNIpun6n6DwJOX+1w70z4fkmO/POSST70iuCe2TTX6n8aZXrLY+Ak9WaWg+JL7w1eLcWN1NbSo2Q0chU5r6L+B/7X6aiLXS/ErMk+8Rx3StgEYOC3XnOK+YwcH1p0cpWQEcHsQelc1fC06qtNHrZRnmKy6qqmHlbuujPtv45fArTfjBoJkWOGLVY0LQXEZ4k7gE+h9a+M/Efh658M6vc2N5G0dzasY3Vh3B619X/sifFd/Hfgs6XdShtQ0kLGCTktGeh/A1yf7bnwvjFvb+JbWIIc+Vc7B15ADH3ya8zBV50azw1V+h91xNltDMcvjneDVn9pI+aqBwacyYPf8AKm17h+WkiuBwBUtldPbXcUiMVZHDKQcEYqsDg0+M4dfahq+hUZNNWP0B8Pa4178P7XUGO5nsfN/8c3V8JeKtRfVfEuoTyMXkluJGLMcnGTX294LbHwYs+BzpH/tIV8K6qf8Aia3X/XV//QjXjZUvfqPzP0nj+pJ0MHd7wv8APQrl+tNDYHekor2T80HBgD0/CnhwAOMYqKnfw/iaLAfbf7LOvS+IPgxpbyuXliDwknqMPx+mK+Y/2mHDfG3xB3AuCFyeg7V9F/scn/iylpxz5zj/AMer5x/aY/5LX4g/6+DXiYHTGVEj9O4mqSnw7g5Sf9WOFEmPWjzz/tfnUZ60V7Z+Y3JUn2nq3/fVWtI1aXR7+G6t3eKeBw6up5BHI/WqFOjwDyCf6UmrqzKjJxkpR3R9HftC+KP+E8/Zu8PascmSWdRK2efMCEEV86sQBz3rr5PixJN8II/Cj2yvHHefa1mJ5XIxtx/9f8K42Qg4x1rDDUvZpxW1z1s5x6xdaFbd8qT9Vuesfsc69Jp3xigtw7Kl9E8b+hwuRxXpX7eNwV8KaKqk7WuZQR0zgAA/zryX9k/j43aOR23/APoDV6x+3wMeFdCJOf8ASZv5CvPrxX16DPrsqqS/1XxEezPmDziRnn86FlO7IOD9aYPumkHWvYPzk7L4b/GzXfhpqCSWF3IYQ2Xgc7kf8+lfXPwl+NekfF7QEMbRpfSqwmtn5AxjPHGQQfSvhVeG/nW/4A8d3nw/8U2ep2chV7eQMVz8rDIyCPwrgxmCjVjdaM+r4c4nr5fVVOo+am909fuPaP2qP2bU0WGfxJoUJFtu3XUA/hB/jA9K+e2QjPNfoN4f1Kz+IPhG3uUVbizvoAMPg/KRyPzr4q+Ofw+Pw1+Id/poDfZyxlgPqh5rHLMU53pVN0etxtkNLDuOYYRfu6n4M4qiiivVPz4KKKKAHr6Ejmux+Bnjpfh58S9O1JzmAPsmGeqng1xdPV8kVM4qUXFm+Gryo1Y1Ybxdz9AvGGgwfELwVe2SkNFfxNhhgjJXIxXwZ4n8Pz+Gtfu7C4XbLaymNs8dK+nP2Pvi63ivTbjQr2Tdc2UKNB/edAoU49TxXLftsfDD7Bqdv4jtYv3dyPKudo4D5OD+NeJgZPD15YeWz2P0ziqMc3yulnFFarSSPAIIWnlCINzE4AA6mvp34MaEPgL8DtW1zVQiXd4zKkZGCcfKACRnqM15V+zH8M2+IvxHtmmQvp+njz7h+gAHIFdj+2d8TRqWpWvh+ykH2a3AnnCdGcj5ensc13YmTqVFQXqz5vJaSweEnms/iV4wXdvr8jwvU759U1Ke4kIMk7mRue55quo3CkkOXPenRLkcdTxXej5GUm3dn0J+wj4aafUdX1NgdkaLApA7nr+grb/bv1/b4f0jTsgNPKZ2weoAx/UflW/+xdoa2Hwi+0D5WurmRm464AA/UGvMP25tQM3xGsbYk4trUHGeBnBrwYfvMwfkfq2IisJwlGMd6lvxZ4dIuHxnIpGGDxSysGbIpte8flAUq9aSigCRCN2evtX2l+yf4jGvfBzTlJy1kzQN35BBFfFcZy2K+pf2EtSMvg/V7UklYbgSAHtlRn+R/OvMzaHNh230PuPD7EOnm0YdJJo8q/a28OHQPjLfNtKpeqLgYGBz1q7+xh/yWmH/AK95P6V2H7dPh4S6jpV+Mbo7d0kOOvzqB/OuQ/Yw/wCS0Q/9e8n8xRCpz4NPyCrhVh+JVTW3tLo93/ax/wCSIal/wD/0Na+K5On5V9qftY/8kQ1L/gH/AKGtfFcnT8qjJ/4HzOjxH/5Ga/woZRRRXro/Pw7V75+wr/yN2tf9eX/s614H2r3z9hX/AJG7Wv8Ary/9nWuTG/wJHv8ADH/I0per/I8e8bf8jnq//X5L/wChmsYEEH6Vs+N/+R11b/r8m/8AQzWIOtb0vgR5GL/jS9X+YUUUVZzhRRRQAUUUUAFA60UUAOj/ANZX3Jpv/Jvif9gpv/QDXw3H94V9yab/AMm+J/2Cm/8AQDXlZpvT9UffcCfFiv8Ar2z4cfqfxplPfqfxpleoj4OW4Uq/eGaSheopknqf7Jni1fDHxes43bbHqK/Zic4G4/dz+NfUnxp8ODxb8LtYs1ALPbvIvHcAkfyFfD3g/U30jxRp10jbXhnRgfxFfoFbFNY0pGONlxHggDjBA/8Ar18/mseStCotz9a4CqrE5fiMFPb/ADR+dssRjeRW4KcfiOKhwa3PH2nDSfGOq23aK5kUfTJxWIcgda9+LvFM/Kq0HCbg+glLH98UlLH98VSM0fefgv8A5IvZ/wDYI/8AaQr4V1f/AJCt3/11f/0I191eC/8Aki9n/wBgj/2kK+FdX/5Ct3/11f8A9CNeLlXxVPU/R+Pv4GC/wf5FWiiivZPzcKcPuj8abTh0H1NAH2T+xz/yRa1/67v/AOhCvnL9pf8A5LX4g/6+DX0d+x18vwXtR6zPj/vqvnL9phT/AMLt8QcD/j6YfyrxcF/vlQ/SuI/+SbwXr+hwB60AZNOKc9vzoC4Pb869ux+aiBCa1dL8G6lrGi3eo21pJLZ2GBPKo4jz0rPQe4GPWvfvA3hmXw5+yR4hupomjfUpPMUE4JUDAOOmOawrVeRLzdj0stwDxU5R25Yt/cfP5zt60zNOkOVH5/ypi9RWx5qPSv2Tv+S3aR/wP/0Fq9Z/b6/5FXQv+vqX/wBBFeTfsn/8lu0j/gf/AKC1es/t9f8AIq6F/wBfUv8A6CK8iv8A77A/RMq/5JjE+qPl0fdNIODSj7ppK9c/Ox3XngGkT7wOQOaSlUZYfWgD65/Yo8XDWPhtNp7/ADS2E2ACc/L1Fcx+3j4WIbStXVQOtq5x143A/wBKxP2E9ZNr481Gxydl1bBsHplTkmvVP2wtGGo/Be6kK7mtZklB9Oxr56S9lmCtsz9doS+v8JyUtZQ/Q+M6KAM0V9CfkQUUUUAFAODRQODQB1Hws8cTfD/xzp+qROyiGVVkA4DoeCDX2n4r0Oz+MHw4ltxtmt9RtxJGVI+VtuRg18E5XGAeOp+tfYH7HvjaTxT8LRaSriTS38lWx1U9M/hXj5tTaiq0d0fo3AGMU6tTLa2sKi/ExtE0hP2XvgRqF1dBf7YvyyDk5ckYAH0z+lfL2qapNqt089zI0szDlmOc44/lXvX7c3jSS48RWGiKuyGCMTsSBklua+fW75rqwEG6ftZ7s8LiutCGKWBofw6S5V69WxhOTUkTbQD71HT1Py13Hyx9sfsqxCL4IaQQB86Oze+WavAv21J2k+NM6k8JbxgfiK9//ZYcf8KR0cjG1Y2B/Nq+f/20k2fGmY9jbxfyrwMD/vs16n61xKrcM4e3908iopW6mkr3z8lCgdaKVeooAdEMsPevpD9gqQuuvxZIG1G/HBr5wTh8e1fR37BkZL6854TZGuffBrgzL/d5XPquC3/wsUfU6T9tW0WbwOJiAXRMj2/exZryj9jBf+L0Q/8AXvIf1FerftqXSx+Bkj4/eRnHHX97FXlX7GH/ACWiH/r2k/mK5ML/ALl8j6HOWv8AWmFv5ke7/tY/8kQ1L/gH/oa18VydPyr7V/aw/wCSIal/wD/0Na+KpOn5Vpk/8D5nL4j/APIzX+FDKKKK9dH58HavfP2Ff+Ru1r/ry/8AZ1rwPtXvn7Cn/I361/15f+zrXJjf4Ej3+GP+RpS9X+R4943/AOR11b/r8m/9DNYg61t+N/8AkdNW/wCvyb/0M1iVvS+FHk4v+NL1f5hRRRVnMFFFFABRRRQAUUUUAOj+8K+5NN/5N8T/ALBTf+gGvhuP7wr7k03/AJN8T/sFN/6Aa8rNN6fqj77gP4sV/wBe2fDj9T+NMp79T+NMr1EfBy3CiigcmmSTWrbLmNs/dINfoN4ImMvgrSpCOWsoiT77Af61+fEC5mQDrn+tfoL4FUr4F0kHj/Q4uP8AgCj+deJnS92D8z9R8MWvb17/AMq/M+J/jtAtr8XfEEQHC3LY/If/AF649hhfxrsvj+wk+MXiFl+79qb+QrjCeCfWvYov3F6H51mH+81P8T/MSlj++KSlj++K0RyI+8/Bf/JF7P8A7BH/ALSFfCur/wDIVu/+ur/+hGvurwX/AMkXs/8AsEf+0hXwrq//ACFbv/rq/wD6Ea8XKviqep+kcffwMF/g/wAirRRRXsn5sFOXoPqabTl6D6mgD7J/Y4B/4UvZY5P2iQ/nwP5VU8efsnaD478WX2q3Wr3cM17IZHRVDBSfqau/sb4HwYtGBIPnP+Hzf/Xrwn9oXx5qulfGLXreG6CRR3BVB5SNgdB1HsK+epU6k8XUUJWP2DGYvC4fh/CSxVL2i7fI9SX9h3w1j/kN3p/7Zj/GlP7D/hpSP+J1eHn/AJ5j/Gvnb/hZutAf8fn/AJAj/wDiaX/hZ+t5H+mDj/phH/8AE16H1XEf8/GfKf23k/8A0Br72fUvhf8AZC8IaBOJpkuNRcZG2U/KPfArW/aL0+DSvgRq1vbxJBBFEAiKuAg9K+aPBP7Snibwhcl4bi1l3DBWSFefyAr3n4hfEKL4n/sv3urRgxvPABIh7MDg8+lcFXD4iFaDqSuro+py/OMqxGX4ihhaSpz5Hp5ep8gt9xaReopzrhR7U1eor6A/Ikelfsn/APJbtI/4H/6C1es/t9f8iroX/X1L/wCgivJv2T/+S3aR/wAD/wDQWr1n9vr/AJFXQv8Ar6l/9BFeRX/32B+h5V/yTGJ9UfLo+6aSlH3TSV65+dhQOoopVOCKAPWf2N7kwfGm1UEgSwSKfyr6O/aPhW7+Cuv5JAS3DgY75H+P6V82/sdxs/xss8DhYpCfyr6S/aKlWD4KeIdxwWtlAHXnctfP5gv9shbyP17hGz4exKfn+R8MsNrN9cU2nSH52+tNr6A/IQooooAKVetJRQA48DAr6k/YQ/5E7V/+u6/yr5aXqK+pf2Ef+RP1f/r4X+Vefmi/2Zn2HAv/ACOKXzOC/bf/AOSux/8AXpH/ACrxdjzXs/7cH/JXY/8Arzj/AJCvF26mujBfwIHl8S6ZpX/xMKfH0plKpwa6UeGfYv7GOpi++DkUWQXtriSLHpnkf+hV5T+3Ppxh+JdnOASs9qOfXGBW/wDsH+Kwk2saO7csFuI8np2P8qv/ALd3h4y6XpGpheIpPIZs9mG7/Cvn6S9nmDXc/V8VL63wjCUd6dr/ACZ8xyLhqbT5QFxj0waZXvn5QFFFA60APXpX1D+wlpjxeFtZuSpAluAg/Bc18vqMn0r7Q/ZI8Mt4e+DVjI3D37tOQff5R+hH5V5mbSth2u59v4f4d1M2jJfZTZ59+3Xr5S40uxVhiSF3YfV0I/8AQa4z9i85+NEX/XvJ/MVX/a/8UDxJ8X7uNGBi01Bbr/Wmfsf3gtfjXYjP+tjdMep606dLlwfL1sGJxsavEvtenPb8T6C/ax/5IhqX/AP/AENa+K5On5V9uftR2puvghrQXLeUiMeemHFfEhU7PwrPJ2vYfM6vEhNZmr/yojooor1j8+Fx8te+fsK8eLdaJ7WX/s6V4IOfavfv2Hk8jUfEdxnHlWJyT9Qf/ZTXNjf4LR73DH/IzpP1/JnjHjhx/wAJlqp7fa5T/wCPmsYDNaXieYT+Ir+TIO+4kOfXLGs8jafqK3pq0UePiJc1WTXdjaKKKoxCiiigAooooAKKKKAHR/eFfcmm/wDJvif9gpv/AEA18Nx/eFfcmm/8m+J/2Cm/9ANeVmm9P1R99wH8WK/69s+HH6n8aZT36n8aZXqI+DluFKv3hSUqjLUyS5ols13rdpEAcySquPXJr9B9EhGj6Fao4IW3hVGzzwoGa+Kf2dfB7+L/AIs6RAQTHFJ50n+6v/16+v8A4r+KE8IfD7Vb92UFbZhHn+8Rt/mVrwc3fNUhSW5+reH0FQwmJxs9kvyVz4h+JGonVfHGr3PBEt3IcjuNxA/lWCegqxdym5leRjzKSx9ck1ARkn2Fe7FWikfl1afPUlPu2NpY/vikpY/viqRmj7z8F/8AJF7P/sEf+0hXwrq//IVu/wDrq/8A6Ea+6vBf/JF7P/sEf+0hXwrq/wDyFbv/AK6v/wChGvFyr4qnqfpHH38DBf4P8irRRRXsn5sFOHQfU02lH3R+NAH2X+x1/wAkWtf+u7/+hCvnH9pb/ktniD/r4NfRv7HP/JFrX/ru/wD6EK+cv2l/+S1+IP8Ar4NeLgv99qH6XxH/AMk5g/66HBE+5oz7mkPWivbPzQkRgiZzz6V6t8PfiJY6f+z/AOKNCu7tYrm5YNaoQTv4zgHHHP8AOvJlOKUHPGayqU1NJPpqdWFxdShJuHVNfJiysGAx2poHIpyrvYYokVomwRjHatDlR6P+yf8A8lu0j/gf/oLV6z+31/yKuhf9fUv/AKCK8m/ZP/5LdpH/AAP/ANBavWf2+v8AkVdC/wCvqX/0EV5Ff/fYH6JlX/JMYn1R8uj7ppKUfdNJXrn52FKn3h9aSgdRQB7Z+w/pxuvipNcFSwt7V8/UjFeyftcaudN+CmoLnm4eOEZ6nJ3fqOa5L9hfwobPw/qessnN3IYYyR0CjNVP28PFmyz0rRlYZcm4lH0GBXz9T97mCS6H63gf9i4TnOW89vmfM5OTRRRX0B+SBRRRQAUUUuCDjpQAqjJHtX1J+wj/AMidq57faF/lXy5tIHTAr6v/AGHNLe1+G17cMGAuLtgMjGcKBxXnZq/9mkfZcBwcs4p26XPNv23x/wAXeT/rzj/lXi7KQehr3P8Abm094fiTZXJUlbi1wDjrjivEJQT75HGK6ME/3EDyuJk1mle+/MyKgdaCCp5BFA6iuk8I7z9nXx5/wr74oafdSswtZ3EE2DgFW45+hr6m/aO8Gr8QvhHfpAu+S3T7TCw5DY5GPXIr4iicqQwJBXnr0r63/ZR+NMPjnwoNEv3U6jYxbEEjDE8eBn9M15OZUZKSxEPs7n6FwXmFKrSq5RiX7tRaep8kXMTRSlSDuHDAjoe9RYPoa9X/AGoPgzJ8NvGMt9bRs2k6i5eJ8H5GJOV/z615awJPRhXp0qkakFOPU+Jx+CqYSvLD1lZoixmlQHIPvShcZ709Y9xOBj61ZyIu+GdDn8S6/aafAjNLdyrGNoz1OM191mW0+E/wxQysEh0mz27icAuo6/ia8R/Yy+Czm6XxTqEGFTizRhyx6lsfTP51X/bG+NsepuPDWmXHmwQnddyA/efkbfpivExb+sYiNGG0dWfpeQWybKqmZVtJ1VaC6vzPDvFmvSeKfEV7qExJku5mk5PTJrf+AGvjw18W9EuWI2mcRtz/AHsgfzFcdId27kYHTnrzTrC6ksb2KeJtskLB1I7EHIr2JQvBxXY/PaGJlDERrvdNP8T73+L2jN4h+GetWqDPn2jsB1JwC38wK+CZkMUjqf4SQR3B5Ffd3wi8a23xK+HNjeIwk82EQ3CbgSGC4YfU18m/tAfC26+H/jvUVELfYJpDLC4U7QHLEDPTtXjZTNQlKhLRo/R+PqP1qjQzOjrFqzZ55jjNKODTgvY0Kh3DGPavcPy4FBJB/SvoT9lS3Phn4V+MdclUiIRNECeP4GH8zXg+i6JP4g1K2s7WNpLi5faqgZJr6A+NUsXwT+BFh4ShcLqOogPc4PJA5JPsTxXHjHdKkt2fRcPw9m542fwwT+96I+d7ib7RPI7HliT+dRNgn8KTtSV2HzzdwooooEFFFFABRRQOtABg0YNO6cCgKSejUALGDuHB4r7j03/k3xP+wUw/8cNfENtCzuFUZZsKB719zyWDWPwPNvtO5dLJxjnmM15OaNXp+p+g8BU23imv+fbPhOThjTMVKyHdyDnJpmCSOO9esj4CSdxApPaljUhxkGnwwvJIAiszMcAAZya9l+C/7Kep+NWt7/VFbT9PLgtG3EkiYJ6fXrWdWrGlHmm7Hbl+W4jG1VSw0bs7L9ib4ZSWEFz4iuo9jTDybbPUA/xfT3qz+298Sl03QLfw7byn7RdkTXAGPlTjAx7kV6d448c6P8EfAqyMYYoLdPLs4FwDKw4B9+a+KfH3jS6+IPie71W8kLzXLkhc5CL2UV4+EhLEV3iJLRbH6JxBiqOUZUsnoO85fFboYjNuAHGBSfdpKK9w/LAxmnR8OKAh6+lSxRGWaNQCcnHSi6Glqfdvgsf8WYsx3/sj/wBpCvhXVwf7UuveR/8A0I196+FNKeH4YWVmciT+zvL5658rp9c18J+I7F7HX76FlYFJ3TBH+0a8bKfjqLzP0nj+LVDB36Qt+RmUYzTihHYmjB9MV7R+ajcH0NOAO0fjSYJ9TT1UqoOD09KQH2R+xyP+LLWnvO//AKEK+cf2l/8AktfiD/r4NfTP7JmlyaT8F9L3qwMzvIARj+Kvmn9puFo/jZrvBw85ZTjqDyD+RrxMDZ4yo0fpvEsJR4cwakra/oefHrRSlTnoaVVya9s/MhuKUKd2O9O+gyO1SWdpLeTrFHG8sjkBUUEsxPYUeY0m3ZHTfBr4fy/Ejx/Y6Yi7oncNMewQEZyew5Az7ipfjzbabZfFTVbfSoFtrG2k8lEHqowf1Br6I/Zz+D3/AAqPwPe63qaBdUuoDIV/54oMkD8eK+WPEuotret3l4xLNdTvJk+5J/rXFQrKrVk4vSJ9JmWWPBYCkqqtOo+bzS6Hb/snj/i92kf8D/8AQWr1n9vk58K6F/19S/8AoIrzL9j/AEl9Q+M9nIqsRbo7k46fLj+tenft6xlvCuhEAlVuJOe3IGD+h/KuTEP/AG6C8j6DKk/9WMS/NHy4BhTSYzUixtk/KePak24z1r2D86G7T6VZ0fSbjWNUgtbeN3mndUUBSeScD+dWvDHhfUPFerxWmnWk93PIeFjUnH19K+rvgL+zHbfDw22paptuNaRSwQjcluTtwPcjp9TXLisXCjG73PeyLh/E5lWUKatFbt7JHbfCTwNB8NPhxYaa+xPJiEtxJnGWIyT+VfJH7R/xG/4WN8Tb+5RibWAmGEZ4AXgmvbP2r/j7D4f0eXw9pVyJL+5UieRCP3akYI46HFfK0shcknLEkkk+prhyvDybdepuz6fjfN6PLTynCO8Ke7XfsR0UUV7B+dBRRRQADrV7RtHl1zV7a0t9vnXD+WhY4GfU1RHWp7S8ks7lJonaOVG3KynG2k79BxtdX2PdPDP7DuuT3Ub6xd2lpbBgXVD5juPYjgV9GeCPCen+APDVtpenhhb24xuYcvxjJ9z1r4gHxb8TD/mO6nz/ANPDf40g+Lnicf8AMe1P/wACG/xrycVgq1dWnM+/yXifLMsfPQoPme7b1Prv45fBqz+M+iRwPOlre25LQS7Cee4J9K8A8ZfseeJPC+i3epLNZXFlap5khDBWAHoDXB/8Lb8Tn/mPanx/08NTLv4peIr2zkgl1rUZIZl2ujXDFXHuM1rhsLWpLlUtDlzrPsszGpKvOi1N9U/zOemz5jdOtMHBpz9cenFNr0j4kXOB7mtPwx4jvPCeqwX9hM8FzbsHVlPXHPPtWXSr1pNJqzKhOUJKUXZo+uPhX8etD+Omif2R4gtC1+FDSKI9yTFTncD/AA9+K5P4n/sTTSXc114auY2gbL/Zpmx5fsG7188RTPBJuR2Rh0K8V23hb9orxd4RtlhtdWmeFBgRykOv5EVwPCVKb5qDsux9jHiLCYykqWb03KS2mvi+fc0rL9ljxdeXwgW1tc5wT9pXFerfDn9i2y8PItz4juPtMw2uII/uoQckZ75rzeb9srxnPAENxYqexFsoIrlPFfxt8UeMi327V7mRGyCivtTB9hRKniqnuuSRFHFZHhv3kacqkul9l6rqe0fHn9qO30Gwbw/4ZiMTRr5Mkxj8sQjoQv14/Kvm28uXvJXlkYtJISzEnJJzTJJGZiTyc5J7mmZLZrpw+HhSjaKPEzXN8Rj6vtKz0Wy6JeSEp0f3qbSrjcM9K3PKPS/2fvjxcfCDWWinDXGl3RAniznZ/tL719Valpnh/wCN/hHZNH9qtL5N0bGPZInHGD7ZNfBikbyc9P1re8L/ABF1zwdMkmm6nd2hXskmB+XcV5+KwHtZKpDRn2GQ8VTwlJ4PFR9pRf2ex654x/Yf1i1uZJNEu7a8gySsUjeW8Y+p4NZWhfsUeLdQn/0prGzjzyxlEnH4VQ079sPxnYoEN1ZzFR96S3Qsfqap65+1d4015Gj/ALTFqjAr/o6iPrSUcXblujStiOHXL2lOE7/y30+89at/DHhL9lfS31Wb7TqmsLH5UbmPgydfl9ODjPtXz38RvH9/8SfE1zqd/JvkkJ2qD8sa+grL1bWrvWLppru4muJHJZmdyxJNUs5B6iuihQcHzzd5dzxcyzVV0qFCPJSX2fPu+42iiiuk8UKKKKACiiigAoHUUUq9RQAo5Ptmui+HXw71D4ma4NP04R+dtZ/3j7QABXO9Pzq9omv3nh64M9jdT2spGN8TlGx+FTNXXum1B01UTqq6Po34X/sYP4b8Q29/r99DIbVw6QRJuDHtk9699mihurRrZlVonBR0xxgrzj2r4M/4W54nJz/b2qbs8k3Lc/rQPi54nB/5D2qf+BDV5GIy+rWkpSnsfoOVcX5dl9KVKhh3aW7b1Z79rv7Eml6jqEkttq91bxSMWETRghOTwKTS/wBhrRoZg1xrF9Mo6oiBc+1eBf8AC2/E+f8AkPan/wCBDU1/i14mcYOu6mQf+nhq1jh8Va3Oec85yNz9p9Ud/U+s9C+Dfgn4SWn2prJJJoxnzpozI3H6Vy/j39tPSPD8k1rpFlPfTRrhHlXykU59PavmHUvE2oauxN3e3VwT18yQsKoE4BwTTjlkXLmrycvmOvxpVpw9lltNUl5LX7zoPiH8StW+JesPeapdNKx+6g4RBnoBXPkhRx1plFejGKiuVHxtWtOrN1Kju3u2FKnDD60lKn3x9aoyR614T/ZC8UeKtHtNQjNjFaXi7lZpBkD3FehfDz9iuPQdatrzWdSjulhO8wRJgM3oT6V4PZ/FDxBp1okEGs6lDDENqIs7KFH0zTj8W/Ew/wCY9qZ/7eH/AMa4a1LET0UlY+pwGPyeg4zlQlKS310v6H3ssiRKFB2gDYqgcLXiXxg/ZGs/HniCbUtLvxYXV22+WJ0yjv7Y6V87H4ueJ/8AoPap/wCBDUf8Lc8Tn/mPan/4EN/jXFQy2rSlzQmfSZpxpl+YUVRxOHbS211R3+u/sY+KdFsJrnzLCaO2jMkhEgXAGT0+lePSoY3ZTj5T+VdFN8VvEc6Mkut6k6SDa6/aG2sDxg81zsrb5CeuevevVoqql+8dz4TMauDnJPCRcV5u5reB/B13488R22l2Xlm5uTtTe20fnXtPhH9hvUF1KJtc1C3t4FYeZHD85YdcZ968I0rVbjRryO4tJpLaaI5WSNsMtbj/ABc8Tk/8h7Uycc5uH/xqa8Kslam7HRleJy+j72Lpub8nY+69Fsbfw9pVvY2g8uG2QLGMdAK4j4rfs7eH/itfrd3Rns73p5kOPn6Yz+FfJP8AwtzxOT/yHtT/APAhqP8AhbnicjB17Uz/ANvDV5VPLKsJc8Z6n2+K46wGJoLD1sNeC2Vz3y8/YX0lj+71vUF9iimqj/sKWhORrlyFHYxjNeHf8Lb8TD/mPan/AOBD0f8AC2/E3/Qe1P8A8CGrrVHFf8/PwPBlmuRN3+qv/wACPfdK/Ye0SBibrWb6YeioBivQ/h98AfC3w2kWe0s1lu1GPPlXeR+FfH//AAtvxMf+Y9qf/gQ1H/C2/E//AEH9T/8AAh6yq4PEVFaVQ7MFxJk2Fnz0sJr5u59g/tC+Iv7A+DeszJlS8W1No+7uOOK+ZvhX+zNrvxW0FdTs5LSC0Ehj3SPzxgk4/wA9K4/VfiFrevWL217qt7cwORlJJWYHHTqabo/j/W/D1kLex1W9s4QSwSOUqAT7CtsLg5UKfJB6s4s44jw2Z45YjE03yRVrJ2Z9d/Af4EWPwZgml88XuqXI2vPtwEHBwB+Fb3xZ+GOm/FjwsdOvpJVWNg0ci8FDk8/rXxh/wtvxOeuvan/4ENR/wtvxN/0HtT/8CGrlll9aVT2nPqezQ4zy+lg/qMcP+7as1ff1Pc2/YYsEkGdeuSmTz5Qzj8q2dA/Yn8L2JV7y7vr0r2LbAfyr5z/4W34mPXXtTI/6+Gplx8UvEN4m2TWtSYHggzt/jXT9WxL3qHk084ySm+aOEv6u59dXev8Agn4C6WTFAlmqjGYIGaRyPUkV498TP21L/X7a5s9Ctxp1vKSomP8ArAD1P+fSvDL29mv5S80zyMeSXOTVfPB5p0stpxfPPVmWYcY4urD2GGSpU+0Vb8S1qN9LqF1LNcO0s0p3M7NksfWqrYK8cU080V6PkfINtu7CiiigQUUUUAFA60UUAKV+lJRRQA7AIpDgUlFO4BRRRSAKKKKAHAgn/GgnHH8qbRQFxc4bNKTk+lNop3AUjnqKAOvNJRRcAooopAKAWOaUvTaKAHH/ADzSA46ZpKKLgO38UnODyKSigAooooAKKKKACiiigAoHWiigBSMg880Akd6SincBcCggYpKKLgGKUD6UlFK4Cl/SgtkUlFABRRRQAUDrRRQA7I70A4J5ptFABRmiigA60o+uKSigBR160ueuDTaKADH0ox9KKKADH0ox9KKKAFx9Pzo6UlFAC5yaDjPekoouAY+lGMUUUAKOtGf85pKKLgPBFNPzH0pKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z",
+      "links": []
+    },
+    {
+      "pid": 80,
+      "name": "Talons",
+      "text": "The dragon is amused. Your attacks don't seem to do any impact, just cutting through bits of the nails. \"Thanks for the free manicure. I would keep you around for that service alone, but I'm feeling a little peckish.\" The dragon swipes at you repeatedly with his recently groomed talons and crushes you, resulting in a [[painful and bloody death.|Death]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "painful and bloody death.",
+          "destination": {
+            "name": "Death",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "Lady",
+      "text": "<<silently>>\\n<<if $first_tavern_visitor is 0>>\\n<<set $charisma_pref += 1>>\\n<<endif>>\\n<<set $lady_visited = \"yes\">>\\n<<endsilently>>\\n\"What's the matter, miss?\" You attempt to exercise as much politeness as your brusque brother offers. \\n\"It's my precious cat Tibbles! I haven't seen him in two days and I'm worried sick! I don't know if Tibbles can survive out there all alone!\"\\n\"Then why aren't you out there looking for him?\"\\n\"I can't afford to go out into the woods for hours! I have my fantasy finals and a job! Rent is expensive! Oh I know! You don't look like you're doing much, you can look for him! I don't have much as a reward, but I'll think of something! Pleaaaaaaase!\"\\n\\nThis again begs the question of what she's doing in the tavern instead of handling her responsibilities, but you hold your tongue. This is a slight step up from rescuing a cat from a tree's clutches, the mildest of heroic activities. More of a sidequest material, really. But she does seem really worried, and a hero of legend wouldn't let anyone down.\\n[[\"I'll keep an eye out.\"|LadyAccept]]\\n[[\"Sorry lady, but I've got better things to do.\"|LadyDecline]]\\n<<if $charisma_pref is 2>>\\nYou could also command her form. She might be able to better utilize the skills you're familiar with.\\n<<endif>>\\n<<if $role_changer >= 1>>\\n[[Switch into the Cat Lady|SwitchLady]]\\n<<endif>>\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "\"I'll keep an eye out.\"",
+          "destination": {
+            "name": "LadyAccept",
+            "pid": 52
+          }
+        },
+        {
+          "text": "\"Sorry lady, but I've got better things to do.\"",
+          "destination": {
+            "name": "LadyDecline",
+            "pid": 49
+          }
+        },
+        {
+          "text": "Switch into the Cat Lady",
+          "destination": {
+            "name": "SwitchLady",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "ShadyQuest",
+      "text": "You successfully distract the merchants by waving them down and asking for directions.  You begin to stall them by asking for elaboration, but you sense something's amiss. You've been talking far too long and there's been no signal. Suddenly, arrows fly at the caravan from every direction. As men begin to fall, you realize that you've been deceived. As you attempt to dive into the only cover of the wagon, you catch an arrow in the middle of the chest, followed by another in the lower back, piercing your stomach. As you struggle to keep your eyes open, you discover the wagon's contents are blankets and crates brimming with food. Must've been relief from the capital. The irony of your fatal mistake does not escape you as [[you draw your final breath.|Death]]\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "you draw your final breath.",
+          "destination": {
+            "name": "Death",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "Horns",
+      "text": "You succcessfully get on the dragon's back, somehow make your way to the horns, and find the special injured crease, slicing the horns right off. The dragon topples and you manage to jump off relatively unscathed.\\n\\n[[Success|Success]]\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Success",
+          "destination": {
+            "name": "Success",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "BadderKitty",
+      "text": "<<set $dexterity -= 2>>\\nThe cat tastes good. <<if $lady_visited is \"yes\">> The cat lady has been feeding him well. Delicious.<<endif>>\\n\\nYou proceed to the [[Dragon]].\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Dragon",
+          "destination": {
+            "name": "Dragon",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "DexPref",
+      "text": "You can definitely pass on some knowledge about wielding a weapon. Now it's time to get started.\\n\\n<<display ScopeText>>\\n<<set $dexterity_pref += 2>>\\n<<set $constitution_pref -= 2>>\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeText",
+            "pid": 69
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "SwitchLady",
+      "text": "<<silently>>\\n<<set $role_changer -= 1>>\\n<<set $strength = 8>>\\n<<set $dexterity = 14>>\\n<<set $constitution = 8>>\\n<<set $charisma = 12>>\\n<<set $current_body = 2>>\\n<<endsilently>>\\nYou fixate your scope on the woman in front of you and concentrate. The next thing you know, you're facing your brother. He looks dazed for a second, and then realizes where he is.\\n\"H-h-how did I get here? I-I've gotta go to market for seeds! H-h-have a good day miss,\" he stammers.\\nSmooth, bro. Real smooth. You feel a little bad for making this girl miss some study time, but there's always time for justice. Besides, now you've got a different skillset which may open different doors than your brother could, or at least get into a good switching position. And you'll put some time into finding her cat, so everything will work out fine.\\n<<display LadyRedirect>>\\n<<display Stats>>\\n<<display ScopeCharges>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "LadyRedirect",
+            "pid": 37
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "StoryAuthor 1",
+      "text": "Matthew Mayr",
+      "links": []
+    },
+    {
+      "pid": 88,
+      "name": "BestKitty",
+      "text": "<<set $cat_join = \"yes\">>\\nYou save the cat! You feed it some fish you happen to have in your bag and place it snugly in your bedroll in your bag, safe and sound. Now time to face a [[Dragon]]!\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Dragon",
+          "destination": {
+            "name": "Dragon",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "TrueEnding",
+      "text": "...You're not sure what you were expecting. Maybe some sort of glowing light or something. But it looks like you broke the curse. One second a dying dragon lies before you and the next a aging woman is there, rubbing her head as she struggles to sit up.\\n\"Feeling better?\" You ask her.\\n\"Much. Being human is much better than being a dragon contrary to popular belief.\"\\n\"So what are your plans now that you're human?\"\\n\"See some old friends, settle some old scores. Yet I sense an alterior motive to that question.\"\\n\"Well, I was wondering if you might be looking for an apprent-\"\\n\"Ah, yes, well I do suppose I'm getting on in years, and I could use someone to pass down my skills. You've got enthusiasm to spare, and even though you're not quite sure what a hero is yet, your heart's in the right place.\"\\n\"Awesome! I mean, thanks, master.\"\\n\"Yeah, yeah, enough with the formalities. Now <<print $player_name>>, after you fully recover, come find me at the tavern, and we can start your training. And advanced first lesson: you're not going to be good at your first attempt. You were only lucky this time.\"\\n\"Oh another thing, how did you know my name?\"\\n\"That's my little secret.\" She said with a wink. \"And also next time, make sure to make that scope a lot smaller! You might have a sharper experience!\"",
+      "links": []
+    },
+    {
+      "pid": 90,
+      "name": "Slay",
+      "text": "You kill the dragon and win! <<if $bard_join is \"yes\">> The bard sings you a nice little [[song|https://www.youtube.com/watch?v=dQw4w9WgXcQ]]. <<endif>>\\n<<if $role_changer >= 1>>\\nAfter a small celebration you finally return to the quiet of your room.\\n<<if $current_body is 1>>\\nYou wonder why your brother hasn't come back yet. Maybe he's doing errands.\\n<<else>>\\nYour brother comes up and delivers you the latest edition of The Legend of Krys that you'd been waiting for.\\n\"Someday you can be like him. Someday.\"\\nYou smile and say,\"I know, bro. I know.\"\\n<<endif>>\\nYou've made the first step in becoming a legendary hero. Surely you have a long distinguished career ahead of you, but first, it's time to head downstairs for breakfast! As you groggily open your eyes, you spot something odd...is that a talon?!\\n<<else>>\\nWith no charges left in the role-changing scope, you can't get back to your original body! You fade out of consciousness as the original owner of this body takes over once more. As you fade to black, you see the last glimpse of the body you know occupy...is that a talon?!\\n<<endif>>\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "Fairy1",
+      "text": "\"Pleased to meet you, <<$player_name>>! Now I know it may seem like you're not going anywhere for a while, but I have a gift to help you. When you awake, you will possess the Scope of Will. With this at your side, as long as you can see someone, you can see through their eyes and act through their body. Remember, @@.important;you need one charge left when you're done questing to return to your form!@@ Well, it seems my time is up. Good luck child!\"\\nWell that was weird. But as strange as that was, that voice was right. You may be a farmer by trade, but you're an adventurer at heart. You've heard the stories about the brave men and women who have rescued princesses, uncovered mythical artifacts, and slain giant lizard and pig monsters to save the world. But that was years before you were even born. They say our world has been peaceful for a generation. You wonder whether this strange artifact the voice talked about works, and whether or not it would be better to stay on the farm after all...\\nNo! Surely people out there need an advocate for justice even in times of relative quiet. And if you can't do it yourself right now, you'll just have move others to greatness! And maybe you can translate some of the your skills! After all, you've been practicing all you can.\\n\\nYou've spent countless hours, swinging and stabbing your pitchfork into [[haybales. Evil haybales.|StrPref]]\\nYou've spent your early childhood [[climbing trees and running|DexPref]] wild in the woods.\\nYou've [[hardily endured|ConstPref]] sun and rain to go above and beyond in your plowing duties.\\nYou've spent your nights with your nose in a cherished book containing the [[great hero speeches|CharPref]], and reenacting them to the cattle during the day.",
+      "links": [
+        {
+          "text": "haybales. Evil haybales.",
+          "destination": {
+            "name": "StrPref",
+            "pid": 21
+          }
+        },
+        {
+          "text": "climbing trees and running",
+          "destination": {
+            "name": "DexPref",
+            "pid": 85
+          }
+        },
+        {
+          "text": "hardily endured",
+          "destination": {
+            "name": "ConstPref",
+            "pid": 64
+          }
+        },
+        {
+          "text": "great hero speeches",
+          "destination": {
+            "name": "CharPref",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "LibrarianSwitch",
+      "text": "<<silently>>\\n<<set $role_changer -= 1>>\\n<<set $strength = 12>>\\n<<set $dexterity = 10>>\\n<<set $constitution = 6>>\\n<<set $charisma = 15>>\\n<<endsilently>>\\n\\nWow.\\n\\nYou are left speechless. Maybe you can just live as Silas. No, that wouldn't be right to strip him of his life forever. You have a mission! And now you can be around him for that much longer. Now, time to find a [[book|knowledge]] that can help you.\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "book",
+          "destination": {
+            "name": "knowledge",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "Apothecary",
+      "text": "<<set $potion_visited = \"yes\">>\\nA couple blocks away from the tavern you spot a small gathering of stalls. That must be it. You've heard that...eccentric figures tend to hang around farmer's markets. Now let's hope that someone \\n\\n[[enter]] the building.\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "enter",
+          "destination": {
+            "name": "enter",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "enter",
+      "text": "When you open the door smoke begins pouring out of the building. \\n\"hey man youre gonna kill the box close the door\" says a very slow speaking man in long robes.\\n\\nYou proceed to close the door. He must have some type of mythical creature called a box that is dependant on smokey environments. \\n\"whats up dude, what brings you to our humble abode\" there are roughly 5 people sitting on the ground around a tall vase looking object. Smoke is inside the object and it is bellowing into the room. \\n\\nYou respond \"I would like a potion to help me fight the dragon\"\\n\\nThe wizard says \"Oh man for sure man. I've got this potion of tongues man and it can like, help you talk to like, animals and stuff. Here lemme go [[grab it]] man.\"\\n\\n<<display Stats>>\\n<<display ScopeCharges>>\\n<<if $smith_visited is \"yes\">><<display WeaponDisplay>><<endif>>\\n\\n<<if $role_changer >= 1>>Or you can switch to the [[wizard man|WizardSwitch]] and tap into his chill ways.<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Stats",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ScopeCharges",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "WeaponDisplay",
+            "pid": 2
+          }
+        },
+        {
+          "text": "grab it",
+          "destination": {
+            "name": "grab it",
+            "pid": 70
+          }
+        },
+        {
+          "text": "wizard man",
+          "destination": {
+            "name": "WizardSwitch",
+            "pid": 53
+          }
+        }
+      ]
+    }
+  ]
+}

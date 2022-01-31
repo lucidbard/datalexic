@@ -1,0 +1,366 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "shove everything back into the closet and hope she doesn't open the door",
+      "text": "You're good at pushing things, mostly because you have to push yourself to do anything, whether it's brushing your hair or getting a drink of water or going swimming with Evie. For that reason you're good at pushing everything back in the closet. Winter coats that don't fit? Back in. Books you'll never read? Back in. Birthday cards that may or may not have writing in them? Back in.\\n\\nYou're trying to shove Evie's suitcase back in when it dislodges another [[case]] that falls right onto your little toe.",
+      "links": [
+        {
+          "text": "case",
+          "destination": {
+            "name": "case",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "You play one more note",
+      "text": "You play one more note and pack the trumpet back up. You're just as terrible as you ever were. You're going to go back to bed and when Evie comes home you'll just pretend to be sleeping, like you always do.\\n\\n[[But maybe tomorrow...]]",
+      "links": [
+        {
+          "text": "But maybe tomorrow...",
+          "destination": {
+            "name": "But maybe tomorrow...",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "You play another note",
+      "text": "Oh, bravo. You've gotten the shakiness out of your one note. Do you remember any other notes? Or have your fat fingers forgotten those too? What's the point? What's the point?\\n\\n[[You play one more note]].\\n",
+      "links": [
+        {
+          "text": "You play one more note",
+          "destination": {
+            "name": "You play one more note",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Start",
+      "text": "After Evangelline leaves for the evening shift at the pickle plant there isn't much to do.\\n\\n<<display \"room\">>\\n\\n<<set $washedcurtains = \"no\">>\\n<<set $washeddishes = \"no\">>\\n<<set $cleanedcloset = \"no\">>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "room",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "nap in Evie's bed",
+      "text": "You climb carefully into Evie's bed, trying not to disturb the covers. Her bed is not as comfortable as yours. It's one of those cots that folds up in the middle and it's too short and you have nightmares about the springs breaking and impaling someone through the heart. That's sometimes why Evie ends up rolling into your bed some nights.\\n\\nSpeaking of being impaled through the chest, Little Rabbit jams into yours. You roll carefully onto your side and pull her out, adjusting her ears so that stick out on both sides. She's not much, just a washcloth folded and sewed together. You were pretty proud of her back in the day. The home ec teacher thought she was more C+ material.\\n\\nYou turn over and over until finally you've gone and messed up Evie's bed. Sheepishly you push the covers around until they are about where Evie had them. You tuck Little Rabbit back in.\\n\\n[[back|room]]",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "room",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "open",
+      "text": "Nope, seems okay. You take it out and turn it over in your hands and it's the same as it ever was, just a little tarnished and a little moldy. You should clean it better. When was the last time you played it? A year ago? It's full of year old spit.\\n\\nYou twist in the mouthpiece anyway and hesitantly [[play]] a note.",
+      "links": [
+        {
+          "text": "play",
+          "destination": {
+            "name": "play",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "wash the dishes",
+      "text": "You pick out the bigger dishes, a plate and two pancake flippers, and tip the greasy water out into the sink. It sloshes onto the counter, onto your hand. It's disgusting. You want to give up already.\\n\\nInstead you throw a hand towel over it and run some more water--it's rusty, it's gross, it stains the glasses--and shake in some flakes of dish soap. There's so many dishes. This is going to take forever.\\n\\nYou wash a plate, and another plate, and a bowl and a couple of glasses, and put them into the dishdrainer. Now all the clean dishes in there are wet again. No point in putting them away now.\\n\\nYou dry off your hands. You'll come [[back|room]] to this later.\\n<<set $washeddishes to \"yes\">>",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "room",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "dishes",
+      "text": "Your dishes are a mix of fancy but cracked china Evie got as a gift from her boss and the blue and white campware Mama was saving for your wedding present. Luckily Mama's pretty pragmatic, so when it because obvious none of the boys were interested she handed them over for Christmas.\\n\\nYou started to wash them yesterday--or maybe the day before--but now they're just sitting there in a big white bowl filled with slimy stagnant water, crumbs and grease floating on top like the Columbus.\\n\\nYou could try to [[wash the dishes]], or you could go [[back|room]].",
+      "links": [
+        {
+          "text": "wash the dishes",
+          "destination": {
+            "name": "wash the dishes",
+            "pid": 7
+          }
+        },
+        {
+          "text": "back",
+          "destination": {
+            "name": "room",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "play another",
+      "text": "It still sounds terrible. You're not a musician and you never will be. Why are you pretending otherwise? Do you think it's fun, doing something you will never be good at? You have good taste in music, that much is true, but you'll never measure up.\\n\\n[[You play another note]].\\n",
+      "links": [
+        {
+          "text": "You play another note",
+          "destination": {
+            "name": "You play another note",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "window",
+      "text": "The curtains are grey. They didn't used to be grey. They used to be yellow, or maybe just beige. The point is, they're really dusty.\\n\\nA little bit of light gets through them, flickering through the leaves of the tree in front of your apartment.\\n\\nYou could try to [[wash the curtains]], or you could go [[back|room]].",
+      "links": [
+        {
+          "text": "wash the curtains",
+          "destination": {
+            "name": "wash the curtains",
+            "pid": 16
+          }
+        },
+        {
+          "text": "back",
+          "destination": {
+            "name": "room",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "nap",
+      "text": "You crawl into bed fully clothed. You do have a nightshirt you could wear, but as far as you know it's buried inside the twisted sheets and you really don't have the energy to go looking for them.\\n\\nThe bed is nice and soft and cool and you jam your head into the quilt. Your face aches for some unknowable reason.\\n\\nWhen you pull your head out again you lay there for what seems like an eternity, watching the last of the daylight flickering on the wall above your head.\\n\\nYou glance at the clock. You've been lying there a whole fifteen minutes. Nothing to do now but [[get back up|room]].",
+      "links": [
+        {
+          "text": "get back up",
+          "destination": {
+            "name": "room",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "StoryTitle",
+      "text": "All I Do is Dream",
+      "links": []
+    },
+    {
+      "pid": 13,
+      "name": "play",
+      "text": "It sounds like garbage. Of course it does. What were you expecting? You  weren't a good musician in school, when you practiced for an hour every day. And now, after years of ignoring it, you think you can just pick it up again.\\n\\nYou [[play another]] note.\\n",
+      "links": [
+        {
+          "text": "play another",
+          "destination": {
+            "name": "play another",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "But maybe tomorrow...",
+      "text": "[[Maybe tomorrow you'll play it again?|But maybe tomorrow...]]",
+      "links": [
+        {
+          "text": "Maybe tomorrow you'll play it again?",
+          "destination": {
+            "name": "But maybe tomorrow...",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Evie's bed",
+      "text": "Evie's bed is neatly made because she is a proper girl and is neat and tidy, like your mama tried to make you. Her bedsheet is right-side down so that the pattern displays nicely when folded down over the blanket, her pillow is centered, and tucked into bed is the stuffed bunny you made her in home ec senior year.\\n\\nYou could try to take a [[nap in Evie's bed]], or you could go [[back|room]].",
+      "links": [
+        {
+          "text": "nap in Evie's bed",
+          "destination": {
+            "name": "nap in Evie's bed",
+            "pid": 5
+          }
+        },
+        {
+          "text": "back",
+          "destination": {
+            "name": "room",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "wash the curtains",
+      "text": "The curtains are too big to wash in the sink like everything else, and if you submerged them in water they'd probably disintegrate. So you dig around in the cupboards until you find the sweet tea pitcher, fill it up with soap and add warm water. There aren't any clean washcloths so you use a handtowel.\\n\\nYou sit at the foot of the window and start scrubbing the bottom corner of the left hand one.It doesn't help. In fact, you just seem to be smearing the dust around. You give up on washing the whole thing. That's too much work for today, especially since you're feeling a little down and more than a little tired. You try dabbing at the worst spots instead. That works even less. Now you have streams of dust running down the curtain. You can't remember where you left off. Fuck this noise.\\n\\nYou put the pitcher and the towel on the table for later. Maybe it'll seem less daunting tomorrow.\\n\\n[[back|room]]\\n<<set $washedcurtains to \"yes\">>",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "room",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "clean the closet",
+      "text": "Oh Lord.\\n\\nYour eyes must be very tired because they can't even distinguish what's in that closet any more. Instead of suitcases and candles and towels and records it's just a wall of junk.\\n\\nAnd that's what it is. Junk. None of it actually matters. It would probably be easiest and best just to put it all in boxes and toss it on the curb for the homeless folks to pick through. They ought to have nice things. They're probably good people. Not like you. You're so worthless you can't even clean out a closet.\\n\\nNo. Not today. You can't even think about this today.\\n\\n[[back|room]]\\n<<set $cleanedcloset to \"yes\">>",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "room",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "closet",
+      "text": "The closet backs up against the bathroom, so if the water main springs a leak again everything in there is going to be trashed. You and Evie both agreed that the closet should be cleaned out, and you thought you'd be ambitious by cleaning out all of your junk while she was at work. That was three weeks ago. How'd that ambition work out for you?\\n\\nYou could try to [[clean the closet]], or you could go [[back|room]].",
+      "links": [
+        {
+          "text": "clean the closet",
+          "destination": {
+            "name": "clean the closet",
+            "pid": 17
+          }
+        },
+        {
+          "text": "back",
+          "destination": {
+            "name": "room",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "case",
+      "text": "Tears immediately spring to your eyes but you can't really feel them because your face has hurt from crying all day. You want to throw the case across the room, but on closer inspection it's your trumpet case from grade school and you can't damage it because you might have to pawn it someday.\\n\\nYou [[open]] up the case to see if it's hurt.",
+      "links": [
+        {
+          "text": "open",
+          "destination": {
+            "name": "open",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "room",
+      "text": "[[Your bed]] backs up into the corner and [[Evie's bed]] is right beside it. The one <<if $washedcurtains == \"no\">>[[window]]<<else>>window<<endif>> shows a little afternoon light.\\n\\nThe <<if $cleanedcloset == \"yes\">>closet<<else>>[[closet]]<<endif>> you started cleaning out is still a mess, and so are the <<if $washeddishes == \"yes\">>dishes<<else>>[[dishes]]<<endif>> from the breakfast/lunch/tea you and Evie ate as she was waking up and you were going to bed.\\n\\n<<if $washedcurtains == \"yes\">><<if $washeddishes == \"yes\">><<if $cleanedcloset == \"yes\">>But you have to do something today. What are you going to say when Evie comes home from work and says, \"What did you do today?\" Nothing? Are you going to tell her that while she worked, while she was paying the bills, you lay there on various beds and made a bigger mess of everything? There has to be something you can do. \\n\\nYes. You can [[shove everything back into the closet and hope she doesn't open the door]]. That's a good plan.<<endif>><<endif>><<endif>>",
+      "links": [
+        {
+          "text": "Your bed",
+          "destination": {
+            "name": "Your bed",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Evie's bed",
+          "destination": {
+            "name": "Evie's bed",
+            "pid": 15
+          }
+        },
+        {
+          "text": "window",
+          "destination": {
+            "name": "window",
+            "pid": 10
+          }
+        },
+        {
+          "text": "closet",
+          "destination": {
+            "name": "closet",
+            "pid": 18
+          }
+        },
+        {
+          "text": "dishes",
+          "destination": {
+            "name": "dishes",
+            "pid": 8
+          }
+        },
+        {
+          "text": "shove everything back into the closet and hope she doesn't open the door",
+          "destination": {
+            "name": "shove everything back into the closet and hope she doesn't open the door",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Your bed",
+      "text": "Your bed is a mess because you never make it and you sleep like a nervous dog, always twitching and rolling and wriggling and driving Evie crazy. Bedsheets are twisted like tornados, your blanket is kicked on the floor, and the baby quilt is up where the pillow should be. God alone knows where the pillow actually is.\\n\\nYou could try to take a [[nap]], or you could go [[back|room]].",
+      "links": [
+        {
+          "text": "nap",
+          "destination": {
+            "name": "nap",
+            "pid": 11
+          }
+        },
+        {
+          "text": "back",
+          "destination": {
+            "name": "room",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "StoryAuthor",
+      "text": "Megan Stevens",
+      "links": []
+    }
+  ]
+}

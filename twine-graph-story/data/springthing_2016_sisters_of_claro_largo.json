@@ -1,0 +1,311 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Idioma",
+      "text": "{\n(set: $cerrar to \"]]\")\n(set: $abrir to \"[[\")\n<div style=\"text-align:center\">$abrir [[Castellano]] | [[English]] $cerrar</div>\n}",
+      "links": [
+        {
+          "text": "Castellano",
+          "destination": {
+            "name": "Castellano",
+            "pid": 3
+          }
+        },
+        {
+          "text": "English",
+          "destination": {
+            "name": "English",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "English",
+      "text": "<h1>Sisters of Claro Largo</h1><h2><a href=\"https://twitter.com/DavTMar\" target=\"_blank\">David T. Marchand</a></h2><h3>[[> Start story|one]]</h3><h3>[[> Credits|Credits]]</h3>",
+      "links": [
+        {
+          "text": "> Start story",
+          "destination": {
+            "name": "one",
+            "pid": 4
+          }
+        },
+        {
+          "text": "> Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Castellano",
+      "text": "<h1>Hermanas de Claro Largo</h1><h2>**<a href=\"https://twitter.com/DavTMar\" target=\"_blank\">David T. Marchand</a>**</h2><h3>[[> Empezar historia|uno]]</h3><h3>[[> Cr\u00e9ditos|Cr\u00e9ditos]]</h3>\n\n",
+      "links": [
+        {
+          "text": "> Empezar historia",
+          "destination": {
+            "name": "uno",
+            "pid": 13
+          }
+        },
+        {
+          "text": "> Cr\u00e9ditos",
+          "destination": {
+            "name": "Cr\u00e9ditos",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "one",
+      "text": "(click: \"City\")[$t[I was born in the (link-reveal: \"City\")[$t[. I don\u2019t remember much(click: \"remember\")[$t[ besides the workshops they kept us in all (link-reveal: \"day\")[$t[, and the cells where we spent our nights]]]]]]. (click: \"cells\")[$t[I hated the cells with all my (link-reveal: \"heart\")[$t[. I often dreamed of turning into a giant (link-reveal: \"mass\")[$t[, like a (link-reveal: \"slug\")[$t[ that (link-reveal: \"grew\")[$t[ and poured through the bars(click: \"poured\")[$t[ and expanded outside the cells(click: \"expanded\")[$t[ and |out>[out] of the City(click: ?out)[$t[. I dreamed of running away and having a house, a family]]]]]]]]]]]]]].]]](click: ?cells)[\n\n$t[There were people working against the Government.] (click: \"people\")[$t[We all knew someone.]] (click: \"someone\")[$t[They passed slips of (link-reveal: \"paper\")[$t[, they |met>[met] in secret]].]] (click: ?met)[$t[One day they got tired of their meetings(click:\"tired\")[$t[ and opened the cells]].]] (click: \"opened\")[$t[And they took the streets.]] (click: \"took\")[$t[And they |took>[took] the Central Plaza.]] (click: ?took)[$t[And just like that, we were free.](live: 2s)[(stop:)\n\n$t[We didn\u2019t stay and see if the Takeover was successful.]] (click: \"Takeover\")[$t[The Government\u2019s response was swift and violent(click: \"response\")[$t[, but the riots were sudden and organized]].]] (click: \"riots\")[$t[We gathered some |families>[families] we knew, some we didn\u2019t, and got away at the first opportunity.]]]]\n\n]<center>(click: \"trees\")[$t[The forest surrounding the City was dark and (link-reveal: \"unsettling\")[$t[, but we were free]].]] (click: \"one day\")[$t[We walked among the trees for weeks.]] (link: \"we arrived\")[$tr[And one day] we arrived $tr[at the Clearing.]] (click: \"Clearing\")[$t[It was going to be called (link-reveal: \"Claro Largo\")[$t[, but back then |it>[it] wasn\u2019t called anything]].]] (click: ?it)[$t[I still don\u2019t know if it was an (link-reveal: \"existing town\")[$t[ we stumbled upon, or a piece of land where a bunch of exiles from the City ran into each other more or less at the same time]].]]</center>\n(click: \"family\")[$t[I met my husband there.]] (click: \"there\")[$t[The house we got was a mess, like all the rest.]] (click: \"mess\")[$t[I wasn\u2019t going to let that get me down.]] (click: \"down\")[$t[The |cells>[cells] were worse.]] (click: ?families)[$t[For months we tried to start a (link-reveal: \"family\")[$t[, but it wasn\u2019t meant to be just yet]].]] (click: \"meant to be\")[$t[I don\u2019t know exactly what (link-reveal: \"happened\")[$t[, maybe my years in the City had subtly ruined me inside]].]]\n\n(click: \"years\")[|waiting>[$t[I got |tired>[tired] of waiting.]](click: ?tired)[(replace: ?waiting)[$t[When] I got tired of waiting$t[, I stopped by the school they were building and asked if there was any kid who needed a mom.]]]] (click: \"kid\")[$t[There were probably plenty.] (live: 2s)[(stop:)$t[That day they introduced me to Belona.] (live: 2s)[(stop:)$tr[**[[(2/5)|two]]**]]]]",
+      "links": [
+        {
+          "text": "(2/5)",
+          "destination": {
+            "name": "two",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Inicio",
+      "text": "(set: $t to \"\")(set: $tr to (transition: \"dissolve\"))(set: $contracci\u00f3n to 0)",
+      "links": []
+    },
+    {
+      "pid": 6,
+      "name": "two",
+      "text": "(click: \"family\")[$t[We raised Belona as if she were (link-reveal: \"our own\")[$t[, because she *was* our own]].] (click: \"was\")[$t[I saw her at the school that day and I saw myself.] (live: 2s)[(stop:)$t[We talked.] (live: 2s)[(stop:)$t[She told me that her family had died in the Takeover(click: \"died\")[$t[, that she had seen]].]]]] (click: \"seen\")[$t[Sometimes there\u2019s so much cruelty in the world\u2026]]\n\n](click: ?her)[$t[She was very withdrawn.]] (click: \"nothing\")[$t[I don\u2019t remember |her>[her] having any friends.] (click: \"withdrawn\")[$t[The neighbors lent her books and she devoured them.]] (click: \"books\")[$t[She didn\u2019t do particularly well in class.]] (click: \"particularly\")[$t[Not bad either.]]\n\n](click: \"neighbors\")[$t[She barely left home.] (live: 1s)[(stop:)$t[She remembered little of the City.]] (click: \"little\")[$t[I think she never appreciated the freedom we had in Claro Largo(click: \"never\")[$t[ because she didn\u2019t know what it was for it to be taken away from you]].]]\n\n]<center>prayed(click-replace: \"prayed\")[$tr[Belona] prayed $tr[often.]] (click: \"often\")[$t[I believe that\u2019s what she did.]] (click: \"believe\")[$t[Generally in Claro Largo we liked it when kids nurtured their faith from an early age(click: \"faith\")[$t[, but the way Belona described her inner revelations disturbed us a bit]].]] (click: \"revelations\")[$t[I think she understood the concept of talking to God(click: \"understood\")[$t[, but she sat by herself, in contemplation, without talking to anyone]].]] (click: \"contemplation\")[$t[That\u2019s what she said at least.]] (click: \"she said\")[$t[I guess she *had* to be talking with someone, with herself, or her family.]]</center>\n(click: \"cruelty\")[$t[She described it as exploring her own being.]] (click: \"described it\")[$t[When you asked for a clearer explanation, she talked of burying her hands in her guts looking for something fundamental(click: \"something\")[$t[, or looking for |herself>[herself]]].]] (click: ?herself)[$t[Once I asked her if she had ever *found* herself.]] (click: \"found\")[$t[She |told>[told] me she had found there was nothing to *be* found.]] (click: ?told)[$t[Many of these conversations I didn\u2019t share with the rest of the elders.]] (click: \"elders\")[$t[They suspected enough already.]]\n\n(click: \"freedom\")[$t[I |tried>[tried] to pray with her.]] (click: ?tried)[$t[Several times over the course of (link-reveal: \"a month\")[$t[ or nearly a month]].]] (click: \"nearly\")[$t[Then I stopped.] (live: 1s)[(stop:)$t[I didn\u2019t like it, to be honest.]]] (click: \"honest\")[$t[The last time, I think I got some of what Belona was |talking>[talking] about.]] (click: ?talking)[$t[(link-reveal: \"Looking for yourself\u2026\")[ $t[I expected touching my guts to be more metaphorical(click: \"expected\")[$t[, but I |felt>[felt] it]].]]]] (click: ?felt)[$t[I felt myself burying my hands in my body.] (live: 2s)[(stop:)$t[Well, not literally, but |close>[close].]]]\n\n(click: ?close)[$t[I felt I was sticking my fingers into a kind of internal channel.]] (click: \"channel\")[$t[Like a |part>[basic part] of what I am.]] (click: ?part)[$t[A river for |life>[my life] to flow through.]] (click: ?life)[$t[And I found |something>[something] blocking the flow.]] (click: ?something)[$t[Something that could only be felt.] (live: 1s)[(stop:)$t[Like a faceless (link-reveal: \"snake\")[ $t[with the consistency of a slug](live: 2s)[(stop:)$t[. Dead]]].]]] (click: \"Dead\")[$t[I mean, inert, like an object(live: 2s)[(stop:)$t[, but aware of what was happening]].]] (click: \"aware\")[$t[It noticed me when I grabbed it.]] (click: \"grabbed\")[$t[It tried to slip through my fingers, but I |w>[wouldn\u2019t] let it.]] (click: ?w)[$t[I threw it away and the river |ran>[ran] as it should.]]\n\n(click: ?ran)[$t[It was like a dream, and when my husband woke me up Belona was sitting just like when we\u2019d started. I was sprawled on the floor, sobbing.]]\n\n(click: \"sobbing\")[$t[Like I said, I didn\u2019t pray with her again after that. And I couldn\u2019t have, because a few weeks later I became pregnant with Alma.]] (click: \"Alma\")[$tr[**[[(3/5)|three]]**]]",
+      "links": [
+        {
+          "text": "(3/5)",
+          "destination": {
+            "name": "three",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "three",
+      "text": "(click: ?ever)[$t[There were no complications in the pregnancy or the birth. Belona\u2019s sister grew healthy and strong. Even as a baby, she had a vitality we rarely saw in Claro Largo. We called her Alma.]\n\n](click: \"vitality\")[$t[She learned to (link-reveal: \"walk\")[$t[ and she learned to (link-reveal: \"run\")[$t[ and she learned to leave our sight without warning. Alma ran away often. She inherited my desire to |fly>[fly] in a way Belona never could]]]].]\n\n](click: \"into the woods\")[$t[Running around Claro Largo had always been relatively safe, except for the woods.] (click: \"except\")[$t[We never knew |how>[how] the Takeover went down|p>[.]]] (click: ?how)[(replace: ?p)[$t[: the City was quieter but still busy, and the police kept monitoring the woods.]]] (click: \"still busy\")[$t[Surely they knew of us but didn\u2019t have the resources or the |will>[will] to do something about it.]] (click: ?will)[$t[Our peace, however, depended on us not giving them a reason.]]\n\n]<center>(click: \"control\")[$t[Alma would make her little trips into the woods whenever she could.] ](click: \"the leader\")[$t[We could never control her.] ](link: \"admired\")[$tr[The (link-reveal: \"kids\")[ $t[in Claro Largo]]] admired $tr[(link-reveal: \"Alma\")[$t[, and over the years she set up a gang and established herself as the leader]].]]</center>\n(click: \"a reason\")[$t[We taught the youngest about the City and the cells so they could value the freedom they were born into.]] (click: \"taught\")[$t[With Alma this |worked>[worked] a little too well.]] (click: ?worked)[$t[She believed we *settled* for a certain life. That cherishing our freedom was a kind hypocrisy if we didn\u2019t seek to *expand* it.]] (click: \"expand\")[$t[She didn\u2019t know the City, so she took |life>[our life] in Claro Largo for granted.]] (click: ?life)[$t[But our life came at a (link-reveal: \"cost\")[$t[ and a bigger life comes at a |big>[bigger] cost](click: ?big)[$t[, I don\u2019t think she |ever>[ever] got that]]].]]\n\n(click: ?fly)[$t[The elders grew |worried>[worried].]] (click: ?worried)[$t[We wouldn\u2019t stop her from talking, so we hatched a plan to take her off her followers\u2019 minds.]] (click: \"a plan\")[$t[And we lost any hope of succeeding once Alma started coming back from her trips with news from |villages>[neighboring villages].]] (click: ?villages)[$tr[**[[(4/5)|four]]**]]",
+      "links": [
+        {
+          "text": "(4/5)",
+          "destination": {
+            "name": "four",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "four",
+      "text": "The quality of life in Claro Largo improved a lot when we started trading with neighboring villages. (click: \"trading\")[$t[Alma was the (link-reveal: \"pioneer\")[$t[, but later some of her (link-reveal: \"people\")[ $t[and even the elders]] were going |out>[out] to visit]].]] (click: ?out)[$t[We had |something>[something] resembling an economy(click: ?something)[ $t[and we felt like citizens of a larger world]].]]\n\n(click: \"larger world\")[$t[One of the closest villages was Valle de las Juras.]] (click: \"Valle de las Juras\")[$t[They made the prettiest clothes there(click: \"prettiest\")[$t[, captivating for what we were used to]].]] (click: \"used to\")[$t[Claro Largo was (link: \"overwhelmed\")[$t[too] overwhelmed $t[to notice the (link-reveal: \"dark stuff\")[$t[: Mrs. Nuria\u2019s business]]]].]]\n\n(click: \"Mrs. Nuria\")[$t[She was a rather mysterious lady from Valle de las Juras(click: \"mysterious lady\")[ $t[who |began>[began] selling homemade beer](click: ?began)[$t[ and then moved on to far more dangerous substances]]].]] (click: \"dangerous\")[$t[At first I didn\u2019t care about the rumors.]] (click: \"I didn\u2019t care\")[$t[You can do with your time what you |will>[will].]] (click: ?will)[$t[But then the kids in Claro Largo used them too(click: \"the kids\")[$t[, and Belona |went>[went] along with it]].]] (click: ?went)[$t[I started losing her that day.]]\n\n(click: \"losing her\")[$t[For Belona it was (link-reveal: \"like praying\")[$t[, a tool for peeking inside]].]] (click: \"peeking\")[$t[It drove Alma |mad>[mad].]] (click: ?mad)[$t[She wanted people to dream (link-reveal: \"*bigger*\")[$t[, not to |give>[give up] everything the elders had fought for]].]] (click: ?give)[$t[There were kids building cells around themselves(click: \"building cells\")[ $t[and acting smug about it]].]] (click: \"smug\")[$t[She liked to believe she could put up with |almost>[almost] everything.]] (click: ?almost)[$t[But not with her people wasting their time(click: \"her people\")[$t[, or her sister her health]].]] (click: \"health\")[$t[Not with Claro Largo renouncing its own will.]]\n\n(click: \"its own will\")[$t[Belona did her best to |ignore>[ignore] her sister\u2019s rage.]] (click: ?ignore)[$t[She would wander Claro Largo |speak>[speaking] to herself(click: ?speak)[$t[, out loud]].]] (click: \"out loud\")[$t[Then the weirdest thing happened(click: \"weirdest thing\")[$t[: |people>[people] would gather and listen]].]] (click: ?people)[$t[*A lot* of |lot>[people].]] (click: ?lot)[$t[Alma\u2019s gang would show up, push people around(click: \"push\")[$t[, but Belona would leave as if |nothing>[nothing] had happened]].]] (click: ?nothing)[$t[Alma\u2019s people were pretty much in charge of Claro Largo\u2019s security by now.]]\n\n(click: \"by now\")[$t[This went on for (link-reveal: \"years\")[$t[, until one winter |died>[three kids died] from Mrs. Nuria\u2019s stuff]].]] (click: ?died)[$t[It was bound to happen.]] (click: \"bound\")[$t[Many of them would spend days in a trance.]] (click: \"trance\")[$t[They didn\u2019t (link-reveal: \"eat\")[$t[, they didn\u2019t (link-reveal: \"talk\")[$t[, they most certainly didn\u2019t |pray>[pray]]]]].]] (click: ?pray)[$t[We were all expecting Alma to snap.]] (click: \"snap\")[$t[She attended the burials but kept silent through the whole thing.]]\n\n(click: \"silent\")[$t[After |dark>[dark] she gathered some of her best(click: ?dark)[ $t[and went off to Valle de las Juras]].]] (click: \"went off\")[$t[I don\u2019t really |know>[know] what happened when they got there.]] (click: ?know)[$t[Mrs. Nuria died, that\u2019s for |sure>[sure].]] (click: ?sure)[$t[Some people say Alma just gave the order.]] (click: \"Some people\")[$t[Most say she did it herself.]] (click: \"she did it\")[$t[There are stories about *how* she did it(click: \"stories\")[$t[, but I don\u2019t |believe>[believe] them]].]] (click: ?believe)[$t[To be honest, I would rather not think about them.] (live: 2s)[(stop:)$tr[**[[(5/5)|five]]**]]]",
+      "links": [
+        {
+          "text": "(5/5)",
+          "destination": {
+            "name": "five",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "five",
+      "text": "{\n\n(click: \"decreased\")[(replace: ?1)[(display: \"c\")]]\n(click: \"desperate\")[(replace: ?2)[(display: \"c\")]]\n(click: \"convinced\")[(replace: ?3)[(display: \"c\")]]\n(click: \"cuts\")[(replace: ?4)[(click: \"looked into\")[(replace: ?5)[(replace: ?4)[(display: \"c\")]]]]]\n(click: \"killed\")[(replace: ?6)[(display: \"c\")]]\n(click: \"pushing\")[(replace: ?8)[(click: \"truth\")[(replace: ?7)[(display: \"c\")]]]]\n(click: \"away\")[(replace: ?9)[(click: \"business\")[(replace: ?10)[(display: \"c\")]]]]\n(click: \"always\")[(replace: ?11)[(click: \"fighting for something\")[(replace: ?12)[(display: \"c\")]]]]\n(click: \"any of them\")[(replace: ?13)[(click: \"a chance\")[(replace: ?14)[(display: \"c\")]]]]\n(click: \"used to\")[(replace: ?15)[(click: \"at the square\")[(replace: ?16)[(display: \"c\")]]]]\n(click: \"there too\")[(replace: ?17)[(display: \"c\")]]\n(click: ?there)[(replace: ?18)[(display: \"c\")]]\n(click: \"no one\")[(replace: ?19)[(click: \"alone\")[(replace: ?20)[(display: \"c\")]]]]\n(click: \"not to act\")[(replace: ?21)[(display: \"c\")]]\n(click: \"paces\")[(replace: ?22)[(click: \"struggle\")[(replace: ?23)[(click: ?k)[(replace: ?24)[(display: \"c\")]]]]]]\n(click: \"collapsed\")[(replace: ?25)[(display: \"c\")]]\n(click: \"much to do\")[(replace: ?26)[(display: \"c\")]]\n(click: \"to kill\")[(replace: ?27)[(display: \"c\")]]\n(click: \"inside herself\")[(replace: ?28)[(display: \"c\")]]\n(click: \"it occurred\")[(replace: ?29)[(display: \"c\")]]\n(click: \"her old family\")[(replace: ?30)[(display: \"c\")]]\n(click: \"miss her\")[(replace: ?31)[(display: \"c\")]]\n(click: \"lost her\")[(replace: ?32)[(display: \"c\")]]\n(click: \"barely moving\")[(replace: ?34)[(display: \"c\")]]\n(click: \"a couple times\")[(replace: ?35)[(display: \"c\")]]\n(click: \"no sense\")[(replace: ?36)[(display: \"c\")]]\n(click: \"stare at her\")[(replace: ?37)[(display: \"c\")]]\n(click: \"when she prayed\")[(replace: ?38)[(display: \"c\")]]\n(click: \"cursing\")[(replace: ?39)[(display: \"c\")]]\n(click: \"betrayed\")[(replace: ?40)[(display: \"c\")]]\n(click: \"couldn\u2019t stand\")[(replace: ?41)[(display: \"c\")]]\n(click: \"ravings\")[(replace: ?42)[(display: \"c\")]]\n(click: \"would fall\")[(replace: ?43)[(display: \"c\")]]\n(click: \"slower and slower\")[(replace: ?44)[(display: \"c\")]]\n(click: ?thing)[(replace: ?45)[(display: \"c\")]]\n(click: \"kept staring\")[(replace: ?46)[(display: \"c\")]]\n(click: \"collapsed\")[(replace: ?47)[(display: \"c\")]]\n(click: \"died\")[(replace: ?48)[(display: \"c\")]]\n(click: ?miss)[(replace: ?49)[(display: \"c\")]]\n(click: \"didn\u2019t think\")[(replace: ?51)[(display: \"c\")]]\n(click: \"didn\u2019t care\")[(replace: ?52)[(display: \"c\")]]\n}|1>[Mrs. Nuria\u2019s work survived her somehow. Traffic had decreased a lot, but some of it kept flowing down to Claro Largo.] |2>[Alma was getting desperate.] |3>[She became convinced that only her subordinates had the connections to support the business now Mrs. Nuria wasn\u2019t part of the picture.] |5>[She looked into her people|4>[ and made the cuts she deemed necessary].] |6>[She killed many she held dear.\n\n]|7>[Eventually, she was forced to face the truth|8>[: *Belona* was pushing the stuff].] |10>[It wasn\u2019t even a business anymore|9>[, she was practically giving it away].] |12>[Maybe Belona felt she was fighting for something, |11>[and Alma had always been fighting, ]so ]|14>[I don\u2019t think there was a chance|13>[ for any of them at this point].\n\n]|16>[Belona was speaking at the square that day|15>[, like she used to].] |17>[Alma was there too.] |18>[Alma was |there>[*never*] there.] |20>[She pushed through the crowd alone|19>[, but her gang stood by to make it clear no one should intervene].] |21>[They had been instructed not to act unprovoked, that much was obvious.\n\n](if: (either: true, false))[(set: $hermana to \"alma\")|24>[There was almost no hustle: |22>[a few paces, ]|23>[some awkward struggle, ]a |k>[knife].] |25>[Belona collapsed to the ground.] |26>[Her followers took her to the hospital, but there wasn\u2019t much to do.] |27>[Alma did not miss when she aimed to kill.\n\n]|28>[I wonder if the knife reached whatever Belona looked for inside herself.] |29>[Or at least if it occurred to her.] |30>[I wonder how many people at the square watched her fall like she had watched her old family back in the City.\n\n]|31>[I still miss her.] |32>[I feel I\u2019ve been asleep ever since I lost her.] |33>[I think she\u2019s the only person I knew who was awake.]](else:)[(set: $hermana to \"belona\")|34>[Alma\u2019s knife lunged forward and Belona dodged by barely moving to the side.] |35>[This happened a couple times.] |36>[There was no sense to it, Alma had never missed like that.] |37>[Belona did little more than look focused and stare at her sister.] |38>[The elders who saw her say she looked exactly like when she prayed as a little girl.\n\n]|39>[Alma couldn\u2019t stop cursing her sister.] |40>[She had betrayed everyone.] |41>[She couldn\u2019t stand being broken inside so she had to break every kid in Claro Largo.] |42>[Her insults turned into ravings.] |43>[She said the Takeover would fall upon us.] |44>[She said there was a river inside her, and it was running slower and slower by the minute.] |45>[She said there was a\u2026 |thing>[*thing*] pushing its way against the flow.\n\n]|46>[Belona just kept staring.] |47>[When Alma finally collapsed to the ground, her gang took her to the hospital.] |48>[She died a few hours later and there was no diagnosis.\n\n]|49>[I still |miss>[miss] her.] |50>[Maybe she became so incompetent all of a sudden because she wouldn\u2019t hurt her sister.] |51>[I wonder if Belona didn\u2019t think of this.] |52>[I wonder if she did and she just didn\u2019t care.]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "c",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "end",
+      "text": "(set: $contracci\u00f3n to 0)(live: 2s)[(goto: \"Credits\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Credits",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "c",
+      "text": "(set: $contracci\u00f3n to $contracci\u00f3n + 1)(if: $hermana is \"alma\" and $contracci\u00f3n > 21)[(click: \"who was\")[(replace: ?33)[<center>$tr[[[awake|end]]]</center>]]](if: $hermana is \"belona\" and $contracci\u00f3n > 30)[(click: \"she wouldn\u2019t\")[(replace: ?50)[<center>$tr[[[hurt|end]]]</center>]]]",
+      "links": [
+        {
+          "text": "awake",
+          "destination": {
+            "name": "end",
+            "pid": 10
+          }
+        },
+        {
+          "text": "hurt",
+          "destination": {
+            "name": "end",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Credits",
+      "text": "<p>**Sisters of Claro Largo**\nApril 2016</p><p>**<a href=\"https://twitter.com/DavTMar\" target=\"_blank\">David T. Marchand</a>**\nWords and story</p><p>**<a href=\"https://twitter.com/klembot\" target=\"_blank\">Chris Klimas</a>** & **<a href=\"https://twitter.com/webbedspace\" target=\"_blank\">Leon Arnott</a>**\nTwine & Harlowe</p><p>**<a href=\"https://twitter.com/pfque_\" target=\"_blank\" target=\"_blank\">Pablo F. Quarta</a>**\nEnglish language assistance</p><p>(if: (either: true, false))[**<a href=\"http://lenophotos.tumblr.com/\" target=\"_blank\">Leno Heyaca Consol</a>** & **<a href=\"http://journals.aps.org/prd/abstract/10.1103/PhysRevD.86.074028\" target=\"_blank\">Meredith von Lasher</a>**](else:)[**<a href=\"http://journals.aps.org/prd/abstract/10.1103/PhysRevD.86.074028\" target=\"_blank\">Meredith von Lasher</a>** & **<a href=\"http://lenophotos.tumblr.com/\" target=\"_blank\">Leno Heyaca Consol</a>**]\nGeneral enthusiasm</p><p>**<a href=\"https://twitter.com/Rumpelcita\" target=\"_blank\">Florencia Rumpel Rodr\u00edguez</a>**\nTech support and some (much) editing</p>**\n[[(Back)|English]]**",
+      "links": [
+        {
+          "text": "(Back)",
+          "destination": {
+            "name": "English",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "uno",
+      "text": "(click: \"Ciudad\")[$t[Yo nac\u00ed en la (link-reveal: \"Ciudad\")[$t[. No recuerdo mucho(click: \"recuerdo\")[$t[ adem\u00e1s de los talleres en los que nos ten\u00edan todo el (link-reveal: \"d\u00eda\")[$t[, y las celdas donde pas\u00e1bamos la noche]]]]]]. (click: \"celdas\")[$t[Odiaba las celdas con todo mi (link-reveal: \"coraz\u00f3n\")[$t[. So\u00f1aba con volverme una (link-reveal: \"masa gigante\")[$t[, como una (link-reveal: \"babosa\")[$t[ que (link-reveal: \"crec\u00eda\")[$t[ y se derramaba entre las barras(click: \"derramaba\")[$t[ y se expand\u00eda fuera de las celdas(click: \"expand\u00eda\")[$t[ y |fuera>[fuera] de la Ciudad(click: ?fuera)[$t[. So\u00f1aba con escaparme y tener una casa, una familia]]]]]]]]]]]]]].]]](click: ?celdas)[\n\n$t[Hab\u00eda gente conspirando contra el Gobierno.] (click: \"gente\")[$t[Todos conoc\u00edamos a alguien.]] (click: \"alguien\")[$t[Se pasaban (link-reveal: \"papelitos\")[$t[, se |reun\u00edan>[reun\u00edan] en secreto]].]] (click: ?reun\u00edan)[$t[Un d\u00eda se cansaron de reunirse(click:\"cansaron\")[$t[ y abrieron las celdas]].]] (click: \"abrieron\")[$t[Y tomaron las calles.]] (click: \"tomaron\")[$t[Y |tomaron>[tomaron] la Plaza Central.]] (click: ?tomaron)[$t[Y as\u00ed como as\u00ed, fuimos libres.](live: 2s)[(stop:)\n\n$t[No nos quedamos a ver si la Toma tuvo \u00e9xito.]] (click: \"Toma\")[$t[La respuesta del Gobierno fue r\u00e1pida y violenta(click: \"respuesta\")[$t[, pero las protestas fueron repentinas y organizadas]].]] (click: \"protestas\")[$t[Nos juntamos entre las |familias>[familias] que nos conoc\u00edamos, y algunas que no, y nos escapamos a la primera oportunidad.]]]]\n\n]<center>(click: \"\u00e1rboles\")[$t[El bosque que rodeaba la Ciudad era inquietante y (link-reveal: \"tenebroso\")[$t[, pero \u00e9ramos libres]].]] (click: \"un d\u00eda\")[$t[Caminamos entre los \u00e1rboles por semanas.]] (link: \"llegamos\")[$tr[Y un d\u00eda] llegamos $tr[ al Claro.]] (click: \"Claro\")[$t[Se iba a llamar (link-reveal: \"Claro Largo\")[$t[, pero cuando llegamos no se llamaba de ninguna manera]].]] (click: \"no se llamaba\")[$t[Todav\u00eda no s\u00e9 si era (link-reveal: \"un pueblo\")[$t[ con el que dimos, o un terreno cualquiera al que llegamos varios exiliados de la Ciudad m\u00e1s o menos al mismo tiempo]].]]</center>\n(click: \"familia\")[$t[Ah\u00ed conoc\u00ed a mi esposo.]] (click: \"Ah\u00ed\")[$t[La casa que nos toc\u00f3 era un desastre, como todas las dem\u00e1s.]] (click: \"desastre\")[$t[No iba a dejar que eso me tirara abajo.]] (click: \"abajo\")[$t[Las |celdas>[celdas] eran peores.]] (click: ?familias)[$t[Pasamos meses tratando de empezar una (link-reveal: \"familia\")[$t[, pero no se nos iba a dar todav\u00eda]].]] (click: \"iba a dar\")[$t[No s\u00e9 exactamente qu\u00e9 (link-reveal: \"pasaba\")[$t[, quiz\u00e1 mis a\u00f1os en la Ciudad me hab\u00edan arruinado por dentro sutilmente]].]]\n\n(click: \"a\u00f1os\")[|waiting>[$t[Me |canse>[cans\u00e9] de esperar.]](click: ?canse)[(replace: ?waiting)[$t[Cuando] me cans\u00e9 de esperar$t[, fui a la escuelita que estaban construyendo y pregunt\u00e9 si hab\u00eda alg\u00fan chico que necesitara una mam\u00e1.]]]] (click: \"chico\")[$t[Probablemente hab\u00eda muchos.] (live: 2s)[(stop:)$t[Ese d\u00eda me presentaron a Belona.] (live: 2s)[(stop:)$tr[**[[(2/5)|dos]]**]]]]",
+      "links": [
+        {
+          "text": "(2/5)",
+          "destination": {
+            "name": "dos",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Cr\u00e9ditos",
+      "text": "<p>**Hermanas de Claro Largo**\nAbril de 2016</p><p>**<a href=\"https://twitter.com/DavTMar\" target=\"_blank\">David T. Marchand</a>**\nPalabras e historia</p><p>**<a href=\"https://twitter.com/klembot\" target=\"_blank\">Chris Klimas</a>** & **<a href=\"https://twitter.com/webbedspace\" target=\"_blank\">Leon Arnott</a>**\nTwine & Harlowe</p><p>**<a href=\"https://twitter.com/pfque_\" target=\"_blank\">Pablo F. Quarta</a>**\nAsistencia con el idioma ingl\u00e9s</p><p>(if: (either: true, false))[**<a href=\"http://lenophotos.tumblr.com/\" target=\"_blank\">Leno Heyaca Consol</a>** & **<a href=\"http://journals.aps.org/prd/abstract/10.1103/PhysRevD.86.074028\" target=\"_blank\">Meredith von Lasher</a>**](else:)[**<a href=\"http://journals.aps.org/prd/abstract/10.1103/PhysRevD.86.074028\" target=\"_blank\">Meredith von Lasher</a>** & **<a href=\"http://lenophotos.tumblr.com/\" target=\"_blank\">Leno Heyaca Consol</a>**]\nEntusiasmo general</p><p>**<a href=\"https://twitter.com/Rumpelcita\" target=\"_blank\">Florencia Rumpel Rodr\u00edguez</a>**\nSoporte t\u00e9cnico y algo de (mucha) edici\u00f3n</p>**\n[[(Volver)|Castellano]]**",
+      "links": [
+        {
+          "text": "(Volver)",
+          "destination": {
+            "name": "Castellano",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "dos",
+      "text": "(click: \"familia\")[$t[Criamos a Belona como si fuera (link-reveal: \"nuestra\")[$t[, porque |era>[*era*] nuestra]].] (click: ?era)[$t[La vi ese d\u00eda en la escuelita y me vi a m\u00ed misma.] (live: 2s)[(stop:)$t[Hablamos.] (live: 2s)[(stop:)$t[Me dijo que su familia hab\u00eda muerto en la Toma(click: \"muerto\")[$t[, que ella hab\u00eda visto]].]]]] (click: \"visto\")[$t[A veces hay tanta crueldad en el mundo\u2026]]\n\n](click: ?tuviera)[$t[Era muy introvertida.]] (click: \"nada\")[$t[No recuerdo que |tuviera>[tuviera] amigos.] (click: \"introvertida\")[$t[Los vecinos le prestaban libros y ella los devoraba.]] (click: \"libros\")[$t[No le iba particularmente bien en clase.]] (click: \"particularmente\")[$t[Mal tampoco.]]\n\n](click: \"vecinos\")[$t[Apenas sal\u00eda de casa.] (live: 1s)[(stop:)$t[Casi no recordaba la Ciudad.]] (click: \"Casi\")[$t[Creo que nunca apreci\u00f3 la libertad que ten\u00edamos en Claro Largo(click: \"nunca\")[$t[ porque no sab\u00eda lo que era que te la arrebataran]].]]\n\n]<center>rezaba(click-replace: \"rezaba\")[$tr[Belona] rezaba $tr[seguido.]] (click: \"seguido\")[$t[Creo que eso es lo que hac\u00eda.]] (click: \"Creo\")[$t[Generalmente en Claro Largo nos gustaba que los j\u00f3venes cultivaran su |fe>[fe] de chicos(click: ?fe)[$t[, pero lo que Belona describ\u00eda de sus revelaciones internas siempre nos inquiet\u00f3]].]] (click: \"revelaciones\")[$t[Creo que entend\u00eda el concepto de hablar con Dios(click: \"entend\u00eda\")[$t[, pero se sentaba sola, contemplativa, sin hablarle a nadie]].]] (click: \"contemplativa\")[$t[Supongo que *ten\u00eda* que hablar con alguien, consigo misma, o su familia.]]</center>\n(click: \"crueldad\")[$t[Lo describ\u00eda como explorar su propio ser.]] (click: \"Lo describ\u00eda\")[$t[Cuando le ped\u00edas una imagen m\u00e1s clara, hablaba de enterrar las manos en sus entra\u00f1as buscando algo fundamental(click: \"algo\")[$t[, o busc\u00e1ndose a s\u00ed misma]].]] (click: \"s\u00ed misma\")[$t[Una vez le pregunt\u00e9 si alguna vez se hab\u00eda encontrado.]] (click: \"encontrado\")[$t[Me |contesto>[contest\u00f3] que lo que encontr\u00f3 es que no hab\u00eda nada que encontrar.]] (click: ?contesto)[$t[Muchas de estas conversaciones no las compart\u00ed con los dem\u00e1s mayores.]] (click: \"mayores\")[$t[Ya bastante sospechaban.]]\n\n(click: \"libertad\")[$t[|trate>[Trat\u00e9] de rezar con ella.]] (click: ?trate)[$t[Durante (link-reveal: \"un mes\")[$t[ o casi]].]] (click: \"casi\")[$t[Despu\u00e9s dej\u00e9.] (live: 1s)[(stop:)$t[No me gust\u00f3, la verdad.]]] (click: \"verdad\")[$t[La \u00faltima vez, creo que entend\u00ed algo de lo que Belona |dec\u00eda>[dec\u00eda].]] (click: ?dec\u00eda)[$t[(link-reveal: \"Lo de buscarse\u2026\")[ $t[Esperaba que lo de tocarse las entra\u00f1as fuera m\u00e1s metaf\u00f3rico(click: \"Esperaba\")[$t[, pero lo |senti>[sent\u00ed]]].]]]] (click: ?senti)[$t[Me sent\u00ed enterrando las manos en el cuerpo.] (live: 2s)[(stop:)$t[Bueno, no literalmente, pero |cerca>[casi].]]]\n\n(click: ?cerca)[$t[Sent\u00ed que met\u00eda los dedos en una especie de canal interno.]] (click: \"canal\")[$t[Como una |parte>[parte b\u00e1sica] de lo que soy.]] (click: ?parte)[$t[Un r\u00edo por el que flu\u00eda |vida>[mi vida].]] (click: ?vida)[$t[Y encontr\u00e9 |algo>[algo] obstruyendo el paso del agua.]] (click: ?algo)[$t[Algo que s\u00f3lo se pod\u00eda sentir.] (live: 1s)[(stop:)$t[Como una v\u00edbora sin cara(click: \"v\u00edbora\")[ $t[con la consistencia de una babosa](live: 2s)[(stop:)$t[. Muerta]]].]]] (click: \"Muerta\")[$t[Es decir, inerte, como un objeto(live: 2s)[(stop:)$t[, pero se daba cuenta de lo que pasaba]].]] (click: \"cuenta\")[$t[Trat\u00f3 de escurrirse entre mis dedos, pero |no>[no] la dej\u00e9.]] (click: ?no)[$t[La arranqu\u00e9 de donde estaba y el r\u00edo empez\u00f3 a |correr>[correr] como deb\u00eda.]]\n\n(click: ?correr)[$t[Fue como un sue\u00f1o, y cuando mi esposo me despert\u00f3 Belona estaba sentada como cuando hab\u00edamos empezado. Yo estaba desparramada en el suelo, llorando a los gritos.]]\n\n(click: \"llorando\")[$t[Como dije, no volv\u00ed a rezar con ella. Y no hubiera podido, porque unas semanas m\u00e1s tarde qued\u00e9 embarazada de Alma.]] (click: \"Alma\")[$tr[**[[(3/5)|tres]]**]]",
+      "links": [
+        {
+          "text": "(3/5)",
+          "destination": {
+            "name": "tres",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "tres",
+      "text": "(click: ?entendiera)[$t[Ni el embarazo ni el parto tuvieron complicaciones. La hermana de Belona creci\u00f3 sana y fuerte. De muy beba demostr\u00f3 una vitalidad que en Claro Largo casi no se ve\u00eda. La llamamos Alma.]\n\n](click: \"vitalidad\")[$t[Aprendi\u00f3 a (link-reveal: \"caminar\")[$t[ y aprendi\u00f3 a (link-reveal: \"correr\")[$t[ y aprendi\u00f3 a irse de nuestra vista sin avisar. Alma se escapaba seguido. Hered\u00f3 mis ganas de |volar>[volar] de una manera que Belona nunca pudo]]]].]\n\n](click: \"al bosque\")[$t[Dar vueltas por Claro Largo siempre fue relativamente seguro, salvo por los bosques.] (click: \"salvo\")[$t[Nunca supimos |que>[qu\u00e9] fue de la Toma|p>[.]]] (click: ?que)[(replace: ?p)[$t[: la Ciudad estaba m\u00e1s callada pero todav\u00eda operaba, y la polic\u00eda segu\u00eda monitoreando los bosques.]]] (click: \"todav\u00eda operaba\")[$t[Seguro sab\u00edan de nosotros pero no ten\u00edan los recursos ni las |ganas>[ganas] de hacer algo al respecto.]] (click: ?ganas)[$t[Nuestra paz, sin embargo, depend\u00eda de que no les di\u00e9ramos una raz\u00f3n.]]\n\n]<center>(click: \"controlarla\")[$t[Alma hac\u00eda sus excursiones al bosque siempre que pod\u00eda.] ](click: \"l\u00edder\")[$t[Nunca pudimos controlarla.] ](link: \"admiraban\")[$tr[Los (link-reveal: \"chicos\")[ $t[en Claro Largo]]] admiraban $tr[a (link-reveal: \"Alma\")[$t[, y con los a\u00f1os fue armando una banda y se estableci\u00f3 como una especie de l\u00edder]].]]</center>\n(click: \"una raz\u00f3n\")[$t[A los m\u00e1s j\u00f3venes les ense\u00f1\u00e1bamos sobre sobre la Ciudad y las celdas para que pudieran valorar la libertad en la que hab\u00edan nacido.]] (click: \"ense\u00f1\u00e1bamos\")[$t[Con Alma |funciono>[funcion\u00f3] demasiado bien.]] (click: ?funciono)[$t[Ella cre\u00eda que nos hab\u00edamos *conformado* con una cierta vida. Que atesorar nuestra libertad era una especie de hipocres\u00eda si no intent\u00e1bamos *expandirla*.]] (click: \"expandirla\")[$t[No conoc\u00eda la Ciudad, as\u00ed que daba |vida>[nuestra vida] en Claro Largo por sentado.]] (click: ?vida)[$t[Pero nuestra vida hab\u00eda llegado a un (link-reveal: \"precio\")[$t[ y una vida m\u00e1s grande tiene un precio |mayor>[*mayor*]](click: ?mayor)[$t[, no creo que ella lo |entendiera>[entendiera]]]].]]\n\n(click: ?volar)[$t[Los mayores est\u00e1bamos |preocupados>[preocupados].]] (click: ?preocupados)[$t[No le \u00edbamos a impedir que hablara, as\u00ed que urdimos un plan para arrebatarle la admiraci\u00f3n de sus seguidores.]] (click: \"un plan\")[$t[Y perdimos cualquier esperanza de tener \u00e9xito cuando Alma empez\u00f3 a volver de sus excursiones con noticias de |pueblos>[pueblos vecinos].]] (click: ?pueblos)[$tr[**[[(4/5)|cuatro]]**]]",
+      "links": [
+        {
+          "text": "(4/5)",
+          "destination": {
+            "name": "cuatro",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "cuatro",
+      "text": "La calidad de vida en Claro Largo mejor\u00f3 bastante cuando empezamos a comerciar con los pueblos vecinos. (click: \"comerciar\")[$t[Alma fue la (link-reveal: \"pionera\")[$t[, pero m\u00e1s tarde sus (link-reveal: \"subalternos\")[ $t[y hasta los mayores]] empezaron a |ir>[ir] a visitar]].]] (click: ?ir)[$t[Ten\u00edamos |algo>[algo] que se parec\u00eda a una econom\u00eda(click: ?algo)[ $t[y nos sent\u00edamos ciudadanos de un mundo m\u00e1s grande]].]]\n\n(click: \"mundo m\u00e1s grande\")[$t[Uno de los pueblos m\u00e1s cercanos era Valle de las Juras.]] (click: \"Valle de las Juras\")[$t[Hac\u00edan ropa de la m\u00e1s bonita ah\u00ed(click: \"m\u00e1s bonita\")[$t[, cautivante para lo que se acostumbraba ac\u00e1]].]] (click: \"acostumbraba\")[$t[Claro Largo estaba (link: \"impresionado\")[$t[demasiado] impresionado $t[para notar lo m\u00e1s (link-reveal: \"turbio\")[$t[:  el negocio de Do\u00f1a Nuria]]]].]]\n\n(click: \"Do\u00f1a Nuria\")[$t[Era una se\u00f1ora m\u00e1s bien misteriosa de Valle de las Juras(click: \"se\u00f1ora\")[ $t[que hab\u00eda |empezado>[empezado] vendiendo cerveza casera](click: ?empezado)[$t[ y luego se hab\u00eda expandido a sustancias mucho m\u00e1s peligrosas]]].]] (click: \"peligrosas\")[$t[Al principio no me importaron los rumores.]] (click: \"no me importaron\")[$t[Cada cual hace con su tiempo lo que le |parece>[parece].]] (click: ?parece)[$t[Pero despu\u00e9s los chicos en Claro Largo empezaron a usar(click: \"los chicos\")[$t[, y Belona |tambi\u00e9n>[tambi\u00e9n]]].]] (click: ?tambi\u00e9n)[$t[Empec\u00e9 a perderla ese d\u00eda.]]\n\n(click: \"perderla\")[$t[Para Belona era (link-reveal: \"como rezar\")[$t[, otra herramienta para indagar en su interior]].]] (click: \"indagar\")[$t[Alma no lo |toleraba>[toleraba].]] (click: ?toleraba)[$t[Quer\u00eda que la gente so\u00f1ara (link-reveal: \"m\u00e1s grande\")[$t[, no que |abandonara>[abandonara] todo por lo que los mayores hab\u00edamos peleado]].]] (click: ?abandonara)[$t[Hab\u00eda chicos levantando celdas alrededor de s\u00ed mismos(click: \"levantando celdas\")[ $t[y haci\u00e9ndose los superados al respecto]].]] (click: \"superados\")[$t[A ella le gustaba creer que pod\u00eda bancarse |casi>[casi] lo que fuera.]] (click: ?casi)[$t[Pero no a su gente perdiendo el tiempo(click: \"su gente\")[$t[, o su hermana la salud]].]] (click: \"salud\")[$t[No a Claro Largo renunciando a su propia fuerza de voluntad.]]\n\n(click: \"su propia fuerza de voluntad\")[$t[Belona hizo lo que pudo para |ignorar>[ignorar] la ira de su hermana.]] (click: ?ignorar)[$t[Deambulaba por Claro Largo |habl\u00e1ndose>[habl\u00e1ndose] a s\u00ed misma(click: ?habl\u00e1ndose)[$t[, en voz alta]].]] (click: \"voz alta\")[$t[Ah\u00ed pas\u00f3 algo rar\u00edsimo(click: \"algo rar\u00edsimo\")[$t[: |algunas>[algunas] personas se empezaron a juntar a escucharla]].]] (click: ?algunas)[$t[*Muchas* |personas>[personas].]] (click: ?personas)[$t[La banda de Alma aparec\u00eda, zarandeaba alguna gente(click: \"zarandeaba\")[$t[, pero Belona despu\u00e9s se iba como si no hubiera pasado |nada>[nada]]].]] (click: ?nada)[$t[La gente de Alma estaba pr\u00e1cticamente a cargo de la seguridad de Claro Largo a esta altura.]]\n\n(click: \"a esta altura\")[$t[Esto continu\u00f3 por (link-reveal: \"a\u00f1os\")[$t[, hasta que un invierno |murieron>[tres chicos murieron] por la basura de Do\u00f1a Nuria]].]] (click: ?murieron)[$t[Iba a pasar tarde o temprano.]] (click: \"tarde o temprano\")[$t[Muchos se pasaban d\u00edas en estado de trance.]] (click: \"trance\")[$t[No (link-reveal: \"com\u00edan\")[$t[, no (link-reveal: \"hablaban\")[$t[, menos que menos iban a |rezar>[rezar]]]]].]] (click: ?rezar)[$t[Todos est\u00e1bamos esperando que Alma explotara.]] (click: \"explotara\")[$t[Ella fue a los entierros pero guard\u00f3 silencio durante todo el asunto.]]\n\n(click: \"silencio\")[$t[Al |anochecer>[anochecer] junt\u00f3 a su mejor gente(click: ?anochecer)[ $t[y sali\u00f3 para Valle de las Juras]].]] (click: \"sali\u00f3\")[$t[No |se>[s\u00e9] exactamente qu\u00e9 pas\u00f3 cuando llegaron.]] (click: ?se)[$t[Do\u00f1a Nuria muri\u00f3, eso |seguro>[seguro].]] (click: ?seguro)[$t[Algunos dicen que Alma s\u00f3lo dio la orden.]] (click: \"Algunos\")[$t[La mayor\u00eda dice que lo hizo ella misma.]] (click: \"lo hizo ella\")[$t[Hay historias sobre *c\u00f3mo* lo hizo(click: \"historias\")[$t[, pero yo no las |creo>[creo]]].]] (click: ?creo)[$t[Para ser honesta, prefiero ni pensar al respecto.] (live: 2s)[(stop:)$tr[**[[(5/5)|cinco]]**]]]",
+      "links": [
+        {
+          "text": "(5/5)",
+          "destination": {
+            "name": "cinco",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "cinco",
+      "text": "{\n\n(click: \"reducido\")[(replace: ?1)[(display: \"z\")]]\n(click: \"desesperada\")[(replace: ?2)[(display: \"z\")]]\n(click: \"convenci\u00f3\")[(replace: ?3)[(display: \"z\")]]\n(click: \"cortes\")[(replace: ?4)[(click: \"Investig\u00f3\")[(replace: ?5)[(replace: ?4)[(display: \"z\")]]]]]\n(click: \"Mat\u00f3\")[(replace: ?6)[(display: \"z\")]]\n(click: \"moviendo\")[(replace: ?8)[(click: \"verdad\")[(replace: ?7)[(display: \"z\")]]]]\n(click: \"regalando\")[(replace: ?9)[(click: \"negocio\")[(replace: ?10)[(display: \"z\")]]]]\n(click: \"toda su vida\")[(replace: ?11)[(click: \"peleando por algo\")[(replace: ?12)[(display: \"z\")]]]]\n(click: \"altura\")[(replace: ?13)[(click: \"una chance\")[(replace: ?14)[(display: \"z\")]]]]\n(click: \"costumbre\")[(replace: ?15)[(click: \"en la plaza\")[(replace: ?16)[(display: \"z\")]]]]\n(click: \"ah\u00ed tambi\u00e9n\")[(replace: ?17)[(display: \"z\")]]\n(click: ?nunca)[(replace: ?18)[(display: \"z\")]]\n(click: \"nadie\")[(replace: ?19)[(click: \"sola\")[(replace: ?20)[(display: \"z\")]]]]\n(click: \"no actuar\")[(replace: ?21)[(display: \"z\")]]\n(click: \"pasos\")[(replace: ?22)[(click: \"tironeo\")[(replace: ?23)[(click: ?k)[(replace: ?24)[(display: \"z\")]]]]]]\n(click: \"desplom\u00f3\")[(replace: ?25)[(display: \"z\")]]\n(click: \"mucho que hacer\")[(replace: ?26)[(display: \"z\")]]\n(click: \"a matar\")[(replace: ?27)[(display: \"z\")]]\n(click: \"dentro de s\u00ed\")[(replace: ?28)[(display: \"z\")]]\n(click: \"se le ocurri\u00f3\")[(replace: ?29)[(display: \"z\")]]\n(click: \"su otra familia\")[(replace: ?30)[(display: \"z\")]]\n(click: ?extra\u00f1o2)[(replace: ?31)[(display: \"z\")]]\n(click: \"la perd\u00ed\")[(replace: ?32)[(display: \"z\")]]\n(click: \"movi\u00e9ndose un poquito\")[(replace: ?34)[(display: \"z\")]]\n(click: \"un par de veces\")[(replace: ?35)[(display: \"z\")]]\n(click: \"No ten\u00eda sentido\")[(replace: ?36)[(display: \"z\")]]\n(click: \"fijar los ojos\")[(replace: ?37)[(display: \"z\")]]\n(click: \"cuando rezaba\")[(replace: ?38)[(display: \"z\")]]\n(click: \"maldecir\")[(replace: ?39)[(display: \"z\")]]\n(click: \"traicionado\")[(replace: ?40)[(display: \"z\")]]\n(click: \"No toleraba\")[(replace: ?41)[(display: \"z\")]]\n(click: \"desvar\u00edos\")[(replace: ?42)[(display: \"z\")]]\n(click: \"iba a caer\")[(replace: ?43)[(display: \"z\")]]\n(click: \"m\u00e1s y m\u00e1s lento\")[(replace: ?44)[(display: \"z\")]]\n(click: ?cosa)[(replace: ?45)[(display: \"z\")]]\n(click: \"sigui\u00f3 mirando\")[(replace: ?46)[(display: \"z\")]]\n(click: \"desplom\u00f3\")[(replace: ?47)[(display: \"z\")]]\n(click: \"Muri\u00f3\")[(replace: ?48)[(display: \"z\")]]\n(click: ?extra\u00f1o)[(replace: ?49)[(display: \"z\")]]\n(click: \"no se habr\u00e1 dado cuenta\")[(replace: ?51)[(display: \"z\")]]\n(click: \"no le import\u00f3\")[(replace: ?52)[(display: \"z\")]]\n}|1>[La obra de Do\u00f1a Nuria sobrevivi\u00f3 los eventos de esa noche. El tr\u00e1fico se hab\u00eda reducido mucho, pero algo de eso segu\u00eda llegando a Claro Largo.] |2>[Alma estaba desesperada.] |3>[Se convenci\u00f3 de que s\u00f3lo sus subordinados ten\u00edan las conexiones para bancar el negocio ahora que Do\u00f1a Nuria no exist\u00eda.] |5>[Investig\u00f3 a su gente|4>[ e hizo los cortes que le parec\u00edan necesarios].] |6>[Mat\u00f3 a mucha gente que quer\u00eda.\n\n]|7>[Eventualmente, se vio forzada a enfrentar la verdad|8>[: *Belona* estaba moviendo la mercader\u00eda].] |10>[Ya ni siquiera era un negocio|9>[, pr\u00e1cticamente la estaba regalando].] |12>[Quiz\u00e1 sent\u00eda que estaba peleando por algo, |11>[y Alma hab\u00eda estado peleando toda su vida, ]as\u00ed que ]|14>[ no creo que ninguna de las dos tuviera una chance|13>[ a esta altura].\n\n]|16>[Ese d\u00eda Belona estaba hablando en la plaza|15>[, como ya era costumbre].] |17>[Alma estaba ah\u00ed tambi\u00e9n.] |18>[Alma |nunca>[*nunca*] estaba ah\u00ed.] |20>[Se abri\u00f3 paso entre la multitud sola|19>[, pero su banda estaba cerca para asegurarse de que nadie interviniera].] |21>[Ten\u00edan instrucciones de no actuar sin provocaci\u00f3n, eso era obvio.\n\n](if: (either: true, false))[(set: $hermana to \"alma\")|24>[Casi no hubo ajetreo: |22>[unos pasos, ]|23>[alg\u00fan tironeo torpe, ]un |k>[cuchillo].] |25>[Belona se desplom\u00f3.] |26>[Sus seguidores la llevaron a la salita, pero no hab\u00eda mucho que hacer.] |27>[Alma no le pifiaba cuando apuntaba a matar.\n\n]|28>[Me pregunto si el cuchillo alcanz\u00f3 lo que sea que Belona buscaba dentro de s\u00ed.] |29>[O al menos si se le ocurri\u00f3 que pod\u00eda.] |30>[Me pregunto cu\u00e1nta gente en la plaza la habr\u00e1 visto caer como ella hab\u00eda visto a su otra familia all\u00e1 en la Ciudad.\n\n]|31>[Todav\u00eda la |extra\u00f1o2>[extra\u00f1o].] |32>[Siento que estoy so\u00f1ando desde que la perd\u00ed.] |33>[Creo que ella era la \u00fanica persona que conoc\u00ed que estaba despierta.]](else:)[(set: $hermana to \"belona\")|34>[El cuchillo de Alma arremeti\u00f3 y Belona lo esquiv\u00f3 movi\u00e9ndose un poquito al costado.] |35>[Esto ocurri\u00f3 un par de veces.] |36>[No ten\u00eda sentido alguno, Alma nunca le hab\u00eda pifiado as\u00ed.] |37>[Belona no hac\u00eda mucho m\u00e1s que verse concentrada y fijar los ojos sobre su hermana.] |38>[Los mayores que la vieron dicen que se ve\u00eda exactamente como cuando rezaba de chiquita.\n\n]|39>[Alma no pod\u00eda parar de maldecir a su hermana.] |40>[Los hab\u00eda traicionado a todos.] |41>[No toleraba estar rota por dentro as\u00ed que ten\u00eda que romper a cada chico en Claro Largo.] |42>[Sus insultos se volvieron desvar\u00edos.] |43>[Dijo que la Toma iba a caer sobre todos nosotros.] |44>[ Dijo que hab\u00eda un r\u00edo en su interior, y que estaba corriendo m\u00e1s y m\u00e1s lento a cada minuto.] |45>[Dijo que hab\u00eda una\u2026 |cosa>[*cosa*] empujando contra la corriente.\n\n]|46>[Belona s\u00f3lo sigui\u00f3 mirando fijo.] |47>[Cuando Alma finalmente se desplom\u00f3 en el suelo, su banda la llev\u00f3 a la salita.] |48>[Muri\u00f3 unas horas m\u00e1s tarde y no hubo diagn\u00f3stico.\n\n]|49>[Todav\u00eda la |extra\u00f1o>[extra\u00f1o].] |50>[Quiz\u00e1 su incompetencia repentina fue porque no quer\u00eda lastimar a su hermana.] |51>[Me pregunto si Belona no se habr\u00e1 dado cuenta de esto.] |52>[Me pregunto si se dio cuenta e igual no le import\u00f3.]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "z",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "z",
+      "text": "(set: $contracci\u00f3n to $contracci\u00f3n + 1)(if: $hermana is \"alma\" and $contracci\u00f3n > 21)[(click: \"que estaba\")[(replace: ?33)[<center>$tr[[[despierta|fin]]]</center>]]](if: $hermana is \"belona\" and $contracci\u00f3n > 30)[(click: \"no quer\u00eda\")[(replace: ?50)[<center>$tr[[[lastimar|fin]]]</center>]]]",
+      "links": [
+        {
+          "text": "despierta",
+          "destination": {
+            "name": "fin",
+            "pid": 20
+          }
+        },
+        {
+          "text": "lastimar",
+          "destination": {
+            "name": "fin",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "fin",
+      "text": "(set: $contracci\u00f3n to 0)(live: 2s)[(goto: \"Cr\u00e9ditos\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Cr\u00e9ditos",
+            "pid": 14
+          }
+        }
+      ]
+    }
+  ]
+}

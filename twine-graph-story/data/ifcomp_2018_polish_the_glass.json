@@ -1,0 +1,738 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Untitled Passage",
+      "text": "(set: $t to (transition: \"dissolve\")) \n(css: \"font-size: 40px\")[(link-reveal: \"Polish the Glass\")[(replace: ?Blurr)[$t[ We lived on the dying edge of a rusted steel city, in a small house at the bottom of a quiet street; so quiet that I would often hear the hoots and hollers of patrons at the local (link-reveal: \"Bar.\")[(show: ?Bar)[$t[\n\nPeople would go (link-reveal: \"missing\")[(show: ?lost)] there, but not in the way you think.\n\n|lost)[$t[My father always said that folk stayed there when they were missing a piece of themselves. They thought they could find it in the bottom of the bottle; as if the glass could lay bare their soul and show them what they (link-reveal: \"craved\")[(show: ?Crave)].]]\n\n|Crave)[$t[He told me that they only craved another drink. As a [[child]] I never saw it that way; I still don\u2019t-I know better.]]\n]]]]]]]\n\n[(text-style: \"blurrier\")[We lived on the dying edge of a rusted steel city, in a small house at the bottom of a quiet street; so quiet that I would often hear the hoots and hollers of patrons at the local Bar.]]<Blurr|\n(enchant: \"Glass\", (text-colour: #adc4a0) )\n(enchant: \"glass\", (text-colour: #adc4a0) )\n",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "missing",
+            "pid": 34
+          }
+        },
+        {
+          "text": "child",
+          "destination": {
+            "name": "child",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "child",
+      "text": "(set: $t to (transition: \"dissolve\"))\nGrowing up I had fond memories of the Bar, of the frequent and smiling customers more than willing to tell me their stories. I loved the hours spent with my mother (link-reveal: \"polishing the glass\")[(show: ?glass)], making it shine and sparkle, it was a point of pride for her: \u201cthe glass must always be clean,\u201d she would say.\n\n|glass)[$t[I was not yet old enough to recognize the oddity of her compulsion: (link-reveal: \"her need to clean the glass\")[(show: ?clean)].]]\n\n|clean)[$t[The Bar goers were old and rarely wise, but I remember one (link-reveal: \"couple\")[(show: ?couple)] and the lessons they taught me. He taught me to dream, she taught me to act.]]\n\n|couple)[$t[The large man with a crooked nose and wide grin loved to bend my ear. His wife had a foul look about her. They would tell me of their travels to the warmer parts of the world while drowning in their (link-reveal: \"fifth drink\")[(show: ?5th)] of the evening.]]\n\n|5th)[$t[One particular night the conversation had devolved into a discussion about my future]. \n\n\u201c(link-reveal: \"What do you want to do when you grow up\")[(show: ?future)]?\u201d]\n\n|future)[$t[Whenever asked this I would simply (link-reveal: \"shrug\")[(show: ?shrug)]. While I was old enough to know my ABCs, I had not yet made my life's plan.]]\n\n|shrug)[$t[The man gave me a big smile showing me his (link-reveal: \"enormous yellow teeth\")[(show: ?yellow)], \u201cWell whatever you do, be sure it\u2019s something that can pay for your bucket list.\u201d ]]\n\n|yellow)[$t[I shared a smile with him and laughed, as I knew I should. He could not hear the arrogance in his voice, as he was only happy to have someone so young willing to listen. As per usual the lady sat in quiet disapproval while (link-reveal: \"her husband rambled on\")[(show: ?ramble)].]]\n\n|ramble)[$t[This time, however, she decided to speak up, \u201c(link-reveal: \"Fuck the bucket list\")[(show: ?fuck)].\u201d Her eyes found mine and she held me with her gaze.]]\n\n|fuck)[$t[The foul lady\u2019s bluntness drew me to her and (link-reveal: \"I hung off every word\")[(show: ?hung)], \u201cDo what you can, when you can.\u201d]]\n\n|hung)[$t[She took the lask swig of her drink and held the empty glass to the light, \u201cPick one thing a year within your means and do it,\u201d with her sleeve she rubbed away the print of her fingers from the glass and affixed me with an intense stare, \u201cmake sure you get out of here and see something more, don\u2019t wait.\u201d\n\nI knew from the look in her eye that she was trying to tell me something important, like she knew (link-reveal: \"something was wrong\")[(show: ?wrong)].]]\n \n|wrong)[$t[Looking back now my memories of the [[Bar]] seemed to hint at what I would experience working there. Of what would become of [[my mother]] before she disappeared and gave herself to the glass forever.]]\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "Bar",
+          "destination": {
+            "name": "Bar",
+            "pid": 3
+          }
+        },
+        {
+          "text": "my mother",
+          "destination": {
+            "name": "my mother",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Bar",
+      "text": "(set: $t to (transition: \"dissolve\"))\nPeople always claimed to love the Bar; said it was charming, that it had (link-reveal: \"character\")[(show: ?b1)]. Its red brick face and faded gold lettering adorning the sign above the heavy oak door made it hard to disagree.\n\n|b1)[$t[The squat building was always well-stocked. (link-reveal: \"A thin layer of smoke\")[(show: ?b2)] hung in the air. As a child I could walk below the haze, though it did little to save my lungs.]]\n\n|b2)[$t[The walls were a dark burgundy, lit primarily by dim light.\n\nAt night this changed. The Bar became brighter. Whether it was the warmth of the customers, or the (link-reveal: \"sparkle of the glass\")[(show: ?b3)] that made the Bar more luminous, I could not tell you.]]\n\n|b3)[$t[Personally, I think the Bar (link-reveal: \"enjoyed the company it housed\")[(show: ?b4)]. It liked the stories they told. And how grand those tales became after a few drinks. \n\nThe Bar would fill itself on their fantasies, while its patrons gorged themselves on amber liquid.]]\n\n|b4)[$t[The Bar was, and still is, a special place. It is a place that freezes time; lets you live in it wholly. But when you emerge you find yourself (link-reveal: \"ten years older\")[(show: ?b5)].]]\n\n|b5)[$t[It was why I looked forward to going to work with my mother. Being young I could not feel myself age those ten years, not in the way I do now, yet I could enjoy the sense of timelessness (link-reveal: \"freely\")[(show: ?b6)].]]\n\n|b6)[$t[My adoration of the Bar was only amplified by the staff. I was always greeted by the (link-reveal: \"cooks\")[(show: ?b7)] as soon as I entered the Bar, somehow they always knew it was me.]]\n\n|b7)[$t[One was tall and always looked frazzled, his appearance matched the way he cooked - always veering between stations, barely making it back to his own without crashing into someone else. On his first day, he slipped on some oil, spilling all his freshly cut fries. That incident earned him the nickname (link-reveal: \"Skid\")[(show: ?b8)].]]\n\n|b8)[$t[The other, who I had named (link-reveal: \"Burly\")[(show: ?b9)], was a mountain of a man and the head chef. He was just as invested in the Bar as my mother was, sometimes he would join her and help clean the glass during a lull.]] \n\n|b9)[$t[Burly and Skid didn\u2019t hide their excitement when they saw me, I on the other hand, let my shyness take over and was unable to match their (link-reveal: \"level of enthusiasm\")[(show: ?b10)].]]\n\n|b10)[$t[Embarrassed by the attention I would run and hide under the nearby bar counter. There in the corner I\u2019d stare at the grey tile below my feet. It was the kind of tile meant to look like slate, but it only served to make the floor look dirty with all its dark cracks and ridges.\n\nI hoped they would grow bored and leave me be. I was always wrong, much to my (link-reveal: \"delight\")[(show: ?b11)].]]\n\n|b11)[$t[Together they would coax me out of hiding by telling me that they needed my help. Burly and Skid knew that kids needed to feel useful- (link-reveal: \"wanted\")[(show: ?b12)].]]\n\n|b12)[$t[Already an expert at polishing the glass, they moved me on to (link-reveal: \"other tasks\")[(show: ?b13)] - to help distract me from my mother's state.]]\n\n|b13)[$t[They started me off by having me tend to the ice maker. It was a finicky box that sat beneath the bar counter. Every so often it would crank out sheets of ice that were meant to break apart when they fell to the bottom of the box; giving us small ice cubes. Unfortunately, the freezing compartment had a tendency to be a little over zealous and as a result the sheets were too thick.\n\nBeing the smallest I was charged with the task of (link-reveal: \"breaking the ice\")[(show: ?b14)].]]\n\n|b14)[$t[The same machine sits there to this day; a relic from years past. (link-reveal: \"I can still remember\")[(show: ?b15)] its steady hum as I worked within its belly.]]\n\n|b15)[$t[------------------------\n//With both hands I  push up the heavy ribbed door; it\u2019s metal lip cool to the touch. Head first I maneuver my way into the mouth of the ice box-plastic scooper in hand. My small arms crash down on the frozen chunks of water, and each time (link-reveal: \"the box shakes \")[(show: ?b16)] from my wild attacks.//]]\n\n|b16)[$t[//When the box shakes I imagine the heavy door coming down on my neck and (link-reveal: \"taking off my head\")[(show: ?b17)] like a guillotine.//]]\n\n|b17)[$t[//At my back I feel, something. (link-reveal: \"It brushes against me\")[(show: ?b18)].//]]\n\n|b18)[$t[//(link-reveal: \"I ignore it\")[(show: ?b19)], purposeful in my quest to smash the ice into chunks.//]]\n\n|b19)[$t[//(link-reveal: \"It sweeps past me once more\")[(show: ?b20)].//]]\n\n|b20)[$t[//A cold shiver runs down my spine. (link-reveal: \"It is not from the machine\")[(show: ?b21)].//]]\n\n|b21)[$t[//Behind me I imagine long bony fingers reaching to the door, pulling it down on me. I smell meat, frozen but full of rot. \n\n(link-reveal: \"But I am alone\")[(show: ?b22)].//]]\n\n|b22)[$t[//There is something dragging; (link-reveal: \"a sucking sound at my ear\")[(show: ?b23)].//]]\n\n|b23)[$t[//A nail scratches my back and I freeze.\n\nIt knows I can feel it, knows I\u2019m watching too; so it leaves me. \n\n(live: 2s)[$t[(link-reveal: \"I crush the ice quietly thereafter\")[(show: ?b24)]. (stop:)]]//\n---------------------------------------------------------------------]]\n|b24)[$t[This happened everytime I broke the ice. As a result, I viewed my new found job with a sense of (link-reveal: \"apprehension\")[(show: ?b25)]. But those frozen cubes are crucial in a bar so I carried out my task, evermore mindful of the noise I was making.]]\n\n|b25)[$t[Mother was happy for me to take on this new position. She now liked to clean the glass alone, even if it had once served as a reason to spend time together. \n\nInitially, I didn\u2019t notice her distance herself from me. The staff at the Bar did, and tried to keep me busy, hoping I wouldn\u2019t notice my mothers (link-reveal: \"lack of attention\")[(show: ?b26)].]]\n\n|b26)[$t[After becoming a certified ice crusher I graduated to bigger and better ventures. The cooks - Burly and Skid-made me their (link-reveal: \"runner\")[(show: ?b27)]. I would retrieve various ingredients and foods needed for them to prepare their battered foods.]]\n\n|b27)[$t[I had never been allowed to the back of the Bar before, but my abilities impressed them enough to let me venture deeper into the Bar. To the place where all produce spent its last days before being consumed by the masses.\n\n(link-reveal: \"I didn\u2019t like it much back there\")[(show: ?b28)]. To me it was a whole other world; one that was barren and cold. ]]\n\n|b28)[$t[I developed many scenarios in which I would be trapped within the Bar forever: (set: $myVar to \"Locked inside the freezer.\")<tw-link class='cyclingLink' data-cycling-texts='[\"Locked inside the freezer.\", \"Crate falls, crushing me.\", \"Getting lost amongst the junk.\"]' onclick='clickCyclingLink(this, \"$myVar\");'>$myVar</tw-link> \n\nThe most dreadful part of the back was the lonely (link-reveal: \"storage closet\")[(show: ?b29)].]]\n\n|b29)[$t[It sat atop a narrow wooden staircase- the kind that looked unfinished. Never painted, never stained. Just white pine, pale and old. The door itself was just as austere.\n\nNo one really went to the storage closet. There was only one time in my childhood that I can recall where I saw that door (link-reveal: \"open\")[(show: ?b30)].]]\n\n|b30)[$t[Burly and Skid sent me to (link-reveal: \"procure\")[(show: ?b31)] some provisions. What they were exactly means little and the trip from the kitchen to the back means even less.]]\n\n|b31)[$t[The back was guarded by swinging red doors; each one held a single word, (link-reveal: \"IN and OUT\")[(show: ?b32)], printed in bold black paint on either side.]]\n\n|b32)[$t[Pushing past the IN door I was met with a wave of cold air. Much colder than the rest of the Bar, it rivaled even the ice maker. \n\nThe air was stagnant, it smelt of (link-reveal: \"cold meat\")[(show: ?b33)] with a hint of sourness to it. Thankfully the stench was far away, like the noise of the Bar out front.]]\n\n|b33)[$t[The back was not dressed up like it was out front with decorated walls and warm light. No the back was bare, all concrete and harsh light. I felt like I was intruding everytime I entered, like I had walked in on someone half (link-reveal: \"naked\")[(show: ?b34)].]]\n\n|b34)[$t[Crates were stacked to the roof all around me, forcing me to weave my way further into the back. I followed the hum of the large (link-reveal: \"walk in freezer\")[(show: ?b35)]- my destination.]]\n\n|b35)[$t[Something scraped its feet against the cold hard floor.\n\n(live:3s)[$t[(link-reveal: \"I stopped\")[(show: ?b36)].(stop:)]]]]\n\n|b36)[$t[Scared. I hid behind a stack of milk crates. Their alternating colours of black to blue hid me well. \n\nA voice unrecognizable to me twisted and contorted into an uncomfortable jumble of words, \u201c(text-style: \"mirror\")[(link-reveal: \"Break the glass. Break the Bar.\")[(show: ?b37)]]\u201d]]\n\n|b37)[$t[The words crept between crates and boxes until they came to a stop [[in front of me]].]]\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "in front of me",
+          "destination": {
+            "name": "in front of me",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "my mother",
+      "text": "(set: $t to (transition: \"dissolve\"))\nMum and dad (link-reveal: \"worked all the time\")[(show: ?work)]. \n\n|work)[$t[Well before I was even a thought, my father secured a steady position at the local steel plant, my mum at the Bar.\n\nThey both met in the big city with its smooth concrete walls and glass. I don\u2019t know what they did there and I don\u2019t know why they left the city life behind for these new jobs, but I do know that (link-reveal: \"I came as a surprise\")[(show: ?surprise)] not long thereafter.]]\n\n|surprise)[$t[While my mother was always energetic, willing to take on any adventure, she displayed a sort of (link-reveal: \"calm\")[(show: ?calm)] that helped center others in all the chaos- it\u2019s what my father loved about her.]]\n\n|calm)[$t[He says I have the same stillness; that it helped him all those years ago when my mother slowly (link-reveal: \"transformed\")[(show: ?transform)] into a stranger. When she made her final descent into oblivion.]]\n\n|transform)[$t[Apparently they were happy before me. They never said this themselves, however, I could tell by the few tender moments they\u2019d share with me.\n\nThere is one moment in particular that I can recall with complete clarity: it was the time they (link-reveal: \"taught me to dance\")[(show: ?dance)].]]\n\n|dance)[$t[------------------------\n//(link-reveal: \"I stand on my mothers feet\")[(show: ?feet)] while she holds my hands. A plush rug of soft ambers and deep blues cushions her steps.//]]\n\n|feet)[$t[//In the background, the record plays (link-reveal: \"a soulful tune\")[(show: ?tune)]. I don\u2019t know the song well, but I sing along anyways.\n\nThe melody stays inside of me, becomes part of me.//]]\n\n|tune)[$t[//My feet follow hers as we travel across the old rug. (link-reveal: \"Music shapes the way we dance\")[(show: ?music)]. At first  we sway like sailors drunk on our own euphoria. Then the song builds. Rises fast. We soar. Our movements are loud, sending us from one corner of the room to the next;  we bathe in the warmth of our love for one another.//]]\n\n|music)[$t[//I smile up at her and she (link-reveal: \"smiles back\")[(show: ?smiles)]; the creases around her eyes don't age her.//]]\n\n|smiles)[$t[//The rug is soft on my feet as she spins me with one hand. (link-reveal: \"I spin and spin and spin\")[(show: ?spin)]. Until I start to tumble.//]]\n\n|spin)[$t[//My father swoops in to pick me up and I giggle the whole way. He sways with me in his arms as (link-reveal: \"we watch mum dance\")[(show: ?watch)].//]]\n\n|watch)[$t[//Her curly hair flares from her shoulders in all directions. The light glances off every strand in the most beautiful way. (link-reveal: \"She is more vibrant than she ever will be again\")[(show: ?vibe)].//\n---------------------------------------------------------------]]\n|vibe)[$t[The glass could never make her shine so bright.\n\nThat was how my father wanted me to remember her. But I\u2019ve never been able to ignore what (link-reveal: \"I know to be true\")[(show: ?know)].]]\n\n|know)[$t[Sometime later mum started taking more shifts. Together we would make the short trip to the Bar for (link-reveal: \"opening\")[(show: ?open)].]]\n\n|open)[$t[I didn\u2019t like it there in the morning. The Bar was empty and dark. At my back I could feel (link-reveal: \"cold fingers claw at me\")[(show: ?claw)]; like they wanted to drag me deeper into the old building. My mother though, she loved it. Said it was the quiet before the storm. ]]\n\n|claw)[$t[For me, it was uncomfortable at best. While mum would start the day by going to (link-reveal: \"the storage room in the back\")[(show: ?storage)], I would stand at the front door where some light could still be found.]]\n\n|storage)[$t[Venturing further would have meant me coming face to face with the Bar itself. So I stayed vigilant, and (link-reveal: \"watched the hanging glass\")[(show: ?g1)] above the counter. If I were to let my guard down it would catch me by surprise.]]\n\n|g1)[$t[Should I break away from the light (link-reveal: \"I felt something terrible would happen\")[(show: ?g2)].]]\n\n|g2)[$t[In my minds eye I could see a shadowed being sitting in the darkest corner of the room. \n\n(link-reveal: \"It would unfold itself and crawl under each table I passed\")[(show: ?g3)]. \n\nIts joints popping as it moved, sounding like crushed glass; nails made of long shards glittered in the dark, scratching at my ankles.]]\n\n|g3)[$t[I would pretend it was not there, like I could not hear its shuffling or could not (link-reveal: \" smell its rot as it stalked me\")[(show: ?g4)]. It wanted to drive me to the back of the Bar, drive me to places I was not yet allowed to see.]]\n\n|g4)[$t[So I watched the glass and (link-reveal: \"it watched me\")[(show: ?g5)].]]\n\n|g5)[$t[Row by row the lights would flicker on and (link-reveal: \"the Bar would come to life\")[(show: ?g6)] with just the two of us inside. \n\nThe large industrial vents over head would cough and growl until all the stale air had be pushed out. All the while ice would tumble from the ice maker with a loud thunk.]]\n\n|g6)[$t[Mum would prep the Bar and I would (link-reveal: \"unstack the chairs\")[(show: ?g7)], putting them in their proper place. Once all was in order we would set to polishing the glass.]]\n\n|g7)[$t[She taught me how to do it so that I would leave no marks once finished; so the light could catch them and make them (link-reveal: \"sparkle\")[(show: ?g8)].]]\n\n|g8)[$t[Mum always said that we couldn\u2019t depend on the washer to make them shine. Even once clean there were always little imperfections, (link-reveal: \"that\u2019s why we were there\")[(show: ?g9)], to make sure all could enjoy their crystalline beauty.]]\n\n|g9)[$t[I did as she asked with a level of pride. It made me proud to see my mother work so hard. To watch her (link-reveal: \"strong hands\")[(show: ?g10)] dance around the glass and press the soft cloth to its surface in such an expert way, it made me admire her work all the more.]]\n\n|g10)[$t[Midday was the most boring part of the day. There was little to do besides clean the glass. To occupy myself, I would venture to the (link-reveal: \"pool tables\")[(show: ?g11)].]]\n\n|g11)[$t[There I would lay out the billiard balls in a perfect triangle, always saving the cue ball for myself. Being much shorter than the cues I would use the heavy white ball to knock the other apart instead. This would occupy me for hours, but eventually it became far too monotonous and I would (link-reveal: \"return to my mothers side\")[(show: ?g12)].]]\n\n|g12)[$t[More often than not I would find her polishing, then repolishing the glass.\n\nHere and there the regulars would trickle in. Their voices would start ridged and taciturn, but by dinnertime their voices would slide and flow like a river current that (link-reveal: \"always filled their cup\")[(show: ?g13)].]]\n\n|g13)[$t[Night was when the Bar really came to life, though I only caught glimpses of this as a child. My mother would always (link-reveal: \"send me home\")[(show: ?g14)] by the time things got interesting.]]\n\n|g14)[$t[(link-reveal: \"Dad watched me\")[(show: ?g15)] on those nights, until he couldn\u2019t anymore.]]\n\n|g15)[$t[On more than one occasion I heard him ask mum when she would be home again. I think he knew I missed her. \n\nTheir (link-reveal: \"arguments\")[(show: ?g16)] grew tired, always starting the same way.]]\n\n|g16)[$t[My father would ask, \u201c(link-reveal: \"Are you ever going to be home\")[(show: ?g17)]?\u201d]]\n\n|g17)[$t[\u201c(link-reveal: \"I\u2019m home now\")[(show: ?g18)],\u201d she\u2019d say with a smile; hoping the conversation would end there.\n\nThere was one time it didn't.]]\n\n|g18)[$t[His tone took a confrontational turn, \u201c(link-reveal: \"That\u2019s not what I mean and you know it\")[(show: ?g19)].\u201d]]\n\n|g19)[$t[She matched his tone with an air of exasperation, \u201cWe agreed I\u2019d work too. I won't stay here for nothing. I\u2019m good at what I do, (link-reveal: \"the Bar needs me\")[(show: ?g20)].\u201d]]\n\n|g20)[$t[\u201c(link-reveal: \"We need you\")[(show: ?g21)].\u201d She could not hear the plea in his voice. She ignored how hard his words became.]]\n\n|g21)[$t[Instead (link-reveal: \"she stared through him\")[(show: ?g22)] without uttering a word.]]\n\n|g22)[$t[Fathers steely gaze softened, his voice sounded more unsure than usual, \u201c(link-reveal: \"What does the Bar give you that we don\u2019t\")[(show: ?g23)]?\u201d]]\n\n|g23)[$t[(link-reveal: \"Silence\")[(show: ?g24)].]]\n\n|g24)[$t[He waited. It felt as though the minutes became hours, then days, even months before she spoke again, \u201c(link-reveal: \"There will be no one to clean the glass without me\")[(show: ?g25)].\u201d]]\n\n|g25)[$t[I can still see the pained look in his hazel eyes as he walked out the front door. Father didn\u2019t understand the importance of such a simple task. In truth I didn\u2019t either, but knowing what I know now, I think she was trying to protect us. What we mistook for love was actually an acute fear of the unknown.\n\nUnable to reach a peaceful resolution (link-reveal: \"my father started working nights\")[(show: ?g26)] too.]]\n\n|g26)[$t[The more hours she took, the more nights dad worked. So she was forced to take me with her.\n\n(link-reveal: \"It upset my mum\")[(show: ?g27)].]]\n\n|g27)[$t[For a long time I didn\u2019t know why. \n\nIt wasn\u2019t until many months later, when I saw a young woman climb out of his car on a crooked side street, that I would (link-reveal: \"understand\")[(show: ?g28)]. At least I thought I did.]]\n\n|g28)[$t[At some point I stopped going with her to work. Or I should say she stopped going with me. (link-reveal: \"Mum would leave\")[(show: ?g29)] without so much as a goodbye. She was always eager to get to the Bar, so I was left alone in the house.]]\n\n|g29)[$t[Dad still worked nights, but he would eventually make it home. Yet her hours continued to increase, to the point that she left before the sun had a chance to rise, only returning well after it had set.\n\nTo her, (link-reveal: \"there was no one else who could do her work\")[(show: ?g30)].]]\n\n|g30)[$t[It was during this time that I noticed her grim metamorphosis. Mums ability to talk or carry a conversation [[withered away]].]]\n\n\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "withered away",
+          "destination": {
+            "name": "withered away",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "withered away",
+      "text": "(set: $t to (transition: \"dissolve\"))\nWhen she arrived home from the Bar, she did so silently. (link-reveal: \"My mother was a ghost\")[(show: ?w1)] in our home who drifted in and out at the late hours of the evening. \n\nI would catch glimpses of her tired eyes, rimmed with dark circles.\n\n|w1)[$t[My father told me she came home for lunch, but (link-reveal: \"I never saw her\")[(show: ?w2)], as I was stuck learning the difference between \u2018there\u2019, \u2018their\u2019, and \u2018they\u2019re\u2019 in a stuffy and entirely too small classroom. ]]\n\n|w2)[$t[When I would ask my father about her strange behaviour he would say little. Often grunting and changing the subject while walking to the backyard. The springs on the screen door became a (link-reveal: \"familiar sound\")[(show: ?w3)] then.]]\n\n|w3)[$t[This didn\u2019t deter me though. I would ask him questions, hoping that one day (link-reveal: \"he would have an answer\")[(show: ?w4)]. \n\nLike other children I once believed that my parents had the answers to the universe. No answer was beyond their infinite reach. If I asked enough he would, one day, impart his wisdom on me; how naive I was.  ]]\n\n|w4)[$t[Out of all my questions there was (link-reveal: \"only one\")[(show: ?w5)] that ever caught his attention. I would not be until many years later when his dark hair had turned to silver that he would remind me of it.]]\n\n|w5)[$t[His words fell like autumn leaves as he spoke, they were brittle with a crunch at the end. \n\nAccording to my father I had just arrived home from school, soaked to the bone, when I asked, \u201c(link-reveal: \"If mum wipes away all the dirt, will she come home\")[(show: ?w6)]?\u201d]]\n\n|w6)[$t[\u201c(link-reveal: \"The dirt\")[(show: ?w7)]?\u201d]]\n\n|w7)[$t[\u201c(link-reveal: \"On the glass, that is why she cleans it right\")[(show: ?w8)]?\u201d]]\n\n|w8)[$t[\u201c(link-reveal: \"I dont know\")[(show: ?w9)].\u201d]]\n\n|w9)[$t[\u201c(link-reveal: \"I do. Maybe if we help her polish the glass she\u2019ll come home\")[(show: ?w10)]!\u201d]]\n\n|w10)[$t[Our conversation hung as a blurred photo in my mind. A snapshot in time before things took a turn for the worst. If I concentrated hard enough certain aspects of the picture would (link-reveal: \"come into focus\")[(show: ?w11)].]]\n\n|w11)[$t[However, little effort was required to remind myself what followed our talk that wet spring afternoon.\n\n(link-reveal: \"They fought that night\")[(show: ?w12)].]]\n\n|w12)[$t[Worse than before. All the pent-up energy was released at once. (link-reveal: \"I can see it still\")[(show: ?w13)].]]\n\n|w13)[$t[------------------------ \n//My father\u2019s voice does not tremble as he demands my mother\u2019s attention. She will not give it. Mother takes his words and throws them back. They hit him hard. (link-reveal: \"But he does not go down\")[(show: ?w14)].//]]\n\n|w14)[$t[//Father returns fire. His words leave her looking like she\u2019s been smacked.  \n\n(link-reveal: \"They war with one another\")[(show: ?w15)].//]]\n\n|w15)[$t[//She snarls, he hollers. Together their words became one harsh mess of hard consonants and short syllables. It builds. Louder. Rises to a fever pitch, becoming an erratic song that shakes the quiet street; it carries to the Bar and it listens to their (link-reveal: \"miserable melody\")[(show: ?w16)].//\n--------------------------------]]\n|w16)[$t[(link-reveal: \"We could not dance to that song\")[(show: ?w17)].]]\n\n|w17)[$t[It felt like months before I got to see her again and I grew jealous of the Bar.\n\nDetermined to see her, and driven by an intense longing for my mothers affection, I stayed up and waited for her to come home. Perched at the top of the step I stayed (link-reveal: \"watching the door\")[(show: ?w18)]. ]]\n\n|w18)[$t[There I counted the hours. At some point between the neighbours dog barking and the sun rising my mother returned home. \n\n(link-reveal: \"What I saw was not the mother I knew\")[(show: ?w19)]. ]]\n\n|w19)[$t[I had always figured she left me with my father because she couldn\u2019t look at him. Now I think that it was he who could not look at her. \n\nEverything about her seemed (link-reveal: \"longer\")[(show: ?w20)].]]\n\n|w20)[$t[Her fingers, arms, neck all extended further than they ever should have. Her curly hair had lost its bounce; skin grey and dry. The strong hands I admired so much looked bony and brittle- they were worn, covered in blisters. \n\nShe stood there, unmoving. (link-reveal: \"Slowly I approached her\")[(show: ?w21)].]]\n\n|w21)[$t[Mum looked at me like I was a stranger, it took a minute before I saw that (link-reveal: \"twinkle in her eye\")[(show: ?w22)]; she recognized me.]]\n\n|w22)[$t[I wrapped myself around her too thin waist and hugged her.\n\nHer lips cracked as she smiled, bending down to meet me. \n\n\u201c(link-reveal: \"What are you doing up child\")[(show: ?w23)]?\u201d]]\n\n|w23)[$t[More than anything I wanted a reason for why she would leave me for the Bar, \u201c(link-reveal: \"Why do you leave me\")[(show: ?w24)]?\u201d]]\n\n|w24)[$t[\u201c(link-reveal: \"I must work child\")[(show: ?w25)].\u201d]]\n\n|w25)[$t[Her voice was like sandpaper grating against every word, \u201c(link-reveal: \"The glass won\u2019t polish itself child\")[(show: ?w26)].\u201d]]\n\n|w26)[$t[\u201c(link-reveal: \"Can\u2019t someone else do that\")[(show: ?w27)]?\u201d She looked at me then like I was crazy.]]\n\n|w27)[$t[\u201c(link-reveal: \"The glass must shine child\")[(show: ?w28)].\u201d]]\n\n|w28)[$t[That was the last night I saw her. \n\n(live:2s)[$t[She left.(stop:)]] (live:3s)[$t[No note.(stop:)]] (live:4s)[$t[No words.(stop:)]] (live:5s)[$t[(link-reveal: \"Nothing\")[(show: ?w29)].(stop:)]]]]\n\n|w29)[$t[My father washed his hands of her, tried to forget the hole she left. He said we lost her to drink. I knew, even then, that it wasn\u2019t true; he did too. \n\n(link-reveal: \"Dad stopped working nights then\")[(show: ?w30)].\n\n(if: (history:) contains \"Bar\")[|w30)[Needless to say, [[my experiences]] working at the Bar greatly differed from that of my mothers.]]\n(else:)[|w30)[$t[Even after everything it did to my mother the [[Bar]] still felt like home- familiar with a hint of dread.]\n]]\n\n]]\n\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "my experiences",
+          "destination": {
+            "name": "my experiences",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Bar",
+          "destination": {
+            "name": "Bar",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "my experiences",
+      "text": "(set: $t to (transition: \"dissolve\"))\nI was fresh out of college and broke by the time I returned to the Bar. After a small debate with myself I decided to come (link-reveal: \"home\")[(show: ?m1)], rebuild and breathe.\n\n|m1)[$t[My father welcomed me with an (link-reveal: \"open door and empty house\")[(show: ?m2)].]]\n \n|m2)[$t[I saw him little then and a week later (live:3s)[$t[(link-reveal: \"he died\")[(show: ?m3)].(stop:)]]]]\n \n|m3)[$t[Time moved slowly as I drank and screwed my way through endless months. The dullness of it all was only broken up by the occasional get together with old friends; where we would repeat my aforementioned daily regimen. \n\nAt some point I decided it was time to pull (link-reveal: \"myself together\")[(show: ?m4)].]]\n \n|m4)[$t[I cleaned my childhood home- all that was left to me in the wake of my fathers passing- and learned to do my taxes.\n\nIt was a good start but I was still lagging behind on my monthly bills. With no family and in need of a job I stumbled across an ad for (link-reveal: \"the Bar\")[(show: ?m5)].]]\n\n|m5)[$t[\u2018(link-reveal: \"Help Wanted\")[(show: ?m6)].\u2019]]\n\n|m6)[$t[That sign looked like a cry for help. I had no intention of working there initially - too afraid of being (link-reveal: \"stuck\")[(show: ?m7)] in there like my mother was.]]\n \n|m7)[$t[I reserved myself to looking for other jobs. For several months I applied to various types of jobs, hoping something would stick.\n\nMy attempts were met with so many (link-reveal: \"failures\")[(show: ?m8)] I forgot what it was like to be successful. It made me numb and in my haze of numbness I forgot all my fears of the Bar.]]\n \n|m8)[$t[Desperation and curiosity brought me back to the Bar. The sign still hung.\n\n\u2018(link-reveal: \"Help Wanted\")[(show: ?m9)].\u2019]]\n \n|m9)[$t[Those two words looked less like a cry for help and more like an opportunity.\n\nDespite my initial reservations (link-reveal: \"I applied\")[(show: ?m10)].]]\n \n|m10)[$t[The Bar had a (link-reveal: \"face lift\")[(show: ?m11)] in my absence.]]\n\n|m11)[$t[The outside was now sleek, the red brick painted to fit with all the new shops that lined the street; its lettering lean and black. \n\nInside the red walls had been painted a shade of beige or taupe or some lighter variation of brown; and the grey tiles were gone making way for a dark laminate, meant to make the Bar retain its roguish charm while bring it into the new age. \n\n(link-reveal: \"I didn\u2019t like it\")[(show: ?m12)].]]\n \n|m12)[$t[Despite all the changes I was drawn back to the Bar, able to find the place it had made for me within its walls.\n\nI took comfort in the fact that the atmosphere had not changed. It was like the Bar welcomed me back. It missed me, and in truth, (link-reveal: \"I missed it too\")[(show: ?m13)].]]\n \n|m13)[$t[So did Burly, when I showed up for my first day he greeted me like he had when I was a child. \n\nStill large, (link-reveal: \"Burly\")[(show: ?m14)], had aged some. His black beard was now salt and pepper, the lines around his eyes had deepened.]]\n \n|m14)[$t[After my mother disappeared Burly left the kitchen for the bar, and had remained bartender, or (link-reveal: \"bar chef\")[(show: ?m15)] as he liked to call it, ever since.]]\n \n|m15)[$t[Burly taught me everything my mother failed to before she left. He showed me how to make the perfect Bloody Mary. \n\nMy first job was to do just that. If I was successful in my creation of the perfect Bloody Mary then I could leave early, if not then I had to down the butchered drink myself.\n\n(link-reveal: \"I failed\")[(show: ?m16)].]]\n \n|m16)[$t[Drinking my own vile concoction felt strange. I had been too generous with the alcohol, so much so that I could feel the heat rush to my face; leaving me on the verge of bliss and despair.\n\n I had never seen mum drink on job, and doing so felt like I was breaking some (link-reveal: \"unwritten rule\")[(show: ?m17)].]]\n \n|m17)[$t[The rest of the night I poured nothing but beer and chatted up a storm with every person I served. Burly busied himself polishing the glass, letting me do the talking as (link-reveal: \"he didn\u2019t like the chatter\")[(show: ?m18)] himself.]]\n \n|m18)[$t[It didn\u2019t take long before I mastered the art of mixology. The Bar was lively and I felt alive with it.\n\nThe more drinks I poured and customers I brought in, the brighter the Bar grew. In return the glass shone brightly for me. \n\nIt was in those rare moments that there was no need to (link-reveal: \"polish the glass\")[(show: ?m19)].]]\n \n|m19)[$t[I worked like my mother and didn\u2019t mind, it brought me a measure of peace. Like I finally had a purpose. \n\nMy hands became strong like my mothers were and I told jokes, to patrons new and old, that I know my father would have liked.\n\nTogether (link-reveal: \"Burly and I\")[(show: ?m20)] fell into a steady rhythm that suited us both. Burly took care of the Bar, saving me from ever having to go to the back; while I took care of the people it temporarily housed.]]\n \n|m20)[$t[For over a year I was at peace with my parents presence within me. I was calm like my mother and spoke with all my fathers charm. I learned how to use this to my advantage, earning me a better reputation and (link-reveal: \"better tips\")[(show: ?m21)].]]\n \n|m21)[$t[Burly didn\u2019t seem very interested in making money like me. Like my mother he was content to do his job and nothing more. \n\nHe started to worry me with his silence, but on more than one occasion he assured me that he was fine. I didn\u2019t believe him. \n\nWhile Burly was still the large man I remembered he had gained deep circles around his eyes, making him look perpetually tired. His meaty hands had become knobby - (link-reveal: \"nails splintered and torn\")[(show: ?m22)].]]\n \n|m22)[$t[I thought that by taking more shifts and offering him time off things would get better. Instead I was met with resistance, he had no intention of taking any time off- of leaving the Bar.\n\nSo together we stayed cleaning up long after everyone had gone home. I stayed to keep him company, but he always kicked me out before leaving himself. \n\nSometimes it felt like all he wanted was to be (link-reveal: \"alone with the Bar\")[(show: ?m23)].]]\n\n|m23)[$t[Part of me couldn\u2019t blame him. The way the glass would (link-reveal: \"shine\")[(show: ?m24)] made everything infinitely more interesting. In the glass true colour was shown, the world around you became more vibrant-  all else was drab in comparison. \n\nI knew Burly felt this too because I would catch him staring into the glass for, at first minutes, then hours at a time.]]\n\n|m24)[$t[Realizing that my effort was futile I offered my help to speed up his return home. I suggested that I help  polish the glass; as it was what kept him so late. Again he resisted, but I proved to be the more stubborn. \n\nIgnoring his protests I simply (link-reveal: \"grabbed the glass\")[(show: ?m25)].]]\n\n|m25)[$t[We worked together every night after that: polishing the glass.\n\nOnce the (link-reveal: \"glass sparkled\")[(show: ?m26)] where it hung we were allowed to leave.]]\n\n|m26)[$t[The simple action awoke a sense of satisfaction I had not known since my mother last held me. I was drawn to it like a drug; Burly saw this in me and tried to stop it. \n\nI love him for that, but (link-reveal: \"he failed\")[(show: ?m27)].]]\n\n|m27)[$t[Consequently, most of my time afterwards was spent with the glass: (set: $myVar to \"serving.\")<tw-link class='cyclingLink' data-cycling-texts='[\"serving.\", \"rinsing.\", \"cleaning.\"]' onclick='clickCyclingLink(this, \"$myVar\");'>$myVar</tw-link> \n\nThe only break I received was when the old faithfuls from my childhood came to visit. They all recognized me; thought I was a alternate version of my mother. As if she hopped in a time machine and emerged twenty years later. (link-reveal: \"If only\")[(show: ?m28)].]]\n\n|m28)[$t[The man with a crooked nose would come to see me, though he was missing his foul looking wife. No longer as large as once was, his nose looked much more out of place on his thin, (link-reveal: \"frail face\")[(show: ?m29)].]]\n\n|m29)[$t[He still carried that same spark as before, but his eyes had grown sad. The crooked nose man was much softer spoken as he told me of his new adventures to warmer climates. \n\nNow, I too had stories to share and I did just that; he listened, almost reverent, as (link-reveal: \"I spoke\")[(show: ?m30)].]]\n\n|m30)[$t[Conversations like those made me feel as if I was coming up for a breath of fresh air and granted me a much needed reprieve from my repetitive task.\n\nUnfortunately, I could not shake my mother's shadow. Those who liked me as a child, loved my mother that much more. They would ask where she was, \u201c(link-reveal: \"What had become of such a beautiful soul\")[(show: ?m31)]?\u201d]]\n\n|m31)[$t[(link-reveal: \"I\u2019d lie\")[(show: ?m32)]. Tell them the stories I made for myself when she left. They ate it up like the gluttons they were.]]\n\n|m32)[$t[Everytime my mother was mentioned I\u2019d catch a glimpse of her in the hanging glass. [[A flash of her curls]]. I would spot her hands mirroring my own. The glass held her image perfectly in their crystal surface.]]\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "A flash of her curls",
+          "destination": {
+            "name": "A flash of her curls",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "in front of me",
+      "text": "(set: $t to (transition: \"dissolve\"))\nAt last I could see it was (link-reveal: \"my mother\")[(show: ?b1)]. \n\n|b1)[$t[She shuffled from box to box muttering to herself. \n\nA part of me knew not to reveal myself to my mother when she was in such a state. \n\nHer once bright eyes held deep circles beneath them, her skin more pale than what it was at the start of her shift. She was alien to me, the (link-reveal: \"curls of her hair\")[(show: ?b2)] being the only sure sign that she was indeed my mother.]]\n\n|b2)[$t[A brief moment passed before she pulled a dirty old glass from a moldy cardboard box. The glass had the figure of a (link-reveal: \"boot\")[(show: ?b3)]- it was ugly.]]\n\n|b3)[$t[Holding it by its thick handle, mother (link-reveal: \"polished the glass\")[(show: ?b4)].]]\n\n|b4)[$t[I watched as she ascended the plain pine stairs to the (link-reveal: \"storage room\")[(show: ?b5)], glass in hand.]]\n\n|b5)[$t[Her words grew thick and painful, \u201c(text-style: \"mirror\")[(link-reveal: \"Break the glass. Break the Bar.\")[(show: ?b6)]]\u201d]]\n\n|b6)[$t[(link-reveal: \"She opened the door\")[(show: ?b7)].]]\n\n|b7)[$t[Before her stood a still blackness. Cold damp air rushed down the stairs,bringing with it the smell of rot. In the quiet I could make out more shuffling and then, (live:8s)[$t[(link-reveal: \"the clinking of glass\")[(show: ?b8)].(stop:)]]]]\n\n|b8)[$t[I sensed those (link-reveal: \"bony fingers\")[(show: ?b9)] once more, but they were not on me. They were on my mother, slowly tugging her into the Bar.]]\n\n|b9)[$t[My mother (link-reveal: \"entered\")[(show: ?b10)] the storage room.]]\n\n|b10)[$t[(link-reveal: \"The door closed behind her\")[(show: ?b11)].]]\n\n|b11)[$t[I stayed rooted in place, (link-reveal: \"staring at the door\")[(show: ?b12)]. I didn\u2019t dare move for fear of letting the Bar know I was still there.]]\n\n|b12)[$t[I stood there for too long waiting for my mothers return. \n\nI can\u2019t be sure how long anymore, it was many years ago. Burly was the one who found me hiding behind the crates. To this day I can clearly remember the look of worry etched in his face as he followed my gaze to the (link-reveal: \"storage door\")[(show: ?b13)].]]\n\n|b13)[$t[He promptly ushered me back to the front. There we resumed our usual jobs, not a word was said from either of us. \n\n(link-reveal: \"I wanted to cry\")[(show: ?b14)].]]\n\n|b14)[$t[It was almost an hour before my mother emerged from the storage room. (link-reveal: \"No glass in hand\")[(show: ?b15)].]]\n\n|b15)[$t[(link-reveal: \"Burly and Skid\")[(show: ?b16)] didn\u2019t ask me to be their runner anymore.\n\n(if: (history:) contains \"my mother\")[|b16)[Needless to say, [[my experiences]] working at the Bar greatly differed from when I was a child.]]\n(else:)[|b16)[$t[There were times I thought of how [[my mother]] gave too much to her work.]\n]]]]\n\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "my mother",
+            "pid": 4
+          }
+        },
+        {
+          "text": "my experiences",
+          "destination": {
+            "name": "my experiences",
+            "pid": 6
+          }
+        },
+        {
+          "text": "my mother",
+          "destination": {
+            "name": "my mother",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "A flash of her curls",
+      "text": "(set: $t to (transition: \"dissolve\"))\nBroken nails would scrape at my ankles, the smell of cold meat choked me.\n\n(live: 3s)[$t[(link-reveal: \"One beat\")[(show: ?a1)](stop:)].]\n\n|a1)[$t[Scraping.\n\n(live: 2s)[$t[(link-reveal: \"Two\")[(show: ?a2)](stop:)].]]]\n\n|a2)[$t[Crushed glass.\n\n(live: 1s)[$t[(link-reveal: \"Polish the glass\")[(show: ?a3)](stop:)].]]]\n\n|a3)[$t[That\u2019s what I did, to avoid it all. My anxiety, the sense of dread and fear. Polishing made it better. \n\nBurly did the same, and I wondered what he saw in the (link-reveal: \"reflective surface\")[(show: ?a4)].]]\n\n|a4)[$t[Like him I no longer wanted to talk, as a result I started losing those tips I worked so hard for. \n\nI stuck to my job, and did it well. Pour, serve, clean repeat. The customers, the staff, my friends, they didn\u2019t seem to matter anymore.\n\nI polished so hard (link-reveal: \"my hands blistered\")[(show: ?a5)].]]\n\n|a5)[$t[One time I did this for so long I found myself standing in the empty Bar at 3am. My hours were lost. Burly had even left me. He knew, he must have know what was happening. (link-reveal: \"What the Bar was capable of\")[(show: ?a6)].\n\n I think my father knew too. There were many  times I wished he was around; maybe we could have talked honestly.]]\n\n|a6)[$t[Time scattered around me. In every direction I was pulled, but I went in none. Instead I stayed cemented behind the Bar.\n\nThis tug and pull happened more than once, becoming a frequent occurrence. I was altogether far too aware of what was happening to me and (link-reveal: \"tried to stop it\")[(show: ?a7)].]]\n\n|a7)[$t[I dated; actually taking the time to know the people I brought into my life. I had hoped that by having other people in my life I would not yearn for the Bar. At times dating was gratifying, but most of the time unfulfilling, either on my end or theirs.\n\n(link-reveal: \"People could only consume so much of my time\")[(show: ?a8)].]]\n\n|a8)[$t[As my thoughts began to wander back to work, I pushed myself to go back to old hobbies. They distracted me for a little while longer. TV, books, sports, music, you name it. None of it held any interest anymore.\n\nThe reintroduction of my past hobbies occupied me for a few weeks before I decided that what I needed was to (link-reveal: \"shift my mentality\")[(show: ?a9)].]]\n\n|a9)[$t[So I forgot everything and let time scatter me. I travelled with its wild currents, rather than suffocate myself with plans to fill my time. Instead of railing against the passage of time I allowed myself to move within it. \n\nI forced myself to accept the disappointments life brought rather than drown in them, and it worked- (link-reveal: \"for a bit\")[(show: ?a10)].]]\n\n|a10)[$t[Rather than sever my connection to the Bar it only served to temporarily weaken its hold on me.\n\nEverything I did felt like a waste when (link-reveal: \"I should have been working\")[(show: ?a11)].]]\n\n|a11)[$t[In my restlessness I would walk. At first just a block, then the entire neighborhood. My legs would carry me down grey worn down sidewalks. I\u2019d step on every crack.\n\nThe walks grew longer. So did my legs. (link-reveal: \"More time was lost\")[(show: ?a12)].]]\n\n|a12)[$t[While I was not physically at the Bar, my mind was there. My evening strolls became aimless, but always brought me back to my true home: (link-reveal: \"the Bar\")[(show: ?a13)].]]\n\n|a13)[$t[Standing there we would stare at one another. It\u2019s painted face illuminated by the weary streetlights.\n\n(link-reveal: \"I relented\")[(show: ?a14)]. Gave up on people and my interests. Together Burly and I stayed in the Bar. When nothing else was left to do we polished the glass.]]\n\n|a14)[$t[There was a tension inside me, but I buried it deep.\n\nCleaning didn\u2019t help anymore. My eyes always felt strained, shoulders hung up by my ears. The pressure kept building within. \n\nIn my torment I became irritable. My anger would grow and rise like my fathers, but there was no release. [[No final crash]].]]\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "No final crash",
+          "destination": {
+            "name": "No final crash",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "No final crash",
+      "text": "(set: $t to (transition: \"dissolve\"))\nNow I sit here, at the Bar. It\u2019s a weeknight and quiet. The throbbing in my head threatens to make my stomach lurch.\n\nIt has been almost a year since I noted the start of (link-reveal: \"my own arduous transformation\")[(show: ?t1)].\n\n|t1)[$t[I wipe the counter, as a retired pool builder educates me on the differences between traditional chlorine pools and salt water pools.\n\nI stare at the retired builders long earlobes and wonder how far they can (link-reveal: \"stretch\")[(show: ?t2)].]]\n\n|t2)[$t[He is half way through is speech on how corrosive salt pools are when Burly stalks up to the counter and hangs the glass that he\u2019s been cleaning. \n\nWhen Burly speaks he sounds far away, \u201c(link-reveal: \"I\u2019m heading to the back, need to restock\")[(show: ?t3)].\u201d]]\n\n|t3)[$t[The retired builder doesn\u2019t like the interruption and shakes his head. His earlobe flap nearly hitting is own neck.\n\nI look to the bar. It is full with tall skinny bottles of various colours, \u201c(link-reveal: \"Restock? You did that this morning\")[(show: ?t4)].\u201d]]\n\n|t4)[$t[He looks to the same place as me, but doesn\u2019t seem to see what I see: a full bar.\n\n\u201c(link-reveal: \"I\u2019m heading to the back, need to restock\")[(show: ?t5)],\u201d he repeats then turns and walks away.]]\n\n|t5)[$t[I watch Burly as his enormous back disappears behind the painted (link-reveal: \"IN door\")[(show: ?t6)].]]\n\n|t6)[$t[The retired builder chatters on, I nod absently, more concerned about my friend. \n\nI stand guard at the front (link-reveal: \"awaiting Burly\u2019s return\")[(show: ?t7)], like I had done with my mother so many times before. \n\nThe builder is kind and keeps me company.]]\n\n|t7)[$t[I keep cleaning. The counter first then the (link-reveal: \"glass\")[(show: ?t8)].]]\n\n|t8)[$t[I catch a whiff of an indistinguishable sour smell. My eyes do not leave the doors guarding the back of the Bar.\n\n(link-reveal: \"Polish the glass\")[(show: ?t9)].]]\n\n|t9)[$t[Crushed glass fills my ears.\n\n(link-reveal: \"Harder\")[(show: ?t10)].]]\n\n|t10)[$t[Wiry fingers grab my hand.\n\n(live: 3s)[$t[\u201c(link-reveal: \"Careful there, you\u2019re starting to bleed\")[(show: ?t11)].\u201d The builder is looking at me, he\u2019s holding my hand in his small frail one.(stop:)]]]]\n\n|t11)[$t[I look at my hands, they seem (link-reveal: \"too long\")[(show: ?t12)] now.]]\n\n|t12)[$t[My eyes meet his, \u201c(link-reveal: \"It\u2019s time I closed up now sir\")[(show: ?t13)].\u201d]]\n\n|t13)[$t[It takes some convincing but I manage to get the old builder to leave me at the Bar.\n\nBurly has not come back yet, it\u2019s been too long and I know what I must do. But first I, (link-reveal: \"wipe the tables\")[(show: ?t14)].]]\n\n|t14)[$t[(link-reveal: \"Stack the chairs\")[(show: ?t15)].]]\n\n|t15)[$t[(link-reveal: \"Mop the floor\")[(show: ?t16)].]]\n\n|t16)[$t[(link-reveal: \"Take out the garbage\")[(show: ?t17)].]]\n\n|t17)[$t[(link-reveal: \"Check the cash\")[(show: ?t18)].]]\n\n|t18)[$t[I waste another hour doing everything  I can to avoid going to find him. (link-reveal: \"Until there\u2019s nothing else left\")[(show: ?t19)].]]\n\n|t19)[$t[I make the short trip to the back of the Bar. I am nervous. Burly had saved me from coming back here for a year. Now I go for him.\n\n(link-reveal: \"Push open the IN door\")[(show: ?t20)].]]\n\n|t20)[$t[Once again I am greeted with the cold air of my childhood.  Unlike the last time I had been back here, I do not feel as though I\u2019ve caught the Bar off guard.\n\nIt has not changed and I take it for what it is, noting all its little imperfections. I am not embarrassed by the nakedness of the Bar, as I once was. Like two friends who have know each other for ages, (link-reveal: \"there is nothing to be ashamed of here\")[(show: ?t21)].]]\n\n|t21)[$t[The Bar has known me since I was a child, has watched me grow, learn, become who I am. It scares me to think of how much it has shaped me. \n\nI turn to those [[pale pine steps]] and the door they hold atop them.]]\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "pale pine steps",
+          "destination": {
+            "name": "pale pine steps",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "pale pine steps",
+      "text": "[[Walk up steps]]",
+      "links": [
+        {
+          "text": "Walk up steps",
+          "destination": {
+            "name": "Walk up steps",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Walk up steps",
+      "text": "(set: $t to (transition: \"dissolve\"))\n\n|t2)[(align: \"===>\")[$t[ [[The Door]]]]]\n\n\n\n\n|t1)[(align: \"=><=\")[$t[(link-reveal: \"Until I reach\")[(show: ?t2)]]]]\n\n\n\n\n\n(link-reveal: \"I go step by step\")[(show: ?t1)]\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "The Door",
+          "destination": {
+            "name": "The Door",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "The Door",
+      "text": "(set: $t to (transition: \"dissolve\"))\n(link-reveal: \"Take a deep breath\")[(show: ?t1)]\n\n|t1)[$t[(link-reveal: \"The Bar knows I\u2019m here\")[(show: ?t2)]. I am uninvited, but not unwelcome.]]\n\n|t2)[$t[[[Enter]].]]\n",
+      "links": [
+        {
+          "text": "Enter",
+          "destination": {
+            "name": "Enter",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Enter",
+      "text": "(set: $t to (transition: \"dissolve\"))\n<script>\nvar audio = document.createElement('audio');\naudio.id = 'audio-player'\naudio.controls = \"controls\"\naudio.src=\"https://gameassetlocker.yolasite.com/resources/Chimes.mp3\";\naudio.loop=false;\naudio.play();\n</script>\n(live:10s)[$t[I (link-reveal: \"stumble\")[(show: ?o1)] through darkness. Hands out I feeling my way around piles of damp boxes. (stop:)]] \n\n|o1)[$t[There is something in the [[darkness]].\n\nMaybe I should [[turn left]].\n\nOr maybe follow the boxes [[right]].\n\nThe glass is playing tricks on me, I need to [[turn back]].\n\nI look in every direction then [[follow the glass]].]]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "darkness",
+          "destination": {
+            "name": "darkness",
+            "pid": 15
+          }
+        },
+        {
+          "text": "turn left",
+          "destination": {
+            "name": "turn left",
+            "pid": 16
+          }
+        },
+        {
+          "text": "right",
+          "destination": {
+            "name": "right",
+            "pid": 17
+          }
+        },
+        {
+          "text": "turn back",
+          "destination": {
+            "name": "turn back",
+            "pid": 18
+          }
+        },
+        {
+          "text": "follow the glass",
+          "destination": {
+            "name": "follow the glass",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Something is following me.",
+      "text": "(set: $t to (transition: \"dissolve\"))\n\nThere is something waiting in the [[dark]].\n\nI follow the boxes to the [[left]].\n\nI take a sharp [[turn right]].\n\nI try to [[go back]].\n\nI look in every direction then [[follow the hanging glass]]\n\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "dark",
+          "destination": {
+            "name": "dark",
+            "pid": 25
+          }
+        },
+        {
+          "text": "left",
+          "destination": {
+            "name": "left",
+            "pid": 26
+          }
+        },
+        {
+          "text": "turn right",
+          "destination": {
+            "name": "turn right",
+            "pid": 27
+          }
+        },
+        {
+          "text": "go back",
+          "destination": {
+            "name": "go back",
+            "pid": 32
+          }
+        },
+        {
+          "text": "follow the hanging glass",
+          "destination": {
+            "name": "follow the hanging glass",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "darkness",
+      "text": "(set: $t to (transition: \"dissolve\"))\nThe pungent smell of soured cold meat pervades my senses. \n\nMaybe I should [[turn left]].\n\nOr maybe follow the boxes [[right]].\n\nThe glass is playing tricks on me, I need to [[turn back]].\n\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "turn left",
+          "destination": {
+            "name": "turn left",
+            "pid": 16
+          }
+        },
+        {
+          "text": "right",
+          "destination": {
+            "name": "right",
+            "pid": 17
+          }
+        },
+        {
+          "text": "turn back",
+          "destination": {
+            "name": "turn back",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "turn left",
+      "text": "(set: $t to (transition: \"dissolve\"))\nFingers graze my back like the wind. It is impossible there is no breeze here.\n\nThe glass is playing tricks on me, I need to [[turn back]].\n\nI look in every direction then [[follow the glass]].\n\n[[Call for Burly]]. \n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "turn back",
+          "destination": {
+            "name": "turn back",
+            "pid": 18
+          }
+        },
+        {
+          "text": "follow the glass",
+          "destination": {
+            "name": "follow the glass",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Call for Burly",
+          "destination": {
+            "name": "Call for Burly",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "right",
+      "text": "(set: $t to (transition: \"dissolve\"))\nGlass clinks behind me. \n\n[[Call for Burly]].  \n\nThe glass is playing tricks on me, I need to [[turn back]].\n\nI look in every direction then [[follow the glass]].\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "Call for Burly",
+          "destination": {
+            "name": "Call for Burly",
+            "pid": 19
+          }
+        },
+        {
+          "text": "turn back",
+          "destination": {
+            "name": "turn back",
+            "pid": 18
+          }
+        },
+        {
+          "text": "follow the glass",
+          "destination": {
+            "name": "follow the glass",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "turn back",
+      "text": "(set: $t to (transition: \"dissolve\"))\nCant see which way is out.\n\nThe door disappeared somewhere behind me. \n\nIt is long gone now. \n\nMaybe I should [[turn left]].\n\nOr maybe follow the boxes [[right]].\n\nI look in every direction then [[follow the glass]].\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "turn left",
+          "destination": {
+            "name": "turn left",
+            "pid": 16
+          }
+        },
+        {
+          "text": "right",
+          "destination": {
+            "name": "right",
+            "pid": 17
+          }
+        },
+        {
+          "text": "follow the glass",
+          "destination": {
+            "name": "follow the glass",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Call for Burly",
+      "text": "(set: $t to (transition: \"dissolve\"))\nI call his name.\n\nNothing but the soft clink of glass.\n\nThere is something in the [[darkness]].\n\nMaybe I should [[turn left]].\n\nOr maybe follow the boxes [[right]].\n\nThe glass is playing tricks on me, I need to [[turn back]].\n\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "darkness",
+          "destination": {
+            "name": "darkness",
+            "pid": 15
+          }
+        },
+        {
+          "text": "turn left",
+          "destination": {
+            "name": "turn left",
+            "pid": 16
+          }
+        },
+        {
+          "text": "right",
+          "destination": {
+            "name": "right",
+            "pid": 17
+          }
+        },
+        {
+          "text": "turn back",
+          "destination": {
+            "name": "turn back",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "They are my hands",
+      "text": "(set: $t to (transition: \"dissolve\"))\nSomething whispers in my ear, [(css: \"color: #adc4a0\")[(text-style: \"blurrier\")[\u201cI see you child.\u201d] ]]<B1|\n\n\n(link-reveal: \"Polish the Glass.\")[(replace: ?B1)[$t[(text-style: \"expand\")[\u201c[[I see you child]].\u201d] ]]] \n\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))\n",
+      "links": [
+        {
+          "text": "I see you child",
+          "destination": {
+            "name": "I see you child",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "RUN",
+      "text": "(set: $t to (transition: \"dissolve\"))(set: $counter to 16) \n(live:2s)[$t[(text-style: \"expand\")[(text-rotate:15)[\u20a9\u2c67\u0246\u2c64\u0246 \u20b3\u2c64\u0246 \u024e\u00d8\u0244 \u20b2\u00d8\u0142\u20a6\u20b2?](stop:)]]]\n\n\n\n(live:5s)[$t[(css: \"font-size: 22px\")[(text-style: \"expand\")[(text-rotate:-25)[\u0110\u00d8\u20a6'\u20ae \u2c60\u0246\u20b3V\u0246 \u20a5\u0246 \u20b5\u2c67\u0142\u2c60\u0110.](stop:)]]]]\n\n\n\n(live:9s)[$t[(css: \"font-size: 28px\")[(text-style: \"expand\")[(text-rotate:10)[\u0142'V\u0246 \u20a5\u0142\u20b4\u20b4\u0246\u0110 \u024e\u00d8\u0244 \u20b5\u2c67\u0142\u2c60\u0110.](stop:)]]]]\n\n\n\n(live:11s)[$t[(css: \"font-size: 32px\")[(text-style: \"expand\")[(text-rotate:-15)[\u20b1\u2c60\u0246\u20b3\u20b4\u0246 \u20b4\u20ae\u00d8\u20b1 \u20b5\u2c67\u0142\u2c60\u0110.](stop:)]]]]\n\n\n\n(live:13s)[$t[(css: \"font-size: 45px\")[(text-style: \"expand\")[**\u20b2\u0246\u20ae \u00d8V\u0246\u2c64 \u2c67\u0246\u2c64\u0246 \u20b5\u2c67\u0142\u2c60\u0110.**(stop:)]]]]\n\n\n(live: 1s)[\n\t(set: $counter to it - 1)\n\t(if: $counter is 0)[(go-to: \"Epilogue\")]\n\t(replace: ?amount)[$counter]\n]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Epilogue",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "I see you child",
+      "text": "(set: $t to (transition: \"dissolve\"))\nMy hands crack, ready to turn to ash.\n\n \nI hear it again,[(css: \"color: #adc4a0\")[(text-style: \"blurrier\")[\u201c\u20a9\u0246\u2c60\u20b5\u00d8\u20a5\u0246 home \u20b5\u2c67\u0142\u2c60\u0110.\u201d]]]<B2|\n\n\n(link-reveal: \"Polish the Glass.\")[(replace: ?B2)[$t[(text-style: \"expand\")[\u201c[[\u20a9\u0246\u2c60\u20b5\u00d8\u20a5\u0246 home \u20b5\u2c67\u0142\u2c60\u0110]].\u201d]  ]]] \n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))\n\n",
+      "links": [
+        {
+          "text": "\u20a9\u0246\u2c60\u20b5\u00d8\u20a5\u0246 home \u20b5\u2c67\u0142\u2c60\u0110",
+          "destination": {
+            "name": "\u20a9\u0246\u2c60\u20b5\u00d8\u20a5\u0246 home \u20b5\u2c67\u0142\u2c60\u0110",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "\u20a9\u0246\u2c60\u20b5\u00d8\u20a5\u0246 home \u20b5\u2c67\u0142\u2c60\u0110",
+      "text": "(set: $t to (transition: \"dissolve\"))\nThey begin to bleed. The **glass** turns (css: \"color: #7b564f\")[**red**].\n\n\nI smell the stench of its breath, feel it hot against my ear,[(css: \"color: #adc4a0\")[(text-style: \"blurrier\")[\u201cJ\u00d8\u0142\u20a6 \u20a5\u0246 \u20b5\u2c67\u0142\u2c60\u0110.\u201d]]]<B3|\n\n\n(link-reveal: \"Polish the Glass.\")[(replace: ?B3)[$t[(text-style: \"expand\")[\u201c[[J\u00d8\u0142\u20a6 \u20a5\u0246 \u20b5\u2c67\u0142\u2c60\u0110]].\u201d]  ]]]\n\n(enchant: \"glass\", (text-colour: #7b564f))\n(enchant: \"Glass\", (text-colour: #7b564f))\n",
+      "links": [
+        {
+          "text": "J\u00d8\u0142\u20a6 \u20a5\u0246 \u20b5\u2c67\u0142\u2c60\u0110",
+          "destination": {
+            "name": "J\u00d8\u0142\u20a6 \u20a5\u0246 \u20b5\u2c67\u0142\u2c60\u0110",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "J\u00d8\u0142\u20a6 \u20a5\u0246 \u20b5\u2c67\u0142\u2c60\u0110",
+      "text": "(set: $t to (transition: \"dissolve\"))\n[[Break the Glass.]]\n\n(enchant: \"glass\", (text-colour: #7b564f))\n(enchant: \"Glass\", (text-colour: #7b564f))\n",
+      "links": [
+        {
+          "text": "Break the Glass.",
+          "destination": {
+            "name": "Break the Glass.",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "dark",
+      "text": "(set: $t to (transition: \"dissolve\"))\nAm I going in circles? \nSomething scratches at my ankles. They are wet and they hurt.\n\nI follow the boxes to the [[left]].\n\nI take a sharp [[turn right]].\n\nI try to [[go back]].\n\n[[Call Burly]].\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "left",
+          "destination": {
+            "name": "left",
+            "pid": 26
+          }
+        },
+        {
+          "text": "turn right",
+          "destination": {
+            "name": "turn right",
+            "pid": 27
+          }
+        },
+        {
+          "text": "go back",
+          "destination": {
+            "name": "go back",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Call Burly",
+          "destination": {
+            "name": "Call Burly",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "left",
+      "text": "(set: $t to (transition: \"dissolve\"))\nWhere am I?\nI cannot breathe without choking on the smell of rot. \n\nThe glass is playing tricks on me, I need to [[go back]].\n\nI look in every direction then [[follow the hanging glass]].\n\n[[Call Burly]].\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "go back",
+          "destination": {
+            "name": "go back",
+            "pid": 32
+          }
+        },
+        {
+          "text": "follow the hanging glass",
+          "destination": {
+            "name": "follow the hanging glass",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Call Burly",
+          "destination": {
+            "name": "Call Burly",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "turn right",
+      "text": "(set: $t to (transition: \"dissolve\"))\nHow much time has passed? \nGlass crunches behind me. \n\nThere is something waiting in the [[dark]].\n\nI follow the boxes to the [[left]].\n\n[[Call Burly]].\n\nI try to [[go back]].\n\nI look in every direction then [[follow the hanging glass]]\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "dark",
+          "destination": {
+            "name": "dark",
+            "pid": 25
+          }
+        },
+        {
+          "text": "left",
+          "destination": {
+            "name": "left",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Call Burly",
+          "destination": {
+            "name": "Call Burly",
+            "pid": 29
+          }
+        },
+        {
+          "text": "go back",
+          "destination": {
+            "name": "go back",
+            "pid": 32
+          }
+        },
+        {
+          "text": "follow the hanging glass",
+          "destination": {
+            "name": "follow the hanging glass",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "follow the hanging glass",
+      "text": "(set: $t to (transition: \"dissolve\"))\nThe darkness reflects from glass to glass travelling with me in this (link-reveal: \"hell\")[(show: ?g1)]. \n\n|g1)[$t[\n|==\nI see myself in the (link-reveal: \"glass\")[(show: ?g2)]. \nMy eyes have sunken into the dark circles that rim my eyes.\nDry skin stretches across my elongated face. \nThe hair on my head greyed and thin. \nMy neck stretches forever.\n==|\n(css: \"color: #adc4a0\")[(text-style: \"mirror\")[I see her in the glass. \nMy mother's  eyes have sunken into the dark circles that rim my eyes.\nHer dry skin stretches across her elongated face. \nThe curls on her head greyed and thin. \nHer neck stretches forever.]] ]]\n\n\n|g2)[$t[I stumble upon an ugly (link-reveal: \"glass\")[(show: ?g3)].]]\n\n|g3)[$t[It is a boot. I vaguely remember its shape from my childhood.\n(link-reveal: \"Pick it up\")[(show: ?g4)].]]\n\n|g4)[$t[I pluck it from where it hangs, suspended by unseen racks. \n(link-reveal: \"Look at glass\")[(show: ?g5)].]]\n\n|g5)[$t[It\u2019s (link-reveal: \"surface\")[(show: ?g6)] is dusty and smudged.]]\n\n|g6)[$t[The hands that hold it are skin and bone. Brittle, like my mothers.\n\nThe (link-reveal: \"knuckles protrude\")[<script>\nvar audio = document.createElement('audio');\naudio.id = 'audio-player'\naudio.controls = \"controls\"\naudio.src=\"https://gameassetlocker.yolasite.com/resources/crunch%20and%20chime-fast.mp3\";\naudio.loop=true;\naudio.play();\n</script>(show: ?g7)] at each joint.]]\n\n|g7)[$t[[[They are my hands]].]]\n\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "They are my hands",
+          "destination": {
+            "name": "They are my hands",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Call Burly",
+      "text": "(set: $t to (transition: \"dissolve\"))\nI cannot find voice. It feels rough and broken.\n\nThere is something waiting in the [[dark]].\n\nI follow the boxes to the [[left]].\n\nI take a sharp [[turn right]].\n\nI try to [[go back]].\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "dark",
+          "destination": {
+            "name": "dark",
+            "pid": 25
+          }
+        },
+        {
+          "text": "left",
+          "destination": {
+            "name": "left",
+            "pid": 26
+          }
+        },
+        {
+          "text": "turn right",
+          "destination": {
+            "name": "turn right",
+            "pid": 27
+          }
+        },
+        {
+          "text": "go back",
+          "destination": {
+            "name": "go back",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "follow the glass",
+      "text": "(set: $t to (transition: \"dissolve\"))\n\nAn undetermined source of light captures the hanging (text-rotate:-45)[glass]. \n\nI follow it. \n\nI can faintly make out stacks of crates lined to the rim with various shaped (text-rotate:-98)[glass] mugs. Despite their age not one has collected any dust. \n\n(link-reveal: \"Something is at my back\")[(show: ?g1)]. I turn to look at it, but see nothing but (text-rotate:45)[glass] stacked and hanging all around.\n\n|g1)[$t[I am not alone in here.\n\n(align: \"=><=\")[$t[(link-reveal: \"Step\")[<script>\nvar audio = document.createElement('audio');\naudio.id = 'audio-player'\naudio.controls = \"controls\"\naudio.src=\"https://gameassetlocker.yolasite.com/resources/Glass%20Rework%20%282sec.%20Glass%29.mp3\";\naudio.loop=false;\naudio.play();\n</script> (show: ?g2) ]]]]]\n\n|g2)[$t[(align: \"=><=\")[$t[(live:3s)[$t[(link-reveal: \"Step\")[<script>\nvar audio = document.createElement('audio');\naudio.id = 'audio-player'\naudio.controls = \"controls\"\naudio.src=\"https://gameassetlocker.yolasite.com/resources/Glass%20Rework%20%282sec.%20Glass%29.mp3\";\naudio.loop=false;\naudio.play();\n</script> (show: ?g3)]](stop:)] ]]]]\n\n|g3)[$t[(align: \"=><=\")[$t[(live:3s)[$t[(link-reveal: \"Step\")[<script>\nvar audio = document.createElement('audio');\naudio.id = 'audio-player'\naudio.controls = \"controls\"\naudio.src=\"https://gameassetlocker.yolasite.com/resources/crunch%202.mp4\";\naudio.loop=false;\naudio.play();\n</script> (show: ?g4)]] (stop:)]]]]]\n\n|g4)[$t[(align: \"=><=\")[$t[(live:9s)[$t[[[Something is following me.]]] (stop:)] ] ]]]\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "Something is following me.",
+          "destination": {
+            "name": "Something is following me.",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Break the Glass.",
+      "text": "(set: $t to (transition: \"dissolve\"))\n(text-style: \"expand\")[ My nails splinter. The (css: \"color: #7b564f\")[**glass**] shatters.\n\nIt slides from glass to glass,joints crunching. Wiry fingers reach for my ankles. \n\nIt comes for me.]\n\n\n\n\n(live:5s)[$t[[[RUN]](stop:)]] \n\n(enchant: \"glass\", (text-colour: #7b564f))\n(enchant: \"Glass\", (text-colour: #7b564f))",
+      "links": [
+        {
+          "text": "RUN",
+          "destination": {
+            "name": "RUN",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "go back",
+      "text": "(set: $t to (transition: \"dissolve\"))\nThe door disappeared somewhere behind me. \nIt is long gone now.\n\nThere is something waiting in the [[dark]].\n\nI follow the boxes to the [[left]].\n\nI take a sharp [[turn right]].\n\n(enchant: \"glass\", (text-colour: #adc4a0))\n(enchant: \"Glass\", (text-colour: #adc4a0))",
+      "links": [
+        {
+          "text": "dark",
+          "destination": {
+            "name": "dark",
+            "pid": 25
+          }
+        },
+        {
+          "text": "left",
+          "destination": {
+            "name": "left",
+            "pid": 26
+          }
+        },
+        {
+          "text": "turn right",
+          "destination": {
+            "name": "turn right",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Epilogue",
+      "text": "(set: $t to (transition: \"dissolve\"))\n(live:5s)[$t[(link-reveal: \"I never found Burly\")[(show: ?e1)] and never will. I truly don\u2019t think I want to. (stop:) ]]\n\n|e1)[$t[Since my trip into the endless pits of (link-reveal: \"the Bar\")[(show: ?e2)], I have not returned.]]\n \n|e2)[$t[I feel lost, yet I have no desire to enter its doors - not after what I found living there.\n\nThe spell of the Bar is broken I am no longer numb, but physically I remain as I did when I entered that terrible room - (link-reveal: \"withered and broken\")[(show: ?e3)].]]\n\n|e3)[$t[It was only by some stroke of luck I managed to find my way back out as I ran blindly, breaking every glass in my path.\n\nWhen I emerged I found deep cuts on my ankles bleeding down into my shoes. The only sign that what I witnessed was real. \n\nI made it out, but (link-reveal: \"I could not save Burly\")[(show: ?e4)].]]\n\n|e4)[$t[Anyone would think him dead after what I saw, but to my mind, there is a chance that he remains-  forever polishing the endless rows of glass.\n\nThis thought offers me no comfort and I am burdened by the (link-reveal: \"guilt\")[(show: ?e5)] it brings.]]\n\n|e5)[$t[But it is not enough to will me back into the Bar. The fear that gripped me when I came face to face with (link-reveal: \"my mothers reflection\")[(show: ?e6)], shook me to my rotted core.]]\n\n|e6)[$t[I don\u2019t know what to do, I have no one to share this with. \n\nThe people I held close are gone, Burly is another in a growing list. The Bar has claimed two that I know of: my dear friend Burly and, I now I know, my mother. \n\nWho knows how many other (link-reveal: \"souls are trapped inside\")[(show: ?e7)].]]\n\n|e7)[$t[It\u2019s true, people always go [[missing]] here, just not for the reasons you think.]]\n\n\n(enchant: \"glass\", (text-colour: #7b564f))\n(enchant: \"Glass\", (text-colour: #7b564f))\n\n\n<script>\naudio.src=\"https://gameassetlocker.yolasite.com/resources/crunch%20and%20chime.mp4\";\naudio.pause();\n</script>",
+      "links": [
+        {
+          "text": "missing",
+          "destination": {
+            "name": "missing",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "missing",
+      "text": "(set: $t to (transition: \"dissolve\"))\n(live: 2s)[$t[(link-reveal: \"Wherever you are, I hope the glass is always shining\")[<script>\nvar audio = document.createElement('audio');\naudio.id = 'audio-player'\naudio.controls = \"controls\"\naudio.src=\"https://gameassetlocker.yolasite.com/resources/Chimes.mp3\";\naudio.loop=true;\naudio.play();\n</script>(show: ?e1)].\n-------------] (stop:)]\n|e1)[$t[**Created By:** (link:\"Keltie Wright\")[(gotoURL: \"http://www.keltiewright.com/\")] \n**Sound By:** (link:\"Jiimi\")[(gotoURL: \"https://www.instagram.com/jiimieatsbrainz/?hl=en\")]\n**Special Thanks:** Spencer and Mike for testing. And thank you for helping me slowly edit myway through this story, you know who you are. \n\n(link:\"Restart\")[(reload:)]\n]]\n\n(enchant: \"glass\", (text-colour: #7b564f))\n(enchant: \"Glass\", (text-colour: #7b564f))\n(enchant: \"Spencer and Mike for testing. And thank you for helping me slowly edit myway through this story, you know who you are.\", (text-colour: #f4eeb4))",
+      "links": []
+    }
+  ]
+}

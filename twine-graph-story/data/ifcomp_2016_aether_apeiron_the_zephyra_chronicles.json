@@ -1,0 +1,814 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Start",
+      "text": "<font face=\"courier\">\n\nLog Entry 669-1-10-11\n\nO Muse! Grant me words to tell the tale. Help me to teleport dear listeners here and there, paint vivid pictures of the worlds, and bring individuals to life.\n\nTo understand the life of Zephyra, my Parthenos and protector, I have to take you back many years. We need to return to Kyzikos, the heavily-wooded little moon that orbits Arctonnesus, the giant cloud-covered planet, in the Propontis system.\n\nShe struggled against forces both worldly and divine. She restored freedom and prosperity for her people.\n\nBut who were \"her people?\" The Gegenees, the citizens of Kyzikos, the crew and changing manifest of //The Lady//, the nation of her father, or the lands of her mother? I am reminded of the words of Socrates, as quoted by Plutarch: //I am not an Athenian or a Greek, but a citizen of the world.//\n\nPerhaps that is what [[Zephyra|opener quote]] actually achieved in the end... \n\n<font>\n\n(set: $herculeaneffort to 0)\n",
+      "links": [
+        {
+          "text": "Zephyra",
+          "destination": {
+            "name": "opener quote",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "in medias res",
+      "text": "**In the Cockpit**\n\nThe craft, bound by gravity between the rich atmosphere below and the vast regions of aetheric space above, sliced through the billowing clouds. A (either:\"sensor dish\",\"section of hull plating\",\"omni-directional antenna\",\"copper bolt\") tore off the nose of the ship, (either:\"rocketed\",\"sped\",\"raced\",\"shot\") toward the aft, and (either:\"smashed into\",\"bounced off\",\"exploded onto\",\"flew past\") the windshield of the helm.\n\nSomewhere in the smoke-filled bridge, Zephyra could make out [[(either:\"shapes\",\"shadows\",\"forms\",\"ghostly beings\")|shapes]] moving about (either:\"behind\",\"around\",\"in front of\",\"somewhere near\") her. A (either:\"high-pitched\",\"mezzo-soprano\",\"melodic\") voice was (either:\"yelling\",\"screaming\",\"calling\",\"relaying\") out (if: (history:) contains \"status reports\")[more] [[(either:\"gibberish\",\"status reports\",\"numerical data\")|status reports]] from the (either:\"rusted\",\"dented\") communicator on the dashboard.\n \nZephyra [[pulled back]] on the bronze control sticks as the starship struggled to clear the atmosphere.\n",
+      "links": [
+        {
+          "text": "(either:\"shapes\",\"shadows\",\"forms\",\"ghostly beings\")",
+          "destination": {
+            "name": "shapes",
+            "pid": 3
+          }
+        },
+        {
+          "text": "(either:\"gibberish\",\"status reports\",\"numerical data\")",
+          "destination": {
+            "name": "status reports",
+            "pid": 4
+          }
+        },
+        {
+          "text": "pulled back",
+          "destination": {
+            "name": "pulled back",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "shapes",
+      "text": "**Looking at the shapes**\n\n(either:\"Zephyra closed her eyes hoping to clear the smoke from them.\",\"Zephyra rubbed her eyes.\") She opened them only to see (either:\"nothing except sparks rain down from the ceiling and dance upon the floor of the [[cockpit|in medias res]].\",\"a figure struggle to reach one of the axial-orientation wheels, but the figure fell to the [[cockpit floor|in medias res]] after taking a few labored steps.\",\"nothing but steam engulfing the [[cockpit|in medias res]].\",\"rain streak across the windshield of the [[cockpit|in medias res]] as the craft rocketed through a cumulonimbus cloud.\",\"a bolt of lightning strike the nose of the craft, dance across the upper deck, and disperse against [[bridge|in medias res]].\")\n\n(either:\"One of the figures moved alongside of her and adjusted the vertical stabilizer settings.\",\"One of the figures moved alongside of her and adjusted the horizontal stabilizer settings.\",\"One of the individuals strained to close a leaking valve with his bare hands.\",\"The oak floorboards groaned as they fought to maintain their integrity.\")\n\n",
+      "links": [
+        {
+          "text": "cockpit",
+          "destination": {
+            "name": "in medias res",
+            "pid": 2
+          }
+        },
+        {
+          "text": "cockpit floor",
+          "destination": {
+            "name": "in medias res",
+            "pid": 2
+          }
+        },
+        {
+          "text": "bridge",
+          "destination": {
+            "name": "in medias res",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "status reports",
+      "text": "**Listening to the status reports**\n\n\"(either:\"Power is holding steady\",\"Holding steady\",\"Thrust is maintaining\"), but the engines are (either:\"straining\",\"struggling\",\"fighting\") to (either:\"reach escape velocity\",\"leave the atmosphere\",\"reach Aether Aperion\")\" said the (either:\"little\",\"mezzo-soprano\") voice. \"(display: \"status chatter\")\"\n\n(either:\"A wave of turbulence lifted her out and then slammed her into the [[pilot chair|in medias res]].\",\"A bolt of lighting struck the upper deck and radiated aft to engulf the [[bridge|in medias res]].\")\n\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "status chatter",
+            "pid": 10
+          }
+        },
+        {
+          "text": "pilot chair",
+          "destination": {
+            "name": "in medias res",
+            "pid": 2
+          }
+        },
+        {
+          "text": "bridge",
+          "destination": {
+            "name": "in medias res",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "pulled back",
+      "text": "**Pulling back on the control stick**\n\n{\n\nThe communicator screamed out (if: (history:) contains \"more status reports\")[more] [[(either:\"garbled updates\",\"broken sentences\",\"disjointed phrases\",\"spirited updates\")|more status reports]]. Her muscles strained to keep the levers pulled back toward her as the ship made a steady climb. In the chaos, she could make out another [[(either:\"distorted shape\",\"confusing shape\",\"confusing form\",\"confusing form\",\"hurried movement\",\"hurried form\")|more shapes]] within the oval-shaped bridge of the starship. \n<p></p>\nThe helm bounced and swayed as it cut through the [[upper atmosphere]].\n\n}",
+      "links": [
+        {
+          "text": "(either:\"garbled updates\",\"broken sentences\",\"disjointed phrases\",\"spirited updates\")",
+          "destination": {
+            "name": "more status reports",
+            "pid": 7
+          }
+        },
+        {
+          "text": "(either:\"distorted shape\",\"confusing shape\",\"confusing form\",\"confusing form\",\"hurried movement\",\"hurried form\")",
+          "destination": {
+            "name": "more shapes",
+            "pid": 8
+          }
+        },
+        {
+          "text": "upper atmosphere",
+          "destination": {
+            "name": "upper atmosphere",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "opener quote",
+      "text": "{\n\n<center>\n[[<img src=\"../images/0.jpg\" height=\"400\" width=\"400\">|in medias res]]\n\n<p><i>\u201cNothing great is created suddenly, any more than a bunch of grapes or a fig. If you tell me that you desire a fig, I answer you that there must be a time. Let it first blossom then bear fruit, then ripen\u201d.</i></p>\n\n<p>- Epictetus</p>\n<p><center>[[<blink>.....</blink>|in medias res]]</p>\n<p>\n<center>\n[[<img src=\"../images/gear1.jpg\" height=\"100\" width=\"100\">|in medias res]]\n</center>\n</p>\n</center>\n\n\n}",
+      "links": [
+        {
+          "text": "<img src=\"../images/0.jpg\" height=\"400\" width=\"400\">",
+          "destination": {
+            "name": "in medias res",
+            "pid": 2
+          }
+        },
+        {
+          "text": "<blink>.....</blink>",
+          "destination": {
+            "name": "in medias res",
+            "pid": 2
+          }
+        },
+        {
+          "text": "<img src=\"../images/gear1.jpg\" height=\"100\" width=\"100\">",
+          "destination": {
+            "name": "in medias res",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "more status reports",
+      "text": "**Listening to the status reports**\n\n\"The stress on the hull is increasing... Any more for any longer, this ship will split in two...\" yelled the high-pitched little voice. \"(display: \"status chatter\")\"\n\n(either:\"Broken glass rained down on Zephyra and sprinkled down onto the [[cockpit floor|pulled back]]\",\"Steam erupted from a pipe under the floorboards and spread out across the ceiling of the [[cockpit|pulled back]]\").",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "status chatter",
+            "pid": 10
+          }
+        },
+        {
+          "text": "cockpit floor",
+          "destination": {
+            "name": "pulled back",
+            "pid": 5
+          }
+        },
+        {
+          "text": "cockpit",
+          "destination": {
+            "name": "pulled back",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "more shapes",
+      "text": "**Looking at the shapes**\n\n{\n(if: (history:) contains \"more shapes\")[Something small and blue could be seen hiding under the [[radar console]]. Its tail waved around frantically in the chaos.<p></p>] \n\n(else:)[Something small and blue ran into the cockpit, jumped unto her head, and then hid under the [[radar console]].<p></p>] \n\nA strange, yet familiar sensation --- as it would be misleading to call it a \"voice\" --- streamed through her mind: (display: \"tbm scared chatter\")\"\n<p></p>\nA low pitched warning siren droned into Zephyra's awareness and she directed her attention back to the [[ascent|pulled back]].\n}\n\n\n\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "tbm scared chatter",
+            "pid": 39
+          }
+        },
+        {
+          "text": "radar console",
+          "destination": {
+            "name": "radar console",
+            "pid": 11
+          }
+        },
+        {
+          "text": "ascent",
+          "destination": {
+            "name": "pulled back",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "upper atmosphere",
+      "text": "**Maintaining back pressure on control sticks**\n\nThe climb, while steady, was too shallow. The ship began convulsing and Zephyra could hear pieces of hull plating breaking away. The [[dashboard]] (either:\"whined\",\"screamed\") and (either:\"radiated\",\"gleamed\",\"spread\") [[harsh beacons]].\n\nShe took a deep breath, hugged the control sticks, and pulled her entire body backward in an effort to [[increase the pitch]]. ",
+      "links": [
+        {
+          "text": "dashboard",
+          "destination": {
+            "name": "dashboard",
+            "pid": 12
+          }
+        },
+        {
+          "text": "harsh beacons",
+          "destination": {
+            "name": "harsh beacons",
+            "pid": 13
+          }
+        },
+        {
+          "text": "increase the pitch",
+          "destination": {
+            "name": "increase the pitch",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "status chatter",
+      "text": "(either:\"Making adjustments to the centrifugal governor...\",\"Activating the centrifugal clutch in... Three... Two... One... Initiate.\",\"Reconnecting the power regulators... I hope this time they hold.\",\"Dialing back the compacitor intake to counteract the interia...\",\"Adding ten degrees rudder...\",\"Reducing ailerons by five percent...\")",
+      "links": []
+    },
+    {
+      "pid": 11,
+      "name": "radar console",
+      "text": "**Looking at the radar console**\n\nThrough the (either:\"smoke-filled cockpit\",\"chaos\",\"uproar\"), Zephyra could (if: (history:) contains \"radar console\")[still] see (if: (history:) contains \"radar console\")[the same] three small red signals on the screen. The blips were [[approaching her craft|pulled back]] from starboard at a high rate of speed.",
+      "links": [
+        {
+          "text": "approaching her craft",
+          "destination": {
+            "name": "pulled back",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "dashboard",
+      "text": "**Looking at the dashboard**\n\n(either:\"A bolt of electricity shot from a panel and enveloped her left arm. Zephyra laughed uneasily and was strangely energized by the somewhat familar sensation.\",\"An assaulting fume rose from the dashboard.\",\"The dashboard began to spark.\")\n\nFrom the communicator above, a little voice cried out, \"(display: \"status chatter\")\" Zephyra adjusted the inboard ailerons and [[the craft|upper atmosphere]] gained some needed altitude.",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "status chatter",
+            "pid": 10
+          }
+        },
+        {
+          "text": "the craft",
+          "destination": {
+            "name": "upper atmosphere",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "harsh beacons",
+      "text": "**Looking at the beacons**\n\n(either:\"A searing set of orange and blue lights blinked rapidly on and off.\",\"A white light strobed rapidly.\",\"A large red light pulsed on and off slowly calmly. It was a striking contrast to the scene that surrounded it.\") Another light was shattered and lifeless. Zephyra hoped that it was not an important indicator. Working or not, lights were not going to divine her out of [[this crisis|upper atmosphere]].",
+      "links": [
+        {
+          "text": "this crisis",
+          "destination": {
+            "name": "upper atmosphere",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "increase the pitch",
+      "text": "**Losing grip on the control sticks**\n\nZephyra (either:\"began passing out\",\"shook her head to regain focus\",\"drifting into unconsciousness\"). Despite her [[Herculean effort|herculean effort]], the ship maintained the difficient angle. Zephyra again began to fade under the strain and [[(either:\"low oxygen conditions\",\"breathless confines\",\"suffocating state of affairs\")|low oxygen conditions]].\n\n",
+      "links": [
+        {
+          "text": "Herculean effort",
+          "destination": {
+            "name": "herculean effort",
+            "pid": 15
+          }
+        },
+        {
+          "text": "(either:\"low oxygen conditions\",\"breathless confines\",\"suffocating state of affairs\")",
+          "destination": {
+            "name": "low oxygen conditions",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "herculean effort",
+      "text": "{\n(if: $herculeaneffort < 1)[\n\n**Watching the Colossal Warrior**\n\n<p>The door of the bridge burst open and a broad figure, heroically silhouetted against the flickering lights of the hallway behind. Zephyhra frowned as he entered the scene and she unconsciously make a fist. Hercules lifted Zephyra out of the chair and dropped her onto the floor. \"How could you be here?\" Zephyra wondered as she frowned.</p>\n\n<p>The [[lionskin-clad]] warrior seized the control sticks and pulled them back toward this finely-oiled muscular chest. His arms rippled and rolled with [[divine strength|adventures and victories]].</p>\n\n<p>As the nose of ship lifted, a wooden beam from the ceiling came loose and fell loudly to the [[floor|increase the pitch]].</p>\n\n]\n\n\n(if: $herculeaneffort > 0)[\n\n**Pulling back on the control sticks**\n\n<p>The image of Heracles became a mist and was merged into the smoke and vapors that filled the cockpit.</p>\n\n<p>Zephyra was relieved that the presence of the collossal warrior, at least this time, had only been an illusion brought on by her exhaustion and strain.</p>\n\n<p>As the nose of ship lifted, a wooden beam from the ceiling came loose and fell loudly to the [[floor|increase the pitch]].</p>\n\n<p>\nHer head slowly slumped forward, cramping feet slid under the pilot chair, and the world around her began to fade. Zephyra felt someone step up behind her. [[Just above her own|just above her own]], a pair of [[stone hands]] gripped the levers.\n</p>\n\n]\n\n\n\n(set: $herculeaneffort to $herculeaneffort + 1)\n}",
+      "links": [
+        {
+          "text": "lionskin-clad",
+          "destination": {
+            "name": "lionskin-clad",
+            "pid": 17
+          }
+        },
+        {
+          "text": "divine strength",
+          "destination": {
+            "name": "adventures and victories",
+            "pid": 18
+          }
+        },
+        {
+          "text": "floor",
+          "destination": {
+            "name": "increase the pitch",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Just above her own",
+          "destination": {
+            "name": "just above her own",
+            "pid": 19
+          }
+        },
+        {
+          "text": "stone hands",
+          "destination": {
+            "name": "stone hands",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "low oxygen conditions",
+      "text": "**Trying to catch her breath**\n\nZephyra coughed as she struggled to get enough air. She became faint and her eyes slowly closed. When Zephyra opened them, she was (either:\"floating on calm waters and multitudes of fish were jumping all around her. She took a breath and swam down into the gleaming sea. \n\nAquatic beasts of all varieties whirled around her playfully. A speckled quasi-pike came up alongside her and matched course and speed. Zephyra reached out to touch the creature, but, as she extended her hand, the school scattered. The pike darted off.\n\nA flash of blue light ignited far below. Silhouetted by a greenish-blue glow, a dark and massive shape rose from the depths towards her. Zephyra tried to swim out of its path, but all [[went black|increase the pitch]].\",\"standing on a high mountain top. She could see a large gleaming lake below. On one shore, a glorious city of tall white towers, golden domes, and lush gardens stood proudly. Along the other, a vast forest of greenery was dotted with small dwellings, balconies, and thin aerial walkways. White billowing clouds were nudging up against her as they passed. She tried to [[climb onto one|increase the pitch]].\",\"face-to-face with an enormous bear. The creature looked at her and then, growing extra arms into the likeness of a spider, he took hold of her and climbed a tree. After some time, the bear-spider released her. Zephyra lept up to grab one of the higher branches and [[continued climbing ever higher|increase the pitch]].\",\"surrounded by a swarm of snakes within a dark temple. Columns reached up to support the unseen ceiling and mysterious frescoes danced in the torchlight. A woman, lifting the hood of her himation to cover her head as she entered, approached her. Zephyra reached out to [[embrace her|increase the pitch]]. As if triggered by her gesture, the snakes struck her and all went black...\",\"dodging a doru thrust from a heavily-armored warrior. He stepped back to realign his position and strategize a second attack. Zephyra called out to him, but his only response was a renewed assault with his shining xiphos. Zephyra [[rolled out of the away|increase the pitch]] and the hoplite yelled in fury.\")",
+      "links": [
+        {
+          "text": "went black",
+          "destination": {
+            "name": "increase the pitch",
+            "pid": 14
+          }
+        },
+        {
+          "text": "climb onto one",
+          "destination": {
+            "name": "increase the pitch",
+            "pid": 14
+          }
+        },
+        {
+          "text": "continued climbing ever higher",
+          "destination": {
+            "name": "increase the pitch",
+            "pid": 14
+          }
+        },
+        {
+          "text": "embrace her",
+          "destination": {
+            "name": "increase the pitch",
+            "pid": 14
+          }
+        },
+        {
+          "text": "rolled out of the away",
+          "destination": {
+            "name": "increase the pitch",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "lionskin-clad",
+      "text": "**Looking at the Colossal Warrior**\n\nUpon his head he wore the skin of a mighty Nemean Lion. The face of the beast, even in death, matched the unbridled fierceness of the warrior who has slain him. The long soft mane draped over his broad shoulders and the rest of the skin surrounded him like a cloak.\n\nZephyra watched as he effortlessly adjusted the [[control levers of the starship|increase the pitch]].",
+      "links": [
+        {
+          "text": "control levers of the starship",
+          "destination": {
+            "name": "increase the pitch",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "adventures and victories",
+      "text": "**Remembering his adventures**\n\nAlthough she had thought Heracles, until very recently, a myth, the tale of the Nemean Lion was a tale Zephyra knew well. She remembered the poet, Euripides, and recited: \"//First he cleared the grove of Zeus of a lion, and put its skin upon his back, hiding his yellow hair in its fearful tawny gaping jaws//.\"\n\nZephyra watched as he effortlessly adjusted the [[control levers of the starship|increase the pitch]].",
+      "links": [
+        {
+          "text": "control levers of the starship",
+          "destination": {
+            "name": "increase the pitch",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "just above her own",
+      "text": "**As the ship increases in pitch**\n\nZephyra could feel the control sticks yield to the newly-found coordinated effort. The [[marble hands|stone hands]] resting next to her own began to relax slightly as the ship increased in pitch. She smiled faintly, but then the starship began to [[roll clockwise]] and [[yaw to starboard]]. \n\nA sense of temporary weightlessness ensued as the ship [[began to stall]].",
+      "links": [
+        {
+          "text": "marble hands",
+          "destination": {
+            "name": "stone hands",
+            "pid": 20
+          }
+        },
+        {
+          "text": "roll clockwise",
+          "destination": {
+            "name": "roll clockwise",
+            "pid": 21
+          }
+        },
+        {
+          "text": "yaw to starboard",
+          "destination": {
+            "name": "yaw to starboard",
+            "pid": 22
+          }
+        },
+        {
+          "text": "began to stall",
+          "destination": {
+            "name": "began to stall",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "stone hands",
+      "text": "**Looking at the stone hands**\n\nPurest white and impossibly smooth, the marble hands seemed to possess both elegance and strength. Zephyra nestled between the back of the cockpit chair and the arms which flanked her tightly. Once the control sticks yielded to the force of the unseen might, she was (link-goto: \"completely embraced\", (history:)'s last).\n\nThe same shrill voice, but this time more calm and assured, chimed \"(display: \"status chatter\").\"",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "status chatter",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "roll clockwise",
+      "text": "**Beginning to roll clockwise**\n\nThe little blue creature began to slide out from under the [[radar console|radar console 2]]. Through the low-light chaos, Zephyra could see him holding on with all of his might. \n\nThat strange sensation streamed another message to her: \"(display: \"tbm scared chatter\").\"",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "tbm scared chatter",
+            "pid": 39
+          }
+        },
+        {
+          "text": "radar console",
+          "destination": {
+            "name": "radar console 2",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "yaw to starboard",
+      "text": "**Through the cockpit window**\n\nThe blackness of [[Aether Apeiron]], which had been visible throughout the ascent, was now being replaced as a curved horizon of green, blue, and grey rose up into view. Zephyra could clearly see (either:\"a bright shimmering lake and a tall snow-capped mountain surrounded by a vast forest of lush greenery.\",\"the rubble of a partially ruined city. The large dark zone below contained fallen towers, glittering fragments of glass and metals, and rising plumes of smoke.\")\n\nA headset fell from its hook, bounced off her left shoulder, and brought her focus back to the [[dire situation|just above her own]].",
+      "links": [
+        {
+          "text": "Aether Apeiron",
+          "destination": {
+            "name": "Aether Apeiron",
+            "pid": 29
+          }
+        },
+        {
+          "text": "dire situation",
+          "destination": {
+            "name": "just above her own",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "began to stall",
+      "text": "**Slowly slipping backwards**\n\nThrough half-open eyes, Zephyra saw her feet floating in front of her. She sank into a sea of [[loose wires]], nuts and bolts, fragments of wooden planks, [[stellar navigation maps]], and other floating debris.\n\nGravity began to pull Zephyra and the craft downward. The cockpit and its contents took on a [[reddish hue|another pass out]].  ",
+      "links": [
+        {
+          "text": "loose wires",
+          "destination": {
+            "name": "loose wires",
+            "pid": 24
+          }
+        },
+        {
+          "text": "stellar navigation maps",
+          "destination": {
+            "name": "stellar navigation maps",
+            "pid": 25
+          }
+        },
+        {
+          "text": "reddish hue",
+          "destination": {
+            "name": "another pass out",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "loose wires",
+      "text": "**Swimming with the eels**\n\nZephyra felt as if she had submerged far into the depths of Lake Dindymon and entered a school of green reticulo-eels. Unlike the  [[massive beasts of legend]], these were small juveniles.\n\nOne of them, about the length of her forearm, [[brushed against her cheek|began to stall]].",
+      "links": [
+        {
+          "text": "massive beasts of legend",
+          "destination": {
+            "name": "massive beasts of legend",
+            "pid": 31
+          }
+        },
+        {
+          "text": "brushed against her cheek",
+          "destination": {
+            "name": "began to stall",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "stellar navigation maps",
+      "text": "**Looking at the Stellar Navigation Map**\n\nPaper sheets fluttered about like giant white butterflies. Among the myriad of shapes and designs on the maps, she recongized a familiar set of concentric rings on one of the parchments. It was clearly the Propontis System, but Zephyra thought is strange that the little green circle orbiting cloud-covered Arctonnesus was labeled \"Oros Arcton\" rather than the correct name of her homeworld, \"Kyzikos.\"\n\nShe directed her attention back to the [[dashboard|began to stall]].",
+      "links": [
+        {
+          "text": "dashboard",
+          "destination": {
+            "name": "began to stall",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "another pass out",
+      "text": "**In a Sunlit Garden**\n\nBright sunlight rained down through the canopy of rosy leaves. Once again, he had her in a tight spot and their game of [[Petteia|petteia]] had only just begun.\n\nThe elegantly-dressed opponent, resting leisurely on a high-backed chair, took a sip of wine from his skyphos. He turned and said \"Zephyra, do not become, as Plato described, one of Socrates' victims who are like '//bad Petteia players, finally cornered and made unable to move by clever ones.//'\"\n\nShe looked at the game board, a grid containing black pebbles interjected with white ones, and [[considered her next move]].",
+      "links": [
+        {
+          "text": "Petteia",
+          "destination": {
+            "name": "petteia",
+            "pid": 27
+          }
+        },
+        {
+          "text": "considered her next move",
+          "destination": {
+            "name": "considered her next move",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "petteia",
+      "text": "**Thinking about Petteia**\n\nZephyra had spent much time playing the board game in the past. She often thought the bounded 8x8 grid of its surface was reflective of her life. She, like one of the colored stones in the contest, was forever confined to the small board. The same people, like the black and white tokens of the opposing sides, moved this way and that within Kyzikos. In fact, some of the older folk called the game by its more ancient names of \"Poleis\" or \"Polis\" which of course meant \"city.\"\n\nLike each day of her routine existence, the game began, ended, and then repeated. Always the same rules... Always the same board... Always the same tokens... Always the same players...\n\n(either:\"The pouring of wine returned Zephyra's attention back toward [[the game|another pass out]].\",\"The rattling of captured pieces within her opponent's hand directed her focus back to [[the board|another pass out]].\")",
+      "links": [
+        {
+          "text": "the game",
+          "destination": {
+            "name": "another pass out",
+            "pid": 26
+          }
+        },
+        {
+          "text": "the board",
+          "destination": {
+            "name": "another pass out",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "considered her next move",
+      "text": "**Looking at the game board**\n\nA simple analysis of the game board made it clear to Zephyra that the regal opponent had cut her off. While about half of her pebbles were still in play, the tokens had been seemingly immobilized. There was no escape.\n\nZephyra sat there thinking, rethinking, and unable to make a move.\n\nIn sharp contrast to his earlier demeanor, the crowned figure rose out of his seat and gave Zephyra a stern look. \"Make your move and quit stalling, Zephyra\" he commanded. \"You know what to do.\"\n\n\"Stalling...\" thought Zephyra. [[\"Yes, my King.\"|wake up]]",
+      "links": [
+        {
+          "text": "\"Yes, my King.\"",
+          "destination": {
+            "name": "wake up",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Aether Apeiron",
+      "text": "**Looking into Aether Apeiron**\n\nThe vast blackness was without end. It contained the shining star, Propontis, and the orbiting heavenly bodies that Zephyra knew well. It also contained, according to tales and legends that she had heard, all of the infinite universe's worlds.\n\nSomeone bumped up against the back of the [[pilot chair|yaw to starboard]] as they were busy reaching for switch on the dashboard.",
+      "links": [
+        {
+          "text": "pilot chair",
+          "destination": {
+            "name": "yaw to starboard",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "radar console 2",
+      "text": "**Looking at the radar console**\n\nThe three small red signals on the screen, that Zephyra had noticed earlier, were now [[approaching her craft|just above her own]] from aft. It appeared that their speed was slowing.\n\nA low frequency sound was gaining momentum behind Zephyra. The origin was not from within her craft, but just a short distance from it.\n\nFrom within her head, the voice stated calmly: <font face=\"courier\">\"The sound coming from the aft of our craft is likely charging up an energy weapon. Regardless, I suggest moving the craft away as soon as possible.\"</font>",
+      "links": [
+        {
+          "text": "approaching her craft",
+          "destination": {
+            "name": "just above her own",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "massive beasts of legend",
+      "text": "**Remembering the Legend**\n\nA tale of old described a mighty fisherman who had once caught a collossal eel measuring three times the length of his seaworthy [[papyrela]].\n\nEven in this age, many a drunken old salt has returned spouting gibberish and swearing of encountering such a creature.",
+      "links": [
+        {
+          "text": "papyrela",
+          "destination": {
+            "name": "papyrela",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "papyrela",
+      "text": "**Thinking about a Papyrela**\n\nThis vessel, a common sight in the harbors of Lake Dindymon, was constructed of reeds and had room for about six rowers and the day's catch.\n\nA rush of steam from a nearby copper pipe (either:\"engulfed\",\"cooked\",\"sprayed\") Zephyra and directed her attention back to the [[crisis|began to stall]].",
+      "links": [
+        {
+          "text": "crisis",
+          "destination": {
+            "name": "began to stall",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "wake up",
+      "text": "**Awoken by the King**\n\nSafety belts braced as Zephyra woke with a start. \"(display: \"status chatter\")\" stated the diminutive voice. \"I finally got the power generator to full capacity. It's now or never!\" She [[slammed her foot down on the throttle pedal]] and the engines surged to life. ",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "status chatter",
+            "pid": 10
+          }
+        },
+        {
+          "text": "slammed her foot down on the throttle pedal",
+          "destination": {
+            "name": "slammed her foot down on the throttle pedal",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "slammed her foot down on the throttle pedal",
+      "text": "**Experiencing extreme accelleration**\n\nZephyra's head slammed violently against the back of the pilot chair. While padded, the blow was enough to [[cut short any future efforts|and all went black]] of the [[would-be Trierarch]].\n\nThe vessel surged forward and then went into a violent spin. Screams and the sound of fearful animal chatter flooded the cockpit. And then, just as suddenly, all went still and quiet...",
+      "links": [
+        {
+          "text": "cut short any future efforts",
+          "destination": {
+            "name": "and all went black",
+            "pid": 35
+          }
+        },
+        {
+          "text": "would-be Trierarch",
+          "destination": {
+            "name": "would-be Trierarch",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "and all went black",
+      "text": "**Blacking out**\n\nOil dripped down onto her smoke-tinted face and into her eyes. \"Who was I fooling?\" she thought. \"It was vanity to think I could manage such a large craft.\"\n\n\"I am sorry,\" she cried. Like a comet cutting through the blackness of Aether Apeiron, shining tears cut though the grime revealing the bright skin of youth.\n\nEven through the thick clouded air, Zephyra felt a glorious brightness beam onto her face. She opened her eyes and, through the cracking window of the cockpit, saw a distant [[shining radiance]] floating against a sea of black. \n\nThe ship mellowed in its behavior, the alarms were quiet and the warning lights had ceased. As if lulled to sleep by the steady purr of the ship's engines, Zephyra's eyes closed and she [[slipped into unconsciousness|transition]].",
+      "links": [
+        {
+          "text": "shining radiance",
+          "destination": {
+            "name": "shining radiance",
+            "pid": 37
+          }
+        },
+        {
+          "text": "slipped into unconsciousness",
+          "destination": {
+            "name": "transition",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "would-be Trierarch",
+      "text": "**Thinking about Trierarchs**\n\nZephyra tried to remember the mythical names and impossible vessels of the famous naval commanders. She reflected back, as best she could, on portions the tales she was told as a child. One such story was the Trojan War as told by Homer who described the mighty Peneleos, Leitus, Arcesilaus, Prothoenor, and Clonius of the Boeotians. They captained fifty ships as well as the brave Boeotians soldiers within their vessels. Fifty craft were under the direction of Abantes of Euboea. His long-haired warriors, armed with long ashen spears, were unmatched in combat. Lastly, from the City of Athens founded by the legendary Erechtheus, came fifty vessels commanded by Menestheus, son of Peteos. His fierce chariots and battle-hardened fighters were renown.\n\nA burning sensation in her eyes shook her back to [[the present|slammed her foot down on the throttle pedal]]. It was a painful sting which served as bitter realization that Zephyra felt she was not, and could never be, equal to them in greatness.",
+      "links": [
+        {
+          "text": "the present",
+          "destination": {
+            "name": "slammed her foot down on the throttle pedal",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "shining radiance",
+      "text": "**Looking at Propontis**\n\nThe massive star spun out waves upon waves of life-giving energy through out this region of Aether Apeiron. Her skin warmed in the glow.\n\nShe (either:\"struggled to locate the controls of the [[craft|and all went black]].\",\"tied to take a deep breath, but the [[cockpit|and all went black]] only provided her with an ash-infused inhalation.\")",
+      "links": [
+        {
+          "text": "craft",
+          "destination": {
+            "name": "and all went black",
+            "pid": 35
+          }
+        },
+        {
+          "text": "cockpit",
+          "destination": {
+            "name": "and all went black",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "transition",
+      "text": "**Slipping Away**\n\nA hushed voice poked out of the communicator, \"We are in the clear... (display: \"status chatter\"). Please come in, over... Are you reading?\"\n\nSeveral pairs of hands lifted her out of the chair and gently onto the floor. The little blue creature jumped lightly onto her chest and licked her face. Like the sound of the morning breeze through the pines on Mount Dindymos, Aether Apeiron gently whispered as the starship sped along to destinations unknown.\n\nSleep, with the dreams that often follow close behind, passed slowly over Zephyra. She drifted back to <a href=\"AAE-001-002.html\">past days and prior events</a>...\n{\n<p>\n<center>\n<a href=\"AAE-001-002.html\"><img src=\"../images/gear1.jpg\" height=\"100\" width=\"100\"></a>\n</center>\n</p>\n}\n\n\n\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "status chatter",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "tbm scared chatter",
+      "text": "{\n<font face=\"courier\">\n(either:\"Parthenos, the vessel will soon destruct at current rate of speed and acsent. Increasing the rate of climb is suggested.\",\"The oxygen levels within this area of the ship are at unsafe levels. Evacuation of the bridge is essential, my Parthenos.\",\"In addition to the increasing hull damage, sustained fuel leak, and damage to the landing gear, it is most essential to report to you, my Parthenos, that the stores of sapphron have been depleted.\")\n</font>\n}",
+      "links": []
+    }
+  ]
+}

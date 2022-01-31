@@ -1,0 +1,1053 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "P2",
+      "text": "I wasn't too interested in this game until my friend showed me that you can shoot people with a shark gun. No, it doesn't shoot sharks. Instead, it covers the target with bait and a moment later a shark will shoot up out of the ground and gobble them up.\\n\\nClassy stuff.\\n\\nThere was even a bit where the player gets pulled into a computer and plays a Choose Your Own Adventure game, much like the one I'm currently trying to write!\\n\\nMaybe I should have a quick play of it for some inspiration.\\n\\n[[Of course! Play a game to find inspiration for my own game!|P4]]\\n[[Hm. Nah. Naaahhhhhh.|P1]]",
+      "links": [
+        {
+          "text": "Of course! Play a game to find inspiration for my own game!",
+          "destination": {
+            "name": "P4",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Hm. Nah. Naaahhhhhh.",
+          "destination": {
+            "name": "P1",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "PC1",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 3,
+      "name": "S2",
+      "text": "Alright! A sloth it is!\\n\\n<<set $sloth = 1>><<display 'conflict'>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "conflict",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "S1",
+      "text": "I take a gander at the shelf and see a birthday card a high school friend once gave me. She's the only person I really remember from high school and only because she once accidentally set my hair on fire.\\n\\nI\u2019m glad I have little memory of those days. It was back before I blossomed into the dapper chap I am today. In fact, back then I somehow ended up with the nickname \"sloth.\" I would probably embrace it these days, because sloths are damn adorable.\\n\\nWait... a sloth... what a heroic figure! What could be more perfect?\\n\\n[[Nothing!|S2]]\\n[[Anything!|hero]]",
+      "links": [
+        {
+          "text": "Nothing!",
+          "destination": {
+            "name": "S2",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Anything!",
+          "destination": {
+            "name": "hero",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "PP4",
+      "text": "Peter frowned. Once a great origami master, he vowed to never practice the art again after it once led to him accidentally burning down an orphanage. But he needed to his skills again.\\n\\nThe world needed the Perferator again.\\n\\n\"Time to take you to cleaners,\" Peter said casually.\\n\\nHe took some paper and carefully folded it into a fully functioning vacuum cleaner and attacked Mister Blister with it! It latched onto an open sore and sucked the puss right out of the grotesque critter, it screaming until it deflated into nothing more than a disgusting pile of flesh on the ground!\\n\\nPeter was courteous enough to vacuum up the rest of the pus that leaked onto the street. He was a cool guy like that.\\n\\nThe nightmare was over. The Perferator had saved the world. Finally, Peter Paper could stop feeling guilty. He could finally move on.\\n\\nHe never drank another Gold Rush.\\n\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|paperIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "paperIntro",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Start",
+      "text": "<html><center><h1>LAST MINUTE</h1>\\n\\nA hastily written interactive story by Ruderbager Doppelganger. Additional material by the ALINE KREW and Daphny David.</center></html>\\n\\nOh, crap! Crap, crap, crap! Crappity crappy crap!\\n\\nPoop.\\n\\nThe deadline for the 2012 Interactive Fiction Competition is only ten minutes away! There's no chance in Hades that I'll finish my Twine magnum opus before it's pencils down! Well, I could finish it, but it's not something I want to rush, much like my loving.\\n\\nScrew it! I'll just throw random crap together and submit it! Anything will do, as long as I have an entry and a chance to win that box of authentic Belgian chocolates!\\n\\nAll I need is some inspiration. Surely a worldly gentleman such as myself would find objects of intellectual stimulation inside the walls of his very bedroom!\\n\\n<<display 'hero'>>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "hero",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "villain",
+      "text": "Time for a villain. Where to look?\\n\\n[[Look at desk.|D1B]]\\n[[Look at shelf.|S1B]]\\n[[Look at bed.|B1]]\\n",
+      "links": [
+        {
+          "text": "Look at desk.",
+          "destination": {
+            "name": "D1B",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Look at shelf.",
+          "destination": {
+            "name": "S1B",
+            "pid": 47
+          }
+        },
+        {
+          "text": "Look at bed.",
+          "destination": {
+            "name": "B1",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "blist1",
+      "text": "Suddenly, a grotesque mound of flesh covered with sores and blisters approached Peter. Frankly, he was rather disgusted by the... thing as it bubbled and pulsated, pus leaking from it and onto the ground.\\n\\n\"What the hell are you?\" Peter asked in a manner that one certainly wouldn't call polite. \"Ha ha,\" replied the grotesque being. \"I... am MISTER BLISTER! And it is I who is responsible for this chaos! Ha ha!\"\\n\\n\"You vile creature!\u201d screamed Peter. \u201cHow could you do this? Why would you do this? Look around you! People are dying! Humans weren't made to survive on beetroot!\"\\n\\n\"Precisely the point!\u201d exclaimed Mister Blister. \"I hate humanity. Despise them and their skin that isn't one hundred percent flawed like mine! So, I decided to make them extinct. How? SIMPLE! With beetroot the only food, humanity will be driven to cannibalism! Then I\u2019ll use my powers to cover them in blisters, making them all too grossed out to eat other! Then it will only be a matter of time before they all starve! Ha ha!\u201d\\n\\n\"What about people who like beetroot?\" asked Peter. Now, most people would believe that no such person could exist, but Peter actually dated a girl who loved the vegetable. It would be cause of much friction in their short relationship.\\n\\n\"Ha ha!\" responded the pus prince. \"Obviously they would kill each other in frenzied battles, because only the completely insane enjoy eating beetroot!\"\\n\\nPeter had to concede that this was a good point. His ex-girlfriend did try to shave off his eyebrows while he was asleep, after all.\\n\\n\"Well, guess what. I'm not going to let you get away with this.\"\\n\\n\"Ha ha! And what are you going to do about it? Ha ha!\"\\n\\n<<display 'PP3'>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "PP3",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "blist2",
+      "text": "Suddenly, a grotesque mound of flesh covered with sores and blisters approached Gavin. \"Ha ha,\" exclaimed this mysterious being. \"So this is all that is left to stand against me? A sloth? Ha ha! I knew humans were weak, but not so much to send a helpless animal to fight their battles! Ha ha!\" The life form bubbled and pulsated as pus leaked from it and onto the ground.\\n\\n\"I... am MISTER BLISTER! And it is I who is responsible for this chaos! I suppose you wish to know my motives?\"\\n\\nGavin replied with a nonchalant gaze.\\n\\n\"Well, I'm going to tell you anyway! I hate humanity. Despise them and their skin that isn't one hundred percent flawed like mine! So, I decided to make them extinct. How? SIMPLE! With beetroot the only food, humanity will be driven to cannibalism! Then I\u2019ll use my powers to cover them in blisters, making them all too grossed out to eat other! Then it will only be a matter of time before they all starve! Ha ha!\u201d\\n\\nMister Blister appeared to be quite proud of his plan.  \"And you,\u201d he asked Gavin. \u201cWhat do you plan to do about this? Ha ha!\"\\n\\n<<display 'G3'>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "G3",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "pacmanIntro",
+      "text": "Pac-Man stepped onto the scales with cautious optimism. It proved wise to be cautious, because he was still overweight. He suspected it had something to do with the diet pills he had been taking. After all, he was overweight due to his habit of eating pills, so the diet pills frankly seemed a little counter-productive.\\n\\nPac-Man's introductory sequence was suddenly cut short when he heard screams coming from outside!\\n\\n[[Pac-Man goes outside.|PC1]]\\n[[Pac-Man insists on continuing his introductory sequence.|PC2]]",
+      "links": [
+        {
+          "text": "Pac-Man goes outside.",
+          "destination": {
+            "name": "PC1",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Pac-Man insists on continuing his introductory sequence.",
+          "destination": {
+            "name": "PC2",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "paperbeatsyorke",
+      "text": "\"YOU KNOW YOU CANNOT DEFEAT ME. FOR I AM A ROCK STAR.\"\\n\\nThe paper envelopes him and crushes him like a bug.\\n\\n\"Paper beats rock.\"\\n\\n\"I may not be much of a rapper, but I'm one hell of a wrapper!\" He then realised that this line didn't really work when spoken out loud as both words sound identical.",
+      "links": []
+    },
+    {
+      "pid": 12,
+      "name": "P7",
+      "text": "Alright! Pac-Man is the hero! Thank the Golden Girls for fair use!\\n\\nUnfortunately, I would later come back to this node and realise I sure as heck don't have time to implement a third hero! Maybe in a post-competition release!\\n\\n[[Aw, shucks. What else have I got?|hero]]",
+      "links": [
+        {
+          "text": "Aw, shucks. What else have I got?",
+          "destination": {
+            "name": "hero",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "S2B",
+      "text": "Okay! <<if $origami eq 1>>Peter Paper the Perferator as the hero!<<endif>><<if $sloth eq 1>>A sloth as the hero!<<endif>> Beetroot as the source of conflict! Mister Blister as the villain!\\n\\n<html><center><h3>LET'S BEGIN...</h3></html>\\n<<set $blister = 1>><<if $origami eq 1>><<display 'paperIntro'>><<endif>><<if $sloth eq 1>><<display 'slothIntro'>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "paperIntro",
+            "pid": 38
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "slothIntro",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "sayings",
+      "text": "chhuffed as chips\\n\\nwhat a pickle we're in\\n\\nthat line wasnt very funny, really. oretend i said something funnier\\n\\noh my goody goodness\\n\\nthrows a tofu wrapper, a bit counter-effeective\\n\\naccidentally burned down an orphanage\\n\\ndig dug guy comes ot save pacman \"something somemthing, you dig?\" \"Haha, yeah I dig, Pac-man. I dig.\"\\n\\ncalls dig dug gu a blowhard\\n\\npac-man was the maniliest of men. you could tell because he had the word \"man\" right there in his name.",
+      "links": []
+    },
+    {
+      "pid": 15,
+      "name": "G5",
+      "text": "Gavin decided he\u2019d had enough of whatever this nonsense was, and took a good hard swipe with his claw at Mister Blister, tearing open a series of sores!\\n\\n\"Ow! OW! That really hurt! Ouchy ouch!\" Pus started to erupt from Mister Blister's open wounds, showering the surrounding buildings in what was a rather disgusting display! As the pus exploded from Mister Blister\u2019s bloated body, he deflated until he was nothing more than a pile of rather nasty flesh on the ground. Gavin had saved humanity!\\n\\nOf course, Gavin didn't really realise what he had done.\\n\\nBecause, Gavin?\\n\\nGavin was a sloth.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|slothIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "slothIntro",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "G4",
+      "text": "Gavin began to lick away at his genitals. To be honest, he didn't find the flavour to be too pleasing, but for some reason he just couldn't bring himself not to do it!\\n\\n\"Ha ha! As I thought! Like the humans, you will do nothing!\" Mister Blister flombled off to eradicate humanity from the planet.\\n\\nFrankly, Gavin wasn't too fussed about this. In fact, he didn't really understand what was going on and continued to merrily lick his own genitals.\\n\\nBecause, Gavin?\\n\\nGavin is a sloth.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|slothIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "slothIntro",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "G3",
+      "text": "[[Gavin licked his gentials.|G4]]\\n[[Gavin took a swipe with his claws.|G5]]\\n[[Gavin had a little lie down.|G6]]",
+      "links": [
+        {
+          "text": "Gavin licked his gentials.",
+          "destination": {
+            "name": "G4",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Gavin took a swipe with his claws.",
+          "destination": {
+            "name": "G5",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Gavin had a little lie down.",
+          "destination": {
+            "name": "G6",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "P4",
+      "text": "I fire up the game and quickly get distracted by making people explode with comically over-sized fists, causing me to miss the competition deadline.\\n\\nNo work and all play makes me a chump!\\n\\n[[Undo! UNDO!|P2]]",
+      "links": [
+        {
+          "text": "Undo! UNDO!",
+          "destination": {
+            "name": "P2",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "G1",
+      "text": "Gavin climbed out through his apartment window and plopped himself onto the streets below, which were now flooded with panic. It soon became clear that it was due to a sudden lack of food worldwide. Well, a lack of food with the exception of beetroot, but that hardly counts as a food.\\n\\nBut who made it happen? How did it happen? When did it happen? Where did it happen? Which did it happen?\\n\\nActually, let's just focus on the first one.\\n\\n<<if $blister eq 1>><<display 'blist2'>><<endif>><<if $yorke eq 1>><<display 'yorke2'>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "blist2",
+            "pid": 9
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "yorke2",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "D4A",
+      "text": "I munch the burger down. Unfortunately, the other ingredients have already been tainted by the beetroot juice, causing me to rush to the loo and vomit violently. \\n\\nThe fact that the burger has been sitting out on my desk for a few days may also have been a contributing factor.\\n\\nWait... vomit as a super power... brilliant!\\n\\nSadly, it appears I\u2019m going to be spending the next hour with my head hovering over the toilet, causing me to miss the competition deadline.\\n\\nIt makes me make a sad face. Like this:\\n\\n:(\\n\\n[[Undo! UNDO!|D2A]]",
+      "links": [
+        {
+          "text": "Undo! UNDO!",
+          "destination": {
+            "name": "D2A",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "PP6A",
+      "text": "Peter frowned. Once a great origami master, he vowed to never practice the art again after it once led to him accidentally burning down an orphanage. But he needed his skills again.\\n\\nThe world needed the Perferator again.\\n\\nHe took some paper and carefully folded it into an egg beater.\\n\\n\"Give up now and accept this new world. You can never defeat me,\" declared Yorke. \"I am a rock star!\"\\n\\nPeter replied with a cold, hard stare.\\n\\n\"Paper... beats rock.\"\\n\\nPeter jammed the egg beater into the synthesiser, twisting it and turning it, causing Yorke to spasm violently, much like he does in his music videos! Eventually, Yorke simply crumbled lifelessly to the ground, the world safe from his tyranny.\\n\\nThe Perferator had saved the world. Finally, Peter Paper could stop feeling guilty. He could finally move on.\\n\\nHe never drank another Gold Rush.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|paperIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "paperIntro",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "G3A",
+      "text": "[[Gavin licked his gentials.|G4A]]\\n[[Gavin took a swipe with his claws.|G5A]]\\n[[Gavin had a little lie down.|G6A]]",
+      "links": [
+        {
+          "text": "Gavin licked his gentials.",
+          "destination": {
+            "name": "G4A",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Gavin took a swipe with his claws.",
+          "destination": {
+            "name": "G5A",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Gavin had a little lie down.",
+          "destination": {
+            "name": "G6A",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "yorke1",
+      "text": "Suddenly, a large amount of fog appeared to the north. A shadow emerged from these mists, revealing it to be none other than a small ginger-haired chap named Thom Yorke. Dressed in a garment created out of garbage bags and banana peels (which he would occasionally strip off and smoke), he was armed with a synthesiser embedded into his chest. Occasionally he would program it to make a helicopter sound and then aggressively spin his body around with his arms stuck out to mimic blades, until he collapsed and vomited on his own back.\\n\\nHe suddenly walked into a wall, saying \"excuse me, Ma'am,\" before slamming into a pole. After orientating himself, he looked squarely at Peter with an evil smirk. It was clear he was behind this chaos.\\n\\nPeter was furious, disgusted by Yorke\u2019s heinous acts! \"You're a creep, Yorke! You're a weirdo! What the hell are you doing here? You don't belong here!\" Yorke didn't even flinch, continuing to smirk wildly while rolling his one eye that wasn't lazy (in fact, it held a part-time job at Wal-Mart). \\n\\n\"I want to recreate the world in my image,\" replied Yorke. \"For all the world to be as dull and drab as the music I create. This is why I made beetroot the only food on the planet. It mirrors my music perfectly.\"\\n\\nThe sky had become filled with dark clouds, making the confrontation ever so dramatic. Rain even started to pour, and the only thing anyone could hear was the pitter patter of little rain feet plodding on the ground. The only thing that could have made it more dramatic would have been if John Williams composed the score, but tragically, he was killed after Thom Yorke stabbed him with a large building.\\n\\n\"I'm not going to let you get away with this, you bastard!\" Peter screamed!\\n\\n<<display 'PP3A'>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "PP3A",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "yorke2",
+      "text": "Suddenly, a large amount of fog appeared to the north. A shadow emerged from these mists, revealing it to be none other than a small ginger-haired chap named Thom Yorke. Dressed in a garment created out of garbage bags and banana peels (which he would occasionally strip off and smoke), he was armed with a synthesiser embedded into his chest. Occasionally he would program it to make a helicopter sound and then aggressively spin his body around with his arms stuck out to mimic blades, until he collapsed and vomited on his own back.\\n\\nHe suddenly walked into a wall, saying \"excuse me, Ma'am,\" before slamming into a pole. After orientating himself, he looked squarely at Gavin.\\n\\n\"I suppose you're wondering why I did this,\" said Yorke, somehow assuming that Gavin realised he was behind this chaos. \"I want to recreate the world in my image. For all the word to be as dull and drab as the music I create. This is why I made beetroot the only food on the planet. It mirrors my music perfectly.\"\\n\\n<<display 'G3A'>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "G3A",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "D2A",
+      "text": "I take the beetroot out. I don\u2019t even like touching it! \\n\\nWait... a world where beetroot is the main source of food... what a fantastic dramatic premise!\\n\\n[[How enticing! Go for it!|D3A]]\\n[[Eat the burger eat the burger eat the burger|D4A]]\\n",
+      "links": [
+        {
+          "text": "How enticing! Go for it!",
+          "destination": {
+            "name": "D3A",
+            "pid": 65
+          }
+        },
+        {
+          "text": "Eat the burger eat the burger eat the burger",
+          "destination": {
+            "name": "D4A",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "StoryTitle",
+      "text": "Last Minute",
+      "links": []
+    },
+    {
+      "pid": 27,
+      "name": "D2B",
+      "text": "Okay! <<if $origami eq 1>>Peter Paper the Perferator as the hero!<<endif>><<if $sloth eq 1>>A sloth as the hero!<<endif>> Beetroot as the source of conflict! Thom Yorke as the villain!\\n\\n<html><center><h3>LET'S BEGIN...</h3></html>\\n<<set $yorke = 1>><<if $origami eq 1>><<display 'paperIntro'>><<endif>><<if $sloth eq 1>><<display 'slothIntro'>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "paperIntro",
+            "pid": 38
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "slothIntro",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Meanwhile, Thom Yorke crawled out from underneath the smashed piano and wrung his bony hands with malice.",
+      "text": "Meanwhile, Thom Yorke crawled out from underneath the smashed piano and wrung his bony hands with malice.  \"Now it is time for my brilliant plan to come to fruition!\"  He looked down at what was left of the piano, and wryly remarked, \"Well, it appears your frame has been CLEFt asunder!  Clearly you didn't MEASURE up.  Take NOTE:  if you wish to BEAT me, you need to be prepared to face the MUSIC.\"  These music-themed puns continued for another twenty minutes, including a questionable one involving the word \"pianist.\"\\n\\n\"Now, where was I?  Oh yes, the second MOVEMENT of my plan!\"  Thom tightened his goggles and began handing out pamphlets extoling the spiritual nutrients to be found through Beetroot.  He even had T-shirts and rubber awareness bracelets!  Mostly though he just injected people left and right with syringes chock-full of the beetroot fever virus.\\n\\nThe sky had become filled with dark clouds, so everything was really very dark and dramatic. So dramatic, that it was even raining and the only thing anyone could hear was thunder and the pitter patter of little rain feet plodding on the ground. The only thing that could make it more dramatic was if John Williams was doing the score, but tragically, he was killed after Thom Yorke stabbed him with a large building.\\n\\nAP and Yorke faced each other, in a very dramatic way to go with the previously set mood. AP was furious, disgusted with Yorkes henious acts! \"You're a creep, Yorke! You're a weirdo! What the hell are you doing here?? You don't fucking belong here, Yorke!!\" Yorke didn't even flinch and just smirked and rolled his eye that wasn't lazy and even had a full-time job working at a hotdog factory. \"mmmurmimspecialnowuurrmmmsofuckingspecial\" mumbled Yorke. \"And for what, Yorke, for what? All of this was just to give your life meaning? To destory the meaning of everyone elses lives and infect them with the Pacman Fever? And look what you've done to HIM!\"\\n\\nAP kneeled beside Pacman, who was lying on the ground close to death. His eyes were in the back of his head, and blood and vomit and something that looked suspiciously like semen was spurting from his mouth \"Stay with me, Pacman!\" AP pleaded as he shook pacmans limp body, \"don't you fucking leave me, man!\" a tear rolled down from APs face and onto pacmans face, who felt nothing.\\n\\nYorke suddenly started having epelictic spasms and screamed\\n\\nthere's nothing you can do!!!\\nthere's nothing you can do!!!\\nthere's nothing you can do!!!\\nthere's nothing you can do!!!\\nthere's nothing you can do!!!\\nthere's nothing you can do!!!\\neskimo in the boiler room!!!\\nthere's nothing you can do!!!\\n\\nAP refused to give up. \"Pacman, you fuck! don't leave me here! you've spent your whole life fighting ghosts, and now you're gonna be one! You're just going to become a ghost of your formerself! Come back, Pacman, don't let them win! Don't let Yorke win!\"\\n\\n\"TIME'S UP TIME'S UP TIME'S UP!!!\", screamed yorke. He hasitly waddled over to AP and kicked him right in his chubby ol' ass. AP stumbled to get back up, and felt his ass only to discover a hole there! I mean, one apart from the pooping one. \"FUCK!\" AP said to himself, \"the rain has made me all soggy! I don't stand a chance!\" \\n\\nYorke smiled in a very evil and sinister way, the way Dick Cheney does especially while rebuilding his cheese hair. Yorke striped his chest bare, revealing the synthensiser embedded there. He set it from irritating beeping... to MURDER. \"SAY GOODBYE, CHUBBY\" he screamed, as he reached for the on button. Suddenly, he felt a tap on his shoulder and he turned around.\\n\\n\"Sythensise THIS!\" said Pacman, as he punched Yorke right in the chest and sent him flying across the field. \"Pacman! you made it!\" Pacman struck a manly pose and said \"You think i'd miss this party?\"",
+      "links": []
+    },
+    {
+      "pid": 29,
+      "name": "conflict",
+      "text": "Time to think of a conflict! Maybe eating a snack will help me come up with ideas.\\n\\nHm, on my desk there's a slightly nibbled \"Aussie Burger\" which consists of a beef patty, tomato, lettuce, onion, cheese, bacon, egg, tomato sauce (or \u201cketchup\u201d) and BEETROOT, EW, NASTY.\\n\\nMy reaction to the latter ingredient may have hinted that it's the reason the burger is only slightly nibbled. I somehow managed to forget beetroot is in this particular variety of burger when I purchased it, and oh my goodness is it ever disgusting.\\n\\nNow, I don't mean to offend any beetroot fans out there, but they're all scum. How can any good person enjoy something that tastes like dirt!\\n\\n[[Take the beetroot out.|D2A]]\\n\\n",
+      "links": [
+        {
+          "text": "Take the beetroot out.",
+          "destination": {
+            "name": "D2A",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "slothIntro",
+      "text": "\"I'm sorry Gavin. It just isn't working out. You're real cute and all, but you're also lazy, unemployed and emotionally distant. Furthermore, you're a sloth.\"\\n\\nThis was all true and Gavin didn't deny it. This is primarily because, as a sloth, Gavin didn't really comprehend the situation and just stared at his soon to be ex-girlfriend with indifference. \\n\\n\"See! This is exactly what I'm talking about! I'm sorry Gavin. It's over.\" She walked out of the door, and by extension, Gavin's life.\\n\\nIt is a bit of a mystery as to how a sloth came to date Portuguese supermodel Seios Grandes in the first place. They originally met at a charity fundraiser for sufferers of paraesthesia (also known as \"pins and needles\") where Gavin won an airsickness bag that was once famously used by Marilyn Munroe with a bid of eight hundred thousand dollars. How a sloth managed to become invited to such an event, bid on such an item and obtain such an amount of money was also a mystery, which is exactly what attracted Seios to him. He was a sloth of mystery. Plus, he was incredibly cute.\\n\\nBut over time mysteries will fade and all that was left was his cuteness which apparently wasn't enough to sustain a healthy relationship.\\n\\nGavin sat in the middle of his luxury New York apartment, feeling rather nonplussed about the whole situation.\\n\\n[[Gavin went outside.|G1]]\\n[[Gavin stayed in his apartment.|G2]]",
+      "links": [
+        {
+          "text": "Gavin went outside.",
+          "destination": {
+            "name": "G1",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Gavin stayed in his apartment.",
+          "destination": {
+            "name": "G2",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "P3",
+      "text": "Ah. I became quite moody after I first purchased this collection of arcade classics as it turns out none of the games have local multiplayer. I mean, what the hell! These games were made to be played with people in the same room, back when their cabinets were crammed in arcades across the nation!\\n\\nOkay, okay, calm down. I need to focus or I won't get my game finished. Let's just see if any of the game titles inspire me.\\n\\n[[Sky Kid... that's inspiring!|P5]]\\n[[No, Pac-Man! Now THAT'S inspiring!|P7]]\\n[[Look for inspiration elsewhere.|hero]]",
+      "links": [
+        {
+          "text": "Sky Kid... that's inspiring!",
+          "destination": {
+            "name": "P5",
+            "pid": 36
+          }
+        },
+        {
+          "text": "No, Pac-Man! Now THAT'S inspiring!",
+          "destination": {
+            "name": "P7",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Look for inspiration elsewhere.",
+          "destination": {
+            "name": "hero",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "P1",
+      "text": "I take a look at my DVD rack which I had cunningly reengineered into holding my Xbox games. I casually looked over my collection until I got to the final two; Namco Museum Virtual Arcade and Saints Row: The Third.\\n\\n[[Take a closer look at Saints Row: The Third.|P2]]\\n[[Take a closer look at Namco Museum Virtual Arcade.|P3]]",
+      "links": [
+        {
+          "text": "Take a closer look at Saints Row: The Third.",
+          "destination": {
+            "name": "P2",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Take a closer look at Namco Museum Virtual Arcade.",
+          "destination": {
+            "name": "P3",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "hero",
+      "text": "Hm, the story needs a hero. Let's have a mosey about the room and see what I can find!\\n\\n[[Take a gander at my desk.|D1]]\\n[[Take a peek at my shelf.|S1]]\\n[[Take a look at my DVD rack.|P1]]",
+      "links": [
+        {
+          "text": "Take a gander at my desk.",
+          "destination": {
+            "name": "D1",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Take a peek at my shelf.",
+          "destination": {
+            "name": "S1",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Take a look at my DVD rack.",
+          "destination": {
+            "name": "P1",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "D1B",
+      "text": "The first thing that catches my eye is a Radiohead album that an ex-girlfriend lent me. It was an unsuccesful attempt to convince me that the band actually ISN'T terribly dull. She ended up dumping me, but not because of that. It was something about how I never listened to her, I don't know, I wasn't really paying attention.\\n\\nWait... Thom Yorke, the singer from Radiohead! What a perfect creep for the role of villain!\\n\\n\\n[[Now that's special!|D2B]]\\n[[I wish it was special! There's gotta be something else!|villain]]",
+      "links": [
+        {
+          "text": "Now that's special!",
+          "destination": {
+            "name": "D2B",
+            "pid": 27
+          }
+        },
+        {
+          "text": "I wish it was special! There's gotta be something else!",
+          "destination": {
+            "name": "villain",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "pacman death",
+      "text": "you're supposed to save pills! havent you ever played pacman before?",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "P5",
+      "text": "Okay, no, seriously, they're a multi-million dollar company and they couldn't throw in some local multiplayer? What the hell? It would have cost them like twenty bucks to implement it! Uh oh, I feel a blind rage coming on!\\n\\nTEN MINUTES LATER\\n\\nAnd another thing... wait... damn it, I've been so distracted with being angry that I missed the deadline!\\n\\nCurse you, Namco! Curse you!\\n\\n[[Undo! UNDO!|P3]]",
+      "links": [
+        {
+          "text": "Undo! UNDO!",
+          "destination": {
+            "name": "P3",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "G5A",
+      "text": "Gavin decided he'd had enough of whatever this nonsense is, and took a good hard swipe with his claw at Yorke\u2019s embedded synthesiser!\\n\\nYorke stumbled back, sparks shooting out from the now exposed wires in his chest. At first it seemed the nefarious Brit had been vanquished before he suddenly transformed into a giant robot as towering and monstrous as Oprah Winfrey's ego. This Yorke-Bot then shot flames out of his titanium navel, burning down several nearby used bookstores, then removed a large green broadsword from his chest cavity and began flailing it about wildly. Taking unusual action for a sloth, Gavin grabbed a nearby thermonuclear missile and the author suddenly realised he didn't have enough time left to write a dramatic fight scene involving a giant robot and a sloth, so decided to just skip ahead.\\n\\nGavin surveyed the wreckage, not comprehending what even transpired that day. Then again, how could he?\\n\\nBecause, Gavin?\\n\\nGavin is a sloth.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|slothIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "slothIntro",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "paperIntro",
+      "text": "Ever since the dawn of man, we have gazed into the night sky and asked ourselves impossible questions:  Who are we?  Why are we here?  Is Orion naked?  Exactly how buff is he?  Does he shave \"downtown?\"  Is he even of age?  Does it really matter?  But none of these questions are as boring as \"Is there a God up there?\"\\n\\nPeter Paper didn't wonder about any of these questions. He was too stricken with guilt. Guilt that he tried to drown with alcohol, but tragically it would seem his guilt could swim.\\n\\n\"So what shall it be, sir?\" asked Alloysius K Sterngrofferstein. He was a respectable middle-aged bartender and proprietor of this particular establishment known as Ye Olde Horse-Drawn Carriage.  As proof of his respectability, he always wore a tuxedo to work.  As a child, Alloysius only had two interests.  Civil War history, and bartending.\\n\\n\"I'll have a Whiskey Seven,\" replied Peter.\\n\\n\"That beverage is made with Seven-Up.  You should know by now that Seven-Up was not invented until 1929, and as such we carry none, since Ye Old Horse-Drawn Carriage is a 1860s themed bar.\"  Peter sighed and ordered the only drink on the menu he could stand, the Gold Rush.\\n\\nWhile it did not have any actual gold in it, or even fool's gold, the Gold Rush was a very gold beverage.  Anyone can make a Gold Rush by simply pouring even quantities of rum and melted butter into a mug and stirring.  It was the sort of beverage sober people loved in very small quantities, and drunk people loved in very large quantities.\\n\\nSuddenly, a huge ruckus could be heard from outside.\\n\\n[[Peter ignored it and drank a Gold Rush.|PP1]]\\n[[Peter went outside to investigate.|PP2]]",
+      "links": [
+        {
+          "text": "Peter ignored it and drank a Gold Rush.",
+          "destination": {
+            "name": "PP1",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Peter went outside to investigate.",
+          "destination": {
+            "name": "PP2",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "standard",
+      "text": "Gaving climbed out of his window and plomped onto the streets which were now flooded with panic. It soon became clear that it was due to the sudden lack of food worldwide. Well, food except beetroot, but that hardly counts as a food.\\n\\nBut how did this happen? Who made it happen?",
+      "links": []
+    },
+    {
+      "pid": 40,
+      "name": "slothEnemyMonologue",
+      "text": "'I bet you're wondering why I did this!\" \\n\\noptions here\\n\\nAfter clearing growing impatient, the cuddler screeches \"Well, I'm going to tell you anyway!\"",
+      "links": []
+    },
+    {
+      "pid": 41,
+      "name": "PP2",
+      "text": "Peter dramatically burst onto the streets, which were now flooded with panic. It soon became clear that it was due to a sudden lack of food worldwide. Well, a lack of food with the exception of beetroot, but that hardly counts as a food.\\n\\nBut who made it happen? How did it happen? When did it happen? Where did it happen? Which did it happen?\\n\\nActually, let's just focus on the first one.\\n\\n<<if $blister eq 1>><<display 'blist1'>><<endif>><<if $yorke eq 1>><<display 'yorke1'>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "blist1",
+            "pid": 8
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "yorke1",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "PP1",
+      "text": "Peter decided to ignore the noise coming from outside and to also ignore his doctor's advice to watch his cholesterol intake.\\n\\nSee, Peter had tried to drown his guilt with quite a few buttery Gold Rushes. Considerably too many, in fact, and he continued to chug \u2018em down. Alloysius advised him to stop after he noticed that Peter had started to sweat butter, but Peter just demanded more.\\n\\nEventually the chaos from outside broke into the bar, setting it ablaze. Everyone inside managed to safely escape. Well, all except for poor Peter who, by that point, was 98% butter and melted.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|paperIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "paperIntro",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "PP3",
+      "text": "[[Peter makes an origami vacuum cleaner.|PP4]]\\n[[Peter makes an origami ice pick.|PP5]]\\n[[Peter makes an origami egg beater.|PP6]]\\n",
+      "links": [
+        {
+          "text": "Peter makes an origami vacuum cleaner.",
+          "destination": {
+            "name": "PP4",
+            "pid": 5
+          }
+        },
+        {
+          "text": "Peter makes an origami ice pick.",
+          "destination": {
+            "name": "PP5",
+            "pid": 45
+          }
+        },
+        {
+          "text": "Peter makes an origami egg beater.",
+          "destination": {
+            "name": "PP6",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "PP6",
+      "text": "Peter frowned. Once a great origami master, he vowed to never practice the art again after it once led to him accidentally burning down an orphanage. But he needed to his skills again.\\n\\nThe world needed the Perferator again.\\n\\n\"Time to give you a good beating,\" Peter said casually.\\n\\nHe took some paper and carefully folded it into an egg beater and whirled it into Mister Blister\u2019s bloated body!\\n\\n\"Ha ha! Feel free to beat me off all you like!\" boasted the grotesque creature! The beater became caught in Blister's skin, which slowly enveloped it, along with Peter! Eventually he\u2019s entirely swallowed by the fleshy mound, and drowns in the pus bubbling inside. \\n\\nWhat a rotten way to die!\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|paperIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "paperIntro",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "PP5",
+      "text": "Peter frowned. Once a great origami master, he vowed to never practice the art again after it once led to him accidentally burning down an orphanage. But he needed to his skills again.\\n\\nThe world needed the Perferator again.\\n\\n\"Mind if I... pick your brains?\" Peter asked casually.\\n\\nHe took some paper and carefully folded it into an ice pick, and slammed it into Mister Blister! The grotesque creature screamed in agony, like this: \u201cAhhhoohhhaahhhhoohah!\u201d\\n\\nPeter pulled out the pick, causing pus to violently erupt from the wound, showering the surrounding buildings in what was a rather revolting display! As the pus emptied from his body, Mister Blister slowly deflated until he was nothing than a disgusting pile of flesh lying in the middle of the street!\\n\\nThe nightmare was over. The Perferator had saved the world. Finally, Peter Paper could stop feeling guilty. He could finally move on.\\n\\nHe never drank another Gold Rush.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|paperIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "paperIntro",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "PP4A",
+      "text": "Peter frowned. Once a great origami master, he vowed to never practice the art again after it once led to him accidentally burning down an orphanage. But he needed his skills again.\\nThe world needed the Perferator again.\\n\\nHe took some paper and carefully folded it into a fully functioning vacuum cleaner and attacked Yorke with it!\\n\\nUnfortunately, all it really did was ruffle his clothes a little. Really, one has to wonder what Peter was thinking when he made this thing. \u201cWell,\u201d said Peter rather sheepishly. \u201cThat plan sure... sucked.\u201d\\n\\nIn retaliation to this sudden and unwanted cleansing, Yorke cranked his synthesiser into overdrive, shattering all the windows in the surrounding buildings, and also Peter\u2019s skull.\\n\\nWith the Perferator out of the way, Yorke went on to rebuild the world in his image with ease.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|paperIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "paperIntro",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "S1B",
+      "text": "I began to wander over to the shelf, only to fall flat on my face. This is primarily due to the massive blister on my foot from running ever so hard (and also while wearing inappropriate shoes. Inappropriate in that they looked like genitals.)\\n\\nWait... blisters... a villain who gives you blisters! Mister Blister!\\n\\n[[Gross, yet intruging!|S2B]]\\n[[Wait, am I high? That's a terrible idea!|villain]]\\n",
+      "links": [
+        {
+          "text": "Gross, yet intruging!",
+          "destination": {
+            "name": "S2B",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Wait, am I high? That's a terrible idea!",
+          "destination": {
+            "name": "villain",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "G2",
+      "text": "Gavin continued to sit in the middle of his luxury New York apartment, feeling rather nonplussed about the whole situation.\\n\\nOutside he could hear screams, explosions, sirens and all the other sounds one associates with the apocalypse. But Gavin wasn't one of those ones. In fact, all of this noise didn't really move him one way or another.\\n\\nBecause, Gavin?\\n\\nGavin is a sloth.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|slothIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "slothIntro",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "blisterAttackOrigami",
+      "text": "gives blisters on your hands\\n\\nluckily i can make them with my feet",
+      "links": []
+    },
+    {
+      "pid": 50,
+      "name": "G4A",
+      "text": "Gavin began to lick away at his genitals. To be honest, he didn't find the flavour to be too pleasing, but for some reason he just couldn't bring himself not to do it!\\n\\nSuddenly, a piano fell on Thom Yorke. He crawled out from underneath it and wrung his bony hands with malice.  \"Now it is time for my brilliant plan to come to fruition!\"  He looked down at what was left of the piano, and wryly remarked, \"Well, it appears your frame has been CLEFt asunder!  Clearly you didn't MEASURE up.  Take NOTE:  if you wish to BEAT me, you need to be prepared to face the MUSIC.\"  These music-themed puns continued for another twenty minutes, including a questionable one involving the word \"pianist.\"\\n\\n\"Now, where was I?  Oh yes, the second MOVEMENT of my plan!\"  Thom tightened his goggles and began handing out pamphlets extolling the spiritual nutrients to be found through beetroot.  He even had T-shirts and rubber awareness bracelets!  Mostly though, he just injected people left and right with syringes chock-full of the beetroot fever virus.\\n\\nThen he got hit by a truck.\\n\\nGavin didn't realise just how close the human race was to destruction that day. Well, he wasn't really capable of realising it.\\n\\nBecause, Gavin?\\n\\nGavin is a sloth.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|slothIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "slothIntro",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "stolen",
+      "text": "From distance came a distinct ringing sound. It was the phone ringing. Domino searched desperately for the phone, but it was nowhere to be found! \"Yo, RA! Where the mother fuck you put the phone, man?\" \"Do you mind? I'm trying to watch the football!\" My foot is going to kick yo balls if you don't help me find the fucking phone, bitch! I don't care if the sun DOES shine out yo fat ass\" \"I don't have time for this! I bet both my staff and scarab! I need to watch the  game and see if I need to curse the other team!\" \"yo my staff is about to slap yo across the face, bitch.\" \"why is it so important anyway? it will just be a telemarketer trying to sell us some more locusts!\" \"it might be my mother, man!\" \"Fiinneee\"\\n\\nBasti was a german fellow who was into all sort of disgusting sexual perversions that I will not enumerate here, for the sake of the reader and also for the writer. \\n\\nHe was also visibly pleased with RAs birdlike appearance.  It was a very awkward thing to narrate.\\n\\nPeople were gathering around him in a perfect circle, yelling and sneering. People were pointing at him and saying things like, \"You can't play, Rudy! You're too damn small! You'll break! You can't do it!\" People from all races and creeds had united to express a lack of confidence in him due to his small stature.\\n\\nRudy woke up in a cold sweat. No one ever believed in him. He reached for the glass of water he kept on his nightstand and downed the whole thing in one gulp. They didn't believe he could play football for Notre Dame due to his size, but he proved them wrong. Before that, they didn't think he could learn to play the piano without being able to reach an octave, but he proved them wrong. And before that, they didn't think he could learn to read, but he proved them wrong too. People were such dicks to him. Fuck limitations. Rudy was so pissed off he broke his water glass in his fist.\\n\\nRudy would never be able to sleep again. \\n\\nNo, damn it. He WOULD sleep. Fuck limitations.\\n\\nWell, actually, that smell was pretty typical for every Sperm Bank branch in the galaxy, since each one was built inside the belly of a mighty sperm whale right before it was fitted with breathing apparatus and immediately hurled into outer space.  The shareholders were pissed at the direction the company was heading, that's for sure.",
+      "links": []
+    },
+    {
+      "pid": 52,
+      "name": "PP5A",
+      "text": "Peter frowned. Once a great origami master, he vowed to never practice the art again after it once led to him accidentally burning down an orphanage. But he needed to his skills again.\\n\\nThe world needed the Perferator again.\\n\\nHe took some paper and carefully folded it into an ice pick and then jammed it into Yorke's brain! Unfortunately, he struck a generator of some kind and, as we all learned in science class, paper is an excellent electrical conductor.\\n\\nThe volts shot up through the paper and into Peter's body, sending him flying across the street and smash against a wall! He crumpled to the ground, like the pieces of paper he so readily folds.\\n\\nYorke stood over Peter's singed, twitching body. \"Shocking.\"\\n\\nWith the Perferator out of the way, Yorke went on to rebuild the world in his image with ease.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|paperIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "paperIntro",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "G6",
+      "text": "Gavin decided that it was the perfect time to have a little lie down, and proceeded to do so. Oh my goody goodness, did he look ever so adorable!\\n\\n\"Ha ha! As I thought! Like the humans, you will do nothing!\" Mister Blister flombled off to eradicate humanity from the planet.\\n\\nFrankly, Gavin wasn't too fussed about this. In fact, he didn't really understand what was going on and decided to have a nap.\\n\\nBecause, Gavin?\\n\\nGavin is a sloth.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|slothIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "slothIntro",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "PC2",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 55,
+      "name": "PP3A",
+      "text": "[[Peter makes an origami vacuum cleaner.|PP4A]]\\n[[Peter makes an origami ice pick.|PP5A]]\\n[[Peter makes an origami egg beater.|PP6A]]\\n\\n",
+      "links": [
+        {
+          "text": "Peter makes an origami vacuum cleaner.",
+          "destination": {
+            "name": "PP4A",
+            "pid": 46
+          }
+        },
+        {
+          "text": "Peter makes an origami ice pick.",
+          "destination": {
+            "name": "PP5A",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Peter makes an origami egg beater.",
+          "destination": {
+            "name": "PP6A",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "G6A",
+      "text": "Gavin decided that it was the perfect time to have a little lie down, and proceeded to do so. Oh my goody goodness, did he look ever so adorable!\\n\\nSuddenly, a piano fell on Thom Yorke. He crawled out from underneath it and wrung his bony hands with malice.  \"Now it is time for my brilliant plan to come to fruition!\"  He looked down at what was left of the piano, and wryly remarked, \"Well, it appears your frame has been CLEFT asunder!  Clearly you didn't MEASURE up.  Take NOTE:  if you wish to BEAT me, you need to be prepared to face the MUSIC.\"  These music-themed puns continued for another twenty minutes, including a questionable one involving the word \"pianist.\"\\n\\n\"Now, where was I?  Oh yes, the second MOVEMENT of my plan!\"  Thom tightened his goggles and began handing out pamphlets extolling the spiritual nutrients to be found through beetroot.  He even had T-shirts and rubber awareness bracelets!  Mostly though, he just injected people left and right with syringes chock-full of the beetroot fever virus.\\n\\nThen he got hit by a truck.\\n\\nGavin didn't realise just how close the human race was to destruction that day. Well, he wasn't really capable of realising it.\\n\\nBecause, Gavin?\\n\\nGavin is a sloth.\\n\\n<html><center><h3>THE END</h3></html>\\n\\n[[Restart this story!|slothIntro]]",
+      "links": [
+        {
+          "text": "Restart this story!",
+          "destination": {
+            "name": "slothIntro",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "pacmanYorkeEnding",
+      "text": "The sky had become filled with dark clouds, so everything was really very dark and dramatic. So dramatic, that it was even raining and the only thing anyone could hear was thunder and the pitter patter of little rain feet plodding on the ground. The only thing that could make it more dramatic was if John Williams was doing the score, but tragically, he was killed after Thom Yorke stabbed him with a large building.\\n\\nPac-Man and Yorke faced each other, in a very dramatic way to go with the previously set mood. Pac-Man was furious, disgusted with Yorkes henious acts! \"You're a creep, Yorke! You're a weirdo! What the hell are you doing here?? You don't fucking belong here, Yorke!!\" Yorke didn't even flinch and just smirked and rolled his eye that wasn't lazy and even had a full-time job working at a hotdog factory.\\n\\n \"mmmurmimspecialnowuurrmmmsofuckingspecial\" mumbled Yorke. \"And for what, Yorke, for what? All of this was just to give your life meaning? To destory the meaning of everyone elses lives and infect them with the Pacman Fever? And look what you've done to HIM!\"\\n\\nAP kneeled beside Pacman, who was lying on the ground close to death. His eyes were in the back of his head, and blood and vomit and something that looked suspiciously like semen was spurting from his mouth \"Stay with me, Pacman!\" AP pleaded as he shook pacmans limp body, \"don't you fucking leave me, man!\" a tear rolled down from APs face and onto pacmans face, who felt nothing.\\n\\nYorke suddenly started having epelictic spasms and screamed\\n\\nthere's nothing you can do!!!\\nthere's nothing you can do!!!\\nthere's nothing you can do!!!\\nthere's nothing you can do!!!\\nthere's nothing you can do!!!\\nthere's nothing you can do!!!\\neskimo in the boiler room!!!\\nthere's nothing you can do!!!\\n\\nAP refused to give up. \"Pacman, you fuck! don't leave me here! you've spent your whole life fighting ghosts, and now you're gonna be one! You're just going to become a ghost of your formerself! Come back, Pacman, don't let them win! Don't let Yorke win!\"\\n\\n\"TIME'S UP TIME'S UP TIME'S UP!!!\", screamed yorke. He hasitly waddled over to AP and kicked him right in his chubby ol' ass. AP stumbled to get back up, and felt his ass only to discover a hole there! I mean, one apart from the pooping one. \"FUCK!\" AP said to himself, \"the rain has made me all soggy! I don't stand a chance!\" \\n\\nYorke smiled in a very evil and sinister way, the way Dick Cheney does especially while rebuilding his cheese hair. Yorke striped his chest bare, revealing the synthensiser embedded there. He set it from irritating beeping... to MURDER. \"SAY GOODBYE, CHUBBY\" he screamed, as he reached for the on button. Suddenly, he felt a tap on his shoulder and he turned around.\\n\\n\"Sythensise THIS!\" said Pacman, as he punched Yorke right in the chest and sent him flying across the field. \"Pacman! you made it!\" Pacman struck a manly pose and said \"You think i'd miss this party?\"\\n",
+      "links": []
+    },
+    {
+      "pid": 58,
+      "name": "B4",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 59,
+      "name": "cuddlerSlothEnding",
+      "text": "\"Argh! My cuddling powers seem weak on you! You're just so... so... RELAXED!\" The cuddler tries to express anger and frustration as much as a floating cloud of gas can, which apparently is not much.\\n\\n\"Looks like I'll have to go into overdrive!\"\\n\\nAND HE DIES",
+      "links": []
+    },
+    {
+      "pid": 60,
+      "name": "B1",
+      "text": "Ah, my comfy bed. I've had some fun times on there, if you know what I mean!\\n\\nI mean that I\u2019ve often sat on it while playing videogames.\\n\\nAlso, I\u2019ve occasionally used it while engaging in sexual activities! Teehee!\\n\\nHm, perhaps I should have a lie down! The comfyness of my bed may help me be creative!\\n\\n[[Sure!|B3]]\\n[[No way!|B2]]\\n",
+      "links": [
+        {
+          "text": "Sure!",
+          "destination": {
+            "name": "B3",
+            "pid": 62
+          }
+        },
+        {
+          "text": "No way!",
+          "destination": {
+            "name": "B2",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "B2",
+      "text": "Good idea! The comfyness of the bed will probably just make me fall asleep and miss the deadline, anyway!\\n\\nWait... the Comfy Cuddler! Some kind of being that incapacities its enemies by making them incredibly comfortable! Surely that is the perfect villain?\\n\\nUnfortunately, I would later come back to this node and realise I sure as heck don't have time to implement a third villain! Maybe in a post-competition release!\\n\\n[[Gosh, fine, what else is there?|villain]]",
+      "links": [
+        {
+          "text": "Gosh, fine, what else is there?",
+          "destination": {
+            "name": "villain",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "B3",
+      "text": "I lie down, only to accidentally fall asleep and realise I missed the deadline when I wake up!\\n\\nIn a very dramatic fashion, I raise my fists and scream \"Noooooooo!\" at the sky as rain falls on my face. That last bit I found rather strange as I remember installing a roof in my house.\\n\\nIT'S A SHAME MY ADVENTURE HAS ENDED HERE!\\n\\n[[Undo! UNDO!|B1]]",
+      "links": [
+        {
+          "text": "Undo! UNDO!",
+          "destination": {
+            "name": "B1",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "StoryAuthor",
+      "text": "Ruderbager Doppelganger",
+      "links": []
+    },
+    {
+      "pid": 64,
+      "name": "D4",
+      "text": "Alright! Peter Paper the Perferator it is!\\n\\n<<set $origami = 1>><<display 'conflict'>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "conflict",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "D3A",
+      "text": "Alright, beetroot used for evil purposes it is! \\n\\n<<display 'villain'>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "villain",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "D2",
+      "text": "Okay, let\u2019s see what we have her... OUCH! \\n\\nDamn it! I gave myself a paper cut!\\n\\nCrap, it's bleeding everywhere! Blood is flooding the room! Looks I need to rush to the emergency room and miss out on the competition.\\n\\nI'm sure seeing red now!\\n\\n[[Undo! UNDO!|D1]]",
+      "links": [
+        {
+          "text": "Undo! UNDO!",
+          "destination": {
+            "name": "D1",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "D3",
+      "text": "Brilliant idea, especially if I do say so myself! Perhaps making some origami will get creative juices pumping through my veins. \\n\\nUnfortunately, the last time I did any origami was during my Japanese classes back in primary school. I try to make a little Fukusuke, but my attempts to create one all end with me repeating the first syllable of its name quite frequently. This would be much easier if the paper was appropriately perforated.\\n\\nWait... perforating perfectly! What an amazing power that would be for a hero! A hero named... the PERFERATOR!\\n\\n[[Brilliant! Let's do it!|D4]]\\n[[Aw, heck no! I can think of something better!|hero]]",
+      "links": [
+        {
+          "text": "Brilliant! Let's do it!",
+          "destination": {
+            "name": "D4",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Aw, heck no! I can think of something better!",
+          "destination": {
+            "name": "hero",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "D1",
+      "text": "Hm, I don't see anything immediately heroic on my desk. If only there was a mirror! Oh ho!\\n\\nAlas, all I can see is a stack of seemingly random papers.\\n\\n[[Read through some of the papers.|D2]]\\n[[Make some origami.|D3]]\\n[[Go back to the drawing board!|hero]]\\n",
+      "links": [
+        {
+          "text": "Read through some of the papers.",
+          "destination": {
+            "name": "D2",
+            "pid": 66
+          }
+        },
+        {
+          "text": "Make some origami.",
+          "destination": {
+            "name": "D3",
+            "pid": 67
+          }
+        },
+        {
+          "text": "Go back to the drawing board!",
+          "destination": {
+            "name": "hero",
+            "pid": 33
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4613 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Speak in anger",
+      "text": "\"I hate you.\\n\\n[[I hope you die in this room.\"|who are you]]\\n",
+      "links": [
+        {
+          "text": "I hope you die in this room.\"",
+          "destination": {
+            "name": "who are you",
+            "pid": 140
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Lying in bed",
+      "text": "I sense a presence filling the room.\\n\\n[[Blink|angelz]]",
+      "links": [
+        {
+          "text": "Blink",
+          "destination": {
+            "name": "angelz",
+            "pid": 171
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Untitled Passage 15",
+      "text": "flashes of big words",
+      "links": []
+    },
+    {
+      "pid": 4,
+      "name": "Untitled Passage 16",
+      "text": "[[look <|left]] [[look ^|forward]] [[look >|right]]",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "angelfucker",
+      "text": "<<replace \"The angel kept coming back and nobody said anything.\">>The angel kept coming back and nobody said anything.\\n\\n<<replace \"They must have known.\">>They must have known.\\n\\n<<replace \"The walls glow, or maybe the walls get clearer. But I don't think you could miss it.\">>The walls glow, or maybe the walls get clearer. But I don't think you could miss it.\\n\\n<<replace \"And when it isn't happening:\">>And when it isn't happening:\\n\\n<<replace \"They hear me dry heaving in the bathroom. They hear the vomit splashing into the toilet.\">>They hear me dry heaving in the bathroom. They hear the vomit splashing into the toilet.\\n\\n<<replace \"They see me losing weight. They see me getting sunk-eyed. They see my hair falling out, getting thinner.\">>They see me losing weight. They see me getting sunk-eyed. They see my hair falling out, getting thinner.\\n\\n<<replace \"Something snapped inside me, staring at the hair in the sink, and I woke up, stupid stupid stupid, no one will save you, no one cares.\">>Something snapped inside me, staring at the hair in the sink, and I finally woke up, stupid stupid stupid, no one will save you, no one cares.\\n\\n<<replace \"No one cares when an angel touches you.\">>No one cares when an angel touches you.\\n\\n<<replace \"I realized what I had to do.\">>I realized what I had to do.\\n\\n<<replace \"I had to sacrifice my desire to be thought of as a good person.\">>I had to sacrifice my desire to be thought of as a good person.\\n\\n<<replace \"Because I knew they'd say I'd been asking for it.\">>Because I knew they'd say I'd been asking for it.\\n\\n<<replace \"Like I somehow deserved what happened to me.\">>Like I somehow deserved what happened to me.\\n\\n<<replace \"I knew what they'd call me when I left.\">>I knew what they'd call me when I left.\\n\\n<<replace \"They'd call me everything that had been done to me.\">>They'd call me everything that had been done to me.<<timedgoto \"angelfucked\" 5s>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "angelfucked",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "forest",
+      "text": "It was half an hour, I guess, tearing my way through thick, tangled branches heavy with detritus, when I came upon [[a|clearing]]\\n",
+      "links": [
+        {
+          "text": "a",
+          "destination": {
+            "name": "clearing",
+            "pid": 285
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "forfeit",
+      "text": "It is customary to forfeit before a certain number of tiles.\\n\\nWe are civilized, after all.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "basement",
+      "text": "Row after row of [[bottles]] behind smoked glass casing. Narrow stone steps lead [[up|monastery interior]].\\n\\n<<if $key eq 2>><<else>><<if $key eq 1>><<replace \"Unlock cabinet\">>[[Get your bottle]]<<endreplace>><<else>>The cabinets are locked.<<endif>><<endif>>\\n",
+      "links": [
+        {
+          "text": "bottles",
+          "destination": {
+            "name": "bottles",
+            "pid": 235
+          }
+        },
+        {
+          "text": "up",
+          "destination": {
+            "name": "monastery interior",
+            "pid": 215
+          }
+        },
+        {
+          "text": "Get your bottle",
+          "destination": {
+            "name": "Get your bottle",
+            "pid": 170
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "disembark",
+      "text": "You step from the elevator.\\n\\n[[New Heart City.|city]]",
+      "links": [
+        {
+          "text": "New Heart City.",
+          "destination": {
+            "name": "city",
+            "pid": 282
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "square-signer",
+      "text": "The square clinks into the jar.\\n\\nA splot of ink glistens at the end of your name on the paper where their finger moved a centimeter in surprise. A  small smile creeps along their lips.<<set $square = 1>>\\n\\n[[Wander|bide]]",
+      "links": [
+        {
+          "text": "Wander",
+          "destination": {
+            "name": "bide",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "bide-darkness",
+      "text": "<<timedgoto \"room\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "room",
+            "pid": 200
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "sleep",
+      "text": "Cool night on your face, blanket wrapped tight around, wind gently rolling across the <<if $jungle eq 1>>jungle<<endif>><<if $sea eq 1>>sea<<endif>><<if $desert eq 1>>sand<<endif>>, you drift [[away|dream]]",
+      "links": [
+        {
+          "text": "away",
+          "destination": {
+            "name": "dream",
+            "pid": 287
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Step2",
+      "text": "Your footsteps echo loudly. Your eardrums ache.\\n\\n[[Slow down]]",
+      "links": [
+        {
+          "text": "Slow down",
+          "destination": {
+            "name": "Slow down",
+            "pid": 274
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "circle-signer",
+      "text": "The circle clinks into the jar.\\n\\nThe signer nods and gestures to the next patron in line.<<set $circle = 1>>\\n\\n[[Wander|bide]]",
+      "links": [
+        {
+          "text": "Wander",
+          "destination": {
+            "name": "bide",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "storyAuthor",
+      "text": "porpentine",
+      "links": []
+    },
+    {
+      "pid": 16,
+      "name": "Gate",
+      "text": "<<if $key neq 2>>How will you survive in the outside world without a face?\\n\\n[[Stay|monastery]]<<else>>The gate creaks open, cold salt air whipping your face.\\n\\n[[Leave|sun]]\\n\\n[[Stay|monastery]]<<endif>>",
+      "links": [
+        {
+          "text": "Stay",
+          "destination": {
+            "name": "monastery",
+            "pid": 257
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "sun",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "webfont",
+      "text": "\\n  WebFontConfig = {\\n    google: { families: [ 'Averia+Serif+Libre::latin' ] }\\n  };\\n  (function() {\\n    var wf = document.createElement('script');\\n    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +\\n      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';\\n    wf.type = 'text/javascript';\\n    wf.async = 'true';\\n    var s = document.getElementsByTagName('script')[0];\\n    s.parentNode.insertBefore(wf, s);\\n  })(); ",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "Look around",
+      "text": "Your heart starts pounding.<<timedgoto \"Across the room\" 2s>>\\n",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "Across the room",
+            "pid": 245
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "hate",
+      "text": "I want them to feel pain. I want them to feel a fraction of what they did to me. I want to feel in control of my life again.\\n\\nI'm tired of turning the other cheek. I'm tired of feeling helpless. I'm tired of trying to get better while ignoring the things that hurt me. It's like trying to convalesce in a [[shark tank]].",
+      "links": [
+        {
+          "text": "shark tank",
+          "destination": {
+            "name": "shark tank",
+            "pid": 181
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "their outcome",
+      "text": "<<set $ai_health += 250>><<if $ai_health eq 1250>><<if $nemesis_gender eq \"She\">>Her<<endif>><<if $nemesis_gender eq \"Their\">>Their<<endif>><<if $nemesis_gender eq \"He\">>His<<endif>> palm unfolds. The tile is red.\\n\\n<<if $nemesis_gender eq \"She\">>She drops<<endif>><<if $nemesis_gender eq \"Their\">>They drop<<endif>><<if $nemesis_gender eq \"He\">>He drops<<endif>> the tile into <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>their<<endif>><<if $nemesis_gender eq \"He\">>his<<endif>> basket and [[tap]] the table.<<else>><<if $ai_health gte 2000>><<if $nemesis_gender eq \"She\">>She slides<<endif>><<if $nemesis_gender eq \"Their\">>They slide<<endif>><<if $nemesis_gender eq \"He\">>He slides<<endif>> from <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>their<<endif>><<if $nemesis_gender eq \"He\">>his<<endif>> chair and <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>their<<endif>><<if $nemesis_gender eq \"He\">>his<<endif>> skull cracks on the ground.\\n\\n[[Get up]]<<else>><<if $nemesis_gender eq \"She\">>Her<<endif>><<if $nemesis_gender eq \"Their\">>Their<<endif>><<if $nemesis_gender eq \"He\">>His<<endif>> palm unfolds. The tile is red.\\n\\n[[Okay|table]]<<endif>><<endif>>",
+      "links": [
+        {
+          "text": "tap",
+          "destination": {
+            "name": "tap",
+            "pid": 187
+          }
+        },
+        {
+          "text": "Get up",
+          "destination": {
+            "name": "Get up",
+            "pid": 157
+          }
+        },
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "table",
+            "pid": 154
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "angelfucked",
+      "text": "Angelfucker.<<timedgoto \"alone\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "alone",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "There is no fucking deserve.",
+      "text": "\"I'm giving this to you.\"\\n\\n[[Suppress your trembling|showdown]]",
+      "links": [
+        {
+          "text": "Suppress your trembling",
+          "destination": {
+            "name": "showdown",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "overwhelming",
+      "text": "People just disappear.<<timedgoto \"mortuary-darkness\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "mortuary-darkness",
+            "pid": 238
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "warmfist",
+      "text": "Your fist is warm.\\n\\nFeels wet.\\n\\n[[Unfold hand|unfold]]",
+      "links": [
+        {
+          "text": "Unfold hand",
+          "destination": {
+            "name": "unfold",
+            "pid": 143
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Fascination",
+      "text": "<<set $fascination += 1>><<if $fascination eq 1>>The curve of its cheekbones. The shiny obsidian of its mandibles. The humanoid curve of its skull.<<endif>><<if $fascination eq 2>>If you could just humanize it, or even terrestralize it. Reconcile the form with something comprehensible. Something mortal.<<endif>><<if $fascination eq 3>>But you look at the angel and all the human parts just make the angel parts look even more repulsive.<<endif>><<if $fascination eq 4>>Then why are you so wet?<<endif>>\\n\\n<<if $fascination gt 3>>[[hhhh|fascination_height]]<<else>>[[Ghhhhh|emotions]]<<endif>>",
+      "links": [
+        {
+          "text": "hhhh",
+          "destination": {
+            "name": "fascination_height",
+            "pid": 65
+          }
+        },
+        {
+          "text": "Ghhhhh",
+          "destination": {
+            "name": "emotions",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "hand-darkness",
+      "text": "<<timedgoto \"forest\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "forest",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "the tower",
+      "text": "The tower looms. They say it is a safe place for travelers.<<if $sea eq 1>><<loopsound \"sea.mp3\">><<endif>><<if $desert eq 1>><<loopsound \"desert.mp3\">><<endif>><<if $jungle eq 1>><<loopsound \"jungle.mp3\">><<endif>>\\n\\n[[Approach|tower]]",
+      "links": [
+        {
+          "text": "Approach",
+          "destination": {
+            "name": "tower",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "day",
+      "text": "I know the solution to getting through today won\u2019t be the [[solution]] to getting through tomorrow.",
+      "links": [
+        {
+          "text": "solution",
+          "destination": {
+            "name": "solution",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "post-anorexic-darkness",
+      "text": "<<timedgoto \"traffic\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "traffic",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Step",
+      "text": "Your feet slap on the stone.\\n\\n[[Step|Step2]]",
+      "links": [
+        {
+          "text": "Step",
+          "destination": {
+            "name": "Step2",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "board",
+      "text": "A board where people write shit? Graffiti on a bathroom stall? Fetched from Google Docs?",
+      "links": []
+    },
+    {
+      "pid": 32,
+      "name": "wet",
+      "text": "Wet. Red. Flush.\\n\\n250 milliliters.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 33,
+      "name": "Time travel",
+      "text": "The damage is lost in you like pollution in the sea. Swirled around in that black spill, remixed into coral reefs and chasms and sand.\\n\\nHope got its neck stuck in a six pack ring.\\n\\n[[...|say something]]\\n",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "say something",
+            "pid": 167
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "circle",
+      "text": "It circles overhead\\n\\nAs you stand paralyzed<<timedgoto \"drops\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "drops",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "drops",
+      "text": "Then some animating force leaves the wingspan<<timedgoto \"dropping\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "dropping",
+            "pid": 178
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "regrets",
+      "text": "There are <<if $paper gt 0>><<print $paper>><<else>>0<<endif>> pieces of paper left. A tiny [[placard]] is on the table.\\n\\nThe [[fire]] is burning.\\n\\n<<if $paper gt 0>>A slip of paper: <<textinput \"regret\" \"drop\" \"write\">>\\n\\n[[Away|tower]]<<else>>[[Away|tower]]<<endif>>\\n<<loopsound \"fire.mp3\">>\\n<<stopsound \"sea.mp3\">>\\n<<stopsound \"desert.mp3\">>\\n<<stopsound \"jungle.mp3\">>",
+      "links": [
+        {
+          "text": "placard",
+          "destination": {
+            "name": "placard",
+            "pid": 130
+          }
+        },
+        {
+          "text": "fire",
+          "destination": {
+            "name": "fire",
+            "pid": 186
+          }
+        },
+        {
+          "text": "Away",
+          "destination": {
+            "name": "tower",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Wait",
+      "text": "The interior feels alien. Snakefear prickle. A tingling sensation in your [[hand|warmfist]].",
+      "links": [
+        {
+          "text": "hand",
+          "destination": {
+            "name": "warmfist",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "woman",
+      "text": "Other travelers surround her, some sitting upright, legs crossed, others laid out with weariness but listening all the same.\\n\\nI can tell by the tremble in her voice that something true is being said.\\n\\n[[Listen|poem]]\\n[[Back away|tower]]\\n",
+      "links": [
+        {
+          "text": "Listen",
+          "destination": {
+            "name": "poem",
+            "pid": 158
+          }
+        },
+        {
+          "text": "Back away",
+          "destination": {
+            "name": "tower",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "dust",
+      "text": "<<if $nemesis_gender eq \"She\">>Her<<endif>><<if $nemesis_gender eq \"Their\">>Their<<endif>><<if $nemesis_gender eq \"He\">>His<<endif>> eyes are wet through the mask-holes, but <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>their<<endif>><<if $nemesis_gender eq \"He\">>his<<endif>> voice comes out dry as dust.\\n\\n\"Okay.\"\\n\\n[[Reach for a tile|tile]]\\n",
+      "links": [
+        {
+          "text": "Reach for a tile",
+          "destination": {
+            "name": "tile",
+            "pid": 248
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "around",
+      "text": "The forest floor is webbed with shadows.\\n\\nA <<replace \"gargoyle hangs\">>mass of grey-brown shrooms hang<<endreplace>> from the side of a tree.\\n\\n<<replace \"A brown beast hunches astride\">>A rotten [[bridge]] covers<<endreplace>> the creek.\\n\\nA <<replace \"dead woman lies cradled\">>heap of blue flowers and green ferns grows along a fallen branch<<endreplace>> in the hollow of some roots.",
+      "links": [
+        {
+          "text": "bridge",
+          "destination": {
+            "name": "bridge",
+            "pid": 145
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Spit it out",
+      "text": "Done swallowing the pain.\\n\\nThis is the year everything comes out.\\n\\n[[It's inevitable|basement]]\\n",
+      "links": [
+        {
+          "text": "It's inevitable",
+          "destination": {
+            "name": "basement",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "sleep-question",
+      "text": "Sleep?\\n\\n[[Yes|sleeping]] [[No|tower]]\\n",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "sleeping",
+            "pid": 223
+          }
+        },
+        {
+          "text": "No",
+          "destination": {
+            "name": "tower",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "breaks",
+      "text": "The forest ends and the [[grass]] grows thick, sweeping up into the sky on windy hills.",
+      "links": [
+        {
+          "text": "grass",
+          "destination": {
+            "name": "grass",
+            "pid": 210
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "end",
+      "text": "[[{(O)}|credits]]\\n",
+      "links": [
+        {
+          "text": "{(O)}",
+          "destination": {
+            "name": "credits",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "stop",
+      "text": "I wanted my <<replace \"life\">>life, or more accurately, these constant sensations of pain and terror and despair,<<endreplace>> to end.\\n\\nThese sensations had become hopelessly conflated with my life, like a tree consumed by [[rot]].",
+      "links": [
+        {
+          "text": "rot",
+          "destination": {
+            "name": "rot",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "the key",
+      "text": "Their body language seems sad. They hand over the key.\\n\\nAwkward silence.\\n\\n[[\"Thanks.\"|upstairs]]<<set $key = 1>>",
+      "links": [
+        {
+          "text": "\"Thanks.\"",
+          "destination": {
+            "name": "upstairs",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "Leave",
+      "text": "And between you and your <<replace \"destiny\">>lol<<endreplace>> was a vast\\n\\n[[sea]]\\n\\n[[desert]]\\n\\n[[jungle]]",
+      "links": [
+        {
+          "text": "sea",
+          "destination": {
+            "name": "sea",
+            "pid": 91
+          }
+        },
+        {
+          "text": "desert",
+          "destination": {
+            "name": "desert",
+            "pid": 271
+          }
+        },
+        {
+          "text": "jungle",
+          "destination": {
+            "name": "jungle",
+            "pid": 283
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Untitled Passage 37",
+      "text": "WHY DO I LIKE DIRTY LAUNDRY https://soundcloud.com/kellyrowlandofficial/dirty-laundry SO MUCH\\n\\n<<replace \"Why's dirty laundry so great\">>Because it's a song about things that aren't supposed to be talked about...competition and jealousy and jealousy between women...abusive relationships...<<endreplace>>\\n\\n<<replace \"Heard someone call Kelly Rowland a guilty pleasure\">>You're guilty about listening to music by women expressing emotional truths? Is it a sin?<<endreplace>>\\n\\n\\n//I was battered\\nHe hitting the window like it was me, until it shattered\\nHe pulled me out, he said, \u201cDon\u2019t nobody love you but me\\nNot your mama, not your daddy and especially not Bey\u201d\\nHe turned me against my sister\\nI missed ya\\n-Kelly Rowland, Dirty Laundry\\n\\nso intense\\n\\n\"swear y'all don't know the half of this industry\"\\n\\nyou wouldn't believe the horror behind the scenes. taught to put on a smile while you're being tortured. you come up as an artist trying to make things but those things get tangled in the mutating effects of your field. the field distorts your art--how it's received, the conditions in which it is made, the behavior of your peers--\\n\\nThe music, steady, drawn out, supports the vocals above all else\\n\\nall the variations are perfectly in touch with her voice--horns and back-up vocals and strings that contribute to the build but don't overwhelm, the message is always supreme\\n\\n",
+      "links": []
+    },
+    {
+      "pid": 49,
+      "name": "dark-flash",
+      "text": "<<timedgoto \"white-flash\" 0.01s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "white-flash",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "traffic",
+      "text": "You remember standing on the sidewalk watching the cars rush by.\\n\\nSo fast. So powerful. So absolute in their velocity.\\n\\nYou wanted to [[step]] into traffic.\\n\\n<<loopsound \"traffic.mp3\">>",
+      "links": [
+        {
+          "text": "step",
+          "destination": {
+            "name": "step",
+            "pid": 208
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Silencest",
+      "text": "In response, you reach for a [[tile]], never breaking eye contact.",
+      "links": [
+        {
+          "text": "tile",
+          "destination": {
+            "name": "tile",
+            "pid": 248
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "hands",
+      "text": "<<if $hand_count gt 20>><<if $hand_count eq 21>>The rattling [[stops|Look outside]].<<stopsound \"hands.mp3\">><<else>>The rattling has [[stopped|Look outside]].<<endif>><<else>>Soft, fleshy banging on the [[windows]].\\n\\n<<if $hand_count lt 21>><<set $r = Math.round(Math.random() * 1)>><<if $r eq 1>><<set $r = 1 + Math.round(Math.random() * 3)>><<set $hand_count += $r>><<set $hands += $r>><<if $r eq 1>>Another hand flops to the floor.<<else>>Some hands flop to the floor.<<endif>><<endif>><<endif>> <<if $hands lt 9>><<if $hands eq 1>>There is a single hand on the cottage floor.<<else>>There are <<if $hands gt 0>><<print $hands>><<else>>0<<endif>> hands on the cottage floor.<<endif>><<else>>There are countless hands on the cottage floor.<<endif>>\\n\\n[[Wait|hands]]\\n\\n<<if $hands gt 0>>[[Clean hands off floor|clean]]\\n\\n[[Walk around cottage|walk]]<<else>>[[Walk around cottage|walk]]<<endif>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "stops",
+          "destination": {
+            "name": "Look outside",
+            "pid": 216
+          }
+        },
+        {
+          "text": "stopped",
+          "destination": {
+            "name": "Look outside",
+            "pid": 216
+          }
+        },
+        {
+          "text": "windows",
+          "destination": {
+            "name": "windows",
+            "pid": 277
+          }
+        },
+        {
+          "text": "Wait",
+          "destination": {
+            "name": "hands",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Clean hands off floor",
+          "destination": {
+            "name": "clean",
+            "pid": 284
+          }
+        },
+        {
+          "text": "Walk around cottage",
+          "destination": {
+            "name": "walk",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "foot",
+      "text": "Sheer mountainside, rocks running with vines. Smashed slot machines litter the ground.\\n\\nA cable disappears into the fog. A wooden [[elevator box]] is attached to the cable.",
+      "links": [
+        {
+          "text": "elevator box",
+          "destination": {
+            "name": "elevator box",
+            "pid": 188
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "real stars",
+      "text": "The construct looks at you.\\n\\n\"I am not real.\"\\n\\nIts shell-tapes stop spinning and it is silent for the rest of the ride.\\n\\n[[Wait|disembark]]\\n",
+      "links": [
+        {
+          "text": "Wait",
+          "destination": {
+            "name": "disembark",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "shadow",
+      "text": "You know the cool of that shadow.\\n<<timedgoto \"circle\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "circle",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "walk",
+      "text": "The <<if $icebox eq 1>><<hoverlink \"walk\" \"icebox\" \"icebox is full of cold hands twitching slowly like dying insects\">><<else>><<hoverlink \"walk\" \"icebox\" \"icebox blows cold air in your face\">><<endif>>.\\n\\nThe <<if $garbage_disposal eq 1>><<hoverlink \"walk\" \"garbage disposal\" \"garbage disposal is crammed with hands, fingers jutting from the dripping darkness\">><<else>><<hoverlink \"walk\" \"garbage disposal\" \"garbage disposal stares back like a malevolant black eye\">><<endif>>.\\n<<if $garbage_disposal eq 1>><<hoverlink \"walk\" \"Turn on garbage disposal\" \"Blood spatters the sink as bones screech and fingers thrash. The thrashing turns to a crunchy, wet grind\">><<else>><<hoverlink \"walk\" \"Turn on garbage disposal\" \"VRMMM VRMMM VRMMM\">><<endif>>.\\n\\nThe <<if $closet eq 1>><<hoverlink \"walk\" \"closet\" \"closet is full of hands tangled in pantyhose and fallen hangers.\">><<else>><<hoverlink \"walk\" \"closet\" \"closet floor is covered in women's high heels\">><<endif>>.\\n\\nThe <<if $fireplace eq 1>><<hoverlink \"walk\" \"fireplace\" \"fireplace reeks with the smell of burning flesh as hands leap helplessly around on the coals\">><<else>><<hoverlink \"walk\" \"fireplace\" \"fireplace smolders with red-hot coals\">><<endif>>.\\n\\n[[Back|hands]]\\n",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "hands",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "the center of the world",
+      "text": "This feels like the center of the world.\\n\\nDrunk humans swirl through the common spaces, conversate and kiss in the corners and side-halls. Machines spew color and belch [[tokens]]. Neon ceiling lights snake like lasers, outlining skylights vast with starry sky. [[Water]] runs through the casino in fountains, waterfalls, shallow canals arched by miniature bridges.\\n\\n<<if $stammer eq 0>>[[Something bumps into you|dress]]<<else>>[[Look around]]<<endif>>",
+      "links": [
+        {
+          "text": "tokens",
+          "destination": {
+            "name": "tokens",
+            "pid": 190
+          }
+        },
+        {
+          "text": "Water",
+          "destination": {
+            "name": "Water",
+            "pid": 104
+          }
+        },
+        {
+          "text": "Something bumps into you",
+          "destination": {
+            "name": "dress",
+            "pid": 230
+          }
+        },
+        {
+          "text": "Look around",
+          "destination": {
+            "name": "Look around",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "look",
+      "text": "<<if $rihanna eq 1>><<<replace \"test1\">><<set $look = \"left\">><<timedgoto \"look-result\" 0.1s>><<endreplace>>  <<replace \"test2\">><<set $look = \"left\">><<timedgoto \"look-result\" 0.1s>><<endreplace>> <<replace \"test3\">><<set $look = \"left\">><<timedgoto \"look-result\" 0.01s>><<endreplace>> <<<<else>>[[time passes|fuck califrnia]]<<endif>>\\n",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "look-result",
+            "pid": 209
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Say nothing",
+      "text": "<<if $nemesis_gender eq \"She\">>She waits<<endif>><<if $nemesis_gender eq \"Their\">>They wait<<endif>><<if $nemesis_gender eq \"He\">>He waits<<endif>> for your response.\\n\\n[[Silence]]",
+      "links": [
+        {
+          "text": "Silence",
+          "destination": {
+            "name": "Silence",
+            "pid": 127
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "sound credits",
+      "text": "compiling\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 61,
+      "name": "clippings",
+      "text": "The clippings follow the career of a professional games player.\\n\\n//Last seen playing at New Heart City, they are known best for their exquisite form in the Red Tile game.//\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 62,
+      "name": "rustle",
+      "text": "Past the creek, up the bank, sneaker squelching, twigs snapping.\\n\\nSomething [[rustles]] nearby.<<fadeoutsound \"stream.mp3\">>",
+      "links": [
+        {
+          "text": "rustles",
+          "destination": {
+            "name": "rustles",
+            "pid": 240
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "quote-anorexic-exit",
+      "text": "//I am starved and curveless.//\\n//I am skin and bone.//\\n//She has learned her lesson.//\\n-Anorexic, Eavan Boland\\n<<timedgoto \"post-anorexic-darkness\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "post-anorexic-darkness",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "four scars",
+      "text": "\"Of course.\"\\n\\nAs their pen scratches your name down, you see a jar next to them marked TIPS.\\n\\n<<if $circle eq 0>>[[Brass circle|circle-signer]]<<endif>>\\n<<if $square eq 0>>[[Gold square|square-signer]]<<endif>>\\n<<if $triangle eq 0>>[[Silver triangle|triangle-signer]]<<endif>>",
+      "links": [
+        {
+          "text": "Brass circle",
+          "destination": {
+            "name": "circle-signer",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Gold square",
+          "destination": {
+            "name": "square-signer",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Silver triangle",
+          "destination": {
+            "name": "triangle-signer",
+            "pid": 182
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "fascination_height",
+      "text": "Grind your hard clit across the angel's papery skin. Angelfucker now, for sure.\\n\\nIs this power? Is this control? Fuck or be fucked?\\n\\nYou roll off, capsized by vomit swimming eyes blurred vision.\\n\\n[[Close your eyes|gender]]",
+      "links": [
+        {
+          "text": "Close your eyes",
+          "destination": {
+            "name": "gender",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "immortals-quote",
+      "text": "[[There is a rumour and a radiance of wings above my head,|immortals-quote-exit]]\\n[[An intolerable radiance of wings. . . .|immortals-quote-exit]]\\n   ",
+      "links": [
+        {
+          "text": "There is a rumour and a radiance of wings above my head,",
+          "destination": {
+            "name": "immortals-quote-exit",
+            "pid": 133
+          }
+        },
+        {
+          "text": "An intolerable radiance of wings. . . .",
+          "destination": {
+            "name": "immortals-quote-exit",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "drop",
+      "text": "//<<print $regret>>//\\n\\nLet it [[burn]].",
+      "links": [
+        {
+          "text": "burn",
+          "destination": {
+            "name": "burn",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "holes",
+      "text": "The eastern mountains cut the teeth of the storms, bringing the tower gentle winds and soft rains.\\n\\n[[Mmm|tower]]\\n",
+      "links": [
+        {
+          "text": "Mmm",
+          "destination": {
+            "name": "tower",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "shapes",
+      "text": "<html><p id=\"circle\"></p></html> [[The Circle of Becoming Faceful|begn]]\\n\\n\\n<html><p id=\"triangle-up\"></p></html><<if $triangle_menu eq 1>> [[The Triangle of Relentless Pursuit|begn]]<<endif>>\\n\\n\\n<html><p id=\"diamond-narrow\"></p></html>\\n<html><p id=\"diamond-narrow:after\"></p></html><<if $diamond_menu eq 1>> [[The Diamond of Attaining True Weaponhood|bein]]<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 70,
+      "name": "our death",
+      "text": "In a way, I wanted the outcome of that duel to be as [[disastrous]] as possible.\\n",
+      "links": [
+        {
+          "text": "disastrous",
+          "destination": {
+            "name": "disastrous",
+            "pid": 120
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "rihanna-quote-exit",
+      "text": "//All I see is signs.//\\n\\n-Rihanna, Pour It Up\\n<<timedgoto \"rihanna-darkness\" 3s>>\\n",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "rihanna-darkness",
+            "pid": 217
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "gender",
+      "text": "When you close your eyes you see a face. But it isn't the angel's face.\\n\\nBecause the angel is not the point.\\n\\nThe point is the human who sat in the next room and did nothing.\\n\\nAnd a lot of people did nothing but one of them called themselves your friend.\\n\\n<<cyclinglink $nemesis_gender \"He\" \"She\" \"They\">>?\\n\\n[[Yes]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "Yes",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "veins",
+      "text": "Click across the table, same for your [[opponent|rules]].",
+      "links": [
+        {
+          "text": "opponent",
+          "destination": {
+            "name": "rules",
+            "pid": 242
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "x",
+      "text": "[[I can't feel God's love|break down]]\\n",
+      "links": [
+        {
+          "text": "I can't feel God's love",
+          "destination": {
+            "name": "break down",
+            "pid": 153
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "tower",
+      "text": "The tower is riddled with [[holes]]. <<if $sea eq 1>>You hear waves slapping against the base of the tower and flowing through the rocks.<<endif>><<if $desert eq 1>>The desert wind howls low and haunting.<<endif>><<if $jungle eq 1>>Insects chirp in the jungle.<<endif>>\\n\\nA stone [[table|regrets]] next a firepit.\\n\\n<<if $woman eq 0>>A [[woman]] sits on the patio, framed against the stars.<<else>>The [[patio|Patio]] is just under that arch.<<endif>>\\n\\nSome [[blankets|sleep-question]] were left for you in one of the outer rooms.\\n<<fadeoutsound \"fire.mp3\">>\\n<<if $sea eq 1>><<loopsound \"sea.mp3\">><<endif>><<if $desert eq 1>><<loopsound \"desert.mp3\">><<endif>><<if $jungle eq 1>><<loopsound \"jungle.mp3\">><<endif>>",
+      "links": [
+        {
+          "text": "holes",
+          "destination": {
+            "name": "holes",
+            "pid": 68
+          }
+        },
+        {
+          "text": "table",
+          "destination": {
+            "name": "regrets",
+            "pid": 36
+          }
+        },
+        {
+          "text": "woman",
+          "destination": {
+            "name": "woman",
+            "pid": 38
+          }
+        },
+        {
+          "text": "patio",
+          "destination": {
+            "name": "Patio",
+            "pid": 272
+          }
+        },
+        {
+          "text": "blankets",
+          "destination": {
+            "name": "sleep-question",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "end-flash",
+      "text": "And the fear is back, after all this time, after all this distance.\\n\\nThat <<replace \"light.\">>light.\\n\\nBut it's just the sun. No angels here.\\n\\n[[Keep moving|Leave]]<<endreplace>>\\n",
+      "links": [
+        {
+          "text": "Keep moving",
+          "destination": {
+            "name": "Leave",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "angel light",
+      "text": "<<set $light += 1>><<if $light lt 2>><<playsound \"light.mp3\">><<endif>><<set $light_stage += 1>><<if $light lt 35>><<timedgoto \"angel light\" 0.1s>><<endif>><<if $light lt 35>><<if $light_stage eq 1>><<set $light_stage = -1>>A GIANT LIGHTBULB PERCHED OVER MY BED\\n\\nA JELLYFISH OF GLASS AND TUNGSTEN\\n\\nPARALYZED BY THE LIGHT OF ITS WHITE-HOT FILAMENT<<else>> <<endif>><<else>>[[A GIANT LIGHTBULB PERCHED OVER MY BED|angel light 2]]\\n\\n[[A JELLYFISH OF GLASS AND TUNGSTEN|angel light 2]]\\n\\n[[PARALYZED BY THE LIGHT OF ITS WHITE-HOT FILAMENT|angel light 2]]<<endif>>\\n",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "angel light",
+            "pid": 77
+          }
+        },
+        {
+          "text": "A GIANT LIGHTBULB PERCHED OVER MY BED",
+          "destination": {
+            "name": "angel light 2",
+            "pid": 97
+          }
+        },
+        {
+          "text": "A JELLYFISH OF GLASS AND TUNGSTEN",
+          "destination": {
+            "name": "angel light 2",
+            "pid": 97
+          }
+        },
+        {
+          "text": "PARALYZED BY THE LIGHT OF ITS WHITE-HOT FILAMENT",
+          "destination": {
+            "name": "angel light 2",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "horror_height",
+      "text": "Wake up in the mud with cold water on your eyelashes.\\n\\nHills are lower here. Black mud. Collapsed fenceposts. Barbed wire snakes through the ground.\\n\\nThe sun is hours across the earth.\\n\\n[[Close your eyes|gender]]",
+      "links": [
+        {
+          "text": "Close your eyes",
+          "destination": {
+            "name": "gender",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "still",
+      "text": "The fountain workings broke down a few weeks ago. This fact is a particle in the whirling growing impetus driving you to leave.\\n\\nYou used to love plunging your hands into the rippling water. So cool and wet. And most of all, the feeling that something in your slow, isolated part of the universe was moving and alive and changing.\\n\\nNow your daily ritual is gone, and in its place a depressing reminder of [[stagnance|Fountain]].",
+      "links": [
+        {
+          "text": "stagnance",
+          "destination": {
+            "name": "Fountain",
+            "pid": 152
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "cry",
+      "text": "I wish this weren't happening.\\n\\nI wish things could have gone differently.\\n\\nI wish I knew the perfect sequence of words that would fix things.\\n\\nBut I [[don't]].\\n",
+      "links": [
+        {
+          "text": "don't",
+          "destination": {
+            "name": "don't",
+            "pid": 273
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "upstairs",
+      "text": "[[Your friend|get key]] is staring through the sea-window. Your [[room|my room]] is down the hall, past the candles. A [[stairwell|monastery interior]] leads downward.",
+      "links": [
+        {
+          "text": "Your friend",
+          "destination": {
+            "name": "get key",
+            "pid": 82
+          }
+        },
+        {
+          "text": "room",
+          "destination": {
+            "name": "my room",
+            "pid": 199
+          }
+        },
+        {
+          "text": "stairwell",
+          "destination": {
+            "name": "monastery interior",
+            "pid": 215
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "get key",
+      "text": "<<if $key eq 0>>They turn to me. \\n\\n\"Hey.\"\\n\\nThrough the window I see the ocean like melted grey metal. \"I need the [[key]].\"<<else>>Their head leans against the glass. Through the window I see the ocean like melted grey metal.\\n\\n[[Away|upstairs]]<<endif>>\\n\\n",
+      "links": [
+        {
+          "text": "key",
+          "destination": {
+            "name": "key",
+            "pid": 121
+          }
+        },
+        {
+          "text": "Away",
+          "destination": {
+            "name": "upstairs",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "throwing",
+      "text": "The last time you saw your face, you were crying and your eyes were two black holes of mascara in the mirror and \\n\\n[[Swallow bile]]\\n\\n[[Spit it out]]",
+      "links": [
+        {
+          "text": "Swallow bile",
+          "destination": {
+            "name": "Swallow bile",
+            "pid": 113
+          }
+        },
+        {
+          "text": "Spit it out",
+          "destination": {
+            "name": "Spit it out",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "the first darkness",
+      "text": "<<timedgoto \"quote-1\" 2s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "quote-1",
+            "pid": 164
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "showdown",
+      "text": "The nautilus helps <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>them<<endif>><<if $nemesis_gender eq \"He\">>him<<endif>> walk outside and you are alone.\\n\\nWhere was the showdown.\\n\\nWhere was the fire.\\n\\nWalked through a wasteland of gasoline with a match in your mouth.\\n\\nSomething holds where before it would have broken.\\n\\nI think I'll just keep moving [[forward|no death]].",
+      "links": [
+        {
+          "text": "forward",
+          "destination": {
+            "name": "no death",
+            "pid": 124
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "Auuughhh",
+      "text": "\"Fear of heights is not uncommon. Please help me understand what you need.\"\\n\\nI lie down numbly on the floor and stare at the ceiling.\\n\\n[[\"What are those things? Up there?\"|whyy]]",
+      "links": [
+        {
+          "text": "\"What are those things? Up there?\"",
+          "destination": {
+            "name": "whyy",
+            "pid": 202
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "rot",
+      "text": "I resented it so much when people told me I wouldn't kill myself.\\n\\nAs if I ever had a [[c|choice]][[h|choice]][[o|choice]][[i|choice]][[c|choice]][[e|choice]].\\n",
+      "links": [
+        {
+          "text": "c",
+          "destination": {
+            "name": "choice",
+            "pid": 269
+          }
+        },
+        {
+          "text": "h",
+          "destination": {
+            "name": "choice",
+            "pid": 269
+          }
+        },
+        {
+          "text": "o",
+          "destination": {
+            "name": "choice",
+            "pid": 269
+          }
+        },
+        {
+          "text": "i",
+          "destination": {
+            "name": "choice",
+            "pid": 269
+          }
+        },
+        {
+          "text": "e",
+          "destination": {
+            "name": "choice",
+            "pid": 269
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "solution",
+      "text": "The solution to my...\\n\\nLiving problem.<<timedgoto \"darkness of the end\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "darkness of the end",
+            "pid": 174
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "Say something",
+      "text": "\"<<print $stammer1>> <<print $stammer2>> <<print $stammer3>> <<print $stammer4>>.\"\\n\\n<<if ($stammer1 eq \"You\") and ($stammer2 eq \"look\") and ($stammer3 eq \"really\") and ($stammer4 eq \"nice\")>>She looks you up and down, lingering with a sneer on your <<if $wound eq \"jaw\">>burnt jaw<<endif>><<if $wound eq \"hand\">>scarred hand<<endif>><<if $wound eq \"heart\">>mute expression<<endif>>.\\n\\n\"Maybe in the next life.\"<<set $coherent = 1>><<endif>><<if ($stammer1 eq \"I\") and ($stammer2 eq \"look\") and ($stammer3 eq \"really\") and ($stammer4 eq \"nice\")>>\"Fucking egotist. But with that <<if $wound eq \"jaw\">>fucked up jaw<<endif>><<if $wound eq \"hand\">>ugly little hand<<endif>><<if $wound eq \"heart\">>cold demeanour how could anyone care for you? Are you autistic?\"\\n\\nShe waits for a reaction.\\n\\n\"Are you retarded?\"\\n\\nShe laughs and walks away.<<else>> how could anyone care for you?\"\\n\\nShe laughs and walks away.<<set $coherent = 1>><<endif>><<endif>><<if $coherent eq 0>>She laughs and walks away.<<endif>>\\n\\n[[OKAY|the center of the world]]",
+      "links": [
+        {
+          "text": "OKAY",
+          "destination": {
+            "name": "the center of the world",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "scribbled",
+      "text": "//There is a rumour and a radiance of wings above my head,\\nAn intolerable radiance of wings...//\\n\\n[[Lose interest|note]]\\n",
+      "links": [
+        {
+          "text": "Lose interest",
+          "destination": {
+            "name": "note",
+            "pid": 241
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "sea",
+      "text": "Working passage on a small vessel, your clothes get ragged, salt-encrusted. Sunburnt skin marks the days in a deepening red.\\n\\n[[Time passes|transition-tower]]\\n\\n<<set $sea = 1>>",
+      "links": [
+        {
+          "text": "Time passes",
+          "destination": {
+            "name": "transition-tower",
+            "pid": 207
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "storyTitle",
+      "text": "their angelical understanding",
+      "links": []
+    },
+    {
+      "pid": 93,
+      "name": "strangle",
+      "text": "You imagine them blindly grasping the skin of your neck, strangling you by sheer probability.\\n\\n[[Shudder|hands]]",
+      "links": [
+        {
+          "text": "Shudder",
+          "destination": {
+            "name": "hands",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "angel light 3",
+      "text": "<<set $light3 += 1>><<if $light3 lt 2>><<playsound \"light.mp3\">><<endif>><<set $light_stage3 += 1>><<if $light3 lt 35>><<timedgoto \"angel light 3\" 0.1s>><<endif>><<if $light3 lt 35>><<if $light_stage3 eq 1>><<set $light_stage3 = -1>>MY BLOOD ITCHES\\n\\nTORTURED FOR 1000 YEARS IN MY ROOM WHILE PEOPLE PLAY NINTENDO IN THE LIVING ROOM<<else>> <<endif>><<else>>[[MY BLOOD ITCHES|angelfucker]]\\n\\n[[TORTURED FOR 1000 YEARS IN MY ROOM WHILE PEOPLE PLAY NINTENDO IN THE LIVING ROOM|angelfucker]]<<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "angel light 3",
+            "pid": 94
+          }
+        },
+        {
+          "text": "MY BLOOD ITCHES",
+          "destination": {
+            "name": "angelfucker",
+            "pid": 5
+          }
+        },
+        {
+          "text": "TORTURED FOR 1000 YEARS IN MY ROOM WHILE PEOPLE PLAY NINTENDO IN THE LIVING ROOM",
+          "destination": {
+            "name": "angelfucker",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "panic attack",
+      "text": "Heartbeat hum. Dizzy throb. Bile rears up in your mouth like a serpent of acid.\\n\\n\"Are you okay? Do you need a doctor?\"\\n\\n[[Auuughhh]]",
+      "links": [
+        {
+          "text": "Auuughhh",
+          "destination": {
+            "name": "Auuughhh",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "old room",
+      "text": "In my room.\\n\\nMy old room.\\n\\n[[Lying in bed]]",
+      "links": [
+        {
+          "text": "Lying in bed",
+          "destination": {
+            "name": "Lying in bed",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "angel light 2",
+      "text": "<<set $light2 += 1>><<if $light2 lt 2>><<playsound \"light.mp3\">><<endif>><<set $light_stage2 += 1>><<if $light2 lt 35>><<timedgoto \"angel light 2\" 0.1s>><<endif>><<if $light2 lt 35>><<if $light_stage2 eq 1>><<set $light_stage2 = -1>>THE BUZZING FEELS LIKE RADIATION\\n\\nI FEEL MY SKIN IS CHANGED ON A FUNDAMENTAL LEVEL<<else>> <<endif>><<else>>[[THE BUZZING FEELS LIKE RADIATION|angel light 3]]\\n\\n[[I FEEL MY SKIN IS CHANGED ON A FUNDAMENTAL LEVEL|angel light 3]]<<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "angel light 2",
+            "pid": 97
+          }
+        },
+        {
+          "text": "THE BUZZING FEELS LIKE RADIATION",
+          "destination": {
+            "name": "angel light 3",
+            "pid": 94
+          }
+        },
+        {
+          "text": "I FEEL MY SKIN IS CHANGED ON A FUNDAMENTAL LEVEL",
+          "destination": {
+            "name": "angel light 3",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "rihanna-quote",
+      "text": "[[All I see is signs.|rihanna-quote-exit]]\\n",
+      "links": [
+        {
+          "text": "All I see is signs.",
+          "destination": {
+            "name": "rihanna-quote-exit",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "darkness",
+      "text": "Falling asleep on the dead warm leaves of some forest floor.\\n\\n[[Falling|old room]]",
+      "links": [
+        {
+          "text": "Falling",
+          "destination": {
+            "name": "old room",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "Black skeletons",
+      "text": "The skeletons are contorted like they were like trying to escape their own body. Like each limb was twisting itself away from a tortured central nervous system.\\n\\nYou've been there.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 101,
+      "name": "sun",
+      "text": "Walking down the chalk <<replace \"road,\">>road, the sun [[flashes|white-flash]] from behind a cloud.<<endreplace>><<stopsound \"chimes.mp3\">>",
+      "links": [
+        {
+          "text": "flashes",
+          "destination": {
+            "name": "white-flash",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "sunburnt",
+      "text": "Dead hands blistered black in the sun. Fingers snap under your heel no matter how carefully you <<replace \"step\">>step.\\n\\nYou come to the rim of the [[forest|forest-darkness]].<<endreplace>>",
+      "links": [
+        {
+          "text": "forest",
+          "destination": {
+            "name": "forest-darkness",
+            "pid": 201
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "emotions",
+      "text": "[[resentment|Resentment]][[fascination|Fascination]][[dread|Dread]]\\n",
+      "links": [
+        {
+          "text": "resentment",
+          "destination": {
+            "name": "Resentment",
+            "pid": 204
+          }
+        },
+        {
+          "text": "fascination",
+          "destination": {
+            "name": "Fascination",
+            "pid": 25
+          }
+        },
+        {
+          "text": "dread",
+          "destination": {
+            "name": "Dread",
+            "pid": 264
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "Water",
+      "text": "You dip a finger in the running water. It is freezing cold.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 105,
+      "name": "Silencer",
+      "text": "\"I...guess you aren't accepting my forfeit.\"\\n\\n[[Silence|Silencest]]\\n\\n[[Speak in sorrow]]",
+      "links": [
+        {
+          "text": "Silence",
+          "destination": {
+            "name": "Silencest",
+            "pid": 51
+          }
+        },
+        {
+          "text": "Speak in sorrow",
+          "destination": {
+            "name": "Speak in sorrow",
+            "pid": 151
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "my thing",
+      "text": "\"I need to...feel strong again. I need to stop being scared.\"\\n\\nThey hug you.\\n\\n[[Hug|the key-happy]]",
+      "links": [
+        {
+          "text": "Hug",
+          "destination": {
+            "name": "the key-happy",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "casinos",
+      "text": "So you have a mountain full of casinos but next to none of them are used that way. Most were stripped out and converted to residences, garish floors divided into living quarters, people eating their meals on roulette tables.\\n\\nZoning standards are still enforced by the League (ever devoid of pragmatism), so it is customary for residents to keep a small token slot machine in their home, carved from stone or wood, squatting like a family idol.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 108,
+      "name": "the key-happy",
+      "text": "They squeeze your shoulder and hand you the key.\\n\\n\"I really hope you find what you need out there.\"\\n\\n[[\"Thanks.\"|upstairs]]<<set $key = 1>>",
+      "links": [
+        {
+          "text": "\"Thanks.\"",
+          "destination": {
+            "name": "upstairs",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "Unfold your aching hand",
+      "text": "Rub those scars in your <<replace \"palm.\">>palm.\\n\\nFour equidistant points like the tips of a square.\\n\\n[[Leave|radiance-darkness]]<<endreplace>><<endreplace>>",
+      "links": [
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "radiance-darkness",
+            "pid": 141
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "How much",
+      "text": "\"I am not a human being. My labor is worthless.\\n\\nThe ride is free.\"\\n\\n[[Ride]]\\n",
+      "links": [
+        {
+          "text": "Ride",
+          "destination": {
+            "name": "Ride",
+            "pid": 258
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "burn",
+      "text": "<<replace \"Burning.\">><<replace \"Burnt.\">>Ash.\\n\\n[[Okay.|regrets]]<<endreplace>><<endreplace>><<set $paper -= 1>>",
+      "links": [
+        {
+          "text": "Okay.",
+          "destination": {
+            "name": "regrets",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 112,
+      "name": "faceless",
+      "text": "You put back the empty bottle.\\n\\nSo many locked up faces. Their murky dance.\\n\\n[[Turn away|remember]]",
+      "links": [
+        {
+          "text": "Turn away",
+          "destination": {
+            "name": "remember",
+            "pid": 197
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "Swallow bile",
+      "text": "Tastes good.\\n\\nPerfect control. Perfect serenity. Nothing is revealed until the time is right.\\n\\n[[I am the weapon|basement]]\\n",
+      "links": [
+        {
+          "text": "I am the weapon",
+          "destination": {
+            "name": "basement",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "white-flash",
+      "text": "\\n<<set $flash += 1>><<if $flash gt 35>><<timedgoto \"end-flash\" 0.001s>><<else>><<timedgoto \"dark-flash\" 0.001s>><<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "end-flash",
+            "pid": 76
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "dark-flash",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "Remove mask",
+      "text": "<<if $nemesis_gender eq \"She\">>She becomes<<endif>><<if $nemesis_gender eq \"Their\">>They become<<endif>><<if $nemesis_gender eq \"He\">>He becomes<<endif>> very still.\\n\\n<<if $wound eq \"jaw\">>You speak slowly, speaking around the pain of your jaw.\\n\\n[[\"I accept your forfeit.\"|accept forfeit]]\\n\\n[[\"No.\"|reject forfeit]]<<else>>[[\"I accept your forfeit.\"|accept forfeit]]\\n\\n[[\"No.\"|reject forfeit]]<<endif>>",
+      "links": [
+        {
+          "text": "\"I accept your forfeit.\"",
+          "destination": {
+            "name": "accept forfeit",
+            "pid": 176
+          }
+        },
+        {
+          "text": "\"No.\"",
+          "destination": {
+            "name": "reject forfeit",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "Take mask",
+      "text": "You strap it on and stare awkwardly through the eyeholes.\\n\\n[[Go inside]]",
+      "links": [
+        {
+          "text": "Go inside",
+          "destination": {
+            "name": "Go inside",
+            "pid": 149
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "water",
+      "text": "<<if $water lte 0>>The glass is empty.<<endif>><<if $water eq 1>>The glass is almost empty.<<endif>><<if $water eq 2>>The glass is half <<cyclinglink $whatever \"full\" \"empty\">>.<<endif>><<if $water eq 3>>The glass is full.<<endif>>\\n\\n<<if $fly eq 0>><<replace \"Is that a fly at the bottom of the glass?\">>Oh. The fly is under the glass, not inside it.<<set $fly = 1>><<endreplace>><<else>><<if $water gt 0>>The water trembles every so often to the surge of hydraulic pumps in the walls.<<else>>It rattles every so often to the surge of hydraulic pumps in the walls.<<endif>><<endif>>\\n\\n<<if $water gt 0>>[[Drink water]]\\n[[Not thirsty|blood room]]<<else>>[[Not thirsty|blood room]]<<endif>>\\n\\n<<set $blood_timer += 1>>",
+      "links": [
+        {
+          "text": "Drink water",
+          "destination": {
+            "name": "Drink water",
+            "pid": 286
+          }
+        },
+        {
+          "text": "Not thirsty",
+          "destination": {
+            "name": "blood room",
+            "pid": 193
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "credits",
+      "text": "Their angelical understanding\\n\\nby [[porpentine|https://twitter.com/aliendovecote]]\\n\\nthanks [[kate chastain|https://twitter.com/kat_chastain]] and [[lilith|http://cicadamarionette.com/]] for testing ::)\\n\\nthanks [[Leon Arnott|http://l.j-factor.com]] and [[st33d|http://robotacid.com]] for macros\\n\\n[[sound credits]]\\n\\n[[music i listened to while making this game|soundtrack]]\\n\\n[[Full text|http://aliendovecote.com/?p=5304]] of poem read by woman in the tower\\n\\n",
+      "links": [
+        {
+          "text": "sound credits",
+          "destination": {
+            "name": "sound credits",
+            "pid": 60
+          }
+        },
+        {
+          "text": "music i listened to while making this game",
+          "destination": {
+            "name": "soundtrack",
+            "pid": 261
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "reject forfeit",
+      "text": "No.\\n\\nWe play.\\n\\nSilence, then the sound of <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>them<<endif>><<if $nemesis_gender eq \"He\">>him<<endif>> swallowing.\\n\\n\"Please.\"\\n\\n[[Silence|something]]",
+      "links": [
+        {
+          "text": "Silence",
+          "destination": {
+            "name": "something",
+            "pid": 213
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "disastrous",
+      "text": "I wanted it to be out of my control.\\n\\nSo that when the moment came.\\n\\nThere would be nothing I could do to [[stop]] it.",
+      "links": [
+        {
+          "text": "stop",
+          "destination": {
+            "name": "stop",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "key",
+      "text": "There is no expression to <<replace \"read.\">>read.\\n\\n\"I'll be sorry to see you go.\"\\n\\n[[\"I'll miss you too.\"|miss]]\\n\\n[[\"I have what I came for.\"|have]]\\n\\n[[\"I need to stand on my own feet again.\"|my thing]]\\n\\n<<endreplace>>",
+      "links": [
+        {
+          "text": "\"I'll miss you too.\"",
+          "destination": {
+            "name": "miss",
+            "pid": 155
+          }
+        },
+        {
+          "text": "\"I have what I came for.\"",
+          "destination": {
+            "name": "have",
+            "pid": 228
+          }
+        },
+        {
+          "text": "\"I need to stand on my own feet again.\"",
+          "destination": {
+            "name": "my thing",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "alone",
+      "text": "Legs, arms thrashing, I'm kicking like I'm drowning, and it takes a while to understand I'm not in my old bedroom, I'm in a forest and the night is dark and the moon is lost behind clouds and canopy and I am alone.\\n\\n[[Never sleep again|hand-darkness]]",
+      "links": [
+        {
+          "text": "Never sleep again",
+          "destination": {
+            "name": "hand-darkness",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "Okay",
+      "text": "They go inside and come back with <<rnd \"an obsidian\" \"an ivory\" \"an emerald\" \"a topaz\" \"a sapphire\" \"an iolite\">> mask textured like <<rnd \"feathers\" \"scales\" \"chitin\">> and covered in <<rnd \"gems\" \"coagulated slime\" \"spikes\">>.\\n\\n[[Take it|Take mask]]\\n",
+      "links": [
+        {
+          "text": "Take it",
+          "destination": {
+            "name": "Take mask",
+            "pid": 116
+          }
+        }
+      ]
+    },
+    {
+      "pid": 124,
+      "name": "no death",
+      "text": "Forward through traffic.\\n\\nJust slower.\\n\\nLooking at the lights.\\n\\nWith someone else's hand in mine.\\n\\nThe seed of the hand that will one [[day]] bloom into a real hand of flesh and blood.\\n\\n",
+      "links": [
+        {
+          "text": "day",
+          "destination": {
+            "name": "day",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "true-wake",
+      "text": "The <<if $jungle eq 1>>jungle horizon, silver with morning mist.<<endif>><<if $sea eq 1>>horizon of the sea, silver with morning mist.<<endif>><<if $desert eq 1>>sun is rising up over the dunes.<<endif>>\\n\\nYour hand is painfully clenched, nails digging inside palm.\\n\\n[[Unfold your aching hand]]",
+      "links": [
+        {
+          "text": "Unfold your aching hand",
+          "destination": {
+            "name": "Unfold your aching hand",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "bide",
+      "text": "You get [[lost|bide-darkness]] in the crowd.",
+      "links": [
+        {
+          "text": "lost",
+          "destination": {
+            "name": "bide-darkness",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "Silence",
+      "text": "\"Did you hear me? I forfeit.\"\\n\\n[[Silence|Silencer]]\\n\\n[[Speak in anger]]",
+      "links": [
+        {
+          "text": "Silence",
+          "destination": {
+            "name": "Silencer",
+            "pid": 105
+          }
+        },
+        {
+          "text": "Speak in anger",
+          "destination": {
+            "name": "Speak in anger",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "collides",
+      "text": "You [[slam]] into a slot machine.<<stopsound \"traffic.mp3\">>",
+      "links": [
+        {
+          "text": "slam",
+          "destination": {
+            "name": "slam",
+            "pid": 206
+          }
+        }
+      ]
+    },
+    {
+      "pid": 129,
+      "name": "merciless",
+      "text": "<<hoverlink \"merciless\" \"RAGE\" \"I'm sorry.\">> <<hoverlink \"merciless\" \"RAGE\" \"I cried when I knew I'd lost you forever.\">> <<hoverlink \"merciless\" \"RAGE\" \"I was scared.\">> <<hoverlink \"merciless\" \"RAGE\" \"I was a coward.\">> <<hoverlink \"merciless\" \"RAGE\" \"I don't know how to be a good person.\">>\\n <<hoverlink \"merciless\" \"RAGE\" \"I'd do anything to change what happened.\">> <<hoverlink \"merciless\" \"RAGE\" \"I cried so many days since then, thinking what I'd done to you.\">> <<hoverlink \"merciless\" \"RAGE\" \"Please let me fix things.\">> <<hoverlink \"merciless\" \"RAGE\" \"Please.\">>\\n\\n[[Silence|dust]]\\n\\n[[Relent|accept forfeit]]\\n",
+      "links": [
+        {
+          "text": "Silence",
+          "destination": {
+            "name": "dust",
+            "pid": 39
+          }
+        },
+        {
+          "text": "Relent",
+          "destination": {
+            "name": "accept forfeit",
+            "pid": 176
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "placard",
+      "text": "\"Cast your regrets into the fire.\"\\n\\n[[Back|regrets]]\\n",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "regrets",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 131,
+      "name": "shove",
+      "text": "<<if $stash eq \"icebox\">><<set $icebox = 1>><<endif>><<if $stash eq \"closet\">><<set $closet = 1>><<endif>><<if $stash eq \"fireplace\">><<set $fireplace = 1>><<endif>><<if $stash eq \"garbage disposal\">><<set $garbage_disposal = 1>><<endif>><<display \"hands\">>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "hands",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "But.",
+      "text": "But there's a [[bitter]] taste behind the sweet.",
+      "links": [
+        {
+          "text": "bitter",
+          "destination": {
+            "name": "bitter",
+            "pid": 177
+          }
+        }
+      ]
+    },
+    {
+      "pid": 133,
+      "name": "immortals-quote-exit",
+      "text": "//There is a rumour and a radiance of wings above my head,\\nAn intolerable radiance of wings...//\\n-Rubert Brooke, Sleeping Out: Full Moon\\n<<timedgoto \"radiance-darkness\" 4s>>\\n\\n",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "radiance-darkness",
+            "pid": 141
+          }
+        }
+      ]
+    },
+    {
+      "pid": 134,
+      "name": "bottle menu",
+      "text": "In the bottle float <<cyclinglink $eyes \"black\" \"blue\" \"purple\" \"green\" \"amber\" \"gray\" \"hazel\" \"red\">> eyes, lips <<cyclinglink $lips \"cracked with dehydration\" \"plump and red\" \"curled pale\" \"soft and innocent, prone to trembling\">>, and your <<cyclinglink $nose \"aquiline\" \"broken\" \"snub\" \"upturned\" \"pointed\" \"crooked\">> nose.\\n\\nYou shake it a little and see <<cyclinglink $other \"purple freckling on your nose and cheeks\" \"a lip ring with spiky nose studs\" \"flowery spiral tattoo flowing from your left eye\">>.\\n\\n[[Drink deep.|sweet]]\\n<<set $key = 2>>",
+      "links": [
+        {
+          "text": "Drink deep.",
+          "destination": {
+            "name": "sweet",
+            "pid": 147
+          }
+        }
+      ]
+    },
+    {
+      "pid": 135,
+      "name": "shapetalk1",
+      "text": "The currency of the east is three shapes. Always three shapes.\\n\\nIf a task is worth money, it is structured formally so someone receives a shape.\\n\\nThere are three beneficiaries of each job or task, each receiving a single shape. Circle is least, square is between, and triangle is top.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 136,
+      "name": "timed",
+      "text": "version.extensions.timedgotoMacro={major:1,minor:1,revision:0};macros[\"goto\"]=macros[\"timedgoto\"]={timer:null,handler:function(a,b,c,d){\\nfunction cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0;\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0;}}}throwError(a,s+\" isn't a CSS time unit\");\\nreturn 0;}var t,d,m,s;t=c[c.length-1];d=d.fullArgs();m=0;if(b!=\"goto\"){d=d.slice(0,d.lastIndexOf(t));\\nm=cssTimeUnit(t);}d=eval(Wikifier.parse(d));if(d+\"\"){if(this.timer){clearTimeout(this.timer);\\n}s=state.history[0].passage.title;this.timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a);\\n}},m);}}};",
+      "links": []
+    },
+    {
+      "pid": 137,
+      "name": "Yes",
+      "text": "<<print $nemesis_gender>> did nothing.\\n\\nWhere was <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>their<<endif>><<if $nemesis_gender eq \"He\">>his<<endif>> [[heart|happy]].\\n",
+      "links": [
+        {
+          "text": "heart",
+          "destination": {
+            "name": "happy",
+            "pid": 234
+          }
+        }
+      ]
+    },
+    {
+      "pid": 138,
+      "name": "tag control",
+      "text": "version.extensions[\"toggletagMacros\"]={major:1,minor:1,revision:0};macros[\"toggletag\"]={handler:function(a,b,c){var p=e(a);var d=document.body;if(p){var t=p.getAttribute(\"data-tags\");var i=t.indexOf(c[0]);if(b!=\"addtag\"&&i>=0){var r=t.replace(c[0],\"\");p.setAttribute(\"data-tags\",r);d.setAttribute(\"data-tags\",r);}else{if(b!=\"removetag\"&&i<0){var r=t+\" \"+c[0];p.setAttribute(\"data-tags\",r);d.setAttribute(\"data-tags\",r);}}}else{var t=state.history[0].passage.tags;var i=t.indexOf(c[0]);if(b!=\"addtag\"&&i>=0){t.splice(i,1);\\n}else{if(b!=\"removetag\"&&i<0){t.push(c[0]);}}d.setAttribute(\"data-tags\",t.join(\" \"));}function e(f){while(f.parentNode&&!f.classList.contains(\"passage\")){f=f.parentNode;}if(f!=document&&f.getAttribute(\"data-tags\")){return f;}return null;}}};macros[\"addtag\"]=macros[\"toggletag\"];macros[\"removetag\"]=macros[\"toggletag\"];",
+      "links": []
+    },
+    {
+      "pid": 139,
+      "name": "options",
+      "text": "Blue lips whisper, \"I [[forfeit]].\"\\n\\n[[Remove mask]]\\n\\n[[Say nothing]]",
+      "links": [
+        {
+          "text": "forfeit",
+          "destination": {
+            "name": "forfeit",
+            "pid": 7
+          }
+        },
+        {
+          "text": "Remove mask",
+          "destination": {
+            "name": "Remove mask",
+            "pid": 115
+          }
+        },
+        {
+          "text": "Say nothing",
+          "destination": {
+            "name": "Say nothing",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 140,
+      "name": "who are you",
+      "text": "\"Who are you?\"\\n\\n[[Rip mask off|demasked-hate]]",
+      "links": [
+        {
+          "text": "Rip mask off",
+          "destination": {
+            "name": "demasked-hate",
+            "pid": 232
+          }
+        }
+      ]
+    },
+    {
+      "pid": 141,
+      "name": "radiance-darkness",
+      "text": "<<timedgoto \"locusts\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "locusts",
+            "pid": 251
+          }
+        }
+      ]
+    },
+    {
+      "pid": 142,
+      "name": "hot knife",
+      "text": "Burnt by your own anger, like picking up a hot knife.\\n\\nUntil you <<replace \"realized.\">>realized.\\n\\nYou are that [[knife|basement]].<<endreplace>>",
+      "links": [
+        {
+          "text": "knife",
+          "destination": {
+            "name": "basement",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 143,
+      "name": "unfold",
+      "text": "Blood pours from your palm.\\n\\n[[Burns|true-wake]] like hot sand through your fingers.",
+      "links": [
+        {
+          "text": "Burns",
+          "destination": {
+            "name": "true-wake",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 144,
+      "name": "quote-anorexic",
+      "text": "[[I am starved and curveless.|quote-anorexic-exit]]\\n[[I am skin and bone.|quote-anorexic-exit]]\\n[[She has learned her lesson.|quote-anorexic-exit]]",
+      "links": [
+        {
+          "text": "I am starved and curveless.",
+          "destination": {
+            "name": "quote-anorexic-exit",
+            "pid": 63
+          }
+        },
+        {
+          "text": "I am skin and bone.",
+          "destination": {
+            "name": "quote-anorexic-exit",
+            "pid": 63
+          }
+        },
+        {
+          "text": "She has learned her lesson.",
+          "destination": {
+            "name": "quote-anorexic-exit",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 145,
+      "name": "bridge",
+      "text": "The wood creaks and beams are missing but you make it [[across|wind]].\\n\\nOf course you do. The feeling persists that you will survive in some misshapen, rotten, miserable, cockroach form until you meet your ultimate fate.",
+      "links": [
+        {
+          "text": "across",
+          "destination": {
+            "name": "wind",
+            "pid": 267
+          }
+        }
+      ]
+    },
+    {
+      "pid": 146,
+      "name": "White table",
+      "text": "Swirled mineral white.\\n\\n[[Back|blood room]]\\n\\n<<set $blood_timer += 1>>",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "blood room",
+            "pid": 193
+          }
+        }
+      ]
+    },
+    {
+      "pid": 147,
+      "name": "sweet",
+      "text": "Tastes sweet.\\n\\n[[But.]]",
+      "links": [
+        {
+          "text": "But.",
+          "destination": {
+            "name": "But.",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 148,
+      "name": "replace",
+      "text": "  version.extensions['replaceMacro'] = {major:1, minor:0, revision:0};\\n  macros['replace'] = {\\n    handler: function (g, e, f, b) {\\n        var h = insertElement(null, \"div\", null, \"replacement\");\\n        var k = b.source.indexOf('>>', b.matchStart) + 2;\\n        var a = b.source.slice(k);\\n        var d = -1;\\n        var c = '';\\n        var l = 0;\\n\t\\n        for(var i = 0; i < a.length; i++) {\\n            if(a.substr(i, 14) == '<<endreplace>>') {\\n                if(l == 0) {\\n                    d = k + i + 14;\\n                    break;\\n                }\\n                else {\\n                    l--;\\n\t\t\t  c += a.charAt(i);\\n                }\\n            }\\n            else {\\n\t\t\t    if(a.substr(i, 9) == '<<replace') {\\n                    l++;\\n                }\\n                c += a.charAt(i);\\n            }\\n\t\t}\\n        if(d != -1) {\\n\t\t    var m = Wikifier.createInternalLink(g,null);\\n\t\t    m.className=\"internalLink replaceLink\";\\n\t\t    insertText(m,f[0]);\\n\t\t\tinsertText(h,c);\\n\t\t\tg.appendChild(h);\\n\t\t\th.style.display = \"none\";\\n\t\t\tm.onclick = function() {\\n\t\t\t\tvar n = this.nextSibling;\\n\t\t\t\tif (n) { \\n\t\t\t\t  var t = n.firstChild ?n.firstChild.nodeValue : \"\";\\n\t\t\t\t  removeChildren(n);\\n\t\t\t\t  new Wikifier(n,t);\\n\t\t\t\t  n.style.display = \"inline\";\\n\t\t\t\t  fade(n, { fade: \"in\" });\\n\t\t\t\t}\\n\t\t\t\tthis.parentNode.removeChild(this);\\n\t\t\t}\\n            b.nextMatch = d;\\n        }\\n        else {\\n            throwError(g, \"can't find matching endreplace\");\\n            delete h;\\n\t\t\treturn;\\n        }\\n    }\\n  }\\n  macros['endreplace']={handler: function () {} }",
+      "links": []
+    },
+    {
+      "pid": 149,
+      "name": "Go inside",
+      "text": "The doorperson coughs, hand outstretched.\\n\\nTip with:\\n\\n<<if $circle eq 0>>[[Brass circle|circle-mask]]<<endif>>\\n<<if $square eq 0>>[[Gold square|square-mask]]<<endif>>\\n<<if $triangle eq 0>>[[Silver triangle|triangle-mask]]<<endif>>",
+      "links": [
+        {
+          "text": "Brass circle",
+          "destination": {
+            "name": "circle-mask",
+            "pid": 179
+          }
+        },
+        {
+          "text": "Gold square",
+          "destination": {
+            "name": "square-mask",
+            "pid": 192
+          }
+        },
+        {
+          "text": "Silver triangle",
+          "destination": {
+            "name": "triangle-mask",
+            "pid": 256
+          }
+        }
+      ]
+    },
+    {
+      "pid": 150,
+      "name": "Start",
+      "text": "[[({O})|dark-begin]]\\n\\n<<silently>>\\n\\n<<set $jungle = 0>>\\n<<set $desert = 0>>\\n<<set $sea = 0>>\\n\\n<<set $paper = 3>>\\n<<set $woman = 0>>\\n<<set $poem = -1>>\\n\\n<<set $dancing = 0>>\\n\\n<<set $r = 0>>\\n<<set $r1 = 0>>\\n\\n<<set $key = 0>>\\n<<set $wound = \"\">>\\n\\n<<set $flash = 0>>\\n\\n<<set $hands = 0>>\\n<<set $hand_count = 0>>\\n<<set $icebox = 0>>\\n<<set $garbage_disposal = 0>>\\n<<set $closet = 0>>\\n<<set $fireplace = 0>>\\n\\n<<set $circle = 0>>\\n<<set $square = 0>>\\n<<set $triangle = 0>>\\n\\n<<set $react = 0>>\\n<<set $light = 0>>\\n<<set $light_stage = 0>>\\n\\n<<set $react2 = 0>>\\n<<set $light2 = 0>>\\n<<set $light_stage2 = 0>>\\n\\n<<set $react3 = 0>>\\n<<set $light3 = 0>>\\n<<set $light_stage3 = 0>>\\n\\n<<set $horror = 0>>\\n<<set $resentment = 0>>\\n<<set $fascination = 0>>\\n<<set $crunch = 0>>\\n\\n<<set $stammer = 0>>\\n<<set $coherent = 0>>\\n<<set $stammer1 = \"\">>\\n<<set $stammer2 = \"\">>\\n<<set $stammer3 = \"\">>\\n<<set $stammer4 = \"\">>\\n\\n<<set $water = 3>>\\n<<set $fly = 0>>\\n<<set $blood_timer = 0>>\\n\\n<<set $human_health = 0>>\\n<<set $ai_health = 0>>\\n\\n<<set $nemesis_gender = \"\">>\\n\\n\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "({O})",
+          "destination": {
+            "name": "dark-begin",
+            "pid": 255
+          }
+        }
+      ]
+    },
+    {
+      "pid": 151,
+      "name": "Speak in sorrow",
+      "text": "//You were my FRIEND.//\\n\\n[[Augh|who are you]]\\n",
+      "links": [
+        {
+          "text": "Augh",
+          "destination": {
+            "name": "who are you",
+            "pid": 140
+          }
+        }
+      ]
+    },
+    {
+      "pid": 152,
+      "name": "Fountain",
+      "text": "A verdigris rim stained with birdshit, full of brackish, [[still]] water.\\n\\n[[Stare at your reflection|reflection]]\\n\\n[[Away|monastery]]\\n",
+      "links": [
+        {
+          "text": "still",
+          "destination": {
+            "name": "still",
+            "pid": 79
+          }
+        },
+        {
+          "text": "Stare at your reflection",
+          "destination": {
+            "name": "reflection",
+            "pid": 275
+          }
+        },
+        {
+          "text": "Away",
+          "destination": {
+            "name": "monastery",
+            "pid": 257
+          }
+        }
+      ]
+    },
+    {
+      "pid": 153,
+      "name": "break down",
+      "text": "Crying.\\n\\n<<replace \"I don't know what the right weapon looks like.\">><<cyclinglink $x1 \"I\" \"don't\" \"know\" \"what\" \"the\" \"right\" \"weapon\" \"looks\" \"like\">><<cyclinglink $x1 \"I\" \"don't\" \"know\" \"what\" \"the\" \"right\" \"weapon\" \"looks\" \"like\">><<cyclinglink $x1 \"I\" \"don't\" \"know\" \"what\" \"the\" \"right\" \"weapon\" \"looks\" \"like\">><<cyclinglink $x1 \"I\" \"don't\" \"know\" \"what\" \"the\" \"right\" \"weapon\" \"looks\" \"like\">><<cyclinglink $x1 \"I\" \"don't\" \"know\" \"what\" \"the\" \"right\" \"weapon\" \"looks\" \"like\">><<cyclinglink $x1 \"I\" \"don't\" \"know\" \"what\" \"the\" \"right\" \"weapon\" \"looks\" \"like\">><<cyclinglink $x1 \"I\" \"don't\" \"know\" \"what\" \"the\" \"right\" \"weapon\" \"looks\" \"like\">><<cyclinglink $x1 \"I\" \"don't\" \"know\" \"what\" \"the\" \"right\" \"weapon\" \"looks\" \"like\">><<cyclinglink $x1 \"I\" \"don't\" \"know\" \"what\" \"the\" \"right\" \"weapon\" \"looks\" \"like\">><<timedgoto \"weapon\" 16s>><<endreplace>>",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "don't",
+            "pid": 273
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "weapon",
+            "pid": 278
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "weapon",
+            "pid": 278
+          }
+        }
+      ]
+    },
+    {
+      "pid": 154,
+      "name": "table",
+      "text": "<<if $ai_health eq 0>>Your nemesis smiles tightly.<<endif>><<if $ai_health eq 250>><<if $nemesis_gender eq \"She\">>She licks her<<endif>><<if $nemesis_gender eq \"Their\">>They lick their<<endif>><<if $nemesis_gender eq \"He\">>He licks his<<endif>> lips.<<endif>><<if $ai_health eq 500>>Your nemesis drums <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>their<<endif>><<if $nemesis_gender eq \"He\">>his<<endif>> fingers restlessly.<<endif>><<if $ai_health eq 750>>Your nemesis looks pale.<<endif>><<if $ai_health eq 1000>>You can see <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>their<<endif>><<if $nemesis_gender eq \"He\">>his<<endif>> heart beating through <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>their<<endif>><<if $nemesis_gender eq \"He\">>his<<endif>> shirt.<<endif>><<if $ai_health eq 1250>><<if $nemesis_gender eq \"She\">>Her<<endif>><<if $nemesis_gender eq \"Their\">>Their<<endif>><<if $nemesis_gender eq \"He\">>His<<endif>> rapid breathing fills the silence.<<endif>><<if $ai_health eq 1500>>Sweat trickles from behind <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>their<<endif>><<if $nemesis_gender eq \"He\">>his<<endif>> mask and traces down <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>their<<endif>><<if $nemesis_gender eq \"He\">>his<<endif>> neck. You can tell it's a struggle for <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>them<<endif>><<if $nemesis_gender eq \"He\">>him<<endif>> to keep silent.<<endif>><<if $ai_health eq 1750>><<if $nemesis_gender eq \"She\">>She is<<endif>><<if $nemesis_gender eq \"Their\">>They are<<endif>><<if $nemesis_gender eq \"He\">>He is<<endif>> deathly pale. <<if $nemesis_gender eq \"She\">>Her<<endif>><<if $nemesis_gender eq \"Their\">>Their<<endif>><<if $nemesis_gender eq \"He\">>His<<endif>> lids are drooping.<<endif>>\\n\\n<<if $human_health eq 0>>You feel j<<replace \"u\">>u<<replace \"u\">>u<<replace \"u\">>u<<replace \"u\">>u<<replace \"u\">>u<<replace \"u\">>u<<replace \"u\">>u<<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>>ust fine.<<endif>><<if $human_health eq 250>>A tinge of nausea.<<endif>><<if $human_health eq 500>>Your skin is looking a little pale.<<endif>><<if $human_health eq 750>>Your skin itches. You shake your leg restlessly.<<endif>><<if $human_health eq 1000>>Piss seeps from between your legs with a tingle.<<endif>><<if $human_health eq 1250>>Sweat pours down your face.<<endif>><<if $human_health eq 1500>>You breath rapidly, cold air cutting your nostrils.<<endif>><<if $human_health eq 1750>>You look down at your ashy hands, struggling for vision.<<endif>>\\n\\nGrab a [[tile]].",
+      "links": [
+        {
+          "text": "tile",
+          "destination": {
+            "name": "tile",
+            "pid": 248
+          }
+        }
+      ]
+    },
+    {
+      "pid": 155,
+      "name": "miss",
+      "text": "Their voice gets small and shy. \"Aww. Thanks.\\n\\nI...\\n\\nI hope someday, things are better for you.\"\\n\\n[[\"I'm never getting better.\"|the key]]\\n\\n[[\"Me too. Take care.\"|the key-happy]]",
+      "links": [
+        {
+          "text": "\"I'm never getting better.\"",
+          "destination": {
+            "name": "the key",
+            "pid": 46
+          }
+        },
+        {
+          "text": "\"Me too. Take care.\"",
+          "destination": {
+            "name": "the key-happy",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 156,
+      "name": "creek",
+      "text": "Sunlight drops like pins through the canopy and sparks on the creek.\\n\\n[[Get your feet wet?|get wet]]\\n\\n[[Look for a way around|around]]\\n<<loopsound \"stream.mp3\">>",
+      "links": [
+        {
+          "text": "Get your feet wet?",
+          "destination": {
+            "name": "get wet",
+            "pid": 185
+          }
+        },
+        {
+          "text": "Look for a way around",
+          "destination": {
+            "name": "around",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 157,
+      "name": "Get up",
+      "text": "You [[collapse]].\\n\\n",
+      "links": [
+        {
+          "text": "collapse",
+          "destination": {
+            "name": "collapse",
+            "pid": 233
+          }
+        }
+      ]
+    },
+    {
+      "pid": 158,
+      "name": "poem",
+      "text": "<<set $poem += 1>><<if $poem eq 0>>//the sea took my daughter and there is nothing i can do to the sea.//<<endif>><<if $poem eq 1>>//i am now as i was then.\\n\\nmy hands still remind me of\\n\\nher hands so long in the water, black in the water\\n\\nmy hands clawing rubies from my thighs in teeth-grinding blind heat.//<<endif>><<endif>><<if $poem eq 2>>//i am now as i was then\\n\\nand when my daughtered friends are laughing in the sun\\n\\nfor me it\u2019s still 3 AM.//<<endif>><<if $poem eq 3>>//i see how people look at me in church\\n\\nguess they heard some things.//<<endif>><<if $poem eq 4>>//i see how people look at me in church\\n\\nguess they heard some things.\\n\\nthey say i wasn\u2019t careful enough\\n\\nmaybe i wasn\u2019t careful enough\\n\\ni guess god could tell you if i was <<replace \"careful enough\">>careful enough\\n\\nbut <<replace \"honey\">>honey\\n\\nyou don\u2019t know god.<<endreplace>><<endreplace>>//<<endif>><<if $poem eq 5>>//i don\u2019t come back to church.//<<endif>><<if $poem eq 6>>//i was a bad mother\\n\\ni will always be that bad mother.\\n\\nthanks, waves.//<<endif>><<if $poem eq 7>>//i was not enough on her bad nights\\n\\nand now those nights are here for me.//<<endif>><<if $poem eq 8>>//she catches me constantly\\n\\ni am trapped with her in the shower\\n\\nshe flashes every third thought\\n\\nin bed i burn her to the ceiling\\n\\nand i can\u2019t open this Pepsi without thinking about her//<<endif>><<if $poem eq 9>>//she catches me constantly\\n\\ni am trapped with her in the shower\\n\\nshe flashes every third thought\\n\\nin bed i burn her to the ceiling\\n\\nand i can\u2019t open this Pepsi without thinking about her\\n\\nbecause i am always thinking about her.//<<endif>><<if $poem eq 10>>//i keep my hands on my lap where i can see them\\n\\nand the other moms will never know how much i want to rip their wombs out\\n\\nand fix my big horrible problem.//<<endif>><<if $poem eq 11>>//don\u2019t hand me that water bottle\\n\\nthat\u2019s insensitive\\n\\nyou know i only drink shit these days//<<set $woman = 1>><<endif>><<if $poem eq 12>>She stares at the night sky.<<endif>><<if $poem eq 13>>She goes inside.<<endif>>\\n\\n<<if $poem lt 13>>[[Listen|poem]]<<else>>[[Get up|Patio]]<<endif>>\\n",
+      "links": [
+        {
+          "text": "Listen",
+          "destination": {
+            "name": "poem",
+            "pid": 158
+          }
+        },
+        {
+          "text": "Get up",
+          "destination": {
+            "name": "Patio",
+            "pid": 272
+          }
+        }
+      ]
+    },
+    {
+      "pid": 159,
+      "name": "cycling",
+      "text": "version.extensions[\"cyclinglinkMacro\"]={major:3,minor:1,revision:1};macros.cyclinglink={handler:function(a,b,c){var l=Wikifier.createInternalLink(a,null);\\nl.className=\"internalLink cyclingLink\";l.setAttribute(\"data-cycle\",0);var v=\"\";var end=false;\\nif(c.length&&c[0][0]==\"$\"){v=c[0].slice(1);c.shift();}if(c[c.length-1]==\"end\"){end=true;\\nc.pop();}var h=state.history[0].variables;for(var i=0;i<c.length;i++){var on=(i==Math.max(c.indexOf(h[v]),0));\\nvar d=insertElement(null,\"span\",null,\"cyclingLink\"+((on)?\"En\":\"Dis\")+\"abled\");if(on){h[v]=c[ i ];\\nl.setAttribute(\"data-cycle\",i);}insertText(d,c[ i ]);l.appendChild(d);}l.onclick=function(){var t=this.childNodes;\\nvar d=\"cyclingLink\";var u=this.getAttribute(\"data-cycle\")-0;var m=t.length;if(end&&u==m-2){var n=this.removeChild(t[u+1]);\\nn.className=d+\"End\";this.parentNode.replaceChild(n,this);return;}t[u].classList.toggle(d+\"Enabled\");\\nt[u].classList.toggle(d+\"Disabled\");u=(u+1)%m;if(v){h[v]=c[u];}t[u].classList.toggle(d+\"Enabled\");\\nt[u].classList.toggle(d+\"Disabled\");this.setAttribute(\"data-cycle\",u);};},init:function(){addStyle(\".cyclingLinkDisabled { display:none; } \");\\n}};macros.cyclinglink.init();",
+      "links": []
+    },
+    {
+      "pid": 160,
+      "name": "your nemesis",
+      "text": "<<timedgoto \"your nemesis\" 2s>>Your [[nemesis]].",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "your nemesis",
+            "pid": 160
+          }
+        },
+        {
+          "text": "nemesis",
+          "destination": {
+            "name": "nemesis",
+            "pid": 205
+          }
+        }
+      ]
+    },
+    {
+      "pid": 161,
+      "name": "her",
+      "text": "<<if $stammer lt 3>><<timedgoto \"her\" 6s >><<else>><<timedgoto \"Say something\" 5s>><<endif>><<set $stammer += 1>>She's wearing a low-cut evening dress. A hideous, scaly creature peeks from her cleavage, claws scraping listlessly at her breasts.\\n\\n<<if $stammer eq 2>>She arches an immaculately plucked eyebrow.<<endif>><<if $stammer eq 3>>She inspects her nails.<<endif>><<if $stammer eq 4>>She looks bored.<<endif>>\\n\\n<<if $stammer gte 1>>\"<<cyclinglink $stammer1 \"Hi\" \"You\" \"Umm\" \"I\">> <<cyclinglink $stammer2 \"look\" \"hi\" \"really\">> <<cyclinglink $stammer3 \"um\" \"really\" \"I\">> <<cyclinglink $stammer4 \"uhh\" \"ahhhhhh\" \"nice\">>\"<<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "her",
+            "pid": 161
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "Say something",
+            "pid": 89
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "look",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 162,
+      "name": "disintegrate",
+      "text": "<<set $dancing += 1>>\\n<<if $dancing eq 1>>Spinning on one foot as I lift my arms\\n\\nAnd see myself as god sees me\\n\\nWorthy of love<<timedgoto \"disintegrate\" 1.5s>><<endif>><<if $dancing eq 2>>Spinning on one foot as I lift my arms\\n\\nAnd see myself as god sees\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.5s>><<endif>><<if $dancing eq 3>>Spinning on one foot as I lift arms\\n\\nAnd see myself as god sees\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.5s>><<endif>><<if $dancing eq 4>>Spinning on one foot as I lift arms\\n\\nAnd see as god sees\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.5s>><<endif>><<if $dancing eq 5>>Spinning as I lift arms\\n\\nAnd see as god sees\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.5s>><<endif>><<if $dancing eq 6>>Spinning as I lift arms\\n\\nAnd see as god\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.5s>><<endif>><<if $dancing eq 7>>Spinning I lift arms\\n\\nAnd see as god\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.5s>><<endif>><<if $dancing eq 8>>Spinning I lift arms\\n\\nAnd see god\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.2s>><<endif>><<if $dancing eq 9>>Spinning I lift\\n\\nAnd see god\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.2s>><<endif>><<if $dancing eq 10>>Spinning I lift\\n\\nsee god\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.2s>><<endif>><<if $dancing eq 11>>Spinning I lift\\n\\nsee god\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.2s>><<endif>><<if $dancing eq 12>>I lift\\n\\nsee god\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.2s>><<endif>><<if $dancing eq 13>>I lift\\n\\nshe\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.2s>><<endif>><<if $dancing eq 14>>I\\n\\ngod\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.2s>><<endif>><<if $dancing eq 15>>I\\n\\n\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.2s>><<endif>><<if $dancing eq 16>>\\n\\n\\n\\nWorthy of love<<timedgoto \"disintegrate\" 0.2s>><<endif>><<if $dancing eq 17>>\\n\\n\\n\\nWorthy of<<timedgoto \"disintegrate\" 0.2s>><<endif>><<if $dancing eq 18>>\\n\\n\\n\\nWorthy<<timedgoto \"disintegrate\" 0.2s>><<endif>><<if $dancing eq 18>>\\n\\n\\n\\n<<timedgoto \"x-darkness\" 1.5s>><<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "disintegrate",
+            "pid": 162
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "x-darkness",
+            "pid": 281
+          }
+        }
+      ]
+    },
+    {
+      "pid": 163,
+      "name": "red tile",
+      "text": "Deeper on the inside than they are on the outside.\\n\\nA basket of these will contain the sum of your [[veins]].",
+      "links": [
+        {
+          "text": "veins",
+          "destination": {
+            "name": "veins",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 164,
+      "name": "quote-1",
+      "text": "[[In the prosecution of this infernal design, they are diligent in the highest degree. To find out the most effectual means of putting it into execution, they apply to this end the whole force of their angelical understanding...|quote-1-exit]]",
+      "links": [
+        {
+          "text": "In the prosecution of this infernal design, they are diligent in the highest degree. To find out the most effectual means of putting it into execution, they apply to this end the whole force of their angelical understanding...",
+          "destination": {
+            "name": "quote-1-exit",
+            "pid": 253
+          }
+        }
+      ]
+    },
+    {
+      "pid": 165,
+      "name": "elevator",
+      "text": "Faded blue paint over thick-cut wood. Heavy machinery arches above the elevator, drooling a cable down through the wood and into the mist.\\n\\nThe nautilus hums softly as it pastes papers to the ceiling.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 166,
+      "name": "why",
+      "text": "\"I'm trying to make a night sky.\"\\n\\nThe paper is ticket stubs. A star is scribbled on each. The stars are barely visible, weak graphite drowned out by the thick black print of words and numbers.\\n\\n[[\"You can't really see the stars\"|stars]]\\n",
+      "links": [
+        {
+          "text": "\"You can't really see the stars\"",
+          "destination": {
+            "name": "stars",
+            "pid": 183
+          }
+        }
+      ]
+    },
+    {
+      "pid": 167,
+      "name": "say something",
+      "text": "<<if $nemesis_gender eq \"She\">>She looks like she's going to say something<<endif>><<if $nemesis_gender eq \"Their\">>They look like they're going to say something<<endif>><<if $nemesis_gender eq \"He\">>He looks like he's going to say something<<endif>>, when the proctor comes in, an upright nautilus construct with burgundy enameled shell.\\n\\nThe proctor sets something to the table in front of you. \\n\\n<<replace \"Click.\">>A [[red tile]].<<endreplace>>",
+      "links": [
+        {
+          "text": "red tile",
+          "destination": {
+            "name": "red tile",
+            "pid": 163
+          }
+        }
+      ]
+    },
+    {
+      "pid": 168,
+      "name": "bump",
+      "text": "Hard metal surface [[collides]] with your ribs",
+      "links": [
+        {
+          "text": "collides",
+          "destination": {
+            "name": "collides",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 169,
+      "name": "window",
+      "text": "Moss-fringed glass carries a glimpse of grey sky.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 170,
+      "name": "Get your bottle",
+      "text": "You grab your bottle. Crammed way in the back, your napsack, smeared with white dust from the chalky coastal road.\\n\\nYou drag it out and drop it to the side. Soft metal clink.\\n\\nStill holding your [[bottle|bottle menu]].",
+      "links": [
+        {
+          "text": "bottle",
+          "destination": {
+            "name": "bottle menu",
+            "pid": 134
+          }
+        }
+      ]
+    },
+    {
+      "pid": 171,
+      "name": "angelz",
+      "text": "The angel slithers across the ceiling, cilia flowing along its bony white carapace.\\n\\n<<replace \"Scream\">>Your throat feels tight. Nothing comes out.<<set $react += 1>><<if $react eq 3>><<timedgoto \"angel light\" 2.5s>><<endif>><<endreplace>>\\n\\n<<replace \"Run\">>Can't move. Like something is sitting on your chest.<<set $react += 1>><<if $react eq 3>><<timedgoto \"angel light\" 2.5s>><<endif>><<endreplace>>\\n\\n<<replace \"Fight\">>Your fingers twitch.<<set $react += 1>><<if $react eq 3>><<timedgoto \"angel light\" 2.5s>><<endif>><<endreplace>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "angel light",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 172,
+      "name": "shapetalk3",
+      "text": "You always had trouble figuring out what to pay people, or whether to pay for certain things at all. A highly formalized yet unspoken system.\\n\\nYou just freeze up trying to evaluated the worth of an object, or even harder, an act.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 173,
+      "name": "shapetalk2",
+      "text": "Say someone creates a painting and puts it up for sale. They get the triangle.\\n\\nThe painter's agent, responsible for selling the painting, gets the square.\\n\\nThe person who safely delivers the painting gets the circle.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 174,
+      "name": "darkness of the end",
+      "text": "<<timedgoto \"end\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "end",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 175,
+      "name": "anorexic-darkness",
+      "text": "<<timedgoto \"quote-anorexic\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "quote-anorexic",
+            "pid": 144
+          }
+        }
+      ]
+    },
+    {
+      "pid": 176,
+      "name": "accept forfeit",
+      "text": "\"I accept your forfeit.\"\\n\\n<<if $nemesis_gender eq \"She\">>She looks<<endif>><<if $nemesis_gender eq \"Their\">>They look<<endif>><<if $nemesis_gender eq \"He\">>He looks<<endif>> at you for what seems like forever and finally speak in a small, broken [[voice]].",
+      "links": [
+        {
+          "text": "voice",
+          "destination": {
+            "name": "voice",
+            "pid": 229
+          }
+        }
+      ]
+    },
+    {
+      "pid": 177,
+      "name": "bitter",
+      "text": "Wish I could take any bottle but my <<replace \"own.\">>own.<<timedgoto \"hurt you\" 2.5s>><<endreplace>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hurt you",
+            "pid": 288
+          }
+        }
+      ]
+    },
+    {
+      "pid": 178,
+      "name": "dropping",
+      "text": "Then some animating force leaves the wingspan\\n\\nAnd it drops<<timedgoto \"dropped\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "dropped",
+            "pid": 227
+          }
+        }
+      ]
+    },
+    {
+      "pid": 179,
+      "name": "circle-mask",
+      "text": "Their mouth looks angry under the mask. \"So generous.\"\\n\\nThey stand just barely aside, so you have to [[press past|the center of the world]] the contour of their body under their suit, fabric reeking of perfume, cigarettes.<<set $circle = 1>>",
+      "links": [
+        {
+          "text": "press past",
+          "destination": {
+            "name": "the center of the world",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 180,
+      "name": "opponent",
+      "text": "You stare at <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>them<<endif>><<if $nemesis_gender eq \"He\">>him<<endif>>. <<if $nemesis_gender eq \"She\">>She stares<<endif>><<if $nemesis_gender eq \"Their\">>They stare<<endif>><<if $nemesis_gender eq \"He\">>He stares<<endif>> back through <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>their<<endif>><<if $nemesis_gender eq \"He\">>his<<endif>> mask.\\n\\nHow does it feel after so long.\\n\\n[[Nothing. I feel nothing.|nothing]]\\n\\n[[Hate. Hate. Hate.|hate]]\\n\\n[[I feel like I'm going to cry.|cry]]\\n",
+      "links": [
+        {
+          "text": "Nothing. I feel nothing.",
+          "destination": {
+            "name": "nothing",
+            "pid": 266
+          }
+        },
+        {
+          "text": "Hate. Hate. Hate.",
+          "destination": {
+            "name": "hate",
+            "pid": 19
+          }
+        },
+        {
+          "text": "I feel like I'm going to cry.",
+          "destination": {
+            "name": "cry",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 181,
+      "name": "shark tank",
+      "text": "I'm not getting better. I'm shit. I'm broken. I'm wasted. I'm ruined. I'm sick.\\n\\n[[I need this hate to survive|say something]]\\n",
+      "links": [
+        {
+          "text": "I need this hate to survive",
+          "destination": {
+            "name": "say something",
+            "pid": 167
+          }
+        }
+      ]
+    },
+    {
+      "pid": 182,
+      "name": "triangle-signer",
+      "text": "The triangle clinks into the jar.\\n\\nThey look up from the form. \"I'm sorry, there must have been a mistake? All I did was write your name down.\"<<set $triangle = 1>>\\n\\n[[Walk away|bide]]",
+      "links": [
+        {
+          "text": "Walk away",
+          "destination": {
+            "name": "bide",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 183,
+      "name": "stars",
+      "text": "\"But I know they're there.\"\\n\\nCreak creak.\\n\\n[[\"Do you ever look at real stars?\"|real stars]]\\n",
+      "links": [
+        {
+          "text": "\"Do you ever look at real stars?\"",
+          "destination": {
+            "name": "real stars",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 184,
+      "name": "Approach",
+      "text": "The grass under your feet turns dark.\\n\\nSomething is [[flapping|sick_angel]] in the periphery of your vision.\\n",
+      "links": [
+        {
+          "text": "flapping",
+          "destination": {
+            "name": "sick_angel",
+            "pid": 265
+          }
+        }
+      ]
+    },
+    {
+      "pid": 185,
+      "name": "get wet",
+      "text": "Your sneakers fill with water. The dust and salt on your soles melts away. Tiny fish swim through the holes and nibble your toes.\\n\\n[[Splash splash splash|rustle]]\\n",
+      "links": [
+        {
+          "text": "Splash splash splash",
+          "destination": {
+            "name": "rustle",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 186,
+      "name": "fire",
+      "text": "Years of regret burnt to homogenous ashes.\\n\\n[[Back|regrets]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "regrets",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 187,
+      "name": "tap",
+      "text": "<<replace \"Tap.\">>[[Tap.|options]]<<endreplace>>",
+      "links": [
+        {
+          "text": "Tap.",
+          "destination": {
+            "name": "options",
+            "pid": 139
+          }
+        }
+      ]
+    },
+    {
+      "pid": 188,
+      "name": "elevator box",
+      "text": "A nautilus construct is hunched inside. It says, \"Would you like a ride to the city?\"\\n\\n[[\"How much\"|How much]]\\n\\n[[\"Not right now\"|foot]]\\n",
+      "links": [
+        {
+          "text": "\"How much\"",
+          "destination": {
+            "name": "How much",
+            "pid": 110
+          }
+        },
+        {
+          "text": "\"Not right now\"",
+          "destination": {
+            "name": "foot",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 189,
+      "name": "hurt",
+      "text": "Shriveled black my [[hand]]\\n\\nBurnt my [[face]] until it twisted my lip and broke open my jaw\\n\\nNo bruises, just reached inside my [[heart]]",
+      "links": [
+        {
+          "text": "hand",
+          "destination": {
+            "name": "hand",
+            "pid": 260
+          }
+        },
+        {
+          "text": "face",
+          "destination": {
+            "name": "face",
+            "pid": 280
+          }
+        },
+        {
+          "text": "heart",
+          "destination": {
+            "name": "heart",
+            "pid": 214
+          }
+        }
+      ]
+    },
+    {
+      "pid": 190,
+      "name": "tokens",
+      "text": "Plastic gold tokens. Exchange 100 of them for a circle-square-triangle set.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 191,
+      "name": "hmm",
+      "text": "Pale, cold body on a slab in the casino mortuary.\\n\\nThe coroner sifts through your pockets. She comes up with a <<if $circle eq 0>>brass circle<<endif>><<if $triangle eq 0>>silver triangle<<endif>><<if $square eq 0>>gold square. She pockets it.<<endif>>\\n<<timedgoto \"darkness of the end\" 4s>>\\n",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "darkness of the end",
+            "pid": 174
+          }
+        }
+      ]
+    },
+    {
+      "pid": 192,
+      "name": "square-mask",
+      "text": "They accept the square with a graceful flourish and snap it under their sleeve, pivoting to the side to let you [[pass|the center of the world]].\\n\\n<<set $square = 1>>",
+      "links": [
+        {
+          "text": "pass",
+          "destination": {
+            "name": "the center of the world",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 193,
+      "name": "blood room",
+      "text": "<<if $blood_timer gt 6>>Your [[opponent]] enters the room.<<else>>[[Red chair]]. [[White table]]. A glass of [[water]].<<endif>>",
+      "links": [
+        {
+          "text": "opponent",
+          "destination": {
+            "name": "opponent",
+            "pid": 180
+          }
+        },
+        {
+          "text": "Red chair",
+          "destination": {
+            "name": "Red chair",
+            "pid": 259
+          }
+        },
+        {
+          "text": "White table",
+          "destination": {
+            "name": "White table",
+            "pid": 146
+          }
+        },
+        {
+          "text": "water",
+          "destination": {
+            "name": "water",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 194,
+      "name": "glides",
+      "text": "A [[shadow]] glides across the grass, too fast for a cloud.",
+      "links": [
+        {
+          "text": "shadow",
+          "destination": {
+            "name": "shadow",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 195,
+      "name": "grace",
+      "text": "If they walk into the sea, they can expect to get [[drowned|basement]].",
+      "links": [
+        {
+          "text": "drowned",
+          "destination": {
+            "name": "basement",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 196,
+      "name": "Number words script",
+      "text": "try {\\n  version.extensions['numberwords'] = { major:1, minor:0, revision:0 };\\n  macros['numword'] = {\\n  handler: function(place, macroName, params, parser) {\\n      var key = params[0];\\n      key = key.substr(1);\\n      var n = parseInt(state.history[0].variables[key]);\\n      var numbers = [\"zero\", \"one\", \"two\", \"three\", \"four\", \"five\", \"six\", \"seven\", \"eight\", \"nine\", \"ten\", \"eleven\", \"twelve\", \"thirteen\", \"fourteen\", \"fifteen\", \"sixteen\", \"seventeen\", \"eighteen\", \"nineteen\", \"twenty\"];\\n      new Wikifier(place, numbers[n]);\\n    },\\n  };\\n} catch(e) {\\n  throwError(place,\"rnd error: \"+e.message); \\n}",
+      "links": []
+    },
+    {
+      "pid": 197,
+      "name": "remember",
+      "text": "You catch a glimpse of your face in the glass of the cabinets.\\n\\nHow does it feel?\\n\\n[[Like I'm coming home stronger|stronger]]\\n\\n[[I feel like throwing up|throwing]]",
+      "links": [
+        {
+          "text": "Like I'm coming home stronger",
+          "destination": {
+            "name": "stronger",
+            "pid": 279
+          }
+        },
+        {
+          "text": "I feel like throwing up",
+          "destination": {
+            "name": "throwing",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 198,
+      "name": "sound",
+      "text": "(function () {\\n  version.extensions['soundMacros'] = {\\n    major: 1,\\n    minor: 1,\\n    revision: 1\\n  };\\n  var p = macros['playsound'] = {\\n    soundtracks: {},\\n    handler: function (a, b, c, d) {\\n      var loop = function (m) {\\n          if (m.loop == undefined) {\\n            m.loopfn = function () {\\n              this.play();\\n            };\\n            m.addEventListener('ended', m.loopfn, 0);\\n          } else m.loop = true;\\n          m.play();\\n          };\\n      var s = eval(d.fullArgs());\\n      if (s) {\\n        s = s.toString();\\n        var m = this.soundtracks[s.slice(0, s.lastIndexOf(\".\"))];\\n        if (m) {\\n          if (b == \"playsound\") {\\n            m.play();\\n          } else if (b == \"loopsound\") {\\n            loop(m);\\n          } else if (b == \"pausesound\") {\\n            m.pause();\\n          } else if (b == \"unloopsound\") {\\n            if (m.loop != undefined) {\\n              m.loop = false;\\n            } else if (m.loopfn) {\\n              m.removeEventListener('ended', m.loopfn);\\n              delete m.loopfn;\\n            }\\n          } else if (b == \"stopsound\") {\\n            m.pause();\\n            m.currentTime = 0;\\n          } else if (b == \"fadeoutsound\" || b == \"fadeinsound\") {\\n            if (m.interval) clearInterval(m.interval);\\n            if (b == \"fadeinsound\") {\\n              if (m.currentTime>0) return;\\n              m.volume = 0;\\n              loop(m);\\n            } else {\\n              if (!m.currentTime) return;\\n              m.play();\\n            }\\n            var v = m.volume;\\n            m.interval = setInterval(function () {\\n              v = Math.min(1, Math.max(0, v + 0.005 * (b == \"fadeinsound\" ? 1 : -1)));\\n              m.volume = Math.easeInOut(v);\\n              if (v == 0 || v == 1) clearInterval(m.interval);\\n              if (v == 0) {\\n                m.pause();\\n                m.currentTime = 0;\\n                m.volume = 1;\\n              }\\n            }, 10);\\n          }\\n        }\\n      }\\n    }\\n  }\\n  macros['fadeinsound'] = p;\\n  macros['fadeoutsound'] = p;\\n  macros['unloopsound'] = p;\\n  macros['loopsound'] = p;\\n  macros['pausesound'] = p;\\n  macros['stopsound'] = p;\\n  macros['stopallsound'] = {\\n    handler: function () {\\n      var s = macros.playsound.soundtracks;\\n      for (var j in s) {\\n        var i = s[j];\\n        i.pause();\\n        i.currentTime = 0;\\n      }\\n    }\\n  }\\n  var div = $(\"storeArea\").firstChild;\\n  var fe = [\"ogg\", \"mp3\", \"wav\", \"webm\"];\\n  while (div) {\\n    var b = String.fromCharCode(92);\\n    var q = '\"';\\n    var re = \"['\" + q + \"]([^\" + q + \"']*?)\" + b + \".(ogg|mp3|wav|webm)['\" + q + \"]\";\\n    k(new RegExp(re, \"gi\"));\\n    div = div.nextSibling;\\n  }\\n\\n  function k(c, e) {\\n    do {\\n      d = c.exec(div.innerHTML);\\n      if (d) {\\n        var a = new Audio();\\n        if (a.canPlayType) {\\n          for (var i = -1; i < fe.length; i += 1) {\\n            if (i >= 0) d[2] = fe[i];\\n            if (a.canPlayType(\"audio/\" + d[2])) break;\\n          }\\n          if (i < fe.length) {\\n            a.setAttribute(\"src\", d[1] + \".\" + d[2]);\\n            a.interval = null;\\n            macros.playsound.soundtracks[d[1]] = a;\\n          } else console.log(\"Browser can't play '\" + d[1] + \"'\");\\n        }\\n      }\\n    } while (d);\\n  }\\n}());",
+      "links": []
+    },
+    {
+      "pid": 199,
+      "name": "my room",
+      "text": "Newspaper [[clippings]] plaster the wall over a cozy cot. A tiny [[window]] sheds faint light on the room.\\n\\n[[Leave|upstairs]]\\n",
+      "links": [
+        {
+          "text": "clippings",
+          "destination": {
+            "name": "clippings",
+            "pid": 61
+          }
+        },
+        {
+          "text": "window",
+          "destination": {
+            "name": "window",
+            "pid": 169
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "upstairs",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 200,
+      "name": "room",
+      "text": "The room is white marble, chilled by the [[ice water]] flowing through the walls and floor.\\n\\nA white table with two red chairs.\\n\\n[[Approach|blood room]]\\n",
+      "links": [
+        {
+          "text": "ice water",
+          "destination": {
+            "name": "ice water",
+            "pid": 211
+          }
+        },
+        {
+          "text": "Approach",
+          "destination": {
+            "name": "blood room",
+            "pid": 193
+          }
+        }
+      ]
+    },
+    {
+      "pid": 201,
+      "name": "forest-darkness",
+      "text": "<<timedgoto \"darkness\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "darkness",
+            "pid": 99
+          }
+        }
+      ]
+    },
+    {
+      "pid": 202,
+      "name": "whyy",
+      "text": "\"I'm trying to make a night sky.\"\\n\\nThe paper is discarded tickets. A star is scribbled on each. The stars are barely visible, weak graphite drowned out by the thickly printed words and numbers of the tickets.\\n\\n[[\"You can't really see the stars\"|stars]]\\n",
+      "links": [
+        {
+          "text": "\"You can't really see the stars\"",
+          "destination": {
+            "name": "stars",
+            "pid": 183
+          }
+        }
+      ]
+    },
+    {
+      "pid": 203,
+      "name": "css targeting",
+      "text": "(function(){ var render2 = Passage.prototype.render; Passage.prototype.render = function () { var b = render2.call(this); var t = this.tags.join(\" \"); document.body.setAttribute(\"data-tags\", t); b.setAttribute(\"data-tags\",t); return b; }; if(state) { var tgs = state.history[0].passage.tags.join(\" \"); var fc = $('passages').firstChild; fc.setAttribute(\"data-tags\",tgs); }}());if(state) (function(){ var it = setInterval(function(){ var fd = $('passages').firstChild; if (fd!=fc) { clearInterval(it); fd.setAttribute(\"data-tags\",tgs); } },0); }()); ",
+      "links": []
+    },
+    {
+      "pid": 204,
+      "name": "Resentment",
+      "text": "<<set $resentment += 1>><<if $resentment eq 1>>Paralyzed. Stuck.\\n\\nStuck hating.<<endif>><<if $resentment eq 2>>The object of your hate was absent so long you turned the hate inward.<<endif>><<if $resentment eq 3>>I blamed myself for what you did to me.<<endif>><<if $resentment eq 4>>With gruesome heat I imagine overturning the master of my emotions since that day.\\n\\nI know you aren't the same angel. But you'll do (and you'll do is the energy fueling history, strangers obliterated by echoes).<<endif>>\\n\\n<<if $resentment eq 4>>[[Crunch|resentment_height]]<<else>>[[Burn|emotions]]<<endif>>",
+      "links": [
+        {
+          "text": "Crunch",
+          "destination": {
+            "name": "resentment_height",
+            "pid": 237
+          }
+        },
+        {
+          "text": "Burn",
+          "destination": {
+            "name": "emotions",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 205,
+      "name": "nemesis",
+      "text": "They disappear in the direction of the upper floor games.\\n\\nYou [[check]] the sign-up sheets.",
+      "links": [
+        {
+          "text": "check",
+          "destination": {
+            "name": "check",
+            "pid": 231
+          }
+        }
+      ]
+    },
+    {
+      "pid": 206,
+      "name": "slam",
+      "text": "The slot machine is half-buried in the soft earth, mouth clogged with dirt and leaves.\\n\\n[[Look around|foot]]",
+      "links": [
+        {
+          "text": "Look around",
+          "destination": {
+            "name": "foot",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 207,
+      "name": "transition-tower",
+      "text": "<<timedgoto \"rihanna-quote\" 2.5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "rihanna-quote",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 208,
+      "name": "step",
+      "text": "I suspected traffic held the secret to communicating the hurt I had spent so long trying and failing to convey.\\n\\n<<cyclinglink $secret \"It felt like a stage where anyone could be a star. Where headlights became spotlights and your performance could not be ignored.\" \"A breathless whirling stream where time stood still.\" \"The solution to all my problems.\">>\\n\\nThere was no prerequisite. You just needed to take a step. Then another step.\\n\\n[[Bump|bump]]\\n",
+      "links": [
+        {
+          "text": "Bump",
+          "destination": {
+            "name": "bump",
+            "pid": 168
+          }
+        }
+      ]
+    },
+    {
+      "pid": 209,
+      "name": "look-result",
+      "text": "<<if $look eq \"left\">>\\n\\n\\n<<endif>>\\n\\n\\n<<if $look eq \"forward\">>\\n\\n<<if $rihanna eq 1>>I shuffle through some CDs. Consecrated by markers, defiled by scratches and dusty shoeprints.<<endif>>\\n<<if $rihanna eq 2>>I lean back, soaking in the warmth of the leather.<<endif>>\\n<<if $rihanna eq 3>>I lean back, soaking in the warmth of the leather.<<endif>>\\n\\n<<endif>>\\n\\n\\n<<if $look eq \"right\">>\\n\\n<<if $rihanna lt 15>>The sun on the water burns my eyes.<<endif>>\\n\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 210,
+      "name": "grass",
+      "text": "Fluffy seagreen grass ripples around your ankles.\\n\\n[[You feel cold|glides]]",
+      "links": [
+        {
+          "text": "You feel cold",
+          "destination": {
+            "name": "glides",
+            "pid": 194
+          }
+        }
+      ]
+    },
+    {
+      "pid": 211,
+      "name": "ice water",
+      "text": "A dizzying sense that you stand on a frozen stone lake, surrounded by the opaque mist of the marble walls.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 212,
+      "name": "cages",
+      "text": "Restless blackbirds.\\n\\n[[Back|monastery]]\\n",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "monastery",
+            "pid": 257
+          }
+        }
+      ]
+    },
+    {
+      "pid": 213,
+      "name": "something",
+      "text": "Your nemesis is saying [[something|merciless]].",
+      "links": [
+        {
+          "text": "something",
+          "destination": {
+            "name": "merciless",
+            "pid": 129
+          }
+        }
+      ]
+    },
+    {
+      "pid": 214,
+      "name": "heart",
+      "text": "No bruises, just reached inside my heart and touched it with a finger of white-hot light and\\n\\nburned me\\n\\nwhere nobody could see\\n\\n[[But me|accept]]\\n<<set $wound = \"heart\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "heart",
+            "pid": 214
+          }
+        },
+        {
+          "text": "But me",
+          "destination": {
+            "name": "accept",
+            "pid": 222
+          }
+        }
+      ]
+    },
+    {
+      "pid": 215,
+      "name": "monastery interior",
+      "text": "The soft morning light of the [[courtyard|monastery]] gives way to dark halls and musty alcoves. Moths cluster at opaque windows, nibbling on tarnished light.\\n\\nA stairwell curves [[upward|upstairs]]. At the end of the south hallway, steep steps descend into the [[basement]].\\n<<fadeoutsound \"chimes.mp3\">>",
+      "links": [
+        {
+          "text": "courtyard",
+          "destination": {
+            "name": "monastery",
+            "pid": 257
+          }
+        },
+        {
+          "text": "upward",
+          "destination": {
+            "name": "upstairs",
+            "pid": 81
+          }
+        },
+        {
+          "text": "basement",
+          "destination": {
+            "name": "basement",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 216,
+      "name": "Look outside",
+      "text": "Through blood-smeared glass you gaze on miles of plain covered in dead hands.\\n\\nThe hand elemental swarms into the sky, traveling like a devil's cloud to the west.\\n\\n[[Go east|sunburnt]]\\n",
+      "links": [
+        {
+          "text": "Go east",
+          "destination": {
+            "name": "sunburnt",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 217,
+      "name": "rihanna-darkness",
+      "text": "<<timedgoto \"the tower\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "the tower",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 218,
+      "name": "thirsty",
+      "text": "Wasn't there a pool of mineral water near the entrance?\\n\\nYou step softly. Don't want to wake the others.\\n\\n[[Step]]",
+      "links": [
+        {
+          "text": "Step",
+          "destination": {
+            "name": "Step",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 219,
+      "name": "Random text script",
+      "text": "try {\\n  version.extensions['random'] = { major:1, minor:0, revision:0 };\\n  macros['rnd'] = {\\n  handler: function(place, macroName, params, parser) {\\n      var n = Math.floor(Math.random() * params.length);\\n      var str = params[n];\\n      new Wikifier(place, str);\\n    },\\n  };\\n} catch(e) {\\n  throwError(place,\"rnd error: \"+e.message); \\n}",
+      "links": []
+    },
+    {
+      "pid": 220,
+      "name": "Nah",
+      "text": "Everything from that time feels contaminated. Filthy.\\n\\nNeed to start a fire somewhere and throw away everything I own until I'm standing naked.\\n\\n[[Hhh|inventory]]",
+      "links": [
+        {
+          "text": "Hhh",
+          "destination": {
+            "name": "inventory",
+            "pid": 246
+          }
+        }
+      ]
+    },
+    {
+      "pid": 221,
+      "name": "demon",
+      "text": "You pass through the city, hugging yourself against the cold mountain air. Drafts of warmth blast from glass doors swinging to the careen of drunk nightlifers and back-from-workers.\\n\\nYou know the building you need.\\n\\nThe [[last casino]].",
+      "links": [
+        {
+          "text": "last casino",
+          "destination": {
+            "name": "last casino",
+            "pid": 276
+          }
+        }
+      ]
+    },
+    {
+      "pid": 222,
+      "name": "accept",
+      "text": "<<replace \"You always had a choice.\">>You always had a choice.\\n\\n<<replace \"Drink or remain faceless.\">>Drink or remain faceless.\\n\\nBut it hurts, being [[faceless]].<<endreplace>><<endreplace>>",
+      "links": [
+        {
+          "text": "faceless",
+          "destination": {
+            "name": "faceless",
+            "pid": 112
+          }
+        }
+      ]
+    },
+    {
+      "pid": 223,
+      "name": "sleeping",
+      "text": "There is no wall facing the outside. You lie on your side, facing the <<if $jungle eq 1>>jungle canopy silver with moonlight<<endif>><<if $sea eq 1>>sea waves silver with moonlight<<endif>><<if $desert eq 1>>sand dunes silver with moonlight<<endif>>.\\n\\nYou've strewn the contents of your napsack by your bed. The smooth stone floor radiates with heat from the day, while cool air comes through the gap in the wall.\\n\\nBy the light of the moon you look at your [[things|inventory]].",
+      "links": [
+        {
+          "text": "things",
+          "destination": {
+            "name": "inventory",
+            "pid": 246
+          }
+        }
+      ]
+    },
+    {
+      "pid": 224,
+      "name": "char",
+      "text": "Wikifier.formatters.push({name:\"char\",match:\".\",handler:function(a){insertElement(a.output,\"span\",null,\"char\",a.matchText);\\n}});Wikifier.formatters.forEach(function(e){if(e.name==\"emdash\"){e.handler=function(a){var b=insertElement(a.output,\"span\",null,\"char\",String.fromCharCode(8212));\\n};}else{if(e.name==\"prettyLink\"){e.handler=function(a){var b=new RegExp(e.lookahead,\"mg\");\\nb.lastIndex=a.matchStart;var c=b.exec(a.source);if(c&&c.index==a.matchStart&&c[2]){var d=Wikifier.createInternalLink(a.output,c[1]);\\nsetPageElement(d,null,c[1]);a.nextMatch+=c[1].length+2;}else{if(c&&c.index==a.matchStart&&c[3]){var f;\\nif(tale.has(c[4])){f=Wikifier.createInternalLink(a.output,c[4]);}else{f=Wikifier.createExternalLink(a.output,c[4]);\\n}setPageElement(f,null,c[1]);a.nextMatch=c.index+c[0].length;}}};}}});",
+      "links": []
+    },
+    {
+      "pid": 225,
+      "name": "they squeeze",
+      "text": "<<if $nemesis_gender eq \"She\">>She squeezes<<endif>><<if $nemesis_gender eq \"Their\">>They squeeze<<endif>><<if $nemesis_gender eq \"He\">>He squeezes<<endif>>.<<timedgoto \"their outcome\" 1.5s>>\\n",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "their outcome",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 226,
+      "name": "hover",
+      "text": "version.extensions.hoverlinkMacro={major:1,minor:1,revision:0};macros.hoverlink={handler:function(a,b,c){var d,l=Wikifier.createInternalLink(a,c[0]);\\nl.className+=\" hoverLink\";insertElement(l,\"span\",null,null,c[1]||c[0]);if(c[2]){d=insertElement(l,\"span\",null,null,c[2]);\\nd.style.display=\"none\";}l.onmouseover=function(){if(this.childNodes.length>1){this.childNodes[0].style.display=\"none\";\\nthis.childNodes[1].style.display=\"inline\";}};l.onmouseout=function(){if(this.childNodes.length>1){this.childNodes[1].style.display=\"none\";\\nthis.childNodes[0].style.display=\"inline\";}};}};\\n",
+      "links": []
+    },
+    {
+      "pid": 227,
+      "name": "dropped",
+      "text": "Then some animating force leaves the wingspan\\n\\nAnd it drops\\n\\nWith a sick crunch to the ground<<timedgoto \"Approach\" 3s>>\\n",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "Approach",
+            "pid": 184
+          }
+        }
+      ]
+    },
+    {
+      "pid": 228,
+      "name": "have",
+      "text": "\"I'm envious. Some days I feel better....\\n\\nBut most days it's just, day one, day one, same as I got here.\"\\n\\nThey lean their head against the window. \\n\\n\"But the routine helps.\"\\n\\n[[Nod|the key]]\\n",
+      "links": [
+        {
+          "text": "Nod",
+          "destination": {
+            "name": "the key",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 229,
+      "name": "voice",
+      "text": "\"I'm sorry.\\n\\nI don't deserve this.\"\\n\\n[[\"There is no fucking deserve.\"|There is no fucking deserve.]]\\n",
+      "links": [
+        {
+          "text": "\"There is no fucking deserve.\"",
+          "destination": {
+            "name": "There is no fucking deserve.",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 230,
+      "name": "dress",
+      "text": "A woman in a low-cut evening dress. A hideous, scaly creature peeks from her cleavage, claws scraping listlessly at her breasts.\\n\\n[[She glances at you|her]]\\n",
+      "links": [
+        {
+          "text": "She glances at you",
+          "destination": {
+            "name": "her",
+            "pid": 161
+          }
+        }
+      ]
+    },
+    {
+      "pid": 231,
+      "name": "check",
+      "text": "Your nemesis is signed up for the 11:30 PM Red Tile.\\n\\n//Opposition: Currently vacant.\\n\\nExperienced players only, please.//\\n\\nA concierge is stationed at the desk.\\n\\n[[Sign up]]",
+      "links": [
+        {
+          "text": "Sign up",
+          "destination": {
+            "name": "Sign up",
+            "pid": 250
+          }
+        }
+      ]
+    },
+    {
+      "pid": 232,
+      "name": "demasked-hate",
+      "text": "<<if $nemesis_gender eq \"She\">>She becomes<<endif>><<if $nemesis_gender eq \"Their\">>They become<<endif>><<if $nemesis_gender eq \"He\">>He becomes<<endif>> very still.\\n\\n<<if $wound eq \"jaw\">>You speak slowly, enunciating around the pain of your jaw.\\n\\n[[\"But hey, I accept your forfeit.\"|accept forfeit]]\\n\\n[[\"There isn't going to be a forfeit.\"|reject forfeit]]<<else>>[[\"But hey, I accept your forfeit.\"|accept forfeit]]\\n\\n[[\"There isn't going to be a forfeit.\"|reject forfeit]]<<endif>>",
+      "links": [
+        {
+          "text": "\"But hey, I accept your forfeit.\"",
+          "destination": {
+            "name": "accept forfeit",
+            "pid": 176
+          }
+        },
+        {
+          "text": "\"There isn't going to be a forfeit.\"",
+          "destination": {
+            "name": "reject forfeit",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 233,
+      "name": "collapse",
+      "text": "You watch <<if $nemesis_gender eq \"She\">>her<<endif>><<if $nemesis_gender eq \"Their\">>them<<endif>><<if $nemesis_gender eq \"He\">>him<<endif>> from your resting place under the table, cool tile on your broken cheekbone.\\n\\n[[Staring sideways|our death]]\\n",
+      "links": [
+        {
+          "text": "Staring sideways",
+          "destination": {
+            "name": "our death",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 234,
+      "name": "happy",
+      "text": "You remember a time when you were <<replace \"happy\">>happy\\n\\n<<replace \"whole\">>whole\\n\\n[[healthy|dancing]]<<endreplace>><<endreplace>>",
+      "links": [
+        {
+          "text": "healthy",
+          "destination": {
+            "name": "dancing",
+            "pid": 236
+          }
+        }
+      ]
+    },
+    {
+      "pid": 235,
+      "name": "bottles",
+      "text": "We keep our faces in glass bottles so the angels can't see us.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 236,
+      "name": "dancing",
+      "text": "Measured my health in\\n\\n<<set $dancing += 1>><<if $dancing eq 1>>[[Dancing|dancing]] around my bedroom<<endif>><<if $dancing eq 3>>Dancing [[around|dancing]] my bedroom<<endif>><<if $dancing eq 2>>Dancing around [[my|dancing]] bedroom<<endif>><<if $dancing eq 4>>Dancing around my [[bedroom|dancing]]<<endif>><<if $dancing eq 5>>[[Flying|dancing]] around my bedroom<<endif>><<if $dancing eq 6>>Flying around my [[dreamscape|dancing]]<<endif>><<if $dancing eq 7>>[[Spinning|dancing]] as I<<endif>><<if $dancing eq 8>>Spinning on one foot as I [[lift|dancing]]<<endif>><<if $dancing eq 9>>Spinning on one foot as I lift my arms\\n\\nAnd see myself [[as god sees me|dancing]]<<endif>><<if $dancing eq 10>>Spinning on one foot as I lift my arms\\n\\nAnd see myself as god sees me\\n\\nWorthy of [[love|disintegrate]]<<set $dancing = 0>><<endif>>",
+      "links": [
+        {
+          "text": "Dancing",
+          "destination": {
+            "name": "dancing",
+            "pid": 236
+          }
+        },
+        {
+          "text": "around",
+          "destination": {
+            "name": "dancing",
+            "pid": 236
+          }
+        },
+        {
+          "text": "my",
+          "destination": {
+            "name": "dancing",
+            "pid": 236
+          }
+        },
+        {
+          "text": "bedroom",
+          "destination": {
+            "name": "dancing",
+            "pid": 236
+          }
+        },
+        {
+          "text": "Flying",
+          "destination": {
+            "name": "dancing",
+            "pid": 236
+          }
+        },
+        {
+          "text": "dreamscape",
+          "destination": {
+            "name": "dancing",
+            "pid": 236
+          }
+        },
+        {
+          "text": "Spinning",
+          "destination": {
+            "name": "dancing",
+            "pid": 236
+          }
+        },
+        {
+          "text": "lift",
+          "destination": {
+            "name": "dancing",
+            "pid": 236
+          }
+        },
+        {
+          "text": "as god sees me",
+          "destination": {
+            "name": "dancing",
+            "pid": 236
+          }
+        },
+        {
+          "text": "love",
+          "destination": {
+            "name": "disintegrate",
+            "pid": 162
+          }
+        }
+      ]
+    },
+    {
+      "pid": 237,
+      "name": "resentment_height",
+      "text": "<<set $r = Math.round(Math.random() * 2)>><<if $r eq 0>><<rnd \"Dust hisses\" \"Blood drips\" \"Pus oozes\" \"Ichor seeps\">> <<rnd \"purple\" \"yellow\" \"black\" \"runny\" \"green\" \"white\" \"brown\" \"stinking\">> from the <<rnd \"shattered\" \"smashed\" \"caved-in\">> <<rnd \"skull\" \"cranium\">>.<<endif>><<if $r eq 1>><<rnd \"Purple\" \"Yellow\" \"Black\" \"Green\" \"White\" \"Brown\">> <<rnd \"pus\" \"ichor\" \"oil\" \"blood\" \"goo\">> <<rnd \"ebbs\" \"drips\" \"oozes\" \"spurts\" \"runs\">> from <<rnd \"cracked\" \"splintered\" \"smashed\">> <<rnd \"marrow\" \"bone\" \"skull\" \"jaw\">>.<<endif>><<if $r eq 2>><<rnd \"Dull\" \"Monotonous\" \"Blunt\">> <<rnd \"smack\" \"thud\">> of <<rnd \"fists\" \"sneakers\">> hitting <<rnd \"meat\" \"flesh\">>, <<rnd \"purple\" \"yellow\" \"black\" \"runny\" \"green\" \"white\" \"brown\" \"stinking\">> bruises and <<rnd \"oozing\" \"ruptured\" \"glistening\">> <<rnd \"mess\" \"chaos\" \"filth\">> of flesh.<<endif>><<set $crunch += 1>>\\n\\n<<if $crunch gt 14>>[[Dizzy|gender]]<<else>>[[Swing|resentment_height]]<<endif>>",
+      "links": [
+        {
+          "text": "Dizzy",
+          "destination": {
+            "name": "gender",
+            "pid": 72
+          }
+        },
+        {
+          "text": "Swing",
+          "destination": {
+            "name": "resentment_height",
+            "pid": 237
+          }
+        }
+      ]
+    },
+    {
+      "pid": 238,
+      "name": "mortuary-darkness",
+      "text": "<<timedgoto \"darkness of the end\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "darkness of the end",
+            "pid": 174
+          }
+        }
+      ]
+    },
+    {
+      "pid": 239,
+      "name": "Check napsack",
+      "text": "You rustle around inside. Nothing seems stolen.\\n\\n[[Wait]]",
+      "links": [
+        {
+          "text": "Wait",
+          "destination": {
+            "name": "Wait",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 240,
+      "name": "rustles",
+      "text": "<<replace \"Grabs hold of you\">><<replace \"Jerk away\">>Just the sleeve of your hoody tangled on a branch.\\n\\n[[Hhh|wind]]<<endreplace>><<endreplace>>",
+      "links": [
+        {
+          "text": "Hhh",
+          "destination": {
+            "name": "wind",
+            "pid": 267
+          }
+        }
+      ]
+    },
+    {
+      "pid": 241,
+      "name": "note",
+      "text": "Recipes for bitter pastes said to soothe angel burns, superstitions for avoiding their path, relaxation techniques (for everything depends on the readiness of the mind).\\n\\nSomething is [[scribbled]] in the margin.\\n\\n[[Put note away|inventory]]\\n",
+      "links": [
+        {
+          "text": "scribbled",
+          "destination": {
+            "name": "scribbled",
+            "pid": 90
+          }
+        },
+        {
+          "text": "Put note away",
+          "destination": {
+            "name": "inventory",
+            "pid": 246
+          }
+        }
+      ]
+    },
+    {
+      "pid": 242,
+      "name": "rules",
+      "text": "The nautilus intones in a corrugated voice:\\n\\n\"We play by Standard Rules.\\n\\nReveal palm after each grip. The tile must be [[wet]]. Then toss the tile in the basket to your right.\\n\\nNo one leaves the table unless both parties forfeit or one wins.\"\\n\\n[[Okay|table]]",
+      "links": [
+        {
+          "text": "wet",
+          "destination": {
+            "name": "wet",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "table",
+            "pid": 154
+          }
+        }
+      ]
+    },
+    {
+      "pid": 243,
+      "name": "hoody",
+      "text": "Purple hoody with pink stars on it.\\n\\nIs it still you?\\n\\n[[Nah]]\\n[[Yeah|inventory]]",
+      "links": [
+        {
+          "text": "Nah",
+          "destination": {
+            "name": "Nah",
+            "pid": 220
+          }
+        },
+        {
+          "text": "Yeah",
+          "destination": {
+            "name": "inventory",
+            "pid": 246
+          }
+        }
+      ]
+    },
+    {
+      "pid": 244,
+      "name": "Demon Carriage",
+      "text": "The doorperson stands in your path.\\n\\n\"You can't go in there naked.\"\\n\\nThey wear a <<rnd \"purple\" \"black\" \"red\" \"white\">> suit and <<rnd \"an obsidian\" \"an ivory\" \"an emerald\" \"a topaz\" \"a sapphire\" \"an iolite\">> mask studded with gems. Over their shoulder, through the flashing lights and smoke haze, you see everyone has a mask on.\\n\\n<<if $wound eq \"jaw\">>They look at your jaw and their lip curls.\\n\\n\"You look like you need one anyways.\"\\n\\n[[Okay]]<<else>>[[Okay]]<<endif>>",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "Okay",
+            "pid": 123
+          }
+        }
+      ]
+    },
+    {
+      "pid": 245,
+      "name": "Across the room",
+      "text": "Across the room.<<timedgoto \"your nemesis\" 2s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "your nemesis",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 246,
+      "name": "inventory",
+      "text": "I'm carrying:\\n\\n-a crumpled [[note]]\\n\\n-my [[hoody]]\\n\\n-a brass [[circle|shapetalk1]]\\n\\n-a gold [[square|shapetalk2]]\\n\\n-a silver [[triangle|shapetalk3]]\\n\\n[[Roll over and close your eyes|sleep]]",
+      "links": [
+        {
+          "text": "note",
+          "destination": {
+            "name": "note",
+            "pid": 241
+          }
+        },
+        {
+          "text": "hoody",
+          "destination": {
+            "name": "hoody",
+            "pid": 243
+          }
+        },
+        {
+          "text": "circle",
+          "destination": {
+            "name": "shapetalk1",
+            "pid": 135
+          }
+        },
+        {
+          "text": "square",
+          "destination": {
+            "name": "shapetalk2",
+            "pid": 173
+          }
+        },
+        {
+          "text": "triangle",
+          "destination": {
+            "name": "shapetalk3",
+            "pid": 172
+          }
+        },
+        {
+          "text": "Roll over and close your eyes",
+          "destination": {
+            "name": "sleep",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 247,
+      "name": "Untitled Passage 38",
+      "text": "[[options]]\\n\\n[[opponent]]\\n\\n[[Go inside]]\\n\\n[[tower]]\\n\\n[[darkness]]\\n\\n[[hands]]\\n\\n[[Look outside]]\\n\\n[[sick_angel]]\\n\\n[[traffic]]",
+      "links": [
+        {
+          "text": "options",
+          "destination": {
+            "name": "options",
+            "pid": 139
+          }
+        },
+        {
+          "text": "opponent",
+          "destination": {
+            "name": "opponent",
+            "pid": 180
+          }
+        },
+        {
+          "text": "Go inside",
+          "destination": {
+            "name": "Go inside",
+            "pid": 149
+          }
+        },
+        {
+          "text": "tower",
+          "destination": {
+            "name": "tower",
+            "pid": 75
+          }
+        },
+        {
+          "text": "darkness",
+          "destination": {
+            "name": "darkness",
+            "pid": 99
+          }
+        },
+        {
+          "text": "hands",
+          "destination": {
+            "name": "hands",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Look outside",
+          "destination": {
+            "name": "Look outside",
+            "pid": 216
+          }
+        },
+        {
+          "text": "sick_angel",
+          "destination": {
+            "name": "sick_angel",
+            "pid": 265
+          }
+        },
+        {
+          "text": "traffic",
+          "destination": {
+            "name": "traffic",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 248,
+      "name": "tile",
+      "text": "<<replace \"Squeeze fist\">>Four sharp points dig into your palm and drink your blood with a sting.<<set $human_health += 250>>\\n\\n<<if $human_health eq 1750>><<replace \"The tile is heavy. Your arm aches.\">><<replace \"Display tile.\">>[[Wet.|they squeeze]]<<endreplace>><<endreplace>><<else>><<replace \"Display tile.\">>[[Wet.|they squeeze]]<<endreplace>><<endif>><<endreplace>>",
+      "links": [
+        {
+          "text": "Wet.",
+          "destination": {
+            "name": "they squeeze",
+            "pid": 225
+          }
+        }
+      ]
+    },
+    {
+      "pid": 249,
+      "name": "Untitled Passage 28",
+      "text": "We worship pain for its constancy, and we look down on love because it dares to be impermanent",
+      "links": []
+    },
+    {
+      "pid": 250,
+      "name": "Sign up",
+      "text": "\"I'd like to sign up for the 11:30 Red Tile.\"\\n\\n\"Red Tile?\" They glance at your hand.\\n\\n[[Flash palm|four scars]]\\n",
+      "links": [
+        {
+          "text": "Flash palm",
+          "destination": {
+            "name": "four scars",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 251,
+      "name": "locusts",
+      "text": "Hands plaster the window like darkening locusts.<<timedgoto \"hands\" 5s>><<loopsound \"hands.mp3\">>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hands",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 252,
+      "name": "css",
+      "text": "html {\\n    height: 100%;\\n}\\n\\n[data-tags~=base]  {opacity:1 !important;background-color:white ;color:black;\\nbackground-image: linear-gradient(bottom, rgb(45,39,48) 34%, rgb(67,56,71) 67%, rgb(64,51,64) 84%);\\nbackground-image: -o-linear-gradient(bottom, rgb(45,39,48) 34%, rgb(67,56,71) 67%, rgb(64,51,64) 84%);\\nbackground-image: -moz-linear-gradient(bottom, rgb(45,39,48) 34%, rgb(67,56,71) 67%, rgb(64,51,64) 84%);\\nbackground-image: -webkit-linear-gradient(bottom, rgb(45,39,48) 34%, rgb(67,56,71) 67%, rgb(64,51,64) 84%);\\nbackground-image: -ms-linear-gradient(bottom, rgb(45,39,48) 34%, rgb(67,56,71) 67%, rgb(64,51,64) 84%);\\n\\nbackground-image: -webkit-gradient(\\n\tlinear,\\n\tleft bottom,\\n\tleft top,\\n\tcolor-stop(0.34, rgb(45,39,48)),\\n\tcolor-stop(0.67, rgb(67,56,71)),\\n\tcolor-stop(0.84, rgb(64,51,64))\\n);\\n    height: 100%;\\n    margin: 15;\\n    background-repeat: no-repeat;\\n    background-attachment: fixed;\\n}\\n\\n\\n.passage {opacity:0;color:#FEFCFF;opacity:1!important; font-size:20x;padding:10px;}\\n\\n\\n\\na {color:#C8A2C8!important;font-size:110%!important;}\\n\\na:hover {color:#C38EC7 !important;text-decoration:none !important;}\\n\\n[data-tags~=sun] a {color:white !important;\\ntext-decoration:none !important;\\nfont-size:0%!important;\tborder-style:solid;border-radius: 50%;\\n\twidth: 1800px;\\n\theight: 900px; border-width:100px}\\n[data-tags~=sun] a:hover {color:white !important;\\ntext-decoration:none !important;\\nfont-size:0%!important;\tborder-style:solid;border-radius: 50%;\\n\twidth: 1800px;\\n\theight: 900px; border-width:100px}\\n\\n\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n#passages{font-size:24px; font-family: 'Averia Serif Libre', cursive;border-left: 0px !important; margin:200px 0px 0px 200px !important;}\\n\\n\\n\\n\\n[data-tags~=exit] a {color:white !important;\\ntext-decoration:none !important;\\nfont-size:0%!important;\tborder-style:solid;border-radius: 50%;\\n\twidth: 1800px;\\n\theight: 900px; border-width:100px;}\\n\\n[data-tags~=exit] a:hover {color:black !important;\\ntext-decoration:none !important;\\nfont-size:0%!important;\tborder-style:solid;border-radius: 50%;\\n\twidth: 1800px;\\n\theight: 900px; border-width:100px;}\\n\\n\\n@keyframes cyc-focus {\\n  0% { text-shadow: 0em 0em 1em white; color: transparent; }\\n  100% { text-shadow: 0em 0em 0em white; }\\n}\\n@-webkit-keyframes cyc-focus {\\n  0% { text-shadow: 0em 0em 1em white; color: transparent; }\\n  100% { text-shadow: 0em 0em 0em white; }\\n}\\n.cyclingLinkEnabled {\\n  color: inherit;\\n  opacity: 1;\\n  animation: cyc-focus 0.8s; -webkit-animation: cyc-focus 0.8s;\\n  position: relative;\\n}\\n.cyclingLinkInit, .cyclingLinkInit::before {\\n  animation-iteration-count: 0 !important;\\n  -webkit-animation-iteration-count: 0 !important;\\n}\\n\\n\\n\\n\\n\\n\\n#circle { width: 100px; height: 100px; background: white; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; }\\n\\n#triangle-up { width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid white; }\\n\\n\\n#diamond-narrow { width: 0; height: 0; border: 50px solid transparent; border-bottom: 70px solid white; position: relative; top: -50px; }\\n\\n#diamond-narrow:after { content: ''; position: absolute; left: -50px; top: 70px; width: 0; height: 0; border: 50px solid transparent; border-top: 70px solid white; }\\n\\n\\n\\n\\n\\n[data-tags~=flash] {background-color:white  !important;font-size:120%!important;\\n}\\n\\n[data-tags~=flash] .passage{background-color:white    !important;font-size:120%!important;opacity:1 !important;color:white!important;text-shadow:  0 0 0.2em black;text-decoration:none !important;opacity:0.9;font-size:40px!important;\\n}\\n\\n[data-tags~=flash] a {color:white!important;text-shadow:  0 0 0.2em #8F7;text-decoration:none !important;opacity:0.9;font-size:40px!important;}\\n\\n[data-tags~=flash] a:hover {color:white!important;text-shadow:  0 0 0.2em #8F7;text-decoration:none !important;opacity:0.9;font-size:60px!important;}\\n\\n",
+      "links": []
+    },
+    {
+      "pid": 253,
+      "name": "quote-1-exit",
+      "text": "In the prosecution of this infernal design, they are diligent in the highest degree. To find out the most effectual means of putting it into execution, they apply to this end the whole force of their angelical understanding...\\n-John Wesley, Of Evil Angels\\n<<timedgoto \"dark-begin\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "dark-begin",
+            "pid": 255
+          }
+        }
+      ]
+    },
+    {
+      "pid": 254,
+      "name": "begin",
+      "text": "I train to fight angels in a [[monastery]] by the sea.",
+      "links": [
+        {
+          "text": "monastery",
+          "destination": {
+            "name": "monastery",
+            "pid": 257
+          }
+        }
+      ]
+    },
+    {
+      "pid": 255,
+      "name": "dark-begin",
+      "text": "<<timedgoto \"begin\" 2.5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "begin",
+            "pid": 254
+          }
+        }
+      ]
+    },
+    {
+      "pid": 256,
+      "name": "triangle-mask",
+      "text": "Their eyes get big, then relax again.\\n\\nYou understand that they think you're stupid and that this generous payment is simply another affirmation in their lifelong ego parade where they are great and everyone else is shit.\\n\\nThey stand aside with an exaggerated bow, fingers outstretched toward the [[flashing interior|the center of the world]].<<set $diamond = 1>>",
+      "links": [
+        {
+          "text": "flashing interior",
+          "destination": {
+            "name": "the center of the world",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 257,
+      "name": "monastery",
+      "text": "A courtyard of pale dirt and blue grass. Sea breeze pours over the high stone walls. <<set $r = Math.round(Math.random() * 10)>><<if $r eq 8>>Seagulls caw in the distance.<<endif>><<if $r eq 9>>A lone gull glides overhead.<<endif>><<if $r eq 10>>Hmm.<<endif>>\\n\\nThe [[monastery|monastery interior]], squat, wooden, caulked, spired, sheltering a [[fountain|Fountain]], dangling with chimes and [[cages]]. In the opposite direction, the [[gate|Gate]].\\n<<loopsound \"chimes.mp3\" >>",
+      "links": [
+        {
+          "text": "monastery",
+          "destination": {
+            "name": "monastery interior",
+            "pid": 215
+          }
+        },
+        {
+          "text": "fountain",
+          "destination": {
+            "name": "Fountain",
+            "pid": 152
+          }
+        },
+        {
+          "text": "cages",
+          "destination": {
+            "name": "cages",
+            "pid": 212
+          }
+        },
+        {
+          "text": "gate",
+          "destination": {
+            "name": "Gate",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 258,
+      "name": "Ride",
+      "text": "The elevator creaks back and forth as it rises up the mountainside.\\n\\nThe nautilus construct wads pieces of paper with spit and pastes them to the roof of the elevator.\\n\\n[[\"Why are you doing that\"|why]]\\n\\n[[Sudden panic attack|panic attack]]",
+      "links": [
+        {
+          "text": "\"Why are you doing that\"",
+          "destination": {
+            "name": "why",
+            "pid": 166
+          }
+        },
+        {
+          "text": "Sudden panic attack",
+          "destination": {
+            "name": "panic attack",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 259,
+      "name": "Red chair",
+      "text": "Like lacquered blood.\\n\\n[[Back|blood room]]\\n\\n<<set $blood_timer += 1>>",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "blood room",
+            "pid": 193
+          }
+        }
+      ]
+    },
+    {
+      "pid": 260,
+      "name": "hand",
+      "text": "My black hand, my cracked hand\\n\\nfried gauntlet of some dark knight who couldn't get the last piece of her armor off when she came back from the war.\\n\\n[[That war never left my head|accept]]\\n<<set $wound = \"hand\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "hand",
+            "pid": 260
+          }
+        },
+        {
+          "text": "That war never left my head",
+          "destination": {
+            "name": "accept",
+            "pid": 222
+          }
+        }
+      ]
+    },
+    {
+      "pid": 261,
+      "name": "soundtrack",
+      "text": "[[LUCKY! NIKE7UP THIEF IN THE NIGHT MIX|http://youtu.be/pEbCrQxjfQ4]]\\n\\n[[Fuck Buttons - Brain Freeze|http://youtu.be/lXXVPlrY974]]\\n\\n[[MARQUES HOUSTON - NAKED (BE\u039bR//FVCE x LIL SAD REMIX)|https://soundcloud.com/lilsad/marques-houston-naked-be-r]]\\n\\n[[~\u25b2\u2020\u25b2~'s-\u2022|http://youtu.be/EbL9wfHlHUw]]\\n\\n[[Skrillex Orchestration 1|http://youtu.be/fqjJT8v4V1c]]\\n\\n[[Skrillex Orchestration 2|http://www.youtube.com/watch?v=ycf1Wb5ir0s]]\\n\\n[[Oaksloth - ask anything|https://soundcloud.com/oaksloth/ask-anything]]\\n\\n[[Oaksloth - ask anything|https://soundcloud.com/oaksloth/more-erom]]\\n\\n[[Diamond Rings - All the Time|http://www.youtube.com/watch?v=iQ_mTqwQQ-o]]\\n\\n[[ATIRA - MIST|http://youtu.be/KsdZkBaCjLk]]\\n\\n[[Melanie Martinez - Starring Role (Marina & The Diamonds Cover)|http://youtu.be/FT9dtz6sWlQ]]\\n\\n[[Lana Del Rey - Young & Beautiful (SAYMYNAME Remix)|http://youtu.be/AMT_djkvazI]]\\n\\n[[CRYSTAL CASTLES - INTIMATE (CRIM3S REMIX)|http://youtu.be/GopChp3ya2Q]]\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 262,
+      "name": "demasked",
+      "text": "<<if $nemesis_gender eq \"She\">>She becomes<<endif>><<if $nemesis_gender eq \"Their\">>They become<<endif>><<if $nemesis_gender eq \"He\">>He becomes<<endif>> very still.\\n\\n<<if $wound eq \"jaw\">>You speak slowly, speaking around the pain of your jaw.\\n\\n[[\"I accept your forfeit.\"|accept forfeit]]\\n\\n[[\"I reject your forfeit.\"|reject forfeit]]<<else>>[[\"I accept your forfeit.\"|accept forfeit]]\\n\\n[[\"I reject your forfeit.\"|reject forfeit]]<<endif>>",
+      "links": [
+        {
+          "text": "\"I accept your forfeit.\"",
+          "destination": {
+            "name": "accept forfeit",
+            "pid": 176
+          }
+        },
+        {
+          "text": "\"I reject your forfeit.\"",
+          "destination": {
+            "name": "reject forfeit",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 263,
+      "name": "transition-2",
+      "text": "<<timedgoto \"immortals-quote\" 2.5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "immortals-quote",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 264,
+      "name": "Dread",
+      "text": "<<set $horror += 1>><<if $horror eq 1>>The same old helpless feelings. Paralyzed. Stuck.\\n\\nDay one. Day one.<<endif>><<if $horror eq 2>>A dead angel at your feet doesn't change anything. If the mind is gone, the body can no longer pay.<<endif>><<if $horror eq 3>>Thin watery bile burns your throat and drools through your teeth. Your eyes swim.<<endif>>\\n\\n<<if $horror gt 2>>[[Black out|horror_height]]<<else>>[[Hhnn|emotions]]<<endif>>",
+      "links": [
+        {
+          "text": "Black out",
+          "destination": {
+            "name": "horror_height",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Hhnn",
+          "destination": {
+            "name": "emotions",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 265,
+      "name": "sick_angel",
+      "text": "Dead angel dripping black pus, broke wing tilting with the wind.\\n\\nYou focus on the techniques you learned in the monastery.\\n\\nDeep breathing.\\n\\nHeartbeat by heartbeat.\\n\\nCatechism of anatomical weak spots--the tiny bird's bone in their armpit, weak to a sudden[[--|emotions]]\\n",
+      "links": [
+        {
+          "text": "--",
+          "destination": {
+            "name": "emotions",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 266,
+      "name": "nothing",
+      "text": "You've been nursing this for so long. Obsessing over them every second of the day. Nightmares. Fantasies of revenge. Fantasies of reconciliation.\\n\\nYou feel nothing.\\n\\nThe people you both were no longer exist. No one to reason with, no one to beg, no one to resist, no one to punish.\\n\\n[[Time travel]] is not real.\\n",
+      "links": [
+        {
+          "text": "Time travel",
+          "destination": {
+            "name": "Time travel",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 267,
+      "name": "wind",
+      "text": "The wind through the trees is stronger. Like the sky is breathing deeper.\\n\\n[[Trudge|breaks]]\\n<<fadeoutsound \"stream.mp3\">>",
+      "links": [
+        {
+          "text": "Trudge",
+          "destination": {
+            "name": "breaks",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 268,
+      "name": "marrow",
+      "text": "Smells like angel eyes.\\n\\nLike that radioactive white heat. Like those burns that never heal.\\n\\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 269,
+      "name": "choice",
+      "text": "It isn't a question of strength.\\n\\nIt's just pain [[overwhelming]] the body.",
+      "links": [
+        {
+          "text": "overwhelming",
+          "destination": {
+            "name": "overwhelming",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 270,
+      "name": "Sentence Surgeon Script",
+      "text": "try {\\n  version.extensions['sentenceSurgeonMacro'] = { \\n    major:1, minor:0, revision:0 \\n  };\\n  macros['sp'] = {\\n    handler: function(place, macroName, params, parser) {\\n      new Wikifier(place, \" \");\\n    },\\n    init: function() { },\\n  };\\n  macros['br'] = {\\n    handler: function(place, macroName, params, parser) {\\n      new Wikifier(place, \"<html><br /></html>\");\\n    },\\n    init: function() { },\\n  };\\n} catch(e) {\\n  throwError(place,\"Macro Setup Error: \"+e.message); \\n}",
+      "links": []
+    },
+    {
+      "pid": 271,
+      "name": "desert",
+      "text": "Sand, wind, sleeping under stones, sharing shade with the lizards, cupping water from hollows in rocks.\\n\\n[[Time passes|transition-tower]]\\n<<set $desert = 1>>",
+      "links": [
+        {
+          "text": "Time passes",
+          "destination": {
+            "name": "transition-tower",
+            "pid": 207
+          }
+        }
+      ]
+    },
+    {
+      "pid": 272,
+      "name": "Patio",
+      "text": "Night sky over <<if $sea eq 1>>salt marshes.<<endif>><<if $desert eq 1>>desert sand.<<endif>><<if $jungle eq 1>>drooping jungle trees.<<endif>>\\n\\n[[Go inside|tower]]\\n",
+      "links": [
+        {
+          "text": "Go inside",
+          "destination": {
+            "name": "tower",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 273,
+      "name": "don't",
+      "text": "I am tired and sitting in a vampire chair.\\n\\n[[So tired|say something]]",
+      "links": [
+        {
+          "text": "So tired",
+          "destination": {
+            "name": "say something",
+            "pid": 167
+          }
+        }
+      ]
+    },
+    {
+      "pid": 274,
+      "name": "Slow down",
+      "text": "You stand still.\\n\\nThe sounds remains.\\n\\nGetting louder.\\n\\nIt is the beating of your [[hand|warmfist]].",
+      "links": [
+        {
+          "text": "hand",
+          "destination": {
+            "name": "warmfist",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 275,
+      "name": "reflection",
+      "text": "<<if $key eq 2>><<print $eyes>> eyes, lips <<print $lips>>, <<print $nose>> nose, <<print $other>>, and <<if $wound eq \"jaw\">>that horrible melted jaw<<endif>><<if $wound eq \"heart\">>that hideous cold expression<<endif>><<if $wound eq \"hand\">>that ugly fucking hand<<endif>>.<<else>>Blank skin stretched by underlying bones and cartilage. The suggestion of a jaw, nose, brow.<<endif>>\\n\\n[[Look away|Fountain]]",
+      "links": [
+        {
+          "text": "Look away",
+          "destination": {
+            "name": "Fountain",
+            "pid": 152
+          }
+        }
+      ]
+    },
+    {
+      "pid": 276,
+      "name": "last casino",
+      "text": "A neon palace floating on a cloud of underlighting and fountain brilliance.\\n\\nThe Demon Carriage. \\n\\n[[Go inside|Demon Carriage]]\\n",
+      "links": [
+        {
+          "text": "Go inside",
+          "destination": {
+            "name": "Demon Carriage",
+            "pid": 244
+          }
+        }
+      ]
+    },
+    {
+      "pid": 277,
+      "name": "windows",
+      "text": "[[Hands|strangle]] plaster the window of the [[cottage|hands]] like darkening locusts, palms slapping against the glass, fingers spasming like fat spider legs.",
+      "links": [
+        {
+          "text": "Hands",
+          "destination": {
+            "name": "strangle",
+            "pid": 93
+          }
+        },
+        {
+          "text": "cottage",
+          "destination": {
+            "name": "hands",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 278,
+      "name": "weapon",
+      "text": "My problems are twisted between physical and spiritual space, untouchable, too close, gone,\\n\\n[[I don't want to go back to that dark place|anorexic-darkness]]\\n",
+      "links": [
+        {
+          "text": "I don't want to go back to that dark place",
+          "destination": {
+            "name": "anorexic-darkness",
+            "pid": 175
+          }
+        }
+      ]
+    },
+    {
+      "pid": 279,
+      "name": "stronger",
+      "text": "You felt dead years ago but somehow you're still standing.\\n\\nLost control of your body, changed into a hysterical woman, changed into something inhuman. Changed against your will until you started doing it to yourself.\\n\\n[[You have attained the grace of water|grace]]\\n\\n[[Your anger is a hot knife someone forgot in the fire|hot knife]]\\n",
+      "links": [
+        {
+          "text": "You have attained the grace of water",
+          "destination": {
+            "name": "grace",
+            "pid": 195
+          }
+        },
+        {
+          "text": "Your anger is a hot knife someone forgot in the fire",
+          "destination": {
+            "name": "hot knife",
+            "pid": 142
+          }
+        }
+      ]
+    },
+    {
+      "pid": 280,
+      "name": "face",
+      "text": "I'm sneerstuck, jaw-melty, exposed teeth, just the half of my <<print $lips>>, I can't stop smiling.\\n\\n[[Smile|accept]]\\n\\n<<set $wound = \"jaw\">>",
+      "links": [
+        {
+          "text": "Smile",
+          "destination": {
+            "name": "accept",
+            "pid": 222
+          }
+        }
+      ]
+    },
+    {
+      "pid": 281,
+      "name": "x-darkness",
+      "text": "<<timedgoto \"x\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "x",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 282,
+      "name": "city",
+      "text": "Towering structures shrouded in radiant mist, surrounded by a graveyard of slot machines.\\n\\nNew Heart City was zoned exclusively for [[casinos]]. They said it would be the world's ultimate recreational mecca, but the casino bubble burst.\\n\\nThe [[elevator]] is west.\\n\\nThe city [[awaits|demon]].",
+      "links": [
+        {
+          "text": "casinos",
+          "destination": {
+            "name": "casinos",
+            "pid": 107
+          }
+        },
+        {
+          "text": "elevator",
+          "destination": {
+            "name": "elevator",
+            "pid": 165
+          }
+        },
+        {
+          "text": "awaits",
+          "destination": {
+            "name": "demon",
+            "pid": 221
+          }
+        }
+      ]
+    },
+    {
+      "pid": 283,
+      "name": "jungle",
+      "text": "Mosquitos bite you, sweat sticks to your skin, thorns and sap eat at your clothes.\\n\\n[[Time passes|transition-tower]]\\n\\n<<set $jungle = 1>>",
+      "links": [
+        {
+          "text": "Time passes",
+          "destination": {
+            "name": "transition-tower",
+            "pid": 207
+          }
+        }
+      ]
+    },
+    {
+      "pid": 284,
+      "name": "clean",
+      "text": "<<set $hands = 0>>You [[shove]] the trembling hands inside the <<cyclinglink $stash \"fireplace\" \"closet\" \"garbage disposal\" \"icebox\">>.",
+      "links": [
+        {
+          "text": "shove",
+          "destination": {
+            "name": "shove",
+            "pid": 131
+          }
+        }
+      ]
+    },
+    {
+      "pid": 285,
+      "name": "clearing",
+      "text": "A clearing of pure white. Branches like bone, leaves like wax, dirt like gypsum.\\n\\n[[Black skeletons]] litter the clearing. The [[marrow]] is melted.\\n\\nSound of [[water|creek]] flowing beyond the clearing.",
+      "links": [
+        {
+          "text": "Black skeletons",
+          "destination": {
+            "name": "Black skeletons",
+            "pid": 100
+          }
+        },
+        {
+          "text": "marrow",
+          "destination": {
+            "name": "marrow",
+            "pid": 268
+          }
+        },
+        {
+          "text": "water",
+          "destination": {
+            "name": "creek",
+            "pid": 156
+          }
+        }
+      ]
+    },
+    {
+      "pid": 286,
+      "name": "Drink water",
+      "text": "[[Glug glug glug.|water]]<<set $water -= 1>>",
+      "links": [
+        {
+          "text": "Glug glug glug.",
+          "destination": {
+            "name": "water",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 287,
+      "name": "dream",
+      "text": "You wake to silence. Throat dry.\\n\\nThe sky is dark grey. You can't figure it for morning or night.\\n\\n[[Find something to drink|thirsty]]\\n\\n[[Check napsack]]\\n<<stopsound \"sea.mp3\">>\\n<<stopsound \"desert.mp3\">>\\n<<stopsound \"jungle.mp3\">>",
+      "links": [
+        {
+          "text": "Find something to drink",
+          "destination": {
+            "name": "thirsty",
+            "pid": 218
+          }
+        },
+        {
+          "text": "Check napsack",
+          "destination": {
+            "name": "Check napsack",
+            "pid": 239
+          }
+        }
+      ]
+    },
+    {
+      "pid": 288,
+      "name": "hurt you",
+      "text": "How'd the angel [[hurt]] you?",
+      "links": [
+        {
+          "text": "hurt",
+          "destination": {
+            "name": "hurt",
+            "pid": 189
+          }
+        }
+      ]
+    }
+  ]
+}

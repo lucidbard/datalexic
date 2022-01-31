@@ -1,0 +1,3022 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "BEAR INTRO",
+      "text": "<big>You are [[[[[a Bear.]<d1|]<d2|]<d3|]<d4|]<c1|</big>\n\n(click: ?c1)[[[>ACKNOWLEDGE BEARDOM|BEAR INTRO 2]]]\n\n(click-replace: ?d1)[a cool Bear.]\n(click-replace: ?d2)[a really, *really* cool Bear.]\n(click-replace: ?d3)[the coolest of Bears.]\n(click-replace: ?d4)[a Bear.]",
+      "links": [
+        {
+          "text": ">ACKNOWLEDGE BEARDOM",
+          "destination": {
+            "name": "BEAR INTRO 2",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "BEAR INTRO 2",
+      "text": "(transition: \"dissolve\")[You have a [tiny tail]<c2|[...]<d1|]\n\n(click: ?c2)[(transition: \"dissolve\")[Small, [keen eyes...]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[Wide, [muscular paws...]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[...and soft, [*rippling* brown fur.]<c5|]]\n\n(click: ?c5)[[[>ADMIRE FUR|BEAR INTRO 3]]]\n(click-prepend: ?d1)[ (which you're still quite proud of)]",
+      "links": [
+        {
+          "text": ">ADMIRE FUR",
+          "destination": {
+            "name": "BEAR INTRO 3",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "BEAR INTRO 3",
+      "text": "(transition: \"dissolve\")[[Wait...]<c1|]\n\n(click: ?c1)[Why would your fur be <big>[*rippling?*]<c3|</big>]\n\n(click: ?c3)[(transition: \"dissolve\")[[[>QUESTION THE NATURE OF FUR AND BY EXTENSION EXISTENCE ITSELF WITHIN OUR LIMITED MORTAL PERCEPTION|BEAR INTRO 4]]]]",
+      "links": [
+        {
+          "text": ">QUESTION THE NATURE OF FUR AND BY EXTENSION EXISTENCE ITSELF WITHIN OUR LIMITED MORTAL PERCEPTION",
+          "destination": {
+            "name": "BEAR INTRO 4",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "BEAR INTRO 4",
+      "text": "(transition: \"dissolve\")[[Ah.]<d2|]\n\n(click: ?d2)[(transition: \"dissolve\")[Your fur isn't [*rippling*.]<d3|]]\n\n(click: ?d3)[It's (text-style: \"rumble\")[[*waving*.]<c1|]]\n\n(click: ?c1)[It's (text-style: \"rumble\")[*waving*] because [you're (text-style: \"rumble\")[*plummeting.*]]<c2|]\n\n(click: ?c2)[(text-style: \"rumble\")[*Plummeting*] thousands of feet above an island in the Pacific Ocean, towards a tiny skylight in a tiny Facility [nestled beside an active volcano.]<c3|]\n\n(click: ?c3)[(text-style: \"rumble\")[[[>TRY NOT TO DIE|BEAR TRUE INTRO]]]]",
+      "links": [
+        {
+          "text": ">TRY NOT TO DIE",
+          "destination": {
+            "name": "BEAR TRUE INTRO",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "BEAR TRUE INTRO",
+      "text": "(transition: \"dissolve\")[As a Bear, you do not find your certain death all [that unusual.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[What you **do** find unusual is that you're [wearing a bowtie.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[Once you *do* reach this Facility, even if you *don't* die in horrific agony, [what happens next?]<c3|]]\n(click: ?c3)[(transition: \"dissolve\")[What dark secrets lay untold in [your distant past?]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[<big>[[>WHAT KIND OF BEAR *ARE YOU?*</big>|FLASHBACK]]]]",
+      "links": [
+        {
+          "text": ">WHAT KIND OF BEAR *ARE YOU?*</big>",
+          "destination": {
+            "name": "FLASHBACK",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "FLASHBACK",
+      "text": "(transition: \"dissolve\")[As you begin to consider who you really are, you feel like [you're being transported...]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[Transported to [another place...]<c2|]]\n(click: ?c2)[(transition: \"dissolve\")[A place of wonder, that also happens to provide [convenient background information...]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[You're being transported [to a...]<c4|]]\n\n\n(click: ?c4)[(transition: \"dissolve\")[[[>FLASHBACK|BEAR DAD]]]]",
+      "links": [
+        {
+          "text": ">FLASHBACK",
+          "destination": {
+            "name": "BEAR DAD",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "LANDING",
+      "text": "(text-style: \"rumble\")[(live: 0.1s)[(stop:)<h1>SURPRISE!! PLUMMETING FLASHBACK TIME IS OVERRRRRRRRRRRR</h1>]]\n(live: 2.7s)[(go-to: \"LANDING 2\")(stop:)]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "LANDING 2",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "BEAR DAD",
+      "text": "(transition: \"dissolve\")[Suddenly, you're in your college dorm room, eating with your Bear Dad in [strained silence.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[Bear Dad glares at you from [across the cheap metal table.]<c2|]]\n\n(click: ?c2)[[[>\"SO. THIS IS NICE.\"|BEAR DAD 2]]]",
+      "links": [
+        {
+          "text": ">\"SO. THIS IS NICE.\"",
+          "destination": {
+            "name": "BEAR DAD 2",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "LANDING 2",
+      "text": "(transition: \"dissolve\")[The [bulletproof glass]<a1| (click: ?a1)[(transition: \"dissolve\")[(which was, unfortunately, not bearproof)]] of the skylight [breaks your fall.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[You smash through it, [shattering the glass.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[A soft, squishy object crumples beneath your hurtling Bear Body, absorbing the rest of the impact as you land on the [concrete floor.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[Considering your situation as of four seconds ago, this is actually [quite comfortable.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[[[>INSPECT SQUISHY LANDING PAD|LANDING 3]]\n[[>TAKE A MOMENT TO APPRECIATE THAT YOU AREN'T DEAD|TAKE A MOMENT]]]]",
+      "links": [
+        {
+          "text": ">INSPECT SQUISHY LANDING PAD",
+          "destination": {
+            "name": "LANDING 3",
+            "pid": 15
+          }
+        },
+        {
+          "text": ">TAKE A MOMENT TO APPRECIATE THAT YOU AREN'T DEAD",
+          "destination": {
+            "name": "TAKE A MOMENT",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "BEAR DAD 2",
+      "text": "(live: 1s)[(transition: \"dissolve\")[(font: \"Times New Roman\")[\"Your mother and I expected [more]<a1| from you, you know.\"(stop:)]]](click: ?a1)[<br><br>(More? How much more?)](live: 6.6s)[<br><br>(transition: \"dissolve\")[(font: \"Times New Roman\")[\"Do you know that this will be the [third time]<a2| that you've changed your major?\"(stop:)]]](click: ?a2)[<br><br>(It's a big decision, isn't it?)](live: 12.2s)[<br><br>(font: \"Times New Roman\")[\"Third.[]<c1|\"(stop:)]](click: ?a3)[<br>(Don't I have [time?]<a3a|)](click: ?a3a)[<br>(Isn't this *the* [time?]<a3b|)](click: ?a3b)[<br>(Isn't this the most important decision I've ever made?)]\n\n(live: 19s)[(transition: \"dissolve\")[<br>[[>\"WHAT DO YOU WANT FROM ME, BEAR DAD?\"|BEAR DAD 3]](stop:)]]\n\n(live: 14s)[(replace: ?c1)[ (font: \"Times New Roman\")[[Time.]<a3|(stop:)]]]",
+      "links": [
+        {
+          "text": ">\"WHAT DO YOU WANT FROM ME, BEAR DAD?\"",
+          "destination": {
+            "name": "BEAR DAD 3",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "BEAR DAD 3",
+      "text": "(transition: \"dissolve\")[Bear Dad sighs heavily.]\n\n(live: 3s)[(transition: \"dissolve\")[(font: \"Times New Roman\")[\"Look.[]<c1|\"(stop:)]]](live: 5.3s)[(replace: ?c1)[ (font: \"Times New Roman\")[(transition: \"dissolve\")[I'm not trying to get on your case.]]](stop:)]\n\n(live: 8s)[(transition: \"dissolve\")[(font: \"Times New Roman\")[\"Your mother and I, we just...\"(stop:)]]]\n\n(live: 13s)[(transition: \"dissolve\")[(font: \"Times New Roman\")[\"I...\"(stop:)]]]\n\n(live: 16s)[(transition: \"dissolve\")[[[>\"I, WHAT?\"|BEAR DAD 4]]](stop:)]\n\n\n\n",
+      "links": [
+        {
+          "text": ">\"I, WHAT?\"",
+          "destination": {
+            "name": "BEAR DAD 4",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "BEAR DAD 4",
+      "text": "<h2>(live: 2s)[(transition: \"dissolve\")[.(stop:)]](live: 3.6s)[(transition: \"dissolve\")[.(stop:)]](live: 8s)[(transition: \"dissolve\")[.(stop:)]]</h2>\n\n(live: 10.3s)[(transition: \"dissolve\")[[[>\"...DAD?\"|BEAR DAD PUN]](stop:)]]",
+      "links": [
+        {
+          "text": ">\"...DAD?\"",
+          "destination": {
+            "name": "BEAR DAD PUN",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "BEAR DAD PUN",
+      "text": "(live: 2s)[(transition: \"dissolve\")[(font: \"Times New Roman\")[\"I can not[]<c1|[]<c2|\"(stop:)]]]\n\n(live: 16.5s)[[[>SERIOUSLY, DAD?|BEAR DAD PUN 2]](stop:)]\n\n\n(live: 4s)[(replace: ?c1)[ (font: \"Times New Roman\")[***bear***]](stop:)]\n\n(live: 10s)[(replace: ?c2)[ (font: \"Times New Roman\")[(transition: \"dissolve\")[the thought of you ending up like me.]]](stop:)]",
+      "links": [
+        {
+          "text": ">SERIOUSLY, DAD?",
+          "destination": {
+            "name": "BEAR DAD PUN 2",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "BEAR DAD PUN 2",
+      "text": "(live: 1s)[(transition: \"dissolve\")[(font: \"Times New Roman\")[\"It's a large weight to ***bear***, [I know.]<a1|\"]](stop:)](click: ?a1)[<br><br>(dad)]\n\n(live: 4.7s)[(transition: \"dissolve\")[(font: \"Times New Roman\")[\"I do it because I [***bear***lieve]<a2| in you.\"]](stop:)](click: ?a2)[<br><br>(transition: \"dissolve\")[(why are you using this moment to tell puns.)]]\n\n(live: 7s)[(transition: \"dissolve\")[(font: \"Times New Roman\")[\"You have to be *better*.\"]](stop:)]\n(live: 9.1s)[(transition: \"dissolve\")[(font: \"Times New Roman\")[\"In fact, you can't just be *better*.\"]](stop:)]\n(live: 11.4s)[(transition: \"dissolve\")[(text-style: \"rumble\")[(font: \"Times New Roman\")[\"You need to be...\"]]](stop:)]\n\n(live: 13.2s)[(transition: \"dissolve\")[(text-style: \"rumble\")[(font: \"Times New Roman\")[\"[***BEAR***ter]<a6|\"]]](stop:)](click: ?a6)[<br><br>(text-style: \"rumble\")[(DANGIT BEAR DAD)]]\n\n(live: 16s)[(transition: \"dissolve\")[(font: \"Times New Roman\")[(text-style: \"rumble\")[\"If you go no further in life than I have, you've failed.[]<cw|\"]]](stop:)](live: 19s)[(replace: ?cw)[ (font: \"Times New Roman\")[(text-style: \"rumble\")[I've failed.]]](stop:)]\n\n(live: 22s)[(go-to: \"LANDING\")(stop:)]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "LANDING",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "LANDING 3",
+      "text": "(transition: \"dissolve\")[Climbing to your feet, you move off of the squishy thingy and lean back on [your rump.]<b1|]\n(click: ?b1)[(transition: \"dissolve\")[The object that cushioned your fall was [a human being.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[It's a bit more flat, [and,]<b2|]] (click: ?b2)[(transition: \"dissolve\")[[uh,]<b3|]] (click: ?b3)[(transition: \"dissolve\")[*[puddle-y]<b4|*]] (click: ?b4)[(transition: \"dissolve\")[than it must have been [before.]<c2|]]\n\n(click: ?c2)[But nothing that can't be fixed with a bicycle pump or something though, [right?]<c3|]\n\n(click: ?c3)[[Yeah?]<c4|]\n\n(click: ?c4)[(link: \"><strike>MAKE SURE NO ONE SAW YOUR HORRIBLE CRIME</strike> LOOK AROUND CASUALLY\")[(go-to: \"LANDING 4\")]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "LANDING 4",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "TAKE A MOMENT",
+      "text": "(transition: \"dissolve\")[You decide to take a moment to appreciate [not dying.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[It was a [good moment.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[[[>INSPECT SQUISHY OBJECT|LANDING 3]]\n[[>TAKE ANOTHER MOMENT TO APPRECIATE NOT DYING|TAKE A MOMENT 2]]]]",
+      "links": [
+        {
+          "text": ">INSPECT SQUISHY OBJECT",
+          "destination": {
+            "name": "LANDING 3",
+            "pid": 15
+          }
+        },
+        {
+          "text": ">TAKE ANOTHER MOMENT TO APPRECIATE NOT DYING",
+          "destination": {
+            "name": "TAKE A MOMENT 2",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "TAKE A MOMENT 2",
+      "text": "(transition: \"dissolve\")[You decide to take another moment to appreciate [not dying.]<c1|]\n\n(click: ?c1)[This moment wasn't quite as good as the last one, but it was still [pretty cool.]<c2|]\n\n(click: ?c2)[(transition: \"dissolve\")[[[>INSPECT SQUISHY THINGY|LANDING 3]]\n[[>TAKE ANOTHER MOMENT TO APPRECIATE YOUR LIFE/NOT DEATH|TAKE A MOMENT 3]]]]",
+      "links": [
+        {
+          "text": ">INSPECT SQUISHY THINGY",
+          "destination": {
+            "name": "LANDING 3",
+            "pid": 15
+          }
+        },
+        {
+          "text": ">TAKE ANOTHER MOMENT TO APPRECIATE YOUR LIFE/NOT DEATH",
+          "destination": {
+            "name": "TAKE A MOMENT 3",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "TAKE A MOMENT 3",
+      "text": "(transition: \"dissolve\")[You just [*fell out of the sky.*]<c2|]\n\n(click: ?c2)[(transition: \"dissolve\")[[*Without a parachute.*]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[And you're [*still alive*]<c4|]]\n\n(click: ?c4)[How cool is [that?!]<c5|]\n\n(click: ?c5)[(transition: \"dissolve\")[[[>INSPECT THE SQUISHY THING|LANDING 3]]\n[[>TAKE YET ANOTHER MOMENT TO APPRECIATE YOUR SURVIVAL IN THE FACE OF UN*BEAR*ABLE ODDS|TAKE A MOMENT 4]]]]",
+      "links": [
+        {
+          "text": ">INSPECT THE SQUISHY THING",
+          "destination": {
+            "name": "LANDING 3",
+            "pid": 15
+          }
+        },
+        {
+          "text": ">TAKE YET ANOTHER MOMENT TO APPRECIATE YOUR SURVIVAL IN THE FACE OF UN*BEAR*ABLE ODDS",
+          "destination": {
+            "name": "TAKE A MOMENT 4",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "TAKE A MOMENT 4",
+      "text": "(transition: \"dissolve\")[You're [alive!]<c4|]\n\n(click: ?c4)[[Yay!]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[[Y]<b1|]](click: ?b1)[(transition: \"dissolve\")[[a]<b2|]](click: ?b2)[(transition: \"dissolve\")[[a]<b3|]](click: ?b3)[(transition: \"dissolve\")[[a]<b4|]](click: ?b4)[(transition: \"dissolve\")[[a]<b5|]](click: ?b5)[(transition: \"dissolve\")[[a]<b6|]](click: ?b6)[(transition: \"dissolve\")[[a]<b7|]](click: ?b7)[(transition: \"dissolve\")[[a]<b8|]](click: ?b8)[(transition: \"dissolve\")[[a]<b9|]](click: ?b9)[(transition: \"dissolve\")[[a]<b10|]](click: ?b10)[(transition: \"dissolve\")[[a]<b11|]](click: ?b11)[(transition: \"dissolve\")[[a]<b12|]](click: ?b12)[(transition: \"dissolve\")[[a]<b13|]](click: ?b13)[(transition: \"dissolve\")[[y!]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[[[>FINALLY INSPECT THE SQUISHY THING YOU LANDED ON|LANDING 3]]\n[[>TAKE A MOMENT TO JUST BE HAPPY DESPITE YOUR ODD SITUATION|TAKE A MOMENT 5]]]]",
+      "links": [
+        {
+          "text": ">FINALLY INSPECT THE SQUISHY THING YOU LANDED ON",
+          "destination": {
+            "name": "LANDING 3",
+            "pid": 15
+          }
+        },
+        {
+          "text": ">TAKE A MOMENT TO JUST BE HAPPY DESPITE YOUR ODD SITUATION",
+          "destination": {
+            "name": "TAKE A MOMENT 5",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "TAKE A MOMENT 5",
+      "text": "(transition: \"dissolve\")[Sprawled across the [cavernous facility floor,]<b1|] (click: ?b1)[(transition: \"dissolve\")[laying on [the mysterious squishy thing,]<b2|]] (click: ?b2)[(transition: \"dissolve\")[you take a moment to just [let yourself feel happy.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[Happy to [not be dead.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[Happy to have made an [incredibly badass entrance.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[Happy to be [[[[[a Bear.]<d1|]<d2|]<d3|]<d4|]<c4|]]\n\n(click: ?c4)[[[>JUST...HAPPY|TAKE A MOMENT 6]]]\n\n(click-replace: ?d1)[a cool Bear.]\n(click-replace: ?d2)[a really, *really* cool Bear.]\n(click-replace: ?d3)[the coolest of Bears.]\n(click-replace: ?d4)[a Bear.]",
+      "links": [
+        {
+          "text": ">JUST...HAPPY",
+          "destination": {
+            "name": "TAKE A MOMENT 6",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "TAKE A MOMENT D",
+      "text": "<h2>(live: 1s)[(stop:)(transition: \"dissolve\")[[[>THINK ABOUT HOW COOL IT IS NOT TO BE DEAD - FOR THE REST OF ETERNITY|TAKE A MOMENT ENDING]]]]\n\n\n\n(live: 2.5s)[(stop:)(transition: \"dissolve\")[[[>LOOK AT THE SQUISHY THING YOU'RE LAYING ON FOR GOODNESS SAKE|LANDING 3]]]]</h2>",
+      "links": [
+        {
+          "text": ">THINK ABOUT HOW COOL IT IS NOT TO BE DEAD - FOR THE REST OF ETERNITY",
+          "destination": {
+            "name": "TAKE A MOMENT ENDING",
+            "pid": 23
+          }
+        },
+        {
+          "text": ">LOOK AT THE SQUISHY THING YOU'RE LAYING ON FOR GOODNESS SAKE",
+          "destination": {
+            "name": "LANDING 3",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "TAKE A MOMENT 6",
+      "text": "(transition: \"dissolve\")[Aside from the jarring flashback earlier, today has been [pretty good.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[You could [stay here.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[Just [like this.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[Just [thinking.]<c4|]]\n\n\n(click: ?c4)[(transition: \"dissolve\")[<big>[[>FOREVER|TAKE A MOMENT D]]</big>]]",
+      "links": [
+        {
+          "text": ">FOREVER",
+          "destination": {
+            "name": "TAKE A MOMENT D",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "TAKE A MOMENT ENDING",
+      "text": "(transition: \"dissolve\")[Lying on that cold concrete floor, warm red liquid spilling from the Squishy Thing and pooling around your Bear Chest, you decide to spend the rest of eternity thinking about how great it is [not to be dead.]<c1|]\n\n<big>(click: ?c1)[(transition: \"dissolve\")[[[>CONTEMPLATE|TAKE A MOMENT ENDING 2]]]]</big>\n",
+      "links": [
+        {
+          "text": ">CONTEMPLATE",
+          "destination": {
+            "name": "TAKE A MOMENT ENDING 2",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "TAKE A MOMENT ENDING 2",
+      "text": "(transition: \"dissolve\")[It's [pretty great.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[The facility you dropped into eventually falls into [decay.]<b1|]] (click: ?b1)[(transition: \"dissolve\")[Abandoned to the stars, and the dark [ocean below.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[Nations rise and [fall.]<c3|]]\n(click: ?c3)[(transition: \"dissolve\")[Corporations do [the same.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[The rich hunt the poor in a vicious bloodsport mirroring [young-adult fiction novels.]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[Apocalypses wrack [the universe.]<c6|]]\n\n(click: ?c6)[(transition: \"dissolve\")[[[>CONTINUE CONSIDERING JUST HOW AWESOME IT IS TO *EXIST* DESPITE THE EVIL AND SADNESS IN THE WORLD|TAKE A MOMENT ENDING 3]]]]",
+      "links": [
+        {
+          "text": ">CONTINUE CONSIDERING JUST HOW AWESOME IT IS TO *EXIST* DESPITE THE EVIL AND SADNESS IN THE WORLD",
+          "destination": {
+            "name": "TAKE A MOMENT ENDING 3",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "TAKE A MOMENT ENDING 3",
+      "text": "(transition: \"dissolve\")[After a long, long while, Time itself eventually gives up, withers, and [dies.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[[[[[A Bear]<d1|]<d2|]<d3|]<d4| [remains.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[<big>*You*</big> [remain.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[You live on, and you think, and [you dream.]<c4|]]\n\n\n(click: ?c4)[(transition: \"dissolve\")[[[>CONTENT AND HAPPY|TAKE A MOMENT FINAL ENDING]]]]\n\n(click-replace: ?d1)[A cool Bear]\n(click-replace: ?d2)[A really, *really* cool Bear]\n(click-replace: ?d3)[The coolest of Bears]\n(click-replace: ?d4)[A Bear]",
+      "links": [
+        {
+          "text": ">CONTENT AND HAPPY",
+          "destination": {
+            "name": "TAKE A MOMENT FINAL ENDING",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "TAKE A MOMENT FINAL ENDING",
+      "text": "(align: \"=><=\")[<h1>(transition: \"dissolve\")[***[[~FIN~|CREDITS]]***]</h1>]\n\n\n(align: \"=><=\")[<small>[[(GO BACK)|LANDING 2]]</small>]\n\n\n(set: $seenEnding to 1)",
+      "links": [
+        {
+          "text": "~FIN~",
+          "destination": {
+            "name": "CREDITS",
+            "pid": 27
+          }
+        },
+        {
+          "text": "(GO BACK)",
+          "destination": {
+            "name": "LANDING 2",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "CREDITS",
+      "text": "<h2>CREDITS:</h2>\n\n''Design, Programming, Writing:''\n*Xalavier Nelson Jr.*\n\n''Cover Art:''\n*Julian Adkins*\n\n''Testing/Feedback:''\n*RAILSLAVE*\n*Raven Stark*\n*Thomas Jager*\n*Thomas Faust*\n*Elijah Elmasri*\n*Ted Lee*\n*Elijah \"I Never Asked For This Credit\" Beahm*\n*Valerie Minnich*\n*Evan Todd*\n*Tom Walton*\n*Jonathan Higgins*\n\n''Special Thanks To:''\n[*Mom*]<m1|(click: ?m1)[<br>(Hi again, Mom!)]\n[*Dad*]<d1|(click: ?d1)[<br>(For giving me the resources I need to make these weird little stories.)]\n[*Eric Bailey, AKA @Nintendo_Legend*]<e1|(click: ?e1)[<br>(The real Bailey. Thanks for letting me use you in two games--so far!)]\n[*Liam Esler*]<l1|(click: ?l1)[<br>(For letting me know this game isn't perfect.)]\n[*RAILSLAVE*]<r1|(click: ?r1)[<br>(You encouraged me to finish this glorious mess. Thank you.)]\n\n\n...and *You*, for [playing.]<c1|\n\n(click: ?c1)[(transition: \"dissolve\")[Thank you!]]",
+      "links": []
+    },
+    {
+      "pid": 28,
+      "name": "LANDING 4",
+      "text": "(transition: \"dissolve\")[It seems you've landed in the center of a warehouse adjoining the [main facility.]<c1|]\n(click: ?c1)[(transition: \"dissolve\")[Except for you, the <strike>dead</strike> body, and a few neglected [motivational posters]<d1|(click: ?d1)[ (transition: \"dissolve\")[(\"*Hang in there!*\" says the frightened kitten. \"*We must dismantle capitalism!*\" screams the blood-stained panda. \"*You can do it!*\" says the cartoon starfish, smiling.)]], the space is [completely empty.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[Judging from the heavy marks covering the floor, a lot of *something* was [moved from here recently.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[[[>COME TO A CONCLUSION|LANDING 5]]]]",
+      "links": [
+        {
+          "text": ">COME TO A CONCLUSION",
+          "destination": {
+            "name": "LANDING 5",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "LANDING 5",
+      "text": "(transition: \"dissolve\")[Something is happening, [here.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[Something that might even be [important.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[If you're going to unravel [the mysteries of this facility,]<b2|]] (click: ?b2)[(transition: \"dissolve\")[[your past,]<b3|]] (click: ?b3)[(transition: \"dissolve\")[or [your current situation,]<b4|]] (click: ?b4)[(transition: \"dissolve\")[you're going to need to [blend in.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[<big>Speaking</big> of [blending in...]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[[[>THAT BODY ISN'T USING ITS FACE|BEARSGUISE]]]]",
+      "links": [
+        {
+          "text": ">THAT BODY ISN'T USING ITS FACE",
+          "destination": {
+            "name": "BEARSGUISE",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "BEARSGUISE",
+      "text": "<h2>(transition: \"dissolve\")[(link: \">GO UNDERCOVER\")[(set: $underCover to 1)(go-to: \"FACILITY\")]]\n\n\n(transition: \"dissolve\")[(link: \">GO COMMANDO\")[(go-to: \"FACILITY\")]]</h2>",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "FACILITY",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "FACILITY",
+      "text": "<big>(transition: \"pulse\")[LITTLE [DOES THE BEAR KNOW]<a1|]\n\n(click: ?a1)[(transition: \"pulse\")[THAT [IN THIS VERY FACILITY]<a2|]]\n\n(click: ?a2)[(transition: \"pulse\")[THERE ARE ONLY [[[*4* PEOPLE]<b1|]<b2|]<c1|]]</big>\n\n(click: ?c1)[(transition: \"dissolve\")[[[>TELL ME MORE, EXCITED ANNOUNCER PERSON|FACILITY 2]]]]\n\n(click-replace: ?b1)[<strike>*4* PEOPLE</strike>]\n(click-replace: ?b2)[<big>*3*</big> PEOPLE]",
+      "links": [
+        {
+          "text": ">TELL ME MORE, EXCITED ANNOUNCER PERSON",
+          "destination": {
+            "name": "FACILITY 2",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "FACILITY 2",
+      "text": "(display: \"ELSEWHERE\")\n(live: 1.4s)[(stop:)(transition: \"dissolve\")[CARLA, chief security officer of the Facility, bursts into the Command Center and presses a [Large Red Button.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[The room goes into LOCKDOWN, metal shutters slamming over possible entrances and exits, [sealing the inhabitants inside.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[BAILEY, chief technician, looks up from his [computer terminal]<b1| (click: ?b1)[(logged into Twitter 24/7)] in surprise as the room is bathed in [vivid red light.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[(link: \">BAILEY ASKS CARLA WHAT'S GOING ON\")[(set: $baileyAsks to 1)(go-to: \"FACILITY 3\")]\n(link: \">CARLA EXPLAINS WHAT'S GOING ON WITHOUT PROMPTING\")[(go-to: \"FACILITY 3\")]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "FACILITY 3",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "ELSEWHERE",
+      "text": "(align: \"=><=\")[<h3>ELSEWHERE IN THE FACILITY</h3>]\n---",
+      "links": []
+    },
+    {
+      "pid": 34,
+      "name": "FACILITY 3",
+      "text": "(display: \"ELSEWHERE\")\n(if: $baileyAsks is 1)[(live: 0.9s)[(stop:)(transition: \"dissolve\")[BAILEY: Whoa, wait, what's going o--<br><br>]]](live: 1.4s)[(stop:)(transition: \"dissolve\")[CARLA: ''THERE IS [A BEAR, BAILEY.]<c1|'']]\n\n(click: ?c1)[BAILEY: [Wh--]<c2|]\n\n(click: ?c2)[CARLA: ''OUTSIDE OF THIS ROOM, AN ACTUAL BEAR(if: $underCover is 1)[, WEARING A *MASK OF HUMAN SKIN*,] [IS ROAMING THE HALLS.]<c3|'']\n\n(click: ?c3)[(transition: \"dissolve\")[JONATHAN, head of human resources, bumps his way through the grid of abandoned terminals scattered about the room to [confront CARLA.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[JONATHAN: Uh, what's this about [a bear?]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[(link: \">CARLA RESPONDS, NOTICEABLY AGITATED\")[(go-to: \"FACILITY 4\")]\n(link: \">CARLA STARES JONATHAN DOWN\")[(set: $carlaStares to 1)(go-to: \"FACILITY 4\")]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "FACILITY 4",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "FACILITY 4",
+      "text": "(display: \"ELSEWHERE\")\n(if: $carlaStares is 0)[(live: 1.3s)[(stop:)(transition: \"dissolve\")[CARLA takes a deep breath [before responding.]<c1|]]](if: $carlaStares is 1)[(live: 1.3s)[(stop:)(transition: \"dissolve\")[JONATHAN shifts beneath CARLA's [glare.]<c1|]]]\n\n(click: ?c1)[(transition: \"dissolve\")[CARLA: [When I say,]<b1|]] (click: ?b1)[(transition: \"dissolve\")[there [is a bear,]<b2|]] (click: ?b2)[(transition: \"dissolve\")[I [*mean,*]<b3|]] (click: ?b3)[(transition: \"dissolve\")[[there *is,*]<b4|]] (click: ?b4)[(transition: \"dissolve\")[*a <big>[''bear.'']<c2|</big>*]]\n(click: ?c2)[CARLA: Did you not see it on the live security feed? It just hit the cafeteria. It's [*pretty friggin' hard to miss.*]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[JONATHAN: Look, I always have the feed running in another window. I, I just haven't had the--I haven't been at my...I thought Bailey might--I mean, [look at him!]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[JONATHAN and CARLA turn [to face Bailey.]<b5|]] \n\n(click: ?b5)[(transition: \"dissolve\")[Twitter is still occupying the [majority of his screen.]<c6|]]\n\n(click: ?c6)[[[>CARLA, JONATHAN, AND BAILEY STARE AT EACH OTHER|FACILITY TWITTER]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">CARLA, JONATHAN, AND BAILEY STARE AT EACH OTHER",
+          "destination": {
+            "name": "FACILITY TWITTER",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "FACILITY TWITTER",
+      "text": "(display: \"ELSEWHERE\")\n(live: 3s)[(stop:)(transition: \"dissolve\")[CARLA: Were you planning to [close Twitter?]<c1|]]\n\n(click: ?c1)[BAILEY: [Not particularly.]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[[[>TAKE ME BACK TO MY BEAR BODY|CAFETERIA]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">TAKE ME BACK TO MY BEAR BODY",
+          "destination": {
+            "name": "CAFETERIA",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "CAFETERIA",
+      "text": "<big>(transition: \"dissolve\")[You are [a Bear.]<c1|]</big>\n\n(click: ?c1)[(transition: \"dissolve\")[Opening random doors(if: $underCover is 1)[ while wearing your excellent skin-mask disguise] has lead you to [a cafeteria of some kind.]<b1|]] \n\n(click: ?b1)[(transition: \"dissolve\")[It's large enough to [seat dozens.]<a1|]] (click: ?a1)[(transition: \"dissolve\")[Industrial tools equipped to feed a number far larger glitter behind [immaculate steel counters.]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[However, a fine layer of (text-style: \"blur\")[dust] coats every (text-style: \"blur\")[[tile and table.]<b3|]]]\n\n(click: ?b3)[The days when this place was used are [long gone.]<c2|]\n\n(click: ?c2)[(transition: \"dissolve\")[(link: \">INVESTIGATE SCENE CAREFULLY\")[(set: $investigateC to 1)(go-to: \"CAFETERIA 2\")]\n(link: \">GO FRIGGIN NUTS\")[(go-to: \"CAFETERIA 2\")]\n(link: \">FOODFOODFOODFOOD\")[(set: $foodPLZ to 1)(go-to: \"CAFETERIA 2\")]]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "CAFETERIA 2",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "CAFETERIA 2",
+      "text": "(if: $investigateC is 0)[(transition: \"dissolve\")[After surveying the scene for a moment, you lift yourself onto your hind legs and break into a [sprint.]<b1|]\n\n(click: ?b1)[<big>(transition: \"dissolve\")[(text-style: \"shadow\")[[\"WHoooOOooOOO\"]<d1|]]</big>]\n(click: ?d1)[(transition: \"dissolve\")[`*`*you (transition: \"shudder\")[''smash''] through [a series of innocent tables]<b2|*`*`]]\n\n(click: ?b2)[<big>(transition: \"dissolve\")[(text-style: \"shadow\")[[\"YEAH\"]<d2|]]</big>]\n(click: ?d2)[(transition: \"dissolve\")[`*`*finding a number of antique cabinets, you (transition: \"shudder\")[''rip''] out the silverware and [trample it]<b3|*`*`]]\n\n(click: ?b3)[<big>(transition: \"dissolve\")[(text-style: \"shadow\")[[\"YEAAAAAAH\"]<d3|]]</big>]\n(click: ?d3)[(transition: \"dissolve\")[`*`*you (transition: \"shudder\")[''bellyflop''] onto the counters, shattering glass cups, bowls, [and dividers]<b4|*`*`]]\n\n(if: $foodPLZ is 0)[(click: ?b4)[<big>(transition: \"dissolve\")[(text-style: \"shadow\")[[\"HECK YESSSSSssssSSSSS\"]<d4|]]</big>]](if: $foodPLZ is 1)[(click: ?b4)[<big>(transition: \"dissolve\")[(text-style: \"shadow\")[[\"FOOOOoooOOODDDDD\"]<d4|]]</big>]]\n(click: ?d4)[(transition: \"dissolve\")[`*`*you (transition: \"shudder\")[''tear''] (if: $foodPLZ is 1)[the refrigerator door off of its [hinges]<c1|](if: $foodPLZ is 0)[the art deco shelving out of its [mounts]<c1|]*`*`]]\n\n(if: $foodPLZ is 1)[(click: ?c1)[(Shame. That was a [really nice refrigerator.]<c2|)]](if: $foodPLZ is 0)[(click: ?c1)[(Shame. Those were [really nice shelves.]<c2|)]]\n\n<h3>(click: ?c2)[(transition: \"dissolve\")[[[>`\"`YeeeaAAaAaaAAAHHHhHhhhHHHH`\"`|FACILITY 5]]]]</h3>\n\n(set: $destroyC to 1)](if: $investigateC is 1)[(transition: \"dissolve\")[You creep around the edges of the room on all-fours, sniffing the [abandoned scene]<d2| (click: ?d2)[(transition: \"dissolve\")[(perfectly sterile, except for the dust)]] for clues and watching for [signs of surveillance.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[Exploring the cafeteria, the attached kitchen, and the bathroom reveals that cameras smother every available inch of [ceiling space.]<c2|]]\n(click: ?c2)[(transition: \"dissolve\")[Those who worked here must have been watched [day and night.]<b1|]] (click: ?b1)[(transition: \"dissolve\")[[Everywhere they went...]<c3|]]\n\n(click: ?c3)[Despite the eerie circumstances, you find that the [toilet paper reserves]<d3| (click: ?d3)[(don't ask)] and [refrigerator are fully stocked.]<c4|]\n\n(click: ?c4)[[>TAKE A NIBBLE]<d4|]\n\n(click: ?c5)[(transition: \"dissolve\")[(link: \">I'M A BEAR. ONE BITE CAN'T HURT...\")[(set: $foodPLZ to 1)(set: $destroyC to 1)(go-to: \"FACILITY 5\")]\n[[>CONTINUE TO EXPLORE - CAREFULLY|FACILITY 5]]]]\n\n\n(click-replace: ?d4)[(transition: \"dissolve\")[Of course, you wouldn't eat *evidence* as a responsible Bear Detective--[right?]<c5|]]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "FACILITY 5",
+            "pid": 39
+          }
+        },
+        {
+          "text": ">`\"`YeeeaAAaAaaAAAHHHhHhhhHHHH`\"`",
+          "destination": {
+            "name": "FACILITY 5",
+            "pid": 39
+          }
+        },
+        {
+          "text": ">CONTINUE TO EXPLORE - CAREFULLY",
+          "destination": {
+            "name": "FACILITY 5",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "FACILITY 5",
+      "text": "(display: \"ELSEWHERE\")\n(live: 1.2s)[(stop:)(transition: \"dissolve\")[CARLA and JONATHAN scrunch around BAILEY's monitor to watch the archived footage of [your arrival.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[CARLA points at [a tiny point on the screen.]<c1|]]\n\n(click: ?c1)[CARLA: See? Stop. Right there. That's [how it got in.]<c2|]\n\n(click: ?c2)[JONATHAN: Isn't that skylight supposed to be [unbreakable?]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[BAILEY: I guess [it wasn't...]<b2|]](click: ?b2)[(transition: \"dissolve\")[***[un<big>BEAR</big>kable.]<c4|***]]\n\n(click: ?c4)[(transition: \"dissolve\")[[...]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[CARLA: I'm going to pretend you [didn't say that.]<c6|]]\n\n(click: ?c6)[[[>BAILEY ASKS CARLA WHY SHE DIDN'T STOP THE BEAR|FACILITY 5a]]\n[[>THE TEAM CONTINUES WATCHING THE BEAR'S JOURNEY|FACILITY 6]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">BAILEY ASKS CARLA WHY SHE DIDN'T STOP THE BEAR",
+          "destination": {
+            "name": "FACILITY 5a",
+            "pid": 41
+          }
+        },
+        {
+          "text": ">THE TEAM CONTINUES WATCHING THE BEAR'S JOURNEY",
+          "destination": {
+            "name": "FACILITY 6",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "FACILITY 6",
+      "text": "(display: \"ELSEWHERE\")\n(live: 0.8s)[(stop:)(transition: \"dissolve\")[Speeding up the footage (JONATHAN and BAILEY turning their heads when you (if: $underCover is 1)[take the human's face](if: $underCover is 0)[squish the human]), the team tracks you to [the cafeteria.]<c1|]]\n\n(if: $investigateC is 1)[(click: ?c1)[(transition: \"dissolve\")[JONATHAN: That Bear is certainly acting...odd. Sniffing around. Opening doors. Looking directly [*into* the cameras...]<c2|]]](if: $investigateC is 0)[(click: ?c1)[(transition: \"dissolve\")[JONATHAN: [That,]<a1|]] (click: ?a1)[[*thing*,]<a3|] (click: ?a3)[is taking [the cafeteria apart!]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[JONATHAN: You think it knows it's [being watched?]<c3|]]\n\n(click: ?c3)[CARLA: Based on (if: $investigateC is 1)[the way it rooted through our toilet paper supply,](if: $investigateC is 0)[the wrecked furniture,] (if: $foodPLZ is 1)[the food splattered across the walls,] and the fact that it's a six-hundred pound Bear, I'd guess [it doesn't care.]<c4|]\n\n(click: ?c4)[(transition: \"dissolve\")[BAILEY: I hate to be [the ***<big>BEAR</big>er*** of bad news--]<c5|]]\n\n(click: ?c5)[CARLA: STILL TRYING TO GET OVER [YOUR LAST PUN, BAILEY.]<c6|]\n\n(click: ?c6)[(transition: \"dissolve\")[BAILEY: --but we still haven't answered [the big question.]<c7|]]\n(click: ?c7)[(transition: \"dissolve\")[BAILEY: How do we [get rid of it?]<c8|]]\n\n(click: ?c8)[[[>JONATHAN HAS A FANTASTIC IDEA|FACILITY 7]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">JONATHAN HAS A FANTASTIC IDEA",
+          "destination": {
+            "name": "FACILITY 7",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "FACILITY 5a",
+      "text": "(display: \"ELSEWHERE\")\n(live: 0.4s)[(stop:)(transition: \"dissolve\")[BAILEY: Speaking of forgetting, you never mentioned [why you didn't stop the Bear.]<c1|]]\n(click: ?c1)[(transition: \"dissolve\")[BAILEY: Aren't you the [Security Officer?]<bab1|]]\n\n(click: ?bab1)[(transition: \"dissolve\")[CARLA: You see a Bear loose, (if: $underCover is 1)[*wearing a mask of human skin*,] you tell me ''you're'' going to [fight it?]<bab2|]]\n\n(click: ?bab2)[BAILEY: [Good point.]<bab3|]\n\n(click: ?bab3)[(transition: \"dissolve\")[[[>COMPUTER - ENHANCE|FACILITY 6]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">COMPUTER - ENHANCE",
+          "destination": {
+            "name": "FACILITY 6",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "FACILITY 7",
+      "text": "(display: \"ELSEWHERE\")\n(align: \"=><=\")[(live: 5s)[(stop:)(color: red)[<h2>[''\"DRUGS!\"'']<c1|</h2>]]]\n\n(click: ?c1)[(transition: \"dissolve\")[In any other situation, JONATHAN screaming this word would be seen [as highly suspicious.]<c2|]]\n(click: ?c2)[(transition: \"dissolve\")[However, getting locked in a tiny [Command Center]<a1| (click: ?a1)[(with no real control)] tends to make you ignore [the little things.]<c3|]]\n\n(click: ?c3)[BAILEY: Wait, what do you mean (color: red)[['drugs'?]<c4|]]\n\n(click: ?c4)[JONATHAN: (color: red)[[Drugs!]<b1|]] (click: ?b1)[Well, not so much (color: red)[drugs] as (color: purple)[tranquilizers] but STILL (color: red)[[*drugs*!]<c5|]]\n\n(click: ?c5)[CARLA: Are, [you okay Jon?]<c6|]\n\n(click: ?c6)[[[>JONATHAN REVEALS STUNNING INFORMATION|FACILITY 8]]\n[[>HELL YEAH DRUGS|FACILITY 8]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">JONATHAN REVEALS STUNNING INFORMATION",
+          "destination": {
+            "name": "FACILITY 8",
+            "pid": 43
+          }
+        },
+        {
+          "text": ">HELL YEAH DRUGS",
+          "destination": {
+            "name": "FACILITY 8",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "FACILITY 8",
+      "text": "(display: \"ELSEWHERE\")\n(live: 0.3s)[(stop:)(transition: \"dissolve\")[JONATHAN: Okay, so [hear me out.]<c1|]]\n\n(click: ?c1)[BAILEY: Hard to do that when you keep shouting (color: red)[[\"DRUGS\".]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[JONATHAN: Regardless, you know about the gallons of (color: purple)[hallucinogenic tranquilizers] stored beneath the facility, [right?]<c3|]]\n\n(click: ?c3)[CARLA: What [the crap?!]<c4|]\n\n(click: ?c4)[(transition: \"dissolve\")[JONATHAN: Oh, so our employer originally built this place to manufacture weapons after [the Gulf War.]<c5|]]\n\n(click: ?c5)[BAILEY: [Chemical weapons?]<c6|]\n\n(click: ?c6)[JONATHAN: Oh no, mainly those little [foam disc gun things.]<b1|]\n\n(click: ?b1)[(transition: \"dissolve\")[BAILEY: So, basically what [we're still making now.]<b2|]]\n\n(click: ?b2)[JONATHAN: [Yeah.]<c7|]\n\n(click: ?c7)[(transition: \"dissolve\")[[[>BACK TO THE MAIN POINT...|FACILITY 9]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">BACK TO THE MAIN POINT...",
+          "destination": {
+            "name": "FACILITY 9",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "FACILITY 9",
+      "text": "(display: \"ELSEWHERE\")\n(live: 0.6s)[(stop:)(transition: \"dissolve\")[JONATHAN: Anyway, in fear that the [extreme living conditions--]<c1|]]\n\n(click: ?c1)[CARLA: You mean being stranded in [the middle of the Pacific Ocean.]<c2|]\n\n(click: ?c2)[JONATHAN: That's [the one.]<c3|]\n(click: ?c3)[(transition: \"dissolve\")[JONATHAN: In fear that we might get cabin fever and use the machinery to produce actual weapons and [fight our way off of the island,]<c4|]] (click: ?c4)[(transition: \"dissolve\")[she had hundreds of gallons of (color: purple)[tranquilizer gas] installed beneath our feet and hooked into [the ventilation system.]<c6|]]\n\n(click: ?c6)[CARLA: How did you find out [about this?]<c7|]\n\n(click: ?c7)[JONATHAN: My employment contract. *Super* small print, let me [tell ya--]<c8|]\n\n(click: ?c8)[CARLA: Wait--you *knew* ''before'' you were [hired?]<c8a|]\n\n(click: ?c8a)[JONATHAN: Well, [yeah but--]<c8b|]\n\n(click: ?c8b)[CARLA: And you agreed to this [*why?*]<c9|]\n\n(click: ?c9)[(transition: \"dissolve\")[JONATHAN: [...]<c10|]]\n(click: ?c10)[(transition: \"dissolve\")[JONATHAN: I like the [ocean.]<b2|]]\n\n(click: ?b2)[(transition: \"dissolve\")[BAILEY: ***[Un<big>BEAR</big>lievable.]<c12|***]]\n\n(click: ?c12)[CARLA: [DANGIT BAILEY.]<c13|]\n\n(click: ?c13)[[[>CARLA ASKS WHEN THIS ALL HAPPENED|FACILITY 9a]]\n[[>THE GROUP MAKES A DECISION|FACILITY 10]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">CARLA ASKS WHEN THIS ALL HAPPENED",
+          "destination": {
+            "name": "FACILITY 9a",
+            "pid": 46
+          }
+        },
+        {
+          "text": ">THE GROUP MAKES A DECISION",
+          "destination": {
+            "name": "FACILITY 10",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "FACILITY 10",
+      "text": "(display: \"ELSEWHERE\")\n(live: 1s)[(stop:)(transition: \"dissolve\")[CARLA straightens to her full height, crossing her arms and looking past her immediate surroundings to evaluate [the situation.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[CARLA: As tempting as it is to flood our place of work with (color: red)[hallucinogens], I don't feel comfortable unleashing anything more toxic than Bailey's puns in the building while [we're still sealed in here.]<c2|]]\n\n(click: ?c2)[JONATHAN: But in the case of a lockdown, personnel locked in the Command Center are excluded from any [tranquiliza--]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[CARLA: Jonathan, I'm sorry to disappoint you, but it's just not [our best move.]<c5|]]\n(click: ?c5)[(transition: \"dissolve\")[CARLA: [For now,]<b1|]] (click: ?b1)[(transition: \"dissolve\")[we need to investigate [other solutions,]<b2|]] (click: ?b2)[(transition: \"dissolve\")[and [wait.]<b3|]]\n\n(click: ?b3)[(transition: \"dissolve\")[As CARLA and BAILEY [explore possible options]<a1|(click: ?a1)[ (and discuss BAILEY's crippling pun addiction)], JONATHAN edges toward his terminal at [the back of the room...]<c7|]]\n\n(click: ?c7)[(transition: \"dissolve\")[<big>[[>WATCH OUT, BEAR ME|CAFETERIA DRUG INTRO]]</big>]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">WATCH OUT, BEAR ME",
+          "destination": {
+            "name": "CAFETERIA DRUG INTRO",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "FACILITY 9a",
+      "text": "(display: \"ELSEWHERE\")\n(live: 1.4s)[(stop:)(transition: \"dissolve\")[CARLA [shakes her head.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[CARLA: When did all of this [actually happen?]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[JONATHAN: You know those pictures leading to the cafeteria that we used to joke about? The ones with a massive [ice cream party?]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[BAILEY: They used an [*ice cream party?!*]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[CARLA: Bailey, if you turn this into [a pun...]<c5|]]\n\n(click: ?c5)[BAILEY: I was just going to [say--]<c6|]\n\n(click: ?c6)[CARLA: [Don't.]<c7|]\n\n(click: ?c7)[BAILEY: That was [pretty...]<b1|]\n\n(click: ?b1)[(transition: \"dissolve\")[CARLA: [DO.]<a1|]] (click: ?a1)[(transition: \"dissolve\")[[NOT.]<c9|]]\n\n(click: ?c9)[(transition: \"dissolve\")[BAILEY: ***[<big>COLD-HEARTED</big>.]<c11|***]]\n\n(click: ?c11)[(transition: \"dissolve\")[[...]<c13|]]\n\n(click: ?c13)[(transition: \"dissolve\")[CARLA: That was bad, and [you should feel bad.]<c12|]]\n\n(click: ?c12)[(transition: \"dissolve\")[[[>A DECISION IS MADE|FACILITY 10]]]]\n(set: $partyD to 1)",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">A DECISION IS MADE",
+          "destination": {
+            "name": "FACILITY 10",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "CAFETERIA DRUG INTRO",
+      "text": "(transition: \"dissolve\")[Considering all of your (if: $investigateC is 0)[\"]hard(if: $investigateC is 0)[\"] work [earlier...]<b1|](click: ?b1)[(transition: \"dissolve\")[It makes sense that you're now taking a nap on the [cafeteria floor(if: $destroyC is 1)[ amongst the (if: $foodPLZ is 0)[tangled](if: $foodPLZ is 1)[food-spattered] wreckage].]<c2|]]\n\n(click: ?c2)[You are [a Bear.]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[(link: \">KEEP SLEEPING\")[(set: $keepSleeping to 1)(go-to: \"CAFETERIA FLASHBACK INTRO\")]\n[[>TRY TO OPEN YOUR EYES|CAFETERIA DRUG 1]]]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "CAFETERIA FLASHBACK INTRO",
+            "pid": 48
+          }
+        },
+        {
+          "text": ">TRY TO OPEN YOUR EYES",
+          "destination": {
+            "name": "CAFETERIA DRUG 1",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "CAFETERIA FLASHBACK INTRO",
+      "text": "(transition: \"dissolve\")[(if: $keepSleeping is 0)[As the](if: $keepSleeping is 1)[As you slumber and the] (color: red)[overwhelming fumes] continue to fill your lungs, you feel yourself drifting to [yet another...]<c2|]\n\n\n(click: ?c2)[(transition: \"dissolve\")[[[>FLASHBACK|FACILITY PICNIC INTRO]]]]",
+      "links": [
+        {
+          "text": ">FLASHBACK",
+          "destination": {
+            "name": "FACILITY PICNIC INTRO",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "CAFETERIA DRUG 1",
+      "text": "(transition: \"dissolve\")[Struggling to open your eyes, you immediately sense that [something is very wrong.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[Churning out of discrete vents lining the room's edges is a (color: red)[thick red cloud.] It burbles down the walls and streams [across the floor.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[At this rate, the (color: red)[gas] will fill the cafeteria in [less than a minute.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[What can you [do against that?]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[[[>ATTACK THE MIST|CAFETERIA FIGHT MIST]]\n[[>TALK TO THE MIST|CAFETERIA TALK MIST]]\n[[>SUCCUMB TO THE MIST|CAFETERIA SUCCUMB MIST]]\n[[>ESCAPE THE ROOM|CAFETERIA ESCAPE]]]]",
+      "links": [
+        {
+          "text": ">ATTACK THE MIST",
+          "destination": {
+            "name": "CAFETERIA FIGHT MIST",
+            "pid": 50
+          }
+        },
+        {
+          "text": ">TALK TO THE MIST",
+          "destination": {
+            "name": "CAFETERIA TALK MIST",
+            "pid": 51
+          }
+        },
+        {
+          "text": ">SUCCUMB TO THE MIST",
+          "destination": {
+            "name": "CAFETERIA SUCCUMB MIST",
+            "pid": 52
+          }
+        },
+        {
+          "text": ">ESCAPE THE ROOM",
+          "destination": {
+            "name": "CAFETERIA ESCAPE",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "CAFETERIA FIGHT MIST",
+      "text": "<big><big>(transition: \"dissolve\")[(text-style: \"shadow\")[[\"RaaaAaUUUggGhhGHHhHH,\"]<b1|]]</big></big> (click: ?b1)[(transition: \"dissolve\")[you [shout.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[Launching yourself at the (color: red)[crimson mist] like a furry tide is the [easy part.]<c2|]] \n(click: ?c2)[(transition: \"dissolve\")[The hard bit is continuing to spin your limbs once you need to breathe, and the (color: red)[delirious fumes] begin to [burn your nostrils.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[[>\"raaaaauuughghhhhhh...\"]<r1|]]\n\n(click-replace: ?r1)[(transition: \"dissolve\")[[[>...`*`*WHUMP*`*`|CAFETERIA ESCAPE 2]]]]\n(set: $destroyCmist to 1)",
+      "links": [
+        {
+          "text": ">...`*`*WHUMP*`*`",
+          "destination": {
+            "name": "CAFETERIA ESCAPE 2",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "CAFETERIA TALK MIST",
+      "text": "(transition: \"dissolve\")[Clearly, attempting to speak to the wave of (color: red)[hallucinogens] surrounding you is your [best option.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[YOU: [Hey, uh--]<c2|]]\n\n(click: ?c2)[(color: red)[GAS:] 'Hey' is for [horses.]<c3|]\n\n(click: ?c3)[YOU: [...What?]<c4|]\n\n(click: ?c4)[(color: red)[GAS:] 'Hey' is an informal greeting for horses, and those who wish to sound like an [ass.]<c5|]\n(click: ?c5)[(color: red)[GAS:] And yes, I did mean for that statement to be a [*double entendre*.]<c6|]\n(click: ?c6)[(color: red)[GAS:] Do you know what a [*double entendre* is?]<c7|]\n\n(click: ?c7)[YOU: I, I know--[Yes.]<c8|]\n\n(click: ?c8)[(transition: \"dissolve\")[(color: red)[GAS:] Speaking correctly is very important, [you know.]<c9|]]\n(click: ?c9)[(transition: \"dissolve\")[(color: red)[GAS:] It's a ''skill'', mastered only by a chosen few who must spread their enlightenment through fervent judgement on internet [messaging systems.]<c10|]]\n\n(click: ?c10)[YOU: I already breathed you [in.]<c11|]\n\n(click: ?c11)[(color: red)[GAS:] [Oh heavens yes.]<c12|]\n\n(click: ?c12)[[[>OOPS|CAFETERIA ESCAPE 2]]]",
+      "links": [
+        {
+          "text": ">OOPS",
+          "destination": {
+            "name": "CAFETERIA ESCAPE 2",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "CAFETERIA SUCCUMB MIST",
+      "text": "(transition: \"dissolve\")[In the tradition of the best heroes, you decide to [surrender immediately.]<c1|]\n\n<h3>(click: ?c1)[(transition: \"shudder\")[[`*`*''WHUMP''*`*`]<c2|]]</h3>\n(click: ?c2)[(transition: \"dissolve\")[(That was the sound of you flopping on the floor, [by the way.]<c3|)]]\n\n(click: ?c3)[[[>WHUMP GOES THE DYNAMITE|CAFETERIA ESCAPE 2]]]",
+      "links": [
+        {
+          "text": ">WHUMP GOES THE DYNAMITE",
+          "destination": {
+            "name": "CAFETERIA ESCAPE 2",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "CAFETERIA ESCAPE",
+      "text": "(transition: \"dissolve\")[You stumble towards the nearest exit, launching into it with [your Mighty Bear Body.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[The door is not amused, and [slaps you in the face.]<c2|]]\n\n(click: ?c2)[[[>EVERY*BEAR*DY'S A CRITIC|CAFETERIA ESCAPE 2]]]",
+      "links": [
+        {
+          "text": ">EVERY*BEAR*DY'S A CRITIC",
+          "destination": {
+            "name": "CAFETERIA ESCAPE 2",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "FACILITY PICNIC INTRO",
+      "text": "(display: \"ELSEWHERE\")\n(live: 1.5s)[(stop:)(transition: \"dissolve\")[The lurid red warning lights inside of the Command Center have [only grown brighter.]<b1|]] (click: ?b1)[(transition: \"dissolve\")[In the back of the room is an overturned desk and a fallen, [smoking monitor.]<b2|]] (click: ?b2)[(transition: \"dissolve\")[Behind the desk, JONATHAN is pinned to the wall by [CARLA.]<b3|]]\n(click: ?b3)[(transition: \"dissolve\")[BAILEY is frantically checking his Twitter notifications [before interfering.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[CARLA: WHAT THE [*HELL*, JONATHAN?!]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[JONATHAN: I was just, I thought--if I got rid of [the Bear--]<c3|]]\n\n(click: ?c3)[CARLA: This isn't [about *the Bear*, Jonathan.]<c4|] (click: ?c4)[(transition: \"dissolve\")[This is about ''you'', arbitrarily [risking our lives!]<c5|]]\n\n(click: ?c5)[JONATHAN: But, like I told you, the room was spared! We [weren't drugged!]<c6|]\n\n(click: ?c6)[CARLA: And what happens *after*, Jon?! Does the gas leave a residue, does it stick around, does it have aftereffects? ''Can'' we leave? Do you [know?]<c7|]\n\n(click: ?c7)[(transition: \"dissolve\")[JONATHAN: [I...]<c8|]]\n\n(click: ?c8)[(transition: \"dissolve\")[CARLA: Do you not think I know a fraction about [my job?]<b4|]]\n(click: ?b4)[(transition: \"dissolve\")[CARLA: About [keeping you and Bailey alive?]<c9|]]\n\n(click: ?c9)[(transition: \"dissolve\")[CARLA is [crying.]<c10|]]\n\n(click: ?c10)[(transition: \"dissolve\")[CARLA: Do you not think I *care* about keeping every single one of you [silly, silly people safe?]<c11|]]\n\n(click: ?c11)[(transition: \"dissolve\")[[[>JONATHAN ACCUSES CARLA|FACILITY PICNIC INTRO 1a]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">JONATHAN ACCUSES CARLA",
+          "destination": {
+            "name": "FACILITY PICNIC INTRO 1a",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "CAFETERIA ESCAPE 2",
+      "text": "(transition: \"dissolve\")[You're standing in the blinding light of a comedy club [stage.]<b1|] (click: ?b1)[(transition: \"dissolve\")[Sweat stains the collar of your starched white shirt, the residue running into the slacks you regret [not buying a belt for.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[You shield your eyes against the glare, only to find a grim line of faces [looking back at you.]<c2|]]\n(click: ?c2)[(transition: \"dissolve\")[They're [waiting.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[[[>\"I FLEW IN ALL THE WAY FROM ALBEQUERQUE, AND BOY ARE MY ARMS TIRED!\"|CAFETERIA ESCAPE 3]]\n[[>\"HOW ABOUT THAT, UH, AIRLINE FOOD? GROSS, RIGHT?\"|CAFETERIA ESCAPE 3]]\n[[>\"FUNNY THING HAPPENED ON THE WAY HERE...\"|CAFETERIA ESCAPE 3]]\n(link: \">CALL THE AUDIENCE 'FACIST BASTARDS.'\")[(set: $facistBastards to 1)(go-to: \"CAFETERIA ESCAPE 3\")]\n(link: \">THROW UP\")[(set: $throwUp to 1)(go-to: \"CAFETERIA ESCAPE 3\")]]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "CAFETERIA ESCAPE 3",
+            "pid": 56
+          }
+        },
+        {
+          "text": ">\"I FLEW IN ALL THE WAY FROM ALBEQUERQUE, AND BOY ARE MY ARMS TIRED!\"",
+          "destination": {
+            "name": "CAFETERIA ESCAPE 3",
+            "pid": 56
+          }
+        },
+        {
+          "text": ">\"HOW ABOUT THAT, UH, AIRLINE FOOD? GROSS, RIGHT?\"",
+          "destination": {
+            "name": "CAFETERIA ESCAPE 3",
+            "pid": 56
+          }
+        },
+        {
+          "text": ">\"FUNNY THING HAPPENED ON THE WAY HERE...\"",
+          "destination": {
+            "name": "CAFETERIA ESCAPE 3",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "CAFETERIA ESCAPE 3",
+      "text": "(if: $throwUp is 0)[(transition: \"dissolve\")[The (if: $facistBastards is 1)[\"]joke(if: $facistBastards is 1)[\"] [bombs.]<c2|]](if: $throwUp is 1)[(transition: \"dissolve\")[The crowd is [horrified.]<c2|]]\n(click: ?c2)[(transition: \"dissolve\")[Just as the silence becomes too [unbearable]<a1|(click: ?a1)[ (Not a pun [this time.]<a2| (click: ?a2)[You're welcome.])] and you begin to hope (text-style: \"shudder\")[the ground [opens up beneath you...]<c1|]]]\n\n\n<big>(click: ?c1)[(live: 2s)[(stop:)(text-style: \"shadow\")[(transition: \"shudder\")[[[>...IT DOES|CAFETERIA ESCAPE 4]]]]]]</big>",
+      "links": [
+        {
+          "text": ">...IT DOES",
+          "destination": {
+            "name": "CAFETERIA ESCAPE 4",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "CAFETERIA ESCAPE 4",
+      "text": "(transition: \"dissolve\")[You are in the [center of the Earth.]<c1|]\n\n<h3>(click: ?c1)[(transition: \"dissolve\")[[[[You are a Bear.]<d1|]<d2|]<c2|]]</h3>\n(click: ?c2)[(go-to: \"CAFETERIA FLASHBACK INTRO\")]\n\n(click-replace: ?d1)[(transition: \"dissolve\")[You are a Giraffe.]]\n(click-replace: ?d2)[(transition: \"dissolve\")[>I AM BEARAFFE.]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "CAFETERIA FLASHBACK INTRO",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "FACILITY PICNIC INTRO 1a",
+      "text": "(display: \"ELSEWHERE\")\n(live: 1.6s)[(stop:)(transition: \"dissolve\")[JONATHAN's [voice is strained.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[JONATHAN: [Care?]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[JONATHAN: Clark is *dead*, and you didn't [bat an eyelash(if: $underCover is 1)[, even when he had his face *taken off*].]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[CARLA: Why do you think ''you'' had to watch archives instead of [live tape?]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[CARLA: I was watching *when [it happened.]<b3|*]]\n(click: ?b3)[(transition: \"dissolve\")[CARLA: I ''mourned'' before I got here, and I'm [still mourning.]<b4|]] (click: ?b4)[(transition: \"dissolve\")[But I have two more people I need [to protect.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[JONATHAN: But you didn't [fight--]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[CARLA: I don't have a gun, Jon! How do I tell you all what's going on? How do I trigger lockdown, and give us some ''semblance'' of safety? To use the VERY limited, hamstrung controls I have, [where do I go?]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[A look of guilt and horror spreads across [JONATHAN's face.]<c6|]]\n\n(click: ?c6)[(transition: \"dissolve\")[<small>JONATHAN: You go--[you came, here.]<c7|</small>]]\n\n(click: ?c7)[(transition: \"dissolve\")[<small>CARLA: That's [right.]<c8|</small>]]\n\n(click: ?c8)[(transition: \"dissolve\")[[[>BAILEY SPEAKS UP|FACILITY PICNIC INTRO 2]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">BAILEY SPEAKS UP",
+          "destination": {
+            "name": "FACILITY PICNIC INTRO 2",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "FACILITY PICNIC INTRO 2",
+      "text": "(display: \"ELSEWHERE\")\n(live: 0.7s)[(stop:)(transition: \"dissolve\")[BAILEY: [Uh, guys?]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[BAILEY: I get that this is an important moment and everything, but we have two big problems y'all [might want to know about.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[CARLA releases JONATHAN as fat tears begin to roll down his face, and wiping her own, [turns to BAILEY.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[CARLA: We'll talk later, Jon--What's [up?]<b2|]] (click: ?b2)[(transition: \"dissolve\")[And if you want me to take this seriously, Bailey, you better not say [\"Updog.\"]<c3|]]\n\n(click: ?c3)[BAILEY: [Noted.]<a1|]\n(click: ?a1)[(transition: \"dissolve\")[BAILEY: Problem number one is that monitor. The smoke detectors in the Command Center are [especially sens--]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[The sound of a fire alarm bell [pounds the walls.]<b3|]] (click: ?b3)[A dazzling array of mismatched sprinklers springs from the ceiling, soaking the [small room.]<b4|]\n(click: ?b4)[(transition: \"dissolve\")[BAILEY continues speaking through a [mop of wet hair.]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[BAILEY: So yeah, that was problem [number one.]<c6|]]\n(click: ?c6)[BAILEY: I could *show* you problem number two, if my terminal wasn't drenched, but it's [fairly simple.]<c7|]\n(click: ?c7)[(transition: \"dissolve\")[BAILEY: Last I saw, the Bear was [moving.]<c8|]]\n\n(click: ?c8)[(transition: \"dissolve\")[[[>OH BOY...|DAD PICNIC]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">OH BOY...",
+          "destination": {
+            "name": "DAD PICNIC",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "DAD PICNIC",
+      "text": "<big>(transition: \"dissolve\")[You are a [Bear Child.]<c1|]</big>\n(click: ?c1)[(transition: \"dissolve\")[A communal picnic filling the park near your home is in [full swing.]<a1|]]\n(click: ?a1)[(transition: \"dissolve\")[Children race between the trees in a game even they couldn't hope to explain, while [[their mothers]<a2|]<a3| (click: ?a2)[(transition: \"dissolve\")[(wives of the community's most influential members)]] bunch around [a single refreshment table.]<c2|]](click: ?a3)[<br><br>(Despite their chummy manner, these women snipe at the 'less fortunate' almost as much as they do at each other.)]\n\n(click: ?c2)[In the center of everything, is your [Bear Dad.]<c3|] (click: ?c3)[He floats from group to group, and the effect in each is [tangible.]<c4|]\n(click: ?c4)[(transition: \"dissolve\")[When he leaves, it's like the air has been sucked out of a balloon. Conversation just becomes talk. Knee-slapping guffaws reduce to [tired chuckles.]<c5|]]\n(click: ?c5)[(transition: \"dissolve\")[And when he [enters a knot of people...]<c6|]]\n(click: ?c6)[(transition: \"dissolve\")[He makes them smile the way you only [wish you could.]<c7|]]\n\n(click: ?c7)[(transition: \"dissolve\")[Just glancing in his direction is giving you [second thoughts.]<c8|]]\n\n(click: ?c8)[(transition: \"dissolve\")[[[>\"...ARE YOU SURE WE SHOULD BE DOING THIS?\"|DAD PICNIC 2]]]]",
+      "links": [
+        {
+          "text": ">\"...ARE YOU SURE WE SHOULD BE DOING THIS?\"",
+          "destination": {
+            "name": "DAD PICNIC 2",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "DAD PICNIC 2",
+      "text": "(transition: \"dissolve\")[<big>Dexter</big>, leader of the collection of older children you've managed to convince to bring you along, turns [to face you.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[\"We could always just leave you behind, you know. You don't [*need* to be here.]<c2|\"]]\n\n(click: ?c2)[(transition: \"dissolve\")[The others also turn to face you. You're feeling the age difference more than ever, and [desperately trying to make up for it.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[[>\"NO, I MEAN, JUST--WON'T WE MISS THE REST OF THE PICNIC?\"]<r1|]]\n\n(click: ?c4)[(transition: \"dissolve\")[\"Like I said--you don't want to be here, [you can beat it.]<c5|\"]]\n\n(click: ?c5)[(transition: \"dissolve\")[The others nod their heads and mutter snide agreements as they try to [catch up.]<c6|]] (click: ?c6)[(transition: \"dissolve\")[Of course *they're* going to follow Dexter to the small, rocky waterfalls at the [abandoned edge of the park.]<b1|]] \n\n(click: ?b1)[(transition: \"dissolve\")[The question is--[will you?]<c7|]]\n\n(click: ?c7)[(transition: \"dissolve\")[[[>I'LL SHOW THEM|DAD PICNIC 3]]\n[[>SCREW THOSE JERKS - I'M LEAVING|DAD PICNIC ENDING]]]]\n\n(click-replace: ?r1)[(transition: \"dissolve\")[\"What is there to miss, squirt? It's a bunch of old people standing around talking, and a bunch of kids running around [doing nothing.]<c4|\"]]",
+      "links": [
+        {
+          "text": ">I'LL SHOW THEM",
+          "destination": {
+            "name": "DAD PICNIC 3",
+            "pid": 63
+          }
+        },
+        {
+          "text": ">SCREW THOSE JERKS - I'M LEAVING",
+          "destination": {
+            "name": "DAD PICNIC ENDING",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "DAD PICNIC 5",
+      "text": "(transition: \"dissolve\")[(if: $investigateFlower is 1)[(if: $investigateC is 1)[It seems investigation is in your nature. ]A particularly vibrant wildflower on one of the more precarious cliffs catches [your attention.]<i1|](if: $dareDive is 1)[The jeering faces surrounding you are [enough.]<d1|](if: $swimOthers is 1)[It doesn't go well. Somehow, you find yourself outside of the game, alone, watching everyone have fun [without you.]<c1|]](click: ?d1)[(transition: \"dissolve\")[<br>You accept Dexter's challenge and prepare to [launch yourself off of the waterfall.]<d2|]](click: ?d2)[(transition: \"dissolve\")[<br><br>No one [attempts to stop you.]<c1|]](click: ?i1)[<br>You edge along the cliff face, bending so you can observe the bloom [without plucking it.]<i2|](click: ?i2)[(transition: \"dissolve\")[<br><br>The last thing you remember is falling, and the flower [disintegrating]<c1| under a torrent of water.]]\n\n(click: ?c1)[(transition: \"dissolve\")[You go [underwater.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[You stay [there.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[[[>NO ONE NOTICES|DAD PICNIC 6]]]]",
+      "links": [
+        {
+          "text": ">NO ONE NOTICES",
+          "destination": {
+            "name": "DAD PICNIC 6",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "DAD PICNIC 3",
+      "text": "(transition: \"dissolve\")[You follow Dexter's lead and continue to slink away from the hubbub of the picnic, scrambling under warning tape to hopefully [reach the falls.]<b1|]\n\n(click: ?b1)[(transition: \"dissolve\")[The terrain becomes more wild and treacherous with every step you take deeper into the abandoned [brush...]<b2|]](click: ?b2)[(transition: \"dissolve\")[but there's no indication that you're getting any closer to [your goal.]<c1|]]\n\n(click: ?c1)[\"Hey, Dex? You know where we're going?\" says a short, winded Panda [somewhere behind you.]<c2|]\n\n(click: ?c2)[\"Of course I know where we're going!\" Dexter [shouts.]<b3|]\n(click: ?b3)[(transition: \"dissolve\")[\"God, you kids are [impatient.]<b4|\"]]\n(click: ?b4)[(transition: \"dissolve\")[\"I mean, do you hear [that roar?]<c3|\"]]\n\n(click: ?c3)[Listening quite intently, you think you can hear an owl yawning in a nearby tree before [going back to sleep.]<b5|]\n\n(click: ?b5)[(transition: \"dissolve\")[\"Yeah Dex, I can't hear nothing,\" says the Panda who is rapidly moving up [Dexter's Hate List.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[\"It's a quiet roar,\" Dexter [mutters.]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[[...]<c6|]]\n\n(click: ?c6)[(transition: \"shudder\")[[\"ARE YOU GUYS COMING OR NOT?!\"]<c7|]]\n\n(click: ?c7)[(transition: \"dissolve\")[[[><i>`*`SIGH`*`</i>|DAD PICNIC 4]]]]",
+      "links": [
+        {
+          "text": "><i>`*`SIGH`*`</i>",
+          "destination": {
+            "name": "DAD PICNIC 4",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "DAD PICNIC ENDING",
+      "text": "(transition: \"dissolve\")[You do realize that if you *don't* follow these jerks, it won't trigger the events that lead you [to this point, right?]<c1|]\n\n(click: ?c1)[This is some serious next-level alternate-timeline stuff you're [playing with here.]<c2|]\n\n(click: ?c2)[(transition: \"dissolve\")[[[>LET ME SEE WHERE THIS GOES|DAD PICNIC 3]]\n[[>FORGET THESE GUYS|DAD PICNIC ENDING 2]]]]",
+      "links": [
+        {
+          "text": ">LET ME SEE WHERE THIS GOES",
+          "destination": {
+            "name": "DAD PICNIC 3",
+            "pid": 63
+          }
+        },
+        {
+          "text": ">FORGET THESE GUYS",
+          "destination": {
+            "name": "DAD PICNIC ENDING 2",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "DAD PICNIC ENDING 2",
+      "text": "(transition: \"dissolve\")[Okay, I'm not going to tell you NOT to leave, but I hope you realize [this will end the game.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[You'll have changed the course of *Bear*story [forever.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[You won't meet Carla, Jonathan, Bailey, and [Clark]<a1|(click: ?a1)[ (crushed edition)]. You wouldn't fall out of the sky. You probably won't [change your major four times.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[This will [change your story.]<c4|]]\n(click: ?c4)[(transition: \"dissolve\")[This will [change <big>you.</big>]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[[[>I WANT TO SEE THE REST OF MY STORY|DAD PICNIC 3]]\n[[>LET'S RESET THIS BABY - I'M LEAVING|DAD PICNIC ENDING 3]]]]",
+      "links": [
+        {
+          "text": ">I WANT TO SEE THE REST OF MY STORY",
+          "destination": {
+            "name": "DAD PICNIC 3",
+            "pid": 63
+          }
+        },
+        {
+          "text": ">LET'S RESET THIS BABY - I'M LEAVING",
+          "destination": {
+            "name": "DAD PICNIC ENDING 3",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "DAD PICNIC ENDING 3",
+      "text": "<big>(transition: \"dissolve\")[A loud bang startles you [awake.]<c2|]</big>\n\n(click: ?c2)[(live: 3s)[(stop:)<small>[`*`*bang*`*`]<c3|</small>]]\n\n(click: ?c3)[(transition: \"dissolve\")[After you left Dexter's group and fell asleep, one of the more rambunctious kids must have just *happened* to [get hold of a firecracker.]<b1|]] (click: ?b1)[(transition: \"dissolve\")[And then, just *happened* to get the idea to set it off beneath the [infamous refreshment table.]<c4|]]\n(click: ?c4)[(transition: \"dissolve\")[Several Bear Dads are being interrogated about [the matter.]<c5|]]\n(click: ?c5)[(transition: \"dissolve\")[Your [Bear Dad is, mysteriously, not among them.]<c6|]]\n\n(click: ?c6)[(transition: \"dissolve\")[[[>NOW HOW ABOUT THAT|DAD PICNIC ENDING 4]]]]",
+      "links": [
+        {
+          "text": ">NOW HOW ABOUT THAT",
+          "destination": {
+            "name": "DAD PICNIC ENDING 4",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "DAD PICNIC ENDING 4",
+      "text": "(transition: \"dissolve\")[It seems [Dexter was wrong.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[There *was* a lot that could be [missed, even here.]<b1|]] (click: ?b1)[(transition: \"dissolve\")[Tiny [details.]<b2|]] \n(click: ?b2)[(transition: \"dissolve\")[The small stories that [make life worth living.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[As you rise to join the commotion, a final thought from the weird dream that you're even [now forgetting strikes your brain:]<c3|]]\n\n\n<big>(click: ?c3)[(transition: \"dissolve\")[[[>I *REALLY* NEED TO THINK ABOUT MY MAJOR.|DAD PICNIC ENDING FINAL]]]]</big>",
+      "links": [
+        {
+          "text": ">I *REALLY* NEED TO THINK ABOUT MY MAJOR.",
+          "destination": {
+            "name": "DAD PICNIC ENDING FINAL",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "DAD PICNIC ENDING FINAL",
+      "text": "(align: \"=><=\")[<h1>(transition: \"dissolve\")[***[[~FIN~|CREDITS]]***]</h1>]\n\n\n(align: \"=><=\")[<small>[[(GO BACK)|DAD PICNIC 2]]</small>]\n\n\n(set: $seenEnding to 1)",
+      "links": [
+        {
+          "text": "~FIN~",
+          "destination": {
+            "name": "CREDITS",
+            "pid": 27
+          }
+        },
+        {
+          "text": "(GO BACK)",
+          "destination": {
+            "name": "DAD PICNIC 2",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "DAD PICNIC 4",
+      "text": "(transition: \"dissolve\")[The group has been wandering for at least an hour when you encounter a bush that [refuses to move aside.]<c1|]\n(click: ?c1)[(transition: \"dissolve\")[Your chance, irritated (transition: \"shudder\")[swipe] at said shrubbery reveals a sight that leaves you [gasping and still.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[Just ahead of the now-decapitated plant is an abrupt drop, leading directly into a [bubbling lake ringed by sheer cliffs.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[Towers of running water burst from the wildflower-covered rock, sending waves of mist spiraling into the air in intricate,] [(text-style: \"fade-in-out\")[shifting patterns.]]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[You don't know it now, but you'll compare everything you see to this moment for the rest of [your life.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[You don't even notice Dexter taking the credit for your discovery, or the series of Bear Children racing past you to [dive into the water.]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[\"Okay!\" Dexter screams, already [claiming the loftiest perch available by proxy.]<c6|]]\n(click: ?c6)[(transition: \"dissolve\")[<big>[\"Go wild!\"]<c7|</big>]]\n\n(click: ?c7)[(transition: \"dissolve\")[(link: \">INVESTIGATE A BEAUTIFUL FLOWER AT THE EDGE OF A CLIFF\")[(set: $investigateFlower to 1)(go-to: \"DAD PICNIC 5\")]\n(link: \">ACCEPT A DARE TO DIVE FROM THE HIGHEST WATERFALL\")[(set: $dareDive to 1)(go-to: \"DAD PICNIC 5\")]\n(link: \">TRY TO SWIM WITH THE OTHERS\")[(set: $swimOthers to 1)(go-to: \"DAD PICNIC 5\")]\n]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "DAD PICNIC 5",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "DAD PICNIC 6",
+      "text": "(transition: \"dissolve\")[You come out of a black haze to find yourself heaving water on a small, dry patch of land at the [lake's edge.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[It's almost evening, and dark, heavy clouds are [gathering on the horizon.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[Everyone is [gone.]<c3|]]\n\n(click: ?c3)[[[>I HAVE TO GET BACK|FACILITY PICNIC INTERMISSION]]]",
+      "links": [
+        {
+          "text": ">I HAVE TO GET BACK",
+          "destination": {
+            "name": "FACILITY PICNIC INTERMISSION",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "FACILITY PICNIC INTERMISSION",
+      "text": "(display: \"ELSEWHERE\")\n(live: 1.1s)[(stop:)(transition: \"dissolve\")[CARLA: Wait - if the sprinklers are on in here, do they get activated [throughout the entire Facility?]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[BAILEY: Um, [I actually don--]<c2|]]\n\n(click: ?c2)[Suddenly, BAILEY hears the light pattering of water on the metal [shutters outside the Command Center.]<c3|]\n\n(click: ?c3)[BAILEY: Yup! Yeah. That's [what happens.]<c4|]\n\n(click: ?c4)[CARLA: Jonathan, do [you remember our contracts?]<c5|]\n\n(click: ?c5)[(transition: \"dissolve\")[JONATHAN: Some parts. [Why?]<c6|]]\n\n(click: ?c6)[(transition: \"dissolve\")[CARLA brushes her thick [braids aside.]<c7|]]\n\n(click: ?c7)[(transition: \"dissolve\")[CARLA: Because I have a plan, and it all depends on whether we can find out how those (color: red)[drugs] react to [water.]<c8|]]\n\n(click: ?c8)[[[>BAILEY ATTEMPTS TO MAKE A PUN|FACILITY PICNIC INTERMISSION 1a]]\n[[>WET PAPERWORK SEARCH TIME, YAY|DAD PICNIC 7]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">BAILEY ATTEMPTS TO MAKE A PUN",
+          "destination": {
+            "name": "FACILITY PICNIC INTERMISSION 1a",
+            "pid": 72
+          }
+        },
+        {
+          "text": ">WET PAPERWORK SEARCH TIME, YAY",
+          "destination": {
+            "name": "DAD PICNIC 7",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "FACILITY PICNIC INTERMISSION 1a",
+      "text": "(display: \"ELSEWHERE\")\n(live: 0.4s)[(stop:)(transition: \"dissolve\")[CARLA is rooting through increasingly wet documents to see what JONATHAN might find useful when she spots BAILEY in the [corner, shaking.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[CARLA: Bailey, [you okay?]<c2|]]\n\n(click: ?c2)[BAILEY stares at CARLA in [silent pain.]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[BAILEY: I have the perfect pun, and we're in so much ***HOT WATER***, I may never get the chance to say [it.]<a1|]]\n\n(click: ?a1)[(transition: \"dissolve\")[CARLA: ...Was that the pun? Because [that's a pun.]<a2|]]\n\n(click: ?a2)[BAILEY: I know, but it's [not the *same.*]<a3|]\n(click: ?a3)[(transition: \"dissolve\")[BAILEY: I'm telling ya, the pun I had was [so good.]<a4|]]\n\n(click: ?a4)[CARLA: And by good, you [mean bad?]<a5|]\n\n(click: ?a5)[BAILEY: [Oh yeah.]<c4|]\n\n(click: ?c4)[(transition: \"dissolve\")[CARLA glances [in JONATHAN's direction.]<b1|]] (click: ?b1)[(transition: \"dissolve\")[He's absorbed in [his work.]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[She [sighs.]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[CARLA: This once, I will tolerate a pun [willingly.]<b3|]]\n(click: ?b3)[CARLA: [Hit me.]<c6|]\n\n(click: ?c6)[(transition: \"dissolve\")[BAILEY: This [is sure...]<p1|]](click: ?p1)[***[RAINING]<p2|***] (click: ?p2)[(transition: \"dissolve\")[on [our]<p3|]] (click: ?p3)[***[<big>BEAR</big>ADE.]<c7|***]\n\n(click: ?c7)[CARLA: Feel better? Because that [was pretty terrible.]<c8|]\n\n(click: ?c8)[(transition: \"dissolve\")[BAILEY [smiles.]<a6|]]\n\n(click: ?a6)[BAILEY: [Immensely.]<c9|]\n\n(click: ?c9)[[[>BAILEY FINALLY GETS TO WORK|DAD PICNIC 7]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">BAILEY FINALLY GETS TO WORK",
+          "destination": {
+            "name": "DAD PICNIC 7",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "DAD PICNIC 7",
+      "text": "(transition: \"dissolve\")[It's been [hours.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[It's been hours, and [it's raining.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[It's been hours, and it's raining, and [it's getting dark.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[It's been hours, and it's raining, and it's getting dark, and no one [knows where you are.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[It's been hours, and it's raining, and it's getting dark, and no one knows where you are, and you hear unfamiliar, [disturbing noises deep in the forest.]<c5|]]\n\n(click: ?c5)[<big>[[>BEAR DAD IS GOING TO KILL ME|FACILITY PICNIC INTERMISSION 2]]</big>]",
+      "links": [
+        {
+          "text": ">BEAR DAD IS GOING TO KILL ME",
+          "destination": {
+            "name": "FACILITY PICNIC INTERMISSION 2",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "FACILITY PICNIC INTERMISSION 2",
+      "text": "(display: \"ELSEWHERE\")\n(live: 0.3s)[(stop:)(transition: \"dissolve\")[JONATHAN: [Carla!]<b1|]] (click: ?b1)[(transition: \"dissolve\")[I think [I found something!]<c1|]]\n\n(click: ?c1)[CARLA: What did you [find?]<c2|]\n\n(click: ?c2)[JONATHAN: The (color: purple)[tranquilizers] are actually [water-soluble!]<b2|]\n(click: ?b2)[(transition: \"dissolve\")[JONATHAN: Apparently, our employer wanted to be able to just hose us out of the building once we were finished [going out of our minds.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[BAILEY: That's...actually really [disturbing.]<c4|]]\n\n(click: ?c4)[JONATHAN: Wait, if the (color: purple)[tranquilizers] dissolve on contact, that means we could *leave*--right, [Carla?]<c5|]\n\n(click: ?c5)[CARLA: That isn't [exactly what I had in mind.]<c6|]\n\n(click: ?c6)[(transition: \"dissolve\")[With a few short strides, CARLA slams her palm on the Large Red Button, ending the lockdown and opening the metal shutters [sealing the team inside.]<c7|]]\n\n(click: ?c7)[(transition: \"shudder\")[JONATHAN: [WHAT ARE YOU DOING?!]<c8|]]\n\n(click: ?c8)[CARLA: Hopefully? Giving us more than [one chance to stay alive.]<c9|]\n\n(click: ?c9)[(transition: \"dissolve\")[[[>JONATHAN AND BAILEY HAVE DEFINITE QUESTIONS|DAD PICNIC 8]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">JONATHAN AND BAILEY HAVE DEFINITE QUESTIONS",
+          "destination": {
+            "name": "DAD PICNIC 8",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "DAD PICNIC 8",
+      "text": "(transition: \"dissolve\")[Blood and rain stain your fur. Your clothes are torn from stumbling on rocks and thorns and vines in the [uneasy half-light.]<b1|]\n(click: ?b1)[(transition: \"dissolve\")[But that [doesn't matter.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[You've reached the park proper, and standing in the middle of the clearing, alone, is [Bear Dad.]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[He's [soaked.]<c2|]]\n\n(click: ?c2)[You take a hesitant step [closer.]<c3|]\n\n\n(click: ?c3)[(live: 1.1s)[(stop:)(transition: \"dissolve\")[[[<small>\"...DAD?\"</small>|DAD PICNIC 9]]]]]",
+      "links": [
+        {
+          "text": "<small>\"...DAD?\"</small>",
+          "destination": {
+            "name": "DAD PICNIC 9",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "DAD PICNIC 9",
+      "text": "(transition: \"dissolve\")[He turns, slowly, and simply looks at you for a moment. It's like he's confirming that [you're real.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[Seemingly satisfied, he starts [walking towards you with stiff, halting steps.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[A single vein [pulses along his snout.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[(link: \">BACK AWAY\")[(set: $backOne to 1)(go-to: \"DAD PICNIC 10\")]\n[[>STAY STILL|DAD PICNIC 10]]]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "DAD PICNIC 10",
+            "pid": 77
+          }
+        },
+        {
+          "text": ">STAY STILL",
+          "destination": {
+            "name": "DAD PICNIC 10",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "DAD PICNIC 10",
+      "text": "(if: $backOne is 1)[(transition: \"dissolve\")[You step backwards, but there's no indication of surprise on his face. No undue pain [or concern.]<c1|]](if:$backOne is 0)[(transition: \"dissolve\")[There's no indication of surprise on his face. No undue pain [or concern.]<c1|]]\n(click: ?c1)[Just an unreadable, black [hole of emotion.]<c2|]\n\n(click: ?c2)[<big>[>\"DAD!\"]<b1|</big>] (click: ?b1)[(transition: \"dissolve\")[you [shout.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[He [doesn't answer.]<c4|]]\n\n\n(click: ?c4)[(transition: \"dissolve\")[[[>RUN|FACILITY PICNIC INTERMISSION 3]]]]",
+      "links": [
+        {
+          "text": ">RUN",
+          "destination": {
+            "name": "FACILITY PICNIC INTERMISSION 3",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "FACILITY PICNIC INTERMISSION 3",
+      "text": "(display: \"ELSEWHERE\")\n(live: 1.4s)[(stop:)(transition: \"dissolve\")[BAILEY: Are you sure [this will work?]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[CARLA: See these cracks in the floor? Beneath [where the shutter came down?]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[CARLA: If we can lure the Bear beneath one of the doors and initiate another lockdown, the shutter will go down with enough force to trap it, [if not kill it.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[JONATHAN: Wait, [*kill* it?]<b2|]]\n(click: ?b2)[JONATHAN: I'm all for fighting, but no one said anything [about *killing* it.]<c3|]\n\n(click: ?c3)[CARLA [sighs.]<c4|]\n\n(click: ?c4)[(transition: \"dissolve\")[CARLA: I really, *really* do not like the idea of killing ''anything'', let alone [the Bear.]<b3|]]\n(click: ?b3)[(transition: \"dissolve\")[CARLA: Even the...well, Clark thing seemed like it [was an accident.]<b4|]]\n(click: ?b4)[CARLA: I do want to be prepared, though, which is why I'm going to need you and Bailey to [grab a chair.]<c5|]\n\n(click: ?c5)[(transition: \"dissolve\")[[[>JONATHAN AND BAILEY RETRIEVE THE NEAREST SITTING DEVICES|DAD PICNIC 12]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">JONATHAN AND BAILEY RETRIEVE THE NEAREST SITTING DEVICES",
+          "destination": {
+            "name": "DAD PICNIC 12",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "DAD PICNIC 12",
+      "text": "(transition: \"dissolve\")[You slip on [a wet rock.]<a1|] (click: ?a1)[(transition: \"dissolve\")[Nothing [changes.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[Bear Dad isn't going [faster.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[Bear Dad isn't going [slower.]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[He just keeps [coming.]<c2|]]\n\n(click: ?c2)[The vein keeps [pulsing.]<c3|]\n\n(click: ?c3)[He's almost within [arm's reach.]<c4|]\n\n(click: ?c4)[(transition: \"dissolve\")[(link: \">STRIKE OUT\")[(set: $strikeDad to 1)(go-to: \"FACILITY PICNIC INTERMISSION 4\")]\n(link: \">CRAWL AWAY\")[(set: $crawlDad to 1)(go-to: \"FACILITY PICNIC INTERMISSION 4\")]\n(link: \">FREEZE\")[(set: $freezeDad to 1)(go-to: \"FACILITY PICNIC INTERMISSION 4\")]]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "FACILITY PICNIC INTERMISSION 4",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "FACILITY PICNIC INTERMISSION 4",
+      "text": "(display: \"ELSEWHERE\")\n(live: 0.9s)[(stop:)(transition: \"dissolve\")[CARLA and JONATHAN are moving a large piece of furniture into place while [BAILEY keeps watch.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[JONATHAN: [So]<b1|]] (click: ?b1)[(transition: \"dissolve\")[[`*`*huff*`*`]<b2|]] (click: ?b2)[(transition: \"dissolve\")[just to be clear, we are *not* [trying to kill the Bear?]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[CARLA: [Ideally?]<a1|]] (click: ?a1)[(transition: \"dissolve\")[[`*`*hnngh*`*`]<a2|]] (click: ?a2)[(transition: \"dissolve\")[[No.]<b4|]]\n(click: ?b4)[(transition: \"dissolve\")[CARLA: If this works, we'll either trap it in the room, or be separated from it by two plates of [four-inch thick metal.]<c3|]]\n(click: ?c3)[(transition: \"dissolve\")[CARLA: The tricky bit is that we have to know where the Bear is, and deal with it in some way [before we can move on.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[BAILEY: Is it possible that the Bear [isn't actually hunting us or something?]<c5|]]\n\n(click: ?c5)[CARLA drops the desk she was carrying with JONATHAN, smashing [his foot.]<c6|]\n\n(click: ?c6)[(transition: \"shudder\")[JONATHAN: <big>[%#^@&]<c7|</big>]]\n\n(click: ?c7)[CARLA: What [did you say?]<c8|]\n\n(click: ?c8)[JONATHAN: I said ['%#^@&']<a3|!] (click: ?a3)[(transition: \"dissolve\")[I'm sorry, but that [hurt, Carla!]<c9|]]\n\n(click: ?c9)[CARLA: I'm sorry! But I didn't mean--Bailey, Bailey [what did you just say?]<c10|]\n\n(click: ?c10)[BAILEY: Are you seriously telling me that I'm the only one who considered that [the Bear *might not* be trying to actively kill us?!]<c11|]\n\n(click: ?c11)[(transition: \"dissolve\")[[[>UHHHHH....|DAD PICNIC 13]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">UHHHHH....",
+          "destination": {
+            "name": "DAD PICNIC 13",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "DAD PICNIC 13",
+      "text": "(transition: \"dissolve\")[(if: $strikeDad is 1)[You swipe at Bear Dad with your [wittle-bitty Bear Child hands.]<b1|](if: $crawlDad is 1)[You scramble backwards, scratching more bloodied lines [into your legs.]<b1|](if: $freezeDad is 1)[You are completely still--perhaps in hopes that, like a dinosaur, he wouldn't be [able to see you.]<b1|]]\n\n(click: ?b1)[It [doesn't work.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[Bear Dad picks you up by the scruff of your neck and straightens, bringing you to [eye level.]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[His voice is slow and calm, even as the vein in [his snout pulses faster.]<c2|]]\n\n(click: ?c2)[<small>(live: 3.2s)[(stop:)(font: \"Times New Roman\")[(transition: \"dissolve\")[\"You want to tell me [where you went?]<c3|\"]]]</small>]\n\n\n*<h3>(click: ?c3)[(transition: \"dissolve\")[>](live: 5s)[(stop:)(transition: \"dissolve\")[\"SCREW]] (live: 6s)[(stop:)(transition: \"dissolve\")[YOU,]] (live: 7s)[(stop:)(transition: \"dissolve\")[[[BEAR|DAD PICNIC 14]]]] (live: 7.3s)[(stop:)(transition: \"dissolve\")[[[DAD!\"|DAD PICNIC 14]]]]]*</h3>",
+      "links": [
+        {
+          "text": "BEAR",
+          "destination": {
+            "name": "DAD PICNIC 14",
+            "pid": 82
+          }
+        },
+        {
+          "text": "DAD!\"",
+          "destination": {
+            "name": "DAD PICNIC 14",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "DAD PICNIC 14",
+      "text": "You regret the words [even as you speak them.]<b1| (transition: \"dissolve\")[Bear Dad's eyes [grow hard and cold...]<b2|]\n(click: ?b2)[(transition: \"dissolve\")[...and he pulls you into a [tight, furry hug.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[[[>\"I'M...I'M SORRY.\"|FACILITY PICNIC INTERMISSION 5]]]]",
+      "links": [
+        {
+          "text": ">\"I'M...I'M SORRY.\"",
+          "destination": {
+            "name": "FACILITY PICNIC INTERMISSION 5",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "FACILITY PICNIC INTERMISSION 5",
+      "text": "(display: \"ELSEWHERE\")\n(live: 0.5s)[(stop:)(transition: \"dissolve\")[All planning and preparation has [stopped.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[BAILEY, JONATHAN, and CARLA scream theories, accusations, and calls to order even as the sprinklers pump water into [every inch of the Facility.]<c1|]] \n\n(click: ?c1)[(transition: \"dissolve\")[Meanwhile, a [Bear]<a1| (click: ?a1)[(you, of course)] limps blindly towards [a nearby staircase...]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[[[>\"I DIDN'T MEAN TO...REALLY\"|DAD PICNIC 15]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">\"I DIDN'T MEAN TO...REALLY\"",
+          "destination": {
+            "name": "DAD PICNIC 15",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "DAD PICNIC 15",
+      "text": "<small>(live: 3s)[(stop:)(font: \"Times New Roman\")[(transition: \"dissolve\")[\"You're going to listen, and you're going to listen very carefully, do you [understand?]<c1|\"]]]</small>\n\n(click: ?c1)[(transition: \"dissolve\")[[>\"BUT I--\"]<r1|]]\n(click-replace: ?r1)[<small>(font: \"Times New Roman\")[(transition: \"dissolve\")[\"Is whatever you're about to say [an excuse, or a reason?]<c2|\"</small>]]]\n(click: ?c2)[[>\"IT'S A RE--\"]<r2|]\n(click-replace: ?r2)[<small>(font: \"Times New Roman\")[(transition: \"dissolve\")[\"Shut [up.]<e1|(click: ?e1)[(font: \"Times New Roman\")[(transition: \"dissolve\")[ Just shut...(live: 2s)[[up.]<p1|(stop:)]]]]\"]]</small>]\n(click: ?p1)[(transition: \"dissolve\")[He squeezes [you tighter.]<b1|]]\n\n(click: ?b1)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"You [*don't* understand.]<b2|]\"]]\n(click: ?b2)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"You have *no idea* what [went through my head.]<e2|(click: ?e2)[(font: \"Times New Roman\")[(transition: \"dissolve\")[ What your [mother felt.]<e3|]]]\"]]] \n(click: ?e3)[(font: \"Times New Roman\")[(live: 2s)[(stop:)(transition: \"dissolve\")[\"You have no idea how much I wanted to <big>''fucking''</big> [hurt you.]<a1|\"]]]]\n\n(click: ?a1)[(live: 2s)[(stop:)(transition: \"dissolve\")[Pain shoots through your spine as he squeezes even [harder.]<ed4|]]]\n\n(click: ?ed4)[(font: \"Times New Roman\")[(live: 2s)[(stop:)(transition: \"dissolve\")[\"...If it let me keep you [safe from yourself.]<e4|\"]]]]\n\n(click: ?e4)[(live: 2s)[(stop:)(transition: \"dissolve\")[For the first time, you notice his massive [claws digging into your back.]<e5|]]]\n\n(click: ?e5)[(transition: \"dissolve\")[[<small>>\"I REALLY AM SORRY, DA--\"</small>]<r4|]]\n(click-replace: ?r4)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"[No.]<b5|(click: ?b5)[(font: \"Times New Roman\")[(transition: \"dissolve\")[ No [you aren't.]<b6|]]](click: ?b6)[(font: \"Times New Roman\")[(transition: \"dissolve\")[ But [you will be.]<c4|]]]\"]]]\n\n(click: ?c4)[(transition: \"dissolve\")[[[>ALONE|DAD PICNIC 16]]]]",
+      "links": [
+        {
+          "text": ">ALONE",
+          "destination": {
+            "name": "DAD PICNIC 16",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "DAD PICNIC 16",
+      "text": "(transition: \"dissolve\")[Bear Dad abruptly releases you, sending you [flailing to the ground.]<c1|]\n\n(click: ?c1)[He steps back and looks at you for a single, agonizing moment before trudging [away.]<b1|]\n\n(click: ?b1)[(transition: \"dissolve\")[That's the [worst part, really.]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[Not the pain, but the [crushing silence after.]<c2|]]\n\n(click: ?c2)[He trudges to the waterproof tent at the entrance of the park, where the party is still in [full swing.]<c4|]\n\n(click: ?c4)[(transition: \"dissolve\")[It's a long walk home for the confused little bear standing in the [rain.]<c5|]]\n\n(click: ?c5)[(text-style: \"fade-in-out\")[[[>ALONE|FACILITY BEAR MEETING]]]]",
+      "links": [
+        {
+          "text": ">ALONE",
+          "destination": {
+            "name": "FACILITY BEAR MEETING",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "FACILITY BEAR MEETING",
+      "text": "(display: \"ELSEWHERE\")\n(live: 1.2s)[(stop:)JONATHAN: It killed Clark(if: $underCover is 1)[ and ''took his fricking face'']! (if: $destroyC is 0)[*Snuffled* around](if: $destroyC is 1)[Tore apart] [the cafeteria!]<c1| (if: $destroyCmist is 1)[Destroyed (if: $destroyC is 0)[the cafeteria](if: $destroyC is 1)[it] (if: $destroyC is 1)[*again*] for the hell of it!]]\n\n(click: ?c1)[BAILEY: Has it ever occurred to you that an animal that fell from the sky, into a totally unfamiliar place, might [just *do stuff?!*]<a1|]\n(click: ?a1)[(transition: \"dissolve\")[BAILEY: And Clark was just standing there taking inventory! Even [Carla said it was an obvious accident!]<a2|]]\n\n(click: ?a2)[(transition: \"dissolve\")[CARLA: Please [don't bring me into this.]<a3|]]\n\n(click: ?a3)[BAILEY: We don't even know how or why the Bear got [here *in the first place.*]<a4|]\n(click: ?a4)[(transition: \"dissolve\")[BAILEY: Why aren't we asking *obvious questions* before [taking action ourselves?!]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[JONATHAN: So if *I* was an animal and \"accidentally\" fell from the sky, you'd be cool with me [(if: $underCover is 0)[just murdering you.](if: $underCover is 1)[just ripping your face off.]]<c3|]]\n\n(click: ?c3)[BAILEY: I [didn't say that.]<c4|]\n\n(click: ?c4)[JONATHAN: That's exactly what [you're saying.]<c5|]\n\n(click: ?c5)[BAILEY: It [really isn't.]<c6|]\n\n(click: ?c6)[JONATHAN: I could (if: $underCover is 0)[murder the *crap* [out of you.]<c7|](if: $underCover is 1)[rip the *crap* out of [your face.]<c7|]]\n\n(click: ?c7)[BAILEY: [Whoa.]<c8|]\n\n(click: ?c8)[(transition: \"dissolve\")[CARLA: This is [how we die.]<b1|]] (click: ?b1)[(transition: \"dissolve\")[This is how my [life ends.]<c9|]]\n\n(click: ?c9)[(transition: \"dissolve\")[[[>NO ONE EXPECTS THE SPANISH *BEARS*QUISITION|FACILITY BEAR MEETING 2]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ELSEWHERE",
+            "pid": 33
+          }
+        },
+        {
+          "text": ">NO ONE EXPECTS THE SPANISH *BEARS*QUISITION",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 2",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "FACILITY BEAR MEETING 2",
+      "text": "(transition: \"dissolve\")[You (text-style: \"fade-in-out\")[blink] against the [flourescent light.]<b1|]\n(click: ?b1)[(transition: \"dissolve\")[The remnants of your tears are already dissolving in [the artificial rain.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[You seem to have broken out of the cafeteria, crawled across the Facility, and climbed up an entire flight of stairs while in your (text-style: \"fade-in-out\")[(color: red)[drug-induced]] [flashback.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[[[>IMPRESSIVE|FACILITY BEAR MEETING 3]]]]",
+      "links": [
+        {
+          "text": ">IMPRESSIVE",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 3",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "FACILITY BEAR MEETING 3",
+      "text": "(transition: \"dissolve\")[In a small room to your right, through a doorway half-filled with half-stacked furniture, you can see a pale, nervous human with light brown hair apologizing to his coworker for implying he might (if: $underCover is 0)[murder the crap [out of him.]<c1|](if: $underCover is 1)[rip [his face off.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[He really is very sorry--for a lot of things, [apparently.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[You wonder how the equally-pale, glasses-wearing human he's apologizing to can see from under a tangled [mop of black hair.]<b1|]]\n(click: ?b1)[Occasionally, he'll look at a cold coffee mug overflowing with water behind him and [sigh.]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[Off to one side, a lightly-muscled, darker human with thick, brown braids is burying her head in her [hands.]<a1|]]\n\n(click: ?a1)[(transition: \"dissolve\")[She seems to be regretting the life choices that lead her [to this point.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[All of them look as drenched [as you feel...]<b2|]](click: ?b2)[(transition: \"dissolve\")[which makes it quite the coincidence that *this* is the moment sprinklers decided to [stop soaking the building.]<c5|]]\n\n(click: ?c5)[[[>WAIT--|FACILITY BEAR MEETING 4]]]",
+      "links": [
+        {
+          "text": ">WAIT--",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 4",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "FACILITY BEAR MEETING 4",
+      "text": "(transition: \"dissolve\")[This has been a very difficult [day for Carla.]<c1|]\n\n(click: ?c1)[She's seen a coworker killed in a freak [Bear accident.]<b1|]\n(click: ?b1)[She's gone through quite possibly the worst teambuilding excercise ever conceived with her [remaining coworkers.]<b2|]\n(click: ?b2)[She's watched these people [become friends]<a1|](click: ?a1)[, and [then become enemies]<a2|](click: ?a2)[, and then become [friends again]<a3|] <big>(click: ?a3)[[within 5 minutes.]<b3|]</big>\n(click: ?b3)[She's looked up to find the sprinklers off, and a bowtie-wearing Bear watching her from the hallway [on its back.]<c2|]\n\n(click: ?c2)[(transition: \"dissolve\")[She's cold and wet and tired and feels way too old for this s#%^, and so does the only thing her exhausted mind can think of [while facing imminent death.]<c3|]]\n\n(click: ?c3)[[[>WAVE|FACILITY BEAR MEETING 5]]]",
+      "links": [
+        {
+          "text": ">WAVE",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 5",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "FACILITY BEAR MEETING 5",
+      "text": "(transition: \"dissolve\")[The darker human has seen you, and rather than assaulting you for past incidents, she's [waving.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[It wouldn't do to [be impolite.]<c2|]]\n\n(click: ?c2)[[[>WAVE BACK|FACILITY BEAR MEETING 6]]]",
+      "links": [
+        {
+          "text": ">WAVE BACK",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 6",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "FACILITY BEAR MEETING 6",
+      "text": "(transition: \"dissolve\")[[Oh wait.]<c1|]\n\n(click: ?c1)[Oh [no.]<b1|]\n\n(click: ?b1)[[Okay.]<c2|]\n\n(click: ?c2)[She's [freaking out now.]<c3|]\n\n(click: ?c3)[[Oh God.]<c4|]\n\n(click: ?c4)[Okay, maybe waving back wasn't the [best idea.]<b2|]\n\n(click: ?b2)[[Oh dear.]<c5|]\n\n(click: ?c5)[Maybe waving again will [calm things down?]<c6|]\n\n(click: ?c6)[(link: \">WAVE AGAIN\")[(set: $waveBear to 1)(go-to: \"FACILITY BEAR MEETING 7\")]\n[[>REFRAIN FROM WAVING|FACILITY BEAR MEETING 7]]\n(link: \">DO A SEXY BEAR POSE AND WINK AT THE CAMERA\")[(set: $winkBear to 1)(go-to: \"BEAR WINK CHOOSE\")]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 7",
+            "pid": 93
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "BEAR WINK CHOOSE",
+            "pid": 92
+          }
+        },
+        {
+          "text": ">REFRAIN FROM WAVING",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 7",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "BEAR WINK CHOOSE",
+      "text": "There is [no camera.]<c1|\n\n(click: ?c1)[[[>WINK ANYWAY|FACILITY BEAR MEETING 7]]\n(link: \">REFRAIN FROM WINKING\")[(set: $winkBear to 0)(set: $sexyBear to 1)(go-to: \"FACILITY BEAR MEETING 7\")]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 7",
+            "pid": 93
+          }
+        },
+        {
+          "text": ">WINK ANYWAY",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 7",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "FACILITY BEAR MEETING 7",
+      "text": "(display: \"TEN FEET\")\n(live: 1.6s)[(stop:)(transition: \"dissolve\")[BAILEY, CARLA and JONATHAN back against [the far wall.]<c1|]]\n(click: ?c1)[(transition: \"dissolve\")[Thanks to an unfortunately-dropped desk, the doorway next to them is blocked by [collapsed metal chairs.]<c2|]]\n\n(click: ?c2)[CARLA: I'm telling you--it [waved at me!]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[BAILEY: That doesn't explain why [it's(if: $sexyBear is 1)[...*posing* at us!](if: $waveBear is 1)[ *still waving!*](if: $winkBear is 1)[ *winking at us!*]]<c4|]]\n\n(click: ?c4)[(transition: \"shudder\")[JONATHAN: IS ANYONE GOING TO ASK *WHY* YOU WAVED IN THE [FIRST PLACE?!]<c5|]]\n\n(click: ?c5)[CARLA: If you haven't noticed, Jon, it's *been a [long day!]<c6|*]\n\n(click: ?c6)[(transition: \"dissolve\")[[[>THE BEAR STANDS ON ITS HIND LEGS|FACILITY BEAR MEETING 8]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "TEN FEET",
+            "pid": 95
+          }
+        },
+        {
+          "text": ">THE BEAR STANDS ON ITS HIND LEGS",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 8",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "FACILITY BEAR MEETING 8",
+      "text": "(display: \"TEN FEET\")\n(live: 0.7s)[(stop:)(transition: \"shudder\")[JONATHAN: OH GOD IT'S GETTING INTO [ATTACK POSITION]<c1|]]\n\n(click: ?c1)[BAILEY: It isn't a freaking [spaceship, Jonathan!]<c2|]\n\n(click: ?c2)[(transition: \"dissolve\")[JONATHAN: <small>You [don't know that.]<c3|</small>]]\n\n(click: ?c3)[(transition: \"dissolve\")[[[>THIS ISN'T GOING WELL...|FACILITY BEAR MEETING 9]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "TEN FEET",
+            "pid": 95
+          }
+        },
+        {
+          "text": ">THIS ISN'T GOING WELL...",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 9",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "TEN FEET",
+      "text": "(align: \"=><=\")[<h3>TEN FEET AWAY...</h3>]\n---",
+      "links": []
+    },
+    {
+      "pid": 96,
+      "name": "FACILITY BEAR MEETING 9",
+      "text": "(transition: \"dissolve\")[[Okay.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[The humans clearly aren't [reacting very well.]<c2|]]\n\n(click: ?c2)[What are you [going to do?]<c3|(live: 20.3s)[(go-to: \"FACILITY BEAR MEETING 10\")]]\n\n(click: ?c3)[(transition: \"dissolve\")[[>ORDER A CANDYGRAM]<r1|\n[>OFFER FLOWERS]<r2|\n[>BEAR HUG 'EM]<r3|\n[[>CHANGE YOUR NAME, GROW A BEARD, AND LIVE OUT YOUR LIFE IN BEAR COUNTRY|BEAR RELOCATION PROGRAM]]\n[>PIZZA PARTY]<ra1|\n[>INVOKE THE POWER OF THE DARK LORD - BEARTHULHU]<r8|\n[>INVOKE THE POWER OF THE LORD OF JUSTICE - BEARTIMUS]<r9|\n[>PROPOSE A GAME OF CATCH]<r4|\n[>INTERPRETIVE DANCE]<r5|\n[>SMOKE BOMB]<r6|\n[>LEAVE AND JOIN THE CIRCUS AS A HUMAN TRAINER]<r7|\n[>BOW DEEPLY]<r10|\n[>INITIATE A TRUST EXCERCISE]<r12|]]\n\n(click-replace: ?r1)[Too old-fashioned.<br>]\n(click-replace: ?r2)[<br>You probably don't have enough time to arrange appropriate bouquets for all three of them.<br>]\n(click-replace: ?r3)[<br>That gesture could, just possibly, get misinterpreted...<br>]\n(click-replace: ?ra1)[<br>They probably don't deliver to [your area.]<a1|<br>(click: ?a1)[The cheapskates...<br>]]\n(click-replace: ?r4)[<br>Do they even make baseball mitts in your size?<br>]\n(click-replace: ?r5)[<br>How do you dance, \"*Hey, I'm really not trying to kill you all in horrifically graphic fashion*,\" without looking like you're trying to kill them all in horrifically graphic fashion?<br>]\n(click-replace: ?r6)[<br>You left your smoke bombs in your dorm, unfortunately.<br>]\n(click-replace: ?r7)[<br>Too much work. Humans can be the wooooooorst.<br>]\n(click-replace: ?r8)[<br>Where are you going to find yak blood and petrified pterodactyl feathers at this hour?<br>]\n(click-replace: ?r9)[<br>You haven't exactly been on the best terms with Beartimus after you [summoned Bearthulhu at senior prom.]<a2|<br>(click: ?a2)[(It was totally worth it.)<br>]]\n(click-replace: ?r10)[<br>That might look like you're going into attack position.<br>]\n(click-replace: ?r12)[<br>It occurs to you that they might have difficulty catching you if you fell backward - the pale, nervous one, especially.]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 10",
+            "pid": 98
+          }
+        },
+        {
+          "text": ">CHANGE YOUR NAME, GROW A BEARD, AND LIVE OUT YOUR LIFE IN BEAR COUNTRY",
+          "destination": {
+            "name": "BEAR RELOCATION PROGRAM",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "BEAR RELOCATION PROGRAM",
+      "text": "(if: $bearCountryN is 0)[(transition: \"dissolve\")[...Wait, you seriously want to [retire to *Bear Country?*]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[It's [dangerous there!]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[That's *''why they call it [Bear Country.]<c3|''*]]](if: $bearCountryN is 1)[(transition: \"dissolve\")[Are you sure you want to [retire to Bear Country?]<c2|\n\n(click: ?c2)[(transition: \"dissolve\")[That's a big step, with a lot of [potential difficulties.]<c3|]]]]\n\n(click: ?c3)[[[>IT CAN'T BE WORSE THAN STAYING HERE, RIGHT?|BEAR COUNTRY ENDING]]\n[[>HECK YEAH BEAR COUNTRY|BEAR COUNTRY ENDING]]\n(if: $bearCountryN is 0)[[[>WAIT--YOU'RE SAYING BEAR COUNTRY IS DANGEROUS JUST BECAUSE IT HAS 'BEAR' ATTACHED?|BEARACIST]]]<br>[[>ON SECOND THOUGHT...|FACILITY BEAR MEETING 10]]]",
+      "links": [
+        {
+          "text": ">IT CAN'T BE WORSE THAN STAYING HERE, RIGHT?",
+          "destination": {
+            "name": "BEAR COUNTRY ENDING",
+            "pid": 99
+          }
+        },
+        {
+          "text": ">HECK YEAH BEAR COUNTRY",
+          "destination": {
+            "name": "BEAR COUNTRY ENDING",
+            "pid": 99
+          }
+        },
+        {
+          "text": ">WAIT--YOU'RE SAYING BEAR COUNTRY IS DANGEROUS JUST BECAUSE IT HAS 'BEAR' ATTACHED?",
+          "destination": {
+            "name": "BEARACIST",
+            "pid": 100
+          }
+        },
+        {
+          "text": ">ON SECOND THOUGHT...",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 10",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "FACILITY BEAR MEETING 10",
+      "text": "(display: \"TWO FEET\")\n(live: 1.3s)[(stop:)(transition: \"dissolve\")[Before you or one of the more level-headed humans on the other side of the room can do anything, the pale, nervous human takes a deep breath and [launches himself towards you.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[It sounds a little like [this.]<c2|]]\n\n(click: ?c2)[<big>(transition: \"shudder\")[(text-style: \"expand\")[*[\"EEeEEWooWOWOWHOAAaaAAaUgAHiAUAAaAEeEEEE\"]<c3|*]]</big>]\n\n(click: ?c3)[(transition: \"dissolve\")[This has no meaning in [any known language.]<c4|]]\n\n(click: ?c4)[[[>HEY, HOLD ON A MINUTE--|FACILITY BEAR MEETING 11]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "TWO FEET",
+            "pid": 111
+          }
+        },
+        {
+          "text": ">HEY, HOLD ON A MINUTE--",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 11",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "BEAR COUNTRY ENDING",
+      "text": "(transition: \"dissolve\")[Through a series of adventures and coincidences too numerous to mention, you find yourself with a new identity in [[Bear Country.]<c1|]<c2|]\n\n(click: ?c1)[(A heavily wooded area of the Continental United States.)]\n\n(click: ?c2)[(transition: \"dissolve\")[It's [pretty nice.]<c3|]]\n\n(click: ?c3)[[[>DO TELL|BEAR COUNTRY ENDING 2]]]",
+      "links": [
+        {
+          "text": ">DO TELL",
+          "destination": {
+            "name": "BEAR COUNTRY ENDING 2",
+            "pid": 112
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "BEARACIST",
+      "text": "(transition: \"dissolve\")[Well, no offense to those animals, but that's the [generally accepted meaning.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[[[>...NOW I'M ONE OF *THOSE ANIMALS?*|BEARACIST 2]]]]",
+      "links": [
+        {
+          "text": ">...NOW I'M ONE OF *THOSE ANIMALS?*",
+          "destination": {
+            "name": "BEARACIST 2",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "FACILITY BEAR MEETING 11",
+      "text": "(transition: \"dissolve\")[He slams into your stomach head-first, and after recovering from the initital shock, begins pounding the sides of your Bear Body [with his fists.]<b1|]\n\n(click: ?b1)[(transition: \"dissolve\")[This has [no effect whatsoever.]<c1|]]\n\n(click: ?c1)[(transition: \"shudder\")[NERVOUS HUMAN: NO ONE ELSE IS GOING TO [DIE TODAY, BEAR!]<c2|]]\n\n(click: ?c2)[MOP-HAIRED HUMAN shouts from [across the room.]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[MOP-HAIRED HUMAN: You do realize that statement would apply to the Bear [too, right?]<c4|]]\n\n(click: ?c4)[NERVOUS HUMAN: [NOT HELPING, BAILEY!]<c5|]\n\n(click: ?c5)[(transition: \"dissolve\")[(link: \">PAT THE NERVOUS HUMAN\")[(set: $patBear to 1)(go-to: \"FACILITY BEAR MEETING 12\")]\n[[>LET THE NERVOUS HUMAN TIRE ITSELF OUT|FACILITY BEAR MEETING 12]]\n(link: \">WAVE AT THE OTHER HUMANS AGAIN\")[(set: $waveBear2 to 1)(go-to: \"FACILITY BEAR MEETING 12\")]]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 12",
+            "pid": 115
+          }
+        },
+        {
+          "text": ">LET THE NERVOUS HUMAN TIRE ITSELF OUT",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 12",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "BEARACIST 2",
+      "text": "(transition: \"dissolve\")[Well no, I [mean...]<b1|]\n(click: ?b1)[You're not like [*those* bears.]<b2|]\n(click: ?b2)[You're [one of the good ones.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[[[>...THE 'GOOD' ONES.|BEARACIST 3]]]]",
+      "links": [
+        {
+          "text": ">...THE 'GOOD' ONES.",
+          "destination": {
+            "name": "BEARACIST 3",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "BEARACIST 3",
+      "text": "(transition: \"dissolve\")[Look, you know I didn't mean...You know, anything *[offensive.]<c1|*]\n\n(click: ?c1)[(transition: \"dissolve\")[[[>*SURE* YOU DIDN'T.|BEARACIST 4]]]]",
+      "links": [
+        {
+          "text": ">*SURE* YOU DIDN'T.",
+          "destination": {
+            "name": "BEARACIST 4",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "BEARACIST 4",
+      "text": "Come on--one of my best friends in kindergarten was [a Bear!]<c1|\n\n(click: ?c1)[[I love Bears!]<c2|]\n\n(click: ?c2)[[Honest!]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[[[>UH-HUH.|BEARACIST 5]]]]",
+      "links": [
+        {
+          "text": ">UH-HUH.",
+          "destination": {
+            "name": "BEARACIST 5",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "BEARACIST 5",
+      "text": "<big>(transition: \"pulse\")[HELLO, [DEAR PLAYER]<c1|]</big>\n\n(click: ?c1)[(transition: \"dissolve\")[[[>HELLO, EXCITED ANNOUNCER PERSON! I HAVEN'T SEEN YOU IN OVER 100 PAGES.|BEARACIST 6]]]]",
+      "links": [
+        {
+          "text": ">HELLO, EXCITED ANNOUNCER PERSON! I HAVEN'T SEEN YOU IN OVER 100 PAGES.",
+          "destination": {
+            "name": "BEARACIST 6",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "BEARACIST 6",
+      "text": "<big>(transition: \"pulse\")[IT HAS BEEN [A WHILE]<c1|]\n\n(click: ?c1)[(transition: \"pulse\")[[GOOD TIMES]<c2|]]</big>\n\n(click: ?c2)[[[>THE BEST|BEARACIST 7]]\n[[>THEY WERE ALRIGHT|BEARACIST 7]]\n[[>NOT REALLY|BEARACIST 6 SAD]]]",
+      "links": [
+        {
+          "text": ">THE BEST",
+          "destination": {
+            "name": "BEARACIST 7",
+            "pid": 107
+          }
+        },
+        {
+          "text": ">THEY WERE ALRIGHT",
+          "destination": {
+            "name": "BEARACIST 7",
+            "pid": 107
+          }
+        },
+        {
+          "text": ">NOT REALLY",
+          "destination": {
+            "name": "BEARACIST 6 SAD",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "BEARACIST 7",
+      "text": "<big>(if: $Mean is 1)[(if: $justHonest is 1)[(transition: \"pulse\")[I [APPRECIATE THAT]<m1|]](if: $justSorry is 1)[(transition: \"pulse\")[IT'S [OKAY]<m1|]]\n\n(click: ?m1)[(transition: \"pulse\")[I AM HAPPY TO SAY THAT THE TEMPORARY NARRATOR FOR THE 'BEAR COUNTRY RETIREMENT' CHOICE HAS AGREED TO SUBMIT TO VOLUNTARY [BEAR SENSITIVITY TRAINING]<c1|]](if: $Mean is 0)[(transition: \"pulse\")[I AM HAPPY TO SAY THAT THE TEMPORARY NARRATOR FOR THE 'BEAR COUNTRY RETIREMENT' CHOICE HAS AGREED TO SUBMIT TO VOLUNTARY [BEAR SENSITIVITY TRAINING]<c1|]]]\n\n(click: ?c1)[(transition: \"pulse\")[IF YOU CHOOSE TO PURSUE THIS CHOICE AGAIN, YOUR REGULAR NARRATOR WILL BE HANDLING YOUR BEARVENTURE [EXPERIENCE]<c2|]]\n\n(click: ?c2)[(transition: \"pulse\")[IF YOU INSTEAD CHOOSE TO MOVE IN ANOTHER DIRECTION, YOUR REGULAR NARRATOR WILL CONTINUE TO HANDLE [ANY NARRATING DUTIES]<c3|]]</big>\n\n(click: ?c3)[(transition: \"dissolve\")[[[>I'D LIKE TO MOVE FORWARD IN THE MAIN STORY - THANKS|BEARACIST 8 CONTINUE]]\n[[>THANK YOU - I'D LIKE TO TRY THE RETIREMENT CHOICE AGAIN, IF YOU DON'T MIND|BEARACIST 8 GO BACK]]]]",
+      "links": [
+        {
+          "text": ">I'D LIKE TO MOVE FORWARD IN THE MAIN STORY - THANKS",
+          "destination": {
+            "name": "BEARACIST 8 CONTINUE",
+            "pid": 109
+          }
+        },
+        {
+          "text": ">THANK YOU - I'D LIKE TO TRY THE RETIREMENT CHOICE AGAIN, IF YOU DON'T MIND",
+          "destination": {
+            "name": "BEARACIST 8 GO BACK",
+            "pid": 110
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "BEARACIST 6 SAD",
+      "text": "<big>(transition: \"pulse\")[[THAT]<c1|]\n\n(click: ?c1)[(transition: \"pulse\")[THAT [HURTS A BIT]<c2|]]</big>\n\n(click: ?c2)[(link: \">JUST BEING HONEST\")[(set: $justHonest to 1)(go-to: \"BEARACIST 7\")]\n(link: \">SORRY, ANNOUNCER PERSON\")[(set: $justSorry to 1)(go-to: \"BEARACIST 7\")]]\n\n(set: $Mean to 1)",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "BEARACIST 7",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "BEARACIST 8 CONTINUE",
+      "text": "<big>(transition: \"pulse\")[[DON'T MENTION IT]<c1|]</big>\n\n(click: ?c1)[[[>MOVE FORWARD|FACILITY BEAR MEETING 10]]]",
+      "links": [
+        {
+          "text": ">MOVE FORWARD",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 10",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "BEARACIST 8 GO BACK",
+      "text": "<big>(transition: \"pulse\")[[DON'T MENTION IT]<c1|]</big>\n\n(click: ?c1)[[[>MOVE FORWARD|BEAR RELOCATION PROGRAM]]]\n\n(set: $bearCountryN to 1)",
+      "links": [
+        {
+          "text": ">MOVE FORWARD",
+          "destination": {
+            "name": "BEAR RELOCATION PROGRAM",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "TWO FEET",
+      "text": "(align: \"=><=\")[<h3>TWO FEET AWAY...</h3>]\n---",
+      "links": []
+    },
+    {
+      "pid": 112,
+      "name": "BEAR COUNTRY ENDING 2",
+      "text": "(transition: \"dissolve\")[You're the only Bear in the area who [can speak.]<c1|]\n\n(click: ?c1)[Or who [wears clothes.]<c2|]\n\n(click: ?c2)[Or who can think [beyond its next meal.]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[This made initial introductions a bit weird, but everyone got [used to it eventually.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[[[>WELL THAT'S NICE|BEAR COUNTRY ENDING 3]]]]\n\n",
+      "links": [
+        {
+          "text": ">WELL THAT'S NICE",
+          "destination": {
+            "name": "BEAR COUNTRY ENDING 3",
+            "pid": 113
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "BEAR COUNTRY ENDING 3",
+      "text": "(transition: \"dissolve\")[You spend your days exploring fragrant forests, growing a beard, fishing, and whittling a toilet out of wood so you can finally take [a civilized trip to the bathroom.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[In time, you finally find a sight to surpass the waterfalls you [saw as a Bear Child.]<c2|]]\n(click: ?c2)[(transition: \"dissolve\")[You visit it [every day.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[Your life is a bit [boring]<c4|, to be honest.]]\n\n(click: ?c4)[[[>I LIKE IT THAT WAY|BEAR COUNTRY ENDING 4]]]",
+      "links": [
+        {
+          "text": ">I LIKE IT THAT WAY",
+          "destination": {
+            "name": "BEAR COUNTRY ENDING 4",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "BEAR COUNTRY ENDING 4",
+      "text": "(align: \"=><=\")[<h1>(transition: \"dissolve\")[***[[~FIN~|CREDITS]]***]</h1>]\n\n\n(align: \"=><=\")[<small>[[(GO BACK)|FACILITY BEAR MEETING 9]]</small>]\n\n(set: $seenEnding to 1)",
+      "links": [
+        {
+          "text": "~FIN~",
+          "destination": {
+            "name": "CREDITS",
+            "pid": 27
+          }
+        },
+        {
+          "text": "(GO BACK)",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 9",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "FACILITY BEAR MEETING 12",
+      "text": "(transition: \"dissolve\")[This has been a very strange day for [Carla.]<c1|]\n\n(click: ?c1)[She saw a coworker killed in a freak [Bear accident.]<b1|]\n(click: ?b1)[She watched her colleagues become friends, become enemies, and [then become friends again.]<b2|]\n(click: ?b2)[She looked into the eyes of a Bear, waved at it, and saw it [wave back.]<b3|]\n(click: ?b3)[She felt the slight tremble in the drywall as Jonathan pushed off of it to [throw himself at the Bear.]<b4|]\n(click: ?b4)[She heard Bailey gasp as his frenemy did something [indescribably stupid.]<q1|]\n\n(click: ?q1)[(transition: \"dissolve\")[And [now?]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[Now, she's questioning the shouting and *vast silliness* of the entire day as the Bear (if: $patBear is 1)[pats her [exhausted friend's head.]<c3|](if: $waveBear2 is 1)[lets her exhausted friend lean against [its gigantic body.]<a1|](if: $patBear is 0)[(if: $waveBear2 is 0)[loosely hugs her [exhausted friend.]<c3|]]]](click: ?a1)[<br><br>(transition: \"dissolve\")[It's waving at her [again.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[[[>CARLA COMES TO A CONCLUSION|FACILITY BEAR MEETING 13]]]]",
+      "links": [
+        {
+          "text": ">CARLA COMES TO A CONCLUSION",
+          "destination": {
+            "name": "FACILITY BEAR MEETING 13",
+            "pid": 116
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "FACILITY BEAR MEETING 13",
+      "text": "(display: \"NOT EVEN TRYING\")\n(live: 1.9s)[(stop:)(transition: \"dissolve\")[CARLA: [Guys?]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[JONATHAN speaks drunkenly through a mat [of wet Bear Fur.]<c2|]]\n\n<small>(click: ?c2)[(transition: \"dissolve\")[JONATHAN: I'm a little busy [here, Carla.]<c3|]]</small>\n\n(click: ?c3)[CARLA: [Let it go.]<a1|] (click: ?a1)[(transition: \"dissolve\")[[We're...]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[CARLA: I think [we're safe.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[BAILEY: So you're [saying it's...]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[[...]<b3|]]\n(click: ?b3)[BAILEY: ***[<big>BEAR</big>LY]<a2|***] (click: ?a2)[(transition: \"dissolve\")[a [threat?]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[CARLA: [Really?]<c6|]]\n\n(click: ?c6)[(transition: \"shudder\")[BAILEY: PUNS ARE HOW I COPE WITH [THE VOID, OKAY?]<c7|]]\n\n(click: ?c7)[(transition: \"dissolve\")[[[>PLAN|ESCAPE PLAN]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "NOT EVEN TRYING",
+            "pid": 118
+          }
+        },
+        {
+          "text": ">PLAN",
+          "destination": {
+            "name": "ESCAPE PLAN",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "ESCAPE PLAN",
+      "text": "(transition: \"dissolve\")[With the nervous human (who you've come to learn is named Jonathan) resting in a nearby chair, it seems you're all in a position to finally find a way [off of this island.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[As a Rational Bear, what will you [suggest to the group?]<c2|]]\n\n(click: ?c2)[[[>SUGGEST ESCAPE|ESCAPE PLAN 2]]\n[[>SUGGEST TEA PARTY|TEA TIME]]\n[[>SUGGEST STAYING ON THE ISLAND|STAY PLAN]]]\n\n",
+      "links": [
+        {
+          "text": ">SUGGEST ESCAPE",
+          "destination": {
+            "name": "ESCAPE PLAN 2",
+            "pid": 120
+          }
+        },
+        {
+          "text": ">SUGGEST TEA PARTY",
+          "destination": {
+            "name": "TEA TIME",
+            "pid": 119
+          }
+        },
+        {
+          "text": ">SUGGEST STAYING ON THE ISLAND",
+          "destination": {
+            "name": "STAY PLAN",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "NOT EVEN TRYING",
+      "text": "(align: \"=><=\")[<h3>I'M NOT EVEN GOING TO TRY MEASURING DISTANCES AT THIS POINT</h3>]\n---",
+      "links": []
+    },
+    {
+      "pid": 119,
+      "name": "TEA TIME",
+      "text": "(transition: \"dissolve\")[Through a complex series of hand motions and eyebrow wiggles, you manage to communicate that you believe tea is needed before making such [a major decision.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[In spite of their [initital concerns]<a1|(click: ?a1)[ (including Bailey's insistence on coffee)], the humans actually [agree with you.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[Recognizing your negative experiences in the cafeteria, Carla suggests you all use the staff [break room instead.]<c3|]]\n\n(click: ?c3)[This is how three frazzled humans and a Bear ended up celebrating the discovery of a usable electric kettle, in a tiny room, in a foam disc-gun manufacturing Facility, in the middle [of the Pacific Ocean.]<c4|]\n\n(click: ?c4)[[[>TEA TIME|TEA TIME CHOICE]]]",
+      "links": [
+        {
+          "text": ">TEA TIME",
+          "destination": {
+            "name": "TEA TIME CHOICE",
+            "pid": 123
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "ESCAPE PLAN 2",
+      "text": "(transition: \"dissolve\")[Your vigorous motions suggesting escape and/or changing your identities are gradually recognized and [accepted by the group.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[Walking through the halls together, CARLA begins telling you how life [used to be here.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[She points out the equipment used to make foam disc-guns, and how many employees were replaced once most of the [process was automated.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[JONATHAN explains how hard it was to tell the staff of over three hundred that they had been made obsolete. The drain of returning to a now-empty communal [dorm.]<c3|]]\n\n(click: ?c3)[BAILEY takes a moment to tell you about Clark - a nice guy who was a bit too obsessed with making sure the robots had [done their jobs.]<b2|]\n(click: ?b2)[(transition: \"dissolve\")[Which is, of course, how he ended up breaking your fall in an [empty warehouse.]<c4|]]\n\n(click: ?c4)[You apologize about landing [on him(if: $underCover is 1)[ and taking his face].]<c5|]\n\n(click: ?c5)[(transition: \"dissolve\")[The team doesn't hold it against you, but they [do appreciate the sentiment.]<c6|]]\n\n(click: ?c6)[(transition: \"dissolve\")[[[>ALMOST THERE|ESCAPE PLAN 3]]]]",
+      "links": [
+        {
+          "text": ">ALMOST THERE",
+          "destination": {
+            "name": "ESCAPE PLAN 3",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "STAY PLAN",
+      "text": "(transition: \"dissolve\")[Using a complex series of motions (and some frantic pointing), you manage to ask the group why [they even *have* to leave.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[CARLA: After everything I learned about the Facility today, I'd prefer not [to stick around.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[CARLA: Of course it was always *weird*, but that was easier to ignore when everyone was off in [their own bubbles.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[CARLA pulls a corner of her mouth into a grim [smirk.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[CARLA: I guess it takes a bear falling through your ceiling to [give you some perspective.]<c4|]]\n(click: ?c4)[CARLA: How about you, Jon? Want to [stay here?]<c5|]\n\n(click: ?c5)[JONATHAN is still shaking from the cold shower of the sprinklers, and [his attack on you a few minutes ago.]<c6|]\n\n(click: ?c6)[JONATHAN: [I'm...]<a1|](click: ?a1)[(transition: \"dissolve\")[I'm not sure I'm in the best place to make [decisions right now.]<c7|]]\n\n(click: ?c7)[CARLA: That's understandable. [Bailey?]<c8|]\n\n(click: ?c8)[BAILEY: Seriously? No [puns?]<c9|]\n\n(click: ?c9)[CARLA: [Please.]<c10|]\n\n(click: ?c10)[(transition: \"dissolve\")[BAILEY sighs and [shrugs.]<c11|]]\n\n(click: ?c11)[(transition: \"dissolve\")[BAILEY: Today was certainly *odd*, but I'm not sure I care [''where'' I go.]<b2|]]\n(click: ?b2)[BAILEY: I'm with [you guys.]<b3|]\n\n(click: ?b3)[(transition: \"dissolve\")[CARLA turns to face you with a thin, tired [smile.]<c12|]]\n\n(click: ?c12)[(transition: \"dissolve\")[CARLA: Do you want to [sta--]<c13|]]\n\n<h2>(click: ?c13)[(transition: \"shudder\")[[[>*BOOM*|ESCAPE BOOM]]]]</h2>",
+      "links": [
+        {
+          "text": ">*BOOM*",
+          "destination": {
+            "name": "ESCAPE BOOM",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "ESCAPE BOOM",
+      "text": "You race to the front of the facility to find a gaping hole [above the]<a1| (click: ?a1)[(unused and very unnnecessary)] [reception desk.]<c1|\n\n(click: ?c1)[(transition: \"dissolve\")[Hovering in the patch of blue sky is an [attack helicopter.]<c2|]]\n\n(click: ?c2)[It appears to be piloted by a frail old woman, with a shock of white hair barely restrained [by her helmet.]<c3|]\n\n(click: ?c3)[She looks [pissed.]<c4|]\n\n(click: ?c4)[<big>(text-style: \"rumble\")[\"LOOK AT WHAT YOU MADE ME DO TO [MY BUSINESS]<a2|\"]</big>] (click: ?a2)[(transition: \"dissolve\")[she screams into the craft's [public address system.]<c5|]]\n\n(click: ?c5)[[[>*RUN*|BOOM]]]",
+      "links": [
+        {
+          "text": ">*RUN*",
+          "destination": {
+            "name": "BOOM",
+            "pid": 129
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "TEA TIME CHOICE",
+      "text": "<h3>(transition: \"dissolve\")[[[>CHOOSE TEA|TEA TIME 2]]\n\n\n[[>CHOOSE COFFEE|COFFEE TIME 2]]]</h3>",
+      "links": [
+        {
+          "text": ">CHOOSE TEA",
+          "destination": {
+            "name": "TEA TIME 2",
+            "pid": 125
+          }
+        },
+        {
+          "text": ">CHOOSE COFFEE",
+          "destination": {
+            "name": "COFFEE TIME 2",
+            "pid": 124
+          }
+        }
+      ]
+    },
+    {
+      "pid": 124,
+      "name": "COFFEE TIME 2",
+      "text": "<h3>(transition: \"dissolve\")[[>ADD CREAM]<r1|\n[>ADD SUGAR]<r2|\n[>ADD LIGHTER FLUID]<r3|\n[>ADD CREAMER]<r4|\n[>ADD HONEY]<r5|\n[>ADD BUTTERED TOAST]<r6|\n[>ADD BATTERY ACID]<r7|\n[>ADD PEPPERONI]<r8|\n[>ADD MILK]<r9|\n[>ADD ICE]<r10|\n\n\n[[>DRINK COFFEE|TEA COFFEE UNIVERSE]]\n[[>DRINK COFFEE RELUCTANTLY|TEA COFFEE UNIVERSE]]]</h3>\n\n(click-replace: ?r1)[You add cream to your coffee.<br>]\n(click-replace: ?r2)[<br>You add a massive spoonful of sugar to your coffee.<br>]\n(click-replace: ?r3)[<br>You need your coffee strong. You add lighter fluid to it.<br>]\n(click-replace: ?r4)[<br>You add a splash of creamer to your coffee.<br>]\n(click-replace: ?r5)[<br>You add a delicate half-spoonful of honey to your coffee, and stir it in.<br>]\n(click-replace: ?r6)[<br>You find a way to get the toaster working again, prepare toast, butter it, and promptly drop it [into your coffee.]<a1|<br>(click: ?a1)[(transition: \"dissolve\")[This is far from the strangest thing you've done today.<br>]]]\n(click-replace: ?r7)[<br>MUST. MAKE COFFEE. STRONGER.<br>]\n(click-replace: ?r8)[<br>Mmmmmmm. Pepperoni.<br>]\n(click-replace: ?r9)[<br>You add a small splash of milk to your coffee.<br>]\n(click-replace: ?r10)[<br>You add ice to your coffee - just as the Spider God intended.]",
+      "links": [
+        {
+          "text": ">DRINK COFFEE",
+          "destination": {
+            "name": "TEA COFFEE UNIVERSE",
+            "pid": 126
+          }
+        },
+        {
+          "text": ">DRINK COFFEE RELUCTANTLY",
+          "destination": {
+            "name": "TEA COFFEE UNIVERSE",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "TEA TIME 2",
+      "text": "<h3>(transition: \"dissolve\")[[>ADD CREAM]<r1|\n[>ADD CREAMER]<r2|\n[>ADD SUGAR]<r3|\n[>ADD FIRE]<r4|\n[>ADD HONEY]<r5|\n[>ADD LEMON]<r6|\n[>ADD DRAGON TEARS]<r7|\n[>ADD MILK]<r8|\n[>ADD CINNAMON]<r9|\n[>ADD GINGER]<r10|\n[>ADD ICE]<r11|\n\n\n[[>DRINK TEA|TEA COFFEE UNIVERSE]]\n[[>DRINK TEA RELUCTANTLY|TEA COFFEE UNIVERSE]]]</h3>\n\n(click-replace: ?r1)[You add cream to your tea.<br>]\n(click-replace: ?r2)[<br>For some reason, you add creamer to your tea.<br>]\n(click-replace: ?r3)[<br>You add a massive spoonful of sugar to your tea.<br>]\n(click-replace: ?r4)[<br>No one knows how you managed to do it, but you set your tea on fire.<br>]\n(click-replace: ?r5)[<br>You add a delicate spoonful of honey to your tea, and stir it in.<br>]\n(click-replace: ?r6)[<br>You take a spare lemon from the refrigerator, and squeeze a slice into your tea.<br>]\n(click-replace: ?r7)[<br>After asking Bailey what he's giggling about, you learn that the *'Dragon Tears'* you added to your tea is actually mislabeled corn syrup.<br>]\n(click-replace: ?r8)[<br>You add a small splash of milk to your tea.<br>]\n(click-replace: ?r9)[<br>You add a dash of cinnamon to your tea.<br>]\n(click-replace: ?r10)[<br>You drop an enormous ginger root into your tea.<br>]\n(click-replace: ?r11)[<br>You add ice to your tea - just as the Spider God intended.]",
+      "links": [
+        {
+          "text": ">DRINK TEA",
+          "destination": {
+            "name": "TEA COFFEE UNIVERSE",
+            "pid": 126
+          }
+        },
+        {
+          "text": ">DRINK TEA RELUCTANTLY",
+          "destination": {
+            "name": "TEA COFFEE UNIVERSE",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "TEA COFFEE UNIVERSE",
+      "text": "(transition: \"dissolve\")[For a brief moment, just before you raise your glass to your lips, you can feel the Universe judging your [beverage choices.]<c1|]\n\n(click: ?c1)[[[>SIP|TEA CONVO]]]",
+      "links": [
+        {
+          "text": ">SIP",
+          "destination": {
+            "name": "TEA CONVO",
+            "pid": 127
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "TEA CONVO",
+      "text": "(transition: \"dissolve\")[You and BAILEY are about to move onto your third cups when CARLA [clears her throat.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[CARLA: So, has anyone thought about where they want to [go from here?]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[[...]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[JONATHAN: I'm--I'm not sure I'm in the best place to [make decisions right now.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[CARLA: That's understandable. [Bailey?]<c5|]]\n\n(click: ?c5)[BAILEY: Seriously? No [puns?]<c6|]\n\n(click: ?c6)[CARLA: [Please.]<c7|]\n\n(click: ?c7)[(transition: \"dissolve\")[BAILEY sighs and shrugs his [shoulders apologetically.]<c8|]]\n\n(click: ?c8)[BAILEY: I mean, today was certainly *odd*, but I'm not sure I care [''where'' I go.]<a1|] (click: ?a1)[(transition: \"dissolve\")[I'm with [you guys.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[BAILEY: What were [you thinking?]<c9|]]\n\n(click: ?c9)[CARLA: I wanted to get everyone's opinion [first.]<c10|]\n\n(click: ?c10)[CARLA turns to you with a thin, tired [smile.]<c11|]\n\n(click: ?c11)[(transition: \"dissolve\")[CARLA: How about [you, Bear?]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[CARLA: Know where [you want t--]<c12|]]\n\n<h2>(click: ?c12)[(transition: \"shudder\")[[[>*BOOM*|ESCAPE BOOM]]]]</h2>",
+      "links": [
+        {
+          "text": ">*BOOM*",
+          "destination": {
+            "name": "ESCAPE BOOM",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "ESCAPE PLAN 3",
+      "text": "(transition: \"dissolve\")[CARLA barely has time to tell you that you're nearing the combined entrance/exit before a massive explosion rocks the front of the facility, and throws you [all to the ground.]<c1|]\n\n<h2>(click: ?c1)[(transition: \"shudder\")[[[>*BOOM*|ESCAPE BOOM]]]]</h2>",
+      "links": [
+        {
+          "text": ">*BOOM*",
+          "destination": {
+            "name": "ESCAPE BOOM",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 129,
+      "name": "BOOM",
+      "text": "(transition: \"dissolve\")[You knock down the front door for the humans and sprint down the beach on all-fours, all while being berated by [the helicopter following your ragged band.]<c1|]\n\n(click: ?c1)[<big>(text-style: \"rumble\")[\"I DIDN'T SPEND YEARS MAKING THIS BUILDING WHAT IT IS SO YOU COULD RUN WILD WITH YOUR (color: purple)[TRANQUILIZER] (color: red)[DRUGS] AND [YOUR SPRINKLERS]<c2|\"]</big>]\n\n(click: ?c2)[(transition: \"dissolve\")[BAILEY: Hey, it worked with the Bear - why don't we try [talking to her?!]<c3|]]\n\n(click: ?c3)[A burst of gunfire to your left sends sand flying into the air, stinging [your throat and lungs.]<b1|]\n\n(click: ?b1)[(transition: \"dissolve\")[CARLA shoots BAILEY a brief [Look.]<c5|]]\n\n(click: ?c5)[<big>(transition: \"dissolve\")[(text-style: \"rumble\")[\"BUT NOOOOO EVEN WHEN ROBOTS ARE PRACTICALLY DOING YOUR JOBS YOU STILL INVITE YOUR WILD ANIMAL FRIENDS AND [WRECK MY PROPERTY]<c6|\"]]</big>]\n\n(click: ?c6)[(transition: \"dissolve\")[JONATHAN: Hey, uh, [Bear?]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[JONATHAN: I know this is a bad time...but can [I ride on your back?]<c7|]]\n\n(click: ?c7)[[[>LET JONATHAN RIDE YOUR BACK|JONATHAN BOOM]]\n[[>POLITELY REFUSE|BOOM 2]]]",
+      "links": [
+        {
+          "text": ">LET JONATHAN RIDE YOUR BACK",
+          "destination": {
+            "name": "JONATHAN BOOM",
+            "pid": 130
+          }
+        },
+        {
+          "text": ">POLITELY REFUSE",
+          "destination": {
+            "name": "BOOM 2",
+            "pid": 131
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "JONATHAN BOOM",
+      "text": "(transition: \"dissolve\")[Immediately after climbing on your back, JONATHAN goes [Mad With Power.]<c1|]\n\n(click: ?c1)[(transition: \"shudder\")[JONATHAN: ''*I AM BECOME [JONATHAN]<b1|*'']]\n(click: ?b1)[(transition: \"shudder\")[JONATHAN: ''*HAR-<big>BEAR</big>-GER [OF DESTRUCTION]<b2|*'']]\n(click: ?b2)[(transition: \"shudder\")[JONATHAN: ''*HERALD OF THE [<big>BEARPOCALYPSE</big>]<b3|*'']]\n\n(click: ?b3)[JONATHAN: ''*LORD OF THE TERROR AND THE [FURRY]<c2|*'']\n\n(click: ?c2)[[[>REMOVE JONATHAN FROM YOUR BACK FOR HIS OWN SAKE|BOOM 2]]]",
+      "links": [
+        {
+          "text": ">REMOVE JONATHAN FROM YOUR BACK FOR HIS OWN SAKE",
+          "destination": {
+            "name": "BOOM 2",
+            "pid": 131
+          }
+        }
+      ]
+    },
+    {
+      "pid": 131,
+      "name": "BOOM 2",
+      "text": "(transition: \"dissolve\")[CARLA shouts and points towards a small point in the distance as you all continue [sprinting down the beach.]<c1|]\n\n(click: ?c1)[CARLA: It's [a boat!]<b1|]\n(click: ?b1)[CARLA: At the end of the beach! There's a pier! [There's a boat!]<c2|]\n\n(click: ?c2)[<big>(text-style: \"rumble\")[\"DO YOU HAVE ANY IDEA HOW EXPENSIVE [MISSILES ARE?]<b2|\"]</big>]\n(click: ?b2)[<big>(text-style: \"rumble\")[\"I'M LITERALLY SHOOTING [YOUR 401KS]<c3|\"]</big>]\n\n(click: ?c3)[BAILEY: You [*monster!*]<c4|]\n\n(click: ?c4)[<big>(text-style: \"rumble\")[\"''WHAT'' DID YOU JUST [CALL ME?]<c5|\"]</big>]\n\n(click: ?c5)[BAILEY: I - I didn't [mean--]<c6|]\n\n(click: ?c6)[<big>(transition: \"dissolve\")[(text-style: \"rumble\")[\"OH I KNOW *EXACTLY* [WHAT YOU MEANT]<c7|\"]]</big>]\n\n(click: ?c7)[CARLA: Why did you [say that?!]<c8|]\n\n(click: ?c8)[BAILEY: I didn't know she [could hear me!]<c9|]\n\n(click: ?c9)[(transition: \"dissolve\")[The last thing you remember is another missile screaming from the sky into the dry sand behind you, and a feeling like [falling.]<c10|]]\n\n\n(click: ?c10)[(live: 2s)[(stop:)(text-style: \"fade-in-out\")[[[>FALLING|BOOM FLASHBACK]]]]]",
+      "links": [
+        {
+          "text": ">FALLING",
+          "destination": {
+            "name": "BOOM FLASHBACK",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "BOOM FLASHBACK",
+      "text": "(display: \"THE PAST\")\n(live: 1s)[(stop:)(transition: \"dissolve\")[Your heart-to-heart with Bear Dad has descended into a barely-restrained [screaming match.]<c1|]]\n\n(click: ?c1)[<big>(font: \"Times New Roman\")[(transition: \"shudder\")[\"You think I tell you this [because I don't love you?!]<b1|\"]]</big>]\n(click: ?b1)[<big>(font: \"Times New Roman\")[(transition: \"dissolve\")[\"This isn't a game! You can't reset this. You can't keep changing and changing and going over your choices and [*somehow* succeed.]<b2|\"]]</big>]\n(click: ?b2)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"...If you keep wasting bits and pieces of your life like it doesn't matter, you're ''[going to fail.]<c2|''\"]]]\n\n\n(click: ?c2)[[[>\"I'M NOT GOING TO FAIL, DAD\"|BOOM FLASHBACK 2]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">\"I'M NOT GOING TO FAIL, DAD\"",
+          "destination": {
+            "name": "BOOM FLASHBACK 2",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 133,
+      "name": "BOOM FLASHBACK 2",
+      "text": "(display: \"THE PAST\")\n(live: 0.2s)[(stop:)(transition: \"dissolve\")[Bear Dad crosses his arms, smirking, and [cocks an eyebrow.]<c1|]]\n\n(click: ?c1)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"You're not going to fail, [hmm?]<b1|\"]]]\n(click: ?b1)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"What magic major are you going to choose to [avoid *that* happening?]<c2|\"]]]\n\n\n(click: ?c2)[(transition: \"dissolve\")[[[>CHOOSE MAJOR|BOOM FLASHBACK 3]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">CHOOSE MAJOR",
+          "destination": {
+            "name": "BOOM FLASHBACK 3",
+            "pid": 134
+          }
+        }
+      ]
+    },
+    {
+      "pid": 134,
+      "name": "BOOM FLASHBACK 3",
+      "text": "<big><big>(link: \">ENGLISH\")[(set: $engMajor to 1)(go-to: \"BOOM 3\")]\n(link: \">PSYCHOLOGY\")[(set: $psyMajor to 1)(go-to: \"BOOM 3\")]\n(link: \">THEATRE\")[(set: $theMajor to 1)(go-to: \"BOOM 3\")]\n(link: \">PHILOSOPHY\")[(set: $phiMajor to 1)(go-to: \"BOOM 3\")]\n(link: \">HISTORY\")[(set: $hisMajor to 1)(go-to: \"BOOM 3\")]\n\n(link: \">I DON'T KNOW AND ACTUALLY SERIOUSLY REGRET THE CHOICES I HAVE MADE DURING THIS PERIOD OF MY LIFE\")[(set: $regretBear to 1)(go-to: \"BOOM 3\")]</big></big>",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "BOOM 3",
+            "pid": 135
+          }
+        }
+      ]
+    },
+    {
+      "pid": 135,
+      "name": "BOOM 3",
+      "text": "<big>(text-style: \"rumble\")[\"[HEY]<b1|\"]</big>\n(click: ?b1)[<big>(transition: \"dissolve\")[(text-style: \"rumble\")[\"Why isn't anyone [listening to me?]<b2|\"]]</big>]\n(click: ?b2)[<big>(text-style: \"rumble\")[\"I have serious [grievances!]<c1|\"]</big>]\n\n(click: ?c1)[CARLA: Why isn't the Bear [waking up?]<c2|]\n\n(click: ?c2)[(transition: \"dissolve\")[JONATHAN: Oh, [um...]<b3|]]\n(click: ?b3)[(transition: \"dissolve\")[JONATHAN: If you already absorbed the (color: red)[drugs], you can get flashbacks at [any time.]<a1|]] (click: ?a1)[(transition: \"dissolve\")[Especially in [stressful situations.]<c3|]]\n\n(click: ?c3)[CARLA: And you didn't mention this earlier [*why?!*]<c4|]\n\n(click: ?c4)[JONATHAN: I didn't think the best way to start a friendship was to say \"Hey, nice to meetcha - by the way, we gave you [irreparable brain damage!]<c5|\"]\n\n(click: ?c5)[<big>(text-style: \"rumble\")[\"If no one is going to listen to me, I might as well [destroy the boat now.]<c6|\"]</big>]\n\n(click: ?c6)[BAILEY: Why do you keep doing [*horrible things?!*]<c7|]\n\n(click: ?c7)[<big>(text-style: \"rumble\")[\"BECAUSE YOU KILLED [MY FACILITY THAT'S WHY]<c8|\"]</big>]\n\n(click: ?c8)[(transition: \"dissolve\")[BAILEY: *YOU* [KILLED YOUR FACILITY!]<c9|]]\n\n(click: ?c9)[(transition: \"dissolve\")[[[>FLAILING|BOOM FLASHBACK 4]]]]",
+      "links": [
+        {
+          "text": ">FLAILING",
+          "destination": {
+            "name": "BOOM FLASHBACK 4",
+            "pid": 136
+          }
+        }
+      ]
+    },
+    {
+      "pid": 136,
+      "name": "BOOM FLASHBACK 4",
+      "text": "(display: \"THE PAST\")\n(live: 0.3s)[(stop:)(font: \"Times New Roman\")[(transition: \"dissolve\")[\"So your big plan is to get a(if: $regretBear is 1)[n *I Don't Know*](if: $engMajor is 1)[n *English*] (if: $hisMajor is 1)[*History*](if: $busMajor is 1)[*Business*](if: $comMajor is 1)[*Communications*](if: $theMajor is 1)[*Theatre*](if: $phiMajor is 1)[*Philosophy*] [degree, now.]<b1|\"]]]\n(click: ?b1)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"[Okay.]<a1|(click: ?a1)[ (transition: \"dissolve\")[That's [cool.]<c1|]]\"]]]\n\n(click: ?c1)[<big>(live: 4.7s)[(stop:)(font: \"Times New Roman\")[(transition: \"dissolve\")[\"What are you going to [do with it?]<c2|\"]]]</big>]\n\n\n(click: ?c2)[(transition: \"dissolve\")[[[>CHOOSE FUTURE CAREER|BOOM FLASHBACK 5]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">CHOOSE FUTURE CAREER",
+          "destination": {
+            "name": "BOOM FLASHBACK 5",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 137,
+      "name": "BOOM FLASHBACK 5",
+      "text": "<big><big>[[>PROBABLY BARISTA|BOOM FLASHBACK 6]]\n[[>PROBABLY BARISTA|BOOM FLASHBACK 6]]\n[[>PROBABLY BARISTA|BOOM FLASHBACK 6]]\n[[>PROBABLY BARISTA|BOOM FLASHBACK 6]]\n[[>PROBABLY BARISTA|BOOM FLASHBACK 6]]\n[[>PROBABLY BARISTA|BOOM FLASHBACK 6]]\n[[>PROBABLY BARISTA|BOOM FLASHBACK 6]]\n[[>PROBABLY BARISTA|BOOM FLASHBACK 6]]\n[[>PROBABLY BARISTA|BOOM FLASHBACK 6]]\n[[>PROBABLY BARISTA|BOOM FLASHBACK 6]]\n(link: \">DEFINITELY BARISTA\")[(set: $probBar to 1)(go-to: \"BOOM FLASHBACK 6\")]</big></big>",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "BOOM FLASHBACK 6",
+            "pid": 138
+          }
+        },
+        {
+          "text": ">PROBABLY BARISTA",
+          "destination": {
+            "name": "BOOM FLASHBACK 6",
+            "pid": 138
+          }
+        }
+      ]
+    },
+    {
+      "pid": 138,
+      "name": "BOOM FLASHBACK 6",
+      "text": "(display: \"THE PAST\")\n(live: 0.2s)[(stop:)(transition: \"dissolve\")[Being honest about the state of the economy and subsequently the job market, you joke that you'll (if: $probBar is 0)[probably] [end up a barista.]<c2|]]\n\n(click: ?c2)[[[>THIS DOES NOT GO OVER WELL|BOOM 4]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">THIS DOES NOT GO OVER WELL",
+          "destination": {
+            "name": "BOOM 4",
+            "pid": 139
+          }
+        }
+      ]
+    },
+    {
+      "pid": 139,
+      "name": "BOOM 4",
+      "text": "(transition: \"dissolve\")[A final fireball erupts from the luxury yacht at the end of beach as CARLA, BAILEY, and JONATHAN desperately try to [revive you.]<c1|]\n\n(click: ?c1)[<big>(text-style: \"rumble\")[\"I'M DOING THIS FOR YOUR OWN GOOD, [YOU KNOW.]<b1|\"]</big>]\n(click: ?b1)[<big>(text-style: \"rumble\")[\"IT'S DANGEROUS TO USE VEHICLES THAT YOU AREN'T [ABSOLUTELY FAMILIAR WI--]<c2|\"]</big>]\n\n(click: ?c2)[A slipped button press sends a spray of sand bucking into the air [next to your feet.]<b2|]\n(click: ?b2)[(transition: \"dissolve\")[CARLA barely [flinches.]<c3|]]\n\n(click: ?c3)[<big>(text-style: \"rumble\")[\"WHOOPS! SORRY! LOTS OF THINGS DO THE SAME [THING IN HERE.]<b3|\"]</big>]\n(click: ?b3)[<big>(text-style: \"rumble\")[\"LET ME JUST [LABEL THIS...]<b4|\"]</big>]\n(click: ?b4)[<big>(text-style: \"rumble\")[[\"*FIRE GATLINGS*...\"]<b5|]</big>]\n(click: ?b5)[<big>(text-style: \"rumble\")[[\"*NUMBER 4*...\"]<c4|]</big>]\n\n(click: ?c4)[(transition: \"dissolve\")[[[>FAILING|BOOM FLASHBACK 7]]]]",
+      "links": [
+        {
+          "text": ">FAILING",
+          "destination": {
+            "name": "BOOM FLASHBACK 7",
+            "pid": 140
+          }
+        }
+      ]
+    },
+    {
+      "pid": 140,
+      "name": "BOOM FLASHBACK 7",
+      "text": "(display: \"THE PAST\")\n(live: 0.2s)[(stop:)(font: \"Times New Roman\")[(transition: \"dissolve\")[\"This is really a [joke to you?]<c1|\"]]]\n\n(click: ?c1)[[>\"NO I WAS--\"]<r1|](click-replace: ?r1)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"You look at the sacrifices your mother and [I made...]<a1|(click: ?a1)[(font: \"Times New Roman\")[(transition: \"dissolve\")[the dreams we *killed*, so you would have a ''chance'' to follow yours, and you think that's [something to joke about?]<c2|]]]\"]]]\n\n(click: ?c2)[(transition: \"dissolve\")[You feel a hot lump rising in [your throat.]<c3|]]\n\n(click: ?c3)[(font: \"Times New Roman\")[\"You know what [<big>really</big> upsets me?]<c6|\"]]\n\n(click: ?c6)[(transition: \"dissolve\")[You won't get the chance to [defend yourself.]<c5|]]\n\n(click: ?c5)[(font: \"Times New Roman\")[\"It's not that you made [the joke.]<a2|(click: ?a2)[(font: \"Times New Roman\")[ Whatever you might think, I'm not [insane.]<c4|]]\"]]\n\n(click: ?c4)[(transition: \"dissolve\")[Your hands are [balling into fists.]<b1|]]\n\n(click: ?b1)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"It's that you don't have the slightest idea [what you want.]<b2|\"]]]\n\n(click: ?b2)[(transition: \"dissolve\")[He won't understand your hopes of becoming [(if: $regretBear is 1)[*some kind* of](if: $engMajor is 1)[an English](if: $phiMajor is 1)[a Philosophy](if: $hisMajor is 1)[a History](if: $theMajor is 1)[a Theatre] teacher.]<c7|]]\n\n(click: ?c7)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"You see the future as this mysterious, exciting horizon and that is [*not* what it is.]<c8|\"]]]\n\n(click: ?c8)[(transition: \"dissolve\")[Helping children understand themselves, and the world around them, a [tiny bit better.]<c9|]]\n\n(click: ?c9)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"The future is [''dark.'']<c10|\"]]]\n\n(click: ?c10)[(transition: \"dissolve\")[The dream you had [since you nearly drowned.]<c11|]]\n\n(click: ?c11)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"It is [''cold.'']<c12|\"]]]\n\n(click: ?c12)[You did try to tell him about the confused little bear standing in the rain [once.]<b4|]\n(click: ?b4)[Walking home [alone.]<c13|]\n\n(click: ?c13)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"...and it will break you unless you are [''more'' than prepared.]<c14|\"]]]\n\n\n(click: ?c14)[(transition: \"dissolve\")[[[>HE DIDN'T UNDERSTAND THAT EITHER|BOOM 5]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">HE DIDN'T UNDERSTAND THAT EITHER",
+          "destination": {
+            "name": "BOOM 5",
+            "pid": 142
+          }
+        }
+      ]
+    },
+    {
+      "pid": 141,
+      "name": "BOOM FLASHBACK 9",
+      "text": "(display: \"THE PAST\")\n(live: 0.2s)[(stop:)<h3>(font: \"Times New Roman\")[(transition: \"dissolve\")[\"I'm not [going to watch--]<c1|\"]]</h3>]\n(click: ?c1)[(transition: \"dissolve\")[He's saying the words in [slow-motion.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[You [remember this part.]<c2|]]\n\n\n(click: ?c2)[[[>WAIT FOR IT|BOOM FLASHBACK 10]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">WAIT FOR IT",
+          "destination": {
+            "name": "BOOM FLASHBACK 10",
+            "pid": 143
+          }
+        }
+      ]
+    },
+    {
+      "pid": 142,
+      "name": "BOOM 5",
+      "text": "(transition: \"dissolve\")[(text-style: \"rumble\")[<big>\"WITH A LITTLE DOCKING OF YOUR PAY, SOME ELBOW-GREASE ON THAT HOLE IN THE CEILING, REPLACEMENT (color: purple)[TRANQUILIZERS], AND THE SIGNING OF A NEW, EXTENDED CONTRACT, WE SHOULD BE [BACK IN BUSINESS]<c1|\"</big>]]\n\n(click: ?c1)[BAILEY: [Wait--]<a1|](click: ?a1)[(transition: \"dissolve\")[you seriously think we'll keep working for you [after this?]<c2|]]\n\n(click: ?c2)[(text-style: \"rumble\")[<big>\"[WHY NOT?]<b1|\"]</big>]\n(click: ?b1)[(text-style: \"rumble\")[<big>\"YOU GET [COMPETITIVE SALARIES]<b2|\"</big>]]\n(click: ?b2)[(text-style: \"rumble\")[<big>\"FULL [HEALTH AND DENTAL]<b3|\"</big>]]\n(click: ?b3)[(text-style: \"rumble\")[<big>\"I'LL RETURN [YOUR 401KS]<b4|\"</big>]]\n(click: ?b4)[(text-style: \"rumble\")[\"Or, [well, most of them.]<b5|\"]]\n(click: ?b5)[(transition: \"dissolve\")[(text-style: \"rumble\")[<small>\"Missiles really are [expensive.]<c3|\"</small>]]]\n\n(click: ?c3)[(transition: \"dissolve\")[BAILEY: You spied on us for years! Put [our lives in dang--]<c4|]]\n\n(click: ?c4)[CARLA: [Shut up, Bailey.]<c5|]\n\n(click: ?c5)[BAILEY: [But--]<c6|]\n\n(click: ?c6)[(transition: \"dissolve\")[CARLA: If the Bear doesn't wake up, [we'll deal with her ourselves.]<c7|]]\n\n(click: ?c7)[(transition: \"dissolve\")[The mournful sound of whirring helicopter blades dominates the scene as Carla continues to try [waking the Bear.]<b6|]]\n(click: ?b6)[(transition: \"dissolve\")[The others [are]<a2| (click: ?a2)[(wisely)] [keeping their distance.]<c9|]]\n\n(click: ?c9)[(transition: \"dissolve\")[[[>WAIT FOR IT|BOOM FLASHBACK 9]]]]",
+      "links": [
+        {
+          "text": ">WAIT FOR IT",
+          "destination": {
+            "name": "BOOM FLASHBACK 9",
+            "pid": 141
+          }
+        }
+      ]
+    },
+    {
+      "pid": 143,
+      "name": "BOOM FLASHBACK 10",
+      "text": "<h3>(font: \"Times New Roman\")[(transition: \"dissolve\")[\"--the world SPLIT [MY CHILD OPEN--]<c1|\"]]</h3>\n(click: ?c1)[(transition: \"dissolve\")[The final word. The capstone [of these conversations.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[The word that drives a blunt, burning nail into your chest, ending the argument and leaving you with a tearful apology [far too late.]<c2|]]\n\n\n(click: ?c2)[(transition: \"dissolve\")[[[>HERE IT COMES|BOOM FLASHBACK 11]]]]",
+      "links": [
+        {
+          "text": ">HERE IT COMES",
+          "destination": {
+            "name": "BOOM FLASHBACK 11",
+            "pid": 144
+          }
+        }
+      ]
+    },
+    {
+      "pid": 144,
+      "name": "BOOM FLASHBACK 11",
+      "text": "(display: \"THE PAST\")\n<h3>(live: 9.3s)[(stop:)(font: \"Times New Roman\")[(transition: \"dissolve\")[\"--ON]]] (live: 10s)[(stop:)(font: \"Times New Roman\")[(transition: \"dissolve\")[MY]]] (live: 12.3s)[(stop:)(font: \"Times New Roman\")[(transition: \"shudder\")[[<big>*FUCKING*</big>--]<c1|\"]]]</h3>\n(click: ?c1)[[There]<c2| it is.]\n\n(click: ?c2)[<big>[fuck]<b1|</big>]\n(click: ?b1)[<big>[FUCK]<b2|</big>]\n(click: ?b2)[(transition: \"dissolve\")[[FUCKING]<c3|]]\n\n(click: ?c3)[<h3>[FUCK]<b3|</h3>]\n(click: ?b3)[(transition: \"dissolve\")[The punctuation on a dark message ricocheting in the mind of a small [bear in the rain.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[The roar that emerges from your lungs is over [a decade in the making.]<c5|]]\n\n(click: ?c5)[(text-style: \"fade-in-out\")[<big><big><big><big><big>(transition: \"shudder\")[[[>\"NO!\"|BOOM 6]]]</big></big></big></big></big>]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">\"NO!\"",
+          "destination": {
+            "name": "BOOM 6",
+            "pid": 145
+          }
+        }
+      ]
+    },
+    {
+      "pid": 145,
+      "name": "BOOM 6",
+      "text": "(transition: \"shudder\")[CARLA: [Wake up!]<b1|]\n(click: ?b1)[(transition: \"shudder\")[CARLA: Wake up [dammit!]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[CARLA has finally resorted to pounding on your chest when JONATHAN spots [your eyelids fluttering.]<c2|]]\n\n(click: ?c2)[JONATHAN: Carla--I think [it's waking up.]<c3|]\n\n(click: ?c3)[CARLA spins to look at [your face.]<c4|]\n\n(click: ?c4)[(transition: \"dissolve\")[CARLA: Oh [my gosh.]<c5|]]\n\n(click: ?c5)[<big>(text-style: \"rumble\")[\"IT MUST HAVE BEEN THE [NOISE FROM MY CHOPPER]<b2|\"]</big>]\n<big>(click: ?b2)[(text-style: \"rumble\")[\"[SEE?]<a1|(click: ?a1)[ I CAN BE PRETTY [*RAD*, RIGHT?]<b3|]\"]]</big>\n(click: ?b3)[<big>(text-style: \"rumble\")[\"YOU KNOW WHAT WOULD BE *TOTALLY TUBULAR*? IF YOU WORKED FOR ME [SINCE I SAVED YOUR FRIEND'S LIFE]<c6|\"]</big>]\n\n(click: ?c6)[(transition: \"dissolve\")[The team glares at the woman [in a helicopter.]<c7|]]\n\n(click: ?c7)[<big>(text-style: \"rumble\")[\"I'LL TAKE THAT AS A [MAYBE?]<c8|\"]</big>]\n\n(click: ?c8)[(text-style: \"fade-in-out\")[[[>FLUTTERING|BOOM FLASHBACK 12]]]]",
+      "links": [
+        {
+          "text": ">FLUTTERING",
+          "destination": {
+            "name": "BOOM FLASHBACK 12",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 146,
+      "name": "BOOM FLASHBACK 12",
+      "text": "<big><big><big><big><big>(live: 0.4s)[(stop:)(text-style: \"fade-in-out\")[>\"I'M]] (live: 0.9s)[(stop:)(text-style: \"fade-in-out\")[NOT]] (live: 1.3s)[(stop:)(text-style: \"fade-in-out\")[GOING]] (live: 1.9s)[(stop:)(text-style: \"fade-in-out\")[TO]] (live: 2.1s)[(stop:)(text-style: \"fade-in-out\")[FAIL,]] (live: 3.4s)[(stop:)(text-style: \"fade-in-out\")[[[DAD.|BOOM FLASHBACK 13]]\"]]</big></big></big></big></big>",
+      "links": [
+        {
+          "text": "DAD.",
+          "destination": {
+            "name": "BOOM FLASHBACK 13",
+            "pid": 147
+          }
+        }
+      ]
+    },
+    {
+      "pid": 147,
+      "name": "BOOM FLASHBACK 13",
+      "text": "<big><big><big><big><big>(live: 0.3s)[(stop:)(text-style: \"fade-in-out\")[>\"AND]] (live: 0.7s)[(stop:)(text-style: \"fade-in-out\")[YOU]] (live: 1.2s)[(stop:)(text-style: \"fade-in-out\")[WILL]] (live: 1.8s)[(stop:)(text-style: \"fade-in-out\")[NOT]] (live: 2.7s)[(stop:)(text-style: \"fade-in-out\")[SPEAK]] (live: 3.1s)[(stop:)(text-style: \"fade-in-out\")[TO]] (live: 3.3s)[(stop:)(text-style: \"fade-in-out\")[ME]] (live: 3.7s)[(stop:)(text-style: \"fade-in-out\")[LIKE]] (live: 4s)[(stop:)(text-style: \"fade-in-out\")[THAT.\"]] \n\n(live: 6s)[(stop:)(text-style: \"fade-in-out\")[>\"EVER.\"]]\n\n(live: 8.1s)[(stop:)(text-style: \"fade-in-out\")[[[>\"AGAIN.\"|BOOM 7]]]]</big></big></big></big></big>",
+      "links": [
+        {
+          "text": ">\"AGAIN.\"",
+          "destination": {
+            "name": "BOOM 7",
+            "pid": 148
+          }
+        }
+      ]
+    },
+    {
+      "pid": 148,
+      "name": "BOOM 7",
+      "text": "(transition: \"dissolve\")[You're snorting, thrashing at the sand, [struggling to your feet.]<c1|]\n\n(click: ?c1)[CARLA, JONATHAN, and BAILEY [hurry aside.]<c2|]\n\n(click: ?c2)[(transition: \"dissolve\")[(font: \"Times New Roman\")[[[>\"I--\"|BOOM FLASHBACK 14]]]]]",
+      "links": [
+        {
+          "text": ">\"I--\"",
+          "destination": {
+            "name": "BOOM FLASHBACK 14",
+            "pid": 149
+          }
+        }
+      ]
+    },
+    {
+      "pid": 149,
+      "name": "BOOM FLASHBACK 14",
+      "text": "(display: \"THE PAST\")\n(live: 0.8s)[(stop:)(font: \"Times New Roman\")[(transition: \"dissolve\")[[\"I--\"]<r1|]]](click-replace: ?r1)[(text-style: \"fade-in-out\")[<big><big><big><big><big>[>\"NO, DAD.\"]<c1|</big></big></big></big></big>]]\n\n(click: ?c1)[(text-style: \"fade-in-out\")[[>\"NO ARGUMENTS.\"]<c2|]]\n\n(click: ?c2)[(text-style: \"fade-in-out\")[[>\"NO EXCUSES.\"]<c3|]]\n\n(click: ?c3)[(text-style: \"fade-in-out\")[[>\"NO BUTS.\"]<c4|]]\n\n(click: ?c4)[(text-style: \"fade-in-out\")[[>\"UNDERSTAND?\"]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[Bear Dad's jaw hangs ever so slightly, his eyes expressing a confused [concern and pain.]<c6|]]\n\n(click: ?c6)[(transition: \"dissolve\")[You stare him down over the metal table, the cheap light [flickering above your heads.]<c7|]]\n\n(click: ?c7)[(text-style: \"fade-in-out\")[[[>FLICKERING|BOOM 8]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">FLICKERING",
+          "destination": {
+            "name": "BOOM 8",
+            "pid": 150
+          }
+        }
+      ]
+    },
+    {
+      "pid": 150,
+      "name": "BOOM 8",
+      "text": "(transition: \"dissolve\")[You blink your eyes against the light, shaking sand from your fur and standing erect in [the helicopter's gust.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[You stare into the cockpit with a blank, cold light still ](text-style: \"fade-in-out\")[flickering](transition: \"dissolve\")[ in your [eyes.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[Your body is here, but your mind is [thousands of miles away.]<c3|]]\n\n(click: ?c3)[<big>(text-style: \"rumble\")[\"WHY IS [IT LOOKING AT ME LIKE THAT?]<b1|\"]</big>]\n(click: ?b1)[<big>(text-style: \"rumble\")[\"IF IT MAKES A DIFFERENCE, BEAR, I DIDN'T MEAN TO ''HURT'' [ANY OF YOU]<c4|\"]</big>]\n\n(click: ?c4)[(transition: \"dissolve\")[CARLA looks from you, to the helicopter, and [back.]<c5|]]\n\n(click: ?c5)[<big>(text-style: \"rumble\")[\"I MEAN, I WANTED YOU TO HURT A *LITTLE,* [BUT NOTHING SERIOUS]<c6|\"]</big>]\n\n(click: ?c6)[(transition: \"dissolve\")[CARLA: [...Bear?]<c7|]]\n\n(click: ?c7)[(transition: \"dissolve\")[<small>[[>...BEAR?|BOOM FLASHBACK 15]]</small>]]",
+      "links": [
+        {
+          "text": ">...BEAR?",
+          "destination": {
+            "name": "BOOM FLASHBACK 15",
+            "pid": 151
+          }
+        }
+      ]
+    },
+    {
+      "pid": 151,
+      "name": "BOOM FLASHBACK 15",
+      "text": "(display: \"THE PAST\")\n(live: 0.4s)[(stop:)(transition: \"dissolve\")[Bear Dad takes a deep breath and collects himself before speaking. His voice is quiet - every word [deliberately placed.]<c1|]]\n\n(click: ?c1)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"You do realize that [I pay for this room?]<c2|\"]]]\n\n(click: ?c2)[(transition: \"dissolve\")[[>\"I'LL MOVE.\"]<c3|]]\n\n(click: ?c3)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"And [the degree?]<c4|\"]]]\n\n(click: ?c4)[(transition: \"dissolve\")[[>\"I'LL GET A JOB. TAKE CLASSES PART-TIME.\"]<c5|]]\n\n(click: ?c5)[(live: 1s)[(transition: \"dissolve\")[.(stop:)]](live: 2.6s)[(transition: \"dissolve\")[.(stop:)]](live: 7s)[(transition: \"dissolve\")[.(stop:)]]\n\n(live: 10s)[(stop:)(font: \"Times New Roman\")[(transition: \"dissolve\")[\"You want to take me out of your life...]]](live: 12s)[(font: \"Times New Roman\")[(transition: \"dissolve\")[[That much?]<c6|\"]]]]\n\n(click: ?c6)[(transition: \"dissolve\")[[[>_|BOOM 9]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">_",
+          "destination": {
+            "name": "BOOM 9",
+            "pid": 152
+          }
+        }
+      ]
+    },
+    {
+      "pid": 152,
+      "name": "BOOM 9",
+      "text": "<big>(transition: \"dissolve\")[(text-style: \"rumble\")[\"[CARLA?]<a1|(click: ?a1)[ Carla [dear?]<c1|]\"]]</big>\n\n(click: ?c1)[(transition: \"dissolve\")[CARLA: I haven't even *seen* you [before today.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[CARLA: Especially considering what's happened, I [think \"Dear\" is premature.]<c2|]]\n\n(click: ?c2)[<big>(text-style: \"rumble\")[\"UH, YES, DESPITE THAT, THE BEAR - [[WHAT--|BOOM FLASHBACK 16]]\"]</big>]",
+      "links": [
+        {
+          "text": "WHAT--",
+          "destination": {
+            "name": "BOOM FLASHBACK 16",
+            "pid": 153
+          }
+        }
+      ]
+    },
+    {
+      "pid": 153,
+      "name": "BOOM FLASHBACK 16",
+      "text": "(display: \"THE PAST\")\n(live: 0.2s)[(stop:)(font: \"Times New Roman\")[(transition: \"dissolve\")[\"--are you doing? Where do you [go from here?]<c1|]]]\n\n(click: ?c1)[(transition: \"dissolve\")[A brief amount of time has passed. You're throwing clothes and miscellaneous keepsakes into [a hand-me-down suitcase.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[[>\"...I HONESTLY DON'T KNOW.\"]<c3|]]\n\n(click: ?c3)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"And you think that's a good plan? To leave your future at risk because [you can't focus?]<c4|\"]]]\n\n(click: ?c4)[(transition: \"dissolve\")[You take your jacket off of its hangar in the bedroom closet, the hard weight inside its pocket knocking against your arm as you [swing it over your shoulder.]<c5|]]\n\n(click: ?c5)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"Because you can't deal with a little tough [love now and then?]<c6|\"]]]\n\n(click: ?c6)[As you exit your bedroom and head for the front door, you notice the light is still flickering [over the table.]<c7|]\n\n(click: ?c7)[(font: \"Times New Roman\")[(transition: \"dissolve\")[\"What do you think the real world is going to throw at you - especially if you become successful? Are you going [to run then, too?]<c8|\"]]]\n\n(click: ?c8)[(transition: \"dissolve\")[Next to the door is a small, framed [photo of Bear Dad.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[Outside of some digital photos in a kitsch electronic frame your grandmother sent you once, this is the only physical image you [have of him.]<b2|]]\n\n(click: ?b2)[He's [watching you.]<c9|]\n\n(click: ?c9)[(transition: \"dissolve\")[(link: \">TAKE THE PICTURE WITH YOU\")[(set: $lookDad to 1)(go-to: \"BOOM FLASHBACK 17\")]\n(link: \">LEAVE IT\")[(set: $leanDad to 1)(go-to: \"BOOM FLASHBACK 17\")]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "BOOM FLASHBACK 17",
+            "pid": 154
+          }
+        }
+      ]
+    },
+    {
+      "pid": 154,
+      "name": "BOOM FLASHBACK 17",
+      "text": "(display: \"THE PAST\")\n(live: 0.2s)[(stop:)(transition: \"dissolve\")[You (if: $leanDad is 1)[turn the picture face-down on the counter](if: $lookDad is 1)[take the picture and shove it into the front pocket of your suitcase] before [opening the door.]<c1|]]\n\n(click: ?c1)[Bear Dad calls [your name.]<c2|]\n\n(click: ?c2)[<small>(font: \"Times New Roman\")[(transition: \"dissolve\")[\"[Please...]<c3|\"]]</small>]\n\n(click: ?c3)[(transition: \"dissolve\")[[[>LISTEN ONE LAST TIME|BOOM FLASHBACK 18]]\n[[>LEAVE|BOOM FLASHBACK 19]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">LISTEN ONE LAST TIME",
+          "destination": {
+            "name": "BOOM FLASHBACK 18",
+            "pid": 155
+          }
+        },
+        {
+          "text": ">LEAVE",
+          "destination": {
+            "name": "BOOM FLASHBACK 19",
+            "pid": 156
+          }
+        }
+      ]
+    },
+    {
+      "pid": 155,
+      "name": "BOOM FLASHBACK 18",
+      "text": "(display: \"THE PAST\")\n(live: 0.3s)[(stop:)(font: \"Times New Roman\")[(transition: \"dissolve\")[\"What are you [going to do?]<c1|\"]]]\n\n(click: ?c1)[(transition: \"dissolve\")[<big>[[>\"I'M GOING TO MAKE IT WORK, DAD\"|BOOM FLASHBACK 19]]]</big>]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">\"I'M GOING TO MAKE IT WORK, DAD\"",
+          "destination": {
+            "name": "BOOM FLASHBACK 19",
+            "pid": 156
+          }
+        }
+      ]
+    },
+    {
+      "pid": 156,
+      "name": "BOOM FLASHBACK 19",
+      "text": "(stop:)(transition: \"dissolve\")[The last thing you remember seeing as you close the door is (if: $leanDad is 0)[(if: $lookDad is 0)[Bear Dad slumping into a chair, staring into the void as it [sags under his weight.]<c1|]](if: $leanDad is 1)[Bear Dad slumping against the table, staring into the void his picture [used to occupy.]<c1|](if: $lookDad is 1)[Bear Dad's scared, tired eyes following you until the door shuts on the last crack of [flickering light.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[[[>I'LL MAKE IT WORK...|BOOM 10]]]]",
+      "links": [
+        {
+          "text": ">I'LL MAKE IT WORK...",
+          "destination": {
+            "name": "BOOM 10",
+            "pid": 157
+          }
+        }
+      ]
+    },
+    {
+      "pid": 157,
+      "name": "BOOM 10",
+      "text": "(transition: \"dissolve\")[You [blink hard.]<b1|]\n(click: ?b1)[(transition: \"dissolve\")[[Tears.]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[Lots of [those today.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[You're surrounded by worried faces and looking into the eyes of the woman who sent you back into your past. Wounds irritated by sand and sea spray sting [beneath your matted fur.]<c2|]]\n\n(click: ?c2)[You feel reflective as you recognize [a familiar weight around your neck.]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[[[>EXAMINE BOWTIE|BOOM 11]]]]",
+      "links": [
+        {
+          "text": ">EXAMINE BOWTIE",
+          "destination": {
+            "name": "BOOM 11",
+            "pid": 158
+          }
+        }
+      ]
+    },
+    {
+      "pid": 158,
+      "name": "BOOM 11",
+      "text": "(transition: \"dissolve\")[You reach around the back of your neck, carefully undoing the [bow-tie's metal clasp.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[On the back of the delicate silk-tie is [a large metal weight.]<c2|]]\n\n(click: ?c2)[<big>(text-style: \"rumble\")[\"I DON'T KNOW WHAT YOU'RE DOING, BEAR, BUT IF YOU TRY ANY FUNNY BUSINESS, [I'LL BLOW YOU TO SMITHEREENS.]<c3|\"]</big>]\n\n(click: ?c3)[(transition: \"dissolve\")[You look up at the woman once again, ignoring the cries and arguments of [your newfound companions.]<c4|]]\n\n(click: ?c4)[<big>(text-style: \"rumble\")[\"YOU HEAR ME?! I'LL DO IT! [I WILL!]<c5|\"]<big>]\n\n(click: ?c5)[(transition: \"dissolve\")[[No.]<c6|]]\n\n(click: ?c6)[(transition: \"dissolve\")[She isn't going to [hurt anyone else.]<c7|]]\n\n(click: ?c7)[(transition: \"dissolve\")[[[>MAKE IT WORK|BOOM 12]]]]",
+      "links": [
+        {
+          "text": ">MAKE IT WORK",
+          "destination": {
+            "name": "BOOM 12",
+            "pid": 159
+          }
+        }
+      ]
+    },
+    {
+      "pid": 159,
+      "name": "BOOM 12",
+      "text": "(transition: \"dissolve\")[Your name is [Patricia Herningzen.]<b1|]\n(click: ?b1)[(transition: \"dissolve\")[You're sixty-two years old, and you've spent your life proving being eccentric doesn't have [to mean being unsuccessful.]<c1|]]\n\n(click: ?c1)[You made a boutique foam disc-gun manufacturing facility, in the middle of the *Pacific Ocean*, [a sustainable business.]<b2|]\n(click: ?b2)[You brought parachute pants [back into style.]<b3|]\n(click: ?b3)[You manage a multi-national technology conglomerate through a series of shell companies from the [comfort of your living room.]<b4|]\n(click: ?b4)[You fly a variety of aircraft to intimidate your [rivals.]<r1|](click-replace: ?r1)[(transition: \"dissolve\")[rivals, the salty torrent of their fevered tears driving your ceaseless fury--the red crescent of the blood moon shining on the faceless hordes of your dark army, the raging abyss rising to greet the supposedly sane with the grinning death-mask of their own [futile--]<c2|]]\n\n(click: ?c2)[`*`[*cough*]<c3|`*`]\n\n(click: ?c3)[(transition: \"dissolve\")[You're a well-adjusted adult who survived the '70s to become a force of nature, is what [I'm saying.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[[[>THEN TODAY HAPPENED|BOOM 13]]]]",
+      "links": [
+        {
+          "text": ">THEN TODAY HAPPENED",
+          "destination": {
+            "name": "BOOM 13",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 160,
+      "name": "BOOM 13",
+      "text": "(transition: \"dissolve\")[You've watched the inhabitants of the Facility for some time now. Idly. Like bugs in a jar, or a TV show that you don't particularly mind [getting cancelled.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[Then you saw a Bear smash through your skylight(if: $destroyC is 1)[ and destroy your cafeteria]. Your building fill with, for all intents and purposes, (color: red)[drugs.] Flooded by the sprinklers you installed [to protect it...]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[[[>TODAY HAPPENED|BOOM 14]]]]",
+      "links": [
+        {
+          "text": ">TODAY HAPPENED",
+          "destination": {
+            "name": "BOOM 14",
+            "pid": 161
+          }
+        }
+      ]
+    },
+    {
+      "pid": 161,
+      "name": "BOOM 14",
+      "text": "(transition: \"dissolve\")[You flew here in an attack helicopter to kick some butt, and put things [back in order.]<c1|]\n\n(click: ?c1)[In [that order.]<c2|]\n\n(click: ?c2)[(transition: \"dissolve\")[And then you arrived, and [everything changed.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[Your employees - the bugs in a jar? They became people. With emotions and friendships, and occasionally, [[serious issues.]<c4|]<b1|]](click: ?b1)[<br><br>(Some definitely having more than others.)]\n\n(click: ?c4)[(transition: \"dissolve\")[For the first time in a long while, you found yourself caring about these people - wanting to be *liked* by them. Regretting [your first impulse.]<c5|]]\n\n(click: ?c5)[[[>THE BEAR HAPPENED|BOOM 15]]]",
+      "links": [
+        {
+          "text": ">THE BEAR HAPPENED",
+          "destination": {
+            "name": "BOOM 15",
+            "pid": 162
+          }
+        }
+      ]
+    },
+    {
+      "pid": 162,
+      "name": "BOOM 15",
+      "text": "(transition: \"dissolve\")[And then there's the odd business of this [Bear.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[It crushes Clark one minute, and (if: $patBear is 1)[pats another employee](if: $waveBear2 is 1)[waves at your other employees](if: $patBear is 0)[(if: $waveBear2 is 0)[hugs another employee]] [the next.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[It takes off its bowtie and stares deep into your eyes before hurling it into your helicopter's rotors, sending you [spinning out of control.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[Now you're in a crashed helicopter next to the Facility you lovingly built [with your own hands]<r1|, watching a heavy, furry shadow limp towards you with [cold, hard eyes.]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[You're [trapped.]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[You're [scared.]<c6|]]\n\n(click: ?c6)[(transition: \"dissolve\")[A single vein pulses along [its snout.]<c7|]]\n\n(click: ?c7)[(transition: \"dissolve\")[[[>JUST WHEN LIFE STARTED TO SEEM EXCITING AGAIN|BOOM 16]]]]\n\n(click-replace: ?r1)[by hiring some really quite lovely contractors]",
+      "links": [
+        {
+          "text": ">JUST WHEN LIFE STARTED TO SEEM EXCITING AGAIN",
+          "destination": {
+            "name": "BOOM 16",
+            "pid": 163
+          }
+        }
+      ]
+    },
+    {
+      "pid": 163,
+      "name": "BOOM 16",
+      "text": "(transition: \"dissolve\")[The other humans are yelling in their way about [something or another...]<a1|](click: ?a1)[(transition: \"dissolve\")[but that doesn't matter [right now.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[Trapped below you, in the cockpit of the crashed helicopter, is [the woman who hurt you.]<c2|]]\n\n(click: ?c2)[Who destroyed the last avenue of escape for you [and your friends.]<c3|]\n\n(click: ?c3)[Who threatened to *destroy* [You.]<c4|]\n\n(click: ?c4)[(transition: \"dissolve\")[She [looks scared.]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[<big>You are [[[[[a Bear.]<d1|]<d2|]<d3|]<d4|]<c6|</big>]]\n\n(click: ?c6)[(transition: \"dissolve\")[[[>MAKE IT WORK|BOOM 17]]\n[[>LEAVE|ALT ENDING SEQUENCE]]]]\n\n\n(click-replace: ?d1)[a college student.]\n(click-replace: ?d2)[a child standing in the rain.]\n(click-replace: ?d3)[(if: $leanDad is 0)[(if: $lookDad is 0)[ignoring His last words.]](if: $leanDad is 1)[leaving His picture behind.](if: $lookDad is 1)[taking His picture with you.]]\n(click-replace: ?d4)[You.]",
+      "links": [
+        {
+          "text": ">MAKE IT WORK",
+          "destination": {
+            "name": "BOOM 17",
+            "pid": 164
+          }
+        },
+        {
+          "text": ">LEAVE",
+          "destination": {
+            "name": "ALT ENDING SEQUENCE",
+            "pid": 172
+          }
+        }
+      ]
+    },
+    {
+      "pid": 164,
+      "name": "BOOM 17",
+      "text": "(transition: \"dissolve\")[Right now, business mogul Patricia Herningzen is watching her helicopter explode [atop a Bear's back.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[For a moment, she almost believes [she's a kid again.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[Spilling wet, sticky cotton candy all over her daddy's shirt [on some distant beach.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[[[>WHAT NOW?|ENDING SEQUENCE]]]]",
+      "links": [
+        {
+          "text": ">WHAT NOW?",
+          "destination": {
+            "name": "ENDING SEQUENCE",
+            "pid": 165
+          }
+        }
+      ]
+    },
+    {
+      "pid": 165,
+      "name": "ENDING SEQUENCE",
+      "text": "<big><big>(transition: \"dissolve\")[You watched the helicopter [burn.]<c1|]</big></big>\n\n(click: ?c1)[It's really not [that odd.]<b1|]\n(click: ?b1)[(transition: \"dissolve\")[It was a long day, and for some reason, the sight of twisted, charring metal and the quiet understanding of fellow warm bodies is what [you all needed.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[You certainly don't need speech to understand why the humans all lean on you - or how the older one fell [asleep on your back.]<c3|]]\n\n(click: ?c3)[There's a hole in the roof of the Facility, and of course all the equipment you could use to call for rescue is soaked, but [right now...]<c4|]\n\n(click: ?c4)[(transition: \"dissolve\")[Right now, in this moment, you're surrounded by a group of unique people, who have come to care about each other, [and about you.]<b2|]]\n(click: ?b2)[(transition: \"dissolve\")[You believe you'll make it work [somehow.]<c5|]]\n\n(click: ?c5)[(transition: \"dissolve\")[And [you do.]<c6|]]\n\n(click: ?c6)[(transition: \"dissolve\")[[[>P.S.|ENDING SEQUENCE 2]]]]",
+      "links": [
+        {
+          "text": ">P.S.",
+          "destination": {
+            "name": "ENDING SEQUENCE 2",
+            "pid": 166
+          }
+        }
+      ]
+    },
+    {
+      "pid": 166,
+      "name": "ENDING SEQUENCE 2",
+      "text": "(display: \"THE PAST\")\n(live: 1.2s)[(stop:)(transition: \"dissolve\")[While the hangar is clean in its worn, oil-spattered way, the planes are buffed to a blinding [gleam.]<c1|]]\n\n(click: ?c1)[You almost leave, for fear of spoiling them with your [mortal breath.]<c2|]\n\n(click: ?c2)[(transition: \"dissolve\")[\"*Y'all wanted something?*\" calls a booming voice from the recesses of [the massive space.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[[[>\"A JOB, ACTUALLY\"|ENDING SEQUENCE 3]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">\"A JOB, ACTUALLY\"",
+          "destination": {
+            "name": "ENDING SEQUENCE 3",
+            "pid": 169
+          }
+        }
+      ]
+    },
+    {
+      "pid": 167,
+      "name": "THE PAST",
+      "text": "(align: \"=><=\")[<h3>THE PAST</h3>]\n---",
+      "links": []
+    },
+    {
+      "pid": 168,
+      "name": "THE END END",
+      "text": "(align: \"=><=\")[<h1>(transition: \"dissolve\")[***[[THE END|CREDITS]]***]</h1>]\n\n\n(if: $seenEnding is 1)[(align: \"=><=\")[<small>(FOR REAL THIS TIME)</small>]]",
+      "links": [
+        {
+          "text": "THE END",
+          "destination": {
+            "name": "CREDITS",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 169,
+      "name": "ENDING SEQUENCE 3",
+      "text": "(display: \"THE PAST\")\n(live: 0.2s)[(stop:)(transition: \"dissolve\")[The owner of the voice steps out from behind a beautifully-preserved [twin-engine craft.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[He's a Panda - white fur stained black with grease and labor, and black fur running [grey with age.]<b1|]]\n(click: ?b1)[However, his heft does little to disguise the speed of his steps, or the energetic [gleam in his eye.]<c2|]\n\n(click: ?c2)[(transition: \"dissolve\")[He looks over your battered clothes and torn shoes. You've been hitchhiking for weeks, and it *feels* like [you walked for longer...]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[\"*Waaaaahhl...*\" he says, chewing his bottom lip in concentration. \"*If yer lookin' for a job, I don't suppose you'll mind my asking the [circumstances of your employment?]<c4|*\"]]\n\n(click: ?c4)[[>\"WELL, I'M A HARD WORKER.\"]<c5|]\n\n(click: ?c5)[\"*I hear that [quite a bit.]<c6|*\"]\n\n(click: ?c6)[[>\"...I COMPLETED TWO YEARS OF A FAILED COLLEGE EDUCATION?\"]<c7|]\n\n(click: ?c7)[\"*That's a mite more [rare.]<c8|*\"]\n\n(click: ?c8)[[\"I'VE TRAVELED HUNDREDS OF MILES TO GET HERE?\"]<c9|]\n\n(click: ?c9)[(transition: \"dissolve\")[\"*Well ''that'',*\" he says, leaning on his rump and wiping his forehead with the back of his paw, \"*is darn near [unheard of.]<b2|*\"]]\n(click: ?b2)[\"*Y'all mind if I ask you [''why?'']<c10|*\"]\n\n(click: ?c10)[[>\"WOULD YOU BELIEVE ME IF I SAID IT WAS FOR A NEW START?\"]<c11|]\n\n(click: ?c11)[\"*I'd say so, but then I'd probably think you'd kilt somebody at some point, and that might [get uncomfortable after a while.]<c12|*\"]\n\n(click: ?c12)[(transition: \"dissolve\")[[[>\"OKAY THEN...\"|ENDING SEQUENCE 4]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">\"OKAY THEN...\"",
+          "destination": {
+            "name": "ENDING SEQUENCE 4",
+            "pid": 170
+          }
+        }
+      ]
+    },
+    {
+      "pid": 170,
+      "name": "ENDING SEQUENCE 4",
+      "text": "(display: \"THE PAST\")\n(live: 0.4s)[(stop:)(transition: \"dissolve\")[It takes a few minutes to reduce a complex mix of feelings into a [coherent answer.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[>\"I WAS AT A GAS STATION WHEN I SAW YOUR CARD ON [THE GROUND.]<b1|\"]]\n(click: ?b1)[>\"SOMEONE HAD STAMPED IT HALFWAY UNDER THE MAT FOR [THE SLUSHIE MACHINE.]<c2|\"]\n\n(click: ?c2)[\"*I think we can [hold off on some of that detail.]<c3|*\"]\n\n(click: ?c3)[[>\"OH, WELL UM...THE CARD SAID 'EXPERIENCE TRUE FREEDOM.' I WANTED THAT.\"]<b2|]\n(click: ?b2)[(transition: \"dissolve\")[[>\"I WANTED TO FEEL WHAT IT WAS LIKE TO BE FREE. JUST FOR A MINUTE.\"]<c4|]]\n\n(click: ?c4)[(transition: \"dissolve\")[\"*I don't think anyone really feels like that. [Not long term, anyway.]<c5|*\"]]\n\n(click: ?c5)[(transition: \"dissolve\")[[[>\"IT DOESN'T HURT TO TRY THOUGH, DOES IT?\"|ENDING SEQUENCE 5]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">\"IT DOESN'T HURT TO TRY THOUGH, DOES IT?\"",
+          "destination": {
+            "name": "ENDING SEQUENCE 5",
+            "pid": 171
+          }
+        }
+      ]
+    },
+    {
+      "pid": 171,
+      "name": "ENDING SEQUENCE 5",
+      "text": "(display: \"THE PAST\")\n(live: 1.3s)[(stop:)(transition: \"dissolve\")[The Panda looks up for a while, at [nothing in particular.]<c1|]]\n\n(click: ?c1)[(transition: \"dissolve\")[\"[*Waaaaahhl...*]<b1|\"]]\n(click: ?b1)[(transition: \"dissolve\")[\"*I'm sorry to say you're gonna need some more schoolin' - for the pilot's [license and such, you understand.]<c2|*\"]]\n\n(click: ?c2)[He [sighs.]<c3|]\n\n(click: ?c3)[(transition: \"dissolve\")[\"*But before you get in the air, you'll probably want to know [how not to die.]<b2|*\"]]\n(click: ?b2)[(transition: \"dissolve\")[\"*Go on and grab a wrench from that wall over there. I've got something to show ya - doesn't [matter which.]<b3|*\"]]\n(click: ?b3)[(transition: \"dissolve\")[\"*Most of 'em are [for show anyway.]<c4|*\"]]\n\n(click: ?c4)[You grin, and start [for the wall.]<c5|]\n\n(click: ?c5)[You'll [make it work.]<c6|]\n\n(click: ?c6)[(transition: \"dissolve\")[[You'll always make it work.]<c7|]]\n\n(click: ?c7)[<h2>[[>SOMEHOW|THE END END]]</h2>]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THE PAST",
+            "pid": 167
+          }
+        },
+        {
+          "text": ">SOMEHOW",
+          "destination": {
+            "name": "THE END END",
+            "pid": 168
+          }
+        }
+      ]
+    },
+    {
+      "pid": 172,
+      "name": "ALT ENDING SEQUENCE",
+      "text": "(transition: \"dissolve\")[If you had a birds-eye view of a small island in the middle of the Pacific Ocean, you would see something [very strange.]<c1|]\n\n(click: ?c1)[(transition: \"dissolve\")[You would see a group of panicked people leaping into a crashed aircraft and struggling with [an unseen obstacle.]<c2|]]\n\n(click: ?c2)[(transition: \"dissolve\")[You would see the craft bursting into flame, englufing the would-be rescuers in [hungry, devouring fire.]<b1|]]\n(click: ?b1)[(transition: \"dissolve\")[A pale, thin man throwing himself, screaming, into [the sea.]<c3|]]\n\n(click: ?c3)[(transition: \"dissolve\")[You would see a Bear trudging to the far edge of the beach, slumping [into a crouch on the shifting sand.]<b2|]]\n\n(click: ?b2)[(transition: \"dissolve\")[[[>ALONE|ALT ENDING SEQUENCE 2]]]]",
+      "links": [
+        {
+          "text": ">ALONE",
+          "destination": {
+            "name": "ALT ENDING SEQUENCE 2",
+            "pid": 173
+          }
+        }
+      ]
+    },
+    {
+      "pid": 173,
+      "name": "ALT ENDING SEQUENCE 2",
+      "text": "<big>(transition: \"dissolve\")[You would see it begin to [[rain.|THE ALTERNATE ENDING]]]</big>",
+      "links": [
+        {
+          "text": "rain.",
+          "destination": {
+            "name": "THE ALTERNATE ENDING",
+            "pid": 174
+          }
+        }
+      ]
+    },
+    {
+      "pid": 174,
+      "name": "THE ALTERNATE ENDING",
+      "text": "(align: \"=><=\")[<h1>(transition: \"dissolve\")[***[[~FIN~|CREDITS]]***]</h1>]\n\n\n(align: \"=><=\")[<small>[[(GO BACK)|BOOM 16]]</small>]\n\n(set: $seenEnding to 1)",
+      "links": [
+        {
+          "text": "~FIN~",
+          "destination": {
+            "name": "CREDITS",
+            "pid": 27
+          }
+        },
+        {
+          "text": "(GO BACK)",
+          "destination": {
+            "name": "BOOM 16",
+            "pid": 163
+          }
+        }
+      ]
+    }
+  ]
+}

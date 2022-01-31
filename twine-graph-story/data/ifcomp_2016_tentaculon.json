@@ -1,0 +1,2565 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "You are a squid.",
+      "text": "<squid>You are a squid. Surrounding you are the reassuring currents of the deep. From the surface far above, rays of light stab through the gloom.\n\n(live: 3s)[You are hungry, coiling through the water with your shoal, when a glint catches your eye from a cone of darkness just over the next reef.\n\n<squid>[[Stay with the group|Stay]]\n[[Break off and investigate|Chase]]</squid>]\n\n(click: \"glint\")[Something tugs at you from that place. You feel it as a sharp hum of movement. Something edible could be swimming there and giving away its hiding place with light.]</squid>\n",
+      "links": [
+        {
+          "text": "Stay with the group",
+          "destination": {
+            "name": "Stay",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Break off and investigate",
+          "destination": {
+            "name": "Chase",
+            "pid": 116
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Color Spray",
+      "text": "<squid>Glllk. There is a [[spray of color]] across your vision.</squid>",
+      "links": [
+        {
+          "text": "spray of color",
+          "destination": {
+            "name": "spray of color",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Escape with your food",
+      "text": "<squid>Shooting preventative jets of ink to replace the darkness, you dart away. \n\nYou can see the fleet of your fellow squids far away, like a flock of birds in the distance. If you can get to them in time you will be safe.\n\nYou have now put a cloud between you and the shark. But in the open water there is nowhere to hide.\n\nWhile you can push away with a few free arms, several of your long limbs are occupied dragging the crustacean as it tries to shimmy out of your grip.\n\n[[Keep swimming]]\n[[Drop your prey|Drop]]\n</squid>",
+      "links": [
+        {
+          "text": "Keep swimming",
+          "destination": {
+            "name": "Keep swimming",
+            "pid": 5
+          }
+        },
+        {
+          "text": "Drop your prey",
+          "destination": {
+            "name": "Drop",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "The shark eats you.",
+      "text": "<wikipedia>[[SYSTEM FAILURE]<a1|]</wikipedia>\n\n(click: ?a1)[\n(transition: \"pulse\")[[[Not again.->Disconnected]] ]\n]",
+      "links": [
+        {
+          "text": "Not again.",
+          "destination": {
+            "name": "Disconnected",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Keep swimming",
+      "text": "<squid>The shark swims through the cloud and (transition: \"pulse\")[ [[eats you|The shark eats you.]]. ]</squid>",
+      "links": [
+        {
+          "text": "eats you",
+          "destination": {
+            "name": "The shark eats you.",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Drop",
+      "text": "<squid>The crustacean breaks loose and is swallowed by the dark.\n\nArms free, you start putting space between you and the shark. But before you can jerk more than a few inches into the water the shark shows up and [[eats you|The shark eats you.]].</squid>",
+      "links": [
+        {
+          "text": "eats you",
+          "destination": {
+            "name": "The shark eats you.",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Disconnected",
+      "text": "With a painful popping sound, the computer [[disconnects]] you from the squid's mind. \n\nYou're slumped in an orange plastic chair in your lab on the fifth floor of the Institute, pulse racing. Electrodes stick to your hot forehead like suckers. \n\nBack in your own body. After having your awareness mapped around to a mind the shape of a donut, it is strange to touch your tongue to your teeth again. You shiver from what feels like a cool breeze, as if a door has blown open.\n\nThe squid sleeps in the far corner of the room in its curved tank. Before you can check on the creature, you become aware of a sizzling [[sound|Now that you're back in the lab]]...",
+      "links": [
+        {
+          "text": "disconnects",
+          "destination": {
+            "name": "disconnects",
+            "pid": 20
+          }
+        },
+        {
+          "text": "sound",
+          "destination": {
+            "name": "Now that you're back in the lab",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Better check on the squid",
+      "text": "Across the room in a watery chamber [[connected]] to the Institute's central tank system, the squid sleeps, drugged.\n\nIts body hugs the nearest corner. Its suckers, little white discs, press against the glass, then slip downward as the tension releases.\n\nFrom time to time a twitch runs through the animal. Then its fleshy arms flail, like a dog [[dreaming]] of being chased by what it fears most, before a tide washes it up on the sunny fields of dreamland. The squid version of that.\n\nSeems OK. At least you don't have to send for a new squid.\n(set: $CheckOnSquid to 1)(if: $onFire is true)[\n[[Your equipment is shorting out.]] \n](else:)[\n[[Crisis averted]] \n]\n",
+      "links": [
+        {
+          "text": "connected",
+          "destination": {
+            "name": "connected",
+            "pid": 47
+          }
+        },
+        {
+          "text": "dreaming",
+          "destination": {
+            "name": "dreaming",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Your equipment is shorting out.",
+          "destination": {
+            "name": "Your equipment is shorting out.",
+            "pid": 67
+          }
+        },
+        {
+          "text": "Crisis averted",
+          "destination": {
+            "name": "Crisis averted",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Don't bother",
+      "text": "Depressed by the failure of the experiment, you sit sipping cold ginger tea from a mug with a crack running through the Institute logo. You watch flames lick the beige inversion processing boxes.\n\nWhen morning comes, you receive word via e-mail that you have been fired from the Institute and that your security key will no longer work. You never discover the breakthrough that would have changed everything.\n\nYears later, you show up at bars telling people how you used to work as a marine neuro-biologist but that it is a tough field.\n\nTHE END",
+      "links": []
+    },
+    {
+      "pid": 10,
+      "name": "Crisis averted",
+      "text": "(if: $crisisWasAverted is 1)[In your lab, with a dreaming squid. (if: $gotBook is false)[Your eyes fall upon a [[paperback book]] that stares back at you from a sterile countertop.] ](else:)[Whew. But while you've prevented serious damage (probably), you are no closer to success in the experiment that [[everything depends on]].\n\nIt's already October. Your last chance to prove you deserve a place at the Institute is the next two days.\n\nYou look at the scorches tattooing your equipment, then across the lab for a better view of the uncertain dark shape of the squid. It is asleep.\n\nYour eyes fall upon a [[paperback book]], its cheerful cover staring back at you from a countertop that is freshly sterilized.(set: $crisisWasAverted to 1)]\n\n[[Restart the experiment->Step By Step (I)]]\n[[Give up]]",
+      "links": [
+        {
+          "text": "paperback book",
+          "destination": {
+            "name": "paperback book",
+            "pid": 64
+          }
+        },
+        {
+          "text": "everything depends on",
+          "destination": {
+            "name": "everything depends on",
+            "pid": 46
+          }
+        },
+        {
+          "text": "Restart the experiment",
+          "destination": {
+            "name": "Step By Step (I)",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Give up",
+          "destination": {
+            "name": "Give up",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Step By Step (I)",
+      "text": "(if: $GoBackToSquareOne is 1)[Here's what you need to do...](else:)[First things first. Running your fingers over the cool steel casing of a machine (which has a [[red sticker]] on it) your mind races through the procedure for re-starting the [[experiment]]. (set: $GoBackToSquareOne to 1)]\n\n(if: $CheckOnSquid is 1)[1. <strike>Check on the squid.</strike> (Done.)](else:)[1. [[Check on the squid.|Better check on the squid]]]\n\n(if: $CheckSamples is 1)[2. <strike>Double-check the purity of your samples and patch your synaptic algorithm.</strike> (Done.)](else:)[2. [[Double-check the purity of your samples and make sure your synaptic algorithm didn't break the system.|Double-check]]]\n\n(if: $FlipLucidSwitch is true)[3. <strike>Check to see that the Lucid/Wake switch is at the right position.</strike> (Done.) ](else: )[3. [Check to see that the [LUCID/WAKE]<switch| switch is at the right position []<c2|]<c3|]\n\n(if: $FlipMimicSwitch is 1)[4. <strike>Be sure the mimic breaker is switched on. This is extremely important.</strike> (Done.)](else:)[4. Be sure the [[mimic breaker]] is switched on. Note: This step is [important]<important|.]\n\n(if: $CheckSamples is 1 and $CheckOnSquid is 1)[5. As long as the [[machine core]] is OK you should be ready to try again. A hum of particle wave energy surges through the room-length emitter.](else:)[5. As long as the machine core is OK--God willing--you should now be ready to flip the main switch again.]\n\n(click: ?important)[It's just good safety practice. Sure, you could boot into the system without this on, and 9 out of 10 times you'd be fine. But there's a chance of being stuck in the other side. You have enough worries without the predicament of being trapped forever in the mind of something with eight arms.]\n(click: ?switch)[ (replace: ?c3)[ <strike>Check to see that the LUCID/WAKE switch is at the right position.</strike> (Done.)] (set: $FlipLucidSwitch to true)]\n\n",
+      "links": [
+        {
+          "text": "red sticker",
+          "destination": {
+            "name": "red sticker",
+            "pid": 68
+          }
+        },
+        {
+          "text": "experiment",
+          "destination": {
+            "name": "experiment",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Check on the squid.",
+          "destination": {
+            "name": "Better check on the squid",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Double-check the purity of your samples and make sure your synaptic algorithm didn't break the system.",
+          "destination": {
+            "name": "Double-check",
+            "pid": 18
+          }
+        },
+        {
+          "text": "mimic breaker",
+          "destination": {
+            "name": "mimic breaker",
+            "pid": 48
+          }
+        },
+        {
+          "text": "machine core",
+          "destination": {
+            "name": "machine core",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "dreaming",
+      "text": "Whether squids dreamed was [[settled]] about six years ago, after the early experiments with virtual axon networks.",
+      "links": [
+        {
+          "text": "settled",
+          "destination": {
+            "name": "settled",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Give up",
+      "text": "You can't bring yourself to do anything other than drink at a bar up the highway from the Institute.\n\nYears later you are still showing up there, telling the clientele you used to work as a marine neuro-biologist but that it is a tough field.\n\nTHE END",
+      "links": []
+    },
+    {
+      "pid": 14,
+      "name": "settled",
+      "text": "See Rasky, D.E. and Zhang, Xavier (six years ago) REM Dream Symbolism and Startle-Response in Nine Cephalopods (Stanford University Hopkins Marine Station)\n\n[[Back|dreaming]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "dreaming",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "experiment",
+      "text": "[[What is the experiment, anyway?]]",
+      "links": [
+        {
+          "text": "What is the experiment, anyway?",
+          "destination": {
+            "name": "What is the experiment, anyway?",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "machine core",
+      "text": "Oh no, no no...\n\n(live: 2s)[The streaks of electrical scoring you find turn out to be bad omens. When you open the system up, you discover that when the power overloaded, the [[thunk reabstractor unit]] must have fused itself solid.]\n\n(live: 4s)[It's not hard to pry loose with a few minutes behind a tweezer. And the rest of the machine seems fine. But with a busted unit there is no chance of finishing your work tonight.]\n\n(live: 6s)[The squid shuffles its arms.](live:10s)[Thought: Maybe the people next door have a working reabstractor you could borrow?]\n\n(live: 12s)[\n[[Go out into the hall|Out in the Hall (I)]]\n(set: $playerHasntVisitedSecurityDoor to true)\n(set: $haveKey to false)]",
+      "links": [
+        {
+          "text": "thunk reabstractor unit",
+          "destination": {
+            "name": "thunk reabstractor unit",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Go out into the hall",
+          "destination": {
+            "name": "Out in the Hall (I)",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "What is the experiment, anyway?",
+      "text": "It would be hard to explain to a lay person, and harder to explain to your boss, who took you on as a lab tech out of sympathy over the incident six months ago, in which you were barred from performing this type of work.\n\nRight now you need to worry about [[re-establishing a decent mind link|Step By Step (I)]].",
+      "links": [
+        {
+          "text": "re-establishing a decent mind link",
+          "destination": {
+            "name": "Step By Step (I)",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Double-check",
+      "text": "You spend a few minutes at the your console, a touch screen hooked up to a beige analyzer device, bearing the green logo of the manufacturer in Toledo. In the dim lighting of the room, the code reflects as bright white symbols crossing glass of the squid tank.\n\nWith help from the analyzer AI you identify and smooth out some places where the synapse abstraction models were all over the place. The next attempt will definitely, positively work lots better.\n\n(set: $CheckSamples to 1)\n\n[[OK|Step By Step (I)]]",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Step By Step (I)",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Now that you're back in the lab",
+      "text": "Your lab is cluttered with papers and sensitive equipment crowding you in from every side. The room feels cold.\n\n[Some of the equipment is shorting out and might be on fire.]<warning|\n\n[[Better check on the squid]]\n[[Pull the fire alarm]]\n[[Don't bother]]\n[Switch off the power]<a1|\n\n(click: ?a1)[You peel the electrodes free, jump from your chair and hurry to cut the power. By the time you have flipped a bank of switches the hum has silenced.(set: $CutPower to 1)(set: $onFire to false)(replace: ?warning)[]\n\n[[Crisis averted]]\n\n]",
+      "links": [
+        {
+          "text": "Better check on the squid",
+          "destination": {
+            "name": "Better check on the squid",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Pull the fire alarm",
+          "destination": {
+            "name": "Pull the fire alarm",
+            "pid": 88
+          }
+        },
+        {
+          "text": "Don't bother",
+          "destination": {
+            "name": "Don't bother",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Crisis averted",
+          "destination": {
+            "name": "Crisis averted",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "disconnects",
+      "text": "They say you get used to the way the Process feels: Like someone flips a light switch and what winks out is you. \n\nAll the portions of your being are swept into a new place where distance and matter no longer make sense. \n\nThen, as if it has been this way the whole time, your nerves have become the remote control for something else. Something clammy, with eight arms mapped to yours.\n\nWhy squids? People always [[want to know.]]\n\n[[Back|Disconnected]]\n",
+      "links": [
+        {
+          "text": "want to know.",
+          "destination": {
+            "name": "want to know.",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Disconnected",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "understand",
+      "text": "Because of the <a href=\"http://en.wikipedia.org/wiki/Cephalopod\">ganglia</a>, of course. \n\nNo time for a lecture. Crackling sounds reach your ear, reminding you your lab is [[on fire|Now that you're back in the lab]] \n\n(For a general introduction to the field see B.A. Budelmann's undergrad textbook \"Cephalopod Nervous Systems and Dream States,\" New York: MacMillianAmazon, four years ago.)",
+      "links": [
+        {
+          "text": "on fire",
+          "destination": {
+            "name": "Now that you're back in the lab",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "want to know.",
+      "text": "Like on that last online date. At the place with the steak and the loud music and the college students crowding you into the corner with no way to move. \n\n<em>Why not a nice spaniel? Or a cat?</em> \n\nBut they don't [[understand]].",
+      "links": [
+        {
+          "text": "understand",
+          "destination": {
+            "name": "understand",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Start",
+      "text": "<img class=\"squid\" src=\"http://tentaculon.gorenfeld.net/assets/img/squid.jpg\"/>\n\n<span class=\"fade\">[[You are a squid.]]</span>\n",
+      "links": [
+        {
+          "text": "You are a squid.",
+          "destination": {
+            "name": "You are a squid.",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "thunk reabstractor unit",
+      "text": "You know what a thunk rebstractor unit is, it's important. Without it, the closest you will get to establishing a neural mesh is tapping on the squid tank and making faces.\n\n[[OK->machine core]]\n",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "machine core",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Out in the Hall (I)",
+      "text": "Your lab door opens into the familiar loneliness of a glassy hall that winds in a long circle around the radius of the Institute building. Every few feet there are lights above. Even the janitors have gone home.\n\nThe outer building surface is tinted window with a [[view]] of the city. A few paces down from your lab, you can see a [[security door|Security Door]] identical to yours, where [[the new team]] moved in a few weeks ago. There is a murmur of water pipes.\n\nGoing the other way, the hall runs into [[elevators->Lobby]], where Chico, your former lab partner, will be on his night watchman shift.\n",
+      "links": [
+        {
+          "text": "view",
+          "destination": {
+            "name": "view",
+            "pid": 27
+          }
+        },
+        {
+          "text": "security door",
+          "destination": {
+            "name": "Security Door",
+            "pid": 29
+          }
+        },
+        {
+          "text": "the new team",
+          "destination": {
+            "name": "the new team",
+            "pid": 26
+          }
+        },
+        {
+          "text": "elevators",
+          "destination": {
+            "name": "Lobby",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "the new team",
+      "text": "The day they moved their boxes into Room 513 from the generic-looking white van in the parking lot, you helped them set up a mesh from their rig to the tank and then went out for drinks at the nearby Rendezvous Room. \n\nYou remember laughter and noise and comradeship, enough that you felt comfortable sharing everything with them. The nutshell version of your research, the thoughts that keep you up at night, the sacrifices your parents -- humble 3D matter pipe engineers -- made because they believed you had a gift.\n\nBut as you made your way past the lights to the overground, it struck you that they had told you almost nothing besides their names. For the life of you, you cannot remember exactly what their marine life project involved. \n\nSomething about vision?\n\nAt one point in the evening you had asked who their funders were. They just said, \"people.\"",
+      "links": []
+    },
+    {
+      "pid": 27,
+      "name": "view",
+      "text": "The sun has not pushed the night out of the way yet. But you can see the occasional bright dot of a car making its way through the oaks and deserted traffic stop like a copepod weaving through a field of plankton.\n\nThe moon is still out over the foothills, which rise into silhouette. Closer to the Institute tower are several blocks where streets of shady trees seem to have sprouted commercial labs and parking lots, like the one in front of the Institute, where a street light pole leaves a bar of shade across a prominent [[statue]].\n\n[[OK->Out in the Hall (I)]] \n\n(click-replace: ?hook)[]",
+      "links": [
+        {
+          "text": "statue",
+          "destination": {
+            "name": "statue",
+            "pid": 28
+          }
+        },
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Out in the Hall (I)",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "statue",
+      "text": "The Institute's familiar logo is what you would expect from a place like this. It is a stylized representation of, certainly if not the biggest, one of the most recognizable discoveries in biology in the last few years, the one neurological breakthrough that makes the Institute possible: (text-style: \"blurrier\")[the neural re-abstraction glyph]",
+      "links": []
+    },
+    {
+      "pid": 29,
+      "name": "Security Door",
+      "text": "The security door facing you is made up of nine inches of Q-carbon that stare back at you as if actively uncaring about your agenda for getting what is on the other side.\n\nMounted into the wall besides it is an access card reader.(set: $needKey to true)\n\n[[Go back to the hall near your lab->Hall (returned to in Act I)]]\n[[Walk further down the hall]]\n[[Open the security door|Opening the security door]]\n{\n(if: $knockedCuriouslyOnDoor is false)[\n[[Knock on the door]]\n(set: $knockedCuriouslyOnDoor to true)\n]\n}\n{(if: $playerHasntVisitedSecurityDoor is true)[\n(live: 3s)[\nYou could swear you heard a shuffling motion of some kind. Maybe one of the scientists is working late.\n]\n(live: 4s)[\n(If they ask, you can always come up with an excuse as to why you weren't actually going to sneak into their lab to make unauthorized use of their reabstractor...)\n(set: $playerHasntVisitedSecurityDoor to false)\n]\n]\n}",
+      "links": [
+        {
+          "text": "Go back to the hall near your lab",
+          "destination": {
+            "name": "Hall (returned to in Act I)",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Walk further down the hall",
+          "destination": {
+            "name": "Walk further down the hall",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Open the security door",
+          "destination": {
+            "name": "Opening the security door",
+            "pid": 38
+          }
+        },
+        {
+          "text": "Knock on the door",
+          "destination": {
+            "name": "Knock on the door",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Hall (returned to in Act I)",
+      "text": "The glassy hall that winds in a long circle around the radius of the Institute. Every few feet there are lights above. \n\nNo one's around at this hour. Even the janitors have gone home.\n\nMost of the outer surface of the Institute is a tinted window with a [[view]] of the city. The sun's not up yet but you can see the occasional bright dot of a car moving past the oaks and deserted traffic stops.\n\nNearby stands an imposing [[Security Door]] identical to yours, where [[the new team]] moved in a few weeks ago with their rig. Beyond that is [[your lab|your lab returned to in Act I]].\n\nIn the other direction the hall, passing storage rooms with warning signs on them, hits the [[elevators->Lobby]]. From there you can go to the front desk, where your friend, the night watchman, will be on his shift.",
+      "links": [
+        {
+          "text": "view",
+          "destination": {
+            "name": "view",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Security Door",
+          "destination": {
+            "name": "Security Door",
+            "pid": 29
+          }
+        },
+        {
+          "text": "the new team",
+          "destination": {
+            "name": "the new team",
+            "pid": 26
+          }
+        },
+        {
+          "text": "your lab",
+          "destination": {
+            "name": "your lab returned to in Act I",
+            "pid": 130
+          }
+        },
+        {
+          "text": "elevators",
+          "destination": {
+            "name": "Lobby",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Listen one more time",
+      "text": "Silence except for the air conditioning units and the hum, from somewhere, of a freezer.\n\n[[Go back to the hall->Hall (returned to in Act I)]]",
+      "links": [
+        {
+          "text": "Go back to the hall",
+          "destination": {
+            "name": "Hall (returned to in Act I)",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Knock on the door",
+      "text": "It's just a door.\n\n(live: 2s)[BAM.]\n\n(live: 4s)[A muffled crashing sound from behind the door. The tail end of the crash has a wet quality. Is someone still there?\n\n[[Listen one more time]]\n[[\"Hello?\"]]\n(set: $heardCrash to true)\n]\n[[Return to hallway->Security Door]] ",
+      "links": [
+        {
+          "text": "Listen one more time",
+          "destination": {
+            "name": "Listen one more time",
+            "pid": 31
+          }
+        },
+        {
+          "text": "\"Hello?\"",
+          "destination": {
+            "name": "\"Hello?\"",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Return to hallway",
+          "destination": {
+            "name": "Security Door",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Talk to Chico",
+      "text": "(if: $chicoMad is true)[Chico glares at you.]\n(else-if: $returnedBook is false)[Chico stares at you and drums his fingers impatiently.](else:)[Chico smiles at you.]\n\n(if: $needKey is true)[ \n[[Ask him for an access key.]] \n]\n[[Ask him how his shift is going->Ask him about work.]]\n[[Ask him about his book.]]\n[[Ask him about the research being done in Room 513.]]\n(if: $heardCrash is 1)[ [[Tell him about the crashing sounds.|What about the crashing sounds?]]](if: $gotBook is true)[\n[[Return his book]]\n]\n\n\n[[Lobby]]\n\n",
+      "links": [
+        {
+          "text": "Ask him for an access key.",
+          "destination": {
+            "name": "Ask him for an access key.",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Ask him how his shift is going",
+          "destination": {
+            "name": "Ask him about work.",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Ask him about his book.",
+          "destination": {
+            "name": "Ask him about his book.",
+            "pid": 45
+          }
+        },
+        {
+          "text": "Ask him about the research being done in Room 513.",
+          "destination": {
+            "name": "Ask him about the research being done in Room 513.",
+            "pid": 49
+          }
+        },
+        {
+          "text": "Tell him about the crashing sounds.",
+          "destination": {
+            "name": "What about the crashing sounds?",
+            "pid": 54
+          }
+        },
+        {
+          "text": "Return his book",
+          "destination": {
+            "name": "Return his book",
+            "pid": 69
+          }
+        },
+        {
+          "text": "Lobby",
+          "destination": {
+            "name": "Lobby",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Ask him about work.",
+      "text": "He shrugs.\n\n[[Ask him if he's ever thought about getting back into squid dream research.]]",
+      "links": [
+        {
+          "text": "Ask him if he's ever thought about getting back into squid dream research.",
+          "destination": {
+            "name": "Ask him if he's ever thought about getting back into squid dream research.",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "mantis shrimp",
+      "text": "Interesting. The mantis shrimp was once believed to possess superior powers to ours at distinguishing millions of colors. But as your mind flashes through recent literature on the subject, you can't think of any active studies. \n\nMaybe the Army has dug up the old super-vision chestnut for use in some black ops thing. Guiding flechette missiles. Growing better eyes in vats.",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "Walk further down the hall",
+      "text": "The blast of the air conditioning sound grows loudest as you walk up to another strong door, this one marked \"authorized personnel only\" and fringed in yellow and black stripes.\n\n(if: $haveKey)[\n[[Open the door->Machine room]]\n](else:)[\n[[Open the door->Machine room is locked]]\n]\n[[Go back to where you came from->Security Door]]",
+      "links": [
+        {
+          "text": "Open the door",
+          "destination": {
+            "name": "Machine room",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Open the door",
+          "destination": {
+            "name": "Machine room is locked",
+            "pid": 115
+          }
+        },
+        {
+          "text": "Go back to where you came from",
+          "destination": {
+            "name": "Security Door",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Machine room",
+      "text": "Industrial machinery crowds the darkness of this room. It bristles with warning stripes and control pads. Powerful water equipment churns, the noise hurting your ears.\n\nAn [[access panel]] will let you crawl into the tank area. As for other stuff here: common sense tells you not to mess with it.\n\n<controls><label>[[RUN->test]]</label> Test tank status\n\n<label>[[ARMPWR->Shut off the power]]</label> Shut off power to the complicated mechanical arms that allow them to be rotated in and out of various lab bays\n\n<label>[[FLSH->Flush]]</label> Dump all water tanks on this level\n\n<label>[[RSE->Raise]]</label> <label>[[LWR->lower]]</label> the default temperature of the water.\n</controls>\n\n(if: $finale is true)[[[ Go back out into the hall->Act III Leaving the machine room]]](else:)[[[Go back out into the hall->Security Door]] ] ",
+      "links": [
+        {
+          "text": "access panel",
+          "destination": {
+            "name": "access panel",
+            "pid": 41
+          }
+        },
+        {
+          "text": "RUN",
+          "destination": {
+            "name": "test",
+            "pid": 39
+          }
+        },
+        {
+          "text": "ARMPWR",
+          "destination": {
+            "name": "Shut off the power",
+            "pid": 40
+          }
+        },
+        {
+          "text": "FLSH",
+          "destination": {
+            "name": "Flush",
+            "pid": 70
+          }
+        },
+        {
+          "text": "RSE",
+          "destination": {
+            "name": "Raise",
+            "pid": 42
+          }
+        },
+        {
+          "text": "LWR",
+          "destination": {
+            "name": "lower",
+            "pid": 43
+          }
+        },
+        {
+          "text": " Go back out into the hall",
+          "destination": {
+            "name": "Act III Leaving the machine room",
+            "pid": 108
+          }
+        },
+        {
+          "text": "Go back out into the hall",
+          "destination": {
+            "name": "Security Door",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Opening the security door",
+      "text": "{(if: $haveKey is true)[The door relents and [[lets you inside->Mantis lab]].](else:)[The light flashes rejection. You'll need Code Brown access to get in.]}",
+      "links": [
+        {
+          "text": "lets you inside",
+          "destination": {
+            "name": "Mantis lab",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "test",
+      "text": "<readout>\nLEVEL 5 TANK STATUS\n\nTEMP: $temperature\u00b0 C\nSALINITY: 35 PSU\nDELIVERY BAYS: (if: $generatorOn is true)[ Active ](else:)[ Inactive]\n\n(if: $temperature < 1)[DANGER: FREEZING]\n(if: $temperature > 15)[DANGER: TEMPERATURE TOO HOT, POTENTIAL DAMAGE TO SEA LIFE]\n\nWARNING: SOFTWARE HAS NOT BEEN UPDATED\n</readout>\n[[OK->Machine room]] ",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Machine room",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Shut off the power",
+      "text": "Clack. \n\n(if: $generatorOn is true)[You hear a generator go to sleep somewhere.](else:)[Nothing happens.](set: $messedWithMachines to true)\n\n[[OK->Machine room]] ",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Machine room",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "access panel",
+      "text": "It's locked.\n\n[[Dead end|Red Herring]]",
+      "links": [
+        {
+          "text": "Dead end",
+          "destination": {
+            "name": "Red Herring",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Raise",
+      "text": "You raise the temperature a few degrees.\n(set: $messedWithMachines to true)(set: $temperature = $temperature + 2)\n\n[[OK->Machine room]] ",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Machine room",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "lower",
+      "text": "You lower the temperature a few degrees.(set: $messedWithMachines to true)(set: $temperature to $temperature -2)\n\n[[OK->Machine room]] ",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Machine room",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Red Herring",
+      "text": "It doesn't seem to like your card.",
+      "links": []
+    },
+    {
+      "pid": 45,
+      "name": "Ask him about his book.",
+      "text": "\"Philip K. Dick,\" he says and shows you the cover of the book. He then spends the next five minutes describing the plot in terms of a series of episodes whose significance you are not able to discern. \n\nSomething about astronauts doped up on a drug on a faraway solar system, and not realizing they were on the Moon the whole time. Was that it? Or maybe they weren't astronauts but cyborgs.\n\n[[Continue the conversation->Talk to Chico]]",
+      "links": [
+        {
+          "text": "Continue the conversation",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "everything depends on",
+      "text": "If you can't get results, not only can you forget about finding money in the budget to rent all this neuro-marine biology gear. You will need to sell everything in your house and take a cube job at one of the downtown spam corporations.",
+      "links": []
+    },
+    {
+      "pid": 47,
+      "name": "connected",
+      "text": "By an ingenious array of huge mechanical arms, any of several sub-tanks can be swiveled into your lab from the Library. \n\nThe Library occupies the massively tall cylinder forming the core of the Institute building.",
+      "links": []
+    },
+    {
+      "pid": 48,
+      "name": "mimic breaker",
+      "text": "Looks like this heavy red horseshoe-shaped switch was already swung into place from the last login. Never hurts to double check, though.\n\n(set: $FlipMimicSwitch to 1)\n\n[[OK|Step By Step (I)]]",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Step By Step (I)",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Ask him about the research being done in Room 513.",
+      "text": "\"Military. Mantis shrimps. Something about wavelengths of vision?\" \n\nHis attention is drawn to the reflection left on the front window by a passing car, then back to you.\n\n\"You ever wonder,\" he says, \"if we should have researched vision? Instead of trying to find answers to life in something that has tentacles instead of hands?\"\n\n[[\"What do you know about mantis shrimps?\"]]\n[[Change subjects->Talk to Chico]]",
+      "links": [
+        {
+          "text": "\"What do you know about mantis shrimps?\"",
+          "destination": {
+            "name": "\"What do you know about mantis shrimps?\"",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Change subjects",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Ask him for an access key.",
+      "text": "He evaluates your motivations. (if: $returnedBook is true)[ Then his glance falls upon the book you gave back, and he flips through it as his brow furrows.](else:)[Instead of answering your question he asks, rhetorically, \"You ever hear of how Ben Franklin would get people to like him?\"\n\n[[\"No, how?\"]]\n](else:)[\n[[Come up with a story about locking yourself out of your lab]]\n[[Tell the truth about bending the rules to perform experiments you are not supposed to be doing]]]\n[[Return to other subjects->Talk to Chico]]",
+      "links": [
+        {
+          "text": "\"No, how?\"",
+          "destination": {
+            "name": "\"No, how?\"",
+            "pid": 128
+          }
+        },
+        {
+          "text": "Come up with a story about locking yourself out of your lab",
+          "destination": {
+            "name": "Come up with a story about locking yourself out of your lab",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Tell the truth about bending the rules to perform experiments you are not supposed to be doing",
+          "destination": {
+            "name": "Tell the truth about bending the rules to perform experiments you are not supposed to be doing",
+            "pid": 56
+          }
+        },
+        {
+          "text": "Return to other subjects",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Ask him if he's ever thought about getting back into squid dream research.",
+      "text": "He shoots you a look as if stung by your bringing up a sensitive subject. But instead of firing back he laughs and says:\n\n\"That last time we crossed over, you're not going to believe this, but I felt something cross back from the other side.\"\n\n[[\"Something?\"]]\n[[\"Anyway...\"->Talk to Chico]]",
+      "links": [
+        {
+          "text": "\"Something?\"",
+          "destination": {
+            "name": "\"Something?\"",
+            "pid": 61
+          }
+        },
+        {
+          "text": "\"Anyway...\"",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "\"And now?\"",
+      "text": "He looks at you. \"Now? Now I wonder if we have it the wrong way around.\"\n\n[[\"You think our work wasn't worth it?\"]]\n[[Change subjects->Talk to Chico]]",
+      "links": [
+        {
+          "text": "\"You think our work wasn't worth it?\"",
+          "destination": {
+            "name": "\"You think our work wasn't worth it?\"",
+            "pid": 62
+          }
+        },
+        {
+          "text": "Change subjects",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "\"What do you know about mantis shrimps?\"",
+      "text": "<img src=\"http://tentaculon.gorenfeld.net/assets/img/shrimp.jpg\" class=\"medium\"/>(set: $heardAboutMantisShrimp to 1)\n\nThe two of you check online.\n\n<wikipedia>[[Mantis shrimp->mantis shrimp]] or stomatopods are marine crustaceans, the members of the order Stomatopoda. Most species can grow to around 10 centimetres (3.9 in) in length, though a few species reach up to 38 cm (15 in). The largest ever caught has a length of 46 cm in the ocean near Fort Pierce, Florida of the former United States. The carapace of mantis shrimp covers only the rear part of the head and the first four segments of the thorax. There are more than 400 species of Mantis shrimp. Varieties range from shades of brown to vivid colours, and are among the most important predators in many shallow, tropical and sub-tropical marine habitats. Despite being common, they are poorly understood as many species spend most of their life tucked away in burrows and holes.\n\nCalled \"sea locusts\" by ancient Assyrians, \"prawn killers\" in Australia and now sometimes referred to as \"thumb splitters\" \u2013 because of the animal's ability to inflict painful gashes if handled incautiously \u2013 mantis shrimps sport powerful claws that they use to attack and kill prey by spearing, stunning, or dismemberment. In captivity, some larger species are capable of breaking through aquarium glass with a single strike.</wikipedia>\n\n[[Return to other subjects->Talk to Chico]]",
+      "links": [
+        {
+          "text": "Mantis shrimp",
+          "destination": {
+            "name": "mantis shrimp",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Return to other subjects",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "What about the crashing sounds?",
+      "text": "He blinks. \"Take it from a friend,\" he says. \"You've really gone around the bend on this stuff. Maybe time to get a cab?\"\n\nRather than push it...\n\n[[Talk about something else->Talk to Chico]]",
+      "links": [
+        {
+          "text": "Talk about something else",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Come up with a story about locking yourself out of your lab",
+      "text": "The wheels go around in his mind as he processes this unlikely story. Instead of commenting, he reaches under the desk for something. \n\n\"Just return this when you're done,\" he says and places the access key in your hands.\n\n(set: $haveKey to true)(set: $chicoMad to true)\n\n[[Change subjects->Talk to Chico]]\n[[Lobby]]\n",
+      "links": [
+        {
+          "text": "Change subjects",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Lobby",
+          "destination": {
+            "name": "Lobby",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "Tell the truth about bending the rules to perform experiments you are not supposed to be doing",
+      "text": "The look on your former partner's face as he processes this makes you wonder if he is about to reach across the desk for the hotline to security. \n\nYou've put him in a bind. The entire point of his job is reporting security infringements.\n\n[[Try to convince him it's something you need to do]]\n\n[[Tell him to go ahead and have you banned from the Institute.]]",
+      "links": [
+        {
+          "text": "Try to convince him it's something you need to do",
+          "destination": {
+            "name": "Try to convince him it's something you need to do",
+            "pid": 58
+          }
+        },
+        {
+          "text": "Tell him to go ahead and have you banned from the Institute.",
+          "destination": {
+            "name": "Tell him to go ahead and have you banned from the Institute.",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Tell him to go ahead and have you banned from the Institute.",
+      "text": "When day breaks, you receive a curt but friendly e-mail saying your access card will no longer allow you back into the main doors.\n\nTHE END",
+      "links": []
+    },
+    {
+      "pid": 58,
+      "name": "Try to convince him it's something you need to do",
+      "text": "There is a uncomfortable pause. Then he yanks something free from under the shadows of the desk, swipes it across the face of a reader and places it into your hands.\n\nIt's the access key you need. \"Look, just don't get me in trouble,\" he says. (set: $haveKey to true)(set: $needKey to false)\n\n[[Return to other subjects->Talk to Chico]]\n[[Leave->Lobby]]",
+      "links": [
+        {
+          "text": "Return to other subjects",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "Lobby",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Go through the front doors",
+      "text": "You feel the chill of the early morning as you pass through the automatic doors to the parking lot. There are almost no cars here, and the moon is still up. \n\nThe way a flag crackles in the wind makes you suspect it will rain all day again. But it has been clear all night.\n\nThe drive up through the Institute ends at a great [[statue]].\n\n[[Go back inside->Lobby]]\n\n\n",
+      "links": [
+        {
+          "text": "statue",
+          "destination": {
+            "name": "statue",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Go back inside",
+          "destination": {
+            "name": "Lobby",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "\"Hello?\"",
+      "text": "Silence except the generators from down the hall.\n\n[[OK->Knock on the door]] ",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Knock on the door",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "\"Something?\"",
+      "text": "\"It was something cold, alien. But it wasn't me and it wasn't the squid. It was like we reached into the void and this new personality reached back, like a  solid presence so certain about what it wanted, and what it wanted was to snuff out all of us. And even after I pulled off the electrodes it was still there.\n\n\"All the years we worked together, I thought we were doing science, doing something good. Reaching for the first time into the consciousness of an animal species...\" \n\nHe trails off.\n\n[[\"And now?\"]]\n",
+      "links": [
+        {
+          "text": "\"And now?\"",
+          "destination": {
+            "name": "\"And now?\"",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "\"You think our work wasn't worth it?\"",
+      "text": "\"I think maybe we're the squids. Dreaming of being us in this building.\"\n\nHe stares, interested in your reaction. Then he shrugs and returns to his sci-fi book.\n\n\"But I suppose it doesn't matter,\" Chico's voice echoes in the shadows of the lobby. \"After what happened, it will be a long time before they let us work in dream space again.\"\n\n[[Continue the conversation->Talk to Chico]]\n[[Leave->Lobby]]",
+      "links": [
+        {
+          "text": "Continue the conversation",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "Lobby",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Lobby",
+      "text": "A shaft of light falls through the emptiness of the atrium, forming a pool in the center of which rises a sleek front desk emblazoned with the Institute logo. Behind the desk, Chico has a book in his huge hands.\n\nAbove, lit up by lighting fixtures, is a large painting of a squid grappling with a shark.\n\n(if: $haventMetChico is true)[\nYour former lab partner, a gentle slab of a man, looks up when he sees you. \"Hello,\" he says, calling you by your first name. \"You're here so late.\"(set: $haventMetChico to false)]\n(if: $messedWithMachines is true)[\"You're still here?\" Chico says. \"Hope you haven't gone nuts and messed with the machines.\"]\n[[Talk to Chico]]\n[[Go back upstairs->Hall (returned to in Act I)]]",
+      "links": [
+        {
+          "text": "Talk to Chico",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Go back upstairs",
+          "destination": {
+            "name": "Hall (returned to in Act I)",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "paperback book",
+      "text": "Dog-eared and on loan from your former lab partner Chico for months. \n\nLot of people these days into this stuff, your classic Y2K-'Zation lit.\n\nYou don't know if you can [[finish it|book image]].\n",
+      "links": [
+        {
+          "text": "finish it",
+          "destination": {
+            "name": "book image",
+            "pid": 127
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "Pick up reading where you left off",
+      "text": "Chapter 3 opens with a scene of the heartbroken main character, Alan, fresh from the events in Chapter 2 in which he ended things with the love of his life at an East London curry house--where the tikka masala, he might add, was prepared with just a bit too much cardamom, which is still troubling him as much as anything (that's what he tells himself, anyway!) during his noontime walk down the gloomy pavement of Buxton Street.\n\nA little bell jingles as he walks into his neighborhood repair shop to see if his cracked phone has been repaired. Humorously, he tries to get the attention of the clerks, but fails, because they are embroiled in a heated discussion with another customer, a dapper stock broker who has just lost his job.\n\nAlan thinks they are arguing about the bill. But they're not. They're talking about the upcoming, city-wide chutney competition...\n\n(Yeah, you're not gonna have time to finish this one)\n\n(if: $onFire is true)[By the way, your lab equipment is still on fire.\n]",
+      "links": []
+    },
+    {
+      "pid": 66,
+      "name": "Prey",
+      "text": "<squid>Even in the gloom you can make out the tendrils of your delicious prey. Your intrusion has caught the crustacean by surprise and it is considering its options.\n\nWhen you are close, the tips of your tentacles tingle with anticipation, measuring just the right [[leap.]]\n\n(live: 4s)[(The creature is not glowing. Was something else glowing?)]</squid>",
+      "links": [
+        {
+          "text": "leap.",
+          "destination": {
+            "name": "leap.",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "Your equipment is shorting out.",
+      "text": "You flip a bank of switches and the hum in the system dies.(set: $onFire to false)\n\n[[OK. Back to square one.->Crisis averted]]",
+      "links": [
+        {
+          "text": "OK. Back to square one.",
+          "destination": {
+            "name": "Crisis averted",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "red sticker",
+      "text": "\"Be sure to turn off the machine before leaving at night\"",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "Return his book",
+      "text": "He looks surprised. \"<em>Life Chutney</em>,\" he says, smoothing over the bend in the front cover as if soothing a returned pet. \"I was starting to think I lost it.\"(set: $returnedBook to true)(set: $gotBook to false)(replace: ?a1)[]\n\nHe asks what your favorite part was.\n\n[\"I loved every page of it, especially the analogies about how chutney is like life.\"]<c1|\n[\"The sentences didn't blow me away.\"]<c2|\n[\"You were the smartest person in the lab. How could you read such saccharine garbage?\"]<c3|\n\n(click: ?c1)[\"Very glad. Oh, I'm so very glad.\"(set: $chicoHappy to true) A smile crosses his face. \"This book will put you back together.\"]\n\n(click: ?c2)[\"Life Chutney is not about sentences,\" he says. \"Any more than our research was about tanks of water.\" He looks upset. (set: $chicoMad to true)]\n\n(click: ?c3)[He tries not to look hurt. \"One of these days, when you aren't even thinking about it, it will click for you. Maybe even teach you to think about someone else besides yourself.\"(set: $chicoMad to true)]\n\n[[Return to other subjects|Talk to Chico]]\n[[Back to the lobby->Lobby]] \n\n",
+      "links": [
+        {
+          "text": "Return to other subjects",
+          "destination": {
+            "name": "Talk to Chico",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Back to the lobby",
+          "destination": {
+            "name": "Lobby",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "Flush",
+      "text": "(if: $emergency is true)[\nYou turn the consequential-looking dial. Red lights flare up and a second prompt pops up, asking whether you want to\n\n[[CNCL->Machine room]] \n[[CNFRM]] (in red)]\n(else:)[\nA prompt informs you that this is only for emergencies.\n]\n\n",
+      "links": [
+        {
+          "text": "CNCL",
+          "destination": {
+            "name": "Machine room",
+            "pid": 37
+          }
+        },
+        {
+          "text": "CNFRM",
+          "destination": {
+            "name": "CNFRM",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "CNFRM",
+      "text": "The building lets out a sigh. A motoring sound, which has been going the whole time, shrieks to a halt. You picture it as a moving part the size of a garbage truck.(set: $flush to true)\n\nAll the screens around you turn into red warning signs.\n\n[[OK->Machine room]] ",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Machine room",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "The Book",
+      "text": "When you saw the big man re-reading this one yet again, and you asked what it was, he became wildly animated in his pleas for you to read it. It would change your life, he said. It was good to see him happy.\n\nBut you could never make it too far into such a saccharine love story. You are thinking of cutting your losses and bringing it back unread past Chapter 2.\n\n[[Pick up reading where you left off]]\n[Return the book]<b1| \n(if: $camebackforthebook is true)[\n[[Leave|Hall (returned to in Act I)]]\n](else:)[\n[[Do something else at the lab->Crisis averted]] \n]\n\n(click: ?b1)[You tuck the book under your arm and make a note of returning it to your friend.(set: $gotBook to true)(replace:?b1)[ ]]",
+      "links": [
+        {
+          "text": "Pick up reading where you left off",
+          "destination": {
+            "name": "Pick up reading where you left off",
+            "pid": 65
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "Hall (returned to in Act I)",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Do something else at the lab",
+          "destination": {
+            "name": "Crisis averted",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "Take a closer look at the tank",
+      "text": "A little mantis shrimp weaves into view, its attention elsewhere. Rainbow colors streak its shell. Its eyes sit on stalks that are like blue light sockets.\n\nThey fix on you through the glass, looking as if the creature blames you for whoever painted it the colors of a child's finger-paint. But the glass is too thick for it to punch through.\n\nSomething about its shape and its twitchy movements remind you of another crustacean, the one you saw tonight in a dream. But that was another species.\n\n[[OK->Mantis lab]] ",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Mantis lab",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "Find the part you need for your rig",
+      "text": "Popping open the rig core, you find the reabstractor, shiny and undamaged.\n\n[Take it]<take|\n[[Do something else first->Mantis lab]] \n\n(click: ?take)[Done. You remove it and slip it into your lab coat pocket.\n\nIf you can finish the experiment by 8 a.m., you should have time to sneak back in and put things back the way they were, with no one the wiser and before your colleagues have finished breakfast downstairs.(set: $stolePart to true)\n\n[[Continue->Mantis lab]] \n]",
+      "links": [
+        {
+          "text": "Do something else first",
+          "destination": {
+            "name": "Mantis lab",
+            "pid": 76
+          }
+        },
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Mantis lab",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Check out the terminal",
+      "text": "When you move the music player window out of the way, you see that someone has a number of tabs open, with various documents.\n\n[Email]<email|\n[Untitled2.doc]<untitled2|\n[Force.chart]<chart|\n[[Minefield]]\n[[Do something else->Mantis lab]] \n\n(click:?email)[Generic stuff--\"this is a building-wide notice,\" etc.--but you notice  a personal [[message]] sent 12 minutes ago.]\n\n(click:?untitled2)[The first draft of an unfinished paper. Hard to follow but concerned with fine points of muscle cell growth. Also, it looks as if the author, overwhelmed upon reaching the heading \"potential warfaring applications,\" hesitated, began one last sentence with an \"Unfortunately,\" and then took a break.]\n\n(click:?chart)[A brightly colored chart emphasizes some unknown X ramping sharply upwards because unknown Y. Marking the taller end: the silhouette of a crustacean of some kind.]\n\n(live: 10s)[The thought hits you: What the hell are you doing? Did you even think to plan for what would happen if someone just walked in on you?](live: 12s)[ Clammy, you wonder if, in your haste, you remembered to power down everything in your own lab before stealing parts from someone else's.]",
+      "links": [
+        {
+          "text": "Minefield",
+          "destination": {
+            "name": "Minefield",
+            "pid": 79
+          }
+        },
+        {
+          "text": "Do something else",
+          "destination": {
+            "name": "Mantis lab",
+            "pid": 76
+          }
+        },
+        {
+          "text": "message",
+          "destination": {
+            "name": "message",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "Mantis lab",
+      "text": "The first sound that reaches you in this brilliantly-lit white room is a clicking and whirring.\n\nOn the other side of the long countertops that cross the room you can see another water tank like the one in your own lab.\n\nThere is a computer [[terminal->Check out the terminal]] running some sort of automatic process from one of the long countertops that cross the lab to the tank. On one side shelves peek out from a doorway to a [[storage room.->Supply Room]].\n\nFor a moment, a flash of color catches your eye from the [[tank->Take a closer look at the tank]]. Something whose shape spindles and unnerves you. It is gone a second later.\n\n[[Find the part you need for your rig]]\n[[Look around the room.]]\n[[Go to the storage room->Supply Room]]\n[[Leave->Followed by the Creature]]\n\n(set: $hasVisitedShrimpLab to true)(set: $heardFinaleNoise to false)\n(click-replace: \"a clicking and whirring\")[the sound of machines]\n",
+      "links": [
+        {
+          "text": "terminal",
+          "destination": {
+            "name": "Check out the terminal",
+            "pid": 75
+          }
+        },
+        {
+          "text": "storage room.",
+          "destination": {
+            "name": "Supply Room",
+            "pid": 81
+          }
+        },
+        {
+          "text": "tank",
+          "destination": {
+            "name": "Take a closer look at the tank",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Find the part you need for your rig",
+          "destination": {
+            "name": "Find the part you need for your rig",
+            "pid": 74
+          }
+        },
+        {
+          "text": "Look around the room.",
+          "destination": {
+            "name": "Look around the room.",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Go to the storage room",
+          "destination": {
+            "name": "Supply Room",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "Followed by the Creature",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "Look around the room.",
+      "text": "It's just a lab. Although you can see the faintest tracks of water along the stain-resistant flooring, as if someone came in from the rain and failed to remove their Wellingtons.",
+      "links": []
+    },
+    {
+      "pid": 78,
+      "name": "Followed by the Creature",
+      "text": "(set: $finale to true)(set: $emergency to true)(if: $heardFinaleNoise is false)[As you leave the room, an echo matches your footsteps. \n\nIt is a bony trudging sound from the direction of the other lab. It starts as a crazy shuffle but then drops into silence like words ending in a question mark.(set: $heardFinaleNoise to true)]\n\nYou can [[turn around and lock the door->go back inside]], or [[Returning to your Lab]]? Or head for the level's [[maintenance room->Machine room]]  room]].\n",
+      "links": [
+        {
+          "text": "turn around and lock the door",
+          "destination": {
+            "name": "go back inside",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Returning to your Lab",
+          "destination": {
+            "name": "Returning to your Lab",
+            "pid": 84
+          }
+        },
+        {
+          "text": "maintenance room",
+          "destination": {
+            "name": "Machine room",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "Minefield",
+      "text": "<img src=\"http://www.cs.sjsu.edu/~pearce/modules/labs/nlogo/minesweep/index_files/image002.jpg\"/>\n",
+      "links": []
+    },
+    {
+      "pid": 80,
+      "name": "message",
+      "text": "You promised yourself that you would draw the line at reading other people's personal correspondence. Pleased with yourself, you close the window.",
+      "links": []
+    },
+    {
+      "pid": 81,
+      "name": "Supply Room",
+      "text": "[[The lights are off]].\n\n\n",
+      "links": [
+        {
+          "text": "The lights are off",
+          "destination": {
+            "name": "The lights are off",
+            "pid": 140
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "Check out the legs",
+      "text": "It's one of the military scientists, slumped in the corner with no life in his eyes.\n\nYou have a rising reflex to [[run->Supply Room]] and not spend more than a second absorbing the feeling of looking at this smashed former person in a uniform.(set: $foundDeadBody to true)\n\n[[Go back->Supply Room]] ",
+      "links": [
+        {
+          "text": "run",
+          "destination": {
+            "name": "Supply Room",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Go back",
+          "destination": {
+            "name": "Supply Room",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "go back inside",
+      "text": "If a colleague were standing here with you in the long empty hall, like at any lunch break, they could watch you slip back into the lab. They could hear your shock and surprise at whirling around to see the horrible thing waiting for you in there. Maybe they could even have fled for the elevator with their own lives intact.\n\nBut as you are alone, your body is not found until weeks after the ensuing catastrophe and large-scale cleanup.\n\nTHE END",
+      "links": []
+    },
+    {
+      "pid": 84,
+      "name": "Returning to your Lab",
+      "text": "With your steps back to your lab, you become aware of an insistent electronic whine that pulses louder as you return to the door. \n\nYou must have left something on. It could be a radiation leak.(set: $returnedToYourLab to false)\n\n[[Go into your lab->Act III Your Lab]]\n[[Don't->Followed by the Creature]] ",
+      "links": [
+        {
+          "text": "Go into your lab",
+          "destination": {
+            "name": "Act III Your Lab",
+            "pid": 85
+          }
+        },
+        {
+          "text": "Don't",
+          "destination": {
+            "name": "Followed by the Creature",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "Act III Your Lab",
+      "text": "(if: $returnedToYourLab is false)[The door to your lab slides closed behind you as you return to the scene of your experiments, re-uniting with the squid.(set: $returnedToYourLab to true)]\n(if: $flush is true)[The door to your lab [remains wide open.]<door| Water crashes down the hall.]\n\n[Check for radiation leak]<leak|\n[[Resume the experiment]]\n[[Hall (Danger)]](if: $flush is true)[\n[Close the door]<close|\n]\n\n(click:?leak)[Whew! It's not a radiation leak. It was the calendar reminder you set weeks ago, reminding yourself of the very same opening in the Institute lab schedule permitting you, now, to work on your groundbreaking research. You really need to work on your stress.]\n(click:?close)[You find a manual override to shut the door.(replace:?door)[has shut.]]",
+      "links": [
+        {
+          "text": "Resume the experiment",
+          "destination": {
+            "name": "Resume the experiment",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Hall (Danger)",
+          "destination": {
+            "name": "Hall (Danger)",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "Resume the experiment",
+      "text": "You are about to, when the door to your lab rings with a BANG sound. A moment later quiet has just returned when the clanging, crashing sounds resume, in staccato.\n\nBANG. (live: 2s)[BANG](live: 3s)[BANG](live: 4s)[BANG](live: 7s)[BANGBANGBANGBANGBANGBANGBANG.]\n\n[[Go outside to see what it is]]\n[[Wait it out]]\n[[Restart the procedure->Reconnect to the squid]] \n[[Think of something else]]\n",
+      "links": [
+        {
+          "text": "Go outside to see what it is",
+          "destination": {
+            "name": "Go outside to see what it is",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Wait it out",
+          "destination": {
+            "name": "Wait it out",
+            "pid": 92
+          }
+        },
+        {
+          "text": "Restart the procedure",
+          "destination": {
+            "name": "Reconnect to the squid",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Think of something else",
+          "destination": {
+            "name": "Think of something else",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "Go outside to see what it is",
+      "text": "If a colleague were standing here with you in the lab, they could watch you slip outside as if to sign for a UPS package. They could hear your shock and surprise at meeting the horrible thing out there. Maybe they could even have waited out the incident with their own lives intact.\n\nBut as you are alone, your body is not found until weeks after the ensuing catastrophe and large-scale cleanup.\n\nTHE END",
+      "links": []
+    },
+    {
+      "pid": 88,
+      "name": "Pull the fire alarm",
+      "text": "You shouldn't. The sprinklers would douse your lab, the building's emergency system would go nuts and you would be in a world of trouble.",
+      "links": []
+    },
+    {
+      "pid": 89,
+      "name": "Think of something else",
+      "text": "[[Restart the squid procedure->Reconnect to the squid]] \n\n[[If you could somehow hook whatever it is to your mind link rig, you could communicate with it and find out that it is frightened and just wants to go home]]\n\n[[Fire alarm]]\n(set: $lucid to true)\n(set: $breaker to true)",
+      "links": [
+        {
+          "text": "Restart the squid procedure",
+          "destination": {
+            "name": "Reconnect to the squid",
+            "pid": 93
+          }
+        },
+        {
+          "text": "If you could somehow hook whatever it is to your mind link rig, you could communicate with it and find out that it is frightened and just wants to go home",
+          "destination": {
+            "name": "If you could somehow hook whatever it is to your mind link rig, you could communicate with it and find out that it is frightened and just wants to go home",
+            "pid": 90
+          }
+        },
+        {
+          "text": "Fire alarm",
+          "destination": {
+            "name": "Fire alarm",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "If you could somehow hook whatever it is to your mind link rig, you could communicate with it and find out that it is frightened and just wants to go home",
+      "text": "Maybe after you can immobilize it...",
+      "links": []
+    },
+    {
+      "pid": 91,
+      "name": "Fire alarm",
+      "text": "Ear-piercing emergency sounds begin ringing from all sides. (set: $fireAlarm to true)\n\n[[Continue with this plan->Act III Your Lab]] ",
+      "links": [
+        {
+          "text": "Continue with this plan",
+          "destination": {
+            "name": "Act III Your Lab",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "Wait it out",
+      "text": "Dents pit the inside of your door.\n\nBANG. (live: 2s)[BANG](live: 3s)[BANG](live: 4s)[BANG](live: 5s)[BANG.]\n\n[Keep waiting]<wait|\n[[Think of something else]]\n\n(click:?wait)[You've got to do something. The thing that followed you out of the lab seems fixed on breaking the door down.]",
+      "links": [
+        {
+          "text": "Think of something else",
+          "destination": {
+            "name": "Think of something else",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "Reconnect to the squid",
+      "text": "Plugging jacks in, you frantically conjure up the sequence, hoping you aren't blanking on anything. (if: $fireAlarm is false)[(live:2s)[BANG](live:3s)[BANG](live:6s)[BANG](live:9s)[BANG](live:14s)[BANG BANG BANG]]\n\n1. Check on the [squid.]<squidcheck|\n\n2. Check your [synaptic algorithm]<math|\n\n3. (set: $lucidCycle to 1)(set: $wake to false)The <wikipedia>[LUCID]|/[WAKE]</wikipedia> state switch is set to the desired value. It's set to |lucidSetting>[LUCID].(click-replace: ?lucidSetting)[(display: \"Lucidlogic\")]\n\n4. (set: $breaker to true)Be sure the mimic breaker is switched on if you want sim failsafe to pull you back out. It's |mimicSetting>[ON].(click-replace: ?mimicSetting)[(display: \"Mimiclogic\")]\n\n5. [[Engage->Falling]] the machine core again and jump back into the squid.\n\n(click-replace: ?squidcheck)[squid. (She's fine)]\n(click-replace: ?math)[synaptic algorithm. (It's fine, it's fine!)]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Lucidlogic",
+            "pid": 103
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Mimiclogic",
+            "pid": 102
+          }
+        },
+        {
+          "text": "Engage",
+          "destination": {
+            "name": "Falling",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "Act IV",
+      "text": "<squid>[[You are a squid.->Newsquid]]</squid> ",
+      "links": [
+        {
+          "text": "You are a squid.",
+          "destination": {
+            "name": "Newsquid",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "bearings",
+      "text": "<squid>(if: $mimicCycle is 0)[Cool control settles over your tentacles.](else:)[You are a squid. That much is certain. \n\nBut a fragment of something else swims into your consciousness, a flat thing hovering in front of you for a second. \n\nYou recognize the flat thing as an Egress Point. A virtual doorway injected into your mind to prevent you, a human in a lab, from remaining trapped in the other mind.\n\n[[Touch the Egress Point->Oh no...]] \n]\n\n(if: $lucidCycle is 0)[Your suckers brush a hard surface. You can see through it to see the human. The human sits unmoving in a human cave.]\n\n(if: $lucidCycle is 0)[\n[[Swim away from the human]]\n](else:)[Curtains of light glide past as you and your brother squids [[roam the depths]].]</squid>",
+      "links": [
+        {
+          "text": "Touch the Egress Point",
+          "destination": {
+            "name": "Oh no...",
+            "pid": 100
+          }
+        },
+        {
+          "text": "Swim away from the human",
+          "destination": {
+            "name": "Swim away from the human",
+            "pid": 105
+          }
+        },
+        {
+          "text": "roam the depths",
+          "destination": {
+            "name": "roam the depths",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "Newsquid",
+      "text": "\n\n<squid>You have rested here a long time, slumbering and coiled. But some enemy in the water must have played a trick on you to knock you from your normal hungry vigilance.\n\nRising from a gray canyon of forgetfulness, your membranes twitch, you orient yourself against your own movement in the water rushing around your hearing sacs, you feel blood beating in your veins and your [[bearings]] come back to you.</squid>",
+      "links": [
+        {
+          "text": "bearings",
+          "destination": {
+            "name": "bearings",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "roam the depths",
+      "text": "<squid>Beyond lies a trench that shimmers with clouds of rainbow fish, and you set your heart on a long day of hunting. \n\n[[Look for a good crustacean]]\n[[Stay with the group->Look for a good crustacean]] \n\n(live: 3s)[It seems like all this has happened before.]</squid>",
+      "links": [
+        {
+          "text": "Look for a good crustacean",
+          "destination": {
+            "name": "Look for a good crustacean",
+            "pid": 98
+          }
+        },
+        {
+          "text": "Stay with the group",
+          "destination": {
+            "name": "Look for a good crustacean",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "Look for a good crustacean",
+      "text": "{<squid>\n(if: $mimicCycle is 1)[Something is [[pulling you away->Oh no...]]](else:)[Before you can act, an nagging gray numbness takes hold. Soon you are aware of nothing but your shadow, and then not even that.\n\nTHE END\n]\n</squid>}",
+      "links": [
+        {
+          "text": "pulling you away",
+          "destination": {
+            "name": "Oh no...",
+            "pid": 100
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "wrench",
+      "text": "[[Oh no...]]",
+      "links": [
+        {
+          "text": "Oh no...",
+          "destination": {
+            "name": "Oh no...",
+            "pid": 100
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "Oh no...",
+      "text": "You realize the connection has died and left you back in the lab. Electrodes are taped to your head. Your chair sits in the shadow of something bulky, crustacean and streaked with rainbow colors.\n\nIt is the thing from down the hall. The arms that it used to punch its way through your lab door begin to land hammer-blows on the lab, and on you. Through the glass tank, the squid flutters its arms with disquiet as you meet your fate.\n\nTHE END\n",
+      "links": []
+    },
+    {
+      "pid": 101,
+      "name": "Intro",
+      "text": "<wikipedia>Tentaculon</wikipedia>\n\n[[Start]]\n\n<!-- Act I variables !-->\n\n\n<!-- Act II variables !-->\n(set: $knockedCuriouslyOnDoor to false)\n(set: $haventMetChico to true)\n(set: $messedWithMachines to false)\n(set: $temperature to 10)\n(set: $generatorOn to true)\n(set: $labOnFire to true)\n(set: $gotBook to false)\n(set: $onFire to true)\n(set: $restartedExperiment to true)\n\n<!-- Act III variables !-->\n(set: $isSquid to false)\n(set: $tranqRod to false)\n(set: $finalFight to 0)",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "Mimiclogic",
+      "text": "(set: $mimicCycle to (it + 1) % 2)(if: $mimicCycle is 0)[ON(set: $breaker to true)](else:)[OFF(set: $breaker to false)](click-replace: ?mimicSetting)[(display: \"Mimiclogic\")]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Mimiclogic",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "Lucidlogic",
+      "text": "(set: $lucidCycle to (it + 1) % 2)(if: $lucidCycle is 0)[WAKE](else:)[LUCID](click-replace: ?lucidSetting)[(display: \"Lucidlogic\")]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Lucidlogic",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "Six months later",
+      "text": "On a warm July weekday, a visitor, tablet in hand, is following the new director of the Institute down long white halls. He asks questions and taps checkboxes on the pad.\n\nHe is here to survey the reconstruction of the building. It suffered significant fire damage months ago when several floors gave way. His bosses are keen to extract assurances from Chico M. Collins, the new director, that steps have been taken against any reocurrence of what happened.\n\nThe incident had been all over the news. And not just because Collins won national praise for his swift response to the fire, rushing in to prevent what could have been much worse harm to sea life and lab equipment. The accident also blew the lid off the secret military plans to build horrors forbidden by international law, resulting in ongoing Congressional hearings.\n\nElevator doors slide open mid-conversation, and the visitor is led through them into a lab.\n\nWith a sentimental gesture that is lost on the visitor, he invites the inspector over to a tank where a dark shape shuffles in the corner. Its slippery skin has been refrigerated to temperatures cold enough for the benthic bottom of the ocean.\n\nChico taps on the glass and it rouses and stares back with huge squid's eyes.\n\n[[You are a squid.->Squid ending]]",
+      "links": [
+        {
+          "text": "You are a squid.",
+          "destination": {
+            "name": "Squid ending",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "Swim away from the human",
+      "text": "<squid>You are propelling towards the other side when a ripple goes through your suckers. \n\nThe disturbance makes you turn. There had already been a danger, something that had stalked into the cave. But before you can judge the danger, the sea lifts and spills you into the cave which is now not a cave but a bigger sea.\n\nThe thing comes at you with its hammer-hands. \n\n(if: $mimicCycle is 1)[The emergency safeguard, controlled by the mimic breaker, kicks in and [[pulls you out|Oh no...]] of the mind link.]\n(else:)[To one side the sea has poured into a [[side chamber]], a place to flee to.\n\nAhead of you the creature is clawing at something. [[Fight it]] ]\n</squid>",
+      "links": [
+        {
+          "text": "pulls you out",
+          "destination": {
+            "name": "Oh no...",
+            "pid": 100
+          }
+        },
+        {
+          "text": "side chamber",
+          "destination": {
+            "name": "side chamber",
+            "pid": 133
+          }
+        },
+        {
+          "text": "Fight it",
+          "destination": {
+            "name": "Fight it",
+            "pid": 136
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "Hall (Danger)",
+      "text": "(if: $fireAlarm is true)[Every few steps down the hall, a vertical evacuation light is strobing. \n\nThrough the sprinklers you can see that the creature, sent into a frenzy by the lights, has shuffled down to the other end of the hall, near the elevator. It is reared up on the door, clawing and trying to get elsewhere.\n\n[[Head for the elevator->You would never make it.]]\n[[Head for the machine room->Machine room]]](else:)[\nThe shuffling sound of the creature sets off a wave of nausea that forces you to stay in your [[lab->Act III Your Lab]].]",
+      "links": [
+        {
+          "text": "Head for the elevator",
+          "destination": {
+            "name": "You would never make it.",
+            "pid": 107
+          }
+        },
+        {
+          "text": "Head for the machine room",
+          "destination": {
+            "name": "Machine room",
+            "pid": 37
+          }
+        },
+        {
+          "text": "lab",
+          "destination": {
+            "name": "Act III Your Lab",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "You would never make it.",
+      "text": "You would never make it.\n\n[[OK, think think think->Hall (Danger)]] ",
+      "links": [
+        {
+          "text": "OK, think think think",
+          "destination": {
+            "name": "Hall (Danger)",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "Act III Leaving the machine room",
+      "text": "(if: $flush is true)[Every door in the corridor has opened, leaving an unease.]\n\nThrough the sprinkler mist you can make out something moving at the far end of the hall, near the elevator. It is the segmented shell of the amphibious thing that followed you out of the lab. It is reared up and probing the elevator door with its feelers.\n\nFrom here you can sneak [[back into the maintenance room->Machine room]], or make a break for [[lab->Act III Your Lab]].\n\n(if: $flush is true)[(live: 5s)[With a crash that seizes the Land Shrimp's attention, water shoots through the doorway of one room, than another. Rivulets of sea water jet over your shoes. You have just moments to make it to your lab or drown!]]\n",
+      "links": [
+        {
+          "text": "back into the maintenance room",
+          "destination": {
+            "name": "Machine room",
+            "pid": 37
+          }
+        },
+        {
+          "text": "lab",
+          "destination": {
+            "name": "Act III Your Lab",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "Attack the creature",
+      "text": "<squid>You try to sink your teeth into the space between the carapace and the head of the brightly colored creature, but you run into shell.\n\nLater you whip yourself out of a stunned state, stunned from being bashed with the thing's arm. That's still happening, tearing into flesh and causing major damage.\n\n[[Attack the creature->Attack2]]\n[[Grapple with the creature->Grapple]]\n</squid>",
+      "links": [
+        {
+          "text": "Attack the creature",
+          "destination": {
+            "name": "Attack2",
+            "pid": 112
+          }
+        },
+        {
+          "text": "Grapple with the creature",
+          "destination": {
+            "name": "Grapple",
+            "pid": 113
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "Plunge",
+      "text": "<squid>Something opens up into a blue abyss. The thing shrieks at you, falling and then you see that both of you are falling. You are plunging down the central shaft of the Institute tower, with the Land Shrimp trapped in your grip.\n\n(live:3s)[ [[Six months later]] ]\n</squid>",
+      "links": [
+        {
+          "text": "Six months later",
+          "destination": {
+            "name": "Six months later",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "Squid ending",
+      "text": "<img class=\"squid\" src=\"http://tentaculon.gorenfeld.net/assets/img/squid.jpg\"/>\n\n<em>To my darling</em>\n\nBy a vole\nnedvole@gmail.com",
+      "links": []
+    },
+    {
+      "pid": 112,
+      "name": "Attack2",
+      "text": "<squid>The Land Shrimp kills you.\n\nTHE END\n</squid>",
+      "links": []
+    },
+    {
+      "pid": 113,
+      "name": "Grapple",
+      "text": "<squid>You tangle the brightly colored thing in your tentacles. The arm can't find its mark, but lands on what is behind it, part of the cave wall. It swings, leaving firefly-like sparks in the water while it jerks and struggles against your colossal squid grip.\n\nThe arm swings and swings, marking the back of the human cave with a darkening spiderweb of harm.\n\n[[Kill it->Attack2]] \n[[Keep grappling->Grapple2]] \n</squid>",
+      "links": [
+        {
+          "text": "Kill it",
+          "destination": {
+            "name": "Attack2",
+            "pid": 112
+          }
+        },
+        {
+          "text": "Keep grappling",
+          "destination": {
+            "name": "Grapple2",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "Grapple2",
+      "text": "<squid>Something is starting to give way. You struggle to keep your balance, arms flailing as your tentacles grab on. You can't find a spot to bite. \n\nYou are caught in the empty eyestalks of the thing, which has squirmed loose to angle the path of its hammering blows right into your midsection.\n\n[[Crush it harder->Plunge]]\n[[Break free to attack->Attack2]] ",
+      "links": [
+        {
+          "text": "Crush it harder",
+          "destination": {
+            "name": "Plunge",
+            "pid": 110
+          }
+        },
+        {
+          "text": "Break free to attack",
+          "destination": {
+            "name": "Attack2",
+            "pid": 112
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "Machine room is locked",
+      "text": "The card reader rejects your card. You will need Code Mauve access to get in.",
+      "links": []
+    },
+    {
+      "pid": 116,
+      "name": "Chase",
+      "text": "<squid>Wheeling away from the security of the group, you swim towards your prey with your plate-like squid eyes on the alert.\n\nOut in the open sea, you are the biggest creature around. You propel into the dark cold water. You can feel tiny eyes watching you from points unknown.\n\n[[Find your prey|Prey]]\n\n(live: 4s)[(Another vibration ran through the water just now. It was as if something swerved and passed you by from above, on the way to somewhere else.)]\n</squid>\n",
+      "links": [
+        {
+          "text": "Find your prey",
+          "destination": {
+            "name": "Prey",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "Stay",
+      "text": "(set: $swimCount to $swimCount +1)<squid>You and your (either: \"shoal\", \"tentacled siblings\", \"comrades\") are (either: \"swimming through\", \"exploring\", \"patrolling\", \"dominating\", \"drifting through\", \"creeping through\", \"charting\", \"a flock of dark shapes in\", \"searching for ripples in\", \"searching\", \"trawling through\", \"crossing\", \"casting shadows in\") (either: \"benthic\", \"gloomy\", \"shifting\", \"unknowable\", \"the most remote\", \"mysterious\", \"lonely\", \"mournful\", \"moonless\", \"empty\", \"sleeping\", \"blue\", \"ominous\") (either: \"depths\", \"waters\", \"expanses of ocean\", \"waters\", \"waters\", \"depths\", \"seas\", \"stillnesses\", \"waters\", \"depths\", \"ocean\", \"water\")(either: \".\", \".\", \".\", \".\", \", alert and awake.\", \", tentacles at the ready.\", \".\", \".\", \".\", \", ready to strike.\", \", hungering.\", \", restless.\")\n\n{(if: $swimCount is 10)[\nA flat, colorless rectangle swings into view. It's an [[Egress Point]].\n]}\n(if: (random: 1,6) > 3)[ [[Break loose for the zone of darkness|Chase]] ]\n[[(either: \"Keep swimming\",\"Swim\",\"Swim\",\"Swim on\",\"Swim on together in unity\",\"Swim on together in strength\",\"Keep hunting together\")|Stay]]</squid>",
+      "links": [
+        {
+          "text": "Egress Point",
+          "destination": {
+            "name": "Egress Point",
+            "pid": 119
+          }
+        },
+        {
+          "text": "Break loose for the zone of darkness",
+          "destination": {
+            "name": "Chase",
+            "pid": 116
+          }
+        },
+        {
+          "text": "(either: \"Keep swimming\",\"Swim\",\"Swim\",\"Swim on\",\"Swim on together in unity\",\"Swim on together in strength\",\"Keep hunting together\")",
+          "destination": {
+            "name": "Stay",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "spray of color",
+      "text": "<squid>While it was thrashing, the thing in your grip dumped a stucky substance onto you.\n\nThe stuff doesn't just cling to you. It emits light. You are softly glowing like coals all over your head.\n\nYour eyes unblinking and huge, you are as confused as to what to do next as your prey, which is caught in your suckers.\n\nYou hang in the cold water, painted with bioluminescence that turns you into a beacon.(set: $sharkFight to 0)\n\n[[Eat->Shark Arrives]]\n[[Drop your meal and flee]]\n</squid>",
+      "links": [
+        {
+          "text": "Eat",
+          "destination": {
+            "name": "Shark Arrives",
+            "pid": 123
+          }
+        },
+        {
+          "text": "Drop your meal and flee",
+          "destination": {
+            "name": "Drop your meal and flee",
+            "pid": 124
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "Egress Point",
+      "text": "<squid>The virtual door hangs dimensionless in the water. You are the only squid to notice.\n\n[Pass through]<Doorway|\n[[Keep swimming->Stay]]\n\n(click: ?Doorway)[Nothing happens. Something should have happened.]\n</squid>\n",
+      "links": [
+        {
+          "text": "Keep swimming",
+          "destination": {
+            "name": "Stay",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "Grab your prey",
+      "text": "<squid>You fumbled the first tries, but you have trapped the crustacean and now can haul it towards your maw. A twinge of excitement runs through you at the thought of [[chewing|Color Spray]] your struggling food to bits.</squid>\n",
+      "links": [
+        {
+          "text": "chewing",
+          "destination": {
+            "name": "Color Spray",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "Eaten",
+      "text": "<squid>The shark [[eats you|The shark eats you.]].</squid>",
+      "links": [
+        {
+          "text": "eats you",
+          "destination": {
+            "name": "The shark eats you.",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "fight",
+      "text": "<squid>|result>[]\n\n(link-repeat: \"<rubber>Strike viciously at just the right moment.</rubber>\")[\n   (set: $numClicks to $numClicks + 1)\n   (if: $numClicks < 2)[\n   (replace: ?result)[<arcadeFadeOut>Missed!</arcadefadeOut>]\n   ](else:)[\n   (replace: ?result)[ (either: \"[[Grab your prey]]\", \"<arcadeFadeOut>Missed!</arcadeFadeOut>\") ]\n   ]\n]\n     \n</squid>\n\n",
+      "links": [
+        {
+          "text": "Grab your prey",
+          "destination": {
+            "name": "Grab your prey",
+            "pid": 120
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "Shark Arrives",
+      "text": "<squid>Your tentacles are still wrapped around the crustacean, when a shadow passes overhead and makes water beat faster into your gills. It's a shark that followed your glow.\n\nAs you swing around in the water to behold the oncoming attacker with your plate-sized squid eyes, the tendrils of your dinner lash in your grip, trying to slip loose.\n\n[[Escape with your food]]\n{\n(link-repeat: \"Fight the shark\")[\n(set: $sharkFight to $sharkFight + 1)(if: $sharkFight is 1)[Your tentacles slip from the smooth skin of the shark as you try to find the right place to bite.](if: $sharkFight is 2)[(goto: \"Eaten\")]\n]\n}\n\n</squid>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Eaten",
+            "pid": 121
+          }
+        },
+        {
+          "text": "Escape with your food",
+          "destination": {
+            "name": "Escape with your food",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 124,
+      "name": "Drop your meal and flee",
+      "text": "<squid>A hum in the water becomes a shark that noses in on the trail of your glow.\n\n{\n(link-repeat: \"Fight the shark\")[\n(set: $sharkFight to $sharkFight + 1)(if: $sharkFight is 1)[Your tentacles slip from the smooth skin of the shark as you try to find the right place to bite.](if: $sharkFight is 2)[(goto: \"Eaten\")]\n]\n}\n</squid>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Eaten",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "leap.",
+      "text": "<squid>No. Not a sudden leap.\n\n(live: 2s)[There is a [reflex]<reflex| you are still learning to tame. When it comes on, it is embarrassing and makes you lose your prey.]\n\n(click: ?reflex)[It comes from the same part of you that causes you to kick, in a desperate last-moment counterbalance to save you from falling, and then you find that you were never falling but were only falling asleep.\n\nIt happens when you let your wrath take over too soon, and rush in instead of [stalking]<stalking|, and then that part of you believes that the spiny, wriggling thing you are wrestling with will prey on you and not you it. And then--]\n\n(click: ?stalking)[Instead of startling yourself, you must stay in control, unfurl your tentacles like a net around your prey and strike at just the right moment.]\n\n[[Strike fast|Hasty attack]]\n[[Calibrate your attack|fight]]\n",
+      "links": [
+        {
+          "text": "Strike fast",
+          "destination": {
+            "name": "Hasty attack",
+            "pid": 126
+          }
+        },
+        {
+          "text": "Calibrate your attack",
+          "destination": {
+            "name": "fight",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "Hasty attack",
+      "text": "<squid>Before you can think, the thing has happened again.\n\nThe moment you strike at the crustacean, a quiver runs through you. Fight or flight? Flight. \n\nYou have sucked in water that now erupts from a bladder on your mantle. The convulsion flings you backwards in this crazed escape reflex.\n\nBy the time you have collected yourself, the plume of crashing water has thrown a screen over your prey's escape.\n\n[[Return to the shoal|Stay]]",
+      "links": [
+        {
+          "text": "Return to the shoal",
+          "destination": {
+            "name": "Stay",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "book image",
+      "text": "[[<img src=\"http://tentaculon.gorenfeld.net/assets/img/lifechutney.png\"/>->The Book]]\n\n[[Do something with the book|The Book]]\n[[Don't|Crisis averted]]",
+      "links": [
+        {
+          "text": "<img src=\"http://tentaculon.gorenfeld.net/assets/img/lifechutney.png\"/>",
+          "destination": {
+            "name": "The Book",
+            "pid": 72
+          }
+        },
+        {
+          "text": "Do something with the book",
+          "destination": {
+            "name": "The Book",
+            "pid": 72
+          }
+        },
+        {
+          "text": "Don't",
+          "destination": {
+            "name": "Crisis averted",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "\"No, how?\"",
+      "text": "Ben Franklin -- so your former lab partner tells you -- learned a trick for causing people who were mad at him to like him. He would borrow books from them.\n\n[[\"You mean he would lend books to them.\"]]\n[[\"OK, look--\"|Ask him for an access key.]]",
+      "links": [
+        {
+          "text": "\"You mean he would lend books to them.\"",
+          "destination": {
+            "name": "\"You mean he would lend books to them.\"",
+            "pid": 129
+          }
+        },
+        {
+          "text": "\"OK, look--\"",
+          "destination": {
+            "name": "Ask him for an access key.",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 129,
+      "name": "\"You mean he would lend books to them.\"",
+      "text": "No, he would borrow them. \n\n\"It's counterintuitive, but--\" Chico says, and goes on to explain that if you were not getting along with Ben Franklin, he would discover you owned a rare and fascinating book and ask to borrow it from your library.\n\nThis might take you aback but then when you did he would sit back and wait for the Ben Franklin Effect to kick in, which was that if you had done him one kindness you would want to do more.\n\n\"And yet I can't say from experience that is true,\" Chico says, and returns to his reading.\n\n[[OK|Ask him for an access key.]]\n",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Ask him for an access key.",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "your lab returned to in Act I",
+      "text": "(set: $camebackforthebook to true)In your lab, with a dreaming squid. (if: $gotBook is false)[Your eyes fall upon a [[paperback book]] that stares back at you from a sterile countertop.] ]\n\n[[Head back out into the hall|Hall (returned to in Act I)]]",
+      "links": [
+        {
+          "text": "paperback book",
+          "destination": {
+            "name": "paperback book",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Head back out into the hall",
+          "destination": {
+            "name": "Hall (returned to in Act I)",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 131,
+      "name": "Cold Storage Room",
+      "text": "You find nothing interesting. Samples and empty aluminum racks.\n\n(live: 4s)[You see, from behind a freezer that has been left open, [[legs|Check out the legs]].]\n\n[[Go back to the supply room|Supply Room]]",
+      "links": [
+        {
+          "text": "legs",
+          "destination": {
+            "name": "Check out the legs",
+            "pid": 82
+          }
+        },
+        {
+          "text": "Go back to the supply room",
+          "destination": {
+            "name": "Supply Room",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "Falling",
+      "text": "Falling.\n\n[[Kick|Act IV]]",
+      "links": [
+        {
+          "text": "Kick",
+          "destination": {
+            "name": "Act IV",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 133,
+      "name": "side chamber",
+      "text": "<squid>A flooded cave with a passageway continuing into [[another place]].</squid>\n\n[[Swim back to the hall|Pre-conflict]]",
+      "links": [
+        {
+          "text": "another place",
+          "destination": {
+            "name": "another place",
+            "pid": 134
+          }
+        },
+        {
+          "text": "Swim back to the hall",
+          "destination": {
+            "name": "Pre-conflict",
+            "pid": 135
+          }
+        }
+      ]
+    },
+    {
+      "pid": 134,
+      "name": "another place",
+      "text": "<squid>(if: $seenTranq is true)[A pile of human things sparks a memory. You could [squeeze]<squeeze| through if you wanted.](else:)[A pile of human things that you could [squeeze]<squeeze| through if you wanted.]\n\n(live: 2s)[Vibrations race through the water in the hall]\n\n(click: ?squeeze)[You easily shimmy through the gap and float near a familiar thing. The familiar thing (if: $seenTranq is true)[is the ](else:)[looks like a] [Tranq Rod]<gettranq|.]\n\n(click: ?gettranq)[No matter how many times you have run the simulation, you'll never get over how much dexterity a squid has. You've learned to not question it and just roll with it.(set: $hasTranq to true)]\n\n[[Leave->Pre-conflict]]\n\n</squid>",
+      "links": [
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "Pre-conflict",
+            "pid": 135
+          }
+        }
+      ]
+    },
+    {
+      "pid": 135,
+      "name": "Pre-conflict",
+      "text": "<squid>The creature is upon you and you are fighting a reflex that is building up inside you to shoot your jets and blast yourself to safety. But there is nowhere to go.\n\n{(if: $hasTranq is true)[\n\t(link-goto: \"Use the Tranq Rod\")\n](else:)[(link-goto: \"<rubber>Strike viciously at just the right moment</rubber>\", \"killed by squid\")]\n}\n\n</squid>\n",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Use the Tranq Rod",
+            "pid": 139
+          }
+        },
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "killed by squid",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 136,
+      "name": "Fight it",
+      "text": "<squid>You try to sink your teeth into the space between the carapace and the head of the brightly colored creature, but you run into shell.\n\nRaining blows on you, the creature drives you back towards where you [[came from|killed by squid]].</squid>",
+      "links": [
+        {
+          "text": "came from",
+          "destination": {
+            "name": "killed by squid",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 137,
+      "name": "killed by squid",
+      "text": "<squid>The onslaught from this terrible creature sets off your startle-escape reflex. Your fear grows and a blast from your siphon flings you out of the room. By the time you have recovered your balance you are floating in [[another place|side chamber]].</squid>",
+      "links": [
+        {
+          "text": "another place",
+          "destination": {
+            "name": "side chamber",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 138,
+      "name": "Grab the creature",
+      "text": "<squid>[[Attack the creature]] \n[[Bite the creature->Attack the creature]] \n[[Grapple with the creature->Grapple]]\n</squid>",
+      "links": [
+        {
+          "text": "Attack the creature",
+          "destination": {
+            "name": "Attack the creature",
+            "pid": 109
+          }
+        },
+        {
+          "text": "Bite the creature",
+          "destination": {
+            "name": "Attack the creature",
+            "pid": 109
+          }
+        },
+        {
+          "text": "Grapple with the creature",
+          "destination": {
+            "name": "Grapple",
+            "pid": 113
+          }
+        }
+      ]
+    },
+    {
+      "pid": 139,
+      "name": "Use the Tranq Rod",
+      "text": "<squid>Calling upon all the faculties of a species known to unscrew jars, you struggle with the activation stripe of the Tranq Rod.\n\nThe next blow from the creature knocks it from your hand. But when it makes contact with the rod, a surge of power leaves it dazed for a moment.\n\n[[<rubber>Strike viciously at just the right moment</rubber>|Grab the creature]]",
+      "links": [
+        {
+          "text": "<rubber>Strike viciously at just the right moment</rubber>",
+          "destination": {
+            "name": "Grab the creature",
+            "pid": 138
+          }
+        }
+      ]
+    },
+    {
+      "pid": 140,
+      "name": "The lights are off",
+      "text": "You might have found the cause of the crashing sound in this room.\n\nWhat you first see is an upended box of decontamination gloves that have spilled onto the floor. Your eyes follow its trajectory upwards to rest upon a ceiling-tall [metal shelf]<shelf| that takes up most of the room.\n{(click: ?shelf)[It blocks your way to [another shelf]<another|, whose neatly arranged contents are visible when you peek through the cave-in. ]\n\n(click: ?another)[You can see emergency supplies including [a rod]<rod|.]\n\n(click-replace: ?rod)[a [Tranq Rod]<tranq| for stunning dangerous animals(set: $seenTranq to true)]\n\n(click-replace: ?tranq)[Tranq Rod, too far to reach and behind two fallen canisters,]\n\n(click: \"reach\")[ No way you are fitting through there. You would have to have no bones to squeeze through such a narrow opening.]}\n\nThe shelf has caved in. Metal beams curl away. An avalanche of spilled medical boxes and equipment has choked off half the room.\n\nNext to all this stands an open metal door to a cold storage room.\n\n[[Cold storage room|Cold Storage Room]]\n[[Return to the main lab->Mantis lab]] \n\n(click-replace: \"equipment\")[equipment (you can't see anything of immediate use)]\n\n",
+      "links": [
+        {
+          "text": "Cold storage room",
+          "destination": {
+            "name": "Cold Storage Room",
+            "pid": 131
+          }
+        },
+        {
+          "text": "Return to the main lab",
+          "destination": {
+            "name": "Mantis lab",
+            "pid": 76
+          }
+        }
+      ]
+    }
+  ]
+}

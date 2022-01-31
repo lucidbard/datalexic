@@ -1,0 +1,513 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "End",
+      "text": "Something\\n\\nby Linus Lekander\\n\\n[[Read again|Start]]",
+      "links": [
+        {
+          "text": "Read again",
+          "destination": {
+            "name": "Start",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Get up",
+      "text": "So you get up.\\n\\nThe person lying next to you grunts as you work your way out from under his leg, but he doesn't wake up. Seems as if it would take a lot more ruckus for that to happen.\\n\\nDespite this, you don't allow yourself to sit and linger on the side of the bed, knowing that this might take some time.\\n\\nSo you navigate yourself to the bathroom in the dark and step into the [[shower|Shower]].",
+      "links": [
+        {
+          "text": "shower",
+          "destination": {
+            "name": "Shower",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "No",
+      "text": "So, your indecision once again leaves you at a loss, causing you to do nothing. Which might not seem like a decision at first, but of course it is.\\n\\nNot acting is just as much of an act in itself.\\n\\nDespite trying to ignore the whole thing, you're back to considering.\\n\\nSpiralling.\\n\\nPerhaps you should just get it over with.\\n\\n[[Yes|Yes]]\\n[[No|Rational]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "Yes",
+            "pid": 29
+          }
+        },
+        {
+          "text": "No",
+          "destination": {
+            "name": "Rational",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Start",
+      "text": "There's [[something|First]] bothering you.",
+      "links": [
+        {
+          "text": "something",
+          "destination": {
+            "name": "First",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Prolonging",
+      "text": "So you keep standing under the constant, almost cradling stream of water.\\n\\nYou're tired, and feel like giving in.\\n\\nTo what, you can't really say. Your mind has begun to slow down for now.\\n\\nIt usually ends right about here, with you just falling to sleep, but you can't just do that anywhere.\\n\\nAt least when you're not alone, you can't.\\n\\nThis is why you can't see anyone for more than a few times (often just once). How else would it look like, with one of you constantly hiding something, and the other one questioning your odd behaviour while trying to?\\n\\nYou already got that in friendship-form, and that's enough.\\n\\nSo that's why you're stuck with seeing these strangers. It's the only kind of relationship you //can// have, and one of your rare chances of feeling ... normal. \\n\\nJust, you know, while at the same time knowing that it won't stay that way for very long.\\n\\nSooner or later, they're all bound to find out what [[something|End]] really is.",
+      "links": [
+        {
+          "text": "something",
+          "destination": {
+            "name": "End",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Rational",
+      "text": "You try your best to be rational about it, but that seldom works.\\n\\nThe thought of something isn't rational.\\n\\nSometimes it's just as simple as giving in to your washing-urge will let you sleep, and ignoring it won't.\\n\\nAnd it's half past three now.\\n\\nHour of the wolf.\\n\\nYou want to sleep.\\n\\nAnd for that to happen, you should first [[go and get that washing done|Yes]].",
+      "links": [
+        {
+          "text": "go and get that washing done",
+          "destination": {
+            "name": "Yes",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Smallity",
+      "text": "It isn't necessarily particles, either.\\n\\nSome years ago you read about the world's smallest test tube being only one tenth the size of a single hair.\\n\\nPicture that.\\n\\nThen think about the size of the hole in it.\\n\\nThen try to imagine the world's smallest test tube today.\\n\\nThat's just one way of thinking about smallity.\\n\\nOne can also think about it as a dog owner the moment after picking up their pet's droppings. They've most certainly used a plastic bag. Unless there's a hole in it, it's reasonable to think that nothing would've gotten through it.\\n\\nAlthough the //feeling// of something on their hands is enough for making them wash themselves afterwards.\\n\\nHence, the need to feel [[clean|Toilet]] isn't always rational.",
+      "links": [
+        {
+          "text": "clean",
+          "destination": {
+            "name": "Toilet",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Wash feet",
+      "text": "Yes.\\n\\nYou can't just shower your whole body and refrain from washing it everywhere. What if you have something on you that just gets wet, and then wiped onto the towel?\\n\\nYou think about next time you'll use it, about wiping your face with the part that you previously used for your unwashed feet (or worse).\\n\\nSo you continue to rub yourself in shower gel, and you take your time doing so.\\n\\nProlonging your return to bed like this reminds you why you can't see anyone for more than a few times (often just once). How else would it look like, with one of you constantly hiding something, and the other one questioning your odd behaviour while trying to?\\n\\nYou already got that in friendship-form, and that's enough.\\n\\nSo that's why you're stuck with seeing these strangers. It's the only kind of relationship you //can// have, and one of your rare chances of feeling ... normal.\\n\\nJust, you know, while at the same time knowing that it won't stay that way for very long.\\n\\nSooner or later, they're all bound to find out what [[something|End]] really is.",
+      "links": [
+        {
+          "text": "something",
+          "destination": {
+            "name": "End",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Splash water",
+      "text": "You splash some water on yourself before taking some shower gel, rubbing it in, rinsing it off, and then repeating it.\\n\\nOnce for each thing you can think of, and then some more just in case.\\n\\nIt feels good getting rid of it at last.\\n\\nAlready convinced it was worth the entire effort of dragging yourself in here, you're thinking that the shower is a rather pleasant place to be. Even in the middle of the night, and once you manage to ignore the thought of going back out.\\n\\nYou don't realize exactly how pleasant 'til you suddenly [[hear something|Knock]].",
+      "links": [
+        {
+          "text": "hear something",
+          "destination": {
+            "name": "Knock",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Pub",
+      "text": "Really, anything could've gone down in a place like that.\\n\\nThe fact that no one notices it doesn't change the actual events. In there, the tree definitely falls even if no one is around to hear it.\\n\\nAnd it's a loud crack, at that.\\n\\nThe notion of someone puking, very discretely, in a jar on the table before putting it back.\\n\\nOf someone letting you in on their life-hack to always pee in the sink instead of the toilet.\\n\\nOf that weird gas-pump-for-a-keg of which you just can't make out wether it's supposed to be representing \"obviously just for show\" or \"hey this would be cool let's use it\".\\n\\nYou didn't order a beer.\\n\\nYou didn't order anything.\\n\\n[[Just in case|Yes]].",
+      "links": [
+        {
+          "text": "Just in case",
+          "destination": {
+            "name": "Yes",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Stay",
+      "text": "Despite not being sure how to proceed from here, you're making some preparations [[just in case|Just in case]], starting with the person lying next to you.\\n\\nYou push him aside so that if he wakes up, he'll do it now and hopefully go back to sleep before very long.\\n\\nAs you lay down and wait for that to happen, you're still pondering on what would be the right, no, the best, thing to do.\\n\\nShouldn't you just get up after all?\\n\\n[[Yes|Yes]]\\n[[No|No]]",
+      "links": [
+        {
+          "text": "just in case",
+          "destination": {
+            "name": "Just in case",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "Yes",
+            "pid": 29
+          }
+        },
+        {
+          "text": "No",
+          "destination": {
+            "name": "No",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Water",
+      "text": "There's always one waiting in the fridge, saved up for a later occasion. Not so much for keeping it cold as for having it secured, lowering the risk of an unpleasant taste surprise when taking it directly from the tap in the middle of the night. What if there was a news flash while you were asleep, a public announcement about some sort of contamination?\\n\\nSo that's obviously something you thought of.\\n\\nShould've thought about the condensation being on the surface of the glass as well. \\n\\nSeriously. It's a fridge. That's what happens. It's cold in there.\\n\\nBut you didn't think about it. Instead you touched the glass with your still dirty hands, put your lips to that very same glass and probaply rinsed something down your throat.\\n\\nYou've called the non-emergency, medical on-call service before. They're persistent in giving you the same advice every time: If your stomach isn't ill, then you probably aren't either.\\n\\nSo that's your go-to advicer for now. Your stomach isn't aching. At least yet it isn't.\\n\\nThere's [[nothing else you can do|Doing]] about that.",
+      "links": [
+        {
+          "text": "nothing else you can do",
+          "destination": {
+            "name": "Doing",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Nothing",
+      "text": "You're lying, of course, but how would he know? Is it really that hard to get away with a shower afterwards, without someone poking in on what you're doing?\\n\\nSure, it might be several hours afterwards, and you're not entirely sure of how long you've been standing here, but still.\\n\\nThis is why you can't see anyone for more than a few times (often just once). How else would it look like, with one of you constantly hiding something, and the other one questioning your odd behaviour while trying to?\\n\\nYou already got that in friendship-form, and that's enough.\\n\\nSo that's why you're stuck with seeing these strangers. It's the only kind of relationship you //can// have, and one of your rare chances of feeling ... normal.\\n\\nJust, you know, while at the same time knowing that it won't stay that way for very long. It's only a matter of time before \"nothing\" won't do anymore.\\n\\nSooner or later, they're all bound to find out that it's really [[something|End]].",
+      "links": [
+        {
+          "text": "something",
+          "destination": {
+            "name": "End",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "StoryTitle",
+      "text": "Something",
+      "links": []
+    },
+    {
+      "pid": 15,
+      "name": "Let him",
+      "text": "You don't respond, thinking he may do as he pleases, knowing very well that you won't drink what he fetches you anyways.\\n\\nYou're already thinking about the best way to dispose of it without him noticing.\\n\\nThis is why you can't see anyone for more than a few times (often just once). How else would it look like, with one of you constantly hiding something, and the other one questioning your odd behaviour while trying to?\\n\\nYou already got that in friendship-form, and that's enough.\\n\\nSo that's why you're stuck with seeing these strangers. It's the only kind of relationship you //can// have, and one of your rare chances of feeling ... normal.\\n\\nJust, you know, while at the same time knowing that it won't stay that way for very long.\\n\\nSooner or later, they're all bound to find out what [[something|End]]'s really about.",
+      "links": [
+        {
+          "text": "something",
+          "destination": {
+            "name": "End",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Knock",
+      "text": "\"Are you ok in there?\"\\n\\nHis voice coming from the other side of the door is loud enough to startle you.\\n\\nReminded that you've probably been showering for quite some time now, you call back to him:\\n\\n\"It's ...\"\\n\\n[[Nothing|Nothing]]\\n[[Something|Something shower]]",
+      "links": [
+        {
+          "text": "Nothing",
+          "destination": {
+            "name": "Nothing",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Something",
+          "destination": {
+            "name": "Something shower",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Something shower",
+      "text": "\"It's ... something I can't explain right now\".\\n\\nWay to go. He probably thinks you're drunk.\\n\\n\"I'll get you something to drink\", he says, confirming your suspiscion.\\n\\n[[Stop him|Stop him]]\\n[[Let him|Let him]]\\n",
+      "links": [
+        {
+          "text": "Stop him",
+          "destination": {
+            "name": "Stop him",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Let him",
+          "destination": {
+            "name": "Let him",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Just in case",
+      "text": "Yeah, \"just in case\". The three words you live by. In good company of \"you never know\" and \"[[what if|Stay]]\".",
+      "links": [
+        {
+          "text": "what if",
+          "destination": {
+            "name": "Stay",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Potato",
+      "text": "A figure of speech, of course. But that's really the kind of situations you constantly find yourself in.\\n\\nYou don't recall ever hearing others defend what they eat, or rather refrain from eating. People always seem to assume that they have their reasons. But not with you. That's different. \\n\\nShould you ever pass on something at a dinner, be it the salad bowl, the potatoes, or anything to drink, it's almost certainly up for debate.\\n\\nSo you deviate, and you wait it in.\\n\\nThe \"What's wrong with you?\"\\n\\nWhats wrong with //you//?\\n\\nWhat's wrong with //people//, commenting on other people's eating habits?\\n\\nNo wonder you prefer to [[eat alone|Morning]].",
+      "links": [
+        {
+          "text": "eat alone",
+          "destination": {
+            "name": "Morning",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Get up 2",
+      "text": "Relief and dissapointment are now competing to take a hold of you. You're an easy prey after all, naked and fumbling in the dark, but the ghouls are both equally determined in winning you over, causing none of them to actually succeed.\\n\\nBut just listening to them is tiresome enough.\\n\\nWhat makes you shiver isn't the moment after turning on the tap and waiting for the water temperature to rise, but rather the haunting presence of those two voices, the neurotic and rational, inside of your head. Although stepping into the stream happens to coincide with them fading away.\\n\\nYou've started acting. \\n\\nIt's all just pure effectiveness now.\\n\\nYou begin with ...\\n\\n[[Washing your hands|Wash hands]]\\n[[Splashing your nethers with some water|Splash water]]",
+      "links": [
+        {
+          "text": "Washing your hands",
+          "destination": {
+            "name": "Wash hands",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Splashing your nethers with some water",
+          "destination": {
+            "name": "Splash water",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Morning",
+      "text": "He'll be force-feeding you. You'll both think that it's not like that, but that's what he'll be doing.\\n\\nBy looking, by reading your movements, before inevitably confronting you.\\n\\n\"Why did you ... ?\"\\n\"Why don't you ... ?\"\\n\"Is there something wrong with ... ?\"\\n\\nYou're the non-drinker at parties, the driver, the devout, and therefore: the questionable.\\n\\nAnd you who just don't want to eat [[that green potato|Potato]].\\n\\nSometimes you think it's best to save the charade and just [[let them start questioning you|Stop him]] right away instead.",
+      "links": [
+        {
+          "text": "that green potato",
+          "destination": {
+            "name": "Potato",
+            "pid": 19
+          }
+        },
+        {
+          "text": "let them start questioning you",
+          "destination": {
+            "name": "Stop him",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Shower",
+      "text": "You shrug as you turn on the tap, knowing all too well that you have to be standing here for a while, waiting for the water to turn warm enough.\\n\\nYou'd have some time to think, but you don't.\\n\\nYou had a good reason for going here.\\n\\nIt's all just pure effectiveness now.\\n\\nYou begin to ...\\n\\n[[Wash your hands|Wash hands]]\\n[[Splash your nethers with some water|Splash water]]",
+      "links": [
+        {
+          "text": "Wash your hands",
+          "destination": {
+            "name": "Wash hands",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Splash your nethers with some water",
+          "destination": {
+            "name": "Splash water",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Mother",
+      "text": "\"It's just that ... I want you to be careful with it!\"\\n\\nAnd that's the words of your mother at last. \"Careful with that!\" You sound [[just like her|https://www.youtube.com/watch?v=GiENmNRxuVk]].\\n\\nThat's probably what makes him close the fridge again, rather loud, before going back to bed without answering.\\n\\nTired already.\\n\\nThat's ok.\\n\\nYou don't want him to be there in the [[morning|Morning]] anyway.",
+      "links": [
+        {
+          "text": "morning",
+          "destination": {
+            "name": "Morning",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "First",
+      "text": "As it usually does, it all starts with you not sleeping.\\n\\nThat is, you're beginning to think that you should've washed yourself more thoroughly before going to bed.\\n\\n[[Get up|Get up]]\\n[[Stay in bed|Stay]]",
+      "links": [
+        {
+          "text": "Get up",
+          "destination": {
+            "name": "Get up",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Stay in bed",
+          "destination": {
+            "name": "Stay",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Toilet",
+      "text": "And for some reason, you sat down on the porcelain chair as soon as you got in. You peed, wiped, flushed, and //then// washed your hands for the first time.\\n\\nSo you obviously didn't think twice before getting in contact with one of the most sensitive parts of your body with something on your hands.\\n\\nIt's only common sense to wash your hands both before //and// after reaching down to touch your nethers, even if you keep a piece of paper between the hands and crotch.\\n\\nThat's no guarantee that something won't pass through it. \\n\\nIf water can penetrate it, you can easily think of a hundred other [[things|Smallity]] that could as well.\\n\\nUsually, if you make a mistake like that, you just take your time to correct it immediately afterwards.\\n\\nBut you didn't think about it then, either, just walked right out of the bathroom instead.\\n\\nYou had a reason for [[taking him home|Doing]] after all.",
+      "links": [
+        {
+          "text": "things",
+          "destination": {
+            "name": "Smallity",
+            "pid": 7
+          }
+        },
+        {
+          "text": "taking him home",
+          "destination": {
+            "name": "Doing",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Wash hands",
+      "text": "Of course you'll first want to wash off the hand lotion so as not to apply it down there.\\n\\nIt contains a great deal of fat (probably what makes it effective), so it takes some time getting it all off.\\n\\nOne round of showering gel sure isn't enough to get rid of it.\\n\\nSo you pour up some more, rub your hands against each other and rinse it off.\\n\\nAfter that, you begin to [[wash yourself|Splash water]] where you intended to.",
+      "links": [
+        {
+          "text": "wash yourself",
+          "destination": {
+            "name": "Splash water",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Doing",
+      "text": "The first one to use the bathroom was him. And meanwhile, you went to have that glass of [[water|Water]].\\n\\nSo you got home, you drank, that was stupid, and you used the [[toilet|Toilet]]. All of this before washing your hands even once.\\n\\nThere's always the kitchen, of course. One might think you could have just washed yourself in there in the meantime. \\n\\nBut you don't just rinse your hands under the kitchen tap. Simply dissolving whatever it is you that have on them? Just no.\\n\\nAnd dishing soap is really the last thing your eczemic hands need.\\n\\nThese kinds of things always happen when you've lost your guard. You have your routine, your security measures, and breaking those is just ... unattantive.\\n\\nAnd as soon as you've started to think about it, it all gets very uneasy. Fast. Not just psychologically, but physically as well.\\n\\nYou can //feel// something creeping under your skin, making it's way deeper inside of you for every second you let it.\\n\\nAnd the mere unawareness, not knowing what to expect of it, be it mere illness, imminent intoxication, another cancerogenic substance to be stored in your body, is what persuades you to [[get up and have that shower|Get up 2]] at last.",
+      "links": [
+        {
+          "text": "water",
+          "destination": {
+            "name": "Water",
+            "pid": 12
+          }
+        },
+        {
+          "text": "toilet",
+          "destination": {
+            "name": "Toilet",
+            "pid": 25
+          }
+        },
+        {
+          "text": "get up and have that shower",
+          "destination": {
+            "name": "Get up 2",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "StoryAuthor",
+      "text": "Linus Lekander",
+      "links": []
+    },
+    {
+      "pid": 29,
+      "name": "Yes",
+      "text": "Yes. Yes you should.\\n\\nYou're almost certain that you forgot to wash your hands after getting home. You've done it //since//, of course. They're perfectly clean now, all washed and smeared with lotion, ready for a good nights sleep of not touching anything else.\\n\\nBut you didn't do it the first thing when you got home, and that's what bothers you now, when you start to think about all the things you could've brought with you from the [[pub|Pub]] and all the things you've been [[doing|Doing]] since. ",
+      "links": [
+        {
+          "text": "pub",
+          "destination": {
+            "name": "Pub",
+            "pid": 10
+          }
+        },
+        {
+          "text": "doing",
+          "destination": {
+            "name": "Doing",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Stop him",
+      "text": "And at once, you're panicking, thinking about the glass that he'll spot a soon as he opens the fridge.\\n\\nYou don't know him. You can't just expect him to handle it with the kind of responsibility you'd wish for.\\n\\nSo you shout, quickly:\\n\\n\"Don't touch my glass!\"\\n\\nHe doesn't ask you why. He doesn't have to. It's already lingering in the space between you. The one you [[keep adding|Mother]] to.\\n\\nBut no matter how much you'd want to explain, you know all too well that there's no point in trying. \\n\\nYou've already convinced him not to try and be careful in anyway at all.\\n\\nNot sure if you expect him to go back to sleep or just leave right away, you decide that continue showering will at least keep you from confronting him 'til any of it happens.\\n\\nYou ...\\n\\n[[Stand under the hot water for a little longer|Prolonging]]\\n[[Realize you're not done washing yet|Wash feet]]",
+      "links": [
+        {
+          "text": "keep adding",
+          "destination": {
+            "name": "Mother",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Stand under the hot water for a little longer",
+          "destination": {
+            "name": "Prolonging",
+            "pid": 5
+          }
+        },
+        {
+          "text": "Realize you're not done washing yet",
+          "destination": {
+            "name": "Wash feet",
+            "pid": 8
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1089 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "toilet",
+      "text": "<<set $toilet = true>>\\nThat beige bathroom scale\\ndoesn't measure your weight\\nbut your worth.\\n\\nYou recall that\\ntime when you actually\\nweighed less than dad.\\n\\nAnd he, the feeder, refused\\nto give you that.\\n\\nKudos dad yet again!\\n\\nYou.. NO ONE can ever\\nbe more worthy than he.\\n\\n[[Look somewhere else|warmth]]",
+      "links": [
+        {
+          "text": "Look somewhere else",
+          "destination": {
+            "name": "warmth",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "kick",
+      "text": "You have a kick in you that need to come out.\\n\\nA SuperComboOfJeanClaudeVanDammeAndChuckNorrisMasterKICK!\\n\\nA horrible little gopher comes to mind when you think on how to distribute the kick.\\n\\nYou find the gopher...AND HE SITS PERFECTLY IN FRONT OF A POND!\\n\\nYou stretch for a few seconds (so you don't pull a muscle).\\n\\nTake aim! Charge! Jump!\\n\\nThat idiot literally didn't know what hit him.\\nLook at him now, trying to reach the surface.\\n\\n[[Wreak more havoc!|unic]]\\n\\n<<set $kick = true>>",
+      "links": [
+        {
+          "text": "Wreak more havoc!",
+          "destination": {
+            "name": "unic",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "burntburger",
+      "text": "<<set $burn = true>>\\nYou are a bad male, not being able\\nto flip them burgers in time!\\n\\nThe burgers are now burnt and you\\nmay [[carry on|carryon]] but with\\nshame as your companion.",
+      "links": [
+        {
+          "text": "carry on",
+          "destination": {
+            "name": "carryon",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "attic",
+      "text": "<<set $attic = true>>\\nDead rat carcass floats in dad's homemade trap.\\n\\n1) Fill bucket with water\\n2) Pour some poison in water\\n3) Place ramp up towards bucket\\n4) Put cheese on top of ramp\\n5) Watch as ramp tips when rat tries to take the cheese\\n\\nIn a box in the farthest corner of the dark memory graveyard is a [[box|box]].",
+      "links": [
+        {
+          "text": "box",
+          "destination": {
+            "name": "box",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "money",
+      "text": "<<set $money = true>>\\nThere was a time when mom and dad competed\\nfor your love by lavishing you with cash.\\n\\nDisobliging and greedy\\nare two new traits imbedded in dad.\\n\\nFinally the day came where\\na gift is something transferred\\nto your account (mere pocket change)\\nas he pays other bills.\\n\\nAnd why bother doing it the actual day you're actually born.\\nMaybe hard to remember or not worth it?\\n\\nStingy dad.\\nStingy dad asking you what you want for your birhtday.\\n\\n[[Inhale to answer|answer]]",
+      "links": [
+        {
+          "text": "Inhale to answer",
+          "destination": {
+            "name": "answer",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "unicorn",
+      "text": "You're a fucking awesome unicorn!\\n\\n<<timedinsert 2s>>The forest is yours to rule!<<endtimedinsert>>\\n\\n<<timedinsert 4s>>Your deadly forehead penis is your scepter!<<endtimedinsert>>\\n\\n<<timedgoto \"unic\" 6s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "unic",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "burntsausage",
+      "text": "<<set $burn = true>>\\nYou are a bad male, not being able\\nto flip them sausages in time!\\n\\nThe sausages are now burnt and you\\nmay [[carry on|carryon]] but with\\nshame as your companion.",
+      "links": [
+        {
+          "text": "carry on",
+          "destination": {
+            "name": "carryon",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "skulk2",
+      "text": "You've stumbled upon a part of the forest\\nyou seldom visit. It borders the human world..\\n\\nBehind a horrible shrubbery you spot two humans.\\n\\nOne long and one short - both are rotund like.\\n\\nBoiling blood. Anger fills your veins.\\nForgetting to blink due to fury causing you\\nto tear up. Tears of anger are seldom spoken of.\\nTheir mere presence is infuriating..\\n\\n[[The long|long]] one seems to strut alongside his\\ncooking device - flipping, what can only be unicorn meat (!!)\\n\\n[[The short|short]] one parades around the lawn\\nseeking attention from the long one.\\n\\n@@font-size: 150%;Who to impale?@@",
+      "links": [
+        {
+          "text": "The long",
+          "destination": {
+            "name": "long",
+            "pid": 25
+          }
+        },
+        {
+          "text": "The short",
+          "destination": {
+            "name": "short",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "char",
+      "text": "@@font-size: 70%;Choose a character! (finish the game to unlock the Unicorn)@@\\n\\n[img[http://corruptreality.files.wordpress.com/2013/09/menu21.png]]\\n\\n[[DAD|dad]] | [[CHILD|child]] | @@opacity: 0.3;UNICORN@@",
+      "links": [
+        {
+          "text": "DAD",
+          "destination": {
+            "name": "dad",
+            "pid": 36
+          }
+        },
+        {
+          "text": "CHILD",
+          "destination": {
+            "name": "child",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Start",
+      "text": "\\n\\n\\n[[b e g i n|title]]\\n\\n\\n\\n\\n\\n\\n\\n@@font-size: 60%;Made by [[@PaperBlurt|https://twitter.com/paperblurt]]@@\\n@@font-size: 60%;More stuff at [[PaperBlurt.com|http://www.paperblurt.com]]@@\\n\\n@@font-size: 50%; //(trigger warning: bullying, bad childhood, harsh language)//@@",
+      "links": [
+        {
+          "text": "b e g i n",
+          "destination": {
+            "name": "title",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "banish",
+      "text": "This forest isn't big enough for all these animals!\\nThat slimy frog bastard simply must go!\\n\\nYou find him on a lily pad, wallowing in sunrays - that lazy bum!\\n\\nHis leg feels like mushy, stale poo between your hooves as you grab him and carry his swinging body to the edge of the forest.\\n\\nHe begs you to let him stay as he's finally found\\na home near the lake - but screw that!\\n\\nYou BANISH him!\\n\\n\"We'll mail your stuff!\" (no we won't!)\\n\\n[[Still hungry for chaos!|unic]] \\n\\n<<set $banish = true>>",
+      "links": [
+        {
+          "text": "Still hungry for chaos!",
+          "destination": {
+            "name": "unic",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "dmoney",
+      "text": "\"Why doesn't he get it? I'm old now and don't want to spend money on boring stuff. I've been paying bills for over 50 years, and have had plenty of children siphoning my wallet for cash.\"\\n\\n@@font-size: 75%;3 children + 5 grandchildren + 1 partner = 9 birthday gifts/year (minimum)\\n\\n3 children + 1 partner/child + 5 grandchildren + 1 partner x 4 X-Mas gifts (approx) = 48 X-Mas gifts.@@\\n\\nThat's a lot of money that could be spent on bowling.\\nLove is actually a formula.\\n\\n[[choo choo|train]]\\n\\n<<set $dmoney = true>>",
+      "links": [
+        {
+          "text": "choo choo",
+          "destination": {
+            "name": "train",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "moped",
+      "text": "<<set $moped = true>>\\nMasculinity is based on horsepower.\\n\\nAnd who doesn't want his son\\nto have horsepower to the MAX?!\\n\\nThe moped bought in vain now acts as a shelf for mould\\nno one will ever touch.\\n\\nDisappointment is so much worse than anger, sadness, fear or any\\nother emotion your dad doesn't feel.\\n\\nYou didn't fall in line with the rest of your batch.\\n\\nWould it be easier to just be one of the boys?\\n\\n[[Back to the box|box]]",
+      "links": [
+        {
+          "text": "Back to the box",
+          "destination": {
+            "name": "box",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "bedroom",
+      "text": "<<set $bedroom = true>>\\nYou're seldom in here.\\nMaybe the noises heard through the wall\\nacts as gatekeepers - not even wanting to look\\ninto the room.\\n\\nYou can count the times you've\\nentered on one of your hands.\\n\\nGrunting. Screaming. Moaning.\\nSomething in the adult world\\nthat's beautiful becomes pure\\nhorror for a child.\\n\\nYou know what goes on in there.\\n\\nYou know as you've seen\\ndad's [[tapes|tapes]], hidden in the\\nbookshelf.",
+      "links": [
+        {
+          "text": "tapes",
+          "destination": {
+            "name": "tapes",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "gameover",
+      "text": "\\n\\n\\n@@font-size: 250%; GAME OVER!@@\\n\\nYou can now choose to play the game\\nyet again. But maybe with a different\\ncharacter?\\n\\n<<if $uni>>\\n<<else>>\\n@@font-size: 150%; UNICORN CHARACTER UNLOCKED!@@\\n<<endif>>\\n\\n[[..once more?|startagain]]",
+      "links": [
+        {
+          "text": "..once more?",
+          "destination": {
+            "name": "startagain",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "flipthem",
+      "text": "\\n\\n@@font-size: 150%;Flip them sausages!@@\\n\\n[[Flip em!|flipthem2]]\\n\\n<<timedgoto \"burntsausage\" 2s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "burntsausage",
+            "pid": 7
+          }
+        },
+        {
+          "text": "Flip em!",
+          "destination": {
+            "name": "flipthem2",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "unic",
+      "text": "<<if $spit and $kick and $harass and $banish>><<else>>What do you wanna do now?<<endif>>\\n<<if $spit and $kick and $harass and $banish>><<timedinsert 2s>>@@font-size: 400%; I'm [[bored|bored]] now!!@@<<endtimedinsert>><<endif>>\\n<<if $spit>><<else>>[[Spit|spit]] a squirrel in the face!<<endif>>\\n<<if $kick>><<else>>[[Kick|kick]] a gopher in the stomach!<<endif>>\\n<<if $harass>><<else>>[[Harass|harass]] a moose until he cries!<<endif>>\\n<<if $banish>><<else>>[[Banish|banish]] a frog from the forest!<<endif>>\\n\\n<<if $spit and $kick and $harass and $banish>><<else>>@@font-size: 150%; Time for awesomeness!!@@<<endif>>",
+      "links": [
+        {
+          "text": "bored",
+          "destination": {
+            "name": "bored",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Spit",
+          "destination": {
+            "name": "spit",
+            "pid": 39
+          }
+        },
+        {
+          "text": "Kick",
+          "destination": {
+            "name": "kick",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Harass",
+          "destination": {
+            "name": "harass",
+            "pid": 62
+          }
+        },
+        {
+          "text": "Banish",
+          "destination": {
+            "name": "banish",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "style",
+      "text": "@import url(http://fonts.googleapis.com/css?family=Parisienne);\\n@import url(http://fonts.googleapis.com/css?family=Ledger);\\n@import url(http://fonts.googleapis.com/css?family=Holtwood+One+SC);\\n\\nhead {\\n  box-shadow: inset 0px 0px 0em #fff;\\n  width:100%;\\n  height:100%;\\n  display:block;\\n  position:fixed;\\n}\\nhead * {\\n  display:none;\\n}\\nbody {\\n  background-color:#85ACB6;\\n  margin: 0;\\n  text-align:center;\\n}\\n#passages {\\n  border-left: 0;\\n  margin: 0;\\n  padding: 10;\\n  line-height:20vh;\\n}\\n\\n.passage {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 65%;\\n  height: 70%;\\n  margin:auto;\\n  font: bolder 1.7em/1.5em Ledger, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=title] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 65%;\\n  height: 70%;\\n  margin:auto;\\n  font: 7.5em/1.5em Holtwood ONE SC, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=dad] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 65%;\\n  height: 70%;\\n  margin:auto;\\n  font: 7em/1em Ledger, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.05em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=begin] {\\n  border: 0px solid white;\\n  font-size: 100%;\\n  width: 25em;\\n  text-align:left;\\n  font: bolder 2.5em/1.0em Ledger, \"Helvetica Neue\", Helvetica, sans-serif;\\n}\\n\\n.passage[data-tags~=char] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 65%;\\n  height: 70%;\\n  margin:auto;\\n  font: bolder 2.5em/1.2em Ledger, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=bbqmem] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 65%;\\n  height: 70%;\\n  margin:auto;\\n  font: bolder 2.5em/2em Ledger, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=uni] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 65%;\\n  height: 70%;\\n  margin:auto;\\n  font: bolder 1.7em/2em Ledger, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=unicorn] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 65%;\\n  height: 70%;\\n  margin:auto;\\n  font: bolder 3.5em/2em Ledger, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=unichoice] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 65%;\\n  height: 70%;\\n  margin:auto;\\n  font: bolder 2.5em/2em Ledger, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n#sidebar {\\n  display:table;\\n  position:fixed;\\n  top: 0; left: 0;\\n  width:25%;\\n  height:25%;\\n}\\n\\n#restart {\\n  display:table;\\n  position:fixed;\\n  bottom: 0; left: 0;\\n  width:7%;\\n  height:5%;\\n}\\n\\n#sidebar #title {\\n  display:none; \\n  vertical-align:center;\\n  text-align:center;\\n}\\n\\n#sidebar #title #storyTitle {\\n  font: 1.6em/1.5em Holtwood One SC, \"Helvetica Neue\", Helvetica, sans-serif;\\n  letter-spacing: -0.05em;\\n  color:rgba(0,0,0,0.1);\\n}\\n\\n#restart {\\n  font: bolder 2em/1.5em Parisienne, \"Helvetica Neue\", Helvetica, sans-serif;\\n  letter-spacing: -0.05em;\\n  color:rgba(0,0,0,0.0);\\n}\\n\\n#title :not(#storyTitle){\\n  display:none;\\n}\\n#storymenu, #snapback, #share, #credits {\\n  display:none;\\n}\\na.internalLink:hover, a.externalLink:hover {\\n  color:#fff !important;\\n  text-decoration: none;\\n}\\na.internalLink:nth-child(3n), a.externalLink:nth-child(3n) {\\n  color: #000;\\n}\\na.internalLink:nth-child(3n+1), a.externalLink:nth-child(3n+1) {\\n  color: #000;\\n}\\na.internalLink:nth-child(3n+2), a.externalLink:nth-child(3n+2) {\\n  color: #000;\\n}\\n@media screen and (max-width: 960px) {\\n  body { font-size: 50%; }\\n}\\n@media screen and (max-width: 840px) {\\n  body { font-size: 40%; }\\n}\\n@media screen and (max-width: 720px) {\\n  body { \\n    font-size: 30%;\\n  }\\n}",
+      "links": []
+    },
+    {
+      "pid": 19,
+      "name": "livingroom",
+      "text": "<<set $tv = true>>\\nFond memories.\\n\\nStallone's muscles melt us\\ninto an action movie loving family.\\n\\nWe wished we could climb our\\nobstacles, our own mountains as\\nwe united together in a\\nsilent \"hip hip hooray!!\"\\nwhilst watching Cliffhanger\\nthat we rented in a nearby town.\\n\\nThank you Sly..\\n\\n[[Where could dad be?|warmth]]",
+      "links": [
+        {
+          "text": "Where could dad be?",
+          "destination": {
+            "name": "warmth",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "dice",
+      "text": "\"Balancing on the ice like something's wrong. I never thought I'd have to struggle with a boy. Why can't stuff just work, and where do I return a boy with balance problems?\"\\n\\nButt is hurting.\\nTears adding to the frozen lake.\\n\\nAn embarrassing disappointment that\\nprovided one with the power to lie.\\n\\n\"I have no skates\"\\n\\nYou rather lie about poverty than ability.\\n\\n[[choo choo|train]]\\n\\n<<set $dice = true>>",
+      "links": [
+        {
+          "text": "choo choo",
+          "destination": {
+            "name": "train",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "dsave",
+      "text": "You sacrifice your food!!\\n\\n.. and also, your son dies as\\nthe unicorn's horn protrudes from his torso (funny word \"protrude\")..\\n\\nYour mind fills with recipes based on what treasure\\ncan be found in freezer, cabinets and the fridge.\\n\\nThe Unicorn stomps around, parading the corpse of\\nyour, now late, son.\\n\\nThe body slowly slides down the horn - kids blood smearing all over\\nit. The unicorn walks up to a tree and manages to get\\nrid of the now uninteresting body.\\n\\nFarewell unicorn you mighty fantasy stallion!\\n\\n[[continue|gameover]]\\n\\n<<set $two = true>>",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "gameover",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "title",
+      "text": "\\n@@opacity: 0.5;dad vs. unicorn@@\\n\\n<<timedgoto \"char\" 3.5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "char",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "startagain",
+      "text": "<<if $one and $two and $three>>@@font-size: 80%;You have now finished the game with all three characters,\\nbut are free to replay it again.. of course.@@\\n\\n@@font-size: 130%; just //[[restart|#restart]]//@@\\n\\n<<else>>@@font-size: 70%;Choose a character!@@\\n\\n[img[http://corruptreality.files.wordpress.com/2013/09/menu1.png]]\\n\\n[[DAD|dad]] | [[CHILD|child]] | [[UNICORN|unicorn]]\\n<<endif>>\\n\\n<<set $uni = true>>",
+      "links": [
+        {
+          "text": "DAD",
+          "destination": {
+            "name": "dad",
+            "pid": 36
+          }
+        },
+        {
+          "text": "CHILD",
+          "destination": {
+            "name": "child",
+            "pid": 47
+          }
+        },
+        {
+          "text": "UNICORN",
+          "destination": {
+            "name": "unicorn",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "charge",
+      "text": "\\n\\n@@font-size: 180%; The Unicorn explodes its humongous frame towards you and dad - with a glistening horn ready to kill!@@\\n\\n[[Save dad!|save]]\\n[[Save me!|saveme]]",
+      "links": [
+        {
+          "text": "Save dad!",
+          "destination": {
+            "name": "save",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Save me!",
+          "destination": {
+            "name": "saveme",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "long",
+      "text": "The long one seems somewhat slow so you get\\ncareless as you hide behind the shrubbery.\\n\\nBut he's dumb.. apparently. Taking no notice.\\nYou jump out.\\n\\nJaws dropped (works every time).\\n\\nYou position your horn in a perfect angle\\nand before the long one even reacts to your\\ntriumphant presence the human is impaled\\nby your mighty forehead horn!\\n\\nIt's so worth it to get blood\\non the mane for that rush!\\n\\nAnother human's life has come to end..\\n..back to the forest!\\n\\n[[continue|gameover]]\\n\\n<<set $one = true>>",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "gameover",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "short",
+      "text": "You assume the short one is a \"child\".\\nAnd how often does one get the chance to\\nimpale something where the brain isn't even fully-grown yet?\\n\\nHorn is ready - the tip as sharp as your intellect!\\n\\nMuscles tight and ready for slaughter.\\n\\nYou thrust your body towards the short one.\\nStubby legs not able to save him.\\n\\nLong one hides behind the cooking device.\\n\\nYour awe-inspiring power almost rips the\\nsmall body in two, causing a kidney to fall out.\\n\\nYou fling the body away and grab the kidney (midnight snack)\\nand retreat back the way you came - passing by the shocked long human..\\n\\n[[continue|gameover]]\\n\\n<<set $one = true>>",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "gameover",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "attack",
+      "text": "\\n\\n@@font-size: 180%; Suddenly!\\n\\nA huge fucking Unicorn leaps out from a shrubbery that desperately needs trimming!!@@\\n\\n<<timedgoto \"charge\" 5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "charge",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "inline css",
+      "text": "String.prototype.unDash = function()\\n{\\n\tvar s = this.split(\"-\");\\n\tif(s.length > 1)\\n\t\tfor(var t=1; t < s.length; t++)\\n\t\t\ts[t] = s[t].substr(0,1).toUpperCase() + s[t].substr(1);\\n\treturn s.join(\"\");\\n};",
+      "links": []
+    },
+    {
+      "pid": 29,
+      "name": "skates",
+      "text": "<<set $skates = true>>\\nPatience is a virtue seldom distributed to all.\\n\\nThe ice was hard and the bruises reminds you\\nof how dad //facepalmed// himself some 20 years before you\\neven knew what it was.\\n\\nBalancing on the ice,\\ntumbling over.\\n\\nYou're not as cute as Bambi I suppose.\\nDad left.\\nYou can't skate.\\nBut you can lie.\\nSo you lie about not having skates.\\nYou guard other kids' backpacks instead.\\n\\n[[Back to the box|box]]",
+      "links": [
+        {
+          "text": "Back to the box",
+          "destination": {
+            "name": "box",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "answer",
+      "text": "..\\n\\nDad interrupts before you exhale.\\n\\n\"Because you know it's expensive\\nwith all my bowling and travels\\nand maybe MOM can afford expensive\\ngifts right now, but I feel I\\njust want to focus on me and do\\nstuff that's fun\"\\n\\nYou are not fun anymore.\\n\\n[[Back to the box|box]]",
+      "links": [
+        {
+          "text": "Back to the box",
+          "destination": {
+            "name": "box",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "pee",
+      "text": "\\n\\nListen to how dad chops\\nup a new onion and fries a new batch.\\n\\n[[Another room with less memories?|warmth]]",
+      "links": [
+        {
+          "text": "Another room with less memories?",
+          "destination": {
+            "name": "warmth",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "fry",
+      "text": "\\n\\nNicely done!\\n\\n[[Leave to pee|pee]]",
+      "links": [
+        {
+          "text": "Leave to pee",
+          "destination": {
+            "name": "pee",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "save",
+      "text": "\\nYou die.\\nDad survives.\\nHe escapes inside\\nthe house.\\n\\nAnimal Rescue arrives.\\nThe unicorn is put down\\nand made in to steaks.\\n\\nMeat for dad to BBQ!\\n\\n[[continue|gameover]]\\n\\n<<set $three = true>>",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "gameover",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "warmth",
+      "text": "<<if $bedroom and $daydream and $toilet and $tv and $kitchen and $attic>>\\n<<timedgoto \"dadwhere\" 0s>>\\n<<else>>\\n<<endif>>\\n\\n<<if $attic>>\\n@@opacity:0.2;One storey house.. with an attic.@@\\n<<else>>\\nOne storey house.. with an [[attic|attic]].\\n<<endif>>\\n\\n<<if $kitchen>>\\n@@opacity:0.2;The kitchen is dad's\\nfavorite and mom might be there too.@@\\n<<else>>\\nThe [[kitchen|kitchen]] is dad's\\nfavorite and mom might be there too.\\n<<endif>>\\n<<if $tv>>\\n@@opacity:0.2;But dad also likes TV - watching everything that's on.@@\\n<<else>>\\nBut dad also likes [[TV|livingroom]] - watching everything that's on.\\n<<endif>>\\n<<if $toilet>>\\n@@opacity:0.2;At the same time as he sometime\\ntakes a dump.@@\\n<<else>>\\nAt the same time as he sometime\\ntakes a [[dump|toilet]].\\n<<endif>>\\n\\n<<if $daydream>>\\n@@opacity:0.2;Are you the last human in the world?\\nA sudden panic grabs hold of you.\\nSorry to say but it's just\\na daydream yet again.@@\\n<<else>>\\nAre you the last human in the world?\\nA sudden panic grabs hold of you.\\nSorry to say but it's just\\na [[daydream|daydream]] yet again.\\n<<endif>>\\n\\n<<if $bedroom>>\\n@@opacity:0.2;The bedroom might be a good start?\\nEven though you seldom enter..@@\\n<<else>>\\nThe [[bedroom|bedroom]] might be a good start?\\nEven though you seldom enter..\\n<<endif>>\\n\\n<<if $bedroom and $daydream and $toilet and $tv and $kitchen and $attic>>\\ntry the [[bbq|bbq]]\\n<<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "dadwhere",
+            "pid": 42
+          }
+        },
+        {
+          "text": "attic",
+          "destination": {
+            "name": "attic",
+            "pid": 4
+          }
+        },
+        {
+          "text": "kitchen",
+          "destination": {
+            "name": "kitchen",
+            "pid": 49
+          }
+        },
+        {
+          "text": "TV",
+          "destination": {
+            "name": "livingroom",
+            "pid": 19
+          }
+        },
+        {
+          "text": "dump",
+          "destination": {
+            "name": "toilet",
+            "pid": 1
+          }
+        },
+        {
+          "text": "daydream",
+          "destination": {
+            "name": "daydream",
+            "pid": 55
+          }
+        },
+        {
+          "text": "bedroom",
+          "destination": {
+            "name": "bedroom",
+            "pid": 14
+          }
+        },
+        {
+          "text": "bbq",
+          "destination": {
+            "name": "bbq",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "bbq",
+      "text": "The smell is a fattening\\ntemptress that has enslaved\\ndad..and dad has enslaved you.\\n\\nBehind the grill.\\nMeat in front of him.\\nSmile on face.\\nThe years have made a mark.\\n\\n\"I love barbeque!\"\\nhe exclaims and you\\ntry to recall if \"barbeque\"\\nhas ever been replaced by \"you\".\\n\\n<<timedgoto \"attack\" 15s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "attack",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "dad",
+      "text": "\\n\\n\\n\\n\\nGrilling meat is the most important task a man can take on.\\n\\n<<timedgoto \"flip\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "flip",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "flipthem2",
+      "text": "\\nGood work.\\n\\nFor the next couple of minutes..\\n.. dad's focus is elsewhere.\\n\\nTrailing off.\\nTrain of thought approaches.\\n\\n<<timedgoto \"train\" 8s>>\\n",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "train",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "StoryTitle",
+      "text": "dad vs. unicorn",
+      "links": []
+    },
+    {
+      "pid": 39,
+      "name": "spit",
+      "text": "You prowl.\\nYou stalk.\\nYou spot .. a squirrel.\\n\\nA mucus and phlegm atom bomb is forming inside your sinuses - ready to cover the little rodent in shame slime that can never been washed off.\\n\\nYou run up towards him and FUCKING SPIT him in the face. In slow-mo the loogie travels in a perfect trajectory (you even managed to get some green snot mixed with blood in there too) creating massive splash damage when hitting the squirrel right between the nose and the left eye!\\n\\nYeah!! That'll show that little bastard.\\n\\n[[More bullying!|unic]]\\n\\n<<set $spit = true>>",
+      "links": [
+        {
+          "text": "More bullying!",
+          "destination": {
+            "name": "unic",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "skulk",
+      "text": "\\n\\n[[Skulk|skulk2]] some more..",
+      "links": [
+        {
+          "text": "Skulk",
+          "destination": {
+            "name": "skulk2",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "dmoped",
+      "text": "\"Why can't he just humor me when I try my very best to make him fit in? All the other boys likes everything you can start with a key\"\\n\\nMaybe playing for another team?\\nPlaying for both teams?\\nPlaying for no team?\\nCompletely team-less - crossing the field without a shirt.\\n\\n\"Will he kiss girls if he doesn't like motors?\"\\n\\n[[choo choo!|train]]\\n\\n<<set $dmoped = true>>",
+      "links": [
+        {
+          "text": "choo choo!",
+          "destination": {
+            "name": "train",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "dadwhere",
+      "text": "\\n\\n@@opacity:0.5;Where's dad?@@\\n\\n<<timedgoto \"bbqmem\" 1s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "bbqmem",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "dcharge",
+      "text": "\\n\\n@@font-size: 180%; The Unicorn explodes its humongous frame towards you and your son - with a sharp horn ready to kill!!@@\\n\\n[[Save me!|dsave]]\\n[[Save my son!|saveson]]",
+      "links": [
+        {
+          "text": "Save me!",
+          "destination": {
+            "name": "dsave",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Save my son!",
+          "destination": {
+            "name": "saveson",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "saveson",
+      "text": "You are not all.\\nYou have lived a worthy life.\\nBut your son still have a chance\\nof reaching those places\\nand mental wins you couldn't\\neven dream of due to poor\\nanalog emoticons.\\n\\nFarewell offspring.\\n\\n[[continue|gameover]]\\n\\n<<set $two = true>>",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "gameover",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "saveme",
+      "text": "\\nYou hide behind your\\nplayhouse and peek out\\nfrom behind an already set\\ntea party planned to held\\nlater that very same day\\nand sees how dad gets slaughtered\\nin front of your eyes.\\n\\nThe unicorn chucks\\nthe dad-carcass away\\nand leaves - back the way\\nit came - through the shrubbery.\\n\\nYou flip the burgers\\nbefore they get burnt.\\n\\n[[continue|gameover]]\\n\\n<<set $three = true>>",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "gameover",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "dfood",
+      "text": "\"It's not my fault he's fat. I'm not fat and I eat the same food he eats. Nothing wrong with some good food - enjoying life and making sure you're not hungry.\"\\n\\nCandy hidden behind the bread.\\nClanks heard throughout the night.\\nDifferent pieces sounding differently\\nwhen hitting the bowl.\\n\\nHis tongue embracing each sugary placebo.\\n\\nSpreads, cold cuts and cheese in plenty.\\nDecorative greens drowning in cream.\\n\\n[[choo choo|train]]\\n\\n<<set $dfood = true>>",
+      "links": [
+        {
+          "text": "choo choo",
+          "destination": {
+            "name": "train",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "child",
+      "text": "\\n\\nWaking up is bliss.\\nNightmare to reality or was it vice versa?\\n\\nIt's quiet...still.\\nThe room (your room) is\\neverything right now.\\nSometimes you've waken up\\nnot knowing where you are - enjoying oblivion.\\n\\nThe room is cold and you\\nseek [[warmth|warmth]] in the hall.",
+      "links": [
+        {
+          "text": "warmth",
+          "destination": {
+            "name": "warmth",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "carryon",
+      "text": "\\nAs you contemplate\\nhow to feed your family - now\\nwhen you in a lousy manner\\nspoiled the feast that\\nwas on everybody's mind - a train\\nof thought suddenly hits you\\nas you didn't pass the rails fast enough.\\n\\n<<timedgoto \"train\" 10s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "train",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "kitchen",
+      "text": "<<set $kitchen = true>>\\nA passionate cook and\\nan aspiring dad.\\n\\nOCD cooking makes it hard\\nfor you to fit in.\\n\\nRemember when he asked you\\nto help?\\n\\n[[Chop onion|chop]]",
+      "links": [
+        {
+          "text": "Chop onion",
+          "destination": {
+            "name": "chop",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "box",
+      "text": "\\n<<if $skates and $moped and $money>>\\nNothing more for you inside the box.\\nIts gutted remains lay lifeless in front of you.\\n\\n@@font-size: 150%;[[Keep looking for dad|warmth]]@@\\n<<else>>\\nThe dust on the lid falls to the floor.\\nThe content strikes your tired eyes\\nas you suddenly........remembers.\\n\\nA birthday gift without soul where not even the\\nthought counts.\\n\\nA hope lit by gender expectations and cheered\\non by dad.\\n\\nA disappointment not hid creating repercussions where\\njoy is swapped for shame.\\n\\nMemory lane is a fucking mental gauntlet.\\n\\n\\n<<if $skates>>\\n@@opacity:0.5; The Ice Skates@@\\n<<else>>\\n[[The Ice Skates|skates]]\\n<<endif>>\\n\\n<<if $money>>\\n@@opacity:0.5; The Money Gift@@\\n<<else>>\\n[[The Money Gift|money]]\\n<<endif>>\\n\\n<<if $moped>>\\n@@opacity:0.5; The Moped@@\\n<<else>>\\n[[The Moped|moped]]\\n<<endif>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "Keep looking for dad",
+          "destination": {
+            "name": "warmth",
+            "pid": 34
+          }
+        },
+        {
+          "text": "The Ice Skates",
+          "destination": {
+            "name": "skates",
+            "pid": 29
+          }
+        },
+        {
+          "text": "The Money Gift",
+          "destination": {
+            "name": "money",
+            "pid": 5
+          }
+        },
+        {
+          "text": "The Moped",
+          "destination": {
+            "name": "moped",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "insert",
+      "text": "(function(){version.extensions.replaceMacrosCombined={major:1,minor:0,revision:1};\\nvar nullobj={handler:function(){}};function showVer(n,notrans){n.innerHTML=\"\";\\nnew Wikifier(n,n.tweecode);n.setAttribute(\"data-enabled\",\"true\");\\nn.style.display=\"inline\";n.classList.remove(\"revision-span-out\");\\nif(!notrans){n.classList.add(\"revision-span-in\");if(n.timeout){clearTimeout(n.timeout)\\n}n.timeout=setTimeout(function(){n.classList.remove(\"revision-span-in\");\\nn=null},1)}}function hideVer(n,notrans){n.setAttribute(\"data-enabled\",\"false\");\\nn.classList.remove(\"revision-span-in\");if(n.timeout){clearTimeout(n.timeout)\\n}if(!notrans){n.classList.add(\"revision-span-out\");n.timeout=setTimeout(function(){if(n.getAttribute(\"data-enabled\")==\"false\"){n.classList.remove(\"revision-span-out\");\\nn.style.display=\"none\";n.innerHTML=\"\"}n=null},1000)}else{n.style.display=\"none\";\\nn.innerHTML=\"\";n=null}}function tagcontents(b,starttags,desttags,endtags,k){var l=0,c=\"\",tg,a,i;\\nfunction tagfound(i,e){for(var j=0;j<e.length;j++){if(a.indexOf(\"<<\"+e[j],i)==i){return e[j]\\n}}}a=b.source.slice(k);for(i=0;i<a.length;i++){if(tg=tagfound(i,starttags)){l++\\n}else{if((tg=tagfound(i,desttags))&&l==0){b.nextMatch=k+i+tg.length+4;\\nreturn[c,tg]}else{if(tg=tagfound(i,endtags)){l--;if(l<0){return null\\n}}}}c+=a.charAt(i)}return null}var begintags=[];var endtags=[];\\nfunction revisionSpanHandler(g,e,f,b){var k=b.source.indexOf(\">>\",b.matchStart)+2,vsns=[],vtype=e,flen=f.length,becomes,c,cn,m,h,vsn;\\nfunction mkspan(vtype){h=insertElement(m,\"span\",null,\"revision-span \"+vtype);\\nh.setAttribute(\"data-enabled\",false);h.style.display=\"none\";h.tweecode=\"\";\\nreturn h}if(this.shorthand&&flen){while(f.length>0){vsns.push([f.shift(),(this.flavour==\"insert\"?\"gains\":\"becomes\")])\\n}}else{if(this.flavour==\"insert\"||(this.flavour==\"continue\"&&this.trigger==\"time\")){vsns.push([\"\",\"becomes\"])\\n}}if(this.flavour==\"continue\"&&flen){b.nextMatch=k+b.source.slice(k).length;\\nvsns.push([b.source.slice(k),vtype])}else{becomes=[\"becomes\",\"gains\"];\\nc=tagcontents(b,begintags,becomes.concat(endtags),endtags,k);\\nif(c&&endtags.indexOf(c[1])==-1){while(c){vsns.push(c);c=tagcontents(b,begintags,becomes,endtags,b.nextMatch)\\n}c=tagcontents(b,begintags,[\"end\"+e],endtags,b.nextMatch)}if(!c){throwError(g,\"can't find matching end\"+e);\\nreturn}vsns.push(c);if(this.flavour==\"continue\"){k=b.nextMatch;\\nb.nextMatch=k+b.source.slice(k).length;vsns.push([b.source.slice(k),\"\"])\\n}}if(this.flavour==\"remove\"){vsns.push([\"\",\"becomes\"])}console.log(JSON.stringify(vsns));\\ncn=0;m=insertElement(g,\"span\",null,e);m.setAttribute(\"data-flavour\",this.flavour);\\nh=mkspan(\"initial\");vsn=vsns.shift();console.log(e+\" \"+vsn[0]);\\nh.tweecode=vsn[0];showVer(h,true);while(vsns.length>0){if(vsn){vtype=vsn[1]\\n}vsn=vsns.shift();h=mkspan(vtype);h.tweecode=vsn[0]}if(typeof this.setup==\"function\"){this.setup(m,g,f)\\n}}function quantity(m){return(m.children.length-1)+(m.getAttribute(\"data-flavour\")==\"remove\")\\n}function revisionSetup(m,g,f){m.className+=\" \"+f[0].replace(\" \",\"_\");\\nshowVer(m.firstChild,true)}function keySetup(m,g,f){var fl=this.flavour,key=f[0];\\nm.setEventListener(\"keydown\",function l(e){var done=!revise(\"revise\",m);\\nif(done){m.removeEventListener(\"keydown\",l)}})}function timeSetup(m,g,f){function cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0\\n}}}throwError(g,s+\" isn't a CSS time unit\");return 0}var fl=this.flavour;\\nvar tm=cssTimeUnit(f[0]);setTimeout(function timefn(){var done=!revise(\"revise\",m);\\nif(!done){setTimeout(timefn,tm)}},tm)}function hoverSetup(m){m.onmouseover=function(){revise(\"revise\",this)\\n};m.onmouseout=function(){revise(\"revert\",this)};m=null}function mouseSetup(m){var fl=this.flavour,evt=(window.onmouseenter===null?\"onmouseenter\":\"onmouseover\");\\nm[evt]=function(){var done=!revise(\"revise\",this);if(done){this[evt]=null\\n}};m=null}function linkSetup(m,g,f){var fl=this.flavour,l=Wikifier.createInternalLink(),p=m.parentNode;\\nl.className=\"internalLink replaceLink\";p.insertBefore(l,m);l.insertBefore(m,null);\\nl.onclick=function(){var p,done=false;if(m&&m.parentNode==this){done=!revise(\"revise\",m);\\nscrollWindowTo(m)}if(done){this.parentNode.insertBefore(m,this);\\nthis.parentNode.removeChild(this)}};l=null}function visitedSetup(m,g,f){var i,done,shv=state.history[0].variables,os=\"once seen\",d=(m.firstChild&&(this.flavour==\"insert\"?m.firstChild.nextSibling:m.firstChild).tweecode);\\nshv[os]=shv[os]||{};if(d&&!shv[os].hasOwnProperty(d)){shv[os][d]=1\\n}else{for(i=shv[os][d];i>0&&!done;i--){done=!revise(\"revise\",m,true)\\n}if(shv[os].hasOwnProperty(d)){shv[os][d]+=1}}}[{name:\"insert\",flavour:\"insert\",trigger:\"link\",setup:linkSetup},{name:\"timedinsert\",flavour:\"insert\",trigger:\"time\",setup:timeSetup},{name:\"insertion\",flavour:\"insert\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"later\",flavour:\"insert\",trigger:\"visited\",setup:visitedSetup},{name:\"keyinsert\",flavour:\"insert\",trigger:\"key\",setup:keySetup},{name:\"replace\",flavour:\"replace\",trigger:\"link\",setup:linkSetup},{name:\"timedreplace\",flavour:\"replace\",trigger:\"time\",setup:timeSetup},{name:\"mousereplace\",flavour:\"replace\",trigger:\"mouse\",setup:mouseSetup},{name:\"hoverreplace\",flavour:\"replace\",trigger:\"hover\",setup:hoverSetup},{name:\"revision\",flavour:\"replace\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"keyreplace\",flavour:\"replace\",trigger:\"key\",setup:keySetup},{name:\"timedremove\",flavour:\"remove\",trigger:\"time\",setup:timeSetup},{name:\"mouseremove\",flavour:\"remove\",trigger:\"mouse\",setup:mouseSetup},{name:\"hoverremove\",flavour:\"remove\",trigger:\"hover\",setup:hoverSetup},{name:\"removal\",flavour:\"remove\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"once\",flavour:\"remove\",trigger:\"visited\",setup:visitedSetup},{name:\"keyremove\",flavour:\"remove\",trigger:\"key\",setup:keySetup},{name:\"continue\",flavour:\"continue\",trigger:\"link\",setup:linkSetup},{name:\"timedcontinue\",flavour:\"continue\",trigger:\"time\",setup:timeSetup},{name:\"mousecontinue\",flavour:\"continue\",trigger:\"mouse\",setup:mouseSetup},{name:\"keycontinue\",flavour:\"continue\",trigger:\"key\",setup:keySetup},{name:\"cycle\",flavour:\"cycle\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"mousecycle\",flavour:\"cycle\",trigger:\"mouse\",setup:mouseSetup},{name:\"timedcycle\",flavour:\"cycle\",trigger:\"time\",setup:timeSetup},{name:\"keycycle\",flavour:\"replace\",trigger:\"key\",setup:keySetup}].forEach(function(e){e.handler=revisionSpanHandler;\\ne.shorthand=([\"link\",\"mouse\",\"hover\"].indexOf(e.trigger)>-1);\\nmacros[e.name]=e;macros[\"end\"+e.name]=nullobj;begintags.push(e.name);\\nendtags.push(\"end\"+e.name)});function reviseAll(rt,rname){var rall=document.querySelectorAll(\".passage .\"+rname),ret=false;\\nfor(var i=0;i<rall.length;i++){ret=ret||revise(rt,rall[i])}return ret\\n}function revise(rt,r,notrans){var ind2,curr,next,ind=-1,rev=(rt==\"revert\"),rnd=(rt.indexOf(\"random\")>-1),fl=r.getAttribute(\"data-flavour\"),rc=r.childNodes,cyc=(fl==\"cycle\"),rcl=rc.length-1;\\nfunction doToGainerSpans(n,fn){for(var k=n-1;k>=0;k--){if(rc[k+1].classList.contains(\"gains\")){fn(rc[k],notrans)\\n}else{break}}}for(var k=0;k<=rcl;k++){if(rc[k].getAttribute(\"data-enabled\")==\"true\"){ind=k\\n}}if(rev){ind-=1}curr=(ind>=0?rc[ind]:(cyc?rc[rcl]:null));ind2=ind;\\nif(rnd){ind2=(ind+(Math.floor(Math.random()*rcl)))%rcl}next=((ind2<rcl)?rc[ind2+1]:(cyc?rc[0]:null));\\nvar docurr=(rev?showVer:hideVer);var donext=(rev?hideVer:showVer);\\nif(curr){if(!(next&&next.classList.contains(\"gains\"))||rnd){docurr(curr,notrans);\\ndoToGainerSpans(ind,docurr,notrans)}}if(next){donext(next,notrans);\\nif(rnd){doToGainerSpans(ind2+1,donext,notrans)}}return(cyc?true:(rev?(ind>0):(ind2<rcl-1)))\\n}macros.revert=macros.revise=macros.randomise=macros.randomize={handler:function(a,b,c){var l,rev,rname;\\nfunction disableLink(l){l.style.display=\"none\"}function enableLink(l){l.style.display=\"inline\"\\n}function updateLink(l){if(l.className.indexOf(\"random\")>-1){enableLink(l);\\nreturn}var rall=document.querySelectorAll(\".passage .\"+rname),cannext,canprev,i,ind,r,fl;\\nfor(i=0;i<rall.length;i++){r=rall[i],fl=r.getAttribute(\"data-flavour\");\\nif(fl==\"cycle\"){cannext=canprev=true}else{if(r.firstChild.getAttribute(\"data-enabled\")==!1+\"\"){canprev=true\\n}if(r.lastChild.getAttribute(\"data-enabled\")==!1+\"\"){cannext=true\\n}}}var can=(l.classList.contains(\"revert\")?canprev:cannext);(can?enableLink:disableLink)(l)\\n}function toggleText(w){w.classList.toggle(rl+\"Enabled\");w.classList.toggle(rl+\"Disabled\");\\nw.style.display=((w.style.display==\"none\")?\"inline\":\"none\")}var rl=\"reviseLink\";\\nif(c.length<2){throwError(a,b+\" macro needs 2 parameters\");return\\n}rname=c.shift().replace(\" \",\"_\");l=Wikifier.createInternalLink(a,null);\\nl.className=\"internalLink \"+rl+\" \"+rl+\"_\"+rname+\" \"+b;var v=\"\";\\nvar end=false;var out=false;if(c.length>1&&c[0][0]==\"$\"){v=c[0].slice(1);\\nc.shift()}switch(c[c.length-1]){case\"end\":end=true;c.pop();break;\\ncase\"out\":out=true;c.pop();break}var h=state.history[0].variables;\\nfor(var i=0;i<c.length;i++){var on=(i==Math.max(c.indexOf(h[v]),0));\\nvar d=insertElement(null,\"span\",null,rl+((on)?\"En\":\"Dis\")+\"abled\");\\nif(on){h[v]=c[i];l.setAttribute(\"data-cycle\",i)}else{d.style.display=\"none\"\\n}insertText(d,c[i]);l.appendChild(d)}l.onclick=function(){reviseAll(b,rname);\\nvar t=this.childNodes,u=this.getAttribute(\"data-cycle\")-0,m=t.length,n,lall,i;\\nif((end||out)&&u==m-(end?2:1)){if(end){n=this.removeChild(t[u+1]);\\nn.className=rl+\"End\";n.style.display=\"inline\";this.parentNode.replaceChild(n,this)\\n}else{this.parentNode.removeChild(this);return}}else{toggleText(t[u]);\\nu=(u+1)%m;if(v){h[v]=c[u]}toggleText(t[u]);this.setAttribute(\"data-cycle\",u)\\n}lall=document.getElementsByClassName(rl+\"_\"+rname);for(i=0;i<lall.length;\\ni++){updateLink(lall[i])}};disableLink(l);setTimeout(function(){updateLink(l);\\nl=null},1)}};macros.mouserevise=macros.hoverrevise={handler:function(a,b,c,d){var endtags=[\"end\"+b],evt=(window.onmouseenter===null?\"onmouseenter\":\"onmouseover\"),t=tagcontents(d,[b],endtags,endtags,d.source.indexOf(\">>\",d.matchStart)+2);\\nif(t){var rname=c[0].replace(\" \",\"_\"),h=insertElement(a,\"span\",null,\"hoverrevise hoverrevise_\"+rname),f=function(){var done=!reviseAll(\"revise\",rname);\\nif(b!=\"hoverrevise\"&&done){this[evt]=null}};new Wikifier(h,t[0]);\\nif(b==\"hoverrevise\"){h.onmouseover=f;h.onmouseout=function(){reviseAll(\"revert\",rname)\\n}}else{h[evt]=f}h=null}}};macros.endmouserevise=nullobj;macros.endhoverrevise=nullobj\\n}());1;",
+      "links": []
+    },
+    {
+      "pid": 52,
+      "name": "bored",
+      "text": "\\n\\n[[Skulk|skulk]] to find new victims..",
+      "links": [
+        {
+          "text": "Skulk",
+          "destination": {
+            "name": "skulk",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "duni",
+      "text": "\\n\\n@@font-size: 180%; Suddenly!\\n\\nA huge fucking Unicorn leaps out from a shrubbery that's perfect just the way it is!!@@\\n\\n<<timedgoto \"dcharge\" 5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "dcharge",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "tapes",
+      "text": "\\nApparently pubic hair is an abomination..\\n..white blood from meat oblongs..\\n..silent moans - dubbed - out of sync..\\ng-spots in hands and orifices.\\n\\ncraving the lukewarm molasses - a waterfall of discarded humans.\\n\\nsex ed via the VCR - NOW with bonus language classes!\\n\\n[[Continue the search|warmth]]",
+      "links": [
+        {
+          "text": "Continue the search",
+          "destination": {
+            "name": "warmth",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "daydream",
+      "text": "<<set $daydream = true>>\\nYou yearn for solitude.\\nTo awake to a quiet earth\\nwhere you set the rules.\\n\\nDreams lacking the extraordinary.\\nInstead just longing not to be judged.\\nScrew driving Monster Trucks,\\nmasturbating in shopping malls or\\nblowing stuff up.\\n\\nYou just want to eat a chocolate bar.\\nAlone. In broad daylight, not carefully\\nhiding the wrapper in the trashcan.\\n\\nHow one can dream..\\n\\n[[Still no dad|warmth]]",
+      "links": [
+        {
+          "text": "Still no dad",
+          "destination": {
+            "name": "warmth",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "dcliff",
+      "text": "\"He picked the movie. I paid, but HE picked it, and WE watched it. Nothing girlie. But male. Fighting psychos on a fucking cold mountain is awesome. Blood, explosions, muscles (gay to watch them too long though), guns and other fun stuff\"\\n\\nA column written about TV time with dad, saved under stacks of paper, but saved nonetheless.\\n\\nThe TV babysits us both - being entertained by the VHS lottery - picking unlabeled tapes - maybe seeing a movie about a police shooting bad guys or a bad guy shooting the police.\\n\\n[[choo choo|train]]\\n\\n<<set $dcliff = true>>",
+      "links": [
+        {
+          "text": "choo choo",
+          "destination": {
+            "name": "train",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "css passage",
+      "text": "(function(){ var render2 = Passage.prototype.render; Passage.prototype.render = function () { var b = render2.call(this); var t = this.tags.join(\" \"); document.body.setAttribute(\"data-tags\", t); b.setAttribute(\"data-tags\",t); return b; }; if(state) { var tgs = state.history[0].passage.tags.join(\" \"); var fc = $('passages').firstChild; fc.setAttribute(\"data-tags\",tgs); }}());if(state) (function(){ var it = setInterval(function(){ var fd = $('passages').firstChild; if (fd!=fc) { clearInterval(it); fd.setAttribute(\"data-tags\",tgs); } },0); }());",
+      "links": []
+    },
+    {
+      "pid": 58,
+      "name": "flip",
+      "text": "\\n\\n@@font-size: 150%;Flip them burgers!@@\\n\\n[[Flip em!|flipthem]]\\n\\n<<timedgoto \"burntburger\" 2s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "burntburger",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Flip em!",
+          "destination": {
+            "name": "flipthem",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "timer",
+      "text": "version.extensions.timedgotoMacro={major:1,minor:1,revision:0};macros[\"goto\"]=macros[\"timedgoto\"]={timer:null,handler:function(a,b,c,d){\\nfunction cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0;\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0;}}}throwError(a,s+\" isn't a CSS time unit\");\\nreturn 0;}var t,d,m,s;t=c[c.length-1];d=d.fullArgs();m=0;if(b!=\"goto\"){d=d.slice(0,d.lastIndexOf(t));\\nm=cssTimeUnit(t);}d=eval(Wikifier.parse(d));if(d+\"\"){if(this.timer){clearTimeout(this.timer);\\n}s=state.history[0].passage.title;this.timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a);\\n}},m);}}};",
+      "links": []
+    },
+    {
+      "pid": 60,
+      "name": "dhead",
+      "text": "\"Calling just to hear how he's doing, and he's telling me HE's lonely.. HE LIVES IN A HUGE CITY - plenty of people there to see.. not like me living alone, in my house.. not a soul around.\"\\n\\nRaised to feel nothing makes it hard to relate.\\nProbably cried in the tool shed when fetching coal and the grill.\\nHow to handle non-physical disorder when tear ducts are blocked\\nwith Y-chromosomes.\\n\\nFeeble attempts to comfort.\\nBut at least..attempts.\\n\\n[[choo choo|train]]\\n\\n<<set $dhead = true>>",
+      "links": [
+        {
+          "text": "choo choo",
+          "destination": {
+            "name": "train",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "chop",
+      "text": "\\n\\nGood work!\\n\\n[[Fry onion|fry]]",
+      "links": [
+        {
+          "text": "Fry onion",
+          "destination": {
+            "name": "fry",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "harass",
+      "text": "How about some good old-fashioned mental harassment?\\nYou know, really deconstruct someone.\\n\\nThere's this annoying moose that needs to be taught a lesson.\\n\\nAs usually he grazes (ON YOUR GRAZING SPOT!) near the old oak.\\n\\nYou spend the remainder of the day calling him:\\n*UGLY\\n*FAT\\n*RIPE FOR SLAUGHTER\\n*STUPID\\n\\nThe moose's sobbing soothes your mind.\\nThis is so much better than listening to whale song when going to sleep..\\n\\n[[I want more!!|unic]]\\n\\n<<set $harass = true>>\\n",
+      "links": [
+        {
+          "text": "I want more!!",
+          "destination": {
+            "name": "unic",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "train",
+      "text": "\\n\" Why can't he just enjoy the <<if $dmoped>>@@font-size: 150%;LIFE@@<<else>>[[moped|dmoped]]<<endif>> I gave him, and be grateful for it, and for all that fucking <<if $dmoney>>@@font-size: 150%;LOVE@@<<else>>[[money|dmoney]]<<endif>> that I throw away on him and all the <<if $dfood>>@@font-size: 150%;FAT@@<<else>>[[food|dfood]]<<endif>> I cook.. but it's always been like that, the boy is not normal in his <<if $dhead>>@@font-size: 150%;WAYS@@<<else>>[[head|dhead]]<<endif>>, failing <<if $dice>>@@font-size: 150%;ME@@<<else>>[[ice skating|dice]]<<endif>> when he was a kid.. and why can't he just leave my <<if $dshit>>@@font-size: 150%;FEELINGS@@ <<else>>[[stuff|dshit]]<<endif>> be.. and why can't we enjoy.... \\n\\n<<if $dcliff>>@@font-size: 150%;..MEMORIES@@<<else>>[[..Cliffhanger|dcliff]]<<endif>> again.......? \"\\n\\n<<if $dcliff and $dmoped and $dmoney and $dhead and $dshit and $dice and $dfood>>\\n<<timedgoto \"myson\" 5s>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "myson",
+            "pid": 65
+          }
+        },
+        {
+          "text": "moped",
+          "destination": {
+            "name": "dmoped",
+            "pid": 41
+          }
+        },
+        {
+          "text": "money",
+          "destination": {
+            "name": "dmoney",
+            "pid": 12
+          }
+        },
+        {
+          "text": "food",
+          "destination": {
+            "name": "dfood",
+            "pid": 46
+          }
+        },
+        {
+          "text": "head",
+          "destination": {
+            "name": "dhead",
+            "pid": 60
+          }
+        },
+        {
+          "text": "ice skating",
+          "destination": {
+            "name": "dice",
+            "pid": 20
+          }
+        },
+        {
+          "text": "stuff",
+          "destination": {
+            "name": "dshit",
+            "pid": 66
+          }
+        },
+        {
+          "text": "..Cliffhanger",
+          "destination": {
+            "name": "dcliff",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "image loading",
+      "text": "(function(){var r=\"\";var s=Wikifier.formatters;for(var j=0;j<s.length;j++){if(s[j].name==\"image\"){r=s[j].lookahead;\\nbreak;}}var div=document.getElementById(\"storeArea\").firstChild.nextSibling;while(div){if(r){k(new RegExp(r,\"mg\"),4);\\n}var b=String.fromCharCode(92);var u=b+\"s*['\"+'\"]?([^\"'+\"']+(jpe?g|a?png|gif|bmp))['\"+'\"]?'+b+\"s*\";\\nk(new RegExp(\"url\"+b+\"(\"+u+b+\")\",\"mig\"),1);k(new RegExp(\"src\"+b+\"s*=\"+u,\"mig\"),1);\\ndiv=div.nextSibling;}function k(c,e){do{var d=c.exec(div.innerHTML);if(d){var i=new Image();\\ni.src=d[e];}}while(d);}}());",
+      "links": []
+    },
+    {
+      "pid": 65,
+      "name": "myson",
+      "text": "Your son enters the lawn..\\n\\nNo!!\\n\\nHe presents himself on the lawn.\\nHard to describe without \"dad eyes\".\\n\\n<<if $burn>>\\nThe shame of burnt food enters your mind.\\nWhat to do now? You can't fail your son as\\nyou are his only salvation..\\n<<else>>\\nCulinary Peacocking - worthy of a champion!\\nWait until he sees your carnivore like accomplishment..!\\n<<endif>>\\n\\n<<timedgoto \"duni\" 10s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "duni",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "dshit",
+      "text": "\"Order is good, a well organized kitchen is a must when cooking. Everything in place even in the tool shed, and why can't people have their kitchens just like I want them. It's nothing wrong with me, it's everybody else in the entire world.\"\\n\\nMaybe people aren't that interesting..\\n..as they can't be labeled and organized.\\n\\nPreferring spatulas before additional chefs.\\nA son begging like a dog - but nothing ever falls on the floor.\\n\\n[[choo choo|train]]\\n\\n<<set $dshit = true>>",
+      "links": [
+        {
+          "text": "choo choo",
+          "destination": {
+            "name": "train",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "bbqmem",
+      "text": "\\n[IMG[http://corruptreality.files.wordpress.com/2013/09/bbq.png]] \\n\\nA small (happy) memory surfaces your mind.\\n@@font-size: 50%;[[Maybe outside, cooking?|bbq]]@@",
+      "links": [
+        {
+          "text": "Maybe outside, cooking?",
+          "destination": {
+            "name": "bbq",
+            "pid": 35
+          }
+        }
+      ]
+    }
+  ]
+}

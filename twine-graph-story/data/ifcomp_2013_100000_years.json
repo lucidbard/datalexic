@@ -1,0 +1,141 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "sheet",
+      "text": "html {\\n\\n  background-color: #ffffff;\\n}\\n\\nbody {\\n  /* Remove default styles */\\n  background-color: transparent;\\n  margin: 10% 0 0 0;\\n  font-size: 100%;\\n  /* Used to center the box */\\n  text-align: center;\\n}\\n\\n#passages {\\n  /* Box background (white with 70% opacity) */\\n  background-color: rgba(255, 255, 255, 0.7);\\n\\n  /* Border */\\n  border: 2px solid white;\\n\\n  /* Rounded corners */\\n  border-radius: 1em;\\n\\n  /* Box width */\\n  width: 80%;\\n\\n  /* Center the box */\\n  display: inline-block;\\n  min-height: 40%;\\n  margin:auto;\\n  margin-bottom: 5%;\\n  padding: 0px;\\n}\\n\\n.passage {\\n  margin: 0px;\\n  /* Inner margin within the box */\\n  padding: 2em;\\n\\n  /* Text formatting */\\n  color: black;\\n  font-size: 100%;\\n  text-align:center;\\n}\\n\\n/* No sidebar */\\n#sidebar {\\n  display:none;\\n}\\n\\n/* Links */\\na.internalLink, a.externalLink {\\n  color: royalblue;\\n}\\na.internalLink:hover, a.externalLink:hover {\\n  color: deepskyblue;\\n  text-decoration: none;\\n}\\n\\n/* Shrink the page when viewed on devices with a low screen width */\\n@media screen and (max-width: 960px) {\\n  .passage { font-size: 90%;}\\n  #passages { width: 70%; }\\n}\\n@media screen and (max-width: 840px) {\\n  .passage {  font-size: 87.5%; }\\n  #passages { width: 80%; }\\n}\\n@media screen and (max-width: 720px) {\\n  .passage { font-size: 75%; }\\n  #passages { width: 90%; }\\n}",
+      "links": []
+    },
+    {
+      "pid": 2,
+      "name": "next",
+      "text": "<<set $passage = ($passage + 1)>><<if $passage eq 7>><<set $passage = 1>><<endif>>\\n[[<|previous]] [[>|next]]\\n100,000 years later, \\n<<display $passage>>",
+      "links": [
+        {
+          "text": "<",
+          "destination": {
+            "name": "previous",
+            "pid": 14
+          }
+        },
+        {
+          "text": ">",
+          "destination": {
+            "name": "next",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "1",
+      "text": "native unevolved species \\ncontacted by strange weak gods \\nfrom outer space",
+      "links": []
+    },
+    {
+      "pid": 4,
+      "name": "Start",
+      "text": "<<set $passage = Math.floor((Math.random()*6)+1);>>100,000 YEARS\\n\\nCopyright (c) Pierre Chevalier - 2013\\n\\n[[Start|page1]]\\n\\nOther things I've done: [[www.lilinx.com|http://www.lilinx.com]]",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "page1",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "3",
+      "text": "unevolved species develop dangerous technologies\\nglobal war destroys civilization \\nfew families board giant spaceship and leave",
+      "links": []
+    },
+    {
+      "pid": 6,
+      "name": "2",
+      "text": "gods from outer space \\ndestroyed by primitive tribes\\nafter giving away partial knowledge",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "5",
+      "text": "due to limited resources aboard giant spaceship\\nnomads slowly give up physical abilities \\nin favor of psychic powers\\n",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "4",
+      "text": "drastic resource control set cultural standards \\nfor new nomadic civilization\\naboard giant spaceship",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "6",
+      "text": "giant spaceship \\ncontrolled by psychic creatures \\nlands on inhabited planet",
+      "links": []
+    },
+    {
+      "pid": 10,
+      "name": "StoryTitle",
+      "text": "100,000 years",
+      "links": []
+    },
+    {
+      "pid": 11,
+      "name": "page1",
+      "text": "\\n[[<|previous]] [[>|next]]\\n<<display $passage>>",
+      "links": [
+        {
+          "text": "<",
+          "destination": {
+            "name": "previous",
+            "pid": 14
+          }
+        },
+        {
+          "text": ">",
+          "destination": {
+            "name": "next",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "StoryAuthor",
+      "text": "Pierre Chevalier",
+      "links": []
+    },
+    {
+      "pid": 13,
+      "name": "display",
+      "text": "version.extensions.displayMacro={major:2,minor:0,revision:0};macros.display={handler:function(place,macroName,params,parser){\\ntry{var output=eval(parser.fullArgs()); new Wikifier(place,tale.get(output.toString()).text);}\\ncatch(e){throwError(place,\"bad expression: \"+e.message);}}};",
+      "links": []
+    },
+    {
+      "pid": 14,
+      "name": "previous",
+      "text": "<<set $passage = ($passage - 1)>><<if $passage eq 0>><<set $passage = 6>><<endif>>\\n[[<|previous]] [[>|next]]\\n100,000 years before, \\n<<display $passage>>",
+      "links": [
+        {
+          "text": "<",
+          "destination": {
+            "name": "previous",
+            "pid": 14
+          }
+        },
+        {
+          "text": ">",
+          "destination": {
+            "name": "next",
+            "pid": 2
+          }
+        }
+      ]
+    }
+  ]
+}

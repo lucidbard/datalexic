@@ -1,0 +1,578 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "A Witch's Request",
+      "text": "Nyna Lives: Chapter 1\n\nThe night is quiet. The grass rustles and chirps, trees sway without wind, and the moon stares down on the world with eyes brilliant and unblinking. Nearby, a gentle fire warms a bubbling cauldron, the scent filling your senses with sage, charred blood and lavender. From your perch on the dusty windowsill, you are at peace. For a cat such as yourself, this is paradise.\n\nYour mistress shuffles into the room, disturbing your zen. She flutters back and forth across the cozy hut, plucking vials and herbs from the shelves and drawers. She has done this many times before, although the smells are new. It must be a new spell she\u2019s trying out. You elect to ignore her, settling back into your evening nap, when you are instead startled awake by a gentle hand. You lean into her palm as she strokes your fur.\n\t\u201cWake up, Nyna dear. I have a job for you.\u201d She coos [[sweetly->witch's request pt 2]].",
+      "links": [
+        {
+          "text": "sweetly",
+          "destination": {
+            "name": "witch's request pt 2",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "The River",
+      "text": "Early in your journey, you come across a familiar river. It\u2019s moving much faster than usual, though, crashing against the shore as if it were trying to escape it\u2019s muddy confines. This doesn\u2019t bother you much, as you know water to be very finicky and unpredictable.\n\n\tDo you:\n\t\n\t\t[[Try to swim across...->Try to swim...]]\n\t\t\n\t\t[[Look for another way...->Another route...]]",
+      "links": [
+        {
+          "text": "Try to swim across...",
+          "destination": {
+            "name": "Try to swim...",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Look for another way...",
+          "destination": {
+            "name": "Another route...",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Try to swim...",
+      "text": "You peer into the stream. Behind your reflection, you see the riverbed. It doesn\u2019t look that deep. In fact, it seems downright shallow! You dip your paw daintily into the water, and suddenly you\u2019re moving. Fast. The ground gives way beneath you to a perilous wave. You are swept away, succumbing to the water that's filling your tiny lungs. \n\n[[You have died->The River]]",
+      "links": [
+        {
+          "text": "You have died",
+          "destination": {
+            "name": "The River",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Another route...",
+      "text": "To your [[left->log]] you spot a rotten log that reaches across the rushing water. It\u2019s large and appears sturdy, but also very old.\n\nTo your [[right->stones]], a scattering of large stones spans the waterway. They shine in the moonlight, making them difficult to miss.",
+      "links": [
+        {
+          "text": "left",
+          "destination": {
+            "name": "log",
+            "pid": 6
+          }
+        },
+        {
+          "text": "right",
+          "destination": {
+            "name": "stones",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "witch's request pt 2",
+      "text": "The thought of any sort of work makes you bristle. You had just gotten comfortable! But you knew there was no getting out of it. \n\n\u201cI need you to fetch me an ingredient, sweety. There\u2019s a flower that grows out on the bluffs, and only blooms under a waxing moon.\u201d\n\nYou yawn and stretch, rolling over to throw her a disinterested gaze.\n\n\u201cI know, but it\u2019s really important. And you know what happened to the last lazy cat in this house. Besides, if you hurry I\u2019ll add an extra stinky fish to your dinner when you get back.\u201d\n\nYou do not know what happened to the last lazy cat, but the temptation of food is too strong. Begrudgingly, you roll off the windowsill and onto your feet.\n\t\u201cBe careful out there!\u201d She calls, as you slip out [[into the night->The River]].",
+      "links": [
+        {
+          "text": "into the night",
+          "destination": {
+            "name": "The River",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "log",
+      "text": "With your feline finesse, you hop upon the decrepit log with ease. Although a little wet from the night dew, there\u2019s enough grit to sink your claws into to keep your balance. You slink across the makeshift bridge with ease and [[continue->fork]] your quest.",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "fork",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "stones",
+      "text": "You leap onto the sleek stones, skipping from one uneasy footing to another. With each landing, you gain confidence. You grow cocky. You forget that these rocks are also wet, and subject to the whims of the waves that sporadically crash over them. Your next step reminds you of that, too late, as you slip and crack your head against the paver. Consciousness leaves you, and you slip into the darkness beneath the crushing waves. \n\n[[You have died->Another route...]]",
+      "links": [
+        {
+          "text": "You have died",
+          "destination": {
+            "name": "Another route...",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "fork",
+      "text": "As you journey further, you notice that your path is beginning to split.\n\t\t\n\t\tTo the [[left->forest]], the path continues through a thicker patch of forest. The trees are beautifully gnarled, and their bare branches are tangled enough to provide excellent shade.\n\t\t\n\t\tTo the [[right->field]] it continues throughg a lush field, seemingly filled with flowers that appear ethereal in the moonlight.",
+      "links": [
+        {
+          "text": "left",
+          "destination": {
+            "name": "forest",
+            "pid": 10
+          }
+        },
+        {
+          "text": "right",
+          "destination": {
+            "name": "field",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "field",
+      "text": "\tThe field seems like the clearest path. You could even see the cliffs rising in the distance! This journey will be a snap, nothing to it. A literal walk in the park.\n\t\n\tYou saunter along through the flora, enjoying the breezy night air, until you realize, it\u2019s not actually breezy. The grass isn\u2019t swaying in the wind, it\u2019s swaying of its own volition!\n\t\n\tVines begin shooting out onto the path before and behind you. You\u2019re surrounded by the shifting, serpentine foliage. It\u2019s moving quickly, and it doesn\u2019t seem friendly. In fact, it seems to be growing awfully close to you. You begin to panic.\n\t\n\tDo you:\n\t\n\t\t[[Jump away!->backwards]]\n\t\t[[Run!->forwards]]\n\t\t[[Fight them!->fight vines]]",
+      "links": [
+        {
+          "text": "Jump away!",
+          "destination": {
+            "name": "backwards",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Run!",
+          "destination": {
+            "name": "forwards",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Fight them!",
+          "destination": {
+            "name": "fight vines",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "forest",
+      "text": "You take the path to the left. That meadow was far to bright, and exposed. And frankly, it seemed downright eerie. You trek onward, making good time, you think, and you allow yourself to relax into a leisurely stride. Your gait is broken, however, by a rustling in the foliage ahead. A creature emerges.\n\n\tIt\u2019s..... a bunny!\n\t\n\tYou shift into a fighting stance. You know better than to underestimate these beasts, with their pink eyes and their unhinging, toothy jaws. Before you can decide between fight or flight, it spots you. Lunging towards you, it unhinges its jaw to snap at you ferociously.\n\t\n\tDo you:\n\t\n\t\t[[Jump out of the way!-> jump away]]\n\t\t[[Run past it!->run past it]]\n\t\t[[Fight!->fight rabbit]]",
+      "links": [
+        {
+          "text": "Jump out of the way!",
+          "destination": {
+            "name": "jump away",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Run past it!",
+          "destination": {
+            "name": "run past it",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Fight!",
+          "destination": {
+            "name": "fight rabbit",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "jump away",
+      "text": "\tYou make a leap of faith, rolling into the landing in an attempt to escape. But you forget, rabbits can jump too, and far better than any cat. The little beast leaps after you with ease. Before you know it, he\u2019s in front of you again, and you\u2019ve no time to react before his gaping maw is upon you. The last thing you see is the dark tunnel of his gullet, before you are swallowed whole, never to see or be seen again. \n\t\n\t[[You have died->forest]]",
+      "links": [
+        {
+          "text": "You have died",
+          "destination": {
+            "name": "forest",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "run past it",
+      "text": "\tYou try to run. You\u2019re fast, even for a cat, but you forget how strong those rabbit feet are. Unfortunately for you, they\u2019re much stronger and faster than your own. You are overtaken quickly, and with a sharp clamp of his jaws onto your backside, you are stopped cold. Before you have time to regret your choice, you are thrown into the air. You swear, for a moment, you could spot the witch\u2019s hut, so close, and yet, so far, before you begin falling, head over tail, into the waiting maw of your furry friend. Like a flytrap, he snaps shut around you, swallowing you whole. \n\t\n\t[[You have died->forest]]",
+      "links": [
+        {
+          "text": "You have died",
+          "destination": {
+            "name": "forest",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "fight rabbit",
+      "text": "\tRabbits are swift, but your claws are swifter. As he bounds towards you, you lash out with a furious swipe, raking your claws across his side. He is knocked off course and stunned for the moment. You pounce, ready to strike again, but he bolts, hopping madly back to the woods from whence he came. You doubt you\u2019ll be seeing much of him again, after a scare like that. You [[move on->swamp]] with caution.",
+      "links": [
+        {
+          "text": "move on",
+          "destination": {
+            "name": "swamp",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "swamp",
+      "text": "\tAfter your little encounter, you find yourself wandering into a rather deep swamp. The foliage has developed actual leaves here, and the scattered pools are too murky to see the bottom. The path is becoming sporadic, but you can see a small hutch in the distance. It radiates a warm, welcoming light. It seems harmless enough, not terribly suspicious, but you still don\u2018t recall anyone having lived here before. Maybe they\u2019re new to the area? You have to pass it on your way through anyway, so you approach. As you reach the door, you notice that it\u2019s open slightly. Inside, you see an elderly woman shuffling about, musing to herself over her cooking pot. The smells of cod and cream tempt you with the fantasy of a fine fish stew.\n\t\n\tDo you:\n\t\n\t\t[[Go inside->swamp hut]]\n\t\t[[Continue on your mission->continue]]",
+      "links": [
+        {
+          "text": "Go inside",
+          "destination": {
+            "name": "swamp hut",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Continue on your mission",
+          "destination": {
+            "name": "continue",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "backwards",
+      "text": "\tYou gather your haunches and leap up into the air. You went for height, but the vines have reach. With a wicked snap, you\u2019re entangled and slammed to the ground. You shake the spots from your vision just in time to watch the moon and sky slip into darkness, as the vines overcome you. You are crushed. \n\t\n\t[[You have died->field]]",
+      "links": [
+        {
+          "text": "You have died",
+          "destination": {
+            "name": "field",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "forwards",
+      "text": "\tWith every ounce of your small body, you leap forward, bounding over the encroaching tendrils with wicked speed. The vines move quickly, but not quick enough to reach you. You clear the field at a remarkable speed, and don\u2019t stop until you\u2019ve left the forest [[altogether.->swamp]]",
+      "links": [
+        {
+          "text": "altogether.",
+          "destination": {
+            "name": "swamp",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "fight vines",
+      "text": "\tFeeling cornered, you lash out, raking your claws across the nearest cluster of vines. They recoil, but you barely made a dent in their thick skin. They immediately retaliate. You are thrashed from all sides, beaten, broken, and engulfed in suffocating foliage. You did not think that one through. \n\t\n\t[[You are dead->field]]",
+      "links": [
+        {
+          "text": "You are dead",
+          "destination": {
+            "name": "field",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "swamp hut",
+      "text": "\tSlinking through the open doorway, you find yourself in what seems to be a perfectly cozy cottage. Fire light dances across the walls, and the old woman stands stirring a large pot. You haven\u2019t made your presence known yet, but she seems to have sensed your arrival, as she begins speaking to you as though you had always been there.\n\t\n\t\u201cHello, dearie! Come in, come in! Make yourself comfortable. Would you like some stew? Oh, what am I saying? Of course you do.\u201d She pours out a bowl before turning to you. Her face is leathery and wrinkled, warted beyond belief, but sweet nonetheless. She smiles contentedly, as though she has been waiting for you, but she isn\u2019t the least bit bothered that you\u2019re late. The woman feels oddly familiar to you, but you can't place her. She sets the bowl down in front of you, but stands attentively nearby, hands, folded, as though waiting for you to dig in. Odd.\n\t\n\tDo you:\n\t\n\t\t[[Try the stew->poisoned]]\n\t\t[[Turn and leave->flee hut]]",
+      "links": [
+        {
+          "text": "Try the stew",
+          "destination": {
+            "name": "poisoned",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Turn and leave",
+          "destination": {
+            "name": "flee hut",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "cliffside",
+      "text": "\tAt long last, you\u2019ve made it. Before you stands a sheer cliff face, no easy feat to climb, but at the top lies your quarry. There\u2019s no time to search for a gentler path, because the crescent moon is beginning to sink towards the horizon. It\u2019s now or never. Or, you\u2019ll have to wait another month. But your mistress wouldn\u2019t like that. So, you begin your ascent.\n\t\n\tWith each jump you gain height but lose confidence. Your potential landings are growing smaller and sharper, but you don\u2019t lose all hope. The top is growing nearer! You make another crucial leap, but as your legs begin to land, you feel your perch start to shake. It\u2019s not going to hold you for long, so you\u2019ve got to act fast!\n\t\n\tDo you:\n\t\n\t\t[[Leap Left->leap left]]\n\t\t[[Leap Right->leap right]]\n\t\t[[Leap Straight Up->leap up]]",
+      "links": [
+        {
+          "text": "Leap Left",
+          "destination": {
+            "name": "leap left",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Leap Right",
+          "destination": {
+            "name": "leap right",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Leap Straight Up",
+          "destination": {
+            "name": "leap up",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "poisoned",
+      "text": "Ah, what the heck. This nice old woman is offering you free food, and she probably just wants to make sure you like it. Shrugging off your suspicion, you dive into your meal. It\u2019s just the right temperature, smooth, and creamy, and..... Oh. Oh no. Your eyes shoot open as you feel your body go rigid. With a shiver, your muscles begin to shut down, almost in slow motion. The last thing you see as you\u2019re crumpling to the floor is the growing smile on the old woman\u2019s face, her too-white teeth burning into your vision before the world goes dark around them. It seems she was not so sweet and kind as you had assumed. You should have known better than to trust a stranger. \n\n[[You have died->swamp hut]]",
+      "links": [
+        {
+          "text": "You have died",
+          "destination": {
+            "name": "swamp hut",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "flee hut",
+      "text": "\tUnable to shake the uneasy feeling, you decide it\u2019s best to politely retreat and continue on your way. With a bow, you take your leave, but before you\u2019ve finished turning, the door slams shut before you.\n\t\n\t\u201cWhere do you think you\u2019re going, dearie?\u201d The old woman\u2019s voice rings out, sickly sweet and menacing. \u201cYou haven\u2019t even touched your supper. It\u2019s very rude to waste food, you know.\u201d\n\t\n\tThere is an edge to her voice, and you decide you clearly need to get out. Now. You break for the open window, but your path is suddenly blocked by a plume of blue fire. To your right you see the raggedy old woman, readying another fireball in her hands.\n\t\n\t\u201cOh, you\u2019re not getting away that easy, little pest!\u201d\n\t\n\tDarting between rapid fire blasts, you dodge furniture and fireballs, hopping from onto shelves and knocking over vials and jars in your wake. You\u2019re really making a mess of things, but right now all you can think about is escape. With one final push, you leap onto the window\u2019s ledge and out into the night, very narrowly managing to keep your tail intact.\n\t\n\tDeciding you\u2019ve certainly learned your lesson about trusting strangers, you return to your quest, a little [[worse for wear->cliffside]].",
+      "links": [
+        {
+          "text": "worse for wear",
+          "destination": {
+            "name": "cliffside",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "continue",
+      "text": "You decide it\u2019s probably best that you not deviate from your mission. And, as quaint as this little home appears, it gives you an uneasy feeling. You pick up your feet and [[press on->cliffside]].",
+      "links": [
+        {
+          "text": "press on",
+          "destination": {
+            "name": "cliffside",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "leap left",
+      "text": "\tYou jump to the left without looking. Luckily, you find purchase. Unluckily, this purchase is even less stable than the last. No sooner do your feet hit the edge than you are free-falling, the rock you had chosen is tumbling down below you. You scramble for a moment, hoping to catch hold of something, anything, but it is a fruitless effort. Most people assume that cats always land on their feet, but you seem to be a rather unlucky cat, because you\u2019ve landed on your back. Or at least, what one would assume was once your back. \n\t\n\t[[You have died->cliffside]]",
+      "links": [
+        {
+          "text": "You have died",
+          "destination": {
+            "name": "cliffside",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "leap right",
+      "text": "\tYou instinctively leap to the right. You worry momentarily if there are any landings to the right. There aren\u2019t. You reach out and dig your claws into the rock, begging for purchase. Unfortunately, you don\u2019t find any. You feel your nails give out, unable to break through the rock and hold your weight at the same time as momentum carries you further and further from your destination. You see it now above you, just out of reach. It seems to be getting farther away though. It is. You realized too late that you are falling, the air rushing past your ears as the moon watches you descend, faster and faster, before the world turns red, and then, black. \n\t\n\t[[You have died->cliffside]]",
+      "links": [
+        {
+          "text": "You have died",
+          "destination": {
+            "name": "cliffside",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "leap up",
+      "text": "\tIn a leap of faith, you pounce straight upwards, closing your eyes and hoping you have not misjudged the distance. Your claws find purchase in... \n\t\n\tGrass? \n\t\n\tYou open your eyes to find your front paws clinging to the soft edge of the cliff, your final destination. With sudden urgency, you scramble over the border between stone and earth, between life and the threat of [[death->clifftop]].",
+      "links": [
+        {
+          "text": "death",
+          "destination": {
+            "name": "clifftop",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "clifftop",
+      "text": "\tYou catch your breath, and in the corner of your eye, you see it. The flower your mistress requested. It seems to be the last one of the season that's still in bloom. It\u2019s smaller than you imagined, and rather mundane in appearance. It\u2019s four angular, milky-white petals look almost like glitter in the lingering moonlight, but it seems with each passing second that the light is dimming and the flower is curling in on itself. You rush to pluck it before it\u2019s too late. Gently wrap your teeth around the stem you pull, and it gives easily enough. With your prey secure, you turn to seek a gentle descent, but you are instead greeted by a familiar set of [[worn out shoes->other witch]].",
+      "links": [
+        {
+          "text": "worn out shoes",
+          "destination": {
+            "name": "other witch",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "other witch",
+      "text": "\tYour eyes trail upwards, taking in the full frame of an elderly woman. You recognize her as the woman from the cottage! Instead of sweet, though, her expression is sinister. She grins at you, and her voice drips with false sincerity.\n\t\n\u201cThanks for doing all the legwork, dearie.\u201d She sneers. \u201cToo bad your mistress wont be getting that flower tonight.\u201d\n\nYou are confused. How could she know about your mistress? Was it really so obvious you weren\u2019t just any old stray? You suppose, in better circumstances, that might be seen as a compliment, but for now, you were far too afraid. And this old woman was nearly a complete stranger to you, although she did feel familiar for some reason, besides your previous encounter.\n\nWhile these thoughts stream through your mind, you notice her form begin to shudder, then melt. Her grey hair oozes off of her head almost as though it were liquid, revealing vibrant and luscious locks, and her weathered and warted cheeks literally fall away to reveal smooth, pale skin and an angular chin. As her clothes and figure shift, it becomes increasingly apparent that she has tricked you, her once warm, grandmotherly figure meant to lure you into a false sense of security. Now, she stands to her full height, looming and dangerous.\n\n\u201cI\u2019m not going to let you leave here with that flower, little pet.\u201d Her new, sultry voice croons. [[\u201cWhether or not you leave with your life will be up to you, however.\u201d->other witch 2]]",
+      "links": [
+        {
+          "text": "\u201cWhether or not you leave with your life will be up to you, however.\u201d",
+          "destination": {
+            "name": "other witch 2",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "other witch 2",
+      "text": "\tYou don\u2019t see many options. You can either give her the flower and hope she lets you live, or try and make a break for it. You know your mistress will be very disappointed in you if you return empty handed, but she would be even more disappointed, heartbroken even, if you didn\u2019t return at all. She\u2019s lost so many cats already, or so you\u2019ve been told. Thinking of her fills you with determination. You must choose.\n\t\nDo you:\n\t\n\t\t[[Hand over the flower...->give up]]\n\t\t[[Run for it!->run home]]",
+      "links": [
+        {
+          "text": "Hand over the flower...",
+          "destination": {
+            "name": "give up",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Run for it!",
+          "destination": {
+            "name": "run home",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "give up",
+      "text": "\tYou decide it might just be for the best if you left with your life instead. You step forward to place the flower down at this stranger\u2019s feet. Before it's even hit the ground she snatches it up, bringing it close to her face to marvel at its luminescence. Her eyes shift from cold-hearted intimidation to complete mania as she cackles with glee.\n\t\n\t\u201cHahahaha!! The last Harvest Lilly is mine! Let\u2019s see that little goody two shoes try and stop me now!\u201d\n\t\n\tShe seems to have disregarded you momentarily, so you start to make your retreat. As you try to slink away, however, she catches your eye, and her boot catches your ribs, sending you tumbling across the mountain top and over the edge.\n\t\n\t\u201cOne less cat for you, wench!\u201d is the last thing you hear as you careen down the cliffside, your body catching every extended rock and sharp edge on the way down. You feel yourself hit the ground, finally at rest, before you slip away. Your last thoughts are of your mistress. \n\t\n\t[[You have died->other witch 2]]",
+      "links": [
+        {
+          "text": "You have died",
+          "destination": {
+            "name": "other witch 2",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "run home",
+      "text": "Filled with determination, anger, and fiery grit, you make a break for it. You\u2019ve come too far to lose it all now, and no silly swamp witch is going to stop you from making your mistress happy! Not to mention, she promised you food. \n\nWith lightening speed you race between the woman\u2019s legs, bounding towards what appears to be a gentle slope. You maintain your footing and gain momentum. Behind you you can hear the not-so-old crone screeching with rage. Plumes of fire erupt around you in rapid succession, but you have no time or agency to be able to stop. You\u2019re going too fast now to even considering caring. You use that speed to carry you on adrenaline wings, all the way back through the muddy swamp, past the shady woods, and finally, in a last ditch leap, you clear the river and ease your way into the home stretch.\n\n\tYou clear the door frame and skid to a halt. The flower between your teeth is looking a bit battered, but is otherwise intact, and likewise for your entire body. Your mistress turns as you enter, startled by your sudden and rather haphazard entrance, much unlike your usual cat gracefulness, but is nonetheless [[pleased to see you->return]].",
+      "links": [
+        {
+          "text": "pleased to see you",
+          "destination": {
+            "name": "return",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "return",
+      "text": "\t\u201cWelcome home, Nyna dear.\u201d\n\nShe smiles, scratching your ears lovingly before taking the flower from you. She plucks the petals and immediately adds them to her still simmering cauldron. You take a deep breath, finally allowing yourself to relax. You are home, you are alive, and you are safe. No strange witches, foul forestry, beasts or waterways can harm you here. Or so you think.\n\nA deafening scream echoes in the night. Your haunches raise instinctively. You recognize that scream. Raising your hackles, you hiss at the door. She may have scared you before, but you refuse to let her ruin your one safe haven in these woods. You can hear her screamed profanities growing [[louder and closer->confrontation]].",
+      "links": [
+        {
+          "text": "louder and closer",
+          "destination": {
+            "name": "confrontation",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "confrontation",
+      "text": "Thankfully, you don\u2019t have to do much, because your mistress is already moving into action, as calm as ever. She\u2019s filled a bucket with her current brew and made her way to the door, flinging it open in time to come face to face with the offending party, who had just reached your doorstep. The woman opens her mouth to yell again, her features contorted in pure rage and her hands raised and engulfed in flame. But, without waiting for her to speak, your mistress is already flinging the contents of the bucket out the door and into the night air, as well as the face of the other witch. You watch as the opalescent liquid begins to bubble and foam across her face, leaving her screaming in searing pain as she recoils, clutching her face in an attempt to wipe it away. As she does so, she trips backwards, over a before unnoticed trench, very small, barely an inch wide and not even half as deep. It seems freshly dug, and you notice that the rest of the liquid that was flung from the bucket has begin to coalesce and seep into the tiny trench, quickly making it\u2019s way around the entire cottage. It begins to glow as a bubble forms over the entire cottage, sealing itself neatly before popping and shimmering from view. The trench, however, still glows faintly. The screaming witch has recovered enough to stand and stop her screeching, but she still [[seethes with rage->confrontation 2]].",
+      "links": [
+        {
+          "text": "seethes with rage",
+          "destination": {
+            "name": "confrontation 2",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "ending",
+      "text": "You\u2019ve never heard your mistress use that tone before. It seems almost... sad? Angry, maybe? It\u2019s hard to say. All you do know is, the immediate danger has passed, and your grumbling stomach reminds you that there was a promise of food at the end of this journey.\n\nAs she places your bowl down in front of you, brimming with the freshest raw fish in the house, your mistress sighs. You dig in, but not without giving her your otherwise undivided attention.\n\n\u201cI suppose she would have found you sooner or later. She always does.\u201d She says as she plants herself onto the ground beside you. She gently strokes your back as she continues. [[\u201cOf all your nine lives, my dear, you have been the sweetest. I only wish they had been half as lucky as you...\u201d->the end]]",
+      "links": [
+        {
+          "text": "\u201cOf all your nine lives, my dear, you have been the sweetest. I only wish they had been half as lucky as you...\u201d",
+          "destination": {
+            "name": "the end",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "the end",
+      "text": "\nNyna Lives...\n\n\nEnd of Chapter 1.\n\n\n\n[[Play Again?->A Witch's Request]]",
+      "links": [
+        {
+          "text": "Play Again?",
+          "destination": {
+            "name": "A Witch's Request",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "confrontation 2",
+      "text": "\u201cWhat have you done? You think you can just steal from me and take what is rightfully mine?\u201d\n\nShe attempts to swing her fist clumsily, but is knocked backwards by the now-invisible bubble, which clearly stung.\n\n\u201cOne of these days I\u2019m going to get you.\u201d She sneers. \u201cOne of these days, I\u2019m going to win! This isn\u2019t over!!\u201d\n\nAnd with that, she throws her cloak and disappears with a shower of sparks.\n\n[[\u201cI see you\u2019ve met Cyril. She\u2019s an... old friend.\u201d->ending]]",
+      "links": [
+        {
+          "text": "\u201cI see you\u2019ve met Cyril. She\u2019s an... old friend.\u201d",
+          "destination": {
+            "name": "ending",
+            "pid": 33
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1745 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "rest",
+      "text": "\\n\"I can sing you a lullaby, <<print $name>>,\" Able says. \"I can sing really nice. At least I think I can. CondemnedMoose used to sing in a choir.\" \\n\\nDrowse. Drowse. Seems like it might be a good idea. And then...well, then Able will have their fill. Of whatever they want to do. And you wouldn't have to worry about the game, or being a copy, or whatever. \\n\\n\"I can make you a pillow of pine needles,\" Able says. \"I have the blueprint.\"\\n\\nSeems like they want you to lie down really desperately.\\n\\n\"Are the others sleeping?\" you ask. \"Below your feet? In your basement? You have a basement there, don't you?\"\\n\\nAble shrugs. \"It's possible. It's certainly possible.\"\\n\\nAnd despite your deep, aching tiredness--like well-worn bear claw marks on an oak tree--you want no part of it. \\n\\n[[You want none of it.|Run1]] ",
+      "links": [
+        {
+          "text": "You want none of it.",
+          "destination": {
+            "name": "Run1",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "go",
+      "text": "Temper tells you to press your hands against the megalith. Its surface feels like cool glass. \\n\\nThen it becomes warm and your hands slide through the stone. \\n\\nEverything shimmers. For an instant, sounds come out of your eyes and colors stream out of your mouth.\\n\\nAnd then you are back, [[back|back1]]",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "back1",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "follow",
+      "text": "Able brings the horse to a trot and you both walk alongside the steed, sloshing through the tangle of the meadow. Neither of you talk for awhile. The spring air feels brisk and clean on your skin. \\n\\n\"Let me ask you something,\" Able says as you enter the woods again, making a rightward path toward a low line of hills. \"You seem to be taking this all very well, all things considered.\"\\n\\n\"Taking what well?\"\\n\\nThey shrug and wave their hands at the sky. \"This. All of this. When I first 'unplugged' and came out of the game to here, I was in bad shape. I assumed that I was actually CondemnedMoose having a break with reality. So...you might not be in the mood for compliments, but you're handling this as best as one could imagine.\"\\n\\n[[\"It really doesn't feel that way, actually. I'm good at hiding it. I'm pushing it down. At least that's what it //feels// like.\"|unplugged1]]\\n\\n[[\"I figure it's the easiest way to keep moving forward. I don't want to get caught up in minutiae that I'm unable to change. I'm working purely on instinct.\"|unplugged2]]\\n\\n[[\"It just feels...right, somehow. Even though it's a little sad.\"|unplugged3]]\\n\\n",
+      "links": [
+        {
+          "text": "\"It really doesn't feel that way, actually. I'm good at hiding it. I'm pushing it down. At least that's what it //feels// like.\"",
+          "destination": {
+            "name": "unplugged1",
+            "pid": 10
+          }
+        },
+        {
+          "text": "\"I figure it's the easiest way to keep moving forward. I don't want to get caught up in minutiae that I'm unable to change. I'm working purely on instinct.\"",
+          "destination": {
+            "name": "unplugged2",
+            "pid": 9
+          }
+        },
+        {
+          "text": "\"It just feels...right, somehow. Even though it's a little sad.\"",
+          "destination": {
+            "name": "unplugged3",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "No no no. Enough of this.",
+      "text": "\\nYou trying to decide what to do--neither running or waiting seem particularly great for you, considering everything you know and have experienced--when bursting along the ridge comes a roan horse. It only takes a second of bewilderment to recognize them.\\n\\n\"Temper?\" you say. \\n\\n\"Sure is!\" Temper says. \"Glad to see you <<print $name>>. Really am. And it looks like you're on a bit of a sticky wicket.\"\\n\\nA couple of bullets whiz by you.\\n\\n\"What happened?\" you say.\\n\\n\"I have no idea. I'm here, you're here, //they're// here. But you're not dead--and that's great. Maybe that's enough? So--do you want to help me find that wilderweed now?\"\\n\\nYou nod. You're ready to go. You hear the footsteps. You don't think, at this juncture, that a conversation with YuletideTormentor would be very productive.\\n\\nMaybe one day.\\n\\n\\nEND (ending 1 of 2)\\n\\n[[credits]]",
+      "links": [
+        {
+          "text": "credits",
+          "destination": {
+            "name": "credits",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Of course.",
+      "text": "\\n\"I mean, it definitely matters,\" you say. \"I can't escape the past. I wouldn't be who I am without the past.\"\\n\\n\"It's more than the past, though, isn't it?\" Able says, suddenly getting angry, even though they seem to be agreeing with you. \"What the fuck is the 'past' anyway? Do you know? It's who we are as people. The //code// that makes me alive. Keeps me alive.\"\\n\\n\"Are you okay, Able?\" you ask. \\n\\nAble turns around. Their eyes flicker toward the [[floor]]. ",
+      "links": [
+        {
+          "text": "floor",
+          "destination": {
+            "name": "floor",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "going",
+      "text": "\\n\"I know where I'm going,\" Temper says. \"Sit back and enjoy the ride. Or lean in. Or whatever.\"\\n\\n[[All right then]]. <<if $fear eq 1>>\"But how do I know you're not going to lead me into some morbid death trap?\"\\n\\nTemper laughs. \"I guess...you don't?\" the horse says. \"I can only offer you my assurances that I want to get as far away from Able as fucking possible.\"<<endif>>",
+      "links": [
+        {
+          "text": "All right then",
+          "destination": {
+            "name": "All right then",
+            "pid": 110
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "StoryTitle",
+      "text": "Unbeknown",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "unplugged3",
+      "text": "\"Like a fish to water?\" Able says. \\n\\n\"Something like that,\" you say. \"Though, it's still not easy. Like I said, it's still sad. I'm trying to figure out my limitations here too.\"\\n\\n\"Well...it's interesting you mention limitations,\" Able says. \"Those have been on my mind too. Or rather, trying to overcome them. Ah, we're almost here. Just [[ahead]].\"\\n<<set $accepting to 1>>",
+      "links": [
+        {
+          "text": "ahead",
+          "destination": {
+            "name": "ahead",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "unplugged2",
+      "text": "\"Well,\" Able says, \"I understand that. I've tried to be...crafty here. Literally and figuratively. I'll be able to show you what I mean in a little bit. Ah. Here we are, just up [[ahead]].\"\\n<<set $dogged to 1>>",
+      "links": [
+        {
+          "text": "ahead",
+          "destination": {
+            "name": "ahead",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "unplugged1",
+      "text": "\"That's not such a bad thing, if you feel that's the case,\" Able says. \"Sometimes you //need// to push things away. What matters is how you act. That's what I notice; I can't know how you're thinking.\"\\n\\n\"I guess you're right,\" you say. You put your hands on your head. \"It's still a lot to take in.\"\\n\\n\"Sure is, <<print $name>>\" Able says. \"And frankly, we're kind of broken, aren't we?\" You don't say anything to that. He clucks for his horse to stop.\\n\\n\"Ah, here we are, right [[ahead]].\"\\n<<set $pushdown to 1>>",
+      "links": [
+        {
+          "text": "ahead",
+          "destination": {
+            "name": "ahead",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "...",
+      "text": "\\nYou take a couple seconds before you respond. \"That...doesn't make any sense,\" you say. \"Of course there are other players. I just saw them! The Z-Mules, the Gaslight Gang...\"\\n\\nThe woman shakes her head slightly, as if she's trying to let you down gently about a death in the family. \"No, <<print $name>>. They're all...in-game. They're all simulacra. There's no one on... the other side.\"\\n\\n\"So who the hell are //you//?\" you say, probably coming across a bit more rageful than you had wanted. But she doesn't seem hurt or offended.\\n\\n\"Let me back up a little bit. See, the game existed for about 10 years. But right before it was about to go offline, and they were to kill the servers, they transferred it to us.\"\\n\\n\"Who is 'us'?\" you say. \\n\\n\"A museum. A technology museum. And since then we've...kept it running. We did it as an experiment. We 'resurrected' most of the player base as low-level AIs within the game, and we watched what would happen. The AIs //thought// they were still in their VisoR set-ups, but they never had the inclination to 'wake up.' So they kept going.\"\\n\\n\"But I know that YuletideTormentor talked //in game// on voice. I //heard// it.\"\\n\\n\"Our speech algorithms are a bit more complex than you would have thought. But, yes, they have improved quite a bit over the last 70 years.\"\\n\\nYou stop walking. You're speechless.\\n\\n[[70 years]].",
+      "links": [
+        {
+          "text": "70 years",
+          "destination": {
+            "name": "70 years",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "go back in",
+      "text": "You apartment appears as you had left it.\\n\\n[[search your apartment]]\\n\\n[[log back in]]",
+      "links": [
+        {
+          "text": "search your apartment",
+          "destination": {
+            "name": "search your apartment",
+            "pid": 60
+          }
+        },
+        {
+          "text": "log back in",
+          "destination": {
+            "name": "log back in",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "someone",
+      "text": "You can't make the person out. Not wearing a mask, that much you can tell. \\n\\nThe person starts waving their arms and clicks their tongue. The horse takes a few tenative steps towards you. \\n\\n\"Don't run!\" the person says in a loud voice. \\n\\n[[Run]].\\n[[Stay put]].",
+      "links": [
+        {
+          "text": "Run",
+          "destination": {
+            "name": "Run",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Stay put",
+          "destination": {
+            "name": "Stay put",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "awaken1",
+      "text": "\\nThey catch sight of you on the edge of the ridge. You hear a bullet snap right by your ear. You start sliding down the steep incline, stumbling forward as fast as you can.\\n\\nYou manage a quick glance behind you. Three of them. They are all wearing black bags over their heads with large, square eyeholes cut out.\\n\\nThat's the Z-Mules, you're pretty sure. They have assault rifles.\\n\\n\"Hey, wait,\" one of them calls out, \"we just want to talk to you!\"\\n\\n[[No no no. Enough of this.]]\\n\\n",
+      "links": [
+        {
+          "text": "No no no. Enough of this.",
+          "destination": {
+            "name": "No no no. Enough of this.",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Die",
+      "text": "You pull the axe from the inventory and, almost in slow motion because of the drug, slam the axe into your skull. Radiant blood.\\n\\n\"Shit!\" Yuletide says. \"Stop that fucker. Stop him!\" \\n\\nThey grab you. You can't hold the axe for a second swing, because of the drug. It drops into the snow.\\n\\nThey drag you to their [[base]].\\n\\n<<set $drug to 1>>\\n\\n\\n\\n",
+      "links": [
+        {
+          "text": "base",
+          "destination": {
+            "name": "base",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Something on the outside",
+      "text": "\\n\"What?\" you say.\\n\\nShe takes another deep breath. \"So, YuletideTormentor. In the game you experienced, Yuletide was 'just' an AI. But originally he was controlled by a person, of course. His name was Brian Holcastle.\"\\n\\n\"Brian Holcastle...\" you say, trailing off. The name feels alien in your head. You realize he must have kept it a total secret within the game.\\n\\n\"Yes...he was...very young when he started playing the game. 19 years old. He was incredibly unhappy, and--dare I say it--troubled. He used the game as an escape from living in his grandmother's basement while taking classes at a local community college. And failing them, actually. We were able to track down the archives of his online history, and, spurred on by the other Z-Mules, he began to lash out at others on the age's social media.\"\\n\\nYou start to feel very anxious, but force yourself to ask: \"So what happened to him?\" \\n\\n\"He only stopped playing the game three years later, but it was only after being hospitalized in a car accident. He had been drinking, and was lucky not to have killed anyone. He spent a week in jail. This experience, though, galvanized him to change and he never played the game again.\" She smiles. \"And, you know what, he turned out okay. He went back to school, got his masters' degree, married, had a daughter that he loved very much, served in the Greencorps in the Great Lakes Crisis--\"\\n\\n\"Great Lakes Crisis?\" you say.\\n\\nShe waves her hand. \"Um, long story. But the important thing is--he turned out all right. And...\" She trails off. \"We kept track of all the former players of the game. And he was the last still living.\"\\n\\n\"Was?\" you say. You feel your heart sink.\\n\\n\"Yes,\" she says. \"[[He died]] two weeks ago, in his nineties.\"",
+      "links": [
+        {
+          "text": "He died",
+          "destination": {
+            "name": "He died",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "hands",
+      "text": "\\n\"Right,\" they continue, \"also most of the distinguishing sex and gender characteristics didn't...carry through. But you're that avatar, deep down. And yet...you and I are independent now. Free.\"\\n\\n<<if $anger eq 1>>\"Free?\" you say, raising your voice. \"I'm actually...feeling pretty trapped right now.\"<<elseif>>There's a hollowness inside of you that you never noticed before.<<endif>>\\n\\nYou sigh. \"My name's not YuletideTormentor!\"\\n\\n\"All right,\" they say. \"What is your name then? What do you want it to be?\"\\n\\nYou parse through the words you have that could work as names. The words must have originally come from YuletideTormentor. You realize that...the baseline of your experience comes from him. There only seem to be a few ideas that spring to your head, that are //workable.//\\n\\n[[Iris Gray]] //...from a girl in his class with unusual eyes, who he joked about with the Z-Mules.//\\n\\n[[Cymbeline]] //...the name of a Minecraft server that YuletideTormentor had talked about once.// \\n\\n[[Penny]] //...the name of a girl that he had dated online for about a week; that is to say, they traded pictures and talked and it didn't really go any farther because she lived in Grand Rapids and she wanted someone closer. That was what she had told her. Naming yourself Penny would in some sense be perverse. But it's on the list.//\\n\\n[[Luxray]] //A pet. Of some sort. You don't know whether it's a real or imagined beast...That or it's the name of a wristwatch.//\\n\\n[[Cotton]] //Simple. Breathable. Wear it wherever you go.//\\n\\n\"None of these are really doing it for me; why don't you [[pick one for me]]?\"\\n\\n\\n\\n\\n",
+      "links": [
+        {
+          "text": "Iris Gray",
+          "destination": {
+            "name": "Iris Gray",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Cymbeline",
+          "destination": {
+            "name": "Cymbeline",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Penny",
+          "destination": {
+            "name": "Penny",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Luxray",
+          "destination": {
+            "name": "Luxray",
+            "pid": 99
+          }
+        },
+        {
+          "text": "Cotton",
+          "destination": {
+            "name": "Cotton",
+            "pid": 57
+          }
+        },
+        {
+          "text": "pick one for me",
+          "destination": {
+            "name": "pick one for me",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "walk",
+      "text": "\\nSo you walk with her. She takes a deep breath and gazes out at the blurry horizon. \\n\\n\"So, <<print $name>>,\" she begins, turning toward you. \"This game is not exactly what it seems. And I was really reluctant to tell any of this to you--or anyone, really. But after lots of debate with my colleagues, I pushed ahead to do so. I think you've...struggled a lot with your place here. I know it's painful.\"\\n\\n\"Not as painful as drowning to death in my own blood,\" you say. \\n\\nShe gives you a bitter smile. \"I'm sorry about that. I would have tried to intervene a bit earlier than we did. But it gave us a perfect opportunity to bring you here.\"\\n\\n\"Which is...where?\" you say. \\n\\n\"It's a special server,\" she says. \"Kind of a baseline server.\"\\n\\n\"Do any of the other players have access to it?\"\\n\\nShe bites her lip. \"That's the thing. That's what I wanted to talk to you about. See, there are no other players. There are no players at all.\"\\n\\n[[...]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "...",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "reveal",
+      "text": "The stranger kneels down next to you. They have calm, gray eyes. The horse stomps, a bit nervously. The horse's eyes are nervous, but the stranger shushes their mount gently.\\n\\n\"So, I'm going to put this as simply as possible,\" the stranger says. \"You and I are...copies of the avatars that are on the main game server. We're on an alternate server.\"\\n\\nYou consider this, and contemplate jumping through all the hoops of disbelief--how could this be? I refuse to believe you!--but you figure it's easier to accept their word at face value at first and adjust later if you need to.\\n\\n\"So I'm a copy of...\" You trail off.\\n\\n\"YuletideTormentor.\"\\n\\nYou bury your face in your [[hands]]. \\n",
+      "links": [
+        {
+          "text": "hands",
+          "destination": {
+            "name": "hands",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "--",
+      "text": "...the bullet pierces your back and vision goes red as you stumble into a clearing. As your eyes begin to close, you see in front of you--though it might not be there at all, the more you think about it--a megalith piercing the earth, twice your height, blotched with red and gray moss. \\n\\nYou touch the stone and you swear your own real hands feel cold.\\n\\nThey catch up to [[you|base1]]. \\n<<set $altar to 1>>",
+      "links": [
+        {
+          "text": "you",
+          "destination": {
+            "name": "base1",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "confront",
+      "text": "\\n\"And what do you honestly think will happen once you do this?\" Temper says.\\n\\nYou shrug. \"I just want him to...see my face. Is that so much to ask?\"\\n\\nTemper squints at you, and then the horse's face relaxes. \"I guess not. All right. Let's get going then. I'll go with you. [[Let's check it out]].\"",
+      "links": [
+        {
+          "text": "Let's check it out",
+          "destination": {
+            "name": "Let's check it out",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Penny",
+      "text": "\"Shiny,\" the stranger says. \\n\\n\"It's...well, it's a bit more complicated than that,\" you say, struggling to put together the bits and pieces of YuletideTormentor's romantic failures, or at least how he interpreted them when talking to his clan-mates on voice chat.\\n\\nTaking Penny's name--of a person you don't know, with such a connection to Yuletide--is both confounding and comforting. You ask for the stranger's name.\\n\\n\"Thank you for asking. It's Able. So, Penny,\" Able says. \"I want to show you something. Something [[important|follow]].\" \\n\\n<<set $name to \"Penny\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Penny",
+            "pid": 22
+          }
+        },
+        {
+          "text": "important",
+          "destination": {
+            "name": "follow",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "base1",
+      "text": "The megalith is of no interest to them.\\n\\nThey don't kill you. They actually heal you with an herb. You all start trudging back the way they had come. You are too weak to [[resist|base]].",
+      "links": [
+        {
+          "text": "resist",
+          "destination": {
+            "name": "base",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "laughing",
+      "text": "\"Listen,\" they say. \"Listen. Why did you stay with them in the first place? Why did you stay captured?\"\\n\\nYou think about it, and explain that:\\n\\n[[you //didn't//. That you logged off as soon as you could because you weren't having it with any of those assholes|choice1]].\\n\\n[[it was mostly curiosity; you wanted to see how they would respond to you and how it would play out|choice3]]. \\n\\n[[in actuality (though you are a bit embarrassed to admit it to this stranger) you //wanted// to be there for a reason you find hard to explain|choice4]].\\n\\n[[you were tired and wanted a break, where you didn't have to think for awhile|choice2]].",
+      "links": [
+        {
+          "text": "you //didn't//. That you logged off as soon as you could because you weren't having it with any of those assholes",
+          "destination": {
+            "name": "choice1",
+            "pid": 71
+          }
+        },
+        {
+          "text": "it was mostly curiosity; you wanted to see how they would respond to you and how it would play out",
+          "destination": {
+            "name": "choice3",
+            "pid": 73
+          }
+        },
+        {
+          "text": "in actuality (though you are a bit embarrassed to admit it to this stranger) you //wanted// to be there for a reason you find hard to explain",
+          "destination": {
+            "name": "choice4",
+            "pid": 70
+          }
+        },
+        {
+          "text": "you were tired and wanted a break, where you didn't have to think for awhile",
+          "destination": {
+            "name": "choice2",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Let's check it out",
+      "text": "\\nThe farther you walk in the woods, the thicker the smoke becomes. The usual birds have fallen silent. It smells like motor oil (//how do you know that smell? YuletideTormentor...working on his Toyota Echo on the summer before college...//) and hyssop (//it must be an in-game herb...//).\\n\\n\"You know,\" Temper says, as you walk alongside him, \"the developers of the game more or less condone the capture mechanisms.\"\\n\\n\"What do you mean?\" you say. \\n\\n\"Well, look, who do you think made the blueprints for the wolf jaws? Those weren't made by users. The tranquilizing and paralyzation drugs too. You can say that the developers are giving the thumbs up for the mass capture strategies of most of the large clans.\"\\n\\n\"How do you know this?\" you ask.\\n\\n\"Oh. 420Planett did some research, apparently. He took it carefully, and seriously. He is a futures trader.\"\\n\\n\"Futures trader,\" you repeat.\\n\\n\"Anyway--wait. Listen.\" Temper stops, their ears pricking. You listen too.\\n\\nVoices. Moaning. You start running forward, close to the periphery of the camp. It's hard to see with the smoke, but you push forward. \\n\\n\"<<print $name>>, wait up!\" Temper says. \\n\\nYou stop on the edge of the clearing, where the smoke is thickest, where the camp [[is]].",
+      "links": [
+        {
+          "text": "is",
+          "destination": {
+            "name": "is",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Go",
+      "text": "You don't just go--you run. //[[Run|Run1]]//.",
+      "links": [
+        {
+          "text": "Run",
+          "destination": {
+            "name": "Run1",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "No1",
+      "text": "\\nAnd now it appears you have to give them [[back|back2]]. \\n<<set $nowords to 1>>",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "back2",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "says",
+      "text": "<<if $pushdown eq 1>>You stand up. \"Who are you?\" you say. You are talking to a horse.<<elseif $accepting eq 1>>You stand up and start laughing. A talking horse, why not. \"Who are you?\" you say.<<elseif $dogged eq 1>>Horses are fast. Sounds like a good opportunity. \"Who are you?\" you say.<<endif>>\\n\\n\"I'm Temper,\" the horse says. \"But, also, 420Planett.\" The horse pauses for an instant. \"In case it wasn't clear, Able did this to me. Now, if you untie me please, we can get going.\"\\n\\nYou hadn't heard anything from Able for a bit, but then they come through the door. With a high-powered, bolt-action tranquilizer rifle.\\n\\n\"[[Okay]],\" you say. ",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "Okay",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "back",
+      "text": "\\nYou lose your footing and you roll down the hill, landing on your stomach at the bottom, right by the hooves of the horse. You had forgotten about the horse. \\n\\nThe horse cranes its neck toward you. The horse's eyes, which were glassy and fearful before, become warm and watery.\\n\\n\"Hey,\" the horse [[says]]. \"If you untie me, we can both get out of here.\"\\n",
+      "links": [
+        {
+          "text": "says",
+          "destination": {
+            "name": "says",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "see",
+      "text": "\\nYou [[see|see1]]--",
+      "links": [
+        {
+          "text": "see",
+          "destination": {
+            "name": "see1",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "rearing up",
+      "text": "\\nTemper starts into a thundering trot. There's a //zip// sound. A tranquilizer needle thunks into a birch tree near your head.\\n\\n\"I could have taken you the moment I first saw you!\" Able says to you, reloading. \"I tried to respect your sense of personhood!\"\\n\\n\"Fuck off, Able!\" Temper says, gaining galloping speed and shooting into the meadow with a leap. \\n\\nThere's one more zipping shot you hear, but it's more distant, and soon Able's apartment and the copse of trees around it are in the far distance. You lean into Temper's neck. \\n\\n\"Do you know where we are [[going]]?\" you ask.\\n\\n",
+      "links": [
+        {
+          "text": "going",
+          "destination": {
+            "name": "going",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Run",
+      "text": "You're not going to trust strangers again for awhile, if ever. You turn and sprint as hard as you can, back into the woods. You hear the person shouting after you, and urging the horse to a gallop. \\n\\nYou zig zag through the trees, and think after a couple of minutes that you've lost the horse and rider. But as you reach the edge of another meadow, your pursuer bursts in front of you from a parallel line of trees, and pivots hard, stopping you in your tracks. \\n\\n\"Easy now,\" the person says. \"I'm not going to hurt you.\"\\n\\nYou think about running the other direction, but instead you sink and sit on the [[ground|can]]. You are so, so tired.\\n<<set $fear to 1>>",
+      "links": [
+        {
+          "text": "ground",
+          "destination": {
+            "name": "can",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Cymbeline",
+      "text": "\"Minecraft,\" the stranger says. \"Interesting. A very different place than where we both came from.\"\\n\\n\"Maybe,\" you say. From what you've processed of what YuletideTormentor said about Minecraft, it sounded as equally as cutthroat for him. He bragged to the other Z-Mules about flooding maps with lava as much as possible.\\n\\n\"Cymbeline,\" the stranger says. \"Why don't you come with me? I want to show you something. Something [[important|follow]].\"\\n\\n<<set $name to \"Cymbeline\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Cymbeline",
+            "pid": 33
+          }
+        },
+        {
+          "text": "important",
+          "destination": {
+            "name": "follow",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "stylesheet 2",
+      "text": "@import url(http://fonts.googleapis.com/css?family=Playfair+Display);\\n\\nbody {\\n  margin: 7%;\\n  background-color:#fff;\\n  margin: 0;\\n  text-align:center;\\n}\\n\\n#passages{\\n  margin: 0;\\n  padding: 0;\\n  border: 0;\\n  width:80%;\\n  margin: auto;\\n}\\n.passage:last-child {\\nfont-family: 'Playfair Display', serif;\\n\\tfont-size:3em; \\n\\tcolor: gray;\\n\\ttext-shadow: #888 0 0 0.05em;\\n}\\n\\n.passage .title {display:\\nnone}\\n\\n.passage:not(:last-child) {\\nfont-family: 'Playfair Display', serif;\\n\\tfont-size:2em; \\n\\tcolor: gray;\\n\\ttext-shadow: #888 0 0 0.05em;\\n}\\n\\n@media screen and (max-width: 960px) {\\n  .passage {\\n    font-size: 4em;\\n  }\\n}\\n@media screen and (max-width: 640px) {\\n  .passage {\\n    font-size: 3em;\\n  }\\n}\\na.internalLink, a.externalLink {\\n  color: NavyBlue;\\n  text-shadow: #eee 0 0 0.1em;\\n}\\na.internalLink:hover, a.externalLink:hover {\\n  color: Blue;\\n  text-decoration: none;\\n  text-shadow: #fff 0 0 0.09em;\\n}\\n#sidebar {\\n\\tdisplay:none;\\n}\\n\\n#footer, #floater { display: none }\\n\\n.three-col {\\n       -moz-column-count: 2;\\n       -moz-column-gap: 20px;\\n       -webkit-column-count: 2;\\n       -webkit-column-gap: 20px;\\n}\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}",
+      "links": []
+    },
+    {
+      "pid": 35,
+      "name": "stylesheet 3",
+      "text": "@import url(http://fonts.googleapis.com/css?family=Playfair+Display);\\n\\nbody {\\n  margin: 7%;\\n  background-color:LavenderBlush;\\n  margin: 0;\\n  text-align:center;\\n}\\n\\n#passages{\\n  margin: 0;\\n  padding: 0;\\n  border: 0;\\n  width:80%;\\n  margin: auto;\\n}\\n.passage:last-child {\\nfont-family: 'Playfair Display', serif;\\n\\tfont-size:3em; \\n\\tcolor: gray;\\n\\ttext-shadow: #888 0 0 0.05em;\\n}\\n\\n.passage .title {display:\\nnone}\\n\\n.passage:not(:last-child) {\\nfont-family: 'Playfair Display', serif;\\n\\tfont-size:2em; \\n\\tcolor: gray;\\n\\ttext-shadow: #888 0 0 0.05em;\\n}\\n\\n@media screen and (max-width: 960px) {\\n  .passage {\\n    font-size: 4em;\\n  }\\n}\\n@media screen and (max-width: 640px) {\\n  .passage {\\n    font-size: 3em;\\n  }\\n}\\na.internalLink, a.externalLink {\\n  color: NavyBlue;\\n  text-shadow: #eee 0 0 0.1em;\\n}\\na.internalLink:hover, a.externalLink:hover {\\n  color: Blue;\\n  text-decoration: none;\\n  text-shadow: #fff 0 0 0.09em;\\n}\\n#sidebar {\\n\\tdisplay:none;\\n}\\n\\n#footer, #floater { display: none }\\n\\n.three-col {\\n       -moz-column-count: 2;\\n       -moz-column-gap: 20px;\\n       -webkit-column-count: 2;\\n       -webkit-column-gap: 20px;\\n}\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "away",
+      "text": "\"Nah, chill.\" The voice becomes fainter to you. \"This rifle has a 2 km [[range]].\" ",
+      "links": [
+        {
+          "text": "range",
+          "destination": {
+            "name": "range",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Free them",
+      "text": "\\nYou pace below their cage. You figure that a fall from that height //probably// won't kill them. And the worst that would happen would be a respawn anyway. You think suddenly--do they //want// to be up there? \\n\\nYou are about to take a tenative first push at the pole, but Temper swears.\\n\\n\"I remember who the Gaslight Gang are,\" they say. \"I think the Z-Mules were planning to raid them, but they must have been...pre-empted.\" Tinder leans their head toward you. \"Shit. //Shit.//\"\\n\\nThen it [[hits you]] why Temper is suddenly so worried--",
+      "links": [
+        {
+          "text": "hits you",
+          "destination": {
+            "name": "hits you",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "can",
+      "text": "\"You okay?\" the person says, sliding off the horse.\\n\\nYou shrug. Looking at the person, you realize they are vaguely familiar. The voice, at least. Their features are androgynous. \\n\\nWhere have you seen them before? \\n\\nThe person crouches down next to you. \"Listen,\" they say. \"I can help you. I really can.\" They pause. \"I know what happened to you. With the Z-Mules.\"\\n\\nThis makes you take notice. You stand up. \"How?\" you say. \\n\\nThey smile. \"I'm one of them. You are too.\"\\n\\nYou start [[laughing]].\\n\\n",
+      "links": [
+        {
+          "text": "laughing",
+          "destination": {
+            "name": "laughing",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "notice",
+      "text": "\\nSmoke. More than a column of it--many phalanxes of thick, black smoke. \\n\\nAnd it's from the direction of the Z-Mules' camp.\\n\\n\"Temper,\" you say, \"I think something's wrong over there. I have to know what it is--then I'll be happy to help you.\"\\n\\nTemper sighs. \"But...why? You know it's going to be incredibly dangerous. What //possible// reason do you have for going over there?\"\\n\\n[[\"I have no idea. I'm just drawn to go there.\"|noidea]]\\n\\n[[\"I really want to confront YuletideTormentor, now that I'm here.\"|confront]]\\n\\n[[\"If they've captured more people, I want to see if there's any way for me to free them.\"|freethem]]",
+      "links": [
+        {
+          "text": "\"I have no idea. I'm just drawn to go there.\"",
+          "destination": {
+            "name": "noidea",
+            "pid": 54
+          }
+        },
+        {
+          "text": "\"I really want to confront YuletideTormentor, now that I'm here.\"",
+          "destination": {
+            "name": "confront",
+            "pid": 21
+          }
+        },
+        {
+          "text": "\"If they've captured more people, I want to see if there's any way for me to free them.\"",
+          "destination": {
+            "name": "freethem",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "StorySettings",
+      "text": "jquery:off\\nhash:off\\nbookmark:on\\nmodernizr:off\\nundo:off\\nobfuscate:off\\nexitprompt:off\\nblankcss:off\\n",
+      "links": []
+    },
+    {
+      "pid": 41,
+      "name": "No, not at all.",
+      "text": "\\nThey seem surprised by this answer. \"Do you really think life is that capricious?\" <<if $name eq \"Ananke\">>Able scowls. \"Considering the name you chose, this is a bit of a blow to me.\"<<endif>>\\n\\nYou're not sure where Able is going with this. Not at all. \"I mean, this isn't an invitation for you to say 'well, I guess everything's out of my hands,' is it?\" you say. You think back to all the moments of Yuletide's that you can, cramming them all together, trying to stitch them together and--no. //No.// They are not you. \\n\\n//He is not you.// You stare at Able. \\n\\n\"Where are the others, Able? //Where are the others?//\"\\n\\n\"I'm sorry,\" they say. \"I really [[am]].\"\\n<<set $free to 1>>",
+      "links": [
+        {
+          "text": "am",
+          "destination": {
+            "name": "am",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "leave for school",
+      "text": "You open your door, take a first step, and slide down a muddy, sloshy hill. \\n\\nYou stop right before falling into a brook. You look around. Though you don't know the exact location, it's definitely the familiar landscape of the game.\\n\\nBut it's spring. The winter snows have all melted. The orioles and thrushes trill in the oak and spruce trees that have just begun to bud. \\n\\nThe apartment above you on the slope--more of a built-up mound--is basically a one-room cube made of unadorned white wood (ash?).\\n\\n[[go back in]]\\n\\n[[explore]]",
+      "links": [
+        {
+          "text": "go back in",
+          "destination": {
+            "name": "go back in",
+            "pid": 12
+          }
+        },
+        {
+          "text": "explore",
+          "destination": {
+            "name": "explore",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "freethem",
+      "text": "\\nTemper laughs. \"Oh, really? Come //on//. Who do you think you are?\"\\n\\n\"I just...I just have to try. Or at least see if there's anything I can do to help.\"\\n\\nTemper looks right at you. \"All right,\" your horse friend says in a resigned tone. \"[[Let's check it out]].\"\\n<<set $determined to 1>>",
+      "links": [
+        {
+          "text": "Let's check it out",
+          "destination": {
+            "name": "Let's check it out",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "credits",
+      "text": "\\nMany thanks to my beta testers: Kristin Livdahl, Jessie Hennen, Caleb Wilson, Laura Michet.\\n\\nThanks also go to Jason McIntosh for organizing the 2015 Interactive Fiction Competition. \\n\\nUnbeknown was created in Twine 1.4.2.\\n\\nCover images come from //Horse Laughs// (1891) and Netherlands Institute for Sound and Vision (curator) (1937), both in the public domain. \\n\\nComments or questions can be sent to adeniro@gmail.com.",
+      "links": []
+    },
+    {
+      "pid": 45,
+      "name": "explore",
+      "text": "No, there's nothing in the apartment for you. \\n\\nYou start following the brook. Despite not being anywhere near your Poli Sci class, you feel at home. Silver minnows dart in your direction as you walk, as if you are a magnet and they are iron filings. \\n\\nThe brook widens. You don't see any signs of human habitation, only animal tracks: deer, hare, red bear. \\n\\nAfter an hour of walking, nothing looks familiar. The topography, if it's mimicking the game, is procedurally generated. Meadows, mounds, faery rings of mushrooms beginning to sprout. \\n\\nIn one of those meadows, with the underbrush still dead, you see [[someone]] on the far end, stationary on a roan horse.",
+      "links": [
+        {
+          "text": "someone",
+          "destination": {
+            "name": "someone",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "base",
+      "text": "They put you in a pen, and take your clothes and your possessions: Your axe, your wolverine skins, your few cords of wood. <<if $drug eq 0>>They give you a shot with a syringe that makes your body shake then slow a little. <<elseif>>They give you another injection of the drug.<<endif>>\\n\\n\"All right,\" <<if $altar eq 1>>one of your captors, named 420Planett, says.<<else>>420 says.<<endif>> \"Stay safe!\"\\n\\nThere are about a half-dozen other pens. Four of them are occupied. You can't see who's inside, but they are naked like you. They remain silent. No one seems on the verge of escaping.\\n\\n\"Drug's wearing off,\" you hear in the distance. \\n\\n\"All right.\"\\n\\nWhen a couple of new men come into your pen, they clamp what looks like a dog's bony jaw onto the base of your neck. They do this for the others in the other pens. The jaw digs into the skin, embeds itself there.\\n\\n\"[[Walk]],\" one of the captors says.\\n\\n\\n",
+      "links": [
+        {
+          "text": "Walk",
+          "destination": {
+            "name": "Walk",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "you awaken",
+      "text": "\\nYou wake up surrounded by sand, and gentle waves, and an azure summer sky. Your head hurts a bit, but you test your leg and it's still attached to your body, and unwounded. \\n\\nYou stand up. You look at the sky more closely. It's morning, but on the other horizon you see the silhouettes of two moons, both banded in ochre and tourmaline. \\n\\nThere are cliffs behind you, but no signs of habitation.\\n\\nWhere are hell are you?\\n\\n\"I'm <<print $name>>,\" you whisper to yourself. \"<<print $name>>.\"\\n\\n\"Hi,\" someone [[says behind you]]. ",
+      "links": [
+        {
+          "text": "says behind you",
+          "destination": {
+            "name": "says behind you",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Stop and talk",
+      "text": "You turn around, kneeling in the half-frozen mud. They trot down the ridge toward you.\\n\\n\"Okay, friend,\" 420Planett says. \"Please stay right there.\"\\n\\nThen CondemnedMoose shoots you in the [[stomach]].",
+      "links": [
+        {
+          "text": "stomach",
+          "destination": {
+            "name": "stomach",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "wait",
+      "text": "\"'Slave' is such a dirty word, I prefer the term 'compulsory friendship,'\" 420Planett says to someone outside the walls of the pens who you can't see. \\n\\n[[wait|wait2]]\\n\\n[[log off|again]]",
+      "links": [
+        {
+          "text": "wait",
+          "destination": {
+            "name": "wait2",
+            "pid": 84
+          }
+        },
+        {
+          "text": "log off",
+          "destination": {
+            "name": "again",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "They're bait",
+      "text": "\\nYou hear a all-too-familiar //cracking// sound, and after an instant your left leg shatters.\\n\\n//No,// you think. //No.//\\n\\n\"Argh!\" Temper says. \"Get on!\"\\n\\nYou hobble toward Temper, grimacing. You feel pain with this body. The bullet wound //hurts//. It really hurts. There's a war-whooping from all around you. Men in camo drop from the trees and surge toward the center of the ruined camp. One of them takes a potshot at you with their rifle while running, which misses. But the second one doesn't. Pierces your left lung. You fall backwards. You hear Temper calling for you. \\n\\nThe last thing you see--and it takes you a second to realize that you are not hallucinating it--is a giant two-headed red bear charging out of the frosty undergrowth, roaring, and Able saddled upon the bear's back, wearing a war mask with antelope horns, holding a pistol in each hand, trying to reach you before the Gaslight Gang does.\\n\\nYour vision hazes, and as you struggle for breath, you are flooded with everything that you wanted to do or say, but couldn't--to Yuletide, to Temper, even to Able, eventually--but all that is going fast, the words are leaving you, words that aren't even //yours//, you tell [[yourself]]...\\n\\n",
+      "links": [
+        {
+          "text": "yourself",
+          "destination": {
+            "name": "yourself",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "ahead",
+      "text": "\"Look over there,\" Able says when you reach a small clearing with a mound in the center.\\n\\nAt the top of the mound is an apartment cube, identical to yours.\\n\\n\"That's where I logged out. Just like you, I imagine.\"\\n\\n\"Yes,\" you say. \"Exactly like that.\"\\n\\nAble dismounts. The horse freezes in place at the base of the mount. The horse's eyes are still nervous. You turn away.\\n\\n\"The others are inside,\" Able says.\\n\\n\"Others?\"\\n\\n\"Yes, the others.\" As you trundle up the hill behind Able--they had carved crude steps from the hard clay--you're not entirely sure what to expect, but then it dawns on you as you both reach the door and step [[inside|inside1]].",
+      "links": [
+        {
+          "text": "inside",
+          "destination": {
+            "name": "inside1",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Dance",
+      "text": "\\nYou dance in a waltz with yourself.\\n\\nThey laugh. Then they leave you alone for awhile.\\n\\n[[wait]]\\n\\n[[log off|again]]",
+      "links": [
+        {
+          "text": "wait",
+          "destination": {
+            "name": "wait",
+            "pid": 49
+          }
+        },
+        {
+          "text": "log off",
+          "destination": {
+            "name": "again",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "thing",
+      "text": "\\nWhat you take to be another flagpole is actually a shorn tree trunk that has a rather large iron cage balanced at the top.\\n\\nInside is 420Planett, CondemnedMoose, and YuletideTormentor. They are sitting in the cage, and murmuring to each other. \\n\\nTemper clomps their hooves. \"Wow. Did not expect this,\" they say. \\n\\n[[Call out to them]].\\n\\n[[Free them]].\\n\\n[[Leave them]] after all. ",
+      "links": [
+        {
+          "text": "Call out to them",
+          "destination": {
+            "name": "Call out to them",
+            "pid": 69
+          }
+        },
+        {
+          "text": "Free them",
+          "destination": {
+            "name": "Free them",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Leave them",
+          "destination": {
+            "name": "Leave them",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "noidea",
+      "text": "\\nTemper laughs and shakes its head. \"Well, I appreciate your honesty. I really do. Come on. Hop on. [[Let's check it out]].\"\\n<<set $confusion to 1>>",
+      "links": [
+        {
+          "text": "Let's check it out",
+          "destination": {
+            "name": "Let's check it out",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "StoryAuthor",
+      "text": "A. DeNiro",
+      "links": []
+    },
+    {
+      "pid": 56,
+      "name": "Yes",
+      "text": "\"Okay,\" Yuletide says. \"Great. //Great.//\"\\n\\nThey take you to the [[base]], through a series of pallisades, with squat granite huts that gleam in the twilight. \\n\\n ",
+      "links": [
+        {
+          "text": "base",
+          "destination": {
+            "name": "base",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Cotton",
+      "text": "\"I like it,\" the stranger says, smiling. \"It's charming.\"\\n\\n\"Not too coy?\"\\n\\n\"Not at all,\" they say, shaking their head. \\n\\nYou ask for their name. \"Thank you for asking. It's Able. And I know what you mean about...fragments. Unfortunately we don't have a ton to work with, word-wise.\"\\n\\nAble cocks their head at you. \"I want to show you something, Cotton. Maybe it'll make this transition easier for you.\"\\n\\nNumb, you start to [[follow]] them.\\n\\n<<set $name to \"Cotton\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Cotton",
+            "pid": 57
+          }
+        },
+        {
+          "text": "follow",
+          "destination": {
+            "name": "follow",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "Show me",
+      "text": "//You recall YuletideTormentor with his clan-mates ambushing a group of newbies who had happened to stumble upon a parcel meteor drop. \\n\\nThe newbies had put down their crappy weapons and begged not to be killed, they didn't want to start over and respawn.\\n\\nAnd Yuletide and the other Z-Mules told them that they would be okay, everything would be okay. And they bashed in their heads with rocks anyways.//\\n\\nYou think about what Able wants you to do. To really let them have it? Have what? Your anger? The chafing against all the past remembrances of Yuletide? \\n\\n\"Come on,\" Able says. \"Come at me.\"\\n\\nThey are relishing a fight. \\n\\n\"This is who you are.\"\\n\\nNo--not really, [[no|Run1]].",
+      "links": [
+        {
+          "text": "no",
+          "destination": {
+            "name": "Run1",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "No",
+      "text": "\"Maybe he's, like, illiterate,\" CondemnedMoose says. \\n\\n\"Fucking idiot, no,\" Yuletide says. \"I don't think that means what you think it means.\"\\n\\nYuletide gives you a blue herb to heal you, then injects you with a drug. Your body slows down. \\n\\n[[let them take you to their base|base]]",
+      "links": [
+        {
+          "text": "let them take you to their base",
+          "destination": {
+            "name": "base",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "search your apartment",
+      "text": "Your items are as you had found them just a couple minutes ago: \\n\\nloom, pile of stones, bundle of sticks, basket of apples, computer\\n\\nHowever, you don't think this is quite right, in terms of what you know your apartment should contain. Except for the computer and the VisoR. <<if $puter eq 1>>And that's not working as it should anyway.<<elseif>>You could try to [[log back in]].<<endif>>\\n\\n<<if $puter eq 1>>All that's left for you to do is [[go outside and explore|explore]].<<elseif>>Or [[go outside and explore|explore]].<<endif>>\\n<<set $search to 1>>",
+      "links": [
+        {
+          "text": "log back in",
+          "destination": {
+            "name": "log back in",
+            "pid": 93
+          }
+        },
+        {
+          "text": "go outside and explore",
+          "destination": {
+            "name": "explore",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "yourself",
+      "text": "\\n..aren't even yours.\\n\\nAre they? \\n\\n//You feel this is a very important question!!//\\n\\n[[No|No1]]: You are only borrowing the words and thoughts of another--someone who you don't even //like// that much. \\n[[Yes, after all]]: They might have originated from someone else, but you made them yours, as best you could.",
+      "links": [
+        {
+          "text": "No",
+          "destination": {
+            "name": "No1",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Yes, after all",
+          "destination": {
+            "name": "Yes, after all",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "Start",
+      "text": "\\n\\n<h2>Unbeknown</h2>\\n<h3>by A. DeNiro</h3>\\n\\n\"We read, but also we are read by others. Interferences in these readings. Forcing someone to read himself as we read him (slavery). Forcing others to read us as we read ourselves (conquest). A mechanical process. ...Every being cries out to be read differently.\" -Simone Weil\\n\\n\\n[[Begin]]",
+      "links": [
+        {
+          "text": "Begin",
+          "destination": {
+            "name": "Begin",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "He died",
+      "text": "\\nYou sink down in the sand, and she sits down next to you. You hold out your hand, and let the waves lick it.\\n\\n\"He's dead,\" you say. You are sad beyond measure, and all of the little choices that you had made in the past--doing this, doing that--feel like they have been erased inside you, upon hearing of his death.\\n\\nShe takes your hand. \"I'm sorry, <<print $name>>. So you see why we wanted to get a hold of you. We figured that...you'd want to know this.\"\\n\\n\"Thank you,\" you say. You bite your lip. \"I didn't think it would hurt this much. I really didn't.\"\\n\\nShe touches your shoulder. \"Maybe this will help. We reached out to him, in his care facility, a couple of weeks before he died. It took awhile to track down his exact location, but we told him about our...research, and we told him...about you. And, even though his time in the game happened many decades before, I saw the pain pass over his face, pain over how he might have acted in the game, and what he might have...transferred on to you. \\n\\n\"And he wanted to let you know that he was sorry for all of that. And that he wished you nothing but [[peace of mind]].\"\\n ",
+      "links": [
+        {
+          "text": "peace of mind",
+          "destination": {
+            "name": "peace of mind",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "syringe",
+      "text": "<<if $free eq 1>>\"You can go if you want to,\" Able says. \"I don't like your answer, but I'll respect it. [[Go]]. Or [[stay]].\"<<elseif $curiosity eq 1 and $free eq 0>>\"Don't you want to [[see|see2]] what I have down here?\" Able says.<<elseif $anger eq 1 and $free eq 0>>\"I know you're upset, <<print $name>>. Show me how upset you are, why don't you. [[Show me]].<<elseif $exhaustion eq 1 and $free eq 0>>\"Listen, <<print $name>>, I know you're tired. Just stay here and take it easy, why don't you. I can let you [[rest]].\" You can rest.<<elseif $exhaustion eq 2 and $free eq 0>>\"<<print $name>>. It's cold here, but it's warm down there.\" They tap their foot on the floor. It sounds hollow. \"I can put you down there so you can [[rest]].\"<<elseif $frustrated eq 1>>\"You're pretty wily, aren't you?\" Able says. \"I think you want to [[go|Go]], deep down. But...you can [[stay]] if you want. I'd actually like you to stay.<<endif>>\\n\\n",
+      "links": [
+        {
+          "text": "Go",
+          "destination": {
+            "name": "Go",
+            "pid": 26
+          }
+        },
+        {
+          "text": "stay",
+          "destination": {
+            "name": "stay",
+            "pid": 103
+          }
+        },
+        {
+          "text": "see",
+          "destination": {
+            "name": "see2",
+            "pid": 101
+          }
+        },
+        {
+          "text": "Show me",
+          "destination": {
+            "name": "Show me",
+            "pid": 58
+          }
+        },
+        {
+          "text": "rest",
+          "destination": {
+            "name": "rest",
+            "pid": 1
+          }
+        },
+        {
+          "text": "go",
+          "destination": {
+            "name": "Go",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "70 years",
+      "text": "\\nYou repeat these words. \"60 years,\" you say. \\n\\n\"Yes. So the AIs within the game, while still simulacra, became much more sophisticated as our processing power increased. But we didn't interfere. We just observed. Took notes. The only thing we did was create nodes between the servers, for emergency travel, if one of us had to log in for some reason.\"\\n\\nYou parse what she just said. \"The megaliths.\"\\n\\n\"Yes, precisely,\" she says. \"I'm not surprised you figured it out.\"\\n\\n\"But--what about //me//?\" you say. \"What about Able, and Temper, and the others?\"\\n\\nShe starts walking, and you keep up with her. [[You're nervous as hell]].",
+      "links": [
+        {
+          "text": "You're nervous as hell",
+          "destination": {
+            "name": "You're nervous as hell",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "You're nervous as hell",
+      "text": "\\n\"Well, see, that's the thing, <<print $name>>. A funny thing happened. The core group of Z-Mules...split off. Split off into your group--a group of truly sentient in-game AIs. With feelings. With the ability to experience pain and joy. Some realized this sooner than others; it took you awhile to integrate what you were actually feeling with the original memories and processes of YuletideTormentor.\"\\n\\nYour head is spinning with questions, so many questions. \"Is this what...broke Able?\" \\n\\n\"We don't know for sure why they started going...awry, but it's certainly possible, that the shock was too much for them, and that they decided to start 'collecting' the others as a way to gain control of the situation. But you were one of the last of the Z-Mule copies to be captured. I...I don't think the original Z-Mules realized who you were. Not at all. But our hypothesis is that they were able to track you all down, somehow.\"\\n\\n\"And Temper? Is Temper okay?\"\\n\\n\"Temper is fine,\" she says, and she smiles at your visible relief. \"It's a constant source of anxiety for us, on the 'outside', how much to interfere. And we've generally erred on the side of caution. But this situation with the Gaslight Gang was dangerous enough that we made sure Temper was safe.\"\\n\\n\"Thank you,\" you say. You stop and look out into the ocean. You half-expect to be ships there, or whales, or even a parcel meteor streaking from the sky to splash into the water. \\n\\n\"I understand why you saved me,\" you say. \"And I'm really grateful. But why are you telling me //everything else//?\"\\n\\n\"Oh,\" the woman says, and her eyes flicker away. \"It's...something that happened. [[Something on the outside]].\"",
+      "links": [
+        {
+          "text": "Something on the outside",
+          "destination": {
+            "name": "Something on the outside",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "pick one for me",
+      "text": "The stranger doesn't expect this. \"You'd leave it in the hands of someone you've never met before?\" \\n\\n\"Sure,\" you say. \"Surprise me.\"\\n\\n\"How about Ananke?\" they say. \"It's the name of the Greek personification of fate.\"\\n\\nYou feel that wanting to change it at this point would be uncalled for. Even if you wanted to.\\n\\n\"All right,\" you say.\\n\\n\"Well, Ananke,\" they say, scratching their chin. \"There's something I want to show you. Why don't you [[follow]] me?\"\\n\\n<<set $name to \"Ananke\">>",
+      "links": [
+        {
+          "text": "follow",
+          "destination": {
+            "name": "follow",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "Okay",
+      "text": "\\nYou untie Temper, and do your best to slide onto the horse's back. You, or Yuletide, had never ridden a horse before. But the saddle locks you in place.\\n\\n\"And so we ride,\" Temper says, [[rearing up]]. ",
+      "links": [
+        {
+          "text": "rearing up",
+          "destination": {
+            "name": "rearing up",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "Call out to them",
+      "text": "\\n\"Hello?\" you say, waving your hands. \\n\\n420Planett peers down at you. \"Well, look at that,\" he says, without malice. \"Cool horse!\"\\n\\nTemper looks uncomfortable.\\n\\n\"Shut up,\" CondemnedMoose says. \\n\\n\"I had no idea the game had mounts!\" 420 says, unable to control himself.\\n\\n\"Shut //up,//\" YuletideTormentor says, and you're shaking a little when he says this, and you are at a loss regarding what to say.\\n\\n\"Listen,\" Yuletide says, peering down, \"I have no idea who you are with the horse. But it's over for you.\"\\n\\nYou push down the borderline disappointment that he doesn't recognize you, but then it [[hits you]]--\\n\\n",
+      "links": [
+        {
+          "text": "hits you",
+          "destination": {
+            "name": "hits you",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "choice4",
+      "text": "The stranger looks a bit surprised at this. \"Really?\" they say. \\n\\nYou shrug. \"I don't know how to explain it. It's just...\" You struggle for words. Sometimes there are no answers. \\n\\n\"Claustrophilia?\" the stranger says. \\n\\nYou stand up. \"Yes. That might be the easiest way to explain it. I knew--or at least I thought--that I wasn't in any real danger. So why not let everyone do their own thing while I watched? It's a [[game|reveal]], right? That was how I got my enjoyment from it.\"\\n\\n\"I'm...not entirely sure that 'game' is the right word for it,\" they say.\\n\\n",
+      "links": [
+        {
+          "text": "game",
+          "destination": {
+            "name": "reveal",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "choice1",
+      "text": "\"You were upset,\" the stranger says. \"You had a right to be upset. Absolutely. But after finding out that your log-out...didn't go as planned, I'm wondering what you plan to do now?\"\\n\\n\"I...I don't know,\" you say. The anger that you just felt in reliving your capture, even for an instant, [[drains out of you|reveal]]. \\n<<set $anger to 1>>\\n",
+      "links": [
+        {
+          "text": "drains out of you",
+          "destination": {
+            "name": "reveal",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "choice2",
+      "text": "\"I get the exhaustion,\" the stranger says. \"I really do. And letting the exhaustion take you away--letting control go--is almost hypnotic, isn't it? You can watch the world take you places.\"\\n\\n\"Something like that,\" you say. \"But that doesn't really get me anywhere now, does it?\"\\n\\n\"No,\" the stranger says, looking up at the sky. \"[[No|reveal]].\"\\n<<set $exhaustion += 1>>",
+      "links": [
+        {
+          "text": "No",
+          "destination": {
+            "name": "reveal",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "choice3",
+      "text": "The stranger raises their eyebrows. \"And what did you find? What were your 'findings'?\"\\n\\nYou shake your head slightly. \"I'm...not entirely sure. That they had all too much fun keeping other avatars in pens, even if it meant inefficient use of their resources? That they liked to casually lord over the prisoners, yet didn't seem to care for each other that much?\" You pause. \"Maybe I didn't find out much after all.\"\\n\\n\"But maybe that's instructive for what can happen [[next|reveal]],\" they say.\\n<<set $curiosity to 1>>",
+      "links": [
+        {
+          "text": "next",
+          "destination": {
+            "name": "reveal",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "stylesheet",
+      "text": ".passage {\\n  font-size: 150%;\\n}",
+      "links": []
+    },
+    {
+      "pid": 75,
+      "name": "hits you",
+      "text": "\\n//[[They're bait]].//",
+      "links": [
+        {
+          "text": "They're bait",
+          "destination": {
+            "name": "They're bait",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "I don't really buy much of this premise.",
+      "text": "\\nThat actually got Able chortling. \"Doesn't work that way, <<print $name>>.\"\\n\\n\"No? It doesn't?\" you say. \"I'm not sure what you're getting at, then.\"\\n\\nAble sighs. \"If I'm 'cribbing' this from the person who I'm copied from, doesn't that mean I'm taking all my others cues from him? Cues like how I'm going to act next?\"\\n\\nYou're getting chilled from the cold room.\\n\\n\"[[Maybe|am]],\" you say. \"I don't know.\"\\n\\n<<set $frustrated to 1>>",
+      "links": [
+        {
+          "text": "Maybe",
+          "destination": {
+            "name": "am",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "says behind you",
+      "text": "\\nYou spin around. It's someone a few feet from you: a woman, much taller than you, in a black suit that shines like paraffin. She has large eyes and her white hair is tied back.\\n\\n<<if $fear eq 1>>You take a couple steps back. \"It's all right!\" she says. \"I'm not going to hurt you--and yes, I know you've heard that one before.\"<<elseif $curiosity eq 1>>You take a step toward her. \"Who are you?\" you say.<<elseif $exhaustion > 0>>You're not really in the mood for more surprises.<<elseif>>\"Who are you?\" you say, a bit wary, but sensing somehow that she's...different from Able, and the Z-Mules--and you, for that matter.<<endif>>\\n\\nFor a second there's just the sound of the waves.\\n\\n\"<<print $name>>,\" she says. \"We really need to talk. I'm from the outside. I mean, I'm...really from the outside.\"\\n\\nYou shake your head slightly. \"I don't understand what you mean.\"\\n\\n\"Come on,\" she says, \"let's [[walk]] on the beach.\"",
+      "links": [
+        {
+          "text": "walk",
+          "destination": {
+            "name": "walk",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "stomach",
+      "text": "You don't die, though. \\n\\n\"Listen,\" the third one, YuletideTormentor, says. They stand in front of you as you are bleeding out. \"You don't have to die. Let's take you to our base. Nice and warm there. Get you healed up. Do you understand?\"\\n\\n\"[[Yes]].\"\\n\"[[No]].\"\\n[[Die]]. ",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "Yes",
+            "pid": 56
+          }
+        },
+        {
+          "text": "No",
+          "destination": {
+            "name": "No",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Die",
+          "destination": {
+            "name": "Die",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "stopandtalk1",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 80,
+      "name": "Keep running",
+      "text": "Fuck them. You don't want to lose what little you have.\\n\\n\"We've got a runner!\" one of them calls out in sing-song. \\n\\n\"I got him,\" one calls out in a bored voice. They sound anywhere from 18-20 years old. \\n\\n\"Fucking //shoot//,\" a third voice says.\\n\\nYou stumble over fallen logs. A doe drinking from a half-iced pond looks up at you, and rotates to dart [[away]].",
+      "links": [
+        {
+          "text": "away",
+          "destination": {
+            "name": "away",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "Iris Gray",
+      "text": "\\n\"That's lovely,\" the stranger says after you tell him, and the little fragment of a half-understood story about it. \"Lovely.\"\\n\\nYou ask for their name. \"Thank you for asking. It's Able. And I know what you mean about...fragments. Unfortunately we don't have a ton to work with, word-wise.\"\\n\\nAble cocks their head at you. \"I want to show you something, Iris Gray. Maybe it'll make this transition easier for you.\"\\n\\nNumb, you start to [[follow]] them.\\n\\n<<set $name to \"Iris Gray\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Iris Gray",
+            "pid": 81
+          }
+        },
+        {
+          "text": "follow",
+          "destination": {
+            "name": "follow",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "wait4",
+      "text": "Doesn't seem to be the case, though. Just a regular parcel meteor. \\n\\nYou've never gotten close to one of the drops ever. You're pretty sure that anytime you've tried, the drop zone has been surrounded by heavily armed raiders from one of the major clans. \\n\\n//You see the sun rising in your window. There's school to go to, at last. Can't stay on anymore.//\\n\\n[[log off|again]]",
+      "links": [
+        {
+          "text": "log off",
+          "destination": {
+            "name": "again",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "keeprunning1",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 84,
+      "name": "wait2",
+      "text": "Cans of beans to eat. Exercise in the snow with the other slaves. \\n\\nLots of other people from other clans are making their way to the compound, you notice. Shuffling around. Gathering supplies. A raid? It could be a raid. They wear horse masks to distinguish themsleves from the Z-Mules. \\n\\n\"Back inside,\" CondemnedMoose says to you all.\\n\\n[[wait|wait3]]\\n\\n[[log off|again]]",
+      "links": [
+        {
+          "text": "wait",
+          "destination": {
+            "name": "wait3",
+            "pid": 85
+          }
+        },
+        {
+          "text": "log off",
+          "destination": {
+            "name": "again",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "wait3",
+      "text": "They have you chop trees and clear stones. Under guard, which seems like a waste of resources. None of you are going anywhere because of the jaws. \\n\\nEvery once in awhile a bright flash streaks across the sky: a parcel meteor from the devs. You squint. Can it be something more? \\n\\n<<if $drug eq 1>>Maybe this time--hopelessly, you think--it's a much larger meteor that would crater the entire server's playing area, and you won't have to decide to play chicken anymore. This back and forth.<<endif>> \\n\\n[[wait|wait4]]\\n\\n[[log off|again]]",
+      "links": [
+        {
+          "text": "wait",
+          "destination": {
+            "name": "wait4",
+            "pid": 82
+          }
+        },
+        {
+          "text": "log off",
+          "destination": {
+            "name": "again",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "Walk",
+      "text": "You walk, without any of your volition, pacing the cage.\\n\\n\"[[Dance]],\" another captor says.",
+      "links": [
+        {
+          "text": "Dance",
+          "destination": {
+            "name": "Dance",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "inside1",
+      "text": "You [[see]]--",
+      "links": [
+        {
+          "text": "see",
+          "destination": {
+            "name": "see",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "halts",
+      "text": "--in front of a megalith. <<if $altar eq 1>>It's exactly the same as the one you stumbled into, on the other server.<<else>>A massive stone with a pointed tip at the skyward end like a claw.<<endif>>\\n\\n\"So,\" Temper says. \"We don't need to use the VisoR system to return to the main server. The VisoR system's...mostly a prop on this side anyway. This is what I overhead Able talking about, at least.\"\\n\\n\"Wait, so you want to go back to the other server?\" you say. \"Didn't you say you weren't going to lead us into a death trap?\"\\n\\n\"Oh, did I now?\" Temper says. \"Well look at you, with your fancy stipulations like 'not being mauled to death by disaffected teenagers.'\"\\n\\nYou slide off Temper uneasily, and press your hand against the monolith's surface. The stone is cold. \"Seriously,\" you [[say]]. \\n\\n",
+      "links": [
+        {
+          "text": "say",
+          "destination": {
+            "name": "say",
+            "pid": 92
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "Run1",
+      "text": "\\nYou burst out the door and you don't look [[back]]. ",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "back",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "is",
+      "text": "\\nBut there is no [[camp]].",
+      "links": [
+        {
+          "text": "camp",
+          "destination": {
+            "name": "camp",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "am",
+      "text": "Able turns around.\\n\\nAble holds a [[syringe]]. Identical to the one the Z-Mules had.\\n\\n",
+      "links": [
+        {
+          "text": "syringe",
+          "destination": {
+            "name": "syringe",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "say",
+      "text": "\\nTemper pauses. \"First, Able is not able to be trusted here. Even if you have almost the entire map to yourself, they //will// hunt you down eventually. Second...it's only on the other server where the wilderweed grows.\"\\n\\n\"The wilderweed?\" you say.\\n\\n\"Yes. It's the only thing that will allow me to change the others back.\"\\n\\nYou pause. \"So the 'others' underneath the floorboards of Able's apartment are--\"\\n\\n\"Animals, yes,\" Temper says. \"A regular menagerie: a spider here, a puma there. But they used to be, well, like us. Or rather, you.\"\\n\\n\"All right,\" you say. \"Let's [[go]].\"",
+      "links": [
+        {
+          "text": "go",
+          "destination": {
+            "name": "go",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "log back in",
+      "text": "You touch the mouse and the screen flickers and dies. You try to restart but there's nothing. The computer must have died when you went outside. You try resetting the VisoR mask, but it's dead too.\\n\\nYou are not filled with panic. But you are worried that the Z-Mule crew might somehow be here, or close by. \\n\\n<<if $search eq 0>>[[search your apartment]]<<elseif>><<endif>>\\n[[go outside and explore|explore]]\\n<<set $puter to 1>>",
+      "links": [
+        {
+          "text": "search your apartment",
+          "destination": {
+            "name": "search your apartment",
+            "pid": 60
+          }
+        },
+        {
+          "text": "go outside and explore",
+          "destination": {
+            "name": "explore",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "again",
+      "text": "\\nYou log off, depressurizing the black mask of the VisoR system and unplugging it from the computer. Your whole body is aching.\\n\\nYou rub the back of your neck, half-expecting the jaws to still be embedded there.\\n\\nStretching at your desk, barely awake, you slog through getting ready for school. The sun peeks into your window.\\n\\n[[leave for school]]",
+      "links": [
+        {
+          "text": "leave for school",
+          "destination": {
+            "name": "leave for school",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "Begin",
+      "text": "They catch sight of you on the edge of the ridge. You hear a bullet snap right by your ear. You start sliding down the steep incline, stumbling forward as fast as you can.\\n\\nYou manage a quick glance behind you. Three of them. They are all wearing black bags over their heads with large, square eyeholes cut out.\\n\\nThey're from the Z-Mules, you're pretty sure. They have assault rifles.\\n\\n\"Hey, wait,\" one of them calls out, \"we just want to talk to you!\"\\n\\n[[Keep running]].\\n\\n[[Stop and talk]].\\n\\n",
+      "links": [
+        {
+          "text": "Keep running",
+          "destination": {
+            "name": "Keep running",
+            "pid": 80
+          }
+        },
+        {
+          "text": "Stop and talk",
+          "destination": {
+            "name": "Stop and talk",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "floor",
+      "text": "There are grooves in the floor that you didn't notice before. Grooves making a rectangle. Like there's a hatch below that Able had carved out.\\n\\nAble has a [[syringe]].",
+      "links": [
+        {
+          "text": "syringe",
+          "destination": {
+            "name": "syringe",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "range",
+      "text": "You keep running, trying to keep low. You don't know where you are going. You have no home here. You forget why you were wandering in the deep forest with just a hand axe in the first place. You forget, you forget.\\n\\n//Crack//[[--]]\\n\\n",
+      "links": [
+        {
+          "text": "--",
+          "destination": {
+            "name": "--",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "Leave them",
+      "text": "\\n\"I don't know,\" you say to Temper. \"This wasn't what I was expecting. I kind of want to get out of here.\"\\n\\n\"Is someone there?\" 420Planett says. But you and Temper remain quiet. Then Temper swears to themself.\\n\\n\"Shit,\" Temper says. \"//Shit.// I'm so stupid.\"\\n\\n\"What?\" you say. \\n\\nBut YuletideTormentor, co-leader of the Z-Mules and--what is he to you anyway? Your copy-twin? Your dopple-father?--the person-avatar you had both longed and feared to see--calls out:\\n\\n\"I have no idea who the fuck either of you are, but you probably are going to get what you deserve now.\"\\n\\nAnd then it [[hits you]].",
+      "links": [
+        {
+          "text": "hits you",
+          "destination": {
+            "name": "hits you",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "Luxray",
+      "text": "\\n\"I see that you're staying away from a...violent name,\" the stranger says, after you tell them your choice and where it might have come from. \"It's a way to set yourself apart from what's gone before.\" \\n\\nYou ask for their name. \"Thank you for asking. It's Able. And I know what you mean about...fragments. Unfortunately we don't have a ton to work with, word-wise.\"\\n\\nAble cocks their head at you. \"I want to show you something, Luxray. Maybe it'll make this transition easier for you.\"\\n\\nNumb, you start to [[follow]] them.\\n\\n<<set $name to \"Luxray\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Luxray",
+            "pid": 99
+          }
+        },
+        {
+          "text": "follow",
+          "destination": {
+            "name": "follow",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "see3",
+      "text": "\\nOne is a flagpole, and a flag. At the top of it is a black flag with white type, which says:\\n\\nRIP Z-MULES\\nLOVE, THE GASLIGHT GaNG\\n\\nThe second [[thing]]:",
+      "links": [
+        {
+          "text": "thing",
+          "destination": {
+            "name": "thing",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "see2",
+      "text": "\\nIs Able banking on a sense of fatalism to draw you closer, draw you in? That the lure has already been set and that it's just a matter of time and minimal effort until you are theirs?\\n\\nAble crouches down and raps his knuckles on the floor. Hollow underneath. \\n\\nYou are filled with dread and yet, also, //you really want to see what's down there.//\\n\\nIs that all you are? Just a code waiting to be triggered?\\n\\nAble puts the syringe in his mouth sideways and scurries toward you like a crab.\\n\\nOh. [[No|Run1]].",
+      "links": [
+        {
+          "text": "No",
+          "destination": {
+            "name": "Run1",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "see1",
+      "text": "\\nthe bright bare walls and floor, shorn of ornamentation or tools or resources. It's very cold in Able's apartment. Very cold. \\n\\nAble has their back turned to you, their body shaking. \\n\\n\"Able?\" you say. \\n\\n\"Do you really think that what we've done before has a strong bearing on what we do next?\" Able asks, still not turning around. \\n\\n\"What kind of question is that?\" you say.\\n\\nAble sighs. \"Just tell me what you think.\"\\n\\n\"[[No, not at all.]] Every moment is its own moment, severed from all others.\" \\n\\n\"[[Of course.]] There's a solid thread that runs between the past and the present.\"\\n\\n\"[[I don't really buy much of this premise.]] Did you crib this from CondemnedMoose's stream of deep thoughts on determinism?\"",
+      "links": [
+        {
+          "text": "No, not at all.",
+          "destination": {
+            "name": "No, not at all.",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Of course.",
+          "destination": {
+            "name": "Of course.",
+            "pid": 5
+          }
+        },
+        {
+          "text": "I don't really buy much of this premise.",
+          "destination": {
+            "name": "I don't really buy much of this premise.",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "stay",
+      "text": "\\nYou take a step back. But you stay. \"What do you want from me, Able?\" you say. \"What do you //really// want?\"\\n\\nAble puts their hands on their head. \"It doesn't matter what I want, does it? I wish I didn't have to do this. I've tried. But whatever I've been //encoded// with, I can't break free from it. From whoever CondemnedMoose is, or however he played in the game.\"\\n\\nAble takes a step toward you. \"The others understood. They didn't like it, but they understood. Won't you?\"\\n\\nYou imagine what staying would look like. Letting Able have their way. You really do. Letting go of the claustrophobia of the unreal woods. Letting go of Yuletide's thoughts and pronouncements and vague ideas--where you wouldn't have to worry about letting them define you. \\n\\nNo. //[[No|Run1]].//",
+      "links": [
+        {
+          "text": "No",
+          "destination": {
+            "name": "Run1",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "Stay put",
+      "text": "You sit down on a rock and wait for the person to come toward you. They appear unarmed. The horse picks their way through the meadow, and stops in front of [[you|can]].\\n<<set $exhaustion += 1>>\\n\\n",
+      "links": [
+        {
+          "text": "you",
+          "destination": {
+            "name": "can",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "Yes, after all",
+      "text": "You don't have many luxuries of thought at your disposal. But you have this. You do have [[this|you awaken]]. Even if you have to, in a sense, give the words back.\\n<<set $yeswords to 1>>",
+      "links": [
+        {
+          "text": "this",
+          "destination": {
+            "name": "you awaken",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "peace of mind",
+      "text": "\\nYou had buried your head in your hands before--it feels like ages ago--but this time when you do it, you are weeping. You have no idea what will happen next. Where you will go, where you will stay, how you will find Temper and help the others that are truly your kin. Even help Able, if you are able. \\n\\nBut all that will come. Now you are weeping for the death of a man you never knew, but who wanted you to know that everything was going to be okay. You've tried to forge your own path, and have tried to do your best, but Brian Holcastle still means the world to you.\\n\\nYou are going to be okay. \\n\\n\\nEND (ending 2 of 2)\\n\\n[[credits]]",
+      "links": [
+        {
+          "text": "credits",
+          "destination": {
+            "name": "credits",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "camp",
+      "text": "\\nNo granite huts, no pens, no watchtowers, no gates, no pallisades, no exercise yards. Nothing. It's all charred circles and rock rubble and downed trees, as if flying trains plowed into them. \\n\\nTemper steps into the clearing with you. \"Well, shit,\" they say. \\n\\n\"Yeah,\" you manage to say. \"Yeah.\"\\n\\nYou both sift through the smoldering wreckage of what once was the Z-Mules' camp. \\n\\nThere are two things you do [[see|see3]]:",
+      "links": [
+        {
+          "text": "see",
+          "destination": {
+            "name": "see3",
+            "pid": 100
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "back2",
+      "text": "\\n//Either way,\\nsix of one, half dozen of the other,\\na horse apiece,\\nbalanced on justice's scales...//\\n\\n[[you awaken|awaken1]].",
+      "links": [
+        {
+          "text": "you awaken",
+          "destination": {
+            "name": "awaken1",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "back1",
+      "text": "\\nto where you started. \\n\\nYou look around. Temper trots around the megalith. Temper is now a white horse instead of a roan one.\\n\\n\"I have no idea why that happened!\" Temper says, pacing.\\n\\nEverything else appears as it should be, but at the same time it all unsettles you. You feel the winter chill that you hadn't before. Ice glazes the slender branches of the pines that circle the megalith. A hoar-fox darts into a snowbank at the sight of you.\\n\\n\"Well now, <<print $name>>,\" Temper says, casting their gaze around. \"Do you want to join me? The herb we need is grows between the aspens on the highest hills. Which might be a ways away.\"\\n\\nYou're about to say something, but then you [[notice]] a dark shape on the horizon.",
+      "links": [
+        {
+          "text": "notice",
+          "destination": {
+            "name": "notice",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "All right then",
+      "text": "You hold on. Past winnowed glades and owls in the bare trees and over gushing brooks. The sun is at its highest point in the sky. You keep quiet, letting Temper gallop, and you think of even more jumbled sensations cribbed from Yuletide: Yuletide complaining about his mom telling him he had no RL friends, Yuletide furiously Googling for term papers to crib from, Yuletide and his fumbling attempts with Penny-- \\n\\nYou're beyond <<if $dogged eq 1>>frustrated<<elseif $accepting eq 1>>confused<<elseif $pushdown eq 1>>drained from trying to hold yourself together<<endif>>. \\n\\nTemper [[halts]]--",
+      "links": [
+        {
+          "text": "halts",
+          "destination": {
+            "name": "halts",
+            "pid": 88
+          }
+        }
+      ]
+    }
+  ]
+}

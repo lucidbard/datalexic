@@ -1,0 +1,2574 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Start",
+      "text": "The streetlamps flicker as you walk down the street, blending with the crowd. No one sees you. No one knows you.\n\n[[No one cares.]]\n\nThe pockets of your trenchcoat rattle with coins, the fruit of a long day's worth of entertaining tourists with your tricks. Pennies for messing with other people's minds. They know it's not real, none of it can possibly be real: flames, vanishing people, shape-shifting cards.\n\nWell, in a way, they're right. But, like most things in life, the [[truth]] isn't quite as simple as you'd think.",
+      "links": [
+        {
+          "text": "No one cares.",
+          "destination": {
+            "name": "No one cares.",
+            "pid": 3
+          }
+        },
+        {
+          "text": "truth",
+          "destination": {
+            "name": "truth",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "truth",
+      "text": "Call it a superpower. Call it 'psychic ability'. Call it whatever you like. The fact still remains: you, Hayley Weir, homeless for as long as you could remember, possess the ability to mess with people's minds, make them see whatever you bloody well want them to. \n\nAnd with a little focus, you can pry a little into their thoughts, break into their subconscious. You could probably blackmail people, but blackmailers usually end up in the gutter with a bullet in the head or their head bashed in with a bat. No thanks. \n\nStreet magic is a lot more fun. And, most days, you earn enough to avoid [[starving]].",
+      "links": [
+        {
+          "text": "starving",
+          "destination": {
+            "name": "starving",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "No one cares.",
+      "text": "No home. No family. No friends. And yet, you're still here, the one and only Hayley Weir, one of the greatest street magicians in the whole wide world, there in a flash and gone without a trace, messy dark hair held hostage by a stupid beanie you stole from some random tramp, cute little nose now ruddier than Rudolph's because of that damn cold December wind, holding back sniffles with sheer bloody-mindedness.\n\nSpeaking of which, you're [[starving]].",
+      "links": [
+        {
+          "text": "starving",
+          "destination": {
+            "name": "starving",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "starving",
+      "text": "Yup. Hellow, hunger, my old friend, I've come to sate you once again...\n\nBut what's it going to be tonight? [[Pizza]]? Or maybe a [[hamburger]] and fries? Or...\n\n...maybe...\n\n...just maybe...\n\n...you could go somewhere more [[posh]], just for once.",
+      "links": [
+        {
+          "text": "Pizza",
+          "destination": {
+            "name": "Pizza",
+            "pid": 5
+          }
+        },
+        {
+          "text": "hamburger",
+          "destination": {
+            "name": "hamburger",
+            "pid": 6
+          }
+        },
+        {
+          "text": "posh",
+          "destination": {
+            "name": "posh",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Pizza",
+      "text": "You know just the right place in the city for cheap, relatively decent pepperoni pizza. The kind of pizza where there's actually real tomato sauce underneath that cheese. The kind where the crust doesn't have the texture and taste of inflatable sandpaper. The kind where the pepperoni doesn't burn the taste buds right off your tongue without so much as a warning.\n\nSo you scuttle off through the streets, becoming temporarily invisible to the naked eye. And (having become visible once more) you eventually find yourself shuffling into Mama Antonia's Pizzeria, which is still open, albeit bereft of most of its usual clientele.\n\nMaybe it's best you don't try to [[chat]] with the drousy girl behind the till. Maybe it's better to just pay for that takeaway with you hard-earned coins and [[leave]].",
+      "links": [
+        {
+          "text": "chat",
+          "destination": {
+            "name": "chat",
+            "pid": 41
+          }
+        },
+        {
+          "text": "leave",
+          "destination": {
+            "name": "leave",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "hamburger",
+      "text": "MacDonald's. The final frontier. The place of choice for those greasy endorphine junkies who don't give a fuck about what's in their food.\n\nAnyhow, at this time of night, there's hardly anyone about. The greasy, sleep-deprived, walking pile of teenage [[angst]] at the desk isn't too suave, either, but you were never one to care for common decency, anyhow.\n\nYou tuck into a bun which somehow contrives to be more deflated than your ego, and the 'special' sauce trickles out the corner of your [[mouth]], oozing with the tantalizing taste of tedium.\n\n<<set $food to \"burger\">>",
+      "links": [
+        {
+          "text": "angst",
+          "destination": {
+            "name": "angst",
+            "pid": 16
+          }
+        },
+        {
+          "text": "mouth",
+          "destination": {
+            "name": "mouth",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "posh",
+      "text": "You resist the urge to laugh out loud. In all that time you've spent roaming up and down the city, how come you've never thought about doing this? Tricking people into letting you into one of the most expensive restaurants in town? Tricking them into believing you've booked a table? Tricking them into letting you eat as much as you want, for free? Surely that's well within the scope of your powers?\n\nWith a skip in your step, you hurry on. In less time than it takes to say Jack Robinson, a glamorous, confident celebrity strides into the Hors d'Oeuvre, and minutes later she is browsing through the menu and disguising her excitement.\n\nThis celebrity, to the eyes of everyone present, is Jennifer Gleason, the up-and-coming actress, starring in Oscar-winning movies like 'American Gay Racist' and 'Ahoy'. Only, in fact, it's all a lie.\n\nBecause beneath that illusion is none other than yourself, Hayley Weir, who hasn't had a shower since that time some crazy bastard stole her clothes and she had to chase them through the pouring rain and get them back. You sure taught that bloody asshole a lesson when you made him believe spiders were exploding from pustules on his skin.\n\n'So, what will you be having, Miss Gleason?'\n[['The chef's head, grilled on a stick, please.']]\n[['Everything on this menu.']]",
+      "links": [
+        {
+          "text": "'The chef's head, grilled on a stick, please.'",
+          "destination": {
+            "name": "'The chef's head, grilled on a stick, please.'",
+            "pid": 8
+          }
+        },
+        {
+          "text": "'Everything on this menu.'",
+          "destination": {
+            "name": "'Everything on this menu.'",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "'The chef's head, grilled on a stick, please.'",
+      "text": "'Ahem, that was very funny, Miss Gleason, hohoho,' the waiter titters nervously. You can feel his thoughts fighting against the illusion for a moment, and for the slightest second he sees through it, sees who you really are. But that moment passes, and he shrugs it off as a trick of the light. 'But, if I may, I would recommend the menu du jour, along with a bottle of Chardonnay. The boeuf bourguignon is quite tender and delicious.'\n\n[['Can I just have pasta?'|'Actually, I was kidding. Can I just have pasta?']] \n\n[['I'll have that, then.']]",
+      "links": [
+        {
+          "text": "'Can I just have pasta?'",
+          "destination": {
+            "name": "'Actually, I was kidding. Can I just have pasta?'",
+            "pid": 11
+          }
+        },
+        {
+          "text": "'I'll have that, then.'",
+          "destination": {
+            "name": "'I'll have that, then.'",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "'Everything on this menu.'",
+      "text": "'Everything?' The waiter blinks.\n'Yes,' you reply, smiling sweetly. 'You see, I was on a diet, but it turns out I don't actually need to diet after all. Apparently I have a high-functioning motabelism -- metaholism -- what's the word -- anyway, I am simply famished and I want to have a bit of everything.'\n'Everything?'\nFor the first time, you feel just a little uncomfortable. There is a fixed expression in the waiter's eyes, and it's creeping you out. \n'Everything?' he asks again, tilting his head slightly to one side, looking rather like an incontinent pigeon.\n[['Yes.']]\n[['Actually, I was kidding. Can I just have pasta?']]",
+      "links": [
+        {
+          "text": "'Yes.'",
+          "destination": {
+            "name": "'Yes.'",
+            "pid": 10
+          }
+        },
+        {
+          "text": "'Actually, I was kidding. Can I just have pasta?'",
+          "destination": {
+            "name": "'Actually, I was kidding. Can I just have pasta?'",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "'Yes.'",
+      "text": "'Everything?'\n\n'Yes, please, just get on with --'\n\n'Everything?'\n\nYou glare at him pointedly.\n\n'Everything? Everything? Everything?' he says, just saying the same word again and again. Other [[people]] in the restaurant are already beginning to stare. \n\nThink, Hayley, [[think|Focus]].",
+      "links": [
+        {
+          "text": "people",
+          "destination": {
+            "name": "people",
+            "pid": 12
+          }
+        },
+        {
+          "text": "think",
+          "destination": {
+            "name": "Focus",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "'Actually, I was kidding. Can I just have pasta?'",
+      "text": "'Pasta?' the waiter says, snapping out of whatever mind fart he was having. 'We have bolognese, carbonara, alla frutti della mare, sugo, pescanetta...'\n\n'Anything with meatballs and some red wine will do. Thanks.'\n\n'Noted, Miss Gleason,' he smiles. Professionally, of course: nothing more intimate intended. You, of all people, should know, since you read people's minds after all. \n\nSoon afterwards, the food is served, piping hot and smelling like the Eight Wonder of the world.\n\n[[Eat dinner as Miss Gleason]]\n[[Eat dinner as yourself]]",
+      "links": [
+        {
+          "text": "Eat dinner as Miss Gleason",
+          "destination": {
+            "name": "Eat dinner as Miss Gleason",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Eat dinner as yourself",
+          "destination": {
+            "name": "Eat dinner as yourself",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "people",
+      "text": "As soon as you look away from the waiter's blank, bloodshot eyes, everything goes wrong.\n\nLike a puppet whose strings have just snapped all of a sudden, he goes down, face-first onto your empty plate, scattering bread rolls everywhere.\n\nYou feel a headache sear through your skull, and a sneeze creeps up upon you insidiously, tickling your nose beyond what it can humanly cope with.\n\nThe illusion is about to fall apart.\n\n[[Run]]\n[[Focus]]",
+      "links": [
+        {
+          "text": "Run",
+          "destination": {
+            "name": "Run",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Focus",
+          "destination": {
+            "name": "Focus",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Run",
+      "text": "Face ablaze with shame, you run for the nearest exit. Someone tries to chase you, but you turn invisible as you scramble down into the underground train station, leaving them utterly baffled.\n\nLike a ghost, you hang around the platforms, not really wanting to catch a train, not really wanting to stay, still unhappy, still unfed.\n\nGlancing up at the clock, its thin second hand twitching feverishly with every moment that passes, you realize that it's way too late for that pizza place you like. \n\nSeems like MacDonalds is your only option now. If you take the last train to the central station, you should be able to grab a [[hamburger]]. Not the option you love the most, but probably the one you deserve now.",
+      "links": [
+        {
+          "text": "hamburger",
+          "destination": {
+            "name": "hamburger",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Focus",
+      "text": "No way you're giving up this easily. You're Hayley Weir, mistress of the weird, harbinger of -- ahem -- never mind, the point is that you can do this. You're the only one who can.\n\nClosing your eyes, you see all those minds around you, flickering like candles in the dark. Gently, almost tenderly, you blow upon these candles, shaping them, feeding them the same lies.\n\nOf course, right there and then, you had to [[sneeze]].",
+      "links": [
+        {
+          "text": "sneeze",
+          "destination": {
+            "name": "sneeze",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "sneeze",
+      "text": "And in a fell swoop, the candles go out.\n\nYour eyes pop open with fear. \n\n[[What have you done]]\n[[Don't look. Just get out of here.]]",
+      "links": [
+        {
+          "text": "What have you done",
+          "destination": {
+            "name": "What have you done",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Don't look. Just get out of here.",
+          "destination": {
+            "name": "Don't look. Just get out of here.",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "angst",
+      "text": "It wasn't that hard to read into the kid's thoughts. He was practically broadcasting them out at full volume.\n\nJonathan Drew. Mediocre school results. Recently broke up with someone who was, incredibly enough, more angsty than he was (some girl named Trisha Molden). Tried his hand at graffiti art (SUCK DA POLICE, accompanied with some random angsty manga character having his head chopped off by Hello Kitty with a chainsaw). Can't stand the fumes from all that toxic paint, and rightfully so. Watches pirated anime. Stole a car once, got caught, got an ear-bashing. The list goes on.\n\nThere aren't that many [[interesting people]], really. Or else you've never met any.",
+      "links": [
+        {
+          "text": "interesting people",
+          "destination": {
+            "name": "interesting people",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "mouth",
+      "text": "You wipe your mouth, and put down your half-eaten bun. Amazing how appetite just comes and goes at the drop of a hat.\n\nMaybe it's time to rethink things. After all, you've been alone for so long. Maybe you need to find yourself a [[friend|interesting people]]...",
+      "links": [
+        {
+          "text": "friend",
+          "destination": {
+            "name": "interesting people",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "What have you done",
+      "text": "Every single person in the room is dead. Worse than dead. Their minds switched off, their bodies plunged into coma. \n\nSome of them fell face-first into their food, others have slumped off their chairs and lie in unnatural positions, like some sort of freakish modern art show. Some are bleeding, having accidentally stabbed themselves in the mouth with cutlery as they fell.\n\nYou stand amidst them now, no longer the glamorous Miss Gleason. Now you are only Hayley Weir, sniffling uncontrollably, alone and afraid.\n\n[[Wait]]\n[[Run|Don't look. Just get out of here.]] \n[[Help them]]",
+      "links": [
+        {
+          "text": "Wait",
+          "destination": {
+            "name": "Wait",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Run",
+          "destination": {
+            "name": "Don't look. Just get out of here.",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Help them",
+          "destination": {
+            "name": "Help them",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Don't look. Just get out of here.",
+      "text": "You run madly with your eyes closed, bumping into walls and doors, and only open them again once you feel the cold December wind nipping at you again.\n\nShaken, you fade away, invisible to passers-by. And, [[unsated]], trembling, you walk away from [[whatever it is you've done.]]\n",
+      "links": [
+        {
+          "text": "unsated",
+          "destination": {
+            "name": "unsated",
+            "pid": 38
+          }
+        },
+        {
+          "text": "whatever it is you've done.",
+          "destination": {
+            "name": "whatever it is you've done.",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Wait",
+      "text": "Right now, you just want to lie down among the living and the dead, just close your eyes and forget.\n\nAnd in time... perhaps you do.\n\n[[They're coming-- oh shit--|and]] ",
+      "links": [
+        {
+          "text": "They're coming-- oh shit--",
+          "destination": {
+            "name": "and",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Eat dinner as Miss Gleason",
+      "text": "You realize with growing horror that maintaining the illusion and eating food simultaneously is too much for your mind to handle. With each mouthful, your control over the minds of those around you flickers dangerously.\n\n[[Get out of here|Run]]\n[[Focus]]",
+      "links": [
+        {
+          "text": "Get out of here",
+          "destination": {
+            "name": "Run",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Focus",
+          "destination": {
+            "name": "Focus",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Eat dinner as yourself",
+      "text": "You don't have the energy to maintain this illusion forever, and you don't really need to. So, as soon as the waiter is gone and people have stopped glancing at you, you allow the illusion to fade, leaving just yours truly, Hayley Weir, homeless street magician, sitting there and having a perfectly fabulous meal.\n\nAt some point, they're bound to throw you out. But it will have been worth it.\n\n[[Throw a meatball at someone]]\n[[Drink all the wine]]",
+      "links": [
+        {
+          "text": "Throw a meatball at someone",
+          "destination": {
+            "name": "Throw a meatball at someone",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Drink all the wine",
+          "destination": {
+            "name": "Drink all the wine",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Throw a meatball at someone",
+      "text": "You select a fun target: John Piker, the famous gritty Scottish crime author, who's right now on a book tour, enjoying meals paid for by his long-suffering publisher. \n\nThe first meatball hits him on his stubbly chin, the second smites him in the eye, and the third one (still trailing spaghetti as it flies) gets in his hair.\n\nSpluttering with rage, he stomps over to your table, and then does a double-take as he tries to figure out what in the blazes a grossly unhygienic but oddly cute homeless young woman in a beanie is doing here of all places.\n\n'Who let you in here?' he demands, nostrils flaring, sphaghetti dangling from one bushy eyebrow.\n\n[[Say hello]]\n[[Throw another meatball]]\n\n",
+      "links": [
+        {
+          "text": "Say hello",
+          "destination": {
+            "name": "Say hello",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Throw another meatball",
+          "destination": {
+            "name": "Throw another meatball",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Drink all the wine",
+      "text": "This is real wine. This warms you all up from one end of the body to another, and you become filled with a warm, fuzzy, Christmassy sensation. Sheer delight, that's what it is. Sheer, unbridled delight.\n\n[[Recite a poem]]\n[[Dance]]",
+      "links": [
+        {
+          "text": "Recite a poem",
+          "destination": {
+            "name": "Recite a poem",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Dance",
+          "destination": {
+            "name": "Dance",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Recite a poem",
+      "text": "\"//My fart's in the// -- wait...\" You start again.\n\n\"//My heart's in the Highlands, a-drinkin' the beer// -- no, hold on.\"\n\n\"//My fart's in the hyphens, a-chasing the deer// -- nope nope nope!\"\n\n\"//My heart's in the Highlands, a-chasing the deer, my heart's in the Highlands, filled with good cheer//--\"\n\n\"Stop butchering Burns, you crazy person!' someone yells.\n\n[[Turn invisible]] \n[[Dance]] ",
+      "links": [
+        {
+          "text": "Turn invisible",
+          "destination": {
+            "name": "Turn invisible",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Dance",
+          "destination": {
+            "name": "Dance",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Dance",
+      "text": "You get up onto the table and start tap-dancing like a drunken Ginger Rogers, shaking your hair about until your decrepit old beanie flies right off the top of your head and lands in someone's steaming bowl of soup.\n\nAmazingly enough, people start to dance along with you, including really stiff old farts who probably wouldn't be able to tell a jig from a hornpipe. It becomes like one of those scenes in those old musical comedies (when you were little, you watched those all the time: that was before It happened and you were cast out upon an unforgiving world with little regard for the fragile hopes and dreams of yours truly, Hayley Weir) and soon you start feeling dizzy and furniture starts breaking and then you just think you'll lie down and have a nap and\n\nand\n\nand\n\n[[and]]",
+      "links": [
+        {
+          "text": "and",
+          "destination": {
+            "name": "and",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Say hello",
+      "text": "'Well, hello, John,' you say with a mischievous grin. 'I am Hayley Weir, otherwise known as... Haywire. And I do whatever the hell I want.'\n\n'Are you some sort of demented stalker fan?' Piker growls. He draws a can of pepper spray from within the confines of his leather jacket.\n\nYou sense security guards coming.\n\n[[Make him pepper spray himself in the face]]\n[[Tell him the truth]]",
+      "links": [
+        {
+          "text": "Make him pepper spray himself in the face",
+          "destination": {
+            "name": "Make him pepper spray himself in the face",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Tell him the truth",
+          "destination": {
+            "name": "Tell him the truth",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Throw another meatball",
+      "text": "The final meatball goes right into John Piker's open mouth as he is about to say something rude and offensive. With a gurgling noise, he flails about, choking.\n\n[[Perform the Heimlich manoeuvre]]\n[[Kick him in the balls]]",
+      "links": [
+        {
+          "text": "Perform the Heimlich manoeuvre",
+          "destination": {
+            "name": "Perform the Heimlich manoeuvre",
+            "pid": 31
+          }
+        },
+        {
+          "text": "Kick him in the balls",
+          "destination": {
+            "name": "Kick him in the balls",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Make him pepper spray himself in the face",
+      "text": "'Arrrgh! Urrrrgh! Gaaaaah!' Piker screams as he loses control of his hands, which decide to squeeze an entire can of pepper spray into his bulging eyes. \n\nThe author of gritty crime novels then proceeds to stampede throughout the entire restaurant like a bull in a china shop, wrecking everything in his path. Tables fly up into the air, soup soars and splatters, and a plateful of canap\u00e9s cascades down a diva's hair.\n\nWell, that'll be in the newspapers tomorrow, and will certainly be interpreted as yet another random publicity stunt from one of Britain's finest purveyors of pulp fiction.\n\nTime to turn [[invisible|Turn invisible]], Hayley.",
+      "links": [
+        {
+          "text": "invisible",
+          "destination": {
+            "name": "Turn invisible",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Tell him the truth",
+      "text": "'I've got psychic powers,' you confess coyly.\n\n'No shitting,' Piker huffs.\n\n[['Oh, really? I'm sorry, I thought this was a toilet.']]\n[[He's a bore. Time to go.|Turn invisible]]",
+      "links": [
+        {
+          "text": "'Oh, really? I'm sorry, I thought this was a toilet.'",
+          "destination": {
+            "name": "'Oh, really? I'm sorry, I thought this was a toilet.'",
+            "pid": 98
+          }
+        },
+        {
+          "text": "He's a bore. Time to go.",
+          "destination": {
+            "name": "Turn invisible",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Perform the Heimlich manoeuvre",
+      "text": "It takes a few tries for you to get it right. Solar plexus. Cross hands. Apply pressure. Rince and repeat. Pop goes the weasel -- or rather, pop goes the famous crime author as the offending meatball is dislodged from his throat and hits a waiter in the face.\n\n'Urgh!' Piker grunts.\n\n[[Erase his memory]]\n[[Turn invisible]]",
+      "links": [
+        {
+          "text": "Erase his memory",
+          "destination": {
+            "name": "Erase his memory",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Turn invisible",
+          "destination": {
+            "name": "Turn invisible",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Kick him in the balls",
+      "text": "'Omygodfucknoshitfacemoronbitch!' Piker expostulates, spitting out the meatball. 'Arghurghmxpltxkcd!'\n\nHe crumples to the ground, too aghast to retaliate.\n\n[[Turn invisible]]\n[[Drink all the wine]]",
+      "links": [
+        {
+          "text": "Turn invisible",
+          "destination": {
+            "name": "Turn invisible",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Drink all the wine",
+          "destination": {
+            "name": "Drink all the wine",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "and",
+      "text": "--you open your bleary eyes. Time has passed. You're in an interrogation cell. Held for questioning. Whatever happened in between is nothing but a black hole to you now.\n\n'--your name?'\n\n'Sorry, ma'am?' You heard her all right the first time, but you don't feel very cooperative today. And the woman (who, from a quick mind scan, is Detective Sergeant Elaine Watson) is looking rather sour. You suspect that she's very much attached to unnecessary formalities.\n\n'I said: please state your name and occupation.'\n\n[['Hayley Weir, street magician.']]\n[['I am walking out of this place, and you can't stop me.']]",
+      "links": [
+        {
+          "text": "'Hayley Weir, street magician.'",
+          "destination": {
+            "name": "'Hayley Weir, street magician.'",
+            "pid": 34
+          }
+        },
+        {
+          "text": "'I am walking out of this place, and you can't stop me.'",
+          "destination": {
+            "name": "'I am walking out of this place, and you can't stop me.'",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "'Hayley Weir, street magician.'",
+      "text": "'It's Weir as in \"weirdo\", by the way,' you add helpfully.\n\n'And how old are you, Miss Weir?'\n\n\n[['That's enough. I don't like talking about myself. I don't need to take this kind of crap. I'm out of here.'|'I am walking out of this place, and you can't stop me.']] \n\n[['22. Not that anyone cares.']]",
+      "links": [
+        {
+          "text": "'That's enough. I don't like talking about myself. I don't need to take this kind of crap. I'm out of here.'",
+          "destination": {
+            "name": "'I am walking out of this place, and you can't stop me.'",
+            "pid": 35
+          }
+        },
+        {
+          "text": "'22. Not that anyone cares.'",
+          "destination": {
+            "name": "'22. Not that anyone cares.'",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "'I am walking out of this place, and you can't stop me.'",
+      "text": "'I am walking out of this place, and you can't stop me.'\n\n'You are walking out of this place, and I can't stop you,' the woman repeats after you.\n\nHayley Weir, Jedi master. Cue maniacal laughter.\n\nIt's still dark outside as you waltz breezily out of the police station unhindered. Being, for all intents and purposes, invisible to the naked eye, no one asked for your autograph.\n\nWell, let them eat cake. You don't do autographs, anyway. \n\nShivering from the cold, you make your way briskly down some alleyways, and through the back door into a [[pub]]. There's a quiet spot near the radiator, and no one sees you anyway, so you settle in and pull your mouldy old beanie over your face. It reeks, but it's a familiar reek, and it makes you feel at [[home]].",
+      "links": [
+        {
+          "text": "pub",
+          "destination": {
+            "name": "pub",
+            "pid": 43
+          }
+        },
+        {
+          "text": "home",
+          "destination": {
+            "name": "home",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "Erase his memory",
+      "text": "'OooooOooooOoooo,' you whisper into Piker's baffled face, waving your waves about in a vaguely supernatural way. 'I have never existed. You did this all to yourself as part of an elaborate publicity stunt for the new book you're writing, which incidentally was going to be about the Detective Inspector Ian Riddle being fired for gross insubordination and having to get his job back by making use of his criminal connections and ability to break people's noses, but is now about him giving up on alcohol, going to Tibet in search of enlightenment, learning 127 different martial arts, before then coming back to Glasgow and utterly eradicating all forms of crime and corruption by the simple expedient of wearing a cape, driving a cool car, and making full and unlimited use of his criminal connections and ability to break people's noses.'\n\n'Yes,' Piker says fervently, drooling a little and seeming somewhat elsewhere, 'yes, yes, yes! Waiter, bring me a napkin! Fuck that napkin, bring me a typewriter! Fuck that typewriter, bring me my portable computer and a backup hard drive! I must write! Write is what I must! Must I write, is what? Right! Left! Wrong! Not wrong!'\n\n[[Turn invisible]] ",
+      "links": [
+        {
+          "text": "Turn invisible",
+          "destination": {
+            "name": "Turn invisible",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Turn invisible",
+      "text": "'Now you see me... now you don't. Bye-bye!'\n\nThis is one of the easiest tricks up your sleeves. People are already masters at the art of simply ignoring each other. Just turn that dial up to 11, and you're set for life.\n\nGrabbing a few hors-d'oeuvres on your way out, you slip out into the night. \n\nWalking slowly and unseen, you make your way across the dingier parts of the city. Then down some alleyways, and through the back door into a [[pub]]. There's a quiet spot near the radiator, and no one sees you anyway, so you settle in and pull your mouldy old beanie over your face. It reeks, but it's a familiar reek, and it makes you feel at [[home]].",
+      "links": [
+        {
+          "text": "pub",
+          "destination": {
+            "name": "pub",
+            "pid": 43
+          }
+        },
+        {
+          "text": "home",
+          "destination": {
+            "name": "home",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "unsated",
+      "text": "But hunger is stronger than guilt or fear, at least for now. And maybe, with a little effort, you can forget the whole thing, leave it behind you. It won't be the first time. And it may not be the last.\n\nMaybe there's still time to grab a [[pizza|Pizza]] or a [[hamburger]]. Or maybe [[not]].",
+      "links": [
+        {
+          "text": "pizza",
+          "destination": {
+            "name": "Pizza",
+            "pid": 5
+          }
+        },
+        {
+          "text": "hamburger",
+          "destination": {
+            "name": "hamburger",
+            "pid": 6
+          }
+        },
+        {
+          "text": "not",
+          "destination": {
+            "name": "not",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "whatever it is you've done.",
+      "text": "No, you won't think of it. You refuse to.\n\nBetter to [[forget]].",
+      "links": [
+        {
+          "text": "forget",
+          "destination": {
+            "name": "forget",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "not",
+      "text": "But you still crave warmth of some kind, and you don't want to sleep tonight. Not after what happened.\n\nWalking slowly and unseen, you make your way across the city. Then down some alleyways, and through the back door into a [[pub]]. There's a quiet spot near the radiator, and no one sees you anyway, so you settle in and pull your mouldy old beanie over your face. It reeks, but it's a familiar reek, and it makes you feel at [[home]].\n",
+      "links": [
+        {
+          "text": "pub",
+          "destination": {
+            "name": "pub",
+            "pid": 43
+          }
+        },
+        {
+          "text": "home",
+          "destination": {
+            "name": "home",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "chat",
+      "text": "'Oh, hey, don't I know you from somewhere?' she asks, livened up by the fact that someone actually acknowledged her existence as a human being for the first time today, rather than just being dismissed as yet another means of purveying pizza to the masses.\n\n[['I'm Haywire, sorceress of the streets']]\n[['Nope. Bye bye.'|leave]] ",
+      "links": [
+        {
+          "text": "'I'm Haywire, sorceress of the streets'",
+          "destination": {
+            "name": "'I'm Haywire, sorceress of the streets'",
+            "pid": 58
+          }
+        },
+        {
+          "text": "'Nope. Bye bye.'",
+          "destination": {
+            "name": "leave",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "leave",
+      "text": "The rain begins to fall as you walk away, and before you manage to reach the nearest bus shelter, the cardbox box is already soggy. \n\nThe pizza inside, however, is still warm. Thank Heaven for small miracles like these. If only there were more of them.\n\nIf only you weren't so [[alone|interesting people]]...",
+      "links": [
+        {
+          "text": "alone",
+          "destination": {
+            "name": "interesting people",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "pub",
+      "text": "[[The door creaks open, and the sleepy man behind the counter raises a ponderous eyebrow.]]",
+      "links": [
+        {
+          "text": "The door creaks open, and the sleepy man behind the counter raises a ponderous eyebrow.",
+          "destination": {
+            "name": "The door creaks open, and the sleepy man behind the counter raises a ponderous eyebrow.",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "home",
+      "text": "Home is where the heart is. Well, assuming you actually have a heart.\n\n[[The door creaks open, and the sleepy man behind the counter raises a ponderous eyebrow.]] ",
+      "links": [
+        {
+          "text": "The door creaks open, and the sleepy man behind the counter raises a ponderous eyebrow.",
+          "destination": {
+            "name": "The door creaks open, and the sleepy man behind the counter raises a ponderous eyebrow.",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "The door creaks open, and the sleepy man behind the counter raises a ponderous eyebrow.",
+      "text": "The wind whistles. And a [[stranger]] walks in, dressed in a bright yellow raincoat, a tartan scarf over his face.\n\nHis fist lands on the counter, shaking the complimentary [[peanuts]] to their core. Some of them leap off their saucer and hide amidst the cracks in the wooden floor.\n\n'Beer. Now.'\n",
+      "links": [
+        {
+          "text": "stranger",
+          "destination": {
+            "name": "stranger",
+            "pid": 64
+          }
+        },
+        {
+          "text": "peanuts",
+          "destination": {
+            "name": "peanuts",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Help them",
+      "text": "They're not dead yet. You can wake them up. Just close your eyes, take a deep breath, and --\n\n[[light]]",
+      "links": [
+        {
+          "text": "light",
+          "destination": {
+            "name": "light",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "interesting people",
+      "text": "Suddenly, a young woman (not much older than you) sits down right by your side. You nearly jump out of your skin: normally, what with your powers and all, you'd have sensed them coming a mile away.\n\n'Hayley Weir,' the stranger begins. No 'Hi', no awkward silence; just straight to the point. \n\n<<if $food is \"burger\">>\n[[Offer her your hamburger]]\n<<else>>\n[[Offer her a slice of pizza]]\n<</if>>\n[[Tell her to piss off]]\n",
+      "links": [
+        {
+          "text": "Offer her your hamburger",
+          "destination": {
+            "name": "Offer her your hamburger",
+            "pid": 69
+          }
+        },
+        {
+          "text": "Offer her a slice of pizza",
+          "destination": {
+            "name": "Offer her a slice of pizza",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Tell her to piss off",
+          "destination": {
+            "name": "Tell her to piss off",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "light",
+      "text": "[[that]]",
+      "links": [
+        {
+          "text": "that",
+          "destination": {
+            "name": "that",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "that",
+      "text": "[[spark]]\n",
+      "links": [
+        {
+          "text": "spark",
+          "destination": {
+            "name": "spark",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "spark",
+      "text": "And then you feel it. An awakening. Life. Thoughts. Dreams. Sensations. All rushing back.\n\nYou did it. For once in your life, you fixed what you'd broken. But now is not the time to be in the spotlight. \n\nBecause now people are pointing at you, thinking bad things about you, not understanding what happened. \n\nIt's time to [[run|Run]].",
+      "links": [
+        {
+          "text": "run",
+          "destination": {
+            "name": "Run",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "'Old enough to get drunk and disorderly, ma'am.'",
+      "text": "'This isn't what this is all about,' the woman snaps. That's when you realize she's been mentally blocking you, albeit not to the extent that you couldn't break through it if you wanted to. This is obviously what the 'helmet' is for.\n\nSomeone knows about you. And they've clearly been trying to find ways of thwarting you, sharing techniques with other people. Why?\n\n[[Read cop's mind]]\n[[Confess]]",
+      "links": [
+        {
+          "text": "Read cop's mind",
+          "destination": {
+            "name": "Read cop's mind",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Confess",
+          "destination": {
+            "name": "Confess",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Read cop's mind",
+      "text": "The psychic barrier is pretty strong, but you catch glimpses of thoughts, memories, ideas...\n\n...[[New Empire]]...\n\n...[[the taste of hot chocolate]]...\n\n...[[the twins]]...",
+      "links": [
+        {
+          "text": "New Empire",
+          "destination": {
+            "name": "New Empire",
+            "pid": 54
+          }
+        },
+        {
+          "text": "the taste of hot chocolate",
+          "destination": {
+            "name": "the taste of hot chocolate",
+            "pid": 55
+          }
+        },
+        {
+          "text": "the twins",
+          "destination": {
+            "name": "the twins",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Confess",
+      "text": "'You obviously know that I have psychic powers,' you begin. 'Somebody gave you a gadget or something to block brain waves, am I right? Who's looking for me?'\n\n'It's -- complicated. Way above my paygrade. Basically, what it amounts to, Miss Weir, is a job offer from way up high.'\n\n'And they got you to do this because you're expendable. Makes sense,' you smirk, leaning back in your chair. 'Nobody cares if a random henchwoman suddenly becomes possessed and throws themselves out of a window, am I right? Why didn't they just bring in a robot? Too expensive, maybe.'\n\nShe's now visibly pale. 'So... would you be interested in considering a job offer that would, ahem, make use of whatever weird shit it is you do?'\n\n[['Sure, why no.']]\n[['Nope. I prefer street magic to working for dodgy people.']]",
+      "links": [
+        {
+          "text": "'Sure, why no.'",
+          "destination": {
+            "name": "'Sure, why no.'",
+            "pid": 59
+          }
+        },
+        {
+          "text": "'Nope. I prefer street magic to working for dodgy people.'",
+          "destination": {
+            "name": "'Nope. I prefer street magic to working for dodgy people.'",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "New Empire",
+      "text": "...a plan... a man... broken nose...\n\n...'--must harness their power if Britain can hope to --'...\n\n...'--find Hayley Weir, at all costs --'...\n\n...'--full circle --'...\n\n[[Back to reality]]",
+      "links": [
+        {
+          "text": "Back to reality",
+          "destination": {
+            "name": "Back to reality",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "the taste of hot chocolate",
+      "text": "...two people... a warm drink...a conversation...\n\n...'I wouldn't be asking you about your job if I wasn't worried for you'...\n\n...'--dangerous people. You should get out while you can. This is anarchy we're talking about--'...\n\n[[Back to reality]]",
+      "links": [
+        {
+          "text": "Back to reality",
+          "destination": {
+            "name": "Back to reality",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "the twins",
+      "text": "...Angus... Sinead... on the run...\n\n...'--threat to our plans--'...\n\n...'--cannot get to Weir before we do --'...\n\n...'--the Shard--'...\n\n[[Back to reality]]",
+      "links": [
+        {
+          "text": "Back to reality",
+          "destination": {
+            "name": "Back to reality",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Back to reality",
+      "text": "You blink.",
+      "links": []
+    },
+    {
+      "pid": 58,
+      "name": "'I'm Haywire, sorceress of the streets'",
+      "text": "'Oh, wow, I remember seeing you at that festival! That thing where you made your own head disappear and then reappear inside a hat was insanely cool!'\n\n'I pride myself on being insanely cool,' you reply, 'even though in other respects I am not cool at all. I haven't slept in a bed for months.'\n\n'But don't you have family? Or friends?'\n\n[['Just give me that pizza and leave me alone. Please.'|leave]]\n[['I used to have family.']]",
+      "links": [
+        {
+          "text": "'Just give me that pizza and leave me alone. Please.'",
+          "destination": {
+            "name": "leave",
+            "pid": 42
+          }
+        },
+        {
+          "text": "'I used to have family.'",
+          "destination": {
+            "name": "'I used to have family.'",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "'Sure, why no.'",
+      "text": "Double-click this passage to edit it.",
+      "links": []
+    },
+    {
+      "pid": 60,
+      "name": "'Nope. I prefer street magic to working for dodgy people.'",
+      "text": "'Also,' you add, 'you have never seen me and have no idea I exist. I'm strong than those stupid gadgets.'\n\n'Oh, f--'\n\n",
+      "links": []
+    },
+    {
+      "pid": 61,
+      "name": "'I used to have family.'",
+      "text": "'What happened?'\n\nYou don't know how to reply. The truth is, you've almost successfully erased all [[memory]] of how 'It' happened.\n\n[[Pay for pizza and leave in silence|leave]]",
+      "links": [
+        {
+          "text": "memory",
+          "destination": {
+            "name": "memory",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Pay for pizza and leave in silence",
+          "destination": {
+            "name": "leave",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "'I'll have that, then.'",
+      "text": "The interesting thing about boeuf bourguignon is that you can't really throw bits of it at people in the same way that you'd throw a meatball. So you just grab the bowl from the waiter's arms and waltz out of the restaurant to eat its contents outside, under a bus shelter.\n\nWith a satisfied burp, you smash the bowl on the pavement, and like a ghost you prowl across the city, perfectly invisible to all, until at long last you find a pub. \n\nThe Pig And Whistle, or so it says on the outside. It's got that nice smell to it, cosy and unashamedly alcoholic.\n\nThere's a quiet spot near the radiator, and no one sees you anyway, so you settle in and pull your mouldy old beanie over your face. It reeks, but it's a familiar reek, and it makes you feel at [[home]].",
+      "links": [
+        {
+          "text": "home",
+          "destination": {
+            "name": "home",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "memory",
+      "text": "But there it is, still within you, a shard of living pain, a splinter in your mind which refuses to let you go.\n\n[[October 31rst, 1999]]\n\n'Are you okay?' the pizza girl asks.\n\n[['I-- it's not your fault, I just -- I'm not comfortable with mentioning my past, you know? Hey, my pizza should be ready by now, right?'|leave]] \n\n\n\n",
+      "links": [
+        {
+          "text": "October 31rst, 1999",
+          "destination": {
+            "name": "October 31rst, 1999",
+            "pid": 66
+          }
+        },
+        {
+          "text": "'I-- it's not your fault, I just -- I'm not comfortable with mentioning my past, you know? Hey, my pizza should be ready by now, right?'",
+          "destination": {
+            "name": "leave",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "stranger",
+      "text": "You scan his thoughts. His mind is colder than the wintery air outside in the streets, a shard of psychic ice.\n\nName: Ryan Crestfield. \n\nAge: 34 years, two months, two weeks, three days, five hours (you can judge by the ticking of his biological clock, no mean feat when you think about it). \n\nWoke up at noon. Had cheap whisky and cornflakes for breakfast. Put on his yellow raincoat and boots, despite it not raining, because he felt like it. Spent entire day prowling about town, got mugged, snapped the mugger's neck, broke into a house with his bare fists, threw a woman out the --\n\nOh, [[fuck]].\n",
+      "links": [
+        {
+          "text": "fuck",
+          "destination": {
+            "name": "fuck",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "peanuts",
+      "text": "Still invisible, you go down on your knees and try to rescue some of the peanuts.\n\nThat's when you notice the guy's wellington boots. Bright yellow, with a generous splash of red --\n\nOh, [[fuck]].",
+      "links": [
+        {
+          "text": "fuck",
+          "destination": {
+            "name": "fuck",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "October 31rst, 1999",
+      "text": "You close your eyes.\n\nTime rolls away for a second. The smell of pizza fades. You could almost imagine that for one long tantalizing second, you're back home, back where you were meant to be.\n\n[[And then... you open your eyes again.]]",
+      "links": [
+        {
+          "text": "And then... you open your eyes again.",
+          "destination": {
+            "name": "And then... you open your eyes again.",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "'22. Not that anyone cares.'",
+      "text": "'Well, Miss Weir, according to this, you created a -- commotion, I believe the term is. Thankfully, no one was seriously injured. I just need a statement for the record.'\n\nWatson waits for you to reply.\n\n[['Well, for the record, abracadabra and goodbye, Watson.'|'I am walking out of this place, and you can't stop me.']] ",
+      "links": [
+        {
+          "text": "'Well, for the record, abracadabra and goodbye, Watson.'",
+          "destination": {
+            "name": "'I am walking out of this place, and you can't stop me.'",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "fuck",
+      "text": "You've read about this in the newspapers. (Those which you found scattered on the floor in the subway, anyway, covered in bootprints, half of the ink completely smudged and unreadable.) And you know who this guy is: he's the one they call the Killer in Yellow.\n\nYou also know that he's about to kill the unsuspecting old guy behind the counter. And that afterwards, he'll search the pub. And that he'll find his way upstairs, where the old guy's wife is Skyping with their grown-up daughter (called Linda). Given the way the Killer in Yellow likes to work, it probably won't end well for her either.\n\n[[Run away]]\n[[Try to take control of the killer's mind]]\n[[Try to warn the old guy]]",
+      "links": [
+        {
+          "text": "Run away",
+          "destination": {
+            "name": "Run away",
+            "pid": 74
+          }
+        },
+        {
+          "text": "Try to take control of the killer's mind",
+          "destination": {
+            "name": "Try to take control of the killer's mind",
+            "pid": 75
+          }
+        },
+        {
+          "text": "Try to warn the old guy",
+          "destination": {
+            "name": "Try to warn the old guy",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "Offer her your hamburger",
+      "text": "'Want a bite?'\n\n'Nope, I'm good. My name's Katie, by the way, if you haven't already read my mind and figured that out.'\n\n//She knows. But how?//\n\n[['Fine. Let's talk.']]",
+      "links": [
+        {
+          "text": "'Fine. Let's talk.'",
+          "destination": {
+            "name": "'Fine. Let's talk.'",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "Offer her a slice of pizza",
+      "text": "Out of sheer impulse, you tear away a gooey triangle of cheesy goodness and offer it to her.\n\n'Thanks, but I think you're probably way more hungry than I am,' she gestures gently. 'My name's Katie, by the way, if you haven't read my mind and figured that out by now.'\n\n//She knows. But how?//\n\n[['Fine. Let's talk.']]",
+      "links": [
+        {
+          "text": "'Fine. Let's talk.'",
+          "destination": {
+            "name": "'Fine. Let's talk.'",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "Tell her to piss off",
+      "text": "'I don't know you, but if you don't find another place to sit, you'll really -- I'll --'\n\n<<if $food is \"burger\">>\n'--throw a crappy burger at my face?' She raises an eyebrow. 'Without even bothering to find out who I am? Honestly, I'm surprised you haven't already read my mind and found out all about me.'\n<<else>>\n'--make me punch myself in the face? Nah, I don't think you will,' she says, stealing a soggy slice of pizza from the box (now wide open upon your lap). A car rumbles by. 'Honestly, I'm surprised you haven't already read my mind and found out all about me.'\n<</if>>\n\n[['Fine. Let's talk.']]\n[[Read her mind]]",
+      "links": [
+        {
+          "text": "'Fine. Let's talk.'",
+          "destination": {
+            "name": "'Fine. Let's talk.'",
+            "pid": 72
+          }
+        },
+        {
+          "text": "Read her mind",
+          "destination": {
+            "name": "Read her mind",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "'Fine. Let's talk.'",
+      "text": "'I just wanted to show you something,' Katie tells you. (That's her real name all right: Katie Osbourne. Took a bit of time to check that, though.) 'But not here.'\n\n'What?'\n \n'It's a surprise.' She gives you a conspiratorial wink.\n\n[['Okay.']]\n[['What's in it for me?']]\n[[Hold on a minute. She could be crazy. Let's get out of here, fast.]] ",
+      "links": [
+        {
+          "text": "'Okay.'",
+          "destination": {
+            "name": "'Okay.'",
+            "pid": 93
+          }
+        },
+        {
+          "text": "'What's in it for me?'",
+          "destination": {
+            "name": "'What's in it for me?'",
+            "pid": 94
+          }
+        },
+        {
+          "text": "Hold on a minute. She could be crazy. Let's get out of here, fast.",
+          "destination": {
+            "name": "Hold on a minute. She could be crazy. Let's get out of here, fast.",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "Read her mind",
+      "text": "For perhaps the first time, you encounter a mind which offers more resistance than usual. It takes effort, but you manage to get a name: Katie. \n\n'Katie Osbourne,' you muse aloud. 'So... I guess you've got the knack for messing with people's heads, just like me.'\n\nKatie yawns: a sound both cathartic and kind of cute. 'Yeah. I sort of sensed that there was some sort of... disturbance in the collective whatitsface of the city, blah, blah, blah, and I followed it all the way here and then I heard you thinking and I... put two and two together. Yeah, basically that.'\n\n[['Fine. Let's talk.']] ",
+      "links": [
+        {
+          "text": "'Fine. Let's talk.'",
+          "destination": {
+            "name": "'Fine. Let's talk.'",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "Run away",
+      "text": "You've done this many times before. Sometimes it feels like you've spent your entire life running away from other people. It's the easy way out. It always has been. It always will be.\n\n[[So you head right for the door --]]",
+      "links": [
+        {
+          "text": "So you head right for the door --",
+          "destination": {
+            "name": "So you head right for the door --",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Try to take control of the killer's mind",
+      "text": "You feel confident about this. You do this every day when you pretend to 'hypotize' people, making them quack like ducks, do triple somersaults, all that sort of crap.\n\n'Ryan W. Crestfield,' you begin, in that firm voice you do so well, 'individual otherwise known as the Killer in Yellow, you will leave this old man the hell alone and follow me to the nearest police station, where you will confess to all your crimes and rot in prison forever.'\n\n[[You've got it. His mind is yours. Nothing can go wrong, or so you think --|So you head right for the door --]]",
+      "links": [
+        {
+          "text": "You've got it. His mind is yours. Nothing can go wrong, or so you think --",
+          "destination": {
+            "name": "So you head right for the door --",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "Try to warn the old guy",
+      "text": "You send a psychic command. \n\n//Knock over the liquor rack. Run upstairs. Lock the door. Barricade it. And call the police, for fuck's sake.//\n\nThe old man's mind is strong, but not strong enough. Manipulating him is like [[pulling the strings of a puppet.]]\n\n",
+      "links": [
+        {
+          "text": "pulling the strings of a puppet.",
+          "destination": {
+            "name": "pulling the strings of a puppet.",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "So you head right for the door --",
+      "text": "-- and then you hear the killer's voice. \n\n'Not so fast, girl.'\n\nFor a split second, you refuse to believe that someone could have seen right through your illusions, that their minds could ever resist yours.\n\nThat one split second was a big mistake.\n\nYou feel a powerful hand grab you by your hair and effortlessly toss you over the counter, smashing into the liquor rack. The bottles don't break the way they would in an action movie. Of course not. These are solid bottles. You, however, are far from solid, and now you're feeling this more acutely than you'd like.\n\nDazed, badly hurt, you know you've got only two options: [[fighting back]], or [[find a place to hide]].",
+      "links": [
+        {
+          "text": "fighting back",
+          "destination": {
+            "name": "fighting back",
+            "pid": 84
+          }
+        },
+        {
+          "text": "find a place to hide",
+          "destination": {
+            "name": "find a place to hide",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "And then... you open your eyes again.",
+      "text": "'Um, I don't want t - t - to sound a - a - annoying or anything,' the pizza girl giggles nervously, 'but where are we?'\n\nYou glance around. //This isn't the pizzeria anymore, Toto.// \n\nIt's...[[home?]]",
+      "links": [
+        {
+          "text": "home?",
+          "destination": {
+            "name": "home?",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "Menu",
+      "text": "\n\n[[Start]]\n\n[[About]]\n\n[[Credits]]\n\n[[Totally unnecessary author's note]]\n",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        },
+        {
+          "text": "About",
+          "destination": {
+            "name": "About",
+            "pid": 80
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 134
+          }
+        },
+        {
+          "text": "Totally unnecessary author's note",
+          "destination": {
+            "name": "Totally unnecessary author's note",
+            "pid": 135
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "About",
+      "text": "This short Twine game was written for the 2018 Interactive Fiction Competition.\n\nThere are many endings. Some are dark. Some are happy. Some are almost silly. Some are //terrifying//. \n\nBut each and every one of these endings are worth it. None of that old 'it was all a dream' stuff. We've seen enough of that to last a lifetime, if the truth be told.\n\n\n[[Back to main menu|Menu]]",
+      "links": [
+        {
+          "text": "Back to main menu",
+          "destination": {
+            "name": "Menu",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "StoryAuthor",
+      "text": "Peregrine Wade",
+      "links": []
+    },
+    {
+      "pid": 82,
+      "name": "StoryBanner",
+      "text": "<img src=\"http://plover.net/~peregrine/HaywireCovertArt.png\" width=\"256\" height=\"256\">",
+      "links": []
+    },
+    {
+      "pid": 83,
+      "name": "pulling the strings of a puppet.",
+      "text": "But what you hadn't reckoned on was that he wasn't going to stay around and knock out the threat at hand. //Too old for this shit,// you heard him retort.\n\nSo instead of knocking over the liquor rack onto the killer's head, he simply ran like the dickens, and barricaded himself in his bedroom. \n\nWell, at least the Killer in Yellow won't be killing anyone today. Any moment now, the police will come, alerted by the old man's call.\n\n[[So you head right for the door --]]\n\n",
+      "links": [
+        {
+          "text": "So you head right for the door --",
+          "destination": {
+            "name": "So you head right for the door --",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "fighting back",
+      "text": "You grab a whisky bottle and try to bash in the Killer in Yellow's bald skull with it.\n\nThis has absolutely zero effect on him. He doesn't even flinch; he just grabs you by the hair and lifts you right off the ground.\n\n[[Keep on fighting, Hayley. You can't give up. Not now.]]",
+      "links": [
+        {
+          "text": "Keep on fighting, Hayley. You can't give up. Not now.",
+          "destination": {
+            "name": "Keep on fighting, Hayley. You can't give up. Not now.",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "find a place to hide",
+      "text": "Blood trickles down from your face onto the floor. Weak and hoarse, you try to get up, only to fall back down with a THUMP. \n\nOn your hands and knees, your vision blurred by intermittent pain, red-hot and searing through your skull like a brand, you try to find a place to hide --\n\n-- and then the final blow comes down.\n\n[[It's over.]]\n\n",
+      "links": [
+        {
+          "text": "It's over.",
+          "destination": {
+            "name": "It's over.",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "Keep on fighting, Hayley. You can't give up. Not now.",
+      "text": "'//Fuck you!//' you scream in his face. Ignoring the blood which is now getting into your eyes, you try to kick the killer in the family jewels, with all the strength you can humanly muster.\n\nDammit. It's like he's the motherfucking Terminator or something. Hard as steel. And now you've got a stubbed toe.\n\n//[[Focus, Hayley. Focus.]]//",
+      "links": [
+        {
+          "text": "Focus, Hayley. Focus.",
+          "destination": {
+            "name": "Focus, Hayley. Focus.",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "Focus, Hayley. Focus.",
+      "text": "And with focus comes that extra bit of clarity you so badly need.\n\nIn one sudden move, you use one hand to grab onto the roots of your hair, and the other hand to push against the guy's arm. Holding back tears, you free yourself, leaving a fistful of hair in the man's balled up fist.\n\nWith a thud, you land on the floor. You know the way out. But are you fast enough? Faster than the Killer in Yellow?\n\n//There must be a way to manipulate him,// a tiny voice says inside your head. //You read his mind, more or less. Surely there's a way to alter it, no matter how superhumanly strong his will might be.//\n\n[[Come on. Come on. You can do this, for fuck's sake.]]\n[[What are you waiting for? Run.]]",
+      "links": [
+        {
+          "text": "Come on. Come on. You can do this, for fuck's sake.",
+          "destination": {
+            "name": "Come on. Come on. You can do this, for fuck's sake.",
+            "pid": 88
+          }
+        },
+        {
+          "text": "What are you waiting for? Run.",
+          "destination": {
+            "name": "What are you waiting for? Run.",
+            "pid": 148
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "Come on. Come on. You can do this, for fuck's sake.",
+      "text": "Time seems to slow down, and so does the Killer in Yellow as you exert all your willpower into stopping him in his tracks.\n\nBut he's still resisting, and if you lose focus for even one moment, you're dead.\n\nYou feel the pain numbing you, making you sloppy, weakening your psychic grip on the killer's mind.\n\nPain. What is it, really? Electric impulses. Nerve endings. Neuronal connections. Static electricity --\n\n[[Wait. Maybe there's something else I can do.]]\n[[Nope. You can't do this. It was a stupid idea. Just get up and walk away from this whole shitstorm.]]",
+      "links": [
+        {
+          "text": "Wait. Maybe there's something else I can do.",
+          "destination": {
+            "name": "Wait. Maybe there's something else I can do.",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Nope. You can't do this. It was a stupid idea. Just get up and walk away from this whole shitstorm.",
+          "destination": {
+            "name": "Nope. You can't do this. It was a stupid idea. Just get up and walk away from this whole shitstorm.",
+            "pid": 149
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "Wait. Maybe there's something else I can do.",
+      "text": "//It was never about minds, Hayley. It was about forces. Fundamental forces, fields, the inner workings of the physical world. That's the true gift. That's what it always was and always will be.//\n\nAnd with that epiphany, comes [[something else.]]\n",
+      "links": [
+        {
+          "text": "something else.",
+          "destination": {
+            "name": "something else.",
+            "pid": 141
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "It's over.",
+      "text": "They say the last thing which flashes before your eyes is your life. Relived once more, every single detail pitch-perfect in its rendition.\n\nNo time for regret. No time for anything more.\n\nAnd in the weeks to come, people only vaguely remember Haywire, that funny girl in the beanie with the uptilted nose and the messy hair, who did illusions that would have put the professionals to shame, who seemed only to live for the plaudits of the crowd.\n\n[[The End|Menu]] ",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "Menu",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "forget",
+      "text": "It's easy to forget. After all, if you can manipulate other people's minds, you can just as well manipulate your own.\n\nIn fact, come to think of it, was there anything to forget? Nope, there wasn't anything. Nothing happened. You just tried to enter a posh restaurant on an impulse, and they naturally threw you out because you smell like mouldy cheese. Not the posh kind of mouldy cheese, either: more like the kind which doesn't have any business being mouldy at all. \n\n[[Speaking of mouldy things, there's the Pig and Whistle.]]\n\n[[Speaking of cheesy things, there's that pizzeria round the corner.|Pizza]]",
+      "links": [
+        {
+          "text": "Speaking of mouldy things, there's the Pig and Whistle.",
+          "destination": {
+            "name": "Speaking of mouldy things, there's the Pig and Whistle.",
+            "pid": 92
+          }
+        },
+        {
+          "text": "Speaking of cheesy things, there's that pizzeria round the corner.",
+          "destination": {
+            "name": "Pizza",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "Speaking of mouldy things, there's the Pig and Whistle.",
+      "text": "One of those nice little [[pubs|pub]] with funny names, almost forgotten in the midst of so many new shops. There's a quiet spot near the radiator, and no one sees you anyway, so you sneak inside and pull your mouldy old beanie over your face as you sit down. It reeks, but it's a familiar reek, and it makes you feel at [[home]].",
+      "links": [
+        {
+          "text": "pubs",
+          "destination": {
+            "name": "pub",
+            "pid": 43
+          }
+        },
+        {
+          "text": "home",
+          "destination": {
+            "name": "home",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "'Okay.'",
+      "text": "'Cool. Don't worry, it's not far.'\n\nAnd so Katie guides you through the rainy streets. She's right, it's barely more than two minutes away, but the freezing rain makes these two minutes feel more like two hours.\n\nIt's an unassuming apartment building, grey and stolidly plain. Katie uses her keycard to get in, and you follow her up some spiral stairs and into what you immediately know is none other than her own flat.\n\nIt's warm. Cosy, even. Although the [[decoration]] is somewhat unusual. \n\n[['Show me.']]",
+      "links": [
+        {
+          "text": "decoration",
+          "destination": {
+            "name": "decoration",
+            "pid": 109
+          }
+        },
+        {
+          "text": "'Show me.'",
+          "destination": {
+            "name": "'Show me.'",
+            "pid": 110
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "'What's in it for me?'",
+      "text": "Katie rolls her eyes. 'You can sleep on my couch tonight.'\n\n'And have a --'\n\n'--shower? I don't know what kind of lunatic I'd have to be to discourage you from basic hygiene, Haywire' she retorts, suppressing a giggle with one hand. 'Do you -- Oh, I can read it in your thoughts that you don't mind being called Haywire. Being psychic rocks.'\n\n'Then it's a deal,' you [[wink|'Okay.']].",
+      "links": [
+        {
+          "text": "wink",
+          "destination": {
+            "name": "'Okay.'",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "home?",
+      "text": "Both you and the pizza girl are standing before a modest brick house, with no fence to barricade it from the rest of the neighborhood. Not that the neighborhood is anything other than rows of cookie-cutter houses with tightly trimmed lawns and proud mailboxes.\n\nThe sun has just set. There's a Jack-o'-lantern in the front window, leering at you, its candle on the wane. The door is ajar.\n\n[[Run away from the memory]]\n[[Go inside the house]]",
+      "links": [
+        {
+          "text": "Run away from the memory",
+          "destination": {
+            "name": "Run away from the memory",
+            "pid": 96
+          }
+        },
+        {
+          "text": "Go inside the house",
+          "destination": {
+            "name": "Go inside the house",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "Run away from the memory",
+      "text": "'Where are you going?' the pizza girl calls out after you.\n\n'LEAVE ME ALONE!' you scream as you run headlong into the unknown, the memory shattering into bleeding shards of unreality, a living nightmare.\n\nA thousand knives grow like blades of grass beneath your feet. You feel that people are chasing you, faceless figures from your past, innocent and incomprehensibly horrible. No, you don't just //feel//. You //know//. They're all there.\n\n[[Scream]]",
+      "links": [
+        {
+          "text": "Scream",
+          "destination": {
+            "name": "Scream",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "Go inside the house",
+      "text": "'This is freaking me out,' the pizza girl mutters to herself. (Lindsay Madden, that's her name, you gleaned that earlier from a casual reading of her mind. Not that names matter that much to you.)\n\nNevertheless, she steps through the open door after you. Both of you now stand in the hallway. \n\nA bag of sweets lies scattered on the soft carpeted floor.\n\n//Did you drop those when you ran screaming out through that door? You never came back for them, that's for sure.//\n\n[[No. You don't want to remember this. You can't.|Run away from the memory]]\n[[You need to know. You need to know for sure.]]",
+      "links": [
+        {
+          "text": "No. You don't want to remember this. You can't.",
+          "destination": {
+            "name": "Run away from the memory",
+            "pid": 96
+          }
+        },
+        {
+          "text": "You need to know. You need to know for sure.",
+          "destination": {
+            "name": "You need to know. You need to know for sure.",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "'Oh, really? I'm sorry, I thought this was a toilet.'",
+      "text": "'Oh, really? I'm sorry, I thought this was a toilet,' you retort.\n\n'That's not funny.'\n\n[['You know what's funny? You're a huge Agatha Christie fan.']]\n[[Kick him in the balls]] \n[[Actually, he's not worth it. Time to make a graceful exit.|Turn invisible]]",
+      "links": [
+        {
+          "text": "'You know what's funny? You're a huge Agatha Christie fan.'",
+          "destination": {
+            "name": "'You know what's funny? You're a huge Agatha Christie fan.'",
+            "pid": 99
+          }
+        },
+        {
+          "text": "Kick him in the balls",
+          "destination": {
+            "name": "Kick him in the balls",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Actually, he's not worth it. Time to make a graceful exit.",
+          "destination": {
+            "name": "Turn invisible",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "'You know what's funny? You're a huge Agatha Christie fan.'",
+      "text": "'You know what's funny? You're a huge Agatha Christie fan.'\n\nPiker looks panicked. 'Don't say that out loud, for fuck's sake! Nobody knows, not even my ex-wife.'\n\n'Which ex-wife? The one who drinks all the time or the one who's in prison for shooting your chauffeur in a fit of jealous rage?'\n\n'Those scandals were all covered up! How could you know?' Piker is now completely livid. His gooseberry eyes are on the edge of popping out of their sockets. 'Besides, that bullet wasn't meant for my chauffeur --'\n\n'--it was meant for you,' you complete his sentence with a mischievous grin.\n\nPiker takes out his chequebook. 'H - how much do you want, you crazy bitch? Sorry, I take back the s - s -slur, it was uncalled for. How much?'\n\n[['Oh, ten grand would do nicely.']]\n[['Oh, I don't do this for money. I do this for fun.'|Turn invisible]] ",
+      "links": [
+        {
+          "text": "'Oh, ten grand would do nicely.'",
+          "destination": {
+            "name": "'Oh, ten grand would do nicely.'",
+            "pid": 100
+          }
+        },
+        {
+          "text": "'Oh, I don't do this for money. I do this for fun.'",
+          "destination": {
+            "name": "Turn invisible",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "'Oh, ten grand would do nicely.'",
+      "text": "//Blackmail. It works, bitches,// you reflect later on as you watch the clouds go by through the window of the airliner, halfway to another world. The sun forms horizontal flares across the reinforced glass.\n\nIt takes such a great weight off your shoulders, leaving your country behind. And the shadows of the past can just go fuck themselves.\n\nYou're free.\n\nWho knows what you'll do next. Only one thing is certain: with your power to change people's minds, anything is possible.\n\n[[The End|Menu]]\n\n",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "Menu",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "Scream",
+      "text": "And the whole world screams with you in unison. Countless hopes and dreams are torn apart in the supermassive black hole of your heart, blazing bright one fleeting instant before their inevitable demise.\n\n[[Laugh]]",
+      "links": [
+        {
+          "text": "Laugh",
+          "destination": {
+            "name": "Laugh",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "Laugh",
+      "text": "<<typewriter \"Yes, Hayley. When you've got no more tears to shed, when all's done and said, life's a joke it's true, laughter is your only friend, so let's laugh until the end, Hayley, let's rave and drool upon humanity's open grave, toss them one after the other into the great beyond, what a glorious feeling, it's almost like you're happy again, one last chance to look on the bright side of life, Hayley, because soon there will be no bright side, just chaos and eternal futility from one end of the motherfucking globe to another, so laugh it off, shake it off, it's time to go crazy go crazy go crazy oh God it's time to go home but there is no home Hayley it's all gone haywire and now those illusions are real now you can really take off your own head and put it back on it's just a question of static electricity and manipulation of fundamental farces or forces or farces or whatever, it doesn't matter anyway because now you're like a force of nature ripping out the heart of the city with your bare hands\">>\n\n[[NOW THE NIGHTMARE'S REAL]]\n\n",
+      "links": [
+        {
+          "text": "NOW THE NIGHTMARE'S REAL",
+          "destination": {
+            "name": "NOW THE NIGHTMARE'S REAL",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "NOW THE NIGHTMARE'S REAL",
+      "text": "//[[Breaking news: Chaos in Glasgow. A creature with supernatural powers tore apart a local pizzaria, before then killing 43 people and injuring over a hundred. The day was saved, however, by the intervention of a mysterious masked heroine known only as Kaos, who used her own telekinetic powers to subdue the creature.]]//\n",
+      "links": [
+        {
+          "text": "Breaking news: Chaos in Glasgow. A creature with supernatural powers tore apart a local pizzaria, before then killing 43 people and injuring over a hundred. The day was saved, however, by the intervention of a mysterious masked heroine known only as Kaos, who used her own telekinetic powers to subdue the creature.",
+          "destination": {
+            "name": "Breaking news: Chaos in Glasgow. A creature with supernatural powers tore apart a local pizzaria, before then killing 43 people and injuring over a hundred. The day was saved, however, by the intervention of a mysterious masked heroine known only as Kaos, who used her own telekinetic powers to subdue the creature.",
+            "pid": 131
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "You need to know. You need to know for sure.",
+      "text": "'This is inside your head, right?' Lindsay asks. You feel she's not really expecting a reply; she just desperately wants to fill the oppressing silence with her own words, anything at all to stave off the growing sense of dread.\n\n//Something had freaked you out: a mask glimpsed on the other side of the street. You ran all the way home. But what made you run back out again?//\n\nSlowly, you mount the stairs, step by step. Then you stop, hesitating.\n\n[[What really happened that night? You know the answer is there somewhere, waiting for you.]]\n[[Make it stop. Make it stop. Hayley, make it stop.|Run away from the memory]]\n",
+      "links": [
+        {
+          "text": "What really happened that night? You know the answer is there somewhere, waiting for you.",
+          "destination": {
+            "name": "What really happened that night? You know the answer is there somewhere, waiting for you.",
+            "pid": 105
+          }
+        },
+        {
+          "text": "Make it stop. Make it stop. Hayley, make it stop.",
+          "destination": {
+            "name": "Run away from the memory",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "What really happened that night? You know the answer is there somewhere, waiting for you.",
+      "text": "No, the real reason you hesitate is not because you're afraid of what you might find upstairs. The whole [[nightmare]] took place down here, right where Lindsay Madden, pizza girl, is standing.\n",
+      "links": [
+        {
+          "text": "nightmare",
+          "destination": {
+            "name": "nightmare",
+            "pid": 147
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "You've found it, Hayley. The truth you always feared.",
+      "text": "Everything fades away, and suddenly you're back in the pizzeria.\n\nLindsay blinks.\n\n'I'm... I'm so sorry. I can't imagine how...'  She shakes her head. 'How all this could happen to you, and yet you're not some kind of serial killer or supervillain or... I mean, you devote your life to making people laugh, making them feel like magic really does exist...'\n\nYou ponder this. She's right: somehow, in spite of everything, you found a way out of the darkness. However impossible it feels, you can move on from this. You're strong. You can rise from those ashes like a phoenix, now that you've finally come to terms with the truth. \n\n'Thanks,' you tell her. She hands you your pizza, as ordered, and you head out to eat it.\n\n[[A year later...]]",
+      "links": [
+        {
+          "text": "A year later...",
+          "destination": {
+            "name": "A year later...",
+            "pid": 144
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "The next day",
+      "text": "Well, hospital beds aren't terribly comfortable, but you reflect that it's far better than no bed at all.\n\nAnd at least you have the [[satisfaction]] of knowing something that no one else does: the truth about what happened at the Pig and Whistle, and who really killed the Killer In Yellow.\n",
+      "links": [
+        {
+          "text": "satisfaction",
+          "destination": {
+            "name": "satisfaction",
+            "pid": 143
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "Hold on a minute. She could be crazy. Let's get out of here, fast.",
+      "text": "'Where are you going? Wait! No -- Oh. You think I'm crazy.'\n\n'Congratulations, you just read my mind,' you reply without bothering to look back at her.\n\n'Fine. I'll go and find that Killer in Yellow all by myself, then, just like always,' Katie says bitterly. \n\n//Killer in Yellow?// \n\nBut you don't really care, so you just keep walking. And walking. And walking. Until at long last you find what you were looking for: the [[Pig and Whistle|pub]], one of those quaint little pubs which offer some shelter in the heart of winter. Slipping in unseen is but the matter of a moment, and you settle down near the radiator, basking in its warmth.",
+      "links": [
+        {
+          "text": "Pig and Whistle",
+          "destination": {
+            "name": "pub",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "decoration",
+      "text": "The walls are covered in newspaper clippings, heavily annotated. It's like in one of those serial killer movies where the lead detective goes rogue and obsesses over catching the murderer.\n\nThere's also a complete map of the city, with multi-coloured pins here and there. A computer in the background is connected to the internet, monitoring stuff, and the radio is on.\n\n//...one shaving lotion bought, get two free!...//\n\nKatie switches off the radio. 'Sorry for the mess.'\n\n[['Show me.']] ",
+      "links": [
+        {
+          "text": "'Show me.'",
+          "destination": {
+            "name": "'Show me.'",
+            "pid": 110
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "'Show me.'",
+      "text": "'Just one sec.' Katie takes off her raincoat, closes the door and locks it.\n\nShe walks over to a cupboard, and with a flourish she displays its contents: a bright green superhero costume, complete with mask, slightly worn from use. There's a tartan K on the front, and it's made from thick kevlar, obviously patched together from stolen bulletproof vests.\n\n[['So you fight crime in this thing.']]\n[['Is that all?']]\n",
+      "links": [
+        {
+          "text": "'So you fight crime in this thing.'",
+          "destination": {
+            "name": "'So you fight crime in this thing.'",
+            "pid": 111
+          }
+        },
+        {
+          "text": "'Is that all?'",
+          "destination": {
+            "name": "'Is that all?'",
+            "pid": 112
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "'So you fight crime in this thing.'",
+      "text": "'Yeah, well, it helps me conceal my identity. Also, it's bulletproof, in case you haven't noticed. The K's for Kaos, you know, as in //Ka//tie //Os//bourne.'\n\n[['Is that all?']] ",
+      "links": [
+        {
+          "text": "'Is that all?'",
+          "destination": {
+            "name": "'Is that all?'",
+            "pid": 112
+          }
+        }
+      ]
+    },
+    {
+      "pid": 112,
+      "name": "'Is that all?'",
+      "text": "'I was kind of expecting more,' you frown, disappointed.\n\n'Oh, there's more,' Katie says hastily. 'You see, I don't mess with people's mind like you do. I mean, not that what you do is wrong, it's fun, people love it. But I can do //this//.'\n\nShe snaps her fingers, and the superhero costume floats off its rack like a ghost. It kind of bounces off the wall, hovering like a drunken ghost on New Year's Eve, and then Katie snatches it and slips inside. 'Telekinesis. I bet you could do that too, if you tried.'\n\n[['Nah, that's not telekinesis, that's just an illusion.']]\n[['Wow, that's... that's super cool!']]",
+      "links": [
+        {
+          "text": "'Nah, that's not telekinesis, that's just an illusion.'",
+          "destination": {
+            "name": "'Nah, that's not telekinesis, that's just an illusion.'",
+            "pid": 113
+          }
+        },
+        {
+          "text": "'Wow, that's... that's super cool!'",
+          "destination": {
+            "name": "'Wow, that's... that's super cool!'",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "'Nah, that's not telekinesis, that's just an illusion.'",
+      "text": "For the first time since you've met her (which was, admittedly, only a few minutes ago...), Katie actually looks annoyed. \n\n'Hayley, you know very well this isn't some kind of illusion. You'd know. You're the mistress of the mystic arts or whatever grandiose title you give yourself when no one is watching.'\n\n[['Look, I know you've got the same powers I have. So this is just a cool trick. Stop lying.']]\n[['Okay, now I believe you.'|'Wow, that's... that's super cool!']]",
+      "links": [
+        {
+          "text": "'Look, I know you've got the same powers I have. So this is just a cool trick. Stop lying.'",
+          "destination": {
+            "name": "'Look, I know you've got the same powers I have. So this is just a cool trick. Stop lying.'",
+            "pid": 115
+          }
+        },
+        {
+          "text": "'Okay, now I believe you.'",
+          "destination": {
+            "name": "'Wow, that's... that's super cool!'",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "'Wow, that's... that's super cool!'",
+      "text": "'Thanks,' Katie smiles. 'Why don't you try?'\n\n[['No. I'm not like you. Nothing that I create is real. It's all in other people's imaginations.']]\n\n[['Okay. How?']]",
+      "links": [
+        {
+          "text": "'No. I'm not like you. Nothing that I create is real. It's all in other people's imaginations.'",
+          "destination": {
+            "name": "'No. I'm not like you. Nothing that I create is real. It's all in other people's imaginations.'",
+            "pid": 120
+          }
+        },
+        {
+          "text": "'Okay. How?'",
+          "destination": {
+            "name": "'Okay. How?'",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "'Look, I know you've got the same powers I have. So this is just a cool trick. Stop lying.'",
+      "text": "'Is //this// a cheap parlour trick?' Katie fumes, and with another snap of her fingers the kitchen table floats up into the air, complete with leftover food from dinner.\n\n[['I'm still not convinced.']]\n[['Okay, now I believe you.'|'Wow, that's... that's super cool!']]",
+      "links": [
+        {
+          "text": "'I'm still not convinced.'",
+          "destination": {
+            "name": "'I'm still not convinced.'",
+            "pid": 116
+          }
+        },
+        {
+          "text": "'Okay, now I believe you.'",
+          "destination": {
+            "name": "'Wow, that's... that's super cool!'",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "'I'm still not convinced.'",
+      "text": "'What will it take to convince you?' Katie explodes. 'Do I have to stop bullets in mid-air?'\n\nShe thinks for a second, and then with another snap of her fingers she makes you levitate.\n\n[['Why are you trying so hard to lie to me? It's obvious you're making me believe I'm floating when in fact I'm not!']]\n[['Okay, calm down, I was just joking. I'm sorry I made you angry.'|'Wow, that's... that's super cool!']]",
+      "links": [
+        {
+          "text": "'Why are you trying so hard to lie to me? It's obvious you're making me believe I'm floating when in fact I'm not!'",
+          "destination": {
+            "name": "'Why are you trying so hard to lie to me? It's obvious you're making me believe I'm floating when in fact I'm not!'",
+            "pid": 117
+          }
+        },
+        {
+          "text": "'Okay, calm down, I was just joking. I'm sorry I made you angry.'",
+          "destination": {
+            "name": "'Wow, that's... that's super cool!'",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "'Why are you trying so hard to lie to me? It's obvious you're making me believe I'm floating when in fact I'm not!'",
+      "text": "'Hayley Weir, you are an insufferable piece of shit and -- and --' Katie can't manage to find a suitable expletive to describe your horrid behavior.\n\n[['Liar, liar, pants on fire...']]\n[[Leave Katie's apartment]]",
+      "links": [
+        {
+          "text": "'Liar, liar, pants on fire...'",
+          "destination": {
+            "name": "'Liar, liar, pants on fire...'",
+            "pid": 118
+          }
+        },
+        {
+          "text": "Leave Katie's apartment",
+          "destination": {
+            "name": "Leave Katie's apartment",
+            "pid": 136
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "'Liar, liar, pants on fire...'",
+      "text": "'Okay. That's enough.'\n\nKatie's eyes become dead serious. You feel the force that's holding you up in mid-air suddenly tighten.\n\nShe's about to snap her fingers one last time.\n\n[['No. No. Katie, stop it, you're going too far --']]",
+      "links": [
+        {
+          "text": "'No. No. Katie, stop it, you're going too far --'",
+          "destination": {
+            "name": "'No. No. Katie, stop it, you're going too far --'",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "'No. No. Katie, stop it, you're going too far --'",
+      "text": "[[-- and with a finger snap, you find yourself soaring backwards, through a window which swings open to let you outside into the cold rain --]]\n",
+      "links": [
+        {
+          "text": "-- and with a finger snap, you find yourself soaring backwards, through a window which swings open to let you outside into the cold rain --",
+          "destination": {
+            "name": "-- and with a finger snap, you find yourself soaring backwards, through a window which swings open to let you outside into the cold rain --",
+            "pid": 138
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "'No. I'm not like you. Nothing that I create is real. It's all in other people's imaginations.'",
+      "text": "'I'm sure you can. Your mind's much stronger than mine. I bet you could move mountains.'\n\n[['Sorry to prove you wrong, Katie, but I couldn't even move a fly with my thoughts.']]\n[['Maybe. But I don't know how.'|'Okay. How?']]",
+      "links": [
+        {
+          "text": "'Sorry to prove you wrong, Katie, but I couldn't even move a fly with my thoughts.'",
+          "destination": {
+            "name": "'Sorry to prove you wrong, Katie, but I couldn't even move a fly with my thoughts.'",
+            "pid": 122
+          }
+        },
+        {
+          "text": "'Maybe. But I don't know how.'",
+          "destination": {
+            "name": "'Okay. How?'",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "'Okay. How?'",
+      "text": "'It's just basically... believing in it, and then... focusing really, really hard.'\n\n'That's kind of vague,' you point out.\n\nKatie thinks for a second, then snatches your beanie and starts waving it, just out of your reach. \n\n'Hey! Give that back!'\n\n'//Take// it back, then,' Katie answers. 'But use the Force, Hayley. Use the Force!'\n\n[[Fine. Use the Force, whatever.]]",
+      "links": [
+        {
+          "text": "Fine. Use the Force, whatever.",
+          "destination": {
+            "name": "Fine. Use the Force, whatever.",
+            "pid": 123
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "'Sorry to prove you wrong, Katie, but I couldn't even move a fly with my thoughts.'",
+      "text": "'Fine,' Katie grumbles. 'As you wish. I'm going out to catch a killer. You can stay here and sleep on the couch, if you like. The shower's right over there.'\n\n[['Let's go fight crime!']] \n[['Thanks, Katie. I'm knackered.'|'Can I sleep on your couch now?']] ",
+      "links": [
+        {
+          "text": "'Let's go fight crime!'",
+          "destination": {
+            "name": "'Let's go fight crime!'",
+            "pid": 127
+          }
+        },
+        {
+          "text": "'Thanks, Katie. I'm knackered.'",
+          "destination": {
+            "name": "'Can I sleep on your couch now?'",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "Fine. Use the Force, whatever.",
+      "text": "You roll your eyes, and then [[focus]] very, very hard --",
+      "links": [
+        {
+          "text": "focus",
+          "destination": {
+            "name": "focus",
+            "pid": 124
+          }
+        }
+      ]
+    },
+    {
+      "pid": 124,
+      "name": "focus",
+      "text": "-- and at first nothing [[happens]] --",
+      "links": [
+        {
+          "text": "happens",
+          "destination": {
+            "name": "happens",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "happens",
+      "text": "-- but then you see a shocked look on Katie's face, and you look down.\n\nEverything inside the apartment is //floating//. Like, //everything//. Even the stuff that's nailed down.\n\n'Okay, Hayley, that's enough!' Katie shouts out, panicked. 'I was right! I was right! Let's just get back [[down]] to earth --'",
+      "links": [
+        {
+          "text": "down",
+          "destination": {
+            "name": "down",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "down",
+      "text": "And then it's over. Everything settles back down into place. Both you and Katie land on your feet, shaken but not stirred (much like James Bond's martinis).\n\n'Wow,' Katie says. It takes a few moments for her to catch her breath, and then she just says 'Wow' again.\n\n[['Let's go fight crime!']]\n[['Can I sleep on your couch now?']]",
+      "links": [
+        {
+          "text": "'Let's go fight crime!'",
+          "destination": {
+            "name": "'Let's go fight crime!'",
+            "pid": 127
+          }
+        },
+        {
+          "text": "'Can I sleep on your couch now?'",
+          "destination": {
+            "name": "'Can I sleep on your couch now?'",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "'Let's go fight crime!'",
+      "text": "'That's the spirit,' Katie smiles.\n\n'We can be the coolest superhero duo ever,' you point out. 'Haywire and Kaos, staunch defenders of widows and orphans and kittens stuck in trees!'\n\n'Nah, I think it's better the other way round. Kaos & Haywire.'\n\n'How about //The Extraordinary Adventures of the Incredible Kaos and her Sexy Sidekick, Haywire//? Is //that// better?'\n\n'This isn't a comic book,' Katie retorts, but she's already laughing her head off.\n\n[[The Beginning|Menu]]\n",
+      "links": [
+        {
+          "text": "The Beginning",
+          "destination": {
+            "name": "Menu",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "'Can I sleep on your couch now?'",
+      "text": "Katie nods.\n\nOnce she's gone, you take a long, luxurious shower, and feel incredibly light and airy afterwards.\n\nThen you lie down on the couch, pull a tartan blanket over your chin, and promptly fall [[asleep.]]\n",
+      "links": [
+        {
+          "text": "asleep.",
+          "destination": {
+            "name": "asleep.",
+            "pid": 150
+          }
+        }
+      ]
+    },
+    {
+      "pid": 129,
+      "name": "attention.",
+      "text": "'Hey, it's Haywire!'\n\n'It is I,' you declare dramatically. 'And you won't believe what I've got up my sleeve. It's...'\n\n//[[...the End|Menu]]//",
+      "links": [
+        {
+          "text": "...the End",
+          "destination": {
+            "name": "Menu",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "typewriter",
+      "text": "\\<<widget typewriter>>\n\\\t<!-- Create a SPAN with an ID -->\n\\  <span id=\"typewriter\"></span>\n\\\t<!-- In SugarCube, arrays start at 0 -->\n\\  <<set _textArrayLength to 0>>\n\\\t<!-- Repeat every second -->\n\\  <<repeat 0.05s>>\n\\\t  <!-- Test if textArrayLength is greater than length of $args[0] -->\n\\\t  <<if _textArrayLength gte $args[0].length>>\n\\\t\t<<stop>>\n\\\t  <<else>>\n\\\t  <!-- Append the current position to the existing characters -->\n\\\t  <<append \"#typewriter\">>$args[0][_textArrayLength]<</append>>\n\\\t  <!-- Update the length -->\n\\\t  <<set _textArrayLength++>>\n\\\t  <</if>>\n\\   <</repeat>>\n\\<</widget>>",
+      "links": []
+    },
+    {
+      "pid": 131,
+      "name": "Breaking news: Chaos in Glasgow. A creature with supernatural powers tore apart a local pizzaria, before then killing 43 people and injuring over a hundred. The day was saved, however, by the intervention of a mysterious masked heroine known only as Kaos, who used her own telekinetic powers to subdue the creature.",
+      "text": "//Interviewer: So did you know what this... 'thing' was?\n\nKaos: Not a thing. [[A person.]] //\n",
+      "links": [
+        {
+          "text": "A person.",
+          "destination": {
+            "name": "A person.",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "A person.",
+      "text": "//Interviewer: Did you know them personally, then?\n\nKaos: Um, well, I knew who they were, because I'd sensed their psychic ability, you know... But I was too late to help her.\n\nInterviewer: [[Her?]]//\n",
+      "links": [
+        {
+          "text": "Her?",
+          "destination": {
+            "name": "Her?",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 133,
+      "name": "Her?",
+      "text": "//Kaos: Hayley. Hayley Weir. Oh, God, I shouldn't have hesitated. I should have gone right up -- right up to her and -- oh, God, I could have helped her. She didn't know how strong her powers were until something dark, some bad memory -- I can't. I just can't talk about it now. I just hope that she's at peace now. I don't want people to think she was some kind of evil monster or freak. Given one bad night, anything can happen, you -- never mind. I'm sorry. I'm so sorry this had to happen this way.\n\nInterviewer: Thank you so much for your time, Miss. That'll be all.\n//\n\n[[The End|Menu]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "Menu",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 134,
+      "name": "Credits",
+      "text": "I wish to thank Garmy for graciously volunteering to betatest this game.\n\nI can be contacted via email (peregrinewade@yahoo.co.uk) if you have feedback which //really// can't wait. (Yes, I know that the artwork in the sidebar doesn't always display if you're playing this offline. No, it doesn't affect the gameplay, as far as I know.)\n\nOh, and the cover art was created by Peregrine Wade (i.e. yours truly, the Author). Turns out you can get something decent done in Inkscape if you're willing to spend 15 minutes faffing about.\n\n[[Back to main menu|Menu]]",
+      "links": [
+        {
+          "text": "Back to main menu",
+          "destination": {
+            "name": "Menu",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 135,
+      "name": "Totally unnecessary author's note",
+      "text": "I wish to apologize in advance for parodying Burns' classic Scotch poem 'My Heart's In The Highlands'. It has always been a favorite of mine, and it's entirely Hayley's fault for not doing it justice. Also, some people may recognize a certain Scottish crime author in the restaurant scene. I swear I love the Scottish! Oh my God, is that Mel Gibson in blue face paint? Flee for your lives! Crivens![1]\n\nDespite the previous paragraph, //Haywire// does tackle some serious themes. It's certainly not family friendly. Some people might find it downright frightening in places. Some people might not. Who can say? Hayley Weir is a character who, despite her rather light-hearted approach to life, has plenty of shit to cope with. Don't we all?[2]\n\n[[Back to main menu|Menu]]\n\n//Footnotes://\n[1] I am aware that the Nac Mac Feegle are not representative of the Scottish people, and are in fact entirely fictional.\n[2] This may be a sweeping generalization. Or generalisation. Dammit, I'm British, I should know better.\n",
+      "links": [
+        {
+          "text": "Back to main menu",
+          "destination": {
+            "name": "Menu",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 136,
+      "name": "Leave Katie's apartment",
+      "text": "'Okay, let me down and I'll just leave the hell alone. I don't need your help, anyway,' you say with a sneer.\n\n'Fine,' Katie snaps. 'You're a real bitch, you know that?'\n\nBut you're already [[gone]] when she says that.",
+      "links": [
+        {
+          "text": "gone",
+          "destination": {
+            "name": "gone",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 137,
+      "name": "gone",
+      "text": "There's this nice [[pub]] around the corner, so you slip inside, turning invisible to the naked eye with the aid of your awesome mind-warping powers. And that's where you plan to spend the night, by the radiator in a comfy chair, breathing in alcoholic fumes that bear the venerable seal of old age.\n\nKatie can just go suck an egg.",
+      "links": [
+        {
+          "text": "pub",
+          "destination": {
+            "name": "pub",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 138,
+      "name": "-- and with a finger snap, you find yourself soaring backwards, through a window which swings open to let you outside into the cold rain --",
+      "text": "[[-- and you rise vertically alongside the high-rise apartment building, rain blinding you --]]",
+      "links": [
+        {
+          "text": "-- and you rise vertically alongside the high-rise apartment building, rain blinding you --",
+          "destination": {
+            "name": "-- and you rise vertically alongside the high-rise apartment building, rain blinding you --",
+            "pid": 139
+          }
+        }
+      ]
+    },
+    {
+      "pid": 139,
+      "name": "-- and you rise vertically alongside the high-rise apartment building, rain blinding you --",
+      "text": "--and then you feel Katie just simply let go. Whatever magic was holding you aloft, it's gone. Maybe she got tired. Maybe it was on purpose. But all that matters is that right now, you're falling.\n\nHold on a second. You're falling?\n\n//[[Fuck. Fuck. FUUUUUUUUUUUCK.]]//\n\n",
+      "links": [
+        {
+          "text": "Fuck. Fuck. FUUUUUUUUUUUCK.",
+          "destination": {
+            "name": "Fuck. Fuck. FUUUUUUUUUUUCK.",
+            "pid": 140
+          }
+        }
+      ]
+    },
+    {
+      "pid": 140,
+      "name": "Fuck. Fuck. FUUUUUUUUUUUCK.",
+      "text": "[[It's over.]] ",
+      "links": [
+        {
+          "text": "It's over.",
+          "destination": {
+            "name": "It's over.",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 141,
+      "name": "something else.",
+      "text": "The first thing you could think of, and only natural considering how rainy it's been of late.\n\nA big, motherfucking, biblical [[thunderbolt.]]",
+      "links": [
+        {
+          "text": "thunderbolt.",
+          "destination": {
+            "name": "thunderbolt.",
+            "pid": 142
+          }
+        }
+      ]
+    },
+    {
+      "pid": 142,
+      "name": "thunderbolt.",
+      "text": "In one split second, several things happen.\n\nFirst of all, you spot an eletrical outlet under the counter, and point one finger at it.\n\nAnd as the electricity suddenly flows gracefully through you, you amplify it a thousandfold, sending forth a lighting bolt from one outstretched hand and smack into the Killer's face.\n\nAnd then there is this incredibly, ludicrously vivid POW! that sounds like it was ripped right from the pages of a comic book.\n\nOne moment, psycho. Next moment, same psycho, minus head.\n\n[[The next day]]\n\n",
+      "links": [
+        {
+          "text": "The next day",
+          "destination": {
+            "name": "The next day",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 143,
+      "name": "satisfaction",
+      "text": "It feels good to know that you're more than just a fake. That you can actually //do// stuff, instead of just making people believe you did.\n\nNot that anyone will really know the difference. That's why it's so funny, after all.\n\nAnd maybe, from now on, when things go wrong, when people get hurt, you won't just turn yourself invisible and slip away, out of sight. Maybe, just maybe, you'll lend a helping hand.\n\nBecause you were always more than just Hayley Weir. You were always... Haywire.\n\nAnd now it's time to act like it.\n\n[[The End|Menu]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "Menu",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 144,
+      "name": "A year later...",
+      "text": "It was easy to trick the administration in believing you had actual credentials. Now you work as a therapist at a mental hospital, and you're pretty amazing at it.\n\nNobody suspects a thing. Sure, they sometimes marvel at how good you are at getting 'inside' someone's head, at finding the right words to say. Your success rate with patients is 100%. They all recover speedily, able to resume a normal life once more in just a few sessions.\n\nAnd, most of the time, the results last a [[lifetime.]]\n\n",
+      "links": [
+        {
+          "text": "lifetime.",
+          "destination": {
+            "name": "lifetime.",
+            "pid": 145
+          }
+        }
+      ]
+    },
+    {
+      "pid": 145,
+      "name": "lifetime.",
+      "text": "The city seems happier too. As your power grows, as you master it, you find yourself literally radiating positive thoughts. Crime rates drop dramatically.\n\nAnd all thanks to one certain [[Dr. Hayley Weir,]] healer of broken minds and mistress of mental disorders.\n",
+      "links": [
+        {
+          "text": "Dr. Hayley Weir,",
+          "destination": {
+            "name": "Dr. Hayley Weir,",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 146,
+      "name": "Dr. Hayley Weir,",
+      "text": "You have more friends now, genuine friends, whom you don't need to constantly manipulate to get them to like you. All in all, things are better than they've ever been.\n\nSometimes, of course, when there's a party, someone says 'Do one of those tricks you do so well, Hayley!' and that's when you pull out something from your sleeve and dazzle them all. And in that moment, you're no longer Dr. Hayley Weir.\n\nYou're Haywire.\n\n[[The End|Menu]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "Menu",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 147,
+      "name": "nightmare",
+      "text": "<<typewriter \"And now you see Lindsay scream as she suddenly realizes she's standing right next to a fallen body. The blood that soaked the carpet on that fateful night oozes once more from beneath her shoes. But because this is all inside your mind, she immediately knows who she's looking at. 'Oh, my God, this is what you meant when you said you'd had family once,' she gasps, now aware of your every thought, because this reality is shaped by them. And you just stay silent, because now it's all coming back to you, how you turned your own darkest fears into reality, how you didn't understand that you could make anyone do anything if you put your mind to it, how you didn't yet control that ability, still unaware how dangerous it could be, and how your mother saw the monsters you saw in dreams and couldn't cope with the reality you'd given them, and after that you couldn't come home again because in one horrible moment after it was all over, you realized that the monsters had been illusions, illusions made by you and you alone. No one could have coped with that guilt. But somehow, you did, and that cost you everything you had. After that night, you ran out into the night again, no longer scared because now you knew that the worst nightmare roaming out there that Hallow's Eve was yourself.\">>\n\n[[You've found it, Hayley. The truth you always feared.]]\n[[It's all a lie.|Run away from the memory]]",
+      "links": [
+        {
+          "text": "You've found it, Hayley. The truth you always feared.",
+          "destination": {
+            "name": "You've found it, Hayley. The truth you always feared.",
+            "pid": 106
+          }
+        },
+        {
+          "text": "It's all a lie.",
+          "destination": {
+            "name": "Run away from the memory",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 148,
+      "name": "What are you waiting for? Run.",
+      "text": "<<typewriter \"The next few seconds feel like an eternity as you take advantage of being free once more to drag yourself over the counter, landing on the floor with a painful THUD. Dizzy and disoriented, you wipe the blood from your eyes and then as you try to get up again, try desperately to run as fast as you can towards the door, towards salvation, you suddenly feel something smack the back of your head with a skull-splitting\">>\n\n[[THUMP|It's over.]]",
+      "links": [
+        {
+          "text": "THUMP",
+          "destination": {
+            "name": "It's over.",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 149,
+      "name": "Nope. You can't do this. It was a stupid idea. Just get up and walk away from this whole shitstorm.",
+      "text": "<<typewriter \"But it's already too late to walk away. You've lost too much blood, and all those years of eating junk food haven't made you the world's fastest runner. You can barely get up as it is, one hand desperately trying to catch onto the edge of the counter, the other wiping away the blood that keeps getting in your eyes. After all those years of hiding and lying, here's one situation you can't trick you way out of, no matter how hard you try. Face it: you've lost, Hayley Weir, you've lost.\">>\n\n[[Well, at least you tried. Didn't you?|It's over.]]",
+      "links": [
+        {
+          "text": "Well, at least you tried. Didn't you?",
+          "destination": {
+            "name": "It's over.",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 150,
+      "name": "asleep.",
+      "text": "In the morning, you thank Katie for letting you stay. 'Sure,' she replies, 'you can come back anytime.'\n\n'See you soon,' you say as you leave.\n\n'Seeya, Haywire.'\n\nAnd you stride out through the city and towards the nearest park. Standing on a bench, you wave at bystanders, drawing their [[attention.]]",
+      "links": [
+        {
+          "text": "attention.",
+          "destination": {
+            "name": "attention.",
+            "pid": 129
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Go to the security check",
+      "text": "[img[http://puu.sh/YE10]] <<set $security = true>>\\n\\nMaybe your friend is waiting for you at security check? You have a long while before you have to catch the plane but he could have gone ahead after getting some food. He probably didn't expect you to stay in the foyer in the exact same spot he left you, even if he did say \"wait here\".\\n\\nYou walk between various groups of people heading to the security check. One man bumps against your shoulder and hastily apologises, or sounds like he is apologising. You wave him away and continue walking.\\n\\nAnd your friend isn't at the security check. Where is he, really?\\n\\n<<choice 'Check the toilets'>>\\n<<choice 'Go through security'>>\\n<<if $entrance == true>>\\n<<choice 'Go back to the terminal entrance'>>\\n<<else>>\\n<<choice 'Go to the terminal entrance'>>\\n<<endif>>\\n<<if $food_court == true>>\\n<<choice 'Go back to the food court'>>\\n<<else>>\\n<<choice 'Go to the food court'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 2,
+      "name": "Run away",
+      "text": "[img[http://puu.sh/YFLP]]\\n\\nThe guards know what you're about to do before you even decide. They pin you down and beat you for good measure.\\n\\nYou're churned out by the court system in a quick trial and are thrown into jail with a life sentence.",
+      "links": []
+    },
+    {
+      "pid": 3,
+      "name": "Buy a drink",
+      "text": "[img[http://puu.sh/YFuk]] <<set $drink = $drink + 1>><<set $drink1 = true>>\\n\\nWaiting around makes you thirsty. The alluring colours of the drinks in the vending machine is enough to convince you to delay your search.\\n\\nYou fumble around in your pocket and pull out what you hope is enough change for a drink. Thankfully, the buttons are in English. With a small clunk, a drink rolls out.\\n\\nYou crack it open and take a drink.\\n\\nMan, that's good.\\n\\n<<choice 'Buy another'>>\\n<<if $food_court == true>>\\n<<choice 'Go back to the food court'>>\\n<<else>>\\n<<choice 'Go to the food court'>>\\n<<endif>>\\n<<if $security == true>>\\n<<choice 'Go back to the security check'>>\\n<<else>>\\n<<choice 'Go to the security check'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 4,
+      "name": "Go back to the food court",
+      "text": "[img[http://puu.sh/YCtD]]\\n\\nYou've established that your friend isn't at the food court, but that doesn't stop the conglomeration of scents reaching for you and dragging you back.\\n\\nYou rest your bags against a nearby pillar and take in the roar of people in the food court.\\n\\n<<if ($asian == true) or ($donalds == true)>>\\n<<choice 'Get more food'>>\\n<<else>>\\n<<choice 'Get a meal'>>\\n<<endif>>\\n<<if $entrance == true>>\\n<<choice 'Go back to the terminal entrance'>>\\n<<else>>\\n<<choice 'Go to the terminal entrance'>>\\n<<endif>>\\n<<if $security == true>>\\n<<choice 'Go back to the security check'>>\\n<<else>>\\n<<choice 'Go to the security check'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "Author",
+      "text": "[img[http://puu.sh/17aMb]]\\n----\\n\\nShaye is an online entity who whines, edits and experiments with Twine. She enjoys bad visual novels and one day hopes to write flavour text for sex toys.\\n\\n[[Twitter|https://twitter.com/shadocchi]]\\n[[Blog|http://insistonplot.tumblr.com/]]",
+      "links": []
+    },
+    {
+      "pid": 6,
+      "name": "Get a meal",
+      "text": "[img[http://puu.sh/YCNh]]\\n\\nTo your right is a [[Starbucks]] with a line reaching around the corner. Next to that is [[McDonalds]], which is responsible for most of the heavy fried smell hanging in the food court.\\n\\nIn front of you, and sprawling on for most of the food court, is a selection of [[asian food]]. You can see the bright orange of some butter chicken amongst a selection of sushi and spring rolls.\\n\\n<<if $entrance == true>>\\n<<choice 'Go back to the terminal entrance'>>\\n<<else>>\\n<<choice 'Go to the terminal entrance'>>\\n<<endif>>\\n<<if $security == true>>\\n<<choice 'Go back to the security check'>>\\n<<else>>\\n<<choice 'Go to the security check'>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "Starbucks",
+          "destination": {
+            "name": "Starbucks",
+            "pid": 24
+          }
+        },
+        {
+          "text": "McDonalds",
+          "destination": {
+            "name": "McDonalds",
+            "pid": 35
+          }
+        },
+        {
+          "text": "asian food",
+          "destination": {
+            "name": "asian food",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Run to the plane",
+      "text": "[img[http://puu.sh/YFso]]\\n\\nThrough the haze of the drinks accelerating your movements, you manage to pull yourself away from violence and drop the blade.\\n\\nYou grip your bags and run past groups of people in mid-step, searching for the gate that leads to the flight home. You can feel your pulse slowing despite your ragged breaths but what you want \u2014 hell, what you //need// \u2014 is in clear sight now.\\n\\n''DEPARTURES''\\n<html><blink>HOME 175 BOARDING</blink></html>\\n\\nYou slip past the last of the security guards and through the gate just as the effects of the drinks wear off. You stagger, almost falling, but catch yourelf on the wall. The throbbing in your head dissipates and you stand as you wipe the cold sweat from your neck.\\n\\nAfter a while, the plane departs and you're able to go home, friendless but safe.\\n\\n''The End''",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "Buy another drink",
+      "text": "[img[http://puu.sh/YFuk]]\\n\\nYou've already had <<print $drink>>, but what the hell, these foreign drinks are pretty good. You nudge a few coins into the machine and out pops a fresh can.\\n<<set $drink = $drink + 1>>\\n//Shhhhlp//\\n\\nDamn that's good.\\n\\n<<if $drink lt 2>>\\n<<choice 'Buy another'>>\\n<<else>>\\n<<if $drink lt 3>>\\n<<choice 'One more?'>>\\n<<else>>\\n<<choice 'One last drink'>>\\n<<endif>>\\n<<endif>>\\n<<if $food_court == true>>\\n<<choice 'Go back to the food court'>>\\n<<else>>\\n<<choice 'Go to the food court'>>\\n<<endif>>\\n<<if $security == true>>\\n<<choice 'Go back to the security check'>>\\n<<else>>\\n<<choice 'Go to the security check'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "Try to explain your situation",
+      "text": "[img[http://puu.sh/YYXP]]\\n\\nYou're well aware of the language barrier but you try to explain yourself anyway. You tell the guards that you don't know where those things came from and it's probably all a mistake. You ask for a translator but they seem preoccupied with what to do with you.\\n\\nIt's pretty clear where this all is heading.\\n\\n<<choice 'Wait'>>\\n<<choice 'Run back to the foyer'>>",
+      "links": []
+    },
+    {
+      "pid": 10,
+      "name": "Start",
+      "text": "[img[http://puu.sh/YC53]]  <<set $food_court = false>> <<set $seurity = false>> <<set $entrance = false>> <<set $coffee = false>><<set $drink = 0>><<set $dive = false>><<set $asian = false>><<set $donalds = false>><<set $toilet = false>>\\n\\nYou're standing in the airport foyer, bags in hand. People rush around you, dragging their kids to the security check, looking suspicious with their hands in their pockets or running through the place like it's an amusement park.\\n\\nThe friend and guide who was supposed to translate for you left to get food but hasn't come back. You try to use your phrasebook but when you approach security guards, they can't understand you. When you approach everyone else, they look at you strangely and hurry away. It's not like you're in a rush \u2014 your flight is scheduled to leave in two hours \u2014 but being alone isn't that great.\\n\\nYou feel like a useless sign that nobody can read.\\n\\n<<choice 'Go to the security check'>>\\n<<choice 'Go to the terminal entrance'>>\\n<<choice 'Go to the food court'>>",
+      "links": []
+    },
+    {
+      "pid": 11,
+      "name": "Stylesheet",
+      "text": ".passage .title { display: none }",
+      "links": []
+    },
+    {
+      "pid": 12,
+      "name": "Go to the terminal entrance",
+      "text": "[img[http://puu.sh/YFso]] <<set $entrance = true>>\\n\\nThe airport entrance is a rush of cars and people. Taxis pull into the path to the airport while families pour out and run to catch their flight. Passersby complain about the parking prices or how the busses were late. There's a dull drone somewhere behind you \u2014 presumably the planes.\\n\\nThere are a few vending machines around but your friend doesn't seem to be anywhere.\\n\\n<<choice 'Buy a drink'>>\\n<<if $security == true>>\\n<<choice 'Go back to the security check'>>\\n<<else>>\\n<<choice 'Go to the security check'>>\\n<<endif>>\\n<<if $food_court == true>>\\n<<choice 'Go back to the food court'>>\\n<<else>>\\n<<choice 'Go to the food court'>>\\n<<endif>>\\n",
+      "links": []
+    },
+    {
+      "pid": 13,
+      "name": "Run back to the foyer",
+      "text": "[img[http://puu.sh/YZ4a]]\\n\\nYou get a sudden spark of inspiration and run back to the foyer, hoping to whatever diety this country worships that you can solve all your problems on one small possibility.\\n\\nThe guards run after you, but you're able to stay just out of reach. You hope they don't have guns. Or at least choose not to shoot.\\n\\nThe foyer, as always, is full of people and it's a moment before you can take it all in. The guards are right behind you though, so you need to act quick.\\n\\n<<choice 'Tackle the man who bumped into you'>>\\n<<choice 'Tackle the man who looks like your friend'>>",
+      "links": []
+    },
+    {
+      "pid": 14,
+      "name": "Go back to the terminal entrance",
+      "text": "[img[http://puu.sh/YFso]]\\n\\nYou stand at the airport entrance, vending machines to your right, carpark to your left and a sprawling road packed with cars before you. People hurring into the airport are as abundant as ever.\\n\\n<<if $drink == 0>>\\n<<choice 'Buy a drink'>>\\n<<else>>\\n<<choice 'Buy another drink'>>\\n<<endif>>\\n<<if $food_court == true>>\\n<<choice 'Go back to the food court'>>\\n<<else>>\\n<<choice 'Go to the food court'>>\\n<<endif>>\\n<<if $security == true>>\\n<<choice 'Go back to the security check'>>\\n<<else>>\\n<<choice 'Go to the security check'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 15,
+      "name": "Buy another",
+      "text": "[img[http://puu.sh/YFuk]] <<set $drink = $drink + 1>><<set $drink2 = true>>\\n\\nActually, that drink was so good, you can't help but buy another. Was it the sugar content? The delicate mix of sweetness with the bitter aftertaste?\\n\\nWhatever it is, you gulp down a second can just as fast.\\n\\n<<choice 'One more?'>>\\n<<if $food_court == true>>\\n<<choice 'Go back to the food court'>>\\n<<else>>\\n<<choice 'Go to the food court'>>\\n<<endif>>\\n<<if $security == true>>\\n<<choice 'Go back to the security check'>>\\n<<else>>\\n<<choice 'Go to the security check'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 16,
+      "name": "Go through security",
+      "text": "[img[http://puu.sh/YE10]]\\n\\nHe could be waiting over the other side. But gee, he could have just come back to get you. Look at all the trouble you're going through!\\n\\nYou place your bags on the conveyor belt and walk through the metal detector. You don't recall having any suspicious metal objects on you, and you were very careful to go through the country's custom laws before you arrived.\\n\\n''BEEP BEEP BEEP''\\n\\nThe metal detector sounds as you walk through. The security guard to your right speaks up, probably telling you to stop for a scan.\\n\\n<<choice 'Stop to be scanned'>>\\n<<choice 'Run'>>",
+      "links": []
+    },
+    {
+      "pid": 17,
+      "name": "Stop to be scanned",
+      "text": "[img[http://puu.sh/YYNl]]\\n\\nYou have nothing to hide, so you stop so the guard can scan you. He passes the device over you and it beeps at your pocket.\\n\\nMust have forgotten something. Or maybe it's triggering on your jacket zipper?\\n\\nThe security guard raises his voice slightly and motions to the side, pointing at a desk. You put your hands on it as he searches your pocket and produces a switchblade and packet of white powder.\\n\\nHow in the...\\n\\nThe guard procedes to yell at you, but the volume of his voice doesn't help you understand any better. After a moment of inaction, he calls the other guards.\\n\\n<<choice 'Run away'>>\\n<<choice 'Fight'>>\\n<<choice 'Try to explain your situation'>>",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "One more?",
+      "text": "[img[http://puu.sh/YFuk]] <<set $drink = $drink + 1>><<set $drink3 = true>>\\n\\nReally, what's in this? You feel kind of addicted. And you're not even the addictive type.\\n\\nYou buy another one and drink it in one go. You crush the can against your head and toss it in the bin.\\n\\n<<choice 'One last drink'>>\\n<<if $food_court == true>>\\n<<choice 'Go back to the food court'>>\\n<<else>>\\n<<choice 'Go to the food court'>>\\n<<endif>>\\n<<if $security == true>>\\n<<choice 'Go back to the security check'>>\\n<<else>>\\n<<choice 'Go to the security check'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 19,
+      "name": "Run",
+      "text": "[img[http://puu.sh/YFLP]]\\n\\nYou're in a country that you think once sentenced a foreigner to death over reading a magazine on a bus. If you stop now, you're just handing yourself over.\\n\\nYou run like someone who just downed three shots of coffee.\\n\\nUnfortunately, your panicked face alerts security to your plans and you're pinned to the spot in a manner of seconds. They run a scanner over you and detect a knife in your pocket, along with a small bag of white powder.\\n\\nHoo boy.\\n\\nYou never get to find out how those came to be in your jacket pocket, but you get plenty of time to think about it in prison.",
+      "links": []
+    },
+    {
+      "pid": 20,
+      "name": "Check the toilets again",
+      "text": "[img[http://puu.sh/YFVc]]\\n\\nYou make your way into the toilets again, pushing past people forming a line outside the stalls. One glance at the line shows your friend is nowhere to be seen.\\n\\nYou yell his name and are met with murmurs and disapproving looks, but no answer. In the stall closest to you, someone farts, long, loud and wet. A few people back away from the smell.\\n\\n<<choice 'Go through security'>>\\n<<if $entrance == true>>\\n<<choice 'Go back to the terminal entrance'>>\\n<<else>>\\n<<choice 'Go to the terminal entrance'>>\\n<<endif>>\\n<<if $food_court == true>>\\n<<choice 'Go back to the food court'>>\\n<<else>>\\n<<choice 'Go to the food court'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 21,
+      "name": "Search for your friend",
+      "text": "[img[http://puu.sh/YFLP]]\\n\\nWhile the last parts of your mind untouched by the accelerating power of the drinks demands you to escape home, there is a small part of you that thinks this can all be rectified by finding your friend. Now that the world has slowed, maybe you can find him in the crowd and demand he explain where the hell he has been.\\n\\nYou start from the foyer again and search the three main hubs. Each place yields no results and your search ends back at the security check.\\n\\nYour pulse thumps out three large beats before it starts to slow and the people around you speed up. The guard that was yelling at you before looks around in confusion but turns and spots you. He shouts something into the receiver on his shoulder. With a violent cracking noise, your legs give way.\\n\\n''GHAAAUGH''\\n\\nYou clutch at your shins but you can't hold in the pain. A trickle of blood coats your hands as you realise you've been taken down with rubber bullets. After the guards beat you into submission, you're dragged through the legal system and sentenced to ten years in jail for terrorism.\\n\\nHell, you never get to know what happened to your friend.",
+      "links": []
+    },
+    {
+      "pid": 22,
+      "name": "dive into the crowd",
+      "text": "[img[http://puu.sh/YDWn]] <<set $dive = true>>\\n\\nYou're not exactly adverse to crowds but there sure are a lot of people to wade through and you can't even communicate with most of them. You keep an eye out for your friend while edging around tables and stepping over discarded wrappers. It's a mess of food, conversation and people.\\n\\nAfter a thorough search, you admit that your friend is nowhere in sight. He's probably somewhere else.\\n\\n<<if $security == true>>\\n<<choice 'Go back to the security check'>>\\n<<else>>\\n<<choice 'Go to the security check'>>\\n<<endif>>\\n<<if $entrance == true>>\\n<<choice 'Go back to the terminal entrance'>>\\n<<else>>\\n<<choice 'Go to the terminal entrance'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 23,
+      "name": "Attributions",
+      "text": "[img[http://puu.sh/17aIH]]\\n----\\n\\n''Special Thanks:''\\n\\nEven in Twine, I need help coding. Thanks to the following people for helping me fix small issues/helped with beta testing:\\n\\nAdam Rademacher [[@Offwhitefox|https://twitter.com/OffWhiteFox]]\\n\\nThyroid [[Tumblr|http://frightful.tumblr.com/]]\\n\\nVicky Bit [[Website|vickybit.com]]\\n\\n''Attributions:''\\n\\nThe images used in this game are available from [[The Noun Project|www.thenounproject.com/]]. Those that are not attribution-free or in the public domain are credited below.\\n\\n//Chinese Takeout Box//\\nAnna Wang, from The Noun Project\\n\\n//Hamburger//\\nPei-Wen Kwang, from The Noun Project\\n\\n//Cofee//\\nCedric Cummings, from The Noun Project\\n\\n//Team//\\nUmbra2 Design, from The Noun Project\\n\\n//Vending Machine//\\nSoner Ertim, from The Noun Project\\n\\n//Dancer//\\nSonkarlay Vaye, from The Noun Project\\n\\n//Hit//\\nAndrey Gerasimov, from The Noun Project\\n\\n//Information//\\nSven Hofmann, from The Noun Project\\n\\n//Bug//\\nThe Noun Project\\n\\nAnd a thank you to the people behind [[Twine|http://gimcrackd.com/etc/src/]] for creating an IF program so simple that I could make something like this without bashing my head with a coding book.",
+      "links": []
+    },
+    {
+      "pid": 24,
+      "name": "Starbucks",
+      "text": "[img[http://puu.sh/YCRy]] <<set $coffee = $coffee + 1>>\\n\\nDespite the line, you head over to Starbucks to get some much-needed coffee. It takes five minutes to get to the counter and you signal your order with wild hand gestures. Of course, every country speaks coffee and you walk away with a large cup of exactly what you ordered.\\n\\nNow you're properly equipped to <<choice 'dive into the crowd'>>.",
+      "links": []
+    },
+    {
+      "pid": 25,
+      "name": "Tackle the man who bumped into you",
+      "text": "[img[http://puu.sh/YZar]]\\n\\nEven though it was just in-passing, you recognise the man that bumped into you on your way to the security check. When you think about it, he could have easily slipped the suspicious items into your pocket. You mentally slap yourself for not noticing sooner.\\n\\nYour desperate situation and general awkwardness when it comes to confrontation makes you tackle the man and bring him crashing to the floor. He squeals and squirms in an effort to get you off. You hold strong. The guards arrive to find you sitting on top of the bucking man.\\n\\nYour friend, who surfaced from somewhere in the direction of the food court, hurries over when he sees you. You get him to relay your situation to the guards and after much explanation, apologies and paperwork, you're free to catch your plane home.\\n\\nYou decide to never go on holidays again.\\n\\n''The End''",
+      "links": []
+    },
+    {
+      "pid": 26,
+      "name": "StoryTitle",
+      "text": "[img[http://puu.sh/1781O]]",
+      "links": []
+    },
+    {
+      "pid": 27,
+      "name": "Wait",
+      "text": "[img[http://puu.sh/YFLP]]\\n\\nAs you predicted, the guards pay little attention to you and you're dragged through the legal system. You never get to know what happened to your friend\u2014or your family for that matter\u2014 because now you are in jail.",
+      "links": []
+    },
+    {
+      "pid": 28,
+      "name": "Kill the guards",
+      "text": "[img[http://puu.sh/YFLP]]\\n\\nYou make swift use of your acceleration and, even with a small blade, manage to take down every guard in sight before the effects of the drinks wear off. As your pulse slows and people begin to speed up, the guards topple over and gurgle out a stream of blood.\\n\\nPeople quickly notice and you take advantage of the confusion to escape. Unfortunately, in all this excitement, you forget you're holding a bloodied switchblade and guards from other sections of the airport rush to take you down.\\n\\nThey don't hesitate to shoot you on the spot.",
+      "links": []
+    },
+    {
+      "pid": 29,
+      "name": "StoryMenu",
+      "text": "[[Extra Info]]",
+      "links": [
+        {
+          "text": "Extra Info",
+          "destination": {
+            "name": "Extra Info",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Get more food",
+      "text": "[img[http://puu.sh/YCNh]]\\n\\nYour friend handled all the money since those notes with strange faces on them made you feel a bit uneasy, so you don't have much on you besides loose coins. It was enough to get one decent thing from the food court, but you don't think you could buy another without the cashier pointlessly explaining how much money you need, or shouting for security to behead you. You're never sure what people are saying here.\\n\\n<<if $entrance == true>>\\n<<choice 'Go back to the terminal entrance'>>\\n<<else>>\\n<<choice 'Go to the terminal entrance'>>\\n<<endif>>\\n<<if $security == true>>\\n<<choice 'Go back to the security check'>>\\n<<else>>\\n<<choice 'Go to the security check'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 31,
+      "name": "Known bugs",
+      "text": "[img[http://puu.sh/18bqW]]\\n----\\n\\nAs this game has nine different variables over three in-game locations and I'm no coder, the game has a few issues or infinite loops.\\n\\n*The Restart Story button at the top of the page doesn't work; you will have to refresh the page to play again (this is a Twine bug)\\n\\n*If you click a particular choice more than once (such as \"go back to the food court\"), it will create an infinite loop. There is no way out of this and, unfortunately, there are many choices like that.",
+      "links": []
+    },
+    {
+      "pid": 32,
+      "name": "get a meal",
+      "text": "[img[http://puu.sh/YCNh]]\\n\\nTo your right is a [[Starbucks]] with a line reaching around the corner. Next to that is [[McDonalds]], which is responsible for most of the heavy fried smell hanging in the food court.\\n\\nIn front of you, and sprawling on for most of the food court, is a selection of [[asian food]]. You can see the bright orange of some butter chicken amongst a selection of sushi and spring rolls.\\n\\nOf course, you could skip the queues and just <<choice 'dive into the crowd'>> to search for your friend.",
+      "links": [
+        {
+          "text": "Starbucks",
+          "destination": {
+            "name": "Starbucks",
+            "pid": 24
+          }
+        },
+        {
+          "text": "McDonalds",
+          "destination": {
+            "name": "McDonalds",
+            "pid": 35
+          }
+        },
+        {
+          "text": "asian food",
+          "destination": {
+            "name": "asian food",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Go to the food court",
+      "text": "[img[http://puu.sh/YCtD]] <<set $food_court = true>>\\n\\nThe food court is even louder than the foyer. The fragrant mix of friend chicken, pastries, exotic sauces and coffe is near overwhelming.\\n\\nA quick scan of the court is like playing //Where's Wally//. While you're sure you can spot your friend in a crowd, you have to admit that the sheer number of people makes them all look like one large blob. After five minutes, you admit defeat: you can't find your friend without diving into the crowd.\\n\\nYou could use the time to <<choice 'get a meal'>> between flights or just <<choice 'dive into the crowd'>> and get this over with.",
+      "links": []
+    },
+    {
+      "pid": 34,
+      "name": "asian food",
+      "text": "[img[http://puu.sh/YCPI]]<<set $asian = true>>\\n\\nThe selection of asian cuisine is possibly the only substantial food here. You're hungry enough to devour one of everything but decide to limit yourself to some beef korma since you're not actually here for a meal.\\n<<if $dive == true>>\\n<<display>>\\nAll that's left is for you to <<choice 'dive into the crowd'>>.\\n<<else>>\\n<<if $entrance == true>>\\n<<choice 'Go back to the terminal entrance'>>\\n<<else>>\\n<<choice 'Go to the terminal entrance'>>\\n<<endif>>\\n<<if $security == true>>\\n<<choice 'Go back to the security check'>>\\n<<else>>\\n<<choice 'Go to the security check'>>\\n<<endif>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 35,
+      "name": "McDonalds",
+      "text": "[img[http://puu.sh/YCRH]]<<set $donalds = true>>\\n\\nYou give in to the greasy call of a burger and chips with a coke. There's nothing like the heart-stopping goodness of a Big Mac to get you through a long day.\\n\\nNow that your hands and stomach are full, you can <<choice 'dive into the crowd'>>.",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "Fight",
+      "text": "[img[http://puu.sh/189H3]]\\n<<if $drink gte 3>>\\n<<display \"Victory\">>\\n<<else>>\\n\\nYou're in a country that you think once sentenced a foreigner to death over reading a magazine on a bus. If you stop now, you're just handing yourself over.\\n\\nYou make a desperate grab for the switchblade, the only real weapon in sight. The knife flicks out with ease and you brandish it at the guard, yelling \"stay back\" in imitation of his language.\\n\\nThe guard takes a few steps back and it appears you have something to bargain with until some kind of explosion sounds from behind you and a force pushes your head forward. The switchblade clatters across the tiles as you fall.\\n\\nYou barely feel how cold the floor is before you close your eyes and submit to death.\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Victory",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Go back to the security check",
+      "text": "[img[http://puu.sh/YE10]]\\n\\nYou haul your luggage back to the security check and are met with a few curious glances. When you pull out your phrasebook, a number of people make soft sounds of realisation and their look changes to pity.\\n\\nYour friend wasn't here before and he sure isn't here now.\\n\\n<<choice 'Go through security'>>\\n<<if $toilet == true>>\\n<<choice 'Check the toilets again'>>\\n<<else>>\\n<<choice 'Check the toilets'>>\\n<<endif>>\\n<<if $entrance == true>>\\n<<choice 'Go back to the terminal entrance'>>\\n<<else>>\\n<<choice 'Go to the terminal entrance'>>\\n<<endif>>\\n<<if $food_court == true>>\\n<<choice 'Go back to the food court'>>\\n<<else>>\\n<<choice 'Go to the food court'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 38,
+      "name": "Check the toilets",
+      "text": "[img[http://puu.sh/YFVc]]<<set $toilet = true>>\\n\\nYou barge into the nearby toilets, a little frustrated that your friend hasn't spared you the thought of coming back. You yell his name a few times and, waiting long enough with no reply, decide that he isn't here either.\\n\\nBummer.\\n\\n<<choice 'Go through security'>>\\n<<if $food_court == true>>\\n<<choice 'Go back to the food court'>>\\n<<else>>\\n<<choice 'Go to the food court'>>\\n<<endif>>\\n<<if $entrance == true>>\\n<<choice 'Go back to the terminal entrance'>>\\n<<else>>\\n<<choice 'Go to the terminal entrance'>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 39,
+      "name": "Walkthrough",
+      "text": "[img[http://puu.sh/17aJK]]\\n----\\n\\nReaching the end of this game is more navigating your way through a maze of choices rather than solving puzzles using items or making choices in a correct order.\\n\\nTo finish this game with the least choices, choose:\\n\\n>Go to the security check\\n>Go through security\\n>Stop to be scanned\\n>Try to explain your situation\\n>Run back to the foyer\\n>Tackle the man who bumped into you\\n\\nTo finish this game in the most interesting way, choose:\\n\\n>Go to the terminal entrance\\n>Buy a drink\\n>Buy another\\n>One more?\\n>Go to the security check\\n>Go through security\\n>Stop to be scanned\\n>Fight\\n>Run to the plane\\n\\nThis game includes 6 dead ends and 3 alternatives to the end. Dead ends are marked with the skull icon while ends are marked with ''The End'' at the bottom. Each are as valid as the other, but tackling the man who bumped into you is the one I planned from the start.",
+      "links": []
+    },
+    {
+      "pid": 40,
+      "name": "Extra Info",
+      "text": "[img[http://puu.sh/17aXe]]\\n----\\n\\n[[Walkthrough]]\\n[[Known bugs]]\\n[[About the Author|Author]]\\n[[Attributions]]\\n",
+      "links": [
+        {
+          "text": "Walkthrough",
+          "destination": {
+            "name": "Walkthrough",
+            "pid": 39
+          }
+        },
+        {
+          "text": "Known bugs",
+          "destination": {
+            "name": "Known bugs",
+            "pid": 31
+          }
+        },
+        {
+          "text": "About the Author",
+          "destination": {
+            "name": "Author",
+            "pid": 5
+          }
+        },
+        {
+          "text": "Attributions",
+          "destination": {
+            "name": "Attributions",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Tackle the man who looks like your friend",
+      "text": "[img[http://puu.sh/YZar]]\\n\\nIf anyone can help you with this situation, it's your friend. You decide that the man blowing on some noodles while walking into the foyer looks remarkably like him.\\n\\nYou tackle the man and send his noodles flying.\\n\\nAs you scramble on the floor, your actual friend walks over and politely asks what the hell you're doing. You gibber something about the law after you and it all being a mistake and please explain to these men that you are not a drug lord or a trafficker and you just want to go home and never leave again you are very sorry.\\n\\nAfter much explaining, apologising, paperwork and a brief court process, you are free to go home. After 25 years, your daughter brings out a photo of your holiday and you yell something about how she should always go with her friends if they're getting food. Then you send her to her room.\\n\\n''The End''",
+      "links": []
+    },
+    {
+      "pid": 42,
+      "name": "One last drink",
+      "text": "[img[http://puu.sh/YFLP]]\\n\\nYou buy one more can and check the label. The writing is completely foreign, but there doesn't seem to be any warning labels or alcohol content indicator. You pin it down to one of those exotic drinks that hook you with how sweet it is.\\n\\nAnd then you realise you've had more cans of this thing in the span of five minutes than any human should. You feel your heart flutter and you're about to take your pulse when you collapse.\\n\\nWhen the ambulence arrives, you barely hear them say that you've ingested 8 standard cups of cofee and enough sugar to make you diabetic.\\n\\nAfter your death, the company that produces the drink is shut down. It's a shame you couldn't see it though.",
+      "links": []
+    },
+    {
+      "pid": 43,
+      "name": "Victory",
+      "text": "\\nThe world slows and you feel something \u2014 a power awakening? \u2014 spread from the back of your head. Sounds begin to draw out, almost into silence, as the guard moves in slow motion. Your pulse beats hard against your skull, your vision blurs and clears in time with it. Your grab for the switchblade is unimpeded by sound, sight or even time itself.\\n\\nThe blade springs out with a small delay and you realise that the <<print $drink>> drinks you had at the terminal entrance might be kicking in, accelerating your actions. You figure you only have a few minutes to do something in this state before your body burns away all the sugar and caffeine.\\n\\n<<choice 'Kill the guards'>>\\n<<choice 'Search for your friend'>>\\n<<choice 'Run to the plane'>>",
+      "links": []
+    }
+  ]
+}

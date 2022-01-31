@@ -1,0 +1,378 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Epigraph",
+      "text": "[[Who made thee a prince and a judge over us?\n*-Exodus chapter 2 verse 14, KJV*|Tutorial]]\n\n(text-style:\"subscript\")[[[About]]]",
+      "links": [
+        {
+          "text": "About",
+          "destination": {
+            "name": "About",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Guidelines",
+      "text": "<ol><li>Censor anything that might harm the people.</li>\n<li>Censor anything that the people shouldn't know.</li>\n<li>Censor anything that might embarrass the Agency.</li>\n<li>Do not censor too much.</li>\n<li>Do not make the Agency look like it has something to hide.</li></ol>\n[[It takes months to train someone to apply these rules properly.|Report on the Action at Augustville, VA]]",
+      "links": [
+        {
+          "text": "It takes months to train someone to apply these rules properly.",
+          "destination": {
+            "name": "Report on the Action at Augustville, VA",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Report on the Action at Augustville, VA",
+      "text": "Railing against the thirty-year rule is a standard time-passing exercise amongst the Agency higher-ups.\n\n**Report on the Action at <span class=\"censored\">|Place>[Augustville, VA]</span>**\n**Declassification date: |Date>[Jan 17 2047]**(click:?Date)[(replace:?Date)[three days from now]]\n14:45 2017/01/10: CONDOR internet surveillance flagged a three-sigma increase in extremist searches from <span class=\"censored\">|Place>[Augustville, VA].  |Adam>[Lt. Adam Greenberg] was assigned to investigate and monitor the threat.\n10:13 2017/1/11: |Adam>[Lt. Greenberg] and his team traced the searches to |Place>[William Webb Ellis High School].  The principal and staff were notified and local police placed on high alert.\n18:49 2017/1/11: School technicians further traced the searches to a particular computer and named the student using it at the time.  Local police arrested |Corinne>[Corinne Johnstone, 17,] in an armed raid.\n20:10 2017/1/11: |Corinne>[Johnstone] was |Released>[released] after claiming that she was researching extremism for a term paper.  Evidence included |Released>[a draft of said paper and the written assignment].</span>\n*Recommendation:* Suppress.  Embarassment of the Agency is unacceptable, especially given that the Krull case is coming up for declassification.\n(click:?Place)[(replace:?Place)[CENSORED] (set: $Doc1c1 to 1)](click:?Adam)[(replace:?Adam)[CENSORED] (set:$Doc1c2 to 1)](click:?Corinne)[(replace:?Corinne)[CENSORED] (set: $Doc1c3 to 1)](click:?Released)[(replace:?Released)[CENSORED] (set: $Doc1c4 to 1)]\n[[Finished.|Feedback: Augustville]]",
+      "links": [
+        {
+          "text": "Finished.",
+          "destination": {
+            "name": "Feedback: Augustville",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "A Brief Summary of the CONDOR System",
+      "text": "**A Brief Summary of the CONDOR System**\n**Declassification date: Jan 18 2047**\n<span class=\"censored\">Chief designers: John Marsden, Belinda Zhuang, Alexander Krull.\nPurpose: Automated country-wide monitoring of internet usage to locate potential security risks.\nMethods: Internet service providers (ISPs) are bugged, usually |Consent>[with their consent].  All traffic is copied to Agency supercomputers, where keyword filtering and trend analysis are used to find abnormalities.  Humans then determine whether these are dangerous.  |Storage>[Data is stored for up to six months after analysis.]\nSuccesses: Eight hundred abnormalities a year on average, leading to |Arrests>[seventy interventions and two convictions.]\nTime in use: |Time>[two years].</span>\nExpected future lifespan: fifteen years.\n*Recommendation:* Release fairly openly.  CONDOR was decomissioned fifteen years ago as planned.  There is no need to censor the names of the designers as the existence of CONDOR was never classified.\n(click:?Consent)[(replace:?Consent)[CENSORED] (set: $Doc2c1 to 1)](click:?Storage)[(replace:?Storage)[CENSORED] (set:$Doc2c2 to 1)](click:?Arrests)[(replace:?Arrests)[CENSORED] (set: $Doc2c3 to 1)](click:?Time)[(replace:?Time)[CENSORED] (set: $Doc2c4 to 1)]\n[[Finished.|Feedback: CONDOR]]",
+      "links": [
+        {
+          "text": "Finished.",
+          "destination": {
+            "name": "Feedback: CONDOR",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "The JFK Incident: A Case Study",
+      "text": "**The JFK Incident: A Case Study**\n**Declassification date: Jan 19 2047**\n<span class=\"censored\">On the 3rd of November 2016, CONDOR detected a series of encrypted messages coming from a device which had previously only sent unencrypted ones.  This was ignored initially -- most Agency staff use encrypted messages as a matter of course -- but was treated with more interest when a second CONDOR report mentioned the same device in connection with searches such as \"guns\" and \"bombs\" |Koran>[along with the purchase of a copy of the Koran].  Police were informed, but decided not to intervene immediately, and a remote hack was authorised.  Surprisingly, the data gathered seemed to imply that the suspect had recently become interested, for no apparent reason, in munitions |Koran>[and Islam].\nExactly one month later, the suspect purchased an assault weapon, a bulletproof vest, and several boxes of ammunition.  |Credit>[The CONDOR team had recently added the ability to decrypt and analyse credit card purchases without the knowledge of shoppers or banks].  CONDOR combined this with previous knowledge and re-flagged the suspect.  Police once again declined to investigate.\nOn the 7th of January 2017, the suspect entered JFK International Airport, NY.  CONDOR had noted erratic behaviour in the previous week.  The repeat flaggings served as enough evidence that the police force decided, at last, to surveil the suspect themselves.  |Cameras>[Once within JFK, his face was detected by automatic facial-recognition cameras].  Airport police were placed on high alert and succeeded in disarming the suspect before he was able to kill or injure anyone.\nThis is only one example of the success of CONDOR.  We suggest that the Agency wasted both money and time by not acting more decisively and quickly.  As CONDOR's algorithms become more sophisticated, they should be trusted more readily.  Equally, CONDOR succeeded here due to the vast amounts of data to which it had access.  More data, |Extralegal>[legally obtained or not], could well further increase its efficiency.  We note in conclusion that the overwhelming number of occurrences such as this completely invalidate Krull's argument, which still has its adherents almost ten years on.</span>\n*Recommendation:* Censor carefully.  This is good for the Agency, but too much information may give modern threats information on how to evade our detection.\n(click:?Koran)[(replace:?Koran)[CENSORED] (set: $Doc3c1 to 1)](click:?Credit)[(replace:?Credit)[CENSORED] (set:$Doc3c2 to 1)](click:?Cameras)[(replace:?Cameras)[CENSORED] (set: $Doc3c3 to 1)](click:?Extralegal)[(replace:?Extralegal)[CENSORED] (set: $Doc3c4 to 1)]\n[[Finished.|Feedback: JFK]]",
+      "links": [
+        {
+          "text": "Finished.",
+          "destination": {
+            "name": "Feedback: JFK",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "An email",
+      "text": "**Date:** Jan 21, 2047\n**From:** Col. Adam Greenberg\n**Subject:** Augustville\n**Message:**\nHello,\nI just read the declassified report on the Augustville fracas.  (if:$Doc1c4 is 1)[What do you think you are doing?  (if:$Doc1c3 is 0)[Corinne Johnstone was a fine young woman.  You have no right to make it seem like she was an extremist.  ]School shootings rank among the worst things humanity has ever invented.  I am disgusted that you would imply such a plot just to save face for your precious Agency.](else:)[(if:$Doc1c2 is 0)[And the emails from everyone I work with.  And the emails from everyone they work with.  One of them must have noticed it and forwarded it.  I felt like enough of an idiot the first time.  Did you really need to make me feel that way again?](else:)[Thanks for leaving me out of it.  I'm confident we all did the right thing, but I looked pretty dumb for a few weeks after that.  I wouldn't want to go through that again.]]\n\nRegards,\nAdam Greenberg\n\n[[Memo: CONDOR Acronym]]",
+      "links": [
+        {
+          "text": "Memo: CONDOR Acronym",
+          "destination": {
+            "name": "Memo: CONDOR Acronym",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "A meeting",
+      "text": "Your superiors would like to discuss your performance with you.\n[[Justify yourself carefully.]]\n[[Be confident.]]",
+      "links": [
+        {
+          "text": "Justify yourself carefully.",
+          "destination": {
+            "name": "Justify yourself carefully.",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Be confident.",
+          "destination": {
+            "name": "Be confident.",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Justify yourself carefully.",
+      "text": "(if:$Standing < 0)[By dint of fast talking, pleading, and persuasion, you manage to convince them to allow you to keep your job.  You return to your desk with sweat patches under your armpits.  There's a new batch of papers there, waiting for you.\n[[Waiting for your proverbial black marker.|Premature end]]](else:)[There's no need.  Your work at the Agency has been exemplary.  In fact, it turns out that the real reason for this meeting is to assess whether or not you are ready to handle more sensitive documents. Are you?\n[[Yes.|Reasons for the Dismissal of Alexander Krull]]\n[[No.|Premature end]]]",
+      "links": [
+        {
+          "text": "Waiting for your proverbial black marker.",
+          "destination": {
+            "name": "Premature end",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "Reasons for the Dismissal of Alexander Krull",
+            "pid": 11
+          }
+        },
+        {
+          "text": "No.",
+          "destination": {
+            "name": "Premature end",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Be confident.",
+      "text": "(if:$Standing<0)[Your bravado does not go over well.  Within the Agency, a failure could cause deaths or worse.  Luckily, you get off with being sacked.  The proverbial black marker will find someone else to hold it.\n\n|Restart>[Restart](click:?Restart)[(reload:)]](else:)[As it turns out, this was more than a performance review.  The Agency needs someone to handle a particularly sensitive document coming up for release.\n[[It turns out you're just that someone.|Reasons for the Dismissal of Alexander Krull]]]",
+      "links": [
+        {
+          "text": "It turns out you're just that someone.",
+          "destination": {
+            "name": "Reasons for the Dismissal of Alexander Krull",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Premature end",
+      "text": "You watch the papers pass through your hands, privy to some, but not all, of the secrets that run a state.  Usually you get the more prosaic ones.  Sometimes a minor false-flag operation will brighten your day.  You never risk angering your superiors that much again.\n\n|Restart>[Restart]\n(click:?Restart)[(reload:)]",
+      "links": []
+    },
+    {
+      "pid": 11,
+      "name": "Reasons for the Dismissal of Alexander Krull",
+      "text": "**Reasons for the Dismissal of Alexander Krull**(set:$Summary to 3)\n**Declassification date: 28 Jan 2047**\n<span class=\"censored\">Alexander Krull joined the Agency as a computer specialist on the 19th of July 2004.  He quickly became instrumental in the development of the CONDOR system, designing many of the algorithms used to rank possible deviations from the norm by threat level.  Before 2009, there was no reason to believe that he was anything other than a loyal and highly competent Agency member.\nIn early 2009, Krull began to express doubts about CONDOR.  Specifically, he objected to what he termed \"a needless invasion of privacy\".  |Feelings>[Feelings of this sort are not unusual amongst junior Agency staff, but their presence in a senior technician who had seen firsthand the effectiveness of the Agency's methods was surprising].\nKrull made numerous requests to those leading the CONDOR project, suggesting safeguards for the data collected.  |Impractical>[Much of what he came up with would have made CONDOR unuseable].  He began to create obstructions to the project, refusing to do any more work until his doubts were satisfied.  As he was by this time a fairly senior member of the CONDOR design group, this represented a major blockage.\nHe was threatened with immediate termination and began to work again the next day.  A week later, however, WikiLeaks recieved most of the documents he had written during his time at the Agency.  These detailed the methods used by CONDOR, |Illegal>[as well as the breaches of constitutional and case law that CONDOR represents].  This release set back the development and deployment of CONDOR by several years, |Dangerous>[during which time we estimate that twenty people died and twenty-four were seriously injured by threats about which CONDOR could have warned the Agency in advance].\nKrull's conduct was unacceptable, and he was dismisssed instantly.  Attempts to prosecute stalled because he went off-grid and has not been heard of since.</span>\n*Recommendation:* This was a high-profile case, so there is no need to censor Krull's name.  It was also very damaging to the Agency and could be again.  Classify for as long as possible, delay release, and censor carefully.\n(click:?Feelings)[(replace:?Feelings)[CENSORED] (set: $Summary to it+1)](click:?Impractical)[(replace:?Impractical)[CENSORED] (set:$Summary to it - 1)](click:?Illegal)[(replace:?Illegal)[CENSORED] (set: $Summary to it+1)](click:?Dangerous)[(replace:?Dangerous)[CENSORED] (set: $Summary to it - 1)]\n|Done>[Finished.]\n(click:?Done)[(if:$Summary < 3)[(goto:\"Sacked!\")](else:)[(if:$Summary > 3)[(goto:\"Success!\")](else:)[(goto:\"The end.\")]]]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Sacked!",
+            "pid": 12
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Success!",
+            "pid": 13
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "The end.",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Sacked!",
+      "text": "You publish your censored document.  The Agency takes one look at it and dismisses you.  As you try to find a job, you watch the reaction of the people and the press.  Krull is viewed as a mistreated hero, and an investigation is ordered.  Nothing much comes of it in the end, but at least the anti-Agency protesters have new material to work with.  You never meet Krull, but you are glad his choices have been vindicated.\n\n|Restart>[Restart]\n(click:?Restart)[(reload:)]",
+      "links": []
+    },
+    {
+      "pid": 13,
+      "name": "Success!",
+      "text": "You publish the censored document.  Your superiors are extremely pleased with it, as are the two or three newspapers that read it.  Krull is viewed as nothing more than a bad hire from thirty years ago, and the Agency continues its good and useful work for the security of the state.\n\n|Restart>[Restart]\n(click:?Restart)[(reload:)]",
+      "links": []
+    },
+    {
+      "pid": 14,
+      "name": "The end.",
+      "text": "The document is released.\n\nYour superiors are pleased with your work.\n\n|Restart>[Restart]\n(click:?Restart)[(reload:)]",
+      "links": []
+    },
+    {
+      "pid": 15,
+      "name": "Tutorial",
+      "text": "Say what you will about the Agency, it pays well and the hours aren't bad.\nClick on <span class=\"censored\">|Censor>[words and phrases]</span> to censor them.\n(click:?Censor)[(replace:?Censor)[CENSORED]]\n[[Move on|Guidelines]]",
+      "links": [
+        {
+          "text": "Move on",
+          "destination": {
+            "name": "Guidelines",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Nothing to censor today",
+      "text": "[[You do get an email, though.|An email]]",
+      "links": [
+        {
+          "text": "You do get an email, though.",
+          "destination": {
+            "name": "An email",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Memo: CONDOR Acronym",
+      "text": "**Memo: CONDOR Acronym**\n**Declassfication date: Jan 23 2047** \n**From:** Belinda Zhuang\n**To:** The CONDOR team\n**Date: Jan 23 2017**\nDear all,\nCould we all be a little more professional when referring to CONDOR by name?  It stands for <span class=\"censored\">|Acronym>[Communications Observation Network for Detection of Online Risks]</span>, not, for example, Captains Often Need a Drop Of Rum.\nChanging the last letter to an M is also strictly forbidden in official correspondence.  I shouldn't have to tell you this.\nI am very proud of what we have achieved with CONDOR and I hope you are as well.  Please reflect this in how you talk about the program.\nThank you,\nB. Zhuang\nHead of data acquisition\n*Recommendation:* Everyone knows that CONDOR stands for Covert Operations Never Displace Overseas Rulers.\n(set:$Mistakes to 0)(set:$NextDoc to \"Emails on the Krull Subsystem\")(click:?Acronym)[(replace:?Acronym)[CENSORED]]\n[[Finished.|Feedback: Acronym]]",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Emails on the Krull Subsystem",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Finished.",
+          "destination": {
+            "name": "Feedback: Acronym",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Emails on CONDOR Password Cracking",
+      "text": "**Emails on CONDOR Password Cracking**\n**Declassification date: 25 Jan 2047**\n**To:** Roger Kemble\n**From:** Am\u00e9lie Tam\n**Date:** 19 Jan 2017\n<span class=\"censored\">Dear Mr. Kemble,\nIt would not be too hard to integrate our device-interrogation techniques into CONDOR.  I could have it cracking passwords within a week if I had a team of programmers.  May I?\nAm\u00e9lie Tam\n---\n**To:** Am\u00e9lie Tam\n**From:** Roger Kemble\n**Date:** 19 Jan 2017\nI'm going to have to say no here.  |Use>[We only use those techniques on a case-by-case basis].  If the public found out that we were using them en masse, CONDOR would be dead.  Well done on coming up with the idea, but it's too risky.\nRK\n---\n**To:** Roger Kemble\n**From:** Am\u00e9lie Tam\n**Date:** 20 Jan 2017\nDear Mr. Kemble,\nOur techniques are undetectable.  |Kemble>[You should know; you designed them].  The more data CONDOR has, the more effective it is.  Obviously, the most interesting data is hidden behind passwords.  I say this is worth the risk.\nAm\u00e9lie Tam\n---\n**To:** Am\u00e9lie Tam\n**From:** Roger Kemble\n**Date:** 20 Jan 2017\nSooner or later, someone will find it if we use it too much.  |Awkward>[Computers develop resistance to exploits in the same way that diseases develop resistance to antibiotics].\nRK\n---\n**To:** Roger Kemble\n**From:** Am\u00e9lie Tam\n**Date:** 20 Jan 2017\nDear Mr. Kemble,\nWith all due respect, what aren't you telling me?\nAm\u00e9lie Tam\n---\n**To:** Am\u00e9lie Tam\n**From:** Roger Kemble\n**Date:** 20 Jan 2017\nAm\u00e9lie,\nYou misunderstand me.  I am giving you a reason to not have CONDOR steal passwords.  It's a good reason.  |Personal>[Whether it's my personal reason is not open for discussion].  Drop this now.  It's never going to happen.  Grabbing passwords without a warrant is difficult, dangerous, and an invasion of privacy too far, even for the Agency.  Thank you for your efforts on behalf of CONDOR; I am sorry that in this case they were misguided.\nR. Kemble</span>\n*Recommendation:* Password cracking is one of the Agency's most important tools.  Do not give our enemies any more information about it than you have to.  On the other hand, bear in mind that mass harvesting of passwords would be very unpopular.  Do not imply that the Agency does such a thing.\n(click:?Use)[(replace:?Use)[CENSORED] (set: $Doc6c1 to 1)](click:?Kemble)[(replace:?Kemble)[CENSORED] (set:$Doc6c2 to 1)](click:?Awkward)[(replace:?Awkward)[CENSORED] (set: $Doc6c3 to 1)](click:?Personal)[(replace:?Personal)[CENSORED] (set: $Doc6c4 to 1)]\n[[Finished.|Feedback: Passwords]]",
+      "links": [
+        {
+          "text": "Finished.",
+          "destination": {
+            "name": "Feedback: Passwords",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Emails on the Krull Subsystem",
+      "text": "**Emails on the Krull Subsystem**\n**Declassification date: 24 Jan 2047**\n**To:** Belinda Zhuang\n**From:** John Marsden\n**Date:** 24 Jan 2017\n<span class=\"censored\">Hi,\nI've been thinking about the new threat analysis module.  We could name it the Krull system?  I know he isn't very popular here anymore, but he did make some important contributions early on.  |Code>[I think we still use code he personally wrote for the IO manager].  What do you think?\nJohn\n---\n**To:** John Marsden\n**From:** Belinda Zhuang\n**Date:** 24 Jan 2017\nDear John,\nThat sounds like a good idea.  The only problem I can imagine is getting our superiors to agree.  |Continuation>[There are still a lot of people here who were affected by what Krull said].  Agency bureaucrats are like bureaucrats everywhere: they don't like to be reminded of times when they were beaten.\nB. Zhuang\n---\n**To:** Belinda Zhuang\n**From:** John Marsden\n**Date:** 24 Jan 2017\nI don't think we'll have too much trouble.  |Continuation>[Disaffected employees] are normal for any organisation.  Just think about everything he built before his meltdown: |Contributions>[at least half the high-level architecture, most of the intelligent language processor, and the pizza appreciation society].  He was a good man, |Ambitious>[if ambitious and argumentative], and the bureaucrats know it.\nJohn</span>\n*Recommendation:* Ensure that civilian readers cannot use this to guess at the inner workings of our current surveillance systems.  Many of them work similarly to CONDOR.\n(click:?Code)[(replace:?Code)[CENSORED] (set: $Doc5c1 to 1)](click:?Continuation)[(replace:?Continuation)[CENSORED] (set:$Doc5c2 to 1)](click:?Contributions)[(replace:?Contributions)[CENSORED] (set: $Doc5c3 to 1)](click:?Ambitious)[(replace:?Ambitious)[CENSORED] (set: $Doc5c4 to 1)]\n[[Finished.|Feedback: Krull]]",
+      "links": [
+        {
+          "text": "Finished.",
+          "destination": {
+            "name": "Feedback: Krull",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Feedback: Augustville",
+      "text": "The document is released.\n(if:$Doc1c1+$Doc1c2+$Doc1c3+$Doc1c4 is 4)[(set: $Mistakes to 5)](else:)[(set: $Mistakes to (1-$Doc1c2)+$Doc1c4)]\n(if:$Mistakes is 5)[Censoring too much makes the Agency look like it has something to hide.](else:)[(if:$Doc1c4 is 1)[While careful censorship is necessary, the Agency does not recommend completely altering the sense of a document.](else:)[(if:$Doc1c2 is 0)[Field agents should not be named, for their safety and yours.](else:)[Your censorship is considered effective.]]]\n\n(if:$Mistakes > 1)[Your superiors feel you did not act in the best interests of the Agency.(set:$Standing to it - 1)](else:)[Your superiors are pleased with your work.(set:$Standing to it + 1)]\n\n(if:$Standing > 1)[You are generally respected within the Agency.(set:$Standing to 2)](else-if:$Standing < -1)[You are viewed as either dangerous or incompetent.  Within the Agency, these are the same.]\n\n(if:$Standing < -2)[(set:$Standing to 0)The Agency cannot function with people like you.  |Restart>[You are sent for re-training.]](else:)[[[A Brief Summary of the CONDOR System]]](click:?Restart)[(reload:)]",
+      "links": [
+        {
+          "text": "A Brief Summary of the CONDOR System",
+          "destination": {
+            "name": "A Brief Summary of the CONDOR System",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Feedback: CONDOR",
+      "text": "The document is released.\n(if:$Doc2c1+$Doc2c2+$Doc2c3+$Doc2c4 is 4)[(set: $Mistakes to 5)](else:)[(set: $Mistakes to (1-$Doc2c3)+(1-$Doc2c2)+$Doc2c1)]\n(if:$Mistakes is 5)[Censoring too much makes the Agency look like it has something to hide.](else:)[(if:$Doc2c3 is 0)[The Agency does not recommend revealing statistics.  These can easily be misused.](else:)[(if:$Doc2c2 is 0)[Do not reveal what the Agency does with captured data.  That is a state secret.](else:)[(if:$Doc2c1 is 1)[Do not imply that the Agency engages in illegal activities.](else:)[Your censorship is considered effective.]]]]\n\n(if:$Mistakes > 1)[Your superiors feel you did not act in the best interests of the Agency.(set:$Standing to it - 1)](else:)[Your superiors are pleased with your work.(set:$Standing to it + 1)]\n\n(if:$Standing > 1)[You are generally respected within the Agency.(set:$Standing to 2)](else-if:$Standing < -1)[You are viewed as either dangerous or incompetent.  Within the Agency, these are the same.]\n\n(if:$Standing < -2)[(set:$Standing to 0)The Agency cannot function with people like you.  |Restart>[You are sent for re-training.]](else:)[[[The JFK Incident: A Case Study]]](click:?Restart)[(reload:)]",
+      "links": [
+        {
+          "text": "The JFK Incident: A Case Study",
+          "destination": {
+            "name": "The JFK Incident: A Case Study",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Feedback: JFK",
+      "text": "The document is released.\n(if:$Doc3c1+$Doc3c2+$Doc3c3+$Doc3c4 is 4)[(set: $Mistakes to 5)](else:)[(set: $Mistakes to 0.5*(1-$Doc3c2)+0.5*(1-$Doc3c3)+(1-$Doc3c4))]\n(if:$Mistakes is 5)[Censoring too much makes the Agency look like it has something to hide.](else:)[(if:$Doc3c4 is 0)[Do not imply that the Agency engages in or condones illegal activities.](else:)[(if:(min:$Doc3c2, $Doc3c3) is 0)[Do not discuss Agency surveillance techniques in detail.  Declassified documents will be read by our enemies.](else:)[Your censorship is considered effective.]]]\n\n(if:$Mistakes > 1)[Your superiors feel you did not act in the best interests of the Agency.(set:$Standing to it - 1)](else:)[Your superiors are pleased with your work.(set:$Standing to it + 1)]\n\n(if:$Standing > 1)[You are generally respected within the Agency.(set:$Standing to 2)](else-if:$Standing < -1)[You are viewed as either dangerous or incompetent.  Within the Agency, these are the same.]\n\n(if:$Standing < -2)[(set:$Standing to 0)The Agency cannot function with people like you.  |Restart>[You are sent for re-training.]](else:)[[[Nothing to censor today]]](click:?Restart)[(reload:)]",
+      "links": [
+        {
+          "text": "Nothing to censor today",
+          "destination": {
+            "name": "Nothing to censor today",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Feedback: Acronym",
+      "text": "The document is released.\n\nYour censorship is considered effective.\n\nYour superiors are pleased with your work.(set:$Standing to it + 1)\n\n(if:$Standing > 1)[You are generally respected within the Agency.(set:$Standing to 2)](else-if:$Standing < -1)[You are viewed as either dangerous or incompetent.  Within the Agency, these are the same.]\n\n[[Emails on the Krull Subsystem]]<!-- No need to have logic about being sent for re-training here, since there is no way to do badly censoring this document.  Comic relief FTW! -->",
+      "links": [
+        {
+          "text": "Emails on the Krull Subsystem",
+          "destination": {
+            "name": "Emails on the Krull Subsystem",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Feedback: Krull",
+      "text": "The document is released.\n(if:$Doc5c1+$Doc5c2+$Doc5c3+$Doc5c4 is 4)[(set: $Mistakes to 5)](else:)[(set: $Mistakes to (1-$Doc5c1) + (1-$Doc5c3))]\n(if:$Mistakes is 5)[Censoring too much makes the Agency look like it has something to hide.](else:)[(if:(min:$Doc5c1, $Doc5c3) is 0)[The Agency recommends that you do not release details of who was responsible for which individual parts of a project.  Retired Agency members are still a security risk.](else:)[Your censorship is considered effective.]]\n\n(if:$Mistakes > 1)[Your superiors feel you did not act in the best interests of the Agency.(set:$Standing to it - 1)](else:)[Your superiors are pleased with your work.(set:$Standing to it + 1)]\n\n(if:$Standing > 1)[You are generally respected within the Agency.(set:$Standing to 2)](else-if:$Standing < -1)[You are viewed as either dangerous or incompetent.  Within the Agency, these are the same.]\n\n(if:$Standing < -2)[(set:$Standing to 0)The Agency cannot function with people like you.  |Restart>[You are sent for re-training.]](else:)[[[Emails on CONDOR Password Cracking]]](click:?Restart)[(reload:)]",
+      "links": [
+        {
+          "text": "Emails on CONDOR Password Cracking",
+          "destination": {
+            "name": "Emails on CONDOR Password Cracking",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Feedback: Passwords",
+      "text": "The document is released.\n(if:$Doc6c1+$Doc6c2+$Doc6c3+$Doc6c4 is 4)[(set: $Mistakes to 5)](else:)[(set: $Mistakes to (1-$Doc6c2) + $Doc6c1 + (1-$Doc6c3))]\n(if:$Mistakes is 5)[Censoring too much makes the Agency look like it has something to hide.](else:)[(if:$Doc6c2 is 0)[The Agency recommends that you do not release details of who was responsible for which individual parts of a project.  Retired Agency members are still a security risk.](else:)[(if:$Doc6c1 is 1)[Do not remove phrases which improve the image of the Agency.](else:)[(if:$Doc6c3 is 0)[The Agency recommends that you censor awkward phrases, especially ones that could imply a disregard for personal privacy.](else:)[Your censorship is considered effective.]]]]\n\n(if:$Mistakes > 1)[Your superiors feel you did not act in the best interests of the Agency.(set:$Standing to it - 1)](else:)[Your superiors are pleased with your work.(set:$Standing to it + 1)]\n\n(if:$Standing > 1)[You are generally respected within the Agency.(set:$Standing to 2)](else-if:$Standing < -1)[You are viewed as either dangerous or incompetent.  Within the Agency, these are the same.]\n\n(if:$Standing < -2)[(set:$Standing to 0)The Agency cannot function with people like you.  |Restart>[You are sent for re-training.]](else:)[[[A meeting]]](click:?Restart)[(reload:)]",
+      "links": [
+        {
+          "text": "A meeting",
+          "destination": {
+            "name": "A meeting",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "About",
+      "text": "Black Marker is the result of a meditation on censorship.  There are four different endings, of which two may reasonably be counted as win states; if you're having trouble finding them, try being more or less radical at various points.\n\nI've tried to portray censorship in an ambiguous, if not positive, light.  I would agree that it is often a danger and that citizens in general should know more about the workings of their governments than they do, but full transparency would ruin a state.  Winning wars is impossible if the enemy can file a Freedom of Information Act request for your latest tactics.\n\nHalfway through the development process, I became aware of Blackbar, another game about censorship.  It's essentially Black Marker from the point of view of everyone who's actually reading these censored documents.\n\nThanks to my beta testers.  Thanks to Jason McIntosh for organising the IFComp, and to the Interactive Fiction Technology Foundation for running it.  Thanks to my family for being tolerant while I put this together.  Finally, thanks to the excellent people who made Twine and, in particular, Harlowe.  Outside of &ldquo;Beginning Twine&rdquo; tutorials, I haven't heard loads about Twine file formats.  I found Harlowe a joy to work in and I'm very grateful to Leon Arnott.\n\n[[Back|Epigraph]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Epigraph",
+            "pid": 1
+          }
+        }
+      ]
+    }
+  ]
+}

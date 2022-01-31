@@ -1,0 +1,1208 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Artist",
+      "text": "{\n(set: $bibliography to (dataset:))\n(set: $empathy to false)\n(set: $fragile_john to true)\n(set: $rebel_john to false)\n(set: $fragile_joss to false)\n(set: $rebel_joss to false)\n(set: $legal_mary to 0)\n(set: $violence to false)\n(set: $eyes to false)\n(set: $human_psy to false)\n(set: $john_acceptance to false)\n(set: $why_this to false)\n(set: $flower to false)\n(set: $phone to false)\n(set: $names to false)\n(set: $bully to false)\n(set: $groupie to false)\n(set: $accountant to false)\n(set: $credits to false)\n}\\\nAs usual, you arrive at work a good half an hour before you're supposed to start. Time enough to drink a little something and do some boring but needed paperwork in peace.\n\nIn spite of that, about once a week, someone manages to come in even earlier than you. And today is one of those days. A skinny, frail, androgynous, and almost anonymous in their plain sweatshirt and trainers, person is sitting on one of the four plastic chairs making up your waiting room. Well, //sitting// may not be the best of words seeing how much they're fidgeting and blatantly oozing with stress.\n\nYou're not a morning person (OK, you're not particularly better at noon or midnight), but you're not so cold-hearted as to leave them be for another thirty minutes, so you invite them to enter. They nod, stand up as you unlock the door, and are unable to hide their surprise over how barren your office is. A couple of cheap chairs, similar to the one they were resting on, a table, a metallic cabinet, and that's all. At least you have a window, even if the view goes only as far as the concrete wall of a nearby building.\n\n\"Sorry. Not the best one could dream of. Just the best the city was ready to offer.\"\n\nYou could discuss at length how difficult it already was to simply get those few square meters. Or about your attempts to improve the setting with your own money, only to have to return it to its original state (the current one) after the administration, represented by the civil servant in charge of this building, said no. The guy personally hates you and so loves to make your life harder, his hierarchy turns a blind eye on anything concerning you, and there you are with the most uncomfortable chairs in town.\n\nBut you're not here to complain about your petty problems, so you just ask your guest to take a seat and if they want something to drink. They grab a chair and refuse with a soft \"No, thanks\". As for you, you get something hot labeled as coffee from the machine, gulp it, and sit in front of the young person, ready to start.\n\nYour first visitor of the day is clearly intimidated, currently looking at some point between their feet.\n\nHow do you proceed?\n* [[You encourage them to talk about themselves.->Joss]]\n* [[You explain who you are and what you do.->About me]]\n* [[You just wait for them to say something.->Onawa, not Psy]]",
+      "links": [
+        {
+          "text": "You encourage them to talk about themselves.",
+          "destination": {
+            "name": "Joss",
+            "pid": 4
+          }
+        },
+        {
+          "text": "You explain who you are and what you do.",
+          "destination": {
+            "name": "About me",
+            "pid": 13
+          }
+        },
+        {
+          "text": "You just wait for them to say something.",
+          "destination": {
+            "name": "Onawa, not Psy",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Onawa, not Psy",
+      "text": "{\n(set: $names to true)\n}\\\nYou wait. The hardest part is not showing that you're getting bored, as you don't want to put any more pressure on their already shivering shoulders. So you don't play with your pen, you don't look at the clock, you make it look like you're perfectly fine with doing absolutely nothing for now.\n\nFinally, before your nerves break, they speak. Starting with the less unexpected question, the one you've already gotten too many times to count.\n\n\"Is it true that you're Psy's daughter?\"\n\nAnd you answer it with the weariness born from a thousand repetitions.\n\n\"Yes, I am indeed the daughter of Onawa Rootless, the one the media nicknamed Psy.\"\n\nYour mother actually goes by far more than one alias, but Onawa is one of her favorite, and one she crafted herself, as opposed to this three-letter joke originating from an especially harsh satirical article.\n\nYour correction, that you tried to speak in the gentlest possible tone, nonetheless petrified your guest, and you must reassure them before they can continue.\n\n\"Don't worry. Everyone tends to call her Psy. Even some of her friends of old do so when they're not focused. It's a short, cool-sounding, name, and the one you can see and hear everywhere.\"\n\nThey nod, still afraid, but curiosity is slightly overcoming fear.\n\n\"I... For her daughter... You don't look like how I thought you would.\"\n\nTypical.\n\n\"And how did you imagine me?\"\n\n\"More... colorful? Wild? Outgoing? Unpredictable? //Exuberant//? I don't know exactly. It's just that Ps... Onawa's hair... her makeup... they're always so //awesome//.\"\n\nYou grab this opportunity to move the conversation closer to today's subject.\n\n\"A style you would like to adopt yourself?\"\n\nThey instantly put their hands forward, as if trying to defend themselves from an incoming assault.\n\n\"No. No. No. Not at all. It's not my style. At all. It's just... that's Psy. Onawa I mean...\"\n\n\"Use whatever name you're most comfortable with.\"\n\n\"Well, she is just //so awesome//. She doesn't care about what others may think, she just goes and does her thing.\"\n\nNothing special in their speech for now. Shy, anxious people are often enthralled by your mother's extreme confidence.\n* [[If you want to shatter this image of a never-doubting Psy with a personal story.->Psy, behaving?!]]\n* [[If you rather tell an anecdote supporting this vision.->That time I met my mother]]\n* [[If you want to remind your guest that //they// are today's subject, and not your mother.->Joss]]",
+      "links": [
+        {
+          "text": "If you want to shatter this image of a never-doubting Psy with a personal story.",
+          "destination": {
+            "name": "Psy, behaving?!",
+            "pid": 5
+          }
+        },
+        {
+          "text": "If you rather tell an anecdote supporting this vision.",
+          "destination": {
+            "name": "That time I met my mother",
+            "pid": 6
+          }
+        },
+        {
+          "text": "If you want to remind your guest that //they// are today's subject, and not your mother.",
+          "destination": {
+            "name": "Joss",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Devil's eye",
+      "text": "Extract from a series of conferences on ''Myths and legends in modern times''\n---\nThat's it for the theory. You now know all there is to know about how to forge a legend from any petty fact, real or invented, and to nourish it until it is big enough to sustain itself. And since I see too much theory at once has sent several of you to sleep, let's do a practical study case.\n\nThere are so many good legends that it broke my heart to have to choose just one for this extended review. I had several criteria though. It had to be recent and famous enough for information on it and its circumstances to be widely and easily available. To demonstrate the power of legends, the story it told had to be absurd, the kind no one should believe and yet which is still told again and again. It also has to be as genuine as possible, meaning not crafted especially for the purpose of becoming a legend.\n\nThat left quite a handful of possibilities. In the end, I settled for Psy's Devil Eye.\n\nAh, I see some eyes are opening up. So here we go.\n\n//The legend//\n\nPsy is the devil's child, a monster with superhuman strength whose eyes turn red when she reveals her true colors.\n\n//The facts//\n\nLook at this slide. What do you see? Sixteen pairs of perfectly normal eyes. And now, the same sixteen, except redder. They probably slept as little before the second photo shoot as some of you did before my lesson. You can notice that the red isn't as pronounced or spread depending on the person. There are genetics at work there. The final impression depends a lot on how pronounced the blood vessels are, how white the sclera is, the color of the iris... Nothing special, and you're probably wondering why I'm giving you a basic biology lesson.\n\nWell, because Psy's infamous devil's eyes are among the photos you're currently seeing, and you had no idea. Without all the decorum around, they actually look pretty normal. Perhaps a little more reddish than average, especially inside the iris, but not enough to raise attention under normal circumstances.\n\nDebunking the superhuman strength is even easier. This claim is based on only one scene, and all it shows is Psy breaking someone else's bones. Tell me, how many among you have managed to break their bones without much external help, playing soccer, skiing or whatever sport you do? The human body is both more fragile and more resistant than it looks like, it all depends on how you hit it.\n\n//The context//\n\nI cheated a little with these photos. They have been taken when Psy wore no makeup, or at least no makeup making her eyes stand out. Which was not the case with the picture you all know about. Which comes from this video.\n\nWhat do we see? A protest turning bad, for reasons we won't talk about here as I would like to avoid a war in this auditorium, filmed by a bad camera and a bad cameraman.\n\nAh, here comes the moment.\n\nZoom on Psy's face. Blurry shot of bodies, legs and the sky as the cameraman is jostled. Psy's fist hitting a security henchman, her bloody broken hand at the center of the screen as the man falls down.\n\n//Craft//\n\nLet's cut the middle part to make it a two-images movie, as someone on the Internet did soon after. Now, you have, side by side, an image of Psy's face displaying a nasty expression and one of a hand in a state it shouldn't be, egregious thus inhuman, moreover red with blood.\n\nSee where I'm going?\n\nPsy indeed has reddish eyes, well one eye at least since the other is not visible from that angle, in this shot. Nothing unusual in a tear gases context, even if hers are slightly more pronounced and quick to change color than the norm. And she clearly chose her makeup to enhance that quirk, as a sort of war paint.\n\nBut it's the //juxtaposition// with another gruesome albeit perfectly explainable image which gives those eyes their particular, disturbing, aura.\n\nFrom that single dual image, the legend started fueling itself. Other photos of Psy's red eyes were found, and associated somehow with other violent events. Soon, even pictures of her giving a dark look were enough. People started to see the red where they wanted to see it.\n\nAnd it spread. Because people wanted to hear unbelievable stories about a strange celebrity like Psy. She was already alien to them, she could easily be demonic too.\n\n//Endurance//\n\nPsy did nothing to stop the movement. Actually, she has subtly encouraged it, seeing the interest of having some of her political opponents making themselves ridiculous by branding her as some witch, and of more physical people having an unreasonable fear of her.\n\nNowadays, it's pretty obvious that she can do her devil's eye expression at will. And that she uses it, sparingly, as a weapon in her fights, thus fueling the legend even more each time people flee before her sight, at least metaphorically.\n\nAnd once a legend has had time and relevance enough to root itself, it tends to remain for even longer.\n\n(display: \"Back to appropriate\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Back to appropriate",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Joss",
+      "text": "\"My name is Joss.\"\n\nAfter that good start, silence sets in again. You wait. And finally, they speak, so softly it's almost inaudible.\n\n\"I am a street artist.\"\n\nYou nod, even though your knowledge of the subject is quite limited.\n\n\"I do //vanitases//.\"\n\nYou have to think hard before you understand what they're referencing.\n\n\"If I remember my history lessons well, that's a style of painting from the Renaissance. Gloomy oiled things, with skulls everywhere.\"\n\nYou made your response obnoxious on purpose, and it worked. For the first time since they arrived, your shy visitor switches from whispering to speaking, fire now inhabiting their voice.\n\n\"Their popularity indeed peaked during the XVII^^th^^ century, but they take their roots in far more ancient times, and never really went dead. Formats and styles just changed while the main concept remained. And I don't mean skulls. It's about how ephemeral human life is, how short and fragile it is. And I don't think that's gloom. Quite the opposite. It reminds us we need to live fully for the short time we have on earth.\"\n\nYou acknowledge their definition.\n\n\"Don't worry, I won't criticize something I know pretty much nothing about. However, should I guess that your passion is related to the reason you're here today?\"\n\nAnother hesitation. They still don't know if they can trust you.\n\n\"I can turn... pretty obsessive about graffiti. There was one time I got sick from the paint fume, despite the mask. I was painting the walls of my room, there wasn't enough aeration, I went dizzy... I managed to get out in time, but that scared the shit out of my parents. They forbade me from touching a spray ever again.\"\n\n\"And you didn't comply.\"\n\nThat's not a question. Nor a judgment.\n\n\"I couldn't.\"\n\n\"How do you manage now?\"\n\n\"I have a part-time job to pay for my material, and I paint wherever I can.\"\n\n\"So, also where you're not supposed to.\"\n\n\"Indeed.\"\n\nYou let them sum it up for you.\n\n\"I can't paint at home anymore, and public authorized spots are rarer than unicorns. So I do like everyone else. I paint walls nobody cares about, in and out of abandoned buildings mainly. But that's still not legal, nor safe. There are the cops. There are the ones who call them. There are people with no more rights to be there than me, but stronger or more numerous.\"\n\n\"It went badly at least once, did it?\"\n\n\"Yes. I escaped with just a few scratches, because they were too drunk to run straight. But now, I freak out about returning there. I got lucky once, I'm not sure I will be twice.\"\n\nThey look at you from beyond their hood, with what you guess are eyes filled with hope.\n\n\"Your mother had similar problems once. Even if she wasn't abiding by the law, she wasn't doing anything bad, yet bad people wanted to make her suffer. I was hoping you... could give me some advice.\"\n\nThat's an extremely idealized summary of your mother's life, and you know firsthand things were and are more complicated, but you understand their comparison. The main reasons your mother was hated and hunted are the ones that make the least sense.\n\nHowever, similar problems don't imply similar solutions. What freed your mother from (some of) her problems was fame, celebrity she acquired through two not-so-fun decades of fighting for her rights.\n\nA quicker solution would probably be better. Do you advise them to:\n* [[Make peace with their parents?->Trust your parents]]\n* [[Join an association?->United we stand]]\n* [[Get dangerous?->Kick their asses]]",
+      "links": [
+        {
+          "text": "Make peace with their parents?",
+          "destination": {
+            "name": "Trust your parents",
+            "pid": 7
+          }
+        },
+        {
+          "text": "Join an association?",
+          "destination": {
+            "name": "United we stand",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Get dangerous?",
+          "destination": {
+            "name": "Kick their asses",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Psy, behaving?!",
+      "text": "{\n(set: $human_psy to true)\n}\\\n\"When I was but a little kid, I was taken from by blood mother and put in a host family.\"\n\n\"I've heard of it. That was that time they decided Onawa was too mad to raise a child.\"\n\nYou're hearing righteous indignation in those last words. As if the idea of your mother not being able to do anything was downright stupid. But that's not your point, so you continue.\n\n\"When things started to get better, but were still not good enough to remove the sanction entirely, a strange compromise was found. I had to stay with my host family, but Onawa obtained the right to visit me once a week. But //only// under some specific conditions.\"\n\nYou start counting the restrictions on your fingers.\n\n\"She had to put on some \"decent clothes\". Was not to talk about politics. Or about her activities. Or her private life. Or anything considered not //normal// or //too complex//. And to make sure she didn't cheat, all visits had to happen at the hospital, under medical surveillance.\"\n\nYou smile.\n\n\"Just try to imagine. I was a little girl full of life, and, once a week, they brought me to the hospital, this gloomy building that smelt bad, to see some awkward lady, looking unwell in her beautiful costume, to have loooooooooong discussions full of blanks because she was allowed to speak about pretty much nothing, while some bored doctor was observing us like lab rats. It was freaking hell! I hated those visits, as she did, but she kept making them just to be able to see me.\"\n\nYour guest is struggling with the idea of a properly dressed, tongue-tied Psy. You can't blame them, as this is the exact opposite of the model she's used to. Yet, this story is totally true, even if you deliberately cut out its explosive conclusion.\n\nAfter a little while, they finally accept this strange concept.\n\n\"When you look at her now, it's hard to believe she may ever have had problems similar to... us.\"\n\nYou've felt some hesitation on the last word, as if they didn't know if they had to bring you, or even them, into this invisible circle.\n\n\"One should always remember than today's heroes are yesterday's commoners. Because it reminds us that we too can become heroes.\"\n\nYour quote isn't exactly right, and the translation certainly imperfect, but they got the idea.\n\n\"On those good words, [[I would like to talk about //you//.->Joss]]\"",
+      "links": [
+        {
+          "text": "I would like to talk about //you//.",
+          "destination": {
+            "name": "Joss",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "That time I met my mother",
+      "text": "\"The first time I actually talked to my mother was in a hospital. It happened during some planned visit, one during which she wasn't supposed to speak about any subject supposedly harmful for the frail child I was supposed to be. Long story short, these subjects covered pretty everything concerning her, her life, her fights. Or anything remotely interesting for that matter.\n\n\"She played along. For some time. Then, one day, she just had enough.\n\n\"In the middle of the visit, she suddenly rose from her chair, broke the recorder of the doctor watching over us, kicked him out, and blocked the door with all the furniture at her disposal.\n\n\"And then, in this rare moment of peace, she sat on the floor, and //asked// me to do the same. I hesitated, not used to adults making //requests// of me, then I accepted and we talked like that, face to face, quietly, until they manage to break the door open and part us.\n\n\"That was a dreamlike thing. I was really little, it didn't last long, yet I could swear I remember everything we discussed that day.\"\n\nYou choose to keep silent about the consequences of this outburst, namely the //years//, and you're not exaggerating, it took before the two of you were allowed to speak again. That's not the point you're trying to make right now.\n\nYour little tale has sent your guest somewhere near the heavens.\n\n\"She is so //awesome//. If I only had one tenth of her courage...\"\n\nYou catch the ball instantly.\n\n\"Well, since you're talking about //you//, [[that's a subject I would like to hear more about.->Joss]]\"",
+      "links": [
+        {
+          "text": "that's a subject I would like to hear more about.",
+          "destination": {
+            "name": "Joss",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Trust your parents",
+      "text": "{\n(set: $fragile_joss to true)\n}\\\nYou think aloud.\n\n\"It all began when you got into a fight with you parents after your accident?\"\n\n\"Yes, but no. It was already barely bearable before. Can you imagine doing graffiti in a small room, with pretty much no surface available, needing to cover up the floor and the furniture, each work erasing the one before? I was dreaming of the outside world long before I was forbidden to work inside.\"\n\n\"I understand, but the simple fact that they accepted your passion and tried to accommodate it, if only for a time, tends to prove that your parents are not bad people, and could make great allies.\"\n\n\"You understand nothing!\"\n\nThey refrain from sobbing, their voice uncertain.\n\n\"They are //parents//. They want me happy of course, but, before everything else, they want me safe. They were already dead worried about my behavior long before the incident, indeed too nice to cut me out of this dangerous universe I clearly love without a good excuse, but eagerly awaiting one. //For my own good//. If I cry a lot, I could probably shift the balance slightly, earning back the right to work in my room... in exchange for my liberty to work anywhere else.\"\n\nThey stand up in the middle of the last sentence and mostly cry their conclusion.\n\n\"How can you be the daughter of the most awesome person in the world and understand nothing?\"\n\nAnd then they run out, slamming the door.\n\nWell, you didn't shine on this case. In their defense, when you were their age, you also went mad every time someone mentioned your parents.\n\nThis did not change actually, you just learned to hide it better.\n\nBut for now, and in spite of this failure, [[the workday is far from over.->Break]]",
+      "links": [
+        {
+          "text": "the workday is far from over.",
+          "destination": {
+            "name": "Break",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "United we stand",
+      "text": "{\n(set: $bibliography to it + (dataset: \"n/a\"))\n(set: $legal_mary to it+1)\n}\\\n\"Do you know of any street art association in town?\"\n\n\"Yes, there is one, but...\"\n\n\"It is mostly composed of, and therefore controlled by, people you cannot identify with.\"\n\nShe agrees, and you can feel their relief over you understanding the main problem so swiftly. But you take no pride in guessing the obvious. They don't fit with the current fauna of the world they want to live in, and that would be true inside an association too. With the usual consequences. //The nail that sticks out gets the hammer.//\n\n\"Make a new one.\"\n\n\"What?\"\n\nThey don't look as dumbfounded as they should, and you instantly know where this is going. They reached a similar conclusion by themselves, then discarded it as unrealistic. A word too often confused with impossible.\n\n\"You heard me perfectly. If there is no association able to defend //your// rights, you have to make a new one.\"\n\n\"But I cannot make an association all by myself.\"\n\n\"Of course not. That's why you need to find people similar to you to join you on your fight.\"\n\n\"But...\"\n\n\"No but.\"\n\nHere we go. You hate to appeal to authority, especially if the authority is your mother, but that's just what they need to hear, so you do it regardless.\n\n\"Many people have blamed my mother for the sudden increase of people declaring themselves as n/a. After all, before her, there was none, and now, new ones appear to sprout out of nowhere every day. And each time she got the opportunity to answer this criticisim, she just said the same thing.\n\n\"That those people had always been there.\n\n\"That others were simply refusing to look at them for what they were. Worse, that they often refused to acknowledge themselves, suffering in denial.\n\n\"And that now that the taboo had been broken, by Onawa and many others, not a week passed without her receiving some message of thanks from someone explaining that they were feeling alive for the first time in forever simply by assuming what they were.\"\n\nYou take a short oratory break before firing your conclusion.\n\n\"You have an audience. You're not the only one of your kind wanting to redesign all those stupidly bare walls. It's just that they don't dare speak it aloud. Perhaps they don't even realize it yet. And it's your job to help them, so you may help each other.\"\n\nThey nod quietly. Disturbed, but not that much. Because what you said is just what they imagined her model, a.k.a your mother, would have said.\n\nIn the end, they simply stand up silently after a couple of seconds, making a half-happy half-terrified face.\n\n(display: \"Joss' exit\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Joss' exit",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Kick their asses",
+      "text": "{\n(set: $rebel_joss to true)\n}\\\n\"I could give you several sensible pieces of advice, reasonable guidance from a rational adult. But that's not what you need, not what you're here for. You came to this place to know what my mother would have done in such a situation. And I will tell you.\"\n\nYou lean forward, closing the distance.\n\n\"//Break loose//. You take great care to make art only on walls nobody cares about, and for what? To be hunted like a criminal regardless. If you are to take risks, to be pursued, at least it should be for something which will make a difference. Move your art where everybody will be able to see it rather than just a few lucky people and a lot of cockroaches. Paint where you want, not where you think you're tacitly allowed to.\"\n\nThey wither, almost disappearing under their concealing clothes.\n\n\"No! No! I've no doubt //Psy// would have covered the city hall with drawings from the basement to the attic if she were me. But that's not who //I// am. I don't want to make trouble for anyone else.\"\n\n\"It's not about others. It's about you. Everyone deserves to exist, even if their existence must bother some.\"\n\nYou just quoted, almost word for word (and unwillingly), one of your mother's speeches. Something Joss can't have missed. They look like they're about to reply, then stop, hesitate some more, and fall silent again.\n\nIt takes several minutes before they finally raise their head, stand up and start whispering while looking at their feet.\n\n(display: \"Joss' exit\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Joss' exit",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Break",
+      "text": "{\n(save-game: \"Main\")\n}\\\nToday's schedule is, as usual, full of holes. On purpose. Because, if some people are organized enough to schedule an appointment beforehand, and others are regulars, always coming at the same day of the week at the same hour, most visits are unexpected, are either people in emergency situations or too unsure to call and yet suddenly finding themselves here on an unexpected outburst of courage. People who need your help first and foremost, hence why you're leaving that many blanks in your planning, so they may always be welcomed quickly.\n\nYou're used to such a rhythm, and take advantage of your alone moments to do some writing work, your door remaining wide open to remind everyone you're available if need be.\n\nRight now, you've got an article to finish. And you start by checking your notes. You're no movie character, so, instead of looking at many pieces of newspapers pinned up to the wall and linked together with shaky strokes and covered with incomprehensible remarks, you instead open the directory of your computer where your sources await, properly stored in aptly named folders.\n\nArticles from newspapers or science magazines, found online or scanned, extracts from books and thesis, video from TV news, documentaries and conferences, audio from podcasts and interviews you yourself conducted...\n\nAll of these add up to a really big amount of data. So much that you often feel the need to navigate through it randomly, counting on luck to put forward the files you've thrown down somewhere one day then forgot about. You also have a bad tendency to reread documents totally disconnected from the subject of your current article, only because something made you remember them earlier.\n\nIn short, focusing is not your //forte//.\n\n[[Time to get lost.->Bibliography]]",
+      "links": [
+        {
+          "text": "Time to get lost.",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Joss' exit",
+      "text": "\"I must think about it.\"\n\n\"Of course. Feel free to come back any time, my door is always open.\"\n\nThey shake their head, move to the aforementioned door, open it, are about to pass it, then, suddenly, they turn back and take the final word from you.\n\n(if: $names)[\"I was wrong before. You totally are your mother's daughter.\"\n\nTheir voice is so full of respect, almost adoration, that you can't help but feel bad.](else:)[\"Thanks.\"\n\nA single word, but a sincere one.]\n\nAnd then, they're out, their running escape echoing through the corridor.\n\nFor lack of a better thing to do, [[you go back to work.->Break]]",
+      "links": [
+        {
+          "text": "you go back to work.",
+          "destination": {
+            "name": "Break",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Preamble",
+      "text": "Do not take anything for granted.\n\nYou think you know things. Because you were there. Because you saw them with your own eyes, heard them with your own ears, felt them with all your senses.\n\nBut remember that schizophrenics also firmly believe that what they perceive is real. And, technically, they are not wrong. The electrical/chemical signal poking their brain is in no point different from the one they could receive from their actual sensitive organs. ''It is no less real.'' For the afflicted person, without external help, it is not possible, at all, to distinguish between something only they see or hear and something \"everyone\" perceives. And getting help is quite hard when you cannot even trust the most basic mediums of communication.\n\nEven in the hypothesis that you do not suffer from any hallucinatory trouble, something I think hard to believe with your heredity, memories are brittle untrustworthy little things the brain often mixes, overwrites, or even creates from scratch.\n\nTherefore, you should regard all these documents, this one included, as reality checks, connexions to the world most people around you live in, as opposed to the one in your head. But, following the same suspicious reasoning, do not trust them too much.\n\nOf course, if you are indeed utterly insane, this whole warning is a waste of time. But giving up because there is an unproven possibility that your actions may be useless never did any good to anybody. You least of all.\n\n(display: \"Back to appropriate\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Back to appropriate",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "About me",
+      "text": "{\n(set: $bibliography to it + (dataset: \"n/a\"))\n}\\\nTime to do presentations.\n\n\"My name is Hope-Mary Rootless-Johnson. My job, to advise and assist n/a people and their friends and family. My help is 100% free of charge and comes with no strings attached. I may be paid by the city hall to do this work, but I have all freedom regarding the methods I use, and I don't report my activities to anyone. Anything you say to me is and will remain confidential.\"\n\nYou point the cabinet with a wave of the hand.\n\n\"I have a good number of diplomas up there, but I'm not here as a sociologist, a psychiatrist or any position giving me authority over you. I'm just there to discuss and help you the best I can, as equal to equal.\"\n\nYou could go on, but you realize they lost it at the first few words.\n\n\"Hope is the name my biological mother chose for me. Mary the one given by my adoptive mother. And, yes, I indeed am the daughter of Onawa Rootless, the one the media nicknamed Psy.\"\n\nThey answer your explanation with a nod, then, as planned, [[feel compelled to talk about themselves->Joss]].",
+      "links": [
+        {
+          "text": "feel compelled to talk about themselves",
+          "destination": {
+            "name": "Joss",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Bibliography",
+      "text": "Should you indulge in some passive reading?\n\n(display: \"Books\")\n\n(if: $accountant)[ [[Time goes on.->Me]] ](else-if: $groupie)[ (if: $violence)[ [[Time goes on.->Here he calls]] ](else:)[ [[Time goes on.->Accountant]] ]](else-if: $bully)[ [[Time goes on.->Groupie]] ](else:)[ [[Time goes on.->Bully]] ]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Books",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Time goes on.",
+          "destination": {
+            "name": "Me",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Time goes on.",
+          "destination": {
+            "name": "Here he calls",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Time goes on.",
+          "destination": {
+            "name": "Accountant",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Time goes on.",
+          "destination": {
+            "name": "Groupie",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Time goes on.",
+          "destination": {
+            "name": "Bully",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "n/a",
+      "text": "Revision history for Wikipedia page on ''n/a (movement)''\n\n''Movement?''\n\n''Tinunn'': Movement is a politically-colored word. Perhaps it would be better to use \"social category\" instead.\n''Lanktar'': I too find the current wording inappropriate, but the same goes for the aforementioned proposal. Maybe \"social phenomenon\"?\n''Garden'': That's even worse! Won't a simple ''(person)'' do the trick? It's more neutral, and still makes it clear we're not using the word in its administrative senss.\n\n''Non neutral iconography''\n\n''Elyth'': The article is illustrated only by photos of persons wearing heavy makeup, a mask and/or extravagant, brightly colored clothes. Yet, nowadays, most n/a people don't adorn themselves with such costumes. They were predominant at the movement's beginnings, sported by most of its early leaders (''Psy'', ''Rainbow'', ''John Smith''...) but with time passing on and many more people joining, such a fashion became the minority, not the norm.\n''GLspirit'': And with what are we supposed to replace them? Photos of people casually clothed? \n''Elyth'': Exactly.\n\n''Off topic article?''\n\n''Faity'': Wikipedia is an encyclopedia. It is supposed to define words. And this article, as long as it may be, does not. It does recount the whole history of the movement behind it, getting lost in many pedantic digressions on the way (for example, that long passage dedicated to the precursors), but never gives a proper definition. One can read it from the first to the last line and still have no idea what a \"n/a\" is.\n''Muffin'': +1. I think the history part should be given a dedicated article (''n/a movement history''?) and this article refocused instead on listing its many definitions with the controversies each raised up. The plan should also be moved from chronological to thematic.\n\n''Fake n/a?''\n\n''Max'': Some of the celebrities given as examples of n/a people have little if any relationship with the movement.\n''DoWhatYouWant'': I don't get your point. They're all famous enough to each have their own article, and have all defined themselves as n/a. How come they shouldn't be listed there?\n''Max'': It's obvious that, for several of them, it's just a cheap marketing tactic. They are has-beens trying to gain back some of their fame by linking themselves to anything popular lately. They are not n/a, they don't look n/a, they don't think n/a.\n''DoWhatYouWant'': Non-relevant. Wikipedia is there to expose facts, not to judge the legitimacy of anyone.\n\n''Unnecessary overcomplexity?''\n\n''Vilehard'': I just don't get why we need an article of several thousand words when a one-sentence definition would do a better job: \"person not identifying themselves with any of the given options for a given social category\". I suppose we can spare an extra line to explain the term comes from administrative forms and the refusal to answer certain questions as intended.\n''Elyth'': Things are not that simple. As of today, many different people label themselves as n/a for many different reasons. But in the public mind, it is more or less synonymous with the right to wear colorful masks in everyday life. And to understand why, one first needs to know of the story behind this word.\n\n(display: \"Back to appropriate\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Back to appropriate",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Bully",
+      "text": "{\n(set: $bully to true)\n(save-game: \"Main\")\n}\\\nYou don't even need to look at the newcomer to know he means trouble. What you hear of his walk is enough. Within each of his steps rings sick confidence and unrestrained violence, as a conqueror marching in a defeated place.\n\nYou don't give him the pleasure of you watching his distasteful approach, only raising your head when he finally stops a few centimeters away from your desk.\n\nShaved head. Muscular build. Army cargo pants and tank top. Brings in a sport bag. Leers at you from head to toe without a single hint of embarrassment. Finally speaks.\n\n\"Baby, tell your boss someone is here for her.\"\n\n\"I'm the boss here.\"\n\nSurprise overruns his face.\n\n\"//You// are Psy's girl? But you look so //normal//.\"\n\nYou just ignore the implicit insult.\n\n\"I am indeed Hope-Mary Rootless-Johnson. Please take a seat and explain your problem, and I will do everything I can to help you.\"\n\n\"You're the one who needs help baby.\"\n\nAnd he takes a baseball bat out of his bag.\n\nTypical.\n\nDo you:\n* [[Ignore his behavior, and start the interview as if everything was normal.->Let's discuss this]]\n* [[Call for help.->Phone]]\n* [[Kick his ass hard.->Violence]]",
+      "links": [
+        {
+          "text": "Ignore his behavior, and start the interview as if everything was normal.",
+          "destination": {
+            "name": "Let's discuss this",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Call for help.",
+          "destination": {
+            "name": "Phone",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Kick his ass hard.",
+          "destination": {
+            "name": "Violence",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Violence",
+      "text": "{\n(set: $violence to true)\n}\\\nYou walk to the cupboard, open it, find some bandage and antibacterial gel, and start treating your bloody knuckles. You stupidly used your main hand to strike, again and again, so now you have to rely on the other one to fix it. Thus your movements are imprecise and you're struggling to get the job done.\n\nPlus, your last visitor takes his time to go out, cursing a lot in the process. You have to ask him firmly to speed up before he finally stops complaining about his knee, his nose, his ribs and whatever else and finally gets the hell out of here.\n\nYou waste some more time throwing him the bag he almost forgot, and let him stumble to somewhere else while you return to more important duties.\n\nOnce you've got your hand fixed, and after drinking some fresh water to cool down, you (if: $phone)[ [[go back to work.->Cops & me]] ](else: )[ [[go back to work.->Bibliography]] ]",
+      "links": [
+        {
+          "text": "go back to work.",
+          "destination": {
+            "name": "Cops & me",
+            "pid": 24
+          }
+        },
+        {
+          "text": "go back to work.",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Phone",
+      "text": "{\n(set: $phone to true)\n}\\\nYou slowly move your hand until your phone is in reach, and, in a few quick strokes, send an already written SMS to your ally in the police department.\n\nIt looks like your uninvited guest didn't catch you. But that doesn't make the situation any better for the next instant. In the best of cases, help will come in about ten minutes. An amount of time you need to earn one way or the other. So you get ready to speak nonetheless.\n\nAlso, your phone can of course record anything that will be said in this conversation. This could be useful later on. But that's not a simple manipulation, and you're not used to performing it discreetly.\n* [[Try it regardless.->Phone 2]]\n* [[Play safe.->Let's discuss this]]",
+      "links": [
+        {
+          "text": "Try it regardless.",
+          "destination": {
+            "name": "Phone 2",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Play safe.",
+          "destination": {
+            "name": "Let's discuss this",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Let's discuss this",
+      "text": "\"And how did you get the idea of coming to my office with such equipment?\"\n\nHe shrugs and flexes.\n\n\"Oh, I just want to help. To help get rid of the garbage spoiling this world. That's it.\"\n\nYou give him a doubtful look.\n\n\"That's not a weapon to \"get rid of\" people. That's a weapon to make them suffer.\"\n\nHe strikes your desk with his bat. There's a crack and the table ends up even less pretty than it was the minute before.\n\n\"It's a weapon to make the fun last longer.\"\n\nYou don't even bat an eyelid in front of his pathetic attempt at making you uncomfortable.\n* [[This already went on for too long.->Violence]]\n* [[Just keep him talking.->Keep talking boy]]",
+      "links": [
+        {
+          "text": "This already went on for too long.",
+          "destination": {
+            "name": "Violence",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Just keep him talking.",
+          "destination": {
+            "name": "Keep talking boy",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Phone 2",
+      "text": "You try to launch the app sneakingly.\n\nYou would have succeeded if one of the developers hadn't had the great idea to include a loud beep at the start of the recording.\n\nAs soon as he hears it, the man understands that you're on your phone, and stops his intimidation parade and launches his weapon to try to strike your phone.\n\nYou retract your hand in time to avoid the first hit. [[Then use it to punch him.->Violence]]",
+      "links": [
+        {
+          "text": "Then use it to punch him.",
+          "destination": {
+            "name": "Violence",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Keep talking boy",
+      "text": "\"So. Should I guess you're just a sadist taking his pleasure from hurting vulnerable members of minorities?\"\n\nYour speech amuses him. Before answering, he slowly walks around the table, around you, dangerously playing with his weapon.\n\n\"Sadist? No, no. I am one of the good guys. I live to destroy all parasites plaguing this country. Those who take, with the state's complicity, money from honest working citizens and use it to enjoy an indolent and depraved life.\"\n\nThere's no conviction in his voice as he tells you all these clich\u00e9s. You're pretty sure he does not believe them. He just wants an excuse.\n\n\"I'm not your first victim, am I?\"\n\n\"Indeed. You're a big fish. With the boys, we felt the need to train on a bunch of smaller whores before going for you.\"\n\nAnd, slowly, clearly enjoying himself, (if: $phone)[ [[he narrates all the atrocities he has performed.->Cops & rogue]] ](else:)[ [[he narrates all the atrocities he has performed.->Eyes]] ]",
+      "links": [
+        {
+          "text": "he narrates all the atrocities he has performed.",
+          "destination": {
+            "name": "Cops & rogue",
+            "pid": 22
+          }
+        },
+        {
+          "text": "he narrates all the atrocities he has performed.",
+          "destination": {
+            "name": "Eyes",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Cops & rogue",
+      "text": "{\n(set: $legal_mary to it+1)\n}\\\nSomeone knocks on the door, putting an end to the man's disgusting ramblings. Immediately, he points his bat in your direction, and, displaying what he must consider his most fearsome face, he puts a finger on his lips, then makes it run along his neck.\n\nHis little mime over, he opens the door a little bit, just enough to show his face, and starts speaking with the person behind it.\n\n\"Yes?\"\n\n\"Hello mister. Police. We received a call about an aggression going on here.\"\n\n\"You must have got the wrong place.\"\n\n\"No, you're where you should be.\"\n\nThe man turns back and looks a dagger at you, but you ignore it as you ignored all his other intimidation tactics.\n\n\"This man is detaining me in my own office against my will under the threat of a weapon.\"\n\nA heavy silence has time to set in after your factual description of the situation before the third member of the conversation speaks again.\n\n\"Sir, I must ask you to allow us to enter. Now.\"\n\nHe stops for a few seconds, decides to first put his weapon back into his bag, and finally opens the door.\n\nTwo cops are waiting on the other side, confused but unstressed. They enter, and ask for explanations, then, after an initial cacophony caused by the two of you trying to make your point at the same time, they ask for silence, then tell you to express yourselves one by one, \"starting with mister\".\n\nHe does so quite badly, getting all muddled between different versions, first pretending he was just passing by, while making it clear he is not one of \"these degenerates\", then suddenly changing his story, now telling the tale of you being his one-night stand. The bat? It's there because he was \"about to go hit some balls\" (there are no balls in the bag). The damaged furniture? \"Was already like that before I came.\"\n\nWhen it's finally your turn, you just tell the purest truth.\n\nOnce both of the speeches are over, the cops ask the man to go out \"to avoid any further complication\". And he does comply. Slowly. Smiling. Mocking. And the cops don't seem to care.\n\nAfter an eternity, he is nowhere to be seen anymore, and one of the policemen tells you you have to come to the police office to lodge an official complaint. And then they both leave without further ado, washing their hands of what could happen next, the brute probably no more than a few hundred meters away (if he is walking quickly and in a straight line).\n\nLuckily, he actually does not come back. Or at least he does not for now.\n\nThat's not a satisfying conclusion, but for lack of a better, [[you go back to work.->Bibliography]]",
+      "links": [
+        {
+          "text": "you go back to work.",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Eyes",
+      "text": "{\n(set: $eyes to true)\n(set: $bibliography to it + (dataset: \"n/a\"))\n(set: $bibliography to it + (dataset: \"devil's eye\"))\n}\\\nHe tells you about all the horrors that he and his friends have done. One by one. With numerous gruesome details. He may be lying. He may be telling the truth. He may mix both.\n\nThat doesn't matter. What matters is that he is making you //really angry//.\n\n\"And your boys, where are they today?\"\n\nHe looks surprised, as if he wasn't expecting you to break his monologue at some point.\n\n\"They should have been there. But they went all chicken at the last minute. Because, somehow, they're still afraid of your mother. As if she was some demonic guardian angel always watching over her little girl.\"\n\n\"//Speak of the devil and she doth appear.//\"\n\nHe laughs at your solemn statement. Then his eyes catch yours. And he freezes.\n\nThere was that one time you had a weird conversation with Ikebana. Alright, all your conversations with Ikebana are weird. But this one you remember clearly.\n\nYou were talking about the most frightening people you knew of. You ranked her third, and Onawa second. She, for once, almost agreed with you. The order was right she said. But she then told you you forgot someone in your list, someone she herself ranked second. Someone really terrifying when angry.\n\nDemonic mothers scarcely birth angels after all.\n\nHe is not so playful now. Nor so talkative. Nor confident. Perhaps he is starting to remember who he is facing right now.\n\n\"You. Out. Now.\"\n\nHe doesn't comply, yet, but he doesn't dare to start his little dance again. His hands are tensed on the bat, and he now holds it more like a teddy bear than a weapon, as if it was some magical talisman against the monsters of the night.\n\nAnd his eyes are still locked on yours.\n\n\"That. Fucking. Witch. Gaze. You've got your mother corrupted blood, you abomination.\"\n\nHe is uneasy, and you have no intention of helping him feel better. Now it's your turn to speak slowly.\n\n\"Tell me, how does it feel? To not be in an extremely dominant position of power, to not be invulnerable anymore? To realize you're actually risking something, that you're putting yourself in danger? That your little game may have unforeseen consequences for yourself?\n\n\"I'm sure that's a feeling you're not used to. From what you told me, you always take great care in choosing the most vulnerable victims, solitary members of a community whose sufferings are more likely to be ignored, or even enjoyed, by the power of law and of the people. You play your sick game safe.\n\n\"Let me rephrase that. You're a coward. The worst sort, the sort hurting others to hide its fear. And bloody shifty cowards have no place in this room.\n\n\"You see, for most people, simply passing this door requires a courage you simply can't imagine. The journey ending in this place is long and harsh, a constant fight to overcome the many biases society put into you. Because coming to a guidance office for n/a, a category of people too often labeled with infamy, means accepting you're one of them or at least close to them, and therefore share their stigma.\n\n\"You're insulting many brave people simply by being here. And that makes me angry.\n\n\"So I will make this simple enough for your little brain to understand. You can either leave my office right now and never come back. Or I will remind you of what an isolated unarmed cornered woman can do when she's really angry.\"\n\nHis feelings are printed on his face. He is remembering. The Scarlet Flowers incident. Who would be mad enough to hit a beefy bodyguard thrice her weight so hard she would break the bones of her own hand? So hard she would also break one of the the man's rib, piercing a lung and sending him straight to the hospital with his life endangered?\n\nHe knows he is bigger. He knows he is stronger. He doesn't know if he is quicker, more precise or better trained. But he is sure that you are //madder//.\n\nHe steps back. He tries to make it looks like he is not, but to no avail. He is justly terrified.\n\n\"You're all fucking mad in this family.\"\n\nA final cry, especially pitiful. You decide to stop caring at this point, rectify your position on your chair and go back to your work.\n\nYou hear him running for his life as soon as you break eye contact.\n\nProblem solved. [[You'got better things to do.->Bibliography]]",
+      "links": [
+        {
+          "text": "You'got better things to do.",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Cops & me",
+      "text": "The cavalry, a.k.a two local cops, comes in around 10 minutes after they were needed.\n\nYou explain what happened, show them the traces left by your aggressor, and give them as many details as you can remember. One of the two takes a few notes. The other just keeps making nasty comments constantly, about you, your appearance, your sexuality, your parents, Bull... In the end, his colleague feels obliged to order him to shut up.\n\nThat's sadly as far as his support goes, as he then tells you that you have to go to the police office to make your official complaint, admitting there's little chance that anything comes out of this. He also advises you, without seeming to realize the irony, to \"take care of yourself\". As if preventing scumbags from attacking you in your workplace was something you had control over and could easily avoid with a few life rules, like washing your hands before eating your vegetables.\n\nAnd then they leave you alone in your damaged office, not any better off than five minutes ago. Actually, you're even slightly more depressed.\n\nTo clear up your mind, [[you dig yourself under your work.->Bibliography]]",
+      "links": [
+        {
+          "text": "you dig yourself under your work.",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Groupie",
+      "text": "{\n(set: $groupie to true)\n(save-game: \"Main\")\n}\\\nA new person enters your office, once more unannounced. A young woman wearing a pastel blouse and pastel pants, a white rose on her chest and a brown ceramic bracelet on her wrist.\n\nYou cannot not recognize the //ikebana// fashion, in its more mainstream, least objectionable, variant. But by itself, this information doesn't help you much in understanding who you're facing.\n\nShe looks slightly tired, and, at this hour, this could be because she went there directly after completing her day at work. But, in spite of that, she's still radiating with energy, looking all around her with a lot of curiosity and a hint of deception. Once there is not any corner of the room she has left unscanned, she crashes on the visitor chair and jumps straight to the question you could read on her lips all along.\n\n\"Are you really Psy's daughter?\"\n\nFor the n-th time today, where n is far too big, you confirm you're indeed the daughter of //Onawa Rootless//.\n\n\"AND of Ikebana?\"\n\nThis one, you're less used to hearing. First because most people don't properly add up all the facts about your complex family, and second because Ikebana is quite a controversial personality, far more than Onawa herself. By the way she dresses, your current visitor mustn't be one of her most fervent opponents, but it's still best to choose your words carefully.\n\nActually, if you could not answer at all, it would be perfect. The exact nature of your relationship with Ikebana is something you never managed to pinpoint, and no response you could give will feel perfectly right. While for Onawa, you have no hesitation, as, even disregarding the fact that she brought you into this world, she moved heaven and earth to stay by your side during your childhood and teens, even against all odds. While Ikebana was... Ikebana is a complex case.\n\nFinally, you decide for the answer that, you hope, will close the subject as soon as possible.\n\n\"Indeed.\"\n\n\"And with such a fabulous legacy, you dress like an undertaker?\"\n\n...\n* [[Just ignore the remark.->Just go on]]\n* [[Take some time to answer it.->Take time to answer]]",
+      "links": [
+        {
+          "text": "Just ignore the remark.",
+          "destination": {
+            "name": "Just go on",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Take some time to answer it.",
+          "destination": {
+            "name": "Take time to answer",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Just go on",
+      "text": "\"Perhaps you could tell me the reasons of your presence today?\"\n\nShe crosses her legs, now looking quite dismayed.\n\n\"Oh. //That.//\"\n\nContrasting the tit for tat style of speech she displayed until now, she needs several seconds to compose an answer for that question. You manage to count up to three before she gets her second wind.\n\n\"Actually, I just came here out of raw curiosity. I heard about this office for the first time only recently, while reading some social media article. Your name caught my attention, and I couldn't resist checking for myself that you were indeed who I thought you were.\"\n\nShe tilts her head left, then right, examining you with an overdone bewildered expression.\n\n\"So... Why \"Hope, extreme counselor\", when you could have been anything else with the gifts nature gave you?\"\n\nHer shameless, inquisitive and never-stopping attitude is starting to get on your nerves.\n* [[Remind her you're not there for her amusement.->Just go, please]]\n* [[Patiently answer her questions.->Why am I doing this?]]",
+      "links": [
+        {
+          "text": "Remind her you're not there for her amusement.",
+          "destination": {
+            "name": "Just go, please",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Patiently answer her questions.",
+          "destination": {
+            "name": "Why am I doing this?",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Take time to answer",
+      "text": "\"The way we dress always means something. At many different levels. Due to the way society works at the moment, with jobs and castes requiring a certain dress code, our clothing tells more about how rich we are, about our position in the social ladder, about the social group we are part of, than about who we are as individuals. One of the many causes my mother\u2014\"\n\nUnintentional singular. You're not sure if your guest took note of it of not.\n\n\"\u2014fights for is for these choices to become ours. That we may truly decide what we want to wear instead of putting on an informal yet strict uniform. //Her// outrageous clothes are first of all an activist demonstration.\"\n\n\"Yeah, yeah, I know all of that. Her funeral face paint made quite a scandal at the time. But doesn't that support the idea that you should wear less //normal// clothes?\"\n\nYou try hard not to sigh.\n\n\"Things work both ways. You're not breaking any restriction by forcing people to wear pink instead of black, you're just replacing one interdiction with another. My mother loves to put enough make-up on her body to radically change her appearance, she loves to adorns herself with colours so bright that she almost shines in complete darkness. But that's not necessarily a style that //I// appreciate. And, indirectly, I'm fighting for a complementary cause. The right to be part of a community, to feel good in it, without needing to comply to all its unwritten rules.\"\n\nShe gets your point.\n\n\"This is a morals lesson, isn't it? You're telling me I shouldn't judge you on your looks.\"\n\nShe cracks a baleful smile.\n\n\"And, to you, what does //my// choice of clothing reveal in //me//?\"\n\nYou indeed caught a few things from her dress, but you're not sure she will appreciate you telling her.\n\n* [[If you do so anyway.->Flower]]\n* [[If you go back to the conversation you //should// be having.->Just go on]]",
+      "links": [
+        {
+          "text": "If you do so anyway.",
+          "destination": {
+            "name": "Flower",
+            "pid": 28
+          }
+        },
+        {
+          "text": "If you go back to the conversation you //should// be having.",
+          "destination": {
+            "name": "Just go on",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Flower",
+      "text": "{\n(set: $bibliography to it + (dataset: \"ikebana\"))\n(set: $flower to true)\n}\\\nYou tell her your mind.\n\n\"Confusion. That's what I think of when I look at you. You want to prove something to the world, but you don't know what.\"\n\nShe is about to retaliate, but you don't give her enough time to fire.\n\n\"You choose to dress yourself according to the style Ikebana coined, based on the harmony between the different elements you wear upon yourself, including accessories and most especially flowers. I have no doubt you studied the whole history of this fashion, that you know Ikebana designed it to bear her shifting convictions and feelings on her skin at all times, using the decorative art she named herself after as her main inspiration. In a sense, it's her own re-invention of the T-shirt with a catchphrase, except printed characters are replaced by the union of more subtle components.\"\n\nShe has crossed her arms before her chest, moody, and as soon as you take a second to breathe, she steps in.\n\n\"//As you said//, I know all of this. I am not an idiot playing rebel by putting a flower in her hair. I choose a combination that makes sense to convey a message.\"\n\n\"Your ensemble is indeed coherent. With itself. But not with you.\"\n\nShe tilts her head, her hostility quickly replaced with curiosity.\n\n\"The way you speak, the way you move your body, the way you act, the way you //are//, they don't match the catchphrase you chose. I don't remember everything Ikebana taught me about ikebana...\"\n\nYou're genuinely happy Ikebana //tried// her best to teach you, but that doesn't change the fact that she must be the worst teacher in the entire universe. At least.\n\n\"But you wear upon you colors and symbols of respect, devotion, subdued love. A friendly message, but one quite cautious, restrained. A polar opposite to your totally outgoing behavior.\"\n\nShe smiles warmly at your analysis.\n\n\"You got me. You're straight-laced, but you're better than you look at //feeling// people. Indeed, I may be a slightly more stressed person than I try to show, the kind that spent far too much time deciding on an appropriate costume for my first encounter with the daughter of legends, to the point that I forgot that my old bad personality would give me away right from the start.\"\n\nShe blinks outrageously and shamelessly.\n\n\"Next time, I will bring some bright red holly right from the start.\"\n\n[[You've bounced on enough allusions for now.->Just go on]]",
+      "links": [
+        {
+          "text": "You've bounced on enough allusions for now.",
+          "destination": {
+            "name": "Just go on",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Just go, please",
+      "text": "{\n(set: $bibliography to it + (dataset: \"n/a\"))\n}\\\n\"Stop. I need to remind you that this consulting office is for n/a people, or those related to them, that are in need of someone to listen to them. And, from what you told me up to now, you don't seem to be included in the aforementioned category. Either you prove me wrong or you leave.\"\n\nAt your words, she locks herself in, suddenly still and silent.\n\n(if: $flower)[She stays like that, motionless, never taking the initiative nor looking like she is about to leave. She may simply have run out of arguments and decided to sulk, but something tells you there is more than meets the eye.\n\nShe's testing you.\n\n[[You try to remember what she told you earlier.->Relationships]]](else:)[After an awkward moment of silence, she abruptly comes back to life, dynamic once again, and fires at you many questions and remarks. However, none of them is on topic, and it's closer to a questioning than a meaningful conversation. You put an end to this breaker wave swiftly and sharply.\n\nShe then sighs, lengthily, exaggeratedly, theatrically.\n\n\"You're no fun.\"\n\nYou agree silently, with a small movement of your chin. She sighs even more, stands up, complains again, and, at last, goes out.\n\n[[You're finally able to resume to your work.->Bibliography]]]",
+      "links": [
+        {
+          "text": "You try to remember what she told you earlier.",
+          "destination": {
+            "name": "Relationships",
+            "pid": 31
+          }
+        },
+        {
+          "text": "You're finally able to resume to your work.",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Why am I doing this?",
+      "text": "{\n(set: $bibliography to it + (dataset: \"freedom city\"))\n(set: $why_this to true)\n}\\\nYou don't need time to think about your answer since you've already pondered the question quite a lot in the past.\n\n\"I wouldn't say I could have been anything. Sure, theoretically, I could have chosen to raise goats in the countryside, living as a hermit on water and cheese. But when you're Onawa's daughter, and you share her ideals, it's pretty hard to imagine yourself opting for a life where you're not contributing to the cause in some way.\n\n\"And once I made my mind up about that, it wasn't that easy to find a career fitting my criteria. Especially as I didn't want to do the same thing as my mother, if only because she's already doing a great job at it and doesn't really need much help.\n\n\"I started by studying. A lot. I wanted to learn as much as possible about all academic subjects I thought were related to my objective. I was also doing some charity work on the side. But none of this felt like enough. I felt useful, but not as much as I could be. I felt like I wasn't properly exploiting my own assets to do good, that I could do better than that.\"\n\nShe smiles maliciously at your lack of humility, which is understandable. But you were indeed that convinced of your importance, that prideful, back then.\n\n\"I was lost when destiny gave me a hand. It all started with me accidentally answering a call from Bull.\"\n\n\"Bull? //That// Bull?\"\n\nShe breaks out laughing.\n\n\"Yes, that one. He wanted to speak with my mother about an affair he was working on. I proposed to help him myself. At the time, I just wanted to see him in the flesh, to check if the legends were true. I learned they were bowdlerized. And that with his underhanded help, I could touch people I could not even approach under normal circumstances.\"\n\nShe understands who you're speaking of and produces some undefined whistling sound with her mouth. You can't say if that's a mark of enthusiasm, admiration or mockery.\n\n\"You //really// are your parents' daughter.\"\n\nYou choose to ignore her last remark.\n\n\"Long story short, to be able to work on such affairs on a regular basis, I first needed to become a public servant. The exact reason behind this obligation is one of the many mysteries of the administration. I then searched for a job meeting that condition and my convictions. And that's how I ended here.\"\n\nThe last part of your story just went over her little head, and she whispers out loud her real priorities.\n\n\"What can you tell me about what is happening up there? I have heard so many stories, and none of them make any sense. But you, you must have witnessed so many strange things. I'm eager to listen to them all. Chiefly the sauciest.\"\n\n[[You should really put the conversation back on tracks.->Just go, please]]",
+      "links": [
+        {
+          "text": "You should really put the conversation back on tracks.",
+          "destination": {
+            "name": "Just go, please",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Relationships",
+      "text": "{\n(set: $empathy to true)\n}\\\nWhat was her joke already? Some obscure //hanakotoba// reference. If Ikebana was there, she may have given a hint of a start of something resembling a smile when hearing it, but you missed the reference on the fly. And now, you're searching for it. Because it may have been no joke.\n\nIt takes you some time, but you finally get it.\n\n\"Relationship problems?\"\n\nShe agrees, now red as a kid surprised with their hand in the cookie jar. You reassure her.\n\n\"Everything you say is for my ears only. And whatever you may tell me, I'm not here to judge you. I'm here to listen to you, and that's all.\"\n\nShe shows some hints of hesitation, then speaks without her usual enthusiasm.\n\n\"I'm deeply attracted to n/a people. But all my relationships end quickly and badly. How can I explain it?... Let's say that before, it always looks like it will be fabulous, and at dawn, I realize it was just normal.\"\n\nAh. Fetishist attraction. Nothing special. No need to beat around the bush for so long.\n\n\"Indeed, people tend to be only people and not embodied fantasies.\"\n\nYou readjust your position to be more comfortable for a long discussion.\n\n\"I have no miraculous solution for that problem, but that's indeed something we can talk about here.\"\n\nThe next moment, hell breaks loose. She resumes speaking at an extremely fast pace, telling you one crude story after the other, her bag of anecdotes apparently bottomless.\n\nOne good hour later, she realizes she really has to go meet some obligation, and runs out with an expedited \"thanks and see you next time\". You pretty much did nothing but listen to her, but at least it looks like it helped her feel better, which is the only thing that counts.\n\n[[As for your day, it is not over.->Bibliography]]",
+      "links": [
+        {
+          "text": "As for your day, it is not over.",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Freedom Price",
+      "text": "One article among the many published for the 10^^th^^ anniversary of the \"Chaos, out!\" law.\n---\n//Freedom Price//.\n\nThat's what its inhabitants now call it. A name of their own, opposing the official and dehumanized \"special area\" of the administration, the insulting //Insane City// of its most enraged adversaries, and its original and obsolete title, Winterfield.\n\nThose four names make for a great summary of the story of this place. Just another town named by unimaginative immigrants at first, next a legal experiment gone horribly wrong^^1^^, then a dangerous political tool, and finally an independent city state.\n\nSome would object that it is not that independent, as it survives on importing food and electricity from the country surrounding it, but when a country puts walls and barbwires around a location, when it prevents any people from going in or out and washes its hands of anything that could happen behind the concrete, it cannot seriously pretend it still considers it its own.\n\nPeople who remained inside, either by ideological conviction or by lack of choice^^2^^, quickly felt they needed a name to express that this was a new city that was being born through isolation. A name they could take pride in, reminding the world that they were people in their own right, and not just unofficial prisoners.\n\nHence //Freedom Price//. Freedom's price. The price of freedom. Freedom, even if harshly paid for.\n\nA beautiful name. Almost unheard of on this side of wall, even in this era where technology is supposed to connect us all, as it is tacitly banned from most medias, from both the old and the new guard, who prefer to use names //we// coined for //them//.\n\nAnd, of course, a name unrecognized by any government. Because recognizing it means also accepting that Freedom City is now its own country, and should be treated as such, as an equal, not a vassal.\n\n1. On purpose? See our other article //Unlimited Freedom, a law designed to blow up//\n2. See the article //Choice, the luxury of the riches//\n\n(display: \"Back to appropriate\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Back to appropriate",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "The ikebana style",
+      "text": "Transcript of the last segment of a middle afternoon TV show (original video file is attached, but low quality)\n---\nHost: And now, our trends page. Today's guest is Konohama-//sensei//, world-renowned ikebana specialist, who honors us with her presence. She will tell us all you need to know about this new fashion known as ikebana style. Ms. Konohama, hello.\n\nGuest: Hello Marie-Louise. But sadly, I can't tell you anything about this \"ikebana style\".\n\nH: Surely you jest. You are a graduate from the best schools, received many distinctions for your own creations...\n\nG: I have some knowledge of the flower arrangement art known as ikebana, yes. But I know nothing of fashion. Actually, I only accepted your nice invitation for the opportunity it gives me to make the difference clear.\n\nH: But isn't the ikebana style based on the ikebana you practice?\n\nG: They do have some common points of course. They both make use of //hanakotoba//, the Japanese flower language, and they share some other color and material symbolisms. But you shouldn't confuse a bridge with a well on the pretense they are both built of bricks. Likewise, the traditional ikebana is an ancestral minimalist art with complex and stiff rules while this fashion is far more baroque, extensive and chaotic.\n\nH: I see. So you're saying this trend is a bad counterfeit of the real ikebana?\n\nG: That's totally not what I said! I don't rank art styles, even if they are some I love better of course. If I can't approve its name, one its creator never coined by the way, as Ikebana is her //nom de plume// but she never actually named her clothing style, I still appreciate it for its aesthetic and empathic values.\n\nH: Empathic?\n\nG: Indeed. If all pieces of art are trying to convey a message, this one is particularly direct in its approach. And that's not without problems as it makes use of a language designed to be equivocal and elliptical. Thus, without context, each outfit it produces can be interpreted in many different ways, often contradictory. It's only when worn by its creator that it acquires its proper sense, the behavior of the human inside completing the message. Hence why empathy is the key to this art.\n\nH: Interesting analysis, but Ikebana's infamous associability kind of refutes it.\n\nG: Does it? To have difficulties communicating through speech does not mean one doesn't want to communicate with others at all. And to get over this contradiction, one may need to create their own way of communicating.\n\n(display: \"Back to appropriate\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Back to appropriate",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Accountant",
+      "text": "{\n(set: $accountant to true)\n(save-game: \"Main\")\n}\\\n\"Hello Hope. How are you?\"\n\nYou know that voice. You hear it about once a week, as it belongs to one of your most regular visitors.\n\nHe is tall and skinny, wears the standard shirt, tie, and good shoes of those who work in the business district. Nothing special, as long as you don't look higher than his neck. Past this point begins the wooden mask entirely hiding his face.\n\nHe owns several different masks, but they all share the same traits, and this one is not different: refined, stylized, relying on a very limited color palette. You know he sculpts and paints them himself, but you don't know how or from what he takes his inspiration. That's not a subject he talks about, nor one he needs to talk about.\n\n\"Hello John. Everything's fine. And on your side?\"\n\n\"New mission.\"\n\nIn other words, new colleagues.\n\n\"How is it going?\"\n\n\"Not that good. I've been sent by the judge to audit some big company with shadowy accounts. Let me tell you they didn't welcome me with open arms. For them, I'm a spy they're forced to accommodate. They can't kick me out, but they can spit in my coffee.\"\n\nHe taps his mask.\n\n\"Obviously, this has attracted its fair share of nasty comments. But I honestly think they would have found another way to insult me without it.\"\n\n\"How much time?\"\n\n\"At least one month. More if I find something fishy, which is the most likely option.\"\n\nYou nod.\n\n\"Anything I can do about that?\"\n\n\"Not really. That's more or less how my job is supposed to work. If it really gets out of hand, there's a whole service dedicated to solve problems of that kind. As you can guess, it's quite common in the business.\"\n\n\"OK. Fine then.\"\n\nA heavy silence follows this last sentence.\n\nThe first time you met John, he was having a ton of problems, and sessions were long and complex. But some months ago, his life took a right turn, and you don't have much to say to each other. Your discussions have evolved into unimportant exchanges of banalities, of little stories with little consequences.\n* (if: $violence)[ [[Continue to speak as usual.->What are you hiding?]] ](else:)[ [[Continue to speak as usual.->Nothing to say]] ]\n* [[Tell him you don't think it's necessary for you two to see each other every week.->You don't need me anymore]]\n* [[Just politely end the conversation there.->Next time]]",
+      "links": [
+        {
+          "text": "Continue to speak as usual.",
+          "destination": {
+            "name": "What are you hiding?",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Continue to speak as usual.",
+          "destination": {
+            "name": "Nothing to say",
+            "pid": 38
+          }
+        },
+        {
+          "text": "Tell him you don't think it's necessary for you two to see each other every week.",
+          "destination": {
+            "name": "You don't need me anymore",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Just politely end the conversation there.",
+          "destination": {
+            "name": "Next time",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "Here he calls",
+      "text": "{\n(set: $bibliography to it + (dataset: \"bull\"))\n}\\\nYour cellphone rings. Not your personal one, but the one you keep for work-related affairs only. The one only one person uses.\n\n\"Hello Bull. How's business?\"\n\n\"I could tell you to stop calling me like that, as I said to your mother about a thousand times, but this has been too long a week for our comic duo.\"\n\n\"You don't call just to say hello.\"\n\n\"Jake Jackson, ring a bell?\"\n\n\"Never heard of the guy. He sounds like a Stan Lee character with his double J.\"\n\n\"He filed a complaint against you a few hours ago. He says... Let's me read this... That you allured him while he was only minding his own business, that you brought him to your lair, and that you savagely assaulted him once behind closed doors.\"\n\n\"Skinhead?\"\n\n\"Yeah.\"\n\n\"I wrecked one this morning. He came to my office to remodel my head with a baseball bat and I wasn't so inclined. The rest is bullshit.\"\n\n\"I'm a bad influence on you. But yeah, must be the same guy. And with your usual subtlety, I'm about sure you left enough fingerprints or blood on him to prove three times that you did hit him. Outside of the incontestable, it will be your version against his.\"\n\n\"As usual.\"\n\n\"My little Hope (you hate when he starts speaking to you like that; that he is older than your parents is no excuse), I know that thinking before doing is not something that you do in your family, but there is a moment when one needs to stop acting like a total idiot. If he has the guts to properly sue you, no one can say how it will end. There are judges in this city who will swallow anything as long as they can put you behind bars.\"\n(if: $phone)[\n\"Bull, I tried to play the good girl. In exchange, you sent me two idiots far too late.\"\n\n\"Hope, I do what I can too. I'm not exactly patrolling your neighborhood day and night, so I just passed the message to your local police station. Not my fault if they're idiots.\"\n\n\"Not mine either.\"\n\n\"You won't avoid this conversation by trying to push the guilt on me lady.\"\n]\n\"Fine. Just put the file on the pile, with the others.\"\n\nMost people wouldn't flag Bull as a creative person, but the maelstrom of unexpected swear words now sprouting out of your phone proves he is far from being devoid of imagination.\n\n\"I don't even know why I still care about you and your damn family.\"\n\n\"Dunno too.\"\n\n\"On a different note, you're still OK for tomorrow's mission?\"\n\n\"Don't worry, I'm reckless yet organized. I will be at the caf\u00e9 as planned.\"\n\n\"OK. See you soon, idiot.\"\n\n\"See you soon, old man.\"\n\nIn spite of your put-on nonchalance, you're not happy with how things are evolving, if only because this problem is going to take time away from more important things.\n\nBut at the moment, there's nothing you can do to change that fact. [[So you go back to work.->Accountant]]\n",
+      "links": [
+        {
+          "text": "So you go back to work.",
+          "destination": {
+            "name": "Accountant",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "James Alexander",
+      "text": "Scan of the original paper report and of its handwritten annotations, plus retyped copy to make reading and searching for information easier.\n---\n''Ministry of Justice''\n\n''Confidential''\n\nIntroduction: A brief summary of James Alexander's career inside the police force\n\nPushed by poverty, James Alexander applied for a policeman job soon after he was of age and passed the entrance test with mediocre but sufficient results. To quote his examiner from that time: \"Unmotivated, but able enough to do what he will be told\".\n\nEven though those words show that not much was expected of him, he still succeeded in disappointing us, quickly proving himself to be an immoral, greedy sloth, his only remarkable skills being his incredible ability at dodging work and his expertise at becoming blind and deaf for a reasonable sum.\n\nSadly, nowadays, not a single piece of evidence of his implication in any bribery case still exists, as he was lucky enough to perpetrate his crimes soon before the Raingate scandal was brought to the light. In the great panic that followed this reveal, a massive amount of files were put to the torch by overreacting officials to make sure not the smallest trace of their involvement remained. Alexander's were among them.\n\nThen came the great clean-up, with many undesirable officers moved to services with less opportunities to do anything illegal, or at least farther away from public eyes. M. Alexander was thus transferred to a very bureaucratic position, overseeing people under house arrest. It should have been a dead end for his career.\n\nIf only ''Psy'' had not been one of the criminals under his responsibility.\n\nYears after the fact, it may sound crazy to have ever put such a dangerous convict under such an unreliable surveillance. But that was another time, over two decades ago, long before the social and political upheaval in which Psy played a key role. At the time, she was just yet another activist.\n\nThey quickly became partners. She was giving him money, he was helping her cheat the surveillance system. When things turned more complex, with the access restrictions to the newborn //special area// quickly piling up, he became a key member of her network. Thanks to his situation within the police and his own net of connections among petty criminals and other unscrupulous characters, sometimes colleagues, he could, in exchange for even more money, help her and her friends cross the wall both ways.\n\nThis \"mere smuggling\", to reuse the expression of one of his then superiors questioned for this investigation, is what enabled Psy's interference with the proper resolution of the official inquiry regarding the //Unconcerned Murders// case. You may recall it as a long series of violent deaths among marginal people, with pretty much no media coverage until the rising star Psy and some of her famous friends brought it to TV in an explosive manner. After that slip of communication, the police went under the spotlights, and were soon accused of not doing their best to solve the affair quickly because the victims were not exemplary citizens.\n\nAn uncomfortable position, which turned especially bad when the affair was solved... by Psy and Alexander. Perhaps not only by themselves, but at least without any official help.\n\nIn this context, with the political tensions on both sides on the wall at their peak, we were forced to sit at the negotiating table with orders from above to do anything to save face. This ended with the skulduggeries of M. Alexander somehow made official. Formally, he was retroactively made head of a small independent unit with special permission to go through the border at will and allowed to temporarily extend this privilege to guest advisors. Thus, his and Psy's implications were now legal.\n\nThis arrangement should have been shut down as soon as the masses' attention had moved elsewhere, but politics being politics, it still exists today, and M. Alexander is still part of it. The other side even says it evolved into a proper police force, \"actually protecting and serving instead of enforcing order by silencing protest\" (their leader's words), but, please pardon me for the crude language, I call //bullshit// on this.\n\nThe favorite word of M. Alexander by the way, one he cannot help but pronounce in front of any microphone crossing his path.\n\n(display: \"Back to appropriate\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Back to appropriate",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "What are you hiding?",
+      "text": "John is no idiot and he knows you well, and as the conversation goes on for some time, he gets that you're trying to hide your hand from him.\n\n\"Hope... What happened to your hand?\"\n\nYou try to stop him before things get loose.\n\n\"Nothing. Everything's fine, John.\"\n\"No, they're not. That's a fresh wound. And...\"\n\nHe looks around, searching for clues, and, as you didn't clean very thoroughly after this morning's incident, quickly finds them: A damaged chair, some recently dried-up blood... Not enough to picture the whole scene, but enough to get some ideas.\n\n\"Hope, what the hell happened?\"\n* [[Tell him the truth.->You deserve to know]]\n* [[Cut short the discussion.->You don't need to know]]",
+      "links": [
+        {
+          "text": "Tell him the truth.",
+          "destination": {
+            "name": "You deserve to know",
+            "pid": 39
+          }
+        },
+        {
+          "text": "Cut short the discussion.",
+          "destination": {
+            "name": "You don't need to know",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Nothing to say",
+      "text": "With a bit of creativity, one always finds something to discuss about.\n\nThe session soon descends into a tea party, sadly without the cakes, as each of you tells their own personal insignificant stories.\n\nHalf an hour later, time enough to justify this was not an useless visit, John wishes you a good day and departs. As for you, you're actually happy, as this discussion was quite pleasant even if it didn't go anywhere.\n\nA smile on your lips, [[you return to work.->Bibliography]]",
+      "links": [
+        {
+          "text": "you return to work.",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "You deserve to know",
+      "text": "{\n(set: $fragile_john to false)\n(set: $rebel_john to true)\n}\\\nYou tell him everything about what happened this morning. You don't mention the similar incidents that have happened in the past, but he is not stupid.\n\n\"That's not the first time something like that happened, is it?\"\n\n\"Indeed.\"\n\n\"And don't you fear that, one day, it won't be so easy? That you will have to face someone stronger, or better armed, or accompanied by a gang? That you will be helpless and truly hurt, or worse?\"\n\n\"John. That's a danger existing above all of our heads. Mine, yours, and a lot of other people far more vulnerable. We aren't going to hide under a rock until the end of time, so we have to live with it.\"\n\nHe is not satisfied with your answer, but accepts it.\n\n\"For your judiciary troubles, I may be able to help. That's my domain after all. In part at least.\"\n\n\"John, don't burn your wings for me.\"\n\nYou suddenly stands up as he remains seated. You're shorter than him, by a fair amount, but in this position you feel like you're towering over him.\n\n\"I'm serious John. I have things sorted out. Don't be a fool.\"\n\n\"Hope, I respect you more than anyone else. But you really have to learn that, sometimes, the best course of action is to let people have their own folly.\"\n\nYou're fighting the urge to tear off his mask. You know that if you do so, he will lose all his confidence at that instant, reverting to the state of a terrified baby unable to contradict you. And you also know that if you were to do something like that, you would be as much of an asshole as the guy you punched this morning.\n\nSo you sit down, and, as if you were a reasonable adult, you ask him to tell you more. And he does. What he is telling you is actually not stupid, and he knows his stuff about how justice works in this city, especially the backstage part. When he leaves you one hour later, you have learned a lot, and are feeling more confident about the development of this affair.\n\n[[You open back your computer to note a few things quickly.->Bibliography]]",
+      "links": [
+        {
+          "text": "You open back your computer to note a few things quickly.",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "You don't need to know",
+      "text": "\"Nothing you need to worry about.\"\n\n\"Hope...\"\n\n\"John I know how to protect myself. Do not worry about me. Worry about yourself instead.\"\n\n\"Sorry, but no.\"\n\nHe articulated this last word with a determination he has never accustomed you to.\n\n\"Hope. You should remember you're no superheroine. You may have an incredible strength of spirit, you mother may be a legend, but you don't need to do everything all by yourself. You're always there to help us when we are in a pinch. Let us help you for once.\"\n\nJohn, straight on his feet, arms crossed before his chest, looks like he is not going to move until you answer him. This is a bit ridiculous, but you're too stunned to laugh. Instead, you reveal the truth.\n\n(display: \"You deserve to know\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "You deserve to know",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "You don't need me anymore",
+      "text": "\"John, I don't think we still need to see each other this often.\"\n\nHe instantly stiffens up.\n\n\"You've made peace with yourself, successfully returned to the outside world, secured acceptable employment, solved all of yours big problems. You don't need me anymore. Except in case of an emergency, one routine visit per month should suffice from now on.\"\n\nYou of course can't read any emotion on his face, but you know him enough to decipher the reflex movements of his body: He is freaking out.\n\nJohn used to have dangerous panic attacks. Dangerous for himself. They more or less vanished as his situation got better, but his current state makes you fear for a relapse.\n* [[Immediately attempt to calm him down.->Please calm down]]\n* [[Give him a little more time.->I knew this day would come]]",
+      "links": [
+        {
+          "text": "Immediately attempt to calm him down.",
+          "destination": {
+            "name": "Please calm down",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Give him a little more time.",
+          "destination": {
+            "name": "I knew this day would come",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Please calm down",
+      "text": "\"Of course, my door will always remain open for you. It's just that I don't think you still need to come so regularly.\"\n\nYour explanations soon turn cyclic, repeating again and again the same idea with different words, a reassuring chant. John agrees from time to time, but without much motivation and without adding anything new himself. When you stop, he barely concludes.\n\n\"You're right. As always.\"\n\nHe gets to his feet and prepares to leave.\n\n\"See you next month Hope.\"\n\nSeeing how feeble he is on his legs, you're starting to feel guilty.\n\n\"See you next month. Don't hesitate to call if you have any problem.\"\n\nHe nods and stumbles out. You're about to go after him, but he manages to find back his balance and leaves without more difficulty. He looks so troubled that you debate pursuing him. And since hesitating takes time, once you've made your mind, he is already out of sight.\n\nYou look at your phone, taking note to call him later to check if he is okay. Just in case. Better safe than sorry.\n\nFor now, [[you return to your work.->Bibliography]]",
+      "links": [
+        {
+          "text": "you return to your work.",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "I knew this day would come",
+      "text": "{\n(set: $fragile_john to false)\n(set: $john_acceptance to true)\n}\\\n\"Indeed, I reached the same conclusion by myself.\"\n\nThat's not exactly what you expected him to say, but, in spite of his broken voice and the few stress sweats he broke, he doesn't look so bad. Afraid, nervous, yet relieved. He goes on, still quavering.\n\n\"You know, I think I can never thank you enough. Six months ago, I was in pieces, and now... things are alright. My life's not perfect, but it's a life, not just my body refusing to give up. The time when I was only rising up in the morning because I simply couldn't physiologically get more sleep and couldn't sleep at night because I was too afraid of the next day is over. Nothing short of a miracle for me.\"\n\nHe barely raises his hand, then quickly returns it to its original position, in an aborted move you fail to comprehend.\n\n\"You're doing good work, Hope. Never doubt it. You're no superheroine, you cannot do everything by yourself, you cannot succeed every time, but you're doing good. For a lot of people, you're a ray of hope.\"\n\nHe pauses, searches for his words.\n\n\"I was extremely lucky to ever meet you. And that's why I understand perfectly that I need to stop abusing your time when there is no more need. A time others as desperate as I used to be need.\"\n\nHe stands up.\n\n\"See you... I don't know when. In several months probably. Just to show you I'm alive and healthy.\"\n\nYou look at him carefully. Good or bad, he made his decision and you respect it.\n\n\"See you next time John.\"\n\nAnd he departs, his walk a little clumsy. You escort him to the door, where he wishes you well again, and leaves to return to his life.\n\nYou close the door behind him. [[And return to your own.->Bibliography]]",
+      "links": [
+        {
+          "text": "And return to your own.",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Me",
+      "text": "{\n(save-game: \"Main\")\n}\\\nYour workday is coming close to its end. Just one more visitor and you will be done.\n\nYou get to your feet, go lock the door, then come back and put your hands on the table, facing the empty chair.\n\n\"You're one crazy lady, you know that?\"\n\n\"Depends how you define crazy.\"\n\n\"Hello? Who do you think you're talking to?\"\n\n\"It's but a simple introspection exercise.\"\n\n\"Beautiful demonstration. You're not mad because you say you're not mad. That's almost word for word what mom used to say, and the reason they started calling her \"Psy\".\"\n\n\"\u2018Several renowned doctors have stated that I am suffering from half the mental diseases listed in their books. I state that I am perfectly sane. Why should their words weight more than mine?\u2019\"\n\n\"Nice subject for a philosophy essay. But not the one on today's plate. We're here to talk about your words and your acts, not mom's.\"\n\n(if: $legal_mary >= 2)[ [[\"Interesting.\"->Composed]] ](else-if: $violence)[ [[\"Let's begin with what's //really// worrying me.\"->Blood]] ](else:)[(display: \"Discussion start\")]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Discussion start",
+            "pid": 54
+          }
+        },
+        {
+          "text": "\"Interesting.\"",
+          "destination": {
+            "name": "Composed",
+            "pid": 55
+          }
+        },
+        {
+          "text": "\"Let's begin with what's //really// worrying me.\"",
+          "destination": {
+            "name": "Blood",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Joss - Clash",
+      "text": "\"Just why did you speak to them like they were some kid?\"\n\n\"I didn't speak to them like they were some kid.\"\n\n\"You advise them to go cry to their parents. Implied they wouldn't get over it without the help of some responsible adults, an indirect way of saying that they were still kids.\"\n\n\"Not at all. I just considered that what they needed first was allies among their relatives.\"\n\n\"If you were the one receiving such advice, would you have complied?\"\n\n\"No.\"\n\nYou needed no time to think about that answer, that came right from the heart. But you need some time to understand what it means.\n\n(if: $fragile_john)[ [[\"Perhaps I indeed made a mistake.\"->Double fear]] ](else:)[ [[\"Next?\"->Meh]] ]",
+      "links": [
+        {
+          "text": "\"Perhaps I indeed made a mistake.\"",
+          "destination": {
+            "name": "Double fear",
+            "pid": 49
+          }
+        },
+        {
+          "text": "\"Next?\"",
+          "destination": {
+            "name": "Meh",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Joss - Frenzy",
+      "text": "\"What is wrong with your head exactly? Do you realize what you said to that youngster? Please, just throw them into the lion cage, you will save them a bit of time.\"\n\n\"Reasonable, moderate, safe advice, they can get from anywhere else, and they already got it. If they grasped enough courage to come here specifically, it's for out of the box, out of the golden prison, counsels.\"\n\n\"There's //alternative// advice and there's //suicidal// advice.\"\n(if: $john_acceptance and $empathy and $human_psy)[\n\"You're overreacting.\"\n\n\"Plus, you make no sense. You tell some to act crazy, and on the other hand you take great care of not hurting others. The small and frail ones, you push them forward, the big ones, you let them go slowly?\"\n\nYou ponder her last remark.\n\n(display: \"Humanity\")\n](else:)[\\\n(if: $rebel_john)[\n\"Don't underestimate people. They're not always as frail as they appear to be. Especially if someone believes in them. Look at John.\"\n\n\"John is twice their age, and three heads taller!\"\n\n\"Yes. But six months ago, he was spending his days locked in his room, afraid of ever going out, so ravaged by doubts that doing anything was absurdly difficult. And that changed.\"\n(if: $empathy)[\nShe is not convinced.\n\n\"John changed so much because he is enamored with you. In my opinion, you just made a time bomb of him.\"\n\n\"Once again, you assume with little evidence. Sometimes, you need to trust people.\"\n\n\"I will believe in such clich\u00e9s when you start trusting yourself.\"\n]]\nShe sighs.\n\n\"You know the worst part? I don't dislike the idea itself. But I'm quite angry that you introduced it, not without reason, as something Onawa would have said. Must you always be [[mom->Mama]]'s understudy?\"]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Humanity",
+            "pid": 63
+          }
+        },
+        {
+          "text": "mom",
+          "destination": {
+            "name": "Mama",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "Mama",
+      "text": "\"Please stop talking about mom.\"\n\n\"Hard for me to do when everything in your life resolves around her, when you're unable to even say hello without making a speech about mom.\"\n\n\"Because people start asking me questions about mom before they even say hello.\"\n\n\"No excuse. You could rebuke them, bluntly refusing to talk about that specific topic or dodging it with diplomacy.\"\n\n\"A helpful dialog must be built upon trust. And trust goes both ways. For others to trust me enough to speak freely about themselves, I must accept that I have to reveal things about myself.\"\n\n\"Except you don't talk about yourself. You talk about mom.\"\n\n(if: $eyes)[She got more in her hat.\n\n\"You want another example? You've gone so far as copying her mythical gaze.\"\n\n\"OK, now I'm guilty of having my mother's eyes. What's next?\"\n\n\"You know perfectly what I mean. You are using //her// legend to make people cower in fear. Do you really think those dummies would run for their life at your nasty look if you were just another girl in the crowd? That's mom's legacy they're fearing through you, nothing else.\"\n\n]\\\nShe grumbles.\n\n\"There's a perpetual confusion in your words, in your acts, between you and mom. The line's so blurry I have a hard telling what the Hope persona is bringing that a recorder tirelessly repeating mom's achievements couldn't.\"\n\n(if: $why_this)[ [[ You need a little time to compose your answer.->Legacy character ]] ](else:)[(display: \"Discussion end\")]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Discussion end",
+            "pid": 57
+          }
+        },
+        {
+          "text": " You need a little time to compose your answer.",
+          "destination": {
+            "name": "Legacy character",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Legacy character",
+      "text": "Just how many times in your life did you have to justify the big choices you've made? Just how many people, including yourself, have accused you of being a fraud, a glorified follower of the path your mother made for you?\n\nThrough sheer repetition, you know exactly what to answer.\n\n\"I knew when I decided on such a job I wouldn't be able to avoid the constant, never-ending, unbearable, insufferable comparison with my mother, or, more exactly, with an idealized version of her. I knew people would keep searching for any detail, no matter how insignificant, proving, whatever that means, that I'm just copying her. That's no challenge when I pursue similar ideals, when my job is more or less in the same domain, when I look a little like her and share some of her mannerisms. Newsflash: She is my mother. Of course we have things in common! Heck, for instance, we both breathe and eat. Incredible!\"\n\nAs for breathing, yours is currently heavy.\n\n\"I knew it. But I went this way regardless. Because it was what I wanted to do. I wanted to help a cause that I believe in. Even if I am to be mocked as a poor copy of my mother. Actually, is this really a problem? Perhaps I am indeed but a mere shadow of the awesomeness of my mother. But you have no need to be the very best to do good. The world can't be made up only of exceptional people, it needs its fair share of average ones to turn around. Doing only so-so because you are only so-so is still better than doing nothing out of fear to not be perfect.\"\n\nYou're still not done.\n\n\"I know what you're about to object. Does any of this give me the right to make use of my family name, to exploit the legacy of my parents? The answer is yes. If that helps me in doing a better job, if that helps me in helping other people, yes. Just yes. And I think it does help. If only as a permanent reminder that Psy is another human, one named Onawa, an ordinary and thus flawed human with likewise children, a person they can really relate to instead of some inaccessible supernatural being whose case is so different from them.\"\n\nYou. Need. To. Catch. Your. Breath.\n\nOnce you've cooled down, the now croaky voice rings again.\n\n\"Are you fine? Did you regain your composure?\"\n\nYou agree with no motivation.\n\n(if: $eyes and $rebel_joss)[ [[\"Good. Because I'm not over.\"->Like mother, like daughter]] ](else:)[(display: \"Discussion end\")]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Discussion end",
+            "pid": 57
+          }
+        },
+        {
+          "text": "\"Good. Because I'm not over.\"",
+          "destination": {
+            "name": "Like mother, like daughter",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Double fear",
+      "text": "\"And John? Same. Don't you think it's time to let him fly by himself?\"\n\n\"John has a delicate personality and a complicated past. Rushing him could have tragic consequences, even now.\"\n\n\"Is he fragile, or do //you// suppose he is fragile? There's a world of differences between the two. And I won't even talk about the possibilities that you're preventing him from reaching his full potential by overprotecting him. Do you think [[mom->Mama]] would have been so tame?\"",
+      "links": [
+        {
+          "text": "mom",
+          "destination": {
+            "name": "Mama",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Like mother, like daughter",
+      "text": "\"Are you thinking what I'm thinking?\"\n\n\"Obviously yes, but I still need to hear it out loud.\"\n\n\"Good. Then here I go. I think that a part of you wants to be like mommy. No, that's not exactly it. It does not want to be her, but it wants to be an over-the-top n/a like she was in her younger days, as unsettling, chaotic, dangerous. Someone void of any limit, with no care for the rules. An unstoppable, incontrollable fire doing whatever it wants.\"\n\nIt's your own voice, and it's the hissing pitch of a snake at the time.\n\n\"But you've got responsibilities now. You cannot just go all wild until the consequences of your actions catch you. There are people depending on you. Needing you as their rock. You're allowed to be crazy, but you have to remain stable. And we've reached the point where things have taken a vicious turn. As you are encouraging people to break free of their own inhibitions, when at the same time you are nothing but a pack of barely restrained urges. How hypocritical is that?\"\n\n\"Shut up.\"\n\n\"Or perhaps it's even worse. Perhaps you are not helping them fulfill their own needs, but you're pushing //yours// upon them.\"\n\n\"Shut up.\"\n\n\"Refusing to speak will not help you. If you felt the need to give a voice to your internal conflicts, it's not without reason.\"\n\n\"Shut. Up.\"\n\nYou shut your damn mouth tight. Because this conversation cannot go anywhere good.\n\nLife is about choices and sacrifices. You cannot be a rock star, an astronaut, and a firefighter all at the same time. When you accepted this job, you knew it meant locking down the most savage part of yourself. That you would need to keep yourself in check. That crossing the line could destroy all or part of what you've done. That you must not break loose even if it means taking upon yourself some humiliation, pain, and frustration. As your mother did in her time, as proud as she may be.\n\nYou are not sure that this is the //right// choice. But this is the choice you have made, and you intend to pursue it until its conclusion.\n\nYou sit down. Catch your mirror and look at yourself in it. Without surprise, your reverse double looks at you with disturbingly reddish eyes. Even your body is reminding you that that rage is part of you.\n\nBut now is not the time to unleash it. So you stay seated, locked in your own office, waiting for your eyes to return to a more //normal// color.\n\n(set: $endings's psy to true)(css: \"font-size: 2em; font-style: italic\")[Ending 2: Like mother, like daughter]\n\n[[After the end->End]]",
+      "links": [
+        {
+          "text": "After the end",
+          "destination": {
+            "name": "End",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Init",
+      "text": "{\n(if: (saved-games:) contains \"Main\")[\n(load-game:\"Main\")\n](else:)[\n(set: $permanent_bibliography to (dataset:))\n(set: $endings to (datamap: \"psy\", false, \"change\", false, \"empathy\", false, \"normal\", false, \"blood\", false))\n(display: \"Artist\")\n]\n}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Artist",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "End",
+      "text": "{\n(set: $credits to true)\n(set: $permanent_bibliography to it + $bibliography)\n(set: $bibliography to $permanent_bibliography)\n(save-game: \"Main\")\n}\\\nYou have reached one of the 5 possible endings of this story. And now, you are facing yet another choice. You can stop your reading right here. Or [[you can start again->Artist]], to try another path, to experiment with other options. The choice, as always, is yours.\n\n**Unlocked endings**\n0. (if: $endings's normal)[Just another day](else:)[???]\n0. (if: $endings's psy)[Like mother, like daughter](else:)[???]\n0. (if: $endings's change)[An unknown future](else:)[???]\n0. (if: $endings's empathy)[Confidence](else:)[???]\n0. (if: $endings's blood)[No limit](else:)[???]\n**Unlocked documents**\n(display: \"Books\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Books",
+            "pid": 60
+          }
+        },
+        {
+          "text": "you can start again",
+          "destination": {
+            "name": "Artist",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Blood",
+      "text": "\"I won't feel sorry for this bad excuse for a human being. However, I'm still awe-struck at how easily you rely on violence. And by the dark pleasure you take from it.\"\n\n\"I've never sought a fight.\"\n\n\"Not actively yes, but when one knocks on your door, you jump at the call with a light heart. I think something inside your little brain loves to hit, strike, kick, punch, headbutt and so on. As I think it's probably not even the pain, taken or inflicted, you're after, but the simplicity. You love violence as a solution for how basic, how quick, how apparently efficient it is.\"\n\nShe takes a deep breath.\n\n\"No never-ending discussions for nothing, no constant bargaining for the simplest of rights, no need to constantly explain who you are and to prove your worth. Everything long, tedious, or humiliating replaced with your fist against someone's nose. The perfect solution. With the added bonus of getting you high on adrenaline.\"\n\n\"And when you fall back to earth, you realize you may have fixed nothing at all, and even made things worse.\"\n\n\"That's indeed a common pitfall. You know this as much as me. Yet, you still succumb to temptation quite often. Especially if it gives you a way to avoid your other problems.\"\n\n(display: \"Discussion start\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Discussion start",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Discussion start",
+      "text": "(if: $fragile_joss)[ [[\"Let's start by the beginning.\"->Joss - Clash]] ](else-if: $rebel_joss)[ [[\"Let's start by the beginning.\"->Joss - Frenzy]] ](else:)[ [[\"I'm unsure about how I should begin.\"->Meh]] ]",
+      "links": [
+        {
+          "text": "\"Let's start by the beginning.\"",
+          "destination": {
+            "name": "Joss - Clash",
+            "pid": 45
+          }
+        },
+        {
+          "text": "\"Let's start by the beginning.\"",
+          "destination": {
+            "name": "Joss - Frenzy",
+            "pid": 46
+          }
+        },
+        {
+          "text": "\"I'm unsure about how I should begin.\"",
+          "destination": {
+            "name": "Meh",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Composed",
+      "text": "\"I found your answers today especially measured. Everything's relative of course, but for you, knowing what you're capable of saying sometimes, it was almost tame.\"\n\n\"You're kidding me. Every other day, you criticize me for being too extreme, you blame my uncontrolled outbursts, and today, your reproach is that I have been too cautious?!\"\n\n\"Calm down. Because what's next will unnerve you even more. I'm there to give a voice to your doubts, and you actually awakened one of your greatest fears today.\"\n\n\"To sink so deep into madness I won't ever come out of it?\"\n\n\"This one is not even in your top 5. In the end, it mostly concerns you, while what you're really afraid of resolves around the rest of the world. No, I was thinking about the fear of losing your ability to understand your patients.\"\n\nYou groan.\n\n\"Don't use that word. It would mean that I consider them sick. And they're not.\"\n\n\"That's what you think //now//. What you fear is that tomorrow, you will use it without an afterthought. That you start seeing yourself as a sane doctor curing insane patients. And not the best of doctors, but the cold, prideful, righteous kind, doing it not to help but to establish your superiority over those asking you for help.\"\n\n\"I'm still a long way from the monster you describe.\"\n\n\"Yes. As the man on the edge of abyss is far from the ground below him. A little push, and things can change quickly.\"\n\n\"You're overdoing it. I may be more accommodating than I used to be, but that doesn't necessarily imply such deep and thorough changes. I may simply be having a good, or bad, depending on how you see it, day.\"\n\n\"I said it's one of your worst fears, I didn't label it as the most likely to come true. The most enduring however, it certainly is, as it is rooted in the greatest mystery: what you are.\"\n\nYou feel dizzy at the last words, spoken softly but echoing again and again in you ears. If there is a question at which you never found a satisfying answer, it's indeed \"Who am I?\". You never really got the whole \"Know thyself\" thing.\n\nFor example, right now, you live about three different lives, one at this job, one at your other job, and the last one in private. And each one displays different and sometimes contradictory aspects of your personality. The discrepancies are so considerable that you often doubt who you are in the end. If such an absolute truth does exist.\n\nSilence sets in as you ponder all of this. The simple fact that this conversation was so short is by itself a sign you did change. You are not who you were yesterday, and this will have consequences for tomorrow.\n\nNow, change can be a good thing as much as it can be a bad thing, and you're not necessarily in the wrong right now. It's up to you to make sure things stay on the right path, wherever it may take you.\n\n(set: $endings's change to true)(css: \"font-size: 2em; font-style: italic\")[Ending 3: An unknown future]\n\n[[After the end->End]]",
+      "links": [
+        {
+          "text": "After the end",
+          "destination": {
+            "name": "End",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "Meh",
+      "text": "\"You've got nothing to say to me? That's new.\"\n\n\"Oh, I've got about a thousand things I want to tell you. Actually, I think you made the wrong decision every time it was possible. But I can't manage to put my criticisms into words. Everything you did is so void of logic, each move contradicting the previous one, that I'm unable to pinpoint where exactly the problems lie.\"\n\nMarvelous. You managed to confuse yourself.\n\n(if: $empathy and $john_acceptance and not $fragile_joss and $human_psy)[(display: \"Humanity\")](else:)[You're sorta relieved by the silence, but it is short-lived.\n\n\"Actually, there is one constant remaining steady against all odds. [[Mom->Mama]].\"]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Humanity",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Mom",
+          "destination": {
+            "name": "Mama",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Discussion end",
+      "text": "\"Can we just stop talking about mom? It never ends anywhere.\"\n\n\"If you //really// want to avoid the subject, it's not like I can stop you.\"\n\n\"On the whole, I'm getting pretty tired. Just jump to the conclusion.\"\n\n(if: $rebel_john and $rebel_joss and $violence)[ [[\"As you wish.\"->Fire]] ](else:)[ [[\"As you wish.\"->Not interesting]] ]",
+      "links": [
+        {
+          "text": "\"As you wish.\"",
+          "destination": {
+            "name": "Fire",
+            "pid": 59
+          }
+        },
+        {
+          "text": "\"As you wish.\"",
+          "destination": {
+            "name": "Not interesting",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "Not interesting",
+      "text": "\"I have nothing to add actually. I already listed all points that bothered me in your behavior today. All are flaws to me, some are qualities to you, but in the end, they're all quirks you already knew of and that we've already discussed at length.\"\n\nIt's obvious she is, without surprise, as tired as you are.\n\n\"An everyday review may be interesting, but not necessarily useful. As for today, I'm not convinced by all the decisions you took, but you didn't trigger my alarm signal either.\"\n\n\"What a lukewarm conclusion.\"\n\n\"Yet, it's the best I can provide. Everyday can't be special, Hope. You did what you did. There's probably some good in it, and some bad too. But at this point in time, I simply can't say much more. If you had some time traveling machine, we could immediately jump to the future to see the consequences of your actions and then we could talk at length, but right now? I don't know.\"\n\nYou agree. Indeed, in spite of its many unexpected developments, today was not //that// special.\n\nPerhaps there will be change tomorrow. Perhaps one of this ugly building's walls will be covered with a fresh, slightly morbid but honest painting. Perhaps you will spend most of the day glued to your phone, to get some administrative or judiciary paperwork done. Perhaps will you need to handle, one way or the other, a devotee with no sense of personal space.\n\nBut this is a story for tomorrow. And you are only today.\n\n(set: $endings's normal to true)(css: \"font-size: 2em; font-style: italic\")[Ending 1: Just another day]\n\n[[After the end->End]]",
+      "links": [
+        {
+          "text": "After the end",
+          "destination": {
+            "name": "End",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Fire",
+      "text": "\"You're freaking me out.\"\n\n\"Didn't you already say that?\"\n\n\"Yes. And I will probably say it again. Because some anvils need to be dropped.\"\n\n\"You're still angry I kicked that guy's ass?\"\n\n\"It's not about him. It's far more generic than that. Not only are you a furious beast, but you also infect who you advise with your rage. Explicitly or indirectly, you're always encouraging them to charge at their problems head first, and to punch and kick until things get better... Metaphorically at least.\"\n\nYou bare your teeth.\n\n\"That's a lot of metaphors for little sense. I'm no sick beast.\"\n\n\"I wouldn't be so sure. And once again, I don't care much about you, but I do care about the rest of the world. And, whatever you may pretend, you are a person in a position of authority. Because of your family name. Because of your long experience within this community. Because of your very job as a counselor. What you say, what you do, has an influence on those around you. Especially on those who are lost, and who come to this office for that very reason, perfect vessels for your philosophy of aggressive transgression.\"\n\n\"How bad can be this be? Teaching people they don't have to passively accept every injustice life throws at them sounds like a good thing.\"\n\n\"Within certain limits, maybe. But knowing when to stop is not something you excel at. If you don't believe it, just look at your fingers. You hit like a maniac, without caring even a bit about the consequences of your actions, both literally and figuratively.\"\n\n\"You worry too much. Joss, John, everyone, they're far happier now than they used to be, at the dark time when they were afraid.\"\n\n\"My job is to worry. You call me for that. And I hope I exaggerate. But, just in case, watch out. There are some lines you should never cross.\"\n\nYou don't answer, because you don't need to, but you're troubled nonetheless. The line between what has to be done and what should never be done is blurry, so blurry. You may understand the //concept// of this line, but you may never be sure of where it stands.\n\nPart of you is saying you should calm down before it all goes boom. Another part of you is curious. It wants to know what extent an untamed fire can reach once started. And between a safe tepidness and a ferocious blaze, your heart is leaning towards the more dangerous option.\n\nAnd that's probably something you should consider cautiously.\n\nYou sit down to think about all that. And come to the conclusion you should probably discuss the matter frankly with your regular visitors. They're of course allowed to go wild, but they should make sure it's what //they// want and not some agenda you pushed upon them, even unconsciously. You're here to help, not to indoctrinate.\n\nAs for your own life choices, you've got no intention of backing down.\n\n(set: $endings's blood to true)(css: \"font-size: 2em; font-style: italic\")[Ending 5: No limit]\n\n[[After the end->End]]",
+      "links": [
+        {
+          "text": "After the end",
+          "destination": {
+            "name": "End",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Books",
+      "text": "---\n\n[[Preamble]]\n\n[[Mary Johnson]]\n(if: $bibliography contains \"n/a\")[\n[[n/a]]\n]\\\n(if: $bibliography contains \"devil's eye\")[\n[[Devil's eye]]\n]\\\n(if: $bibliography contains \"freedom city\")[\n[[Freedom Price]]\n]\\\n(if: $bibliography contains \"ikebana\")[\n[[The ikebana style]]\n]\\\n(if: $bibliography contains \"bull\")[\n[[James Alexander]]\n]\n---",
+      "links": [
+        {
+          "text": "Preamble",
+          "destination": {
+            "name": "Preamble",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Mary Johnson",
+          "destination": {
+            "name": "Mary Johnson",
+            "pid": 62
+          }
+        },
+        {
+          "text": "n/a",
+          "destination": {
+            "name": "n/a",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Devil's eye",
+          "destination": {
+            "name": "Devil's eye",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Freedom Price",
+          "destination": {
+            "name": "Freedom Price",
+            "pid": 32
+          }
+        },
+        {
+          "text": "The ikebana style",
+          "destination": {
+            "name": "The ikebana style",
+            "pid": 33
+          }
+        },
+        {
+          "text": "James Alexander",
+          "destination": {
+            "name": "James Alexander",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "Next time",
+      "text": "\"Well, in that case, and if you have nothing else to bring to my attention, I think we can end it here.\"\n\nHe agrees, picks his briefcase, puts on his vest, and salutes.\n\n\"Next time Hope?\"\n\n\"Next time John.\"\n\nAnd then he departs, ending his peaceful, uneventful visit.\n\nA few minutes later, you're deep in your [[work->Bibliography]] as if nothing happened.",
+      "links": [
+        {
+          "text": "work",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "Mary Johnson",
+      "text": "Unaltered scan of all papers found in the report folder.\n---\n//Cover//\n\n''Psychiatric evaluation of Mary Johnson''\n\nConfidential. Should only be accessed by the requester.\n\nEvaluation requested by: Social services.\nReason: Application of Ms. Mary Johnson to a public servant position (stricter procedure due to troubled familial background).\n\n[...]\n\n//Report conclusion//\n\nAs detailed in this report, Mary Johnson brilliantly succeeded at every single psychological test. She therefore has to be a perfectly sane woman gifted with above average intelligence. I have no medical objection to her getting the post she asked for.\n\n//Attached handwritten document//\n\nI write here what I cannot write in the official report, as I cannot prove it and some ill-intentioned persons could accuse me of being biased by my personal opinions and sue me for that. Troubles I do not desire, but my conscience compels me to, regardless of danger, write the truth somewhere.\n\nWhat I actually think of this crazy bitch is that she is a manipulative psychotic madwoman following her own agenda. As is her mother. And I am not speaking of the poor Ms. Johnson there.\n\nShe studied psychiatry. She knows what those evaluations consist of. She knows what she had to do and say to tick all the right boxes and avoid the bad ones.\n\nThese tests are thus meaningless in her case. They prove nothing. While, on the other hand, we have a lot of evidences she shares her biological mother's madness. Should I remind you that, despite your services' best efforts to provide her with a loving and stable family, she re-established and tightened her links with the devilish Psy through the years? Clearly, this is not the behavior of someone trying to fit properly into society.\n\nYou are about to welcome as one of your owns a devious spider, and I fear there is no legal way you can avoid that. She is too smart not to get what she wants, as is her mother. But you can still take the appropriate measures to limit her bad influence to the bare minimum.\n\nI hope you will do so.\n\n(display: \"Back to appropriate\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Back to appropriate",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Humanity",
+      "text": "\"What you call inconsistent, I call appropriate. Instead of basing my decisions on a set of generic and arbitrary rules, I considered each case independently and tried each time to choose the best outcome for that person. A tailor-made solution for each one instead of a loosely fitting mass-produced fix.\"\n\n\"Beautiful words. Admirable philosophy. But should I remind you you're not really the most empathic of people? Please refresh my memories, how many decades did it take you to understand that girl was hitting on you?\"\n\n\"This is not a race you know. As long as you understand right and in time, even if you're late, it's good enough. And actually, I think I'm getting quicker and more precise through accumulated experience.\"\n\n\"That's another way of saying you're still wrong most of the time.\"\n\n\"You see the half-empty glass, I see the half-full one. As always. But in this case, I'd rather make mistakes and get better at this job than stupidly use some mechanical methodology. There are no hard rules with living beings, only trends and biases.\"\n\n\"Did you just confess to sometimes making errors? //You//?\"\n\n\"Not without difficulty, but yes, I did. It's possible this work has managed to make me a little more mature.\"\n\nSilence. You're not supposed to accept your flaws that easily. But as you just said, perhaps you are indeed growing up. Or perhaps you are in a good mood, and that makes you more open to criticism.\n\nBecause you proved, or at least you think you did, that you were able to read others with a certain degree of efficiency. Something your parents are not really good at. Especially Ikebana of course, but also, sometimes, Onawa herself. And finding something //you//, Hope-Mary Rootless-Johnson, can do that your mother cannot, is a great victory for your pride.\n\nAnother, less self-centric, reason for your good mood could be that it gives you some extra confidence on the decisions you've made. That you chose your path wisely, not only for your own good but above all for the good of others.\n\n(set: $endings's empathy to true)(css: \"font-size: 2em; font-style: italic\")[Ending 4: Confidence]\n\n[[After the end->End]]",
+      "links": [
+        {
+          "text": "After the end",
+          "destination": {
+            "name": "End",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "Back to appropriate",
+      "text": "(if: $credits)[ [[Back->End]] ](else:)[ [[Back->Bibliography]] ]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "End",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Bibliography",
+            "pid": 14
+          }
+        }
+      ]
+    }
+  ]
+}

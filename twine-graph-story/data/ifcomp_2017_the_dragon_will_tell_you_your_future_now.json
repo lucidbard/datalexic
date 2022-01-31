@@ -1,0 +1,801 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "The Lair of the Dragon.",
+      "text": "The [[Owl]]'s head swivels once more around the room to center on you. //Three Moons.// His glasses reflect the [[moon]] creating two identical miniature copies of the giant silver satellite, his gaze is indiscernible. Strange office [[hours]], having a business such as this open exclusively in the deep dark of night, but the night is not so [[moon<-dark]] tonight.\n\n\n\nThe Dragon will see you [[now]].  ",
+      "links": [
+        {
+          "text": "Owl",
+          "destination": {
+            "name": "Owl",
+            "pid": 2
+          }
+        },
+        {
+          "text": "moon",
+          "destination": {
+            "name": "moon",
+            "pid": 3
+          }
+        },
+        {
+          "text": "hours",
+          "destination": {
+            "name": "hours",
+            "pid": 4
+          }
+        },
+        {
+          "text": "dark",
+          "destination": {
+            "name": "moon",
+            "pid": 3
+          }
+        },
+        {
+          "text": "now",
+          "destination": {
+            "name": "now",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Owl",
+      "text": "Golden Brown feathers that seem to have an almost metallic quality, the owl is diminutive, not even a foot tall. His eyes are enormous, as are the eyes of all owls, but the magnifying lenses he uses for glasses make it exceptionally difficult not to stare at him.  He's wearing a very small tie and standing atop the receptionist desk which makes you want to squeal over how cute he looks but that would probably be speciest, and his intense stare makes you doubt he'd find much humor in it.  He breaks his gaze and rapidly swivels his head impossibly, much in the way owls are known to do, he looks over his shoulder, seemingly [[The Lair of the Dragon.<-peering through the solid oak walls]] themselves.",
+      "links": [
+        {
+          "text": "peering through the solid oak walls",
+          "destination": {
+            "name": "The Lair of the Dragon.",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "moon",
+      "text": "The Moonlight streams in from the tall dome-topped window, it's [[dark velvet]] curtains are drawn back and the alley the window faces reflects grimy always-wet cobblestones that are too round for anyone's good, regardless of your method of conveyance. Down the lane the street is quiet.  It's rather late, though with the sky this bright you wouldn't know it.  There is a short lamp on the owl's desk, it's base is overly carved and it's [[fuzzy]], tasseled lampshade contains the kind of pattern that makes you [[itch]] to look at it. The lamp exudes an orange-yellow glow that tinges the the shadows where the moon's light fails to reach.",
+      "links": [
+        {
+          "text": "dark velvet",
+          "destination": {
+            "name": "dark velvet",
+            "pid": 6
+          }
+        },
+        {
+          "text": "fuzzy",
+          "destination": {
+            "name": "fuzzy",
+            "pid": 5
+          }
+        },
+        {
+          "text": "itch",
+          "destination": {
+            "name": "itch",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "hours",
+      "text": "The dragon's office is exclusively open at night.  This seems peculiar to you as this part of the city is basically dead at after sundown, all of the other nearby businesses have long since closed their doors.  Maybe dragons are nocturnal, or simply prefer the quiet solitude of the night, or the darkness... You really don't know much about dragons other than what the histories say. You recall the stories of dragons nesting deep within caverns hoarding mounds of treasure.  If you had to guess its probably the darkness right? This office is unlit aside from the natural [[moon<-moonlight]] and one hideous and barely lit desk [[itch<-lamp]].  ",
+      "links": [
+        {
+          "text": "moonlight",
+          "destination": {
+            "name": "moon",
+            "pid": 3
+          }
+        },
+        {
+          "text": "lamp",
+          "destination": {
+            "name": "itch",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "fuzzy",
+      "text": "The fabric shade seems to be covered in a fine all-encompassing layer of dust, the books that line the shelves around the room seem similarly dusted, like first snowfall or the whiskers of a strawberry.  Conversely the owl's desk is oiled to a shine providing a dark mirror-like surface that seems as much liquid as it is wood.\nThe reflective quality of the desk means the hideous [[itch<-lamp]] that rests atop it is doubled, magnifying the disgusting adornment.",
+      "links": [
+        {
+          "text": "lamp",
+          "destination": {
+            "name": "itch",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "dark velvet",
+      "text": "The curtains might be black but you're beginning to believe they're a very dark brown, perhaps burgundy.  The longer you look at them the more impenetrable their shade becomes, seeming to slowly pulse from black to a deep entoptic red you might see when you looking through closed eyes.",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "itch",
+      "text": "The Lampshade is a putrid stew of colors that both clash and run together, bringing to mind a bubbling swamp and other less savory imagery.  The pattern on the shade is built from roughly uneven lines that undulate and curve to draw complex abstract patterns which bring to mind pained faces with melting features. Eyes and mouths jumble among rippling flesh forming a sickly toxic stew. Everything about the lamp says; \"I am very wrong, I am built with malice, to look at me is to invite misfortune\".  It is a [[repulsive<-terrifying]] object which seems to [[repulsive<-magnetically]] draw the eye in spite of it's [[repulsive]] design.",
+      "links": [
+        {
+          "text": "terrifying",
+          "destination": {
+            "name": "repulsive",
+            "pid": 8
+          }
+        },
+        {
+          "text": "magnetically",
+          "destination": {
+            "name": "repulsive",
+            "pid": 8
+          }
+        },
+        {
+          "text": "repulsive",
+          "destination": {
+            "name": "repulsive",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "repulsive",
+      "text": "The longer you stare at the lamp the more violently it seems to squirm.  You know this to be impossible, but perhaps the shade creates some sort of optical illusion?  The faces contort and wince as they are absorbed into the depths or come rippling to the surface.  Even the lamp's overly ornate base seems to vibrate and writhe.\nThe lamp fills your vision becoming ever closer as the rest of the room darkens around it.  The [[faces]] take on greater detail as you see the lampshade's pattern seem to repeat at smaller and smaller increments within the original design. ",
+      "links": [
+        {
+          "text": "faces",
+          "destination": {
+            "name": "faces",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "faces",
+      "text": "The faces seem so clearly defined now, their eyes stare back into yours, unblinking save those that wince in pain.  The mouths open and close, it seems they have something to say, something that seems incredibly important.  Your focus narrows on the lips of a pained face as it bubbles to the surface, it is speaking, but you can't make it out.  There is a rising drone, no not a drone, a whistle, a high pitched tone that has been slowly building, it is just loud enough to prevent you from understanding the faces as they [[call out]].",
+      "links": [
+        {
+          "text": "call out",
+          "destination": {
+            "name": "call out",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "call out",
+      "text": "\"STOP IT!\" You seem to be thrown backwards into your chair as the words of the Owl echo throughout the waiting room. \"DO NOT STARE AT THE LAMP,\" The Owl's eyes are visible now, his glasses disheveled, his gaze full of menace. You think about apologizing but no words make it to your mouth.  Your vision is swimming a little and your mouth tastes acidic.  You glance at the---\"NO!\" The owl steps in front of the lamp.  \"If you cannot control yourself, I will have to ask you to turn your chair away\".\n\n[[The Lair of the Dragon.<-Sorry]]\n\n[[Turn Your chair]]",
+      "links": [
+        {
+          "text": "Sorry",
+          "destination": {
+            "name": "The Lair of the Dragon.",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Turn Your chair",
+          "destination": {
+            "name": "Turn Your chair",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Turn Your chair",
+      "text": "You begin to rotate your chair away from the lamp as instructed by the owl.\n[[now<-Wait a moment]]",
+      "links": [
+        {
+          "text": "Wait a moment",
+          "destination": {
+            "name": "now",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "now",
+      "text": "\"The Dragon will see you now,\" The owl gestures to the large oak doors which have opened, just barely, though you couldn't say when. The doors that lead to the dragon's office are to the left of the owl's desk, the position that is furthest from the only window, and thus they remain cloaked in shadow despite the brilliance of tonight's [[moon]]. The owl seems rather annoyed at you, but you're a bit [[nervous]] to actually see the [[nervous<-dragon]].\n\n[[Go in]]",
+      "links": [
+        {
+          "text": "moon",
+          "destination": {
+            "name": "moon",
+            "pid": 3
+          }
+        },
+        {
+          "text": "nervous",
+          "destination": {
+            "name": "nervous",
+            "pid": 13
+          }
+        },
+        {
+          "text": "dragon",
+          "destination": {
+            "name": "nervous",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Go in",
+          "destination": {
+            "name": "Go in",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "nervous",
+      "text": "There are stories about dragons, very few favorable.  Perhaps its just speciest talk, but there's some history to back it up... Then again dragons have been part of society for a long time now, with no real incidences. Counter point: Dragons live for a really long time, so it's not like the dragons today are actually different dragons than those in the history books.  Can you really trust a dragon? Why does he (she?) keep only night hours in this strange office at the end of an alley.  It all feels very off, but then again you don't really know any dragons personally... so this could all be completely normal.\n\n[[now<-Hmmm....]]\n\n[[Go in<-Screw it]]",
+      "links": [
+        {
+          "text": "Hmmm....",
+          "destination": {
+            "name": "now",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Screw it",
+          "destination": {
+            "name": "Go in",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Go in",
+      "text": "You stand up uneasily and stride a bit too quickly toward the large oak doors.  You hesitate at the crack, peering inward.  The room seems very much without a source of light, at your feet you notice curls of fog... or smoke rolling out from the gap between the doors.  You [[imagine]] briefly that you are about to walk directly into the open [[imagine<-mouth of the dragon.]] \n\nThis is a ridiculous thought of course, as there's no way a building this small could house a dragon that large.  Perhaps the dragon teleconferences in to work, the dragon could be on the other side of the planet but have offices all over the world, that would certainly explain the odd office hours. \n\n[[Open the doors]]",
+      "links": [
+        {
+          "text": "imagine",
+          "destination": {
+            "name": "imagine",
+            "pid": 15
+          }
+        },
+        {
+          "text": "mouth of the dragon.",
+          "destination": {
+            "name": "imagine",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Open the doors",
+          "destination": {
+            "name": "Open the doors",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "imagine",
+      "text": "Fumbling foolishly in the darkness, your feet stomping on strangely pliable and wet sounding \"carpet\". You'll wander further in for a bit before feeling a bit disoriented in the darkness, and so you'll reach out and feel around for something, anything, and find a strangely smooth wall that feels wet and curved.  You'll look around for the door you entered through and see the blank nothingness of total darkness in all directions.  Suddenly a draft of warm air will brush past you and you'll spot a light at the end of the tunnel.. a light that illuminates the tongue you've been plodding across and the teeth you've been blindly groping.  The light will grow quickly brighter and you'll have just enough [[now<-time]] to realize the intensity of the dragon's flame before you become it's well done midnight snack.",
+      "links": [
+        {
+          "text": "time",
+          "destination": {
+            "name": "now",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Open the doors",
+      "text": "You place an open palm against each door and shove, only to find they barely budge.  They are rather heavy it seems.\n\n[[Keep your hands in place, but lean into the doors while pushing]]\n\n[[Ask the owl for help]]\n\n[[Back up and charge the doors]]\n  \n[[Look for another way to open the doors]]\n\n[[knock on a door]]\n\n[[Reach into the crack between the doors]]",
+      "links": [
+        {
+          "text": "Keep your hands in place, but lean into the doors while pushing",
+          "destination": {
+            "name": "Keep your hands in place, but lean into the doors while pushing",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Ask the owl for help",
+          "destination": {
+            "name": "Ask the owl for help",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Back up and charge the doors",
+          "destination": {
+            "name": "Back up and charge the doors",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Look for another way to open the doors",
+          "destination": {
+            "name": "Look for another way to open the doors",
+            "pid": 20
+          }
+        },
+        {
+          "text": "knock on a door",
+          "destination": {
+            "name": "knock on a door",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Reach into the crack between the doors",
+          "destination": {
+            "name": "Reach into the crack between the doors",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Keep your hands in place, but lean into the doors while pushing",
+      "text": "You dig in your heels and lean into the door, your feet marching in slow motion like an Olympic sprinter taking off from the starting line.  Yeah, these [[Open the doors<-doors]] are practically frozen in place.",
+      "links": [
+        {
+          "text": "doors",
+          "destination": {
+            "name": "Open the doors",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Ask the owl for help",
+      "text": "\"Really,\" The Owl's tone almost inflicts physical pain, \"You want me to help?\" \n\n [[Open the doors<-Hmmm]]",
+      "links": [
+        {
+          "text": "Hmmm",
+          "destination": {
+            "name": "Open the doors",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Back up and charge the doors",
+      "text": "You back up several paces and ready yourself to charge the door.  The owl looks at you with boredom, but that seems to be his default expression.\n\nMaybe you should [[back up some more]].\n\nWait, you have an [[even better idea]]\n\n[[OK HERE IT GOES!]]",
+      "links": [
+        {
+          "text": "back up some more",
+          "destination": {
+            "name": "back up some more",
+            "pid": 23
+          }
+        },
+        {
+          "text": "even better idea",
+          "destination": {
+            "name": "even better idea",
+            "pid": 24
+          }
+        },
+        {
+          "text": "OK HERE IT GOES!",
+          "destination": {
+            "name": "OK HERE IT GOES!",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Look for another way to open the doors",
+      "text": "You scan the room looking for a switch or lever that might cause the doors to spring open.  Your eyes pass over the shining desk and the owl steps in front of the hideous lamp while shooting you a deadly glare.  You begin briefly humming while also pretending to cough and look upward past the lamp and around the room.  You look over your shoulder to the right, then scan back to the left, looking all around.  Seeing nothing but book shelves you begin to turn to look behind you.  Just more [[books]].  You keep [[turning]] while the owl looks on.\n\n",
+      "links": [
+        {
+          "text": "books",
+          "destination": {
+            "name": "books",
+            "pid": 30
+          }
+        },
+        {
+          "text": "turning",
+          "destination": {
+            "name": "turning",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "knock on a door",
+      "text": "\"Come in!\" The Dragon welcomes you in, but the [[Open the doors<-doors]] stay still.",
+      "links": [
+        {
+          "text": "doors",
+          "destination": {
+            "name": "Open the doors",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Reach into the crack between the doors",
+      "text": "You extend your arm into the space between the doors, but you don't really feel anything,  you're not sure what you were expecting...\n\n[[Extend arm further]]",
+      "links": [
+        {
+          "text": "Extend arm further",
+          "destination": {
+            "name": "Extend arm further",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "back up some more",
+      "text": "Okay, this door is going down.  Or out, like outward-ly opening, to allow you inside.  You're taking this outside!  And that door is going out!  Whatever.  Here's the plan: Leap into the air, extending a leg for a [[sweet jumping kick]].\n\n\n",
+      "links": [
+        {
+          "text": "sweet jumping kick",
+          "destination": {
+            "name": "sweet jumping kick",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "even better idea",
+      "text": "You decide to charge away from the door toward the opposite wall, then you're going to leap toward that wall (bookshelf actually) and kick off it, gaining even more momentum to charge back toward the doors.  It's obviously going to look cool as hell which will definitely excite this bored owl dude.\n\n[[LETS DO THIS]]",
+      "links": [
+        {
+          "text": "LETS DO THIS",
+          "destination": {
+            "name": "LETS DO THIS",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "OK HERE IT GOES!",
+      "text": "You charge toward the door, but as soon as your feet start moving you realize this is not going to work, you're too close to the door, you should have backed up more... but it's too late.  Your brain is sending out conflicting signals and your feet only half respond to your desire to stop, resulting in you tripping yourself. You falling over head first into the doors with a thud.\n\nThe owl looks annoyed.  \"Are you ok?\" his voice does not belay concern.\n\nBefore you can respond a voice from behind the doors bellows, \"ENTER\"! It seems your head chose to knock, even if it was not your first [[Open the doors<-choice]].",
+      "links": [
+        {
+          "text": "choice",
+          "destination": {
+            "name": "Open the doors",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "sweet jumping kick",
+      "text": "Okay, you're in the air.  The jump part went off great.  Now to decide what kind of kick to do.\n\n[[matrix kick]]\n\n[[classic one leg kick]]\n\n[[two legs kick]]",
+      "links": [
+        {
+          "text": "matrix kick",
+          "destination": {
+            "name": "matrix kick",
+            "pid": 39
+          }
+        },
+        {
+          "text": "classic one leg kick",
+          "destination": {
+            "name": "classic one leg kick",
+            "pid": 40
+          }
+        },
+        {
+          "text": "two legs kick",
+          "destination": {
+            "name": "two legs kick",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Extend arm further",
+      "text": "You push your arm into the gap between the doors, pushing in past your elbow.  You wave around in the darkness not really feeling anything other than awkward. \"HELLO,\" a voice, presumably the voice of the dragon booms out from the gap.\n\nYou consider dying from embarrassment but decide to try and roll with it.  Let's just wave some more to make it look like that's what you were doing all along.\n\n[[Wave some more]]\n",
+      "links": [
+        {
+          "text": "Wave some more",
+          "destination": {
+            "name": "Wave some more",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Wave some more",
+      "text": "You silently wave more at the invisible dragon. You try to play it off by adding a non-nonchalant, \"Sup?\"  \"Please come in,\" The dragon's baritone voice beckons like smoke curling from an extinguished candle. You make your hand into a thumbs up then into a puppet head that bobs up and down in agreement.\n\n[[Reconsider dying from embarrassment.]]\n\n[[Panic.]]\n\n[[Open the doors<-Pull your arm out and find some way to open the door.]]",
+      "links": [
+        {
+          "text": "Reconsider dying from embarrassment.",
+          "destination": {
+            "name": "Reconsider dying from embarrassment.",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Panic.",
+          "destination": {
+            "name": "Panic.",
+            "pid": 43
+          }
+        },
+        {
+          "text": "Pull your arm out and find some way to open the door.",
+          "destination": {
+            "name": "Open the doors",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "LETS DO THIS",
+      "text": "You take a running leap at the bookshelf opposite the doors, you extend one leg and aim it high.  Your form is flawless.  Your leg penetrates the books on the fourth shelf knocking straight through them rather than against them.  Your momentum ends as your leg remains caught deep in the shelving, resulting in you collapsing to the ground with your leg in the air. Numerous books come flying off the shelves to land around you.\n\nThe Owl appears to be in shock.\n\nUh... let's get through those [[Open the doors<-doors]] quick.\n\n",
+      "links": [
+        {
+          "text": "doors",
+          "destination": {
+            "name": "Open the doors",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "books",
+      "text": "Of course! The books! Duh!!!?  It's a classic, somewhere there's a book on one of the shelves that is actually a secret lever that will cause the doors to open.  The question is which book?  There's a lot of books in here.  Crap... you were probably supposed to be studying the bookshelves while you were waiting to be called.  Oh, this is really embarrassing.  Ok, uh, no problem let's [[look at the books]].  We can ignore the ones on the floor, because if they came off the shelf then its obvious that they aren't attached to secret levers.",
+      "links": [
+        {
+          "text": "look at the books",
+          "destination": {
+            "name": "look at the books",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "turning",
+      "text": "The Owl's head rotates to track you as you slowly [[spin in circles]] scanning the room for buttons or pull chains or something, (anything!?) that will help you open the doors. ",
+      "links": [
+        {
+          "text": "spin in circles",
+          "destination": {
+            "name": "spin in circles",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "look at the books",
+      "text": "Holy crap there's like soooo many books.  Okay, so uh, most of them seem to be like choose your own adventure kind of things.  Man, who even reads those.  Really who reads anything anymore. What is it, like supposed to be fun, or something?  Okay, maybe we haven't thought this one through enough, there's got to be a faster way to open these [[Open the doors<-doors]].",
+      "links": [
+        {
+          "text": "doors",
+          "destination": {
+            "name": "Open the doors",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "spin in circles",
+      "text": "Ok, so wait, this kind of makes sense.  Spinning can be kind of mystical right?  It's like you're riding the tornado to neverland, wait no that's not right is it?  Man, you're starting to spin pretty fast, things are getting a liiittle bluuurry.  Ok, so [[owls]] can spin their heads, so this [[spinning]] thing makes sense.  ",
+      "links": [
+        {
+          "text": "owls",
+          "destination": {
+            "name": "owls",
+            "pid": 34
+          }
+        },
+        {
+          "text": "spinning",
+          "destination": {
+            "name": "spinning",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "owls",
+      "text": "As you continue to spin it occurs to you that the way to get into the dragon's office is not by spinning.  That's stupid.  It's ABOUT spinning.  Spinning the Owl's head, or something like that.  [[The Owl]] is standing on a secret button maybe.  Or it's the lamp?",
+      "links": [
+        {
+          "text": "The Owl",
+          "destination": {
+            "name": "The Owl",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "spinning",
+      "text": "\"Sir, how long did you look at the lamp?\"  The Owl speaks with bewildered terror.  \"I uuuuhhh...\" You try to solve the owl's riddle but you're spinning hard as heck, man.  You start to feel kind of light-headed and then you set your foot down on something weird, maybe a book, maybe your other foot.  Whatever it is, it sends you flying.  Like not in a mystical way that will teleport you into the dragon's chambers, just like... in a \"painful embrace of gravity\" sort of way.  \n\nYou wildly careen into one to three bookshelves.  You're honestly not sure how many bookshelves you're hitting but you are pulling off some serious sonic the hedgehog stuff right now.  There's a thunderous crash and and you find yourself looking up at the ceiling as an invisible DJ repeatedly shifts the room left and right; a giant record scratch.  The bookshelf (Or shelves maybe, everything seems to be doubled)  is leaning over to kiss you.  \"That's nice.\" You say quietly as the massive piece of furniture comes [[crashing]] down on top of you.",
+      "links": [
+        {
+          "text": "crashing",
+          "destination": {
+            "name": "crashing",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "crashing",
+      "text": "Your head jerks upward and your eyes bolt open.  What? [[The Lair of the Dragon.<-Where are you?]]",
+      "links": [
+        {
+          "text": "Where are you?",
+          "destination": {
+            "name": "The Lair of the Dragon.",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "The Owl",
+      "text": "You stop spinning and begin to walk toward the owl to rotate his head or pick him up or something.  Unfortunately you've been spinning a really long time while you think... thunk?  Done thought.  You're all kinds of dizzy, man.  You step on one foot and then kind of fall while running toward the desk.  You reach for the owl which, as it is happening, you know it to be a bad idea.  The owl's eyes become impossibly large, like owls always have large eyes, but apparently they can open them even larger.  \n\nThe look of horror on his owl face is adorable but also fills you with dread.  You see your own face reflected in his glasses.  You look pretty good actually.  I guess you haven't had time to process what's about to happen.  You tackle the owl and fly across the top of the highly oiled desk.  You continue to fly (not literally, like on the back of the owl or something) with great speed toward those dark curtains and the large window where the moon shines so brightly.  Shoot for the moon eh?  Well looks like it's curtains closed for you! You crack a smile, just before everything else gets a chance to [[crack too]].",
+      "links": [
+        {
+          "text": "crack too",
+          "destination": {
+            "name": "crack too",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "crack too",
+      "text": "You crash through the window, but something strange happens.  You don't impact with the cobblestone street outside; instead you land on your feet.  On carpet.  Inside the office you just left.  You dove out of the window but somehow... jumped into the window instead.  It makes no sense at all, but it's like you've leapt through a mirror and now you stand in a duplicate of the office you just so gracefully exited.  The owl seems fine too, he stands on his frictionless desk next to his horrible lamp, glaring at you with a bored viciousness.    [[The Lair of the Dragon.<-You take a moment to reexamine things.]]",
+      "links": [
+        {
+          "text": "You take a moment to reexamine things.",
+          "destination": {
+            "name": "The Lair of the Dragon.",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "matrix kick",
+      "text": "You assume the crane kick pose while imagining the room rotates around you in anticipation of how awesome this kick is going to be.  Unfortunately you start thinking about how great \"The Matrix\" is and just end up doing a little jump where you lift both your legs up.  Ok.  The matrix kick is hard.  Let's \"[[back up some more<-kick it]]\" with what we know.  You laugh to yourself over the amazing joke you just made and wink while making a clicking noise and shooting a \"finger gun\" pose at the owl who has been watching you jump up and down in front of the doors.  Just after making the \"finger gun\" pose you realize that you didn't actually make that joke out loud and it would require a lot of explanation before it could even be understood.",
+      "links": [
+        {
+          "text": "kick it",
+          "destination": {
+            "name": "back up some more",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "classic one leg kick",
+      "text": "Okay, no need to be fancy.  We can just jump and kick the door.  Forward momentum, easy-peasy, kungfu-sheezy.  \"HIIIIYAAAA!\"  You screech at a volume entirely inappropriate for the size of this office, the time of night, and pretty much any time when you're not in immediate danger. The Owl is greatly suprised and jumps about a foot into the air, leaving his glasses suspended where his face previously was, about a foot in the opposite direction.  You collide with the door with a satisfying thud which causes... well it doesn't seem to cause the doors to move.  But the dragon takes it to be your knock and acknowledges your scream with a hearty bellow.  \"Hiiiiyaaaa!\" the dragon cheerfully rumbles, \"Please, you needn't knock, [[Open the doors<-Do come in]].\"",
+      "links": [
+        {
+          "text": "Do come in",
+          "destination": {
+            "name": "Open the doors",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "two legs kick",
+      "text": "Okay, there's no way a two legged kick is going to work, you're just going to jump then fall on your back.  Let's \"[[back up some more<-back]]\" this thing up, heh.  You chuckle a little, but stop yourself from making an embarrassing \"finger gun\" pose at the judgemental Owl.",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "back up some more",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Reconsider dying from embarrassment.",
+      "text": "You consider it, but embarrassment doesn't really stick to you.  You're slick, like an eel, baby!  Or like something that's kinda oily but also wet.  Actually you are kinda oily and you're starting to sweat.  You literally are slippery.  Maybe that's why these [[Panic.<-doors]] are so hard to move.",
+      "links": [
+        {
+          "text": "doors",
+          "destination": {
+            "name": "Panic.",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Panic.",
+      "text": "Oh crap.  Is your arm stuck??? That would be the worst, you're going to die here.  What is this some sort of crazy dragon-made arm trap? Ok, wait, breath. Relax.  It's just two doors with a small gap.  You've encountered plenty of doors before, none of which have ever turned out to be dragon arm traps.  You can't get your arm out because you bent your elbow when you were making your hand into an agreeable puppet.  Just straighten your arm out... aaaand... you're free. Okay.  See you can solve any problem, you're brilliant really. Alright, lets get these [[Open the doors<-doors]] open.",
+      "links": [
+        {
+          "text": "doors",
+          "destination": {
+            "name": "Open the doors",
+            "pid": 16
+          }
+        }
+      ]
+    }
+  ]
+}

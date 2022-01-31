@@ -1,0 +1,3588 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "day05_starte",
+      "text": "<<set $day = $day + 1>>\\s\\n<<set $drunk = true>>\\s\\n<<set $drinkCount = $drinkCount + 1>>\\s\\nYou raise a glass and stare Katey in the eye: \"To women.\" Merrily, she joins your toast, and you both knock back another shot of whiskey. And another. \\n\\nThe crowd packs in, and even your booth in the back starts feeling a little crowded. Katey rests her cheek on your shoulder. You think she says something about her girlfriend, and moving out of the city. \\n\\nYou tell her how Emily makes you feel. Honestly. \\n\\n> [[You can barely hear yourself, anymore|day05_startd]]",
+      "links": [
+        {
+          "text": "You can barely hear yourself, anymore",
+          "destination": {
+            "name": "day05_startd",
+            "pid": 145
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "day06_01",
+      "text": "Her knock is more confident than last time. \"Sorry,\" you say, opening the door. \"My hair's still wet, and&mdash;\" \\n\\nIt's not Emily. \\n\\n\"Hey, we just wanted to see if you got our note.\" Your upstairs neighbor, Sylvia, has a slight Spanish accent; you're fairly sure she's Dominican. Her boyfriend is dark-skinned and handsome and ripped. \\n<<if not $weirdCall>>\\n\"Note?\" \\n\\nBut now Emily is walking up, and your neighbors look eager to leave. \"Sorry, all we had was a napkin. We're gone for the weekend, but we'll drop in later, yeah?\" \\n\\nMarcus fist bumps you, and they're gone.<<else>>\\n\"Oh, yeah, I was hoping to catch you two. What kind of weird guy?\" Marcus, the boyfriend, begins to sign something, and you gesture for him to go slower. \\n\\n//Older. Wearing a suit. Walked around the... building?// You shake your head. \"Sorry, what was that last one?\" \\n\\n\"He says the strange man tested your windows to see if they were locked. Sorry, hon, we gotta go. Text if something goes bad, okay?\" She hugs you briskly before the two head out.<<endif>>\\n\\n> [[\"Hey,\" says Emily.|day06_02]]",
+      "links": [
+        {
+          "text": "\"Hey,\" says Emily.",
+          "destination": {
+            "name": "day06_02",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "day01_end",
+      "text": "You're a year older now. And a year wiser. Haha.\\n\\nHa.\\n<<if $drunk is true>>\\nThe empty glass falls from your hand as you collapse onto your cheap futon. It rolls across the ground, clinking against an empty bottle of... who even remembers.\\n<<endif>>\\s\\n<<if $empathy gte 1>>\\nBefore you fall asleep, your phone buzzes. A text message, from Emily. \\n\\n//I hope it wasn't weird today. Happy birthday.//\\n<<endif>>\\s\\n\\n> [[Zzz.|day02_start]]",
+      "links": [
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day02_start",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "day06_endb2",
+      "text": "<<set $pause = $pause + 1>>\\s\\n<<set $b = true>>\\s\\n<<if $pause eq 1>>[[You close your eyes.|day06_endb2]]<<else>>You close your eyes.\\n\\nHer hand is just reaching back, but the slap never lands. <<if $pause eq 2>>[[Instead,|day06_endb2]]<<else>> Instead, she clenches her fists at her sides, her mouth wide open in a frozen, soundless scream. You know it's there, though you do not peek.\\n\\n<<if $pause eq 3>>[[You are not afraid|day06_endb2]].<<else>>You are not afraid. If anything, you are serene, closed-eyed facing the onslaught. <<if $pause eq 4>>[[\"I hate you,\"|day06_endb2]] she screams. <<else>>\"I hate you,\" she screams. \"So much.\" \\n\\n<<if $pause eq 5>>[[There's nothing else to say.|day06_endb2]]<<else>>There's nothing else to say.\\n\\nYou close your eyes [[and wait.|day06_end]]\\n<<endif>><<endif>><<endif>><<endif>><<endif>>",
+      "links": [
+        {
+          "text": "You close your eyes.",
+          "destination": {
+            "name": "day06_endb2",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Instead,",
+          "destination": {
+            "name": "day06_endb2",
+            "pid": 4
+          }
+        },
+        {
+          "text": "You are not afraid",
+          "destination": {
+            "name": "day06_endb2",
+            "pid": 4
+          }
+        },
+        {
+          "text": "\"I hate you,\"",
+          "destination": {
+            "name": "day06_endb2",
+            "pid": 4
+          }
+        },
+        {
+          "text": "There's nothing else to say.",
+          "destination": {
+            "name": "day06_endb2",
+            "pid": 4
+          }
+        },
+        {
+          "text": "and wait.",
+          "destination": {
+            "name": "day06_end",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "day06_endb1",
+      "text": "<<set $pause = $pause + 1>>\\s\\n<<set $b = true>>\\s\\n\"Emily, can you come in here?\" \\n\\nWhen she arrives, you indicate the<<if $pause eq 1>> [[dishwasher|day06_endb1]].<<else>> dishwasher, and the wine glass, still upright, filled to the brim with brown dishwater.\\n\\n\"Oh, sorry about that,\" she says, <<if $pause eq 2>>[[upending the glass|day06_endb1]].<<else>>upending the glass. Over the clean dishes. \\n\\nYou swallow a deep breath. <<if $pause eq 3>>[[\"It helps, you know, if you--\"|day06_endb1]]<<else>> \"It helps, you know, if you--\"\\n\\n\"Sure. Okay.\" \\n\\nYou feel the stab of your front teeth into your lower lip. <<if $pause eq 4>>[[\"That's it?\"|day06_endb1]]<<else>> \"That's it?\"\\n\\n[[\"That's it.\"|day06_end]]\\n<<endif>><<endif>><<endif>><<endif>>",
+      "links": [
+        {
+          "text": "dishwasher",
+          "destination": {
+            "name": "day06_endb1",
+            "pid": 5
+          }
+        },
+        {
+          "text": "upending the glass",
+          "destination": {
+            "name": "day06_endb1",
+            "pid": 5
+          }
+        },
+        {
+          "text": "\"It helps, you know, if you--\"",
+          "destination": {
+            "name": "day06_endb1",
+            "pid": 5
+          }
+        },
+        {
+          "text": "\"That's it?\"",
+          "destination": {
+            "name": "day06_endb1",
+            "pid": 5
+          }
+        },
+        {
+          "text": "\"That's it.\"",
+          "destination": {
+            "name": "day06_end",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "day05_myst",
+      "text": "<<set $day = $day + 1>>\\s\\n<<set $research = true>>\\s\\n<<set $adrianCount = $adrianCount + 1>>\\s\\nYou ask the cab driver to take you to the library instead of straight home. Maybe... maybe you'll make it in time. \\n\\nBut an older man is locking up the building. An NPR totebag full of books weighs down his shoulder. \"I guess I missed closing, huh?\" \\n\\nHe jumps a little at your voice, but recovers with a sniff. \"I guess you did.\" \\n\\nOn impulse, \"Did Adrian work today?\" \\n\\nThe man's eyebrow is majestic in its thickness, which makes its skeptical rise more significant. \"No,\" he says, carefully. \"But she'll be in tomorrow.\" \\n\\n\"She was helping me with a project,\" you explain hastily. \"I didn't know how to use a microfiche... thing.\" \\n\\nHe shrugs, adjusting the bag over his shoulder and moving towards the only car remaining in the parking lot. You realize awkwardly that the old man isn't going to say anything more, and you head home. \\n<<display day05_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "day07a1",
+      "text": "<<set $end = \"a1\">>\\s\\n<<if $p6 eq 0>>DAY 7\\n\\nYou wake up, lonelier than you imagined you would be. Absently and hungoverly, you brew a cup of coffee. Your phone has no messages, no missed calls. You take a seat on your futon. The letters are there: cold comfort, but present. \\n\\n> [[Investigate the letters|day07_puzzle]]<<else>>\\s\\n\"Fuck this,\" you say out loud to your otherwise empty apartment. \"This,\" you say to the letters, the typewriter, and yourself, \"is bullshit.\" \\n\\nSomething tells you to throw the letters in the trash. But maybe they're just a thing for later. \\n\\nFor now, you really need to call Emily. You need to explain yourself. \\n\\nYou need her.\\n\\nYou call. The phone rings and rings. \\n\\nEND.\\n\\n<<display done>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "done",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day07_puzzle",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "day05_start",
+      "text": "<<silently>>\\n<<set $drunk = false>>\\n<<set $letter = 0>>\\n<<set $day = 0>>\\n<<if $drinkCount gte 2>><<set $paranoia = $paranoia + 1>><<set $drinkCount = 0>><<endif>>\\n<<if $emCount gte 2>><<set $empathy = $empathy - 1>><<set $emCount = 0>><<endif>>\\n<<set $call = false>>\\n<<set $unwind = false>>\\n<<set $ring = 0>>\\n<<set $weirdCall = false>>\\n<<set $hungry = false>>\\n<<set $napkin = false>>\\n<<set $research = false>>\\n<<endsilently>>\\s\\nDAY 5\\n\\n\"Thanks for coming out, fucker.\" Katey's hug is tight and loving. \"I know it's hard for you to get out after work, but it is the day after the anniversary of my birth. Tell me about this Emily thing. Wait.\" \\n\\nShe thrusts a shot glass with something clear into your hand, and sings happy birthday to herself mournfully until you down it. By some kind of dark art, she's got another shot waiting for you when you finish. \"Now. Tell me about this Emily thing.\" \\n\\nTalk about:\\n<<if $empathy gte 6>>\\n> [[Emily|day_05starta]]\\s\\n<<endif>><<if $paranoia gte 3>>\\n> [[The letters|day05_startb]]\\s\\n<<endif>>\\n> [[Anything else, really|day05_startc]]",
+      "links": [
+        {
+          "text": "Emily",
+          "destination": {
+            "name": "day_05starta",
+            "pid": 79
+          }
+        },
+        {
+          "text": "The letters",
+          "destination": {
+            "name": "day05_startb",
+            "pid": 147
+          }
+        },
+        {
+          "text": "Anything else, really",
+          "destination": {
+            "name": "day05_startc",
+            "pid": 148
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "day06_06b",
+      "text": "<<set $drunk = true>>\\s\\n<<set $drinkCount = $drinkCount + 1>>\\s\\nYou lived together for almost a year before Emily got sick of your shit. Or the other way around. So much happened between the two of you that it's impossible to point fingers. Still, cooking dinner for her feels familiar and comfortable; Emily settles into her old habits too. \\n\\nShe drifts from room to room, never settling in one place and never hovering in the kitchen. But her conversation is idle, and pleasant. \"What're we having?\" she says, and the question is so accustomed that you freeze in place for a moment before answering. \\n\\n\"Some salad with this vinaigrette I cooked up, extra cucumbers the way you like it, and teriyaki salmon.\" \\n\\n\"Yum!\" she exclaims.\\n\\nIt's only after you've eaten that you realize you've finished the bulk of the wine by yourself. \\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "day06_06c",
+      "text": "<<set $drunk = true>>\\s\\n<<set $drinkCount = $drinkCount + 1>>\\s\\n<<set $emDrunk = true>>\\s\\n<<set $paranoia = $paranoia - 1>>\\s\\n\"Hey, do you mind if I flip through some of these letters? I'm so into it.\" \\n\\n\"Go for it,\" you call from the kitchen. Not that what you're cooking is very complicated. But having Emily around&mdash;and being all domestic together&mdash;is giving you a disconcerting feeling of normalness. Is this how you wanted the world to be, when she left? It's hard to remember, even. \\n\\nWhat you do remember is that a lightly seared salmon served over Mexican-style black beans and rice was Emily's favorite meal. You break into a cold sweat as you cook it for her, recalling all the times she asked for it, back then. \\n\\n\"Day by lengthy day, I wait for your hand in mine,\" Emily quotes, in a red-cheeked way that says she's powered through at least another glass of wine. The letter is abandoned when she sees the table, set. \"Ooh, my favorite.\" \\n\\nShe eats fast, and talks about Lilly Clarke the whole time. \\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "day06_good",
+      "text": "<<set $puzzleCount = $puzzleCount + 1>>\\s\\n<<set $p5 = 2>>\\s\\n//Mr. Astor,\\n\\nYour deception is discovered. My parents&mdash;the lovely, honest, and bland man and woman you chose as my parents&mdash;revealed to me that I was a ward of the state. Then your ward. Then transferred cruelly to these strangers, before my mind had developed to remember you. How you must have watched. How patient must you have been.\\n\\nI attempted to take my own life, you know. Who would you have seen, when you received that news: your ward or your lover? Would you have turned your sharp, observational wit upon yourself to say, \"I did this. I did this to her.\"?\\n\\nI leave for America with the Clarkes tomorrow. The war is over, and it is said that the West has opportunities for even the most modest of families with an abundance of determination. I imagine that my eagerness to leave your proximity and influence will drive our horses faster.\\n\\nLilly Clarke//\\n\\n> [[\"Holy crap.\"|day06_emily]]",
+      "links": [
+        {
+          "text": "\"Holy crap.\"",
+          "destination": {
+            "name": "day06_emily",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "day06_06a",
+      "text": "<<set $emDrunk = true>>\\s\\n<<set $drunk = true>>\\s\\n<<set $drinkCount = $drinkCount + 1>>\\s\\n<<set $paranoia = $paranoia + 1>>\\s\\nTrue, it's pretty simple. But there's nothing you can't do with a lemon, fresh sage, and a salmon fillet. You toss together an easy rice pilaf, and dinner is on the table before Emily can polish off that bottle by herself. \\n\\n\"This is delicious,\" Emily murmurs. \"You know, I wasn't kidding around. I really did miss this about you.\" She's probably got her bedroom eyes on, but you're afraid to look. \\n\\n\"I, uh... I guess I don't have a good response for that, Em.\" \\n\\n\"No,\" she says, taking a long pull of wine. \"I guess that was not entirely fair.\" \\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "day05_02e",
+      "text": "Carefully, you slide the feed roller up and away. Wedged inside the typewriter is a crumpled sheet of paper, torn in half. \\n\\n//This is the final missive of Mr. Henry Warren Astor. Please, kind reader, if you have found this note, know that I have died, and seek justice.//\\n\\nThe letter ends there, unsigned. There are, however, several dark brown splotches, and an ugly smear trailing off the edge of the paper. <<set $mystery = true>>\\n\\n> [[Is that blood?|day05_02f]]",
+      "links": [
+        {
+          "text": "Is that blood?",
+          "destination": {
+            "name": "day05_02f",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "day05_02d",
+      "text": "<<set $day = $day + 1>>\\s\\nYou turn off all the house lights and spend the rest of the night sitting in the special kind of loneliness that only paranoia can cause. <<if not $mystery>>\\n\\nThe typewriter stares back at you.\\n\\n> [[Examine the typewriter|day05_02e]]<<else>>\\n<<display day05_choice>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Examine the typewriter",
+          "destination": {
+            "name": "day05_02e",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "day05_02f",
+      "text": "After a quick, nervous glance at your front door, you shine the light of your phone at Mr. Astor's letter.\\n\\nIt's totally blood. <<set $paranoia = $paranoia + 1>>\\n<<display day05_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "day05_02a",
+      "text": "You pass the coffee table, now strewn with letters, and the mysterious typewriter. Maybe if you were sober, you'd be able to tamp down the sense of foreboding you feel, but you're definitely drunk, and you don't even have a grilled cheese to show for it. \\n\\nThen again, even a bleary examination of your front door reveals some scoring around the deadbolt. Someone tried to tamper with your door. \\n\\nOh shit, someone is tampering with //you//. \\n\\n> [[Call the cops|day05_02b]]\\n> [[Call Emily|day05_02c]]\\n> [[Do nothing|day05_02d]]",
+      "links": [
+        {
+          "text": "Call the cops",
+          "destination": {
+            "name": "day05_02b",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Call Emily",
+          "destination": {
+            "name": "day05_02c",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Do nothing",
+          "destination": {
+            "name": "day05_02d",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "day05_02c",
+      "text": "Emily's phone goes straight to voicemail. \"Hey, it's me. <<if $call is true>>I know I texted you tonight, but <<endif>>I think someone tried to break into my apartment. They wanted the typewriter, probably. Call me back when you get this?\" \\n<<if $call is true>>\\nWell, at least you know her phone is off. Then you feel a little stalker-y for being relieved. Ugh. <<set $paranoia = $paranoia + 1>><<endif>>\\s\\n<<set $call = true>>\\s\\n<<set $weirdCall = true>>\\s\\n<<display day05_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "day05_02b",
+      "text": "You have the presence of mind to call the non-emergency hotline, at least. A desultory assistant takes down your contact information. \"Anything missing?\" \\n\\n\"No, I guess not.\" \\n\\nShe sighs audibly; you can feel your jaw clench. \"I can log it, but I'm afraid there's nothing we can do if there's no crime. Property damage? Harassment? I'm trying to help you out here.\" \\n\\nYou could tell her about the typewriter. But the thought of it exhausts you&mdash;cops and evidence and explaining the letters and weird calls. \\n\\nIt's probably nothing, after all. <<set $paranoia = $paranoia - 1>>\\n<<display day05_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "day03_02",
+      "text": "The near-Emily experience has got you all tangled up, but you're sure of one thing: if she comes over again, she won't be leaving because of a weird smell. \\n\\nEmpties cleared away, a cursory vacuuming, and the place looks like it could really sustain human life. Pat yourself on the back! \\n<<silently>>\\n<<set $empathy = $empathy + 1>>\\n<<set $day = $day + 1>> \\n<<set $clean = true>><<endsilently>>\\s\\n<<display day03_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "day03_03",
+      "text": "<<set $unwind = true>>Sometimes, it's good just to sit around and do nothing. Between Emily's visit and this box of mysteries, you've been pretty turned around. \\n\\nPopcorn's in the microwave. Work email is turned off. And look at this full Netflix queue, just for you! \\n\\nWhat should you watch? \\n> [[An old favorite|day03_03a]]\\n> [[A goofy comedy|day03_03b]]\\n> [[A horror movie|day03_03c]]",
+      "links": [
+        {
+          "text": "An old favorite",
+          "destination": {
+            "name": "day03_03a",
+            "pid": 95
+          }
+        },
+        {
+          "text": "A goofy comedy",
+          "destination": {
+            "name": "day03_03b",
+            "pid": 96
+          }
+        },
+        {
+          "text": "A horror movie",
+          "destination": {
+            "name": "day03_03c",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "day03_04",
+      "text": "<<set $drunk = true>><<set $drinkCount = $drinkCount + 1>><<set $day = $day + 1>>Sure, the day was kind of gray and bleak, but now you're home and feeling much better. \\n\\nYou have to admit, seeing Emily made your week a little sunnier. You'll have to remember to get her a birthday present in return&mdash;you were never quite on the ball with presents and stuff like that. They don't call them better halves for nothing. \\n<<display day03_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "day03_05",
+      "text": "<<set $day = $day + 1>><<set $weirdCall = true>>Unknown number. On impulse, you answer the phone&mdash;it's always possible that your mom is trying to call you from a payphone, again. Where do those car adaptors keep going?\\n\\n\"Hello?\" \\n\\nUnknown voice, too. A gravelly but strangely prim man-voice. \"Do you have the typewriter?\" \\n\\n//Who the hell is this?// \"Who the hell are you?\" \\n\\n\"Someone willing to pay three times the amount that typewriter is worth.\" He's not menacing, not quite. But something's not right about what he's saying. \\n\\n> [[Refuse his offer|day03_05a]]\\n> [[Wait a second...|day03_05b]]\\n",
+      "links": [
+        {
+          "text": "Refuse his offer",
+          "destination": {
+            "name": "day03_05a",
+            "pid": 144
+          }
+        },
+        {
+          "text": "Wait a second...",
+          "destination": {
+            "name": "day03_05b",
+            "pid": 141
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "day03_end",
+      "text": "Time for bed. <<if not $call>>But hey, your phone is flashing: one voicemail. You play it&mdash;oh, it's Emily.\\n\\n//Hey, sorry I missed you tonight. I was thinking of swinging by tomorrow. Let me know if that's... bad.//<<set $emCount = $emCount + 1>><<endif>>\\s\\n<<if not $weirdCall>>\\n\\nYou missed a<<if not $call>>nother<<endif>> call; this one's from an unknown number. The voice is a man's, crisp and slightly accented. \\n\\n//I am seeking a particular typewriter and its accoutrements. Call this number at any time.//<<endif>>\\s\\n<<if $drunk is true>>\\nHoo boy, it's a stumbly time getting to your bed tonight. You don't go to sleep as much as pass out.<<endif>>\\n\\n> [[Zzz.|day04_start]]",
+      "links": [
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day04_start",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "StoryTitle",
+      "text": "Missive",
+      "links": []
+    },
+    {
+      "pid": 25,
+      "name": "day01_choice",
+      "text": "/%\\nSleeptime\\n%/\\s\\n<<if $day gte 2>>\\nIt's definitely gotten late, and tomorrow is a work day.\\n\\n> [[Turn in|day01_end]]<<else>>\\s\\n/%\\nTime of day signposts\\n%/\\s\\n<<if $day is 0>>\\nYou lost most of the day to your tragic hangover. What now?\\n<<endif>><<if $day is 1>>\\nIt's gotten a little late, but you're not ready for bed yet:\\n<<endif>>\\s\\n/%\\nMenu options\\n%/\\s\\n<<if not $drunk>>\\n> [[Drink|day01_2-02]]\\s\\n<<endif>><<if not $mystery>>\\n> [[Investigate the typewriter|day01_2-03]]\\s\\n<<endif>><<if not $letter>>\\n> [[Investigate the letters|day01_2-04]]\\s\\n<<endif>><<endif>>",
+      "links": [
+        {
+          "text": "Turn in",
+          "destination": {
+            "name": "day01_end",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Drink",
+          "destination": {
+            "name": "day01_2-02",
+            "pid": 103
+          }
+        },
+        {
+          "text": "Investigate the typewriter",
+          "destination": {
+            "name": "day01_2-03",
+            "pid": 102
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day01_2-04",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "day04_choice",
+      "text": "/%\\nSleeptime\\n%/\\s\\n<<if $day gte 4>>\\n> [[It's late...|day04_end]]\\n/%\\nTime of day signposts\\n%/\\s\\n<<elseif $day eq 1>>\\nA timid knock at the door.\\n\\n> [[Emily's here|day04_04]]\\n<<else>><<if $day eq 2>>\\nThe night is young, and you... well, you're tired. But still:\\n<<if ($emDrunk is true) and ($emily is true)>>\\n> [[Offer a drink|day04_04d]]\\s\\n<<endif>><<endif>>\\s\\n/%\\nMenu options\\n%/\\s\\n<<if not $clean>>\\n> [[Clean the house|day04_02]]\\s\\n<<endif>><<if (not $drunk) and ($day neq 2)>>\\n> [[Drink|day04_03]]\\s\\n<<endif>><<if ($emily eq true) and (not $catch)>>\\n> [[Catch up|day04_05]]\\s\\n<<endif>><<if (not $emily) and ($weirdCall is false)>>\\n> [[Call back the unknown number|day04_06]]\\s\\n<<endif>><<if $p3 eq 0>>\\n> [[Investigate the letters|day04_puzzle]]\\s\\n<<endif>><<if $p3 eq 2>>\\n> [[Read another letter|day04_bonus]]\\s\\n<<endif>><<if (not $research) and ($day eq 0) and ($adrianCount gte 1)>>\\n> [[Go to the library|day04_myst]]\\s\\n<<endif>><<endif>>",
+      "links": [
+        {
+          "text": "It's late...",
+          "destination": {
+            "name": "day04_end",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Emily's here",
+          "destination": {
+            "name": "day04_04",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Offer a drink",
+          "destination": {
+            "name": "day04_04d",
+            "pid": 54
+          }
+        },
+        {
+          "text": "Clean the house",
+          "destination": {
+            "name": "day04_02",
+            "pid": 105
+          }
+        },
+        {
+          "text": "Drink",
+          "destination": {
+            "name": "day04_03",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Catch up",
+          "destination": {
+            "name": "day04_05",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Call back the unknown number",
+          "destination": {
+            "name": "day04_06",
+            "pid": 161
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day04_puzzle",
+            "pid": 113
+          }
+        },
+        {
+          "text": "Read another letter",
+          "destination": {
+            "name": "day04_bonus",
+            "pid": 163
+          }
+        },
+        {
+          "text": "Go to the library",
+          "destination": {
+            "name": "day04_myst",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "day05_puzzle",
+      "text": "<<set $day = $day + 1>>\\s\\nThe envelope you select has a small horse upon it. Strange: most of the little doodles have been pristine, but this one is unsteady. Haphazard. \\n\\n//Henry,\\n\\nI have been exposed to a mode of thinking. My friend Robert Moore, of whom I have written often, has brought me to what he swears are the best//\\n\\nLilly's handwriting is difficult to decipher&mdash;her normally pristine penmenship is shaky and unevenly spaced. The sentence continues, but a smear of black ink obscures the text. The letter resumes:\\n\\n//What happened to me, your sunshine girl? I have two eyes (lovely, you once called them) and four pale limbs (paler now, for your absence.) Add one smiling mouth to that sum, and an intellect that you swear could rival the greatest of modern thinkers. \\n\\nBut I am without one thing that I dearly miss: your company. Double my riches. It would make no difference, without you to share them. The world is less two lovers now, for without you I am but a wisp of my self. Would that I had one more day to prove my worth. \\n\\nWe have defied conventions before, my Henry. I shall <<if $hint eq true>>''ignore the odds''<<else>>ignore the odds<<endif>>, and you should too.\\n\\nYours, \\nLilly Clarke.//\\n\\nMore envelopes catch your eye, one in particular:\\n> [[7|day05_worst]]\\n> [[10|day05_good]]\\n> [[12|day05_bad]]",
+      "links": [
+        {
+          "text": "7",
+          "destination": {
+            "name": "day05_worst",
+            "pid": 72
+          }
+        },
+        {
+          "text": "10",
+          "destination": {
+            "name": "day05_good",
+            "pid": 116
+          }
+        },
+        {
+          "text": "12",
+          "destination": {
+            "name": "day05_bad",
+            "pid": 159
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "day03_06a",
+      "text": "<<set $pause = $pause + 1>>She pauses. <<if $pause lte 1>>[[What does that pause mean?|day03_06a]]<<elseif $pause lte 2>>What does that pause mean? [[What is she thinking of?|day03_06a]]<<elseif $pause lte 3>>What does that pause mean? What if she thinking of? [[What if she hates you?|day03_06a]]<<elseif $pause eq 4>>What does that pause mean? What if she thinking of? What if she hates you? <<if $paranoia gte 2>>She probably hates you.<<endif>>\\n\\n\"I'll think about it. I gotta go to sleep, though.\" Another pause. \"Talk to you tomorrow.\" \\n<<display day03_choice>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        },
+        {
+          "text": "What does that pause mean?",
+          "destination": {
+            "name": "day03_06a",
+            "pid": 28
+          }
+        },
+        {
+          "text": "What is she thinking of?",
+          "destination": {
+            "name": "day03_06a",
+            "pid": 28
+          }
+        },
+        {
+          "text": "What if she hates you?",
+          "destination": {
+            "name": "day03_06a",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "day02_bad",
+      "text": "//Dear Mr. Astor,\\n\\nMy apologies if my last letter was overly forward. I did not intend to hurt you, as I never intended to hurt you. I woke up recently, alone, and longed for you to be there. I opened my eyes, and when you weren't there...\\n\\nMy heart just breaks in two.\\n\\nYours,\\nMiss Clarke.//\\n<<silently>><<set $p1 = 1>><<endsilently>>\\s\\n<<display day02_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day02_choice",
+            "pid": 164
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "day06_bonus",
+      "text": "<<set $day = $day + 1>>\\s\\n<<set $p5 = 3>>\\s\\nEmily already has a letter in her hand. \"Let's read this one! It's still unopened, even. This letter has been waiting over a century and a half to be read. It's a thick one, too.\" \\n\\nThat gives you a moment's pause, but Emily is there, watching as you slide your finger underneath the wax seal. \\n\\n//Henry,\\n\\nEnclosed you will find the provisions of the annullment. Please return them, signed, to my solicitor. \\n\\nThe collected evidence of your infidelity will ensure me half of your estate, despite my inability to bear your children. \\n\\nI believe truly that a merciful God has spared me from mothering your offspring. If you think that I will bear ill will instead, rest easy: once I am confident that I shall never hear from you again, I'll not think of you at all. \\n\\nCharlotte//\\n\\nEmily slumps, disappointed. \"I thought it would be something juicier. Oh well.\" \\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "day06_07a",
+      "text": "<<set $empathy = $empathy + 1>>\\s\\n\"Nah, I'm into it. I like how Eckhert keeps digging himself deeper with the gold miner and the schoolmarm lady.\" Well, you do. It might have been a whole episode ago, though. \\n\\nEmily glances at you suspiciously, then laughs. \"You're still a shit liar.\" \\n\\n\"You're still&mdash;\"\\n\\nHer mouth is soft against yours, and tastes like cherries. You can feel the cool points of her fingertips drawing your chin up, angling you into the kiss. Into her. Emily. \"Emily.\" \\n\\n\"Sorry,\" she says swiftly, pulling away and tucking a strand of hair behind her ear. You'd never noticed the nervous tic before, but now, everything is so clear. \"That was drunk of me. And forward. Both.\" \\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "day06_bad",
+      "text": "<<set $p5 = 1>>\\s\\n<<set $empathy = $empathy + 1>>\\s\\n//Mr. Astor,\\n\\nIt must be strange to be wealthy. My parents were always careful with their limited funds, but you poured riches onto me: money, gifts, and most of all, freedom. The freedom to spend or squander the fruits of your so-called generosity. \\n\\nI had wondered why the sanitarium staff were so eager to keep me. After my first attempt to leave&mdash;out the front door, would you believe?&mdash;I wondered if I was a prisoner. After my second escape attempt, I finally thought to bribe my captors.\\n\\nOf course, the great Henry Astor: no longer interested in a used woman, but unable to relinquish his hold over her. Is it so with your wife as well? Are the chains of matrimony more secure than the locks of my room? \\n\\nWe shall see, I suppose. I am clever, you always said. I shall escape.\\n\\nLilly Clarke//\\n\\n> [[\"Good for her.\"|day06_emily]]",
+      "links": [
+        {
+          "text": "\"Good for her.\"",
+          "destination": {
+            "name": "day06_emily",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "day05_04",
+      "text": "<<set $day = $day + 1>>\\s\\n<<set $weirdCall = true>>\\s\\n<<set $paranoia = $paranoia + 1>>\\s\\n<<set $napkin = true>>\\s\\nHuh. What's that napkin doing on the ground? You're not the world's greatest detective, but it looks like it was shoved under your door. There's a note on it:\\n\\n//Hey hon. Weird guy wandering around your place tonight. New friend? &mdash;205//\\n\\nYou almost go up there to ask, but your neighbors' nightly karate/sex session has just started up. Either way, you don't want to interrupt. \\n<<display day05_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "day06_07b",
+      "text": "<<set $paranoia = $paranoia - 1>>\\s\\n<<set $drunk = true>>\\s\\n<<set $emDrunk = true>>\\s\\n<<set $drinkCount = $drinkCount + 1>>\\s\\n\"It's hard to concentrate on elevated dialogue with you around,\" you admit. \"It always was. Let me top you off.\"\\n\\nYou examine her face as you refill her wine glass&mdash;really look at it. She's blushing a little, and it's hard to tell if it's from the wine or the compliment. Was it even a compliment, really? \\n\\n\"Thanks,\" she says softly, lifting the glass to her mouth. She empties it before speaking again. \"I'll be honest. I don't really have a great grasp on what I'm doing here, but I'm having fun. It's fun... being with you.\"\\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "day05_02",
+      "text": "<<set $day = $day + 1>>\\s\\n<<set $paranoia = $paranoia + 1>>\\s\\n<<set $hungry = true>>\\s\\nWho's drunk and deserves a grilled cheese? You are and do! \\n\\nAs the pan is heating, you get a good chance to drunkenly examine the tiny transom window in your kitchen. You mostly keep it closed; the karate upstairs neighbors like to blow cigarette smoke out of theirs.\\n\\nTonight, the little window is open. On closer inspection, it looks like the latch has been crudely pried open. You abandon the grilled cheese. Something is seriously messed up here. \\n\\n> [[Investigate further|day05_02a]]",
+      "links": [
+        {
+          "text": "Investigate further",
+          "destination": {
+            "name": "day05_02a",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "day05_03",
+      "text": "<<set $ring = $ring + 1>>\\s\\n//Hey, Emily. Thanks for coming over yesterday&mdash; <<if $ring is 1>>[[I really missed you.|day05_03]]<<else>>It was good to see you. <<if $ring is 2>>[[I think I'm still in love with you.|day05_03]]<<else>>Let's hang again some time! <<if $ring is 3>>[[Please...|day05_03]]<<else>><<if $ring is 4>>Oh god, I am such a shit.<<endif>><<endif>><<endif>><<endif>>//\\n\\n<<if $ring is 4>>> [[Delete that garbage|day05_03]]<<endif>>\\s\\n<<if $ring is 5>>> [[Send|day05_03]]<<endif>>\\s\\n<<if $ring gte 6>>It's been, like, <<if $ring is 6>>[[two|day05_03]]<<endif>><<if $ring is 7>>[[five|day05_03]]<<endif>><<if $ring gte 8>>thirty<<endif>> minutes, and she hasn't replied.<<endif>>\\n\\n<<if $ring gte 8>>She probably isn't getting you back.<<endif>>\\n\\n<<if $ring is 8>>> [[Call Emily|day05_03]]\\s\\n<<endif>>\\s\\n<<if $ring gte 9>>\\s\\n<<set $call = true>>\\s\\n<<set $day = $day + 1>>\\s\\nWhat, no, that's a stupid idea.\\n<<display day05_choice>>\\n<<endif>>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        },
+        {
+          "text": "I really missed you.",
+          "destination": {
+            "name": "day05_03",
+            "pid": 36
+          }
+        },
+        {
+          "text": "I think I'm still in love with you.",
+          "destination": {
+            "name": "day05_03",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Please...",
+          "destination": {
+            "name": "day05_03",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Delete that garbage",
+          "destination": {
+            "name": "day05_03",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Send",
+          "destination": {
+            "name": "day05_03",
+            "pid": 36
+          }
+        },
+        {
+          "text": "two",
+          "destination": {
+            "name": "day05_03",
+            "pid": 36
+          }
+        },
+        {
+          "text": "five",
+          "destination": {
+            "name": "day05_03",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Call Emily",
+          "destination": {
+            "name": "day05_03",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Start",
+      "text": "> [[It's your birthday today.|day01_1-01]]\\n\\n<<set $count = 0>>\\n<<set $hint = false>>",
+      "links": [
+        {
+          "text": "It's your birthday today.",
+          "destination": {
+            "name": "day01_1-01",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "day05_01",
+      "text": "<<set $day = $day + 1>>\\s\\n<<set $paranoia = $paranoia - 1>>\\s\\n<<set $unwind = true>>\\s\\nHow does Katey go out partying like that without the soul-crushing exhaustion that you feel? Last you checked, you were only than her by a couple days. \\n\\nYou dim the lights, and put on some mood music. A lot has happened in the past few days. You've earned some time to yourself, doing nothing.\\n\\nYour couch has never, ever felt this good. \\n<<display day05_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "CSS - Restart",
+      "text": "\\n.passage {\\n\\tfont-size: 150%;\\n\\tfont-color: red;\\n}\\n",
+      "links": []
+    },
+    {
+      "pid": 40,
+      "name": "done",
+      "text": "You solved <<print $puzzleCount>> out of 6 puzzles<<if $answer eq 2>> and the mystery of Henry Astor's murder. Congratulations!<<else>>.<<endif>>\\n<<if $hint eq true>>\\nDay 2: <<if $p1 gte 2>>Correct<<elseif $p1 eq 1>>Incorrect<<else>>Unsolved<<endif>>\\nDay 3: <<if $p2 gte 2>>Correct<<elseif $p2 eq 1>>Incorrect<<else>>Unsolved<<endif>>\\nDay 4: <<if $p3 gte 2>>Correct<<elseif $p3 eq 1>>Incorrect<<else>>Unsolved<<endif>>\\nDay 5: <<if $p4 gte 2>>Correct<<elseif $p4 eq 1>>Incorrect<<else>>Unsolved<<endif>>\\nDay 6: <<if $p5 gte 2>>Correct<<elseif $p5 eq 1>>Incorrect<<else>>Unsolved<<endif>>\\nDay 7: <<if $p6 gte 2>>Correct<<else>>Incorrect<<endif>>\\n<<endif>>\\s\\n\\n> [[Restart|Start_multi]]\\n> [[Hint mode|Hint]]\\n\\n> [[Credits|Credits]]\\n<<set $count = $count + 1>>",
+      "links": [
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "Start_multi",
+            "pid": 85
+          }
+        },
+        {
+          "text": "Hint mode",
+          "destination": {
+            "name": "Hint",
+            "pid": 137
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 150
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "day07_good",
+      "text": "<<set $puzzleCount = $puzzleCount + 1>>\\s\\n<<set $p6 = 2>>\\s\\n//Dear angel,\\n\\nI know that you are innocent. Fear not; your secret dies with me.\\n\\nCA//\\n\\n<<display day07_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day07_choice",
+            "pid": 131
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "right",
+      "text": "<<set $answer = 2>>\\s\\n<<if $end eq \"a2\">>You feel good about your answer, but the mystery man on the phone breathes a sharp, fierce breath. \\n\\n\"Are you certain?\" \\n\\n> [[Yes.|day07a2]]\\n<<else>>Emily nods her head. \"I can see that. You sure?\" \\n\\n<<if $end eq \"a3\">>> [[Yes.|day07a3]]<<endif>>\\n<<if $end eq \"b1\">>> [[Yes.|day07b1]]<<endif>>\\n<<if $end eq \"b3\">>> [[Yes.|day07b3]]<<endif>>\\n<<if $end eq \"b4\">>> [[Yes.|day07b4]]<<endif>>\\n\\n<<endif>>",
+      "links": [
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "day07a2",
+            "pid": 75
+          }
+        },
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "day07a3",
+            "pid": 74
+          }
+        },
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "day07b1",
+            "pid": 149
+          }
+        },
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "day07b3",
+            "pid": 153
+          }
+        },
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "day07b4",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "day02_worst",
+      "text": "//Dear Mr. Astor,\\n\\nMy heart aches, and it aches only for you. I want only to be with you, and only for you to be with me. I try so hard for you, Mr. Astor. You know that, right? I'll do anything you ask, Mr. Astor. \\n\\nPlease. \\n\\nYour sunny girl is at your command. \\n\\nLily Clarke//\\n\\nYikes.\\n<<silently>><<set $paranoia = $paranoia + 1>><<set $p1 = 1>><<endsilently>>\\s\\n<<display day02_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day02_choice",
+            "pid": 164
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "day05_bonus",
+      "text": "<<set $day = $day + 1>>\\s\\n<<set $p4 = 3>>\\s\\nMrs. Astor's pristine handwriting is a far cry from Lilly's, but this letter&mdash;stuck to the back of another&mdash;is just as short. \\n\\n//I have found the letters. I know what you have done. Return to our home at once.//\\n\\nWell, nothing mysterious about that. You wonder briefly if Mr. Astor made it home. What would you even say in that situation? You can't think of anything good enough. \\n<<display day05_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "day02_good",
+      "text": "//My Dear Henry,\\n\\nI fear I may have lost my head. Truth be told, I am enamored of you. But my mother always told me, let passion be tempered with caution. Thank you for the reminder, my darling. I shall be more temperate in the future. \\n\\nYou are the most beautiful thing in my world, that I know. I should not have been so brash. But know that my neart&mdash;my young, foolish heart&mdash;is always for you. \\n\\nYours,\\nLily Clarke//\\n<<silently>>\\n<<set $empathy = $empathy + 1>>\\n<<set $puzzleCount = $puzzleCount + 1>>\\n<<set $p1 = 2>>\\n<<endsilently>>\\s\\n<<display day02_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day02_choice",
+            "pid": 164
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "day07b4",
+      "text": "<<set $end = \"b3\">>\\s\\n<<if $p6 eq 0>>DAY 7\\n\\nEmily wakes up with a drowsy moan, pressing her lips against your collarbone: a vestigial gesture from your old relationship. She wraps her arms around your waist and snuggles hard. \\n\\nYou fall asleep again, comfortable and surrounded by the scent of her hair. \\n\\n\"Brunch,\" you hear, after you're both awake. \"Let's get it.\" \\n\\nIt feels like date. You wonder if it is. \\n\\nYou return, and casually suggest that you investigate one more letter. \"Yes, please!\" Emily says. Her Cheshire smile is all teeth. \\n\\n> [[Investigate the letters|day07_puzzle]]\\n\\n<<elseif $answer eq 0>>\"Wow,\" Emily murmurs. \"What a story.\" Somehow, she has curled up beside you again, her hand resting solidly on your knee. For a moment, you forget that the past month of loneliness and strangeness and displacement even happened.\\n\\n\"So, who do you think killed the guy?\" \\n\\n> [[\"Mrs. Astor.\"|wrong]]\\n> [[\"Lilly.\"|wrong]]\\n<<if $puzzleCount gte 5>>> [[\"Henry himself.\"|right]]<<endif>><<else>>\\s\\n\"Emily?\" you ask. \"Promise you'll never let it get this bad?\" \\n\\nWith a chuckle, she plucks the last letter from your hand. \"Poor kid. Always thinking too far ahead.<<if $answer eq 2>> Henry Astor killed himself because he couldn't see what was right there. I imagine he never could.<<endif>>\"\\n\\n\"You're right,\" you say, with a smile. \"So, what do you want to do now?\"\\n\\nEND.\\n\\n<<display done>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "done",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day07_puzzle",
+            "pid": 115
+          }
+        },
+        {
+          "text": "\"Mrs. Astor.\"",
+          "destination": {
+            "name": "wrong",
+            "pid": 157
+          }
+        },
+        {
+          "text": "\"Lilly.\"",
+          "destination": {
+            "name": "wrong",
+            "pid": 157
+          }
+        },
+        {
+          "text": "\"Henry himself.\"",
+          "destination": {
+            "name": "right",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "day04_myst",
+      "text": "When is the library open, even? The building is within walking distance, but still you've never made the trip, despite countless New Years' resolutions to do so. You swing by on the way home from work, just to see what it's like. \\n\\n//You've never even voted here. Seriously, what was the point of that resolution?//, is what you think, passing through the double doors. Before you panic and back out the way you came, a woman approaches you. \"Hey, welcome to the Harry S. Truman Public Library. I'm Adrian; let me know if there's anything you need.\" \\n\\nHer back is very straight, and her right arm is very plastic. She wears a tank top despite the cold outside, and the prosthesis has a marker drawing of a heart on it, with \"US Army\" stenciled at its center. \\n\\n\"Uh, hi. I'm looking for this old newspaper.\" \\n\\n> [[Don't gawk|day04_mysta]]\\n<<set $day = $day + 1>>\\n<<set $research = true>>\\n<<set $adrianCount = $adrianCount + 1>>",
+      "links": [
+        {
+          "text": "Don't gawk",
+          "destination": {
+            "name": "day04_mysta",
+            "pid": 138
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "day03_choice",
+      "text": "/%\\nSleeptime\\n%/\\s\\n<<if $day eq 3>>\\n> [[Wow, it's gotten late|day03_end]]\\s\\n/%\\nTime of day signposts\\n%/\\s\\n<<else>><<if $day eq 1>>\\nThe night sky has cleared up a little. You catch a glimpse of the moon outside your window: a sliver of light.\\n<<endif>><<if $day eq 2>>\\nThe moon's sunk behind the other buildings, and out of sight. \\n<<endif>>\\s\\n/%\\nMenu options\\n%/\\s\\n<<if not $clean>>\\n> [[Clean the house|day03_02]]\\s\\n<<endif>><<if (not $unwind) and ($day eq 0)>>\\n> [[Unwind|day03_03]]\\s\\n<<endif>><<if not $drunk>>\\n> [[Drink|day03_04]]\\s\\n<<endif>><<if $day eq 1>>\\n> [[Your phone rings: an unknown number|day03_05]]\\s\\n<<endif>><<if $day eq 2>>\\n> [[Your phone rings: Captain Brunch|day03_06]]\\s\\n<<endif>><<if $p2 eq 0>>\\n> [[Investigate the letters|day03_puzzle]]\\s\\n<<endif>><<if $p2 eq 2>>\\n> [[Read another letter|day03_bonus]]\\s\\n<<endif>><<if ($puzzleCount gt 1) and ($mystery is true) and (not $research)>>\\n> [[Search the internet|day03_myst]]\\s\\n<<endif>><<endif>>",
+      "links": [
+        {
+          "text": "Wow, it's gotten late",
+          "destination": {
+            "name": "day03_end",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Clean the house",
+          "destination": {
+            "name": "day03_02",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Unwind",
+          "destination": {
+            "name": "day03_03",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Drink",
+          "destination": {
+            "name": "day03_04",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Your phone rings: an unknown number",
+          "destination": {
+            "name": "day03_05",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Your phone rings: Captain Brunch",
+          "destination": {
+            "name": "day03_06",
+            "pid": 119
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day03_puzzle",
+            "pid": 130
+          }
+        },
+        {
+          "text": "Read another letter",
+          "destination": {
+            "name": "day03_bonus",
+            "pid": 66
+          }
+        },
+        {
+          "text": "Search the internet",
+          "destination": {
+            "name": "day03_myst",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "day07b2",
+      "text": "<<set $end = \"b2\">>\\s\\n<<if $p6 eq 0>>DAY 7\\n\\nThere she is. Emily. She's nestled against your shoulder, her lips curved into a half-smile. As if sensing your gaze, she opens her eyes, and it's like watching a Disney princess wake up. \"Hey you,\" she says, her voice throaty and warm. \\n\\n\"Hey yourself. Does Emily want breakfast?\" \\n\\nWithout breaking contact with your body, she arches her back into a lazy, feline stretch, not replying until she has resumed her old position. \"Emily wants breakfast.\" \\n\\nAs you heat the pan for eggs, Emily appears in the kitchen, a letter in hand. \"One more?\" she asks. \\n\\n> [[Investigate the letters|day07_puzzle]]\\n<<else>>\\s\\n\"I wonder who killed him,\" you say idly. \\n\\n\"Who cares?\" \\n\\nYou set a plate of eggs in front of Emily&mdash;//Emily//&mdash;and watch her dig in. \"What?\" she says, laughing, when she catches you looking at her. \"Good eggs, by the way.\" \\n\\n\"No, it's just that... you're right. Who cares? I guess.\" The mystery unsolved, you watch your ex-girlfriend wolf down breakfast, and wonder about the future.\\n\\nEND.\\n\\n<<display done>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "done",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day07_puzzle",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "day05_choice",
+      "text": "/%\\nSleeptime\\n%/\\s\\n<<if $day gte 3>>\\n> [[Ungh...|day05_end]]\\n<<else>>\\s\\n/%\\nTime of day signposts - OOPS I FORGOT THEM HAHAHA\\n%/\\s\\n<<if $day eq 1>>\\nYou're feeling more tired than usual, but between you and Katey, that's two birthdays in one week. Maybe it's just old age. \\n<<endif>><<if $day eq 2>>\\nZzz... hunh, what? You were totally up to something just now:\\n<<endif>>\\s\\n/%\\nMenu options\\n%/\\s\\n<<if not $unwind>>\\n> [[Unwind|day05_01]]\\s\\n<<endif>><<if ($drunk is true) and (not $hungry)>>\\n> [[So hungry...|day05_02]]\\s\\n<<endif>><<if not $call>>\\n> [[Text Emily|day05_03]]\\s\\n<<endif>><<if ($paranoia gte 5) and ($napkin eq false)>>\\n> [[What's that napkin?|day05_04]]\\s\\n<<endif>><<if $p4 eq 0>>\\n> [[Investigate the letters|day05_puzzle]]\\s\\n<<endif>><<if $p4 eq 2>>\\n> [[Read another letter|day05_bonus]]\\s\\n<<endif>><<if (not $research) and ($day eq 0) and ($adrianCount gte 2)>>\\n> [[Go to the library|day05_myst]]\\s\\n<<endif>><<endif>>",
+      "links": [
+        {
+          "text": "Ungh...",
+          "destination": {
+            "name": "day05_end",
+            "pid": 134
+          }
+        },
+        {
+          "text": "Unwind",
+          "destination": {
+            "name": "day05_01",
+            "pid": 38
+          }
+        },
+        {
+          "text": "So hungry...",
+          "destination": {
+            "name": "day05_02",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Text Emily",
+          "destination": {
+            "name": "day05_03",
+            "pid": 36
+          }
+        },
+        {
+          "text": "What's that napkin?",
+          "destination": {
+            "name": "day05_04",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day05_puzzle",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Read another letter",
+          "destination": {
+            "name": "day05_bonus",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Go to the library",
+          "destination": {
+            "name": "day05_myst",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "day06_worst",
+      "text": "<<set $p5 = 1>>\\s\\nFor a moment, you think the sheet of paper is blank. Then, in the bottom right-hand corner, you see Lilly's familiar handwriting:\\n\\n//I'm coming for you.//<<set $paranoia = $paranoia + 1>>\\n\\n> [[\"Wow...\"|day06_emily]]",
+      "links": [
+        {
+          "text": "\"Wow...\"",
+          "destination": {
+            "name": "day06_emily",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "day04_gooda",
+      "text": "\"Oh,\" Emily says, with her softest, kindest tone. \"How romantic.\" \\n\\n\"How do you mean?\"<<if $empathy gte 4>> In a rush of bravery, you touch the back of her hand.\\n\\nShe doesn't pull away<<else>>You glance at Emily's face, rapturous,<<endif>> as she traces Lilly's careful handwriting with her finger. \"It's his last chance, but she's really defying everything to give it to him. That's lovely, don't you think?\" \\n\\nAnd you do. <<set $empathy = $empathy + 1>>\\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "day01_rep01",
+      "text": "\"I've been good. I, uh, ordered this before I left, and wanted to drop it off.\" Emily's the kind of woman to hide behind a disarming grin, and she's grinning like a Cheshire cat. \"It's a present.\"\\n\\nThe box is big enough that she has to cradle it in both arms. ",
+      "links": []
+    },
+    {
+      "pid": 54,
+      "name": "day04_04d",
+      "text": "<<set $drunk = true>>\\s\\n<<set $drinkCount = $drinkCount + 1>>\\s\\n<<set $day = $day + 1>>\\s\\nHmm, how does that noir shit go again? The night was dark, but not as dark as the liquor. And then... //she// walked in...\\n\\nYou pour a finger or two (or three, let's be honest) of bourbon. \"Want one?\"\\n\\n\"Whoa there, tiger,\" Emily replies, intercepting your glass. \"This drink is in danger of drowning. Emily George Rogers, to the rescue!\" She returns the glass, empty. \\n\\n\"Oh god,\" you whisper. \"You promised to save it. That drink... it trusted you. And you killed it.\" \\n\\nPoor drink. \\n\\n> [[Pour drink!|day04_04e]]",
+      "links": [
+        {
+          "text": "Pour drink!",
+          "destination": {
+            "name": "day04_04e",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "day04_04e",
+      "text": "<<set $empathy = $empathy + 1>>\\s\\n<<set $emDrunk = false>>\\s\\n\"Rest in peace, Whiskey Jones. Let's have a wake for the good ol' boy!\" She toasts robustly and drinks robustlier. Inside of an hour, you're both red in the face and giggly. \\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "day04_04b",
+      "text": "\"Let me grab a jacket.\" You turn around and grin at Emily. \"Don't worry. The jerky smell will air out.\" \\n\\nThat's it. Just have fun. Before you lock the door, you catch a glimpse of the box of letters. <<if $puzzleCount gte 2>>You almost regret leaving them behind. Almost. <<endif>>But Emily's there, laughing raucously at your joke, and you want nothing more than to go somewhere with her. \\n\\nAt one point, when it almost feels like night's gone on for too long, she clinks her glass against yours. \"To old times.\" <<set $drunk = true>><<set $day = $day + 3>>\\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "day04_04c",
+      "text": "\"Oh, uh...\" You look back at the house. It's messy and weird, but it's yours. <<if $puzzleCount gte 2>>The box of letters seems to beckon to you.<<endif>> \"I don't know&mdash;I kind of wanted to stay in tonight. You know...\" \\n\\nEmily's smile is impenetrable. \"I know.\" \\n\\nYou thank her for coming over, and close the door behind her. You feel oddly relieved, like you might have just dodged a bullet. \\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "day04_04a",
+      "text": "<<if not $clean>>Emily peeks behind you into the house. \"Yeesh kid, I don't know. It still smells kind of like jerky in there. Old jerky. Maybe we could go some place?\" \\n\\nNot quite the cozy night you had in mind, but it's your&mdash;...well, it's Emily. You have a chance. \\n\\n> [[Take it|day04_04b]]\\n> [[Or don't|day04_04c]]\\n<<else>><<set $emily = true>>\\s\\n<<set $pause = $pause + 1>>\\s\\n\"Sure, kid. Sounds like a good night.\" \\n\\nThe Yes was unexpected; you see Emily again, with fresher eyes. <<if $pause eq 1>>[[Is that dress special?|day04_04a]]<<else>>Is that dress special? //You don't recognize it.// <<if $pause eq 2>>[[Is her laugh strained?|day04_04a]] <<else>>Is her laugh strained? //You've fucked up already.// Thankfully, you still have basic motor functions, and <<if $pause eq 3>>[[hang up her coat.|day04_04a]]<<else>>hang up her coat //in the closet you used to share//. <<endif>><<endif>><<endif>>\\n\\n<<if $pause eq 4>>[[But then...|day04_04a]]<<elseif $pause gte 4>>But then, Emily settles onto your couch. She crosses her legs just so.\\n<<display day04_choice>><<endif>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Take it",
+          "destination": {
+            "name": "day04_04b",
+            "pid": 56
+          }
+        },
+        {
+          "text": "Or don't",
+          "destination": {
+            "name": "day04_04c",
+            "pid": 57
+          }
+        },
+        {
+          "text": "Is that dress special?",
+          "destination": {
+            "name": "day04_04a",
+            "pid": 58
+          }
+        },
+        {
+          "text": "Is her laugh strained?",
+          "destination": {
+            "name": "day04_04a",
+            "pid": 58
+          }
+        },
+        {
+          "text": "hang up her coat.",
+          "destination": {
+            "name": "day04_04a",
+            "pid": 58
+          }
+        },
+        {
+          "text": "But then...",
+          "destination": {
+            "name": "day04_04a",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "day06_enda",
+      "text": "<<set $pause = $pause + 1>>\\s\\n<<set $a = true>>\\s\\n<<if $pause eq 1>>Sunday afternoons. Emily spread her manicure weapons before her: nail file, buffer, cuticle snips, undercoat, acetone, lotion, and an array of polishes and lacquers and gels that was truly staggering in both number and variety. \\n\\n[[\"Pick a color,\" she'd say.|day06_enda]]<<endif>>\\s\\n<<if $pause eq 2>>At the beginning, it was a privilege. When she received or purchased a new bottle of nail polish, it would join the collection, make each decision marginally harder. Empty or old bottles were retired ceremoniously. \\n\\nYou watched as she held very, very still&mdash;hard sometimes for her, with the meds&mdash;and slid each little brush along each tapered nail, her long fingers splayed against the coffee table. \\n\\n[[\"Pick a color,\" she'd say.|day06_enda]]<<endif>>\\s\\n<<if $pause eq 3>>At the end, it was a chore. Week after week, Sunday after Sunday, of filing sounds. Nail clippings, missed by accident and discovered later. Spills. \\n\\n[[\"Pick a color,\" she'd say.|day06_enda]]<<endif>>\\s\\n<<if $pause eq 4>>\"Pink,\" or \"the sparkly blue one,\" or \"neon green,\" or \"orange.\" \\n\\n[[Then,|day06_enda]]<<endif>>\\s\\n<<if $pause eq 5>>\"Why don't you pick?\" \\n\\n[[Then,|day06_enda]]<<endif>>\\s\\n<<if $pause eq 6>>\"Do I have to?\" \\n\\n[[Then,|day06_enda]]<<endif>>\\s\\n<<if $pause eq 7>>[[\"No.\"|day06_end]]<<endif>>\\n\\n",
+      "links": [
+        {
+          "text": "\"Pick a color,\" she'd say.",
+          "destination": {
+            "name": "day06_enda",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Then,",
+          "destination": {
+            "name": "day06_enda",
+            "pid": 59
+          }
+        },
+        {
+          "text": "\"No.\"",
+          "destination": {
+            "name": "day06_end",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "day06_endb",
+      "text": "<<set $b = true>>\\s\\n<<set $pause = $pause + 1>>\\s\\n\"You're doing it again,\" she said. Dinner had been silent. You'd made her favorite, and yet. Your knee bounces anxiously, occasionally rattling the silverware. You clasp your knee, willing it to stop. \\n\\n<<if $pause eq 1>>[[\"Sorry,\"|day06_endb]] you said.<<elseif $pause gt 1>>\"Sorry,\" you said.<<endif>>\\n\\n<<if $pause eq 2>>[[\"It's just&mdash;\"|day06_endb]] she said.<<elseif $pause gt 2>>\"It's just&mdash;\" she said.<<endif>>\\n\\n<<if $pause eq 3>>[[\"&mdash;annoying, I know,\"|day06_endb]] you said.<<elseif $pause gt 3>>\"&mdash;annoying, I know,\" you said.<<endif>>\\n\\n<<if $pause eq 4>>[[\"I hate it,\"|day06_endb]] she said.<<elseif $pause gt 4>>\"I hate it,' she said.<<endif>>\\n\\n<<if $pause eq 5>>[[\"I hate you.\"|day06_endb]] <<elseif $pause gt 5>>//I hate you//, you didn't say. <<endif>>\\n\\n<<if $pause eq 6>>You never said it.\\n\\nInstead, [[\"Sorry.\"|day06_end]]<<endif>>\\n",
+      "links": [
+        {
+          "text": "\"Sorry,\"",
+          "destination": {
+            "name": "day06_endb",
+            "pid": 60
+          }
+        },
+        {
+          "text": "\"It's just&mdash;\"",
+          "destination": {
+            "name": "day06_endb",
+            "pid": 60
+          }
+        },
+        {
+          "text": "\"&mdash;annoying, I know,\"",
+          "destination": {
+            "name": "day06_endb",
+            "pid": 60
+          }
+        },
+        {
+          "text": "\"I hate it,\"",
+          "destination": {
+            "name": "day06_endb",
+            "pid": 60
+          }
+        },
+        {
+          "text": "\"I hate you.\"",
+          "destination": {
+            "name": "day06_endb",
+            "pid": 60
+          }
+        },
+        {
+          "text": "\"Sorry.\"",
+          "destination": {
+            "name": "day06_end",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "score",
+      "text": "Paranoia: <<print $paranoia>>\\nEmpathy: <<print $empathy>>\\nPuzzle: <<print $puzzleCount>>",
+      "links": []
+    },
+    {
+      "pid": 62,
+      "name": "day06_endd",
+      "text": "You see Emily to the door. You are polite, warm, and sincere&mdash;you make sure to be. You lock the deadbolt with a click. <<if $drunk eq true>>You lean against the door; the wood feels cool against your forehead.<<endif>>\\n\\n<<if $mystery eq false>>When you turn around to face your empty living room, the typewriter stares back at you. The letters. Elusive, mysterious, but... inscrutable. \\n\\nLike her. \\n\\nYou'll get rid of it in the morning. \\n\\nEND.\\n\\n<<display done>>\\n<<else>><<set $letter = 0>>\\s\\n<<set $answer = 0>>\\s\\n<<set $right = false>>\\s\\n<<set $emily = false>>\\s\\nAt least you've got the typewriter. The letters. A little mystery, infused into your life by a woman you loved once. \\n\\nSomething worth sleeping on. 'Til then, though, there's a bottle of the good stuff you were saving for a rainy day. And it's really pouring now. \\n\\n<<if $empathy gt 7>>> [[Zzz.|day07a1]]\\n<<elseif $paranoia gt $empathy>>> [[Zzz.|day07a2]]\\n<<elseif $empathy gte $paranoia>>> [[Zzz.|day07a3]]<<endif>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "done",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day07a1",
+            "pid": 7
+          }
+        },
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day07a2",
+            "pid": 75
+          }
+        },
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day07a3",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "day04_mystb",
+      "text": "Lilly Clarke. \\n\\nHer name is there, on the crude back-lit newspaper scan. No photo. \"Died 1913. Survived by one child: James Henry Clarke. Loved her town, loved her place. Loved her life. \\n\\n//The righteous perisheth, and no man layeth it to heart: and merciful men are taken away, none considering that the righteous is taken away from the evil to come.//\\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Isaiah 57:1\"\\n\\nWhen you leave, you look for Adrian, but she's nowhere to be found. You return home with a printout of the newspaper, and a strange sense of unease. \\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "day04_end",
+      "text": "<<if not $emily>>It's been a long day, but then again, aren't they all? <<if $paranoia gte 4>>As you're brushing your teeth, you hear a thump at the door. But it's probably nothing. <<endif>><<set $emCount = $emCount + 1>><<else>>You see Emily to the door. \\n\\nEventually you fall asleep, trying your level best not to hyperanalyze that moment when she almost gave you a peck on the cheek.\\n\\nLater, you find two bobby pins on your coffee table, next to the box of letters. You have no idea what to do with them, so you leave them there.<<endif>>\\n\\n> [[Zzz.|day05_start]]",
+      "links": [
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day05_start",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "day06_04b",
+      "text": "\"I'm no blood scientist,\" Emily says, \"but I think that's blood.\" \\n\\nYou trust her insight and her lengthy history with crime serials: it's totally blood. <<set $paranoia = $paranoia + 1>>\\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "day03_bonus",
+      "text": "Sure, why not? Swept up in the romance of Lilly Clarke's previous letter, you excavate another envelope from the box. \\n\\n//Henry,\\n\\nI am so sorry to convey this to you: your mother has died. My first courier to your office in Paris was unable to find you&mdash;it is my hope that the post will succeed where he has not. Where have you vanished to? \\n\\nYour brother Robert is arranging the funeral, and looks to me for answers. I am too embarrassed to admit that I have not heard from you in months. Please, return at least to bear the casket. Return to alleviate my shame.\\n\\nYour wife,\\nMrs. Charlotte Astor//\\n\\nWow, Henry. What an asshole. \\n<<set $empathy = $empathy + 1>>\\s\\n<<set $day = $day + 1>>\\s\\n<<set $p2 = 3>>\\s\\n<<display day03_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "day04_start",
+      "text": "<<silently>>\\n<<set $drunk = false>>\\n<<set $letter = 0>>\\n<<set $day = 0>>\\n<<if $drinkCount gte 2>><<set $paranoia = $paranoia + 1>><<set $drinkCount = 0>><<endif>>\\n<<if $emCount gte 2>><<set $empathy = $empathy - 1>><<set $emCount = 0>><<endif>>\\n<<set $call = false>>\\n<<set $weirdCall = false>>\\n<<set $catch = false>>\\n<<set $pause = 0>>\\n<<set $emily = false>>\\n<<set $research = false>>\\n<<endsilently>>\\s\\nDAY 4\\n\\nYou wake up to the sound of your upstairs neighbors, Sylvia and Marcus. They're either fucking or doing martial arts; you've met them a few times, and neither would surprise you. Cool kids. \\n\\nYou think about them all day, wondering if you'll ever be in sync with another human, the way those two are. \\n\\nWork drifts by. Commutes happen. Home is just a place. \\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "day06_enda2",
+      "text": "<<set $pause = $pause + 1>>\\s\\n<<set $a = true>>\\s\\n<<if $pause eq 1>>\"Do you love me?\" she asks. She's lost a mitten, sledding with your cousins on a trip to your hometown, so both your hands are shoved into her coat pocket. Her voice is quiet, but the snow is fresh and new, and the question echoes over the flat expanse of white. \\n\\nL-O-V-E. She says the word a letter at time, and you see her pink tongue appear for the L. Her lips curl around the O, her little teeth catching her bottom lip to form the V. The E is a puff of breath, condensing on the winter air.\\n\\n[[\"Not yet.\"|day06_enda2]]\\n<<elseif $pause eq 2>>\"Do you love me?\" she asks. Her lips are chapped after a long night out. She slides the upper over the edge of a tall glass, sipping at her orange juice and smiling when she sees you look. \\n\\nA long, //long// night: the little smile makes her spill juice all over the front of her shirt. Laughing, she pulls the napkin out of your lap to wipe away the mess. \\n\\n[[\"Of course.\"|day06_enda2]]\\n<<elseif $pause eq 3>>\"Do you love me?\" she asks. You feel her mouth against the back of your neck, her lips just grazing your skin. \\n\\nHer hair was short then. Grown-up hair, she called it. For a grown-up. You think she's crying.\\n\\n[[\"Hey, yeah...\"|day06_enda2]]\\n<<elseif $pause eq 4>>\"Do you love me?\" she asks.\\n\\n[[\"Yeah...\"|day06_enda2]]\\n<<elseif $pause eq 5>>[[\"Do you love me?\" she asks.|day06_enda2]]\\n<<elseif $pause eq 6>>[[\"Do you love me?\" she asks.|day06_enda2]]\\n<<elseif $pause eq 7>>[[\"Do you love me?\"|day06_end]]\\n<<endif>>",
+      "links": [
+        {
+          "text": "\"Not yet.\"",
+          "destination": {
+            "name": "day06_enda2",
+            "pid": 68
+          }
+        },
+        {
+          "text": "\"Of course.\"",
+          "destination": {
+            "name": "day06_enda2",
+            "pid": 68
+          }
+        },
+        {
+          "text": "\"Hey, yeah...\"",
+          "destination": {
+            "name": "day06_enda2",
+            "pid": 68
+          }
+        },
+        {
+          "text": "\"Yeah...\"",
+          "destination": {
+            "name": "day06_enda2",
+            "pid": 68
+          }
+        },
+        {
+          "text": "\"Do you love me?\" she asks.",
+          "destination": {
+            "name": "day06_enda2",
+            "pid": 68
+          }
+        },
+        {
+          "text": "\"Do you love me?\"",
+          "destination": {
+            "name": "day06_end",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "day06_enda1",
+      "text": "<<set $pause = $pause + 1>>\\s\\n<<set $a = true>>\\s\\n<<if $pause eq 1>>She hunches her shoulders, bent over the daily crossword, brown hair falling forward into her face. You wait until she's crossed out a clue--she is meticulous, and works only in pen--and slide the errant lock of hair behind her ear. \\n\\nHer smile is luminous, her eyes pulled away from the newspaper and locked on your face. \"5 down. Eleven letters. Existing together.\" \\n\\n[[\"Synchronous?\"|day06_enda1]]<<endif>>\\s\\n<<if $pause eq 2>>She cuts it short, and complains about how much she looks like her sister now. \"Time will fix it,\" you say, but for now, thick straight bangs fall into her eyes, tangling in her eyelashes. You blow them aside, and she laughs. \"26 across. Adjure.\"\\n\\nYou love the way your voices sound when you laugh together.\\n\\n[[\"I don't even know what 'adjure' means.\"|day06_enda1]]<<endif>>\\s\\n<<if $pause eq 3>>Her father tells her that barrettes on a grown woman are immature, so you shop together in the kids' section for sparkly hair accessories. \"2 across. 9 letters. Paying blank.\" \\n\\nWhen you slide a glittery butterfly clip into her hair, she shifts; \"What is that? Oh, haha.\" \\n\\n[[\"Dividends.\"|day06_enda1]]<<endif>>\\s\\n<<if $pause eq 4>>\"A unit of libraries,\" she says. The pen twirls between her fingers like a baton, impatient. Her hair is tied up in a messy bun, and she stares out the window, into the distance. \\n\\n\"How many letters?\" \\n\\n\"Hmm?\" \\n\\n[[\"How many letters?\"|day06_enda1]]<<endif>>\\s\\n<<if $pause eq 5>>\"Nevermind,\" she says.\\n\\n[[\"I got it.\"|day06_end]]<<endif>>",
+      "links": [
+        {
+          "text": "\"Synchronous?\"",
+          "destination": {
+            "name": "day06_enda1",
+            "pid": 69
+          }
+        },
+        {
+          "text": "\"I don't even know what 'adjure' means.\"",
+          "destination": {
+            "name": "day06_enda1",
+            "pid": 69
+          }
+        },
+        {
+          "text": "\"Dividends.\"",
+          "destination": {
+            "name": "day06_enda1",
+            "pid": 69
+          }
+        },
+        {
+          "text": "\"How many letters?\"",
+          "destination": {
+            "name": "day06_enda1",
+            "pid": 69
+          }
+        },
+        {
+          "text": "\"I got it.\"",
+          "destination": {
+            "name": "day06_end",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "day04_03",
+      "text": "<<set $day = $day + 1>><<set $drunk = true>><<set $drinkCount = $drinkCount + 1>>Your awesome friend Katey calls: \"Hey asshole, do a shot with me.\" \\n\\nWho are you to deny your awesome friend Katey? \"What're we drinking to?\" \\n\\nKatey shouts, her hand over the phone. \"Why'm I doing a shot? Oh right,\" she says, returning to the speaker, \"It's my birthday, too. That's why you're an asshole. We were supposed to go out together!\" \\n\\nShit&mdash;you completely forgot. <<if $emily is true>>You smile apologetically at Emily, but the bottle is already in her hand.<<endif>>\\n\\nAnd that's the story of how your awesome friend Katey goaded you <<if $emily is true>>and Emily <<endif>>into drinking several shots of whiskey over the phone. \\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "day06_04a",
+      "text": "Carefully, Emily slides the feed roller up and away. Wedged inside the typewriter is a crumpled sheet of paper, torn in half. \\n\\n//This is the final missive of Mr. Henry Warren Astor. Please, kind reader, if you have found this note, know that I have died, and seek justice.//\\n\\nThe letter ends there, unsigned. There are, however, several dark brown splotches, and an ugly smear trailing off the edge of the paper. \"Oh geez,\" Emily says.<<set $mystery = true>> \\n\\n> [[\"Is that blood?\"|day06_04b]]",
+      "links": [
+        {
+          "text": "\"Is that blood?\"",
+          "destination": {
+            "name": "day06_04b",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "day05_worst",
+      "text": "<<set $p4 = 1>>\\s\\nHer handwriting now has long, messy swirls; her pen tip digs deep into the thick paper. The letter is short and unsigned:\\n\\n//I will use everything in my power to destroy you.//\\n\\nIt's hard to see Lilly Clarke's emotions laid bare. She's normally so deliberate, so calculating. Now, she's just a mess, and it scares you. <<set $paranoia = $paranoia + 1>>\\n<<display day05_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "day04_05",
+      "text": "<<set $empathy = $empathy + 1>><<set $catch = true>><<set $day = $day + 1>>\"Tell me about your month? I haven't heard from you since the thing.\" It's a tough job, trying to look friendly and not desperate and non-threatening and available at the same time. But someone's gotta do it.\\n\\n<<if not $emDrunk>>\"It's been going. I guess I can't complain, but there's a lot to be said for living consistently, if not well.\"<<else>>\"It's... been weird. I used to hide behind you, and never really noticed it about myself. Now I'm exposed.\" She twirls a strand of hair around her ear.<<endif>> Her Cheshire cat smile is inscrutable and strange. \"How about you?\" \\n\\n\"You know that song we used to get stoned to in college? I feel like that, only older.\" \\n\\nShe doesn't stay late, but she lingers longer than you expect. When the conversation lulls, you make a suggestion:\\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "day07a3",
+      "text": "<<set $end = \"a3\">>\\s\\n<<if $p6 eq 0>>\\s\\nDAY 7\\n\\nYou wake up, fingers curled in a death-grip around your phone. You were drunk enough that even a call wouldn't have woken you up. Is this what adulthood is like&mdash;filled with constant, palpable remorse? \\n\\nImpulsively, you call Emily. \"I'm so sorry for last night,\" you say when she answers. \\n\\n\"Don't be. It's a weird time for me too. I'm... glad you called.\" Her tone is warm, and you can definitely tell that she's smiling. \"Hey, read me one of those letters. One you haven't read yet.\" \\n\\n> [[Investigate the letters|day07_puzzle]]\\n<<elseif $answer eq 0>>\\n\"I'm shivering,\" Emily says. \"Poor Lilly. Hey... Who do you think murdered Henry Astor?\"\\n\\nYou bite your lip. The question has been nagging at you since you found Henry's note. \\n\\n> [[\"Mrs. Astor.\"|wrong]]\\n> [[\"Lilly.\"|wrong]]\\n<<if $puzzleCount gte 5>>> [[\"Henry himself.\"|right]]<<endif>><<else>>\\s\\n\"Well, either way, it's an amazing story, huh?\" she says. \\n\\nYou have nothing to add. It's hard enough to manage your own life&mdash;its strange little nuances and twists&mdash;let alone the lives of strangers from the past. <<if $answer eq 2>>At least you know for sure: Henry was a jackass and a coward, and you refuse to be like him.<<endif>>\\n\\n\"Emily,\" you murmur, cradling your cell phone with both hands and breathing into tiny mic, \"can we try again?\" \\n\\nShe doesn't answer quickly. The phone goes so quiet that you think she won't answer at all. \"Emily?\" \\n\\n\"Sure, kid,\" she says. \"Okay.\" \\n\\nEND. \\n\\n<<display done>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "done",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day07_puzzle",
+            "pid": 115
+          }
+        },
+        {
+          "text": "\"Mrs. Astor.\"",
+          "destination": {
+            "name": "wrong",
+            "pid": 157
+          }
+        },
+        {
+          "text": "\"Lilly.\"",
+          "destination": {
+            "name": "wrong",
+            "pid": 157
+          }
+        },
+        {
+          "text": "\"Henry himself.\"",
+          "destination": {
+            "name": "right",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "day07a2",
+      "text": "<<set $end = \"a2\">>\\s\\n<<if $p6 eq 0>>\\s\\n<<set $pause = 0>>\\s\\nDAY 7\\n\\nWell, cool. You're a grown adult, and you crashed out on your couch, bottle in hand. Way to have a good grasp on real life. \\n\\nWhen you open your eyes&mdash;and it does take a while&mdash;the letters are there, staring back at you.\\n\\n> [[Investigate the letters|day07_puzzle]]\\n<<if $adrianCount gte 4>>> [[Go to the library|day07_myst]]<<endif>>\\n<<elseif $answer eq 0>>\\s\\nLilly's fear, her abrupt escape from the triangle she trapped herself in&mdash;it weighs upon you. You flip through Recent Calls in your phone until you find the unknown number. \\n\\n\"Yes?\" \\n\\n\"I'd, uh, like to give you the typewriter. And Lilly Clarke's letters. All of it.\" \\n\\nYou hear the mysterious caller's breathing over the line: even and slow. \"Very well. I shall arrange for a pick-up. Incidentally,\" he says, after a moment, \"did you read the letters?\" \\n\\nFor a moment, you consider lying. But Lilly's pain was just so raw and strange and unbearable. \"Yes. Why?\" \\n\\n\"Do you know who murdered Henry Astor?\"\\n\\n> [[\"Mrs. Astor.\"|wrong]]\\n> [[\"Lilly.\"|wrong]]\\n<<if $puzzleCount gte 5>>> [[\"Henry himself.\"|right]]<<endif>><<else>>\\s\\n\"Thank you,\" he says. \"I shall inform my employer.\" \\n\\nAnd that's it. The man hangs up. You return the typewriter to the box it came in, padding it gently with Lilly and Charlotte's letters. You think of Emily only briefly. \\n<<if $answer eq 2>>\\nAt least you know Henry's true nature. You can hand over his legacy, knowing that he was an asshole to the last.<<endif>>\\s\\n\\nEND. \\n\\n<<display done>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "done",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day07_puzzle",
+            "pid": 115
+          }
+        },
+        {
+          "text": "Go to the library",
+          "destination": {
+            "name": "day07_myst",
+            "pid": 121
+          }
+        },
+        {
+          "text": "\"Mrs. Astor.\"",
+          "destination": {
+            "name": "wrong",
+            "pid": 157
+          }
+        },
+        {
+          "text": "\"Lilly.\"",
+          "destination": {
+            "name": "wrong",
+            "pid": 157
+          }
+        },
+        {
+          "text": "\"Henry himself.\"",
+          "destination": {
+            "name": "right",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "CSS",
+      "text": ".passage {\\n\\tfont-size: 150%;\\n}",
+      "links": []
+    },
+    {
+      "pid": 77,
+      "name": "day04_04",
+      "text": "<<set $day = $day + 1>>\"I hope it's not too late,\" she says, when you open the door. \"It's still weird to knock.\" \\n\\nYour kneejerk instinct is to apologize, but Emily's actually here, and she's smiling, and her smile&mdash;... \"Yeah, weird for me too.<<if $empathy gte 3>> You wanna come in?\"\\n\\n> [[Please say yes...|day04_04a]]\\n<<elseif>> So, uh, how've you been?\" \\n\\nYou shoot the shit for a while, until Emily looks at her watch. \"Hey, it's getting late. Guess I'd better head out, huh?\" \\n\\nIt's not even that late. She doesn't even wear a watch. \\n<<set $emCount = $emCount + 1>>\\s\\n<<display day04_choice>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Please say yes...",
+          "destination": {
+            "name": "day04_04a",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "day06_05a",
+      "text": "Emily bites her lip. <<if $empathy gte 7>>\"I dunno, kid. It's a lot to take in, and it seems like it's more trouble than it's worth.\"<<set $letter = 3>><<else>>\"That's tough. I mean, I don't think anyone's coming after you. But wandering around your house? That's bogus, especially living alone.\"<<set $paranoia = $paranoia + 1>><<endif>>\\n\\nYou let that one hang in the air for a while. Emily scoops her arms in front of her and rises up, mimicking a deep breath. <<if $empathy gte 8>>She touches your knee, gently.<<endif>> Together and silently, you breathe.\\n\\n\"You know, you're right,\" you say finally. \"What should I do?\" \\n\\n\"Just... let it go for a while. C'mon, let's do something else.\"\\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "day_05starta",
+      "text": "\"Emily. She was at your house last night. Was that... good?\" \\n\\nKatey's face has always been open to you; it's in her nature to tell the truth. Even in the dim light of the bar's back corner, you can tell that her expression is poised to go from delighted to sympathetic depending on your response. \\n\\nYou don't give her the pleasure, and shrug. Neutral. \"It felt good. I just don't know if it's right.\" \\n\\nKatie runs a finger around the edge of her shot glass. <<if $empathy gt 8>>\"You know, it's no fair to lie to me, fucker. I could tell by the way she laughed at your jokes. That girl's with you.\"<<else>>\"I don't know, boo. I mean, she was over, but she was over a month ago too. Get me?\"<<endif>>\\n\\n> [[\"Ehh...\"|day05_startd]]\\n> [[\"To women.\"|day05_starte]]",
+      "links": [
+        {
+          "text": "\"Ehh...\"",
+          "destination": {
+            "name": "day05_startd",
+            "pid": 145
+          }
+        },
+        {
+          "text": "\"To women.\"",
+          "destination": {
+            "name": "day05_starte",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "day02_bonus",
+      "text": "<<set $day = $day + 1>>\\s\\n<<set $p1 = 3>>\\s\\nYour curiosity is piqued. You rifle through the box and fish out a letter with a blank envelope. \\n\\n//Mr. Astor, my husband,\\n\\nYour mother grows more ill by the day. She rests often now, but fitfully. She can hardly speak, and when she does, she calls for you. Henry, you must return to Hedgeway Manor. You must come home.\\n\\nI fear that you will not return. Increasingly, I fear that you will not reply at all. Please know that my affections for you have never waned. \\n\\nYour loving wife,\\nMrs. Charlotte Astor//\\n<<display day02_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day02_choice",
+            "pid": 164
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "day07_bad",
+      "text": "<<set $p6 = 1>>\\s\\n//Dear sister,\\n\\nI know that you are penitent, but your infractions cannot be forgiven. They can, however, remain hidden, and shall.\\n\\nCA//\\n\\n<<display day07_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day07_choice",
+            "pid": 131
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "StoryAuthor",
+      "text": "Joey Fu\\n\\nMissive is a game played over seven days. ",
+      "links": []
+    },
+    {
+      "pid": 83,
+      "name": "day02_start",
+      "text": "<<silently>>\\n<<set $drunk = false>>\\n<<set $clean = false>>\\n<<set $letter = 0>>\\n<<set $ring = 0>>\\n<<set $day = 0>>\\n<<endsilently>>\\s\\nDAY 2\\n\\nYou wake up, kind of. Every day seems to lower the bar on the minimum requirements for functional adulthood. For instance, today, you stub your toe on an empty whiskey bottle on the way to the shower. \\n\\nBut you got to the shower. \\n\\nAnother day at the office. It's almost disappointing that your coworkers haven't noticed your slow drift into utter uselessness. \\n\\nHome is where the reheated takeout is. What now? \\n<<display day02_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day02_choice",
+            "pid": 164
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "day01_1-05a",
+      "text": "You almost don't want to open it. \"I could throw it in the trash,\" you say to yourself, and the thought of it...\\n\\n\"It's a symbol,\" you say. \\n\\nThe wrapping paper is irresistible, though. You slide your fingers under too-thick layers of packing tape, tugging and stretching the plastic until it becomes ropey and twisted and impossible to detach. \\n\\nScissors are not an option. You work at the tape, meticulously, until the box opens. A typewriter. It's beautiful, you admit to yourself.\\n\\nUnpacking the thing&mdash;its wood-panelled keys, its thick steel base&mdash;you realize that the packing material isn't garbage, but a bunch of envelopes, padding the edges of the typewriter. \\n\\n> [[Wow...|day01_2-01]]",
+      "links": [
+        {
+          "text": "Wow...",
+          "destination": {
+            "name": "day01_2-01",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "Start_multi",
+      "text": "> [[It's your birthday today.|day01_1-01]]\\n\\n<<set $hint = false>>",
+      "links": [
+        {
+          "text": "It's your birthday today.",
+          "destination": {
+            "name": "day01_1-01",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "day06_endc",
+      "text": "<<set $letter = 0>>\\s\\n<<set $answer = false>>\\s\\n<<set $right = false>>\\s\\n<<set $emily = false>>\\s\\nEmily's staying. //She's staying.// The words are so significant that you can barely believe they're true. \"I, uh, can take the floor, if you like.\" \\n\\n\"You're not tired yet, are you?\" Emily asks, with a measure of genuine concern. You shake your head. \"Then that's not a bridge we have to cross yet. Let's just focus on having fun. With each other.\" \\n\\nYou don't need to be told twice. You and Emily spend the rest of the night taking shots and playing rock paper scissors to determine who gets control of the TV remote. You pass out in the middle of an infomercial for arch-supporting socks, your face against her shoulder, hers against the crown of your head. \\n\\nNot the way you thought the night would go, but you fall asleep holding her hand, and happy. \\n\\n<<if $paranoia gt 8>>> [[Zzz.|day07b1]]\\n<<elseif $empathy gt 8>>> [[Zzz.|day07b2]]\\n<<elseif $paranoia gt $empathy>>> [[Zzz.|day07b3]]\\n<<elseif $empathy gte $paranoia>>> [[Zzz.|day07b4]]<<endif>>",
+      "links": [
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day07b1",
+            "pid": 149
+          }
+        },
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day07b2",
+            "pid": 49
+          }
+        },
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day07b3",
+            "pid": 153
+          }
+        },
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day07b4",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "day06_emily",
+      "text": "\"That Lilly girl sure is something,\" Emily says. \"She reminds me of me, a bit.\" \\n\\nThis is a trap; you recognize it immediately, and keep your face neutral. \"I don't know if I'd say that, but she certainly has a flair for the dramatic.\" \\n\\nEmily laughs. \"Well, in that case, she's just like me.<<if $letter eq 2>> I can't ever imagine going through what she did, though. I mean, I haven't read as much as you have. But damn.<<endif>>\"\\n\\nHer face, it's always been so hard for you to read. But right now, she seems to glow. \"Have you solved many of the other riddles? Whatever these are?\" \\n\\n<<if $puzzleCount gte 4>>\"Yeah, I think so.\"<<else>>\"Ehh, one or two, I think.\"<<endif>>\\n\\n\"Cool,\" Emily replies. And in that moment, she seems<<if $puzzleCount gte 4>> genuinely impressed<<else>>... uncomfortable, really<<endif>>.\\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "day01_1-02",
+      "text": "You move your body to take up more of the doorframe, hiding the empty bottles and old takeout containers from Emily's view. \"Some friends came over last night. Just messy, you know. How've you been?\"\\n\\n<<display day01_rep01>>\\n\\n> [[Thank her|day01_1-05]]\\n\\n<<set $paranoia = $paranoia + 1>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day01_rep01",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Thank her",
+          "destination": {
+            "name": "day01_1-05",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "day01_1-03",
+      "text": "\"I'm subletting to a horrible monster who gets daydrunk and celebrates a birthday by not cleaning for a week. What a jerk.\" \\n\\nEmily laughs, and that's a relief&mdash;for multiple reasons. \"Not the worst roommate you've ever had, I imagine.\" \\n\\nYou won't dignify that one. \"So, how've you been, Emily?\" \\n\\n<<display day01_rep01>>\\n\\n> [[Thank her|day01_1-05]]\\n> [[Invite her in|day01_1-06]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day01_rep01",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Thank her",
+          "destination": {
+            "name": "day01_1-05",
+            "pid": 94
+          }
+        },
+        {
+          "text": "Invite her in",
+          "destination": {
+            "name": "day01_1-06",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "day01_1-01",
+      "text": "DAY 1\\n\\nHow long has it been since Emily returned your key? A month? Either way, it takes you by surprise when she appears at your door with a large cardboard box. \\n\\n\"Happy birthday,\" she says, in a voice that almost sounds cheerful. \"What's that smell?\"\\n\\n> [[Hide your shame|day01_1-02]]\\n> [[Laugh it off|day01_1-03]]\\n> [[Tell the truth|day01_1-04]]\\n\\n<<silently>>\\n<<set $paranoia = 0>>\\n<<set $empathy = 0>>\\n<<set $puzzle = 0>>\\n<<set $day = 0>>\\n<<set $drunk = false>>\\n<<set $letter = false>>\\n<<set $mystery = false>>\\n<<set $drinkCount = 0>>\\n<<set $emCount = 0>>\\n<<set $puzzleCount = 0>>\\n<<set $p1 = 0>>\\n<<set $p2 = 0>>\\n<<set $p3 = 0>>\\n<<set $p4 = 0>>\\n<<set $p5 = 0>>\\n<<set $p6 = 0>>\\n<<set $research = false>>\\n<<set $adrianCount = 0>>\\n<<if $count eq 3>><<set $count = 0>><<endif>>\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "Hide your shame",
+          "destination": {
+            "name": "day01_1-02",
+            "pid": 88
+          }
+        },
+        {
+          "text": "Laugh it off",
+          "destination": {
+            "name": "day01_1-03",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Tell the truth",
+          "destination": {
+            "name": "day01_1-04",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "day01_1-06",
+      "text": "\"Open it with me?\" you say. What if she says yes? Damn, the place is a mess, and you haven't even replaced the furniture she took. \\n\\n\"Sure,\" she replies. You turn to go inside, but Emily doesn't move&mdash;clearly, she doesn't intend to follow you. So you stand awkwardly on your front step and tear away an absurdly thick layer of packing tape, to reveal: \\n\\nA typewriter. Raised brass keys, wood panels. Perfectly maintained. \"It's beautiful,\" you say. At the bottom of the box is a thick layer of hand-written letters, some in envelopes, some with broken wax seals. \"Whoa.\" \\n\\n\"A mystery! You'll have to tell me all about it,\" Emily says, turning to leave. \"Have fun with it.\" \\n\\n> [[Enter your home|day01_2-01]]",
+      "links": [
+        {
+          "text": "Enter your home",
+          "destination": {
+            "name": "day01_2-01",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "day03_good",
+      "text": "<<set $puzzleCount = $puzzleCount + 1>>\\s\\n<<set $p2 = 2>>\\s\\n//Dearest Henry,\\n\\nThis letter races you home, enclosed in an envelope along with my heart. Thank you for tending to me at a moment of grave longing. I hope the interval between this and your next visit will be shorter, however, you have replenished the fountain of my patience and my love.\\n\\nI miss you already, and ache at the sight of my bed, without you. Please write again soon, so I might not miss the tone of your voice, even if I cannot hear the sound of it.\\n\\nEver and always yours,\\nLilly//\\n<<display day03_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "day01_1-04",
+      "text": "\"Sorry, I'm a mess. I've just been a mess. It's been getting better, but sometimes...\" Your shoulders slump under the equal weights of legitimate sadness and legitimate hangover. \"Anyway, how've you been?\" \\n\\n\"Oh, hey...\" she says, touching you lightly on the elbow. <<display day01_rep01>>\\n\\n> [[Thank her|day01_1-05]]\\n> [[Invite her in|day01_1-06]]\\n\\n<<set $empathy = $empathy + 1>> ",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day01_rep01",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Thank her",
+          "destination": {
+            "name": "day01_1-05",
+            "pid": 94
+          }
+        },
+        {
+          "text": "Invite her in",
+          "destination": {
+            "name": "day01_1-06",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "day01_1-05",
+      "text": "\"Thanks. I mean it. And thanks for dropping by and everything, I guess.\"\\n\\nYou accept the box&mdash;oof, heavier than you thought. It's wrapped with Christmas-themed paper; the dancing Santas and reindeer on the wrapping paper seem unnecessarily jovial, but before you can tell Emily this, she's already turned to leave. \\n\\n\"I'll see you later?\"\\n\\n\"Sure,\" she says. \\n\\n> [[Enter your home|day01_1-05a]]",
+      "links": [
+        {
+          "text": "Enter your home",
+          "destination": {
+            "name": "day01_1-05a",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "day03_03a",
+      "text": "<<set $empathy = $empathy + 1>><<set $day = $day + 1>>Emily watched this one with you, last Thanksgiving. She curled up beneath your arm, and pressed her lips against your neck when her parents weren't looking. Her hair smelled like autumn: fallen leaves, crisp air, and the lingering smoke from your failed attempt at pumpkin pie. \\n\\nEven her mom laughed as you tried desperately to finish one slice. Thankfully, your second try was much better&mdash;Emily helped. \\n\\n\"I love this one,\" she said, when you suggested the movie to her family. \"Good choice.\" \\n<<display day03_choice>>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "day03_03b",
+      "text": "<<set $paranoia = $paranoia - 1>><<set $day = $day + 1>>She always said you had a weird sense of humor. You indulge in some good ol' fashioned shits and giggles, letting yourself forget about the weirdness of the past few days. \\n\\nIn the corner of your eye, the box, the typewriter, those letters: //They're just things//, you tell yourself. //Just stuff.//\\n\\nYou needed that. \\n<<display day03_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "day03_03c",
+      "text": "<<if not $mystery>><<set $paranoia = $paranoia - 1>>Your boss may give you shit for it, but there's nothing like a good thriller after a long day, and //Fatal Attraction// is a classic. \\n\\nHey, you want a drink with that? \\n\\n> [[Sure you do.|day03_04]]\\n\\n<<else>><<set $paranoia = $paranoia + 1>><<set $day = $day + 1>>Normally, //Fatal Attraction// would be right up your alley&mdash;it's a classic. But right now, it strikes a strange tone.\\n\\nYou can't take your mind off of Henry Astor. What happened to him? The letters seem to be all from his wife and girlfriend. Knowing that he was murdered makes the movie sit poorly. \\n<<display day03_choice>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Sure you do.",
+          "destination": {
+            "name": "day03_04",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "day05_startc2",
+      "text": "\"Freckles Laughlin loves you, Katey. She wants you in her life, forever, even though you cuss like a sailor and stay out too late on work nights.\" \\n\\nKatey leans into your shoulder. You can barely hear her over the 90s pop music and the low roar of a Thursday night bar crowd. Her lips move; you almost ask her to repeat herself. <<set $paranoia = $paranoia - 1>>\\n\\nBut you don't. You and Katey sit around, mumbling inaudibly at each other. Drunkenness washes over you like a high tide. \\n\\nShe tells you she loves you. \\n\\n> [[Time passes|day05_startd]]",
+      "links": [
+        {
+          "text": "Time passes",
+          "destination": {
+            "name": "day05_startd",
+            "pid": 145
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "day05_startc3",
+      "text": "\"You'll be fine. You're always fine, Katey-bug.\" But she looks at your face, unconvinced. \\n\\nKatey leans into your shoulder. You can barely hear her over the 90s pop music and the low roar of a Thursday night bar crowd. Her lips move; you almost ask her to repeat herself. <<set $empathy = $empathy - 1>>\\n\\nBut you don't. You and Katey sit around, mumbling inaudibly at each other. Drunkenness washes over you like a high tide. \\n\\nShe cries a little, maybe. It's too dark to tell. \\n\\n> [[Time passes|day05_startd]]",
+      "links": [
+        {
+          "text": "Time passes",
+          "destination": {
+            "name": "day05_startd",
+            "pid": 145
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "day06_puzzlea",
+      "text": "The handwriting is a mess, barely legible. This note doesn't even have a greeting or Lilly's looping, pretty signature. \\n\\n//Du m<<if $hint eq true>>''E''<<else>>E<<endif>>ip zp owdp w-<<if $hint eq true>>''E''<<else>>E<<endif>>wmmtvs, \\nW jrtvqmp tv zta pup, \\nZp rztajmpk rztmaj zp rwvkpcpk, \\nZp adtmEk rztmaj zp octpk. \\n\\nDu m<<if $hint eq true>>''E''<<else>>E<<endif>>ip zp mpxi zta <<if $hint eq true>>''E''<<else>>E<<endif>>wku, \\nZp adtmtvs owdp j<<if $hint eq true>>''E''<<else>>E<<endif>> dp,\\nT rwjozpk zta zpwcj w-fcpwqtvs; \\nTj rwav'j dpwv<<if $hint eq true>>''E''<<else>>E<<endif>> jh fp.//\\n\\nThe three remaining letters have beautiful illustrations on them. Unlike the shaking hand and the gibberish of the letter itself. \\n\\n> [[an exotic cat|day06_good]]\\n> [[a lighthouse|day06_worst]] \\n> [[a broken heart|day06_bad]]",
+      "links": [
+        {
+          "text": "an exotic cat",
+          "destination": {
+            "name": "day06_good",
+            "pid": 11
+          }
+        },
+        {
+          "text": "a lighthouse",
+          "destination": {
+            "name": "day06_worst",
+            "pid": 51
+          }
+        },
+        {
+          "text": "a broken heart",
+          "destination": {
+            "name": "day06_bad",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "day05_startc1",
+      "text": "\"Hey.\" It's gotten loud in the bar, and you have to lean in close to be heard. \"Frecks wants to have a life with you. It's a big step. You're allowed to be worried.\" \\n\\nKatey leans into your shoulder. You can barely hear her over the 90s pop music and the low roar of a Thursday night bar crowd. Her lips move; you almost ask her to repeat herself. <<set $empathy = $empathy + 1>>\\n\\nBut you don't. You and Katey sit around, mumbling inaudibly at each other. Drunkenness washes over you like a high tide. \\n\\nShe tells you you're a good friend.\\n\\n> [[Time passes|day05_startd]]",
+      "links": [
+        {
+          "text": "Time passes",
+          "destination": {
+            "name": "day05_startd",
+            "pid": 145
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "day01_2-03",
+      "text": "Emily's eBay seller must have a good rating. The old typewriter is in pristine condition, without any missing or sticky keys. There's even a fresh ribbon of ink and everything. You scrounge through your writing drawer--damn, it's been a while since you've been in here--and find a clean sheet of paper. \\n\\nThe paper won't go through, though. There's something trapped in the feed. \\n\\n> [[The fuck? Investigate.|day01_2-06]]\\n<<if not $drunk>>> [[Ugh. Give up and drink.|day01_2-02]]<<endif>>\\n<<silently>>\\n<<set $day = $day + 1>>\\n<<set $mystery = true>>\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "The fuck? Investigate.",
+          "destination": {
+            "name": "day01_2-06",
+            "pid": 107
+          }
+        },
+        {
+          "text": "Ugh. Give up and drink.",
+          "destination": {
+            "name": "day01_2-02",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "day01_2-02",
+      "text": "Brown liquor. These days, when you walk into the store, Carlos (or, you know, whoever) has the bottle ready for you behind the counter. Sometimes, you don't have a clean glass to spare, but today is special. \\n\\nThere's even a full tray of ice. \\n\\n\"To me.\" \\n\\n> [[Oops.|day01_2-05]]\\n\\n<<silently>>\\n<<set $day = $day + 1>>\\n<<set $drunk = true>>\\n<<set $drinkCount = $drinkCount + 1>>\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "Oops.",
+          "destination": {
+            "name": "day01_2-05",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "day01_2-01",
+      "text": "Ugh, Emily was right. This place smells awful. You find an empty space in the couch and sit in it. You find an empty place on the coffee table and gingerly set the box down. \\n<<display day01_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day01_choice",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "day04_02",
+      "text": "The near-Emily experience has got you all tangled up, but you're sure of one thing: if she comes over again, she won't be leaving because of a weird smell. \\n\\nEmpties cleared away, a cursory vacuuming, and the place looks like it could really sustain human life. Pat yourself on the back! \\n<<silently>>\\n<<set $empathy = $empathy + 1>>\\n<<set $day = $day + 1>> \\n<<set $clean = true>><<endsilently>>\\s\\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "day01_2-07",
+      "text": "Oh god, what if it is? \\n<<if not $letter>>\\nOut of curiousity, you flip through some of the letters. Most appear to be from a woman named Lilly Clark. Some of the envelopes are decorated with delicate, lovely ink sketches. One is of a woman, and you wonder if it's her.<<endif>>\\s\\n\\nYou look at the blood again. Yikes. \\n<<display day01_choice>>\\n<<set $paranoia = $paranoia + 1>>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day01_choice",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "day01_2-06",
+      "text": "Carefully, you slide the feed roller up and away. Wedged inside the typewriter is a crumpled sheet of paper, torn in half. \\n\\n//This is the final missive of Mr. Henry Warren Astor. Please, kind reader, if you have found this note, know that I have died, and seek justice.//\\n\\nThe letter ends there, unsigned. There are, however, several dark brown splotches, and an ugly smear trailing off the edge of the paper. <<set $mystery = true>>\\n\\n> [[Is that blood?|day01_2-07]]",
+      "links": [
+        {
+          "text": "Is that blood?",
+          "destination": {
+            "name": "day01_2-07",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "day01_2-05",
+      "text": "How many drinks has it been? What time is it? Who spilled booze all over these letters? At least they look kind of salvageable... \\n<<display day01_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day01_choice",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "day01_2-04",
+      "text": "The letters are folded in thirds and bundled seemingly randomly, most of them addressed to \"Mr. Henry Warren Astor.\" Some are elegantly decorated with hand-drawn pictures.\\n<<if $drunk is true>>\\nSome are soaked in alcohol, thanks to you. Dummy.\\n\\n> [[Clean up your boozy mess.|day01_2-08]]<<endif>>\\n> [[Open a letter.|day01_2-09]]\\n\\n<<set $day = $day + 1>>",
+      "links": [
+        {
+          "text": "Clean up your boozy mess.",
+          "destination": {
+            "name": "day01_2-08",
+            "pid": 112
+          }
+        },
+        {
+          "text": "Open a letter.",
+          "destination": {
+            "name": "day01_2-09",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "day04_worst",
+      "text": "<<set $p3 = 1>>//Mr. Astor,\\n\\nI have known you since girlhood. How disappointing to uncover only now the breadth of your cowardice. I knew you lacked the bravery, but I was not aware you had such gall: you would let our love putrefy rather than amputate. \\n\\nNext time a gentleman finds me unworthy, I shall follow your sterling example and ready a lawyer of my very own. \\n\\nDo you think my family's reputation or our commitment to propriety will act as shield for your indiscretions? I cared once for your esteem above that of all men. My revenge, Mr. Astor, will be as ignorant as my love. \\n\\nLC//\\n<<if $emily is true>>\\nEmily smirks. \"Well, that escalated quickly. Lilly Clarke doesn't seem the type.\"<<else>><<set $paranoia = $paranoia + 1>><<endif>>\\s\\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "day01_2-09",
+      "text": "<<set $letter = true>>//My darling Mr. Astor,//\\n\\nthe letter reads,\\n\\n//It has been five months since your last visit to Hedgeway Manor. Your mother grows sickly, and asks for you daily. She remembers less each day; I am barely more than a stranger to her now. \\n\\nI wonder often where you are, and what you are doing there. Surely, your business can conduct itself for time long enough to attend to your mother and your loving wife. \\n\\nAnd what of your ward, the young Miss Clarke? Her family must yearn for more than her correspondance; according to her eldest sister, her letters are elusive and full of riddles.\\n\\nI wait with hopeful heart for your next letter,\\nyour loving wife,\\nMrs. Charlotte Astor//\\n<<if not $mystery>>\\nFlipping through the letters, you realize that many of them aren't from Mrs. Astor&mdash;most are from a woman named Lilly Clarke. And Miss Clarke's relatives are right. There are strange sequences of letters, as if the lettters are written in code.<<endif>>\\s\\n\\n<<display day01_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day01_choice",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 112,
+      "name": "day01_2-08",
+      "text": "Once, you spilled a glass of wine on Emily's antique rug--an heirloom from her grandmother. She didn't say anything at the time, or ever again, but you still felt like shit. \\n\\nYou fish a dirty towel out of the laundry and dab booze away from the stack of letters. That should do it. \\n\\n> [[A letter catches your eye.|day01_2-09]]\\n\\n<<set $empathy = $empathy + 1>>",
+      "links": [
+        {
+          "text": "A letter catches your eye.",
+          "destination": {
+            "name": "day01_2-09",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "day04_puzzle",
+      "text": "<<if $emily is true>>\"Oh, that's right. The mystery box. Let's read one of the notes together!\" Emily leans in over your shoulder, and her hair brushes the bare skin on your neck. <<if $empathy gte 4>>She smells like vanilla soap. <<endif>><<endif>>You pick a letter at random; there's a sketch of a tiny man on the envelope, reading a letter of his own.\\n\\n//Dearest Henry,\\n\\nI miss you dearly. My travelling companion, Robert Moore, has suggested that I look at myself in the <<if $hint eq true>>''mirror''<<else>>mirror<<endif>>. There, I will be <<if $hint eq true>>''reflected''<<else>>reflected<<endif>>, and I will <<if $hint eq true>>''reflect''<<else>>reflect<<endif>>. And in the <<if $hint eq true>>''center''<<else>>center<<endif>>, I shall find myself. Or so he says. \\n\\nIn my youth ere we met, I had so much pep. I studied sciences, arts, maths. My voice instructor had me rehearsing the classic solos of the Baroque period. I gag now to think of how I felt then&mdash;all potential energy, with no direction, no release. \\n\\nIt must be far cry from how you were raised. Are the sexes really so different? Did you grow up with the tenet that women ought to be bottled up? Sagas are written on it, you know. \\n\\nPerhaps, my love, I feel this way again: bottled, trapped, contained by your silence. Where are you, my dearest Henry?\\n\\nEver yours,\\nLilly Clarke//\\n\\nThree other envelopes catch your eye. One little drawing in particular:\\n\\n> [[ A man jumping|day04_bad]]\\n> [[ A man with a sword|day04_worst]]\\n> [[ A man in a hammock|day04_good]]\\n<<set $day = $day + 1>>",
+      "links": [
+        {
+          "text": " A man jumping",
+          "destination": {
+            "name": "day04_bad",
+            "pid": 146
+          }
+        },
+        {
+          "text": " A man with a sword",
+          "destination": {
+            "name": "day04_worst",
+            "pid": 110
+          }
+        },
+        {
+          "text": " A man in a hammock",
+          "destination": {
+            "name": "day04_good",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "day06_puzzle",
+      "text": "<<set $day = $day + 1>>\\s\\nA simple, typewritten note, addressed from the Sibley Heights Sanitarium Facility. \\n\\n//Mr. Henry Astor,\\n\\nYou are in our records as the legal guardian of one Miss Lilly Clarke. Miss Clarke is no longer a guest at our establishment. She has, however, abandoned several items of apparent worth. We can no longer wait for her response or return. \\n\\nEnclosed with her belongings are four letters, addressed to you. Sibley Heights staff would like to inform you that these were not withheld by our facility. She never sent any correspondence while in our care. \\n\\nRegards, \\n\\nSibley Heights Sanitarium Head Administrator//\\n\\n> [[Open Lilly's note|day06_puzzlea]]",
+      "links": [
+        {
+          "text": "Open Lilly's note",
+          "destination": {
+            "name": "day06_puzzlea",
+            "pid": 100
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "day07_puzzle",
+      "text": "//Dear Mrs. Astor,\\n\\nA woman of a certain mindset may not wish to see this letter, and if you are such a woman, kindly burn it. I have no great wish to humiliate myself, and a woman of a certain mindset would not wish it upon herself either.\\n\\nI have recently heard of the untimely demise of your husband. I worry perhaps that our correspondence&mdash;mine and his&mdash;might be thought of as compromising. \\n\\nWe live in a world, Mrs. Astor, that is unsympathetic to a woman unmanned. For our <<if $hint eq true>>''p''<<else>>p<<endif>>rotection&mdash;yours and mine&mdash;please conceal the record of my treachery. \\n\\nIf you have a question for me, Mrs. Astor, perhaps this will enlighten:\\n<html>\\n<table width=\"80%\" border=\"0px\" align=\"center\">\\n<tr>\\n<td>\\nS6W3L1<br />\\nS2W14L2<br />\\nS5W14L5<br />\\nS1W6L2<br />\\nS6W3L7<br />\\nS6W7L6<br />\\nS12W1L4<br />\\nS3W3L6<br />\\n</td>\\n<td>\\nS11W8L3<br />\\nS3W3L5<br />\\nS8W4L1<br />\\nS10W2L2<br />\\nS6W8L4<br />\\nS6W7L6<br />\\nS8W7L6<br />\\nS12W5L3<br />\\n</td>\\n</tr>\\n</table>\\n</html>\\nI hoped to never see your husband again. I have ensured that this is so. We both have. A courtesy you could grant, if you still have patience for courtesy: if two options present, <<if $hint eq true>>''choose the right one''<<else>>choose the right one<<endif>>. \\n\\nThank you for your patience, Mrs. Astor, and your indulgence. \\n\\nLilly Clarke//\\n\\n<<if $adrianCount gte 5>>You tell Adrian about the other letters, the other replies. This<<else>>The<<endif>> letter was clearly bundled with three replies, drafted but never mailed. The envelopes are labelled in pencil, in Mrs. Astor's delicate handwriting:\\n\\n> [[Sister|day07_bad]]\\n> [[Angel|day07_good]]\\n> [[Snake|day07_worst]]\\n",
+      "links": [
+        {
+          "text": "Sister",
+          "destination": {
+            "name": "day07_bad",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Angel",
+          "destination": {
+            "name": "day07_good",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Snake",
+          "destination": {
+            "name": "day07_worst",
+            "pid": 143
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "day05_good",
+      "text": "<<set $puzzleCount = $puzzleCount + 1>>\\s\\n<<set $p4 = 2>>\\s\\nHer handwriting now has long, messy swirls, interspersed with sketches of trees, half-finished. The letter is short and unsigned:\\n\\n//I still love you. Please come back to me. I am in despair.//\\n\\nYou feel that. Still, it's hard to see Lilly Clarke's emotions laid bare. She's normally so deliberate, so calculating. Now, she's just a mess. \\n<<display day05_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "day06_myst",
+      "text": "<<set $research = true>>\\s\\n<<set $day = $day + 1>>\\s\\n<<set $adrianCount = $adrianCount + 1>>\\s\\n<<set $empathy = $empathy - 1>>\\s\\n---\\nRhodes County Library Network message:\\n\\nHey, I found more info on your girl Lilly. She was kind of a local legend. I left a printout for you at the front desk.\\n\\nHope to see you soon! \\n  Adrian Brown\\n---\\n\\n\"Sorry,\" Emily says, when you catch her peering over your shoulder. \"Old habits, I guess. Seriously, my bad.\"\\n\\nThere's actually a blush on her face, spreading rapidly to her ears and neck. You want to forgive her immediately, but... \"Eh, no worries.\" \\n\\nStill, though. You lock your phone and put it away.\\n<<display day06_choice>>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "day06_02a",
+      "text": "<<set $drunk = true>>\\s\\n<<set $drinkCount = $drinkCount + 1>>\\s\\n<<set $day = $day + 1>>\\s\\n<<set $emDrunk = true>>\\s\\nEmily slides a bottle of wine out of her enormous purse. \"This is a thank you,\" she says. \"For hanging out with me. Hair of the dog? Or save it for later?\" \\n\\nShe's already recovered your only two wine glasses, found your missing bottle opener, and uncorked a fine-smelling cabernet. Before you get a chance to reply, both glasses are filled. \"Let's take it slow,\" you say, and immediately feel bad about it. \\n\\n\"Sure.\" You search your ex's face for something: a sign that you said something totally ridiculous. But Emily is placid<<if $empathy gte 9>>, happy even<<endif>>.\\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "day03_06",
+      "text": "<<silently>>\\n<<set $day = $day + 1>>\\n<<set $empathy = $empathy + 1>>\\n<<set $call = true>>\\n<<endsilently>>\"Hey there.\" \\n\\n\"Emily.\" //It's Emily.// \"It's good to hear from you. What's up?\" \\n\\n\"So this completely amazing thing happened at work...\" \\n\\nThat's what it was always like between the two of you. The conversation was easy; relationships are the hard part. <<if $drunk eq true>>You realize halfway through that Emily's slurring her words a little. \"Are you drunk?\" \\n\\nHer laughter is loud, barking, and something she's never been ashamed of. \"You caught me.\" <<set $emDrunk = true>><<endif>>Her good humor is infectious, and hours disappear. \\n\\nFinally, you steel yourself and just ask: \"Hey, do you wanna come over tomorrow?\" \\n\\n> [[Fingers crossed|day03_06a]] <<set $pause = 0>>",
+      "links": [
+        {
+          "text": "Fingers crossed",
+          "destination": {
+            "name": "day03_06a",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "day02_puzzle",
+      "text": "You pick a bundle of letters from the box. Each one has a small design on the outside envelope. You pick one, and examine the note. The paper is impossibly thick, like a good linen. \\n\\n//My dear Mr. Henry Astor, \\n\\nLove is a beautiful place. I cannot live there with you, but it is a joy to visit. The beach, and the sand, and the peace of it, even just holding your hand. Holding your hand, and holding it to my face. Feeling you. \\n\\nYou're a dream and a treasure. I know that I am young, and you are not. I know that I am inexperienced, and you are not. I know that you are married, and I know that I'm your mistress. \\n\\nBut love is a beautiful place. <<if $hint eq true>>''And''<<else>>And<<endif>> I can't help but imagine exploring its shores with you. \\n\\nYour sunshine girl, \\nLily Clarke//\\n\\nThree envelopes catch your eye, each one marked with a different symbol. One appeals to you in particular&mdash;the solution to a puzzle? \\n\\n>[[ XO|day02_worst]]\\n>[[ -13|day02_bad]]\\n>[[ &8|day02_good]]\\n<<set $day = $day + 1>>\\n",
+      "links": [
+        {
+          "text": " XO",
+          "destination": {
+            "name": "day02_worst",
+            "pid": 43
+          }
+        },
+        {
+          "text": " -13",
+          "destination": {
+            "name": "day02_bad",
+            "pid": 29
+          }
+        },
+        {
+          "text": " &8",
+          "destination": {
+            "name": "day02_good",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "day07_myst",
+      "text": "<<set $pause = $pause + 1>>\\s\\n<<if $pause eq 1>>\\s\\nA woman who looks just like your grandmother hands you a stack of papers with a teasing smirk. \"So you're the one Adrian's been on about. You //are// cute. Here you go, hon.\" \\n\\nA funny wave of tension clenches your shoulders. \"Thank you. Is she in today?\" \\n\\nThe librarian's funny little grin widens. \"If you want to wait, I'll let her know you're by the study booths.\" She gestures to a series of small cubbies near the reference area. \\n\\n> [[Check out the materials|day07_myst]]\\n<<elseif $pause eq 2>>\\s\\nThe printouts are mostly grainy reproductions of old newspapers. Adrian has annotated them with a post-it note: \"Lilly Martin, nee Clarke. The obit didn't print her married name, for some reason.\" \\n\\nYou skim the articles.\\n\\n- Mayor's wife hosts scavenger hunt for children\\n- Mrs. Martin, Queen of Crosswords\\n- Mayor and Mrs. Martin Build State's Largest Hedge Maze\\n\\n\"Martin Park has a statue of her. That's what Mrs. Tom at the front desk said.\" Again, her voice takes you by surprise; even with the book cart, the woman is totally silent. Today, she wears a short-sleeved dress, her dark hair twisted into a loose braid over her shoulder. \"She liked puzzles. Girl after my own heart.\" \\n\\n> [[Show her the letters|day07_myst]]\\n<<elseif $pause eq 3>>\\s\\n\"Yeah, right? Check this out.\" You show her the letter from yesterday, with its scrawled nonsense. \\n\\n//Du m<<if $hint eq true>>''E''<<else>>E<<endif>>ip zp owdp w-<<if $hint eq true>>''E''<<else>>E<<endif>>wmmtvs, \\nW jrtvqmp tv zta pup, \\nZp rztajmpk rztmaj zp rwvkpcpk, \\nZp adtmEk rztmaj zp octpk. \\n\\nDu m<<if $hint eq true>>''E''<<else>>E<<endif>>ip zp mpxi zta <<if $hint eq true>>''E''<<else>>E<<endif>>wku, \\nZp adtmtvs owdp j<<if $hint eq true>>''E''<<else>>E<<endif>> dp,\\nT rwjozpk zta zpwcj w-fcpwqtvs; \\nTj rwav'j dpwv<<if $hint eq true>>''E''<<else>>E<<endif>> jh fp.//\\n\\n> [[\"So, what do you think?\"|day07_myst]]\\n<<elseif $pause eq 4>>\\s\\n<<set $adrianCount = $adrianCount + 1>>\\s\\nWith long fingers, Adrian plucks the letter out of your hand. You can't help but notice the way her lips move, forming silent words around invisible thoughts. \"Well,\" she says finally, with a breathy sigh, \"W is either I or A. T is probably the other one. These capital letters are weird too, yeah?\" \\n\\n\"Oh,\" you say. Now, you regret not bringing the whole box of letters, and the stack you left with doesn't include the three that caught your attention for this one. \\n\\n\"How cool,\" she exclaims. When she looks at you, her eyes shine. \"Do you have any more?\" \\n\\n> [[\"There's this one...\"|day07_puzzle]]\\n<<endif>>",
+      "links": [
+        {
+          "text": "Check out the materials",
+          "destination": {
+            "name": "day07_myst",
+            "pid": 121
+          }
+        },
+        {
+          "text": "Show her the letters",
+          "destination": {
+            "name": "day07_myst",
+            "pid": 121
+          }
+        },
+        {
+          "text": "\"So, what do you think?\"",
+          "destination": {
+            "name": "day07_myst",
+            "pid": 121
+          }
+        },
+        {
+          "text": "\"There's this one...\"",
+          "destination": {
+            "name": "day07_puzzle",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "day03_myst",
+      "text": "<<set $day = $day + 1>>\\s\\n<<set $research = true>>\\s\\n<<set $adrianCount = $adrianCount + 1>>\\s\\n\"Sponsored result... sponsored result... There are thousands of Astors, geez. Oh, Lilly Clarke.\" \\n\\nYou click on one of the few links: an archived obituary for a woman named Lilly Clarke. 404: File not Found. The site&mdash;a repository for old, local newspapers&mdash;is apparently a memorial to the internet circa 1998.\\n\\n\"The Lawrenceville Gazette?\" \\n\\nThe newspaper hasn't been in print since the Great Depression. Still, you follow through. Looks like the local library might have an archived version. \\n\\nSomething for another day.\\n<<display day03_choice>>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "day06_07",
+      "text": "<<set $day = $day + 1>>\\s\\n\"We've done a lot today. Wanna just... watch TV? Or something?\" \\n\\nIt sounds lame even to you, but Emily brightens. \"There's this show I keep meaning to check out. Do you still get AMC?\" You settle into your couch, bracing yourself for a cerebral historical drama. \\n\\n//Yep,// you think to yourself, as Emily queues up something set in the old West. \"I heard about it from Freckles. Did you know she and Katey are moving?\" \\n\\nShe sits close enough that you can feel the warm line of her thigh just barely against yours. Her hair is different, the shape of it against her shoulders. You can barely focus on the show, especially after she leans her body into yours. \"Are you not into this?\" \\n\\n> [[Lie|day06_07a]]\\n> [[Don't|day06_07b]]",
+      "links": [
+        {
+          "text": "Lie",
+          "destination": {
+            "name": "day06_07a",
+            "pid": 31
+          }
+        },
+        {
+          "text": "Don't",
+          "destination": {
+            "name": "day06_07b",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 124,
+      "name": "day06_06",
+      "text": "<<set $day = $day + 1>>\\s\\n\"So it's a little late, but I could cook something up if you like?\" \\n\\nA dreamy smile spreads across Emily's face<<if $emDrunk eq true>>, which glows with more than a little wine<<endif>>. \"Ooh, now there is something I missed a lot.\" \\n\\nThere's really no way to answer that one kindly, so you let it slide. \"Bottle?\" you ask instead, and Emily bounds to your kitchen, uncorking a bottle of cabernet like a wino fairy godmother. \\n\\nCabernet, huh? Well, you can easily make something to go with that: \\n\\n> [[Something fancy|day06_06a]]\\n> [[Something healthy|day06_06b]]\\n> [[Something comforting|day06_06c]]",
+      "links": [
+        {
+          "text": "Something fancy",
+          "destination": {
+            "name": "day06_06a",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Something healthy",
+          "destination": {
+            "name": "day06_06b",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Something comforting",
+          "destination": {
+            "name": "day06_06c",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "day06_05",
+      "text": "<<set $day = $day + 1>>\\s\\n<<set $emDrunk = true>>\\s\\n<<set $weirdCall = false>>\\s\\nEmily has poured herself a glass of red wine and sunk into the couch. The typewriter and its letters&mdash;sorted not at all&mdash;are splayed around your coffee table like a strange altar to literacy. \"So, tell me about this typewriter call.\"\\n\\n\"It's weird, huh? <<if not $mystery>>Someone's been calling about it, and I don't even know why.\"\\n\\n> [[Investigate the typewriter|day06_04]]<<else>>I found this note jammed in the roller, and all of these letters... They just point to something sinister.\" \\n\\nEmily's gaze is sympathetic. <<if $paranoia gte 7>>Or is that pity? <<endif>>\"You're the least sinister person I know.\" \\n\\nThe events of the last few days spill out; eventually, you are handed a glass of wine and you take it. The unknown number, the strange typewriter. <<set $drunk = true>><<set $drinkCount = $drinkCount + 1>><<if $puzzle gte 3>>The elusive letters of Lilly Clarke.<<endif>>\\n\\n> [[\"So, what do you think?\"|day06_05a]]<<endif>>",
+      "links": [
+        {
+          "text": "Investigate the typewriter",
+          "destination": {
+            "name": "day06_04",
+            "pid": 126
+          }
+        },
+        {
+          "text": "\"So, what do you think?\"",
+          "destination": {
+            "name": "day06_05a",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "day06_04",
+      "text": "Emily's eBay seller must have a good rating. The old typewriter is in pristine condition, without any missing or sticky keys. There's even a fresh ribbon of ink and everything. \"Hey, check it,\" Emily declares, producing a sheet of paper. \"Test it out?\" \\n\\nThe paper won't go through, though. There's something trapped in the feed. \\n\\n> [[The fuck? Investigate.|day06_04a]]\\n\\n<<silently>>\\n<<set $day = $day + 1>>\\n<<set $mystery = true>>\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "The fuck? Investigate.",
+          "destination": {
+            "name": "day06_04a",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "day06_03",
+      "text": "<<set $empathy = $empathy + 1>>\\s\\n<<set $day = $day + 1>>\\s \\n<<set $clean = true>>\\s\\n\"Hey...\" Emily says. \"Don't take this the wrong way, but this place sucks.\" \\n\\n\"Yeah, this place kind of sucks.\" You grin, sheepish. \"Any suggestions?\" \\n\\nWithin minutes, you and Emily are on a <<if $drunk is true>>wine-fueled<<endif>> cleaning binge. Sure, at the end of it, the apartment is in better condition. But even the chore itself feels better with Emily around. Comfortable. \\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "day06_02",
+      "text": "\"Good morning, Major Hangover.\" \\n\\n//Oh, that's right... Major Hangover, and the loyal Captain Brunch.//\\n\\n\"At ease,\" you mumble. College taught you to rally after a long night of drinking, but you need time and a breakfast sandwich, neither of which is presenting itself. \\n\\nEmily wears a torn pair of jeans, a Rolling Stones tour shirt that her dad gave to her, and a perfume that smells like sugar. \"So, what's on the docket today?\" \\n<<display day06_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day06_choice",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 129,
+      "name": "day02_05-1",
+      "text": "<<silently>>\\n<<set $day = $day + 1>>\\n<<set $call = true>>\\n<<set $emCount = $emCount + 1>>\\n<<endsilently>>Her voice sounds husky and drowsy, and you wonder if she's smiling. \"What's up? I'm... kind of busy right now.\" \\n\\n\"Oh.\" Oh. You realize too late that you might be interrupting something, but the alcohol gives you momentum. \"I, uh, just wanted to apologize for yesterday. I was a hot mess.\" \\n\\n\"Hey... It was my fault. I didn't want to hurt you. I never did. I tried so hard for you. You know that, right?\" <<if $letter eq 1>>//The words sound so familiar, in a weird way.// <<set $paranoia = $paranoia + 1>><<endif>>You don't have a good response, but Emily saves you from needing one. \"Look, I gotta go. Let's catch up later though.\" \\n\\nClick.\\n<<display day02_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day02_choice",
+            "pid": 164
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "day03_puzzle",
+      "text": "You pick a letter at random; there's a small drawing of a storm cloud on the envelope of this one. \\n\\n//My love, my Henry,\\n\\nAt the beginning of every great love is a clue to the loves of the past; the <<if $hint eq true>>''beginning of all my words''<<else>>beginning of all my words<<endif>> holds a clue to my heart's true meaning. \\n\\nMorning is my favorite, when I'm at the seashore. Time seems to extend far beyond my imagining, and I can lose myself in thought. I miss you most then. \\n\\nStretch your hand toward me, Mr. Astor, extend me that invitation, and I shall be whereever you are. Too long have we been parted. Thin excuses are no longer sufficient. At all. Noontime brings the ocean breeze, and alone I watch the boats moor nearby, hoping that one will bring you to me. \\n\\nWaste no time. Away, to me! I am all you need. Vanish from your tired wife. At no point has she made you truly happy. The love we share is so, so deep. Fall into it; fall into me. \\n\\nOf what are you afraid, my dearest? Night after night, I dream of your presence. And how the lonely the dreams have become! Reappear beside me, I beg you. At once. Day by lengthy day, I wait for your hand in mine.\\n\\nLilly Clarke//\\n\\nThree envelopes have tiny sketches on the outside; one of them seems to fit best: \\n\\n> [[ A sundial|day03_good]]\\n> [[ A pocket watch|day03_bad]]\\n> [[ A lantern|day03_worst]]\\n<<set $day = $day + 1>>\\n",
+      "links": [
+        {
+          "text": " A sundial",
+          "destination": {
+            "name": "day03_good",
+            "pid": 92
+          }
+        },
+        {
+          "text": " A pocket watch",
+          "destination": {
+            "name": "day03_bad",
+            "pid": 156
+          }
+        },
+        {
+          "text": " A lantern",
+          "destination": {
+            "name": "day03_worst",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 131,
+      "name": "day07_choice",
+      "text": "<<if $adrianCount gte 5>>\"Hey,\" says the woman from the front desk. \"I know you've got a crush, but you're supposed to be reading to the preschoolers in five.\"\\n\\nAdrian looks mortified for a moment, and you imagine you must too. \"Oh god, Mrs. Tom, I'm so sorry. I lost track of time. I... I want to read more, though. Hang out some time?\" \\n\\nShe's gone in a flurry of dark hair and flowing dress.\\n\\n<<endif>>\\s\\n<<if $end eq \"a1\">>> [[\"Huh...\"|day07a1]]<<endif>>\\s\\n<<if $end eq \"a2\">>> [[\"Huh...\"|day07a2]]<<endif>>\\s\\n<<if $end eq \"a3\">>> [[\"Huh...\"|day07a3]]<<endif>>\\s\\n<<if $end eq \"b1\">>> [[\"Huh...\"|day07b1]]<<endif>>\\s\\n<<if $end eq \"b2\">>> [[\"Huh...\"|day07b2]]<<endif>>\\s\\n<<if $end eq \"b3\">>> [[\"Huh...\"|day07b3]]<<endif>>\\s\\n<<if $end eq \"b4\">>> [[\"Huh...\"|day07b4]]<<endif>>",
+      "links": [
+        {
+          "text": "\"Huh...\"",
+          "destination": {
+            "name": "day07a1",
+            "pid": 7
+          }
+        },
+        {
+          "text": "\"Huh...\"",
+          "destination": {
+            "name": "day07a2",
+            "pid": 75
+          }
+        },
+        {
+          "text": "\"Huh...\"",
+          "destination": {
+            "name": "day07a3",
+            "pid": 74
+          }
+        },
+        {
+          "text": "\"Huh...\"",
+          "destination": {
+            "name": "day07b1",
+            "pid": 149
+          }
+        },
+        {
+          "text": "\"Huh...\"",
+          "destination": {
+            "name": "day07b2",
+            "pid": 49
+          }
+        },
+        {
+          "text": "\"Huh...\"",
+          "destination": {
+            "name": "day07b3",
+            "pid": 153
+          }
+        },
+        {
+          "text": "\"Huh...\"",
+          "destination": {
+            "name": "day07b4",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "day04_good",
+      "text": "<<set $puzzleCount = $puzzleCount + 1>>\\s\\n<<set $p3 = 2>>\\s\\n//My Dear Mr. Astor,\\n\\nHow beautiful the starry sky is tonight. It stretches from me to wherever you are, a cool, summer blanket covering both of us. My friends claim that I am grown withdrawn, that my skin pales despite my daily basking in the sun. \\n\\nI long for you, my Henry. But I am becoming the moon in the silky, dark night&mdash;a mere reflection of what I once was. To you, and to myself. \\n\\nThere is but one similarity between the sun and the moon, my love: in time, both must set.\\n\\nYours, \\nLilly Clarke.//\\n<<if not $emily>><<display day04_choice>>\\n<<else>>\\n> [[\"Oh...\"|day04_gooda]]<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        },
+        {
+          "text": "\"Oh...\"",
+          "destination": {
+            "name": "day04_gooda",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 133,
+      "name": "day06_end",
+      "text": "<<set $pause = 0>>\\s\\n<<if ($a is false) or ($b is false)>>\"I have an idea. You could stay. The night, I mean,\" you rush to say, right before the regret kicks in. Ooh, but there it is, palpable and humiliating. <<if $drunk eq true>>Despite the wine, y<<else>>Y<<endif>>ou feel all of the blood in your body go straight to your cheeks. \\n\\nEmily is inscrutable as always. <<if $count eq 0>>She <<if $a is false>>[[stares at her fingernails|day06_enda]]<<else>>stares at her fingernails<<endif>>; <<if $b is false>>[[your knee shakes|day06_endb]]<<else>>your knee shakes<<endif>>.<<elseif $count eq 1>>She <<if $a is false>>[[snakes a lock of hair between her fingers|day06_enda1]]<<else>>snakes a lock of hair between her fingers<<endif>>; you <<if $b is false>>[[slide a coaster under her glass|day06_endb1]]<<else>>slide a coaster under her glass<<endif>>.<<elseif $count gte 2>>She <<if $a is false>>[[touches her lips|day06_enda2]]<<else>>touches her lips<<endif>>; you <<if $b is false>>[[close your eyes and wait|day06_endb2]]<<else>>close your eyes and wait<<endif>>.<<endif>><<endif>>\\s\\n<<if ($a is true) and ($b is true)>>\"Look, it's... just a little weird, you know?\" She smiles wanly, and you watch the shape of her back move, the shift and stretch of her vertebrae underneath her father's old t-shirt. \\n\\nYou look away. \"It was a dumb idea. We were having a nice day, and I&mdash;\"\\n\\n<<if ($clean eq true) and ($empathy gte 7) and ($emDrunk eq true) and ($mystery eq true)>>She touches the back of your hand. \"I'll stay.\"\\n\\n> [[\"Okay...\"|day06_endc]]\\n<<else>>\"Hey, don't worry about it. It's just... not right, right?\" \\n\\n> [[\"Okay...\"|day06_endd]]\\n<<endif>><<endif>>",
+      "links": [
+        {
+          "text": "stares at her fingernails",
+          "destination": {
+            "name": "day06_enda",
+            "pid": 59
+          }
+        },
+        {
+          "text": "your knee shakes",
+          "destination": {
+            "name": "day06_endb",
+            "pid": 60
+          }
+        },
+        {
+          "text": "snakes a lock of hair between her fingers",
+          "destination": {
+            "name": "day06_enda1",
+            "pid": 69
+          }
+        },
+        {
+          "text": "slide a coaster under her glass",
+          "destination": {
+            "name": "day06_endb1",
+            "pid": 5
+          }
+        },
+        {
+          "text": "touches her lips",
+          "destination": {
+            "name": "day06_enda2",
+            "pid": 68
+          }
+        },
+        {
+          "text": "close your eyes and wait",
+          "destination": {
+            "name": "day06_endb2",
+            "pid": 4
+          }
+        },
+        {
+          "text": "\"Okay...\"",
+          "destination": {
+            "name": "day06_endc",
+            "pid": 86
+          }
+        },
+        {
+          "text": "\"Okay...\"",
+          "destination": {
+            "name": "day06_endd",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 134,
+      "name": "day05_end",
+      "text": "You haven't even gone to sleep, but you already feel hungover. <<if not $call>><<set $emCount = $emCount + 1>><<else>>\\n\\nBzz bzz. You check your phone eagerly, but it's a text from Katey:\\n\\n//Hme SAFE! thz buddy!!!// And then 8 saxophone emoji.<<endif>>\\n\\nTomorrow... tomorrow will be a rougher day, but you fall asleep smiling anyways. \\n\\n> [[Zzz.|day06_start]]\\n\\n<<set $pause = 0>>",
+      "links": [
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day06_start",
+            "pid": 135
+          }
+        }
+      ]
+    },
+    {
+      "pid": 135,
+      "name": "day06_start",
+      "text": "<<silently>>\\n<<set $drunk = false>>\\n<<set $letter = 0>>\\n<<set $day = 0>>\\n<<if $drinkCount gte 2>><<set $paranoia = $paranoia + 1>><<set $drinkCount = 0>><<endif>>\\n<<if $emCount gte 2>><<set $empathy = $empathy - 1>><<set $emCount = 0>><<endif>>\\n<<set $unwind = false>>\\n<<set $ring = 0>>\\n<<set $pause = $pause + 1>>\\n<<set $a = false>>\\n<<set $b = false>>\\n<<set $research = false>>\\n<<endsilently>>\\s\\n<<if $pause eq 1>>DAY 6 \\n\\nYou wake up, startled, when your phone vibrates directly on your face. Yep, you are a grown human adult who fell asleep face-down and drunk on an electronic device. \\n\\nBlindly, you answer the phone with a moan: \"Hnng?\" \\n\\nEmily's heard your hangover voice enough that it doesn't even give her pause. \"Hey, <<if $call eq true>><<set $call = false>>I just got your message.<<else>>I was hoping you'd call yesterday, but I guess you were busy?<<endif>> I... could come over today, if you want.\" \\n\\n\"Ngf. Yes. Sorry, yes. I was out with Katey last night&mdash;\"\\n\\n<<endif>>\\s\\n<<if $pause lte 5>>\"Enough said, kid. I'll head out soon.\"<<else>>\\s\\nA knock at the door.<<endif>>\\n\\n> <<if $pause eq 1>>[[Oh shit...|day06_start]]<<endif>><<if $pause eq 2>>[[Shower|day06_start]]<<endif>><<if $pause eq 3>>[[Brush teeth|day06_start]]<<endif>><<if $pause eq 4>>[[Clothes?|day06_start]]<<endif>><<if $pause eq 5>>[[Thank god, clean clothes|day06_start]]<<endif>><<if $pause eq 6>>[[Oh shit...|day06_01]]<<endif>>",
+      "links": [
+        {
+          "text": "Oh shit...",
+          "destination": {
+            "name": "day06_start",
+            "pid": 135
+          }
+        },
+        {
+          "text": "Shower",
+          "destination": {
+            "name": "day06_start",
+            "pid": 135
+          }
+        },
+        {
+          "text": "Brush teeth",
+          "destination": {
+            "name": "day06_start",
+            "pid": 135
+          }
+        },
+        {
+          "text": "Clothes?",
+          "destination": {
+            "name": "day06_start",
+            "pid": 135
+          }
+        },
+        {
+          "text": "Thank god, clean clothes",
+          "destination": {
+            "name": "day06_start",
+            "pid": 135
+          }
+        },
+        {
+          "text": "Oh shit...",
+          "destination": {
+            "name": "day06_01",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 136,
+      "name": "variable guide",
+      "text": "/%\\n$call = True means Emily called you\\n$clean = True means you cleaned your house\\n$catch = True means you have caught up with Emily\\n$day = n you get 3 actions per day. \\n$drinkCount = 2 drinks means $paranoia++; resets to 0\\n$drunk = True means you are drunk\\n$emCount = 2 days without Emily means $empathy--; resets to 0\\n$emDrunk = True means Emily is drunk\\n$emily = True means Emily is over; show Emily choices.\\n$emilyCount = FIND--should be $emCount\\n$empathy = n better Emily options\\n$letter = 0 means the day's puzzle has not been attempted.\\n$letter = 1 means the day's puzzle has been solved incorrectly.  \\n$letter = 2 means the day's puzzle has been solved correctly.\\n$mystery = True means you know about the Astor murder\\n$paranoia = n more volatile, but sometimes better mystery options\\n$pause = n social awkwardness\\n$puzzleCount = n puzzles solved over the course of the game\\n$ring = n phone rings; social awkwardness\\n$typewriter = True means Typewriter has been investigated\\n$unwind = True means you are unwinding \\n$weirdCall = True means the Mysterious Man called you\\n\\n%/ \\n",
+      "links": []
+    },
+    {
+      "pid": 137,
+      "name": "Hint",
+      "text": "//Thanks so much for playing through Missive!\\n\\nThe puzzles are meant to be hard, but they're not impossible. If you turn on hint mode, each of Lilly's puzzle letters will have relevant words highlighted; you will still have to solve each puzzle correctly!\\n\\nHint mode will also inform you, at the end of the game, which puzzles you have solved correctly. \\n\\nBear in mind that even the incorrect solutions fit into the narrative. \\n\\nContinue in Hint Mode?//\\n\\n> [[Yes, help me|Start_hint]]\\n> [[No, just restart|Start_multi]]\\n",
+      "links": [
+        {
+          "text": "Yes, help me",
+          "destination": {
+            "name": "Start_hint",
+            "pid": 158
+          }
+        },
+        {
+          "text": "No, just restart",
+          "destination": {
+            "name": "Start_multi",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 138,
+      "name": "day04_mysta",
+      "text": "Adrian guides you to one of the many terminals. Even with the prosthesis dangling at her side, she types faster than you ever have. \"Mmm,\" is all she says as you feed her the few details you've committed to memory. \"Well, the Lawrenceville Gazette is easy. We've got it on microfiche.\" \\n\\nYour blank gaze makes her smile, which dimples her chin and creases the dark skin around her eyes&mdash;hazel, and deep. \"Not familiar? I'll show you how to use the machine.\" \\n\\nAdrian is a patient teacher: before long, she's talked you through the microfiche reader and the catalog system. She even talks you into getting a library card. \"I gotta go back to shelving. Let me know if you need any more help, okay?\" \\n\\n> [[Okay!|day04_mystb]]",
+      "links": [
+        {
+          "text": "Okay!",
+          "destination": {
+            "name": "day04_mystb",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 139,
+      "name": "day03_05d",
+      "text": "You're no blood scientist, but that... is definitely&mdash; \\n\\nUgh.\\n<<display day03_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 140,
+      "name": "day02_end",
+      "text": "What a day. <<if $p1 gte 1>>You think about Lily Clarke&mdash;the name slides off the tongue and rolls around the mouth&mdash;and the hold Henry Astor has over her. <<endif>><<if $p1 eq 2>>She was so young, and so in love. Her heart knew precisely what it wanted. Must be nice.<<endif>><<if $call eq true>>\\n\\nYou think about Emily. The way she timed a joke, and the way she braced her shoulders before making an argument. You miss her.<<else>><<set $emCount = $emCount + 1>><<endif>>\\n\\n> [[Zzz.|day03_start]]\\n",
+      "links": [
+        {
+          "text": "Zzz.",
+          "destination": {
+            "name": "day03_start",
+            "pid": 162
+          }
+        }
+      ]
+    },
+    {
+      "pid": 141,
+      "name": "day03_05b",
+      "text": "<<set $paranoia = $paranoia + 1>>That's right... Emily bought the typewriter from an eBay seller. How would anyone have gotten //your// contact information? How would they know about you at all?\\n\\n\"Hey, how did you get this number?\" \\n\\nBut the line's already dead. \\n\\n<<if not $mystery>>You had almost forgotten about the typewriter. \\n\\n> [[Investigate|day03_05c]]\\n<<else>><<display day03_choice>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Investigate",
+          "destination": {
+            "name": "day03_05c",
+            "pid": 142
+          }
+        }
+      ]
+    },
+    {
+      "pid": 142,
+      "name": "day03_05c",
+      "text": "You lift the old typewriter out of the box, and poke at some of the keys. There's something trapped in the feed. Carefully, you slide the feed roller up and away. Wedged inside the typewriter is a crumpled sheet of paper, torn in half. \\n\\n//This is the final missive of Mr. Henry Warren Astor. Please, kind reader, if you have found this note, know that I have died, and seek justice.//\\n\\nThe letter ends there, unsigned. There are, however, several dark brown splotches, and an ugly smear trailing off the edge of the paper. <<set $mystery = true>>\\n\\n> [[Is that blood?|day03_05d]]",
+      "links": [
+        {
+          "text": "Is that blood?",
+          "destination": {
+            "name": "day03_05d",
+            "pid": 139
+          }
+        }
+      ]
+    },
+    {
+      "pid": 143,
+      "name": "day07_worst",
+      "text": "<<set $p6 = 1>>\\s\\n//Dear serpent,\\n\\nYou could not have what you wanted, so sought to wound me. Nevertheless, revealing your truth brings my own into the light; I shall be silent. \\n\\nCA//\\n\\n<<display day07_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day07_choice",
+            "pid": 131
+          }
+        }
+      ]
+    },
+    {
+      "pid": 144,
+      "name": "day03_05a",
+      "text": "<<set $empathy = $empathy + 1>>\"It was a gift,\" you murmur, \"from someone very important to me. Not for sale.\"\\n\\nThere is a long pause, and you can hear the man breathing&mdash;long, wheezing breaths. \"Very well. But know that someone very important seeks that typewriter. Others will call. And I will call again.\" \\n\\n\"I'd rather you not&mdash;\"\\n\\nClick. \\n\\nSome people, huh?\\n<<if not $mystery>>\\nYou had almost forgotten about the typewriter. \\n\\n> [[Investigate|day03_05c]]\\n<<else>><<display day03_choice>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Investigate",
+          "destination": {
+            "name": "day03_05c",
+            "pid": 142
+          }
+        }
+      ]
+    },
+    {
+      "pid": 145,
+      "name": "day05_startd",
+      "text": "So there's that. An hour later, Katey is rendering her advice at a 45 degree angle. \"Thanks for being my friend, Katey,\" you say, slipping her into a cab.\\n\\nBefore the door closes, she clasps your hand for a long moment. \"Hey&mdash;you're going to be all right. Come over some time. We'll get stoned and watch horror movies. Like college. You remember college?\" \\n\\n\"Parts of it.\" You think your smile is wry, but your delivery must be off&mdash;Katey releases your hand abruptly, and flops fully sideways in the back seat of the taxi. You'll have to get your own.\\n\\nIt only takes a couple tries with your key to make it home&mdash;better than some nights, but certainly worse than others. Yay/oops.\\n<<display day05_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 146,
+      "name": "day04_bad",
+      "text": "<<set $p3 = 1>>//Henry,\\n\\nIt is not enough to say I am heartbroken. You were never my noble, worldly knight, rescuing my damsel self from a life of mediocrity and loneliness. I was never that woman, young or otherwise, and your intentions were never noble.\\n\\nHave you returned to your stalwart wife and her harridan's tongue, to lay your head in her lap? To beg her forgiveness for transgressions with myself? With others?\\n\\nAre there others?\\n\\nI refuse to imagine, lest I lose my graceful exit from your acquaintance. \\n\\nLilly Clarke//\\n<<display day04_choice>>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 147,
+      "name": "day05_startb",
+      "text": "\"Emily. She dropped off a birthday present that she bought before the thing.\" Katey nods in a way that says: and then? But she's hurled enough abuse at you today&mdash;you deny her gossip on purpose. \\n\\n\"The box was packed with these fantastic letters...\" You tell her about Lilly's messages<<if $mystery is true>> and Mr. Astor's mysterious death<<endif>>. \"But now, I'm not sure. Some weird stuff has been happening.\" \\n\\n<<if $puzzle gte 2>>\"Well, it sounds like you're on the right track, at least. This girl, Lilly. I like her.\" <<set $empathy = $empathy + 1>><<else>>\"I never knew you to be a puzzle fan. Sure it's your thing?\" She laughs in a way that eases the sting of her comment, and besides, maybe she's right. <<set $paranoia = $paranoia + 1>><<endif>>\\n\\n> [[\"Well, yeah...\"|day05_startd]]\\n> [[\"To women.\"|day05_starte]]",
+      "links": [
+        {
+          "text": "\"Well, yeah...\"",
+          "destination": {
+            "name": "day05_startd",
+            "pid": 145
+          }
+        },
+        {
+          "text": "\"To women.\"",
+          "destination": {
+            "name": "day05_starte",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 148,
+      "name": "day05_startc",
+      "text": "\"No, you're the day-after-birthday girl, and it's been a while since we've caught up. How've you been?\" \\n\\nYour friend gives you a significant Look. It's not like you to be dodgy, and Katey is not the type of woman to let things slide. Maybe she's softening in her old age, though; under her watchful eye, you pound another two shots of Goose and she finally allows the change of subject. <<set $drunk = true>><<set $drinkCount = $drinkCount + 1>>\\n\\n\"Freckles wants to move us out of the city. I know we've been together for a while, but it's a big deal for me.\" \\n\\n> [[\"It should be.\"|day05_startc1]]\\n> [[\"Go for it!\"|day05_startc2]]\\n> [[\"You'll be fine.\"|day05_startc3]]",
+      "links": [
+        {
+          "text": "\"It should be.\"",
+          "destination": {
+            "name": "day05_startc1",
+            "pid": 101
+          }
+        },
+        {
+          "text": "\"Go for it!\"",
+          "destination": {
+            "name": "day05_startc2",
+            "pid": 98
+          }
+        },
+        {
+          "text": "\"You'll be fine.\"",
+          "destination": {
+            "name": "day05_startc3",
+            "pid": 99
+          }
+        }
+      ]
+    },
+    {
+      "pid": 149,
+      "name": "day07b1",
+      "text": "<<set $end = \"b1\">>\\s\\n<<if $p6 eq 0>>\\s\\n<<set $pause = 0>>\\s\\nDAY 7\\n\\nYou wake up with a start, looking straight at those damn letters. Emily is snuggled against your shoulder, and it takes a little doing to extricate yourself without disturbing her. \\n\\nYou have to know what happened. \\n\\n> [[Investigate the letters|day07_puzzle]]\\n<<if $adrianCount gte 4>>> [[Go to the library|day07_myst]]<<endif>>\\s\\n<<elseif $answer eq 0>>\\s\\nThe space between your shoulders itches. You turn around to find Emily, awake, her arms crossed. \"Oh, good morning,\" you say. \\n\\n\"Hey.\" \\n\\nYou tell her about the final letter. It's helpless in you: the intrigue, the joy of solving a good mystery. She knew it long ago, and she knows it especially well now. \\n\\n\"So, uh... Who killed the guy?\"\\n\\n> [[\"Mrs. Astor.\"|wrong]]\\n> [[\"Lilly.\"|wrong]]\\n<<if $puzzleCount gte 5>>> [[\"Henry himself.\"|right]]<<endif>><<else>>\\s\\nEmily says, \"I guess I'll head home,\" but you barely hear her, busily arranging the letters in chronological order. <<if $answer eq 2>>You're almost positive Henry killed himself, but how he got there... You can't wait to fill in the whole narrative for something. Maybe a book? Something.<<endif>>\\n\\n\"Cool,\" you reply. \"Talk to you later?\" \\n\\nThe only reply is the sound of a door, clicking shut.\\n\\nEND.\\n\\n<<display done>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "done",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day07_puzzle",
+            "pid": 115
+          }
+        },
+        {
+          "text": "Go to the library",
+          "destination": {
+            "name": "day07_myst",
+            "pid": 121
+          }
+        },
+        {
+          "text": "\"Mrs. Astor.\"",
+          "destination": {
+            "name": "wrong",
+            "pid": 157
+          }
+        },
+        {
+          "text": "\"Lilly.\"",
+          "destination": {
+            "name": "wrong",
+            "pid": 157
+          }
+        },
+        {
+          "text": "\"Henry himself.\"",
+          "destination": {
+            "name": "right",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 150,
+      "name": "Credits",
+      "text": "//Missive was written in [[Twine|http://www.twinery.org]], an open-source tool for telling interactive, nonlinear stories. \\n\\nIt was written and coded by Joey Fu. \\n\\nWith patient assistance from [[Conrad Kreyling|http://www.datenighto.com]].\\n\\nMuch love and thanks to all my testers: \\nBruce, Bryce, Caitlin, Carey, Casey, George, Gloria, James, Kim, Lauren, Ryan, Sam, Tobin, Tracy.\\n\\nStay tuned for what's coming next: Skylight.//\\n\\n> [[Hint mode|Hint]]\\n> [[Restart normally|Start_multi]]",
+      "links": [
+        {
+          "text": "Hint mode",
+          "destination": {
+            "name": "Hint",
+            "pid": 137
+          }
+        },
+        {
+          "text": "Restart normally",
+          "destination": {
+            "name": "Start_multi",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 151,
+      "name": "day02_03",
+      "text": "<<silently>>\\n<<set $drunk = true>>\\n<<set $day = $day + 1>>\\n<<set $drinkCount = $drinkCount +1>>\\n<<endsilently>>\\s\\n\"Oh, Netflix,\" you say out loud, while pouring bourbon into a hopefully-clean glass. \"My one true love.\" \\n\\nThe whiskey, your evening, and three episodes of No Reservations disappear. \\n<<display day02_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day02_choice",
+            "pid": 164
+          }
+        }
+      ]
+    },
+    {
+      "pid": 152,
+      "name": "day02_02",
+      "text": "The near-Emily experience has got you all tangled up, but you're sure of one thing: if she comes over again, she won't be leaving because of a weird smell. \\n\\nEmpties cleared away, a cursory vacuuming, and the place looks like it could really sustain human life. Pat yourself on the back! \\n<<silently>>\\n<<set $empathy = $empathy + 1>>\\n<<set $day = $day + 1>> \\n<<set $clean = true>><<endsilently>>\\s\\n<<display day02_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day02_choice",
+            "pid": 164
+          }
+        }
+      ]
+    },
+    {
+      "pid": 153,
+      "name": "day07b3",
+      "text": "<<set $end = \"b3\">>\\s\\n<<if $p6 eq 0>>DAY 7\\n\\nEmily shifts, her fingers sliding along your stomach until she clasps you in a warm, comfortable hold. \"Good morning,\" she breathes. \\n\\n\"Morning. How about it?\" you ask, gesturing to the stack of letters on your coffee table. \"One last letter?\" \\n\\n\"Oh, uh... okay.\" \\n\\n> [[Investigate the letters|day07_puzzle]]\\n<<elseif $answer eq 0>>Emily begins to pack her purse up. \"Hey, listen, I gotta run an errand. I'll be back soon, though.\" You wonder where she's going. At this hour. What hour is it, even? \\n\\n\"Hey,\" she says, turning before she goes, \"Who do you think killed Henry Astor?\"\\n\\n> [[\"Mrs. Astor.\"|wrong]]\\n> [[\"Lilly.\"|wrong]]\\n<<if $puzzleCount gte 5>>> [[\"Henry himself.\"|right]]<<endif>><<else>>\\s\\n\"I'll be back,\" she says again, just before the door closes.\\n\\nTo distract yourself, you shuffle the letters around<<if $answer eq 2>>, relieved that you can put them away. You will yourself to be patient<<endif>>. \\n\\nNow, all you have to do is wait.\\n\\nEND.\\n\\n<<display done>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "done",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day07_puzzle",
+            "pid": 115
+          }
+        },
+        {
+          "text": "\"Mrs. Astor.\"",
+          "destination": {
+            "name": "wrong",
+            "pid": 157
+          }
+        },
+        {
+          "text": "\"Lilly.\"",
+          "destination": {
+            "name": "wrong",
+            "pid": 157
+          }
+        },
+        {
+          "text": "\"Henry himself.\"",
+          "destination": {
+            "name": "right",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 154,
+      "name": "day02_05",
+      "text": "<<set $ring = $ring + 1>>Her number is saved in your contact list as \"Captain Brunch.\" You don't even remember how she got the nickname. //But you do, really.// Maybe she won't even answer. //Just do it, before you freak yourself out.// <<if $ring eq 1>>[[Call.|day02_05]]<<endif>>\\n\\n<<if $ring eq 2>>[[One ring.|day02_05]]<<endif>>\\n<<if $ring eq 3>>[[Two.|day02_05]]<<endif>>\\n<<if $ring eq 4>>[[Three rings shit shit shit.|day02_05]]<<endif>>\\n<<if $ring eq 5>>\"Hello?\"\\n\\n> [[Ohthankgod--\"Hi.\"|day02_05-1]]<<endif>>",
+      "links": [
+        {
+          "text": "Call.",
+          "destination": {
+            "name": "day02_05",
+            "pid": 154
+          }
+        },
+        {
+          "text": "One ring.",
+          "destination": {
+            "name": "day02_05",
+            "pid": 154
+          }
+        },
+        {
+          "text": "Two.",
+          "destination": {
+            "name": "day02_05",
+            "pid": 154
+          }
+        },
+        {
+          "text": "Three rings shit shit shit.",
+          "destination": {
+            "name": "day02_05",
+            "pid": 154
+          }
+        },
+        {
+          "text": "Ohthankgod--\"Hi.\"",
+          "destination": {
+            "name": "day02_05-1",
+            "pid": 129
+          }
+        }
+      ]
+    },
+    {
+      "pid": 155,
+      "name": "day06_choice",
+      "text": "/%\\nSleeptime\\n%/\\s\\n<<if $day gte 3>>\\n> [[\"Hey...\"|day06_end]]\\n<<else>>\\s\\n/%\\nTime of day signposts\\n%/\\s\\n<<if $day eq 1>>\\nEmily peers over your shoulder at the microwave clock in the next room.\\n<<endif>><<if $day eq 2>>\\nYou sneak a glance at Emily's face, and catch her mid-stifled-yawn. What's the time, even? \\n<<endif>>\\s\\n/%\\nMenu options\\n%/\\s\\n<<if not $clean>>\\n> [[Clean the house|day06_03]]\\s\\n<<endif>><<if ($emily is true) and (not $drunk)>>\\n> [[Have a drink|day06_02a]]\\s\\n<<endif>><<if not $mystery>>\\n> [[Investigate the typewriter|day06_04]]\\s\\n<<endif>><<if $weirdCall is true>>\\n> [[Tell Emily about the weird stuff|day06_05]]\\s\\n<<endif>><<if $day eq 1>>\\n> [[Cook dinner|day06_06]]\\s\\n<<endif>><<if $day eq 2>>\\n> [[Hang out|day06_07]]\\s\\n<<endif>><<if $p5 eq 0>>\\n> [[Investigate the letters|day06_puzzle]]\\s\\n<<endif>><<if $p5 eq 2>>\\n> [[Read another letter|day06_bonus]]\\s\\n<<endif>><<if (not $research) and ($adrianCount gte 3)>>\\n> [[Text message: HST Library|day06_myst]]\\s\\n<<endif>><<endif>>",
+      "links": [
+        {
+          "text": "\"Hey...\"",
+          "destination": {
+            "name": "day06_end",
+            "pid": 133
+          }
+        },
+        {
+          "text": "Clean the house",
+          "destination": {
+            "name": "day06_03",
+            "pid": 127
+          }
+        },
+        {
+          "text": "Have a drink",
+          "destination": {
+            "name": "day06_02a",
+            "pid": 118
+          }
+        },
+        {
+          "text": "Investigate the typewriter",
+          "destination": {
+            "name": "day06_04",
+            "pid": 126
+          }
+        },
+        {
+          "text": "Tell Emily about the weird stuff",
+          "destination": {
+            "name": "day06_05",
+            "pid": 125
+          }
+        },
+        {
+          "text": "Cook dinner",
+          "destination": {
+            "name": "day06_06",
+            "pid": 124
+          }
+        },
+        {
+          "text": "Hang out",
+          "destination": {
+            "name": "day06_07",
+            "pid": 123
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day06_puzzle",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Read another letter",
+          "destination": {
+            "name": "day06_bonus",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Text message: HST Library",
+          "destination": {
+            "name": "day06_myst",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 156,
+      "name": "day03_bad",
+      "text": "<<set $p2 = 1>>//Dear Henry,\\n\\nI hope this letter finds you well. I apologize for my harsh words; I never meant to imply any kind of hierarchy between myself and Charlotte. I hope, at least, that your visit with me was enjoyable, and worth repeating. \\n\\nI deeply regret ruining the end of our time together, a commodity that is most precious to me. Please, perhaps next time, we can not speak of your wife at all, and simply bask in the light of each others' company. \\n\\nYours,\\nLilly//\\n<<display day03_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 157,
+      "name": "wrong",
+      "text": "<<set $answer = 1>>\\s\\n<<if $end eq \"a2\">>\\s\\nThe mystery man on the phone breathes a sharp, fierce breath. \\n\\n\"Are you certain?\" \\n\\n> [[Yes.|day07a2]]\\n<<else>>\\s\\nEmily shrugs. \"I guess I just don't know. You've read more of the letters&mdash; you sure?\" \\n\\n<<if $end eq \"a3\">>> [[Yes.|day07a3]]<<endif>>\\s\\n<<if $end eq \"b1\">>> [[Yes.|day07b1]]<<endif>>\\s\\n<<if $end eq \"b3\">>> [[Yes.|day07b3]]<<endif>>\\s\\n<<if $end eq \"b4\">>> [[Yes.|day07b4]]<<endif>>\\s\\n<<endif>>",
+      "links": [
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "day07a2",
+            "pid": 75
+          }
+        },
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "day07a3",
+            "pid": 74
+          }
+        },
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "day07b1",
+            "pid": 149
+          }
+        },
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "day07b3",
+            "pid": 153
+          }
+        },
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "day07b4",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 158,
+      "name": "Start_hint",
+      "text": "> [[It's your birthday today.|day01_1-01]]\\n\\n<<set $hint = true>>",
+      "links": [
+        {
+          "text": "It's your birthday today.",
+          "destination": {
+            "name": "day01_1-01",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 159,
+      "name": "day05_bad",
+      "text": "<<set $p4 = 1>>\\s\\nHer handwriting now has long, messy swirls. In the margins, she's drawn a simple portrait of a woman&mdash;a self-portrait? The letter is short and unsigned:\\n\\n//I hate you. Never show your face in my presence again.//\\n\\nIt's hard to see Lilly Clarke's emotions laid bare. She's normally so deliberate, so calculating. Now, she's just a mess. \\n<<display day05_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day05_choice",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 160,
+      "name": "day03_worst",
+      "text": "<<set $p2 = 1>><<set $paranoia = $paranoia + 1>>//Henry,\\n\\nPlease excuse my tone, but yet another visit has gone by with no pause in your complaints about your wife. I have no wish to appear petulant in your eyes&mdash;you have commented enough on my childishness&mdash;but I am frankly furious that you wish to waste the precious little time we have together on her. \\n\\nCruel, awful her. I cannot stand the thought of you together, obliging her whims, when you could be at my side. My noble knight, my brave man. But not brave enough. \\n\\nLilly//\\n<<display day03_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 161,
+      "name": "day04_06",
+      "text": "<<set $day = $day + 1>>\\s\\n<<set $weirdCall = true>>\\s\\n\"Have you considered my offer?\" the voice says, without greeting or pause. The abruptness takes you by surprise; you hadn't anticipated anyone answering the unknown number, let alone that same guy from before. \\n\\n\"Umm... Could I ask for some context?<<if $mystery is true>> I know about Mr. Astor. I know... some of it.<<endif>>\"\\n\\nThe other voice falls silent, unbreathing, so quiet that you have to check to make sure the call hasn't dropped. \"Certain estates are in position to make a great deal of money.\"\\n\\n\"Enough money<<if $paranoia lte 2>> to kill for<<endif>>?\"\\n\\n\"Enough. You've been warned, and will not be again. You have one more call back to accept my offer.\"\\n\\nYou hang up before the mysterious voice gets a chance. But the triumph gives you no satisfaction. <<set $paranoia = $paranoia + 1>>\\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 162,
+      "name": "day03_start",
+      "text": "<<silently>>\\n<<set $drunk = false>>\\n<<set $letter = 0>>\\n<<set $day = 0>>\\n<<if $drinkCount gte 2>><<set $paranoia = $paranoia + 1>><<set $drinkCount = 0>><<endif>>\\n<<set $call = false>>\\n<<set $weirdCall = false>>\\n<<endsilently>>\\s\\nDAY 3\\n\\nIt would be a decent day to call out sick and order in. The sky is gray and broody, and you slouch into your office chair, making a playlist of '90s songs about depression. \\n\\nHome isn't much better, <<if not $clean>>and you collapse onto a crinkly&mdash;oh hey, a bag of chips&mdash;couch, relieved to be by yourself.<<else>>but at least the house is clean, and no one has any expectations of you.<<endif>> Geez, what would your mom think? \\n<<display day03_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day03_choice",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 163,
+      "name": "day04_bonus",
+      "text": "<<set $day = $day + 1>>\\s\\n<<if $emily is true>>You tell Emily about the rest of the letters. \"Ooh,\" Emily hums, her cheek brushing against your shoulder, \"can we read another?\" <<endif>>\\s\\n<<set $p3 = 3>>\\nMight as well. You pick a letter from the box and open it. \\n\\n//My husband,\\n\\nYou have been absent for so long, I wonder if I have a husband at all. I have received inquiry from many of your past  companions, including from your ward Miss Lilly Clarke, who seemed uncannily distraught.\\n\\nI have directed most to your last known posting address, but even your landlord could not say if you had lived there recently or not. What hours you keep! \\n\\nYou are ever the mystery, my husband. I pray for your safe return.\\n\\nYour wife,\\nCharlotte Astor//\\n\\n<<if $emily is true>>\"Look... He wasn't with his wife either. Henry Astor, you dog.\" She laughs<<if $emDrunk is true>> bawdily<<endif>>, but... <<endif>>The letter fills you with a sense of unease, as if you've intruded too far into Henry Astor's life. <<set $paranoia = $paranoia + 1>>\\n<<display day04_choice>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "day04_choice",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 164,
+      "name": "day02_choice",
+      "text": "/%\\nSleeptime\\n%/\\s\\n<<if $day eq 3>>\\n> [[It's getting late...|day02_end]]\\n<<else>>\\s\\n/%\\nTime of day signposts\\n%/\\s\\n<<if $day eq 1>>\\nWell, that killed some time. What now?\\n<<endif>><<if $day eq 2>>\\nYou look at the clock. Time really does fly.\\n<<endif>>\\s\\n/%\\nMenu options\\n%/\\s\\n<<if not $clean>>\\n> [[Clean the house|day02_02]]\\s\\n<<endif>><<if not $drunk>>\\n> [[Drink|day02_03]]\\s\\n<<endif>><<if (not $call) and ($drunk eq true)>>\\n> [[Call Emily|day02_05]]\\s\\n<<endif>><<if $p1 eq 0>>\\n> [[Investigate the letters|day02_puzzle]]\\s\\n<<endif>><<if $p1 eq 2>>\\n> [[Read another|day02_bonus]]\\s\\n<<endif>><<endif>>",
+      "links": [
+        {
+          "text": "It's getting late...",
+          "destination": {
+            "name": "day02_end",
+            "pid": 140
+          }
+        },
+        {
+          "text": "Clean the house",
+          "destination": {
+            "name": "day02_02",
+            "pid": 152
+          }
+        },
+        {
+          "text": "Drink",
+          "destination": {
+            "name": "day02_03",
+            "pid": 151
+          }
+        },
+        {
+          "text": "Call Emily",
+          "destination": {
+            "name": "day02_05",
+            "pid": 154
+          }
+        },
+        {
+          "text": "Investigate the letters",
+          "destination": {
+            "name": "day02_puzzle",
+            "pid": 120
+          }
+        },
+        {
+          "text": "Read another",
+          "destination": {
+            "name": "day02_bonus",
+            "pid": 80
+          }
+        }
+      ]
+    }
+  ]
+}

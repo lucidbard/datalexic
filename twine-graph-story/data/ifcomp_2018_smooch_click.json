@@ -1,0 +1,1004 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Start",
+      "text": "{(css: \"font-size: 300%; font-family: Times; font-weight: bold;\")[smooch.](mouseout:\"smooch.\")[(css: \"font-size: 300%; font-family: Times; font-weight: bold;\")[click]]\n}\n\n(click:\"click\")[the short story of you kissing (him/her/them).\n{\n(click:\"her\")[(set:$they to \"she\")(set:$them to \"her\")(set:$their to \"her\")(set:$theirs to \"hers\")((goto:\"Portal Portal\")]\n\n(click:\"him\")[(set:$they to \"he\")(set:$them to \"him\")(set:$their to \"his\")(set:$theirs to \"his\")((goto:\"Portal Portal\")]\n\n(click:\"them\")[(set:$they to \"they\")(set:$them to \"them\")(set:$their to \"their\")(set:$theirs to \"theirs\")(set:$s to \"\")(set:$es to \"es\")(set:$dt to \"don't\")(set:$are to \"are\")(set:$have to \"have\")((goto:\"Portal Portal\")]\n\n}\n~\n\n[[about this game]]\nabout devon (display:\"about devon\")\n[[acknowledgements]]\nlist of content warnings for all possible storylines(click:\"content warnings\")[(display:\"cws\")]]\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "about devon",
+            "pid": 55
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "cws",
+            "pid": 2
+          }
+        },
+        {
+          "text": "about this game",
+          "destination": {
+            "name": "about this game",
+            "pid": 56
+          }
+        },
+        {
+          "text": "acknowledgements",
+          "destination": {
+            "name": "acknowledgements",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "cws",
+      "text": ":\n-body horror\n-blood\n-implied sex\n-spiders\n-rejection\n-mental illness\n-swearing\n-anxiety\n-allergic reactions\n-non-consensual kissing ",
+      "links": []
+    },
+    {
+      "pid": 3,
+      "name": "StartPortal",
+      "text": "<!-- (go-to:\"Kiss Endings\") -->\n\n[[Kiss Endings]] \n[[full written list]] \n\n(link:\"Start Portal\")[(go-to: \"Portal Portal\")]\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        },
+        {
+          "text": "full written list",
+          "destination": {
+            "name": "full written list",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "gender code test",
+      "text": "you look at $them and $they look$s at $their hands. $they $have nice hands. yep, those are nice hands of $theirs. $they $are happy. you are happy. $they $dt have a care in the world\n\n",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "startup",
+      "text": "{\n(set:$s to \"s\")\n(set:$are to \"is\")\n(set:$have to \"has\")\n(set:$es to \"es\")\n(set:$dt to \"doesn't\")\n\n(set:$cycle to 0)\n\n(set:$think to 0)\n(set:$location to 0)\n(set:$person to 0)\n(set:$ant to 0)\n\n(set:$anxiety to 0)\n(set:$count to 0)}",
+      "links": []
+    },
+    {
+      "pid": 6,
+      "name": "end",
+      "text": "{**the** [[end|Start]]\n\n(set:$s to \"s\")\n(set:$are to \"is\")\n(set:$have to \"has\")\n(set:$es to \"es\")\n(set:$dt to \"doesn't\")\n\n(set:$cycle to 0)\n\n(set:$think to 0)\n(set:$location to 0)\n(set:$person to 0)\n(set:$ant to 0)\n\n(set:$anxiety to 0)\n(set:$count to 0)}",
+      "links": [
+        {
+          "text": "end",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Think Portal",
+      "text": "(set:$think to $think + 1)\n\n(goto: (either:\"T01\", \"T02\",\"T03\", \"T04\",\"T05\", \"T06\"))",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "Location Portal",
+      "text": "(set:$location to $location + 1)\n\n(goto: (either:\"L01\", \"L02\", \"L03\", \"L04\", \"L05\", \"L06\"))",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "Person Portal",
+      "text": "(set:$person to $person + 1)\n\n(goto: (either:\"P01\", \"P02\", \"P03\", \"P04\", \"P05\", \"P06\", \"P07\"))",
+      "links": []
+    },
+    {
+      "pid": 10,
+      "name": "Portal Portal",
+      "text": "{(set:$count to $count + 1)\n\n(if:$ant is 1)[(goto:\"Kiss Portal\")]\n\n(if:(($person is 0) and ($think is 0) and ($location is 0)))[(go-to: (either: \"Think Portal\", \"Location Portal\", \"Person Portal\"))]\n\n(if:(($person is 1) and ($think is 0) and ($location is 0)))[(go-to: (either: \"Think Portal\", \"Location Portal\"))]\n\n(if:(($person is 0) and ($think is 1) and ($location is 0)))[(go-to: (either: \"Location Portal\", \"Person Portal\"))]\n\n(if:(($person is 0) and ($think is 0) and ($location is 1)))[(go-to: (either: \"Think Portal\", \"Person Portal\"))]\n\n(if:(($person is 1) and ($think is 1) and ($location is 0)))[(go-to: (either:\"Location Portal\"))]\n\n(if:(($person is 1) and ($think is 0) and ($location is 1)))[(go-to: (either: \"Think Portal\"))]\n\n(if:(($person is 0) and ($think is 1) and ($location is 1)))[(go-to: (either:\"Person Portal\"))]\n\n(if:(($person is 1) and ($think is 1) and ($location is 1) and ($ant is 0)))[(go-to: (either: \"Anticipation Portal\", \"Kiss Portal\",))]\n\n}",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Kiss Portal",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Anticipation Portal",
+      "text": "(set:$ant to $ant + 1)\n\n(goto: (either:\"A01\", \"A02\", \"A03\"))",
+      "links": []
+    },
+    {
+      "pid": 12,
+      "name": "Kiss Portal",
+      "text": "(display:\"count\")\n\n{suddenly, it's the right moment\u2014or, you think it is\u2014for a\n(link:\"kiss\")[(set:$count to $count + 1)\n\n\n(if:$anxiety is -4)[(goto:\"PK01\")] \n(if:$anxiety is -3)[(goto:(either:\"HK01\", \"HK02\", \"HK03\", \"HK04\", \"HK05\"))]\n(if:$anxiety is -2)[(goto:(either:\"HK01\", \"HK02\", \"HK03\", \"HK04\", \"HK05\"))]\n\n\n(if:$anxiety is -1)[(goto:(either:\"MK01\", \"MK02\", \"MK03\", \"MK04\"))]\n(if:$anxiety is 0)[(goto:(either:\"MK01\", \"MK02\", \"MK03\", \"MK04\"))]\n(if:$anxiety is 1)[(goto:(either:\"MK01\", \"MK02\", \"MK03\", \"MK04\", \"BK05\"))]\n\n\n(if:$anxiety is 2)[(goto:(either:\"BK01\", \"BK02\", \"BK03\", \"BK04\", \"BK05\"))]\n(if:$anxiety is 3)[(goto:(either:\"BK01\", \"BK02\", \"BK03\", \"BK04\"))]\n(if:$anxiety is 4)[(goto:(either:\"WK01\"))]]\n\n}\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "PK01",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Link Code",
+      "text": "Link Code\n\n{You\u2019re feeling \n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"good\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"medium\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"bad\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "T01",
+      "text": "(display:\"count\")\n\nbefore you'd ever kissed anyone, do you remember what you thought it would be like? \n\n{if you had a sliver of that feeling back, \n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"it might make every kiss a little sweeter\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"it probably wouldn't change things much\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"you'd be terrified\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "T02",
+      "text": "(display:\"count\")\n\n{there's very little to a kiss. and yet, \n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"so much\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"it's there\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"so many ways to mess one up\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "P01",
+      "text": "(display:\"count\")\n\nyou look at $their neck, and then $their hands. $they $have strong hands, probably from working with all that clay. kneading, shaping ... firm, but careful. \n\n{you wonder if\n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"you could learn to sculpt\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"we really were all made from mud\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"$their work is any good\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "P02",
+      "text": "(display:\"count\")\n\nmid conversation, you both zone out for a quiet moment. it was the distant hum of a plane that caused it\u2014just enough to take your minds briefly elsewhere. (mouseout:\"elsewhere.\")[\n\nand yours shifts back to $them. $they $are wearing the smallest bit of makeup. you've never seen $them wear makeup before, but i suppose something is different about today.\n\n{\n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"you enjoy the silence and let it linger\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"you stutter a bit as you think of the right thing to say\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"you realize that you've been fairly bored for the past half hour\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "L01",
+      "text": "(display:\"count\")\n\nthe party has been about as expected. aside from the finance/consulting contingent, it's mostly working artists. mostly //pretentious// working artists.\n\nthe live band is a great touch, but no one is dancing, probably because the patio is so buggy. you and your date are in the loveseat in the living room, right next to a 1913 popcorn machine. you're glad you're here with $them\u2014you showed up solo at the last four of wallace's parties. \n\n{through the skylight, you can see \n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"the moon\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"a blank sky\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"rainclouds\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "L02",
+      "text": "(display:\"count\")\n\nyou miss sprawling parks that you can get lost in. this one is just enough to vaguely remind you of what a //real// park should be, like the one next to your grandparents' house, back in michigan.\n\nyour date said that you two should watch the sunrise together, so here you are, sitting with $them in front of the sprawling dawn.\n\n{but, instead of watching the sky, you're too busy looking at \n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"$them\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"a rabbit over by the other bench\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"the trash scattered across the hill\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "A01",
+      "text": "(display:\"count\")\n\n{$they $are close to you now. $their breath \n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"is slow and warm\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"tickles\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"smells slightly stale\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "A02",
+      "text": "(display:\"count\")\n\n{you're\n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"blushing\u2014and so $are $they\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"being too quiet, but $they $dt seem to mind\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"getting tired\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "HK01",
+      "text": "and as $they kiss$es you, you remember that you're wearing your favorite underwear.\n\n[[\u2014>|end]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "HK02",
+      "text": "$their lips are warm, and $their face is smooth, like cold, clean sheets. \n\n[[\u2014>|end]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "PK01",
+      "text": "\"slowly,\" (mouseout:\"slowly\")[$they say$s, smiling, \"look at me\" \n\n(mouseout:\"look at me\")[\"kiss me\" \n\n(mouseout:\"kiss me\")[\"hold me\"\n(mouseout:\"hold me\")[(live: 3s)[(goto:\"end\")]]\n(mouseover:\"hold me\")[\"don't let go\"]]]\n\n]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "MK01",
+      "text": "your lips meet. it's just a kiss.\n\n[[\u2014>|end]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "MK02",
+      "text": "with a blank expression, $they kiss$es you. $they $dt part $their lips or purse them, so it feels like you're kissing a sort of weird flat thing, like the time you kissed a mirror to practice. \n\n\"are you okay?\" you ask, and $they nod$s. \n\n[[\u2014>|end]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "WK01",
+      "text": "you lean in too fast and too hard.\n\nteeth bump. terrible crunching sound. //terrible// crunching sound.\n\nyour hands dart to your mouth, but it\u2019s too late. all of your teeth (in razor-sharp shards) fall past your gums and lips and into your hands, cutting you to the bone.\n\nthe same horror befalls your companion\u2014you can't tell if it's worse to experience it or watch it, but the pain and panic make it hard to think about such things.\n\nthe shards start to cut your throat too, and your gut. you're choking on your own blood.\n\nyou've lost so much blood you can't stand or crawl. facing each other, you brace yourselves for the rest of this gruesome fate.\n\n(mouseout:\"fate.\")[the blood pools creep toward each other long after you\u2019re both gone.\n\ngently, quietly, they touch.\n\n[[\u2014>|end]]]\n",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "BK01",
+      "text": "before your lips touch, you notice a small, muffled sound. you catch a glimpse of something near $their tongue. \n\n$their eyes are still closed, so you duck down to get a better look past $their lips.\n\n\"meeneemeeneemeeneemeeneemininimi\" cries the small ghost that lives inside $their mouth!\n\n(mouseout:\"mouth!\")[\"what the fuck!\" you say, startling your date, whom you thought to be ghost-free until a mere instant ago.\n\n$they open$s $their eyes, looking at you with a frenzied, fiery determination. $they grab$s you and kiss$es you, and you feel the ghost transfer from $their mouth to yours.\n\n\"what the fuck!?\" you exclaim again, pushing away. \"what the actual fuck!?\"\n\n\"thank god! finally rid of you. fuuuuuck yes!\" $they seem$s to be shouting not at you, but at the ghost. \"sorry\u2014i have to go,\" $they blurt$s with pity.\n\n$they run$s off, and you're left with this ghost in your mouth. \n\nthe little specter tastes like shit.\n\n[[\u2014>|end]] ]\n",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "BK02",
+      "text": "you kiss, and it's great. it's a great kiss.\n\nand then it's a good kiss.\n\nand then it's alright.\n\nnow it's bad. something is wrong.\n\nyour mouth feels wrong. something is wrong. and you can't catch your breath, so you pull back.\n\n\"oh shit!\" $they say$s. \"your mouth!\"\n\n//shit.// peanuts. $they must have had peanuts.\n\n\"have you eaten any peanuts or peanut butter today? or tree nuts? fuck, never mind,\" you choke the words out. \n\nyou grab your epipen out of the front pocket of your backpack. you take off the case it and jab the autoinjector into your thigh. \n\n\"would you mind calling 911?\" you ask.\n\n$they $are panic-sobbing, and clearly not at all listening.\n\n\"never mind,\" you murmur. \"i'll do it. sorry about all this.\"\n\n[[\u2014>|end]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "A03",
+      "text": "(display:\"count\")\n\n{you look at $them again, \n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"now running your hand through $their hair\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"not knowing what to say\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"this time with a twinge of apathy\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "P03",
+      "text": "(display:\"count\")\n\n\"do you like jazz music?\" you ask.\n\n\"that's a funny question\" $they say$s.\n\n\"why?\"\n\n\"uh. hmm,\" $they say$s. \"well, if you don't like jazz, then it's odd for you to ask if i do. and i guess most people i know who like 'jazz music' just call it 'jazz.'\"\n\n\"do you like //jazz//?\" you ask.\n\n\"ha. i've been known to enjoy some standards on occasion.\"\n\n{\n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"$they $are funny. you love that about $them.\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"that puts the conversation momentarily to rest\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"you can't tell if $they $are being pretentious or witty\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "P04",
+      "text": "(display:\"count\")\n\n\"ope, you've got a little something in your teeth\u2014right there, right here,\" you say.\n\n\"mm, wait,\" $they reach$es for it with $their tongue, making a small mouth-smacking sound.\n\n(mouseout:\"sound.\")[oh god, $are $they a messy eater? your ex was a messy eater, and it drove you up the wall. a loud eater. it's the noise that matters. why don't more people's parents teach them to eat politely? \n\n\"did i get it?\" $they bare$s $their teeth.\n\n\"yeah! lookin' good,\" you chirp. \"so ... sorry- wait: what were we just talking about?\" \n\n{\n\n(live: 3.2s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"looking in $their eyes, the anxieties about the small stuff start to fade\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"you push the loud-eating thoughts away: you've been trying to care less about stuff like that, lately\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"$they $are definitely giving off a messy/loud eater vibe. ugh.\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "P05",
+      "text": "(display:\"count\")\n\n$they $are talking about the cookies $they baked today and how $their great-aunt used to make them every such and such. all you can think about is whether the cookies had any nutty ingredients, and\u2014if they did\u2014if that might pose a problem later, were you to kiss.\n\n(mouseout:\"kiss.\")[not having overmany data points makes it hard to gauge what sort of lips-on-lips action might trigger your peanut/tree nut allergy, and under what conditions.\n\n{now $they $are saying something about daniel day lewis.  \n\n(live: 3.2s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"great, you love daniel day lewis\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"huh. you've got to pay more attention\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"you half listen...but mostly wonder if you should just ask about the cookie situation\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "P06",
+      "text": "(display:\"count\")\n\n\"hey! whose ears do you think are smaller?\" $they put$s $their finger and thumb up to your tiny little ear to measure and then carefully move$s them over to $their ear. \"what do you think? i can't tell.\"\n\n\"i think we may need an impartial judge\" you say.\n\n\"i bet yours are smaller\" $they say$s, trying again to measure, now starting with $their ear.\n\n{the whole thing is\n(live: 3.2s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"silly and perfect\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"silly.\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"silly, like the shallow stuff you talk about when you have nothing to say\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "L03",
+      "text": "(display:\"count\")\n\nyou woke up extra early today to have time to shower, make an espresso on your cute new stovetop espresso maker, and brush your teeth twice to get rid of espresso breath. you wore the same shirt you always wear. you have 6 other copies of it, 4 of them clean, at the moment.\n\nafter coming here last week to scope out the menu allergen-wise, you went with the \"avocado delight\" today\u2014basically avocado toast, but a bagel. it's just messy enough to be endearing (but not too messy), and just faux-trendy enough that you can quip about it if the conversation grows stale. \n\nthe place is comfortably empty\u2014a few people scattered around. plenty of spots to sit, like these two stools by the window. \n\nlooking around, you remember that this isn't even a date, it's just two people getting breakfast. \n\nyep, just you and $them. getting breakfast.\n\n{looking down at the remaining half of your avocado-delight, \n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"you ask if $they want$s a bite\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"you suppress a yawn\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"you're overcome with nausea\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "L04",
+      "text": "(display:\"count\")\n\neverything in this apartment is so ... mature. and authentic. the vitamix blender at your cousin's loft feels show-offy, but the one here helps complete an intentional, confident kitchen.\n\neverything in the apartment has a purpose, and a place, and looks great. this is a //home//. it's intimidating.\n\nthe throw blanket looks comfy. you're chilly.\n\n{\n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"oh my god, it's even comfier than it looks\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"you stare at it, deciding what to do\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"leave it. it's better to be cold than awkward\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "L05",
+      "text": "(display:\"count\")\n\n$they said $they couldn't decide between going to a bar or going to the botanical gardens, so $they made you choose.\n\n(mouseout:\"choose\")[it's a bit unfair, in a way, since now you feel a nagging responsibility for how the evening goes\u2014more than usual.\n\n{still, $they $are smiling. a good sign. and  \n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"the flowers are magnificent\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"your headache is starting to wane\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"yet, the beer is warm and skunky\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "L06",
+      "text": "(display:\"count\")\n\nwith an audience, you notice every detail in your room. no matter how much you clean, there's a stray cobweb in the corner ceiling, or chipped paint on the door. \n\nbut you notice the good stuff too... \n\n(mouseout:\"notice the good stuff\")[all the nice touches? the candles, the paintings, the plants? they //are// for you, not for anyone else. unless someone is with you, in which case yes, they are also for $them. \n\n{with the two of you in your room together, you keep noticing\n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"$them glance at your bonsai tree\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"the low hum of the ac\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"how frayed your curtains are\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "T03",
+      "text": "(display:\"count\")\n\nwait\u2014you're breathing loudly, and it's unbecoming. you slow your breath and loosen your shoulders. better.\n\n{you're feeling (live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"relaxed. warm and relaxed\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"about the same as always\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"sweaty and bloated and jittery\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "T04",
+      "text": "(display:\"count\")\n\nlast night, you had a dream that you were this guy wallace, from work. in the dream, you had to pee\u2014you really, really had to pee. \n\n(mouseout:\"pee.\")[you waddled for hours toward the bathroom. the bathroom walls were purple, and it only had a stall, no urinal. you aimed at the side of the toilet bowl and made the water spin around like a whirlpool.\n\n(mouseout:\"whirlpool.\")[when you were done, you washed your hands and then leaned into the mirror and kissed yourself. i'm not sure why. \n\nyour mustache\u2014his mustache\u2014was so prickly.\n\nit was an odd dream. would your date would find it funny, or just weird? you wonder what it would be like to kiss $them if $they had a prickly mustache like wallace.\n\n(mouseout:\"wallace.\")[how much time do you think the average person spends kissing in their lifetime? days? weeks? hours?\n\n{whatever it is, \n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"it is time well spent\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"it's not enough\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"it makes you strangely sad to think about\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "T05",
+      "text": "(display:\"count\")\n\nsomething is stuck in your head. a song from the bar, last weekend. it's the same kind of song that you would've heard decades ago at your middle school dances.\n\n{\n\n(live: 3.2s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"you'll have to go look it up, later\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"you can't remember the words\u2014you just hear the melody from the chorus again and again\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"your thoughts wander at the worst times, and the song sucks\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "T06",
+      "text": "(display:\"count\")\n\nthe mosquito bite on your hand has almost healed. \n\n{\n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"it's a fading reminder of a nice walk\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"you resist the urge to scratch it\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"scratching it a bit can't hurt\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "full written list",
+      "text": "full written list:\n\nT01\n(display:\"T01\")\n\n\nHK01\n(display:\"HK01\")\n\nHK02\n(display:\"HK02\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "T01",
+            "pid": 14
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "HK01",
+            "pid": 22
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "HK02",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "acknowledgements",
+      "text": "**this piece was inspired by** \n\nqueers in love at the end of the world, by anna anthropy\n(display:\"queers in love\")\naisle, by sam barlow\n(display:\"aisle\")\na partial list of things for which i am grateful, by me!\n(display:\"partial\")\nand by lots of kisses, real and imagined.\n\n\n**special thanks to**\n\nnadia haile\nsameer mehra\ncharlie ruiz\n&\nrachel guinn\nphoebe flanigan\njake stepansky\nsolange azor\nwanda noonan\n\n\n**and to**\n\n(link-reveal:\"everyone i've ever kissed\")[ \n//i couldn't rightly list their names, but i appreciate your interest in the matter//]\n\n(link-reveal:\"everyone i've ever wanted to kiss\")[ \n//now you're just being nosy//]\n\n(link-reveal:\"everyone who has ever wanted to kiss me\")[\n//oh, how i wish i knew//]\n\n\n**home** [[\u2014>|Start]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "queers in love",
+            "pid": 52
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "aisle",
+            "pid": 53
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "partial",
+            "pid": 54
+          }
+        },
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "count",
+      "text": "{(if: $count is 1)[(css: \"font-size: 200%; font-family: Times; font-weight: bold;\")[I]]\n(if: $count is 2)[(css: \"font-size: 200%; font-family: Times; font-weight: bold;\")[II]]\n(if: $count is 3)[(css: \"font-size: 200%; font-family: Times; font-weight: bold;\")[III]]\n(if: $count is 4)[(css: \"font-size: 200%; font-family: Times; font-weight: bold;\")[IV]]\n(if: $count is 5)[(css: \"font-size: 200%; font-family: Times; font-weight: bold;\")[V]]\n(if: $count is 6)[(css: \"font-size: 200%; font-family: Times; font-weight: bold;\")[VI]]}",
+      "links": []
+    },
+    {
+      "pid": 46,
+      "name": "BK03",
+      "text": "you lean in 90% of the way, and wait for $them to come in the 10% that's left. just like in the movie //hitch//. \n\n$they peck$s you, and then pull$s away.\n\n\"let's\u2014let's not do this,\" $they say$s.\n\n[[\u2014>|end]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "HK03",
+      "text": "\"you look like you want to kiss me,\" $they say$s.\n\n\"well, i do want to kiss you,\" you say.\n\nand then you do. and you feel $them smile as your lips touch.\n\n[[\u2014>|end]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "HK04",
+      "text": "kissing $them is so natural. the way $they hold$s you reminds you of your favorite sculpture.\n\n[[\u2014>|end]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "MK03",
+      "text": "\"oh, are you about to kiss me?\" $they say$s.\n\n\"uh\u2014sorry, i thought-\"\n\n\"no, it's fine! just\u2014yeah sure. ha,\" $they say$s.\n\n$they kiss$es you, then stop$s. \n\nthe moment seems to have passed, but maybe not forever.\n\n[[\u2014>|end]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "MK04",
+      "text": "it's a nice kiss, but $their breath is a little onion-y.\n\n[[\u2014>|end]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "BK04",
+      "text": "you're making out, and it feels a little awkward, but good. \n\nthe right part of your forehead tickles. you reach to scratch it and there's something there.\n\n(mouseout:\"there.\")[a hand-sized spider plops down off your head, past your face, onto the floor. you scream and lurch back, losing your balance. \n\n(mouseout:\"balance.\")[you wake up on a cot. a man in purple scrubs stands over you. \n\n\"there you are\u2014you took quite the knock to your noggin!\" he says. \"no, don't move. we're just going to keep you here to keep an eye on the concussion. hopefully, you can go home tomorrow. i'll have doctor beth come in to check on you in just a moment.\"\n\nyou look around the hospital room. \"where's the spider?\"\n\nthe nurse raises an eyebrow.\n\n\"is there anyone here with me?\" you ask.\n\n\"nope,\" he says, \"your friend who brought you here left after $they dropped you off. but let me know if there's anyone you'd like us to call.\"\n\n[[\u2014>|end]]]]\n\n",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "queers in love",
+      "text": "{(click:\"queers in love at the end of the world\")[(openURL: \"https://w.itch.io/end-of-the-world\")(display:\"queers in love\")]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "queers in love",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "aisle",
+      "text": "{(click:\"aisle\")[(openURL: \"http://iplayif.com/?story=http%3A%2F%2Fwww.ifarchive.org%2Fif-archive%2Fgames%2Fzcode%2FAisle.z5\")(display:\"aisle\")]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "aisle",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "partial",
+      "text": "{(click:\"a partial list of things for which i am grateful\")[(openURL: \"http://philome.la/dguinntweets/a-partial-list-of-things-for-which-i-am-grateful/play\")(display:\"partial\")]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "partial",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "about devon",
+      "text": "{(click:\"about devon\")[(openURL: \"http://devonguinn.com\")(display:\"about devon\")]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "about devon",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "about this game",
+      "text": "**do my choices even matter? this feels random.**\nour choices don't always have consequences\u2014until suddenly, they all do\n\n**what's up with text appearing under my mouse?**\nin the web version, when you move over then away from text that's surrounded by a blue line, you'll see something that wasn't there (mouseout-append:\"wasn't there\")[ before]\n\n**does the gender of the person i smooch impact the story?**\nit does not. all smooches in this story are available with smooch partners of any gender\n\n**how do i win?**\nsmooching isn't about winning / losing ... it's about smooching! also, i've heard staying relaxed and positive can lead to some pretty great smooching\n\n**i keep losing...**\nsmooching isn't about winning / losing ... it's about smooching! and hey, i've heard that stress does not a happy smooch make\n\n**how many different smooches can i smooch?**\nmany\n\n**how many endings are there?**\nseveral\n\n**i have a question / comment / concern / compliment**\nyou can reach me at devguinn@gmail.com\n\n**why all the FAQ? shouldn't good art speak for itself?**\n[[:~)|Start]]\n\n\n**home** [[\u2014>|Start]]",
+      "links": [
+        {
+          "text": ":~)",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        },
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "P07",
+      "text": "(display:\"count\")\n\n\"here we are,\" $they say$s.\n\n\"here we are,\" you say.\n\n\"it seems like you might have something you want to ask me,\" $they say$s.\n\n\"really?\" you ask.\n\n{\n\n(live: 2.5s)[\n\n\t(set:$cycle to ($cycle + 1))\n\t(if: $cycle is 4)[(set:$cycle to 1)]\n\t(if: $cycle is 1)[(link:\"slowly, you smile\")[(set:$anxiety to $anxiety - 1)(goto:\"Portal Portal\")]]\n\t(if: $cycle is 2)[(link:\"you're not sure what $they mean$s\")[(goto:\"Portal Portal\")]]\n\t(if: $cycle is 3)[(link:\"panic rises from your gut\")[(set:$anxiety to $anxiety + 1)(goto:\"Portal Portal\")]]\n\n\n]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "count",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Portal Portal",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "HK05",
+      "text": "\"you look nervous,\" $they say$s. \"don't be. you have nothing to be nervous about.\" \n\nand then, the way $they kiss$es you makes you believe $them.\n\n[[\u2014>|end]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "BK05",
+      "text": "you lean in, closing your eyes, waiting. you feel $their closeness, and then a small, timid kiss. then nothing.  \n\n(mouseout:\"nothing.\")[when you open your eyes, there's no one there. there's no one anywhere.\n\n[[\u2014>|end]]]",
+      "links": [
+        {
+          "text": "\u2014>",
+          "destination": {
+            "name": "end",
+            "pid": 6
+          }
+        }
+      ]
+    }
+  ]
+}

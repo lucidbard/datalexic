@@ -1,0 +1,1239 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Bootup",
+      "text": "{\n(set: $day to 1)\n(set: $good_list to (array: \"happy\", \"energetic\", \"lively\", \"excited to see you\", \"like they're having fun\", \"nimble\", \"like they're dancing\", \"sprightly\", \"frisky\", \"lovely\", \"amazing\",\"excited\",\"delightful\",\"pleased\",\"healthy\",\"like they're in great shape\",\"carefree\",\"wonderful\",\"great, just like they should\",\"excellent\"))\n(set: $okay_list to (array: \"okay\", \"alive\", \"like they usually do\", \"the same\", \"like they did yesterday\", \"like they are still there\", \"fine\", \"all right\", \"so-so\", \"reasonable\",\"like they should, you guess\",\"like they always do\",\"completely average\",\"normal, you suppose\",\"fairish\",\"unexceptional\",\"tolerable\",\"adequate\",\"kinda blah\",\"decent enough\"))\n(set: $bad_list to (array: \"bored\", \"boring\", \"dull\", \"disinterested\", \"slow\", \"sluggish\", \"like maybe they're sick\", \"depressing\", \"like they're ignoring you\", \"sad\", \"lame\", \"kinda gross\",\"rather ugly\",\"awful\",\"crummy\",\"lousy\",\"poor, to be frank\",\"like they're in rough shape\",\"cruddy\",\"pretty grody\"))\n(set: $clarity to 100)\n(set: $level to 100)\n(set: $mood to \"good\")\n(set: $monkeys to (random: 3,5))\n(set: $endinglist to (array: false, false, false, false, false, false, false, false))\n}\nC:\\GAMES\\>[dir]<tag_dir|\n[]<result|\n(click: ?tag_dir)[(replace: ?result)[(display: \"directory\")]]\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "directory",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "directory",
+      "text": "\nDirectory of C:\\GAMES\\\n\n{<div class=\"tableformat\"><table><tr><td>.</td><td>`<DIR>`</td><td> </td><td> </td><td>04-03-87</td><td>20:45</td></tr>\n<tr><td>..</td><td>`<DIR>`</td><td> </td><td> </td><td>06-03-87</td><td>16:42</td></tr>\n<tr><td>BBALL</td><td>EXE</td><td> </td><td>56,064</td><td>10-12-86</td><td>10:02</td>\n<tr><td>HNGMN</td><td>EXE</td><td> </td><td>22,932</td><td>27-12-85</td><td>15:35</td></tr>\n<tr><td>HARDHAT</td><td>COM</td><td> </td><td>42,112</td><td>01-04-84</td><td>12:27</td></tr>\n<tr><td>KROZ</td><td>COM</td><td> </td><td>46,134</td><td>26-11-86</td><td>13:07</td></tr>\n<tr><td>POPULOUS</td><td>EXE</td><td> </td><td>84,959</td><td>02-02-87</td><td>19:39</td></tr>\n<tr><td>SEAMONKY</td><td>EXE</td><td> </td><td>43,648</td><td>04-03-87</td><td>20:45</td></tr>\n<tr><td>WILLY</td><td>COM</td><td> </td><td>20,855</td><td>15-01-87</td><td>17:55</td></tr>\n<tr><td></td><td>7 File(s)</td><td> </td><td>2,435,109</td><td>bytes free</td></tr></table></div>}\nC:\\GAMES\\[[seamonky.exe]]",
+      "links": [
+        {
+          "text": "seamonky.exe",
+          "destination": {
+            "name": "seamonky.exe",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "seamonky.exe",
+      "text": "{\n(set: $monkeys to (random: 3,5))\n(set: $clarity to 100)\n(set: $level to 100)\n(set: $hunger to 0)\n(set: $mood to \"good\")\n(set: $day to 1)\n(set: $capcount to 0)\n(if: $monkeys is 3)[(set: $monkeytext to \"three\")]\n(if: $monkeys is 4)[(set: $monkeytext to \"four\")]\n(if: $monkeys is 5)[(set: $monkeytext to \"five\")]\n}\n=><=\n(color: #55ffff)[============]\n\n\n(text-color: #ff55ff)[THE UNOFFICIAL]\n\n(color: #ff55ff)[SEA-MONKEY(R) SIMULATION!]\n\n\n(color: #55ffff)[============]\n\n\nby B.J. Best\nCopyright (C) 1987\n\n\n(if: $init is true)[Unlikely endings: (if: $endinglist's 1st is true)[(color: #ffff55)[1]](else:)[1] (if: $endinglist's 2nd is true)[(color: #ffff55)[2]](else:)[2] (if: $endinglist's 3rd is true)[(color: #ffff55)[3]](else:)[3] (if: $endinglist's 4th is true)[(color: #ffff55)[4]](else:)[4] (if: $endinglist's 5th is true)[(color: #ffff55)[5]](else:)[5] (if: $endinglist's 6th is true)[(color: #55ff55)[6]](else:)[6] (if: $endinglist's 7th is true)[(color: #ffff55)[7]](else:)[7] (if: $endinglist's 8th is true)[(color: #ffff55)[8]](else:)[8]]\n<==\n\n\n\n(color: #555555)[(\"Sea-Monkeys\" is a registered trademark of Transcience LLC.)]\n==>\n\n\n(if: $init is true)[[[(O)->Um, OK?]]K!](else:)[[[(O)->OK!]]K!]\n\n\n[[(A)|About]]bout",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Um, OK?",
+            "pid": 5
+          }
+        },
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "OK!",
+            "pid": 4
+          }
+        },
+        {
+          "text": "(A)",
+          "destination": {
+            "name": "About",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "OK!",
+      "text": "(set: $init to true)\n\n\n\n\n\n\n\n==><===\nAll plots tend to move deathward.\n======><=\n\n(live: 1800ms)[--Don DeLillo]\n\n\n\n\n\n\n==>\n(live: 3500ms)[Um, [[(O)->Um, OK?]]K?]",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Um, OK?",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Um, OK?",
+      "text": "\nYour father comes home from work one day--late, as usual.  He tosses a small box onto the kitchen counter.  \"Here,\" he says, \"you wanted fish.  You get these.  Let's see how you do first, and then maybe we'll get a real tank.\"\n\nThe box is red and reads (color:  #5555ff)[THE AMAZING LIVE] (color: #fff555)[SEA-MONKEYS!]  Finally, you've got a chance to show that you're responsible and can have your own pets.  You open the box, put clean water in the tank, and put in the Water Purifier, just like the instructions say.  You wait one full day, and again, just like the instructions say, you add the Instant Live Eggs and stir.  You're supposed to see little creatures swimming.  You stand there, fifteen, twenty minutes, and see nothing.  \"Maybe it takes a little while,\" your mother says.  \"We'll put it on the kitchen counter, and check tomorrow.\"\n==>\n\n\n\n[[(O)->Monkeys Born]]K, I guess ...",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Monkeys Born",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Monkeys Born",
+      "text": "\n(color: #55ffff)[You get up extra early today to check the tank, and it looks like the Sea-Monkeys finally hatched!  You can clearly see $monkeytext little specks swimming around.  \"Now take care of them,\" your mother says.  Your father just gives an amused grunt on his way to work.]\n\n==>\n\n[[(O)->Main Day]]K!",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Main Day",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Main Day",
+      "text": "(display: \"Monkey String\")\n(color: #5555ff)[''Day $day'']\n\n(color: #ff55ff)[`--------------------`]\n\nSea-Monkeys: (color: #ffff55)[$monkeystring]\nWater clarity:  $clarity%\nWater level:  $level%\n\n(color: #ff55ff)[`--------------------`]\n\n{\n(if: $mood is \"good\")[(color: #55ff55)[Your Sea-Monkeys look $moodstring.]]\n(if: $mood is \"okay\")[(color: #ffff55)[Your Sea-Monkeys look $moodstring.]]\n(if: $mood is \"bad\")[(color: #ff5555)[Your Sea-Monkeys look $moodstring.]]\n}\n\nAction? [[(F)->Feed]]eed / [[(S)->Stir]]tir / [[(A)->Add water]]dd water / [[(N)->Nothing]]othing / [[(Q)->Quit]]uit?",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Monkey String",
+            "pid": 8
+          }
+        },
+        {
+          "text": "(F)",
+          "destination": {
+            "name": "Feed",
+            "pid": 9
+          }
+        },
+        {
+          "text": "(S)",
+          "destination": {
+            "name": "Stir",
+            "pid": 10
+          }
+        },
+        {
+          "text": "(A)",
+          "destination": {
+            "name": "Add water",
+            "pid": 11
+          }
+        },
+        {
+          "text": "(N)",
+          "destination": {
+            "name": "Nothing",
+            "pid": 12
+          }
+        },
+        {
+          "text": "(Q)",
+          "destination": {
+            "name": "Quit",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Monkey String",
+      "text": "{\n(set: $spill to false)\n\n(if: $monkeys is 1)[(set: $monkeystring to \"`*`\")]\n(if: $monkeys is 2)[(set: $monkeystring to \"`* *`\")]\n(if: $monkeys is 3)[(set: $monkeystring to \"`* * *`\")]\n(if: $monkeys is 4)[(set: $monkeystring to \"`* * * *`\")]\n(if: $monkeys is 5)[(set: $monkeystring to \"`* * * * *`\")]\n(if: $monkeys is 6)[(set: $monkeystring to \"`* * * * * *`\")]\n(if: $monkeys is 7)[(set: $monkeystring to \"`* * * * * * *`\")]\n\n(set: $temp to (random: 1, 20))\n(if: $mood is \"good\")[(set: $moodstring to $good_list's $temp)]\n(if: $mood is \"okay\")[(set: $moodstring to $okay_list's $temp)]\n(if: $mood is \"bad\")[(set: $moodstring to $bad_list's $temp)]\n}",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "Feed",
+      "text": "{\n(set: $temp to (random: 0,8))\n(set: $temp2 to (random: 0,7))\n(if: (random: 1,100) is 1 and $endinglist's 7th is false)[(set: $spill to true)]\n(set: $clarity to $clarity-15)\n(set: $clarity to $clarity-$temp2)\n(set: $hunger to $hunger-17)\n(set: $hunger to $hunger-$temp)\n(if: $hunger < 0)[(set: $hunger to 0)]\n(if: $clarity < 0)[(set: $clarity to 0)]\n}\n(color: #aa5500)[You add a little Growth Food, carefully measuring it in the tiny yellow spoon.]\n\n\n\n{(if: $spill is false)[[[(O)->Event calc]]K]\n(if: $spill is true)[[[(O)->Spill]]K]}",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Event calc",
+            "pid": 15
+          }
+        },
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Spill",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Stir",
+      "text": "{\n(set: $temp to (random: 0,10))\n(set: $temp2 to (random: 0,5))\n(if: (random: 1, 100) is 1 and $endinglist's 7th is false)[(set: $spill to true)]\n(set: $clarity to $clarity-5)\n(set: $clarity to $clarity-$temp)\n(set: $hunger to $hunger-5)\n(set: $hunger to $hunger-$temp2)\n(if: $hunger < 0)[(set: $hunger to 0)]\n(if: $clarity < 0)[(set: $clarity to 0)]\n}\n(color: #aa5500)[You give the Sea-Monkeys a vigorous stir with a small spoon.  They seem to enjoy it.]\n\n\n\n{(if: $spill is false)[[[(O)->Event calc]]K]\n(if: $spill is true)[[[(O)->Spill]]K]}",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Event calc",
+            "pid": 15
+          }
+        },
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Spill",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Add water",
+      "text": "{\n(set: $temp to (random: 0,3))\n(set: $temp2 to $level * $clarity)\n(set: $temp2 to it * 0.01)\n(set: $temp3 to 100 - $level)\n(set: $temp2 to it + $temp3)\n(if: (random: 1,100) is 1 and $endinglist's 7th is false)[(set: $spill to true)]\n(set: $clarity to (round: $temp2))\n(set: $clarity to it - 4)\n(set: $level to $temp+97)\n(if: $hunger < 0)[(set: $hunger to 0)]\n(if: $clarity < 0)[(set: $clarity to 0)]\n}\n(color: #aa5500)[You fill a small cup from the faucet, and carefully empty it into the tank.  After a few times, the tank is full.]\n\n\n\n{(if: $spill is false)[[[(O)->Event calc]]K]\n(if: $spill is true)[[[(O)->Spill]]K]}",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Event calc",
+            "pid": 15
+          }
+        },
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Spill",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Nothing",
+      "text": "(goto: \"Event calc\")",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Event calc",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Quit",
+      "text": "\n(color:  #ffff55)[You dump the foul-smelling brown water and your Sea-Monkeys into the sink.  You don't even rinse it out.  You throw the tank in the trash, and go watch TV.]\n\n\n\n[[(O)|no quit]]K\n(set: $endinglist's 8th to true)",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "no quit",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Init",
+      "text": "(set: $parent1 to (either: \"mother\",\"father\"))\n(if: $parent1 is \"mother\")[(set: $parent2 to \"father\")]\n(else:)[(set: $parent2 to \"mother\")]\n(if: $parent1 is \"mother\")[(set: $parent1pronoun to \"she\")(set: $parent2pronoun to \"he\")]\n(else:)[(set: $parent1pronoun to \"he\")(set: $parent2pronoun to \"she\")]\n(if: $parent1 is \"mother\")[(set: $parent1possessive to \"her\")(set: $parent2possessive to \"his\")]\n(else:)[(set: $parent1possessive to \"his\")(set: $parent2possessive to \"her\")]\n(set: $eventmax to (random: 10,12))\n(set: $eventcount to 0)\n(if: $init is true)[(goto: \"seamonky.exe\")](else:)[(goto: \"Bootup\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "seamonky.exe",
+            "pid": 3
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Bootup",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Event calc",
+      "text": "{(set: $day to it + 1)\n(set: $temp to (random: 0,2))\n(set: $temp2 to (random: 0,3))\n(set: $temp3 to (random: 0,4))\n(set: $level to it - $temp)\n(set: $clarity to it + $temp2)\n(set: $clarity to it + 5)\n(set: $hunger to it + $temp3)\n(set: $hunger to it + 5)\n(set: $capcount to it + 1)\n\n(if: $level <= 30)[(goto: \"Out of water\")]\n(if: $hunger >= 90)[(goto: \"Starve\")]\n(if: $clarity > 100)[(set: $clarity to 100)]\n\n(set: $death to false)\n(set: $birth to false)\n(set: $event to false)\n\n(set: $mood to \"good\")\n(if: $hunger > 20 or $clarity < 60 or $level < 70)[(set: $mood to \"okay\")]\n(if: $hunger > 60 or $clarity < 40 or $level < 45)[(set: $mood to \"bad\")]\n\n(if: $mood is \"good\")[(set: $birthprob to 2)(set: $deathprob to 3)]\n(if: $mood is \"okay\")[(set: $brithprob to 1)(set: $deathprob to 3)]\n(if: $mood is \"bad\")[(set: $birthprob to 0)(set: $deathprob to 12)]\n\n(if: (random: 1,100) <= $deathprob)[(set: $death to true)]\n(if: $death is false and (random: 1,100) <= $birthprob)[(set: $birth to true)]\n(if: $death is false and $birth is false and (random: 1,100) <= 18)[(set: $event to true)]\n(if: $death is false and $birth is false and $capcount >= 6)[(set: $event to true)]\n(if: $event is true and $capcount is 1)[(set: $event to false)]\n\n(if: $birth is true and $monkeys is 7)[(set: $birth to false)]\n(if: $birth is true)[(goto: \"Born\")]\n(if: $death is true)[(goto: \"Dies\")]\n(if: $event is true)[(goto: \"Event\")]\n(if: $birth is false and $death is false and $event is false and $hunger < 90 and $level > 30)[(goto: \"Sleep\")]}",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Out of water",
+            "pid": 17
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Starve",
+            "pid": 18
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Born",
+            "pid": 19
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Dies",
+            "pid": 20
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Event",
+            "pid": 24
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Sleep",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Spill",
+      "text": "(set: $endinglist's 7th to true)\n(color:  #ffff55)[But as you turn to put the lid back on the tank, one of your sleeves catches its rim.  Instantly the tank is on its side, a foul-smelling waterfall running down the kitchen cabinets.  You clean up everything, bury the tank beneath other trash in the kitchen garbage can, and aren't surprised when your parents don't mention the Sea-Monkeys that night, or ever.]\n\n\n\n[[(O)|no spill]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "no spill",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Out of water",
+      "text": "(set: $endinglist's 1st to true)\n(color:  #ffff55)[You let the water level in the tank get so low that when you look at the Sea-Monkeys the next day, they're all dead.  You throw the tank away and imagine your parents won't notice.  The following night at dinner, your father says, \"Should have given them some water, hmm?\" and then returns to his pork chop.]\n\n\n\n[[(O)|no water]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "no water",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Starve",
+      "text": "(set: $endinglist's 2nd to true)\n(color:  #ffff55)[The next morning, you look at the tank and see all of your Sea-Monkeys are dead.  Perhaps you should have fed them more.  At least you've learned you don't want a fish, although your parents never mention that possibility to you again.]\n\n\n\n[[(O)|no starve]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "no starve",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Born",
+      "text": "{(set: $monkeys to it + 1)\n(if: $capcount > 2)[(set: $capcount to it - 3)]}\n(color: #55ffff)[You're the parent of a baby Sea-Monkey!  It must have been born overnight.  You proudly report this to both parents.]\n\n\n\n\n[[(O)->Main Day]]K!",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Main Day",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Dies",
+      "text": "{(set: $monkeys to it - 1)\n(if: $capcount > 2)[(set: $capcount to it - 3)]}\n(color: #ff5555)[It looks like one of the Sea-Monkeys died overnight.  You squint, turn, and count many times, but there's one less than yesterday.]\n\n\n\n{(if: $monkeys is not 0)[[[(O)->Main Day]]K]\n(if: $monkeys is 0)[[[(O)->Death end]]K]}",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Main Day",
+            "pid": 7
+          }
+        },
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Death end",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Death end",
+      "text": "(set: $endinglist's 3rd to true)\n(color:  #ffff55)[All of your Sea-Monkeys have died. \"I thought you could keep them alive for longer than that,\" your father says.  \"But I guess it's not surprising,\" he says, looking at you straight on, then turns to go to his office upstairs.]\n\n\n\n[[(O)|no death]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "no death",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Event end",
+      "text": "{\n(set: $temp to (random: 1,2))\n(if: $endinglist's 4th is true)[(set: $temp to 2)]\n(if: $endinglist's 5th is true)[(set: $temp to 1)]\n(if: $endinglist's 4th is true and $endinglist's 5th is true)[(set: $temp to 3)]\n}\n{\n(if: $temp is 1)[(set: $endinglist's 4th to true)(color:  #ffff55)[Your mother is at the door when you get home from school.  She is crying.  \"I'm so, so sorry, honey,\" she says, almost inconsolable--but you don't know about what.  She doesn't say any more, just yanks your hand and leads you to the kitchen.  The Sea-Monkey tank is on its side and empty.  Her breath shudders.  \"I was cleaning the counter, and accidentally bumped it,\" she says, then launches into a gale of tears.  She hasn't even cleaned up the water yet, so you do, finding one carcass glued to the tile.  She tries to hug you, but you squirm away.  \"I don't want a fish anymore,\" you say, then walk upstairs, turn on the bathtub, take off your clothes, get in, and cry.]\n(display: \"mother ok\")\n\n]\n(if: $temp is 2)[(set: $endinglist's 5th to true)(color:  #ffff55)[It's maybe eight in the evening when your father flings the front door open.  You're in the kitchen looking at the Sea-Monkey tank, wondering if it's time to clean it.  \"And these,\" he says, as if continuing a conversation.  He smells like cigarettes and something else you can't place.  \"There will be no more of these,\" he says, and he takes the tank one-handedly and dumps it into the sink.  He gets very close.  \"There will be no fish, either,\" he whispers, then turns and lumbers upstairs.  You see one wriggling body clinging to the edge of the drain, but it slips away before you can do anything to save it.]\n(display: \"father ok\")\n]\n(if: $temp is 3)[(set: $endgame to true)(set: $endinglist's 6th to true)(color:  #ffff55)[As soon as you hear the word \"divorce,\" you get up from the couch where your parents have seated you, your father trying to offer a stupid conciliatory smile.  You know where you're going.  With one long smack of your hand, the Sea-Monkey tank flies, a spray of water shimmering toward the living room.  You watch as your father's eyes fill with fire, and your mother puts an arm in front of his chest, as if to stop him.  \"I asked for a fish!\" you scream, and run upstairs since that's where you'll be sent anyway.  You lock yourself in the bathroom, turn the bathtub and the sink faucets on full force, then sit in the cool dark of the linen closet, where you won't have to hear whatever's happening on the other side of the bathroom door.]\n(display: \"divorce ok\")\n]\n}\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "mother ok",
+            "pid": 26
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "father ok",
+            "pid": 27
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "divorce ok",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "startup stuff",
+      "text": "(set: $eventlist to (a: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50))\n(set: $eventlist to (shuffled: ...$eventlist))\n(set: $eventindex to 0)",
+      "links": []
+    },
+    {
+      "pid": 24,
+      "name": "Event",
+      "text": "{\n(set: $eventindex to it + 1)\n(if: $eventindex is 51)[(set: $eventindex to 1)]\n(set: $eventcount to it + 1)\n(set: $temp to 0)\n(if: $eventcount is $eventmax)[(goto: \"Event end\")]\n(if: $eventcount < $eventmax)[(set: $temp to $eventlist's $eventindex)]\n(set: $capcount to 0)\n}\n{\n(set: $temp to (string: $temp))\n(set: $eventnumber to \"news\"+$temp)\n(display: $eventnumber)\n\n\n\n\n}\n\n\n\n(if: $temp is not 0)[[[(O)->Main Day]]K]\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Event end",
+            "pid": 22
+          }
+        },
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Main Day",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "mother remembers",
+      "text": "\n\"No, that's not quite right, sweetie,\" your mother says years later when you tell her you never quite forgave her for spilling the tank.  You say she was probably drunk at the time.  \"No,\" she says again, but she offers a weird, sad smile.  \"I think you remember what really happened.\"\n\n\n\n[[(O)|Init]]K?",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Init",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "mother ok",
+      "text": "\n\n\n\n[[(O)|mother remembers]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "mother remembers",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "father ok",
+      "text": "\n\n\n\n[[(O)|father remembers]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "father remembers",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "father remembers",
+      "text": "\"That's what you think happened to your fucking Sea-Monkeys?\" your father says on one of the last times you would ever speak to him.  You're an adult now, and have accused him of ruining your Sea-Monkeys, your childhood, your family.  \"You're wrong, just like you've always been,\" he says.\n\n\n\n[[(O)|Init]]K, asshole.",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Init",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "no quit",
+      "text": "\nNo, you would never do that.  You're fooling yourself.\n\n\n\n[[(O)|Init]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Init",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "no water",
+      "text": "\nDo you really think you would let your Sea-Monkeys run out of water?  You were never that negligent.\n\n\n\n[[(O)|Init]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Init",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "no spill",
+      "text": "\nThat can't be right.  You were always meticulously careful whenever you moved the tank or removed the lid.\n\n\n\n[[(O)|Init]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Init",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "no starve",
+      "text": "\nWait.  You bought three extra packets of Growth Food with your allowance after you got the Sea-Monkeys.  Feeding them became a careful routine.  If anything, you probably fed them a bit too much, but they never seemed to mind.\n\n\n\n[[(O)|Init]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Init",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "no death",
+      "text": "\nBut you did keep them alive longer than that.  You know you did.\n\n\n\n[[(O)|Init]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "Init",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "divorce ok",
+      "text": "\n\n\n\n[[(O)|congratulations]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "congratulations",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "congratulations",
+      "text": "Congratulations!  You have won:\n\n\n=><=\n(color: #55ffff)[============]\n\n(text-color: #ff55ff)[THE UNOFFICIAL]\n\n(color: #ff55ff)[SEA-MONKEY(R) SIMULATION!]\n\n(color: #55ffff)[============]\n\n==>\n\n\n[[(O)|endgame1]]K?",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "endgame1",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "endgame1",
+      "text": "You bounce between your two parents for much of the rest of your childhood.  You avoid your father as much as possible when you are at his--what used to be your--house.  He works most of the time, for which you are grateful.  When the two of you do talk, he calls your mother a bitch, a whore, a worthless piece of shit.  You learn how to become handy with a screwdriver and install a new doorknob and lock on your old bedroom door.  One night, that door becomes filled with dents the size of his fists.  Then you don't see your father anymore.\n\nYou don't understand your mother's drinking.  She tries to get help for a while, and seems better, and then she returns to the disease.  She's a sappy, affectionate type of drunk, and while you hate her medicated love, you remind yourself it's better than the anger and petty cruelty of your father.\n\nYou move to a new city as soon as possible following your high school graduation.  You get new friends, a job, an apartment.  And, to your delight, a person you love.\n\n\n\n[[Okay|endgame2]]",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "endgame2",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "endgame2",
+      "text": "It is the evening of your twenty-third birthday.  You are in the apartment of the person you love.  By now, you have told them about pretty much everything:  your father's distance and anger, your mother's drinking, even the Sea-Monkeys that seemed to help hold things together for a while.\n\nThe two of you have just finished a meal that passes for fancy:  candles, tablecloth, pasta, white wine.  As you stand up to deliver your plate to the dishwasher, the person you love takes the plate, sets it back down, then takes your hands.\n\n\"Close your eyes,\" says the person you love.\n\n\n\n[[Close them.|endgame3]]\n\n(link: \"Keep them open.\")[(display: \"open1\")]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "open1",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Close them.",
+          "destination": {
+            "name": "endgame3",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Sleep",
+      "text": "(goto: \"Main Day\")",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Main Day",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "endgame3",
+      "text": "The person you love leads you into the middle of the small living room.  \"Are you sure your eyes are closed?\"\n\n\"Yes,\" you say.\n\n\"Good.  Keep them that way.\"  You hear the person you love disappear in the direction of the bedroom and then come back.  They place something light, oddly shaped, and plastic in your hands.  \"Okay, you can look,\" says the person you love.\n\nYou hold a brand-new tank of Sea-Monkeys.  You're stunned by a flood of memories:  the cheap kitchen counter of your childhood home, white formica flecked with gold; the routines of feeding and care (brownish food, aluminum sink); the picture before you of the Sea-Monkeys and their castle, as royal and delighted as ever.\n\n\n\n[[Close your eyes again, smile, and half-cry.|good1]]\n\n[[Stare at the person you love.|okay1]]\n\n[[\"What the hell is this supposed to be?\"|bad1]]",
+      "links": [
+        {
+          "text": "Close your eyes again, smile, and half-cry.",
+          "destination": {
+            "name": "good1",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Stare at the person you love.",
+          "destination": {
+            "name": "okay1",
+            "pid": 43
+          }
+        },
+        {
+          "text": "\"What the hell is this supposed to be?\"",
+          "destination": {
+            "name": "bad1",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "open1",
+      "text": "\"No, really,\" the person you love says.\n\n[[Close your eyes.|endgame3]]\n\n(link: \"Keep them open.\")[(display: \"open2\")]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "open2",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Close your eyes.",
+          "destination": {
+            "name": "endgame3",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "open2",
+      "text": "\"I'm serious.  Can you please just close your eyes?\"\n\n[[Of course.|endgame3]]",
+      "links": [
+        {
+          "text": "Of course.",
+          "destination": {
+            "name": "endgame3",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "good1",
+      "text": "You close your eyes, squeeze out a tear, and then open them again.\n\n\"I thought it might be nice to have a family again,\" says the person you love.\n\n\n\n[[You smile.  \"With you.\"|good2]]\n\n[[\"I'm ... I'm not sure.\"|okay2]]",
+      "links": [
+        {
+          "text": "You smile.  \"With you.\"",
+          "destination": {
+            "name": "good2",
+            "pid": 45
+          }
+        },
+        {
+          "text": "\"I'm ... I'm not sure.\"",
+          "destination": {
+            "name": "okay2",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "okay1",
+      "text": "It looks like the person you love had hoped the gift would need no explanation, but they give you one anyway.  \n\n\"You've talked about the Sea-Monkeys a lot,\" the person you love says, and it makes you wonder if you really have.  \"I just thought ... I just thought it would be good for you to have a family again.\"\n\nYou pause.\n\n\n\n[[You smile.  \"With you.\"|good2]]\n\n[[\"I'm ... I'm not sure.\"|okay2]]\n\n[[\"A bunch of stupid shrimp.  What a great family!\"|bad2]]",
+      "links": [
+        {
+          "text": "You smile.  \"With you.\"",
+          "destination": {
+            "name": "good2",
+            "pid": 45
+          }
+        },
+        {
+          "text": "\"I'm ... I'm not sure.\"",
+          "destination": {
+            "name": "okay2",
+            "pid": 47
+          }
+        },
+        {
+          "text": "\"A bunch of stupid shrimp.  What a great family!\"",
+          "destination": {
+            "name": "bad2",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "bad1",
+      "text": "\"What the hell is this supposed to be?\" you say, your voice like a knife.\n\nThe person you love pulls back.  \"I--I just thought that ... I just thought that it would be nice to have a family again,\" the person you love says.  \"Wouldn't it?\"\n\n\n\n[[\"A bunch of stupid shrimp.  What a great family!\"|bad2]]\n\n[[\"I'm ... I'm not sure.\"|okay2]]",
+      "links": [
+        {
+          "text": "\"A bunch of stupid shrimp.  What a great family!\"",
+          "destination": {
+            "name": "bad2",
+            "pid": 50
+          }
+        },
+        {
+          "text": "\"I'm ... I'm not sure.\"",
+          "destination": {
+            "name": "okay2",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "good2",
+      "text": "You smile.  \"With you,\" you say.\n\nYou take the tank to the kitchen, unwrap it, and are amazed at how it comes back to you:  the packet of food, the tiny spoon, the removal of the lid, the ease and care with which you fill the tank with water from the faucet.\n\nYou know tomorrow there will be a few specks swimming around, just like you know that next you will take the person you love into the bedroom and make love, just like you know that in the morning their arms will make a bubble around you, protecting you from whatever is pressing upon you from the outside.\n\n\n\nEND.\n\n\n\n(live: 90s)[C:\\GAMES\\[[seamonky.exe|Init]]]",
+      "links": [
+        {
+          "text": "seamonky.exe",
+          "destination": {
+            "name": "Init",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "okay3",
+      "text": "You sigh, hold your hand to your forehead.  \"I know,\" you say, but you're flooded with an unexpected sadness.  \"Look, thanks for dinner.  But I think I'm going to go home.  I'll call you tomorrow, okay?\"\n\nYou know you're leaving the person you love standing in the middle of the room, dumbstruck, suddenly feeling very alone.  But you grab your jacket off the chair where you left it, open the apartment door, and force yourself to look at the person you love when you say goodbye.\n\nAn hour later, you're in bed and feeling very sorry for yourself and your stupid family and how that's made everything stupid and fucked up since then.  The phone rings, and it's the person you love.  You breathe and answer it.\n\n\"Can I come over?\" says the person you love.\n\nYou think about it for what seems like too long.\n\n\n\n[[\"Yeah, if you want.\"|okay4]]\n\n[[\"Not tonight.  I'm sorry.  But we'll talk about it in the morning.\"|okay5]] ",
+      "links": [
+        {
+          "text": "\"Yeah, if you want.\"",
+          "destination": {
+            "name": "okay4",
+            "pid": 48
+          }
+        },
+        {
+          "text": "\"Not tonight.  I'm sorry.  But we'll talk about it in the morning.\"",
+          "destination": {
+            "name": "okay5",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "okay2",
+      "text": "\"I'm ... I'm not sure.\"\n\nThe shoulders fall on the person you love while a breath escapes.  \"I wasn't trying to--you know I love you.\"\n\n\n\n[[You sigh, hold your hand to your forehead.  \"I know.\"|okay3]]\n\n[[And there it is:  a sudden and absolute firestorm of rage.  \"If this is love, you've got a fucking funny way of showing it.\"|bad3]]\n\n",
+      "links": [
+        {
+          "text": "You sigh, hold your hand to your forehead.  \"I know.\"",
+          "destination": {
+            "name": "okay3",
+            "pid": 46
+          }
+        },
+        {
+          "text": "And there it is:  a sudden and absolute firestorm of rage.  \"If this is love, you've got a fucking funny way of showing it.\"",
+          "destination": {
+            "name": "bad3",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "okay4",
+      "text": "\"Yeah, if you want,\" you say, and fifteen minutes later the person you love is in your bedroom.  You had left the door unlocked.\n\n\"I'm sorry,\" the person you love says quietly, lying down next to you, still in their clothes.\n\n\"I know,\" you say, and you offer a chaste kiss.  You turn over, and the two of you sleep facing away from each other, but your backs--you make sure of this--your backs are touching.\n\n\n\nEND.\n\n\n\n(live: 90s)[C:\\GAMES\\[[seamonky.exe|Init]]]",
+      "links": [
+        {
+          "text": "seamonky.exe",
+          "destination": {
+            "name": "Init",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "okay5",
+      "text": "\"Not tonight.  I'm sorry.  But we'll talk about it in the morning,\" you say.  You can feel the disappointment vibrate in the air, but there's not much more you can do about it tonight.\n\nYou walk into the bathroom, thinking you're going to brush your teeth.  But instead you turn the bathtub and the sink faucets on full force, just like you did as a child.  You can't fit in your apartment's paltry linen closet, so you withdraw a towel from it and sit on your bath mat.  Your wrap the towel gently around your body, over your head.  Everything--everything!--is swimming in softness, including the tears you didn't realize you were crying.\n\n\n\nEND.\n\n\n\n(live: 90s)[C:\\GAMES\\[[seamonky.exe|Init]]]",
+      "links": [
+        {
+          "text": "seamonky.exe",
+          "destination": {
+            "name": "Init",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "bad2",
+      "text": "\"A bunch of stupid shrimp.  What a great family!\" you say.\n\n\"No, it's not like that!  We're trying ...\", and the person you love trails off, a strange look in their eyes.  \"You know I love you.\"\n\n\n\n[[And there it is:  a sudden and absolute firestorm of rage.  \"If this is love, you've got a fucking funny way of showing it.\"|bad3]]\n\n[[You sigh, hold your hand to your forehead.  \"I know.\"|okay3]]",
+      "links": [
+        {
+          "text": "And there it is:  a sudden and absolute firestorm of rage.  \"If this is love, you've got a fucking funny way of showing it.\"",
+          "destination": {
+            "name": "bad3",
+            "pid": 51
+          }
+        },
+        {
+          "text": "You sigh, hold your hand to your forehead.  \"I know.\"",
+          "destination": {
+            "name": "okay3",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "bad3",
+      "text": "And there it is:  a sudden and absolute firestorm of rage.  \"If this is love, you've got a fucking funny way of showing it.  Do you think my family is some sort of joke?  That some fucking Sea-Monkeys could replace all the shittiness of everything?  That is the stupidest fucking thing I ever heard,\" you say, chopping the air with hand gestures, and now the person you used to love is just standing there like a simpering idiot.\n\n\"I--\"\n\n\"Shut up and get the fuck out of my life,\" you say to the person you used to love, and it takes everything to not pick up the chair that's next to you and throw it through a fucking wall.  You rip your coat off the hook where it's hung, and try to slam the apartment door so hard that it will fall off its hinges.\n\nYou drive too fast, get home, throw your coat as hard as you can against a chair.  Then you pick up the picture of you and the person you used to love that sits stupidly on your nightstand, open your bedroom window, and sail the picture frame outside, where it becomes a splat of broken glass somewhere below.\n\nSatisfied, you calm down a little.\n\nThere is a bottle of vodka in the freezer; you know that.  There is the bathroom's wooden door that would be perfect for your fists; you know that, too.\n\nAll of these people you thought you loved:  who are they?  \n\nNothing more than ghosts in your blood, you decide.\n\nAnd like pretty much everything else, you stopped believing in ghosts a long time ago.\n\n\n\nEND.\n\n\n\n(live: 90s)[C:\\GAMES\\[[seamonky.exe|Init]]]",
+      "links": [
+        {
+          "text": "seamonky.exe",
+          "destination": {
+            "name": "Init",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "news1",
+      "text": "(color: #00aa00)[When you come home from school that afternoon, your mother's eyes look red, like she's been crying.  But she won't say what's wrong.]",
+      "links": []
+    },
+    {
+      "pid": 53,
+      "name": "news2",
+      "text": "(color: #00aa00)[Your father doesn't have dinner with the family this night--again.  He says he has to work late--again.  \"He's always working late,\" you say to your mother.  Your mother takes a moment, squints to find you in focus, and raises her glass of water.  \"Yes,\" she says, half-smiles, then takes a drink.]",
+      "links": []
+    },
+    {
+      "pid": 54,
+      "name": "news3",
+      "text": "(color: #00aa00)[You wake up sometime in the night and think you hear laughter, which quickly transforms to an argument.  You can't make out the words, but muffled accusations stab the air.  Eventually, they stop.  You don't fall asleep for what seems like hours.]",
+      "links": []
+    },
+    {
+      "pid": 55,
+      "name": "news4",
+      "text": "(color: #00aa00)[When you get up for school that morning, you're surprised that it appears your father was sleeping on the couch.  He's already left for work.]",
+      "links": []
+    },
+    {
+      "pid": 56,
+      "name": "news5",
+      "text": "(color: #00aa00)[Empty wine bottles seem to be appearing on the kitchen counter with increasing frequency.]",
+      "links": []
+    },
+    {
+      "pid": 57,
+      "name": "news6",
+      "text": "(color: #00aa00)[Recently, your mother has been spending more time alone in the spare bedroom, doing jigsaw puzzles.]",
+      "links": []
+    },
+    {
+      "pid": 58,
+      "name": "news7",
+      "text": "(color: #00aa00)[One of your friends at school says his parents are getting a divorce.  \"They fight all the time,\" he says, \"and my dad says my mom's been cheating on him.\"  You're not quite sure what that means, but your friend seems sad.  You ask your mother about it while she's making dinner.  She doesn't want to talk about it.]",
+      "links": []
+    },
+    {
+      "pid": 59,
+      "name": "news8",
+      "text": "(color: #00aa00)[Your father has been in the basement a lot lately, trying to build a chair.  \"It's something I've always wanted to do in my life,\" he tells you once.  But whenever you're down there, you don't see anything that looks like a chair being built.]",
+      "links": []
+    },
+    {
+      "pid": 60,
+      "name": "news9",
+      "text": "(color: #00aa00)[You answer the phone on the fourth ring.  A man's voice:  \"Is your mother there?\"  You ask who's calling.  \"Nevermind,\" the voice says, and hangs up.]",
+      "links": []
+    },
+    {
+      "pid": 61,
+      "name": "news10",
+      "text": "(color: #00aa00)[You come home from school to a truck, an apparently leaky toilet, a plumber.  Your father is standing over him and scowls when you walk into the bathroom.  \"What's going on?\" you ask.  \"Maybe this is the year the whole house breaks,\" he says.  \"Now go to your room and do your homework.\"]",
+      "links": []
+    },
+    {
+      "pid": 62,
+      "name": "news11",
+      "text": "(color: #00aa00)[Three days ago, you brought home your report card, which included a D in social studies.  You left it on the counter, not immediately handing it to your mother, like you usually do.  It's no longer there, yet neither of your parents has talked to you about it.]",
+      "links": []
+    },
+    {
+      "pid": 63,
+      "name": "news12",
+      "text": "(color: #00aa00)[As your mother tucks you into bed (your father is out, presumably working), she gives you a fifty dollar bill.  You're delighted but confused.  \"It's just because I love you so much,\" she says.  She kisses you on the forehead, her eyes brimming, turns out the light, and leaves your room.]",
+      "links": []
+    },
+    {
+      "pid": 64,
+      "name": "news13",
+      "text": "(color: #00aa00)[You drop your backpack by the front door and walk into the kitchen, where the floor is covered in shards of what used to be a crystal vase.  No one is nearby, and only your father's car is in the garage.  You find him upstairs, sitting at his desk where he is apparently paying bills.  \"I thought I heard something,\" he says when asked about the vase, then returns to looking at his checkbook.  You clean up the kitchen by yourself.]",
+      "links": []
+    },
+    {
+      "pid": 65,
+      "name": "news14",
+      "text": "(color: #00aa00)[Your mother was supposed to help you sew a pillow for a prop in a class play, but tonight she is unexpectedly out with one of her friends.  You stare at the bag of stuffing, the foreign sewing machine, and decide the pillow is unnecessary.]",
+      "links": []
+    },
+    {
+      "pid": 66,
+      "name": "news15",
+      "text": "(color: #00aa00)[You come home to an empty house; not terribly unusual.  There's no note from either of your parents, which is more unusual.  Rather than begin homework, you decide to watch TV.  A half hour passes.  Then another.  You gradually become worried, and start to look out the front window during commercials. Another hour drags by, and soon all you can do is sit and stare out the window.  Mercifully--just before you are about to call your grandparents who live twenty miles away--your $parent2's car comes into view, then into your driveway.  \"Where were you!\" you practically scream when $parent2pronoun enters the house.]",
+      "links": []
+    },
+    {
+      "pid": 67,
+      "name": "news16",
+      "text": "(color: #00aa00)[On the kitchen counter, there's a piece of paper crumpled up next to the Sea-Monkey tank.  You open it up, and it appears to be a credit card statement.  The number under \"Amount Due\" is more than nine thousand dollars.  You hear your father coming downstairs, so you return the paper to approximately how it was and exit the kitchen before he sees you.]",
+      "links": []
+    },
+    {
+      "pid": 68,
+      "name": "news17",
+      "text": "(color: #00aa00)[You wake to your mother screaming.  It is two in the morning, and there is a mouse.  There is a mouse in their room, and she is screaming.  You can hear your father wildly rearranging furniture.  You walk to the doorway of the room, and your mother is standing on the bed, clutching her nightgown above her knees like in a cartoon.  You suddenly see a furry bullet met with your father's dress shoe, again, then again, then again.  The blood is like a rose petal on the carpet.  \"There,\" he says, looking at the ichor on the bottom of his shoe, \"it's dead.\"  He suddenly smashes the dead mouse one more time, as hard as possible.  He looks at you, then your mother.  He says, \"Is that what you wanted?\"]",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "news18",
+      "text": "(color: #00aa00)[You get the mail from the box and walk in your house.  Among the junk mail is a letter to your mother.  She immediately opens it.  What looks like a photograph falls out, which she quickly retrieves before you can see it.  \"What's the letter?\" you ask.  \"Just an old friend,\" she says, and shoves the letter and photo deep within her purse.]",
+      "links": []
+    },
+    {
+      "pid": 70,
+      "name": "news19",
+      "text": "(color: #00aa00)[Your chore is to take out the trash.  As you collect the garbage from cans in various rooms, you notice the one in the bathroom has lottery tickets buried at the bottom, all ripped in half.  You got one (unlucky) ticket for your birthday this year, but neither of your parents plays the lottery, as far as you know.]",
+      "links": []
+    },
+    {
+      "pid": 71,
+      "name": "news20",
+      "text": "(color: #00aa00)[Your father has dragged you to the mall to assist in choosing a gold necklace for your mother, even though it isn't near her birthday.  You gnaw on an oversized jawbreaker he bought you from the nearby candy store while he argues with a salesman.  Apparently the salesman would like to help your father out, but can't.  Your father finally leaves without buying anything, tugging the collar of your jacket, commanding you to follow.]",
+      "links": []
+    },
+    {
+      "pid": 72,
+      "name": "news21",
+      "text": "(color: #00aa00)[Your mother has taken you to see your grandparents.  She and your grandmother stay upstairs while you and your grandfather go downstairs to see his model train layout.  He's far more interested in it than you are.  You begin to head back upstairs, but your grandfather grabs your sleeve.  \"Your mother was a good kid.  You are, too,\" he says.  \"Don't forget that.\"]",
+      "links": []
+    },
+    {
+      "pid": 73,
+      "name": "news22",
+      "text": "(color: #00aa00)[It is gym class.  That is a fact.  You are playing kickball.  That is also a fact.  You don\u2019t particularly like kickball:  you rarely reach first base, the red rubber beaning you a little harder than you think is necessary.\n\nToday the catcher is a boy you don\u2019t like very much.  He\u2019s trying to psych you out.  He says his parents saw your mother in a bar.  It was four in the afternoon.  They were meeting friends, but your mother was by herself.  She was talking weird.  When she stood up, she was holding out her arms, and, still crouched down in the position of a catcher, he begins to imitate her: he flails, screwing his face into a woozy expression.\n\nLater, the principal says, \"I just want the facts,\" like he\u2019s a cop or something.  It was gym class.  The boy was making fun of your mother.  You kicked him in the face and blood sprung from his nose in thick streams.  \"Are those the facts?\" the principal says.  The boy, still with dark-red cotton in one of his nostrils, nods yes.  You look at him, then the principal.  \"I don\u2019t know,\" you say, collapsing into a pool of tears.]",
+      "links": []
+    },
+    {
+      "pid": 74,
+      "name": "news23",
+      "text": "(color: #00aa00)[Your father\u2019s sister, Aunt Lori, has come to visit for the week.  Aunt Lori smokes many cigarettes and has a deep, raspy laugh you find endearing.  Aunt Lori picks you up from school.  Aunt Lori takes you to the movies and out to dinner.  You feel like you hardly see your parents that entire week, sitting with Aunt Lori on the couch, watching TV.  On the fifth day, Aunt Lori drives you straight home from school.  Your father is waiting for you, standing in the doorway, Aunt Lori\u2019s suitcase next to him.  \"I\u2019ve been told I\u2019m going home early,\" she says.  She takes the suitcase, gives your father a reproachful look, slams the suitcase in the trunk, and leaves without saying goodbye.]",
+      "links": []
+    },
+    {
+      "pid": 75,
+      "name": "news24",
+      "text": "(color: #00aa00)[You spend a lot of time in school doodling.  You draw many things, but often return (without really thinking about it) to the Sea-Monkeys.  Sometimes you draw them as a royal family, like they were drawn on the box when you first got them.  Sometimes they have a castle, and the castle has catapults.  Sometimes one of them rides a royal unicorn.  Sometimes you draw the king and queen Sea-Monkeys sitting on tall thrones.  Sometimes you draw a baby Sea-Monkey flailing in the moat.  Sometimes the baby Sea-Monkey drives a sports car, the castle just a lump in the distance.]",
+      "links": []
+    },
+    {
+      "pid": 76,
+      "name": "news25",
+      "text": "(color: #00aa00)[Over the weekend, your father takes you for a drive without telling you where you\u2019re going.  You wind up in a neighborhood you\u2019ve never been where the houses are nicer and large trees loom over the street.  Your father drives very slowly and almost stops in front of one particular house, brick with copper gutters.  Suddenly, he speeds away.  \"Where did you two go?\" your mother asks upon you return.  \"Oh, just to the hardware store,\" your father says, and then looking at you, says, \"Right?\"  You don\u2019t know why you\u2019re being asked to lie.  But you do anyway.]",
+      "links": []
+    },
+    {
+      "pid": 77,
+      "name": "news26",
+      "text": "(color: #00aa00)[Your father\u2019s mother, Grandma Betsy, has been very sick.  He spends some evenings with her.  Between that and working late, you haven\u2019t seen your father in a week, which you slowly realize is fine by you.  On Sunday, you\u2019re at a cousin\u2019s birthday party, and so is Grandma Betsy.  She looks normal.  You ask her how she\u2019s doing, and she launches into a story about a defective sweater she bought at a department store a few days ago.]",
+      "links": []
+    },
+    {
+      "pid": 78,
+      "name": "news27",
+      "text": "(color: #00aa00)[In school, your class is reading a book about a family and their dog.  The teacher has warned you:  the dog will die early on.  It might be upsetting.  So, during silent reading time, you reach the part where the dog dies.  You are overcome with a deep sadness, and put the book away, even though there are still fifteen minutes left.  Your teacher notices this, and she beckons you to her desk.  She asks if you\u2019re sad the dog died, if you\u2019re okay.  You nod yes.  But it\u2019s not the dog at all.  It\u2019s how normal the family seemed all along.]",
+      "links": []
+    },
+    {
+      "pid": 79,
+      "name": "news28",
+      "text": "(color: #00aa00)[A friend at school asks why you never invite anyone over to your house.  You change the subject.]",
+      "links": []
+    },
+    {
+      "pid": 80,
+      "name": "news29",
+      "text": "(color: #00aa00)[It\u2019s just a game of Monopoly, no more.  Most of the properties have been taken, but you have Boardwalk and no one\u2019s yet landed on Park Place.  Your family is having genuine fun.  But your father has two of the orange properties, and your mother has one.  He begins suggesting they should trade.  He\u2019ll give her two railroads for the orange one--Tennessee Avenue--he's missing.  He begins gently, but becomes increasingly aggressive.  Your mother won\u2019t do it.  She simply won\u2019t, and she says so with a hint of smug defiance.  The tension hangs over the room like a blade.  You land on Park Place, mortgage everything else, build hotels, and thankfully both of your parents land on them within a few minutes of each other.\n\nAnd you\u2019re not happy that you won.  You\u2019re happy that neither of your parents did.]",
+      "links": []
+    },
+    {
+      "pid": 81,
+      "name": "news30",
+      "text": "(color: #00aa00)[You have to give a presentation at school about something that\u2019s important to you.  You tell your parents this at dinner, chicken and rice, and say you\u2019re probably going to talk about your Sea-Monkeys.  \"That\u2019s a dumb idea,\" your father says, and when you look over to your mother for support, she doesn\u2019t correct him.]",
+      "links": []
+    },
+    {
+      "pid": 82,
+      "name": "news31",
+      "text": "(color: #00aa00)[Your mother can\u2019t find her lipstick.  \"I had it right here,\" she says.  \"It\u2019s my favorite shade,\" she says.  It begins as simple as that, yet somehow ends with both you and her crying.]",
+      "links": []
+    },
+    {
+      "pid": 83,
+      "name": "news32",
+      "text": "(color: #00aa00)[When you get home after school, your father is working, literally locked in his bedroom, at the old desk he crammed in there.  You\u2019re hungry, so you open the cupboard for a snack.  A five-pound bag of flour tips off the top shelf, and explodes in a white lump at your feet.  The white dust that coats the cabinets makes it look like an angel sneezed.  You\u2019re certain you\u2019ll get in trouble, but aren\u2019t sure what to do.  A broom won\u2019t clean this up.\n\nYou decide it\u2019s best to be straightforward.  You take off your shoes and socks to leave the flour behind, march yourself up to the door behind which your father works.  You knock, explain, and he follows you to the kitchen.  \"I don\u2019t know how to clean it up,\" you say, and then quickly realize he is seething.  He kicks the pile of flour and it explodes into a white cloud on your clothes, in your hair, on the counters, on the wall.\n\n\"Guess you\u2019ll have to figure it out,\" he says, and returns to his room, leaving dusty footprints behind him.]",
+      "links": []
+    },
+    {
+      "pid": 84,
+      "name": "news33",
+      "text": "(color: #00aa00)[Tonight, your mother is out.  You\u2019re not quite clear where.  Your father has tried to make dinner, some form of burned spaghetti.  Earlier you showed him an art project you had done at school, a crazy rainbowed forest in watercolors, and you love it.  But as you wince at the first bite, choke it down, then reach for your milk, he stands up.  He moves to the refrigerator where you carefully hung your painting with magnets at the corners.  He pulls it off so hard the magnets fly.  \"This?  You\u2019re proud of this?\" he says, and you don\u2019t know what\u2019s happening but can already feel the tears welling.  \"This is the worst artwork I\u2019ve ever seen,\" he says, holds it by the top two corners, and slowly, slowly rips it down the middle.  \"It\u2019s absolutely terrible,\" he says lowly, and stares.  And stares.  You try to stare back, but instead run to your room, slam the door, and try to shove your dresser as much as you can in front of it.  Many half-breaths and hours later, you fall asleep underneath your bed, covered entirely by blankets.]",
+      "links": []
+    },
+    {
+      "pid": 85,
+      "name": "news34",
+      "text": "(color: #00aa00)[HAPPY BIRTHDAY, one of your parents wrote inside an otherwise blank card with a picture of a cardinal on the front.  They give the card to you at an otherwise unremarkable Thursday dinner.  Inside the card is twenty-two dollars of wrinkled bills.]",
+      "links": []
+    },
+    {
+      "pid": 86,
+      "name": "news35",
+      "text": "(color: #00aa00)[It is a windy day, the kind of day when you\u2019re reminded that you\u2019re just a fish swimming in a heaving ocean of air.  On the bus ride home from school, you see swirling detritus:  a page from a newspaper, a plastic bag, twigs and leaves.  When you get off the bus, you see the front door of your house is wide open.  Your parents\u2019 cars are gone.  You enter the house hesitantly, drop your backpack.  You don\u2019t close the door.  \"Hello?\" you say, with no response.  A great gust shudders the windows.  \"Hello?\" you say again, and your name is faintly called back.  You go upstairs and find your $parent1 slowly rocking in the old chair that house had, the one with the caned seat and back.  It appears that $parent1pronoun is doing nothing more than sitting.  You explain about the open door.  \"Must be a windy day,\" your $parent1 says.  Then $parent1pronoun resumes sitting.]",
+      "links": []
+    },
+    {
+      "pid": 87,
+      "name": "news36",
+      "text": "(color: #00aa00)[On the counter where your parents usually leave notes for each other--\"Back at 7,\" \"Get milk\"--there instead is a small square napkin, the kind you might get under a glass of water at a restaurant.  In green ink, the words underlined, handwriting unknown, it declares: NEVER AGAIN.]",
+      "links": []
+    },
+    {
+      "pid": 88,
+      "name": "news37",
+      "text": "(color: #00aa00)[You wake to a riot of gray light in your room.  Full moon.  You rustle around for a while, but decide to get up, maybe get a drink of water.  You walk past your parents\u2019 room and know that, based on the snoring, at least your father is in there.  Through a window, you see a world fantastic with moonlight.  You unlock the front door--you\u2019re not really sure why--and go outside.  It is much warmer than it had been this afternoon.  You sit cross-legged in your pajamas on the concrete outside the door.  You can guess what your parents might say were they to find you--what are you doing, it\u2019s after midnight, it\u2019s not safe--but those thoughts are erased by the everywhere abundance of silver.  You\u2019d like to stay up.  You\u2019d like to stay up with the night for a while.]",
+      "links": []
+    },
+    {
+      "pid": 89,
+      "name": "news38",
+      "text": "(color: #00aa00)[There was a cocktail party or something, judging from the way your parents are dressed up:  your father in a pinstriped suit, your mother in a flowy dress.  But someone forgot to call the babysitter.  There is a long, baroque argument between your parents about how the other was supposed to call the babysitter.  You know this is not the time to interject that you think you could handle being alone for a few hours and put yourself to bed.  But you do just that, with your parents still in their formal clothes, watching TV in separate rooms.]",
+      "links": []
+    },
+    {
+      "pid": 90,
+      "name": "news39",
+      "text": "(color: #00aa00)[One of your friends invites you over to dinner, and you happily accept.  You play for a while, talk about school, and eat pasta with a strange sauce that you find delicious.  At 7 p.m., you wait for your $parent2 to show up.  You talked about this last week, and then again last night.  \"Yes, pick you up at 7, I get it,\" your $parent2 said.  7:00 passes.  7:30, 7:45, 8:00.  Your friend\u2019s $parent1 volunteers to take you home, but you\u2019re going to wait, thank you very much, you say in what you know is a rude tone.  8:15.  Finally, 8:27, your $parent2 pulls up in $parent2possessive stupid blue car.  You thank your friend, the family, then exit the house, almost elated with your anger.  After giving your friend's family an exaggerated final wave goodbye, you get in the car, casual.  \"Nice of you to show up,\" you say icily, knowing that for once there\u2019s nothing your $parent2 can do about it.]",
+      "links": []
+    },
+    {
+      "pid": 91,
+      "name": "news40",
+      "text": "(color: #00aa00)[You want to go to a baseball game.  There\u2019s a minor-league team that plays just a few minutes away from your house.  You\u2019re told that it\u2019s expensive, that the team always loses.  You\u2019re not quite sure why, but you play this as a guilt trip with your parents:  \"You never take me anywhere!  We never do anything fun!\"  Finally, your $parent2 relents.  You will go to a game this weekend.  You immediately know that your $parent1 will not be involved.\n\nThe two of you get seats at the top of the small stadium.  You\u2019re happy to be out in the sun, and your $parent2 seems to be having a good time.  Sometime during the third inning, $parent2pronoun says, \"I think I know someone over there,\" pointing indistinctly across the stadium.  Your $parent2 disappears.  For the next four innings, you are left alone, sweltering in the sun, and then your $parent2 collects you and you leave because the home team is losing 10-2.]",
+      "links": []
+    },
+    {
+      "pid": 92,
+      "name": "news41",
+      "text": "(color: #00aa00)[The Sea-Monkeys are missing from the counter where they belong.  They are not on top of the refrigerator, where your mother sometimes puts the tank when she is cleaning the kitchen.  They are not in the linen closet, where your father put them once in what he claimed was a joke.  No one is home to ask.  You begin to search logically--who would have moved them and why``?``--and quickly  become panicked.  Finally, you see them outside, next to the trash can, tank still upright and intact.  The garbagemen will be by in a few hours.  You pick the tank up gingerly, check on the Sea Monkeys--still there--and place it back on the counter where it belongs.   You write a large note:  DO NOT MOVE!!!.  By day\u2019s end, neither parent has commented on the tank\u2019s displacement, though the note has been thrown in the trash.]",
+      "links": []
+    },
+    {
+      "pid": 93,
+      "name": "news42",
+      "text": "(color: #00aa00)[It is the weekend, and your father is watching some sort of sports on the TV.  There is yelling, and then there is more yelling, and then there is more yelling.  Your mother is in another room, apparently sewing as she told you, though the door is closed.  You know it\u2019s just best to stay in your room and read or play by yourself.  Later, you come downstairs to watch TV, as you told your parents you would.  There\u2019s a huge crack in the screen that wasn\u2019t there before.]",
+      "links": []
+    },
+    {
+      "pid": 94,
+      "name": "news43",
+      "text": "(color: #00aa00)[\"When you wish upon a star,\" your mother sings to you as she tucks you in.  It was the song she used to sing when you were three, four maybe, and then you can\u2019t remember when she stopped singing.  But she\u2019s singing now, and it almost makes you want to cry.  And yet:  the words are wrong, somehow, a mumbled confusion or forgetting.  Then she starts getting upset, wondering why they aren\u2019t coming out right.  Your father walks in, takes your mother\u2019s wrist in an uncharacteristically delicate gesture, and leads her out of your room.  He sighs.  \"Good night, kid,\" he says.]",
+      "links": []
+    },
+    {
+      "pid": 95,
+      "name": "news44",
+      "text": "(color: #00aa00)[You hate that you\u2019re still scared of thunderstorms, but you are.  Kids your age shouldn\u2019t be, you think, until a flash of white teeth and a lion\u2019s roar sets you whimpering.  You used to nestle between your parents in their bed on nights like this.  You know you\u2019re too old for that, too, but you get up anyway.  You mumble as you enter their room, but get no response.  You slide onto the bed and realize their room is barren.  You get up again.  You can see the light from under the door of your father\u2019s office.  Downstairs, the TV is showing a black-and-white movie.  Your mother is snoring loudly in the easy chair, a glass of--iced tea``?``--melting beside her on the floor.]",
+      "links": []
+    },
+    {
+      "pid": 96,
+      "name": "news45",
+      "text": "(color: #00aa00)[It\u2019s just a bad dream, you tell yourself.  Some pop-culture mishmash of zombies and fire and dragons.  You watched too much TV tonight.  It\u2019s just a silly nightmare, you tell yourself, and you tell yourself this because you know neither of your parents will.]",
+      "links": []
+    },
+    {
+      "pid": 97,
+      "name": "news46",
+      "text": "(color: #00aa00)[After you flush, the water in the toilet won\u2019t stop running.  It just swirls and swirls down the bowl like a sad fountain.  Your parents have been arguing about money lately, and last time it was about the water bill.  \"It\u2019s like we\u2019re dumping it straight down the goddamn drain,\" your father said, which has since meant your mother does the dishes by hand and the dishwasher is empty as a wishing well.  You're determined that you can fix this without getting your parents involved.  You carefully lift the lid off the toilet (you\u2019ve seen your father do this) and then, surprised by its heft, set it down on the bath mat because you don\u2019t want it shatter (you\u2019ve seen your father do that, too).\n\nYou look inside the tank at some water and a few unidentifiable parts.  You\u2019re surprised to find a small glass bottle about the size and shape of a small book in the tank.  You take it out--cool and slippery--and it appears to be filled with more water.  There is no label.  You have no idea why it would be there, so you put it back--the water has since stopped running--replace the lid on the toilet, and try not to think about it that night in bed.]",
+      "links": []
+    },
+    {
+      "pid": 98,
+      "name": "news47",
+      "text": "(color: #00aa00)[\"What I Did on My Summer Vacation\" is a terrible writing assignment.  You know it, and you\u2019re pretty sure your teacher knows it too.  You mostly watched TV, played in the park, and got scraped up pretty bad in July when you fell off your bike going too fast down a hill.  \"What did I do on my summer vacation?\" you ask your parents at dinner.  \"Who did you do on your summer vacation?\" your $parent1 says like it\u2019s a brittle joke, staring at your $parent2.  \"Yes, who,\" $parent2pronoun says, staring right back.]",
+      "links": []
+    },
+    {
+      "pid": 99,
+      "name": "news48",
+      "text": "(color: #00aa00)[When you ask your father to help you with a diaroma you have to make, something about France, he says he has to work.  When you ask your father to help you fix the chain that slipped off your bike, he says he has to work.  When you ask your father to help you bake biscuits--something you learned about in school--he says that he has to work.  And that baking is stupid.  \"Why do you always work so much?\" you say, surprised by your volume.  He squints at you.  \"Because it keeps me away from here,\" he says genteelly, like one of those characters in those stupid old movies that he likes to watch.]",
+      "links": []
+    },
+    {
+      "pid": 100,
+      "name": "news49",
+      "text": "(color: #00aa00)[It is six o\u2019clock in the evening.  Your mother is already in bed.]",
+      "links": []
+    },
+    {
+      "pid": 101,
+      "name": "news50",
+      "text": "(color: #00aa00)[\u201cBe honest,\u201d your $parent2 says to you as your brush your teeth in the bathroom.  \u201cYou like your $parent1 better than me, don\u2019t you?\u201d]",
+      "links": []
+    },
+    {
+      "pid": 102,
+      "name": "news0",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 103,
+      "name": "About",
+      "text": "**Content Warning**\nThis story contains depictions of emotional abuse and alcoholism, as well as occasional strong language.\n\n**Playing**\nThis story is intended to be read in one sitting and will take about forty-five minutes to complete.  There are several definitive endings, each concluded with \"END.\"  If you haven't yet reached one such passage, try playing the simulation again.  There are more Sea-Monkeys to care for.\n\nIf you need to take a break from reading but would like to return to where you left off, please do not close your browser window.  Doing so will erase all progress in the story.\n\n**Trademark**\nSea-Monkeys(R) really is a registered trademark of Transcience LLC, and as the title suggests, this story is not sponsored nor endorsed by Transcience in any way.\n\nBut the ownership of the Sea-Monkey brand hasn't always been as clear.  For a fascinating history, please see \"The Battle over the Sea-Monkey Fortune\" by Jack Hitt (//The New York Times//, April 15, 2016).\n\n**Beta Testers**\nI am very much indebted to the following people who read and critiqued this story:  Austin Kaus, Laura Lemke, Abby Markwyn, mathbrush, Andrew Wright Milam, and Bill Schur.\n\n**Contact**\nI welcome your thoughts, comments, and questions at bjbest60 at gmail dot com or @bjbest60 on Twitter.\n==>\n\n[[(O)|seamonky.exe]]K",
+      "links": [
+        {
+          "text": "(O)",
+          "destination": {
+            "name": "seamonky.exe",
+            "pid": 3
+          }
+        }
+      ]
+    }
+  ]
+}

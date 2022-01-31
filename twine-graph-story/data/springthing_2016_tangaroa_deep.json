@@ -1,0 +1,2763 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "shark swim by",
+      "text": "Your spotlight shines steadily forward as the shadow skates around your field of vision, then vanishes into the darkness.\\n\\n<div class=\"j\">  \u2026.what do you think that was, Doc? New species?</div>\\n\\n<div class=\"y\">\u2026I don't know, Jackie. Keep an eye out on the surface though, Whitetips like to follow boats, so maybe this one\u2026\"</div>\\n\\n<div class=\"j\">  Sure. Try convincing yourself of that first, Doc.</div>\\n\\n<div class=\"l\">Log: Oceanic White-Tip Shark?\\n<em>Carcharhinus longimanus?</em>\\nEstimated size: minimum 5m</div>\\n\\n[[Ascend|twitosuntrans][$destination = \"sunlight 2\"]]\\n[[Left|twilight 1]][[Right|twilight 3]]\\n<<if visited(\"twitomid\")>>[[Descend|twitomidtrans][$destination = \"mid 2\"]]<<else>>[[Descend|twitomid][$destination = \"mid 2\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "twitosuntrans",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "twilight 1",
+            "pid": 45
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "twilight 3",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomidtrans",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomid",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "mute",
+      "text": "With a push of a button, you are alone. Miles away from the surface, from light, from air.\\n\\nAt least, that's what you thought as you entered the temple. You thought it'd be dark and deep as the rest of the sea has been, but once again, the world surprises you.\\n\\nBecause when you look up, you see stars. Twinkling, glittering lights set into the roof of the temple. They are almost enough to see by, as if you were no longer underwater, but instead engulfed in a welcoming night.\\n\\nThrough the haze of water and darkness, you can see an altar in the front of the room, decorated with glowing blue flowers (anemones? They're like none you've seen before).\\n\\nAnd beyond that, a black even your spotlight doesn't penetrate.\\n\\n[[Return to the Surface.|leave]]\\n[[Enter the Darkness.|dark]]",
+      "links": [
+        {
+          "text": "Return to the Surface.",
+          "destination": {
+            "name": "leave",
+            "pid": 39
+          }
+        },
+        {
+          "text": "Enter the Darkness.",
+          "destination": {
+            "name": "dark",
+            "pid": 124
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "entryway",
+      "text": "The sea floor suddenly gives way to a harsh cliffside, ragged and cutting. You steer the ship away from the sharp edges, keeping an eye on the darkness below.\\n\\n<div class=\"j\">  This was supposed to be the bottom. Is there something wrong with our equipment?</div>\\n\\n<div class=\"y\">\"There has to be. I mean, that's a trench.\"</div>\\n\\n<div class=\"j\">  But it can't be!</div>\\n\\n[[I wonder how deep it goes.|deep]][[No use denying the facts.|facts]]",
+      "links": [
+        {
+          "text": "I wonder how deep it goes.",
+          "destination": {
+            "name": "deep",
+            "pid": 111
+          }
+        },
+        {
+          "text": "No use denying the facts.",
+          "destination": {
+            "name": "facts",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Twi to Mid",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n\\n.passage {\\n    background: #305865; /* For browsers that do not support gradients */\\n    background: -webkit-linear-gradient(#305865, #041a25); /* For Safari 5.1 to 6.0 */\\n    background: -o-linear-gradient(#305865, #041a25); /* For Opera 11.1 to 12.0 */\\n    background: -moz-linear-gradient(#305865, #041a25); /* For Firefox 3.6 to 15 */\\n    background: linear-gradient(#305865, #041a25); /* Standard syntax */\\n}\\n\\nbody {\\nbackground-color:#041a25;\\n}",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "rlyeh",
+      "text": "<div class=\"y\">\"I think we found R'lyeh.\"</div>\\n\\n<div class=\"j\">  That's just a story by some racist crackpot. It's probably just some naturally occuri-</div>\\n\\nHer words die out as your spotlight catches on an honest-to-god building. Its domed roof fades into the darkness, held up by barely eroded columns. A delicate molding decorates the edges of a wide entryway, flowing like tides or tentacles.\\n\\nIf you aim your light just so, you can see more shapes, tall and ominous rising behind the temple.\\n\\nThe entryway is more than wide enough to fit your sub through.\\n\\n[[Return to the Surface.|leave]]\\n[[Approach the Temple.|temple]][[Look behind the Temple.|behind]]",
+      "links": [
+        {
+          "text": "Return to the Surface.",
+          "destination": {
+            "name": "leave",
+            "pid": 39
+          }
+        },
+        {
+          "text": "Approach the Temple.",
+          "destination": {
+            "name": "temple",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Look behind the Temple.",
+          "destination": {
+            "name": "behind",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "AbysstoSun",
+      "text": ".passage {\\n    background: #61aba8; /* For browsers that do not support gradients */\\n    background: -webkit-linear-gradient(black, #61aba8); /* For Safari 5.1 to 6.0 */\\n    background: -o-linear-gradient(black, #61aba8); /* For Opera 11.1 to 12.0 */\\n    background: -moz-linear-gradient(black, #61aba8); /* For Firefox 3.6 to 15 */\\n    background: linear-gradient(black, #61aba8); /* Standard syntax */\\n}\\n\\nbody {\\nbackground-color:#61aba8;\\n}",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "facts",
+      "text": "<div class=\"y\">\"No use denying the facts.\"</div>\\n\\n<div class=\"j\">  Still, this isn't part of the plan, Doc.</div>\\n\\n<div class=\"y\">\"Come on, Jackie. For science?</div>\\n\\n<div class=\"j\">  \u2026well, if it's for science. Still, you could always come back up.</div>\\n\\n[[Back to the surface|top end]]\\n[[Descend|trench 2]]",
+      "links": [
+        {
+          "text": "Back to the surface",
+          "destination": {
+            "name": "top end",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "trench 2",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "fine",
+      "text": "<div class=\"y\">\"I'm here. Everything's fine.\"</div>\\n\\nYour voice shakes. It sounds odd inside the tiny cockpit, as if you'd never heard it before.\\n\\n<div class=\"j\">  Good. You just went all quiet for a while. Did you see something?</div>\\n\\n<div class=\"y\">\"No. I didn't see anything\u2026\"</div>\\n\\nYou don't know if you wish you had.\\n\\n<div class=\"l\">Log: ???\\n<em>???</em>\\nEstimated size: Big</div>\\n\\n[[Ascend|midtotwitrans][$destination = \"twilight 1\"]]\\n[[Left|mid 5]][[Right|mid 2]]\\n<<if visited(\"midtoabyss\")>>[[Descend|midtoabysstrans][$destination = \"abyss 1\"]]<<else>>[[Descend|midtoabyss][$destination = \"abyss 1\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "midtotwitrans",
+            "pid": 129
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "mid 5",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "mid 2",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabysstrans",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabyss",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "trench 3 louder",
+      "text": "<<set $air to 6>>The song only gets louder now, coming from deep below you. You find yourself humming, as if you were familiar with the tune.\\n\\nThe buzz of the radio shows that Jackie is humming as well.\\n\\nYou look at your instruments and pause.\\n\\n<div class=\"l\">Depth: 11,500 m</div>\\n\\nThat's not possible. The lowest point on earth is Challenger Deep, at 10,916 meters. You can't be deeper.\\n\\n[[Ask Jackie if its an error.|error]] [[Celebrate your discovery.|celebrate]]",
+      "links": [
+        {
+          "text": "Ask Jackie if its an error.",
+          "destination": {
+            "name": "error",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Celebrate your discovery.",
+          "destination": {
+            "name": "celebrate",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "coward end 2",
+      "text": "You float your way back to the top, and break the surface.\\n\\nYou see the sun again, as the crew rush over and help you out of the sub. Your legs are cramped in a way you hadn't even noticed. Jackie is frowning slightly.\\n\\n<div class=\"j\">  Bit of a short dive, no?</div>\\n\\nYou shrug.\\n\\n<div class=\"y\">\"It was getting a little dangerous.\"</div>\\n\\n<div class=\"j\">  Yeah, I suppose... We'll just try again next time.</div>\\n\\nYou nod, and can't shake the question.\\n\\n<b>Could you have gone deeper?</b>\\n\\n[[The End|credits]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "credits",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "StoryTitle",
+      "text": "Tangaroa Deep",
+      "links": []
+    },
+    {
+      "pid": 12,
+      "name": "surface end 2",
+      "text": "You float your way back to the top, and break the surface.\\n\\nYou see the sun again, as the crew rush over and help you out of the sub. Your legs are cramped in a way you hadn't even noticed. Jackie is grinning from ear to ear.\\n\\n<div class=\"j\">  That was a great dive, Doc.</div>\\n\\nYou grin back, taking a long swig of water.\\n\\n<div class=\"y\">\"It was. Did you get all the data you wanted?\"</div>\\n\\n<div class=\"j\">  Oh yeah. We'll be drowning in it. Pun intended.</div>\\n\\nYou smile at the joke but wonder. \\n\\n<b>Could you have gone deeper?</b>\\n\\n[[The End|credits]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "credits",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "dark gallery",
+      "text": "<h3>Real Creatures You Found</h3>\\n\\n<<nobr>><div class=\"responsive\"><div class=\"img\"><img src=\"deepimages/whitetip.jpg\" alt=\"White-Tip\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Oceanic White-Tip Shark \\n<br/><em>Carcharhinus longimanus</em></div>\\n</div></div>\\n\\n<<if $jelly>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/lionsmane.jpg\" alt=\"Lion's Mane Jellyfish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Lion\u2019s Mane Jellyfish \\n<br/><em>Cyanea capillata</em></div>\\n</div></div><<endif>>\\n\\n<<if $sperm>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/spermwhale.jpg\" alt=\"Sperm Whale\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Sperm Whale \\n<br/><em>Physeter macrocephalus</em></div>\\n</div></div><<endif>>\\n\\n<<if $snake>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/snake.jpeg\" alt=\"Sea Snake\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Yellow-Bellied Sea Snake\\n<br/><em>Pelamis platura</em></div>\\n</div></div><<endif>>\\n\\n\\n<<if $sunfish>><div class=\"responsive\">\\n<div class=\"img\"><img src=\"deepimages/sunfish.jpg\" alt=\"Ocean Sunfish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Ocean Sunfish\\n<br/><em>Mola Mola</em></div>\\n</div></div><<endif>>\\n\\n<<if $cuttlefish>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/cuttlefish.jpg\" alt=\"Cuttlefish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Unknown Cuttlefish \\n<br/><em>Sepiella ???</em></div>\\n</div></div><<endif>>\\n\\n<<if $frilled>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/frilled.jpg\" alt=\"Frilled Shark\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Frilled Shark \\n<br/><em>Chlamydoselachus anguineus</em></div>\\n</div></div><<endif>>\\n\\n<<if $angler>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/anglerfish.jpg\" alt=\"Anglerfish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Anglerfish\\n<br/><em>Melanocetus johnsonii</em></div>\\n</div></div><<endif>>\\n\\n<<if $giant>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/giant.jpg\" alt=\"Giant Squid\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Giant Squid\\n<br/><em>Architeuthis dux</em></div>\\n</div></div><<endif>>\\n\\n<<if $colossal>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/colossal.jpg\" alt=\"Colossal Squid\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Colossal Squid\\n<br/><em>Mesonychoteuthis hamiltoni</em></div>\\n</div></div><<endif>>\\n\\n<<if $megalodon>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/megalodon.jpg\" alt=\"Megaladon\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Megalodon\\n<br/><em>Carcharodon megalodon</em></div>\\n</div></div><<endif>>\\n\\n<<if $viper>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/viperfish.jpg\" alt=\"Viperfish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Pacific Viperfish\\n<br/><em>Chauliodus macouni</em></div>\\n</div></div><<endif>>\\n\\n<<if $vampire>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/vampire.jpg\" alt=\"Vampire Squid\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Vampire Squid\\n<br/><em>Vampyroteuthis infernalis</em></div>\\n</div></div><<endif>>\\n\\n<<if $hag>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/hagfish.jpg\" alt=\"Hagfish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Pacific Hagfish\\n<br/><em>Eptatretus stoutii</em></div>\\n</div></div><<endif>>\\n\\n<div class=\"clearfix\"></div><<endnobr>>\\n\\n[[Image Attributions|dark attribute]]\\n[[Back to Credits|dark credits]]\\n<a href=\"\">Dive Again?</a>\\n\\n",
+      "links": [
+        {
+          "text": "Image Attributions",
+          "destination": {
+            "name": "dark attribute",
+            "pid": 76
+          }
+        },
+        {
+          "text": "Back to Credits",
+          "destination": {
+            "name": "dark credits",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "mid 3",
+      "text": "<<if (previous() is \"twitomidtrans\") OR (previous() is \"abysstomidtrans\") OR (previous() is \"seal\") OR (previous() is \"why\")>><h2>The Midnight Zone (1000 m \u2013 4000 m)</h2>\\n<<endif>>\\n<<once>>A flash, a movement, teeth.\\n\\nIt's always startling when an animal you hadn't noticed swims past your viewports and this one is no exception. A frilled shark, sinuous and lithe, grins out at you, it's clusters of needle-like teeth gleaming under your lights.\\n\\n<div class=\"j\">  I'm going to respectfully not bring up the sound you just made.</div>\\n\\n<div class=\"y\">\"That's you, Jackie. All respect.\"</div>\\n\\n<div class=\"j\">  Well if that's the response I'm gonna get, I'll stick with merciless teasing from now on. Gotta give you what you want.</div>\\n\\n<div class=\"l\">Log: Frilled Shark\\n<em>Chlamydoselachus anguineus</em>\\nEstimated size: 1.5 m</div><<remember $frilled to true>><<endonce>><<later>>\\n\\nThe sea is wide and dark and gaping. You have already visited this patch of ocean.\\n\\n<div class=\"l\">Previously Logged: Frilled Shark\\n<em>Chlamydoselachus anguineus</em>\\nEstimated size: 1.5 m</div><<endlater>>\\n\\n[[Ascend|midtotwitrans][$destination = \"twilight 3\"]]\\n[[Left|mid 2]][[Right|mid 4]]\\n<<if visited(\"midtoabyss\")>>[[Descend|midtoabysstrans][$destination = \"abyss 3\"]]<<else>>[[Descend|midtoabyss][$destination = \"abyss 3\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "midtotwitrans",
+            "pid": 129
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "mid 2",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "mid 4",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabysstrans",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabyss",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "mid 2",
+      "text": "<<if (previous() is \"twitomidtrans\") OR (previous() is \"abysstomidtrans\") OR (previous() is \"seal\") OR (previous() is \"why\")>><h2>The Midnight Zone (1000 m \u2013 4000 m)</h2>\\n<<endif>>\\n<<once>><div class=\"j\">  WATCH OUT!</div>\\n\\nYour instruments beep in warning a second before Jackie calls out and you try and grind the sub to a halt. It's too late to stop it though, before a white shape clips your hull and speeds off into the shadows, leaving a trail of blood hovering in the water.\\n\\n<div class=\"j\">  Are you okay?! Doc!</div>\\n\\n<div class=\"y\">\"Y-yeah. Just some minor hull damage. We're still okay.\"</div>\\n\\n<div class=\"j\">  Be careful. The Tangaroa is sturdy but not crashing into whales sturdy. Man, that was nuts.</div>\\n\\n<div class=\"l\">Log: Sperm Whale \\n<em>Physeter macrocephalus</em>\\nEstimated size: 14 m</div><<remember $sperm to true>>\\n\\n<div class=\"d\">Damage to Hull</div><<set $damage +=1>><<endonce>><<later>>\\n\\nThe sea is wide and dark and gaping. You have already visited this patch of ocean.\\n\\n<div class=\"l\">Previously Logged: Sperm Whale \\n<em>Physeter macrocephalus</em>\\nEstimated size: 14 m</div><<endlater>>\\n\\n[[Ascend|midtotwitrans][$destination = \"twilight 2\"]]\\n[[Left|mid 1]][[Right|mid 3]]\\n<<if visited(\"midtoabyss\")>>[[Descend|midtoabysstrans][$destination = \"abyss 2\"]]<<else>>[[Descend|midtoabyss][$destination = \"abyss 2\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "midtotwitrans",
+            "pid": 129
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "mid 1",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "mid 3",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabysstrans",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabyss",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "mid 1",
+      "text": "<<if (previous() is \"twitomidtrans\") OR (previous() is \"abysstomidtrans\") OR (previous() is \"seal\") OR (previous() is \"why\")>><h2>The Midnight Zone (1000 m \u2013 4000 m)</h2>\\n<<endif>>\\n<<once>>You hear it first, a echoing, low-pitched wail. Only, it's different than what you're used to. Whale song always sounded like longing, like a call to a distant friend. \\n\\nThis song is low and rumbling and lonely and angry and hungry and louder and louder and louder and\\n\\n<div class=\"j\">  Doc? Doc!</div>\\n\\nJackie's voice cuts through the song, and you sit, trembling for a moment in the sudden silence.\\n\\n[[Did you hear that?|hear]] [[Everything's fine.|fine]]<<endonce>><<later>>\\n\\nThe sea is wide and dark and gaping. You have already visited this patch of ocean.\\n\\n<div class=\"l\">Previously Logged: ???\\n<em>???</em>\\nEstimated size: Big</div>\\n\\n[[Ascend|midtotwitrans][$destination = \"twilight 1\"]]\\n[[Left|mid 5]][[Right|mid 2]]\\n<<if visited(\"midtoabyss\")>>[[Descend|midtoabysstrans][$destination = \"abyss 1\"]]<<else>>[[Descend|midtoabyss][$destination = \"abyss 1\"]]<<endif>>\\n<<endlater>>",
+      "links": [
+        {
+          "text": "Did you hear that?",
+          "destination": {
+            "name": "hear",
+            "pid": 94
+          }
+        },
+        {
+          "text": "Everything's fine.",
+          "destination": {
+            "name": "fine",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "midtotwitrans",
+            "pid": 129
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "mid 5",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "mid 2",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabysstrans",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabyss",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "lucky",
+      "text": "<div class=\"y\">\"Looks like we're just lucky today.\"</div>\\n\\n<div class=\"j\">  Well let's hope that luck holds up. We've already got some great shots and I know we're going to be sorting through this data for weeks.</div>\\n\\n<div class=\"y\">\"\u2026Sounds thrilling.\"</div>\\n\\n<div class=\"j\">  Well we can't all be bold adventurers like you, Doc. Someone needs to man the lab.</div>\\n\\n<div class=\"y\">\"Good thing we got the best.\"</div>\\n\\n<div class=\"j\">  Ha! Flattery will get you everywhere, Doc~ Just make sure you get a good look around and give me plenty of data.</div><<set $air to 1>>\\n\\n[[Enter The Twilight Zone|$destination]]",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "mid 5",
+      "text": "<<if (previous() is \"twitomidtrans\") OR (previous() is \"abysstomidtrans\") OR (previous() is \"seal\") OR (previous() is \"why\")>><h2>The Midnight Zone (1000 m \u2013 4000 m)</h2>\\n<<endif>>\\n<<once>>Normally, your viewports look out into the unrelenting darkness. You might catch a  glimmer of light, a rustle of movement, but unless you shine your spotlight, there is little to see.\\n\\nNow, your viewport looks back, with a wide unblinking eye of a giant squid.\\n\\n<div class=\"j\">  Don't move. God, I wish we could have fit screens in with you because this is amazing. It's an Architeuthis!</div>\\n\\n<div class=\"y\">\"Are you at least getting this all from the outside cams?\"</div>\\n\\n<div class=\"j\">  Every second. What can you see from the viewport?</div>\\n\\nYou look at the eye, it looks back at you and you know you don't imagine the intelligence there. As soon as eye contact is made, the squid lurches away, long tentacles slipping past the viewport, before vanishing.\\n\\n<div class=\"y\">\"It was looking right at me.\"</div>\\n\\n<div class=\"j\">  wow\u2026 just. wow.</div>\\n\\n<div class=\"l\">Log: Giant Squid\\n<em>Architeuthis dux</em>\\nEstimated size: 12 m</div><<remember $giant to true>><<endonce>><<later>>\\n\\nThe sea is wide and dark and gaping. You have already visited this patch of ocean.\\n\\n<div class=\"l\">Previously Logged: Giant Squid\\n<em>Architeuthis dux</em>\\nEstimated size: 12 m</div><<endlater>>\\n\\n[[Ascend|midtotwitrans][$destination = \"twilight 5\"]]\\n[[Left|mid 4]][[Right|mid 1]]\\n<<if visited(\"midtoabyss\")>>[[Descend|midtoabysstrans][$destination = \"abyss 5\"]]<<else>>[[Descend|midtoabyss][$destination = \"abyss 5\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "midtotwitrans",
+            "pid": 129
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "mid 4",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "mid 1",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabysstrans",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabyss",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "mid 4",
+      "text": "<<if (previous() is \"twitomidtrans\") OR (previous() is \"abysstomidtrans\") OR (previous() is \"seal\") OR (previous() is \"why\")>><h2>The Midnight Zone (1000 m \u2013 4000 m)</h2>\\n<<endif>>\\n<<once>>A light glimmers in the darkness, distant and tempting. You turn your spotlight towards it to reveal rows of curved, unforgiving teeth set right before the glimmering lure.\\n\\n<div class=\"j\">  Just keep swimming, Doc. Just keep swimming.</div>\\n\\n<div class=\"l\">Log: Anglerfish\\n<em>Melanocetus johnsonii</em>\\nEstimated size: 16 cm</div>\\n<<endonce>><<later>>\\n\\nThe sea is wide and dark and gaping. You have already visited this patch of ocean.\\n\\n<div class=\"l\">Previously Logged: Anglerfish\\n<em>Melanocetus johnsonii</em>\\nEstimated size: 16 cm</div><<remember $angler to true>><<endlater>>\\n\\n[[Ascend|midtotwitrans][$destination = \"twilight 4\"]]\\n[[Left|mid 3]][[Right|mid 5]]\\n<<if visited(\"midtoabyss\")>>[[Descend|midtoabysstrans][$destination = \"abyss 4\"]]<<else>>[[Descend|midtoabyss][$destination = \"abyss 4\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "midtotwitrans",
+            "pid": 129
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "mid 3",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "mid 5",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabysstrans",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabyss",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "abyss 3",
+      "text": "<<if (previous() is \"midtoabysstrans\") OR (previous() is \"abysstofloortrans\") OR (previous() is \"squid\") OR (previous() is \"laugh\")>><h2>The Abyss (4000 m \u2013 6000 m)</h2>\\n<<endif>>\\n<<once>>Bits of dead animals. Fecal Matter. Sand. Soot. Scales. All of it floats down the water column, the tides doing nothing to stop the inevitable pull of gravity.\\n\\n<div class=\"j\">  You know, they call it marine snow, but it's not the kind of stuff you'd want to catch on your tongue, right?</div>\\n\\nYou laugh. \\n\\n<div class=\"y\">\"Maybe once someone gets down deep enough without a sub.\"</div>\\n\\n<div class=\"j\">  You disgust me, Doc.</div>\\n\\nYou only laugh harder.<<endonce>><<later>>\\n\\nYou have already visited this patch of darkness.\\n<<endlater>>\\n\\n[[Ascend|abysstomidtrans][$destination = \"mid 3\"]]\\n[[Left|abyss 2]][[Right|abyss 4]]\\n<<if visited(\"abysstofloor\")>>[[Descend|abysstofloortrans][$destination = \"floor 3\"]]<<else>>[[Descend|abysstofloor][$destination = \"floor 3\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstomidtrans",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "abyss 2",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "abyss 4",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloor",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "abyss 2",
+      "text": "<<if (previous() is \"midtoabysstrans\") OR (previous() is \"abysstofloortrans\") OR (previous() is \"squid\") OR (previous() is \"laugh\")>><h2>The Abyss (4000 m \u2013 6000 m)</h2>\\n<<endif>>\\n<<once>>You swivel the spotlight around in the darkness and come upon the tail-end of what looks like a massacre. The water is stained red and bits of white flesh float like small corpses in the tide.\\n\\nSuddenly, a crimson tentacle, wider than any you'd ever seen, reaches out from the dark and takes one of the larger scraps of meat. \\n\\n<<if visited(\"mid 2\")>><div class=\"j\">  This must be what scared away that whale before. We'd theorized that sperm whales fought squid, but man\u2026</div><<endif>>\\n\\n<div class=\"l\">Log: Colossal Squid\\n<em>Mesonychoteuthis hamiltoni</em>\\nEstimated size: 13 m or more</div> <<remember $colossal to true>><<endonce>><<later>>\\n\\nYou have already visited this patch of darkness.\\n\\n<div class=\"l\">Previously Logged: Colossal Squid\\n<em>Mesonychoteuthis hamiltoni</em>\\nEstimated size: 13 m or more</div><<endlater>>\\n\\n[[Ascend|abysstomidtrans][$destination = \"mid 2\"]]\\n[[Left|abyss 1]][[Right|abyss 3]]\\n<<if visited(\"abysstofloor\")>>[[Descend|abysstofloortrans][$destination = \"floor 2\"]]<<else>>[[Descend|abysstofloor][$destination = \"floor 2\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstomidtrans",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "abyss 1",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "abyss 3",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloor",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "abyss 1",
+      "text": "<<if (previous() is \"midtoabysstrans\") OR (previous() is \"abysstofloortrans\") OR (previous() is \"squid\") OR (previous() is \"laugh\")>><h2>The Abyss (4000 m \u2013 6000 m)</h2>\\n<<endif>>\\n<<once>>Colors flash in the darkness. Reds, greens, blues, and more and more reds. They flash like stars in a darkened sky, and fade into nothing once you shine your spotlight on them.<<endonce>><<later>>\\nYou have already visited this patch of darkness.\\n<<endlater>>\\n\\n[[Ascend|abysstomidtrans][$destination = \"mid 1\"]]\\n[[Left|abyss 5]][[Right|abyss 2]]\\n<<if visited(\"abysstofloor\")>>[[Descend|abysstofloortrans][$destination = \"floor 1\"]]<<else>>[[Descend|abysstofloor][$destination = \"floor 1\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstomidtrans",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "abyss 5",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "abyss 2",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloor",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "abyss 5",
+      "text": "<<if (previous() is \"midtoabysstrans\") OR (previous() is \"abysstofloortrans\") OR (previous() is \"squid\") OR (previous() is \"laugh\")>><h2>The Abyss (4000 m \u2013 6000 m)</h2>\\n<<endif>>\\n<<once>>There are no animals on the surface with teeth like needles. Here, there are many and your light catches the glint of a smile in front of you as a serpent-like viperfish swims by.\\n\\nIt isn't a very comforting smile.\\n\\n<div class=\"l\">Log: Pacific Viperfish\\n<em>Chauliodus macouni</em>\\nEstimated size: 0.3 m</div><<remember $viper to true>><<endonce>><<later>>\\n\\nYou have already visited this patch of darkness.\\n\\n<div class=\"l\">Previously Logged: Pacific Viperfish\\n<em>Chauliodus macouni</em>\\nEstimated size: 0.3 m</div><<endlater>>\\n\\n[[Ascend|abysstomidtrans][$destination = \"mid 5\"]]\\n[[Left|abyss 4]][[Right|abyss 1]]\\n<<if visited(\"abysstofloor\")>>[[Descend|abysstofloortrans][$destination = \"floor 5\"]]<<else>>[[Descend|abysstofloor][$destination = \"floor 5\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstomidtrans",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "abyss 4",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "abyss 1",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloor",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "abyss 4",
+      "text": "<<if (previous() is \"midtoabysstrans\") OR (previous() is \"abysstofloortrans\") OR (previous() is \"squid\") OR (previous() is \"laugh\")>><h2>The Abyss (4000 m \u2013 6000 m)</h2>\\n<<endif>>\\n<<once>>It's hard to see anything in this kind of darkness, even with the spotlight. You only get that pinprick of light, the blips of the equipment, and Jackie's voice to guide you.\\n\\n<div class=\"j\">  I'm catching something right at the edge of the camera feed, can you turn it about 5 degrees to left?</div>\\n\\nYou tap the controls and turn the lights and camera only to gasp. All you can see is a glimpse of a shark's dorsal fin, never mind that sharks like <em> that </em> shouldn't be this deep.\\n\\nOr that big.\\n\\n<div class=\"j\">  What\u2026. You gotta chase it down, Doc. We need to get a view of this, it can't possibly be a shark!</div>\\n\\n[[I don't think I should.|no chase]][[Let's get a closer look then.|chase]]<<remember $megalodon to true>><<endonce>>\\n<<later>>\\nYou have already visited this patch of darkness.\\n\\n<div class=\"l\">Previously Logged: Shark????\\n<em>Carcharodon megalodon?</em> [\u2026no. That's impossible]\\nEstimated size: 18 m</div>\\n\\n[[Ascend|abysstomidtrans][$destination = \"mid 4\"]]\\n[[Left|abyss 3]][[Right|abyss 5]]\\n<<if visited(\"abysstofloor\")>>[[Descend|abysstofloortrans][$destination = \"floor 4\"]]<<else>>[[Descend|abysstofloor][$destination = \"floor 4\"]]<<endif>><<endlater>>",
+      "links": [
+        {
+          "text": "I don't think I should.",
+          "destination": {
+            "name": "no chase",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Let's get a closer look then.",
+          "destination": {
+            "name": "chase",
+            "pid": 112
+          }
+        },
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstomidtrans",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "abyss 3",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "abyss 5",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloor",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "light cave",
+      "text": "You float towards the light, watching it grow in the darkness. Jackie starts humming. You keep humming.\\n\\nThe light twitches and you feel a rush of desire. You have to know what is making that light, so big yet so so far below.\\n\\n[[You have to know.|siren 3]][[Leave the cave.|leave cave]]",
+      "links": [
+        {
+          "text": "You have to know.",
+          "destination": {
+            "name": "siren 3",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Leave the cave.",
+          "destination": {
+            "name": "leave cave",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "celebrate",
+      "text": "<div class=\"y\">\"Jackie! Look at the depth readings I'm sending back.\"</div>\\n\\nShe take a while to answer, the stopping abruptly, as if she'd been doing it in her sleep.\\n\\n<div class=\"j\">  Huh, what.. What?! But Challenger Deep is\u2014</div>\\n\\n<div class=\"y\">\"I know, but what do you think of the name Tangaroa Deep?\"</div>\\n\\n<div class=\"j\">  It sounds perfect. The HMS Challenger discovered that piint and now we discover this. We'll  be in textbooks for this. Can the sub take it?</div>\\n\\n[[Yes|deep yes]] [[No|deep no]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "deep yes",
+            "pid": 117
+          }
+        },
+        {
+          "text": "No",
+          "destination": {
+            "name": "deep no",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "suntotwi",
+      "text": "<div class=\"j\">  Well everything seems to be working great, and we've already had some amazing sightings. Can you believe we saw that Whitetip?</div>\\n\\n[[This area seems pretty active.|active]][[Looks like we're just lucky today.|lucky]]",
+      "links": [
+        {
+          "text": "This area seems pretty active.",
+          "destination": {
+            "name": "active",
+            "pid": 62
+          }
+        },
+        {
+          "text": "Looks like we're just lucky today.",
+          "destination": {
+            "name": "lucky",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "dark credits",
+      "text": "<h3>Thank you for playing\\nTangaroa Deep</h3>\\n\\nIf You enjoyed this game, please consider:\\n\\n<a href=\"http://astriddalmady.com\" target=\"_blank\">Checking out some of my other games</a>\\nFollowing me on \\n<a href=\"https://twitter.com/dastridly\" target=\"_blank\">Twitter</a> or <a href=\"http://dastridly.tumblr.com/\" target=\"_blank\">Tumblr</a>\\nOr best of all\\n<a href=\"https://www.patreon.com/dastridly?ty=h\" target=\"_blank\"><b>Supporting the games on Patreon</b></a>\\n\\nA huge thank you to Sierra, Ayuramy, Ete, Brendan and Melanie for helping me test and edit the game.\\n\\n[[Explore the Gallery of Creatures You Found|dark gallery]]\\n<a href=\"\">Dive Again?</a>",
+      "links": [
+        {
+          "text": "Explore the Gallery of Creatures You Found",
+          "destination": {
+            "name": "dark gallery",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "ignore",
+      "text": "Jackie is so far from here. Miles away from the surface, from light, from air.\\n\\n<div class=\"j\">  Please, Doc. I can barely get any readings at all.</div>\\n\\nAt least, that's what you thought as you entered the temple. You thought it'd be dark and deep as the rest of the sea has been, but once again, the world surprises you.\\n\\n<div class=\"j\">  It's too dangerous. it's too deep.</div>\\n\\nBecause when you look up, you see stars. Twinkling, glittering lights set into the roof of the temple. They are almost enough to see by, as if you were no longer underwater, but instead engulfed in a welcoming night.\\n\\n<div class=\"j\">  It isn't worth it. Please.</div>\\n\\nThrough the haze of water and darkness, you can see an altar in the front of the room, decorated with glowing blue flowers (anemones?).\\n\\n<div class=\"j\">  I don't care about the science anymore. Just come\u2014</div>\\n\\nHer voice fizzles out as the connection finally dies.\\n\\nBeyond the altar, there's a deep black even your spotlight doesn't penetrate.\\n\\n[[Return to the Surface.|leave]]\\n[[Enter the Darkness.|dark]]",
+      "links": [
+        {
+          "text": "Return to the Surface.",
+          "destination": {
+            "name": "leave",
+            "pid": 39
+          }
+        },
+        {
+          "text": "Enter the Darkness.",
+          "destination": {
+            "name": "dark",
+            "pid": 124
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "stay 2",
+      "text": "Like this trench, you just don't know when to stop. It keeps sloping down and down, impossibly down.\\n\\nAccording to your instruments, the sea floor should be above you. For all you know, it is. All you can see is infinite, inky black upwards and infinite grey sand forward.\\n\\nWhich is why it's so easy to spot the rubble.\\n\\nAnd it is rubble, not just rock, not just a boulder. Lying in the sand is a block of stone, smooth and perfectly square. A little beyond it, the eroded remnants of a giant archway.\\n\\n<div class=\"j\">  \u2026.I'm not even going to say it.</div>\\n\\nYou are.\\n\\n[[I think we found Atlantis.|atlantis]][[I think we found R'lyeh.|rlyeh]]",
+      "links": [
+        {
+          "text": "I think we found Atlantis.",
+          "destination": {
+            "name": "atlantis",
+            "pid": 90
+          }
+        },
+        {
+          "text": "I think we found R'lyeh.",
+          "destination": {
+            "name": "rlyeh",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "tangaroa end 2",
+      "text": "You float your way back to the top, and break the surface.\\n\\nYou see the sun again, as the crew rush over and help you out of the sub. Your legs are cramped in a way you hadn't even noticed. Jackie is grinning from ear to ear.\\n\\n<div class=\"j\">  We're gonna change the world with this, you know?</div>\\n\\nYou grin back, taking a long swig of water.\\n\\n<div class=\"y\">\"At the very least, we'll end up in some textbooks.\"</div>\\n\\n<div class=\"j\">  And if not us then, the name will live forever. Tangaroa Deep. Doesn't it just sound great?</div>\\n\\nIt does, and you feel flush with your victory, but you still wonder.\\n\\n<b>Could you have gone deeper?</b>\\n\\n[[The End|credits]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "credits",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Abyss",
+      "text": ".passage {\\n\\t/* This only affects passages */\\n\\tbackground-color:black;\\n\\t\\n}\\nbody {\\nbackground-color:black;\\n}",
+      "links": []
+    },
+    {
+      "pid": 33,
+      "name": "restless",
+      "text": "<div class=\"y\">\"Getting a little restless.\"</div>\\n\\n<div class=\"j\">  Well you'll reach the bottom soon, and then you can head back up.</div>\\n\\n<div class=\"y\">\"I think that's what I'm afraid of. We've just found so much here. Maybe we could even find a new species!\"</div>\\n\\n<div class=\"j\">  True. You know, I used to have a professor who said that species were like pornography. You just know it when you see it.</div>\\n\\n[[Laugh.|laugh]][[\u2026.puts a whole new spin on squid, doesn't it?|squid]]",
+      "links": [
+        {
+          "text": "Laugh.",
+          "destination": {
+            "name": "laugh",
+            "pid": 78
+          }
+        },
+        {
+          "text": "\u2026.puts a whole new spin on squid, doesn't it?",
+          "destination": {
+            "name": "squid",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "temple 2",
+      "text": "<div class=\"y\">\"I'm sorry, Jackie.\"</div>\\n\\n<div class=\"j\">  No No No NO.</div>\\n\\n[[Mute Jackie.|mute]][[Just ignore Jackie.|ignore]]",
+      "links": [
+        {
+          "text": "Mute Jackie.",
+          "destination": {
+            "name": "mute",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Just ignore Jackie.",
+          "destination": {
+            "name": "ignore",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "deep no",
+      "text": "<div class=\"y\">\"No.\"</div>\\n\\n<div class=\"j\">  You can always come back up. We've got tons of data. We can leave this trench for someone else, with a different sub.</div>\\n\\n[[Back to the surface|top end]]\\n[[Keep going|trench 2 caves]]",
+      "links": [
+        {
+          "text": "Back to the surface",
+          "destination": {
+            "name": "top end",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Keep going",
+          "destination": {
+            "name": "trench 2 caves",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "seal",
+      "text": "<div class=\"y\">\"The seal ending wasn't so bad.\"</div>\\n\\n<div class=\"j\">  Really? I mean, she had to leave everything behind.</div>\\n\\n<div class=\"y\">\"Yeah, but she got what she wanted.\"</div>\\n\\n<div class=\"j\">  I guess\u2026 but even seals still need to come up for air.</div><<set $air to 2>>\\n\\n[[Enter the Midnight Zone|$destination]]",
+      "links": []
+    },
+    {
+      "pid": 37,
+      "name": "Midnight Zone",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n\\n.passage {\\n\\t/* This only affects passages */\\n\\tbackground-color:#041a25;\\n\\t\\n}\\n\\nbody {\\nbackground-color:#041a25;\\n}",
+      "links": []
+    },
+    {
+      "pid": 38,
+      "name": "Listen",
+      "text": "<div class=\"j\">Once upon a time, there was a little diver girl. She was the best diver on the island. She could see clearer and hold her breath longer and she'd come back with the most paua shells out of everyone. But it was never enough. She always wanted to go longer, to go deeper, to get one more shell.\\n\\nUntil one day, she dove too deep. All men are trespassers in the ocean, and she was no exception. She prayed for more breath, so she could keep diving, so she could stay in the sea.\\n\\nAnd the ocean heard her and said, <em>You are mine now, little diver-girl. You shall have the strength to reach my depths and share my bounty with the shore, but you are mine now, and you shall never forget.</em></div>\\n\\n[[Keep Listening|Listen 2]]",
+      "links": [
+        {
+          "text": "Keep Listening",
+          "destination": {
+            "name": "Listen 2",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "leave",
+      "text": "Are you sure?\\n\\n[[Yes|leave end 2]]\\n[[No|previous()]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "leave end 2",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "error",
+      "text": "<div class=\"y\">\"Jackie, can you check the depth readings I'm sending back up?\"</div>\\n\\n<div class=\"j\">  ...that can't be right.</div>\\n\\n<div class=\"y\">\"So you see it too.\"</div>\\n\\n<div class=\"j\">  Yeah. You're almost pushing 12,000 meters. That isn't\u2026 that just isn't possible. How's the sub?</div>\\n\\n<div class=\"y\">\"She's holding up fine.\"</div>\\n\\n<div class=\"j\">  \u2026fine enough to keep going? The HMS Challenger got its own named point in the ocean. We could find Tangaroa Deep this time.</div>\\n\\n[[Yes|deep yes]] [[No|deep no]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "deep yes",
+            "pid": 117
+          }
+        },
+        {
+          "text": "No",
+          "destination": {
+            "name": "deep no",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "twilight 4",
+      "text": "<<if (previous() is \"suntotwitrans\") OR (previous() is \"midtotwitrans\") OR (previous() is \"lucky\") OR (previous() is \"active\")>><h2>The Twilight Zone (200 m \u2013 1000 m)</h2>\\n<<endif>>\\n<<once>>Among the grey blue of deep water, the flashing colors of a cuttlefish are amazingly easy to spot.\\n\\n<div class=\"j\">  You know it's theorized that they use the colors to communicate, in addition to camouflage and stuff.</div>\\n\\n<div class=\"y\">\"I knew that.\"</div>\\n\\n<div class=\"j\">  Yeah, but this one is by itself. I wonder who it's talking to\u2026</div>\\n\\n<div class=\"l\">Log: Unknown Cuttlefish\\n<em>Sepiella ???</em>\\nEstimated Size: 40 cm</div><<remember $cuttlefish to true>><<endonce>><<later>>\\n\\nThe water is dark and hazy. But you know you've already visited this patch of ocean.\\n\\n<div class=\"l\">Previously Logged: Unknown Cuttlefish\\n<em>Sepiella ???</em>\\nEstimated Size: 40 cm</div>\\n\\n<<endlater>>\\n\\n[[Ascend|twitosuntrans][$destination = \"sunlight 4\"]]\\n[[Left|twilight 3]][[Right|twilight 5]]\\n<<if visited(\"twitomid\")>>[[Descend|twitomidtrans][$destination = \"mid 4\"]]<<else>>[[Descend|twitomid][$destination = \"mid 4\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "twitosuntrans",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "twilight 3",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "twilight 5",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomidtrans",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomid",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "twilight 5",
+      "text": "<<if (previous() is \"suntotwitrans\") OR (previous() is \"midtotwitrans\") OR (previous() is \"lucky\") OR (previous() is \"active\")>><h2>The Twilight Zone (200 m \u2013 1000 m)</h2>\\n<<endif>>\\nYou steer the ship, eyes peering out into the dusky water. Sometimes, you think you see shadows, but Jackie stays silent and the instruments pick nothing up.\\n<<endonce>><<later>>\\nThe water is dark and hazy. But you know you've already visited this patch of ocean.<<endlater>>\\n\\n[[Ascend|twitosuntrans][$destination = \"sunlight 5\"]]\\n[[Left|twilight 4]][[Right|twilight 1]]\\n<<if visited(\"twitomid\")>>[[Descend|twitomidtrans][$destination = \"mid 5\"]]<<else>>[[Descend|twitomid][$destination = \"mid 5\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "twitosuntrans",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "twilight 4",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "twilight 1",
+            "pid": 45
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomidtrans",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomid",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "twilight 2",
+      "text": "<<if (previous() is \"suntotwitrans\") OR (previous() is \"midtotwitrans\") OR (previous() is \"lucky\") OR (previous() is \"active\")>><h2>The Twilight Zone (200 m \u2013 1000 m)</h2>\\n<<endif>>\\n<<once>>Sunlight barely reaches here, making everything outside your spotlight merely haze and shadow. Out the port window, a massive shape looms in the darkness, with very large, very familiar fins.\\n\\n<div class=\"j\">  That can't be another Whitetip, right? It's way too big and we're way too deep for those!</div>\\n\\n<div class=\"y\">\"I know, but the fin shape is just like a Whitetip. Proportions and everything.\"</div>\\n\\n[[Let it swim by.|shark swim by]]\\n[[Shine the Spotlight.|shine the spotlight]]<<endonce>><<later>>\\n\\nThe water is dark and hazy. But you know you've already visited this patch of ocean.\\n\\n<div class=\"l\">Previously Logged: Oceanic White-Tip Shark?\\n<em>Carcharhinus longimanus?</em>\\nEstimated size: minimum 5m</div>\\n\\n[[Ascend|twitosuntrans][$destination = \"sunlight 2\"]]\\n[[Left|twilight 1]][[Right|twilight 3]]\\n<<if visited(\"twitomid\")>>[[Descend|twitomidtrans][$destination = \"mid 2\"]]<<else>>[[Descend|twitomid][$destination = \"mid 2\"]]<<endif>><<endlater>>\\n\\n",
+      "links": [
+        {
+          "text": "Let it swim by.",
+          "destination": {
+            "name": "shark swim by",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Shine the Spotlight.",
+          "destination": {
+            "name": "shine the spotlight",
+            "pid": 113
+          }
+        },
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "twitosuntrans",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "twilight 1",
+            "pid": 45
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "twilight 3",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomidtrans",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomid",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "twilight 3",
+      "text": "<<if (previous() is \"suntotwitrans\") OR (previous() is \"midtotwitrans\") OR (previous() is \"lucky\") OR (previous() is \"active\")>><h2>The Twilight Zone (200 m \u2013 1000 m)</h2>\\n<<endif>>\\n<<once>><div class=\"j\">  Huh\u2026 Do you hear that?</div>\\n\\nYou stop the sub, heading the metal and waves settle around you before falling still. Far away, yet seemingly coming from all directions, you hear a haunting wail, deep and mournful.\\n\\n<div class=\"j\">  There must be some whales nearby.</div>\\n\\n<div class=\"y\">\"Shh.\"</div>\\n\\nJackie falls silent. The both of you sit and listen until the song fades and all you hear is the hiss of air inside your cockpit.\\n\\n<div class=\"l\">Log: Whales, perhaps?\\n<em>????</em>\\nEstimated size: ???</div><<endonce>><<later>>\\n\\nThe water is dark and hazy. But you know you've already visited this patch of ocean.\\n\\n<div class=\"l\">Previously Logged: Whales, perhaps?\\n<em>????</em>\\nEstimated size: ???</div><<endlater>>\\n\\n[[Ascend|twitosuntrans][$destination = \"sunlight 3\"]]\\n[[Left|twilight 2]][[Right|twilight 4]]\\n<<if visited(\"twitomid\")>>[[Descend|twitomidtrans][$destination = \"mid 4\"]]<<else>>[[Descend|twitomid][$destination = \"mid 4\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "twitosuntrans",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "twilight 2",
+            "pid": 43
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "twilight 4",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomidtrans",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomid",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "twilight 1",
+      "text": "<<if (previous() is \"suntotwitrans\") OR (previous() is \"midtotwitrans\") OR (previous() is \"lucky\") OR (previous() is \"active\")>><h2>The Twilight Zone (200 m \u2013 1000 m)</h2><<endif>>\\n\\n<<once>>A giant flattened disk, balanced by two rudder-like fins slowly floats by the subs windows. \\n\\n<div class=\"y\">\"I don't think I'll ever get over how weird sunfish look.\"</div>\\n\\n<div class=\"j\">  I know, but just imagine what you must look like to them.</div>\\n\\n<div class=\"l\">Log: Ocean Sunfish \\n<em>Mola Mola</em>\\nEstimated size: 2.5 m fin to fin</div><<remember $sunfish to true>><<endonce>>\\n<<later>>\\nThe water is dark and hazy. But you know you've already visited this patch of ocean.\\n\\n<div class=\"l\">Previously Logged: Ocean Sunfish \\n<em>Mola Mola</em>\\nEstimated size: 2.5 m fin to fin</div><<endlater>>\\n\\n[[Ascend|twitosuntrans][$destination = \"sunlight 1\"]]\\n[[Left|twilight 5]][[Right|twilight 2]]\\n<<if visited(\"twitomid\")>>[[Descend|twitomidtrans][$destination = \"mid 1\"]]<<else>>[[Descend|twitomid][$destination = \"mid 1\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "twitosuntrans",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "twilight 5",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "twilight 2",
+            "pid": 43
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomidtrans",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomid",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "siren 5",
+      "text": "Like all stars, your sun suddenly, wretchedly, goes out.\\n\\nAnd everything else floods back in.\\n\\n<div class=\"j\">  \u2014swear I'll prepare your specimens for a year. Just say anything. Do you read me? Doc? Doc!</div>\\n\\n<div class=\"y\">\"I'm here, Jackie. I'm here.\"</div>\\n\\nYour voice sounds watery. You're crying. You peer out into the inky darkness, and see nothing. No light, no sun, no grasping hands trying to pull you down.\\n\\nAs you leave, your spotlight catches a glimpse of fin and hair. You do not look.\\n\\n<div class=\"d\">Damage to Hull</div><<set $damage +=1>>\\n[[Leave the Cave|trench 2 caves]]",
+      "links": [
+        {
+          "text": "Leave the Cave",
+          "destination": {
+            "name": "trench 2 caves",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "leave cave",
+      "text": "Something in the deep glimmers. That's how a lot of them hunt, after all.\\n\\nYou turn the ship around, humming softly. It's better to get out now and not damage the ship in this cave.\\n\\n[[Leave the Cave.|trench 2 caves]]",
+      "links": [
+        {
+          "text": "Leave the Cave.",
+          "destination": {
+            "name": "trench 2 caves",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "temple",
+      "text": "<<set $air to 11>><div class=\"j\">  Please don't do this.</div>\\n\\n<div class=\"y\">\"I have to. Don't you want to know what this is?\"</div>\\n\\n<div class=\"j\">  Of course I do. But the ship wasn't built for this, it could give at any second! We can come back.</div>\\n\\n<div class=\"y\">\"And what if we can't find it? Huh? We barely found the trench today at all. What if we can't find it again.\"</div>\\n\\n<div class=\"j\">  We will. We have to. Just, come back up. Please.</div>\\n\\n[[Return to the Surface.|leave]]\\n[[Enter the Temple.|temple 2]]",
+      "links": [
+        {
+          "text": "Return to the Surface.",
+          "destination": {
+            "name": "leave",
+            "pid": 39
+          }
+        },
+        {
+          "text": "Enter the Temple.",
+          "destination": {
+            "name": "temple 2",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "StorySettings",
+      "text": "jquery:off\\nhash:off\\nbookmark:on\\nmodernizr:off\\nundo:off\\nobfuscate:off\\nexitprompt:off\\nblankcss:on\\n",
+      "links": []
+    },
+    {
+      "pid": 50,
+      "name": "StoryMenu",
+      "text": "<<nobr>>/%<div class=\"dbar\">Hull Damage: <<if $damage is 1>><progress class=\"damage\" value=\"25\" max=\"100\"></progress><<else if $damage is 2>><progress class=\"damage\" value=\"50\" max=\"100\"></progress><<else if $damage is 3>><progress class=\"damage\" value=\"75\" max=\"100\"></progress><<else>><progress class=\"damage\" value=\"0\" max=\"100\"></progress><<endif>></div>%/\\n<div class=\"abar\">Air <<if $air is 1>><progress class=\"air\" value=\"100\" max=\"110\"></progress><<else if $air is 2>><progress class=\"air\" value=\"90\" max=\"110\"></progress><<else if $air is 3>><progress class=\"air\" value=\"80\" max=\"110\"></progress><<else if $air is 4>><progress class=\"air\" value=\"70\" max=\"110\"></progress><<else if $air is 5>><progress class=\"air\" value=\"60\" max=\"110\"></progress><<else if $air is 6>><progress class=\"air\" value=\"50\" max=\"110\"></progress><<else if $air is 7>><progress class=\"air\" value=\"40\" max=\"110\"></progress><<else if $air is 8>><progress class=\"air\" value=\"30\" max=\"110\"></progress><<else if $air is 9>><progress class=\"air\" value=\"20\" max=\"110\"></progress><<else if $air is 10>><progress class=\"air\" value=\"10\" max=\"110\"></progress><<else if $air is 11>><progress class=\"air\" value=\"5\" max=\"110\"></progress><<else if $air is 12>><progress class=\"air\" value=\"0\" max=\"110\"></progress><<else>><progress class=\"air\" value=\"110\" max=\"110\"></progress><<endif>></div>\\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 51,
+      "name": "sunlight 4",
+      "text": "<<if previous() is \"twitosuntrans\">><h2>The Sunlight Zone (0 \u2013 200 m)</h2><<endif>><<once>><div class=\"j\">  Holy shit. Stop! Stop!</div>\\n\\nWith only a few viewports inside the ship, the cameras outside pick things up much faster than you can. Grinding the ship through a halt, you tilt the ship hoping to see what she sees and are not disappointed.\\n\\nWhales. At least a dozen of them, pure white and hanging vertically as if caught by some invisible lure. Rocked by the tides, the sperm whales sleep. \\n\\nEven though they can\u2019t hear you, Jackie whispers a soft wow. You don\u2019t blame her.\\n\\n<div class=\"l\">Log: Sperm Whale \\n<em>Physeter macrocephalus</em>\\nEstimated size: 14 m</div><<remember $sperm to true>><<endonce>>\\n<<later>>The sea is wide, and bright, and teeming with life. But you've already visited this patch of ocean this dive.\\n\\n<div class=\"l\">Previously Logged: Sperm Whale \\n<em>Physeter macrocephalus</em>\\nEstimated size: 14 m</div><<endlater>>\\n<<if visited(\"abysstofloor\")>>\\n[[Return to The Surface|surface end]]<<elseif $damage >= 1>>\\n[[Return to The Surface|coward end]]<<endif>>\\n[[Left|sunlight 3]][[Right|sunlight 5]]\\n<<if visited(\"suntotwi\")>>[[Descend|suntotwitrans][$destination = \"twilight 4\"]]<<else>>[[Descend|suntotwi][$destination = \"twilight 4\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "surface end",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "coward end",
+            "pid": 67
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "sunlight 3",
+            "pid": 57
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "sunlight 5",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "suntotwitrans",
+            "pid": 92
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "suntotwi",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "sunlight 5",
+      "text": "<<if previous() is \"twitosuntrans\">><h2>The Sunlight Zone (0 \u2013 200 m)</h2><<endif>><<once>>When you think of migrations, you don\u2019t often think of snakes, but here one is. A ribbon of yellow and black cuts through the water, heading south with astonishing speed.\\n\\nNormally, there are no snakes on New Zealand. You wonder if this one will make it there.\\n\\n<div class=\"l\">Log: Yellow-Bellied Sea Snake\\n<em>Pelamis platura</em>\\nEstimated size: .8 m</div><<remember $snake to true>><<endonce>>\\n<<later>>The sea is wide, and bright, and teeming with life. But you've already visited this patch of ocean this dive.\\n\\n<div class=\"l\">Previously Logged: Yellow-Bellied Sea Snake\\n<em>Pelamis platura</em>\\nEstimated size: .8 m</div><<endlater>>\\n<<if visited(\"abysstofloor\")>>\\n[[Return to The Surface|surface end]]<<elseif $damage >= 1>>\\n[[Return to The Surface|coward end]]<<endif>>\\n[[Left|sunlight 4]][[Right|sunlight 1]]\\n<<if visited(\"suntotwi\")>>[[Descend|suntotwitrans][$destination = \"twilight 5\"]]<<else>>[[Descend|suntotwi][$destination = \"twilight 5\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "surface end",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "coward end",
+            "pid": 67
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "sunlight 4",
+            "pid": 51
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "sunlight 1",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "suntotwitrans",
+            "pid": 92
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "suntotwi",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "siren 3",
+      "text": "You miss the sun. You didn't realize it until you saw this <<timedinsert 3s>>perfect, glorious<<endtimedinsert>> light, but you miss it with a physical ache. You need to feel the light across your skin, the searing heat sinking in. You would give anything for the sting of sunburn, the fever hot burn of light.\\n\\nYou'll settle for this, your own incandescent sun far below the ocean. You stare at it, unblinking. Your eyes water and go blurry. The light embraces you, consuming your viewport.\\n\\n[[You miss the sun.|siren 4]]",
+      "links": [
+        {
+          "text": "You miss the sun.",
+          "destination": {
+            "name": "siren 4",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "siren 4",
+      "text": "<em>Scratching along the hull.</em>\\n\\nYou miss the sun.\\n\\n<em>An arm, a hand, a claw.</em>\\n\\nYou miss the sun.\\n\\n<em>A bump, a voice.</em>\\n\\n<b>THIS IS YOUR SUN.</b>\\n\\n<em>A screaming.</em>\\n\\n[[YOUR SUN YOUR SUN YOUR SUN|siren 5]]",
+      "links": [
+        {
+          "text": "YOUR SUN YOUR SUN YOUR SUN",
+          "destination": {
+            "name": "siren 5",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "sunlight 1",
+      "text": "<<if previous() is \"twitosuntrans\">><h2>The Sunlight Zone (0 \u2013 200 m)</h2><<endif>><<once>>The ship maneuvers smoothly in the water, gliding to the left. \\n\\nIn the hazy blue of the distance, you see the distinctive curved fin and light color of an Oceanic White-Tip Shark.\\n\\n<div class=\"l\">Log: Oceanic White-Tip Shark \\n<em>Carcharhinus longimanus</em>\\nEstimated size: 1.8 m</div>\\n\\n<div class=\"j\">  Wow! What a great omen. We\u2019re sure to see tons of animals on this dive now.</div>\\n\\nYou watch the shark swim away, and can\u2019t help but join Jackie in her optimism.<<endonce>>\\n<<later>>The sea is wide, and bright, and teeming with life. But you've already visited this patch of ocean this dive.\\n\\n<div class=\"l\">Previously Logged: Oceanic White-Tip Shark \\n<em>Carcharhinus longimanus</em>\\nEstimated size: 1.8 m</div><<endlater>>\\n<<if visited(\"abysstofloor\")>>\\n[[Return to The Surface|surface end]]<<elseif $damage >= 1>>\\n[[Return to The Surface|coward end]]<<endif>>\\n[[Left|sunlight 5]][[Right|sunlight 2]]\\n<<if visited(\"suntotwi\")>>[[Descend|suntotwitrans][$destination = \"twilight 1\"]]<<else>>[[Descend|suntotwi][$destination = \"twilight 1\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "surface end",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "coward end",
+            "pid": 67
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "sunlight 5",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "sunlight 2",
+            "pid": 56
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "suntotwitrans",
+            "pid": 92
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "suntotwi",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "sunlight 2",
+      "text": "<<if previous() is \"twitosuntrans\">><h2>The Sunlight Zone (0 \u2013 200 m)</h2><<endif>><<once>>Bubbles in all sizes rise around the ship once you come to a stop. They range from tiny bubbles that cling to the ship in delicate patterns, to a few ones larger than the windows of the ship. They wobble and rise without popping.\\n\\nSomething must be below you.<<endonce>>\\n<<later>>The sea is wide, and bright, and teeming with life. But you've already visited this patch of ocean this dive.<<endlater>>\\n<<if visited(\"abysstofloor\")>>\\n[[Return to The Surface|surface end]]<<elseif $damage >= 1>>\\n[[Return to The Surface|coward end]]<<endif>>\\n[[Left|sunlight 1]][[Right|sunlight 3]]\\n<<if visited(\"suntotwi\")>>[[Descend|suntotwitrans][$destination = \"twilight 2\"]]<<else>>[[Descend|suntotwi][$destination = \"twilight 2\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "surface end",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "coward end",
+            "pid": 67
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "sunlight 1",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "sunlight 3",
+            "pid": 57
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "suntotwitrans",
+            "pid": 92
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "suntotwi",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "sunlight 3",
+      "text": "<<if previous() is \"twitosuntrans\">><h2>The Sunlight Zone (0 \u2013 200 m)</h2><<endif>><<once>>The thin white tentacles of a Lion\u2019s Man Jellyfish hang like a veil around its rusty orange body. It floats, silent, like a ghost in the water, past your ship and into the hazy blue beyond.\\n\\n<div class=\"l\">Log: Lion\u2019s Mane Jellyfish \\n<em>Cyanea capillata</em>\\nEstimated size: 2 m</div><<remember $jelly to true>><<endonce>>\\n<<later>>The sea is wide, and bright, and teeming with life. But you've already visited this patch of ocean this dive.\\n\\n<div class=\"l\">Previously Logged: Lion\u2019s Mane Jellyfish \\n<em>Cyanea capillata</em>\\nEstimated size: 2 m</div><<endlater>>\\n<<if visited(\"abysstofloor\")>>\\n[[Return to The Surface|surface end]]<<elseif $damage >= 1>>\\n[[Return to The Surface|coward end]]<<endif>>\\n[[Left|sunlight 2]][[Right|sunlight 4]]\\n<<if visited(\"suntotwi\")>>[[Descend|suntotwitrans][$destination = \"twilight 3\"]]<<else>>[[Descend|suntotwi][$destination = \"twilight 3\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "surface end",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "coward end",
+            "pid": 67
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "sunlight 2",
+            "pid": 56
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "sunlight 4",
+            "pid": 51
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "suntotwitrans",
+            "pid": 92
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "suntotwi",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "credits",
+      "text": "<h3>Thank you for playing\\nTangaroa Deep</h3>\\n\\nIf You enjoyed this game, please consider:\\n\\n<a href=\"http://astriddalmady.com\" target=\"_blank\">Checking out some of my other games</a>\\nFollowing me on \\n<a href=\"https://twitter.com/dastridly\" target=\"_blank\">Twitter</a> or <a href=\"http://dastridly.tumblr.com/\" target=\"_blank\">Tumblr</a>\\nOr best of all\\n<a href=\"https://www.patreon.com/dastridly?ty=h\" target=\"_blank\"><b>Supporting the games on Patreon</b></a>\\n\\nA huge thank you to Sierra, Ayuramy, Ete, Brendan and Melanie for helping me test and edit the game.\\n\\n[[Explore the Gallery of Creatures You Found|gallery]]\\n<a href=\"\">Dive Again?</a>",
+      "links": [
+        {
+          "text": "Explore the Gallery of Creatures You Found",
+          "destination": {
+            "name": "gallery",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "abysstofloortrans",
+      "text": "\\n\\n\\n<<goto $destination>>",
+      "links": []
+    },
+    {
+      "pid": 60,
+      "name": "twitosuntrans",
+      "text": "\\n\\n\\n\\n<<goto $destination>>",
+      "links": []
+    },
+    {
+      "pid": 61,
+      "name": "Sun to Twi",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n\\n.passage {\\n    background: #61aba8; /* For browsers that do not support gradients */\\n    background: -webkit-linear-gradient(#61aba8, #305865); /* For Safari 5.1 to 6.0 */\\n    background: -o-linear-gradient(#61aba8, #305865); /* For Opera 11.1 to 12.0 */\\n    background: -moz-linear-gradient(#61aba8, #305865); /* For Firefox 3.6 to 15 */\\n    background: linear-gradient(#61aba8, #305865); /* Standard syntax */\\n}\\n\\nbody {\\nbackground-color:#305865;\\n}",
+      "links": []
+    },
+    {
+      "pid": 62,
+      "name": "active",
+      "text": "<div class=\"y\">\"Yeah. This area seems pretty active.\"</div>\\n\\n<div class=\"j\">  Maybe there's something down below that makes this spot more appealing. Some vents or a particularly strong tidal current, maybe?</div>\\n\\n<div class=\"y\">\"Hold off the theories until we get some data, okay? The last thing we want is to jump to conclusions.\"</div>\\n\\n<div class=\"j\">   It's called a hypothesis, Doc. I'm sure you've heard of it in between field expeditions. Besides, gathering data's your job today. So chop chop, get to it. </div>\\n\\n<div class=\"y\">\"Don't worry. I plan to.\"</div><<set $air to 1>>\\n\\n[[Enter The Twilight Zone|$destination]]",
+      "links": []
+    },
+    {
+      "pid": 63,
+      "name": "surface end",
+      "text": "Are you sure?\\n\\n[[Yes|surface end 2]]\\n[[No|previous()]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "surface end 2",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "come",
+      "text": "It should be impossible at the depth to open the sub. The pressure would push too hard against the hull, locking the doors tighter than any lock ever could.\\n\\nIt calls you again, and your hand is on the latch.\\n\\n<div class=\"e\">COME OUT, LITTLE DIVER.</div>\\n\\nThe door pushes open; Water and darkness trickle in, slowly. So slowly. Not the mad rush of pressurized water, but a lingering steady drip. You are in an impossible pit, an impossible place.\\n\\n<div class=\"e\">YOU ARE MINE, LITTLE DIVER.</div>\\n\\nA human is always human, you think, as you're being pulled up into the dark.\\n\\n<b>Until, of course, you're not.</b>\\n\\n[[The End|dark credits]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "dark credits",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "jackie",
+      "text": "It\u2019s tight inside the Tangaroa. It has to be. The metal dome protects you from the intense pressure you're about to face. Its armor is only barely chipped by the inclusion of three small viewports.\\n\\nInside, you have room to wiggle your legs, reach the hatch, and pilot the ship. Anything else, and you'd need to come back to the surface.\\n\\n<div class=\"j\">Jackie: Everything is ready up here. How\u2019re you feeling down in the tube? Ready to go?</div>\\n\\nThe voice echoes oddly in the small space, but comes through clear.\\n\\n[[It\u2019s a little cramped, but we\u2019re good.|jackie 2]]",
+      "links": [
+        {
+          "text": "It\u2019s a little cramped, but we\u2019re good.",
+          "destination": {
+            "name": "jackie 2",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Replace",
+      "text": "(function(){version.extensions.replaceMacrosCombined={major:1,minor:1,revision:7};var nullobj={handler:function(){}};function showVer(n,notrans){if(!n){return;}n.innerHTML=\"\";\\nnew Wikifier(n,n.tweecode);n.setAttribute(\"data-enabled\",\"true\");n.style.display=\"inline\";n.classList.remove(\"revision-span-out\");if(!notrans){n.classList.add(\"revision-span-in\");\\nif(n.timeout){clearTimeout(n.timeout);}n.timeout=setTimeout(function(){n.classList.remove(\"revision-span-in\");n=null;},20);}}function hideVer(n,notrans){if(!n){return;\\n}n.setAttribute(\"data-enabled\",\"false\");n.classList.remove(\"revision-span-in\");if(n.timeout){clearTimeout(n.timeout);}if(!notrans){n.classList.add(\"revision-span-out\");\\nn.timeout=setTimeout(function(){if(n.getAttribute(\"data-enabled\")==\"false\"){n.classList.remove(\"revision-span-out\");n.style.display=\"none\";n.innerHTML=\"\";}n=null;\\n},1000);}else{n.style.display=\"none\";n.innerHTML=\"\";n=null;}}function tagcontents(b,starttags,desttags,endtags,k){var l=0,c=\"\",tg,a,i;function tagfound(i,e,endtag){for(var j=0;\\nj<e.length;j++){if(a.indexOf(\"<<\"+e[j]+(endtag?\">>\":\"\"),i)==i){return e[j];}}}a=b.source.slice(k);for(i=0;i<a.length;i++){if(tg=tagfound(i,starttags)){l++;}else{if((tg=tagfound(i,desttags,true))&&l==0){b.nextMatch=k+i+tg.length+4;\\nreturn[c,tg];}else{if(tg=tagfound(i,endtags,true)){l--;if(l<0){return null;}}}}c+=a.charAt(i);}return null;}var begintags=[];var endtags=[];function revisionSpanHandler(g,e,f,b){var k=b.source.indexOf(\">>\",b.matchStart)+2,vsns=[],vtype=e,flen=f.length,becomes,c,cn,m,h,vsn;\\nfunction mkspan(vtype){h=insertElement(m,\"span\",null,\"revision-span \"+vtype);h.setAttribute(\"data-enabled\",false);h.style.display=\"none\";h.tweecode=\"\";return h;}if(this.shorthand&&flen){while(f.length>0){vsns.push([f.shift(),(this.flavour==\"insert\"?\"gains\":\"becomes\")]);\\n}}else{if(this.flavour==\"insert\"||(this.flavour==\"continue\"&&this.trigger==\"time\")){vsns.push([\"\",\"becomes\"]);}}if(this.flavour==\"continue\"&&flen){b.nextMatch=k+b.source.slice(k).length;\\nvsns.push([b.source.slice(k),vtype]);}else{becomes=[\"becomes\",\"gains\"];c=tagcontents(b,begintags,becomes.concat(endtags),endtags,k);if(c&&endtags.indexOf(c[1])==-1){while(c){vsns.push(c);\\nc=tagcontents(b,begintags,becomes,endtags,b.nextMatch);}c=tagcontents(b,begintags,[\"end\"+e],endtags,b.nextMatch);}if(!c){throwError(g,\"can't find matching end\"+e);\\nreturn;}vsns.push(c);if(this.flavour==\"continue\"){k=b.nextMatch;b.nextMatch=k+b.source.slice(k).length;vsns.push([b.source.slice(k),\"\"]);}}if(this.flavour==\"remove\"){vsns.push([\"\",\"becomes\"]);\\n}cn=0;m=insertElement(g,\"span\",null,e);m.setAttribute(\"data-flavour\",this.flavour);h=mkspan(\"initial\");vsn=vsns.shift();h.tweecode=vsn[0];showVer(h,true);while(vsns.length>0){if(vsn){vtype=vsn[1];\\n}vsn=vsns.shift();h=mkspan(vtype);h.tweecode=vsn[0];}if(typeof this.setup==\"function\"){this.setup(m,g,f);}}function quantity(m){return(m.children.length-1)+(m.getAttribute(\"data-flavour\")==\"remove\");\\n}function revisionSetup(m,g,f){m.className+=\" \"+f[0].replace(\" \",\"_\");}function keySetup(m,g,f){var key=f[0];m.setEventListener(\"keydown\",function l(e){var done=!revise(\"revise\",m);\\nif(done){m.removeEventListener(\"keydown\",l);}});}function timeSetup(m,g,f){function cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0;\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0;}}}throwError(g,s+\" isn't a CSS time unit\");return 0;}var tm=cssTimeUnit(f[0]);var s=state.history[0].passage.title;\\nsetTimeout(function timefn(){if(state.history[0].passage.title==s){var done=!revise(\"revise\",m);if(!done){setTimeout(timefn,tm);}}},tm);}function hoverSetup(m){var fn,noMouseEnter=(document.head.onmouseenter!==null),m1=m.children[0],m2=m.children[1],gains=m2.className.indexOf(\"gains\")>-1;\\nif(!m1||!m2){return;}m1.onmouseenter=function(e){var efp=document.elementFromPoint(e.clientX,e.clientY);while(efp&&efp!==this){efp=efp.parentNode;}if(!efp){return;\\n}if(this.getAttribute(\"data-enabled\")!=\"false\"){revise(\"revise\",this.parentNode);}};m2.onmouseleave=function(e){var efp=document.elementFromPoint(e.clientX,e.clientY);\\nwhile(efp&&efp!==this){efp=efp.parentNode;}if(efp){return;}if(this.getAttribute(\"data-enabled\")!=\"false\"){revise(\"revert\",this.parentNode);}};if(gains){m1.onmouseleave=m2.onmouseleave;\\n}if(noMouseEnter){fn=function(n){return function(e){if(!event.relatedTarget||(event.relatedTarget!=this&&!(this.compareDocumentPosition(event.relatedTarget)&Node.DOCUMENT_POSITION_CONTAINED_BY))){this[n]();\\n}};};m1.onmouseover=fn(\"onmouseenter\");m2.onmouseout=fn(\"onmouseleave\");if(gains){m1.onmouseout=m2.onmouseout;}}m=null;}function mouseSetup(m){var evt=(document.head.onmouseenter===null?\"onmouseenter\":\"onmouseover\");\\nm[evt]=function(){var done=!revise(\"revise\",this);if(done){this[evt]=null;}};m=null;}function linkSetup(m,g,f){var l=Wikifier.createInternalLink(),p=m.parentNode;\\nl.className=\"internalLink replaceLink\";p.insertBefore(l,m);l.insertBefore(m,null);l.onclick=function(){var p,done=false;if(m&&m.parentNode==this){done=!revise(\"revise\",m);\\nscrollWindowTo(m);}if(done){this.parentNode.insertBefore(m,this);this.parentNode.removeChild(this);}};l=null;}function visitedSetup(m,g,f){var i,done,shv=state.history[0].variables,os=\"once seen\",d=(m.firstChild&&(this.flavour==\"insert\"?m.firstChild.nextSibling:m.firstChild).tweecode);\\nshv[os]=shv[os]||{};if(d&&!shv[os].hasOwnProperty(d)){shv[os][d]=1;}else{for(i=shv[os][d];i>0&&!done;i--){done=!revise(\"revise\",m,true);}if(shv[os].hasOwnProperty(d)){shv[os][d]+=1;\\n}}}[{name:\"insert\",flavour:\"insert\",trigger:\"link\",setup:linkSetup},{name:\"timedinsert\",flavour:\"insert\",trigger:\"time\",setup:timeSetup},{name:\"insertion\",flavour:\"insert\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"later\",flavour:\"insert\",trigger:\"visited\",setup:visitedSetup},{name:\"keyinsert\",flavour:\"insert\",trigger:\"key\",setup:keySetup},{name:\"replace\",flavour:\"replace\",trigger:\"link\",setup:linkSetup},{name:\"timedreplace\",flavour:\"replace\",trigger:\"time\",setup:timeSetup},{name:\"mousereplace\",flavour:\"replace\",trigger:\"mouse\",setup:mouseSetup},{name:\"hoverreplace\",flavour:\"replace\",trigger:\"hover\",setup:hoverSetup},{name:\"revision\",flavour:\"replace\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"keyreplace\",flavour:\"replace\",trigger:\"key\",setup:keySetup},{name:\"timedremove\",flavour:\"remove\",trigger:\"time\",setup:timeSetup},{name:\"mouseremove\",flavour:\"remove\",trigger:\"mouse\",setup:mouseSetup},{name:\"hoverremove\",flavour:\"remove\",trigger:\"hover\",setup:hoverSetup},{name:\"removal\",flavour:\"remove\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"once\",flavour:\"remove\",trigger:\"visited\",setup:visitedSetup},{name:\"keyremove\",flavour:\"remove\",trigger:\"key\",setup:keySetup},{name:\"continue\",flavour:\"continue\",trigger:\"link\",setup:linkSetup},{name:\"timedcontinue\",flavour:\"continue\",trigger:\"time\",setup:timeSetup},{name:\"mousecontinue\",flavour:\"continue\",trigger:\"mouse\",setup:mouseSetup},{name:\"keycontinue\",flavour:\"continue\",trigger:\"key\",setup:keySetup},{name:\"cycle\",flavour:\"cycle\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"mousecycle\",flavour:\"cycle\",trigger:\"mouse\",setup:mouseSetup},{name:\"timedcycle\",flavour:\"cycle\",trigger:\"time\",setup:timeSetup},{name:\"keycycle\",flavour:\"replace\",trigger:\"key\",setup:keySetup}].forEach(function(e){e.handler=revisionSpanHandler;\\ne.shorthand=([\"link\",\"mouse\",\"hover\"].indexOf(e.trigger)>-1);macros[e.name]=e;macros[\"end\"+e.name]=nullobj;begintags.push(e.name);endtags.push(\"end\"+e.name);});function insideDepartingSpan(elem){var r=elem.parentNode;\\nwhile(!r.classList.contains(\"passage\")){if(r.classList.contains(\"revision-span-out\")){return true;}r=r.parentNode;}}function reviseAll(rt,rname){var rall=document.querySelectorAll(\".passage [data-flavour].\"+rname),ret=false;\\nfor(var i=0;i<rall.length;i++){if(!insideDepartingSpan(rall[i])){ret=revise(rt,rall[i])||ret;}}return ret;}function revise(rt,r,notrans){var ind2,curr,next,ind=-1,rev=(rt==\"revert\"),rnd=(rt.indexOf(\"random\")>-1),fl=r.getAttribute(\"data-flavour\"),rc=r.childNodes,cyc=(fl==\"cycle\"),rcl=rc.length-1;\\nfunction doToGainerSpans(n,fn){for(var k=n-1;k>=0;k--){if(rc[k+1].classList.contains(\"gains\")){fn(rc[k],notrans);}else{break;}}}for(var k=0;k<=rcl;k++){if(rc[k].getAttribute(\"data-enabled\")==\"true\"){ind=k;\\n}}if(rev){ind-=1;}curr=(ind>=0?rc[ind]:(cyc?rc[rcl]:null));ind2=ind;if(rnd){ind2=(ind+(Math.floor(Math.random()*rcl)))%rcl;}next=((ind2<rcl)?rc[ind2+1]:(cyc?rc[0]:null));\\nvar docurr=(rev?showVer:hideVer);var donext=(rev?hideVer:showVer);var currfn=function(){if(!(next&&next.classList.contains(\"gains\"))||rnd){docurr(curr,notrans);doToGainerSpans(ind,docurr,notrans);\\n}};var nextfn=function(){donext(next,notrans);if(rnd){doToGainerSpans(ind2+1,donext,notrans);}};if(!rev){currfn();nextfn();}else{nextfn();currfn();}return(cyc?true:(rev?(ind>0):(ind2<rcl-1)));\\n}macros.revert=macros.revise=macros.randomise=macros.randomize={handler:function(a,b,c){var l,rev,rname;function disableLink(l){l.style.display=\"none\";}function enableLink(l){l.style.display=\"inline\";\\n}function updateLink(l){if(l.className.indexOf(\"random\")>-1){enableLink(l);return;}var rall=document.querySelectorAll(\".passage [data-flavour].\"+rname),cannext,canprev,i,ind,r,fl;\\nfor(i=0;i<rall.length;i++){r=rall[i],fl=r.getAttribute(\"data-flavour\");if(insideDepartingSpan(r)){continue;}if(fl==\"cycle\"){cannext=canprev=true;}else{if(r.firstChild.getAttribute(\"data-enabled\")==!1+\"\"){canprev=true;\\n}if(r.lastChild.getAttribute(\"data-enabled\")==!1+\"\"){cannext=true;}}}var can=(l.classList.contains(\"revert\")?canprev:cannext);(can?enableLink:disableLink)(l);}function toggleText(w){w.classList.toggle(rl+\"Enabled\");\\nw.classList.toggle(rl+\"Disabled\");w.style.display=((w.style.display==\"none\")?\"inline\":\"none\");}var rl=\"reviseLink\";if(c.length<2){throwError(a,b+\" macro needs 2 parameters\");\\nreturn;}rname=c.shift().replace(\" \",\"_\");l=Wikifier.createInternalLink(a,null);l.className=\"internalLink \"+rl+\" \"+rl+\"_\"+rname+\" \"+b;var v=\"\";var end=false;var out=false;\\nif(c.length>1&&c[0][0]==\"$\"){v=c[0].slice(1);c.shift();}switch(c[c.length-1]){case\"end\":end=true;c.pop();break;case\"out\":out=true;c.pop();break;}var h=state.history[0].variables;\\nfor(var i=0;i<c.length;i++){var on=(i==Math.max(c.indexOf(h[v]),0));var d=insertElement(null,\"span\",null,rl+((on)?\"En\":\"Dis\")+\"abled\");if(on){h[v]=c[i];l.setAttribute(\"data-cycle\",i);\\n}else{d.style.display=\"none\";}insertText(d,c[i]);l.appendChild(d);}l.onclick=function(){reviseAll(b,rname);var t=this.childNodes,u=this.getAttribute(\"data-cycle\")-0,m=t.length,n,lall,i;\\nif((end||out)&&u>=m-(end?2:1)){if(end){n=this.removeChild(t[u+1]||t[u]);n.className=rl+\"End\";n.style.display=\"inline\";this.parentNode.replaceChild(n,this);}else{this.parentNode.removeChild(this);\\nreturn;}}else{toggleText(t[u]);u=(u+1)%m;if(v){h[v]=c[u];}toggleText(t[u]);this.setAttribute(\"data-cycle\",u);}lall=document.getElementsByClassName(rl+\"_\"+rname);\\nfor(i=0;i<lall.length;i++){updateLink(lall[i]);}};disableLink(l);setTimeout((function(l){return function(){updateLink(l);};}(l)),1);l=null;}};macros.mouserevise=macros.hoverrevise={handler:function(a,b,c,d){var endtags=[\"end\"+b],evt=(window.onmouseenter===null?\"onmouseenter\":\"onmouseover\"),t=tagcontents(d,[b],endtags,endtags,d.source.indexOf(\">>\",d.matchStart)+2);\\nif(t){var rname=c[0].replace(\" \",\"_\"),h=insertElement(a,\"span\",null,\"hoverrevise hoverrevise_\"+rname),f=function(){var done=!reviseAll(\"revise\",rname);if(b!=\"hoverrevise\"&&done){this[evt]=null;\\n}};new Wikifier(h,t[0]);if(b==\"hoverrevise\"){h.onmouseover=f;h.onmouseout=function(){reviseAll(\"revert\",rname);};}else{h[evt]=f;}h=null;}}};macros.instantrevise={handler:function(a,b,c,d){reviseAll(\"revise\",c[0].replace(\" \",\"_\"));\\n}};macros.endmouserevise=nullobj;macros.endhoverrevise=nullobj;}());",
+      "links": []
+    },
+    {
+      "pid": 67,
+      "name": "coward end",
+      "text": "Are you sure?\\n\\n[[Yes|coward end 2]]\\n[[No|previous()]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "coward end 2",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "top end",
+      "text": "Are you sure?\\n\\n[[Yes|top end 2]]\\n[[No|previous()]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "top end 2",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "StoryAuthor",
+      "text": "Astrid Dalmady",
+      "links": []
+    },
+    {
+      "pid": 70,
+      "name": "trench 2",
+      "text": "<h2>In the Trench (6000 m \u2013  11,000 max depth (Challenger Deep))</h2><<set $air to 5>>\\n\\n<div class=\"y\">\"Keep on eye on my depth reading, okay? I wanna see how far this goes.\"</div>\\n\\n<div class=\"j\">  Okay, but be careful. We missed this drop, so the floor could come up on you without much warning.</div>\\n\\n<div class=\"y\">\"I'll be careful. Don't worry.\"</div>\\n\\n[[Descend|trench 3]]",
+      "links": [
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "trench 3",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "trench 3",
+      "text": "There are moments, as you sink deeper and deeper, where it feels like the ocean is going to gobble you up. It's just so dark, and wide and, for the most parts, quiet.\\n\\n<div class=\"j\">  hey\u2026 do you hear that?</div>\\n\\nYou don't, at first, but as soon as you're asked to listen, you hear it. It's like rocks grinding down silver bells, a song of violence and beauty.\\n\\n<div class=\"j\">  I wonder what's making that sound.</div>\\n\\n[[Me too|trench 3 louder]]",
+      "links": [
+        {
+          "text": "Me too",
+          "destination": {
+            "name": "trench 3 louder",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "silence",
+      "text": "You don't say a word. Thankfully, Jackie falls silent as well. It's stupid, but you don't want it to hear you.\\n\\nAnother long low scrape and you brace yourself on the sides of the sub. You wait, and wait.\\n\\n<div class=\"j\">  \u2026nothing's coming up anymore. I think it's gone.</div>\\n\\nAs a scientist, you normally feel excitement when facing what is undoubtedly a new species. Maybe that feeling will come later.\\n\\n<div class=\"l\">Log: Shark????\\n<em>Carcharodon megalodon?</em> [\u2026no. That's impossible]\\nEstimated size: 18 m</div>\\n\\n<div class=\"d\">Damage to Hull</div><<set $damage +=1>>\\n\\n[[Ascend|abysstomidtrans][$destination = \"mid 4\"]]\\n[[Left|abyss 3]][[Right|abyss 5]]\\n<<if visited(\"abysstofloor\")>>[[Descend|abysstofloortrans][$destination = \"floor 4\"]]<<else>>[[Descend|abysstofloor][$destination = \"floor 4\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstomidtrans",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "abyss 3",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "abyss 5",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloor",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "midtoabysstrans",
+      "text": "\\n\\n\\n<<goto $destination>>",
+      "links": []
+    },
+    {
+      "pid": 74,
+      "name": "twitomid",
+      "text": "<div class=\"y\">\"This place is amazing. I can't believe all we've seen.\"</div>\\n\\n<div class=\"j\">  I know, right? We're totally going to get funded for more dives after this.</div>\\n\\n<div class=\"y\">\"We can only hope. Still, I want to make the best of this one. I always feel like I'm wasting time when I can't see anything.\"</div>\\n\\n<div class=\"j\">  Need a distraction?</div>\\n\\n[[What did you have in mind?|mind]][[What I need are more specimens.|specimens]]",
+      "links": [
+        {
+          "text": "What did you have in mind?",
+          "destination": {
+            "name": "mind",
+            "pid": 110
+          }
+        },
+        {
+          "text": "What I need are more specimens.",
+          "destination": {
+            "name": "specimens",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Start",
+      "text": "<h1>Tan&shy;garoa Deep</h1>\\n<div class=\"name\"><a href=\"http://astrid.dalmady.com\">by Astrid Dalmady</a></div>\\n\\nThis is the first journey of the SS Tangaroa, a deep-sea submersible designed to explore one of the most mysterious and inhospitable places in the world: the depths of the Pacific Ocean.\\n\\nFull of measuring and safety equipment, it has room for only one passenger: you.\\n\\nYour only link to the surface is the radio connection to your research partner, Jackie Kapule, and her access to your external cameras.\\n\\nYou\u2019ve always thought it was a shame that we know more about space than we do about the ocean.\\n\\n[[Isn\u2019t it time to start changing that?|jackie]]",
+      "links": [
+        {
+          "text": "Isn\u2019t it time to start changing that?",
+          "destination": {
+            "name": "jackie",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "dark attribute",
+      "text": "<h3>Image Gallery Attributions</h3>\\n\\n<div class=\"nobutton\"><b>Oceanic White-Tip</b>\\n\\nBy No machine-readable author provided. Peterkoelbl assumed (based on copyright claims). - No machine-readable source provided. Own work assumed (based on copyright claims)., CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=802268\\n\\n<b>Lion's Mane Jellyfish</b>\\n\\nBy Dan Hershman http://www.flickr.com/photos/hershman/ - http://www.flickr.com/photos/hershman/253773774/, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=10271891\\n\\n<b>Sperm Whale </b>\\n\\nBy Gabriel Barathieu - http://www.flickr.com/photos/barathieu/7277953560/, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=24212362\\n\\n<b>Yellow-Bellied Sea Snake</b>\\n\\nBy Aloaiza - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=3582452\\n\\n<b>Cuttlefish</b>\\n\\nBy \u00a9 Hans Hillewaert, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=4059499\\n\\n<b>Frilled Shark</b>\\n\\nBy \u00a9 Citron\u00a0/, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=11142485\\n\\n<b>Anglerfish</b>\\n\\nBy Javontaevious at English Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=37002424\\n\\n<b>Giant Squid</b>\\n\\nBy Mike Goren from New York - Flickr, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=745275\\n\\n<b>Colossal Squid</b>\\n\\nBy \u00a9 Citron\u00a0/, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=18219667\\n\\n<b>Megalodon</b>\\n\\nBy Spotty11222 at English Wikipedia - Transferred from\u00a0en.wikipedia\u00a0to Commons\u00a0by\u00a0FunkMonk\u00a0using CommonsHelper., Public Domain, https://commons.wikimedia.org/w/index.php?curid=7692605\\n\\n<b>Pacific Viperfish</b>\\n\\nBy David Csepp, NMFS/AKFSC/ABL - http://www.photolib.noaa.gov/htmls/fish4037.htm, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10023572\\n\\n<b>Vampire Squid</b>\\n\\nBy Ewald R\u00fcbsamen - from Thiele in Chun, C. 1910. Die Cephalopoden. url, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10269536\\n\\n<b>Pacific Hagfish</b>\\n\\nBy Linda Snook, National Oceanic and Atmospheric Administration (NOAA) / Cordell Bank National Marine Sanctuary (CBNMS) - http://www.photolib.noaa.gov/htmls/sanc1692.htm http://www.photolib.noaa.gov/bigs/sanc1692.jpg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=8984320\\n</div>\\n\\n[[Back to Gallery|dark gallery]]\\n[[Back to Credits|dark credits]]\\n<a href=\"\">Dive Again?</a>\\n",
+      "links": [
+        {
+          "text": "Back to Gallery",
+          "destination": {
+            "name": "dark gallery",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Back to Credits",
+          "destination": {
+            "name": "dark credits",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "Image Attributions",
+      "text": "<h3>Image Gallery Attributions</h3>\\n\\n<div class=\"nobutton\"><b>Oceanic White-Tip</b>\\n\\nBy No machine-readable author provided. Peterkoelbl assumed (based on copyright claims). - No machine-readable source provided. Own work assumed (based on copyright claims)., CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=802268\\n\\n<b>Lion's Mane Jellyfish</b>\\n\\nBy Dan Hershman http://www.flickr.com/photos/hershman/ - http://www.flickr.com/photos/hershman/253773774/, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=10271891\\n\\n<b>Sperm Whale </b>\\n\\nBy Gabriel Barathieu - http://www.flickr.com/photos/barathieu/7277953560/, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=24212362\\n\\n<b>Yellow-Bellied Sea Snake</b>\\n\\nBy Aloaiza - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=3582452\\n\\n<b>Cuttlefish</b>\\n\\nBy \u00a9 Hans Hillewaert, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=4059499\\n\\n<b>Frilled Shark</b>\\n\\nBy \u00a9 Citron\u00a0/, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=11142485\\n\\n<b>Anglerfish</b>\\n\\nBy Javontaevious at English Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=37002424\\n\\n<b>Giant Squid</b>\\n\\nBy Mike Goren from New York - Flickr, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=745275\\n\\n<b>Colossal Squid</b>\\n\\nBy \u00a9 Citron\u00a0/, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=18219667\\n\\n<b>Megalodon</b>\\n\\nBy Spotty11222 at English Wikipedia - Transferred from\u00a0en.wikipedia\u00a0to Commons\u00a0by\u00a0FunkMonk\u00a0using CommonsHelper., Public Domain, https://commons.wikimedia.org/w/index.php?curid=7692605\\n\\n<b>Pacific Viperfish</b>\\n\\nBy David Csepp, NMFS/AKFSC/ABL - http://www.photolib.noaa.gov/htmls/fish4037.htm, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10023572\\n\\n<b>Vampire Squid</b>\\n\\nBy Ewald R\u00fcbsamen - from Thiele in Chun, C. 1910. Die Cephalopoden. url, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10269536\\n\\n<b>Pacific Hagfish</b>\\n\\nBy Linda Snook, National Oceanic and Atmospheric Administration (NOAA) / Cordell Bank National Marine Sanctuary (CBNMS) - http://www.photolib.noaa.gov/htmls/sanc1692.htm http://www.photolib.noaa.gov/bigs/sanc1692.jpg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=8984320\\n</div>\\n\\n[[Back to Gallery|gallery]]\\n[[Back to Credits|credits]]\\n<a href=\"\">Dive Again?</a>\\n",
+      "links": [
+        {
+          "text": "Back to Gallery",
+          "destination": {
+            "name": "gallery",
+            "pid": 119
+          }
+        },
+        {
+          "text": "Back to Credits",
+          "destination": {
+            "name": "credits",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "laugh",
+      "text": "You laugh, the sound bubbling up from your chest. Jackie could always make you laugh.\\n\\n<div class=\"j\">  Well it's true!</div>\\n\\nYou keep laughing.\\n\\n<div class=\"j\">  Oh just get back to work.</div><<set $air to 3>>\\n\\n[[Enter the Abyss|$destination]]",
+      "links": []
+    },
+    {
+      "pid": 79,
+      "name": "jackie 2",
+      "text": "<div class=\"y\">\"It's a little cramped, but we're good.\"</div>\\n\\n<div class=\"j\">  Heh. Good thing you\u2019re not claustrophobic. Do they train that out of you in the doctorate program or something? I got queasy just watching you get in there.</div>\\n\\n<div class=\"y\">\u201cOf course, they do. \u2018Counteracting Effects of Small Spaces on HomoSapiens\u2019. It counts as a lab credit. I\u2019m surprised they didn't offer it in your program.\u201d</div>\\n\\n<div class=\"j\">  Haha. Very funny, Doc. I\u2019ll just have to settle for seeing it through the video feed like everyone else. *deep breath* Okay, here we go. Releasing in 3\u20262\u20261.</div>\\n\\n[[Dive|sunlight start]]",
+      "links": [
+        {
+          "text": "Dive",
+          "destination": {
+            "name": "sunlight start",
+            "pid": 116
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "trench 2 bottom",
+      "text": "<h2>Tangaroa Deep (15,000 m)</h2><<set $air to 9>>\\n\\nNo one has ever been this deep. There are few places in the world that are unexplored, but you have found one of them.\\n\\nYour ship groans as you pull it to a halt, a few meters away from the sandy bottom. You see the trails of creatures cut into the sand like weaving highways, and perhaps even a shuffle of activity.\\n\\nYou made it.\\n\\n<div class=\"j\">  Hey, I don't want to spoil this or anything, but the ship readings are getting a little dicey. I don't think anyone ever planned to be this deep.</div>\\n\\n[[Return to the Surface.|tangaroa end]]\\n[[Stay and take a look around.|stay]]",
+      "links": [
+        {
+          "text": "Return to the Surface.",
+          "destination": {
+            "name": "tangaroa end",
+            "pid": 82
+          }
+        },
+        {
+          "text": "Stay and take a look around.",
+          "destination": {
+            "name": "stay",
+            "pid": 120
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "stay in",
+      "text": "It calls you. You try and move the ship, but you just struggle uselessly against whatever has you in its grasp.\\n\\nIt calls you. The radio connection to Jackie is dead.\\n\\nIt calls you. Your instruments are malfunctioning. You are at an impossible depth, in an impossible place.\\n\\n<div class=\"e\">COME OUT, LITTLE DIVER.</div>\\n\\nYou take a deep, shuddering breath, one of your last, you imagine. \\n\\n<b>Because a human is always human, and you can't come up for air.</b> <<set $air to 12>>\\n\\n[[The End|dark credits]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "dark credits",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "tangaroa end",
+      "text": "Are you sure?\\n\\n[[Yes|tangaroa end 2]]\\n[[No|previous()]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "tangaroa end 2",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "leave end 2",
+      "text": "<div class=\"j\">Oh thank god. Oh thank god.</div>\\n\\nYou hear Jackie mutter all the way back up, as the world gets brighter and brighter.\\n\\nYou see the sun again, as the crew rush over and help you out of the sub. Your legs are cramped in a way you hadn't even noticed. Jackie is crying.\\n\\n<div class=\"j\">We're gonna change the world with this, you know?</div>\\n\\nShe hands you a bottle of water.\\n\\n<div class=\"y\">\"If we can find it again.\"</div>\\n\\n<div class=\"j\">We'll find it.</div>\\n\\nDoubt settles in your gut like a dead whale. You should have stayed. You could have stayed.\\n\\n<div class=\"j\">Trust me. You'll get to go back there again.</div>\\n\\nYou just nod, still thinking of the dark, deep city, and how you'll get back there.\\n\\nAnd even though you spent the whole time trapped in a bubble of steel and glass, you take a drink of water \\n\\n<b>and all you taste is salt.</b>\\n\\n[[The End|credits]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "credits",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "Goto",
+      "text": "version.extensions.timedgotoMacro={major:1,minor:2,revision:0};\\nmacros[\"goto\"]=macros.timedgoto={timer:null,handler:function(a,b,c,d){function cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return +(s.slice(0,-2))||0\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return +(s.slice(0,-1))*1000||0\\n}}}throwError(a,s+\" isn't a CSS time unit\");return 0}var t,d,m,s;\\nt=c[c.length-1];d=d.fullArgs();m=0;if(b!=\"goto\"){d=d.slice(0,d.lastIndexOf(t));\\nm=cssTimeUnit(t)}d=eval(Wikifier.parse(d));if(d+\"\"&&state&&state.init){if(macros[\"goto\"].timer){clearTimeout(macros[\"goto\"].timer)\\n}s=state.history[0].passage.title;macros[\"goto\"].timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a)\\n}},m)}}};",
+      "links": []
+    },
+    {
+      "pid": 85,
+      "name": "Mid to Abyss",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n\\n.passage {\\n    background: #041a25; /* For browsers that do not support gradients */\\n    background: -webkit-linear-gradient(#041a25, black); /* For Safari 5.1 to 6.0 */\\n    background: -o-linear-gradient(#041a25, black); /* For Opera 11.1 to 12.0 */\\n    background: -moz-linear-gradient(#041a25, black); /* For Firefox 3.6 to 15 */\\n    background: linear-gradient(#041a25, black); /* Standard syntax */\\n}\\n\\nbody {\\nbackground-color:black;\\n}",
+      "links": []
+    },
+    {
+      "pid": 86,
+      "name": "next",
+      "text": "<div class=\"y\">\"What happens next?\"</div>\\n\\n<div class=\"j\">  Well it depends on who tells it. Some versions have the diver live in between, not able to stay in the ocean, but not able to really leave it behind either. In other ones, she ends up giving up on her real life and turning into a seal.</div>\\n\\n<div class=\"y\">\"Guess you have to be careful what you wish for.\"</div>\\n\\n<div class=\"j\">  Yeah. I always thought both endings kind of sucked.</div>\\n\\n[[Then why'd you tell me?|why]][[The seal ending wasn't so bad.|seal]]",
+      "links": [
+        {
+          "text": "Then why'd you tell me?",
+          "destination": {
+            "name": "why",
+            "pid": 123
+          }
+        },
+        {
+          "text": "The seal ending wasn't so bad.",
+          "destination": {
+            "name": "seal",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "specimens",
+      "text": "<div class=\"y\">\"What I need are more specimens.\"</div>\\n\\n<div class=\"j\">  What you need is to relax. I have an eye on the video feed, and in the meantime I can tell you a story.</div>\\n\\n<div class=\"y\">\"Fine.\"</div>\\n\\n<div class=\"j\">  It goes like this.</div>\\n\\n[[Listen]]",
+      "links": [
+        {
+          "text": "Listen",
+          "destination": {
+            "name": "Listen",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "trench 2 silence",
+      "text": "<h2>In the Trench (14,000 m)</h2><<set $air to 8>>\\n\\nIt just keeps going, down and down. Your hull creaks, but holds. Even with your connection to Jackie, the silence feels oppressive.\\n\\n[[Descend|trench 2 bottom]]",
+      "links": [
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "trench 2 bottom",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "no chase",
+      "text": "<div class=\"y\">\"I don't think I should.\"</div>\\n\\n<div class=\"j\">  Why on earth not? You saw that thing! It was monstrous.</div>\\n\\n<div class=\"y\">\"Exactly, and I'm in a teeny, tiny sub. What if it hit me?!\"</div>\\n\\nOf course, the moment you say it, you feel a bump. You fall still, pulse pounding in your eyes.\\n\\n<div class=\"j\">  \u2026I got another look at it in the cameras\u2026 It's\u2026Doc, it's really big.</div>\\n\\nThe sub tilts again, you hear the long low scrape of a fun against metal.\\n\\n<div class=\"j\">  Doc?</div>\\n\\n[[Just tell me when its gone.|gone]][[Stay silent.|silence]]",
+      "links": [
+        {
+          "text": "Just tell me when its gone.",
+          "destination": {
+            "name": "gone",
+            "pid": 107
+          }
+        },
+        {
+          "text": "Stay silent.",
+          "destination": {
+            "name": "silence",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "atlantis",
+      "text": "<div class=\"y\">\"I think we found Atlantis.\"</div>\\n\\n<div class=\"j\">  That's just a legend. It's probably just some naturally occuri-</div>\\n\\nHer words die out as your spotlight catches on an honest-to-god building. Its domed roof fades into the darkness, held up by barely eroded columns. A delicate molding decorates the edges of a wide entryway, flowing like tides or tentacles.\\n\\nIf you aim your light just so, you can see more shapes, tall and ominous rising behind the temple.\\n\\nThe entryway is more than wide enough to fit your sub through\\n\\n[[Return to the Surface.|leave]]\\n[[Approach the Temple.|temple]][[Look behind the Temple.|behind]]",
+      "links": [
+        {
+          "text": "Return to the Surface.",
+          "destination": {
+            "name": "leave",
+            "pid": 39
+          }
+        },
+        {
+          "text": "Approach the Temple.",
+          "destination": {
+            "name": "temple",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Look behind the Temple.",
+          "destination": {
+            "name": "behind",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "behind",
+      "text": "<<set $air to 11>>Your sub feels like it moves slower through the water. You pass the entryway, dark and gaping and turn your light beyond.\\n\\nYou can't see much though the dark, but you know what you do see. A city, rising from the deep, spires and towers and domed roofs that reach up from the earth and into the dark. There could be thousands of buildings here.\\n\\nBut the only one with a visible entryway is still the temple you first found.\\n\\n[[Return to the Surface.|leave]]\\n[[Enter the Temple.|temple]]",
+      "links": [
+        {
+          "text": "Return to the Surface.",
+          "destination": {
+            "name": "leave",
+            "pid": 39
+          }
+        },
+        {
+          "text": "Enter the Temple.",
+          "destination": {
+            "name": "temple",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "suntotwitrans",
+      "text": "\\n\\n\\n\\n<<goto $destination>>",
+      "links": []
+    },
+    {
+      "pid": 93,
+      "name": "twitomidtrans",
+      "text": "\\n\\n\\n\\n<<goto $destination>>",
+      "links": []
+    },
+    {
+      "pid": 94,
+      "name": "hear",
+      "text": "<div class=\"y\">\"Did you hear that?\"</div>\\n\\nYour voice shakes. It sounds odd inside the tiny cockpit, as if you'd never heard it before.\\n\\n<div class=\"j\">  No. Nothing registering up here. What did you hear?</div>\\n\\nYou rack your mind to describe it and come up with nothing. \\n\\n<div class=\"y\">\"I don't know\u2026\"</div>\\n\\n<div class=\"l\">Log: ???\\n<em>???</em>\\nEstimated size: Big</div>\\n\\n[[Ascend|midtotwitrans][$destination = \"twilight 1\"]]\\n[[Left|mid 5]][[Right|mid 2]]\\n<<if visited(\"midtoabyss\")>>[[Descend|midtoabysstrans][$destination = \"abyss 1\"]]<<else>>[[Descend|midtoabyss][$destination = \"abyss 1\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "midtotwitrans",
+            "pid": 129
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "mid 5",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "mid 2",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabysstrans",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "midtoabyss",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "floor 5",
+      "text": "<<if (previous() is \"abysstofloortrans\") OR (previous() is \"cramped\") OR (previous() is \"rush\")>><h2>The Sea Floor? (6000 m?)</h2>\\n<<endif>>\\n<<once>>A creature, halfway between a slug and a snake, creeps along the sea floor, devouring any bits of flesh and snow that have floated this far down.\\n\\n<div class=\"j\">  Never seen ones of these this deep before. This place is pretty weird, isn't it?</div>\\n\\n<div class=\"l\">Log: Pacific Hagfish\\n<em>Eptatretus stoutii</em>\\nEstimated size: 0.5 m</div><<remember $hag is true>><<endonce>> <<later>>\\n\\nThe sea is black. Only your instruments let you know you've been here before.\\n\\n<div class=\"l\">Previously Logged: Pacific Hagfish\\n<em>Eptatretus stoutii</em>\\nEstimated size: 0.5 m</div><<endlater>>\\n\\n[[Ascend|abysstofloortrans][$destination = \"abyss 5\"]][[Return to The Surface|top end]]\\n[[Left|floor 4]][[Right|floor 1]]\\n<<if visited(\"floor 1\") AND visited(\"floor 2\") AND visited(\"floor 3\") AND visited(\"floor 4\")>>[[Huh? What's this below you?|entryway]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "top end",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "floor 4",
+            "pid": 96
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "floor 1",
+            "pid": 99
+          }
+        },
+        {
+          "text": "Huh? What's this below you?",
+          "destination": {
+            "name": "entryway",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "floor 4",
+      "text": "<<if (previous() is \"abysstofloortrans\") OR (previous() is \"cramped\") OR (previous() is \"rush\")>><h2>The Sea Floor? (6000 m?)</h2>\\n<<endif>>\\n<<once>>There is nothing here. Only darkness and an endless plain of sand. If you didn't know any better, you'd call it a desert. Wettest one on earth.<<endonce>><<later>>\\n\\nThe sea is black. Only your instruments let you know you've been here before.\\n\\n<<endlater>>\\n\\n[[Ascend|abysstofloortrans][$destination = \"abyss 4\"]][[Return to The Surface|top end]]\\n[[Left|floor 3]][[Right|floor 5]]\\n<<if visited(\"floor 1\") AND visited(\"floor 2\") AND visited(\"floor 3\") AND visited(\"floor 5\")>>[[Huh? What's this below you?|entryway]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "top end",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "floor 3",
+            "pid": 100
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "floor 5",
+            "pid": 95
+          }
+        },
+        {
+          "text": "Huh? What's this below you?",
+          "destination": {
+            "name": "entryway",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "rush",
+      "text": "<div class=\"y\">\"I'm in no rush.\"</div>\\n\\n<div class=\"j\">  Really? No rush to leave the tiny, cramped, underwater death trap?</div>\\n\\n<div class=\"y\">\"The alternative is to be back at the lab waiting for computers to analyze data, so yeah, no rush.\"</div>\\n\\n<div class=\"j\">  Ha! You can't run from reality, Doc.</div><<set $air to 4>>\\n\\n[[Approach the Sea Floor|$destination]]",
+      "links": []
+    },
+    {
+      "pid": 98,
+      "name": "MidtoTwi",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n\\n.passage {\\n    background: #041a25; /* For browsers that do not support gradients */\\n    background: -webkit-linear-gradient(#041a25, #305865); /* For Safari 5.1 to 6.0 */\\n    background: -o-linear-gradient(#041a25, #305865); /* For Opera 11.1 to 12.0 */\\n    background: -moz-linear-gradient(#041a25, #305865); /* For Firefox 3.6 to 15 */\\n    background: linear-gradient(#041a25, #305865); /* Standard syntax */\\n}\\n\\nbody {\\nbackground-color:#305865;\\n}",
+      "links": []
+    },
+    {
+      "pid": 99,
+      "name": "floor 1",
+      "text": "<<if (previous() is \"abysstofloortrans\") OR (previous() is \"cramped\") OR (previous() is \"rush\")>><h2>The Sea Floor? (6000 m?)</h2>\\n<<endif>>\\n<<once>>Most of the sand in this patch of ocean is a dusty grey, as if the lack of light has peeled away its color as well. There is, however, one exception.\\n\\nIt's a disk, around 5m in circumference of deep aquamarine\u2026well, slime really is the best way to put it. It glistens oddly in the water.\\n\\n<div class=\"j\">  Urgh. Do you think it's pollution?</div>\\n\\n<div class=\"y\">\"Maybe.\" </div>\\n\\nBut you don't feel sure.<<endonce>><<later>>\\n\\nThe sea is black. Only your instruments let you know you've been here before.<<endlater>>\\n\\n[[Ascend|abysstofloortrans][$destination = \"abyss 1\"]][[Return to The Surface|top end]]\\n[[Left|floor 5]][[Right|floor 2]]\\n<<if visited(\"floor 2\") AND visited(\"floor 3\") AND visited(\"floor 4\") AND visited(\"floor 5\")>>[[Huh? What's this below you?|entryway]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "top end",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "floor 5",
+            "pid": 95
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "floor 2",
+            "pid": 101
+          }
+        },
+        {
+          "text": "Huh? What's this below you?",
+          "destination": {
+            "name": "entryway",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "floor 3",
+      "text": "<<if (previous() is \"abysstofloortrans\") OR (previous() is \"cramped\") OR (previous() is \"rush\")>><h2>The Sea Floor? (6000 m?)</h2>\\n<<endif>>\\n<<once>>Everything dies. From the tiniest plankton to the largest whales, everything dies and falls to the bottom of the sea.\\n\\nThe whales you see here (blue whales? must be, they're huge) must have died recently. Thousands of hagfish still writhe and tear at decaying flesh. Spider crabs the size of large dogs peel blubber and meat away from shining white bones.\\n\\nYou say nothing. It's normal to be silent in a graveyard.\\n\\n<div class=\"l\">Log: Pacific Hagfish\\n<em>Eptatretus stoutii</em>\\nEstimated size: 0.5 m</div><<remember $hag to true>><<endonce>> <<later>>\\n\\nThe sea is black. Only your instruments let you know you've been here before.\\n\\n<div class=\"l\">Previously Logged:Pacific Hagfish\\n<em>Eptatretus stoutii</em>\\nEstimated size: 0.5 m</div><<endlater>>\\n\\n[[Ascend|abysstofloortrans][$destination = \"abyss 3\"]][[Return to The Surface|top end]]\\n[[Left|floor 2]][[Right|floor 4]]\\n<<if visited(\"floor 1\") AND visited(\"floor 2\") AND visited(\"floor 4\") AND visited(\"floor 5\")>>[[Huh? What's this below you?|entryway]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "top end",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "floor 2",
+            "pid": 101
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "floor 4",
+            "pid": 96
+          }
+        },
+        {
+          "text": "Huh? What's this below you?",
+          "destination": {
+            "name": "entryway",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "floor 2",
+      "text": "<<if (previous() is \"abysstofloortrans\") OR (previous() is \"cramped\") OR (previous() is \"rush\")>><h2>The Sea Floor? (6000 m?)</h2>\\n<<endif>>\\n<<once>>When people think of the depths, they normally think of black and inky blue. But the deep is all that and red. Bloody, garish red.\\n\\nThe creatures here paint themselves with it, as red light is the first to die on its way from the surface. But you bring your own spotlight, and you make them shine with their colors.\\n\\nRight now, a vampire squid swims by, dusky red, it's graceful mantle hiding deadly spines within.\\n\\n<div class=\"l\">Log: Vampire Squid\\n<em>Vampyroteuthis infernalis</em>\\nEstimated size: 30 cm</div><<remember $vampire to true>>\\n\\n<<endonce>><<later>>\\n\\nThe sea is black. Only your instruments let you know you've been here before.\\n\\n<div class=\"l\">Previously Logged: Vampire Squid\\n<em>Vampyroteuthis infernalis</em>\\nEstimated size: 30 cm</div><<endlater>>\\n\\n[[Ascend|abysstofloortrans][$destination = \"abyss 2\"]][[Return to The Surface|top end]]\\n[[Left|floor 1]][[Right|floor 3]]\\n<<if visited(\"floor 1\") AND visited(\"floor 3\") AND visited(\"floor 4\") AND visited(\"floor 5\")>>[[Huh? What's this below you?|entryway]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Return to The Surface",
+          "destination": {
+            "name": "top end",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "floor 1",
+            "pid": 99
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "floor 3",
+            "pid": 100
+          }
+        },
+        {
+          "text": "Huh? What's this below you?",
+          "destination": {
+            "name": "entryway",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "TwitoSun",
+      "text": ".passage {\\n    background: #61aba8; /* For browsers that do not support gradients */\\n    background: -webkit-linear-gradient(#305865, #61aba8); /* For Safari 5.1 to 6.0 */\\n    background: -o-linear-gradient(#305865, #61aba8); /* For Opera 11.1 to 12.0 */\\n    background: -moz-linear-gradient(#305865, #61aba8); /* For Firefox 3.6 to 15 */\\n    background: linear-gradient(#305865, #61aba8); /* Standard syntax */\\n}\\n\\nbody {\\nbackground-color:#61aba8;\\n}",
+      "links": []
+    },
+    {
+      "pid": 103,
+      "name": "Google Analytics",
+      "text": "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\\n  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\\n\\n  ga('create', 'UA-52477944-8', 'auto');\\n  ga('send', 'pageview');",
+      "links": []
+    },
+    {
+      "pid": 104,
+      "name": "Main Sheet Abyss Below",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n@import url(https://fonts.googleapis.com/css?family=Roboto:500,400,300,300italic|Roboto+Slab:300,400);\\n\\nbody {\\n\\t/* This affects the entire page */\\nbackground-color:#61aba8;\\nfont-family: 'Roboto', sans-serif;\\nfont-weight:300;\\ntext-align: center;\\nfont-size: 1.5em;\\nmargin:0;\\n}\\nh1 {\\nfont-size: 5em;\\nfont-size: 8vw;\\nfont-weight:400;\\n-webkit-margin-before: 0em;\\n    -webkit-margin-after: 0em;\\n    -webkit-margin-start: 0px;\\n    -webkit-margin-end: 0px;\\nfont-family: 'Roboto Slab', serif;\\n-webkit-box-sizing: content-box;\\n  -moz-box-sizing: content-box;\\n  box-sizing: content-box;\\n  border: none;\\n  color: rgba(255,255,255,0.50);\\n  text-align: center;\\n  -o-text-overflow: clip;\\n  text-overflow: clip;\\n  text-shadow: 4px 0 9px rgba(255,255,255,0.51) ;\\n/* Warning: Needed for oldIE support, but words are broken up letter-by-letter */\\n -ms-word-break: break-all;\\n     word-break: break-all;\\n\\n     /* Non standard for webkit */\\n     word-break: break-word;\\n-webkit-hyphens: auto;\\n   -moz-hyphens: auto;\\n    -ms-hyphens: auto;\\n        hyphens: auto;\\n}\\nh2{\\ntext-align:left;\\n-webkit-margin-before: 0em;\\n    -webkit-margin-after: 0em;\\n    -webkit-margin-start: 0px;\\n    -webkit-margin-end: 0px;\\ntext-shadow: 0 0 3px #fff;\\n}\\n\\nh3 {\\nfont-family: 'Roboto Slab', serif;\\nfont-size: 4em;\\nfont-size: 5vw;\\nfont-weight:400;\\n-webkit-margin-before: 0em;\\n    -webkit-margin-after: 0em;\\n    -webkit-margin-start: 0px;\\n    -webkit-margin-end: 0px;\\n-webkit-box-sizing: content-box;\\n  -moz-box-sizing: content-box;\\n  box-sizing: content-box;\\n  border: none;\\n  color: rgba(255,255,255,0.50);\\n  text-align: center;\\n  -o-text-overflow: clip;\\n  text-overflow: clip;\\n  text-shadow: 4px 0 9px rgba(255,255,255,0.51) ;\\n}\\n\\n\\n.passage {\\n\\t/* This only affects passages */\\ncolor:white;\\npadding-bottom:1em;\\nmargin:0;\\npadding-top:2em;\\n\\t\\n}\\n.passage a {\\n\\t/* This affects passage links */\\n\\t-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;\\n\\t-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;\\n\\tbox-shadow:inset 0px 1px 0px 0px #ffffff;\\n\\tbackground:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));\\n\\tbackground:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);\\n\\tbackground:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);\\n\\tbackground:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);\\n\\tbackground:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);\\n\\tbackground:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);\\n\\tfilter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);\\n\\tbackground-color:#ededed;\\n\\t-moz-border-radius:6px;\\n\\t-webkit-border-radius:6px;\\n\\tborder-radius:6px;\\n\\tborder:1px solid #a3a3a3;\\n\\tdisplay:inline-block;\\n\\tcursor:pointer;\\n\\tcolor:#383838;\\n\\tfont-family: 'Roboto Slab', serif;\\n\\tfont-size:1em;\\n\\tpadding:6px 24px;\\n\\ttext-decoration:none;\\n\\ttext-shadow:0px 1px 0px #ffffff;\\nmargin: 10px;\\n}\\n\\n.passage a:active {\\n\\tposition:relative;\\n\\ttop:1px;\\n}\\n\\n.passage a:hover {\\n\\t/* This affects links while the cursor is over them */\\nbackground-color: #adadad;\\n\\nbackground:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));\\n\\tbackground:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);\\n\\tbackground:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);\\n\\tbackground:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);\\n\\tbackground:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);\\n\\tbackground:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);\\n\\tfilter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);\\n\\tbackground-color:#dfdfdf;\\n}\\n\\n.body.content {\\n    width: 60%;\\nmargin-left:auto;\\nmargin-right:auto;\\n}\\n\\n\\n.passage:not(:last-child){ \\n\\ncolor: rgba(255, 255, 255, 0.3); }\\n\\n.j{\\nposition: relative;\\nright: 30px;\\ncolor:#F1CDA3;\\ntext-align:left;\\nfont-weight:500;\\n}\\n.l{\\ncolor:#73ed56;\\nfont-family: 'Roboto Slab', serif;\\n}\\n.d{\\ncolor:#c60c0c;\\nfont-family: 'Roboto Slab', serif;\\n}\\n.y{\\nposition: relative;\\nleft: 30px;\\ntext-align:right;\\nfont-weight:500;\\n}\\n.e{\\nfont-size: 3em;\\nfont-size: 6vw;\\nfont-weight:400;\\n-webkit-margin-before: 0em;\\n    -webkit-margin-after: 0em;\\n    -webkit-margin-start: 0px;\\n    -webkit-margin-end: 0px;\\nfont-family: 'Roboto Slab', serif;\\n\\n-webkit-box-sizing: content-box;\\n  -moz-box-sizing: content-box;\\n  box-sizing: content-box;\\n  border: none;\\n  color: rgba(255,255,255,0.50);\\n  text-align: center;\\n  -o-text-overflow: clip;\\n  text-overflow: clip;\\n  text-shadow: 4px 0 9px rgba(255,255,255,0.51) ;\\n/* Warning: Needed for oldIE support, but words are broken up letter-by-letter */\\n -ms-word-break: break-all;\\n     word-break: break-all;\\n\\n     /* Non standard for webkit */\\n     word-break: break-word;\\n-webkit-hyphens: auto;\\n   -moz-hyphens: auto;\\n    -ms-hyphens: auto;\\n        hyphens: auto;\\n}\\n\\n\\n#storyMenu {\\ncolor:white;\\nbackground-color:black;\\nposition:fixed; \\nbottom:0px; \\nwidth:100%; \\n}\\n\\n#passages {\\n\\tposition:relative;\\n\\tpadding-bottom: 1.5em;\\n}\\n/*hides titles*/\\n#passages .passage .title {display: none;}\\n#restart {display: none;}\\n.disabled { display:none; }\\n\\n/*progress bars*/\\n\\nprogress,          /* All HTML5 progress enabled browsers */\\nprogress[role]     /* polyfill */\\n{\\n \\n        /* Turns off styling - not usually needed, but good to know. */\\n        appearance: none;\\n        -moz-appearance: none;\\n        -webkit-appearance: none;\\n \\n        /* gets rid of default border in Firefox and Opera. */\\n        border: none;\\n \\n        /* Needs to be in here for Safari polyfill so background images work as expected. */\\n        background-size: auto;\\n         \\n        /* Dimensions */\\n        width: 200px;\\n        height: 20px;\\n         \\n}\\n\\n/* Polyfill */\\nprogress[role]:after {\\n        background-image: none; /* removes default background from polyfill */\\n}\\n \\n/* Ensure fallback text doesn't appear in polyfill */\\nprogress[role] strong {\\n        display: none;\\n}\\n \\n/* This sets the dimensions of our sample PB element*/\\n#test_bar {\\n  -webkit-appearance: none;\\n  border: solid 1px black;\\n  width: 200px;\\n  height: 20px;\\n}\\n\\n/* Background Colors  */\\nprogress,                          /* Firefox  */\\nprogress[role][aria-valuenow] {    /* Polyfill */\\n   background: #6c6c6c !important; /* !important is needed by the polyfill */\\n}\\n \\n/* Chrome */\\nprogress::-webkit-progress-bar {\\n    background: #6c6c6c;\\n}\\n\\n.dbar {\\nfloat:left;\\nmargin-left:3%;\\nmargin-bottom:3px;\\ndisplay:inline-block;\\n}\\n\\n.abar {\\nmargin-right:3%;\\nmargin-bottom:3px;\\ndisplay:inline-block;\\n}\\n \\n/* Foreground Colors   */\\n/* IE10 */\\n.dbar progress {\\n    color: #c60c0c;\\n}\\n \\n/* Firefox */\\n.dbar progress::-moz-progress-bar { \\n    background: #c60c0c;   \\n}\\n \\n/* Chrome */\\n.dbar progress::-webkit-progress-value {\\n    background: #c60c0c;\\n}\\n \\n/* Polyfill */\\n.dbar progress[aria-valuenow]:before  {\\n    background: #c60c0c;\\n}\\n\\n/* Foreground Colors   */\\n/* IE10 */\\n.abar progress {\\n    color: #87cefa;\\n}\\n \\n/* Firefox */\\n.abar progress::-moz-progress-bar { \\n    background: #87cefa;   \\n}\\n \\n/* Chrome */\\n.abar progress::-webkit-progress-value {\\n    background: #87cefa;\\n}\\n \\n/* Polyfill */\\n.abar progress[aria-valuenow]:before  {\\n    background: #87cefa;\\n}\\n\\n/*responsive images*/\\n\\ndiv.img {\\nwidth:auto;\\n}\\n\\ndiv.img img {\\n    width: 100%;\\n    height: auto;\\n}\\n\\ndiv.desc {\\n    padding: 15px;\\n    text-align: center;\\nfont-size:.8em;\\nfont-family:'Roboto Slab', serif;\\n}\\n\\n* {\\n    box-sizing: border-box;\\n}\\n\\n.responsive {\\npadding: 0 6px;\\nfloat:left;\\nwidth: 24.99999%;\\nheight:350px\\n}\\n\\n@media only screen and (max-width: 1100px){\\n    .responsive {\\n\\n        width: 49.99999%;\\n        margin: 6px 0;\\n    }\\n}\\n\\n@media only screen and (max-width: 600px){\\n    .responsive {\\n        width: 100%;\\n    }\\n}\\n\\n.clearfix:after {\\n    content: \"\";\\n    display: table;\\n    clear: both;\\n}\\n\\n.nobutton a {\\n\\t\\n\\t-moz-box-shadow:none;\\n\\t-webkit-box-shadow:none;\\n\\tbox-shadow:none;\\n\\tbackground:none;\\n\\t-moz-border-radius:none;\\n\\t-webkit-border-radius:none;\\n\\tborder-radius:none;\\n\\tborder:none;\\n\\tdisplay:inline;\\n\\tcursor:pointer;\\n\\tcolor: rgba(255,255,255,0.70);\\n\\tfont-family: 'Roboto Slab', serif;\\n\\tfont-size:1em;\\n\\tpadding:0;\\n\\ttext-decoration:underline;\\n\\ttext-shadow:none;\\nmargin: none;\\ntext-shadow: 4px 0 9px rgba(255,255,255,0.71) ;\\n\\t\\n}\\n.nobutton a:hover {\\n\\t\\n\\tbackground-color: none;\\n\\nbackground:none;\\ntext-shadow: 4px 0 9px rgba(255,255,255,1);\\ncolor: rgba(255,255,255,1);\\n}*/\\n\\n.name {\\nfont-size: 3em;\\nfont-size: 4vw;\\ntext-decoration: underline;\\n}\\n\\n.name a {\\n\\t-moz-box-shadow:none;\\n\\t-webkit-box-shadow:none;\\n\\tbox-shadow:none;\\n\\tbackground:none;\\n\\t-moz-border-radius:none;\\n\\t-webkit-border-radius:none;\\n\\tborder-radius:none;\\n\\tborder:none;\\n\\tdisplay:inline;\\n\\tcursor:pointer;\\n\\tcolor: rgba(255,255,255,0.70);\\n\\tfont-family: 'Roboto Slab', serif;\\n\\tfont-size:1em;\\n\\tpadding:0;\\n\\ttext-decoration:underline;\\n\\ttext-shadow:none;\\nmargin: none;\\ntext-shadow: 4px 0 9px rgba(255,255,255,0.71) ;\\n}\\n\\n.name a:hover {\\n\\t\\n\\t\\n\\tbackground-color: none;\\n\\nbackground:none;\\ntext-shadow: 4px 0 9px rgba(255,255,255,1);\\ncolor: rgba(255,255,255,1);\\n}*/",
+      "links": []
+    },
+    {
+      "pid": 105,
+      "name": "Listen 2",
+      "text": "<div class=\"j\">And suddenly, she had just enough air to reach the surface, and she broke through the waves and breathed the salty air and smiled and dove again.\\n\\nNow, she could go deeper and further than ever before. But no matter how far she went, a human is always a human, and they must come up for air. Still, she dove until her boat groaned with her catch and her muscles ached from swimming. \\n\\nShe got back in her boat, and reached for her water, only to spit it back out. What was once fresh water tasted like the briny sea. And when she went home, her family cooked a feast from what she'd caught, but she barely ate a bite. Now that she belonged to the sea, everything tasted like salt.\\n\\nShe ran back out into the shore and asked the ocean why, and it said \\n\\n<em>Because you are mine now, and you will never forget.</em></div>\\n\\n[[What happens next?|next]]",
+      "links": [
+        {
+          "text": "What happens next?",
+          "destination": {
+            "name": "next",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "trench 2 caves",
+      "text": "<h2>In the Trench (13,000 m)</h2><<set $air to 7>>\\n\\nThe walls have narrowed as you descend and you think, the bottom has be here. Soon. It has to be here.\\n\\nBut before you even see a bottom, you find something else of interest. A cavern, barely visible in your spotlight.\\n\\nIt's a smooth cave, with slick walls that reflect the light of your spotlight back with a glimmer. Bubbles emerge from the inside in time with the song you've been humming in your head.\\n\\nSomewhere below you, through the darkness, is Tangaroa Deep: the new deepest point in the ocean.\\n\\n[[Return to the Surface|top end]]\\n<<if visited(\"siren 5\") is false>>[[Enter the Cave|siren cave]]<<endif>>\\n[[Keep going down|trench 2 silence]]",
+      "links": [
+        {
+          "text": "Return to the Surface",
+          "destination": {
+            "name": "top end",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Enter the Cave",
+          "destination": {
+            "name": "siren cave",
+            "pid": 121
+          }
+        },
+        {
+          "text": "Keep going down",
+          "destination": {
+            "name": "trench 2 silence",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "gone",
+      "text": "<div class=\"y\">\"Just tell me when it's gone.\"</div>\\n\\nAnother long low scrape and you brace yourself on the sides of the sub. You wait, and wait.\\n\\n<div class=\"j\">  \u2026nothing's coming up anymore. I think it's gone.</div>\\n\\nAs a scientist, you normally feel excitement when facing what is undoubtedly a new species. Maybe that feeling will come later.\\n\\n<div class=\"l\">Log: Shark????\\n<em>Carcharodon megalodon?</em> [\u2026no. That's impossible]\\nEstimated size: 18 m</div>\\n\\n<div class=\"d\">Damage to Hull</div><<set $damage +=1>>\\n\\n[[Ascend|abysstomidtrans][$destination = \"mid 4\"]]\\n[[Left|abyss 3]][[Right|abyss 5]]\\n<<if visited(\"abysstofloor\")>>[[Descend|abysstofloortrans][$destination = \"floor 4\"]]<<else>>[[Descend|abysstofloor][$destination = \"floor 4\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstomidtrans",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "abyss 3",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "abyss 5",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloor",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "Sunlight Zone",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n\\n\\n.passage {\\n\\t/* This only affects passages */\\n\\t\\nbackground-color:#61aba8;\\t\\n}",
+      "links": []
+    },
+    {
+      "pid": 109,
+      "name": "squid",
+      "text": "<div class=\"y\">\"\u2026puts a whole new spin on squid, doesn't it?\"</div>\\n\\n<div class=\"j\">  Ewwww. You've got a sick, sick mind, Doc. I could have stayed home you know, writing grants, nice and safe in an air conditioned room.</div>\\n\\n<div class=\"y\">\"Yes, but then you'd miss me.\"</div>\\n\\n<div class=\"j\">  I'd miss the science. The word you're looking for is science.</div>\\n\\n<div class=\"y\">\"Whatever you say, Jackie. Whatever you say.\"</div><<set $air to 3>>\\n\\n[[Enter the Abyss|$destination]]",
+      "links": []
+    },
+    {
+      "pid": 110,
+      "name": "mind",
+      "text": "<div class=\"y\">\"What did you have in mind?\"</div>\\n\\n<div class=\"j\">  Have you ever heard the story of the little paua diver?</div>\\n\\n<div class=\"y\">\"Can't say that I have.\"</div>\\n\\n<div class=\"j\">  It goes like this.</div>\\n\\n[[Listen]]",
+      "links": [
+        {
+          "text": "Listen",
+          "destination": {
+            "name": "Listen",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "deep",
+      "text": "<div class=\"y\">\"I wonder how deep it goes.\"</div>\\n\\n<div class=\"j\">  This isn't part of the plan, Doc.</div>\\n\\n<div class=\"y\">\"Come on, Jackie. For science?</div>\\n\\n<div class=\"j\">  \u2026well, if it's for science. Still, you could always come back up.</div>\\n\\n[[Back to the surface|top end]]\\n[[Descend|trench 2]]",
+      "links": [
+        {
+          "text": "Back to the surface",
+          "destination": {
+            "name": "top end",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "trench 2",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 112,
+      "name": "chase",
+      "text": "<div class=\"y\">\"Let's get a closer look then.\"</div>\\n\\n<div class=\"j\">  That's the spirit, Doc! It was about 12 degrees right, so head that way.</div>\\n\\nThere is nothing 12 degrees right. There is nothing but darkness, and white detrius sinking towards the sea floor.\\n\\n<div class=\"j\">  \u2026I could have sworn\u2026</div>\\n\\n<div class=\"y\">\"Me too, Jackie. Me, too.\"</div>\\n\\n<div class=\"l\">Log: Shark????\\n<em>Carcharodon megalodon?</em> [\u2026no. That's impossible]\\nEstimated size: 18 m</div>\\n\\n[[Ascend|abysstomidtrans][$destination = \"mid 4\"]]\\n[[Left|abyss 3]][[Right|abyss 5]]\\n<<if visited(\"abysstofloor\")>>[[Descend|abysstofloortrans][$destination = \"floor 4\"]]<<else>>[[Descend|abysstofloor][$destination = \"floor 4\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "abysstomidtrans",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "abyss 3",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "abyss 5",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloortrans",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "abysstofloor",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "shine the spotlight",
+      "text": "You twist the controls and try to shine the spotlight on the shadow, but it turns and hurries back into the darkness. You only catch a tip of the fin in the light: white, as expected.\\n\\n<div class=\"j\">  \u2026.what do you think that was, Doc? New species?</div>\\n\\n<div class=\"y\">\u2026I don't know, Jackie. Keep an eye out on the surface though, Whitetips like to follow boats, so maybe this one\u2026\"</div>\\n\\n<div class=\"j\">  Sure. Try convincing yourself of that first, Doc.</div>\\n\\n<div class=\"l\">Log: Oceanic White-Tip Shark?\\n<em>Carcharhinus longimanus?</em>\\nEstimated size: minimum 5m</div>\\n\\n[[Ascend|twitosuntrans][$destination = \"sunlight 2\"]]\\n[[Left|twilight 1]][[Right|twilight 3]]\\n<<if visited(\"twitomid\")>>[[Descend|twitomidtrans][$destination = \"mid 3\"]]<<else>>[[Descend|twitomid][$destination = \"mid 3\"]]<<endif>>",
+      "links": [
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "twitosuntrans",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Left",
+          "destination": {
+            "name": "twilight 1",
+            "pid": 45
+          }
+        },
+        {
+          "text": "Right",
+          "destination": {
+            "name": "twilight 3",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomidtrans",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "twitomid",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "abysstomidtrans",
+      "text": "\\n\\n\\n<<goto $destination>>",
+      "links": []
+    },
+    {
+      "pid": 115,
+      "name": "midtoabyss",
+      "text": "<div class=\"j\">  How you holding up in there, Doc?</div>\\n\\n[[I'm fine.|okay]][[Getting a little restless.|restless]]",
+      "links": [
+        {
+          "text": "I'm fine.",
+          "destination": {
+            "name": "okay",
+            "pid": 118
+          }
+        },
+        {
+          "text": "Getting a little restless.",
+          "destination": {
+            "name": "restless",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "sunlight start",
+      "text": "<h2>The Sunlight Zone (0 \u2013 200 m)</h2>\\nThe Tangaroa detaches with a snap and you feel the ship begin to stabilize as it gets below the waves. Clear blue water is visible in every direction, as far as the eye can see. What you can\u2019t see is below you, and that, you feel, is the interesting part.\\n\\n<div class=\"j\">  Everything\u2019s looking good so far. Why don\u2019t you move around up here a bit to test the propulsion? Just make sure you pilot in a circle; you don\u2019t want to get too far from the ship.</div>\\n\\n[[Explore|sunlight 1]]",
+      "links": [
+        {
+          "text": "Explore",
+          "destination": {
+            "name": "sunlight 1",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "deep yes",
+      "text": "<div class=\"y\">\"Yes.\"</div>\\n\\n<div class=\"j\">  Then let's make history.</div>\\n\\n[[Descend|trench 2 caves]]",
+      "links": [
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "trench 2 caves",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "okay",
+      "text": "<div class=\"y\">\"I'm fine.\"</div>\\n\\n<div class=\"j\">  Good. I mean, of course it's good. We've been getting some great data. Do you think we'll find a new species?</div>\\n\\n<div class=\"y\">\"Maybe. It's hard to tell on first glance, though, and it can be rough to tell the difference.\"</div>\\n\\n<div class=\"j\">  I know. I used to have a professor who said that species were like pornography. You just know it when you see it.</div>\\n\\n[[Laugh.|laugh]][[\u2026.puts a whole new spin on squid, doesn't it?|squid]]",
+      "links": [
+        {
+          "text": "Laugh.",
+          "destination": {
+            "name": "laugh",
+            "pid": 78
+          }
+        },
+        {
+          "text": "\u2026.puts a whole new spin on squid, doesn't it?",
+          "destination": {
+            "name": "squid",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "gallery",
+      "text": "<h3>Real Creatures You Found</h3>\\n\\n<<nobr>><div class=\"responsive\"><div class=\"img\"><img src=\"deepimages/whitetip.jpg\" alt=\"White-Tip\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Oceanic White-Tip Shark \\n<br/><em>Carcharhinus longimanus</em></div>\\n</div></div>\\n\\n<<if $jelly is true>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/lionsmane.jpg\" alt=\"Lion's Mane Jellyfish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Lion\u2019s Mane Jellyfish \\n<br/><em>Cyanea capillata</em></div>\\n</div></div><<endif>>\\n\\n<<if $sperm is true>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/spermwhale.jpg\" alt=\"Sperm Whale\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Sperm Whale \\n<br/><em>Physeter macrocephalus</em></div>\\n</div></div><<endif>>\\n\\n<<if $snake is true>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/snake.jpeg\" alt=\"Sea Snake\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Yellow-Bellied Sea Snake\\n<br/><em>Pelamis platura</em></div>\\n</div></div><<endif>>\\n\\n\\n<<if $sunfish>><div class=\"responsive\">\\n<div class=\"img\"><img src=\"deepimages/sunfish.jpg\" alt=\"Ocean Sunfish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Ocean Sunfish\\n<br/><em>Mola Mola</em></div>\\n</div></div><<endif>>\\n\\n<<if $cuttlefish>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/cuttlefish.jpg\" alt=\"Cuttlefish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Unknown Cuttlefish \\n<br/><em>Sepiella ???</em></div>\\n</div></div><<endif>>\\n\\n<<if $frilled>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/frilled.jpg\" alt=\"Frilled Shark\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Frilled Shark \\n<br/><em>Chlamydoselachus anguineus</em></div>\\n</div></div><<endif>>\\n\\n<<if $angler>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/anglerfish.jpg\" alt=\"Anglerfish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Anglerfish\\n<br/><em>Melanocetus johnsonii</em></div>\\n</div></div><<endif>>\\n\\n<<if $giant>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/giant.jpg\" alt=\"Giant Squid\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Giant Squid\\n<br/><em>Architeuthis dux</em></div>\\n</div></div><<endif>>\\n\\n<<if $colossal>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/colossal.jpg\" alt=\"Colossal Squid\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Colossal Squid\\n<br/><em>Mesonychoteuthis hamiltoni</em></div>\\n</div></div><<endif>>\\n\\n<<if $megalodon>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/megalodon.jpg\" alt=\"Megaladon\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Megalodon\\n<br/><em>Carcharodon megalodon</em></div>\\n</div></div><<endif>>\\n\\n<<if $viper>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/viperfish.jpg\" alt=\"Viperfish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Pacific Viperfish\\n<br/><em>Chauliodus macouni</em></div>\\n</div></div><<endif>>\\n\\n<<if $vampire>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/vampire.jpg\" alt=\"Vampire Squid\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Vampire Squid\\n<br/><em>Vampyroteuthis infernalis</em></div>\\n</div></div><<endif>>\\n\\n<<if $hag>><div class=\"responsive\"><div class=\"img\">\\n<img src=\"deepimages/hagfish.jpg\" alt=\"Hagfish\" width=\"600\" height=\"400\">\\n<div class=\"desc\">Pacific Hagfish\\n<br/><em>Eptatretus stoutii</em></div>\\n</div></div><<endif>>\\n\\n<div class=\"clearfix\"></div><<endnobr>>\\n\\n[[Image Attributions]]\\n[[Back to Credits|credits]]\\n<a href=\"\">Dive Again?</a>\\n\\n",
+      "links": [
+        {
+          "text": "Image Attributions",
+          "destination": {
+            "name": "Image Attributions",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Back to Credits",
+          "destination": {
+            "name": "credits",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "stay",
+      "text": "<<set $air to 10>>You can only see a few meters in front of you, so its impossible to tell how wide this trench is. It only make sense to explore, to look around at what feels like the newest place on earth.\\n\\n<div class=\"j\">  I'm serious, Doc. You should probably head back up. It's too deep.</div>\\n\\nIn the gloom, you see the sand slope ever so slightly downwards.\\n\\n<div class=\"y\">\"\u2026well it goes even deeper.\"</div>\\n\\n[[Return to the Surface.|tangaroa end]]\\n[[Keep exploring.|stay 2]]",
+      "links": [
+        {
+          "text": "Return to the Surface.",
+          "destination": {
+            "name": "tangaroa end",
+            "pid": 82
+          }
+        },
+        {
+          "text": "Keep exploring.",
+          "destination": {
+            "name": "stay 2",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "siren cave",
+      "text": "The cave feels wrong. The rock around you is smooth, as if it were volcanic, but just subtly off, with rough patches and scrapes. It looks more like a train tunnel than an undersea cavern.\\n\\nOverall, the problem is that it looks made.\\n\\nAnd like other tunnels, there is a small, glimmering light at the end of it.\\n\\n[[Go towards the light.|light cave]][[Leave the cave.|leave cave]]",
+      "links": [
+        {
+          "text": "Go towards the light.",
+          "destination": {
+            "name": "light cave",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Leave the cave.",
+          "destination": {
+            "name": "leave cave",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "top end 2",
+      "text": "You float your way back to the top, and break the surface.\\n\\nYou see the sun again, as the crew rush over and help you out of the sub. Your legs are cramped in a way you hadn't even noticed. Jackie is grinning from ear to ear.\\n\\n<div class=\"j\">  That was a great dive, Doc.</div>\\n\\nYou grin back, taking a long swig of water.\\n\\n<div class=\"y\">\"It was. Did you get all the data you wanted?\"</div>\\n\\n<div class=\"j\">  Oh yeah. We'll be drowning in it. Pun intended.</div>\\n\\nYou smile at the joke but wonder. \\n\\n<b>Could you have gone deeper?</b>\\n\\n[[The End|credits]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "credits",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "why",
+      "text": "<div class=\"y\">\"Then why'd you tell me?\"</div>\\n\\n<div class=\"j\">  Had to kill the time somehow, and I guess I wanted to remind you.</div>\\n\\n<div class=\"y\">\"Of what?\"</div>\\n\\n<div class=\"j\">  <em> A human is always human, and they must come up for air. </em></div><<set $air to 2>>\\n\\n[[Enter the Midnight Zone|$destination]]",
+      "links": []
+    },
+    {
+      "pid": 124,
+      "name": "dark",
+      "text": "You stare into the dark, trying to figure out why you only see darkness. Why your light doesn't go beyond that point. \\n\\nIt becomes clear when the darkness moves. It isn't an absence of light, it is the presence of <em>something</em>. Something huge, and black and writhing. \\n\\nIt reaches out, its mantle of black blotting out the bioluminescent stars. It wraps you up in darkness and you hear a rubble, a moaning, a voice.\\n\\n<div class=\"e\">COME OUT, LITTLE DIVER.</div>\\n\\n[[Come out|come]][[Stay in|stay in]]",
+      "links": [
+        {
+          "text": "Come out",
+          "destination": {
+            "name": "come",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Stay in",
+          "destination": {
+            "name": "stay in",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "abysstofloor",
+      "text": "<div class=\"j\">  According to our readings, you're coming up on the sea floor soon. Just have a look around and then you can head back up.</div>\\n\\n[[Good. It's cramped in here.|cramped]][[I'm in no rush.|rush]]",
+      "links": [
+        {
+          "text": "Good. It's cramped in here.",
+          "destination": {
+            "name": "cramped",
+            "pid": 128
+          }
+        },
+        {
+          "text": "I'm in no rush.",
+          "destination": {
+            "name": "rush",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "Twilight Zone",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n\\n.passage {\\n\\t/* This only affects passages */\\nbackground-color:#305865;\\n}\\n\\nbody {\\nbackground-color:#305865;\\n}",
+      "links": []
+    },
+    {
+      "pid": 127,
+      "name": "Abysstomid",
+      "text": ".passage {\\n    background: black; /* For browsers that do not support gradients */\\n    background: -webkit-linear-gradient(black, #041a25); /* For Safari 5.1 to 6.0 */\\n    background: -o-linear-gradient(black, #041a25); /* For Opera 11.1 to 12.0 */\\n    background: -moz-linear-gradient(black, #041a25); /* For Firefox 3.6 to 15 */\\n    background: linear-gradient(black, #041a25); /* Standard syntax */\\n}\\n\\nbody {\\nbackground-color:#041a25;\\n}",
+      "links": []
+    },
+    {
+      "pid": 128,
+      "name": "cramped",
+      "text": "<div class=\"y\">\"Good. It's cramped in here.\"</div>\\n\\n<div class=\"j\">  Well don't you worry. Pretty soon you'll be done with sitting still in the sub and back to sitting still in the lab.</div>\\n\\n<div class=\"y\">\"Are you trying to make me want to stay down here?\"</div>\\n\\n<div class=\"j\">  You can't run from reality, Doc.</div><<set $air to 4>>\\n\\n[[Approach the Sea Floor|$destination]]",
+      "links": []
+    },
+    {
+      "pid": 129,
+      "name": "midtotwitrans",
+      "text": "\\n\\n\\n\\n<<goto $destination>>",
+      "links": []
+    }
+  ]
+}

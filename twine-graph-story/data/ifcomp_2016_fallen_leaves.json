@@ -1,0 +1,907 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "SONNET",
+      "text": "<h1>SONNET <<print $turns>> </h1>\nIn <<display 'primary setting'>> you <<display 'greeting gesture'>> <<display 'manner'>> --\nMasked by <<display 'mask'>> and <<display 'veiling flame'>> -- <<display 'explanation'>> and <<display 'mystical practice'>>\n\n<<display 'music type'>> and <<display 'symbolic object'>> -- <<display 'beast'>> of <<display 'material'>> --\nFalcon <<display 'birdAction style'>> over <<display 'type of land'>>\n\nI <<display 'perceptive action'>> your <<display 'image'>> and <<display 'ecstasy'>> your <<display 'treasure'>> --\nMy <<display 'soulsign'>> <<display 'soulstate'>> -- <<display 'breathing'>> <<display 'emotional state'>>\n\nYou <<display 'breathe'>> <<display 'scent'>> -- <<display 'reflecting some way on'>> <<display 'subject of thought'>> --\nYour <<display 'sign of passion'>> your <<display 'yearning'>> -- <<display 'generate'>> my <<display 'light'>>\n\n<<display 'ourFlameType' >> <<display 'impacts'>> your <<display \n'herFlame'>> into my <<display 'myFlame'>> --\n<<display 'atmosphere'>> <<display 'distant location'>> -- our <<display 'passionActs'>> and <<display 'otherActs'>>\n\n<<display 'message'>> my <<display 'strength'>> songs of <<display 'liquid'>> and <<display 'food type'>> --\nUnder <<display 'canopy type'>> <<display 'my will response to'>> your <<display 'attribute'>> <<display 'form'>>\n\nI <<print '$verb'>> <<print '$adv'>> and <<display 'my beloved responded thusly'>> --\nYou <<display 'beloved action'>> and depart <<display 'by mode of conveyance'>>\n\n[[Act. |CHOOSE]]\n\n<<if $godmode == 1>>\n<<display 'stat table'>>\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "primary setting",
+            "pid": 14
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "greeting gesture",
+            "pid": 3
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "manner",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "mask",
+            "pid": 7
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "veiling flame",
+            "pid": 8
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "explanation",
+            "pid": 6
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "mystical practice",
+            "pid": 15
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "music type",
+            "pid": 51
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "symbolic object",
+            "pid": 53
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "beast",
+            "pid": 48
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "material",
+            "pid": 5
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "birdAction style",
+            "pid": 9
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "type of land",
+            "pid": 16
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "perceptive action",
+            "pid": 13
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "image",
+            "pid": 12
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ecstasy",
+            "pid": 11
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "treasure",
+            "pid": 10
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "soulsign",
+            "pid": 20
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "soulstate",
+            "pid": 21
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "breathing",
+            "pid": 22
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "emotional state",
+            "pid": 27
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "breathe",
+            "pid": 26
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "scent",
+            "pid": 50
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "reflecting some way on",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "subject of thought",
+            "pid": 19
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "sign of passion",
+            "pid": 24
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "yearning",
+            "pid": 17
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "generate",
+            "pid": 25
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "light",
+            "pid": 18
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ourFlameType",
+            "pid": 34
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "impacts",
+            "pid": 33
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "herFlame",
+            "pid": 32
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "myFlame",
+            "pid": 31
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "atmosphere",
+            "pid": 52
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "distant location",
+            "pid": 44
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "passionActs",
+            "pid": 43
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "otherActs",
+            "pid": 42
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "message",
+            "pid": 37
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "strength",
+            "pid": 35
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "liquid",
+            "pid": 66
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "food type",
+            "pid": 49
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "canopy type",
+            "pid": 47
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "my will response to",
+            "pid": 41
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "attribute",
+            "pid": 38
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "form",
+            "pid": 39
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "my beloved responded thusly",
+            "pid": 46
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "beloved action",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "by mode of conveyance",
+            "pid": 67
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "stat table",
+            "pid": 65
+          }
+        },
+        {
+          "text": "Act. ",
+          "destination": {
+            "name": "CHOOSE",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "seat",
+      "text": "<<nobr>>/% Just a random scattershot. %/\n\n<<if $belovedPassion > 0.75 and $belovedAdept > 0.75>>\n\thorseback\n<<elseif $belovedPassion > 0.5 and $belovedAdept > 0.5>>\n\trooftop\n<<elseif $belovedAdept < 0 and $belovedEndurance > 0.5>>\n\tstool\n<<elseif $reactSpirit > 0 and $belovedFire > 0.5 >>\n\ttemple\n<<elseif $belovedAdept > $loverAdept and $belovedWill < 0>>\n\tthrone\n<<elseif $totalFire < 0 and $reactMind > 0 >>\n\tpool\n<<elseif $totalFire < 0>>\n\tfallen leaves\n<<elseif $belovedPassion < 0 and $belovedFire < 0>>\n\tterrace\n<<elseif $belovedSloth > 0.5 and $loverSloth > 0.5>>\n\tfen\n<<elseif $belovedWill < 0 and $belovedPassion < 0>>\n\tfortress\n<<else>>\n\tcarriage\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 3,
+      "name": "greeting gesture",
+      "text": "<<nobr>>\n/% The beloved's greeting depends on \nher attitude toward the lover. %/\n\n<<if $totalReact >= 1>>\n\t<<if $belovedWill > 0 and $belovedPassion <= 0.2 and $belovedPassion >= -0.2>>\n\t\tbow, smiling\n\t<<elseif Math.abs( $belovedWill ) <= 0.2 and Math.abs( $belovedPassion ) < 0.2>>\n\t\toffer me a seat\n\t<<elseif $belovedWill > 0 and $belovedPassion > 0 and $totalFire > 0>>\n\t\tpass me a cup\n\t<<elseif $belovedWill > 0 and $belovedPassion > 0>>\n\t\tlay down a blanket\n\t<<elseif $reactTotal >= 3>>\n\t\tsing of our love\n\t<<else>>\n\t\tdivide a meal\n\t<<endif>>\n\n<<elseif $totalReact > -1>>\n\t<<if $reactSpirit < 0 and $reactHeart > 0 >>\n\t\tbow your head\n\t<<elseif $reactHeart < 0 and $reactMind > 0>>\n\t\tsmile thoughtfully\n\t<<elseif $reactMind < 0 and $reactSpirit > 0>>\n\t\tsay a prayer\n\t<<elseif $totalFire > 1.5 and $belovedAdept < 0>>\n\t\tdrink your wine\n\t<<elseif $belovedFire < 0 and $reactSpirit >= 1>>\n\t\tpour out libations\n\t<<elseif Math.abs($belovedPassion) < 0.3 and $belovedSloth > 0.3>>\n\t\traise a finger\n\t<<elseif $totalWill <= $MED>>\n\t\ttake your seat\n\t<<elseif Math.abs($belovedWill) < 0.3>>\n\t\thand me a letter\n\t<<else>>\n\t\tpass me a map\n\t<<endif>>\n\n<<else>>\n\t<<if $reactSpirit > 0 and $reactHeart < 0>>\n\t\tperform the oblation\n\t<<elseif $reactMind > 0 and $reactSpirit < 0>>\n\t\tspeak of righteousness\n\t<<elseif $reactHeart > 0 and $reactMind < 0>>\n\t\ttell of my failures\n\t<<elseif $willFactor < 0 and $belovedPassion >= 1>>\n\t\tcurse my name\n\t<<elseif $belovedAdept < 0 and $belovedPassion > 0>>\n\t\tchange your pose\n\t<<elseif $belovedPassion >= -0.2 and $belovedPassion <= 0.2>>\n\t\tcast me a glance\n\t<<elseif $totalReact <= -2>>\n\t\troll your eyes\n\t<<else>>\n\t\tcontinue your weaving\n\t<<endif>>\n\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 4,
+      "name": "manner",
+      "text": "<<nobr>>/%\nThe beloved's manner is also determined\nby her attitude towards the lover.\n%/\n<<if $willFactor > 0 and $reactTotal > 0>>\n\t<<if $belovedPassion > $LARGE and $belovedAdept > $LARGE>>\n\t\teloquently\n\t<<elseif $belovedWill < 0 and $belovedAdept > $LARGE>>\n\t\tmidly\n\t<<elseif $belovedAdept > $LARGE and Math.abs($belovedPassion) < 0.2>>\n\t\tas swanflight\n\t<<else>>\n\t\tmysteriously\n\t<<endif>>\n<<elseif $willFactor < 0 and $reactTotal < 0>>\n\t<<if $reactHeart < 0 and $belovedPassion > 0 >>\n\t\t<<if $belovedAdept > 0 >>\n\t\t\timpetuously\n\t\t<<else>>\n\t\t\tvulgarly\n\t\t<<endif>>\n\t<<elseif $belovedPassion < 0>>\n\t\t<<if $belovedAdept > $loverAdept>>\n\t\t\tcorrectly\n\t\t<<elseif $belovedAdept < 0>>\n\t\t\tfleetingly\n\t\t<<else>>\n\t\t\treservedly\n\t\t<<endif>>\n\t<<elseif $belovedAdept < 0>>\n\t\thaltingly\n\t<<else>>\n\t\tcryptically\n\t<<endif>>\n<<elseif $willFactor < 0 and $reactTotal > 0>>\n\t<<if $belovedPassion < -0.33>>\n\t\twarily\n\t<<elseif $belovedPassion < 0.33>>\n\t\tcuriously\n\t<<else>>\n\t\thopefully\n\t<<endif>>\n<<elseif $willFactor > 0 and $reactTotal < 0>>\n\t<<if $belovedWill < -0.33>>\n\t\toffendedly\n\t<<elseif $belovedWill < 0.33>>\n\t\twith annoyance\n\t<<else>>\n\t\tamusedly\n\t<<endif>>\n<<else>>\n\t<<if $belovedWill < -0.33>>\n\t\tharrowed\n\t<<elseif $belovedWill < 0.33>>\n\t\tobliquely\n\t<<else>>\n\t\tarchly\n\t<<endif>>\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "material",
+      "text": "<<nobr>>\n/%The first three are holy.\nThe second group is merely prized.\nThe third group is considered cold.%/\n\n<<if $reactTotal >= 2>>\n\t<<if $reactSpirit > $reactTotal / 3 >>\n\t\tcrystal\n\t<<elseif $reactMind > $reactTotal / 3>>\n\t\tlight\n\t<<elseif $reactHeart > $reactTotal / 3>>\n\t\tsoil\n\t<<else>>\n\t\tdarkness\n\t<<endif>>\n<<elseif $totalReact + 3*$luck >= 0>>\n\t<<if $totalAdept + $luck >= 2>>\n\t\tjade\n\t<<elseif $totalEndurance + $totalAdept + $luck >= 4>>\n\t\tgrain\n\t<<elseif $totalEndurance >= 0 and $totalPassion <= 0>>\n\t\twood\n\t<<elseif $totalAdept + $luck > 1>>\n\t\tsilver\n\t<<else>>\n\t\tgold\n\t<<endif>>\n<<elseif $totalReact + 3*$luck >= -1 >>\n\t<<if $totalPassion + $luck > 0>>\n\t\tsteel\n\t<<elseif $totalAdept + $luck > $MED>>\n\t\tmarble\n\t<<elseif $totalEndurance < 0 >>\n\t\tgravel\n\t<<else>>\n\t\tgranite\n\t<<endif>>\n<<else>>\n\t<<if $totalPassion + $luck > 0>>\n\t\tlightning\n\t<<elseif $totalAdept + $luck > $MED>>\n\t\tiron\n\t<<elseif $totalEndurance < 0 >>\n\t\tdarkness\n\t<<else>>\n\t\tslate\n\t<<endif>>\t\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 6,
+      "name": "explanation",
+      "text": "/%! base on react !%/<<nobr>>\n/% The beloved gives the expectation\nto beg forgiveness for her failures.\nIt's pretty eclectic, based on which weakness she reveals.%/\n\n<<if $reactTotal > 3>>\n\tharmony\n<<elseif $belovedEndurance < -0.5 and $belovedSloth > 0.5>>\n\tsickness\n<<elseif $belovedWill < 0 and $belovedPassion > 0>>\n\tlonging\n<<elseif $belovedPassion < 0 and $belovedSloth < 0>>\n\tsorrow\n<<elseif $belovedPassion > 0 and $belovedAdept < 0>>\n\tanxiety\n<<elseif $belovedAdept < 0 and $belovedInterp < 0>>\n\tforgetfulness\n<<elseif $belovedEndurance < 0 and $belovedSloth > 0>>\n\tfatigue\n<<elseif $belovedInterp < 0 and $belovedWill < 0>>\n\tterror\n<<elseif $belovedInterp > 0.5 and $belovedPassion < 0.5 and $belovedPassion > 0.5 >>\n\tmechanics\n<<elseif $belovedInterp > 0.5 and $belovedPassion < -0.5>>\n\thorror\n<<elseif $belovedEndurance < 0 and $belovedPassion < 0>>\n\tcalamities\n<<elseif $reactSpirit >= 1>>\n\tlove\n<<elseif $reactMind >= 1>>\n\ttruth\n<<elseif $reactHeart >= 1>>\n\tabundance\n<<else>>\n\tour fate\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "mask",
+      "text": "<<nobr>>\n<<if $mask == \"horse-mask\">>horse-mask\n<<elseif $mask == \"stormfront\" >>thundercloud\n<<elseif $mask == \"ironmask\" >>ironmask\n<<elseif $mask == \"blackveil\" >>blackveil\n<<elseif $mask == \"noface\" >>\u30ab\u30aa\u30ca\u30b7 (kaonashi)\n<<elseif $mask == \"facepaint\" >>rouge\n<<elseif $mask == \"Melpomene\" >>Melpomene/% tragedy %/\n<<elseif $mask == \"Thalia\" >>Thalia/% comedy %/\n<<else>>fog\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "veiling flame",
+      "text": "<<nobr>>/% Signifies a general beloved-directed flamestate\nwhich is at once local and global.\nAlmost a matter of potential to to be illuminated.%/\n\n<<if $totalFire >= 2>>\n\t<<if $totalPassion > 0.5 and $willRation > 0>>\n\t\tsweat and sun-daze\n\t<<elseif $totalPassion < -0.33>>\n\t\tclouds of smoke\n\t<<elseif $totalPassion < 0.33>>\n\t\tthe River of Stars\n\t<<else>>\n\t\trippling heat\n\t<<endif>>\n<<elseif $totalFire >= 1>>\n\t<<if $totalEndurance <= 0>>\n\t\tsun's haze\n\t<<elseif $belovedWill * $loverWill <= 0>>\n\t\tdragon banners\n\t<<elseif $totalWill > 1>>\n\t\tstalks of grain\n\t<<else>>\n\t\tbrass lattice\n\t<<endif>>\n<<elseif $totalFire > 0>>\n\t<<if $totalAdept > 1>>\n\t\tthe lights that lead us\n\t<<elseif $totalInterp > 1>>\n\t\tradiation and refraction\n\t<<elseif $totalEndurance > 1 and $willRatio > 0>>\n\t\tmesmer's mirage\n\t<<elseif $totalEndurance > 1>>\n\t\tfactory torches\n\t<<else>>\n\t\tcinder and smoke\n\t<<endif>>\n<<elseif $totalFire > -1>>\n\t<<if $totalEndurance > 1>>\n\t\tfrost-heavy wind\n\t<<elseif $totalEndurance < 1>>\n\t\tnumbing wind\n\t<<elseif $totalEndurance <= -1.8>>\n\t\tsmoke and ash\n\t<<elseif $totalAdept > 1>>\n\t\tcalculations on glass\n\t<<elseif $totalInterp > 1>>\n\t\tcalculations and geometry\n\t<<elseif $totalInterp < -1>>\n\t\thermet-cave darkness\n\t<<elseif $totalAdept < -1>>\n\t\thungry delusions\n\t<<else>>\n\t\ta pane of ice\n\t<<endif>>\n<<elseif $totalFire > -2>>\n\t<<if $totalEndurance > 1>>\n\t\talpine flurries\n\t<<elseif $totalEndurance < 1>>\n\t\tnumb terror\n\t<<elseif $totalEndurance <= -1.8>>\n\t\tapproaching doom\n\t<<elseif $totalAdept > 1>>\n\t\tballistic calcuations\n\t<<elseif $totalInterp > 1>>\n\t\tphilosophical treatise\n\t<<elseif $totalInterp < -1>>\n\t\tsophistical ravings\n\t<<elseif $totalAdept < -1>>\n\t\thungry delusions\n\t<<else>>\n\t\ta pane of ice\n\t<<endif>>\n<<else>>\n\t<<if $belovedSloth > 0.5>>\n\t\tten thousand years\n\t<<elseif $belovedWill < -0.2>>\n\t\tblankets and darkness\n\t<<elseif $belovedEndurance < -0.8>>\n\t\tcollapsed graves\n\t<<elseif $belovedPassion < 0>>\n\t\ta cold star\n\t<<else>>\n\t\tbeam-pierced fog\n\t<<endif>>\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "birdAction style",
+      "text": "<<nobr>>/% Falcon action is entirely random, obviously. %/\n\n<<if $luck < -0.9>>wheels darkly\n<<elseif $luck < -0.75 >>wheels in sun\n<<elseif $luck < -0.5 >>swoops like lightning\n<<elseif $luck < -0.25 >>silently falls\n<<elseif $luck < -0.1 >>dives visciously\n<<elseif $luck < 0 >>dives gracefully\n<<elseif $luck < 0.1 >>roosts vainly\n<<elseif $luck < 0.25>>roosts nobly\n<<elseif $luck < 0.5>>roosts hungrily\n<<elseif $luck < 0.75>>swoops gracefully\n<<elseif $luck < 0.9>>hungers rising\n<<else>>spirals disjointedly\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 10,
+      "name": "treasure",
+      "text": "<<nobr>>\n/% identifies beloved's major strength %/\n\n<<if $belovedEndurance > 0.5>>\n\t<<if $belovedFire >= 1>>\n\t\tmyhrr\n\t<<elseif $belovedFire >= 0.5>>\n\t\tincense\n\t<<elseif $belovedFire > 0>>\n\t\toil\n\t<<elseif $belovedAdept > 0>>\n\t\tlight\n\t<<else>>\n\t\tland\n\t<<endif>>\n<<elseif $belovedAdept > 0.5 >>\n\t<<if $belovedInterp > 0.5>>\n\t\ttechne\n\t<<elseif $belovedPassion > 0.5>>\n\t\tjewel\n\t<<else>>\n\t\tgold\n\t<<endif>>\n<<elseif $belovedPassion > 0>>\n\t<<if $belovedSloth > 0>>\n\t\tfresh water\n\t<<else>>\n\t\tfirst-fruits\n\t<<endif>>\n<<elseif $belovedInterp > 0>>\n\tgrain\n<<else>>\n\tbamboo-shoots\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 11,
+      "name": "ecstasy",
+      "text": "<<nobr>>\n/% lover's fire and passion %/\n\n<<if $loverFire <= -0.5>>\n\t<<if $loverPassion <= -1>>\n\t\tweep\n\t<<elseif $loverPassion <= -0.66>>\n\t\tsanctify\n\t<<elseif $loverPassion <= -0.33 >>\n\t\tforestall\n\t<<elseif $loverPassion < 0 >>\n\t\tforgive\n\t<<elseif $loverPassion == 0 >>\n\t\tsubstantiate\n\t<<elseif $loverPassion <= 0.33>>\n\t\tbreathe\n\t<<elseif $loverPassion <= 0.66>>\n\t\tforestall\n\t<<elseif $loverPassion < 1>>\n\t\tconfess\n\t<<else>>\n\t\tannounce\n\t<<endif>>\n<<elseif $loverFire <= 0.5>>\n\t<<if $loverPassion <= -1>>\n\t\ttransfuse\n\t<<elseif $loverPassion <= -0.66>>\n\t\tembrace\n\t<<elseif $loverPassion <= -0.33>>\n\t\tconfess\n\t<<elseif $loverPassion < 0 >>\n\t\tabandon\t\n\t<<elseif $loverPassion == 0 >>\n\t\tamaze\n\t<<elseif $loverPassion <= 0.33 >>\n\t\tjustify\n\t<<elseif $loverPassion <= 0.66 >>\n\t\tconfess\n\t<<elseif $loverPassion < 1 >>\n\t\tscream\n\t<<else>>\n\t\tbreak\n\t<<endif>>\n<<else>>\n\t<<if $loverPassion <= -1 >>\n\t\tcover myself in\n\t<<elseif $loverPassion <= -0.66 >>\n\t\twallow in\n\t<<elseif $loverPassion <= -0.33 >>\n\t\tarchitect\n\t<<elseif $loverPassion < 0 >>\n\t\tbreak\n\t<<elseif $loverPassion == 0 >>\n\t\tbathe in\n\t<<elseif $loverPassion <= 0.33 >>\n\t\tsummon\n\t<<elseif $loverPassion <= 0.66 >>\n\t\tmarvel at\n\t<<elseif $loverPassion < 1 >>\n\t\tposess\n\t<<else>>\n\t\twrithe in\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 12,
+      "name": "image",
+      "text": "<<nobr>>/% lover's will %/\n\n<<if $totalFire > 0>>\n\t<<if $loverWill <= -1>>\n\t\tthunderstorm\n\t<<elseif $loverWill <= -0.75>>\n\t\tthunder\t\n\t<<elseif $loverWill <= -0.5>>\n\t\tspace\t\n\t<<elseif $loverWill <= -0.25>>\n\t\tkite\n\t<<elseif $loverWill < 0 >>\n\t\tbird\n\t<<elseif $loverWill == 0>>\n\t\tbalance\n\t<<elseif $loverWill <= 0.25>>\n\t\tfootprint\n\t<<elseif $loverWill <= 0.5>>\n\t\troot\n\t<<elseif $loverWill <= 0.75>>\n\t\tflower\n\t<<elseif $loverWill < 1>>\n\t\tmakespace\n\t<<else>>\n\t\tscent\n\t<<endif>>\n<<else>>\n\t<<if $loverWill <= -0.75>>\n\t\tmask\n\t<<elseif $loverWill <= -0.25>>\n\t\tshadow\n\t<<elseif $loverWill <= 0.25>>\n\t\tbanners\n\t<<elseif $loverWill <= 0.75>>\n\t\tmarble\n\t<<else>>\n\t\tmemory\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 13,
+      "name": "perceptive action",
+      "text": "<<nobr>>/% lover's perception %/\n\n<<if $loverPassion >= 1 and $loverInterp >= 1>>\n\tcaress\n<<elseif $loverInterp >= 1>>\n\tbloom into\n<<elseif $loverInterp >= 0.66>>\n\tcomprehend\n<<elseif $loverInterp <= 0.33>>\n\tinterpret\n<<elseif $loverInterp > 0>>\n\tstudy\n<<elseif $loverInterp >= -0.33 >>\n\tperuse\n<<elseif $loverInterp >= -0.66 >>\n\tglance at\n<<elseif $loverInterp > -1>>\n\tblink at\n<<else>>\n\tignore\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 14,
+      "name": "primary setting",
+      "text": "<<nobr>>\n/% The primary setting signifies a general game state.\nThe characters chose it for appropriateness,\nbut also for comfort,\nor maybe out of necessity.\nMaybe it is part of a memory,\nbut not necessarily good or bad.%/\n\n<<if $totalFire < 0 >>\n\t<<if $reactSpirit > 1>>\n\t\teclipse of the moon,\n\t<<elseif $totalSloth > 0>>\n\t\tpetrified forest,\n\t<<elseif $totalEndurance < 0 >>\n\t\tdark ravine,\n\t<<else>>\n\t\tpines in winter,\n\t<<endif>>\n<<else>>\n\t<<if $reactSpirit > 0>>\n\t\tgloaming valley,\n\t<<elseif $totalFire >= 2>>\n\t\tburning forest,\n\t<<elseif $totalPassion > 0>>\n\t\tverdant bower,\n\t<<else>>\n\t\tgolden steppe,\n\t<<endif>>\n<<else>>\n\tmurky fog,\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 15,
+      "name": "mystical practice",
+      "text": "<<nobr>>\n/% The beloved performs the mystical practice.\nIt signifies the state of her highest soul. %/\n\n<<set $power = ( Math.abs($belovedWill) + Math.abs($belovedPassion) + Math.abs($belovedAdept) + Math.abs($belovedInterp) ) / 4.0 >>\n\n<<if Math.abs($belovedWill) > $power>>\n\t<<if Math.abs($belovedWill) > $belovedInterp + $belovedLuck>>\n\t\tastral projection.\n\t<<elseif $belovedWill > 0.33>>\n\t\tvoodoo ritual.\n\t<<elseif $belovedWill > -0.33>>\n\t\tshrinking potion.\n\t<<else>>\n\t\tsubterranean maze.\n\t<<endif>>\n\n<<elseif Math.abs($belovedPassion) > $power>>\n\t<<if $belovedPassion > Math.abs($belovedInterp)>>\n\t\tnight in the palace.\n\t<<elseif $belovedPassion < Math.abs($belovedInterp)>>\n\t\tdawn in the garden.\n\t<<else>>\n\t\tharvest equinox.\n\t<<endif>>\n\n<<elseif Math.abs($belovedInterp) > $power>>\n\t<<if $belovedInterp > Math.abs($belovedAdept)>>\n\t\tglorious elders.\n\t<<elseif $belovedInterp > Math.abs($belovedPassion)>>\n\t\tmighty mothers.\n\t<<elseif $belovedInterp > Math.abs($belovedWill)>>\n\t\tscented herbs.\n\t<<elseif $belovedInterp < -0.33>>\n\t\tsummoning ritual.\n\t<<else>>\n\t\twisdom and verse.\n\t<<endif>>\n\n<<elseif Math.abs($belovedAdept) > $power>>\n\t<<if $belovedAdept > Math.abs($belovedWill)>>\n\t\tinner power.\n\t<<elseif $belovedAdept > 0.33>>\n\t\tdice-toss augury.\n\t<<elseif $belovedAdept < -0.33>>\n\t\tcrazy schizophrenia.\n\t<<else>>\n\t\tforgotten shapes.\n\t<<endif>>\n\n/% undefined / chaotic power section %/\n<<else>>\n\t<<if $luck > $belovedWill>>\n\t\ttarot divination.\n\t<<elseif $reactSpirit > 0 and $belovedWill < 0 >>\n\t\tprecepts of ritual.\n\t<<elseif $reactMind > 0 and $belovedWill < 0 >>\n\t\ttranscendental meditation.\n\t<<elseif $reactHeart > 0 and $belovedWill < 0 >>\n\t\tburnt offerings.\n\t<<else>>\n\t\tsacred task.\n\t<<endif>>\n<<endif>>\n\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 16,
+      "name": "type of land",
+      "text": "<<nobr>>/% the land signifies a global state...\nnot precisely the relation between the players...\n%/\n\n<<set $dryness = 0>>\n<<set $freedom = 0>>\n\n<<if $totalWill > 0>><<set $dryness -= 1>>\n<<endif>>\n\n<<if $totalWill > 1 and $totalPassion > 0 and $totalAdept > 0>>\n\t<<set $freedom += 1>>\t\n<<endif>>\n\n<<if $totalAdept > 1>>\n\t<<set $freedom += 1>>\n<<else>>\n\t<<set $dryness += 1>>\n<<endif>>\n\n<<if $totalSloth > 0 and $totalPassion < 0>>\n\t<<set $dryness += 2>>\n<<elseif $totalSloth > 0 and $totalPassion >= 0>>\n\t<<set $dryness += 1>>\n\t<<set $freedom -= 1>>\n<<elseif $totalSloth <= 0 and $totalPassion < 0>>\n\t<<set $freedom += 1>>\n<<else>>\n\t<<set $freedom += 1>>\n\t<<set $dryness -= 1>>\n<<endif>>\n\n<<if $totalFire > 1>>\n\t<<set $dryness += 2>>\n<<elseif $totalFire > 0>>\n\t<<set $dryness += 1>>\n<<elseif $totalEndurance <= 0>>\n\t<<set $freedom -= 1>>\n<<endif>>\n\n/% Dryness and Freedom are now used\nto calculate the lay of the land. %/\n\n<<if $freedom > 1 and $dryness < -1>>\n\tpines and cypresses.\n<<endif>>\n\n<<if $freedom > 0>>\n\t<<if $dryness < -1>>\n\t\tfrontiers and green valleys.\n\t<<elseif $dryness < 0>>\n\t\twayside pool.\n\t<<elseif $dryness < 1>>\n\t\thigh road and boundary.\n\t<<elseif $dryness < 2>>\n\t\tgrasses withered.\n\t<<else>>\n\t\tgolden steppe.\n\t<<endif>>\n<<else>>\n\t<<if $dryness < -1>>\n\t\triver broad.\n\t<<elseif $dryness < 0>>\n\t\tgully and wide stream.\n\t<<elseif $dryness < 1>>\n\t\tfoothills and fields.\n\t<<elseif $dryness < 2>>\n\t\tbarren fields.\n\t<<else>>\n\t\tdesert citadel.\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 17,
+      "name": "yearning",
+      "text": "/%! base on react !%/<<nobr>>\n/% beloved's passion and will%/\n\n<<if $belovedWill <= -0.5>>\n\t<<if $belovedPassion <= - 1>>\n\t\tbanishment\n\t<<elseif $belovedPassion <= - 0.6>>\n\t\tabysm\n\t<<elseif $belovedPassion <= - 0.3>>\n\t\tabjuration\n\t<<elseif $belovedPassion <= 0.3>>\n\t\tmaneuvering\n\t<<elseif $belovedPassion <= 0.6>>\n\t\tundertaking\n\t<<elseif $belovedPassion < 1>>\n\t\trevolution\n\t<<else>>\n\t\tadjuration\n\t<<endif>>\n<<elseif $belovedWill <= 0.5>>\n\t<<if $belovedPassion <= -1>>\n\t\tdisembowelment\n\t<<elseif $belovedPassion <= -0.6>>\n\t\tbleeding\n\t<<elseif $belovedPassion <= -0.3>>\n\t\tsorrow\n\t<<elseif $belovedPassion <= 0.3>>\n\t\tmotive\n\t<<elseif $belovedPassion <= 0.6>>\n\t\tecstasy\n\t<<elseif $belovedPassion < 1>>\n\t\tdancing\n\t<<else>>\n\t\tscreaming\n\t<<endif>>\n<<else>>\n\t<<if $belovedPassion <= -1>>\n\t\tlighting\n\t<<elseif $belovedPassion <= -0.6>>\n\t\tflight\n\t<<elseif $belovedPassion <= -0.3>>\n\t\tdeparture\n\t<<elseif $belovedPassion <= 0.3>>\n\t\tcoming\n\t<<elseif $belovedPassion <= 0.6>>\n\t\tarrival\n\t<<elseif $belovedPassion < 1>>\n\t\tannunciation\n\t<<else>>\n\t\t<<if $willFactor <= 0>>\n\t\t\tbegging\n\t\t<<else>>\n\t\t\telation\n\t\t<<endif>>\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "light",
+      "text": "<<nobr>>\n/% lover's passion and will %/\n\n/% love-oriented %/\n<<if $loverWill > 0.35>>\n\t<<if $loverPassion <= -1>>\n\t\tentropy.\n\t<<elseif $loverPassion <= -0.6>>\n\t\tspark.\n\t<<elseif $loverPassion <= -0.3>>\n\t\tcandleflame.\n\t<<elseif $loverPassion <= 0.3>>\n\t\theartbeat.\n\t<<elseif $loverPassion <= 0.6>>\n\t\thearthglow.\n\t<<elseif $loverPassion < 1>>\n\t\tpulse.\n\t<<else>>\n\t\tfleshfire.\n\t<<endif>>\n\t\n\t/% duty-oriented %/\n<<elseif $loverWill < -0.35>>\n\t<<if $loverPassion <= -1>>\n\t\tabyss.\n\t<<elseif $loverPassion <= -0.6>>\n\t\tvoid.\n\t<<elseif $loverPassion <= -0.3>>\n\t\tblessings.\n\t<<elseif $loverPassion <= 0.3>>\n\t\tspirits.\n\t<<elseif $loverPassion <= 0.6>>\n\t\tfurnace.\n\t<<elseif $loverPassion < 1>>\n\t\tflame-pillar.\n\t<<else>>\n\t\tsunfire.\n\t<<endif>>\n\t\n\t/% moderate/conflicted %/\n<<else>>\n\t<<if $loverPassion <= -1>>\n\t\tnight-wharf.\n\t<<elseif $loverPassion <= -0.6>>\n\t\tmemory.\n\t<<elseif $loverPassion <= -0.3>>\n\t\tindustry.\n\t<<elseif $loverPassion <= 0.3>>\n\t\tfirefly.\n\t<<elseif $loverPassion <= 0.6>>\n\t\tlampglow.\n\t<<elseif $loverPassion < 1>>\n\t\tstreetlights.\n\t<<else>>\n\t\tskyline.\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 19,
+      "name": "subject of thought",
+      "text": "<<nobr>>/% beloved's will and fire %/\n\n<<if $belovedFire <= -0.5 >>\n\t<<if $belovedWill <= -1 >>\n\t\tobedience to the dead\n\t<<elseif $belovedWill <= -0.5 >>\n\t\tlaws and annals\t\n\t<<elseif $belovedWill <= 0 >>\n\t\trules of decorum\n\t<<elseif $belovedWill <= 0.5 >>\n\t\thouse and home\n\t<<elseif $belovedWill < 1 >>\n\t\ttea on the terrace\n\t<<else>>\n\t\tour walks on the pier\n\t<<endif>>\n\t\n<<elseif $belovedFire <= 0.5>>\n\t<<if $belovedWill <= -1 >>\n\t\tbranches and leaves\n\t<<elseif $belovedWill <= -0.5 >>\n\t\tthe map of our valley\n\t<<elseif $belovedWill <= 0>>\n\t\tthe produce of the harvest\n\t<<elseif $belovedWill <= 0.5>>\n\t\tour fine letters\n\t<<elseif $belovedWill < 1>>\n\t\tour walks on the terrace\n\t<<else>>\n\t\tthat morning on the steppe\n\t<<endif>>\n\n<<else>>\n\t<<if $belovedWill <= -1>>\n\t\truin and destruction\n\t<<elseif $belovedWill <= -0.5>>\n\t\tthe march of armies\n\t<<elseif $belovedWill <= 0 >>\n\t\thunger and famine\n\t<<elseif $belovedWill <= 0.5 >>\n\t\tvalor and might\n\t<<elseif $belovedWill < 1>>\n\t\tour embassies and correspondences\n\t<<else>>\n\t\tmy body down against yours\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 20,
+      "name": "soulsign",
+      "text": "<<nobr>>\n/% something general and wild --\nfocused on lover %/\n\n/% The path of love %/\n<<if $loverPassion > 0.5 >>\n\t<<if $belovedWill >= 1 >>\n\t\tfalcon\n\t<<elseif $belovedWill >= 0.66 >>\n\t\tfirebrand\n\t<<elseif $belovedWill >= 0.33 >>\n\t\teagle\n\t<<elseif $belovedWill == 0 >>\n\t\tfarm\n\t<<elseif $belovedWill >= -0.33 >>\n\t\tvineyard\n\t<<elseif $belovedWill >= -0.66 >>\n\t\teagle\n\t<<elseif $belovedWill > -1 >>\n\t\tchessboard\n\t<<else>>\n\t\tsequoia\n\t<<endif>>\n\n/% The path of necessity. %/\n<<elseif $loverWill < 0>>\n\t<<if $loverEndurance > 0>>\n\t\t<<if $loverFire < 0>>\n\t\t\tsnowcap\n\t\t<<else>>\n\t\t\tmeadow\n\t\t<<endif>>\n\t<<elseif $loverInterp > 0>>\n\t\tmockingjay\n\t<<else>>\n\t\tswallow\n\t<<endif>>\n\t\n<<else>>\n\t<<if $loverAdept > 0>>\n\t\thawk\n\t<<elseif $loverInterp > 0>>\n\t\triver\n\t<<else>>\n\t\towl\n\t<<endif>>\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 21,
+      "name": "soulstate",
+      "text": "<<nobr>>\n/% lover's competence:\ncombination of adept, interp, and endurance %/\n<<set $skill = $loverAdept + $loverInterp >>\n\n/% High-END section -- strong, vital, energetic %/\n<<if $loverEndurance > 0.4>>\n\t<<if $skill >= 2 >>\n\t\tmagnificent\n\t<<elseif $skill > 1.5>>\n\t\tenlightened\n\t<<elseif $skill > 1 >>\n\t\tshining\n\t<<elseif $skill > 0.5>>\n\t\twell-measured\n\t<<elseif $skill == 0 >>\n\t\tnourished\n\t<<elseif $skill > -0.5>>\n\t\treclaimed\n\t<<elseif $skill > -1>>\n\t\tinsipid\n\t<<elseif $skill > -1.5>>\n\t\timproper\n\t<<elseif $skill > -2>>\n\t\twarped\n\t<<else>>\n\t\tbenighted\n\t<<endif>>\n\n/% Mid-END section -- tired, winded, warmed up %/\n<<elseif $loverEndurance > -0.4>>\n\t<<if $skill >= 2>>\n\t\tprophetic\n\t<<elseif $skill > 1.5>>\n\t\theroic\n\t<<elseif $skill > 1>>\n\t\treborn\n\t<<elseif $skill > 0.5>>\n\t\tserious\n\t<<elseif $skill > 0>>\n\t\ttumultuous\n\t<<elseif $skill == 0 >>\n\t\tentropic\n\t<<elseif $skill > -0.5>>\n\t\tbleak\n\t<<elseif $skill > -1>>\n\t\texhausted\n\t<<elseif $skill > -1.5>>\n\t\tparalytic\n\t<<elseif $skill > -2>>\n\t\tshattered\n\t<<else>>\n\t\tforgotten\n\t<<endif>>\n\n/% Low-END section -- weak, exhausted, damaged %/\n<<else>>\n\t<<if $skill >= 2>>\n\t\tdesperate\n\t<<elseif $skill > 1.5>>\n\t\tdefiant\n\t<<elseif $skill > 1>>\n\t\tredoubtable\n\t<<elseif $skill > 0.5>>\n\t\twinded\n\t<<elseif $skill == 0 >>\n\t\trouted\n\t<<elseif $skill > -0.5 >>\n\t\texhausted\n\t<<elseif $skill > - 1 >>\n\t\tclumsy\n\t<<elseif $skill > -1.5>>\n\t\tbenighted\n\t<<elseif $skill > -2 >>\n\t\tshattered\n\t<<else>>\n\t\tdissolved\n\t<<endif>>\n\t\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 22,
+      "name": "breathing",
+      "text": "<<nobr>>\n/% lover's endurance %/\n\n<<if $loverEndurance <= -0.75>>\n\tsobbing\n<<elseif $loverEndurance <= -0.5>>\n\tpanting\n<<elseif $loverEndurance <= -0.1>>\n\tsighing\n<<elseif $loverEndurance <= 0.1>>\n\tbreathing\n<<elseif $loverEndurance <= 0.5>>\n\tspeaking\n<<elseif $loverEndurance <= 0.75>>\n\tintoning\n<<else>>\n\tsinging\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 23,
+      "name": "reflecting some way on",
+      "text": "<<nobr>>\n/% beloved's passion and sloth %/\n\n/% low energy section %/\n<<if $belovedSloth > 0.33>>\n\t<<if $belovedPassion <= -1>>\n\t\tprostrate, obsessing over\n\t<<elseif $belovedPassion < -0.33>>\n\t\tdreaming in chapel of\n\t<<elseif $belovedPassion <=0 >>\n\t\tthinking for hours of\n\t<<elseif $belovedPassion < 0.33>>\n\t\tdreaming in your bed of\n\t<<elseif $belovedPassion < 1>>\n\t\tdreaming in meadows of\n\t<<else>>\n\t\tdaydreaming in tree-shade of\n\t<<endif>>\n\n\t/% mid energy section %/\n<<elseif $belovedSloth > -0.33>>\n\t<<if $belovedPassion <= -1>>\n\t\tsobbing silently over\n\t<<elseif $belovedPassion <= -0.5>>\n\t\tcrying to your mother about\n\t<<elseif $belovedPassion <= -0.2>>\n\t\tcrying to your friend about\n\t<<elseif $belovedPassion <= 0.2 >>\n\t\twriting in your diary about\n\t<<elseif $belovedPassion <= 0.5>>\n\t\twriting home about\n\t<<elseif $belovedPassion < 1>>\n\t\tsinging in the meadows of\n\t<<else>>\n\t\tsinging blissfully of\n\t<<endif>>\n\t\n\t/% high energy section %/\n<<else>>\n\t<<if $belovedAdept >= 0.75>>\n\t\triding the prairie, singing\n\t<<elseif $belovedInterp >= 0.75>>\n\t\tbuilding your keel, singing\n\t<<elseif $belovedInterp <= -0.75>>\n\t\tsinging while tilling, singing\n\t<<elseif $belovedAdept <= -0.75>>\n\t\tmopping the floors, singing\n\t<<else>>\n\t\tweeding the garden, singing\n\t<<endif>>\n\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 24,
+      "name": "sign of passion",
+      "text": "<<nobr>>\n/% beloved's passion and fire %/\n\n<<if $belovedFire <= -0.5>>\n\t<<if $belovedPassion <= -0.75>>\n\t\ticy moon,\n\t<<elseif $belovedPassion <= -0.3>>\n\t\tivory rose,\n\t<<elseif $belovedPassion <= 0.3>>\n\t\tplums and cherries,\n\t<<elseif $belovedPassion <= 0.75>>\n\t\tenormous glacier,\n\t<<else>>\n\t\tice-cold waterfall,\n\t<<endif>>\n\t\n<<elseif $belovedFire <= 0.5>>\n\t<<if $belovedPassion <= -0.75>>\nviolet wilted,\n\t<<elseif $belovedPassion <= -0.5>>\ndropped rose,\n\t<<elseif $belovedPassion <= -0.1>>\nwinter or summer,\n\t<<elseif $belovedPassion <= 0.1>>\nmoon rising white,\n\t<<elseif $belovedPassion <= 0.5>>\nsailing moon,\n\t<<elseif $belovedPassion <= 0.75>>\ntinkling brook,\n\t<<else>>\ndropped kerchief,\n\t<<endif>>\n\n<<else>>\n\t<<if $belovedPassion <= -0.75>>\n\t\tthirst and hunger,\n\t<<elseif $belovedPassion < -0.25>>\n\t\trippling desert,\n\t<<elseif $belovedPassion <= 0.25>>\n\t\troseate brooch,\n\t<<elseif $belovedPassion <= 0.75>>\n\t\tflaming rose,\n\t<<else>>\n\t\tburning utopia,\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 25,
+      "name": "generate",
+      "text": "/%! base on react !%/<<nobr>>\n/% beloved's sloth, endurance, and will %/\n\n/% sloth section %/\n<<if $belovedSloth >= 0.5>>\n\t<<if $belovedWill > 0.3 >>\n\t\ttouch\n\t<<elseif $belovedWill > -0.3 >>\n\t\tsuggest\n\t<<else>>\n\t\trecognize\n\t<<endif>>\n\t\n/% romance section %/\n<<elseif $belovedWill > 0>>\n\t<<if $willFactor <= 0>>\n\t\t<<if $belovedEndurance > 0>>\n\t\t\t<<if $totalPassion > 1>>\n\t\t\t\thammer\n\t\t\t<<elseif $loverEndurance < 0>>\n\t\t\t\trebuild\n\t\t\t<<else>>\n\t\t\t\tbuild\n\t\t\t<<endif>>\n\t\t<<elseif $belovedPassion > 0.33>>\n\t\t\timpel\n\t\t<<else>>\n\t\t\treveal\n\t\t<<endif>>\n\t<<else>>\n\t\t<<if $belovedEndurance > 0.33 >>\n\t\t\tdance\n\t\t<<elseif $belovedEndurance > -0.33>>\n\t\t\tsing\n\t\t<<else>>\n\t\t\tcompose\n\t\t<<endif>>\n\t<<endif>>\n\n/% other-objective section %/\n<<else>>\n\t/% the lover is romantically-minded\n\t\tbut the beloved has other priorities %/\n\t<<if $willFactor < 0>>\n\t\t<<if $belovedSloth > 0.33 >>\n\t\t\tbetray\n\t\t<<elseif $belovedSloth > -0.33>>\n\t\t\tdegrade\n\t\t<<else>>\n\t\t\tdestroy\n\t\t<<endif>>\n\t\t\n\t/% the lover and beloved agree not to pursue each other %/\n\t<<else>>\n\t\t<<if $belovedSloth > 0.33 >>\n\t\t\tguide\n\t\t<<elseif $belovedSloth > -0.33>>\n\t\t\tlead\n\t\t<<else>>\n\t\t\terect\n\t\t<<endif>>\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 26,
+      "name": "breathe",
+      "text": "/%! base on react !%/<<nobr>>\n\n/% beloved's endurance %/\n<<if $belovedEndurance <= -0.8>>\n\thide in\n<<elseif $belovedEndurance <= -0.4>>\n\tcurtain yourself in\n<<elseif $belovedEndurance < 0>>\n\tlounge in\n<<elseif $belovedEndurance == 0>>\n\tsniff\n<<elseif $belovedEndurance < 0.4>>\n\tsummon\n<<elseif $belovedEndurance < 0.8>>\n\texhale\n<<else>>\n\tswell up with\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 27,
+      "name": "emotional state",
+      "text": "<<nobr>>\n\n/%\nlover's condition:\nmainly sloth and passion,\na little endurance and will thrown in%/\n\n<<if $loverSloth <= -0.5>>\n\t<<if $loverPassion > 0>>\n\t\t<<if $loverEndurance <= -0.33>>\n\t\t\texhausted passion.\n\t\t<<elseif $loverEndurance <= 0.33>>\n\t\t\timpressive display.\n\t\t<<else>>\n\t\t\theadlong into wind.\n\t\t<<endif>>\n\t<<else>>\n\t\tparched and barren.\n\t<<endif>>\n\t\n<<elseif $loverSloth <= 0.5>>\n\t<<if $loverPassion <= 0>>\n\t\t<<if $loverAdept > 0.33 >>\n\t\t\tmeadowland fantasy.\n\t\t<<elseif $loverAdept > -0.33 >>\n\t\t\tspatial command.\n\t\t<<else>>\n\t\t\tdrunk with wine.\n\t\t<<endif>>\n\t<<else>>\n\t\t<<if $loverEndurance > 0.33 >>\n\t\t\tcreek-chill elation.\n\t\t<<elseif $loverEndurance > -0.33 >>\n\t\t\tstrength of spirit.\n\t\t<<else>>\n\t\t\tloud and strong.\n\t\t<<endif>>\n\t<<endif>>\n<<else>>\n\t<<if $loverPassion > 0>>\n\t\t<<if $loverWill > 0.33>>\n\t\t\trecumbent desire.\n\t\t<<elseif $loverWill > -0.33>>\n\t\t\tshadowed resolve.\n\t\t<<else>>\n\t\t\tchapel passions.\n\t\t<<endif>>\n\t<<else>>\n\t\t<<if $loverWill > 0.33 >>\n\t\t\tsorrowful abandon.\n\t\t<<elseif $loverWill > -0.33\n\t\t\thushed and still.\n\t\t<<else>>\n\t\t\tgray-niche solace.\n\t\t<<endif>>\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 28,
+      "name": "CHOOSE",
+      "text": "<<silently>>\n\t<<set $verb to 0>>\n\t<<set $adv to 0>>\n<</silently>>\n|ACTION|MANNER|\n|<<radiobutton \"$verb\" \"fast\">>fast|<<radiobutton \"$adv\" \"calmly\">>calmly|\n|<<radiobutton \"$verb\" \"indulge\">>indulge|<<radiobutton \"$adv\" \"vainly\">>vainly|\n|<<radiobutton \"$verb\" \"acquiesce\">>acquiesce|<<radiobutton \"$adv\" \"astutely\">>astutely|\n|<<radiobutton \"$verb\" \"supplicate\">>supplicate|<<radiobutton \"$adv\" \"imperiously\">>imperiously|\n|<<radiobutton \"$verb\" \"remonstrate\">>remonstrate|<<radiobutton \"$adv\" \"willingly\">>willingly|\n|<<radiobutton \"$verb\" \"abrogate\">>abrogate|<<radiobutton \"$adv\" \"eagerly\">>eagerly|\n|<<radiobutton \"$verb\" \"bombast\">>bombast|<<radiobutton \"$adv\" \"reproachfully\">>reproachfully|\n|<<radiobutton \"$verb\" \"communicate\">>communicate|<<radiobutton \"$adv\" \"adversely\">>adversely|\n|<<radiobutton \"$verb\" \"mediate\">>mediate|<<radiobutton \"$adv\" \"defiantly\">>defiantly|\n|<<radiobutton \"$verb\" \"rest\">>rest|<<radiobutton \"$adv\" \"peacefully\">>peacefully|\n\n<<button \"act\">>\n\t<<if ($verb is not 0) and ($adv is not 0)>>\n\t\t<<set $chosenVerb to $verb>>\n\t\t<<set $chosenAdv to $adv>>\n\t\t<<goto \"TURN\">>\n\t<<else>>\n\t\t<<print \"Please select a verb and an adverb.\">>\n\t<</if>>\n<<endbutton>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "TURN",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "INDEX",
+      "text": "<<silently>>\n/%\nSMALL MED and LARGE are used to calibrate action effects.\nSee \"execute verb\", \"execute adverb\", and \"check stats\"\n%/\n\n<<set $VOLUME = 0.33>>\n\n<<set $SMALL = $VOLUME >>\n<<set $MED = 2 * $VOLUME >>\n<<set $LARGE = 3 * $VOLUME >>\n\n/%  \nPassion rolls over into Fire, \n\twhich is a more general spiritual quality.\nWill is also positivity towards union.\nInterp(retation) is like perceptive accuracy.\nAdept is like dexterity or agility or deftness or something,\n\texcept socially and emotionally also?\nLuck is just like it sounds. Use randomly and indescriminantly.\nSloth is like mass, ie resistance to momentum.\n%/\n\n<<set $loverFire = 0>>\n<<set $loverPassion = 0>>\n<<set $loverEndurance = 0>>\n<<set $loverWill = 0>>\n<<set $loverInterp = 0.2>>\n<<set $loverAdept = 0.2>>\n<<set $loverSloth = 0>>\n\n<<set $belovedFire = 0>> \n<<set $belovedPassion = 0>>\n<<set $belovedEndurance = 0>>\n<<set $belovedWill = 0>>\n<<set $belovedInterp = 0.3>>\n<<set $belovedAdept = 0.3>>\n<<set $belovedSloth = 0>>\n\n/% The totals are calculated by \"check stats\"\nand used for some decisions especially in display. %/\n\n<<set $totalPassion = 0>>\n<<set $totalEndurance = 0>>\n<<set $totalSloth = 0>>\n<<set $totalFire = 0>>\n<<set $totalAdept = 0>>\n<<set $totalInterp = 0>>\n\n\n/% The image of the beloved differs slightly from the actuality.\nThe degree of difference is determined by $loverInterp. \nThe creation of imago is performed by [does not exist yet] %/\n\n<<set $imagoFire = 0>> \n<<set $imagoPassion = 0>>\n<<set $imagoEndurance = 0>>\n<<set $imagoWill = 0>>\n<<set $imagoInterp = 0>>\n<<set $imagoAdept = 0>>\n<<set $imagoSloth = 0>>\n\n/% Luck is set randomly by \"check stats\"\nand used by several functions. %/\n\n<<set $luck = 0 >>\n\n/% The three reaction variables determine the beloved's response.\nThey are set and used by \"react\". %/\n\n<<set $reactHeart = 0>>\n<<set $reactMind = 0 >>\n<<set $reactSpirit = 0 >>\n\n/% The emblems have multiple effects,\nboth for display and reaction purposes.\nThey are set by Beloved React. %/\n\n<<set $mask = 0>>\n\n/% verb and adverb refer to the player's choices,\nset by \"choice\" and used by \"execute verb\" and \"execute adverb\".\nbelovedReact describes the emotional response to the player's behavior,\nbelovedAct describes her own choice.\nChosen* are temporary containers.\nTurns is used to number the displayed sonnets. %/\n\n<<set $verb = 0>>\n<<set $adv = 0>>\n<<set $belovedReact = 0>>\n<<set $belovedAction = 0>>\n<<set $chosenVerb = 0>>\n<<set $chosenAdv = 0>>\n<<set $turns = 0>>\n<<set $godmode = 0>>\n\n<</silently>>Written by Adam Bredenberg \nand Danial Mohammed Khan-Yousufzai[[.|Secret Powers]]\n\nThis interactive poem has no end-condition and no objective.\nEach text reflects a state of the inner geometry,\nwhich changes in response to the player's decisions.\n\nConclude your experience\nat whatever point you find appropriate.\nA complete Fallen Leaves cycle could include\nover one hundred sonnets.\nCopying an entire cycle is not recommended.\nBetter to record individual couplets that stand out.\n\n18+ : May generate erotic content.\n\n[[Adam's Note]]\n[[License|license]]\n\nAct by choosing a combination of verb and adverb.\n\n[[BEGIN|CHOOSE]] ",
+      "links": [
+        {
+          "text": ".",
+          "destination": {
+            "name": "Secret Powers",
+            "pid": 69
+          }
+        },
+        {
+          "text": "Adam's Note",
+          "destination": {
+            "name": "Adam's Note",
+            "pid": 64
+          }
+        },
+        {
+          "text": "License",
+          "destination": {
+            "name": "license",
+            "pid": 70
+          }
+        },
+        {
+          "text": "BEGIN",
+          "destination": {
+            "name": "CHOOSE",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "TURN",
+      "text": "<<if $godmode == 1>>\n\n\tExecuting verb...\n\t<<display \"execute verb\">>\n\tExecuting adverb...\n\t<<display \"execute adverb\">>\n\tBeloved reacting...\n\t<<display \"beloved react\">>\n\tBeloved acting...\n\t<<display \"beloved act\">>\n\tChoosing emblems...\n\t<<display \"choose emblems\">>\n\tChecking stats...\n\t<<display \"check stats\">><<set $turns += 1>>\n\n\tPausing...\n\t[[Continue|SONNET]] \n<<else>>\n\t<<silently>>\n\t<<display \"execute verb\">>\n\t<<display \"execute adverb\">>\n\t<<display \"beloved react\">>\n\t<<display \"beloved act\">>\n\t<<display \"choose emblems\">>\n\t<<display \"check stats\">>\n\t<<set $turns += 1>>\n\t<<endsilently>>\n\t<<goto \"SONNET\">>\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "execute verb",
+            "pid": 54
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "execute adverb",
+            "pid": 55
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "beloved react",
+            "pid": 57
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "beloved act",
+            "pid": 62
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "choose emblems",
+            "pid": 59
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "check stats",
+            "pid": 56
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "SONNET",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "SONNET",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "myFlame",
+      "text": "<<nobr>>\n/% Lover's passion and fire. %/\n\n<<if $loverPassion <= -0.75>>\n\t<<if $loverFire > 0.33>>\n\t\ticonoclasm\n\t<<elseif $loverFire > -0.33>>\n\t\trage-torch\n\t<<else>>\n\t\tsorrow-cup\n\t<<endif>>\n\n<<elseif $loverPassion <= -0.25>>\n\t<<if $loverFire > 0.33>>\n\t\tstreetlights\n\t<<elseif $loverFire > -0.33>>\n\t\tmoon\n\t<<else>>\n\t\tarmageddon\n\t<<endif>>\n\n<<elseif $loverPassion <= 0.25>>\n\t<<if $loverFire > 0.33>>\n\t\tflametongue\n\t<<elseif $loverFire > -0.33>>\n\t\ttinder\n\t<<else>>\n\t\twinter\n\t<<endif>>\n\n<<elseif $loverPassion <= 0.75>>\n\t<<if $loverFire > 0.33>>\n\t\tengine\n\t<<elseif $loverFire > -0.33>>\n\t\tmachine\n\t<<else>>\n\t\tderelict\n\t<<endif>>\n\n<<else>>\n\t<<if $loverFire > 0.33>>\n\t\tecstasy\n\t<<elseif $loverFire > -0.33>>\n\t\tfuror\n\t<<else>>\n\t\tclaw\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 32,
+      "name": "herFlame",
+      "text": "<<nobr>>\n/% Beloved's passion and fire %/\n\n<<if $belovedPassion <= -1>>\n\tcrypt-torch\n<<elseif $belovedPassion <= -0.75>>\n\t<<if $belovedFire > 0.33>>\n\t\thectic\n\t<<elseif $belovedFire > -0.33>>\n\t\tlighthouse\n\t<<else>>\n\t\tovercoat\n\t<<endif>>\n<<elseif $belovedPassion <= -.25>>\n\t<<if $belovedFire > 0.33>>\n\t\tfever\n\t<<elseif $belovedFire > -0.33>>\n\t\twatchlamp\n\t<<else>>\n\t\tnight-breeze\n\t<<endif>>\n<<elseif $belovedPassion <= .25>>\n\t<<if $belovedFire > 0.33>>\n\t\tflamewhisp\n\t<<elseif $belovedFire > -0.33>>\n\t\tcookpot\n\t<<else>>\n\t\tfrost-cavity\n\t<<endif>>\n<<elseif $belovedPassion <= .75>>\n\t<<if $belovedFire > 0.33>>\n\t\theartflame\n\t<<elseif $belovedFire > -0.33>>\n\t\tspirit\n\t<<else>>\n\t\tice-age\n\t<<endif>>\n<<else>>\n\t<<if $belovedFire > 0.33>>\n\t\tresplendence\n\t<<elseif $belovedFire > -0.33>>\n\t\treflector\n\t<<else>>\n\t\tcloud\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 33,
+      "name": "impacts",
+      "text": "<<nobr>>/% Decribes the effect of the beloved's passion\nupon the passion of the lover. %/\n\n<<if $totalFire > 1>>\n\t<<if $reactHeart >= $reactSpirit>>\n\t\tliberates\n\t<<elseif $reactMind >= $reactSpirit>>\n\t\tdeconstructs\n\t<<else>>\n\t\tlibates\n\t<<endif>>\n<<elseif $belovedPassion > $loverPassion>>\n\timpels\n<<elseif $loverFire > $belovedFire>>\n\ttempts\n<<elseif $belovedInterp > $loverInterp>>\n\ttransforms\n<<elseif $belovedEndurance < -0.5 >>\n\tcollapses\n<<elseif $totalEndurance < 0 >>\n\timplodes\n<<elseif $willFactor > 0 and $totalPassion > 0>>\n\tunleashes\n<<elseif $belovedSloth > 0 and $loverSloth < 0>>\n\tinfects\n<<elseif $belovedPassion > 0.5 >>\n\texplodes\n<<else>>\n\tinverts\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 34,
+      "name": "ourFlameType",
+      "text": "<<nobr>>\n<<if $totalFire >= 2 >>Pyre\n<<elseif $totalFire >= 1.5 >>Firestorm\n<<elseif $totalFire >= 1 >>Hearth\n<<elseif $totalFire >= .5 >>Brazier\n<<elseif $totalFire > 0 >>Candle\n<<elseif $totalFire is 0 >>Temple\n<<elseif $totalFire > -0.5 >>Tinder\n<<elseif $totalFire > -1 >>Wasteland\n<<elseif $totalFire > -1.5 >>Tundra\n<<elseif $totalFire > -2 >>Blizzard\n<<else>>Permafrost\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 35,
+      "name": "strength",
+      "text": "<<nobr>>\n/% Signifies the form of the lover's power. %/\n\n<<if $loverWill > 0>>\n\t<<if $loverPassion > 0.75 and $loverFire > 0.75 and $loverEndurance > 0 >>\n\t\tcock\n\t<<elseif $loverPassion > 0 and $loverAdept > 0.25>>\n\t\t<<if $loverInterp > 0.3>>\n\t\t\taxe\n\t\t<<elseif $loverInterp > -0.3>>\n\t\t\tspear\n\t\t<<else>>\n\t\t\tclub\n\t\t<<endif>>\n\t<<elseif $loverInterp < 0>>\n\t\t<<if $loverEndurance > 0.33>>\n\t\t\thorn\n\t\t<<elseif $loverEndurance > -0.33>>\n\t\t\tclaw\n\t\t<<else>>\n\t\t\tnail\n\t\t<<endif>>\n\t<<else>>\n\t\t<<if $loverSloth < -0.33>>\n\t\t\twheel\n\t\t<<elseif $loverSloth < 0.33>>\n\t\t\tarm\n\t\t<<else>>\n\t\t\tmass\n\t\t<<endif>>\n\t<<endif>>\n<<elseif $loverWill < 0>>\n\t<<if $loverInterp >= 1 and $loverPassion < 0.5 and $loverPassion > -0.5>>\n\t\tdove\n\t<<elseif $loverInterp >= 1>>\n\t\taegis\n\t<<elseif $loverEndurance > 0.75>>\n\t\tsteel\n\t<<elseif $loverEndurance > 0>>\n\t\tmountain\n\t<<else>>\n\t\tvalley\n\t<<endif>>\n<<else>>\n\t<<if $loverSloth < -0.33>>\n\t\twheel\n\t<<elseif $loverSloth < 0.33>>\n\t\tscale\n\t<<else>>\n\t\tstone\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "communicate",
+      "text": "Double-click this passage to edit it.",
+      "links": []
+    },
+    {
+      "pid": 37,
+      "name": "message",
+      "text": "<<nobr>>\n/% beloved's interp, will, and passion %/\n\n<<if $belovedInterp <= -0.5>>\n\t<<if $willFactor < 0 and $belovedWill > 0.5 and $belovedPassion > 0.5>>\n\t\tBeg\n\t<<elseif $belovedPassion > 0.5 or $belovedPassion < -0.5>>\n\t\t<<if $willFactor > 0>>\n\t\t\tMoan to\n\t\t<<else>>\n\t\t\tScream at\n\t\t<<endif>>\n\t<<elseif $belovedEndurance > 0.35>>\n\t\t<<if $willFactor < 0 >>\n\t\t\tWrestle\n\t\t<<else>>\n\t\t\tGrowl at\n\t\t<<endif>>\n\t<<else>>\n\t\tMumble to\n\t<<endif>>\n\n<<elseif $belovedInterp <= 0.5>>\n\t<<if $belovedPassion > 0.5 or $belovedPassion < -0.5>>\n\t\t<<if $willFactor > 0>>\n\t\t\tCry to\n\t\t<<else>>\n\t\t\tPlead to\n\t\t<<endif>>\n\t<<elseif $belovedAdept > $loverAdept + $luck>>\n\t\t<<if $willFactor > 0>>\n\t\t\tCall to\n\t\t<<else>>\n\t\t\tCommand\n\t\t<<endif>>\n\t<<else>>\n\t\tSpeak to\n\t<<endif>>\n\n<<elseif $belovedAdept > 0.35>>\n\t<<if $belovedEndurance < $belovedAdept>>\n\t\tSuggest to\n\t<<elseif $belovedPassion > $belovedEndurance>>\n\t\tDance for\n\t<<else>>\n\t\tSing to\n\t<<endif>>\n<<elseif $belovedSloth <= 0.33>>\n\tGlance at\n<<elseif $willFactor < 0>>\n\tLie to\n<<else>>\n\tWrite on\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 38,
+      "name": "attribute",
+      "text": "<<nobr>>\n/% beloved's emotional character,\na \"soft state\" spin on the \"hard state\"\nrepresented by the form ...\nor is this the flesh\nand the other is merely wireframe? \n(interrogate that \"merely\")%/\n\n<<if $belovedSloth <= -0.5>>\n\t<<if $belovedPassion >= 1>>\n\t\tburning\n\t<<elseif $belovedPassion >= 0.4>>\n\t\tvibrating\n\t<<elseif $belovedPassion <= -1>>\n\t\tfurious\n\t<<elseif $belovedPassion <= -0.4>>\n\t\tfluttering\n\t<<else>>\n\t\tflowering\n\t<<endif>>\n\t\n<<elseif $belovedPassion > 0.5>>\n\t<<if $belovedFire > 0.5 and $belovedPassion > 0.75>>\n\t\tclose-knit\n\t<<elseif $belovedEndurance > 0.5>>\n\t\tfeasted\n\t<<elseif $belovedInterp + $belovedAdept > 1>>\n\t\tmiraculous\n\t<<elseif $belovedAdept > 0>>\n\t\tprecise\n\t<<else>>\n\t\tmerry\n\t<<endif>>\n\t\n<<elseif $belovedEndurance < -0.3 and $belovedAdept < -0.3>>\n\tbroken\n<<elseif $belovedInterp > 0.5>>\n\tpious\n<<elseif $belovedAdept > 0.5>>\n\twell-made\n<<elseif $belovedInterp + $belovedAdept > 0>>\n\tempty\n<<else>>\n\tthick-leaved\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 39,
+      "name": "form",
+      "text": "<<nobr>>\n/% The shape of the beloved's soul...\ndetermined by fire, adept, interp %/\n\n<<if $belovedFire >= 1>>\n\t<<if $belovedAdept + $belovedInterp + $luck >= 2>>\n\t\tdragon.\n\t<<elseif $belovedAdept + $belovedInterp + $luck >= 1>>\n\t\tcrystal.\n\t<<elseif $belovedAdept + $belovedInterp + $luck >= 0>>\n\t\tstar.\n\t<<elseif $belovedAdept + $belovedInterp + $luck >= -1>>\n\t\tspiral.\n\t<<elseif $belovedAdept + $belovedInterp + $luck > -2>>\n\t\tswarm.\n\t<<else>>\n\t\tchaos.\n\t<<endif>>\n\t\n<<elseif $belovedFire <= -1>>\n\t<<if $belovedAdept + $belovedInterp + $luck >= 2>>\n\t\tlotus.\n\t<<elseif $belovedAdept + $belovedInterp + $luck >= 1>>\n\t\tchalice.\n\t<<elseif $belovedAdept + $belovedInterp + $luck >= 0>>\n\t\tpalace.\n\t<<elseif $belovedAdept + $belovedInterp + $luck >= -1>>\n\t\taltar.\n\t<<elseif $belovedAdept + $belovedInterp + $luck > -2>>\n\t\tsphere.\n\t<<else>>\n\t\tflood.\n\t<<endif>>\n\t\n<<elseif $belovedAdept + $belovedInterp + $luck >= 2>>\n\thexagram.\n<<elseif $belovedAdept + $belovedInterp + $luck >= 1>>\n\tsquare.\n<<elseif $belovedAdept + $belovedInterp + $luck > 0>>\n\tdiagram.\n<<elseif $belovedAdept + $belovedInterp + $luck >= -1>>\n\tpath.\n<<elseif $belovedAdept + $belovedInterp + $luck > -2>>\n\tsketch.\n<<else>>\n\tvision.\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 40,
+      "name": "game",
+      "text": "Painting\nRiding\nFighting\nAt chess\n",
+      "links": []
+    },
+    {
+      "pid": 41,
+      "name": "my will response to",
+      "text": "<<nobr>>\n/% lover's will, passion, and endurance %/\n\n<<if $loverPassion <= -0.5>>\n\t<<if $loverEndurance >= 1>>\n\t\tmy fist raised against\n\t<<elseif $loverEndurance > 0.5>>\n\t\tmy fists clench at\n\t<<elseif $loverEndurance > -0.5>>\n\t\tmy teeth clench at\n\t<<elseif $loverEndurance > -1 >>\n\t\tmy lip trembles out\n\t<<else>>\n\t\tmy tears flow forth for\n\t<<endif>>\n<<elseif $loverPassion <= 0.5>>\n\t<<if Math.abs($loverWill) < 0.2 >>\n\t\tI smile slightly at\n\t<<elseif $loverWill < 0.5>>\n\t\tmy agents investigate\n\t<<elseif $loverEndurance < -0.2 >>\n\t\tmy lip tightens at\n\t<<elseif $loverWill > 0.5>>\n\t\tmy eyes flash at\n\t<<else>>\n\t\tmy foot taps at\n\t<<endif>>\n<<else>>\n\t<<if $loverEndurance <= -1>>\n\t\tI collapse before\n\t<<elseif $loverEndurance <= -0.5>>\n\t\tmy knees tremble at\n\t<<elseif $loverEndurance <= 0.5>>\n\t\tmy flesh trembles at\n\t<<elseif $loverEndurance < 1>>\n\t\tmy body strains at\n\t<<else>>\n\t\tmy body posesses\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 42,
+      "name": "otherActs",
+      "text": "<<nobr>>\n/% sloth, interp, adept %/\n\n<<if $totalSloth > 0.25>>\n\t<<if $totalAdept > 1.5>>\n\t\tchess-games.\n\t<<elseif $totalInterp > 1>>\n\t\tnotes.\n\t<<elseif $totalAdept + $totalInterp > 2>>\t\n\t\trecitations.\n\t<<elseif $totalInterp < -1.5 >>\n\t\tfantasies.\n\t<<elseif $totalAdept < -1>>\n\t\tdice-games.\n\t<<else>>\n\t\tlong naps.\n\t<<endif>>\n\n<<elseif $totalSloth >= -0.25>>\n\t<<if $totalInterp > $totalAdept>>\n\t\t<<if $totalInterp > 0.33>>\n\t\t\ttreaties.\n\t\t<<elseif $totalInterp > -0.33 >>\n\t\t\tspeeches.\n\t\t<<else>>\n\t\t\ttrials.\n\t\t<<endif>>\n\t<<elseif $totalPassion + $totalEndurance > 2>>\n\t\tinvasions.\n\t<<elseif $totalPassion > 1>>\n\t\tdevelopment.\n\t<<elseif $totalEndurance < 0>>\n\t\tconstruction.\n\t<<else>>\n\t\tlandfalls.\n\t<<endif>>\n\n<<else>>\n\t<<if $totalAdept > 1.5>>\n\t\tplanetfalls.\n\t<<elseif $totalInterp > 1.5>>\n\t\tanarchies.\n\t<<elseif $totalPassion > 1>>\n\t\tparades.\n\t<<elseif $totalPassion < -1>>\n\t\tatrocities.\n\t<<elseif $totalEndurance > 1.5>>\n\t\tresistances.\n\t<<elseif $totalEndurances < -1.5>>\n\t\tdefeats.\n\t<<else>>\n\t\tlabors.\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 43,
+      "name": "passionActs",
+      "text": "<<nobr>>\n/% Sloth and passion, mainly. %/\n\n<<if $totalSloth < -0.33>>\n\t<<if $willRatio > 0>>\n\t\t<<if $totalPassion > 0.33>>\n\t\t\tfuckfests\n\t\t<<elseif $totalPassion > -0.33>>\n\t\t\tradiant dawns\n\t\t<<else>>\n\t\t\tcrying orgasms\n\t\t<<endif>>\n\t<<else>>\n\t\t<<if $totalPassion > 0.33>>\n\t\t\thungry hunts\n\t\t<<elseif $totalPassion > -0.33>>\n\t\t\tdesperate tactics\n\t\t<<else>>\n\t\t\tdesperate prayers\n\t\t<<endif>>\n\t<<endif>>\n\n<<elseif $totalSloth <= 0.33>>\n\t<<if $willRatio > 0>>\n\t\t<<if $belovedPassion > 0.33>>\n\t\t\tperfect gestures\n\t\t<<elseif $belovedPassion > -0.33>>\n\t\t\tlove letters\n\t\t<<else>>\n\t\t\tholy ascents\n\t\t<<endif>>\n\t<<else>>\n\t\t<<if $totalPassion > 0.33>>\n\t\t\tshouted pleas\n\t\t<<elseif $totalPassion > -0.33>>\n\t\t\tkneeling pleas\n\t\t<<else>>\n\t\t\tweeping pleas\n\t\t<<endif>>\n\t<<endif>>\n<<else>>\n\t<<if $willRatio > 0>>\n\t\t<<if $totalPassion > 0.33>>\n\t\t\tgentle cuddles\n\t\t<<elseif $totalPassion > -0.33>>\n\t\t\tlaconic caresses\n\t\t<<else>>\n\t\t\tsilent fights\n\t\t<<endif>>\n\t<<else>>\n\t\t<<if $totalPassion > 0.33>>\n\t\t\tlonging glances\n\t\t<<elseif $totalPassion > -0.33>>\n\t\t\tforgotten dreams\n\t\t<<else>>\n\t\t\tsorrowing records\n\t\t<<endif>>\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 44,
+      "name": "distant location",
+      "text": "<<nobr>>\n/% Signifies a vanishing point, a mirror, \nor a reflected memory. %/\n\n<<if $loverAdept >= 1 and $loverInterp <= -1 and $loverFire <= -1>>\n\tLuciferian swamp\n<<elseif $loverAdept >= 1 and $loverInterp <= -1 and $loverFire >= 1>>\n\theavenly sphere\n\t\n<<elseif $loverAdept <= -1 and $loverInterp >= 1>>\n\tbalustrade of crows\n\t\n<<elseif $totalFire >= 1 and $totalInterp >= 1.5>>\n\t<<if $loverPassion >= 0.5>>\n\t\tstunning cloudchasm\n\t<<elseif $belovedPassion <= -0.5>>\n\t\tcitadel of vapors\n\t<<elseif $belovedEndurance < 0>>\n\t\tembassy of fogs\n\t<<elseif $loverEndurance < 0>>\n\t\teloquant relinquary\n\t<<else>>\n\t\tancient meadows\n\t<<endif>>\n\t\n<<elseif $totalFire <= -1 and $totalInterp >= 1.5>>\n\t<<if $loverPassion <= -0.5>>\n\t\tlightcastle priory\n\t<<elseif $belovedPassion >= 0.5>>\n\t\tobsidian catacomb\n\t<<elseif $totalSloth >= 1>>\n\t\temerald hill-country\n\t<<else>>\n\t\taged forest\n\t<<endif>>\n\t\n<<elseif $totalInterp <= -1>>\n\t<<if $totalSloth >= 1>>\n\t\tshaded chaise\n\t<<elseif $totalSloth >= -1>>\n\t\tdust-beam library\n\t<<else>>\n\t\tsonorous harbor\n\t<<endif>>\n<<elseif $totalInterp <= 1>>\n\t<<if $totalSloth >= 1>>\n\t\tspectral gallop\n\t<<elseif $totalSloth >= -1>>\n\t\tgoldmeadow hills\n\t<<else>>\n\t\tfactory din\n\t<<endif>>\n<<else>>\n\t<<if $totalSloth >= 1>>\n\t\tprairie of light\n\t<<elseif $totalSloth >= -1>>\n\t\tabyss of solitude\n\t<<else>>\n\t\tageless congress-hall\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 45,
+      "name": "beloved action",
+      "text": "<<nobr>>/% Prints appropriate text for belovedAction %/\n\n<<if $belovedAction == \"encourage\">>\n\tsubtly smile\n<<elseif $belovedAction == \"resist\">>\n\trebuke my advances\n<<elseif $belovedAction == \"absolve\">>\n\tforgive me my sins\n<<elseif $belovedAction == \"meditate\">>\n\tretreat to your alcove\n<<elseif $belovedAction == \"explore\">>\n\tmap out strange lands\n<<elseif $belovedAction == \"crusade\">>\n\tdo what is necessary\n<<elseif $belovedAction == \"abase\">>\n\tfall into sorrow\n<<elseif $belovedAction == \"sing\">>\n\tsing a glorious song\n<<else>>\n\tspread your empty arms\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 46,
+      "name": "my beloved responded thusly",
+      "text": "<<print '$belovedReact'>>",
+      "links": []
+    },
+    {
+      "pid": 47,
+      "name": "canopy type",
+      "text": "<<nobr>>\n\n/% Describes the site of a meeting. \nThe site is chosen based mainly on passion, will, and endurance. %/\n\n<<if $totalEndurance > 0 >>\n\t<<if $totalPassion > 1.5 and $reactSpirit > 0.5 >>\n\t\tmorning star,\n\t<<elseif $totalPassion > 1 and $reactSpirit > 0 >>\n\t\tdawn or dusk,\n\n\t<<elseif $totalPassion > 1 >>\n\t\tdrooping boughs,\n\t<<elseif $totalPassion > 0 and $totalWill > 0>>\n\t\troof-beams,\n\t<<elseif $totalPassion > 0>>\n\t\thigh towers,\n\t<<elseif $totalPassion > -0.5 and $totalInterp < 0>>\n\t\tgilded moulding,\n\t<<elseif $totalPassion > -0.75 and $totalInterp < 0>>\n\t\tverdigris curtains,\n\t<<elseif $totalInterp < 0 >>\n\t\tdark houses,\n\t<<else>>\n\t\tcastle wall,\n\t<<endif>>\n\t\n<<else>>\n\t<<if $totalPassion > 1 and $totalWill > 1>>\n\t\tthatch-reeds,\n\t<<elseif $totalWill > 2>>\t\t\n\t\toak-tree,\n\t<<elseif $totalPassion > 2>>\n\t\tpeach-tree,\n\t<<elseif $totalPassion > 1 and $totalAdept > 1>>\n\t\tpear-tree,\n\t<<elseif $totalPassion > 0 and $totalWill > 0 >>\n\t\thazel-tree,\t\n\t<<elseif $totalPassion > 0>>\n\t\tplum-tree,\n\t<<elseif $totalWill > 0>>\n\t\tchestnut-tree,\n\t<<elseif $totalPassion > -0.5>>\n\t\traspberry vines,\n\t<<elseif $totalPassion > -1>>\n\t\tblackberry vines,\n\t<<elseif $totalPassion > -2>>\n\t\twine trellis,\n\t<<else>>\n\t\twillow-tree,\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 48,
+      "name": "beast",
+      "text": "<<nobr>>/%lol this isn't really important, I'm just fucking around%/\n\n<<if $luck > 0.99>>\nunicorn\n<<elseif $willFactor > 0 and $totalFire > $LARGE and $totalAdept > $LARGE>>\nstallions\n<<elseif $totalEndurance < -$LARGE>>\nravening tigers\n<<elseif $willFactor < 0 and $loverAdept > $LARGE>>\nwild duck\n<<elseif $totalSloth > $LARGE>>\ntortoise\n<<elseif $loverEndurance < $LARGE>>\nscorpion\n<<elseif $totalEndurance > 2*$LARGE>>\npheasant\n<<elseif $loverAdept > $LARGE>>\nosprey\n<<elseif $willFactor > 0 and $totalAdept > $LARGE>>\ntwo wolves\n<<elseif $willFactor > 0 and $totalPassion < $MED>>\ntwo stags\n<<elseif $loverAdept > $LARGE and $loverWill > $belovedWill + $LARGE>>\nleopard\n<<elseif $totalWill >= 2 and $totalPassion > $LARGE>>\ntwo boars\n<<elseif $belovedWill * $loverWill < 0 and $totalPassion > 1>>\nserpent and falcon\n<<elseif $totalFire > 1 and $totalPassion > 1>>\ngale wind\n<<elseif $belovedWill < 0 and $totalSloth > 1>>\ndrought demon\n<<else>>\nspirits\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 49,
+      "name": "food type",
+      "text": "<<nobr>>\n/% Signifies a general state of nourishment and generation. %/\n\n<<if $totalEndurance >= 0.5>>\n\t<<if $totalInterp > 0 and $totalAdept > 0.5 >>\n\t\tmillet and duck\n\t<<elseif $totalInterp > 0>>\n\t\trabbit and fish\n\t<<elseif $totalAdept > 0>>\n\t\tmeat and grain\n\t<<else>>\n\t\tbeans and corn\n\t<<endif>>\n<<elseif $totalSloth < 0>>\n\t<<if $totalInterp >= 1>>\n\t\twild mulberries\n\t<<elseif $totalAdept >= 1>>\n\t\troasted meat\n\t<<else>>\n\t\twild nuts\n\t<<endif>>\n<<elseif $totalSloth > 1>>\n\tred wine\n<<elseif $totalFire <= -1.75 and $totalInterp <= -1.75>>\n\thuman flesh\n<<elseif $totalPassion >= 1>>\n\tbeef stew\n<<elseif $totalEndurance > 0>>\n\tlentil stew\n<<else>>\n\tchicken broth\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 50,
+      "name": "scent",
+      "text": "<<nobr>>\n/% something general and wild --\nfocused on beloved%/\n\n<<if $belovedSloth >= 0.33 >>\n\t<<if $belovedEndurance >= 1>>\n\t\trebirth\n\t<<elseif $belovedEndurance >= 0.66>>\n\t\tspectral\n\t<<elseif $belovedEndurance >= 0.33>>\n\t\tspace\n\t<<elseif $belovedEndurance >= -0.33>>\n\t\tmass\n\t<<elseif $belovedEndurance >= -0.66>>\n\t\twind\n\t<<elseif $belovedEndurance > -1>>\n\t\tdust\n\t<<else>>\n\t\tfire\n\t<<endif>>\n\n<<elseif $belovedSloth >= -0.33 >>\n\t<<if $belovedEndurance > 0>>\n\t\t<<if $belovedAdept + $belovedInterp >= 2 >>\n\t\t\tsage\n\t\t<<elseif $belovedAdept + $belovedInterp >= 1.5 >>\n\t\t\tthunder\n\t\t<<elseif $belovedAdept + $belovedInterp >= 1 >>\n\t\t\train\n\t\t<<elseif $belovedAdept + $belovedInterp >= 0.5 >>\n\t\t\tsage\n\t\t<<elseif $belovedAdept + $belovedInterp >= -0.5 >>\n\t\t\tdeepwoods\n\t\t<<elseif $belovedAdept + $belovedInterp >= -1 >>\n\t\t\telectricity\n\t\t<<elseif $belovedAdept + $belovedInterp >= -1.5 >>\n\t\t\toil\n\t\t<<elseif $belovedAdept + $belovedInterp > -2 >>\n\t\t\tperfume\n\t\t<<else>>\n\t\t\tiron\n\t\t<<endif>>\n\t<<elseif $belovedPassion > 0>>\n\t\t<<if $belovedAdept + $belovedInterp >= 2 >>\n\t\t\tisopropyl\t\t\t\n\t\t<<elseif $belovedAdept + $belovedInterp >= 1.5 >>\n\t\t\tspice\n\t\t<<elseif $belovedAdept + $belovedInterp >= 1 >>\n\t\t\toil\n\t\t<<elseif $belovedAdept + $belovedInterp >= 0.5 >>\n\t\t\tperfume\n\t\t<<elseif $belovedAdept + $belovedInterp >= -0.5 >>\n\t\t\tskin\n\t\t<<elseif $belovedAdept + $belovedInterp >= -1 >>\n\t\t\tsweat\n\t\t<<elseif $belovedAdept + $belovedInterp >= -1.5 >>\n\t\t\tmusk\n\t\t<<elseif $belovedAdept + $belovedInterp > -2 >>\n\t\t\tlust\n\t\t<<else>>\n\t\t\thunger\n\t\t<<endif>>\n\t<<else>>\n\t\t<<if $belovedAdept + $belovedInterp >= 2 >>\n\t\t\tprecision\n\t\t<<elseif $belovedAdept + $belovedInterp >= 1.5 >>\n\t\t\tgeometry\n\t\t<<elseif $belovedAdept + $belovedInterp >= 1 >>\n\t\t\tfreshness\n\t\t<<elseif $belovedAdept + $belovedInterp >= 0.5 >>\n\t\t\tflowers\n\t\t<<elseif $belovedAdept + $belovedInterp >= -0.5 >>\n\t\t\tsummer\n\t\t<<elseif $belovedAdept + $belovedInterp >= -1 >>\n\t\t\tsweat\n\t\t<<elseif $belovedAdept + $belovedInterp >= -1.5 >>\n\t\t\tsmog\n\t\t<<elseif $belovedAdept + $belovedInterp > -2 >>\n\t\t\topium\n\t\t<<else>>\n\t\t\turine\n\t\t<<endif>>\t\n\t<<endif>>\n<<else>>\n\t<<if $belovedWill > 0.25 and $totalPassion >= 1 >>\n\t\t<<if $belovedAdept + $belovedInterp >= 2 >>\n\t\t\tmy cries\n\t\t<<elseif $belovedAdept + $belovedInterp >= 1.5 >>\n\t\t\tmastery\n\t\t<<elseif $belovedAdept + $belovedInterp >= 1 >>\n\t\t\tsex\n\t\t<<elseif $belovedAdept + $belovedInterp >= 0.5 >>\n\t\t\tsuggestion\n\t\t<<elseif $belovedAdept + $belovedInterp >= -0.5 >>\n\t\t\tincense\n\t\t<<elseif $belovedAdept + $belovedInterp >= -1 >>\n\t\t\tbread-scent\n\t\t<<elseif $belovedAdept + $belovedInterp >= -1.5 >>\n\t\t\tdeserts\n\t\t<<elseif $belovedAdept + $belovedInterp > -2 >>\n\t\t\tabandon\n\t\t<<else>>\n\t\t\tdrowning\n\t\t<<endif>>\n\t\t\n\t<<elseif $belovedWill < -0.25 >>\n\t\t\t<<if $belovedAdept + $belovedInterp >= 2 >>\n\t\t\t\tpyramids\n\t\t\t<<elseif $belovedAdept + $belovedInterp >= 1.5 >>\n\t\t\t\tstonedust\t\t\t\n\t\t\t<<elseif $belovedAdept + $belovedInterp >= 1 >>\n\t\t\t\tflowers\n\t\t\t<<elseif $belovedAdept + $belovedInterp >= 0.5 >>\n\t\t\t\tleylines\n\t\t\t<<elseif $belovedAdept + $belovedInterp >= -0.5 >>\n\t\t\t\tmagnificence\n\t\t\t<<elseif $belovedAdept + $belovedInterp >= -1 >>\n\t\t\t\tlabors\n\t\t\t<<elseif $belovedAdept + $belovedInterp >= -1.5 >>\n\t\t\t\tservice\n\t\t\t<<elseif $belovedAdept + $belovedInterp > -2 >>\n\t\t\t\tsewage\n\t\t\t<<else>>\n\t\t\t\tabattoir\n\t\t\t<<endif>>\n\t<<elseif $belovedEndurance >= 1 >>\n\t\tvigor\n\t<<elseif $belovedEndurance >= 0.66 >>\n\t\tmastery\n\t<<elseif $belovedEndurance >= 0.33 >>\n\t\tclean\n\t<<elseif $belovedEndurance >= -0.33 >>\n\t\twork-dust\n\t<<elseif $belovedEndurance >= -0.66 >>\n\t\tsweat\n\t<<elseif $belovedEndurance > -1 >>\n\t\ttears\n\t<<else>>\n\t\tnecessity\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 51,
+      "name": "music type",
+      "text": "<<nobr>>/% The music creates a general and fun-loving sense\nof the game's atmosphere.%/\n\n<<if $willFactor > 0>>\n\t<<if $totalPassion <= -2>>\n\t\tshrieking wind\n\t<<elseif $totalPassion <= -1>>\n\t\tmonolith organ\n\t<<elseif $totalPassion < 0 and $totalAdept > 0>>\n\t\tViolin sonata\n\t<<elseif $totalPassion < 0>>\n\t\tDrums and bells\n\t<<elseif $totalPassion < 1>>\n\t\tTambourines and drums\n\t<<elseif $totalPassion < 2>>\n\t\tAnkle-bells and kettledrums\n\t<<else>>\n\t\tPounding rhythm\n\t<<endif>>\n<<elseif $willFactor < 0>>\n\t<<if $totalPassion <= -1.6 >>\n\t\tSerpentine wind\n\t<<elseif $totalPassion < -1>>\n\t\tYell and bawl\n\t<<elseif $totalPassion <= 0.10 and $totalPassion >= -0.1>>\n\t\tBamboo and woodbreeze\n\t<<elseif $totalFire <= -1.8>>\n\t\tSinging ice\n\t<<elseif $totalFire < -0.6 >>\n\t\tKeening wind\n\t<<elseif $totalFire > 0.6>>\n\t\tMarching drums\n\t<<elseif $totalFire > 1.8>>\n\t\tThunderous bombard\n\t<<else>>\n\t\tWind and rain\n\t<<endif>>\n<<else>>\n\tWind chimes\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 52,
+      "name": "atmosphere",
+      "text": "<<nobr>>\n/% wild; a matter of general atmosphere,\nexcept mirrored and distant %/\n\n\n<<if $totalFire >= 1.75 >>\n\t<<if $totalInterp > 1>>\n\t\tGlory-sun\n\t<<elseif $totalAdept > 1>>\n\t\tShowers\n\t<<elseif $totalPassion >= 1.5>>\n\t\tFunnelcloud\n\t<<elseif $totalSloth > 1>>\n\t\tEndtimes\n\t<<elseif $totalEndurance <= 0 >>\n\t\tRavines\n\t<<else>>\n\t\tStormy\n\t<<endif>>\n\t\n<<elseif $totalFire >= 1>>\n\t<<if $totalInterp + $totalAdept >= 3>>\n\t\tWater-grass\n\t<<elseif $totalInterp >= 1>>\n\t\tHeavenly\n\t<<elseif $totalEndurance < 0>>\n\t\tWhirlwinds\n\t<<else>>\n\t\tTurmoil\n\t<<endif>>\n\t\n<<elseif $totalFire <= -1.75>>\n\t<<if $totalInterp > 1>>\n\t\tSpirechill\n\t<<elseif $totalAdept > 1>>\n\t\tIronearth\n\t<<elseif $totalPassion >= 1.5>>\n\t\tFrostblight\n\t<<elseif $totalSloth > 1>>\n\t\tOvercast\n\t<<elseif $totalEndurance <= 0 >>\n\t\tMudslide\n\t<<else>>\n\t\tJungle\n\t<<endif>>\n\t\n\t\n<<elseif $totalFire <= -1>>\n\t<<if $totalAdept >= 1 and $totalInterp <= -1>>\n\t\tTomb-gate\n\t<<elseif $totalSloth > 1.5>>\n\t\tMediterranean\n\t<<elseif $willFactor < 0>>\n\t\tSandstorm\n\t<<elseif $totalPassion > 1>>\n\t\tLightning\n\t<<else>>\n\t\tShaded\n\t<<endif>>\n\t\t\n<<else>>\n\t<<if $totalSloth >= 1>>\n\t\tGolden\t\t\n\t<<elseif $totalSloth >= 0.25>>\n\t\tDigital\n\t<<elseif $totalSloth >= -0.25>>\n\t\tBeclouded\n\t<<elseif $totalSloth > -1>>\n\t\tMultifarious\t\t\n\t<<else>>\n\t\tInvisible\t\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 53,
+      "name": "symbolic object",
+      "text": "<<nobr>>/% The object symbolizes the beloved's commitment to virtue\nand the longing of the lover.\nThis section could use revision:\nprobably should use more nesting and branching\nto create spaces for exploration.%/\n\n\n\n<<if $totalFire > 1 and $totalEndurance < 0>>\n\tperilous course\n<<elseif $totalPassion > 0 and $willFactor < 0>>\n\tcarriages and horses\n<<elseif $totalPassion > 0 and $totalAdept > 1>>\n\ta jade goblet\n<<elseif $totalPassion > 0 and $totalSloth < 1>>\n\tearthen bowls\n<<elseif $totalPassion > 0 and $totalAdept < 1>>\n\tnew teeth\n<<elseif $totalPassion > 0 and $totalFire < 0>>\n\tcinder and smoke\n<<elseif $belovedWill < 0 and $belovedPassion > $LARGE>>\n\tbronze-knobbed reins\n<<elseif $totalEndurance < -$LARGE and $totalSloth > $LARGE>>\n\tthe instruments of our decline\n<<elseif $belovedAdept > $LARGE and $belovedInterp > $LARGE>>\n\ta jade scepter\n<<elseif $totalPassion < 2*-$LARGE>>\n\tgrieved hearts\n<<elseif $totalPassion > 1 and $willFactor < 0>>\n\tarrogant spirit\n<<elseif $totalPassion >= 2 and $willFactor > 0>>\n\tsweet words\n<<elseif $loverAdept > $LARGE and $loverSloth > $LARGE>>\n\tgilded slippers\n<<elseif $belovedWill < 0 and $belovedPassion > $LARGE>>\n\telephant tusks\n<<elseif $willFactor < 0 and $belovedAdept > $loverAdept + $LARGE>>\n\tsheaves of arrows\n<<else>>\n\tgourds and firewood\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 54,
+      "name": "execute verb",
+      "text": "<<nobr>>\n\n<<if $verb is \"fast\">>\n\t/% Fasting exhausts the body, but purifies the mind. %/\n\t<<set $loverEndurance -= $MED>>\n\t<<set $loverSloth += $SMALL>>\n\t\n\t<<set $loverInterp += $SMALL>>\n\t<<set $loverAdept -= $LARGE>>\n\t\n\t<<set $loverPassion += $SMALL>>\n\t<<set $loverWill -= $MED>>\n\n<<elseif $verb is \"indulge\">>\n\t<<set $loverEndurance -= $SMALL>>\n\t<<set $belovedSloth += $LARGE>>\n\t<<set $belovedPassion += $MED>>\n\t\n<<elseif $verb is \"acquiesce\">>\n\t/%  \n\tTo accept something reluctantly but without protest.\n\tGives power to the beloved\n\tand prepares the lover to serve.\n\t%/\n\t<<set $belovedEndurance += $SMALL>>\n\t<<set $loverEndurance -= $SMALL>>\n\t<<set $loverWill += $SMALL>>\n\t<<set $loverSloth -= $SMALL>>\n\t\n\t<<set $loverAdept += $SMALL>>\n\t<<set $belovedAdept -= $SMALL>>\n\n<<elseif $verb is \"supplicate\">>\n/% \nSupplicate : sub-implore -- to propitiate from below\nBrings the parties closer towards union,\nand improves the position of the beloved.\n%/\n\t<<set $loverWill += $MED>>\n\t<<set $belovedWill += $MED>>\n\t\n\t<<set $belovedAdept += $SMALL>>\n\t<<set $belovedInterp += $SMALL>>\n\t\n\t<<set $loverEndurance -= $MED>>\n\t<<set $belovedEndurance += $SMALL>>\n\n<<elseif $verb is \"remonstrate\">>\n/%\nRemonstrate: to make a forcefully reproachful protest --\nsignifies a demand for change\n%/\n\t<<set $loverEndurance -= $SMALL>>\n\t<<set $loverSloth -= $SMALL>>\n\n<<if $loverAdept + $luck > $belovedInterp>>\n\t<<if $loverWill > $belovedWill >>\n\t\t<<set $belovedWill += $MED>>\n\t<<elseif $loverWill < $belovedWill>>\n\t\t<<set $belovedWill -= $MED>>\n\t<<else>>\n\t<<endif>>\n<<else>>\n\t<<set $belovedEndurance -= $MED>>\n<<endif>>\n\n<<elseif $verb is \"abrogate\">>\n/%\nAbrogate: repeal or cancel a law or agreement --\nsignifies a reversal of course\n%/\n<<set $loverSloth -= $SMALL>>\n<<set $loverInterp -= $SMALL>>\n<<set $loverEndurance -= $MED>>\n\n<<if $willFactor > 0 and $loverPassion > 0 >>\n\t<<set $belovedPassion -= $LARGE>>\n\t<<set $loverPassion -= $LARGE>>\n\t<<set $loverWill -= $LARGE>>\n\t<<set $belovedWill -= $SMALL>>\n<<elseif $willFactor > 0 and $loverPassion < 0>>\n\t<<set $belovedPassion += $SMALL>>\n\t<<set $loverPassion += $SMALL>>\n\t<<set $loverWill += $SMALL>>\n\t<<set $belovedWill += $SMALL>>\n<<else>>\n\t<<set $loverInterp -= $SMALL>>\n<<endif>>\n\n<<elseif $verb is \"bombast\">>\n/%\nAn airy and empty, but impressive display. A show.\nFrom Latin bombyx, meaning \"silkworm\"\nprobably because of \"fluff\" --\ncreates passion but makes one foolish\n%/\n\t<<set $loverSloth -= $SMALL>>\n\t\n\t<<set $loverEndurance -= $SMALL>>\n\t<<set $belovedEndurance -= $SMALL>>\n\t\n\t<<set $loverPassion += $SMALL>>\n\t<<if $loverAdept + $luck >= $belovedInterp>>\n\t\t<<set $belovedPassion += $MED>>\n\t<<else>>\n\t\t<<set $belovedPassion += $SMALL>>\n\t<<endif>>\n\n\t<<set $loverInterp -= $SMALL>>\n\t<<if $loverInterp < 0>>\n\t\t<<set $loverInterp -= $SMALL>>\n\t<<endif>>\n\t<<if $belovedInterp <= $loverInterp>>\n\t\t<<set $belovedInterp -= $SMALL>>\n\t<<endif>>\n\n<<elseif $verb is \"communicate\">>\n/%\nTo convey or pass on an idea, emotion, heat, or motion.\n%/\n\t<<set $loverEndurance -= $SMALL>>\n\t\n\t<<if $loverFire > $belovedFire>>\n\t\t<<set $belovedFire += $SMALL>>\n\t\t<<set $loverFire -= $SMALL>>\n\t<<elseif $belovedFire > $loverFire>>\n\t\t<<set $belovedFire -= $SMALL>>\n\t\t<<set $loverFire += $SMALL>>\n\t<<endif>>\n\n\t<<if $loverWill > $belovedWill>>\n\t\t<<set $belovedWill += $SMALL>>\n\t\t<<set $loverWill -= $SMALL>>\n\t<<elseif $belovedWill > $loverWill>>\n\t\t<<set $belovedWill -= $SMALL>>\n\t\t<<set $loverWill += $SMALL>>\n\t<<endif>>\n\t\n\t<<if $loverInterp > $belovedInterp>>\n\t\t<<set $belovedInterp += $SMALL>>\n\t<<elseif $belovedInterp > $loverInterp>>\n\t\t<<set $loverInterp += $SMALL>>\n\t<<endif>>\n\n\t<<if $loverAdept > $belovedAdept>>\n\t\t<<set $belovedAdept += $SMALL>>\n\t<<elseif $belovedAdept > $loverAdept>>\n\t\t<<set $loverAdept += $SMALL>>\n\t<<endif>>\n\n<<elseif $verb is \"mediate\">>\n/%\nTo intervene in a dispute or bring two people closer together.\nIn this case mediates between the self and the beloved,\nbringing their wills closer together.\n%/\n\n\t<<set $power = 0>>\n\t<<if $willFactor > 0>>\n\t\t<<set $power = $SMALL>>\n\t<<elseif $willFactor < 0>>\n\t\t<<set $power = $MED>>\n\t<<endif>>\n\t\n\t<<set $loverEndurance -= $SMALL>>\n\t\n\t<<if $belovedWill > $loverWill>>\n\t\t<<set $belovedWill -= $power>>\n\t\t<<set $loverWill += $power>>\n\t<<else>>\n\t\t<<set $belovedWill += $power>>\n\t\t<<set $loverWill -= $power>>\n\t<<endif>>\n\n<<elseif $verb is \"rest\">>\n/% restores the will and normalizes the passions --\nalso gives some space to the beloved. %/\n\t\n\t<<set $loverEndurance += $LARGE>>\n\t<<set $belovedEndurance += $SMALL>>\n\t<<set $loverAdept += $SMALL>>\n\t<<set $loverInterp += $SMALL>>\n\t\n\t<<if $loverPassion < 0 >>\n\t\t<<set $loverPassion += $MED>>\n\t<<elseif $loverPassion > 0 >>\n\t\t<<set $loverPassion -= $MED>>\n\t<<endif>>\n\t\n\t<<if $belovedPassion < 0 >>\n\t\t<<set $belovedPassion += $SMALL>>\n\t<<elseif $belovedPassion > 0 >>\n\t\t<<set $belovedPassion -= $SMALL>>\n\t<<endif>>\n\t\n<<else>>\n\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 55,
+      "name": "execute adverb",
+      "text": "<<nobr>>\n<<if $adv is \"calmly\">>\n\t<<set $loverEndurance += $SMALL>>\n\t<<set $loverPassion -= $SMALL>>\n\t<<set $belovedPassion -= $SMALL>>\n\t<<if $luck > 0>>\n\t\t<<set $loverInterp += $SMALL>>\n\t<<else>>\n\t\t<<set $loverAdept += $SMALL>>\n\t<<endif>>\n\n<<elseif $adv is \"vainly\">>\n\t<<if $loverAdept > $belovedAdept + $luck>>\n\t\t<<set $belovedWill -= $MED>>\n\t<<else>>\n\t\t<<set $belovedPassion += $SMALL>>\n\t<<set $loverPassion += $SMALL>>\n\t<<set $loverInterp -= $SMALL>>\n\t<<endif>>\n\n<<elseif $adv is \"astutely\">>\n\t<<if ($loverAdept + $luck) > randomFloat( -1, 1 )>>\n\t\t<<set $belovedPassion += $SMALL>>\n\t\t<<set $belovedWill += $SMALL>>\n\t\t<<set $loverEndurance += $SMALL>>\n\t<<else>>\n\t\t<<set $loverEndurance -= $SMALL>>\n\t\t<<set $belovedPassion -= $SMALL>>\n\t<<endif>>\n\n<<elseif $adv is \"imperiously\">>\n\t<<set $loverEndurance -= $SMALL>>\n\t<<if $loverAdept > $belovedAdept + $luck>>\n\t\t<<set $belovedPassion += $MED>>\n\t\t<<set $belovedWill += $MED>>\n\t\t<<set $belovedEndurance -= $MED>>\n\t\t<<set $belovedInterp += $MED>>\n\t<<else>>\n\t\t<<set $loverPassion -= $MED>>\n\t\t<<set $loverWill -= $MED>>\n\t\t<<set $loverEndurance -= $MED>>\n\t\t<<if $loverInterp > 0>>\n\t\t\t<<set $loverInterp += $MED>>\n\t\t<<endif>>\n\t<<endif>>\n\t\n<<elseif $adv is \"willingly\">>\n\t<<if $willRatio < 0 and $belovedWill <= 0>>\n\t\t<<set $belovedPassion += $SMALL>>\n\t\t<<set $belovedWill += $SMALL>>\n\t\t<<set $loverInterp += $MED>>\n\t<<elseif $willRatio < 0 and $belovedWill > 0>>\n\t\t<<set $loverPassion += $LARGE>>\n\t\t<<set $loverWill += $LARGE>>\n\t\t<<set $belovedInterp += $MED>>\n\t<<else>>\n\t\t<<set $belovedAdept += $MED>>\n\t\t<<set $loverAdept += $MED>>\n\t\t<<set $belovedInterp += $SMALL>>\n\t\t<<set $loverInterp += $SMALL>>\n\t<<endif>>\n\t\n<<elseif $adv is \"eagerly\">>\n\t<<set $loverWill += $MED>>\n\t<<set $loverPassion += $MED>>\n\t<<set $belovedEndurance -= $SMALL>>\n\t<<if $loverInterp > 0>>\n\t\t<<set $belovedPassion += $MED>>\n\t<<endif>>\n\n<<elseif $adv is \"reproachfully\">>\n\t<<if $loverAdept > $belovedAdept + $luck>>\n\t\t<<if $belovedWill < 0>>\n\t\t\t<<set $belovedWill += $MED>>\n\t\t<<else>>\n\t\t\t<<set $belovedWill -= $MED>>\n\t\t<<endif>>\n\t\t<<set $belovedInterp += $MED>>\n\t\t<<set $belovedEndurance -= $LARGE>>\n\t<<else>>\n\t\t<<set $belovedPassion -= $MED>>\n\t<<endif>>\n\t\n\t<<if $loverInterp < $belovedInterp>>\n\t\t<<set $belovedPassion -= $SMALL>>\n\t<<else>>\n\t\t<<set $belovedInterp += $SMALL>>\n\t<<endif>>\n\n<<elseif $adv is \"adversely\">>\n\t<<set $helps = 0>>\n\t\n\t<<if $loverEndurance < 0 and $belovedEndurance > 0>>\n\t\t<<set $loverEndurance += $MED>>\n\t\t<<set $belovedEndurance -= $MED>>\n\t\t<<set $helps += 1>>\n\t<<endif>>\n\t\n\t<<if $loverAdept < 0 and $belovedAdept > 0>>\n\t\t<<set $loverAdept += $SMALL>>\n\t\t<<set $belovedEndurance -= $SMALL>>\n\t\t<<set $helps += 1>>\n\t<<endif>>\n\t\n\t<<if $loverInterp < 0 and $belovedInterp > 0>>\n\t\t<<set $loverInterp += $SMALL>>\n\t\t<<set $belovedEndurance -= $SMALL>>\n\t\t<<set $helps += 1>>\n\t<<endif>>\n\t\n\t<<set $loverPassion += $helps * $SMALL>>\n\t<<set $belovedPassion += $helps * $SMALL>>\n\n<<elseif $adv is \"defiantly\">>\n\t<<set $loverEndurance -= $MED>>\n\t<<if $loverWill > 0 and $belovedWill < 0>>\n\t\t<<if $loverAdept > $belovedAdept>>\n\t\t\t<<set $belovedWill += $MED>>\n\t\t\t<<set $belovedPassion += $SMALL>>\n\t\t<<else>>\n\t\t\t<<set $belovedWill -= $SMALL>>\n\t\t\t<<set $loverWill -= $SMALL>>\n\t\t<<endif>>\n\t<<elseif $loverWill < 0 and $belovedWill > 0>>\n\t\t\t<<if $loverAdept > $belovedAdept>>\n\t\t\t\t<<set $belovedWill -= $MED>>\n\t\t\t\t<<set $belovedPassion += $SMALL>>\n\t\t\t<<else>>\n\t\t\t\t<<set $belovedWill += $SMALL>>\n\t\t\t\t<<set $loverWill += $SMALL>>\n\t\t\t<<endif>>\n\t<<endif>>\n\t\n<<elseif $adv is \"peacefully\">>\n\t<<set $belovedEndurance += $SMALL>>\n\t<<set $loverEndurance += $SMALL>>\n\t<<if $loverAdept < 0>>\n\t\t<<set $belovedPassion -= $SMALL>>\n\t<<endif>>\n\t<<if $loverInterp < 0>>\n\t\t<<set $loverPassion -= $SMALL>>\n\t<<endif>>\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 56,
+      "name": "check stats",
+      "text": "<<nobr>><<silently>>\n\n/% Each stat has a min-max of -1, 1.\nValues which exceed that range are communicated to other stats\nby a process called \"rolling over\". \nMost rolls are $MED, except rolls into Fire, which are $SMALL,\nbecause Fire is supposed to be a bit heavier than the other elements.\n\nSee Intro for calibration.%/\n\n/%\n\nAPPLY CERTAIN PENALTIES AND BONUSES:\nHigh sloth damages endurance and passion,\nand low sloth fortifies the same stats.\nHigh or low fire damages endurance,\nlow fire damages passion.\n\t\t\n\t\tFIRE\n\t\tSLOTH\nADEPT\t\t\tINTERP\nPASSION\t\t\tENDURANCE\n\t\tWILL\n\t\tLUCK\n\nTHERE SHOULD HAVE BEEN ONLY ONE FIRE\n\n%/\n\n<<if $loverSloth >= 1>>\n\t<<set $loverPassion -= $MED>>\n\t<<set $loverEndurance -= $MED>>\n<<elseif $loverSloth >= 0.75>>\n\t<<set $loverPassion -= $SMALL>>\n\t<<set $loverEndurance -= $SMALL>>\n<<elseif $loverSloth >= 0.5>>\n\t<<set $loverPassion -= $SMALL>>\n\t<<set $loverEndurance -= $SMALL>>\n<<elseif $loverSloth <= -1>>\t\n\t<<set $loverPassion += $MED>>\n\t<<set $loverEndurance += $MED>>\n<<elseif $loverSloth <= -0.75>>\n\t<<set $loverPassion += $SMALL>>\n\t<<set $loverEndurance += $SMALL>>\n<<elseif $loverSloth >= 0.5>>\n\t<<set $loverPassion -= $SMALL>>\n\t<<set $loverEndurance -= $SMALL>>\n<<endif>>\n\n<<if $belovedSloth >= 1>>\n\t<<set $belovedPassion -= $MED>>\n\t<<set $belovedEndurance -= $MED>>\n<<elseif $belovedSloth >= 0.75>>\n\t<<set $belovedPassion -= $SMALL>>\n\t<<set $belovedEndurance -= $SMALL>>\n<<elseif $belovedSloth >= 0.5>>\n\t<<set $belovedPassion -= $SMALL>>\n\t<<set $belovedEndurance -= $SMALL>>\n<<elseif $belovedSloth <= -1>>\t\n\t<<set $belovedPassion += $MED>>\n\t<<set $belovedEndurance _= $MED>>\n<<elseif $belovedSloth <= -0.75>>\n\t<<set $belovedPassion += $SMALL>>\n\t<<set $belovedEndurance += $SMALL>>\n<<elseif $belovedSloth <= -0.5>>\n\t<<set $belovedPassion -= $SMALL>>\n\t<<set $belovedEndurance -= $SMALL>>\n<<endif>>\n\n<<if $belovedFire >= 1>>\n\t<<set $belovedEndurance -= $MED>>\n<<elseif $belovedFire >= 0.75>>\n\t<<set $belovedEndurance -= $SMALL>>\n<<elseif $belovedFire >= 0.5>>\n\t<<set $belovedEndurance -= $SMALL>>\n\t\n<<elseif $belovedFire <= -1>>\n\t<<set $belovedEndurance -= $MED>>\n\t<<set $belovedPassion -= $MED>>\n<<elseif $belovedFire <= -0.75>>\n\t<<set $belovedEndurance -= $SMALL>>\n\t<<set $belovedPassion -= $SMALL>>\n<<elseif $belovedFire <= -0.5>>\n\t<<set $belovedEndurance -= $SMALL>>\n\t<<set $belovedPassion -= $SMALL>>\n<<endif>>\n\n<<if $loverFire >= 1>>\n\t<<set $loverEndurance -= $MED>>\n<<elseif $loverFire >= 0.75>>\n\t<<set $loverEndurance -= $SMALL>>\n<<elseif $loverFire >= 0.5>>\n\t<<set $loverEndurance -= $SMALL>>\n\t\n<<elseif $loverFire <= -1>>\t\n\t<<set $loverPassion -= $MED>>\n\t<<set $loverEndurance -= $MED>>\n<<elseif $loverFire <= -0.75>>\n\t<<set $loverPassion -= $SMALL>>\n\t<<set $loverEndurance -= $SMALL>>\n<<elseif $loverFire >= 0.5>>\n\t<<set $loverPassion -= $SMALL>>\n\t<<set $loverEndurance -= $SMALL>>\n<<endif>>\n\n<<if Math.abs($totalFire) >= 2>>\n\t<<set $loverEndurance -= $SMALL>>\n\t<<set $belovedEndurance -= $SMALL>>\n<<endif>>\n\n<<if $belovedEndurance <= -1>>\n\t<<set $belovedAdept -= $MED>>\n\t<<set $belovedInterp -= $MED>>\n\t<<set $belovedFire -= $LARGE>>\n<<elseif $belovedEndurance <= -0.75>>\n\t<<set $belovedAdept -= $SMALL>>\n\t<<set $belovedInterp -= $SMALL>>\n\t<<set $belovedFire -= $MED>>\n<<endif>>\n\n<<if $loverEndurance <= -1>>\n\t<<set $loverAdept -= $MED>>\n\t<<set $loverInterp -= $MED>>\n\t<<set $loverFire -= $LARGE>>\n<<elseif $loverEndurance <= -0.75>>\n\t<<set $loverAdept -= $SMALL>>\n\t<<set $loverInterp -= $SMALL>>\n\t<<set $loverFire -= $MED>>\n<<endif>>\n\n/%\n\nNORMALIZE STAT-SCALES\nTO WITHIN (-1 , 1)\n\n%/\n\n/& Will rolls over into fire, directly. %/\n\n<<if $loverWill > 1>>\n\t<<set $loverWill = 1>>\n\t<<set $loverFire += $SMALL>>\n<<elseif $loverWill < -1>>\n\t<<set $loverWill = -1>>\n\t<<set $loverFire -= $SMALL>>\n<<endif>>\n\n<<if $belovedWill > 1>>\n\t<<set $belovedWill = 1>>\n\t<<set $belovedFire += $SMALL>>\n<<elseif $belovedWill < -1>>\n\t<<set $belovedWill = -1>>\n\t<<set $belovedFire -= $SMALL>>\n<<endif>>\n\n/%  Endurance rolls into passion. %/\n\n<<if $loverEndurance > 1>>\n\t<<set $loverEndurance = 1>>\n\t<<set $loverPassion += $MED>>\n<<elseif $loverEndurance < -1>>\n\t<<set $loverEndurance = -1>>\n\t<<set $loverPassion -= $MED>>\n<<endif>>\n\n<<if $belovedEndurance > 1>>\n\t<<set $belovedEndurance = 1>>\n\t<<set $belovedPassion += $MED>>\n<<elseif $belovedEndurance < -1>>\n\t<<set $belovedEndurance = -1>>\n\t<<set $belovedPassion -= $MED>>\n<<endif>>\n\n/% Sloth rolls into passion, inversely. %/\n\n<<if $loverSloth > 1>>\n\t<<set $loverSloth = 1>>\n\t<<set $loverPassion -= $MED>>\n<<elseif $loverSloth < -1>>\n\t<<set $loverSloth = -1>>\n\t<<set $loverPassion += $MED>>\n<<endif>>\n\n<<if $belovedSloth > 1>>\n\t<<set $belovedSloth = 1>>\n\t<<set $belovedPassion -= $MED>>\n<<elseif $belovedSloth < -1>>\n\t<<set $belovedSloth = -1>>\n\t<<set $belovedPassion += $MED>>\n<<endif>>\n\n/% Interpretation rolls into Adept. %/\n\n<<if $loverInterp > 1 >>\n\t<<set $loverInterp = 1>>\n\t<<set $loverAdept += $MED>>\n<<elseif $loverInterp < -1>>\n\t<<set $loverInterp = -1>>\n\t<<set $loverAdept -= $MED>>\n<<endif>>\n\n<<if $belovedInterp > 1>>\n\t<<set $belovedInterp = 1>>\n\t<<set $belovedAdept += $MED>>\n<<elseif $belovedInterp < -1>>\n\t<<set $belovedInterp = -1>>\n\t<<set $belovedAdept += $MED>>\n<<endif>>\n\n/% Adept rolls into passion. %/\n\n<<if $loverAdept > 1>>\n\t<<set $loverAdept = 1>>\n\t<<set $loverPassion += $MED>>\n<<elseif $loverAdept < -1>>\n\t<<set $loverAdept = -1>>\n\t<<set $loverPassion -= $MED>>\n<<endif>>\n\n<<if $belovedAdept > 1>>\n\t<<set $belovedAdept = 1>>\n\t<<set $belovedPassion += $MED>>\n<<elseif $belovedAdept < -1>>\n\t<<set $belovedAdept = -1>>\n\t<<set $belovedPassion -= $MED>>\n<<endif>>\n\n/% Passion rolls over into fire. %/\n\n<<if $loverPassion > 1>>\n\t<<set $loverPassion = 1>>\n\t<<set $loverFire += $MED>>\n<<elseif $loverPassion < -1>>\n\t<<set $loverPassion = -1>>\n\t<<set $loverFire -= $MED>>\n<<endif>>\n\n<<if $belovedPassion > 1>>\n\t<<set $belovedPassion = 1>>\n\t<<set $blovedFire += $MED>>\n<<elseif $belovedPassion < -1>>\n\t<<set $belovedPassion = -1>>\n\t<<set $belovedFire -= $MED>>\n<<endif>>\n\n/% Each person's fire rolls into the other. %/\n\n<<if $loverFire > 1>>\n\t<<set $belovedFire += $SMALL >>\n<<elseif $loverFire < -1>>\n\t<<set $belovedFire -= $SMALL >>\n<<endif>>\n\n<<if $belovedFire > 1>>\n\t<<set $loverFire += $SMALL >>\n<<elseif $belovedFire < -1>>\n\t<<set $loverFire -= $SMALL >>\n<<endif>>\n\n/% Fire still cannot exceed the maximum. %/\n\n<<if $loverFire > 1>>\n\t<<set $loverFire = 1 >>\n<<elseif $loverFire < -1>>\n\t<<set $loverFire = -1 >>\n<<endif>>\n\n<<if $belovedFire > 1>>\n\t<<set $belovedFire = 1 >>\n<<elseif $belovedFire < -1>>\n\t<<set $belovedFire = -1 >>\n<<endif>>\n\n/% Luck is determined randomly. %/\n\n<<set $luck to randomFloat( -1, 1 ) >>\n\n/% The totals are used to simplyify certain calculations.\nwillFactor is positive if the characters agree. %/\n\n<<set $totalPassion = $belovedPassion + $loverPassion>>\n<<set $totalEndurance = $belovedPassion + $loverPassion>>\n<<set $totalSloth = $belovedSloth + $loverSloth>>\n<<set $totalFire = $belovedFire + $loverFire>>\n<<set $totalAdept = $belovedAdept + $loverAdept>>\n<<set $totalInterp = $belovedInterp + $loverInterp>>\n<<set $willFactor = $belovedWill * $loverWill>>\n\n<</silently>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 57,
+      "name": "beloved react",
+      "text": "<<nobr>>\n/% The three reaction variables, \nreactHeart, reactMind, and reactSpirit\nwill be set to positive, negative, or neutral,\ndepending on the relation between\nthe lover's choice and the beloved's state.\nThe beloved then responds accordingly.\n%/\n\n<<if $verb == \"fast\">>\n\t<<set $reactSpirit += 1>>\n\t<<if $loverEndurance <= 0>>\n\t\t<<set $reactHeart += 1>>\n\t<<endif>>\n\t<<if $loverWill < 0>>\n\t\t<<set $reactHeart -= 1>>\n\t<<endif>>\n\t<<if $loverEndurance < 0>>\n\t\t<<set $reactMind -= 1>>\n\t<<endif>>\n\t\n<<elseif $verb == \"indulge\">>\n\t<<if $belovedEndurance > 0>>\n\t\t<<set $reactSpirit -= 1>>\n\t<<else>>\n\t\t<<set $reactHeart += 1>>\n\t<<endif>>\n\n<<elseif $verb == \"acquiesce\">>\n\t<<if $willFactor < 0>>\n\t\t<<set $reactHeart += 1>>\n\t\t<<set $reactMind += 1>>\n\t<<else>>\n\t\t<<set $reactMind -= 1>>\n\t\t<<set $reactSpirit -= 1>>\n\t<<endif>>\n\n<<elseif $verb == \"supplicate\">>\n\t<<if $loverAdept + $loverEndurance + $luck > $belovedAdept + $belovedEndurance>>\n\t\t<<set $reactHeart += 1>>\n\t\t<<set $reactMind -= 1>>\n\t<<else>>\n\t\t<<set $reactMind += 1>>\n\t\t<<set $reactHeart -= 1>>\n\t<<endif>>\n\n<<elseif $verb == \"remonstrate\">>\n\t<<if $willFactor < 0>>\n\t\t<<set $reactMind += 1>>\n\t\t<<set $reactSpirit -= 1>>\n\t\t<<set $reactHeart += 1>>\n\t<<else>>\n\t\t<<set $reactMind -= 1>>\n\t\t<<set $reactSpirit -= 1>>\n\t\t<<set $reactHeart += 1>>\n\t<<endif>>\n\t\n<<elseif $verb == \"abrogate\">>\n\t<<set $reactHeart -= 1>>\n\t<<if $willFactor < 0 and $totalFire > 1.5>>\n\t\t<<set $reactMind += 1>>\n\t<<endif>>\n\t\n<<elseif $verb == \"bombast\">>\n\t<<if $loverAdept > $LARGE>>\n\t\t<<set $reactHeart += 1>>\n\t<<else>>\n\t\t<<set $reactMind -= 1>>\n\t<<endif>>\n\t<<if $loverPassion > $LARGE>>\n\t\t<<set $reactSpirit += 1>>\n\t<<else>>\n\t\t<<set $reactSpirit -= 1>>\n\t<<endif>>\n\t\n<<elseif $verb == \"communicate\">>\n\t<<set $reactMind += 1>>\n\t<<if $totalFire >= 1 and $willFactor > 0>>\n\t\t<<set $reactHeart -= 1>>\n\t\t<<set $reactSpirit -= 1>>\n\t<<endif>>\n\t\n<<elseif $verb == \"mediate\">>\n\t<<if $willFactor < 0 >>\n\t\t<<set $reactMind += 1>>\n\t\t<<set $reactSpirit += 1>>\n\t<<else>>\n\t\t<<set $reactHeart -= 1>>\n\t\t<<set $reactSpirit -= 1>>\n\t<<endif>>\n\t\n<<elseif $verb == \"rest\">>\n\t<<if $totalPassion > 1>>\n\t\t<<set $reactMind += 1>>\n\t<<elseif $belovedEndurance < 0>>\n\t\t<<set $reactHeart += 1>>\n\t<<elseif $loverEndurance > 0>>\n\t\t<<set $reactSpirit -= 1>>\n\t\t<<set $reactHeart -= 1>>\n\t<<endif>>\n<<endif>>\n\n/% NOW FOR THE ADVERBS %/\n\n<<if $adj == \"calmly\">>\n\t<<if $loverEndurance < 0>>\n\t\t<<set $reactMind += 1>>\n\t<<elseif $belovedPassion < 0.5 and $belovedPassion > -0.5>>\n\t\t<<set $reactSpirit += 1>>\n\t<<else>>\n\t\t<<set $reactHeart -= 1>>\n\t<<endif>>\n\n<<elseif $adj == \"vainly\">>\n\t<<set $reactHeart += 1>>\n\t<<set $reactMind -= 1>>\n\n<<elseif $adj == \"astutely\">>\n\t<<if $loverInterp > $LARGE>>\n\t\t<<set $reactMind += 1>>\n\t<<else>>\n\t\t<<set $reactMind -= 1>>\n\t<<endif>>\n\n<<elseif $adj == \"imperiously\">>\n\t<<if $belovedAdept + $belovedInterp > $belovedAdept + $belovedInterp>>\n\t\t<<set $reactHeart += 1>>\n\t\t<<set $reactMind += 1>>\n\t\t<<set $reactSpirit -= 1>>\n\t<<else>>\n\t\t<<set $reactSpirit += 1>>\n\t\t<<set $reactMind -= 1>>\n\t\t<<set $reactHeart -= 1>>\n\t<<endif>>\n\n<<elseif $adj == \"willingly\">>\n\t<<if $willFactor > 0>>\n\t\t<<set $reactHeart += 2>>\n\t<<else>>\n\t\t<<set $reactMind -= 1>>\n\t\t<<set $reactHeart -= 1>>\n\t<<endif>>\n\t\n<<elseif $adj == \"eagerly\">>\n\t<<set $reactHeart += 1>>\n\t<<set $reactSpirit += 1>>\n\t<<if $belovedInterp >= $loverInterp >>\n\t\t<<set $reactMind -= 2>>\n\t<<endif>>\n\n<<elseif $adj == \"reproachfully\">>\n\t<<if $loverInterp > $belovedInterp and $belovedPassion < 0.5>>\n\t\t<<set $reactMind += 1>>\n\t\t<<set $reactSpirit += 1>>\n\t<<else>>\n\t\t<<set $reactHeart -= 1>>\n\t\t<<set $reactSpirit -= 1>>\n\t<<endif>>\n\n<<elseif $adj == \"adversely\">>\n\t<<set $reactHeart -= 1>>\n\t<<set $reactSpirit += 1>>\n\n<<elseif $adj == \"defiantly\">>\n\t<<set $reactSpirit += 1>>\n\t<<if $belovedAdept > $loverAdept>>\n\t\t<<set $reactHeart += 1>>\n\t<<else>>\n\t\t<<set $reactMind -= 1>>\n\t\t<<set $reactHeart -= 1>>\n\t<<endif>>\n\t\t\n<<elseif $adj == \"peacefully\">>\n\t<<set $reactSpirit += 1>>\n\t\n<<endif>>\n\n/% Normalize all react values to within -1, 1 %/\n\n<<if $reactHeart > 1>>\n\t<<set $reactHeart = 1>>\n<<elseif $reactHeart < -1>>\n\t<<set $reactHeart = -1>>\n<<endif>>\n\n<<if $reactMind > 1>>\n\t<<set $reactMind = 1>>\n<<elseif $reactMind < -1>>\n\t<<set $reactMind = -1>>\n<<endif>>\n\n<<if $reactSpirit > 1>>\n\t<<set $reactSpirit = 1>>\n<<elseif $reactSpirit < -1>>\n\t<<set $reactSpirit = -1>>\n<<endif>>\n\n/% Calculate totalReact,\nwhich is akin to general positivity of response. %/\n\n<<set $reactTotal = $reactHeart + $reactMind + $reactSpirit >>\n\n/% Finally, encode a message describing the beloved's reaction. %/\n\n<<if $reactHeart > 0>>\n\t<<if $reactMind > 0>>\n\t\t<<if $reactSpirit > 0>>\n\t\t\t<<set $belovedReact = \"you become a perfect sun\" >>\n\t\t\t<<set $belovedWill += $LARGE>>\n\t\t\t<<set $belovedAdept += $MED>>\n\t\t\t<<set $belovedInterp += $LARGE>>\n\t\t\t<<set $loverInterp += $MED>>\n\t\t<<elseif $reactSpirit < 0>>\n\t\t\t<<set $belovedReact = \"you love me but long for more\" >>\n\t\t\t<<set $belovedWill += $MED>>\n\t\t\t<<set $belovedInterp += $MED>>\n\t\t\t\n\t\t<<else>>\n\t\t\t<<set $belovedReact = \"you approach the altar of radiance\" >>\n\t\t\t\n\t\t<<endif>>\n\t<<elseif $reactMind < 0 >>\n\t\t<<if $reactSpirit > 0>>\n\t\t\t<<set $belovedReact = \"you abandon your soul to ecstasy\" >>\n\t\t\n\t\t<<elseif $reactSpirit < 0 >>\n\t\t\t<<set $belovedReact = \"you give in to wicked pleasure\" >>\n\t\t\n\t\t<<else>>\n\t\t\t<<set $belovedReact = \"you plead torn twixt heart and mind\" >>\n\t\t\n\t\t<<endif>>\n\t<<else>>\t\t\n\t\t<<if $reactSpirit > 0>>\n\t\t\t<<set $belovedReact = \"you give your soul to some vagrant god\" >>\n\t\t\n\t\t<<elseif $reactSpirit < 0 >>\n\t\t\t<<set $belovedReact = \"you plunge from the heights of ardor\" >>\n\t\t\n\t\t<<else>>\n\t\t\t<<set $belovedReact = \"you throb with the heat of love\" >>\n\t\t\n\t\t<<endif>>\n\t<<endif>>\n<<elseif $reactHeart < 0 >>\n\t<<if $reactMind > 0>>\n\t\t<<if $reactSpirit > 0>>\n\t\t\t<<set $belovedReact = \"-- your immeasurable, unassailable ecstasy\" >>\n\t\t<<elseif $reactSpirit < 0 >>\n\t\t\t<<set $belovedReact = \"-- your cloistered misery of God\" >>\t\t\n\t\t<<else>>\n\t\t\t<<set $belovedReact = \"-- your eternal discipline and study\" >>\n\t\t<<endif>>\n\t<<elseif $reactMind < 0 >>\n\t\t<<if $reactSpirit > 0>>\n\t\t\t<<set $belovedReact = \"you flee and thrash for your god\" >>\n\t\t\n\t\t<<elseif $reactSpirit < 0 >>\n\t\t\t<<set $belovedReact = \"you sorrow in absolute hatred\" >>\n\t\t\n\t\t<<else>>\n\t\t\t<<set $belovedReact = \"you covet the glint of your soul\" >>\n\t\t\n\t\t<<endif>>\n\t<<else>>\n\t\t<<if $reactSpirit > 0>>\n\t\t\t<<set $belovedReact = \"you retreat into holy solitude\" >>\n\t\t\n\t\t<<elseif $reactSpirit < 0 >>\n\t\t\t<<set $belovedReact = \"you pray for a book to save you\" >>\n\t\t\n\t\t<<else>>\n\t\t\t<<set $belovedReact = \"you wrap yourself in legends and lore\" >>\n\t\t\n\t\t<<endif>>\n\t<<endif>>\n<<else>>\n\t<<if $reactMind > 0>>\n\t\t<<if $reactSpirit > 0>>\n\t\t\t<<set $belovedReact = \"you perceive the cold light of truth\" >>\n\t\t\n\t\t<<elseif $reactSpirit < 0 >>\n\t\t\t<<set $belovedReact = \"you do what you think is right\" >>\n\t\t\n\t\t<<else>>\n\t\t\t<<set $belovedReact = \"you read me an appropriate poem\" >>\n\t\t\n\t\t<<endif>>\n\t<<elseif $reactMind < 0 >>\n\t\t<<if $reactSpirit > 0>>\n\t\t\t<<set $belovedReact = \"you serve the ancestral hall\" >>\n\t\t\n\t\t<<elseif $reactSpirit < 0 >>\n\t\t\t<<set $belovedReact = \"you prick your finger on a thorn-bush\" >>\n\t\t\n\t\t<<else>>\n\t\t\t<<set $belovedReact = \"you recite the proper verses\" >>\n\t\t\n\t\t<<endif>>\n\t<<else>>\n\t\t<<if $reactSpirit > 0>>\n\t\t\t<<set $belovedReact = \"you see only the ancestor spirits\" >>\n\t\n\t\t<<elseif $reactSpirit < 0 >>\n\t\t\t<<set $belovedReact = \"you struggle to appease the spirits\" >>\n\t\n\t\t<<else>>\n\t\t\t<<set $belovedReact = \"a grasshopper chirps in the night\" >>\n\t\t\n\t\t<<endif>>\n\t<<endif>>\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 58,
+      "name": "soundscape quality",
+      "text": "Double-click this passage to edit it.",
+      "links": []
+    },
+    {
+      "pid": 59,
+      "name": "choose emblems",
+      "text": "<<nobr>>\n/% This section chooses symbols to be used in display\nand also to have a direct effect upon the resolution of actions.\nThe beloved will respond differently depending on the mask she wears. Maybe?\n\nOr maybe just Mask?\n%/\n\n<<if $totalReact >= 3>>\n\t<<if $totalFire >= 2 >>\n\t\t<<set $mask = \"Melpomene\" >> /% tragedy %/\n\t<<elseif $totalFire <= 2 >>\n\t\t<<set $mask = \"Thalia\" >> /% comedy %/\n\t<<else>>\n\t\t<<set $mask = \"stormfront\">>\n\t<<endif>>\n<<elseif $reactTotal > 1 >> \n\t<<if $reactHeart <= 0>>\n\t\t<<set $mask = \"noface\" >>\n\t<<else>>\n\t\t<<set $mask = \"facepaint\" >>\n\t<<endif>>\n<<elseif $reactTotal < -1 >>\n\t<<if $reactSpirit <= -1 >>\n\t\t<<set $mask = \"blackveil\" >>\n\t<<else>>\n\t\t<<set $mask = \"ironmask\" >>\n\t<<endif>>\n<<elseif $belovedPassion >= 1 and $belovedEndurance >= 0 >>\n\t<<set $mask = \"horse-mask\">>\n<<else>>\n\t<<set $mask = \"fogface\" >>\n<<endif>>\n\n/% CONVEYANCE %/\n/% LANDSCAPE %/\n/% CANOPY %/\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 60,
+      "name": "// turn loop:",
+      "text": "Execute Verb usually has a clear, primary effect.\nExecute Adverb puts a more interesting spin on things.\nChoose Emblems selects symbols which may have echoing effects.\nCheck Stats makes sure all stats are within (-1, 1)\n\tand processes the consequences of spillovers.",
+      "links": []
+    },
+    {
+      "pid": 61,
+      "name": "// main loop:",
+      "text": "the CHOOSE, TURN, SONNET loop is the core of the engine:\n\nCHOOSE prompts the player to act,\nTURN processes the game's response,\nand SONNET displays the new state of the game.",
+      "links": []
+    },
+    {
+      "pid": 62,
+      "name": "beloved act",
+      "text": "<<nobr>>\n/% EXECUTION SECTION\n\nCombines psychological response and practical necessity\nin the mind of the beloved\nto choose a single response\nfrom a list of eight:\n(towards the lover)%/\n\n<<set $encourage = 0>>\n<<set $resist = 0>>\n<<set $embrace = 0>>\n<<set $absolve = 0>>\n/% (otherwise) %/\n<<set $meditate = 0>>\n<<set $explore = 0>>\n<<set $crusade = 0>>\n<<set $abase = 0>>\n\n/% Begin with the urgent matters:\nintense reactions or practical necessities. %/\n\n<<if $belovedEndurance <= -1>>\n\t<<set $meditate += 3>>\n<<elseif $belovedEndurance <= -0.3>>\n\t<<set $meditate += 2>>\n<<elseif $belovedEndurance < 0.1>>\n\t<<set $meditate += 1>>\n<<else>>\n\t<<set $crusade += 1>>\n<<endif>>\n\n<<if $belovedAdept <= 0 >>\n\t<<set $meditate += 1>>\n\t<<set $explore += 1>>\n<<else>>\n\t<<set $crusade += 1>>\n<<endif>>\n\n<<if $belovedInterp <= -0.5>>\n\t<<set $explore += 2>>\n<<elseif $belovedInterp <= 0>>\n\t<<set $explore += 1>>\n<<elseif $belovedInterp >= 0.5>>\n\t<<set $abase += 1>>\n<<endif>>\n\n<<if $belovedSloth >= 0.5>>\n\t<<set $explore += 1 >>\n<<elseif $belovedSloth <= -0.5>>\n\t<<set $meditate += 1>>\n<<endif>>\n\n<<if $belovedPassion <= -0.5 >>\n\t<<set $explore += 1>>\n\t<<set $crusade += 1>>\n<<endif>>\n\n/% Now the relationship\ncan be considered. %/\n\n<<if $belovedWill <= -0.5 >>\n\t<<set $crusade += 1>>\n\t<<set $abase += 1>>\n\t<<set $explore += 1>>\n\t<<set $meditate += 1>>\n<<elseif $belovedWill >= 0.5>>\n\t<<set $encourage += 1>>\n\t<<set $resist += 1>>\n\t<<set $absolve += 1>>\n<<endif>>\n\n<<if $willFactor < 0 and $reactTotal < 0>>\n\t<<set $resist += 1>>\n\t<<set $absolve += 1>>\n\t<<if $belovedInterp > $loverInterp>>\n\t\t<<set $absolve += 1>>\n\t<<else>>\n\t\t<<set $resist += 1>>\n\t<<endif>>\n<<endif>>\n\n<<if $belovedPassion > 0 and $belovedWill > 0 >>\n\t<<set $encourage += 2>>\n\t<<set $absolve += 2>>\n<<endif>>\n\n<<if $reactTotal >= 3>>\n\t<<set $sing += 5>>\n<<elseif $reactTotal >= 2>>\n\t<<set $encourage += 2>>\n\t<<set $absolve += 2>>\n<<elseif $reactTotal >= 1>>\n\t<<set $encourage += 1>>\n\t<<set $absolve += 1>>\n<<elseif $reactTotal >= -1>>\n\t<<set $encourage -= 1>>\n\t<<set $absolve -= 1>>\n<<else>>\n\t<<set $resist += 3>>\n\t<<set $encourage -= 2>>\n<<endif>>\n\n<<if $totalPassion >= 1>>\n\t<<set $encourage += 1>>\n\t<<set $resist += 1>>\n<<endif>>\n\n/% Now choose the action. %/\n\n<<set $inwardTotal = $meditate + $explore + $crusade + $abase>>\n<<set $outwardTotal = $encourage + $resist + $absolve + $sing>>\n\n<<if $reactTotal >= 3>>\n\t<<set $belovedAction = \"sing\">>\n\t\n<<elseif $meditate >= 2>>\n\t<<set $belovedAction = \"meditate\">>\n\n<<elseif $explore >= 2>>\n\t<<set $belovedAction = \"explore\">>\n\n<<elseif $inwardTotal > $outwardTotal>>\n\t<<if $meditate > $crusade>>\n\t\t<<set $belovedAction = \"meditate\">>\n\t<<elseif $explore > $crusade>>\n\t\t<<set $belovedAction = \"explore\">>\n\t<<elseif $crusade > $abase>>\n\t\t<<set $belovedAction = \"crusade\">>\n\t<<else>>\n\t\t<<set $belovedAction = \"abase\">>\n\t<<endif>>\n<<else>>\n\t<<if $encourage >= $resist>>\n\t\t<<set $belovedAction = \"encourage\">>\n\t<<elseif $absolve >= $resist>>\n\t\t<<set $belovedAction = \"absolve\">>\n\t<<elseif $resist > $sing>>\n\t\t<<set $belovedAction = \"resist\">>\n\t<<elseif $inwardTotal > $outwardTotal>>\n\t\t<<set $belovedAction = \"meditate\">>\n\t<<else>>\n\t\t<<set $belovedAction = \"encourage\">>\n\t<<endif>>\n<<endif>>\n\n<<if $belovedAction == \"meditate\">>\n\t<<set $belovedEndurance += $LARGE>>\n\t<<set $belovedAdept += $SMALL>>\n\t<<set $belovedInterp += $MED>>\n\t<<set $belovedPassion -= $SMALL>>\n\t<<if $belovedSloth < 0>>\n\t\t<<set $belovedSloth += $MED>>\n\t<<elseif $belovedSloth > 0>>\n\t\t<<set $belovedSloth -= $MED>>\n\t<<endif>>\n\n<<elseif $belovedAction == \"explore\">>\n\t<<set $belovedPassion += $SMALL>>\n\t<<set $belovedEndurance -= $SMALL>>\n\t<<set $belovedInterp += $SMALL>>\n\n<<elseif $belovedAction == \"crusade\">>\n\t<<set $belovedEndurance -= $MED>>\n\t<<set $belovedAdept += $MED>>\n\t<<set $belovedWill -= $SMALL>>\n\n<<elseif $belovedAction == \"abase\">>\n\t<<set $belovedWill -= $MED>>\n\t<<set $belovedEndurance -= $MED>>\n\t<<set $belovedInterp += $LARGE>>\n\n<<elseif $belovedAction == \"encourage\">>\n\t<<set $loverWill += $MED>>\n\t<<set $loverPassion += $SMALL>>\n\n<<elseif $belovedAction == \"resist\">>\n\t<<set $belovedWill -= $LARGE>>\n\t<<set $belovedEndurance -= $MED>>\n\t<<set $loverWill -= $MED>>\n\n<<elseif $belovedAction == \"absolve\">>\n\t<<set $belovedWill += $SMALL>>\n\t<<set $loverWill += $SMALL>>\n\t<<set $loverInterp += $MED>>\n\n<<else>>\n\t<<set $belovedEndurance += $SMALL>>\n\t<<set $loverEndurance += $SMALL>>\n\t<<set $loverInterp += $LARGE>>\n\t<<set $belovedInterp += $LARGE>>\n\t<<set $belovedWill += $SMALL>>\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 63,
+      "name": "// modular symbols:",
+      "text": "arranged in order of line and appearance",
+      "links": []
+    },
+    {
+      "pid": 64,
+      "name": "Adam's Note",
+      "text": "<h1>FALLEN \u843d\u8449 LEAVES</h1>\n\nA dancing-engine\nand a progression or cycle of poems,\nsonnets of seven ghazals (\u063a\u0632\u0644)\nin unrhymed rhythmic pseudo-pentameter.\n\nSome phrases sampled from the Sh\u012bj\u012bng (\u8a69\u7d93),\nthe Confucian Book of Songs, the Classic of Poetry,\nas translated by Arthur Waley.\n\nIn my opinion,\na complete cycle\nis likely to include over 100 sonnets.\nThe player should stop\nat whatever point they find most appropriate\nbut the story takes time to develop properly.\n\n(We are all god\nand we are all gods.)\n\nThe game does not propose to posess a certain kind of value.\nThere is a smoothness and a sleekness which it decidedly lacks.\nBut its intent is highly political:\nit deliberately rebels against the modularity of games\nand the tactical improvization \nthat the industry requires.\nForm some product is a controlled space\nand the needs of the player dominate everything,\nwhile themselves being dominated by the needs of the market.\n\nMore important is the emotional component:\nthe gradual coalescing into the whole,\nthe absolute veiling of number,\nthe wonder of spontaneous communication.\nThis symbolism is not absolute.\nYour interpretation may not be correct.\nMy own choices may have been faulty.\nBut the progression does nevertheless occur,\nand both the player and the author learn something.\n\nIf you take something away from this game,\nlet it be this:\nthe progress through the system of the game\nmust be subservient to the progress through the journey of the game.\nThe change must occur in the audience,\nnot in the art. (1)\nIf you want to poke around and explore extreme states,\ntry to find the volume control.\n\nFallen Leaves aspires to initiate the audience\ninto a new stream of consciousness\nwhere the soul is synonymous with the many.\nCommunion with the beloved\nmediates this process.\n\n[[Begin.|CHOOSE]]\n\n1) Well, hell, we've got exceptions now:\nI love massive, public art\nthat becomes its own presence.\nThen the value of the art,\nthe measures of its variables,\nbecomes its literal, physical content\nand therefore its ethical worth.",
+      "links": [
+        {
+          "text": "Begin.",
+          "destination": {
+            "name": "CHOOSE",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "stat table",
+      "text": "/% This section reveals internal states.\nFor wizards only. %/ \n\n||lover|beloved|global|\n|fire|<<print '$loverFire'>>|<<print '$belovedFire'>>|\n|passion|<<print '$loverPassion'>>|<<print '$belovedPassion'>>|\n|will|<<print '$loverWill'>>|<<print '$belovedWill'>>|\n|endurance|<<print '$loverEndurance'>>|<<print '$belovedEndurance'>>|\n|adept|<<print '$loverAdept'>>|<<print '$belovedAdept'>>|\n|interpretation|<<print '$loverInterp'>>|<<print '$belovedInterp'>>|\n|sloth|<<print '$loverSloth'>>|<<print '$belovedSloth'>>|\n\nluck <<print '$luck'>>\nMask = <<print '$mask'>>\nHeart React = <<print '$reactHeart'>>\nMind React = <<print '$reactMind'>>\nSpirit React = <<print '$reactSpirit'>>\nTotal React = <<print '$reactTotal'>>\nVerb = <<print '$verb'>>\nAdverb = <<print '$adv'>>\nReaction = <<print '$belovedAction'>>",
+      "links": []
+    },
+    {
+      "pid": 66,
+      "name": "liquid",
+      "text": "<<nobr>>\n/% signals sexual energy and bliss, fluidity, flow %/\n<<if $belovedPassion <= -0.5>>\n\t<<if $belovedAdept >= 0.5>>\n\t\ttears\n\t<<elseif $belovedAdept >= -0.5>>\n\t\train\n\t<<else>>\n\t\tvinegar\n\t<<endif>>\n<<elseif $belovedPassion <= 0.5>>\n\t<<if $belovedAdept >= 0.5>>\n\t\twater\n\t<<elseif $belovedAdept >= -0.5>>\n\t\ttea\n\t<<else>>\n\t\tcoffee\n\t<<endif>>\n<<else>>\n\t<<if $belovedAdept >= 0.5>>\n\t\tflesh\n\t<<elseif $belovedAdept >= -0.5>>\n\t\tjuice\n\t<<else>>\n\t\twine\n\t<<endif>>\n<<endif>>\n\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 67,
+      "name": "by mode of conveyance",
+      "text": "<<nobr>>/% This mainly relates to the beloved's emotional state. %/\n\n<<if $belovedAdept >= 0.5>>\n\t<<if $reactSpirit >= 1>>\n\t\tby effortless flight.\n\t<<elseif $reactHeart >= 1>>\n\t\tby bare-backed steppe-horse.\n\t<<elseif $reactMind >= 1>>\n\t\ton a stone-chime's note.\n\t<<else>>\n\t\tby well-dressed horse.\n\t<<endif>>\n<<elseif $belovedWill <= 0>>\n\t<<if $belovedPassion >= 0.5>>\n\t\twith twelve armored guards.\n\t<<elseif $belovedFire <= 0>>\n\t\tin a little paddle-boat.\n\t<<else>>\n\t\twalking slowly away.\n\t<<endif>>\n<<elseif $belovedSloth > 0.5 and $belovedPassion <= 0>>\n\twithout saying goodbye.\n<<else>>\n\tby shadow and stealth.\n<<endif>>\n<<endnobr>>",
+      "links": []
+    },
+    {
+      "pid": 68,
+      "name": "TO DO",
+      "text": "endurance is still too easy to come by...\nprobably something in beloved react?\n\n\"reflecting some way on subject of though\"\nis often two syllables too long\n\ndrastically expand vocabulary\n\nadverb reacts\n\nmore display based on react, to prevent static-feeling poem\n& give more responsive quality\n\nI've had a general tendancy to treat all stats as \"good\"\nexcept sloth...\nThis leads to a risk/reward style of gameplay\nwhich is too traditional for this project.\nI want more evenness and openness,\nwhere the user could have a reason to move in any direction:\nencouragement for becoming dumber and weaker\nto seek out new domains of love...\nA more balanced style.\nGo through verbs and adverbs again,\nbalancing each stat's potential for + and -\n\nalso need to give more priority to sloth, adept, and interp...\nI've been focusing too much on will, passion, fire, and endurance,\nwhich is such a totally masculine/traditional attitude...\nsloth is really important,\npossibly the total solution,\nand it's been totally neglected\n\nReview all moves and displays to be in keeping with this new philosophy.",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "Secret Powers",
+      "text": "<h2>SECRET POWERS</h2>\nUSE WISELY\n\nVolume <<textbox \"$volume\" \"0.2\" False>> \n(Volume is a decimal: 0.1-1.0 considered reasonable.)\nEmpty Start <<checkbox \"$emptystart\" 0 1 >>\nAthena Mode <<checkbox \"$godmode\" 0 1 >>\n\n<<button \"((!))\">>\n\t<<if $emptystart == 1>>\n\t\t<<set $luck = 0>>\n\t\t<<set $loverFire = 0>>\n\t\t<<set $loverSloth = 0>>\n\t\t<<set $loverPassion = 0>>\n\t\t<<set $loverWill = 0>>\n\t\t<<set $loverEndurance = 0>>\n\t\t<<set $loverAdept = 0 >>\n\t\t<<set $loverInterp = 0 >>\n\t\n\t\t<<set $belovedFire = 0>>\n\t\t<<set $belovedSloth = 0>>\n\t\t<<set $belovedPassion = 0>>\n\t\t<<set $belovedWill = 0>>\n\t\t<<set $belovedEndurance = 0>>\n\t\t<<set $belovedAdept = 0 >>\n\t\t<<set $belovedInterp = 0 >>\n\t\t\n\t\t<<goto \"SONNET\">>\n\t<<else>>\n\t\t<<goto \"CHOOSE\">>\n\t<<endif>>\n<</button>>\n\n[[Never Mind|INDEX]]\n\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "SONNET",
+            "pid": 1
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "CHOOSE",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Never Mind",
+          "destination": {
+            "name": "INDEX",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "license",
+      "text": "This is free and unencumbered software released into the public domain.\n\nAnyone is free to copy, modify, publish, use, compile, sell, or\ndistribute this software, either in source code form or as a compiled\nbinary, for any purpose, commercial or non-commercial, and by any\nmeans.\n\nIn jurisdictions that recognize copyright laws, the author or authors\nof this software dedicate any and all copyright interest in the\nsoftware to the public domain. We make this dedication for the benefit\nof the public at large and to the detriment of our heirs and\nsuccessors. We intend this dedication to be an overt act of\nrelinquishment in perpetuity of all present and future rights to this\nsoftware under copyright law.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nFor more information, please refer to <http://unlicense.org/>\n\n(Twine source will be released after the end of IFComp 2016.)\n\n[[Return to index.|INDEX]]",
+      "links": [
+        {
+          "text": "Return to index.",
+          "destination": {
+            "name": "INDEX",
+            "pid": 29
+          }
+        }
+      ]
+    }
+  ]
+}

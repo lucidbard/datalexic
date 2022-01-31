@@ -1,0 +1,1350 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "HVPRS",
+      "text": "<<silently>>\n<<set $horse_visited to false>>\n<<set $horse_chosen to \"\">>\n<<set $horse_gender to \"\">>\n<<set $horse_heshe to \"\">>\n<<set $horse_himher to \"\">>\n<<set $fakename to \"\">>\n<<set $smartpersonscore to 0>>\n<<set $horselove to 0>>\n<</silently>>\n\"Welcome to Happy Valley Pony Riding School! Our Valley is happy and our ponies are too... Just stay away from the toothy end.\"\n\n[[Ok.]]",
+      "links": [
+        {
+          "text": "Ok.",
+          "destination": {
+            "name": "Ok.",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Ok.",
+      "text": "\"...Also the kicky end.\"\n\n[[Got it.]]",
+      "links": [
+        {
+          "text": "Got it.",
+          "destination": {
+            "name": "Got it.",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Got it.",
+      "text": "\"Well, seems like you know what's what, so I'll leave you to it.\"\n\n[[Wait, what...?|Wait]]\n",
+      "links": [
+        {
+          "text": "Wait, what...?",
+          "destination": {
+            "name": "Wait",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Wait",
+      "text": "//They've gone.//\n\nThe [[riding school]] is clean and quiet. You're the only one here, it seems.\n\nWell, apart from the [[three enigmatic equines|ponies]] in front of you, of course.",
+      "links": [
+        {
+          "text": "riding school",
+          "destination": {
+            "name": "riding school",
+            "pid": 5
+          }
+        },
+        {
+          "text": "three enigmatic equines",
+          "destination": {
+            "name": "ponies",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "riding school",
+      "text": "There are around twenty stalls, all with smart white name plaques nailed to them, but only three are occupied. Green hills stretch into the distance, dotted with grazing horses, glossy flanks gleaming in the sun.\n\n<img src=\"images/valley.jpg\" style=\"width: 50%; border: 2px silver solid;\" media=\"(max-width: 1280px)\"/> \n\n[[Back|Wait]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Wait",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "ponies",
+      "text": "In the left-hand stall, there's a [[tall mare|Gladys]] with a superscilious look on her face. In the central stall, there's a [[carthorse-looking thing|Duncan]]. The right-hand stall seems to be [[empty|Mabel]], although there's a haynet in it.\n\n<<if $horse_visited is true>>You can choose one of them if you like. The [[tall mare|Choose Gladys]], [[the carthorse|Choose Duncan]], or the [[mystery thing|Choose Mabel]] from the end stall.<</if>>\n",
+      "links": [
+        {
+          "text": "tall mare",
+          "destination": {
+            "name": "Gladys",
+            "pid": 7
+          }
+        },
+        {
+          "text": "carthorse-looking thing",
+          "destination": {
+            "name": "Duncan",
+            "pid": 8
+          }
+        },
+        {
+          "text": "empty",
+          "destination": {
+            "name": "Mabel",
+            "pid": 9
+          }
+        },
+        {
+          "text": "tall mare",
+          "destination": {
+            "name": "Choose Gladys",
+            "pid": 10
+          }
+        },
+        {
+          "text": "the carthorse",
+          "destination": {
+            "name": "Choose Duncan",
+            "pid": 14
+          }
+        },
+        {
+          "text": "mystery thing",
+          "destination": {
+            "name": "Choose Mabel",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Gladys",
+      "text": "<img src=\"images/gladys.jpg\" style=\"width: 50%; border: 2px silver solid;\" media=\"(max-width: 1280px)\"/> \n\nThe mare's pretty, with a long forelock and flowing mane, but she looks down her nose at you.\n\n[[Choose this one|Choose Gladys]]\n\n[[Choose a different one|ponies]]\n\n[[Why am I choosing?|Query]]\n\n<<set $horse_visited to true>>",
+      "links": [
+        {
+          "text": "Choose this one",
+          "destination": {
+            "name": "Choose Gladys",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Choose a different one",
+          "destination": {
+            "name": "ponies",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Why am I choosing?",
+          "destination": {
+            "name": "Query",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Duncan",
+      "text": "<img src=\"images/bighoss.jpg\" style=\"width: 50%; border: 2px silver solid;\" media=\"(max-width: 1280px)\"/> \n\nHe seems a friendly enough sort, although he's acting a little strangely, slurping at his salt lick, then chewing on a mouthful of hay, then gulping a mouthful of water, moving between them repeatedly and seemingly at random.\n\n[[Choose this one|Choose Duncan]]\n\n[[Choose a different one|ponies]]\n\n[[Why am I choosing?|Query]]\n\n<<set $horse_visited to true>>",
+      "links": [
+        {
+          "text": "Choose this one",
+          "destination": {
+            "name": "Choose Duncan",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Choose a different one",
+          "destination": {
+            "name": "ponies",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Why am I choosing?",
+          "destination": {
+            "name": "Query",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Mabel",
+      "text": "You look down. You keep on looking down. At the very bottom of the stall, barely a foot off the ground, is a round, hairy Shetland pony with a savage look in its eye. It's chewing a carrot in a way that can only be described as threatening.\n\n<img src=\"images/mabel.jpg\" style=\"width: 50%; border: 2px silver solid;\" media=\"(max-width: 1280px)\"/> \n\n[[Choose this one|Choose Mabel]]\n\n[[Choose a different one|ponies]]\n\n[[Why am I choosing?|Query]]\n\n<<set $horse_visited to true>>",
+      "links": [
+        {
+          "text": "Choose this one",
+          "destination": {
+            "name": "Choose Mabel",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Choose a different one",
+          "destination": {
+            "name": "ponies",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Why am I choosing?",
+          "destination": {
+            "name": "Query",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Choose Gladys",
+      "text": "<<set $horse_chosen to \"Gladys\">>\n<<set $horse_heshe to \"she\">>\n<<set $horse_himher to \"herself\">>\n\nWhat would you like to call your horse?\n\n<<textbox \"$fakename\" \"\">>\n\n[[\"Hmph,\"|Continue]] says the mare.\n\n",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Gladys",
+            "pid": 7
+          }
+        },
+        {
+          "text": "\"Hmph,\"",
+          "destination": {
+            "name": "Continue",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Query",
+      "text": "Why choose? Why breathe? Why do anything? [[Choose|ponies]] or [[close the damn window|window]]. ",
+      "links": [
+        {
+          "text": "Choose",
+          "destination": {
+            "name": "ponies",
+            "pid": 6
+          }
+        },
+        {
+          "text": "close the damn window",
+          "destination": {
+            "name": "window",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Choose Mabel",
+      "text": "<<set $horse_chosen to \"Mabel\">>\n<<set $horse_heshe to \"she\">>\n<<set $horse_himher to \"herself\">>\n\nWhat would you like to call your horse?\n\n<<textbox \"$fakename\" \"\">>\n\nThe pony gives a final powerful crunch of the carrot and spits the fronded end, [[almost casually,|Continue]] into its water bucket.",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Mabel",
+            "pid": 9
+          }
+        },
+        {
+          "text": "almost casually,",
+          "destination": {
+            "name": "Continue",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Continue",
+      "text": "<<if $fakename is \"\">><<set $fakename to \"Kizzy, or Boo Boo\">><</if>>\nWhat the hell is wrong with you?! You can't just go around naming horses willy-nilly! They already have names! Why do you think there are name plaques nailed to their stables?\n\nThis one is called $horse_chosen.\n\n<<if $horse_chosen is \"Gladys\">> \"And I'm not //yours//,\" says Gladys. \"I am my own mare, thank you very much.\" She tosses her mane indignantly.\n<<elseif $horse_chosen is \"Duncan\">> \"Names are irrelevant. I shall call you Bumpy Face. Please unhook this haynet Bumpy Face. It requires further testing.\"\n<<elseif $horse_chosen is \"Mabel\" and $fakename is \"Kizzy, or Boo Boo\">> \"Cannae even be bothered to type in a name, yer lazy bawbag?! Aye, the game might not notice, but I dae!\" <<elseif $horse_chosen is \"Mabel\">>\"$fakename? I'll gie you fucking $fakename! I'll bite yer kneecaps aff and shite 'em down yer stable boots yer bawbag!\"<</if>>\n\n\n[[I'm sorry!|Sorry]]",
+      "links": [
+        {
+          "text": "I'm sorry!",
+          "destination": {
+            "name": "Sorry",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Choose Duncan",
+      "text": "<<set $horse_chosen to \"Duncan\">>\n<<set $horse_heshe to \"he\">>\n<<set $horse_himher to \"himself\">>\n\nWhat would you like to call your horse?\n\n<<textbox \"$fakename\" \"\">>\n\nThe horse is too [[busy guzzling|Continue]] salt and hay and water to notice.",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Duncan",
+            "pid": 8
+          }
+        },
+        {
+          "text": "busy guzzling",
+          "destination": {
+            "name": "Continue",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "StoryAuthor",
+      "text": "Lynda Clark",
+      "links": []
+    },
+    {
+      "pid": 16,
+      "name": "Groom",
+      "text": "<<if $horse_chosen is \"Gladys\">><<set $horselove to $horselove +5>> Gladys closes her eyes as you attempt to pull the tangles from her luxurious mane.\n\n\"Mmmm, I suppose you're [[not completely useless|Next]].\" she mumbles. \"Perhaps there's [[more where that came from?|open-minded]]\"\n\n<<elseif $horse_chosen is \"Duncan\">><<set $horselove to $horselove -5>> Duncan backs away as you approach. \n\n\"What are you doing?! I am engaged in [[SCIENCE]]! [[Leave me alone!|Next]]\"\n\n<<elseif $horse_chosen is \"Mabel\">>\n\nMabel eyes you suspiciously.\n\n\"Yer want tae watch yersen, mucking aboot wae forces y'know nuthin aboot, hen. Although I wouldnae say nah tae a wee bit o'[[hoof polish]].\"\n\n[[Erm...|Next]]\n<</if>>",
+      "links": [
+        {
+          "text": "not completely useless",
+          "destination": {
+            "name": "Next",
+            "pid": 23
+          }
+        },
+        {
+          "text": "more where that came from?",
+          "destination": {
+            "name": "open-minded",
+            "pid": 29
+          }
+        },
+        {
+          "text": "SCIENCE",
+          "destination": {
+            "name": "SCIENCE",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Leave me alone!",
+          "destination": {
+            "name": "Next",
+            "pid": 23
+          }
+        },
+        {
+          "text": "hoof polish",
+          "destination": {
+            "name": "hoof polish",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Erm...",
+          "destination": {
+            "name": "Next",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Feed",
+      "text": "You pull up a bunch of grass from a planter just outside $horse_chosen's stall.\n\n<<if $horse_chosen is \"Duncan\">><<set $horselove to $horselove +5>> \"Excellent,\" says Duncan. \"Now I need you to [[go the food store|Food Store]] and bring me two scoops of oats, a handful of carrots, and THIS IS VERY IMPORTANT, ARE YOU LISTENING? Five hundred millilitres of water.\"\n\n\"[[Umm...|Next]].\"\n\n<<elseif $horse_chosen is \"Mabel\">><<set $horselove to $horselove -5>>\"Ah, y'think the way tae me heart is through me stomach, d'yae?! Think it's all deep-fried mints and tikka oats roond here d'yae?! [[Well it isnae!|Next]]\"\n\n<<elseif $horse_chosen is \"Gladys\">>Gladys sniffs the grass.\n\n\"I usually only eat organic wheatgrass. But I suppose if this is all you have to offer...\"\n\n[[It is...|Next]]\n<</if>>",
+      "links": [
+        {
+          "text": "go the food store",
+          "destination": {
+            "name": "Food Store",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Umm...",
+          "destination": {
+            "name": "Next",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Well it isnae!",
+          "destination": {
+            "name": "Next",
+            "pid": 23
+          }
+        },
+        {
+          "text": "It is...",
+          "destination": {
+            "name": "Next",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Exercise",
+      "text": "<<if $horse_chosen is \"Mabel\">><<set $horselove to $horselove +5>> \"We goin' [[oot]]?\" asks Mabel, trotting on the spot as you fumble with the bolt on her stall door. \"Ach, I dinnae care, lang as am [[naw cooped up|Menage]] in here!\"\n\n<<elseif $horse_chosen is \"Gladys\">><<set $horselove to $horselove -5>> \"Outside? Outside is dirty and [[I don't like it!|Next]]\"\n\n<<elseif $horse_chosen is \"Duncan\">> Duncan doesn't look up as you struggle with the bolt on his stall door.\n\n\"Now, if only I could [[adjust the density|SCIENCE]]...\" he mutters.\n\n[[Umm...|Next]]\n<</if>>",
+      "links": [
+        {
+          "text": "oot",
+          "destination": {
+            "name": "oot",
+            "pid": 27
+          }
+        },
+        {
+          "text": "naw cooped up",
+          "destination": {
+            "name": "Menage",
+            "pid": 28
+          }
+        },
+        {
+          "text": "I don't like it!",
+          "destination": {
+            "name": "Next",
+            "pid": 23
+          }
+        },
+        {
+          "text": "adjust the density",
+          "destination": {
+            "name": "SCIENCE",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Umm...",
+          "destination": {
+            "name": "Next",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "window",
+      "text": "You honestly think I'm going to do this for you? No. And you know what, you just lost ten points. You didn't even realise you were [[scoring points|Final Score]], and you just lost ten, so. \n\n<<set $smartpersonscore to $smartpersonscore -10>>",
+      "links": [
+        {
+          "text": "scoring points",
+          "destination": {
+            "name": "Final Score",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Final Score",
+      "text": "Your Smart Person Rating is: $smartpersonscore.\n\nTHE END",
+      "links": []
+    },
+    {
+      "pid": 21,
+      "name": "Sorry",
+      "text": "It's ok. It's not me you should be apologising to really though, it's them. Anyway...\n\nWhat would you like to do with $horse_chosen?\n\n[[Groom|Groom]]\n[[Feed|Feed]]\n[[Exercise|Exercise]]\n<<if visited (\"riding school\")>>[[Ask: \"What would you like to do?\"|horsechoice]]\n<</if>>",
+      "links": [
+        {
+          "text": "Groom",
+          "destination": {
+            "name": "Groom",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Feed",
+          "destination": {
+            "name": "Feed",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Exercise",
+          "destination": {
+            "name": "Exercise",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Ask: \"What would you like to do?\"",
+          "destination": {
+            "name": "horsechoice",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "horsechoice",
+      "text": "<<set $horselove to $horselove +10>>\n$horse_chosen's eyes glimmer. $!horse_heshe looks surprised and delighted to be asked. \n\n<<if $horse_chosen is \"Duncan\">> \"Well, since you ask, Bumpy Face, it would be marvellous if you could assist me in the completion of a [[science experiment|SCIENCE]]!\"\n<<elseif $horse_chosen is \"Gladys\">> \"I've always wanted to try something... a little different.\" Gladys looks away demurely, and you're struck by the length and volume of her fluttering eyelashes. \"You might think me strange even to ask, but you look like an [[open-minded]] sort of person.\"\n<<elseif $horse_chosen is \"Mabel\">> \"Yer naw as shite as yer turd-lookin'! I'd love a wee run [[oot]] hen, or, I'm nae fussy, a wee trot around the [[sandy pit|Menage]]'ll dae!\"\n<</if>>",
+      "links": [
+        {
+          "text": "science experiment",
+          "destination": {
+            "name": "SCIENCE",
+            "pid": 24
+          }
+        },
+        {
+          "text": "open-minded",
+          "destination": {
+            "name": "open-minded",
+            "pid": 29
+          }
+        },
+        {
+          "text": "oot",
+          "destination": {
+            "name": "oot",
+            "pid": 27
+          }
+        },
+        {
+          "text": "sandy pit",
+          "destination": {
+            "name": "Menage",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Next",
+      "text": "$horse_chosen snorts.\n\nWhat would you like to do with $horse_chosen now?\n[[Feed|Feed]]\n[[Exercise|Exercise]]\n[[Groom|Groom]]\n<<if visited (\"riding school\")>>[[Ask: \"What would you like to do?\"|horsechoice]]\n<</if>>\n<<if visited (\"Feed\", \"Exercise\", \"Groom\")>>[[That's enough.|Return]]\n<</if>>",
+      "links": [
+        {
+          "text": "Feed",
+          "destination": {
+            "name": "Feed",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Exercise",
+          "destination": {
+            "name": "Exercise",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Groom",
+          "destination": {
+            "name": "Groom",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Ask: \"What would you like to do?\"",
+          "destination": {
+            "name": "horsechoice",
+            "pid": 22
+          }
+        },
+        {
+          "text": "That's enough.",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "SCIENCE",
+      "text": "<<set $horselove to $horselove +5>>\n\"What is it that you're trying to find out?\" you ask.\n\nDuncan ceases in his slobbering, gulping circuit for a moment and finshes his current mouthful.\n\n\"I'm studying the effect of water on all available foodstuffs,\" he informs you, drooling a saline hay mixture onto the ground between his front hooves. \"And will also be recording their effect on digestion.\" He dunks another mouthful of hay into his water bucket and watches it slowly drift to the bottom. \"Although that might take a couple of hours.\"\n\n[[Gross.|Next]]\n[[How can I help?|Food Store]]\n\n\n",
+      "links": [
+        {
+          "text": "Gross.",
+          "destination": {
+            "name": "Next",
+            "pid": 23
+          }
+        },
+        {
+          "text": "How can I help?",
+          "destination": {
+            "name": "Food Store",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "hoof polish",
+      "text": "You stand back to admire your handiwork. You did a bit of a shaky job in places, but Mabel seems happy enough with the outcome. \n\n\"Aye, yer nawt so bad furra cuddy are yae?\" She stamps her hooves a few times, does a brief tap dance. \"Are yous gawn [[oot]]? I'm gem.\"\n\n[[You have no idea what she's saying.|Return]]",
+      "links": [
+        {
+          "text": "oot",
+          "destination": {
+            "name": "oot",
+            "pid": 27
+          }
+        },
+        {
+          "text": "You have no idea what she's saying.",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Food Store",
+      "text": "You hurry across the yard and into the small, dimly lit food store, trying hard to remember what it was Duncan had asked for. There were definitely carrots and oats involved, you remember that much. Your eye is drawn to the large silver faucet mounted on the wall. \n\nOh yeah! Water! He wanted a specific amount of water too.\n\nIt was definitely...[[two carrots, a scoop of oats and three hundred millilitres of water|Wrong1]]...or was it [[five carrots, two scoops of oats and four hundred millilitres of water|Wrong2]]? Hold on, [[the number of carrots didn't matter, but it had to be five hundred millilitres of water and two scoops of oats|Right]]. [[I really wasn't paying attention|Wrong3]].\n\n",
+      "links": [
+        {
+          "text": "two carrots, a scoop of oats and three hundred millilitres of water",
+          "destination": {
+            "name": "Wrong1",
+            "pid": 38
+          }
+        },
+        {
+          "text": "five carrots, two scoops of oats and four hundred millilitres of water",
+          "destination": {
+            "name": "Wrong2",
+            "pid": 39
+          }
+        },
+        {
+          "text": "the number of carrots didn't matter, but it had to be five hundred millilitres of water and two scoops of oats",
+          "destination": {
+            "name": "Right",
+            "pid": 40
+          }
+        },
+        {
+          "text": "I really wasn't paying attention",
+          "destination": {
+            "name": "Wrong3",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "oot",
+      "text": "Before you even have the stable door all the way open, Mabel barges past you. She races across the yard, tiny legs a blur.\n\n\"Y'll nae catch me yer dafty cuddy!\" she yells over her shoulder as she disappears into the [[open countryside beyond|countryside]].\n\n[[After her!|countryside]]\n\n...Or, you could always [[wait here|AwaitMabel]]. She'll have to come back eventually.",
+      "links": [
+        {
+          "text": "open countryside beyond",
+          "destination": {
+            "name": "countryside",
+            "pid": 43
+          }
+        },
+        {
+          "text": "After her!",
+          "destination": {
+            "name": "countryside",
+            "pid": 43
+          }
+        },
+        {
+          "text": "wait here",
+          "destination": {
+            "name": "AwaitMabel",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Menage",
+      "text": "You soon realise that what Mabel refers to as 'the sandy pit' is actually a large training ring with a sandy surface. \n\n\"Are ye gein to [[watch]], oor [[join in]]?\" Mabel asks.\n\n[[Uh...|Return]]",
+      "links": [
+        {
+          "text": "watch",
+          "destination": {
+            "name": "watch",
+            "pid": 47
+          }
+        },
+        {
+          "text": "join in",
+          "destination": {
+            "name": "join in",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Uh...",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "open-minded",
+      "text": "<<silently>>\n<<if visited (\"repeat\")>><<set $horselove to $horselove -5>>\n<</if>>\n<</silently>>\n<<if $horselove < 0>> Gladys swings her shapely haunches towards you and says: \"You know what? [[Forget it.|Return]]\n<<else>>Gladys lowers her head, and mutters into the straw:\n\n@@.tiny;\"I'd really like for you to plait my mane and tail if it's not too much trouble?\"@@\n\n[[Ask her to repeat herself|repeat]], or [[don't be so damn cruel and just plait her damn mane and tail|plait]].\n<</if>>",
+      "links": [
+        {
+          "text": "Forget it.",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Ask her to repeat herself",
+          "destination": {
+            "name": "repeat",
+            "pid": 30
+          }
+        },
+        {
+          "text": "don't be so damn cruel and just plait her damn mane and tail",
+          "destination": {
+            "name": "plait",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "repeat",
+      "text": "<<set $horselove to $horselove -5>>\n\nGladys swallows and tries again.\n\n@@.tiny;\"Please, if it's not too much trouble, please could you plait my mane and tail?\"@@\n\n[[Claim to still not be getting it|open-minded]] or [[do the decent thing|plait]].",
+      "links": [
+        {
+          "text": "Claim to still not be getting it",
+          "destination": {
+            "name": "open-minded",
+            "pid": 29
+          }
+        },
+        {
+          "text": "do the decent thing",
+          "destination": {
+            "name": "plait",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "plait",
+      "text": "<<set $horselove to $horselove +10>>\n\nPlaiting is hard. You've never done it before, and it's difficult to keep all the strands seperate, even when you use your mouth.\n\nStill, with a little perserverance and frequent tips and encouragement from Gladys, you end up with something not too shabby!\n\n[[Examine your handiwork|handiwork]]\n\n[[I've spent long enough staring at a horse's butt, thanks|Return]]",
+      "links": [
+        {
+          "text": "Examine your handiwork",
+          "destination": {
+            "name": "handiwork",
+            "pid": 33
+          }
+        },
+        {
+          "text": "I've spent long enough staring at a horse's butt, thanks",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Return",
+      "text": "\"Well, isn't it just great to see you two getting on like a house on fire?!\"\n\n//[[It's that weirdo from earlier.|Return2]]//\n",
+      "links": [
+        {
+          "text": "It's that weirdo from earlier.",
+          "destination": {
+            "name": "Return2",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "handiwork",
+      "text": "<<set $horselove to $horselove +5>>\n<img src=\"images/gladysbutt.jpg\" style=\"width: 50%; border: 2px silver solid;\" media=\"(max-width: 1280px)\"/> \nGladys looks back over her shoulder.\n\n\"Don't - you'll muss up your mane!\" You complain.\n\n\"You're so silly!\" she giggles.\n\n[[Thought she wanted to look nice...|Return]]",
+      "links": [
+        {
+          "text": "Thought she wanted to look nice...",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Return2",
+      "text": "$horse_chosen falls silent. A strange atmosphere descends.\n\n//The stranger stares at you both for a long time, leaning against a nearby fence.// \n\n//Eventually, they straighten.//\n\n\"Anyway, good to see you're both looking ready for the [[Royal Show]] tomorrow.\"\n\n[[WHAT?]]",
+      "links": [
+        {
+          "text": "Royal Show",
+          "destination": {
+            "name": "Royal Show",
+            "pid": 35
+          }
+        },
+        {
+          "text": "WHAT?",
+          "destination": {
+            "name": "WHAT?",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "Royal Show",
+      "text": "\"Oh, you know. Where the Queen comes, and watches you put on the show you've spent all day preparing, like we talked about on the phone.\"\n\n//This dude is [[stark-staring bonkers|WHAT?]], you're sure of it.//",
+      "links": [
+        {
+          "text": "stark-staring bonkers",
+          "destination": {
+            "name": "WHAT?",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "WHAT?",
+      "text": "//They've gone again, whistling into the distance.//\n\n[[Goddammit!]]",
+      "links": [
+        {
+          "text": "Goddammit!",
+          "destination": {
+            "name": "Goddammit!",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Goddammit!",
+      "text": "\"What are we going to do $horse_chosen?\" You ask.\n\n<<if $horselove < 10>> $horse_chosen shrugs. Nothing to do but wait until [[tomorrow]], then.\n<<elseif $horse_chosen is \"Mabel\">> \"Dinnae worry wee cuddy bawbag. We'll show her maj hae it's done.\" You [[hope she's right.|tomorrow]]\n<<elseif $horse_chosen is \"Gladys\">> \"Surely two individuals as fabulous as ourselves will have no difficulty convincing her majesty of our fabulosity?\" You [[appreciate her confidence|tomorrow]], even if you don't necessarily share it.\n<<elseif $horse_chosen is \"Duncan\">> \"I don't recognise the sovereignty of any human,\" he says. \"But if we impress her, she might fund more of my experiments.\" [[Good grief.|tomorrow]]\n<</if>>",
+      "links": [
+        {
+          "text": "tomorrow",
+          "destination": {
+            "name": "tomorrow",
+            "pid": 49
+          }
+        },
+        {
+          "text": "hope she's right.",
+          "destination": {
+            "name": "tomorrow",
+            "pid": 49
+          }
+        },
+        {
+          "text": "appreciate her confidence",
+          "destination": {
+            "name": "tomorrow",
+            "pid": 49
+          }
+        },
+        {
+          "text": "Good grief.",
+          "destination": {
+            "name": "tomorrow",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Wrong1",
+      "text": "You grab two carrots and a scoop of oats and carefully measure three hundred millilitres of water into a bucket.\n\nDuncan's experiment seemed kind of whack anyway.\n\n[[Head back to Duncan|Return2Duncan]]",
+      "links": [
+        {
+          "text": "Head back to Duncan",
+          "destination": {
+            "name": "Return2Duncan",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Wrong2",
+      "text": "It's a bit tricky getting EXACTLY four hundred millilitres of water into the bucket. The five carrots and two scoops of oats are a breeze by comparison. \n\nWhatever, [[Duncan's going to be stoked|Return2Duncan]].",
+      "links": [
+        {
+          "text": "Duncan's going to be stoked",
+          "destination": {
+            "name": "Return2Duncan",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Right",
+      "text": "<<set $horselove to $horselove +10>>\nFive hundred millilitres of water and two scoops of oats, you're fairly sure you've definitely got that part right. But the carrots? The more you think about it, the more you doubt yourself. What if he //did// specify a number after all? You load up on as many as you can to be on the safe side before [[heading back|Return2Duncan]].",
+      "links": [
+        {
+          "text": "heading back",
+          "destination": {
+            "name": "Return2Duncan",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Wrong3",
+      "text": "<<set $horselove to $horselove -5>>\n\nYou grab food at random. What do oats even look like anyway? Seeds? Flakes? A scoop of everything, a pile of carrots, some amount of water? He's only going to smoosh it all together, so who cares?\n\nExperiment.\n\n[[Ptsssh!!|Return2Duncan]]",
+      "links": [
+        {
+          "text": "Ptsssh!!",
+          "destination": {
+            "name": "Return2Duncan",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Return2Duncan",
+      "text": "<<if visited (\"Wrong1\")>> You lay the collection of foodstuffs hopefully at Duncan's hooves. He snorts.\n\"I take it you weren't listening to anything I said with those enormous flappy ears of yours?\"\nBefore you can answer, he's [[back to his experiments|Return]], mumbling about the scarceity of suitable assistants these days.\n<<elseif visited (\"Wrong2\")>> Duncan stares at the carrots and the oats you've dropped to the ground in front of him.\n\"At least [[you tried|Return]], I suppose,\" he sighs. \"It must've been tough, what with your Bumpy Face and everything.\"\n<<elseif visited (\"Wrong3\")>> \"This is completely wrong! How could you even get it so wrong? I know you're new to all this, but really!\"\nHe goes on muttering for [[quite some time|Return]].\n<<elseif visited (\"Right\")>> \"Fantastic! This is exactly what I asked for!\" He begins chewing the carrots into a paste almost immediately and you're forced to look away. \"The things we'll learn my dear Bumpy Face!\" You pretend not to notice the spattering of half-chewed carrot raining down on your face. \"The things we will learn!\"\n@@.tiny;[[Yay|Return]]@@\n<</if>>",
+      "links": [
+        {
+          "text": "back to his experiments",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        },
+        {
+          "text": "you tried",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        },
+        {
+          "text": "quite some time",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Yay",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "countryside",
+      "text": "You're sweating into your eyes and ears. You feel like you've got too much hair and not enough leg, and yet Mabel is all hair and no discernable leg and she's a [[speck on the horizon|Keep Going]]. \n\nYou're never going to catch up with her. You may as well head back to the riding school and [[wait|AwaitMabel]] for her to return.",
+      "links": [
+        {
+          "text": "speck on the horizon",
+          "destination": {
+            "name": "Keep Going",
+            "pid": 45
+          }
+        },
+        {
+          "text": "wait",
+          "destination": {
+            "name": "AwaitMabel",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "AwaitMabel",
+      "text": "<<set $horselove to $horselove -5>>\n<<if visited (\"countryside\")>><<set $horselove to $horselove -5>>\n<</if>>\nIt's a good couple of hours before Mabel returns. She trots into the courtyard, her coat glowing with health rather than the rivulets of sweat you might have expected.\n\nShe's obviously very fit, despite looking like a Malteser that rolled under the sofa.\n\nAs if reading your thoughts, she gives you a baleful look, [[slamming her stall door|Return]] behind her.\n\n\"Chanty wrassler,\" she mutters. \"Fucking nae e'en good enough fer chibbin w'a rusty tent peg.\"\n",
+      "links": [
+        {
+          "text": "slamming her stall door",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Keep Going",
+      "text": "All your organs are doing their best to fight their way out of your body. Your feet hurt. Your tongue's dry. But you're gaining on her, you're sure you're gaining on her.\n\nSee, she's right there.\n\nWaiting.\n\nWith her hoof out.\n\n[[Shit.]]",
+      "links": [
+        {
+          "text": "Shit.",
+          "destination": {
+            "name": "Shit.",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Shit.",
+      "text": "<<set $horselove to $horselove +10>>\nMabel trips you, and you go tumbling, tail over tit, rolling through the long grass until you slide to a stop on your face.\n\n\"Ow.\"\n\nWhen Mabel has done laughing, she helps you up.\n\n\"Ach, sorry pal,\" she says. \"I was fair affronted ye managed tae catch me, but I see naw yer fuckult. I shudnae been fartin aboot w'ye.\"\n\nYou try to speak, but your vocal chords are too busy panting right now. Mabel nips you affectionately.\n\n\"C'man cuddy,\" she tells you. \"Back tae mine fer a wash and a carrot. You're stinkin' and it's geein me the boak.\"\n\n[[\"Sure Mabel. That sounds nice.\"|Return]] You say, following her back to Happy Pony Valley.",
+      "links": [
+        {
+          "text": "\"Sure Mabel. That sounds nice.\"",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "watch",
+      "text": "<<set $horselove to $horselove +5>>\nYou settle yourself down comfortably outside the training ring and watch Mabel go through her routine. She's surprisingly graceful, and just her warm-up makes you feel tired. \n\nShe turns circles, trots on the spot and leaps through the air with ease. \n\n\"Shame we arnae allowed music,\" she tells you as you walk back to her stall. \"Ah'd be fair buzzin' to get mae metal on.\"\n\n[[You smile and nod.|Return]]",
+      "links": [
+        {
+          "text": "You smile and nod.",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "join in",
+      "text": "<<set $horselove to $horselove +10>>\nMabel gives a little squeal of delight and runs into the training ring. \n\n\"Follow me, Bawbag!\" she tells you, trotting out a perfect circle at one end of the ring. \"Can ye dae this?\"\n\nShe rears up on her hind legs.\n\n\"Well, you see-\" \n\n\"Hae aboot this?\" She puts her head between her front knees and throws her hind legs high into the air.\n\n\"I mean, if-\"\n\n\"Shut yer geggie and move yer leggies!\"\n\n[[It does look kinda fun...|Return]]\n\n\"Gaun yerself!\" Mabel whoops.",
+      "links": [
+        {
+          "text": "It does look kinda fun...",
+          "destination": {
+            "name": "Return",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "tomorrow",
+      "text": "<img src=\"images/sunrise.jpg\" style=\"width: 50%; border: 2px silver solid;\" media=\"(max-width: 1280px)\"/>\n\n//What a beautiful [[sunrise.]]//\n",
+      "links": [
+        {
+          "text": "sunrise.",
+          "destination": {
+            "name": "sunrise.",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "sunrise.",
+      "text": "You awake with ears full of straw after an uncomfortable night spent in the haybarn.\n\n<<if $horselove < 5>> $horse_chosen's [[stable is empty|stable empty]]. \n\n<<elseif $horse_chosen is \"Duncan\">> Duncan has spent the night preparing. He's drawn a pattern like a spirograph on the floor of his stall in- \n\"Is that poop?\" You ask.\nHe ignores the question. \"Think you can memorise this?\"\nIt's [[doubtful|Flee]] but [[you'll try|Queen]].\n\n<<elseif $horse_chosen is \"Gladys\">> Gladys waiting with a pot of glitter balanced on the edge of her stall door. \n\n\"What're you...?\"\n\n\"You need glitter,\" she explains, making as if to knock it all over you. \n\n[[\"No WAY!\"|Flee]] You could say. Or just [[go with it.|Queen]]\n\n<<elseif $horse_chosen is \"Mabel\">> Mabel doing laps of the courtyard.\n\n\"Get wie the program bawbag,\" she tells you. \"Let's [[show the ol' duffer what we made of|Queen]] eh?\" Or you could always... [[not.|Flee]]\n<</if>>\n\n",
+      "links": [
+        {
+          "text": "stable is empty",
+          "destination": {
+            "name": "stable empty",
+            "pid": 53
+          }
+        },
+        {
+          "text": "doubtful",
+          "destination": {
+            "name": "Flee",
+            "pid": 52
+          }
+        },
+        {
+          "text": "you'll try",
+          "destination": {
+            "name": "Queen",
+            "pid": 51
+          }
+        },
+        {
+          "text": "\"No WAY!\"",
+          "destination": {
+            "name": "Flee",
+            "pid": 52
+          }
+        },
+        {
+          "text": "go with it.",
+          "destination": {
+            "name": "Queen",
+            "pid": 51
+          }
+        },
+        {
+          "text": "show the ol' duffer what we made of",
+          "destination": {
+            "name": "Queen",
+            "pid": 51
+          }
+        },
+        {
+          "text": "not.",
+          "destination": {
+            "name": "Flee",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Queen",
+      "text": "There's a huge crowd surrounding the schooling ring. The queen sits in a royal box, her crown slightly askew. She looks a little bored, but she perks up <<if $horse_chosen is \"\">> when you trot into the ring.<<elseif $horse_chosen is \"Duncan\" or $horse_chosen is \"Gladys\" or $horse_chosen is \"Mabel\">> as you trot into the ring behind $horse_chosen.\n<</if>>\n\n[[Silence descends.|ring]]",
+      "links": [
+        {
+          "text": "Silence descends.",
+          "destination": {
+            "name": "ring",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Flee",
+      "text": "You know what? You've had about enough of this. It seems your Mum was right after all. You don't fit in around horses and you never will. The other donkeys will never let you live this down, but what other choice do you have? Back to giving rides to overweight tourists it is.\n\nHow eeyoreful! (Sorry.)\n\nYou leap the fence with a power born of fury and gallop away, back to the Pleasure Beach, the most untruthful name a place has ever been given.\n\n//THE END//",
+      "links": []
+    },
+    {
+      "pid": 53,
+      "name": "stable empty",
+      "text": "<<set $horse_chosen to \"\">>\nLooks like you're [[going this alone|Queen]]. If you're [[going it at all|Flee]].",
+      "links": [
+        {
+          "text": "going this alone",
+          "destination": {
+            "name": "Queen",
+            "pid": 51
+          }
+        },
+        {
+          "text": "going it at all",
+          "destination": {
+            "name": "Flee",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "ring",
+      "text": "<<if $horse_chosen is \"Duncan\">> You set off in the opposite direction to Duncan, trying to remember the complex pattern of circles, straights and figure eights from his poop drawing.\n\nThere's [[muttering|insult]] from the crowd as your tiny legs attempt to keep pace with his long strides.\n\n<<elseif $horse_chosen is \"Gladys\">> You strut to the centre of the ring by Gladys' side, worried that the bows in your mane may have been one accessory too far. The glitter is fantastic, you have to agree with Gladys on that, but the bows? Your mane is too short and tufty and what if they fall out? It'll [[destroy your whole aesthetic.|insult]]\n\n<<elseif $horse_chosen is \"Mabel\">> You can't hope to be as athletic as Mabel, so you act as her cheerleader instead. \"Give it up for Mabel!\" you bray, trotting around the edge of the ring as she prances down the centre line.\n\nThe crowd goes from absolute silence to agitated [[murmuring|insult]]. \n\n<<else>> You immediately feel like this was a mistake. All those pairs of eyes on you, all those disapproving tuts and intakes of breath as you [[trip over your hooves|insult]] on entering the arena.\n<</if>>",
+      "links": [
+        {
+          "text": "muttering",
+          "destination": {
+            "name": "insult",
+            "pid": 55
+          }
+        },
+        {
+          "text": "destroy your whole aesthetic.",
+          "destination": {
+            "name": "insult",
+            "pid": 55
+          }
+        },
+        {
+          "text": "murmuring",
+          "destination": {
+            "name": "insult",
+            "pid": 55
+          }
+        },
+        {
+          "text": "trip over your hooves",
+          "destination": {
+            "name": "insult",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "insult",
+      "text": "Someone in the crowd yells:\n<<if $horse_chosen is \"Duncan\">> \"What's that donkey's problem?! It's like its legs aren't as long as a shire horse's or something!\"\n<<elseif $horse_chosen is \"Gladys\">> \"I was enjoying this routine, but that donkey is destroying the whole aesthetic!\"\n<<elseif $horse_chosen is \"Mabel\">> \"That donkey's voice makes my ears angry!\"\n<<else>> \"Who wants to see a donkey doing dressage? Not this dressage fan, that's for sure!\"\n<</if>>\nThe queen flinches. It seems //she// <<print either (\"loves\",\"hates\")>> your performance.\n\nYou don't know what to do. <<if $horse_chosen is \"\">> [[You've had it with these people.|Flee]] You'll never [[win]] with them, will you?\n\n<<else>> [[This might have been a mistake.|Flee]] But it looks like $horse_chosen has [[something to say|HorseReact]]...\n<</if>>",
+      "links": [
+        {
+          "text": "You've had it with these people.",
+          "destination": {
+            "name": "Flee",
+            "pid": 52
+          }
+        },
+        {
+          "text": "win",
+          "destination": {
+            "name": "win",
+            "pid": 56
+          }
+        },
+        {
+          "text": "This might have been a mistake.",
+          "destination": {
+            "name": "Flee",
+            "pid": 52
+          }
+        },
+        {
+          "text": "something to say",
+          "destination": {
+            "name": "HorseReact",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "win",
+      "text": "\n\nSomething inside you clicks. <<if $horse_chosen is \"Duncan\" or $horse_chosen is \"Gladys\" or $horse_chosen is \"Mabel\">>$horse_chosen is right. <</if>>It doesn't matter whether the weird stablehand mistook you for someone else, it doesn't matter whether a human monarch loves or hates your performance, what matters is that [[you, a little donkey|donkey]], are here, an international dressage competition held at a riding school and attended by the queen for some reason.\n\nThis is what you used to dream about as you trudged along the beach, a small child's sandals thudding at your sides, their ice cream dripping on the nape of your neck. Well, not this precisely. But something, anything other than that monotonous life.\n\nYou've already achieved so much more than you ever thought possible. <<if $horse_chosen is \"Duncan\" or $horse_chosen is \"Gladys\" or $horse_chosen is \"Mabel\">>You kick up your hooves and freestyle all around the arena, which $horse_chosen seems to approve of inspite of $horse_himher.<</if>> And it doesn't matter how the queen responds, or how the audience responds, what matters is that you are here, now, free and no-one gets to name you $fakename or anything else equally silly.\n\nThat'll do, donkey. That'll do.\n\n//THE END//",
+      "links": [
+        {
+          "text": "you, a little donkey",
+          "destination": {
+            "name": "donkey",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "HorseReact",
+      "text": "<<if $horselove >=15 and $horse_chosen is \"Duncan\">>\n\"Bumpyface!\" Duncan's voice booms across the ring. \"The monarchy is an outdated mode of hierarchy and as such the opinion of a queen, positive or otherwise, should have no bearing on your sense of self-worth. (No offense ma'am.) So pull yourself up by those big furry lugholes and remember that [[routine|win]] I so painstakingly scratched out in my faeces!\"\n<<elseif $horselove >=15 and $horse_chosen is \"Gladys\">>\n\"Having a crown is all well and good,\" Gladys hisses out of the corner of her mouth without breaking her stride. \"But- pirouette, pirrouette- it takes more than that to be a QUEEN. And you, my dear donkey, [[you have what it takes|win]].\"\n<<elseif $horselove >=15 and $horse_chosen is \"Mabel\">>\n\"She ent mah Queen, cuddy!\" Mabel yells, coming to a dead stop so  that you almost run into the back of her. Mabel narrows her eyes and turns to face the human monarch. \"And she ent yours neither. We perform for a heer power, cuddy, a power she cannae take away from ye: the power o' FREEEEEDOM!\" And she kicks up her heels and is off again, leaving you with no choice but to [[follow suit|win]].\n<<else>>\nOh.\nNo.\nSorry.\nMy mistake. \n$horse_chosen didn't have anything to say to you.\n[[As you were.|Flee]]\n<</if>>",
+      "links": [
+        {
+          "text": "routine",
+          "destination": {
+            "name": "win",
+            "pid": 56
+          }
+        },
+        {
+          "text": "you have what it takes",
+          "destination": {
+            "name": "win",
+            "pid": 56
+          }
+        },
+        {
+          "text": "follow suit",
+          "destination": {
+            "name": "win",
+            "pid": 56
+          }
+        },
+        {
+          "text": "As you were.",
+          "destination": {
+            "name": "Flee",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "donkey",
+      "text": "<img src=\"images/donkey.jpg\" style=\"width: 50%; border: 2px silver solid;\" media=\"(max-width: 1280px)\"/>\n\nThat's you, that is.\n\n[[Back|win]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "win",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "StoryCaption",
+      "text": "[[Acknowledgements & Inspirations|Acknowledgements]]\n[[Credits]]",
+      "links": [
+        {
+          "text": "Acknowledgements & Inspirations",
+          "destination": {
+            "name": "Acknowledgements",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Acknowledgements",
+      "text": "_Acknowledgements_\nIt wouldn't have been possible to make this without [[Adam Hammond's invaluable Twine Guide|http://www.adamhammond.com/twineguide/]], the excellent discussions had with my fellow [[Hello Words members|https://medium.com/hello-words]], and Sheffield Hallam University's extremely useful [[Twine workshop|https://readingdigitalfiction.com/2017/02/02/introduction-to-digital-fiction-and-twine/]]\n\n_Inspirations_\nComedian Janey Godley was the inspiration behind Mabel the Shetland (although Thelwells have something to answer for there too). You should find her stand up and watch it, it's hilarious.\n",
+      "links": []
+    },
+    {
+      "pid": 61,
+      "name": "Credits",
+      "text": "_Credits_\nAll images are are used under a Creative Commons Zero License and are from [[Unsplash|https://unsplash.com/]] by the following photographers (my image titles, not theirs!) and :\n'Gladys' photo by [[Elijah Henderson|https://unsplash.com/@elijahhenderson]]\n'Duncan' & 'You' photos by [[Annie Spratt|https://unsplash.com/@anniespratt]]\n'Hills of Happy Pony Valley' photo by [[Matt Benson|https://unsplash.com/@mattgyver]]\n'Mabel' photo by [[Benny Jackson|https://unsplash.com/@themightymerlin]]\n'Sunrise' photo by [[Azrul Aziz|https://unsplash.com/@roy23]]\nApart from the 'Plait' photo, which is from Pixabay, and is by  [[BRRT|https://pixabay.com/en/users/BRRT-122519/]] (also under a Creative Commons Zero License.)\n",
+      "links": []
+    }
+  ]
+}

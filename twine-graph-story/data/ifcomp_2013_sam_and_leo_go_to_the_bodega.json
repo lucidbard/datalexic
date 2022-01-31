@@ -1,0 +1,1854 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "ADONE",
+      "text": "@@color:red;\"No,\" Leo says to Sam. \"We already got cookies. We can't get more cookies.\"\\n\\nSam nods and they stumble out of the aisle.\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "BCHOICE",
+      "text": "@@color:red;Of interest to Sam and Leo are the following items:\\n\\n[[>Mexican Coke|BP1]]\\n[[>Snapple|BG1]]\\n[[>Malt liquor|BO1]]\\n[[>Yuengling lager|BB1]]@@",
+      "links": [
+        {
+          "text": ">Mexican Coke",
+          "destination": {
+            "name": "BP1",
+            "pid": 107
+          }
+        },
+        {
+          "text": ">Snapple",
+          "destination": {
+            "name": "BG1",
+            "pid": 27
+          }
+        },
+        {
+          "text": ">Malt liquor",
+          "destination": {
+            "name": "BO1",
+            "pid": 24
+          }
+        },
+        {
+          "text": ">Yuengling lager",
+          "destination": {
+            "name": "BB1",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "BG",
+      "text": "<<silently>>\\n<<set $BG = false>>\\n<<endsilently>>\\n@@color:green;You ring up a bottle of Snapple. \"A duck's quack doesn't echo,\" the fat one says, \"and no one knows why.@@",
+      "links": []
+    },
+    {
+      "pid": 4,
+      "name": "BB",
+      "text": "<<silently>>\\n<<set $BB = false>>\\n<<endsilently>>\\n@@color:blue;You ring up a six-pack of Yuengling. \"We had to go digging through the darkest depths of your fridge for this,\" the ugly one says.@@",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "AP2",
+      "text": "@@color:purple;\"Total bullshit,\" Sam said. He was dangerously stoned, was drowning his sorrows in snack cakes and weed, a poor man's debauch. \"It's a fucking office. I can clean a fucking office.\"\\n\\n\"Drug testing is big business and we live in a conservative world.\"\\n\\n\"Jesus,\" Sam said. \"Don't you think if I could handle sobriety that I fucking //would//?\\n\\n[[>Next|AP3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "AP3",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "AP3",
+      "text": "<<silently>>\\n<<set $GOTA = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $AP = true>>\\n<<endsilently>>\\n@@color:purple;\"Which one of us is gonna die first?\" Sam asks. \"You'd think it'd be me, but Siskel died of a heart attack in '93. Is the universe logical or ironic?\"\\n\\n\"Stop eating those Cosmic Brownies.\" Sam ignores him.\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "AP1",
+      "text": "@@color:purple;Sam is staring at something labeled a Cosmic Brownie, a chocolate-flavored mass sprinkled with tiny, colorful candy balls. \"Goddamn //delicious//.\"\\n\\n\"You're only saying that cause you're stoned,\" Leo says. But the tiny candy balls //are// colorful.\\n\\n[[>Next|AP2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "AP2",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "BP",
+      "text": "<<silently>>\\n<<set $BP = false>>\\n<<endsilently>>\\n@@color:purple;You ring up a bottle of soda. \"You know, we used to be so fucking naive we thought asking for this was racist,\" the fat one says.@@",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "DB1",
+      "text": "@@color:blue;Leo reaches in. \"Fuck's sake,\" he says, rolling up his sleeve. Sam watches as Leo's skin develops gooseflesh before his eyes. \"I am fucking tripping face right now, ladies and gentlemen, and I do not care what kind of ice cream I have.\"\\n\\n[[>Next|DB2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DB2",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "DB3",
+      "text": "<<silently>>\\n<<set $GOTD = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $DB = true>>\\n<<endsilently>>\\n@@color:blue;Leo emerges. \"Cookie dough,\" he says. \"Some day we're gonna get a brand new flavor, and my friend, that flavor is going to be amazing, and it will change how we eat ice cream forever.\"\\n\\n\"But until then?\"\\n\\n\"Until then, we got cookie dough.\"\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "DB2",
+      "text": "@@color:blue;If Leo needed the room for sex, he'd present Sam with a joint and a pint of Ben and Jerry's which the latter would happily take to the living room. In their last year at Valhalla, the living room was filled with strangers. Sam would hang out in the hallway with a book and headphones.\\n\\n[[>Next|DB3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DB3",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "ASECOND",
+      "text": "@@color:red;None of the cookie boxes catch Sam's eye. No cartoon characters, no particular color, just pictures of the cookies. \"Don't worry, man,\" Leo says. \"I'm sure any kind will be delicious.\" \\n\\n\"I want to pick a pretty one. It's important.\"\\n\\n[[>Next|ACHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "ACHOICE",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "CP",
+      "text": "<<silently>>\\n<<set $CP = false>>\\n<<endsilently>>\\n@@color:purple;You ring up a bag of onion rings. \"I can't believe we're getting those,\" the fat one says. \"Those are gross as hell.\"@@",
+      "links": []
+    },
+    {
+      "pid": 14,
+      "name": "title",
+      "text": "@@font:50px arial,sans-serif;color:red;''SAM AND LEO \\nGO TO \\nTHE BODEGA''@@\\n@@font:25px arial,sans-serif;color:red;''by Richard Goodness''@@\\n<<set $SNACKS = 0>>\\n[[>Start|aisle]]\\n[[>About|about]]",
+      "links": [
+        {
+          "text": ">Start",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        },
+        {
+          "text": ">About",
+          "destination": {
+            "name": "about",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "AFOURTH",
+      "text": "@@color:red;\"I'm getting bored with cookies,\" Sam says. \"They were exciting when I was a kid and when I first started smoking pot, but now they're just a kind of Thing. That I eat. Because of a compulsion. I don't enjoy them. I don't want to eat them.\"\\n\\n\"So,\" Leo says, \"Don't.\"\\n\\n\"But I can't help myself.\"\\n\\n[[>Next|ACHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "ACHOICE",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "CHECKOUT",
+      "text": "@@color:red;\"We ready?\" Sam asks.\\n\\nLeo nods.\\n\\n[[>Next|endgame]]",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "endgame",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "BO",
+      "text": "<<silently>>\\n<<set $BO = false>>\\n<<endsilently>>\\n@@color:orange;You ring up a few bottles of malt liquor. \"If Tim walks in, we should ask him to join us,\" the ugly one says.@@",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "D",
+      "text": "<<if $GOTD>>\\n<<display DDONE>>\\n<<endif>>\\n<<if not $GOTD and $SNACKS eq 0>>\\n<<display DFIRST>>\\n<<endif>>\\n<<if not $GOTD and $SNACKS eq 1>>\\n<<display DSECOND>>\\n<<endif>>\\n<<if not $GOTD and $SNACKS eq 2>>\\n<<display DTHIRD>>\\n<<endif>>\\n<<if not $GOTD and $SNACKS eq 3>>\\n<<display DFOURTH>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "DDONE",
+            "pid": 41
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "DFIRST",
+            "pid": 19
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "DSECOND",
+            "pid": 99
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "DTHIRD",
+            "pid": 101
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "DFOURTH",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "DFIRST",
+      "text": "@@color:red;\"BOYCOTT FLORIDA\" says a poster next to the ice cream freezer. \"TRAYVON WAS ALL OF US\".\\n\\n\"What's that mean?\" Sam asks.\\n\\n\"Unity,\" Leo says. \"Solidarity. All of that.\"\\n\\n\"How can I boycott Florida? I can't afford vacation. How can anyone afford vacation?\"\\n\\n[[>Next|DCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DCHOICE",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "AO3",
+      "text": "<<silently>>\\n<<set $GOTA = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $AO = true>>\\n<<endsilently>>\\n@@color:orange;Sam clutches a box of graham crackers like a doll. \"We should make s'mores.\"\\n\\n\"We don't have a bonfire.\"\\n\\n\"We could make one.\"\\n\\n\"In the apartment?\"\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "AO2",
+      "text": "@@color:orange;After the s'mores had all been eaten Sam ate the rest of the graham crackers. \"You're gonna get hungry,\" Leo said. He rubbed Sam's shoulder.\\n\\nGina appeared. \"Did you--get my brother high?\" she asked, and Leo's face went white.\\n\\n\"Oh, shit,\" Sam said. \"You live with my sister!\"\\n\\n[[>Next|AO3]]",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "AO3",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "AO1",
+      "text": "@@color:orange;\"The graham cracker was invented to curb masturbation,\" Leo says. \"Hey, maybe that explains you. Did you eat a lot of corn flakes as a kid?\"\\n\\nSam thinks. \"Doesn't seem likely. I'm just built weird.\"\\n\\n[[>Next|AO2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "AO2",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "FIRST",
+      "text": "@@color:red;The music playing in the bodega is a jaunty number melismatically and athletically sung by, for all Leo knows, Bahrain's Taylor Swift. \"Is this autotune or some kind of semitone shit?\" he asks, but Sam has no idea.\\n\\nSam and Leo stumble to the:\\n\\n[[>Cookies|A]]\\n[[>Drinks fridge|B]]\\n[[>Chips section|C]]\\n[[>Ice cream freezer|D]]@@",
+      "links": [
+        {
+          "text": ">Cookies",
+          "destination": {
+            "name": "A",
+            "pid": 94
+          }
+        },
+        {
+          "text": ">Drinks fridge",
+          "destination": {
+            "name": "B",
+            "pid": 65
+          }
+        },
+        {
+          "text": ">Chips section",
+          "destination": {
+            "name": "C",
+            "pid": 43
+          }
+        },
+        {
+          "text": ">Ice cream freezer",
+          "destination": {
+            "name": "D",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "BO1",
+      "text": "@@color:orange;\"Now this,\" Leo says, pointing to a bottle of Colt 45, \"works EVERY time.\"\\n\\n\"What does it work for?\" Sam asks. \"Polishing furniture? Inducing vomiting? Drowning children?\" A woman gives Sam a look, which he returns. \\n\\n[[>Next|BO2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BO2",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "BO2",
+      "text": "@@color:orange;\"Todd doesn't let me smoke in the room and he's kind of a douchebag,\" Leo said. \"He's Vince's friend and I moved in the room when Leo and Gina took the big room. At least he's leaving soon.\" Todd, a 40 duct taped to each hand, was attempting to enlist someone to unzip his fly and hold his dick while he pissed. \"I'd be happy to do it for him, but he's never grateful enough.\"\\n\\n[[>Next|BO3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BO3",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "BO3",
+      "text": "<<silently>>\\n<<set $GOTB = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $BO = true>>\\n<<endsilently>>\\n@@color:orange;\"I'm a grateful fucking grapefruit to you,\" Sam says. He grabs two 40s.\\n\\n\"We can't both play,\" Leo says. \"Who's gonna unzip our flies?\"\\n\\n\"We could do it naked.\"\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "BG1",
+      "text": "@@color:green;\"Is this really made from the best stuff on earth?\" Sam asks.\\n\\nLeo looks at the ingredients. \"No pot. No gold. No pussy. No cock. Water, I'll give it that. It's made from 'some' of the best stuff on earth.\"\\n\\n[[>Next|BG2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BG2",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "BG2",
+      "text": "@@color:green;Gina left at 6:30; in exchange for the ride Sam would go in to Quick Chek and pick up breakfast, coffee for him, Snapple for her, egg sandwiches for both. He woke at five and sucked down a bowl and a half. Leo woke at noon, finished the bowl, smoked half of another which Sam would enjoy when he returned home at 5:30. They spent Sundays and Monday evenings together.\\n\\n[[>Next|BG3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BG3",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "BG3",
+      "text": "<<silently>>\\n<<set $GOTB = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $BG = true>>\\n<<endsilently>>\\n@@color:green;\"//A duck's quack doesn't echo//,\" Sam says, \"//and no one knows why//.\"\\n\\n\"Confucious? Sun Tzu?\"\\n\\n\"Snapple Facts. A monk achieved enlightenment. And all of the other monks asked him, 'How do you feel?'\"\\n\\n\"And what did this monk say?\"\\n\\n\"'I'm as miserable as ever.'\" Sam shakes the bottle.\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "CP1",
+      "text": "@@color:purple;\"We can make one of those string bean casseroles,\" Sam says holding up a bag of fried onion rings.\\n\\n\"Carrie made one at Christmas,\" Leo says. \"It wasn't bad.\"\\n\\n\"Wow, his wife is //so// much classier than Gina, isn't she?\"\\n\\n[[>Next|CP2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CP2",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "CP2",
+      "text": "@@color:purple;Vince and Carrie were coating poi in kerosene. Leo found himself chatting to an intimidating dirtbag who turned out to be terrifyingly friendly. \"Vince and I are friends,\" Benny said, \"but a performance like this, I'm here on business.\" He opened his messenger bag and Leo, who had at least $60 on him, grinned.\\n\\n[[>Next|CP3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CP3",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "CP3",
+      "text": "<<silently>>\\n<<set $GOTC = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $CP = true>>\\n<<endsilently>>\\n@@color:purple;\"You should come by Vince's sometime,\" Leo says. \"He'd love to see you.\"\\n\\n\"This is a really bad time to be talking about this,\" Sam says. \"Here I am ready to buy some fried onions and you're //talking//.\"\\n\\n\"Fuck you.\" Leo grabs the bag, but by the time he's out of the aisle, he and Sam have forgotten the entire conversation.\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "AG3",
+      "text": "<<silently>>\\n<<set $GOTA = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $AG = true>>\\n<<endsilently>>\\n@@color:green;Sam shakes Leo awake. \"You've been staring at those cookies for four hours.\" He looks at the package Leo holds. \"Gina always makes the best cookies.\"\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "AG2",
+      "text": "@@color:green;God damn Sam's sister: Cookies, no milk, and a move by date. \"Yo, things just weren't working out with Amy and me,\" he said, crumbs spraying. \"That's not my fucking fault.\"\\n\\n\"You know,\" Gina said, \"It'd be different if you and Sam were--\"\\n\\n\"//Famiglia//?\" Leo asked, giggling. He grabbed three cookies and stood.\\n\\n[[>Next|AG3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "AG3",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "AG1",
+      "text": "@@color:green;Leo points to the bargain cookies. \"An evening's worth of independently-produced cookies. Why does supporting small business taste like sweet sawdust compared to Nabisco?\"\\n\\n\"Taste versus moral responsibility?\"\\n\\n\"Cookies are fraught with ethical dillemmas.\"\\n\\n[[>Next|AG2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "AG2",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "BFIRST",
+      "text": "@@color:red;Sam and Leo stumble to the drinks fridge. Leo leans against it, breathes out, fogs it up, and draws a smiley face . \"I feel the same way, man,\" he says to the image.\\n\\n[[>Next|BCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BCHOICE",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "CB2",
+      "text": "@@color:blue;\"Why the fuck are we here?\" Sam said.\\n\\nLeo hooked a finger, grabbed the pretzel bowl, and shrugged. \"We're not the first pair of guys to hang around their college town. Isn't it just so much fun?\"\\n\\nSam stared into his pint. \"Shit's gotta change, you know?\"\\n\\n[[>Next|CB3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CB3",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "CB3",
+      "text": "<<silently>>\\n<<set $GOTC = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $CB = true>>\\n<<endsilently>>\\n@@color:blue;Leo has a bag of hot mustard and sweet onion pretzel bits. \"Spicy, salty, and just a little bit of sweet tang.\"\\n\\n\"Yeah, and when it comes to sweet tang, you're not gonna get any if you keep eating shit like that.\"\\n\\n\"Hey, bro, you've never complained once about my breath.\"\\n\\n[[>Next|aisle]]@@\\n",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "CB1",
+      "text": "@@color:blue;\"My mom always used to give Gina and me pretzel sticks with our lunch,\" Sam says. \"I think she thought they were healthy or something.\"\\n\\nLeo examines the bag. \"You gotta look at the calories.\"\\n\\n\"Why?\" Sam grabs one of his tits, and squeezes. \"I'm a big guy,\" he says. \"Nothing's gonna change that.\"\\n\\n[[>Next|CB2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CB2",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "FINAL",
+      "text": "@@color:black;Our boys Sam and Leo are fine. They go home, they eat what they got, they watch some TV, they live their lives. They get hit by no cars, fight with no street thugs, and get arrested by no cops.\\n\\nThis is not a tragedy.\\n\\n[[>Take another trip|aisle]]\\n[[>Lie down for a while|credits]]",
+      "links": [
+        {
+          "text": ">Take another trip",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        },
+        {
+          "text": ">Lie down for a while",
+          "destination": {
+            "name": "credits",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "DDONE",
+      "text": "@@color:red;\"Man,\" Sam says, \"I remember the days I could just eat ice cream and not feel it. I'm gonna get one fuck of a stomachache if I get more.\"\\n\\n\"Then, let's not,\" Leo says.\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "CDONE",
+      "text": "@@color:red;\"We don't need more chips,\" Sam says. \"We got chips already.\"\\n\\n\"Look, bro, just because you don't like them--\" But at this point, Sam is dragging him away.\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "C",
+      "text": "<<if $GOTC>>\\n<<display CDONE>>\\n<<endif>>\\n<<if not $GOTC and $SNACKS eq 0>>\\n<<display CFIRST>>\\n<<endif>>\\n<<if not $GOTC and $SNACKS eq 1>>\\n<<display CSECOND>>\\n<<endif>>\\n<<if not $GOTC and $SNACKS eq 2>>\\n<<display CTHIRD>>\\n<<endif>>\\n<<if not $GOTC and $SNACKS eq 3>>\\n<<display CFOURTH>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "CDONE",
+            "pid": 42
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "CFIRST",
+            "pid": 50
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "CSECOND",
+            "pid": 58
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "CTHIRD",
+            "pid": 97
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "CFOURTH",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "THIRD",
+      "text": "@@color:red;\"So this is our kingdom, eh?\" Sam says, indicating the bodega.\\n\\n\"I would say so,\" Leo says. He smiles. \"The world is ours.\"\\n\\nSam and Leo stumble to the:\\n\\n[[>Cookies|A]]\\n[[>Drinks fridge|B]]\\n[[>Chips section|C]]\\n[[>Ice cream freezer|D]]@@",
+      "links": [
+        {
+          "text": ">Cookies",
+          "destination": {
+            "name": "A",
+            "pid": 94
+          }
+        },
+        {
+          "text": ">Drinks fridge",
+          "destination": {
+            "name": "B",
+            "pid": 65
+          }
+        },
+        {
+          "text": ">Chips section",
+          "destination": {
+            "name": "C",
+            "pid": 43
+          }
+        },
+        {
+          "text": ">Ice cream freezer",
+          "destination": {
+            "name": "D",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "credits",
+      "text": "@@color:black;font:12px arial,sans-serif;copyright 2013 richard goodness\\nrichardgoodness.wordpress.com@@",
+      "links": []
+    },
+    {
+      "pid": 46,
+      "name": "CCHOICE",
+      "text": "@@color:red;Of interest to Sam and Leo are the following items:\\n\\n[[>Doritos|CO1]]\\n[[>Popcorn|CG1]]\\n[[>Onion rings|CP1]]\\n[[>Pretzels|CB1]]@@",
+      "links": [
+        {
+          "text": ">Doritos",
+          "destination": {
+            "name": "CO1",
+            "pid": 77
+          }
+        },
+        {
+          "text": ">Popcorn",
+          "destination": {
+            "name": "CG1",
+            "pid": 74
+          }
+        },
+        {
+          "text": ">Onion rings",
+          "destination": {
+            "name": "CP1",
+            "pid": 30
+          }
+        },
+        {
+          "text": ">Pretzels",
+          "destination": {
+            "name": "CB1",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "CSS",
+      "text": ".passage { width: 600px !important }\\ndiv\\n{\\ntext-align:justify;\\ntext-justify:inter-word;\\n}\\n#passages { margin-left: 0 !important; border-left: 0; padding-left: 0; }\\n#sidebar { display: none; }\\n#passages {background-color:white;}\\na:Link {color:black ;}\\na.Link {font:15px arial,sans-serif ;}\\na.internalLink:hover,a.externalLink:hover,a.back:hover {color:black !important;}\\n#passages {font:14px arial,sans-serif;}\\nhtml, body { height:100%; margin-top: 0 !important; } #passages { display:table; height:100%; } .passage { display: table-cell; vertical-align:middle; }\\nbody {background-color:white !important}\\n",
+      "links": []
+    },
+    {
+      "pid": 48,
+      "name": "aisle",
+      "text": "<<if $SNACKS eq 0>>\\n<<display FIRST>>\\n<<endif>>\\n<<if $SNACKS eq 1>>\\n<<display SECOND>>\\n<<endif>>\\n<<if $SNACKS eq 2>>\\n<<display THIRD>>\\n<<endif>>\\n<<if $SNACKS eq 3>>\\n<<display FOURTH>>\\n<<endif>>\\n<<if $SNACKS eq 4>>\\n<<display CHECKOUT>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "FIRST",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "SECOND",
+            "pid": 72
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "THIRD",
+            "pid": 44
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "FOURTH",
+            "pid": 55
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "CHECKOUT",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "about",
+      "text": "@@color:red;Sam and Leo Go To The Bodega was written between August 13, 2013 and September 24, 2013.\\n\\nFunding was generously provided by Ryan Kincaid, Robb Sherwin, Nick Hahneman, and He-Knows-Who-He-Is.\\n\\nBeta testing was performed by Ryan Kincaid, Eric Brasure, and John Swinson. \\n\\n\"Peckin'\" is from the 1981 collection //A Light In The Attic// by Shel Silverstein.\\n\\nrichardgoodness.wordpress.com\\n@richardgoodness\\nrgoodness@gmail.com\\n\\n[[>Back|title]]",
+      "links": [
+        {
+          "text": ">Back",
+          "destination": {
+            "name": "title",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "CFIRST",
+      "text": "@@color:red;One brand of chips has a shiny silver panel on the bag. \"I've never had a mirror conversation,\" he says. \"I stare at it and he never says anything.\"\\n\\n\"Why don't you start the conversation first? Maybe he's waiting for you to make the first move.\"\\n\\n[[>Next|CCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CCHOICE",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "CHECKD",
+      "text": "<<if $DO eq true>>\\n<<display DO>>\\n<<endif>>\\n<<if $DB eq true>>\\n<<display DB>>\\n<<endif>>\\n<<if $DG eq true>>\\n<<display DG>>\\n<<endif>>\\n<<if $DP eq true>>\\n<<display DP>>\\n<<endif>>\\n\\n@@color:black;You:\\n\\n[[>Nod|FINAL]]\\n[[>Smile|FINAL]]@@",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "DO",
+            "pid": 56
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "DB",
+            "pid": 87
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "DG",
+            "pid": 86
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "DP",
+            "pid": 89
+          }
+        },
+        {
+          "text": ">Nod",
+          "destination": {
+            "name": "FINAL",
+            "pid": 40
+          }
+        },
+        {
+          "text": ">Smile",
+          "destination": {
+            "name": "FINAL",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "CHECKB",
+      "text": "<<if $BO eq true>>\\n<<display BO>>\\n<<endif>>\\n<<if $BB eq true>>\\n<<display BB>>\\n<<endif>>\\n<<if $BG eq true>>\\n<<display BG>>\\n<<endif>>\\n<<if $BP eq true>>\\n<<display BP>>\\n<<endif>>\\n\\n@@color:black;You:\\n\\n[[>Nod|CHECKC]]\\n[[>Smile|CHECKC]]@@",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "BO",
+            "pid": 17
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "BB",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "BG",
+            "pid": 3
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "BP",
+            "pid": 8
+          }
+        },
+        {
+          "text": ">Nod",
+          "destination": {
+            "name": "CHECKC",
+            "pid": 53
+          }
+        },
+        {
+          "text": ">Smile",
+          "destination": {
+            "name": "CHECKC",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "CHECKC",
+      "text": "<<if $CO eq true>>\\n<<display CO>>\\n<<endif>>\\n<<if $CB eq true>>\\n<<display CB>>\\n<<endif>>\\n<<if $CG eq true>>\\n<<display CG>>\\n<<endif>>\\n<<if $CP eq true>>\\n<<display CP>>\\n<<endif>>\\n\\n@@color:black;You:\\n\\n[[>Nod|CHECKD]]\\n[[>Smile|CHECKD]]@@",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "CO",
+            "pid": 66
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "CB",
+            "pid": 67
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "CG",
+            "pid": 69
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "CP",
+            "pid": 13
+          }
+        },
+        {
+          "text": ">Nod",
+          "destination": {
+            "name": "CHECKD",
+            "pid": 51
+          }
+        },
+        {
+          "text": ">Smile",
+          "destination": {
+            "name": "CHECKD",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "CHECKA",
+      "text": "<<if $AO eq true>>\\n<<display AO>>\\n<<endif>>\\n<<if $AB eq true>>\\n<<display AB>>\\n<<endif>>\\n<<if $AG eq true>>\\n<<display AG>>\\n<<endif>>\\n<<if $AP eq true>>\\n<<display AP>>\\n<<endif>>\\n\\n@@color:black;You:\\n\\n[[>Nod|CHECKB]]\\n[[>Smile|CHECKB]]@@",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "AO",
+            "pid": 98
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "AB",
+            "pid": 95
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "AG",
+            "pid": 96
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "AP",
+            "pid": 100
+          }
+        },
+        {
+          "text": ">Nod",
+          "destination": {
+            "name": "CHECKB",
+            "pid": 52
+          }
+        },
+        {
+          "text": ">Smile",
+          "destination": {
+            "name": "CHECKB",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "FOURTH",
+      "text": "@@color:red;\"Oh god oh god\" Leo says. He squints at the lights. \"It's so bright.\"\\n\\n\"Do not fucking freak out at me,\" Sam says.\\n\\n\"Dude, I'm fine,\" Leo says. \"My eyes just hurt.\"\\n\\nSam and Leo stumble to the:\\n\\n[[>Cookies|A]]\\n[[>Drinks fridge|B]]\\n[[>Chips section|C]]\\n[[>Ice cream freezer|D]]@@",
+      "links": [
+        {
+          "text": ">Cookies",
+          "destination": {
+            "name": "A",
+            "pid": 94
+          }
+        },
+        {
+          "text": ">Drinks fridge",
+          "destination": {
+            "name": "B",
+            "pid": 65
+          }
+        },
+        {
+          "text": ">Chips section",
+          "destination": {
+            "name": "C",
+            "pid": 43
+          }
+        },
+        {
+          "text": ">Ice cream freezer",
+          "destination": {
+            "name": "D",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "DO",
+      "text": "<<silently>>\\n<<set $DO = false>>\\n<<endsilently>>\\n@@color:orange;You ring up a container of ice cream. \"//The saddest thing I ever did see was a woodpecker pecking at a plastic tree//,\" the fat one says.@@",
+      "links": []
+    },
+    {
+      "pid": 57,
+      "name": "Start",
+      "text": "@@color:black;Our boys Sam and Leo end up fine. They make it to the bodega and back without incident. They get hit by no cars, fight with no street thugs, and get arrested by no cops. They harrass no customers, annoy no cashiers, and destroy no shelves.\\n\\nThis is not a tragedy. It's just a story about two guys on drugs.@@\\n\\n[[>Stick out your tongue|title]]",
+      "links": [
+        {
+          "text": ">Stick out your tongue",
+          "destination": {
+            "name": "title",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "CSECOND",
+      "text": "@@color:red;They stumble into the chips section and Sam's eye is caught by one bag with a shiny panel on it. He grabs the bag and stares at his reflection. There's an eyelash on his cheek; he offers it to Leo on his fingertip.\\n\\n[[>Next|CCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CCHOICE",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "BFOURTH",
+      "text": "@@color:red;Sam breathes against the fridge; he draws designs in the fog. \"On rainy and snowy days on the bus, we would use the windows to draw.\" He rubs the designs away. \"Whatever, I'm fried and now Gina's a teacher. Some artists we are.\"\\n\\n[[>Next|BCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BCHOICE",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "script",
+      "text": "String.prototype.unDash = function()\\n{\\n\tvar s = this.split(\"-\");\\n\tif(s.length > 1)\\n\t\tfor(var t=1; t < s.length; t++)\\n\t\t\ts[t] = s[t].substr(0,1).toUpperCase() + s[t].substr(1);\\n\treturn s.join(\"\");\\n};\\n",
+      "links": []
+    },
+    {
+      "pid": 61,
+      "name": "ACHOICE",
+      "text": "@@color:red;Of interest to Sam and Leo are the following items:\\n\\n[[>Oreos|AB1]]\\n[[>Chocolate chip cookies|AG1]]\\n[[>Snack cakes|AP1]]\\n[[>Graham crackers|AO1]]@@",
+      "links": [
+        {
+          "text": ">Oreos",
+          "destination": {
+            "name": "AB1",
+            "pid": 91
+          }
+        },
+        {
+          "text": ">Chocolate chip cookies",
+          "destination": {
+            "name": "AG1",
+            "pid": 35
+          }
+        },
+        {
+          "text": ">Snack cakes",
+          "destination": {
+            "name": "AP1",
+            "pid": 7
+          }
+        },
+        {
+          "text": ">Graham crackers",
+          "destination": {
+            "name": "AO1",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "BB3",
+      "text": "<<silently>>\\n<<set $GOTB = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $BB = true>>\\n<<endsilently>>\\n@@color:blue;\"Got it!\" Leo cries. He holds aloft a single bottle of Yuengling.\\n\\n\"Great,\" Sam says. \"Let's just go blind tonight.\"\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "BB2",
+      "text": "@@color:blue;They left only to buy weed, go to work or class, or drink at the local bar. They developed a taste for Yuengling and would put down a few. They would stumble back and pass their bong back and forth. They ghosted the outskirts of a few parties, but gave up. They weren't like Valhalla parties had been; the house and the parties were nameless, generic.\\n\\n[[>Next|BB3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BB3",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "BB1",
+      "text": "@@color:blue;\"Hey, score,\" Leo says. He pulls out a six-pack of Yuengling.\\n\\n\"There's one missing,\" Sam says. Leo roots around the loose beers at the bottom of the fridge. \"Benny swears by screwdrivers when he's tripping.\"\\n\\n\"I'm not going to the liquor store.\" He lies down flat and stretches into the fridge. \"It's too ghetto creepy.\"\\n\\n[[>Next|BB2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BB2",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "B",
+      "text": "<<if $GOTB>>\\n<<display BDONE>>\\n<<endif>>\\n<<if not $GOTB and $SNACKS eq 0>>\\n<<display BFIRST>>\\n<<endif>>\\n<<if not $GOTB and $SNACKS eq 1>>\\n<<display BSECOND>>\\n<<endif>>\\n<<if not $GOTB and $SNACKS eq 2>>\\n<<display BTHIRD>>\\n<<endif>>\\n<<if not $GOTB and $SNACKS eq 3>>\\n<<display BFOURTH>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "BDONE",
+            "pid": 110
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "BFIRST",
+            "pid": 36
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "BSECOND",
+            "pid": 85
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "BTHIRD",
+            "pid": 90
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "BFOURTH",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "CO",
+      "text": "<<silently>>\\n<<set $CO = false>>\\n<<endsilently>>\\n@@color:orange;You ring up a bag of Doritos. \"It's not your boyhood Dorito but it's good,\" the ugly one says to the fat one.@@",
+      "links": []
+    },
+    {
+      "pid": 67,
+      "name": "CB",
+      "text": "<<silently>>\\n<<set $CB = false>>\\n<<endsilently>>\\n@@color:blue;You ring up a bag of pretzels. \"Seriously, though, no one's gonna make out with you,\" the fat one says to the ugly one.@@",
+      "links": []
+    },
+    {
+      "pid": 68,
+      "name": "ATHIRD",
+      "text": "@@color:red;The only reason Sam finds any of the boxes in the cookie aisle remotely attractive is because they're shimmering and pulsing: definitely not inherent characteristics. He grabs a box, decisively, but rethinks and puts it back.\\n\\n[[>Next|ACHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "ACHOICE",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "CG",
+      "text": "<<silently>>\\n<<set $CG = false>>\\n<<endsilently>>\\n@@color:green;You ring up a bag of popcorn. \"I know you sell the microwave kind,\" the ugly one says, \"but there are so many good flavors.\"@@",
+      "links": []
+    },
+    {
+      "pid": 70,
+      "name": "CFOURTH",
+      "text": "@@color:red;Sam picks up a bag of chips with silvery foil on the package design and shows Leo his reflection. \"Fat Leo...Thin Leo...Fat Leo,\" he says, bending the bag.\\n\\n\"Well, buddy,\" Leo says, \"All I'm gonna say is that, unlike me, you're consistent.\"\\n\\n[[>Next|CCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CCHOICE",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "DG3",
+      "text": "<<silently>>\\n<<set $GOTD = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $DG = true>>\\n<<endsilently>>\\n@@color:green;\"I'm getting it,\" Sam decides. \"Who cares if there are exactly two peanuts in there, and the chocolate is gummy and gross, and the ice cream all crystals, this poor little sundae needs some love. Two peanuts could fucking kill a child. You gotta make sure the tables are super clean.\" \\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "SECOND",
+      "text": "@@color:red;\"Is your face numb?\" Sam asks, pinching his nose. \"I always get a numb face. I think I'm cresting again.\"\\n\\n\"Lucky you,\" Leo says. \\n\\nSam and Leo stumble to the:\\n\\n[[>Cookies|A]]\\n[[>Drinks fridge|B]]\\n[[>Chips section|C]]\\n[[>Ice cream freezer|D]]@@",
+      "links": [
+        {
+          "text": ">Cookies",
+          "destination": {
+            "name": "A",
+            "pid": 94
+          }
+        },
+        {
+          "text": ">Drinks fridge",
+          "destination": {
+            "name": "B",
+            "pid": 65
+          }
+        },
+        {
+          "text": ">Chips section",
+          "destination": {
+            "name": "C",
+            "pid": 43
+          }
+        },
+        {
+          "text": ">Ice cream freezer",
+          "destination": {
+            "name": "D",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "DG1",
+      "text": "@@color:green;\"Now //this//,\" Sam says, picking up a sundae in a dixie cup, \"is what I am //talking about//.\"\\n\\n\"I saw a video on how they make those,\" Leo says. \"It was really prettily shot and everything.\"\\n\\n\"I would love to work at a factory,\" Sam says. \"It would be nice to //make// shit instead of cleaning shit.\"\\n\\n[[>Next|DG2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DG2",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "CG1",
+      "text": "@@color:green;\"They had this popcorn when I was a kid,\" Sam says. \"Each bag had a different color of popcorn. It was dyed green or red or blue, and you had to guess.\"\\n\\n\"In order to make eating popcorn...more fun?\" \\n\\n\"Gina made it when she babysat me. She let me push the microwave buttons. It's better than that pre-popped stuff they got here.\"\\n\\n[[>Next|CG2]]",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CG2",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "CG3",
+      "text": "<<silently>>\\n<<set $GOTC = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $CG = true>>\\n<<endsilently>>\\n@@color:green;\"Look at all these flavors!\" Leo examines a bag of popcorn covered in cheddar cheese dust and infused with a mild bacon scent. \"We are living the life of the gourmet. The paradox of choice.\"\\n\\n\"I still think we should get the microwave kind.\"\\n\\n[[>Next|aisle]]",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "CG2",
+      "text": "@@color:green;Sam would join the family upstairs for dinner and a movie on Friday nights while Leo worked late. He would lift up his niece so she could reach the buttons on the microwave. \"Did mom tell you to invite me up?\" he asked Gina. \"Showing me what I could have if I dated?\"\\n\\n\"I just like to hang out with my brother. I just want you to, you know, grow up and be happy.\"\\n\\n[[>Next|CG3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CG3",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "CO1",
+      "text": "@@color:orange;\"When we were kids,\" Sam says, \"they had this kind of Dorito. Salsa Rio it was called. It was spicy. It tasted awesome. I miss it.\"\\n\\n\"You've got nostalgia for a snack food?\" Leo asks. \\n\\n\"I've got nostalgia for a lot of things.\" \\n\\n[[>Next|CO2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CO2",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "CO3",
+      "text": "<<silently>>\\n<<set $GOTC = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $CO = true>>\\n<<endsilently>>\\n@@color:orange;\"Sam!\" Leo shakes his friend. \"You can buy those. You can look at those at home.\"\\n\\n\"Home? Right.\" It will be an ordeal to pay, exit the bodega, and go across the street, but they will do it together, and the Doritos will taste all the better for the exercise.\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "CO2",
+      "text": "@@color:orange;Weeks after that first party, Sam came to visit Gina but Leo was sitting on the stoop like a puppy. He showed Sam Valhalla's graffiti'd halls and the backyard and his room and his bong. Two hours later Gina found the two of them curled up, like cats, half passed out, Modest Mouse blaring on the stereo, Dorito crumbs strewn around everywhere.\\n\\n[[>Next|CO3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CO3",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "DCHOICE",
+      "text": "@@color:red;Of interest to Sam and Leo are the following items:\\n\\n[[>Plain vanilla ice cream|DO1]]\\n[[>Pint containers of Ben and Jerry's|DB1]]\\n[[>Locally-produced gelato|DP1]]\\n[[>Sundaes|DG1]]@@",
+      "links": [
+        {
+          "text": ">Plain vanilla ice cream",
+          "destination": {
+            "name": "DO1",
+            "pid": 84
+          }
+        },
+        {
+          "text": ">Pint containers of Ben and Jerry's",
+          "destination": {
+            "name": "DB1",
+            "pid": 9
+          }
+        },
+        {
+          "text": ">Locally-produced gelato",
+          "destination": {
+            "name": "DP1",
+            "pid": 106
+          }
+        },
+        {
+          "text": ">Sundaes",
+          "destination": {
+            "name": "DG1",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "AFIRST",
+      "text": "@@color:red;\"It ought to be a motherfucking //cavalcade//,\" Sam says, letting the word trip off his tongue as he looks at the cookie selection. He sees only a couple of varieties.\\n\\n\"It's a small bodega,\" Leo says. Perception is a funny thing even at the best of times: It is large for the neighborhood but the boys //did// grow up in Jersey.\\n\\n[[>Next|ACHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "ACHOICE",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "DO2",
+      "text": "@@color:orange;At 3AM anyone still in Valhalla crawled down New Brunswick's hilliest streets and ended up at the Athens Diner. Leo would get a plate of grease, Sam a bowl of vanilla ice cream. He would stir the ice cream into soup in the frosted metal bowl while conversation happened around him.\\n\\n[[>Next|DO3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DO3",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "DO3",
+      "text": "<<silently>>\\n<<set $GOTD = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $DO = true>>\\n<<endsilently>>\\n@@color:orange;\"That's the saddest fucking thing I've ever seen,\" Leo says, looking at a tiny container.\\n\\n\"//The saddest thing I ever did see//,\" Sam quotes, \"//was a woodpecker peckin' at a plastic tree//.\"\\n\\n\"I mean look at that.\" A poorly-drawn homonculus holding an ice cream cone peers out from the frost. \"You really want to eat that?\"\\n\\n\"//Things ain't as sweet as they used to be//,\" Sam concludes.\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "DO1",
+      "text": "@@color:orange;\"//Ou sont les glaces d'antan//?\" Leo asks. \"Why is ice cream always sold in tubs these days?\"\\n\\n\"They've got some bricks here,\" Sam says. Underneath more expensive ice cream and a huge glacier that Sam slowly chips away at is a small supply of tiny boxes.\\n\\n[[>Next|DO2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DO2",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "BSECOND",
+      "text": "@@color:red; Leo catches himself against the drinks fridge. He breathes a panel of fog onto the door. He punches with the side of his fist and draws a series of dots. A series of tiny baby feet crawl up the door. \\n\\n\"Yo, that's gross,\" Sam says. \"People gotta clean that shit.\"\\n\\n[[>Next|BCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BCHOICE",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "DG",
+      "text": "<<silently>>\\n<<set $DG = false>>\\n<<endsilently>>\\n@@color:green;You ring up a sundae. \"I'm glad I don't have peanut allergies,\" the fat one says, \"but I still worry about other people.@@",
+      "links": []
+    },
+    {
+      "pid": 87,
+      "name": "DB",
+      "text": "<<silently>>\\n<<set $DB = false>>\\n<<endsilently>>\\n@@color:blue;You ring up a container of ice cream. \"Not my favorite, but that's why they call it gambling,\" the ugly one says.@@",
+      "links": []
+    },
+    {
+      "pid": 88,
+      "name": "DFOURTH",
+      "text": "@@color:red;\"I can't tell if he was more handsome or tragic,\" Sam says. He points to a Trayvon Martin poster taped next to the ice cream freezer. \"I read an article about chicks who have, like, internet fan groups and shit about Harris and Klebold.\"\\n\\n\"Give Harris another few years and he would have been handsome as shit.\" Leo thinks. \"I should have fucked Klebold. He needed it.\\n\\n[[>Next|DCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DCHOICE",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "DP",
+      "text": "<<silently>>\\n<<set $DP = false>>\\n<<endsilently>>\\n@@color:purple;You ring up a container of ice cream. \"I hope you don't think any of this is our fault,\" the ugly one says.@@",
+      "links": []
+    },
+    {
+      "pid": 90,
+      "name": "BTHIRD",
+      "text": "@@color:red;On the window of the drinks fridge, there's a region of fog. The word ''HI'' is written in it. \"Do you think it could be a message?\"\\n\\n\"It could be,\" Sam says. \"Perhaps the spirits are trying to communicate.\"\\n\\n[[>Next|BCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BCHOICE",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "AB1",
+      "text": "@@color:blue;\"Are Oreos just becoming the generic American cookie?\" Sam asks. \"Oreos used to be a real treat, and now the world is lousy with Oreos. It just feels so generic.\"\\n\\n[[>Next|AB2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "AB2",
+            "pid": 92
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "AB2",
+      "text": "@@color:blue;They stopped keeping food in the kitchen after the second bag of Oreos disappeared before they opened it. Valhalla was no longer their home. It was just where they lived. Beth called: \"I miss living there!\" she said, but really, she didn't.\\n\\n[[>Next|AB3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "AB3",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "AB3",
+      "text": "<<silently>>\\n<<set $GOTA = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $AB = true>>\\n<<endsilently>>\\n@@color:blue;\"Everything's changed,\" Sam says. \"There were just two kinds of Oreos. And now there's a thousand different kinds. I'm so lost.\"\\n\\nLeo pats Sam's cheek. \"They've just got the regular and the double stuff here.\" He grabs a box of the latter.\\n\\n\"Thanks for taking care of me.\"\\n\\n[[>Next|aisle]]",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "A",
+      "text": "<<if $GOTA>>\\n<<display ADONE>>\\n<<endif>>\\n<<if not $GOTA and $SNACKS eq 0>>\\n<<display AFIRST>>\\n<<endif>>\\n<<if not $GOTA and $SNACKS eq 1>>\\n<<display ASECOND>>\\n<<endif>>\\n<<if not $GOTA and $SNACKS eq 2>>\\n<<display ATHIRD>>\\n<<endif>>\\n<<if not $GOTA and $SNACKS eq 3>>\\n<<display AFOURTH>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ADONE",
+            "pid": 1
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "AFIRST",
+            "pid": 81
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ASECOND",
+            "pid": 12
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "ATHIRD",
+            "pid": 68
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "AFOURTH",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "AB",
+      "text": "<<silently>>\\n<<set $AB = false>>\\n<<endsilently>>\\n@@color:blue;You ring up a pack of Oreos. \"Honest-to-God normal Oreos,\" the fat one says.@@",
+      "links": []
+    },
+    {
+      "pid": 96,
+      "name": "AG",
+      "text": "<<silently>>\\n<<set $AG = false>>\\n<<endsilently>>\\n@@color:green;You ring up a pack of cookies. \"His sister makes the best cookies. I miss her,\" the ugly one says.@@",
+      "links": []
+    },
+    {
+      "pid": 97,
+      "name": "CTHIRD",
+      "text": "@@color:red;\"Hello, Sam,\" Sam says. One bag of chips features a deli with silver windows and Sam is talking to his reflection. \"How are you? How do you feel about your life?\" He introduces the reflection to Leo.\\n\\n[[>Next|CCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CCHOICE",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "AO",
+      "text": "<<silently>>\\n<<set $AO = false>>\\n<<endsilently>>\\n@@color:orange;You ring up a box of graham crackers. \"Smores,\" the fat one says. \"We're gonna build a bonfire.\"@@",
+      "links": []
+    },
+    {
+      "pid": 99,
+      "name": "DSECOND",
+      "text": "@@color:red;\"Have you ever been to Florida?\" Sam asks.\\n\\n\"I got some family there. An aunt from the branch that stayed behind to guard the raft.\"\\n\\n\"I'd love to go sometime, but we can't anymore.\" Sam taps a poster taped to the window. On top of a photo of Trayvon Martin, the legend ''BOYCOTT FLORIDA'' is written.\\n\\n[[>Next|DCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DCHOICE",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "AP",
+      "text": "<<silently>>\\n<<set $AP = false>>\\n<<endsilently>>\\n@@color:purple;You ring up a snack cake. \"I'm probably gonna get the heart attack first, right?\" the fat one says.@@",
+      "links": []
+    },
+    {
+      "pid": 101,
+      "name": "DTHIRD",
+      "text": "@@color:red;\"Hey, bro,\" Leo says. He's addressing a poster next to the freezer featuring a photo of Trayvon Martin underneath the legend ''TRAYVON WAS ALL OF US''.\\n\\n\"The eyes are following me,\" Sam says. They're not: Martin stares directly at the camera.\\n\\n[[>Next|DCHOICE]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DCHOICE",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "endgame",
+      "text": "<<silently>>\\n<<set $SNACKS = 0>>\\n<<set $GOTA = false>>\\n<<set $GOTB = false>>\\n<<set $GOTC = false>>\\n<<set $GOTD = false>>\\n<<endsilently>>\\n@@color:black;Two guys stumble to the register. They give you yellow smiles.\\n\\n//Shit//, you think. //These guys are fucking fried//.\\n\\n[[>Next|CHECKA]]",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "CHECKA",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "DG2",
+      "text": "@@color:green;Sam took Madeline for ice cream because Gina and Ethan had a thing, and Leo was at Amy's--she had only come by the house once--and because he was high and because he. fucking. wanted. ice. cream. \"Is there something bad down in the basement?\" she asked.\\n\\n\"No,\" Sam said. He poked at his sundae. \"Leo and I just like our privacy.\"\\n\\n[[>Next|DG3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DG3",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "DP3",
+      "text": "<<silently>>\\n<<set $GOTD = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $DP = true>>\\n<<endsilently>>\\n@@color:purple;\"I think this means that the neighborhood is gentrifying.\"\\n\\n\"Does it?\" Sam's glance moves from the price tag--$6.99--to the flavor--chili chocolate. \"Do they not deserve good ice cream in Bed Stuy?\"\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "DP2",
+      "text": "@@color:purple;Two years of management at La Famiglia back in Little Falls, New Jersey didn't impress any of the local pizzarias. Leo fell into an ice cream shop on Bedford Ave, and while he didn't get to show off his dough spinning skills, he met his share of drunk hipster boys and girls in their underwear. Thank God, he decided, for hipsters.\\n\\n[[>Next|DP3]]",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DP3",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "DP1",
+      "text": "@@color:purple;\"Are we poor?\" Sam asks. Condensation puffs out his mouth and fogs his glasses.\\n\\n\"Either of us have health insurance?\"\\n\\n\"We don't go hungry.\"\\n\\n\"That's true. We can afford all the chips and pizza and ice cream that we want.\"\\n\\n[[>Next|DP2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "DP2",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "BP1",
+      "text": "@@color:purple;Leo takes a glass Coke bottle out of the fridge. \"Sugar was bad for you. My mom put me on a low-sugar diet when I was little cause I was hyper. Then everything had corn syrup and obesity rose.\"\\n\\n\"Thank God for Mexico,\" Sam says. \"It may be a shithole, but at least they don't have the HFCS cartels like we do.\"\\n\\n[[>Next|BP2]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BP2",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "BP3",
+      "text": "<<silently>>\\n<<set $GOTB = true>>\\n<<set $SNACKS = $SNACKS + 1>>\\n<<set $BP = true>>\\n<<endsilently>>\\n@@color:purple;\"And so we shall drink sugar,\" Sam pronounces, \"and we shall get fat like in Bloomberg's dystopia. He looks at the soda's calorie count. \"50 more pounds and someone'll worship your gut.\"\\n\\n\"It's tempting,\" Leo says. \"All right. You've sold me.\"\\n\\n[[>Next|aisle]]",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "BP2",
+      "text": "@@color:purple;\"Yo, I told you a Mexican coke,\" Tim said. He pulled a can out of the delivery bag.\\n\\n\"Wait--that's a thing? I thought you were just stoned and making a racist joke,\" Sam said.\\n\\nTim grabbed the pipe from Sam. \"Yo, your Jersey pot tastes like pine. New York weed always tastes like gasoline.\"\\n\\n[[>Next|BP3]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "BP3",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "BDONE",
+      "text": "@@color:red;\"Drinks are too expensive,\" Leo says. \"We've already got something to drink. Drink some water if you're thirsty after you finish it.\" Sam nods and they stumble away from the drinks case.\\n\\n[[>Next|aisle]]@@",
+      "links": [
+        {
+          "text": ">Next",
+          "destination": {
+            "name": "aisle",
+            "pid": 48
+          }
+        }
+      ]
+    }
+  ]
+}

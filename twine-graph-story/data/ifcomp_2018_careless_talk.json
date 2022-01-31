@@ -1,0 +1,346 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Intro",
+      "text": "//Dedicated to Alan Turing, and to all other queer people who, for one reason or another, have had to hide this aspect of themselves.//\n\n[[Begin]].",
+      "links": [
+        {
+          "text": "Begin",
+          "destination": {
+            "name": "Begin",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Begin",
+      "text": "You pace the deck anxiously as you wait for the chaplain to finish his current appointment. The skies above are a gloomy grey--not foreboding enough for a storm, too grim to be considered cheery. The (link-reveal: \"green-blue smoke from the engines\")[ (//a sign of disharmonic magical auras, though getting the captain to fix it has been... hard//)] rises up into the atmosphere, further clouding the air. You breathe in and out, steadily. You've been in worse frights, but are hard-pressed to think of them now.\n\nNothing to do now but [[wait|Wait]], you suppose.",
+      "links": [
+        {
+          "text": "wait",
+          "destination": {
+            "name": "Wait",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Wait",
+      "text": "//Creak!// Without warning the door to the chaplain's cabin springs open, and out walks Major Rupert. Just the sight of him makes you jump.\n\n\"Oi, and what's a majikker like you doing, scurrying about in the open?\" he shouts, poking you in the chest. The [many medals he's received for his service to the nation of Albion]<service| tinkle as they bounce off his chest. (click: ?service)[(//Major Rupert has earned a lot of honors, through honest work and despite being a stupid, chauvinistic boor. He should be commended for his immense efforts in overcoming his limitations.//)]\n\n[[It's tempting, of course, to answer him with a cutting remark...|Cutting Remrk]]\n[[...but it would be better to stay on his good side, for now.|Honest Answer]]",
+      "links": [
+        {
+          "text": "It's tempting, of course, to answer him with a cutting remark...",
+          "destination": {
+            "name": "Cutting Remrk",
+            "pid": 4
+          }
+        },
+        {
+          "text": "...but it would be better to stay on his good side, for now.",
+          "destination": {
+            "name": "Honest Answer",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Cutting Remrk",
+      "text": "\"Why shouldn't I be here?\" you reply curtly. \"I'm stationed on this boat just as much as you do, and I've no pressing duties at the moment.\"\n\n\"Pah!\" says Rupert with a wave of his hand. \"You magic folk are all alike! Thinking you belong everywhere, with no regard whatsoever for the ill your aura drags in. Times used to be [your lot was consigned to the ship's hold]<YourLot|. I'll never understand why they stopped doing that.\" (click: ?YourLot)[(//A stupid, barbaric practice that went out of favor nearly a century ago. Major Rupert is a man behind the times, to put it mildly.//)]\n\n\"It seems people prefer some comfort when in the duty of their country,\" you answer dryly. \"I imagine that's why the crown acquiesced.\"\n\nMajor Rupert snorts. \"Well, they shouldn't have, that's my view on the matter. If I had my way you'd all be locked up, along with the buggering sorts.\"\n\n(display: \"Head In\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Head In",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Honest Answer",
+      "text": "\"Ah, sorry, officer,\" you reply. \"I'm here to see Father Conrad, is all. Should only take a moment.\"\n\nRupert stares at you a moment, as if the very concept of a member of the Magi-Corps having a meeting with the clergy has him flabbergasted. He then nods, and says, \"Well! Fancy that, a wizard paying his churchly dues! Well, well! I shan't stop you. Perhaps the honorable Reverend might just make a //proper man// out of you yet, hmm?\" He claps you on the shoulder briefly and then goes on his merry way.\n\n(display: \"Head In\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Head In",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Head In",
+      "text": "You freeze in panic. //Does he ''know'' that you...?// But no, that can't be. Major Rupert is a narrow-minded bully and a brute, but his one saving grace is that he can't see past the end of his own nose, most days. Why, he was once good friends with //[Tom]<aside1|//, of all people, and never suspected a thing. (click: ?aside1)[(//Tom... Your mind keeps coming back to him. Still getting used to the shock from last night, you suppose.//)]\n\nAfter a moment's hesitation, you [[steel yourself and head inside|Meeting the Chaplain]].",
+      "links": [
+        {
+          "text": "steel yourself and head inside",
+          "destination": {
+            "name": "Meeting the Chaplain",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Meeting the Chaplain",
+      "text": "Reverend Conrad looks up from his paperwork as soon as you enter his cabin. \"Ah, Mr. Davies!\" he says cheerily. \"So good to see you! It has been a while.\" He gets up to shake your hand. \"How are you on this fine spring afternoon? It hasn't started raining yet, has it?\"\n\n\"Good to see you, too, Father,\" you say. Your mouth feels dry. \"I have a, uh, serious issue that I'd like to discuss with you.\"\n\n\"//Oh.//\" Conrad's expression instantly darkens. \"Well, then. Be sure that you shut the door, then. We don't want any eavesdroppers to have a listen, eh?\"\n\nYou gently close the door, not willing to make the tiniest sound. You then turn to face Conrad, your hands fidgeting in spite of yourself.\n\n\"Please, have a seat,\" says Conrad. \"I realize this might take a while.\"\n\nYou take a deep breath and sit in the chair across from Reverend Conrad's desk. Your eyes rest on the portrait of [Queen Ann III of Albion]<QueenAnn| on the wall behind him. (click: ?QueenAnn)[(//You don't envy the Queen's position, having to take the throne at nineteen, and then dealing with the largest war the world has ever known shortly after. You can't help but admire how she handles the strain.//)]\n\n\"Are you alright, Mr. Davies?\" asks Conrad, snapping you out of your reverie. \"You've been unusually... quiet, this session.\"\n\n\"I'm fine,\" you answer. \"Just need a moment to compose my thoughts.\"\n\nReverend Conrad nods. \"Just tell me when you want to start,\" he replies.\n\nYou nod, and [[think over your relationship with the Reverend Conrad.|Imagine Spot]]",
+      "links": [
+        {
+          "text": "think over your relationship with the Reverend Conrad.",
+          "destination": {
+            "name": "Imagine Spot",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Imagine Spot",
+      "text": "It all started a little under a year ago, when there was that nasty outbreak of the Beggar's Flu all across the Albion Navy. If the members of the Magi-Corps weren't blamed for it, then the homosexuals certainly were. As a member of both parties you took the accusations rather hard. One particularly bad night, when you had stayed up late drinking, you ended up in the infirmary, with Father Conrad as your attendant. It was lucky, then, that few had heard your rantings and ravings, aimed at nobody in particular.\n\nLuckier still, then, that Father Conrad was there to hear them.\n\nTo him, you had confessed your fears and worries about... your particular predicament, and ever since he has acted as your confidant aboard the ship. Whenever the heat is on you and your friends, you can count on him to listen.\n\n[[It feels good to have an ally you can tell these sorts of things to...|Good Conrad]]\n[[...But all the same, you can't help but wonder why he doesn't do more|Damn Conrad]]",
+      "links": [
+        {
+          "text": "It feels good to have an ally you can tell these sorts of things to...",
+          "destination": {
+            "name": "Good Conrad",
+            "pid": 9
+          }
+        },
+        {
+          "text": "...But all the same, you can't help but wonder why he doesn't do more",
+          "destination": {
+            "name": "Damn Conrad",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Good Conrad",
+      "text": "Yes, he may not be as active an aide as you'd like him to be, but whenever the anger at your lot in life comes to a boiling point, you can always count on him to calm you down and prevent you from doing something rash. Once, when many of your friends were being threatened with blackmail, he talked you out of an (link-reveal: \"incredibly unwise plan\")[ (//not that \"filling the blighters' trousers with snakes\" was much of a plan at all//)], and, thanks to cooler heads prevailing, a lot of shipmen were able to keep serving the Queen.\n\nYou'd just wish he'd do //more//, is all.\n\n(display: \"Conversation Begin\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Conversation Begin",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Damn Conrad",
+      "text": "Yes, he's a good soul to talk to, and he's always quick to guide, but...\n\nHe could always be doing //more//, couldn't he? You know he talks regularly with Major Rupert, and yet, as far as you know, he hasn't tried to cut down on any of Rupert's prejudices, be it towards \"majikkers\" or the \"buggering type\". You know there's a limit on just how much someone can convince their fellow man to abandon their delusions, but damn it all, it's //important//. Magicians contribute so much to the current war effort that any prejudice against them could be dangerous to the crown. And while you don't have any numbers in front of you to check, you suspect you can say largely the same about the homosexuals serving in the military.\n\n(display: \"Conversation Begin\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Conversation Begin",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Conversation Begin",
+      "text": "The Reverend coughs. \"Are you alright, Mr. Davies?\"\n\nYou blink. \"Oh, sorry, Father.\" Without further ado, [[you begin|The Start of the Troubles]].",
+      "links": [
+        {
+          "text": "you begin",
+          "destination": {
+            "name": "The Start of the Troubles",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "The Start of the Troubles",
+      "text": "\"You see, father, I was talking on a magi-comm link with a couple of old friends of mine, who transferred to another division,\" you start. \"We were chatting about Magi-Corps business when the conversation drifted to, ah, a different, if somewhat related, sort of matter.\"\n\nReverend Conrad nods. \"Yes, I thought you might be in here about that.\" He rests his chin in his hand. \"Go on.\"\n\n\"One of the other men had said--well, he said that he'd heard about a murder on board another ship,\" you continue. \"He said that a friend of his had witnessed a group of men who had beaten a... a homophile, and had him thrown overboard. I asked him who had been killed in, uh, such a fashion, and, and...\" You pause, suddenly out of breath.\n\n\"Well? Who was it, man?\"\n\n\"It... it was Tom, father.\" You can't contain the emotion in your voice. \"Our very own Tom Haggard.\"\n\n\"Good lord,\" says Conrad. He sits back in his chair in shock. \"I mean, I had heard that he had died, shortly after transferring, but--\" He pauses, and runs a hand through his hair.\n\n\"Did you know him, Father?\"\n\n\"A bit.\" He shrugs. \"We talked, occasionally, same as with you.\" He gets up, goes to a cabinet, and takes out a bottle of whiskey. \"Go on, then,\" he says, as he pours himself a glass. \"What else did you hear?\"\n\n\"Hmm.\" You [[ruminate on last night's conversation|Murderer]].",
+      "links": [
+        {
+          "text": "ruminate on last night's conversation",
+          "destination": {
+            "name": "Murderer",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Murderer",
+      "text": "//\"Are you ''sure'',\" you asked Steadman, \"that what you're saying is true? I mean, I know we all miss Tom, but a murder...\"//\n\n//\"Would go completely unreported, as a matter of course,\" Steadman replied smugly. His voice crackled over (link-reveal: \"the magi-comm's receiver.\")[ (Using a magi-comm link for personal chatter is highly discouraged aboard a ship, but it's easy to hack up a secure work-around, if you have the knack.)] \"I mean, you remember what happened to Edmund two years back, don't you?\"//\n\n//\"Sure, but that was during training!\" you protested. \"Hardly anyone would pull that onboard an active ship, when they could just report him for 'indecent behavior' and get him discharged.\"//\n\n//\"Oh, I don't think they could gather up the proof,\" Steadman had said. \"It was on a different ship, after all. A bit hard to work out all the evidence when he did all his buggering elsewhere.\"//\n\n//\"Then how did they know he went 'buggering' at all?\"//\n\n//\"Oh, you'll never guess,\" said Steadman. \"[[It was...|Revealed]]\"//",
+      "links": [
+        {
+          "text": "It was...",
+          "destination": {
+            "name": "Revealed",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Revealed",
+      "text": "\"Charles Masterson,\" you answer calmly. \"There were others, but the whole thing was orchestrated by Charles Masterson.\"\n\nReverend Conrad nearly drops his glass of whiskey. \"Good gracious,\" he says. \"I mean, a [fellow member of the Magi-Corps]<Fellow|?\" (click: ?Fellow)[(//You can understand the surpise. Prejudice and hatred against magical folk and homosexuals have been linked for over a century. They both carry associations with the decadence of the aristocracy, without the protection that class affords.//)]\n\nYou nod grimly. \"I never would have expected it.\"\n\n\"Nor I,\" says Conrad.\n\n\"Nor did Tom, apparently.\"\n\nThe Reverend Conrad massages his forehead. \"Are you sure your information is quite accurate? I know how rumors can get aboard a ship.\"\n\n\"The man I was talking to got his friend to confirm it, and even one of //his// friends confirmed it,\" you answer. \"It's either true, or a hoax in very poor taste.\"\n\n\"I... I see,\" says Conrad. \"And this magi-comm link... was it secure?\"\n\n\"//Quite// secure,\" you answer. \"Only a few others knew about the link, and you could only get in through a password.\"\n\n\"Hmm, well, you can never be too sure,\" says Conrad. \"Like the posters say, careless talk--\"\n\nBut he is interrupted from a sharp noise from outside. [[You turn your head towards the door...|Rupert Again]]",
+      "links": [
+        {
+          "text": "You turn your head towards the door...",
+          "destination": {
+            "name": "Rupert Again",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Rupert Again",
+      "text": "It's Major Rupert, ranting about something or other. \"Blasted buggering bastards,\" you can hear him grumble through the door. \"Somehow or another they always...\" His ranting gets too muffled to hear clearly.\n\nReverend Conrad lays a hand on your shoulder. \"Don't worry,\" he says. \"This cabin is specially magicked to prevent noise from reaching outside. We can hear him, but he can't hear us.\"\n\n\"And you're sure of that?\" you ask.\n\nConrad nods, his face looking oddly grim.\n\nIt occurs to you, now, to [[wonder how much you can really trust him...|A Matter of Trust]]",
+      "links": [
+        {
+          "text": "wonder how much you can really trust him...",
+          "destination": {
+            "name": "A Matter of Trust",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "A Matter of Trust",
+      "text": "After all, you thought you could trust Charles, didn't you? Once, you had even considered telling him about your strange attractions, when you were still fresh on the force. You were infatuated with him then, and longed to tell him of your secret passion. But you were busy back then, as you are now, and (thank heaven for small favors) you never got around to it.\n\nAnd Conrad pings more of your alarm bells than Charles ever did. For one, he's in constant talks with Major Rupert, who's not shy about his feelings on homosexuals, both in and outside of the Queen's Navy. For another, you've hardly ever seen him speak out for homosexuals in public. The closest he's ever come is shushing buggering jokes told by young sailors at meals. And there is the fact of his being a man of the cloth; hardly the most telling detail, but...\n\n[[You should never have trusted him.|What Next]]\n[[But he's been so kind to you! Surely he can't be...|What Next]]",
+      "links": [
+        {
+          "text": "You should never have trusted him.",
+          "destination": {
+            "name": "What Next",
+            "pid": 17
+          }
+        },
+        {
+          "text": "But he's been so kind to you! Surely he can't be...",
+          "destination": {
+            "name": "What Next",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "What Next",
+      "text": "Whatever the case, it's too late to back out now.\n\nReverend Conrad clears his throat. \"Have you thought about what you're going to do next?\"\n\nRight. //That//. Well, no putting it off now... You clear your throat, and begin.\n\n[[\"I'm going to tell the others about this. Even if it happened on another ship, they still have a right to know.\"|Tell the Men]]\n[[\"I'm keeping quiet, for now. It'd just cause unneeded panic for not much gain.\"|Silence is Golden]]",
+      "links": [
+        {
+          "text": "\"I'm going to tell the others about this. Even if it happened on another ship, they still have a right to know.\"",
+          "destination": {
+            "name": "Tell the Men",
+            "pid": 18
+          }
+        },
+        {
+          "text": "\"I'm keeping quiet, for now. It'd just cause unneeded panic for not much gain.\"",
+          "destination": {
+            "name": "Silence is Golden",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Tell the Men",
+      "text": "\"I'm going to tell the others about this. Even if it happened on another ship, they still have a right to know.\" You swallow. \"It's--not just a matter of safety, Father. What happened to Tom, they have a right to know.\"\n\n\"I see,\" says Conrad. \"I wish you the best of luck, then. I know firsthand how easy it is to... to keep silent.\" He clasps his hand on your shoulder. \"Before you go, I've one thing I'd like to mention.\"\n\n\"Eh? What is it?\" you ask.\n\n(display: \"Nothing Serious\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Nothing Serious",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Silence is Golden",
+      "text": "\"I'm keeping quiet, for now. It'd just cause unneeded panic for not much gain.\" You shrug. \"Too much risk to alert all the others for an incident on a ship that's oceans away from us right now.\"\n\nReverend Conrad nods. \"If you feel that is right,\" he says. \"It may be that some of them are aware already, if it got out to you on one of the comm links.\" He takes one last sip of his whiskey, then puts a hand on your shoulder. \"Speaking of silence, there's... one little thing I need to tell you. Well, remind you of, anyway.\"\n\n\"Eh? I'm not sure I follow,\" you say.\n\n(display: \"Nothing Serious\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Nothing Serious",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Nothing Serious",
+      "text": "\"It's nothing serious,\" says Conrad, and already you feel anxious. \"Just something I want us to be on the same page about, is all.\"\n\n\"Is that so,\" you say, as your palms begin to sweat. \"Go on, man.\"\n\n\"Right, well, hmm.\" Conrad pauses a moment, then [[begins|Conrad's Confession]].",
+      "links": [
+        {
+          "text": "begins",
+          "destination": {
+            "name": "Conrad's Confession",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Conrad's Confession",
+      "text": "\"If there's one thing we've learned this evening, it's the value of secrecy. A man may be betrayed by the very people he considers as friends. Therefore, I don't want you telling any of the others about me. No matter how safe they seem, nor if they...\" Here, he pauses. \"If they share the same predicament as you and I. I trust you to keep my secret, as I have yours.\"\n\nThis... isn't the confession you were expecting. You hope none of the shock you feel shows on your face.\n\n\"Of course,\" he continues with a smile, \"I do not doubt your honor for a second. It is only for my own peace of mind that I ask this of you. I know I am known to a few other fellows aboard this ship, but I prefer it when my secrets are only known to those who I choose to reveal it to.\"\n\nYou swallow, and try to compose a response:\n(link-reveal: \"I honestly hadn't known that, Father.\")[ (A bit awkward to point that out now.)]\n(link-reveal: \"I really wish you hadn't said all that.\")[ (Awkward, and rather rude as well.]\n(link-reveal: \"For god's sake, why haven't you said anything about this before?\")[ (//Rude//.)]\n[[\"Your secrets are safe with me, father.\"|Good Choice]]",
+      "links": [
+        {
+          "text": "\"Your secrets are safe with me, father.\"",
+          "destination": {
+            "name": "Good Choice",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Good Choice",
+      "text": "It seems like the most prudent thing to say at this time.\n\n\"Right then,\" says the Reverend Conrad. He shakes your hand. \"Well, it's been good talking with you, Mr. Davies. I hope we can meet again soon under, ah, more pleasant circumstances.\"\n\n\"And I as well, Father,\" you say with a smile. It //is// the truth, after all.\n\nHe leads you outside, where you both find Major Rupert waiting. \"There you are, Reverend!\" says Rupert. \"I've been waiting for you to finish up with that majikker fellow for half an hour now.\"\n\n\"Well, I'm sorry my talk with Mr. Davies couldn't have been cut shorter,\" Conrad replies curtly. \"What seems to be the problem, Major?\"\n\n\"There's a man dying in the infirmary who needs his prayers read, Reverend,\" answers Major Rupert, sounding, for once in his life, genuinely choked up. \"I don't think he has much longer.\"\n\n\"Ah! Well, I can hardly put that off!\" says Conrad. \"Let me get my prayer book, and I'll be right over.\"\n\nNeither Rupert or Conrad seem to notice you as you [[walk across the deck|End]].",
+      "links": [
+        {
+          "text": "walk across the deck",
+          "destination": {
+            "name": "End",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "End",
+      "text": "Although the sky is still the same shade of grey it was before your talk with the chaplain, the world seems... different, somehow, than it did a half-hour ago. At peace, and yet, with a note of terror in it. More hopeful, perhaps, yet also more grim. Before, you thought you had an uncertain ally on your side; now, you see he is more than that, but bound by the same restraints you are. It seems magic is hardly the only thing you're learning new things about, these days.\n\nAs the Reverend Conrad heads to the infirmary with Major Rupert, you can hear snatches of their conversation.\n\n\"You know,\" says Rupert, \"I can't hardly understand why you associate with those majikkers so much. There's hardly a one of them that isn't some buggering pervert.\"\n\n\"Oh, hardly, hardly!\" Conrad protests. \"Remember, those 'perverts' are children of God, same as you or I. And besides,\" he adds, \"you can hardly know about these sorts of things, just from their occupation.\"\n\n''The End''",
+      "links": []
+    }
+  ]
+}

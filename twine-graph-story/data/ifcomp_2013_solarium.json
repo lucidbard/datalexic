@@ -1,0 +1,1513 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "titlepage",
+      "text": "<html><center><img src=\"solarium-cover.jpg\" width=300><h1><font color=\"gold\">Solarium</h1>\\n<h3>by Alan DeNiro</h3>\\n</font></center>\\n<h4>\"We live in the stillness of midnight, and experience sunrise and sunset by turning towards the east and the west.\" --Franz Kafka</h4></html>\\nI see now that the vials themselves are empty--except for one, which is larger than the others and full of a soft black rock. I'm thinking this is what you once called the //prima materia//, the first matter that can be changed into any other thing.\\n\\nWell, a few flecks of it drop and then heat. It's being drawn into a [[needle...|We Are Solarium]]\\n",
+      "links": [
+        {
+          "text": "needle...",
+          "destination": {
+            "name": "We Are Solarium",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "down1",
+      "text": "<html><img src=\"death.jpg\" width=500></html>\\n\\n<<timedgoto \"down2\" 1s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "down2",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Corpse",
+      "text": "Cities of corpses. Radioactive ash. <<replace \"President Dulles\">>President Dulles, former Secretary of State, 4th in the line of presidential succession<<endreplace>> on the radio telling people to remain calm, from his bunker.\\n\\nAfter the attack and counterattack, the U.S. was groggy. People couldn't believe what had just happened. They just couldn't. No one cared that the Soviet Union had essentially ceased to exist, that nearly all of Europe was wrecked. \\n\\nWe took the back roads and passed few others; the National Guard patrolled the main cities. Even in the cities untouched by direct blasts there was martial law. \\n\\nYou tapped the steering wheel nervously with one hand as you drove, and clenched my left hand with the other.\\n\\n\"President Dulles,\" you muttered. \"Jesus.\"\\n\\nYou were so fierce.\\n\\n[[Grave]]\\n",
+      "links": [
+        {
+          "text": "Grave",
+          "destination": {
+            "name": "Grave",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "down2",
+      "text": "<html><img src=\"crow.jpg\" width=500></html>\\n<<timedgoto \"down3\" 1s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "down3",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Moon",
+      "text": "//In the moon's light, shining on the ashen snowfall, I am feeling depleted; only in the memories of you can I sustain myself here. You are tantalizingly close...//\\n\\nI didn't understand how I was falling for you at first. Neither of us fit in Solarium, it was true, but...had either of us really ever had a full life, wholly our own? Despite your genius, you were //still// expected to keep an immaculate house and cook a turkey dinner every Sunday. I had privileges, of course--as a man and man of the cloth--that kept the worst of the do-gooders away from me, but all the same, I was //deployed//. I didn't choose to be James. And even this could have been somewhat bearable. After all, who chooses how they are born? But it was the vague intimation of a //purpose//--always having my fate intertwined with the archon--that gnawed at me. And I had no taste for vengeance, only observation and careful study. \\n\\nSo it was in this form that I began to see something in you, in your persistence to be human, that was truly beautiful. The fact that you seemed to see something in me was a relevation I had never experienced before.\\n\\n<html><font color=DarkGoldenRod>(moonlight dissolves; sulfur materializes)</html>\\n\\n[[Mortificatio]]\\n<<silently>>\\n<<set $sulfur = 1>>\\n<<set $uranium = 2>>\\n<<endsilently>>\\n",
+      "links": [
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Untitled Passage 1",
+      "text": "suffering: http://en.wikipedia.org/wiki/File:Punishing-witches-Laienspiegel.jpg\\n\\nhumiliation: William Dwight Whitney The Century Dictionary: An Encyclopedic Lexicon of the English Language (New York, NY: The Century Co., 1911)\\n\\nBlackness and Sickness: Courtesy Oak Ridge National Laboratory\\n\\nguy in suit: http://www.atsdr.cdc.gov/risk/cancer/cancer-substances.html\\nAngelology\\n\\nsmoke through trees:  Emilian Robert Vicol \\nwww.flickr.com/photos/free-stock/8424686193/in/pool-77356438@N00\\n\\nburned out tree: American Environmental Photographs Collection, [AEP Image Number, e.g., AEP-MIN73], Department of Special Collections, University of Chicago Library. \\n\\nbunker: www.loc.gov/pictures/item/nv0249.photos.375359p/resource\\n\\ncrow: Basilius-Valentinus-Azoth-Paris-1659.jpg\\n\\nSoviet deer/mutilation: Courtesy of Claremont Colleges Digital Collection.\\n\\ncastration: http://en.wikipedia.org/wiki/Thomas_Rudd\\n\\nexile: Cranmer's bible. http://www.bridgemanart.com/asset/472222/English-School-15th-century/The-Expulsion-from-the-Garden-of-Eden-illustratio\\n\\nancient city: James Gordon http://www.flickr.com/photos/james_gordon_losangeles/9123294232/\\n\\n\\nendgame: http://www.loc.gov/pictures/item/wa0329.photos.040710p/\\n\\nsoma pneumatikon\\n\\nthe demon itself: babylonian passage?\\n\\nam I, in some sense, a spy? Yes, though with no way to communicate with those who sent me. In this fashion, my true visage can remain hidden from the \"angel.\" And I will have no sense as to whether the mission is fully completed or not.\\n\\nuse salt throughout\t\\n\\nmoon: Elementa Chemicae of the Leiden chemistry professor J.C. Barchusen\\n\\n<<set $sulfur = 0>>\\n\\n<<set $sulfur = $sulfur +1>>\\n\\n<<if $sulfur gte 1>>xxx<<endif>>\\n\\nThere was also philosophical calcination, which was said to occur when horns, hooves, etc., were hung over boiling water, or other liquor, until they had lost their mucilage, and were easily reducible into powder\\n\\nspirit of wine\\ncopper\\nlead\\nsilver\\nquicksilver\\nsulfur\\nsulfur\\niron\\nantimony\\n\\nIf the One who created us exists--or once existed--It wanted nothing to do with us afterward. And in that sense, the archon and I are brothers. Or brethren in arms. \\n\\nTens of thousands of years ago, I knew the archon. The One--or what we might have thought of The One--felt closer there on the Anatolian steppes. That was the first time we had both been given human form. There were so many of us watchers and messengers then. \\n\\nWhere did they go? They winnowed away. Whether they were expelled from existence because of mysterious transgressions, or decided to abdicate their roles once they realized their Creator had no interest in them, I couldn't say.\\n\\nPerhaps we were only embedded with the belief that we had a Creator.\\n\\nThe archon, though, persisted throughout the years. In a way, his persistence was almost touching. He kept trying to be what he thought of his father: a bull god in the Urals for a few hundred years, a leader of a white badger cult in Wales (don't bother trying to look for it; you won't find it) for another hundred. Throughout, I kept an eye on him. I kept taking over bodies. Something was putting me into these bodies. I'm not sure that someone would be the right word. Anyway, the archon couldn't fathom that he was alone, really alone in the universe. \\n\\nAnd this time he transformed his pathetic stubborness into, well, the end of the world itself.\\n\\nWould you believe any of this?\\n\\nYes. I think you would. You would believe all of it. You might believe it more than I do.\\n\\n***\\n\\nIn those long days in the Solarium conference room, as Arthur smoked his cigars and mumbled to himself, and the major drawing airstrike routes on a Mercator projection, and Anselm hunched over a list of names\\n\\n--\\n\\n\\nThere still has to be the chance to protect beautiful things.\\n\\n----\\n\\n.passage .header {\\n  width:100%;\\n  height:410px;\\n  min-height: 410px;\\n  border: #fff double 0.5em;\\n  border-radius: 1em;\\n  margin: 0 auto 1.5em auto;\\n  padding: 0;\\n  background-position: center;\\n  background-repeat: no-repeat;\\n}\\n\\n\\n---\\n\\n<<if $jayden eq true and $harlan eq true and $axmed eq true and $tristan eq true>>==[[maverick in thought|maverick]]==<<else>>[[maverick in thought|maverick]]<<endif>>\\n\\n<<set $jayden = false>>\\n\\ninventory: http://nnsa.energy.gov/mediaroom/pressreleases/titanium062810",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "Untitled Passage 2",
+      "text": "\\n\\nQuestions\\n\\n1 Coagulatio: Do I love you?\\n\\n2 Separatio: Should I try to see you again, no matter how painful?\\n\\n3 Calcinatio: Did I do enough to stop the cataclysm?\\n\\n4 Conjunctio: If I do see you again, do I reveal my trueness to you?\\n\\n\\nYes, Yes, Yes, Yes Silver\\nNo, Yes, Yes, Yes Quicksilver\\nYes, No, Yes, Yes sulfur Coke bottle\\nYes, Yes, No, Yes Gold \\nYes, Yes, Yes, No Tin\\nYes, No, No, No Radon\\nYes, No, No, Yes Copper\\nYes, Yes, No, No Aqua Vitae\\nNo, No, Yes, Yes Sulfur\\nNo, No, No, Yes Plutonium\\nNo, No, Yes, Yes Uranium\\nNo, Yes, No, Yes Iron\\nNo, Yes, Yes, No Americium\\nNo, No, Yes, No Lead\\nYes, No, Yes, No Salt\\nNo, No, No, No Antimony\\n\\nspirit of wine\\ncopper\\nlead\\nsilver\\nquicksilver\\nsulfur\\nsulfur\\niron\\nantimony",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "Coagulatio-yes",
+      "text": "<<if $pacing eq 4>>\\n[[The chair becomes still. I look around, as much as I can. Something is happening beneath me.|endgame]]\\n<<else>>\\nIt feels like cold comfort all the same. \\n\\n[[Mortificatio]]\\n<<endif>>\\n<<set $coagulatioyes = true>>",
+      "links": [
+        {
+          "text": "The chair becomes still. I look around, as much as I can. Something is happening beneath me.",
+          "destination": {
+            "name": "endgame",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "leave-abandon",
+      "text": "\"We didn't do enough,\" I say. \"You know that as well as I do. And I just can't...leave the world.\"\\n\\n\"I understand,\" you say. \\n\\n\"But I need you by my side. I can't do this alone.\"\\n\\nYou look up and slowly shake your head. \"I'm sorry.\"\\n\\n\"You must be the avenger now,\" you say. \"You must take my place. You're the last left.\"\\n\\nI'm taken aback by this charge. \\n\\n\"But the archon--\"\\n\\n\"Might come back,\" you say. \"One day. And there are others...\" You trail off.\\n\\n\"Anselm,\" I say.\\n\\n\"For starters,\" you say. \\n\\n<<if $calcinatioyes eq true>>\"I love you,\" I say.\\n\\n\"I love you too. Goodbye.\"\\n\\nAnd then we kiss, and as I walk away, I feel vengeance fill me.\\n\\nIt's a little bit like strength and weakness at the same time.<<else if>>As I walk away, I feel vengeance fill me.\\n\\nIt's a little bit like strength and weakness at the same time.<<endif>>\\n\\nThere still has to be the chance to protect beautiful things.\\n\\n<<replace \"THE END\">>It is never [[the end|theend]].<<endreplace>>\\n<<set $abandon = 1>>",
+      "links": [
+        {
+          "text": "the end",
+          "destination": {
+            "name": "theend",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Annalise",
+      "text": "You stop. Ah, you see. You see something.\\n\\n\"Annalise--\" I begin again. I have no idea how to explain myself. I love you so much.\\n\\n\"How do you know my name?\" she says, squinting, raising the gun.\\n\\n\"I've been looking for you,\" I manage to say. \"For a very long time.\"\\n\\n\"What is your name?\" you say.\\n\\n\"I'm...Lenora.\"\\n\\n\"[[Lenora]], then,\" you say. ",
+      "links": [
+        {
+          "text": "Lenora",
+          "destination": {
+            "name": "Lenora",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "StoryTitle",
+      "text": "Solarium",
+      "links": []
+    },
+    {
+      "pid": 12,
+      "name": "We Are Solarium",
+      "text": "Alchemy, you had once told me, is a form of neurosis: fiddling with muck, retracing one's steps over and over again, trying to find a way forward through cracks and seams and scraps. This is what I have to do.\\n\\nHere, in this chair you built, I close my eyes and my mind darkens and the past fills it. //Our// past, together, fills it.\\n\\nAnd it is a broken past: tens of millions dead after two days, you and I trying to escape the fallout, with our secret cargo in tow. But more important than the cargo was the terrible knowledge that we both carried with us--how this nuclear carnage came to be in the first place. Because we were both there.\\n\\nWe were part of Solarium.\\n\\nI feel the straps cinch deeper, and a little needle of the black liquid extends from the arm of the chair and gives my skin a light prick. \\n\\nI'm ready. I--  \\n\\n[[Mortificatio]].\\n",
+      "links": [
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "down3",
+      "text": "<html><img src=\"blackness.jpg\" width=500></html>\\n<<timedgoto \"down\" 1s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "down",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "inventory",
+      "text": "\\n<html><img src=\"inventory.jpg\" width=150></html>\\n\\n//Substances Acquired and Paths Unlocked://\\n\\n<<if $copper gte 1>><html><font color=peru>Copper</html> (Death)<<else>> <<endif>> / <<if $lead gte 1>><html><font color=LightSlateGray> Lead</html> (Poison)<<else>> <<endif>> / <<if $quicksilver gte 1>><html><font color=DimGray> Quicksilver</html> (Shoots)<<else>> <<endif>> / <<if $tin gte 1>><html><font color=Sienna> Tin</html> (Mutiliation)<<else>> <<endif>> / <<if $silver gte 1>><html><font color=Silver> Silver</html> (Exile)  <<else>> <<endif>> / <<if $gold gte 1>><html><font color=Gold> Gold</html> (Conception)<<else>> <<endif>> / <<if $lapis gte 1>><html><font color=DeepSkyBlue> Lapis</html> (Suffering)<<else>> <<endif>> / <<if $antimony gte 1>><html><font color=Violet> Antimony</html> (Caput Corvi)<<else>> <<endif>> / <<if $sulfur gte 1>><html><font color=DarkGoldenRod> Sulfur</html>  (Offering)<<else>> <<endif>> / <<if $uranium gte 1>><html><font color=DarkSlateGray> Uranium </html> (Decomposition)<<else>> <<endif>> / <<if $plutonium gte 1>><html><font color=Dark Orange> Plutonium</html> (King Slaying)<<else>> <<endif>> / <<if $iron gte 1>><html><font color=Chocolate> Iron</html> (Frustration of Desire)<<else>> <<endif>> / <<if $limestone gte 1>><html><font color=DarkSeaGreen> Limestone</html> (Blackness)<<else>> <<endif>> /",
+      "links": []
+    },
+    {
+      "pid": 15,
+      "name": "calcinatio-yes",
+      "text": "At any cost.\\n<<if $pacing eq 4>>\\n[[The chair becomes still. I look around, as much as I can. Something is happening beneath me.|endgame]]\\n<<else>>\\n[[Mortificatio]]\\n<<endif>>\\n<<silently>>\\n<<set $calcinatioyes = true>>\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "The chair becomes still. I look around, as much as I can. Something is happening beneath me.",
+          "destination": {
+            "name": "endgame",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Tomb",
+      "text": "//Bind Azazel hand and foot, and cast him into the darkness: and make an opening in the desert, which is in Dudael, and cast him therein. And place upon him rough and jagged rocks, and cover him with darkness, and let him abide there for ever, and cover his face that he may not see light. And on the day of the great judgement he shall be cast into the fire.\\n\\n--Enoch 10:4-7//\\n\\nThe archon never recognized me at Solarium. I wondered about that. When he inhabited the body of the archaeologist, and the five of us in Solarium's Task Force D went down to the basement to the cell where he was kept, I saw nothing in his eyes. The amulet glinted on his chest. \\n\\nRoland Arras was not looking well. The possession was not becoming to him. He was at war with himself; or rather, with something that was quite alien to him.\\n\\nI recognized that sneering, lilting tone of his from long ago, though. No one else realized that this archon was far from all-powerful. He was the cosmic equivalent of a petty thief.\\n\\nBut he had survived all these years, when so many of his brethren had not. \\n\\n\"Well well well,\" the archon said, through the voice of Roland. \"To whom do I owe this honor, to be met by such an illustrious troupe: a poison-meister, a military stooge, a dime-book crackpot, a lady pantomiming a professor, and a neutered priest.\"\\n\\nMuch later, up north, it was a different story. \\n\\nAnd of course, the same story--\\n<<silently>>\\n<<set $limestone = 1>>\\n<<set $tomb = 1>>\\n<<endsilently>>\\n<html><font color=DarkSeaGreen>(like the cement foundations of a house, a pebble limestone--full of fossils and ancient life--drops into its case)</html>\\n[[Separation of Soul from Body]]",
+      "links": [
+        {
+          "text": "Separation of Soul from Body",
+          "destination": {
+            "name": "Separation of Soul from Body",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Coagulatio-no",
+      "text": "<<if $pacing eq 4>>\\n[[The chair becomes still. I look around, as much as I can. Something is happening beneath me.|endgame]]\\n<<else>>\\nAll right. \\n\\n[[Mortificatio]]\\n<<endif>>\\n<<set $coagulationo = true>>",
+      "links": [
+        {
+          "text": "The chair becomes still. I look around, as much as I can. Something is happening beneath me.",
+          "destination": {
+            "name": "endgame",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Separatio-Yes",
+      "text": "I cannot say what would happen after you die. I can only say what happens to me. And the archon, and whatever others like me are out there in secret.\\n\\nI wish I had more answers. \\n\\nAll I know is that love is the mystery of separation. \\n\\nSeparation is necessary. \\n\\nWoud you be demanding answers of me if you knew where I came from?\\n\\nYou would have demanded that I be less afraid than you.\\n\\nBut it doesn't work that way. And your fearlessness is part of the reason I am so drawn to you. \\n<<if $pacing eq 4>>\\n[[The chair becomes still. You look around, as much as you can. Something is happening beneath you.|endgame]]\\n<<else>>\\n[[Mortificatio]]\\n<<endif>>\\n<<set $separatioyes = true>>",
+      "links": [
+        {
+          "text": "The chair becomes still. You look around, as much as you can. Something is happening beneath you.",
+          "destination": {
+            "name": "endgame",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Humiliation",
+      "text": "The archon persisted throughout the years. His persistence was almost touching. He kept trying to be what he thought of his father (and it was always a //Father//): a bull god in the Urals for a few hundred years, a leader of a white badger cult in Wales (don't bother trying to look for it; you won't find it) for another hundred. Throughout, I kept an eye on him. I kept taking over bodies. Something was putting me into these bodies. I'm not sure that \"someone\" would be the right word. Anyway, the archon couldn't fathom that he was alone, really alone in the universe. Perhaps he was trying to perform such a monstrous act simply to bring down a sign from on high--just a sign--that The One was still out there.\\n\\nAnd this time he transformed his pathetic stubborness into, well, the end of the world itself.\\n\\nWould you believe any of this?\\n\\nYes. I think you would. You would believe all of it.\\n\\n[[Mortificatio]]\\n<<silently>><<set $humiliation = 1>><<endsilently>>",
+      "links": [
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Calcinatio",
+      "text": "Calcinatio is the fire that burns off the excess and impurities.\\nI want to burn clean. \\n\\n<<replace \"I don't know if I can anymore.\">>A. Separation of total radiostrontium from five grams of bone ash:\\n\\n1.  Ash the bone sample in nickel crucible at 900<dg>C.\\n2.  Grind in a mortar to a fine powder.\\n3.  Weigh out 5 grams into a 250 ml centrifuge bottle.\\n4.  Add 44 ml of water and then slowly add 154 ml of 90% nitric acid to bring concentration to 75% HNO.\\n5.  Add 20 mg of Sr carrier (as Sr(NO 1)2) in 2 ml of solution.\\n6.  Stir rapidly for thirty minutes. (Mechanically)\\n7.  Centrifuge for 10 minutes at about 2,000 rpm.\\n8.  Decant dissolve the precipitate in 23 ml of water and transfer to a 250 ml beaker, add slowly 77 ml of 90% HNO- and stir mechanically for thirty minutes.\\n\\n--Report on Project GABRIEL<<endreplace>>\\n\\n//I want to burn clean//\\n\\nDo I love you?\\n\\n([[yes|calcinatio-yes]]) Of course. How could I not. Even though this body is so unfamiliar to me. But it's because of this body that I love you in the first place. \\n\\n([[no|calcinatio-no]]) It would be too much of a betrayal of you to love you. You deserve more, as much of a better life as can be managed in this world of ash.\\n<<set $pacing = $pacing + 1>>\\n<<set $calcinatio = 1>>",
+      "links": [
+        {
+          "text": "yes",
+          "destination": {
+            "name": "calcinatio-yes",
+            "pid": 15
+          }
+        },
+        {
+          "text": "no",
+          "destination": {
+            "name": "calcinatio-no",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "great-work",
+      "text": "As it turns out, this is the great work of light and shadow after all.\\n\\nTo be nothing, one must be everything.\\n\\nTo be everything, one must be nothing. \\n\\nRinse, repeat, and so on and so on. \\n\\nSo we both dissolve. So what? Does that mean that we disappear altogether? Without a trace? \\n\\nYes and no.\\n\\nI am no longer me. And you are no longer you. These are givens.\\n\\nBut there is still a signal we're putting out, in the soil and air. Most of our emotions are stripped away but we still haunt. In a mile radius from where your cinderblock laboratory used to stand, the building has collapsed and trees have grown: white pines. Our needles do not sicken and brown. When the wind whistles through them, one can hear the beginning of a song.\\n\\n<<revision time>>Squirrels eat our pinecones. <<gains>>The wild, sickly dogs eat our squirrels. <<gains>>The wild dogs run away. <<gains>>The wild dogs venture toward the edges of the encampments. <<gains>>The elk eat the pinecones and the grasses. <<gains>>The dogs eat the elk. <<gains>>The wild dogs--once poodles and German shepherds and cocker spaniels--scavenge and persist. <<gains>>The spring has come, and the wild dogs shake the ash from their coats.\\n\\nTHE END\\n\\n[[credits and acknowledgements|credits]]<<endrevision>>\\n\\n<<revise time \"the years\">>",
+      "links": [
+        {
+          "text": "credits and acknowledgements",
+          "destination": {
+            "name": "credits",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Bones",
+      "text": "<html>\\n<style>\\nhead {\\n    display:block;\\n    z-index:4;\\n    position:fixed;\\n    top: 50%;\\n    left: 50%;\\nopacity: .25;\\n    margin-left: 5em;\\n    margin-top: -5em;\\n    animation: spin 30s linear infinite, colour 10s linear infinite; -webkit-animation: spin 30s linear infinite,colour 10s linear infinite;\\n}\\nhead, head::before, head::after {\\n    width: 4em;\\n    height: 8em;\\n    background-color:transparent;\\n    border-left: 1em solid black;\\n    border-right: 1em solid blue; \\n    box-sizing: border-box;\\n    -moz-box-sizing: border-box;\\n}\\nhead::before, head::after {\\n    content: \"\";\\n    position: absolute;\\n    left: -1em;\\n    transform:rotate(90deg);-webkit-transform:rotate(90deg);\\n    animation: colour 12s linear infinite; -webkit-animation: colour 10s linear infinite;\\n}\\nhead::after {\\n    transform:rotate(-60deg);-webkit-transform:rotate(-60deg);\\n}\\n@keyframes  colour {\\n  0%, 50%,100% { border-left: 1em solid red; border-right: 1em solid orange; }\\n  25%, 75% { border-left: 1em solid white; border-right: 1em solid BurlyWood;  }\\n}\\n@-webkit-keyframes colour {\\n  0%, 100% { border-left: 1em red; border-right: 3em solid purple; }\\n  50% { border-left: 1em solid blue; border-right: 3em solid CadetBlue;  }\\n}\\n@keyframes spin {\\n  0% {}\\n  100% { transform:rotate(60deg); }\\n  50% { transform:rotate(30deg); }\\n}\\n@-webkit-keyframes spin {\\n  0% {}\\n  100% { -webkit-transform:rotate(60deg); }\\n  50% { -webkit-transform:rotate(30deg); } </style></html>\\n\\nWhen the walls came down, I had never felt closer to you. I imagine you crying over my death--I give myself that one indulgence--kneeling at the mine's entrance and then getting up. Where were you to go? What were you to do? Any chance of rescuing me would unleash the archon again. \\n\\nNo, it was better to let it rest, and move on, this part of your work completed. So you did.\\n\\nI spent eight months dormant and dreaming. I dreamt of lost paradises. Mostly, though, I dreamt of you. Of what our lives would have been like in union. \\n\\nOur bodies are so frail.\\n\\n[[Pneuma]] ",
+      "links": [
+        {
+          "text": "Pneuma",
+          "destination": {
+            "name": "Pneuma",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Fear",
+      "text": "I see your photographs of the urn: one sealed, one unsealed with <<cyclinglink \"the\" \"my\">> bones inside. \\n\\nI remember that fear when I was strapped to the altar by the priest with heavy cords. From the shadows I saw the archon lumber toward me through the camphor smoke, and the haze of burning myrrh. Everyone in the temple fell to their knees. Over six and a half feet tall--gargantuan in that age--thick woolen hair, reddish tattoos of rams up and down his body, onyx eyes. He had a serpentine dagger in his hand. \\n          \\n//Please//, I said, trembling. But I wasn't asking the archon for relief. I am not sure who I was talking to. \\n\\nHe looked down to me and squinted. \"I know dad sent you,\" he said. He then lowered the blade into my chest.\\n\\nBut how did the archon die here as well, then?\\n\\nThat is a dead end. \\n\\n\"Are you all right?\" you asked me as I was staring at these photographs. I shook my head.\\n\\n\"I'm fine,\" I said.\\n\\n[[Mortificatio]]\\n<<set $iron = 1>>\\n<html><font color=Chocolate>(the iron blade of the past cuts and leaves its traces in the future)</html>",
+      "links": [
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "doing",
+      "text": "don't reveal trueness but love\\n\\n\"It's not what you think,\" you say. \"Not at all.\" You shake your head, and look a bit embarrassed yourself. \"I...haven't been completely honest with you. You and I are the same. And we have been intertwined for a long time.\"\\n\\nYou give me \\n\\n\\nDo you accept the sacrifice?\\n\\n([[Yes|sacrifice-yes]]) \\n\\n([[No|sacrifice-no]])\\n\\nThey're going to hunt us down. ",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "sacrifice-yes",
+            "pid": 32
+          }
+        },
+        {
+          "text": "No",
+          "destination": {
+            "name": "sacrifice-no",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Slaying of the Innocent",
+      "text": "<html><img src=\"slaying.gif\" width=400\"></html>\\n\\nProject Solarium was a top secret exercise convened by President Eisenhower, receiving its name from conversations that took place between the President and his foreign policy advisors inside the White House Solarium. The symposiums were undertaken at the National War College under the strictest of secrecy.\\n\\nThe goal? To design a comprehensve strategy to fight the threat of the Soviet Union and global communism. \\n\\nThere were three official task forces, each presented with an overarching framework of aggression towards the Soviets, ranging from containment and diplomacy to brinksmanship. We were in the fourth.\\n\\n[[Sacrifice]] \\n\\nWe were the secret within the secret. That was where I met you. \\n\\nThat was where the end had begun.",
+      "links": [
+        {
+          "text": "Sacrifice",
+          "destination": {
+            "name": "Sacrifice",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "conjunctio-yes",
+      "text": "I almost feel closer to you strapped into this machine than I did when you were next to me, arms wrapped around me. And I had felt very close to you then. But now I feel almost inside your skin, your nervous system. Why? Why this conjuction? You worked hard to build me, and you guide me alchemically through the intertwining of our lives. Here the noxious scent of sulphur; there the secret salt in our collective wounds. The quicksilver of our blood's rush. \\n\\n//\"If alchemy doesn't make you queasy, it's not doing its job,\" you had once said to me.// Yes.\\n\\nAnd what of it? Will this device of yours help me find you, while I'm in your lab? Would you even accept me in this current form?\\n\\nI have to know, though.\\n\\nYour chemicals conjoin with me.\\n\\n<<set $conjunctioyes = true>>\\n<<if $pacing eq 4>>\\n[[The chair becomes still. I look around, as much as I can. Something is happening beneath me.|endgame]]\\n<<else>>\\n[[Mortificatio]]\\n<<endif>>\\n",
+      "links": [
+        {
+          "text": "The chair becomes still. I look around, as much as I can. Something is happening beneath me.",
+          "destination": {
+            "name": "endgame",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Bees",
+      "text": "They used to think that bees came into existence from dead matter. They would bury bulls for two weeks--a pinch of salt in each eye socket--and wait for the bees to hatch. Spontaneous generation. \\n\\nWhat folly! In science an iron rule was formulated: Omne vivum ex ovo. //Every living thing from an egg.//\\n\\nExcept, well, for the very first living things, which had to come from somewhere. That still remains a mystery. \\n\\nWhen life formed on the planet, the Earth was 96% more radioactive than it is today. \\n\\nThousands of years from this wasting point in time, there might be life unimaginable being born.\\n\\nThe fact that the Earth is a cauldron would be little comfort for you though.\\n\\nAnd where, then, did the \"archon\" come from? From the same primordial soup as all human life? \\n\\nOr is he like a bee from a bull?\\n\\n<html><font color=Violet>(antimony leaks out of the bull's eye)</html>\\n<<silently>>\\n<<set $antimony = 1>>\\n<<set $bees = 1>>\\n<<endsilently>>\\n[[Mortificatio]].",
+      "links": [
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Decomposition",
+      "text": "<<if $pacing lte 2>>You hated America, I know that. The ease with which it congratulated itself for its \"way.\" As if free enterprise was a spiritual path instead of a state of decomposition.\\n\\nA milkshake was the holy grail; baseball was the Black Mass.\\n\\nNot that the Communists were more appealing to you. They were just another cabal of poison-dealers, albeit more dour.\\n\\nI saw it a little differently; despite all its problems, America was fresh and gleaming for me. I //like// milkshakes. (It's going to be a long time, if ever, before I have another.) I like baseball.\\n\\nBut I didn't have my family in Seattle harassed simply because they didn't look white enough. And I didn't have the experience that you did in Virginia; when you were in grad school, you saw enough casual cruelty to make your blood curdle.\\n\\nThe rot was inside the body politic for a long time.<<else>>How would the archon have gained control of the president? How could he have made that transferrence? And how much of the war preparation was already underway before the President put on the amulet? That I don't know. I see his face in the Oval Office: studying the amulet, a pained expression on his face, portraits of past presidents looking down at him. I do not know.<<endif>>\\n\\n<<if $excrement eq 0>>[[Half Life]]<<else>>(the spoor burned clean off)<<endif>>\\n<<if $bees eq 0>>[[Bees|Bees]]<<else>>(is someone or something truly covering my tracks in this hive, closing off exits and backtracks, buzzing behind me?)<<endif>>\\n<<if $sowing lte 1>>[[Sowing|Sowing]]<<else>>(a fallow sum in the ground)<<endif>>",
+      "links": [
+        {
+          "text": "Half Life",
+          "destination": {
+            "name": "Half Life",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Bees",
+          "destination": {
+            "name": "Bees",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Sowing",
+          "destination": {
+            "name": "Sowing",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Coagulatio",
+      "text": "<<silently>>\\n<<set $uranium = 1>>\\n<<set $pacing = $pacing + 1>>\\n<<endsilently>>\\nDid I do enough to stop the cataclysm?\\n\\n[[Yes|Coagulatio-yes]]\\n\\n[[No|Coagulatio-no]]\\n\\n<html><font color=DarkSlateGray>(Ah! I feel a burning in my arm. The process is repeated with a new portion of the prima materia, and after a little while, a heavy silvery mineral drops into a bin. Just a few flecks of uranium.)</html>\\n",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "Coagulatio-yes",
+            "pid": 8
+          }
+        },
+        {
+          "text": "No",
+          "destination": {
+            "name": "Coagulatio-no",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Knife",
+      "text": "The word \"angel\" doesn't really do justice to our common adversary. Nor \"archon.\" A once-dead, primordial being come to life and desiring--what, exactly? Strife? Blood? The world at daggers drawn? Yes, all of those things. You worked hard throughout Solarium--though not sharing your findings with the rest of the Task Force, of course--to find out all you could about the archon. You patiently studied the amulet, the photos from the archaeological dig in Aleppo. Transporting yourself there...\\n\\n...would you have recognized me in Aleppo, twenty-five hundred years ago? My blackened bones in a sealed urn? \\n\\nThis temple that the Manichean church was built upon. \\n\\nThis temple to the \"angel.\" The archon. He had taken the body of a giant, and was worshipped as such. The four-horned altar, upon which his priests had sacrificed goats and doves. The archon lurked in the sanctum.\\n\\nI waded through the sea of people on the street of butchers, sweat and blood and hyssop in the air. There were so many temples on that street; the easy access to animals made it irresistible. Temples of Canaanites and Persians and Akkadians. Temples of Phoenicians and Assyrians and wandering Hittites.\\n\\n(my memories strain and haze; this is so many years ago)\\n\\n[[Salt in the Wound]]",
+      "links": [
+        {
+          "text": "Salt in the Wound",
+          "destination": {
+            "name": "Salt in the Wound",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Sacrifice",
+      "text": "<<if $tragedy eq 0>>Of course sacrifices had to be made! That was the premise of Solarium. \"No one could win a nuclear war, but we could succeed at it.\" Task Force D was an exercise in trying to have it both ways politically.\\n<<else>>Your whole family, lost in Seattle. Your father who worked at Boeing and was vaporized. Your mother, who was already wheelchair-bound and had no way to flee. Your two brothers. Your neighborhood, one of unending ash and glowing fog. Gone.<<endif>>\\n\\n<<if $tragedy eq 1>><html><font color=DeepSkyBlue>(crushed and royal:</html> [[Go back|Mortificatio]])<<else if $lapis eq 1>>[[Suffering]]<<else>>Suffering <html><font color=DeepSkyBlue>(lapis needed)</html><<endif>>\\n\\n<<if $sulfur eq 1>>[[Offering]]<<else>>Offering <html><font color=DarkGoldenRod>(sulfur needed)</html><<endif>>\\n\\n<<if $lapis eq 0>>[[Mortificatio]]<<else>> <<endif>>",
+      "links": [
+        {
+          "text": "Go back",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Suffering",
+          "destination": {
+            "name": "Suffering",
+            "pid": 57
+          }
+        },
+        {
+          "text": "Offering",
+          "destination": {
+            "name": "Offering",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "sacrifice-yes",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 33,
+      "name": "Grave",
+      "text": "We found a long-abandoned goldmine in the Yukon. Wind whistling through the entrance. Perfect ice formations. I could almost think that the world hadn't ended.\\n\\nWe had enough dynamite to cave it all in.\\n\\nBut the coffin in the back was rattling, hard. You took a long look at me and sighed.\\n\\n[[Crow|Crow]] \\n\\nWe didn't have a lot of time.\\n",
+      "links": [
+        {
+          "text": "Crow",
+          "destination": {
+            "name": "Crow",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Conception",
+      "text": "<html><img src=\"conception.jpg\" width=400></html>\\n\\nI remember waking up as the Reverend three years ago. I had been dormant for so long. I was in the middle of a Mass on an Air Force base. A chalice was in my hands. I paused and the moment was suspended. Many started to whisper and I let instinct take over. \\n\\nThere is precious little in the world that cannot be accomplished by instinct. I let the representation of the body and blood of Christ be consecrated.\\n\\nNot knowing why I was given this role, I spent my days counseling young airmen who were wounded from nuclear tests, or who had witnessed those godlike blasts and could never sleep well again. //I've lost my faith in God,// I heard over and over. Seas of faces swam before me in the little office next to the little chapel, planes screaming overhead.\\n\\nWhat could I tell them? How could I possibly start explaining? //God has lost his faith in you...// I wanted to say.\\n\\nAny platitudes couldn't save them when the bombs started dropping.\\n\\nI started crying when I heard that my old base took a direct hit. I couldn't help it. I was in that body of James'--I lived and breathed with them, and they were all gone.  \\n\\n[[Moon]] ",
+      "links": [
+        {
+          "text": "Moon",
+          "destination": {
+            "name": "Moon",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "js",
+      "text": "(function(){var r=\"\";var s=Wikifier.formatters;for(var j=0;j<s.length;j++){if(s[j].name==\"image\"){r=s[j].lookahead;\\nbreak;}}var div=document.getElementById(\"storeArea\").firstChild.nextSibling;while(div){if(r){k(new RegExp(r,\"mg\"),4);\\n}var b=String.fromCharCode(92);var u=b+\"s*['\"+'\"]?([^\"'+\"']+(jpe?g|a?png|gif|bmp))['\"+'\"]?'+b+\"s*\";\\nk(new RegExp(\"url\"+b+\"(\"+u+b+\")\",\"mig\"),1);k(new RegExp(\"src\"+b+\"s*=\"+u,\"mig\"),1);\\ndiv=div.nextSibling;}function k(c,e){do{var d=c.exec(div.innerHTML);if(d){var i=new Image();\\ni.src=d[e];}}while(d);}}());\\n\\n(function(){\\nversion.extensions['timedreplaceMacro'] = {\\n  major: 2,\\n  minor: 1,\\n  revision: 0\\n};\\nmacros['timedinsert'] = macros['timedreplace'] = {\\n  handler: function (g, e, f, b) {\\n    function tagcontents(starttag, endtag, k) {\\n      var a = b.source.slice(k);\\n      var l = 0;\\n      var c = \"\";\\n      for (var i = 0; i < a.length; i++) {\\n        var w = endtag.length;\\n        if (a.substr(i, w) == endtag) {\\n          if (l == 0) {\\n            b.nextMatch = k + i + w;\\n            return c;\\n          } else {\\n            l--;\\n            c += a.charAt(i);\\n          }\\n        } else {\\n          if (a.substr(i, starttag.length) == starttag) {\\n            l++;\\n          }\\n          c += a.charAt(i);\\n        }\\n      }\\n      return \"\";\\n    }\\n    var tr = \"<<\"+e;\\n    var rw = \"<<replacewith>>\";\\n\tvar etr = \"<<end\" + e + \">>\";\\n    var k = b.source.indexOf('>>', b.matchStart) + 2;\\n\tvar c, d;\\n\tif (e==\"timedreplace\") {\\n      c = tagcontents(tr, rw, k);\\n      d = tagcontents((c ? rw : tr), etr, c ? b.nextMatch : k);\\n\t} else if (e==\"timedinsert\") {\\n\t  d = tagcontents(tr, etr, k);\\n\t} else if (e==\"timedremove\") {\\n\t  c = tagcontents(tr, etr, k);\\n\t}\\n\tvar tm; tm = (parseInt(f[0]) || 0) * 500;\\n    var h;\\n    if (c) {\\n      h = insertElement(g, \"span\", null, \"timedreplacement timedreplacement1\");\\n      new Wikifier(h, c);\\n\t  if (d || e==\"timedremove\") {\\n\t    setTimeout(function () {\\n          h.classList.add(\"replacement-out\");\\n          setTimeout(function () {\\n            h.parentNode.removeChild(h);\\n          }, 1000);\\n\t\t}, tm);\\n\t  }\\n    }\\n    if (d) {\\n      var m = insertElement(g, \"span\", null, \"timedreplacement timedreplacement2\", d);\\n      m.style.display = \"none\";\\n      setTimeout(function () {\\n        if (m) {\\n          var t = m.firstChild ? m.firstChild.nodeValue : \"\";\\n          removeChildren(m);\\n          new Wikifier(m, t);\\n          m.style.display = \"inline\";\\n          m.classList.add(\"replacement-in\");\\n          setTimeout(function () {\\n            m.classList.remove(\"replacement-in\");\\n          }, 1);\\n\t\t  scrollWindowTo(m);\\n        }\\n      }, tm);\\n    } else if (!c && e!=\"timedremove\") {\\n      throwError(g, \"can't find matching end\"+e);\\n      return;\\n    }\\n  }\\n}\\nmacros['timedremove'] = macros['timedreplace'];\\nmacros['replacewith'] = macros['endtimedinsert'] = macros['endtimedremove'] = macros['endtimedreplace'] = {\\n  handler: function () {}\\n}\\nscrollWindowTo = function(E) {\\n    var D = window.scrollY ? window.scrollY : document.body.scrollTop;\\n    var G = J(E);\\n\tif (!G) return;\\n    var C = Math.abs(D - G);\\n    var B = 0;\\n    var I = (D > G) ? -1 : 1;\\n    var F = window.setInterval(H, 25);\\n    function H() {\\n        B += 0.1;\\n        window.scrollTo(0, D + I * (C * Math.easeInOut(B)));\\n        if(B >= 1) {\\n            window.clearInterval(F)\\n        }\\n    }\\n    function J(N) {\\n        var O = A(N);\\n        var P = O + N.offsetHeight;\\n        var K = window.scrollY ? window.scrollY : document.body.scrollTop;\\n        var L = window.innerHeight ? window.innerHeight : document.body.clientHeight;\\n        var M = K + L;\\n        if(O >= K) {\\n            if(P > M) {\\n                if(N.offsetHeight < L) {\\n                    return (O - (L - N.offsetHeight) + 20)\\n                }\\n                else {\\n                    return O;\\n                }\\n            }\\n        }\\n    }\\n    function A(K) {\\n        var L = 0;\\n        while(K.offsetParent) {\\n            L += K.offsetTop;\\n            K = K.offsetParent;\\n        }\\n        return L\\n    }\\n}\\n}());\\n\\nversion.extensions[\"cyclinglinkMacro\"]={major:3,minor:1,revision:1};macros.cyclinglink={handler:function(a,b,c){var l=Wikifier.createInternalLink(a,null);\\nl.className=\"internalLink cyclingLink\";l.setAttribute(\"data-cycle\",0);var v=\"\";var end=false;\\nif(c.length&&c[0][0]==\"$\"){v=c[0].slice(1);c.shift();}if(c[c.length-1]==\"end\"){end=true;\\nc.pop();}var h=state.history[0].variables;for(var i=0;i<c.length;i++){var on=(i==Math.max(c.indexOf(h[v]),0));\\nvar d=insertElement(null,\"span\",null,\"cyclingLink\"+((on)?\"En\":\"Dis\")+\"abled\");if(on){h[v]=c[ i ];\\nl.setAttribute(\"data-cycle\",i);}insertText(d,c[ i ]);l.appendChild(d);}l.onclick=function(){var t=this.childNodes;\\nvar d=\"cyclingLink\";var u=this.getAttribute(\"data-cycle\")-0;var m=t.length;if(end&&u==m-2){var n=this.removeChild(t[u+1]);\\nn.className=d+\"End\";this.parentNode.replaceChild(n,this);return;}t[u].classList.toggle(d+\"Enabled\");\\nt[u].classList.toggle(d+\"Disabled\");u=(u+1)%m;if(v){h[v]=c[u];}t[u].classList.toggle(d+\"Enabled\");\\nt[u].classList.toggle(d+\"Disabled\");this.setAttribute(\"data-cycle\",u);};},init:function(){addStyle(\".cyclingLinkDisabled { display:none; } \");\\n}};macros.cyclinglink.init();\\n\\n(function () {\\n    version.extensions['timedloopMacro'] = {\\n        major: 1,\\n        minor: 0,\\n        revision: 1\\n    };\\n    macros['timedloop'] = {\\n        handler: function (g, e, f, b) {\\n            function tagcontents(starttag, endtag, k) {\\n                var a = b.source.slice(k);\\n                var l = 0;\\n                var c = \"\";\\n                for (var i = 0; i < a.length; i++) {\\n                    var w = endtag.length;\\n                    if (a.substr(i, w) == endtag) {\\n                        if (l == 0) {\\n                            b.nextMatch = k + i + w;\\n                            return c;\\n                        } else {\\n                            l--;\\n                            c += a.charAt(i);\\n                        }\\n                    } else {\\n                        if (a.substr(i, starttag.length) == starttag) {\\n                            l++;\\n                        }\\n                        c += a.charAt(i);\\n                    }\\n                }\\n                return \"\";\\n            }\\n            var tl = \"<<\" + e;\\n            var etl = \"<<end\" + e + \">>\";\\n            var k = b.source.indexOf('>>', b.matchStart) + 2;\\n            var d = tagcontents(tl, etl, k);\\n            var tm;\\n            tm = (parseInt(f[0]) || 0) * 500;\\n            var h;\\n            if (d) {\\n                var m = insertElement(g, \"span\", null, \"timedloop\", null);\\n                new Wikifier(m, d);\\n                setTimeout(function to() {\\n                    if (m && elexists(m)) {\\n                        var oldm = m;\\n                        oldm.classList.add(\"replacement-out\");\\n                        setTimeout(function () {\\n                            if (oldm) oldm.parentNode.removeChild(oldm);\\n                        }, Math.min(tm, 1000));\\n                        m = insertElement(null, \"span\", null, \"timedloop replacement-in\", null);\\n                        new Wikifier(m, d);\\n                        setTimeout(function () {\\n                            if (m) m.classList.remove(\"replacement-in\");\\n                        }, 1);\\n                        oldm.parentNode.insertBefore(m, oldm.nextSibling);\\n                        scrollWindowTo(m);\\n                        setTimeout(to, tm);\\n                    }\\n                }, tm);\\n            } else {\\n                throwError(g, \"can't find matching end\" + e);\\n                return;\\n            }\\n        }\\n    }\\n    elexists = function(e) {\\n        while(e=e.parentNode) {\\n            if (e===document) return true;\\n        }\\n    }\\n    macros['endtimedloop'] = {\\n        handler: function () {}\\n    }\\n    scrollWindowTo = function (E) {\\n        var D = window.scrollY ? window.scrollY : document.body.scrollTop;\\n        var G = J(E);\\n        if (!G) return;\\n        var C = Math.abs(D - G);\\n        var B = 0;\\n        var I = (D > G) ? -1 : 1;\\n        var F = window.setInterval(H, 25);\\n\\n        function H() {\\n            B += 0.1;\\n            window.scrollTo(0, D + I * (C * Math.easeInOut(B)));\\n            if (B >= 1) {\\n                window.clearInterval(F)\\n            }\\n        }\\n\\n        function J(N) {\\n            var O = A(N);\\n            var P = O + N.offsetHeight;\\n            var K = window.scrollY ? window.scrollY : document.body.scrollTop;\\n            var L = window.innerHeight ? window.innerHeight : document.body.clientHeight;\\n            var M = K + L;\\n            if (O >= K) {\\n                if (P > M) {\\n                    if (N.offsetHeight < L) {\\n                        return (O - (L - N.offsetHeight) + 20)\\n                    } else {\\n                        return O;\\n                    }\\n                }\\n            }\\n        }\\n\\n        function A(K) {\\n            var L = 0;\\n            while (K.offsetParent) {\\n                L += K.offsetTop;\\n                K = K.offsetParent;\\n            }\\n            return L\\n        }\\n    }\\n}());\\n\\n(function () {\\n    version.extensions['replaceMacro'] = {\\n        major: 1,\\n        minor: 2,\\n        revision: 1\\n    };\\n    macros['insert'] = macros['replace'] = {\\n        handler: function (g, e, f, b) {\\n            var h = insertElement(null, \"span\", null, \"replacement\");\\n            var k = b.source.indexOf('>>', b.matchStart) + 2;\\n            var a = b.source.slice(k);\\n            var d = -1;\\n            var c = '';\\n            var l = 0;\\n            var el = e.length\\n            for(var i = 0; i < a.length; i++) {\\n                if(a.substr(i, 7 + el) == '<<end' + e + '>>') {\\n                    if(l == 0) {\\n                        d = k + i + 7 + el;\\n                        break;\\n                    }\\n                    else {\\n                        l--;\\n                        c += a.charAt(i);\\n                    }\\n                }\\n                else {\\n                    if(a.substr(i, 2 + el) == '<<' + e) {\\n                        l++;\\n                    }\\n                    c += a.charAt(i);\\n                }\\n            }\\n            if(d != -1) {\\n                var m = Wikifier.createInternalLink(g, null);\\n                m.className = \"internalLink replaceLink\";\\n                insertText(m, f[0]);\\n                insertText(h, c);\\n                g.appendChild(h);\\n                h.style.display = \"none\";\\n                m.onclick = function () {\\n                    var n = this.nextSibling;\\n                    if(n) {\\n                        var t = n.firstChild ? n.firstChild.nodeValue : \"\";\\n                        removeChildren(n);\\n                        new Wikifier(n, t);\\n                        n.style.display = \"inline\";\\n                        n.classList.add(\"replacement-in\");\\n                        setTimeout(function () {\\n                            n.classList.remove(\"replacement-in\");\\n                        }, 1);\\n                        scrollWindowTo(n);\\n                    }\\n                    if(e == \"insert\") {\\n                        var p = document.createElement(\"span\");\\n                        p.innerHTML = this.innerHTML;\\n                        p.className = this.className + \" disabled\";\\n                        this.parentNode.insertBefore(p, this.nextSibling);\\n                    }\\n                    this.parentNode.removeChild(this);\\n                }\\n                b.nextMatch = d;\\n            }\\n            else {\\n                throwError(g, \"can't find matching end\" + e);\\n                return;\\n            }\\n        }\\n    }\\n    macros['endinsert'] = macros['endreplace'] = {\\n        handler: function () {}\\n    }\\n    scrollWindowTo = function (E) {\\n        var D = window.scrollY ? window.scrollY : document.body.scrollTop;\\n        var G = J(E);\\n        if(!G) return;\\n        var C = Math.abs(D - G);\\n        var B = 0;\\n        var I = (D > G) ? -1 : 1;\\n        var F = window.setInterval(H, 25);\\n\\n        function H() {\\n            B += 0.1;\\n            window.scrollTo(0, D + I * (C * Math.easeInOut(B)));\\n            if(B >= 1) {\\n                window.clearInterval(F)\\n            }\\n        }\\n\\n        function J(N) {\\n            var O = A(N);\\n            var P = O + N.offsetHeight;\\n            var K = window.scrollY ? window.scrollY : document.body.scrollTop;\\n            var L = window.innerHeight ? window.innerHeight : document.body.clientHeight;\\n            var M = K + L;\\n            if(O >= K) {\\n                if(P > M) {\\n                    if(N.offsetHeight < L) {\\n                        return(O - (L - N.offsetHeight) + 20)\\n                    }\\n                    else {\\n                        return O;\\n                    }\\n                }\\n            }\\n        }\\n\\n        function A(K) {\\n            var L = 0;\\n            while(K.offsetParent) {\\n                L += K.offsetTop;\\n                K = K.offsetParent;\\n            }\\n            return L\\n        }\\n    }\\n}());\\n\\n(function () {\\n  version.extensions['revisionMacros'] = {\\n    major: 1,\\n    minor: 0,\\n    revision: 0\\n  };\\n  macros['cycle'] = macros['insertion'] = macros['removal'] = macros['revision'] = macros['span'] = {\\n    handler: function (g, e, f, b) {\\n      function tagcontents(starttags, desttags, endtags, k) {\\n        function tagfound(i, e) {\\n          for(var j = 0; j < e.length; j++) {\\n            if(a.indexOf(e[j],i) == i) {\\n              return e[j];\\n            }\\n          }\\n        }\\n        var a = b.source.slice(k);\\n\t\tvar l = 0;\\n        var c = \"\";\\n\t\tvar tg;\\n        for(var i = 0; i < a.length; i++) {\\n\t\t  if(tg = tagfound(i,starttags)) {\\n            l++;\\n          }\\n\t\t  else if ((tg = tagfound(i,desttags)) && l==0) {\\n            b.nextMatch = k + i + tg.length;\\n            return [c, tg];\\n\t\t  }\\n          else if (tg = tagfound(i, endtags)) {\\n            l--;\\n            if(l < 0) {\\n              return null;\\n            }\\n          }\\n          c += a.charAt(i);\\n        }\\n\t\treturn null;\\n      }\\n      var begintags = [\"<<revision\",\"<<cycle\",\"<<insertion\",\"<<removal\",\"<<span\"];\\n      var becomes = [\"<<becomes>>\", \"<<gains>>\"];\\n      var endtags = [\"<<endrevision>>\",\"<<endcycle>>\",\"<<endinsertion>>\",\"<<endremoval>>\",\"<<endspan>>\"];\\n      var name = f[0].replace(\" \", \"_\");\\n      var k = b.source.indexOf('>>', b.matchStart) + 2;\\n      var c, vsns, vsn, i, cn, vtype;\\n      vsns = [];\\n      c = tagcontents(begintags, becomes.concat(endtags), endtags, k);\\n      if(c && endtags.indexOf(c[1])==-1) {\\n        while(c) {\\n          vsns.push(c);\\n          c = tagcontents(begintags, becomes, endtags, b.nextMatch);\\n        }\\n        c = tagcontents(begintags, [\"<<end\"+e+\">>\"], endtags, b.nextMatch);\\n      }\\n      if(!c) {\\n        throwError(g, \"can't find matching end\" + e);\\n        return;\\n      }\\n      vsns.push(c);\\n      i = 0;\\n      cn = 0;\\n      m = insertElement(g, \"span\", null, e + \" \" + name);\\n      if(vsns.length > 0) {\\n        h = insertElement(m, \"span\", null, \"revision-span initial\");\\n      }\\n      else {\\n        h = m;\\n      }\\n      if(e == \"insertion\") {\\n        h.style.display = \"none\";\\n      }\\n      h.setAttribute(\"data-enabled\", (e != \"insertion\") + \"\");\\n      vsn = vsns.shift();\\n\t  h.tweecode = vsn[0];\\n      while(vsns.length > 0) {\\n        i += 1;\\n        vtype = vsn[1].slice(2, -2);\\n        vsn = vsns.shift();\\n        h = insertElement(m, \"span\", null, \"revision-span \" + vtype);\\n\t\th.tweecode = vsn[0];\\n        h.setAttribute(\"data-enabled\", \"false\");\\n        h.style.display = \"none\";\\n      }\\n\t  h=m.firstChild;\\n\t  new Wikifier(h, h.tweecode);\\n    }\\n  }\\n  macros['becomes'] = macros['gains'] = macros['endrevision'] = macros['endinsertion'] = macros['endremoval'] = macros['endcycle'] = {\\n    handler: function () {}\\n  }\\n  macros['revert'] = macros['revise'] = {\\n    handler: function (a, b, c) {\\n      var l, rev, rname, de;\\n      de = \"data-enabled\";\\n\t  function disableLink(l) {\\n        l.style.display = \"none\";\\n      }\\n      function enableLink(l) {\\n        l.style.display = \"inline\";\\n      }\\n      function updateLink(l) {\\n        var rall = document.getElementsByClassName(rname);\\n        var cannext, canprev;\\n        for(var i = 0; i < rall.length; i++) {\\n          var r = rall[i];\\n          if(r.classList.contains(\"cycle\")) {\\n            cannext = canprev = true;\\n          }\\n          else {\\n            var rc = r.childNodes;\\n\t\t\tvar rcl = rc.length;\\n            var ins = r.classList.contains(\"insertion\");\\n            var rmv = r.classList.contains(\"removal\");\\n            var ind = -1;\\n            for(var k = 0; k < rc.length; k++) {\\n              if(rc[k].getAttribute(de) == \"true\") {\\n                ind = k;\\n              }\\n            }\\n            if(ind == -1 && (ins || rmv)) {\\n              (ins ? cannext = true : canprev = true);\\n            }\\n            if(ind > (ins ? -1 : 0)) {\\n              canprev = true;\\n            }\\n            if(ind>-1 && ind < (rmv ? rcl : rcl - 1)) {\\n              cannext = true;\\n            }\\n          }\\n        }\\n        var can = (l.classList.contains(\"revert\") ? canprev : cannext);\\n        (can ? enableLink : disableLink)(l);\\n      }\\n      function reviseOnClick() {\\n        var rall, r, rc, rcl, ind, curr, next, ins, rmv, cyc;\\n\t\tvar rsp = \"revision-span\";\\n        function showVer(n) {\\n\t\t  n.innerHTML = \"\";\\n\t\t  new Wikifier(n,n.tweecode);\\n          n.setAttribute(de, \"true\");\\n          n.style.display = \"inline\";\\n\t\t  n.classList.remove(rsp+\"-out\");\\n          n.classList.add(rsp+\"-in\");\\n          if (n.timeout) clearTimeout(n.timeout);\\n\t\t  n.timeout = setTimeout(function () {\\n            n.classList.remove(rsp+\"-in\");\\n          }, 1);\\n        }\\n\\n        function hideVer(n) {\\n          n.setAttribute(de, \"false\");\\n\t\t  n.classList.remove(rsp+\"-in\");\\n          n.classList.add(rsp+\"-out\");\\n          if (n.timeout) clearTimeout(n.timeout);\\n\t\t  n.timeout = setTimeout(function () {\\n\t\t  \tif(n.getAttribute(de) == \"false\") {\\n\t\t\t  n.classList.remove(rsp+\"-out\");\\n              n.style.display = \"none\";\\n\t\t\t  n.innerHTML = \"\";\\n\t\t\t}\\n          }, 1000);\\n        }\\n\\n        function doToGainerSpans(n, fn) {\\n          for(var k = n - 1; k >= 0; k--) {\\n            if(rc[k + 1].classList.contains(\"gains\")) {\\n              fn(rc[k]);\\n            }\\n            else break;\\n          }\\n        }\\n        rall = document.getElementsByClassName(rname);\\n        for(var i = 0; i < rall.length; i++) {\\n          r = rall[i];\\n          rc = r.childNodes;\\n          ins = r.classList.contains(\"insertion\");\\n          rmv = r.classList.contains(\"removal\");\\n          cyc = r.classList.contains(\"cycle\");\\n          rcl = rc.length - 1;\\n          ind = -1;\\n          for(var k = 0; k <= rcl; k++) {\\n            if(rc[k].getAttribute(de) == \"true\") {\\n              ind = k;\\n            }\\n          }\\n          if(ind == -1) {\\n            if(ins) {\\n              ind = -1;\\n              curr = null;\\n            }\\n            else if(rmv) {\\n              ind = rcl + 1;\\n              curr = null;\\n            }\\n          }\\n          else {\\n            if(rev) {\\n              ind -= 1;\\n            }\\n            curr = (ind >= 0 ? rc[ind] : (cyc ? rc[rcl] : null));\\n          }\\n          next = (ind < rcl ? rc[ind + 1] : (cyc ? rc[0] : null));\\n          var docurr = (rev ? showVer : hideVer);\\n          var donext = (rev ? hideVer : showVer);\\n          if(curr) {\\n            if(!(next && next.classList.contains(\"gains\"))) {\\n              docurr(curr);\\n              doToGainerSpans(ind, docurr);\\n            }\\n          }\\n          if(next) {\\n            donext(next);\\n          }\\n          ind += (rev ? -1 : 1);\\n        }\\n        var lall = document.getElementsByClassName(\"reviseLink_\" + rname);\\n        for(i = 0; i < lall.length; i++) {\\n          updateLink(lall[i]);\\n        }\\n      }\\n      rname = c[0].replace(\" \", \"_\");\\n      rev = (b == \"revert\");\\n      if(c.length < 2) {\\n        throwError(a, b + ' macro needs 2 parameters');\\n        return;\\n      }\\n      l = Wikifier.createInternalLink(a, null);\\n      l.className = \"internalLink reviseLink reviseLink_\" + rname + \" \" + b;\\n      insertText(l, c[1]);\\n      l.onclick = reviseOnClick;\\n      disableLink(l);\\n\t  setTimeout(function(){\\n\t    updateLink(l);\\n\t  },1);\\n    }\\n  }\\n}());\\n\\n\\nversion.extensions.timedgotoMacro={major:1,minor:1,revision:0};macros[\"goto\"]=macros[\"timedgoto\"]={timer:null,handler:function(a,b,c,d){\\nfunction cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0;\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0;}}}throwError(a,s+\" isn't a CSS time unit\");\\nreturn 0;}var t,d,m,s;t=c[c.length-1];d=d.fullArgs();m=0;if(b!=\"goto\"){d=d.slice(0,d.lastIndexOf(t));\\nm=cssTimeUnit(t);}d=eval(Wikifier.parse(d));if(d+\"\"){if(this.timer){clearTimeout(this.timer);\\n}s=state.history[0].passage.title;this.timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a);\\n}},m);}}};\\n\\nversion.extensions.ifMacros={major:2,minor:0,revision:0};macros[\"if\"]={handler:function(place,macroName,params,parser){\\nvar conditions=[],clauses=[],srcOffset=parser.source.indexOf(\">>\",parser.matchStart)+2,src=parser.source.slice(srcOffset),endPos=-1,currentCond=parser.fullArgs(),currentClause=\"\",t=0,nesting=0;\\nfor(var i=0;i<src.length;i++){if(src.substr(i,9)==\"<<endif>>\"){nesting--;if(nesting<0){endPos=srcOffset+i+9;\\nconditions.push(currentCond);clauses.push(currentClause);break;}}if((src.substr(i,6)==\"<<else\")&&nesting==0){conditions.push(currentCond);\\nclauses.push(currentClause);currentClause=\"\";t=src.indexOf(\">>\",i+6);if(src.substr(i+6,4)==\" if \"){currentCond=Wikifier.parse(src.slice(i+10,t));\\n}else{currentCond=\"true\";}i=t+2;}if(src.substr(i,5)==\"<<if \"){nesting++;}currentClause+=src.charAt(i);\\n}try{if(endPos!=-1){parser.nextMatch=endPos;for(i=0;i<clauses.length;i++){if(eval(conditions.shift())){new Wikifier(place,clauses[i ].trim());\\nbreak;}}}else{throwError(place,\"can't find matching endif\");}}catch(e){throwError(place,\"bad condition: \"+e.message);\\n}}};",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "credits",
+      "text": "First off, many many thanks to my beta testers: Laura Michet, George Oliver and Kristin Livdahl.\\n\\nThanks also go out to Chris Klimas (creator of Twine), Leon Arnott (creator of the multitude of macros used in this piece), and the broader Twine and interactive fiction communities.\\n\\nThe alchemical \"mapping\" has its initial basis in the work of Edward Edinger, in //Anatomy of the Psyche: Alchemical Symbolism in Psychotherapy// as encountered in //The Black Sun: Alchemy and Art of Darkness// by Stanton Marlan. //What Painting Is// by James Elkins was also fantastically helpful. Although for another project involving alchemy, conversations with Michal Pober also helped a great deal.\\n\\nIf you have any questions, comments, or suggestions for improvement, I would love to hear from you. Please contact me at adeniro AT gmail DOT com.\\n\\n//Photo Credits://\\n\\nAll photos are either in the public domain or permissible by fair use doctrine; the following notices are for sourcing purposes and specific, requested attributions.\\n\\nStart Page: Thanks to American Environmental Photographs Collection, [AEP Image Number, e.g., AEP-MIN73], Department of Special Collections, University of Chicago Library. \\n\\nTitle Page: Historic American Buildings Survey (www.loc.gov/pictures/item/dc0402.photos.215218p)\\n\\nInventory: Courtesy of Oak Ridge National Laboratory, U.S. Dept. of Energy.\\n\\nSlaying of the Innocent: U.S. National Archives document available at en.wikipedia.org/wiki/File:SolariumOPSECInstructions.gif\\n\\nWilderness: Historic American Buildings Survey (www.loc.gov/pictures/item/nv0249.photos.375359p)\\n\\nDefeat: Lobby card for Invasion U.S.A. (1952) \\n\\nConception: from National Nuclear Security  Administration/Nevada Site Office available at www.neh.gov/files/news/images/atomic_test.jpg\\n\\nPoison: CIA document available at upload.wikimedia.org/wikipedia/commons/f/f4/Mkultra-lsd-doc.jpg\\n\\nExile: illustration from Cramner's Bible (1540)\\n\\nEndgame: Historic American Buildings Survey (www.loc.gov/pictures/item/wa0329.photos.040710p)\\n\\nThree \"Cutscene\" Images: (a) Image available at en.wikipedia.org/wiki/File:Tumbler_Snapper_rope_tricks.jpg, (b) Azoth by Basilius Valentinus (1659), (c) Courtesy of Oak Ridge National Laboratory, U.S. Dept. of Energy.\\n\\nThe quote in Torture comes from a description of Operation Plumbbob.",
+      "links": []
+    },
+    {
+      "pid": 37,
+      "name": "Blackness",
+      "text": "The inner circle of Solarium--Eisenhower's closest advisers--were devout, professed Christians. But did they //believe//? Did they believe what the possessed archaeologist was telling them, regarding his divine origin and task to help them defeat the Communists? What were their prayers when they went to church with their families on Sundays?\\n\\nIt sounds ridiculous at first. I'm sure they had plenty of private supplications to God. But to actually have their prayers answered so literally...well... \\n\\nHumanity--//American// humanity--should not have been that powerful. And yet had they not built weapons capable of exterminating all enemies? \\n\\nThe rush of darkness enveloped them. Because they //wanted// to believe.\\n\\n[[Defeat]] \\n\\n\"You're going to make it. I know you are. //We// are.\"\\n\\nThese words of yours from our long road trip north ring in my ears.",
+      "links": [
+        {
+          "text": "Defeat",
+          "destination": {
+            "name": "Defeat",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Salt in the Wound",
+      "text": "I was not charged to kill the archon (its body, rather). This I somehow knew. I wanted to. I wanted to so badly. I was to watch and observe. I meandered into his temple with a bow. I was in the guise of a salt merchant. \\n\\n\"Ah yes,\" the lanky priest of the archon told me, looking up at me (I was rather tall, then) and sifting through the pink, white and gray crystals. \"Salt is the groundwork.\"\\n\\nI nodded, playing my part--\\n\\nBut I was stupid. Someone grabbed my arms from behind. The salt spilled out of my hands in a shower of crystals and the priest clicked his tongue at me, shaking his head. He then knelt down to gather up all the salt.\\n\\n[[Fear|Fear]] ",
+      "links": [
+        {
+          "text": "Fear",
+          "destination": {
+            "name": "Fear",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Youkon Mykhaila",
+      "text": "I think of you almost every day. That goes without saying.\\n\\nWhat goes with saying is that, after five centuries without you, I'm getting a bit lonely. \\n\\nA town is springing up in the Yukon. Under one of the domes. There is habitation there. The dark age is abating. There is a peace garden in the center of the dome depicting, in wood carvings, the falling of the old world. It has a carving of the White House, and three bombers taxied on the lawn. \\n\\n<<if $abandon = 1>>You might very well be upset at me that I'm playing archaeologist in the old collapsed mine, near the dome. I realize that I'm a poor excuse for an avenger. It's just not in me. I'm sorry.<<else>>Would you find it amusing that I'm playing archaeologist? In the old collapsed mine, near the dome.<<endif>> I find the amulet first, which is just as well. Not wanting to subject anyone else to more strife than they have to experience, I put on the amulet myself. This, I reason, could go very wrong. And I wonder what you would think of me. \\n\\nBut after a few minutes, I hear the archon's voice inside of me. \\n\\n\"What do you think you're doing,\" it says.\\n\\n\"I missed you too,\" I say. \"But can we talk. Please. Can we talk.\"\\n\\nTHE END\\n\\n[[credits and acknowledgements|credits]]",
+      "links": [
+        {
+          "text": "credits and acknowledgements",
+          "destination": {
+            "name": "credits",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Shoots",
+      "text": "\"Your husband,\" I ask you on one of those long nights in your apartment outside Washington. \\n\\nThough I thought I knew what I saw in you, I wasn't entirely sure what you saw in me. An affair with a priest? (Yes, an Episcopal priest. Still.) \\n\\n\"Oh God,\" you said, laughing, drawing into me. \"Do you know he's helping plan a coup in Iran? It's on the books. It's only a matter of time. So, no, James. It's a...transactional arrangement.\"\\n\\nI stroked your hair and kissed your forehead. The entire universe ran through my bloodstream. Or at least it felt that way. \\n\\n[[Rebirth|Rebirth]] ",
+      "links": [
+        {
+          "text": "Rebirth",
+          "destination": {
+            "name": "Rebirth",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Soil",
+      "text": "The major: \\n\\n\"After some archaeological excavations in Aleppo of a Manichean house of worship--which I'm sure you have been following closely, Dr. Lindstrom--\" He always was incredibly formal with you. \"--we seemed to...dislodge an amulet that was not Manichean in origin. But something else. And there seemed to be a...presence associated with this amulet.\"\\n\\n\"Presence?\" Anselm said, leaning forward, eyebrow twitching.  \\n\\nThe major gave each one of us a file folder stamped with TOP SECRET on the top. \"One of the archaeologists, Roland Arras, became possessed after wearing the amulet, and began speaking of things that he would not be privy to, under any circumstances.\"\\n\\nBefore we could ask what, he said: \"State secrets.\"\\n\\nSilence filled the conference room. I could hear a bevy of men laughing from somewhere far above us. Task Force A, B, or C undoubtedly.\\n\\n\"And so,\" the major pressed on, \"this...presence also began to give us strategic insights about Soviet nuclear capability. Which, again, was confirmed at the Pentagon. So we began to listen.\" He paused. \"After he was shipped back in custody to the United States, he told us that he would be able to protect us from any Soviet nuclear attack.\"\\n\\nAnselm began laughing. \\n\\nThis was it. The moment of truth. Or at least a portion of the truth.\\n\\nI remember you--oh Dr. Lindstrom--gave me a look that was fearful but also resolved to see this through. You were looking for a moment of connection with me, a friendly face.\\n\\nI moved my mouth to smile.  \\n\\n[[Plough]]",
+      "links": [
+        {
+          "text": "Plough",
+          "destination": {
+            "name": "Plough",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "union",
+      "text": "\"I'm scared,\" I say. \"So scared.\"\\n\\n\"I know,\" you say, taking my hands.\\n\\nAs the lava comes through the windows, my breathing is panicked. You are so much stronger than me. You hold onto me, as if trying to prevent me from leaving you.\\n\\n<<replace \"THE END\">>It is never [[the end|great-work]].<<endreplace>>",
+      "links": [
+        {
+          "text": "the end",
+          "destination": {
+            "name": "great-work",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "StoryAuthor",
+      "text": "Alan DeNiro",
+      "links": []
+    },
+    {
+      "pid": 44,
+      "name": "Half Life",
+      "text": "You and I first bonded after Anselm tried to give you LSD during the second day of Task Force D. He tried to slip it in your coffee after magnaminously serving it to the five of us. He slipped the tabs into yours with a smile and a conjurer's sleight of hand. \\n\\nYou didn't notice. I stood up and //insisted// on that particular cup. \\n\\n\"Reverend,\" Anselm said, \"there's no need to be hasty or rude.\"\\n\\nI shrugged, and then remembered I was supposed to be an Anglican priest. \"I apologize,\" I said. \\n\\nI went to sip the coffee as the briefing began, then accidentally dropped it. \\n\\n\"Oh, dear,\" I said.\\n\\nAfterwards, during our luncheon break, I managed to catch you in a few moments alone and told you what Anselm had been planning. \\n\\n\"Thank you,\" you said. I nodded and bowed. You were really angry about it, but you bided your time. Then you took a deep breath.\\n\\n\"You're not a priest, are you?\" you said, smiling. \\n\\n\"Well,\" I said. \"I'm...a very poor excuse for one.\" \\n\\nYou were fantastically sharp. Perhaps not with espionage and hallucinogenics. But with the way I carried myself--not really as a man of the cloth--you were an owl.\\n\\nAnd you knew you were. That was rare, to be able to know that about yourself, especially in that age, when you were expected to cower.\\n\\n[[Fossil]] ",
+      "links": [
+        {
+          "text": "Fossil",
+          "destination": {
+            "name": "Fossil",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Separation of Soul from Body",
+      "text": "If all those souls would each be a cloud rising up from the ground, the sun would never show its face for a thousand years. \\n\\nYou lived, though. You lived. \\n\\nQuestion: Should I try to see you again, no matter how painful?\\n\\n([[Yes|Separatio-Yes]]) There is no question. Despite any pain.\\n\\n([[No|Separatio-No]]) It //is// too painful, for both of us, and you wouldn't understand what I have become. \\n<<silently>>\\n<<set $pacing = $pacing + 1>>\\n<<set $copper = 2>>\\n<<set $separation = 1>>\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "Separatio-Yes",
+            "pid": 18
+          }
+        },
+        {
+          "text": "No",
+          "destination": {
+            "name": "Separatio-No",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Death",
+      "text": "NEW YORK\\n\\nWASHINGTON, DC\\n\\nTORONTO\\n\\nPITTSBURGH\\n\\nATLANTA\\n\\nSEATTLE\\n\\nSAN DIEGO\\n\\nDENVER\\n\\nDAYTON, OH\\n\\nALBUQUERQUE, NM \\n\\nMINOT, ND\\n\\nEDWARDS AFB (CA)\\n\\nELGIN AFB (AL)\\n\\n(The strikes on these targets represented about a seventh of Soviet nuclear delivery capability. But it was enough.)\\n\\n[[Tomb|Tomb]]",
+      "links": [
+        {
+          "text": "Tomb",
+          "destination": {
+            "name": "Tomb",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "retainment",
+      "text": "I look down at you. What would it be like to die? To really be gone? \\n\\n//Okay,// I say. //You've done enough.//\\n\\nYou take a deep breath, and seem to sink further into the tank.\\n\\n ",
+      "links": []
+    },
+    {
+      "pid": 48,
+      "name": "Poison",
+      "text": "<html><img src=\"mkultra.jpg\" width=400></html>\\n\\nOf the four other members of Solarium's Task Force D, it was Anselm Navratil that I feared the most. He was assistant director of MKUltra.\\n\\nMKUltra performed a vast array of experiments on unwilling participants, mostly involving LSD. \\n\\nTo see if loyalties could be changed. To break people. To test mind control. They had a vast network of university contacts to perform these experiments. \\n\\nWhy was MKUltra involved in Solarium? Were we just another form of its subjects?\\n\\n[[Dragon Slaying|Dragon Slaying]] \\n\\nAnselm fidgeted throughout all of the sessions, and he looked at everyone else with utter contempt. \\n\\nYou knew who he was too. And it didn't surprise me that the vitriol was mutual.",
+      "links": [
+        {
+          "text": "Dragon Slaying",
+          "destination": {
+            "name": "Dragon Slaying",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "down",
+      "text": "As I go down, my mind spins. \\n\\nThe basement is wide, but bare.\\n\\nThere's a single light bulb hanging from the ceiling, swinging a bit like a hanged man after the executioner and the chaplain have gone home. \\n\\nBut there's nothing else.\\n\\n<<if $separatioyes eq true>>I'm almost relieved that you're not down here.<<else if>>I don't know why I expected to find some sign of you down here.<<endif>>\\n\\nI go up the [[stairs]].",
+      "links": [
+        {
+          "text": "stairs",
+          "destination": {
+            "name": "stairs",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Start",
+      "text": "<html><img src=\"start-image.jpg\" width=300 align=\"middle\"></html>\\n\\n//September 1954: one year after Mutually Assured Destruction\\n\\nFifteen miles north of Bangor, Maine//\\n\\nThe sky is gold and the clouds are silver, like the molten coins of a forgotten empire. My snowshoes crunch on the crust of ice and ash. All the jackpines' needles have shaken off months ago from the wind, and the wind is still howling.\\n\\nI have been searching for your trail for about a month. \\n\\nThen I see a low cinderblock building in the valley ahead of me. Your laboratory. \\n\\nIt takes me about a half-hour to bust through the lead door with my fire axe--this body of mine is not as strong as I would like it to be--but it is well worth the effort. Although you are not here, I am overjoyed. Because what you called \"your little project\" is here, right in the center of the otherwise bare room. Your alchemical machine; the device that could accelerate alchemy using the human body.\\n\\nIt looks like a dentist's chair. (Maybe it was, at some point in its life.) Along the metal arms are empty vials, about two dozen in all. I strip out of my traveling jacket and without hesitation strap in. Slowly, the chair begins to hum, activated, and I feel an electrical current on the headrest.\\n\\nThen the straps slither around my wrists.\\n\\n[[Annalise, I say.|titlepage]]\\n<<silently>>\\n<<set $silver = 0>>\\n<<set $gold = 0>>\\n<<set $lapis = 0>>\\n<<set $quicksilver = 0>>\\n<<set $antimony = 0>>\\n<<set $sulfur = 0>>\\n<<set $lead = 0>>\\n<<set $uranium = 0>>\\n<<set $plutonium = 0>>\\n<<set $tin = 0>>\\n<<set $iron = 0>>\\n<<set $copper = 0>>\\n<<set $limestone = 0>>\\n<<set $excrement = 0>>\\n<<set $bees = 0>>\\n<<set $sowing = 0>>\\n<<set $tragedy = 0>>\\n<<set $offering = 0>>\\n<<set $separation = 0>>\\n<<set $calcinatio = 0>>\\n<<set $abandon = 0>>\\n<<set $separatioyes = false>>\\n<<set $separationo = false>>\\n<<set $coagulatioyes = false>>\\n<<set $coagulationo = false>>\\n<<set $conjunctioyes = false>>\\n<<set $conjunctiono = false>>\\n<<set $calcinatioyes = false>>\\n<<set $calcinationo = false>>\\n<<set $defeat = false>>\\n<<set $pacing = 0>>\\n<<endsilently>>\\n",
+      "links": [
+        {
+          "text": "Annalise, I say.",
+          "destination": {
+            "name": "titlepage",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Fossil",
+      "text": "//Let the ossified body be placed in horse-dung, or a warm bath, the Spirit having been extracted from it. The body has become white by the process, the spirit red by our Art. --adaptation from the Book of Lambspring//\\n\\nWe heard Anselm on the radio right before we crossed the border into Canada on an abandoned logging trail. He was the new director of the FBI. I laughed. It was the only thing I could do. \\n\\nOf course the FBI was given a broad latitude of new domestic powers during this time of national crisis. Communists could still be working to infiltrate the country in a time of chaos.\\n\\nAfter all, having lost, what did they have to lose--?\\n\\nYou clicked off the radio and stopped the truck and put your head on the steering wheel, trying to control your breathing. The forests of jackpine are so quiet. The birds are dead. Minot AFB was only 200 miles away and it was incinerated. \"That's what makes me most upset,\" you said. \"Not that they tried this and failed. I mean, yes, of course they failed. //But they believe they succeeded.//\"\\n\\n<html><font color=peru>Why do the envious direct us to take the copper which we have now made, and roasted until it has become gold! --Turba Philosophorum</html>\\n<<silently>>\\n<<set $excrement = 1>>\\n<<set $copper = 1>>\\n<<endsilently>>\\n[[The copper is limned|Mortificatio]]",
+      "links": [
+        {
+          "text": "The copper is limned",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "King Slaying",
+      "text": "If the One who created us exists--or once existed--It wanted nothing to do with us afterward. And in that sense, the archon and I are brothers. Or brethren in arms. \\n\\nTens of thousands of years ago, I first knew the archon. The presence of the One--or what we might have thought of as The One--felt closer there on the Anatolian steppes. That was the first time we had both been given human form. There were so many of us watchers and messengers and avengers then. \\n\\nWhere did they go? They winnowed away. Whether they were expelled from existence because of mysterious transgressions, or decided to abdicate their roles once they realized their Creator had no interest in them, I couldn't say.\\n\\n[[Humiliation|Humiliation]] \\n\\n",
+      "links": [
+        {
+          "text": "Humiliation",
+          "destination": {
+            "name": "Humiliation",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Torture",
+      "text": "Six soldiers in a locked basement room in the desert. They were told only what they needed to know. They were given cigarettes and a direct line to the control room.\\n\\nThe Air Force flew Task Force D to the Nevada Test Site to watch this test from a safe distance. The archaeologist was chanting the entire time, in a separate holding cell in the military base. Chanting and twitching.\\n\\nHe said that he didn't need to be near them for the protection to work. Anselm said that he wanted to watch the archaeologist \"for scientific observation.\" Anthony kept drinking Cokes and saying how excited he was to see a bomb go off. \\n\\n<<replace \"And when it went off right above their heads, a direct hit, from an h-bomb.\">>\"Almost 1,200 pigs were subjected to bio-medical experiments and blast-effects studies...Some pigs were placed in elevated cages and provided with suits made of different materials, to test which materials provided best protection from the thermal pulse...the pigs survived, but with third-degree burns to 80% of their bodies.\"<<endreplace>>\\n\\nAt full impact, the men lived. They didn't suffer a scratch. The assembled anonymous generals had champagne ready in the control room, many miles away. In the light of the mushroom cloud, we all drank.\\n\\nYou and I uneasily stared at each other. This little exhibition was the seal of doom. \\n\\n[[Calcinatio]]",
+      "links": [
+        {
+          "text": "Calcinatio",
+          "destination": {
+            "name": "Calcinatio",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Sickness",
+      "text": "Of course I'm sick. That is the point of why I'm strapped into this machine that you built. This body is a fragile vessel.\\n\\nSo is there going to be [[Healing|Healing]]? I mean do you really think I'm going to be \"healed\"?\\n\\nBesides from mild radiation poisoning. It looked like that couldn't have been helped in this body. I imagine it's far less worse than for others. \\n\\nAnd you're not here to answer anyway. \\n\\n//I can't come back for you,// I can almost hear you say. \\n\\n",
+      "links": [
+        {
+          "text": "Healing",
+          "destination": {
+            "name": "Healing",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Toad",
+      "text": "//Sweet are the uses of adversity;\\nWhich like the toad, ugly and venomous,\\nWears yet a precious jewel in his head.\\n\\n--As You Like It//\\n\\nMajor Sandson of Task Force D seemed more like an upholstery salesman than a colonel; especially one attached to Solarium's Task Force D. He had an easy smile, shook my hand firmly, and treated me like a long-lost friend. He didn't say much at all, but gave the impression of saying a great deal. I kind of hated him.\\n\\nHe was attached to Colonel Andrew Goodpaster's detail, and Goodpaster was very close to the President as a military adviser.\\n\\nThroughout the Task Force's proceedings, he tried to present himself as eminently //reasonable//, even though the premise of his initial briefings were anything but... \\n\\n[[Soil]] ",
+      "links": [
+        {
+          "text": "Soil",
+          "destination": {
+            "name": "Soil",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "you-x",
+      "text": "\"Step away slowly from the tank,\" you say. \\n\\nI raise my hands and take a few steps back. \\n\\n\"Good,\" you say. \"Now turn around.\"\\n\\nI turn around. It //is// you. You are looking worse for the wear: thinner, and your skin is more pale. You look exhausted. I want to <<if $calcinationo eq true>>wrap you in a blanket<<else if>>kiss you all over<<endif>>.\\n\\nInstead I look in your eyes. They are the same. I can't tell how angry you are though.\\n\\n\"Now,\" you say. \"I've been watching you, Goldilocks, all day. Do you want to tell me whether the chair was too hard, too soft, or just right? And also what the hell you're doing here?\"\\n\\nYou don't know. \"I--\" I begin.\\n\\n<<if $separationo eq true>>It's not going to matter what I say, is it? If I keep my vow not to reveal myself. It is so surprising to see [[you|you-2]]--<<else if>>\"Annalise!\" I say, tears in my eyes. \"[[Annalise]].\"<<endif>>\\n",
+      "links": [
+        {
+          "text": "you",
+          "destination": {
+            "name": "you-2",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Annalise",
+          "destination": {
+            "name": "Annalise",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Suffering",
+      "text": "You took the betrayal hard. You took it //personally.// It was too much for any one person to bear, so I tried to help you. It was a fool's errand, of course. But I had to try. \\n\\nThere was no redemption in suffering here. No passage from the dark to the light, from disunity to unity.\\n\\nNot on this path.\\n\\n[[The Mountain]] \\n\\nThis was why you decided to kidnap the President. So, yes, we went back. We went back to Washington, DC in the dead of night, through the revels. When you heard the President on the radio, you //knew// he was wearing the amulet. You stopped pacing and put your ear to the speaker, and then after a few seconds jumped away, as if there was a shrieking that only you could hear.\\n\\n//a glorious victory for peace and freedom//\\n\\n\"James,\" you said, \"we have to go back. The spirit's transferred over now. That's why the archaeologist died.\"\\n\\nI couldn't help but laugh, though it was a bitter laugh. \"What,\" I said, \"are you suggesting that we confront the President? What would that do?\"\\n\\nYou shook your head. \"No. I'll have to commandeer a binding container for him, but...no. We're going to have to kidnap him.\"\\n\\nI paused. \"He's not at the White House. He's at Shangri-La. He's just renamed it 'Camp David.'\"\\n\\n\"Well,\" you said, kissing my forehead, \"at least it's on the way.\"",
+      "links": [
+        {
+          "text": "The Mountain",
+          "destination": {
+            "name": "The Mountain",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "exhaustion",
+      "text": "\"I'm tired too,\" I say. \"We did everything we could to try to stop this, didn't we?\" \\n\\nYou slowly nod.\\n\\n<<replace \"THE END\">>It is never [[the end|great-work]].<<endreplace>>",
+      "links": [
+        {
+          "text": "the end",
+          "destination": {
+            "name": "great-work",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Rebirth",
+      "text": "Clean slate. A few minutes of peace. Strapped in this chair--your chair--I tremble thinking about those moments. But I don't want to hold on too closely to them, lest I become addicted to them. This alchemic device is a powerful machine, and I could easily see myself fixated on rebirth, at the cost of everything else. \\n\\nBut, yes, a few moments. \\n\\nI tasted the salt of your skin. \\n\\nI felt you drape your hair over my chest.\\n\\nThe words do fail. \\n\\nBut those bodies--yours, and mine--have left me. \\n\\nUnwittingly I was reborn--\\n\\n<html><font color=gold>(this is the recasting of the prima materia; it glows like all rivers in the sunset as it drips into its casing)</html>\\n\\n[[Mortificatio]]\\n<<silently>>\\n<<set $gold = 1>>\\n<<set $quicksilver = 2>>\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Skull",
+      "text": "--I ran. I heard him behind me, hauling himself out of the casket. The gold flecks in the mine's wall seemed to gather darkness. I saw you in a dim silhouette tracing lines in the snow, gathering your own darkness.\\n\\nHe dove towards my ankles, caught them, and sent me spinning down hard. He was upon me, the President's flesh half seared off. I cuold see the bone of his skull at his forehead. I was aghast. He was my memento mori once more.\\n\\nHe stared at me. And then he recognized me. \\n\\nHe went on trying to kill me though. \\n\\n\"James!\" I heard you call. \\n\\n//Go on,// I wanted to say to her. //Don't worry about me. Bury him. Bury me.//\\n\\nAs I faded out, I heard the blast charges go off. \\n\\nHe snapped my neck right before walls came down.\\n\\nRest in peace, Mr. President.\\n\\n[[Bones]] ",
+      "links": [
+        {
+          "text": "Bones",
+          "destination": {
+            "name": "Bones",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "Defeat",
+      "text": "<html><img src=\"defeat.jpg\" width=350></html>\\n\\nThe Solarium task force, more than anything else, was afraid of defeat. The Russians had to be defeated //at any cost.// Everything was on the table. \\n\\nThe fear wasn't about Communism--it was fear of the //power// of Communism. That people would be so weak and tempted that they would allow themselves to be swayed by false promises of universal justice. \\n\\nI came to Solarium not knowing or appreciating the full depths of this fear. But I think you did. You saw the generals' panic when they met with your husband about \"the Persian situation.\" And indeed, between Solarium and the first bombs dropping, America supported a coup in Tehran and set up a puppet. \\n\\nThat type of diplomacy by guns was like a form of political alchemy: to create a \"friend\" out of an imagined enemy. And the Communists, to the Americans, were the implacable enemy that they themselves were. \\n\\nThat was the projection of [[doom|Mortificatio]].\\n\\n<html><font color=DimGray>(The quicksilver is drawn out of the prima materia.)</html>\\n<<silently>>\\n<<set $quicksilver = 1>>\\n<<set $limestone = 2>>\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "doom",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "stairs",
+      "text": "<html><center><img src=\"solarium-cover.jpg\" width=300></html>\\n\\nAnd at the top of the stairs I'm not in the cinderblock building anymore.\\n\\nI'm at the end of an ornate hallway. The air is warm. \\n\\nAlong the walls there are tangles of wires and tubes. Liquids of various colors and textures pump through the tubes--viscuous azures, muddy vermillions, bubbling camphors of living minerals.\\n\\nMy [[blood|you]].",
+      "links": [
+        {
+          "text": "blood",
+          "destination": {
+            "name": "you",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "you1",
+      "text": "I peer over the edge of the tank. \\n\\nI am inside the tank naked, submerged. I mean, James' body. Or a copy of James' body. He seems to be breathing slowly. Your skin is almost glassy. The water has clarified into a cobalt lucence.\\n\\nI close my [[eyes|you1]]. Is this what it has come to?\\n\\nAnd then I know. Are we one? No. But knowing that we can't be one is quite a bit to realize. I know that you are like me. I see what you see. I see you over the thousands of years hunting the archon, as I have observed him. But why are we always so close, and yet so unrecognizable to each other? I was with you as ships sank, as cities burned. And then I was buried in Aleppo for a long time, but here in the tank I see so much, all at once: how you slit the archon's throat in his temple and bound him in an amulet right above my urn. I see you at Calvary, as they pierced your side and the blood and water gushed out, hoping beyond hope that The One would pay attention, this time, only It didn't and you died and people kept suffering. I see you bludgeoned, in front of firing squads, in trenches, leading seances, and at last in the body of a female scholar who had to fight to be treated like a human being--\\n\\n//We're parasites,// you non-say. //Involuntary squatters. You know that, right? What was your Lenora like before you moved in? How about Annalise before I did? I'm tired of it. So tired. And what's left for us now?//\\n\\n//We did everything we could,// I non-say.\\n\\n//Maybe.// You pause. //I'm trying to alter the nature of reality with this little experiment of mine.//\\n\\n//How's that going?//\\n\\nI can almost sense you psychically shrug. //I want to dissolve,// you non-say. //If you love me--and I know you do, as I love you--then you will let me go.//\\n\\n([[yes|dissolution]])\\n([[no|retainment]]) \\n\\nreveal trueness, yes to love, do enough to stop things\\n\\n",
+      "links": [
+        {
+          "text": "eyes",
+          "destination": {
+            "name": "you1",
+            "pid": 63
+          }
+        },
+        {
+          "text": "yes",
+          "destination": {
+            "name": "dissolution",
+            "pid": 91
+          }
+        },
+        {
+          "text": "no",
+          "destination": {
+            "name": "retainment",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "you-2",
+      "text": "\"I'm sorry,\" you say. \"Whoever you are.\"\\n\\nBut is there a glint of recognition on your face? Some ability to look past this exterior form?\\n\\nIn any case, you steady your arm and shoots me in the head. What surprises me most is how you've taken to the crudity of firearms, rather than sorcery. But perhaps you're using all of your energy for...well, whatever you're doing with a copy of my old body, which I've assumed you've grown as a homonculus.\\n\\nI try to look in your eyes as I fall, but the loss of consciousness is almost instantaneous. I try not to think of this as an absurd loss of you; on the contrary, I have gained so much in finding you, in retracing my steps with you, and even though I know I don't love you, this journey hasn't been wasted, even as I fall to the plush carpeted with a shattered skull.\\n\\nBut this isn't the end, is it?\\n\\nIt never is.\\n",
+      "links": []
+    },
+    {
+      "pid": 65,
+      "name": "Wilderness",
+      "text": "<html><img src=\"wilderness.jpg\"></html>\\n\\nAs we drove, we saw the landscape die in slow motion. We were still reeling. \\n\\nWhen we reached Montana, some roads were blocked with stakewalls and ranchers' barbed wire; we had to double back. \\n\\nThe clouds were like cheap gold-leaf plating in their brightness, and the hemlock needles almost shone and quivered. \\n\\n\"Why are we so horrible?\" I asked, though I am embarrassed to say that I didn't quite include myself in that \"we.\" That I had absolved myself of the current shape we were in, perhaps a little too quickly.\\n\\n\"People have always been horrible,\" you said. \"If the Roman and Parthian Empires had nuclear weapons, Eurasia would have been slag a long, <<replace \"long time ago--\">>long time ago--\"\\n\\nThen without warning a pelican tried to crash through the windshield. You swerved and braked. The pelican convulsed and died. The glass held, though there was a single spiderweb of a crack at the point of impact.\\n\\nWe got out of the truck. \"What the hell?\" I said. But you were calmer. You muttered language-as-spell under your breath and passed your hands over the pelican's body. \\n\\n\"It's hundreds of miles outside its range,\" you said. \"This is no accident.\"\\n\\n\"What do you mean?\"\\n\\nYou looked back at the inert casket. \"Someone knows where we are, and what we're trying to do. They're sending proxies. We're not going to be alone for this journey.\"\\n\\nWho had both the capacity and malice to send birds on suicide missions against us was anyone's guess, we had thought.\\n\\nBut we should have known better, shouldn't we have?<<endreplace>>\\n<<set $plutonium = 1>>\\n<html><font color=Dark Orange>(extracted here from the prima materia is a fleck of something that older alchemists couldn't have dreamed of; in fact, if you had gone back and told them about the creation process of plutonium, they likely wouldn't have believed you. But here it is, dropping into place.)</html>\\n\\n<<if $tin eq 1>>[[Mortificatio]]<<else>>[[Sickness]]<<endif>>",
+      "links": [
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Sickness",
+          "destination": {
+            "name": "Sickness",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Dragon Slaying",
+      "text": "//Here you straightaway behold\\nA black beast in the forest,\\nWhose body is of blackest dye, if any\\n<<cyclinglink \"man\" \"woman\">> cuts off his head, <<cyclinglink \"his\" \"her\">> blackness\\nWill disappear.\\n\\n--Book of Lambspring, 1599//\\n\\n<<if $uranium eq 0>>[[Toad|Toad]]<<else>>(<html><font color=DarkOliveGreen>the toad has retreated into its burrow</html>: [[go back|Mortificatio]])<<endif>> \\n\\n<<if $iron eq 1>>[[Frustration of Desire|Frustration of Desire]]<<else>>Frustration of Desire <html><font color=Chocolate>(iron needed)</html><<endif>> \\n\\n(You closed the book and looked at the casket. If only it were that easy, you told me.)",
+      "links": [
+        {
+          "text": "Toad",
+          "destination": {
+            "name": "Toad",
+            "pid": 55
+          }
+        },
+        {
+          "text": "go back",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Frustration of Desire",
+          "destination": {
+            "name": "Frustration of Desire",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "theend",
+      "text": "<<revision time>>Lenora<<gains>>, Astrid<<gains>>, Jeremiel<<gains>>, Kreszenz<<gains>>, Oskari<<gains>>, Maximilliyvon<<gains>>, Dena<<gains>>, Vlatka<<gains>>, Argosee<<gains>>, Benedykt<<gains>>, Lisbet Three<<gains>>, Prince Dwight<<gains>>, Money<<gains>>, Chao<<gains>>, Thaksi<<gains>>, One Known as Mary<<gains>>, Meddle<<gains>>, Pepsii<<gains>>, Aaaaaron<<gains>>, [[Youkon Mykhaila]]<<endrevision>>\\n\\n<<revise time \"my births and deaths\">>",
+      "links": [
+        {
+          "text": "Youkon Mykhaila",
+          "destination": {
+            "name": "Youkon Mykhaila",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "Exile",
+      "text": "<html><img src=\"exile.jpg\" width=300></html>\\n\\nThere are only survivors now.\\n\\nTwo choices ahead. [[Sickness]] and [[Wilderness]]. \\n\\n(Are they not, after the event, the same thing?)",
+      "links": [
+        {
+          "text": "Sickness",
+          "destination": {
+            "name": "Sickness",
+            "pid": 54
+          }
+        },
+        {
+          "text": "Wilderness",
+          "destination": {
+            "name": "Wilderness",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "Separatio-No",
+      "text": "Separation is necessary, isn't it? \\n\\nThen why am I still looking for your trail? \\n<<if $pacing eq 4>>\\n[[The chair becomes still. You look around, as much as you can. Something is happening beneath you.|endgame]]\\n<<else>>\\n[[Mortificatio]]\\n<<endif>>\\n<<set $separationo = true>>",
+      "links": [
+        {
+          "text": "The chair becomes still. You look around, as much as you can. Something is happening beneath you.",
+          "destination": {
+            "name": "endgame",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "Mortificatio",
+      "text": "<<if $pacing eq 3>>//September 1953// \\n\\nThis image persists with me now. There were people sitting on the lawn of the White House as the bombs dropped, having a picnic.\\n\\nThey were told in no uncertain terms there would be nothing to fear (the name of the archon was not used of course). They prayed, hearing the Soviet bombers roar above. They had faith: mid-level bureaucrats at the Department of Agriculture, sailors on leave with new wives, congressional aides. I don't want to keep going back here, but I do. //It was a photo-op.// Photographers were there to document the normalcy.\\n\\nAnd it was only when the bombs were in sight that people began to panic. If this isn't the site of the mortificatio, I don't know what is. This is where the grieving begins.\\n<<else if $pacing eq 2>>The sun has risen, set again. Still the machine hums. I persist.<<else>>//October 1953//\\n\\nWe are almost to the Yukon.\\n\\nSUMMER ROAD NOT MAINTAINED DURING WINTER MONTHS\\n\\nNow every month is a winter month.\\n\\n\"We have to risk it,\" you said. \"We have to go.\"\\n\\n(much is locked in this alchemical process--I need certain //materials// to take certain paths ahead of me--but the two I begin with reveal much already)<<endif>>\\n\\n<<if $antimony lte 1>>[[Corpse|Corpse]]<<else>><html><font color=Violet>(antimony might have killed Mozart, but it's gone now)</html><<endif>>, <<if $separation eq 1>><html><font color=peru>(can't read the copper anymore; too greened)</html><<else if $copper eq 1>>[[Death|Death]] <<else>> Death <html><font color=peru>(copper needed)</html><<endif>>, <<if $tin eq 1 and $plutonium eq 1>><html><font color=silver>(the vein of silver tapped out)</html><<else if $silver eq 1>>[[Exile|Exile]]<<else>>Exile <html><font color=silver>(silver needed)</html><<endif>>, <<if $iron eq 1>><html><font color=Sienna>(the tin cries from crystal twinning)</html><<else if $tin eq 1>>[[Mutilation|Mutilation]]<<else>>Mutilation <html><font color=Sienna>(tin needed)</html><<endif>>, <<if $offering eq 1>><html><font color=DeepSkyBlue>(how is this being reconstituted? on whose terms?)</html><<else>>[[Slaying of the Innocent|Slaying of the Innocent]]<<endif>>, <<if $limestone eq 1>>[[Blackness|Blackness]]<<else if $limestone eq 2>><html><font color=DarkSeaGreen>(thousands of shells form a wall)</html><<else>>Blackness <html><font color=DarkSeaGreen>(limestone needed)</html><<endif>>, <<if $humiliation eq 1>><html><font color=Dark Orange>(half-lives & slow time)</html><<else if $plutonium eq 1>>[[King Slaying|King Slaying]]<<else>>King Slaying <html><font color=Dark Orange>(plutonium needed)</html><<endif>>, <<if $calcinatio eq 1>><html><font color=LightSlateGray>(am I the lowliest of all metals?)</html><<else if $lead eq 1>>[[Poison]]<<else>>Poison <html><font color=LightSlateGray>(lead needed)</html><<endif>>, <<if $uranium eq 1>>[[Decomposition]]<<else if $uranium eq 2>><html><font color=DarkSlateGray>(disposed in a leaking barrel)</html><<else>>Decomposition <html><font color=DarkSlateGray>(uranium needed)</html><<endif>>\\n\\n<<display 'inventory'>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "inventory",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Corpse",
+          "destination": {
+            "name": "Corpse",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Death",
+          "destination": {
+            "name": "Death",
+            "pid": 46
+          }
+        },
+        {
+          "text": "Exile",
+          "destination": {
+            "name": "Exile",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Mutilation",
+          "destination": {
+            "name": "Mutilation",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Slaying of the Innocent",
+          "destination": {
+            "name": "Slaying of the Innocent",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Blackness",
+          "destination": {
+            "name": "Blackness",
+            "pid": 37
+          }
+        },
+        {
+          "text": "King Slaying",
+          "destination": {
+            "name": "King Slaying",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Poison",
+          "destination": {
+            "name": "Poison",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Decomposition",
+          "destination": {
+            "name": "Decomposition",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "Wound",
+      "text": "Instead of you, or me, I see Arthur, who voted on the Task Force to let the bombs fly--stuck in traffic in a brand-new Buick--deciding whether to It must have been after the blast in D.C. He was supposed to be there when the Soviet bombs were to be dropped--and repulsed by the archon. But something must have scared him. Maybe it was one of his dreams--the ones he had of another planet--that panicked him, some portent in the iconography of the science fiction he wrote. \\n\\nHe honked, the cars unmoving ahead of him, and after looking around he opened the car door and hurled his gangly frame into the woods. He left the car running. \\n\\n//Why am I following him?// I think. //Why now?//\\n\\nHe had no plan. He was just running at this point. After jumping over a stream he saw someone in a white radiation suit coming slowly down the embankment toward him. \\n\\nArthur heard his name from the person in the radiation suit. Arthur lumbered toward him. He had a cautiously friendly look on his face--but then the person in the white suit motioned toward two other men on the ridge, also in radiation suits, each holding an M-1 rifle. They aimed at Arthur. I seized up even though I knew I couldn't do anything. Arthur began arguing wildly, but resigned himself and held up his hands.\\n\\nThey fired. \\n\\nI heard two bullets merge as one. \\n\\n",
+      "links": []
+    },
+    {
+      "pid": 72,
+      "name": "calcinatio-no",
+      "text": "And so it goes. I can't help but be saddened by this realization though. All the same, I will still try to find you. You are pretty much all I have left.\\n<<if $pacing eq 4>>\\n[[The chair becomes still. I look around, as much as I can. Something is happening beneath me.|endgame]]\\n<<else>>\\n[[Mortificatio]]\\n<<endif>>\\n<<silently>>\\n<<set $calcinationo = true>>\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "The chair becomes still. I look around, as much as I can. Something is happening beneath me.",
+          "destination": {
+            "name": "endgame",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "shame",
+      "text": "There is no such thing as ascension. There is never escape. \\n\\n\"I can't stay,\" I say. \"I was going to hide everything from you. Who I was, what I was trying to do. I...didn't think you'd understand. And now all the cards are on the table. Does that sound like a good reason to end things?\"\\n\\n\"We make mistakes,\" you say. \\n\\n\"Maybe. But...I just can't.\"\\n\\nYou sit down. \"I understand,\" you say. \"No, really.\"\\n\\nIt's been years now since I've departed from you, and I think I miss you every day. Sometimes I still keep an eye out for you, stupidly, but no luck. I've been telling everyone I know about who I really am. I don't care if people believe me, though many do. I've started a compound in Australia.\\n\\nI tell people everything I know.\\n\\nIt feels like the weight of the world has been lifted off my shoulders. \\n\\n<<replace \"THE END\">>It is never [[the end|theend]].<<endreplace>>",
+      "links": [
+        {
+          "text": "the end",
+          "destination": {
+            "name": "theend",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "say",
+      "text": "And then I know. I see you for the first time. I know that you are like me. I see what you see. I see you over the thousands of years hunting the archon, as I have observed him. But why are we always so close, and yet so unrecognizable to each other? I was with you as ships sank, as cities burned. And then I was buried in Aleppo for a long time, but here in the solarium I see so much, all at once: how you slit the archon's throat in his temple and bound him in an amulet right above my urn. I see you at Calvary, as they pierced your side and the blood and water gushed out, hoping beyond hope that The One would pay attention, this time, only It didn't and you died and people kept suffering. I see you bludgeoned, in front of firing squads, in trenches, leading seances, and at last in the body of a female scholar who had to fight to be treated like a human being--\\n\\n\"We're parasites,\" you say, interrupting my thoughts. \"Involuntary squatters. What was your Lenora like before you moved in? How about Annalise before I did? I'm tired of it. So tired. And what's left for us now?\"\\n\\nI pause. \"Apparently, the White House.\"\\n\\nYou shrug. \"Well...this was where everything started. This room. The solarium. And this isn't the real White House anyway.\"\\n\\n\"I guess it did.\" I'm trembling. \"What are you doing, Annalise?\"\\n\\nYou look out the window. I notice the view for the first time. The White House lawn is a plain of molten lava, <<if $separatioyes eq true>>the magma tinted cobalt, the hue of a cool ocean<<else>>the magma more red than orange, like a roiling lake covered in geranium petals<<endif>>. \\n\\n\"I'm dissolving,\" you say. You're trying to control your emotions, and it's working only a little bit. \"I'm going to disappear, for good.\" \\n\\nWhat you say seeps into me. \"So this entire 'experiment' of yours--the chair, the alchemy, everything--is just a way for you to die?\"\\n\\nYou stand up. The roof begins to shake. \"I'm sorry,\" you say. \\n\\n\"How is this any different from what the government did? MKUltra? Any of those secret committees?\"\\n\\n\"Please,\" you say, taking my hands. \"I don't have a lot of time left. You could stay with me.\"\\n\\nWhat would it be like to die? To really be gone, after all these years? \\n\\n<<if $calcinatioyes eq true>>[[stay because of love|stay]]<<else if>>[[leave in anger|dontstay]]<<endif>>\\n\\n<<if $coagulatioyes eq true>>[[stay out of your own exhaustion with the world|exhaustion]]<<else if>>[[leave because you're convinced you still have much unfinished work to do in the world|leave-abandon]].<<endif>>\\n\\n<<if $conjunctioyes eq true>>[[stay not because you want to, but because she needs you to|union]]<<else if>>[[leave out of despair and shame; you were going to hide your true self to her|shame]]<<endif>>",
+      "links": [
+        {
+          "text": "stay because of love",
+          "destination": {
+            "name": "stay",
+            "pid": 86
+          }
+        },
+        {
+          "text": "leave in anger",
+          "destination": {
+            "name": "dontstay",
+            "pid": 88
+          }
+        },
+        {
+          "text": "stay out of your own exhaustion with the world",
+          "destination": {
+            "name": "exhaustion",
+            "pid": 58
+          }
+        },
+        {
+          "text": "leave because you're convinced you still have much unfinished work to do in the world",
+          "destination": {
+            "name": "leave-abandon",
+            "pid": 9
+          }
+        },
+        {
+          "text": "stay not because you want to, but because she needs you to",
+          "destination": {
+            "name": "union",
+            "pid": 42
+          }
+        },
+        {
+          "text": "leave out of despair and shame; you were going to hide your true self to her",
+          "destination": {
+            "name": "shame",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Caput Corvi",
+      "text": "(I clench my arms in the chair thinking about their dead eyes.) \\n\\nYou splay your hands out as the black cloud of wings comes toward us. There are black tattoos on each finger that I hadn't noticed before. I feel helpless.\\n\\nThe tattoos burn orange, and you wince in pain but all the crows are decapitated cleanly, as if from a perfect blade. \\n\\nThe severed bodies drop in midair, dozens of crows' heads arrayed around us. You run out to the cave entrance to bury your hands in the snow. You're in a lot of pain. \\n\\nI turned around. There is still one crow working at the latch, who somehow had escaped. I rush at it with a rock in my hand, and manage to clobber its skull.\\n\\nBut it was too late.\\n\\n[[Skull]] \\n\\n\"Get out of there!\" you called out.",
+      "links": [
+        {
+          "text": "Skull",
+          "destination": {
+            "name": "Skull",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "pit",
+      "text": "(reveal trueness, don't love, didn't do enough to stop things.)\\n\\nI'm nervous as hell. I edge closer to the pit and lean over. \\n\\nIt goes down a long long way. I can't see the bottom. \\n\\nI hear a rushing sound; from above, liquids of various colors and textures spray down--viscuous azures, muddy vermillions, bubbling camphors of living minerals. They fall like a prismatic rain. \\n\\nThere is a rumbling underneath, like the yawning of an enormous beast. \\n",
+      "links": []
+    },
+    {
+      "pid": 77,
+      "name": "end",
+      "text": "I'm far away, but I can see them holding hands, praying.\\n\\n37 seconds after the bombs detonate, and the back-flash vaporizes the city--\\n\\n--countless cities.\\n\\n//glass fractals shattering//\\n",
+      "links": []
+    },
+    {
+      "pid": 78,
+      "name": "Offering",
+      "text": "With such a human cost that you've paid, what do I owe you? If I do see you again, do I reveal my true nature to you?\\n\\n([[yes|conjunctio-yes]]) You have to know. I need to be true to you. No matter the cost.\\n\\n([[no|conjunctio-no]]) How could you possibly bear this?  I am not in the form of James anymore. I am someone else. I am Lenora. It is difficult to refrain from telling you everything, but there is nothing to be done about it, even if you //do// know. It won't fix anything. \\n\\nThis is the heavy crux.\\n<<set $pacing = $pacing + 1>>\\n<<set $offering = 1>>",
+      "links": [
+        {
+          "text": "yes",
+          "destination": {
+            "name": "conjunctio-yes",
+            "pid": 26
+          }
+        },
+        {
+          "text": "no",
+          "destination": {
+            "name": "conjunctio-no",
+            "pid": 92
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "snow",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 80,
+      "name": "Healing",
+      "text": "I don't know if this alchemical machine that you've left me can heal me. I really don't know. \\n\\nIt had taken a long time to find this laboratory of yours. When I had woken up again--months after the incident in the Yukon--I had found myself in an underground government bunker. It took me a long time to really figure out who I was, where I was. \\n\\nIt was in a provisional government base in the Adirondacks. I was a security guard at the gate. Apparently the armed forces were depleted enough that they would give combat duties to women. There was a desperate air in that base. The paranoia had not abated.\\n\\nAnd Anselm was there. Just passing through. I considered bayoneting him. Perhaps it is a fault of mine that I take my duty to observe and not slay seriously. \\n\\nAt any rate, I wanted nothing to do with this place. I went through the motions until I could find a way to escape after a few weeks--with a radiation suit, freeze-dried food, my M-1, and snowshoes.\\n\\nThey didn't hunt for me. It was not worth the effort, in the wasteland I wandered in.\\n\\nAnd so, as with alchemy itself, I found myself on a path full of fits and starts and doubling back. But perhaps that is the only way forward in the long run. \\n\\n<html><font color=Sienna>(the prima materia gets turned to tin, in the shape of a tiny medal, and it rattles into its casing)</html>\\n<<silently>><<set $tin = 1>><<endsilently>>\\n\\n<<if $plutonium eq 1>>[[Mortificatio]]<<else>>[[Wilderness]]<<endif>>",
+      "links": [
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Wilderness",
+          "destination": {
+            "name": "Wilderness",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "The Mountain",
+      "text": "I didn't realize how powerful of a sorcerer you were until you kidnapped the President. There was a kind of terror to behold in your eyes as we parked your truck at the base of Catoctin Mountain. You had stolen a coffin from a funeral home in Frederick and had plated it with gold leaf and silver nails and sulfur. \\n\\n<<replace \"There was a bachannal at the Camp. Of course there was.\">>...guards asleep, the President stumbling away from the roasting pig in the midst of the tennis courts, you see the amulet splayed on his neck first, you begin shouting at him in ancient tongues and smoke follows you in the shape of a giant\\n\\n(I barely remember this hour--my senses wobbled--you caught him off-guard but he still put up a massive psychic fight)\\n\\nyou straddled him and administered the binding; I held down his wrists, his skin hot and feverish; he looked into my eyes and I wanted to weep; \\n\\nunderneath the possession I could almost see the visage of the most powerful man in the world, old and frail\\n\\nand then we stumbled down the mountain with the President screeching in the coffin, the voice not his own, and we drove\\n\\nas fast as we could\\n\\nand then at 9:47 a.m. we saw the sky shaking behind us<<endreplace>>\\n\\n<html><font color=Silver>(molten silver drips and cools)</html>\\n\\n[[Mortificatio]]\\n<<set $silver = 1>>\\n<<set $tragedy = 1>>",
+      "links": [
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "you",
+      "text": "I walk forward. The hallway ends in a bright solarium. I realize that I'm in the White House, which is, well, impossible. I close my eyes and open them again. The hallway is still here. Is this what it has come to?\\n\\nI look out the bay windows in the doorway. A perfect summer day outside overlooking the White House lawn. \\n\\nYou're sitting in one of the chairs, smiling.\\n\\n\"Hi,\" you [[say]]. \\n\\n",
+      "links": [
+        {
+          "text": "say",
+          "destination": {
+            "name": "say",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "css",
+      "text": "#sidebar {\\n  display:none;\\n}\\nbody {\\n  margin: 0;\\n  padding: 0;\\n  height:100%;\\n}\\n\\n#passages {\\n  margin:0;\\n  padding: 0;\\n  height:100%;\\n}\\n#passages * {\\n  box-sizing: border-box;\\n  -moz-box-sizing: border-box;\\n}\\n.passage {\\n  position:relative;\\n  width: 60%;\\n  font-size:2em;\\n  font-family: \"Century Schoolbook\", Consolas, Monaco, monospace;\\n  margin: 2em auto 0 auto;\\n}\\n\\n.passage .content {\\n  top: 500px;\\n  width:100%;\\n  border: #fff double 0.5em;\\n  border-radius: 1em;\\n  padding: 1em;\\n}\\n\\n@media screen and (max-width: 960px) {\\n  .passage {\\n    font-size: 1.5em;\\n  width: 75%;\\n  }\\n}\\n@media screen and (max-width: 640px) {\\n  .passage {\\n    font-size: 1.25em;\\n  width: 95%;\\n  }\\n}\\n\\na.internalLink, a.externalLink {\\n  color:SlateGray;\\n  font-weight:bold;\\n}\\na.internalLink:hover, a.externalLink:hover {\\n  text-decoration:none;\\n  border-bottom: none;\\n  color:#000;\\n  background-color:#gray;\\n  text-shadow: #bbb 0 0 0.5em, #bbb 0 0 3em;\\n  font-weight:bold;\\n  padding-left: 0;\\n}\\na.internalLink:active, a.externalLink:active {\\n  border-bottom: 0;\\n}\\n\\n",
+      "links": []
+    },
+    {
+      "pid": 84,
+      "name": "Sowing",
+      "text": "<<if $gold eq 1>>Maybe it's only in the wounded earth that seeds can grow...<<else>>Why were you brought to Solarium's Task Force D, then? You are--or were--a Professor of Religious Studies at the University of Maine. You are also a leading scholar on Manicheism and the occult in the early Middle Ages, and probably would have been at Harvard or Yale if it were not for your predeliction for \"speculative occultisms.\"\\n\\nYour husband was also a vice-president at Standard Oil, and was based in Tehran at the time. Standard Oil didn't have any drilling contracts in Iran, yet. I imagine that you had assisted your husband with Farsi. Lots of contracts. \\n\\nIn that little conference room deep in the bowels of the War College, I met you for the first time. You looked younger than I thought you would have been. Wire-rimmed glasses, slightly crooked nose, dirty blonde hair. A necklace with a single sapphire. \\n\\nYou crushed your cigarette and looked up at me. You looked around the room as you shook my hand, and yet you appeared serene as well. You smiled. \"It's a pleasure to have you here Reverend.\"\\n\\nReverend.<<endif>>\\n\\n<<if $gold eq 1>>[[Conception|Conception]]<<else>>Conception <html><font color=gold>(gold needed)</html><<endif>> \\n\\n<<if $quicksilver eq 1>>[[Shoots]]<<else if $quicksilver eq 2>>(the mercury has slipped through all cracks)<<else>>Shoots <html><font color=DimGray>(quicksilver needed)</html><<endif>> \\n\\n<<if $quicksilver eq 0>>[[Stuck. How I hate this stuckness.|Mortificatio]]<<else>> <<endif>>",
+      "links": [
+        {
+          "text": "Conception",
+          "destination": {
+            "name": "Conception",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Shoots",
+          "destination": {
+            "name": "Shoots",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Stuck. How I hate this stuckness.",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "Frustration of Desire",
+      "text": "Of course, the archon was clever. It provided a test, proof of its worth and truth.\\n\\nThey took us down to the sub-basement of the War College, where the possessed archaeologist was chained.\\n\\n//Place a squadron near the center of the blast//, it said through the voice of the archaeologist, //and I will protect them.//\\n\\n\"This is ridiculous,\" Anthony said, cleaning his glasses. \"Right?\"\\n\\nStill, the archon's test was allowed to proceed.\\n\\n(strapped in your chair, I feel helpless as to what happened)\\n\\n[[Torture|Torture]] ",
+      "links": [
+        {
+          "text": "Torture",
+          "destination": {
+            "name": "Torture",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "stay",
+      "text": "I stay with you. I could not imagine leaving you. As the lava rises and seeps through the windows, I kiss you on the forehead. \\n\\n//Something will grow in our place,// you say, your voice fading. //That is the nature of alchemy.//\\n\\n//What will it be?// I say.\\n\\nBut you don't answer, as if speech is already beyond you.\\n\\n<<replace \"THE END\">>It is never [[the end|great-work]].<<endreplace>>",
+      "links": [
+        {
+          "text": "the end",
+          "destination": {
+            "name": "great-work",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "Mutilation",
+      "text": "September 1, 1953: V-R Day! The Day of the Grand Bargain's Fulfillment!\\n\\n[[Knife]]\\n\\nWe stayed that night in Frederick, Maryland in a motor-hotel. Everyone was giddy. The Reds were dead, all radios blared. The Reds were dead. U.S. bombers had made quick work of the Russians and imposed their will upon them. Peace was at hand.\\n\\nThe civil defense footing was not implemented. America, it led itself to believe, was not actually at war. It had defeated its \"greatest existential threat\" in one day. \\n\\nOne-quarter of the Soviet population was dead, and many more would follow. It was only a matter of time before Europe and Asia were contaminated; but that problem was not America's to solve. \\n\\nWe huddled in the bed listening to the radio that whole night, with horns honking and guns going off all over the Old Line State.\\n",
+      "links": [
+        {
+          "text": "Knife",
+          "destination": {
+            "name": "Knife",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "dontstay",
+      "text": "\"Goodbye,\" I say. I spin around, amazed after all of this that you would abandon the world so. \\n\\n\"Oh, shit,\" you call out. \"I've sealed the exit. I'm sorry.\"\\n\\nI bite my lip and turn around. \"There has to be a way out.\"\\n\\n\"Well, there is one way...\" You trail off. Off the mantlepiece you take a pistol and cock it. \\n\\nI look in your eyes. Perhaps we have been alien to each other this entire time. \\n\\nIn any case, you steady your arm and shoot me in the head. I try to look in your eyes as I fall, but the loss of consciousness is almost instantaneous. I try not to think of this as an absurd loss of you; on the contrary, I have gained so much in finding you, in retracing my steps with you. And even though I know I don't love you, this journey hasn't been wasted, even as I fall to the plush carpeted with a shattered skull.\\n\\nBut this isn't the end, is it?\\n\\nIt never [[is|theend]].\\n",
+      "links": [
+        {
+          "text": "is",
+          "destination": {
+            "name": "theend",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "endgame",
+      "text": "<html><img src=\"endgame.jpg\" width=400></html>\\n\\nThe chair cools. I slowly unstrap my wrists and rub my head, sitting up. What now? Did something break? \\n\\nThen I notice in front of me that a slab of concrete is tilted that hadn't been tilted before. There is a humming underneath it. And it looks like some of the cables running underneath the chair run into where the seams of the slab begin.\\n\\nI manage to get a hold on the edge and heave. But it is light. \\n\\nThere is a staircase, made of heavy slabs of wood, that goes down. A dim light. A stained concrete floor. Almost holding my breath I go [[down|down1]].",
+      "links": [
+        {
+          "text": "down",
+          "destination": {
+            "name": "down1",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "sacrifice-no",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 91,
+      "name": "dissolution",
+      "text": "//No way,// I say. //I just can't. Annalise, please. We've been through so much together--//\\n\\n//I'm sorry,// you say. \\n\\nBut do I stop you? No. It isn't in my nature to stop people from doing what they really want. What do I do? Shatter the tank? \\n\\n//I will always be with you,// you say. //And you will always be with me. Even now.//\\n\\n//Will you?//\\n\\n//Something will grow in my place. That is the nature of alchemy. I don't know when...// You trail off. \\n\\n\\n\\n",
+      "links": []
+    },
+    {
+      "pid": 92,
+      "name": "conjunctio-no",
+      "text": "I feel closer to you strapped into this machine than I did when you were next to me, arms wrapped around me. And I had felt very close to you then. But now I feel almost inside your skin, your nervous system. Why? Why this conjuction? You worked hard to build this. You're guiding me alchemically through the intertwining of our lives. Here the noxious scent of sulphur; there the secret salt in our collective wounds. The quicksilver of our blood's rush. \\n\\n//If alchemy doesn't make you queasy, it's not doing its job,\" you had once said to me.// Yes.\\n\\nAnd what of it? Will this device of yours help me find you? Would you even accept me in this current form?\\n\\nIf you turned from me, I wouldn't know what to do. \\n\\nYour chemicals conjoin with me.\\n<<set $conjunctiono = true>>\\n<<if $pacing eq 4>>\\n[[The chair becomes still. I look around, as much as I can. Something is happening beneath me.|endgame]]\\n<<else>>\\n[[Mortificatio]]\\n<<endif>>\\n",
+      "links": [
+        {
+          "text": "The chair becomes still. I look around, as much as I can. Something is happening beneath me.",
+          "destination": {
+            "name": "endgame",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "Crow",
+      "text": "When we hauled the casket into the mine, and placed the charges, I heard a swooping caw.\\n\\nThe crows came for us.\\n\\nI had no idea where they had materialized from.\\n\\nYou might have had a better idea.\\n\\nDozens of them, slashing at us, trying to peck out our eyes. Another group of two tried to jimmy open the casket with their beaks. \\n\\nClever bastards.\\n\\n\"Get behind me!\" you shouted.\\n\\n<<if $antimony eq 1>>[[Caput Corvi|Caput Corvi]]<<else>>Caput Corvi <html><font color=Violet>(antimony needed)</html>\\n\\n<html><font color=LightSlateGray>(a heaviness as a piece of the prima materia falls into one of the vials; the needle from my arm releases blood onto the loose rock. After a few minutes, a small chunk of lead thunks into one of the bins)</html>\\n\\n[[Mortificatio]]\\n<<endif>>\\n<<silently>>\\n<<set $lead = 1>>\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "Caput Corvi",
+          "destination": {
+            "name": "Caput Corvi",
+            "pid": 75
+          }
+        },
+        {
+          "text": "Mortificatio",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "Plough",
+      "text": "On the last day of Task Force D, the decision was put to a vote. <<replace \"You and I on one side,\">>You and I did not trust the possessed archaeologist, nor the spirit within him<<endreplace>> <<replace \"Anselm and the major on the other.\">>--or trust that we would be protected.<<endreplace>>\\n\\nThe tie was broken by the fifth member of the Task Force: Anthony Quakenbush.\\n\\nAnthony was not unserious. But it was also hard to take him seriously. He was a mystery writer by night, a State Department analyst by day. I knew that he has been seeing a therapist--at the urging of his wife; he himself didn't see a problem--because he believed he was living a parallel life as his main detective. That he //was// him. \\n\\nI had no idea if anyone else in the room knew this. But the balance rested upon him. After five minutes of silence, a furrowed brow and clenched head, he looked up and said:\\n\\n\"What the hell. Let's bomb 'em.\"\\n\\nYou stormed off.\\n\\nThe President was given his recommendations from the Task Force the next day. Two months later, preparations were made for a first strike against the Soviet Union.\\n\\nTotal war.\\n\\nWe were supposed to be blessed. \\n\\nInstead the blessing curdled into a curse.\\n\\n[[Coagulatio]]",
+      "links": [
+        {
+          "text": "Coagulatio",
+          "destination": {
+            "name": "Coagulatio",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "Pneuma",
+      "text": "When I woke up again, my whole body heaved. I was in a corridor, and I had an M-1 rifle in my hands. To the right of me was a wall of Plexiglass, and in its reflection I saw that I was a woman now, in a military police uniform. I almost laughed. I fished through my pockets for an ID. Corporal Lenora McFadden, Third Interior Council, Military Police Unit.  \\n\\nOn the other side of the Plexiglass was a naked man being hosed down by two others in radiation suits. He seemed to be in pain. I couldn't tell if he was a prisoner or contaminated scientist.\\n\\nI rubbed my neck. No pain.\\n\\nI had no idea where you were. And I realized that the archon had unwittingly done me a favor--by killing me before the walls came down, if only for a few seconds, it gave me (or the travelling part of my spirit that I am reluctant to call a soul) a chance to escape.\\n\\n<html><font color=DeepSkyBlue>(a rich, aching blue stone appears--the ultramarine. The lapis lazuli. It falls into its container like a cue ball into a pool table)</html>\\n<<silently>>\\n<<set $lapis = 1>>\\n<<set $antimony = 2>>\\n<<endsilently>>\\n[[Again, go back. Again.|Mortificatio]]",
+      "links": [
+        {
+          "text": "Again, go back. Again.",
+          "destination": {
+            "name": "Mortificatio",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "Lenora",
+      "text": "\"Of course I know who you are,\" you say. \"I have for a long time.\" It is difficult to read your expression--but have I been misreading you this entire time? Just how stupid could I be? \\n\\n\"This is...awkward,\" I say.\\n\\n\"I had a feeling you could come looking for me,\" you say. \"Eventually. And I have to apologize for letting you die like you did. I had hoped that the archon would have killed you before he himself was fully encased in the collapsed mine. That there would be a chance for you to escape.\" \\n\\nI had completely forgotten about that. It seems immaterial, part of another life. Well, it is. But where does that leave me now? <<if $coagulationo eq true>>It's small comfort. The world was still destroyed.<<else if>>\"You did the right thing,\" I say, looking at her.<<endif>>\\n\\n<<if $conjunctiono eq true and $calcinatioyes eq true>>I am stymied and ashamed that I chose to hide from you. How could I have done such a thing? \\n\\n\"Annalise,\" I manage to say. \"My feelings for you haven't changed.\" I look over at the tank. \"But please tell me what you're [[doing]]?\" Are you building another \"me\" through alchemy? I'm hi\u0153t with the realization that, with this work of yours, you are creating love--a person to love--out of metals, minerals and blood.\\n\\n\"I've searched high and low for you...and here I am. I mean, this probably wasn't what you were expecting, if you expected to find me at all.\"\\n\\n\"I think I did,\" you say. \"Someday. Maybe not here. Maybe in another far-off place. We always keep running into each other, don't we?\"\\n\\n\"What--what do you mean?\" I say.<<endif>>\\n\\n",
+      "links": [
+        {
+          "text": "doing",
+          "destination": {
+            "name": "doing",
+            "pid": 24
+          }
+        }
+      ]
+    }
+  ]
+}

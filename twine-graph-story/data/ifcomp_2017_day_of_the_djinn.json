@@ -1,0 +1,1483 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "back",
+      "text": "(set:$showFooter to true)You're in your living room. There's a [[picture]] hanging on the wall. To your left is your [[ratty old sofa->old sofa]] and [[bookshelf]], with (if:$lamp is \"off\")[[a lonely darkened lamp]<a1|](if:$lamp is \"on\")[[a gently-pulsing lamp]<a1|] hanging out in the corner. \n\nYou could climb up to the [[second floor]], or enter the [[kitchen]] to your left.\n\nIt's late, but you could still [go outside]<out|.(click:?a1)[(goto:\"lamp\")](click:?out)[(if:(history:)contains \"outofapart\")[(go-to:\"go outside\")](else:)[(go-to:\"outofapart\")]]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "lamp",
+            "pid": 6
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "go outside",
+            "pid": 28
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "outofapart",
+            "pid": 20
+          }
+        },
+        {
+          "text": "picture",
+          "destination": {
+            "name": "picture",
+            "pid": 4
+          }
+        },
+        {
+          "text": "ratty old sofa",
+          "destination": {
+            "name": "old sofa",
+            "pid": 5
+          }
+        },
+        {
+          "text": "bookshelf",
+          "destination": {
+            "name": "bookshelf",
+            "pid": 10
+          }
+        },
+        {
+          "text": "second floor",
+          "destination": {
+            "name": "second floor",
+            "pid": 2
+          }
+        },
+        {
+          "text": "kitchen",
+          "destination": {
+            "name": "kitchen",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "second floor",
+      "text": "(set:$lamp to \"off\")The second floor of your apartment is much smaller than the first. It's tidier than the rest of your house, if only because there's no space to put anything.\n\nFrom here, you can go into your [[bedroom]] or the mysterious [[broom closet]].(if:$strangeCreature is 1)[\n\nSomething runs at your approach, in the direction of your bedroom.(set:$strangeCreature to 2)]\n\nYou can descend the stairs to the [[first floor->back]].",
+      "links": [
+        {
+          "text": "bedroom",
+          "destination": {
+            "name": "bedroom",
+            "pid": 7
+          }
+        },
+        {
+          "text": "broom closet",
+          "destination": {
+            "name": "broom closet",
+            "pid": 9
+          }
+        },
+        {
+          "text": "first floor",
+          "destination": {
+            "name": "back",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "kitchen",
+      "text": "(set:$showFooter to true)(set:$lamp to \"off\")Calling this room a kitchen is stretching it. There's a counter, a tiny table with a crate for a chair, a small fridge wedged into a triangular corner, and a microwave balancing precariously on top of the fridge. The counter has a stovetop you've never used.\n\nThere's a [[torn, destroyed box]] stuffed into the bin.\n\nAbove the counter is a small [cabinet]<c|.(click:?c)[\n\nYou open it. There's a small note folded neatly into a paper heart. It says, //'I was going to leave you a little surprise, but it spoils if the room is too warm or too cold - why haven't you temperature regulated your kitchen? - I found a room that works, but I had to use my flashlight lol. Left my present in there!// \n\nIt's not signed, but the handwriting is your sister's. When is this from...?\n\n|123>[There's also a [knife]<k| here.](click:?k)[(replace:?123)[You pick up the knife.(set:$inventory to it + (a:\"knife\"))]]]\n\nYour [[living room->back]] is to the south.",
+      "links": [
+        {
+          "text": "torn, destroyed box",
+          "destination": {
+            "name": "torn, destroyed box",
+            "pid": 34
+          }
+        },
+        {
+          "text": "living room",
+          "destination": {
+            "name": "back",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "picture",
+      "text": "You walk over to the picture slowly. It's just a picture of you and your high school friends hanging out at the beach. \n\nA mundane photo, but the simplest memories are often the sweetest. \n\nIf you look at it, like really look at it, the photograph is full of flaws. The lighting is too bright, your smiles are too strained, and there's an awkward looking half-naked dude in the background. You reach out and run your fingers over the frame. It's your most treasured possession.(if:$map is \"floor\")[\n\nThere's a [[piece of paper->Map]] on the floor below the picture.](unless:$frame is true)[(click:\"frame\")[[\n\nThere's a small ridge here you'd never noticed before. There's some tiny lettering on on its side: 'Spice Miners Annual Gathering xx24.' You dig your nails under it, but it seems to be tightly attached to the wood. If you had something sharp and flat, you could open it.]<frame|](if:$inventory contains \"knife\")[\n\n[Your knife looks like it could [pry open the frame]<123|.]<124|(click:?123)[(replace:?frame)[](replace:?124)[You wedge the blade under the ridge and force it open. A small part of you is horrified you're destroying such a precious item, but the frame was from an old yard sale anyway. It doesn't matter as much as the picture.\n\n[[A small piece of paper->Map]] flutters out.(set:$map to \"floor\") You toss the knife away.(set:$inventory to it - (a:\"knife\"))(set:$frame to true)]]]]\n\n[[back]]",
+      "links": [
+        {
+          "text": "piece of paper",
+          "destination": {
+            "name": "Map",
+            "pid": 27
+          }
+        },
+        {
+          "text": "A small piece of paper",
+          "destination": {
+            "name": "Map",
+            "pid": 27
+          }
+        },
+        {
+          "text": "back",
+          "destination": {
+            "name": "back",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "old sofa",
+      "text": "(set:$showFooter to false)You plop yourself down onto the sagging sofa. It really is ratty... you swear you can hear it squeak sometimes. Would whatever's living in there miss you if you disappeared, you wonder.\n\nYou [remember] that one time you invited your sister over.\n(click:\"remember\")[(text-style:\"italic\")[\n\"This place is so small,\" she comments with disdain. \nYou shrug. \"We picked it together, remember?\"\n\"Yeah, but I didn't realize how cramped it was! How can you live in a place like this?\"\nYou look at her, raising your eyebrows. \"I think it's pretty cozy. You might be okay with a new hotel room every week, but I like having a place to call my own.\"\nShe saunters over to your sofa, considers it for a moment, then sprawls herself all over it. \"At least the sofa's comfy.\"\n]]\n[[back]]\n\n",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "back",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "lamp",
+      "text": "(set:$showFooter to false)(if:$lamp is \"off\")[The lamp is off. You peer in through the top of it. The tiny tadpoles inside are sleeping right now, but you could give the lamp a little [shake]<s| if you wanted.](if:$lamp is \"on\")[The lamp is on, bathing the room in a pleasant warm orange glow. You can see the little tadpoles inside it glowing as they dance and enjoy their simple lives. They'll go back to sleep soon enough.](click:?s)[(set:$lamp to \"on\")[\n\nYou jiggle the lamp. It slowly glows brighter and illuminates the room as your little buddies wake up.]](if:$needALantern is true)[\n\nMaybe you could [try]<t| hauling this up to the second floor to illuminate that musty broom closet.]<i|(click:?t)[(replace:?i)[ \n\nYou tug at the lamp, but it's fixed in place. You're not about to break it and probably kill the swimming creatures inside - you'll have to find another light source.]]\n\n[[back]]\n",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "back",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "bedroom",
+      "text": "(set:$showFooter to true)Your bedroom is slightly larger than necessary, but it's cramped with your various possessions anyway. Shoved into a corner of the room is your [[bed]]. \n\n(if:$strangeCreature is 2)[The door to your [[bathroom]] is slightly ajar.](else:)[Your [[bathroom]] door is beside your bed. Not the best place to put it, in your opinion.]\n\nThe [[hallway->second floor]] is behind you.",
+      "links": [
+        {
+          "text": "bed",
+          "destination": {
+            "name": "bed",
+            "pid": 17
+          }
+        },
+        {
+          "text": "bathroom",
+          "destination": {
+            "name": "bathroom",
+            "pid": 8
+          }
+        },
+        {
+          "text": "hallway",
+          "destination": {
+            "name": "second floor",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "bathroom",
+      "text": "(if:$strangeCreature is 2)[With trepidation, you peek into the bathroom. There's a four-legged furry creature crouched in the corner. Its back looks funny- shiny, like it has scales, or a hard shell. It hisses at your approach, and bares its small fangs. It's carrying a red gem around its neck. (if:$chickenBrokenWing is true)[It stares, obviously interested in the chicken you're carrying. The bird clucks in alarm.(click:?chicken)[(go-to:\"chickengiven\")]](else:)[You think you could befriend it if you got it something to eat. Maybe one of your books will tell you what it is.(set:$squirnelBook to true)]](else:)[You walk into the bathroom. There's the usual set here - sink, toilet, bathtub. \n\nYou glance at yourself in the mirror. You look weary, but you feel alert and very awake. It must be an effect of the curse.(click:\"sink\")[\n\nYou amuse yourself by turning on the tap and wasting water. After a few seconds, you turn it back off.]]\n\nThe door back to your [[bedroom]] is on your right.\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "chickengiven",
+            "pid": 25
+          }
+        },
+        {
+          "text": "bedroom",
+          "destination": {
+            "name": "bedroom",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "broom closet",
+      "text": "(if:$lantern is true)[The (print:$glowingBird) waddles in after you, and its shining feathers chase away the darkness. It seems to like this room very, very much, and flutters onto a high shelf, where it refuses to budge. (set:$lantern to false)(set:$birdHere to true)](if:$birdHere is true)[Now that the room is properly illuminated, you can see (unless:$broom is true)[a broom leaning against the wall (oh, well, it is a broom closet), ]rows of shelves stacked with [strange glass bottles]<sgb| and cobwebs, a dirty-looking towel, and a (unless:$strangeCreature is >0)[- oh my god something just ran past your leg out into the hallway -(set:$strangeCreature to 1)] pair of [socks]<s|.(click:?s)[\n\nOh, that's where your socks went. Must've been the sock goblins. (The socks are mismatched, naturally.)](click:?sgb)[\n\nThey're are potions labeled in a language you don't understand. (unless:$jar is true)[Sitting innocuously beside the potions, though, is a [vial]<jar| labeled 'Pure Dew-Touched Honey' - distilled 100%.]](click:?jar)[(set:$jar to true) You take the vial and slip it into your pocket.(set:$inventory to it + (a:\"pure honey\"))]\n\nThe door leading back to the [[hallway->second floor]] is behind you.](else:)[Walking into the closet uncertainly, you feel a weight settle in the space around you. A stuffy, musky feeling, a cottony texture in the air that seems to invade your every orifice.\n\nIt's way too dark in here to see anything. You've tried installing lights, once, but the strange darkness didn't respond. You've heard about these kinds of rooms, although why there's one in your apartment is beyond you.\n\nYou stumble back into the [[hallway->second floor]].(set:$needALantern to true)(set:$birdQuals to it + (a: \"a luminescent body\"))]",
+      "links": [
+        {
+          "text": "hallway",
+          "destination": {
+            "name": "second floor",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "bookshelf",
+      "text": "(set:$showFooter to false)The sturdy wooden shelf holding your books has seen better days. Like most of your furniture, it tilts slightly to one side resulting in most of its contents being piled in a heap to the right. You could browse through your books.(if:$lamp is \"on\")[\n\nThe most interesting titles in your collection consist of \"[[Foggworth Mousington]]\", \"[[Gargoyle Slayer]]\", \"[[A History of Arthana]]\", and \"[[Cooking for dummies]]\".](else-if:$lantern is true)[\n\nThe most interesting titles in your collection consist of \"[[Foggworth Mousington]]\", \"[[Gargoyle Slayer]]\", \"[[A History of Arthana]]\", and \"[[Cooking for dummies]]\".](else:)[\n\nUnfortunately, it's too dark to read right now.]\n\n[[back]]",
+      "links": [
+        {
+          "text": "Foggworth Mousington",
+          "destination": {
+            "name": "Foggworth Mousington",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Gargoyle Slayer",
+          "destination": {
+            "name": "Gargoyle Slayer",
+            "pid": 14
+          }
+        },
+        {
+          "text": "A History of Arthana",
+          "destination": {
+            "name": "A History of Arthana",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Cooking for dummies",
+          "destination": {
+            "name": "Cooking for dummies",
+            "pid": 13
+          }
+        },
+        {
+          "text": "back",
+          "destination": {
+            "name": "back",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Foggworth Mousington",
+      "text": "//This is the tale of Mr. Foggworth Mousington, the politest gentleman to have braved the Drowned Catacombs. \nThe Catacombs are a horribly confusing and deadly maze of tunnels. Most who go in are never seen again. It remains a mysterious puzzle to this day. State-of-the-art technology fails, confident and sane men suddenly lose their minds, trained squads stagger out with less than half their number babbling incoherent nonsense.//\n\nThe Catacombs don't really exist, of course - it's just an old myth. That doesn't mean you don't enjoy reading how Mr. Foggworth Mousington stumbles through each room in the maze, besting each with either quick wit, a sharp tongue, or just pure luck. There was one scene where he defeated Darkness itself with nothing more than a bird. If you had more time you would read the whole thing again.\n\n[[back->bookshelf]]",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "bookshelf",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "A History of Arthana",
+      "text": "(if:$FoundDjinpas is true)[You open 'A History of Arthana' to what looks like a relevant passage about Djinns.\n\n//In xx01, Arthana was threatened by the rising to power of a malicious sorcerer by the name of Shadowlord (A pseudonym). He captured numerous Djinns and overthrew the government by magical force. Ransip Harring, a spy working under Shadowlord, snuck away to plead the help of other countries. Many other nations refused to interfere, but a small tribe living scattered around in underground caves heard of Arthana's dilemma and volunteered to assist. Not much is known about this hidden underground society, but their leader was able to reason with the Djinns, dispel their curses, and vanquish the evil sorcerer. Afterwards, the country held a celebration and many feasts, but their saviours were nowhere to be found.//\n\nThere's something scribbled in the margins of the book: //Does no one know anything about this ancient tribe? Did they really exist outside of dusty history books and exaggerated tales? An interesting lead: through questioning and a lot of digging, there are rumors of them living in old caves deep, deep underground, 'where there is spice to be found'. How mysterious!\n\nUpdate: There are new rumors of a tribe setting up at (There's an address scrawled here. Wait a minute... that's the park right by your house!)... but I regret that even though these claims are the sturdiest I have found so far, I cannot leave the country at this time. //](unless:$FoundDjinpas is true)[[You take the heavy, dusty textbook and haul it to the sofa. It would take months to finish the whole thing, so you just let it fall open at a random passage.\n\n//The Arthanians suffered many losses in the Spice War of xx43. A classic example of a sunk-cost fallacy at work, neither side was willing to quit fighting despite the climbing casualties. In the end, Arthana won the war, and acquired the addictive dust known as 'Cinnamame'. Most historians agree that despite its magical healing properties, it wasn't worth the cost.\nIn xx87, the losing side, the Jubranians, nearly suffered societal collapse altogether. It was only the efforts of the Global Conservation Organization that prevented this culture from being erased.//\n\nWell, that was interesting...? It's not very useful, though - hey, maybe there's something about Djinns in here. You |c>[flip through the table of contents].]]<q|(click:?c)[(set:$FoundDjinpas to true)(replace:?q)[You open 'A History of Arthana' to what looks like a relevant passage about Djinns.\n\n//In xx01, Arthana was threatened by the rising to power of a malicious sorcerer by the name of Shadowlord (A pseudonym). He captured numerous Djinns and overthrew the government by magical force. Ransip Harring, a spy working under Shadowlord, snuck away to plead the help of other countries. Many other nations refused to interfere, but a small tribe living scattered around in underground caves heard of Arthana's dilemma and volunteered to assist. Not much is known about this hidden underground society, but their leader was able to reason with the Djinns, dispel their curses, and vanquish the evil sorcerer. Afterwards, the country held a celebration and many feasts, but their saviours were nowhere to be found.//\n\nThere's something scribbled in the margins of the book: //Does no one know anything about this ancient tribe? Did they really exist outside of dusty history books and exaggerated tales? An interesting lead: through questioning and a lot of digging, it is said that they live in old caves deep, deep underground, 'where there is spice to be found'. How mysterious!\n\nUpdate: There are rumors of a new tribe setting up at (There's an address scrawled here. Wait a minute... that's the park right by your house!)... my sole regret is not being able to leave the country to verify these claims.//]]\n\n[[back->bookshelf]]",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "bookshelf",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Cooking for dummies",
+      "text": "You're no dummy, you argue with the book as you pick it up and flip to the first page. The words dance around cheerfully, ready for a query about any meals you might want to prepare. Trouble is, you've never been much of a cook.\n\nYou set the book back down.\n\nYou [remember]<r| cooking with your sister.(click:?r)[\n\n\"That's not how it works!\" she tells you impatiently, snatching the whisk from your hands. \"//Lightly//, or it'll get foamy.\"\nYou smile sheepishly and watch as she pours a cup of honey in. She could live on honey alone, that's how much she loves the stuff.\n\n\"How come //you// know how to cook?\" you ask her.\n\nShe looks at you, then at the bottle of honey in her hands. \"I've been taking lessons.\" Oh. You're not surprised. \"Maybe I'll start a business, make enough money to buy some dew-touched honey, the good stuff. Not this trash.\" She tosses the empty bottle away.]\n\n[[back->bookshelf]]",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "bookshelf",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Gargoyle Slayer",
+      "text": "The book itself is terrible, a work of poorly written characters and nonsensical plots. You found it at an old bookstore and bought it for its amusing (link-reveal:\"front cover\")[ (It's a badly drawn lion with wings. It has cartoonish red eyes and long fangs and a scrawny child is brandishing a longsword at it)] but you didn't think it was anything more than a bad piece of fanfiction. Turns out a previous owner had enchanted it, and now sometimes relevant passages will appear in the book. Unfortunately, they're all written in the same style as the original material.\n\nThere's a page about [[djinns->djinnpassage]] in the table of contents you don't remember being there before.(if:$lamp is \"on\")[\n\nThere's a page here about something called [[GloFrogs]].](if:$squirnelBook is true)[\n\nThere's a new page about a '[[squirnel->snabbitpassage]]'.]\n\n[[back->bookshelf]]",
+      "links": [
+        {
+          "text": "djinns",
+          "destination": {
+            "name": "djinnpassage",
+            "pid": 15
+          }
+        },
+        {
+          "text": "GloFrogs",
+          "destination": {
+            "name": "GloFrogs",
+            "pid": 22
+          }
+        },
+        {
+          "text": "squirnel",
+          "destination": {
+            "name": "snabbitpassage",
+            "pid": 24
+          }
+        },
+        {
+          "text": "back",
+          "destination": {
+            "name": "bookshelf",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "djinnpassage",
+      "text": "//\"What's a Djinn?\" I ask Nancy, my best friend. \"Djinni,\" she corrects me, annoyed. \"Djinn is the collective people, Djinni is one. That's like saying 'what's a genies'. My grandma had one when she was a kid, said they're not inherently good or evil but they're like, independent. They have thoughts and feelings just like us. One tiny thing, though, they're bound by some weird code or law or something. They get real mad if you fix them to an object, but they can't break promises.\" \nI stare at my friend intently, processing all of this information. \"So I could capture one and get it to help me defeat Shadowlord?\" Nancy shrugs. \n\"Maybe. If you knew the right spell, you had the right powerful object, and you'd have to take precautions that it wouldn't come back and kill you in revenge after it completed its tas-\" \nI was already thinking about how useful a Djinn would be. \"This is our only hope! How can I find one?\" \n\"They usually stay as smoke particles or some other gaseous thing. It's too tiring for them to maintain a form if they're unfixed,\" Nancy recites knowingly.\n\"Could I capture one?\" \n\"You have to have an 'object of extreme power', whatever that means. You have to know the right spell-\" Nancy hesitates, then leans in and whispers something in my ear.//\n\n(text-style:\"blur\")[//\"ce captio genium\"//]\n\nYou can sense the power and intent in those words just from reading them.(set:$wordsOfPower to true)\n\n[[back->Gargoyle Slayer]]",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "Gargoyle Slayer",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "approach her",
+      "text": "The old woman doesn't notice you as you approach. She looks worn and tired,  lines running across her wrinkled face. Her hair is milky gray punctuated with streaks of white, tied up into a neat bun. She's wearing a green cardigan and has a soft, fluttering shawl wrapped around her shoulders. The needles in her hands click as she slowly, painstakingly arranges each feather.\n\nShe notices you with a start and turns, releasing the [pigeon]<p| in her hands.(click:?p)[\n\nYou glance upwards just in time to see the pigeon being snatched out of the air by a five-tailed hawk. It's over within seconds. The woman tsks. \"She wasn't finished... had no chance, especially against //her//,\" she nods towards the hawk, \"One of mine as well.\"]\n\n\"You kids have nothing to do these days?\" She frowns at you. \"Or do you need a bird?\"\n\n[[[\"Yes, actually-\"->yes]]\n\n[\"No,\"]<no|]<n|(click:?no)[(replace:?n)[\"No,\" you respond meekly. The woman just turns away. She's not interested in talking to you.]](if:(history:)contains \"dapper gentleman\")[(unless:$talkedtoMaple is true)[\n\n[[\"There's a deer man asking about you in front of the forest,\"->deerman]]]]\n\nYou decide to return later, [[retreating back the way you came->go outside]].",
+      "links": [
+        {
+          "text": "\"Yes, actually-\"",
+          "destination": {
+            "name": "yes",
+            "pid": 18
+          }
+        },
+        {
+          "text": "\"There's a deer man asking about you in front of the forest,\"",
+          "destination": {
+            "name": "deerman",
+            "pid": 38
+          }
+        },
+        {
+          "text": "retreating back the way you came",
+          "destination": {
+            "name": "go outside",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "bed",
+      "text": "You pat the mattress lovingly. You can always count on your bed to be there for you after a long day.\n\nYou [remember]<1| a long, long time ago.(click:?1)[\n\n//\"I can't believe him!\" she rages, her cheeks stained with smudged eyeshadow, mascara and tears. \"He doesn't get me at all! I'm never going back there!\" She'll be sleeping here tonight, then. You'll give her the bed while you retire to the sofa. \"Why are boys like this?\"\nYou can only pat her shoulder. This is the tenth time this week. Sometimes, you think, if this is what love does to you, you'd rather never know it at all.\nYou pull your sister into a hug, soothing her as she sniffles.//\n\nThat was before she got competitive, before she became aloof, when you were still best friends. You wonder if you miss it.]\n\n[[back->bedroom]](set:$showFooter to false)",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "bedroom",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "yes",
+      "text": "(unless: (history:) contains \"yes\")[(set:$birdTypes to it + (a:\"finch\",\"dove\",\"parrot\",\"crow\",\"chicken\",\"sparrow\",\"gull\",\"bluejay\"))(set:$birdQuals to it + (a:\"seven hearts\",\"the sharpest talons\",\"a cry so haunting it would make grown men fall to the ground\",\"wings as wide as rivers\",\"eyes the color of the sky\",\"no feathers\",))][\"I'm... looking for a (link-repeat:\"[(print:$birdTypes's 1st)]<bird|\")[(replace:?bird)[(set:$birdTypes to (rotated: 1, ...$birdTypes))(print:$birdTypes's 1st)]] with (link-repeat:\"[(print:$birdQuals's 3rd)]<birdq|\")[(replace:?birdq)[(set:$birdQuals to (rotated: 1, ...$birdQuals))(print:$birdQuals's 3rd)]],\" you [say]<s|.\n/\n\"Actually, I don't know,\" you [admit]<a|.]<talk|(click:?s)[(replace:?talk)[\"I'm looking for a (print:$birdTypes's 1st) with (print:$birdQuals's 3rd),\" you say.(if:$birdTypes's 1st is \"phoenix\" and $birdQuals's 3rd is \"feathers as cold as ash\")[](else-if:$birdQuals's 3rd is \"a luminescent body\")[\n\n\"A... what?\" The woman looks at you, raises an eyebrow. Her eyes scan you once, twice, then she leans back, looking intrigued. \"I can tell when someone isn't pulling my leg,\" she says slowly, \"But what's really interesting is why you need it. Not exactly an everyday request...\" Her knuckles tap her legs as she considers. \n\n\"A bird's light to chase away the night,\" she quotes. \"Fine... I can make you something quick.\"\n\nShe produces a needle and a bundle of feathers from somewhere (what? how did she do that?) and quickly begins doing something that vaguely resembles knitting. It's a lot faster than what she was doing with that pigeon, and before you can say a word she tosses a (print:$birdTypes's 1st) at you. Its feathers shimmer, and though you can't tell underneath the sun, you think it's glowing. It looks raggedy, like a poorly made doll, but it's alive.\n\nYou thank her.(set:$birdQuals to it - (a: \"a luminescent body\") )(set:$glowingBird to $birdTypes's 1st)(set:$lantern to true)(set:$needALantern to false)](else-if:$birdTypes's 1st is \"chicken\" and $birdQuals's 3rd is \"a broken wing\")[\n\nThe woman chuckles. \"Another so soon? Are you hunting a squirnel or something?\" You must look startled, because she grins a toothy grin. \"Don't worry, a chicken with a broken wing is easy. Make the offering quick and painless.\"\n\nShe does the same as before, finishing quickly and gingerly placing the clucking bird in your arms.(set:$chickenBrokenWing to true)(set:$birdQuals to it - (a:\"a broken wing\"))](else:)[\n\nThe woman stares at you, then bursts out in laughter. The sound is quite terrifying coming from her bony old frame. \"Little one, do you think feathers grow on trees? You think I'll make you any old bird to suit your fancy? A pet to decorate your house, perhaps?\" She shakes her head with disdain. \"No.\"]]](click:?a)[(replace:?talk)[\"Actually, I don't know,\" you admit.\n\nThe woman chuckles. \"I've heard that more times than there are white hairs on my head,\" she says, and you glance at her snowy hair. \"Come back when you do.\"]]\n\nYou think it's time to [[leave->go outside]].\n",
+      "links": [
+        {
+          "text": "leave",
+          "destination": {
+            "name": "go outside",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "go visit",
+      "text": "The woman's needles are gone. She's staring vacantly upwards and humming a tune you don't know, one of her shriveled hands clutching the shawl and wrapping it tightly around her chest. \n\nShe doesn't look at you. \"It's you again.\"\n\n[[\"I need a bird,\"->yes]](if:(history:)contains \"dapper gentleman\")[(unless:$talkedtoMaple is true)[\n\n[[\"There's a deer man asking about you in front of the forest,\"->deerman]]]]\n\nYou have nothing to say to her, and [[head back towards your apartment->go outside]].",
+      "links": [
+        {
+          "text": "\"I need a bird,\"",
+          "destination": {
+            "name": "yes",
+            "pid": 18
+          }
+        },
+        {
+          "text": "\"There's a deer man asking about you in front of the forest,\"",
+          "destination": {
+            "name": "deerman",
+            "pid": 38
+          }
+        },
+        {
+          "text": "head back towards your apartment",
+          "destination": {
+            "name": "go outside",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "outofapart",
+      "text": "(set:$lamp to \"off\")The autumn air is cool on your cheek as you step out into the dim street. The door of your apartment clicks softly shut behind you.  The steady trickle of people moving along the sidewalk you're used to seeing is gone, replaced by the ocassional citizen out for an evening stroll.\n\nThe safety of your [[apartment->back]] is behind you.\n\nSitting on the sidewalk, an old lady is knitting a pigeon. You feel an unexplainable urge to [[approach her]].\n\nThere's the park, a minute's walk to the west. You could [[go to the park->park]], clear your head.",
+      "links": [
+        {
+          "text": "apartment",
+          "destination": {
+            "name": "back",
+            "pid": 1
+          }
+        },
+        {
+          "text": "approach her",
+          "destination": {
+            "name": "approach her",
+            "pid": 16
+          }
+        },
+        {
+          "text": "go to the park",
+          "destination": {
+            "name": "park",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "park",
+      "text": "(if:(history:)'s last is \"go outside\")[You carefully make your way into the park, the iron gates swinging quietly shut behind you. A cool fall breeze wafts past and flutters your hair. You inhale deeply, savoring the scents this wide open space has to offer. ](else:)[You wander back to the center of the park, absently kicking pebbles off the trail. A gentle breeze flutters at your hair. ]If it were sunday morning, the park would be filled with picnic towels and happy families, rowdy teenagers taking their droids out for a spin, and old couples walking dogs. (unless:$time is \"night\")[Right now though, the last of the sun's rays are just barely illuminating the deserted area.](if:$time is \"night\")[The park looks lonely but hauntingly beautiful in the moonlight. Soft ivory rays illuminate the park's various features, making everything look more magical.]\n\nTo the east is the way back home. You can [[return to your apartment->go outside]] from here.\n\nA path starts under your feet and curls around a [[fountain]] before snaking into the forest. It's a [hiking trail]<hike|, well-worn by countless travellers before you, though you've never explored it yourself. \n\nLarge trees loom at the edge of the path, guarding a playground. (if:$time is not \"night\")[There are two teenagers sitting and chatting on the jungle gym.](else:)[It's deserted at the moment.] You could go and [[check it out->playground]].\n\nIn a small, unobtrusive corner of the park is a neatly-kept garden. You've never seen anyone tending to it, but the flowers are vibrant and healthy, adding a splash of color to the otherwise greenish-brownish landscape. There's a small, dusty path [[leading to the center of the garden->garden]].(click:?hike)[(if:$mapleTalkedTo is true)[(go-to:\"hiking\")](else-if:(history:)contains \"dapper gentleman\")[(go-to:\"dapper gentleman 3\")](else:)[(go-to:\"dapper gentleman\")]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "dapper gentleman 3",
+            "pid": 37
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "dapper gentleman",
+            "pid": 30
+          }
+        },
+        {
+          "text": "return to your apartment",
+          "destination": {
+            "name": "go outside",
+            "pid": 28
+          }
+        },
+        {
+          "text": "fountain",
+          "destination": {
+            "name": "fountain",
+            "pid": 29
+          }
+        },
+        {
+          "text": "check it out",
+          "destination": {
+            "name": "playground",
+            "pid": 31
+          }
+        },
+        {
+          "text": "leading to the center of the garden",
+          "destination": {
+            "name": "garden",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "GloFrogs",
+      "text": "//I cup the wriggling things in my hand before letting them back into the pungent mixture. \"What are these??\"\nJack glances at me, looking annoyed that I'm going through his room. \"New tech. Or, well, biotech - those are the young of Ribbitus glowitus, in their tadpole stage. When they become frogs they stop producing the luminescent substance, so they're kept in a mixture that both inhibits their metamorphosis and sustains them.\" I'm not paying attention to Jack's sciency babble, moving along to rifle through his documents. \"Are you sure you've looked through all these old newspapers? One of them might have a clue to where Shadowlord's hiding.\" \nJack doesn't hear me, apparently, because he's still going: \"The secret's in the formula,\" he says excitedly, \"That's why GloTech can charge so much for such a simple device. It's genius.\"//\n\nYou look over to your lamp. A housewarming gift from your sister, pretty much the only piece of furniture that doesn't look like it's about to fall apart.\n\n[[back->Gargoyle Slayer]]",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "Gargoyle Slayer",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Footer",
+      "text": "\n(unless:(passage:)'s tags contains \"nfooter\")[\n==>\n`[`[quicksave]<q|`]` `[`[[menu]]`]`\n[(if:$inventory's length is >0)[\nYou have: (for:each _item, ...$inventory)[\n_item]]](click:?q)[(if:(save-game:\"Quicksave\"))[(replace:?q)[Saved!]](else:)[(replace:?q)[Sorry, save failed!]]]]",
+      "links": [
+        {
+          "text": "menu",
+          "destination": {
+            "name": "menu",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "snabbitpassage",
+      "text": "//\"A squirnel?\" I really think Nancy's bonkers.\n\"Yep,\" Nancy laughs, \"'Cuz it looks like a snail and a squirrel. But they're really rare and shy, it wasn't a squirnel. You probably saw a turtle or something.\" I frown at her. \"Nancy! I know what I saw! It was rummaging through our packs!\"\nShe rolls her eyes. \"Don't be silly. Squirnels only eat, and I quote, chickenflesh from a chicken with a broken wing. Isn't that so oddly specific?\"\n\"Well, it could always break the chicken's wing while killing it-\"\n\"No, the wing has to be already broken. They can hibernate without eating for years, even decades, unless something startles them or they smell food nearby. Until the last century, it sounded so absurd that most scientists refused to believe it even existed!\"\n//\n(set:$birdQuals to it + (a:\"a broken wing\"))[[back->Gargoyle Slayer]]",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "Gargoyle Slayer",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "chickengiven",
+      "text": "You cover the chicken's eyes, break its neck cleanly, and hold it out to the squirnel. It sniffs once, twice, and accepts the offering. Even though the chicken is almost twice its size, it keeps eating, and soon there is nothing left of the bird.\n\nYou shiver, slightly uneasy. The squirnel looks at you, then dashes out your bathroom, leaving the [glittering red gem]<g| behind.(click:?g)[\n\nYou pick up the gem, slip it into your pocket, and [[exit the bathroom->bedroom]].\n(set:$strangeCreature to -1)(set:$chickenBrokenWing to false)(set:$inventory to it + (a: \"red gem\"))]",
+      "links": [
+        {
+          "text": "exit the bathroom",
+          "destination": {
+            "name": "bedroom",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Startup a",
+      "text": "(set:$lamp to \"off\")(set:$birdTypes to (a:))(set:$birdQuals to (a:))(set:$inventory to (a:))",
+      "links": []
+    },
+    {
+      "pid": 27,
+      "name": "Map",
+      "text": "It's a map, it seems. It's labelled 'Spice mines, xx24'. The paper is pockmarked with crosses, and after turning it this way and that and squinting a little, you manage to find your little apartment. The nearest cross is... west, near the park by your house. \n\nYou're sure you can find it, if you had the map to reference. You stuff it in your pocket.(set:$inventory to it + (a: \"map\"))\n\n[[back]]",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "back",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "go outside",
+      "text": "(set:$showFooter to true)You're standing in front of your [[apartment->back]]. \n\nThis area is quiet this time of day, and you take a moment to just relax. You feel aware of the passage of time flowing smoothly around you. The low buzzing of cars as they cruise by, rich men in their luxurious cars, sleepy office workers returing home, and lovers on their way to romantic restaurants. You stretch your arms.\n\n(if:$time is \"night\")[There's a shawl spread out on the ground here, and instinctively you know better than to touch it. The pattern and the way it's laid out gives it the rather ominous appearance of a dead bird.](else:)[(if:(history:) contains \"approach her\")[The old lady is watching the sky. Her eyes seem far away. You could [[go visit]] her if you wanted.](else:)[Sitting on the sidewalk, an old lady is knitting a pigeon. You feel an unexplainable urge to [[approach her]].]]\n\nThere's the park, a minute's walk to the west. Going to [[the park->park]] doesn't seem like a bad idea.",
+      "links": [
+        {
+          "text": "apartment",
+          "destination": {
+            "name": "back",
+            "pid": 1
+          }
+        },
+        {
+          "text": "go visit",
+          "destination": {
+            "name": "go visit",
+            "pid": 19
+          }
+        },
+        {
+          "text": "approach her",
+          "destination": {
+            "name": "approach her",
+            "pid": 16
+          }
+        },
+        {
+          "text": "the park",
+          "destination": {
+            "name": "park",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "fountain",
+      "text": "The fountain consists of a pillar in the middle of a circular basin, spouting water from its top. It is, as a brief description, elegant. The carvings on its side portray a pretty, long-haired cat girl throwing grain while birds flock around her. It's supposed to be a symbol of peace, you think, something about an old feud settled by sharing food. Actually, it might just be modern art. You didn't pay much attention in history class.\n\nThere are coins shimmering just beneath the water's surface. Their value varies, from pennies to gold shimmering doubloons. People throw them in for good luck. Only someone with dubious morals would [try and steal these coins]<coins|.(unless:$silver is \"taken\")[(click:?coins)[\n\nYou pick out a small silver piece from the bottom of the basin. As soon as it leaves the water, however, it dissolves, leaving a burning sensation in your palm. You snatch your hand back guiltily, glancing around a little to make sure no one saw.(set:$silver to \"taken\")]](if:$inventory contains \"red gem\")[(unless:$fountainThrown is true)+(hook:\"1\")[\n\nYou have a red gem in your pocket. Throwing it in the fountain seems like a waste, but it might bring good luck. [Throw it in?]<a|]](click:?a)[(replace:?1)[\n\nYou toss the gem into the water. It lands with a small splash and rapidly sinks.(replace:?2)[](set:$inventory to it - (a:\"red gem\"))(set:$fountainThrown to true)]](if:$inventory contains \"copper piece\")[(unless:$fountainThrown is true)+(hook:\"2\")[\n\nYou have a copper piece in your pocket, the perfect offering for the fountain. It's not like you'll spend it on anything anyway. [Throw it in?]<b|]](click:?b)[(replace:?2)[\n\nYou toss the copper piece into the water. It lands with a small splash and rapidly sinks. (replace:?1)[](set:$inventory to it -(a:\"copper piece\"))(set:$fountainThrown to true)]](if:$fountainThrown is true)[\n\nYou've made your offering to the fountain.]\n\n[[back->park]]",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "park",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "dapper gentleman",
+      "text": "You follow the winding trail to the edge of the trees, but find your way blocked by a dapper gentleman sitting on a bench. In fact, the bench is directly closing off the trail.\n\n\"Hi, um,\" you start, a bit weirded out.\n\n\"Oh,\" the man waves at you, taking a puff from a cigarette, \"Greetings!\" You notice that he has a pair of white, fuzzy antlers sprouting from his head, on either side of his checker-patterned hat. \"You shouldn't be wandering in the forest this late at night!\"\n\n\"Uh-\"\n\n\"And no, this isn't a friendly warning!\" The man leans forward, smiling at you. \"I'm the guardian of the forest here, I make sure that no one stumbles in here after hours! It's dangerous, you know, and also there are a lot of creatures in there who don't like to be disturbed... hunting.\"\n\nWell doesn't that sound ominous. \n\n[\"I kinda need to go in there-\"]<1|(click:?1)[\n\nThe deer-man sighs in disappointment, waggling a finger at you. \"Like I said, no can do. I'm not going to be responsible for some curious youth disappearing into the forest forever just because they wanted to know what it's like after dark!\"\n\nYou study this creature more closely. His face, while human, is actually slightly fuzzy, with what looks like fur lining his cheeks. Antlers rise from behind his ears, lending him a majestic, regal air. He's twirling a cigarette between his fingers while he watches you.\n\n\"Say,\" he says suddenly, ears - deer ears! - swiveling towards you. \"How is Maple?\"\n\n[[\"Maple?\"->dapper gentleman 2]]\n]",
+      "links": [
+        {
+          "text": "\"Maple?\"",
+          "destination": {
+            "name": "dapper gentleman 2",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "playground",
+      "text": "The playground is simple, but for the children that come to play, it's more than enough. The paint is wearing off quick on its metal frame, though that doesn't subtract at all from its charm.(if:$time is \"night\")[(unless:$snelKnow is true)[\n\nThere's no one here right now. You sigh and take a short breather on the swings. Before long, though, a [[small mound moving under the sand->snel]] catches your eye.]](else:)[\n\nThere's a young brunette and a purple-haired girl sitting here, laughing about something. As you approach, though, their conversation dies down, replaced by polite smiles. \"Hello!\" the purple-haired girl greets you. You see something moving under the sand at the corner of your eye, but decide not to investigate in front of the girls.\n\n[\"Hello,\"]<h|(click:?h)[ you reply awkwardly. Teenagers scare you with their judgemental looks and expectant silences.(if:$lantern is true)[\n\nThey notice your bird and suddenly seem more attentive. \"That's a glowing (print:$glowingBird),\" the brunette exclaims. \"It must be one of Maple's!\" She turns to her friend. \"We've been trying to get her to make us one since forever...\" The other girl nods enviously.]]]\n\nYou can step back onto the [[path->park]].",
+      "links": [
+        {
+          "text": "small mound moving under the sand",
+          "destination": {
+            "name": "snel",
+            "pid": 33
+          }
+        },
+        {
+          "text": "path",
+          "destination": {
+            "name": "park",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "garden",
+      "text": "You follow the neatly laid down cobblestones into the middle of the small garden. Some of the more demanding plants are in pots, placed around the garden's center, while the others (no less beautiful) are scattered on the outer edges.(if:$quest is true)[(unless:$inventory contains \"dandelion\")[ You see a shy bud of yellow. It's a [dandelion]<d|.]] (if:$time is not \"night\")[ The flowers quiver as you brush past, and a few even turn towards you, eager to spread their pollen. Butterflies flit among the plants, gorging themselves on sweet nectar, and a few bees buzz here and there.](if:$time is \"night\")[ The flowers are tightly closed and shy away from you when you accidentally touch them. The garden is silent now.] There's a sundial placed here in front of you, but you don't know how to read it.(click:?d)[\n\nYou gently pluck the dandelion from its pot. The flower lets out a small scream, but is dead in seconds.(set:$inventory to it + (a:\"dandelion\"))]\n\nYou came here with your sister [once]<once|, when you were twelve.(click:?once)[\n\n//\"Slow down,\" you pant, tugging at your sister's sleeve. She doesn't slow down, instead launching herself into the air and doing a twirl. \"Look at this!\" She turns this way and that, pointing to the various flowers flaunting their impressive spring colors. \"Have you ever seen that before?\" You follow her gaze to a deep crimson flower shaped like a bleeding heart. \n\"It's pretty cool,\" you admit.\n\"Cool!\" your sister shouts. \"It's amazing! I'm gonna go explore the rainforests and deserts and mountains and see //all// the flowers!\"\nYou smile at her, not quite believing. \"Sure.\"//]\n\nBehind you is the path leading back to the [[main section of the park->park]].",
+      "links": [
+        {
+          "text": "main section of the park",
+          "destination": {
+            "name": "park",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "snel",
+      "text": "You rise from the swing and cautiously make your way over. The wriggling sand mound has stilled at your approach. You crouch.\n\nA bulbous, moist stalk pushes up from the mound and swivels towards you. You fall over in surprise. The stalk sways back and forth for a moment before the sand erupts to reveal what looks like an ordinary garden snail.\n\n\"Oh... how curious... what is this?\" The... snail?...'s voice is in your mind - well, calling it a voice would be inaccurate, it doesn't sound like anything, just a pure thought channeled directly into your head. \n\n[[\"I'm a human,\"]<1| you answer with hesitation.\n/\n[\"How can you talk? You're a snail,\"]<2| you point out.\n/\n[\"Why were you hiding?\"]<3| you ask the snail.\n]<talk|(click:?1)[(replace:?talk)[\"I'm a human,\" you answer with some uncertainty. The snail seems startled, then makes a movement you approximate to a nod. \"That much I know, yes, oh yes, stepping on us, //eating// us...\" \n\n\"I haven't eaten anyone!\" you protest.\n\n\"Sure, sure, that is to be seen... at least you didn't step on me... actually... you noticed me, though... how can that be? This is... you're...\"(show:?talk2)]](click:?2)[(replace:?talk)[\"How can you talk?\" you ask the snail, bewildered. \"You're a snail, right?\"\n\nThis really seems to offend it, and its slimy body stretches up towards you. \"Ohhh, yes, yes, I am a //snail//... but I answer your question with one of mine... how can //you// talk? So... so... inefficient... You humans rely on vibrations of the air so much you never stop to //listen//...but, but...\"(show:?talk2)]](click:?3)[(replace:?talk)[\"Why were you hiding?\" you ask the snail. \n\nThe snail jumps a little. \"Hiding! I was //not// hiding... I was merely observing the juvenile humans that were here before you... they are a threat... I needed to assess the threat, like I am assessing you... are you a threat? Most humans are, but... you...(show:?talk2)]](hidden:)[\n\n\"You're listening to me right now,\" the snail's voice grows clearer and more sharp, //defined//, as if you suddenly understand a new nuance in its words. \"You're something strange, you are.\"\n\n\"Strange? Look who's talking.\"\n\n\"Are you //touched//?\"\n\n\"Excuse me?\"\n\n\"Cursed. By the Old Ones.\"\n\n\"Um. Well, yes, I've been cursed,\" you begin, but the snail interrupts you.\n\n\"You may be able to help me. Us. You... you! I shall... do something new... something unprecedented...\" the snail shudders, its soft membrane visibly undulating. \"This pains me greatly. It goes against my nature. But to find someone touched!\"\n\n\"What are you talking abo-\"\n\n\"Hear these words, and hear the knowledge within them!\" The snail is practically shouting in your mind. \"When the time comes, you will know where to find us!\"(set:$snelKnow to true)\n\nBefore you can react, it has disappeared into the ground.\n\nYou sigh, get up and dust off your knees, and [[return to the path->park]].\n]<talk2|\n",
+      "links": [
+        {
+          "text": "return to the path",
+          "destination": {
+            "name": "park",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "torn, destroyed box",
+      "text": "You cast your gaze to the ripped up cardboard in the trash. You feel your fingers tremble. Out of all the things you wished for for your birthday, a curse really wasn't one of them.\n\nInside the remains of the box is an oil lamp, still spotless despite being angrily hurled into the trash.\n\n[[back->kitchen]]\n",
+      "links": [
+        {
+          "text": "back",
+          "destination": {
+            "name": "kitchen",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "START?",
+      "text": "It's seven p.m. The sun has almost fully set. Your clock is counting down the time you have left to live, to make meaning of this meaningless life of yours. \n\nYou stand in the middle of your kitchen, trying to collect yourself, trying to calm your nerves. A curse etched onto your soul, weighing heavy on your heart. You've been cursed by a Djinn- sent by your sister, no less.\n\nWhy and how, you wonder. You haven't been on the friendliest terms with her lately, but... to send you a fixed oil lamp, bound with an ancient hex? Apart from being ridiculously cliche, it's not even a convenient way to get rid of someone. \n\nAdmittedly, it could be an accident, but your sibling's intentions seem crystal clear. No one, not even your parents, are responding to your calls. You guess this is their way of tying up the loose ends.\n\n[[continue->START2]]",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "START2",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "dapper gentleman 2",
+      "text": "\"She's an old friend of mine... but she hasn't dropped by for a long time now,\" he says, wistful. \"Sometimes I'll see one of her birds entering the forest. They make themselves right at home.\"(if:(history:) contains \"approach her\")[\n\nYou recall the elderly woman sitting on the bench and offering birds in front of your apartment. \"I think I've seen her.\"\n\n\"Go say hi for me, will you?\" The gentleman sighs. He must miss her a lot. \n\n[\"What kind of birds can she make?\"]<1|(click:?1)[\n\n\"Can!\" the man laughs. \"Those witch needles of her can create anything with wings and a beak! It's just a question of whether she wants to or not. Birds that sing lovely lullabies, birds that can snatch a man off the ground, birds with luminescent feathers that can chase away even magical Darkness... She can tell when a request is just going to be a waste of time.\" He smirks. \"I know, I've tried.\"(set:$askAboutBird to true)]\n\nYou linger for a moment, twisting your hands this way and that. The deer man quirks an eyebrow at you, and you give him a hopeful smile. He sighs.\n\n\"Oh, I suppose you could come in if you wanted,\" he says, putting his hand on his chin. \"You'll need to find an offering for the forest first, though! It might be easier if you just came tomorrow, in the morning...\" He leans over and plucks a blade of grass from behind him. \"There's your first ingredient. I also like dandelions and pure dew-touched honey.\"\n\n\"Wait, what?\"(set:$inventory to it + (a:\"blade of grass\"))(set:$quest to true)](else:)[\n\nYou must look confused, because he sighs in disappointment. \"You don't know Maple? Perhaps she's moved on to other places. Lovely woman, she is - makes birds like mother nature herself. Weaves them from scratch, I've seen her do it. Pity you haven't seen her... If you do come across her, though... go tell her I said hi, won't you?\" He sounds sad.\n\n[\"What kind of birds can she make?\"]<1|(click:?1)[\n\n\"Can!\" the man laughs. \"Those witch needles of her can create anything with wings and a beak! It's just a question of whether she wants to make it for you or not. Birds that sing lovely lullabies, birds that can snatch a man off the ground, birds with luminescent feathers that can chase away even magical Darkness... She can tell when a request is just going to be a waste of time.\" He smirks. \"I know, I've tried.\"(set:$askAboutBird to true)]\n\n\"Oh, I suppose you could come in if you wanted,\" he says, putting his hand on his chin. \"You'll need to find an offering for the forest first, though! It might be easier if you just came tomorrow, in the morning...\" He leans over and plucks a blade of grass from behind him. \"There's your first ingredient. I also like dandelions and pure dew-touched honey.\"(set:$inventory to it + (a:\"blade of grass\"))(set:$quest to true)\n\n\"Wait, what?\"]\n\nYou decide to return later, walking back down the [[path->park]].",
+      "links": [
+        {
+          "text": "path",
+          "destination": {
+            "name": "park",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "dapper gentleman 3",
+      "text": "You approach the deer man again, and his ears prick expectantly. (unless:$talkedtoDeerman is true)[\"Have you talked to Maple? Or are you just here to talk to me? It does get kind of lonely here,\" he remarks, absently reaching up to rub his velvety antlers.](if:$talktoDeerman is true)[He looks a bit happier now, and waves at your approach. \"Hello again!\"](unless:$questDone is true)[[\n\"What kind of food do you like again?\"]<ask0|](click:?ask0)[\n\n\"Grass, dandelions and pure dew-touched honey,\" he repeats patiently.](if:$askAboutBird is not true)[\n\n[\"This Maple... what kind of birds can she make?\"]<ask1|(click:?ask1)[\n\n\"Can!\" the man laughs. \"Those witch needles of her can create anything with wings and a beak! It's just a question of whether she wants to or not. Birds that sing lovely lullabies, birds that can snatch a man off the ground, birds with luminescent feathers that can chase away even magical Darkness... She can tell when a request is just going to be a waste of time.\" He smirks. \"I know, I've tried.\"(set:$askAboutBird to true)]](if:$askAboutMan is not true)[\n\n[\"If you don't mind me asking, what sort of creature are you?\"]<ask2|(click:?ask2)[ you question.\n\nThe man smiles indulgently at you. \"You mean why don't I look like you?\" You shrug sheepishly. \"I was born of the forest. My mother was a white doe, my father a dryad - It's not that strange! There are countries other than yours!\" he adds at your incredulous stare. \"Don't you have better things to do than going around asking people what they are?\"(set:$askAboutMan to true)]](if:$askAboutPlace is not true)[\n\n[\"Why don't you go look for Maple yourself?\"]<ask3|(click:?ask3)[\n\n\"Don't you think I would if I could?\" he responds dryly. \"I'm the //guardian// of this forest, I can't just go gallumphing around looking for people! Actually, I can't go gallumphing around at all. Confined to the borders of these trees...\"(set:$askAboutPlace to true)]](if:$talkedtoMaple is true)(unless:$talkedtoDeerman to true)[\n\n[\"I've talked to Maple,\"]<ask4|(click:?ask4)[ you inform him.\n\nHe looks delighted. \"What did she say?\"\n\n\"Um... may the winds be strong beneath your feet.\" \n\n\"Thank you so much!\" He beams at you, clapping his hands like an excited child.(set:$talkedtoDeerman to true)]](if:$inventory contains all of (a:\"dandelion\",\"pure honey\"))[\n\n[\"I have the 'forest offering',\"]<ask5|(click:?ask5)[ you say, holding out the dandelion, blade of grass and vial of //pure dew-touched honey//. \n\n\"Excellent,\" the deer man says, taking them from you. You wonder how he's going to eat it. That honey is potent and slightly alcoholic...\n\n\"Feel free to explore the forest. Don't say I didn't warn you!\"(set:$quest to false)(set:$inventory to it - (a:\"blade of grass\",\"pure honey\",\"dandelion\"))(set:$questDone to true)\n\nThe bench is still in the way, but you can just step past it into the [[forest]].]](if:$questDone is true)[\n\nThe bench is still in the way, but you can just step past it into the [[forest]].]\n\nYou decide to return later, walking back down the [[path->park]].",
+      "links": [
+        {
+          "text": "forest",
+          "destination": {
+            "name": "forest",
+            "pid": 39
+          }
+        },
+        {
+          "text": "path",
+          "destination": {
+            "name": "park",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "deerman",
+      "text": "(set:$showFooter to false)\"There's a deer man asking about you in front of the forest,\" you say. The woman folds her hands in her lap, eyes suddenly looking everywhere but you. \"What about him?\"\n\n\"He said to come say hi to Maple for him.\"\n\nThe woman's fingers twitch, so slight you almost miss it. \"Thank you, child.\" She's suddenly holding a damanged copper piece in her hand. You didn't even see her hand move. \"May the winds stay strong beneath his feet.\" She presses the coin into your palm.(set:$inventory to it + (a:\"copper piece\"))(set:$talkedtoMaple to true)\n\n[[continue->go outside]]",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "go outside",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "forest",
+      "text": "(set:$showFooter to true)(set:$time to \"night\")(if:$inventory contains \"knife\")[\"Whoa there!\" the deer man exclaims before you pass him. \"That's a knife, isn't it? You'll have to give that up if you want to go into the forest!\"   \n\n\"What now?\" you ask with irritation.\n\n\"Can't have a knife-wielding child running around,\" he replies simply, with a shrug. \n\n](else:)[(if:(history:)'s last is \"dapper gentleman 3\")[The deer man looks at you inquisitvely as you step around his bench, but doesn't say anything. The stars are just starting to rise over the treetops, and you can hear the sounds of the night dropping over the landscape like a curtain. The forest feels unsafe - but you've willingly chosen to ignore the deer man's warning.\n\nThe path you're standing on leads back into the [[park]].\n\nThe forest is dark, you're not sure where to go first. \"Oh, by the way,\" the man calls out to you. \"Don't rely on the hiking trails you're used to. Everything changes at night.\"](else:)[You manage to find the bench where the deer man is smoking his cigarette. He glances back at you as you approach, but doesn't comment on your return.\n\nThe path you're standing on leads back into the [[park]].](if:$snelKnow is true)[\n\nYou know where the snails live. If you want to help them, you just have to [[follow your instincts->snailbase]].](if:$inventory contains \"map\")[\n\nYou pull the map out of your pocket. The moonlight lets you just barely make out the trails and squiggles. You think you know how to get to the [[area marked by the cross->spicebase]].]]",
+      "links": [
+        {
+          "text": "park",
+          "destination": {
+            "name": "park",
+            "pid": 21
+          }
+        },
+        {
+          "text": "follow your instincts",
+          "destination": {
+            "name": "snailbase",
+            "pid": 40
+          }
+        },
+        {
+          "text": "area marked by the cross",
+          "destination": {
+            "name": "spicebase",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "snailbase",
+      "text": "You close your eyes and let your feet lead you. Somehow, you know exactly where to go. When you open them, you're standing in front of a human-sized door carved almost horizontally into the ground.\n\n[Well, the logical thing would be to [knock]<knock|.]<1|(click:?knock)[(replace:?1)+(transition:\"dissolve\")+(transition-time: 2s)[The door swings open, and you feel a pressure in your skull. It rapidly fades, though, and you know you're welcome to [[enter->snailbase2]].]]\n\nYou remember how to [[get back to the deer man->forest]]. \n\n",
+      "links": [
+        {
+          "text": "enter",
+          "destination": {
+            "name": "snailbase2",
+            "pid": 42
+          }
+        },
+        {
+          "text": "get back to the deer man",
+          "destination": {
+            "name": "forest",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "spicebase",
+      "text": "(set:$broom to false)(if:(history:)contains \"spicebase\")[You return to the front of the cave, fortunately faster than the first time. You're again standing in front of the cavernous maw.\n\n[[Enter->spicebase2]]\n\nThere is no room for doubt now. It's nearly morning. Now or never.](else:)[After several wrong turns and about eleven dead ends, you end up in front of the entrance to a gaping cavern. This must be the 'spice mine', you conclude, and inside, hopefully the people fabled for conquering Djinns.\n\n[[You step into the cave->spicebase2]].\n\nYou feel trepidation, and [[return to where the deer man is sitting->forest]]. Hestiation won't help you much now, though. The hourglass is running.]\n\n",
+      "links": [
+        {
+          "text": "Enter",
+          "destination": {
+            "name": "spicebase2",
+            "pid": 49
+          }
+        },
+        {
+          "text": "You step into the cave",
+          "destination": {
+            "name": "spicebase2",
+            "pid": 49
+          }
+        },
+        {
+          "text": "return to where the deer man is sitting",
+          "destination": {
+            "name": "forest",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "snailbase2",
+      "text": "(set:$showFooter to false)You're not sure where you are now. You should be walking downwards, but instead you're walking up. Soft voices (well, thoughts) whisper in your mind, but you can't understand any of it. Soon, the passageway opens into a comfortable living-room-sized cavern. A snail is here.\n\n[[\"Hello...?\"->snailbase3]]\n\nYou can [[return to the deer man->forest]], but you know that if you do, you won't be able to find your way back here.(set:$snelKnow to false)",
+      "links": [
+        {
+          "text": "\"Hello...?\"",
+          "destination": {
+            "name": "snailbase3",
+            "pid": 43
+          }
+        },
+        {
+          "text": "return to the deer man",
+          "destination": {
+            "name": "forest",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "snailbase3",
+      "text": "(set:$showFooter to false)\"Hello?\" you venture. \n\n\"You came.\" The snail's thoughts are clear, much clearer in your mind than last time. Maybe you're getting used to their language- or maybe this is just a more powerful snail. \"You carry the curse of a djinn. While this is unfortunate to you, your impending demise makes you more sensitive to certain... frequencies. No one else is able to hear us, naturally.\" \n\nHe pauses. \"We are great indeed, but there are some things our physical forms cannot accomplish. One of us is sick.\" His voice is invasive, probing into your mind. \"I understand that to a human, this is little cause for concern. However, we cannot risk losing any of our own. It would be a great tragedy.\" \n\n[\"So you want me to find you a cure?\"]<1|(click:?1)[\n\n\"No, we have already obtained a cure. The battle was long and tough, but we were victorious.\" You can feel the sorrow in his words, heavy, weighing you down. \"Many of our resources were lost. A small price to pay for the life of a (text-style:\"blurrier\")+(text-style:\"mirror\")[hoitak] ...\" This thought you don't understand, but you know it means 'snail', or whatever they call themselves. \"We were given a box. A box containing the cure, we made sure of it. However, we cannot open the box, and our //friend// - (it's more than that, but the closest you can understand is 'friend') - is dying.\"\n\n\"You can't //open the box//?\"\n\nFrustration tinges the thoughts of the snail talking to you. \"Yes, that is correct. The box responds only to physical means, and despite our best efforts, neither of us - nor us combining our strength - has managed to get the box open.\"\n\nHe turns. \"Please, follow me.\"\n\nYou [[follow the snail into the other room->snailbase4]]. Seems easy enough.\n\nYou can still [[back out of this->forest]], though you know you won't be able to come back.]\n",
+      "links": [
+        {
+          "text": "follow the snail into the other room",
+          "destination": {
+            "name": "snailbase4",
+            "pid": 44
+          }
+        },
+        {
+          "text": "back out of this",
+          "destination": {
+            "name": "forest",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "snailbase4",
+      "text": "Inside the room is a faded purple box about the size of your fist. A snail (The same snail? Probably, but they all look the same to you) is waiting for you here, beside the box.\n\n\"The strength of your kind is known,\" the snail relays.\n\nYou suddenly remember what happened the last time you opened an unknown object. \"How do I know this is safe for me?\"\n\n\"You're already touched,\" the snail replies with irritation. \"What do you have to lose?\"\n\nHe makes a good point. Still... you could [[flee, never to return->forest]]... or you could [open the box]<o|.(click:?o)[(set:$snelHelp to true)\n\nYou pick up the box, expecting something heavy. It weighs as much as a small book, and it seems to be made of wood. Carefully, you flip it open.\n\nA disgusting smell fills the air and you reel back, gagging. You've been poisoned!\n\n\"The cure!\" There is more than one voice shouting in your head - they're seem to be joyously exclaiming the same thing. The snail standing beside you peers into the box, then turns to you, satisfied with what it's seen.\n\n\"Thank you, human.\" You're still coughing, eyes watering, your hands clutching your nose desperately. \"Oh. I forget how sensitive you mammals can be to airborne chemicals.\" You [[run out of the room]].]",
+      "links": [
+        {
+          "text": "flee, never to return",
+          "destination": {
+            "name": "forest",
+            "pid": 39
+          }
+        },
+        {
+          "text": "run out of the room",
+          "destination": {
+            "name": "run out of the room",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "run out of the room",
+      "text": "As soon as you re-enter the cavern, you feel the weight lifted off your lungs. You can breathe again, though the foul odor still lingers in your nostrils. Okay, maybe you weren't poisoned after all - nothing could make you do that again, though.\n\n\"We are eternally grateful,\" someone says, and your eyes flit around the room until you spot a smallish snail perched on a rock that has its eye-stalks pointing towards you. \"Though you are human and alien, you are touched... we would help you as you have helped us.\" \n\nYou tilt your head. \"I'm not sure what you mean.\"\n\n\"To be cursed by one of the Old ones is a terrifying fate,\" the snail insists. \"My brethen would let you die.\"\n\nYou shiver. \"Yeah, well, Djinn curse and all. I know I'm gonna die, you don't have to hammer it in.\"\n\n\"You don't have to die,\" the snail says, and you snort. \"What? Do you have a cure for me, too?\"\n\nThe snail's mind presses at yours, loud, demanding. \"I would allow you to become one of us. It is a great privilege.\"\n\nSuddenly, you realize what the snail is offering. You wouldn't die, according to it, but you wouldn't be human, either.\n\n\"We are so much //more//, so much //higher//. You don't have to die,\" the snail repeats. \"This is not offered to anyone.\"\n\n[[[\"Al...Alright,\"->join them]]\n\n[\"No thank you,\"]<no|]<talk|(click:?no)[(replace:?talk)[\"No thank you,\" you respond breathily, shaking slightly. The snail isn't going to force you to join it, right?\n\nApparently not, because the snail senses the decision in your words. The thoughts are no longer filling your mind. You feel empty, somehow. Lonely.\n\nYou can [[return to where you saw the deer man.->forest]]]]",
+      "links": [
+        {
+          "text": "\"Al...Alright,\"",
+          "destination": {
+            "name": "join them",
+            "pid": 46
+          }
+        },
+        {
+          "text": "return to where you saw the deer man.",
+          "destination": {
+            "name": "forest",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "join them",
+      "text": "\"Alright, sure,\" you agree, your voice shaking. \"If it will keep me alive, then yes.\"\n\nThe snail regards you, looking slightly disappointed. \"You should be jumping at this chance,\" it tells you. \"This is a very grand thing indeed.\"\n\nIt turns around and glides down into a hole you hadn't seen before. \"Hey! Where are you going?\"\n\n\"Did you think we lived in large, inefficient spaces? No, we anticipated we might one day have a visitor of your size. We must prepare. Wait.\" You're getting increasingly worried, and starting to regret your decision.\n\n\"It's perfectly safe.\" The voice curls around your mind, soft, soothing. \"When you are one of us, you will look back at what you were and easily conclude that our race is superior.\" That sounds way too cult-y for your tastes, but the snails seem sane enough. Maybe being one of them wouldn't be so bad.\n\n[[\"First, you must discard this body.\"]]",
+      "links": [
+        {
+          "text": "\"First, you must discard this body.\"",
+          "destination": {
+            "name": "\"First, you must discard this body.\"",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "\"First, you must discard this body.\"",
+      "text": "You awaken as not human.\n\nYou're still in the same room as you were when you lost consciousness. There's light streaming in through a passage on your left. //Daybreak!// \n\nYou're alive.\n\nYou try to get to your feet, then realize you don't have feet. You try waving your hands, but you don't have hands - why is the room shaking? - oh. You're waving your eyestalks. \n\nYou crawl around for a few seconds, practicing flexing your muscles to move and turn. You move onto patch of floor that's horribly, horribly salty, and you shrink away in alarm.\n\nThere's something else you can feel, but can't quite place. You chase the feeling, and you're [suddenly]<snel| -(click:?snel)[\n\n(link-reveal:)[//Awake.//\n\nAlive. You've never experienced anything like this before, and for a moment, you wonder if you're drugged. Your consciousness is //expanded//, you are so much more than just a physical body limited to this slimy reality here and now. Your mind is thousands of tiny tentacles at once, reaching out to touch and brush the thoughts of other sentient beings. Most of them ignore you, a few greet you, and some push you away.\n\nYou find the minds of your kind. They relay to you, in less than a millionth of a millisecond, all the information you need to know about your position and how to navigate the tunnels. Despite the constant flow of information, you are not overwhelmed. You know exactly what you have to do.\n\n(text-style:\"smear\")+(hook:\"cc\")[\"Come, quick. There is work to be done and worlds to discover.\"](click:?cc)[(goto:\"end.\")]]\n\n\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "end.",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "end.",
+      "text": "end.\n\n(link:\"`[`replay`]`\")[(reload:)]\n(link:\"`[`menu`]`\")[(go-to:\"menu\")]\n(link-reveal:\"contact\")[ ...namimoro@gmail.com]\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "menu",
+            "pid": 70
+          }
+        },
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "contact",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "spicebase2",
+      "text": "(set:$showFooter to false)(set:$spicebase to 0)You wander into the cave, and though it should be horribly dark, it's not. Friendly turquoise mushrooms lining the dank walls pulse light in uneven intervals, guiding your way. It's not comfortably visible in here, but you won't fall over a cliff to your death.\n\nThe cave is deep.\n\nYou come to an intersection. [[Left->sp]], [[right->sp]], or [[straight->sp]]?",
+      "links": [
+        {
+          "text": "Left",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        },
+        {
+          "text": "right",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        },
+        {
+          "text": "straight",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "sp",
+      "text": "(if:$fountainThrown is true)[(if:$spicebase is 4)[(go-to:\"spicebase4\")]](else:)[(if:$spicebase is 9)[(go-to:\"spicebase4\")]](either:(display:\"s1\"),(display:\"s2\"),(display:\"s3\"),(display:\"s4\"))(set:$spicebase to it +1)\n\n\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "spicebase4",
+            "pid": 51
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "s1",
+            "pid": 52
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "s2",
+            "pid": 53
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "s3",
+            "pid": 54
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "s4",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "spicebase4",
+      "text": "(if:$fountainThrown is true)[You wander the network of tunnels for a few hours (you can't really tell, time down here feels strange) but eventually you come across a large - really, really large room. There's a gigantic oak door looming before you, seamlessly melting into the surrounding stone. You wonder how you managed to find it so quickly. You suppose you have good luck.](else:)[It feels like hours. Days. So much time passes, you wonder how you aren't dead yet. Then again, you can't seem to grasp any sense of time down here. This cave is different from the others, though. There's a gigantic oak door looming before you, your prize for trawling weakly through the cave network for so long. Although you'd accepted, a while back, that you would die in these tunnels. At least you still have enough luck that that may not be the case.]\n\n(link:\"You raise your hand to knock.\")[You raise your hand to knock - but before you touch the wood, the door swings open on its own. A cloaked figure, with narrow fox like eyes greets you. Their skin is whiter than any white you've ever seen, and the veins underneath look cyan.\n\n\"A visitor,\" the figure murmurs. You'd expect someone who lived down here to have a voice rough like grating stone, but theirs sounds surprisingly melodic. \"Come in.\"\n\n[[You follow the figure into the dwelling->spicebase5]]. It's not like you have much choice by this point.]",
+      "links": [
+        {
+          "text": "You follow the figure into the dwelling",
+          "destination": {
+            "name": "spicebase5",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "s1",
+      "text": "You (either:\"stumble\",\"trip\",\"lose your footing\"), and you're sliding downwards. These tunnels are so treacherous! Rocks clatter to the floor as you dislodge them. (either:\"You look around\",\"You sigh\",\"You brush the dust off your knees\") and assess the room you're in.\n\nThere are (either:\"glowing mushrooms planted in neat rows on the cave walls\",\"clay pots collecting water dripping from the ceiling\",\"chicken scratch paintings doodled on the floor\"), and (either:\"a \"+(either:\"crimson\",\"pastel green\",\"midnight black\")+\" \"+(either:\"marking slashed across each of\"),\"some bones lined in front of\",\"various \"+(either:\"glowing\",\"dripping\",\"transparent\")+\" butterflies fluttering about\") the four exits in front of you.\n\n[[Go through the first one->sp]]\n[[Go through the second one->sp]]\n[[Go through the third one->sp]]\n[[Go through the fourth one->sp]]",
+      "links": [
+        {
+          "text": "Go through the first one",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Go through the second one",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Go through the third one",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Go through the fourth one",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "s2",
+      "text": "(either:\"After what seems like \"+(either:\"days\",\"weeks\",\"hours\")+\" stumbling around \"+(either:\"blind\",\"in the dark\",\"in total darkness\"),\"Seeing a \"+(either:\"twinkling\",\"sparkling\",\"glittering\")+\" light in the distance\"), you find a room (either:\"lit by fireflies\",\"illuminated by \"+(either:\"faintly\",\"rainbow-colored\",\"aggressively\")+\" glowing mushrooms\",\"glowing from some unknown substance seeping from a crack in the wall\"). There are (either:\"drawings\",\"paintings\",\"scribbles\") scrawled on its sides.\n\n(either:\"You can't make any sense of them.\",\"They are meaningless to you.\",\"You have no idea what any of them are supposed to represent.\")\n\nThe room branches out into three passageways, not including the one you entered from.\n\n[[North->sp]]\n[[East->sp]]\n[[West->sp]]\n[[(Hopefully) back the way you came->sp]]",
+      "links": [
+        {
+          "text": "North",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        },
+        {
+          "text": "East",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        },
+        {
+          "text": "West",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        },
+        {
+          "text": "(Hopefully) back the way you came",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "s3",
+      "text": "After getting lost for a while, you wander into a (either:\"cavern\",\"room\",\"cramped space\"). (either:\"Not that there's much difference between it and the small passageways you've been \"+(either:\"crawling through\",\"digging past\",\"squeezing between\")+\".\",\"Or at least, you think it's new.\",\"You rub your \"+(either:\"eyes\",\"head\",\"nose\")+\" ,\"+\"growing weary.\") There's (either:\"a \"+(either:\"rapid\",\"small\",\"gurgling\")+\" stream cutting through the middle of it\",(either:\"white\",\"gray\",\"indigo\")+\" lichen creeping up the walls\"), and on the other side you can see two tunnels spiralling to whoever knows where.\n\n[[Enter the tunnel spiralling clockwise->sp]]\n[[Enter the tunnel spiralling counterclockwise->sp]]",
+      "links": [
+        {
+          "text": "Enter the tunnel spiralling clockwise",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Enter the tunnel spiralling counterclockwise",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "s4",
+      "text": "This room (either:\"reminds you of\",\"smells vaguely of\",\"is filled with the essence of\") (either:(either:\"rotting\",\"aged\",\"dried\")+\" \"+(either:\"roses\",\"fish\",\"honeycomb\",\"meat\"),\"home\",(either:\"your sister\",\"your parents\",\"your highschool friends\")). You feel faintly (either:\"dizzy\",\"nauseous\",\"sick\"). You stumble into the middle of the room (either:\",almost colliding with a \"+(either:\"large\",\"small\",\"crumbling\")+\" column.\",\"to lean against a \"+(either:\"human\",\"dog\",\"funnily\")+\" shaped rock\",\"to drink some \"+(either:\"bitter\",\"sour\",\"sweet\")+\" tasting water from a puddle.\")\n\nYou think this room is a dead end until you look upwards. There's a small hole, but you feel a faint (either:\"breeze\",\"wind\",\"coldness\",\"heat\") (either:\"flowing\",\"pulsing\",\"radiating\") from it.\n\n[[Enter the hole.->sp]]",
+      "links": [
+        {
+          "text": "Enter the hole.",
+          "destination": {
+            "name": "sp",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "spicebase5",
+      "text": "The person throws back their hood, revealing short hair as white as their skin. \"I am Karafis,\" they say, and the room is as if filled with a dozen singing people repeating their words. \"The last of the Mist People living in this depleted spice mine.\" Their bright eyes meet yours, and they beckon you to sit. The inside of this house is mainly rock and smooth, polished stone, but they have mats woven of lichen and lights made from glowing mushrooms and bone. \n\nKarafis reaches over and sets a frosty cup of tea in front of you. \"I'm surprised you found me. Most people don't.\" They nod at your wince, remembering the delirious stumbling through the tunnels.\n\n\"Take your time. What you're used to up there... it's not the same down here. You don't have to worry about anything now.\"\n\n[\"You mentioned something about 'the Mist People'. Who are they?\"]<1|(click:?1)[ you ask.\n\nKarafis taps their chin. \"I assume you didn't just wander down here out of curiosity? You must have heard something of us before. We live among spice. It alters us, affects us... in ways you wouldn't understand yet. The Mist People are nomadic, when the last traces of the spice are gone, we start anew. I hear we're also famous for dealing with Djinn, as well.\"]\n\n[\"What is this 'spice'?\"]<2|(click:?2)[\n\n\"Cinnamame is its trade name, I believe. It's highly addictive, though we've developed resistances against most of its negative effects. Areas infused with it seem to behave strangely, both biotic and abiotic. I'm still unsure whether it physically affects the environment or merely the individual's perception.\"]\n\n[\"Who are you, really?\"]<4|(click:?4)[\n\nThey chuckle at your question. \"I'm Karafis. Karafis, and nothing more. I'm one of the Mist people. I've been living here since... ah, forgive me, I've forgotten the date. I used to be a healer. I spend my days tending to the living aspects of these caverns, foraging what I can find, and making small trinkets.\"]\n\n[\"What's up with these caves?\"]<7|(click:?7)[\n\nThey look briefly confused. \"What's up with them?\"\n\n\"Why are they so... tangled? And lots of them look like they've been recently messed with. That wasn't you, was it?\"\n\n\"Ah. Well, this place does have a mind of its own, as do most spice-touched landforms. That was either the local fauna, me, or the others in my tribe. Navigation is only difficult if you don't know the way.\"]\n\n[\"Where are the rest of you?\"]<5|(click:?5)[ You're curious about this. The books indicated a whole tribe of these people, yet you're only talking to one. \"The rest of... the Mist people?\"\n\n\"Ah, good question,\" Karafis replies, nodding. \"They lived a long, long time, but eventually even a Mist Person withers away. That was the fate of my tribe, I'm afraid.\"\n\n[\"Why didn't you?\"]<6|(click:?6)[\n\n\"I still see the beauty in these caves, even after countless aeons,\" Karafis replies simply. \"That is reason enough to live.\"]]\n\n[\"Can I rest here?\"]<8|(click:?8)[\n\nKarafis laughs. \"Well, you are welcome to try.\" Glancing around, you notice there is nothing that would serve as a bed in this room.\n\n\"You don't sleep?\"\n\nThey shake their head. \"Sleeping will do nothing for you. It's an effect of the spice. If you are tired, meditate.\"]\n\n[\"I can't really waste time talking,\"]<3|(click:?3)[ you insist, \"I have a timer on my life.\"\n\nKarafis blinks slowly, unconcerned. \"Ah, a typical Djinni tactic. Don't worry, such time constraints are not a problem for us here. It's one of the reasons my people choose to live among spice.\"\n\nEven so, you're done getting to know Karafis now, and you'd rather move on to discussing your [[curse]].]",
+      "links": [
+        {
+          "text": "curse",
+          "destination": {
+            "name": "curse",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "curse",
+      "text": "You quickly sum up your problem to the Mist Person. They listen patiently, sipping at their tea. \"Djinn are not malicious entities,\" Karafis informs you, \"They merely follow their obligations as Djinn.\"\n\n\"Now, we have a few options...\"\n\nYou listen to them talk. You feel like you could listen to them forever. Their voice is sweet, soft, never droning or repetitive. When they finish, you almost sigh.\n\n[\"You mentioned something about re-capturing the Djinn?\"]<1|(click:?1)[\n\n\"Yes. Djinn can be captured with a strong soul, a powerful talisman, the words of power, and an act of extreme good. You have already proven you have a strong soul by finding me here. However, I cannot vouch for the rest. Do you have these things? If you don't, this cannot be done.\"\n\n[[[\"I do.\"->\"I do.\"]]\n/\n[\"I don't think so.\"\n\n-]<30|]<x|(click:?30)[(replace:?x)[\"I don't think so,\" you admit.\n\n\"Well, that's a shame.\"\n\n-]]]\n\n[\"Did you offer to let me stay with you?\"]<2|(click:?2)[\n\nKarafis stares at you seriously, considering it. \"Your company down here would not be unwelcome...\"(if:$strangeCreature is -1)[ They hesitate though, finally letting out a resigned sigh. \"I must be honest. You have killed before. I cannot risk your presence here, and I doubt the tunnels will willingly accept you either. I'm sorry, you may not stay.](else-if:$silver is \"taken\")[ They pause suddenly, mouth drawn into a line, putting down their cup of tea. \"But you are not the type of person who would do well living in these tunnels. Even the smallest act of dishonesty can turn them against you. I'm afraid you may not stay.\"](else:)[ \n\n\"You are aware of how time flows here. If this life doesn't scare you, you are welcome to stay.\"\n\n[[\"I'll stay.\"]]\n\n-]]\n\n[\"You can remove the curse, right?\"]<3|(click:?3)[\n\n\"Yes.\" Karafis seems reluctant, their narrow eyes shifting to avoid your gaze. \"And I will, if you wish me to. The curse will rebound to the curser.\"\n\nThe curser - that would be your sister, since she sent you the gift. Whether she actually fixed the lamp would be irrelevant... the act of sending it to you would mark her as the one to next receive the curse. That should be fair, right? Karma's karma - unless it was an accident... and then you doubt your sister would be able to find a way out of it within eleven hours. (You realize you were incredibly lucky.)\n\n[[\"I want you to remove the curse.\"]]\n\n-]\n\n[\"Aren't there any other options?\"]<4|(click:?4)[\n\nKarafis regards you solemnly. \"You could choose to die. There is no shame in dying now, trust me. It is only your fear that holds you back.\"\n\n[[\"I... I'll let myself die.\"->die]]]",
+      "links": [
+        {
+          "text": "\"I do.\"",
+          "destination": {
+            "name": "\"I do.\"",
+            "pid": 58
+          }
+        },
+        {
+          "text": "\"I'll stay.\"",
+          "destination": {
+            "name": "\"I'll stay.\"",
+            "pid": 61
+          }
+        },
+        {
+          "text": "\"I want you to remove the curse.\"",
+          "destination": {
+            "name": "\"I want you to remove the curse.\"",
+            "pid": 59
+          }
+        },
+        {
+          "text": "\"I... I'll let myself die.\"",
+          "destination": {
+            "name": "die",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "\"I do.\"",
+      "text": "Karafis nods. \"Well then, if you're sure.\"\n\nHe leads you to the door, murmuring words you vaguely recognize as sigils of protection. \"These will not stop the Djinn, but it will buy you time. Any truly good deed you've done can slow the Djinn down, enough for you to raise your object of power and chant the correct words.\"\n\nHe smiles, presses your untouched cup of tea into your hands. \"Drink this. Good luck. Capturing a Djinn is no small feat.\"\n\n\"How will I get out of here?\"\n\n\"The tunnels feel your intent,\" the Mist Person assures you. \"You will be at the surface before you know it.\"\n\n[[Thank Karafis and return.]]",
+      "links": [
+        {
+          "text": "Thank Karafis and return.",
+          "destination": {
+            "name": "Thank Karafis and return.",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "\"I want you to remove the curse.\"",
+      "text": "Karafis looks at you, like //really// looks at you. \"I am no judge of character or one to play god,\" they say sadly, \"but I feel like you are choosing the wrong choice. However, I may be mistaken. You found me, after all - the tunnels have decided that you are capable of good.\"\n\nThe Mist Person lifts their arms, closes their eyes, and forcefully incants a powerful spell. It's the first time you've heard Karafis's voice anything short of beautiful.\n\nThe words sound ugly, in fact.\n\nWhen they are done, they turn to you, visibly exhausted. \"Leave me now. Leave this place. The tunnels will allow you exit.\"\n\nYou nod, glad to be rid of your curse, and scurry out of the tunnels.\n\nAs promised, it doesn't take long before you reach the surface. Dawn has broken across the sky, painting it in lovely oranges and violets. You take a moment to lean against the entrance of the mine, appreciating the morning.\n\n[[Life goes on.->end.]]",
+      "links": [
+        {
+          "text": "Life goes on.",
+          "destination": {
+            "name": "end.",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "die",
+      "text": "Karafis's gaze is infinitely gentle. \"It's difficult, I know.\" They touch your arm softly and lead you to the door. \"The tunnels acknowledge your choice. It should not take you long to reach the surface again.\"\n\nYou sigh, feeling tears prick at your eyes. \"I tried so hard,\" you tell Karafis. \"I did so many things I wouldn't normally do, looking for you.\"\n\nThey nod. \"The desperation of a dying creature. Today you may have experienced things that would usually take you decades to witness. The Djinn's curse is not always a curse.\"\n\n\"Thank you, Karafis.\"\n\nThey smile at you, bowing a little bow. \"It's been my pleasure talking to you. I'm glad to have met someone with so much more courage than me.\"\n\nYou realize that the pale being, too, may be afraid to die. It doesn't make them any less in your eyes at all. \"Ah... Well then, goodbye.\"\n\n[[You slip back into the tunnels.]]",
+      "links": [
+        {
+          "text": "You slip back into the tunnels.",
+          "destination": {
+            "name": "You slip back into the tunnels.",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "\"I'll stay.\"",
+      "text": "\"I'll stay,\" you tell Karafis. \n\nThey smile at you, a genuine smile spread across their face. \"I'm glad to hear that,\" Karafis says. \"A new face around here is such a pleasant arrangement.\"\n\nThey tell you all about spice, its properties, its negative effects, how it distorts your surroundings. They tell you all about the tunnels, the caves, the mines. \n\nThey tell you about themselves, their life story, and in turn, you tell them yours. \n\nThey tell you of the Mist People, whose history stretches back farther than memory can recall, and it's not Karafis's memory that is drawn upon to tell you the story of the People, it is the memory of the tunnels.\n\nThey teach you how to live this life, among the spice, and you begin to understand. You learn what it means to spend your life unaltered by the flow of time. You'd think without a purpose or end, life would be meaningless, but Karafis teaches you how to appreciate it anyway, to see the value inherent in the existence.\n\nYou understand abstract ideas, you ponder philosophical meaning among long sessions of meditation. You start to see things the same way Karafis does: unpuncuated by time.\n\nYou enjoy each others' company immensely. You appreciate having Karafis as a mentor and tour guide, and they appreciate having a fresh new opinion to compare their ideas against and someone to learn their history.\n\n[[You live, not among the Mist People, but you live their life.->end.]]",
+      "links": [
+        {
+          "text": "You live, not among the Mist People, but you live their life.",
+          "destination": {
+            "name": "end.",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "You slip back into the tunnels.",
+      "text": "As the Mist Person promised, it feels like you've only traversed two rooms before you're stumbling out of the entrance to the mine. You heart is fluttering in your chest, but underneath that, there is acceptance.\n\nSo this is your fate.\n\nYou wander around aimlessly for a few minutes before you find a rock to sit on. Here, there is a magnificent view of the sky splitting apart into thousands of shades. The last sunrise you'll see, and it is incredibly beautiful, a masterpiece painted on the wide canvas above you.\n\nAs the sun steals into the sky, you feel a presence behind you. You close your eyes, not wanting to face your executioner. You saw the Djinn before, when he cursed you, and now you want the last thing you see to be the sunrise.\n\nYou've never bothered to see, to really take in these little moments before. \n\n[[The different colors streak through your mind.->end.]]",
+      "links": [
+        {
+          "text": "The different colors streak through your mind.",
+          "destination": {
+            "name": "end.",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Thank Karafis and return.",
+      "text": "As promised, the tunnels seem easier to navigate and before you know it you're stepping out of the abandoned mine. Dawn is just beginning to break. You feel the air crackling, like it did when the Djinn appeared. You ready yourself.(if:$snelHelp is true)[\n\nThe Djinn materializes in front of you, intimidating as ever. His bushy eyebrows pull together in a frown as he realizes he cannot brush aside your defenses. \"What did you do?\"\n\n[[\"I saved a snail,\"->djinn2]]\n](else-if:$talkedtoMaple is true)[\n\nThe Djinn materializes, intimidating as ever. He looms over you, a dark cloud. He looks confused when you don't drop to the ground. \"What did you do?\"\n\n[[\"I made an old woman and a deer man's day brighter,\"->djinn2]]](else:)[\n\nThe Djinn materializes before you, and your stomach drops. You feel so nauseous you want to explode into a million pieces. \"Do you think those puny wards can stop me?\" The Djinn's words are full of scorn and a hint of anger as he invades your mind and sends your world spinning into an abyss of white.\n\n[[You are no more.->end.]]]",
+      "links": [
+        {
+          "text": "\"I saved a snail,\"",
+          "destination": {
+            "name": "djinn2",
+            "pid": 64
+          }
+        },
+        {
+          "text": "\"I made an old woman and a deer man's day brighter,\"",
+          "destination": {
+            "name": "djinn2",
+            "pid": 64
+          }
+        },
+        {
+          "text": "You are no more.",
+          "destination": {
+            "name": "end.",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "djinn2",
+      "text": "The Djinn rubs his chin. \"Interesting. Personally, I admire your actions. However, I have a duty to fulfill.\" He raises his hands, really concentrating now, prepared to blast open your wards.(if:$inventory contains \"red gem\")[\n\nYou scrabble through your pocket frantically and produce the ruby gemstone. The genie's eyes widen, and you see his hands falter slightly.(if:$wordsOfPower is true)[\n\n(text-style:\"blur\")[//\"ce captio genium\"//], you whisper. Just like that, the Djinn is sucked into the gem.\n\n[[You stare at it.]]](else:)[\n\nWhat was the last step? You're sweating now, you can't remember. Words of power! You need to say words of power to capture the Djinn. You feel your wards unraveling around you, and realize you don't know any. \"Open sesame!\" You scream desperately. \"Begone, beast!\"\n\n[[But none of them work, and the Djinn takes you.->end.]]]](else:)[\n\nYou shuffle through your pockets desperately, but none of the things you touch have any aura that indicate they might be useful. In a last act of desperation, you fling the first thing you find at him - but it's too late, he's already torn down your defenses and taken your being.\n\n[[You are no more.->end.]]]",
+      "links": [
+        {
+          "text": "You stare at it.",
+          "destination": {
+            "name": "You stare at it.",
+            "pid": 65
+          }
+        },
+        {
+          "text": "But none of them work, and the Djinn takes you.",
+          "destination": {
+            "name": "end.",
+            "pid": 48
+          }
+        },
+        {
+          "text": "You are no more.",
+          "destination": {
+            "name": "end.",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "You stare at it.",
+      "text": "The Djinn is captured. You've captured a Djinn. You let out a triumphant cry. Your curse is broken! The sun has risen now, and its rays illuminate the gem, making it shimmer like a lit coal. You now have a magical servant at your beck and call.\n\nYou can't believe you bested this curse. This feels like a dream, all of it - how much of this was your doing, and how much of it was the generosity of strangers and just pure dumb luck?\n\nBut you can't sell yourself short, you managed to pull through after all.\n\nWhat do you decide to do with the gem?\n\n[[Release the Djinn to strike a deal]]\n\n[[Wear it around your neck as a trophy]]",
+      "links": [
+        {
+          "text": "Release the Djinn to strike a deal",
+          "destination": {
+            "name": "Release the Djinn to strike a deal",
+            "pid": 66
+          }
+        },
+        {
+          "text": "Wear it around your neck as a trophy",
+          "destination": {
+            "name": "Wear it around your neck as a trophy",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Release the Djinn to strike a deal",
+      "text": "You tap the gem with intent to release the Djinn, and he billows out in a cloud of smoke. The captive genie bows to you. \"You've captured me, so now I recognize you as my master until you strike a contract that frees me.\" The smoke around his face dances, it looks like he's trying to hold back a smile.\n\n\"Forgive me for speaking out of turn, but you are the first in millinea to capture me who isn't an evil sorcerer or wizard of some sort.\" His eyes twinkle. \"If your orders are just, I shall be happy to serve you.\"\n\nYou decide that your first course of action might be to settle things with your sister, no matter her intentions. You do miss her after all, you admit. Maybe something of your relationship can be salvaged - you feel like a different person after what you've been through. More mature. Experienced.\n\nAfter that, you might use your Djinn to create good in the world. He doesn't seem so bad, after all. You don't think he'll object to you using his powers to resolve conflict, give to the needy, or conserve the diminishing spice mines.\n\n[[You'll make this world a better place.->end.]]",
+      "links": [
+        {
+          "text": "You'll make this world a better place.",
+          "destination": {
+            "name": "end.",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "Wear it around your neck as a trophy",
+      "text": "You've captured a Djinn! A djinn. You can't imagine the power the gem now holds. If you wear it on your neck, it will amplify any magic you choose to use, if you learn any (After all, now that you're not cursed, you can! You have so much time) or serve as a talisman for good luck and protection against malevolent spirits. \n\nYou decide that the first thing you do after this (Actually, right after a well-deserved rest) will be to confront your sister. If she truly meant you ill, well - you have a Djinn under your power. If not, you feel like she would be happy to hear that you're alright, despite your differences.\n\n[[You head home, a shimmering gem around your neck and a lightness in your heart.->end.]]",
+      "links": [
+        {
+          "text": "You head home, a shimmering gem around your neck and a lightness in your heart.",
+          "destination": {
+            "name": "end.",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "Header",
+      "text": "(unless:(passage:)'s tags contains \"nheader\")[(replace:?sidebar)[](if:$lantern is true)[There's a faintly glowing [(print:$glowingBird)]<1| following you around.(click:?1)[ If you get too close to it, it dances away. It won't let you touch it.\n\n]](if:$chickenBrokenWing is true)[You're carrying a [chicken]<chicken| in your arms. It clucks at you if you jostle it too hard.\n\n(if:$time is \"night\")[ The chicken scolds in alarm as it notices the dark sky, opening its wings with unexpected force. It seems its instinct to roost is stronger than anything else. Before you can grab it, it flutters away, clucking frantically.\n\n(set:$chickenBrokenWing to false)]](if:$inventory contains \"knife\")[(if:$chickenBrokenWing is true)[You're also carrying a knife, dear gods! Chickens and knives seem like a dangerous combination.\n\n]]]",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "credits",
+      "text": "This game was made in Twine, v. 2.1.3. \n\ncredit to:\n\nmy parents, for raising me to be an open-minded person with a love for discovering, teaching me how to read and write, and for supporting me no matter what I choose to do.\n\nthe lovely Dragon, who encouraged me to actually make this game and didn't think it a waste of time, and whom without my life would lose so much meaning.\n\nthe beta testers who made this game run smoothly and gave constructive criticism: Pim, Khing, Khem, (tba)\n\n(link:\"return to game\")[(go-to:(history:)'s 2ndlast)]",
+      "links": []
+    },
+    {
+      "pid": 70,
+      "name": "menu",
+      "text": "Day of the Djinn\n\nby Nammi\n\n[[credits]]\n\n(link-reveal:\"save game\")[: \n(link:\"slot 1\")[(if:(save-game:\"slot1\"))[Success! Your game has been saved to slot 1.](else:)[Not saved. Sorry, you won't be able to save if you're in incognito mode, your browser's storage is full, or you're using a browser incompatible with the game.]]\n(link:\"slot 2\")[(if:(save-game:\"slot2\"))[Success! Your game has been saved to slot 2.](else:)[Not saved. Sorry, you won't be able to save if you're in incognito mode, your browser's storage is full, or you're using a browser incompatible with the game.]]\n(link:\"slot 3\")[(if:(save-game:\"slot3\"))[Success! Your game has been saved to slot 3.](else:)[Not saved. Sorry, you won't be able to save if you're in incognito mode, your browser's storage is full, or you're using a browser incompatible with the game.]]]\n\n(link-reveal:\"load game\")[:\n(link:\"load from quicksave\")[(load-game:\"Quicksave\")]\n(link:\"load from slot 1\")[(load-game:\"slot1\")]\n(link:\"load from slot 2\")[(load-game:\"slot2\")]\n(link:\"load from slot 3\")[(load-game:\"slot3\")]]\n\n(link-reveal:\"restart game\")[: are you sure? (link:\"yes\")[(reload:)]]\n\n[[contact]]\n\t\t\t\t\t\t\n(link:\"return to game\")[(go-to:(history:)'s last)]",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "yes",
+            "pid": 18
+          }
+        },
+        {
+          "text": "credits",
+          "destination": {
+            "name": "credits",
+            "pid": 69
+          }
+        },
+        {
+          "text": "contact",
+          "destination": {
+            "name": "contact",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "CSS header",
+      "text": "{<script>$('html').removeClass('drunk');</script>\n(if: $drinkcount is 5)[<script>$('html').addClass('drunk');</script>]}",
+      "links": []
+    },
+    {
+      "pid": 72,
+      "name": "contact",
+      "text": "Discovered a bug? Want to talk about my game? Just want to talk?\n\nEmail me at namimoro@gmail.com\nor LINE ( does anyone use line? ) @ namimoro\n\n(link:\"return to game\")[(go-to:(history:)'s 2ndlast)]",
+      "links": []
+    },
+    {
+      "pid": 73,
+      "name": "START2",
+      "text": "It isn't that bad, you tell yourself uselessly. You admit that you're scared, so scared to die, even though there is no one to care. You don't want to die.\n\nRacking your brains for a way out of this dilemma, you can only think of digging up all the info you can find on Djinns. What do you know about Djinns? Almost nothing except that they cook a mean curse.\n\nThere's no way you can defeat the Djinn when it comes back for you, after it's marked you - you'll have to outmagic it or look for someone who can. \n\nYour bookshelf would be a good place to start. You have until the next dawn breaks, which isn't much time- but it's something.\n\nYou're not going to be cursed off that easily.\n\n[[continue->kitchen]]",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "kitchen",
+            "pid": 3
+          }
+        }
+      ]
+    }
+  ]
+}

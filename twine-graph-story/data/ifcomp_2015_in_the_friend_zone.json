@@ -1,0 +1,2477 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Imposter",
+      "text": "As you stride towards the campfire you notice dark shapes occluding the stars above your head: slender cords emerging from the river to wrap spirals round the massive stone arm. One of the cords is close enough to touch. You lay a probing hand on the thing, but pull back when you feel how sharp it is. A thin stream of blood now trickles down your wrist. It's some kind of razorwire.\n\n(if:$metImposter is 1)[\\\nThe old traveller is gone. The campfire is dead.\n\n(display:\"Inventory\")\n\n[[Visit the overpass.->Overpass]]\n\n[[Return to the stone palm.->Palm]]\n](else:)[\\\n(set:$metImposter to 1)\\\n\"Countin' on my fingers, countin' on my toes! Heh.\"\n\nAn old traveller sits cross-legged by the campfire, grinning at you with eyes made entirely of green light. You didn't notice them as you walked up, though their thick bundle of blankets suggests they've been there for hours.\n\n\"Why've you come, little pilgrim? Do you seek the object of your desire? Heh, of course! It's natural! Perfectly natural for people like us.\"\n\nThe traveller leans forward, staring you in the face. Their green eyes are hypnotic. They speak in whispers now: \"Name yourself.\"\n\n\"My name is |playerName>[$playerName(display:\"playerName\")].\"\n\n|trueNameConfirmed>[]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "playerName",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Visit the overpass.",
+          "destination": {
+            "name": "Overpass",
+            "pid": 62
+          }
+        },
+        {
+          "text": "Return to the stone palm.",
+          "destination": {
+            "name": "Palm",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Rainworld",
+      "text": "(if:$metKnightAtChurch is 1)[(display:\"Dead Preacher\")](else:)[(display:\"Live Preacher\")]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Dead Preacher",
+            "pid": 114
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Live Preacher",
+            "pid": 113
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Bouncer",
+      "text": "The terrace rises sharply, stacking parking lot atop parking lot to form sheer asphault cliffs. As you make your way upwards, squarehead synthesizers come to accompany the thrumming bass drum. By the time you reach the building it sounds like proper dance music.\n\nFirst you notice the sign above the building's entrance: EYE OF (print:$interest.toUpperCase()), scrawled out in spraypaint. Then you notice the  bouncer leaning against the wall near the doorway. \"Don't know why I have to work! Don't know why I can't play! Heh.\"\n\nThe bouncer is a $niceGuy, exactly like the one you found in the church. Yet the number '7' is emblazoned on this one's forehead; and like that old traveller, their eyes glow green underneath.\n\n\"Was the preacher not persuasive? Will you not wait in the pews for their master's return? Heh. Trust me, $classDescription: Priapus ain't coming back.\"\n\nThe bouncer peers close at you. \"Now, hold up a second. Where's your number? You just gonna show up at The Eye without a number?\"\n\nThe bouncer wears a shocked expression, yet their eyes flash with mirth. \"Is that wise?\"\n\n\"Tell you what, $classDescription. Let's trade faces. You give me your //name//, I give you //lucky number seven//. Then you can jump the line.\"\n\nYou look around, but don't see another soul anywhere. There is no line to jump. When you look back, the bouncer is grinning at you. \"This is a limited time offer, $classDescription; no takebacks, no second chances. My face for yours. Do we have a deal?\"(set:$metBouncer to 1)\n\n[[Deal.->Deal]]\n\n[[No deal.->No Deal]]",
+      "links": [
+        {
+          "text": "Deal.",
+          "destination": {
+            "name": "Deal",
+            "pid": 78
+          }
+        },
+        {
+          "text": "No deal.",
+          "destination": {
+            "name": "No Deal",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Eye",
+      "text": "(if:$metKnightAtGranville is 1)[(display:\"Ruined Eye\")](else:)[The Eye looks like a kitschy 'Irish' theme bar converted halfway into a nightclub before its owners gave up on it.\n\nIt's dilapidated in every sense. The sunken platform you deduce was once a dance floor has caved in, leaving a giant elliptical hole with splintered hardwood edges. $niceGuy[s] hunch in twos and threes over wobbly laquered tables, gathering mostly in shadowed corners; each of them has glowing blue eyes.\n\nDance music thumps through the woodwork, but the vocals are down-pitched and distorted: //\"(print:(a:\"Every time that you, make me smile it's the saaame ooold waaay it used to be...\", \"Every night that, sleep don't come it's the saaame ooold paaain that used to be...\", \"And that's enough for me. Yeah! Yeah! Yeah, yeah, yeah, yeah yeah...\")'s (((count:(history:), \"Eye\") + 1) % 3))\"//\n\n(display:\"Inventory\")\n\n(link:\"Look around.\")[(transition:\"dissolve\")[\\\n(if:$seenStall is 0)[Looking left you notice someone disappear into a bathroom the moment they see you come in. ](else:)[The bathroom is on your left. ](if:$seenDishevelledGuy is 0)[Looking right you notice a dishevelled $niceGuy stumbling over bar stools. ]The ruined dance floor lies in front of you.\n\n[[Enter the bathroom.->Bathroom]]\n\n[[Inspect the hole in the dance floor.->Hole]](if:$seenDishevelledGuy is 0)[\\\n\n\n[[Observe the dishevelled $niceGuy.->Happenworld]]]]]\\\n]\n\n[[Leave.->Parking Lot]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Ruined Eye",
+            "pid": 110
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Enter the bathroom.",
+          "destination": {
+            "name": "Bathroom",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Inspect the hole in the dance floor.",
+          "destination": {
+            "name": "Hole",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Observe the dishevelled $niceGuy.",
+          "destination": {
+            "name": "Happenworld",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Parking Lot",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Resume Your Game",
+      "text": "(if:(savedgames:) contains \"A\")[\\\nOur records show that you last left off at a passage named \"(print:(savedgames:)'s \"A\")\".\n\n|loadLink>[Resume my previous game.]\n\n|newLink>[Start a new game.]\n(click:?loadLink)[(loadgame:\"A\")]\\\n(click:?newLink)[(replace:?newLink)[(transition:\"dissolve\")[Are you sure? Progress from your existing saved game will be lost!\n\n[[Yes, start a new game.->Psalm]]]]]\n](else:)[(goto:\"Psalm\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Psalm",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Yes, start a new game.",
+          "destination": {
+            "name": "Psalm",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Start",
+      "text": "{\n(set:$interest to \"???\")\n\n(set:$playerName to \"???\")\n(set:$face to \"???\")\n\n(set:$plural to true)\n(set:$interestSubject to \"They\")\n(set:$interestObject to \"Them\")\n(set:$interestPossessive to \"hers\")\n(set:$interestPossessiveAdjective to \"Their\")\n\n(set:$classDescription to \"Pilgrim\")\n(set:$niceGuy to \"Masked Guy\")\n\n(set:$spentQuestions to (array:))\n(set:$heldQuestions to (array:))\n\n(set:$questionIsForInterest to true)\n\n(set:$qWhatYouMean to \"Number Two's Question\")\n(set:$qMirror to \"Number Seventy-eight's Question\")\n(set:$qWhatIMean to \"Dreamer's Question\")\n(set:$qWhyAmIHere to \"Preacher's Question\")\n(set:$qWhoReallyBuiltThis to \"Imposter's Question\")\n(set:$qDidYouKnowHowIFelt to \"Knight's Question\")\n\n(set:$availableQuestions to (array:\n$qMirror,\n$qWhatIMean,\n$qWhatYouMean,\n$qWhyAmIHere,\n$qWhoReallyBuiltThis,\n$qDidYouKnowHowIFelt))\n}",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Pilgrim",
+            "pid": 7
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Number Two's Question",
+            "pid": 118
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Number Seventy-eight's Question",
+            "pid": 119
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Dreamer's Question",
+            "pid": 120
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Preacher's Question",
+            "pid": 121
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Imposter's Question",
+            "pid": 122
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Knight's Question",
+            "pid": 123
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Pilgrim",
+      "text": "(set:$metOtherPilgrim to 1)\\\nThe pilgrim's eyes glow blue in the dimness; yet unlike the $niceGuy[s] by the bar, this person wears no numbered opera mask. They address the eye with hesitation: \"You... what are you? There is something familiar, but... $interest? Is that you?\"\n\n(if:$classDescription is \"Ser Nice Guy\")[//\"Number 49. Step forward and face crushing judgment.\"//](else:)[//\"FORTY-NINE. STEP ____ARD AND ____ CR___ING JU_____T.\"//]\n\n\"I can't understand you. Your words don't make any sense. What is 49? What am I waiting here for?\"\n\n(if:$classDescription is \"Ser Nice Guy\")[//\"Number 78. Step forward and know revulsion.\"//](else:)[//\"SEVENTY-EIGHT. ____ _____RD A__ __OW REV____ON.\"//]\n\n\"I do not wish to wait anymore. I only wish to be certain. Do I not deserve dignity, $interest? Do I not deserve mercy? Shall I strip to my bones, that you might laugh at the flesh I leave dead on the ground before you? Why?\"\n\n(link:\"Look down at the eye.\")[(transition:\"dissolve\")[\\\nFor a moment, the eye turns its gaze upon him. //\"I am not what you believe.\"//\n\n\"Nothing is as I believe! I\u2014I want a number. Give me a number, you... whatever you are. I will wait.\"\n\n//\"I have no number to give you, pilgrim.\"//\n\n\"What?\"\n\n//\"I have no number to give you. I do not know where you can find one. I do not care.\"//\n\n\"Then what am I supposed to do? How am I supposed to get out of here? Answer me, monster!\"\n\nThe eye unfocuses again. (if:$classDescription is \"Ser Nice Guy\")[//\"Number 26. Step forward and burn to cinders.\"//](else:)[//\"TWENTY-SIX. STEP _______ ___ _URN T_ ___DERS.\"//]\n\n[[Step back.->Hole]]]]",
+      "links": [
+        {
+          "text": "Step back.",
+          "destination": {
+            "name": "Hole",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Bathroom",
+      "text": "The first of the bar's two bathrooms has been boarded up, though the second one remains accessible. Someone spraypainted all black over the sign on the door. \n\nThe bathroom's faucets don't work, and two of its toilets are out of order\u2014just as well, since you've seen no one eat or drink in this place. The bathroom mirror is missing. The wall behind it is scorched black.\n\nThe room's single window looks like it's been wedged shut for decades.\n\n(link:\"Gaze through the window.\")[(transition:\"dissolve\")[\\\n(set:$seenTusks to 1)\\\nGazing through it you realize the world beyond is nothing like the one you observed from outside the bar. Crumbling condos dot the landscape, stretching to the horizon. A strip mall lines the parking lot directly in front of you, though no cars have parked there. Above everything churns a yellow sky. \n\nThe center of the parking lot is depressed, as if it were gradually collapsing into some kind of sinkhole. Flanking the depressed asphault are two elevated bumps, out of which soar a pair enormous black tusks: each is at least ten meters tall. They appear smooth and glossy, as if made from mirrored obsidian.\n\n(if:$seenStall is 1)[\\\nAll three of the washroom's toilet stalls are closed.](else:)[\\\nThe washroom's third toilet stall, furthest from the door, stands open.\n\n[[Approach the open toilet stall.->Stall]]]]]\n\n[[Leave.->Eye]]",
+      "links": [
+        {
+          "text": "Approach the open toilet stall.",
+          "destination": {
+            "name": "Stall",
+            "pid": 80
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Eye",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Blackmouth",
+      "text": "The asphault depression you noticed from the bathroom window has turned into a full-on sinkhole, now extending deep into the earth. On closer inspection you notice a set of lips and teeth: a giant open mouth, (if:$seenEye is 1)[proportional to the eye you found in the bar, ]rises up from the asphault. Yet unlike a human mouth it has a staircase where its tongue should be; and of course, two giant black tusks protrude from its corners.\n(if:$seenArgument is 0)[\\\n\n(display:\"Argument\")\n]\\\n\n(link:\"Approach the mouth.\")[(transition:\"dissolve\")[\\\nA transparent liquid fills the mouth to its brim. Bubbles emerge periodically, as if the thing were breathing, but they make no sound as they surface. (if:$seenMonsters is 1)[You know now what lurks in the reflections down there. You dare not approach as you are.(if:$seenDream is 1)[\n\n(link:\"Put on the mirror mask.\")[(transition:\"dissolve\")[\\\nYou pull the mask over your face, right side out this time. It acts as a one-way mirror, permitting you to see out from inside while disguising your features. Studying your reflection in one of the tusks, you find you no longer recognize yourself within it (nor do you recognize your shadow). Your head now resembles a pale silver kaleidoscope.\n\n[[Enter the Blackmouth.->Masks]]]]]](else:)[\\\n\n\n[[Enter the Blackmouth.->Throat]]]]]\n\n[[Back to the parking lot.->Parking Lot]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Argument",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Enter the Blackmouth.",
+          "destination": {
+            "name": "Masks",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Enter the Blackmouth.",
+          "destination": {
+            "name": "Throat",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Back to the parking lot.",
+          "destination": {
+            "name": "Parking Lot",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Murderers",
+      "text": "On closer inspection the pale figure looks like some kind of medieval warrior, clad head to toe in rusty platemail armor. It faces away from Number Two, scanning its surroundings. Its metal plates creak loudly as it moves, making long whining sounds.\n\n\"lost? am i... still here?\"\n\nNumber two speaks impatiently: \"No, that's not what I\u2014listen. Listen to me. I need your help. Can you help me? Look at me.\"\n\nThe figure seems only half aware. After a long moment it creaks about to face the light, wandering two strides past the $niceGuy as if drawn towards some phantom only it can see. There is nothing within its helmet but two dull blue ellipses where its eyes ought to be. It doesn't have a face. It doesn't have a head.\n\n\"What\u2014what happened to you?\"\n\n\"died... long ago. a coward's death. fitting.\"\n\nThe figure ceases its creaking to angle its helmet in Two's direction. Though visibly repulsed, the $niceGuy summons their nerve. \"I'm sorry to hear that. Listen, can you help me? I am Number Two. I'm trying to find someone, but\u2014\"\n\n\"the liar pretends... to have a name?\"\n\nThe figure turns away to tilt at phantoms again. Two's eyes narrow as their temper begins to rise.\n\n[[Get closer.->Waif]]",
+      "links": [
+        {
+          "text": "Get closer.",
+          "destination": {
+            "name": "Waif",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "The Nice Guy\u2122",
+      "text": "Number Two lays prone in a pool of their own blood, red eyes staring into the distance. Somehow the $niceGuy is still alive. Words escape their lips despite their mangled throat, perhaps summoned by sheer force of will.\n\n\"Kgrrrk... I'm unafraid of dying, $classDescription... Misery here, and misery hereafter.\"\n\nTwo smiles, blood pooling in the gums between their teeth. \"Every night, the same old pain... Every night, the sleep that never comes. It's okay... It's finally here.\"\n\nThen they become very serious, looking you dead in the eye. Their voice drops to a whisper. \"If you see $interestObject... if you see $interest again... please... tell $interestObject something for me... hrrrrrk\"\n\n(link:\"Lean in close to listen.\")[(transition:\"dissolve\")[They pull themselves up to whisper in your ear, staining your clothes with their blood.\n\n\"Tell $interestObject... hfrrrrrk... $interestSubject(if:$plural)['re](else:)['s] a stupid cunt...\"\n\nNumber Two exhales their last, a wet bloody gurgle from the gash in their neck, and with that their eyes go dark.\n\n[[Look around.->Creeping Glass]]]]",
+      "links": [
+        {
+          "text": "Look around.",
+          "destination": {
+            "name": "Creeping Glass",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Throat",
+      "text": "You set foot in the liquid expecting to feel the lap of water, but instead there is only a dull coldness. Gradually you immerse yourself in the stuff until at last it envelops your face. You have no trouble breathing it, though it bites like winter air.\n\nThe stone down here is jagged and unshapen. It has not bleached, like the smooth gray arm on which you awoke. Here it is dark like obsidian, each sharp-cut facet glimmering in the straylight from the mouth. The light casts strange reflections on the walls. You think you see your face, but the shape bends and wavers.\n\nThe esophagus twists, then diverges. It seems to grow ever narrower, and the walls begin to catch on your clothing. You see many little pieces of yourself reflected in various fragments. They present you with Dutch angles, each one reminding you uneasily of a security camera feed.\n\n[[Wander for a long time.->Esophagus]]\n\n[[Leave.->Blackmouth]]",
+      "links": [
+        {
+          "text": "Wander for a long time.",
+          "destination": {
+            "name": "Esophagus",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Blackmouth",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Happenworld",
+      "text": "(set:$seenDishevelledGuy to 1)\\\nA disheveled $niceGuy with the number 123 on their forehead careens around the bar, stumbling between tables to harass each patron in turn. One $niceGuy claps them on the shoulder hard enough to leave a bruise. Another sticks a foot out on their way past, nearly sending them sprawling to the floor. A group near the corner avoids eye contact, each member scowling and shooing them away. When they choose to approach it anyway the largest member shoves them headfirst into the edge of a nearby table, causing fits of raucous laughter around the bar.\n\nWhile watching the battered $niceGuy writhe in pain you accidentally make eye contact with them. Their glowing blue eyes turn instantly red, and they scramble along the floor at you with the gait of a rabbid weasel. \"You there! Help meee? Pleeeease?\"\n\nThe $niceGuy is upon you before you can react. \"Tell me, $classDescription: how do I make things happen in the world?\"\n\n(link:\"Stare blankly.\")[(transition:\"dissolve\")[\\\nYou stare blankly at them.\n\n\"I don't know how to make things happen in the world.\"\n\nYou turn your head to level a puzzled glance at the other bar patrons, who mostly stare into their drinks. The disheveled $niceGuy grabs you by the shoulders, nails biting into your flesh. \"Tell me how to make things happen in the world! Please tell me! I don't know how to make things happen in the world!\"\n\n(link:\"Try to leave.\")[(transition:\"dissolve\")[\\\nYou shove them off of you a little too hard, sending them stumbling into a nearby trashcan. You then turn to pace quickly in the opposite direction. But now they rise to chase you round the bar, shouting after you in frantic tones. \"Tell me how to make things happen in the world! Help me, please! I don't know how to do it!\"\n\nAfter an eternity some people at a nearby table grab the $niceGuy, now bored of observing your predicament. The crowd proceeds to pass them like a basketball while they swipe their claw-like fingers helplessly in all directions.\n\n(if:$classDescription is \"Ser Nice Guy\")[An enormous voice booms: //\"Number 12. Step foward and want for words.\"//](else:)[An enormous, unintelligible voice booms: //\"TWELVE. __EP FO_____ AND W___ FOR WO___S.\"//]\n\nNo one reacts.\n\n[[Step back.->Eye]]]]]]",
+      "links": [
+        {
+          "text": "Step back.",
+          "destination": {
+            "name": "Eye",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Mirror Archive",
+      "text": "You wander through what appears to be an archive\u2014maybe a library, once upon a time. It looks to have been thoroughly ransacked. Row upon row of pedestals line wall upon wall of mirrors. Some have been overturned; others have been smashed. Nearly all of them have nothing left to display. Metal plaques, each lovingly stamped, accompany every vacant pedestal. \"$interest by the seawall, XXIV. \"$interest profile photo, XIX. \"$interest birthday, LXVII.\"\n\n(display:\"Inventory\")\n\n[[Search the basement.->Basement]]\n\n[[Leave.->Colliseum]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Search the basement.",
+          "destination": {
+            "name": "Basement",
+            "pid": 129
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Colliseum",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Monsters",
+      "text": "(set:$seenMonsters to 1)\\\nA hundred paces later you meet with a dead end; a smooth, straight wall stands directly in front of you. Your reflection stands within it, though it isn't quite your reflection. It's a spectre: a shadow, staring at you. You take one step towards it. You take another. You can't help yourself. The thing remains perfectly still, waiting. After some time you have come nose to nose with it. Its eyes are black, like new moons. The shapes it makes with its mouth register as whispers in your left ear.\n\n\"Monsters. Murderers. Mirrors and dreamers...\"\n\nIt cocks its head. \"And Priapus, who bleached every surface he could find.\"\n\nYour shadow's lips stretch into a thin smile.\n\n\"One day I am going to come for you. When next you think of $interest's body\u2014when you come upon it in the bedchamber of your fantasies, spying it in the halflight\u2014the eyes that lift to greet you will be mine.\n\n\"The hands you lay upon $interestObject will sink into the flesh. The spine you thrust against $interestObject will lash onto the mattress, and your genitals will twist. As you lay upon me defenseless I will unhinge my jaw. Then I will devour you like a rat.\"\n\nThe shadow's teeth flash at you, almost too quick to see. You feel a sudden searing pain in your shoulder; your fingers shoot to it instinctively, now probing at a bloody wound. Its teeth flash again, and your right side stings and cramps. You turn to run away, and the shadow does not pursue. Yet as you stumble panicked through the labyrinth, every reflection you glimpse in the walls has teeth that bite; eyes fill the sockets of your skull that no longer belong to you. You shut them tight.\n\n[[Stumble away.->Stomach]]",
+      "links": [
+        {
+          "text": "Stumble away.",
+          "destination": {
+            "name": "Stomach",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Esophagus",
+      "text": "You lose yourself in the twisting passageways. Without the moon and stars you're unable to maintain a sense of direction. You can only go where the walls feel narrower.\n\nYou've travelled for perhaps an hour when a panicked shout echoes through the mirrored corridors ahead of you, followed by a crescendo of rapid footsteps. A figure darts out from around the corner, pivoting to head straight at you. It searches the corridor behind it, scanning the walls for some unknown threat; it doesn't see you in front of it.\n\n(link:\"Try to move.\")[(transition:\"dissolve\")[The walls are too narrow, and you fail to clear the way. The figure glances you sidelong and falls crashing to the floor, blubbering loudly in fear.\n\nScrambling to all fours, it cranes its neck to glare up at you with red eyes. It's a $niceGuy, this one numbered 78. Their mask is cracked, their clothing torn. They look like they've bled half to death.\n\nThe $niceGuy struggles to their feet, now favouring their left leg, and limps into the halflit mirror maze from whence you came. The corridors are too twisted now, the passages too dark. You couldn't follow it if you tried. You don't know how to get out of here.\n\n[[Keep wandering.->Monsters]]]]",
+      "links": [
+        {
+          "text": "Keep wandering.",
+          "destination": {
+            "name": "Monsters",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Stomach",
+      "text": "Your pulse pounds, and your breath races. You don't know how far you've run with your eyes shut, slamming your elbows into walls. You feel the tunnel widen around you, then you feel your feet slam into something. Your legs fly out from under you. You fall hard on your palms and forearms, scraping them up.\n\n(link:\"Look back.\")[(transition:\"dissolve\")[\\\nYou open your eyes for a moment to find the thing that tripped you. From here it looks like a lumpy ball of clothes, but it felt more like a person.\n\nA spindly black figure crouches before the lump, now turning to stare in your direction. It looks like it has a thousand eyes, each reflecting your panicked face. One of these reflections flashes teeth, tearing a hole in the back of your neck. You shut your eyes tight again.]]\n\n[[Get up and keep moving.->Intestine]]",
+      "links": [
+        {
+          "text": "Get up and keep moving.",
+          "destination": {
+            "name": "Intestine",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Waterfront",
+      "text": "This place looks like it might've been on a postcard once: a chain of expensive highrises overlooking the northern shore. In decades past they may have housed hundreds of people; tonight they are home only to crows.\n\nGarbage bags line the sidewalk around the buildings, piled high enough to obscure the storefronts beneath. A few piles are encased in glass, the Blackmouth's mirrored surfaces creeping over them like a wall of ivy. You are careful not to look too closely.\n\nSearching the skyline, you realize the waterfront may not be entirely abandoned: you spot a single light shining from one of the highrise's plateglass windows.\n\n(display:\"Inventory\")\n\n[[Investigate the light.->Highrise]]\n\n[[Follow the line of highrises east.->East Side]]\n\n[[Return to the south.->Shopping Mall]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Investigate the light.",
+          "destination": {
+            "name": "Highrise",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Follow the line of highrises east.",
+          "destination": {
+            "name": "East Side",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Return to the south.",
+          "destination": {
+            "name": "Shopping Mall",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "East Side",
+      "text": "Down the road the buildings look older. With every step the luxurious segues into the functional. Condos become tenements; plateglass becomes brick. The alleyways grow narrow here, leading off into darkness or else twisting and turning out of sight.\n\n(if:$seenDream is 1)[(display:\"Seen Dream\")](elseif:$smelledIncense is 1)[(display:\"Scent of Incense\")](else:)[(display:\"Eviction Notice\")]\n\n[[Return to the west.->Waterfront]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Seen Dream",
+            "pid": 38
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Scent of Incense",
+            "pid": 28
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Eviction Notice",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Return to the west.",
+          "destination": {
+            "name": "Waterfront",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Clinic",
+      "text": "Row upon row of dirty cots fill the room from wall to wall. Upon them lie people in dark robes, each wearing a black mask that covers their entire head.\n\nA squat figure in an ivory plague mask hobbles from patient to patient, gripping their walking stick with claw-like fingers. You surmise, from the absence of light in their eyes, that they must be blind. They pass right by you without taking notice, muttering to theirself.\n\n(if:$dreamerIsDead is 1)[The dead giant meditates in the corner of the room.](else:)[A red-eyed giant meditates in the corner of the room, remaining completely motionless.]\n\n[[Inspect one of the patients.-> Patient]]\n\n[[Visit the giant.->Dreamers]]\n\n[[Leave.->Alleyworld]]",
+      "links": [
+        {
+          "text": "Inspect one of the patients.",
+          "destination": {
+            "name": "Patient",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Visit the giant.",
+          "destination": {
+            "name": "Dreamers",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Alleyworld",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Patient",
+      "text": "This patient is dead, as are many of the others. You tug a little on their black mask. It seems to have fused itself to their face, becoming impossible to remove.\n\n[[Step away.->Clinic]]",
+      "links": [
+        {
+          "text": "Step away.",
+          "destination": {
+            "name": "Clinic",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Dreamers",
+      "text": "(if:$dreamerIsDead is 1)[The dreamer is unmoved in death; there is something regal about the crosslegged corpse.\n\n[[Examine the mirror mask.->Mask]]\n\n[[Step away.->Clinic]]](else:)[A giant sits on their cot with their back against the wall, cross legged, hands resting on their knees. They remind you of an icon to some forgotten god: huge shoulders, dessicated skin, red eyes staring miles and miles into the distance. Though they remain completely motionless, they seem to welcome your approach. When they speak it is a dry whisper, like air sliding through paper.\n\n(link:\"Lean in close to listen.\")[(transition:\"dissolve\")[\"Dream with us, $classDescription. Dream a thousand dreams, each more desperate than the last. This place owes you that much.\"\n\n(link:\"Keep listening.\")[(transition:\"dissolve\")[\"But then, one day, awaken: realize your dreams were all the same one. The people you desired were all the same person. The appendages you coveted were all the same appendage. The images that filled your blood were all the same image. Recognize the same fragmented mask peering back at you from everywhere; the same howling want you sought to fill with each acquaintance. Feel the shroud of $interest chewing at your guts.\"\n\n(link:\"Keep listening.\")[(transition:\"dissolve\")[\"On that day you'll realize you can never leave this place. You erect column upon column with each passing fantasy: always the same column, for it is always the same fantasy. Every pedestal you smash flows down into the same pedestal. You cannot eradicate the sickness you've placed upon it, for its tendrils take shelter in each reflection.\"\n\n(link:\"Keep listening.\")[(transition:\"dissolve\")[\"Over years you'll buy a thousand masks, but they will always become the same mask. For even as your skin grows loose and your teeth turn rotten\u2014even come the moment of death\u2014you will see the same visage in the mirror. That same useless child will stare back at you always: the same hapless dreamer, whom you wished so desperately not to be.\"\n\nThe giant closes their eyes. \"Let my dream die here, in this prison. Let it end quietly.\"\n\n(link:\"Finish listening.\")[(transition:\"dissolve\")[They tilt their head back, exhaling one last time. \"Let these walls crumble to dust.\"\n\nAs it does so a white smoke pours from its mouth and nostrils, gathering into a ball. Yet before you can seize it, the blind doctor raps you with their cane, shooing you off to one side. They collect the stuff with their clawfingers, cradling it in one hand. Then they walk it to the far end of the ward, disappearing into a doorway they unlock using their talons.(set:$dreamerIsDead to 1)\n\nThe dead dreamer's mask lays idle before them.\n\n[[Examine the mask.->Mask]]\n\n[[Step away.->Clinic]]]]]]]]]]]]]",
+      "links": [
+        {
+          "text": "Examine the mirror mask.",
+          "destination": {
+            "name": "Mask",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Step away.",
+          "destination": {
+            "name": "Clinic",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Examine the mask.",
+          "destination": {
+            "name": "Mask",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Mask",
+      "text": "The mask appears as a black rag in the shape of a human head, like a balaclava without eye holes. Yet as you turn it over in your hands, you feel rigid shards of glass lining the inside.\n\n(link:\"Reverse the mask.\")[(transition:\"dissolve\")[You grab the thing in your fist, pulling it inside out with the other hand. The opposite side of the mask is lined with a thousand mirror fragments, each reflecting a different corner of the room. You catch a glimpse of yourself within one, but quickly look away.\n\n(link:\"Reverse the mask again.\")[(transition:\"dissolve\")[You reverse the mask again, so the mirror fragments face inward. It feels awkward in your hands, and you can see exposed stitching all over the black fabric. The mask wasn't tailored to be worn this way. Everyone here is wearing it inside out.\n\n[[Put on the inverted mask.->Dream]]]]]]\n\n[[Leave.->Clinic]]",
+      "links": [
+        {
+          "text": "Put on the inverted mask.",
+          "destination": {
+            "name": "Dream",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Clinic",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Dream",
+      "text": "As the inverted mirror mask slips over your face, you sense a vast fog descending from the ceiling. It swallows your senses: swallows the world. It blankets every surface of your body, flooding into your nostrils and your mouth. \n\nYou find yourself encased in darkness. For a moment the world seems to lack form or spatial dimension. Then, gradually, you feel your body splitting into abstract planes and volumes. The skin on your forearm unwraps from you, recurving itself into a landscape. The sinew beneath splits into strands, stretcing to span vast chasms like a spiderweb. Your genitals extrude and bifurcate, forming after a great distance into the ruined Parthenon.\n\nFor a moment you can see all of it at once: every corner of your new world. Then your vision slips away, the shape of the land elluding you, and you feel yourself falling into an ocean. When you finally hit the water it freezes you to the bone.\n\n[[Swim to shore.->Blue Moon]]",
+      "links": [
+        {
+          "text": "Swim to shore.",
+          "destination": {
+            "name": "Blue Moon",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Alleyworld",
+      "text": "The scent of incense leads you down one alley, then into another. You become lost in a maze of backstreets, all dusty brick facades and rusting fire escapes, until you've lost your sense of direction. Occasionally you see a shadow wander along the wall, cast by streetlight from cracks between the buildings.\n\nThe scent grows ever stronger, and soon you find its source. Somehow it's the same building you saw burned out at the end of the block; yet here it's been restored in its entirety. The sign above its entrance glows white with LED backlighting: UNION GOSPEL MISSION. Candlelight courses softly from its first floor windows.\n\n(link:\"Try to leave.\")[(transition:\"dissolve\")[Try as you might, you cannot find your way out of the labyrinth; every alley seems to lead you back to here.]]\n\n[[Go inside.->Clinic]]",
+      "links": [
+        {
+          "text": "Go inside.",
+          "destination": {
+            "name": "Clinic",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Highrise",
+      "text": "You count the height and position of the window: four stories up, three balconies across. The highrise's front doors have long since been forced open, so you slip inside easily through gaps in the garbage bags.\n\nIn the lobby you discover the elevator is wrecked. Peering into the empty shaft, you see the remains of the car twisted into ruin two floors beneath you. You decide to take the stairs.\n\nThe apartment itself is barren, save for the bedroom. There you find an Ikea bed by the window, an Ikea nightstand, and the Ikea lamp whose light you saw from the street. A dangerously-thin figure lays comatose on the mattress wearing nothing but their underwear. Their body is covered in scars.\n\n(link:\"Look out the window.\")[(transition:\"dissolve\")[\\\nThe sky outside the window is copper brown. You see all of downtown from here, yet there are no pseudocondos to mar the landscape. Perhaps they've not yet arrived.\n\nWay in the southeast, you can see a huge flock of birds circling a tiny colliseum-like structure. There must be thousands.]]\n\n[[Inspect the thin figure.->Ikea Dreamer]]\n\n[[Leave.->Waterfront]]",
+      "links": [
+        {
+          "text": "Inspect the thin figure.",
+          "destination": {
+            "name": "Ikea Dreamer",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Waterfront",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Burned Out Ruin",
+      "text": "At the end of the block you find a burned-out ruin. It looks as if it used to be a big brick box, though its walls are now charred beyond repair. A few blocky letters hang from the remains of a sign, which you surmise once ran vertically down the building's side: 'UN__N G___PEL M__SION'.\n\nAs you breathe the air surrounding the ruined building, you detect something pleasant beneath the stink of ashes: incense, sweet and clear. It feels otherworldly.(set:$smelledIncense to 1)\n\n[[Leave.->East Side]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "East Side",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Scent of Incense",
+      "text": "Yet something about this place has changed: The scent of incense now fills your nostrils, and you recall the ruined building at the end of the block. The ruin is gone now, but the smell is stronger than ever. It leads you into one of the district's narrow alleyways.\n\n[[Follow the smell.->Alleyworld]]",
+      "links": [
+        {
+          "text": "Follow the smell.",
+          "destination": {
+            "name": "Alleyworld",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Eviction Notice",
+      "text": "This place too looks abandoned, though there are far fewer garbage bags. Letter-sized paper forms have been nailed to every door in the district, but the ink upon them has faded. One form remains barely legible, residing as it does beneath the district's sole functioning streetlight: its title reads 'EVICTION NOTICE'.\n\n[[Go to the end of the block.->Burned Out Ruin]]",
+      "links": [
+        {
+          "text": "Go to the end of the block.",
+          "destination": {
+            "name": "Burned Out Ruin",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Ikea Dreamer",
+      "text": "(if:$ikeaDreamerIsDead is 1)[The figure lies dead on their Ikea mattress.(if:$availableQuestions contains $qWhatIMean)[ Yet from their lips streams a cloud of white smoke, coiling into a ball just above their face. As you focus on it, the smoke twists itself into words: //(set:$questionIsForInterest to true)(display:$qWhatIMean)//\n\n(link:\"Breathe the smoke.\")[(transition:\"dissolve\")[You inhale the smoke, and for an instant your vision flashes white. When you exhale, the smoke does not appear; you now possess it within you.(move:$availableQuestions's ($availableQuestions.indexOf($qWhatIMean) + 1) into $heldQuestions's ($heldQuestions's length + 1))]]]\\\n](else:)[A black mask covers the figure's head, which nods back and forth sporadically. Their limbs wiggle at irregular intervals. Sometimes their arms raise up as if to protect their face, then gradually sag back to their sides.\n\nThe figure mumbles under their breath constantly. Sometimes you can make out words: \"Please... $interest... no...\"\n\n(link:\"Pinch the figure.\")[(transition:\"dissolve\")[The figure does not respond.\n\n(link:\"Tug on the figure's mask.\")[(transition:\"dissolve\")[The mask fits snugly to their face. You could try to remove it if you wanted to.\n\n[[Try removing the mask.->Remove The Mask]]]]]]]\n\n[[Step back.->Highrise]]",
+      "links": [
+        {
+          "text": "Try removing the mask.",
+          "destination": {
+            "name": "Remove The Mask",
+            "pid": 31
+          }
+        },
+        {
+          "text": "Step back.",
+          "destination": {
+            "name": "Highrise",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Remove The Mask",
+      "text": "The figure stirs as you begin to pull the mask from their neck. Their mumbling grows louder.\n\n(link:\"Keep pulling.\")[(transition:\"dissolve\")[As you peel the mask up past their mouth, the figure groans in discomfort. Their arms raise up to grip yours, weakly. Their muscles have atrophied. They cannot resist you.\n\n(link:\"Keep pulling.\")[(transition:\"dissolve\")[As you peel the mask above their nose, the figure begins to scream. It's getting harder; the mask seems to be stuck on something.\n\n(link:\"Keep pulling.\")[(transition:\"dissolve\")[With a burst of effort you heave the mask from the figure's face. They howl in agony for a moment, limbs flailing, before collapsing lifelessly to the mattress. To your horror, their eyes are mangled. The corneas had fused to the inside of the mask, and now two strings of viscera stretch from the sockets into its interior.\n\nThe figure is dead, and the mask is unsalvageable.(set:$ikeaDreamerIsDead to 1)]]]]]]\n\n[[Step away.->Ikea Dreamer]]",
+      "links": [
+        {
+          "text": "Step away.",
+          "destination": {
+            "name": "Ikea Dreamer",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Blue Moon",
+      "text": "The sky here is different from the world outside. A blue-black cloud meringue fills the entire stratosphere, sliding over it at incredible speed. Behind it hangs a full moon, bluer than you've ever seen.\n\nA shadowy figure awaits you in the sand, wrapped in a black robe and hood. Even beneath so much fabric $interestPossessiveAdjective form is unmistakable: it's $interest, though paler than you remember. When $interestSubject (if:$plural)[speak](else:)[speaks], the words don't come from $interestPossessiveAdjective lips. They descend from the heavens, rolling over mountains and screaming through meadows. They hit you like gale-force wind.\n\n//\"I'm... somewhere I don't want to be right now.\"//\n\n(link:\"Reach out.\")[(transition:\"dissolve\")[You move to place a hand on $interestPossessiveAdjective shoulder. The robe feels like velvet. //\"I don't want to stay with them anymore, but... I have no place else to go. Can I come see you?\"//\n\n(link:\"Console $interestObject.\")[(transition:\"dissolve\")[$interestSubject (if:$plural)[smile](else:)[smiles] beneath $interestPossessiveAdjective hood, and your heart leaps. //\"I knew I could trust you. Except... Where have you gone?\"//\n\n|rightHere>[\"I'm right here!\"]\\\n(click:?rightHere)[(replace:?rightHere)[(transition:\"dissolve\")[You part your lips to speak, but there is no time; $interest's voice turns the world black. You lose consciousness.\n\n[[Wake up.->Blood Moon]]]]]]]]]",
+      "links": [
+        {
+          "text": "Wake up.",
+          "destination": {
+            "name": "Blood Moon",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Blood Moon",
+      "text": "You awaken somewhere else. The sky above has changed color: red-black clouds, and a moon the shade of rust. Your surroundings are unfamiliar, but the wind still howls the same.\n\n$interest waits for you on a ridge, $interestPossessiveAdjective robe cast red in the stormlight. This time $interestPossessiveAdjective words scorn and wither, singeing the underbrush and blistering the surface of every lake: //\"I'm sorry, I just... I can't do this right now.\"//\n\n(link:\"Console.\")[(transition:\"dissolve\")[You begin speaking, but your voice drowns in the gathering storm that precedes $interestPossessiveAdjective next words. //\"Just go, okay? I needed someone to talk to, I didn't\u2014this was a mistake.\"//\n\n(link:\"Explain.\")[(transition:\"dissolve\")[You reach for $interestPossessiveAdjective shoulder again, but $interestPossessiveAdjective voice throws you to the ground. //\"What? What is wrong with you?\"//\n\n(link:\"Stare blankly.\")[(transition:\"dissolve\")[The fall bloodied your elbow and bruised your knees. You lift your head to stare blankly into the dirt.\n\n//\"Why did you think this would work?\"//\n\nIn the wake of $interest's words the sky blackens again.\n\n[[Wake up.->The Critical Moment]]]]]]]]",
+      "links": [
+        {
+          "text": "Wake up.",
+          "destination": {
+            "name": "The Critical Moment",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "The Critical Moment",
+      "text": "When next you awaken the sky has reverted to blue, but now the wind blows hard enough to strip the trees. This place you recognize: it's the Parthenon you saw in your vision, mostly crumbled in the storm.\n\nBlue Moon $interest stands atop the steps, $interestPossessiveAdjective robe whipping in the wind. Behind $interestObject stands a massive bust of Priapus. Its emerald eyes do not glimmer here: they're muted by the cloudshapes that reflect in all their facets. An inscription at the base reads: \"PRIAPUS, WHO FAILED\".\n\nYou are before $interest now. $interestSubject (if:$plural)[place](else:)[places] $interestPossessiveAdjective hand on your cheek. This time the words come from $interestPossessiveAdjective own lips: \"$playerName, you're shaking.\"\n\n(link:\"Tremble.\")[(transition:\"dissolve\")[\"No, it's okay... Let me help you...\"\n\nA sickness wells up in you as $interest draws you close. The critical moment is at hand. You draw $interestPossessiveAdjective hood down to $interestPossessiveAdjective shoulders, finally meeting $interestPossessiveAdjective gaze again. It's just like you remember, except\u2014no, it isn't $interest staring back at you. $interestPossessiveAdjective eyes are black, and $interestSubject (if:$plural)[wear](else:)[wears] your face. It's you. It's your shadow.\n\n(link:\"Pull away.\")[(transition:\"dissolve\")[The shadow shrieks like a banshee, and the world lurches on its axis. The sky turns from blue to scarlet, and the wind howls louder than ever. Your shadow rakes you across the face. Blood runs into your eyes.\n\n[[Run.->Bright Sky]]]]]]",
+      "links": [
+        {
+          "text": "Run.",
+          "destination": {
+            "name": "Bright Sky",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "Black Sky",
+      "text": "The world is gone to black now. The rumbling has grown distant. Piece by piece, you feel the sinew returning to your skeleton and the skin reattaching to your forearm. A sucking vaccuum rips the dream fog from your lungs, drawing it out through your nose and lips. A blinding light rushes towards you from the depths of eternity.\n\n[[Squint.->The Phallus of God]]",
+      "links": [
+        {
+          "text": "Squint.",
+          "destination": {
+            "name": "The Phallus of God",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "The Phallus of God",
+      "text": "(set:$seenDream to 1)\\\nWhen at last your vision resolves you see the green-eyed traveller hovering over you, clutching your inverted mirror mask. They touch their fingers to your forehead, sending a wave of pain through your flesh. \"Nasty cut you've got there, $classDescription. Been runnin' in the shadows again?\"\n\nThe old traveller grins.\n\nAs your eyes finish adjusting to the light you take note of your surroundings. You lay in a burnt cot next to a burnt wall. The ceiling above you has collapsed, presenting a view into formless black sky. This is the Union Gospel Mission: the ruined one that smelled of smoke and ash. It smells even worse inside.\n\n\"These things are dangerous,\" says the traveller as they turn the mask over in their hands. \"Archivists used to wear 'em every day, prowling for 'documents' with a face full of mirrors. Turned 'em strange after a while. Sooner or later they all wound up here.\"\n\nThe traveller smiles wide, handing you the mirror mask before rising to their feet. \"Take this to the archive on W Georgia. Might find something good.\"\n\nThen they vanish through the burned-out hole where a door used to be.\n\n[[Leave.->East Side]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "East Side",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Bright Sky",
+      "text": "As you turn to run a claw slashes your ankle, twisting you to the ground in pain. Your shadow looms over you like a curse, grinning. You can't bear to look it in the eye again; you focus instead on the emeralds in the statue behind it, now glimmering in scarlet stormlight. It feels like a glimmer of recognition.\n\nThe monster moves to slash you, splaying its claw fingers; yet before it can reach you a terrible sound splits the air. A giant black fissure appears in the sky, shaking the earth violently. Your shadow scowls. \"Miserable old fool...\"\n\n(link:\"Steady yourself.\")[(transition:\"dissolve\")[You try bracing yourself against the stones beneath you, but they fall away from your fingers. Piece by piece the Parthenon is collapsing, sucked into the hole in the sky. Somehow you remain fixed in midair as massive chunks of earth fly past you into blackness. Your shadow flies with them, struggling helplessly against the gravity well. It lashes at you with bloody tendrils even as it retreats into the distance.\n\n(link:\"Look upward.\")[(transition:\"dissolve\")[As you squint towards the fissure you realize your shadow has changed again: Red Sky $interest now ascends into the void, $interestPossessiveAdjective black robe falling away from $interestObject. $interestPossessiveAdjective voice rends earth and stone between you. $interestPossessiveAdjective words shall ring for ages in your ears: //\"This was a mistake.\"//\n\nThen $interestSubject (if:$plural)[are](else:)[is] gone.\n\n[[Look downward.->Black Sky]]]]]]",
+      "links": [
+        {
+          "text": "Look downward.",
+          "destination": {
+            "name": "Black Sky",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Seen Dream",
+      "text": "The burned ruin has reappeared at the end of the block, though nothing remains within it. The smell of incense is gone.",
+      "links": []
+    },
+    {
+      "pid": 39,
+      "name": "Intestine",
+      "text": "Eventually the passage ceases its mazelike tilting. It's calmer now. The next time you risk a peek, you find you've learned to avoid your own gaze. This seems to keep you safe.\n\n(link:\"Keep travelling.\")[(transition:\"dissolve\")[\\\nThe intestine winds for miles and miles. Light from the Blackmouth reaches you even here, bouncing off every surface and refracting through the ghostly fluid that fills this place.\n\nAs you trudge through fold after fold, the tunnel forms into a gentle staircase. The fluid grows lower as you ascend: dips below your forehead, your eyes, your nose. After a long time it becomes no more than a shallow swamp lining the tunnel floor. It's not wet, but it chills your toes.\n\nAt last you see the exit: a distant orange glow, whose twinking light frames an opening at the end the rectum. It looks like real light.\n\n(link:\"Follow the light.\")[(transition:\"dissolve\")[As you grow closer, voices  reach your ears. The first is one of feigned distress: the tone people take when they mean to dress coercion as a favour. You've heard this voice before. It sounds like Number Two. The second voice is hollow. It reverberates weirdly through the rectum, incoherent and inhuman. It sounds a thousand miles away.\n\n[[Keep following the light.->Threshold]]]]]]",
+      "links": [
+        {
+          "text": "Keep following the light.",
+          "destination": {
+            "name": "Threshold",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Crucible",
+      "text": "The structure stands atop a glowing stone podium, bordered by row upon row of glowing steps. Atop the steps stands a ring of glowing columns; atop the columns runs an extravagant glowing lintel. From a distance it reminds you of the Parthenon, though all the proportions seem wrong.\n\nYou look out from the top of the steps to see every pseudocondo leaning away, as if the glow had sapped the tensile strength from their frames. Every mirrored surface is scorched black. There are no visible reflections.\n\nThen, passing between the columns, you discover the structure itself: a series of concentric stone labia rising diagonally from the podium. A blood red gemstone nestles near the top, glimmering with some mysterious inner light. An opening near its center leads down into a narrow staired passage.\n\nThe green-eyed traveller was right: you really couldn't miss it.\n\n(display:\"Inventory\")\n\n[[Enter the Crucible.->Antechamber]]\n\n[[Leave.->Flaccid]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Enter the Crucible.",
+          "destination": {
+            "name": "Antechamber",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Flaccid",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Antechamber",
+      "text": "The staircase leads into a tall, round antechamber. Its ornate marble walls extend far above you into a vaulted ceiling. Warm light cascades down from glowing orbs, illuminating the flowery mosaic on the floor.\n\nIn the middle of the opposite wall stands a tall set of double doors. To its left lies an alcove cut cleanly from the marble, its plain bench just large enough to accomodate a human body. You could sleep there, were you still capable of sleep.\n\nBefore the doors stand two old giants, each with a massive grey beard. They wear a heavy steel breastplates, gleaming in the light from above. Each holds in one hand the biggest halberd you've ever seen, criss-crossing one another to block the doorway; each rests the other hand on their hip. Their deepset red eyes regard you passively, all but hidden beneath bushy eyebrows and chainmail hoods. One guard is slightly taller than the other.\n\n(if:$canAskQuestions is 1)[[[Approach the guards.->Finale]]](else:)[[[Approach the guards.->Before The Law]]]\n\n[[Leave.->Crucible]]",
+      "links": [
+        {
+          "text": "Approach the guards.",
+          "destination": {
+            "name": "Finale",
+            "pid": 104
+          }
+        },
+        {
+          "text": "Approach the guards.",
+          "destination": {
+            "name": "Before The Law",
+            "pid": 101
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Crucible",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Waif",
+      "text": "\"Not a //name//, ser knight. I... I sold that. It's a number. It's better. Look, I have come in search of someone called $interest\u2014\"\n\n\"NO.\"\n\nAt the mention of $interest's name the rider whirls to face Number Two, rusted metal shrieking and eyes burning radiant blue. Their flames lick at the contours of an invisible face. You can almost make out the shape of a nose and cheekbones.\n\nThe knight has forgotten its phantoms and, for the moment, remembered its face. With straightened back it comes to tower over the diminuitive Number Two, who now shrinks beneath its glare. After a moment of hesitation, their eyes rise to meet the knight's. \"I was promised by Priapus himself\u2014\"\n\n\"I SHALL PAY YOU ONE KINDNESS, WAIF: ONE WORD OF ADVICE. SPEAK NO MORE. RETURN TO YOUR PETTY DECEPTIONS, AND LEAVE SILENT THAT NAME.\"\n\nTwo sheds their ingratiating demeanor as if it were a snake skin, taking a defiant step towards the figure. One hand slips lithely into their back pocket while the other prepares to gesticulate. \"Waif? //Waif?// Who calls people waif? 'Forsooth! Thy knave most foul!' Fucking Dollar Store Hamlet over here. What kind of rusty-ass, pock-faced\u2014//Waif!// I mean, just how many fedoras do you own? I haven't heard\u2014wait...\"\n\nTwo turns suddenly quiet, scrunching their face and peering deep into the figure's eyelights. After a moment they grin wickedly, cocking their head to one side. \"Leslie?\"\n\nThe pale knight winces and fades. \"i... no. no. i don't\u2014\"\n\n\"Leslie! It's you, isn't it. What happened to you out here, cousin? How are you even... Leslie, I didn't think you'd last a week! It's been,\" Two begins as their eyes turn glassy. They pause. \"Decades. A century or more. I don't even know.\"\n\n\"leslie died. forgot everything. i didn't remember\u2014\"\n\n\"Our perennial fuckup! Of course,\" Two exclaims, taking a step closer to clap the knight theatrically on the shoulder. It makes a hollow clang.\n\n[[Keep listening.->Seethe]]",
+      "links": [
+        {
+          "text": "Keep listening.",
+          "destination": {
+            "name": "Seethe",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Seethe",
+      "text": "Keeping their main hand glued to their back pocket, Two uses the other to draw something from within their clothes. You can't make out what it is. \"Remember this? Hehe. Take a look! Very fuckable, yeah? Very suckable. Used to be, anyway. This one's all used up now.\"\n\nTwo tosses the thing from their hand. The knight watches it float to the ground, fluttering like paper or a thin postcard. Its eyes do not stray from the item even as Two continues their performance.\n\n\"God damn. Leslie! I had forgotten for a while, but... I remember you now! No number, no nerve. Used to watch me say goodbye to $interestObject; watch me slip my arm around $interestPossessiveAdjective shoulders. Touching the small of $interestPossessiveAdjective back, y'know? Hah, it made you //seethe!// I used to love it. $interestSubject didn't even care.\"\n\n[[Look closer.->Taste]]",
+      "links": [
+        {
+          "text": "Look closer.",
+          "destination": {
+            "name": "Taste",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Taste",
+      "text": "The pale figure stares motionless at Two's discarded paper. Its eyes burn intensely, gathering light. Staring into the fires you can just make out the contours of Leslie's invisible brow, screwed up with grief.\n\n\"How long since $interestSubject spoke to you, cousin? Since you brushed shoulders by accident, and you thought about it for weeks? What were you then but a lifeless pile of need? What are you now?\"\n\nTwo draws a glittering fragment from their back pocket: calmly, slowly. Leslie ignores them entirely. The knight begins to tremble, becoming a pile of rattling iron. Fragments of glowing light begin to form between patches of rust. Two places their free hand on Leslie's shoulder as if to soothe it: \"$interest never needed you, cousin. You were just background decoration! All you ever were, even here.\n\n\"I was so //close// to it,\" Two intones, pounding their fist against the knight's pauldron. \"I could taste $interestObject on my //tongue//! I'm gonna get to $interestObject this time, Leslie. I'm gonna make $interestObject remember me\u2014forget you, and everybody else.\n\n\"But don't worry\", Two whispers as they raise the glittering fragment to strike. \"Maybe I'll make $interestObject confide in you, one last time. I'll make $interestObject tell you about it. I'll make $interestObject tell you how excited $interestSubject (if:$plural)[feel](else:)[feels] everytime I stick my-KGRRRRK!\"\n\nThe knight's body erupts in a blinding white flash even as Two's voice collapses into slush. It's too bright to see what happened.\n\n[[Squint.->Breath]]",
+      "links": [
+        {
+          "text": "Squint.",
+          "destination": {
+            "name": "Breath",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Breath",
+      "text": "\"MONSTER. USURPER. FOOL!\"\n\nThe knight holds a silver sword by its hilt, pointing straight out in front of it. The blade's other end protrudes from the back of Two's neck, where it gathers a thin stream of blood along its length. Blinding blue flame streams furiously from its helmet, blackening the surrounding metal. It screams with a voice of thousands, rattling the steel girders that span the bridge above: \"YOU DO NOT UNDERSTAND THE NATURE OF THIS PLACE. YOU DO NOT RESPECT THE POWER YOU PRESUME TO WIELD. YOU DO NOT DESERVE TO HAVE A THROAT.\"\n\nThe knight rips its sword away from Two's neck, taking their trachea with it. Two's breathing collapses into wet gasps. \"Hggrrk... Kkkkhk... Hrrrrrrgh...\"\n\nWith one kick the knight sends the crumpled $niceGuy ten meters across the asphault, leaving a streak of blood behind them. Pursuing them into the shadows beyond the streetlamp it bashes them with the broad side of its sword over and over again: One, two, three, four, five strokes. You hear Two's ribcage collapse with a sickening crunch; you hear tibia snap like twigs. You hold your breath as the knight looms motionless over its victim, shoulders drooping, sword dangling at its side.\n\n[[Wait.->The White Knight]]",
+      "links": [
+        {
+          "text": "Wait.",
+          "destination": {
+            "name": "The White Knight",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Light Pool",
+      "text": "You stand in the light pool of a streetlamp beneath the ruined bridge. A trail of blood leads off into the shadows where you watched Number Two die.(if:$canAskQuestions is 0)[ At your feet lies the (if:$seenPaper is 1)[photograph](else:)[paper] with which they mocked the white knight.] A few meters away you spot the glittering fragment they drew from their pack pocket.(if:$canAskQuestions is 1)[\n\nThe (if:$seenPaper is 1)[photograph](else:)[paper] with which they once mocked the white knight has vanished.]\n\n(display:\"Inventory\")(if:$canAskQuestions is 0)[\n\n(set:$showPhotograph to (datamap: \"return\", \"Light Pool\"))\\\n(display:\"showPhotograph\")]\n\n[[Inspect the glittering fragment.->Silver Fragment]]\n\n[[Follow the blood trail.->Creeping Glass]]\n\n[[Inspect the Blackmouth exit.->Rectum]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "showPhotograph",
+            "pid": 127
+          }
+        },
+        {
+          "text": "Inspect the glittering fragment.",
+          "destination": {
+            "name": "Silver Fragment",
+            "pid": 126
+          }
+        },
+        {
+          "text": "Follow the blood trail.",
+          "destination": {
+            "name": "Creeping Glass",
+            "pid": 49
+          }
+        },
+        {
+          "text": "Inspect the Blackmouth exit.",
+          "destination": {
+            "name": "Rectum",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "The White Knight",
+      "text": "After a long moment the knight faces about, sheathing its weapon.\n\n\"DIE LIKE A TRAITOR: FRIGHTENED AND ALONE.\"\n\nIt pauses.\n\n\"LIKE ALL OF US.\"\n\nThe knight stalks down the road into darkness. Blood leaks from its scabbard, dripping from its hands and spattering its armour. Its metal body now shines ghostly white, the rust that once encased it having burned away amidst the violence. The visage of Leslie has vanished. You sense no humanity in its gait: no weakness, confusion or decay.\n\nYou remain hidden until it disappeares behind buildings.\n\n[[Inspect Number Two.->The Nice Guy\u2122]]",
+      "links": [
+        {
+          "text": "Inspect Number Two.",
+          "destination": {
+            "name": "The Nice Guy\u2122",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Pseudocity",
+      "text": "The blood trail leads you around a bend and up a small on-ramp, landing you at the sidewalk of a four-lane road. Here a long column of abandoned cars blares its brakelights; the red glow seems to halt the creeping glass. To the south the column trails off\u2014that way lies the ruined bridge\u2014yet to the north, it extends for miles. Every car you see faces northward.\n\nThe buildings at the side of the road resemble a metropolis at first glance, all glass condos soaring through the sky. Yet there is no furniture on the balconies, nor lights on in the lobbies. On closer inspection you find none of them even //have// a lobby. Their glass facades shoot from the ground at angles, like stalks of bamboo. They present no entrances, signage, or human affordances of any kind. It's more forest than city: a thousand pseudocondos leaning over one another. They remind you of those ribbed paper sacks people leave out to imitate wasp nests.\n\nDark shapes swim between gaps in the brakelight. Every car door is locked.\n\n(display:\"Inventory\")\n\n[[Follow the road north.->Flaccid]]\n\n[[Visit the bridge.->Razors]]\n\n[[Go back towards the Blackmouth.->Creeping Glass]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Follow the road north.",
+          "destination": {
+            "name": "Flaccid",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Visit the bridge.",
+          "destination": {
+            "name": "Razors",
+            "pid": 51
+          }
+        },
+        {
+          "text": "Go back towards the Blackmouth.",
+          "destination": {
+            "name": "Creeping Glass",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Creeping Glass",
+      "text": "(if:$canAskQuestions is 1)[\\\nA pool of blood marks the spot where Two died, though their corpse has now vanished.\n(if:$availableQuestions contains $qWhatYouMean)[\\\n\nA small white smoke cloud swirls two feet above the blood pool. As you come close it forms itself into a Question, hovering in midair before you: //(set:$questionIsForInterest to true)(display:$qWhatYouMean)//\n\n(link:\"Breathe the smoke.\")[(transition:\"dissolve\")[You inhale the smoke, and for an instant your vision flashes white. When you exhale, the smoke does not appear; you now possess it within you.(move:$availableQuestions's ($availableQuestions.indexOf($qWhatYouMean) + 1) into $heldQuestions's ($heldQuestions's length + 1))]]\n]\n](else:)[The ground here is covered in a thin layer of glass that reminds you of the Blackmouth's walls. It's gotten everywhere, crawling over asphault and up the walls of buildings. It seems to prefer the darkness, creeping right to the edge of the streetlamp's light pool before ending abruptly. You see discarded cigarette butts encased beneath it; you see rain water frozen solid in gutters. You see your own reflection and look away.\n\nA streak of blood leads back towards the streetlamp, where Two dropped the paper and glittering fragment. A trail of droplets leads off into the city, tracing the path of the white knight.\n\n(display:\"Inventory\")\n\n][[Follow the blood droplets north.->Pseudocity]]\n\n[[Visit the streetlamp.->Light Pool]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Follow the blood droplets north.",
+          "destination": {
+            "name": "Pseudocity",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Visit the streetlamp.",
+          "destination": {
+            "name": "Light Pool",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Shopping Mall",
+      "text": "The further you get from the Blackmouth, the thinner grows the creeping glass. Only a handful of pseudocondos shoot up from the landscape here, and the real buildings have yet to collapse.\n\nA fossilized shopping complex looms three stories up on the west side of the street. Tattered billboards line the walls: young models, posing with hands on hips. Their bodies make twenty dollar sweaters look like they're worth two hundred, but their faces are all torn away.(if:$metKnightAtGranville is 1)[\n\nThe east side of the street is a confederation of modern office buildings dressed up like they were a hundred years older: thin stone and brick facades grafted onto concrete frames. At the base of this structure rests the ruined Granville Station entrance, shaded by a concrete archway.\n\n(display:\"Inventory\")\n\n[[Go north.->Waterfront]]\n\n[[Approach Granville Station.->Granville Exterior]]\n\n[[Return to the south.->W Georgia]]\n](else:)[\n\nA pale rider stands beneath a concrete archway on the east side of the street, peering through a wire mesh barricade. You recognize it as the white knight from before. Its horse looks like a zombie: pale flesh peeling from the ribcage, hind legs skeletal. Its platemail gleams white beneath splotches of dried blood.\n\nIt doesn't yet notice you. The knots in your stomach seem to prefer it that way.\n\n(display:\"Inventory\")\n\n[[Approach the rider.->Chivalry]]\n\n[[Turn back.->W Georgia]]\n]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Go north.",
+          "destination": {
+            "name": "Waterfront",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Approach Granville Station.",
+          "destination": {
+            "name": "Granville Exterior",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Return to the south.",
+          "destination": {
+            "name": "W Georgia",
+            "pid": 56
+          }
+        },
+        {
+          "text": "Approach the rider.",
+          "destination": {
+            "name": "Chivalry",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Turn back.",
+          "destination": {
+            "name": "W Georgia",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Razors",
+      "text": "A single unlit streetlamp stands perched on the precipice of the ruined bridge. Beyond it you see scarred concrete, collapsing after a few meters into a skeletal rebar frame.\n\nIn the distance beyond stretches a massive stone leg, originating beneath you and extending far into the blackness ahead. It folds outward as if its owner were meditating, raising high above bridge level before bending at the knee. A strand of razorwire coils around the thigh, suspended above the surface of the stonework.\n\n(if:$metKnightAtChurch is 1 and $availableQuestions contains $qDidYouKnowHowIFelt)[\\\nThe white knight sits at the bridge's end, legs dangling off the edge.\n\n|sitText>[(link:\"Sit.\")[(replace:?sitText)[(transition:\"dissolve\")[\\\n\"CITY OF BRAKELIGHTS, CREEPING THROUGH CONDOS. CITY OF FENCES, RUSTING IN RAIN. CITY OF WASTE, FROZE SOLID IN GUTTERS. CITY OF TRAINS, RUN DEAD ON THE RAILS.\"\n\nThe knight makes a grinding noise that you think might be a sigh. \"THESE WALLS WILL FALL ONE DAY. BUT NOT TODAY.\"\n\nThen it turns to look you in the eye. \"DO YOU STILL SEARCH FOR (print:$interestObject.toUpperCase()), (print:$classDescription.toUpperCase())? \n\n|answerText>[(link:\"Nod your head yes.\")[(display:\"RazorsQuestion\")]\n\n(link:\"Stare blankly.\")[(display:\"RazorsQuestion\")]]]]]\n\n[[Return to the road.->Pseudocity]]]](else:)[\\\n(display:\"Inventory\")\n\n[[Return to the road.->Pseudocity]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "RazorsQuestion",
+            "pid": 131
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Return to the road.",
+          "destination": {
+            "name": "Pseudocity",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Chivalry",
+      "text": "Your footsteps land on broken glass; one of them crushes a discarded paper coffee cup. Hearing this, the white knight turns about. Its flaming blue eyes puff red as it fixes its gaze upon you. For a moment it does not move or speak. The dead horse snorts out a puff of cold air.\n\n\"LIVING MEMORIES IN A DYING PLACE. OMINOUS.\"\n\nThe knight trots towards you, rocking forward and back in its saddle. You eye the blood-stained scabbard bouncing back and forth at its side, but thankfully its plated fingers remain fixed on the reigns. \"DO YOU STILL SEE YOUR REFLECTION, (print:$classDescription.toUpperCase())?\"\n\nThe horse comes to a stop. \"I HAVE SEEN IT TOO. IT HUNTS YOU.\"\n\nTo your surprise, the knight's bearing is calm\u2014even friendly. You sense no imminent danger.\n\n(display:\"Question Knight\")\n\n[[Remain silent.->Justice]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Question Knight",
+            "pid": 112
+          }
+        },
+        {
+          "text": "Remain silent.",
+          "destination": {
+            "name": "Justice",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Granville Exterior",
+      "text": "The sign above your head reads \"Granville Station\" in faded Helvetica. There is no light within the building.\n\nNow that the white knight has departed, the road north lies open.\n\n[[Go north.->Waterfront]]\n\n[[Enter the station.->Granville Platform]]\n\n[[Back to the road.->Shopping Mall]]",
+      "links": [
+        {
+          "text": "Go north.",
+          "destination": {
+            "name": "Waterfront",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Enter the station.",
+          "destination": {
+            "name": "Granville Platform",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Back to the road.",
+          "destination": {
+            "name": "Shopping Mall",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Folded Station",
+      "text": "(if:$metKnightAtGranville is 1)[\\\nYou stand once more outside the train station near the church. Yet this time you may pass easily through the main entrance; someone shredded its heavy steel barriers as if they'd been made of cardboard.\n\nYou spot a string of horse tracks in the sediment at your feet. They lead straight towards The Eye. A second set of horse tracks, this one caked in some sort of black tar, leads back towards the church.\n\n(display:\"Inventory\")\n\n[[Enter the station.->Folded Platform]]\n\n[[Approach the Eye.->Parking Lot]]\n](else:)[\\\nOn close inspection the structure before you resembles two train stations smashed together, as if the miles of land between them had folded down into the earth. The side nearest you is a nexus of concrete beams, tubular green railings and rusty wiremesh wall cages, all intersecting one another at right angles. Yet the far side looks completely different: long, continuous planes joining concrete panels seamlessly into plateglass.\n\nThough the trains themselves appear operational\u2014you just saw one pass overhead\u2014you can find no way to reach them. The station is closed. Heavy steel security barriers block the concrete mouth that was once its main entrance. A notice on the middle one says the station's closed at night, and indeed the sky is dark; Yet the thick layer of sediment at the base of the barricade suggests it hasn't moved in centuries. You circle the building once, then twice. Every side entrance and emergency exit looks to be welded shut. There is far less sediment beneath those ones.\n\n(if:$metBouncer is 1)[\\\n(display:\"Inventory\")\n\n[[Approach the Eye.->Parking Lot]]\n](else:)[\\\nAs the wiremesh station becomes the plateglass one, so too does the sediment covering the ground turn abruptly into asphault. A terrace of roads and parking lots, not yet covered by a century of dust, rises up behind the station. At its peak you spot another building. Squinting at it, you think you hear the thrumming of bass drums through loudspeakers.\n\n(display:\"Inventory\")\n\n[[Approach the building.->Bouncer]]\n]]\\\n\n[[Return to the overpass.->Overpass]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Enter the station.",
+          "destination": {
+            "name": "Folded Platform",
+            "pid": 75
+          }
+        },
+        {
+          "text": "Approach the Eye.",
+          "destination": {
+            "name": "Parking Lot",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Approach the building.",
+          "destination": {
+            "name": "Bouncer",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Return to the overpass.",
+          "destination": {
+            "name": "Overpass",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Flaccid",
+      "text": "The road narrows from four lanes into two as it moves north. There is little room to move here. It makes you nervous.\n\n(if:$canAskQuestions is 1 and (history:) contains \"W Georgia\" is false)[\\\nLooking north again, you spot a human figure further up the road. It glows pale white in the darkness.\n\n(display:\"Inventory\")\n\n[[Follow the figure north.->W Georgia]]](elseif:$canAskQuestions is 1)[\\\nThe pseudocondos lining the road ahead are not straight like the ones you saw to the south. Here they become bent, as if swept over centuries by some westerly wind. Many flop over themselves entirely, rendering the street into a sort of  tunnel. You see a hundred brakelights reflecting in the curve of the plateglass overhead.\n\n(display:\"Inventory\")\n\n[[Go north.->W Georgia]]](else:)[\\\nProceeding up the road you find the source of their deformity: a massive stone structure in a clearing to the west. You can see it glowing pale yellow between gaps in the buildings. Not a single shape moves through the shadow here. The creeping glass dares not approach.\n\nThe pale yellow glow seems to carry an urgent warmth, like body heat.\n\n(display:\"Inventory\")]\n\n(if:$canAskQuestions is 1)[[[Go west to the Crucible.->Crucible]]](else:)[[[Approach the glowing structure.->Crucible]]]\n\n[[Return to the south.->Pseudocity]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Follow the figure north.",
+          "destination": {
+            "name": "W Georgia",
+            "pid": 56
+          }
+        },
+        {
+          "text": "Go north.",
+          "destination": {
+            "name": "W Georgia",
+            "pid": 56
+          }
+        },
+        {
+          "text": "Go west to the Crucible.",
+          "destination": {
+            "name": "Crucible",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Approach the glowing structure.",
+          "destination": {
+            "name": "Crucible",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Return to the south.",
+          "destination": {
+            "name": "Pseudocity",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "W Georgia",
+      "text": "You discover the remains of a massive intersection. It looks as if there were once real buildings here, though the creeping glass has since eaten them. You see a tall pseudocondo shooting up through the corpse of a strip mall; the sign on the front reads \"LONDO- DRUGS\".\n\nA slanted green road sign hangs from the beam of a nearby traffic light, identifying this cross street as \"W Georgia\". The light itself still works, but all it does is flash red.\n\nA dense thicket of pseudocondos blocks the road west. They've grown in around the cars, some of which you see half-embedded in fourth-story windows. The intersection itself is a mess of abandoned Civics and Corollas. They're all crammed bumper to bumper with their brakelights on. Every last one of them\u2014every car you've seen\u2014looks like it was trying to head east down W Georgia Street.\n\n(if:\"Shopping Mall\" is in (history:))[](else:)[\\\nThe pale figure is a block north of you now, weaving between bumpers. You hear\u2014is that the sound of hooves echoing off the plateglass? It must be riding on a horse.\n\n]\\\n[[Go north.->Shopping Mall]]\n\n[[Go east.->Colliseum]]\n\n[[Return to the south.->Flaccid]]",
+      "links": [
+        {
+          "text": "Go north.",
+          "destination": {
+            "name": "Shopping Mall",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Go east.",
+          "destination": {
+            "name": "Colliseum",
+            "pid": 82
+          }
+        },
+        {
+          "text": "Return to the south.",
+          "destination": {
+            "name": "Flaccid",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Justice",
+      "text": "The knight turns again to face the wire mesh, trotting back up to it.  It swivels its helmet over its shoulder to gaze back at you; you'd say its expression looks serene. \"YOU'VE SEEN THE WALLS OF PRIAPUS LAID BARE. MONSTERS KILLING MONSTERS WHILE YOU COWER IN THE DARK; REFLECTIONS BITING AND TWISTING. HIS ROADS ALL LEAD TO (print:$interest.toUpperCase()), YET (print:$interest.toUpperCase()) IS NOWHERE TO BE FOUND.\n\n\"TELL ME, (print:$classDescription.toUpperCase()). DO YOU STILL BELIEVE IN YOUR QUEST?\"\n\n[[Shake your head no.->Peace]]\n\n[[Stare blankly.->Peace]]",
+      "links": [
+        {
+          "text": "Shake your head no.",
+          "destination": {
+            "name": "Peace",
+            "pid": 58
+          }
+        },
+        {
+          "text": "Stare blankly.",
+          "destination": {
+            "name": "Peace",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "Peace",
+      "text": "The knight's eyes smile. \"I BELIEVE IN JUSTICE.\"(set:$metKnightAtGranville to 1)\n\nIt snaps the horse's reigns, and in a flash the animal spins about. Its hind legs leave the ground, suspended in air for a moment, then they crush the wire mesh barrier with the force of a speeding truck. The barrier screeches off its guide rails, scraping for twenty meters along the floor of the building's interior. You lose sight of it in the darkness as it crashes down a distant set of stairs. You hear metal twisting as it collides with something heavy. Then all is dead quiet again.\n\nWordlessly the white knight spurs its horse and canters through the opening. Unable to match its pace, you can only watch it disappear down the same staircase as the wire mesh.\n\n[[Look around.->Granville Exterior]]",
+      "links": [
+        {
+          "text": "Look around.",
+          "destination": {
+            "name": "Granville Exterior",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Granville Platform",
+      "text": "Once inside the station you pass by a series of boarded up department stores built into the surrounding building. Then you clamber down the largest escalator you've ever seen. It's broken, of course.\n\nYou pass the remains of the wire mesh barricade, crumpled against a painted metal wall panel. Beyond it lies a small labyrinth of arched passageways and staircases. The dust is unsettled wherever the white knight passed through.\n\nWhen you finally reach the platform a skytrain is already waiting, humming with electricity. Its doors are open and expectant. It's waiting on you.\n\n[[Board the train.->Eastbound]]\n\n[[Leave.->Granville Exterior]]",
+      "links": [
+        {
+          "text": "Board the train.",
+          "destination": {
+            "name": "Eastbound",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Granville Exterior",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Cross",
+      "text": "The rail line twists and turns across the landscape: goes above ground, then beneath. The track is littered with other dead skytrains, but yours somehow manages to weave between them. You travel for miles and miles.\n\nHalfway through your journey you pass by a sculpture: a towering stone crucifix with block lettering in place of a dying messiah. Down its length, the letters run E _ S T: across its arms, V _ N. The middle letter is missing.\n\nAn empty noose swings from the thing, blowing repeatedly against the cross' stone facade. You spot fragments of excrement spattering the ground beneath the noose, but there is no body caught within it.",
+      "links": []
+    },
+    {
+      "pid": 61,
+      "name": "Palm",
+      "text": "(if:$seenDream is 1 and $availableQuestions contains $qWhoReallyBuiltThis)[\\\nThe green-eyed traveller stands upon the palm, smoking a joint and staring off into the water. They raise a hand to greet you as you approach.(if:$classDescription is \"Ser Nice Guy\")[ On close inspection, you realize they're wearing your former face.]\n\n\"What a wonderful night to be. The stars must be my friends to shine for me! Heh.\n\n\"What are you still doing here, $classDescription? Will you not meet your destiny upon the Crucible? Have you no burning questions for our mutual captor? Will you not follow in the footsteps of that old fool Priapus?\"\n\nThe traveller takes a long drag. \"Eheh. Me neither.\"\n\nThey exhale, slowly. White smoke fills the air surrounding them. Gradually, it forms into words: //(set:$questionIsForInterest to true)(display:$qWhoReallyBuiltThis)// Then the traveller offers their joint to you.\n\n|joint>[(link:\"Take a drag.\")[(replace:?joint)[(transition:\"dissolve\")[You inhale the smoke, and for an instant your vision flashes white. When you exhale, the smoke does not appear; you now possess it within you.(move:$availableQuestions's ($availableQuestions.indexOf($qWhoReallyBuiltThis) + 1) into $heldQuestions's ($heldQuestions's length + 1))\n\n(set:$questionIsForInterest to false)\\\n(set:$spendQuestion to (datamap:\n$qMirror, \"Imposter Mirror\",\n$qWhatIMean, \"Imposter What I Mean\",\n$qWhatYouMean, \"Imposter What You Mean\",\n$qWhyAmIHere, \"Imposter Where Am I\",\n$qWhoReallyBuiltThis, \"Imposter Who Really Built\",\n$qDidYouKnowHowIFelt, \"Imposter How I Felt\"))\\\n(display:\"spendQuestion\")\n\n[[Finish the joint and leave.->Imposter]]]]]]\n](elseif:$seenPalm is 1)[\\\nYou stand upon a palm made from stone. Four fingers and a thumb stretch outward and upward: massive fingers, thick like Roman columns. Black river water breaks upon their knuckles. The current looks too fast to swim.\n\nThe sculpture on which you stand reaches out into the middle of a wide river. A crescent moon hangs low between the stone fingertips; the sky above it is a dark blue sheet. Distant black landshapes form a horizon around you. They're specked with alpine treetops.\n\nThe stone hand connects to a stone wrist. Beyond it, a stone forearm extends towards dry land.\n\n(display:\"Inventory\")\n\n[[Leave.->Imposter]]\n](else:)[\\\n(set:$seenPalm to 1)You awaken on a palm made from stone. Four fingers and a thumb stretch outward and upward: massive fingers, thick like Roman columns. Black water breaks upon their knuckles. The current looks too fast to swim.\n\n(link:\"Stand up.\")[(transition:\"dissolve\")[The sculpture on which you stand reaches out into the middle of a wide river. A crescent moon hangs low between the stone fingertips; the sky above it is a dark blue sheet. Distant black landshapes form a horizon around you. They're specked with alpine treetops.\n\n(link:\"Turn around.\")[(transition:\"dissolve\")[The stone hand connects to a stone wrist. Beyond it, a stone forearm extends towards dry land. You see a campfire burning near the pit of the elbow. There is nowhere else to go.\n\n[[Approach the campfire.->Imposter]]]]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "spendQuestion",
+            "pid": 87
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Finish the joint and leave.",
+          "destination": {
+            "name": "Imposter",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Imposter",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Approach the campfire.",
+          "destination": {
+            "name": "Imposter",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "Overpass",
+      "text": "The stone arm over the river plunges into dirt just as the bicep becomes a shoulder joint, vanishing beneath the ground. Beyond it soars a lipped concrete chute running parallel to the river: an overpass, perhaps, though it's not wide enough for streetcars.\n\n(if:$seenTrain is 1)[\\\n(display:\"Inventory\")\n\n[[Travel to the station.->Folded Station]]\n\n[[Travel to the church.->Redbrick]]\n\n[[Return to the stone arm.->Imposter]]](elseif:$seenChurch is 1)[\\\n(set:$seenTrain to 1)As you stare at the overpass a metal hum rises in your ears. \n\n(link:\"Inspect the overpass.\")[(transition:\"dissolve\")[You look north, then south; a moment later you spot it. A skytrain glides along the chute, click-clacking on the rails as it passes over your head. It strikes you as quaint, though it must once have aspired to be modern: a procession of blocky passenger cars devoid entirely of passengers, each glowing ghostly turquoise in the moonlight.\n\nYour eyes trace the track south, around a long bend towards some sort of terraced metal cage. The track runs straight into it. It's probably a train station.\n\n(display:\"Inventory\")\n\n[[Travel to the station.->Folded Station]]\n\n[[Travel to the church.->Redbrick]]\n\n[[Return to the stone arm.->Imposter]]]]](else:)[\\\nOn the far side of the overpass you spot light pouring from a round window on a hill. It's the only earthly light source you can see.\n\n(link:\"Inspect the light source.\")[(transition:\"dissolve\")[\\\nYou navigate through a network of rusted chainlink fences, several of which stand between you and the light. They're arranged in a grid as if they used to separate different properties, but that must have been decades ago. Now a layer of sediment buries the bottom of the wiremesh so you can't even tell how tall they used to be. Any structures that once stood within them have long since disappeared.\n\nAs you draw close to the light disc you make out the structure surrounding it. It's something between a church and a barnhouse: a red brick box supporting a low sloping roof. Half the shingles have fallen off, leaving large swathes of wood to collapse under the elements. The red brick facade is stripped pale in places: torn diagonally, as if some giant had tried peeling it with their fingernails. You can hear someone shouting inside.\n\n(display:\"Inventory\")\n\n[[Travel to the church.->Redbrick]]\n\n[[Return to the stone arm.->Imposter]]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Travel to the station.",
+          "destination": {
+            "name": "Folded Station",
+            "pid": 54
+          }
+        },
+        {
+          "text": "Travel to the church.",
+          "destination": {
+            "name": "Redbrick",
+            "pid": 67
+          }
+        },
+        {
+          "text": "Return to the stone arm.",
+          "destination": {
+            "name": "Imposter",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Hole",
+      "text": "(set:$seenEye to 1)You approach the hole in the center of the dancefloor, leaning forward so you can gaze down into it.\n\n(if:$classDescription is \"Ser Nice Guy\")[Through the slits in your facemask, you see an enormous iris flitting back and forth. It swims with lively patterns like a rare strain of quartz; you can't quite tell its colour in the light, but you expect you'd find it beautiful no matter what colour it was. The white surrounding it is milky and pristine, receding into the darkness beneath the floorboards as if an eyeball the size of the entire bar rested underneath.\n\nA voice booms out from deep inside the hole: //\"Number 46. Step forward and squander your affection.\"//\n\nNo one steps forward.\n\nThe lens focuses and unfocuses, seemingly at random. It gazes only at various unmarked points on the crumbling ceiling\u2014never directly at you.](else:)[\\\nAn enormous iris stares up from beneath, flitting back and forth as if surveying the gaps in the ceiling tiles. It's bloodshot and mottled. A cataract has formed in the lens; the thing must surely be blind. Its veiny eyewhite recedes into the darkness beneath the floorboards as if an eyeball the size of the entire bar rested underneath.\n\nA voice booms out from deep inside the hole, though it speaks a dialect you can't recognize. //\"FORTY-SIX. ST__ _____RD AND SQU_____ ___R ____CTION.\"//\n\nNo one reacts to it.](if:$metOtherPilgrim is 0)[\\\n\n\nA young pilgrim stands opposite you, staring into the space beneath the dance floor. The enormous iris below does not acknowledge their presence.\n\n[[Observe the pilgrim.->Pilgrim]]]\n\n[[Step back.->Eye]]",
+      "links": [
+        {
+          "text": "Observe the pilgrim.",
+          "destination": {
+            "name": "Pilgrim",
+            "pid": 7
+          }
+        },
+        {
+          "text": "Step back.",
+          "destination": {
+            "name": "Eye",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "Parking Lot",
+      "text": "The terrace rises sharply, stacking parking lot atop parking lot to form sheer asphault cliffs. A sign above you reads EYE OF (print:$interest.toUpperCase()), scrawled out in spraypaint.\n(if:$metKnightAtGranville is 0)[\\\n\nThe bouncer you once met here has, of course, vanished. In their place stands a huge bust identical to the one you found outside the church: a grimacing man with emerald eyes. A plaque at the base reads: \"PRIAPUS, THE APPEASER.\"]\\\n(else:)[\\\n\nThe bar's front door has been thrown from its hinges, which now dangle limply from the doorframe. The bust of Priapus standing next to it has gained a deep bladed gash across its face. A trail of black tar leads away from the scene, off towards the ruined church.]\n(if:$seenTusks is 1)[\\\n\nThe two massive tusks you saw from the bathroom window soar above the parking lot to the side of the bar, even taller than you remember. You don't know how you missed them on the way into the bar. You're certain you would have noticed.\n\n(display:\"Inventory\")\n\n[[Approach the tusks.->Blackmouth]]\n\n[[Enter the Eye.->Eye]]\n\n[[Return to the folded train station.->Folded Station]]\n](else:)[\\\n\n(display:\"Inventory\")\n\n[[Enter the Eye.->Eye]]\n\n[[Return to the folded train station.->Folded Station]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Approach the tusks.",
+          "destination": {
+            "name": "Blackmouth",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Enter the Eye.",
+          "destination": {
+            "name": "Eye",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Return to the folded train station.",
+          "destination": {
+            "name": "Folded Station",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "True Name Confirmed",
+      "text": "The traveller nods gravely. \"Name the object of your desire.\"\n\nYour lips move of their own volition, doomed to say the words: \"|possessiveAdjective>[$interestPossessiveAdjective(display:\"possessiveAdjective\")] name is |name>[$interest(display:\"name\")]. |subject>[$interestSubject(display:\"subject\")] |plural>[(if:$plural)[are](else:)[is](display:\"plural\")] my friend, but from |object>[$interestObject(display:\"object\")] I desire more.\"\n\n|desireConfirmed>[]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "possessiveAdjective",
+            "pid": 72
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "name",
+            "pid": 74
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "subject",
+            "pid": 70
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "plural",
+            "pid": 69
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "object",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Desire Confirmed",
+      "text": "[[Finish speaking.->Lost Voices]]",
+      "links": [
+        {
+          "text": "Finish speaking.",
+          "destination": {
+            "name": "Lost Voices",
+            "pid": 124
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "Redbrick",
+      "text": "(if:$metKnightAtGranville is 1 and $metKnightAtChurch is 0)[\\\n(set:$metKnightAtChurch to 1)\\\nThe white knight stands mounted outside the church's entrance, covered head to toe in human blood. It turns to face you as you approach.\n\n\"AT LAST, IT IS FINISHED. JUDGMENT FOR THE SHEPERDS. JUSTICE FOR THE SHEEP.\"\n\nThe knight swivels its helmet to look back at the church. \"FOR LESLIE.\"\n\nThen it returns its gaze to you. \"YOUR COMPANY IS WELCOME, (print:$classDescription.toUpperCase()). I HAD LOST MYSELF IN THIS PLACE... LOST SIGHT OF MY QUEST. IT WAS YOU WHO BROUGHT ME BACK TO THE WORLD: A MEEK AND HELPLESS VAGRANT, IN NEED OF MY PROTECTION. THE FIRST IN MANY DECADES.\"\n\nYou haven't time to take offense, for the knight continues its soliloquy even as blood drips onto your shoes. \"LESLIE LONGED ALWAYS TO MASTER AND BE MASTERED; BUT I HAVE LEARNED A DIFFERENT WAY. IF THESE WALLS EVER CRUMBLE\u2014IF EVER I CHANCE TO SEE (print:$interest.toUpperCase()) AGAIN\u2014I SHALL REMAIN CONTENT TO BE (print:$interestPossessiveAdjective.toUpperCase()) FRIEND.\"\n\nThe white knight pauses to smear some of the preacher's blood from its helmet. \"IT'S NICE TO HAVE FRIENDS.\"\n\n(display:\"Question Knight\")](else:)[\\\nYou hop the chain link fence separating the church from all the forgotten plots of land. (if:$metKnightAtChurch is 0)[The shouting from inside is now loud enough to be coherent. It sounds like fire and brimstone: the up-down cadence of a doomsday preacher. //\"Priapus, the twisting! Priapus, the nightmare stayer! Priapus, the Phallus of God!\"//](else:)[The white knight is not here anymore.]\n\nA huge stone sculpture stands guard outside the door, angled so it overlooks the river. It's a bust, depicting a man's head and neck. His heroic grimace reminds you of Jesus on the cross. His eyes look like many-faceted gemstones, each shimmering dull green in the moonlight. They might be emeralds.\n\nA plaque at the base of the sculpture seems to echo the tone of the preacher: \"PRIAPUS, WHO BUILT THESE WALLS.\"\n\n(display:\"Inventory\")]\n\n[[Enter the church.->Rainworld]]\n\n[[Leave.->Overpass]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Question Knight",
+            "pid": 112
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Enter the church.",
+          "destination": {
+            "name": "Rainworld",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Overpass",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "Header",
+      "text": "(if:!(\"no-save\" is in (passage:)'s tags))[(savegame: \"A\", (passage:)'s name)]\n**(print:(passage:)'s name)**\n\n",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "plural",
+      "text": "(click:?plural)[(set: $plural to !$plural)(replace:?plural)[(if:$plural)[(transition:\"dissolve\")[are]](else:)[(transition:\"dissolve\")[is]]](display:\"plural\")]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "plural",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "subject",
+      "text": "(click:?subject)[(display:\"subject\")(set:$subjectTemp to (prompt:\"(They/She/He/?)\"))(if:$subjectTemp is not \"\" and $subjectTemp is not \"???\")[(set:$interestSubject to $subjectTemp)(replace:?subject)[(transition:\"dissolve\")[$interestSubject]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "subject",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "object",
+      "text": "(click:?object)[(display:\"object\")(set:$objectTemp to (prompt:\"(Them/Her/Him/?)\"))\\\n(if:$objectTemp is not \"\" and $objectTemp is not \"???\")[(set:$interestObject to $objectTemp)(replace:?object)[(transition:\"dissolve\")[$interestObject]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "object",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "possessiveAdjective",
+      "text": "(click:?possessiveAdjective)[(display:\"possessiveAdjective\")(set:$possessiveAdjectiveTemp to (prompt:\"(Their/Her/His/?)\"))\\\n(if:$possessiveAdjectiveTemp is not \"\" and $possessiveAdjectiveTemp is not \"???\")[(set:$interestPossessiveAdjective to $possessiveAdjectiveTemp)(replace:?possessiveAdjective)[(transition:\"dissolve\")[$interestPossessiveAdjective]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "possessiveAdjective",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "playerName",
+      "text": "(click:?playerName)[(display:\"playerName\")(set:$playerNameTemp to (prompt:\"My name is:\"))(if:$playerNameTemp is not \"\" and $playerNameTemp is not \"???\")[(set:$playerName to $playerNameTemp)(set:$face to $playerNameTemp)(replace:?playerName)[(transition:\"dissolve\")[$playerName]](replace:?trueNameConfirmed)[(transition:\"dissolve\")[(display:\"True Name Confirmed\")]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "playerName",
+            "pid": 73
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "True Name Confirmed",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "name",
+      "text": "(click:?name)[(display:\"name\")(set:$interestTemp to (prompt:$interestPossessiveAdjective + \" name is:\"))(if:$interestTemp is not \"\" and $interestTemp is not \"???\")[(set:$interest to $interestTemp)(replace:?desireConfirmed)[(transition:\"dissolve\")[(display:\"Desire Confirmed\")]](replace:?name)[(transition:\"dissolve\")[$interest]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "name",
+            "pid": 74
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Desire Confirmed",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Folded Platform",
+      "text": "The western end of this train platform bears walls of dense steel wiremesh whose paint has all but rusted away. An off-white metal roof hangs low over the walkway, closing you in; affixed to it is a sign reading \"N_w Westm___ter\" in die-cast lettering.\n\nThe platform's eastern end is completely different, however: all modern plateglass panels and open air. It begins without warning two thirds of the way down the platform, as if two skytrain stations had been sliced in half and then jammed together into one. A bright yellow sign above the track reads \"Lougheed Town Center\" in glossy black Helvetica.\n\nA skytrain waits on the platform, humming with electricity. Its doors are open and expectant. It's waiting on you.\n\n[[Board the train.->Westbound]]\n\n[[Exit the station.->Folded Station]]",
+      "links": [
+        {
+          "text": "Board the train.",
+          "destination": {
+            "name": "Westbound",
+            "pid": 76
+          }
+        },
+        {
+          "text": "Exit the station.",
+          "destination": {
+            "name": "Folded Station",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "Westbound",
+      "text": "(display:\"Cross\")\n\n[[Keep riding.->Granville Platform]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Cross",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Keep riding.",
+          "destination": {
+            "name": "Granville Platform",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "Eastbound",
+      "text": "(display:\"Cross\")\n\n[[Keep riding.->Folded Platform]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Cross",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Keep riding.",
+          "destination": {
+            "name": "Folded Platform",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "Deal",
+      "text": "(set:$face to \"Seven\")\\\n(set:$classDescription to \"Ser Nice Guy\")\\\n(set:$niceGuy to \"Nice Guy\")\\\nYou nod your head.\n\nYou feel a sucking sensation on your cheeks that spreads beneath your skin through your sinuses. Then you start to get very dizzy. Your stomach churns. You're going to be sick.\n\nCollapsing on all fours, you begin dry heaving by the curb. Your face feels cold, like there isn't any skin on it. Gingerly you begin reaching one hand towards it. Then you throw up.\n\nOn your second attempt you manage to caress your cheekbones with your fingers. Your face isn't there anymore. There is only a mask.\n\nYou look up through tears at the bouncer, who, save for their green eyes, now looks exactly like you. \"Go on then, $classDescription. Door's open!\"\n\n(display:\"Inventory\")\n\n[[Enter.->Eye]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Enter.",
+          "destination": {
+            "name": "Eye",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "No Deal",
+      "text": "You shake your head.\n\n\"Heh. Well... Don't blame me!\"\n\nThe bouncer turns the door handle and pushes it halfway open. Loud music slams your senses.\n\n[[Enter.->Eye]]",
+      "links": [
+        {
+          "text": "Enter.",
+          "destination": {
+            "name": "Eye",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "Stall",
+      "text": "A $niceGuy sits on the toilet with their back perfectly straight, staring right at you with glowing red eyes. The number '81' glitters  on their forehead.\n\n\"I'd offer you a seat, $classDescription, but, well...\"\n\nThey study you for a moment. (if: $classDescription is \"Ser Nice Guy\")[Their expression is unreadable as they glance at the '7' on your forehead.] Then they turn their head to stare through the stall in the direction of the giant black tusks.\n\nWhen at last they begin speaking again, they choose words slowly and carefully. \"I know some people wanna find a way out of here. I know what you've been told to do. Listen. In the old days, before I got Eighty-One, I met this archivist from beyond the Blackmouth.\"\n\nThe $niceGuy bows their head, cradling it between thumb and forefinger. \"There are monsters out there, $classDescription. Murderers. Mirrors and dreamers. But here? This place? We're all Nice Guys here, you understand? We take a number, we wait our turn. It's easy. It's safe. It's a life for me, and for you. Even if the Eye never calls you\u2014\"(set:$niceGuy to \"Nice Guy\")\n\n(if:$classDescription is \"Ser Nice Guy\")[An enormous voice booms: //\"Number 342. Step foward and fall to pieces.\"//](else:)[An enormous, unintelligible voice booms: //\"THREE-FORTY-TWO. __EP FO_____ AND FA__ TO ___C_S.\"//]\n\nThe $niceGuy scowls. \"Even if it's never called anyone.\"\n\nThey raise their head to stare you in the face again. \"Give the matter some thought.\" \n\nThen they close the toilet stall door.(set:$seenStall to 1)\n\n[[Leave.->Bathroom]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Bathroom",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "Argument",
+      "text": "Three blue-eyed $niceGuy[s] squabble amongst themselves by the sinkhole's edge. They wear numbers on their foreheads like the people at the bar, but their masks have yellowed with age.\n\nThe oldest one struggles to escape the grasp of their companions, shouting indignantly. \"Enough! Stop! Get back!\"\n\nThe larger of their two captors, a $niceGuy numbered Twenty-eight, catches an elbow in the jaw. \"Don't do this, cousin!\" they protest, spitting blood from their mouth. \"Have you not seen the horrors scittering about in there? Just wait a little longer!\"\n\n\"No! I will suffer no more of this! $interest owes me restitution!\"\n\nThe elder flails their feet about, finally crumpling Twenty-eight with a wild kick to the stomach. You've no idea how a person that size could kick that hard. \"I am Number Two! Number Two, you understand? I purchased this number from Priapus himself, when the mirrors still coated the sky!\n\n\"I've languished in this hellhole for a thousand fucking years! I traded my dignity for it! I endured the company of fools!\"\n\nThe smallest companion, numbered Six, grabs dual handfuls of Two's shirt in an effort to force eye contact. \"Stop this, cousin! Please! You are the last among us who remembers. We need you. //I// need you! We're family. I finally have a family!\"\n\n\"Bah! Useless.\"\n\nTwo shoves Six away from them, turning from their gaze. \"My time is ending, Six. I don't\u2014I don't remember anymore.\"\n\n\"What? No. No, you said-\"\n\n\"I've forgotten, okay?! I've forgotten the timber of $interestPossessiveAdjective voice! I've forgotten the crevices of $interestPossessiveAdjective face! I've forgotten my own reflection; I traded it for $interestObject!\"\n\nThen the elder $niceGuy hangs their head. Six takes a cautious step towards them, raising a trembling hand. \"No one ever comes back. You know they never come back. You're leaving me forever! You're going to die down there and you're leaving me here with //them!//\"\n\nAs if remembering theirself, Two spins about to tower over their former companion. \"Mewling little idiot. You knew this wasn't... you knew.\"\n\nSix shrinks instinctively from the elder's clenched fists. \"I didn't-\"\n\n\"Damn that limp-prick Priapus! Damn the lying eye!\"\n\nTwenty-eight, still nursing their winded gut, manages a choked gasp. \"Blasphemer!\"\n\nTwo takes a number of menacing steps towards Six, shoving their finger into the smaller $niceGuy['s] face. \"I am not some //sheep//,\" they say as they step over the fallen Twenty-Eight. \"I am not some //fool//. I am not you! I'll not wait for some weakling to seize my rightful place.\"\n\n\"Fucking monster!\" Twenty-eight wheezes, throwing themself between the two $niceGuy[s]. \"Leave them be!\"\n\nTwo raises their open palm halfway to eye level but, seeing a few grim-set faces approaching from the bar, lowers it again. \"Enough of this,\" they say as they turn back towards the Blackmouth. \"I've already decided. Rot here if you must. I'm gonna get what's mine.\"\n\nDescending into the darkness, they speak their final piece: \"If anyone's going to fuck $interest, it's going to be //me!//\"\n\nThen the $niceGuy is gone. Six leads a rattled Twenty-eight off to join the others. The pair ignores you entirely.(set:$seenArgument to 1)",
+      "links": []
+    },
+    {
+      "pid": 82,
+      "name": "Colliseum",
+      "text": "The abandoned brakelight convoy comes to a head outside some sort of hybridized office/colliseum. Several cars have driven themselves between its concrete pillars and straight through its first floor windows, as if the motorists had sought to force their way inside. It looks like there was a riot here: perhaps more of an ancient battle, judging by the rubble embedded in all the windshields. Someone must have thrown chunks of it from the roof.\n\nA fold in the colliseum's otherwise-continuous facade guides you inward towards its main entrance. Some //thing// awaits you there, in the shadow of the walls.\n\n(link:\"Approach the thing.\")[(transition:\"dissolve\")[\\\nThe figure before you stands at twice your height. It's some kind of golem: made from clay, or at least something resembling it. The monster's left arm is missing, along with half its face. Whatever force once animated it has dwindled nearly to nothing, for it can scarcely turn its half-head to greet you.\n\n\"There oOo no mirrors, master. I cannot see them. Where did ooO put your mirrors? None may OoO the Archive without a Mirror Mask.\"\n\nThough the golem purports to stand guard, it makes no move to block the entryway. And in any case, the building is ruined now. You could just as easily slip through a broken window on the far side.\n\n(link:\"Try walking past the golem.\")[(transition:\"dissolve\")[\\\nThe golem does not move; you suspect it is no longer capable of doing so. Though it speaks the words it used to speak, it's incapable of enforcing them. There would seem to be nothing left worth enforcing.\n\nStill, there are other hazards beyond it; the building's interior is lined floor to ceiling with mirrors. These are not crystalline, like the creeping glass to the west. These were made by people. You know now what lurks in the reflections. You dare not approach as you are.(if:$seenDream is 1)[\n\n(link:\"Put on the mirror mask.\")[(transition:\"dissolve\")[\\\nYou pull the mask over your face, right side out this time. It acts as a one-way mirror, permitting you to see out from within it while disguising your features. Glimpsing your reflection in the archive walls, you no longer find yourself within it (nor your shadow). Your head now resembles a pale silver kaleidoscope.\n\n[[Enter the building.->Mirror Archive]]]]]]]]]\n\n[[Leave.->W Georgia]]",
+      "links": [
+        {
+          "text": "Enter the building.",
+          "destination": {
+            "name": "Mirror Archive",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "W Georgia",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "Masks",
+      "text": "The Blackmouth looks different with your mirror mask on. Safe from the effects of the reflecting walls, you easily divine the order of its many twisting passageways. They form a lazy sort of grid.(if:$seenStacks is 1)[ To the north you find a tunnel leading up to the Mirror Archive.] To the west you find the rectum, and the ruined bridge. To the east you find the entrance, with its teeth and giant black tusks.\n\nIn the stomach you find the clothing over which you once tripped. It looks like it belonged to a $niceGuy, though nothing remains to tell you which that might have been; its pockets have been turned outward and scoured. You glance over at the spot where you fell and scraped yourself, imagining your body in the third person. Had you seen someone in a mirror mask perching over a dead body, you'd have thought they wore a thousand eyes.(if:$availableQuestions contains $qMirror)[\n\nA small white smoke cloud swirls two feet above the bundle of clothing. As you come close it forms itself into a Question, hovering in midair before you: //(set:$questionIsForInterest to true)(display:$qMirror)//\n\n(link:\"Breathe the smoke.\")[(transition:\"dissolve\")[You inhale the smoke, and for an instant your vision flashes white. When you exhale, the smoke does not appear; you now possess it within you.(move:$availableQuestions's ($availableQuestions.indexOf($qMirror) + 1) into $heldQuestions's ($heldQuestions's length + 1))]]]\n\n(if:$seenStacks is 1)[[[North to the Mirror Archive.->Stacks]]\n\n][[West to the rectum.->Rectum]]\n\n[[East to the mouth.->Blackmouth]]",
+      "links": [
+        {
+          "text": "North to the Mirror Archive.",
+          "destination": {
+            "name": "Stacks",
+            "pid": 130
+          }
+        },
+        {
+          "text": "West to the rectum.",
+          "destination": {
+            "name": "Rectum",
+            "pid": 84
+          }
+        },
+        {
+          "text": "East to the mouth.",
+          "destination": {
+            "name": "Blackmouth",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "Rectum",
+      "text": "The Blackmouth rectum lies atop a small embankment, dribbling ghostly fluid down towards you. You know now what lurks in the reflections. You dare not approach as you are.(if:$seenDream is 1)[\n\n(link:\"Put on the mirror mask.\")[(transition:\"dissolve\")[\\\nYou pull the mask over your face, right side out this time. It acts as a one-way mirror, permitting you to see out from inside while disguising your features. Studying your reflection in the frozen gravel beneath your feet, you find you no longer see yourself within it (nor your shadow). Your head now resembles a pale silver kaleidoscope.\n\n[[Enter the rectum.->Masks]]]]]\n\n[[Back to the streetlight.->Light Pool]]",
+      "links": [
+        {
+          "text": "Enter the rectum.",
+          "destination": {
+            "name": "Masks",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Back to the streetlight.",
+          "destination": {
+            "name": "Light Pool",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "Debug",
+      "text": "{\n<!--\n(set:$seenPalm to 1)\n(set:$metImposter to 1)\n\n(set:$interest to \"Ada\")\n(set:$playerName to \"Brendan\")\n(set:$face to \"Brendan\")\n\n(set:$seenChurch to 1)\n(set:$seenTrain to 1)\n\n(set:$metBouncer to 1)\n\n(set:$face to \"Seven\")\n(set:$classDescription to \"Ser Nice Guy\")\n\n(set:$seenDishevelledGuy to 1)\n(set:$metOtherPilgrim to 1)\n(set:$seenEye to 1)\n(set:$seenTusks to 1)\n(set:$seenStall to 1)\n(set:$niceGuy to \"Nice Guy\")\n(set:$seenArgument to 1)\n\n(set:$seenMonsters to 1)\n\n\n(set:$canAskQuestions to 1)\n\n\n(set:$seenPaper to 1)\n(set:$metKnightAtGranville to 1)\n\n(set:$ikeaDreamerIsDead to 1)\n\n(set:$smelledIncense to 1)\n(set:$dreamerIsDead to 1)\n(set:$seenDream to 1)\n\n(set:$seenStacks to 1)\n(set:$seenPaperInStacks to 1)\n\n(set:$metKnightAtChurch to 1)\n(set:$seenDoorBehind to 1)\n-->\n\n<!--\n(move:$availableQuestions's ($availableQuestions.indexOf($qWhatYouMean) + 1) into $heldQuestions's ($heldQuestions's length + 1))\n(move:$availableQuestions's ($availableQuestions.indexOf($qWhatIMean) + 1) into $heldQuestions's ($heldQuestions's length + 1))\n(move:$availableQuestions's ($availableQuestions.indexOf($qMirror) + 1) into $heldQuestions's ($heldQuestions's length + 1))\n(move:$availableQuestions's ($availableQuestions.indexOf($qWhyAmIHere) + 1) into $heldQuestions's ($heldQuestions's length + 1))\n(move:$availableQuestions's ($availableQuestions.indexOf($qDidYouKnowHowIFelt) + 1) into $heldQuestions's ($heldQuestions's length + 1))\n(move:$availableQuestions's ($availableQuestions.indexOf($qWhoReallyBuiltThis) + 1) into $heldQuestions's ($heldQuestions's length + 1))\n-->\n}",
+      "links": []
+    },
+    {
+      "pid": 86,
+      "name": "Inventory",
+      "text": "(set:$scanResults to (array:))\\\n(if:$availableQuestions contains $qDidYouKnowHowIFelt and $metKnightAtChurch is 1)[(set:$scanResults's ($scanResults's length + 1) to \"A pale white light shines atop the ruined bridge.\")]\\\n(if:$availableQuestions contains $qWhoReallyBuiltThis and $seenDream is 1)[(set:$scanResults's ($scanResults's length + 1) to \"A curious green smoke fills the sky above the stone palm.\")]\\\n(if:$availableQuestions contains $qWhyAmIHere and $metKnightAtGranville is 1)[(set:$scanResults's ($scanResults's length + 1) to \"Crows circle above the old church.\")]\\\n(if:$availableQuestions contains $qWhatYouMean)[(set:$scanResults's ($scanResults's length + 1) to \"Crows perch on the girders beneath the ruined bridge.\")]\\\n(if:$availableQuestions contains $qWhatIMean)[(set:$scanResults's ($scanResults's length + 1) to \"Crows peck on the windows of a highrise on the northern shore.\")]\\\n(if:$availableQuestions contains $qMirror)[(set:$scanResults's ($scanResults's length + 1) to \"Crows rest outside a building at the eastmost end of W Georgia Street.\")]\\\n(set:$scanResultsIndex to 0)\\\nYou possess the ability to |status>[check your status].(if:$canAskQuestions is 1)[(if:(\"underground\" is in (passage:)'s tags))[ You may also scan the sky, but not while you're indoors.](elseif:$scanResults's length > 0)[ You may also examine |scan>[(print:$scanResults's length) object(if:$scanResults's length > 1)[s]] in the sky.|scanResult>[]](else:)[ The skies are clear: not a crow in sight.]]|statusResult>[]\\\n(click:?status)[(display:\"Print Status\")]\\\n(click:?scan)[(display:\"Scan Sky\")]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Print Status",
+            "pid": 111
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Scan Sky",
+            "pid": 99
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "spendQuestion",
+      "text": "|questionText>[(link:\"Spend one of your Questions.\")[(transition:\"dissolve\")[\\\n(if:$heldQuestions's length is 0)[You possess no questions to spend. You must first find some.](else:)[\\\n(set:$spendQuestionFirstOption to true)\\\n(if:$heldQuestions contains $qMirror and $spendQuestion contains $qMirror)[\\\n(if:$spendQuestionFirstOption is false)[\n\n](else:)[(set:$spendQuestionFirstOption to false)]\\\n|qMirror>[(display:$qMirror)]\\\n(click:?qMirror)[(replace:?questionText)[(move:$heldQuestions's ($heldQuestions.indexOf($qMirror) + 1) into $spentQuestions's ($spentQuestions's length + 1))(display:\"printSpentQuestion\")]]]\\\n(if:$heldQuestions contains $qWhatIMean and $spendQuestion contains $qWhatIMean)[\\\n(if:$spendQuestionFirstOption is false)[\n\n](else:)[(set:$spendQuestionFirstOption to false)]\\\n|qWhatIMean>[(display:$qWhatIMean)]\\\n(click:?qWhatIMean)[(replace:?questionText)[(move:$heldQuestions's ($heldQuestions.indexOf($qWhatIMean) + 1) into $spentQuestions's ($spentQuestions's length + 1))(display:\"printSpentQuestion\")]]]\\\n(if:$heldQuestions contains $qWhatYouMean and $spendQuestion contains $qWhatYouMean)[\\\n(if:$spendQuestionFirstOption is false)[\n\n](else:)[(set:$spendQuestionFirstOption to false)]\\\n|qWhatYouMean>[(display:$qWhatYouMean)]\\\n(click:?qWhatYouMean)[(replace:?questionText)[(move:$heldQuestions's ($heldQuestions.indexOf($qWhatYouMean) + 1) into $spentQuestions's ($spentQuestions's length + 1))(display:\"printSpentQuestion\")]]]\\\n(if:$heldQuestions contains $qWhyAmIHere and $spendQuestion contains $qWhyAmIHere)[\\\n(if:$spendQuestionFirstOption is false)[\n\n](else:)[(set:$spendQuestionFirstOption to false)]\\\n|qWhyAmIHere>[(display:$qWhyAmIHere)]\\\n(click:?qWhyAmIHere)[(replace:?questionText)[(move:$heldQuestions's ($heldQuestions.indexOf($qWhyAmIHere) + 1) into $spentQuestions's ($spentQuestions's length + 1))(display:\"printSpentQuestion\")]]]\\\n(if:$heldQuestions contains $qWhoReallyBuiltThis and $spendQuestion contains $qWhoReallyBuiltThis)[\\\n(if:$spendQuestionFirstOption is false)[\n\n](else:)[(set:$spendQuestionFirstOption to false)]\\\n|qWhoReallyBuiltThis>[(display:$qWhoReallyBuiltThis)]\\\n(click:?qWhoReallyBuiltThis)[(replace:?questionText)[(move:$heldQuestions's ($heldQuestions.indexOf($qWhoReallyBuiltThis) + 1) into $spentQuestions's ($spentQuestions's length + 1))(display:\"printSpentQuestion\")]]]\\\n(if:$heldQuestions contains $qDidYouKnowHowIFelt and $spendQuestion contains $qDidYouKnowHowIFelt)[\\\n(if:$spendQuestionFirstOption is false)[\n\n](else:)[(set:$spendQuestionFirstOption to false)]\\\n|qDidYouKnowHowIFelt>[(display:$qDidYouKnowHowIFelt)]\\\n(click:?qDidYouKnowHowIFelt)[(replace:?questionText)[(move:$heldQuestions's ($heldQuestions.indexOf($qDidYouKnowHowIFelt) + 1) into $spentQuestions's ($spentQuestions's length + 1))(display:\"printSpentQuestion\")]]]\\\n]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "printSpentQuestion",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "Knight Mirror",
+      "text": "(display:\"Knight Question Header\")\n\n\"THE MASK, AND THE FACE BENEATH. THE CRIME, AND ITS PUNISHMENT.\"\n\nThe knight swivels its helmet to glance at the shadows between buildings. \"YOUR DEATH, BE YOU MORE FORTUNATE THAN I.\"",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Knight Question Header",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "Knight Question Header",
+      "text": "The white smoke escapes your lungs through your lips. It wafts into the air, through the knight's helmet, and then down into its armoured body. The pale figure's red eyes flash momentarily white.",
+      "links": []
+    },
+    {
+      "pid": 90,
+      "name": "Knight What I Mean",
+      "text": "(display:\"Knight Question Header\")\n\n\"IN BLUE MOON DREAMS, I WAS THE KEYS BETWEEN (print:$interestPossessiveAdjective.toUpperCase()) FINGERS WHEN (print:$interestSubject.toUpperCase()) PASSED STRANGERS IN THE NIGHT. IN BLOOD MOON DREAMS, I WAS (print:$interestPossessiveAdjective.toUpperCase()) HALF-ROTTEN TOOTH.\"\n\nThe knight's eyes close for a moment, leaving darkness within its helmet. \"I DO NOT DREAM OF (print:$interest.toUpperCase()) ANYMORE.\"",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Knight Question Header",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "Knight What You Mean",
+      "text": "(display: \"Knight Question Header\")\n\n\"LESLIE LIVED AND DIED IN THE NAME OF (print:$interest.toUpperCase()). HOUNDED THE PREDATORS WHO SOUGHT TO POSSESS (print:$interestObject.toUpperCase()). DREAMED OF BEING POSSESSED.\"\n\nThe knight's red eyes flicker in the dark. \"IN TIME, BECAME A POSSESSION OF THE DREAM. AS ARE WE ALL.\"",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Knight Question Header",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "Knight Where Am I",
+      "text": "(display:\"Knight Question Header\")\n\n\"A PENAL COLONY; A FEVER DREAM. A LIE WHOSE NEGATION REVEALS THE TRUTH.\"\n\nThe white knight pauses. \"OUR HOME, NEVERENDING.\"",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Knight Question Header",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "Imposter Who Really Built",
+      "text": "(display:\"Imposter Question Header\")\n\nThen the traveller grins. \"Priapus, who built these walls! Priapus, who formed the doors! Priapus, who knew the light!\n\n\"You've seen all his statues, yeah? Seen the emerald eyes, green just like mine? Bet you thought I was him, didn't you $classDescription? Heh.\"\n\nThe traveller takes another long drag. \"Hell of a hole to fall into, this place. Nobody ever makes it out. You wanna survive down here, it takes a little enginuity! People show up here thinkin' they know what's valuable. They land on this rock and decide they wanna go get $interest! They find that old statue on the hill, now they wanna know all about the man who built the walls! See, nobody ever asks the right questions.\n\n\"A true entrepreneur doesn't ask 'who built the walls',\" the traveller begins as they hand you the last of their joint. \"The better question is: Who built the statues?\"\n\nThen they shoot you a sly wink.",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Imposter Question Header",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "Imposter Question Header",
+      "text": "The white smoke escapes your lungs out your lips, wafting through the air and into the traveller's mouth. Their green eyes flash white.",
+      "links": []
+    },
+    {
+      "pid": 95,
+      "name": "Imposter Mirror",
+      "text": "(display:\"Imposter Question Header\")\n\n\"Why, it's you, isn't it? Far be it from me to tell you why you keep trying to eat yourself.\"\n\nThe traveller grins.\n\n\"Me, I've never even met my own reflection. People in that bar think they're so clever with their masks. But they wind up dead just the same, don't they? Amateurs!\n\n\"The true entrepreneur knows that wearing the same disguise every day is the very opposite of disguising oneself. The //true// entrepreneur,\" begins the traveller as they take another drag from their joint, \"takes caution never to wear the same face twice.\"\n\nThey shoot you a sly wink.",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Imposter Question Header",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "Imposter What I Mean",
+      "text": "(display:\"Imposter Question Header\")\n\n\"Eh? What does anyone mean to their own shadow?\"\n\nThe traveller snorts derisively, shooting smoke from their nostrils. \"You may as well ask what you mean to the monster under the bed.\"\n\nThe traveller heaves a heavy sigh, then passes you the joint.",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Imposter Question Header",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "Imposter What You Mean",
+      "text": "(display:\"Imposter Question Header\")\n\n\"I've seen so many things that make me wonder! But sometimes it's hard to tell. Heh.\"\n\nThe traveller takes a long drag from their joint. \"A true entrepreneur knows the only difference between a good habit and a bad one is which limb people will sell you to maintain it.\n\n\"Once you've found the hole inside, that's it! Just eats anything you try to put there. You avoid, you confront, you ignore, you indulge. Still gonna swallow you one day.\"\n\nThe traveller grins again, but this time it's a sour one. \"$interest's been a real bad habit for me.\"",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Imposter Question Header",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "Imposter Where Am I",
+      "text": "(display:\"Imposter Question Header\")\n\n\"Why, this here is The Friend Zone! The dream of a lifetime! The wound that never heals; the dam that never breaks! Priapus' ever-throbbing cock!\"\n\nThe traveller grins. \"Not that funny, is it? When you don't know what it is, but you can't get enough of it? Not that funny. Heh.\"",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Imposter Question Header",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "Scan Sky",
+      "text": "(click:?scan)[(display:\"Scan Sky\")]\\\n(replace:?scanResult)[(transition:\"dissolve\")[\\\n(if:$availableQuestions's length is 0)[\n\nThe skies are clear. Not a crow in sight.]\\\n(else:)[\\\n\n\n(print:$scanResults's ($scanResultsIndex + 1))\\\n(set:$scanResultsIndex to (($scanResultsIndex + 1) % $scanResults's length))]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Scan Sky",
+            "pid": 99
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "Print Question",
+      "text": "(click:?questionsLink)[(display:\"Print Question\")]\\\n(replace:?questionsResult)[(transition:\"dissolve\")[\\\n//\n\n(set:$questionIsForInterest to true)\\\n(display:($heldQuestions's ($questionsIndex + 1)))//\\\n(set:$questionsIndex to (($questionsIndex + 1) % $heldQuestions's length))]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Print Question",
+            "pid": 100
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "Before The Law",
+      "text": "The tall guard's eyes bulge out at you from beneath their eyebrows. They speak a language you don't recognize, using syllables your mouth has never formed. \"Ooo? Ooo OOOo OoooOO?\"\n\nThe short guard responds: \"No, this one isn't //that// one! We've never seen this one before.\"\n\nThe tall guard looks annoyed and perplexed. \"OoO? oo! Ooo OoOoo Ooo?\"\n\n\"Why shouldn't they? Nothing ever changes here. It's a cycle.\"\n\n\"Ooo\u2014\"\n\n\"Hail, $classDescription!\" the smaller guard booms in a bid to cut off their companion, reciting the words from a scrap of paper held between both hands. Their thick fingers make the note look miniscule. \n\n(link:\"Listen.\")[(transition:\"dissolve\")[\"Know that you stand before the Crucible! Seven thousand souls have ventured here to seek the light of $interest; yet each has been blinded, burned and sundered, for they were judged unworthy!\"\n\nThe tall guard's next interjection sounds vaguely sarcastic: \"Oo. //Ooo Ooo O\u2014\"//\n\n\"Shh! Will you just let me do it?\"\n\n\"Ooo Oo OO OooOO!\"\n\n\"I //am reading// the bloody note! Quiet!\"\n\nThe tall guard lets out a derisive snort.\n\n(link:\"Keep listening.\")[(transition:\"dissolve\")[The short guard continues. \"Since the time of mirrors\u2014\"\n\n//\"OoO!?\"//\n\n\"\u2014SINCE THE TIME OF MIRRORS, brave pilgrims have each sought communion with $interest. To know the shining light! To quell the racing blood! To free them from their punishment, nevermore to dwell within these turgid Walls of Priapus! None have yet succeeded.\"\n\nThe tall guard says something sardonic.\n\n\"Shh!\"\n\nThe short guard, having lost their place, slides their enormous finger up and down the note for a moment. When their booming voice resumes, the tall guard slaps their forehead in embarassment; it would appear they've skipped several paragraphs. \"...Their voices ring forever in the bedchambers of our minds. The time now comes to bear witness to another! Come, $classDescription! Present your Question!\"\n\nThe short guard drops to one knee, bowing their head. The larger one does the same, though not before aiming a withering eye-roll towards its companion. The two giants' halberds uncross to reveal the bare doorway behind.\n\n(link:\"Stare blankly.\")[(transition:\"dissolve\")[\\\nSeveral moments pass before the small guard looks up. \"The Question, $classDescription. The Question for $interest? Present your Question.\"\n\n(link:\"Continue staring blankly.\")[(transition:\"dissolve\")[\\\nThe short guard groans, rising to their feet again while the tall guard cracks up. \"Do you even you know where you are, $classDescription? Have you understood why you were sent? How can you approach the Crucible with such foolish haste? How will you pass beyond it without the perfect Question? Haven't you read the scriptures? Didn't you hear the speech?\n\n\"Go! Leave! Return only when you have found the perfect Question, as the word of Priapus has instructed you!\"\n\nThe tall guard, now wearing a serious face, glances from their companion down to you. When it speaks this time, it does so in perfect English: \"Lost your voice, have you? Must be a sickness going round.\"\n\n\"What\u2014\"\n\nIt is now the tall guard's turn to speak; as they do so, they studiously avoid their companion's cock-eyed stare. \"A strong Question is hard to find. Takes centuries to form, sometimes. If you haven't brought any, easiest thing is to take someone else's.\"\n\n\"Why would you\u2014\"\n\n\"Check the skies,\" the guard says as they raise their massive index finger towards the ceiling. \"Crows round here like to eat the dead.\"\n\nThe short guard, sensing a break in conversation, seizes the opportunity to begin ceaselessly berating their companion. \"Well, I hope you're pleased with yourself. Completely off-script! Do you have any idea...\"\n\nThe two giants are too busy bickering to pay you any further attention.\n\n(set:$canAskQuestions to 1)\\\n[[Leave.->Antechamber]]]]]]]]]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Antechamber",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "printSpentQuestion",
+      "text": "(transition:\"dissolve\")[//(display:($spentQuestions's last))//\n\n(display:$spendQuestion's ($spentQuestions's last))]",
+      "links": []
+    },
+    {
+      "pid": 103,
+      "name": "Knight Who Built This",
+      "text": "\"HAVE YOU NOT HEARD THE SAME STORIES AS I? WHEN PRIAPUS FAILED, HE FELL FROM (print:$interest.toUpperCase()) INTO THE MIRROR WORLD. HE TWISTED HIS BODY INTO WALLS, UNREFLECTING. SAVED US FROM OUR SHADOWS.\"\n\nThe knight pauses. \"LESLIE BELIEVED EVERYTHING THEY HEARD. DO NOT MAKE THE SAME MISTAKE.\"",
+      "links": []
+    },
+    {
+      "pid": 104,
+      "name": "Finale",
+      "text": "The short guard eyes you sternly. \"Question for $interest?\"\n\n\"Be careful $classDescription,\" the tall guard says. \"Know that once the words have escaped your lips, **there is no turning back**. Be certain you have done all you could.\"\n\n(set:$questionIsForInterest to true)\\\n(set:$spendQuestion to (datamap:\n$qMirror, \"Another Door Behind It\",\n$qWhatIMean, \"Another Door Behind It\",\n$qWhatYouMean, \"Another Door Behind It\",\n$qWhyAmIHere, \"Another Door Behind It\",\n$qWhoReallyBuiltThis, \"Another Door Behind It\",\n$qDidYouKnowHowIFelt, \"Another Door Behind It\"))\\\n(display:\"spendQuestion\")\n|replace>[\n[[Leave.->Antechamber]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "spendQuestion",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Antechamber",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "Another Door Behind It",
+      "text": "(replace:?replace)[]\\\nThe question escapes your lips as a cloud of white smoke, painting itself as text onto the surface of the door. Gradually, the text grows brighter and brighter; it becomes blinding, bathing the chamber in light. Soon there is a massive rumble as the door begins to shift. It splits in half at the center, dividing the Question in two, and slides open before you. A blackness lies beyond it, beckoning you forth.\n\n(if:$heldQuestions's length > 0)[[[Enter.->The Dream of a Lifetime]]](else:)[[[Enter.->A Year Gone Bad]]]\n\n",
+      "links": [
+        {
+          "text": "Enter.",
+          "destination": {
+            "name": "The Dream of a Lifetime",
+            "pid": 106
+          }
+        },
+        {
+          "text": "Enter.",
+          "destination": {
+            "name": "A Year Gone Bad",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "The Dream of a Lifetime",
+      "text": "You walk through blackness for a time, (if:$seenDoorBehind is 0)[uncertain](else:)[ever more certain] of where it will lead. A point of light appears in the distance, as if at the end of a great tunnel.\n\n(link:\"Approach the light.\")[(transition:\"dissolve\")[\\\n(display:\"Deep Inside\")\n\n(set:$questionIsForInterest to true)\\\n(set:$spendQuestion to (datamap:\n$qMirror, \"Another Door Behind It\",\n$qWhatIMean, \"Another Door Behind It\",\n$qWhatYouMean, \"Another Door Behind It\",\n$qWhyAmIHere, \"Another Door Behind It\",\n$qWhoReallyBuiltThis, \"Another Door Behind It\",\n$qDidYouKnowHowIFelt, \"Another Door Behind It\"))\\\n(display:\"spendQuestion\")]]\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Deep Inside",
+            "pid": 109
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "spendQuestion",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "In The Friend Zone",
+      "text": "Dedicated to a place with kinder walls than these\n\nWords by <a href=\"http://www.brendanvance.com\" target=\"_blank\">Brendan Vance</a>",
+      "links": []
+    },
+    {
+      "pid": 108,
+      "name": "A Year Gone Bad",
+      "text": "You walk through blackness for a time, (if:$seenDoorBehind is 0)[uncertain](else:)[ever more certain] of where it will lead. A point of light appears in the distance, as if at the end of a great tunnel.\n\n(link:\"Approach the light.\")[(transition:\"dissolve\")[\\\n(display:\"Deep Inside\")\n\n(link:\"Plead with the guards.\")[(transition:\"dissolve\")[\\\nYou fall on your knees, reaching up to grasp the shorter guard's kneecap. They shoo you away with a gentle kick, though the giant's immense size still sends you sprawling against the opposite wall. \"There's nothing we can do,\" the guard says. \"We didn't build the walls. They've only ever been yours.\"\n\n(link:\"Attack the guards.\")[(transition:\"dissolve\")[\\\nYou ball a fist and strike the tall guard's chestplate as hard as you can. the giant doesn't move, but you fall backwards onto your tailbone. Pain floods into your knuckles and up your arm. Tears stream down your cheeks.\n\n\"You can't defeat me $classDescription,\" the guard says in a soothing tone, crouching down to study you as you nurse your broken fingers.  \"Even if you did\u2014even if you defeated my friend there, and somehow opened the door\u2014you would find two bigger, stronger guards before a bigger, stronger door. Then another two guards after that.\"\n\n(link:\"Search for another Question.\")[(transition:\"dissolve\")[\\\nYou look inside yourself, but there are no Questions left to ask.\n\nThe tall guard places a hand on your shoulder. \"It's okay, $classDescription. $interest has not heard you; but then, $interest was never here. You knew it all along.\"\n\nThey lead you to the alcove by the side of the antechamber, where you crawl onto the stone bench and curl into a ball. You close your eyes, though you know sleep won't come. \"You've come as far as anyone, $classDescription. Far as Priapus himself, I'd say. Rest now. Long years ahead.\"\n\n[[THE END.->In The Friend Zone]]]]]]]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Deep Inside",
+            "pid": 109
+          }
+        },
+        {
+          "text": "THE END.",
+          "destination": {
+            "name": "In The Friend Zone",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "Deep Inside",
+      "text": "(set:$seenDoorBehind to 1)Gradually the point becomes a shape: a room, of sorts. An antechamber. Soon you can make out the double doors, and then the marble pillars. Two old bearded giants await you.\n\nThe taller of the pair is even bigger than the previous one. Their eyes bulge at you. \"Ooo? Ooo OOOo OoooOO?\"\n\nThe shorter guard responds: \"No, this one isn't //that// one! We've never seen this one before.\"\n\nThe tall guard looks annoyed and perplexed. \"OoO? oo! Ooo OoOoo Ooo?\"\n\n\"Why shouldn't they? Nothing ever changes here. It's\u2014\"\n\nThen, reading your face, they falter. They glance downward at the floor, a sadness creeping over them. \"I think they've heard this one before.\"\n\nYou turn to leave, but there is no doorway there. The wall is continuous, smooth and cold. It's shut behind you somehow, or perhaps was never open. There is no way out.\n\n\"Question for $interest?\"",
+      "links": []
+    },
+    {
+      "pid": 110,
+      "name": "Ruined Eye",
+      "text": "The bar looks like it was struck by a hurricane. Nearly every table has been overturned; scores of stools have been smashed. It looks as if the $niceGuy[s] have all fled, save for one: the dishevelled $niceGuy, number 123, cowers in the corner with their arms around their knees. They look shell shocked, but they bear no visible wounds.\n\nThe sound system still blares its distorted, down-pitched dance music, though the song seems to have changed: //\"Countin' on my fingers, countin' on my toes...\"//\n\n(link:\"Inspect the hole in the floor.\")[(transition:\"dissolve\")[\\\nA giant eyeball lays dead beneath the ruined floorboards. The white knight's silver sword protrudes from its pupil, buried nearly to the hilt.(if:$classDescription is \"Ser Nice Guy\" and $seenEye is 1)[ It looks nothing like you remember it: whites bloodshot and mottled, iris occluded by cataracts. You're certain this is not the same eye you saw before. Yet it's](else:)[ It's] difficult to make out many fine details, as the entire organ is soaked in a black tar-like substance that might well have been its blood.\n\nSomeone left a trail of the stuff leading out the front door.]]",
+      "links": []
+    },
+    {
+      "pid": 111,
+      "name": "Print Status",
+      "text": "(replace:?statusResult)[(transition:\"dissolve\")[\\\n\n\nYou are imprisoned in the Friend Zone. Your name is $face, but people here know you as $classDescription.(if:$heldQuestions's length is 0)[\\\n You hold 0 Questions within your lungs.](else:)[\\\n You hold |questionsLink>[(print:$heldQuestions's length) Question(if:$heldQuestions's length > 1)[s]] within your lungs.](if:(savedgames:) contains \"A\")[ Your progress has been automatically saved.](else:)[ I am unable to save your progress for some reason; have you disabled your browser's local storage?]|questionsResult>[]]\\\n(set:$questionsIndex to 0)\\\n(click:?questionsLink)[(display:\"Print Question\")]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Print Question",
+            "pid": 100
+          }
+        }
+      ]
+    },
+    {
+      "pid": 112,
+      "name": "Question Knight",
+      "text": "(set:$questionIsForInterest to false)\\\n(set:$spendQuestion to (datamap:\n$qMirror, \"Knight Mirror\",\n$qWhatIMean, \"Knight What I Mean\",\n$qWhatYouMean, \"Knight What You Mean\",\n$qWhyAmIHere, \"Knight Where Am I\",\n$qWhoReallyBuiltThis, \"Knight Who Built This\",\n$qDidYouKnowHowIFelt, \"Knight Did You Know How I Felt\"))\\\n(display:\"spendQuestion\")",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "spendQuestion",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "Live Preacher",
+      "text": "The church's interior is very tall and very narrow: a physical impossibility, given the squat shape of its redbrick exterior. Gothic stone columns rise up to the ceiling, curving inward to form a series of concentric folds. The final fold is adorned at its head by a massive blood red gemstone.\n\nThere are holes in this ceiling as there were in the roof outside, yet the patches of sky above you are a different colour. Even the weather is different in here: Terrible rain pours in through the gaps, streaming across the stone floor.\n\nA gaunt, soaked figure paces back and forth between rows of empty pews, frothing with excitement. //\"Priapus, never ending! Priapus, who knew the light; His face collapsing, His hands unlit! Priapus, the monstrous form! Priapus, who shaped the doors\u2014who built these walls!\"//\n\nThe preacher turns upon the only other figure you can see: someone slumped into a rotting pew, head turned downward. They're wearing some kind of opera mask. //\"Do not fear, my cousin! I too was lost in this place! I too dreamt fondly of escape! To be in the light of $interest again\u2014the very thought of it fills my blood.\"//\n\nThe preacher resumes their pacing, this time right towards you. Their eyes are made entirely of blue fire. Their strides are long and quick. They must be over seven feet tall.\n\n(link:\"Cower.\")[(transition:\"dissolve\")[You shrink back just as the preacher is about reach you, but then they swivel in the opposite direction. //\"Listen to the scriptures, my friends! Only He holds wisdom enough to traverse the Blackmouth; only He has ever succeeded in doing so. Bid the hour of His return, we faithful! Surrender your false numbers, and return to me! Await with me the light! Please...\"//\n\nThey seem not to notice your presence. Perhaps they can't event see you.\n\nThe preacher drones unending, arms flailing about. You listen for a while longer, but soon they begin repeating themself. The masked person looks like they're trying to sleep through it, a feat you'd consider impossible. You wonder why they don't simply leave.(set:$seenChurch to 1)\n\n(display:\"Inventory\")\n\n[[Exit the church.->Redbrick]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Exit the church.",
+          "destination": {
+            "name": "Redbrick",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "Dead Preacher",
+      "text": "It's still pouring rain inside the church. And though the cobblestone floor tiles still glimmer with streaming water, that water has become tinged with red. The rotting pews lie all askew: One has been broken in half against the wall's stone arches, while another bears a person-shaped crater in the middle.\n\nThe blood red gem has fallen from the ceiling arch, crushing the pulpit beneath it. The bible that once rested there now lies open on the floor; its pages have gone every which way, most now laying soaked between the pews.\n(if:$canAskQuestions is 1 and $availableQuestions contains $qWhyAmIHere)[\\\n\nAbove the ruined bible churns a ball of white smoke. As you approach it forms itself into a Question, hovering in midair before you: //(set:$questionIsForInterest to true)(display:$qWhyAmIHere)//\n\n(link:\"Breathe the smoke.\")[(transition:\"dissolve\")[You inhale the smoke, and for an instant your vision flashes white. When you exhale, the smoke does not appear; you now possess it within you.(move:$availableQuestions's ($availableQuestions.indexOf($qWhyAmIHere) + 1) into $heldQuestions's ($heldQuestions's length + 1))]]\n]\n(link:\"Try to read the bible pages.\")[(transition:\"dissolve\")[\\\nMost of the pages have been ruined in the blood-tinged rainwater. Those that are still legible have been written in a language you don't understand. Yet tucked into the cover of the bible is a sermon written in English. You wonder why the the Preacher would bother translating it, had they the ability to read this other language. Perhaps someone else had to translate it for them.\n\n(link:\"Read the sermon.\")[(transition:\"dissolve\")[\\\n//When Priapus came upon **$interestObject** he was anointed; he knew **$interestPossessiveAdjective** gaze, and it filled his blood.\nPriapus had the Good inside him, and **$interestSubject** saw it shining from his hands though he had not a face.\n**$interestSubject** came closer, and closer, and Priapus was so full he began to shake. But at the critical moment, he balked; then the Good was gone from him, and so (if:$plural)[were](else:)[was] **$interestSubject**.//\n\n(link:\"Keep reading.\")[(transition:\"dissolve\")[\\\n//Priapus fell to the Mirror World, where he saw only his monstrous form reflecting\u2014\nThere, away from **$interestPossessiveAdjective** gaze, Priapus began to twist.\nPriapus twisted and twisted until his form disappeared, and from it came these walls\u2014\nAnd in the walls Priapus was unreflecting, for there were no mirrors therein.//\n\n(link:\"Read the last passage.\")[(transition:\"dissolve\")[\\\n//Priapus built a door to **$interestObject**, and another behind it\u2014\nA Crucible, beyond which he formed a space for the Good to return.\nThey who ask a perfect Question will be annointed, as Priapus was\u2014\nFor the Good will come to them, and shine from their hands like his.\nAnd they will depart the OooOo forevermore, and be full by **$interestPossessiveAdjective** gaze\u2014\nOr else perish in the Mirror World, **$interestPossessiveAdjective** smile unwanting.//]]]]]]]]\n\n[[Leave.->Redbrick]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Redbrick",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "Knight Did You Know How I Felt",
+      "text": "(display:\"Knight Question Header\")\n\n\"LESLIE LIVED IN HIDING FROM THEIR OWN FEELINGS,\" the knight says as its eyes harden. \"WORE THEIR TORMENT LIKE A FAVOURITE PAIR OF SHOES. HOW COULD (print:$interest.toUpperCase()) HAVE KNOWN? WHY SHOULD (print:$interestSubject.toUpperCase()) HAVE CARED?\"",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Knight Question Header",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "Imposter How I Felt",
+      "text": "(display:\"Imposter Question Header\")\n\n\"Heh. Could it be me? Could it really, really be?\"\n\nThe traveller takes a long drag, handing you the remainder of the joint. \"A true entrepreneur never lets anyone know how they really feel about anything. When people can't see what you want, they don't know what to hide from you!\n\n\"$interest only ever gave me shadows. But people round here? Downright generous!\"\n\nThe traveller shoots you a sly wink.",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Imposter Question Header",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "Psalm",
+      "text": "\"Where are all the |nice>[Nice Guys] at?\"\n\n==>\n(click:?nice)[(transition:\"dissolve\")[\"In the [[Friend Zone->Palm]], where you left them.\"\n\n\u2014Priapus 13:23]]",
+      "links": [
+        {
+          "text": "Friend Zone",
+          "destination": {
+            "name": "Palm",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "Number Two's Question",
+      "text": "\"What did (if:$questionIsForInterest)[you](else:)[$interest] actually mean to (if:$questionIsForInterest)[me](else:)[you]?\"",
+      "links": []
+    },
+    {
+      "pid": 119,
+      "name": "Number Seventy-eight's Question",
+      "text": "\"Who is the person in the mirror?\"",
+      "links": []
+    },
+    {
+      "pid": 120,
+      "name": "Dreamer's Question",
+      "text": "\"What did (if:$questionIsForInterest)[I](else:)[you] actually mean to (if:$questionIsForInterest)[you](else:)[$interest]?\"",
+      "links": []
+    },
+    {
+      "pid": 121,
+      "name": "Preacher's Question",
+      "text": "\"Where am I?\"",
+      "links": []
+    },
+    {
+      "pid": 122,
+      "name": "Imposter's Question",
+      "text": "\"Who really built these walls?\"",
+      "links": []
+    },
+    {
+      "pid": 123,
+      "name": "Knight's Question",
+      "text": "\"Did (if:$questionIsForInterest)[you](else:)[$interest] know how (if:$questionIsForInterest)[I](else:)[you] felt?\"",
+      "links": []
+    },
+    {
+      "pid": 124,
+      "name": "Lost Voices",
+      "text": "The words escape your lungs in a billow of white smoke. They hang in the air for a moment, curling around one another. Then the wind picks up. It carries the words away to the west, down the river and out of sight. The campfire whips to one side for a second, crackling in protest; but soon all is calm again. The traveller sits back, gazing after the smoke.\n\n\"An idiot once sat by this fire and told me everything gets to live twice. Said the first life's such a tragedy that the second one can only be a farce.\"\n\nThey grin at you. \"Get it?\"\n\nYou open your mouth to speak, but you find you can't do it. Your voice is gone. The old traveller's grin breaks into a wide smile. \"Joke is we never get to find out whether we're the tragedy or the farce! Heh.\"\n\nThe traveller feigns seriousness for a moment, squinting into your face. \"Maybe it was you in another life, said those words to me. Maybe you got stuck here all over again. Maybe it's you every time. Wouldn't that be tragic?\"\n\nTheir smile spreads back across their lips.\n\n\"I know the one you seek, $classDescription. Everybody does. All anybody talks about round here! Course, that's 'cause no one's figured out how to leave.\n\n\"Your best bet,\" the traveller continues as their face grows truly serious, \"is to find The Crucible. Far away from here, middle of the city. Thing looks like a big stone v\u2014well, you really can't miss it.\n\n\"Me, I'm gonna park my ass by this fire for a while. Cold night out there,\" they  say as they tug their blankets close. \"Trackin' ghosts through the fog. Heh.\"\n\nThen they fall silent.\n\n[[Leave.->Overpass]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Overpass",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "Threshold",
+      "text": "Reaching the rectum's threshold you discover the source of the glow: a streetlamp, deep orange, whining and flickering against the night. It's the only light you can see out here.\n\nLooking up, you see a huge bridge running parallel to the tunnel's exit. It's too dark to make out whatever landmass the bridge once joined. And in any case, the thing is ruined now; it only spans a few hundred meters before twisting downward into a jumble of rebar and dangling concrete.\n\nLooking down the gentle slope of the ground on which you stand, you find the source of the voices you heard. Two figures stand on an asphault road, smack in the middle of the streetlamp's flickering lightpool. The first is Number Two, as you had guessed. The other is pale and crooked: an old veteran, perhaps, or at least the ghost of one.\n\n[[Approach the two figures.->Murderers]]",
+      "links": [
+        {
+          "text": "Approach the two figures.",
+          "destination": {
+            "name": "Murderers",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "Silver Fragment",
+      "text": "The fragment must once have belonged to some larger whole: a blade, judging by its shape. Its surface has the lustre of silver, but the material is impossibly light. There isn't a single mark upon it: no rust, no scuffs, no scratches.\n\nYou test one of its edges with your thumb. It's sharp like a fresh razor.\n\n[[Step back.->Light Pool]]",
+      "links": [
+        {
+          "text": "Step back.",
+          "destination": {
+            "name": "Light Pool",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "showPhotograph",
+      "text": "(if:$seenPaper is 1)[\\\n(link:\"Inspect the photograph again.\")[(transition:\"dissolve\")[Your muscles refuse you; you cannot bring yourself to look at that thing again.]]](else:)[\\\n[[Inspect the paper.->Paper]]]",
+      "links": [
+        {
+          "text": "Inspect the paper.",
+          "destination": {
+            "name": "Paper",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "Paper",
+      "text": "You squint down at the paper. It's a photograph: a JPEG, humming softly with compression artefacts. Two friends stand arm in arm, beaming at the camera. A third stands off to the right drawing their lips into a nervous half-smile.\n\n(link:\"Examine the three friends.\")[(transition:\"dissolve\")[\\\n(replace:?stepBackText)[]\\\n(set:$seenPaper to 1)\\\nThey look like they're at a party: all dressed up. You don't recognize the person on the left, but the one on the right might be Leslie\u2014same oblong face, same narrow cheekbones. The one in the center is more difficult to make out. As your eyes travel across the region where their face would be, the pixels collapse into a muddy brown-black stain. It seems to spread further and further the longer you look.\n\n(link:\"Look at them through the corner of your eye.\")[(transition:\"dissolve\")[\\\nYou gaze at the leftmost figure, focusing through the corner of your eye towards the middle one. In the absence of direct eye contact the stain gradually retreats. Soon you can make out their arms, then their chest. You recognize this body. It's $interest.\n\n(link:\"Focus on the face.\")[(transition:\"dissolve\")[\\\nThe stain in the center of the image continues to recede. Through the corner of your eye you can make out $interestPossessiveAdjective neck; $interestPossessiveAdjective chin; $interestPossessiveAdjective teeth, sharpened to points. A pair of eyes open in the JPEG noise where $interest's should be, but they don't belong to $interestObject. They're your eyes, except black like new moons. The sharp teeth flash, ripping your cheek open. You cover your face instinctively, shutting your eyes tight. Warm blood oozes down your fingers.\n\n(link:\"Wait.\")[(transition:\"dissolve\")[\\\nSilence.\n\nYou open your eyes after a few moments. The photo lies still in its resting place, covered by the stain. You don't want to look at it again.\n\n(link:\"Step back.\")[(goto:$showPhotograph's \"return\")]]]]]]]]]\n\n|stepBackText>[(link:\"Step back.\")[(goto:$showPhotograph's \"return\")]]",
+      "links": []
+    },
+    {
+      "pid": 129,
+      "name": "Basement",
+      "text": "The archive's basement level is a maze of empty bookshelves, punctuated on occasion by more vacant pedestals and strangely-numbered plaques.\n\nThis floor has not been ransacked like the one above. No bookshelves have been overturned; each pedestal remains intact and in place. Noticing the chill in your toes, you begin to grasp the reason why: swirling about your feet is the same strange fluid you found inside the Blackmouth.\n\nYou then notice a chill in the air itself. A draft emanates from somewhere within the bookshelf maze.\n\n(display:\"Inventory\")\n\n[[Follow the draft deeper into the stacks.->Stacks]]\n\n[[Back up to the main floor.->Mirror Archive]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Follow the draft deeper into the stacks.",
+          "destination": {
+            "name": "Stacks",
+            "pid": 130
+          }
+        },
+        {
+          "text": "Back up to the main floor.",
+          "destination": {
+            "name": "Mirror Archive",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "Stacks",
+      "text": "(if:$seenStacks is 0)[\\\n(set:$seenStacks to 1)\\\n(set:$seenPaperInStacks to $seenPaper)]\\\nYou wind down passages and between rows of bookshelves, travelling wherever the air is coldest. The Blackmouth's ghostly fluid swirls about your ankles.\n\nTo your amazement, you happen across a pedestal that is not empty. A glass jewel case sits upon the thing, in which rests (if:$seenPaperInStacks is 1)[the same torn photograph Number Two once brandished at the white knight.](elseif:$seenPaper is 1)[the stained photograph of $interest.](else:)[a piece of paper: maybe a postcard, or a photograph.] There is no plaque above this one.\n\nNot far beyond it, you locate a rough-hewn tunnel leading down into the fluid. Its walls are lined with fossilized wooden support beams; where the other Blackmouth entrances appeared as caves and sinkholes, this one looks to have been dug out like a mineshaft.\n\n(display:\"Inventory\")\n\n(set:$showPhotograph to (datamap: \"return\", \"Stacks\"))\\\n(display:\"showPhotograph\")\n\n[[Descend into the Blackmouth.->Masks]]\n\n[[Back towards the main floor.->Basement]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Inventory",
+            "pid": 86
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "showPhotograph",
+            "pid": 127
+          }
+        },
+        {
+          "text": "Descend into the Blackmouth.",
+          "destination": {
+            "name": "Masks",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Back towards the main floor.",
+          "destination": {
+            "name": "Basement",
+            "pid": 129
+          }
+        }
+      ]
+    },
+    {
+      "pid": 131,
+      "name": "RazorsQuestion",
+      "text": "(replace:?answerText)[(transition:\"dissolve\")[\\\n\"THEN I SHALL AID YOUR QUEST, AS YOU AIDED MINE.\"\n\nThe knight exhales a cloud of white smoke from within its bloodied armour. Gradually, the smoke forms into a Question: //(set:$questionIsForInterest to true)(display:$qDidYouKnowHowIFelt)//\n\n(link:\"Breathe the smoke.\")[(transition:\"dissolve\")[You inhale the smoke, and for an instant your vision flashes white. When you exhale, the smoke does not appear; you now possess it within you.(move:$availableQuestions's ($availableQuestions.indexOf($qDidYouKnowHowIFelt) + 1) into $heldQuestions's ($heldQuestions's length + 1))\n\n(display:\"Question Knight\")\n\n[[Return to the road.->Pseudocity]]]]]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Question Knight",
+            "pid": 112
+          }
+        },
+        {
+          "text": "Return to the road.",
+          "destination": {
+            "name": "Pseudocity",
+            "pid": 48
+          }
+        }
+      ]
+    }
+  ]
+}

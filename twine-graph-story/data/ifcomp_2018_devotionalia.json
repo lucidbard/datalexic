@@ -1,0 +1,1429 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "DEVOTIONALIA",
+      "text": "<<audio \"chant\" fadein loop>><center>[img[images/devo ui1.png]]</center><div class=\"towerpassage\">You have devoted your life to a <span class=\"cycle\"><<cyclinglink \"god\" \"being\" \"presence\" end>></span> whose voice you have never heard.\n\nYou need not hear them to worship them &mdash; but without a voice to guide you, you have grown uncertain of your abilities, and your rituals have become less elaborate. You yearn for the sight of them drifting in the dark ocean overhead: their mass of twining bodies, the pinpricks of their <span class=\"cycle\"><<cyclinglink \"eyes\" \"ten thousand eyes\" end>> on a clear night</span>.\n\nOnly in [[crimson obscurity]] are their rites still observed.</div>",
+      "links": [
+        {
+          "text": "crimson obscurity",
+          "destination": {
+            "name": "crimson obscurity",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "StoryInit",
+      "text": "<<cacheaudio \"chant\" \"music/GregorianChant.mp3\">> <<cacheaudio \"hope\" \"music/LastingHope.mp3\">> <<cacheaudio \"bell\" \"sfx/juskiddink-bell.mp3\">> <<cacheaudio \"bell2\" \"sfx/Khrinx-bell2.mp3\">>  <<cacheaudio \"bell3\" \"sfx/InspectorJ-gamelan.mp3\">> <<cacheaudio \"heartbeat\" \"sfx/jobro-heartbeat.mp3\">> <<cacheaudio \"hiss\" \"sfx/Mr_KeybOred-monster.mp3\">> <<cacheaudio \"crunch\" \"sfx/minituffy-crunch.mp3\">> <<cacheaudio \"bell4\" \"sfx/marcusgar-littlebell.mp3\">>",
+      "links": []
+    },
+    {
+      "pid": 3,
+      "name": "create a votive offering",
+      "text": "<div class=\"votivepassage\">By your own hand alone, you wish to carve a token of your gratitude and devotion. \n\nThough many before you have fashioned <span class=\"cycle\"><<cyclinglink \"reliefs\" \"mosaics\" \"vessels\" \"crowns\" \"amulets\" \"all manner of wondrous things\" end>></span> for your patron, you want to present something rare: a statuette in honor of their [[worldly likeness]], as they are said to appear on land and two-legged.</div>\n<center>[img[images/devo ui1.png]]<div class=\"prayerbg\">You imagine the object as you gather your materials: \nA <span class=\"choice\"><<cyclinglink \"$size\" \"large\" \"small\">></span> statuette carved from <span class=\"choice\"><<cyclinglink \"$material\" \"stone\" \"wood\" \"bone\" \"wax\">></span>. \nIts features will be <span class=\"choice\"><<cyclinglink \"$features\" \"masculine\" \"feminine\" \"androgynous\">></span>. \nIt will <span class=\"choice\"><<cyclinglink \"$paint\" \"be\" \"not be\">></span> painted.\n\nOnce more, the refrain:</div>\n\n<center><div class=\"godwilling\"><i>[[God willing|Confirm]]</i></div></center>",
+      "links": [
+        {
+          "text": "worldly likeness",
+          "destination": {
+            "name": "worldly likeness",
+            "pid": 25
+          }
+        },
+        {
+          "text": "God willing",
+          "destination": {
+            "name": "Confirm",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "make a sacrifice",
+      "text": "<div class=\"sacrificepassage\">You wish to offer something to satisfy their tastes, culled with a discerning eye.\n\nThe appetites of such a profound and distant being can be <span class=\"cycle\"><<cyclinglink \"fickle\" \"bizarre\" \"inscrutable\" end>></span>, but certain [[predilections]] have been made clear enough after the passage of centuries.</div> \n<center>[img[images/devo ui1.png]]<div class=\"prayerbg\">You intend to sacrifice <span class=\"choice\"><<cyclinglink \"$sacrifice\" \"a meal\" \"a snake\" \"yourself\">></span>.</div>\n\n<center><div class=\"godwilling\"><i><<click \"God willing\">><<run state.display($sacrifice)>><</click>></i></div></center>",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "a meal",
+            "pid": 12
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "a snake",
+            "pid": 10
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "yourself",
+            "pid": 11
+          }
+        },
+        {
+          "text": "predilections",
+          "destination": {
+            "name": "predilections",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "compose a prayer",
+      "text": "<div class=\"prayerpassage\"><<set $pray to \"yes\">>You wish to speak directly to them, and to speak aloud to dispel the years of mumbling and whispering. It has been <span class=\"cycle\"><<cyclinglink \"months\" \"years\" \"so very long\" end>></span> since last you tried. You have not wanted to bother them, and your voice has grown meek and tired.\n\nSo renew it &mdash; [[pray]].</div>",
+      "links": [
+        {
+          "text": "pray",
+          "destination": {
+            "name": "pray",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "cyclinglinks",
+      "text": "* You look around, but only see <<cyclinglink \"grass\" \"a flower\" \"a cloud\" \"the road\">>. - This is a purely cosmetic, endlessly cycling link.\n* You see a bowl containing <<cyclinglink \"3 cookies\" \"2 cookies\" \"1 cookie\" \"a few crumbs\" end>>. - This link changes to the words \"a few crumbs\" when you get to the end.\n* You see a dial: <<cyclinglink \"$heat\" \"off\" \"low\" \"high\" \"fearsome\">>. - The $heat variable will be changed to \"off\" when the page loads (unless it was already set to \"high\" or \"fearsome\"), and then sets it to \"low\", \"high\" and \"fearsome\" as the player clicks the link.\n<<click \"go\">><<run state.display($heat)>><</click>>\n\n* You see a fuel gauge: <<cyclinglink \"$fuel\" \"100%\" \"50%\" \"10%\" \"0%\" end>>.\n* You see an air meter: <<cyclinglink \"$air\" \"********\" \"******\" \"****\" \"**\" out>>.",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "Confirm",
+      "text": "<div class=\"votivepassage\"><<if $size is \"small\">>The votive is no larger than your hand, its tiny eyes blank but piercing.<</if>><<if $size is \"large\">>The votive stands to just below your knee, the detail of its face lifelike and superb.<</if>>\n\n<<if $material is \"stone\">>The votive is carved from cool, black stone; even hewn roughly, the unpolished surface seems to shine.<</if>><<if $material is \"wood\">>The votive is carved from worn, sturdy driftwood; its surface is adorned with elegantly spiralling knots.<</if>><<if $material is \"bone\">>The votive is carved from porous, bleached bone, difficult to sculpt without splintering; you tried to work with greatest care.<</if>><<if $material is \"wax\">>The votive is carved from wax; once soft and malleable in your hands, it now hardens on the altar.<</if>>\n\n<<if $features is \"masculine\">>A rough simplification of your notion of a human man informs your depiction of their likeness.<</if>><<if $features is \"feminine\">>A rough simplification of your notion of a human woman informs your depiction of their likeness.<</if>><<if $features is \"androgynous\">>You have not given thought to human gender as you wrought their image; they are simply as they are, a unique and beautiful likeness.<</if>>\n\n<<if $paint is \"be\">>The votive is painted with splashes of yellow, violet, and magenta; their skin is a warm, deep brown, and their eyes a brilliant, ethereal yellow.<</if>><<if $paint is \"not be\">>The votive is bare, its surface left natural and unadorned but for a clear lacquer that makes it gleam under the light.<</if>></div>\n<center><div class=\"bydesign\"><i>[[This is by design.]]</i></div>\n<span class=\"cancel\"><small><small>[[This will not do.|create a votive offering]]</small></small></span></center>",
+      "links": [
+        {
+          "text": "This is by design.",
+          "destination": {
+            "name": "This is by design.",
+            "pid": 8
+          }
+        },
+        {
+          "text": "This will not do.",
+          "destination": {
+            "name": "create a votive offering",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "This is by design.",
+      "text": "<div class=\"votivepassage\">Poised with reptilian grace, your patron stares blank-eyed up at you, cradled in your <<if $size is \"small\">>palms<</if>><<if $size is \"large\">>arms<</if>>.\n\nYou wonder if you have reduced them, somehow, in condemning their <span class=\"cycle\"><<cyclinglink \"enormous\" \"unthinkable\" \"unknowable\" end>></span> size to something so minute in comparison. The legend goes that they are well more than a thousand serpents united as one, a mass forever coiling and uncoiling. Like a parody of the strange mating throes of snakes, they wind into one another, but they've no need to mate; they need their mass to propel them through unseen currents.\n\nSuch a form is more elegant than the knotted tails of rats tangled together, but not dissimilar. The mass is said by some to be a braided cable: the bodies of the lessers conjoined with the massive core, a central living column with branching tributaries like ribs attached to a spine. Viewed through the fog of the boundary between seas, the mass would seem to be a great solid miasma. \n\nA [[hive]], inseparable.</div>",
+      "links": [
+        {
+          "text": "hive",
+          "destination": {
+            "name": "hive",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "credits",
+      "text": "<center><div class=\"credits3\"><b><span style=\"border-bottom: 0px dotted #dcea00 !important;\">DEVOTIONALIA</span></b></div>\n[img[images/devo ui1.png]]</center><div class=\"credits1\"><b>writing, art, & programming</b><br><b>music</b><br><br><br><b>scripts</b><br><b>sound effects</b><br><br><b>testing</b><br><br><br></div><div class=\"credits2\">G. GRIMOIRE (\"<a href=\"http://ricassofiction.itch.io/\">GRIM</a>\")<br><a href=\"http://incompetech.com/\"><b>KEVIN MACLEOD</b></a><br><small><small>\"Gregorian Chant\" & \"Lasting Hope\"<br><small>(<a href=\"http://creativecommons.org/licenses/by/3.0/\">Creative Commons: By Attribution 3.0 License</a>)</small></small></small><br>LEON ARNOTT @ <a href=\"https://www.glorioustrainwrecks.com/user/584\">Glorious Trainwrecks</a><br>minituffy, marcusgar, jobro, InspectorJ,<br>Khrinx, juskiddink<br>Albatross Wirehead, Chad, Edith,<br>MathBrush, Oliver, <b><a href=\"https://ghoulishkid.itch.io/\">Quinn</a></b>, Tonake</div><center>[img[images/devo ui1.png]]</center><div class=\"credits1\"><center><small><small><i>DEVOTIONALIA was developed with Twine, an interactive fiction tool originally created by Chris Klimas, using the SugarCube 1.0.32 engine by Thomas Michael Edwards. Primary background artwork is \"<a href=\"http://www.maisonsvictorhugo.paris.fr/en/work/la-tour-des-rats\">La tour des rats</a>\" by Victor Hugo. Note that the current build is <b>not optimized for mobile devices</b>, but will run on them &mdash; albeit much less attractively than intended. \n\n<b>Special thanks</b> to the testers credited above, whose thorough and thoughtful input has been essential in polishing this project.</i></small></small></center></div>\n<center><div class=\"godwilling\"><<click [[return|start]]>></center><<audio \"bell2\" play>><</click>></div>",
+      "links": [
+        {
+          "text": "return",
+          "destination": {
+            "name": "start",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "a snake",
+      "text": "<div class=\"sacrificepassage\">Sea-snakes gather near your island often, as if knowing it should be holy to them as well. When they make their pilgrimages, they prefer a certain obscure cove rife with strange kelp to nest in.\n\nIt is a task to wrest one from the water, but you intend to capture it. You must remember to squeeze the head <span class=\"cycle\"><<cyclinglink \"just so\" \"tightly at the mandible\" end>></span>, that it will not strike you as you bring it to the grand altar.</div>\n\n<center><div class=\"bydesign\"><i>[[This is by design.|snake]]</i></div>\n<span class=\"cancel\"><small><small>[[This will not do.|make a sacrifice]]</small></small></span></center>",
+      "links": [
+        {
+          "text": "This is by design.",
+          "destination": {
+            "name": "snake",
+            "pid": 44
+          }
+        },
+        {
+          "text": "This will not do.",
+          "destination": {
+            "name": "make a sacrifice",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "yourself",
+      "text": "<div class=\"sacrificepassage\">To cut and burn a lock of hair is quite enough for a small ritual. But it is too simple, too pedestrian a sacrifice for such a ritual as this &mdash; and the stench of burning hair is really so foul, barely concealed even by favorable herbs.\n\nYou must approach the matter with appropriate gravitas: you intend to spill blood.\n\nYou could [[offer your life]], certainly. <<if $offer is \"yes\">>You could, but that would be absurd. \n\nThere are always the [[leeches|leech]], of course.<</if>></div>",
+      "links": [
+        {
+          "text": "offer your life",
+          "destination": {
+            "name": "offer your life",
+            "pid": 22
+          }
+        },
+        {
+          "text": "leeches",
+          "destination": {
+            "name": "leech",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "a meal",
+      "text": "<div class=\"sacrificepassage\">The Pursuer is not known to be gluttonous, despite their vast assemblage of mouths and flickering forked tongues. \n\nAmong the central virtues of their cult is hospitality, however, and there is little that honors hospitality more generously than a meal prepared with <span class=\"cycle2\"><<cyclinglink \"$emotion\" \"care\" \"love\">></span>.</div>\n\n<center><div class=\"bydesign\"><i>[[This is by design.|meal confirm]]</i></div>\n<span class=\"cancel\"><small><small>[[This will not do.|make a sacrifice]]</small></small></span></center>",
+      "links": [
+        {
+          "text": "This is by design.",
+          "destination": {
+            "name": "meal confirm",
+            "pid": 32
+          }
+        },
+        {
+          "text": "This will not do.",
+          "destination": {
+            "name": "make a sacrifice",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "end",
+      "text": "<center>[img[images/devo ui1.png]]</center><<audio \"chant\" fadeout>><<audio \"hope\" fadein loop>><div class=\"towerpassage\">You have made your <span class=\"cycle2\"><<cyclinglink \"devotion\" \"adoration\" \"desperation\">></span> known, yet still there is no divine voice from the slumbering altar, no word nor will to go by. \n\nYou could never be certain that there would be. The arcane are so ineffable, rarely dealing in [[certainties]].</div>",
+      "links": [
+        {
+          "text": "certainties",
+          "destination": {
+            "name": "certainties",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "hive",
+      "text": "<div class=\"votivepassage\">The statuette has taken shape, but it is not quite finished. You continue to refine it, working tirelessly through the night with tools in hand and a heart thundering with <span class=\"cycle\"><<cyclinglink \"apprehension\" \"excitement\" \"terror\">></span>. Will it serve its purpose?</div>\n<center>[img[images/devo ui1.png]]<div class=\"prayerbg\">When it is done, you <span class=\"choice\"><<cyclinglink \"$state\" \"destroy it at the altar\" \"place it within the shrine\" \"cast it into the sea\">></span>.</div>\n\n<center><div class=\"godwilling\"><i><<click \"God willing\">><<audio \"bell4\" play>><<run state.display($state)>><</click>></i></div></center>",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "destroy it at the altar",
+            "pid": 15
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "place it within the shrine",
+            "pid": 16
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "cast it into the sea",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "destroy it at the altar",
+      "text": "<div class=\"votivepassage\">In an austere ritual, you burn the results of your labor upon the grand altar. You have done this many times before, and the sight of a flame does not fill you with apprehension; fire is cleansing.\n\nOnce the statuette has burned, you cover the remains and secure them before leaving the altar in peace for one day and one night.\n\n<<if ($features is \"masculine\") or ($features is \"feminine\") or ($material is \"bone\")>><<set $badvotive to \"yes\">>When you return, all that remains is a blackened, greasy streak on the altar, as if a hand swept through the ashes and scattered them.<</if>><<if ($features is \"androgynous\") and ($material is \"wood\") and ($paint is \"be\")>><<set $lovevotive to \"yes\">>When you return, you uncover the statuette to find it whole and painted still, as if it had never been burned at all.<</if>><<if ($features is \"androgynous\") and ($material is \"wax\")>><<set $goodvotive to \"yes\">>When you return, the coating of melted wax has congealed to the altar in a pleasing shape. Satisfied, you peel it from the cold stone and set it aside to perhaps serve another use; you may yet melt it again to set into the shape of a candle.<</if>><<if ($features is \"androgynous\") and ($material is \"wood\") and ($paint is \"not be\")>><<set $goodvotive to \"yes\">>When you return, you find that embers still kindle in what remains of the wood. A favorable omen&mdash; you leave it uncovered and smoldering upon the altar a while longer, until the wind takes the ashes out beyond the sea.<</if>><<if ($features is \"androgynous\") and ($material is \"stone\")>><<set $goodvotive to \"yes\">>When you return, the statuette remains &mdash; though the stone is discolored, the features less distinct. It is still serviceable, and you set it aside; it may yet find another use.<</if>>\n\nIt was no small task, but how fulfilling to know that you have [[created something|votiveend]] at all.</div>\n<center><<if $badvotive is \"yes\">><span class=\"smaller5\">[img[images/d-ash.png]]</span><<else>><span class=\"smaller\">[img[images/d-candle.png]]</span><</if>></center>",
+      "links": [
+        {
+          "text": "created something",
+          "destination": {
+            "name": "votiveend",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "place it within the shrine",
+      "text": "<div class=\"votivepassage\"><<if ($features is \"masculine\") or ($features is \"feminine\") or ($material is \"bone\")>>Secure within the offering niche, the statuette sits untouched until the next morning. Gently, you forbid the temple urchins from disturbing the shrine, and they heed your warning.\n\nWhen you return, the statue has fallen; you find that a web of thin fractures mars its features when you set it upright again. The incense you set beside it to guard the shrine has crisped away to nothing but ash.<<set $badvotive to \"yes\">><</if>><<if ($material is \"bone\")>> Yellowing bone shards crumble in the midst of what remains unblackened.<<set $badvotive to \"yes\">><</if>><<if ($features is \"androgynous\") and ($material is \"wood\") and ($paint is \"be\")>><<set $lovevotive to \"yes\">>Secure within the offering niche, the statuette sits untouched until the next morning. Gently, you forbid the temple urchins from disturbing the shrine, and they heed your warning.\n\nWhen you return, the statuette remains where you left it, upright in the divot at the center of the niche. A faint light emanates from it, as if from within, and you place a cautious hand upon it only to find that it is warm to the touch.\n\nAn astonishing omen, you realize, withdrawing your hand in reverence. You resolve to preserve this votive carefully for use in future rituals.<</if>><<if ($features is \"androgynous\") and ($material is \"wood\") and ($paint is \"not be\")>>Secure within the offering niche, the statuette sits untouched until the next morning. Gently, you forbid the temple urchins from disturbing the shrine, and they heed your warning.\n\nWhen you return, the statuette remains just as you left it, unharmed and cool to the touch. You take this as a favorable omen, and resolve to continue using this votive in future rituals.<<set $goodvotive to \"yes\">><</if>><<if ($features is \"androgynous\") and ($material is \"stone\")>>Secure within the offering niche, the statuette sits untouched until the next morning. Gently, you forbid the temple urchins from disturbing the shrine, and they heed your warning.\n\nWhen you return, the statuette remains just as you left it, unharmed and cool to the touch. You take this as a favorable omen, and resolve to continue using this votive in future rituals.<<set $goodvotive to \"yes\">><</if>><<if ($features is \"androgynous\") and ($material is \"wax\")>>Secure within the offering niche, the statuette sits untouched until the next morning. Gently, you forbid the temple urchins from disturbing the shrine, and they heed your warning.\n\nWhen you return, the statuette remains just as you left it, unharmed and cool to the touch. You take this as a favorable omen, and resolve to continue using this votive in future rituals.<<set $goodvotive to \"yes\">><</if>>\n\nIt was no small task, but how fulfilling to know that you have [[created something|votiveend]] at all.</div>\n<center><<if $badvotive is \"yes\">><span class=\"smaller5\">[img[images/d-ash.png]]</span><<else>><span class=\"smaller\">[img[images/d-candle.png]]</span><</if>></center>",
+      "links": [
+        {
+          "text": "created something",
+          "destination": {
+            "name": "votiveend",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "start",
+      "text": "<center>[img[images/devologo.png]]\n<div class=\"godwilling\"><<click [[DEO VOLENTE|DEVOTIONALIA]]>><<audio \"bell3\" play>><</click>></div><br><div class=\"godwilling\"><small><<click [[guidance]]>><<audio \"bell\" play>><</click>></small></div><br><div class=\"godwilling\"><small><<click [[credits]]>><<audio \"bell\" play>><</click>></small></div>\n<center><span class=\"smaller\">[img[images/d-incense.png]]</span></center>",
+      "links": [
+        {
+          "text": "DEO VOLENTE",
+          "destination": {
+            "name": "DEVOTIONALIA",
+            "pid": 1
+          }
+        },
+        {
+          "text": "guidance",
+          "destination": {
+            "name": "guidance",
+            "pid": 55
+          }
+        },
+        {
+          "text": "credits",
+          "destination": {
+            "name": "credits",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "cast it into the sea",
+      "text": "<div class=\"votivepassage\">Wrapping the statuette in a bolt of rough cloth, you cradle it in your arms and carry it to the highest point of the small island upon which your temple sits. The sea churns far below, dark in the absence of the red season.\n\nYou lift the statuette overhead and cast it into the depths. The hungry waters swallow your devotion with nary a sound.\n\n<<if ($features is \"masculine\") or ($features is \"feminine\") or ($material is \"bone\")>><<set $badvotive to \"yes\">>At dawn, the sea angers. Waves crash against the cliffs far higher than they ought to, whipping you with biting salt spray when you rush outside to check on the many shrines and altars.<</if>><<if ($features is \"androgynous\") and ($material is \"wood\") and ($paint is \"be\")>><<set $lovevotive to \"yes\">>At dawn, the sea is calm. When you check on each shrine and altar in turn, its deep, merry sound calms your heart. \n\nLooking down upon the sea from high above, you spy a splash of crimson spreading under the surface.<</if>><<if ($features is \"androgynous\") and ($material is \"stone\")>><<set $goodvotive to \"yes\">>At dawn, the sea is as it was. Neither calm nor angry, the water is heedless of anything but its own currents. That is well enough; that is as it should be.<</if>><<if ($features is \"androgynous\") and ($material is \"wood\") and ($paint is \"not be\")>><<set $goodvotive to \"yes\">>At dawn, the sea is as it was. Neither calm nor angry, the water is heedless of anything but its own currents. That is well enough; that is as it should be.<</if>><<if ($features is \"androgynous\") and ($material is \"wax\")>><<set $goodvotive to \"yes\">>At dawn, the sea is as it was. Neither calm nor angry, the water is heedless of anything but its own currents. That is well enough; that is as it should be.<</if>>\n\nIt was no small task, but how fulfilling to know that you have [[created something|votiveend]] at all.</div>\n<center><span class=\"smaller\">[img[images/d-candle.png]]</span></center>",
+      "links": [
+        {
+          "text": "created something",
+          "destination": {
+            "name": "votiveend",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "meal",
+      "text": "<div class=\"sacrificepassage\"><<if ($food is \"organ meat\") or ($food is \"tentacle\")>><<set $mealbest to \"yes\">><<else>><<set $mealavg to \"yes\">><</if>>Though there is no banquet you could provide large enough to sate your patron's many mouths, you offer humbly the steaming pot, flanked with incense to guard it from <span class=\"cycle\"><<cyclinglink \"vagrant gulls\" \"curious bats\" \"the myriad pests that swoop and shriek in the dark\" end>></span>.\n\nWith the same flint used to strike the cooking fire, you scratch a flourishing <span class=\"cycle2\"><<cyclinglink \"$mark\" \"symbol\" \"insignia\" \"ideogram\">></span> into the sand. That [[should last|meal2]] through the night.</div>\n<center><span class=\"smaller\">[img[images/d-incense.png]]</span></center>",
+      "links": [
+        {
+          "text": "should last",
+          "destination": {
+            "name": "meal2",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "meal2",
+      "text": "<div class=\"sacrificepassage\">Weary from fasting, you retire to <span class=\"cycle\"><<cyclinglink \"dreamless\" \"restless\" \"untroubled\">></span> sleep. In the morning, you find the incense smoldering and the food still unsullied. As if in acknowledgment, the tide has washed away the <<if $mark is \"symbol\">>symbol<</if>><<if $mark is \"insignia\">>insignia<</if>><<if $mark is \"ideogram\">>ideogram<</if>> you drew. \n\nYou recover the meal, untouched and preserved by the billowing smoke and carefully drawn mark, to be shared among the temple-urchins. You <span class=\"cycle\"><<cyclinglink \"endure\" \"are content\">></span> with a smaller, more humble meal to [[break your fast]].</div>",
+      "links": [
+        {
+          "text": "break your fast",
+          "destination": {
+            "name": "break your fast",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "leech",
+      "text": "<div class=\"sacrificepassage\">Not everyone relishes the prospect of being leeched, but <span class=\"cycle2\"><<cyclinglink \"this is for a higher purpose\" \"you find something about it exhilarating\" \"you do not mind\" \"you have conquered your fear\">></span>. \n\nYou can only hope that your blood might run as deep and bright as the ancient red seasons once did.</div>\n<center><div class=\"bydesign\"><i>[[This is by design.|leeches]]</i></div>\n<span class=\"cancel\"><small><small>[[This will not do.|make a sacrifice]]</small></small></span></center>",
+      "links": [
+        {
+          "text": "This is by design.",
+          "destination": {
+            "name": "leeches",
+            "pid": 31
+          }
+        },
+        {
+          "text": "This will not do.",
+          "destination": {
+            "name": "make a sacrifice",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "offer your life",
+      "text": "<div class=\"sacrificepassage\"><<set $offer to \"yes\">>Oh, but you have made this pledge already.\n\nYou are the most senior priest of the temple, now that the rest have fallen. You, O priest, are the last pontiff of the Pursuer, the last bastion of experience in this cult fallen deep into such despairing obscurity.\n\nYou may have fallen out of practice and into self-doubt, but you have seen every ritual. You have learned every prayer. You are the sum of your predecessors, who knew all there is to know of your vaunted patron. \n\nAnd who will care for the young ones, if you cut short your life and spill your blood? Who will teach them? [[Who]] will tend the temple, if they have not learned how?</div>",
+      "links": [
+        {
+          "text": "Who",
+          "destination": {
+            "name": "Who",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "leeches2",
+      "text": "<div class=\"sacrificepassage\">The many leeches settling into your wrist and hand are still easily pried off, uninterested in the thick skin of your palm and unable to feed through the fabric of your cuff. You <<if $leechliker is \"darlings\">>coo to them adoringly as you <</if>>lay them gently in the ceramic vessel that will house them during the trek back to the temple. \n\nUpon your return, you retire quickly to your quarters, where you discard your cloak and roll up the sleeves of your tunic to bear your throat and arms. One by one, you adhere each leech to your flesh.\n\nYou lay many upon your hands, wrists, and neck, stroking them reassuringly as they curl against your skin and position their suckers. Agitated by your forwardness, they do not take at first, and so you lie back upon your pallet and wait until you feel the sting of their hunger. \n\nA few yet remain unfed, and these you lay upon your face: over your cheekbones, your forehead, your jaw. You are not <span class=\"cycle2\"><<cyclinglink \"brave\" \"foolish\">></span> enough to place them over your eyelids, but you have known priests who [[tried|leeches3]].</div>",
+      "links": [
+        {
+          "text": "tried",
+          "destination": {
+            "name": "leeches3",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "leeches3",
+      "text": "<div class=\"sacrificepassage\">You <span class=\"cycle2\"><<cyclinglink \"welcome their\" \"endure their\">></span> feast until you feel faint.\n\nWhen they are sated, you peel the leeches from your body, fat with blood and reluctant to part from you. Their bodies plop heavily into the water as you return them to the ceremonial ceramic. Once they have all settled within, you place the vessel upon the grand altar lined with candles, and you sprinkle the stone with dark, wet sand that crumbles in your palm. \n\nThe leeches slumber contentedly in their bowl for a day, until you venture out once more to bring them [[home|sacrificeend]].<<set $leeches to \"yes\">></div>\n<center><span class=\"smaller5\">[img[images/d-leech.png]]</span></center>",
+      "links": [
+        {
+          "text": "home",
+          "destination": {
+            "name": "sacrificeend",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "worldly likeness",
+      "text": "<div class=\"votivepassage\">No living soul can prove they've seen the Suzerain of Serpents walk among those below, but the rumors passed down through obscure channels of history all sing with the same resonance.\n\nThere have been <span class=\"cycle2\"><<cyclinglink \"whispers in marginalia\" \"depictions scrawled on aging parchment\" \"crumbling statues hewn from ancient stone\">></span> professing to capture the form said to contain such a creature: a being neither short nor tall, neither thin nor fat, neither woman nor man. \n\nDark of skin and bright of eyes, their gaze is said to rival torchlight in warmth and brilliance. Their silhouette is always crowned with an abundance of hair thick and black as pitch, coiled in curls sprung outward from their head like a mighty corona.\n\nSo mortal, so fragile, so [[unlike|create a votive offering]] their appearance Above.</div>\n\n<center><span class=\"smaller2\">[img[images/d-silhouette.png]]</span></center>",
+      "links": [
+        {
+          "text": "unlike",
+          "destination": {
+            "name": "create a votive offering",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "crimson obscurity",
+      "text": "<div class=\"towerpassage\">Worshipping them has become <span class=\"cycle\"><<cyclinglink \"thankless\" \"toilsome\" \"lonely\" end>></span> as their memory has faded and their holy sites have fallen into disrepair. But you worship still, alone if you must &mdash; for it is your only comfort in the world, and you have known enough of their kindness in the past.\n\nYou begin each day seeking the familiarity of routine. You wake at daybreak, still listening for any sign of them, and shrug into your tabard and cloak. As you have done each day for many years, you light the candles, snuff the incense, and pluck away gossamer cobwebs from the lintels.</div>\n<center>[img[images/devo ui1.png]]<div class=\"prayerbg\">Many other duties await you, but you first think to check on the <span class=\"choice\"><<cyclinglink \"$routine\" \"relic\" \"young acolytes\" \"shoreline\">></span>.</div>\n\n<center><div class=\"godwilling\"><i><<click \"God willing\">><<audio \"bell4\" play>><<run state.display($routine)>><</click>></i></div></center>\n<center><span class=\"smaller\">[img[images/d-candle.png]]</span></center>",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "relic",
+            "pid": 77
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "young acolytes",
+            "pid": 78
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "shoreline",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "passed",
+      "text": "<div class=\"towerpassage\">Once, your beloved patron was among the more curious deities, prone to skimming just beyond the Oversea's surface and watching the lower register closely. Ancient records across the seas exist as a testament to their form, each one a sighting of the same astounding creature: <span class=\"cycle\"><<cyclinglink \"massive\" \"massive, limbless\" \"massive, limbless, with innumerable heads and eyes\" end>></span>.\n\nBut it has been so long. The Suzerain Anjur-Bas is said to have retreated to the highest registers of the sea above, perhaps to <span class=\"cycle2\"><<cyclinglink \"dwell among their holy kin\" \"hibernate\" \"tend to some divine duty\">></span>.\n\nOr [[perhaps]] they have grown tired of Basin antics, deaf now to the petty cries of those below.</div>",
+      "links": [
+        {
+          "text": "perhaps",
+          "destination": {
+            "name": "perhaps",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "perhaps",
+      "text": "<div class=\"towerpassage\">You refuse to dwell on the notion that they may be <span class=\"cycle\"><<cyclinglink \"dead\" \"dying\" \"gone\" end>></span>. You dwell upon your own mortality, but even that does not scare you so much as the knowledge that even creatures so untouchable as the Suzerain <span class=\"cycle\"><<cyclinglink \"can\" \"will\" end>></span> wither and die and fall.</div>\n<center>[img[images/devo ui1.png]]\n<big><div class=\"prayerbg\">[[As above, so below.]]</div></big></center>",
+      "links": [
+        {
+          "text": "As above, so below.",
+          "destination": {
+            "name": "As above, so below.",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "predilections",
+      "text": "<div class=\"sacrificepassage\">To the Suzerain of Serpents, every adder and viper and cobra is beloved kin, valued above all else. Even <span class=\"cycle\"><<cyclinglink \"lampreys\" \"morays\" \"leeches\" end>></span> occupy the realm of serpent kith.\n\nMeat of any kind is palatable to them, the <span class=\"cycle\"><<cyclinglink \"fresher\" \"redder\" end>></span> the better &mdash; but fat and bone do not nourish them. Bone, in its colorless morbidity, is an affront to them; the bones of the great serpents are brittle and uniform, an endless procession of ribs and vertebrae. They prefer wood to other materials &mdash; organic and sturdy and impermanent as it is. Perhaps that fascinates them; perhaps they consider it <span class=\"cycle\"><<cyclinglink \"novel\" \"exotic\" \"alien\" end>></span>.\n\nThough they are by no means a bloodthirsty patron, blood is a valuable gift indeed. One might spill blood freely in their name &mdash; but leeches, held holy as they are, are a most <span class=\"cycle\"><<cyclinglink \"serviceable\" \"beloved\" end>></span> method of conveying such a precious offering.\n\nDecisions, [[decisions|make a sacrifice]], devout one.</div>",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "leeches",
+            "pid": 31
+          }
+        },
+        {
+          "text": "decisions",
+          "destination": {
+            "name": "make a sacrifice",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "jaw",
+      "text": "<div class=\"deadpassage\">Are you a <span class=\"cycle\"><<cyclinglink \"priest\" \"priest or a poacher\" end>></span>? \n\nWhat would the Suzerain of Serpents do with a dead familiar, other than [[mourn]]?</div>",
+      "links": [
+        {
+          "text": "mourn",
+          "destination": {
+            "name": "mourn",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "leeches",
+      "text": "<div class=\"sacrificepassage\">Finding leeches is a simple task in <span class=\"cycle\"><<cyclinglink \"this part\" \"the northern reaches\" end>></span> of the sea. There is one inlet at the island's south side &mdash; forbidden to the children, but no amount of forbidding or foreboding prevents them from venturing there from time to time&mdash; where the leeches seem to propagate tirelessly. \n\nYou need only to dip your hand into the dark water and draw it to and fro in a slow, balletic arc over the smooth rocks below. You feel their plump, slick bodies under your fingertips as you scoop them up, some of them lively and writhing against your flesh. When your hand breaks the surface again, it is covered in the little <span class=\"cycle2\"><<cyclinglink \"$leechliker\" \"beasts\" \"darlings\">></span>.\n\nYou might have used the ceramic vessel you carried with you to the cove, but you are so [[eager|leeches2]] to <span class=\"cycle2\"><<cyclinglink \"begin the ritual\" \"be done with the ritual\">> quickly</span>.</div>",
+      "links": [
+        {
+          "text": "eager",
+          "destination": {
+            "name": "leeches2",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "meal confirm",
+      "text": "<div class=\"sacrificepassage\">From the fortified pantry beneath the temple, you fetch a bevy of coveted spices and hearty ingredients. \n\nAt last, you have a use for the <span class=\"choice\"><<cyclinglink \"$food\" \"tentacle\" \"bones\" \"organ meat\">></span> of a creature that once lived in the warm western depths. In life, it resided far from your temple&mdash; you purchased this delicacy from a rare passing merchant unafraid to dock in the red season. With it, you serve <span class=\"cycle2\"><<cyclinglink \"a tangle of fragrant roots\" \"a bulbous clutch of mushrooms\" \"seven small, thick sea-slugs\">></span> that cook to a supple, agreeable consistency not unlike that of a boiled egg. \n\nYou simmer the ingredients in a small pot at a cliffside shrine. For a day and night, you [[fast|meal]]&mdash; though you must admit that the scent of the meal tempts you, saffron-rich and sweet in the salt air.</div>",
+      "links": [
+        {
+          "text": "fast",
+          "destination": {
+            "name": "meal",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "disturb",
+      "text": "<div class=\"sacrificepassage\">Your precautions are no use. You are not fated to <span class=\"cycle\"><<cyclinglink \"return to the altar\" \"survive\" end>></span>.\n\nThe creature is long and cunning, and it nearly evades you. Infuriated by its capture, it hisses and strikes again and again, enfeebling your grasp as you attempt to avoid its wrath.\n\nAs you struggle with the writhing body of the sea-snake, plucked up fresh from the cove, it twines its length around your arm and unhinges its [[jaw]].</div>",
+      "links": [
+        {
+          "text": "jaw",
+          "destination": {
+            "name": "jaw",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "pray",
+      "text": "<div class=\"prayerpassage\">You do not know if they will hear you, but you prayed this way for many years in your youth: suspending your words on the air or in the water, imagining that they would carry.\n\nCrack open your mandible and [[pray|pray2]].</div>",
+      "links": [
+        {
+          "text": "pray",
+          "destination": {
+            "name": "pray2",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "pray2",
+      "text": "<div class=\"prayerpassage\">Envision them, your many-eyed holy authority: they drift like a distant star where your feeble form cannot follow &mdash; but when the waters were clear, one could glimpse them moving with purpose in the crushing currents above, lingering close to the boundary.\n\nThey have lived since time immemorial, and go by <span class=\"cycle\"><<cyclinglink \"Anjur-Bas\" \"the Pursuer\" \"the Suzerain of Serpents\" \"the One-Who-Shifts\" \"the Ophidian Knot\" \"many names\" end>></span>.\n\n<i>Anjur-Bas:</i> their true name, the most intimate form of address. <i>The Pursuer</i> and the <i>One-Who-Shifts,</i> the most common epithets by which they are worshipped: as one who seeks out the lost, or as a wandering guide. <i>The Ophidian Knot:</i> an extravagant intimation of their form. <i>Suzerain:</i> their holy title, and their most basic purpose: god to all that slithers.\n\nA being of many names, and many [[favors]].</div>",
+      "links": [
+        {
+          "text": "favors",
+          "destination": {
+            "name": "favors",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "pray3",
+      "text": "<center><div class=\"prayerbg\">You intend to lead prayer <span class=\"choice\"><<cyclinglink \"$prayer\" \"alone\" \"for the temple\">></span>.</div>\n[img[images/devo ui1.png]]<div class=\"prayerbg\"><i>O <span class=\"choice\"><<cyclinglink \"$address\" \"Anjur-Bas\" \"silent god\" \"Pursuer\" \"Suzerain of Serpents\" \"neglectful snake\" \"One-Who-Shifts\" \"Ophidian Knot\">></span>, <span class=\"choice\"><<cyclinglink \"$act\" \"hear\" \"honor\" \"heed\">></span> this orison. Your humble servant calls to you.\n\nWill you <span class=\"choice\"><<cyclinglink \"$request\" \"bring back those I have lost\" \"grant me but one more scrap of thy holy skin\" \"tell me whether you yet live\" \"wish well the departed\" \"lead the abandoned to these safe shores\" \"return to us one day\">></span>?</i></div>[img[images/devo ui1.png]]</center>\n<center><div class=\"godwilling\"><i><<click \"God willing.\">><<audio \"bell4\" play>><<run state.display($prayer)>><</click>></i></div>\n<span class=\"cancel\"><small><small>[[Reflect upon prayer once more.|pray2]]</small></small></span></center>",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "alone",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "for the temple",
+            "pid": 46
+          }
+        },
+        {
+          "text": "Reflect upon prayer once more.",
+          "destination": {
+            "name": "pray2",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "apse",
+      "text": "<div class=\"towerpassage\">There it slumbers still, lifeless but beautiful. \n\nYou find yourself entranced by it even now. It is the temple\u2019s greatest treasure, a priceless prize more precious than any glittering jewel or golden coin. You would like to display it more openly, but you must keep it away from the sticky, ungentle hands of the young ones until they can be trusted. \n\nAnything forbidden, of course, interests them, so you must lock it away. It is unkind to disturb a dead thing, you remind them &mdash; but every so often, you allow them to look upon it, and you delight in knowing that they [[revere]] the skin even half as much as you do.</div>\n",
+      "links": [
+        {
+          "text": "revere",
+          "destination": {
+            "name": "revere",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "the sea",
+      "text": "<div class=\"towerpassage\">That is the natural way of things: the seas, one and all, reclaim their dues. \n\nSuch losses are always great, and in their wake, you have been crushed beneath the weight of <span class=\"cycle2\"><<cyclinglink \"loneliness\" \"hopelessness\">></span>. Dreading so heavy a burden, you hope you will not have to administer last rites again so soon.\n\nBut the seas can be kind, as well &mdash; they have carried holy relics to the temple, and they brought your children to you. Kindness from cruelty, life from death.\n\nFor now, all is well. You had best go inside.</div>\n<center>[img[images/devo ui1.png]]<div class=\"prayerbg\"><<if ($shore is \"yes\") and ($kids is not \"yes\") and ($relic is not \"yes\")>>You will <span class=\"choice\"><<cyclinglink \"$next\" \"view the relic\" \"look in on the young acolytes\" \"cease your daily tasks early\">></span>.<</if>><<if ($shore is \"yes\") and ($kids is \"yes\") and ($relic is not \"yes\")>>You will <span class=\"choice\"><<cyclinglink \"$next\" \"view the relic\" \"cease your daily tasks early\">></span>.<</if>><<if ($shore is \"yes\") and ($kids is \"yes\") and ($relic is \"yes\")>><<set $tasks to \"yes\">>You have [[finished your daily tasks]].<</if>><<if ($shore is \"yes\") and ($kids is not \"yes\") and ($relic is \"yes\")>>You will <span class=\"choice\"><<cyclinglink \"$next\" \"look in on the young acolytes\" \"cease your daily tasks early\">></span>.<</if>></div>\n\n<<if $tasks is not \"yes\">><center><div class=\"godwilling\"><i><<click \"proceed\">><<audio \"bell4\" play>><<run state.display($next)>><</click>></i></div></center><</if>>",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "view the relic",
+            "pid": 82
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "look in on the young acolytes",
+            "pid": 83
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "cease your daily tasks early",
+            "pid": 85
+          }
+        },
+        {
+          "text": "finished your daily tasks",
+          "destination": {
+            "name": "finished your daily tasks",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "not",
+      "text": "<div class=\"towerpassage\">Sea-urchins all, in a sense. Some of them have come from afar, unfamiliar creatures with more limbs and eyes than you know what to do with&mdash; but you feed and clothe them all the same, and they help you keep the temple.\n\nStill, they are but children. While they can be trusted to light the incense and caper about at low tide searching for omens and sea-herbs and afternoon morsels, more time must pass before they may enter the cloisters where the holiest relics slumber.\n\nYou are the only priest who remains, but you guide them as well as you are able to alone. You have seen death, and these new lives are stranger and more complex to [[manage]] than the last rites of the many lifeless bodies you once looked to as <span class=\"cycle\"><<cyclinglink \"guides\" \"friends\" \"family\" end>></span>.</div>",
+      "links": [
+        {
+          "text": "manage",
+          "destination": {
+            "name": "manage",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "finished your daily tasks",
+      "text": "<div class=\"towerpassage\">It is time at last to see to another duty, one more grand than lighting candles and snuffing out incense and plucking away cobwebs. This will command all your attention and skill. This will require only the most favorable auspices&mdash; and so it must happen now, in the next few days. Your almanac does not lie.\n\nIt is true that life has been difficult of late, but you have been free for some time of any terrible upheaval. Your difficulties spawn instead from the slow creep of entropy. Poverty, obscurity, grief &mdash; these burdens you bear as you must, striving toward the thin glimmer of hope high above where another sea roils overhead. \n\nYou hope for better omens to come &mdash; brighter days and [[scarlet]] water.</div>\n\n",
+      "links": [
+        {
+          "text": "scarlet",
+          "destination": {
+            "name": "scarlet",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "scarlet",
+      "text": "<div class=\"towerpassage\">The water is known to run red in this part of the sea. It has always done so, cleansing itself in cycles of bloom and decay. To you, this is <span class=\"cycle\"><<cyclinglink \"familiar\" \"necessary\" \"comforting\" end>></span>; to others, the red season in full scarlet vigor reeks of rot, and the water seems as blood. \n\nYou know better. \n\nThe elders told you that in the days Anjur-Bas was said to dwell between the Basin and the Oversea, the red season was redder &mdash; but those days have long since [[passed]].</div>",
+      "links": [
+        {
+          "text": "passed",
+          "destination": {
+            "name": "passed",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "As above, so below.",
+      "text": "<center>[img[images/devo ui1.png]]</center><<set $badvotive to \"no\">><<set $badprayer to \"no\">><<set $goodvotive to \"no\">><<set $lovevotive to \"no\">><<set $goodprayer to \"no\">><<set $loveprayer to \"no\">><<set $leeches to \"no\">><<set $mealbest to \"no\">><<set $mealavg to \"no\">><<set $pray to \"no\">><div class=\"towerpassage\">You have worried and fretted, but you refuse to mourn, even as your fear lurches in your chest like a frightened minnow taken by some relentless current. \n\nToday, you will call out to them<<if $playedonce is \"yes\">> again<</if>>.</div>\n<center>[img[images/devo ui1.png]]<div class=\"prayerbg\">You will bare your soul to the sea above and \n<span class=\"choice\"><<cyclinglink \"$choice\" \"create a votive offering\" \"make a sacrifice\" \"compose a prayer\">></span>.</div></center>\n<center><div class=\"godwilling\"><i><<click \"God willing\">><<audio \"bell4\" play>><<run state.display($choice)>><</click>></i></div></center>\n<center><span class=\"smaller\">[img[images/d-candle.png]]</span></center>",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "create a votive offering",
+            "pid": 3
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "make a sacrifice",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "compose a prayer",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "revere",
+      "text": "<div class=\"towerpassage\">Years ago, the shed skin had filled a grave not long after the sea had emptied it. You found it floating in the interment trench, pale where it nestled among the rocks: a favor from the Ophidian Knot, dead flesh exchanged for dead flesh.\n\nSo massive, and so exquisite &mdash; it could be from no other being. The detritus of those above always falls below eventually, and you in the <span class=\"cycle\"><<cyclinglink \"lower register\" \"Basin\" end>></span> are sometimes lucky enough to come by such treasures before they disappear.\n\nSatisfied that the relic is safe, you force yourself not to linger in its presence for longer than you ought to.</div>\n<center>[img[images/devo ui1.png]]<div class=\"prayerbg\"><<if ($relic is \"yes\") and ($shore is not \"yes\") and ($kids is not \"yes\")>>You will <span class=\"choice\"><<cyclinglink \"$next\" \"look in on the young acolytes\" \"monitor the shoreline\" \"cease your daily tasks early\">></span>.<</if>><<if ($relic is \"yes\") and ($shore is \"yes\") and ($kids is not \"yes\")>>You will <span class=\"choice\"><<cyclinglink \"$next\" \"look in on the young acolytes\" \"cease your daily tasks early\">></span>.<</if>><<if ($relic is \"yes\") and ($shore is \"yes\") and ($kids is \"yes\")>><<set $tasks to \"yes\">>You have [[finished your daily tasks]].<</if>><<if ($relic is \"yes\") and ($shore is not \"yes\") and ($kids is \"yes\")>>You will <span class=\"choice\"><<cyclinglink \"$next\" \"monitor the shoreline\" \"cease your daily tasks early\">></span>.<</if>></div>\n\n<<if $tasks is not \"yes\">><center><div class=\"godwilling\"><i><<click \"proceed\">><<audio \"bell4\" play>><<run state.display($next)>><</click>></i></div></center><</if>>",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "Basin",
+            "pid": 73
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "look in on the young acolytes",
+            "pid": 83
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "monitor the shoreline",
+            "pid": 84
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "cease your daily tasks early",
+            "pid": 85
+          }
+        },
+        {
+          "text": "finished your daily tasks",
+          "destination": {
+            "name": "finished your daily tasks",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "snake",
+      "text": "<div class=\"sacrificepassage\"><<audio \"chant\" fadeout>><<audio \"heartbeat\" fadein loop>>You would scold any of the young ones if they embarked on an errand so dangerous as this. There is yet so much to advise your growing acolytes in &mdash; but they do not know this place as you do.\n\nHark! Walk not along the spongy moss that surfaces in the water north of the temple, lest it <span class=\"cycle\"><<cyclinglink \"yawn beneath you\" \"yawn beneath you and you tumble into a gaping maw\" end>></span>. \n\nMind the winding pier where ships do not oft dock, and <span class=\"cycle\"><<cyclinglink \"never race to meet them\" \"never race to meet them; one cannot know if they have come with kindness or cruelty in mind\" end>></span>. \n\nBeware the crumbling stones near the grand altar, lest you tumble <span class=\"cycle\"><<cyclinglink \"there, too\" \"there, too \u2014 down, down onto the rocks where too many lives have been lost\" \"there, too \u2014 down, down onto the rocks where blood of many colors is washed away by the rust of the sea\" end>></span>.\n\nThe world is full of traps and trials, even in your [[sanctuary]].</div>",
+      "links": [
+        {
+          "text": "sanctuary",
+          "destination": {
+            "name": "sanctuary",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "alone",
+      "text": "<div class=\"prayerpassage\">You are reluctant to share <span class=\"cycle\"><<cyclinglink \"this\" \"your heart\" end>></span> with the entire temple&mdash; to put your words into their mouths. Instead, you venture out alone in the dark of night to sink your prayers in the sea below, that they might rise into the next register to reach <<if $address is \"Pursuer\">>the<</if>><<if $address is \"Suzerain of Serpents\">>the<</if>><<if $address is \"One-Who-Shifts\">>the<</if>><<if $address is \"Ophidian Knot\">>the<</if>><<if $address is \"silent god\">>the<</if>><<if $address is \"neglectful snake\">>the<</if>> $address.\n\nThe waters are calm as you wade into them. The hem of your tabard floats at your waist, and you smooth your hands over it until they disappear beneath the rippling waves. The chill of the water does not trouble you. You lower yourself with every word you speak, until the water reaches your chest and you stand at a precipice on the shale and sand.\n\nWhen the final words of your prayer are spoken, you [[submerge yourself]] completely.</div>",
+      "links": [
+        {
+          "text": "submerge yourself",
+          "destination": {
+            "name": "submerge yourself",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "for the temple",
+      "text": "<div class=\"prayerpassage\">With every voice in the temple raised in veneration, you will lift your own and direct your prayer to the sea above.\n\nIt takes time to coach the young ones in <span class=\"cycle\"><<cyclinglink \"when\" \"why\" \"how\" end>></span> precisely to pray. You implore them not to take the matter lightly, and not to distract one another. They must understand the respect <<if $address is \"Pursuer\">>the<</if>><<if $address is \"Suzerain of Serpents\">>the<</if>><<if $address is \"One-Who-Shifts\">>the<</if>><<if $address is \"Ophidian Knot\">>the<</if>><<if $address is \"silent god\">>the<</if>><<if $address is \"neglectful snake\">>the<</if>> $address merits<<if ($address is \"neglectful snake\")>>, even if you have forsaken a measure of it<</if>>.\n\nIt has been too long indeed since last you attempted to [[speak]] to them.</div>",
+      "links": [
+        {
+          "text": "speak",
+          "destination": {
+            "name": "speak",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "votiveend",
+      "text": "<center>[img[images/devo ui1.png]]</center><div class=\"towerpassage\"><<if $badvotive is \"yes\">>Yet how gauche, to sculpt the image of such a being as you please. Their form does not exist to be pleasing to your tastes, appealing to your proclivities. Your craft may be well-honed, but you have forgotten its purpose.<</if>><<if $lovevotive is \"yes\">>You know the Suzerain's tastes, and you honor them. So too do you honor the truth of their genderless being and the great beauty of it. You are not so bold as to dream of meeting them in the Basin one day, but you would recognize them instantly if ever you did.<</if>><<if $goodvotive is \"yes\">>You are pleased to have made anything on behalf of your patron above. It is a lovely way to show your devotion, and it brings you peace to craft such things according to their tastes. Your hand was made to grasp a chisel, to hold a paintbrush, to sculpt and whittle and create.<</if>>\n\nThere is something [[comforting|end]] about a thing so physical as a votive object &mdash; something to touch, to hold.</div>",
+      "links": [
+        {
+          "text": "comforting",
+          "destination": {
+            "name": "end",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "sacrificeend",
+      "text": "<center>[img[images/devo ui1.png]]</center><div class=\"towerpassage\"><<if $leeches is \"yes\">>Your blood can still make for an exquisite sacrifice without depriving the temple of your good works. Though you are sore from the leeches' hunger, you are as satisfied as they are. \n\nThe leeches fattened, you return them fondly to where they <span class=\"cycle\"><<cyclinglink \"live\" \"breed\" \"belong\" end>></span> and wish them well. It would be unkind to detain them in the temple, even if you will surely call upon them again.<</if>><<if $mealavg is \"yes\">>It is satisfying to find such worthy use for the few luxuries the temple can afford, though you regret that your most extravagant ingredient was little more than marrow. Food can be scarce on an island so remote, and a hearty meal is a grand occasion. Nevertheless, you prepared it with <<if ($emotion is \"care\")>>care<</if>><<if ($emotion is \"love\")>>love<</if>>.\n\nThe meal did not go to waste. It is a task to preserve such tempting offerings from wildlife and thievery, but in the end they must be eaten nevertheless. You are as happy to labor for your <span class=\"cycle\"><<cyclinglink \"acolytes\" \"foundlings\" \"children\" end>></span> as you are to labor for the being you serve. <<if ($food is \"bones\")>>Many of them have teeth fit to saw through bone and an appetite to match; they have made quick work of an ingredient the Pursuer might have set aside.<</if>><</if>><<if $mealbest is \"yes\">>It is satisfying to find such worthy use for the few luxuries the temple can afford. Food can be scarce on an island so remote, and a hearty meal is a grand occasion. You prepared it with <<if ($emotion is \"care\")>>care<</if>><<if ($emotion is \"love\")>>love<</if>>, minding the consistencies and portions of each ingredient, selecting only the most choice cuts.\n\nIt is a task to preserve such tempting offerings from wildlife and thievery, but in the end they must be eaten nevertheless. The meal did not go to waste, though the young ones never waste a morsel; what some will not &mdash; or cannot &mdash; eat, the others delight in. You are as happy to labor for your <span class=\"cycle\"><<cyclinglink \"acolytes\" \"charges\" \"children\" end>></span> as you are to labor for the being you serve.<</if>>\n\nSacrifice need not always be a matter of mortal peril. Time, labor, resources &mdash; these can be [[given|end]] as well.</div>\n<center><span class=\"smaller\">[img[images/d-incense.png]]</span></center>",
+      "links": [
+        {
+          "text": "given",
+          "destination": {
+            "name": "end",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "prayerend",
+      "text": "<center>[img[images/devo ui1.png]]</center><div class=\"towerpassage\">Now that the prayer has passed your lips, you begin to reflect.\n\n<<if ($address is \"silent god\")>>There is bitterness here, tainting the beauty you have tried to lend your words: a lurking accusation of negligence in the shadow of entitlement. Do you expect them to feel guilt?<<set $badprayer to \"yes\">><</if>><<if ($address is \"neglectful snake\")>>There is bitterness here, tainting the beauty you have tried to lend your words. An accusation of negligence, a sense of entitlement. You call them \"snake\" as if they should take offense.<<set $badprayer to \"yes\">><</if>><<if ($address is \"Anjur-Bas\")>>None have known to call them by that name in years. There is an intimacy in that.<</if>><<if ($address is \"Pursuer\") or ($address is \"One-Who-Shifts\") or ($address is \"Ophidian Knot\") or ($address is \"Suzerain of Serpents\")>>It is a task to choose one of their many names, but you have picked one which appeals to you, and you address them with respect. The salutation of any missive is so very important, after all.<</if>><<if ($address is \"Anjur-Bas\") and ($request is \"return to us one day\")>> You speak their true name with tenderness unmatched. Perhaps you worry for them. What love you must feel.<<set $loveprayer to \"yes\">><</if>>\n\n<<if ($act is \"honor\")>>Tread lightly, dear priest. Those above are not always honor-bound. Take care in assuming that they will &mdash; or can &mdash; do more than hear your prayer. <</if>><<if ($act is \"heed\")>>Take care in assuming that they will &mdash; or can &mdash; do more than hear your prayer. <</if>><<if ($request is \"grant me but one more scrap of thy holy skin\")>>You take too much liberty, demanding work that the Pursuer will not perform. Yours is not a wrathful god, or agreeable dog made to fetch as you please. You know this, but you seem to have forgotten something vital:\n\nOne does not demand such sacrifice from a being on high. <<set $badprayer to \"yes\">><</if>><<if ($address is \"Anjur-Bas\") and ($request is \"grant me but one more scrap of thy holy skin\")>>How vulgar, how brazen, to address them by their true name only to ask for such a thing.<<set $badprayer to \"yes\">><</if>><<if ($request is \"bring back those I have lost\")>> The Pursuer cannot resurrect the dead, however devoted you are and however much you miss the departed.<</if>><<if ($request is \"tell me whether you yet live\")>> They have become so reclusive, their presence waning evermore. You fear insulting them in anticipating their death, but the fear of their death is more consuming. Perhaps it is uncouth to request a sign of life, but you do not know what else to do.<</if>><<if ($request is \"wish well the departed\")>> Your prayer is within their power, and you hope that their favor will touch those who make the journey away from this life.<</if>><<if ($request is \"lead the abandoned to these safe shores\")>> Your prayer is within their power, but their power is not a guarantee and your prayer will not expedite it.<br><br> In time, you will see if your prayer has been heard: you will hear a rustling in the surf, or hear the cry of a babe in the cove, and your heart will bleed sweetly once more for your new charge.<</if>><<if ($request is \"return to us one day\")>> It would be bold, to plead with them to return, assuming they ever left &mdash; but you did not mean it unkindly, and you did not intend it as a plea. It is a question &mdash; only a question. Will they return?<</if>><<if $badprayer is \"yes\">><br><br> You lie awake thinking of the ways you misspoke; in your restlessness, you imagine the hissing of serpents tasting the residue of your words as if they were a foul aura wafting around you.<</if>><<if $loveprayer is \"yes\">><br><br>You speak without making demands and your love is untainted by the poison of bitterness. If it is not their fate to return, you are prepared to accept that. You embrace their will, and wish them well.<</if>><<if ($badprayer is not \"yes\")>><br><br>Though it was daunting to pray aloud again, you are satisfied with your efforts. You cannot allow the semantics to trouble you overmuch; you will simply continue to pray.<</if>>\n\nWhat a <span class=\"cycle2\"><<cyclinglink \"complex\" \"terrifying\" \"wondrous\">></span> thing, to [[invoke|end]] such a being so intimately.</div>\n",
+      "links": [
+        {
+          "text": "invoke",
+          "destination": {
+            "name": "end",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "a ripple overhead",
+      "text": "<center>[img[images/devo ui1.png]]</center><div class=\"towerpassage\">The bottom of another sea &mdash; <i>theirs</i> &mdash; is trembling, the barrier skimmed by some dangling appendage like wistful fingers dragged through the surf.\n\nSomething <<if ($badvotive is \"yes\") or ($badprayer is \"yes\")>>is retreating<</if>><<if ($loveprayer is \"yes\") or ($bestvotive is \"yes\") or ($mealbest is \"yes\")>>has shifted<</if>><<if ($badprayer is not \"yes\") and ($loveprayer is not \"yes\") and ($pray is \"yes\")>>is lingering<</if>><<if ($goodvotive is \"yes\") or ($leeches is \"yes\") or ($mealavg is \"yes\")>>is lingering<</if>> high above in the mirrored sea.\n\nIt's almost as if <span class=\"cycle\"><<cyclinglink \"something\" \"someone\" end>></span> <<if ($badvotive is \"yes\") or ($badprayer is \"yes\") or ($goodvotive is \"yes\") or ($leeches is \"yes\") or ($mealavg is \"yes\")>>is waiting<</if>><<if ($badprayer is not \"yes\") and ($loveprayer is not \"yes\") and ($pray is \"yes\")>>is waiting<</if>><<if ($loveprayer is \"yes\") or ($bestvotive is \"yes\") or ($mealbest is \"yes\")>>is about<</if>> to break through.</div><center><span class=\"smaller\">[img[images/d-candle.png]]</span><span class=\"smaller\">[img[images/d-incense.png]]</span><span class=\"smaller\">[img[images/d-candle.png]]</span></center><center><div class=\"godwilling\"><small><<click \"Reread\">><<script>>state.restart();<</script>><</click>></small></div><div class=\"godwilling\"><small><<click [[new offering]]>><<audio \"bell\" play>><</click>></small></div>\n<div class=\"endinfo\"><small><small><i>Replay <b>from the beginning</b> without skipping the introduction.</i></small></small></div><div class=\"endinfo\"><small><small><i>Make another attempt <b>immediately,</b> skipping the introduction.</i></small></small></div></center>",
+      "links": [
+        {
+          "text": "new offering",
+          "destination": {
+            "name": "new offering",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "submerge yourself",
+      "text": "<div class=\"prayerpassage\">The dark water closes over your head, and you hold your breath until <span class=\"cycle\"><<cyclinglink \"your lungs prickle\" \"your mind feels airy\" \"panic takes root in your chest\" end>></span>.\n\nYou burst above the surface again at last, inhaling sharply through your nose. The night air has a crispness to it, and a faint metallic tang.\n\nYou look overhead, but you do not see the barrier between seas; it stretches <span class=\"cycle2\"><<cyclinglink \"forever\" \"forever?\">></span> above you, obscured by fog. You cannot imagine what it is to [[dwell above|prayerend]], when you are not even made to survive the waters below.</div>\n<center><span class=\"smaller\">[img[images/d-incense.png]]</span></center>",
+      "links": [
+        {
+          "text": "dwell above",
+          "destination": {
+            "name": "prayerend",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "speak",
+      "text": "<div class=\"prayerpassage\">The acolytes' voices, sounding together in practiced harmony, ring so authentic. Your own voice underscores them, a guiding drone beneath their purer tones.\n\nYou pray in the <span class=\"cycle2\"><<cyclinglink \"impluvium\" \"drainage courtyard\" \"ruins\">></span> of the temple. This corridor was not a courtyard until the roof fell in, but you have made do with it this way for many years, for you cannot hope to fix it.\n\nThe stone walls are lined with vines and moss, but what remains of the domed roof amplifies your voices. You know these words by heart, though you have only just composed them. It bolsters you to hear them writ so large &mdash; more than a timid echo, they have become a [[dynamic refrain|prayerend]].</div>\n<center><span class=\"smaller\">[img[images/d-candle.png]]</span></center>",
+      "links": [
+        {
+          "text": "dynamic refrain",
+          "destination": {
+            "name": "prayerend",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "favors",
+      "text": "<div class=\"prayerpassage\">They are not a wish-granter or a vengeance-seeker. They are not a beast of burden, or a tamed creature performing on command. It is <span class=\"cycle2\"><<cyclinglink \"vulgar\" \"ugly\" \"insolent\">></span> to presume to control their actions, or to presume that they owe any recompense for your devotion.\n\nIt is <span class=\"cycle2\"><<cyclinglink \"uncouth\" \"belligerent\" \"foolish\">></span> to demand that they kill or maim or punish on your behalf; that is not their way. It is <span class=\"cycle2\"><<cyclinglink \"disrespectful\" \"sycophantic\" \"childish\">></span> to assume that they can fetch wealth or fame from thin air, when their ultimate virtue is closure. Their deeds [[do not]] take the form of jewels raining from the sea above, or acts of retribution or reward.</div>",
+      "links": [
+        {
+          "text": "do not",
+          "destination": {
+            "name": "do not",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "do not",
+      "text": "<div class=\"prayerpassage\">Their <span class=\"cycle\"><<cyclinglink \"miracles\" \"kindnesses\" \"mercies\" end>></span> come as whispers and murmurs through the heart: <span class=\"cycle2\"><<cyclinglink \"the wellness of a loved one living abroad\" \"the reappearance of a long-lost item\" \"the clarity of efforts redirected and opportunity realized\" \"the long-awaited peace on the heels of despair when one has been in mourning\">></span>.\n\nThough there is venom in them, and their appearance has oft disturbed the faint of heart, their capacity for tenderness is more vast than their capacity for hatred. Though their wrath is to be feared, their favor falls on the merciful.\n\nThey are the ruler of <span class=\"cycle2\"><<cyclinglink \"memory\" \"calm waters\" \"first and last meetings\">></span>. They are the well-traveled shimmer high overhead that directs a lost vessel away from an iceberg. They are the agent of rational change, of opportunity. They are a constellation, many as one. \n\nSo [[pray|pray3]] on, priest, but remain humble.</div>",
+      "links": [
+        {
+          "text": "pray",
+          "destination": {
+            "name": "pray3",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "guidance",
+      "text": "<center><div class=\"credits3\">GUIDANCE</div>\n[img[images/devo ui1.png]]</center><div class=\"towerpassage\"><div class=\"credits4\"><small>&bull; Take heed, dear priest: when you, in the course of your good works, reach a vital choice which <b>cannot be reversed</b>, you shall visualize it in your mind <span class=\"choice\"><b><a>like so</a></b></span>. \n\n&bull; A choice which will <b>advance the narrative</b> appears </small><b><a>unadorned</a></b><small>. \n\n&bull; A <b>concept in flux</b> will appear </small><span class=\"cycle\"><b><a>like so</a></b></span><small>, and can be clicked repeatedly until a new meaning is revealed.\n\n&bull; An <b>ambiguous concept</b> will look </small><span class=\"cycle2\"><a>like so</a></span><small>, and can be adjusted endlessly according to your whims.\n\n&bull; Are you unsatisfied with the results of your ritual? Would you like to attempt it again, or choose another? You may <b>make a new offering</b>, provided you finish the first. It may prove <b>useful</b> to contemplate the results of <b>more than one ritual</b>, as you might learn more about one through completing another.</small></div>\n<center><div class=\"credits2\">Of course, none of the results may satisfy you. \nOne cannot conquer a religion such as this.</div></center></div>\n<center><div class=\"godwilling\"><<click [[return|start]]>></center><<audio \"bell2\" play>><</click>></div></center>",
+      "links": [
+        {
+          "text": "return",
+          "destination": {
+            "name": "start",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "certainties",
+      "text": "<div class=\"towerpassage\">You wonder, sometimes, if you labor in vain. You have devoted so much of your life to this temple, a monument to a being you may never truly understand.\n\n<<if $lovevotive is \"yes\">>Yet you cannot help but feel that you have reached them, so high above. There are things you do understand, and perhaps they've made note of it. Your heart is light at the thought that you might have drawn their gaze and touched, if only for a moment, the heat of their arcane energy.<</if>><<if $goodvotive is \"yes\">>Yet you will continue as you did before, aspiring to great virtue and committing no great sins. You will have to learn to be satisfied with silence.<</if>><<if $badvotive is \"yes\">>Yet you cannot help but feel that you have reached them, though not as you might have hoped to. Even a flash of discomfiture is something. Even rejection stings less than silence.<</if>><<if $loveprayer is \"yes\">>You would give anything to hear their voice, if they even speak, but you know that prayer is not a dialogue. A prayer comforts you more than anything. You could scream their name until you lost your breath, and they would not hear it. They are too far away. That will not stop you &mdash; and if by some quirk of fortune they do hear you, you shall see to it that your every prayer will be as poetry.<</if>><<if $badprayer is \"yes\">>You could scream all you pleased and they would not hear it; they are too far away. You could scream your throat bloody, and they would drift on above, deaf to it. The idea of it is strangely attractive &mdash; the only thing you ought to worry about is the children hearing you.<</if>><<if ($badprayer is \"yes\") and ($prayer is \"for the temple\")>> It is cowardly to force your unclean words into the mouths of those too young to understand them. Your next prayers, if they are as bitter as the last, ought to be made alone.<</if>><<if ($badprayer is not \"yes\") and ($loveprayer is not \"yes\") and ($pray is \"yes\")>>Prayer, in truth, is not meant for the deified. They cannot turn their attention to every prayer, even if you are the only creature left praying. The comfort of prayer soothes you alone &mdash; but if they ever do hear it, you intend to pray often and well.<</if>><<if $leeches is \"yes\">>You know that you will bleed again for them. You would drain all your blood if it made a difference, but you think again of all you would leave behind. The difference such an act would make is not the difference you desire.<</if>><<if $mealavg is \"yes\">>You know they cannot begrudge you the poverty of the temple. There are so many mouths to feed, and in such poverty, you can only cater so much to the thousands writhing above. Some of the children thrive on marrow and rot; it is all they hunger for. So long as the offering is not wasted, you are content, and so too is your patron.<</if>><<if $mealbest is \"yes\">>You have not been able to conceal the temple's poverty from its charges, but you take such pleasure in delighting them with a real meal. Fasting does not trouble you overmuch, if it's for their sake. So long as the offering is not wasted, you are happy.<</if>>\n\n<<if ($mealbest is \"yes\") or ($leeches is \"yes\") or ($loveprayer is \"yes\") or ($lovevotive is \"yes\") or ($goodvotive is \"yes\") or ($mealavg is \"yes\")>>You try, still, to understand your god. You are yet young&mdash; though the children think you ancient&mdash; and the life ahead of you may yet stretch parallel for a while with the boundless lengths of your devotion.<</if>><<if ($loveprayer is not \"yes\") and ($badprayer is not \"yes\") and ($pray is \"yes\")>>You try, still, to understand your god. You are yet young &mdash; though the children think you ancient &mdash; and the life ahead of you may yet stretch parallel for a while with the boundless lengths of your devotion.<</if>><<if ($badprayer is \"yes\") or ($badvotive is \"yes\")>>Your quiet patron hasn't the desire to punish an act so insignificant, so fleeting. You could do worse to disturb them if you wished to, but you do not wish to. Ignorance and pettiness do not suit you &mdash; and you would not want the children to learn such things. You will conceal your sorrow from them, as you must.<</if>>\n\n<<if ($badprayer is \"yes\") or ($badvotive is \"yes\")>>You wonder if it [[matters]] at all.<</if>><<if ($goodvotive is \"yes\") or ($leeches is \"yes\") or ($mealavg is \"yes\")>>You wonder how long the temple will [[outlive]] you.<</if>><<if ($loveprayer is not \"yes\") and ($badprayer is not \"yes\") and ($pray is \"yes\")>>You wonder how long the temple will [[outlive]] you.<</if>><<if ($loveprayer is \"yes\") or ($mealbest is \"yes\") or ($lovevotive is \"yes\")>>You wonder if it is [[too cruel]] to call them a god.<</if>></div>",
+      "links": [
+        {
+          "text": "matters",
+          "destination": {
+            "name": "matters",
+            "pid": 57
+          }
+        },
+        {
+          "text": "outlive",
+          "destination": {
+            "name": "outlive",
+            "pid": 58
+          }
+        },
+        {
+          "text": "too cruel",
+          "destination": {
+            "name": "too cruel",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "matters",
+      "text": "<div class=\"towerpassage\">Perhaps not. <span class=\"cycle2\"><<cyclinglink \"Rituals\" \"Ceremonies\" \"Sacraments\">></span> are only a balm upon a short life of raw wounds that never seem to heal. There is always salt water rasping against your skin, always pain deep within the hands and heart so often broken by grave-shale.\n\nYou do not know if you could bear to be alone here. You take such comfort in the presence of your acolytes, in the guarantee that they will grow and you will watch over them &mdash; not as a distant presence far above them, but as a guardian who will stop at [[nothing]] to stand between them and any poacher.</div>",
+      "links": [
+        {
+          "text": "nothing",
+          "destination": {
+            "name": "nothing",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "outlive",
+      "text": "<div class=\"towerpassage\">The structure will crumble long after you do, but you cannot be sure that anyone will stay to guard it after you are gone.\n\nYou cannot detain the children here forever &mdash; and perhaps it is better that they venture out into the <span class=\"cycle\"><<cyclinglink \"sea\" \"Basin\" \"world\" end>></span> when they are grown. Better yet if they still believe, still [[remember]] the humble prayers and ceremonies you taught them in these tender years of their youth.</div>",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "Basin",
+            "pid": 73
+          }
+        },
+        {
+          "text": "remember",
+          "destination": {
+            "name": "remember",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "too cruel",
+      "text": "<div class=\"towerpassage\">You cannot imagine the pain of godliness. Your sea-gods are said to be mortal, but their lives are impossibly long, and all life is fraught with loss and peril.\n\nWhat peril lurks in the seas above? The wine-dark Basin is peril enough for <span class=\"cycle\"><<cyclinglink \"your kind\" \"humans\" end>></span>, and for the hale beings &mdash; the fanged and the scaled and the Weird &mdash; that thrive in its strangest reaches. None that dwell below could survive the immense pressure above. To you, the seas above seem cruel.\n\nIt's no wonder that those who dwell there are known to [[fall]] in death.</div>",
+      "links": [
+        {
+          "text": "fall",
+          "destination": {
+            "name": "fall",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "new offering",
+      "text": "<<audio \"hope\" stop>><<audio \"chant\" fadein loop>><center>[img[images/devo ui1.png]]</center><div class=\"towerpassage\">Perhaps you feel that you could improve upon your last offering, or perhaps you will not be satisfied until you have exhausted all possibilities.\n\nRegardless, your devotion runs uncommonly deep. You sleep only briefly, and wake again with [[another offering|As above, so below.]] in mind.</div><center>[img[images/devo ui1.png]]</center>",
+      "links": [
+        {
+          "text": "another offering",
+          "destination": {
+            "name": "As above, so below.",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "\"God willing\"",
+      "text": "<div class=\"towerpassage\">You cannot change their will, and they cannot change yours. Anjur-Bas is a guide, and your life is theirs, but they have never made as if to take it.\n\nTheir world is not yours to reshape&mdash; and despite the long reach of the arcane, your world is not theirs either. \n\nPerhaps those who dwell above are as helpless as you are in the face of decay. Perhaps, somewhere beyond the Basin and the boundary, Anjur-Bas [[laments]] a crumbling monument to some long-forgotten virtue.</div>",
+      "links": [
+        {
+          "text": "laments",
+          "destination": {
+            "name": "laments",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "nothing",
+      "text": "<div class=\"towerpassage\">Even so, they will die one day. Perhaps selfishly, you hope your time will come first; you have come to fear the agony of digging a grave and waiting for the tide to pull a small rotting body out of sight.\n\nOne might think you cannot bear it, but you know that you will bear it if you must. You will bear it the same way you bear the unbearable silence and stillness from above &mdash; with hands clasped over the anxious gallop of your heart, assuring yourself that there is still <span class=\"cycle\"><<cyclinglink \"enough time\" \"enough tenderness\" \"enough purpose\" end>></span> left in your soul.\n\nYour elders would have scolded you for fretting about [[purpose]], but they are dead now.</div>",
+      "links": [
+        {
+          "text": "purpose",
+          "destination": {
+            "name": "purpose",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "remember",
+      "text": "<div class=\"towerpassage\">When the temple rots into the sea at last, you hope it will do so gently. It is already rotting none-too-gently. Since you were a child, you have been watching the stone pillars erode, the ancient statues losing definition. The vaulted ceilings tend to drop piece by piece or all at once &mdash; time seems to assault the temple quietly, behind your back, or in earthshaking catastrophe, with no middle ground. \n\nYou have had to be stern with the children about where in the temple they are never to venture. New dangers crop up year by year, and by the time you have discovered them they are already beyond repair. You do not know how to begin the sort of work the temple requires.\n\nYou must reconcile yourself to the notion that the temple, too, [[will die]].</div>",
+      "links": [
+        {
+          "text": "will die",
+          "destination": {
+            "name": "will die",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "mourn",
+      "text": "<div class=\"deadpassage\">Sharp teeth sink into your skin. In the next instant, you are overtaken by the searing pain of a venom without antidote. It is not long before the agony of the bite is eclipsed by the chill of death spreading up your wretched spine. \n\nThese clever cove-snakes are deadly indeed, and their poison works faster than any other. Your numbing fingers unwind from the serpent, and the serpent from your arm. Unmoved, it slithers back into the sea as you <span class=\"cycle\"><<cyclinglink \"stumble\" \"collapse\" \"expire\" end>></span>. \n\nDevout worshipper that it is, it has presented a sacrifice of its own upon the altar &mdash; you.</div>\n<center><div class=\"deadlink\"><<click \"Restart\">><<script>>state.restart()<</script>><</click>></div></center>",
+      "links": []
+    },
+    {
+      "pid": 65,
+      "name": "purpose",
+      "text": "<div class=\"towerpassage\">Cult is a Basin comfort. That is its purpose. Cult is for those below. \n\nBut perhaps those above have their cults as well. Perhaps another sea stretches above them, too, full of beings more powerful and terrible than you could conjure in any <span class=\"cycle\"><<cyclinglink \"dream\" \"nightmare\" end>></span>&mdash; beings that require their worship as you have imagined them requiring yours. You do not know; you will never know.\n\nYou know that Anjur-Bas does not demand worship, but you know no other way to communicate with something like them. The arcane are attuned to senses you do not have. You appeal to them in your rituals, but there is only so much you can do.\n\nThere is only [[so much|so much2]].</div>",
+      "links": [
+        {
+          "text": "so much",
+          "destination": {
+            "name": "so much2",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "so much2",
+      "text": "<div class=\"towerpassage\">Yet there is nothing else you know how to do, no role you can inhabit that is separate from the sickly notion of holy purpose. The temple will always be your home, the island the first cradle of your children, the Ophidian Knot forever your patron.\n\nYou've years left still, and nothing to fill them with if not for the laughter of innocents and the tender comforts of ceremony. The children, at least, distract you from the endless din of silence.\n\nThat unremitting <span class=\"cycle\"><<cyclinglink \"silence\" \"silence\" \"silence\" \"silence\" end>></span>. You cannot sleep with it hissing in your ears. To pass the time, you still listen for the voice of your god, as you always have, imagining what it might sound like. \n\nYou would know it if you [[heard]] it.</div>",
+      "links": [
+        {
+          "text": "heard",
+          "destination": {
+            "name": "heard",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "heard",
+      "text": "<div class=\"towerpassage\">You listen well <span class=\"cycle\"><<cyclinglink \"into the night\" \"into the night, for many nights\" end>></span>. Restless, you rise before dawn to watch the skies, to taste the air. \n\nThere is only darkness all around you, an enveloping darkness complete as that which is said to line the bottom of the Basin.\n\nUntil, barely visible: [[a ripple overhead]].<<set $playedonce to \"yes\">></div>",
+      "links": [
+        {
+          "text": "a ripple overhead",
+          "destination": {
+            "name": "a ripple overhead",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "will die",
+      "text": "<div class=\"towerpassage\">You only hope that even one of your charges will think to save the shed skin, that most precious relic. You can stand to lose the votives, the vestments, the altars, but you cannot stomach the thought of the skin <span class=\"cycle2\"><<cyclinglink \"shredded by debris\" \"tossed about in the waves\" \"tangled in sea-filth and eaten away by vermin\">></span>.\n\nYou believe that one among them will manage that. They know the value of it. They know how beloved it is to you.\n\nBut you do not know if it is too much to hope that even one of them will speak the name of the Suzerain in some [[distant port]].</div>",
+      "links": [
+        {
+          "text": "distant port",
+          "destination": {
+            "name": "distant port",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "distant port",
+      "text": "<div class=\"towerpassage\">A decade ago, a travelling friar told you that the serpent shrines across the Basin have become mere curios, many of them in ruins. He himself hardly understood them, but your heart soared to think that the monuments were still recognizable as serpent shrines at all.\n\nBut there is no one left to keep them. You have heard no news of other worshippers in years. You have cultivated only a small crop of new devotees, and there is no telling if their devotion will last.\n\nYou cannot begrudge them that. [[Devotion]], too, can die.</div>",
+      "links": [
+        {
+          "text": "Devotion",
+          "destination": {
+            "name": "Devotion",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "Devotion",
+      "text": "<div class=\"towerpassage\">And yet &mdash; you still allow yourself to imagine that one day, someone far away will preach as you have. You allow yourself to imagine that anyone will listen.\n\nIt is only a <span class=\"cycle\"><<cyclinglink \"thought\" \"fantasy\" \"frail daydream\" end>></span>, of course. You doubt you will ever hear of such a thing, but still you listen. You listen for distant devotion, and you [[listen]] for Anjur-Bas themself.</div>",
+      "links": [
+        {
+          "text": "listen",
+          "destination": {
+            "name": "listen",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "listen",
+      "text": "<div class=\"towerpassage\">You would know their voice if you heard it.\n\nYou listen well <span class=\"cycle\"><<cyclinglink \"into the night\" \"into the night, for many nights\" end>></span>. You watch the skies. You taste the air. But there is only darkness stretching out before you, a darkness complete as that which is said to line the bottom of the Basin.\n\nUntil, barely visible: [[a ripple overhead]].<<set $playedonce to \"yes\">></div>",
+      "links": [
+        {
+          "text": "a ripple overhead",
+          "destination": {
+            "name": "a ripple overhead",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "fall",
+      "text": "<div class=\"towerpassage\">You call them <span class=\"cycle\"><<cyclinglink \"deities\" \"divine\" \"gods\" end>></span> because they reside on high; you call them gods because they are powerful enough to send curses and omens through the registers of the sea; you call them gods because even in an ocean of strange beings, they are the strangest. You call them gods&mdash; but what a strange practice, in truth.\n\nYou wonder if you are as a god to the minute, unseen creatures that scurry underfoot. You wonder if they pray for life and good fortune when you pass them by; you wonder if they give thanks for each footstep that has not crushed them. \n\nYou do not like the idea of it. \n\nYou no longer like the taste of [[\"God willing\"]] in your mouth.</div>\n<center><div class=\"godwilling2\">...</div></center>",
+      "links": [
+        {
+          "text": "\"God willing\"",
+          "destination": {
+            "name": "\"God willing\"",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "Basin",
+      "text": "<div class=\"towerpassage\">They have endured for so long in the Oversea, separated from centuries of devotion made vestigial. They may yet outlive their own cult, outlast their last temple. \n\nAnd still <span class=\"cycle\"><<cyclinglink \"they have never spoken\" \"you have never heard them\" end>></span>. \n\nBut still you listen for their voice. You would [[know]] it if you heard it &mdash; you would know it by its brilliance, its weariness: a low, soothing hiss easily lost in the silence.</div>",
+      "links": [
+        {
+          "text": "know",
+          "destination": {
+            "name": "know",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "laments",
+      "text": "<div class=\"towerpassage\">You have felt their awareness before, however briefly. You have felt the conviction in it, the brilliance, the sorrow. \n\nSomewhere beneath it all, there is a weariness. It is quiet, carried on the current of some sense you <span class=\"cycle\"><<cyclinglink \"cannot\" \"can barely\" \"can almost\" end>></span> perceive&mdash; but it is there, bone-deep. \n\nPerhaps they have not turned away from you at all. They are weary, it seems, but not weary of the [[Basin]].</div>",
+      "links": [
+        {
+          "text": "Basin",
+          "destination": {
+            "name": "Basin",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "know",
+      "text": "<div class=\"towerpassage\">You listen well <span class=\"cycle\"><<cyclinglink \"into the night\" \"into the night, for many nights\" end>></span>. You watch the skies&mdash; still and deep. You taste the air&mdash; metallic as ever. \n\nThere is only darkness, a darkness complete as that which is said to line the bottom of the Basin.\n\nUntil, barely visible: [[a ripple overhead]].<<set $playedonce to \"yes\">></div>",
+      "links": [
+        {
+          "text": "a ripple overhead",
+          "destination": {
+            "name": "a ripple overhead",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "sanctuary",
+      "text": "<div class=\"sacrificepassage\">You know those lessons well; you learned them from your elders when you were young. You are careful&mdash; yet not careful enough. \n\nYou ought to know better than to [[disturb]] even the most docile of the pilgrims. The silent, subtle threats are often the most dire.</div>",
+      "links": [
+        {
+          "text": "disturb",
+          "destination": {
+            "name": "disturb",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "relic",
+      "text": "<div class=\"towerpassage\"><<set $relic to \"yes\">>By some astounding fortune, you have held but a fragment of holy skin in your hands.\n\nIt is wide and thick enough to fall as a mantle about your shoulders. The imprints of scales and soft integument run over its surface, a strip of flesh unwrapped and discarded, outgrown. What once was vital and elastic has grown delicate and dry with disuse, but it remains <span class=\"cycle\"><<cyclinglink \"precious\" \"exquisite\" \"holy\" end>></span>. For many years, it has been enshrined in the [[apse]].</div>",
+      "links": [
+        {
+          "text": "apse",
+          "destination": {
+            "name": "apse",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "young acolytes",
+      "text": "<div class=\"towerpassage\"><<set $kids to \"yes\">>You hate to disturb the <span class=\"cycle\"><<cyclinglink \"little ones\" \"urchins and orphans\" \"foundlings from the coves\" end>></span>. They are full of such boundless energy in the waking hours, but they sleep like the dead.\n\nYou are attuned to their senses now, and they are not roused by your brief intrusion into their quarters: you crack the heavy door and peer inside just long enough to reassure yourself that the appropriate number of heads and fins and tails are still within your charge. \n\nYou do not want to lose them. You plucked them up from the surf just as you did the temple's most precious relic, and your heart bled red as the sea for these abandoned babes&mdash; some human, some [[not]].</div>",
+      "links": [
+        {
+          "text": "not",
+          "destination": {
+            "name": "not",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "shoreline",
+      "text": "<div class=\"towerpassage\"><<set $shore to \"yes\">>The sea is calm, and the water is dark. With some disappointment, you note its absence of color. There will be no early red season this year, it seems.\n\nNo ship is docked at the abandoned pier to the north, and no troublesome creatures have wandered out of the sea in the night. The island is quiet. You stand in the shadow of the [[temple]] and allow yourself a moment to listen to the slowly rising tide.</div>",
+      "links": [
+        {
+          "text": "temple",
+          "destination": {
+            "name": "temple",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "temple",
+      "text": "<div class=\"towerpassage\">The temple here is old, much older than the eldest elder you yourself once buried in the surf decades ago. You still recall shaping their final resting place with younger <span class=\"cycle\"><<cyclinglink \"hands\" \"hands, shaking from the cold\" \"hands, bare and scraped bloody by shale\" end>></span>.\n\nNo use in dwelling upon such sadness, of course, when your brief mortal life ticks away second by second. This temple is your <span class=\"cycle\"><<cyclinglink \"past\" \"present\" \"future\" end>></span>.\n\nIt looms on high ground above the waters, long and vaulted as a serpent\u2019s ribs. Nothing within need fear the tides; the temple itself is safe from the sea's caprices, but the departed are meant to be washed away. You have always brought your dead down to be cradled by the stones and [[the sea]].</div>",
+      "links": [
+        {
+          "text": "the sea",
+          "destination": {
+            "name": "the sea",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "manage",
+      "text": "<div class=\"towerpassage\">Their presence eases the dull ache of loneliness, but you are saddened by the circumstances of their arrival. The eldest was left in the coves several years ago, by whom you know not, and for some time such an atrocity did not happen again. But from time to time, you would hear an infant's warbling cry, or find a single large, malformed roe discarded in the surf&mdash; and now you have six young wards.\n\nThough it has been years since another child was left on your shores, you check the island's perimeter daily. These children were brought cruelly into a world crueler still, and you show them what kindness you can. Seeing them sleep soundly soothes your troubled heart.\n\nYou close the door quietly and slip away to let them rest.</div>\n<center>[img[images/devo ui1.png]]<div class=\"prayerbg\"><<if ($kids is \"yes\") and ($shore is not \"yes\") and ($relic is not \"yes\")>>You will <span class=\"choice\"><<cyclinglink \"$next\" \"view the relic\" \"monitor the shoreline\" \"cease your daily tasks early\">></span>.<</if>><<if ($kids is \"yes\") and ($shore is \"yes\") and ($relic is not \"yes\")>>You will <span class=\"choice\"><<cyclinglink \"$next\" \"view the relic\" \"cease your daily tasks early\">></span>.<</if>><<if ($kids is \"yes\") and ($shore is \"yes\") and ($kids is \"yes\")>><<set $tasks to \"yes\">>You have [[finished your daily tasks]].<</if>><<if ($kids is \"yes\") and ($shore is not \"yes\") and ($relic is \"yes\")>>You will <span class=\"choice\"><<cyclinglink \"$next\" \"monitor the shoreline\" \"cease your daily tasks early\">></span>.<</if>></div>\n\n<<if $tasks is not \"yes\">><center><div class=\"godwilling\"><i><<click \"proceed\">><<audio \"bell4\" play>><<run state.display($next)>><</click>></i></div></center><</if>>",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "view the relic",
+            "pid": 82
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "monitor the shoreline",
+            "pid": 84
+          }
+        },
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "cease your daily tasks early",
+            "pid": 85
+          }
+        },
+        {
+          "text": "finished your daily tasks",
+          "destination": {
+            "name": "finished your daily tasks",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "view the relic",
+      "text": "<div class=\"towerpassage\"><<set $relic to \"yes\">>By some astounding fortune, you have held but a fragment of holy skin in your hands.\n\nIt is wide and thick enough to fall as a mantle about your shoulders. The imprints of scales and soft integument run over its surface, a strip of flesh unwrapped and discarded, outgrown. What once was vital and elastic has grown delicate and dry with disuse, but it remains <span class=\"cycle\"><<cyclinglink \"precious\" \"exquisite\" \"holy\" end>></span>. For many years, it has been enshrined in the [[apse]].</div>",
+      "links": [
+        {
+          "text": "apse",
+          "destination": {
+            "name": "apse",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "look in on the young acolytes",
+      "text": "<div class=\"towerpassage\"><<set $kids to \"yes\">>You hate to disturb the <span class=\"cycle\"><<cyclinglink \"little ones\" \"urchins and orphans\" \"foundlings from the coves\" end>></span>. They are full of such boundless energy in the waking hours, but they sleep like the dead.\n\nYou are attuned to their senses now, and they are not roused by your brief intrusion into their quarters: you crack the heavy door and peer inside just long enough to reassure yourself that the appropriate number of heads and fins and tails are still within your charge. \n\nYou do not want to lose them. You plucked them up from the surf just as you did the temple's most precious relic, and your heart bled red as the sea for these abandoned babes&mdash; some human, some [[not]].</div>",
+      "links": [
+        {
+          "text": "not",
+          "destination": {
+            "name": "not",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "monitor the shoreline",
+      "text": "<div class=\"towerpassage\"><<set $shore to \"yes\">>The sea is calm, and the water is dark. With some disappointment, you note its absence of color. There will be no early red season this year, it seems.\n\nNo ship is docked at the abandoned pier to the north, and no troublesome creatures have wandered out of the sea in the night. The island is quiet. You stand in the shadow of the [[temple]] and allow yourself a moment to listen to the slowly rising tide.</div>",
+      "links": [
+        {
+          "text": "temple",
+          "destination": {
+            "name": "temple",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "cease your daily tasks early",
+      "text": "<div class=\"towerpassage\">You are eager to see to a certain matter &mdash; one more grand than lighting candles and snuffing out incense and plucking away cobwebs. You must trust that all is well, for you have little time to spare, and this will command all your attention and skill. This will require only the most favorable auspices&mdash; and so it must happen now, in the next few days. Your almanac does not lie.\n\nIt is true that life has been difficult of late, but you have been free for some time of any terrible upheaval. Your difficulties spawn instead from the slow creep of entropy. Poverty, obscurity, grief &mdash; these burdens you bear as you must, striving toward the thin glimmer of hope high above where another sea roils overhead. \n\nYou hope for better omens to come &mdash; brighter days and [[scarlet]] water.</div>\n\n",
+      "links": [
+        {
+          "text": "scarlet",
+          "destination": {
+            "name": "scarlet",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "Who",
+      "text": "<div class=\"sacrificepassage\">Who will remind the world that Anjur-Bas is not gone?\n\nWhen you die &mdash; and you will die &mdash; it will be as it will. You will not hasten it along. And when you die, it will be as you lived: in service to your god.\n\n[[Live on|yourself]], then.</div>",
+      "links": [
+        {
+          "text": "Live on",
+          "destination": {
+            "name": "yourself",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "break your fast",
+      "text": "<div class=\"sacrificepassage\">Tradition would dictate the meal as alms to a traveler, but ships rarely dock at your island any longer. The only traveling beggars you have seen of late are the winged creatures that circle overhead, and they've their kingly pick of prey among the minnows and the crabs.\n\nMany of the children once traveled far, though not of their own accord, to arrive at the temple. Perhaps some of them, given time, will become travelers again&mdash; but you are glad to have them here for the time being.\n\nThey have known difficult lives, and they deserve to eat<<if ($food is \"tentacle\") or ($food is \"organ meat\")>> well<</if>>. They devour the meal, <<if ($food is \"bones\")>>some tossing aside the bones to those who can stomach them, but <</if>>marveling that it is [[still hot|sacrificeend]].</div>",
+      "links": [
+        {
+          "text": "still hot",
+          "destination": {
+            "name": "sacrificeend",
+            "pid": 48
+          }
+        }
+      ]
+    }
+  ]
+}

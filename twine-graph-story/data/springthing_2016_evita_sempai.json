@@ -1,0 +1,436 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "start",
+      "text": "\n# Evita Sempai\n\n<span class=\"start\">By Florencia Rumpel Rodriguez\n\n[[In English->start-tale]].</span>",
+      "links": [
+        {
+          "text": "In English",
+          "destination": {
+            "name": "start-tale",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "start-tale",
+      "text": "You look at the mirror before leaving the house for school. You have grown so much this year, that you need to hunch for your reflection to fit in the frame. You look at your <span class=\"expand\">[[black school uniform->school_uniform]]</span> and think the mourning should be over soon. Afterwards, you look away from the mirror and towards your sister's bed. She's still sleeping, maybe you should [[wake her up]].",
+      "links": [
+        {
+          "text": "black school uniform",
+          "destination": {
+            "name": "school_uniform",
+            "pid": 3
+          }
+        },
+        {
+          "text": "wake her up",
+          "destination": {
+            "name": "wake her up",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "school_uniform",
+      "text": "It's been almost a year since your father died. It happened shortly after you were discharged from the hospital. Your sister told you that while you were ill he had asked God to switch places with you. She said you were the one who was supposed to die...\n(live: 8s)[\nShe was really mad at you back then.(stop:)]\\\n(live: 12s)[\nWhen you asked mum about it...(stop:)]\\\n(live: 16s)[\nShe'd gone silent and taken a long sip of mate.(stop:)]\\\n\n(live: 22s)[You turn away from the mirror and look at your sister, maybe you should [[wake her up]]. (stop:)]",
+      "links": [
+        {
+          "text": "wake her up",
+          "destination": {
+            "name": "wake her up",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "wake her up",
+      "text": "Maybe you should kiss her forehead to wake her up.\n(click-replace: \"kiss her forehead\")[shake her shoulders]\\\n(click-replace: \"shake her shoulders\")[use a glass of cold water]\\\n(click-replace: \"use a glass of cold water\")[ask mum]\\\n\n(live: 5s)[\\\nYour mum enters the room. She kisses your sister on the forehead and tells her it's time to go to school.(stop:)]\\\n(live: 8s)[\nShe turns your way, pats your head and tells you to [[go to the kitchen for breakfast]].(stop:)]",
+      "links": [
+        {
+          "text": "go to the kitchen for breakfast",
+          "destination": {
+            "name": "go to the kitchen for breakfast",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "go to the kitchen for breakfast",
+      "text": "<div id=\"book\">You have some toast with margarine and some mate. It's too bitter, but you try to drink it up without making faces.(live: 8s)[ Today is the day you could take the teaching job.(stop:)](live: 10s)[ Although your father didn't want you to teach...(stop:)]\n\n(live: 12s)[You should refuse. After all, your father gave up so much for you. Why is giving this up so hard?(stop:)]\n\n(live: 14s)[Your sister comes in. Her uniform is white(click-replace: \"Her uniform is white\")[Underneath she has a purple skirt with a white shirt](click-replace: \"Underneath she has a purple skirt with a white shirt\")[Her ribbon is pink]. Your mum doesn't like it.(stop:)]\n(live: 20s)[\\\nShe tells your sister to change.(stop:)]\n(live: 24s)[\\\nYour sister explains that the mourning is almost over.(stop:)]\n(live: 28s)[\\\nYour mum's gaze hardens and she repeats her command, her voice like steel.(stop:)]\n(live: 32s)[\nYour sister runs crying to her room. [[You leave for school]] and wait for her at the park.(stop:)]</div>",
+      "links": [
+        {
+          "text": "You leave for school",
+          "destination": {
+            "name": "You leave for school",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "You leave for school",
+      "text": "Your sister catches up with you. She's all in black now, and crying harder. \"Well, at least you are taking the teaching job, right?\" she asks.\n(live: 6s)[\n[[You don't know what to tell her]].(stop:)]",
+      "links": [
+        {
+          "text": "You don't know what to tell her",
+          "destination": {
+            "name": "You don't know what to tell her",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "You don't know what to tell her",
+      "text": "(transition: \"dissolve\")[You look in the mirror before leaving the house for work. You like how the shirt and skirt look on you, but you think your hair will get in the way. You set it up in a bun and make a mental note to cut it short soon.\n\n[[You leave for breakfast->You go and have breakfast with your mum.]]]",
+      "links": [
+        {
+          "text": "You leave for breakfast",
+          "destination": {
+            "name": "You go and have breakfast with your mum.",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "You go and have breakfast with your mum.",
+      "text": "\nYou don't see your sister in the kitchen. You remember she was meeting with her fianc\u00e9e today.\n\nYou look at your mum, she is getting old and it would be nice to have a house again so she could settle down, but you make just enough money at your work to get by. You hope that things improve once your sister marries.\n\nYour mum stares at you and smiles, you kiss her forehead and [[leave for work]].",
+      "links": [
+        {
+          "text": "leave for work",
+          "destination": {
+            "name": "leave for work",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "leave for work",
+      "text": "You get to work. Your boss lets you know there will be people coming to visit the factory later today and tells you to [[start working]]. ",
+      "links": [
+        {
+          "text": "start working",
+          "destination": {
+            "name": "start working",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "start working",
+      "text": "You sit down and get the machine started. You start sewing...\n(click-append: \"You start sewing...\")[\nYou wonder how your sister is doing with her date, she seemed nervous about getting married next week.\n\n(live: 2s)[One tie is done...(stop:)]\\\n]\\\n(click-append: \"One tie is done...\")[\nYou could have married some time ago. Now it seems so long ago.\n\n(live: 2s)[Two ties are done...(stop:)]\\\n]\\\n(click-append: \"Two ties are done...\")[\nBut leaving your mum on her own felt wrong.\n\n(live: 2s)[Three ties are done...(stop:)]\\\n]\\\n(click-append: \"Three ties are done...\")[\nShe gave up so much for you.\n\n(live: 2s)[Four ties are done...(stop:)]\\\n]\\\n(click-append: \"Four ties are done...\")[\nSo did your dad.\n\n(live: 2s)[Five ties are done...(stop:)]\\\n]\\\n(click-append: \"Five ties are done...\")[\nStaying with mum was the least you could do.\n\n(live: 2s)[Six ties are done...(stop:)]\\\n]\\\n(click-append: \"Six ties are done...\")[\nBesides, it's not like you liked the guy.\n\n(live: 2s)[Seven ties are done...(stop:)]\\\n(click-append: \"Seven ties are done...\")[\nNor any other guy for that matter.\n(live: 4s)[\n[[Your boss is calling for you]].]]\\\n(stop:)]",
+      "links": [
+        {
+          "text": "Your boss is calling for you",
+          "destination": {
+            "name": "Your boss is calling for you",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Your boss is calling for you",
+      "text": "You and your coworkers are gathered in the main hall. A young lady enters the factory. She is followed by two guys in suits. Her name is <span class=\"expand\">[[Eva]]</span>.\n(live: 14s)[(go-to: \"eva_does_her_thing\")(stop:)]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "eva_does_her_thing",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Eva",
+          "destination": {
+            "name": "Eva",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Now it's your turn",
+      "text": "A wave of self-consciousness hits your body. (click-append: \"A wave of self-consciousness hits your body.\")[ You realize that your hair is a mess] (click-append: \"is a mess\")[, that your clothes are old and worn] (click-append: \"old and worn\")[, and that your hands are rough from work.] \n\nBut Eva only seems to care about you. \n\n(live: 14s)[\"Is your job okay?\"(stop:)]\n(live: 16s)[\"How are things going at home?\"(stop:)]\n(live: 18s)[\"Is there anything you need?\"(stop:)]\n(live: 20s)[She promises to help.(stop:)]\n(live: 22s)[\n[[You tell her about your life.]](stop:)]",
+      "links": [
+        {
+          "text": "You tell her about your life.",
+          "destination": {
+            "name": "You tell her about your life.",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "You tell her about your life.",
+      "text": "How your dad died. \n(live:1.5s)[How your sister will marry soon.(stop:)]\n(live: 3s)[Your hopes of finding a decent house to live in with your mum.(stop:)] \n(live: 7s)[You start talking about how you refused the teaching job. (click-append: \"You start talking about how you refused the teaching job.\")[ \nBut you start to cry...](click-append: \"But you start to cry...\")[\nSo she gives you a hug.](stop:)\n(live: 8.5s)[\n[[You feel that everything will be fine->trip_to_speech]].\n(stop:)]\n]",
+      "links": [
+        {
+          "text": "You feel that everything will be fine",
+          "destination": {
+            "name": "trip_to_speech",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "final_mirror",
+      "text": "(transition: \"dissolve\")[You look in the mirror before going to bed. \n(live: 2s)[There are new wrinkles around your eyes.(stop:)] (live: 4s)[You have grown so old.(stop:)]\n(live: 6s)[You wonder what Eva would look like now.(stop:)]\n(live: 8s)[She died so young...(stop:)]\n(live: 10s)[\n[[The phone rings.]](stop:)]]",
+      "links": [
+        {
+          "text": "The phone rings.",
+          "destination": {
+            "name": "The phone rings.",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "knock",
+      "text": "You can hear people discussing outside. It's late, so you grab a broom, just to be sure. \nYou move slowly towards the door and take a peek. (click-append: \"You move slowly towards the door and take a peek.\")[ <span class=\"expand\">[[It's the military]].</span> [[They ring the doorbell.->open_door]]]",
+      "links": [
+        {
+          "text": "It's the military",
+          "destination": {
+            "name": "It's the military",
+            "pid": 30
+          }
+        },
+        {
+          "text": "They ring the doorbell.",
+          "destination": {
+            "name": "open_door",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "open_door",
+      "text": "You open the door slowly, the broom held tightly in your left hand. \n\nThe thugs look at you and laugh.  \n(live: 2s)[\"There are some thieves running through the rooftops,\" they say.(stop:)]\n(live: 4s)[\"We need you to let us in to catch them.\"(stop:)]\n(live: 6s)[You comply and lead them upstairs. (click-append: \"You comply and lead them upstairs.\")[ \n\"Thank you, that will be all.\"\n(live: 8s)[(go-to: \"boom\")(stop:)](stop:)](stop:)] ",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "boom",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "The phone rings.",
+      "text": "It's your sister.\n\n(live: 2s)[She says the military went to her house.(stop:)]\n(live: 6s)[They are doing rounds through the neighborhood.(stop:)]\n(live: 10s)[They shouldn't be far from your house now.(stop:)]\n(live: 14s)[You thank her and [[hang up]].(stop:)]\n",
+      "links": [
+        {
+          "text": "hang up",
+          "destination": {
+            "name": "hang up",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "hang up",
+      "text": "If the military are making rounds, having Eva's book around the house might be a problem. Especially since they took your brother in law away. He's been missing for months.\n\nThe book is hidden under some floorboards in your bedroom. It should be safe enough in there, but the military might find it if they are thorough. [[You should act quickly->be found]].",
+      "links": [
+        {
+          "text": "You should act quickly",
+          "destination": {
+            "name": "be found",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "be found",
+      "text": "Eva lent you an ear, gave you her help. Of all the people in your life, she was the kindest. That book is the only thing you have left from her. [[You should keep it->knock]].\n\nThough if you get in trouble for this, your mum will suffer, and so will your sister. Would Eva want you to go to jail or worse over a memento? She knows, surely wherever she may be, that you love her and won't forget her. [[You should burn her book at the stove->burn]]. It's winter, so you don't think it will be too suspicious.",
+      "links": [
+        {
+          "text": "You should keep it",
+          "destination": {
+            "name": "knock",
+            "pid": 15
+          }
+        },
+        {
+          "text": "You should burn her book at the stove",
+          "destination": {
+            "name": "burn",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "burn",
+      "text": "You have the book in your hand. You try to keep your pulse steady while you open the lid of the stove.\n\n[[You push the book inside and close the lid]].",
+      "links": [
+        {
+          "text": "You push the book inside and close the lid",
+          "destination": {
+            "name": "You push the book inside and close the lid",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "You push the book inside and close the lid",
+      "text": "The smell of burnt paper fills your nostrils. (text-style:\"blur\")[Now it's too late to save the book.] [[You hear noises outside->knock]]. ",
+      "links": [
+        {
+          "text": "You hear noises outside",
+          "destination": {
+            "name": "knock",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "trip_to_speech",
+      "text": "(transition: \"dissolve\")[You look in the mirror, getting ready to see Eva's speech. You know her health has been failing lately. You hope this means she will be getting better soon.\n\n(live: 8s)[You are looking really pretty today. You cut your hair yesterday and your mum helped you sew a new suit. She's been doing better ever since Eva helped you get the house back.(stop:)]\n\n(live: 18s)[Now you finally have a house of your own.(stop:)]\n\n(live: 22s)[You turn away from the mirror and [[look at the book she gave you]]. It's on the nightstand.(stop:)]]",
+      "links": [
+        {
+          "text": "look at the book she gave you",
+          "destination": {
+            "name": "look at the book she gave you",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "look at the book she gave you",
+      "text": "<div id=\"book\">It's called *La Raz\u00f3n de mi Vida*. It has her picture on the cover, she's smiling. \n\n(live: 4s)[When you open the book you can read the inscription:\n<span class=\"writing\">Para mi China querida.\nEvita</span>(stop:)]\n\n(live: 10s)[You always read a bit of the book before you go to sleep. You pay special attention to her inscription. (click-append: \"inscription.\")[ She called you darling.](stop:)]\n\n(live: 16s)[It worries you that she wrote it in a hurry, she's always in a hurry. That's probably why she got so sick in the first place.(stop:)]\n\n(live: 20s)[But it doesn't matter. [[You will see her today.]] (stop:)]</div>",
+      "links": [
+        {
+          "text": "You will see her today.",
+          "destination": {
+            "name": "You will see her today.",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "You will see her today.",
+      "text": "The Plaza is packed with people staring at the balcony. Your sister and her husband decided to come with you. Your sister is holding your hand.\n\n(live: 6s)[When you see Eva on the balcony, you squeeze your sister's hand tighter. It's so scary to see her like this. She used to smile like the sun, to do things without pause, and now...(stop:)]\n\n(live: 16s)[Now she cannot even stand by herself.(stop:)]\\\n\n(live: 18s)[Yet she wanted to see you.(stop:)]\\\n\n(live: 20s)[You know she loves you.(stop:)]\\\n\n(live: 22s)[(text-style:\"blur\")[She loves everyone.(stop:)]]\\\n\n(live: 24s)[(text-style:\"blur\")[[[You hold onto your sister.->final_mirror]](stop:)]]",
+      "links": [
+        {
+          "text": "You hold onto your sister.",
+          "destination": {
+            "name": "final_mirror",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "gone",
+      "text": "They are gone.\n\n(live: 8s)[(reload:)(stop:)]",
+      "links": []
+    },
+    {
+      "pid": 26,
+      "name": "boom",
+      "text": "(live: 2s)[As you start going downstairs you can hear the footsteps on the ceiling. They match your heartbeat.(stop:)]\n\n(live: 4s)[(transition: \"shudder\")[(text-colour: \"#955452\")[\n###BOOM!\n]\\\n]\\\n(stop:)]\\\n(live: 5s)[(transition: \"shudder\")[(text-colour: \"#955452\")[\n###BOOM!\n]\\\n]\\\n(stop:)]\\\n(live: 6s)[(transition: \"shudder\")[(text-colour: \"#955452\")[\n###BOOM!\n]\\\n]\\\n(stop:)]\\\n(live: 9s)[\n(go-to: \"gone\")(stop:)]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "gone",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Header",
+      "text": "{\n(print: \"<script>$('html').removeClass(\\)</script>\")\n(if: (passage:)'s tags's length > 0)[\n(print: \"<script>$('html').addClass('\" + (passage:)'s tags.join(' ') + \"'\\)</script>\")\n]\n}",
+      "links": []
+    },
+    {
+      "pid": 28,
+      "name": "Eva",
+      "text": "The first lady. She used to be an actress. Today she is wearing a pencil skirt with a white shirt and a short coat. Her hair is a light shade of blonde, it's wavy and reaches her shoulders.\n(live: 14s)[(go-to: \"eva_does_her_thing\")(stop:)]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "eva_does_her_thing",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "eva_does_her_thing",
+      "text": "She smiles like the sun and greets every single one of you with a kiss on the cheek. When it's your turn, you can feel yourself blush. Afterwards, your boss shows her around, she observes and ponders the place around her.\n\n(live: 10s)[After a while, she decides she has seen enough and starts talking to all the workers, one by one and in private. [[Now it's your turn]].(stop:)] ",
+      "links": [
+        {
+          "text": "Now it's your turn",
+          "destination": {
+            "name": "Now it's your turn",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "It's the military",
+      "text": "As everyone knows by now a group of burly guys, dressed like movie mobsters, standing in front of a green Ford Falcon are what the military looks like now. Just a bunch of thugs. \n\n[[They ring the doorbell again->open_door]].",
+      "links": [
+        {
+          "text": "They ring the doorbell again",
+          "destination": {
+            "name": "open_door",
+            "pid": 16
+          }
+        }
+      ]
+    }
+  ]
+}

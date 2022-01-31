@@ -1,0 +1,2264 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "ali",
+      "text": "@@font-size:120%;\\nNAME: ALI SINGH\\n\\nAGE: 61\\n\\nOCCUPATION: WRITER\\n\\nMARITAL STATUS: MARRIED\\n\\nHOBBIES: (blank)\\n\\nPRIORITY LEVEL: MEDIUM\\n\\nLAST MESSAGE IN CASE OF ACCIDENT:@@\\n\\n@@color:white;//I regret not giving up my tube to that little girl. I regret not giving up my seat to someone young. What do they need a writer for?//@@\\n\\n[[BACK|passlist]]\\n[[END CONSOLE|y11]]\\n<<set $ali = true>>\\n",
+      "links": [
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "passlist",
+            "pid": 14
+          }
+        },
+        {
+          "text": "END CONSOLE",
+          "destination": {
+            "name": "y11",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Start2",
+      "text": "[img[https://corruptreality.files.wordpress.com/2015/02/capsule2_poster.png]]\\n\\n\\n@@font-size:75%;[[PLAY|info]]@@\\n\\n\\n@@font-size: 60%;Made by [[@PaperBlurt|https://twitter.com/paperblurt]] | [[The CAPSULE trilogy|http://capsule.paperblurt.com]] |\u00a0[[The Twine Album|http://thetwinealbum.paperblurt.com/]]@@\\n\\n\\n@@font-size:60%;color:grey;(thanks to [[Richard Goodness|https://richardgoodness.wordpress.com/]] for his valuable help)@@",
+      "links": [
+        {
+          "text": "PLAY",
+          "destination": {
+            "name": "info",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "nd",
+      "text": "\\n\\n\\nJust like a cheetah Nilo jumps at you.\\nAn impressive plunge if it were not for the fact that\\nNilo's hands fly towards your neck as if they were magnets.\\n\\nHis eyes...burn with hate.\\nHis arms...shake, as all his force is used to end your life.\\nSome saliva drips from his lips onto yours and the last thought that ever fills your mind is the risk of disease.\\n\\n\\nYour last breath, and then: [[black|nd2]]",
+      "links": [
+        {
+          "text": "black",
+          "destination": {
+            "name": "nd2",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "y9",
+      "text": "\\n\\nToday it happened: you've depleted all entertainment available on the ship.\\n\\nEvery book, movie, game, record...\\n\\nYou've even built a fort inside the greenhouse where you slept for a few weeks to, in your own way, reclaim your childhood. You've decided that you're not mad at all, and that you'll handle the remaining years without any type of stimuli. Yessireebob!\\n\\nBut not to fret, you still have your [[safari|y10console]], and there are only about SIX WONDERFUL LOVING years left!!!!!!!!!",
+      "links": [
+        {
+          "text": "safari",
+          "destination": {
+            "name": "y10console",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "h9",
+      "text": "\\n\\nYou like watching him sleep.\\nThe majority of the time since you got back has more\\nor less been as it was before. But with somebody sleeping OUTSIDE\\na cryotube for a change.\\n\\nOne main difference is that Todd moves around.\\nIt provides you with a soothing calm.\\n\\n(\"WYH CANTT HE WKAE UPP?!\")\\n\\nYou make sure he gets some water and food.\\nYou know the rations will run out as it's only calculated to sustain one life at a time. Not two.\\n\\nBut maybe that's a [[future|h10]] problem?",
+      "links": [
+        {
+          "text": "future",
+          "destination": {
+            "name": "h10",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "INLINE CSS",
+      "text": "String.prototype.unDash = function()\\n{\\n\tvar s = this.split(\"-\");\\n\tif(s.length > 1)\\n\t\tfor(var t=1; t < s.length; t++)\\n\t\t\ts[t] = s[t].substr(0,1).toUpperCase() + s[t].substr(1);\\n\treturn s.join(\"\");\\n};\\n",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "h23",
+      "text": "\\n\\nThe Makida's hum acts as a lullaby.\\nBut you can't sleep...\\nIn the beginning you counted the days.\\nBut now you don't care.\\n\\nNilo left a couple of days ago.\\nYou look at your belly.\\nYou've overeaten.\\nYour jumpsuit is streched out and the buttons are literally hanging on by a thread.\\n\\nThe ruckus you hear is not unfamiliar anymore.\\nYou hear Nilo's footsteps.\\n\\nYou sit up. Wait for him to come.\\n\\n[[But he's not alone|h24]]",
+      "links": [
+        {
+          "text": "But he's not alone",
+          "destination": {
+            "name": "h24",
+            "pid": 152
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "y1",
+      "text": "\\n\\n**@@font-size:150%;//six months after wakeup//@@\\n\\n<<timedgoto \"y3\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "y3",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "y3",
+      "text": "\\n\\n\\nThe higly esteemed Sandman project is bullshit.\\nYou are nothing but a janitor. A fucking janitor!\\n\\nIn six months nothing has happened. Absolutely nothing.\\nNot even a broken display or LED indicator.\\n\\nYou've boiled down to a mixture of boredom, loneliness, and anger. \\nWith a pinch of freedom...since nobody sees, hears, or smells you, you can do whatever you want.\\n\\n[[But even that gets tedious|y4]]",
+      "links": [
+        {
+          "text": "But even that gets tedious",
+          "destination": {
+            "name": "y4",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "h22",
+      "text": "\\n\\n\\n<<if $nilo>>Maybe that's best? You don't know what will be on the other side of the loop anyway.<<else>>Hopefully Nilo will understand? Hopefully...<<endif>>\\n\\nYou have to stand by your call.\\nYou can't be indecisive.\\nWell you can, but that's not really a good trait in a person.\\n\\n[[...|h23]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "h23",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "y5",
+      "text": "\\n\\n**@@font-size:150%;//one year after wakeup//@@\\n\\n<<timedgoto \"y9\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "y9",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "y4",
+      "text": "\\n\\n\\nLooking back at the last six months you can, in retrospect, wonder\\nwhere they've gone. But now you look at that second hand on the clock and wonder if it's even moving.\\n\\nYou spent a lot of time cleaning the tube.\\nDusting it. You even re-painted it for kicks and decorated it a bit.\\nYou felt silly doing it, but the tube is more or less your escape pod from this wretched, lonely, and horrible life.\\n\\n[[The fucking clock is probably broken|y5]]",
+      "links": [
+        {
+          "text": "The fucking clock is probably broken",
+          "destination": {
+            "name": "y5",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "console",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n<<replace \"1. Oxygen Levels\">>@@color:#00F70A;1. The oxygen levels are super amped, dude!@@<<set $oxygen = true>><<endreplace>>@@color:#00F70A;<html><span class=\"blink\">_</span></html>@@\\n\\n<<replace \"2. Life support status\">>@@color:#00F70A;2. All the dudes and dudettes are stoked!@@<<set $life = true>><<endreplace>>@@color:#00F70A;<html><span class=\"blink\">_</span></html>@@\\n\\n<<replace \"3. Nutrition supplies\">>@@color:#00F70A;3. We got wicked awesome food, man!@@<<set $nut = true>><<endreplace>>@@color:#00F70A;<html><span class=\"blink\">_</span></html>@@\\n\\n<<replace \"4. Ship status\">>@@color:#00F70A;4. Only ankle biters ahead!@@<<set $ship = true>><<endreplace>>@@color:#00F70A;<html><span class=\"blink\">_</span></html>@@\\n\\n<<replace \"5. Sandman status\">>@@color:#00F70A;5. #10 already checked in, keep calm boss!@@<<set $sandman = true>><<endreplace>>@@color:#00F70A;<html><span class=\"blink\">_</span></html>\\n\\n\\n[[END CONSOLE|end]] <<set $console = true>>@@\\n\\n\\n\\n",
+      "links": [
+        {
+          "text": "END CONSOLE",
+          "destination": {
+            "name": "end",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "passlist",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n@@color:#00F70A;//\"SANDMAN11_RAN_ALGO\" PROGRAM SELECTED OUTCOME://@@\\n\\n[[GEOFF MCBRIDE|geoff]]\\n\\n[[SUSAN ALISTAIR|susan]]\\n\\n[[ALI SINGH|ali]]\\n\\n[[SVEN JOHANSSEN|sven]]\\n\\n<<set $geoff = false>><<set $ali = false>><<set $susan = false>><<set $sven = false>>\\n",
+      "links": [
+        {
+          "text": "GEOFF MCBRIDE",
+          "destination": {
+            "name": "geoff",
+            "pid": 96
+          }
+        },
+        {
+          "text": "SUSAN ALISTAIR",
+          "destination": {
+            "name": "susan",
+            "pid": 146
+          }
+        },
+        {
+          "text": "ALI SINGH",
+          "destination": {
+            "name": "ali",
+            "pid": 1
+          }
+        },
+        {
+          "text": "SVEN JOHANSSEN",
+          "destination": {
+            "name": "sven",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "niloconsole",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n@@color:red;font-size:200%;<html><span class=\"blink\">WARNING - Cryo leakage detected</span></html>@@\\n\\n\\n@@font-size:200%;<<timedinsert 2s>>.<<endtimedinsert>><<timedinsert 3s>>.<<endtimedinsert>><<timedinsert 4s>>.<<endtimedinsert>>@@\\n\\n<<timedgoto \"niloconsole2\" 6s>>\\n<<set $bug = true>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "niloconsole2",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "clown2",
+      "text": "\\n\\n//you'll never know it. but Nilo came back. maybe a final goodbye?\\nhe paints you as a clown. as he remembers you. an ode to the few happy times.\\na crazy person would paint his penis - so he does that too.\\na safety measure so that others won't suspect.\\nnobody will ask. not Kuntu nor the others.\\nthey'll remember you as a saviour. as an idol. someone to praise. someone to blame.\\na buffer between Nilo and his subjects.\\n\\nthe sandman acts in mysterious ways.//\\n\\n\\n@@font-size:350%;[[...|theend]]@@\\n\\n<html>\\n<style>\\nbody {overflow:hidden}\\n</style>\\n</html>",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "theend",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "end_2",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n@@color:red;font-size:150%;<html><span class=\"blink\"> WARNING - AUTOMATIC EMERGENCY SANDMAN WAKEUP PROCEDURE ENGAGED</span></html>@@\\n\\n\\nSANDMAN ID: 12\\nETW: 12 HOURS\\nSHIP STATUS: STABLE\\n\\n\\n[[END CONSOLE|clown]]",
+      "links": [
+        {
+          "text": "END CONSOLE",
+          "destination": {
+            "name": "clown",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "StoryTitle",
+      "text": "Capsule II - The 11th Sandman",
+      "links": []
+    },
+    {
+      "pid": 19,
+      "name": "h6-1",
+      "text": "\\n\\n\\nYou realize you must get Todd back to your quarters. He seems to be in a rather stable state but this brain of his isn't what it probably used to be.\\n\\n(\"IT'S LIKE CLAY, READY FRO MEE TWO SHPAE AN DOO WATEHEVR I WNAT WIHT!\")\\n\\nThe Slug //can// hold two people but it's gonna be a very slow ride. You remember reading in the manual that it's not recommended. But that thing was written over a century ago.\\n\\n[[Let's give it a try|h7]]",
+      "links": [
+        {
+          "text": "Let's give it a try",
+          "destination": {
+            "name": "h7",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "food",
+      "text": "\\nYou enter the kitchen.\\n\\nAcording to the post-cryo routine you need to rehydrate and \"provide energy for your body\" which is a weird way of saying that you need to eat.\\n\\nThe kitchen has an Compound Hydro Electrolyte Food AI (\"CHEF\" for short) that provides you with all the yummy protein bars and liquids you can muster.\\n\\nThe greenhouse provides some fresh fruits and vegetables, but they are not to be wasted. One bell pepper (combined with some beans and chemicals) can be turned into a protein bar that in turn equals one lunch.\\n\\n[[...|food2]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "food2",
+            "pid": 138
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "h25",
+      "text": "\\n\\nIt's just a few days left now.\\nAs you more or less are alone now.\\nDay after day.\\nYou've gone back to regular routine.\\nBONC's, checking the Terminal (you hope to see some issues on there that might be Nilo-related, but no), guarding in the green house.\\n\\nNilo comes by maybe once a week.\\nHe just looks at you. You try to talk some sense into him.\\nBut you are also scared of him.\\nThere is some kind of respect in his eyes, but you also\\nsee that respects fading after just a few minutes.\\n\\n[[You don't really understand what you did wrong|h26]]",
+      "links": [
+        {
+          "text": "You don't really understand what you did wrong",
+          "destination": {
+            "name": "h26",
+            "pid": 116
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "clown",
+      "text": "<<timedgoto \"clown2\" 5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "clown2",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "forni",
+      "text": "Nilo stops.\\nLike a robot. As if he had perfect balance.\\nWithout turning around he says:\\n\\n\"Well maybe I have a solution for us.\"\\n\\n//\"Ok, what?\"//\\n\\n\"Basically it involves you not living and me staying alive\"\\n\\n//\"Hm. That's like a summary of your idea?\"//\\n\\n\"Yeah you could say that.\"\\n\\nNilo starts to walk with both his \"dogs\" following him.\\nHe leaves the entertainment area and when you don't see him anymore as he turns around the corner, he yells:\\n\\n\"You coming?\"\\n\\n[[(yeah you are)|forni2]]",
+      "links": [
+        {
+          "text": "(yeah you are)",
+          "destination": {
+            "name": "forni2",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "STYLE",
+      "text": "@import url(http://fonts.googleapis.com/css?family=Geo);\\n@import url(http://fonts.googleapis.com/css?family=Play);\\n@import url(http://fonts.googleapis.com/css?family=Abel);\\n@import url(http://fonts.googleapis.com/css?family=VT323);\\n@import url(http://fonts.googleapis.com/css?family=Jura:500);\\n@import url(http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo);\\n@import url(http://fonts.googleapis.com/css?family=Neucha);\\n@import url(http://fonts.googleapis.com/css?family=Gochi+Hand);\\n@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);\\n\\n@font-face{ \\n\tfont-family: 'DOS';\\n\tsrc: url(http://capsule2.paperblurt.com/perfect_dos_vga_437_win-webfont.eot);\\n\tsrc: url(http://capsule2.paperblurt.com/perfect_dos_vga_437_win-webfont.eot) format('embedded-opentype'),\\n\t     url(http://capsule2.paperblurt.com/perfect_dos_vga_437_win-webfont.woff) format('woff'),\\n\t     url(http://capsule2.paperblurt.com/perfect_dos_vga_437_win-webfont.ttf) format('truetype'),\\n\t     url(http://capsule2.paperblurt.com/perfect_dos_vga_437_win-webfont.svg) format('svg');\\n}\\n\\n@font-face{ \\n\tfont-family: 'Terminal';\\n\tsrc: url(http://capsule2.paperblurt.com/ds-term-webfont.eot);\\n\tsrc: url(http://capsule2.paperblurt.com/ds-term-webfont.eot) format('embedded-opentype'),\\n\t     url(http://capsule2.paperblurt.com/ds-term-webfont.woff) format('woff'),\\n\t     url(http://capsule2.paperblurt.com/ds-term-webfont.ttf) format('truetype'),\\n\t     url(http://capsule2.paperblurt.com/ds-term-webfont.svg) format('svg');\\n}\\n\\n.revision-span-in {\\n\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out){\\n\ttransition: 0.5s; -webkit-transition: 0.5s;\\n}\\n.revision-span-out {\\n\tposition:absolute;\\n\topacity: 0;\\n}\\n\\n.passage[data-tags~=console]\\n{\\nopacity:1 !important;\\n}\\n\\n.passage[data-tags~=shock1]\\n{\\nopacity:1 !important;\\n}\\n\\n.passage[data-tags~=shock2]\\n{\\nopacity:1 !important;\\n}\\n\\n.passage[data-tags~=shock3]\\n{\\nopacity:1 !important;\\n}\\n\\n.passage[data-tags~=TITLE2]\\n{\\nopacity:1 !important;\\n}\\n\\nhead {\\n  box-shadow: inset 0px 0px 0em #000;\\n  width:100%;\\n  height:100%;\\n  display:block;\\n  position:fixed;\\n}\\n\\n.passage a {\\n  color: #FC0C0B;\\n  opacity: 1;\\n}\\n\\na.internalLink:hover, a.externalLink:hover {\\n  color:#fff !important;\\n  text-decoration: none;\\n}\\n\\na.externalLink:visited, a.internalLink:visited {\\n  color: #FC0C0B !important;\\n  text-decoration: none;\\n}\\n\\na.externalLink:hover {\\n  color:#fff !important;\\n  text-decoration: none;\\n}\\n\\nhead * {\\n  display:none;\\n}\\n\\nbody {\\n  background-color:#081824;\\n  margin: 0;\\n  text-align:center;\\n}\\n\\nbody[data-tags~=exc] {\\n  background-color:#000;\\n  margin: 0;\\n  text-align:center;\\n}\\n\\nbody[data-tags~=kuntublank] {\\n  background-color:#000;\\n  margin: 0;\\n  text-align:center;\\n}\\n\\nbody[data-tags~=cryo] {\\nbackground-color: #13484A;\\nbackground-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;\\nbackground-position: -1px -2px, -2px -2px, -1px -1px, -1px -1px;\\nbackground-image: -webkit-linear-gradient(#0CCD58 0px, transparent 0px),\\n                  -webkit-linear-gradient(0, #0CCD58 0px, transparent 0px),\\n                  -webkit-linear-gradient(rgba(12,205,88,.3) 1px, transparent 1px),\\n                  -webkit-linear-gradient(0, rgba(12,205,88,.3) 1px, transparent 1px);\\nbackground-image: -moz-linear-gradient(white 2px, transparent 2px),\\n                  -moz-linear-gradient(0, #B01C2C 2px, transparent 2px),\\n                  -moz-linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),\\n                  -moz-linear-gradient(0, rgba(255,255,255,.3) 1px, transparent 1px);\\nbackground-image: linear-gradient(#B01C2C 2px, transparent 2px),\\n                  linear-gradient(90deg, #B01C2C 2px, transparent 2px),\\n                  linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),\\n                  linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);\\n-pie-background: linear-gradient(#B01C2C 2px, transparent 2px) -2px -2px / 100px,\\n                 linear-gradient(90deg, #B01C2C 2px, transparent 2px) -2px -2px / 100px,\\n                 linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,\\n                 linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,\\n                 #269;\\nbehavior: url(/pie/PIE.htc);\\n margin: 0;\\n  text-align:center;\\n}\\n\\nbody[data-tags~=cryo2] {\\nbackground-color: #13484A;\\nbackground-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;\\nbackground-position: -1px -2px, -2px -2px, -1px -1px, -1px -1px;\\nbackground-image: -webkit-linear-gradient(#0CCD58 0px, transparent 0px),\\n                  -webkit-linear-gradient(0, #0CCD58 0px, transparent 0px),\\n                  -webkit-linear-gradient(rgba(12,205,88,.3) 1px, transparent 1px),\\n                  -webkit-linear-gradient(0, rgba(12,205,88,.3) 1px, transparent 1px);\\nbackground-image: -moz-linear-gradient(white 2px, transparent 2px),\\n                  -moz-linear-gradient(0, #B01C2C 2px, transparent 2px),\\n                  -moz-linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),\\n                  -moz-linear-gradient(0, rgba(255,255,255,.3) 1px, transparent 1px);\\nbackground-image: linear-gradient(#B01C2C 2px, transparent 2px),\\n                  linear-gradient(90deg, #B01C2C 2px, transparent 2px),\\n                  linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),\\n                  linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);\\n-pie-background: linear-gradient(#B01C2C 2px, transparent 2px) -2px -2px / 100px,\\n                 linear-gradient(90deg, #B01C2C 2px, transparent 2px) -2px -2px / 100px,\\n                 linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,\\n                 linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,\\n                 #269;\\nbehavior: url(/pie/PIE.htc);\\n margin: 0;\\n  text-align:center;\\n}\\n\\nbody[data-tags~=cryoblack] {\\nbackground-color: #061617;\\nbackground-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;\\nbackground-position: -1px -2px, -2px -2px, -1px -1px, -1px -1px;\\nbackground-image: -webkit-linear-gradient(#0CCD58 0px, transparent 0px),\\n                  -webkit-linear-gradient(0, #0CCD58 0px, transparent 0px),\\n                  -webkit-linear-gradient(rgba(12,205,88,.3) 1px, transparent 1px),\\n                  -webkit-linear-gradient(0, rgba(12,205,88,.3) 1px, transparent 1px);\\nbackground-image: -moz-linear-gradient(white 2px, transparent 2px),\\n                  -moz-linear-gradient(0, #B01C2C 2px, transparent 2px),\\n                  -moz-linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),\\n                  -moz-linear-gradient(0, rgba(255,255,255,.3) 1px, transparent 1px);\\nbackground-image: linear-gradient(#B01C2C 2px, transparent 2px),\\n                  linear-gradient(90deg, #B01C2C 2px, transparent 2px),\\n                  linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),\\n                  linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);\\n-pie-background: linear-gradient(#B01C2C 2px, transparent 2px) -2px -2px / 100px,\\n                 linear-gradient(90deg, #B01C2C 2px, transparent 2px) -2px -2px / 100px,\\n                 linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,\\n                 linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,\\n                 #269;\\nbehavior: url(/pie/PIE.htc);\\n margin: 0;\\n  text-align:center;\\n}\\n\\nbody[data-tags~=cryodarkcenter] {\\nbackground-color: #061617;\\nbackground-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;\\nbackground-position: -1px -2px, -2px -2px, -1px -1px, -1px -1px;\\nbackground-image: -webkit-linear-gradient(#0CCD58 0px, transparent 0px),\\n                  -webkit-linear-gradient(0, #0CCD58 0px, transparent 0px),\\n                  -webkit-linear-gradient(rgba(12,205,88,.3) 1px, transparent 1px),\\n                  -webkit-linear-gradient(0, rgba(12,205,88,.3) 1px, transparent 1px);\\nbackground-image: -moz-linear-gradient(white 2px, transparent 2px),\\n                  -moz-linear-gradient(0, #B01C2C 2px, transparent 2px),\\n                  -moz-linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),\\n                  -moz-linear-gradient(0, rgba(255,255,255,.3) 1px, transparent 1px);\\nbackground-image: linear-gradient(#B01C2C 2px, transparent 2px),\\n                  linear-gradient(90deg, #B01C2C 2px, transparent 2px),\\n                  linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),\\n                  linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);\\n-pie-background: linear-gradient(#B01C2C 2px, transparent 2px) -2px -2px / 100px,\\n                 linear-gradient(90deg, #B01C2C 2px, transparent 2px) -2px -2px / 100px,\\n                 linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,\\n                 linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,\\n                 #269;\\nbehavior: url(/pie/PIE.htc);\\n margin: 0;\\n  text-align:center;\\n}\\n\\nbody[data-tags~=console] {\\n  background-color:#141414;\\n  margin: 0;\\n  text-align:center;\\n   height: 750px;\\n    width: 100px;\\n    height: 4px;\\n    background: -webkit-repeating-linear-gradient(#018706 65%, #000000, #000000);\\n    background: -o-repeating-linear-gradient(#018706 65%, #000000, #000000);\\n    background: -moz-repeating-linear-gradient(#018706 65%, #000000, #000000);\\n    background: repeating-linear-gradient(#018706 65%, #000000, #000000);\\n}\\n\\nbody[data-tags~=consoleboot] {\\n  background-color:#141414;\\n  margin: 0;\\n  text-align:center;\\n   height: 750px;\\n    width: 100px;\\n    height: 4px;\\n    background: -webkit-repeating-linear-gradient(#018706 65%, #000000, #000000);\\n    background: -o-repeating-linear-gradient(#018706 65%, #000000, #000000);\\n    background: -moz-repeating-linear-gradient(#018706 65%, #000000, #000000);\\n    background: repeating-linear-gradient(#018706 65%, #000000, #000000);\\n}\\n\\nbody[data-tags~=dest] {\\n  background-color:#141414;\\n  margin: 0;\\n  text-align:center;\\n   height: 750px;\\n    width: 100px;\\n    height: 4px;\\n    background: -webkit-repeating-linear-gradient(#018706 65%, #000000, #000000);\\n    background: -o-repeating-linear-gradient(#018706 65%, #000000, #000000);\\n    background: -moz-repeating-linear-gradient(#018706 65%, #000000, #000000);\\n    background: repeating-linear-gradient(#018706 65%, #000000, #000000);\\n}\\n\\nbody[data-tags~=info] {\\n  background-color:#ECF0D6;\\n  margin: 0;\\n  text-align:center;\\n   height: 750px;\\n    width: 100px;\\n    height: 4px;\\n}\\n\\n#passages {\\n  border-left: 0;\\n  margin: 0;\\n  padding: 10;\\n  line-height:20vh;\\n}\\n\\n.passage {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 75%;\\n  height: 80%;\\n  margin:auto;\\n  font: 2.2em/1.4em Abel, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #C6E5D9;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=routine] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 85%;\\n  height: 80%;\\n  margin:auto;\\n  font: 5.4em/1.4em Abel, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #C6E5D9;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=slug] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 100%;\\n  height: 100%;\\n  margin:auto;\\n  font: bold 2.2em/1.4em Abel, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #C6E5D9;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\nbackground-image: url(\"https://corruptreality.files.wordpress.com/2015/09/slug2.gif\");\\nbackground-size: cover;\\n}\\n\\nbody[data-tags~=shock1] {\\n  background-color:#FD8D8E;\\n  margin: 0;\\nbackground-image: url(\"https://corruptreality.files.wordpress.com/2015/09/shock1.jpg\");\\nbackground-size: cover;\\n  text-align:center;\\n}\\n\\nbody[data-tags~=shock2] {\\n  background-color:#FD8D8E;\\n  margin: 0;\\nbackground-image: url(\"https://corruptreality.files.wordpress.com/2015/09/shock2.jpg\");\\nbackground-size: cover;\\n  text-align:center;\\n}\\n\\nbody[data-tags~=shock3] {\\n  background-color:#FD8D8E;\\n  margin: 0;\\nbackground-image: url(\"https://corruptreality.files.wordpress.com/2015/09/shock3.jpg\");\\nbackground-size: cover;\\n  text-align:center;\\n}\\n\\nbody[data-tags~=clown] {\\n  background-color:#FD8D8E;\\n  margin: 0;\\nbackground-image: url(\"https://corruptreality.files.wordpress.com/2015/09/hang.gif\");\\nbackground-size: cover;\\n  text-align:center;\\n}\\n\\nbody[data-tags~=clown2] {\\n  background-color:#FD8D8E;\\n  margin: 0;\\nbackground-image: url(\"https://corruptreality.files.wordpress.com/2015/09/hang21.gif\");\\nbackground-size: cover;\\n  text-align:center;\\n}\\n\\n\\n.passage[data-tags~=emptyship] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 45%;\\n  height: 80%;\\n  margin:auto;\\n  font: 3.5em/1.4em Jura, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #C6E5D9;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=emptyship2] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 95%;\\n  height: 80%;\\n  margin:auto;\\n  font: 1.5em/1.4em Jura, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #C6E5D9;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=clown2] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 75%;\\n  height: 80%;\\n  margin:auto;\\n  font: 2.5em/1.4em Abel, \"Helvetica Neue\", Helvetica, sans-serif;\\npadding: 5em;\\n  color: #C6E5D9;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=sun] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 75%;\\n  height: 100%;\\n  margin:auto;\\n  font: 2.5em/1.4em Abel, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #C6E5D9;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=cryo] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 85%;\\n  height: 80%;\\n  margin:auto;\\n  font: 4.5em/1em terminal, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=cryo2] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 85%;\\n  height: 80%;\\n  margin:auto;\\nfont: 2.2em/1.4em Abel, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #C6E5D9;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=cryoblack] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 85%;\\n  height: 80%;\\n  margin:auto;\\n  font: 4.5em/1em terminal, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=cryodarkcenter] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 28%;\\n  height: 50%;\\n  margin:auto;\\n  font: 4.5em/1em terminal, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=info] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 45%;\\n  height: 80%;\\n  margin:auto;\\n  font: 2.5em/1.4em VT323, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #313851;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=infoend] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 85%;\\n  height: 80%;\\n  margin:auto;\\n  font: 2.5em/1.4em VT323, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=TITLE] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 65%;\\n  height: 40%;\\n  margin:auto;\\n  font: bolder 20em/0.4em Geo, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #EEFCFF;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=TITLE2] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 65%;\\n  height: 40%;\\n  margin:auto;\\n  font: bolder 20em/0.4em Geo, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #EEFCFF;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=START] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 80%;\\n  height: 95%;\\n  margin:auto;\\n  font: 2.8em/0.6em Dos, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=console] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 85%;\\n  height: 75%;\\n  margin:auto;\\n  font: 2em/1.2em Dos, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #00F70A;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=exc] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 65%;\\n  height: 45%;\\n  margin:auto;\\n  font: 60em/0.5em Dos, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: red;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n.passage[data-tags~=dest] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 50%;\\n  height: 90%;\\n  margin:auto;\\n  font: 2em/1em Dos, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=ship] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 55%;\\n  height: 95%;\\n  margin:auto;\\n  font: 2.2em/0.8em Geo, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:left;\\n}\\n\\n.passage[data-tags~=consoleboot] {\\n  position:absolute;\\n  top: 0;  bottom: 0;  left: 0;  right: 0;\\n  width: 85%;\\n  height: 35%;\\n  margin:auto;\\n  font: 3em/1.2em Dos, \"Helvetica Neue\", Helvetica, sans-serif;\\n  color: #fff;\\n  letter-spacing: -0.00em;\\n  text-align:center;\\n}\\n\\n[id$=console].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=console].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=console].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=passlist].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=passlist].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=passlist].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=ymanifest].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=ymanifest].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=ymanifest].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=slogs2].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=slogs2].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=slogs2].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=slogs3].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=slogs3].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=slogs3].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n [id$=slogs4].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=slogs4].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=slogs4].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=slogs5].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=slogs5].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=slogs5].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=bye].passage a{\\n  color: #ECF0D6;\\n  opacity: 1;\\n}\\n\\n[id$=bye].passage a:hover {\\n  color: #000;\\n  text-decoration: none;\\n  border-bottom: 0px #00F70A dotted;\\n}\\n[id$=bye].passage a:visited {\\n  color: #ECF0D6;\\n}\\n\\n[id$=dest].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=dest].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=dest].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=newdest2].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=newdest2].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=newdest2].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=consolehome].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=consolehome].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=consolehome].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=surf].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=surf].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=surf].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=surf2].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=surf2].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=surf2].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=surf3].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=surf3].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=surf3].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n[id$=alarm2].passage a{\\n  color: #00F70A;\\n  opacity: 1;\\n}\\n\\n[id$=alarm2].passage a:hover {\\n  color: #00F70A;\\n  text-decoration: none;\\n  border-bottom: 3px #00F70A dotted;\\n}\\n[id$=alarm2].passage a:visited {\\n  color: #00F70A;\\n}\\n\\n#sidebar {\\n  display:table;\\n  position:fixed;\\n  top: 0; left: 0;\\n  width:25%;\\n  height:25%;\\n}\\n\\n#restart {\\n  display:table;\\n  position:fixed;\\n  bottom: 0; left: 0;\\n  width:7%;\\n  height:5%;\\n}\\n\\n#sidebar #title {\\n  display:none; \\n  vertical-align:center;\\n  text-align:center;\\n}\\n\\n#sidebar #title #storyTitle {\\n  font: 1.6em/1.5em Holtwood One SC, \"Helvetica Neue\", Helvetica, sans-serif;\\n  letter-spacing: -0.05em;\\n  color:rgba(0,0,0,0.1);\\n}\\n\\n#passages {\\n position:static;\\n}\\n#bookmark {\\n display:none;\\n}\\n\\n#title :not(#storyTitle){\\n  display:none;\\n}\\n#storymenu, #snapback, #share, #credits, #restart{\\n  display:none;\\n}\\n\\n@media screen and (max-width: 960px) {\\n  body { font-size: 50%; }\\n}\\n@media screen and (max-width: 840px) {\\n  body { font-size: 40%; }\\n}\\n@media screen and (max-width: 720px) {\\n  body { \\n    font-size: 30%;\\n  }\\n}\\n\\n.blink{-webkit-animation: blink 1s linear infinite;\\n-moz-inimation: blink 1s linear infinite;\\n-ms-animation: blink 1s linear infinite;\\n-o-animation: blink 1s linear infinite;\\nanimation: blink 1s linear infinite;\\n}\\n@-webkit-keyframes blink{\\n0% { opacity: 1; }\\n50% { opacity: 1; }\\n50.01% { opacity: 0; }\\n100% { opacity: 0; }\\n}\\n\\n@-moz-keyframes blink {\\n0% {opacity: 1;}\\n50% {opacity: 1;}\\n50.01% {opacity: 0;}\\n100% opacity: 0;}\\n}\\n@-o-keyframes blink {\\n0% {opacity: 1;}\\n50% {opacity: 1;}\\n50.01% {opacity: 0;}\\n100% opacity: 0;}\\n}\\n@keyframes blink {\\n0% {opacity: 1;}\\n50% {opacity: 1;}\\n50.01% {opacity: 0;}\\n100% opacity: 0;}\\n}",
+      "links": []
+    },
+    {
+      "pid": 25,
+      "name": "hconsole2",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n@@color:#00F70A;//\"PASSLIST SEARCH RESULT (PAGE 1/19)://@@\\n\\nTODD CARLSEN\\nTODD FENNING\\nTODD ANDERSON\\nTODD HANSEN\\nTODD \"BUCK\" CARREY\\nTODD STARLING\\nTODD ZIERING\\nTODD McMAHMON\\nTODD WILLIS\\nTODD MEYER\\nTODD OLAFSEN\\n\\n\\n[[END CONSOLE|h15-1]]",
+      "links": [
+        {
+          "text": "END CONSOLE",
+          "destination": {
+            "name": "h15-1",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "left4",
+      "text": "\\n\\n\\nYou find one of those ropes in the greenhouse.\\nRopes feel so, ancient out here in space.\\n\\nYou've always theorized that they actually packed\\nthese ropes for the sole purpose of taking one's life.\\n\\nThe idea arose when you discovered that there were 12 ropes.\\nAbout 2.5 meters long each.\\n\\n12 ropes - 12 sandmen.\\n\\n[[...|left5]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "left5",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "left5",
+      "text": "\\n\\n\\nSandman #11's death is swift.\\nThe neck breaks and the rather heavy body swings back and forth.\\n\\nThe lamp in the ceiling is somewhat damaged and the repair cost will be deducted from Sandman #11's pay check.\\n\\n[[...|end_1]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "end_1",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "nisac",
+      "text": "\\n\\n\\nNilo turns around.\\nBut he's quiet.\\nWaiting for you to say something.\\n\\n//\"I want you to have this.\"//\\n\\n\"What?\"\\n\\nHe shrugs and looks at you.\\n\\nYou start to walk to the back of the room.\\nImmediately they get nervous, but without a word you\\njust calm them down by giving them a very fatherly look.\\n\\nYou rip a cord from the wall, tie it around your neck, and head for the lamp in the [[ceiling|nisac2]].",
+      "links": [
+        {
+          "text": "ceiling",
+          "destination": {
+            "name": "nisac2",
+            "pid": 156
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "left2",
+      "text": "\\n\\n\\nThe only thing to do is...\\nYou don't have an answer to this.\\n\\nInstead you try to find a version of the future where people don't get upset that you more or less unleashed a feral human pet upon the Makida and then lost control of it.\\n\\n\\n\\nAt the same time, you owe Nilo a lot.\\n\\nYou look up at the lamp hanging from the ceiling.\\nThe dimmer got busted a long time ago, so now the light is somewhat dark all the time.\\n\\n[[Could it hold your weight?|left3]]",
+      "links": [
+        {
+          "text": "Could it hold your weight?",
+          "destination": {
+            "name": "left3",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "left3",
+      "text": "\\n\\n\\nThe only thing you can do for Nilo is maybe be buried with the truth?\\n\\nAt the same time you seek a way that lets you evade\\ntough questions as half a billion people wonder\\nwhat happened.\\n\\nYou wouldn't be lying really.\\nThe thing is that you just don't know [[either|left4]].",
+      "links": [
+        {
+          "text": "either",
+          "destination": {
+            "name": "left4",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "kuntu4",
+      "text": "\\n\\n\\nYour body collapses on the ground.\\n\\n\"String him up.\"\\n\\nNilo points to the ceiling lamp.\\n\\nHe takes one last look and leaves before the two men (\"boys\"?) are done trying to stage this murder as a suicide.\\n\\n\\n[[...|end_1]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "end_1",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "w12",
+      "text": "\\n\\n\\nThe first day back from the almost dead is rather light.\\nAll those scientist and engineers and doctors understood that you'd be cranky, angry, and tired, lacking basic motor skills and even some brain functions.\\n\\nRoutine was the key, it seemed, and now you aren't required to do anything for the next 2 days.\\n\\nThe Makida controls itself, but you are a proud SANDMAN with responsibilites and POWER...\\n\\n[[let's get to it...|y1]]",
+      "links": [
+        {
+          "text": "let's get to it...",
+          "destination": {
+            "name": "y1",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "w11",
+      "text": "\\n\\nWhat else?\\n\\n\\n<<if $console>>@@opacity:0.6;Check console@@<<else>>[[Check console status|consoleboot]]<<endif>>\\n<<if $food>>@@opacity:0.6;Rehydrate acording to post-cryo program@@<<else>>[[Rehydrate acording to post-cryo program|food]]<<endif>>\\n<<if $ex>>@@opacity:0.6;Required post-cryo excerise program@@<<else>>[[Required post-cryo excercise program|ex]]<<endif>>\\n\\n<<if $console and $food and $ex>>\\n[[All done...|w12]]\\n<<endif>>",
+      "links": [
+        {
+          "text": "Check console status",
+          "destination": {
+            "name": "consoleboot",
+            "pid": 121
+          }
+        },
+        {
+          "text": "Rehydrate acording to post-cryo program",
+          "destination": {
+            "name": "food",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Required post-cryo excercise program",
+          "destination": {
+            "name": "ex",
+            "pid": 99
+          }
+        },
+        {
+          "text": "All done...",
+          "destination": {
+            "name": "w12",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "w10",
+      "text": "\\n\\nYou don't really feel like routine at the moment but you've decided to not screw this up.\\nThe other Sandmen didn't really let you in or believed in you.\\n\\nMaybe cause they knew how you got your spot?\\n@@opacity:0.3;(did they see your test score?)@@\\n\\nTime for the routine...\\n\\n[[Check console status|consoleboot]]\\n[[Rehydrate acording to post-cryo program|food]]\\n[[Required post-cryo excercise program|ex]]",
+      "links": [
+        {
+          "text": "Check console status",
+          "destination": {
+            "name": "consoleboot",
+            "pid": 121
+          }
+        },
+        {
+          "text": "Rehydrate acording to post-cryo program",
+          "destination": {
+            "name": "food",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Required post-cryo excercise program",
+          "destination": {
+            "name": "ex",
+            "pid": 99
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "w7",
+      "text": "\\n\\nThe good thing about soiling yourself is that you feel really motivated to getting up\\nfrom the floor and the feces pool that you now dwell in.\\n\\nYou grab hold of your cryotube and manage to get up,\\nbut the strain on your body makes you vomit right into your cryotube.\\n\\n//[[\"Fuck I have to get in there in a few years\"|w8]]//",
+      "links": [
+        {
+          "text": "\"Fuck I have to get in there in a few years\"",
+          "destination": {
+            "name": "w8",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "w6",
+      "text": "\\n\\nYour bowels start to turn and you soil yourself as you lie there on the space floor. In the cryogenic state you've only ingested a type of nutrient that's more or less totally absorbed by your body.\\nBut as you \"thaw\" your body re-boots.\\n\\nJust like emptying your cache folder, your body empties your bowels.\\n\\n[[Good start|w7]]",
+      "links": [
+        {
+          "text": "Good start",
+          "destination": {
+            "name": "w7",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "w5",
+      "text": "\\n\\nYou crawl out of the cryotube and immediately fall down.\\nYour muscles may be up to speed but your motor skills aren't.\\n\\nYou accept the fact that you need to start small and simply move your limbs while lying down.\\n\\nOne of the first thoughts that enters your mind is the \"waking-up-from-cryogenic-state-routine-class\" that you attended almost 100 years ago.\\n\\n[[Something about your internal organs waking up?|w6]]",
+      "links": [
+        {
+          "text": "Something about your internal organs waking up?",
+          "destination": {
+            "name": "w6",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "w4",
+      "text": "\\n\\nYour body feels stiff and even though some brain activity can be measured during the cryogenic state,\\nyou more or less haven't used it for several decades.\\n\\n[[Try to stand up|w5]]",
+      "links": [
+        {
+          "text": "Try to stand up",
+          "destination": {
+            "name": "w5",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "w3",
+      "text": "\\n\\nOver a hundred years ago they must have laughed at the animated sun,\\ngreeting you in this total darkness called space.\\n\\n[[Who's laughing now?|w4]]\\n\\n",
+      "links": [
+        {
+          "text": "Who's laughing now?",
+          "destination": {
+            "name": "w4",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "w2",
+      "text": "@@font-family:terminal;color:#DFFF03;font-size:450%;GOOD MORNING #11!@@\\n\\n[img[https://corruptreality.files.wordpress.com/2015/02/sun_anim.gif]]\\n\\n@@font-size:150%;<<timedinsert 4s>>[[fucking engineers|w3]]<<endtimedinsert>>@@",
+      "links": [
+        {
+          "text": "fucking engineers",
+          "destination": {
+            "name": "w3",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "w1",
+      "text": "\\n<<timedinsert 1s>>ID CLASS: - - SANDMAN<<endtimedinsert>>\\n<<timedinsert 2s>>SANDMAN ID GRADE: - - 11<<endtimedinsert>>\\n<<timedinsert 3s>>CIS STATUS: - - CRYOGENIC SLEEP<<endtimedinsert>>\\n<<timedinsert 4s>>MENTAL CIS: - - GOOD<<endtimedinsert>>\\n<<timedinsert 5s>>PHYSICAL CIS: - - STABLE<<endtimedinsert>>\\n\\n<<timedinsert 7s>>@@color:red;font-size:150%;WAKING SUBJECT@@<<endtimedinsert>>\\n\\n<<timedgoto \"w2\" 10s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "w2",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "w0",
+      "text": "\\nSUBJECT STATUS: STABLE\\n\\nMUSCLE RESTORATION AT@@color:red;<<timedreplace 3s>><html><span class=\"blink\"> 97%</span></html><<becomes>><html><span class=\"blink\"> 98%</span></html><<becomes>><html><span class=\"blink\"> 99%</span></html> @@ <<becomes>> @@color:#38FE00; 100%@@<<endtimedreplace>>\\n\\n<<timedgoto \"w0X\" 11s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "w0X",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "w9",
+      "text": "\\n\\nA few hours later you feel back on track.\\nAfter you've cleaned up your \"cache content\" you take a look at Sandman #10's cryotube.\\nThe only one that's not covered with dust and condensation.\\n\\n<<cyclinglink \"He\" \"She\">> looks so peaceful...\\n\\n\"Routine is the key\" as they said during training.\\n\\nOk.\\n\\nWake up? Check!\\nSoil yourself? Check!\\nGet cleaned up? Check!\\n\\n[[What now?|w10]]",
+      "links": [
+        {
+          "text": "What now?",
+          "destination": {
+            "name": "w10",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "w8",
+      "text": "\\n\\nYou look at the mess and decide that the worst is over and to clean it up later,\\nand instead start these 8 years with a hot shower.\\n\\n...\\n\\n<<timedinsert 3s>>You haven't showered for ages.\\nYou can literally feel and see dirt leaving your body (not only feces but also vomit).\\nSomewhat cathartic...\\n\\nA little display inside the shower is warning you to not take long showers as the water supply is limited and the water treatment facility can only work so fast.\\n\\n//[[\"shut up, I'll take my chance\"|w9]]//\\n<<endtimedinsert>>",
+      "links": [
+        {
+          "text": "\"shut up, I'll take my chance\"",
+          "destination": {
+            "name": "w9",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "w0X",
+      "text": "\\n\\n<<timedinsert 0.3s>>I<<endtimedinsert>><<timedinsert 0.6s>>N<<endtimedinsert>><<timedinsert 0.9s>>I<<endtimedinsert>><<timedinsert 1.2s>>T<<endtimedinsert>><<timedinsert 1.5s>>I<<endtimedinsert>><<timedinsert 1.8s>>A<<endtimedinsert>><<timedinsert 2.1s>>L<<endtimedinsert>><<timedinsert 2.4s>>I<<endtimedinsert>><<timedinsert 2.7s>>Z<<endtimedinsert>><<timedinsert 3s>>I<<endtimedinsert>><<timedinsert 3.3s>>N<<endtimedinsert>><<timedinsert 3.6s>>G<<endtimedinsert>>\\n\\n<<timedgoto \"w1\" 5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "w1",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "god",
+      "text": "<<set $god = true>> <<timedgoto \"h5\" 0s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h5",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "nd2",
+      "text": "\\n\\nNilo stands up.\\nWipes some sweat from his forehead.\\n\\n\\nHe looks at his two companions and points to the lamp in the ceiling.\\n\\nAs he walks away he doesn't turn around.\\n\\nHe's [[done|end_1]] with this now.",
+      "links": [
+        {
+          "text": "done",
+          "destination": {
+            "name": "end_1",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "passlistrun",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n\\n@@color:#00F70A;font-size:150%;<html><span class=\"blink\">RUNNING PROGRAM</span></html>@@\\n\\n<<timedgoto \"passlist\" 4s>>\\n",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "passlist",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "title2",
+      "text": "<<timedinsert 1.2s>>c<<endtimedinsert>><<timedinsert 1.5s>>a<<endtimedinsert>><<timedinsert 1.8s>>p<<endtimedinsert>><<timedinsert 2.1s>>s<<endtimedinsert>><<timedinsert 2.4s>>u<<endtimedinsert>><<timedinsert 2.7s>>l<<endtimedinsert>><<timedinsert 3s>>e<<endtimedinsert>> <<timedinsert 3.3s>>I<<endtimedinsert>><<timedinsert 3.6s>>I<<endtimedinsert>>\\n\\n<<timedgoto \"title3\" 4.5s>>\\n\\n<html>\\n<style>\\nbody {overflow:hidden}\\n</style>\\n</html>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "title3",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "hconsole",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n@@font-size:125%;C:/search/dir/passlist <<timedinsert 2s>>T<<endtimedinsert>><<timedinsert 3s>>O<<endtimedinsert>><<timedinsert 3.5s>>D<<endtimedinsert>><<timedinsert 4.2s>>D<<endtimedinsert>>@@\\n\\n<<timedgoto \"hconsole2\" 6.5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hconsole2",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "CSS",
+      "text": "(function(){ var render2 = Passage.prototype.render; Passage.prototype.render = function () { var b = render2.call(this); var t = this.tags.join(\" \"); document.body.setAttribute(\"data-tags\", t); b.setAttribute(\"data-tags\",t); return b; }; if(state) { var tgs = state.history[0].passage.tags.join(\" \"); var fc = $('passages').firstChild; fc.setAttribute(\"data-tags\",tgs); }}());if(state) (function(){ var it = setInterval(function(){ var fd = $('passages').firstChild; if (fd!=fc) { clearInterval(it); fd.setAttribute(\"data-tags\",tgs); } },0); }());",
+      "links": []
+    },
+    {
+      "pid": 52,
+      "name": "nilo",
+      "text": "<<set $nilo = true>><<timedgoto \"h22\" 0s>>\\n<<set $pity += 25>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h22",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "kuntublank",
+      "text": "<<if $shock1>><<timedgoto \"shock2\" 0.2s>><<endif>>\\n<<if $shock1 and $shock2>><<timedgoto \"shock3\" 0.8s>><<endif>>\\n<<if $shock1 and $shock2 and $shock3>><<timedgoto \"kuntu4\" 2s>><<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "shock2",
+            "pid": 151
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "shock3",
+            "pid": 147
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "kuntu4",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "h33",
+      "text": "@@opacity:0;fillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfilling@@ @@color:#FC0C0B;font-weight:bold;PITY POINTS: <<print $pity>>@@\\n\\n\\n\"Don't you understand why we stand here? Why I ran away? Why I have these now.\"\\n\\nNilo points to Kuntu and the other guy standing next to him.\\n\\n\"These are my Todds! You taught me the //how// and after a while I understood the //why//. And now you try to control me again. I'm here just to tell you that this is the last time we will meet.\"\\n\\n<<replace>>//\"Why must it be like this?\"//<<becomes>><<set $pity += either (15,30,20,12,10,19,13)>><<timedgoto \"h34\" 0s>><<endreplace>>\\n<<replace>>//\"Well I'm not that keen on seeing you either. Your fucking questions and everything!\"//<<becomes>><<set $pity -= either (30,21,14,12,10,16,19)>><<timedgoto \"h34\" 0s>><<endreplace>>\\n<<replace>>//\"Well maybe that's for the best.\"//<<becomes>><<set $pity -= either (10,9,11,12,15,8,17)>><<timedgoto \"h34\" 0s>><<endreplace>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h34",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "food3",
+      "text": "\\n\\nA small tray opens up and out comes a small cube wrapped in plastic\\nwith the words \"DISSOLVE IN WATER\" printed on it.\\n\\nYou do as the wrapper says and watch as the brownish cube dissolves, thus tainting the water.\\n\\nIt tastes better than you'd thought, but you still look forward to coffee in 13 days.\\n\\n[[...|w11]]\\n<<set $food = true>>",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "w11",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "niloconsole4",
+      "text": "\\n\\n\\n>>@@opacity:0.6;\\n\\n//(a small and simple bug. these sectors are a long way from home. hopefully #12 won't care. that's what I can do for you Nilo. let you be, even if I'm scared for what you're up to. but from now on you are a simple bug in the system)//@@\\n\\n\\n<<timedgoto \"h19\" 14s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h19",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "h31",
+      "text": "@@opacity:0;fillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfilling@@ @@color:#FC0C0B;font-weight:bold;PITY POINTS: <<print $pity>>@@\\n\\n\\nNilo doesn't answer, at first.\\n\"You wanted to see me. So here I am.\"\\n\\n<<timedinsert 2s>>//\"Well the thing is that my time is done. I must...retreat. There are others coming after me. I'm...I'm very tired.\"//<<endtimedinsert>>\\n\\n<<timedinsert 4s>>\"What are you saying?\"<<endtimedinsert>>\\n\\n<<timedinsert 6s>><<if $nilo>>//\"That it's time to go back into the cryotube. The Makida won't sustain all of us. But you can have my spot.\"//<<else>>//\"Pretty roughly it's basically like this, the Makida won't be able to keep more than two people alive. And I must get back into the tube. So that's where we stand...\"//<<endif>><<endtimedinsert>>\\n\\n<<timedinsert 10s>>Nilo doesn't respond at first. Instead, he gives you a look you've never seen [[before|h32]]...<<endtimedinsert>>",
+      "links": [
+        {
+          "text": "before",
+          "destination": {
+            "name": "h32",
+            "pid": 135
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "niloconsole3",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n@@color:red;font-size:200%;WARNING - Cryo leakage detected@@\\n\\n\\n//BUG REPORT TERMINAL//\\n//[ITEM: cryo leakage detection - warning]\\n\\n-dir/bugrep/term: <<timedinsert 2s>>B<<endtimedinsert>><<timedinsert 2.3s>>u<<endtimedinsert>><<timedinsert 2.7s>>g<<endtimedinsert>><<timedinsert 2.9s>>_<<endtimedinsert>><<timedinsert 3.2s>>I<<endtimedinsert>><<timedinsert 3.5s>>D<<endtimedinsert>><<timedinsert 4s>>:<<endtimedinsert>><<timedinsert 4.3s>>T<<endtimedinsert>><<timedinsert 4.5s>>R<<endtimedinsert>><<timedinsert 5s>>U<<endtimedinsert>><<timedinsert 5.2s>>E<<endtimedinsert>>\\n\\n\\n<<timedinsert 7s>><<replace>>SANDMAN AUTHENTICATION<<becomes>>SANDMAN ID AUTHENTICATED: SANDMAN_#11\\n\\n\\n[[END CONSOLE|niloconsole4]]\\n<<endreplace>><<endtimedinsert>>\\n\\n\\n",
+      "links": [
+        {
+          "text": "END CONSOLE",
+          "destination": {
+            "name": "niloconsole4",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "niloconsole2",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n@@color:red;font-size:200%;WARNING - Cryo leakage detected@@\\n\\n//Following SECTORS contain CRYOTUBE LEAKAGE://\\n\\n24-R\\n24-G\\n24-F\\n24-J\\n25-K\\n29-Q\\n\\n\\n[[BUG REPORT|niloconsole3]]",
+      "links": [
+        {
+          "text": "BUG REPORT",
+          "destination": {
+            "name": "niloconsole3",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "y15",
+      "text": "\\n\\n**@@font-size:150%;//two and half years after wakeup//@@\\n\\n<<timedgoto \"a6\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "a6",
+            "pid": 141
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "y14",
+      "text": "<<timedinsert 1s>>ROUTINE<<endtimedinsert>> <<timedinsert 1.1s>>ROUTINE<<endtimedinsert>> <<timedinsert 1.2s>>ROUTINE<<endtimedinsert>> <<timedinsert 1.2s>>ROUTINE<<endtimedinsert>> <<timedinsert 1.3s>>INSANE<<endtimedinsert>> <<timedinsert 1.4s>>ROUTINE<<endtimedinsert>> <<timedinsert 1.5s>>ROUTINE<<endtimedinsert>> <<timedinsert 1.6s>>ROUTINE<<endtimedinsert>> <<timedinsert 1.7s>>ROUTINE<<endtimedinsert>> <<timedinsert 1.8s>>ROUTINE<<endtimedinsert>> <<timedinsert 1.9s>>DEMENTED<<endtimedinsert>> <<timedinsert 2s>>ROUTINE<<endtimedinsert>> <<timedinsert 2.1s>>ROUTINE<<endtimedinsert>> <<timedinsert 2.2s>>ROUTINE<<endtimedinsert>> <<timedinsert 2.3s>>ROUTINE<<endtimedinsert>> <<timedinsert 2.4s>>CRAZY<<endtimedinsert>> <<timedinsert 2.5s>>ROUTINE<<endtimedinsert>> <<timedinsert 2.6s>>ROUTINE<<endtimedinsert>> <<timedinsert 2.7s>>ROUTINE<<endtimedinsert>> <<timedinsert 2.8s>>ROUTINE<<endtimedinsert>> <<timedinsert 2.9s>>ROUTINE<<endtimedinsert>> <<timedinsert 3s>>ROUTINE<<endtimedinsert>> <<timedinsert 3.1s>>MADNESS<<endtimedinsert>> <<timedinsert 3.2s>>ROUTINE<<endtimedinsert>> <<timedinsert 3.3s>>ROUTINE<<endtimedinsert>> <<timedinsert 3.4s>>ROUTINE<<endtimedinsert>> <<timedinsert 3.5s>>ROUTINE<<endtimedinsert>> <<timedinsert 3.6s>>ROUTINE<<endtimedinsert>> <<timedinsert 3.7s>>ROUTINE<<endtimedinsert>> <<timedinsert 3.8s>>PSYCHOTIC<<endtimedinsert>>\\n//@@font-size:45%;<<timedinsert 5s>>[[\"routine is key!\"|y15]]<<endtimedinsert>>@@//",
+      "links": [
+        {
+          "text": "\"routine is key!\"",
+          "destination": {
+            "name": "y15",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "y11",
+      "text": "\\n\\nSo a while back, you became curious about all those people inside the tubes.\\nThe whole passenger manifest was at your hands, so you started to read a bit about them.\\n\\nAnd as you grew weary and bored you've been going on \"safaris\" where you first read up a bit about the one you'll visit and then see if that person's appearence matches your expectations.\\n\\nToday you'll visit <<if $susan>>Susan<<endif>><<if $ali>>Ali<<endif>><<if $geoff>>Geoff<<endif>><<if $sven>>Sven<<endif>>.\\n\\nYou've adjusted your algorithm for picking passengers so it's close by...\\n\\n[[You don't want to travel like all over the ship|y12]]",
+      "links": [
+        {
+          "text": "You don't want to travel like all over the ship",
+          "destination": {
+            "name": "y12",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "shock1",
+      "text": "<<timedgoto \"kuntublank\" 0.2s>>\\n<<set $shock1 = true>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "kuntublank",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "y13",
+      "text": "\\n\\n**@@font-size:150%;//two years after wakeup//@@\\n\\n<<timedgoto \"y14\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "y14",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "y12",
+      "text": "\\n\\n<<if $susan>>@@font-family:swanky and moo moo;font-size:120%;\"I'm Susan...so nice to get rid of all criminals I've been chasing and I don't like my mother at all!\"@@<<endif>><<if $ali>>@@font-family:neucha;font-size:120%;\"I'm Ali I'm really deep and write stuff and probably bite on my glasses so I look smart and I read the news paper every day, cause I care about stuff\"@@<<endif>><<if $geoff>>@@font-family:gochi hand;font-size:120%;\"I'm Geoff and I don't like young people cause I never had a proper childhood and therefore no one else should have fun. Be quiet while I engineer stuff!\"@@<<endif>><<if $sven>>@@font-family:walter turncoat;font-size:120%;\"I'm in fucking space! What do you say now Linda? Huh? Yeah I'm just stupid Sven and I won't do nuthin' great ever! Well fuck you Linda!\"@@<<endif>>\\n\\n<<timedinsert 6s>>You don't really know that much to portray a believable character...\\n\\n<<timedinsert 2s>>[[It's stupid anyway|y13]]<<endtimedinsert>>\\n\\n<<endtimedinsert>>",
+      "links": [
+        {
+          "text": "It's stupid anyway",
+          "destination": {
+            "name": "y13",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "h8",
+      "text": "\\n\\n**@@font-size:150%;//two days later//@@\\n\\n<<timedgoto \"h9\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h9",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "INSERT MACRO",
+      "text": "(function(){version.extensions.replaceMacrosCombined={major:1,minor:1,revision:3};var nullobj={handler:function(){}};function showVer(n,notrans){if(!n){return\\n}n.innerHTML=\"\";new Wikifier(n,n.tweecode);n.setAttribute(\"data-enabled\",\"true\");n.style.display=\"inline\";n.classList.remove(\"revision-span-out\");\\nif(!notrans){n.classList.add(\"revision-span-in\");if(n.timeout){clearTimeout(n.timeout)}n.timeout=setTimeout(function(){n.classList.remove(\"revision-span-in\");\\nn=null},1)}}function hideVer(n,notrans){if(!n){return}n.setAttribute(\"data-enabled\",\"false\");n.classList.remove(\"revision-span-in\");\\nif(n.timeout){clearTimeout(n.timeout)}if(!notrans){n.classList.add(\"revision-span-out\");n.timeout=setTimeout(function(){if(n.getAttribute(\"data-enabled\")==\"false\"){n.classList.remove(\"revision-span-out\");\\nn.style.display=\"none\";n.innerHTML=\"\"}n=null},1000)}else{n.style.display=\"none\";n.innerHTML=\"\";n=null}}function tagcontents(b,starttags,desttags,endtags,k){var l=0,c=\"\",tg,a,i;\\nfunction tagfound(i,e){for(var j=0;j<e.length;j++){if(a.indexOf(\"<<\"+e[j],i)==i){return e[j]}}}a=b.source.slice(k);for(i=0;\\ni<a.length;i++){if(tg=tagfound(i,starttags)){l++}else{if((tg=tagfound(i,desttags))&&l==0){b.nextMatch=k+i+tg.length+4;return[c,tg]\\n}else{if(tg=tagfound(i,endtags)){l--;if(l<0){return null}}}}c+=a.charAt(i)}return null}var begintags=[];var endtags=[];function revisionSpanHandler(g,e,f,b){var k=b.source.indexOf(\">>\",b.matchStart)+2,vsns=[],vtype=e,flen=f.length,becomes,c,cn,m,h,vsn;\\nfunction mkspan(vtype){h=insertElement(m,\"span\",null,\"revision-span \"+vtype);h.setAttribute(\"data-enabled\",false);h.style.display=\"none\";\\nh.tweecode=\"\";return h}if(this.shorthand&&flen){while(f.length>0){vsns.push([f.shift(),(this.flavour==\"insert\"?\"gains\":\"becomes\")])\\n}}else{if(this.flavour==\"insert\"||(this.flavour==\"continue\"&&this.trigger==\"time\")){vsns.push([\"\",\"becomes\"])}}if(this.flavour==\"continue\"&&flen){b.nextMatch=k+b.source.slice(k).length;\\nvsns.push([b.source.slice(k),vtype])}else{becomes=[\"becomes\",\"gains\"];c=tagcontents(b,begintags,becomes.concat(endtags),endtags,k);\\nif(c&&endtags.indexOf(c[1])==-1){while(c){vsns.push(c);c=tagcontents(b,begintags,becomes,endtags,b.nextMatch)}c=tagcontents(b,begintags,[\"end\"+e],endtags,b.nextMatch)\\n}if(!c){throwError(g,\"can't find matching end\"+e);return}vsns.push(c);if(this.flavour==\"continue\"){k=b.nextMatch;b.nextMatch=k+b.source.slice(k).length;\\nvsns.push([b.source.slice(k),\"\"])}}if(this.flavour==\"remove\"){vsns.push([\"\",\"becomes\"])}cn=0;m=insertElement(g,\"span\",null,e);\\nm.setAttribute(\"data-flavour\",this.flavour);h=mkspan(\"initial\");vsn=vsns.shift();h.tweecode=vsn[0];showVer(h,true);while(vsns.length>0){if(vsn){vtype=vsn[1]\\n}vsn=vsns.shift();h=mkspan(vtype);h.tweecode=vsn[0]}if(typeof this.setup==\"function\"){this.setup(m,g,f)}}function quantity(m){return(m.children.length-1)+(m.getAttribute(\"data-flavour\")==\"remove\")\\n}function revisionSetup(m,g,f){m.className+=\" \"+f[0].replace(\" \",\"_\")}function keySetup(m,g,f){var key=f[0];m.setEventListener(\"keydown\",function l(e){var done=!revise(\"revise\",m);\\nif(done){m.removeEventListener(\"keydown\",l)}})}function timeSetup(m,g,f){function cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0}}}throwError(g,s+\" isn't a CSS time unit\");\\nreturn 0}var tm=cssTimeUnit(f[0]);setTimeout(function timefn(){var done=!revise(\"revise\",m);if(!done){setTimeout(timefn,tm)\\n}},tm)}function hoverSetup(m){var fn,noMouseEnter=(document.head.onmouseenter!==null);m.onmouseenter=function(){revise(\"revise\",this)\\n};m.onmouseleave=function(){revise(\"revert\",this)};if(noMouseEnter){fn=function(n){return function(e){if(!event.relatedTarget||(event.relatedTarget!=this&&!(this.compareDocumentPosition(event.relatedTarget)&Node.DOCUMENT_POSITION_CONTAINED_BY))){this[n]()\\n}}};m.onmouseover=fn(\"onmouseenter\");m.onmouseout=fn(\"onmouseleave\")}m=null}function mouseSetup(m){var evt=(document.head.onmouseenter===null?\"onmouseenter\":\"onmouseover\");\\nm[evt]=function(){var done=!revise(\"revise\",this);if(done){this[evt]=null}};m=null}function linkSetup(m,g,f){var l=Wikifier.createInternalLink(),p=m.parentNode;\\nl.className=\"internalLink replaceLink\";p.insertBefore(l,m);l.insertBefore(m,null);l.onclick=function(){var p,done=false;if(m&&m.parentNode==this){done=!revise(\"revise\",m);\\nscrollWindowTo(m)}if(done){this.parentNode.insertBefore(m,this);this.parentNode.removeChild(this)}};l=null}function visitedSetup(m,g,f){var i,done,shv=state.history[0].variables,os=\"once seen\",d=(m.firstChild&&(this.flavour==\"insert\"?m.firstChild.nextSibling:m.firstChild).tweecode);\\nshv[os]=shv[os]||{};if(d&&!shv[os].hasOwnProperty(d)){shv[os][d]=1}else{for(i=shv[os][d];i>0&&!done;i--){done=!revise(\"revise\",m,true)\\n}if(shv[os].hasOwnProperty(d)){shv[os][d]+=1}}}[{name:\"insert\",flavour:\"insert\",trigger:\"link\",setup:linkSetup},{name:\"timedinsert\",flavour:\"insert\",trigger:\"time\",setup:timeSetup},{name:\"insertion\",flavour:\"insert\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"later\",flavour:\"insert\",trigger:\"visited\",setup:visitedSetup},{name:\"keyinsert\",flavour:\"insert\",trigger:\"key\",setup:keySetup},{name:\"replace\",flavour:\"replace\",trigger:\"link\",setup:linkSetup},{name:\"timedreplace\",flavour:\"replace\",trigger:\"time\",setup:timeSetup},{name:\"mousereplace\",flavour:\"replace\",trigger:\"mouse\",setup:mouseSetup},{name:\"hoverreplace\",flavour:\"replace\",trigger:\"hover\",setup:hoverSetup},{name:\"revision\",flavour:\"replace\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"keyreplace\",flavour:\"replace\",trigger:\"key\",setup:keySetup},{name:\"timedremove\",flavour:\"remove\",trigger:\"time\",setup:timeSetup},{name:\"mouseremove\",flavour:\"remove\",trigger:\"mouse\",setup:mouseSetup},{name:\"hoverremove\",flavour:\"remove\",trigger:\"hover\",setup:hoverSetup},{name:\"removal\",flavour:\"remove\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"once\",flavour:\"remove\",trigger:\"visited\",setup:visitedSetup},{name:\"keyremove\",flavour:\"remove\",trigger:\"key\",setup:keySetup},{name:\"continue\",flavour:\"continue\",trigger:\"link\",setup:linkSetup},{name:\"timedcontinue\",flavour:\"continue\",trigger:\"time\",setup:timeSetup},{name:\"mousecontinue\",flavour:\"continue\",trigger:\"mouse\",setup:mouseSetup},{name:\"keycontinue\",flavour:\"continue\",trigger:\"key\",setup:keySetup},{name:\"cycle\",flavour:\"cycle\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"mousecycle\",flavour:\"cycle\",trigger:\"mouse\",setup:mouseSetup},{name:\"timedcycle\",flavour:\"cycle\",trigger:\"time\",setup:timeSetup},{name:\"keycycle\",flavour:\"replace\",trigger:\"key\",setup:keySetup}].forEach(function(e){e.handler=revisionSpanHandler;\\ne.shorthand=([\"link\",\"mouse\",\"hover\"].indexOf(e.trigger)>-1);macros[e.name]=e;macros[\"end\"+e.name]=nullobj;begintags.push(e.name);\\nendtags.push(\"end\"+e.name)});function insideDepartingSpan(elem){var r=elem.parentNode;while(!r.classList.contains(\"passage\")){if(r.classList.contains(\"revision-span-out\")){return true\\n}r=r.parentNode}}function reviseAll(rt,rname){var rall=document.querySelectorAll(\".passage [data-flavour].\"+rname),ret=false;\\nfor(var i=0;i<rall.length;i++){if(!insideDepartingSpan(rall[i])){ret=revise(rt,rall[i])||ret}}return ret}function revise(rt,r,notrans){var ind2,curr,next,ind=-1,rev=(rt==\"revert\"),rnd=(rt.indexOf(\"random\")>-1),fl=r.getAttribute(\"data-flavour\"),rc=r.childNodes,cyc=(fl==\"cycle\"),rcl=rc.length-1;\\nfunction doToGainerSpans(n,fn){for(var k=n-1;k>=0;k--){if(rc[k+1].classList.contains(\"gains\")){fn(rc[k],notrans)}else{break\\n}}}for(var k=0;k<=rcl;k++){if(rc[k].getAttribute(\"data-enabled\")==\"true\"){ind=k}}if(rev){ind-=1}curr=(ind>=0?rc[ind]:(cyc?rc[rcl]:null));\\nind2=ind;if(rnd){ind2=(ind+(Math.floor(Math.random()*rcl)))%rcl}next=((ind2<rcl)?rc[ind2+1]:(cyc?rc[0]:null));var docurr=(rev?showVer:hideVer);\\nvar donext=(rev?hideVer:showVer);var currfn=function(){if(!(next&&next.classList.contains(\"gains\"))||rnd){docurr(curr,notrans);\\ndoToGainerSpans(ind,docurr,notrans)}};var nextfn=function(){donext(next,notrans);if(rnd){doToGainerSpans(ind2+1,donext,notrans)\\n}};if(!rev){currfn();nextfn()}else{nextfn();currfn()}return(cyc?true:(rev?(ind>0):(ind2<rcl-1)))}macros.revert=macros.revise=macros.randomise=macros.randomize={handler:function(a,b,c){var l,rev,rname;\\nfunction disableLink(l){l.style.display=\"none\"}function enableLink(l){l.style.display=\"inline\"}function updateLink(l){if(l.className.indexOf(\"random\")>-1){enableLink(l);\\nreturn}var rall=document.querySelectorAll(\".passage [data-flavour].\"+rname),cannext,canprev,i,ind,r,fl;for(i=0;i<rall.length;\\ni++){r=rall[i],fl=r.getAttribute(\"data-flavour\");if(insideDepartingSpan(r)){continue}if(fl==\"cycle\"){cannext=canprev=true\\n}else{if(r.firstChild.getAttribute(\"data-enabled\")==!1+\"\"){canprev=true}if(r.lastChild.getAttribute(\"data-enabled\")==!1+\"\"){cannext=true\\n}}}var can=(l.classList.contains(\"revert\")?canprev:cannext);(can?enableLink:disableLink)(l)}function toggleText(w){w.classList.toggle(rl+\"Enabled\");\\nw.classList.toggle(rl+\"Disabled\");w.style.display=((w.style.display==\"none\")?\"inline\":\"none\")}var rl=\"reviseLink\";if(c.length<2){throwError(a,b+\" macro needs 2 parameters\");\\nreturn}rname=c.shift().replace(\" \",\"_\");l=Wikifier.createInternalLink(a,null);l.className=\"internalLink \"+rl+\" \"+rl+\"_\"+rname+\" \"+b;\\nvar v=\"\";var end=false;var out=false;if(c.length>1&&c[0][0]==\"$\"){v=c[0].slice(1);c.shift()}switch(c[c.length-1]){case\"end\":end=true;\\nc.pop();break;case\"out\":out=true;c.pop();break}var h=state.history[0].variables;for(var i=0;i<c.length;i++){var on=(i==Math.max(c.indexOf(h[v]),0));\\nvar d=insertElement(null,\"span\",null,rl+((on)?\"En\":\"Dis\")+\"abled\");if(on){h[v]=c[i];l.setAttribute(\"data-cycle\",i)}else{d.style.display=\"none\"\\n}insertText(d,c[i]);l.appendChild(d)}l.onclick=function(){reviseAll(b,rname);var t=this.childNodes,u=this.getAttribute(\"data-cycle\")-0,m=t.length,n,lall,i;\\nif((end||out)&&u==m-(end?2:1)){if(end){n=this.removeChild(t[u+1]);n.className=rl+\"End\";n.style.display=\"inline\";this.parentNode.replaceChild(n,this)\\n}else{this.parentNode.removeChild(this);return}}else{toggleText(t[u]);u=(u+1)%m;if(v){h[v]=c[u]}toggleText(t[u]);this.setAttribute(\"data-cycle\",u)\\n}lall=document.getElementsByClassName(rl+\"_\"+rname);for(i=0;i<lall.length;i++){updateLink(lall[i])}};l=null}};macros.mouserevise=macros.hoverrevise={handler:function(a,b,c,d){var endtags=[\"end\"+b],evt=(window.onmouseenter===null?\"onmouseenter\":\"onmouseover\"),t=tagcontents(d,[b],endtags,endtags,d.source.indexOf(\">>\",d.matchStart)+2);\\nif(t){var rname=c[0].replace(\" \",\"_\"),h=insertElement(a,\"span\",null,\"hoverrevise hoverrevise_\"+rname),f=function(){var done=!reviseAll(\"revise\",rname);\\nif(b!=\"hoverrevise\"&&done){this[evt]=null}};new Wikifier(h,t[0]);if(b==\"hoverrevise\"){h.onmouseover=f;h.onmouseout=function(){reviseAll(\"revert\",rname)\\n}}else{h[evt]=f}h=null}}};macros.instantrevise={handler:function(a,b,c,d){reviseAll(\"revise\",c[0].replace(\" \",\"_\"))}};macros.endmouserevise=nullobj;\\nmacros.endhoverrevise=nullobj}());",
+      "links": []
+    },
+    {
+      "pid": 68,
+      "name": "h34",
+      "text": "@@opacity:0;fillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfilling@@ @@color:#FC0C0B;font-weight:bold;PITY POINTS: <<print $pity>>@@\\n\\n\\n\\nNilo turns around and starts to walk away.\\nNo words. Not even a nod.\\nEven his footsteps seem muted.\\n\\n<<replace>>//\"This isn't what I wanted! I'm sorry!\"//<<becomes>><<set $pity += either (24,14,16,15,17,19)>><<timedgoto \"h35\" 0s>><<endreplace>>\\n<<replace>>//\"Ok, yeah, just walk away. That's it.\"//<<becomes>><<set $pity -= either (3,20,18,9,11,13,16)>><<timedgoto \"h35\" 0s>><<endreplace>>\\n<<replace>>//\"I can't stop you...just don't forget me!\"//<<becomes>><<set $pity -= either (25,5,9,11,6,7,4)>><<timedgoto \"h35\" 0s>><<endreplace>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h35",
+            "pid": 145
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "h2",
+      "text": "\\nFinally Todd opens his eyes.\\nYou haven't eaten or slept.\\nYou couldn't.\\n\\nYou're too excited.\\nYou have a friend!!\\n\\n\"Where am I?\"\\n\\nTodd wakes up...\\n\\n<<timedinsert 6s>>//\"You don't need to worry, you're safe on board the Makida\"//<<endtimedinsert>>\\n\\n<<timedinsert 8s>>\"What's a Makida, and why is your face white?\"<<endtimedinsert>>\\n\\n<<timedinsert 10s>>Todd passes out again.<<endtimedinsert>>\\n\\n[[...|h3]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "h3",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "h3",
+      "text": "\\n(\"What's a Makida?\")\\nDoesn't he know?\\n\\nYou realize that you're still in your clown costume and that's probably why he wondered why your face was white.\\n\\nYour head is spinning and you kinda feel invigorated with power.\\nTodd's brain must've messed with his memory. Is he like a blank piece of paper?\\n\\n<<timedinsert 8s>>(\"of course I'm not crazy!! I just wanna manipulate people a bit!! nothing wrong with taht, adn Im jstu gald tot haev a freind aigan woh I cna paly wiht adn gte to kown IST GONA BEE SOOO MUTCH FNUUUUUU!!!)<<endtimedinsert>>\\n\\n<<timedinsert 12s>>Todd wakes up again.\\n\\n//\"Hi\"//\\nTodd's eyes are drowsy and he looks weak.\\n\"Who am...who am I\"<<endtimedinsert>>\\n\\n<<timedinsert 15s>>[[\"and who are you\"|h4]]<<endtimedinsert>>",
+      "links": [
+        {
+          "text": "\"and who are you\"",
+          "destination": {
+            "name": "h4",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "end_1",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n@@color:red;font-size:200%;<html><span class=\"blink\">! WARNING - SANDMAN VITALS NOT RECORDED</span></html>@@\\n\\n<<timedgoto \"end_2\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "end_2",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "h1",
+      "text": "\\n\\n**@@font-size:150%;//one day later//@@\\n\\n<<timedgoto \"h2\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h2",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "h6",
+      "text": "\\n\\n\\n<<if $god>>\\n\"Are you truly a God? You look very...human. Can I touch you?\"<<else>>\"Where's Mom? I don't remember you? Are you angry with me?\"<<endif>>\\n\\n<<timedinsert 4s>><<if $god>>\\n//\"Yes of course you can touch me. But only when I allow it. You shall never anger your God. For...different reasons\".//<<else>>//\"No I'm not angry with you. Why should I be? I'm just glad I found you\".//<<endif>><<endtimedinsert>>\\n\\n[[(where's this going?)|h6-1]]",
+      "links": [
+        {
+          "text": "(where's this going?)",
+          "destination": {
+            "name": "h6-1",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "h7",
+      "text": "\\n\\nTodd is like a puppet -- he's easy to control and doesn't object to anything.\\n\\nYou get back to the slug and even though he asks a lot of questions you try to answer them in the most suitable way.\\n\\n(\"I GET TO DECIDDE WAHT TWO SYA NWO. TISH IS MY TMIE TO SIHNE!\")\\n\\n\\nOn and off Todd passes out.\\nThe human body isn't really fitted for cryosleep.\\nAnd certainly not to just snap out of it.\\n\\n[[better let him sleep...|h8]]",
+      "links": [
+        {
+          "text": "better let him sleep...",
+          "destination": {
+            "name": "h8",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "h4",
+      "text": "\\n\\n\\n//\"Well I'm a Sandman and you can put all your faith in me and trust that I'll take care of you\"//\\n\\n[[Oh so you're my parent?|h5]]\\n[[Are you my GOD?|god]]",
+      "links": [
+        {
+          "text": "Oh so you're my parent?",
+          "destination": {
+            "name": "h5",
+            "pid": 76
+          }
+        },
+        {
+          "text": "Are you my GOD?",
+          "destination": {
+            "name": "god",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "h5",
+      "text": "\\n\\n\\n<<if $god>>\\n//\"Yes. I'm a God. YOUR God to be precise. I reign over you and I watch over you...\"//<<else>>//\"Yes that's right. I'm your dad. And you are my son...\"//<<endif>>\\n\\n[[(what?)|h6]]",
+      "links": [
+        {
+          "text": "(what?)",
+          "destination": {
+            "name": "h6",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "Start",
+      "text": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n@@font-family:courier;opacity:0.6;font-size:65%;//(Properly experienced in Chrome on a computer)//@@\\n\\n\\n\\n@@font-size:75%;opacity:0.7;[[OK|Start2]]@@\\n\\n\\n\\n\\n@@opacity:0.4;font-size:45%;font-family:courier;tw: abuse, suicide@@",
+      "links": [
+        {
+          "text": "OK",
+          "destination": {
+            "name": "Start2",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "info3",
+      "text": "Each sandmen is required to manage at least 8 years...alone.\\n\\nThe job would be tedious and sometimes months would pass by without any tasks to perform. The simulation back on Earth showed promising results. But simulation is not reality.\\n\\nTests showed that human interaction after a long time of solitude could be \"unstable\". So even when two sandmen switched, they never met.\\n\\nTests also showed that one in 12 would not sustain mental stability during those 8 years. But they had no choice.\\n\\n[[...|title2]]\\n",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "title2",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "info2",
+      "text": "Nuclear Pulse Propulsion was the answer to get to the \"loop\" relativetly fast (95 years).\\n\\nCryotubes would freeze what was left of the human race as the self-controlling ship would steer towards the \"loop\".\\n\\nEven though the Makida //was// self-controlling, it was decided that someone had to stay awake.\\n\\nSomeone who didn't suffer from muscle atrophy upon wakeup and could act in case something would go wrong.\\n\\nTherefore, the Sandman project was initated.\\n\\n[[...|info3]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "info3",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "TIMEDINSERT",
+      "text": "(function(){version.extensions.replaceMacrosCombined={major:1,minor:0,revision:1};\\nvar nullobj={handler:function(){}};function showVer(n,notrans){n.innerHTML=\"\";\\nnew Wikifier(n,n.tweecode);n.setAttribute(\"data-enabled\",\"true\");\\nn.style.display=\"inline\";n.classList.remove(\"revision-span-out\");\\nif(!notrans){n.classList.add(\"revision-span-in\");if(n.timeout){clearTimeout(n.timeout)\\n}n.timeout=setTimeout(function(){n.classList.remove(\"revision-span-in\");\\nn=null},1)}}function hideVer(n,notrans){n.setAttribute(\"data-enabled\",\"false\");\\nn.classList.remove(\"revision-span-in\");if(n.timeout){clearTimeout(n.timeout)\\n}if(!notrans){n.classList.add(\"revision-span-out\");n.timeout=setTimeout(function(){if(n.getAttribute(\"data-enabled\")==\"false\"){n.classList.remove(\"revision-span-out\");\\nn.style.display=\"none\";n.innerHTML=\"\"}n=null},1000)}else{n.style.display=\"none\";\\nn.innerHTML=\"\";n=null}}function tagcontents(b,starttags,desttags,endtags,k){var l=0,c=\"\",tg,a,i;\\nfunction tagfound(i,e){for(var j=0;j<e.length;j++){if(a.indexOf(\"<<\"+e[j],i)==i){return e[j]\\n}}}a=b.source.slice(k);for(i=0;i<a.length;i++){if(tg=tagfound(i,starttags)){l++\\n}else{if((tg=tagfound(i,desttags))&&l==0){b.nextMatch=k+i+tg.length+4;\\nreturn[c,tg]}else{if(tg=tagfound(i,endtags)){l--;if(l<0){return null\\n}}}}c+=a.charAt(i)}return null}var begintags=[];var endtags=[];\\nfunction revisionSpanHandler(g,e,f,b){var k=b.source.indexOf(\">>\",b.matchStart)+2,vsns=[],vtype=e,flen=f.length,becomes,c,cn,m,h,vsn;\\nfunction mkspan(vtype){h=insertElement(m,\"span\",null,\"revision-span \"+vtype);\\nh.setAttribute(\"data-enabled\",false);h.style.display=\"none\";h.tweecode=\"\";\\nreturn h}if(this.shorthand&&flen){while(f.length>0){vsns.push([f.shift(),(this.flavour==\"insert\"?\"gains\":\"becomes\")])\\n}}else{if(this.flavour==\"insert\"||(this.flavour==\"continue\"&&this.trigger==\"time\")){vsns.push([\"\",\"becomes\"])\\n}}if(this.flavour==\"continue\"&&flen){b.nextMatch=k+b.source.slice(k).length;\\nvsns.push([b.source.slice(k),vtype])}else{becomes=[\"becomes\",\"gains\"];\\nc=tagcontents(b,begintags,becomes.concat(endtags),endtags,k);\\nif(c&&endtags.indexOf(c[1])==-1){while(c){vsns.push(c);c=tagcontents(b,begintags,becomes,endtags,b.nextMatch)\\n}c=tagcontents(b,begintags,[\"end\"+e],endtags,b.nextMatch)}if(!c){throwError(g,\"can't find matching end\"+e);\\nreturn}vsns.push(c);if(this.flavour==\"continue\"){k=b.nextMatch;\\nb.nextMatch=k+b.source.slice(k).length;vsns.push([b.source.slice(k),\"\"])\\n}}if(this.flavour==\"remove\"){vsns.push([\"\",\"becomes\"])}console.log(JSON.stringify(vsns));\\ncn=0;m=insertElement(g,\"span\",null,e);m.setAttribute(\"data-flavour\",this.flavour);\\nh=mkspan(\"initial\");vsn=vsns.shift();console.log(e+\" \"+vsn[0]);\\nh.tweecode=vsn[0];showVer(h,true);while(vsns.length>0){if(vsn){vtype=vsn[1]\\n}vsn=vsns.shift();h=mkspan(vtype);h.tweecode=vsn[0]}if(typeof this.setup==\"function\"){this.setup(m,g,f)\\n}}function quantity(m){return(m.children.length-1)+(m.getAttribute(\"data-flavour\")==\"remove\")\\n}function revisionSetup(m,g,f){m.className+=\" \"+f[0].replace(\" \",\"_\");\\nshowVer(m.firstChild,true)}function keySetup(m,g,f){var fl=this.flavour,key=f[0];\\nm.setEventListener(\"keydown\",function l(e){var done=!revise(\"revise\",m);\\nif(done){m.removeEventListener(\"keydown\",l)}})}function timeSetup(m,g,f){function cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0\\n}}}throwError(g,s+\" isn't a CSS time unit\");return 0}var fl=this.flavour;\\nvar tm=cssTimeUnit(f[0]);setTimeout(function timefn(){var done=!revise(\"revise\",m);\\nif(!done){setTimeout(timefn,tm)}},tm)}function hoverSetup(m){m.onmouseover=function(){revise(\"revise\",this)\\n};m.onmouseout=function(){revise(\"revert\",this)};m=null}function mouseSetup(m){var fl=this.flavour,evt=(window.onmouseenter===null?\"onmouseenter\":\"onmouseover\");\\nm[evt]=function(){var done=!revise(\"revise\",this);if(done){this[evt]=null\\n}};m=null}function linkSetup(m,g,f){var fl=this.flavour,l=Wikifier.createInternalLink(),p=m.parentNode;\\nl.className=\"internalLink replaceLink\";p.insertBefore(l,m);l.insertBefore(m,null);\\nl.onclick=function(){var p,done=false;if(m&&m.parentNode==this){done=!revise(\"revise\",m);\\nscrollWindowTo(m)}if(done){this.parentNode.insertBefore(m,this);\\nthis.parentNode.removeChild(this)}};l=null}function visitedSetup(m,g,f){var i,done,shv=state.history[0].variables,os=\"once seen\",d=(m.firstChild&&(this.flavour==\"insert\"?m.firstChild.nextSibling:m.firstChild).tweecode);\\nshv[os]=shv[os]||{};if(d&&!shv[os].hasOwnProperty(d)){shv[os][d]=1\\n}else{for(i=shv[os][d];i>0&&!done;i--){done=!revise(\"revise\",m,true)\\n}if(shv[os].hasOwnProperty(d)){shv[os][d]+=1}}}[{name:\"insert\",flavour:\"insert\",trigger:\"link\",setup:linkSetup},{name:\"timedinsert\",flavour:\"insert\",trigger:\"time\",setup:timeSetup},{name:\"insertion\",flavour:\"insert\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"later\",flavour:\"insert\",trigger:\"visited\",setup:visitedSetup},{name:\"keyinsert\",flavour:\"insert\",trigger:\"key\",setup:keySetup},{name:\"replace\",flavour:\"replace\",trigger:\"link\",setup:linkSetup},{name:\"timedreplace\",flavour:\"replace\",trigger:\"time\",setup:timeSetup},{name:\"mousereplace\",flavour:\"replace\",trigger:\"mouse\",setup:mouseSetup},{name:\"hoverreplace\",flavour:\"replace\",trigger:\"hover\",setup:hoverSetup},{name:\"revision\",flavour:\"replace\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"keyreplace\",flavour:\"replace\",trigger:\"key\",setup:keySetup},{name:\"timedremove\",flavour:\"remove\",trigger:\"time\",setup:timeSetup},{name:\"mouseremove\",flavour:\"remove\",trigger:\"mouse\",setup:mouseSetup},{name:\"hoverremove\",flavour:\"remove\",trigger:\"hover\",setup:hoverSetup},{name:\"removal\",flavour:\"remove\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"once\",flavour:\"remove\",trigger:\"visited\",setup:visitedSetup},{name:\"keyremove\",flavour:\"remove\",trigger:\"key\",setup:keySetup},{name:\"continue\",flavour:\"continue\",trigger:\"link\",setup:linkSetup},{name:\"timedcontinue\",flavour:\"continue\",trigger:\"time\",setup:timeSetup},{name:\"mousecontinue\",flavour:\"continue\",trigger:\"mouse\",setup:mouseSetup},{name:\"keycontinue\",flavour:\"continue\",trigger:\"key\",setup:keySetup},{name:\"cycle\",flavour:\"cycle\",trigger:\"revisemacro\",setup:revisionSetup},{name:\"mousecycle\",flavour:\"cycle\",trigger:\"mouse\",setup:mouseSetup},{name:\"timedcycle\",flavour:\"cycle\",trigger:\"time\",setup:timeSetup},{name:\"keycycle\",flavour:\"replace\",trigger:\"key\",setup:keySetup}].forEach(function(e){e.handler=revisionSpanHandler;\\ne.shorthand=([\"link\",\"mouse\",\"hover\"].indexOf(e.trigger)>-1);\\nmacros[e.name]=e;macros[\"end\"+e.name]=nullobj;begintags.push(e.name);\\nendtags.push(\"end\"+e.name)});function reviseAll(rt,rname){var rall=document.querySelectorAll(\".passage .\"+rname),ret=false;\\nfor(var i=0;i<rall.length;i++){ret=ret||revise(rt,rall[i])}return ret\\n}function revise(rt,r,notrans){var ind2,curr,next,ind=-1,rev=(rt==\"revert\"),rnd=(rt.indexOf(\"random\")>-1),fl=r.getAttribute(\"data-flavour\"),rc=r.childNodes,cyc=(fl==\"cycle\"),rcl=rc.length-1;\\nfunction doToGainerSpans(n,fn){for(var k=n-1;k>=0;k--){if(rc[k+1].classList.contains(\"gains\")){fn(rc[k],notrans)\\n}else{break}}}for(var k=0;k<=rcl;k++){if(rc[k].getAttribute(\"data-enabled\")==\"true\"){ind=k\\n}}if(rev){ind-=1}curr=(ind>=0?rc[ind]:(cyc?rc[rcl]:null));ind2=ind;\\nif(rnd){ind2=(ind+(Math.floor(Math.random()*rcl)))%rcl}next=((ind2<rcl)?rc[ind2+1]:(cyc?rc[0]:null));\\nvar docurr=(rev?showVer:hideVer);var donext=(rev?hideVer:showVer);\\nif(curr){if(!(next&&next.classList.contains(\"gains\"))||rnd){docurr(curr,notrans);\\ndoToGainerSpans(ind,docurr,notrans)}}if(next){donext(next,notrans);\\nif(rnd){doToGainerSpans(ind2+1,donext,notrans)}}return(cyc?true:(rev?(ind>0):(ind2<rcl-1)))\\n}macros.revert=macros.revise=macros.randomise=macros.randomize={handler:function(a,b,c){var l,rev,rname;\\nfunction disableLink(l){l.style.display=\"none\"}function enableLink(l){l.style.display=\"inline\"\\n}function updateLink(l){if(l.className.indexOf(\"random\")>-1){enableLink(l);\\nreturn}var rall=document.querySelectorAll(\".passage .\"+rname),cannext,canprev,i,ind,r,fl;\\nfor(i=0;i<rall.length;i++){r=rall[i],fl=r.getAttribute(\"data-flavour\");\\nif(fl==\"cycle\"){cannext=canprev=true}else{if(r.firstChild.getAttribute(\"data-enabled\")==!1+\"\"){canprev=true\\n}if(r.lastChild.getAttribute(\"data-enabled\")==!1+\"\"){cannext=true\\n}}}var can=(l.classList.contains(\"revert\")?canprev:cannext);(can?enableLink:disableLink)(l)\\n}function toggleText(w){w.classList.toggle(rl+\"Enabled\");w.classList.toggle(rl+\"Disabled\");\\nw.style.display=((w.style.display==\"none\")?\"inline\":\"none\")}var rl=\"reviseLink\";\\nif(c.length<2){throwError(a,b+\" macro needs 2 parameters\");return\\n}rname=c.shift().replace(\" \",\"_\");l=Wikifier.createInternalLink(a,null);\\nl.className=\"internalLink \"+rl+\" \"+rl+\"_\"+rname+\" \"+b;var v=\"\";\\nvar end=false;var out=false;if(c.length>1&&c[0][0]==\"$\"){v=c[0].slice(1);\\nc.shift()}switch(c[c.length-1]){case\"end\":end=true;c.pop();break;\\ncase\"out\":out=true;c.pop();break}var h=state.history[0].variables;\\nfor(var i=0;i<c.length;i++){var on=(i==Math.max(c.indexOf(h[v]),0));\\nvar d=insertElement(null,\"span\",null,rl+((on)?\"En\":\"Dis\")+\"abled\");\\nif(on){h[v]=c[i];l.setAttribute(\"data-cycle\",i)}else{d.style.display=\"none\"\\n}insertText(d,c[i]);l.appendChild(d)}l.onclick=function(){reviseAll(b,rname);\\nvar t=this.childNodes,u=this.getAttribute(\"data-cycle\")-0,m=t.length,n,lall,i;\\nif((end||out)&&u==m-(end?2:1)){if(end){n=this.removeChild(t[u+1]);\\nn.className=rl+\"End\";n.style.display=\"inline\";this.parentNode.replaceChild(n,this)\\n}else{this.parentNode.removeChild(this);return}}else{toggleText(t[u]);\\nu=(u+1)%m;if(v){h[v]=c[u]}toggleText(t[u]);this.setAttribute(\"data-cycle\",u)\\n}lall=document.getElementsByClassName(rl+\"_\"+rname);for(i=0;i<lall.length;\\ni++){updateLink(lall[i])}};disableLink(l);setTimeout(function(){updateLink(l);\\nl=null},1)}};macros.mouserevise=macros.hoverrevise={handler:function(a,b,c,d){var endtags=[\"end\"+b],evt=(window.onmouseenter===null?\"onmouseenter\":\"onmouseover\"),t=tagcontents(d,[b],endtags,endtags,d.source.indexOf(\">>\",d.matchStart)+2);\\nif(t){var rname=c[0].replace(\" \",\"_\"),h=insertElement(a,\"span\",null,\"hoverrevise hoverrevise_\"+rname),f=function(){var done=!reviseAll(\"revise\",rname);\\nif(b!=\"hoverrevise\"&&done){this[evt]=null}};new Wikifier(h,t[0]);\\nif(b==\"hoverrevise\"){h.onmouseover=f;h.onmouseout=function(){reviseAll(\"revert\",rname)\\n}}else{h[evt]=f}h=null}}};macros.endmouserevise=nullobj;macros.endhoverrevise=nullobj\\n}());1;",
+      "links": []
+    },
+    {
+      "pid": 81,
+      "name": "forni3",
+      "text": "\"Step inside.\"\\n\\nNilo smiles and his hand does a wave-like motion as if he's trying to sell you on the idea of stepping inside the cryo tube as a good and safe thing.\\n\\nYou don't know what to do. It's probably this way or a more brutal way. But you also feel that you've wronged Nilo - in some ways.\\n\\n//\"Right\"//\\n\\nBut before you get, in Nilo points to the oxygen valve on the floor, next to the tube.\\n\\n\"Turn it\"\\n\\n//(\"Ah, now you see were he's going with this!\")//\\n\\nYou turn it, get in, and (as Nilo tells you to) shut the lid.\\n\\n[[Oxygen withdrawl|forni4]]",
+      "links": [
+        {
+          "text": "Oxygen withdrawl",
+          "destination": {
+            "name": "forni4",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "theend",
+      "text": "\\n\\n\\n\\n\\n\\n@@font-size:200%;the end@@\\n\\n\\n\\n\\n\\n\\n\\n@@opacity:0.6;the [[CAPSULE|http://capsule.paperblurt.com]] trilogy@@",
+      "links": []
+    },
+    {
+      "pid": 83,
+      "name": "title3",
+      "text": "capsule II\\n\\n@@opacity:0;fii@@@@font-size:30%;the 11th sandman@@\\n\\n<<timedgoto \"s1\" 3s>>\\n\\n<html>\\n<style>\\nbody {overflow:hidden}\\n</style>\\n</html>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "s1",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "kuntu2",
+      "text": "\\n\\n\\nHe pushes your body into it, and sets the gauge way above the recommended dosage.\\n\\nAn awakened body with a functioning heart doesn't really respond well to that kind of shock.\\n\\nYou are no exception as Kuntu pushes the [[button|shock1]].",
+      "links": [
+        {
+          "text": "button",
+          "destination": {
+            "name": "shock1",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "h30",
+      "text": "@@opacity:0;fillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfilling@@ @@color:#FC0C0B;font-weight:bold;PITY POINTS: <<print $pity>>@@\\n\\n\\n\"Hi <<if $god>> \"God\"<<else>>\"Dad\"<<endif>>. How've you been?\"\\n\\n<<replace>>//\"Fine, but I've been worried\"//<<becomes>><<set $pity += either (10,5,6,15,9,8,7)>><<timedgoto \"h31\" 0s>><<endreplace>>\\n<<replace>>//\"Where have you been?!\"//<<becomes>><<set $pity -= either (10,7,8,9,4,2,5,6)>><<timedgoto \"h31\" 0s>><<endreplace>>\\n<<replace>>//\"Just fine. No worries.\"//<<becomes>><<set $pity -= either (1,2,4,5,1,5,6)>><<timedgoto \"h31\" 0s>><<endreplace>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h31",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "h36nilo",
+      "text": "<<if $pity gt 0 and $pity lt 20>><<timedgoto \"nd\" 0s>><<endif>>\\n<<if $pity gt 20 and $pity lt 50>><<timedgoto \"left\" 0s>><<endif>>\\n<<if $pity gt 50 and $pity lt 80>><<timedgoto \"kuntu\" 0s>><<endif>>\\n<<if $pity gt 80>><<timedgoto \"nisac\" 0s>><<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "nd",
+            "pid": 3
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "left",
+            "pid": 157
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "kuntu",
+            "pid": 87
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "nisac",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "kuntu",
+      "text": "\\nNilo stops.\\nThe three men (\"boys\" maybe) turn around.\\n\\nNilo's eyes look calmly mad in a kind of weird way.\\n\\n\"Kuntu.\"\\n\\nOne word is needed and before you can be impressed by the amount of loyalty and discipline Nilo has induced in these people, Kuntu walks over. Punches you in the face. Then again.\\n\\n\"Kuntu, efficently. Not violently.\"\\n\\nKuntu stops and scans the room.\\nHe sees the AHP system on the wall (basically it jump starts your heart automatically, but then you just have to get a small and kind heart attack so that you're able to get to the wall mounted system).\\n\\nHe [[drags|kuntu2]] you to it.",
+      "links": [
+        {
+          "text": "drags",
+          "destination": {
+            "name": "kuntu2",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "h15",
+      "text": "\\n\\n\"I'm sick of this\".\\n\"I want off this...vessel of silence!\"\\n\\nHe's become quite suave with words.\\nIt comes from him spending a lot of time reading books.\\nHistory. That section is rather large. He asks a lot about power, greed, war, and death.\\n\\n<<if $god>>//\"Death can't touch me. You know this. I inflict others with it. The same with war and greed.\"//<<else>>//\"Death is something that happens to all of us. It'll happen to me and to you.\"//<<endif>>\\n\\nTodd never settles for that answer.\\nNot for any answer. He seeks new ones.\\n\"Why don't I remember anything?\" he asks constantly.\\n\\n[[He's discovered the terminal|hconsole]]",
+      "links": [
+        {
+          "text": "He's discovered the terminal",
+          "destination": {
+            "name": "hconsole",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "info",
+      "text": "A combination of reasons (famine, depletion of resources, and general partying) has made Earth unable to sustain human life.\\n\\nA new home needed to be found. And a \"loop\" //was// found.\\n\\nA small capsule was sent through it, and the readings it sent back convinced the scientist that, on the other side, a mirrored version of Earth existed.\\n\\nOr was it desperation?\\n\\nThe enormous UNSS Makida is built to transport the majority of humanity to a new home on the other side of the loop.\\n\\n[[...|info2]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "info2",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "h19",
+      "text": "\\n\\nOne night he came back.\\nHe woke you up and talked about.\\nSomething.\\nHe rambled on. It was hard to understand.\\n\\n<<if $god>>//\"Where have you been? I demand that you tell me where you've been!\"//<<else>>//\"Where have you been, Nilo? I was worried! You can't just disapear like that!\"//<<endif>>\\n\\n\"I go where I want. Haven't you seen? I've seen them. They are many and they are bountiful.\\nBretheren and sisters.\"\\n\\nIt was hard to understand what he was talking about. You had seen that the <<if $bug>>console<<else>>[[console|niloconsole]]<<endif>> was acting up.\\nYou understood in some ways what he was doing, but didn't accept it fully.\\nYou never told him about cryo leakage, did you?\\nMaybe in your sleep?\\n\\nBut the real worries began when he came back with <<if $bug>>[[meat|h20]]<<else>>meat<<endif>>.",
+      "links": [
+        {
+          "text": "console",
+          "destination": {
+            "name": "niloconsole",
+            "pid": 15
+          }
+        },
+        {
+          "text": "meat",
+          "destination": {
+            "name": "h20",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "h10",
+      "text": "\\n\\n**@@font-size:150%;//three years after wakeup//@@\\n\\n<<timedgoto \"h11\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h11",
+            "pid": 92
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "h11",
+      "text": "\\n\\nThe first months floats by quickly.\\nYou lose a lot of weight as Todd gets the majority of\\nthe food. At first you feel good about it as weight issues\\nhave been sensitive for you. But after a while you realize\\nthat sustenance and overeating aren't really the same thing.\\n\\nTodd constantly has questions:\\n\\n<<if $god>>\\n\"Can't you just make food, aren't you a powerful God? Where are we going? Why is it black outside?<<else>>\"Why don't we look alike? Are we there yet? I'm scared at night. <<endif>> Who are all these other people?\"\\n\\n<<timedinsert 4s>><<if $god>>\\n//\"I AM a powerful God but one shall not use powers to one's own personal pleasure. It's black outside cause I made it black. We are going, somewhere...better\".//<<else>>//\"Of course we look alike, don't you think? We'll get there when we get there. These other people...\"//<<endif>>\\n\\n[[(\"who are all these other people\")|h12]]\\n\\n<<endtimedinsert>>",
+      "links": [
+        {
+          "text": "(\"who are all these other people\")",
+          "destination": {
+            "name": "h12",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "h12",
+      "text": "\\nThat last question was hard to answer.\\nAnd Todd really wanted to know.\\nIt took some weeks before he discovered them.\\nAs they slept in their tubes.\\n\\nSince then he's been obsessed.\\nHe wants to know more, but you are afraid to give him an\\nanswer. Any answer.\\n\\nHow might one react to the fact that an entire species\\nin taking a nap and hopefully waking up in a brand new world?\\n\\nProbably not well.\\n\\nSo instead you've just told Todd that they are sleeping.\\nJust like him. That they are our <<if $god>>subjects<<else>>relatives<<endif>> and that they are here for our sake.\\n\\n[[He's only seen some of them, not all, not the hundreds of millions|h13]]",
+      "links": [
+        {
+          "text": "He's only seen some of them, not all, not the hundreds of millions",
+          "destination": {
+            "name": "h13",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "h13",
+      "text": "\\nTodd's mind doesn't seem to remember.\\nHe was someone earlier, in a different life.\\n\\nBut now, he's someone else.\\nYou admit to yourself that Todd has kept you really super\\nbalanced these last months.\\n\\n(\"I HVAE CONRTOLL NWO. I FUKCGIN RUEL. NOBOYD CAN STPO ME!\")\\n\\nThe days are filled with chores. Talking.\\nTodd's mind starts to forget the questions.\\nIt doesn't look back. Instead it starts to look forward.\\nHe gets eager to learn.\\n\\nThere's this side to him...It's hard to explain.\\nBut you see it. A lust for power, or maybe self rule rather.\\n\\n[[am I safe?|h14]]",
+      "links": [
+        {
+          "text": "am I safe?",
+          "destination": {
+            "name": "h14",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "h14",
+      "text": "\\n\\n**@@font-size:150%;//five years after wakeup//@@\\n\\n<<timedgoto \"h15\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h15",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "geoff",
+      "text": "@@font-size:120%;\\nNAME: GEOFF McBRIDE\\n\\nAGE: 57\\n\\nOCCUPATION: ENGINEER\\n\\nMARITAL STATUS: SINGLE\\n\\nHOBBIES: SHAKING HIS FIST AT YOUNG PEOPLE\\n\\nPRIORITY LEVEL: MAXIMUM\\n\\nLAST MESSAGE IN CASE OF ACCIDENT:@@\\n\\n@@color:white;//SELECTED TO NOT LEAVE MESSAGE//@@\\n\\n[[BACK|passlist]]\\n[[END CONSOLE|y11]]\\n<<set $geoff = true>>",
+      "links": [
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "passlist",
+            "pid": 14
+          }
+        },
+        {
+          "text": "END CONSOLE",
+          "destination": {
+            "name": "y11",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "h16",
+      "text": "\\n\\n<<if $god>>//\"I'll baptize you anew. A new identity. But you must promise me to let go of the past. Not to anger your God. Just please me.\"//<<else>>//\"Maybe a new name? Begin again so to say. Couldn't that be fun? You can start fresh\".//<<endif>>\\n\\n\"What should it be?\"\\n\\nYour mind spins around. This wasn't that planned really. All you wanted was for Todd stop poking around in the terminal. <<if $god>>Even Gods are seldom listened to<<else>>Parents aren't that cool to listen to<<endif>>, so better to get him on board something that's something else than you just saying \"no\".\\n\\n//\"How about Nilo?\"//\\n\\n[[...|h17]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "h17",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "h17",
+      "text": "\\n\\n**@@font-size:150%;//seven years after wakeup//@@\\n\\n<<timedgoto \"h18\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h18",
+            "pid": 136
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "ex",
+      "text": "\\n\\nYou don't really feel like exercising right now.\\nBut your body feels like it--or rather, it needs to.\\nThe Makida is equiped with a dusty gym that's seldom used.\\n\\nAnd even though you don't want to, you do a half-hearted attempt\\nat regaining power over your own body.\\n\\n<<replace \"push-ups\">> <<replace \"DONE!\">> <<replace \"chin-ups\">> <<replace \"DONE!\">> <<replace \"treadmill\">> <<replace \"[[DONE!|w11]]\">> <<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>>\\n<<set $ex = true>>",
+      "links": [
+        {
+          "text": "DONE!",
+          "destination": {
+            "name": "w11",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "a20",
+      "text": "\\n\\n\\nThat poor kid will never experience that hole of glory we call the loop (what hole?).\\n\\nYou deactivate the cryotube, unlock it, and open it.\\nA stale smell that's both dirty and clean at the same time slips out.\\nYou look at Todd and think about how you're gonna grant his last wish to become one with space...\\n\\n\\n<<timedinsert 10s>>@@font-size:500%;\"GASP!\"@@\\n<<timedgoto \"a21\" 1s>><<endtimedinsert>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "a21",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "a21",
+      "text": "\\n\\nOh my god he's fucking alive!!!\\n\\nYou grab him and drag him out of the tube, and as soon as he's down on the floor he passes out again.\\n\\nYou feel his pulse and listen for him to breathe.\\nWhich he does.\\n\\nYou calmly sit down beside him and try to grasp the situation.\\nThere's no way he could've survived without any kind of nutrient.\\n\\nThe body is vulnerable during cryosleep and must have some kind of food!\\n\\n[[...|a22]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "a22",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "a22",
+      "text": "\\n\\n\\nYou run back to the slug and grab the med kit with the scanner.\\nBack at Todd you hook him up to check EEG, EKG and one other thing you can't remember what it does.\\n\\nHeart rate seems fine.\\nYou connect electrodes to his forehead and the back of the skull.\\nThe EEG is all over the place.\\n\\nThis scan takes a while, but you can't really calm down. You pace back and forth.\\n\\n[[100%|a23]]",
+      "links": [
+        {
+          "text": "100%",
+          "destination": {
+            "name": "a23",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "a23",
+      "text": "\\nDONE!\\n\\n\"EEG complete\", OK, \"POOR CIS Mental Health\", yeah I got that, \"Brain activity at 35%\", what?\\n\\n...\\n\\nYou mumble the results and try to comprehend.\\nTodd seems to be in good physical condition.\\nBut the brain seems to have taken a hit.\\n\\nIt's almost as if his brain has //[[devolved|h1]]//",
+      "links": [
+        {
+          "text": "devolved",
+          "destination": {
+            "name": "h1",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "LINE BREAK CODE",
+      "text": "(function(){\\nvar bs = String.fromCharCode(92);\\nWikifier.formatters.unshift({\\n    name: \"continuedLine\",\\n    match: bs+bs+\"s\",\\n    handler: function(a) {\\n        a.nextMatch = a.matchStart+3;\\n    }\\n});\\n}());\\n",
+      "links": []
+    },
+    {
+      "pid": 105,
+      "name": "h15-1",
+      "text": "\\n\\nTodd spends days trying to find himself inside the terminal.\\nYou don't help him.\\nThis...relationship...is somewhat based on him knowing nothing and you knowing a bit more than that.\\n\\nso...\\n\\n<<if $god>>//\"Todd is a thing of the past. It's not your real name even. It's a provisional name that I applied on your body and didn't remove. We must go further and adapt ourself to new identities.\"//<<else>>//\"I've been thinking. Maybe we should do something fresh and new? Were we're going and where we might end up we can be new people. Other people. How about forgetting about this person and beginning something new\".//<<endif>>\\n\\n\"What do you have in mind?\"\\n\\n[[...|h16]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "h16",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "forni2",
+      "text": "\\n\\nNilo speeds up as he hears that you're closing in.\\nYou follow him into to Sector 0 where all the Sandmen are asleep.\\n\\nYou start to worry.\\n\\nAt random he points at one cryo tube (#9) and Kuntu and the other one pry it open and drag the still sleeping sandman inside out of it.\\n\\nStill in cryostasis and without full muscle regenration Sandman #9 doesn't wake up, and might not do so.\\n\\n//\"What the fuck are you doing?\"//\\n\\nYou try to help #9 but Kuntu blocks your way, and your few extra pounds and the dusty treadmill that's probably rusted shut by now remind you that you're an easy competitor to beat.\\n\\n[[back off|forni3]]",
+      "links": [
+        {
+          "text": "back off",
+          "destination": {
+            "name": "forni3",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "EITHER MACRO",
+      "text": "window.either = function() { return arguments[~~(Math.random()*arguments.length)];}",
+      "links": []
+    },
+    {
+      "pid": 108,
+      "name": "forni4",
+      "text": "\\n\\nAfter your body has stopped twitching, the three men evict it from the tube. They put the sweating and shaking body of #9 back in (smart, Nilo, very smart), turn the oxygen back on, and carry you back to the entertainment area.\\n\\nThere they hang your body by the neck.\\nNilo lets his companions whack your body a few times like a unsatisfying pinata.\\n\\n\\nThen they leave.\\n\\n\\nNilo walks faster and faster until he's [[gone|end_1]]",
+      "links": [
+        {
+          "text": "gone",
+          "destination": {
+            "name": "end_1",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "y10console",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n[[1. View passenger status|ymanifest]]",
+      "links": [
+        {
+          "text": "1. View passenger status",
+          "destination": {
+            "name": "ymanifest",
+            "pid": 150
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "IMG_PRELOAD",
+      "text": "(function(){var r=\"\";var s=Wikifier.formatters;for(var j=0;j<s.length;j++){if(s[j].name==\"image\"){r=s[j].lookahead;\\nbreak;}}var div=document.getElementById(\"storeArea\").firstChild.nextSibling;while(div){if(r){k(new RegExp(r,\"mg\"),4);\\n}var b=String.fromCharCode(92);var u=b+\"s*['\"+'\"]?([^\"'+\"']+(jpe?g|a?png|gif|bmp))['\"+'\"]?'+b+\"s*\";\\nk(new RegExp(\"url\"+b+\"(\"+u+b+\")\",\"mig\"),1);k(new RegExp(\"src\"+b+\"s*=\"+u,\"mig\"),1);\\ndiv=div.nextSibling;}function k(c,e){do{var d=c.exec(div.innerHTML);if(d){var i=new Image();\\ni.src=d[e];}}while(d);}}());",
+      "links": []
+    },
+    {
+      "pid": 111,
+      "name": "end",
+      "text": "\\n\\n<<if $sandman and $oxygen and $life and $nut and $ship>>\\nYou feel a bit drowsy and aren't really surprised about the altered AFC standard voice.\\nSandman #5 was one of the few you talked to during training...\\n\\nYou smile and let it be...even though you don't understand if something is wrong or not. But the system is designed to be as simple as possible...as long as nothing happens.\\n\\nOk, [[done|w11]].<<else>>\\nNo. Do this properly and go over the entire console...\\n\\n[[CONSOLE|console]]\\n<<endif>>",
+      "links": [
+        {
+          "text": "done",
+          "destination": {
+            "name": "w11",
+            "pid": 33
+          }
+        },
+        {
+          "text": "CONSOLE",
+          "destination": {
+            "name": "console",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 112,
+      "name": "h28",
+      "text": "\\n\\nEvery night is long on board the Makida.\\nThese 8 years are basically one long night.\\nThe sun is nothing but a memory.\\nIf even that.\\n\\nSome were very young when they went into their cryotubes,\\nand may not remember it at all.\\n\\nTrying to explain must sound weird...\\nIt was this big thing in the sky that's shiny and bright and really warm and sometimes you can't see it and it's really far away.\\n\\nLayman terms are maybe not the best.\\n\\nYou hear a [[sound|h29]] and wake up...",
+      "links": [
+        {
+          "text": "sound",
+          "destination": {
+            "name": "h29",
+            "pid": 144
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "s3",
+      "text": "\\n\\nThe ship floats onwards, with a whole world within its walls.\\nIf something were to go wrong during those few minutes, a whole species would go extinct.\\n\\n[[...|s4]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "s4",
+            "pid": 120
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "s2",
+      "text": "\\n\\nA certain \"calm\" where all is still. The Makida's dull hum is heard, but that is all. No footsteps. No whispers. No music.\\n\\n[[...|s3]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "s3",
+            "pid": 113
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "s1",
+      "text": "\\n\\n<<timedinsert 2s>>There's this \"pause\" on the Makida every time the current Sandman goes back into the cryotube and before the new one awakes.\\n\\n[[...|s2]]<<endtimedinsert>>",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "s2",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "h26",
+      "text": "\\n\\nMaybe Nilo is just not right.\\nThere's a spot for him in your heart.\\n\\nBut now. His spot for you might be diminishing.\\n\\n(\"WYH CNAT I JUTS PLYA WIHT HIM ANYMROE?\")\\n\\nYou keep to yourself and DON'T ask questions.\\nKuntu never came back, but you bet that he wasn't the only\\nfollower Nilo has.\\n\\nTomorrow is tube-time.\\n\\nYou must [[speak|h27]] to Nilo.",
+      "links": [
+        {
+          "text": "speak",
+          "destination": {
+            "name": "h27",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "h21",
+      "text": "\\n\\n\\n\\nNilo and you can't both fit in the tube.\\n\\nEven though it's a few months into the future\\nyou still think about if [[you|h22]] should go in the tube or give it to [[Nilo|nilo]]?\\n<<set $pity = 25>>",
+      "links": [
+        {
+          "text": "you",
+          "destination": {
+            "name": "h22",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Nilo",
+          "destination": {
+            "name": "nilo",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "h20",
+      "text": "\\n\\n\\nYou ate it.\\nYou couldn't resist real food.\\nIt was hard to cook it. But you managed to grill it in the kitchen.\\nEven though that wasn't really the idea.\\nBut the BONC's taste couldn't really match this.\\n\\nYou never asked about Nilo disappearing as you knew he'd return with food.\\n\\nThe time between each visit grew longer and longer.\\n\\n[[You had no power to tell him otherwise|h21]]",
+      "links": [
+        {
+          "text": "You had no power to tell him otherwise",
+          "destination": {
+            "name": "h21",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "s5",
+      "text": "[img[https://corruptreality.files.wordpress.com/2015/02/cryo_tube_anim.gif]]\\n\\n\\n<<timedinsert 3s>>[[inside...|w0]]<<endtimedinsert>>",
+      "links": [
+        {
+          "text": "inside...",
+          "destination": {
+            "name": "w0",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "s4",
+      "text": "\\n\\nBut there, in the darkness, among the twelve cryotubes...\\n\\none tube blinks.\\n\\n[[...|s5]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "s5",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "consoleboot",
+      "text": "@@color:#00F70A;font-family:terminal;font-size:150%;<<timedremove 3.5s>>loading<html><span class=\"blink\">_</span></html><<becomes>>booting console<html><span class=\"blink\">_</span></html><<becomes>>initializing Surf_Speek<html><span class=\"blink\">_</span></html><<becomes>>mainframe ping test<html><span class=\"blink\">_</span></html><<becomes>>some other test<html><span class=\"blink\">_</span></html><<becomes>><<timedgoto \"console\" 0s>><<endtimedremove>>@@",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "console",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "alarm2",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n<<if $cryo>>\\n@@color:#00F70A;It's super chill dude, check it out<html><span class=\"blink\">_</span></html>@@\\n<<else>>\\n<<replace \"1. Cryo leakage in sector 24-R\">>@@color:#00F70A;It's super chill dude, check it out<<timedgoto \"cryo\" 1s>>@@<<endreplace>>@@color:#00F70A;<html><span class=\"blink\">_</span></html>@@\\n<<endif>>\\n\\n<<if $gas>>\\n@@color:#00F70A;Don't be wastin', brah<html><span class=\"blink\">_</span></html>@@\\n<<else>>\\n<<replace \"2. Gas malfunction in sector 24-R\">>@@color:#00F70A;Don't be wastin', brah<<timedgoto \"gas\" 1s>>@@<<endreplace>>@@color:#00F70A;<html><span class=\"blink\">_</span></html>@@\\n<<endif>>\\n\\n<<if $dest>>\\n@@color:#00F70A;Here comes the wave, dude! Hang ten<html><span class=\"blink\">_</span></html>@@\\n<<else>>\\n<<replace \"3. Destination imminent\">>@@color:#00F70A;Here comes the wave, dude! Hang ten<<timedgoto \"dest\" 1s>>@@<<endreplace>>@@color:#00F70A;<html><span class=\"blink\">_</span></html>@@\\n<<endif>>\\n\\n\\n<<if $gas and $dest and $cryo>>\\n[[END CONSOLE|end2]]\\n<<else>>\\n<<endif>>",
+      "links": []
+    },
+    {
+      "pid": 123,
+      "name": "StoryAuthor",
+      "text": "PaperBlurt",
+      "links": []
+    },
+    {
+      "pid": 124,
+      "name": "CYCLE",
+      "text": "version.extensions.cyclinglinkMacro={major:3,minor:3,revision:0};\\nmacros.cyclinglink={handler:function(a,b,c){var rl=\"cyclingLink\";\\nfunction toggleText(w){w.classList.remove(\"cyclingLinkInit\");\\nw.classList.toggle(rl+\"Enabled\");w.classList.toggle(rl+\"Disabled\");\\nw.style.display=((w.style.display==\"none\")?\"inline\":\"none\")}switch(c[c.length-1]){case\"end\":var end=true;\\nc.pop();break;case\"out\":var out=true;c.pop();break}var v=\"\";if(c.length&&c[0][0]==\"$\"){v=c[0].slice(1);\\nc.shift()}var h=state.history[0].variables;if(out&&h[v]===\"\"){return\\n}var l=Wikifier.createInternalLink(a,null);l.className=\"internalLink cyclingLink\";\\nl.setAttribute(\"data-cycle\",0);for(var i=0;i<c.length;i++){var on=(i==Math.max(c.indexOf(h[v]),0));\\nvar d=insertElement(null,\"span\",null,\"cyclingLinkInit cyclingLink\"+((on)?\"En\":\"Dis\")+\"abled\");\\nif(on){h[v]=c[i];l.setAttribute(\"data-cycle\",i)}else{d.style.display=\"none\"\\n}insertText(d,c[i]);if(on&&end&&i==c.length-1){l.parentNode.replaceChild(d,l)\\n}else{l.appendChild(d)}}l.onclick=function(){var t=this.childNodes;\\nvar u=this.getAttribute(\"data-cycle\")-0;var m=t.length;toggleText(t[u]);\\nu=(u+1);if(!(out&&u==m)){u%=m;if(v){h[v]=c[u]}}else{h[v]=\"\"}if((end||out)&&u==m-(end?1:0)){if(end){var n=this.removeChild(t[u]);\\nn.className=rl+\"End\";n.style.display=\"inline\";this.parentNode.replaceChild(n,this)\\n}else{this.parentNode.removeChild(this);return}return}toggleText(t[u]);\\nthis.setAttribute(\"data-cycle\",u)}}};",
+      "links": []
+    },
+    {
+      "pid": 125,
+      "name": "a14",
+      "text": "\\n\\nThis part of the ship is dark and as basic as it can be.\\nThere's no need for around-the-clock light or stimuli.\\n\\nIn a big hall, far away, you spot the blinking light indicating\\nthat this is the cryotube that's ruined your Halloween.\\n\\nYou walk over and wipe some condensation of the glass and look at the person inside. You grab your flashlight and look around the cryotube itself to spot the error.\\n\\n[[...|a16]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "a16",
+            "pid": 127
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "a17",
+      "text": "\\n\\n\\nYou punch in the ID stated on the tube on your HHST-device.\\nIt takes a while as it has to communicate with the console, but then you get the much needed [[info|a18]]...",
+      "links": [
+        {
+          "text": "info",
+          "destination": {
+            "name": "a18",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "a16",
+      "text": "\\n\\n\\nA small hissing noise leads you to a broken pipe.\\nThis is the pipe providing the person inside with a small, but needed, dosage of sustenance. It's a very mild version in liquid form that resembles the protein compound you so joyfully enjoy!\\n\\nMaybe the pipe dried up and cracked? Either way this might not be good. It's expected that some \"errors\" might occur during the voyage and some \"guests\" will \"depart\" (as they described it during Sandman training). The drive to Sector 24-R was too long and you were too late...\\n\\n[[There's a special procedure for this|a17]]",
+      "links": [
+        {
+          "text": "There's a special procedure for this",
+          "destination": {
+            "name": "a17",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "a11",
+      "text": "\\n\\n\\nThis is the first time you've actually seen the Makida's intestines.\\nYou've only seen the head, so to speak, but maybe that's for the best.\\nNot that much too see here.\\n\\nMetal walls...[[mile after mile|a12]]",
+      "links": [
+        {
+          "text": "mile after mile",
+          "destination": {
+            "name": "a12",
+            "pid": 131
+          }
+        }
+      ]
+    },
+    {
+      "pid": 129,
+      "name": "a10",
+      "text": "\\n\\n\\nYou give the console the finger and head to the Slug.\\n\\nYou're not sure what you're angry about.\\nHalloween is ruined. It's not like you had anything to do. But you just wanna take it easy. Maybe chill a bit.\\n\\nThe Slug is charged and ready and you run by the kitchen and grab some bars as you know that it's a long ride out to Sector 24-R.\\n\\n[[full throttle|a11]]",
+      "links": [
+        {
+          "text": "full throttle",
+          "destination": {
+            "name": "a11",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "a13",
+      "text": "\\n\\n\\nDoesn't it ever end?\\nThis steel hell you call home.\\nYou've already spent one night sleeping in some horribly small room on this voyage or yours.\\n\\n<<timedinsert 3s>>Well there's sector 24-R so: yes, it does...\\n\\n[[park|a14]]<<endtimedinsert>>",
+      "links": [
+        {
+          "text": "park",
+          "destination": {
+            "name": "a14",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 131,
+      "name": "a12",
+      "text": "\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n<<timedinsert 5s>>Huge is a small word.  What can describe this enormous giant? This big, empty [[world|a13]].<<endtimedinsert>>",
+      "links": [
+        {
+          "text": "world",
+          "destination": {
+            "name": "a13",
+            "pid": 130
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "a19",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA HHST DEVICE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n//CRYOGENIC STATUS://\\n\\nCIS STATUS: - - <<timedreplace 2s>>CRYOGENIC SLEEP<<becomes>>XXXXXX<<becomes>>@@color:red;DECEASED@@<<endtimedreplace>><<endtimedreplace>>\\nMENTAL CIS: - - POOR\\nPHYSICAL CIS: - - UNSTABLE\\n\\n<<timedinsert 6s>>[[END|a20]]<<endtimedinsert>>",
+      "links": [
+        {
+          "text": "END",
+          "destination": {
+            "name": "a20",
+            "pid": 100
+          }
+        }
+      ]
+    },
+    {
+      "pid": 133,
+      "name": "a18",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA HHST DEVICE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\nNAME: TODD ZIERING\\nAGE: 21\\nOCCUPATION: STUDENT\\nMARITAL STATUS: SINGLE\\nHOBBIES: SINGING\\nPRIORITY LEVEL: MINIMUM\\nLAST MESSAGE IN CASE OF ACCIDENT:\\n\\n@@color:white;If I die I want my body to be one with SPACE!@@\\n\\n//CRYOGENIC STATUS://\\n\\nCIS STATUS: - - CRYOGENIC SLEEP\\nMENTAL CIS: - - POOR\\nPHYSICAL CIS: - - UNSTABLE\\n\\n[[UPDATE|a19]]",
+      "links": [
+        {
+          "text": "UPDATE",
+          "destination": {
+            "name": "a19",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 134,
+      "name": "TIMER",
+      "text": "version.extensions.timedgotoMacro={major:1,minor:1,revision:0};macros[\"goto\"]=macros[\"timedgoto\"]={timer:null,handler:function(a,b,c,d){\\nfunction cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0;\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0;}}}throwError(a,s+\" isn't a CSS time unit\");\\nreturn 0;}var t,d,m,s;t=c[c.length-1];d=d.fullArgs();m=0;if(b!=\"goto\"){d=d.slice(0,d.lastIndexOf(t));\\nm=cssTimeUnit(t);}d=eval(Wikifier.parse(d));if(d+\"\"){if(this.timer){clearTimeout(this.timer);\\n}s=state.history[0].passage.title;this.timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a);\\n}},m);}}};",
+      "links": []
+    },
+    {
+      "pid": 135,
+      "name": "h32",
+      "text": "@@opacity:0;fillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfillingfilling@@ @@color:#FC0C0B;font-weight:bold;PITY POINTS: <<print $pity>>@@\\n\\n\\n<<if $nilo>>\"So you are willing to give up your spot? Hmm...not really what I expected. But not what I want either. We've been sleeping already! For a long time! A real long time!!\"<<else>>\"What kind of <<if $god>>God<<else>>parent<<endif>> are you? A typical one, I guess. Even if did want to get back into that fucking tube, I can't, cause this is your tube.<<endif>>\\n\\nHave you forgotten the early years? How you beat me? How you kept me locked up. How you kept me in the dark, not letting me use the terminal because you were afraid of what I might find?!\"\\n\\n<<replace>>//\"No, I have to spend every night regreting it!\"//<<becomes>><<set $pity += either (20,12,14,11,17,13)>><<timedgoto \"h33\" 0s>><<endreplace>>\\n<<replace>>//\"You were so young, you could hardly take a crap!\"//<<becomes>><<set $pity -= either (25,20,18,9,11,13,16)>><<timedgoto \"h33\" 0s>><<endreplace>>\\n<<replace>>//\"What do you mean? I don't remember it like that\"//<<becomes>><<set $pity -= either (15,5,9,11,6,7,4)>><<timedgoto \"h33\" 0s>><<endreplace>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h33",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 136,
+      "name": "h18",
+      "text": "\\nTime flies by really.\\nSoon you're supposed to get back into the tube.\\n\\nBut Nilo?\\n\\nNilo isn't Todd anymore.\\nThat became horribly clear directly after he got his new name.\\n\\nSome months back he started to disappear.\\nHe was just gone one morning.\\nTodd had changed. You didn't feel safe at night.\\nSomeone lurking around on the Makida.\\n\\nSome nights you heard rattling, metalic noises.\\nIt mixed with the sounds coming from your very hungry stomach.\\nYou lost some vigor and yearned for the tube.\\n\\n[[One night you even heard a scream|h19]]",
+      "links": [
+        {
+          "text": "One night you even heard a scream",
+          "destination": {
+            "name": "h19",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 137,
+      "name": "sven",
+      "text": "@@font-size:120%;\\nNAME: SVEN JOHANSSEN\\n\\nAGE: 37\\n\\nOCCUPATION: RODEO CLOWN\\n\\nMARITAL STATUS: MARRIED\\n\\nHOBBIES: HIGH SPEED INTERNET, HIGH SPEED ETHERNET, HIGH SPEED HIGHWAYS, FAST STUFF\\n\\nPRIORITY LEVEL: MINIMUM\\n\\nLAST MESSAGE IN CASE OF ACCIDENT:@@\\n\\n@@color:white;//LOTTERY WIN MOTHERFUCKERS!//@@\\n\\n[[BACK|passlist]]\\n[[END CONSOLE|y11]]\\n<<set $sven = true>>\\n",
+      "links": [
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "passlist",
+            "pid": 14
+          }
+        },
+        {
+          "text": "END CONSOLE",
+          "destination": {
+            "name": "y11",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 138,
+      "name": "food2",
+      "text": "\\n\\nCoffee is still here, though! A coffee bean plant grows in the greenhouse.\\n\\nIt was decided that all vices couldn't be removed as people would probably go insane.\\nSo coffee and porn stayed...\\n\\n<<replace \"Coffee please\">> <<replace \"@@font-family:DOS;Coffee isn't recommended during your post-cryo state@@\">> <<replace \"Coffee please!\">> <<replace \"@@font-family:DOS;Coffee isn't recommended during your post-cryo state@@\">> <<replace \"Just give me coffee!\">> <<replace \"@@font-family:DOS;Coffee holds excessive amounts of caffeeine@@\">> <<replace \"Yeah that's what I need\">> <<replace \"@@font-family:DOS;Excessive doses of caffeine before your body has acclimatised may be dangerous@@\">> <<replace \"Without coffee I'LL be dangerous, just give me coffee\">> <<replace \"@@font-family:DOS;I can provide you with coffee in 13 days 20 hours and 43 minutes@@\">> <<replace \"What can I have now?\">> <<replace \"@@font-family:DOS;During post-cryo state a BIO ORGANIC NUTRIENT CUBE is recommended@@\">> <<replace \"a BONC?\">> <<replace \"@@font-family:DOS;Yes, if you will and are keen on acronyms. It's a highly concentrated cube containing mild, altered versions of protein, carbohydrates and vitamins.@@\">> <<replace \"Sounds yummy, then I'll take one of those\">> <<replace \"@@font-family:DOS;[[There you go|food3]]@@\">><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endreplace>>",
+      "links": [
+        {
+          "text": "There you go",
+          "destination": {
+            "name": "food3",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 139,
+      "name": "h36",
+      "text": "<<if $pity gt 0 and $pity lt 20>><<timedgoto \"nd\" 0s>><<endif>>\\n<<if $pity gt 20 and $pity lt 50>><<timedgoto \"left\" 0s>><<endif>>\\n<<if $pity gt 50 and $pity lt 80>><<timedgoto \"kuntu\" 0s>><<endif>>\\n<<if $pity gt 80>><<timedgoto \"forni\" 0s>><<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "nd",
+            "pid": 3
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "left",
+            "pid": 157
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "kuntu",
+            "pid": 87
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "forni",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 140,
+      "name": "a7",
+      "text": "\\n\\n\\nEven if \"clown\" wasn't your first choice.\\n\\nIt's what you get. Some magic markers and paint provide you with a painted jacket and face and your hair is already long after almost two years without a barber in sight (and you not using the provide automatic cutters installed in the bathroom).\\n\\nYou look <<cyclinglink \"awesome\" \"horrible\">>\\n\\n[[Happy(?) Halloween(!)|a8]]",
+      "links": [
+        {
+          "text": "Happy(?) Halloween(!)",
+          "destination": {
+            "name": "a8",
+            "pid": 143
+          }
+        }
+      ]
+    },
+    {
+      "pid": 141,
+      "name": "a6",
+      "text": "\\n\\n\\nYou've celebrated more or less all holidays in the entertainment area and today is no exception.\\nIt's Halloween!!\\n\\nYou'll celebrate by reading a book (and maybe feasting upon one of those delicious protein bars with honey) or watching a movie.\\nYou've even watched all the porno as you would a \"real\" movie.\\nClutching at those few narrative straws that occur between the sex.\\n\\nToday is Halloween and your [[costume is done|a7]].",
+      "links": [
+        {
+          "text": "costume is done",
+          "destination": {
+            "name": "a7",
+            "pid": 140
+          }
+        }
+      ]
+    },
+    {
+      "pid": 142,
+      "name": "a9",
+      "text": "\\n\\n\\nINVESTIGATION ON SITE?\\n\\nAt first you question the console.\\nA machine can't tell you what to do?!\\nOr can it? \\n\\n[[ALL FUCKING RIGHT YOU FUCKING MACHINE I'LL GO!|a10]]",
+      "links": [
+        {
+          "text": "ALL FUCKING RIGHT YOU FUCKING MACHINE I'LL GO!",
+          "destination": {
+            "name": "a10",
+            "pid": 129
+          }
+        }
+      ]
+    },
+    {
+      "pid": 143,
+      "name": "a8",
+      "text": "\\n\\n\\nThe plan was to spend it with some un-processed fruit and veggies watching the 2099 remake of //Halloween//.\\n(You both love and hate to watch those old 3D movies. Glad that some classics are in the collection too).\\n\\nBut then...\\n\\n\\n<<timedinsert 6s>>\\n>><<timedreplace 1s>>@@font-family:DOS;color:red;font-size:600%;!@@<<becomes>>@@font-family:DOS;color:red;font-size:1000%;!@@<<becomes>>@@font-family:DOS;color:red;font-size:2000%;!@@<<becomes>>@@font-family:DOS;color:red;font-size:3500%;!@@<<becomes>>@@font-family:DOS;color:red;font-size:4800%;!@@<<becomes>>@@font-family:DOS;color:red;font-size:6000%;!@@<<becomes>>@@font-family:DOS;color:red;font-size:8000%;!@@\\n\\n<<endtimedreplace>>\\n<<timedgoto \"slogs4\" 8s>>\\n<<endtimedinsert>>\\n<html>\\n<style>\\nbody {overflow:hidden}\\n</style>\\n</html>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "slogs4",
+            "pid": 148
+          }
+        }
+      ]
+    },
+    {
+      "pid": 144,
+      "name": "h29",
+      "text": "\\n\\n\\nA hand covers your mouth and you are dragged of by two men.\\nOne is Kuntu, the other one is unknown to you.\\n\\nYour feet start to burn against the hard, cold metal floor as\\nyou like sleeping without socks. Even if it's cold.\\n\\nYour shoulders and armpits hurt like hell and you start to get\\ndizzy by the passing fluorescent lights in the ceiling.\\n\\nYou finally end up in the entertainment area...\\nThere you see [[Nilo|h30]]",
+      "links": [
+        {
+          "text": "Nilo",
+          "destination": {
+            "name": "h30",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 145,
+      "name": "h35",
+      "text": "<<if $nilo>> <<timedgoto \"h36nilo\" 0s>> <<else>> <<timedgoto \"h36\" 0s>> <<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h36nilo",
+            "pid": 86
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "h36",
+            "pid": 139
+          }
+        }
+      ]
+    },
+    {
+      "pid": 146,
+      "name": "susan",
+      "text": "@@font-size:120%;\\nNAME: SUSAN ALISTAIR\\n\\nAGE: 29\\n\\nOCCUPATION: POLICE OFFICER\\n\\nMARITAL STATUS: SINGLE\\n\\nHOBBIES: PHILANTHROPY, DEATH METAL\\n\\nPRIORITY LEVEL: MEDIUM\\n\\nLAST MESSAGE IN CASE OF ACCIDENT:@@\\n\\n@@color:white;//What do you say now, mom? Huh?! Have a good time back at earth, you hateful bitch!!!!//@@\\n\\n[[BACK|passlist]]\\n[[END CONSOLE|y11]]\\n<<set $susan = true>>\\n",
+      "links": [
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "passlist",
+            "pid": 14
+          }
+        },
+        {
+          "text": "END CONSOLE",
+          "destination": {
+            "name": "y11",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 147,
+      "name": "shock3",
+      "text": "<<timedgoto \"kuntublank\" 0.3s>>\\n<<set $shock3 = true>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "kuntublank",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 148,
+      "name": "slogs4",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n@@color:red;font-size:200%;<html><span class=\"blink\">!</span></html>@@ @@font-size:150%;[[WARNING - Cryo leakage detected|slogs5]]@@",
+      "links": [
+        {
+          "text": "WARNING - Cryo leakage detected",
+          "destination": {
+            "name": "slogs5",
+            "pid": 149
+          }
+        }
+      ]
+    },
+    {
+      "pid": 149,
+      "name": "slogs5",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n\\n@@color:red;font-size:200%;<html><span class=\"blink\">!</span></html>@@ @@font-size:150%;[[WARNING - Cryo leakage detected|slogs5]]@@\\n\\nCryo leakage detected in sector 24-R.\\nPassenger(s) may be in danger.\\nRecommended action: ON SITE INVESTIGATION\\n\\n[[END CONSOLE|a9]]",
+      "links": [
+        {
+          "text": "WARNING - Cryo leakage detected",
+          "destination": {
+            "name": "slogs5",
+            "pid": 149
+          }
+        },
+        {
+          "text": "END CONSOLE",
+          "destination": {
+            "name": "a9",
+            "pid": 142
+          }
+        }
+      ]
+    },
+    {
+      "pid": 150,
+      "name": "ymanifest",
+      "text": "@@font-family:terminal;color:#00F70A;font-size:350%;MAKIDA AFC CONSOLE@@\\n@@font-family:terminal;color:#00F70A;font-size:350%;- - - - - - - - - - - - -@@\\n\\n@@color:#00F70A; Original passenger count: 500.000.000\\n\\nCurrent passenger count: 499.999.999\\n\\nExpected passenger count upon arrival: 499.999.998@@\\n\\n\\n[[RUN \"SANDMAN11_RAN_ALGO\" PROGRAM|passlistrun]]",
+      "links": [
+        {
+          "text": "RUN \"SANDMAN11_RAN_ALGO\" PROGRAM",
+          "destination": {
+            "name": "passlistrun",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 151,
+      "name": "shock2",
+      "text": "<<timedgoto \"kuntublank\" 0.4s>>\\n<<set $shock2 = true>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "kuntublank",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 152,
+      "name": "h24",
+      "text": "\"This is Kuntu\"\\n\\n@@opacity:0.6;(Kuntu? He has awoken someone, as you expected. He must have gained access to restricted files in the terminal. He must have learned about cryotubes and...everything else. Is Kuntu \"devolved\" as he was, or does he just thrive on power?)@@\\n\\n\"He's one of the group.\"\\n\\nOne of the group?\\n\\n<<if $god>>//\"What? What is this, Nilo? Where does he come from? You can't go around playing God?!\"//<<else>>//\"Ok. Who is this? Where did you find him?//<<endif>>\\n\\n<<if $god>>\"Why not? You play God. Don't you? It's all a game. Isn't it?<<else>>\"I found him deep inside the ship. A long way inside. He's like me.\"<<endif>>\\n\\n//\"Nilo, are there more of you?\"//\\n\\nBut no answer. Kuntu looks at you with a smile. They exchange a quick glance, turn around and head back.\\n\\n[[You scream at him to come back, but fear keeps you put|h25]]",
+      "links": [
+        {
+          "text": "You scream at him to come back, but fear keeps you put",
+          "destination": {
+            "name": "h25",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 153,
+      "name": "IF MACRO",
+      "text": "version.extensions.ifMacros={major:2,minor:0,revision:0};macros[\"if\"]={handler:function(place,macroName,params,parser){\\nvar conditions=[],clauses=[],srcOffset=parser.source.indexOf(\">>\",parser.matchStart)+2,src=parser.source.slice(srcOffset),endPos=-1,currentCond=parser.fullArgs(),currentClause=\"\",t=0,nesting=0;\\nfor(var i=0;i<src.length;i++){if(src.substr(i,9)==\"<<endif>>\"){nesting--;if(nesting<0){endPos=srcOffset+i+9;\\nconditions.push(currentCond);clauses.push(currentClause);break;}}if((src.substr(i,6)==\"<<else\")&&nesting==0){conditions.push(currentCond);\\nclauses.push(currentClause);currentClause=\"\";t=src.indexOf(\">>\",i+6);if(src.substr(i+6,4)==\" if \"){currentCond=Wikifier.parse(src.slice(i+10,t));\\n}else{currentCond=\"true\";}i=t+2;}if(src.substr(i,5)==\"<<if \"){nesting++;}currentClause+=src.charAt(i);\\n}try{if(endPos!=-1){parser.nextMatch=endPos;for(i=0;i<clauses.length;i++){if(eval(conditions.shift())){new Wikifier(place,clauses[i ].trim());\\nbreak;}}}else{throwError(place,\"can't find matching endif\");}}catch(e){throwError(place,\"bad condition: \"+e.message);\\n}}};",
+      "links": []
+    },
+    {
+      "pid": 154,
+      "name": "nisac3",
+      "text": "\\n\\n\\nKuntu and the other person started to walk towards the corpse...\\n\\n\"Stop! Let him be.\"\\n\\nThey backed away to Nilo as if they were afraid that the dead body would come alive if they didn't look at it.\\n\\nThe three men left the entertainment area - a place for fun times and [[celebration|end_1]].",
+      "links": [
+        {
+          "text": "celebration",
+          "destination": {
+            "name": "end_1",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 155,
+      "name": "h27",
+      "text": "\\n\\nFor some reason, the Makida has a communication system.\\nWell basically it's just a lot of speakers and a microphone.\\nIt hasn't been used for several decades and there's no real reason to.\\n\\nThe inital idea was maybe to be able to communicate once the ship has entered the loop and people start to wake up.\\n\\nYou turn it on.\\n\\n//\"Nilo. I guess you can hear me. I must talk to you. It's urgent. I implore you to come. Thanks. Over. I mean. Signing off... *CLICK* bye!\"//\\n\\nHope he'll [[come|h28]].",
+      "links": [
+        {
+          "text": "come",
+          "destination": {
+            "name": "h28",
+            "pid": 112
+          }
+        }
+      ]
+    },
+    {
+      "pid": 156,
+      "name": "nisac2",
+      "text": "\\n\\n\\nApproximatly 3 minutes later, Nilo, Kuntu and, the unknown, third person watch your body dangling from one side to another.\\n\\nNilo hadn't tried to stop you.\\nBut his tears provided you what you needed.\\n\\nYou couldn't say whether this was right or not, or if\\nthere was another way.\\n\\nBut as Nilo's tears left his eyes and quickly came to some rough terrain as it reached his beard, you died in peace.\\n\\n[[...|nisac3]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "nisac3",
+            "pid": 154
+          }
+        }
+      ]
+    },
+    {
+      "pid": 157,
+      "name": "left",
+      "text": "\\n\\nNilo keeps walking.\\nDid he not hear you?\\nOf course he did.\\nBut.\\nHe.\\nDoesn't.\\nCare.\\n\\nIt hurts you.\\nThe entertainment area doesn't feel like an area where people are entertained anymore.\\n\\nYou look upon the shelves of horribly bad movies and the poor choices of literature.\\n\\nTomorrow you're supposed to go back in the tube.\\nAnd #12 will wake up.\\n\\nYou'll be held [[accountable|left2]].",
+      "links": [
+        {
+          "text": "accountable",
+          "destination": {
+            "name": "left2",
+            "pid": 29
+          }
+        }
+      ]
+    }
+  ]
+}

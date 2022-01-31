@@ -1,0 +1,3230 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Start",
+      "text": "(align: \"=><=\")[(text-style: \"bold\")[Chapter One]]\nAfter breakfast you started to get the feeling that this was not going to be a normal Saturday.\n\nYour mom was acting weird, running around the house with a pen and paper, and covering the dining table with a mountain of paper cups, colorful napkins and funny pointy hats made of card. (click: \"funny pointy hats made of card\")[You tried one of them on, but the elastic cord bit into your neck. Ouch.]\n\n(set: $breederScore to 0)[[Very suspicious.]]",
+      "links": [
+        {
+          "text": "Very suspicious.",
+          "destination": {
+            "name": "Very suspicious.",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Very suspicious.",
+      "text": "And now your dad just walked into the kitchen with hundreds of shopping bags, dumping them on the floor and complaining about the line at the store.\n\nYou have to find out what\u2019s going on.\n\n[[Ask your dad]]\n[[Ask your mom]]",
+      "links": [
+        {
+          "text": "Ask your dad",
+          "destination": {
+            "name": "Ask your dad",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Ask your mom",
+          "destination": {
+            "name": "Ask your mom",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Ask your dad",
+      "text": "\u201cDad, why did you do so much shopping? Are we going to hibernate?\u201d (click: \"hibernate\")[You\u2019ve just been learning about hibernation at school and you\u2019re excited about trying it out yourself.] \u201cHibernate? Honey, it\u2019s August! Although right now I wouldn\u2019t mind sleeping for a few days.You\u2019ll have to wait and see what this shopping is for. Now go help Mommy make the table look nice.\u201d\n    \nYou spend a couple of hectic hours helping your mom bake cute little cupcakes and muffins.\n\nSuddenly the doorbell rings. You dash off to answer it before your mom can stop you. \n\n[[Open the door.]]",
+      "links": [
+        {
+          "text": "Open the door.",
+          "destination": {
+            "name": "Open the door.",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Ask your mom",
+      "text": "\u201cMommy, is the President coming to visit us? Is that why we have so many pretty new things?\u201d (click: \"President coming to visit us\")[Having the President come and visit is the most exciting thing you can imagine. Well, a unicorn might be even more exciting.] \u201cThe President? I sure hope not, sweetheart. I don\u2019t think these hats would fit him. Can you go check on your father? I think he needs your help.\"\n\nYou spend a couple of hectic hours helping your dad move furniture around in the living room and hang a weird candy-striped horse from a tree in the garden.\n\nSuddenly the doorbell rings. You dash off to answer it before your dad can stop you.\n\n[[Open the door.]] ",
+      "links": [
+        {
+          "text": "Open the door.",
+          "destination": {
+            "name": "Open the door.",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Open the door.",
+      "text": "You open the door to reveal Aunt Clare and Uncle Rob, dressed in fancy clothes and holding a brightly coloured package.\n\n\u201cHappy birthday, Jennifer!\u201d\n\nIn an instant, everything makes sense. The baking, the decorating, the package. It\u2019s your birthday! Again! You thought it was next week, but you\u2019re not the best at keeping track of dates.\n\n[[Cake day!]]",
+      "links": [
+        {
+          "text": "Cake day!",
+          "destination": {
+            "name": "Cake day!",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Cake day!",
+      "text": "You\u2019ve been to a birthday party before, but only at other people\u2019s homes, so you\u2019ve never seen all the fuss that goes into getting everything ready. \n\nLast year, your parents took you to your favourite pizza place and you drank so much soda that you were sick on the car ride home.\n\nSo what does that make you now? Hey, you\u2019re ten! \n\n[[The big 1-0.]]",
+      "links": [
+        {
+          "text": "The big 1-0.",
+          "destination": {
+            "name": "The big 1-0.",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "The big 1-0.",
+      "text": "These thoughts tumble through your head while Aunt Clare and Uncle Rob stand at the door, looking at each other and then back at you.\n\n\u201cClare! Rob! You\u2019re right on time! Please, come on in.\u201d Your mom finally catches up with you and invites your guests inside.\n\n[[You move out of the way.]]",
+      "links": [
+        {
+          "text": "You move out of the way.",
+          "destination": {
+            "name": "You move out of the way.",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "You move out of the way.",
+      "text": "Over the next half hour, party guests keep on arriving until all the chairs and sofas in the living room are taken. Everyone looks really happy to be here, and everyone has brought a prettily wrapped gift to put on the table.\n\nYou feel happy and lucky and excited. \n\n[[Let's get this party started!]]",
+      "links": [
+        {
+          "text": "Let's get this party started!",
+          "destination": {
+            "name": "Let's get this party started!",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Let's get this party started!",
+      "text": "Okay. It's your birthday, so that must mean that you get to do whatever you want. So what'll it be?\n\n[[Talk to your guests]]\n[[Entertain your guests]]\n[[Sneak a peek at your gifts]]",
+      "links": [
+        {
+          "text": "Talk to your guests",
+          "destination": {
+            "name": "Talk to your guests",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Entertain your guests",
+          "destination": {
+            "name": "Entertain your guests",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Sneak a peek at your gifts",
+          "destination": {
+            "name": "Sneak a peek at your gifts",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Talk to your guests",
+      "text": "You walk over to Sally, who sits next to you in class.\n\n\u201cHi Sally, do you like my party?\u201d\n\n\u201cHi Jennifer, your party is kind of loud. Why aren\u2019t you wearing party clothes?\u201d\n\nYou look down at yourself. You\u2019re wearing your comfy gray pants and a blue sweater with an owl on it. You like your clothes. Should you be wearing something else?\n\n[[\u201cErm\u2026 my party clothes are a surprise. You\u2019ll have to wait to see them!\u201d]]\n[[\u201cThese are my party clothes, silly. I mean\u2026 Sally.\u201d]]",
+      "links": [
+        {
+          "text": "\u201cErm\u2026 my party clothes are a surprise. You\u2019ll have to wait to see them!\u201d",
+          "destination": {
+            "name": "\u201cErm\u2026 my party clothes are a surprise. You\u2019ll have to wait to see them!\u201d",
+            "pid": 13
+          }
+        },
+        {
+          "text": "\u201cThese are my party clothes, silly. I mean\u2026 Sally.\u201d",
+          "destination": {
+            "name": "\u201cThese are my party clothes, silly. I mean\u2026 Sally.\u201d",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Entertain your guests",
+      "text": "\u201cHey everybody, look at me! I can do a roly poly!\u201d \n\nYour guests stop what they are doing to watch politely as you clumsily tip yourself over, narrowly missing the TV on your way down.\n\nYour mom swoops in as you are about to attempt a cartwheel and tells you to take a bow. (click:\"take a bow\")[\u201dStop attention seeking, Jennifer!\u201d]\n\nYou bow and your guests give you a kind round of applause.\n\n[[Sneak a peek at your gifts]]\n[[Keep performing]]",
+      "links": [
+        {
+          "text": "Sneak a peek at your gifts",
+          "destination": {
+            "name": "Sneak a peek at your gifts",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Keep performing",
+          "destination": {
+            "name": "Keep performing",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Sneak a peek at your gifts",
+      "text": "There are so many gifts piled on the small table that they are in danger of falling off. You\u2019ve never seen so much pink paper before. You rescue one floral package that was perilously close to the edge. It\u2019s rectangular.\n\nYou poke the wrapping paper surreptitiously, feeling for any obvious clues. The box almost completely surrounds something hard and a bit pointy. \n\n[[You\u2019ve no idea what it might be.]]",
+      "links": [
+        {
+          "text": "You\u2019ve no idea what it might be.",
+          "destination": {
+            "name": "You\u2019ve no idea what it might be.",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "\u201cErm\u2026 my party clothes are a surprise. You\u2019ll have to wait to see them!\u201d",
+      "text": "Sally raises a sceptical eyebrow. (click: \"sceptical eyebrow\")[How does she do that? You tried in the mirror for half an hour last week and only succeeded in giving yourself a headache.] She turns away to talk to her mom. \n\nGee, Sally. \n\n(set: $breederScore to it + 1)[[Thanks for the vote of confidence. ->Get this party started 2]]",
+      "links": [
+        {
+          "text": "Thanks for the vote of confidence. ",
+          "destination": {
+            "name": "Get this party started 2",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "\u201cThese are my party clothes, silly. I mean\u2026 Sally.\u201d",
+      "text": "Sally raises both eyebrows and tugs self-consciously at her own frilly dress. It looks really uncomfortable. \n\n(set: $breederScore to it - 1)[[Poor Sally. ->Get this party started 2]] ",
+      "links": [
+        {
+          "text": "Poor Sally. ",
+          "destination": {
+            "name": "Get this party started 2",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Get this party started 2",
+      "text": "Alright, so much for talking. There must be something more interesting to do at your own party. \n\n[[Entertain your guests]]\n[[Sneak a peek at your gifts]]",
+      "links": [
+        {
+          "text": "Entertain your guests",
+          "destination": {
+            "name": "Entertain your guests",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Sneak a peek at your gifts",
+          "destination": {
+            "name": "Sneak a peek at your gifts",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Keep performing",
+      "text": "Emboldened by the applause, you start to sing a nursery rhyme. You have a clear voice and your guests listen happily. \n\nYou really want to give them a good time, so you switch to another version of the song. (click:\"another version of the song\")[You heard your dad singing it while he was fixing your bicycle in the yard last week.] The polite smiles turn into expressions of horror, and your dad just manages to cover your mouth before you deliver the final line.\n\n[[\"Sorry folks!\"]]",
+      "links": [
+        {
+          "text": "\"Sorry folks!\"",
+          "destination": {
+            "name": "\"Sorry folks!\"",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "\"Sorry folks!\"",
+      "text": "\"No idea where she got that from. Jennifer, you know you shouldn\u2019t use those words.\u201d\n  \n[[\u201cI know, sorry Dad\u201d]]\n[[\u201cBut you were singing it while you fixed my bike. You kept laughing, so I figured it must be a funny song!\u201d]]",
+      "links": [
+        {
+          "text": "\u201cI know, sorry Dad\u201d",
+          "destination": {
+            "name": "\u201cI know, sorry Dad\u201d",
+            "pid": 18
+          }
+        },
+        {
+          "text": "\u201cBut you were singing it while you fixed my bike. You kept laughing, so I figured it must be a funny song!\u201d",
+          "destination": {
+            "name": "\u201cBut you were singing it while you fixed my bike. You kept laughing, so I figured it must be a funny song!\u201d",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "\u201cI know, sorry Dad\u201d",
+      "text": "Your guests shake their heads and go back to their conversations, but you think you spot a couple of the moms laughing together on the other side of the room. Your dad tries to subtly shove you towards the gift table and out of the limelight.\n\n[[Sneak a peek at your gifts]] ",
+      "links": [
+        {
+          "text": "Sneak a peek at your gifts",
+          "destination": {
+            "name": "Sneak a peek at your gifts",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "\u201cBut you were singing it while you fixed my bike. You kept laughing, so I figured it must be a funny song!\u201d",
+      "text": "Your dad looks scared for a moment, then angry, before putting on a big smile and turning to your guests. \u201cMy my, what a wonderful imagination you have, Jennifer. Is it time to open your gifts?\u201d\n\n(set: $breederScore to it - 1)[[Sneak a peek at your gifts]] ",
+      "links": [
+        {
+          "text": "Sneak a peek at your gifts",
+          "destination": {
+            "name": "Sneak a peek at your gifts",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "You\u2019ve no idea what it might be.",
+      "text": "Your friend Becky\u2019s mom spots you, and you hurriedly put the package back on the table, making the pile of gifts teeter dramatically for a couple of seconds.\n\n\u201cAw, honey, don\u2019t you know that good girls don\u2019t spoil surprises?\u201d\n\n[[\u201cI\u2019m not a good girl, so I don\u2019t care.\u201d]]\n[[\u201cI\u2019m sorry, I won\u2019t do it again\u201d]]\n[[\u201cBut it looked so pretty! Is it from you?\u201d]]",
+      "links": [
+        {
+          "text": "\u201cI\u2019m not a good girl, so I don\u2019t care.\u201d",
+          "destination": {
+            "name": "\u201cI\u2019m not a good girl, so I don\u2019t care.\u201d",
+            "pid": 21
+          }
+        },
+        {
+          "text": "\u201cI\u2019m sorry, I won\u2019t do it again\u201d",
+          "destination": {
+            "name": "\u201cI\u2019m sorry, I won\u2019t do it again\u201d",
+            "pid": 22
+          }
+        },
+        {
+          "text": "\u201cBut it looked so pretty! Is it from you?\u201d",
+          "destination": {
+            "name": "\u201cBut it looked so pretty! Is it from you?\u201d",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "\u201cI\u2019m not a good girl, so I don\u2019t care.\u201d",
+      "text": "Becky\u2019s mom looks shocked for a moment.\n\n\u201cWell now, I\u2019m sure your mommy wouldn\u2019t like to hear you say that.\u201d\n\n\u201cI dunno. My mommy says I should always tell the truth. I know I\u2019m not a good girl, because sometimes I just can\u2019t help being naughty. Are you a good girl?\u201d\n\n\u201cGoodness. I think so. I try to be, but sure, sometimes I don\u2019t do the right thing. You\u2019re a smart one, little Jennifer.\u201d\n\nYour dad claps his hands to get everyone's attention. \n\n(set: $breederScore to it - 1)[[It's gift unwrapping time!]] ",
+      "links": [
+        {
+          "text": "It's gift unwrapping time!",
+          "destination": {
+            "name": "It's gift unwrapping time!",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "\u201cI\u2019m sorry, I won\u2019t do it again\u201d",
+      "text": "\u201cNow that\u2019s ok, honey. I know it must be hard to resist all those pretty parcels.\u201d\n\n\u201cIt really is. But I\u2019ll leave them alone until Daddy says I can open them.\u201d\n\n\u201cThere\u2019s a good girl.\u201d\n\nYour dad claps his hands to get everyone's attention. \n\n(set: $breederScore to it + 1)[[It's gift unwrapping time!]]",
+      "links": [
+        {
+          "text": "It's gift unwrapping time!",
+          "destination": {
+            "name": "It's gift unwrapping time!",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "\u201cBut it looked so pretty! Is it from you?\u201d",
+      "text": "\u201cWhy yes, it is from me, and from Becky and her daddy too.\u201d\n\n\u201cWhat is it?\u201d\n\n\u201cGoodness, Jennifer, I just told you not to spoil surprises!\u201d\n\n\u201cI know. But I\u2019m more excited about your gift than I am about any of the others. Won\u2019t you give me a clue?\u201d\n\n[[She looks conflicted.]]",
+      "links": [
+        {
+          "text": "She looks conflicted.",
+          "destination": {
+            "name": "She looks conflicted.",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "It's gift unwrapping time!",
+      "text": "Finally. You just have to know what\u2019s hidden behind all that pretty paper. You open gift after gift, exclaiming with delight as you uncover a bunch of new dolls, a stack of books, and a couple of comfy-looking sweaters. After opening each gift, you dash over to the kind gift giver and hug them warmly. \n\nIt\u2019s clear to everyone in the room that you\u2019re most excited about:\n\n[[The dolls]]\n[[The books]]\n[[The sweaters]]",
+      "links": [
+        {
+          "text": "The dolls",
+          "destination": {
+            "name": "The dolls",
+            "pid": 26
+          }
+        },
+        {
+          "text": "The books",
+          "destination": {
+            "name": "The books",
+            "pid": 27
+          }
+        },
+        {
+          "text": "The sweaters",
+          "destination": {
+            "name": "The sweaters",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "She looks conflicted.",
+      "text": "\u201cAlright. Just a little clue. It\u2019s something for you to take care of.\u201d\n\n\u201cLike a puppy?\u201d\n\n\u201cMy word, no! You\u2019ll have to wait and see, Jennifer.\u201d\n\n\u201cOK.\u201d\n\nYour dad claps his hands to get everyone's attention. \n\n[[It's gift unwrapping time!]]",
+      "links": [
+        {
+          "text": "It's gift unwrapping time!",
+          "destination": {
+            "name": "It's gift unwrapping time!",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "The dolls",
+      "text": "You take each doll carefully out of its packaging, make sure they are nicely dressed, and sit them side by side, as though they\u2019re also guests at your party.\n\nUncle Rob smiles at you. \u201cJenny, honey, you take such good care of your dolls. You\u2019re gonna make a great mommy.\u201d\n\n[[\u201cI\u2019m not going to be a mommy.\u201d]]\n[[\u201cDo you really think so, Uncle Rob?\u201d]]\n[[\u201cI dunno. Do I have to be a mommy?\u201d]]",
+      "links": [
+        {
+          "text": "\u201cI\u2019m not going to be a mommy.\u201d",
+          "destination": {
+            "name": "\u201cI\u2019m not going to be a mommy.\u201d",
+            "pid": 29
+          }
+        },
+        {
+          "text": "\u201cDo you really think so, Uncle Rob?\u201d",
+          "destination": {
+            "name": "\u201cDo you really think so, Uncle Rob?\u201d",
+            "pid": 30
+          }
+        },
+        {
+          "text": "\u201cI dunno. Do I have to be a mommy?\u201d",
+          "destination": {
+            "name": "\u201cI dunno. Do I have to be a mommy?\u201d",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "The books",
+      "text": "You take the most exciting looking book and find a quiet corner to sit in. It\u2019s not easy to find peace in a house full of party guests.\n\nAfter a few minutes, Aunt Clare spots you and comes to sit beside you.\n\n[[\u201cWhat have you got there, Jennifer?\u201d]]",
+      "links": [
+        {
+          "text": "\u201cWhat have you got there, Jennifer?\u201d",
+          "destination": {
+            "name": "\u201cWhat have you got there, Jennifer?\u201d",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "The sweaters",
+      "text": "You sit on the floor with the sweaters arranged around you. You pick up each one in turn and give it a squeeze. So snuggly. But which one should you wear? You just can't decide, so you pull the red sweater over your head. Once you're wearing that one, you pull the green one on over it. And finally the blue one. You can barely move your arms. \n\nUncle Rob catches sight of you wearing three sweaters and laughs.\n\n[[\"What's so funny?\"]]",
+      "links": [
+        {
+          "text": "\"What's so funny?\"",
+          "destination": {
+            "name": "\"What's so funny?\"",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "\u201cI\u2019m not going to be a mommy.\u201d",
+      "text": "\u201cI\u2019m going to be an adventurer and go on lots of adventures all over the world.\u201d\n\n\u201cHmm, maybe you could have adventures for a couple of years and then be a mommy afterwards?\u201d\n\n\u201cNo. I won\u2019t have time for babies. But that\u2019s ok. Being a mom makes my mommy tired and sad sometimes. I\u2019m going to have adventures instead.\u201d\n\n\u201cBut what about when you get married, honey? Your husband will want a family.\u201d\n\n(set: $breederScore to it - 5)[[You chuckle. Silly Uncle Rob.]]",
+      "links": [
+        {
+          "text": "You chuckle. Silly Uncle Rob.",
+          "destination": {
+            "name": "You chuckle. Silly Uncle Rob.",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "\u201cDo you really think so, Uncle Rob?\u201d",
+      "text": "\u201cBeing a mommy looks really fun. My mommy smiles all the time and bakes cookies for me when I behave myself. She\u2019s a very good mommy.\u201d\n\n\u201cWell sure she is. Being a mommy is the best thing you can want to be. When Aunt Clare and I have a baby, Clare is going to be the happiest woman in the world.\u201d\n\n\u201cWhen will you have a baby? Do you have to wait for the post stork to bring it?\u201d\n\n(set: $breederScore to it + 5)[[He clears his throat.]]",
+      "links": [
+        {
+          "text": "He clears his throat.",
+          "destination": {
+            "name": "He clears his throat.",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "\u201cI dunno. Do I have to be a mommy?\u201d",
+      "text": "\u201cWell, I don\u2019t think you have to be, but it\u2019s what every woman I know wants to be.\u201d\n\n\u201cHow will I know if I want to be a mommy?\u201d\n\n\u201cOne day, when you\u2019re all grown up and ready to settle down, you\u2019ll feel it then. That\u2019s what your Aunt Clare told me, anyway.\u201d\n\n[[And Aunt Clare wouldn't lie, would she?]]",
+      "links": [
+        {
+          "text": "And Aunt Clare wouldn't lie, would she?",
+          "destination": {
+            "name": "And Aunt Clare wouldn't lie, would she?",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "You chuckle. Silly Uncle Rob.",
+      "text": "\u201cAdventurers don\u2019t get married, silly. I won\u2019t need a husband.\u201d\n\n\u201cMy word, Jennifer. What a thing to say! It\u2019s just as well you\u2019re bound to change your mind when you get older.\u201d\n\n\u201cI hope I don\u2019t. I\u2019ve already decided what my first adventure will be.\u201d\n\n[[\u201cOh you will, honey, you will.\u201d]]",
+      "links": [
+        {
+          "text": "\u201cOh you will, honey, you will.\u201d",
+          "destination": {
+            "name": "\u201cOh you will, honey, you will.\u201d",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "\u201cOh you will, honey, you will.\u201d",
+      "text": "Something about the look on Uncle Rob\u2019s face makes you feel mad, but you\u2019re not sure what to say, so you turn back to your dolls and start putting them back in their boxes. Maybe Mommy will let you take them to the thrift store in a few weeks. \n\nYou don\u2019t feel like playing with them now. \n\n[[Chapter Two]]",
+      "links": [
+        {
+          "text": "Chapter Two",
+          "destination": {
+            "name": "Chapter Two",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Chapter Two",
+      "text": "(align: \"=><=\")[(text-style: \"bold\")[Chapter Two]]\nYou stand at the front door, waiting for Louise to let you in. You're pretty sure the wine you brought for the party is actually terrible, but how were you supposed to make a good choice when faced with hundreds of identical-looking bottles at the supermarket? And with only five dollars in your pocket? At least it wasn't the cheapest bottle. \n\n[[The fourth or fifth cheapest, maybe.]]",
+      "links": [
+        {
+          "text": "The fourth or fifth cheapest, maybe.",
+          "destination": {
+            "name": "The fourth or fifth cheapest, maybe.",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "He clears his throat.",
+      "text": "\u201cNot exactly.\u201d Uncle Rob laughs nervously. \u201cBut hopefully we\u2019ll hear the patter of tiny feet very soon.\u201d\n\n\u201cWhen you do have a baby, can I come and take care of it sometime? I can choose some clothes for it and take it for a walk in your stroller.\u201d\n\n\u201cSure, honey. That sounds like great practice for when you have babies of your own.\u201d\n\nThe thought of taking a real baby out for a walk fills you with joy and pride. You pick up the baby doll and hold it close to you.\n\n\u201cShush, baby, Mommy\u2019s here.\u201d\n\n[[Chapter Two]] ",
+      "links": [
+        {
+          "text": "Chapter Two",
+          "destination": {
+            "name": "Chapter Two",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "And Aunt Clare wouldn't lie, would she?",
+      "text": "\u201cSo I shouldn\u2019t worry about it now?\u201d\n\n\u201cOh no, honey, you just enjoy being a lovely little girl. You\u2019ll have plenty of time to be a grown up, so there\u2019s no hurry.\u201d\n\nYou feel a bit weird about the idea of being a mommy one day, but Uncle Rob is probably right. If it\u2019s what every woman wants, you\u2019ll want it too, when you\u2019re older.\n\nYou pick up the baby doll and give it a half-hearted cuddle. You wonder if it looks convincing.\n\n[[Chapter Two]] ",
+      "links": [
+        {
+          "text": "Chapter Two",
+          "destination": {
+            "name": "Chapter Two",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "\u201cWhat have you got there, Jennifer?\u201d",
+      "text": "\u201cIt\u2019s a book about the pyramids. I can\u2019t wait to visit them myself one day!\u201d\n\n\u201cThe pyramids? Why on earth would you want to visit them? They\u2019re big and dusty, and spooky too. Besides, all of the pretty things have been taken out of them and put in museums. Wouldn\u2019t you rather see all the shiny jewels and gold in a nice, clean museum instead?\u201d\n\n\u201cNo way! The pyramids are exciting. I\u2019m more interested in how they were built than what used to be inside them. I think it\u2019s cool that they\u2019re spooky too. I\u2019m not afraid of ghosts.\u201d\n\n[[You don't think you're afraid, anyway.]]",
+      "links": [
+        {
+          "text": "You don't think you're afraid, anyway.",
+          "destination": {
+            "name": "You don't think you're afraid, anyway.",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "You don't think you're afraid, anyway.",
+      "text": "\u201cWell, rather you than me, dear. Do you read a lot of books?\u201d\n\n\u201cOh yeah, I love reading, Aunt Clare. Last week, I read about the dinosaurs. Did you know that Mary Anning found one of the first ichthyosaur skeletons?\u201d\n\n\u201cHmm, I don\u2019t think that\u2019s the sort of book you should be reading. All that science. Evolution is just a load of baloney, if you ask me!\u201d\n\n[[You don't recall asking her.]]",
+      "links": [
+        {
+          "text": "You don't recall asking her.",
+          "destination": {
+            "name": "You don't recall asking her.",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "You don't recall asking her.",
+      "text": "\u201cIt\u2019s not baloney! It\u2019s how we got to where we are today. Why shouldn\u2019t I read about science?\u201d\n\n\u201cYou know, honey. Science isn\u2019t really something for girls. Look at me - I\u2019m very happy and I have a wonderful husband, even though I don\u2019t know a thing about how electricity works. I leave the technical things to Uncle Rob, and he lets me take care of the, well, taking care.\u201d\n\n[[\u201cBut science is for girls too, Aunt Clare!\u201d]]\n[[\u201cCan\u2019t I learn about science and take care of people?\u201d]]\n[[\u201cUncle Rob mustn\u2019t know that much about science. He nearly blew up our TV when he tried to fix it.\u201d]]",
+      "links": [
+        {
+          "text": "\u201cBut science is for girls too, Aunt Clare!\u201d",
+          "destination": {
+            "name": "\u201cBut science is for girls too, Aunt Clare!\u201d",
+            "pid": 40
+          }
+        },
+        {
+          "text": "\u201cCan\u2019t I learn about science and take care of people?\u201d",
+          "destination": {
+            "name": "\u201cCan\u2019t I learn about science and take care of people?\u201d",
+            "pid": 41
+          }
+        },
+        {
+          "text": "\u201cUncle Rob mustn\u2019t know that much about science. He nearly blew up our TV when he tried to fix it.\u201d",
+          "destination": {
+            "name": "\u201cUncle Rob mustn\u2019t know that much about science. He nearly blew up our TV when he tried to fix it.\u201d",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "\u201cBut science is for girls too, Aunt Clare!\u201d",
+      "text": "\u201cMy teacher at school gives me all these cool books to read. She says that everyone should know about how the world works. And she says I can be anything I want to be when I grow up.\u201d\n\n\u201cAnything you want? You\u2019ll certainly have plenty of choices, but girls just aren\u2019t made to be scientists, or mathematicians, or engineers. Our brains aren\u2019t suited to it, you know?\u201d\n\n(set: $breederScore to it - 5)[[\u201cWhat about adventuring? Is my brain suited to that?\u201d]]",
+      "links": [
+        {
+          "text": "\u201cWhat about adventuring? Is my brain suited to that?\u201d",
+          "destination": {
+            "name": "\u201cWhat about adventuring? Is my brain suited to that?\u201d",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "\u201cCan\u2019t I learn about science and take care of people?\u201d",
+      "text": "\u201cYou know, like doctors do?\"\n\n\"Doctors? Becoming a doctor takes years of studying, and you have to learn about all the icky things that go on inside our bodies. Doctors work really hard too, with very long hours. They hardly get to see their families.\"\n\n\"But years of studying icky things sounds fantastic! And I'm not going to have a family anyway, at least not for a very long time.\"\n\n[[Aunt Clare doesn't look convinced.]]",
+      "links": [
+        {
+          "text": "Aunt Clare doesn't look convinced.",
+          "destination": {
+            "name": "Aunt Clare doesn't look convinced.",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "\u201cUncle Rob mustn\u2019t know that much about science. He nearly blew up our TV when he tried to fix it.\u201d",
+      "text": "\"Oh come on, Jennifer, he was only trying to help. We can all make mistakes, even if we've read all the right books.\"\n\n\"When did Uncle Rob last read a science book? I've only seen him reading the TV guide.\"\n\n[[Aunt Clare stifles a laugh.]]",
+      "links": [
+        {
+          "text": "Aunt Clare stifles a laugh.",
+          "destination": {
+            "name": "Aunt Clare stifles a laugh.",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "\u201cWhat about adventuring? Is my brain suited to that?\u201d",
+      "text": "\u201cYou want to be an adventurer? I guess that\u2019s as much about strength as it is about brains, and girls just aren\u2019t as strong as boys.\u201d\n\nYou feel crestfallen. Aunt Clare looks at you kindly and takes your hand.\n\n\u201cDon\u2019t worry, honey. It doesn\u2019t really matter what you decide to do when you grow up. It\u2019ll all change as soon as you get married and have babies. I know you\u2019ll be really good at that. All girls are.\u201d\n\n[[All girls?]]",
+      "links": [
+        {
+          "text": "All girls?",
+          "destination": {
+            "name": "All girls?",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "All girls?",
+      "text": "You want to tell Aunt Clare that you have no intention of getting married and having babies, but it\u2019s clear she won\u2019t believe you. You turn back to your book, reading quietly until Aunt Clare eventually moves away.\n\n\u201cI\u2019ll show you, Aunt Clare. You\u2019ll see.\u201d\n\n[[Chapter Two]] ",
+      "links": [
+        {
+          "text": "Chapter Two",
+          "destination": {
+            "name": "Chapter Two",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Aunt Clare doesn't look convinced.",
+      "text": "\"It's easy to say that now, honey, but you'll change your mind about family when you get older. So being a doctor just won't do. How about nursing? Nurses still have to learn a bunch of stuff, but they don't have to learn the really tricky things.\"\n\n\"Hmm, if you say so, Aunt Clare.\"\n\nYou know that nurses work hard and need to be smart, but you reckon you've got what it takes to be a doctor, if you really wanted to. You wish that Aunt Clare would believe in you more, but it seems like she doesn't even believe in herself.\n\nThat thought makes you sad, so you take your book up to your room to read in peace.\n\n[[Chapter Two]] ",
+      "links": [
+        {
+          "text": "Chapter Two",
+          "destination": {
+            "name": "Chapter Two",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Aunt Clare stifles a laugh.",
+      "text": "\"He reads books all the time. In his shed. As far as I know.\"\n\n\"Yeah, right. Well maybe that's what I need, somewhere peaceful for reading. See you later, Aunt Clare.\"\n\nYou pick up your new book and take it to your room, where you can finally get some peace and quiet. Your mom will probably be mad at you for sneaking off from the party, but hopefully she's too busy chatting with the other moms to notice.\n\n[[Chapter Two]] ",
+      "links": [
+        {
+          "text": "Chapter Two",
+          "destination": {
+            "name": "Chapter Two",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "\"What's so funny?\"",
+      "text": "\"You look ridiculous, Jenny. Take the sweaters off; they make you look fat.\"\n\nYou look down at yourself and pat your stomach self-consciously.\n\n\"Am I fat?\"\n\n\"No, Jenny, but you look pretty chunky in all those sweaters. Do you want to look fat? You'll scare off all the boys.\"\n\n[[\"No, I don't want to look fat.\"]]\n[[\"Why does looking fat scare boys?\"]]\n[[\"Uncle Rob, are you wearing lots of sweaters too?\"]]",
+      "links": [
+        {
+          "text": "\"No, I don't want to look fat.\"",
+          "destination": {
+            "name": "\"No, I don't want to look fat.\"",
+            "pid": 48
+          }
+        },
+        {
+          "text": "\"Why does looking fat scare boys?\"",
+          "destination": {
+            "name": "\"Why does looking fat scare boys?\"",
+            "pid": 49
+          }
+        },
+        {
+          "text": "\"Uncle Rob, are you wearing lots of sweaters too?\"",
+          "destination": {
+            "name": "\"Uncle Rob, are you wearing lots of sweaters too?\"",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "\"No, I don't want to look fat.\"",
+      "text": "You sigh and start peeling off your lovely sweaters. Even when you've taken all three of them off, you feel like your tummy still looks too big. Are you fat even without the sweaters?\n\nUncle Rob notices your sad expression.\n\n\"Now, Jenny, you're a very pretty girl and your puppy fat will probably go away when you grow up. Don't worry.\"\n\n(set: $breederScore to it + 5)[[Puppy fat. Yuck.]]",
+      "links": [
+        {
+          "text": "Puppy fat. Yuck.",
+          "destination": {
+            "name": "Puppy fat. Yuck.",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "\"Why does looking fat scare boys?\"",
+      "text": "\"Do they think I'll try to eat them?\"\n\n\"Ha, ha, that's a good one, Jenny! I don't think they are worried about that, but most boys aren't interested in girls who are overweight. It's not attractive.\"\n\n\"Wow, I didn't know most boys were so superficial. But what about Aunt Clare? She's definitely fatter than I am. Is she not attractive?\"\n\n(set: $breederScore to it - 5)[[Uncle Rob looks shocked.]]",
+      "links": [
+        {
+          "text": "Uncle Rob looks shocked.",
+          "destination": {
+            "name": "Uncle Rob looks shocked.",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "\"Uncle Rob, are you wearing lots of sweaters too?\"",
+      "text": "You look at him with an innocent expression plastered to your face.\n\nUncle Rob is about to shake his head, when he looks down at himself. He looks up again, and he suddenly seems sad.\n\n\"No, Jenny, I'm not wearing lots of sweaters. I know I'm a bit overweight and I'm trying to do something about it. You have to remember, it's not nice to call other people fat. In fact, it's quite mean.\"\n\n\"Mean?\" you splutter, \"But you called me fat first! That's not nice either!\"\n\n[[Uncle Rob throws his hands in the air.]]",
+      "links": [
+        {
+          "text": "Uncle Rob throws his hands in the air.",
+          "destination": {
+            "name": "Uncle Rob throws his hands in the air.",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Puppy fat. Yuck.",
+      "text": "You pick up your sweaters and take them up to your room. You don't even want to look at them right now, so you shove them to the back of your closet.\n\nYou walk over to the mirror and look at your reflection.\n\nPuppy fat.\n\nYou'd better not have any birthday cake after all.\n\n[[Chapter Two]] ",
+      "links": [
+        {
+          "text": "Chapter Two",
+          "destination": {
+            "name": "Chapter Two",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Uncle Rob looks shocked.",
+      "text": "\"Ouch, that's a bit rude, Jenny. Clare is not fat at all.\"\n\n\"Well, if she's not fat, I'm not fat either. And I'm not interested in any boy who is scared by a bit of fat. How pathetic.\"\n\nYou turn and walk away from Uncle Rob, twirling as best you can in front of your party guests and showing off your new sweaters.\n\n[[Your dad cheers when you almost manage to raise your arms above your head.]]",
+      "links": [
+        {
+          "text": "Your dad cheers when you almost manage to raise your arms above your head.",
+          "destination": {
+            "name": "Your dad cheers when you almost manage to raise your arms above your head.",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Your dad cheers when you almost manage to raise your arms above your head.",
+      "text": "You might need help eating your piece of birthday cake though, as you can't get your fork close enough to your face. Never mind, it all feels worth it when you spot Aunt Clare pushing a slice of cake out of Uncle Rob's reach and poking his belly.\n\n[[Chapter Two]] ",
+      "links": [
+        {
+          "text": "Chapter Two",
+          "destination": {
+            "name": "Chapter Two",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Uncle Rob throws his hands in the air.",
+      "text": "\"OK, Jennifer. You got me! I'll try not to be such a jerk in future. Do you promise not to be a jerk too?\"\n\n\"Sure, but the moment I see or hear you acting like a jerk, I'm going to be a jerk right back at you. Deal?\"\n\nUncle Rob laughs.\n\n[[\"Deal, Jenny, deal.\"]]",
+      "links": [
+        {
+          "text": "\"Deal, Jenny, deal.\"",
+          "destination": {
+            "name": "\"Deal, Jenny, deal.\"",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "\"Deal, Jenny, deal.\"",
+      "text": "\"I'm going to take these sweaters off now. Not because they make me look fat. But because I am way, way, way too warm!\"\n\n\"I believe you, honey.\"\n\nUncle Rob helps you peel off your extra layers until you're back to your usual size.\n\n\"Shall we go have some birthday cake, Uncle Rob?\"\n\n\"Sure. Just a small piece for me though!\"\n\nYou smile at him and walk hand in hand over to the dining table.\n\n[[Chapter Two]] ",
+      "links": [
+        {
+          "text": "Chapter Two",
+          "destination": {
+            "name": "Chapter Two",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "The fourth or fifth cheapest, maybe.",
+      "text": "You're deep in your wine worrying when the door suddenly swings open and you're flooded with light, music and laughter. Oh boy.\n\n\"Jenny, you made it! I was starting to think you'd wussed out on me. Come on in!\"\n\nLouise looks fantastic, poured into an outfit that seems familiar.\n\n[[Where do you recognise that dress from?]]\n[[You already feel too old to wear clothes like that]]\n[[You're glad you decided to keep your outfit simple]]",
+      "links": [
+        {
+          "text": "Where do you recognise that dress from?",
+          "destination": {
+            "name": "Where do you recognise that dress from?",
+            "pid": 57
+          }
+        },
+        {
+          "text": "You already feel too old to wear clothes like that",
+          "destination": {
+            "name": "You already feel too old to wear clothes like that",
+            "pid": 58
+          }
+        },
+        {
+          "text": "You're glad you decided to keep your outfit simple",
+          "destination": {
+            "name": "You're glad you decided to keep your outfit simple",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Where do you recognise that dress from?",
+      "text": "Ah yes, that was the same dress you saw in the store last week. You don't know what made you try it on, as you should have known it would never suit your figure. Imagine if you'd turned up wearing it tonight! Well, better stop staring and say something!\n\n(set: $breederScore to it - 1)[[Greet Louise.]]",
+      "links": [
+        {
+          "text": "Greet Louise.",
+          "destination": {
+            "name": "Greet Louise.",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "You already feel too old to wear clothes like that",
+      "text": "You weren't brave enough to wear a dress like that when you were seventeen! Sometimes you wish you could absorb some of Louise's ability to not care what anyone else thinks. Come on, Jenny, say something.\n\n(set: $breederScore to it + 1)[[Greet Louise.]] ",
+      "links": [
+        {
+          "text": "Greet Louise.",
+          "destination": {
+            "name": "Greet Louise.",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "You're glad you decided to keep your outfit simple",
+      "text": "You'd been considering wearing something a little more glamorous tonight, but it would have been rude to outdo the host's outfit. Louise deserves to be the belle of the ball. Oh yeah, better say something!\n\n[[Greet Louise.]] ",
+      "links": [
+        {
+          "text": "Greet Louise.",
+          "destination": {
+            "name": "Greet Louise.",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Greet Louise.",
+      "text": "\"Hi Louise! Look! I brought wine!\"\n\nYou brandish the  bottle in front of you as if it's the holy grail. Shit. You were supposed to be subtle about the wine and sneak it into the inevitable crowd of bottles on the table before finding something you'd rather drink.\n\nLouise laughs. \"Ooh, fancy! That was sweet of you. Come in, come in, let me take your jacket.\"\n\n[[\"Thanks.\"]]",
+      "links": [
+        {
+          "text": "\"Thanks.\"",
+          "destination": {
+            "name": "\"Thanks.\"",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "\"Thanks.\"",
+      "text": "You shrug out of your windbreaker, suddenly self conscious about your own choice of party outfit. Goddammit, these are comfortable clothes, so it makes no sense for you to feel uncomfortable now. Would you feel better about yourself in five-inch heels and a miniskirt?\n\nLouise leads you into her living room. It's a sea of faces. A couple of them are vaguely familiar from the office canteen. \n\n[[But everyone else is a stranger.]]",
+      "links": [
+        {
+          "text": "But everyone else is a stranger.",
+          "destination": {
+            "name": "But everyone else is a stranger.",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "But everyone else is a stranger.",
+      "text": "A guy asks Louise to help him with something in the kitchen, and suddenly you're all alone. (click: \"you're all alone\")[As alone as anyone can be in a room full of people, anyway. It sure feels lonely right now.]\n\nYou scan the room for someone you might be able to make awkward small talk with. Nope. \n\nEveryone is already talking to someone else. OK. \n\n[[Find the drinks table.]] ",
+      "links": [
+        {
+          "text": "Find the drinks table.",
+          "destination": {
+            "name": "Find the drinks table.",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Find the drinks table.",
+      "text": "There. In the corner. You can finally release your grip on the bottle of wine, shoving it behind a pinot grigio and an enormous bottle of Belgian beer. What else is there to drink?\n\n[[Hard cider]]\n[[Cola]]\n[[Gin]]",
+      "links": [
+        {
+          "text": "Hard cider",
+          "destination": {
+            "name": "Hard cider",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Cola",
+          "destination": {
+            "name": "Cola",
+            "pid": 65
+          }
+        },
+        {
+          "text": "Gin",
+          "destination": {
+            "name": "Gin",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "Hard cider",
+      "text": "(set: $chosenDrink to \"hard cider\")You fill a glass with ice and hard cider. This warm room is making you regret how many layers of clothing you're wearing, so you touch the glass to your forehead and savor the shocking coolness. You take a sip. It's too cold to taste of much, but that's OK. You'll need the buzz later.\n\n(set: $breederScore to it - 1)[[Louise isn't back yet.]]",
+      "links": [
+        {
+          "text": "Louise isn't back yet.",
+          "destination": {
+            "name": "Louise isn't back yet.",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "Cola",
+      "text": "(set: $chosenDrink to \"cola\")Best to stick to soda for now. Move onto the booze once you've found a couple of people to hang out with. If anyone asks, it's rum and coke.\n\n(set: $breederScore to it + 1)[[Louise isn't back yet.]] ",
+      "links": [
+        {
+          "text": "Louise isn't back yet.",
+          "destination": {
+            "name": "Louise isn't back yet.",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Gin",
+      "text": "(set: $chosenDrink to \"gin\")You've not tried gin before, but it seems like a grown-up choice and, hey, you're a grown up now, right? \n\nYou pour a generous measure into a glass and sniff it. Hmm. A heap of ice, plenty of tonic, and then you're ready to take your first sip. \n\nEwww! You fight to keep your expression neutral. You have to style this out. Drink the whole glass, even if it takes all night. You wish you'd gone for the cider.\n\n[[Louise isn't back yet.]] ",
+      "links": [
+        {
+          "text": "Louise isn't back yet.",
+          "destination": {
+            "name": "Louise isn't back yet.",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "Louise isn't back yet.",
+      "text": "You don't want to go find her. You're not that lame. It's the moment you've been dreading. You're going to have to barge into a conversation with strangers.\n\n[[Ugh.]]",
+      "links": [
+        {
+          "text": "Ugh.",
+          "destination": {
+            "name": "Ugh.",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "Ugh.",
+      "text": "You spot a group of three people, two guys and a girl. There's room enough next to them for you to slip in at a quiet moment in their conversation. There, one of them just said \"Sooo...\" and smiled awkwardly. Now's your chance.\n\nAs you approach, the three faces turn to you, showing polite smiles as you join their little huddle.\n\n[[\"Hi there, do you mind if I join you?\"]]\n[[Smile back at them]]\n[[\"Well don't you three look like fun?\"]]",
+      "links": [
+        {
+          "text": "\"Hi there, do you mind if I join you?\"",
+          "destination": {
+            "name": "\"Hi there, do you mind if I join you?\"",
+            "pid": 69
+          }
+        },
+        {
+          "text": "Smile back at them",
+          "destination": {
+            "name": "Smile back at them",
+            "pid": 70
+          }
+        },
+        {
+          "text": "\"Well don't you three look like fun?\"",
+          "destination": {
+            "name": "\"Well don't you three look like fun?\"",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "\"Hi there, do you mind if I join you?\"",
+      "text": "\"Louise is pretty much the only person I know here, and she's kind of in demand right now. I'm Jenny, I work with Louise.\"\n\n(set: $breederScore to it - 1)[[One of the guys smiles back at you.]]",
+      "links": [
+        {
+          "text": "One of the guys smiles back at you.",
+          "destination": {
+            "name": "One of the guys smiles back at you.",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "Smile back at them",
+      "text": "You make do with smiling nervously back at the now slighly confused faces. Wow, these poor people are so polite. Come on, Jenny.\n\n\"Erm... Hi. Sorry about sneaking into your huddle, but I don't really know anyone here. As you can see, I'm not really good at social etiquette, so feel free to give me pointers! My name's Jenny, by the way. Louise and I work together.\"\n\n(set: $breederScore to it - 1)[[One of the guys smiles back at you.]] ",
+      "links": [
+        {
+          "text": "One of the guys smiles back at you.",
+          "destination": {
+            "name": "One of the guys smiles back at you.",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "\"Well don't you three look like fun?\"",
+      "text": "The strangers look at each other, probably trying to assess if you're being sarcastic.\n\n\"No, no, I mean it! You seem to be having a great time, so I thought I'd come and say hi. I'm Jenny, I work with Louise.\"\n\n[[One of the guys smiles back at you.]] ",
+      "links": [
+        {
+          "text": "One of the guys smiles back at you.",
+          "destination": {
+            "name": "One of the guys smiles back at you.",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "One of the guys smiles back at you.",
+      "text": "\"Oh hey, Jenny,\" says the blonde one. \"I'm Mark, and this is Hazel. We went to college with Louise.\"\n\n\"That's cool. Nice to meet you, Mark and Hazel.\" You shake hands with them, making you all laugh at the sincerity of it all. You turn to the dark-haired guy.\n\n[[\"And you are?\"]]",
+      "links": [
+        {
+          "text": "\"And you are?\"",
+          "destination": {
+            "name": "\"And you are?\"",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "\"And you are?\"",
+      "text": "\"Paul. I'm Louise's neighbor. It's a pleasure to meet you, Jenny.\" \n\nHe smiles warmly at you, and you can't help noticing that he has really great teeth. You immediately feel self conscious about your own, slightly crooked smile.\n\n[[Stop staring!]]",
+      "links": [
+        {
+          "text": "Stop staring!",
+          "destination": {
+            "name": "Stop staring!",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "Stop staring!",
+      "text": "\"Likewise. So, Paul, is Louise a nightmare neighbor? I heard she throws some pretty wild parties.\"\n\nPaul laughs and soon the four of you are swapping embarrassing tales about Louise. Hazel does a great impression of Louise's mom, while Mark seems to have spent the first year of college as Louise's wingman, before he started dating Hazel. (click: \"Louise's wingman\")[You've not known Louise that long, but you suspect that being her wingman was practically a full-time job.]\n\nPaul's stories are less wild, but it's clear that Louise has made a big impression on him in the sixth months since she moved into the neighborhood. \n\n[[Louise joins the group a little while later.]]",
+      "links": [
+        {
+          "text": "Louise joins the group a little while later.",
+          "destination": {
+            "name": "Louise joins the group a little while later.",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Louise joins the group a little while later.",
+      "text": "\"What on earth is so funny? I could hear you guys laughing from the other side of the house!\"\n\nYou grin sheepishly at each other, and Louise quickly works out what's going on.\n\n\"Uh uh. Nope. Mark and Hazel, you're coming with me. I won't let you spoil my reputation with Jenny. She thinks I'm a saint, you know?\"\n\nLouise winks at you and drags the protesting couple away, leaving you alone with Paul.\n\n[[\"So...\"]]",
+      "links": [
+        {
+          "text": "\"So...\"",
+          "destination": {
+            "name": "\"So...\"",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "\"So...\"",
+      "text": "\"So...\"\n\n\"Another drink?\" Paul holds up his empty glass.\n\n(if: $chosenDrink is \"hard cider\")[\"Sure. Mine's a hard cider.\"](else-if: $chosenDrink is \"cola\")[\"Sure. Mine's a cola.\"](else:)[\"Erm, I'll take a hard cider, thanks.\"]\n\nPaul takes your glass and you watch him weave across the crowded room.\n\n[[You're staring again.]]",
+      "links": [
+        {
+          "text": "You're staring again.",
+          "destination": {
+            "name": "You're staring again.",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "You're staring again.",
+      "text": "You're having a much better time than you expected, but you should have guessed that Louise would have fun friends. Her college days sound a little wilder than yours. She must have been one of those people who can party all week and still ace all their assignments. No all-night library sessions for Louise.\n\n\"Here you go.\" Paul returns, handing you an ice-cold drink. \n\n[[Perfect.]]",
+      "links": [
+        {
+          "text": "Perfect.",
+          "destination": {
+            "name": "Perfect.",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "Perfect.",
+      "text": "\"Thanks. Are you having a good time?\"\n\n\"I am now,\" he smiles, raising his glass to you. \"And it's certainly nicer to attend my neighbor's party than sit at home grumbling about the noise.\"\n\n\"And what do you do when you're not attending wild parties or grumbling at home?\" you ask.\n\n\"Well, during the day I work at the local daycare, but I go to business school in the evenings.\"\n\n[[\"Daycare? How did you get into that line of work?\"]]\n[[\"Business school? That's great. Have you got big career plans?\"]]\n[[\"Wow, how do you find the time to work, study and grumble?\"]]",
+      "links": [
+        {
+          "text": "\"Daycare? How did you get into that line of work?\"",
+          "destination": {
+            "name": "\"Daycare? How did you get into that line of work?\"",
+            "pid": 79
+          }
+        },
+        {
+          "text": "\"Business school? That's great. Have you got big career plans?\"",
+          "destination": {
+            "name": "\"Business school? That's great. Have you got big career plans?\"",
+            "pid": 80
+          }
+        },
+        {
+          "text": "\"Wow, how do you find the time to work, study and grumble?\"",
+          "destination": {
+            "name": "\"Wow, how do you find the time to work, study and grumble?\"",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "\"Daycare? How did you get into that line of work?\"",
+      "text": "\"My mom was a nanny when I was a kid, and she used to bring me along sometimes. I got so used to spending time around babies and toddlers that getting paid for taking care of them seemed like a smart move.\"\n\n\"And was it? A smart move, I mean?\"\n\n\"Yes and no. I love the kids, but the pay is pretty miserable and the days feel long. I've learned a lot about how to run a daycare center though, so it's all useful experience for the future.\"\n\n[[\"Useful experience for your own daycare center?\"]]\n[[\"Useful experience for your own kids?\"]]",
+      "links": [
+        {
+          "text": "\"Useful experience for your own daycare center?\"",
+          "destination": {
+            "name": "\"Useful experience for your own daycare center?\"",
+            "pid": 82
+          }
+        },
+        {
+          "text": "\"Useful experience for your own kids?\"",
+          "destination": {
+            "name": "\"Useful experience for your own kids?\"",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "\"Business school? That's great. Have you got big career plans?\"",
+      "text": "\"I wouldn't say I have a plan as such, but I definitely have some hopes. I would really like to own my own business one day, be my own boss.\"\n\n[[\"What kind of business would you like to be the boss of?\"]]\n[[\"What's your boss like?\"]]",
+      "links": [
+        {
+          "text": "\"What kind of business would you like to be the boss of?\"",
+          "destination": {
+            "name": "\"What kind of business would you like to be the boss of?\"",
+            "pid": 93
+          }
+        },
+        {
+          "text": "\"What's your boss like?\"",
+          "destination": {
+            "name": "\"What's your boss like?\"",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "\"Wow, how do you find the time to work, study and grumble?\"",
+      "text": "Paul pulls a grumpy face and puts on a voice that sounds like a very cranky elderly man.\n\n\"Well, young Jenny, you don't know how lucky you are. Sometimes I only have enough time in the day to grumble for half an hour. And that's on a good day! You whippersnappers have all the time in the world for grumbling, but do you use it? No, you waste your day on being cheerful. It makes me sick.\"\n\nYou can't help but laugh. This guy is kind of adorable.\n\n[[\"So, Paul, what's the deal with business school? Big plans?\"->\"Business school? That's great. Have you got big career plans?\"]]",
+      "links": [
+        {
+          "text": "\"So, Paul, what's the deal with business school? Big plans?\"",
+          "destination": {
+            "name": "\"Business school? That's great. Have you got big career plans?\"",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "\"Useful experience for your own daycare center?\"",
+      "text": "\"Well, maybe, sure. But's more about running my own business than it is about daycare itself.\" Paul shoots you a worried look. \"Don't get me wrong, I love kids.\"\n\n\"Oh of course, who doesn't?\"\n\n[[You wonder if you sound convincing.]]\n[[You wonder why he's overcompensating.]]\n[[You can see him being a great father.]]",
+      "links": [
+        {
+          "text": "You wonder if you sound convincing.",
+          "destination": {
+            "name": "You wonder if you sound convincing.",
+            "pid": 84
+          }
+        },
+        {
+          "text": "You wonder why he's overcompensating.",
+          "destination": {
+            "name": "You wonder why he's overcompensating.",
+            "pid": 85
+          }
+        },
+        {
+          "text": "You can see him being a great father.",
+          "destination": {
+            "name": "You can see him being a great father.",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "\"Useful experience for your own kids?\"",
+      "text": "\"Oh well, yeah. I guess. I'm only 23, so parenthood seems pretty distant right now. But if and when I do become a dad, yeah, I'll know a thing or two about how to look after them and keep them entertained. Are you planning to have kids, one day?\n\n[[Laugh]]\n[[Try to change the subject]]\n[[Say yes]]",
+      "links": [
+        {
+          "text": "Laugh",
+          "destination": {
+            "name": "Laugh",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Try to change the subject",
+          "destination": {
+            "name": "Try to change the subject",
+            "pid": 88
+          }
+        },
+        {
+          "text": "Say yes",
+          "destination": {
+            "name": "Say yes",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "You wonder if you sound convincing.",
+      "text": "He caught you off guard there. You forgot to put on your 'aren't kids adorable?' face. Hopefully it'll be a long time before you have to deal with any grubby little monsters of your own.\n\nYou're both way too young to be serious about kids, anyway. Right?\n\n[[\"What kind of business would you like to run?\" ->\"What kind of business would you like to be the boss of?\"]] ",
+      "links": [
+        {
+          "text": "\"What kind of business would you like to run?\" ",
+          "destination": {
+            "name": "\"What kind of business would you like to be the boss of?\"",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "You wonder why he's overcompensating.",
+      "text": "He doesn't need to convince you. If you knew him any better, you'd tell him that, actually, you think kids are grubby little monsters and you want nothing to do with them. Ever.\n\nYou wonder if he might feel the same. You're sure you'll find out, eventually.\n\n(set: $breederScore to it - 1)[[\"What kind of business would you like to run?\" ->\"What kind of business would you like to be the boss of?\"]]  ",
+      "links": [
+        {
+          "text": "\"What kind of business would you like to run?\" ",
+          "destination": {
+            "name": "\"What kind of business would you like to be the boss of?\"",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "You can see him being a great father.",
+      "text": "Woah. Where did that come from? You barely know the guy and you're already picturing him playing catch with his unbearably cute son? Society has really done a number on you.\n\nYou're glad Paul can't read your thoughts.\n\n(set: $breederScore to it + 1)[[\"What kind of business would you like to run?\" ->\"What kind of business would you like to be the boss of?\"]] ",
+      "links": [
+        {
+          "text": "\"What kind of business would you like to run?\" ",
+          "destination": {
+            "name": "\"What kind of business would you like to be the boss of?\"",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "Laugh",
+      "text": "Your laugh is so loud that half the people in the room turn to stare at you.\n\n\"Oh god no. There is so much more that I want to do with my life. I can't imagine tying myself to such a huge responsibility and limiting my opportunities in life.\"\n\n\"So, not even in ten years or so, when you're ready to settle down?\"\n\n\"Ten years? I might be ready to settle down in fifty years, maybe. But no, never.\"\n\n(set: $breederScore to it - 5)[[He looks surprised and a little sceptical.]]",
+      "links": [
+        {
+          "text": "He looks surprised and a little sceptical.",
+          "destination": {
+            "name": "He looks surprised and a little sceptical.",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "Try to change the subject",
+      "text": "\"Hey, how did we get onto such a serious topic? We barely know each other!\"\n\n\"Weren't you the one who brought it up? Anyway, you're right. We barely know each other. But I get the feeling that you're someone I'd like to get to know. And we can leave the big questions of life until after I've found out your favorite ice cream flavor. How does that sound?\"\n\nPhew. He seems like a pretty perceptive guy. And he's into ice cream? \n\n[[Paul is definitely too good to be true.]]",
+      "links": [
+        {
+          "text": "Paul is definitely too good to be true.",
+          "destination": {
+            "name": "Paul is definitely too good to be true.",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "Say yes",
+      "text": "\"Oh, yes. I think so. I mean, that's what it's all about, right?\"\n\n\"Probably. It doesn't feel like something I need to do right away, but I can see myself enjoying being a dad.\"\n\n\"You know what? I can see that too. Uh oh. Is that too much?\"\n\n(set: $breederScore to it + 5)[[Well done, Jenny, way to scare him off.]]",
+      "links": [
+        {
+          "text": "Well done, Jenny, way to scare him off.",
+          "destination": {
+            "name": "Well done, Jenny, way to scare him off.",
+            "pid": 116
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "He looks surprised and a little sceptical.",
+      "text": "\"Wow. How can you be so sure you won't change your mind?\"\n\n\"Come on, Paul. Would you ask that question of a heavily pregnant woman? It's my choice to make, and I'm willing to live with the consequences. I'd rather go through a few moments of regret than raise a child I resent.\" You pause, and realize you might be going overboard. \"You seem a little shocked. Do you think I'm an awful person now?\"\n\n\"Not at all. Actually, I'm a little jealous that you really know what you want. Or don't want. I spend so much time lately wondering what I'm doing, who I want to be, have I made the right choices? So it's refreshing to talk to someone who knows their own mind.\"\n\n[[Huh.]]",
+      "links": [
+        {
+          "text": "Huh.",
+          "destination": {
+            "name": "Huh.",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "Huh.",
+      "text": "\"That's a real compliment, thanks. I won't pretend that I'm this definite about everything in life, but there are a few things I can be certain about. Hey, is it weird if I ask for your number? It might help to talk through your future plans with someone like me, or we could just hang out sometime. Up to you.\"\n\n\"No, that's not weird at all. Here, let me write it down for you.\"\n\nPaul grabs a pen from Louise's coffee table and a napkin to write on. He hands you his just-about-legible number and you place it carefully into your pocket.\n\nYou'll never forget the night you met Paul.\n\n[[Chapter Three]]",
+      "links": [
+        {
+          "text": "Chapter Three",
+          "destination": {
+            "name": "Chapter Three",
+            "pid": 92
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "Chapter Three",
+      "text": "(align: \"=><=\")[(text-style: \"bold\")[Chapter Three]]\nFor the third time in the last half hour, the baby monitor bursts into life, all flashing lights and high-pitched yells.\n\n[[Oh boy.]]",
+      "links": [
+        {
+          "text": "Oh boy.",
+          "destination": {
+            "name": "Oh boy.",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "\"What kind of business would you like to be the boss of?\"",
+      "text": "\"You really want to know? Ok. In my free time, I go over to my parents' place and build furniture with my dad. It's this hobby we've been working on for years, but I think I'm pretty good at it now. I'd love to make really special pieces for people, with my own workshop full of tools and beautiful wood.\"\n\nYou resist the urge to make a joke about tools and wood. \n\n[[It's tough.]] ",
+      "links": [
+        {
+          "text": "It's tough.",
+          "destination": {
+            "name": "It's tough.",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "\"What's your boss like?\"",
+      "text": "\"She's real nice. And kind of scary. Reminds me of my mom a little.\"\n\nYou think you'd quite like to meet his mom.\n\n\"And are you going to be a scary boss?\" You raise an eyebrow. (click: \"raise an eyebrow\")[You finally learned to do it when you were twelve, and it's been your favorite weapon ever since.] \n\n[[Paul smiles.]]\n",
+      "links": [
+        {
+          "text": "Paul smiles.",
+          "destination": {
+            "name": "Paul smiles.",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "Paul smiles.",
+      "text": "\"I don't think so. I take more after my dad, and we work well together.\"\n\n\"Your dad works at the daycare center?\"\n\n\"No, no,\" Paul laughs at your faux-shocked expression. \n\n[[\"So tell me more.\" ->\"What kind of business would you like to be the boss of?\"]]",
+      "links": [
+        {
+          "text": "\"So tell me more.\" ",
+          "destination": {
+            "name": "\"What kind of business would you like to be the boss of?\"",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "It's tough.",
+      "text": "\"You make furniture? That's amazing. I had no idea anyone around here had those kind of skills. And definitely not anyone my age. Do you have any photos of your work?\"\n\n\"Really? Sure.\" Paul pulls his phone from his pocket and finds a few photos of his latest project, a sturdy-looking dining table that makes your flatpack furniture look like the garbage it is.\n\n[[You can't help but be impressed.]]",
+      "links": [
+        {
+          "text": "You can't help but be impressed.",
+          "destination": {
+            "name": "You can't help but be impressed.",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "You can't help but be impressed.",
+      "text": "When was the last time you actually made something?\n\n\"Oh Paul, it's amazing! How long did you work on it?\"\n\n\"We could only do a couple of hours a week, so we worked on that table for about two months. When I eventually start making furniture full time, it'll be much faster.\"\n\n[[Paul seems to be something special.]]",
+      "links": [
+        {
+          "text": "Paul seems to be something special.",
+          "destination": {
+            "name": "Paul seems to be something special.",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "Paul seems to be something special.",
+      "text": "\"You two seem to have a real gift.\"\n\n\"Ha, well, these pieces become like children to me. Selling them won't be easy.\"\n\n[[\"Children? They're much better than children.\"]]\n[[\"I work in marketing. Can I help?\"]]",
+      "links": [
+        {
+          "text": "\"Children? They're much better than children.\"",
+          "destination": {
+            "name": "\"Children? They're much better than children.\"",
+            "pid": 99
+          }
+        },
+        {
+          "text": "\"I work in marketing. Can I help?\"",
+          "destination": {
+            "name": "\"I work in marketing. Can I help?\"",
+            "pid": 100
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "\"Children? They're much better than children.\"",
+      "text": "\"Now you're being too kind. Or... are you not a big fan of kids?\"\n\n\"I don't actively dislike them, if that's what you mean?\"\n\n\"I guess I was trying to get at... whether you want to have kids of your own?\"\n\n[[Laugh]]\n[[Try to change the subject]]\n[[Say yes]]",
+      "links": [
+        {
+          "text": "Laugh",
+          "destination": {
+            "name": "Laugh",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Try to change the subject",
+          "destination": {
+            "name": "Try to change the subject",
+            "pid": 88
+          }
+        },
+        {
+          "text": "Say yes",
+          "destination": {
+            "name": "Say yes",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "\"I work in marketing. Can I help?\"",
+      "text": "\"Oh yeah, that's right! You know what, I would really appreciate some help with the sales side of things, when we get that far. Do you mean it?\"\n\n\"Of course! Selling these beauties would be no trouble at all, plus I could support you through the emotional turmoil of saying goodbye to your babies. Make sure they go to a good home. But does that mean you would become your dad's boss?\"\n\n[[You know you couldn't work with your dad.]]",
+      "links": [
+        {
+          "text": "You know you couldn't work with your dad.",
+          "destination": {
+            "name": "You know you couldn't work with your dad.",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "You know you couldn't work with your dad.",
+      "text": "\"Believe me, we've talked about this a lot during the last few months. We went back and forth on who should be in charge, but I think we've settled on being joint owners, partners really, while I'll be the director because of my fresh-out-the-box business school knowledge.\"\n\n\"Sounds smart. Do you really like working with your dad? Don't you fight sometimes?\"\n\n[[Paul chuckles softly, probably remembering their last argument.]]",
+      "links": [
+        {
+          "text": "Paul chuckles softly, probably remembering their last argument.",
+          "destination": {
+            "name": "Paul chuckles softly, probably remembering their last argument.",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "Paul chuckles softly, probably remembering their last argument.",
+      "text": "\"Sure we do. And often! But we get each other too; we have a lot in common. So we can usually talk it through over a beer and move on. I actually really love the idea of working with my dad. We'll make some beautiful furniture together.\"\n\n[[\"I believe you will. So is family really important to you?\"]]",
+      "links": [
+        {
+          "text": "\"I believe you will. So is family really important to you?\"",
+          "destination": {
+            "name": "\"I believe you will. So is family really important to you?\"",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "\"I believe you will. So is family really important to you?\"",
+      "text": "\"I've been brought up to put family first, I guess. I love having my parents and sisters nearby. I hope I'll always live close to them.\"\n\n[[\"Always? Don't you want to spread your wings a bit?\"]]\n[[\"That's so nice. I couldn't wait to move away from my family.\"]]",
+      "links": [
+        {
+          "text": "\"Always? Don't you want to spread your wings a bit?\"",
+          "destination": {
+            "name": "\"Always? Don't you want to spread your wings a bit?\"",
+            "pid": 104
+          }
+        },
+        {
+          "text": "\"That's so nice. I couldn't wait to move away from my family.\"",
+          "destination": {
+            "name": "\"That's so nice. I couldn't wait to move away from my family.\"",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "\"Always? Don't you want to spread your wings a bit?\"",
+      "text": "\"You mean like, travel, have adventures, that kind of thing?\"\n\n\"Exactly. There's so much to see out there, so much to try!\"\n\n\"I would like to travel, even if it's just to get inspiration for my work. But I would need the right travel buddy, you know?\"\n\n[[\"Someone like your dad?\"]]",
+      "links": [
+        {
+          "text": "\"Someone like your dad?\"",
+          "destination": {
+            "name": "\"Someone like your dad?\"",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "\"That's so nice. I couldn't wait to move away from my family.\"",
+      "text": "\"Are they that bad?\"\n\n\"Oh no, they're fine. I just don't want to live so close that my mom can come over unannounced before I've had a chance to clean the kitchen. And I know she would.\"\n\nHe smiles, flashing those great teeth again. \"I get it. I just feel it'll be so great having my parents nearby to help out and spend time together once I do get round to settling down and starting a family of my own.\"\n\n[[\"You know, settling down and starting a family is optional.\"]]\n[[\"Well if it works for you, it sounds like a smart plan.\" ->\"I like the sound of your plan, Paul.\"]]",
+      "links": [
+        {
+          "text": "\"You know, settling down and starting a family is optional.\"",
+          "destination": {
+            "name": "\"You know, settling down and starting a family is optional.\"",
+            "pid": 107
+          }
+        },
+        {
+          "text": "\"Well if it works for you, it sounds like a smart plan.\" ",
+          "destination": {
+            "name": "\"I like the sound of your plan, Paul.\"",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "\"Someone like your dad?\"",
+      "text": "\"Ha! No, ideally not my dad. He's very happy right where he is. So sure, it would be nice to travel a little before settling down, starting a family, all that stuff.\"\n\n[[\"You know, settling down and starting a family is optional.\"]]\n[[\"I like the sound of your plan, Paul.\"]]\n[[\"Well, who knows how you'll feel once you've seen some more of the world.\"]]",
+      "links": [
+        {
+          "text": "\"You know, settling down and starting a family is optional.\"",
+          "destination": {
+            "name": "\"You know, settling down and starting a family is optional.\"",
+            "pid": 107
+          }
+        },
+        {
+          "text": "\"I like the sound of your plan, Paul.\"",
+          "destination": {
+            "name": "\"I like the sound of your plan, Paul.\"",
+            "pid": 108
+          }
+        },
+        {
+          "text": "\"Well, who knows how you'll feel once you've seen some more of the world.\"",
+          "destination": {
+            "name": "\"Well, who knows how you'll feel once you've seen some more of the world.\"",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "\"You know, settling down and starting a family is optional.\"",
+      "text": "\"Huh, is it really?\" Paul pulls an exagerrated surprised face that you can't help but laugh at. \"I know, I get what you're saying. We shouldn't just take a certain path through life for granted. I'm open to where life takes me in that regard. How about you? Are you not in a hurry to bag a husband and pop out a few babies?\"\n\n[[Laugh]] ",
+      "links": [
+        {
+          "text": "Laugh",
+          "destination": {
+            "name": "Laugh",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "\"I like the sound of your plan, Paul.\"",
+      "text": "\"You think so? I'm glad to hear that. How about you? Will you be settling down once you've had some adventures?\n\n[[Say yes]] \n[[Try to change the subject]] ",
+      "links": [
+        {
+          "text": "Say yes",
+          "destination": {
+            "name": "Say yes",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Try to change the subject",
+          "destination": {
+            "name": "Try to change the subject",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "\"Well, who knows how you'll feel once you've seen some more of the world.\"",
+      "text": "\"You're right. I should keep an open mind. You never know what life has in store for you. Like meeting you tonight, for instance, I didn't see that coming.\"\n\nPaul smiles at you. You'd usually balk at the cheesy line, but coming from him... You're not complaining.\n\n\"An open mind makes for a more interesting life, that's for sure.\"\n\n[[You smile back at Paul.]]",
+      "links": [
+        {
+          "text": "You smile back at Paul.",
+          "destination": {
+            "name": "You smile back at Paul.",
+            "pid": 110
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "You smile back at Paul.",
+      "text": "\"So no fixed plans for you then? Just see where the world takes you? Maybe not even have kids?\"\n\nHe looks at you, his sincere expression telling you that he is genuinely interested in your future plans. How sweet.\n\n[[Try to change the subject]] ",
+      "links": [
+        {
+          "text": "Try to change the subject",
+          "destination": {
+            "name": "Try to change the subject",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "Chapter Four",
+      "text": "(align: \"=><=\")[(text-style: \"bold\")[Chapter Four]]\nYou stare at the pregnancy test stick's little window for a few seconds. You look at the packaging. Back at the stick.\n\nYup. There it is.\n\nPaul's voice comes from the other side of the bathroom door.\n\n[[\"Are you OK, honey?\"]]",
+      "links": [
+        {
+          "text": "\"Are you OK, honey?\"",
+          "destination": {
+            "name": "\"Are you OK, honey?\"",
+            "pid": 161
+          }
+        }
+      ]
+    },
+    {
+      "pid": 112,
+      "name": "Chapter Five",
+      "text": "(align: \"=><=\")[(text-style: \"bold\")[Chapter Five]]\nOK. You have twenty minutes until you're meeting Louise for a coffee. Do you have time to pick up some groceries from the supermarket first? Just about. (click: \"pick up some groceries\")[You used up the last onion three days ago and the only thing left in your fridge is an opened jar of olives from last year. Or the year before.]\n\nYou walk into Fresh Mart and pick up a basket. Maybe there'll be some great offers on candy. Or vegetables. But hopefully candy.\n\nAs you step into the aisle where you're hoping to find some olive oil, you hear a familiar voice.\n\n\"Oscar, put that down. Now!\"\n\n[[It's Paul.]]\n",
+      "links": [
+        {
+          "text": "It's Paul.",
+          "destination": {
+            "name": "It's Paul.",
+            "pid": 202
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "THE END",
+      "text": "(align: \"=><=\")[(text-style: \"bold\")[THE END]]\nThank you for playing A Woman's Choice.\n\nReproductive freedom should be the default for all women, but in reality Jennifer is extremely privileged. Millions of women are unable to choose whether or not to have children, so please take a moment today to think about their lives, and how they could be so different.\n\nAnd remember, if you do have the right to choose, never take it for granted.\n\n(align: \"=><=\")[[[Change Jennifer's life - Play again->Start]]\n[[Credits]]\n[[Menu]]]",
+      "links": [
+        {
+          "text": "Change Jennifer's life - Play again",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Menu",
+          "destination": {
+            "name": "Menu",
+            "pid": 200
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "Credits",
+      "text": "Created by: Katie Benson\n\nThank you to my playtesters: Dario R, Martina K, Nancy J, Signe SF, Svend H, Valur Z\n\n[[Play again->Start]]",
+      "links": [
+        {
+          "text": "Play again",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "Paul is definitely too good to be true.",
+      "text": "\"Ice cream, you say? You're on. Can I get your number, so we can go to Sandy's Sundaes some time? My treat.\"\n\n\"Sure. Sounds delicious.\"\n\nPaul grabs a pen from Louise's coffee table and a napkin to write on. He hands you his just-about-legible number and you place it carefully into your pocket.\n\nYou'll always remember the night you met Paul.\n\n[[Chapter Three]]",
+      "links": [
+        {
+          "text": "Chapter Three",
+          "destination": {
+            "name": "Chapter Three",
+            "pid": 92
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "Well done, Jenny, way to scare him off.",
+      "text": "Paul just laughs at your worried expression.\n\n\"No, I think it's sweet. I think you're sweet. I'd really like to see you again, Jenny. Can I give you my number?\"\n\n[[\"Uhm, of course! I mean, I'd like that.\"]]\n\n",
+      "links": [
+        {
+          "text": "\"Uhm, of course! I mean, I'd like that.\"",
+          "destination": {
+            "name": "\"Uhm, of course! I mean, I'd like that.\"",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "\"Uhm, of course! I mean, I'd like that.\"",
+      "text": "Paul grabs a pen from Louise's coffee table and a napkin to write on. He hands you his just-about-legible number and you place it carefully into your pocket.\n\nYou'll always remember the night you met Paul.\n\n[[Chapter Three]]",
+      "links": [
+        {
+          "text": "Chapter Three",
+          "destination": {
+            "name": "Chapter Three",
+            "pid": 92
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "Startup",
+      "text": "{\n<!-- Set autosave variables -->\n(set: $_version to \"1.0\")\n(set: $_autosave_slot to \"autosave\")\n(set: $_autosave_filename to \"save v\"+$_version)\n(set: $_start_passage to \"Start\")\n}",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "Oh boy.",
+      "text": "\"Again? Mark, it's definitely your turn this time.\"\n\n\"Sure thing, honey.\" Resigned to the task, Mark heaves himself out of his chair and heads upstairs.\n\nHazel reaches over to the baby monitor and mutes the sound. The bright red lights continue to dance, suggesting that baby June has plenty left to say.\n\n[[\"Can you remember what I was saying, Jenny?\"]]",
+      "links": [
+        {
+          "text": "\"Can you remember what I was saying, Jenny?\"",
+          "destination": {
+            "name": "\"Can you remember what I was saying, Jenny?\"",
+            "pid": 120
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "\"Can you remember what I was saying, Jenny?\"",
+      "text": "\"Uh, I think so. You were telling us about the waiting list for the local daycare center?\"\n\n\"Ah yes, that's right. Well, you just wouldn't believe how crazy it is. We had to sign June up for a place when I was only five months pregnant! And the prices! Those places must make a fortune out of desperate parents like us.\"\n(if: $breederScore < 0)[\n[[\"Damn, Paul, you should have started your own daycare center after all!\"]]\n](else-if: $breederScore > 4)[\n[[\"Oh no, Hazel, that's shocking. Maybe Paul and I should put our names down already!\"]]\n](else:)[\n[[\"Huh. Sounds crazy alright. Are you sure you want kids, Paul?\"]]\n]",
+      "links": [
+        {
+          "text": "\"Damn, Paul, you should have started your own daycare center after all!\"",
+          "destination": {
+            "name": "\"Damn, Paul, you should have started your own daycare center after all!\"",
+            "pid": 123
+          }
+        },
+        {
+          "text": "\"Oh no, Hazel, that's shocking. Maybe Paul and I should put our names down already!\"",
+          "destination": {
+            "name": "\"Oh no, Hazel, that's shocking. Maybe Paul and I should put our names down already!\"",
+            "pid": 121
+          }
+        },
+        {
+          "text": "\"Huh. Sounds crazy alright. Are you sure you want kids, Paul?\"",
+          "destination": {
+            "name": "\"Huh. Sounds crazy alright. Are you sure you want kids, Paul?\"",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "\"Oh no, Hazel, that's shocking. Maybe Paul and I should put our names down already!\"",
+      "text": "Paul looks momentarily panicked. \"What's the rush? We've only just bought our own apartment, so let's enjoy that for a while.\" He smiles sweetly.\n\nHe's right. There really is no rush. Plus your apartment is gorgeous, so you should make the most of it before you have to baby-proof everything.\n\n[[Hazel looks concerned.]]",
+      "links": [
+        {
+          "text": "Hazel looks concerned.",
+          "destination": {
+            "name": "Hazel looks concerned.",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "\"Huh. Sounds crazy alright. Are you sure you want kids, Paul?\"",
+      "text": "\"I dunno,\" Paul looks at you and pulls a worried face. \"Hazel makes it sound like a real hassle.\"\n\n\"Yeah, maybe we should re-think the whole thing.\" You smile at Hazel, expecting her to send a sarcastic smile back at you, but instead you see her eyes momentarily filled with sadness.\n\nBefore you can be sure of what you saw, Hazel stands up from the dining table.\n\n[[\"It's coffee time. Give me a hand, Jenny?\"]]",
+      "links": [
+        {
+          "text": "\"It's coffee time. Give me a hand, Jenny?\"",
+          "destination": {
+            "name": "\"It's coffee time. Give me a hand, Jenny?\"",
+            "pid": 138
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "\"Damn, Paul, you should have started your own daycare center after all!\"",
+      "text": "Paul starts to laugh, but is quickly silenced by a sharp look from Hazel.\n\n\"Jenny! Don't make fun of our predicament. It's very stressful.\"\n\n\"Aw, Hazel, I am sorry. But calling it a predicament seems a bit strong, when you did make a conscious choice to have a child.\"\n\n[[\"We did?\"]]",
+      "links": [
+        {
+          "text": "\"We did?\"",
+          "destination": {
+            "name": "\"We did?\"",
+            "pid": 124
+          }
+        }
+      ]
+    },
+    {
+      "pid": 124,
+      "name": "\"We did?\"",
+      "text": "\"I mean, you and Mark must have talked about becoming parents together, and presumably well before you bought a house and got married?\"\n\n\"I don't remember it coming up that often. It all just, kind of, happened to us. Before we knew it, June was on her way.\"\n\nYou're pretty sure Hazel and Mark had sex education classes when they were growing up. \n\n[[Maybe they weren't paying attention?]]",
+      "links": [
+        {
+          "text": "Maybe they weren't paying attention?",
+          "destination": {
+            "name": "Maybe they weren't paying attention?",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "Maybe they weren't paying attention?",
+      "text": "\"Huh. That's one way to do it, I guess.\"\n\n\"What about you and Paul? Have you talked about it? It's been what, five or six years now?\" Hazel leans forward, expectantly. (click: \"Hazel leans forward\")[She looks so hopeful, you almost consider lying to protect her feelings. Almost.]\n\nYou look at Paul and smile. He smiles awkwardly back. This is your favorite subject, but it's definitely not his.\n\n[[\"Of course we've talked about it.\"]]",
+      "links": [
+        {
+          "text": "\"Of course we've talked about it.\"",
+          "destination": {
+            "name": "\"Of course we've talked about it.\"",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "\"Of course we've talked about it.\"",
+      "text": "\"And...?\"\n\n\"And it's a hard pass from us. No kids. Ever.\"\n\nHazel looks more shocked than she really should. I mean, she's known you and Paul for long enough to know that you don't want kids.\n\n\"But... Never? You don't just want to wait a few years, do some more traveling? I always presumed that you would get round to it eventually, once you felt ready.\"\n\n[[You get ready to defend your decision.]]",
+      "links": [
+        {
+          "text": "You get ready to defend your decision.",
+          "destination": {
+            "name": "You get ready to defend your decision.",
+            "pid": 127
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "You get ready to defend your decision.",
+      "text": "You shouldn't have to defend it at all, really. No-one ever asks parents of a newborn to defend their decision to procreate. You wonder how many times you'll have to endure variations on this conversation. Maybe the questioning will stop when you get to, say, 60? (click: \"Maybe the questioning will stop\")[But by then everyone will be living to 120 and having kids at 60 will be the norm. Yuck.]\n\n\"Never. It's not about being ready, it's about wanting kids versus not wanting kids. We don't want to be parents, so we've chosen not to be. For us, it's that simple. Right, Paul?\"\n\n[[Come on, Paul. You need backup.]]",
+      "links": [
+        {
+          "text": "Come on, Paul. You need backup.",
+          "destination": {
+            "name": "Come on, Paul. You need backup.",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "Come on, Paul. You need backup.",
+      "text": "Paul shrugs. \"Sure. We talked about this really early on in our relationship. It's not for us. Jenny has always been really definite about that.\"\n\nHey. What does he mean by that?\n\n\"Huh? You're definite about it too, of course. I know I've always been 100% certain about this, but you said you felt the same. Lots of times.\"\n\nPaul realises he's in trouble here. \"Calm down, Jenny. I do feel the same! It's just... you're the one with the stronger opinions on the subject, of the two of us. Your confidence helps me feel like we're making the right choice.\"\n\n[[\"We made the right choice, you mean.\"]]",
+      "links": [
+        {
+          "text": "\"We made the right choice, you mean.\"",
+          "destination": {
+            "name": "\"We made the right choice, you mean.\"",
+            "pid": 129
+          }
+        }
+      ]
+    },
+    {
+      "pid": 129,
+      "name": "\"We made the right choice, you mean.\"",
+      "text": "\"Uh, yeah, that's what I meant. Anyway, Hazel, there must be some upsides to being a parent. How about those sweet parent and child parking spots?\"\n\nYou watch Paul and Hazel chatting easily about the day-to-day mundanities of parenthood. Before tonight, you would have been impressed at his ability to feign interest in something so boring. But now... The two of you are going to have to have a big conversation. If he's been lying to you...\n\nYour downward spiral of worry is interrupted by Mark coming back into the room.\n\n[[\"Look who wants to say hi!\"]]",
+      "links": [
+        {
+          "text": "\"Look who wants to say hi!\"",
+          "destination": {
+            "name": "\"Look who wants to say hi!\"",
+            "pid": 130
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "\"Look who wants to say hi!\"",
+      "text": "Mark cradles June in his arms. She is gurgling away, with not a trace of the tantrum she's been throwing for the last twenty minutes. \n\n\"Hey, Paul, do you wanna hold her? She's getting so big!\"\n\nYou watch Paul closely. Was that a flash of fear in his eyes?\n\n\"Uhm, no thanks, Mark. I'm having a clumsy day today, so I'd better not.\"\n\n[[Mark doesn't seem offended.]]",
+      "links": [
+        {
+          "text": "Mark doesn't seem offended.",
+          "destination": {
+            "name": "Mark doesn't seem offended.",
+            "pid": 131
+          }
+        }
+      ]
+    },
+    {
+      "pid": 131,
+      "name": "Mark doesn't seem offended.",
+      "text": "Instead of a big drama about refusing to hold a precious bundle of joy, the conversation turns to the story of Paul's day of mishaps in the workshop, which resulted in a damaged cabinet and a broken saw blade.\n\nPaul didn't want to hold the baby. That must be a good sign, right? You'll still need to have that conversation, but you're not quite so worried about it now.\n\nYou take a big sip of your wine and join in with the others as they tease Paul for being such a klutz. \n\n[[Chapter Four ->Chapter Four childfree]] ",
+      "links": [
+        {
+          "text": "Chapter Four ",
+          "destination": {
+            "name": "Chapter Four childfree",
+            "pid": 147
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "Hazel looks concerned.",
+      "text": "\"No, no! Don't make the same mistake we did, thinking we had all the time in the world. If I could have a do-over, I would darn well plan ahead. We could have saved ourselves so much trouble.\"\n\n\"Hazel, come on,\" She's making you feel a little bit nervous. \"You make it sound like having a baby is like planning a battle. It can't be all bad.\"\n\nYou look over at Paul.\n\n[[Did his eye just twitch?]]",
+      "links": [
+        {
+          "text": "Did his eye just twitch?",
+          "destination": {
+            "name": "Did his eye just twitch?",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 133,
+      "name": "Did his eye just twitch?",
+      "text": "\"Paul, are you OK?\" He's looking quite pale all of a sudden. (click: \"looking quite pale\")[You've not seen him look like this since you almost cut off the top of your finger while slicing onions.]\n\n\"Er, yeah, I'm fine. I just... I was just remembering something clumsy I did while I was working today.\"\n\nHazel gives Paul a warm smile. \"Oh honey, you gotta be careful in that workshop! Especially if you're gonna be a daddy someday soon!\"\n\n\"Ha ha, I'll try! Excuse me for a moment.\"\n\n[[Paul leaves the room rather abruptly.]]",
+      "links": [
+        {
+          "text": "Paul leaves the room rather abruptly.",
+          "destination": {
+            "name": "Paul leaves the room rather abruptly.",
+            "pid": 134
+          }
+        }
+      ]
+    },
+    {
+      "pid": 134,
+      "name": "Paul leaves the room rather abruptly.",
+      "text": "You hope he's alright. Poor Paul. He really does take his work seriously. That's the pressure of being a small business owner, you suppose. Another reason not to rush with starting a family.\n\nMark comes back in, cradling a gurgling June in his arms.\n\n[[\"Is Paul OK? He looked a little shaky on his way to the bathroom.\"]]",
+      "links": [
+        {
+          "text": "\"Is Paul OK? He looked a little shaky on his way to the bathroom.\"",
+          "destination": {
+            "name": "\"Is Paul OK? He looked a little shaky on his way to the bathroom.\"",
+            "pid": 135
+          }
+        }
+      ]
+    },
+    {
+      "pid": 135,
+      "name": "\"Is Paul OK? He looked a little shaky on his way to the bathroom.\"",
+      "text": "\"He's fine. He dropped a saw while he was working today and broke the blade. I think he feels like it was a bit of a near miss, enough to make anyone a little nervous. Here, let me hold June.\"\n\nMark hands June to you with a smile. \"There you go.\" (click: \"hands June to you\")[She feels so warm and snuggly in your arms. And how come babies smell so good?]\n\nYou smile into June's little face, still tinged red from her tantrum. \"She's getting so big!\"\n\n[[Paul comes back into the room.]]",
+      "links": [
+        {
+          "text": "Paul comes back into the room.",
+          "destination": {
+            "name": "Paul comes back into the room.",
+            "pid": 136
+          }
+        }
+      ]
+    },
+    {
+      "pid": 136,
+      "name": "Paul comes back into the room.",
+      "text": "You look at him and give what you hope is a reassuring smile. When he sees that you are holding June, he comes over to sit next to you and puts an arm round your shoulder.\n\n\"You two look perfect together.\"\n\nHazel chuckles. \"You think they look perfect? Let's see how the two of you look together.\"\n\n[[You hand June carefully to Paul.]]",
+      "links": [
+        {
+          "text": "You hand June carefully to Paul.",
+          "destination": {
+            "name": "You hand June carefully to Paul.",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 137,
+      "name": "You hand June carefully to Paul.",
+      "text": "He sits with June cradled in his arms, smiling at her and making noises you've never heard him make before. Must be some baby talk he picked up back when he worked at the daycare center.\n\nSomehow, holding June has brought the color back into Paul's cheeks. Mark and Hazel sit close to one another, looking approvingly at Paul. Hazel looks over at you with eyes that seem to say \"You'll be fine\".\n\nYou hope she's right. Looking at Paul right now, she must be right.\n\n[[Chapter Four]] ",
+      "links": [
+        {
+          "text": "Chapter Four",
+          "destination": {
+            "name": "Chapter Four",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 138,
+      "name": "\"It's coffee time. Give me a hand, Jenny?\"",
+      "text": "You follow Hazel into the kitchen, and she busies herself replacing the coffee filter and filling a tray with mugs. (click: \"filling a tray with mugs\")[She nearly knocks one of them flying off the counter top, and swears loudly as she just manages to catch it in time.]\n\n\"Hazel. Are you alright? I mean, how are the two of you coping with work, childcare, sleep, everything?\"\n\nHazel puts on a bright smile. \"Oh, we're doing just fine. Mark loves being a dad, and my boss has been really flexible, so I can pick up June at a reasonable time. We're not getting enough sleep, but how many new parents feel well rested?\"\n\n[[You're not convinced.]]",
+      "links": [
+        {
+          "text": "You're not convinced.",
+          "destination": {
+            "name": "You're not convinced.",
+            "pid": 139
+          }
+        }
+      ]
+    },
+    {
+      "pid": 139,
+      "name": "You're not convinced.",
+      "text": "\"Really? I'm truly impressed if you're managing to balance everything. But... if you're not... I'm here to listen and help if I can.\"\n\nHazel has been staring at the coffee dripping into the jug. Now she turns to look at you, and the bright smile is gone.\n\n[[\"Oh Jenny, it's so hard.\"]]",
+      "links": [
+        {
+          "text": "\"Oh Jenny, it's so hard.\"",
+          "destination": {
+            "name": "\"Oh Jenny, it's so hard.\"",
+            "pid": 140
+          }
+        }
+      ]
+    },
+    {
+      "pid": 140,
+      "name": "\"Oh Jenny, it's so hard.\"",
+      "text": "Hazel crumples onto a stool by the counter, her head in her hands.\n\n\"Hey now,\" You walk over and place your hand on her arm. \"Come on, Hazel. What's been going on?\"\n\nHazel takes a deep breath in and out. \"You sure you wanna know?\"\n\n\"Try me.\"\n\n\"OK. Well, half the time I feel like I'm crazy, and the rest of the time I know I'm crazy. Since having June, I've started to lose track of who I am, of who Mark is. It's not just the sleep deprivation, or the hormones. I'm genuinely worried about losing my identity.\"\n\n[[Ouch. She touched a nerve there.]]",
+      "links": [
+        {
+          "text": "Ouch. She touched a nerve there.",
+          "destination": {
+            "name": "Ouch. She touched a nerve there.",
+            "pid": 141
+          }
+        }
+      ]
+    },
+    {
+      "pid": 141,
+      "name": "Ouch. She touched a nerve there.",
+      "text": "The transformation from Jenny to Mommy is the main thing that's holding you back from starting your own family. Seeing Hazel going through it frightens you. She's always seemed so strong. (click: \"so strong\")[So much stronger than you.]\n\n\"I can't say I know what you're going through, but it does echo some of my own fears. Can you get some professional help, some counselling, to help you both get through it?\"\n\n\"Us both? Oh, Mark is just fine. He's finally found his identity. He thinks he's an amazing dad, and maybe he is. I love him very much, but he's not an amazing co-parent, that's for sure.\"\n\n[[\"How do you mean?\"]]",
+      "links": [
+        {
+          "text": "\"How do you mean?\"",
+          "destination": {
+            "name": "\"How do you mean?\"",
+            "pid": 142
+          }
+        }
+      ]
+    },
+    {
+      "pid": 142,
+      "name": "\"How do you mean?\"",
+      "text": "\"Mark's the fun dad. He gets home from work, plays with June for half an hour, takes photos of the two of them together, buys her toys she doesn't need. But the real stuff, changing diapers, feeding her, taking her to the doctor. That's all my job, apparently.\"\n\n\"He doesn't help change diapers?\"\n\n\"He's changed six diapers in the last seven months.\"\n\nYou let that sink in for a minute. Six diapers. \n\n[[\"How have you not killed him?\"]]",
+      "links": [
+        {
+          "text": "\"How have you not killed him?\"",
+          "destination": {
+            "name": "\"How have you not killed him?\"",
+            "pid": 143
+          }
+        }
+      ]
+    },
+    {
+      "pid": 143,
+      "name": "\"How have you not killed him?\"",
+      "text": "Hazel laughs and covers her mouth to stop the sound reaching the dining room.\n\n\"Oh, I've had my dark moments. But how can I be mad at him? He loves June so much and thinks he's doing a fantastic job. And I'm certain he's a more present and affectionate father than his own dad. But it's really not enough. So I would like to go for some counselling, together, but criticizing his parenting might break his heart.\"\n\n\"That sucks.\"\n\nHazel laughs again. \"Yep, it really does.\"\n\n[[You lean over and give her a hug.]]",
+      "links": [
+        {
+          "text": "You lean over and give her a hug.",
+          "destination": {
+            "name": "You lean over and give her a hug.",
+            "pid": 144
+          }
+        }
+      ]
+    },
+    {
+      "pid": 144,
+      "name": "You lean over and give her a hug.",
+      "text": "\"Thanks Jenny. I'm sure we'll get through it, eventually. But I do have one piece of advice for you. Do not have kids with anyone who thinks that being a father is all fun and games. Find a guy who wants to co-parent and genuinely share the responsibility. Do you think Paul could be that guy?\" Hazel's expression is deadly serious.\n\n\"Wow. Well, I really can't be sure. He knows how to take care of kids; it's really not that long since he worked at the daycare. But recently, he mostly only talks about the fun stuff. Vacations, playing sports, going for ice cream, that kind of thing.\"\n\n\"Honey, you two need to have that conversation. And sooner rather than later.\" Hazel gives you a kind smile. \"Come on, coffee's ready. Let's take it through.\"\n\n[[You follow Hazel out of the kitchen.]]",
+      "links": [
+        {
+          "text": "You follow Hazel out of the kitchen.",
+          "destination": {
+            "name": "You follow Hazel out of the kitchen.",
+            "pid": 145
+          }
+        }
+      ]
+    },
+    {
+      "pid": 145,
+      "name": "You follow Hazel out of the kitchen.",
+      "text": "\"Here we go, coffee for everyone.\" Hazel sets the tray on the table, her bright smile back in place as Mark comes into the room with June howling in his arms.\n\n\"Hazel, honey, she just won't settle. Can you do your magic?\"\n\nMark hands June to Hazel, who holds the baby close to her, whispering and soothing until June quietens down. \n\n\"See? Isn't Hazel amazing? I don't know how she does it. You're wonderful, honey.\"\n\nHazel holds June tightly, and sends a knowing glance in your direction.\n\n[[You turn to look at Paul.]]",
+      "links": [
+        {
+          "text": "You turn to look at Paul.",
+          "destination": {
+            "name": "You turn to look at Paul.",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 146,
+      "name": "You turn to look at Paul.",
+      "text": "You wonder what's going through his mind as he looks at June. Could he really only be a 'fun dad'? You want to believe that he would support you and be an equal partner in your parenting adventure. But if not...\n\nSooner or later. You'll need to talk about it.\n\n[[Chapter Four]] ",
+      "links": [
+        {
+          "text": "Chapter Four",
+          "destination": {
+            "name": "Chapter Four",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 147,
+      "name": "Chapter Four childfree",
+      "text": "(align: \"=><=\")[(text-style: \"bold\")[Chapter Four]]\n\"How are you feeling?\" Paul reaches a hand out and places it briefly on your knee, before putting it back on the wheel.\n\nYou look over at him as he concentrates on navigating the rush hour traffic. \"A little terrified. But I guess that's to be expected.\"\n\n[[You've never been a big fan of hospitals.]]",
+      "links": [
+        {
+          "text": "You've never been a big fan of hospitals.",
+          "destination": {
+            "name": "You've never been a big fan of hospitals.",
+            "pid": 148
+          }
+        }
+      ]
+    },
+    {
+      "pid": 148,
+      "name": "You've never been a big fan of hospitals.",
+      "text": "\"I think you're doing great, honey.\" The smile on his face looks a little strained from this angle, but that could just be because the cars around you have slowed to a frustrating shuffle. (click: \"slowed to a frustrating shuffle\")[Don't they know you have somewhere to be?]\n\n\"Hey,\" You place your hand over his as it grips the steering wheel tightly. \"Thank you for being here for me today. By the time we leave that hospital, our lives will never be the same.\"\n\n[[Paul glances over at you.]]",
+      "links": [
+        {
+          "text": "Paul glances over at you.",
+          "destination": {
+            "name": "Paul glances over at you.",
+            "pid": 149
+          }
+        }
+      ]
+    },
+    {
+      "pid": 149,
+      "name": "Paul glances over at you.",
+      "text": "\"Uh-huh. This is real permanent. No second thoughts?\"\n\n\"What? No way. And it's far too late to back out now anyway.\"\n\n\"Of course it's not too late. You don't have to have that surgery if it's not what you want. Or if you need more time to think.\"\n\n[[\"More time to think?\"]]",
+      "links": [
+        {
+          "text": "\"More time to think?\"",
+          "destination": {
+            "name": "\"More time to think?\"",
+            "pid": 150
+          }
+        }
+      ]
+    },
+    {
+      "pid": 150,
+      "name": "\"More time to think?\"",
+      "text": "You jerk your hand away from his. \"I've been thinking about this for most of my life. Do you need more time?\"\n\n\"No, no! Uh. I just...\" Paul's voice trails off and he pretends to focus on the road, even though the traffic has now stopped moving and shows no sign of starting up again.\n\n[[Oh shit. Shitshitshit.]]",
+      "links": [
+        {
+          "text": "Oh shit. Shitshitshit.",
+          "destination": {
+            "name": "Oh shit. Shitshitshit.",
+            "pid": 151
+          }
+        }
+      ]
+    },
+    {
+      "pid": 151,
+      "name": "Oh shit. Shitshitshit.",
+      "text": "\"You don't want me to get sterilized? And you're telling me this now?\"\n\n\"Come on, Jenny, it's your body. You can have any procedure you want. This isn't up to me.\"\n\nYour empty stomach growls as you can feel your face glow hot with anger.\n\n[[Paul grips the wheel so tightly his knuckles turn white.]]",
+      "links": [
+        {
+          "text": "Paul grips the wheel so tightly his knuckles turn white.",
+          "destination": {
+            "name": "Paul grips the wheel so tightly his knuckles turn white.",
+            "pid": 152
+          }
+        }
+      ]
+    },
+    {
+      "pid": 152,
+      "name": "Paul grips the wheel so tightly his knuckles turn white.",
+      "text": "\"Not up to you? Damn it, Paul, this is up to both of us. We made this decision together. I thought we were a team!\"\n\n\"We are a team. Or maybe... We were a team. But since you got this surgery scheduled, you've been so weirdly excited about it.\" He sighs heavily. \"I just... I don't know how you can be excited about something that will permanently remove your chance to experience a huge part of life.\"\n\n[[You gasp as you realize you're digging your fingernails deep into your palms.]]",
+      "links": [
+        {
+          "text": "You gasp as you realize you're digging your fingernails deep into your palms.",
+          "destination": {
+            "name": "You gasp as you realize you're digging your fingernails deep into your palms.",
+            "pid": 153
+          }
+        }
+      ]
+    },
+    {
+      "pid": 153,
+      "name": "You gasp as you realize you're digging your fingernails deep into your palms.",
+      "text": "\"You have got to be fucking kidding me. Since when did you consider having kids to be so important? We. Have. Fucking. Talked. About. This.\"\n\nYou fight to keep your voice under control.\n\nPaul looks at you, his eyes suddenly filled with sadness.\n\n[[\"No, Jenny. You talked about this.\"]]",
+      "links": [
+        {
+          "text": "\"No, Jenny. You talked about this.\"",
+          "destination": {
+            "name": "\"No, Jenny. You talked about this.\"",
+            "pid": 154
+          }
+        }
+      ]
+    },
+    {
+      "pid": 154,
+      "name": "\"No, Jenny. You talked about this.\"",
+      "text": "Keep breathing, Jenny. Come on. Think about what he's saying. You owe him that much. Resist the desire to scream. (click: \"the desire to scream\")[Even though you know it would feel real good right now.]\n\nBut you did talk about this together. Many times over the years. Sure, you've always had the strongest opinion, but he's never outright said that he wants to be a parent. Just last week, you were laughing together as you strolled past a playground full of screaming brats. And he offered to drive you to your surgery today.\n\n[[When did he change his mind?]]",
+      "links": [
+        {
+          "text": "When did he change his mind?",
+          "destination": {
+            "name": "When did he change his mind?",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 155,
+      "name": "When did he change his mind?",
+      "text": "\"Paul. I'm really struggling to understand here. What happened to make you change your mind?\"\n\n\"I haven't changed my mind. Or.. I don't know. Maybe I have. I just know that I don't want you to do something so drastic as get sterilized. I kind of hoped that as the big day got closer, you might... reconsider.\"\n\n\"Reconsider?\" Your voice jumps up an octave. \"Do you not know me at all? What on earth would make you think I would change my mind?\"\n\nThe traffic starts to crawl forward again.\n\n[[Paul shifts uncomfortably in his seat.]]",
+      "links": [
+        {
+          "text": "Paul shifts uncomfortably in his seat.",
+          "destination": {
+            "name": "Paul shifts uncomfortably in his seat.",
+            "pid": 156
+          }
+        }
+      ]
+    },
+    {
+      "pid": 156,
+      "name": "Paul shifts uncomfortably in his seat.",
+      "text": "\"Come on, Jen. We're both getting older. Maybe we're getting wiser too? Realizing that decisions we made when we were younger might not necessarily have been the right decisions for who we are today. We've both grown a lot as people while we've been together.\"\n\n\"And getting sterilized is an immature choice, is that what you're saying?\" You practically spit out the words. \"Is that why you didn't want to get a vasectomy? Or was it just because you were too fucking scared?\"\n\n[[Paul bangs his fist on the steering wheel.]]",
+      "links": [
+        {
+          "text": "Paul bangs his fist on the steering wheel.",
+          "destination": {
+            "name": "Paul bangs his fist on the steering wheel.",
+            "pid": 157
+          }
+        }
+      ]
+    },
+    {
+      "pid": 157,
+      "name": "Paul bangs his fist on the steering wheel.",
+      "text": "\"Fuck you, Jenny! Do you really need to throw that back in my face? You think I don't feel bad enough that you've chosen to have such an invasive, risky procedure when I could have spared you the danger by being a little bit braver?\"\n\n\"No, Paul. I don't think you feel bad enough. Because you hoped I wouldn't go through with this. But I am. Whether you want me to or not.\"\n\n\"Well don't expect me to be there when you come out of surgery.\"\n\n[[The barely restrained rage behind his words hits you like a punch to the stomach.]]",
+      "links": [
+        {
+          "text": "The barely restrained rage behind his words hits you like a punch to the stomach.",
+          "destination": {
+            "name": "The barely restrained rage behind his words hits you like a punch to the stomach.",
+            "pid": 158
+          }
+        }
+      ]
+    },
+    {
+      "pid": 158,
+      "name": "The barely restrained rage behind his words hits you like a punch to the stomach.",
+      "text": "\"OK. I won't expect that. But if you are there, that would mean a lot to me. Even though you're a lying coward. You're still the man I love.\"\n\n\"Hah,\" Paul's hollow laugh echoes inside the car. \"Love? I'm not sure you're capable of love, or any other emotions for that matter. What kind of woman actively chooses to miss out on motherhood?\"\n\nYou take a long, hard look at this man who is suddenly a complete stranger to you.\n\n[[What happened to him?]]",
+      "links": [
+        {
+          "text": "What happened to him?",
+          "destination": {
+            "name": "What happened to him?",
+            "pid": 159
+          }
+        }
+      ]
+    },
+    {
+      "pid": 159,
+      "name": "What happened to him?",
+      "text": "The car is motionless at a stop light and you can see the hospital up ahead. \n\n\"This kind of woman.\"\n\nYou unbuckle your seatbelt, open the door, and calmly step out onto the sidewalk.\n\nYou turn back as if to say something, but think better of it.\n\n[[You slam the car door shut.]]",
+      "links": [
+        {
+          "text": "You slam the car door shut.",
+          "destination": {
+            "name": "You slam the car door shut.",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 160,
+      "name": "You slam the car door shut.",
+      "text": "The lights turn green. Without looking at you, Paul drives away. You watch until the car vanishes from sight.\n\nOK, Jenny. This changes nothing. You've got a big day ahead of you.\n\nYou walk towards the hospital. Let's do this thing.\n\n[[Chapter Five -> Chapter Five childfree]] ",
+      "links": [
+        {
+          "text": "Chapter Five ",
+          "destination": {
+            "name": "Chapter Five childfree",
+            "pid": 190
+          }
+        }
+      ]
+    },
+    {
+      "pid": 161,
+      "name": "\"Are you OK, honey?\"",
+      "text": "\"Erm. I don't know. Hang on, I'll be right out.\"\n\nYou wash your hands, letting the whoosh of water soothe your mind as you try to work out how the hell you feel about this.\n\nYou have to tell him. \n(if: $breederScore > 4)[\n[[He's going to be so happy!]]\n](else:)[\n[[He's going to be so happy.]]\n]\n",
+      "links": [
+        {
+          "text": "He's going to be so happy!",
+          "destination": {
+            "name": "He's going to be so happy!",
+            "pid": 162
+          }
+        },
+        {
+          "text": "He's going to be so happy.",
+          "destination": {
+            "name": "He's going to be so happy.",
+            "pid": 163
+          }
+        }
+      ]
+    },
+    {
+      "pid": 162,
+      "name": "He's going to be so happy!",
+      "text": "\"What is it? You were in there for so long I thought I was going to have to break the door down!\"\n\nPaul envelops you in a hug as you step into the bedroom. You laugh softly in his arms, imagining him smashing into the bathroom just as you were in the middle of peeing on a plastic stick.\n\n\"Paul, let's sit down for a minute.\"\n\n[[Paul sits down on the edge of the bed, looking up at you with a nervous smile.]]",
+      "links": [
+        {
+          "text": "Paul sits down on the edge of the bed, looking up at you with a nervous smile.",
+          "destination": {
+            "name": "Paul sits down on the edge of the bed, looking up at you with a nervous smile.",
+            "pid": 176
+          }
+        }
+      ]
+    },
+    {
+      "pid": 163,
+      "name": "He's going to be so happy.",
+      "text": "\"What is it? You were in there for so long I thought I was going to have to break the door down!\"\n\nPaul envelops you in a hug as you step into the bedroom. You laugh softly in his arms, imagining him smashing into the bathroom just as you were in the middle of peeing on a plastic stick.\n\n\"Paul, let's sit down for a minute.\"\n\n[[Paul sits on the edge of the bed, smiling up at you.]]",
+      "links": [
+        {
+          "text": "Paul sits on the edge of the bed, smiling up at you.",
+          "destination": {
+            "name": "Paul sits on the edge of the bed, smiling up at you.",
+            "pid": 164
+          }
+        }
+      ]
+    },
+    {
+      "pid": 164,
+      "name": "Paul sits on the edge of the bed, smiling up at you.",
+      "text": "You sit down next to him. This is it. You hand Paul the pregnancy test and the packaging, and wait for him to take it all in.\n\nA few moments later, he looks over at you. You've never seen so much joy in his eyes.\n\n[[You wonder what he can see in your eyes right now.]]",
+      "links": [
+        {
+          "text": "You wonder what he can see in your eyes right now.",
+          "destination": {
+            "name": "You wonder what he can see in your eyes right now.",
+            "pid": 165
+          }
+        }
+      ]
+    },
+    {
+      "pid": 165,
+      "name": "You wonder what he can see in your eyes right now.",
+      "text": "If he could see into your mind, he'd be shocked by the waves of fear that are surging through every nerve. Fear is natural, you tell yourself. You always knew that being pregnant would feel scary at first.\n\nBut shouldn't there be some joy too? Maybe that comes later.\n\n\"So Paul, what do you think?\"\n\n[[\"Oh Jenny, we're going to have a baby!\"]]",
+      "links": [
+        {
+          "text": "\"Oh Jenny, we're going to have a baby!\"",
+          "destination": {
+            "name": "\"Oh Jenny, we're going to have a baby!\"",
+            "pid": 166
+          }
+        }
+      ]
+    },
+    {
+      "pid": 166,
+      "name": "\"Oh Jenny, we're going to have a baby!\"",
+      "text": "Whoa, whoa, whoa. Hold on now.\n\n\"Well, it's true that I'm pregnant, or at least it looks that way, but we still need to talk about our options here.\"\n\n\"Options? What do you mean? We've always figured we'll have kids some day, so why not now?\"\n\n[[You sigh and take hold of his hand.]]",
+      "links": [
+        {
+          "text": "You sigh and take hold of his hand.",
+          "destination": {
+            "name": "You sigh and take hold of his hand.",
+            "pid": 167
+          }
+        }
+      ]
+    },
+    {
+      "pid": 167,
+      "name": "You sigh and take hold of his hand.",
+      "text": "\"Paul. I love you. And I've definitely daydreamed a lot about starting a family with you. But now? I am right in the middle of starting my own agency. Having a baby would set me back by at least a year, and I won't get any maternity support now I'm self-employed. This just doesn't make sense.\"\n\n\"Set you back?\" Paul pulls his hand away, clearly horrified. \"How can you talk like that about our child?\"\n\n\"So it's a child already? Huh.\"\n\n[[Is it too soon to blame pregnancy hormones for your sudden flash of anger?]]",
+      "links": [
+        {
+          "text": "Is it too soon to blame pregnancy hormones for your sudden flash of anger?",
+          "destination": {
+            "name": "Is it too soon to blame pregnancy hormones for your sudden flash of anger?",
+            "pid": 168
+          }
+        }
+      ]
+    },
+    {
+      "pid": 168,
+      "name": "Is it too soon to blame pregnancy hormones for your sudden flash of anger?",
+      "text": "\"Well of course it's a child. Our child. You want to give this up just for the sake of your career? Our family is way more important!\"\n\n\"My career is extremely important to me, Paul. You know that. Would you be willing to sacrifice your business to take care of a baby?\"\n\n\"Well. I... Of course I would.\"\n\n[[You don't buy it.]]",
+      "links": [
+        {
+          "text": "You don't buy it.",
+          "destination": {
+            "name": "You don't buy it.",
+            "pid": 169
+          }
+        }
+      ]
+    },
+    {
+      "pid": 169,
+      "name": "You don't buy it.",
+      "text": "\"Uh-huh? So you're going to stay home every day, give up your income and the work you're so passionate about, to take care of a tiny person who'll need feeding, changing, cleaning, and so, so, so much more?\"\n\nYou fold your arms and look at Paul, your eyebrow raised in that way he used to find so adorable. He must see how ridiculous this situation is. (click: \"how ridiculous this situation is\")[Please see that, Paul. Please.]\n\n\"Why on earth would I do that? That's not... I'm the... You're the...\"\n\nHe breaks off and stands up, pacing the floor of the bedroom while pulling at his hair.\n\n[[You watch him for a while.]]",
+      "links": [
+        {
+          "text": "You watch him for a while.",
+          "destination": {
+            "name": "You watch him for a while.",
+            "pid": 170
+          }
+        }
+      ]
+    },
+    {
+      "pid": 170,
+      "name": "You watch him for a while.",
+      "text": "The poor guy. He's clearly struggling to find a non-sexist way of expressing the opinion that childcare is inherently your job. You know. Because of your vagina.\n\n\"Paul. Come and sit down.\" He looks at you, but keeps on pacing. \"Since when did you think that childcare is solely the mother's responsibility? Have you forgotten your happy months working at the daycare? Everyone said you were a natural.\"\n\nPaul's expression softens a little. He really loved working with those kids.\n\n[[He sits down beside you again.]]",
+      "links": [
+        {
+          "text": "He sits down beside you again.",
+          "destination": {
+            "name": "He sits down beside you again.",
+            "pid": 171
+          }
+        }
+      ]
+    },
+    {
+      "pid": 171,
+      "name": "He sits down beside you again.",
+      "text": "\"Ah, Jenny, that was just a job.\" He reaches over and ruffles your hair.(click: \"ruffles your hair\")[ Hmm. He's never done that before. You're not sure that you like it.] \"I want our child to have the best upbringing possible, and that means lots of love attention from its mother. And I will help you as much as I can.\"\n\nThere it is. What you've been afraid of.\n\nThis man does not want to have children with you.\n\n[[He wants you to have children for him.]]",
+      "links": [
+        {
+          "text": "He wants you to have children for him.",
+          "destination": {
+            "name": "He wants you to have children for him.",
+            "pid": 172
+          }
+        }
+      ]
+    },
+    {
+      "pid": 172,
+      "name": "He wants you to have children for him.",
+      "text": "You try to stay calm, taking some deep breaths and digging your nails into your palms.\n\n\"Help me? I hope you just worded that wrong. This is the 21st century. Fathers do not 'help' mothers to raise children. Both parents raise that child together. Equal responsibility. Equal workload. So you meant that you'd share the work with me, right?\"\n\nThe expression on Paul's face tells you that no, that is not what he meant. \n\n[[That is not what he meant at all.]]",
+      "links": [
+        {
+          "text": "That is not what he meant at all.",
+          "destination": {
+            "name": "That is not what he meant at all.",
+            "pid": 173
+          }
+        }
+      ]
+    },
+    {
+      "pid": 173,
+      "name": "That is not what he meant at all.",
+      "text": "\"Okay then. We've clearly got plenty of work to do on ourselves and this relationship before we can inflict our parenting on an innocent child.\" You clap your hands together and stand up. \"I'll start looking up local abortion clinics. In the meantime, you can get us an appointment with a relationship coach.\"\n\nYour tone is very much matter-of-fact. You hope Paul will react accordingly.\n\nHe doesn't.\n\n[[He flips out.]]",
+      "links": [
+        {
+          "text": "He flips out.",
+          "destination": {
+            "name": "He flips out.",
+            "pid": 174
+          }
+        }
+      ]
+    },
+    {
+      "pid": 174,
+      "name": "He flips out.",
+      "text": "Paul leaps up from the bed and turns to you, his face contorted with shock.\n\n\"Abortion? No fucking way, Jenny. We're going to have this baby. Yes, we probably need some counselling, but we've got time for that. Months and months. We'll be ready, I promise!\"\n\nYou look at him as he pleads with you. \"No, Paul. We'll get an abortion now, and then revisit this in a year or two.\"\n\n[[Paul lets out a bitter laugh.]]",
+      "links": [
+        {
+          "text": "Paul lets out a bitter laugh.",
+          "destination": {
+            "name": "Paul lets out a bitter laugh.",
+            "pid": 175
+          }
+        }
+      ]
+    },
+    {
+      "pid": 175,
+      "name": "Paul lets out a bitter laugh.",
+      "text": "\"Listen to yourself. You sound like you're talking about a project at work, not about the future of our family. How can you be so calm and emotionless?\"\n\n\"I'm not emotionless, Paul. I'm being realistic. We are not ready to be parents. Maybe we never will be. I'm not going to gamble on the life of a child, so a termination is the only way to go. Are you going to support me on this?\"\n\nPaul looks at you, his eyes rimmed with tears. That can't be a good sign.\n\n[[Chapter Five]] ",
+      "links": [
+        {
+          "text": "Chapter Five",
+          "destination": {
+            "name": "Chapter Five",
+            "pid": 112
+          }
+        }
+      ]
+    },
+    {
+      "pid": 176,
+      "name": "Paul sits down on the edge of the bed, looking up at you with a nervous smile.",
+      "text": "You sit down next to him. This is it. You hand Paul the pregnancy test and the packaging, and wait for him to take it all in.\n\nA few moments later, he looks over at you. You can't read his expression.\n\n\"So it looks like...\" You smile at him, raising your eyebrow.\n\n[[\"You're pregnant? How did this happen?\"]]",
+      "links": [
+        {
+          "text": "\"You're pregnant? How did this happen?\"",
+          "destination": {
+            "name": "\"You're pregnant? How did this happen?\"",
+            "pid": 177
+          }
+        }
+      ]
+    },
+    {
+      "pid": 177,
+      "name": "\"You're pregnant? How did this happen?\"",
+      "text": "You laugh. It sounds too loud in this suddenly cramped space.\n\n\"Well, you know, the usual way?\"\n\n\"But I thought you were on birth control? Have you been lying to me?\"\n\nWhoa. That hurts.\n\n[[\"Ouch, Paul. You know that no method is 100% effective.\"]]",
+      "links": [
+        {
+          "text": "\"Ouch, Paul. You know that no method is 100% effective.\"",
+          "destination": {
+            "name": "\"Ouch, Paul. You know that no method is 100% effective.\"",
+            "pid": 178
+          }
+        }
+      ]
+    },
+    {
+      "pid": 178,
+      "name": "\"Ouch, Paul. You know that no method is 100% effective.\"",
+      "text": "Paul shoots you a sceptical look before staring down at the pregnancy test.\n\nYou have to admit, you thought he'd at least be a little bit excited. Sure, the timing could be better, but this was always going to happen sooner or later. You hope he's just in shock.\n\n[[You lean in close to Paul and put your arm around his shoulder.]]",
+      "links": [
+        {
+          "text": "You lean in close to Paul and put your arm around his shoulder.",
+          "destination": {
+            "name": "You lean in close to Paul and put your arm around his shoulder.",
+            "pid": 179
+          }
+        }
+      ]
+    },
+    {
+      "pid": 179,
+      "name": "You lean in close to Paul and put your arm around his shoulder.",
+      "text": "\"Come on, honey. I didn't plan this, OK? I'm going to set aside the fact that you just accused me of tricking you into parenthood, and blame your reaction on how much of a surprise this is. To both of us.\"\n\n\"Oh god, Jenny, I'm sorry. That was so thoughtless of me. Of course you wouldn't lie to me. But this. This is really out of the blue.\" He's quiet for a moment, before turning to look at you. \"What about your new agency?\"\n\n\"Well... I guess I'll just have to put my big entrepreneurial plans on hold for a little while. I can always start up again once this little guy or girl is in daycare.\"\n\n[[You're actually a little relieved that you can put off starting your own business for a while.]]",
+      "links": [
+        {
+          "text": "You're actually a little relieved that you can put off starting your own business for a while.",
+          "destination": {
+            "name": "You're actually a little relieved that you can put off starting your own business for a while.",
+            "pid": 180
+          }
+        }
+      ]
+    },
+    {
+      "pid": 180,
+      "name": "You're actually a little relieved that you can put off starting your own business for a while.",
+      "text": "\"And that trip to Hawaii we have planned?\"\n\nYou hold him a little closer. \"We can still do that. It should be a few months until I'm as big as a house. But you'll need to drink all of my cocktails for me, alright?\"\n\nPaul smiles, but there's still something off about his expression. Suddenly, he moves away from you, shrugging off your shoulder.\n\n[[\"Jenny. Is the baby mine?\"]]",
+      "links": [
+        {
+          "text": "\"Jenny. Is the baby mine?\"",
+          "destination": {
+            "name": "\"Jenny. Is the baby mine?\"",
+            "pid": 181
+          }
+        }
+      ]
+    },
+    {
+      "pid": 181,
+      "name": "\"Jenny. Is the baby mine?\"",
+      "text": "You stand up, your expression horrified as you stare at Paul. (click: \"stare at Paul\")[Did he just say what you think he said?]\n\n\"What the actual fuck? You think I've been sleeping around? I would never do that to you!\"\n\nPaul stands. \"Shit, Jenny. I need to get some air.\"\n\n[[He turns and walks out of the room.]]",
+      "links": [
+        {
+          "text": "He turns and walks out of the room.",
+          "destination": {
+            "name": "He turns and walks out of the room.",
+            "pid": 182
+          }
+        }
+      ]
+    },
+    {
+      "pid": 182,
+      "name": "He turns and walks out of the room.",
+      "text": "A few seconds later you hear the front door slam. You sit back down on the bed, the air knocked out of your lungs. What just happened?\n\nHe can't actually think you've been screwing someone else. And just to get a baby? \n\nYou don't get it. Only last month you were both getting gooey-eyed over a tiny soccer kit in that over-priced kids' clothing store downtown. And now you're a cheater?\n\n[[Uh-uh. That doesn't add up.]]",
+      "links": [
+        {
+          "text": "Uh-uh. That doesn't add up.",
+          "destination": {
+            "name": "Uh-uh. That doesn't add up.",
+            "pid": 183
+          }
+        }
+      ]
+    },
+    {
+      "pid": 183,
+      "name": "Uh-uh. That doesn't add up.",
+      "text": "After a little while you lie down, cradling the pregnancy test box in your arms. You close your eyes.\n\nThe noise of the front door opening jolts you awake. How long were you sleeping?\n\nYou sit up, trying to work out what time it is.\n\n[[Paul walks into the room.]]",
+      "links": [
+        {
+          "text": "Paul walks into the room.",
+          "destination": {
+            "name": "Paul walks into the room.",
+            "pid": 184
+          }
+        }
+      ]
+    },
+    {
+      "pid": 184,
+      "name": "Paul walks into the room.",
+      "text": "You can smell the alcohol on his breath from six feet away. So that's where he's been. (click: \"where he's been\")[Did he really think that booze would make this all go away?]\n\nHe drops to his knees on the floor beside the bed and holds his hands out to you. He looks truly pathetic.\n\n\"Jenny! I'm so sorry! I took a walk to think things through.\" Yeah right, just a walk. \"I have to tell you how I really feel.\"\n\n[[\"Start talking.\"]]",
+      "links": [
+        {
+          "text": "\"Start talking.\"",
+          "destination": {
+            "name": "\"Start talking.\"",
+            "pid": 185
+          }
+        }
+      ]
+    },
+    {
+      "pid": 185,
+      "name": "\"Start talking.\"",
+      "text": "He takes a deep breath. \"Look, Jenny, I know you would never cheat on me, and I know you wouldn't lie to me. I was being an idiot. Because I'm scared. Real scared.\" Looking at him right now, you can believe it. \"I've had my suspicions over the last few years, but it was only today, when you handed me that goddamn bit of plastic that I truly understood.\" He sways a little.\n\n\"Understood what, Paul?\" This had better be good.\n\n[[\"Jenny, I don't want to be a daddy.\"]]",
+      "links": [
+        {
+          "text": "\"Jenny, I don't want to be a daddy.\"",
+          "destination": {
+            "name": "\"Jenny, I don't want to be a daddy.\"",
+            "pid": 186
+          }
+        }
+      ]
+    },
+    {
+      "pid": 186,
+      "name": "\"Jenny, I don't want to be a daddy.\"",
+      "text": "And there it is. The words you were most afraid of. All at once, all of the little moments where you've doubted Paul's willingness to be a parent rush through your mind. There were so many of them. But you didn't want to see. Didn't want to accept them.\n\nAnd now here you are. In a huge fricking mess.\n\nWell, he's been honest with you, so you'd better be honest with him.\n\n[[\"I know, Paul. I think I've always known.\"]]",
+      "links": [
+        {
+          "text": "\"I know, Paul. I think I've always known.\"",
+          "destination": {
+            "name": "\"I know, Paul. I think I've always known.\"",
+            "pid": 187
+          }
+        }
+      ]
+    },
+    {
+      "pid": 187,
+      "name": "\"I know, Paul. I think I've always known.\"",
+      "text": "\"So why didn't you say something before now?\" He looks so hurt, so young all of a sudden.\n\n\"I guess I've just wanted this for such a long time that I wasn't willing to let something like a vague suspicion get in the way of our dreams.\"\n\n\"Your dreams, Jenny.\"\n\n\"Yeah, I guess so.\"\n\n[[You look down and place a hand on your stomach.]]",
+      "links": [
+        {
+          "text": "You look down and place a hand on your stomach.",
+          "destination": {
+            "name": "You look down and place a hand on your stomach.",
+            "pid": 188
+          }
+        }
+      ]
+    },
+    {
+      "pid": 188,
+      "name": "You look down and place a hand on your stomach.",
+      "text": "\"Paul. I love you. So much. But if you don't want to go on this scary adventure with me, I will do it alone. I won't put any pressure on you.\"\n\n\"I will support you however I can, honey, but I can't be a father. Not in the way you hoped I would be.\"\n\n\"Alright. Well. God, this is awful.\"\n\n[[Paul takes you in his arms as you start to cry.]]",
+      "links": [
+        {
+          "text": "Paul takes you in his arms as you start to cry.",
+          "destination": {
+            "name": "Paul takes you in his arms as you start to cry.",
+            "pid": 189
+          }
+        }
+      ]
+    },
+    {
+      "pid": 189,
+      "name": "Paul takes you in his arms as you start to cry.",
+      "text": "You cry for a long time. (click: \"for a long time\")[You cry until your throat aches and your cheeks burn from the tears.]\n\nIf only you'd talked about this. If only you'd really listened to Paul.\n\nOne thing's for certain. You're going to bring up this baby of yours to make smarter choices than you.\n\nThis baby of yours. You smile as a little spark of joy warms your heart, cutting through the sadness.\n\n[[Chapter Five -> Chapter Five has child]] ",
+      "links": [
+        {
+          "text": "Chapter Five ",
+          "destination": {
+            "name": "Chapter Five has child",
+            "pid": 191
+          }
+        }
+      ]
+    },
+    {
+      "pid": 190,
+      "name": "Chapter Five childfree",
+      "text": "(align: \"=><=\")[(text-style: \"bold\")[Chapter Five]]\nYou push your grocery cart slowly around the local Fresh Mart, ticking items off your list. For a moment you're torn between two flavors of ice cream, before smiling to yourself and putting both kinds into your cart.\n\nHeading to the supermarket after work on a Monday has become a kind of ritual for you. It's the only night of the week when you rarely have plans, and you're looking forward to a peaceful evening.\n\nYou're a little more excited than usual today, because you've decided to spend some of the evening planning your next adventure. You're thinking maybe some hiking in a national park.\n\n[[Your daydreaming is rudely interrupted by a piercing scream.]]",
+      "links": [
+        {
+          "text": "Your daydreaming is rudely interrupted by a piercing scream.",
+          "destination": {
+            "name": "Your daydreaming is rudely interrupted by a piercing scream.",
+            "pid": 192
+          }
+        }
+      ]
+    },
+    {
+      "pid": 191,
+      "name": "Chapter Five has child",
+      "text": "(align: \"=><=\")[(text-style: \"bold\")[Chapter Five]]\nYou look at your watch. Two thirty. Plenty of time to fit in a trip to the playpark. You push the stroller down the sidewalk, taking your time to peer into store windows as you pass by, pointing out this and that to Ruby, who chatters appreciatively from the comfort of the stroller. \n\nYou stop outside the travel agency, your eyes drawn to a huge photo of a beautiful Hawaiian beach. Before you can stop it, your mind flashes back to the vacation you never took with Paul. You doubt you'll be going on any tropical vacations anytime soon. \n\n[[Ruby interrupts your momentary melancholy with a little shriek.]]",
+      "links": [
+        {
+          "text": "Ruby interrupts your momentary melancholy with a little shriek.",
+          "destination": {
+            "name": "Ruby interrupts your momentary melancholy with a little shriek.",
+            "pid": 196
+          }
+        }
+      ]
+    },
+    {
+      "pid": 192,
+      "name": "Your daydreaming is rudely interrupted by a piercing scream.",
+      "text": "It's coming from the next aisle, so you leave your cart and rush round the corner, to see what's wrong and maybe give a helping hand. (click: \"maybe give a helping hand\")[You can't let your first aid training go to waste now, can you?]\n\nAs you reach the source of the scream, a horrible, hilarious picture greets your eyes.\n\nOn the floor, a toddler in purple dungarees is lying face down on the sticky floor, beating her little fists on the ground and screaming until her whole head turns bright red.\n\nLooking on with a mixture of horror and boredom in her expression, is Hazel, tightly gripping her shopping cart with one hand while trying to soothe a baby dressed in blue with the other. The toddler's shrieks must have set the baby off.\n\n[[\"Hi Hazel! Need a hand?\"]]",
+      "links": [
+        {
+          "text": "\"Hi Hazel! Need a hand?\"",
+          "destination": {
+            "name": "\"Hi Hazel! Need a hand?\"",
+            "pid": 193
+          }
+        }
+      ]
+    },
+    {
+      "pid": 193,
+      "name": "\"Hi Hazel! Need a hand?\"",
+      "text": "It takes a moment for Hazel to realize that someone is speaking to her. When she looks at you, she seems a little dazed.\n\n\"Jenny? Is that you? It's so nice to see you!\"\n\n\"Yes, it's me. Most people call me Jen these days.\" You try to give Hazel your warmest smile. \"Is that June?\" you ask, pointing at the purple tantrum on the floor.\n\nHazel nods. \"That's right. Isn't she adorable?\" \n\n[[You laugh as Hazel bends down to scoop up June and dust off her dungarees.]] ",
+      "links": [
+        {
+          "text": "You laugh as Hazel bends down to scoop up June and dust off her dungarees.",
+          "destination": {
+            "name": "You laugh as Hazel bends down to scoop up June and dust off her dungarees.",
+            "pid": 207
+          }
+        }
+      ]
+    },
+    {
+      "pid": 194,
+      "name": "You put on your most convincing 'Aww look a baby' expression.",
+      "text": "You've gotten very good at this over the years, especially after noticing how people reacted when you treated their babies with anything less than awe. It doesn't cost you anything to be polite. (click: \"It doesn't cost you anything\")[Unless it's a really ugly kid. That costs you big time.]\n\n\"He's gorgeous, Hazel. How are you and Mark doing?\"\n\nHazel's face falls. Oh shit, Jen. \n\n[[You must have put your foot in it.]]",
+      "links": [
+        {
+          "text": "You must have put your foot in it.",
+          "destination": {
+            "name": "You must have put your foot in it.",
+            "pid": 208
+          }
+        }
+      ]
+    },
+    {
+      "pid": 195,
+      "name": "\"OK. It's good to see you, Hazel.\"",
+      "text": "\"You too, Jen. You take care now! Give me a call sometime!\"\n\nYou promise to do so and Hazel walks away, dragging June by the hand and barely avoiding steering her cart into a stack of canned tomatoes.\n\nPoor Hazel. Is this really what she wanted for herself, for her life? You think back to the bubbly woman you met, not so many years ago. \n\nYou can't help but feel that little bubble of relief and happiness that explodes in you everytime you remember how lucky you are to be childfree. You got it the first time after your surgery and it's been your regular companion ever since.\n\nYou know, deep down in your bones, that you made the right choice.\n\n[[THE END]]",
+      "links": [
+        {
+          "text": "THE END",
+          "destination": {
+            "name": "THE END",
+            "pid": 113
+          }
+        }
+      ]
+    },
+    {
+      "pid": 196,
+      "name": "Ruby interrupts your momentary melancholy with a little shriek.",
+      "text": "\"Dog dog,\" Ruby squirms to look at you and points a little way ahead on the sidewalk. \"Dog dog!\"\n\n\"Yes, honey, dog dog!\" She is getting so talkative these days. You're looking forward to chatting with her about anything and everything as she grows up. (click: \"anything and everything\")[Well, maybe not everything. The big conversation about relationships is sure going to be painful.]\n\nYou move forwards, following the woman walking the dog that caught Ruby's attention. As you walk past a caf\u00e9, a sound from inside makes you take a look through the window.\n\n[[It's Louise.]]",
+      "links": [
+        {
+          "text": "It's Louise.",
+          "destination": {
+            "name": "It's Louise.",
+            "pid": 197
+          }
+        }
+      ]
+    },
+    {
+      "pid": 197,
+      "name": "It's Louise.",
+      "text": "She's sitting at a table near the counter, talking and laughing with a female friend. Louise looks like she doesn't have a care in the world.\n\nYou haven't spoken to her for a while, but you'd heard that she had her own business. She looks well. Really well. How has she kept that figure all this time?\n\nShould you go and say hi? But just like old times, you look down at yourself and feel insecure. Maybe you're better off without that kind of friendship, Jenny.\n\n[[You take one last look at Louise and move on.]]",
+      "links": [
+        {
+          "text": "You take one last look at Louise and move on.",
+          "destination": {
+            "name": "You take one last look at Louise and move on.",
+            "pid": 198
+          }
+        }
+      ]
+    },
+    {
+      "pid": 198,
+      "name": "You take one last look at Louise and move on.",
+      "text": "You walk a little faster until you reach the playpark. Ruby clambers out of the stroller and you watch her toddle over to the tiny sandbox that must seem like a rolling desert to someone so small.\n\nYou sit down on a bench and watch Ruby having fun. A shudder runs through your body as you imagine how differently things might have turned out if you'd decided not to keep her. You don't know what you would do without Ruby in your life.\n\nThe love you feel for her is so overpowering, so much stronger than anything you ever felt for Paul.\n\n[[But you still miss him, sometimes.]]",
+      "links": [
+        {
+          "text": "But you still miss him, sometimes.",
+          "destination": {
+            "name": "But you still miss him, sometimes.",
+            "pid": 199
+          }
+        }
+      ]
+    },
+    {
+      "pid": 199,
+      "name": "But you still miss him, sometimes.",
+      "text": "It's hard not to wish that things had gone differently. That Paul had wanted your baby as much as you did. He's missed out on so much. Sure, he babysits every now and again so that you can go to the dentist or whatever, but it would have been amazing to truly share this with him.\n\nBut you know that parenting shouldn't be forced on anyone. You just hope that you'll meet someone who you can raise Ruby with, because sometimes it's just more fun to be part of a team.\n\nThere's no rush though. Right now, here in this playpark on a sunny afternoon, you wouldn't change a thing.\n\n[[THE END]]",
+      "links": [
+        {
+          "text": "THE END",
+          "destination": {
+            "name": "THE END",
+            "pid": 113
+          }
+        }
+      ]
+    },
+    {
+      "pid": 200,
+      "name": "Menu",
+      "text": "<style>tw-sidebar{ opacity: 0;}</style>(enchant: ?page, (background:\"http://katiebenson.co.uk/img/AWomansChoiceBackground.jpeg\"))\n(align: \"=><=\")[(text-style: \"bold\")[A Woman's Choice]]\n(align: \"=><=\")[<h5>By Katie Benson</h5>]\n{\n<!-- Set initial variables that change here instead of in the Startup passage -->\n<!-- YOUR VARIABLES GO HERE -->\n}''[[Start a new game->$_start_passage]]\n(link: \"Continue from last time\")[(load-game: $_autosave_slot)]''\n[[About the game]]",
+      "links": [
+        {
+          "text": "About the game",
+          "destination": {
+            "name": "About the game",
+            "pid": 209
+          }
+        }
+      ]
+    },
+    {
+      "pid": 201,
+      "name": "Header",
+      "text": "{\n<!-- Auto-save our progress (unless a passage forbids it) -->\n(unless: (passage:)'s tags contains \"nosave\")[\n\t(save-game: $_autosave_slot, $_autosave_filename)\n]\n}",
+      "links": []
+    },
+    {
+      "pid": 202,
+      "name": "It's Paul.",
+      "text": "\"Oh my god, Paul! It's so great to see you.\"\n\nPaul turns away from wrestling with a very small child who seems determined to empty a huge bag of pasta all over the floor.\n\nPaul sees you and smiles. You'd nearly forgotten how great his smile was. Stop staring, Jenny.\n\n\"Oh wow, hi! It's been... so long.\" \n\n\"Yeah, must be... five years? You look really well, Paul. And who is this?\"\n\n[[\"This is my son, Oscar.\"]]",
+      "links": [
+        {
+          "text": "\"This is my son, Oscar.\"",
+          "destination": {
+            "name": "\"This is my son, Oscar.\"",
+            "pid": 203
+          }
+        }
+      ]
+    },
+    {
+      "pid": 203,
+      "name": "\"This is my son, Oscar.\"",
+      "text": "Well of course it's his son. But that doesn't mean you're prepared for the surge of emotions that threaten to overwhelm you. Paul has a child. And not with you. Are you happy or sad? Maybe both?\n\n\"Hello there, Oscar,\" You crouch down and hold out your hand for him to shake. He takes your hand with his sticky little fingers and drops the bag of pasta. Luckily it does not spill out onto the ground. Cute kid. (click: \"Cute kid\")[But why must they always be sticky?]\n\n\"He's gorgeous, Paul. Are you enjoying being a dad?\"\n\n\"So far, so good,\" he laughs. \"My wife, Christine, she's at home with our three-month-old right now. I'm supposed to be shopping for dinner, but Oscar has other ideas.\"\n\n[[And he has a wife.]]",
+      "links": [
+        {
+          "text": "And he has a wife.",
+          "destination": {
+            "name": "And he has a wife.",
+            "pid": 204
+          }
+        }
+      ]
+    },
+    {
+      "pid": 204,
+      "name": "And he has a wife.",
+      "text": "Even after five years, the thought of Paul with someone else is enough to make your heart ache. A wife and two kids? You smile through the pain and hope it doesn't look like a grimace.\n\n\"Ha, I can see that. He looks like a real troublemaker.\" You pause, wondering if you should ask what you really want to know. Who knows if you'll get the chance again? \"So... do you and Christine share the work nice and evenly?\"\n\nInstantly that great smile is replaced by a defensive expression you know only too well.\n\n\"Christine is more of a... traditional mom. I support her and she devotes herself to our children. She is doing a wonderful job.\"\n\n[[You're sure she is.]]",
+      "links": [
+        {
+          "text": "You're sure she is.",
+          "destination": {
+            "name": "You're sure she is.",
+            "pid": 205
+          }
+        }
+      ]
+    },
+    {
+      "pid": 205,
+      "name": "You're sure she is.",
+      "text": "The pain you felt on hearing of Paul's new family is immediately replaced by a wave of relief. For one horrible moment, you thought he had changed, that he had learned to co-parent and that you had missed out on an amazing life together.\n\nBut no. Jenny, you dodged a bullet. \n\nThis time your smile is genuine. \"It sounds like you found your perfect family. I'm really happy for you.\"\n\n\"Thanks, Jenny. How about you? Any kids?\"\n\n[[\"No, not yet.]]",
+      "links": [
+        {
+          "text": "\"No, not yet.",
+          "destination": {
+            "name": "\"No, not yet.",
+            "pid": 206
+          }
+        }
+      ]
+    },
+    {
+      "pid": 206,
+      "name": "\"No, not yet.",
+      "text": "And maybe not ever. And that's just fine.\n\n\"Oh, I see. You look really well, Jenny.\"\n\n\"Thanks, Paul. You too. Now, I have to dash, I'm meeting Louise for coffee. I'll say hi from you!\"\n\n\"Uh, sure, please do.\" You give Paul an awkward hug before turning on your heel and heading to the checkout.\n\nSo Paul is a 'fun dad' after all. Louise is going to love hearing all about this. There's an extra spring in your step as you walk towards the caf\u00e9. Maybe she'll even buy you a brownie, to celebrate.\n\n[[THE END]]",
+      "links": [
+        {
+          "text": "THE END",
+          "destination": {
+            "name": "THE END",
+            "pid": 113
+          }
+        }
+      ]
+    },
+    {
+      "pid": 207,
+      "name": "You laugh as Hazel bends down to scoop up June and dust off her dungarees.",
+      "text": "\"June, look, it's your Auntie Jenny, I mean, Jen.\" June stares at you indifferently, clearly annoyed with you for interrupting her latest performance.\n\n\"And this is Bradley.\" Hazel points to the baby in the shopping cart's little seat. \"He's nearly one already.\"\n\n[[You put on your most convincing 'Aww look a baby' expression.]]",
+      "links": [
+        {
+          "text": "You put on your most convincing 'Aww look a baby' expression.",
+          "destination": {
+            "name": "You put on your most convincing 'Aww look a baby' expression.",
+            "pid": 194
+          }
+        }
+      ]
+    },
+    {
+      "pid": 208,
+      "name": "You must have put your foot in it.",
+      "text": "\"Oh gosh, where to start? You remember what we spoke about together? Well, it didn't get any better. Not with June, and not when Bradley came along. We tried the counselling, but... Mark and I are separated.\"\n\n\"I'm so sorry to hear that. Are you doing OK?\"\n\n\"Oh yeah, I have a lot of help from my family. Speaking of which, I have to run. My mom is coming over to help with dinner tonight. I might get to spend twenty minutes not doing any housework!\"\n\n[[\"OK. It's good to see you, Hazel.\"]]",
+      "links": [
+        {
+          "text": "\"OK. It's good to see you, Hazel.\"",
+          "destination": {
+            "name": "\"OK. It's good to see you, Hazel.\"",
+            "pid": 195
+          }
+        }
+      ]
+    },
+    {
+      "pid": 209,
+      "name": "About the game",
+      "text": "To breed or not to breed, that is the question. So what'll it be, Jennifer?\n\nJoin Jennifer on her journey through life. The choices you make in her early years will resonate for years to come, sometimes with devastating consequences. But remember, as with so much of life, there are no right answers. What matters is Jennifer's right to choose, a right that none of us can afford to take for granted.\n\n[[Back->Menu]] ",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Menu",
+            "pid": 200
+          }
+        }
+      ]
+    }
+  ]
+}

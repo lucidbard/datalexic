@@ -1,0 +1,854 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Introduction",
+      "text": "\tYou are scurrying down the hallway of Wreden High, trying to get your next class in time. Your heavy breathing causes your mind to question why they don't give students like you more time to travel all the way across the series of four buildings. It isn't too bad, but when you have to go from Alegebra II to Introduction to Econimics, an eight-minute travel by walk, in that amount of time, that's when the limitation rubs you the wrong way.\n\n\t[[You keep on running down the hallway.|Discovery]]\n",
+      "links": [
+        {
+          "text": "You keep on running down the hallway.",
+          "destination": {
+            "name": "Discovery",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Computer Lab",
+      "text": "\tThere was nothing suspicious going on in this computer lab. There was a chance, a very slight chance mind you, that you had missed something critical on one of the computers, something that would change the whole outcome of your life. \n\t<<audio vanish fadeout>>\n\tBut, no, you could see everything of interest when you peered in: which was nothing. What a helpful detour. This side mission had brought you nowhere closer to discovering where everyone had mysteriously vanished to.\n\t\n\tThe passageway to your left thankfully is an alternate route into the teacher's lounge. Convenient, I know.  It would be a shame if you didn't utilize it. It feels built just for you after all. What secrets does it hide? What groundbreaking decisions will occur? There is only one way to find out.\n\t\n[[You go into the passageway on your left.|Teacher's Lounge]]\n<span class=\"hidden\">[[Who knows what mysteries lie in store for the narrator and his friend.|I Don't Know! Third Base!]]</span>\n[[You go into the small classroom on your right.|Detours]]\n",
+      "links": [
+        {
+          "text": "You go into the passageway on your left.",
+          "destination": {
+            "name": "Teacher's Lounge",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Who knows what mysteries lie in store for the narrator and his friend.",
+          "destination": {
+            "name": "I Don't Know! Third Base!",
+            "pid": 25
+          }
+        },
+        {
+          "text": "You go into the small classroom on your right.",
+          "destination": {
+            "name": "Detours",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Basement",
+      "text": "As you reach the bottom of the steps, you find a bolted metal door in your way. A small keypad rests next to the door. This is the only way to open this door and continue through.\n<<masteraudio stop>>\nThankfully, there is nothing interesting beyond this door. It had been used as a storeroom of rare and dangerous chemicals. In fact, last year's plaque of radioactive raccoons were due to these chemicals. Since then, they managed to move all the chemicals elsewhere. \n<<if $input != \"0451\">>\nHowever, they had not managed to shut down the keypad next to the door, allowing to it still accept inputs. Anyone would be perfectly find if they pushed random numbers into the keypad. They would have to make sure they didn't enter the combination of \"0451\" however. Nothing good would come from that.\n$input\n[img[images/key_9.png][Basement][$input = $input + \"9\"]][img[images/key_8.png][Basement][$input = $input + \"8\"]][img[images/key_7.png][Basement][$input = $input + \"7\"]]<br>[img[images/key_6.png][Basement][$input = $input + \"6\"]][img[images/key_5.png][Basement][$input = $input + \"5\"]][img[images/key_4.png][Basement][$input = $input + \"4\"]]<br>[img[images/key_3.png][Basement][$input = $input + \"3\"]][img[images/key_2.png][Basement][$input = $input + \"2\"]][img[images/key_1.png][Basement][$input = $input + \"1\"]]<br><nobr>[img[images/key_0.png][Basement][$input = $input + \"0\"]][img[images/key_clear.png][Basement][$input = \"\"]]\n</nobr>\n\n[[You head back upstairs and go to the teacher's lounge.|Teacher's Lounge]]\n<<else>>\n\tYou feel the room shake. The door still stays closed. Nothing seems to have changed. \t\n\t<<linkreplace \"You head back upstairs and go to the teacher's lounge.\">>You attempt to go back upstairs. There's a door there now. It's locked. The room shakes again. You look upward, now noticing the ceiling collapsing down upon you. Your input activated a death trap, how fancy. The scientists here used to use \"0451\" as a fake password, telling it to people who they didn't trust.\n\t\n\tLooks like someone here has a trust issue. Hopefully, this room flattens out all your kinks. \n<</linkreplace>>\n\t\n<</if>>\n",
+      "links": [
+        {
+          "text": "You head back upstairs and go to the teacher's lounge.",
+          "destination": {
+            "name": "Teacher's Lounge",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Teacher's Lounge",
+      "text": "\tStepping into the teacher\u2019s lounge, you find objects, but none of them alive. The leather chairs sit still, being tucked away beneath a formidable wooden table. Colorful streaks made by markers are starting to dry on the whiteboard nearby. The coffee maker even lays empty and undistributed, the cornerstone to any morning\u2019s survival. There even is another doorway that opens to a stairway.\n\t<<set $input = \"\">>\n\tYou stand there in awe, trying to figure out what, or who, had been able to coordinate all of these disappearances.\tYou could have not known that that innocent coffee marker is hiding a terrible truth that none of the faculty wanted to be revealed. It looks perfectly normal in every way, however, when someone turns the coffee pot exactly seventeen degrees to the left, its secrets would then spill out onto the world.\n\n\tThis information was useless, however, since there is no way you could have possibly known this. One might feel overloaded if they knew such important information, but you knew better than to stand still too long. There were pressing matters to attend to.\n\n[[You turn the coffee pot seventeen degrees to the left.|Coffee Spills Secrets]]\n[[You spin around in the chairs surrounding the table.|Let's Take Them For A Spin]]\n[[You walk out of the room, ignore the distractions, and head down the steps.|Basement]]\n<<timed 70s>><<goto \"When In Doubt, Nothing It Out\">>\n<</timed>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "When In Doubt, Nothing It Out",
+            "pid": 8
+          }
+        },
+        {
+          "text": "You turn the coffee pot seventeen degrees to the left.",
+          "destination": {
+            "name": "Coffee Spills Secrets",
+            "pid": 6
+          }
+        },
+        {
+          "text": "You spin around in the chairs surrounding the table.",
+          "destination": {
+            "name": "Let's Take Them For A Spin",
+            "pid": 5
+          }
+        },
+        {
+          "text": "You walk out of the room, ignore the distractions, and head down the steps.",
+          "destination": {
+            "name": "Basement",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Let's Take Them For A Spin",
+      "text": "\tYou start to spin around in one of the leather chairs that guards the table in the middle of the room. The faster you spin, the more you forget about the sudden disappearances and the sense of dread around you. But, alas, one cannot spin the day away forever, so you get up out of your chair. \n\t\n\tThere seems to be nothing else of importance in the room, besides the whole \u201cturning the coffee pot at seventeen degrees\u201d thing, but again, no amount of chair spinning would allow you to learn that.\n\n[[You turn the coffee pot seventeen degrees to the left.|Coffee Spills Secrets]]\n[[You spin around in the chairs some more.|And We Can't Stop]]\n",
+      "links": [
+        {
+          "text": "You turn the coffee pot seventeen degrees to the left.",
+          "destination": {
+            "name": "Coffee Spills Secrets",
+            "pid": 6
+          }
+        },
+        {
+          "text": "You spin around in the chairs some more.",
+          "destination": {
+            "name": "And We Can't Stop",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Coffee Spills Secrets",
+      "text": "\tYou approach the coffee pot, grab the handle with conviction, and twist it exactly seventeen degrees to the left. Not one angle more, not one angle less. Astounding. You are impressed that you could have done that without some sort of protractor. Your skill is rewarded by the sound of a sudden clank. Part of the wall slides away, revealing a darkly lit path behind it. You step into the newly opened passageway, ready to explore whatever lies beyond it.\n\t<<masteraudio stop>>\n\tDescending deeper into the passageway, your mind starts to churn out more questions about your life here at school. Why had you been so content with such a repetitive life? Had you been content? Your mind cannot recall a time where you protested against your lifestyle. But that you in those classes was stoic and obedient. That version of you would never dare explore secret passageways or bathrooms unprovoked. But look at this you now. What was going on here? Why was there such a difference?\n\t\n\tThe presence of bright light snaps you out of your thoughts. You find yourself standing face to face with two large wooden doors. Above you, a neon sign hangs above the doors, displaying in giant bold letters, <b>\u201cHistory Rewriting Center\u201d</b>.\n\t\n[[You walk under the sign through the large double doors.|Mind Over Matter]]\n[[You walk towards a \"wall\" that has light shining under it.|Exit Stage Right]]\n\n",
+      "links": [
+        {
+          "text": "You walk under the sign through the large double doors.",
+          "destination": {
+            "name": "Mind Over Matter",
+            "pid": 22
+          }
+        },
+        {
+          "text": "You walk towards a \"wall\" that has light shining under it.",
+          "destination": {
+            "name": "Exit Stage Right",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "And We Can't Stop",
+      "text": "\tYou decide that yes, yes you could waste your whole day by spinning around in chairs. Just spinning. Around and around. Over and over again. The numbness to threats is long gone now, and instead, your circular experience is just a minor thrill ride. You knew that, yet you still wanted to waste your one big chance of becoming something bigger than yourself in order to...spin. You definitely have your priorities in the right order. Nowhere in your mental list is the idea of adjusting the coffee pot so that you could get on with the story. How brilliant.\n\n[[You turn the coffee pot seventeen degrees to the left.|Coffee Spills Secrets]]\n[[You spin around in the leather chairs even more. |Spin Until The World Ends]]",
+      "links": [
+        {
+          "text": "You turn the coffee pot seventeen degrees to the left.",
+          "destination": {
+            "name": "Coffee Spills Secrets",
+            "pid": 6
+          }
+        },
+        {
+          "text": "You spin around in the leather chairs even more. ",
+          "destination": {
+            "name": "Spin Until The World Ends",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "When In Doubt, Nothing It Out",
+      "text": "\tYou just stand around twiddling your thumbs. You don't have a chance to figure out what the mystery of this room is, if there even is one. Why waste your energy exploring the place? You don\u2019t know that the way to discover a secret hidden from you is just ten feet away disguised as a coffee pot.\n\t\n\tNope. No way at all. That\u2019s why you choose to stand here instead, admiring the sight before you in this lifeless room. Of course, you could adjust the coffee pot and bring some meaning into your life, but that doesn\u2019t seem to be of your interest. Nope. Standing in one spot, now that seems like the right idea in your twisted mind.\n\n[[You turn the coffee pot seventeen degrees to the left.|Coffee Spills Secrets]]\n<<timed 50s>><<goto \"If It Ain't Broke...\">>\n<</timed>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "If It Ain't Broke...",
+            "pid": 10
+          }
+        },
+        {
+          "text": "You turn the coffee pot seventeen degrees to the left.",
+          "destination": {
+            "name": "Coffee Spills Secrets",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Spin Until The World Ends",
+      "text": "\tFor god\u2019s- suddenly, as you go to spin around for the <i>third</i> time, the leather chair suddenly, and rather unfortunately, snaps in straight in half, making it impossible to spin around anymore. In fact, every single leather chair, not only in the teacher\u2019s lounge but in the whole building falls apart at once. Their expiration dates hit all at once or something like that. It is now inconceivable for you to twirl around in a chair anymore. Now nothing could distract you from possibly investigate that coffee marker without any future distractions, hint hint.\n\n[[You turn the coffee pot seventeen degrees to the left.|Coffee Spills Secrets]]\n<<timed 25s>>[[You do nothing.|When In Doubt, Nothing It Out]]\n<</timed>>",
+      "links": [
+        {
+          "text": "You turn the coffee pot seventeen degrees to the left.",
+          "destination": {
+            "name": "Coffee Spills Secrets",
+            "pid": 6
+          }
+        },
+        {
+          "text": "You do nothing.",
+          "destination": {
+            "name": "When In Doubt, Nothing It Out",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "If It Ain't Broke...",
+      "text": "\tWhy would you-- you decide to just stand there. Forever. Sunlight starts to stream in from the window next to you before fading and being replaced by its cousin moonlight. You feel the moisture leaving your throat and mouth as the sands of time suck them away. Your stomach starts to contort inwards, barren from the lack of any nutrients. Your body is being bombarded by time, destroying any layer of protection as you become skin and bones. Eventually, your resolve for standing in one place brings you face to face with the Grim Reaper, who ends your life right here in this very spot.\n\t\n\tCongrats. Your desire for stoic standing brought you this. Doing absolutely nothing with nobody around gets you killed unsurprisingly. I would prefer not to have you kill yourself, but you preferred not to do anything. Little awkward to have the main character kill themself in the middle of the story, but you didn't want to be a conventional hero. Who could have seen any other possible conclusion?\n\n\tYou are dead.",
+      "links": []
+    },
+    {
+      "pid": 11,
+      "name": "Finding Peace",
+      "text": "\tThe blue glow of the monitor blips out of existence as you cut its lifeline. You have defeated it. You have finally won. After years of being fed false information about who you were, this memory is now your own.\n\t<<audio descent fadeout>>\n\tYour eyes catch another neon sign sputtering into existence. This one is bringing relief for the first time in quite a while. It had only two words: \u201cEscape Door\u201d. You stroll over to the door revealed underneath its newly created green glow. After a moment of brief hesitation, you walk through the promising door.\n\n\tA beach is now before you. You step out onto it, feeling the tropical breeze against your skin. You take a deep breath, exhaling the stress that has built up within you. You have finally found a place where you can rest, relax, and rejuvenate.\n\t\n\tAs you lean against the lone palm tree, your mind starts to recall all the information that it is still missing. Where had everyone gone? Who was in control of that place? If this was sleeping here, what other mysterious slept on campus? Could you have figured out all of this information if you had chosen to go in different directions?\n\t\n\tBut as you watch the waves that encircled your new habitant drift in, you realize that, to you, those answers weren\u2019t critical to your existence anymore. It might have been the spark that sent you on your journey, but how could you think any of that matter? Any other choice could have been conjured up by that computer, planting memories of you deciding to go a different route. This was the journey that you wanted to happen, the journey that was supposed to happen.\n\t\n\tYou stare out at the ocean surrounding you. You have found your own domain, a place where you would never be corrupted by others, a place where you could make your own unique memories, a place where you could find out who you really were.\n\t\n\tA place where you could be genuinely you.\n",
+      "links": []
+    },
+    {
+      "pid": 12,
+      "name": "Escape",
+      "text": "\tDid-did you just try to cheat for your class? Is that really more important than removing the eternal threat of a machine that can control your own thoughts, your own history? How effective is getting an A in a class that you don't even care about anyway?\n\t<<audio descent fadeout>>\n\tI appreciate your, err, studiousness, but your character arch was supposed to end on a high note. You were supposed to overcome these challenges placed before you and become the better human being. Who wants a protagonist who ends up being tripped up in a plot thread forgotten about after the first paragraph? I guess you do, since you flagrantly did.\n<<timed 15s>>\n<<nobr>>\n<div class = \"countdown\"><span id=\"countdown\"> </span></div>\n<<silently>>\n<<set $minutes = 1>><<set $seconds = 15>><<set $isRunning to true>>\n    <<repeat .1s>>\n\t\t<<if $isRunning == true>>\n\t\t  <<set $seconds to $seconds - .1>>\n\t\t  <<if $seconds < 0>>\n\t\t\t  <<set $seconds = 59.9>>\n\t\t\t  <<set $minutes to $minutes - 1>>\n\t\t\t  <<if $minutes < 0>>\n\t\t\t\t  <<goto [[Tough Guys Don't Look at Explosions]]>>\n\t\t\t  <</if>>\n\t\t  <</if>>\n\t\t  <<if $isRunning == true>>\n\t\t\t<<set $seconds = $seconds.toFixed(1)>>\n\t\t\t<<if $seconds < 10>>\n\t\t\t\t<<replace \"#countdown\">>$minutes:0$seconds<</replace>>\n\t\t\t<<else>>\n\t\t\t\t<<replace \"#countdown\">>$minutes:$seconds<</replace>>\n\t\t\t<</if>>\n\t\t  <</if>>\n\t\t<<else>>\n\t\t\t<<replace \"#countdown\">>Too Late<</replace>>\n\t\t<</if>>\n    <</repeat>>\n<</silently>>\n<</nobr>>\n\tUnfortunately, for you as our cheating protagonist, the faculty knew that only a student would dare load a CD such as that. And so, they hooked up a trigger to activate a blaring countdown whenever that CD was detected.\n\t\n\tI, for one, have to applaud them for thinking that far ahead. They seem to agree that it would be horrible if someone who was destined to be the hero of a story suddenly turned villainous at the last moment. What a terrible twist that would be.\n\t<<audio cd volume 0 fadein>>\n\tYou want to prevent your impending death? Heh, don't we all. There are a bunch of buttons underneath the monitor. As with all buttons, the option to push them is there. \n\t\n\tAre you thinking that I'm hinting at you to press them? Honestly, I'm done with my attempts to lead you in a specific direction. I tried that, and look where we now are. Another option with equal importance is that an exit sign on the wall over there. What's that way cannot be worse than here, could it?\n\t\n\tTime is ticking away.\n\n[[You kneel down and stare at the collection of buttons.|Tapped Out]]\n[[You hustle over to the door labeled \"Exit\".|A-mazing Plan]]\n<</timed>>\n\n\t\n",
+      "links": [
+        {
+          "text": "Tough Guys Don't Look at Explosions",
+          "destination": {
+            "name": "Tough Guys Don't Look at Explosions",
+            "pid": 32
+          }
+        },
+        {
+          "text": "You kneel down and stare at the collection of buttons.",
+          "destination": {
+            "name": "Tapped Out",
+            "pid": 19
+          }
+        },
+        {
+          "text": "You hustle over to the door labeled \"Exit\".",
+          "destination": {
+            "name": "A-mazing Plan",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Detours",
+      "text": "\tHow have you not dropped out yet? You are so bad at following instructions I\u2019m shocked you're still in school. No, no, we must have gotten off on the wrong foot. Do you not trust me? Do you not think I\u2019ve painstakingly crafted this story for you, for you to experience the feeling of victory? I\u2019ve put my heart and soul into making you the hero of this story. And what are you doing in return? Foiling any attempts I have made at creating a robust and coherent story is all I see.\n\t\n\tI realize that putting your trust in someone else is hard, but you\u2019ve got to understand I mean the best for you honestly. If we work together, we can create something wonderful, something amazing. I create the world you live in and you decide how you navigate through it. Neither of us can do this alone.\n\t\n\tCan I trust you? Do you want one more chance? One more chance to make a choice for the greater good instead of focusing solely on yourself.\n\t\n\t[[You decide to give the narrator a listen one final time.|Door Time]]\n\t[[You decide that this narrator isn't a strong enough writer or clever enough with his ideas, so you decide to walk away from this story.|Stabbed]]",
+      "links": [
+        {
+          "text": "You decide to give the narrator a listen one final time.",
+          "destination": {
+            "name": "Door Time",
+            "pid": 50
+          }
+        },
+        {
+          "text": "You decide that this narrator isn't a strong enough writer or clever enough with his ideas, so you decide to walk away from this story.",
+          "destination": {
+            "name": "Stabbed",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Cure For Our Troubles",
+      "text": "\tOh, thank god, you\u2019re willing to listen to me now. I was honestly worried there that we would accomplish nothing together with us pulling the story in different directions. Teamwork makes the dream work, you know?\n\t\n\tAh, but it seems we have written ourselves into a corner now. We have the obvious next course of action: you walking through the door, seeing the vial of cure, and picking it up. And then, you go back the way you came and find a way to send it to your loved one in need. That seems all quite linear though. I guess there could be a few choices on what method you choose to send the vial. I\u2019m not feeling inspired by. I was really interested in the whole \u201ceveryone suddenly disappears\u201d plot that we had going on before, but I feel like we\u2019re so off track that there isn\u2019t a seamless way to reconnect with that.\n\t\n\tWhat if, stay with me now, what if we changed genres? I cannot think of a way to make this ending interesting with our current genre, but if we changed it up a bit, we might have something. How about an old detective story, like a noir? Yes, that\u2019s it! You, now with the cure in hand, travel across the country to deliver the cure to Haggard, only to find him dead. Now that\u2019s a story. How about it, are you willing to embrace such a strong story change? \n\t\n[[You grab your nearest fedora and become a crime sleuth.|Noir Good Times]]\n[[You reject the concept of changing genres so late in the story. Even stories like these need to obey some sort of narrative structure.|Far Too Out There]]\n\n",
+      "links": [
+        {
+          "text": "You grab your nearest fedora and become a crime sleuth.",
+          "destination": {
+            "name": "Noir Good Times",
+            "pid": 38
+          }
+        },
+        {
+          "text": "You reject the concept of changing genres so late in the story. Even stories like these need to obey some sort of narrative structure.",
+          "destination": {
+            "name": "Far Too Out There",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Temptations",
+      "text": "\t<<timed 2s>>\n\t\u2026\n\t<<next>>\t\n\t\u2026\n\t<<next>>\t\n\tOh, did you expect me to say something? No, I\u2019m done. I\u2019m not going to try to work with you. If you\u2019re not willing to meet me halfway, you\u2019re not worth working with at all. Who wants to build with someone who just will tear it back down? Go and share this story to someone is actually willing to take the time and effort to help me create a memorable experience. You\u2019re clearly not the person I want reading my story.\n\t<<next>>\n\t\u2026\n\t<</timed>>\t<<timed 10s>>\t\n\tNope, it\u2019s still you. You\u2019re still reading. What do you want? Some sort of victory fanfare? Some feeling of satisfaction for coming this far and toiling with me all this way? There\u2019s nothing plot related here. Every option I gave you to see some you turned down. And now you\u2019re here. Whoop-de-doo.\n\t<<next>>\t\n\tDid you think you had to defeat me? That I was some sort of antagonist in this story, representing some overarching evil force? All because I was stating how I felt things were meant to be. And you, you were the protagonist all along, the knight in shining armor, battling against these ideas I dare spew at you. You think you\u2019re always right and that anyone who dares opposes you is sort of villain to beat, am I right? If you have that twisted worldview, newsflash: you\u2019re not the protagonist of life. There are no clear protagonists and antagonists in the real world. All you\u2019re being is ignorant of another person\u2019s humanity.\n\t<<next>>\t\n\tYou\u2019re not the only real human, the only one with real opinions. If you\u2019re not going to respect any of the ideas I had, why should I stay around to listen to yours? \n\t\n\t<</timed>>",
+      "links": []
+    },
+    {
+      "pid": 16,
+      "name": "Brainstorming",
+      "text": "\tSo, you think your motive should be <<print $response>>...\t\n\t\n\t...how would that even work? What would all trigger it? There seems to be a lot of grey area, possible trouble would lie everywhere. And how would you even reveal that? So many plot holes. If that was your true motive, you would be dead now, I'm sure of it.\n\t\n\tNo, no, that won\u2019t work at all. Thanks for trying I guess. I think you should just stick to making decisions though, leave the whole backstory to me. What if we had it where this was all a reality TV show and this final choice was to see if they what price they would win? Or, or, or, what if we had it that you were experiencing the rapture and it didn\u2019t matter what you choose, since they were both pointless now? If we did that, err..all we need to do to tie it back to the rest of the plot would be to..to.. to create some underlying religious themes that were subtle by changing the location\u2026 to become a religious day camp? We would just have to\u2026 um\u2026 oh\u2026\n\t\n\tWho am I trying to kid here? This story is all rubbish now. How about we just restart this story in order to get back to the original plot of this story? If we keep with that plot, I think this story can be a masterpiece. And this time around, suppose we don't wander so far off-track, hm?\n\n[[Return back to the start of the story.|Introduction]]",
+      "links": [
+        {
+          "text": "Return back to the start of the story.",
+          "destination": {
+            "name": "Introduction",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Untitled Passage 2",
+      "text": "<<timed 2s>>Hi! Ho!\n<<next>>Hi! Ho!\n<<next>>It's off to work we go!\n<</timed>>\n\n<div></div>",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "Check List",
+      "text": "--Move All Options Out of Text--\n-- Add Countdown to Escape -- \n---Add Maze to Escape Option---\n--Add Buttons to Escape Option--\n--Add Out of Control Ending to Computer Lab--\nAdd Extra Lines To Doing Nothing\nAdd Audio Throughout the Game",
+      "links": []
+    },
+    {
+      "pid": 19,
+      "name": "Tapped Out",
+      "text": "<<nobr>>\n<div class = \"countdown\"><span id=\"countdown\">\n\t\t<<if $seconds < 10>>\n\t\t\t$minutes:0$seconds\n\t\t<<else>>\n\t\t\t$minutes:$seconds\n\t\t<</if>>\n</span></div>\n<<silently>>\n<<repeat .1s>>\n\t\t<<if $isRunning == true>>\n\t\t  <<set $seconds to $seconds - .1>>\n\t\t  <<if $seconds < 0>>\n\t\t\t  <<set $seconds = 59.9>>\n\t\t\t  <<set $minutes to $minutes - 1>>\n\t\t\t  <<if $minutes < 0>>\n\t\t\t\t  <<goto [[Tough Guys Don't Look at Explosions]]>>\n\t\t\t  <</if>>\n\t\t  <</if>>\n\t\t  <<if $isRunning == true>>\n\t\t\t<<set $seconds = $seconds.toFixed(1)>>\n\t\t\t<<if $seconds < 10>>\n\t\t\t\t<<replace \"#countdown\">>$minutes:0$seconds<</replace>>\n\t\t\t<<else>>\n\t\t\t\t<<replace \"#countdown\">>$minutes:$seconds<</replace>>\n\t\t\t<</if>>\n\t\t  <</if>>\n\t<</if>>\n<</repeat>>\n<</silently>>\n<</nobr>>\n$buttonMessage\n<<nobr>>\n<<if visited() == 1>>\n\t<<set $newMessage = \"One button down, two to go. Are you confident about the button you just chose? Are you going to choose that one again, or perhaps a completely different one? The choices the choices...\">>\n<<elseif visited() == 2>>\n\t<<set $newMessage = \"Only one more left... make your choice count! Go with your gut. Actually, don't go with your gut, that's what brought you here in the first place. We can both see how well that went for you.\">>\n<<elseif visited() == 3>>\n\t<<set $newMessage = \"A trumpet sounds a joyful fanfare as the last switch clicks into place. The countdown timer pauses. You managed to shut down the countdown timer and save yourself. Congratulations!\">>\n<<elseif visited() == 4>>\n\t<<set $isRunning = false>>\n\t<<set $newMessage = \"Wait, you've already gone this way. I've already told you that pressing these buttons is fruitless attempt to escape. Why even bother coming here again? Did you think there was going to be some sort of secret ending that came from doing this twice?\">>\n<<elseif visited() == 5>>\n\t<<set $newMessage = \"Pressing these buttons is a waste of time. How can I be more blunt than that?\">>\n<</if>>\n<<if $isRunning == true>>\n[img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]][img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]][img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]][img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]][img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]][img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]][img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]][img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]][img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]][img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]][img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]][img[images/red_button.png][Tapped Out][$buttonMessage = $newMessage]]\n<<else>>\n\t<<audio cd pause>>\n\t<<timed 7s>>\n\t<<audio cd play>>\n\t<br>Wait, did you think that would actually work? I would be surprised by such foolishness, but you are the same person who tried to cheat on a class that no longer has anyone in. Did you even think about how that would work out? Where were you going with that?\n\t<<set $isRunning = true>>\n\t<br><br>No, no, nothing has changed for you. The buttons meant nothing, they had no role in this story. I conjured them up at the last second. Well, I guess they did have one role in this story, one evident role. To distract you as these last moments on the countdown timer tick away while the real way to save yourself stays hidden.\n\t<br><br>\n\tCongratulations.\n\t<</timed>>\n<</if>>\n<</nobr>>\n\n",
+      "links": [
+        {
+          "text": "Tough Guys Don't Look at Explosions",
+          "destination": {
+            "name": "Tough Guys Don't Look at Explosions",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "A-mazing Plan",
+      "text": "<<nobr>>\n<div class = \"countdown\"><span id=\"countdown\">\n\t\t<<if $seconds < 10>>\n\t\t\t$minutes:0$seconds\n\t\t<<else>>\n\t\t\t$minutes:$seconds\n\t\t<</if>>\n</span></div>\n<<silently>>\n<<repeat .1s>>\n\t\t<<if $isRunning == true>>\n\t\t  <<set $seconds to $seconds - .1>>\n\t\t  <<if $seconds < 0>>\n\t\t\t  <<set $seconds = 59.9>>\n\t\t\t  <<set $minutes to $minutes - 1>>\n\t\t\t  <<if $minutes < 0>>\n\t\t\t\t  <<goto [[Tough Guys Don't Look at Explosions]]>>\n\t\t\t  <</if>>\n\t\t  <</if>>\n\t\t  <<if $isRunning == true>>\n\t\t\t<<set $seconds = $seconds.toFixed(1)>>\n\t\t\t<<if $seconds < 10>>\n\t\t\t\t<<replace \"#countdown\">>$minutes:0$seconds<</replace>>\n\t\t\t<<else>>\n\t\t\t\t<<replace \"#countdown\">>$minutes:$seconds<</replace>>\n\t\t\t<</if>>\n\t\t  <</if>>\n\t\t<<else>>\n\t\t\t<<replace \"#countdown\">>Too Late<</replace>>\n\t\t<</if>>\n    <</repeat>>\n<</silently>>\n<</nobr>>\nYou rush towards a door, hoping that the sign above it isn't lying. The contractors who built this place weren't involved with, you know, controlling memories plan, so I doubt that they would lie about this being an exit.\n\nYou open the door to find yourself with a splintering path before you. Who builds a maze into the escape route? How easy would it have been to escape this place if it had actually been built normally. How disappointing for you.\n\n[[You go down the left path.|Maze]]\n[[You go down the middle path.|Maze]]\n[[You go down the right path.|Maze]]",
+      "links": [
+        {
+          "text": "Tough Guys Don't Look at Explosions",
+          "destination": {
+            "name": "Tough Guys Don't Look at Explosions",
+            "pid": 32
+          }
+        },
+        {
+          "text": "You go down the left path.",
+          "destination": {
+            "name": "Maze",
+            "pid": 21
+          }
+        },
+        {
+          "text": "You go down the middle path.",
+          "destination": {
+            "name": "Maze",
+            "pid": 21
+          }
+        },
+        {
+          "text": "You go down the right path.",
+          "destination": {
+            "name": "Maze",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Maze",
+      "text": "<<nobr>>\n<div class = \"countdown\"><span id=\"countdown\">\n\t\t<<if $seconds < 10>>\n\t\t\t$minutes:0$seconds\n\t\t<<else>>\n\t\t\t$minutes:$seconds\n\t\t<</if>>\n</span></div>\n<<silently>>\n<<repeat .1s>>\n\t\t<<if $isRunning == true>>\n\t\t  <<set $seconds to $seconds - .1>>\n\t\t  <<if $seconds < 0>>\n\t\t\t  <<set $seconds = 59.9>>\n\t\t\t  <<set $minutes to $minutes - 1>>\n\t\t\t  <<if $minutes < 0>>\n\t\t\t\t  <<goto [[Tough Guys Don't Look at Explosions]]>>\n\t\t\t  <</if>>\n\t\t  <</if>>\n\t\t  <<if $isRunning == true>>\n\t\t\t<<set $seconds = $seconds.toFixed(1)>>\n\t\t\t<<if $seconds < 10>>\n\t\t\t\t<<replace \"#countdown\">>$minutes:0$seconds<</replace>>\n\t\t\t<<else>>\n\t\t\t\t<<replace \"#countdown\">>$minutes:$seconds<</replace>>\n\t\t\t<</if>>\n\t\t  <</if>>\n\t\t<<else>>\n\t\t\t<<replace \"#countdown\">>Too Late<</replace>>\n\t\t<</if>>\n    <</repeat>>\n<</silently>>\n<</nobr>>\n\n<<nobr>>\n<<set $mazeNumber to random(1,7)>>\n<<if $mazeNumber == 1>>\n\t[[You turn to the left.|Maze]]\n<<elseif $mazeNumber == 2>>\n\t[[You keep going straight.|Maze]]\n<<elseif $mazeNumber == 3>>\n\t[[You turn to the right.|Maze]]\n<<elseif $mazeNumber == 4>>\n\t[[You turn to the left.|Maze]] <br>\n\t[[You keep going straight.|Maze]]\n<<elseif $mazeNumber == 5>>\n\t[[You turn to the left.|Maze]] <br>\n\t[[You turn to the right.|Maze]]\n<<elseif $mazeNumber == 6>>\n\t[[You keep going straight.|Maze]] <br>\n\t[[You turn to the right.|Maze]]\n<<elseif $mazeNumber == 7>>\n\t[[You turn to the left.|Maze]] <br>\n\t[[You keep going straight.|Maze]] <br>\n\t[[You turn to the right.|Maze]]\n<</if>>\n<</nobr>>",
+      "links": [
+        {
+          "text": "Tough Guys Don't Look at Explosions",
+          "destination": {
+            "name": "Tough Guys Don't Look at Explosions",
+            "pid": 32
+          }
+        },
+        {
+          "text": "You turn to the left.",
+          "destination": {
+            "name": "Maze",
+            "pid": 21
+          }
+        },
+        {
+          "text": "You keep going straight.",
+          "destination": {
+            "name": "Maze",
+            "pid": 21
+          }
+        },
+        {
+          "text": "You turn to the right.",
+          "destination": {
+            "name": "Maze",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Mind Over Matter",
+      "text": "\tYou enter the room and your eyes are suddenly barraged with a light shining from a giant monitor. Its blue glow splashes onto the rows of shelves that tower above as you tiptoed across the room. On these shelves lie magnitudes of CDs, each with their own short description on them. The descriptions are eerily specific, with ones such as \"Tea party with Jasmine at age 5\", \"Sleepover at the Jeffersons and getting first kiss\", and \"Creation of Introduction to Economics final exam\". What is being stored in this place?\n\t<<masteraudio stop>><<audio descent play>>\n\tYou hesitantly approach the looming computer monitor. You see on the screen a series of folders, each corresponding with a name and then a simple word: \"Memories\". You scroll down the list of folders and find your name among them. You snap the mouse over to open it and find yourself looking at video files named after personal moments in your life. Moments you thought no one knew about. But now they stare right back at you, collected by some outside force.\n\t\n\tYou accidentally drag a file named \"drivers_test.mov\" outside the folder. Your mind goes blank. You try to recall that moment, the nervousness you felt behind the wheel, the second-guessing you did whenever the instructor made a note, the joy when you discovered that you passed. But try as you might, you no longer can. Panic surges through you. You hurriedly drag the file back and the memory returns as fast. Is...is this place controlling your memories? \n\t\n\tYour eyes dart down to the power button, the Achilles heel of this beast. You knew what your duty, your role, your calling, now was. What was calling you to travel such a place. Why you were the only one left. To write the end to this horrible place, wiping all control it had over memories.\n\t\n[[You press the button to shut down the machine.|Finding Peace]]\n[[You grab the CD labeled \"Creation of Introduction to Economics final exam\" and upload it to your memory.|Escape]]",
+      "links": [
+        {
+          "text": "You press the button to shut down the machine.",
+          "destination": {
+            "name": "Finding Peace",
+            "pid": 11
+          }
+        },
+        {
+          "text": "You grab the CD labeled \"Creation of Introduction to Economics final exam\" and upload it to your memory.",
+          "destination": {
+            "name": "Escape",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Exit Stage Right",
+      "text": "\tYou approach this suspicious piece of wall. Unconventional to how one is supposed to treat a wall, you decide to walk face first into it. Your boldness is rewarded, however, as the piece of wall drifts aside as you continue you on through it. The wall was an imposter. A curtain trying to act like a formidable force.\n\n\tYou find yourself no longer in the confines of the underground facility. This new room has lights mounted on stands surrounding you, shining their beams of lights into windows that reveal an interior that look like the building you had entered just a short time ago. The whiteboard, the chairs, and even the coffee pot and its corresponding secret passage are all plain to see from where you stand now, held up by planks of wood. How could this be?\n\n\tYou hear the rough sound of a voice in the distance. Was another person here? You begin to walk towards the sound as another surge of questions starts to pour into your head. Who could possibly live in this place? What was this place anyhow? \n\n\tAs you turn to make your way around a line of colored plywood, you come face to face with the answer to your first question. A thin man sits on top of a chair whose mom was stilts. Above his pointed chin, a megaphone resides, hiding the rest of his face. He shouts words and phrases in every direction.\n\n\tHe notices you. He scolds you for not playing your role in his play. You were almost at the climax, the critical choice in this story. And now you decide to throw it all away for a little curiosity. He demands that you go back into that facility and complete this story.\n\n\tYou feel embarrassed that you would throw away his creation like this. You were his star, the lead role, and you were just going to throw it away like this? Never. Filled with conviction, you make your way back to the hidden passageway and into the secret facility.\n\n[[You walk back to head through the giant double doors.|Mind Over Matter]] \n[[You tell him that you quit and storm off stage.|What a Diva]]\n\n<<if $mc == 1>>\n\t<<audio end_escape play>>\n<<elseif $mc == 2>>\n\t<<audio more_escape play>>\n<<elseif $mc == 3>>\n\t<<audio rick_escape play>>\n<</if>>",
+      "links": [
+        {
+          "text": "You walk back to head through the giant double doors.",
+          "destination": {
+            "name": "Mind Over Matter",
+            "pid": 22
+          }
+        },
+        {
+          "text": "You tell him that you quit and storm off stage.",
+          "destination": {
+            "name": "What a Diva",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "What a Diva",
+      "text": "\tI'm going to drop this allegory of being the director now for it apparently doesn't seem to work. That's what I get for role-playing. I'm the one creating this story for you and, not surprisingly, I'm upset that you're so willing to discard story now. Did you not appreciate any of its pacing, set-up, or execution? The time it took to craft this narrative where you could be the hero in the end?\n\n\tIf you want to throw away a blessed opportunity like this, I guess I cannot stop you. You got to be the main character of a story, where for once everything happening around you occurred to help you along, to tell your story. I hand-tailored this story so that you would feel heroic when you were done, like you actually accomplished a goal. You still want to throw that away?\n\n\t[[You decide that you don't want to throw it away.|No Chance]]\n\t[[You decide that you do want to throw it away. What does he know?|No Chance]]",
+      "links": [
+        {
+          "text": "You decide that you don't want to throw it away.",
+          "destination": {
+            "name": "No Chance",
+            "pid": 52
+          }
+        },
+        {
+          "text": "You decide that you do want to throw it away. What does he know?",
+          "destination": {
+            "name": "No Chance",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "I Don't Know! Third Base!",
+      "text": "\tHold on, hold on. What was your choice? I only create two distinct options, where did this one come from?\n\n\tYes, yes, I was right. My notes are quite clear. You had the option to either go into the computer lounge-err, the teacher lounge or wander off somewhere else. I would prefer it if you went back and got back on track, however, if you decided to keep being a roaming soul, I, in return, would be annoyed at the fact that you would just ignore me. And then we would banter back and forth, me yelling at you and you not caring. Those are the two options for how this story is supposed to go.\n\n\tBut, there was no third option there. That was a pretty binary choice, how did you find a third option in that?\n\n\tCongrats I guess, err.. you. I just realized I actually don't know your name. How rude of me. Could you please enter your name in the textbox below so we could get acquainted, hm?\n\n<<textbox \"$name\" \"\">>\n<<button [[Submit|Who Makes The Choices Now?]]>><</button>>",
+      "links": [
+        {
+          "text": "Submit",
+          "destination": {
+            "name": "Who Makes The Choices Now?",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Who Makes The Choices Now?",
+      "text": "\tAh, so, your name is <<print $name>> huh? Well <<print $name>>, I guess that we're going to be traveling down this path of unknown together. Let's throw on some traveling music. Normally, I know what is about to happen, but I have literally no idea what we're going to find. Finally, I too can be on the edge of my seat as we experience the world I created. How exciting.\n<<audio stroll play>>\n\tSo, how does this work usually? You read a bit, I narrate what's around you, and then we move onto another room? Well then, umm, nothing seems to be around us. Beige walls and white tile make up this corridor. Sadly, it's just a hallway, nothing really to talk about. This building is surprisingly big on the inside.\n\n\tHold on, I take it all back. Look at that. We've discovered something. Something of grave concern. This looks like your average potted plant, but no, it is the Potted Plant. We show the importance of its existence by capitalizing it, you know. I advise you to treat this plant with the utmost respect. It has seen things you cannot possibly imagine. \n\n[[You praise it with your whole being.|Voices In My Head][$choice = 0]]\n[[You ignore it.|Voices In My Head][$choice = 1]]\n",
+      "links": [
+        {
+          "text": "You praise it with your whole being.",
+          "destination": {
+            "name": "Voices In My Head",
+            "pid": 27
+          }
+        },
+        {
+          "text": "You ignore it.",
+          "destination": {
+            "name": "Voices In My Head",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Voices In My Head",
+      "text": "<<nobr>>\n<<if $choice == 0>>\n\tThe Potted Plant waves a bit in the breeze. It finds joy in your praise.\n<<elseif $choice == 1>>\n\tThe Potted Plant glares at you. It will remember this decision.\n<</if>>\n<</nobr>>\n\t\n\tLet's move on and keep doing down this hallway. Look, now we have a set of stairs. Let's go up them. And now another empty hallway. Thrilling. And this one leads to another staircase. What happens if we go up- oh look, we find another hallway. This was a great decision <<print $name>>.\n\n\tI cannot recall the hallways that I made this dull, can you? I remember thrill and excitement around every turn. Every moment was filled with something new, something intriguing. I'm getting nothing from this path. Maybe we should just go back-\n\t\n\t<div class = \"femNarrator\">Little did the Narrator and $name know that if they kept traveling down this passageway they would find true happiness for $name.</div>\t\n\t...who was that? Was that you $name? Was your mic plugged in? If you could have talked all this time, we could have solved the mystery of this path by now.\n\t\n\t<div class = \"femNarrator\">The Narrator and $name, confused by the voice, decided to stand perfectly still and figure out what the voice was.</div>\t\t\n\tI'm-I'm not confused at all. I clearly know what is going on here. Don't you $name? Yes, this is clearly just some recording I left behind. Yeah, that's it. Come on now, $name, let us keep moving.\n\t\n\tAnd, look at that! We've discovered a set of two closed doors. An actual choice! I do not see any difference between these two white doors. We have no outside influencers on what to do. It is purely up to us.\n\t\n\t<div class = \"femNarrator\">When $name came to a set of two closed doors, they entered the door on their left.</div>\t\n\tDon't listen to that voice! If we work together $name, we can figure this out ourselves. We don't need to follow a random voice telling us what to do. How can we trust that it means the best for us? What if there is a trap behind the left door? No, we can do this the better way. Logic and reasoning.\n\t\n\tLet's start our calculations with the door on the left. If we removed the left door, would we have a door left? Since the answer is obviously no, there is no left door anymore. Would the right door be left? Yes, but it wouldn't mean that the left door was right. What we want is the whatever door is the right one to go through, and so, our only choice is for what the right door is the door on the right, for it is not the one on the left, therefore, the only remaining option.\n\t\n\tSimple. Score one for logic.\n\t\n[[You go through the door on your left.|Believe the Voices]]\n[[You go through the door on your right.|Logic Never Let's You Fall]]\n<link rel=\"stylesheet\" type=\"text/css\" href=\"//fonts.googleapis.com/css?family=Calligraffitti\" />",
+      "links": [
+        {
+          "text": "You go through the door on your left.",
+          "destination": {
+            "name": "Believe the Voices",
+            "pid": 28
+          }
+        },
+        {
+          "text": "You go through the door on your right.",
+          "destination": {
+            "name": "Logic Never Let's You Fall",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Believe the Voices",
+      "text": "<div class =\"femNarrator\"> $name opened the door slowly to find themself greeted by a loud bang. $name flinched back as confetti sprung into their face. \"Surprise!\" rang out, as $name found themself surrounded by their friends. They had been hiding here to celebrate their birthday. They had totally forgotten that today was their birthday. They smiled, happy that they had friends that cared about them so much.</div>\t\n\tWait, wait, no, stop it, stop it. Do you see anyone around here $name? Of course not, for they're not here. They're supposed to be locked up in the basement anyways. How could they possibly manage to find this room? And how did they know you would even come here? No, no, this doesn't add up $name, we need to go back and-\n\n[[You leave the room with the narrator.|Overlap]]\n[[You enjoy the company of those around you.|Succumb to Friendship]]\n<link rel=\"stylesheet\" type=\"text/css\" href=\"//fonts.googleapis.com/css?family=Calligraffitti\" />",
+      "links": [
+        {
+          "text": "You leave the room with the narrator.",
+          "destination": {
+            "name": "Overlap",
+            "pid": 35
+          }
+        },
+        {
+          "text": "You enjoy the company of those around you.",
+          "destination": {
+            "name": "Succumb to Friendship",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Logic Never Let's You Fall",
+      "text": "<div class = \"femNarrator\"> \t$name opened the door with great conviction, only to discover that the door was actually an escape door. This door was installed to go directly outside. They never got far enough to install the escape route, so it led nowhere.\n\n\tThis would had been critical information for $name, since they now were attempting to stand outside on nothing but air. This, not surprisingly, did not go well. </div>\t\n\tWait, a door that goes straight outside? Wouldn't it be a window then? It's quite illogical to call that glorified window a \"door\". That's why you're falling to your death right now $name, illogically named openings.\n\t\n\tI know your impending collision with the ground seems lousy right about now, but remember, it is not logic that failed us, others have. That other narrator dared called this a \"door\", throwing off all our calculations. If they would have stated the facts clearly, you wouldn't be breaking all your bones.\n\t\n\tRemember, naming conventions saves lives $name. If only that other narrator had known such things.\n<link rel=\"stylesheet\" type=\"text/css\" href=\"//fonts.googleapis.com/css?family=Calligraffitti\" />\n\t<<timed 30s>>\n\t<<audio splat play>>\n\t<</timed>>",
+      "links": []
+    },
+    {
+      "pid": 30,
+      "name": "An Ode To Kevin MacLoed",
+      "text": "Music Done By:\n\"The Descent\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 3.0 License\nhttp://creativecommons.org/licenses/by/3.0/\n\n\"Black Vortex\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 3.0 License\nhttp://creativecommons.org/licenses/by/3.0/\n\n\"Long Stroll\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 3.0 License\nhttp://creativecommons.org/licenses/by/3.0/\n\nAdditional Playtesting Done By:\nZachary Zarb\nMadelyn Splinder\nChris Blanchard\n\nWriting Done By:\nPeter Hoppe\n\n[[Back to the Start|Introduction]]",
+      "links": [
+        {
+          "text": "Back to the Start",
+          "destination": {
+            "name": "Introduction",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "StoryInit",
+      "text": "<<cacheaudio \"more\" \"http://k003.kiwi6.com/hotlink/uot7z0p8ic/one_more_time.wav\">>\n<<cacheaudio \"more_escape\" \"http://k003.kiwi6.com/hotlink/9d7d7ljpik/one_more_time_escape.wav\">>\n<<cacheaudio \"rick\" \"http://k003.kiwi6.com/hotlink/cj3bw09r4i/never_gonna_give.wav\">>\n<<cacheaudio \"rick_escape\" \"http://k003.kiwi6.com/hotlink/c94n1xjuxz/never_gonna_give_escape.wav\">>\n<<cacheaudio \"noir\"\n\"http://k003.kiwi6.com/hotlink/skrq2bydz3/noir.mp3\">>\n<<cacheaudio \"stroll\" http://k003.kiwi6.com/hotlink/wsc90b9xjx/Long_Stroll.mp3>>\n<<cacheaudio \"stroll2\" http://k003.kiwi6.com/hotlink/wsc90b9xjx/Long_Stroll.mp3>>\n<<cacheaudio \"end\" \"http://k003.kiwi6.com/hotlink/f1uza3nekx/in_the_end_compressed.wav\">>\n<<cacheaudio \"end_escape\" \"http://k003.kiwi6.com/hotlink/azao45rqnj/in_the_end_escape.wav\">>\n<<cacheaudio \"vanish\" \"http://k003.kiwi6.com/hotlink/idsbm1qoe0/vanishing.mp3\">>\n<<cacheaudio \"vanish2\" \"http://k003.kiwi6.com/hotlink/idsbm1qoe0/vanishing.mp3\">>\n<<cacheaudio \"descent\" \"http://k003.kiwi6.com/hotlink/n45ls4uwyi/the_descent.mp3\">>\n<<cacheaudio \"cd\" \"http://k003.kiwi6.com/hotlink/vga6d2z9ey/black_vortex.wav\">>\n<<cacheaudio \"boom\" \"http://k003.kiwi6.com/hotlink/w7hbjxx0lo/big_boom.mp3\">>\n<<cacheaudio \"splat\"\n\"http://k003.kiwi6.com/hotlink/a9ohozhwxt/body_splat.mp3\">>\n<<set $name = \"Claude\">>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"//fonts.googleapis.com/css?family=Calligraffitti\" />\n<link href=\"https://fonts.googleapis.com/css?family=Vollkorn+SC\" rel=\"stylesheet\"/>\n<link href=\"https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Vollkorn+SC\" rel=\"stylesheet\"/>\n<link href=\"https://fonts.googleapis.com/css?family=Playfair+Display\" rel=\"stylesheet\"/>\n<link href=\"https://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display\" rel=\"stylesheet\"/>\n<<set $lamp = \"blue\">>\n<<set $input = \"\">>\n<<set $mc = 0>>\n<<set $isRunning to true>>\n<<set $buttonMessage = \"You kneel down and stare at the buttons. You come up with a crazy idea. Maybe, just maybe, if you hit the right three buttons in the correct order, the countdown will stop. While this idea seems foolish at best, you cling to that little bit of hope. <br><br> Looks like it's time to choose a button. It's now or never and now is only going to last for so much longer.\">>",
+      "links": []
+    },
+    {
+      "pid": 32,
+      "name": "Tough Guys Don't Look at Explosions",
+      "text": "<<audio boom play>>\n<<timed 5s>>\nYou are dead.\n<</timed>>\n",
+      "links": []
+    },
+    {
+      "pid": 33,
+      "name": "Juke It Out",
+      "text": "You walk over to the juke box hidden in the corner of the room. Its once vibrant reds have long dulled with age. Its speakers have been blown out by music being blasted through them over the years for activities other than studying. And, to counter this misuse, the teachers have forcefully removed the majority of the music, leaving behind a collection that is a mere speck of its former self.\n\nThere are three songs left. Which one do you play?\n\n[[You play a elegant song about the toils of accomplishing goals.|Study Lounge][$mc = 1]]\n[[You play a groovy beat sharing the problems of repetitiveness.|Study Lounge][$mc = 2]]\n[[You play a gorgeous masterpiece about the trials of attempting to support someone always.|Study Lounge][$mc = 3]]\n",
+      "links": []
+    },
+    {
+      "pid": 34,
+      "name": "Succumb to Friendship",
+      "text": "\t<div class =\"femNarrator\"> But $name couldn't hear the voice of the narrator anymore. They were too busy chatting with their friends again. They had been worried that they had been abandoned, left alone in this world. But, no, they had people that cared about them, to make them grow as a person and become a greater being as a whole. People to help them through their times of weakness.</div>\n\tDon't listen to that other voice, $name. Don't be blinded by their words. You don't need these nonexistent people to be happy. You can find that by yourself. You don't need others, all you need is yourself. Can't you see that?\n\t\n\t<div class =\"femNarrator\">$name took in a deep breath, taking in the new feeling surrounding them. It was a feeling of caring, of love, of friendship. This was exactly what $name wanted to happen, what was supposed to happen. $name wasn't sure what they wanted life to be, but they couldn't image life better than this.</div>\n\tWhy cannot other people see that you don't need others? Look at me. I've accepted that truth and I was able to create this very world for you. I've had success in my life, creating hit after hit. I might not be known by the whole world, but I've had my success. And my life is not plagued by the constant presence of others; no, I'm my own person. I don't need acquaintances, friends, close family members, or a significant other. I can be happy by myself, you hear?\n\t\n\t<div class =\"femNarrator\">And $name was happy.</div>\n\tI am happy.\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"//fonts.googleapis.com/css?family=Calligraffitti\" />",
+      "links": []
+    },
+    {
+      "pid": 35,
+      "name": "Overlap",
+      "text": "Oh, thank goodness $name. I was starting to think I was going to lose you to that crazy idealism about friendship. Personally, I think that ending would have completely ruined the tone of this whole story. I'm glad you didn't go through with it.\n\n<div class =\"femNarrator\">But now $name was now having second thoughts about leaving their friends behind. They had started to feel happy back then. Why had they abandoned it? </div>\nStop it. Just stop it, we don't have time for this.\n\n<div class =\"jimNarrator\">A battle broke out between the two narrators to see who would lead $name to victory. Who will $name trust with their ideals and goals in life? Let us listen in to their conversation!</div>\nAnother one? Look what you've caused $name. All this chaos due to your one little choice to come this way. An option that I never had the intention of even existing, mind you. We've got to back to the original story, else this will just continue to escalate.\n\n[[You follow the narrator's guide back to the story.|Where Will This Go?]]\n<link href=\"https://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display\" rel=\"stylesheet\"/>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"//fonts.googleapis.com/css?family=Calligraffitti\" />",
+      "links": [
+        {
+          "text": "You follow the narrator's guide back to the story.",
+          "destination": {
+            "name": "Where Will This Go?",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "Where Will This Go?",
+      "text": "\t<div class =\"femNarrator\">$name found himself under the control of the narrator's will, unable to break free. They were now wearing the shackles of control.</div>\t\n\tDid you just name drop the title of the story? You cannot do that. That name was my creation, not yours. How dare you.\n\t<<timed 10s>><<audio stroll2 play>><</timed>>\n\t<div class =\"jimNarrator\">Our main narrator is feeling hot under the collar after that use of literary property. Will he be able to continue on with telling his story, or will the challenger distract him from doing so?</div>\n\t<div class =\"maxNarrator\">To help display the udder bewilderment these characters of this tale were now experiencing, another layer of the soundtrack that was currently underway was spliced in.</div>\n\tI cannot handle this. This is far too much. I wanted a simple story. A story about choice. A story about control. That was all $name, that was all. Is there no way back to that simple goal? To return to the root of this story?\n\t\n\t<div class =\"jimNarrator\">Our main narrator is trying to make a deal with $name in an attempt to return this all back to normal. Will he succeed?</div>\n\t<div class =\"maxNarrator\">They all had the thought rattling around between brain cells that $name possessed the ability to reset this chronicle on the left side of their electronic screen.</div>\t\n\tGo, $name, click that restart button and return us both back to the start of my, no, our story. Let's return back to simpler times, for the betterment of us all.\n\t\n\t<div class = \"femNarrator\">But this was all a ploy to fool $name into believing what the narrator had to say. If they followed the narrator's advice, they would be moving away from the one true ending.</div>\n\t<div class = \"jimNarrator\">And they are now both making one final attempt to pull at the heartstrings of $name. Who will come out on top?</div>\n\t<div class = \"maxNarrator\">It was then discovered by all parties that if nothing more was spoken, that $name would eventually cave to the boredom of nothing happening, and, therefore, would reluctantly return to the introduction. And it came to pass that the primary narrator would stay silent until that button was pressed.</div>\n<link href=\"https://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display\" rel=\"stylesheet\"/>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"//fonts.googleapis.com/css?family=Calligraffitti\" />",
+      "links": []
+    },
+    {
+      "pid": 37,
+      "name": "Far Too Out There",
+      "text": "\tAnd here I thought we were progressing together as a team. Becoming something greater than ourselves. But no, me breaking a few literature laws was enough to turn your back on me. If our relationship could be broken so quickly, then I\u2019m glad we didn\u2019t progress further together. You don\u2019t deserve a narrator such as me.\n\n\tYou find your uncle Haggard lying dead on the floor. You call the cops because you obviously have no experience in the world of solving crimes. They manage to find the culprit in two weeks time, but by then she has killed three more people. If only you had the skills to track down the culprit yourself. If only.\n\n\tMany people are dead. Congrats.",
+      "links": []
+    },
+    {
+      "pid": 38,
+      "name": "Noir Good Times",
+      "text": "\tYou find your uncle Haggard lying face down on the floor, the gun wound in his back displaying his brutal fate for all. You scan the grayscale room for possible clues. You notice a few key items in the room that seem like they are out of place. Which one do you investigate?\n\t<<audio noir play>>\n\t[[The bloody smear on the light switch.|Enlightment]]\n\t[[The crumpled up letter on Haggard\u2019s desk.|Letter From the Dead]]\n\t[[The temperature of his body to check the time of death.|Temperature of Murder]]\n\t[[The discarded pistol lying in the wastebasket.|Discarded Chance]]\n\n",
+      "links": [
+        {
+          "text": "The bloody smear on the light switch.",
+          "destination": {
+            "name": "Enlightment",
+            "pid": 39
+          }
+        },
+        {
+          "text": "The crumpled up letter on Haggard\u2019s desk.",
+          "destination": {
+            "name": "Letter From the Dead",
+            "pid": 40
+          }
+        },
+        {
+          "text": "The temperature of his body to check the time of death.",
+          "destination": {
+            "name": "Temperature of Murder",
+            "pid": 41
+          }
+        },
+        {
+          "text": "The discarded pistol lying in the wastebasket.",
+          "destination": {
+            "name": "Discarded Chance",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Enlightment",
+      "text": "\tYou investigate the bloody smear on the light switch. Your mind starts crunching the information for clues. If the hand was bloody, that means either the killer or your uncle must have turned it off after he had been shot. And, since your uncle is still lying in the middle of the room, it must have been the killer. Who would turn off the lights after killing someone? Well, you happen to know that turning off the lights happened to be the calling card of one infamous killer, Shirley Shayidhit!\n\n\tYou quickly call the police and inform them of the information you found. The police, obviously knowing about your renown crime-solving skills, follow your lead that very minute and successfully track down and arrest Shirley Shayidhit. Your uncle is properly avenged! \n\n\tCongrats! You win!\n",
+      "links": []
+    },
+    {
+      "pid": 40,
+      "name": "Letter From the Dead",
+      "text": "\tYou investigate the crumpled up letter on your uncle\u2019s desk. Before you start to unravel the piece of paper, you make sure that you have the correct gloves on. You don\u2019t want to leave fingerprints, as every detective worth his salt knows. You gingerly unfold the piece of paper and are shocked at the message that stares back at you.\n\n\t<i>Hello,\n\n\tHaggard Tindol owed me money so I killed him.\n\n\tSincerely,\n\n\tShirley Shayidhit</i>\n\t\n\tYou quickly call the police and inform them of the information you found. The police, obviously knowing about your renown crime-solving skills, follow your lead that very minute and successfully track down and arrest Shirley Shayidhit. Your uncle is properly avenged! \n\n\tCongrats! You win!\n\n",
+      "links": []
+    },
+    {
+      "pid": 41,
+      "name": "Temperature of Murder",
+      "text": "\tYou investigate the temperature of your uncle's body. Every good detective knows that if the body is still warm that the killer must be nearby. Luckily for you, you find the body still warm, and so, an old fashion foot pursuit must start soon. However, you double check his body, finding that it is also still moving. He\u2019s alive, struggling to breathe as his weight is against his lungs. You frantically flip him over, watching him struggle to get out his last breaths.\n\t\n\t\u201cI was killed by,\u201d he croaks out, \u201cShirley Shayidhit.\u201d And with that, he breathes his last.\n\t\n\tYou quickly call the police and inform them of the information you found. The police, obviously knowing about your renown crime-solving skills, follow your lead that very minute and successfully track down and arrest Shirley Shayidhit. Your uncle is properly avenged! \n\n\tCongrats! You win!\n\n",
+      "links": []
+    },
+    {
+      "pid": 42,
+      "name": "Discarded Chance",
+      "text": "\tYou investigate the pistol lying in the wastebasket. You think that no murderer would simply leave behind their weapon on accident. All good detectives think that after all. This thought arrives too late though as you discover that the pistol was indeed boobytrapped! A heat sensor was placed on the pistol, reacting whenever someone was foolish enough to touch it. This triggers a chemical reaction within the pistol, allowing it to shoot you in the heart. You fall to the floor, reuniting with your uncle for the final time.\n\t\n\tYou are dead.\n",
+      "links": []
+    },
+    {
+      "pid": 43,
+      "name": "Discovery",
+      "text": "\t<<masteraudio stop>><<audio vanish play>><<set $mc = 0>><<set $input = \"\">>As you bust through another pair of wooden double doors, you sense that something isn't right. Where are the normal crowds of people you battle through on these locker laden hallways? Where is that one couple that is always wrapped around each other's waists? Where is that one teacher that always yells at students for the way they're dressed?\n\t\n\tYou scrambling morphs into a walk as your eyes scan the hallway. They're not here. No one is here. There is an unfamiliar silence that has captured these hallways. It's appressing almost, smoldering.\n\t\n\tThe warning bell rings. You still have to get to class! But as you try to pull yourself forward to head to class, a part of you resists. It feels like today will be different. A day you wouldn't be able to prepare. A day that will change your whole outlook.\n\t\n\t[[You explore the hallway for clues on where everyone is.|Explore]]\n\t[[You continue on your way to class.|Studious]]\n\n\t\n\t\n\t\n\t\n\t",
+      "links": [
+        {
+          "text": "You explore the hallway for clues on where everyone is.",
+          "destination": {
+            "name": "Explore",
+            "pid": 44
+          }
+        },
+        {
+          "text": "You continue on your way to class.",
+          "destination": {
+            "name": "Studious",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Explore",
+      "text": "\t You whip your head around the open hallway, trying to take in anything that could be considered a clue. The hallway is bare and the rooms are baren. The only part that seems off is the cleanliness of the place. No backpacks are lying around. No notebooks are lying on any desks. There are even no small pieces of corner paper on the floor. Nothing. The hairs on the back of your neck stand up. Where could everyone gone? You had to find out.\n\t \n\t You sprint from one building to the next, looking for any sort of message signaling where everyone had gone. You search every corner of these buildings, from emergency exits to the woman\u2019s bathrooms. Anything that might lend you a clue of what was going on. But, alas, building after building, you cannot find a trace of the missing people.\n\t \n\t You walk down the last hallway that has not been searched. All that there is here, besides a stretch of lockers, is the teacher's lounge and a computer lab. The computer lab has all its computers turned off and has a peaceful vibe coming from it. The teacher's longe's door is closed. None of the other doors were closed. None of them. Who closed this one? There must be a secret someone has been hiding from the world behind here. You were sure of it.\n\t \n\t [[You open the door and head into the teacher's lounge.|Teacher's Lounge]]\n\t [[You walk across the hallway and head into the computer lab.|Computer Lab]]",
+      "links": [
+        {
+          "text": "You open the door and head into the teacher's lounge.",
+          "destination": {
+            "name": "Teacher's Lounge",
+            "pid": 4
+          }
+        },
+        {
+          "text": "You walk across the hallway and head into the computer lab.",
+          "destination": {
+            "name": "Computer Lab",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Studious",
+      "text": "\tYou slide into the room L204 about a minute late. You go to apologize to the teacher and are stunned to find that no one is there. Your eyes drift towards the row of desks in the class room to find empty seats staring back at you. The plague of emptiness has spread to this classroom. \n\t\n\tSomething terrible must have happened. And you need to find out what. Part of you believes that something deeper, something sinister is actually in play. There was only one way to find out.\n\t\n\t[[You leave the to classroom explore the hallway.|Explore]]\n\t[[You wait like a good student for the teacher to show.|Waiting]]\n\n",
+      "links": [
+        {
+          "text": "You leave the to classroom explore the hallway.",
+          "destination": {
+            "name": "Explore",
+            "pid": 44
+          }
+        },
+        {
+          "text": "You wait like a good student for the teacher to show.",
+          "destination": {
+            "name": "Waiting",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Waiting",
+      "text": "\tAn hour has gone by. Still, no one has shown up to class. The professor\u2019s stand still is empty. Silence starts to creep into your thinking. You start to think about your whole day so far. Your mind plays back its mental reels. You are shocked when you cannot remember a moment today where you saw another being. How could this be? Something is very clearly wrong.\n\t\n\tPanic starts to fill you. What could have happened? You need to figure out what is going on.\n\t\n\t[[You go explore the hallway to find the truth.|Explore]]\n\t[[You wait for the bell to ring before heading to your final class of the day.|Rhythm]]",
+      "links": [
+        {
+          "text": "You go explore the hallway to find the truth.",
+          "destination": {
+            "name": "Explore",
+            "pid": 44
+          }
+        },
+        {
+          "text": "You wait for the bell to ring before heading to your final class of the day.",
+          "destination": {
+            "name": "Rhythm",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "Rhythm",
+      "text": "\tYou decide that no, you didn't need to solve this. You didn't need to go on a life-changing adventure. You didn't need to find out more about yourself as a person. You didn't need to figure out the mystery that surrounded your school, no. You were here for the education, for the learning. Nothing more, nothing less. So what if there was no one around? Your duty to go to your classes hadn't changed.\n\t\n\tAnd so, you put yourself on auto-pilot and wait for the bell to ring. And, when it does, you move down to your final class period of the day. Your footsteps echo around the empty hallway, reminding your ears that you were missing out on something big, but you didn't let that deter you from sitting in the same seat you always did for your final class. Nope, you might be dull in spirit, you were certainly not going to be dull in mind.\n\t\n\t<<linkreplace \"No, your mind is set on the idea of being the perfect student. Why would you change your mind now?\">>You realize that you're missing out on something big and leave the classroom<</linkreplace>>\n\t[[You sit and wait patiently for the day to end.|School Ends]]",
+      "links": [
+        {
+          "text": "You sit and wait patiently for the day to end.",
+          "destination": {
+            "name": "School Ends",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "School Ends",
+      "text": "\tThe class ends without anything happen. A stiff breeze almost knocked over one of the potted plants next to the teacher's desk, but that is it. But, for some reason, you were still content with your decision to come to class. Something exciting could have happened and you would have missed it! Like the plant actually falling over. That would have been a shocker.\n\t\n\tYou wait for your older sister out in the parking lot to swing by after work and pick you up. She shows up on cue and you hop inside into the passenger seat.\n\t\n\t\"How was school today?\" she says as you buckle yourself in for the ride home.\n\t\n\tYou say,\n\t\n\t[[\"Everyone at school disappeared! Quick, sis, we need to go investigate!\"|Ignorance Is Bliss]]\n\t[[\"It was all normal for the most part. Minus the part of the school being spontaneously evacuated.\"|Ignorance Is Bliss]]\n\t[[\"You ever get the feeling that you're missing out on something because you put the wrong things in life first?\"|Ignorance Is Bliss]]",
+      "links": [
+        {
+          "text": "\"Everyone at school disappeared! Quick, sis, we need to go investigate!\"",
+          "destination": {
+            "name": "Ignorance Is Bliss",
+            "pid": 49
+          }
+        },
+        {
+          "text": "\"It was all normal for the most part. Minus the part of the school being spontaneously evacuated.\"",
+          "destination": {
+            "name": "Ignorance Is Bliss",
+            "pid": 49
+          }
+        },
+        {
+          "text": "\"You ever get the feeling that you're missing out on something because you put the wrong things in life first?\"",
+          "destination": {
+            "name": "Ignorance Is Bliss",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Ignorance Is Bliss",
+      "text": "\t\"Good,\" you say.\n\t\n\tYou would come back to school tomorrow with everyone back in their normal routines. The mass disappearance never occurs nor mentioned again. As your final semester of school unravels, you end up being valedictorian that year, since you never did waver from your studies. You were the only one with perfect attendance after all.\n\t\n\tCongrats!\n",
+      "links": []
+    },
+    {
+      "pid": 50,
+      "name": "Door Time",
+      "text": "\tYou come to a set of two doors. One is painted a bright red and the other is a serene blue. You\u2019ve heard about these doors before. They are legends whose tales are only told with much skepticism in their voice. They doubt the words they\u2019re speaking, only spreading an odd story that they want to believe is true. That deep down inside they want to believe. And, it turns out that deep down inside this building, the legends are true.\n\t\n\tBehind the red door is the cure for a very rare disease, Trismus Pseudocamptodactyly Syndrome. Your uncle Haggard has been pained greatly by this disease all this life, trying to fight against the constant pain it brings him as he presumes his one true dream, becoming an opera singer. This disease is the only wall between him and calling.\n\t\n\tBehind the blue door is $10,000. They once held a lottery here on campus, but then the winner of the lottery never showed up. Some people think she died before she could arrive, some people believe the message was burned so she would never know. It doesn\u2019t matter why she never showed up. All that is critical here is that the money still lays behind that door.\n\t\n\tAs you think between the two options, you realize that, while the ten thousand dollars would be lovely, the happiness of a loved one would be more so. For you, the sight of seeing the man who was the primary male role model finally achieve his life goal would be priceless.\n\n[[You choose the red door.|Cure For Our Troubles]]\n[[You choose the blue door.|Temptations]]",
+      "links": [
+        {
+          "text": "You choose the red door.",
+          "destination": {
+            "name": "Cure For Our Troubles",
+            "pid": 14
+          }
+        },
+        {
+          "text": "You choose the blue door.",
+          "destination": {
+            "name": "Temptations",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Stabbed",
+      "text": "\tOh.\n\t\n\tOh, okay. I mean, I appreciate you being up front with me. But damn. Okay. If you really feel that way, then leave.\n\t\n\tI...I might need a few moments though. I was worried that you were thinking that, which is why you came this way. That my skills weren't up to the standards that you'd like. And then my worries were proven correct. And, while it is nice to know, it still stings.\n\t\n\tJust... just go. You don't want to be here. If this isn't entertaining for you, don't bother with it. Leave. I'll... I'll be here with my lame story.\n\t\n\t<<timed 50s>><<goto \"An Ode To Kevin MacLoed\">>\n<</timed>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "An Ode To Kevin MacLoed",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "No Chance",
+      "text": "\tDon't answer that, you have already. Fine. Leave then. I don't care. I can find another main character, another person who I can lead to once in a lifetime glory. Another person whose name will just be written down and then forgot. A forgettable, unremarkable name, with nothing behind it. Like Claude, that's a name bland name that's-\n\n\tActually, scratch that. Claude is actually a decently unique name. I cannot imagine a crowd of Claudes. It's far too personalized. It would get jarring to the reader if just two of more stories shared the name Claude. No, no that name wouldn't work. How about Brad or...how about Stanley? I can clearly imagine myself staring into a crowd of Stanley, all forgettable in their own unique way.\n\n\tAnd, unless you want to claw your way back into the spot I carved out for you, that's where you'll stand, nameless and alone, forever regretting the one chance you had at being an actual name in the crowd.\n\t\n\tUntil you change your mind, you are dead to me.",
+      "links": []
+    },
+    {
+      "pid": 53,
+      "name": "StoryMenu",
+      "text": "[[Credits|An Ode To Kevin MacLoed]]",
+      "links": [
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "An Ode To Kevin MacLoed",
+            "pid": 30
+          }
+        }
+      ]
+    }
+  ]
+}

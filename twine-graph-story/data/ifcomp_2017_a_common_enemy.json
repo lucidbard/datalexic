@@ -1,0 +1,539 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "0001",
+      "text": "|cogereltelefono>[$vibra[The phone rings.]]\n\n(click-replace: ?cogereltelefono)[$al[\u2013 Hi Roy, it's your brother, Al. I called you at home and you weren't there. Who are you screwing?]\n\n$roy[\u2013 If you weren't my brother, Al, I'd tell you your mother, but she was a saint.]\n\n$al[\u2013 Listen, Roy... Uncle Sam is pretty sick. He's had a relapse and we had to take him to the hospital. He wants to see you.]\n\n$roy[\u2013 So that grumpy old man wants to see me again, huh? Tell him that in a couple of months I'll see him in hell!]\n\n|colgar>[Hang up.]]\n\n\\(click-replace: ?colgar)[Roy hung up his phone and threw it on the floor in rage. The hotel carpet cushioned the blow but the battery and the deck flew in different directions. \n\nWith a gesture of frustration, he bent down to look for the parts of the cell phone under the table in the room. This gesture caused her lungs to shrink and she had one of those punctured cough attacks coming from the bottom of her chest, lately accompanied by the bitter taste of $sangre[blood].\n\n|despiertachica>[(Continue...)]\n]\n(click-replace: ?despiertachica)[\n\\$chica[\u2013 Are you all right?] -The efforts of $roy[Roy] to breathe woke up the $chica[girl] that was in bed.\n\n$roy[\u2013 \u00a1Absolutely!] -He said trying to keep his composure-. $roy[I left the other half on the bedside table. Now get out of here, please.]\n\n$chica[\u2013 Do you need help?] -said the girl scared to see $sangre[a trail of blood running through Roy's fingers].\n\n$roy[\u2013 If you knew anything about medicine, I don't think you would work at the club where I found you last night. Leave me alone and get out of here!] -He spat as he sat on the floor trying to catch his breath.\n\n|buscabateria>[(Look for the battery of the phone)]\n]\n(click-replace: ?buscabateria)[Once recovered from the $sangre[cough attack], continued to crawl around the hotel floor looking for the different parts of the cell phone while the $chica[20-year-old blonde girl], with a name that $roy[Roy] never cared about, left the room, visibly offended, as she put her high heels down the hallway.\n\n$roy[Damn it... Of all the whores in town, I went to get the one that wanted to be a nurse! ]-whispered grimly from the ground.\n\nOnce he found the battery and cell phone, he put it back in its place, sat on the edge of the bed and turned it back on. A hidden number rang out instantly.\n\n|rechazar>[Reject the call or ][[Pick Up->0002]]\n]\n(click-replace: ?rechazar)[With a gesture of resignation he rejected the incoming call, but as expected, the phone rang again. And he knew it wasn't going to stop.\n\n]\n\n\n",
+      "links": [
+        {
+          "text": "Pick Up",
+          "destination": {
+            "name": "0002",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "startup",
+      "text": "{\n\t(set: $roy to (color: #0bb500))\n\t(set: $al to (color: #dc5500))\n\t(set: $chica to (color: #ea25d6))\n\t(set: $sangre to (color: red))\n\t(set: $nat to (color: #a453f7))\n\t(set: $abe to (color: #a6c700))\n\t(set: $seti to (color: #c78361))\n\t(set: $presi to (color: #05afc3))\n\t(set: $ruso to (color: #6b7fec))\n\t(set: $vibra to (text-style: \"shudder\"))\n\t(set: $italic to (text-style: \"italic\"))\n}",
+      "links": []
+    },
+    {
+      "pid": 3,
+      "name": "Titulo Principal",
+      "text": "(align:\"=><=\")[#A Common Enemy\n\n|continuar)[Continue]\n\n(link-repeat: \"New Game\")[{\n\t(if: (saved-games:) contains \"Slot A\")[\n\t\t(if: (confirm: \"Starting over again will erase the advances in the game. Are you sure about that?\"))[\n\t\t\t(go-to: \"0001\")\n\t\t] \n\t] (else:)[(go-to: \"0001\")]\n}]\n\n[[Other games->juegos]]\n\n[[Credits->creditos]]\n\n]\n{\n\t(if: (saved-games:) contains \"Slot A\")[(show:?continuar)]\n\t(click: ?continuar)[\n\t\t(load-game:\"Slot A\")\n\t]\n}",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "0001",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Other games",
+          "destination": {
+            "name": "juegos",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "creditos",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "0002",
+      "text": "$al[\u2013 Hi Roy, it's your brother, Al. I called you at home and you weren't there. Who are you screwing?]\n\n$roy[\u2013 If you weren't my brother, Al, I'd tell you your mother, but she was a saint.]\n\n$al[\u2013 Roy, it's important. Uncle Sammy's sick, the situation is pretty critical. He specifically asked for you.]\n\n|desvelallamada>[(Continue...)]\n\\(click-replace: ?desvelallamada)[$roy[Roy] didn't have a brother. And neither had an uncle named Sam. However, he knew what he had to answer word by word. He also knew where he was called from and who was that uncle of his who was so sick whenever he answered the phone. They had been taught it during his first year of instruction in the late 1960s.\n\n|preguntacuelga>[\u00bf|preguntarporsam>[Ask] or |colgardenuevo>[hang up again]?]\n\\]\n\\|resignacion)[He wanted to hang up the phone again, but he knew they wouldn't leave him alone...\n\n]\n\\|respuestapreguntaporsam)[\n\\$roy[\u2013 And what's that important to Uncle Sammy to steal one of my last days around here? I'd rather spend my time with a hooker and raid the hotel's minibar than lose another minute for that bastard.]\n\n$al[\u2013 I'm sorry, Roy. I know this is a very difficult time for you...]\n\n$roy[\u2013 Difficult? You have no idea. Two months ago they gave me four of life, and from what the doctor said, I shouldn't count on the last two to have fun in a big way, I don't know if you get me. It's not gonna be nice, Al.]\n\n$al[\u2013 I'm sorry to hear that, Roy, but if Uncle Sam is not operated urgently, maybe you and I won't be in town for more than a week.]\n\n|unasemana>[(Continue...)]\n\\]\n{\n\t(click: ?colgardenuevo)[\n\t(replace: ?preguntacuelga)[]\n\t(show: ?resignacion)\n\t(show: ?respuestapreguntaporsam)]\n\t(click: ?preguntarporsam)[\n\t(replace: ?preguntacuelga)[]\n\t(show: ?respuestapreguntaporsam)]}\n(click-replace: ?unasemana)[\n$roy[Roy] backed down and fell on the bed. It had been very hard to accept the news of the metastases and the process that would have to happen before he died, at least for natural causes. He had at least another month and a half to enjoy the money he had earned by devoting his life to the Intelligence Service, even sacrificing his personal life on the way.\n\n$roy[\u2013 A week?]\n\n$al[\u2013 Yes. I wouldn't have called you if it wasn't strictly necessary, and you're the best at this. You know how young people are now... They do a master's degree and think they're the fucking Master of Puppets. But you and I, Roy... we've done great things for this... Uncle Sammy.]\n\n$roy[\u2013 I have to think about it.]\n\n$al[\u2013 Think about it on your way to the hospital. A car is waiting for you outside the hotel. See you in a few hours.]\n\n|colgartelefono>[Hang up the phone.]\n]\n(click-replace: ?colgartelefono)[\nRoy hung up the phone. It seems there was no room for negotiation. He went to the bathroom and washed his face, scrubbing hard to remove $sangre[a thread of dried blood] that fell from the corner of his lips. \n\nEvery time he looked in the mirror he seemed to have lost a couple of pounds. He wasn't so thin since he was thirty, although the skin color and appearance were totally different. He stopped feeling sorry for himself and decided to see what Uncle Sam wanted from him.\n\n[[Exit the room.->0003]]\n]",
+      "links": [
+        {
+          "text": "Exit the room.",
+          "destination": {
+            "name": "0003",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "0003",
+      "text": "In the lobby of the hotel there was a man with a plaid shirt and sunglasses reading the newspaper. \n|llegarecepcion>[\n|acercarsecorreo>[Go towards him] or |pagarhotel>[talk to the hotel reception desk.]]\n{\n\t(click-replace: ?pagarhotel)[\n\t\t(replace:?llegarecepcion)[]\n\t\t(show:?irarecepcion)\n\t\t(show: ?entrarencoche)\n\t]\n\t(click-replace: ?acercarsecorreo)[\n\t\t(replace:?llegarecepcion)[]\n\t\t(show: ?iracorreo)\n\t\t(show: ?entrarencoche)\n\t]\n\t\n}\n\\|iracorreo)[$roy[Roy] approached him and without saying a word the man got up and left the reception together.]\n\\|irarecepcion)[$roy[Roy] approached the hotel reception desk to pay for the room in the hope that the man would be just a clueless tourist. The reception boy consulted the computer and confirmed that everything was already paid for and that the minibar expenses had already been paid for, making the last hope of $roy[Roy] that all this was just a bad dream disappear. He stepped forward and without saying a word, the man got up and left the reception together.]\n|entrarencoche)[\nThe car was a black sedan with the tinted windows as it used to be. He didn't even bother to ask the man in the plaid shirt what was so important or why they had called on him again. It was a simple courier. They never tell anything to the postmen.\n\n|tratardedormir>[Trying to get some sleep.]\n]\n(click-replace: ?tratardedormir)[\n\\$roy[Roy] took the opportunity to take a nap. \n\nAfter a few hours the car stopped waking $roy[Roy] up in the backseat. They had arrived at the hospital: the headquarters of the Intelligence Service. His old job of which he only had a bunch of stories left that he could never tell anyone and a pension to spend relatively well during his last months of life. \n\nAt the door was waiting $al[Al], a 50-year-old Irishman who had been $roy[Roy]'s last boss at the agency and who signed his retirement. They got along very well and had shared many nights of rum and whiskey after work.\n\n|saludaraAl>[Say hi to $al[Al].]\n]\n(click-replace: ?saludaraAl)[\n\\$al[\u2013 Roy, I'm glad you came]-he said, holding out his hand.\n\n$roy[\u2013 Hey, Al, you look great. You've lost some hair, even though it was about time! At your age, few of us kept the gray hair.]\n\n$al[\u2013 You've always been a grumpy old man, Roy.] -he said with a smile and patted him on the back, that caused Roy to cough uncontrollably and spit $sangre[some blood].\n\n$roy[\u2013 You're one of the few bastards in this agency I could waste a few hours for just to tell you face-to-face to leave me alone.] -Roy said amidst coughs and covering his mouth with a handkerchief that gradually turned $sangre[red].\n\n$al[\u2013 Boy, I didn't expect to see you like this. Was it true what you said on the phone?]\n\n$roy[\u2013 To be the fucking Intelligence Service, you seem pretty surprised. The doctor at our insurance agency told me that I only have a couple more weeks to try and bang as many strippers as I can before I start breathing through a machine.]\n\n$al[\u2013 We knew you were sick. ]-he said as they entered the building and headed for the security checkpoints.-, $al[but it's not the same to read it in a medical report than...]\n\n$roy[\u2013 Don't worry about the blood, you end up getting used to it. It's like when you have an old car that loses oil. I promise not to stain your suit.]\n\n[[Enter the Agency.->0004]]\n]",
+      "links": [
+        {
+          "text": "Enter the Agency.",
+          "destination": {
+            "name": "0004",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "0004",
+      "text": "After passing the security scanner, they headed for the elevators. \n\\{\n\t(set: $pisoascensor to 9)\n\t(set: $videoascensor to false)\n}\n\n|mensajeascesor>[(text: \"The elevator's on the floor number \" + (text:$pisoascensor)).]\n\\{\n\t(live: 2s)[{\n\t\t(set: $pisoascensor to $pisoascensor - 1)\n\t\t(if: ($pisoascensor is 0) or ($videoascensor is true))[{\n\t\t\t(stop:)\n\t\t\t(replace: ?mensajeascesor)[|entraascensor>[Enter the elevator.]]\n\t\t}] (else:)[{\n\t\t\t(replace: ?mensajeascesor)[(text: \"The elevator's on the floor number \" + (text:$pisoascensor)).]\n\t\t}]\n\t}]\t\n}\n\\(click: ?entraascensor)[\n\\(replace: ?mensajeascesor)[]\n\\When it arrived they entered and after passing the card through the reading band, he marked the 37th floor.\n\n$roy[\u2013 Wow, Al! 37th floor. You must be so deep shit. I remember I've only been on that floor three times in my entire career] -Roy said amusingly.\n\n$al[\u2013 This one's probably worse than any of the ones you've been through] -commented Al as he bit his lower lip.\n\n$roy[\u2013 Come on, Al! Can't be worse than the Apollo thing with the burned videotapes! Fuck! They managed to send those guys to the moon and they didn't give them a camera in conditions, can you believe it? Brainiacs...] -$al[Al] didn't even raise his eyes and answered with an unrecognizable guttural sound.\n\nThey reached the 37th floor and the doors opened. That was the plant where the international crisis committees were created. It was reserved for situations that years later, whether they went well or badly, would appear in the history books.\n\n|recordar>[Remember the old times.]\n]\n\n(click-replace: ?recordar)[\n\\The first time Roy had been there, he had only been with the agency for a few years and was in his twenties. It was the late 1960s, and the space race was at its peak. One of the Apollo missions had arrived on the Moon and recorded everything. The problem was that when they checked the tape on the shuttle they couldn't see anything. \n\nApparently the engineers had not taken into account that direct radiation exposure on the Moon without atmosphere or electromagnetic field would veil the film. They had been on the Moon, but without any evidence to show the world they would never be ahead of the Russians.\n\n$roy[Roy] took care of almost everything on that occasion. From the recordings, the press conference, the world presentation, the campaign to spread the images around the world... Even to generate the conspiracy groups that gave even more credibility to the version they had created themselves.\n\nFrom then on, he got a position of responsibility in the agency dealing with campaigns of more or less importance. Some of them are capable of collapsing countries like Haiti, Colombia or more recently Argentina.\n\n[[Enter the special ops room.->0005]]]",
+      "links": [
+        {
+          "text": "Enter the special ops room.",
+          "destination": {
+            "name": "0005",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "0005",
+      "text": "They had changed the room since last time. Now it was full of huge screens and translucent crystals, but the table was the same as always. As he entered, he could see a half dozen people of the most diverse variety. He didn't know anyone there, but neither was it likely that they would meet again after the meeting was over..\n\n$al[\u2013 Gentlemen, we are all here] -said Al as he closed the door behind him-. $al[This is the man I told you about, Roy Watson.]\n\n$roy[\u2013 I guess once you walk into this room, there's no turning back] -Roy said resignedly and with the impression that he had been dragged into it in part against his will-. $roy[Anyway, what do we have here?] -he said, pointing to the other attendees.\n\n$al[\u2013 Roy, this is Abraham Alder of the Defense and Security Department, John Lee Brown of the White House Cabinet, Natalie Baker of |lanasa>[NASA\u2026]]\n\n(click: ?lanasa)[$roy[\u2013 NASA? Whoa, Al! When did we get back to the space race?] -Roy said with a big smile in his mouth.\n\n$al[\u2013 And these are\u2026 ]-continued Al, pointing out to the other attendees at the meeting.\n\n|restopresentaciones>[|teimporta>[Pretend that you care] or |indiferencia>[openly show your indifference].]\n\\]\n\\(click: ?indiferencia)[{\n\t(replace: ?restopresentaciones)[]\n\t$roy[I don't care who the rest of the boring, frightened brainiacs are. Does anyone want to tell me why we're here?]\n\t(show: ?postpresentaciones)\n}]\n\\(click: ?teimporta)[{\n\t(replace: ?restopresentaciones)[]\n\t$roy[\u2013 Glad to meet you all, whoever you are. I'm sure you're wonderful people and I don't know how lucky I am to be wasting some of my precious hours living locked up with you guys, but does anyone want to tell me why we're here?]\n\t(show: ?postpresentaciones)\n}]\n\n|postpresentaciones)[\n\\$al[Al] and $abe[Abe], the Department of Defense representative glanced sideways at each other and the latter  |sedestapaelmarron>[began to speak].\n\n$abe[\u2013 In the 1960s, in the middle of the space race, a long-term programme was designed. It was thought that by the end of the first decade of the new century there would already be |colonias>[colonies on the Moon and Mars], and a direct blow to the heart of Russia could destabilize their colonies, cause them to side with us and thus control all trade between them and Earth.]]\n\n\\(click:?colonias)[\n\t$roy[\u2013 If I hadn't lived at that time, I'd think those who devised that plan were complete idiots. Moon colonies and on Mars? How much damage the sixties did!]\n\n\t$abe[\u2013 The problem is that |elproyecto>[the project] went ahead and was launched, and has been operational all this time.]\n\\]\n\\(click: ?elproyecto)[{\n\t(show: ?queproyecto)\n}]\n\n\\|queproyecto)[\n$roy[\u2013 What project? What was launched?] \u2013 Roy was beginning to take an interest in the story. Deep down, he loved these situations of saving the world.\n\n$nat[\u2013 Are you familiar with the world of physics, Mr. Watson?] -NASA's woman, Natalie, jumped.\n\n|fisicaofisico>[\u00bf|fisica>[Physics] o |fisico>[physique]?]\n\\]\n\\\n\\(click: ?fisica)[{\n\t(replace: ?fisicaofisico)[]\n\t$roy[\u2013 We didn't use much physics in our campaigns, we left that to the army] -he said as he made a nod to Abe -. $roy[And please, call me Roy, our ages do not differ that much, honey.] -Natalie blushed and lowered her eyes in shame. She was not used to being blamed for her age and womanhood in a work meeting, let alone at such a high level.\t\n\t(show:?cupido)\n}]\n\\(click: ?fisico)[{\n\t(replace: ?fisicaofisico)[]\n\t$roy[\u2013 In our campaigns we used more physique, especially that of long legs and blonde hair. It was especially effective with some Eastern European presidents] -he said as he winked at Al -. $roy[And please, call me Roy, our ages do not differ that much, honey.] -Natalie blushed and lowered her eyes in shame. She was not used to being blamed for her age and womanhood in a work meeting, let alone at such a high level.\t\n\t(show:?cupido)\n}]\n\n|cupido)[$nat[\u2013 The Cupid project, as it was named in its day, consisted of creating an object of |peque\u00f1o>[a relatively small mass] and accelerating it to a fraction of the speed of light, eventually bringing it down to a city.]]\n\n\\(click: ?peque\u00f1o)[{\n\t(show: ?comodepeque\u00f1o)\n}]\n\\|comodepeque\u00f1o)[\n$roy[\u2013 Well, that doesn't seem like a very big problem, does it? If it is relatively small...]\n\n$nat[\u2013 The object created is a steel cone with a lead core to give it more mass ]-Natalie continued-$nat[, all run by a small computer, which calculates the trajectory in real time, and an ionic propulsion engine.]\n\n$roy[\u2013 How heavy is the piece of metal?]\n\n$nat[\u2013 Only the arrowhead has a mass of 150 tons.]\n\n|propuestas>[Propose that it has been |meteorito>[a meteorite] or |satelite>[a satellite].]\n\\]\n\\(click: ?meteorito)[{\n\t(replace:?propuestas)[]\n\t$roy[\u2013 Well, we can say it's a meteorite. That always worked out fine.]\n\t(show: ?velocidad)\n}]\n\\(click: ?satelite)[{\n\t(replace:?propuestas)[]\n\t$roy[\u2013 Well, we can say it's been a very large satellite that we've lost control of... Or a secret module forgotten for years. A half-truth is always more believable.]\n\t(show: ?velocidad)\n}]\n\n\\|velocidad)[\n$nat[\u2013 I think you don't understand.] -Natalie interrupted-$nat[, the Cupid project accelerates an object of 150 tonnes at a speed of |1000kms>[1.000 kilometres per second...]]\n\\]\n\n(click: ?1000kms)[{\n\t(show: ?distancia)\n}]\n\\|distancia)[$roy[\u2013 Are you saying that this piece of metal crosses the distance between Paris and Rome in one second? I'm not an expert in physics, but where the hell did you get the fuel for that?]\n\n$nat[\u2013 The ionic propulsion engine works by ejecting ions of a gas at high speed. This creates a small but constant acceleration in time, which after more than 30 years has brought it closer to this speed. In addition, the arrow, as it is called in the project, is describing hyperbolic orbits between the Moon, Mars and Venus, acquiring with each one of them an additional acceleration thanks to the gravitational attraction of the...]\n\n$roy[\u2013 Fine, fine, fine. We have a piece of iron that travels very fast. If that falls on Moscow, what damage could it do? A couple of blocks? A neighbourhood? Something like Tunguska?]\n\n$nat[\u2013 Mr. Watson] -said Natalie looking over her glasses at him.-$nat[, this object right now has a kinetic energy equivalent of 17.5 kilotons, something like the bomb that fell on Hiroshima at the end of the Second World War, with the aggravation that before releasing the total of its energy, it will penetrate several kilometers in the earth's crust, which will not only create a crater of several kilometers in diameter, but also an earthquake that will destroy everything that is more than one meter high in several kilometers.]\n\nThe room was quiet. $roy[Roy] looked around incredulously and the rest of the attendants, except $nat[Natalie], looked around her papers or on the floor trying to avoid Roy's gaze at the end of the table.\n\n[[(Continue...)->0006]]\n]",
+      "links": [
+        {
+          "text": "(Continue...)",
+          "destination": {
+            "name": "0006",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Salvar partida",
+      "text": "(if: (passage:)'s tags contains \"nosaves\")[]\n(else:)[(save-game:\"Slot A\")]\n",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "creditos",
+      "text": "This interactive science fiction is part of $italic[Histories for Androids]. You can find the original story and other stories at  |historias>[Histories for Androids].\n\nYou can also play graphic adventure |holmes>[Holmes O'Bedlam]!\n\n[[Back to main menu->Titulo Principal]]\n(click: ?historias)[{\n\t(goto-url: \"https://historiasparaandroides.wordpress.com/descargar-e-books/\")\n}]\n(click: ?holmes)[{\n\t(goto-url: \"https://play.google.com/store/apps/details?id=com.watsonnotes.holmesobedlam\")\n}]",
+      "links": [
+        {
+          "text": "Back to main menu",
+          "destination": {
+            "name": "Titulo Principal",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "0006",
+      "text": "$roy[\u2013 But what the hell were you thinking of?] -he said taking his hands to his head.\n\n$nat[\u2013 Sir] -Natalie responded firmly-$nat[, the Space Agency in collaboration with the Army and your own Agency developed this project many years ago. So many, that none of us here got to work on it. But now it's up to us to fix this problem in the best possible way.]\n\n$roy[\u2013 Well, let's tell the engine computer, the one with the pump glued on it, to deviate and pass by] -Roy said knowing that if it was that simple, someone would have done it already.\n\n$nat[\u2013 In the late eighties, with the end of the space race and the imminent fall of the Berlin Wall and the USSR, it was decided to end the Cupid project and stop it, but it was |imposible>[impossible].]\n\n\\(click: ?imposible )[{\n\t(show: ?comoimposible )\n}]\n\\|comoimposible)[\n$roy[\u2013 What do you mean by impossible?]\n\n$nat[\u2013 The law of relativity that Einstein formulated says that time varies depending on the relative velocity at which two objects move. When we wanted to communicate with the on-board computer to send him the abort signal, it had already acquired such speed that his internal clock was not going at the same speed as ours, and it was impossible for us to communicate with it. We have been able to create a radar to pick up the current signal, but we can't send it any signal because we don't know its position. It is so small and so fast that it is virtually undetectable.]\n\n$roy[\u2013 What a bunch of brainiacs! We have our presidents signing nuclear non-proliferation treaties and whilst you are making a bomb like the one in Hiroshima that could fall on Moscow, you don't know when...]\n\n$al[\u2013 Actually, |preguntacuando>[we do know when], Roy] -said Al interrupting him-. $al[That's why we're here today.]\n]\n\n\\(click: ?preguntacuando )[{\n\t(show: ?respuestacuando )\n}]\n\\|respuestacuando)[$roy[\u2013 Oh, right? And tell me, Al. How long before we have the honor of starting the first nuclear war in human history?]\n\n$al[\u2013 Three days.]\n\nThe entire room fell silent and some of the attendees seemed to turn white for a moment.\n\n|opciones3dias>[|enfadarte>[Get mad] or [[abandon all hope->00072]].]\n\\]\n\\(click: ?enfadarte )[{\n\t(replace:?opciones3dias )[]\n\t(show: ?3dias )\n}]\n\\|3dias)[$roy[\u2013 Three days\u2026 ]-Roy said visibly disappointed-$roy[. Couldn't you have waited a couple of months until I had died of cancer? No! You have to kill me and half the planet with a goddamn nuclear war! The show is much more impressive, there is no comparison! Hospital bed or nuclear explosion? Much better now, gentlemen! Shall we order some pizzas for when the party starts?]\n\n$al[\u2013 Roy, that's enough ]-Al sttoped him-$al[. We're here precisely because we have to stop this and you can die at last in your damn hospital and leave us alone.]\n\n$roy[-All right... Let's see, Is it possible to intercept the object before it reaches Moscow? More importantly, why haven't we prepared this before?]\n\n$abe[\u2013 Honestly... ]-Abe stepped forward for the first time in conversation-$abe[, we were hoping that it would have hit an asteroid or that the solar winds would disable the on-board computer, it was most likely. But it doesn't seem to be the case. The project was designed to send a signal when the propeller module disengaged from the arrowhead. This signal has been picked up by one of our radars this morning. According to our calculations, we have a little less than three days before it reaches Earth.]\n\n$nat[\u2013 Answering your question, Mr. Watson] -said Natalie leaning on the wooden table-$nat[, it can't be stopped. An object with that energy would simply go through anything that got in its way. It will continue on its way until it pierces the earth's crust in the centre of Moscow.]\n\n$roy[\u2013 I don't know about you guys, but [[I need coffee->00071]]. Al, can you please take me to the vending machine? I'm sure they've changed it since the last time I was here.]\n]\n",
+      "links": [
+        {
+          "text": "abandon all hope",
+          "destination": {
+            "name": "00072",
+            "pid": 11
+          }
+        },
+        {
+          "text": "I need coffee",
+          "destination": {
+            "name": "00071",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "00072",
+      "text": "$roy[Roy] Roy knew that three days were not enough to create a campaign to avoid a war with Russia. His plans to spend his last days in a hospital receiving morphine until he was no longer himself and had lost contact with his body seemed increasingly distant. \n\nIt didn't matter if the Russians used nuclear, conventional or some weapons that only the secret service knew about. Within a few days, hospitals would begin to be crowded with people more likely to be cured than he would, and they would need all the rooms, sedatives and care available. Something that would never reach $roy[Roy], especially in the midst of the greatest war ever seen.\n\n$roy[- I need to clear my head] -he said as he walked to the door. \n\nWhen he came out, he quickly picked up the gun from the guard who was watching the entrance and |volverhab>[came back to the room].\n\n\\(click: ?volverhab)[{\n\t(show: ?dentro)\n}]\n|dentro)[$roy[- Is this why you brought me here, Al? To show me that my last days here were going to be a shit?] -he said as he pointed his gun at him.\n\nAll except $al[Al] and $abe[Abe] hid under the table in panic.\n\n$al[- Roy, calm down! What the hell are you doing?] -shouted Al. \n\n$roy[- Consider this a favor!]\n\n$roy[Roy] took the safety off the gun and started |disparar>[pulling the trigger]. Then, a thunderstorm rang through the room, followed by the screams and sobs of the people under the table. \n\\]\n\n\\(click: ?disparar)[{\n\t(show: ?muerto)\n}]\n|muerto)[$roy[Roy's body] fell to the ground in a blast. $abe[Abe] had pulled out his regular pistol and $sangre[shot him in the head]. Now he was lying with the gun in his hand and a smile on his face. He never had the courage to do it himself. He had tried several times, but he couldn't do it. However, he knew that a military would never let him down. It was a sure bet, they're programmed to do it.\n\nThree days later, the ground opened up in Moscow and a few days later, it opened up in half the world. No one could imagine what would come next. Very few would ever see it and none of them would be happy to have survived. \n\n[[Start all over again->0001]] or |volver>[go back to the meeting room]?\n\\(click: ?volver)[{\n\t(set: $destino to \"0006\")\n\t(set: $textodestino to \"the meeting room\")\n\t(go-to: \"VOLVER\")\n}]\n\\]",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "0006",
+            "pid": 10
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "VOLVER",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Start all over again",
+          "destination": {
+            "name": "0001",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "00071",
+      "text": "$roy[Roy] left the room followed by $al[Al] and $abe[Abraham] from the department of Security and Defense.\n\n$roy[\u2013 What's he doing here?] -Roy asked Al, nodding his head at the army man.\n\n$al[\u2013 Roy, don't be that rude. Abe is one of ours] -he said with a tone of complicity.\n\n$roy[\u2013 I don't know what we're gonna do, Al. Three days is nothing. With the Apollo thing, it took us months to prepare the whole campaign. Even now with the Internet, satellite communications, software programs... It took several weeks to prepare Argentina's campaign a few years ago.]\n\n$abe[\u2013 We could divert attention away on others. Maybe try to blame Iran or Pakistan and destabilize the area. That would even benefit us] -Abe said.\n\n|chinapakistan>[\u00bfCoul |iran>[Iran] o |pakistan>[Pakistan] work? \u00bfOr |niirannipakistan>[that's a bad idea]?]\n\\(click: ?iran )[{\n\t(replace: ?chinapakistan)[]\n\t(set: $pais to \"Iran\")\n\t(go-to: \"00082\")\n}]\n\\(click: ?pakistan )[{\n\t(replace: ?chinapakistan)[]\n\t(set: $pais to \"Pakistan\")\n\t(go-to: \"00082\")\n}]\n\\(click: ?niirannipakistan )[{\n\t(replace: ?chinapakistan)[]\n\t(show: ?pruebaconchina )\n}]\n\\|pruebaconchina)[\n\\$roy[\u2013 With all due respect, Abe, I don't think the Russians would believe that the Pakistanis are capable of throwing an object at 1,000 kilometres per second without first exploding in their balls. In addition, when they see that the explosion leaves no trace of radiation Iran, Korea and Pakistan will no longer be on the list of suspects. What if they decide to attack us?]\n\n$abe[\u2013 In theory they would have every right to do so. In the 1970s we signed an agreement that prevents us from creating this type of orbital weaponry.]\n\n$al[\u2013 What about China?] -said Al doubtful.\n\n|yquetalchina>[Could |china>[China] work? Or |tampocochina>[It's also a bad idea]?]\n\\]\n\\(click: ?china )[{\n\t(replace: ?yquetalchina)[]\n\t(set: $pais to \"China\")\n\t(go-to: \"00082\")\n}]\n\\(click: ?tampocochina )[{\n\t(replace: ?yquetalchina)[]\n\t(show: ?loschinosno )\n}]\n\\|loschinosno)[\n\\$roy[\u2013 The Chinese are more eager of us than the Russians] -said Roy shaking his head.\n\n$abe[\u2013 It seems unbelievable that at this point we're still playing |starwars>[Star Wars] with the Russians] -Abe said leaning against the wall.\n]\n\\(click: ?starwars )[{\n\t(show: ?txtstarwars )\n}]\n|txtstarwars)[\n\\$roy[\u2013 What did you say?] -Roy said squining.\n\n$abe[\u2013 That it seems absurd to me that after so many years and all the diplomatic efforts that have been made, we are still, as in the sixties and eighties, throwing rockets at each other and on the edge of a nuclear war.]\n\n$roy[\u2013 No, no] -said shaking his head-. $roy[The Star Wars thing... What if the missile wasn't launched from the Earth?]\n\n$al[\u2013 And then who'd have thrown it?] -Al said-. $al[If the Russians get blown up by a 15-kiloton bomb, I don't think they blame E. T. for it.]\n\n$roy[\u2013 Or maybe yes...] -Roy murmured-. $roy[I need answers!] -He said as he stepped back into the conference room-. $roy[Let's see, you, the NASA woman...]\n\n|nombres>[|natCat>[Cataline]? |NatAli>[Allison]? |Natrach>[Rachel]?]\n\\]\n\\(click: ?natCat )[{\n\t(replace: ?nombres)[]\n\t(show: ?mellamonat )\n}]\n\\(click: ?NatAli )[{\t\n\t(replace: ?nombres)[]\n\t(show: ?mellamonat )\n}]\n\\(click: ?Natrach )[{\n\t(replace: ?nombres)[]\t\n\t(show: ?mellamonat )\n}]\n\\|mellamonat)[\n\\$nat[\u2013 My name is Natalie] -she replied with a frown and visibly angry.\n\n$roy[\u2013 Whatever. When did you start listening to the aliens?]\n\n$nat[\u2013 We don't do that] -said Natalie with her face twistted.\n\n$roy[\u2013 Of course you do! That pointing antennas thing and listening for any extraterrestrial signals.]\n\n$nat[\u2013 I assume you mean |seti>[the SETI project]. NASA is collaborating to some extent, but it is not our project and...]\n]\n\\(click: ?seti )[{\n\t(show: ?encontradoalgo )\n}]\n\\|encontradoalgo)[\n$roy[\u2013 Yeah, yeah, okay. Did you find that it might remotely look like an alien?]\n\n$nat[\u2013 The WOW signal was detected in 1977, but has not been repeated. We thought it was a mistake...]\n\n$roy[\u2013 It works for me! Can you input the same signal into telescope readings? We'll make some modifications. I will tell you the dates when they should appear and how.]\n\n$nat[\u2013 I'd have to consult it...]\n\n$seti[\u2013 It won't be a problem] -said one of Natalie's companions sitting next to her, |cerebrito>[a young man with thick glasses and a few pounds of extra weight.].\n]\n\\(click: ?cerebrito )[{\n\t(show: ?enemigo )\n}]\n\\|enemigo)[\n$roy[\u2013 Excellent! I knew there was more than one brainiac in the room.] -Roy was starting to feel for the first time more alive than in the last 10 years-. $roy[John, that's your name, wasn't it?] \u2013 He said he was referring to the man in the President's Cabinet-. $roy[I need our president to make a statement.]\n\n$presi[\u2013 Sir, first we have to study the contents of the statement and talk to the president...]\n\n$roy[\u2013If you want to talk to your boss, do it. But tell him that if he doesn't read what we are going to prepare, the next thing he will read will be the declaration of war that Russia will send in the form of intercontinental missiles against our major cities.] -he said, pointing his finger at him-. $roy[Gentlemen, we are going to create [[a common enemy->00081]]. A scapegoat that will serve us to unite the interests of the entire human race and prevent the mother of all the wars known until now.]\n]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "00082",
+            "pid": 13
+          }
+        },
+        {
+          "text": "a common enemy",
+          "destination": {
+            "name": "00081",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "00082",
+      "text": "$roy[- What do you think, Al?] -asked Roy trying to guess some expression on his former boss's face-. $roy[Would the Russians believe it was $pais?]\n\n$al[- $pais has recently been very active on its borders and has conducted some long-range missile testing...] -Al looked at Abe -. $al[Could $pais launch a missile on Moscow?]\n\n$abe[- Not likely, but technically they could get to do it] -Abe didn't seem very convinced, but it was clear that was |unicoquetenian>[all they had]. \n\n\\(click: ?unicoquetenian )[{\n\t(show: ?sospechoso )\n}]\n|sospechoso)[$pais seemed like the perfect suspect, or at least the least bad one. $roy[Roy], $al[Al] and $abe[Abe] returned to the room and prepared the entire counter-espionage campaign with the President's Cabinet to send the Russians a possible threat from $pais on their own territory. \n\nThey did everything that used to be done and more. They published fake cables from embassies of $pais on anonymous Internet sites, forged satellite photographs and conversations of senior army officials of $pais and placed them on internal servers known to have access by Russian intelligence, and even publicly warned through embassies that U. S. citizens were not to visit certain Russian cities for possible terrorist attacks. \n\nWithin three days the land opened up in Moscow, and the campaign seemed to have worked. Russia began to bomb the main cities of $pais without compassion. However, |deberes>[the Russian secret service also did its homework]. \n\\]\n\n\\(click: ?deberes )[{\n\t(show: ?fin )\n}]\n|fin)[In a few weeks, the Russian president issued reports that ruled out the use of a nuclear weapon against Moscow, and accused the United States and its European allies, openly declaring war. \n\nNo one could imagine what would come next. Very few would ever see it, and none of them would be happy to have survived. \n\n[[Start over again->0001]] or |volver>[go back to the coffee machine]?\n\\(click: ?volver)[{\n\t(set: $destino to \"00071\")\n\t(set: $textodestino to \"the vending machine\")\n\t(go-to: \"VOLVER\")\n}]\n\\]",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "00071",
+            "pid": 12
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "VOLVER",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Start over again",
+          "destination": {
+            "name": "0001",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "VOLVER",
+      "text": "{\n\t(set: $tiempoespera to 10)\n\t(set: $videovisto to false)\n}\n|textoamostrar>[{\n\t(either: \n\t\t\"We are charging the fluzo condenser and calculating the time travel so that there is no temporal paradox that makes you meet your parents or become your own grandfather. This may take a while.\"\n\t\t, \"Between finding the door that leads us to this moment in the Ministry of time and getting permission to enter may take a little while. After all, it is a Ministry...\" \n\t\t, \"Recalculating the bosons, ions, axons, neutrons and a lot of other things that end in -ons to go back in time to the chosen point. This could take a few seconds.\"\n\t\t, \"Today is Groundhog Day and you know you're going to relive this day again and again. In a few seconds the alarm clock will ring again with Cher singing I've got you babe and you will wake up.\"\n\t)\n}]\n\n|mensajeascesor>[Wait |tiemporestante>[(text:$tiempoespera)] seconds to return to $textodestino.]\n\\{\n\t(live: 1s)[{\n\t\t(set: $tiempoespera to $tiempoespera - 1)\n\t\t(if: ($tiempoespera is 0) or ($videovisto is true))[{\n\t\t\t(stop:)\n\t\t\t(go-to: $destino)\n\t\t}] (else:)[{\n\t\t\t(replace: ?tiemporestante)[$tiempoespera]\n\t\t}]\n\t}]\t\n}\n",
+      "links": []
+    },
+    {
+      "pid": 15,
+      "name": "personajes",
+      "text": "$roy[roy]\n$al[al]\n$chica[chica] \n$sangre[sangre]\n$nat[nat]\n$abe[abe]\n$seti[seti]\n$presi[presi]\n$ruso[ruso]",
+      "links": []
+    },
+    {
+      "pid": 16,
+      "name": "00081",
+      "text": "That same afternoon, $presi[the President of the United States] was urgently convening national and international media for an extremely important subject. The press conference was to take place at the White House. There, minutes before the appearance, the cameras filled the room where everyone awaited the great news that was about to fall.\n\nAt the announced time, $presi[the President] came out and all the televisions and radios in the United States and many of the internationals were transmitting the message that $roy[Roy] had written in that room a few hours earlier.\n\n|escucharmensaje>[Listen to the message.]\n\\(click: ?escucharmensaje )[{\n\t(replace: ?escucharmensaje)[]\n\t(show: ?mensaje )\n}]\n\\|mensaje)[$presi[\u2013 Citizens of the United States of America, brothers from Latin America, Europe, Africa, Asia and Oceania. I am addressing all of you not as president of my country, but as one more member of our human species, to publicly announce that the National Aeronautics and Space Agency, NASA, in collaboration with several national universities, has managed to identify a sign of extraterrestrial origin. This signal, after careful study and analysis, has been determined not to come from any natural phenomena, but rather to be sent as a message of the imminent arrival of an intelligent life form to our planet from beyond our solar system.] -the room began to fill with murmurs of journalists-. $presi[At this moment I am putting our team of scientists at the disposal of any country in the world that would like to contact them to jointly study the analyzed signals and I call urgently an extraordinary meeting of the United Nations with the presidents of the countries that make it up for within two days, in order to determine beforehand the relationship and protocol of interaction with this possible new species, whether it is friendly or necessary an act of defense of the human race joined together.]\n\nAnd saying this, the president disappeared leaving behind a cloud of journalists hungry for more information. At the same time, |maquinaria>[the machinery that Roy had commanded to be created from the operating room] was put into operation.\n] \n\\(click: ?maquinaria )[{\n\t(show: ?quemaquinaria )\n}]\n|quemaquinaria)[The signals would be posted on the web for anyone to analyze and see a pseudo-intelligent sequence of signals open enough to be interpreted in any way. There were mathematical series, fractal forms and even the replication of messages previously sent to space by humans with certain non-accidental modifications.\n\nIn addition, he had already created several sites on the websites of movements in a multitude of languages for and against the supposed aliens. The seed was sown, |regarla>[now it had to be watered and watch it grow].\n]\n\\(click: ?regarla )[{\n\t(show: ?verlacrecer )\n}]\n|verlacrecer)[The next day there was no other issue in the media or on the streets. There were scientists who saw in this meeting a unique opportunity for technological exchange, other people walked the streets in white tunics waiting to be taken to the ships, media gurus announcing the end of the world and others who were gathering food for shelter in a bunker and preparing armed resistance to the arrival of interstellar pirates. Each and every one of these movements had come out of the $roy[Roy]'s head. Everyone assumed that the signal was true and that something was going to happen.\n\nThey had spent all night in the crisis cabinet room monitoring, listening and giving orders to the intelligence services to direct the emerging movements, some programmed and others spontaneous. $roy[Roy] knew very well how it worked. I had lived it before and it was always the same. At noon no one talked about anything else anymore. All the world's televisions, radios, newspapers, tried to agree on how to receive aliens. A lot of the media talked about shooting before asking. \n\nOthers warned of the possibility that they might be more technologically advanced than we are, and therefore armed with more lethal weapons than we are, and thus pleaded for peace with reservations. The different churches around the world also received the news in very different ways. From broadening their vision and accepting that all creatures are children of the same god, to considering them the gods of our ancestors, the creators of the pyramids or immaterial beings that communicated for a long time with enlightened people telepathically.\n\n$roy[\u2013 It's like a snowball] -Roy said meditating-.\n\n$al[\u2013 Do you think it'll work, Roy?] -asked Al as he sat beside him at the table while most of the crisis cabinet slept on benches leaning against the walls of the room.\n\n|quepiensas>[|creoquefuncionara>[Will it work] or |creoquenofuncionara>[no one will believe the improvised pantomime you've done with four scared brainiacs in just a few hours]?]\n\\]\n\\(click: ?creoquefuncionara )[{\n\t(replace: ?quepiensas)[]\n\t(show: ?funcionara)\n\t(show: ?descansar )\n}]\n\\(click: ?creoquenofuncionara )[{\n\t(replace: ?quepiensas)[]\n\t(show: ?nofuncionara)\n\t(show: ?descansar )\n}]\n\\|funcionara)[$roy[\u2013 I hope so, yes... I think so] -said nodding his head-. $roy[Looks like we've done it again.]\n\n$abe[\u2013 And what if they don't believe it?] -Abe asked from one of the armchairs.-. $abe[What will happen when they see that there are no more bombs? Won't it be suspicious?]\n\n$roy[\u2013 If the Russians don't believe it, we'd better be close to New York] \u2013Roy said, staring at the military man suspiciously-. $roy[That's where the Russian president is going to be at the UN meeting.]\n\n$al[\u2013 You're right, man. Very clever, Roy.] -said Al looking at him sideways.\n\n$roy[\u2013 You taught me that, Al. Keep your friends within reach of your voice, and your enemies within reach of your sword] \u2013he said without stopping to look at Abe.\n\n$al[\u2013 That's not mine. It's from a Chinese man from ages ago!]\n\\]\n\\|nofuncionara)[$roy[- I don't know, Al] -Roy sighed and rubbed his eyes with the palms of his hands-. $roy[This is the most improvised campaign we've ever made and the one we risk most if we screw up. The brainiacs you brought me are scared to death and on top of that, we don't have a plan B like we used to.]\n\n$abe[- Do you mean the Russians won't believe it?] -said Abe trying to scrutinize Roy's face to see what he really thought.\n\n$roy[- I sincerely hope so, but if they don't, we'd better be close to New York] -Roy said, staring at the military man suspiciously-. $roy[That's where the Russian president is going to be at the UN meeting.]\n\n$al[\u2013 You're right, man. Very clever, Roy.] -said Al looking at him sideways.\n\n$roy[\u2013 Keep your friends close by, within reach of your voice, and your enemies within reach of your sword] \u2013said without stopping looking at Abe.\n\n$al[\u2013 I taught you that!] -said Al with a half smile-. $al[If you knew it was a Chinese man who said it, I don't think you'd repeat it that much.] \n\\]\n\n|descansar)[$abe[\u2013 Let's pray that everyone thinks they're aliens and don't want to fuck with us, atomically speaking ]-said Abe, throwing his head back again to [[rest->0009]].\n]",
+      "links": [
+        {
+          "text": "rest",
+          "destination": {
+            "name": "0009",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "0009",
+      "text": "The day passed without much more news and according to the strict road map that they had set the night before. \n\nIn the afternoon, after eating something and washing a little in the toilets, the entire crisis cabinet was taken to New York, directly to the United Nations building. They arrived at night. They would not stay in any hotel, but set up a small camp at the United States headquarters inside the building, where delegations from the countries were already arriving. \n\n|diasguiente>[The next day] would be the first extraordinary meeting to discuss the alleged encounter with aliens, and almost all the countries that constitute the United Nations had confirmed the attendance of their highest leaders.\n\\(click: ?diasguiente )[{\n\t(show: ?prolama\u00f1ana )\n}]\n\n|prolama\u00f1ana)[In the morning, after sleeping on mattresses on the floor of the headquarters, the entire crisis cabinet got up before 7 a. m. in the morning. Partly because of the exciting situation they were going to be present during the day, and partly because $roy[Roy] had woken up $sangre[coughing and choking on his own blood] as he tried to breathe again.\n\nThe first plenary meeting of the day took place at 10 a. m., and the American committee of experts and scientists explained to the world the signals they had received and why these seemed to indicate imminent contact with an intelligent civilization in the coming days. \n\nSeveral technicians from the European Space Agency, directors of research centres of the most prestigious universities and people of recognized prestige in the world of science also appeared. All of them endorsed the possibility that the signs were real and, inspired by a decreasing mathematical series of time that accompanied all the signs, proclaimed the need to reach a worldwide consensus on how to act before this new race that was going to present itself before us.\n\nFrom the U. S. delegation room, $roy[Roy] and the entire team saw, as if it were a large carpet of dominoes falling on top of each other, the aliens they had created two days ago and how they began to be so real that it was sometimes difficult to come back to the truth and know they didn't exist. \n\n|iralatarde>[(Continue...)]\n\\]\n\\(click: ?iralatarde )[{\n\t(replace: ?iralatarde)[]\n\t(show: ?porlatarde )\n}]\n\\|porlatarde)[In the afternoon, a round of consultations began to find out the different opinions of the countries on the orientation of the relations that would be maintained in the first meetings. No one knew where the ship was going to land or what the country or countries chosen for such an important event would be. Whether they came to share technology and knowledge, take us as slaves, exploit our natural resources, study us like rats in a laboratory or just observe us from distance.\n\nEach country had a different viewpoint, although most of them were too ambiguous and did not want to be innocent or distrustful of a technologically much more advanced civilization. \n\nIt was decided late in the afternoon, before closing the round of consultations, to create action protocols so that, at the moment when the aliens come into contact with any of the countries present, there would be total transparency and communication with the rest, so that in the event of a threat, everyone could act as a single force. In this way, they also ensured that in the event of a peaceful visit, it was not only a nation that benefited from the technological exchange, breaking the current balance between the powerful and the developing countries.\n\n|iralanoche>[(Continue...)]\n\\]\n\\(click: ?iralanoche )[{\n\t(replace: ?iralanoche)[]\n\t(show: ?porlanoche )\n}]\n\\|porlanoche)[That night no one could sleep. The United Nations building was a hotbed. The leaders at all country headquarters were formulating and negotiating with their respective governments the rules of the future protocol that they were prepared to yield and those that they were not. \n\nHowever, in the room where $roy[Roy] was sitting, no one could sleep, but for another very different reason. Everyone knew that in a few hours a bomb would fall in Moscow without anyone knowing where it came from. It will not leave a visible trail, nor will it give anyone time to take refuge to save their lives. It will come from the sky, travel the distance from the Moon to Earth in less than a six and a half minutes and create a crater where there is now a city of people, families, stories, lifes.\n\n$al[\u2013 What's on your mind?] -said Al to Roy sitting next to him.\n\n$roy[\u2013 If this goes well, Al... Maybe this isn't so bad after all.]\n\n$al[\u2013 What are you talking about? Millions of people will die tomorrow and there's no one who can help it. But we can prevent millions more from dying in a couple of weeks.]\n\n$roy[\u2013 What if this were the beginning of an era without wars? It is possible that these victims are a necessary sacrifice for the world to stop creating useless wars from nothing. Wars that only serve to keep a bloodthirsty military industry alive. What if everyone now dedicated that money to prepare for the battle against aliens? And for the first time in history, thanks to a common enemy, we all felt like one family?]\n\n$al[\u2013 Roy, even if you're a macabre Machiavellian, deep down you may be a good man.]\n\n$roy[\u2013 No... If he were a good man, I'd care about the people who are about to die in Russia. We all die, Al. Sooner or later, but eventually we'll all die. The difference is that they will leave a few weeks before I do, and that before I leave they will connect me to a machine. They won't even notice. I almost envy them...]\n\n$al[\u2013 Get some sleep, Roy. Tomorrow will be a tough day.]\n\n\u00bf[[Sleep->0011]] or [[go for a walk->00101]]?\n{\n\t(set: $tierraquemada to false)\n}\n]",
+      "links": [
+        {
+          "text": "Sleep",
+          "destination": {
+            "name": "0011",
+            "pid": 19
+          }
+        },
+        {
+          "text": "go for a walk",
+          "destination": {
+            "name": "00101",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "00101",
+      "text": "$roy[Roy] left the operating room and went looking for a place to smoke. He knew he shouldn't do it. Halfway through each cigarette, he had to stop because the $sangre[blood that came from his coughing] didn't let him breathe, but the pleasure of the first puffs made up for $sangre[whatever followed]. After all, he had to get used to $sangre[drowning in his own blood].\n\nAfter a couple of turns in the corridors, he managed to enter a room where the cleaning supplies were kept and lit a cigarette. After a few puffs, he decided to turn it off before firing the smoke detection system. As he left the room, he saw $abe[Abe] walking hurriedly down the hall. \n\n[[Follow him->00102]] or [[go to sleep->0011]]?",
+      "links": [
+        {
+          "text": "Follow him",
+          "destination": {
+            "name": "00102",
+            "pid": 20
+          }
+        },
+        {
+          "text": "go to sleep",
+          "destination": {
+            "name": "0011",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "0011",
+      "text": "No one could sleep that night except $roy[Roy]. It wasn't the noise in the halls, or Roy's $sangre[occasional coughing] when he turned around. No one could stop thinking about the people who were about to die and that only they knew what was going to happen, without being able to warn anyone to get safe.\n\nThe next day the day began at 9 in the morning. All countries met again to discuss the protocols of action that should be followed by the country that first came into contact with aliens. All of them brought briefcases and folders full of papers with their notes and proposals.\n\nThe debate was tough. Everyone wanted to introduce their clauses and objections. Countries were calling for an examination of aliens for possible parasites or bacteria harmful to the human race. Others wanted to capture them and keep the ship to use the technology they brought and explore the universe with it. The most cautious, gave a series of recommendations on the personnel that should be present at the time of the meeting. From a biologist, a linguist, a high-ranking politician...\n\nAfter 12 o' clock in the morning, there was |movimiento>[a sudden movement in the corridors of the building]. \n\\(click: ?movimiento )[{\n\t(show: ?yahaocurrido )\n}]\n\n|yahaocurrido)[$roy[Roy] knew that it had already happened. They put in the different TV screens and constantly changed channels to see which one was the first to give the news. From the Russian delegation, a group of people ran to where their president was sitting and gave him the news. This, visibly affected, left the room and rushed to his headquarters.\n\nA few minutes later, the first of the televisions released a text release overprinted to the daily programming: $italic[\"Earthquake of great magnitude sweeps Russia. Millions affected \"]. A few seconds later, the rest of the world's TV channels specialized in news copied the headline. A few minutes later, a new one appeared: $italic[\"Communications cut off with Moscow by earthquake\"].\n\nAt that time, the president of Russia went out again and asked to appear publicly in front of the other states as a matter of urgency. In their presence he began his |discurso>[speech]:\n]\n\\(click: ?discurso )[{\n\t(show: ?eldiscurso )\n}]\n|eldiscurso)[$ruso[\u2013 Dear brothers and sisters. I've just been informed that the land has exploded near Moscow. We don't know what caused it or how it happened. Our satellites are sending us the first images of what happened. Where before the city of Moscow was, now there is only a large crater hundreds of meters deep. I beg the states here present to help my people in these moments of pain and loss. I also ask, and I will be the first to sign the resolution that I am proposing right now, for an end to any aggression and conflict that may exist between us. Aliens have shown that they don't come in peace, and their capacity for destruction is powerful. We must therefore join our forces to defend our planet and avenge our fallen ones.]\n\n|continuar>[(Continue...)]\n]\n\\(click: ?continuar )[{\n\t(if: $tierraquemada is true) [{\n\t\t(goto: \"00122\")\n\t}] (else:)[{\n\t\t(goto: \"00121\")\n\t}]\n}]\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "00122",
+            "pid": 28
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "00121",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "00102",
+      "text": "$roy[Roy] came out after $abe[Abe]. When he turned the corner, he couldn't see anyone. All the doors were office doors and other meeting rooms, except for a toilet in the middle of the corridor. \n\n$roy[Roy] came over and heard through the door. He could hear $abe[Abe] and another person speaking Russian in a very heated way. $roy[Roy] didn't know Russian, but to him this sounded like treason. \n\n\u00bf[[Enter->00104]] or [[to go tell Al->00103]]?",
+      "links": [
+        {
+          "text": "Enter",
+          "destination": {
+            "name": "00104",
+            "pid": 22
+          }
+        },
+        {
+          "text": "to go tell Al",
+          "destination": {
+            "name": "00103",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "00103",
+      "text": "$roy[Roy] rushed off to the operating room, but the noise of his shoes and an unexpected $sangre[coughing attack] betrayed him. $abe[Abe] and the other man came out of the restrooms and ran after him. On Roy's face they knew what he was going to do when they saw him, and they were not willing to let him do it. \n\nBetween the two of them they gagged him and took him to the same room where he had been smoking the cigarette a few seconds earlier. Abe had her mouth clogged, and $sangre[the blood from her nose didn't let him breathe].  \n\n$abe[- I'm really sorry, Roy] -said the soldier as he looked him in the eye \u2013$abe[, but there are too many lifes at stake. I can't let you and your bunch of nerds be the only hope for our country and the whole world.]\n\nSlowly Roy's sight became clouded and $sangre[his lungs began to burn from the shortness of breath]. Then a feeling of calm and quietness filled him completely. \n\nNo one looked for him and for a long time no one would find his body. What would happen in the next few hours changed the world forever. No one could have imagined what would follow. Very few would see it and none of them would be happy to have survived.\n\n[[Start over again->0001]] or |volver>[go back to the broom room]?\n\\(click: ?volver)[{\n\t(set: $destino to \"00101\")\n\t(set: $textodestino to \"the broom room\")\n\t(go-to: \"VOLVER\")\n}]",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "00101",
+            "pid": 18
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "VOLVER",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Start over again",
+          "destination": {
+            "name": "0001",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "00104",
+      "text": "$roy[Roy] entered the restroom with a threatening pose. He knew that he had nothing to do with the $abe[soldier], let alone if he was with the other man who, from $roy[Roy]'s experience, looked like he belonged to the secret service or the Russian army. \n\n$roy[- What the hell are you doing, Abe?] -Roy spat with contempt.\n\n$abe[- Roy, you better get out of here right now. We're on the same side] -said Abe as he stepped forward his right foot ready to strike.\n\n$roy[- The same side? Bullshit! What the fuck are you doing with the Russians?]\n\n$abe[- With all due respect, Roy... After the reports you've seen of their ships, do you really think aliens come in peace?]\n\n[[What aliens?->00105]] \n\n[[They come in peace.->00106]]\n\n[[They're ready for war.->00107]]",
+      "links": [
+        {
+          "text": "What aliens?",
+          "destination": {
+            "name": "00105",
+            "pid": 23
+          }
+        },
+        {
+          "text": "They come in peace.",
+          "destination": {
+            "name": "00106",
+            "pid": 24
+          }
+        },
+        {
+          "text": "They're ready for war.",
+          "destination": {
+            "name": "00107",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "00105",
+      "text": "$roy[- What aliens are you talking about, traitor?]\n\n$abe[Abe]'s face changed in a second from anger to resignation. The Russian with a quick movement threw him to the ground before $abe[Abe] could react and when $roy[Roy] was trying to get out the door $sangre[he was shot in the back of the head]. \n\nThe Russian secret service made sure their bodies were never found. What would happen in the next few hours changed the world forever. No one could have imagined what would follow. Very few would ever see it, and none of them would be happy to have survived.\n\n[[Start over again->0001]] or |volver>[go back to the broom room]?\n\\(click: ?volver)[{\n\t(set: $destino to \"00101\")\n\t(set: $textodestino to \"the broom room\")\n\t(go-to: \"VOLVER\")\n}]",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "00101",
+            "pid": 18
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "VOLVER",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Start over again",
+          "destination": {
+            "name": "0001",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "00106",
+      "text": "$roy[- Of course I do, Abe. We have to try to communicate with them to establish a peaceful relationship] -Roy improvised as he tried to understand the role of the Russian in this entire theatre. \n\n$abe[- Come on, Roy! You've seen the cannons on the ships. You also know that the Scorched Earth project is Earth's only chance of surviving this invasion.]\n\n|tierraquemada>[|deacuerdo>[Do you agree] or |nodeacuerdo>[do you think that's a mistake]?]\n\\(click: ?deacuerdo )[{\n\t(replace:?tierraquemada )[]\n\t(show: ?tierraquemadasi )\n}]\n\\(click: ?nodeacuerdo )[{\n\t(replace:?tierraquemada )[]\n\t(show: ?tierraquemadano )\n}]\n\\|tierraquemadasi)[$roy[- Do they agree with the plan?] -said Roy pointing to the Russian.\n\n$abe[- That's what we were dealing] -said Abe looking sideways at the Russian-. $abe[The Russian president has accepted the plan after examining the report of the ships that I... that we have presented to them. The victims on each side will be the same. Eye for an eye...]\n\n$roy[- Eye for an eye?] -Roy asked, though he knew what that meant.\n\n$abe[- That's it, Roy. As you yourself proposed] -said without stopping looking at the Russian-$abe[, aliens will not want to invade a planet full of nuclear bombs exploding everywhere, and public opinion will always think it's the aliens. We avoid an invasion and gain decades of world peace as we prepare for the next invasion.]\n\n$roy[Roy] knew deep down inside that &abe[Abe] was right. The Russians would never have believed that the Martians would attack only their capital, when it is neither the most populous city nor the best location for an invasion. However,$abe[Abe] had turned his plan into another perfect... and much more macabre. \n\n$roy[- Go ahead with the plan as expected, Abe.] -Roy said as he [[came out of the bathroom->0011]]-$roy[. Good job.]\n{\n\t(set: $tierraquemada to true)\n}\n]\n\\|tierraquemadano)[$roy[- Scorched earth? You want to destroy a planet to avoid... an invasion?] -cried Roy in rage. He couldn't stand that Abe had made his own plan behind everyone's back.\n\n$abe[- That's all settled, Roy. By this time tomorrow, everything will have started and the aliens will only find a planet full of nuclear explosions. ]\n\n$roy[- No, Abe. I can't let more people die than necessary.]\n\n$roy[Roy] turned around to go out, but he knew he wouldn't make it to the door alive. A buzzing sound came right behind him and $sangre[a hole opened in his head]. At least it was quick and he had a clean conscience.\n\nNo one would ever find his body. What would happen in the next few hours changed the world forever. No one could have imagined what would follow. Very few would ever see it, and none of them would be happy to have survived.\n\n[[Start over again->0001]] or |volver>[go back to the broom room]?\n\\(click: ?volver)[{\n\t(set: $destino to \"00101\")\n\t(set: $textodestino to \"the broom room\")\n\t(go-to: \"VOLVER\")\n}]\n]",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "00101",
+            "pid": 18
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "VOLVER",
+            "pid": 14
+          }
+        },
+        {
+          "text": "came out of the bathroom",
+          "destination": {
+            "name": "0011",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Start over again",
+          "destination": {
+            "name": "0001",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "00107",
+      "text": "$roy[- Of course not, Abe. You've also seen what they bring with them..]\n\n$abe[- That's why we're here. The Russians agree with the Scorched Earth project. The victims on each side will be the same. Eye for an eye...]\n\n$roy[- Eye for an eye?] -Roy asked, though he knew what that meant.\n\n$abe[- That's it, Roy. As you yourself proposed] -said without stopping looking at the Russian-$abe[, aliens will not want to invade a planet full of nuclear bombs exploding everywhere, and public opinion will always think it's the aliens. We avoid an invasion and gain decades of world peace as we prepare for the next invasion.]\n\n$roy[Roy] knew deep down inside that &abe[Abe] was right. The Russians would never have believed that the Martians would attack only their capital, when it is neither the most populous city nor the best location for an invasion. However,$abe[Abe] had turned his plan into another perfect... and much more macabre. \n\n$roy[- Go ahead with the plan as expected, Abe.] -Roy said as he [[came out of the bathroom->0011]]-$roy[. Good job.]\n{\n\t(set: $tierraquemada to true)\n}",
+      "links": [
+        {
+          "text": "came out of the bathroom",
+          "destination": {
+            "name": "0011",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "00121",
+      "text": "$roy[Roy] couldn't believe it. It had worked! Russia itself was proposing a global unification to end this new external threat. It was ironic that a project called Cupid, whose intention was to throw an arrow into the heart of the old USSR, made possible a new era without wars, the first in the history of humanity. \n\nSuddenly something broke inside of him. Something he didn't expect to feel for the rest of his life. He felt he'd done something good. That no one would ever know his name, nor would it appear in the history books, but that thanks to him, billions of people would cease to die in the world thanks to the end of the wars that had begun at that very moment. $roy[Roy] then, |lloro>[cried].\n(click: ?lloro )[{\n\t(show: ?tv )\n}]\n|tv)[Television was beginning to give information about what had happened in Moscow. The first images were beginning to arrive from ground zero. A large crater extended over the horizon and only the highest shots from helicopters were able to show the extent of the catastrophe. \n\nMany of the members of the crisis cabinet could not contain themselves and burst into tears, as if they had dropped the bomb themselves. $nat[Natalie, NASA's woman], was lying down on one of the mattresses on the floor crying heartlessly, squeezing her face against the pillow. \n\n|entonces>[Then...] \n]\n\\(click: ?entonces )[{\n\t(show: ?suelo )\n}]\n|suelo)[$vibra[...the ground shook for several seconds.]]\n\\(click: ?suelo )[{\n\t(replace: ?suelo)[...the ground shook for several seconds.]\n\t(show: ?sentido )\n}]\n\n|sentido)[$roy[\u2013 Did you feel that??] -said Roy.\n\n$seti[\u2013 Yeah] -said one of the brainiacs who came with NASA's woman-$seti[. It's probably a seismic movement coming from the Moscow explosion. The tectonic layers have suffered a strong imbalance, and need to be readjusted.]\n\nThen the corridors began to boil with [[people running from one side to the other->00131]].\n]",
+      "links": [
+        {
+          "text": "people running from one side to the other",
+          "destination": {
+            "name": "00131",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "00131",
+      "text": "$al[\u2013 What's going on?] -Al asked Roy.\n\n$roy[\u2013 Something's not right... |mirad>[ Look at the TVs again!]] -Roy shouted to the group.\n\\(click: ?mirad )[{\n\t(show: ?televisiones )\n}]\n\n|televisiones)[At that moment they all started looking through the channels without knowing exactly what was to appear.  \n\nSuddenly, in one of them, a new sign appeared above the images of the Russian crater: $italic[\u201c|nuevas>[New explosions] in several cities in the United States and Europe\u201d]. On another television you could read: $italic[\"Big cloud over Washington. Communications with the capital have been cut off \"].\n]\n\\(click: ?nuevas )[{\n\t(show: ?explosiones )\n}]\n|explosiones)[$al[\u2013 New explosions? It can't be] -said Al puzzled.\n\n$roy[Roy] looked incredulously at $abe[Abe, the head of the army] and without saying a word ran out of the meeting room and ran like a bat out of hell the halls and stairs to the council hall. He couldn't believe it. |verlo>[He wanted to see it for himself]. \n\nWho of those present there would have used the situation to make a worldwide attack? Would they have been theirs? Would $abe[the army] have dared to explode atomic bombs to make Russians believe they weren't the only ones attacked by aliens? He couldn't believe it. Even in their own territory? In their capital, Washington?\n]\n\\(click: ?verlo )[{\n\t(show: ?llega )\n}]\n|llega)[When he arrived in the room, some people were giving the news to the $presi[President of the United States] and the presidents of Germany, France, Poland and the United Kingdom. He was out of breath. He couldn't breathe at all. He began coughing but when he tried to inhale air all he could find was the $sangre[salty taste of blood that was spitting on the carpet]. He tried to look up and move on to $presi[his president] to warn him of the betrayal, but by his expression of surprise and shock he seemed to know already the situation.\n\nAt that time, $roy[Roy] saw how the $ruso[Russian president] was approaching the $presi[one of the United States] and shook his hands. $ruso[\"At this time, the most important thing is to stay together, as brothers and sisters, and prepare for the battle against aliens\"], he seemed to hear as they clenched their hands in sympathy. \n\nThen, as he turned around to return to the stand with firm step, $roy[Roy] seemed to see a small, almost imperceptible smile of satisfaction on his face.\n\n(align:\"=><=\")[[[THE END->Titulo Principal]]]\n]",
+      "links": [
+        {
+          "text": "THE END",
+          "destination": {
+            "name": "Titulo Principal",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "00122",
+      "text": "$roy[Roy] couldn't believe it. The macabre plan to detonate all nuclear weapons worldwide was underway. It was ironic that a project called Cupid, whose intention was to throw an arrow into the heart of the old USSR, made possible a new era without wars, the first in the history of humanity. \n\nBut at what price... A large part of the world's population washed away and made sick by radiation, continents and oceans polluted forever, a nuclear winter that would last for decades... $roy[Roy] then, |lloro>[cried].\n(click: ?lloro )[{\n\t(show: ?tv )\n}]\n|tv)[Television was beginning to give information about what had happened in Moscow. The first images were beginning to arrive from ground zero. A large crater extended over the horizon and only the highest shots from helicopters were able to show the extent of the catastrophe. \n\nMany of the members of the crisis cabinet could not contain themselves and burst into tears, as if they had dropped the bomb themselves. $nat[Natalie, NASA's woman], was lying down on one of the mattresses on the floor crying heartlessly, squeezing her face against the pillow.  \n\n|entonces>[Then...] \n]\n\\(click: ?entonces )[{\n\t(show: ?suelo )\n}]\n|suelo)[$vibra[...the ground shook for several seconds.]]\n\\(click: ?suelo )[{\n\t(replace: ?suelo)[...the ground shook for several seconds.]\n\t(show: ?sentido )\n}]\n\n|sentido)[$al[\u2013 Did you feel that?] -said Al.\n\n$seti[\u2013 Yeah] -said one of the brainiacs who came with NASA's woman-$seti[. It's probably a seismic movement coming from the Moscow explosion. The tectonic layers have suffered a strong imbalance, and need to be readjusted.]\n\nThen the corridors began to boil with [[people running from one side to the other->00132]].\n]",
+      "links": [
+        {
+          "text": "people running from one side to the other",
+          "destination": {
+            "name": "00132",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "00132",
+      "text": "$al[\u2013 What's going on?] -Al asked Roy.\n\n$roy[Roy] did not answer. He knew exactly what was going on. An eye for an eye, as he'd remembered. $al[Al] looked for $abe[Abe] with his eyes, but he had his eyes lost on the ground.\n\n$al[\u2013 Something's not right\u2026 |mirad>[Look at the TVs again!]] -shouted Al to the group.\n\\(click: ?mirad )[{\n\t(show: ?televisiones )\n}]\n\n|televisiones)[At that moment they all started looking through the channels without knowing exactly what was to appear.  \n\nSuddenly, in one of them, a new sign appeared above the images of the Russian crater: $italic[\u201c|nuevas>[New explosions] in several cities in the United States and Europe\u201d]. On another television you could read: $italic[\"Big cloud over Washington. Communications with the capital have been cut off \"].\n]\n\\(click: ?nuevas )[{\n\t(show: ?explosiones )\n}]\n|explosiones)[$al[\u2013 New explosions? It can't be] -said Al puzzled-$al[. You know what this is all about, Roy?]\n\n$roy[Roy]  looked at $al[Al] sadly, almost pitifully, and then looked at $abe[Abe].\n\n$al[- Abe! What's going on?] -cried Al to the officer, but he stood up without looking at Al and walked out the door without saying anything.\n\n$al[Al] |verlo>[left the room running], trying not to trip over the people who were running back and forth in the corridors. He couldn't believe it. He wanted to see for himself. Who of those present there would have used the situation to make a worldwide attack? Would they have been his owns? Would the army have dared to detonate atomic bombs to make Russians believe they were not the only ones attacked by aliens? He couldn't believe it. Even in their own territory? In their capital, Washington?\n]\n\\(click: ?verlo )[{\n\t(show: ?llega )\n}]\n|llega)[When he arrived in the room, some people were giving the news to the $presi[President of the United States] and the presidents of Germany, France, Poland and the United Kingdom. He was out of breath. He tried to look up and move toward $presi[his president] to warn him of the betrayal, but by his expression of surprise and shock he seemed to know the situation.\n\nAt that time, $al[Al] saw how the $ruso[Russian president] was approaching the $presi[one of the United States] and shook his hands. $ruso[\"At this time, the most important thing is to stay together, as brothers and sisters, and prepare for the battle against aliens\"], he seemed to hear as they clenched their hands in sympathy. \n\nThen, as he turned around to return to the stand with firm step, $al[Al] seemed to see a small, almost imperceptible smile of satisfaction on his face.\n\n(align:\"=><=\")[[[THE END->Titulo Principal]]]\n]",
+      "links": [
+        {
+          "text": "THE END",
+          "destination": {
+            "name": "Titulo Principal",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "juegos",
+      "text": "You can also play the adventure game |holmes>[Holmes O'Bedlam]! \n\n[[Back to main menu->Titulo Principal]]\n\n(click: ?holmes)[{\n\t(goto-url: \"https://play.google.com/store/apps/details?id=com.watsonnotes.holmesobedlam\")\n}]",
+      "links": [
+        {
+          "text": "Back to main menu",
+          "destination": {
+            "name": "Titulo Principal",
+            "pid": 3
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1365 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "print_Desert_pistol",
+      "text": "<<set $print = $print + \"I could not do it. I could not level the pistol at myself and, rather than face another moment in the bowels of that ghastly wreck, I fled, heedless, into the desert.\" + \"<br><br>\" + \"Even now, my frazzled mind plays tricks upon my senses, conjuring an impossible oasis in the distance, and an approaching ship in the other.\" + \"<br><br>\" + \"In this mad world, one fate is as good as another.\" + \"<br><br>\" + \"@@color:red;Editor's note: Maybe he\u2019ll die of thirst and spare me having to read the rest of the manuscript.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 2,
+      "name": "About_the_author",
+      "text": "Our esteemed author is a pilot of some small skill and no little ambition, hailing from the city of Dust in the high northern desert. His captain sparked a measure of literary ambition by lending him several well-loved dime novels to pass the time on the long run to the Crescent Cities. Assuming a satisfactory outcome, Ephram's legacy is detailed in the novel, [[Nothing Left to Wish For|http://www.amazon.com/gp/product/B00QU5PO9G]].\\n\\nAndrew G. Schneider always wanted to be a wizard when he grew up; now he makes magic with words. When not writing, he hunts the wild dust bunny and makes a mean pot of French onion soup. He lives in Washington, D.C., believes in unicorns, and is married to a wonderful woman who believes in him. He is the writer and designer of the upcoming text adventure game, [[Nocked! True Tales of Robin Hood|http://www.nockedthegame.com]], the author of the sand-slinging, swashbuckling adventure novel, [[Nothing Left to Wish For|http://www.amazon.com/gp/product/B00QU5PO9G]], and the Tales from a Coffee Shop Princess; [[Waiting for My Happily Ever After|http://www.amazon.com/gp/product/B017WJZZKG]] and [[Undercaffeinated and Overexposed|http://www.amazon.com/gp/product/B00QU6ITFQ]]. Find him on Facebook or check out his [[website|http://nockedthegame.com]].\\n\\nThe cover image & background are of the Rub al Khali desert. Photo by Nepenthes/[[Wikimedia Commons|https://en.wikipedia.org/wiki/File:Rub_al_Khali_002.JPG]].\\n\\n<<if not $About_the_author>>\\s\\n[[Ahem. I find my captain's logbook, set pen to paper...|logbook_start]]\\n<<endif>>\\s",
+      "links": [
+        {
+          "text": "Ahem. I find my captain's logbook, set pen to paper...",
+          "destination": {
+            "name": "logbook_start",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "print_Oasis_no_wolf",
+      "text": "<<set $print = $print + \"The oasis features a few sparse palms and a crystal-clear pool. I am tempted to eat and drink my fill, for though I have quenched my immediate thirst, I am far from sated.\" + \"<br><br>\" + \"The sandsea has quieted over time, and a curious set of tracks leads from this haven. As well, something glints in the bottom of the pool, if I can hold my breath.\" + \"<br><br>\" + \"@@color:red;Editor's note: Who cares about the constant updates on the minutia of the author\u2019s day to day life?@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 4,
+      "name": "print_a_bit_more_involved",
+      "text": "<<set $print = $print + \"I must consider that certain readers are rather fond of a good bodice ripper. Best to research appropriate prose when possible, for I was not as adept at untying knots as the dear lady had hoped. Also, I should skip the part whereupon she felt the need to instruct me in the manner of her comfort, having to this point had less than little experience in the matter.\" + \"<br><br>\" + \"Ah, there's the dawn...\" + \"<br><br>\" + \"@@color:red;Editor's note: On second thought, let\u2019s have someone else work this into a steamy romance scene. Maybe the author of My Pirate Love?@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "cave_description",
+      "text": "<<display print_cave_description>>\\s\\n<<if not $cave>>Before me is a great steel door set into the side of an imposing dune, shaped as if it were a great grinning skull. Perhaps it will [[open at my touch|cave_lost]], perhaps not. <<elseif $cave_count eq 1>>I am returned to this accursed cave, fie. I imagine that the door would [[open at my touch...|cave_lost]]. <<else>>The third time must be a charm, for my feet have once again found this [[terrible cavern|cave_lost]]. <<endif>><<if $escape>>I have but to [[make the attempt|cave_lost]], as the pirates will doubtless look unkindly upon me should I be caught anew.<<elseif $pirates>>I must [[make the attempt|cave_lost]]. My pirate captors are watching, cheering even, and they threaten to take my log for safekeeping should I not press onward.<<elseif $cave>>It appears the I have been [[wandering in circles|Desert_random]].<<else>>My only other option is the [[trackless desert|Desert_random]].<<endif>>\\n<<set $cave_count++>>\\s\\n<<if not $cave>>\\s\\n <<set $cave = true>>\\s\\n <<endif>>\\s",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_cave_description",
+            "pid": 23
+          }
+        },
+        {
+          "text": "open at my touch",
+          "destination": {
+            "name": "cave_lost",
+            "pid": 50
+          }
+        },
+        {
+          "text": "open at my touch...",
+          "destination": {
+            "name": "cave_lost",
+            "pid": 50
+          }
+        },
+        {
+          "text": "terrible cavern",
+          "destination": {
+            "name": "cave_lost",
+            "pid": 50
+          }
+        },
+        {
+          "text": "make the attempt",
+          "destination": {
+            "name": "cave_lost",
+            "pid": 50
+          }
+        },
+        {
+          "text": "wandering in circles",
+          "destination": {
+            "name": "Desert_random",
+            "pid": 58
+          }
+        },
+        {
+          "text": "trackless desert",
+          "destination": {
+            "name": "Desert_random",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "print_Cave_rug",
+      "text": "<<set $print = $print + \"One of the rugs turned out to be a fabled flying carpet from the Crescent Cities. It is now loaded with treasure and I am ready to part.\" + \"<br><br>\" + \"I would so, as I write these words, that my dear skeletal companion not stare so at me. His empty eyes seem to yearn, and I would imagine that he proffers that battered lamp from his cold, dead hands. As if he cannot see that I am well content with what I have. Away with you specter, away ghost, you shall have none of mine. I shall not touch your ruin, but depart wholesome and untempted by your devil\u2019s bargain. \" + \"@@color:green;<em>Note to self: determine, prior to publication, if untempted is a word.</em>@@\" + \"<br><br>\" + \"@@color:red;Editor's note: It is not.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "I_have_supplies_enough_1",
+      "text": "<<display print_I_have_supplies_enough_1>>\\s\\nI believed I saw a sail on the horizon, and expended a goodly quantity of flares in an attempt to attract the ship\u2019s attention. She did not approach, and as I write this, I worry that it was merely a mirage induced by the heat. Food and water are not as plentiful as I had hoped.\\n\\nThe silver lining is that I managed to force the door to the wizard\u2019s cabin. Though he, like the others, perished in the storm, his collection of [[books on runecraft|Desert_book]] could come in handy. I have also found, for purposes I refuse to contemplate, the [[captain's pistol|Desert_pistol]].\\n\\nPerhaps [[I can free the lifeboat|I_can_free_the_lifeboat]] from its sandy grave. But first, I must bury the bodies of my comrades.",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_I_have_supplies_enough_1",
+            "pid": 8
+          }
+        },
+        {
+          "text": "books on runecraft",
+          "destination": {
+            "name": "Desert_book",
+            "pid": 17
+          }
+        },
+        {
+          "text": "captain's pistol",
+          "destination": {
+            "name": "Desert_pistol",
+            "pid": 52
+          }
+        },
+        {
+          "text": "I can free the lifeboat",
+          "destination": {
+            "name": "I_can_free_the_lifeboat",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "print_I_have_supplies_enough_1",
+      "text": "<<set $print = $print + \"I believed I saw a sail on the horizon, and expended a goodly quantity of flares in an attempt to attract the ship\u2019s attention. She did not approach, and as I write this, I worry that it was merely a mirage induced by the heat. Food and water are not as plentiful as I had hoped.\" + \"<br><br>\" + \"The silver lining is that I managed to force the door to the wizard\u2019s cabin. Though he, like the others, perished in the storm, his collection of books on runecraft could come in handy. I have also found, for purposes I refuse to contemplate, the captain's pistol.\" + \"<br><br>\" + \"Perhaps I can free the lifeboat from its sandy grave. But first, I must bury the bodies of my comrades.\" + \"<br><br>\" + \"@@color:red;Editor's note: For someone in mortal peril, the author spends a lot of time writing when they should be doing.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "Start",
+      "text": "!<center>Shipwrecked</center>\\n!!<center>A short story of above average adventure in the Endless Desert.</center>\\n!!!<center>by Andrew G. Schneider</center>\\n\\n<center>[[I find my captain's logbook, set pen to paper...|logbook_start]]</center>\\n<center>[[About the author|About_the_author]]</center>",
+      "links": [
+        {
+          "text": "I find my captain's logbook, set pen to paper...",
+          "destination": {
+            "name": "logbook_start",
+            "pid": 39
+          }
+        },
+        {
+          "text": "About the author",
+          "destination": {
+            "name": "About_the_author",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Oasis_no_wolf",
+      "text": "<<if $oasis>><<set $print = $print + \"No mirage, by the grace of the desert! \">><<endif>>\\s\\n<<display print_Oasis_no_wolf>>\\s\\n<<set $oasis = true>>\\s\\nThe oasis features a few sparse palms and a crystal-clear pool. I am tempted to [[eat and drink my fill|Oasis_eat_and_drink_my_fill]], for though I have quenched my immediate thirst, I am far from sated.\\n\\nThe sandsea has quieted over time, and a [[curious set of tracks|cave_start]] leads from this haven. As well, something glints in the [[bottom of the pool|bottom_of_pool]], if I can hold my breath.",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Oasis_no_wolf",
+            "pid": 3
+          }
+        },
+        {
+          "text": "eat and drink my fill",
+          "destination": {
+            "name": "Oasis_eat_and_drink_my_fill",
+            "pid": 74
+          }
+        },
+        {
+          "text": "curious set of tracks",
+          "destination": {
+            "name": "cave_start",
+            "pid": 76
+          }
+        },
+        {
+          "text": "bottom of the pool",
+          "destination": {
+            "name": "bottom_of_pool",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "print_pirates_to_cave_2",
+      "text": "<<if not $print_pirates_to_cave_2>>\\s\\n<<set $print = $print + \"The door continues to appear as a grinning skull, its eye sockets black as the void between the stars. That I should find myself returned here... Dear reader, should these words be my last, I entreat you to take heed. Do not enter the Cave of Wonders! \" + \"@@color:green;<em>Note to self: If death appears imminent, consider hurling this journal out the door such that the warning may be plausibly heeded.</em>@@\" + \"<br><br>\" + \"@@color:red;Editor's note: By all means, save the journal instead of your life. As if it contains anything important.@@\" + \"<br><hr>\">>\\s\\n<<endif>>\\s\\n<<set $print_pirates_to_cave_2 = true>>\\s",
+      "links": []
+    },
+    {
+      "pid": 12,
+      "name": "Cave_fate",
+      "text": "<<display print_Cave_fate>>\\s\\nWonder and benevolence! I write this, comfortably ensconced on <<if not $pirates>>a vessel most piratical that passed even as I stumbled, by chance and haphazard, from the door of that dreadful place.<<else>>the pirate ship, which was kind enough to await my return.<<endif>>\\n\\nSo surprised was their captain <<if not $pirates>>at my appearance<<else>>at my return<<endif>>, that he took me up right away and made me feel at home. He had, in fact, been offering a great reward to his crewmen for the exploration of the cave, but none had ever returned. By his own admission, it was promised the position of first mate to any who survived, and now that is yours truly.\\n\\nAh, to feel the honest thrum of thrusters beneath the deck once more! To listen to the creak of the yardarms, and the snap of sails in the wind. Any further countenance of my journey shall have to wait. Duty calls!\\n\\n-- Ephram, First Mate of the Old Wildcat.\\n<<display end>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Cave_fate",
+            "pid": 75
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "end",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "print_Oasis_embellishment",
+      "text": "<<set $print = $print + \"I charged the pack of slavoring wolves, saliva dripping from their maws and bloodlust in their eyes, with nothing but my pistol and a surfeit of courage. Ten shots I had, and each blazed a true blue trail into the wolf\u2019s heart. Unfortunately, the pack was eleven in number.\" + \"<br><br>\" + \"I faced the pack leader with my bare hands, and though death snapped close that day \u2013 dear reader, I shall spare you the gruesome details \u2013 in the end, I stood atop a pyramid, nay, a zigguraut of corpses \u2013 and by their height beheld\u2026\" + \"<br><br>\">>\\s\\n<<if not $rescue>>\\s\\n<<set $print = $print + \"I\u2019ll be, I believe I just saw the thruster flash from a ship, and it\u2019s headed this way. What vessel would leave the trade routes for this insignificant\">><<if $oasis>><<set $print = $print + \"watering hole?\">><<else>><<set $print = $print + \"patch of the sandsea?\">><<endif>>\\s\\n<<else>>\\s\\n<<set $print = $print + \"I...must...put...down...the...pen...immediately...\">>\\s\\n<<endif>>\\s\\n<<set $print = $print + \"<br><br>\" + \"@@color:red;Editor's note: The author might have a career in dime novels. Propose his work to our fiction department next week.@@\"+ \"<br><hr>\">>",
+      "links": []
+    },
+    {
+      "pid": 14,
+      "name": "Oasis_embellishment",
+      "text": "<<display print_Oasis_embellishment>>\\s\\nI charged the pack of slavoring wolves, saliva dripping from their maws and bloodlust in their eyes, with nothing but my pistol and a surfeit of courage. Ten shots I had, and each blazed a true blue trail into the wolf\u2019s heart. Unfortunately, the pack was eleven in number.\\n\\nI faced the pack leader with my bare hands, and though death snapped close that day \u2013 dear reader, I shall spare you the gruesome details \u2013 in the end, I stood atop a pyramid, nay, a zigguraut of corpses \u2013 and by their height beheld\u2026\\n\\n<<if not $rescue>>I\u2019ll be, I believe I just saw the thruster flash from a ship, and it\u2019s headed this way. [[What vessel|Pirates_one]] would leave the trade routes for this insignificant <<if $oasis>>watering hole<<else>>patch of the sandsea<<endif>>?<<else>>[[I...must...put...down...the...pen...immediately...|Pirates_one]]<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Oasis_embellishment",
+            "pid": 13
+          }
+        },
+        {
+          "text": "What vessel",
+          "destination": {
+            "name": "Pirates_one",
+            "pid": 31
+          }
+        },
+        {
+          "text": "I...must...put...down...the...pen...immediately...",
+          "destination": {
+            "name": "Pirates_one",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Config",
+      "text": "config.ui.stowBarInitially = true; // the UI bar will start stowed (shut)\\nconfig.disableHistoryTracking = true;\\nconfig.disableHistoryControls = true;\\n$(\"#menu-saves\").remove();",
+      "links": []
+    },
+    {
+      "pid": 16,
+      "name": "I_can_free_the_lifeboat",
+      "text": "<<display print_I_can_free_the_lifeboat>>\\s\\nI am out of food and water.\\n\\nBlame the crew! They, gathered like gluttons around the table, insisted upon a grand feast. We drank, and we sang, and in fury I knocked the grinning smirks from their faces.\\n\\n\u2026 I reread the words above, etched indelibly in my own hand, and consider that I was drunk, mad, or both. The bones of my fellows were set around the dinner table, yet I remember not exhuming them from the sands. Is it time for the [[pistol|Desert_pistol]]?\\n\\nWorse, I had hoped free the lifeboat from its sandy tomb, but in my haste I spun up the emergency thruster. Its frenzy has sealed the fate of the ship in a wall of black glass. By noon tomorrow, the heat of the reflected sunlight will set [[the hull afire|Ship_afire]].",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_I_can_free_the_lifeboat",
+            "pid": 78
+          }
+        },
+        {
+          "text": "pistol",
+          "destination": {
+            "name": "Desert_pistol",
+            "pid": 52
+          }
+        },
+        {
+          "text": "the hull afire",
+          "destination": {
+            "name": "Ship_afire",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Desert_book",
+      "text": "<<display print_Desert_book>>\\s\\n<<set $books = true>>\\s\\nThe wizard\u2019s books proved to be so much fascinating gibberish. Valuable gibberish, I\u2019m sure, so I have picked them up and shall carry them upon my person, to sell for a pretty penny once I return to civilization.\\n\\nBut I daydream and digress. Folded into one of the books \u2013 a tawdry romance between a human and an impossibly man-shaped genie which I most certainly did not peruse for several hours \u2013 I espied a folded paper. Unfolded, it proved to be a map to a Cave of Wonders, which would explain our captain\u2019s initial shift from the trade routes.\\n\\nI write this, relaxed upon a dune and thoroughly lost. The shifting of the sand sea has rendered the map\u2019s landmarks unreliable at best. I regret now my haste in not packing more food, a regret that has further manifested in the impossible mirage of a [[distant oasis|oasis_start]].\\n\\nFictionally, of course, I must consider some way to turn this desert meandering into a veritable adventure. [[Perhaps I was set upon by wolves?|Oasis_embellishment]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Desert_book",
+            "pid": 57
+          }
+        },
+        {
+          "text": "distant oasis",
+          "destination": {
+            "name": "oasis_start",
+            "pid": 43
+          }
+        },
+        {
+          "text": "Perhaps I was set upon by wolves?",
+          "destination": {
+            "name": "Oasis_embellishment",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Desert_singing_Sands",
+      "text": "<<if not $wander_note>><<display print_Desert_singing_Sands>><<endif>>\\s\\nI am lost; without food, water, or any other practical item, and greatly fear I shall not survive to publish this journal. I listened too close to the song of the sand, it seems, and all sense of self slipped away. @@color:green;<<if not $wander_note>>//[[Note to self: |Desert_singing_Sands][$wander_note = true]]//<<else>>//Note to self: this might be too much alliteration.//<<endif>>@@ \\n\\nBefore me is a great steel door set into the side of an imposing dune, shaped as if it were a great grinning skull. Perhaps it will [[open at my touch|cave_lost]], perhaps not. My only other option is the [[trackless desert|Desert_random]].\\n<<if not $Desert_singing_Sands>>\\s\\n<<set $cave = true>>\\s\\n<<set $cave_count++>>\\s\\n<<set $Desert_singing_Sands = true>>\\s\\n<<endif>>\\s",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Desert_singing_Sands",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Note to self: ",
+          "destination": {
+            "name": "Desert_singing_Sands",
+            "pid": 18
+          }
+        },
+        {
+          "text": "open at my touch",
+          "destination": {
+            "name": "cave_lost",
+            "pid": 50
+          }
+        },
+        {
+          "text": "trackless desert",
+          "destination": {
+            "name": "Desert_random",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "print_Cave_treasure",
+      "text": "<<set $print = $print + \"I sit surrounded by untold wealth, all manner of treasure, which resides in some manner of vault. Coins, gems, chalices of gold, rugs of the finest silk, everything I could possibly want, except food and water.\" + \"<br><br>\" + \"I have a skeleton for company, one dressed in ragged sailing rags and clutching a battered brass lamp. Truth to tell, he is not much for conversation. What can I take and what must I leave, in my attempts to return to the surface?\" + \"<br><br>\" + \"@@color:red;Editor's note: If the author is so wealthy, why is he wasting my time with this submission? Self-publish, and no one will judge your writing (because no one will ever see it).@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 20,
+      "name": "Cave_freedom_wish",
+      "text": "<<display print_Cave_freedom_wish>>\\s\\nMy wish for freedom was granted, most certain.\\n\\nOh, clever Bairn, to play such a trick. I applaud you, sir genie.\\n\\nYou see, dear reader (though who shall read these words now, I know not), I have full freedom. I do not want for food nor drink, and indeed upon my exit from the cave I shortly found a traveling vessel to bear me to civilization.\\n\\nWere that the sum of my fortune, I would be content. It is however, not to be. I was also rendered, by some arcane manner, wholly invisible and inaudible to my fellows. Never shall I find fame nor fortune, or again partake in the pleasure of society \u2013 save by proxy. This chronicle of my journeys, my sole possession in this new, intolerable and intangible state, shall remain entirely unpublished.\\n\\nFie, I say. And fie again on all djinn!\\n\\n-- Ephram, Ghost of the Desert\\n<<display end>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Cave_freedom_wish",
+            "pid": 73
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "end",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Cave_rug",
+      "text": "<<if not $rug_note>>\\s\\n<<display print_Cave_rug>>\\s\\n<<endif>>\\s\\nOne of the rugs turned out to be a fabled flying carpet from the Crescent Cities. It is now loaded with treasure and [[I am ready to part|Cave_fate]].\\n\\nI would so, as I write these words, that my dear skeletal companion not stare so at me. His empty eyes seem to yearn, and I would imagine that he proffers that [[battered lamp|Cave_lamp]] from his cold, dead hands. As if he cannot see that I am well content with what I have. Away with you specter, away ghost, you shall have none of mine. I shall not touch your ruin, but depart wholesome and untempted by your devil\u2019s bargain. @@color:green;<<if not $rug_note>>//[[Note to self: |Cave_rug][$rug_note = true]]//<<else>>//Note to self: determine, prior to publication, if untempted is a word.//<<endif>>@@",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Cave_rug",
+            "pid": 6
+          }
+        },
+        {
+          "text": "I am ready to part",
+          "destination": {
+            "name": "Cave_fate",
+            "pid": 12
+          }
+        },
+        {
+          "text": "battered lamp",
+          "destination": {
+            "name": "Cave_lamp",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Note to self: ",
+          "destination": {
+            "name": "Cave_rug",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "print_escape_from_pirates",
+      "text": "<<set $print = $print + \"Swift and silent I was, slipping over the side of the ship and onto the sand, yet a pirate lady raised hue and cry at my disappearance. I pen these words in haste, by the light of the moon, as I stagger over the dunes. Perhaps some succor shall reveal itself?\" + \"<br><br>\">><<if not $cave>><<set $print = $print + \"Indeed, even as I write these words, my passage through the desert takes a most peculiar turn.\" + \"<br><br>\">><<endif>>\\s",
+      "links": []
+    },
+    {
+      "pid": 23,
+      "name": "print_cave_description",
+      "text": "<<set $print_cave_description = true>>\\s\\n<<if $cave neq true>>\\s\\n<<set $print = $print + \"Before me is a great steel door set into the side of an imposing dune shaped as if it were a great grinning skull. Perhaps it will open at my touch, perhaps not.\" + \"<br><br>\">>\\s\\n<<elseif $cave_count eq 1>>\\s\\n<<set $print = $print + \"I am returned to this accursed cave, fie. Imagine that the door would open at my touch...\" + \"<br><br>\">>\\s\\n<<else>>\\s\\n<<set $print = $print + \"The third time must be a charm, for my feet have once again found this terrible cavern.\" + \"<br><br>\">>\\s\\n<<endif>>\\s\\n<<if $escape>>\\s\\n<<set $print = $print + \"I have but to make the attempt, as the pirates will doubtless look unkindly upon me should I be caught anew.\">>\\s\\n<<elseif $pirates>>\\s\\n<<set $print = $print + \"I must make the attempt. My pirate captors are watching, cheering even, and they threaten to take my log for safekeeping should I not press onward. \">>\\s\\n<<elseif $cave>>\\s\\n<<set $print = $print + \"It appears the I have been wandering in circles.\">>\\s\\n<<else>>\\s\\n<<set $print = $print + \"My only other option is the trackless desert.\">>\\s\\n<<endif>>\\s\\n<<if $cave neq true>>\\s\\n<<set $print = $print + \"<br><br>\" + \"@@color:red;Editor's note: Finally, something interesting. Please tell me the next page has the author opening the door!@@\">>\\s\\n<<elseif $cave_count eq 1>>\\s\\n<<set $print = $print + \"<br><br>\" + \"@@color:red;Editor's note: I have the bad feeling that the author will never open this door, that it is merely representative of the larger obstacles in his life.@@\">>\\s\\n<<else>>\\s\\n<<set $print = $print + \"<br><br>\" + \"@@color:red;Editor's note: And here we are again! This must be the author's concept of dramatic pacing.@@\">>\\s\\n<<endif>>\\s\\n<<set $print = $print + \"<br><hr>\">>",
+      "links": []
+    },
+    {
+      "pid": 24,
+      "name": "print_Cave_trick",
+      "text": "<<if not $pirates>>\\s\\n<<set $print = $print + \"Fortunate indeed to have heeded the warning of my fellow, dearly departed, treasure hunter.\" + \"<br><br>\" + \"Bairn\u2019s suggested rewards were quite tempting, but upon thought and consideration, I demanded the one thing I might have otherwise taken for granted from any properly trained djinn: obedience.\" + \"<br><br>\" + \"I now wait in leisure by the cavern entrance while Bairn summons some passing ship to return us to civilization.\" + \"<br><br>\" + \"The treasure recovered from the cave shall suffice to settle in some comfortable locale, and I shall apply such trades as strikes my interest to stave off boredom. Better even, the chronicle of my heroic journey \u2013 carefully edited of Bairn\u2019s existence \u2013 shall propel me to fame and happiness.\" + \"<br><br>\" + \"Today, I begin my new life.\" + \"<br><br>\" + \"-- Ephram, explorer and adventurer.\" + \"<br><br>\" + \"@@color:red;Editor's note: Why do wealthy people think that just because they have money, they have talent? I refuse to place my imprimatur on another piece of vanity filth. Dear Sir, we read your manuscript with great interest, however it doesn\u2019t meet the needs of today\u2019s publishing industry\u2026@@\" + \"<br><hr>\">>\\s\\n<<else>>\\s\\n<<set $print = $print + \"The captain of the pirate vessel was most impressed with my return, and made known an offer he had preserved for he who survived the cave: the hand of his fair daughter, and his own seat upon the council of the sky city Oasis.\" + \"<br><br>\" + \"With gratitude, I shared my newfound wealth with my appreciative father-in-law, and we made all speed to that flying pirate fastness. A genie, a wife, and a title; not a bad end for a simple pilot thought lost to the desert.\" + \"<br><br>\" + \"Once this journal is carefully edited for publication, I shall find fame, too \u2013 a moment in the sun prior to fading into genteel obscurity and comfort.\" + \"<br><br>\" + \"Such is the end of my tale.\" + \"<br><br>\" + \"-- Ephram, upstanding member of the Oasis Pirate\u2019s Council.\" + \"<br><br>\" + \"@@color:red;Editor's note: Councilman Ephram\u2019s journal? Sigh. Get three or four authors on this project to clean it up. And let Ephram know that it\u2019s wonderful, just wonderful. We need to make a few alterations for the public, and will have it published by the end of the year. I hate my job.@@\" + \"<br><hr>\">>\\s\\n<<endif>>\\s",
+      "links": []
+    },
+    {
+      "pid": 25,
+      "name": "print_Desert_random",
+      "text": "<<if not $oasis>>\\s\\n<<set $print = $print + \"I have found an oasis!\">>\\s\\n<<endif>>\\s",
+      "links": []
+    },
+    {
+      "pid": 26,
+      "name": "print_oasis_Wait_out_the_wolf",
+      "text": "<<set $print = $print + \"My patience was rewarded, and the wolf soon left the waters to hunt sand scorpions, giant snakes, or whatever else its kind eats in this benighted region of the Endless Desert.\" + \"<br><br>\" + \"@@color:red;Editor's note: This is boring. Boring, boring, boring.@@\" + \"<br><br>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 27,
+      "name": "print_pirates_to_the_cave",
+      "text": "<<set $print = $print + \"The pirates were most civil, almost conciliatory, as I was put off the ship\">><<if $books eq false>><<set $print = $print + \" with food and water enough for several days if I am frugal\">><<endif>><<set $print = $print + \". The captain, indeed, seemed almost jovial. He insisted I come back alive, as his daughter had taken a fancy to me. Or perhaps \u2014 and this last was delivered in the manner of a jest \u2014 she was simply attracted to the doom that hung round my neck like an albatross.\" + \"<br><br>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 28,
+      "name": "bottom_of_pool",
+      "text": "<<display print_bottom_of_pool>>\\s\\n<<set $pirate_treasure = true>>\\s\\nI have found a veritable treasure beneath the crystal waters! I am wealthy beyond belief, if I can but find a convenient means to transport the lucre to civilization! [[I...must...put...down...the...pen...immediately...|Pirates_one]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_bottom_of_pool",
+            "pid": 61
+          }
+        },
+        {
+          "text": "I...must...put...down...the...pen...immediately...",
+          "destination": {
+            "name": "Pirates_one",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Journalling",
+      "text": "<<print $print>>\\n!!!<center>[[About the author|About_the_author]]</center>",
+      "links": [
+        {
+          "text": "About the author",
+          "destination": {
+            "name": "About_the_author",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "print_Oasis_eat_and_drink_my_fill",
+      "text": "<<set $print = $print + \"With much chagrin, I must explain how I lowered my guard, succumbing to happy slumber, only to find I was not alone in this desolation. A lone wolf approached the oasis while I slept, and barely did I take refuge in this palm tree from which I write these words \u2013 before his snapping jaws nearly tore me in half.\" + \"<br><br>\" + \"The wolf is typical for his kind, that is to say hairless and about five feet tall at the shoulder. Recent scars across his snout suggest he was driven from his pack for some unknowable transgression.\" + \"<br><br>\" + \"Still, the wolf must sleep or hunt eventually. I am resolved to wait him out. \">>\\s\\n<<if $pistol>>\\s\\n<<set $print = $print + \"My pistol will little inconvenient such beast, I worry, unless my shot strikes true.\">>\\s\\n<<endif>>\\s\\n<<set $print = $print + \"<br><br>\" + \"@@color:green;<em>Note to self: This a rather ignominious situation in which I find myself. Perhaps I might spruce up the events while awaiting the wolf's departure?</em>@@\" + \"<br><br>\" + \"@@color:red;Editor's note: This is good. I like this. Maybe the author can stay in the palm tree and we can follow the life of the wolf instead. It'll be one of those artsy, foreign titles.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 31,
+      "name": "Pirates_one",
+      "text": "<<if not $graft_note>>\\s\\n<<display print_Pirates_one>>\\s\\n<<endif>>\\s\\n<<set $pirates = true>>\\s\\nPirates have taken me prisoner.\\n\\nTheir captain, a brute who clearly enjoys living the stereotype \u2013 his many grafts; a hook for an arm, peg-leg, and an eyepatch, being indicative of less savory professions \u2013 welcomed me into his merry band with a leer. <<if $oasis>>It appears he and his crew use the oasis as a regular watering hole<<if $pirate_treasure>>and storage for their ill-got gains<<endif>>. <<endif>><<if $books>>Rifling through my pack, he has found my books; I am addressed as master wizard and accorded a modicum of respect. <<endif>>\\n\\nI have been allowed to keep my pen and paper, for posterity, but from the [[nearby chatter|Pirates_nearby_chatter]], it seems I am to partake in some special assignment come morning. Perhaps I can [[escape in the night|escape_from_pirates]].\\n\\n@@color:green;<<if not $graft_note>>//[[Note to self: |Pirates_one][$graft_note = true]]//<<else>>//Note to self: It occurs to me that some of my more tender or upper class readership will be unaware that the practice of grafting among pirates is far from the reconstructive surgeries they are accustomed to seeing \u2014 that is, pirates prefer the permanent attachment of runecrafted steel to a healthy body, often encasing one's own appendages for some nominal ability such as speed, strength, or the firing of runeshot from one's palm. I must find a way to include said information in my final draft in such a way as to not drive away readership in disgust at the extensive exposition. Perhaps a glossary or author's note...//<<endif>>@@",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Pirates_one",
+            "pid": 45
+          }
+        },
+        {
+          "text": "nearby chatter",
+          "destination": {
+            "name": "Pirates_nearby_chatter",
+            "pid": 38
+          }
+        },
+        {
+          "text": "escape in the night",
+          "destination": {
+            "name": "escape_from_pirates",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Note to self: ",
+          "destination": {
+            "name": "Pirates_one",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Oasis_pistol",
+      "text": "<<if not $Oasis_pistol_note and not $pool_note>><<display print_Oasis_pistol>><<endif>>\\s\\nThe wolf was ill, and fled when I levied my pistol upon him. @@color:green;<<if not $Oasis_pistol_note>>//[[Note to self: |Oasis_pistol][$Oasis_pistol_note = true]]//<<else>>//Note to self: consider [[embellishing this encounter|Oasis_embellishment]] in the final draft.//<<endif>>@@\\n\\nNow that I\u2019m properly provisioned, I might gather my strength to set out into the desert, or perhaps [[follow those curious tracks|cave_start]]. Then again, the wreckage of my ship will draw no little consternation when it fails to arrive in port. I [[remain close|Pirates_one]] enough to the crash to see any approaching vessels. @@color:green;<<if not $eating_at_oasis>><<if not $pool_note>>//[[Note to self: |Oasis_pistol][$pool_note = true]]//<<else>>//Note to self: There appears to be some manner of shining object at the [[bottom of the pool|bottom_of_pool]].<<endif>><<else>>//Note to self: perhaps I can spare a moment for a dunk, and [[explore the shining objects|bottom_of_pool]] at the bottom of the pool. I shall have to strip my clothes, but there is no one here to see me... Yes, I am definitely alone.//<<endif>>@@",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Oasis_pistol",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Note to self: ",
+          "destination": {
+            "name": "Oasis_pistol",
+            "pid": 32
+          }
+        },
+        {
+          "text": "embellishing this encounter",
+          "destination": {
+            "name": "Oasis_embellishment",
+            "pid": 14
+          }
+        },
+        {
+          "text": "follow those curious tracks",
+          "destination": {
+            "name": "cave_start",
+            "pid": 76
+          }
+        },
+        {
+          "text": "remain close",
+          "destination": {
+            "name": "Pirates_one",
+            "pid": 31
+          }
+        },
+        {
+          "text": "bottom of the pool",
+          "destination": {
+            "name": "bottom_of_pool",
+            "pid": 28
+          }
+        },
+        {
+          "text": "explore the shining objects",
+          "destination": {
+            "name": "bottom_of_pool",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Cave_trick",
+      "text": "<<display print_Cave_trick>>\\s\\n<<if not $pirates>>\\s\\nFortunate indeed to have heeded the warning of my fellow, dearly departed, treasure hunter.\\n\\nBairn\u2019s suggested rewards were quite tempting, but upon thought and consideration, I demanded the one thing I might have otherwise taken for granted from any properly trained djinn: obedience.\\n\\nI now wait in leisure by the cavern entrance while Bairn summons some passing ship to return us to civilization.\\n\\nThe treasure recovered from the cave shall suffice to settle in some comfortable locale, and I shall apply such trades as strikes my interest to stave off boredom. Better even, the chronicle of my heroic journey \u2013 carefully edited of Bairn\u2019s existence \u2013 shall propel me to fame and happiness.\\n\\nToday, I begin my new life.\\n\\n-- Ephram, explorer and adventurer.\\n<<display end>>\\n<<else>>\\s\\nThe captain of the pirate vessel was most impressed with my return, and made known an offer he had preserved for he who survived the cave: the hand of his fair daughter, and his own seat upon the council of the sky city, Oasis.\\n\\nWith gratitude, I shared my newfound wealth with my appreciative father-in-law, and we made all speed to that flying pirate fastness. A genie, a wife, and a title; not a bad end for a simple pilot thought lost to the desert.\\n\\nOnce this journal is carefully edited for publication, I shall find fame, too \u2013 a moment in the sun prior to fading into genteel obscurity and comfort.\\n\\nSuch is the end of my tale.\\n\\n-- Ephram, upstanding member of the Oasis Pirate\u2019s Council.\\n<<display end>>\\n<<endif>>\\s",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Cave_trick",
+            "pid": 24
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "end",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "print_Desert_singing_Sands",
+      "text": "<<set $print = $print + \"I am lost; without food, water, or any other practical item, and greatly fear I shall not survive to publish this journal. I listened too close to the song of the sand, it seems, and all sense of self slipped away. \" + \"@@color:green;<em>Note to self: this might be too much alliteration.</em>@@\" + \"<br><br>\" + \"Before me is a great steel door set into the side of an imposing dune, shaped as if it were a great grinning skull. Perhaps it will open at my touch, perhaps not. My only other option is the trackless desert.\" + \"<br><br>\" + \"@@color:red;Editor's note: This is a rare moment of self-awareness for the author. Possibly a sign from the powers that be that he is not fit for the writing life.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 35,
+      "name": "StoryTitle",
+      "text": "Shipwrecked",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "print_cave_start",
+      "text": "<<set $print = $print + \"My passage through the desert has taken a most peculiar turn. \">>\\s",
+      "links": []
+    },
+    {
+      "pid": 37,
+      "name": "print_Oasis_pistol",
+      "text": "<<set $print = $print + \"The wolf was ill, and fled when I levied my pistol upon him. \" + \"@@color:green;<em>Note to self: consider embellishing this encounter in the final draft.</em>@@\" + \"<br><br>\" + \"Now that I\u2019m properly provisioned, I might gather my strength to set out into the desert, or perhaps follow those curious tracks. Then again, the wreckage of my ship will draw no little consternation when it fails to arrive in port. I remain close enough to the crash to see any approaching vessels.\" + \"<br><br>\">>\\s\\n<<if not $eating_at_oasis>>\\s\\n<<set $print = $print + \"@@color:green;<em>Note to self: There appears to be some manner of shining object at the bottom of the pool.</em>@@\">>\\s\\n<<else>>\\s\\n<<set $print = $print + \"@@color:green;<em>Note to self: perhaps I can spare a moment for a dunk, and explore the shining objects at the bottom of the pool. I shall have to strip my clothes, but there is no one here to see me... Yes, I am definitely alone.</em>@@\">>\\s\\n<<endif>>\\s\\n<<set $print = $print + \"<br><br>\" + \"@@color:red;Editor's note: I find myself trapped in the author's perpetual theatrics of aside-like notes, wherein he is too busy telling us about his events to act. Just. Do. Something!@@\" + \"<br><hr>\">>",
+      "links": []
+    },
+    {
+      "pid": 38,
+      "name": "Pirates_nearby_chatter",
+      "text": "<<display print_Pirates_nearby_chatter>>\\s\\nA fetching the lady pirate came to me in the night. Supposing me learned, she asked for some opinion that the grafted plate across her arms and legs were not going bad. While I was able to offer her little in the way of peace of mind, she straightaway proposed that I should comfort her in a more traditional manner. I will only state, dear reader, that it was [[a bit more involved|a_bit_more_involved]] than holding hands.\\n\\nImagine my surprise when, drowsy upon the deck of the ship, she informed me that I was to be sent to the [[Cave of Wonders|pirates_to_the_cave]] come morning; which is indeed hard upon us.",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Pirates_nearby_chatter",
+            "pid": 63
+          }
+        },
+        {
+          "text": "a bit more involved",
+          "destination": {
+            "name": "a_bit_more_involved",
+            "pid": 72
+          }
+        },
+        {
+          "text": "Cave of Wonders",
+          "destination": {
+            "name": "pirates_to_the_cave",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "logbook_start",
+      "text": "<<set $cave_count = 0>>\\s\\n<<if not $start_note>><<display print_logbook_start>><<endif>>\\s\\n<<set $About_the_author = true>>\\s\\nThe sandstorm howled like a banshee; she shredded our sails and clogged our thrusters, beat us down with every attempt to regain altitude. Now it is morning and we are half buried in a new formed dune with no hope of escape. Only I, sheltered by the wheelhouse, appear to have survived that final fever pitch when the [[singing sand|Desert_singing_Sands]] stripped my fellow sailors\u2019 flesh in a heartbeat. I am surrounded by the bones of the dead, already bleached bright in the noonday sun.\\n\\nI begin this journal in the remains of my captain\u2019s logbook. It is a bulwark against insanity, a chronicle of my trials, and \u2013 if by some providence I survive \u2013 a best-selling novel upon my return to civilization, for is that not the fate of all erudite sailors? Allow me, dear reader, the comfort of imagination.\\n\\nMore than that, it is a considered forum for my options, where one false step might mean the difference between survival and surrender to the fate of my fellows. @@color:green;<<if not $start_note>>//[[Note to self: |logbook_start][$start_note = true]]//<<else>>//Note to self: I shall use a standard system, and highlight that which I find important. Fortunately, the captain had a variety of colored pens. I shall make personal notes in this jaunty green, so as not to accidentally submit them to any publisher by mistake!//<<endif>>@@\\n\\nThe sand sea stretches, unbroken, in all directions. Nevertheless, if I am to [[travel|Desert_food]], I would be wise to do so this night. Then again, [[I have supplies enough|I_have_supplies_enough_1]] and am not far from the trade routes. Perhaps a better course would be to wait.",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_logbook_start",
+            "pid": 56
+          }
+        },
+        {
+          "text": "singing sand",
+          "destination": {
+            "name": "Desert_singing_Sands",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Note to self: ",
+          "destination": {
+            "name": "logbook_start",
+            "pid": 39
+          }
+        },
+        {
+          "text": "travel",
+          "destination": {
+            "name": "Desert_food",
+            "pid": 65
+          }
+        },
+        {
+          "text": "I have supplies enough",
+          "destination": {
+            "name": "I_have_supplies_enough_1",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "print_cave_lost",
+      "text": "<<set $print = $print + \"I have wandered the trackless corridors beneath these dunes for an untold time. It is surely the dwelling of man or djinn, for runelights illuminate my path \u2013 and dim just as swiftly with my passage such that I know not one intersection from another.\" + \"<br><br>\" + \"Small treasures have I found \u2013 crafted gold, ancient coinage, even a suit of shimmering cloth that fits as if it were tailored. None shall mistake me for a common sailor now, even in death.\" + \"<br><br>\" + \"There are bones as well, recent explorers who met what shall surely be my fate.\">>\\s\\n<<if $food>>\\s\\n<<set $print = $print + \"<br><br>\" + \"There is food left, and water. I might last a bit longer, but I am concerned that aimless wanderings will take me nowhere but further from the surface.\">><<endif>>\\s\\n<<if $books>>\\s\\n<<set $print = $print + \"<br><br>\" + \"At my leisure, I have examined the wizard's books once more. The map has some notes upon it. Might they be directions of a sort?\">>\\s\\n<<endif>>\\s\\n<<set $print = $print + \"<br><br>\" + \"@@color:red;Editor's note: This is good. We might be able to use this if we can extract the exact location of the cave from this so-called pilot.@@\" + \"<br><hr>\">>",
+      "links": []
+    },
+    {
+      "pid": 41,
+      "name": "escape_from_pirates",
+      "text": "<<display print_escape_from_pirates>>\\s\\n<<set $escape = true>>\\s\\nSwift and silent I was, slipping over the side of the ship and onto the sand, yet a pirate lady raised hue and cry at my disappearance. I pen these words in haste, by the light of the moon, as I stagger over the dunes. Perhaps some succor shall reveal itself?\\n\\n<<if not $cave>>Indeed, even as I write these words, my passage through the desert takes a most peculiar turn. <<endif>>\\s\\n<<display cave_description>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_escape_from_pirates",
+            "pid": 22
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "cave_description",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "print_end",
+      "text": "<<set $print = $print + \"<h2><center>The End</center></h2>\">>",
+      "links": []
+    },
+    {
+      "pid": 43,
+      "name": "oasis_start",
+      "text": "<<set $oasis = true>>\\s\\n<<if $food or $pistol>><<display oasis_wolf>><<else>>No mirage, by the grace of the desert! <<display Oasis_no_wolf>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "oasis_wolf",
+            "pid": 47
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Oasis_no_wolf",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "pirates_to_the_cave",
+      "text": "<<if not $pirate_note>>\\s\\n<<display print_pirates_to_the_cave>>\\s\\n<<endif>>\\s\\nThe pirates were most civil, almost conciliatory, as I was put off the ship<<if not $food>> with food and water enough for several days if I am frugal<<set $food = true>><<endif>>. The captain, indeed, seemed almost jovial. He insisted I come back alive, as his daughter had taken a fancy to me. Or perhaps \u2014 and this last was delivered in the manner of a jest \u2014 she was simply attracted to the doom that hung round my neck like an albatross.\\n\\n<<if $cave>>\\s\\n<<display print_pirates_to_cave_2>>\\s\\nThe door continues to appear as a grinning skull, its eye sockets black as the void between the stars. That I should find myself returned here... Dear reader, should these words be my last, I entreat you to take heed. Do not [[enter the Cave of Wonders|cave_lost]]! @@color:green;<<if not $pirate_note and $cave_count gt 0>>//[[Note to self: |pirates_to_the_cave][$pirate_note = true]]//<<elseif $pirate_note>>//Note to self: If death appears imminent, consider hurling this journal out the door such that the warning may be plausibly heeded.//<<endif>>@@<<else>><<display cave_description>><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_pirates_to_the_cave",
+            "pid": 27
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_pirates_to_cave_2",
+            "pid": 11
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "cave_description",
+            "pid": 5
+          }
+        },
+        {
+          "text": "enter the Cave of Wonders",
+          "destination": {
+            "name": "cave_lost",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Note to self: ",
+          "destination": {
+            "name": "pirates_to_the_cave",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "print_Pirates_one",
+      "text": "<<set $print = $print + \"Pirates have taken me prisoner.\" + \"<br><br>\" + \"Their captain, a brute who clearly enjoys living the stereotype \u2013 his many grafts; a hook for an arm, peg-leg, and an eyepatch, being indicative of less savory professions \u2013 welcomed me into his merry band with a leer.\">>\\s\\n<<if $oasis>><<set $print = $print + \"It appears he and his crew use the oasis as a regular watering hole \">><<if $pirate_treasure>><<set $print = $print + \"and storage for their ill-got gains\">><<endif>><<set $print = $print + \".\">><<endif>><<if $books>><<set $print = $print + \"Rifling through my pack, he has found my books; I am addressed as master wizard and accorded a modicum of respect.\">><<endif>><<set $print = $print + \"<br><br>\" + \"I have been allowed to keep my pen and paper, for posterity, but from the nearby chatter, it seems I am to partake in some special assignment come morning. Perhaps I can escape in the night.\" + \"<br><br>\" + \"@@color:green;<em>Note to self: It occurs to me that some of my more tender or upper class readership will be unaware that the practice of grafting among pirates is far from the reconstructive surgeries they are accustomed to seeing \u2014 that is, pirates prefer the permanent attachment of runecrafted steel to a healthy body, often encasing one's own appendages for some nominal ability such as speed, strength, or the firing of runeshot from one's palm. I must find a way to include said information in my final draft in such a way as to not drive away readership in disgust at the extensive exposition. Perhaps a glossary or author's note...</em>@@\"  + \"<br><br>\" + \"@@color:red;Editor's note: The author\u2019s precocious sensibilities and seeming need to explain understood details of our society, as if in the expectation that his work will outlast cultural norms, is remarkable.@@\"+ \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 46,
+      "name": "print_Cave_lamp",
+      "text": "<<set $print = $print + \"With one touch, the lamp came to life and out sprang a most wondrous creature \u2013 a genie in the form of a short, hirsute man. It calls itself Bairn and offers to grant any one wish. Fortune has been suggested, and freedom, but I cannot wonder if there is not some other thing I desire. After all, my skeletal friend was given a similar set of options\u2026 \" + \"@@color:green;<em>Note to self: The ellipses indicate my deep thought upon this matter. In truth, Bairn paces before me, demanding an answer and quite shaking my resolve.</em>@@\" + \"<br><br>\" + \"@@color:red;Editor's note: A genie in the shape of a man? Here we delve into the realm of the truly fantastical.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 47,
+      "name": "oasis_wolf",
+      "text": "<<display print_oasis_wolf>>\\s\\n<<set $wolf = true>>\\s\\nThe oasis is real, but I am stymied in my efforts to approach. A lone desert wolf prowls the borders, claiming the water and its surrounds for himself.\\n\\n<<display wolf_description>> <<if $food>>Fortunately, I have [[food and water|oasis_Wait_out_the_wolf]] enough to wait him out. Then I shall take possession of the oasis myself.<<endif>><<if $pistol>><<display pistol_against_wolf>><<endif>>\\n\\nSeek not danger where it is not warranted, I say. What of the [[trade routes|Pirates_one]]? If I strike off over the sands now, I might reach them anon.",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_oasis_wolf",
+            "pid": 49
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "wolf_description",
+            "pid": 51
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "pistol_against_wolf",
+            "pid": 69
+          }
+        },
+        {
+          "text": "food and water",
+          "destination": {
+            "name": "oasis_Wait_out_the_wolf",
+            "pid": 54
+          }
+        },
+        {
+          "text": "trade routes",
+          "destination": {
+            "name": "Pirates_one",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "print_Cave_with_treasure_wish",
+      "text": "<<set $print = $print + \"I wished for wealth. Oh, what a fool, I.\" + \"<br><br>\" + \"All the treasure of this wondrous cave is indeed mine \u2013 as well as ample food and drink \u2013 but I am trapped as much as Bairn, for the cavern doors will no longer open. He tells me they are covered over in sand, and shall be for another hundred years.\" + \"<br><br>\" + \"A curse upon all genies in their fascile wonders. A curse, I write, in the hopes that some future explorer will find this journal and take heed.\" + \"<br><br>\" + \"There now, best to write no more lest I muddy the waters of my final warning \u2013 as most readers are known to skip to the end in the perusal of literature as a means of determining the worth of the work.\" + \"<br><br>\" + \"As I said, I write no more! This publication shall never see the light of day. Farewell.\" + \"<br><br>\" + \"-- Ephram, Lord and Prisoner of the Cave of Wonders\" + \"<br><br>\" + \"@@color:red;Editor's note: Never see the light of day? Certainly not if I have anything to say about it. Call my assistant. Didn\u2019t this come from one of those desert treasure hunters? This has left me with such a headache...@@\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 49,
+      "name": "print_oasis_wolf",
+      "text": "<<set $print = $print + \"The oasis is real, but I am stymied in my efforts to approach. A lone desert wolf prowls the borders, claiming the water and its surrounds for himself.\" + \"<br><br>\" + \"The wolf is typical for his kind, that is to say hairless and about five feet tall at the shoulder. Recent scars across his snout suggest he was driven from his pack for some unknowable transgression.\">>\\s\\n<<if $food>>\\s\\n<<set $print = $print + \" Fortunately, I have food and water enough to wait him out. Then I shall take possession of the oasis myself.\">>\\s\\n<<endif>>\\s\\n<<if $pistol>>\\s\\n<<set $print = $print + \" My pistol will little inconvenient such beast, I worry, unless my shot strikes true.\">>\\s\\n<<endif>>\\s\\n<<set $print = $print + \"<br><br>\" + \"Seek not danger where it is not warranted, I say. What of the trade routes? If I strike off over the sands now, I might reach them anon.\" + \"<br><br>\" + \"@@color:red;Editor's note: We know what wolves are. There\u2019s no need to explain them to us.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 50,
+      "name": "cave_lost",
+      "text": "<<display print_cave_lost>>\\s\\nI have wandered the trackless corridors beneath these dunes for an untold time. It is surely the dwelling of man or djinn, for runelights illuminate my path \u2013 and dim just as swiftly with my passage such that I know not one intersection from another.\\n\\nSmall treasures have I found \u2013 crafted gold, ancient coinage, even a suit of shimmering cloth that fits as if it were tailored. None shall mistake me for a common sailor now, even in death.\\n\\nThere are bones as well, recent explorers who met what shall surely [[be my fate|Cave_fate]].\\n\\n<<if $food>>There is food left, and water. I might last a bit longer, but I am concerned that [[aimless wanderings|Cave_treasure]] will take me nowhere but further from the surface. <<endif>>\\n\\n<<if $books>>At my leisure, I have examined the wizard's books once more. [[The map|Cave_treasure]] has some notes upon it. Might they be directions of a sort?<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_cave_lost",
+            "pid": 40
+          }
+        },
+        {
+          "text": "be my fate",
+          "destination": {
+            "name": "Cave_fate",
+            "pid": 12
+          }
+        },
+        {
+          "text": "aimless wanderings",
+          "destination": {
+            "name": "Cave_treasure",
+            "pid": 64
+          }
+        },
+        {
+          "text": "The map",
+          "destination": {
+            "name": "Cave_treasure",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "wolf_description",
+      "text": "The wolf is typical for his kind, that is to say hairless and about five feet tall at the shoulder. Recent scars across his snout suggest he was driven from his pack for some unknowable transgression.",
+      "links": []
+    },
+    {
+      "pid": 52,
+      "name": "Desert_pistol",
+      "text": "<<display print_Desert_pistol>>\\s\\n<<set $pistol = true>>\\s\\nI could not do it. I could not level the pistol at myself and, rather than face another moment in the bowels of that ghastly wreck, I fled, heedless, into the desert.\\n\\nEven now, my frazzled mind plays tricks upon my senses, conjuring an [[impossible oasis|oasis_start]] in the distance, and an [[approaching ship|Pirates_one]] in the other.\\n\\nIn this mad world, [[one fate is as good as another.|either(\"oasis_start\",\"Pirates_one\")]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Desert_pistol",
+            "pid": 1
+          }
+        },
+        {
+          "text": "impossible oasis",
+          "destination": {
+            "name": "oasis_start",
+            "pid": 43
+          }
+        },
+        {
+          "text": "approaching ship",
+          "destination": {
+            "name": "Pirates_one",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "StoryAuthor",
+      "text": "by\\nAndrew G. Schneider",
+      "links": []
+    },
+    {
+      "pid": 54,
+      "name": "oasis_Wait_out_the_wolf",
+      "text": "<<display print_oasis_Wait_out_the_wolf>>\\s\\nMy patience was rewarded, and the wolf soon left the waters to hunt sand scorpions, giant snakes, or whatever else its kind eats in this benighted region of the Endless Desert.\\n\\n<<display Oasis_no_wolf>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_oasis_Wait_out_the_wolf",
+            "pid": 26
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Oasis_no_wolf",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "end",
+      "text": "<<display print_end>>\\s\\n!!!<center>[[Publish Ephram's Journal|Journalling]]</center>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_end",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Publish Ephram's Journal",
+          "destination": {
+            "name": "Journalling",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "print_logbook_start",
+      "text": "<<set $print = \"<h1><center>Shipwrecked</center></h1>\">>\\s\\n<<set $print = $print + \"<h2><center>A short story of above average adventure in the Endless Desert.</center></h2>\">>\\s\\n<<set $print = $print + \"<h3><center>by Ephram</center></h3>\">>\\s\\n<<set $print = $print + \"@@color:red;Editor's note: This title is entirely too long. Shorten to Shipwrecked.@@\" + \"<br><hr>\">>\\s \\n<<set $print = $print + \"The sandstorm howled like a banshee; she shredded our sails and clogged our thrusters, beat us down with every attempt to regain altitude. Now it is morning and we are half buried in a new formed dune with no hope of escape. Only I, sheltered by the wheelhouse, appear to have survived that final fever pitch when the singing sand stripped my fellow sailors\u2019 flesh in a heartbeat. I am surrounded by the bones of the dead, already bleached bright in the noonday sun.\" + \"<br><br>\" + \"I begin this journal in the remains of my captain\u2019s logbook. It is a bulwark against insanity, a chronicle of my trials, and \u2013 if by some providence I survive \u2013 a best-selling novel upon my return to civilization, for is that not the fate of all erudite sailors? Allow me, dear reader, the comfort of imagination.\" + \"<br><br>\" + \"More than that, it is a considered forum for my options, where one false step might mean the difference between survival and surrender to the fate of my fellows. \" + \"@@color:green;<em>Note to self: I shall use a standard system, and highlight that which I find important. Fortunately, the captain had a variety of colored pens. I shall make personal notes in this jaunty green, so as not to accidentally submit them to any publisher by mistake!</em>@@\" + \"<br><br>\" + \"The sand sea stretches, unbroken, in all directions. Nevertheless, if I am to travel, I would be wise to do so this night. Then again, I have supplies enough and am not far from the trade routes. Perhaps a better course would be to wait.\" + \"<br><br>\" + \"@@color:red;Editor's note: Bestseller? And what\u2019s with the notetaking in a different color? This is not promising.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 57,
+      "name": "print_Desert_book",
+      "text": "<<set $print = $print + \"The wizard\u2019s books proved to be so much fascinating gibberish. Valuable gibberish, I\u2019m sure, so I have picked them up and shall carry them upon my person, to sell for a pretty penny once I return to civilization.\" + \"<br><br>\" + \"But I daydream and digress. Folded into one of the books \u2013 a tawdry romance between a human and an impossibly man-shaped genie which I most certainly did not peruse for several hours \u2013 I espied a folded paper. Unfolded, it proved to be a map to a Cave of Wonders, which would explain our captain\u2019s initial shift from the trade routes.\" + \"<br><br>\" + \"I write this, relaxed upon a dune and thoroughly lost. The shifting of the sand sea has rendered the map\u2019s landmarks unreliable at best. I regret now my haste in not packing more food, a regret that has further manifested in the impossible mirage of a distant oasis.\" + \"<br><br>\" + \"Fictionally, of course, I must consider some way to turn this desert meandering into a veritable adventure. Perhaps I was set upon by wolves?\" + \"<br><br>\" + \"@@color:red;Editor's note: Good point. Just about anything would be more exciting than what\u2019s written here.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 58,
+      "name": "Desert_random",
+      "text": "<<display print_Desert_random>>\\s\\n<<if not $oasis>>\\s\\nI have found an oasis! <<display Oasis_no_wolf>>\\n<<else>>\\s\\n<<display Pirates_one>>\\n<<endif>>\\s",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Desert_random",
+            "pid": 25
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Oasis_no_wolf",
+            "pid": 10
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Pirates_one",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "CSS",
+      "text": "/***********************************************************************\\n\\tBLEACHED - A largely white style for SugarCube (v2.0.0+)\\n***********************************************************************/\\nbody {\\n\\tbackground: url('dune5.jpg') no-repeat bottom center fixed; \\n\\tbackground-size: cover;\\n    background-color: #e8eec9;\\n\\tcolor: \\t#111;\\n\\tfont-family: \"Times New Roman\", Times, serif;\\n\\tfont-size: 1.5em;\\n}\\na {\\n\\tcolor: blue;\\n\\t}\\na:hover {\\n\\tcolor: blue;\\n\\ttext-shadow: 2px 2px 5px blue;\\n\\ttext-decoration: none;\\n}\\nbutton {\\n\\tcolor: #111;\\n\\tbackground-color: #acf;\\n\\tborder-color: #8ad;\\n}\\nbutton:hover {\\n\\tbackground: url('images.jpg');\\n\\tbackground-color: #8ad;\\n\\tborder-color: #68b;\\n}\\nbutton:disabled {\\n\\tbackground-color: #ccc;\\n\\tborder-color: #aaa;\\n}\\ninput, select, textarea {\\n\\tcolor: #111;\\n\\tborder-color: #ccc;\\n}\\ninput:focus, select:focus, textarea:focus,\\ninput:hover, select:hover, textarea:hover {\\n\\tbackground-color: #eee;\\n\\tborder-color: #111;\\n}\\nhr {\\n\\tborder-color: #111;\\n}\\n\\n.error {\\n\\tbackground-color: #eaa;\\n\\tborder-left-color: #d77;\\n}\\n\\n#ui-bar {\\n\\tbackground: url('images.jpg') repeat top right; \\n\\tbackground-color: #eee;\\n\\tborder-color: #ccc;\\n\\tcolor: #111;\\n}\\n#ui-bar hr {\\n\\tborder-color: #ccc;\\n}\\n#ui-bar-toggle {\\n\\tcolor: #111;\\n\\tborder-color: #ccc;\\n}\\n#ui-bar-toggle:hover {\\n\\tbackground-color: #ccc;\\n\\tborder-color: #111;\\n}\\n#menu ul {\\n\\tborder-color: #ccc;\\n}\\n#menu li:not(:first-child) {\\n\\tborder-top-color: #ccc;\\n}\\n#menu li a {\\n\\tcolor: #111;\\n}\\n#menu li a:hover {\\n\\tbackground: url('images.jpg');\\n\\tborder-color: #111;\\n}\\n\\n/* Default dialog styling */\\n#ui-overlay {\\n\\tbackground-color: #777;\\n}\\n#ui-dialog-titlebar {\\n\\tbackground-color: #ccc;\\n}\\n#ui-dialog-close:hover {\\n\\tbackground-color: #b44;\\n\\tborder-color: #a33;\\n}\\n#ui-dialog-body {\\n\\tbackground-color: #fff;\\n\\tborder-color: #ccc;\\n}\\n#ui-dialog-body hr {\\n\\tbackground-color: #ccc;\\n}\\n\\n/* List-based dialog styling */\\n#ui-dialog-body.list li:not(:first-child) {\\n\\tborder-top-color: #ccc;\\n}\\n#ui-dialog-body.list li a {\\n\\tcolor: #111;\\n}\\n#ui-dialog-body.list li a:hover {\\n\\tbackground-color: #ccc;\\n\\tborder-color: #111;\\n}\\n\\n/* Saves dialog styling */\\n#ui-dialog-body.saves > *:not(:first-child),\\n#ui-dialog-body.saves tr:not(:first-child) {\\n\\tborder-top-color: #ccc;\\n}\\n#ui-dialog-body.saves .empty {\\n\\tcolor: #777;\\n}\\n\\n/* Settings dialog styling */\\n#ui-dialog-body.settings button[id|=\"setting-control\"] {\\n\\tcolor: #111;\\n\\tborder-color: #ccc;\\n}\\n#ui-dialog-body.settings button[id|=\"setting-control\"]:hover {\\n\\tbackground-color: #eee;\\n\\tborder-color: #111;\\n}\\n#ui-dialog-body.settings button[id|=\"setting-control\"].enabled {\\n\\tbackground-color: #9e9;\\n\\tborder-color: #7c7;\\n}\\n#ui-dialog-body.settings button[id|=\"setting-control\"].enabled:hover {\\n\\tbackground-color: #7c7;\\n\\tborder-color: #5a5;\\n}",
+      "links": []
+    },
+    {
+      "pid": 60,
+      "name": "Cave_with_treasure_wish",
+      "text": "<<display print_Cave_with_treasure_wish>>\\s\\nI wished for wealth. Oh, what a fool, I.\\n\\nAll the treasure of this wondrous cave is indeed mine \u2013 as well as ample food and drink \u2013 but I am trapped as much as Bairn, for the cavern doors will no longer open. He tells me they are covered over in sand, and shall be for another hundred years.\\n\\nA curse upon all genies in their fascile wonders. A curse, I write, in the hopes that some future explorer will find this journal and take heed.\\n\\nThere now, best to write no more lest I muddy the waters of my final warning \u2013 as most readers are known to skip to the end in the perusal of literature as a means of determining the worth of the work.\\n\\nAs I said, I write no more! This publication shall never see the light of day. Farewell.\\n\\n-- Ephram, Lord and Prisoner of the Cave of Wonders\\n<<display end>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Cave_with_treasure_wish",
+            "pid": 48
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "end",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "print_bottom_of_pool",
+      "text": "<<set $print = $print + \"I have found a veritable treasure beneath the crystal waters! I am wealthy beyond belief, if I can but find a convenient means to transport the lucre to civilization! I...must...put...down...the...pen...immediately...\" + \"<br><br>\" + \"@@color:red;Editor's note: Please, don\u2019t keep me in suspense.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 62,
+      "name": "Ship_afire",
+      "text": "<<display print_Ship_afire>>\\s\\n<<set $rescue = true>>\\s\\nI write these words from the dune some dozen miles from the site of our crash, yet the smoke from the burning ship still blackens the far horizon.\\n\\nThe [[shifting sands|cave_start]] have already obscured my footprints, and while thirst consumes my thoughts, I cannot but doubt the vision of a [[palm studded oasis|oasis_start]] in the distance.\\n\\nThis is crazy. If I stay put, someone will surely [[see the smoke|See_the_smoke]].",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Ship_afire",
+            "pid": 71
+          }
+        },
+        {
+          "text": "shifting sands",
+          "destination": {
+            "name": "cave_start",
+            "pid": 76
+          }
+        },
+        {
+          "text": "palm studded oasis",
+          "destination": {
+            "name": "oasis_start",
+            "pid": 43
+          }
+        },
+        {
+          "text": "see the smoke",
+          "destination": {
+            "name": "See_the_smoke",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "print_Pirates_nearby_chatter",
+      "text": "<<set $print = $print + \"A fetching the lady pirate came to me in the night. Supposing me learned, she asked for some opinion that the grafted plate across her arms and legs were not going bad. While I was able to offer her little in the way of peace of mind, she straightaway proposed that I should comfort her in a more traditional manner. I will only state, dear reader, that it was a bit more involved than holding hands.\" + \"<br><br>\" + \"Imagine my surprise when, drowsy upon the deck of the ship, she informed me that I was to be sent to the Cave of Wonders come morning; which is indeed hard upon us.\" + \"<br><br>\" + \"@@color:red;Editor's note: Let\u2019s work this up into a steamy romance scene.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 64,
+      "name": "Cave_treasure",
+      "text": "<<display print_Cave_treasure>>\\s\\nI sit surrounded by untold wealth, all manner of treasure, which resides in some manner of vault. Coins, gems, chalices of gold, [[rugs of the finest silk|Cave_rug]], everything I could possibly want, except food and water.\\n\\nI have a skeleton for company, one dressed in ragged sailing rags and clutching a [[battered brass lamp|Cave_lamp]]. Truth to tell, he is not much for conversation. What can I take and what must I leave, in my attempts to return to the surface?",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Cave_treasure",
+            "pid": 19
+          }
+        },
+        {
+          "text": "rugs of the finest silk",
+          "destination": {
+            "name": "Cave_rug",
+            "pid": 21
+          }
+        },
+        {
+          "text": "battered brass lamp",
+          "destination": {
+            "name": "Cave_lamp",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "Desert_food",
+      "text": "<<display print_Desert_food>>\\s\\n<<set $food = true>>\\s\\nI am lost. \\n\\nMy every step was washed away by the shifting sandsea, and by the end of the day the wreckage of my ship is out of sight. If not for the impossible mirage of a [[distant oasis|oasis_start]] that has tempted me these past hours, I would not be certain I had not been walking in circles.\\n\\nBah, sand nearly clogged the pen and I am thoroughly frustrated. [[I should simply pick a direction|either(\"cave_start\",\"oasis_start\",\"Pirates_one\")]] and continue walking...\\n\\nSuffice it to say, meaningless desert meanderings do not a compelling adventure make. I thought heard a wolf last night. Perhaps, in my final chronicle, [[I had an encounter with danger?|Oasis_embellishment]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Desert_food",
+            "pid": 67
+          }
+        },
+        {
+          "text": "distant oasis",
+          "destination": {
+            "name": "oasis_start",
+            "pid": 43
+          }
+        },
+        {
+          "text": "I had an encounter with danger?",
+          "destination": {
+            "name": "Oasis_embellishment",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "See_the_smoke",
+      "text": "<<display print_See_the_smoke>>\\s\\nIt is as I hoped! A ship is even now on course for our crash site. With my final flare, she changes course! Exuberance. I pen these words as a brief coda to my journey \u2013 more short story than novel, I fear, but there can be [[embellishment|Oasis_embellishment]]. Perhaps an attack by wolves?\\n\\nMy savior\u2019s ship is a clean lined frigate, her thrusters bright and blue, her sails\u2026 Her sales black as night, her flag a grinning skull. Already, I can see men moving aboard, rifles ready. Perhaps there is [[room for one more pirate|Pirates_one]]? Perhaps I shall not be summarily shot, my body to swing from the yardarm in grim testament to their ferocity. Perhaps\u2026",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_See_the_smoke",
+            "pid": 70
+          }
+        },
+        {
+          "text": "embellishment",
+          "destination": {
+            "name": "Oasis_embellishment",
+            "pid": 14
+          }
+        },
+        {
+          "text": "room for one more pirate",
+          "destination": {
+            "name": "Pirates_one",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "print_Desert_food",
+      "text": "<<set $print = $print + \"I am lost.\" + \"<br><br>\" + \"My every step was washed away by the shifting sandsea, and by the end of the day the wreckage of my ship is out of sight. If not for the impossible mirage of a distant oasis that has tempted me these past hours, I would not be certain I had not been walking in circles.\" + \"<br><br>\" + \"Bah, sand nearly clogged the pen and I am thoroughly frustrated. I should simply pick a direction and continue walking...\" + \"<br><br>\" + \"Suffice it to say, meaningless desert meanderings do not a compelling adventure make. I thought heard a wolf last night. Perhaps, in my final chronicle, I had an encounter with danger?\" + \"<br><br>\" + \"@@color:red;Editor's note: Good point. Just about anything would be more exciting than what\u2019s written here.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 68,
+      "name": "print_About_the_author",
+      "text": "Our esteemed author is a pilot of some small skill and no little ambition, hailing from the city of Dust in the high northern desert. His captain sparked a measure of literary ambition by lending him several well-loved dime novels to pass the time on the long run to the Crescent Cities. Assuming a satisfactory outcome, Ephram's legacy is detailed in the novel, [[Nothing Left to Wish For|http:<em>www.amazon.com/gp/product/B00QU5PO9G]].\\n\\nAndrew G. Schneider always wanted to be a wizard when he grew up; now he makes magic with words. When not writing, he hunts the wild dust bunny and makes a mean pot of French onion soup. He lives in Washington, D.C., believes in unicorns, and is married to a wonderful woman who believes in him. He is the author of the sand-slinging, swashbuckling adventure novel, [[Nothing Left to Wish For|http:<em>www.amazon.com/gp/product/B00QU5PO9G]], and the Tales from a Coffee Shop Princess; [[Waiting for My Happily Ever After|http:<em>www.amazon.com/gp/product/B017WJZZKG]] and [[Undercaffeinated and Overexposed|http:<em>www.amazon.com/gp/product/B00QU6ITFQ]]. Find him on Facebook or check out his ocassionally updated website.\\n\\n<<if not $About_the_author>>\\s\\n[[Ahem. I find my captain's logbook, set pen to paper...|logbook_start]]\\n<<endif>>\\s",
+      "links": [
+        {
+          "text": "Ahem. I find my captain's logbook, set pen to paper...",
+          "destination": {
+            "name": "logbook_start",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "pistol_against_wolf",
+      "text": "My [[pistol|Oasis_pistol]] will little inconvenient such beast, I worry, unless my shot strikes true.",
+      "links": [
+        {
+          "text": "pistol",
+          "destination": {
+            "name": "Oasis_pistol",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "print_See_the_smoke",
+      "text": "<<set $print = $print + \"It is as I hoped! A ship is even now on course for our crash site. With my final flare, she changes course! Exuberance. I pen these words as a brief coda to my journey \u2013 more short story than novel, I fear, but there can be embellishment. Perhaps an attack by wolves?\" + \"<br><br>\" + \"My savior\u2019s ship is a clean lined frigate, her thrusters bright and blue, her sails\u2026 Her sales black as night, her flag a grinning skull. Already, I can see men moving aboard, rifles ready. Perhaps there is room for one more pirate? Perhaps I shall not be summarily shot, my body to swing from the yardarm in grim testament to their ferocity. Perhaps\u2026\" + \"<br><br>\" + \"@@color:red;Editor's note: The ludicrous in medius res timing of these journal entries makes me question the veracity of this entire tale.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 71,
+      "name": "print_Ship_afire",
+      "text": "<<set $print = $print + \"I write these words from the dune some dozen miles from the site of our crash, yet the smoke from the burning ship still blackens the far horizon.\" + \"<br><br>\" + \"The shifting sands have already obscured my footprints, and while thirst consumes my thoughts, I cannot but doubt the vision of a palm studded oasis in the distance.\" + \"<br><br>\" + \"This is crazy. If I stay put, someone will surely see the smoke.\" + \"<br><br>\" + \"@@color:red;Editor's note: This is clearly filler for an aspiring writer who lacks both inspiration and talent.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 72,
+      "name": "a_bit_more_involved",
+      "text": "<<display print_a_bit_more_involved>>\\s\\nI must consider that certain readers are rather fond of a good bodice ripper. Best to research appropriate prose when possible, for I was not as adept at untying knots as the dear lady had hoped. Also, I should skip the part whereupon she felt the need to instruct me in the manner of her comfort, having to this point had less than little experience in the matter.\\n\\nAh, there's [[the dawn...|pirates_to_the_cave]]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_a_bit_more_involved",
+            "pid": 4
+          }
+        },
+        {
+          "text": "the dawn...",
+          "destination": {
+            "name": "pirates_to_the_cave",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "print_Cave_freedom_wish",
+      "text": "<<set $print = $print + \"My wish for freedom was granted, most certain.\" + \"<br><br>\" + \"Oh, clever Bairn, to play such a trick. I applaud you, sir genie.\" + \"<br><br>\" + \"You see, dear reader (though who shall read these words now, I know not), I have full freedom. I do not want for food nor drink, and indeed upon my exit from the cave I shortly found a traveling vessel to bear me to civilization.\" + \"<br><br>\" + \"Were that the sum of my fortune, I would be content. It is however, not to be. I was also rendered, by some arcane manner, wholly invisible and inaudible to my fellows. Never shall I find fame nor fortune, or again partake in the pleasure of society \u2013 save by proxy. This chronicle of my journeys, my sole possession in this new, intolerable and intangible state, shall remain entirely unpublished.\" + \"<br><br>\" + \"Fie, I say. And fie again on all djinn!\" + \"<br><br>\" + \"-- Ephram, Ghost of the Desert\"+ \"<br><br>\" + \"@@color:red;Editor's note: Entirely unpublished? That\u2019s one thing the author and I can agree on. Call my assistant, where did this manuscript come from, anyway?@@\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 74,
+      "name": "Oasis_eat_and_drink_my_fill",
+      "text": "<<if not $tree_note>><<display print_Oasis_eat_and_drink_my_fill>><<endif>>\\s\\n<<set $eating_at_oasis = true>>\\s\\n<<set $food = true>>\\s\\nWith much chagrin, I must explain how I lowered my guard, succumbing to happy slumber, <<if $wolf>>only to be woken by the wolf's return! Barely <<else>>only to find I was not alone in this desolation. A lone wolf approached the oasis while I slept, and barely <<endif>>did I take refuge in this palm tree from which I write these words \u2013 before his snapping jaws nearly tore me in half. <<if not $wolf>><<display wolf_description>><<endif>>\\n\\nStill, the wolf must sleep or hunt eventually. I am resolved to wait him out. <<if $pistol>><<display pistol_against_wolf>><<endif>>\\n\\n@@color:green;<<if not $tree_note>>//[[Note to self: |Oasis_eat_and_drink_my_fill][$tree_note = true]]//<<else>>//Note to self: This a rather ignominious situation in which I find myself. Perhaps I might [[spruce up|Oasis_embellishment]] the events while awaiting the wolf's departure?// <<endif>>@@",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Oasis_eat_and_drink_my_fill",
+            "pid": 30
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "wolf_description",
+            "pid": 51
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "pistol_against_wolf",
+            "pid": 69
+          }
+        },
+        {
+          "text": "Note to self: ",
+          "destination": {
+            "name": "Oasis_eat_and_drink_my_fill",
+            "pid": 74
+          }
+        },
+        {
+          "text": "spruce up",
+          "destination": {
+            "name": "Oasis_embellishment",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "print_Cave_fate",
+      "text": "<<set $print = $print + \"Wonder and benevolence! I write this, comfortably ensconced on \">><<if not $pirates>><<set $print = $print + \"a vessel most piratical that passed even as I stumbled, by chance and haphazard, from the door of that dreadful place.\">><<else>><<set $print = $print + \"the pirate ship, which was kind enough to await my return.\">><<endif>><<set $print = $print + \"<br><br>\" + \"So surprised was their captain \">><<if not $pirates>><<set $print = $print + \"at my appearance\">><<else>><<set $print = $print + \"at my return\">><<endif>><<set $print = $print + \", that he took me up right away and made me feel at home. He had, in fact, been offering a great reward to his crewmen for the exploration of the cave, but none had ever returned. By his own admission, it was promised the position of first mate to any who survived, and now that is yours truly.\" + \"<br><br>\" + \"Ah, to feel the honest thrum of thrusters beneath the deck once more! To listen to the creak of the yardarms, and the snap of sails in the wind. Any further countenance of my journey shall have to wait. Duty calls!\" + \"<br><br>\" + \"-- Ephram, First Mate of the Old Wildcat.\" + \"<br><br>\" + \"@@color:red;Editor's note: A banal ending to a boring tale. Ahem, dear Sir, well we read your manuscript with great interest, we regret to inform you that it does not meet the needs of our readership at this time\u2026@@\">>\\s",
+      "links": []
+    },
+    {
+      "pid": 76,
+      "name": "cave_start",
+      "text": "<<if not $cave>>\\s\\n<<display print_cave_start>>\\s\\nMy passage through the desert has taken a most peculiar turn. <<endif>>\\s\\n<<display cave_description>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_cave_start",
+            "pid": 36
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "cave_description",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "Cave_lamp",
+      "text": "<<if not $lamp_note>>\\s\\n<<display print_Cave_lamp>>\\s\\n<<endif>>\\s\\nWith one touch, the lamp came to life and out sprang a most wondrous creature \u2013 a genie in the form of a short, hirsute man. It calls itself Bairn and offers to grant any one wish. [[Fortune|Cave_with_treasure_wish]] has been suggested, and [[freedom|Cave_freedom_wish]], but I cannot wonder if there is not some [[other thing I desire|Cave_trick]]. After all, my skeletal friend was given a similar set of options\u2026 @@color:green;<<if not $lamp_note>>//[[Note to self: |Cave_lamp][$lamp_note = true]]//<<else>>//Note to self: The ellipses indicate my deep thought upon this matter. In truth, Bairn paces before me, demanding an answer and quite shaking my resolve.//<<endif>>@@",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "print_Cave_lamp",
+            "pid": 46
+          }
+        },
+        {
+          "text": "Fortune",
+          "destination": {
+            "name": "Cave_with_treasure_wish",
+            "pid": 60
+          }
+        },
+        {
+          "text": "freedom",
+          "destination": {
+            "name": "Cave_freedom_wish",
+            "pid": 20
+          }
+        },
+        {
+          "text": "other thing I desire",
+          "destination": {
+            "name": "Cave_trick",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Note to self: ",
+          "destination": {
+            "name": "Cave_lamp",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "print_I_can_free_the_lifeboat",
+      "text": "<<set $print = $print + \"I am out of food and water.\" + \"<br><br>\" + \"Blame the crew! They, gathered like gluttons around the table, insisted upon a grand feast. We drank, and we sang, and in fury I knocked the grinning smirks from their faces.\" + \"<br><br>\" + \"\u2026 I reread the words above, etched indelibly in my own hand, and consider that I was drunk, mad, or both. The bones of my fellows were set around the dinner table, yet I remember not exhuming them from the sands. Is it time for the pistol?\" + \"<br><br>\" + \"Worse, I had hoped free the lifeboat from its sandy tomb, but in my haste I spun up the emergency thruster. Its frenzy has sealed the fate of the ship in a wall of black glass. By noon tomorrow, the heat of the reflected sunlight will set the hull afire.\" + \"<br><br>\" + \"@@color:red;Editor's note: Unbelievable. And the bit with the lifeboat? This shows a level of incompetence beyond that of any accredited pilot.@@\" + \"<br><hr>\">>\\s",
+      "links": []
+    }
+  ]
+}

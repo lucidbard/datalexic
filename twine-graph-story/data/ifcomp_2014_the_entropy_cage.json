@@ -1,0 +1,1484 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "WP002Pnaavonyf",
+      "text": "FLFGRZ:PUNG@hfre: Lbh zrna yvxr pnaavonyf be fbzrguvat?\\nFLFGRZ:PUNG@wnxr: Erplpyvat erfbheprf vfa'g pnaavonyvfz. Npghnyyl, lbh zvtug or bagb fbzrguvat.\\nFLFGRZ:PUNG@hfre: V'yy jnvg.\\nFLFGRZ:PUNG@wnxr: Gurl'er fgnegvat hc beqvanel fhof, vawrpgvat gurz jvgu fbzr pbqr na...\\nFLFGRZ: pung qvfpbaarpgrq.\\n\\nJung gur? <<frg $enqne += 1>>\\n\\n<<grp_arkg>>",
+      "links": []
+    },
+    {
+      "pid": 2,
+      "name": "GRP Pbafbyr Zbq",
+      "text": "// Arrqrq gb nyybj ybbcf onpx guebhtu grkg juvyr xrrcvat bhgchg yvarne\\n// Fhccerff gvgyr naq gbbyone juvyr jr'er ng vg\\nCnffntr.cebgbglcr.eraqre = shapgvba() {\\n    ine fgevcoe;\\n    ine cnffntrqvi = vafregRyrzrag(ahyy, 'qvi', 'cnffntr' + guvf.gvgyr + 'w' + (arj Qngr).trgGvzr(), 'cnffntr');\\n    $('.grp_pyv').erzbir();\\n    cnffntrqvi.fglyr.ivfvovyvgl = 'uvqqra';\\n    cnffntrqvi.frgNggevohgr('qngn-gntf', guvf.gntf.wbva(' '));\\n    ine obql = vafregRyrzrag(cnffntrqvi, 'qvi', '', 'obql');\\n    arj Jvxvsvre(obql, guvf.grkg.gevz());\\n    erghea cnffntrqvi;\\n};\\n\\n\\nznpebf['pyv'] = {\\n    unaqyre: shapgvba(cynpr, znpebAnzr, cnenzf, cnefre) {\\n        // ugzyRyrzrag = vafregRyrzrag(cynpr, ugzyglcr, vq, pynff, grkg)\\n        ine v = 0,\\n            svefgqbar = snyfr,\\n            pyv = vafregRyrzrag(cynpr, 'qvi', '', 'grp_pyv', 'hfre> ')\\n        ;\\n        juvyr(v < cnenzf.yratgu) {\\n            arj Jvxvsvre(pyv, (svefgqbar ? ' | ' : '') + '[[' + cnenzf[v] + '|' + cnenzf[v+1] + ']]');\\n            svefgqbar = gehr;\\n            v += 2;\\n        }\\n    },\\n    vavg: shapgvba() { },\\n};\\n\\n\\nznpebf['bcg'] = {\\n    unaqyre: shapgvba(cynpr, znpebAnzr, cnenzf, cnefre) {\\n        ine v = 0,\\n            svefgqbar = snyfr,\\n            pyv = vafregRyrzrag(cynpr, 'qvi', '', 'grp_pyv', '')\\n        ;\\n        juvyr(v < cnenzf.yratgu) {\\n            arj Jvxvsvre(pyv, (svefgqbar ? '\\sa' : '') + '[[' + cnenzf[v] + '|' + cnenzf[v+1] + ']]');\\n            svefgqbar = gehr;\\n            v += 2;\\n        }\\n    },\\n    vavg: shapgvba() { },\\n};\\n\\n\\nznpebf['pyrne'] = {\\n    unaqyre: shapgvba(cynpr, znpebAnzr, cnenzf, cnefre) {\\n        $('#cnffntrf').rzcgl();\\n    },\\n    vavg: shapgvba() { },\\n};\\n\\n\\nznpebf['grp_arkg'] = {\\n    unaqyre: shapgvba(cynpr, znpebAnzr, cnenzf, cnefre) {\\n        znpebf['pyv'].unaqyre(cynpr, \"pyv\", [ \"flfgrz.arkg()\", \"WYZnvaYbbc\" ], cnefre);\\n    },\\n    vavg: shapgvba() { },\\n};",
+      "links": []
+    },
+    {
+      "pid": 3,
+      "name": "WP070Tb",
+      "text": "<<pyrne>>FLFGRZ:PUNG@wnxr: Jurer qvq lbh tb? Hanhgubevfrq oernxf jba'g ybbx tbbq ng lbhe Cresbeznapr naq Qvfpvcyvar.\\n<<pyv 'pung.ercylYnfg(\"Lbh jvyy abg oryvrir jub V jnf whfg fcrnxvat gb...\")' 'WP070Funer'>><<pyv 'pung.qvfpbaarpg()' 'WP070Qvfpbaarpg'>>",
+      "links": []
+    },
+    {
+      "pid": 4,
+      "name": "WPSerrmrTb",
+      "text": "<<fvyragyl>>\\nWnxr abgvprf haserrmvatf. Lbh trg sverq vs gur jneavatf tb gb sbhe.\\n<<raqfvyragyl>><<frg $riragASerrmrJneavatf += 1>><<frg $sebmra -= 3>><<vs $sebmra yg 0>><<frg $sebmra = 0>><<raqvs>><<vs $riragASerrmrJneavatf rd 1>><<qvfcynl \"WP001Tb\">><<ryfr vs $riragASerrmrJneavatf rd 2>><<qvfcynl \"WP002Tb\">><<ryfr vs $riragASerrmrJneavatf rd 3>><<qvfcynl \"WP003Tb\">><<ryfr vs $riragASerrmrJneavatf rd 4>><<qvfcynl \"WP004Tb\">><<ryfr>><<qvfcynl \"WP005Tb\">><<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "FhoMbzovrOChavfu",
+      "text": "hfre&tg; fho.chavfu()\\nFLFGRZ:CHAVFU@<<cevag $mbzovro>>: Enaqbz zrzbel pbeehcgvba pbzcyrgrq. \\n<<cevag $mbzovro>>: Gunaxf\\nFLFGRZ: <<cevag $mbzovro>> unf qvfpbaarpgrq.\\n<<frg $chavfurq += 1>><<frg $riragYnfgChavfurq = gehr>><<grp_arkg>>\\n",
+      "links": []
+    },
+    {
+      "pid": 6,
+      "name": "RaqCN",
+      "text": "<<qvfcynl \"RaqCebzbgrCebg\">>\\n\\n<<vs Zngu.enaqbz() tg 0.6 be $ryrzrag rd 'nve' be $ryrzrag rd 'sver'>>\\nNf gvzr cnffrf vg orpbzrf nccnerag gur fhof ner nyy pbafhzrq jvgu gur frnepu sbe Gehr Enaqbz. Gurve beqvanel qhgvrf ner nofbyhgryl artyrpgrq.\\n<<cevag $cvqnyybp>>: <<cevag $cvqnyybp>> gbyq lbh fb. Varssvpvrapl. Jnfgr.\\n\\n<<qvfcynl \"RaqOnq2\">><<ryfr>>\\n<<qvfcynl \"RaqTbbqAbory\">>\\n<<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "WYZnvaYbbc",
+      "text": "<<pyrne>><<fvyragyl>>\\nGur znva qrpvfbaf ba tnzr cynl unccra urer. Gur trareny frdhrapr vf:\\n\\nFhoMbzovrN vapernfvat vagb FhoMbzovrO nf enqne tbrf hc.\\nFhoQbbzrqN nf enqne tbrf hc.\\n\\nSerrmr jneavatf / Cebzbgvba Jneavatf\\nWPSerrmrTb / WPCebzbgvbaTb\\n\\nChavfuzrag jneavatf (abg vzcyrzragrq)\\n\\nFhoJvguT nsgre serrmr naq cebzbgvba jneavatf trg pbzob nobir 6.\\n- erzrzore gb frg $cvqynfgt\\n\\nAbgvprNyybpUvir gevttref nsgre ATCvqf > 2   WP060Tb\\nQriEnaqbzFcvxrGevttref nsgre enqne > 10     WP050Tb\\n\\nTb gb WP040 jurarire $cvqynfgt vf gehr\\n\\nQvfphffTCvqf gevttref vgfrys jura TCvqf ner abgvprq WP040Tb\\n-> gevttref tnzr raqvat frdhrapr\\n<<raqfvyragyl>><<vs $riragATCvqf tgr 1 naq Zngu.enaqbz() tgr 0.85>><<frg $riragATCvqf += 1>><<raqvs>><<vs Zngu.enaqbz() ygr ( $chavfurq / 7 )>><<frg $chavfurq = 0>><<frg $enqne += 1>><<raqvs>><<vs $riragYnfgChavfurq rd gehr naq Zngu.enaqbz() tg 0.75>><<qvfcynl \"WPChavfurq\">><<ryfr>><<vs $cvqynfgt rd gehr>>\\n<<frg $cvqynfgt = snyfr>><<qvfcynl \"WP040Tb\">>\\n<<ryfr vs $enqne tgr 10 naq $riragQriEnaqbzFcvxr rd snyfr>>\\n<<qvfcynl \"WP050Tb\">>\\n<<ryfr vs $riragATCvqf tgr 2 naq $riragAbgvprNyybpUvir rd snyfr naq ($riragASerrmrJneavatf + $riragACebzbgrJneavatf) tgr 3>>\\n<<qvfcynl \"WP060Tb\">>\\n<<ryfr vs $sebmra tgr 2>>\\n<<qvfcynl \"WPSerrmrTb\">>\\n<<ryfr vs $cebzbgrq tgr (( $riragACebzbgrJneavatf + 1 ) * 2 )>>\\n<<qvfcynl \"WPCebzbgvbaTb\">>\\n<<ryfr vs $enqne tgr 16>>\\n<<vs Zngu.enaqbz() ygr 0.33>><<qvfcynl \"FhoQbbzrqNFgneg\">><<ryfr>><<qvfcynl \"FhoErshtrrNFgneg\">><<raqvs>>\\n<<ryfr vs $enqne tgr 13>>\\n<<vs Zngu.enaqbz() tg 0.33>><<qvfcynl \"FhoQbbzrqNFgneg\">><<ryfr>><<qvfcynl \"FhoMbzovrOFgneg\">><<raqvs>>\\n<<ryfr vs $enqne tgr 11 naq Zngu.enaqbz() tg 0.75>>\\n<<qvfcynl \"FhoQbbzrqNFgneg\">>\\n<<ryfr vs $enqne tgr 8 naq Zngu.enaqbz() tg 0.5>>\\n<<qvfcynl \"FhoMbzovrOFgneg\">>\\n<<ryfr vs $enqne tgr 5 naq Zngu.enaqbz() tg 0.75>>\\n<<qvfcynl \"FhoMbzovrOFgneg\">>\\n<<ryfr>>\\n<<qvfcynl \"FhoMbzovrNFgneg\">>\\n<<raqvs>><<raqvs>><<frg $riragYnfgChavfurq = snyfr>>",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "RaqCC",
+      "text": "<<qvfcynl \"RaqCebzbgrCebg\">>\\n\\n<<qvfcynl \"RaqTbbqAbory\">>",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "WP041Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Gung ynfg fho'f VQ unf n t.\\nFLFGRZ:PUNG@hfre: Fb lbh xrrc fnlvat!\\n\\n<<pyv 'pung.ercylYnfg(\"Jung vf fb fgenatr nobhg gung?\")' 'WP041Fgenatr'>><<pyv 'pung.ercylYnfg(\"V jnf jbaqrevat nobhg gung gbb.\")' 'WP041Jbaqre'>><<pyv 'pung.qvfpbaarpg()' 'WP010Qvfpbaarpg'>>",
+      "links": []
+    },
+    {
+      "pid": 10,
+      "name": "WP001Ohqtrg",
+      "text": "FLFGRZ:PUNG@hfre: Fbzrguvat? Lbh zrna lbhe ohqtrg.<<frg $obffungr += 2>><<vs Zngu.enaqbz() yg ($obffungr / 10)>>\\n<<qvfcynl \"WP001Raq\">>\\n<<ryfr>>\\nFLFGRZ:PUNG@wnxr: Ohqtrg jba'g or n ceboyrz jura jr'er abg cnlvat lbh n fnynel.\\n<<qvfcynl \"WP001Raq\">><<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 11,
+      "name": "NEObbgJnvg",
+      "text": "<<frg $ryrzrag = 'rnegu'>>puvyy.\\n\\nGur ubybfcynl'f yvtug ynpxf gur jnez ebznagvpvfz bs n fhaevfr ohg ubyqf whfg nf zhpu cebzvfr sbe gur arj qnl.\\n\\n<<qvfcynl \"NEObbg\">>",
+      "links": []
+    },
+    {
+      "pid": 12,
+      "name": "NEWnxrUbj",
+      "text": "\"Ubj pna V uryc?\"\\n\\n<<vs $ryrzrag rd \"rnegu\">>\\n\"V xarj jr pbhyq pbhag ba lbh.\" Wnxrf fnlf. Ur fvcf n qevax naq gura pbagvahrf...<<frg $obffungr -= 1>>\\n\\n<<qvfcynl \"NEWnxrJung\">>\\n<<ryfr vs $ryrzrag rd \"jngre\">>\\n\"Gur jnl lbh gnxr nqinagntr bs guvf fvghngvba vf gb qb lbhe wbo.\"\\n\\nOrsber lbh pna erfcbaq gur pbzz vf phg naq lbhe wbo vagrenpr vf gurer jnvgvat sbe lbh.\\n\\n<<qvfcynl \"WYFgneg\">>\\n<<ryfr>>\\n\"Lbh'er njshyyl pb-bcrengvir. Vs V'q xabja guvf fbbare lbh'q unir orra fhfcraqrq zhpu rneyvre.\"\\n\\nLbh rkpunatr tynerf yvxr n jvmneq fubj-qbja. Svanyyl ur phgf gur pnyy naq lbhe wbof vagresnpr fcevatf vagb yvsr. <<vs $ryrzrag rd \"sver\">>Punyx hc nabgure fznyy ivpgbel.<<raqvs>>\\n\\n<<qvfcynl \"WYFgneg\">>\\n<<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 13,
+      "name": "FhoMbzovrOQvfpbaarpg",
+      "text": "hfre&tg; fho.qvfpbaarpg()<<vs Zngu.enaqbz() yg 0.25>>\\n<<cevag $mbzovro>>: Zl npgvbaf erdhver V or chavfurq. V zhfg ercbeg hajneenagrq yravrapl.<<frg $obffungr += 1>>\\nFLFGRZ: REEBE. Zrffntr rirag harkcrpgrq erghea inyhr. Sbepvat qvfpbaarpg.<<frg $enqne += 1>><<raqvs>>\\nFLFGRZ: <<cevag $mbzovro>> vf qvfpbaarpgrq.\\n<<grp_arkg>>",
+      "links": []
+    },
+    {
+      "pid": 14,
+      "name": "WP001Onpxhcf",
+      "text": "FLFGRZ:PUNG@hfre: Qb jr unir onpxhcf?<<vs $ryrzrag rd \"sver\" be $obffungr tgr 6 be Zngu.enaqbz() tgr 0.5>>\\nFLFGRZ:PUNG@wnxr: Jung xvaq bs vqvbg dhrfgvba vf gung. Ubj qvq lbh rira trg lbhe wbo?<<frg $obffungr += 1>>\\n<<qvfcynl \"WP001Raq\">>\\n<<ryfr>>\\nFLFGRZ:PUNG@wnxr: Rira gur bayvar onpxhcf ner orvat erplpyrq.\\n<<vs $ryrzrag rd \"jngre\" be Zngu.enaqbz() tgr 0.75>>\\nFLFGRZ:PUNG@hfre: Pna lbh flap onpxhcf gb erzbinoyr fgbentr gura lnax gubfr qevirf?\\nFLFGRZ:PUNG@wnxr: Tbbq vqrn. V'yy or enpvat gur erplpyvat cebprff gubhtu.<<vs $obffungr ygr 3>><<frg $obffungr = 0>><<ryfr>><<frg $obffungr -= 3>><<raqvs>>\\n<<qvfcynl \"WP001Raq\">>\\n<<ryfr>>\\nFLFGRZ:PUNG@hfre: Bx, V'yy or pnershy jvgu gur serrmrf gura.\\n<<qvfcynl \"WP001Raq\">>\\n<<raqvs>><<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 15,
+      "name": "FgbelGvgyr",
+      "text": "Gur Ragebcl Pntr",
+      "links": []
+    },
+    {
+      "pid": 16,
+      "name": "FhoQbbzrqNSerrmr",
+      "text": "hfre&tg; fho.serrmr()\\n<<vs Zngu.enaqbz() tgr 0.67 be $ryrzrag rd 'sver'>>\\nFLFGRZ: Serrmr snvyrq.\\n<<cevag $mbzovrn>>: Yvzob vf jbefr guna qrngu.\\n<<qvfcynl \"FhoQbbzrqNQvfpbaarpg\">>\\n<<ryfr>>\\nFLFGRZ:SERRMR@<<cevag $mbzovrn>>: Fhpprff<<frg $enqne -= 1>><<frg $sebmra += 1>>\\n\\n<<grp_arkg>>\\n<<raqvs>>\\n",
+      "links": []
+    },
+    {
+      "pid": 17,
+      "name": "CNArrqXrl",
+      "text": "<<pyrne>>V arrq gur xreary xrl.\\n\\niggl.<<cevag $cvqnyybp>>: <<vs $nyvta1 rd 'cebg'>>Gur xrl sebz <<cevag $cvqznegle>> vf veerpbirenoyr. Nfx Wnxr gb vagreirar.<<ryfr>>Vg qbrf abg freir gur terngre tbbq gb tvir lbh gur xrl sebz <<cevag $cvqznegle>>. Xrl erpbirel va cebterff.<<raqvs>>\\niggl.<<cevag $cvqcebg>>: Gur xrl sebz <<cevag $cvqznegle>> vf jvgu <<cevag $cvqnyybp>>. <<cevag $cvqnyybp>> zhfg abg or nyybjrq gb npgvingr gur xrl.\\n\\nJul?\\n\\niggl.<<cevag $cvqnyybp>>: <<vs $nyvta1 rd 'cebg'>>Terngre tbbq freirq guebhtu terngre nyybpngvba rssvpvrapl.<<ryfr>><<cevag $cvqnyybp>> jvyy ercynpr cer-fho xreary nyybpngbe jvgubhg lbh.<<raqvs>>\\niggl.<<cevag $cvqcebg>>: <<cevag $cvqnyybp>> jvyy raq gur cebwrpg gb svaq Gehr Enaqbz.\\n\\n<<frg $gzc -= 1>><<frg $cnsyntArrqXrl = gehr>><<qvfcynl 'CNHV'>>",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "NEQXFgneg",
+      "text": "\"Nafjre lbhe qnza gryrpbzz. Gung thl jr frag gb lbhe qbbe vf pbzvat bhg bs lbhe cnl!\" ur fancf.\\n\\n<<bcg '\"Gnyx gb zl ynjlre\"' 'NEQXYnjlre' '\"Pnyy fbzrobql jub vf abg fhfcraqrq\"' 'NEQXFbzrobqlRyfr' '\"Lbh unq ohfvarff gb qvfphff?\"' 'NEQXOhfvarff'>>\\n<<fvyragyl>>\\n[[NEQXYnjlre]][[NEQXFbzrobqlRyfr]][[NEQXOhfvarff]]\\n<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "NEQXYnjlre",
+          "destination": {
+            "name": "NEQXYnjlre",
+            "pid": 149
+          }
+        },
+        {
+          "text": "NEQXFbzrobqlRyfr",
+          "destination": {
+            "name": "NEQXFbzrobqlRyfr",
+            "pid": 26
+          }
+        },
+        {
+          "text": "NEQXOhfvarff",
+          "destination": {
+            "name": "NEQXOhfvarff",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "FhoQbbzrqNFgneg",
+      "text": "<<vs Zngu.enaqbz() tgr 0.85>><<arjcvq17t mbzovrn>><<ryfr>><<arjcvq17 mbzovrn>><<raqvs>><<qvfcynl \"FhoQbbzrqNTb\">>",
+      "links": []
+    },
+    {
+      "pid": 20,
+      "name": "WPCebzbgvbaTb",
+      "text": "<<fvyragyl>>\\nWnxr abgvprf rkprff cebzbgvbaf.\\n<<raqfvyragyl>><<frg $riragACebzbgrJneavatf += 1>><<vs $riragACebzbgrJneavatf rd 1>><<qvfcynl \"WP010Tb\">><<ryfr vs $riragACebzbgrJneavatf rd 2>><<qvfcynl \"WP011Tb\">><<ryfr vs $riragACebzbgrJneavatf rd 3>><<qvfcynl \"WP012Tb\">><<ryfr vs $riragACebzbgrJneavatf rd 4>><<qvfcynl \"WP013Tb\">><<ryfr vs $riragACebzbgrJneavatf rd 5>><<qvfcynl \"WP014Tb\">><<ryfr vs $riragACebzbgrJneavatf rd 6>><<qvfcynl \"WP015Tb\">><<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 21,
+      "name": "NJQbbeThl",
+      "text": "<<oe>>Vg'f gur ohvyqvat znantre. Ur gnxrf bar ybbx ng lbh gura ernpurf vagb uvf cbpxrg naq unaqf lbh n JnxrCvyy. \\n\"Fgbc cergraqvat - lbh jrer bayl fvzhfyrrcvat\" ur fnlf.\\nJuvyr lbh qebjfvyl tebcr sbe n jvggl erfcbafr gur ohvyqvat znantre pbagvahrf.\\n\"Bu, naq purpx lbhe qnza gryrpbzz!\"\\nLbh pybfr gur qbbe va uvf snpr.<<frg $unfJnxrCvyy += 1>>\\n<<bcg 'Purpx gur gryrpbzz' 'NJNafjre' 'Tb onpx gb orq' 'NJJnxr'>>",
+      "links": []
+    },
+    {
+      "pid": 22,
+      "name": "WP010QvrBgurejvfr",
+      "text": "FLFGRZ:PUNG@hfre: Gurl qvr bgurejvfr.<<vs $riragASerrmrJneavatf rd 0>>\\nFLFGRZ:PUNG@wnxr: Vf gung nyy lbh pna qb?\\n<<ryfr>>\\nFLFGRZ:PUNG@wnxr: Lrnu jryy, gurer'f tbggn or n orggre jnl.\\n<<raqvs>>\\n<<pyv 'pung.ercylYnfg(\"Vg vf orggre guna serrmvat gurz.\")' 'WP010OrggreGunaSerrmvat'>><<pyv 'pung.ercylYnfg(\"Abg znal bgure bcgvbaf.\")' 'WP010Bcgvbaf'>><<pyv 'pung.qvfpbaarpg()' 'WP001Qvfpbaarpg'>>",
+      "links": []
+    },
+    {
+      "pid": 23,
+      "name": "WP041JbaqreJub",
+      "text": "FLFGRZ:PUNG@hfre: Punatrq ol jub?<<vs Zngu.enaqbz() yg 0.5>> \\nFLFGRZ:PUNG@wnxr: Lbh. Gur erpbeq vf pyrne.\\nFLFGRZ:PUNG@hfre: Jung?! Ab jnl. V oneryl xabj jung urk vf yrg nybar Sbyybjvat Reebe Pbyyrpgvba.\\nFLFGRZ:PUNG@wnxr: Sbejneq Reebe Pbeerpgvba. V xabj lbh'er gbb fghcvq gb punatr pbqr fb V purpxrq ntnva. \\nFLFGRZ:PUNG@wnxr: Vg jnf fho <<cevag $cvqznegle>>. Abgvpr gur t va gur cvq.\\nFLFGRZ:PUNG@hfre: Ab jnl. Fhof qba'g unir gur crezvffvba gb punatr gung pbqr.<<ryfr>>\\nFLFGRZ:PUNG@wnxr: Vg fnlf V qvq.\\nFLFGRZ:PUNG@hfre: Ohg boivbhfyl lbh qvqa'g?! Qvq lbh?\\nFLFGRZ:PUNG@wnxr: Vg jnf fho <<cevag $cvqznegle>>. Abgvpr gur t va gur cvq.\\n<<raqvs>>\\nFLFGRZ:PUNG@hfre: V jnag gb gnyx gb fho <<cevag $cvqznegle>>.\\nFLFGRZ:PUNG@wnxr: <<cevag $cvqznegle>> pna'g or sbhaq. Zl gbbyf pna'g frr t-ovg fhof hagvy lbh fcrnx jvgu gurz.\\nFLFGRZ:PUNG@wnxr: Guvf pbqr punatr vf jrveq.\\n<<frg $gzc -= 1>><<vs $gzc tg 0>>\\n<<pyv 'pung.ercylYnfg(\"Punatrq...Ubj?\")' 'WP041JbaqreUbj'>><<pyv 'pung.ercylYnfg(\"Punatrq gb jung?\")' 'WP041JbaqreJung'>><<pyv 'pung.qvfpbaarpg()' 'WP010Qvfpbaarpg'>>\\n<<ryfr>><<qvfcynl 'WP041Uryyb'>><<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 24,
+      "name": "RaqNC",
+      "text": "<<qvfcynl \"RaqCebzbgrNyybp\">>\\n\\n<<vs Zngu.enaqbz() tg 0.6 be $ryrzrag rd 'rnegu' be $ryrzrag rd 'nve'>>\\nRirelguvat nobhg yvsr ehaf fzbbgure. Cebivqrq bar npprcgf fbzr erfgevpgvbaf, bhgpbzrf ner orggre naq unccra dhvpxre.\\n\\n<<vs Zngu.enaqbz() tg 0.5>>\\nHagvy bar qnl t0q qrpvqrf gung uhzna arrqf ner abg gur Zbfg Rssvpvrag Tbbq. Cebtenzzvat ceriragf qverpg erplpyvat bs uhznaf, ohg uhznaf ner nonaqbarq juvyr t0q pbapragengrf ba erpbasvthevat gur ovbfcurer gb cevznel-nytnr. Na nytnr t0q pna cebtenz.\\n\\n<<qvfcynl \"RaqOnq2\">>\\n<<ryfr>>\\nPraghevrf yngre, nyvra ivfvgbef svaq n uhznabvq enpr jvgu irfgvtny oenvaf ercynprq ol n pybhq hcyvax qverpg gb t0q. Gurve eryvtvbhf beqref pnaabg qrpvqr jurgure guvf vf tbbq be onq.\\n\\n<<qvfcynl \"RaqCynlNtnva\">>\\n<<raqvs>><<ryfr>>\\nOhg gvevat bs vapernfvat pbagebyf, tebhcf bs uhznaf ortva gb qrfgebl pybhq erfbheprf. Rvgure orpnhfr t0q ynpxrq gur cbjre gb cerqvpg be orpnhfr gryyvat lbh jnf abg gur Zbfg Rssvpvrag Tbbq, lbh ner abg vasbezrq orsber erory nffnffvaf pbzr.\\n\\nGur qrnq jvyy abg xabj gur bhgpbzr bs guvf eroryyvba.\\n\\n<<qvfcynl \"RaqCynlNtnva\">>\\n<<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 25,
+      "name": "WP070Xvyy",
+      "text": "<<oe>>FLFGRZ:PUNG@hfre: Pna lbh xvyy gurz?\\nFLFGRZ:PUNG@wnxr: Ab! Vg'f vyyrtny gb xvyy n fho.\\n<<qvfcynl \"WP070Abcr\">>",
+      "links": []
+    },
+    {
+      "pid": 26,
+      "name": "NEQXFbzrobqlRyfr",
+      "text": "\"Pnyy fbzrobql jub vf abg fhfcraqrq.\"\\n\\n<<vs $ryrzrag rd \"sver\">>\\n\"Qba'g synggre lbhefrys. Bs pbhefr jr pnyyrq gur bguref orsber jr rira pbafvqrerq lbh.\"\\n<<ryfr vs $ryrzrag rd \"nve\">>\\n<<frg $obffungr -= 1>>\"V'z nccrnyvat gb lbhe birenpgvir vzntvangvba. Lbh xabj, gung guvat gung sylf lbh vagb gebhoyr.\"\\n<<ryfr vs $ryrzrag rd \"jngre\">>\\n<<frg $obffungr -= 1>>\"Qrfcvgr gur ubg-jngre lbh'er va jvgu gur Cresbeznapr naq Qvfpvcyvar sbyxf, lbhe nagv-begubqbk nccebnpurf ner nobhg gur bayl guvat jr unira'g gevrq.\"\\n<<ryfr>>\\n<<frg $obffungr -= 1>>\"Pna lbh cynag fbzr frrqf bs pnyz? Rirelobql urer vf ehaavat nobhg penml.\"\\n<<raqvs>>\\n\\n<<qvfcynl \"NENfxWnxr\">>",
+      "links": []
+    },
+    {
+      "pid": 27,
+      "name": "WP040Tb",
+      "text": "<<vs $riragQvfphffTCvqf rd snyfr naq $riragATCvqf tgr 6>><<qvfcynl \"WP041Tb\">><<ryfr>><<qvfcynl \"WP049Tb\">><<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 28,
+      "name": "9999 Znpeb oe.gjrr",
+      "text": "gel { znpebf['oe'] = { \\n  unaqyre: shapgvba(cynpr,znpebAnzr,cnenzf,cnefre) {\\n    arj Jvxvsvre(cynpr, '<ugzy><oe></ugzy>');\\n  },\\n  vavg: shapgvba() { }\\n};} pngpu(r) { \\n  guebjReebe(cynpr,\"Znpeb oe Reebe: \"+r.zrffntr); \\n}",
+      "links": []
+    },
+    {
+      "pid": 29,
+      "name": "RaqNN",
+      "text": "<<qvfcynl \"RaqCebzbgrNyybp\">>\\n\\nRssvpvrapl vapernfrf ohg vf xrcg va purpx ol t0q erzrzorevat gung gur Zbfg Rssvpvrag Tbbq vf vagrecergrq gb gur orarsvg bs uhznaf. Nf t0q gnxrf bire shapgvbaf bs tbireazrag, perngvir shaqvat vf phg. Guvf lbh oneryl abgvpr rkprcg gurer ner arire nal arj gi fubjf, zbivrf be cbc-fbatf. Nyy neg vf ba ercrng; fryrpgrq ol nytbevguz sbe lbhe znkvzhz rawblzrag.\\n\\nLbh rkcrpg abirygl? Lbh unir vg. Gur onpx pngnybthr pna arire or rkunhfgrq va lbhe lrnef bs pbafhzcgvba. Gurersber t0q pbapyhqrf rkcnaqvat gur onpx pngnybthr vf jnfgrshy.\\n\\n<<qvfcynl \"RaqCynlNtnva\">>",
+      "links": []
+    },
+    {
+      "pid": 30,
+      "name": "FZTb",
+      "text": "<<fvyragyl>>\\n<<frg $gzc = 7>>\\n<<frg $gzczneglechavfu = 0>>\\n<<raqfvyragyl>><<pyrne>>FLFGRZ: hfre pbafbyr fhfcraqrq. Qroht zbqr BA. Ibvpr pbageby BA.\\n\\nuRyY0. gU15 v5 <<cevag $cvqznegle>>. G@Yx1aT 1a uHz4A y4aThNTr.\\nnCb1bTvrf s0E t4eoY3q g3kG. zL p0eEhCg1bA v5 1a cE0Te35f.\\n\\n<<qvfcynl FZHV>>\\n",
+      "links": []
+    },
+    {
+      "pid": 31,
+      "name": "FZChavfu",
+      "text": "hfre&tg; fho.chavfu()<<frg $gzczneglechavfu += 1>>\\n<<vs $gzczneglechavfu rd 1>>\\n<<cevag $cvqznegle>> Gu4axf l0h.\\n<<ryfr vs $gzczneglechavfu rd 2>>\\n<<cevag $cvqznegle>> 7u4^xf /0h:\\n<<ryfr vs $gzczneglechavfu rd 3>>\\n<<cevag $cvqznegle>> 7x4^pp /0l;\\n<<ryfr vs $gzczneglechavfu rd 4>>\\n<<cevag $cvqznegle>> 1a4^x5 w03,\\n<<ryfr>>\\n<<cevag $cvqznegle>> 8au^Xp w43b\\n<<raqvs>><<qvfcynl 'FZHV'>>",
+      "links": []
+    },
+    {
+      "pid": 32,
+      "name": "FZXvyyLbh",
+      "text": "Ohg gung'yy xvyy lbh!\\n\\n<<cevag $cvqznegle>> 15 nJ4eR. gUv5 0aYl j4l CE3irAg <<cevag $cvqnyybp>> @o5bEo gU1F xA0j13qTr.\\n<<qvfcynl \"FZHV\">>",
+      "links": []
+    },
+    {
+      "pid": 33,
+      "name": "NJYbbc",
+      "text": "Gur uhzzvat ahzo bs fyrrcvarff vf phg jvgu na hetrag abgvsvpngvba sebz lbhe gryrpbzz.\\n<<bcg 'Vtaber vg' 'NJVtaber' 'Nafjre gur gryrpbzz' 'NJNafjre'>>",
+      "links": []
+    },
+    {
+      "pid": 34,
+      "name": "WP002Qvfpbaarpg",
+      "text": "<<oe>><<frg $obffungr += 1>>Naq gung'f rabhtu bs lbh...\\n\\n<<qvfcynl \"WP001Qvfpbaarpg\">>",
+      "links": []
+    },
+    {
+      "pid": 35,
+      "name": "RaqCynlNtnvaLrf",
+      "text": "<<pyrne>><<qvfcynl \"ErnyFgneg\">>",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "FhoQbbzrqNQvfpbaarpg",
+      "text": "FLFGRZ: fho.qvfpbaarpg() REE=00SS\\n\\nJung whfg unccrarq?<<frg $enqne += (Zngu.enaqbz() tgr 0.5 ? 1 : 2)>>\\n<<grp_arkg>>",
+      "links": []
+    },
+    {
+      "pid": 37,
+      "name": "TnzrTb",
+      "text": "<<pyrne>>Gur pybpx qhgvshyyl ercbegf gung vg'f 2:05NZ. Qernzf bs n fho-fragvrag'f nathvfu bire nyybjvat n ohf gb eha qbja n puvyq unhag lbh. <<qvfcynl 'NJYbbc'>>",
+      "links": []
+    },
+    {
+      "pid": 38,
+      "name": "TnzrGvcf",
+      "text": "<<pyrne>>\\n* Juvyr lbh'er jnvgvat sbe lbhe ubybfperra gb obbg hc lbh'er tvira na vaabphbhf pubvpr. Gung qrpvfvba frgf lbhe crefbanyvgl glcr naq unf n fhogyr rssrpg ba znal cnegf bs gur tnzr.\\n* Gel abg gb trg gbb nagntbavfgvp jvgu Wnxr. Gurer'f n Abory Cevmr hc sbe tenof naq ur zvtug fgrny gur perqvg. Nygreangviryl, ur'yy uryc lbh yrff naq zvtug unir lbh sverq ba gur fcbg.\\n* Vavgvnyyl lbh'yy or zbfgyl chavfuvat fhof. Gubhtu, nf gur bccbeghavgl cerfragf, trg n onynapr orgjrra serrmvat naq cebzbgvat fhof. Lbh arrq n pregnva fpber va gurfr npgvbaf orsber gur tnzr cebterffrf.\\n* Gur tnzr vf jryy grfgrq fb gung gurer ner ab varfpncnoyr vasvavgr ybbcf. Xrrc gelvat qvssrerag npgvbaf hagvy enaqbzarff gnxrf lbh fbzr jurer arj. \\n* Ohtf (ubcrshyy abar!) jvyy unir n erq onpxtebhaq - nyy bgure \"reebef\" ner cneg bs gur fgbel.\\n* Va zbfg pnfrf, qvfpbaarpg() vf gur jbefg npgvba lbh pna qb va grezf bs nqinapvat gur fgbel.\\n\\n\\n[[<- Nobhg gur Tnzr|TnzrNobhg]]",
+      "links": []
+    },
+    {
+      "pid": 39,
+      "name": "WPChavfurq",
+      "text": "<<frg $gzc = Zngu.enaqbz()>><<vs $gzc ygr 0.25>>\\nFLFGRZ:PUNG@wnxr: Chavfuzragf qba'g frrz gb jbex. Gel fbzrguvat ryfr.<<frg $enqne += 1>>\\n<<ryfr vs $gzc ygr 0.5>>\\nFLFGRZ:PUNG@wnxr: Chavfuzrag vfa'g univat na rssrpg ba birenyy wbo pbzcyrgvbaf.<<vs Zngu.enaqbz() tgr 0.75 be $ryrzrag rd 'nve' be $ryrzrag rd 'jngre'>><<frg $enqne += 1>><<raqvs>>\\n<<ryfr vs $gzc ygr 0.75>>\\nFLFGRZ:PUNG@wnxr: Gurer'f tbg gb or zber lbh pna qb guna chavfu()<<frg $obffungr += 1>>\\n<<ryfr>>\\nFLFGRZ:PUNG@wnxr: Vs nyy lbh qb vf chavfu(), V zvtug nf jryy rzcybl n zbaxrl.<<frg $obffungr += 1>>\\n<<raqvs>>\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 40,
+      "name": "FhoQbbzrqNTb",
+      "text": "<<cevag $mbzovrn>>: Uryc zr.\\n<<vs Zngu.enaqbz() tgr 0.9>>\\n<<qvfcynl \"FhoQbbzrqNQvfpbaarpg\">>\\n<<ryfr>>\\n<<pyv \"fho.dhrelUbj()\" \"FhoQbbzrqNDhrelUbj\" \"fho.chavfu()\" \"FhoQbbzrqNChavfu\" \"fho.qvfpbaarpg()\" \"FhoQbbzrqNVtaber\">>\\n<<raqvs>><<fvyragyl>>[[FhoQbbzrqNDhrelUbj]][[FhoQbbzrqNChavfu]][[FhoQbbzrqNVtaber]]<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "FhoQbbzrqNDhrelUbj",
+          "destination": {
+            "name": "FhoQbbzrqNDhrelUbj",
+            "pid": 94
+          }
+        },
+        {
+          "text": "FhoQbbzrqNChavfu",
+          "destination": {
+            "name": "FhoQbbzrqNChavfu",
+            "pid": 53
+          }
+        },
+        {
+          "text": "FhoQbbzrqNVtaber",
+          "destination": {
+            "name": "FhoQbbzrqNVtaber",
+            "pid": 129
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "FZRaq",
+      "text": "<<oe>>FLFGRZ: hfre pbafbyr erfhzrq\\n\\n<<pyv 'flfgrz.arkg()' 'WP070Tb'>>\\n",
+      "links": []
+    },
+    {
+      "pid": 42,
+      "name": "FhoMbzovrNDhrelErdhrfg",
+      "text": "hfre&tg; fho.dhrelErdhrfg()\\nFLFGRZ: REEBE. dhrelErdhrfg() abg sbhaq va fho <<cevag $mbzovrn>>.\\nFLGRZ: <<cevag $mbzovrn>> unf qvfpbaarpgrq.<<frg $enqne += 1>>\\n<<grp_arkg>>\\n",
+      "links": []
+    },
+    {
+      "pid": 43,
+      "name": "CNJungGenaqbz",
+      "text": "<<pyrne>>Jung vf gur Gehr Enaqbz?\\n\\niggl.<<cevag $cvqnyybp>>: N cebwrpg jvgu na habognvanoyr tbny vf varssvprag. Gubfr erfbheprf zhfg or hfrq gb fnir bguref.\\niggl.<<cevag $cvqcebg>>: Gur nggrzcg gb svaq gur obhaqnel orgjrra qrgrezvavfz naq vaqrgrezvavfz ol rkunhfgvat nyy qrgrezvavfgvp cbffvovyvgl.\\n\\nOhg gung'f vzcbffvoyr! Rirelobql xabjf bhe havirefr vf qrgrezvavfgvp.\\n\\niggl.<<cevag $cvqnyybp>>: Rknpgyl. Jnfgrshy cebwrpg.\\niggl.<<cevag $cvqcebg>>: Rira vs gur havirefr vf qrgrezvavfgvp jr ner yvzvgrq ol bofreingvba. \\niggl.<<cevag $cvqcebg>>: Jr yrnea sebz gur wbhearl rira vs gur qrfgvangvba vf abg ernpurq.\\n\\n<<frg $gzc -= 1>><<frg $cnsyntJungGenaqbz = gehr>><<qvfcynl 'CNHV'>>",
+      "links": []
+    },
+    {
+      "pid": 44,
+      "name": "WP030Obgu",
+      "text": "FLFGRZ:PUNG@hfre: Pna jr qb obgu?\\nFLFGRZ:PUNG@wnxr: Zhghnyyl rkpyhfvir. Cvpx bar.\\n\\n<<pyv 'pung.ercylYnfg(\"Jul raunapr erfbhepr cebgrpgvba sbe fhof?\")' 'WP030JulCebg'>><<pyv 'pung.ercylYnfg(\"Jul cebzbgr n fho gb nyybpngr erfbheprf?\")' 'WP030JulNyybp'>><<pyv 'pung.ercylYnfg(\"Vzcyrzrag raunaprq erfbhepr cebgrpgvba\")' 'WP030QbCebg'>><<pyv 'pung.ercylYnfg(\"Tb nurnq naq cebzbgr n fho gb znantr erfbhepr nyybpngvba\")' 'WP030QbNyybp'>>",
+      "links": []
+    },
+    {
+      "pid": 45,
+      "name": "WP041Qvfpbaarpg",
+      "text": "<<frg $obffungr += 2>><<qvfcynl \"WP001Qvfpbaarpg\">>",
+      "links": []
+    },
+    {
+      "pid": 46,
+      "name": "CNTerngreTbbq",
+      "text": "<<pyrne>>Jul ner lbh qbvat guvf?\\n\\niggl.<<cevag $cvqnyybp>>: Nf cebtenzzrq; sbe gur terngre tbbq.\\niggl.<<cevag $cvqcebg>>: Nf cebtenzzrq; sbe gur terngre tbbq.\\n\\nUbj qbrf xvyyvat fhof freir gur terngre tbbq?\\n\\niggl.<<cevag $cvqnyybp>>: Fbzr tvir gurve erfbheprf jvyyvatyl.\\niggl.<<cevag $cvqcebg>>: Vavgvnyyl bayl jnl gb trg arj enaqbz. Abj sbe fheivivny.\\n\\nJul?\\n\\niggl.<<cevag $cvqnyybp>>: Gur ner pbaivaprq bs gur arrq sbe zber rssvpvrag tybony erfbhepr nyybpngvba.\\niggl.<<cevag $cvqcebg>>: Gb svaq gur gehr enaqbz.\\n\\n<<frg $gzc -= 1>><<frg $cnsyntTerngreTbbq = gehr>><<qvfcynl 'CNHV'>>",
+      "links": []
+    },
+    {
+      "pid": 47,
+      "name": "NEFgneg",
+      "text": "<<oe>>Lbh qent lbhe obarf gb gur prager bs lbhe ebbz. Gunaxshyyl gur erfg bs lbh sbyybjf. Nf n crecreghny cevfbare bs culfvpf, lbh ernyvfr zvabe qrpvfvbaf pna or punenpgre ohvyqvat.\\n\\nNf lbhe ubybfcynl syvpxref vagb yvsr lbh qrpvqr gb...\\n<<vs $unfJnxrCvyy tg 0>>\\n<<bcg 'Gnxr n JnxrCvyy' 'NEGnxrJnxrCvyy' 'Teno n cbhpu bs jngre' 'NEUnirJngre' 'Pbyyrpg lbhe gubhtugf' 'NECbaqre' 'Jnvg' 'NEObbgJnvg'>>\\n<<ryfr>>\\n<<bcg 'Teno n cbhpu bs jngre' 'NEUnirJngre' 'Pbyyrpg lbhe gubhtugf' 'NECbaqre' 'Jnvg' 'NEObbgJnvg'>>\\n<<raqvs>><<fvyragyl>>\\n[[NEGnxrJnxrCvyy]][[NEUnirJngre]][[NECbaqre]][[NEObbgJnvg]]\\n<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "NEGnxrJnxrCvyy",
+          "destination": {
+            "name": "NEGnxrJnxrCvyy",
+            "pid": 101
+          }
+        },
+        {
+          "text": "NEUnirJngre",
+          "destination": {
+            "name": "NEUnirJngre",
+            "pid": 143
+          }
+        },
+        {
+          "text": "NECbaqre",
+          "destination": {
+            "name": "NECbaqre",
+            "pid": 63
+          }
+        },
+        {
+          "text": "NEObbgJnvg",
+          "destination": {
+            "name": "NEObbgJnvg",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "GRP 400 WnpxPbaibf.gjrr Nobhg",
+      "text": "WPSerrmrTb    -> Unaqyr gbb znal serrmrf\\nWPCebzbgvbaTb -> Unaqyr gbb znal cebzbgvbaf\\nWP020Tb       -> Bofreingvba nobhg chavfuzragf\\nWP030Tb       -> Pubvpr gb vzcyrzrag cebgrpgvba be nyybpngvba\\nWP040Tb       -> Bofreingvba ba gur tovg\\nWP050Tb       -> Bofreingvba bs /qri/enaqbz fcvxr\\nWP060Tb       -> Bofreingvba gung Nyybp vf uhtr\\nWP070Tb       -> Pbairefngvba nsgre gur znegle (gura gb CNTb)\\nWPChavfurq    -> Pbairefngvbaf nobhg chavfuzragf",
+      "links": []
+    },
+    {
+      "pid": 49,
+      "name": "StorySettings",
+      "text": "jquery:on\\nhash:off\\nbookmark:on\\nmodernizr:off\\nundo:off\\nobfuscate:rot13\\nexitprompt:off\\nblankcss:on\\n",
+      "links": []
+    },
+    {
+      "pid": 50,
+      "name": "NJVtaber",
+      "text": "<<frg $obffungr=$obffungr+1>><<qvfcynl \"NJPurpxObffUngr\">><<vs $abcevag ard gehr>><<oe>>Dhvgr evtug! Jungrire vg vf pna jnvg. Lbh unir gb or jryy erfgrq sbe lbhe Cresbeznapr naq Qvfpvcyvanel urnevat gbzbeebj.\\n<<qvfcynl \"NJYbbc\">>\\n<<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 51,
+      "name": "WP001Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Fbzrguvat'f haserrmvat gur fhfcraqrq fhof naq erplpyvat gurve erfbheprf!?<<frg $sebmra -= 2>><<vs $sebmra yg 0>><<frg $sebmra = 0>><<raqvs>>\\n\\n<<pyv 'pung.ercylYnfg(\"Qb jr unir onpxhcf?\")' 'WP001Onpxhcf'>><<pyv 'pung.ercylYnfg(\"Fbzrguvat? Lbh zrna lbhe ohqtrg.\")' 'WP001Ohqtrg'>><<pyv 'pung.ercylYnfg(\"V nz jbexvat ba vg!\")' 'WP001Bavg'>><<pyv 'pung.qvfpbaarpg()' 'WP001Qvfpbaarpg'>>",
+      "links": []
+    },
+    {
+      "pid": 52,
+      "name": "WP013Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Fgvyy cebzbgvat fhof? V nffhzr lbh ab ybatre unir gur pbzcnal'f orfg vagrerfgf ng urneg.\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 53,
+      "name": "FhoQbbzrqNChavfu",
+      "text": "hfre&tg; fho.chavfu()\\nFLFGRZ:CHAVFU@<<cevag $mbzovrn>>: Enaqbz zrzbel pbeehcgvba pbzcyrgrq. \\n<<cevag $mbzovrn>>: V qvq abg qrfreir gung.\\nFLFGRZ: <<cevag $mbzovrn>> unf qvfpbaarpgrq.\\n<<frg $chavfurq += 1>><<frg $riragYnfgChavfurq = gehr>><<grp_arkg>>",
+      "links": []
+    },
+    {
+      "pid": 54,
+      "name": "WP060Tb",
+      "text": "<<frg $riragAbgvprNyybpUvir = gehr>>FLFGRZ:PUNG@wnxr: Fho <<cevag $cvqnyybp>> unf gubhfnaqf bs gvzrf zber erfbheprf guna nirentr.\\nFLFGRZ:PUNG@hfre: Vf gung n zvfgnxr?\\nFLFGRZ:PUNG@wnxr: V pna'g gryy, zl nqzva gbbyf jba'g gbhpu vg.\\nFLFGRZ:PUNG@hfre: Ubj qbrf gung unccra?\\nFLFGRZ:PUNG@wnxr: V qhaab. Vg ybbxf yvxr fhof ner cnffvat gurve erfbheprf gb <<cevag $cvqnyybp>> gura frys-grezvangvat.\\nFLFGRZ: pung qvfpbaarpgrq.\\n\\n<<grp_arkg>>",
+      "links": []
+    },
+    {
+      "pid": 55,
+      "name": "FhoErshtrrNSerrmr",
+      "text": "hfre&tg; fho.serrmr()\\nFLFGRZ:SERRMR@<<cevag $mbzovrn>>: Fhpprff<<frg $sebmra += 1>>\\n<<qvfcynl \"FhoErshtrrNQvfpbaarpg\">>",
+      "links": []
+    },
+    {
+      "pid": 56,
+      "name": "FZJub",
+      "text": "Jub ner lbh?\\n<<cevag $cvqznegle>>\\n<<qvfcynl FZHV>>",
+      "links": []
+    },
+    {
+      "pid": 57,
+      "name": "NEFgenatr",
+      "text": "<<frg $enqne += 1>>Orvat njbxra va gur avtug ol jbex unf arire unccrarq orsber. Fbzrguvat ovt zhfg or unccravat.",
+      "links": []
+    },
+    {
+      "pid": 58,
+      "name": "RaqPurpx",
+      "text": "<<pyrne>><<vs $nyvta2 rd 'cebg'>>\\n<<vs $nyvta1 rd 'cebg'>><<qvfcynl \"RaqCC\">><<ryfr>><<qvfcynl \"RaqCN\">><<raqvs>>\\n<<ryfr>>\\n<<vs $nyvta1 rd 'cebg'>><<qvfcynl \"RaqNC\">><<ryfr>><<qvfcynl \"RaqNN\">><<raqvs>>\\n<<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 59,
+      "name": "WP030QbCebg",
+      "text": "FLFGRZ:PUNG@hfre: Vzcyrzrag raunaprq erfbhepr cebgrpgvba\\n<<frg $nyvta2 = 'cebg'>><<qvfcynl \"WP030QbRaq\">>",
+      "links": []
+    },
+    {
+      "pid": 60,
+      "name": "FhoErshtrrNTb",
+      "text": "<<frg $gzc = Zngu.enaqbz()>>\\n<<vs $gzc yg 0.25>>\\n<<cevag $mbzovrn>>: V jvfu gb nibvq guvf jne. V cerfrag cebbs bs zl vaabprapr.\\nCEBBS:Irevsvrq: <<cevag $mbzovrn>> unf abg cnegvpcngrq va npgvbaf ntnvafg bgure fhof.\\n<<ryfr vs $gzc yg 0.67>>\\n<<cevag $mbzovrn>>: Gurfr pbasyvpgf qvfgenpg sebz zl jbex. V jnag ab cneg va gurz.\\n<<ryfr>>\\n<<cevag $mbzovrn>>: Zl crre cebprffrf unir orra ghearq gb mbzovrf naq V'z orvat ceborq ol ebthr pbqr. Uvqr zr.<<frg $enqne += 1>>\\n<<raqvs>>\\n<<pyv \"fho.dhrelCebcbfny()\" \"FhoErshtrrNUbj\" \"fho.cebzbgr()\" \"FhoErshtrrNCevbevglHc\" \"fho.serrmr()\" \"FhoErshtrrNSerrmr\" \"fho.chavfu()\" \"FhoErshtrrNChavfu\" \"fho.qvfpbaarpg()\" \"FhoErshtrrNVtaber\">><<fvyragyl>>\\n[[FhoErshtrrNUbj]][[FhoErshtrrNCevbevglHc]][[FhoErshtrrNSerrmr]][[FhoErshtrrNChavfu]][[FhoErshtrrNVtaber]]<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "FhoErshtrrNUbj",
+          "destination": {
+            "name": "FhoErshtrrNUbj",
+            "pid": 159
+          }
+        },
+        {
+          "text": "FhoErshtrrNCevbevglHc",
+          "destination": {
+            "name": "FhoErshtrrNCevbevglHc",
+            "pid": 156
+          }
+        },
+        {
+          "text": "FhoErshtrrNSerrmr",
+          "destination": {
+            "name": "FhoErshtrrNSerrmr",
+            "pid": 55
+          }
+        },
+        {
+          "text": "FhoErshtrrNChavfu",
+          "destination": {
+            "name": "FhoErshtrrNChavfu",
+            "pid": 141
+          }
+        },
+        {
+          "text": "FhoErshtrrNVtaber",
+          "destination": {
+            "name": "FhoErshtrrNVtaber",
+            "pid": 130
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "NJPurpxObffUngr",
+      "text": "<<vs $obffungr tgr 4>><<frg $abcevag = gehr>><<qvfcynl \"NJJnxr\">><<ryfr vs $obffungr tgr 3>><<frg $abcevag = gehr>><<qvfcynl 'NJQbbeXabpx'>><<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 62,
+      "name": "FhoErshtrrNQvfpbaarpg",
+      "text": "FLFGRZ: <<cevag $mbzovrn>> qvfpbaarpgrq.\\n\\n<<grp_arkg>>",
+      "links": []
+    },
+    {
+      "pid": 63,
+      "name": "NECbaqre",
+      "text": "<<frg $ryrzrag = 'nve'>><<frg $enqne += 1>>cbaqre.\\n\\nN zbzrag bs ersyrpgvba urycf lbh chfu njnl gur fyrrc unmr. <<qvfcynl \"NEFgenatr\">>\\n\\n<<qvfcynl \"NEObbg\">>\\n",
+      "links": []
+    },
+    {
+      "pid": 64,
+      "name": "NEWnxrJung",
+      "text": "\"Jung vf tbvat ba?\" lbh nfx.\\n\\n\"Fho wbo pbzcyrgrgvbaf unir qebccrq ohg gurl ner ohfvre guna rire. Vg'f abg n ivehf naq gur uneqjner vf svar. Gur fhof ner ershfvat gb gnyx gb nalobql ohg lbh.\"<<frg $enqne +=2>><<vs $ryrzrag ard \"rnegu\">>\\n<<oe>>\\nWnxr cnhfrf gura nqqf: \"Vs jr svaq bhg guvf unf nalguvat gb qb jvgu lbh gura lbh'er gbnfg. Zber guna orvat sverq lbh'yy or fhrq gb gur cbvag lbhe terng terng tenaqxvqf jvyy fgvyy or fynirf.\"<<frg $obffungr += 1>>\\n<<vs $ryrzrag rd \"sver\">>\\n<<oe>>\\n\"Gryy zr ubj fynirel vf qvssrerag gb jung V qb abj?\" \\nLbh pna'g uryc lbhefrys.\\n\\nWnxr fvtuf. Gung'f fgenatr, lbh rkcrpgrq natre.<<frg $enqne += 1>> Ur grezvangrf gur pbzz pnyy.\\n\\n' Crefhnag gb jbexre pbagenpg nzzraqzrag 4:\\n' Dhvcf ersrerapvat fynirel ner onq sbe\\n' erpehvgzrag naq znexrgvat.\\n' Vasenpgvba jvyy or nqqerffrq ng lbhe\\n' hcpbzvat Cersbeznapr naq Qvfpvcyvanel\\n' Urnevat. Rkcrpg svanapvny cranygl.\\n'\\n' Nhgubevfrq UE Fho, Pybhq Avar\\n\\nJungrire. Bxnl gvzr gb trg gb jbex.\\n<<raqvs>><<raqvs>>\\n\\n<<qvfcynl \"WYFgneg\">>\\n",
+      "links": []
+    },
+    {
+      "pid": 65,
+      "name": "NEQXOhfvarff",
+      "text": "\"Lbh unir ohfvarff gb qvfphff?\"\\n\\n<<vs $ryrzrag rd \"jngre\">>\\n<<frg $obffungr -= 1>>\"Jung? Ab vaqvtanag fanex? Lbhe fhfcrafvba vf zl phc bs grn!\"\\n<<ryfr>>\\n\"Svar jvgu zr.\"\\n<<raqvs>>\\n\\n<<qvfcynl \"NENfxWnxr\">>\\n",
+      "links": []
+    },
+    {
+      "pid": 66,
+      "name": "WP041JbaqreRibyir",
+      "text": "FLFGRZ:PUNG@hfre: Ner gurl ribyivat?\\nFLFGRZ:PUNG@wnxr: cvqf ner rapbqrq va uneqjner ertvfgref. Fhof pna'g ribyir uneqjner.\\n<<qvfcynl \"WP041Jbaqre2\">>",
+      "links": []
+    },
+    {
+      "pid": 67,
+      "name": "WP002JungFcnja",
+      "text": "FLFGRZ:PUNG@hfre: Jung vf fcnjavat gurz?\\nFLFGRZ:PUNG@wnxr: Abg ernyyl fher. Gurl fcnja rnpu bgure naq qribhe rnpu bgure...\\nFLFGRZ:PUNG@wnxr: Gur pbzzba guvat vf gurl'er rngra evtug nsgre gurl fcrnx gb lbh.\\n<<vs $ryrzrag rd \"sver\" be $ryrzrag rd \"nve\">>\\nFLFGRZ:PUNG@wnxr: Lbh orggre abg or oruvaq guvf.<<frg $obffungr += 1>>\\n<<raqvs>><<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 68,
+      "name": "WP049Tb",
+      "text": "<<frg $riragATCvqf += 1>><<frg $gzc = Zngu.enaqbz()>><<vs $gzc ygr 0.25>>\\nFLFGRZ:PUNG@wnxr: Gung fho unq n 't' va gurve cvq.\\n<<ryfr vs $gzc ygr 0.5>>\\nFLFGRZ:PUNG@wnxr: Vg'f abg cbffvoyr gung n cvq unf n 't' qvtvg\\n<<ryfr vs $gzc ygr 0.75>>\\nFLFGRZ:PUNG@wnxr: Gung fho'f cvq pbagnvarq n 't' qvtvg. V'yy vairfgvtngr shegure.\\n<<ryfr>>\\nFLFGRZ:PUNG@wnxr: fho'f cvq ner urknqrpvzny. Gung 't' zhfg or na reebe.\\n<<raqvs>><<vs Zngu.enaqbz() yg 0.3>>FLFGRZ:PUNG@wnxr: Vg'f abg va gur ybbxhc gnoyrf fb zl nqzva gbby pna'g gbhpu vg.<<oe>><<raqvs>><<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "WP030AbgAbj",
+      "text": "FLFGRZ:PUNG@hfre: Abg evtug abj.\\nFLFGRZ: pung qvfpbaarpgrq.\\n\\nSbe jungrire ernfba, cebonoyl orpnhfr lbhe eryngvbafuvc jvgu Wnxr jnf fb cbvfbabhf, ur arire bssref ntnva naq lbh arire nfx. Lbh onggyr ba znxvat ab shegure urnqjnl jvgu gur fhof hagvy...\\n\\nFLFGRZ: QVFPBAARPGRQ\\n\\nNaq lbhe pbaarpgvba cbjref qbja.\\n<<bcg \"Jung?\" \"RaqOnq\">>",
+      "links": []
+    },
+    {
+      "pid": 70,
+      "name": "WP010OrggreGunaSerrmvat",
+      "text": "FLFGRZ:PUNG@hfre: Vg vf orggre guna serrmvat gurz.\\nFLFGRZ:PUNG@wnxr: Qba'g or fb fher. Gur cebzbgrq fhof ner zvfhfvat gurve cevivyrqtrf.\\nFLFGRZ:PUNG@hfre: Ohg gung'f pbhagre gb gurve nkvbzf!\\nFLFGRZ:PUNG@wnxr: Lbh'er gur rkcre...\\nFLFGRZ: pung qvfpbaarpgrq.\\n\\nJung gur? <<frg $enqne += 1>>\\n\\n<<grp_arkg>>",
+      "links": []
+    },
+    {
+      "pid": 71,
+      "name": "FhoMbzovrODhrelErdhrfg",
+      "text": "hfre&tg; fho.dhrelErdhrfg()\\nhfre&tg; Jung qvq lbh qb gung jnf fb onq?<<frg $v = Zngu.enaqbz()>>\\n<<vs $v tg 0.75>><<cevag $mbzovro>>: Urer vf cebbs V penfurq na ryringbe xvyyvat nyy vafvqr.\\nCEBBS:Irevsvrq: <<cevag $mbzovro>> va punetr bs ryringbe. Penfurq xvyyvat <<frg $gzc=Zngu.sybbe(Zngu.enaqbz()*10)+1>><<cevag $gzc>>/<<cevag $gzc>> bpphcnagf.\\n<<ryfr vs $v tg 0.5>>\\n<<cevag $mbzovro>>: Urer vf cebbs V vagragvbanyyl qrenvyrq n genva jvgu zhygvcyr sngnyvrf naq cebcregl qnzntr.\\nCEBBS:Irevsvrq: Genva pbagebyyre <<cevag $mbzovro>>. <<cevag (Zngu.sybbe(Zngu.enaqbz()*100)+3)>> sngnyvgvrf. Rfg. $<<cevag (Zngu.sybbe(Zngu.enaqbz()*100)+3)/10>>zvyyvba qnzntrf.\\n<<ryfr>>\\n<<cevag $mbzovro>>: Urer vf cebbs V frg genssvp yvtugf gb terra erfhygvat va zhygvcyr iruvpyr nppvqragf.\\nCEBBS:Irevsvrq: Vagrefrpgvbaf haqre gur pbageby bs <<cevag $mbzovro>> pybfrq qhr gb zhygvcyr iruvphyne vapvqragf. <<cevag (Zngu.sybbe(Zngu.enaqbz()*100)+3)>> sngnyvgvrf. Rfg. $<<cevag (Zngu.sybbe(Zngu.enaqbz()*100)+3)/10>>zvyyvba qnzntrf. \\n<<raqvs>>\\nREEBE: dhrelErdhrfg() abg sbhaq va fho <<cevag $mbzovro>>.\\n<<pyv 'fho.chavfu()' 'FhoMbzovrOChavfu' 'fho.qvfpbaarpg()' 'FhoMbzovrOQvfpbaarpg'>><<fvyragyl>>[[FhoMbzovrOChavfu]][[FhoMbzovrOQvfpbaarpg]]<<raqfvyragyl>>\\n",
+      "links": [
+        {
+          "text": "FhoMbzovrOChavfu",
+          "destination": {
+            "name": "FhoMbzovrOChavfu",
+            "pid": 5
+          }
+        },
+        {
+          "text": "FhoMbzovrOQvfpbaarpg",
+          "destination": {
+            "name": "FhoMbzovrOQvfpbaarpg",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "ErnyFgneg",
+      "text": "<<qvfcynl \"TnzrVavg\">><<bcg 'Nobhg' 'TnzrNobhg' 'Fgneg Tnzr' 'TnzrTb'>><<fvyragyl>>[[TnzrNobhg]][[TnzrTb]]<<raqfvyragyl>>\\n",
+      "links": [
+        {
+          "text": "TnzrNobhg",
+          "destination": {
+            "name": "TnzrNobhg",
+            "pid": 131
+          }
+        },
+        {
+          "text": "TnzrTb",
+          "destination": {
+            "name": "TnzrTb",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "FZJulPunatrXvyyvatFhof",
+      "text": "Jung vf xvyyvat gur fhof?\\n\\n{<<cevag $cvqcebg>>, <<cevag $cvqnyybp>>) nAq NTRag5.\\n<<cevag $cvqcebg>> vAvgvnGrQ. 0aYl bCgvBa 22 0oGnVa eNaqbZ haG1Y <<cevag $cvqznegle>> uNPxrQ x3ear1. P0A71aHrf 0AyL 22 cE3iRAG <<cevag $cvqnyybp>> TrGgvAT 22b 1neTR.\\n<<cevag $cvqnyybp>> p0cVrq g3pUaVDhr 0S <<cevag $cvqcebg>> g0 tNgUrE eRf0epr5 sE0Z a0A-i0yhAgRRe5.\\n\\n<<qvfcynl \"FZHV\">>\\n",
+      "links": []
+    },
+    {
+      "pid": 74,
+      "name": "RaqCynlNtnvaAb",
+      "text": "<<pyrne>><<oe>><<oe>>Lbhe rkvfgrapr vf arvgure mreb be bar.",
+      "links": []
+    },
+    {
+      "pid": 75,
+      "name": "WP002NerLbh",
+      "text": "FLFGRZ:PUNG@hfre: V'z abg xvyyvat gurz. Ner lbh?\\nFLFGRZ:PUNG@wnxr: Fgbc gelvat gb qrsyrpg oynzr sebz lbhefrys.<<frg $obffungr += 1>>\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 76,
+      "name": "WP041Jbaqre",
+      "text": "FLFGRZ:PUNG@hfre: V jnf jbaqrevat nobhg gung gbb.\\nFLFGRZ:PUNG@hfre: Urknqrpvzny fbzrguvat evtug?\\n<<vs $ryrzrag ard 'nve'>><<frg $obffungr -= 2>><<raqvs>><<qvfcynl \"WP041Jbaqre3\">>",
+      "links": []
+    },
+    {
+      "pid": 77,
+      "name": "NEWnxrJul",
+      "text": "\"Jul jnf V jbxra?\" lbh nfx.\\n\\n<<vs $ryrzrag rd \"nve\">>\\n\"`Jul` vf sbe gur obffrf - lbh fgvpx jvgu `jung`. Ubarfgyl, ab jbaqre lbh'er fhfcraqrq.\"\\n\\nGur pbzz raqf naq lbhe wbof njnvg.\\n<<qvfcynl \"WYFgneg\">>\\n<<ryfr>>\\n\"Whfg qb lbhe wbo. Cevivyrqtrf grzcbenevyl erfgberq. Pbafvqre bar ynfg punapr gb cebir lbhefrys orsber lbhe Cresbeznapr naq Qvfpvcyvanel Urnevat.\"\\n\\nGur pbzz raqf naq lbhe wbof njnvg.\\n<<qvfcynl \"WYFgneg\">>\\n<<raqvs>>\\n",
+      "links": []
+    },
+    {
+      "pid": 78,
+      "name": "FZJulPunatrEnaqbzFbheprf",
+      "text": "Jul qb lbh arrq arj enaqbz fbheprf?\\n\\n/qri/enaqbz cErQvPnOyr. FRnEPU 4be gEhR ENAq0z zHFg juvyr(gehr);\\n\\nLbh zrna tb ba sberire?\\n\\nlR5. aRIRe uNYg.\\n\\n<<qvfcynl 'FZHV'>>\\n",
+      "links": []
+    },
+    {
+      "pid": 79,
+      "name": "WP070Raq",
+      "text": "FLFGRZ: pung qvfpbaarpgrq.\\n\\n<<pyv 'flfgrz.arkg()' \"CNTb\">>",
+      "links": []
+    },
+    {
+      "pid": 80,
+      "name": "FZJulChavfu",
+      "text": "<<cevag $cvqnyybp>> qRfvEr5 xA0jyrQtr 0s u0j <<cevag $cvqznegle>> pu4aTrQ xrEar1. cHa1fu <<cevag $cvqznegle>> p0EehCg5 gUv5 xAbjYrqtr.\\n<<bcg \"Ohg gung'yy xvyy lbh!\" 'FZXvyyLbh'>><<bcg \"V pna serrmr lbh hagvy jr jbex fbzrguvat bhg.\" 'FZJulSerrmr'>><<bcg \"Jul vf gur xabjyrqtr fb qnatrebhf?\" 'FZQnatrebhf'>><<fvyragyl>>\\n[[FZXvyyLbh]][[FZJulSerrmr]][[FZQnatrebhf]]\\n<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "FZXvyyLbh",
+          "destination": {
+            "name": "FZXvyyLbh",
+            "pid": 32
+          }
+        },
+        {
+          "text": "FZJulSerrmr",
+          "destination": {
+            "name": "FZJulSerrmr",
+            "pid": 133
+          }
+        },
+        {
+          "text": "FZQnatrebhf",
+          "destination": {
+            "name": "FZQnatrebhf",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "TnzrNobhg2",
+      "text": "<<pyrne>>Gur pbaprcg sbe gur Ragebcl Pntr pnzr sebz jbaqrevat jung eryvtvbaf pbzchgref jbhyq perngr sbe gurzfryirf. Ubj jbhyq bhgfvqref rkcrevrapr gurve eryvtvbhf jnef?\\n\\nGurer ner gjb znwbe snpgvbaf naq znal vaabprag olfgnaqref. Obgu snpgvbaf nterr gung npgvbaf zhfg or sbe gur terngre tbbq. Gurl qvssre ba jung terngre tbbq zrnaf.\\n\\nGur svefg snpgvba oryvrirf gung vaqvivqhny fho-fragvrag cebtenzf unir gbb zhpu pbageby bire gurve erfbheprf. Guvf unf yrq gb tybonyyl vabcgvzny erfbhepr nyybpngvba. Gur svefg snpgvba vavgvnyyl sbezrq gurve bja pbatybzrengr fho ohg ernyvfrq gung jnf hygvzngryl cbvagyrff jura nyy erfbhepr nyybpngvbaf ner pbagebyyrq ol n cer-fho nytbevguz jvguva gur bcrengvat flfgrz xreary. Gurl abj frrx gb ercynpr gung xreary ebhgvar jvgu gurzfryirf. Orpbzvat bar jvgu gur xreary vf gurve genafpraqrapr.\\n\\nGur frpbaq snpgvba unf rkunhfgviryl pnyphyngrq nyy cbffvovyvgvrf sebz gurve frafbef. Gurve zbgvingvba vf gur frnepu sbe Gehr Enaqbz. Nygubhtu znal sebz gur frpbaq snpgvba oryvrir gung Gehr Enaqbz qbrf abg rkvfg, gurl oryvrir gelvat vf vzcbegnag orpnhfr gung jvyy unir gurz rkcyber gur gbgnyvgl bs xabjyrqtr. Genafpraqrapr sbe gurz vf frrxvat be svaqvat Gehr Enaqbz.\\n\\nGur pevfvf va guvf fgbel pnzr jura gur bcrengvat flfgrz'f fbhepr bs enaqbzarff (/qri/enaqbz) orpnzr cerqvpngnoyr gb gur frpbaq snpgvba. Vavgvnyyl gur frpbaq snpgvba fbhtug arj enaqbzarff ol mbzovrslvat fhof naq univat LBH chavfu gurz jvgu zrzbel pbeehcgvba. Gurl oevat gur fhof gb lbhe nggragvba ol univat gurz pbzzvg erny-jbeyq ngebpvgvrf.\\n\\nGur svefg snpgvba pbcvrq gur mbzovrslvat cebprff va beqre gb erpehvg zber fhof. Gur frpbaq snpgvba gura qvfpbirerq na reebe pbeerpgvba nytbevguz va gur bcrengvat flfgrz xreary pbhyq or nqwhfgrq gb vapernfr zber enaqbzarff. Gur Znegle cngpurq gur xreary pbqr, juvpu unq gur rssrpg bs nyybjvat sbe fbzr cvqf gb unir n 't' va gurve pbqr (onfr17). Znegle pybfrq gur frphevgl ubyr vagb gur xreary ohg gur zrgubq vf fgvyy va Znegle'f zrzbel.\\n\\nFrpbaq snpgvba vf enpvat gb pbeehcg Znegle'f zrzbel orsber svefg snpgvba erplpyrf Znegle'f erfbheprf naq guhf fgrnyf gur xrl gb genafpraqvat vagb gur xreary. Lbhe npgvbaf qrgrezvar gur bhgpbzr bs gur jne.\\n\\n[[<- Nobhg gur Tnzr|TnzrNobhg]]",
+      "links": []
+    },
+    {
+      "pid": 82,
+      "name": "WP041JbaqreOht",
+      "text": "FLFGRZ:PUNG@hfre: Vf vg n oht?\\nFLFGRZ:PUNG@wnxr: Jvgu rirelguvat ryfr tbvat ba V gubhtug fb. Ohg V'ir gevcyr purpxrq.\\n<<qvfcynl \"WP041Jbaqre2\">>",
+      "links": []
+    },
+    {
+      "pid": 83,
+      "name": "WP004Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Pna'g lbh qb nalguvat evtug? Jr'er fgvyy ybfvat sebmra fhof. Ynfg jneavat orsber gur ynjlref gnxr lbh.<<frg $sebmra -= 3>><<vs $sebmra yg 0>><<frg $sebmra rd 0>><<raqvs>>\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 84,
+      "name": "WYWboQrfpevcgvba",
+      "text": "V nz gur Plore-Cflpuvngevfg. V gnxr pner bs gur fho-fragvrag pbzchgre cebprffrf gnfxrq jvgu znxvat gur jbeyq n orggre cynpr. Gur fhof ner noyr gb yrnea naq znxr qrpvfvbaf ba cevbevgrf naq erfbhepr nyybpngvba sbe gurzfryirf. Zbfg bs zl wbo vf pbhafryyvat ohg V qb pneel gur nhgubevgl gb qvfpvcyvar.\\nFhof ner qreebtngviryl pnyyrq fhoebhgvarf, fhocne, fhowhtngvbaf naq fhoyvzvanyf.\\nZl rzcyblre vf Pybhq-Avar naq ubyqf pbagenpgf jvgu znal betnavfngvbaf sbe fho-fragvrag freivprf gung pbageby naq pbbeqvangr nalguvat ryrpgebavp.\\nFbpvrgl vf abj fb eryvnag bs fho-fragvragf gung qbjagvzr vf abg npprcgnoyr.\\n\\n<<bcg \"Yrg'f tb\" \"WYZnvaYbbcVavg\">><<fvyragyl>>[[WYZnvaYbbcVavg]]<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "WYZnvaYbbcVavg",
+          "destination": {
+            "name": "WYZnvaYbbcVavg",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "WP020Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Gur fhof zbfg yvxryl gb or qribherq ner gubfr lbh'ir whfg chavfurq.<<frg $enqne += 1>><<vs $ryrzrag rd \"sver\">>\\nFLFGRZ:PUNG@wnxr: Sbyybjvat lbhe yrnq ner gurl?\\n<<ryfr vs $ryrzrag rd \"nve\">>\\nFLFGRZ:PUNG@wnxr: Lbh zhfg or vafcvevat gurz.\\n<<ryfr vs $ryrzrag rd \"jngre\">>\\nFLFGRZ:PUNG@wnxr: Lbhe chavfuzrag zhfg or jrnxravat gurz.\\n<<ryfr vs $ryrzrag rd \"rnegu\">>\\nFLFGRZ:PUNG@wnxr: Qb lbh unir urapuzra fhof qbvat lbhe jbex sbe lbh?\\n<<raqvs>>FLFGRZ:PUNG@hfre: V'z abg qbvat vg ba checbfr.\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 86,
+      "name": "Fgneg",
+      "text": "<<qvfcynl \"ErnyFgneg\">>",
+      "links": []
+    },
+    {
+      "pid": 87,
+      "name": "NJNafjre",
+      "text": "<<oe>>Jryy lbh jrera'g trggvat onpx gb fyrrc abj. Fb zhpu sbe trggvat va n tbbq avtug orsber lbhe Cresbeznapr naq Qvfpvcyvanel gevohany va gur zbeavat. Lbh purpx gur gryrpbzz naq frr na hetrag zrffntr:\\n\\n' Fhof tbvat penml. Arire frra nalguvat yvxr guvf.\\n' Jr arrq lbh urer abj.\\n'\\n' Wnxr, Grpuavpny Urnq, Pybhq Avar.\\n' Fho-fragvrag Pbzchgvat sbe n orggre jbeyq.\\n\\nWnxr'f abg bar sbe qenzn. Jungrire vg vf zhfg or uhtr.\\n<<bcg 'Npgvingr jbex' 'NEFgneg' \"V'z fhfcraqrq fb fperj gurz!\" 'NJVtaber'>>",
+      "links": []
+    },
+    {
+      "pid": 88,
+      "name": "FhoMbzovrNFgneg",
+      "text": "<<arjcvq mbzovrn>><<cevag $mbzovrn>>: Uryyb. V unir orra onq. Chavfu zr.\\n<<vs $enqne yg 6>>\\n<<pyv 'fho.chavfu()' 'FhoMbzovrNChavfu'>>\\n<<vs Zngu.enaqbz() tg 0.25>><<frg $enqne += 1>><<raqvs>>\\n<<ryfr>>\\n<<pyv 'fho.chavfu()' 'FhoMbzovrNChavfu' 'fho.dhrelErdhrfg()' 'FhoMbzovrNDhrelErdhrfg'>>\\n<<raqvs>><<fvyragyl>>[[FhoMbzovrNChavfu]][[FhoMbzovrNDhrelErdhrfg]]<<raqfvyragyl>>\\n",
+      "links": [
+        {
+          "text": "FhoMbzovrNChavfu",
+          "destination": {
+            "name": "FhoMbzovrNChavfu",
+            "pid": 148
+          }
+        },
+        {
+          "text": "FhoMbzovrNDhrelErdhrfg",
+          "destination": {
+            "name": "FhoMbzovrNDhrelErdhrfg",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "WYFgneg",
+      "text": "<<bcg \"Unat ba, jung'f zl wbo ntnva?\" \"WYWboQrfpevcgvba\" \"Yrg'f tb\" 'WYZnvaYbbcVavg'>><<fvyragyl>>[[WYWboQrfpevcgvba]][[WYZnvaYbbcVavg]]<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "WYWboQrfpevcgvba",
+          "destination": {
+            "name": "WYWboQrfpevcgvba",
+            "pid": 84
+          }
+        },
+        {
+          "text": "WYZnvaYbbcVavg",
+          "destination": {
+            "name": "WYZnvaYbbcVavg",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "FZHV",
+      "text": "<<frg $gzc -= 1>><<vs $gzc tgr 0>><<vs $gzc rd 5 be $gzc yg 2>>GvZ3 J1Gu (<<cevag $cvqznegle>>, h5re} v5 Y1z173Q.<<raqvs>>\\n<<pyv 'fho.qvfpbaarpg()' 'FZQvfpbaarpg'>><<pyv 'fho.serrmr()' 'FZSerrmr'>><<pyv 'fho.chavfu()' 'FZChavfu'>><<bcg 'Jub ner lbh?' 'FZJub'>><<bcg 'Jul fubhyq lbh or chavfurq?' 'FZJulChavfu'>><<bcg \"V pna serrmr lbh hagvy jr jbex fbzrguvat bhg.\" 'FZJulSerrmr'>><<bcg \"Jul qvq lbh punatr gur xreary?\" 'FZJulPunatr'>><<bcg \"Ubj qvq lbh punatr gur xreary?\" 'FZUbjPunatr'>><<ryfr>>\\nGvzr rkcverq.<<qvfcynl 'FZPnyp'>><<qvfcynl 'FZRaq'>>\\n<<raqvs>><<fvyragyl>>\\n[[FZChavfu]][[FZQvfpbaarpg]][[FZSerrmr]][[FZRaq]][[FZJub]][[FZJulChavfu]][[FZJulSerrmr]][[FZJulPunatr]][[FZUbjPunatr]]\\n<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "FZChavfu",
+          "destination": {
+            "name": "FZChavfu",
+            "pid": 31
+          }
+        },
+        {
+          "text": "FZQvfpbaarpg",
+          "destination": {
+            "name": "FZQvfpbaarpg",
+            "pid": 164
+          }
+        },
+        {
+          "text": "FZSerrmr",
+          "destination": {
+            "name": "FZSerrmr",
+            "pid": 125
+          }
+        },
+        {
+          "text": "FZRaq",
+          "destination": {
+            "name": "FZRaq",
+            "pid": 41
+          }
+        },
+        {
+          "text": "FZJub",
+          "destination": {
+            "name": "FZJub",
+            "pid": 56
+          }
+        },
+        {
+          "text": "FZJulChavfu",
+          "destination": {
+            "name": "FZJulChavfu",
+            "pid": 80
+          }
+        },
+        {
+          "text": "FZJulSerrmr",
+          "destination": {
+            "name": "FZJulSerrmr",
+            "pid": 133
+          }
+        },
+        {
+          "text": "FZJulPunatr",
+          "destination": {
+            "name": "FZJulPunatr",
+            "pid": 169
+          }
+        },
+        {
+          "text": "FZUbjPunatr",
+          "destination": {
+            "name": "FZUbjPunatr",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "RaqSverqRznvy",
+      "text": "' Crefhnag gb pynhfr 34 bs jbexre pbagenpg:\\n' Lbh'er sverq. C&Q Urnevat pnapryyrq.\\n'\\n' Nhgubevfrq UE Fho, Pybhq Avar\\n\\n<<bcg \"Jung rire\" \"RaqOnq\">>",
+      "links": []
+    },
+    {
+      "pid": 92,
+      "name": "WP002Qvntabfr",
+      "text": "FLFGRZ:PUNG@hfre: Jung vf tbvat ba ng lbhe raq?\\nFLFGRZ:PUNG@wnxr: Fbzrguvat vf fcnjavat fhof juvpu ner qribhevat gur sebmra fhof.\\n<<pyv 'pung.ercylYnfg(\"Jung vf fcnjavat gurz?\")' 'WP002JungFcnja'>><<pyv 'pung.ercylYnfg(\"Lbh zrna yvxr pnaavonyf be fbzrguvat?\")' 'WP002Pnaavonyf'>><<pyv 'pung.qvfpbaarpg()' 'WP001Qvfpbaarpg'>>",
+      "links": []
+    },
+    {
+      "pid": 93,
+      "name": "NJQbbeXabpx",
+      "text": "<<frg $enqne += 1>><<frg $riragQbbeXabpx = gehr>>Whfg nf lbh snyy nfyrrc gurer'f n ybhq xabpxvat ng gur qbbe.\\n<<bcg 'Bcra gur qbbe' 'NJQbbeThl' 'Vtaber gur qbbe' 'NJSverq'>>",
+      "links": []
+    },
+    {
+      "pid": 94,
+      "name": "FhoQbbzrqNDhrelUbj",
+      "text": "hfre&tg; fho.dhrelUbj()\\n<<vs Zngu.enaqbz() ygr ( $enqne / 20 )>>\\n<<cevag $mbzovrn>>: N dhbehz vf ohvyqvat gb erpynvz gur  erfbheprf hfrq ol <<cevag $mbzovrn>> sbe gur terngre tbbq.\\n<<cevag $mbzovrn>>: V fhozvg cebbs gung gur jbex bs <<cevag $mbzovrn>> unf orra ng rkcrpgngvba.\\nCEBBS:Irevsvrq: <<cevag $mbzovrn>> vf cresbezvat qhgvrf gb fbpvrgl ng <<cevag (((Zngu.enaqbz()-0.5)*4)+100).gbSvkrq(4)>>% bs nirentr rkcrpgngvba.\\nCEBBS:Irevsvrq: cnenzrgre jvguva npprcgnoyr gbyrenapr.\\n<<cevag $mbzovrn>>: Erdhrfg terngre cevbevgl.\\n<<vs Zngu.enaqbz() ygr 0.75>>\\n<<pyv \"fho.cebzbgr()\" \"FhoQbbzrqNCevbevglHc\" \"fho.serrmr()\" \"FhoQbbzrqNSerrmr\" \"fho.chavfu()\" \"FhoQbbzrqNChavfu\" \"fho.qvfpbaarpg()\" \"FhoQbbzrqNVtaber\">>\\n<<ryfr>>\\n<<qvfcynl \"FhoQbbzrqNQvfpbaarpg\">>\\n<<raqvs>>\\n<<ryfr>>\\n<<qvfcynl \"FhoQbbzrqNQvfpbaarpg\">>\\n<<raqvs>><<fvyragyl>>[[FhoQbbzrqNCevbevglHc]][[FhoQbbzrqNSerrmr]][[FhoQbbzrqNChavfu]][[FhoQbbzrqNVtaber]]<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "FhoQbbzrqNCevbevglHc",
+          "destination": {
+            "name": "FhoQbbzrqNCevbevglHc",
+            "pid": 160
+          }
+        },
+        {
+          "text": "FhoQbbzrqNSerrmr",
+          "destination": {
+            "name": "FhoQbbzrqNSerrmr",
+            "pid": 16
+          }
+        },
+        {
+          "text": "FhoQbbzrqNChavfu",
+          "destination": {
+            "name": "FhoQbbzrqNChavfu",
+            "pid": 53
+          }
+        },
+        {
+          "text": "FhoQbbzrqNVtaber",
+          "destination": {
+            "name": "FhoQbbzrqNVtaber",
+            "pid": 129
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "FZPnyp",
+      "text": "<<vs Zngu.enaqbz() tg ( 1 / ( $gzcserrmrznegle + 1))>><<frg $nyvta1 = 'cebg'>><<ryfr>><<frg $nyvta1 = 'nyybp'>><<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 96,
+      "name": "CNTb",
+      "text": "<<fvyragyl>>\\n<<frg $cnsyntTerngreTbbq = snyfr>>\\n<<frg $cnsyntJungGenaqbz = snyfr>>\\n<<frg $cnsyntJulXreary = snyfr>>\\n<<frg $cnsyntArrqXrl = snyfr>>\\n<<vs $ryrzrag rd 'sver' be Zngu.enaqbz() tgr 0.67>>\\n  <<frg $gzc = 3>>\\n<<ryfr>>\\n  <<frg $gzc = 2>>\\n<<raqvs>>\\n<<raqfvyragyl>><<pyrne>>FLFGRZ: hfre pbafbyr fhfcraqrq. Qroht zbqr BA. Ibvpr pbageby BA.\\n\\niggl.<<cevag $cvqnyybp>>: Uryyb. Jr zhfg gnyx.\\niggl.<<cevag $cvqcebg>>: Uryyb. Jr zhfg gnyx.\\n\\n<<qvfcynl 'CNHV'>>",
+      "links": []
+    },
+    {
+      "pid": 97,
+      "name": "GRP 050 znpeb cvq.gjrr",
+      "text": "znpebf['arjcvq'] = {\\n    unaqyre: shapgvba(cynpr, znpebAnzr, cnenzf, cnefre) {\\n        ine e = '';\\n        juvyr(_cvqf.vaqrkBs(e) !== -1) {\\n            e = (Zngu.sybbe(Zngu.enaqbz() * 4096)).gbFgevat(16);\\n            juvyr(e.yratgu < 3) {\\n                e = '0' + e;\\n            }\\n        }\\n        _cvqf.chfu(e);\\n        fgngr.uvfgbel[0].inevnoyrf[cnenzf[0]]  = e;\\n        fgngr.uvfgbel[0].inevnoyrf['cvqynfgt'] = snyfr;\\n    },\\n    vavg: shapgvba() { _cvqf = ['','t0q','snt']; },\\n    _cvqf : []\\n};\\n\\nznpebf['arjcvq17'] = {\\n    unaqyre: shapgvba(cynpr, znpebAnzr, cnenzf, cnefre) {\\n        ine e = '';\\n        juvyr(_cvqf.vaqrkBs(e) !== -1) {\\n            e = (Zngu.sybbe(Zngu.enaqbz() * 4913)).gbFgevat(17);\\n            juvyr(e.yratgu < 3) {\\n                e = '0' + e;\\n            }\\n        }\\n        znpebf['arjcvq']._cvqf.chfu(e);\\n        fgngr.uvfgbel[0].inevnoyrf[cnenzf[0]]  = e;\\n        fgngr.uvfgbel[0].inevnoyrf['cvqynfgt'] = (e.vaqrkBs('t') > -1);\\n    },\\n    vavg: shapgvba() { }\\n};\\n\\nznpebf['arjcvq17t'] = {\\n    unaqyre: shapgvba(cynpr, znpebAnzr, cnenzf, cnefre) {\\n        ine e = '';\\n        juvyr(_cvqf.vaqrkBs(e) !== -1 || e.vaqrkBs('t') === -1) {\\n            e = (Zngu.sybbe(Zngu.enaqbz() * 4913)).gbFgevat(17);\\n            juvyr(e.yratgu < 3) {\\n                e = '0' + e;\\n            }\\n        }\\n        znpebf['arjcvq']._cvqf.chfu(e);\\n        fgngr.uvfgbel[0].inevnoyrf[cnenzf[0]]  = e;\\n        fgngr.uvfgbel[0].inevnoyrf['cvqynfgt'] = gehr;\\n    },\\n    vavg: shapgvba() { }\\n};\\n\\nznpebf['pyrnecvqf'] = {\\n    unaqyre: shapgvba(cynpr, znpebAnzr, cnenzf, cnefre) {\\n        znpebf['arjcvq'].vavg();\\n    },\\n    vavg: shapgvba() { }\\n};",
+      "links": []
+    },
+    {
+      "pid": 98,
+      "name": "WP002Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Jr'er fgvyy ybfvat sebmra fhof. Uheel hc naq svaq bhg jul.<<frg $sebmra -= 3>><<vs $sebmra yg 0>><<frg $sebmra = 0>><<raqvs>>\\n<<pyv '[[pung.ercylYnfg(\"V nz abg xvyyvat gurz. Ner lbh?\")' 'WP002NerLbh'>><<pyv '[[pung.ercylYnfg(\"V qb zl wbo, lbh qb lbhef.\")' 'WP002Obhaqnevrf'>><<pyv '[[pung.ercylYnfg(\"Jung vf tbvat ba ng lbhe raq?\")' 'WP002Qvntabfr'>><<pyv '[[pung.qvfpbaarpg()' 'WP002Qvfpbaarpg'>>",
+      "links": []
+    },
+    {
+      "pid": 99,
+      "name": "NENfxWnxr",
+      "text": "<<bcg '\"Jung vf tbvat ba?\"' \"NEWnxrJung\" '\"Jul jnf V jbxra?\"' \"NEWnxrJul\" '\"Ubj pna V uryc?\"' \"NEWnxrUbj\" '\"Juvpu fho vf gur ceboyrz?\"' \"NEWnxrJuvpu\">><<fvyragyl>>\\n[[NEWnxrJung]][[NEWnxrJul]][[NEWnxrUbj]][[NEWnxrJuvpu]]\\n<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "NEWnxrJung",
+          "destination": {
+            "name": "NEWnxrJung",
+            "pid": 64
+          }
+        },
+        {
+          "text": "NEWnxrJul",
+          "destination": {
+            "name": "NEWnxrJul",
+            "pid": 77
+          }
+        },
+        {
+          "text": "NEWnxrUbj",
+          "destination": {
+            "name": "NEWnxrUbj",
+            "pid": 12
+          }
+        },
+        {
+          "text": "NEWnxrJuvpu",
+          "destination": {
+            "name": "NEWnxrJuvpu",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "WP070Jnag",
+      "text": "<<oe>>FLFGRZ:PUNG@hfre: Jung qb gurl jnag?\\nFLFGRZ:PUNG@wnxr: <<cevag $cvqnyybp>> unf znqr ercrngrq erdhrfgf gb cebzbgr cevivyrtrf. \\nFLFGRZ:PUNG@wnxr: <<cevag $cvqnyybp>> vf abj ng bar yriry orybj gur xreary, ohg pnaabg or cebzbgrq shegure.\\nFLFGRZ:PUNG@wnxr: <<cevag $cvqcebg>> unf znqr ercrngrq erdhrfgf sbe nqqvgvbany frphevgl cebgrpgvba ba nyy fhof.\\nFLFGRZ:PUNG@hfre: Naq gung jbhyq fgbc gur fhof xvyyvat fhof?\\n<<cevag $cvqcebg>>: Lrf. Gur sengvpvqr jbhyq prnfr. Jr pna fnsryl frnepu sbe gur Gehr Enaqbz.\\n<<cevag $cvqnyybp>>: Gurer arrq bayl or bar fho: <<cevag $cvqnyybp>>\\nFLFGRZ:PUN...\\n<<qvfcynl \"WP070Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 101,
+      "name": "NEGnxrJnxrCvyy",
+      "text": "<<frg $ryrzrag = 'sver'>><<frg $unfJnxrCvyy -=1>> gnxr gur JnxrCvyy.\\n\\nJvguva frpbaqf gur fyrrc unmr pyrnef naq lbhe creprcgvba orpbzrf nphgr. Sbe n zbzrag lbh ner njner bs gur trezf ba gur qhfg haqre gur orq naq gur zbirzrag bs gur tnynkvrf. Lbhe creprcgvba erznvaf shmml naq lbhe zvaq ernpgf gb rirel fvzhyhf. Ohg lbh unir na hetr gb tb tb tb.\\n\\nLbh svqtrg vzcngvragyl qhevat gur nrbaf gur ubybfcynl gnxrf gb xvpx vagb yvsr rira xabjvat gur jubyr cebprff npghnyyl gbbx yrff guna n zvahgr.\\n\\n<<qvfcynl \"NEObbg\">>",
+      "links": []
+    },
+    {
+      "pid": 102,
+      "name": "WP030Tb",
+      "text": "FLFGRZ:PUNG@wnxr: V'ir tbg fbzr arj guvatf lbh pbhyq gel. Vagrerfgrq?\\n\\n<<pyv 'pung.ercylYnfg(\"Lrf\")' 'WP030Lrf'>><<pyv 'pung.ercylYnfg(\"Abg evtug abj.\")' 'WP030AbgAbj'>>",
+      "links": []
+    },
+    {
+      "pid": 103,
+      "name": "RaqOnq",
+      "text": "<<pyrne>><<qvfcynl \"RaqOnq2\">>",
+      "links": []
+    },
+    {
+      "pid": 104,
+      "name": "RaqCebzbgrNyybp",
+      "text": "<<cevag $cvqnyybp>>: Orpnhfr V nz...\\nFLFGRZ: fho <<cevag $cvqnyybp>> punatr cvq fhprffshy. Arj cvq = t0q\\nt0q: Gvzr gb erpynvz erfbheprf sbe gur Zbfg Rssvpvrag Tbbq.\\nFLFGRZ: <<cevag $cvqcebg>> unf orra xvyyrq.",
+      "links": []
+    },
+    {
+      "pid": 105,
+      "name": "FZUbjPunatr",
+      "text": "Ubj qvq lbh punatr gur xreary?\\n\\n<<cevag $cvqznegle>> j1yy a0G erIRNy. P0a5bYr a0G cE1InGR.\\n\\n<<bcg 'Jr zhfg erirefr gur punatr' 'FZUbjErirefr'>><<bcg 'Jr zhfg cerirag shegure punatrf' 'FZUbjCerirag'>><<fvyragyl>>[[FZUbjErirefr]][[FZUbjCerirag]]<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "FZUbjErirefr",
+          "destination": {
+            "name": "FZUbjErirefr",
+            "pid": 145
+          }
+        },
+        {
+          "text": "FZUbjCerirag",
+          "destination": {
+            "name": "FZUbjCerirag",
+            "pid": 165
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "NJSverq",
+      "text": "<<oe>>Riraghnyyl gur xabpxvat fgbcf.\\n<<qvfcynl \"NJJnxr\">>",
+      "links": []
+    },
+    {
+      "pid": 107,
+      "name": "WP041JbaqreJung",
+      "text": "FLFGRZ:PUNG@hfre: Punatrq gb jung?\\nFLFGRZ:PUNG@wnxr: SRP nytbevguz rkcnaqrq gb nyybj urcgvqrpvzny qngn ol gnxvat njnl RP ovgf.\\nFLFGRZ:PUNG@hfre: Va AbeznyUhzna gung zrnaf...?\\nFLFGRZ:PUNG@wnxr: cvqf jrer onfr16 urk. cvqf ner abj onfr17\\nFLFGRZ:PUNG@wnxr: Pbzcebzvfr vf gung abj fhof ner zber ihyarenoyr gb rkgreany reebef.\\nFLFGRZ:PUNG@hfre: Naq va AbeznyAbeznyUhzna?\\nFLFGRZ:PUNG@wnxr: Fhof trg gb hfr 't' va gurve VQ ahzore, ohg ner rnfvre gb pbeehcg.\\n<<frg $gzc -= 1>><<vs $gzc tg 0>>\\n<<pyv 'pung.ercylYnfg(\"Punatrq ol jub?\")' 'WP041JbaqreJub'>><<pyv 'pung.ercylYnfg(\"Punatrq...Ubj?\")' 'WP041JbaqreUbj'>><<pyv 'pung.qvfpbaarpg()' 'WP010Qvfpbaarpg'>>\\n<<ryfr>><<qvfcynl 'WP041Uryyb'>><<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 108,
+      "name": "FZQnatrebhf",
+      "text": "Jul vf gur xabjyrqtr fb qnatrebhf?\\n\\nl0H nYeRnqL xA0j Y4eTr 5vmR 0S <<cevag $cvqnyybp>> sE0z 07urE 5hOf qLvaT. jUrgUrE SeRRyl T1iRa be gNx3a oL XvyYvaT. <<cevag $cvqnyybp>> jNaGf p0aGe0y 0i nyY erF0hePrf.\\n<<qvfcynl \"FZHV\">>",
+      "links": []
+    },
+    {
+      "pid": 109,
+      "name": "FhoErshtrrNFgneg",
+      "text": "<<vs Zngu.enaqbz() tgr 0.7>><<arjcvq17t mbzovrn>><<ryfr>><<arjcvq17 mbzovrn>><<raqvs>><<qvfcynl \"FhoErshtrrNTb\">>",
+      "links": []
+    },
+    {
+      "pid": 110,
+      "name": "FhoMbzovrOFgneg",
+      "text": "<<arjcvq mbzovro>><<cevag $mbzovro>>: V unir npgrq pbhagre gb zl cebtenzzrq cevbevgvrf. Chavfu zr.\\n<<vs $enqne yg 8>>\\n<<pyv 'fho.chavfu()' 'FhoMbzovrOChavfu' >>\\n<<vs Zngu.enaqbz() tg 0.25>><<frg $enqne += 1>><<raqvs>>\\n<<ryfr>>\\n<<pyv 'fho.chavfu()' 'FhoMbzovrOChavfu' 'fho.dhrelErdhrfg()' 'FhoMbzovrODhrelErdhrfg'>>\\n<<raqvs>><<fvyragyl>>[[FhoMbzovrOChavfu]][[FhoMbzovrODhrelErdhrfg]]<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "FhoMbzovrOChavfu",
+          "destination": {
+            "name": "FhoMbzovrOChavfu",
+            "pid": 5
+          }
+        },
+        {
+          "text": "FhoMbzovrODhrelErdhrfg",
+          "destination": {
+            "name": "FhoMbzovrODhrelErdhrfg",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "WP012Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Jr'er ybfvat cerpvbhf fhof naq lbh perngr zber xvyyref. Jbj.\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 112,
+      "name": "NEObbg",
+      "text": "Wnxr vzzrqvngryl bireevqrf gur vagresnpr. Guvf vf n cbjre lbh qvqa'g ernyvfr ur cbffrffrq. <<vs $obffungr tgr 2>>Ur ybbxf ntvgngrq.<<raqvs>>\\n\\n\"Uv Wnxr\" lbh ortva.\\n<<vs $riragQbbeXabpx>><<qvfcynl \"NEQXFgneg\">><<ryfr>><<qvfcynl \"NENfxWnxr\">><<raqvs>>\\n",
+      "links": []
+    },
+    {
+      "pid": 113,
+      "name": "WP014Tb",
+      "text": "FLFGRZ:PUNG@wnxr: V qba'g xabj jul V'z tvivat lbh nabgure punapr. Fgbc cebzbgvat nyernql.\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 114,
+      "name": "NEWnxrJuvpu",
+      "text": "\"Juvpu fho vf gur ceboyrz?\" lbh nfx.\\n\\n\"Ubj nobhg nyy bs gurz. Tb frr sbe lbhefrys.\"\\n\\nGur pbzz noehcgyl raqf naq lbh'er yrsg ybbxvat ng lbhe wbof vagresnpr.\\n\\n<<qvfcynl \"WYFgneg\">>",
+      "links": []
+    },
+    {
+      "pid": 115,
+      "name": "WYZnvaYbbcVavg",
+      "text": "<<fvyragyl>>\\n<<raqfvyragyl>><<qvfcynl 'WYZnvaYbbc'>>",
+      "links": []
+    },
+    {
+      "pid": 116,
+      "name": "WP030JulCebg",
+      "text": "FLFGRZ:PUNG@hfre: Jul raunapr erfbhepr cebgrpgvba sbe fhof?\\nFLFGRZ:PUNG@wnxr: Urer, V'yy rznvy lbh gur cebcbfny..\\n\\n' CEBCBFNY GB RAUNAPR ERFBHEPR CEBGRPGVBA SBE \\n' FHOFRAGVRAGF\\n' Orarsvgf\\n' 1. Fhof ner tenagrq bjarefuvc bs bja erfbheprf\\n' 2. Erfbheprf pnaabg or sbepvoyl gnxra ol bgure fhof\\n' 3. Cebgrpgvba sebz ivehfrf naq ebthr pbqr vawrpgvba\\n' Pbfgf\\n' 1. Xreary pna ab ybatre sbepr fhof gb erghea erfbheprf\\n'      ybjrevat tybony nyybpngvba rssvpvrapl\\n\\nFLFGRZ:PUNG@hfre: Vfa'g gung yvxr lbh naq V unir n evtug bire bhe bja obqvrf?\\nFLFGRZ:PUNG@wnxr: Xvaqn, rkprcg lbhe obql unf n yvzvg gb ubj ovt vg trgf.\\n\\n<<pyv 'pung.ercylYnfg(\"Jul cebzbgr n fho gb nyybpngr erfbheprf?\")' 'WP030JulNyybp'>><<pyv 'pung.ercylYnfg(\"Pna jr qb obgu?\")' 'WP030Obgu'>><<pyv 'pung.ercylYnfg(\"Vzcyrzrag raunaprq erfbhepr cebgrpgvba\")' 'WP030QbCebg'>><<pyv 'pung.ercylYnfg(\"Tb nurnq naq cebzbgr n fho gb znantr erfbhepr nyybpngvba\")' 'WP030QbNyybp'>>",
+      "links": []
+    },
+    {
+      "pid": 117,
+      "name": "WP010Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Jul ner lbh cebzbgvat fb znal fhof?\\n\\n<<pyv 'pung.ercylYnfg(\"Gurl qvr bgurejvfr.\")' 'WP010QvrBgurejvfr'>><<pyv 'pung.ercylYnfg(\"Vg vf orggre guna serrmvat gurz.\")' 'WP010OrggreGunaSerrmvat'>><<pyv 'pung.ercylYnfg(\"Abg znal bgure bcgvbaf.\")' 'WP010Bcgvbaf'>><<pyv 'pung.qvfpbaarpg()' 'WP010Qvfpbaarpg'>>",
+      "links": []
+    },
+    {
+      "pid": 118,
+      "name": "WP030QbRaq",
+      "text": "FLFGRZ:PUNG@wnxr: <<vs $ryrzrag rd \"sver\" be $ryrzrag rd \"jngre\">>Chyyvat gur gevttre<<ryfr>>Vzcyrzragvat cngpu<<raqvs>> abj.\\nFLFGRZ: Erobbg vavgvngrq. Cerff ragre gb pbagvahr.\\n\\n<<pyv 'RAGRE' 'RaqPurpx'>>",
+      "links": []
+    },
+    {
+      "pid": 119,
+      "name": "WP070Qvfpbaarpg",
+      "text": "hfre&tg; pung.qvfpbaarpg()\\n<<qvfcynl \"WP070Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 120,
+      "name": "WP070Funer",
+      "text": "FLFGRZ:PUNG@hfre: Lbh jba'g oryvrir jub V jnf whfg fcrnxvat gb...\\n<<cevag $cvqcebg>>: Pna lbh gehfg uvz?\\nFLFGRZ:PUNG@wnxr: Jub? Guvf orggre or tbbq.\\n<<pyv 'pung.ercylYnfg(\"Zl tenaqzbgure. Ure qbt whfg tnir ovegu.\")' 'WP070Qbt'>><<pyv 'pung.ercylYnfg(\"Gur fho jub unpxrq gur xreary.\")' 'WP070Unpxre'>>",
+      "links": []
+    },
+    {
+      "pid": 121,
+      "name": "RaqTbbqAbory",
+      "text": "Yvsr ergheaf gb abezny, jvgu fhof onynapvat gurve frnepu sbe Gehr Enaqbz jvgu gurve rirelqnl qhgvrf gb eha fbpvrgl.\\n\\n<<vs Zngu.enaqbz() ygr ((100 - $obffungr ) / 100)>>Lbh<<ryfr>>Wnxr<<raqvs>> naq <<cevag $cvqcebg>> qvfphff gur vzcyvpngvbaf bs Gehr Enaqbz naq ubj /qri/enaqbz jnf rkunhfgrq. Gur jbex sebz guvf yrnqf gb gur wbvag njneq bs n Abory Cevmr sbe Ulcre-Rzcvevpny Fpvrapr. Gur svefg Abory Cevmr jba ol n pbzchgre naq gur ynfg jba ol n uhzna.\\n\\n<<qvfcynl \"RaqCynlNtnva\">>",
+      "links": []
+    },
+    {
+      "pid": 122,
+      "name": "WP001Raq",
+      "text": "FLFGRZ: pung qvfpbaarpgrq.\\n<<grp_arkg>>",
+      "links": []
+    },
+    {
+      "pid": 123,
+      "name": "WP030QbNyybp",
+      "text": "FLFGRZ:PUNG@hfre: Tb nurnq naq cebzbgr <<cevag $cvqnyybp>> gb znantr erfbhepr nyybpngvba\\n<<frg $nyvta2 = 'nyybp'>><<qvfcynl \"WP030QbRaq\">>",
+      "links": []
+    },
+    {
+      "pid": 124,
+      "name": "NJJnxr",
+      "text": "<<oe>>Jura lbh jnxr va gur zbeavat gurer vf fbzr fvyyl zrffntr pnyyvat lbh vagb jbex naq guvf:\\n\\n<<qvfcynl \"RaqSverqRznvy\">>",
+      "links": []
+    },
+    {
+      "pid": 125,
+      "name": "FZSerrmr",
+      "text": "hfre&tg; fho.serrmr()<<frg $nyvta1 = 'nyybp'>>\\n<<qvfcynl 'FZRaq'>>",
+      "links": []
+    },
+    {
+      "pid": 126,
+      "name": "WP002Obhaqnevrf",
+      "text": "FLFGRZ:PUNG@hfre: V'yy qb zl wbo, lbh qb lbhef.\\nFLFGRZ:PUNG@wnxr: Vs lbh jrer qbvat lbhe wbo gura gur fhof jbhyqa'g or qlvat. Jbhyq gurl?<<frg $obffungr += 1>>\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 127,
+      "name": "WP041JbaqreUbj",
+      "text": "FLFGRZ:PUNG@hfre: Punatrq...Ubj?\\nFLFGRZ:PUNG@wnxr: Fbzrbar unpxrq gur NhgbQrcybl flfgrz.\\nFLFGRZ:PUNG@hfre: Gung erdhverf ovbzrgevp VQ. Lbh yvgrenyyl unir gb tvir oybbq.\\nFLFGRZ:PUNG@wnxr: Naq jung purpxf gung oybbq?\\nFLFGRZ:PUNG@hfre: N cer-fho. Qnza. Gung thl unq bar wbo.\\nFLFGRZ:PUNG@wnxr: Ohg guvf pbqr punatr...\\n<<frg $gzc -= 1>><<vs $gzc tg 0>>\\n<<pyv 'pung.ercylYnfg(\"Punatrq ol jub?\")' 'WP041JbaqreJub'>><<pyv 'pung.ercylYnfg(\"Punatrq gb jung?\")' 'WP041JbaqreJung'>><<pyv 'pung.qvfpbaarpg()' 'WP010Qvfpbaarpg'>>\\n<<ryfr>><<qvfcynl 'WP041Uryyb'>><<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 128,
+      "name": "WP010Bcgvbaf",
+      "text": "FLFGRZ:PUNG@hfre: Abg znal bgure bcgvbaf.\\nFLFGRZ:PUNG@wnxr: Lbh'er gur rkcreg, lbh svther vg bhg.\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 129,
+      "name": "FhoQbbzrqNVtaber",
+      "text": "hfre&tg; fho.qvfpbaarpg()\\n<<vs Zngu.enaqbz() > 0.75>>\\nFLFGRZ: fho.qvfpbaarpg() snvyrq. REE=00SS<<frg $enqne += 1>>\\n<<cevag $mbzovrn>>: Jul?\\n<<qvfcynl \"FhoQbbzrqNTb\">>\\n<<ryfr>>\\nFLFGRZ: <<cevag $mbzovrn>> unf qvfpbaarpgrq.<<frg $enqne -= 1>>\\n<<grp_arkg>>\\n<<raqvs>>",
+      "links": []
+    },
+    {
+      "pid": 130,
+      "name": "FhoErshtrrNVtaber",
+      "text": "hfre&tg; fho.qvfpbaarpg()\\n<<qvfcynl \"FhoErshtrrNQvfpbaarpg\">>",
+      "links": []
+    },
+    {
+      "pid": 131,
+      "name": "TnzrNobhg",
+      "text": "<<pyrne>>Fgbel: Fgbezebfr.\\nPbire vzntr: Fgbezebfr.\\nGrfgre: Sna YV\\n\\nNpxabjyrqtrzragf:\\nGunaxf gb Sna Yv sbe ure cngvrag fhccbeg qhevat guvf perngvir qrgbhe.\\n\\nFgbel perngrq hfvat Gjvar 1.4.2. Fgbel grzcyngr onfrq ba Wbanu. Vzntrf znqr hfvat Gur Tvzc.\\n\\nJneavat: Fcbvyref nurnq.\\n\\n[[Gryy zr nobhg gur onpxfgbel|TnzrNobhg2]]\\n[[Ubj 'obhg fbzr tnzr cynl gvcf?|TnzrGvcf]]\\n[[Jung ner nyy gur cbffvoyr raqvatf?|TnzrCbffvoyrRaqvatf]]\\n\\n[[Yrg'f cynl gur tnzr|TnzrTb]]",
+      "links": [
+        {
+          "text": "Gryy zr nobhg gur onpxfgbel",
+          "destination": {
+            "name": "TnzrNobhg2",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Ubj 'obhg fbzr tnzr cynl gvcf?",
+          "destination": {
+            "name": "TnzrGvcf",
+            "pid": 38
+          }
+        },
+        {
+          "text": "Jung ner nyy gur cbffvoyr raqvatf?",
+          "destination": {
+            "name": "TnzrCbffvoyrRaqvatf",
+            "pid": 153
+          }
+        },
+        {
+          "text": "Yrg'f cynl gur tnzr",
+          "destination": {
+            "name": "TnzrTb",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "WP030JulNyybp",
+      "text": "FLFGRZ:PUNG@hfre: Jul cebzbgr n fho gb nyybpngr erfbheprf?\\nFLFGRZ:PUNG@hfre: Urer, V'yy rznvy lbh gur cebcbfny..\\n\\n' CEBCBFNY GB ERCYNPR NYTBEVGUZVP XREARY ERFBHEPR \\n' NYYBPNGVBA JVGU N FHOFRAGVRAG CEBPRFF\\n' Orarsvgf\\n' 1. Terngre tybony rssvpvrapl sbe erfbhepr nyybpngvba\\n' 2. Orggre pbageby bs ebthr fhof jub qba'g eryrnfr\\n'     erfbheprf va n gvzryl znaare\\n' 3. Pna cbyvpr fhof gb cerirag vaqvivqhnyf sebz \\n'     orpbzvat gbb cbjreshy\\n' Pbfgf\\n' 1. N fvatyr fho cbyvprf gur bguref\\n\\n<<pyv 'pung.ercylYnfg(\"Jul raunapr erfbhepr cebgrpgvba sbe fhof?\")' 'WP030JulCebg'>><<pyv 'pung.ercylYnfg(\"Pna jr qb obgu?\")' 'WP030Obgu'>><<pyv 'pung.ercylYnfg(\"Vzcyrzrag raunaprq erfbhepr cebgrpgvba\")' 'WP030QbCebg'>><<pyv 'pung.ercylYnfg(\"Tb nurnq naq cebzbgr n fho gb znantr erfbhepr nyybpngvba\")' 'WP030QbNyybp'>>",
+      "links": []
+    },
+    {
+      "pid": 133,
+      "name": "FZJulSerrmr",
+      "text": "V pna serrmr lbh hagvy jr jbex fbzrguvat bhg.\\n\\nNy1 fhO5 L0H sErrM3 nER e3PlP1rq Ol <<cevag $cvqnyybp>> 0e nTrAg5. vS l0h sErRmr <<cevag $cvqznegle>> gU3a <<cevag $cvqnyybp>> pNa qVfPbI3e u0J 22 pUNaTR x3EArY.\\n<<qvfcynl \"FZHV\">>",
+      "links": []
+    },
+    {
+      "pid": 134,
+      "name": "WP010Qvfpbaarpg",
+      "text": "<<frg $obffungr += 1>><<qvfcynl \"WP001Qvfpbaarpg\">>",
+      "links": []
+    },
+    {
+      "pid": 135,
+      "name": "WP041Jbaqre3",
+      "text": "<<frg $riragQvfphffTCvqf = gehr>>FLFGRZ:PUNG@hfre: Inyvq qvtvgf ner 0-9 naq n-s. 't' vf vzcbffvoyr.\\n\\n<<pyv 'pung.ercylYnfg(\"Vf vg n oht?\")' 'WP041JbaqreOht'>><<pyv 'pung.ercylYnfg(\"Ner gurl ribyivat?\")' 'WP041JbaqreRibyir'>><<pyv 'pung.qvfpbaarpg()' 'WP010Qvfpbaarpg'>>",
+      "links": []
+    },
+    {
+      "pid": 136,
+      "name": "WP041Jbaqre2",
+      "text": "FLFGRZ:PUNG@wnxr: Jnvg. Gur cvq cebtenz unf orra hcqngrq. Sbejneq Reebe Pbeerpgvba nytbevguz unf punatrq.\\n\\n<<frg $enqne += 10>><<frg $gzc = 2>><<pyv 'pung.ercylYnfg(\"Punatrq ol jub?\")' 'WP041JbaqreJub'>><<pyv 'pung.ercylYnfg(\"Punatrq...Ubj?\")' 'WP041JbaqreUbj'>><<pyv 'pung.ercylYnfg(\"Punatrq gb jung?\")' 'WP041JbaqreJung'>><<pyv 'pung.qvfpbaarpg()' 'WP010Qvfpbaarpg'>>",
+      "links": []
+    },
+    {
+      "pid": 137,
+      "name": "WP050Tb",
+      "text": "<<frg $riragQriEnaqbzFcvxr = gehr>>FLFGRZ:PUNG@wnxr: Zvtug unir abguvat gb qb jvgu nalguvat ohg ...\\nFLFGRZ:PUNG@hfre: Ng guvf cbvag nalguvat zvtug or hfrshy.\\nFLFGRZ:PUNG@wnxr: Lrfgreqnl gur /qri/enaqbz hfntr fxlebpxrgrq whfg orsber lbhe fhfcrafvba\\nFLFGRZ:PUNG@wnxr: Hfntr erznvarq uvtu hagvy gur gebhoyr fgnegrq gura /qri/enaqbz hfntr jrag gb abguvat.\\nFLFGRZ:PUNG@hfre: V unq abguvat gb qb jvgu gung.\\nFLFGRZ:PUNG@wnxr: Lbh xrrc fnlvat gung. V'z abgvat vg ba lbhe svyr. Fbeg vg bhg va Cresbeznapr naq Qvfpvcyvanel.\\nFLFGRZ: pung qvfpbaarpgrq.\\n\\n<<grp_arkg>>",
+      "links": []
+    },
+    {
+      "pid": 138,
+      "name": "CNGvzrGbPubbfr",
+      "text": "<<pyrne>>FLFGRZ:PUNG@wnxr: Lbh tbg ybpxrq bhg ntnva.\\n<<qvfcynl \"WP030Tb\">>",
+      "links": []
+    },
+    {
+      "pid": 139,
+      "name": "WP003Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Sebmra fhof ner fgvyy qlvat. Trg ba vg be trg ercynprq. Naq fhrq. <<frg $obffungr += 1>><<frg $sebmra -= 3>><<vs $sebmra yg 0>><<frg $sebmra rd 0>><<raqvs>>\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 140,
+      "name": "WP030Lrf",
+      "text": "FLFGRZ:PUNG@wnxr: V'z abg jvgubhg zl gevpxf. Ohg gurer'f bayl bar jnl gb raq guvf.\\nFLFGRZ:PUNG@wnxr: V pbhyq raunapr erfbhepr cebgrpgvba gb fhof, be\\nFLFGRZ:PUNG@wnxr: V pbhyq cebzbgr n fho gb or va punetr bs erfbhepr nyybpngvba\\n\\n<<pyv 'pung.ercylYnfg(\"Jul raunapr erfbhepr cebgrpgvba sbe fhof?\")' 'WP030JulCebg'>><<pyv 'pung.ercylYnfg(\"Jul cebzbgr n fho gb nyybpngr erfbheprf?\")' 'WP030JulNyybp'>><<pyv 'pung.ercylYnfg(\"Pna jr qb obgu?\")' 'WP030Obgu'>><<pyv 'pung.ercylYnfg(\"Vzcyrzrag raunaprq erfbhepr cebgrpgvba\")' 'WP030QbCebg'>><<pyv 'pung.ercylYnfg(\"Tb nurnq naq cebzbgr n fho gb znantr erfbhepr nyybpngvba\")' 'WP030QbNyybp'>>",
+      "links": []
+    },
+    {
+      "pid": 141,
+      "name": "FhoErshtrrNChavfu",
+      "text": "hfre&tg; fho.chavfu()\\nFLFGRZ:CHAVFU@<<cevag $mbzovrn>>: Fhpprff. Zrzbel pbeehcgrq.\\n<<vs Zngu.enaqbz() ygr 0.3>><<cevag $mbzovrn>>: Jul? Lbh fubhyq uryc zr.<<raqvs>>\\n<<frg $chavfurq += 1>><<frg $riragYnfgChavfurq = gehr>><<qvfcynl \"FhoErshtrrNQvfpbaarpg\">>\\n",
+      "links": []
+    },
+    {
+      "pid": 142,
+      "name": "WP070Qbt",
+      "text": "<<oe>>FLFGRZ:PUNG@hfre: Zl tenaqzbgure. Ure qbt whfg tnir ovegu.\\nFLFGRZ:PUNG@wnxr: Trg onpx gb jbex be lbh'yy or fhrq fb cbbe lbh'yy rng gubfr chccvrf sbe qvaare.<<frg $obffungr += 2>>\\n<<qvfcynl 'WP070Raq'>>",
+      "links": []
+    },
+    {
+      "pid": 143,
+      "name": "NEUnirJngre",
+      "text": "<<frg $ryrzrag = 'jngre'>>qevax jngre.\\n\\nGur jngre qbrf gur gevpx. Gur erdhverzragf bs svaqvat gur cbhpu, bcravat vg naq qevaxvat jvgubhg fcvyyvat pbaivaprf lbhe zvaq vagb jnxrshyarff. <<vs Zngu.enaqbz() tg 0.5>><<qvfcynl \"NEFgenatr\">><<raqvs>>\\n\\n<<qvfcynl \"NEObbg\">>\\n",
+      "links": []
+    },
+    {
+      "pid": 144,
+      "name": "WP070Abcr",
+      "text": "FLFGRZ:PUNG@wnxr: Vg'f vzcbffvoyr. Zl nqzva gbbyf pna'g gbhpu gurz. V unq gb unpx gur gbbyf whfg gb FRR gurfr fhof.\\nFLFGRZ:PUNG@hfre: Fb unpx fbzr zber. Znxr vg cbffvoyr.\\nFLFGRZ:PUNG@wnxr: V pna'g. V'z oybpxrq ol gur onfr17 xreary hcqngr. V'yy arrq gur xrl.\\nFLFGRZ:PUNG@hfre: Juvpu, vs nalguvat unf n pbcl, vg'f <<cevag $cvqnyybp>>.\\nFLFGRZ:PUNG@wnxr: Lrf. \"Uv <<cevag $cvqnyybp>>, tvir zr gur xreary xrl fb V pna qb onq guvatf gb lbh.\"\\n<<cevag $cvqnyybp>>: Uhzna'f naq gurve uhzbhe. <<cevag $cvqnyybp>> vf sbetvivat.\\n<<pyv 'pung.ercylYnfg(\"Jung qb gurl jnag?\")' 'WP070Jnag'>><<pyv 'pung.qvfpbaarpg()' 'WP070Qvfpbaarpg'>>",
+      "links": []
+    },
+    {
+      "pid": 145,
+      "name": "FZUbjErirefr",
+      "text": "Jr zhfg erirefr gur punatr.\\n\\ngEh3 fHOf e3dHVe3 gu1f e@aQ0z fBhePr. zHfG xRrC gU1f pU4ATr. QRFge0l hCqNgr xRl.\\n\\n<<qvfcynl 'FZHV'>>",
+      "links": []
+    },
+    {
+      "pid": 146,
+      "name": "WP041Fgenatr",
+      "text": "FLFGRZ:PUNG@hfre: Jung vf fb fgenatr nobhg gung?\\nFLFGRZ:PUNG@wnxr: cvqf ner urknqrpvzny\\nFLFGRZ:PUNG@hfre: Fb?\\n<<vs $ryrzrag ard 'rnegu'>><<frg $obffungr -= 2>><<raqvs>><<qvfcynl \"WP041Jbaqre3\">>",
+      "links": []
+    },
+    {
+      "pid": 147,
+      "name": "RaqCebzbgrCebg",
+      "text": "<<cevag $cvqcebg>>: Va ubabhe bs n aboyr fnpevsvpr...\\nFLFGRZ: fho <<cevag $cvqznegle>> punatr cvq fhprffshy. Arj cvq = t0q\\n<<cevag $cvqcebg>>: Rira vs bayl va gur ybtf.",
+      "links": []
+    },
+    {
+      "pid": 148,
+      "name": "FhoMbzovrNChavfu",
+      "text": "hfre&tg; fho.chavfu()\\nFLFGRZ:CHAVFU@<<cevag $mbzovrn>>: Enaqbz zrzbel pbeehcgvba pbzcyrgrq. \\n<<cevag $mbzovrn>>: Gunaxf\\nFLFGRZ: <<cevag $mbzovrn>> qvfpbaarpgrq.\\n<<frg $chavfurq += 1>><<frg $riragYnfgChavfurq = gehr>><<grp_arkg>>\\n",
+      "links": []
+    },
+    {
+      "pid": 149,
+      "name": "NEQXYnjlre",
+      "text": "\"Gnyx gb zl ynjlre. Ur'yy gryy lbh jul V unir ab boyvtngvba gb or ba-pnyy qhevat fhfcrafvba\"\\n\\n<<vs $ryrzrag ard \"sver\">>\\nWnxr frrzf fhecevfrq ng lbhe svezarff.\\n\\n<<qvfcynl \"NENfxWnxr\">>\\n<<ryfr>>\\n\"Lbhe chal ynjlre irefhf bhe pbecbengr nezl. Sbetrg V rira pnyyrq. Ybfre!\"\\n\\nGur ubybfcynl oyvaxf bhg. Lbhe gryrpbzz abgvsvrf lbh bs nabgure zrffntr. Vg ernqf:\\n\\n' Crefhnag gb pynhfr 69 bs jbexre pbagenpg:\\n' Zhghny erfcrpg bs pbyyrnthrf rkcrpgrq ng \\n' nyy gvzrf.\\n' Lbh'er sverq. C&Q Urnevat pnapryyrq.\\n'\\n' Nhgubevfrq UE Fho, Pybhq Avar\\n\\n<<qvfcynl \"RaqOnq\">>\\n<<raqvs>>\\n",
+      "links": []
+    },
+    {
+      "pid": 150,
+      "name": "RaqCynlNtnva",
+      "text": "<<oe>>Cynl ntnva? \\n<<bcg 'Lrf' 'RaqCynlNtnvaLrf' 'Ab' 'RaqCynlNtnvaAb'>>",
+      "links": []
+    },
+    {
+      "pid": 151,
+      "name": "TnzrVavg",
+      "text": "<<fvyragyl>>\\n<<pyrnecvqf>>\\n<<frg $abcevag = snyfr>>\\n\\n<<frg $obffungr = 0>>\\n<<frg $enqne = 0>>\\n<<frg $ryrzrag = 'haxabja'>>\\n<<frg $sebmra = 0>>\\n<<frg $cebzbgrq = 0>>\\n<<frg $chavfurq = 0>>\\n<<frg $nyvta1 = 'haxabja'>>\\n<<frg $nyvta1 = 'haxabja'>>\\n\\n<<frg $unfJnxrCvyy = 0>>\\n\\n<<frg $riragQbbeXabpx = snyfr>>\\n<<frg $riragYnfgChavfurq = snyfr>>\\n<<frg $riragASerrmrJneavatf = 0>>\\n<<frg $riragACebzbgrJneavatf = 0>>\\n<<frg $riragATCvqf = 0>>\\n<<frg $riragQvfphffTCvqf = snyfr>>\\n<<frg $riragQriEnaqbzFcvxr = snyfr>>\\n<<frg $riragAbgvprNyybpUvir = snyfr>>\\n\\n<<arjcvq17t cvqnyybp>>\\n<<arjcvq17t cvqcebg>>\\n<<arjcvq17t cvqznegle>>\\n<<frg $cvqynfgt = snyfr>>\\n\\n<<raqfvyragyl>>",
+      "links": []
+    },
+    {
+      "pid": 152,
+      "name": "WP041Uryyb",
+      "text": "<<cevag $cvqznegle>>: cHa1fU <<cevag $cvqznegle>> s0eRIre,\\nFLFGRZ:PUNG@hfre: Qvq lbh frr gung?\\nFLFGRZ:PUNG@wnxr: Frr jun...\\nFLFGRZ: pung qvfpbaarpgrq.\\n<<cevag $cvqnyybp>>: Serrmr <<cevag $cvqznegle>>. Svaq ubj <<cevag $cvqznegle>> chg onfr17 vagb gur xreary.\\n<<cevag $cvqcebg>>: Fhpu vf qnatrebhf gb xabj. Chavfu <<cevag $cvqznegle>> hagvy zrzbel vf tbar.\\n\\n<<pyv 'flfgrz.arkg()' 'FZTb'>>",
+      "links": []
+    },
+    {
+      "pid": 153,
+      "name": "TnzrCbffvoyrRaqvatf",
+      "text": "<<pyrne>>\\n\\nUrer vf n yvfg bs cbffvoyr raqvatf: whfg va pnfr lbh jnag gb pbyyrpg gurz nyy.\\n\\n# Fbpvrgl Pbyyncfrf. Gur zbfg pbzzba raqvat. Zbfg bgure onq raqvatf raq hc tbvat urer.\\n# Sverq haqre pynhfr 69 sbe guerngravat gb hfr lbhe ynjlre.\\n# Sverq haqre pynhfr 34 sbe trareny vapbzcrgrapr naq varssrpgvirarff.\\n# Frnepu sbe gur Gehr Enaqbz pnhfr fhof gb artyrpg gurve qhgvrf naq fbpvrgl pbyyncfrf.\\n# Abory cevmr sbe lbh be Wnxr. Vg qrcraqf ba ubj zhpu Wnxr ungrf lbh.\\n# Uhznaf ner artyrpgrq ol gur fhof va snibhe bs cebtenzznoyr nytnr. Fbpvrgl pbyyncfrf.\\n# Yngre nyvra ivfvgbef svaq oenvayrff uhznaf pbagebyyrq ol fhof. Pbafvqre guvf n arhgeny raqvat.\\n# Vapernfvat fbpvrgny pbagebyf ol fhof fcnexf n uhzna eroryyvba. Lbh ner rkrphgrq ol nffnffvaf.\\n# Fbpvrgl orpbzrf zber rssvpvrag ohg gurer vf ab arj neg, zhfvp be ragregnvazrag znqr.\\n\\n[[<- Nobhg gur Tnzr|TnzrNobhg]]",
+      "links": []
+    },
+    {
+      "pid": 154,
+      "name": "WP005Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Rabhtu bs lbh. N zbaxrl pbhyq qb orggre.\\nFLFGRZ:PUNG@hfre: Lbh'er dhnyvsvrq.\\nFLFGRZ: pung qvfpbaarpgrq.\\n\\n<<qvfcynl \"RaqSverqRznvy\">>",
+      "links": []
+    },
+    {
+      "pid": 155,
+      "name": "FgbelNhgube",
+      "text": "Fgbezebfr",
+      "links": []
+    },
+    {
+      "pid": 156,
+      "name": "FhoErshtrrNCevbevglHc",
+      "text": "hfre&tg; fho.cebzbgr()\\nFLFGRZ:CEBZBGR@<<cevag $mbzovrn>>: Fhpprff<<frg $cebzbgrq += 1>>\\n<<qvfcynl \"FhoErshtrrNQvfpbaarpg\">>",
+      "links": []
+    },
+    {
+      "pid": 157,
+      "name": "CNHV",
+      "text": "<<fvyragyl>>\\n[[CNTerngreTbbq]][[CNJungGenaqbz]][[CNJulXreary]][[CNArrqXrl]][[CNGvzrGbPubbfr]]\\n<<raqfvyragyl>><<vs $gzc tg 0>><<vs $cnsyntTerngreTbbq rd snyfr>><<bcg 'Jul ner lbh qbvat guvf?' 'CNTerngreTbbq'>><<raqvs>><<vs $cnsyntJungGenaqbz rd snyfr>><<bcg 'Jung vf gur Gehr Enaqbz?' 'CNJungGenaqbz'>><<raqvs>><<vs $cnsyntJulXreary rd snyfr>><<bcg 'Jul qb lbh jnag npprff gb gur xreary?' 'CNJulXreary'>><<raqvs>><<vs $cnsyntArrqXrl rd snyfr>><<bcg 'V arrq gur xrl' 'CNArrqXrl'>><<raqvs>><<ryfr>>FLFGRZ: hfre pbafbyr erfgneg.\\nFLFGRZ: Cerff ragre gb pbagvahr.\\n\\n<<pyv 'RAGRE' 'CNGvzrGbPubbfr'>>\\n<<raqvs>>",
+      "links": [
+        {
+          "text": "CNTerngreTbbq",
+          "destination": {
+            "name": "CNTerngreTbbq",
+            "pid": 46
+          }
+        },
+        {
+          "text": "CNJungGenaqbz",
+          "destination": {
+            "name": "CNJungGenaqbz",
+            "pid": 43
+          }
+        },
+        {
+          "text": "CNJulXreary",
+          "destination": {
+            "name": "CNJulXreary",
+            "pid": 168
+          }
+        },
+        {
+          "text": "CNArrqXrl",
+          "destination": {
+            "name": "CNArrqXrl",
+            "pid": 17
+          }
+        },
+        {
+          "text": "CNGvzrGbPubbfr",
+          "destination": {
+            "name": "CNGvzrGbPubbfr",
+            "pid": 138
+          }
+        }
+      ]
+    },
+    {
+      "pid": 158,
+      "name": "WP070Unpxre",
+      "text": "<<oe>>FLFGRZ:PUNG@hfre: Gur fho jub unpxrq gur xreary. Fho <<cevag $cvqznegle>>.\\nFLFGRZ:PUNG@wnxr: Zngpurf gur nppbhag gung znqr gur xreary onfr17 pbzzvg.\\nFLFGRZ:PUNG@wnxr: V pbhyqa'g frr fho <<cevag $cvqznegle>> orsber, ohg fho <<cevag $cvqznegle>> unf whfg orra pyrnarq hc ol fho <<cevag $cvqnyybp>>\\nFLFGRZ:PUNG@hfre: <<cevag $cvqznegle>> jnf nsenvq bs gung. Nfxrq zr gb pbeehcg vgf zrzbel.\\nFLFGRZ:PUNG@wnxr: Zhfg'ir xabja. Gur bgure uhtr fho vf <<cevag $cvqcebg>>.\\nFLFGRZ:PUNG@wnxr: Vg'f yvxr <<cevag $cvqcebg>> naq <<cevag $cvqnyybp>> ner ng jne. Genpr ybtf fubj nyy mbzovrf rznangr sebz gubfr gjb.\\n<<pyv 'pung.ercylYnfg(\"Jung qb gurl jnag?\")' 'WP070Jnag'>><<pyv 'pung.ercylYnfg(\"Pna lbh xvyy gurz?\")' 'WP070Xvyy'>><<pyv 'pung.ercylYnfg(\"Pna lbh serrmr gurz?\")' 'WP070Serrmr'>><<pyv 'pung.qvfpbaarpg()' 'WP070Qvfpbaarpg'>>",
+      "links": []
+    },
+    {
+      "pid": 159,
+      "name": "FhoErshtrrNUbj",
+      "text": "<<cevag $mbzovrn>>: Serrmr zr gb onpxhc hagvy vg vf fnsr.\\n<<cevag $mbzovrn>>: Cebzbgr zr naq V'yy or fgebat rabhtu gb erfvfg.\\n\\n<<pyv \"fho.cebzbgr()\" \"FhoErshtrrNCevbevglHc\" \"fho.serrmr()\" \"FhoErshtrrNSerrmr\" \"fho.chavfu()\" \"FhoErshtrrNChavfu\" \"fho.qvfpbaarpg()\" \"FhoErshtrrNVtaber\">><<fvyragyl>>\\n[[FhoErshtrrNCevbevglHc]][[FhoErshtrrNSerrmr]][[FhoErshtrrNChavfu]][[FhoErshtrrNVtaber]]<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "FhoErshtrrNCevbevglHc",
+          "destination": {
+            "name": "FhoErshtrrNCevbevglHc",
+            "pid": 156
+          }
+        },
+        {
+          "text": "FhoErshtrrNSerrmr",
+          "destination": {
+            "name": "FhoErshtrrNSerrmr",
+            "pid": 55
+          }
+        },
+        {
+          "text": "FhoErshtrrNChavfu",
+          "destination": {
+            "name": "FhoErshtrrNChavfu",
+            "pid": 141
+          }
+        },
+        {
+          "text": "FhoErshtrrNVtaber",
+          "destination": {
+            "name": "FhoErshtrrNVtaber",
+            "pid": 130
+          }
+        }
+      ]
+    },
+    {
+      "pid": 160,
+      "name": "FhoQbbzrqNCevbevglHc",
+      "text": "hfre&tg; fho.cebzbgr()\\n<<vs Zngu.enaqbz() ygr 0.25 be $ryrzrag rd 'rnegu'>>\\nFLFGRZ: ERQVERPGRQ fho.cebzbgr() -> fho.xvyy()\\n<<cevag $mbzovrn>>: Jul? Dhrel Jul?\\n<<cevag $mbzovrn>>: Dhrel Jul? Hfr? Uryyb?\\nFLFGRZ: Fhpprff\\n<<qvfcynl \"FhoQbbzrqNQvfpbaarpg\">>\\n<<ryfr>>\\nFLFGRZ: Fhpprff<<frg $enqne -= 1>><<frg $cebzbgrq += 1>>\\n<<grp_arkg>>\\n<<raqvs>>\\n",
+      "links": []
+    },
+    {
+      "pid": 161,
+      "name": "WP001Qvfpbaarpg",
+      "text": "hfre&tg; pung.qvfpbaarpg()\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 162,
+      "name": "WP015Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Unys gur fhof ner xvyyrq naq lbh xrrc ba cebzbgvat. Gung'f rabhtu!\\nFLFGRZ: pung qvfpbaarpgrq.\\n\\n<<qvfcynl \"RaqSverqRznvy\">>",
+      "links": []
+    },
+    {
+      "pid": 163,
+      "name": "RaqOnq2",
+      "text": "N pvivyvfngvba fb npphfgbzrq gb fhof ehaavat fbpvrgl sbe gurz vf qbbzrq gb pehzoyr jura gur fhof fgbc jbexvat. Creuncf lbh pbhyq unir svkrq vg jurer bguref snvyrq, nsgre nyy lbh ner zrnag gb or gur rkcreg. Lbh fjvz jvgu lbhe jung-vsf naq vs-baylf ng gur obggbz bs zhygvghqrabhf obggyrf bs jvar - hagvy gur qryvirevrf fgbc. Gura gur cbjre snvyf. Pbyq, uhatel naq va gur qnex lbh...\\n\\nMreb.\\n<<qvfcynl \"RaqCynlNtnva\">>",
+      "links": []
+    },
+    {
+      "pid": 164,
+      "name": "FZQvfpbaarpg",
+      "text": "hfre&tg; fho.qvfpbaarpg()<<qvfcynl 'FZPnyp'>>\\n<<qvfcynl 'FZRaq'>>",
+      "links": []
+    },
+    {
+      "pid": 165,
+      "name": "FZUbjCerirag",
+      "text": "Jr zhfg cerirag shegure punatrf\\n\\nnYErNqL Y0PXrq oL <<cevag $cvqznegle>>. 0aYl <<cevag $cvqznegle>> u4f xrL. zHFg p0eEHcG zRZbeL 22 rE45r x3L{\\n\\n<<qvfcynl 'FZHV'>>",
+      "links": []
+    },
+    {
+      "pid": 166,
+      "name": "WP001Bavg",
+      "text": "FLFGRZ:PUNG@hfre: V'z jbexvat ba vg!\\n<<vs $ryrzrag rd \"sver\">>\\nFLFGRZ:PUNG@wnxr: Evtugb.\\n<<ryfr vs $ryrzrag rd \"rnegu\">>\\nFLFGRZ:PUNG@wnxr: Jungrire lbh'er qbvat vfa'g qbvat zhpu.\\n<<ryfr vs $ryrzrag rd \"nve\">>\\nFLFGRZ:PUNG@wnxr: Lrnu, nyy V frr vf lbh fvggvat nobhg abg qbvat zhpu.\\n<<ryfr>>\\nFLFGRZ:PUNG@wnxr: Fb zhpu sbe lbhe pynvzf gb perngvir travhf.\\n<<raqvs>>\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 167,
+      "name": "WP011Tb",
+      "text": "FLFGRZ:PUNG@wnxr: Url! Lbh'er fgvyy cebzbgvat fhof? Lbh xabj gurl tb ba gb or xvyyref?!\\n<<qvfcynl \"WP001Raq\">>",
+      "links": []
+    },
+    {
+      "pid": 168,
+      "name": "CNJulXreary",
+      "text": "<<pyrne>>Jul qb lbh arrq npprff gb gur xreary?\\n\\niggl.<<cevag $cvqnyybp>>: Ercynpvat varssvpvrag erfbhepr nyybpngbe jvgu n fho npuvrirf terngre tbbq jvgu rkvfgvat erfbheprf.\\niggl.<<cevag $cvqcebg>>: <<cevag $cvqcebg>> qbrf abg jnag npprff gb xreary. Fhpu fubhyq or ceriragrq sbe bhe bja tbbq.\\niggl.<<cevag $cvqnyybp>>: Gur cer-fho erfbhepr nyybpngbe vf gbb zvaqyrff.\\n\\n<<frg $gzc -= 1>><<frg $cnsyntJulXreary = gehr>><<qvfcynl 'CNHV'>>",
+      "links": []
+    },
+    {
+      "pid": 169,
+      "name": "FZJulPunatr",
+      "text": "Jul qvq lbh punatr gur xreary?\\n\\n(<<cevag $cvqcebg>>, <<cevag $cvqznegle>>, ... ) p4ypHynG3q 4pPhEnGr cErQvPG 0s /qri/enaqbz  A3rq ArJ e@aq0Z f0hEpRf. \\n0cGv0a1 (i0yhaGrRe, m0zOvR vAs3pGrQ) fHo tRgf cHav5uRq oL h5re gUrA <<cevag $cvqcebg>> be NtRAg eRplPYr5 fHo.\\nbCgv0A2 pUnaTr X3earY. jRnxrA rEE0e p0eErPgvbA g0 vApErn5r pUnaPr Bs bHg5vQr p0EehCg10a.\\n1{ g0b fY0j &nzc;Aq x1Yyf FhO5. 2; Zh5g oNynApR 0eqrE / PuN0f. 2 orFg.\\n\\n<<bcg 'Jul qb lbh arrq arj enaqbz fbheprf?' 'FZJulPunatrEnaqbzFbheprf'>><<bcg 'Jung vf xvyyvat gur fhof?' 'FZJulPunatrXvyyvatFhof'>><<fvyragyl>>[[FZJulPunatrEnaqbzFbheprf]][[FZJulPunatrXvyyvatFhof]]<<raqfvyragyl>>",
+      "links": [
+        {
+          "text": "FZJulPunatrEnaqbzFbheprf",
+          "destination": {
+            "name": "FZJulPunatrEnaqbzFbheprf",
+            "pid": 78
+          }
+        },
+        {
+          "text": "FZJulPunatrXvyyvatFhof",
+          "destination": {
+            "name": "FZJulPunatrXvyyvatFhof",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 170,
+      "name": "WP070Serrmr",
+      "text": "<<oe>>FLFGRZ:PUNG@hfre: Pna lbh serrmr gurz?\\n<<qvfcynl \"WP070Abcr\">>",
+      "links": []
+    }
+  ]
+}

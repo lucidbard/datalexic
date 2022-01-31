@@ -1,0 +1,1413 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Add Item",
+      "text": "<<widget \"add\">>\n<!--If you haven't picked up an item before-->\n    <<if $inv.length is 0 and !$noncombinables.includes($args[0]) and !$lexaItems.includes($args[0])>>\n        <br>You make a note to remember this, because it might be important. As you do, you almost feel it added to your mind, as if that's an actual space you can visit.<br>\n    <<elseif $inv.length is 0 and $lexaItems.includes($args[0]) or $inv.length is 0 and $noncombinables.includes($args[0])>>\n        <br>You're not sure if you should care about this. But, just by looking at it, you can almost feel it added to your mind, as if that's an actual space you can visit.<br>\n    <</if>>\n<!--Links to item's page and adds it to the inventory if it's not in it already-->\n<<if $inv.includes($args[0]) or $setAside.includes($args[0])>>\n    //You've found the clue, <nowiki>\"</nowiki>[[$args[0]]]<nowiki>\"</nowiki> already.//\n<<else>>\n    <br>//(The clue, <nowiki>\"</nowiki>[[$args[0]]]<nowiki>\"</nowiki> has been added to your memories.)//<<set $inv.pushUnique($args[0])>>\n<</if>>\n\n<</widget>>",
+      "links": []
+    },
+    {
+      "pid": 2,
+      "name": "Clues",
+      "text": "<<nobr>>\n    <strong>Clues\n    <<if $inv.length > 1>>\n        | [[Link Clues]]\n    <</if>>\n    <<if Object.keys($thoughts).length > 0>>\n        | [[Thoughts]]\n    <</if>>\n    |  <<linkreplace \"Save\">>\n            <<script>>\n                if (Save.ok()) { \n                    Save.slots.save(0);\n                }\n            <</script>>\n            Game saved.\n        <</linkreplace>>\n        <<if Save.slots.has(0)>>\n    |    <<link \"Restore Save\">><<script>>\n                if (Save.slots.has(0)) { \n                    Save.slots.load(0);\n                } \n            <</script>><</link>>\n    |      <<linkreplace \"Restart\">>\nThis will erase your progress and saves. Are you sure?\n                <<link \"Yes\">>\n                    <<script>>\n                        if (Save.slots.has(0)) {\n                            Save.slots.delete(0);\n                        }\n                        if (Save.autosave.has()) {\n                            Save.autosave.delete();                           \n                        }\n                        Engine.restart();\n                        <</script>>\n                <</link>>\n            <</linkreplace>>\n        <</if>>\n     | [[Credits]]</strong>\n<</nobr>>\n<<if $inv.length > 0 and not hasVisited(\"Clues\")>>\nYou close your (technically nonexistent) eyes.\n\nAs you do, you feel yourself pulled into a space with all the clues you've taken, so to speak, sitting there like actual objects.\n\nOh. You guess your mind //is// a place you can actually visit. Is this some ghostly power thingamajig? Weird.\\\n<</if>>\\\n<<if $inv.length > 0>>\nYou have these clues:\n<<nobr>><<set _tmp = \"\">><table><col width=\"40%\"><col width=\"40%\"><col width=\"40%\">\n    <<for _i, _item range $inv.sort()>>\n        <<set _tmp += \"<td>[[\" + _item + \"]]</td>\">>\n        <<if _i % 3 == 2>>\n            <<print \"<tr>\" + _tmp + \"</tr>\">>\n            <<set _tmp = \"\">>\n        <</if>>\n<</for>>\n<<if _tmp != \"\">>\n    <<print \"<tr>\" + _tmp + \"</tr>\">>\n<</if>>\n</table><</nobr>>\n<<else>>\nYou remember a lot of things, but nothing that seems important right now.\n<</if>>\n<<if $setAside.length > 0>>\n\nYou have set these clues aside:\n<<nobr>><<set _tmp = \"\">><table><col width=\"40%\"><col width=\"40%\"><col width=\"40%\">\n    <<for _i, _item range $setAside.sort()>>\n        <<set _tmp += \"<td>[[\" + _item + \"]]</td>\">>\n        <<if _i % 3 == 2>>\n            <<print \"<tr>\" + _tmp + \"</tr>\">>\n            <<set _tmp = \"\">>\n        <</if>>\n<</for>>\n<<if _tmp != \"\">>\n    <<print \"<tr>\" + _tmp + \"</tr>\">>\n<</if>>\n</table><</nobr>>\n\n<</if>>\\\n<<if $inv.length > 1 and !hasVisited(\"Link Clues\")>>\nThere are still gaps in the story. You can try [[linking|Link Clues]] two clues if you want; see if there's a connection.\n\n<</if>>\\\n<<if $thoughts.length > 0>>\nYou can [[review->Thoughts]] the things you've figured out, now.\n\n<</if>>\\\n[[Open your eyes.|$returnTo]]",
+      "links": [
+        {
+          "text": "Link Clues",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Thoughts",
+          "destination": {
+            "name": "Thoughts",
+            "pid": 111
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 3
+          }
+        },
+        {
+          "text": "linking",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        },
+        {
+          "text": "review",
+          "destination": {
+            "name": "Thoughts",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Credits",
+      "text": "<<nobr>>\n    <strong>[[Clues]]\n    <<if $inv.length > 1>>\n        | [[Link Clues]]\n    <</if>>\n    <<if Object.keys($thoughts).length > 0>>\n        | [[Thoughts]]\n    <</if>>\n    |  <<linkreplace \"Save\">>\n            <<script>>\n                if (Save.ok()) { \n                    Save.slots.save(0);\n                }\n            <</script>>\n            Game saved.\n        <</linkreplace>>\n        <<if Save.slots.has(0)>>\n    |    <<link \"Restore Save\">><<script>>\n                if (Save.slots.has(0)) { \n                    Save.slots.load(0);\n                } \n            <</script>><</link>>\n    |      <<linkreplace \"Restart\">>\nThis will erase your progress and saves. Are you sure?\n                <<link \"Yes\">>\n                    <<script>>\n                        if (Save.slots.has(0)) {\n                            Save.slots.delete(0);\n                        }\n                        if (Save.autosave.has()) {\n                            Save.autosave.delete();                           \n                        }\n                        Engine.restart();\n                        <</script>>\n                <</link>>\n            <</linkreplace>>\n        <</if>>\n     | Credits</strong>\n<</nobr>>\n\n''Writers:'' Maddie Fialla and Marijke Perry\n\n''Coder:'' Maddie Fialla\n\nThank you to all of our numerous playtesters, who helped us immensely in making the game not only fun to play, but, you know, actually playable:\n\nAaron\nAce\nAlex\nAnna\nAva\nBrigit\nChapel\nEleanor\nElement\nEmma\nDrowningFish\nHaberdasher\nJames\nJake\nKhun\nKyra\nLordlyhour\nMorgan\nRebekka\n\nExtra special thanks to Chapel, HiEv, and TheMadExile from the Twine discord server! Thank you for helping me with code and generally being awesome. - Maddie\n\n[[Open your eyes.|$returnTo]]",
+      "links": [
+        {
+          "text": "Clues",
+          "destination": {
+            "name": "Clues",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Link Clues",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Thoughts",
+          "destination": {
+            "name": "Thoughts",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Hints",
+      "text": "<h1>Hints</h1>\n<<set $bigHints = [\"Several of the clues cannot be combined at all.\", \"Sure there's a reason why you don't want to think about some of the clues. Are you going to say what it is? Hell no.\"]>>\n\n<<if $inv.includesAll(\"Potion\", \"Erin's Testimony\") and !Object.keys($thoughts).includes(\"you drinking Erin's potion\")>><<set $bigHints.pushUnique(\"Why is Erin under suspicion?\")>><</if>>\n \n<<if $inv.includesAll(\"Wine\", \"Gift Request\")and !Object.keys($thoughts).includes(\"you and Bram drinking wine\")>><<set $bigHints.pushUnique(\"That gift Bram got you was of a great year. Tasted amazing.\")>><</if>>\n \n<<if $inv.includesAny(\"Justin's Testimony\", \"Terry's Testimony\") and $inv.includes(\"Salad\") and !Object.keys($thoughts).includes(\"Justin and Terry at the grocery store\")>><<set $bigHints.pushUnique(\"Why are Justin and Terry under suspicion?\")>><</if>>\n \n<<if $inv.includesAll(\"Sandwich\", \"Annie's Testimony\")and !Object.keys($thoughts).includes(\"your fight with Annie\")>><<set $bigHints.pushUnique(\"Why is Annie under suspicion?\")>><</if>>\n \n<<if $inv.includesAll(\"Old Newspaper\", \"Petition\")and !Object.keys($thoughts).includes(\"Terry's phone conversation\")>><<set $bigHints.pushUnique(\"Two of your clues mention a certain place.\")>><</if>>\n \n<<if $inv.includesAll(\"Crescent Charm\", \"Gibbous Charm\")and !Object.keys($thoughts).includes(\"Justin and Erin being siblings\")>><<set $bigHints.pushUnique(\"Two of these clues are obviously part of a set.\")>><</if>>\n \n<<if $inv.includesAll(\"Sigils\", \"Potions\")and !Object.keys($thoughts).includes(\"Erin's night\")>><<set $bigHints.pushUnique(\"There are two clues you've found that\u2026//allegedly// help with protection.\")>><</if>>\n \n<<if $inv.includesAll(\"Caf Patch\", \"Sigils\")and !Object.keys($thoughts).includes(\"Justin and Erin setting up for the dinner\")>><<set $bigHints.pushUnique(\"Justin's been tired lately, hasn't he? There's some clues you have that ostensibly help.\")>><</if>>\n \n<<if $inv.includesAll(\"Marijuana\", \"Medicine Reminder\")and !Object.keys($thoughts).includes(\"Bram and Annie's conversation in the garden\")>><<set $bigHints.pushUnique(\"Who's Bram even selling that marijuana to, anyway?\")>><</if>>\n \n<<if $inv.includesAll(\"Nut Article\", \"Annie's Testimony\")and !Object.keys($thoughts).includes(\"Terry giving Justin the nut article\")>><<set $bigHints.pushUnique(\"Oh so that's where Justin got the nuts idea? That makes sense, according to...\")>><</if>>\n \n<<if $inv.includesAll(\"Straight Tie\", \"Bowtie\")and !Object.keys($thoughts).includes(\"Terry and Bram's conversation in her shop\")>><<set $bigHints.pushUnique(\"Justin only has a few distinctive features, so why is it that...\")>><</if>>\n \n<<if $inv.includesAll(\"Aconite Poison\", \"Wolfsbane\")and !Object.keys($thoughts).includes(\"the detective ruminating about the murder weapon\")>><<set $bigHints.pushUnique(\"There are a couple clues you have that are rather poisonous, aren't there?\")>><</if>>\n \n<<if $inv.includesAll(\"Crumpled Paper\", \"Sharpie\")and !Object.keys($thoughts).includes(\"Justin, Annie, and sriracha\")>><<set $bigHints.pushUnique(\"Orange is quite a distinctive color.\")>><</if>>\n \n<<if $inv.includesAll(\"Justin's Keys\", \"Corkscrew\")and !Object.keys($thoughts).includes(\"you distracting Justin in front of Bram's house\")>><<set $bigHints.pushUnique(\"Where did the thing that used to be on Justin's keys go?\")>><</if>>\n \n<<if $inv.includesAll(\"Petals\", \"Wolfsbane\")and !Object.keys($thoughts).includes(\"Annie and Erin talking about warding you away\")>><<set $bigHints.pushUnique(\"Bram was giving what to who again?\")>><</if>>\n \n<<if $inv.includesAll(\"Shifty Person\", \"Cane\")and !Object.keys($thoughts).includes(\"Terry's boyfriend giving her some leaves\")>><<set $bigHints.pushUnique(\"Sometimes people have pretty distinct items on their person.\")>><</if>>\n \n<<if $inv.includesAll(\"Potion\", \"Werewolf\")and !Object.keys($thoughts).includes(\"Erin and Bram brewing you a potion\")>><<set $bigHints.pushUnique(\"What was Erin making to specifically protect you?\")>><</if>>\n \n<<if $inv.includesAll(\"Leaves\", \"Wolfsbane\")and !Object.keys($thoughts).includes(\"Bram realizing the wolfsbane was tampered with\")>><<set $bigHints.pushUnique(\"Something was damaged and robbed, and you think you found the item taken.\")>><</if>>\n \n<<if $inv.includesAny(\"Leaves\", \"Wolfsbane\", \"Aconite\") and $inv.includes(\"Salad\") and Object.keys($thoughts).includesAll(\"Bram realizing the wolfsbane was tampered with\", \"the detective ruminating about the murder weapon\") and !Object.keys($thoughts).includes(\"Terry poisoning your salad\")>><<set $bigHints.pushUnique(\"You have to confirm who did it, and with what. Sure it may be obvious now but...you have to see for yourself.\")>><</if>>\n\n<span id=\"Done\"><<link \"Click here for a hint! <br>\">>\n    <<append \"#bigHints\">>\n        <<print $bigHints.pluck()>><br>\n    <</append>>\n    <<if $bigHints.length == 0>>\n        <<remove \"#Done\">>\n    <</if>>\n<</link>></span>\n<span id=\"bigHints\"></span>\n<br>\n<br>\n[[Link more clues.->Link Clues]]<br>\n[[Open your eyes.|$returnTo]]",
+      "links": [
+        {
+          "text": "Link more clues.",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Start",
+      "text": "<<if Save.slots.has(0) or Save.autosave.has()>>You could start the story over, but you don't want to bore yourself with things you've gone over before.\n\nWanna <<link \"go back\">><<script>>\n                if (Save.autosave.has()) { \n                    Save.autosave.load();\n                }\n            <</script>><</link>> to where you were?\n<<if Save.slots.has(0)>>\nRestore from a <<link \"save\">><<script>>\n                if (Save.slots.has(0)) { \n                    Save.slots.load(0);\n                } \n            <</script>><</link>>?\n<</if>>\nOr maybe just skip to the <<link \"police station\" \"Police Station\">><<set $policeStationStart to true>><</link>>?\n\nYou can still <<link \"restart\">><<script>>\n                        if (Save.slots.has(0)) {\n                            Save.slots.delete(0);\n                        }\n                        if (Save.autosave.has()) {\n                            Save.autosave.delete();                           \n                        }\n                        Engine.restart();\n                        <</script>>\n                <</link>> everything if you want (This will erase your saves).\n<<else>><<goto \"Intro\">><</if>>",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Police Station",
+            "pid": 20
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Intro",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Intro",
+      "text": "It was a pretty good Thanksgiving until you keeled over and died.\n\nThe whole neighborhood was invited to the dinner, and just about the whole neighborhood showed up. Most of them were probably there for the free food over the Thanksgiving spirit advertised on the flyers, but it was such an impressive turnout that you didn't really give a damn about that. You simply beamed as you watched them pour into the park, chatting with each other and eyeing the feast laid out on the long plastic tablecloths.\n\nBefore people could sit down in the folding chairs set on the browning grass, you made a point of greeting every single one of them, with a wide smile and a handshake so firm that many of them walked away rubbing their wrists. It was what any gracious host would do, and as the Ronton Neighborhood Association chairman, you wanted to make a good impression. Listening closely to their chatter, which, given your position in the community, you considered less <<linkappend \"//eavesdropping//\">>, regardless of what Bram said,<</linkappend>> and more //surveying//, you were making a very good one indeed.\n\nYes, everything was going perfectly until, as you said with difficulty, you started to feel \"a bit crappy\". Beads of sweat dripped down your chin and your vision blurred, and people began to crowd about you in concern right up until you vomited on the table. It turned out that \"crappy\" was a terribly understated description of your heart attack, especially with the <<linkappend \"suffocation\">>, which you personally found excessive, <</linkappend>> on top of it. Though someone called 911 as soon as you started convulsing, and the EMTs tried their damndest to save you, things ended in a non-miraculous way.\n\nIn other words, you're a ghost now.\n\n[[Welp.|Title]]",
+      "links": [
+        {
+          "text": "Welp.",
+          "destination": {
+            "name": "Title",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Title",
+      "text": "<h1>Erstwhile</h1>\n<h4>Maddie Fialla and Marijke Perry</h4>\n<<link \"//One need not be a chamber to be haunted,<br>One need not be a house;<br>The brain has corridors surpassing<br>Material place.<br><br>-Emily Dickinson//\" \"Welp\">><</link>>",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Welp",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Welp",
+      "text": "Even though you're dead, a nagging feeling at the back of your no-longer-corporeal head is telling you you've got some <<linkreplace \"business\">>business<<replace \"#business\">> - or should you say...//unfinished business//<</replace>><</linkreplace>> to attend to still<span id=\"business\"></span>. Otherwise, why would you still be here?\n\nYou glance around the party, or what's left of it anyway, hoping to find some hint as to the answer to that question.\n\nMost of the remaining guests are murmuring quietly to each other in shock and horror.\n\nThe stench of death still lingers in the air. It doesn't mix well with the turkey.\n<<if hasVisited(\"Guests\", \"Food\", \"Mort\")>>\nYou can't figure out anything else you can do right now, being a ghost, other than wait around a bit.<</if>>\n\n[[Look at yourself.|Mort]]\n[[Look at the guests.|Guests]]\n[[Look at the food.|Food]]\n[[Be a poltergeist.|Poltergeist]]\n<<if hasVisited(\"Guests\", \"Food\", \"Mort\")>>[[Wait.]]<</if>>",
+      "links": [
+        {
+          "text": "Look at yourself.",
+          "destination": {
+            "name": "Mort",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Look at the guests.",
+          "destination": {
+            "name": "Guests",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Look at the food.",
+          "destination": {
+            "name": "Food",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Be a poltergeist.",
+          "destination": {
+            "name": "Poltergeist",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Wait.",
+          "destination": {
+            "name": "Wait.",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Mort",
+      "text": "You're - you //were// a handsome man, even with your slightly thinning hair; getting on in years but still maintaining a youthful <<linkappend \"charm\">> (the charm was probably diminished when you vomited on yourself)<</linkappend>> and vigor, if you do say so yourself. You hate how pale and still your corpse looks in comparison, but can't manage to look away until the EMTs carry it off.\n\nUnfortunately you're not a mortician so you can't determine cause of death, though you wish you could. Yeah, the whole 'heart stopped beating' part seems to supply the cause just fine. But you weren't //that// <<linkappend \"old\">> (56 is barely middle aged!)<</linkappend>> and had no history of heart problems in your life or in your family. Plus, you've no idea where the other symptoms came from. You suspect there's something else going on.\n\n[[Look around some more.|Welp]]",
+      "links": [
+        {
+          "text": "Look around some more.",
+          "destination": {
+            "name": "Welp",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Guests",
+      "text": "You don't know who most of these people are, but you feel sorry for them nonetheless. You probably traumatized them all about the concept of Thanksgiving by having to go and die. You disappoint yourself sometimes.\n\nThe other core members of the Neighborhood Association have stayed, maybe out of some sense of obligation. Justin is trying to calm the adults while his wife Terry is trying to calm the kids. Erin is running around gesticulating, maybe casting spells, though you don't know or care about the specifics. Annie and Bram are clearing the tables of food.\n\n[[Look at Justin.]]\n[[Look at Terry.]]\n[[Look at Erin.]]\n[[Look at Annie.]]\n[[Look at Bram.]]\n[[Look around some more.|Welp]]",
+      "links": [
+        {
+          "text": "Look at Justin.",
+          "destination": {
+            "name": "Look at Justin.",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Look at Terry.",
+          "destination": {
+            "name": "Look at Terry.",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Look at Erin.",
+          "destination": {
+            "name": "Look at Erin.",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Look at Annie.",
+          "destination": {
+            "name": "Look at Annie.",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Look at Bram.",
+          "destination": {
+            "name": "Look at Bram.",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Look around some more.",
+          "destination": {
+            "name": "Welp",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Look at Justin.",
+      "text": "Justin Whittaker is a cop in his mid-30s and husband to Terry. He's got jet-black hair, a bowtie, a perpetually furrowed brow. He's sort of gruff and unpleasant, but you like him fine anyway. Right now he's calming some other guests down and reassuring them that things will be <<linkappend \"alright.\">> You'd beg to differ.<</linkappend>>\n\nHe's handling this remarkably well; makes sense since he's probably seen this kind of macabre stuff before.\n\nStill, you wish he was a little more affected by a friend's death than he appears to be.\n\n[[Look at more guests.|Guests]]",
+      "links": [
+        {
+          "text": "Look at more guests.",
+          "destination": {
+            "name": "Guests",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Look at Terry.",
+      "text": "Terry Whittaker is a pleasant, energetic wine store owner and wife to Justin, around her mid-30s like Justin is. Brown curls fall into her face and cling to the wet streaks left by tears. She looks distraught but is trying to put on a happy face for the kids who have flocked around her for comfort.\n\nTerry has always been the most helpful member of the association, after you of course. You can't imagine how much this is affecting her.\n\n[[Look at other guests.|Guests]]",
+      "links": [
+        {
+          "text": "Look at other guests.",
+          "destination": {
+            "name": "Guests",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Look at Erin.",
+      "text": "Erin Moonchild is...well, she's something alright. You don't pretend to understand why she thinks things like potions and spells and <<linkreplace \"magic\">> sorry, //magick//<</linkreplace>> are real, but she does, and everyone else has just had to deal with it. You find it a bit inappropriate in a woman of her age, already in her 30's. Her weird gestures right now are probably her trying to cast some incantation. You don't know if she's aware of what just happened.\n\n[[Look at other guests.|Guests]]",
+      "links": [
+        {
+          "text": "Look at other guests.",
+          "destination": {
+            "name": "Guests",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Look at Annie.",
+      "text": "Annie Smith is a stern but <<linkappend \"kind\">> (too kind, really)<</linkappend>> black woman in her 70's, retired. Right now she's shaking her head as she packs up the mashed potatoes.\n\nYou know there's no way she's a grandma but everyone calls her Granny Smith anyway. She cooked everything for the dinner, which must've taken her days. You'd really appreciate it if not for all the nuts; for most of the dinner you were just frustratedly staring and drooling at all the stuff you couldn't eat because of your deadly allergy.\n\nNot that it ended up mattering.\n\n[[Look at other guests.|Guests]]",
+      "links": [
+        {
+          "text": "Look at other guests.",
+          "destination": {
+            "name": "Guests",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Look at Bram.",
+      "text": "Bram Locklear is the closest to you in age and you were fairly close friends. In fact, you're not entirely sure what he's going to do now that you're gone. He wears his hair in a long braid down his back, and tends to the <<linkappend \"community greenhouse\">>, though it's really more just Bram's greenhouse at this point<</linkappend>>. He also has a garden in his backyard, and sells the produce he grows there at the farmer's market for a living.\n\nBram is currently attempting to wrap the turkey in tin foil. His hands are shaking as he wraps and unwraps sections that have bones sticking out, and the foil rips repeatedly. You wish you could pat him on the shoulder and say it'll be alright. But you can't, and it won't.\n\n[[Look at other guests.|Guests]]",
+      "links": [
+        {
+          "text": "Look at other guests.",
+          "destination": {
+            "name": "Guests",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Food",
+      "text": "Just about everything is covered in nuts, or is nut-based in some way. The turkey, the stuffing, the mashed potatoes. You have no idea why. You <<linkappend \"can't\">><<linkappend \" (or couldn't, anyway)\">> (or still can't, being as you're a ghost)<</linkappend>><</linkappend>> eat any of it, oh, what with your //nut allergy//. You'd grind your teeth if you weren't intangible. How the hell was that overlooked?!\n \n[[Look around some more.|Welp]]",
+      "links": [
+        {
+          "text": "Look around some more.",
+          "destination": {
+            "name": "Welp",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Poltergeist",
+      "text": "You try to make the stuffing float, just for <<linkappend kicks.>> And also to find some sort of solace in the fact that you're dead.<</linkappend>>\n\nQuickly you realize you have no idea how to do that. You try using your //special ghost powers//, but after a whole minute of straining on your part and a complete lack of floating on the stuffing's part, you figure those probably don't exist.\n\nTrying to grab the stuffing proves futile as well, as your spectral hand can't touch it. Maybe this would be easier if you could //see// your spectral hand or the rest of your ghostly body. Maybe you're less of a ghost and more of a...presence? To be honest, you're not sure how this works.\n\n[[Look around some more.|Welp]]",
+      "links": [
+        {
+          "text": "Look around some more.",
+          "destination": {
+            "name": "Welp",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Wait.",
+      "text": "It isn't long before police cars show up. You float closer to try and figure out what's going on.\n\nJustin and one of the policemen are talking. Justin looks <<linkappend \"irritated\">>, even more so than usual<</linkappend>>, fiddling with his bowtie. It seems that the medical examiner at the hospital suspected something was off about your death - turns out the inability to breathe and the barfing were excessive after all.\n\nOr perhaps a better word would be suspicious. \n\n An autopsy is ordered post-haste and your friends are all detained as officers investigate the area and do basic interrogations. You float around the scene aimlessly, not really absorbing any information in your shock. Eventually the police inform the Neighborhood Association that they're to be taken in for questioning, having been deemed the group most likely to have had a hand in your <<linkappend \"death\">> - no -\n\nYour murder<</linkappend>>.\n\n[[Follow them to the station.|Questioning]]",
+      "links": [
+        {
+          "text": "Follow them to the station.",
+          "destination": {
+            "name": "Questioning",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Questioning",
+      "text": "<<set _pronouns to \"he\">>\\\nYou're disturbed by the thought; it's all you can think about as the investigation goes on. You were //murdered//? And not only murdered, but by one of your friends? Who would want to murder you? Why? How?\n\nYou cycle through the rest of the <<linkappend \"5 Ws\">> (and 1 H)<</linkappend>> and other questions over and over as you float behind the police cars driving to the station, able to follow with apparent ease despite the cars' speed. Able to pass through the walls of the station just as easily, you find the area with all of the interview rooms and wait for someone to show up.\n\nA detective with cropped red hair, a worn brown coat, and an androgynous look walks into the hallway, chewing on an unlit cigarette. <<linkreplace \"He paces\">><<linkreplace \"She paces?\">>Honestly you can't tell what gender the detective is so you're gonna play it safe and go with //they// - They pace<<replace \"#muttering\">>\n\nYou bring yourself closer to hear what they're saying, but just at that moment they start pacing in your direction. You instinctively try to back up, but before you do, your ghostly form and the detective collide and you feel a strong tug. The last thing you see before the world fades is the detective shuddering.\n\n[[Wait, what?->Detective's mind]]<</replace>><</linkreplace>><</linkreplace>> up and down the hall while muttering. <span id=\"muttering\"></span>",
+      "links": [
+        {
+          "text": "Wait, what?",
+          "destination": {
+            "name": "Detective's mind",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Police Station",
+      "text": "<<if $policeStationStart is true>>\nYou're in the police station, watching as the RNA shuffle into the interview rooms. The [[Aconite Poison]], the [[Potion]], the [[Rap Sheet]], [[Sandwich]], and the [[Salad]] are already in your inventory.<<set $inv.pushUnique(\"Aconite Poison\", \"Potion\", \"Rap Sheet\", \"Sandwich\", \"Salad\")>>\\\n<<elseif visited(\"Detective's mind\") == 1>>You're shunted out of the detective's mind and back into the hallway. The detective is looking a bit disoriented, holding their hand to their head. While you and they try to reorient yourselves, the other members of the RNA start to head into the hallway, and then the separate interview rooms where they're to be questioned by the police.\\\n<<else>>The RNA members - the suspects - are sitting in their separate interview rooms, being questioned by the police.<</if>>\n\nThis is your chance to listen to their testimonies and maybe figure out what happened to you.\n\nWho do you want to listen to?\n\n[[Listen to Justin's testimony->Justin]]\n[[Listen to Terry's testimony->Terry]]\n[[Listen to Erin's testimony->Erin]]\n[[Listen to Annie's testimony->Annie]]\n[[Listen to Bram's testimony->Bram]]\n[[Go back to the detective's mind|Detective's mind]]",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Salad",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Aconite Poison",
+          "destination": {
+            "name": "Aconite Poison",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Potion",
+          "destination": {
+            "name": "Potion",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Rap Sheet",
+          "destination": {
+            "name": "Rap Sheet",
+            "pid": 62
+          }
+        },
+        {
+          "text": "Sandwich",
+          "destination": {
+            "name": "Sandwich",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Salad",
+          "destination": {
+            "name": "Salad",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Listen to Justin's testimony",
+          "destination": {
+            "name": "Justin",
+            "pid": 106
+          }
+        },
+        {
+          "text": "Listen to Terry's testimony",
+          "destination": {
+            "name": "Terry",
+            "pid": 107
+          }
+        },
+        {
+          "text": "Listen to Erin's testimony",
+          "destination": {
+            "name": "Erin",
+            "pid": 108
+          }
+        },
+        {
+          "text": "Listen to Annie's testimony",
+          "destination": {
+            "name": "Annie",
+            "pid": 109
+          }
+        },
+        {
+          "text": "Listen to Bram's testimony",
+          "destination": {
+            "name": "Bram",
+            "pid": 110
+          }
+        },
+        {
+          "text": "Go back to the detective's mind",
+          "destination": {
+            "name": "Detective's mind",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Used Item",
+      "text": "<<widget \"used\">>\n    You think you've gotten all the info out of this clue now.\n    <<if $inv.includes($args[0])>>\n    Set it aside? (This will move the clue to a new list.)<br><<linkreplace \"Yes.\">>Done. You figure you're done thinking about it anyways.\n    <<run $setAside.pushUnique($inv.delete($args[0])[0])>><</linkreplace>><br>\n    <</if>>\n    <<if $setAside.includes($args[0])>>\n    It's currently set aside. Do you want to put it back with the other clues?<br>\n    <<linkreplace \"Yes.\">>Done. Maybe there's something else to glean from it.\n    <<run $inv.pushUnique($setAside.delete($args[0])[0])>>\n    <</linkreplace>>\n    <br><</if>>\n<</widget>>",
+      "links": []
+    },
+    {
+      "pid": 22,
+      "name": "Salad",
+      "text": "<h3>Salad</h3>\nIt's a caesar salad with vinaigrette. Terry and Justin got it for you when you couldn't eat anything at the party. It was on the detective's mind-desk.\\\n<<if hasVisited(\"Justin and Terry at the grocery store\", \"Terry poisoning your salad\")>>\n\n<<used \"Salad\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 23,
+      "name": "Aconite Poison",
+      "text": "<h3>Aconite Poison</h3>\nThis is what you were poisoned with, apparently. It was written on the autopsy report on the detective's mind-desk.\\\n<<if hasVisited(\"the detective ruminating about the murder weapon\", \"Terry poisoning your salad\")>>\n\n<<used \"Aconite Poison\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 24,
+      "name": "Sandwich",
+      "text": "<h3>Sandwich</h3>\nA BLT given to you by Annie out of pity at the feast. It was on the detective's mind-desk.\\\n<<if hasVisited(\"your fight with Annie\", \"Terry poisoning your salad\")>>\n\n<<used \"Sandwich\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 25,
+      "name": "Potion",
+      "text": "<h3>Potion</h3>\nA weird herbal potion Erin forced upon you. Apparently it was supposed to be for <<linkappend \"protection\">>, as if that did any good<</linkappend>>. It's dark and it looks like there are entire leaves and berries in there, which, considering how hard it was to swallow, doesn't surprise you at all. It was on the detective's mind-desk.\\\n<<if hasVisited(\"you drinking Erin's potion\", \"Erin's night\", \"Erin and Bram brewing you a potion\", \"Terry poisoning your salad\")>>\n<<used \"Potion\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 26,
+      "name": "Wolfsbane",
+      "text": "<h3>Wolfsbane</h3>\nA purple plant that's apparently used for protection, especially against lycanthropy. Even though it's extremely, extremely poisonous. You don't pretend to understand.\n\nBram was telling Annie about it while he sold her some <<linkappend \"weed.\">> - Oh sorry. \"Medicine\".<</linkappend>> Some of the leaves of the one in the greenhouse have been ripped off.\\\n<<if hasVisited(\"the detective ruminating about the murder weapon\", \"Bram realizing the wolfsbane was tampered with\", \"Annie and Erin talking about warding you away\", \"Terry poisoning your salad\")>>\n\n<<used \"Wolfsbane\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 27,
+      "name": "Justin's Testimony",
+      "text": "<h3>Justin's Testimony</h3>\n\"Well, we - the RNA - planned out this big, neighborhood Thanksgiving feast a couple weeks before today. Things were going well, related to the dinner anyway, and everyone who could was helping cook and such. I didn't because I was busy, but...\"\n\n\"Yeah, [I was busy with] patrols, talks with schools, //more// patrols...I mean. You know how it is.\"\n\n\"Mort wasn't helping out because he was also busy with RNA matters. Apparently.\n\n\"So when we met on Thanksgiving day at Annie's place to touch base, he got all angry that there were nuts in every dish that'd been cooked. Some nut allergy. I - I had no idea.\n\n\"They had some sort of fight, since she had created the menu...That happened before the dinner. Kinda turned everything sour from the start. Thinking about Mort sitting and eating nothing, well, even I felt sorry for him. So the wife suggested we get him a salad. Sure. We forgot dressing though, so she had me go back to get it.\n\n\"Then we prepared for the dinner for a couple hours, it started, and...well.\n\n\"I hope you all find the killer soon and bring them to justice. I didn't exactly call Mort a friend - to be completely honest I didn't like him very much, but I - I never wished him dead.\"\\\n<<if hasVisited(\"Justin and Terry at the grocery store\")>>\n\n<<used \"Justin's Testimony\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 28,
+      "name": "Terry's Testimony",
+      "text": "<h3>Terry's Testimony</h3>\n\"I just can't believe - I'm - oh my word I can't do this. Sorry, I need a minute...\" She takes a shaky breath and fans herself. \"It's just, I never, I never thought that - Mort of all people!\n\n\"Sorry yes, what happened...the dinner. Well, the RNA thought up the idea a while ago. A big feast. Everyone was so excited! Mort, Justin, and I didn't cook but we were all pitching in in some way. But then - we found out Mort couldn't eat the food - any of it! And to find out day of too, oh, can you imagine? So Justin -  he's been my rock through all of this bless him - he thought to get Mort a salad. Bless Justin honestly, bless him, I don\u2019t know what I'd do if he wasn't there for me -\n\n\"Sorry, right...\n\n\"Yes, we drove to the grocery to get a small salad for Mort. It was the least we could do so the poor man could have something to eat...poor Mort, oh!\n\n\"We headed to the park after that... to help set up, you know? When the dinner started, before the poor man could die of hunger, we gave Mort our salad - oh, and Annie, she gave him a sandwich. Then Erin...Erin gave him a silly little potion, going on and on about protection or something. He drank it, though I can't imagine why, and well...! Next thing you know he's dead on the floor!\n\n\"That girl, I just - she has no idea what she's doing with her so-called magic, I wouldn't be surprised if drinking that finally...oh I don't want to think about it! But she's done terrible things before...regardless, whoever did it should be ashamed...\"\\\n<<if hasVisited(\"Justin and Terry at the grocery store\")>>\n\n<<used \"Terry's Testimony\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 29,
+      "name": "Erin's Testimony",
+      "text": "<h3>Erin's Testimony</h3>\n\"I knew this would happen.\n\n\"See, the association came up with the idea for the dinner, and everyone was really excited, but there was a negative aura in the air, I could feel it.\n\n\"[Why?] Well I think that's obvious.\n\n\"Well, earlier today while the RNA was meeting, Annie and Mort got into a quarrel. We'd baked everything the day before- Annie, Bram, and I, and for some reason Mort didn't like it. There was a bad aura around everyone beforehand, but then it got really bad at the meeting. Annie's aura flared up, and of course everyone loves Annie so everyone else got frustrated -\n\n\"Well, Mort didn't want to eat any of the dishes - couldn't? He said something like that.  I kept trying to give him the potion, but he ignored me! Everyone ignores me. He left all angrily, and then Justin and Terry went off to get Mort something, salad maybe? I didn't pay too much attention. Well, I did, but not because I was stalking them or anything. I was just concerned about Justin. He hasn't been talking to me at all. I tried to tell him about the bad energies and signs I've felt lately, but he wouldn't listen, and then this had to go and happen!\n\n\"Anyway, we all set up the dinner for a couple hours. Then I gave Mort the potion at the party. I watched him drink it and then went back to the party, feeling better, until...\n\n\"I had prepared the potion for Mort because I thought he was in danger, and I was right.\n                      \n\"Ingredients that protect [were in the potion], of course.\n\n\"I thought the potion would work. It was supposed to protect him, though I guess he never did want my protection.\"\\\n<<if hasVisited(\"you drinking Erin's potion\")>>\n\n<<used \"Erin's Testimony\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 30,
+      "name": "Annie's Testimony",
+      "text": "<h3>Annie's Testimony</h3>\n\"I guess it coulda been [a good day], but there's a dead man. Did you forget that or somethin'?\n\n\"Where are we startin'? We fought this morning...\n\n\"Well, all of yesterday Erin, Bram, and I were baking. Justin couldn't make it, busy as always, and Terry is a terrible cook. Mort was no help. If he'd been there we wouldn't have had -\n\n\"I was getting [to the fight], officer. If he'd been there we wouldn't have had the fight. He was sayin' he wouldn't eat the food, and naturally I took offense to that, I mean, spendin' hours in the kitchen cookin' just to have your friend refuse because he don't like nuts!\n\n\"Now, if only he'd helped he coulda said that while we were baking. //Before// I put the nuts in everything. And after Justin said it'd be fine, encouraged me even...hmph.\n\n\"I couldn't just let the man starve. After we exchanged some fighting words, I made him a sandwich. Everyone else went off to the party- except Justin and Terry. They went to the store.\n\n\"I gave [the sandwich] to Mort, of course. Why would I make a sandwich to feed a man and not give it to him?\" She paused. \"I wish we'd made up. Feels wrong to have ill thoughts of the dead.\"\\\n<<if hasVisited(\"your fight with Annie\", \"Terry giving Justin the nut article\")>>\n\n<<used \"Annie's Testimony\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 31,
+      "name": "Bram's Testimony",
+      "text": "<h3>Bram's Testimony</h3>\n\"Well, there was the party. And, oh! Before that was the meeting, and I guess the baking the day before. Mort wasn't there though, so where should I start, officer? I don't want to slow you down with irrelevant info.\n\n\"Okay. Well, yesterday, we were all baking. Erin, Annie, and I, that is. There were a lot of nuts in everything, which was Justin's idea apparently - I don't know if Justin knew about the allergy, of course! Anyway, that's why Mort started the fight with Annie. Today, at the meeting, I mean. Not yesterday. It's like she doesn't know what allergies are.\n\n\"Mort left, which was really uncomfortable, but we tried to finish the meeting anyway. Then we all went to the party. Or the store. Or the kitchen. I went to the party to set up.\n\n\"Before you start asking about the wolfsbane in the greenhouse, Erin asked me to plant it. She uses it for spells. But I wasn't growing it to poison Mort!\n\n\"Wait, what are you writing down? I said I wasn't - \"\n\n<<used \"Bram's Testimony\">>",
+      "links": []
+    },
+    {
+      "pid": 32,
+      "name": "Petition",
+      "text": "<h3>Petition</h3>\nYour petition for the park plaque, ripped into itty bitty pieces in Terry's mind. You can make out -ETITION, memori-, -xa, and what look like parts of signatures.\\\n<<if hasVisited(\"Terry's phone conversation\")>>\n\n<<used \"Petition\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 33,
+      "name": "Straight Tie",
+      "text": "<h3>Tie</h3>\nA navy blue, striped straight tie that Terry was holding for someone she was talking to on the phone. That's odd.\\\n<<if hasVisited(\"Terry and Bram's conversation in her shop\")>>\n\n<<used \"Straight Tie\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 34,
+      "name": "Old Newspaper",
+      "text": "<h3>Old Newspaper</h3>\nA yellowing newspaper on Justin's mind-coffee-table. Terry and another girl are on the front page, chained to a plane tree. The headline says, ''\"Local Activists Protest Paving Over Park\"''.\\\n<<if hasVisited(\"Terry's phone conversation\")>>\n\n<<used \"Old Newspaper\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 35,
+      "name": "Shifty Person",
+      "text": "<h3>Shifty Person</h3>\nA person Erin saw sneaking about at a godforsaken time in the night. They had a noticeable limp and were carrying something long that glinted silver.\\\n<<if hasVisited(\"Terry's boyfriend giving her some leaves\")>>\n\n<<used \"Shifty Person\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "Cane",
+      "text": "<h3>Cane</h3>\nA long, silver tipped cane that Terry's paramour uses. You saw him with it when he left Terry's wine store.\\\n<<if hasVisited(\"Terry's boyfriend giving her some leaves\")>>\n\n<<used \"Cane\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 37,
+      "name": "Bowtie",
+      "text": "<h3>Bowtie</h3>\nA gift from Erin to Justin, to go with his many, //many// other bowties. You noticed it in a memory between the two.\\\n<<if hasVisited(\"Terry and Bram's conversation in her shop\")>>\n\n<<used \"Bowtie\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 38,
+      "name": "Medicine Reminder",
+      "text": "<h3>Medicine Reminder</h3>\n\"Pay Bram for medicine\" - a self-reminder on Annie's mind-fridge.\\\n<<if hasVisited(\"Bram and Annie's conversation in the garden\")>>\n\n<<used \"Medicine Reminder\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 39,
+      "name": "Sigils",
+      "text": "<h3>Sigils</h3>\nLots and lots of sigils, most all of them labeled for 'protection'. There's also a sigil to 'renew energy and de-stress' marked for Justin. Found in Erin's mind, of //course//.\\\n<<if hasVisited(\"Erin's night\", \"Justin and Erin setting up for the dinner\")>>\n\n<<used \"Sigils\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 40,
+      "name": "Nut Article",
+      "text": "<h3>Nut Article</h3>\nIt's an article about the health benefits of nuts, with a sticky note from Terry on it, given to Justin.\\\n<<if hasVisited(\"Terry giving Justin the nut article\")>>\n\n<<used \"Nut Article\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 41,
+      "name": "Gibbous Charm",
+      "text": "<h3>Gibbous Charm</h3>\nA nearly-full-moon charm. It was hanging in the sky in Erin's mind.\\\n<<if hasVisited(\"Justin and Erin being siblings\")>>\n\n<<used \"Gibbous Charm\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 42,
+      "name": "Gift Request",
+      "text": "<h3>Gift Request</h3>\nFound in Bram's mind-greenhouse.\n\n//\"Thanks ahead of time for the gift I expect you're getting me. Tell you what, when you get the stuff, why don't you share it with me? We'll make a toast to old friends. Make sure it's aged over a decade, don't cheap out on me here. You know the brand I like. - Mort\"//\\\n<<if hasVisited(\"you and Bram drinking wine\")>>\n\n<<used \"Gift Request\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 43,
+      "name": "Caf Patch",
+      "text": "<h3>Caf Patch</h3>\nOne of a boxful of caffeine patches found in Justin's mind. \"8 hours of energy guaranteed!\" according to the packaging. They're probably his.\\\n<<if hasVisited(\"Justin and Erin setting up for the dinner\")>>\n\n<<used \"Caf Patch\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 44,
+      "name": "Crescent Charm",
+      "text": "<h3>Crescent Charm</h3>\nA crescent moon charm found in Justin's mind.\\\n<<if hasVisited(\"Justin and Erin being siblings\")>>\n\n<<used \"Crescent Charm\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 45,
+      "name": "Justin's Keys",
+      "text": "<h3>Justin's Keys</h3>\nThere's something not-there that was there before. A tacky tool or charm of some sort...? You noticed it in a memory between Justin and Erin.\\\n<<if hasVisited(\"you distracting Justin in front of Bram's house\")>>\n\n<<used \"Justin's Keys\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 46,
+      "name": "Marijuana",
+      "text": "<h3>Marijuana</h3>\nOh, yeah, Bram's been growing marijuana for ages. He says it's for medicinal purposes or something. Sure buddy. Whatever you say.\\\n<<if hasVisited(\"Bram and Annie's conversation in the garden\")>>\n\n<<used \"Marijuana\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 47,
+      "name": "Crumpled Paper",
+      "text": "<h3>Crumpled Paper</h3>\nA balled up note that Justin had in his pocket before the dinner. There's orange writing on it but that's all you can discern.\\\n<<if hasVisited(\"Justin, Annie, and sriracha\")>>\n\n<<used \"Crumpled Paper\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 48,
+      "name": "Petals",
+      "text": "<h3>Petals</h3>\nPurple. Erin was scattering them around the entrance to the graveyard for some cockamamie reason.\\\n<<if hasVisited(\"Annie and Erin talking about warding you away\")>>\n\n<<used \"Petals\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 49,
+      "name": "Sharpie",
+      "text": "<h3>Sharpie</h3>\nIt's Annie's and it's orange. She was using it to write something down after your and her...disagreement.\\\n<<if hasVisited(\"Justin, Annie, and sriracha\")>>\n\n<<used \"Sharpie\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 50,
+      "name": "Wine",
+      "text": "<h3>Wine</h3>\nA dusty bottle of Loup-Rouge wine, bought by Bram a couple days ago, floating in a honeycomb in Terry's mind.\\\n<<if hasVisited(\"you and Bram drinking wine\")>>\n\n<<used \"Wine\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 51,
+      "name": "Corkscrew",
+      "text": "<h3>Corkscrew</h3>\nA //really// tacky shark-shaped keychain corkscrew that Bram used to open your bottle of Loup-Rouge.\\\n<<if hasVisited(\"you distracting Justin in front of Bram's house\")>>\n\n<<used \"Corkscrew\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 52,
+      "name": "Werewolf",
+      "text": "<h3>Werewolf</h3>\nYou, apparently? According to Erin? That's what she was telling Annie anyway.\\\n<<if hasVisited(\"Erin and Bram brewing you a potion\")>>\n\n<<used \"Werewolf\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 53,
+      "name": "Leaves",
+      "text": "<h3>Leaves</h3>\nSome leaves in a bag that Terry got from her boyfriend.\\\n<<if hasVisited(\"Bram realizing the wolfsbane was tampered with\", \"Terry poisoning your salad\")>>\n\n<<used \"Leaves\">><</if>>",
+      "links": []
+    },
+    {
+      "pid": 54,
+      "name": "Postcard",
+      "text": "<h3>Postcard</h3>\nA postcard from a pride parade from who knows how many years ago, with Justin and Annie in the crowd. It was on Annie's mind-fridge.\n\n<<used \"Postcard\">>",
+      "links": []
+    },
+    {
+      "pid": 55,
+      "name": "Congratulatory Card",
+      "text": "<h3>Congratulatory Card</h3>\nFound stuffed in Justin's weird mind-walls.\n\n//\"Congratulations! ==It's== You're a boy!\n\n~Erin xoxo\"//\n\n<<used \"Congratulatory Card\">>",
+      "links": []
+    },
+    {
+      "pid": 56,
+      "name": "Sticky Note",
+      "text": "<h3>Sticky Note</h3>\n//\"There's $24 missing from my purse. You'd better explain when you get home, missy. 11/14\"// A passive-aggressive sticky note from ages ago stuck to Annie's mind-fridge.\n\n<<used \"Sticky Note\">>",
+      "links": []
+    },
+    {
+      "pid": 57,
+      "name": "Consent Form",
+      "text": "<h3>Consent Form</h3>\nDated a few days ago, it's for non-voluntary...well...you know. Found half-buried in the sands of Annie's mind.\n\n<<used \"Consent Form\">>",
+      "links": []
+    },
+    {
+      "pid": 58,
+      "name": "Photograph",
+      "text": "<h3>Photograph</h3>\nTeenaged Terry, probably Erin, and some nobody, sitting in front of a plane tree. That's all. Found in Erin's mind.\n\n<<used \"Photograph\">>",
+      "links": []
+    },
+    {
+      "pid": 59,
+      "name": "Burning Letter",
+      "text": "<h3>Burning Letter</h3>\nA letter that is currently and perpetually on fire, in the trash in Erin's mind.\n\nIn a looping orange scrawl it says, //\"I demand you stop dating my daughter. I know she sneaks over to your and your witch sister's house at night. I won't put up with it anymore. I thought you would like to know, being gay is a sin in the eyes of the Lord. That goes for lesbians too, and I won't have you corrupting Le- \"// blah blah blah.\n\n<<used \"Burning Letter\">>",
+      "links": []
+    },
+    {
+      "pid": 60,
+      "name": "Money",
+      "text": "<h3>Money</h3>\n$24 to be exact, found in the vines of Bram's mind-greenhouse.\n\n<<used \"Money\">>",
+      "links": []
+    },
+    {
+      "pid": 61,
+      "name": "Hospital Stickers",
+      "text": "<h3>Hospital Stickers</h3>\nHospital stickers, dozens of them, found in Terry's mind. The earliest is dated 11/14 and is over a decade old. The latest is dated a couple days ago.\n\n<<used \"Hospital Stickers\">>",
+      "links": []
+    },
+    {
+      "pid": 62,
+      "name": "Rap Sheet",
+      "text": "<h3>Rap Sheet</h3>\nA few DUIs of yours and some other thing from over a decade ago. The last one is dated 11/14. It was on the detective's mind-desk.\n\n<<used \"Rap Sheet\">>",
+      "links": []
+    },
+    {
+      "pid": 63,
+      "name": "Link Clues",
+      "text": "<<nobr>>\n    <strong>[[Clues]]\n    <<if $inv.length > 1>>\n        | Link Clues\n    <</if>>\n    <<if Object.keys($thoughts).length > 0>>\n        | [[Thoughts]]\n    <</if>>\n    |  <<linkreplace \"Save\">>\n            <<script>>\n                if (Save.ok()) { \n                    Save.slots.save(0);\n                }\n            <</script>>\n            Game saved.\n        <</linkreplace>>\n        <<if Save.slots.has(0)>>\n    |    <<link \"Restore Save\">><<script>>\n                if (Save.slots.has(0)) { \n                    Save.slots.load(0);\n                } \n            <</script>><</link>>\n    |      <<linkreplace \"Restart\">>\nThis will erase your progress and saves. Are you sure?\n                <<link \"Yes\">>\n                    <<script>>\n                        if (Save.slots.has(0)) {\n                            Save.slots.delete(0);\n                        }\n                        if (Save.autosave.has()) {\n                            Save.autosave.delete();                           \n                        }\n                        Engine.restart();\n                        <</script>>\n                <</link>>\n            <</linkreplace>>\n        <</if>>\n     | [[Credits]]</strong>\n<</nobr>>\n\nClick on two clues to try to link them.\n \n<span id=\"Selected\"><<include \"List Selected\">></span>\n<span id=\"Link Clues\"><<include \"List Link Clues\">></span>\n\n[[Open your eyes.|$returnTo]]",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "List Selected",
+            "pid": 64
+          }
+        },
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "List Link Clues",
+            "pid": 65
+          }
+        },
+        {
+          "text": "Clues",
+          "destination": {
+            "name": "Clues",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Thoughts",
+          "destination": {
+            "name": "Thoughts",
+            "pid": 111
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "List Selected",
+      "text": "<<if $selected.length > 0>>\n    <<for _item range $selected>>\n        _item selected.<br>\n    <</for>>\n<</if>>\n \n<<if $selected.length == 2>>\n    <br>\n        <<include \"Combine Selected\">>\n    <br>\n<</if>>\n \n<<if $selected.length > 0>>\n    <<link \"Reset selected\">>\n        <<set $selected = []>>\n        <<replace \"#Selected\">>\n            <<include \"List Selected\">>\n        <</replace>>\n    <</link>> (You can also click a 3rd item to switch to it!)<br>\n<</if>>\n\n<<if $selected.length > 1>>\n    <<set $selected = []>>\n        <<replace \"#Selected\">>\n            <<include \"List Selected\">>\n        <</replace>>\n<</if>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Combine Selected",
+            "pid": 67
+          }
+        },
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "List Selected",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "List Link Clues",
+      "text": "/* Sets the clickedItem variable and opens the check. */\n<<if $inv.length > 0>>\n<<nobr>><<set _tmp = \"\">><table><col width=\"40%\"><col width=\"40%\"><col width=\"40%\">\n    <<for _i, _item range $inv.sort()>>\n        <<set _tmp += '<td><<link \"' + _item +'\">>\n                    <<set $selected.push(\"' + _item +'\")>>\n                    <<replace \"#Selected\">>\n                        <<include \"List Selected\">>\n                    <</replace>>\n                <</link>></td>'>>\n        <<if _i % 3 == 2>>\n            <<print \"<tr>\" + _tmp + \"</tr>\">>\n            <<set _tmp = \"\">>\n        <</if>>\n<</for>>\n<<if _tmp != \"\">>\n    <<print \"<tr>\" + _tmp + \"</tr>\">>\n<</if>>\n</table><</nobr>>\n<</if>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "List Selected",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Combovaluation",
+      "text": "<<widget \"combine\">>\n<<set $combo = $args[0]>>\n<<set $selected = []>>\n<<set $fail to 0>>\n<<if hasVisited($combo)>>\n    You found that memory about $combo already...but maybe you could take a quick peek at it [[again|$combo]].\n<<else>>\n    <<goto $combo>>\n<</if>>\n<</widget>>",
+      "links": []
+    },
+    {
+      "pid": 67,
+      "name": "Combine Selected",
+      "text": "/* 0th level */\n<<if $selected.includesAll(\"Potion\", \"Erin's Testimony\")>>\n        <<combine \"you drinking Erin's potion\">>\n        \n<<elseif $selected.includesAll(\"Wine\", \"Gift Request\")>>\n        <<combine \"you and Bram drinking wine\">>\n\n<<elseif $selected.includesAll(\"Salad\", \"Justin's Testimony\")>>\n        <<combine \"Justin and Terry at the grocery store\">>\n        \n<<elseif $selected.includesAll(\"Salad\", \"Terry's Testimony\")>>\n        <<combine \"Justin and Terry at the grocery store\">>\n    \n<<elseif $selected.includesAll(\"Sandwich\", \"Annie's Testimony\")>>\n        <<combine \"your fight with Annie\">>\n        \n<<elseif $selected.includesAll(\"Old Newspaper\", \"Petition\")>>\n        <<combine \"Terry's phone conversation\">>\n\n<<elseif $selected.includesAll(\"Crescent Charm\", \"Gibbous Charm\")>>\n        <<combine \"Justin and Erin being siblings\">>\n\n<<elseif $selected.includesAll(\"Sigils\", \"Potion\")>>\n        <<combine \"Erin's night\">>\n\n<<elseif $selected.includesAll(\"Caf Patch\", \"Sigils\")>>\n        <<combine \"Justin and Erin setting up for the dinner\">>\n\n<!--1st level-->\n<<elseif $selected.includesAll(\"Marijuana\", \"Medicine Reminder\")>>\n        <<combine \"Bram and Annie's conversation in the garden\">>\n\n<<elseif $selected.includesAll(\"Nut Article\", \"Annie's Testimony\")>>\n        <<combine \"Terry giving Justin the nut article\">>\n        \n<!--2nd level-->\n<<elseif $selected.includesAll(\"Straight Tie\", \"Bowtie\")>>\n        <<combine \"Terry and Bram's conversation in her shop\">>\n\n<<elseif $selected.includesAll(\"Aconite Poison\", \"Wolfsbane\")>>\n        <<combine \"the detective ruminating about the murder weapon\">>\n\n<<elseif $selected.includesAll(\"Crumpled Paper\", \"Sharpie\")>>\n        <<combine \"Justin, Annie, and sriracha\">>\n\n<<elseif $selected.includesAll(\"Justin's Keys\", \"Corkscrew\")>>\n        <<combine \"you distracting Justin in front of Bram's house\">>\n\t\n<!--3rd level-->\n<<elseif $selected.includesAll(\"Petals\", \"Wolfsbane\")>>\n        <<combine \"Annie and Erin talking about warding you away\">>\n\n<!--4th level-->\n<<elseif $selected.includesAll(\"Shifty Person\", \"Cane\")>>\n        <<combine \"Terry's boyfriend giving her some leaves\">>\n        \n<<elseif $selected.includesAll(\"Werewolf\", \"Potion\")>>\n        <<combine \"Erin and Bram brewing you a potion\">>\n\n<!--5th level-->\n<<elseif $selected.includesAll(\"Leaves\", \"Wolfsbane\")>>\n        <<combine \"Bram realizing the wolfsbane was tampered with\">>\n        \n<<elseif $selected.includesAll(\"Leaves\", \"Aconite\") and $selected.includes(\"Wolfsbane\")>>\n        <<combine \"Bram realizing the wolfsbane was tampered with\">>\n\n<!--6th level-->\n<<elseif $selected.includesAny(\"Wolfsbane\", \"Leaves\", \"Aconite Poison\") and $selected.includes(\"Salad\") and Object.keys($thoughts).includesAll(\"Bram realizing the wolfsbane was tampered with\", \"the detective ruminating about the murder weapon\")>>\n    <<combine \"Terry poisoning your salad\">>\n    \n<<elseif $selected.includesAny(\"Wolfsbane\", \"Leaves\", \"Aconite Poison\") and $selected.includesAny(\"Salad\", \"Sandwich\", \"Potion\") and !Object.keys($thoughts).includesAll(\"Bram realizing the wolfsbane was tampered with\", \"the detective ruminating about the murder weapon\")>>\n    This very well may be the combo that killed you, but you don't want to jump to conclusions just yet. You think you should figure some more things out first.<<set $fail += 1>>\n\t\n<!--Invalid combo flavor text-->\n\n<<elseif $selected.includesAny($lexaItems)>>You doubt at least one of these items is connected to your death.\n\n<<print either($lexaItemAnger)>><<set $fail += 1>>\n\n<<elseif $selected.includesAny($noncombinables)>>You doubt at least one of these items is connected to your death.\n\n<<<<elseif $selected.includesAny(\"Wolfsbane\", \"Leaves\", \"Aconite Poison\") and $selected.includesAny(\"Sandwich\", \"Potion\") and Object.keys($thoughts).includesAll(\"Bram realizing the wolfsbane was tampered with\", \"the detective ruminating about the murder weapon\")>>You're pretty sure that this particular combo isn't what killed you, now.<<set $fail += 1>>\n\n<!--Extra flavor text for failures-->\n\n<<elseif $selected.includesAll(\"Leaves\", \"Petals\")>>They're both probably from the same plant, but you can't see any other way they're connected meaningfully.<<set $fail += 1>>\n\n<<elseif $selected.includesAll(\"Wine\", \"Corkscrew\")>>\n\n<<elseif $selected.includesAll(\"Cane\", \"Straight Tie\")>>Well, you've definitely figured out that these belong to the same guy - Terry's boyfriend. You don't want to think about him further.<<set $fail += 1>>\n\n<<elseif $selected.includesAll(\"Shifty Person\", \"Straight Tie\")>>Clearly this tie is his, but you don't want to think about him or what that means any further.<<set $fail += 1>>\n\n<<elseif $selected.includesAll(\"Leaves\", \"Marijuana\")>>It's a good thought, but these are not marijuana leaves.<<set $fail += 1>>\n\n<<elseif $selected.includesAll(\"Werewolf\", \"Cane\")>>You're not //actually// a werewolf, so silver wouldn't really do <<link \"much\">><<replace \"#much\">>Unlike the //poison//...<</replace>><</link>> to you, would it? <span id=\"much\"></span><<set $fail += 1>>\n\n<<elseif $selected.includesAll(\"Werewolf\", \"Wolfsbane\")>>Well yes, wolfsbane //would// kill a werewolf but, newsflash, it would kill //anybody//.<<set $fail += 1>>\n\n<!--Default failure-->\n<<else>>You can't see how those clues are related, at least not right now.<<set $fail += 1>><</if>>\n\n<<if $fail >= 3>>\n\nNeed a <<link \"hint?\">>\n\n    <<replace \"#smallHints\">><br><<print either($smallhints)>>\n\n    <<if $fail >= 5>>\n    Need a [[bigger hint?|Hints]]\n    <</if>>\n    <</replace>>\n<</link>>\n<</if>>\n<span id=\"smallHints\"></span>",
+      "links": [
+        {
+          "text": "bigger hint?",
+          "destination": {
+            "name": "Hints",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "the detective ruminating about the murder weapon",
+      "text": "<<if !$thoughts[\"the detective ruminating about the murder weapon\"]>>\\\n    <<set $thoughts[\"the detective ruminating about the murder weapon\"] = \"- You were killed by ingesting wolfsbane. Defeated by a plant, and not even the one you're allergic to. Unbelievable. (aconite + wolfsbane)\">>\\\n<</if>>\\\nYou're back in that small grey office, though it's distinctly less blurry and dream-like now. The detective is hunched in the chair next to their desk, muttering to themself. You float closer to peer over their shoulder.\n\nIn one hand they're holding the autopsy report, your autopsy report; the other hand is running through their hair as they think.\n\n\"Maybe it //was// the gardener,\" they mutter. \"I mean, growing wolfsbane in his garden...they found the partially digested leaves in the corpse's stomach. And where else are you going to get aconite? That's gotta be it. Right?\"\n\nSeriously? Wolfsbane? You can't believe it. You were offed by a garden flower.\n\nA heavy sigh comes from the detective. \"But on the other hand, that's just so neat and easy. I should know better than anyone that these cases are never so simple.\" They chuckle to themself.\n\nAs the detective continues to think aloud, the [[memory->Link Clues]] drips away.",
+      "links": [
+        {
+          "text": "memory",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "Bram and Annie's conversation in the garden",
+      "text": "<<if !$thoughts[\"Bram and Annie's conversation in the garden\"]>>\n    <<set $thoughts[\"Bram and Annie's conversation in the garden\"] = \"- Annie uses Bram's marijuana medicinally, though she couldn't pay last time. (marijuana + reminder)\">>\n<</if>>\\\nA murmuring of voices greets you first, then bright colors. It's daylight streaking across the community garden - the real one - and Bram is there talking to Annie, who is seated on a white stone bench. \n\nBram hands a small brown bag over to Annie, and she takes out a small notepad. \"I can't pay you right now,\" she says, \"but - \" \n\n\"I know,\" Bram says. \"You can pay me later.\" \n\nAnnie hums in acknowledgement and writes a note to herself. \"Y'know, it never seemed quite right to me that there're illegal plants.\"\n\nBram shrugs. \"Well, you know how it is. Not all laws make sense, and some people are just too harsh about what's wrong or right.\"\n\n\"If you're gonna bad mouth Justin, I'm not here for it,\" Annie says matter-of-factly as she put the bag into her purse.\n\nBram opens and closes his mouth a couple times, like a fish. \"Of course not.\" He continues, \"It //is// pretty weird that it's illegal, isn't it? I mean, I feel like the law - not all of it,\" he adds quickly in response to another warning look from Annie, \"but a lot of it, associates the stuff with, you know, teenage stoners. Historical precedent, I guess? But there are people who are using it medicinally,\" he gestures to her and she nods, \"and I don't see why that's not alright. At least it's helping people. Unlike some plants out there...\"\n\n\"What do ya mean by that?\" Annie closes her eyes and tilts her head up to bask in the sunlight.\n\n\"Um, uh...there's a lot of poisonous plants that probably should be banned but aren't.\"\n\n\"I can't see why them poisonous species would need to be banned unless someone was growin' them on purpose. And I can't think of any good reason for that.\"\n\n\"Well, actually, I am, uh, doing that,\" Bram says awkwardly, rubbing his neck.\n\n\"What?\" She frowns disapprovingly.\n\n\"I'm growing wolfsbane. Every part of it is poisonous: stem, leaves, petals; it's dangerous just to touch it. It's fascinating really...\" he trails off at Annie's hard stare. \"Uh, I'm not doing it not to hurt anyone though, I swear...! It's just, Erin uses it for protection. Against lycanthropy, I think, but I'm not sure.\" Annie raises an eyebrow, and Bram shrugs again. \"Witchcraft. That's all I got. I'm growing it over here, I can show y- huh.\"\n\n\"Somethin' wrong?\"\n\nBram has walked over to a bed that's labeled: CAUTION, DO NOT TOUCH. There's a purple flower here, and it looks a bit mishandled. \"Some of the leaves are ripped off.\" He pales. \"That's. That's not good.\"\n<<add \"Wolfsbane\">>\n\nAs this is said, the scene starts to smear and fade like mixed paint, and you find yourself back in your [[memories->Link Clues]] again.",
+      "links": [
+        {
+          "text": "memories",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "Erin's night",
+      "text": "<<if !$thoughts[\"Erin's night\"]>>\\\n    <<set $thoughts[\"Erin's night\"] = \"- Erin didn't take your taking down her sigils well at all and decided to put up more. (potion + sigils)\">>\\\n<</if>>\\\nA memory swirls into view. The scene is dark, but Erin's blonde hair manages to refract the light from the dull streetlamps anyway, making her stand out noticeably as she walks down the boulevard. You almost make a note to check the last time the bulbs were changed, but then you remember you are dead. Bummer. \n\nShe gives each house on the block a hard stare, frowning more and more as she walks along. Pieces of tape and paper cling to the doors she passes, and you recognize them as the remnants of the sigils you took down. Her expression gets darker with every barren door.\n\nAbruptly, she stops in the middle of the sidewalk and makes an annoyed noise, then digs for something in her purse. To your <<linkappend \"surprise\">> and dismay<</linkappend>>, it's another sigil - you didn't realize she made <<linkappend \"//more//\">>(You can't even take them down now!)<</linkappend>>. She stomps up to a house and angrily fixes it on the door.\n\n\"He can't appreciate when someone is just trying to help can he?\" she mutters, more bitterly than you knew was possible for her. Adopting a nasally <<linkappend \"tone,\">>(your voice sounds nothing like that)<</linkappend>> she quotes, \"'You can't do this, Erin.' 'Vandalism is a crime, Erin.' 'Stop putting sigils up or I'll kick you off the association and call the police, Erin.'\" She gives a sharp little laugh. \"As if the police would care. I just want to protect everyone, and you're not stopping me.\" \n\nContinuing along the road out of the residential area and into the town proper, Erin puts sigils up on various buildings until she reaches the graveyard. For a moment, you wonder if she's going to go inside, and if you have the nerve to follow her. Instead, she mouths something that looks like \"this'll show him\" and begins scattering violet petals around the front gate.\n\nAfter a few moments of scattering petals and chanting...something, she turns back toward the street and her eyes widen, her mouth parting into a little o-shape. You turn to see what she's looking at, and as you do you see someone dressed in dark clothing walking in the distance toward the main part of town, holding something long that glints silver in the moonlight.\n <<add \"Shifty Person\">> <<add \"Petals\">>\n\nThat's...<<linkappend \"suspicious\">>\n\nNo, that's really, //really// <<linkappend \"suspicious\">>\n\nRonton is a quiet neighborhood, just shy of a thousand people, and it's not exactly known for its night life. There's never anyone just walking about at who-knows-when in the <<linkappend \"morning\">>\n\nWell, except for Erin, <<linkappend \"apparently\">>\n\nAnd this person<</linkappend>><</linkappend>><</linkappend>><</linkappend>>.\n\nA mix of confusion and concern crosses Erin's face, but she does nothing but watch the man as he limps away. As she turns to head home, the memory [[fades->Link Clues]].",
+      "links": [
+        {
+          "text": "fades",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "Terry giving Justin the nut article",
+      "text": "<<if !$thoughts[\"Terry giving Justin the nut article\"]>>\\\n    <<set $thoughts[\"Terry giving Justin the nut article\"] = \"- Terry is why Justin insisted Annie put nuts on the menu. (article + Annie's testimony)\">>\\\n<</if>>\\\nYou fade into the Whittaker household. The walls are bright and stark with lots of photos of the two on them. Justin is sitting at a table, staring blankly at a newspaper in his hands. Based on the date on the front page, it's the day before Thanksgiving.\n\nTerry walks in. \"Justin?\"\n\n\"Hm?\" He looks over. She's holding a few pieces of paper that you recognize as the article.\n\n\"You and Annie are in charge of the menu for tomorrow, right?\" \n\nJustin nods. \"We are.\" \n\n\"I've been reading, and,\" she pauses, but continues with more conviction, \"it turns out nuts have a multitude of health benefits. I printed out an article.\" \n\nTerry hands Justin the article, and as he's reading, she says, \"I just thought that if we're making dinner for the community, it might be good to have the meal be, well, //good// for them.\"\n\n\"That would be nice, yeah.\" Justin keeps scanning his eyes over the page, though you get the feeling he's processing the conversation rather than actually reading.\n\n\"We are a group for the wellbeing of the community. What good would we be if we didn't give them what's best for them?\" \n\nHe turns his head to look at her. \"I'll ask Annie.\"\n\n\"About adding the nuts to the menu?\" She grins widely at him.\n\nNodding, Justin smiles at his wife. \"Yes. What do you think they'd be good in?\"\n\n\"Oh, I don't know. Everything.\"\n\nThe memory [[fades->Link Clues]].",
+      "links": [
+        {
+          "text": "fades",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "Bram realizing the wolfsbane was tampered with",
+      "text": "<<if !$thoughts[\"Bram realizing the wolfsbane was tampered with\"]>>\\\n    <<set $thoughts[\"Bram realizing the wolfsbane was tampered with\"] = \"- Terry's paramour stole the wolfsbane from Bram's garden in the middle of the night. (leaves + wolfsbane)\">>\\\n<</if>>\\\nIt's the community garden again. Bram is standing in front of the mishandled wolfsbane plant and Annie seems to have just left. He squats down to get a better look and so do you, as you only got to glance at it before. Wolfsbane is actually a rather pretty plant, you think to yourself, with numerous deep-purple petals hanging off a delicate stalk. Its beauty is clear despite this one looking worse for wear, with several petals having fallen to the ground, flowers battered, stem kinked. You examine the remaining leaves on the plant and, with a sinking feeling, realize they match the leaves that were in the bag Terry's boyfriend gave her.\n\nOh god. No, maybe there's still a chance -\n\nBram looks down at the ground next to the plot then presses his finger to something in the dirt. You peer closer; it's some sort of circular indentation. There's another a foot or so away, and another a little further - they must track out of the garden.\n\n\"The cane,\" you hear Bram exhale, and you whirl around to look at him. He has an expression of realization on his face. And then you remember - the boyfriend in question and his damned fancy cane. It must have left imprints in the dirt. That confirms it - he stole the wolfsbane leaves from the garden and gave them to Terry. Which in turn means...\n\nNo.\n\nYou don't want to consider it. Terry? Kill you? You want to say there's no reason for it, even though a little voice in your mind tells you there are many. Still, how did she? How could she? You decide you'll believe it when you see her in the act. For now, you refuse to think about it.\n\nYou [[refuse->Link Clues]].",
+      "links": [
+        {
+          "text": "refuse",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "you drinking Erin's potion",
+      "text": "<<if !$thoughts[\"you drinking Erin's potion\"]>>\\\n    <<set $thoughts[\"you drinking Erin's potion\"] = \"- You drank Erin's disgusting potion at her insistence. Sigh. (potion + Erin's testimony)\">>\\\n<</if>>\\\nA flash of color, and you find yourself back at the party. You spot yourself sitting at a picnic table. It's - it's weird to see yourself though, you must say. You look pretty good for a man about to die. Your suit is impeccably ironed, and the comb-over is hardly noticeable.\n\nYou see Erin approach you - that is, your living counterpart. She's holding out a potion, the same one that she tried to get you to drink all that fateful day. As she corners still living Mort, you think back to how you felt at that moment. You were kind of pissed off because you really did //not// want to drink her concoction - who knows what she put in it? You didn't want to create a fuss though, so you kept either ignoring her or brushing her off instead of telling her to scram like you wanted to.\n\nShe'd approached you multiple times before, each time more insistent that you drink the damn thing. As time passed and you kept refusing, she became more agitated. In fact, by the time you agreed to drink whatever it was she made - if only to prevent a scene from happening between RNA members - you were kind of scared of her.\n\nErin hands the bottle to living Mort, and his face screws into a <<linkappend \"sneer\">>(apparently you didn't do as good of a job at hiding your frustration as you thought you did)<</linkappend>>. You watch yourself drink the potion, and then the memory [[dissipates->Link Clues]].",
+      "links": [
+        {
+          "text": "dissipates",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "you and Bram drinking wine",
+      "text": "<<if !$thoughts[\"you and Bram drinking wine\"]>>\\\n    <<set $thoughts[\"you and Bram drinking wine\"] = \"- You were blackmailing Bram into buying wine for you. What? Does someone have a problem with that? (wine + gift request)\">>\\\n<</if>>\\\nBram's living room comes into view, and you recognize the scene immediately. This meeting happened a day or so before the party. The living you is sitting on Bram's couch, with Bram in an armchair across from you. Two empty wine glasses stand on the coffee table between the two of you. Bram is trying to open a bottle of Loup-Rouge with a tacky shark-shaped corkscrew, one of those ones that attaches to a keychain. Your living counterpart smirks in amusement.\n\n\"I can't get over that silly corkscrew,\" living Mort says, chuckling.\n<<add \"Corkscrew\">>\n\nAs Bram finally gets the bottle open, he replies weakly, \"I didn't buy it, it was a gift.\" He sets the bottle down on the coffee table. When he makes no move to pour any wine, Mort reaches over and begins filling up both glasses.\n\nAfter handing a glass to <<linkappend \"Bram\">>(who frowns. Hm. You don't remember that)<</linkappend>>, Mort takes a sip from his glass and sighs. You remember what it tasted like, after so long. A buttery, round wine with hints of raspberry and spice. Your favorite. You realize that was the last you'd ever taste of that wine, or any wine. Now you can't taste anything.\n\nYour own voice snaps you back to the scene. \"Thanks for getting this. You followed my note to the letter, and this is an especially good year.\" \n\nBram furrows his eyebrows and says, \"I'm a little concerned that you're drinking-\"\n\n\"Oh, it's fine,\" Mort replies, waving his hand. \"Wine doesn't have a high proof, and what's a few glasses with an old friend?\" He laughs. \"Besides, a little buzz isn't such a bad thing. It helps you forget about the little problems.\" \n\nAs Bram holds his glass in both hands like a <<linkappend \"bowl\">>(which is frankly, all wrong. You're surprised you didn't comment on that while you were alive)<</linkappend>>, he stares down into the wine. \"Like what?\"\n\n\"Like you growing <<linkreplace \"marijuana.\">>marijuana.<<replace \"#m\">>\n\nOh, by the <<linkappend \"way?\">>\n\nYou already knew about Bram growing marijuana. You've been blackmailing him about it for ages.\n\n<</linkappend>><</replace>><</linkreplace>> for...what was it? 'Medicinal purposes'? That's a little problem. Thanks to me, of course.\"\n<<add \"Marijuana\">><span id=\"m\"></span>\n\nLiving Mort chuckles again and takes another sip of wine. \"Just keep doing this and it won't ever be a big problem. Right?\" \n\nBram laughs, but you're pretty sure he's sweating. \"Yep. Right.\" The memory [[swirls->Link Clues]] from view.",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Bram",
+            "pid": 110
+          }
+        },
+        {
+          "text": "swirls",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Justin and Terry at the grocery store",
+      "text": "<<if !$thoughts[\"Justin and Terry at the grocery store\"]>>\\\n    <<set $thoughts[\"Justin and Terry at the grocery store\"] = \"- Terry and Justin got you a salad at the store. (salad + Justin's testimony or Terry's testimony)\">>\\\n<</if>>\\\nThe Ronton grocery store forms around you. The Whittakers are here, with their shopping cart containing last minute items for the party - extra paper plates and napkins, sauce, some beer, and the like. \n\n\"Alright? What else do we need?\" Terry says cheerfully.\n\n\"Hmm? Oh.\" Justin blinks slowly and glances at the shopping list. \"Looks like all that's left is getting the salad for Mort.\"\n\nThe two roll the cart over to the salad bar and make a garden salad, which is indeed what you remember eating at the party. Or, more accurately, Terry fusses about, picking vegetables meticulously while Justin mans the cart and tries not to nod off.\n\n\"Ok, I think that's good!\" she says, tapping the lid on the bowl. You feel like she's forgetting something, though you're not sure what.\n\nJustin jerks awake and looks at her. \"Good. Uh. Let's get going then.\" The two roll their cart toward the checkout.\n\n\"Are you alright honeybear? You seem even more tired than you usually are.\" Terry brushes a lock of hair off Justin's forehead.\n\n\"Yeah, it's just, I was out so late last night because - \"\n\n\"Mort?\"\n\n\"Mort.\" He sighs, his brow furrowing. \"I just wish he could get it through his head that I don't - \"\n\n\"Now now, this is a time to give thanks for the people around us, not get irrevocably angry at them.\" She gives Justin a teasing smirk, which he returns. \"In fact, I think you should give the salad to him. Say it's from both of us, but hand it to him yourself. Talk to him. It'll be a great way to make amends. Build bridges instead of burning them, you know?\"\n\n\"Terry, dear, I'm not the one burning th - \"\n\n\"I know, I know. But please? For me?\"\n\n\"...Ok,\" he grunts. \"But only for you.\" \n\nHe reaches out to take the salad from Terry, but she suddenly pulls away, frowns at the bowl, and says, \"Oh sugarbites, we forgot dressing.\" She looks at Justin with wide eyes. It takes a moment for him to respond. \"I'll - I'll go get some.\" He walks off quickly, and the memory [[fades->Link Clues]].",
+      "links": [
+        {
+          "text": "fades",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "your fight with Annie",
+      "text": "<<if !$thoughts[\"your fight with Annie\"]>>\\\n    <<set $thoughts[\"your fight with Annie\"] = \"- Man, Annie just does not get the concept of allergies. (sandwich + Annie's testimony)\">>\\\n<</if>>\\\nA memory forms around you, and it's a familiar scene. You're in Annie's kitchen, and everything is calm. This must've been before -\n\nThen you hear Annie shout. \"I guess you're just too good for my cooking?\"\n\nIt's your own voice next. \"Are you stupid? I can't eat it. I'd die.\" You were just stating an objective fact, of course.\n\nA spiteful laugh. \"That bad, huh? You're not even trying to be kind.\"\n\nPast Mort tries to justify himself. \"You're offended? Annie, I don't need to be kind when //you're// putting //my// life in danger. Who even thought adding nuts to everything was a good idea?\" \n\n\"Someone much better than you, for sure.\" Annie scowls. She was being as bullheaded and cruel as always, so it was only natural that you shouted back.\n\n\"Annie, if I eat what you made, I will die. I'd say your brains are going with age, but I'm aging pretty well, so I guess it's just you.\" You look pretty red-faced, but yelling will do that to anyone. It's not like you were actually upset.\n\nAnnie stares at you. \"And yet you're surprised I'm offended? You don't think about other people, do you?\" You know Annie is being completely unreasonable; seeing this, your past self wisely makes the decision to remove himself from the situation.\n\nThrough the kitchen window, you see living Mort walk calmly out of the house. None of this \"storming out\" business.\n\nAs every else stare in shock at your receding form, Annie lets out a puff of air and whispers, \"Mort.\" She walks into the kitchen, grabs an orange sharpie and a piece of paper, and begins writing.\n<<add \"Sharpie\">>\n\nWhen she's finished, she pulls out bread and other materials.\n\nSlowly, meticulously, she begins making a sandwich.\n\nAnd the memory [[slips->Link Clues]] from your sight.",
+      "links": [
+        {
+          "text": "slips",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "Terry's phone conversation",
+      "text": "<<if !$thoughts[\"Terry's phone conversation\"]>>\\\n    <<set $thoughts[\"Terry's phone conversation\"] = \"- Terry took your idea to put up a memorial as a huge affront and was venting about it to someone over the phone. (newspaper + petition)\">>\\\n<</if>>\\\nYou're in the regular, not-metal-walled Whittaker house and Terry is talking to someone on her cell phone, sounding irate. The clock on the wall says it's 8am in the morning and she's got the clothes she wears to the wine store on, so you suppose she's getting ready for work.\n\nTerry adjusts one of the earbuds and continues to talk hotly. \"I mean honestly, can you believe him? A plaque in her memory.\"\n\nOh, here we go. You know what this is about.\n\n\"No he can't! I won't stand for it! This is the most horrid, poorly-conceived plan he's had yet. And he gets the unsuspecting town to sign off on it too. They have no idea what they're doing and neither does he.\"\n\nYou're affronted. What in the world was so wrong with your idea that she hated it with such a passion?\n\n\"We did! Hell, //Annie// tried to tell him, and he wouldn't even listen to her! Can you imagine? The utter disrespect!\"\n\nNow hold on, disrespect? They were the ones being disrespectful! You just wanted to honor her, honor her memory, and they kept saying no. What were you supposed to do? Let her just fade away? Then where would you be? How dare Terry -\n\n\"Look, you didn't know her, you can't - She //never// would have wanted this.\"\n\nTerry said that before too. How would she know?\n\n\"Honeybear, listen,\" she says, her expression softening. \"We did a tree sit once, for days. It was in the papers, you know? That's how much she loved nature. How much she loved that plane tree. To have some ugly plaque under it, so no one can sit down and have a picnic, or just rest in the shade of the branches? Why would she ever agree to that?\"\n\nShe...you...if she had just //told// you then maybe -\n\n\"He wouldn't ever listen to me, sweetums. He never listens.\"\n\nYou stare at her numbly. How could she think of you that way?\n\nTerry seems to have calmed down a bit, nodding to whatever the person on the other line is saying. \"You know, maybe I will,\" she says. \"Maybe I will.\"\n\n\"Oh!\" she says, standing up from the kitchen table. \"I almost forgot to say. You left your tie here.\" She pulls something out of her pocket, a rolled up straight tie - navy blue with stripes. That's...weird. She is talking to Justin, right?\n<<add \"Straight Tie\">>\n\n\"Yeah,\" she continues. \"Just stop by the shop and I'll give it to you.\" She hangs up, and the memory [[smears away->Link Clues]].",
+      "links": [
+        {
+          "text": "smears away",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "Justin and Erin being siblings",
+      "text": "<<if !$thoughts[\"Justin and Erin being siblings\"]>>\\\n    <<set $thoughts[\"Justin and Erin being siblings\"] = \"- Erin and Justin are brother and sister. How in the world did you never notice before? (crescent charm + gibbous charm)\">>\\\n<</if>>\\\nYou lose sight of what's around you, and then a dark street forms. The moon, nearly full, is high in the sky. Despite the clearly late hour, Justin is walking down the sidewalk, twirling his keys around his finger absentmindedly. Something looks missing from them, though you're not sure what. A charm or tool of some sort? You remember it was kind of tacky, but that's all you recall about it.\n<<add \"Justin's Keys\">>\n\nJustin looks annoyed and is grumbling about patrolling.\n\nA figure approaches in the darkness with long blonde locks; when Justin sees her, his eyes widen and he pulls down his cap. He attempts to cross the street - looking both ways <<linkappend \"of course\">>, though you don't know why since it's not like any cars are around<</linkappend>> - but before he can -\n\n\"Justin! Is that you? Hi!\" The figure waves vigorously and runs up to Justin.\n\nHe turns and eyes her. \"Erin. It's midnight. Maybe don't go shouting and running down the street?\"\n\n\"Oh, sorry. How are you?\"\n\n\"Fine, I guess.\"\n\n\"I feel like I haven't talked to you in forever, you keep missing my calls! Or ignoring them.\" She bites her lip. \"I guess that's understandable.\"\n\nJustin blinks at her. \"You know, I've been incredibly busy - \"\n\n\"No, I don't,\" she replies, \"because you don\u2019t tell me anything anymore. But that's ok. Did you like your birthday presents from me, mom, and dad?\"\n\nWait.\n\n\"I, uh. Yes. Thank you. The bowtie was very nice.\"\n\n\"Well, if you insist on wearing those rather than a regular tie, you have to make up for it with fun patterns and cool colors,\" she sighs.\n<<add \"Bowtie\">>\n\n\"And what about the charm from Mom and Dad?\" She holds hers up, the gibbous moon charm, attached to a silvery chain around her neck. \"What did you think of that?\"\n\nThey're //siblings?//\n\n\"I...what are you doing out here so late anyway, Erin?\"\n\n\"You're changing the subject,\" she says, pouting.\n\n\"And you're avoiding the question.\" He glances at her bag. \"You're not doing what I think you're doing are you?\"\n\nErin nods reluctantly, staring at the pavement. \n\nIn the silence, you examine the two more closely. Now that you think about it, they do look //remarkably// similar. Their noses, their expressions - goddamn, how have you never noticed before? The biggest difference between them is their hair - Erin's is long and blonde, while Justin's is cropped and jet black.\n\n\"Look, Justin, please don't tell Mort!\" Erin exclaims suddenly. \"I - \"\n\n\"Hey, don't worry about it.\" He offers her a small half-smile. \"I'm not really eager to tell Mort anything, and as long as it's impermanent, who cares?\"\n\nTell you what? How many secrets were people hiding from you?\n\nShe lets out a small squeak of happiness and goes to hug Justin, but he backs away and puts his hand up, looking irritated.\n\nErin's face falls as her arms do, and she starts twirling her hair in her fingers, looking down again. \"Well, I answered your question. So, answer mine? What //did// you think of the crescent charm?\"\n\nJustin bites his lip, then clears his throat. \"I threw it out. I don't need reminders of that anymore. I'd rather just leave it all behind.\" Then, flatly, \"Sorry.\"\n\nErin looks like she's about to cry. \"It's...I am too.\" She walks past Justin, who stands there, unmoving, with a hard look on his face. The scene [[disappears->Link Clues]].",
+      "links": [
+        {
+          "text": "disappears",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "Justin and Erin setting up for the dinner",
+      "text": "<<if !$thoughts[\"Justin and Erin setting up for the dinner\"]>>\\\n    <<set $thoughts[\"Justin and Erin setting up for the dinner\"] = \"- Justin's been so exhausted he's had to rely on caffeine patches to get through the day. (caf patch + sigils)\">>\\\n<</if>>\\\nThe first thing you see as the memory comes into focus is Justin leaning against a plane tree. The rest of the scene fades in - chairs, food, the festive Thanksgiving-themed tablecloths, and the awning draped above them. As you look around you spot other RNA members, including yourself, bustling about and getting the dinner preparations set up.\n\nJustin exhales heavily and sticks his hand in his pocket, rummaging around for something. When he withdraws it, you see he's holding one of those caffeine patches and a crumpled piece of paper. You can't make out what the paper says; all you can tell is that it's written in orange ink.\n<<add \"Crumpled Paper\">>\n\nHe unceremoniously stuffs the paper back in his pocket, then peels off the backing of the caffeine patch. When he rolls up his sleeve to stick the patch on his wrist, you see that there's a faint lighter patch on his skin, square like the patch is. Is that a caffeine patch //tan line//? Wow, he must use them a lot. Come to think of it, the bags under his eyes are pretty heavy indeed...\n\nWhen you look back up, Erin is standing by Justin, and you and he jolt back in surprise. \"What is it, Erin?\"\n\n\"Um, I saw you put that patch on and - \" Justin pulls his sleeve down quickly and gives her an irritated look. \"- And I thought now would be a good time to give this to you...\" Erin pulls a piece of paper out of her bag - the sigil marked for Justin.\n\n\"What's this supposed to do?\" he says.\n\n\"Well, it's a sigil for renewal of energy and relieving of stress!\" Jeez, she's earnest about this stuff. \"You should hang it up in your house to charge it with your stress energy and exhaustion, and then you burn it after it's fully charged so it can dispel them. You may not talk to me anymore, but anyone with eyes can see how tired you've been, and I thought it might help.\"\n\nJustin takes the paper and examines it. \"How do you know if it's fully charged?\" Erin opens her mouth to speak, but then - \"Wait, what am I saying? You know I don't believe in this magic mumbo jumbo,\" he says, beginning to crumple the paper. At her visible distress, he stops and hands it back to her. \"I appreciate the sentiment but I'm fine.\"\n\nHer brows scrunch together. \"But your fatigue! You can't just keep living off of caffeine patches and coffee!\"\n\n\"Look. Terry gave me this article the other day about the health benefits of nuts; it was almost interesting. Apparently they help with tiredness and all that. And did you notice the dinner?\" He gestures to the food being set out. \"It's freaking full of nuts. It'll help me more than any magic whatchmacallit. Sorry, but no thanks.\"\n<<add \"Nut Article\">>\n\nErin looks vaguely disappointed and walks off, trying to smooth out the folds in the sigil. Justin pushes himself off the tree and looks around. He gets back to work, and the memory [[fades->Link Clues]].",
+      "links": [
+        {
+          "text": "fades",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "Terry and Bram's conversation in her shop",
+      "text": "<<if !$thoughts[\"Terry and Bram's conversation in her shop\"]>>\n    <<set $thoughts[\"Terry and Bram's conversation in her shop\"] = \"- Terry is having an affair with a customer at her wine shop, and Bram knows it. (bowtie + straight tie)\">>\n<</if>>\\\nYou find yourself just outside Whittaker Wines. Bram is outside too, staring through the wall-to-floor front windows with a shocked expression on his face, sweat beading on his forehead. You look inside as well, but all you see is some man with a cane talking to Terry. Brown hair, dress shirt; you don't find him terribly relevant at all until Terry pulls on his tie and kisses him.\n\nYou'd probably pull the same expression Bram is making, were you to still have a face.\n\nBram goes to the door and makes to open it. Is he going to confront Terry or something? You can't imagine your friend ever doing that. Apparently he's not so sure either, his hand reaching for and pulling back from the bottle-shaped handle nervously.\n\nThe door opens and Bram starts back, then the man emerges. He leans heavily on the silver-tipped cane he's holding, but otherwise he looks like your average, generic 30-something brunette guy. Unremarkable, even. And yet...\n<<add \"Cane\">>\n\nHe nods to Bram politely; Bram only eyes him warily in return. As the man walks off, Bram catches the door before it closes and heads hesitantly into the store.\n\n\"Hey Bram, how are you?\" Terry says.\n\n\"I've, uh, been better,\" he says. He glances back at the door and thumbs in that direction. \"Hey uh. Who was - who was that? The guy with the cane, I mean.\"\n\nBy gum, he's actually doing it. You never thought he had it in him.\n\nTerry stares blankly at him, then blinks and smiles. \"He's a customer here.\" She leans against the counter. \"Would you like some help finding a specific brand and year, or are you just browsing?\" \n\n\"Just brows- wait, no I'm looking for, uh,\" Bram pats his pockets for something, presumably a note with what wine he was looking for. After a moment of fruitless searching, he says, \"...Are you two friends?\"\n\n\"What?\" \n\n\"You seemed pretty friendly with him.\" Bram looks away as he speaks, incapable of looking at Terry as he accuses her. \n\nStanding upright, Terry folds her arms across her chest and\u00a0replies, \"Well, it's not like I can very well run a shop and be rude to my customers.\" You personally think she's being a little rude right now but you guess you can't blame her, given the situation.\n\nBram cringes before insisting, \"Yeah, but usually store owners don't kiss their customers.\"\n\nAt this, Terry freezes, and Bram just keeps going. \"You flirted with him, put a necktie around his neck and, uh, kissed him. Does Justin know that - \" \n\n\"No!\" Terry shouts. She puts her hands up, almost like a surrender. With an embarrassed blush blooming on her face, she says, \"Please don't tell Justin, he'd be heartbroken. He doesn't need to know.\" \n\n\"Why - nevermind, I don't want to know.\" Bram stares at Terry, who has slowly drawn her arms back and wrapped them around herself. \n\nColdly, she says, \"What are you even doing here, Bram? I thought you didn't drink.\"\n\n\"I don- I mean, m-maybe I started?\"\n\nYou inwardly scowl at his slip up as Terry looks at him suspiciously. She opens her mouth to speak but Bram quickly says, \"I guess you must've gotten tired of Justin and his bowties, huh? What with that necktie and all.\"\n\nThe tenseness is palpable as the memory [[fades->Link Clues]].",
+      "links": [
+        {
+          "text": "fades",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "Justin, Annie, and sriracha",
+      "text": "<<if !$thoughts[\"Justin, Annie, and sriracha\"]>>\\\n    <<set $thoughts[\"Justin, Annie, and sriracha\"] = \"- Annie couldn't think to do anything worse to me than put hot sauce in my sandwich and Justin couldn't even bear that. Looks like they're both innocent. (crumpled paper + sharpie)\">>\\\n<</if>>\\\nLights up on Annie's house. Living-Mort is nowhere to be seen, so this must be after the fight. Justin and Terry are putting on their jackets, probably to head to the store.\n\n\"Hold on one moment, you two.\" You turn to see Annie walk out of the kitchen. \"May I speak to Justin alone for a moment, Terry?\"\n\n\"Oh! Um, sure,\" says Terry, though Annie is already ushering Justin back into the kitchen. You follow curiously.\n\nJustin looks a bit disconcerted. \"What is it, Granny Smith?\"\n\nAnnie smiles fondly at the nickname, then gestures to the counter. On a plate is a nice, delicious looking sandwich. It's the one that she gave you during the dinner, actually. \"I found out a way to get back at Mort.\"\n\nOh, crap.\n\n\"What for?\" Justin says, his eyebrows furrowing.\n\n\"Oh don't play coy with me young man, you know what for. The way Mort's been treatin' everyone, he needs a good kick in the pants. Or somethin' else.\" Her smile turns sly and you start to feel scared. \"I made this big, beautiful sandwich for him, y'see. He can't eat nuts right? And it's too late to remake all the food we cooked, so it's only fair he get //somethin'// to eat.\"\n\n\"That's kind of you,\" Justin says slowly, drumming his fingers on the countertop. \"And...?\"\n\n\"And I thought I might put a little you-know-what in it.\"\n\nHis eyes widen. \"Oh god, Annie, you don't mean //that// something, do you?\" What something? Nuts? Aconite? Arsenic?! When Annie nods, you feel panic rising in your nonexistent gut. Justin crosses his arms. \"No. Don't.\"\n\n\"Come on Justin!\" she says, throwing her arms wide. \"Lord knows he deserves it!\"\n\n\"No. It goes against my principles. As much as I dislike Mort, there's no reason to harm him.\"\n\n\"You always were a goody-two-shoes.\"\n\n\"I'm a cop, ma'am. Don't do it.\"\n\nThey stare at each other in silence. You're freaking out - there's no way Annie would actually have poisoned you right? What have you done wrong? Ok, maybe you did a lot of things wrong, but //still// - Annie speaks. \"But what if I just put a little - \"\n\n\"You're not putting //sriracha sauce in Mort's sandwich//\".\n\nYour thoughts screech to a halt. Wait.\n\nWhat?\n\n\"Oh please, it's just a prank, dear, lighten up a bit. Go to the grocery store, get the sauce, and I'll pay you back. Here, I wrote it down so you won't forget. She pulls out a scrap paper with '//sriracha sauce//' written on it in orange sharpie. Before Justin can protest, she shoves it into his hand.\n\nThat's it? You want to laugh with how giddy you feel. Sriracha?\n\n\"You know I'm definitely not actually buying this, right Granny?\" Justin stuffs the note into his pants pocket.\n\nThe memory [[fades->Link Clues]].",
+      "links": [
+        {
+          "text": "fades",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "you distracting Justin in front of Bram's house",
+      "text": "<<if !$thoughts[\"you distracting Justin in front of Bram's house\"]>>\\\n    <<set $thoughts[\"you distracting Justin in front of Bram's house\"] = \"- Bram was seriously thinking about killing you but realized he needs you to keep Justin off his back. He's innocent. (keys + corkscrew)\">>\\\n<</if>>\\\nThe feeling of a memory forming washes over you again, and you find yourself in Bram's house. You've materialized in the kitchen this time, and Bram is there, the Loup-Rouge resting on the counter. Bram's wearing the same clothing he was when you shared drinks with him - it must be the same day.\n\nThen you notice that he's muttering to himself and sweating, and he's got something in his hands. You look more closely and -\n\nIt's wolfsbane. Bram is holding a pot of wolfsbane. Bram is holding wolfsbane, and he's staring back and forth between the purple leaves and the wine. He's not...moving, just looking between the two of them. What the hell is he - he didn't -\n\nThe doorbell rings, and Bram jumps. He quickly hides the wolfsbane, walks over to the front door, and, not bothering to check who's outside, swings it open. Much to Bram's surprise, you - or rather, your past self - is not the one standing there. It's Justin. \n\n\"Hi, Bram,\" Justin says, giving a single wave. \"I'm here because - well, I came to give you this.\" Justin holds out a corkscrew (a tacky yet adorable shark). Bram takes it with a poorly-masked expression of terror on his face. Luckily Justin doesn't seem to notice. \"Terry said you'd been buying wine. And I came because I wanted to talk about something. Do you mind if I come in?\" \n\nBram wipes the sweat off his forehead with his sleeve. \"I don't know if now is the best time, I'm a little busy with, uh, busy - \" \n\nAnd then, from behind Justin, living Mort appears, smoothly saying, \"Bram and I were actually about to catch up for a bit. Hello, Justin.\" Justin whips around to face you, clearly caught off guard. You know he hates that, but it's not exactly your fault he wasn't paying attention. \"Speaking of busy,\" you continue, \"don't you have somewhere to be, Justin?\"\n\nNarrowing his eyes at living Mort, Justin says, \"I do?\" \n\n\"Don't you have to put flyers for the policeman Q&A session at the middle school?\" Mort replies.\n\n\"I did that this morning.\"\n\n\"And you met with the teens at the community center?\"\n\n\"This afternoon.\" \n\n\"And the patrols in the Wesden Hill and Orup Fells neighborhoods-\"\n\n\"That's how I spent the rest of the day.\" Justin crosses his arms. \n\n\"And the park?\" \n\nJustin pauses for a moment. \"What about the park?\" \n\n\"Did I forget to assign you to check for vandalism in the park?\" Mort puts his hand on his chin, thinking. You know that you hadn't forgotten. You just needed Justin gone for Bram's sake. \"Someone needs to do that, and I'm afraid reckless teenagers won't listen to anyone but an officer of the law.\" He looks to Bram and winks. Bram is frozen.\n\nBreathing in slowly, Justin closes his eyes. After he exhales, he opens his eyes and says in a tight voice, \"I will get right on that. Good day, Bram. Mort.\" Justin nods and walks away, and Mort lets himself in.\n\n\"Crisis averted,\" your past self says, patting Bram on the shoulder. \"It's a good thing I can get you out of things like this. Imagine if Justin had come in and found the marijuana plots here!\" He keeps walking into the living room, sitting down on the couch. \n\nBram, who'd been stiff with fear for much of the interaction, melts and walks over to the kitchen. \"I'll grab the wine.\" Opening a cabinet, Bram sighs and puts the wolfsbane away. \n\n\"I guess I do need him,\" Bram mumbles.\n\n\"What was that?\"\n\n\"Nothing, Mort.\"\n\nThe memory [[fades->Link Clues]].",
+      "links": [
+        {
+          "text": "fades",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "Annie and Erin talking about warding you away",
+      "text": "<<if !$thoughts[\"Annie and Erin talking about warding you away\"]>>\\\n    <<set $thoughts[\"Annie and Erin talking about warding you away\"] = \"- Annie and Erin want to ward you off from paying your respects... (petals + wolfsbane)\">>\\\n<</if>>\\\nYou appear to be in the local park. This is where the dinner happened, though nothing has been set up yet in the memory. The area is mostly empty, except Erin, Annie, and the plane tree. Annie is sitting on a park bench adjacent to the tree, and Erin is on the ground, her head resting against the trunk. \n\nYou've come in mid-conversation, apparently, because the first thing you hear is Annie saying, \"I have this feelin' that Mort'll try to come and, I dunno, pay his respects or somethin'. I'm just not ready for that.\" You had been planning on visiting...\n\nErin, as she braids a few blades of grass together, replies, \"Well, Granny, you don't have to let him.\"\n\n\"I'm not about to go and be rude to the man, even if it's well within my right,\" Annie scoffs. She watches Erin's hands, squinting a bit as she does so. Without her glasses on, Annie is having a hard time seeing what Erin is doing.\n\nNoticing this, Erin holds the grass up. \"I'm just braiding grass. It makes it stronger. My mom taught it to me when I was a kid.\" She pauses. \"I could ward him away.\"\n\n\"What?\" Annie cocks her head to the side in confusion.\n\n\"I could ward the graveyard against Mort. He's a werewolf - \" Wait what? She thinks you're a werewolf? What kind of ridiculous - \" - so I can do it pretty easily with wolfsbane petals. He can't step over a barrier made of those, or he'll die.\" Erin ties a knot into the grass braid and places it against the tree. \"Don't worry, though,\" she adds. \"He'll know it's there, so he won't just be walking and then drop dead. He'll be able to steer clear.\"\n\nAnnie looks Erin up and down, and upon finding her to be completely serious, Annie lets out a sigh. \"Well, thanks, I guess. If Mort really is a, uh, werewolf - well, I appreciate it, Erin. Thank you.\"\n\nYou can't believe that Annie is going along with this farce - thinking you're a werewolf, how patently ridiculous! When have you ever acted like a goddamn supernatural creature? ...Present state aside.\n<<add \"Werewolf\">>\n\nAnd warding you away? The more memories you see, the more hurt you feel about your so-called friends. Even though you know that Erin's mumbo jumbo wouldn't actually work, and without a doubt Annie knows too, the fact that she was willing to even //humor// Ms. Wicca just to keep you away...it's unpleasant, to say the least.\n\n\"Though,\" Erin continues, pulling you back to the scene, \"he's probably in trouble himself. I can feel the aura and...\" Her eyes unfocus as she thinks for a moment. Annie squints a bit but patiently waits for her to continue. \"Well, if he's a werewolf I'll need to make something to protect him too. Special though, because he's of unhuman form.\"\n\n\"Protect him? Now what would he need to be protected from, especially if he's...that?\" Annie harrumphs.\n\n\"Oh, you know.\" Erin twirls her hand vaguely. \"Hunters.\"\n\nAs you stew on this, the memory [[slips away->Link Clues]].",
+      "links": [
+        {
+          "text": "slips away",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "Terry's boyfriend giving her some leaves",
+      "text": "<<if !$thoughts[\"Terry's boyfriend giving her some leaves\"]>>\\\n    <<set $thoughts[\"Terry's boyfriend giving her some leaves\"] = \"- Terry's boyfriend was sneaking around in the garden and stole some leaves. (cane + shifty person)\">>\\\n<</if>>\\\nYou're floating on the boulevard in front of the Whittaker house, with Terry standing in the frame of the open door in her bathrobe. Terry, silhouetted in the light that's flooding onto the porch, is looking at you and waving. \"Thank you again for this!\" she says, raising the bag she's holding.\n\nYou jerk backward, startled - she's looking at you? But that doesn't make sense since this is a memory and you are a ghost, and besides, her eyes don't quite meet yours anyway. So you turn around to see who she //is// waving at.\n\nYour heart sinks. \n\nIt's the guy - her - her paramour, waving back. He looks slightly disheveled, and given Terry's similar state, it's not hard to put two and two together. As if you didn't feel bad enough for Justin getting cuckolded, it's been happening at his own house, too?\n\nThe guy mimes catching something, probably some gross air-kiss from Terry, then turns and walks toward a car that is presumably his, cane clicking on the pavement. You look at Terry again; she is shouldering the door closed and beginning to look in the bag.\n\nWell, obviously you have to know what's in there. You float through the door easily and see Terry peering into the bag at a scattering of small leaves. She smiles. What the hell does she want with a pile of leaves?\n<<add \"Leaves\">>\n\nAs you wonder this, the memory [[drips away->Link Clues]].",
+      "links": [
+        {
+          "text": "drips away",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "Erin and Bram brewing you a potion",
+      "text": "<<if !$thoughts[\"Erin and Bram brewing you a potion\"]>>\\\n    <<set $thoughts[\"Erin and Bram brewing you a potion\"] = \"- Erin and Bram created a 'Potion of Continued Life' for you that did not contain wolfsbane. Erin, at the least, is innocent. (potion + werewolf)\">>\\\n<</if>>\\\nThe memory starts with a knock, and the sound resonates through your ears as the scene comes into view. Bram is standing in front of a familiar door, a bundle of herbs and other plant substances swaddled in his arms. He's having a difficult time balancing it all, especially since he keeps reaching an arm out to knock.\n\nAfter a moment, Erin opens the door and stares up at Bram. Her expression is one of concern, and her usual cheery attitude is nowhere to be found. \"Bram,\" she says, \"you came.\" \n\n\"I brought the, uh, ingredients. What are these for, if you don't mind me asking?\" Bram looks warily down at Erin. \n\n\"Mort's going to need something to protect him.\" Erin offers out her arms to help carry the herbs, and, with only slight hesitation, Bram hands her some. Erin continues, \"I've been getting bad feelings for some time now, and I think Mort's in danger. Come in?\" She elbows the door open a little bit wider and nods inside. \n\nBram steps past her, giving a little \"thank you\" as he does. \"So what are you planning?\" \n\n\"Oh, a potion.\" Erin lets out a puff of breath and slams the door shut. \"I left the spell book out on the kitchen table. You can set everything down over there.\" \n\nAs Bram makes his way to the counter and sets down the herbs, he scans the area for the book. The room is lit by candles, which makes it a bit hard to see, but Bram seems to find it quickly because even before you can find the book amongst the mess, Bram is walking over to the stove. \n\n\"Were you baking with this? he calls over to Erin. She doesn't answer, and steps up next to him. \n\nPointing to one of the entries, Erin says, \"Here. Potion of Continued Life.\" You rush over to the entry, expecting to see wolfsbane listed but...everything seems innocuous. Huh.\n\n\"That's an odd - wait, do you think Mort's going to, uh, you know?\" Bram can't quite bring himself to say the word die. Oh, Bram. \n\n\"I think it's possible. You gonna help?\" Erin looks over at Bram and smiles, though it's weak and born more of habit than cheer. When Bram nods, she drops it and looks melancholy. \"Alright so, first we're going to need...\"\n\nShe continues on, but the memory [[fades->Link Clues]]. You're not sure what to think.",
+      "links": [
+        {
+          "text": "fades",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "Terry poisoning your salad",
+      "text": "<<if !$thoughts[\"Terry poisoning your salad\"]>>\\\n    <<set $thoughts[\"Terry poisoning your salad\"] = \"- Terry poisoned you. Terry poisoned you and you feel like a chump. (aconite, wolfsbane, or leaves + salad)\">>\\\n<</if>>\\\nYou're back in the grocery store, moments after the previous memory there left off, it seems. Justin is walking back to the salad bar and Terry is watching him go with a pensive look on her face. She bites her lip. Then, she quickly pulls the lid off the salad and takes something - looks like a box for pushpins or the like - out of her purse. Inside - the leaves, the wolfsbane leaves that she got from her boyfriend. No - //no//. You watch helplessly as she dumps the leaves into the salad, tamps the lid back on, and gives it a good shake. That means - she definitely -\n\nYou feel like screaming.\n\nNot a second later - and too late, you think to yourself in dismay - Justin appears from an aisle, holding a small container full of dressing. \"Let's go?\" he says.\n\n\"Let's.\"\n\nThe memory [[dissipates->Link Clues]].",
+      "links": [
+        {
+          "text": "dissipates",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "Detective's mind",
+      "text": "<<set $mindVisited to true>>You find yourself in a small office, drab and plain. Judging by the worn brown jacket hung up on the coat rack, the room is the detective's.\n<<if visited() is 1>>\nYou're not sure what just happened but you're trying to roll with it. Did you...teleport or something?\n\nHmm, no. Something tells you this isn't an actual office; it's more a representation of one. Everything looks less detailed than it should, hazy and strange, except a few things that stand out in sharp, detailed relief. As you look around, everything at the edge of your vision shimmers and fades, and you suspect that wherever you aren't looking, there's nothing at all. Are you in the detective's <<linkreplace \"dream?\">><<linkreplace \"memory?\">><<linkappend \"mind?\">>\n\nYeah. 'Mind' feels right to you as it surfaces from the depths of your thoughts. You're inside the detective's mind.\n\nLooks like you were wrong about your lack of <<linkreplace \"ghost powers\">>ghost powers<<replace \"#powers\">>Though you don't recall mind-jumping to be a 'ghost' thing...still, rolling with it. What else would you do?<</replace>><</linkreplace>> after all. <span id=\"powers\"></span><</linkappend>><</linkreplace>><</linkreplace>><</if>>\nThe walls, an inoffensive light grey, are covered in <<linkreplace \"photographs\">>photographs<<replace \"#photos\">>\n\nHey, there's you! You don't look that good. You wish they'd used a picture from when you were alive, at the very least.<</replace>><</linkreplace>> of missing persons and dead people. <span id=\"photos\"></span>\n\nThe <<openlink \"desk\" \"deskText\">>desk<<replace \"#desk\">>\n\nYou feel a little daunted at the idea of going through the giant stack of papers, especially when you can't actually touch things. Luckily, it turns out that none of them are readable at all; their words, even the outlines of the sheets, are fuzzy and indistinct.\n\nThere's some stuff on the desk though that's almost //too// in focus though, like when you wear a glasses prescription that's a shade too strong. The first is a <<linkreplace \"sandwich\">>sandwich<<replace \"#sandwich\">>\n<<add \"Sandwich\">><</replace>><</linkreplace>>, the next is a <<linkreplace \"potion\">>potion<<replace \"#potion\">>\n<<add \"Potion\">><</replace>><</linkreplace>>, the last is a <<linkreplace \"salad\">>salad<<replace \"#salad\">>\n<<add \"Salad\">><</replace>><</linkreplace>>. These are all things you had at the dinner. Weird. You consumed the real objects so you guess that confirms this place isn't real.<<nobr>>\n<span id=\"sandwich\"></span>\n<span id=\"potion\"></span>\n<span id =\"salad\"></span><</nobr>>\n\nThere seems to be a few papers here too, also in sharp detail:\n\na <<openlink \"rap sheet\" \"rapText\">>rap sheet<<replace \"#rap\">>\n\nAnd whose rap sheet might this b - \n\nAh.\n\nYours.\n\nOk so you have a record. So what? A few DUIs, some...other stuff. You swear you've <<linkprepend \"gone straight\">>mostly <</linkprepend>> now, cleaned up your <<linkappend \"act!\">> Not that it matters since you're, well, dead.<</linkappend>> The last thing is dated November 14th, over a decade ago so...\n\nWhat is it doing here?\n<<add \"Rap Sheet\">>\n<</replace>><</openlink>>, <span id=\"rap\"></span>\nand a <<openlink \"report.\" \"reportText\">>report.<<replace \"#report\">>\n\nYou squint at the paper. At the top in large bold letters are the words \"//''AUTOPSY REPORT''//\". You see the name \"//Mort Freedman//\" - your name - as well, and feel cold. Wow. You really are dead.\n\n\"//From the anatomical findings and pertinent history I ascribe the death to:\nACONITE POISONING//\"\n\nOh.\n\nHow unpleasant.\n<<add \"Aconite Poison\">><</replace>><</openlink>><span id=\"report\"></span>\n<</replace>><</openlink>> situated in the corner of the room has a few incongruous objects on it, along with a stack of papers that seem to reach the ceiling. Clearly this <<linkreplace \"man\">><<linkreplace \"woman\">>person<</linkreplace>><</linkreplace>> has some problems with paperwork (which is something you deal - dealt with a lot as RNA chairman).<span id=\"desk\"></span>\n\n<<nobr>>\n<<if lastVisited($who) is 1>>\n    <<link \"Leave room.\" $who>><</link>>\n<<else>><<link \"Leave room.\" \"Police Station\">><</link>>\n<</if>>\n<</nobr>>",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Police Station",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "Justin's mind",
+      "text": "<<set $mindVisited to true>>It's the Whittaker home, the den specifically. You've been here once or twice. It's quaint and domestic: a worn blue couch, a slightly out of date TV, and a coffee table with a few books, police forms, and a <<openlink \"newspaper\" \"newspaperText\">>newspaper<<replace \"#newspaper\">>\n\nThe newspaper, dated from 2 decades ago, is yellowed and fragile, but the two girls chained to a plane tree on the front page are still recognizable. One of them is Terry. The other girl is - well, who cares. The headline, ''\"Local Activists Protest Paving Over Park\"'', is unrealistically sharp, ink unfaded by time inside Justin's memories. You don't want to think about it too much.\n<<add \"Old Newspaper\">><</replace>><</openlink>> on it. <span id=\"newspaper\"></span>\n\nThe police reports and coffee table books lack most discernable details, their words blurry and indistinct. If Justin doesn't find them important enough to remember them properly, well, neither do you.\n\nOn the couch, along with a few throw pillows and a bottle of <<linkappend \"black hair dye,\">> (Must be going grey early, huh?<</linkappend>> is a small box of <<openlink \"stick-on patches.\" \"patchesText\">>stick on patches.<<replace \"#patches\">>\n\nThe box stands out unpleasantly from the faded indigo upholstery and creamy white pillows, being a garish, saturated green. ~CAF PATCH!~ it proclaims in violent pink letters. Underneath, in purple, it says, \"8 hours of energy guaranteed! Stick on and enjoy the ride!\"\n\nIs this like an energy drink condensed into patch form? That's a bit worrisome. Terry has said before that she's sworn off caffeine for 'diet reasons', so you assume the box belongs to Justin.\n\nOne of the patches has spilled out of the box. It looks a bit like a band-aid.\n<<add \"Caf Patch\">><</replace>><</openlink>> <span id=\"patches\"></span>\n\nIn here, for some bizarre reason, the walls are made of metal - steel, it looks like. Crushed steel, specifically; they're warped and corrugated as if the whole room is being squeezed by a giant vise. Something <<openlink \"shiny\">>shiny<<replace \"#shiny\">> - \n\nYou float closer and squint in the recesses of the crevice. There's a crescent moon charm glinting in there. You couldn't say why, but you suspect its placement means something metaphorical, since the actual Whittaker house does not have metal walls and therefore does not have things stuck between said walls.\n<<add \"Crescent Charm\">>\n\n<</replace>><</openlink>><span id=\"shiny\"></span> and something <<openlink \"glittery\">>glittery<<replace \"#glittery\">> \n\nThe glittery thing turns out to be a postcard stuffed into one of the cracks. It's open and says\n\n//\"Congratulations! ==It's== You're a boy!\n\n~Erin xoxo\"//\n\nThe 'congratulations' is half obscured by the metal wall . The 'it's' has been crossed out with a purple gel pen, which was also used for her signature.\n\nErin's a peculiar one, alright.\n<<add \"Congratulatory Card\">><</replace>><</openlink>> appear to be wedged between creases in the twisted metal. <span id=\"glittery\"></span>\n\nOn account of the bent walls, the ceiling is much, //much// closer to the floor than you're used to, and you're glad you're not enough of a presence to need to duck.\n\n[[Leave.|Justin]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Justin",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "Terry's mind",
+      "text": "<<set $mindVisited to true>>You recognize the place as Whittaker Wines, the wine store that Terry inherited from her parents. With its cheerful yellow walls and large storefront windows, the store appears normal at first blush. \n\nLooking closer though, you see that the wine bottles are not jutting out of wooden racks, but out of honeycombs. Presumably made of beeswax, the combs ooze with honey that drips down and off the necks of the bottles onto the hardwood floor. In combs without bottles, there are assorted objects that you can only assume have some relevance to Terry. They're hard to see through the viscous layers of honey, though.\n\nOne of the <<openlink \"cells\" \"petitionText\">>cells<<replace \"#petition\">>\n\nThe bits of paper have stuff written on them. You can make out PE-, memori-, -xa, and what look like parts of signatures. Oh! This is the petition that you created to put up that plaque in the park.\n\nTorn into pieces.\n<<add \"Petition\">>\n\n<</replace>><</openlink>> is in sharper focus than the rest; inside, there appear to be bits of ripped up paper floating in the golden goop.<span id=\"petition\"></span>\n\n<<openlink \"Another cell\" \"wineText\">>Another cell<<replace \"#wine\">>\n\nIt's a bottle of Loup-Rouge. Dusty, like no one's touched it in ages. There's a paper here also - a merchant's copy of a purchase of the wine a couple days ago. It's got Bram's signature on it.\n\nIf Bram bought this bottle, what's it still doing here in Terry's mind? Did she really find it that important to remember?\n<<add \"Wine\">><</replace>><</openlink>>, also one of the only things in focus, has a bottle of wine in it that you know well.<span id=\"wine\"></span>\n\nThe last cell with actually discernable things in it contains, oddly enough, dozens of <<openlink \"stickers\" \"stickersText\">>stickers<<replace \"#stickers\">>\n\nIt's hard to get a good look at all of them, but they seem to be hospital stickers from various dates, the oldest dated 11/14 over a decade ago, the latest dated a couple days ago.\n\nYou really hope they're not for what you suspect they're for.\n<<add \"Hospital Stickers\">><</replace>><</openlink>> suspended in the fluid at various angles. <span id=\"stickers\"></span>\n\n[[Leave.|Terry]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Terry",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "Erin's mind",
+      "text": "<<set $mindVisited to true>>It looks like a study but...weird. Gauzy lavender curtains float in a gentle breeze from the open window. Outside, stars and a nearly-full, albeit odd-looking <<openlink \"moon\" \"moonText\">>moon<<replace \"#moon\">>\n\nThat's no moon. Or rather, that's no //real// moon. Well, it wasn't anyway since it's simply a metaphysical representation of a - your point is, it's actually a charm. Just hanging in the sky, pretending to be a celestial body. You can see the metallic luster of it and the tiny loop on top for attaching to keychains or necklaces or the like.\n<<add \"Gibbous Charm\">><</replace>><</openlink>> hang in the purple-velvet night. <span id=\"moon\"></span>\n\nThere's clutter everywhere - herbs hanging from hooks on the walls; books purporting to be full of spells scattered on the table, chair, and floor; odd occult knick-knacks; a framed <<openlink \"picture\" \"pictureText\">>picture<<replace \"#picture\">>\n\nTeenaged Terry, Erin, and some other girl who you don't care about, smiling for a picture. You - you guess that's Erin at least? Her hair is cropped short and she's wearing boyish clothes. It never occured to you she could've ever been a tomboy, but you suppose people <<linkreplace \"change\">>change<<replace \"#change\">>Though this would be a bi-i-ig change, you admit.<</replace>><</linkreplace>> over time. <span id=\"change\"></span> Her arm is around the...the other girl's waist. You wonder who took the picture.\n\nThey're all sitting in front of a very familiar plane tree in the park.<<add \"Photograph\">><</replace>><</openlink>>; and even a freaking crystal ball. And, to no surprise, <<openlink \"sigils\" \"sigilsText\">>sigils<<replace \"#sigils\">>\n\nSeveral different <<linkappend \"sigils\">>, or as you like to call them, 'magical' <<linkappend \"squiggles\">> (squigils?)<</linkappend>><</linkappend>>. Most of them are labeled as 'protection' sigils, but one says it's to 'renew energy and de-stress', and is marked for Justin.\n<<add \"Sigils\">><</replace>><</openlink>> papered everywhere that there's an open area to tape them to.<span id=\"picture\"></span><span id=\"sigils\"></span>\n\nTo your somewhat greater surprise, there is a <<openlink \"letter\" \"letterText\">>letter<<replace \"#letter\">>\n\nYou //would// be shocked that a letter could burn perpetually in a highly flammable container while still having its words clearly readable. But you're a ghost floating around in someone's mind and peering at their memories, so who are you to judge?\n\nIn a looping orange scrawl it says, \n\n//\"I demand you stop dating my daughter. I know she sneaks over to your and your witch sister's house at night. I won't put up with it anymore. I thought you would like to know, being gay is a sin in the eyes of the Lord. That goes for lesbians too, and I won't have you corrupting Le - \"//\n\nYou decide to stop reading.\n<<add \"Burning Letter\">><</replace>><</openlink>> in the wicker trashcan in the corner.<span id=\"letter\"></span>\n\nThe downright oddest thing about the room is that the walls, floor, and ceiling appear to be pressing outward, curving due to some unseen pressure from inside. They're barely attached at the corners, but open where each wall would meet another, as if they're ripping at the seams. Through the openings, you glimpse more stars and dark space. Is this room just floating in a void?\n\nYou look out the window to check. Huh. It appears so.\n\n[[Leave.|Erin]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Erin",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "Annie's mind",
+      "text": "<<set $mindVisited to true>>Annie's mind seems to be her kitchen.  You remember it well; this is where you had the fight. The first thing that strikes you is the lack of color. The walls, the lights, the appliances- everything is in sepia. You look out of the window to see that the whole world seems to be the same dull, old-timey orange. \n\nThere are far fewer decorations than in an average kitchen, but sticky notes and bits of random papers are stuck with big clip bag magnets onto the fridge.\n\nIts corners are beveled, very 1960's <<linkappend \"retro.\">> Actually, you wouldn't be surprised if it was from back then and Annie never bothered to get a new one.<</linkappend>> You remember that the actual fridge is a pastel pink, but here of course, it just looks brownish. The papers and notes on its sides are blurry and unreadable to you right now, but you know that they're for birthdays and phone numbers and recipes, anything likely to slip a 70-something's mind. Some of them look remarkably old, with faded ink and sun-bleached colored paper, perhaps put there years ago.\n\nA few things catch your eye - the only readable writing in the blur of notes:\n\na <<openlink \"postcard,\" \"postcardText\">>postcard<<replace \"#postcard\">> - \n\nHmm. It's an old postcard depicting the local pride parade. It looks rather faded.\n\nPeering closer at it, you see that she and Justin just so happen to be in the crowd. You probably wouldn't have noticed, but they're the only people in focus - another memory trick, most likely. They both look younger and Annie is enthusiastically waving a rainbow flag.\n\n<<add \"Postcard\">><</replace>><</openlink>> <span id=\"postcard\"></span>\na <<openlink \"sticky note,\" \"stickyText\">>sticky note<<replace \"#sticky\">> -\n\nLooks like the classic passive-aggressive sticky note.\n\n\"There's $24 missing from my purse. You'd better explain when you get home, missy. 11/14\"\n\nAh crap.\n<<add \"Sticky Note\">><</replace>><</openlink>> <span id=\"sticky\"></span>\nand a <<openlink \"reminder.\" \"reminderText\">>reminder.<<replace \"#reminder\">>\n\n\"Pay Bram for medicine\" is scrawled on it. You wouldn't have spotted it in real life unless you were looking for it.\n\nHuh. You never would have guessed.\n<<add \"Medicine Reminder\">><</replace>><</openlink>> <span id=\"reminder\"></span>\n\nOn the counter sits a <<linkreplace \"flower\">>hyacinth, maybe,<</linkreplace>> and grains of... sand?\n\nYou look down. The floor is covered in sand. Or maybe it's just entirely sand; you've no way of knowing. You're not really sure why that is, but you've decided to accept it. Hmm, is there something buried in there? Looks like some sort of <<openlink \"form.\" \"formText\">>form.<<replace \"#form\">> -\n\nIt's dated a few days ago...a consent form for non-voluntary eu - Ah //crap//.\n<<add \"Consent Form\">>\n<</replace>><</openlink>> <span id=\"form\"></span>\n\n[[Leave.|Annie]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Annie",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "Bram's mind",
+      "text": "<<set $mindVisited to true>>As you step into Bram's mind, a fantastical version of the community greenhouse appears in your vision, with blossoming, well pruned plants from all seasons. The flowers are arranged meticulously and are being lightly watered by sprinklers from above; thankfully the drops pass right through you.\n\nThe glass panes that make up the greenhouse let light stream in, and though it's too bright to see outside, you aren't blinded either. As you squint at the panes, you realize they're held up by vines rather than their usual metal frames. Caught up in some vines, extremely high up, are some <<openlink \"dollar bills.\" \"moneyText\">>dollar bills.<<replace \"#money\">>\n\nYou float on up there and see a $20 and four $1 bills, with creases from being folded repeatedly. Not sure what they're doing there, though you'd assume they were obtained from one of his sales.\n\n<<add \"Money\">><</replace>><</openlink>> <span id=\"money\"></span>\n\nYou also spot <<openlink \"something\" \"giftText\">>something<<replace \"#gift\">>\n\nYou float under the raised box to examine the item. It's a piece of paper with handwriting on it - your handwriting. It's too dark to read well in the shadows, but you already know what it says.\n\n\"Thanks ahead of time for the gift I expect you're getting me. Tell you what, when you get the stuff, why don't you share it with me? We'll make a toast to old friends. Make sure it's aged over a decade, don't cheap out on me here. You know the brand I like. - Mort\"\n<<add \"Gift Request\">><</replace>><</openlink>> shrouded in shadow under one of the plant boxes. <span id=\"gift\"></span>\n\n[[Leave.|Bram]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "Bram",
+            "pid": 110
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "PassageFooter",
+      "text": "<<nobr>><!--Indicates this item can't be combined-->\n    <<if tags().includes(\"noncombinable\")>>\n        <br>\n        This probably isn't relevant to the murder...\n        <<if !tags().includes(\"lexa\")>>\n            but you are curious about it...\n        <</if>><br>\n    <</if>>\n<!--If something is related to Lexa, display a randomly selected angry statement from Mort.-->\n    <<if tags().includes(\"lexa\")>>\n        <br>\n        <<print either($lexaItemAnger)>>\n        <br>\n    <</if>>\n    \n<!--Unless a passage is an item, a memory, or is not supposed to display an inventory, add the inventory link to every passage-->\n    <<if !tags().includesAny(\"noinv\", \"item\", \"memory\")>>\n<!--Saves where you were and sends you to the inventory page if clicked-->\n        <<link \"''<br><br>Remember.''\">>\n            <<set $returnTo to passage()>>\n            <<goto \"Clues\">>\n        <</link>>\n    <</if>>\n<!--If passage is an item, add a Back button-->    \n    <<if tags().includes(\"item\")>>\n    <br>\n    <br>\n        <<return \"Back to what you were doing.\">>\n    <</if>>\n\n<!--If passage is a confession, add Play again and restore from save buttons-->\n<<if tags().includes(\"confession\")>>\n    <<if Save.slots.has(0)>>\n        <br><br><<link \"Wait, no! Go back to your save.\">>\n            <<script>>\n                if (Save.slots.has(0)) { \n                    Save.slots.load(0);\n                } \n            <</script>>\n        <</link>>\n    <</if>>\n<br><br><<link \"Play again.\">>\n    <<script>>\n        Engine.restart();\n    <</script>>\n<</link>>\n<</if>>\n<</nobr>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Clues",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "PassageHeader",
+      "text": "<<if tags().includes(\"memory\") and $thoughts.length == 0>>As you connect the two clues in your mind, you feel a strong tide of emotions and sensations flood your senses, and you know they're not your own.\n\n<</if>>",
+      "links": []
+    },
+    {
+      "pid": 95,
+      "name": "Possession",
+      "text": "You decide to spend the rest of your ghostly energy, or whatever the hell it is, to possess $who's body itself and get it to do your bidding, though you feel you'll only have enough power to say one thing. Steeling yourself for impact, you collide with $who and extend your influence over <<if $who is \"Justin\"  or $who is \"Bram\">>his<<else>>her<</if>> person.\n\nWarmth and bone and flesh wrap around you again, and you open your, or rather, $who's eyes to see the rest of the suspects and the detective looking over all of you. You must have taken longer than you realized to gain control, because everyone by now has already gathered in the waiting area to hear what the detective wants to do with them next.\n\nYou didn't realize how much you missed having a body, though you know it's fleeting, though it's not your own. You can sense $who's soul sort of stuffed down beneath you, silent but fighting to wrest back control. In the few seconds you have, you open your mouth to speak.\n\n<<link `\"'I confess: I killed Mort.'\"` `$who + \"'s Confession\"`)>><</link>>",
+      "links": []
+    },
+    {
+      "pid": 96,
+      "name": "Justin's Confession",
+      "text": "You have just enough time to see everyone turn to look at you in shock before you're shoved out of Justin's body, perhaps from his soul fighting back at the indignance of it all. Something tells you that you only have a minute or so more before you go to the real place that people are supposed to go when they die, instead of this limbo. You hold on as tight as you can to the world for now.\n\nThe detective is squinting at him with a strange look on their face. \"What did you say?\"\n\n\"I. Er.\" Justin clears his throat, looking disquieted. \"I'm not sure why I said that, detective, but I assure you it's not true. Whatever my feelings toward the deceased are or were, I would never - \"\n\n\"Yeah, I know. Given the evidence, the idea of you being the murderer makes no sense.\"\n\nTerry is looking on in horror at her husband, and beside her Annie furrows her eyebrows in confusion. You look at Bram and Erin; he's doing his best to look grieved, and Erin is... more distraught that you thought she'd be. You get the feeling you've made a mistake. The panic makes your tether to the world slip slightly and you feel weaker than you already felt, which is impressive given you've been a near-powerless ghost.\n\n\"Still, your confession bears further investigation and interrogation. I'm afraid I'm going to have to question you further.\"\n\nWith a chagrined look on his face, Justin says, \"I understand, detective.\" \n\nThey turn to the other suspects. \"The rest of you are dismissed.\" \n\nYour tether finally snaps and you lose your grip on the scene around you. The last thing you wonder as your spirit fades away is who truly killed you.\n\nYou guess you'll never find out.",
+      "links": []
+    },
+    {
+      "pid": 97,
+      "name": "Terry's Confession",
+      "text": "You have just enough time to see everyone turn to look at you in shock before you're shoved out of Terry's body, perhaps from her soul fighting back in panic. Something tells you that you only have a minute or so more before you go to the real place that people are supposed to go when they die, instead of this limbo. You hold on as tight as you can to the world for now.\n\nThe detective's glare is piercing, almost triumphant. \"Did you just confess?\"\n\n\"What?\" No, I!\" Terry looks distressed. Her hands flutter as she speaks. \"I don't know what made me say that but no, I'm not, I swear, I'm not! I've - I've just been under so much stress lately that I don't know what I'm saying, I'm so sorry detective! So sorry!\" She starts crying again, burying her face in her hands.\n\n\"Save your tears, Mrs. Whittaker. I don't know why you said that either, but a confession's a confession. I suspected your involvement anyway. All the evidence points to you.\"\n\nEven though you saw her do it, hearing the detective confirm everything is disturbing. You wish this wasn't happening.\n\n\"Now hold on, my wife would never - \"\n\n\"Honeybear,\" Terry says through her hands as Justin begins to rise angrily from his seat. Her voice sounds different now, colder. \"Please. Sit.\"\n\nJustin slowly lowers himself back down, confused. He puts a hand on Terry's knee but she jerks away from him. She wipes her tears away, and as she looks up at the detective with red-rimmed eyes, she says, \"Alright, fine. I did it.\"\n\nHorror twists Justin's face while the detective affords themself a smile. \"Terry, what are you saying?\" says Justin, searching her expression. \"Lying to the detective won't - \"\n\n\"I'm not lying, Justin. And you shouldn't be surprised, with everything that's happened. He stomped over every one of us and acted like he could do whatever he wanted because the community adored him, or whatever they thought he was. But we know the truth, don't we?\" She looks around at the members of the RNA, her eyes bright. \"We know how much that bastard had it coming for what he did.\"\n\nJustin glares at the floor, his hands gripping the armrests of his chair. \"Terry, //why//?\"\n\n\"Because of the way he treated you. The way he treated all of us! You really wouldn't like to see an end to those countless patrols?\"\n\nJustin only grits his teeth and squeezes his eyes shut. Are those tears?\n\n\"He tore down your sigils!\" she says to Erin. She turns to Bram and adds, \"And I don't know why exactly you bought that wine, but you don't drink and we all know what Mort was.\"\n\n\"Murder is murder,\" says Bram, looking at the floor tiles.\n\nAnd in a sharp, high pitched voice, Erin says, \"My sigils were to protect from hunters like you.\"\n\nTerry exhales, nostrils flaring, and presses her lips together. She opens her mouth to speak, but Annie interrupts, scowling. \"You think any of that warrants killing a man?\"\n\n\"Don't pretend you don't understand me, Granny Smith! He's the only reason that L - \"\n\n\"Don't call me that,\" Annie snaps. \"And you're not so free of wrongdoing yourself, missy. No human on this earth gets to play angel of death, especially not someone livin' in a glass house like you are.\"\n\nTerry's eyes flit back and forth between the RNA members, searching for something she can't find. \"I was right,\" she says, louder as if that will convince people. She thrusts her hand forward, finger pointed, at the people gathered in the room. \"Even if none of you believe me, I know I was right to kill Mort! He deserved it!\"\n\n\"That's enough,\" the detective says. \"No one cares about your reasons. Nothing justifies cold-blooded murder. Nothing.\"\n\nShe glares at them.\n\nThe detective waves two officers over, one of whom pulls out handcuffs. \"Take her away.\"\n\nWhatever binds you to the land of the living breaks and you begin to fade, feeling conscious thoughts die like blown out candles. Your influence has finally ended. The last thing you wonder before you disappear is whether the detective was right, or Terry was.",
+      "links": []
+    },
+    {
+      "pid": 98,
+      "name": "Erin's Confession",
+      "text": "You have just enough time to see everyone turn to look at you in shock before you're pushed out of Erin's body, perhaps from some spiritual power of h- pff nah who are you kidding. Something tells you that you only have a minute or so more before you go to the real place that people are supposed to go when they die, instead of this limbo. You hold on as tight as you can to the world for now.\n\nThere's a confusing mix of emotions on the detective's face. \"What did you say?\"\n\nErin blinks and looks around. \"Well,\" she says in an airy voice, \"I suppose I just said I killed Mort.\"\n\n\"And why would you say that?\" the detective says slowly.\n\n\"I don't really know, honestly. I didn't do it, you know, and I see no reason why I would say that naturally, so I suppose the obvious conclusion is I was possessed by Mort's ghost and made to as some form of retribution.\" She states this as lightly as you would mention the weather outside, but it's so spot on that you wonder with a jolt if maybe you'd been wrong about her all this time.\n\n\"Possessed.\" The detective stares at her in disbelief, then shakes their head. \"Nevertheless, I've had several reason to suspect you as the culprit; I only hesitated because not everything added up.\"\n\nCrap, really? You were confident that it had to be her, but now this - her lack of panic, the detective's confusion, and the little things you'd decided to ignore - is filling you with waves of doubt.\n\n\"Yet, a confession's a confession.  You were the one getting wolfsbane from Mr. Locklear in the first place; your involvement makes too much sense. Frankly, the thing I'm most surprised about is that it was intentional.\"\n\nErin frowns at this, but says nothing.\n\n\"Detective,\" Justin says hesitantly, \"do you really think that she...I mean it's Erin...\"\n\nHe's right, you recognize. It's Erin. Did she really have it in her to murder you? You're starting to realize the real answer.\n\nTerry grabs Justin's hand, and he holds it loosely. You don't ponder that for too long and turn your attention to Annie and Bram. Bram's eyebrows are furrowed in as far as you think they can be, as though he's trying to figure out a very hard sudoku. Annie seems saddened and shifts a bit, opening her mouth to speak a couple times but ultimately saying nothing.\n\nThe detective shakes their head. \"My apologies, Ms. Moonchild. We're going to have to arrest you.\"\n\nAll she does is bite her lip and nod.\n\nFinally you feel yourself fading. Doubt, panic, and guilt continue to course through you. At least when you're truly gone those feelings will go away as well.\n\nThat's your last, awful thought.",
+      "links": []
+    },
+    {
+      "pid": 99,
+      "name": "Annie's Confession",
+      "text": "You have just enough time to see everyone turn to look at you in shock before you're shoved out of Annie's body, perhaps from subconscious disgust at you. Something tells you that you only have a minute or so more before you go to the real place that people are supposed to go when they die, instead of this limbo. You hold on as tight as you can to the world for now.\n\nThe detective stares at Annie, bewilderment evident on their face. \"You confess?\"\n\nShe furrows her eyebrows. \"I didn't mean to.\"\n\n\"But you just said you killed Mr. Freedman?\" the detective asks.\n\nAnnie shakes her head. \"I don't know why I said that. I don't know. I didn't kill him.\"\n\nThere's some murmuring coming from the others in the room. You feel a twinge of panic creeping over you. Annie seemed so convinced that she didn't kill you, and you've never known her to be a liar. Then again, you never knew anyone here to be a murderer.\n\nAfter a moment, the detective purses their lips and then says, \"Well, the evidence doesn't point to you, but that confession was pretty blatant, even if you're saying you're innocent.\" They look at Annie. \"You understand, right?\"\n\nAnnie looks upset, and you feel... guilty. You were so sure she did it. Next to Annie, Justin's breath has stilled, and he runs his hand over his pocket that has a note sticking out. His other hand is holding Terry's, and she looks incredibly distraught.\n\n\"I understand,\" Annie says finally. \n\nThe detective nods. \"Good. Annie, I'd like you to stay for more questioning. The rest of you are free to go.\"\u00a0\n\nYou feel yourself fading, heading off to...'beyond', wherever that is. You're not sure who killed you, and you guess you'll never know. You realize this crowd of distraught faces is the last sight you'll ever see.\n\nBut maybe that's for the best.",
+      "links": []
+    },
+    {
+      "pid": 100,
+      "name": "Bram's Confession",
+      "text": "You have just enough time to see everyone turn to look at you in shock before you're shoved out of Bram's body, perhaps from subconscious revulsion at losing his autonomy. Something tells you that you only have a minute or so more before you go to the real place that people are supposed to go when they die, instead of this limbo. You hold on as tight as you can to the world for now.\n\nThe detective stares for a few moments, their face\u00a0focused as they work through evidence in their head. \"Okay,\" they say finally.\n\n\"Wait!\" Bram exclaims. \"I didn't kill him. I mean, I didn't like him-\" rude \"-but I would never have, I'd thought about it maybe, but I'd never have killed Mort!\" Bram looks around, and sees the shocked faces of the neighborhood association. You're glad you're not alone in being surprised that he didn't like you. \n\n\"The evidence doesn't match you entirely,\" says the detective, \"but the fact that you grew wolfsbane was enough to make you highly suspicious.\" \n\nErin looks over at Bram with a concerned look on her face. Bram sputters for a moment but doesn't respond.\n\nThen the detective bluntly asks, \"Was this about the marijuana?\" \n\n\"I didn't kill Mort!\" Bram shouts. \n\nJustin can't stop staring at Bram with a vaguely offended but accepting face. Terry's baffled, but Annie and Erin seem pretty expressionless. When Bram looks to anyone for support, the only one that will meet his eyes is Justin. You get the feeling that Bram did not want Justin to be the one he locked eyes with.\n\nWhen Bram turns back to the detective, the detective says, \"Look, with your confession, there's a lot of evidence. You were read your Miranda Rights, right?\" \n\n\"I did not kill him.\"\n\nThe detective sighs. \"Bram Locklear - \"\n\n\"I did not kill him,\" Bram insists, and he seems distraught enough that you start to believe him.\n\nThe detective sighs. \"Mr. Locklear.\" \n\n\"I didn't.\" Guilt creeps upon you.\n\n\"Mr. Locklear... you can pretend we're just putting you under observation, but I'm afraid we have to arrest you.\" \n\nBram looks to the others, his eyes begging for anyone to support him, but even Justin isn't looking now. Again he says, \"I'm innocent\", but he doesn't seem to fully believe it either, now. He walks over the detective.\n\nYou feel yourself ripped from the sorry scene and from the world. You're not sure how that'll end, but you can't even begin to guess who killed you now.\n\nYou never will.",
+      "links": []
+    },
+    {
+      "pid": 101,
+      "name": "StoryInit",
+      "text": "<<nobr>>\n<!--Inventory-->\n<<set $inv to []>>\n<<set $thoughts to {}>>\n<<set $selected to []>>\n<<set $setAside to []>>\n\n<!--Noncombinables-->\n<<set $noncombinables to [\"Congratulatory Card\", \"Money\", \"Postcard\", \"Sticky Note\", \"Consent Form\", \"Photograph\", \"Burning Letter\", \"Hospital Stickers\", \"Rap Sheet\"]>>\n\n<!--Lexa stuff-->\n<<set $lexaItems = [\"Photograph\", \"Sticky Note\", \"Rap Sheet\", \"Consent Form\", \"Hospital Stickers\", \"Burning Letter\", \"Petition\", \"Old Newspaper\"]>>\n\n<!--Hints-->\n<<set $fail = 0>>\n<<set $smallhints = [\"The connections aren't random! Try to find different ways things can be related.\",\n\"Are there any odd inconsistencies between two clues? Does combining the clues get a contradiction of some sort?\",\n\"Do any clues have some sort of quality in common?\",\n\"Maybe someone said something important in their testimony.\",\n\"You can combine a clue more than once!\",\n\"You can combine clues found from unlocked memories to unlock even //more// memories!\",\n\"A certain set of clues can be combined only after you deduce a connection between them by unlocking certain memories. It should be obvious when that happens.\"]>>\n\n<!--Mort's ranting when you come across an item related to Lexa.-->\n<<set $lexaItemAnger to [\n    \"Anyway, who cares, right?\",\n    \"Plus, you don't know why //anyone// would be interested in this stuff.\", \n    \"And dammit, you put this crap in the past for a reason.\", \n    \"So //maybe// you should stop looking at this stuff before you get too irritated. That'd be bad, wouldn't it?\", \n    \"Besides, you're getting sick of looking at this. You don't want to bother with it any further.\", \n    \"You'd be better off focusing on the actual problem, you know, your //murder//.\", \n    \"Besides, you feel nauseous just looking at it. You'd better not investigate this anymore.\", \n    \"See, this is just pursuing a dead end...Why can't people just learn to move on?\", \n    \"Ugh.\"]>>\n\n<!--Have you visited a testimony yet?-->\n<<set $testimonyVisited to false>>\n\n<!--Have you visited a mind yet?-->\n<<set $mindVisited to false>>\n\n<!--Checks if item been used up or not (resets upon leaving item passage)-->\n<<set $isItemUsed = false>>\n\n<!--Checks if you skip to the police station.-->\n<<set $policeStationStart to false>>\n<</nobr>>",
+      "links": []
+    },
+    {
+      "pid": 102,
+      "name": "Test",
+      "text": "aconite, reminder, sigils, potion, straight tie, bowtie, empty plot, annie's testimony, sandwich, potion, salad added\n\n[[Testing]]\n    <<set $thoughts[\"Bram realizing the wolfsbane was tampered with\"] = \"- blop\">>\n    <<set $thoughts[\"the detective ruminating about the murder weapon\"] = \"- blarp\">>\n    <<add \"Aconite Poison\">>\n    <<add \"Medicine Reminder\">>\n    <<add \"Sigils\">>\n    <<add \"Potion\">>\n    <<add \"Bowtie\">>\n    <<add \"Justin's Testimony\">>\n    <<add \"Sandwich\">>\n    <<add \"Salad\">>\n    <<add \"Marijuana\">>\n    <<add \"Old Newspaper\">>\n    <<add \"Petition\"\n    <<add \"Wolfsbane\">>\n    <<add \"Werewolf\">>\n    <<add \"Money\">>\n    <<add \"Hospital Stickers\">>\n\noriginal: <<= $inv>>\nreturn: <<= $inv.delete('Sandwich')>>\nafter: <<= $inv>>",
+      "links": [
+        {
+          "text": "Testing",
+          "destination": {
+            "name": "Testing",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "Testing",
+      "text": "<<print $inv.length>>",
+      "links": []
+    },
+    {
+      "pid": 104,
+      "name": "Testimony links",
+      "text": "<<widget \"testimony\">>\n<<if hasVisited($args[0]) and $who is not $args[0]>>\n<<link `\"Go back to \" + $args[0] + \".\"` $args[0]>><</link>><br>\n<<elseif $who is not $args[0]>>\n<<link `\"Listen to \" + $args[0] + \".\"` $args[0]>><</link>><br>\n<</if>>\n<</widget>>",
+      "links": []
+    },
+    {
+      "pid": 105,
+      "name": "Listen to Testimonies",
+      "text": "<<if $mindVisited is false>>You think about how you went inside the detective's mind. If you could find a clue there, then surely you'd be able to figure out more from the minds of the suspects themselves, right?\n\n<</if>>\\\n<<link `\"Enter \" + $who + \"'s mind.\"` `$who + \"'s mind\"`>><</link>>\n\n<<nobr>>\n<<testimony \"Justin\">>\n<<testimony \"Terry\">>\n<<testimony \"Erin\">>\n<<testimony \"Annie\">>\n<<testimony \"Bram\">>\n<</nobr>>[[Go back to the detective's mind|Detective's mind]]\n\n<<linkappend `\"Possess \" + $who + \".\"`>>\n\nWhat's this? A new ability has revealed itself to you: possession. You can feel how powerful it is, so you don't think that once you use it you'll be able to stick around any longer on Earth. But you must have it for some sick reason, right? And then it occurs to you - you could get the killer to confess, right in this station. It wouldn't fix you being dead, of course, but least then you could go to the big shining light at the end of the tunnel knowing that your death was avenged...by yourself. Hey, maybe that's your unfinished business?\n\nYou should only do it once you're absolutely sure who it is, though. Are you?\n\n[[Yes, you're sure.|Possession]]<</linkappend>>",
+      "links": [
+        {
+          "text": "Go back to the detective's mind",
+          "destination": {
+            "name": "Detective's mind",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Yes, you're sure.",
+          "destination": {
+            "name": "Possession",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "Justin",
+      "text": "<<set $who to \"Justin\">><<if visited() is 1>>Justin comes into the room silently, fidgeting with his bowtie. He sits down without hesitation.\n\n\"Mr. Whittaker,\" says the officer, \"Could you please describe the events of the dinner and the surrounding circumstances?\" \n\nClearing his throat, Justin nods. \"Well, we - the RNA - planned out this big, neighborhood Thanksgiving feast a couple weeks before today. Things were going well, related to the dinner anyway, and everyone who could was helping cook and such. I didn't because I was,\" he pinches the bridge of his nose, \"busy, but...\"\n\n\"Busy?\"\n\n\"Yeah, patrols, talks with schools, //more// patrols...I mean. You know how it is.\"\n\nThe officer gives him a sympathetic smile. \"Please, continue.\"\n\n\"Mort wasn't helping out because he was also busy with RNA matters. Apparently.\" He mutters the last word. <<if !hasVisited(\"Annie's Testimony\")>>\n\nWhat is that supposed to mean?\n\n<</if>>\"So when we met on Thanksgiving day at Annie's place to touch base, he got all angry that there were nuts in every dish that'd been cooked. Some nut allergy. I - I had no idea about that or I would never have...\" He trails off and furrows his brow. <<if hasVisited(\"Annie's Testimony\")>>\n\nSure he didn't.\n\n<</if>>\"They had some sort of fight, since she had created the menu...\" Justin shakes his head and sighs. \"That happened before the dinner. Kinda turned everything sour from the start. Thinking about Mort sitting and eating nothing, well, even I felt sorry for him. So the wife suggested we get him a salad. Sure. We forgot dressing though, so she had me go back to get it.\" \n\nHe pauses for a moment. \"Then we prepared for the dinner for a couple hours, it started, and...well.\"\n\nHe exhales slowly, gathering his thoughts. \"I hope you all find the killer soon and bring them to justice. I didn't exactly call Mort a friend - to be completely honest I didn't like him very much, but I - \" He clears his throat. \"I never wished him dead.\"\n\n<<if !hasVisited(\"Annie's Testimony\")>>What? You aren't friends? He doesn't like you? Well! This is certainly news to you. You drift closer, wishing you could ask Justin why he would say something like that.\\\n<<else>>You'd be highly surprised that Justin didn't like you before, but with the knowledge that he told Annie to add nuts to everything, this just makes a terrible sort of sense. You drift closer, feeling cold.<</if>> His face is impassive - no signs of sorrow belying his calm demeanor.\n\nAll this time you've spent on the RNA assuming you were on good terms, giving him plenty to do and valuing him as a member of the association, and he can't even bother to cry about your tragic, untimely death.\n\nThe officer keeps interviewing Justin, asking him to recount the information in different ways, and he complies without issue. You think you've heard everything important, though.\\\n<<add \"Justin's Testimony\">>\n<<elseif hasVisited(\"Justin's mind\")>>Justin looks irritated again and is rubbing his arms.<<else>>Justin is done with his testimony and is sitting stiffly, adjusting his bowtie occasionally.<</if>>\n\n<<include \"Listen to Testimonies\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Justin",
+            "pid": 106
+          }
+        },
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Listen to Testimonies",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "Terry",
+      "text": "<<set $who to \"Terry\">><<if visited() is 1>>Terry enters the room already speaking. She's sobbing heavily and keeps trying to wipe away her tears with her sleeve. \n\n\"I just can't believe - I'm - oh my word I can't do this. Sorry, I need a minute...\" She takes a shaky breath and fans herself. \"It's just, I never, I never thought that - Mort of all people!\"\n\nThe officer sitting at the table interrupts, \"Mrs. Whittaker. Could you tell me what happened at the dinner and its surrounding circumstances?\"\n\n\"Sorry yes, what happened...the dinner,\" she says, sniffling. \"Well, the RNA thought up the idea a while ago. A big feast. Everyone was so excited! Mort, Justin, and I didn't cook but we were all pitching in in some way. But then - \" she wipes her eyes with her sleeve - \"we found out Mort couldn't eat the food - any of it! And to find out day of too, oh, can you imagine? So Justin -  he's been my rock through all of this bless him - he thought to get Mort a salad. Bless Justin honestly, bless him, I don\u2019t know what I'd do if he wasn't there for me -\"\n\n\"Mrs. Whittaker, please continue with your testimony.\"\n\nTerry blinks the tears out of her eyes. \"Sorry, right...\"\n\n\"It's alright. You were getting a salad?\" \n\nTerry tries to reign in her tears and continues, \"Yes, we drove to the grocery to get a small salad for Mort. It was the least we could do so the poor man could have something to eat...poor Mort, oh!\"\n\nShe's not doing a very good job of keeping composed. You never realized you meant this much to Terry. You're touched, really.\n\n\"We headed to the park after that... to help set up, you know? When the dinner started, before the poor man could die of hunger, we gave Mort our salad - oh, and Annie, she gave him a sandwich. Then Erin...\" Terry's face shows a marked change, going from despair to disgust. \"Erin gave him a silly little potion, going on and on about protection or something. He drank it, though I can't imagine why, and well...! Next thing you know he's dead on the floor!\" She sobs again.\n\n<<if !hasVisited(\"Erin's Testimony\")>>Oh yeah, you remember that. You drank it, just to stop her from nagging you about it. It tasted like manure.\n<<else>>You'd swear you just felt a shiver go down your spine, were it not for your lack of a spine. Erin?<</if>>\n\nStill upset, but more angry, Terry continues, \"That girl, I just - she has no idea what she's doing with her so-called magic, I wouldn't be surprised if drinking that finally...oh I don't want to think about it! But she's done terrible things before...regardless, whoever did it should be ashamed...\"\n\nThe officer keeps interviewing Terry, asking her to recount her testimony. You wonder if the officer feels bad for pushing Terry to speak, or if these types are used to that sort of  thing. You think you've heard everything important, though.\n<<add \"Terry's Testimony\">>\n<<elseif hasVisited(\"Terry's mind\")>>Terry has her arms wrapped around her, her teeth chattering. She looks down at the table.<<else>>Terry has gone back to crying. It's beginning to get concerning, if you're being honest.<</if>>\n\n<<include \"Listen to Testimonies\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Terry",
+            "pid": 107
+          }
+        },
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Listen to Testimonies",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "Erin",
+      "text": "<<set $who to \"Erin\">><<if visited() is 1>>\nWhen you float into the room, Erin is sitting in the cold metal chair, unspeaking. She looks uncomfortable and shakes slightly. Tears threaten to spill from her eyes, wide with bewilderment.\n\nBefore that can happen, the officer speaks. \"Hello, Ms. Moonchild. If you could, would you please explain the events leading up to Mr. Freedman's death?\" \n\nErin frowns. \"I knew this would happen.\"\n\n\"Could you explain that statement?\"\n\nShe wrings her hands. \"See, the association came up with the idea for the dinner, and everyone was really excited, but there was a negative aura in the air, I could feel it.\"\n\n\"Aura...? Why would there be a negative aura?\"\n\n\"Well I think that's obvious.\"\n\n\"No, I don't think it is,\" the officer says. \"Please. Elaborate.\"\n\n\"Well,\" Erin replies, \"earlier today while the RNA was meeting, Annie and Mort got into a quarrel. We'd baked everything the day before - Annie, Bram, and I, and for some reason Mort didn't like it. There was a bad aura around everyone beforehand, but then it got really bad at the meeting. Annie's aura flared up, and of course everyone loves Annie so everyone else got frustrated - \"\n\nThe officer interrupts. \"Excuse me, Miss. What, exactly, happened at that meeting?\"\n\n\"Well, Mort didn't want to eat any of the dishes - couldn't? He said something like that.  I kept trying to give him the potion, but he ignored me! Everyone ignores me,\" she says softly. She shakes her head. \"He left all angrily, and then Justin and Terry went off to get Mort something, salad maybe? I didn't pay too much attention.\" She pauses. \"Well, I did, but not because I was stalking them or anything.\" (What?) \"I was just concerned about Justin. He hasn't been talking to me at all. I tried to tell him about the bad energies and signs I've felt lately, but he wouldn't listen, and then this had to go and happen!\"\n\nShe throws her hands up in the air. The officer makes a noise as if to question her, but she keeps going. \"Anyway, we all set up the dinner for a couple hours. Then I gave Mort the potion at the party. I watched him drink it and then went back to the party, feeling better, until...\" She looks down sadly. \n\nYou frown. Before the officer can interrupt, she continues, \"I had prepared the potion for Mort because I thought he was in danger, and I was right.\" She looks down and wipes a single tear from her eye.\n\n\"What was in the potion?\" There's a slight edge to the officer's voice.\\\n<<if hasVisited(\"Terry's Testimony\")>>\n\nYeah, given Terry's statements, now you're wondering too.<</if>>\n                      \n\"Ingredients that protect, of course,\" Erin says. By the distant look on her face, both you and, it seems, the officer, know that's all you're gonna get out of her about that. <<if hasVisited(\"Terry's Testimony\")>>You want to scream.<</if>>\n\nBefore the officer can ask anything else, Erin adds, \"I thought the potion would work. It was supposed to protect him, though I guess he never did want my protection.\"\n\nNever did want - is she talking about those creepy sigils you took down? She does know that was vandalism, right?\u00a0\n\nWhatever. You don't really understand Erin.\n\nThe officer keeps interviewing Erin, asking her to recount the information in different ways, though you're not sure she's going to get any clearer. You think you've heard everything important, though.\n<<add \"Erin's Testimony\">>\n<<elseif hasVisited(\"Erin's mind\")>>Erin is turning her head sharply to look about the room, looking like a startled bird. \"Mort!\" she cries, and you freeze in place, surprised. \"Is that you? Are you a spirit now?\"\n\nYou don't know if it's possible to respond and you're not sure you want to.\n<<else>>Erin is wringing her hands and repeating, \"oh, oh, oh\" to herself.<</if>>\n\n<<include \"Listen to Testimonies\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Erin",
+            "pid": 108
+          }
+        },
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Listen to Testimonies",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "Annie",
+      "text": "<<set $who to \"Annie\">><<if visited() is 1>>The officer has just begun speaking when you enter the room. \"Good day, Ms. Smith - \"\n\nAnnie interrupts, saying, \"I guess it coulda been, but there's a dead man. Did you forget that or somethin'?\"\n\n\"I'd like to ask you a few questions about that, actually. What happened leading up to Mr. Freedman's death?\"\n\nAnnie's face twists into a displeased expression. About your untimely murder, you assume. \"Where are we startin'? We fought this morning...\"\n\n\"That works, Ms. Smith.\"\n\nNodding, Annie begins her story. \"Well, all of yesterday Erin, Bram, and I were baking. Justin couldn't make it, busy as always, and Terry is a terrible cook. Mort was no help. If he'd been there we wouldn't have had - \" \n\n\"Ms. Smith, the fight?\"\n\n\"I was getting there, officer. If he'd been there we wouldn't have had the fight. He was sayin' he wouldn't eat the food, and naturally I took offense to that, I mean, spendin' hours in the kitchen cookin' just to have your friend refuse because he don't like nuts!\"\n\nAgain you twitch with the urge to explain the difference between a //dislike// and an //allergy that can kill you//, but alas, you are dead and cannot speak.\n\n\"Now, if only he'd helped he coulda said that while we were baking. //Before// I put the nuts in everything.\" Annie shakes her head. \"And after Justin said it'd be fine, encouraged me even...hmph.\"\n\nThere's a mental needle scratch. Justin said it'd be fine? He wasn't even working on making the food! <<if !hasVisited(\"Justin's Testimony\")>>Here you though the two of you were friends, but if you were, then what was he doing purposely putting nuts on the menu? Was he //trying// to kill you?\n\nOh no.\n<<else>>You feel somewhat surprised, but now that you know that he never even liked you in the first place, all you can feel is bitter.<</if>>\n\nAnnie continues, \"I couldn't just let the man starve. After we exchanged some fighting words, I made him a sandwich. Everyone else went off to the party- except Justin and Terry. They went to the store.\"\n\nWhen Annie falls silent, the officer prompts, \"What did you do with the sandwich?\"\n\n\"I gave it to Mort, of course. Why would I make a sandwich to feed a man and not give it to him?\" She paused. \"I wish we'd made up. Feels wrong to have ill thoughts of the dead.\" \n\nThe officer keeps interviewing Annie, asking her to recount her testimony. \"Weren't you listening?\" she says grouchily before repeating. You think you've heard everything important, though.\n<<add \"Annie's Testimony\">>\n<<elseif hasVisited(\"Annie's Mind\")>> and how her bones ache, her eyebrows knitted together.<<else>>Now that her testimony's over, Annie sits quietly at the table, gazing at her clasped hands.<</if>>\n\n<<include \"Listen to Testimonies\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Annie",
+            "pid": 109
+          }
+        },
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Listen to Testimonies",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "Bram",
+      "text": "<<set $who to \"Bram\">><<if visited() is 1>>\nBram, poor guy, enters the room sweating, dabbing at his forehead with a handkerchief. It's clear he's nervous. You have a few guesses as to why.\n\nHe sits down slowly, and listens for the officer. The officer speaks, \"Mr. Locklear, could you please describe the events leading up to and around Mr. Freedman's death?\"\n\n\"Well, there was the party. And, oh! Before that was the meeting, and I guess the baking the day before. Mort wasn't there though, so where should I start, officer? I don't want to slow you down with irrelevant info.\" Bram laughs nervously. \n\n\"Wherever you think is the most relevant. If I think you're leaving something out, I will ask.\" \n\nBram furrows his eyebrows. \"Okay. Well, yesterday, we were all baking. Erin, Annie, and I, that is. There were a lot of nuts in everything, which was Justin's idea apparently - I don't know if Justin knew about the allergy, of course! Anyway, that's why Mort started the fight with Annie. Today, at the meeting, I mean. Not yesterday. It's like she doesn't know what allergies are.\" \n\nHe laughs again, his expression pained. If only you weren't dead, you could remind him that laughing while being asked about a murder is a bad idea.\n\n\"Mort left, which was really uncomfortable, but we tried to finish the meeting anyway. Then we all went to the party. Or the store. Or the kitchen. I went to the party to set up.\" \n\nAfter a short silence, the officer says, \"Mr. Locklear, we believe that Mr. Freedman was killed with a poison. Are you aware of how aconite is made?\"\n\nBram takes a moment to process the question, then puts his hands up and sputters out an objection, \"Before you start asking about the wolfsbane in the garden, Erin asked me to plant it. She uses it for spells. But I wasn't growing it to poison Mort!\"\n\nThe officer hums and writes something down. \"Thank you, Mr. Locklear.\" \n\n\"Wait, what are you writing down?\" Bram stammers. \"I said I wasn't - \"\n\n\"Could you please go over your testimony one more time?\"\n\nBram gulps and nods weakly. You think you've heard everything important now, though.\n<<add \"Bram's Testimony\">>\n<<elseif hasVisited(\"Bram's mind\")>>He looks even sweatier than he normally is, eyes darting back and forth, giving the distinct impression of a trapped rabbit.<<else>>Bram sits at the table quietly, sweat dripping from his brow.<</if>>\n\n<<include \"Listen to Testimonies\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Bram",
+            "pid": 110
+          }
+        },
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Listen to Testimonies",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "Thoughts",
+      "text": "<<nobr>>\n    <strong>[[Clues]] | [[Link Clues]] | Thoughts\n    |  <<linkreplace \"Save\">>\n            <<script>>\n                if (Save.ok()) { \n                    Save.slots.save(0);\n                }\n            <</script>>\n            Game saved.\n        <</linkreplace>>\n        <<if Save.slots.has(0)>>\n    |    <<link \"Restore Save\">><<script>>\n                if (Save.slots.has(0)) { \n                    Save.slots.load(0);\n                } \n            <</script>><</link>>\n    |      <<linkreplace \"Restart\">>\nThis will erase your progress and saves. Are you sure?\n                <<link \"Yes\">>\n                    <<script>>\n                        if (Save.slots.has(0)) {\n                            Save.slots.delete(0);\n                        }\n                        if (Save.autosave.has()) {\n                            Save.autosave.delete();                           \n                        }\n                        Engine.restart();\n                        <</script>>\n                <</link>>\n            <</linkreplace>>\n        <</if>>\n     | [[Credits]]</strong>\n<</nobr>>\nOn this wacky journey of trying to figure out your own murderer, you've discovered a bunch of other things too.\n\n<<print Object.values($thoughts).join(\"<br>\")>>\n\n<<if !Object.keys($thoughts).length == 19>>It looks like you've found out everything there is to discover about your murder. Anything else, well. You don't care about that.<</if>>\n\n[[Open your eyes.|$returnTo]]",
+      "links": [
+        {
+          "text": "Clues",
+          "destination": {
+            "name": "Clues",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Link Clues",
+          "destination": {
+            "name": "Link Clues",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 3
+          }
+        }
+      ]
+    }
+  ]
+}

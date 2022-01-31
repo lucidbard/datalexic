@@ -1,0 +1,1408 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "seeing",
+      "text": "The namestone rises from the earth. You suck the name from the water gathered in the basin, pristine water untouched by sand.\\n\\nYou spit the name onto your chart. It dries.\\n\\n//Amitor//<<set $dest_list.push(\"amitor\")>>\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "amitor",
+            "pid": 82
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "My intestines",
+      "text": "<<if $species is \"harpself\">>She carefully cuts two of your abdominal strings, calm hand on your column, and<<endif>><<if $species is \"coiler\">>She separates your guts scales, watching for trapticks, and<<endif>><<if $species is \"ratkoin\">>She parts your bellyfur and<<endif>> lifts your incandescent viscera to the sky, an offering for the [[sky|nebula]].",
+      "links": [
+        {
+          "text": "sky",
+          "destination": {
+            "name": "nebula",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Ascend",
+      "text": "[[Descend|camp]]\\n\\nSwirl: [[earth]] | [[sistrices]]\\n\\n[[Plume(vessels)|Escalate]]\\n\\n[[Plume(beacon)|Beacon]]\\n\\n[[Superplume(terminate)|terminate]]",
+      "links": [
+        {
+          "text": "Descend",
+          "destination": {
+            "name": "camp",
+            "pid": 72
+          }
+        },
+        {
+          "text": "earth",
+          "destination": {
+            "name": "earth",
+            "pid": 63
+          }
+        },
+        {
+          "text": "sistrices",
+          "destination": {
+            "name": "sistrices",
+            "pid": 60
+          }
+        },
+        {
+          "text": "Plume(vessels)",
+          "destination": {
+            "name": "Escalate",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Plume(beacon)",
+          "destination": {
+            "name": "Beacon",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Superplume(terminate)",
+          "destination": {
+            "name": "terminate",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "style place",
+      "text": "\\n::-moz-selection { /* Code for Firefox */\\n    color: black;\\n    background: none;\\n}\\n\\n::selection {\\n    color: black;\\n    background: none;\\n}\\n\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n#passages{\\ncolor: rgb(255, 255, 255);\\ndisplay: block;\\nfont-family: Verdana, sans-serif;\\nfont-size: 20px !important;\\n\\nline-height: 35px;\\ntext-align: left;\\ntext-shadow: rgb(255, 255, 255) 0px 0px 6px !important;\\nvisibility: visible;\\n\\nmargin:200px;\\nborder-left:0px !important;\\n\\n}\\n\\n\\na {color:white!important;}\\n\\na:hover {color:WHITE !important;text-shadow: 0 0 10px WHITE;\\ncolor:#c61a1a;text-decoration:none !important;}\\n\\n\\n\\nbody{background: rgb(145,88,112); /* Old browsers */\\nbackground: -moz-linear-gradient(left, rgba(145,88,112,1) 0%, rgba(197,193,244,1) 93%, rgba(197,193,244,1) 93%); /* FF3.6+ */\\nbackground: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(145,88,112,1)), color-stop(93%,rgba(197,193,244,1)), color-stop(93%,rgba(197,193,244,1))); /* Chrome,Safari4+ */\\nbackground: -webkit-linear-gradient(left, rgba(145,88,112,1) 0%,rgba(197,193,244,1) 93%,rgba(197,193,244,1) 93%); /* Chrome10+,Safari5.1+ */\\nbackground: -o-linear-gradient(left, rgba(145,88,112,1) 0%,rgba(197,193,244,1) 93%,rgba(197,193,244,1) 93%); /* Opera 11.10+ */\\nbackground: -ms-linear-gradient(left, rgba(145,88,112,1) 0%,rgba(197,193,244,1) 93%,rgba(197,193,244,1) 93%); /* IE10+ */\\nbackground: linear-gradient(to right, rgba(145,88,112,1) 0%,rgba(197,193,244,1) 93%,rgba(197,193,244,1) 93%); /* W3C */\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#915870', endColorstr='#c5c1f4',GradientType=1 ); /* IE6-9 */}\\n\\n",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "My heart",
+      "text": "<<if $species is \"harpself\">>She carefully cuts your three central ribstrings, calm hand on your column, and<<endif>><<if $species is \"coiler\">>She separates your anterior scales, watching for trapticks, and<<endif>><<if $species is \"ratkoin\">>She parts your chestfur and<<endif>> lifts your heart to the [[sky|nebula]].\\n\\nYou think: it glows like a heart should glow.",
+      "links": [
+        {
+          "text": "sky",
+          "destination": {
+            "name": "nebula",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "style dark",
+      "text": "\\n\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n#passages{\\ncolor: rgb(255, 255, 255);\\ndisplay: block;\\nfont-family: Verdana, sans-serif;\\nfont-size: 20px !important;\\nheight: 455px;\\nline-height: 35px;\\ntext-align: left;\\ntext-shadow: rgb(255, 255, 255) 0px 0px 6px !important;\\nvisibility: visible;\\nmargin:200px;\\nborder-left:0px !important;\\n}\\n\\n\\na {color:white!important;}\\n\\na:hover {color:WHITE !important;text-shadow: 0 0 10px WHITE;\\ncolor:#c61a1a;text-decoration:none !important;}\\n\\n\\n\\nbody{background-color:black !important;}\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}\\n\\n\\n",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "style vesma",
+      "text": "::-moz-selection { /* Code for Firefox */\\n    color: black;\\n    background: none;\\n}\\n\\n::selection {\\n    color: black;\\n    background: none;\\n}\\n\\n\\nbody {\\nbackground: rgb(15,79,67);\\nbackground: -moz-linear-gradient(top, rgba(15,79,67,1) 0%, rgba(62,135,125,1) 18%, rgba(35,48,58,1) 59%, rgba(92,150,69,1) 86%);\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(15,79,67,1)), color-stop(18%,rgba(62,135,125,1)), color-stop(59%,rgba(35,48,58,1)), color-stop(86%,rgba(92,150,69,1)));\\nbackground: -webkit-linear-gradient(top, rgba(15,79,67,1) 0%,rgba(62,135,125,1) 18%,rgba(35,48,58,1) 59%,rgba(92,150,69,1) 86%);\\nbackground: -o-linear-gradient(top, rgba(15,79,67,1) 0%,rgba(62,135,125,1) 18%,rgba(35,48,58,1) 59%,rgba(92,150,69,1) 86%);\\nbackground: -ms-linear-gradient(top, rgba(15,79,67,1) 0%,rgba(62,135,125,1) 18%,rgba(35,48,58,1) 59%,rgba(92,150,69,1) 86%);\\nbackground: linear-gradient(to bottom, rgba(15,79,67,1) 0%,rgba(62,135,125,1) 18%,rgba(35,48,58,1) 59%,rgba(92,150,69,1) 86%);\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f4f43', endColorstr='#5c9645',GradientType=0 );\\n    background-attachment:fixed;\\n\\n\\n}\\n\\n\\n\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n#passages{\\ncolor: rgb(255, 255, 255);\\ndisplay: block;\\nfont-family: Verdana, sans-serif;\\nfont-size: 20px !important;\\nheight: 455px;\\nline-height: 35px;\\ntext-align: left;\\ntext-shadow: rgb(255, 255, 255) 0px 0px 6px !important;\\nvisibility: visible;\\nmargin:200px;\\nborder-left:0px !important;\\n}\\n\\n\\na {color:white!important;}\\n\\na:hover {color:WHITE !important;text-shadow: 0 0 10px WHITE;\\ncolor:#c61a1a;text-decoration:none !important;}\\n\\n\\n",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "style sapitir",
+      "text": "::-moz-selection { /* Code for Firefox */\\n    color: black;\\n    background: none;\\n}\\n\\n::selection {\\n    color: black;\\n    background: none;\\n}\\n\\nbody {\\nbackground: rgb(242,230,0);\\nbackground: -moz-linear-gradient(top, rgba(242,230,0,1) 1%, rgba(224,138,0,1) 17%, rgba(193,0,45,1) 34%, rgba(0,3,201,1) 65%, rgba(0,3,201,1) 65%, rgba(177,216,237,1) 99%);\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(242,230,0,1)), color-stop(17%,rgba(224,138,0,1)), color-stop(34%,rgba(193,0,45,1)), color-stop(65%,rgba(0,3,201,1)), color-stop(65%,rgba(0,3,201,1)), color-stop(99%,rgba(177,216,237,1)));\\nbackground: -webkit-linear-gradient(top, rgba(242,230,0,1) 1%,rgba(224,138,0,1) 17%,rgba(193,0,45,1) 34%,rgba(0,3,201,1) 65%,rgba(0,3,201,1) 65%,rgba(177,216,237,1) 99%);\\nbackground: -o-linear-gradient(top, rgba(242,230,0,1) 1%,rgba(224,138,0,1) 17%,rgba(193,0,45,1) 34%,rgba(0,3,201,1) 65%,rgba(0,3,201,1) 65%,rgba(177,216,237,1) 99%);\\nbackground: -ms-linear-gradient(top, rgba(242,230,0,1) 1%,rgba(224,138,0,1) 17%,rgba(193,0,45,1) 34%,rgba(0,3,201,1) 65%,rgba(0,3,201,1) 65%,rgba(177,216,237,1) 99%);\\nbackground: linear-gradient(to bottom, rgba(242,230,0,1) 1%,rgba(224,138,0,1) 17%,rgba(193,0,45,1) 34%,rgba(0,3,201,1) 65%,rgba(0,3,201,1) 65%,rgba(177,216,237,1) 99%);\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2e600', endColorstr='#b1d8ed',GradientType=0 );\\n    background-attachment:fixed;\\n\\n}\\n\\n\\n\\n\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n#passages{\\ncolor: rgb(255, 255, 255);\\ndisplay: block;\\nfont-family: Verdana, sans-serif;\\nfont-size: 20px !important;\\nheight: 455px;\\nline-height: 35px;\\ntext-align: left;\\ntext-shadow: rgb(255, 255, 255) 0px 0px 6px !important;\\nvisibility: visible;\\nmargin:200px;\\nborder-left:0px !important;\\n}\\n\\n\\na {color:white!important;}\\n\\na:hover {color:WHITE !important;text-shadow: 0 0 10px WHITE;\\ncolor:#c61a1a;text-decoration:none !important;}",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "others",
+      "text": "Supplicants are gathered at the platforms, begging for the chance to be allowed to sell their memories for scraps of food. Some have killed themselves with the poisonous thistles that grow along the water, perhaps preferring a death with the memories of their loved ones intact to a life with no knowledge of their relatives and friends. Their bodies are angrily dragged into the shallows and hidden from sight by those who fear their already scant memories being polluted by crass imagery.\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "style ormigau",
+      "text": "::-moz-selection { /* Code for Firefox */\\n    color: black;\\n    background: none;\\n}\\n\\n::selection {\\n    color: black;\\n    background: none;\\n}\\n\\n\\nbody {\\nbackground: rgb(56,56,56);\\nbackground: -moz-linear-gradient(top, rgba(56,56,56,1) 0%, rgba(43,35,53,1) 74%, rgba(23,20,25,1) 100%);\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,56,56,1)), color-stop(74%,rgba(43,35,53,1)), color-stop(100%,rgba(23,20,25,1)));\\nbackground: -webkit-linear-gradient(top, rgba(56,56,56,1) 0%,rgba(43,35,53,1) 74%,rgba(23,20,25,1) 100%);\\nbackground: -o-linear-gradient(top, rgba(56,56,56,1) 0%,rgba(43,35,53,1) 74%,rgba(23,20,25,1) 100%);\\nbackground: -ms-linear-gradient(top, rgba(56,56,56,1) 0%,rgba(43,35,53,1) 74%,rgba(23,20,25,1) 100%);\\nbackground: linear-gradient(to bottom, rgba(56,56,56,1) 0%,rgba(43,35,53,1) 74%,rgba(23,20,25,1) 100%);\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', endColorstr='#171419',GradientType=0 );\\n    background-attachment:fixed;\\n\\n}\\n\\n\\n\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n#passages{\\ncolor: rgb(255, 255, 255);\\ndisplay: block;\\nfont-family: Verdana, sans-serif;\\nfont-size: 20px !important;\\nheight: 455px;\\nline-height: 35px;\\ntext-align: left;\\ntext-shadow: rgb(255, 255, 255) 0px 0px 6px !important;\\nvisibility: visible;\\nmargin:200px;\\nborder-left:0px !important;\\n}\\n\\n\\na {color:white!important;}\\n\\na:hover {color:WHITE !important;text-shadow: 0 0 10px WHITE;\\ncolor:#c61a1a;text-decoration:none !important;}",
+      "links": []
+    },
+    {
+      "pid": 11,
+      "name": "uh oh",
+      "text": "Ten dunes down, a twanging flash, a stinging sensation, and you [[sink]] to the sand.",
+      "links": [
+        {
+          "text": "sink",
+          "destination": {
+            "name": "sink",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "actions",
+      "text": "<<if $day lt $travel_time>>[[Press onward|base][$day += 1]]<<endif>>",
+      "links": [
+        {
+          "text": "Press onward",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Start",
+      "text": "<h1>Ruiness</h1>\\n[[Begin|plume]]\\n\\n[[Credits]]\\n\\n[[Notes]]",
+      "links": [
+        {
+          "text": "Begin",
+          "destination": {
+            "name": "plume",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Notes",
+          "destination": {
+            "name": "Notes",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "webfont",
+      "text": "WebFontConfig = {\\n    google: { families: [ 'Open+Sans:400,700:latin' ] }\\n  };\\n  (function() {\\n    var wf = document.createElement('script');\\n    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +\\n      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';\\n    wf.type = 'text/javascript';\\n    wf.async = 'true';\\n    var s = document.getElementsByTagName('script')[0];\\n    s.parentNode.insertBefore(wf, s);\\n  })();",
+      "links": []
+    },
+    {
+      "pid": 15,
+      "name": "ever",
+      "text": "and there are [[vessels|camp]]",
+      "links": [
+        {
+          "text": "vessels",
+          "destination": {
+            "name": "camp",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "style nebula",
+      "text": "\\n\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n#passages{\\ncolor: rgb(255, 255, 255);\\ndisplay: block;\\nfont-family: Verdana, sans-serif;\\nfont-size: 20px !important;\\nheight: 455px;\\nline-height: 35px;\\ntext-align: left;\\ntext-shadow: rgb(255, 255, 255) 0px 0px 6px !important;\\nvisibility: visible;\\nmargin:200px;\\nborder-left:0px !important;\\n}\\n\\n\\na {color:white!important;}\\n\\na:hover {color:WHITE !important;text-shadow: 0 0 10px WHITE;\\ncolor:#c61a1a;text-decoration:none !important;}\\n\\n\\n\\nbody{background-color:black;background-image:url('nebula_pixel.jpg') !important;    background-size: contain;\\n    background-repeat: no-repeat;    background-attachment: fixed;\\n    background-position: center;}\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}\\n\\n\\n",
+      "links": []
+    },
+    {
+      "pid": 17,
+      "name": "pass",
+      "text": "Your thoughts are whetted upon arising. The borders of a place are like flint crossed with wine--a distinct flavor of hardness.\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Notes",
+      "text": "It can help to write down who has gone where.\\n\\nWhen italics appear, it usually means you have gained something.\\n\\nWhen you have visited a place at least once, you can travel to it again quickly through your chart.\\n\\n[[Return|Start]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "Start",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "collects",
+      "text": "<<if $species is \"coiler\">>Another wing sweeps down, dragonlike this time, and gifts you with an ecstasy scale. You remove a generic scale and place the other in its stead. Slithering will glow.<<endif>><<if $species is \"harpself\">>Another wing comes down, carved wood stretched with silk, and gifts you with an ecstasy string. You pluck yourself and the music soaks the air rippling purple blue.<<endif>><<if $species is \"ratkoin\">>Another wing flutters down, leathery now, and gifts you with an ecstasy fang. You brux and dreamsparks spit from your mouth.<<endif>>\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "flavor",
+      "text": "<<if $day gte $travel_time>>You have [[arrived|$destination]].<<else>>The dronesun is <<print either(\"shrouded in bismuthclouds\",\"emanating\",\"low and green\",\"burning\",\"in aureola\",\"eclipsed\",\"dappling\",\"shedding\",\"spotting\")>>.\\n<<print either(\"Bifurgid\",\"Vellid\",\"Kerosinal\",\"Arrhythmic\",\"Whorled\",\"Bituminous\",\"Latent\",\"Brumous\",\"Byssine\",\"Boniform\",\"Ashen\",\"Nephid\",\"Susurrus\",\"Anguine\",\"Orthian\",\"Obnubilate\",\"Acrid\")>> <<print either(\"grass\",\"rains\",\"swarms\",\"winds\",\"storms\",\"breeze\",\"zephyrs\",\"spores\",\"geysers\")>>.\\n<<set $r = random(0,3)>><<if $r is 0 and $class is \"dustrunner\">><<set $r = random(1,3)>><<endif>><<if $r is 0 and $class neq \"dustrunner\">><<if $steed is \"skullipede\">><<print either(\"Skullipede adds another skull to itself.\",\"Skullipede wriggles its skulls.\",\"Skullipede's tendrils snatch food from your hand.\",\"Skullipede curls up into a spiral.\",\"Click clack of the rippling skulls.\")>><<if $steed is \"bantam\">><<print either(\"Bantam lays a ghost egg and it floats into the sky.\",\"Bantam clucks roaringly.\",\"Bantam hides its head under its wing.\",\"Bantam glides across a ravine.\",\"Bantam preens its feathers.\",\"Bantam iridesces.\",\"Bantam scrapes the earth with its claws.\")>><<endif>><<endif>><<if $steed is \"lizardhorse\">><<print either(\"Lizardhorse whinnies as it basks in the sun.\",\"Lizardhorse crawls up the cliff.\",\"Lizardhorse becomes sluggish.\",\"Lizardhorse flicks its tongue.\",\"Lizardhorse eats a flycube from your hand.\",\"Lizardhorse eats a sugarcricket.\")>><<endif>><<endif>>////<<if $r is 1>><<if $species is \"rat\">><<print either(\"You travel a crevice field, the better to avoid the shadows that swoop through the sky.\",\"The sound of your brux and the trudge of your claws.\",\"Tail flicking from side to side.\",\"Bruxing against the pestilent dust.\",\"Incisigilors purify the carrion dregs of tonight's dinner.\",\"Combing fur.\",\"Daubing fur with ratkoin pride-sigils.\")>><<endif>><<if $species is \"harpself\">><<print either(\"You catch the light on your strands.\",\"Glimmerself.\",\"Strumself.\",\"The wind plays a song through your ribstrings.\",\"Eyelets water against the dust.\",\"You weave notes into the air to catch the sand.\",\"You pluck a compass tune and the sound replies from your destination.\",\"You oil your strings with druklub fat and fall asleep.\")>><<endif>><<if $species is \"coiler\">><<print either(\"You slither under a rock and hibernate.\",\"You polish your scales.\",\"You mimic the shape for sleep.\",\"Your scales hiss tetratonic.\",\"Your seeing scale traces the ruin of the old empire road, guiding you by a shattered spine.\",\"Common scale cycled.\",\"Venom calibrated.\",\"Scales shuffled.\")>><<endif>><<endif>>////<<if $r is 2>><<if $class is \"zealot\">><<print either(\"You paint prayer sigils on your hands.\",\"You put your palms on your face and feel the warmth of your prayer sigils.\",\"You set up hex-wards before falling asleep.\",\"You gouge a deeper groove into your faith sigil.\",\"Last night's prayer still warms you.\",\"You prepare yourself for obliteration.\",\"You meditate until your prayer sigils are painting the air with their shapes.\",\"You draw auto-flagellate runes on your back and feel their rhythmic, slashing pulse.\")>><<endif>><<if $class is \"dustrunner\">><<print either(\"You leap fluidly from crag to crag.\",\"The run-runes on your limbs glow as you pick up speed.\",\"Your legs throb to bursting as you clear a chasm.\",\"The dust in your wake rises like a wall.\",\"You tune one of your run-runes.\",\"You drain the velocity sludge building up in your ankle sigils.\",\"Your ankles leave an after-trail of orange from the sigils like baby comets chasing after you.\",\"Your runetinas single out obstacles from miles away.\")>><<endif>><<if $class is \"scavenger\">><<print either(\"You find a crumbling hut to sleep in.\",\"You creep near a colossa's balefire and sleep on the cusp of the heat.\",\"You piece together crude shelter from the debris of a crashed airship. The night winds will not bite so hard.\",\"A forever-convoy dumped its trash here. You pull it over your body and sleep.\",\"You pull your hood tighter as the sand rises.\",\"Your rags have endured worst storms than this.\",\"You drink water from a dowsing straw.\",\"The dust repelling sigils sewn into your rags are threadbare.\")>><<endif>><<if $class is \"haruspex\">><<print either(\"You catch a critter and divine direction from its guts.\",\"You vent the meta-blood sink on your dagger.\",\"You sharpen your dagger with a belly-flint.\",\"You dream of perfect golden guts.\",\"You lay a divining edge.\",\"In the reflection of your dagger you see the way to your destination.\")>><<endif>><<endif>><<endif>>",
+      "links": []
+    },
+    {
+      "pid": 21,
+      "name": "sapitir",
+      "text": "Sapitir, city of glory.<<set $sapitir_visited = true>>\\n\\n<<if $class is \"scavenger\">>Hunched in an alleyway, sifting through garbage, you see a scene unfold on the street. They are insulting and driving away a traveler with sticks. A member of the Keycarin, by their ribbons and swathes. The [[hated]] rimclans.<<endif>><<if $class is \"haruspex\">>You are honored with a basin of darkmilk and taken to the dominant church. You visit each of the pods in the prayerpits and wish them a safe eruption.\\n\\nThe leaders of the city display their pleasure by extending a single finger into the visible light spectrum.<<endif>><<if $class is \"zealot\">><<if $dest_list.indexOf(\"ormigau\") gte 0>>You join the maidens in pulling flowers from the poison water of the drowned garden. You braid them into whips, your fingers moving faster as they recall the pattern you plied every day in your youth.<<else>>You visit the mound by Harcoma and flagellate yourself with one of the flower whips daily woven by [[gloved maidens]]. The soft slap of plant matter as petals summon unearthly rashes with their poison.<<endif>><<endif>><<if $class is \"dustrunner\">>You deliver a message to the seventh seeming pod in prayerpit nine. \"You will have a mother in ten years.\"\\n\\nSilence.<<endif>>\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]",
+      "links": [
+        {
+          "text": "hated",
+          "destination": {
+            "name": "hated",
+            "pid": 29
+          }
+        },
+        {
+          "text": "gloved maidens",
+          "destination": {
+            "name": "gloved maidens",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "species",
+      "text": "A <<$class>>...\\n\\n<<cyclinglink $species \"ratkoin\" \"harpself\" \"coiler\">>\\n\\n<<if $class is \"dustrunner\">>[[and...|char_result]]<<else>>[[and...|steed]]<<endif>>",
+      "links": [
+        {
+          "text": "and...",
+          "destination": {
+            "name": "char_result",
+            "pid": 36
+          }
+        },
+        {
+          "text": "and...",
+          "destination": {
+            "name": "steed",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Purge vessels",
+      "text": "They crumple like paper in an unseen fire.\\n\\n[[Deplume|Escalate]]",
+      "links": [
+        {
+          "text": "Deplume",
+          "destination": {
+            "name": "Escalate",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "character_creation",
+      "text": "I'm a...\\n\\n<<if $zealot is 0 and $haruspex is 0>><<cyclinglink $class \"scavenger\" \"dustrunner\">><<endif>><<if $zealot is 1 and $haruspex is 0>><<cyclinglink $class \"zealot\" \"scavenger\" \"dustrunner\">><<endif>><<if $zealot is 1 and $haruspex is 1>><<cyclinglink $class \"haruspex\" \"zealot\" \"scavenger\" \"dustrunner\">><<endif>><<if $zealot is 0 and $haruspex is 1>><<cyclinglink $class \"haruspex\" \"scavenger\" \"dustrunner\">><<endif>>\\n\\n[[And...|amend]]",
+      "links": [
+        {
+          "text": "And...",
+          "destination": {
+            "name": "amend",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "despised",
+      "text": "Seditious beast.\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "stats",
+      "text": "Day <<$day>>",
+      "links": []
+    },
+    {
+      "pid": 27,
+      "name": "cycling",
+      "text": "version.extensions[\"cyclinglinkMacro\"]={major:3,minor:1,revision:1};macros.cyclinglink={handler:function(a,b,c){var l=Wikifier.createInternalLink(a,null);\\nl.className=\"internalLink cyclingLink\";l.setAttribute(\"data-cycle\",0);var v=\"\";var end=false;\\nif(c.length&&c[0][0]==\"$\"){v=c[0].slice(1);c.shift();}if(c[c.length-1]==\"end\"){end=true;\\nc.pop();}var h=state.history[0].variables;for(var i=0;i<c.length;i++){var on=(i==Math.max(c.indexOf(h[v]),0));\\nvar d=insertElement(null,\"span\",null,\"cyclingLink\"+((on)?\"En\":\"Dis\")+\"abled\");if(on){h[v]=c[ i ];\\nl.setAttribute(\"data-cycle\",i);}insertText(d,c[ i ]);l.appendChild(d);}l.onclick=function(){var t=this.childNodes;\\nvar d=\"cyclingLink\";var u=this.getAttribute(\"data-cycle\")-0;var m=t.length;if(end&&u==m-2){var n=this.removeChild(t[u+1]);\\nn.className=d+\"End\";this.parentNode.replaceChild(n,this);return;}t[u].classList.toggle(d+\"Enabled\");\\nt[u].classList.toggle(d+\"Disabled\");u=(u+1)%m;if(v){h[v]=c[u];}t[u].classList.toggle(d+\"Enabled\");\\nt[u].classList.toggle(d+\"Disabled\");this.setAttribute(\"data-cycle\",u);};},init:function(){addStyle(\".cyclingLinkDisabled { display:none; } \");\\n}};macros.cyclinglink.init();",
+      "links": []
+    },
+    {
+      "pid": 28,
+      "name": "Escalate",
+      "text": "Inflorating possible gospel: [[Purge vessels]] | [[Fill vessels]] | [[Influence vessels]]\\n\\n[[Deplume|Ascend]]",
+      "links": [
+        {
+          "text": "Purge vessels",
+          "destination": {
+            "name": "Purge vessels",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Fill vessels",
+          "destination": {
+            "name": "Fill vessels",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Influence vessels",
+          "destination": {
+            "name": "Influence vessels",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Deplume",
+          "destination": {
+            "name": "Ascend",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "hated",
+      "text": "But who decides where the rim is, and where the center is? <<if $species is \"coiler\">>You hiss a hex on these disrespectful cityhavers.<<endif>><<if $species is \"harpself\">>You strum a hex on these ignorant structure-players.<<endif>><<if $species is \"ratkoin\">>You brux a hex on these furless, fleshy creatures who wear their city like a shell over their shame.<<endif>>\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]\\n",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "travel",
+      "text": "<<if $dest_list.indexOf($destination) gte 0 or $secret_list.indexOf($destination) gte 0>><<if $destination is \"\">>Silence is already beside you.<<else>>You head toward <<titlecase $destination>>.\\n\\n[[K|base]]<<endif>><<elseif $destination is \"ruiness\">>You are constantly arriving at yourself, forever and always.\\n\\n[[K|camp]]<<else>>You do not know this place.\\n\\n[[K|camp]]<<endif>>\\n<<silently>>\\n\\n<<if $destination is \"kibath\">>\\n<<set $travel_time = 3>>\\n<<endif>>\\n\\n<<if $destination is \"sapitir\">>\\n<<set $travel_time = 7>>\\n<<endif>>\\n\\n<<if $destination is \"amitor\">>\\n<<set $travel_time = 8>>\\n<<endif>>\\n\\n<<if $destination is \"ixa\">>\\n<<set $travel_time = 4>>\\n<<endif>>\\n\\n<<if $destination is \"porpentine\">>\\n<<set $travel_time = 4>>\\n<<endif>>\\n\\n<<if $destination is \"vesma\">>\\n<<set $travel_time = 4>>\\n<<endif>>\\n\\n<<if $destination is \"ormigau\">>\\n<<set $travel_time = 6>>\\n<<endif>>\\n\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "K",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        },
+        {
+          "text": "K",
+          "destination": {
+            "name": "camp",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "destination",
+      "text": "Where are you going?\\n\\n<<porpinput $destination>>\\n\\n[[There|travel]]\\n\\n<<set $day = 1>>\\n\\n<<silently>>\\n<<textinput $destination \"travel\" \"this place\">>\\n<<endsilently>>",
+      "links": [
+        {
+          "text": "There",
+          "destination": {
+            "name": "travel",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "decant",
+      "text": "Spectrum decanting. Hibernal infloration(100yrs). Demarcating forever.\\n\\n[[Sleep]]\\n\\n[[Deswirl|Ascend]]",
+      "links": [
+        {
+          "text": "Sleep",
+          "destination": {
+            "name": "Sleep",
+            "pid": 79
+          }
+        },
+        {
+          "text": "Deswirl",
+          "destination": {
+            "name": "Ascend",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "style porpentine",
+      "text": "::-moz-selection { /* Code for Firefox */\\n    color: black;\\n    background: none;\\n}\\n\\n::selection {\\n    color: black;\\n    background: none;\\n}\\n\\nbody {\\nbackground: rgb(252,236,252);\\nbackground: -moz-linear-gradient(top, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 38%, rgba(253,137,215,1) 67%, rgba(95,206,137,1) 89%);\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,236,252,1)), color-stop(38%,rgba(251,166,225,1)), color-stop(67%,rgba(253,137,215,1)), color-stop(89%,rgba(95,206,137,1)));\\nbackground: -webkit-linear-gradient(top, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 38%,rgba(253,137,215,1) 67%,rgba(95,206,137,1) 89%);\\nbackground: -o-linear-gradient(top, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 38%,rgba(253,137,215,1) 67%,rgba(95,206,137,1) 89%);\\nbackground: -ms-linear-gradient(top, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 38%,rgba(253,137,215,1) 67%,rgba(95,206,137,1) 89%);\\nbackground: linear-gradient(to bottom, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 38%,rgba(253,137,215,1) 67%,rgba(95,206,137,1) 89%);\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#5fce89',GradientType=0 );\\n    background-attachment:fixed;\\n\\n\\n}\\n\\n\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n#passages{\\ncolor: rgb(255, 255, 255);\\ndisplay: block;\\nfont-family: Verdana, sans-serif;\\nfont-size: 20px !important;\\nheight: 455px;\\nline-height: 35px;\\ntext-align: left;\\ntext-shadow: rgb(255, 255, 255) 0px 0px 6px !important;\\nvisibility: visible;\\nmargin:200px;\\nborder-left:0px !important;\\n}\\n\\n\\na {color:white!important;}\\n\\na:hover {color:WHITE !important;text-shadow: 0 0 10px WHITE;\\ncolor:#c61a1a;text-decoration:none !important;}",
+      "links": []
+    },
+    {
+      "pid": 34,
+      "name": "Credits",
+      "text": "image used and modified under [[CC Attribution-NonCommercial 2.0 Generic|https://creativecommons.org/licenses/by-nc/2.0/]], credit to [[Adam Block/Mount Lemmon SkyCenter/University of Arizona|http://skycenter.arizona.edu/]].\\n\\nThank you [[Colin Marc|http://colinmarc.com/]] and [[Leon Arnott|http://l.j-factor.com/]] for macros\\n\\n[[Return|Start]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "Start",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "Beacon",
+      "text": "Each arrangment of vessels fails to attract.\\n\\nEach cultural circuit fails to attract.\\n\\nWars and sacrifices burning like signal fires.\\n\\nNo sistrices.\\n\\n[[Deplume|Ascend]]",
+      "links": [
+        {
+          "text": "Deplume",
+          "destination": {
+            "name": "Ascend",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "char_result",
+      "text": "I'm a <<$class>> <<$species>>, <<$aspect>><<if $class is \"dustrunner\">>.<<else>>, riding a <<$steed>>.<<endif>>\\n\\n[[Yes|camp]]\\n\\n/%\\n<<remember $class>>\\n<<remember $species>>\\n<<remember $aspect>>\\n<<remember $steed>> %/",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "camp",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "But a spirit does come",
+      "text": "A wisp of purple-pink vapor unfurls through the darkness. Picks you up in its tendril. It smells like backwards falling rain.\\n\\nIt has [[one word|nebula]] for you:",
+      "links": [
+        {
+          "text": "one word",
+          "destination": {
+            "name": "nebula",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "between",
+      "text": "<<timedgoto \"camp\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "camp",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "StoryTitle",
+      "text": "Ruiness",
+      "links": []
+    },
+    {
+      "pid": 40,
+      "name": "gayrlish sacrifice",
+      "text": "A gelatinous thing that lives in the catacombs. One of four lifeforms designated by the Reagentcy as legal to sacrifice.\\n\\n[[Hmm]]",
+      "links": [
+        {
+          "text": "Hmm",
+          "destination": {
+            "name": "Hmm",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "temple",
+      "text": "<<if $haruspex is false>>You're watching someone explore the insides of an animal like a map. They look up and draw the curtain.\\n\\n//Haruspex are now wandering the world//<<set $haruspex = true>><<else>><<if $class is \"haruspex\">>You find the previous haruspex dead over a gutted animal.<<else>>The temple is silent.<<endif>><<endif>>\\n\\n<<if $class is \"haruspex\">>You conduct three cleansing rituals over their dagger before picking it up, then clean it in the fountain.\\n\\nThe one who must come will come. All you can do is [[wait|look]], like a clock hand waiting for another clock hand to coincide.<<endif>><<if $class is \"zealot\">>The haruspex steers you to the [[upper sanctum]].<<endif>><<if $class is \"dustrunner\">>As you spin to a halt, the crushing stillness of this place grows palpable. You attribute some portion of this silence to the fact that the lower temple is strewn with [[dead guards]].<<endif>><<if $class is \"scavenger\">>Someone has left out scraps of jelly on a bronze platter, left-overs from the [[gayrlish sacrifice]].<<if $species is \"ratkoin\">>You give them a nibble. They taste safe.<<endif>><<if $species is \"harpself\">>You grease your strings and strum health.<<endif>><<if $species is \"coiler\">>You swallow the jelly and the plate and enter the sleep of liquesatisfaction.<<endif>><<endif>>",
+      "links": [
+        {
+          "text": "wait",
+          "destination": {
+            "name": "look",
+            "pid": 67
+          }
+        },
+        {
+          "text": "upper sanctum",
+          "destination": {
+            "name": "upper sanctum",
+            "pid": 73
+          }
+        },
+        {
+          "text": "dead guards",
+          "destination": {
+            "name": "dead guards",
+            "pid": 53
+          }
+        },
+        {
+          "text": "gayrlish sacrifice",
+          "destination": {
+            "name": "gayrlish sacrifice",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Influence vessels",
+      "text": "Culture-pheromones dabbed like rat poison.\\n\\n[[Deplume|Escalate]]",
+      "links": [
+        {
+          "text": "Deplume",
+          "destination": {
+            "name": "Escalate",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "autolink",
+      "text": "(function(){version.extensions.autolinkMacro={major:1,minor:0,revision:0};\\nmacros.autolink={handler:function(g,e,f,b){function tagcontents(starttag,endtag,k){var a=b.source.slice(k),l=0,c=\"\";\\nfor(var i=0;i<a.length;i++){var w=endtag.length;if(a.substr(i,w)==endtag){if(l==0){b.nextMatch=k+i+w;\\nreturn c}else{l--;c+=a.charAt(i)}}else{if(a.substr(i,starttag.length)==starttag){l++\\n}c+=a.charAt(i)}}return\"\"}var k=b.source.indexOf(\">>\",b.matchStart)+2,d=tagcontents(\"<<\"+e,\"<<end\"+e+\">>\",k),bs=String.fromCharCode(92),re=new RegExp(\"([\"+bs+\"w-]+)\",\"g\"),words,len;\\ndo{words=re.exec(d);if(words&&tale.has(words[0])){len=words[0].length;\\nd=d.slice(0,words.index)+\"[[\"+words[0]+\"]]\"+d.slice(words.index+len);\\nre.lastIndex+=(len)}}while(words);new Wikifier(g,d)}};macros.endautolink={handler:function(){}}\\n}());",
+      "links": []
+    },
+    {
+      "pid": 44,
+      "name": "vesma",
+      "text": "Vesma, the stone sun, squats upon the earth, with no visible exits save for the sewage pouring from the base.<<set $vesma_visited = true>>\\n\\n<<if $class is \"dustrunner\">>You bring the purest, most exotic memories for the ones who live in Vesma. A wing comes and [[collects]] them from your mind with a translucent feather, its tender limb of extraction, fast as electric shock, gentle as a whisper.<<endif>><<if $class is \"zealot\">>You are turned away by the box-masked guards. Your kind is [[despised]] here.<<endif>><<if $class is \"scavenger\">>You wade through roiled past-mud, too rotten to be of use to anyone, and collect the fresh liquid memories bubbling from the pipes. Years from now their value will appreciate, as the places and people they refer to disappear.<<endif>><<if $class is \"haruspex\">>As one of the few lesser species who have entered Vesma, you know they gorge themselves on the memories of [[others]], and excrete them at the end of the day.<<endif>>\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]",
+      "links": [
+        {
+          "text": "collects",
+          "destination": {
+            "name": "collects",
+            "pid": 19
+          }
+        },
+        {
+          "text": "despised",
+          "destination": {
+            "name": "despised",
+            "pid": 25
+          }
+        },
+        {
+          "text": "others",
+          "destination": {
+            "name": "others",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "kibath",
+      "text": "Shadows lean long in Kibath.<<set $kibath_visited = true>>\\n\\n<<if $class is \"zealot\">>You pray at the mouth pillar like one would fan a flame with one's breath. The stone changes from dark green to dark magenta. It is shameful how pillars are neglected these days.<<endif>><<if $class is \"haruspex\">>You fought a pillar here once. It was a terrible battle, lasting several stoneseconds. Now the pillars are friends. Kind of.<<endif>><<if $class is \"dustrunner\">>You hand your message to the mouth pillar. It eats the message and spews ash into the sky.\\n\\n//To the zealot, the ash is brilliant light, a map seared on their retinas//<<set $zealot = 1>><<endif>><<if $class is \"scavenger\">><<if $dest_list.indexOf(\"ixa\") gte 0>>The luck grease on your arm is dried and flaking.<<else>>You grease your arm with luckgel and reach inside the mouth pillar and pull out a ring. The ring is partially digested.\\n\\nThis will fetch a high price in //Ixa//.<<set $dest_list.push(\"ixa\")>><<set $inv_list.push(\"Half-digested Ring\")>><<endif>><<endif>>\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "ixa",
+            "pid": 49
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "style ixa",
+      "text": "::-moz-selection { /* Code for Firefox */\\n    color: black;\\n    background: none;\\n}\\n\\n::selection {\\n    color: black;\\n    background: none;\\n}\\n\\nbody {\\nbackground: rgb(255,197,120);\\nbackground: -moz-linear-gradient(top, rgba(255,197,120,1) 0%, rgba(255,197,120,1) 15%, rgba(68,13,44,1) 36%, rgba(48,5,27,1) 67%, rgba(0,0,0,1) 100%);\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,197,120,1)), color-stop(15%,rgba(255,197,120,1)), color-stop(36%,rgba(68,13,44,1)), color-stop(67%,rgba(48,5,27,1)), color-stop(100%,rgba(0,0,0,1)));\\nbackground: -webkit-linear-gradient(top, rgba(255,197,120,1) 0%,rgba(255,197,120,1) 15%,rgba(68,13,44,1) 36%,rgba(48,5,27,1) 67%,rgba(0,0,0,1) 100%);\\nbackground: -o-linear-gradient(top, rgba(255,197,120,1) 0%,rgba(255,197,120,1) 15%,rgba(68,13,44,1) 36%,rgba(48,5,27,1) 67%,rgba(0,0,0,1) 100%);\\nbackground: -ms-linear-gradient(top, rgba(255,197,120,1) 0%,rgba(255,197,120,1) 15%,rgba(68,13,44,1) 36%,rgba(48,5,27,1) 67%,rgba(0,0,0,1) 100%);\\nbackground: linear-gradient(to bottom, rgba(255,197,120,1) 0%,rgba(255,197,120,1) 15%,rgba(68,13,44,1) 36%,rgba(48,5,27,1) 67%,rgba(0,0,0,1) 100%);\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc578', endColorstr='#000000',GradientType=0 );\\n    background-attachment:fixed;\\n\\n\\n}\\n\\n\\n\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n#passages{\\ncolor: rgb(255, 255, 255);\\ndisplay: block;\\nfont-family: Verdana, sans-serif;\\nfont-size: 20px !important;\\nheight: 455px;\\nline-height: 35px;\\ntext-align: left;\\ntext-shadow: rgb(255, 255, 255) 0px 0px 6px !important;\\nvisibility: visible;\\nmargin:200px;\\nborder-left:0px !important;\\n}\\n\\n\\na {color:white!important;}\\n\\na:hover {color:WHITE !important;text-shadow: 0 0 10px WHITE;\\ncolor:#c61a1a;text-decoration:none !important;}",
+      "links": []
+    },
+    {
+      "pid": 47,
+      "name": "titlecase",
+      "text": "version.extensions[\"caseMacros\"] = { major: 1, minor: 0, revision: 0 };\\nmacros[\"lowercase\"] = macros[\"uppercase\"] = macros[\"titlecase\"] =\\n{\\n\\thandler: function(place, macroName, params, parser)\\n\\t{\\n\\t\\tif (parser.fullArgs().trim() === \"\")\\n\\t\\t{\\n\\t\\t\\tthrowError(place, \"<<\" + macroName + \">>: no text specified\");\\n\\t\\t\\treturn;\\n\\t\\t}\\n\\n\\t\\ttry\\n\\t\\t{\\n\\t\\t\\tvar result = eval(parser.fullArgs());\\n\\t\\t\\tswitch (macroName)\\n\\t\\t\\t{\\n\\t\\t\\tcase \"lowercase\":\\n\\t\\t\\t\\tresult = result.toLowerCase();\\n\\t\\t\\t\\tbreak;\\n\\t\\t\\tcase \"uppercase\":\\n\\t\\t\\t\\tresult = result.toUpperCase();\\n\\t\\t\\t\\tbreak;\\n\\t\\t\\tcase \"titlecase\":\\n\\t\\t\\t\\tresult = result.slice(0, 1).toUpperCase() + result.slice(1).toLowerCase();\\n\\t\\t\\t\\tbreak;\\n\\t\\t\\t}\\n\\n\\t\\t\\tnew Wikifier(place, result);\\n\\t\\t}\\n\\t\\tcatch (e)\\n\\t\\t{\\n\\t\\t\\tthrowError(place, \"<<\" + macroName + \">>: \" + e.message);\\n\\t\\t\\treturn;\\n\\t\\t}\\n\\t}\\n};",
+      "links": []
+    },
+    {
+      "pid": 48,
+      "name": "timed goto",
+      "text": "version.extensions.timedgotoMacro={major:1,minor:1,revision:0};macros[\"goto\"]=macros[\"timedgoto\"]={timer:null,handler:function(a,b,c,d){\\nfunction cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0;\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0;}}}throwError(a,s+\" isn't a CSS time unit\");\\nreturn 0;}var t,d,m,s;t=c[c.length-1];d=d.fullArgs();m=0;if(b!=\"goto\"){d=d.slice(0,d.lastIndexOf(t));\\nm=cssTimeUnit(t);}d=eval(Wikifier.parse(d));if(d+\"\"){if(this.timer){clearTimeout(this.timer);\\n}s=state.history[0].passage.title;this.timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a);\\n}},m);}}};\\n",
+      "links": []
+    },
+    {
+      "pid": 49,
+      "name": "ixa",
+      "text": "The tunnel markets of Ixa.<<set $ixa_visited = true>>\\n\\n<<if $class is \"zealot\">>So crass, to apply value to all of these things. As if anything good could survive value.\\n\\n<<if $species is \"ratkoin\">>Still, your rat's nature hums at the sight of all these baubles.<<endif>><<if $species is \"harpself\">>You play a little song, a random improvisation, and watch it dissolve into the aether. It can never be given a price, and it will be that much richer in your memory.<<endif>><<if $species is \"coiler\">>You want to make a pun about scales, but decide to sleep instead. The tunnels are warm, like the [[broodcluster]] was warm.<<endif>>\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]<<endif>><<if $class is \"haruspex\">>You try out a variety of sacrificial knives. One of them can cut without breaking skin. Another turns blood to doves, doves spurting from the throat.\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]<<endif>><<if $class is \"scavenger\">><<if $inv_list.indexOf(\"Half-digested Ring\") gte 0>>You sell the ring at the end of a dark tunnel.<<set $inv_list.splice($inv_list.indexOf(\"Half-digested Ring\"),1)>>\\n\\nThe flesh pipe dispenses [[5 names]], then dies.<<else>>This is the worst place to scavenge. Trash with a price tag. <<if $species is \"ratkoin\">>\\n\\nBut you are hungry. You buy a memory of cheese to tide you over.<<endif>><<if $species is \"harpself\">>\\n\\nYou guard your strings jealously. Plenty of cut-purses in the tunnels.<<endif>><<if $species is \"coiler\">>\\n\\nBut your glimpsing scales find outcast trinkets scattered in the sand near the entrance. They must be [[pricecursed]].<<endif>> \\n\\n[[Return|base][$destination = \"camp\";$day = 1]]<<endif>><<endif>><<if $class is \"dustrunner\">>You drop off a shipment of <<print either(\"vialed nightmares\",\"distilled gravity\",\"amethystles\")>>. Capillary merchantoids accept it and dispense payment. You feel the payment enter your <<print either(\"bones\",\"spine\",\"hair\")>><<if $dest_list.indexOf(\"sapitir\") gte 0>>: a <<print either(\"coin\",\"beetle\",\"cup\")>> of <<print either(\"azure-mercury\",\"cloud-ward\",\"sigil scrapings\")>>.<<else>>\\n\\nThe name, //Sapitir//.<<set $dest_list.push(\"sapitir\")>><<endif>>\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]<<endif>>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "sapitir",
+            "pid": 21
+          }
+        },
+        {
+          "text": "broodcluster",
+          "destination": {
+            "name": "broodcluster",
+            "pid": 76
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        },
+        {
+          "text": "5 names",
+          "destination": {
+            "name": "5 names",
+            "pid": 71
+          }
+        },
+        {
+          "text": "pricecursed",
+          "destination": {
+            "name": "pricecursed",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Fill vessels",
+      "text": "Dust of your spectrum fills their forms.\\n\\n[[Deplume|Escalate]]",
+      "links": [
+        {
+          "text": "Deplume",
+          "destination": {
+            "name": "Escalate",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "dusty_chart",
+      "text": "I'm a...\\n\\n<<if $zealot is 0 and $haruspex is 0>><<cyclinglink $class \"scavenger\" \"dustrunner\">><<endif>><<if $zealot is 1 and $haruspex is 0>><<cyclinglink $class \"zealot\" \"scavenger\" \"dustrunner\">><<endif>><<if $zealot is 1 and $haruspex is 1>><<cyclinglink $class \"haruspex\" \"zealot\" \"scavenger\" \"dustrunner\">><<endif>><<if $zealot is 0 and $haruspex is 1>><<cyclinglink $class \"haruspex\" \"scavenger\" \"dustrunner\">><<endif>>\\n\\n[[And...|amend]]",
+      "links": [
+        {
+          "text": "And...",
+          "destination": {
+            "name": "amend",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Satchel",
+      "text": "Inside your satchel...\\n\\n<<if $inv_list gt 0>><<$inv_list.length == 1 ? $inv_list[0] : [ $inv_list.slice(0, $inv_list.length - 1).join(\", \"), $inv_list[$inv_list.length - 1] ].join(\" and \")>><<else>>Nothing.<<endif>>\\n\\n[[K|camp]]",
+      "links": [
+        {
+          "text": "K",
+          "destination": {
+            "name": "camp",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "dead guards",
+      "text": "You've been to enough burnt outposts, holding a pack of mail that no longer has a destination, to know the signs of an Elgr attack. The geometric wounds, the gouges in the stone where its tines appeared (that planar scuttle like a stuttering storm of knives).\\n\\nYou drop your package, just a sack full of dead paper and dead names, and leave the way you came.\\n\\n[[Return|uh oh]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "uh oh",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "chart",
+      "text": "On this paper is written...\\n\\n......{{{^^^^^^^^^^^}}}.........\\n....{{{^^^}}}<<if $amitor_visited is true and $dest_list.indexOf(\"amitor\") gte 0>>[[amitor]]<<elseif $dest_list.indexOf(\"amitor\") gte 0 and $amitor_visited is false>>amitor<<else>>............<<endif>>{{{^^^}}}.........\\n...........................\\n..........<<if $sapitir_visited is true and $dest_list.indexOf(\"sapitir\") gte 0>>[[sapitir]]<<elseif $dest_list.indexOf(\"sapitir\") gte 0 and $sapitir_visited is false>>sapitir<<else>>............<<endif>>.........\\n.............................\\n.........^.................\\n....^..............<<if $ormigau_visited is true and $dest_list.indexOf(\"ormigau\") gte 0>>[[ormigau]]<<elseif $dest_list.indexOf(\"ormigau\") gte 0 and $ormigau_visited is false>>ormigau<<else>>............<<endif>>...\\n..........<<if $ixa_visited is true and $dest_list.indexOf(\"ixa\") gte 0>>[[ixa]]<<elseif $dest_list.indexOf(\"ixa\") gte 0 and $ixa_visited is false>>ixa<<else>>............<<endif>>.............\\n.....{{{^^}}}..^..........^.......\\n...........<<if $kibath_visited is true and $dest_list.indexOf(\"kibath\") gte 0>>[[kibath]]<<elseif $dest_list.indexOf(\"kibath\") gte 0 and $kibath_visited is false>>kibath<<else>>............<<endif>>...........\\n.........X.................\\n.....o........o........<<if $vesma_visited is true and $dest_list.indexOf(\"vesma\") gte 0>>[[vesma]]<<elseif $dest_list.indexOf(\"vesma\") gte 0 and $vesma_visited is false>>vesma<<else>>............<<endif>>.........\\n.......o...oo.....o..............\\n.....o..<<if $porpentine_visited is true and $dest_list.indexOf(\"porpentine\") gte 0>>[[porpentine]]<<elseif $dest_list.indexOf(\"porpentine\") gte 0 and $porpentine_visited is false>>porpentine<<else>>............<<endif>>...o...o...........\\n\\n[[K|camp]]",
+      "links": [
+        {
+          "text": "amitor",
+          "destination": {
+            "name": "amitor",
+            "pid": 82
+          }
+        },
+        {
+          "text": "sapitir",
+          "destination": {
+            "name": "sapitir",
+            "pid": 21
+          }
+        },
+        {
+          "text": "ormigau",
+          "destination": {
+            "name": "ormigau",
+            "pid": 62
+          }
+        },
+        {
+          "text": "ixa",
+          "destination": {
+            "name": "ixa",
+            "pid": 49
+          }
+        },
+        {
+          "text": "kibath",
+          "destination": {
+            "name": "kibath",
+            "pid": 45
+          }
+        },
+        {
+          "text": "vesma",
+          "destination": {
+            "name": "vesma",
+            "pid": 44
+          }
+        },
+        {
+          "text": "porpentine",
+          "destination": {
+            "name": "porpentine",
+            "pid": 61
+          }
+        },
+        {
+          "text": "K",
+          "destination": {
+            "name": "camp",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "gloved maidens",
+      "text": "One of them approaches you at the end of the day, when your back is the color of a rotten rainbow.\\n\\n\"It is not safe to let the final name enter this city. Go to //Ormigau//. We have it there.\" She saddles your <<$steed>> and smiles.\\n\\n\"We are envious of your sacrifice! Safe journeys!\"\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]<<set $dest_list.push(\"ormigau\")>>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "ormigau",
+            "pid": 62
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "base",
+      "text": "<<if $destination is \"camp\">>You go [[back|camp]] the way you came.<<else>><<display \"stats\">>\\n\\n<<display \"flavor\">>\\n\\n<<display \"actions\">><<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "stats",
+            "pid": 26
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "flavor",
+            "pid": 20
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "actions",
+            "pid": 12
+          }
+        },
+        {
+          "text": "back",
+          "destination": {
+            "name": "camp",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Hmm",
+      "text": "The torches are going out. The wind is rising but the sand is very still. Something is happening on the temple tower. A dagger raised to the sky.\\n\\nIn the distance, a streak of dust across the desert. Then a twang. The dust fades.\\n\\nThe sky is [[insistent|nebula]].",
+      "links": [
+        {
+          "text": "insistent",
+          "destination": {
+            "name": "nebula",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "sink",
+      "text": "The Elgr's tower observes you for awhile, then leaps into the horizon.\\n\\nIt is a clear sky, so your soul will not be caught by any malign spirits that may be roosting in the clouds. This is what you think as the orange, ensigilated blood drains from your calves.\\n\\n[[But a spirit does come]]",
+      "links": [
+        {
+          "text": "But a spirit does come",
+          "destination": {
+            "name": "But a spirit does come",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "input",
+      "text": "//requires jquery\\n \\nversion.extensions[\"porpInput\"] = { major: 1, minor: 0, revision: 0 };\\nmacros[\"porpinput\"] =\\n{\\n  handler: function(place, macroName, params, parser)\\n  {\\n    try\\n    {\\n      var variableName = params[0].substring(1),\\n      id = \"porpinput-\" + variableName;\\n     \\n      $(place).on('change', 'input#' + id, function(ev) {\\n        var v = $(this).val().toLowerCase();\\n        state.history[0].variables[variableName] = v;\\n      });\\n \\n      new Wikifier(place, '<input type=\"text\" class=\"porpinput\" id=\"' + id + '\"></input>');\\n    }\\n    catch (e)\\n    {\\n      throwError(place, \"<<\" + macroName + \">>: \" + e.message);\\n    }\\n  }\\n};",
+      "links": []
+    },
+    {
+      "pid": 60,
+      "name": "sistrices",
+      "text": "No wind of sisters. Forlorn spectrum.\\n\\n[[Deswirl|Ascend]]",
+      "links": [
+        {
+          "text": "Deswirl",
+          "destination": {
+            "name": "Ascend",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "porpentine",
+      "text": "Slimy canals fill this secluded valley. Soft, winding shapes thread through the emerald murk.<<set $porpentine_visited = true>><<set $dest_list.push(\"porpentine\")>>\\n\\n<<if $class is \"zealot\">>You feel your fervor draining here. As if the reasons for your struggle were suddenly base, low, petty things.<<endif>><<if $class is \"dustrunner\">>You skip around and spin through the muck, pirouetting until your skin is glistening. Your laughter echoes through the dripping canyons.<<endif>><<if $class is \"scavenger\">>A bird flies through the ground and leaves a trail of shadows. The shadows rise to the surface, bobbing through the dirt, sending ripples through the moss. They are eggs. But you do not take them. It would be terribly disrespectful.<<endif>><<if $class is \"haruspex\">>Your guts roil. The air is so sweet and sickly. You feel, for a hallucinatory moment, the sensation of this place doing to your belly what you have done to so many--but from the inside out, and with nothing so crude as a cold knife.<<endif>>\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "porpentine",
+            "pid": 61
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "ormigau",
+      "text": "Sand storms over Ormigau.<<set $ormigau_visited = true>>\\n\\n<<if $class is \"zealot\">>You cross fingers and whisper the names of the nebula. Names of [[seeing]] and dispelling. <<if $species is \"ratkoin\">>Your whiskers twitch at the passage of something unseen.<<endif>><<if $species is \"harpself\">>A song you long to play but you can't quite figure the melody.<<endif>><<if $species is \"coiler\">>The eyes on your scales open. You see a form with many strands and human-like bodies hanging from the strands. Behind the form, the outline of structures--architecture that looks like it was designed for asteroids or spiders. Then it is gone. Well. You can't see it anymore.<<endif>><<endif>><<if $class is \"haruspex\">>You swore never to cross these unholy borders.\\n\\nInstead, you meditate on a flat rock rising from the sand. <<print either(\"Three\",\"Four\",\"Two\")>> days [[pass]].<<endif>><<if $class is \"dustrunner\">>You fly through, cutting the sand like a knife of wind. In your wake, notes for the invisible colony. Their mouths will find the taste of their [[stationary]].<<endif>><<if $class is \"scavenger\">>You see trinkets and devices adrift in the storm, but it is not good to take things left out here. <<if $species is \"ratkoin\">>You wrap your tail around you, claws nervously playing with the tip.<<endif>><<if $species is \"harpself\">>\\n\\nThe storm plays a discordant melody on your strings--the baleen harmonics of sand, the occasional twang of gravel.<<endif>><<if $species is \"coiler\">>You slither into the rocks.<<endif>>\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]<<endif>>",
+      "links": [
+        {
+          "text": "seeing",
+          "destination": {
+            "name": "seeing",
+            "pid": 1
+          }
+        },
+        {
+          "text": "pass",
+          "destination": {
+            "name": "pass",
+            "pid": 17
+          }
+        },
+        {
+          "text": "stationary",
+          "destination": {
+            "name": "stationary",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "earth",
+      "text": "Dustmoters and haruspecks, blown across the world by your breath.\\n\\n[[Deswirl|Ascend]]",
+      "links": [
+        {
+          "text": "Deswirl",
+          "destination": {
+            "name": "Ascend",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "style nebulatrix",
+      "text": "::-moz-selection { /* Code for Firefox */\\n    color: rgba(77,118,169,1);\\n    background: none;\\n}\\n\\n::selection {\\n    color: rgba(77,118,169,1);\\n    background: none;\\n}\\n\\n\\nbody {\\nbackground: rgb(140,16,142);\\nbackground: -moz-linear-gradient(top, rgba(140,16,142,1) 0%, rgba(119,20,168,1) 13%, rgba(77,118,169,1) 41%, rgba(77,118,169,1) 56%, rgba(224,199,247,1) 100%);\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(140,16,142,1)), color-stop(13%,rgba(119,20,168,1)), color-stop(41%,rgba(77,118,169,1)), color-stop(56%,rgba(77,118,169,1)), color-stop(100%,rgba(224,199,247,1)));\\nbackground: -webkit-linear-gradient(top, rgba(140,16,142,1) 0%,rgba(119,20,168,1) 13%,rgba(77,118,169,1) 41%,rgba(77,118,169,1) 56%,rgba(224,199,247,1) 100%);\\nbackground: -o-linear-gradient(top, rgba(140,16,142,1) 0%,rgba(119,20,168,1) 13%,rgba(77,118,169,1) 41%,rgba(77,118,169,1) 56%,rgba(224,199,247,1) 100%);\\nbackground: -ms-linear-gradient(top, rgba(140,16,142,1) 0%,rgba(119,20,168,1) 13%,rgba(77,118,169,1) 41%,rgba(77,118,169,1) 56%,rgba(224,199,247,1) 100%);\\nbackground: linear-gradient(to bottom, rgba(140,16,142,1) 0%,rgba(119,20,168,1) 13%,rgba(77,118,169,1) 41%,rgba(77,118,169,1) 56%,rgba(224,199,247,1) 100%);\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c108e', endColorstr='#e0c7f7',GradientType=0 );\\n    background-attachment:fixed;\\n\\n\\n}\\n\\n\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n#passages{\\ncolor: rgb(255, 255, 255);\\ndisplay: block;\\nfont-family: Verdana, sans-serif;\\nfont-size: 20px !important;\\nheight: 455px;\\nline-height: 35px;\\ntext-align: left;\\ntext-shadow: rgb(255, 255, 255) 0px 0px 6px !important;\\nvisibility: visible;\\nmargin:200px;\\nborder-left:0px !important;\\n}\\n\\n\\na {color:white!important;}\\n\\na:hover {color:WHITE !important;text-shadow: 0 0 10px WHITE;\\ncolor:#c61a1a;text-decoration:none !important;}",
+      "links": []
+    },
+    {
+      "pid": 65,
+      "name": "amend",
+      "text": "<<if $class is \"zealot\">>A zealot who is...\\n\\n<<cyclinglink $aspect \"sunfierce\" \"sucking on the last drop of faith's fuel\" \"branded heretic across the face\">><<endif>><<if $class is \"scavenger\">>A scavenger who is...\\n\\n<<cyclinglink $aspect \"driven by magpie lust\" \"the sole survivor of the flames at Karinath\" \"starving and ragged\">><<endif>><<if $class is \"haruspex\">>A haruspex who is...\\n\\n<<cyclinglink $aspect \"obsessed with viscera\" \"oddly squeamish\" \"from the Midnight Province\">><<endif>><<if $class is \"dustrunner\">>A dustrunner who is...\\n\\n<<cyclinglink $aspect \"the bearer of bad news\" \"the bearer of good news\" \"streaming a black ribbon from the ankle\">><<endif>>\\n\\n[[and...|species]]",
+      "links": [
+        {
+          "text": "and...",
+          "destination": {
+            "name": "species",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Untitled Passage 1",
+      "text": "\\n//<<$dest_list.length == 1 ? $dest_list[0] : [ $dest_list.slice(0, $dest_list.length - 1).join(\", \"), $dest_list[$dest_list.length - 1] ].join(\" and \")>>//",
+      "links": []
+    },
+    {
+      "pid": 67,
+      "name": "look",
+      "text": "<<timedgoto \"camp\" 3s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "camp",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "style kibath",
+      "text": "\\n::-moz-selection { /* Code for Firefox */\\n    color: black;\\n    background: none;\\n}\\n\\n::selection {\\n    color: black;\\n    background: none;\\n}\\n\\n\\nbody {\\nbackground: rgb(33,33,33);\\nbackground: -moz-linear-gradient(left, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 17%, rgba(87,114,88,1) 24%, rgba(33,33,33,1) 31%, rgba(33,33,33,1) 43%, rgba(87,114,88,1) 51%, rgba(33,33,33,1) 61%, rgba(33,33,33,1) 73%, rgba(87,114,88,1) 80%, rgba(33,33,33,1) 87%, rgba(33,33,33,1) 100%);\\nbackground: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(33,33,33,1)), color-stop(17%,rgba(33,33,33,1)), color-stop(24%,rgba(87,114,88,1)), color-stop(31%,rgba(33,33,33,1)), color-stop(43%,rgba(33,33,33,1)), color-stop(51%,rgba(87,114,88,1)), color-stop(61%,rgba(33,33,33,1)), color-stop(73%,rgba(33,33,33,1)), color-stop(80%,rgba(87,114,88,1)), color-stop(87%,rgba(33,33,33,1)), color-stop(100%,rgba(33,33,33,1)));\\nbackground: -webkit-linear-gradient(left, rgba(33,33,33,1) 0%,rgba(33,33,33,1) 17%,rgba(87,114,88,1) 24%,rgba(33,33,33,1) 31%,rgba(33,33,33,1) 43%,rgba(87,114,88,1) 51%,rgba(33,33,33,1) 61%,rgba(33,33,33,1) 73%,rgba(87,114,88,1) 80%,rgba(33,33,33,1) 87%,rgba(33,33,33,1) 100%);\\nbackground: -o-linear-gradient(left, rgba(33,33,33,1) 0%,rgba(33,33,33,1) 17%,rgba(87,114,88,1) 24%,rgba(33,33,33,1) 31%,rgba(33,33,33,1) 43%,rgba(87,114,88,1) 51%,rgba(33,33,33,1) 61%,rgba(33,33,33,1) 73%,rgba(87,114,88,1) 80%,rgba(33,33,33,1) 87%,rgba(33,33,33,1) 100%);\\nbackground: -ms-linear-gradient(left, rgba(33,33,33,1) 0%,rgba(33,33,33,1) 17%,rgba(87,114,88,1) 24%,rgba(33,33,33,1) 31%,rgba(33,33,33,1) 43%,rgba(87,114,88,1) 51%,rgba(33,33,33,1) 61%,rgba(33,33,33,1) 73%,rgba(87,114,88,1) 80%,rgba(33,33,33,1) 87%,rgba(33,33,33,1) 100%);\\nbackground: linear-gradient(to right, rgba(33,33,33,1) 0%,rgba(33,33,33,1) 17%,rgba(87,114,88,1) 24%,rgba(33,33,33,1) 31%,rgba(33,33,33,1) 43%,rgba(87,114,88,1) 51%,rgba(33,33,33,1) 61%,rgba(33,33,33,1) 73%,rgba(87,114,88,1) 80%,rgba(33,33,33,1) 87%,rgba(33,33,33,1) 100%);\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#212121',GradientType=1 );\\n    background-attachment:fixed;\\n\\n}\\n\\n\\n\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n#passages{\\ncolor: rgb(255, 255, 255);\\ndisplay: block;\\nfont-family: Verdana, sans-serif;\\nfont-size: 20px !important;\\nheight: 455px;\\nline-height: 35px;\\ntext-align: left;\\ntext-shadow: rgb(255, 255, 255) 0px 0px 6px !important;\\nvisibility: visible;\\nmargin:200px;\\nborder-left:0px !important;\\n}\\n\\n\\na {color:white!important;}\\n\\na:hover {color:WHITE !important;text-shadow: 0 0 10px WHITE;\\ncolor:#c61a1a;text-decoration:none !important;}",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "StoryInit",
+      "text": "<<set $destination = \"\">>\\n<<set $dest_list = [\"kibath\"] >>\\n<<set $secret_list = [\"porpentine\"] >>\\n<<set $inv_list = [\"\"] >>\\n\\n<<set $class = \"\">>\\n<<set $steed = \"\">>\\n<<set $species = \"\">>\\n<<set $aspect = \"\">>\\n\\n\\n<<set $haruspex = false>>\\n<<set $zealot = false>>\\n\\n<<set $nebula_presence = false>>\\n\\n\\n<<set $ixa_visited = false>>\\n<<set $kibath_visited = false>>\\n<<set $vesma_visited = false>>\\n<<set $ormigau_visited = false>>\\n<<set $amitor_visited = false>>\\n<<set $sapitir_visited = false>>\\n<<set $porpentine_visited = false>>",
+      "links": []
+    },
+    {
+      "pid": 70,
+      "name": "stationary",
+      "text": "//A final letter, to be conveyed to the priestess of guts.//\\n\\n<<set $haruspex = 1>>[[Return|base][$destination = \"camp\";$day = 1]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "5 names",
+      "text": "You go to another tunnel and trade in your five common names for a rare name. Their memory disappears from your tongue. You feel as if five pitiful white teeth had been replaced by a single gold fang.\\n\\n//Vesma, a privileged dome.//\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]<<set $dest_list.push(\"vesma\")>>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "vesma",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "camp",
+      "text": "The drifter's camp. Rags tents firepits shielded from dust by the ruin walls.\\n\\n<<if $class is false>>[[Who are you?|character_creation]]<<if $nebula_presence is true>>\\n\\n[[Ascend]].<<endif>><<else>>[[Climb|destination]] the stone steps through the walls.<<set $days = 1>><<set $unlock = \"\">><<endif>>\\n\\n<<if $class neq false>>A <<$class>> <<$species>>, <<$aspect>><<if $class is \"dustrunner\">>,<<else>>, riding a <<$steed>>,<<endif>> with a [[chart]] tucked under your cloak.\\n\\n[[Disappear]].\\n\\n<<if $nebula_presence is true>>[[Ascend]].<<endif>><<endif>>\\n\\n",
+      "links": [
+        {
+          "text": "Who are you?",
+          "destination": {
+            "name": "character_creation",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Ascend",
+          "destination": {
+            "name": "Ascend",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "destination",
+            "pid": 31
+          }
+        },
+        {
+          "text": "chart",
+          "destination": {
+            "name": "chart",
+            "pid": 54
+          }
+        },
+        {
+          "text": "Disappear",
+          "destination": {
+            "name": "Disappear",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "upper sanctum",
+      "text": "What is your most visionary part?\\n\\n[[My heart]]\\n\\n[[My intestines]]",
+      "links": [
+        {
+          "text": "My heart",
+          "destination": {
+            "name": "My heart",
+            "pid": 5
+          }
+        },
+        {
+          "text": "My intestines",
+          "destination": {
+            "name": "My intestines",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "terminate",
+      "text": "Cultures influenced toward beacon preservation: custom, tradition, ritual.\\n\\nNervedust seeded; ignition on sistrice contact.\\n\\n[[Superplume|decant]]\\n\\n[[Deswirl|Ascend]]",
+      "links": [
+        {
+          "text": "Superplume",
+          "destination": {
+            "name": "decant",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Deswirl",
+          "destination": {
+            "name": "Ascend",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "style travel",
+      "text": "::-moz-selection { /* Code for Firefox */\\n    color: rgb(152,114,112);\\n    background: none;\\n}\\n\\n::selection {\\n    color: rgb(152,114,112);\\n    background: none;\\n}\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n#passages > div, #passages > p { text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n\\nbody {background: rgb(152,114,112);\\nbackground: -moz-linear-gradient(top, rgba(152,114,112,1) 0%, rgba(152,114,112,1) 30%, rgba(163,158,166,1) 38%, rgba(140,129,116,1) 79%, rgba(140,129,116,1) 100%);\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(152,114,112,1)), color-stop(30%,rgba(152,114,112,1)), color-stop(38%,rgba(163,158,166,1)), color-stop(79%,rgba(140,129,116,1)), color-stop(100%,rgba(140,129,116,1)));\\nbackground: -webkit-linear-gradient(top, rgba(152,114,112,1) 0%,rgba(152,114,112,1) 30%,rgba(163,158,166,1) 38%,rgba(140,129,116,1) 79%,rgba(140,129,116,1) 100%);\\nbackground: -o-linear-gradient(top, rgba(152,114,112,1) 0%,rgba(152,114,112,1) 30%,rgba(163,158,166,1) 38%,rgba(140,129,116,1) 79%,rgba(140,129,116,1) 100%);\\nbackground: -ms-linear-gradient(top, rgba(152,114,112,1) 0%,rgba(152,114,112,1) 30%,rgba(163,158,166,1) 38%,rgba(140,129,116,1) 79%,rgba(140,129,116,1) 100%);\\nbackground: linear-gradient(to bottom, rgba(152,114,112,1) 0%,rgba(152,114,112,1) 30%,rgba(163,158,166,1) 38%,rgba(140,129,116,1) 79%,rgba(140,129,116,1) 100%);\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#987270', endColorstr='#8c8174',GradientType=0 );\\n\\t\\n\\n    background-attachment:fixed;\\n    margin:0;\\n}\\n\\n.passage{}\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n@keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n@-webkit-keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\na.cyclingLink {\\n  color:#5c74b2 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\na.cyclingLink:hover {\\n  color:#5c74b2 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\n\\n\\n\\n#passages{\\ncolor: rgb(255, 255, 255);\\ndisplay: block;\\nfont-family: Verdana, sans-serif;\\nfont-size: 20px !important;\\nheight: 455px;\\nline-height: 35px;\\ntext-align: left;\\ntext-shadow: rgb(255, 255, 255) 0px 0px 6px !important;\\nvisibility: visible;\\nmargin:200px;\\nborder-left:0px !important;\\n}\\n\\n\\na {color:#5c74b2!important;}\\n\\na:hover {color:#839ac6 !important;\\ntext-decoration:none !important;}\\n\\n\\n\\n",
+      "links": []
+    },
+    {
+      "pid": 76,
+      "name": "broodcluster",
+      "text": "But the broodcluster and its smell of burst eggs and babys scales is long ago.\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "steed",
+      "text": "Your steed\\n\\n<<cyclinglink $steed \"bantam\" \"skullipede\" \"lizardhorse\">>\\n\\n[[and...|char_result]]",
+      "links": [
+        {
+          "text": "and...",
+          "destination": {
+            "name": "char_result",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "pricecursed",
+      "text": "The carvings and toys of the rimclans are considered exotic, quaint, and the first target in any raid or theft. Now they wrap everything they make in a thin film of your-guts-will-burst-if-you-sell-this.\\n\\n[[Return|base][$destination = \"camp\";$day = 1]]\\n",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "base",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "Sleep",
+      "text": "<h1>PLUME I ENDED</h1>",
+      "links": []
+    },
+    {
+      "pid": 80,
+      "name": "nebula",
+      "text": "<<timedgoto \"between\" 3s>>[img[nebula]]<<set $nebula_presence = true>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "between",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "StoryAuthor",
+      "text": "Porpentine",
+      "links": []
+    },
+    {
+      "pid": 82,
+      "name": "amitor",
+      "text": "The [[temple]] of Amitor, under a naked sky, spinning with stars.<<set $amitor_visited = true>>",
+      "links": [
+        {
+          "text": "temple",
+          "destination": {
+            "name": "temple",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "plume",
+      "text": "i am closer to earth\\n\\nthan [[ever]]",
+      "links": [
+        {
+          "text": "ever",
+          "destination": {
+            "name": "ever",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "Disappear",
+      "text": "Are you sure?\\n\\n[[Yes|dusty_chart]]\\n\\n[[No|camp]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "dusty_chart",
+            "pid": 51
+          }
+        },
+        {
+          "text": "No",
+          "destination": {
+            "name": "camp",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "enable all locales",
+      "text": "<<set $dest_list.push(\"kibath\")>>\\n<<set $dest_list.push(\"ixa\")>>\\n<<set $dest_list.push(\"vesma\")>>\\n<<set $dest_list.push(\"sapitir\")>>\\n<<set $dest_list.push(\"ormigau\")>>\\n<<set $dest_list.push(\"amitor\")>>\\n<<set $dest_list.push(\"porpentine\")>>\\n\\n[[chart]]\\n\\n\\n\\n[[enable all locales][$porpentine_visited = true;$ixa_visited = true;$sapitir_visited = true;$kibath_visited = true;$vesma_visited = true;$amitor_visited = true;$ormigau_visited = true]]",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "kibath",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "ixa",
+            "pid": 49
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "vesma",
+            "pid": 44
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "sapitir",
+            "pid": 21
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "ormigau",
+            "pid": 62
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "amitor",
+            "pid": 82
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "porpentine",
+            "pid": 61
+          }
+        },
+        {
+          "text": "chart",
+          "destination": {
+            "name": "chart",
+            "pid": 54
+          }
+        },
+        {
+          "text": "enable all locales",
+          "destination": {
+            "name": "enable all locales",
+            "pid": 85
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Inventory",
+      "text": "Weapon\\n<<print $weapon>>\\n\\nAmmo\\n<<print $ammo>>\\n\\nItems\\n<<print $tissue>>\\n<<print $porn>>\\n",
+      "links": []
+    },
+    {
+      "pid": 2,
+      "name": "FinalRoom",
+      "text": "You've reached the end. Awaiting before you is a Lift with a sign that says ''FREEDOM''.\\n\\n<<if $result eq \"bittenbyrats\">>\\nYou take a few steps towards the lift then suddenly you feel an intense pain in your stomach.\\n\\nYou double over and begin vomiting blood.\\n\\nIt seems all those rat bites have made you violently ill.\\n\\nYou die in a puddle of vomit blood.\\n<<endif>>\\n<<if $result eq \"killedrobot\">>\\nYou stride gleefully towards the lift and wonder how things would have turned out if you made a different choice.\\n\\nThe game is won and you have won, well done.\\n\\n//You made it through #1 of 3 possible win scenarios// \\n<<endif>>\\n<<if $result eq \"killedzombies\">>\\nWow, you're awesome. Took out zombies and there is not a scratch on you. Congrats.\\n\\nYou're a winner.\\n//You made it through #2 of 3 possible win scenarios// \\n<<endif>>\\n<<if $result eq \"bittenbyzombies\">>\\nYou take a single step towards freedom and die. It seems those zombie bites actually kill you.\\n\\nYou rise from the death, becoming a zombie yourself and head to the lift.\\n\\nIt closes behind you.\\n\\nYou made it to freedom but you're undead. I wouldn't call this a win.\\n<<endif>>\\n<<if $result eq \"killedghost\">>\\nDude, you killed a ghost. That's pretty bad arse.\\n\\nYou head towards the lift of freedom.\\n\\nA ghost rises from the floor in the lift. Darn, the shots you fired only made the ghost disappear temporarily.\\n\\nYou start to turn around to run away but it's too late, the ghost has ripped the heart out from your chest.\\n\\nYou watch as the ghost starts eating your heart.\\n\\nYour last words are..\\n\\n//But why does a ghost need to eat... dick//\\n<<endif>>\\n<<if $result eq \"gaveghostporn\">>\\nYou head towards freedom. Happy in the knowledge that you you didn't get hurt or have to hurt anything else to get out of here.\\n\\nThe lift closes and you ascend to freedom.\\n//You made it through #3 of 3 possible win scenarios// \\n<<endif>>\\n",
+      "links": []
+    },
+    {
+      "pid": 3,
+      "name": "Level B1 A",
+      "text": "Entering the new room, you see 2 large animals in the shadows.\\n\\nThey step forward out of the shadows and you realize they're dire rats. They're foaming at the mouth and have a wild look in their eyes.\\n\\n<<if $weapon eq \"sword\">>\\nYou feel like you're pretty good with a sword. You get into fighting stance and prepare yourself for battle.\\n\\nThe first rat jumps towards you.\\n\\nEverything is in slow motion.\\n\\nYou visualize the battle ahead.\\n\\n//First you take 1 step forward, raise your sword and slice the rat clean in 2. The 2nd rat will also jump at you and you will do a forward somersault over it and drive your sword into it's skull as you pass over it//\\n\\nYou break away from your visualisation to find 2 giant rats clawing and biting at you.\\n\\nYou probably shouldn't have been day dreaming.\\n\\nYou've been mauled to death by the 2 dire rats.\\n\\n<<endif>>\\n<<if $weapon eq \"handgun\">>\\nYou don't want to hurt the dire rats, they're probably just hungry.\\n\\nYou move slowly towards the exit door. The rats look at you curiously, you look right back at them hoping by maintaining eye contact will not provoke them.\\n\\nYou are wrong. The huge rat snarls then runs towards you.\\n\\nYou quickly pull out your gun and fire a couple of shots at it. It's a direct hit. It collapses on the floor.\\n\\nNot wanting to risk death by rat, you take out the 2nd rat with your gun.\\n\\n[[Enter the next room|FinalRoom]]\\n<<set $result = \"bittenbyrats\">>\\n<<endif>>\\n<<if $weapon eq \"shotgun\">>\\nYou fire your shot gun at the first rat and take out a huge chunk of it's skull. It's well and truly dead.\\n\\nYou fire at the 2nd rat and...\\n\\n..nothing happens.\\n\\nYou're out of ammo.\\n\\nDamn. You're going to have to do this the hard way. You man up and dive in to fight the rat.\\n\\nUnfortunately, you discover too late that you're a bit of a pussy. The rat goes straight for your jugular.\\n\\nYou bleed out and die.\\n<<endif>>",
+      "links": [
+        {
+          "text": "Enter the next room",
+          "destination": {
+            "name": "FinalRoom",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "takePorn",
+      "text": "You're not sure what you can use these for but you take them anyway.\\n\\n[[Enter Lift|Lift]]\\n\\n<<set $tissue = true>>\\n<<set $porn = true>>",
+      "links": [
+        {
+          "text": "Enter Lift",
+          "destination": {
+            "name": "Lift",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "FreeSexRoom",
+      "text": "There is a sign that reads, \"You're probably going to die so here are some porn and tissues.\"\\n\\n[[Use porn and tissues|usePorn]]\\n[[Take porn and tissues|takePorn]]\\n[[Ignore and move on|Lift]]\\n",
+      "links": [
+        {
+          "text": "Use porn and tissues",
+          "destination": {
+            "name": "usePorn",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Take porn and tissues",
+          "destination": {
+            "name": "takePorn",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Ignore and move on",
+          "destination": {
+            "name": "Lift",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Level B1",
+      "text": "Rats everywhere! The only way you're getting through here is if you slay them all.\\n\\n<<if $weapon eq \"shotgun\">>\\nYou whip out your shotgun and fire a single shot, it's enough to blast through all of them like a wall of hot knives through a pile of rat shaped butter.\\n\\nThat was easier than expected.\\n\\n[[Stroll through door|Level B1 A]]\\n<<endif>>\\n<<if $weapon eq \"handgun\">>\\n''Bang! Bang! Bang!'' etc. You take out many of the rats, but you don't have enough bullets and even if you did, you're not quick enough. A few of the rats get through and and bite you. There is blood dripping from your arms and legs, but you'll be fine. Mostly.\\n\\n[[Limp through door|Level B1 A]]\\n<<endif>>\\n<<if $weapon eq \"bowie\">>\\nYou look at your knife and then the rats. ''sigh''\\n\\nThis was clearly not the weapon you should have taken. You hack your way through some of the rats but they quickly swarm you and eat away all of your fleshy bits.\\n\\nSorry dude, you're dead.\\n<<endif>>\\n<<if $weapon eq \"sword\">>\\nYou swing around frantically with your sword at the rats, it's surprisingly effective. Slicing and dicing them as the leap towards you. You get through with only a few rat bites.\\n\\n[[Walk through door|Level B1 A]]\\n<<endif>>\\n",
+      "links": [
+        {
+          "text": "Stroll through door",
+          "destination": {
+            "name": "Level B1 A",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Limp through door",
+          "destination": {
+            "name": "Level B1 A",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Walk through door",
+          "destination": {
+            "name": "Level B1 A",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Level B2",
+      "text": "You step out of the lift into a room with solid looking metallic walls. There are what appear to be burn marks on the walls.\\n\\nIn the corner of your eye, you notice something move.\\n\\nYou quickly turn around and see a floating basketball sized robotic drone with a large glowing red lens looking directly at you.\\n\\nIt fires a laser in your general direction.\\n\\n<<if $weapon eq \"bowie\">>\\nThe laser hits you directly in the eye. You reach for your eye and crouch on the ground.\\n\\nThe drone fires another shot at you and hits you on the back.\\n\\nIn an adrenaline filled rage, you leap at the drone and thrust your bowie into it.\\n\\nThe drone is deactivate but you are now blind in one eye.\\n\\n[[Walk through door|Level B2 A]]\\n<<endif>>\\n<<if $weapon eq \"sword\">>\\nYou raise your sword and the laser reflects off it and back towards the drone.\\n\\nThe drone explodes and is sent flying across the room.\\n\\n[[Stroll through door|Level B2 A]]\\n<<endif>>\\n<<if $weapon eq \"handgun\">>\\nYou step to one side and the laser brushes past your face.\\n\\nYou take aim and fire a single shot at it's lens.\\n\\nThe drone deactivates and begins falling to the ground. Before it hits the ground it explodes sending small bits of shrapnel into you arms and legs.\\n\\nYou take some time to remove the bits of metal.\\n\\n[[Limp through door|Level B2 A]]\\n<<endif>>\\n<<if $weapon eq \"shotgun\">>\\nYou're hit in the shoulder with the laser, it feels like burning but you can bear the pain long enough to take aim with your shotgun.\\n\\nYou fire!\\n\\nHundreds of shots spray the drone and bounce right off it. You're shotgun is ineffective.\\n\\nThe drone continues to fire at you, it hurts like being stabbed with lots of red hot pins.\\n\\nIt's unrelenting. There are so many lasers being fired at you that you're flesh melts off, you die a slow agonizing death.\\n<<endif>>",
+      "links": [
+        {
+          "text": "Walk through door",
+          "destination": {
+            "name": "Level B2 A",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Stroll through door",
+          "destination": {
+            "name": "Level B2 A",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Limp through door",
+          "destination": {
+            "name": "Level B2 A",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Level B3",
+      "text": "You can hear faint grumbling and shuffling. Two figures walk out from the shadows, they're clearly zombies. You realize if you don't do something quickly they're going to rip you apart.\\n\\n<<if $weapon eq \"bowie\">>\\nYou go in for the kill with your bowie knife. You take off one of the zombie's heads. One of the zombies takes a bite out of your arm.\\n\\nYou drive your bowie through it's chin and into the zombie brain. It collapses onto the floor.\\n\\n''Phew''\\n\\nYou survived. Although not completely unscathed, you're happy to be alive.\\n\\n[[Enter the next room|FinalRoom]]\\n<<set $result = \"bittenbyzombies\">>\\n<<set $infected = true>>\\n<<endif>>\\n<<if $weapon eq \"sword\">>\\nYou look at the zombies and raise your sword. In your head you're thinking, these guys are slow, this will be cake.\\n\\nThe first zombie approaches you. You skewer the zombie through the chest.\\n\\nThe zombie keeps advancing, impaling itself further on your sword. You're forced to abandon the sword and try and get away but the room is too narrow and the door you came through has automatically locked itself.\\n\\nThe 2 zombies have cornered you. One takes a bite out of your neck. The other zombie has ripped off your limbs. \\n\\nYou're now pretty dead.\\n<<endif>>\\n<<if $weapon eq \"handgun\">>\\n''Bam! Bam!''\\n\\nYou fire 2 shots with precision into the 2 zombie's heads.\\n\\nThey're down. You're pretty happy with yourself.\\n\\n[[Enter the next room|FinalRoom]]\\n<<set $result = \"killedzombies\">>\\n<<endif>>\\n<<if $weapon eq \"shotgun\">>\\nYou fire a shot at the first zombie's head. It is blown clearly away. It's headless body takes a single step towards you them tumbles over.\\n\\nYou don't want to waste your ammo so you hit the 2nd zombie in the head with the butt of your gun. It falls over and you head towards the door.\\n\\n''OW''\\n\\nThe zombie wasn't dead.. more dead.. It took a bite out of your leg. You stomp on it's head. It's pretty dead now.\\n\\n[[Enter the next room|FinalRoom]]\\n<<set $infected = true>>\\n<<endif>>",
+      "links": [
+        {
+          "text": "Enter the next room",
+          "destination": {
+            "name": "FinalRoom",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Level B4",
+      "text": "Before you hovers a semi-transparent figure making ghostly noises. Crap, you've encountered ghosts.\\n\\n<<if $weapon eq \"bowie\">>\\nYou throw the bowie at the ghost then make a run for the door and quickly shut it behind you.\\n\\nYou feel a cold chill in your heart. When you look down you see the ghostly skeletal hand extruding out from your chest.\\n\\nYour heart stops.\\n<<endif>>\\n<<if $weapon eq \"sword\" and $porn eq true>>\\nYou take a few swings at the ghost with your sword. It passes right through the ghost.\\n\\nYou're quickly running out of options..\\n\\nYou throw everything you had at the ghost. Expectedly it does nothing, until you throw the porn magazine.\\n\\nThe ghost heads straight towards it, staring at it intently.\\n\\nYou use this chance to pick up you belongings and head for the door.\\n\\n[[Enter the next room|FinalRoom]]\\n<<set $result = \"gaveghostporn\">>\\n<<endif>>\\n<<if $weapon eq \"sword\" and $porn eq false>>\\nYou take a few swings at the ghost with your sword. It passes right through the ghost.\\n\\nYou're quickly running out of options..\\n\\nDeath by ghost?\\n\\n\"I don't think so\" you shout as you perform seppuku.\\n<<endif>>\\n<<if $weapon eq \"handgun\">>\\nYou fire away at the ghost, the bullets go straight through it and have no affect.\\n\\nThere is no way out. The ghost approaches you, it reaches out and then nothing. The ghost has possessed your body.\\n\\nIt does a little jig, then leaves. Your body starts shaking violently. Suddenly your innards are your outtards and your outtards are your innards.\\n\\nThis is no way to live.\\n\\nYou die.\\n\\n<<endif>>\\n<<if $weapon eq \"shotgun\">>\\nYou look at your shotgun. You realise this isn't going to help you. The door behind you is closed and the door in front of you is blocked by the ghost.\\n\\nThere is only one way out, the cowards way. You put the shotgun in your mouth. There is an itch in your nose.\\n\\nYou sneeze violently and drop the shotgun. It fires unexpectedly as it hits the floor just as the ghost passes over it.\\n\\nA spray of shot and salt blast out of the gun. The ghost explodes into a mist of dust and smoke.\\n\\nYou recover from your sneeze and look up. The ghost is gone.\\n\\n[[Enter the next room|FinalRoom]]\\n<<set $result = \"killedghost\">>\\n<<endif>>\\n",
+      "links": [
+        {
+          "text": "Enter the next room",
+          "destination": {
+            "name": "FinalRoom",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "getBowie",
+      "text": "There is a table with a Bowie Knife on it.\\n\\nYou pick up the Bowie.\\n\\nWhatever you go up against, you're going to have to get in close.\\n\\n[[Next Room|FreeSexRoom]]\\n\\n<<set $type = \"melee\">>\\n<<set $weapon = \"bowie\">>\\n<<set $ammo = 50>>",
+      "links": [
+        {
+          "text": "Next Room",
+          "destination": {
+            "name": "FreeSexRoom",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "getSword",
+      "text": "There is a table with a Sword on it.\\n\\nYou take the sword. \\n\\nIt seems like it will do a lot of damage as well as some extra range.\\n\\n[[Next Room|FreeSexRoom]]\\n\\n<<set $type = \"melee\">>\\n<<set $weapon = \"sword\">>\\n<<set $ammo = 50>>",
+      "links": [
+        {
+          "text": "Next Room",
+          "destination": {
+            "name": "FreeSexRoom",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Start",
+      "text": "You're in a small room.\\n\\nAbove you there is a TV with what appears to be a survival training video playing. \\n\\nBut you're not really paying attention. \\n\\nYou feel anxious but you're not really sure why.\\n\\nOh and you don't remember who you are or why you're here...\\n\\nThere is a door in front of you labelled \"Weapons Room\".\\n\\nThere appears to be no other way out.\\n\\n[[Enter weapons room|WeaponsRoom]]\\n\\n''You also get the feeling that you're not meant to go back''\\n\\n<<set $type = false>>\\n<<set $weapon = false>>\\n<<set $ammo = 0>>\\n<<set $defence = false>>\\n<<set $tissue = false>>\\n<<set $porn = false>>\\n<<set $infected = false>>",
+      "links": [
+        {
+          "text": "Enter weapons room",
+          "destination": {
+            "name": "WeaponsRoom",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Level B2 A",
+      "text": "You step through the door into a room that looks like something straight out of Tron. Black walls, floor and ceiling with a neon green grid everywhere.\\n\\nThere is a humanoid robot sitting dormant in the center of the room. \\n\\nYou cautiously approach it when suddenly it's eyes light up with a strong red glow.\\n\\nIt stands up and heads towards you.\\n\\n\"DESTROY! DESTROY!\" it yells in it's robot voice.\\n\\n<<if $weapon eq \"bowie\">>\\n2 missiles shoot out of the robot towards you.\\n\\nYou dodge one but the other is in your blind spot (you only have 1 eye remember?). It hits you in the face and explodes.\\n\\nChunks fly everywhere.\\n\\nYou die.\\n<<endif>>\\n<<if $weapon eq \"sword\">>\\nYou're not afraid of this robot. You ran at it with your sword. You spot a weak spot, it's head looks like it can be severed at the neck with a good solid stroke with your sword.\\n\\nYou go in for the kill and swing.\\n\\nThe robot's head goes flying across the room.\\n\\n[[Enter the next room|FinalRoom]]\\n<<set $result = \"killedrobot\">>\\n<<endif>>\\n<<if $weapon eq \"handgun\">>\\nYou're feeling a little faint. The shrapnel wounds are were a lot worse than what you originally thought. You are bleeding everywhere.\\n\\nYou collapse, the robot stands over you.\\n\\nIt speaks. ''Target status: Death imminent.''\\n\\nThe robot walks back to it's original spot, sits and deactivates.\\n\\nEverything goes dark.\\n\\nYou die.\\n<<endif>>",
+      "links": [
+        {
+          "text": "Enter the next room",
+          "destination": {
+            "name": "FinalRoom",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Lift",
+      "text": "You're in a lift, there are buttons showing basement levels and a note above the buttons.\\n\\n''B1 Rats''\\n''B2 Rob...''\\n\\nThe note ends there.\\n\\n[[Level B1]]\\n[[Level B2]]\\n[[Level B3]]\\n[[Level B4]]",
+      "links": [
+        {
+          "text": "Level B1",
+          "destination": {
+            "name": "Level B1",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Level B2",
+          "destination": {
+            "name": "Level B2",
+            "pid": 7
+          }
+        },
+        {
+          "text": "Level B3",
+          "destination": {
+            "name": "Level B3",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Level B4",
+          "destination": {
+            "name": "Level B4",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "WeaponsRoom",
+      "text": "In front of you are 4 doors. They're labelled with weapon names.\\n\\nYour assumption is that you have to choose a weapon and that your survival may depend on this choice.\\n\\n[[Bowie Door|getBowie]]\\n[[Sword Door|getSword]]\\n[[Hand Gun Door|getHandGun]]\\n[[Shotgun Door|getShotgun]]\\n",
+      "links": [
+        {
+          "text": "Bowie Door",
+          "destination": {
+            "name": "getBowie",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Sword Door",
+          "destination": {
+            "name": "getSword",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Hand Gun Door",
+          "destination": {
+            "name": "getHandGun",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Shotgun Door",
+          "destination": {
+            "name": "getShotgun",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "usePorn",
+      "text": "After about an hour, you're feeling refreshed and ready for any challenge.\\n\\n[[Enter Lift|Lift]]\\n",
+      "links": [
+        {
+          "text": "Enter Lift",
+          "destination": {
+            "name": "Lift",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "StoryAuthor",
+      "text": "Colin Capurso",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "getShotgun",
+      "text": "There is a table with a Shotgun and a couple of shells.\\n\\nIt's a bit heavy, and there are only 2 shells. It's all you got so you load it up and take it.\\n\\n[[Next Room|FreeSexRoom]]\\n\\n<<set $type = \"projectile\">>\\n<<set $weapon = \"shotgun\">>\\n<<set $ammo = 2>>",
+      "links": [
+        {
+          "text": "Next Room",
+          "destination": {
+            "name": "FreeSexRoom",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "StoryTitle",
+      "text": "The Lift.",
+      "links": []
+    },
+    {
+      "pid": 20,
+      "name": "getHandGun",
+      "text": "There is a table with a Hand Gun and ammo on it.\\n\\nYou pick up the Hand Gun and and load it full of bullets.\\n\\n[[Next Room|FreeSexRoom]]\\n\\n<<set $type = \"projectile\">>\\n<<set $weapon = \"handgun\">>\\n<<set $ammo = 6>>",
+      "links": [
+        {
+          "text": "Next Room",
+          "destination": {
+            "name": "FreeSexRoom",
+            "pid": 5
+          }
+        }
+      ]
+    }
+  ]
+}

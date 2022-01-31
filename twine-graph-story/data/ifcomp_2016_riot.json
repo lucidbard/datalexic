@@ -1,0 +1,2013 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Title",
+      "text": "<center>  <h1>RIOT</h1>By Taylor Johnson </center>\n<hr style=\"color:grey;\">\n\n<center>[[Start->2]]</center>",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "2",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "2",
+      "text": "Inside an armoured vehicle sit twelve men. Each adorned with riot gear, each a hulking physical specimen, and then there\u2019s you. You\u2019re Parker, you\u2019re just a cadet, and you\u2019ve never done this before.  \n\nYour hand is shaking. It\u2019s never done that before. \n\n[[Hide it.->3]]\n\n[[Observe it.->4]]\n",
+      "links": [
+        {
+          "text": "Hide it.",
+          "destination": {
+            "name": "3",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Observe it.",
+          "destination": {
+            "name": "4",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "3",
+      "text": "You try to cover the shaking with your other hand but it won\u2019t stop. \n\nA hand that dwarfs your own clamps yours still. This hand belongs to Kurt. You\u2019re only real friend and without whom, you would not have this opportunity.\n\n[[Look at Kurt.->5]]",
+      "links": [
+        {
+          "text": "Look at Kurt.",
+          "destination": {
+            "name": "5",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "4",
+      "text": "The impulse to hide the tremor comes and goes. You\u2019re more fascinated by it. By what happens to the body when adrenaline becomes a constant companion. \n\nA hand that dwarfs your own clamps yours still. This hand belongs to Kurt. You\u2019re only real friend and without whom, you would not have this opportunity.\n\n[[Look at Kurt.->5]]",
+      "links": [
+        {
+          "text": "Look at Kurt.",
+          "destination": {
+            "name": "5",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "5",
+      "text": "You look at Kurt and his expression of stone. The message is clear: be ready. \n\nThe vehicle is filled with the hum of tire tread. It\u2019s interrupted sporadically by the crack of debris being thrown against the vehicle\u2019s walls. \n\nEach officer is locked into their own routine. Some are animated, some are casual, one's headphones blare pump-up music. But these routines come with the abundance of experience that you sorely lack.\n\nThe Sergeant in control of your unit stands and begins to speak.\n\nSARGE: We\u2019re almost there. \n\nDRIVER: Four minutes!\n\nSARGE: So let\u2019s go over it again one more time.\n\nHe points to a screen at the head of the vehicle, behind the driver\u2019s seat. An overhead map of the city\u2019s core appears. \n\nHe taps the screen and a red circle appears on the center of the image. \n\nSARGE: This is the center of the riot and this is where we\u2019ll engage the event. The powers that be want us to remove the rioters from the downtown core as quickly as possible in order to minimize the cost of damage to property.\n\nDRIVER: Three minutes!\n\nSARGE: There\u2019s already a perimeter set on the outside edge of downtown (a larger green shape outlining a perimeter of streets surrounds the smaller red circle). Our job is to force the crowd outward toward the perimeter where they\u2019ll be dealt with.\n\nWhen you were briefed at the station, the plan seemed bizarre\u2026 start in the core and work your way out? You couldn\u2019t work up the nerve to say something. \n\nNow three minutes from the riot, you're still unsure. What do you do?\n\n[[Question the plan.->6]]\n\n[[Keep your mouth shut.->9]]\n",
+      "links": [
+        {
+          "text": "Question the plan.",
+          "destination": {
+            "name": "6",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Keep your mouth shut.",
+          "destination": {
+            "name": "9",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "6",
+      "text": "The last thing you want to be is a liability. You raise your hand and it\u2019s still shaking. Everyone, including the Sergeant, looks at you genuinely concerned. \n\nSARGE: Parker, you don\u2019t need to raise your... What is it?\n\n[[Bail. This wasn\u2019t a good idea.->7]]\n\n[[Keep going. You still don\u2019t have an answer.->8]]\n",
+      "links": [
+        {
+          "text": "Bail. This wasn\u2019t a good idea.",
+          "destination": {
+            "name": "7",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Keep going. You still don\u2019t have an answer.",
+          "destination": {
+            "name": "8",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "9",
+      "text": "DRIVER: Two minutes!\n\nSARGE: One last thing. I want to reiterate that there will be no firearms in this operation. Batons, shields, and teargas only. The powers that be don\u2019t like the\u2026optics of lethal weaponry.\n\nKURT: Toy guns for toy soldiers.\n\nThe others nod grimly.\n\nSARGE: Our plain-clothes guys on the ground are reporting that while large, the riot is not particularly violent at this time. We\u2019ll be fine if (pointed glance at you) we stick to our objective.\n\nDRIVER: One minute!\n\nThe Sergeant walks over to you, kneels to your level, and adopts a smile that he hasn\u2019t really figured out how to use yet.\n\nSARGE: You going to be okay today, son?\n\n[[Yes, sir.->10]]\n\n[[I hope so.->10]]\n",
+      "links": [
+        {
+          "text": "Yes, sir.",
+          "destination": {
+            "name": "10",
+            "pid": 10
+          }
+        },
+        {
+          "text": "I hope so.",
+          "destination": {
+            "name": "10",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "7",
+      "text": "You lower your hand and shake your head. The eyes of the others gradually shift back to the Sergeant.\n\n[[Just listen.->9]]",
+      "links": [
+        {
+          "text": "Just listen.",
+          "destination": {
+            "name": "9",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "8",
+      "text": "You lower your hand and press on.\n\nPARKER: If the rioters are in one spot, why would we try and get in the middle of them? Why not just contain them?\n\nThe Sergeant glances at Kurt then back at you.\n\nSARGE: Were you briefed, Parker?\n\nPARKER: Yes but-\n\nSARGE: I should throw you out of this car.\n\nAll eyes are on you.\n\nSARGE: As your experience literally consists of the ride from the station to here, I\u2019m not looking for your feedback. This is the plan. Wake the hell up.\n\n[[Focus.->9]]\n",
+      "links": [
+        {
+          "text": "Focus.",
+          "destination": {
+            "name": "9",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "10",
+      "text": "Kurt cuts you off.\n\nKURT: He\u2019ll be fine.\n\nSARGE: Kurt lobbied hard to get you out on this mission. Don\u2019t make him look stupid.\n\nThe vehicle swerves violently then screeches to a standstill.\n\nDRIVER: Shit. Sorry boys. This is it!\n  \n[[Enter the riot.->11]]\n",
+      "links": [
+        {
+          "text": "Enter the riot.",
+          "destination": {
+            "name": "11",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "11",
+      "text": "You exit the hot seat and enter the furnace. The high-noon sun beats down on you through the shroud of smoke. You can taste the burnt rubber in the air. Your city is in chaos.\n\nYou pick up a shield and Kurt shepherds you to the end of the line of officers.\n\nKURT: You\u2019ll be safer here. Just shoulder-check the alleys and be on alert for flanking activity. You\u2019ll be fine. \n\nBefore you can respond, he\u2019s gone. Closer to the center and closer to the action. You try to find him in the line but can\u2019t. The order is given and you advance. \n\nIn the distance you can see where you\u2019re headed: a crowd of rioters lie ahead. They\u2019re not moving. You\u2019ll engage them soon.\n\n[[Shoulder-check.->12]]\n",
+      "links": [
+        {
+          "text": "Shoulder-check.",
+          "destination": {
+            "name": "12",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "12",
+      "text": "Nothing in the first alley but dumpsters. Keep moving forward. You\u2019re twenty meters out. You can see the rioter\u2019s faces now. Only their eyes are visible over bandanas. They\u2019re all carrying something\u2026 sticks or rods? You can\u2019t be sure.\n\nKURT: They have weapons!\n\nSARGE: Deploy!\n\nYour neighbour in the line reaches for his teargas launcher. Do you follow suit?\n\n[[Deploy your teargas.->13]]\n\n[[Shoulder-check. ->15]]\n",
+      "links": [
+        {
+          "text": "Deploy your teargas.",
+          "destination": {
+            "name": "13",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Shoulder-check. ",
+          "destination": {
+            "name": "15",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "13",
+      "text": "You mimic you\u2019re neighbour\u2019s every move and fire a canister of the gas. Yours joins the volley of the other officer\u2019s canisters and the view of the crowd is lost in a sea of mist. \n\n[[Shit! Shoulder-check!->14]]\n",
+      "links": [
+        {
+          "text": "Shit! Shoulder-check!",
+          "destination": {
+            "name": "14",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "14",
+      "text": "You swing your head around to look down the next alley\u2026nothing. You heave a deep relieved breath.\n\nYou look back and think you can make out a silhouette on the crowd\u2019s edge. It\u2019s pointing the rod at the line!\n\n[[Brace!->16]]\n",
+      "links": [
+        {
+          "text": "Brace!",
+          "destination": {
+            "name": "16",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "15",
+      "text": "No need to mess around with equipment you\u2019re not 100% confident using. \n\nYou check the alley\u2026 nothing. A crack draws your attention to the arching volley of canisters sent into the air. The crowd is lost in a sea of mist. \n\nYou think you can make out a silhouette on the crowd\u2019s edge. It\u2019s pointing the rod at the line!\n\n[[Brace!->16]]\n",
+      "links": [
+        {
+          "text": "Brace!",
+          "destination": {
+            "name": "16",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "16",
+      "text": "You tuck behind your shield as jets of light emerge through the mist. Sparking streams of red and green harmlessly scatter over your shield\u2019s transparent face. \n\nFireworks? \n\nNervous laughter comes from your fellow officers. \n\nSARGE: Keep moving!\n\nThe line advances.  Roman candles continue to fire. Then, the rioters get serious. Molotov cocktails arch their way towards you. But what do you do?\n\n[[Block the Molotov.->17]]\n\n[[Dodge the Molotov.->18]] \n",
+      "links": [
+        {
+          "text": "Block the Molotov.",
+          "destination": {
+            "name": "17",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Dodge the Molotov.",
+          "destination": {
+            "name": "18",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "17",
+      "text": "You raise your shield and feel the glass shatter across its face. Its surface is engulfed in flames. \n\nNEIGHBOUR: Snuff it out!\n\nYou press it against the pavement. The flames are incredibly persistent but finally dissipate. You regain your composure but your transparent shield is warped and charred.\n\n[[Keep Moving.->19]] \n",
+      "links": [
+        {
+          "text": "Keep Moving.",
+          "destination": {
+            "name": "19",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "18",
+      "text": "You hold your ground and wait as the cocktail misses you, but strikes your neighbour. \n\nHis shield is engulfed in flames. You move towards him but he pushes you away. He presses his shield against the pavement struggling mightily to snuff the fire. His shield is badly warped.\n\nNEIGHBOUR: Just do your job!\n\n[[Keep moving.->19]]\n",
+      "links": [
+        {
+          "text": "Keep moving.",
+          "destination": {
+            "name": "19",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "19",
+      "text": "Under the hail of bottled fire, the line advances. But not the whole line. While completing a shoulder-check left, you look right and see an officer frozen to the spot. \n\nIt\u2019s Kurt. \n\nWhat\u2019s wrong? Is he hurt? Has he seen something?\n\n[[Call to him.->20]]\n\n[[Hold your ground.->21]]\n\n[[Go help him.->22]]\n",
+      "links": [
+        {
+          "text": "Call to him.",
+          "destination": {
+            "name": "20",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Hold your ground.",
+          "destination": {
+            "name": "21",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Go help him.",
+          "destination": {
+            "name": "22",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "20",
+      "text": "PARKER: Kurt!!! \n\nYou call but there\u2019s no answer, not even a look. It\u2019s as if his blood turned to cement. \n\n[[What now?->23]] \n",
+      "links": [
+        {
+          "text": "What now?",
+          "destination": {
+            "name": "23",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "21",
+      "text": "You need to hold the line. Someone will see him, right? You keep moving. You shoulder check and\u2026\n\n[[Oh god.->24]]\n",
+      "links": [
+        {
+          "text": "Oh god.",
+          "destination": {
+            "name": "24",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "22",
+      "text": "Kurt is in trouble. There\u2019s no way you\u2019re going to leave him.\n\nThe line keeps moving as you run back. \n\nKurt\u2019s eyes are wide, his mouth lies slack and he doesn\u2019t respond to your calls or shaking. \n\nYou hear the clatter of heavy footfalls and see blurred movement in the reflection of Kurt\u2019s visor. You turn.\n\n[[Oh god.->24]]\n",
+      "links": [
+        {
+          "text": "Oh god.",
+          "destination": {
+            "name": "24",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "23",
+      "text": "[[Hold your ground.->21]]\n\n[[Help him.->22]]",
+      "links": [
+        {
+          "text": "Hold your ground.",
+          "destination": {
+            "name": "21",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Help him.",
+          "destination": {
+            "name": "22",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "24",
+      "text": "A rogue wave of rioters are sprinting at you from the alley.\n\n[[Hold your ground and face them.->25]]\n\n[[Warn the others.->26]]\n",
+      "links": [
+        {
+          "text": "Hold your ground and face them.",
+          "destination": {
+            "name": "25",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Warn the others.",
+          "destination": {
+            "name": "26",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "25",
+      "text": "You brace yourself and raise your baton. \n\n[[WHAM.->27]]\n",
+      "links": [
+        {
+          "text": "WHAM.",
+          "destination": {
+            "name": "27",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "26",
+      "text": "PARKER: Left fla-\n\n[[WHAM.->27]]\n",
+      "links": [
+        {
+          "text": "WHAM.",
+          "destination": {
+            "name": "27",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "27",
+      "text": "The sheer number of the rioters overtakes you. \n\nYour head hits the cement hard and your helmet rolls away, broken and useless. Your body tenses as you beg for footfalls to miss you. You lie prone for what seems like a couple of seconds. And as you look up, you see the legs of the last rioter pass by your head.\n\n[[Swing your baton.->28]]",
+      "links": [
+        {
+          "text": "Swing your baton.",
+          "destination": {
+            "name": "28",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "28",
+      "text": "Your blow connects with the rioter\u2019s ankle. You struggle to your feet as he limps his way back down the alley.\n\n[[Pursue him.->29]]\n",
+      "links": [
+        {
+          "text": "Pursue him.",
+          "destination": {
+            "name": "29",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "29",
+      "text": "Your head swims from the fall but you follow at a run. You twist and turn through the narrow path until you reach a dead end. The rioter stands waiting.\n\n[[Warn him verbally.->30]]\n\n[[Subdue and arrest him.->31]]\n\n[[Fire teargas into the alley.->32]]\n",
+      "links": [
+        {
+          "text": "Warn him verbally.",
+          "destination": {
+            "name": "30",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Subdue and arrest him.",
+          "destination": {
+            "name": "31",
+            "pid": 31
+          }
+        },
+        {
+          "text": "Fire teargas into the alley.",
+          "destination": {
+            "name": "32",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "30",
+      "text": "He\u2019s already hurt. Give him a chance to give up.\n\nPARKER: Come with me and we\u2019ll take a look at that leg, okay?\n\nSilence from the rioter.\n\n[[What Now?->33]]\n",
+      "links": [
+        {
+          "text": "What Now?",
+          "destination": {
+            "name": "33",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "31",
+      "text": "Here we go\u2026\n\nPARKER: You are under arrest for participating in a riot. (You advance) Place your hands behind your head and drop to your knees.\n\nYou retrieve your cable-tie cuffs and grip your baton. He follows neither of your requests.\n\nHe bolts.\n\n[[Trip him.->34]]\n\n[[Tackle him.->35]]\n",
+      "links": [
+        {
+          "text": "Trip him.",
+          "destination": {
+            "name": "34",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Tackle him.",
+          "destination": {
+            "name": "35",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "32",
+      "text": "You still have some teargas. You fire the canister into the rioter\u2019s end of the alley. The cloud engulfs him and you wait. He has to come out eventually. You retrieve your cable-tie cuffs and grip your baton.\n\nHe bolts.\n\n[[Trip him.->34]]\n\n[[Tackle him.->35]]\n",
+      "links": [
+        {
+          "text": "Trip him.",
+          "destination": {
+            "name": "34",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Tackle him.",
+          "destination": {
+            "name": "35",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "33",
+      "text": "[[Subdue and arrest him.->31]]\n\n[[Fire teargas into the alley.->32]]\n",
+      "links": [
+        {
+          "text": "Subdue and arrest him.",
+          "destination": {
+            "name": "31",
+            "pid": 31
+          }
+        },
+        {
+          "text": "Fire teargas into the alley.",
+          "destination": {
+            "name": "32",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "34",
+      "text": "You\u2019re half his size but with his leg, you\u2019re quicker. As he tries to pass you, you lunge out with your leg.\n\nHe falls and on his way down, he connects with the corner of a dumpster.\n\nHe lies face down. You pin him and retrieve your cuffs. It\u2019s over. You pull the cuff tight on one of his wrists when you see a creeping pool of blood on the pavement emerging from the rioter\u2019s head.\n\nYou\u2019ve killed him. He\u2019s dead.\n\n[[Get off of him.->36]]",
+      "links": [
+        {
+          "text": "Get off of him.",
+          "destination": {
+            "name": "36",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "35",
+      "text": "With his leg he\u2019s less of a threat. Take him down\u2026now!\n\nYou lunge and are just able to bring him down. He struggles, but you\u2019re able to fit your cuffs on one of his wrists.\n\nPARKER: Just stop!\n\nHe disobeys. He blindly flings an elbow from his uncuffed arm at your head. It barely misses. \n\nScrew this.\n\nYou throw all of your weight forward, throwing him onto the ground. He seems to have gotten the message, he no longer struggles. You take a breath and go to cuff his free hand when you notice a creeping pool of blood on the pavement emerging from the rioter\u2019s head.\n\nYou\u2019ve killed him. He\u2019s dead.\n\n[[Get off him.->36]]\n",
+      "links": [
+        {
+          "text": "Get off him.",
+          "destination": {
+            "name": "36",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "36",
+      "text": "You jump off him with the instance of a reflex. The sun beats on the alley like a spotlight. The shock seeps through your skin, engulfing you. The heat! Your vision wanes and waxes from focus. You\u2019re too hot!\n\n[[Strip off your gear.->37]]\n",
+      "links": [
+        {
+          "text": "Strip off your gear.",
+          "destination": {
+            "name": "37",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "37",
+      "text": "You shed your shell of hard plastic but the weight remains. Your balance leaves you and you drop\u2026\n\n[[Let go.->38]]\n",
+      "links": [
+        {
+          "text": "Let go.",
+          "destination": {
+            "name": "38",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "38",
+      "text": "<b>KURT</b>\n\n(At certain points in the story you will briefly inhabit a character other than Parker. This is one of those times.)\n<hr>\n\nThe skirmish is over. The rioters have either been arrested or have fled and now you finally have a moment to think.\n\nYou froze\u2026 \n\nAnd you don\u2019t know why. The thought crept into your head and a question was whispered: What if you didn\u2019t hold the line? And you stopped. \n\nThen, the engagement. They flanked the line on Parker\u2019s side and scattered your structure but you regrouped, and endured. Parker\u2026 where is he? You swing your head one way and the other but can\u2019t find your friend.\n\nKURT: Parker!?!\n\nThe only response is the crackle of cars burning.\n\nYou see a group of officers crowded in a circle. Is that him?\n\n[[Find out.->39]]\n",
+      "links": [
+        {
+          "text": "Find out.",
+          "destination": {
+            "name": "39",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "39",
+      "text": "You part the circle and see the Sarge lying on the ground. His visor melted to his face by a cocktail. You can\u2019t tell where his helmet ends and his face begins. He\u2019s in shock, muttering.\n\nSARGE: Get it off\u2026 Get\u2026off.\n\nFour officers lift him in unison and carry him back to the vehicle. \n\nOFFICER: Our commanding officer is down. Now what?\n\n[[Improvise a strategy.->40]]\n\n[[Stick to the plan.->41]]\n",
+      "links": [
+        {
+          "text": "Improvise a strategy.",
+          "destination": {
+            "name": "40",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Stick to the plan.",
+          "destination": {
+            "name": "41",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "40",
+      "text": "KURT: We get the hell out of here. This plan was odd but we\u2019re in it now. We\u2019ll push forward as quickly as possible. But first, let\u2019s find Parker.\n\nOFFICER: Yeah to everything except Parker. I haven\u2019t seen him either but he knows the mission as well as we do. He\u2019ll find us.\n\nIn the distance an explosion echoes. You watch as a new pillar of smoke emerges above the cityscape. \n\nKURT: Let\u2019s go.\n\n[[Move out.->42]]\n",
+      "links": [
+        {
+          "text": "Move out.",
+          "destination": {
+            "name": "42",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "41",
+      "text": "KURT: We get the hell out of here. Sarge may be outbut the plan stays the same. We\u2019ll push forward as quickly as possible. But first, let\u2019s find Parker.\n\nOFFICER: Yeah to everything except Parker. I haven\u2019t seen him either but he knows the mission as well as we do. He\u2019ll find us.\n\nIn the distance an explosion echoes. You watch as a new pillar of smoke emerges above the cityscape. \n\nKURT: Let\u2019s go.\n\n[[Move out.->42]]\n",
+      "links": [
+        {
+          "text": "Move out.",
+          "destination": {
+            "name": "42",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "42",
+      "text": "<b>PARKER</b>\n<hr>\n\nYou come to. \n\nThe sun that once shone straight into the alley now hides behind skyscrapers. How long have you been out? \n\nYou turn and see the body. The halo of blood is dry now, like sunbaked kelp at low tide. You need to get out of this alley. You take your baton and\u2026\n\n[[Leave.->43]]\n",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "43",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "43",
+      "text": "Your thoughts echo in the vast emptiness of the city street. Any signs of the skirmish, and your unit, have vanished. A blanket of smoke hangs high above the city. Pillars of fresh smoke feed it like rising tornadoes. One of these pillars is close and is glowing orange. \n\nYou have your heading.\n\nYou walk. The empty road feels more like a river when it\u2019s deserted. The tall buildings like the stalks of ever-reaching trees and you, very much alone in it all. \n\nAnd then you\u2019re not alone.\n\n[[Who is that?->44]]\n",
+      "links": [
+        {
+          "text": "Who is that?",
+          "destination": {
+            "name": "44",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "44",
+      "text": "In the distance, snaking towards you is a tandem bike, with a single rider. He pedals on as his invisible companion\u2019s pedals rotate behind him. \n\nAs he gets closer, you notice he\u2019s wearing a riot police helmet that\u2019s comically too big for him. It rotates on his head like a limb that\u2019s lost circulation. \n\nHe seems to break out of a his trance and notices you with a start. He loses control of the bike and his body slaps to the ground. Unfazed, he rises and takes a bow. His eyes peek at you from under his lowered forehead. He awaits the audience\u2019s review.\n\n[[You don\u2019t have time for this.->45]]\n\n[[Make him wait a little longer.->46]]\n\n[[Play along.->47]]\n",
+      "links": [
+        {
+          "text": "You don\u2019t have time for this.",
+          "destination": {
+            "name": "45",
+            "pid": 45
+          }
+        },
+        {
+          "text": "Make him wait a little longer.",
+          "destination": {
+            "name": "46",
+            "pid": 46
+          }
+        },
+        {
+          "text": "Play along.",
+          "destination": {
+            "name": "47",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "45",
+      "text": "The more time away from your unit, the harder it\u2019ll be to get out of here. That\u2019s all that matters.\n\nYou take out your badge from underneath your shirt. You show it to him.\n\nPARKER: That helmet isn\u2019t yours, kid. Where did you find it?\n\nThe rider panics, he struggles to hoist the tandem bike\u2019s frame from the road. You\u2019re already there, and you have your baton. \n\nWhat comes next?\n\n[[Wedge the baton in the wheel\u2019s spokes. You\u2019re not a thug.->48]]\n\n[[Maybe you are. How do you think he got that helmet? You need information.->49]]\n",
+      "links": [
+        {
+          "text": "Wedge the baton in the wheel\u2019s spokes. You\u2019re not a thug.",
+          "destination": {
+            "name": "48",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Maybe you are. How do you think he got that helmet? You need information.",
+          "destination": {
+            "name": "49",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "46",
+      "text": "You say nothing. Sometimes it\u2019s best to let the talkers talk.\n\nRIDER: Ha. Hey man, a smile would kill ya? I mean yeah I bailed pretty hard but I wore it like a champ and I\u2019d expect a little sympathy. Is it the helmet? I just didn\u2019t want a ticket. Ha! I mean it\u2019s not mine, or anything. Obviously. But it looked like a cool souvenir. \n\nYou\u2019ve waited long enough.\n\nPARKER: Where\u2019d you find it?\n\nThe rider eyes you hard.\n\nRIDER: Why, is it yours?\n\nHe exhales into a half laugh.\n\n[[PARKER: It might be, actually.->51]]\n",
+      "links": [
+        {
+          "text": "PARKER: It might be, actually.",
+          "destination": {
+            "name": "51",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "47",
+      "text": "You clap heartily.\n\nRIDER: Thank you! Thank you! What\u2019s up, man? You look pretty beat.\n\nPARKER: I\u2019m fine. There was some fireworks earlier which was pretty cool but, you know, just taking it all in. What about you? (Gesture to the helmet) Looks like you\u2019ve seen some shit.\n\nRIDER: Yeah, man! Just trying to be a fly on the wall you know? Cruising through each moment. This is all pretty surreal and it doesn\u2019t happen every day. \n\nYeah, kid it\u2019s magical. Get back to the helmet.\n\nPARKER: I bet. It\u2019s all pretty crazy. So, what\u2019s the story with that helmet? How does a fly on the wall get that? \n\nRIDER: This? Oh, I just don\u2019t want to get a no-lid ticket. This city\u2019s all about law and order. \n\nHe laughs at his own joke but sees that you aren\u2019t.\n\nPARKER: Seriously though, where\u2019d you get it?\n\n[[Pull out your badge.->52]]\n",
+      "links": [
+        {
+          "text": "Pull out your badge.",
+          "destination": {
+            "name": "52",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "48",
+      "text": "As he begins to push on his pedals, you wedge your baton in the rear wheel. Once again, the rider tumbles to the ground.\n\nHe sits looking up at you with terror in his eyes. The helmet droops over his face and he yelps as he regains his vision.\n\nNot once in your life have you been considered terrifying. The guilt scratches inside your stomach. \n\nPARKER: Hey, it\u2019s okay. I just need to know where the helmet came from and then you can go. That\u2019s it.\n\nHe squints as sweat drips into his eyes but he fights not to close them. \n\nRIDER: One of those\u2026swat truck things. One of them\u2019s burning. Right over there.\n\nHe points to one of the closer plumes of smoke.\n\nPARKER: Okay. You can go.\n\nHe tosses the helmet aside and runs. The bike lies abandoned in his wake.\n\nPARKER: Your bike!\n\nBut he\u2019s gone.\n\nWell, time is of the essence, and now you have a bike.\n\n[[Ride to the smoke.->50]]\n",
+      "links": [
+        {
+          "text": "Ride to the smoke.",
+          "destination": {
+            "name": "50",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "49",
+      "text": "You hold the baton across both your hands and cross-check the rider to the ground. He sits looking up at you with terror in his eyes. His helmet slides over his eyes hiding the origin of two tear streaks sliding down his cheeks.\n\nWell, he\u2019s scared now. \n\nYou wrench the helmet off his head and look him in the eyes. \n\nPARKER: Where did you get this?\n\nHe begins to turn his head but you pull it back to face yours. \n\nPARKER: No. I\u2019m right here. Where did you get this?\n\nRIDER: I \u2013 I\u2019m trying to show you. There. Right there.\n\nTrying not to turn from you he points to a nearby plume of smoke. \n\nPARKER: What happened?\n\nRIDER: I don\u2019t know! I got there afterwards. There wasn\u2019t much left. They burnt one of those SWAT truck things and this is what\u2019s left. That\u2019s it I promise!\n\nPARKER: Okay. You can leave.\n\nAnd he\u2019s gone. He\u2019s running as fast as he can from you. Guilt tugs at the top of your stomach. Not once has someone thought of you as terrifying, until now. What are you doing?\n\nAnyway, time is very much of the essence and now you have a bike. \n\n[[Ride to the smoke.->50]]\n",
+      "links": [
+        {
+          "text": "Ride to the smoke.",
+          "destination": {
+            "name": "50",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "50",
+      "text": "\nYou hop onto the bike and head towards the smoke. You glance back over your shoulder and see the rear pedals spinning on their own. It\u2019s a strange feeling riding a tandem bike alone.\n\nYou round a corner and find a strange scene unfolding. \n\nYou coast towards a group of people surrounding a once very expensive burning car. One by one, they each take a turn at trying to run across the flame-engulfed roof of the vehicle.  It reminds you of those people who can walk on a bed of coals and come out unscathed.\n\nThat kid was right, it\u2019s easy to be a fly on the wall while riding this thing but do you go closer and explore this event?\n\n[[What could it hurt? Moments like these can\u2019t be manufactured in police training.->53]]\n\n[[You shouldn\u2019t screw around. Getting out of here is your only priority.->54]]\n",
+      "links": [
+        {
+          "text": "What could it hurt? Moments like these can\u2019t be manufactured in police training.",
+          "destination": {
+            "name": "53",
+            "pid": 53
+          }
+        },
+        {
+          "text": "You shouldn\u2019t screw around. Getting out of here is your only priority.",
+          "destination": {
+            "name": "54",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "51",
+      "text": "He frowns but then sees your baton in your belt loop.\n\nRIDER: Shit. Hey man I just found it and picked it up. I didn\u2019t do anything. I\u2019m more of an intrigued observer if you know what I mean.\n\nPARKER: So\u2026\n\nRIDER: Right! Right over there, man. (he points to a nearby plume of smoke) it was pretty crazy. I mean the cops and stuff.\n\nPARKER: I can imagine. Thank you.\nYou take a step forward and he begins to backpedal.\n\nRIDER: You know, I think I\u2019m just going to go home now. Really not the safest place to be. Probably some bad life experiences and stuff so\u2026 yeah.\n\nHe turns and runs. Going, going\u2026gone.\n\nWell, that was odd. But time is of the essence and now you have a bike.\n\n[[Ride to the smoke.->50]]",
+      "links": [
+        {
+          "text": "Ride to the smoke.",
+          "destination": {
+            "name": "50",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "52",
+      "text": "The rider panics, he struggles to hoist the tandem bike\u2019s frame from the road. You\u2019re already there, and you have your baton. \n\nWhat comes next?\n\n[[Wedge the baton in the wheel\u2019s spokes. You\u2019re not a thug.->48]]\n\n[[Maybe you are. How do you think he got that helmet? You need information.->49]]\n",
+      "links": [
+        {
+          "text": "Wedge the baton in the wheel\u2019s spokes. You\u2019re not a thug.",
+          "destination": {
+            "name": "48",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Maybe you are. How do you think he got that helmet? You need information.",
+          "destination": {
+            "name": "49",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "53",
+      "text": "The angel and devil joust on your shoulders but the latter wins out. You glide closer to the flames.\n\nYou lay the bike down and proceed on foot. \n\nIf the others in the crowd notice you, they don\u2019t show it. All of them stare at the car, mouths agape, eyes unblinking.\n\nThe next contestant tries his luck. He strides backwards to get a running start, psyches himself up, then runs. Giant strides close the distance quickly. He\u2019s on the hood, the winsheild\u2026\n\nThen he slips.\n\nHe slides across the roof of the car but bounces to his feet as fast as he fell. Clothes singed, he decends off of the car\u2019s trunk and rolls on the ground to smother any notions of a fire.\n\nThe others whoop and cheer and the man raises his arms in adrenaline-fueled ecstasy.\n\nYou hear a soft and steady sobbing from the other side of the car. You walk around the group\u2019s perimeter and see a man in a once very expensive suit. He sits on the curb as tears tug his body forward. In his hands are a set of car keys.\n\nYou put two and two together and look at the burning remains of the man\u2019s car. You look at the crowd and see that they are now looking at you.\n\nWhen you walked to the sobbing man you walked right where the last contestant started his run up. You look down the path to the flames. What do you do?\n\n[[Run through the flames. Who knows what they\u2019d do to you if you refuse?->55]]\n\n[[Get the sobbing man and make for the bike. What will they do to him once the flames go out?->56]]\n",
+      "links": [
+        {
+          "text": "Run through the flames. Who knows what they\u2019d do to you if you refuse?",
+          "destination": {
+            "name": "55",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Get the sobbing man and make for the bike. What will they do to him once the flames go out?",
+          "destination": {
+            "name": "56",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "54",
+      "text": "You turn and look for another way around.\n\n[[Press on.->58]]",
+      "links": [
+        {
+          "text": "Press on.",
+          "destination": {
+            "name": "58",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "55",
+      "text": "A voice inside your head whispers\u2026\"go\".\n\nYou run at the car with everything you have, all the guilt that writhes in your body, all the fear of what comes next. You\u2019re at the hood, the windshield, the roof, flames singe the souls of your shoes, the trunk and then\u2026 the road.\n\nYou roll like the runner before you and rise to the whoops of the crowd. But then they\u2019re silent. They stare at with a consuming emptiness. What is it? Then you follow their eyes to your chest.\n\nYour badge has become dislodged from behind your shirt.\n\n[[Run.->57]]\n",
+      "links": [
+        {
+          "text": "Run.",
+          "destination": {
+            "name": "57",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "56",
+      "text": "It\u2019s time you lived up to your job description.\n\nYou run at the car but at the last moment peel off towards the man. You grab him and run toward the bike. \n\nAn unspoken covenant has been broken and you know it. The group barrels down towards you both. \n\nYou run like hell until your hands seize the handlebars. You hop on the bike and the man follows your lead.\n\nWith each pedal you press all of your weight towards the ground.\n\nThey\u2019re gaining on you.\n\nYou look back at the sobbing man and urge his pedals to spin.\n\nPARKER: Faster!!!\n\nThey oblige, and spin faster as the two of you synch-up. Your pursuers lose pace and fall back until they finally they stop. \n\nYou round the corner leaving them behind.\n\nAs soon as you\u2019re out of sight you feel the back of the bike swerve. You turn to see the back of the sobbing man running away from you. \n\n[[Press on.->58]]\n",
+      "links": [
+        {
+          "text": "Press on.",
+          "destination": {
+            "name": "58",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "57",
+      "text": "You run like hell toward the bike. Your hands seize the handlebars. You chance a look and see the group barelling down on you. You run with the bike then hop onto it, pushing down on each pedal with all your weight. \n\nThey\u2019re gaining on you.\n\nYou look back at the phantom rider and will his pedals to spin.\n\nPARKER: Faster!!!\n\nThey oblige and spin faster. Your pursuers lose pace and fall back until finally they stop. \n\nYou round the corner, leaving them behind.\n\n[[Press on.->58]]",
+      "links": [
+        {
+          "text": "Press on.",
+          "destination": {
+            "name": "58",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "58",
+      "text": "Finally you arrive at the source of the smoke.\n\nYou leave the bike and move cautiously forward. The fire is almost out now. Nothing left to burn. You get closer and explore the steaming skeletal remains of your riot vehicle. There\u2019s nothing left.\n\nAll this way for nothing. \n\nUntil\u2026\n\nYou find a body.\n\nIt\u2019s a young girl. She can\u2019t be more than twelve. She\u2019s not moving.\n\nWhat could have possibly led to this? Who could have just left her behind. \n\nShe slowly opens her eyes.\n\nThey find you and widen. With a powerful cry, she\u2019s up and swinging.\n\nShocked, you recoil, trying to convey that you pose no threat. \n\nShe\u2019s panting, panicked, standing rooted to the spot. What now?\n\n[[Question her. If you know more, you can help her. Who was she with? Why is she here?->59]]\n\n[[Calm her. She\u2019s terrified and with good reason. Help her calm down, she needs to know she\u2019s not in danger.->60]]\n",
+      "links": [
+        {
+          "text": "Question her. If you know more, you can help her. Who was she with? Why is she here?",
+          "destination": {
+            "name": "59",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Calm her. She\u2019s terrified and with good reason. Help her calm down, she needs to know she\u2019s not in danger.",
+          "destination": {
+            "name": "60",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "59",
+      "text": "PARKER: Whoa, whoa, whoa. It\u2019s okay! What happened here? Are you okay?\n\nHer eyes stay locked on you. She says nothing. You try again.\n\nPARKER: I\u2019m going to help you get out of here. You can trust me. Were there any police officers here? \n\nShe nods.\n\nPARKER: Okay, good. I\u2019m one too.\n\n[[Take out badge.->61]]\n",
+      "links": [
+        {
+          "text": "Take out badge.",
+          "destination": {
+            "name": "61",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "60",
+      "text": "Maintaining eye contact, you sit cross-legged. You\u2019re not a threat.\n\nPARKER: Are you okay? I thought you were hurt. I\u2019m just looking for my friend. Is it okay that I sit here?\n\nYou can see the gears turning. She nods.\n\nPARKER: Okay. Can you tell me if there were police officers here?\n\nShe nods again. \n\nPARKER: Good, that\u2019s a big help. I\u2019m a police officer.\n\n[[Take out your badge.->61]]\n",
+      "links": [
+        {
+          "text": "Take out your badge.",
+          "destination": {
+            "name": "61",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "61",
+      "text": "You seem to have her attention. Her fists fall to her sides but she still stays planted.\n\n[[Toss her the badge.->62]]\n\n[[Establish a rhythm. Build trust.->63]]\n",
+      "links": [
+        {
+          "text": "Toss her the badge.",
+          "destination": {
+            "name": "62",
+            "pid": 62
+          }
+        },
+        {
+          "text": "Establish a rhythm. Build trust.",
+          "destination": {
+            "name": "63",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "62",
+      "text": "You remove the badge from around your neck and lob it toward her. It sails and falls at her feet. She picks it up and runs her thumb across its surface.\n\nPARKER: So what do you think?\n\nShe puts it around her neck. \n\nPARKER: Cool, right? You can wear it for a bit if you\u2019d like. My name\u2019s Parker, what\u2019s yours?\n\nShe pauses. Looks at her reflection in the sheen of the badge.\n\nALICE: I\u2019m Alice.\n\nPARKER: Okay, Alice. Can you keep that safe for me?\n\nShe hides it under her shirt and nods. \n\nPARKER: Good-\n\nALICE: You\u2019re bad at this.\n\nPARKER: What do you mean?\n\nALICE: You\u2019re not asking questions right. Questions are important, you know. You need to ask good questions to get good answers. \n\nPARKER: Uh, am I not doing that? I know your name. I know there were police officers here.\n\nALICE: Hi, my name\u2019s Sarah. Hi, my name\u2019s Bob.\n\nPARKER: So are you Sarah, Bob, or Alice?\n\nALICE: See? You don\u2019t know. And now I\u2019ve got your badge. I told you, you\u2019re bad at this.\n\n[[Good. Let her think she\u2019s in control.->64]]\n\n[[Oh yeah?->65]]\n",
+      "links": [
+        {
+          "text": "Good. Let her think she\u2019s in control.",
+          "destination": {
+            "name": "64",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Oh yeah?",
+          "destination": {
+            "name": "65",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "63",
+      "text": "She reaches out for the badge but you hold back.\n\nPARKER: I\u2019ll let you take a look at this if you answer a couple of questions for me, okay?\n\nShe nods.\n\nPARKER: Great. So, what\u2019s your name?\n\nALICE: Alice.\n\nShe takes a step forward and you do too.\n\nPARKER: Okay, Alice. Can you tell me if you saw any police officers here?\n\nALICE: Yes. \n\nShe takes a couple more of steps forward.\n\nPARKER: Where did they go?\n\nYou step forward. You\u2019re no more than two meters apart. \n\nPARKER: Catch. \n\n[[You toss her the badge.->63A]]\n",
+      "links": [
+        {
+          "text": "You toss her the badge.",
+          "destination": {
+            "name": "63A",
+            "pid": 123
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "64",
+      "text": "PARKER: Good point. Maybe we should team up? We could help each other and both get out of here.\n\nALICE: How do you help me?\n\nPARKER: How old are you, Alice?\n\nALICE: Twelve.\n\nPARKER: Are the people you\u2019ve seen around here mostly older or younger than you?\n\nALICE: Older.\n\nPARKER: Interesting. Have they been bigger or smaller than you?\n\nALICE: Bigger\u2026 I get it. \n\nPARKER: Yeah, having an adult around might not be the worst idea. \n\nALICE: Yeah.\n\nPARKER: Okay then. Which way did the police go?\n\nAlice spins slowly like the needle of a compass until finally she stops. Her finger points down the road, further from the core.\n\n[[That way.->66]]\n\n\n",
+      "links": [
+        {
+          "text": "That way.",
+          "destination": {
+            "name": "66",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "65",
+      "text": "PARKER: Okay. Why were you playing dead?\n\nALICE: I\u2026I thought people would leave me alone. \n\nPARKER: How\u2019s that working out for you?\n\nAlice looks at her shoes.\n\nPARKER: Playing dead actually attracts attention. And that\u2019s the last thing you want.\n\nALICE: I guess a cop would know all that.\n\nPARKER: Help me get back to my friends, and we can both get out of here.\n\nYou can see the gears turning in Alice\u2019s head again and she nods.\n\nPARKER: Which way?\n\nAlice spins slowly like the needle of a compass until finally she stops. Her finger points down the road, further from the core.\n\n[[That way.->66]]\n",
+      "links": [
+        {
+          "text": "That way.",
+          "destination": {
+            "name": "66",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "66",
+      "text": "The walk is mostly spent in silence. You\u2019re not sure how to make small talk with a twelve year old. The hazy circle of the sun drops below the skyline and the air shifts from hot to cold.\n\nAlice is shivering so you pause beside the smoldering embers of a burned out car to warm up.\n\nPARKER: So if you\u2019re twelve, what grade are you in?\n\nALICE: Six.\n\nPARKER: Yeah, you\u2019ve got some grade six attitude.\n\nALICE: It\u2019s not attitude, I just ask good questions.\n\nPARKER: Hm. Do you know why police officers are called cops?\n\nAlice shakes her head no.\n\nPARKER: It\u2019s short for copper. A long time ago every police officer wore a uniform that had shiny copper buttons. So when people saw those buttons, they knew it was a cop.\n\nALICE: Why aren\u2019t you wearing a uniform?\n\nShe does ask good questions. \n\n[[Tell a half-truth.->67]]\n[[Deflect.->68]]\n",
+      "links": [
+        {
+          "text": "Tell a half-truth.",
+          "destination": {
+            "name": "67",
+            "pid": 67
+          }
+        },
+        {
+          "text": "Deflect.",
+          "destination": {
+            "name": "68",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "67",
+      "text": "PARKER: I don\u2019t want people to know who I am right away. So I don\u2019t make it easy to spot the copper buttons. \n\nALICE: So you use your badge?\n\nPARKER: When I need to.\n\nThe embers of the car go out. The cold returns. Time to get moving.\n\nALICE: What goes up must go down.\n\nYou look at her, puzzled, then follow her gaze to the sky. The smoke that was held aloft by the day\u2019s heat steadily sinks to the surface.\n\nIn the distance, only the glow of streetlights can now be seen. Like lily pads on a pond, you can use them to cross through the darkness. You need to go. Now.\n\nPARKER: Ready to go?\n\nAlice looks at the smoke, then at you. She hugs your arm with both of hers and takes a steadying breath.\n\nALICE: Ready.\n\n[[Enter the mist.->69]]\n",
+      "links": [
+        {
+          "text": "Enter the mist.",
+          "destination": {
+            "name": "69",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "68",
+      "text": "PARKER: Who needs one when you\u2019ve got an badge? Don\u2019t you think I\u2019d look weird in the uniform all by myself?\n\nALICE: So it\u2019s okay when there\u2019s a lot of you but when you\u2019re alone you don\u2019t like to look like a policeman?\n\nPARKER: Something like that.\n\nThe embers of the car go out. The cold is more present. You can\u2019t just sit here.\n\nALICE: What goes up must go down.\n\nYou look at her, puzzled, then follow her gaze to the sky. The smoke that was held aloft by the day\u2019s heat steadily sinks to the surface.\n\nIn the distance, only the glow of streetlights can now be seen, like lily pads on a pond you can use them to cross through the darkness.  You need to go. Now.\n\nPARKER: Ready to go?\n\nAlice looks at the smoke, then at you. She hugs your arm with both of hers and takes a steadying breath.\n\nALICE: Ready.\n\n[[Enter the mist.->69]]\n\n",
+      "links": [
+        {
+          "text": "Enter the mist.",
+          "destination": {
+            "name": "69",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "69",
+      "text": "The mist is thick. After only a few steps your once white shirt is now stained grey. You roll your feet from heel to toe so as to move as silently as possible. Due to her size, Alice can barely be heard. \n\nYou move forward. The streetlamp you seek no bigger than a pixel ahead of you. But it\u2019s not the only source of light. Glowing rectangular slabs swing and bob in the distance. What are they?\n\nBefore you can speculate, a scream cuts through the fog.\n\nOne rectangle goes out.\n\nThe shadows that prompted the scream dart past you. You get a glimpse of their bandana-clad faces. Thankfully they don\u2019t see you.\n\nAlice\u2019s grip tenses but she doesn\u2019t make a sound. Good girl. You keep moving, fixed on the static light in the distance. \n\nYou can feel the soot coat the inside of your mouth. Alice tries but fails to stifle a cough. You lower yourself to her level and find her eyes bursting apologetically. You smile at her and have an idea. You tug at the collar of her shirt and hook it over her nose. It\u2019s not perfect but it should help.\n\nWhat about you? You think about covering your own face but remember the bandana wearing attackers that passed. \n\nDo you risk being mistaken for one of them or do you leave yourself open to the filth that surrounds you?\n\n[[Cover your face. If you\u2019re found it won\u2019t matter who people think you look like.->70]]\n\n[[Leave your face uncovered. In a flash encounter, first impressions are everything. You will not look like one of them.->71]]\n",
+      "links": [
+        {
+          "text": "Cover your face. If you\u2019re found it won\u2019t matter who people think you look like.",
+          "destination": {
+            "name": "70",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Leave your face uncovered. In a flash encounter, first impressions are everything. You will not look like one of them.",
+          "destination": {
+            "name": "71",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "70",
+      "text": "You cover your face and immediately feel the relief of cleaner air. You find the streetlamp\u2019s light and keep moving. \n\nYou\u2019re getting closer now. But another light pulls your focus. You look to your left and finally the source of the glowing rectangles.\n\nThey\u2019re phones. This one belongs to a woman who holds hers aloft, trying to avoid potential obstacles. The cruel irony is that the light keeps her eyes from adjusting to the darkness, leaving her blind and vulnerable to those whose eyes have.\n\nAs if on cue, you hear the footfalls of the attackers you saw before. They creep closer to the woman. Alice\u2019s nails bite into your arm. What do you do? You can\u2019t call out to her or the attackers will see you. But you can\u2019t just watch.\n\nYou reach for your baton. As you unsheathe it from your belt loop you guide Alice behind you.\n\nThe last time you attacked someone they ended up dead. Maybe you can prevent harm this time. You take a deep breath through your shirt. \n\n[[Now.->72]]\n\n",
+      "links": [
+        {
+          "text": "Now.",
+          "destination": {
+            "name": "72",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "71",
+      "text": "You spit out the grime that lines your mouth and keep moving. You are not a threat and you won\u2019t look like one. You find the streetlamp\u2019s light and keep moving.\n\nYou\u2019re getting closer now. But another light pulls your focus. You look to your left and finally understand the glowing rectangles.\n\nIt\u2019s a phone. This one belongs to a woman who holds it aloft, trying to avoid potential obstacles. The cruel irony is that the light keeps her eyes from adjusting to the darkness, leaving her blind and vulnerable to those whose eyes have.\n\nAs if on cue, you hear the footfalls of the attackers you saw before. They creep closer to the woman. Alice\u2019s nails bite into your arm. What do you do? You can\u2019t call out to her or the attackers will see you. But you can\u2019t just watch.\n\nYou reach for your baton. As you unsheathe it from your belt loop you guide Alice behind you.\n\nThe last time you attacked someone they ended up dead. Maybe you can prevent harm this time. You filter a deep breath through gritted teeth. \n\n[[Now.->74]]\n",
+      "links": [
+        {
+          "text": "Now.",
+          "destination": {
+            "name": "74",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "72",
+      "text": "You raise your baton and prepare to strike.\n\nThen a blinding light.\n\nYou shield your eyes as a voice rings out.\n\nJACK: Bludgeoned, tear gassed, and still ticking, this is Jack Brown continuing to\u2026exclusively from\u2026damn. Can we take that again?\n\nMAYA: We\u2019re live, Jack.\n\nJACK: Right, never mind.\n\nAs your eyes adjust, you see that these are the voices of a reporter and camerawoman. Her face is protected with a scarf but the reporter\u2019s face is open. The light has lifted the curtain on the scenario about to unfold. Jack sees the woman holding her phone.\n\nJACK: And yet another poor soul lost in this dead zone.\n\nShe turns from the camera light and sees the men now illuminated behind her. She screams and is gone.\n\nJACK: There! The bandana-clad ruffians who prey on the helpless. You cowards!\n\nThe two attackers flee as Jack takes a swing at them with his microphone. Then the camera\u2019s light turns on you.\n\nMAYA: There\u2019s another one! And a kid.\n\nJack faces you.\n\nJACK: What have we here? \n\nYou realize how this looks. Your face covered, baton raised\u2026and the camera is pointed right at you.\n\nTalking your way out of this wont help you. But the camera can\u2019t film what it can\u2019t see.\n\n[[Break the light.->73]]\n",
+      "links": [
+        {
+          "text": "Break the light.",
+          "destination": {
+            "name": "73",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "73",
+      "text": "In one fluid motion you smash the light with your baton. Once again you\u2019re surrounded by darkness.\n\nJACK: Sabotage!\n\nPARKER: Quiet! The light attracts them.\n\nJACK: Who?\n\nPARKER: The, uh, \u201cruffians\u201d. Now, be quiet and let\u2019s get out of here. Everyone link up.\n\nYou keep Alice in front of you and feel Jack grab a handful of your shirt.\n\nJACK: Ready.\n\nYou move together as a train.\n\nJACK (whispering): For those of you just joining us, we are being led, blindly, through the infinite darkness by a mysterious stranger.\n\n[[Shut him up.->75]]\n\n[[You kind of like being the \u201cmysterious stranger\u201d\u2026->76]]\n",
+      "links": [
+        {
+          "text": "Shut him up.",
+          "destination": {
+            "name": "75",
+            "pid": 75
+          }
+        },
+        {
+          "text": "You kind of like being the \u201cmysterious stranger\u201d\u2026",
+          "destination": {
+            "name": "76",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "74",
+      "text": "You raise your baton and prepare to strike.\n\nThen a blinding light.\n\nYou shield your eyes as a voice rings out.\n\nJACK: Bludgeoned, tear gassed, and still ticking, this is Jack Brown continuing to\u2026exclusively from\u2026damn. Can we take that again?\n\nMAYA: We\u2019re live, Jack.\n\nJACK: Right, never mind.\n\nAs your eyes focus, you see that the voices belong to a reporter and camerawoman. Her face is protected with a scarf but the reporter\u2019s face is open, like yours. The light has lifted the curtain on the scenario about to unfold. Jack sees the woman.\n\nJACK: And yet another poor soul lost in this dead zone.\n\nShe turns from the camera light and sees the men now illuminated behind her. She screams and is gone.\n\nJACK: There! The bandana-clad ruffians who prey on the helpless. You cowards!\n\nThe two men flee as Jack takes a swing at them with his microphone. Then the camera\u2019s light turns on you.\n\nMAYA: There\u2019s another one! And a kid.\n\nJack faces you.\n\nJACK: What have we here? \n\nYou realize how this looks. Even without a bandana you stand with your baton raised, about to strike\u2026and the camera is pointed right at you.\n\nThere\u2019s no time to explain what happened but the camera can\u2019t film what it can\u2019t see.\n\n[[Break the light.->73]]\n",
+      "links": [
+        {
+          "text": "Break the light.",
+          "destination": {
+            "name": "73",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "75",
+      "text": "PARKER: You think talking won\u2019t attract attention?\n\nJack seems to get the point and is silent the rest of the way.\n\n[[Continue.->77]]\n",
+      "links": [
+        {
+          "text": "Continue.",
+          "destination": {
+            "name": "77",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "76",
+      "text": "You allow yourself to smile. There hasn\u2019t been much to laugh at today.\n\nJACK: Ouch! Maya?\n\nThe camerawoman, Maya, seems to understand the need for silence. Jack gets the point and is silent the rest of the way.\n\n[[Continue.->77]]\n",
+      "links": [
+        {
+          "text": "Continue.",
+          "destination": {
+            "name": "77",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "77",
+      "text": "Finally you reach the streetlight. A halo of light greets you as you exit the blackness. But you\u2019re not alone. \n\nTwo others sit at the lamp\u2019s base, one consoling the other.\n\nJACK (to you): Finally! Permission to speak, Sir?\n\nThe two are startled by your sudden appearance. One runs and the other hurls a piece of debris at you before bolting.\n\n[[Duck!->78]]\n",
+      "links": [
+        {
+          "text": "Duck!",
+          "destination": {
+            "name": "78",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "78",
+      "text": "You hear the projectile whistle by your head followed by a muffled crunch.\n\nMAYA: Jack!\n\nYou swing around to see Jack on the ground. His hands are pressed against his nose. Blood drips from between his fingers.\n\nYou go to help.\n\nJACK: Ahhhh! Oh, for Pete\u2019s sake!\n\nMAYA: That little prick.\n\nJACK: No. No, I startled them.\n\nYou lead him closer to the center of the light\u2019s halo to get a better look at the damage.  \n\nHis nose is very broken.\n\nYou need straighten it while you can. But should you warn him, or just do it?\n\n[[Warn him. You don\u2019t know this man and this is going to hurt.->79]]\n\n[[It\u2019s going to hurt a lot less if you surprise him. Rip the Band-Aid.->80]]\n",
+      "links": [
+        {
+          "text": "Warn him. You don\u2019t know this man and this is going to hurt.",
+          "destination": {
+            "name": "79",
+            "pid": 79
+          }
+        },
+        {
+          "text": "It\u2019s going to hurt a lot less if you surprise him. Rip the Band-Aid.",
+          "destination": {
+            "name": "80",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "79",
+      "text": "PARKER: Jack? I\u2019m going to need to straighten this out so it heals properly. It\u2019s going to be a bit-\n\nJack waves you off. \n\nJACK: Yes, yes, just do it, son.\n\n[[Do it.->80]]\n",
+      "links": [
+        {
+          "text": "Do it.",
+          "destination": {
+            "name": "80",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "80",
+      "text": "You place your thumbs on either side of the mangled cartilage and press. Jack yelps with pain as his nose cracks into place. His fingers run along the now straight arch.\n\nThis is your first opportunity to actually see Jack. He\u2019s older, close to the mandatory age of retirement. His hair and skin are stained grey by silt but his eyes are a hard and icy blue. You look at them and see that Jack is doing similar visual reconnaissance.\n\nJACK: Thank you.\n\nYou nod.\n\nJACK: And thank you for getting us out of there. You were quite right, like moths to the flame, hm?\n\nMAYA: Thanks? This guy broke my camera-light! He\u2019s with some kid and looked pretty comfy in the dark.\n\nJack looks at you but talks to Maya.\n\nJACK: You\u2019re quite right. But there are many reasons that could account for what we saw.\n\nMAYA: But-\n\nJACK: Maya, please. Give this man a chance to defend himself. First, who is the child?\n\n[[Tell him what\u2019s going on. You did nothing wrong\u2026this time.->81]]\n\n[[Keep your cards close to your chest. Why do you need to prove yourself to him?->82]]\n",
+      "links": [
+        {
+          "text": "Tell him what\u2019s going on. You did nothing wrong\u2026this time.",
+          "destination": {
+            "name": "81",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Keep your cards close to your chest. Why do you need to prove yourself to him?",
+          "destination": {
+            "name": "82",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "81",
+      "text": "PARKER: Her name is Alice. She was lost and abandoned. I\u2019m just trying to get her out of here.\n\nJACK: And the baton? The camera? You didn\u2019t exactly look passive back there.\n\nPARKER: I found Alice near an overturned police vehicle. I took the baton for our protection.\n\nMAYA: And my camera?\n\nPARKER: I\u2019m sorry. I panicked. I knew there wasn\u2019t time to explain. I had to get that light out. \n\nJACK: Alice, my dear. Is what he\u2019s saying true?\n\nAlice nods without hesitation.\n\nJack\u2019s face softens with relief, Maya\u2019s not so sure.\n\nJACK: Then there you have it. What\u2019s your name, sir?\n\nPARKER: Parker.\n\nJACK: It\u2019s truly good to meet you, Parker.\n\nHe beams at you as you shake hands. Alice runs to your side, once again clinging to you.\n\nJACK: I\u2019m not sure what you have planned, but there\u2019s a restaurant a little ways from here where other journalists have been filing their stories. It\u2019s one of the few places left with an internet connection. If you come with us we should be able to get both of you out.\n\nYou think of Kurt and the others but now that you have Alice, how would that work?\n\nJACK: Believe me, you\u2019re not likely to find other allies in this place. Between the rioters and the police, this is the best chance at staying safe.\n\nPARKER: What do you mean the police?\n\nMAYA: Here.\n\nShe shows you footage from her camera\u2019s viewfinder. You box out Alice so she can\u2019t see.\n\nPolice violently detain a man. They keep swinging. Then she shows you another clip of the same.\n\nMAYA: It\u2019s happening all over.\n\nAnother clip.\n\nJACK: There seems to be no one in charge. \n\nAnd another clip.\n\nJACK: Unchecked recklessness.\n\nThen in the last clip you see Kurt. He\u2019s standing as two officers pin a young man to the ground. \n\nHe\u2019s just watching. Then he steps forward.\n\nYou push the camera away.\n\nPARKER: I get it... We\u2019ll go with you.\n\nJACK: Good. It\u2019s too far to go tonight. Let\u2019s find a place to sleep and leave first thing. Shall we?\n\nThe images you just saw bite into your eyes. \n\nWhat is happening?\n\nAlice looks at you, politely puzzled. You regain focus.\n\nPARKER: Okay, let\u2019s go.\n\n[[Get going.->83]]\n",
+      "links": [
+        {
+          "text": "Get going.",
+          "destination": {
+            "name": "83",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "82",
+      "text": "You say nothing. And stare Jack down. \n\nJACK: I want to trust you, son.\n\nAlice runs between you and Jack. She clings throws her arms around your waist.\n\nALICE: My name is Alice and he didn\u2019t do anything wrong! I was lost and he\u2019s just trying to help me. He\u2019s a good-guy.\n\nShe looks up at you and smiles. You see the chain of your badge glint around her neck. \n\nYou smile back.\n\nJACK: I\u2019m glad you\u2019re safe, Alice. \n\nHe looks back at you.\n\nJACK: But what about the baton? And the camera?\n\nALICE: He-\n\nJACK: I\u2019d like to hear it from him, sweetheart.\n\nJack looks at you and doesn\u2019t blink. This will get complicated if you don\u2019t explain.\n\nPARKER: I found Alice near an overturned police vehicle. I took the baton for our protection.\n\nMAYA: And my camera?\n\nPARKER: I\u2019m sorry. I panicked. There wasn\u2019t time to explain. I had to get that light out. \n\nJACK: Alice, my dear. Is all of this true?\n\nAlice nods without hesitation.\n\nJack\u2019s face softens with relief, Maya\u2019s not so sure.\n\nJACK: Then there you have it. What\u2019s your name, sir?\n\nPARKER: Parker.\n\nJACK: It\u2019s truly good to meet you, Parker.\n\nHe beams at you as you shake hands. Alice runs to your side, once again clinging to you.\n\nJACK: I\u2019m not sure what you have planned, but there\u2019s a restaurant not far from here where other journalists have been filing their stories. It\u2019s one of the few places left with an internet connection. If you come with us we should be able to get both of you out.\n\nYou think of Kurt and the others but now that you have Alice, how would that work?\n\nJACK: Believe me, you\u2019re not likely to find other allies in this place. Between the rioters and the police, this is the best chance at staying safe.\n\nPARKER: What do you mean the police?\n\nMAYA: Here.\n\nShe shows you footage from her camera\u2019s viewfinder. You box out Alice so she can\u2019t see.\n\nPolice violently detain a man. They keep swinging. Elbows and knees. Then she shows you another clip of the same.\n\nMAYA: It\u2019s happening all over.\n\nAnother clip.\n\nJACK: There seems to be no one in charge. \n\nAnd another.\n\nJACK: Unchecked recklessness.\n\nThen in the last clip you see Kurt. He\u2019s standing as two officers pin a young man to the ground. \n\nHe\u2019s just watching. Then he steps forward.\n\nYou push the camera away.\n\nPARKER: I get it... We\u2019ll go with you.\n\nJACK: Good. It\u2019s too far to go tonight. Let\u2019s find a place to sleep and leave first thing. Shall we?\n\nThe images you just saw bite into your eyes like a raw wound. \n\nWhat\u2019s happening?\n\nAlice looks at you, politely puzzled. You regain focus.\n\nPARKER: Okay, let\u2019s go.\n\n[[Get going.->83]]\n",
+      "links": [
+        {
+          "text": "Get going.",
+          "destination": {
+            "name": "83",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "83",
+      "text": "The group settles on an abandoned construction site and feasts on the spoils of a nearby vending machine. Alice sits with Maya who\u2019s reluctantly letting her play with the camera. \n\nAs you digest your meal of chocolate and chips. The clips you saw play on a continuous mental loop. Not for a moment did you think that Kurt would stumble. He was a rock, a prodigy, and the core of your plan. He\u2019d know what to do about\u2026the body. It even hurts to think the word. Now it seems that you\u2019re not the only one who has fallen. \n\nJACK: What\u2019s on your mind, Parker?\n\nYou jump. He must have sat down and you didn\u2019t notice.\n\nPARKER: What? Oh, nothing. How\u2019s the nose?\n\nJACK: Oh, fine. Fine. Thank you for that.\n\nPARKER: Hey, I\u2019m the one who ducked.\n\nJACK: And thank you again for earlier. We might have been in a bit over our heads.\n\nPARKER: You looked fine to me. I\u2019ve never been so scared of a microphone.\n\nJACK: You\u2019re very kind. \n\nPARKER: Maya doesn\u2019t seem to think so.\n\nYou look and see Maya gritting her teeth as Alice pulls on a part of the camera that doesn\u2019t seem to want to be pulled.\n\nJACK: Yes well she\u2019s a bit of a grump. It\u2019s hard for her to see the good in most things, let alone in people.\n\nThe good in people?\n\nPARKER: Have you looked around?\n\nJACK: Yes I have and I\u2019ll admit that even I was beginning to doubt my fellow man until I ran into you.\n\nPARKER: Ha. Sorry I was the best that you could come up with.\n\nJACK: Well I see a young man who is brave, who is sheltering a child against some of the harshness of this world, who came to the rescue of two strangers, journalists I might add! And who has yet to give me any evidence to the contrary.\n\n[[Just thank him and be done with this.->84]] \n",
+      "links": [
+        {
+          "text": "Just thank him and be done with this.",
+          "destination": {
+            "name": "84",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "84",
+      "text": "PARKER: That\u2019s very kind, Jack. Thank you. \n\nJack nods and drops the subject.\n\nAlice and Maya join the two of you.\n\nALICE: Before we go to sleep Maya had an idea.\n\nMAYA: I was just thinking that it\u2019s been hard on all of us, being here. So I thought we could use some time to be alone and just talk.\n\nPARKER: To you?\n\nALICE: Nope, to the camera.\n\nMaya sets the camera down on a box and.\n\nMAYA: This footage will be completely private. If once we\u2019re out of here you want it deleted, just say the word and it\u2019s gone. Alice, want to go first?\n\nAlice nods and sits cross-legged in front of the camera. Maya does as best she can to light the scene with a couple of discarded work lights and once she\u2019s satisfied, you all... \n\n[[Leave Alice alone.->85]]\n",
+      "links": [
+        {
+          "text": "Leave Alice alone.",
+          "destination": {
+            "name": "85",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "85",
+      "text": "<b>ALICE</b>\n<hr>\n\nYou\u2019re on TV! Kind of. You run your hands across your shirt to press out any wrinkles and look into the camera. You should start talking, you suppose. Where should you start?\n\n[[Mom and Dad.->86]]\n\n",
+      "links": [
+        {
+          "text": "Mom and Dad.",
+          "destination": {
+            "name": "86",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "86",
+      "text": "ALICE: Hi mom. Hi dad. It\u2019s Alice. I just want you to know that I\u2019m okay and keeping out of trouble.\n\nYour mind jumps to\u2026\n\n[[A friend.->87]]\n\n[[Your adventure.->91]]\n\n",
+      "links": [
+        {
+          "text": "A friend.",
+          "destination": {
+            "name": "87",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Your adventure.",
+          "destination": {
+            "name": "91",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "87",
+      "text": "ALICE: I made a friend. His name is Parker and he\u2019s really nice. He gave me this (you show the badge) so that I\u2019d be safe. It\u2019s working so far.\n\nBut\u2026\n\n[[People are getting hurt.->88]]\n\n[[He needs help too.->89]]\n",
+      "links": [
+        {
+          "text": "People are getting hurt.",
+          "destination": {
+            "name": "88",
+            "pid": 89
+          }
+        },
+        {
+          "text": "He needs help too.",
+          "destination": {
+            "name": "89",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "91",
+      "text": "ALICE: This is definitely an adventure. I\u2019ve found friends, and a kind of mission. It\u2019s been a learning experience. \n\nYou can feel your excitement drain away, you want to look happy for them but you\u2019re scared. You take a breath and\u2026\n\n[[Tell the truth.->92]]\n\n[[Put on a brave face.->93]]\n",
+      "links": [
+        {
+          "text": "Tell the truth.",
+          "destination": {
+            "name": "92",
+            "pid": 94
+          }
+        },
+        {
+          "text": "Put on a brave face.",
+          "destination": {
+            "name": "93",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "88",
+      "text": "ALICE: But I think it\u2019s going to get more dangerous soon. Someone we\u2019re with broke his nose. Parker fixed it but I\u2019m worried that things are going to get worse. I don\u2019t like it here.\n\nYour eyes sting but you tilt your head back to fight down tears. The words spill from you.\n\n[[I\u2019m sorry.->90]]\n",
+      "links": [
+        {
+          "text": "I\u2019m sorry.",
+          "destination": {
+            "name": "90",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "89",
+      "text": "ALICE: But I don\u2019t know who\u2019s going to help Parker if he\u2019s busy helping me. He looks sad when no one\u2019s looking.  But I guess that\u2019s okay. This place is sad.\n\n[[I\u2019m sad too.->90]]\n",
+      "links": [
+        {
+          "text": "I\u2019m sad too.",
+          "destination": {
+            "name": "90",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "90",
+      "text": "ALICE: I\u2019m sorry! I\u2019m sorry that I ran away. I wish I didn\u2019t. I just wanted get away. But I hate this. I just want to be at home with you.\n\nYou take a moment to wipe the wet streaks from your cheeks.\n\nALICE: I\u2019ll see you soon. Miss you.\n\n[[Give them a kiss.->94]]\n",
+      "links": [
+        {
+          "text": "Give them a kiss.",
+          "destination": {
+            "name": "94",
+            "pid": 92
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "94",
+      "text": "You move to the camera and kiss the top of the lens. Your turn\u2019s over. You walk to where the others are sitting and point to... \n\n[[Maya.->95]]",
+      "links": [
+        {
+          "text": "Maya.",
+          "destination": {
+            "name": "95",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "95",
+      "text": "<b>MAYA</b>\n<hr>\n\nYou pick up the camera and scrub through the files. You find your folder and look at the thumbnails for all of your previous video-journal entries. You see lots of smiling you looking back. \n\nYou set the camera down and flip the viewfinder so you can frame yourself properly. You could really use a fill light to deal with the ominous shadows, but you suppose it fits the mood.\n\nYou look into camera.\n\n[[Hello again.->96]]\n",
+      "links": [
+        {
+          "text": "Hello again.",
+          "destination": {
+            "name": "96",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "92",
+      "text": "ALICE: But I hate it here, mom, dad. I want to go home. I thought I wanted to get away, but I don\u2019t!\n\n[[I\u2019m sorry.->90]]\n",
+      "links": [
+        {
+          "text": "I\u2019m sorry.",
+          "destination": {
+            "name": "90",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "93",
+      "text": "ALICE: I\u2019m getting used to it here. It was hard at first but now I have help. I\u2026 I\u2019m okay.\n\nYou can\u2019t keep this up.\n\n[[I\u2019m sorry.->90]]\n",
+      "links": [
+        {
+          "text": "I\u2019m sorry.",
+          "destination": {
+            "name": "90",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "96",
+      "text": "MAYA: Hello again. This is my thirty-eighth journal entry and I thought I might miss this one.\n\nAnd all at once you feel normal. All of the haze or static coursing through your body settles down. Now you can just talk.\n\n[[I can\u2019t believe this is happening.->97]]\n\n[[I need to get out of here.->98]]\n",
+      "links": [
+        {
+          "text": "I can\u2019t believe this is happening.",
+          "destination": {
+            "name": "97",
+            "pid": 97
+          }
+        },
+        {
+          "text": "I need to get out of here.",
+          "destination": {
+            "name": "98",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "97",
+      "text": "I\u2019m absolutely in it right now! And I\u2019ve filmed some stuff. Some\u2026real stuff. It\u2019s weird not doing anything in the moment. I\u2019m obviously doing something by filming it but it feels wrong. Like I\u2019m just watching it all happen. At least Jack gets to take swings at people.\n\nYou look at your self in the viewfinder. \n\n[[I wish I could do something about it.->99]]\n",
+      "links": [
+        {
+          "text": "I wish I could do something about it.",
+          "destination": {
+            "name": "99",
+            "pid": 99
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "98",
+      "text": "This is starting to be too much for me. I\u2019m so glad I could do this today. But everyone\u2019s getting hurt. Even Jack! He\u2019s always had this sage-like invincibility about him but I guess that bubble burst.\n\nYou look at yourself in the viewfinder.\n\n[[I wish I could do something about it.->99]]\n",
+      "links": [
+        {
+          "text": "I wish I could do something about it.",
+          "destination": {
+            "name": "99",
+            "pid": 99
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "99",
+      "text": "MAYA: Police shit happens but it\u2019ll all get painted by the riot. It\u2019ll be \u201cunder the circumstances\u201d and \u201cwith everything that was going on\u201d. But look at me. I\u2019m here. And I\u2019ve restrained the urge to run around beating people.\n\nYou stew on your last words and think of...\n\n[[Jack.->100]]\n\n[[Alice.->101]]\n",
+      "links": [
+        {
+          "text": "Jack.",
+          "destination": {
+            "name": "100",
+            "pid": 100
+          }
+        },
+        {
+          "text": "Alice.",
+          "destination": {
+            "name": "101",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "100",
+      "text": "MAYA: Jack\u2019s trying his best to put a happy slant on this. He needs to for some reason. He needs to find some Good Samaritan to make it all a wash. We\u2019ll see. Okay, that\u2019s it for now. Bye, Maya. \n\nYou wave at the lens and exit frame. \n\n[[Who\u2019s next?->102]]\n",
+      "links": [
+        {
+          "text": "Who\u2019s next?",
+          "destination": {
+            "name": "102",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "101",
+      "text": "MAYA: I\u2019m terrified for this girl. I don\u2019t know who Parker is but he\u2019s not telling us something. But people seem to trust him. Maybe he\u2019s the \u201chero\u201d that Jack\u2019s been looking so hard for. But I swear, if anything happens to that girl\u2026 Anyway I guess that\u2019s it for now. Bye, Maya.\n\nYou wave at the lens and exit frame. \n\n[[Who\u2019s next?->102]]\n",
+      "links": [
+        {
+          "text": "Who\u2019s next?",
+          "destination": {
+            "name": "102",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "102",
+      "text": "<b>JACK</b>\n<hr>\n\nPressing hard on your shoulders, Maya sits you down in front of the camera. This is silly.\n\nJACK: Where\u2019s my frame?\n\nMAYA: No one\u2019s going to see this, Jack.\n\nYou hold your arm horizontally in front of your face and slowly move it down until\u2026\n\nMAYA: There.\n\nThat\u2019s as low as the camera sees. You do the same moving your arm slowly up.\n\nMAYA: And there.\n\nThat\u2019s how high the camera sees. You\u2019re all set.\n\nJACK: Thank you.\n\nMaya leaves you alone.\n\n[[Face the camera.->103]]\n",
+      "links": [
+        {
+          "text": "Face the camera.",
+          "destination": {
+            "name": "103",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "103",
+      "text": "You\u2019ve looked into a camera five days a week for nearly forty years\u2026so why does this feel so strange?\n\nThen it strikes you, the urge to talk to someone who can never again be on the other side of that screen. \"A chance to talk,\" Maya called it? Very well.\n\nJACK: Hello, Emily.\n\nThe camera stares at you.\n\n[[You would be so angry with me.->104]]\n\n[[I miss you very much.->107]]\n",
+      "links": [
+        {
+          "text": "You would be so angry with me.",
+          "destination": {
+            "name": "104",
+            "pid": 104
+          }
+        },
+        {
+          "text": "I miss you very much.",
+          "destination": {
+            "name": "107",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "104",
+      "text": "JACK: I\u2019m off \u201cgallivanting\u201d as you would say. Out amongst a fair bit of chaos and danger. So, my apologies for that. At least you don\u2019t have to watch today on TV.\n\nYou smile to yourself for a moment. What would Emily want to know?\n\n[[I broke my nose.->105]]\n\n[[I found a child.->106]]\n",
+      "links": [
+        {
+          "text": "I broke my nose.",
+          "destination": {
+            "name": "105",
+            "pid": 106
+          }
+        },
+        {
+          "text": "I found a child.",
+          "destination": {
+            "name": "106",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "107",
+      "text": "JACK: These are the times that I needed you most. I would always know that you were glued to the set, watching me. I hope that\u2019s still true. \n\nWho do you need to tell her about?\n\n[[Parker.->108]]\n\n[[Maya.->109]]\n",
+      "links": [
+        {
+          "text": "Parker.",
+          "destination": {
+            "name": "108",
+            "pid": 109
+          }
+        },
+        {
+          "text": "Maya.",
+          "destination": {
+            "name": "109",
+            "pid": 110
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "105",
+      "text": "JACK: You always said I\u2019d hurt myself if I kept this up. Well, you were finally right. I broke my nose today. I\u2019m just sorry that you didn\u2019t have the chance to say, \u201cI told you so\u201d. It\u2019s fine now, though. A nice young man set it for me.\n\n[[Tell her about Parker.->110]]\n",
+      "links": [
+        {
+          "text": "Tell her about Parker.",
+          "destination": {
+            "name": "110",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "106",
+      "text": "JACK: There\u2019s a child with us, Emily. A sweet little girl. It\u2019s so strange to see someone so wonderful thrust into such a darkness as this. Thank goodness that she\u2019s not alone.\n\n[[Tell her about Parker.->110]]\n",
+      "links": [
+        {
+          "text": "Tell her about Parker.",
+          "destination": {
+            "name": "110",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "110",
+      "text": "JACK: I finally did it Emily. I found you a happy story to tell. You used to bother me so much. The bringer of doom and gloom. But now I\u2019ve done it. I\u2019ve found a moment where the clouds can part.\n\nYou get to your feet.\n\nJACK: Until next time, my darling.\n\n[[Leave.->111]]",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "111",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "108",
+      "text": "JACK: I\u2019ve run into a peculiar young man. He seems so troubled but does the most wonderful things for those around him. He can\u2019t see it but he\u2019s doing a great deal of good.\n\n[[So I am happy to say\u2026->110]]\n",
+      "links": [
+        {
+          "text": "So I am happy to say\u2026",
+          "destination": {
+            "name": "110",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "109",
+      "text": "gJACK: Maya\u2019s keeping me on my toes. She\u2019s looking out for me. Trying to keep me out of trouble for the most part. She\u2019s quite fierce, actually. Poor Parker, a fellow with us now, is getting the brunt of that.\n\nParker. You take a breath and say what you\u2019ve wanted to since you found him.\n\n[[Tell her about Parker.->110]]  \n",
+      "links": [
+        {
+          "text": "Tell her about Parker.",
+          "destination": {
+            "name": "110",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "111",
+      "text": "<b>PARKER</b>\n<hr>\n\nYou sit staring into the camera.\n\nPARKER: This is stupid. This isn\u2019t going to help. \n\n[[A few minutes of camera talk can\u2019t fix this.->112]]\n",
+      "links": [
+        {
+          "text": "A few minutes of camera talk can\u2019t fix this.",
+          "destination": {
+            "name": "112",
+            "pid": 112
+          }
+        }
+      ]
+    },
+    {
+      "pid": 112,
+      "name": "112",
+      "text": "PARKER: It\u2019s not like I\u2019m going to talk for a few minutes and not have killed someone.\n\nYou realize what you just said.\n\nYou lurch towards the camera but stop.\n\nPARKER: Saying it doesn\u2019t change anything. It\u2019ll never be different. \n\nYou can feel the knot unraveling. You keep going.\n\n[[It was an accident.->113]] \n\n[[You could get away with it.->114]]\n",
+      "links": [
+        {
+          "text": "It was an accident.",
+          "destination": {
+            "name": "113",
+            "pid": 113
+          }
+        },
+        {
+          "text": "You could get away with it.",
+          "destination": {
+            "name": "114",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "113",
+      "text": "PARKER: I didn\u2019t mean to kill him. I don\u2019t know what that\u2019s worth, but it\u2019s true. I didn\u2019t know that a life could end so easily. All it takes is one strange twist. One hit to the head. And it\u2019s gone.\n\nYou feel\u2026still. Almost quiet. You take a breath. Feel it stretch your chest and leave again.\n\nYou look into the camera.\n\n[[And speak.->115]]\n",
+      "links": [
+        {
+          "text": "And speak.",
+          "destination": {
+            "name": "115",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "114",
+      "text": "PARKER: No one saw it happen. \n\nThe thought clings to your mind like the roots of a weed. With a great mental wrench you tear it from the ground.\n\nPARKER: I don\u2019t mean that I\u2019ll hide, but it\u2019s insane. If I just kept going. Got out of here\u2026 it would all be over. \n\nBut it wouldn\u2019t change anything. You feel\u2026still. Almost quiet. You take a breath. You feel it stretch your chest, then leave again.\n\nYou look into the camera.\n\n[[And speak.->115]]\n",
+      "links": [
+        {
+          "text": "And speak.",
+          "destination": {
+            "name": "115",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "115",
+      "text": "PARKER: I\u2019m sorry.\n\n[[Leave.->116]]\n",
+      "links": [
+        {
+          "text": "Leave.",
+          "destination": {
+            "name": "116",
+            "pid": 116
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "116",
+      "text": "Morning comes and you set out with the others. \n\nThe streets are empty. It\u2019s not long before you reach the restaurant.\n\nJack and Maya run ahead as they see coworkers. They\u2019re surrounded and hugged from all angles. \n\nYou wait back. Alice squeezes your hand.\n\nYou look down, she\u2019s holding your badge out to you.\n\n[[Take it.->117]]\n\n[[Let her keep it.->118]]\n",
+      "links": [
+        {
+          "text": "Take it.",
+          "destination": {
+            "name": "117",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Let her keep it.",
+          "destination": {
+            "name": "118",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "117",
+      "text": "PARKER: Are you sure?\n\nALICE: I think you\u2019ll need it more than me now.\n\nYou think so too.\n\nYou place the chain around your neck. Keeping it visible outside your shirt. \n\nYou bend down to her level.\n\nPARKER: Tell Maya to keep my clip.\n\nAlice nods with a frown. \n\nALICE: You\u2019re not coming?\n\nYou shake your head.\n\nPARKER: There\u2019s something I still need to do.\n\nAlice opens her arms and you hug.\n\nShe turns and runs after Maya and Jack.\n\n[[Walk away.->119]]\n",
+      "links": [
+        {
+          "text": "Walk away.",
+          "destination": {
+            "name": "119",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "118",
+      "text": "PARKER: That\u2019s okay. I don\u2019t want it. Plus, it kept you safe. I bet it\u2019ll keep working.\n\nShe puts the badge back around her neck.\n\nYou bend down to her level.\n\nPARKER: Tell Maya to keep my clip.\n\nAlice nods with a frown. \n\nALICE: You\u2019re not coming?\n\nYou shake your head.\n\nPARKER: There\u2019s something I still need to do.\n\nAlice opens her arms and you hug.\n\nShe turns and runs after Maya and Jack.\n\n[[Walk away.->119]]\n",
+      "links": [
+        {
+          "text": "Walk away.",
+          "destination": {
+            "name": "119",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "119",
+      "text": "The walk back to the riot\u2019s core is like looking at the rings of a tree trunk. So much time is contained within so short a distance.\n\nYou see the construction sight where you just slept.\n\nWhere the dead zone was, now without all of its fog and darkness.\n\nThe overturned riot vehicle where you met Alice.\n\nThe charred remains of the climbed-upon car.\n\nThe tandem bike.\n\nAnd then finally\u2026\n\n[[The alley.->120]]\n",
+      "links": [
+        {
+          "text": "The alley.",
+          "destination": {
+            "name": "120",
+            "pid": 120
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "120",
+      "text": "You slowly retrace your steps. You turn the corner.\n\nThere he is.\n\nThe body lies just as you left it. A thin layer of silt covers it like black snow.\n\nYou sit down beside him and look at his one cuffed hand.\n\n[[Cuff yourself to the other.->121]]\n",
+      "links": [
+        {
+          "text": "Cuff yourself to the other.",
+          "destination": {
+            "name": "121",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "121",
+      "text": "You pull the cuff tight and lean back against the wall.\n\n[[You look at your hand...->122]]\n",
+      "links": [
+        {
+          "text": "You look at your hand...",
+          "destination": {
+            "name": "122",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "122",
+      "text": "It isn\u2019t shaking.\n\n\n\n\n\n<hr>\n\n<center>[[THE END->Title]]</center>\n",
+      "links": [
+        {
+          "text": "THE END",
+          "destination": {
+            "name": "Title",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "63A",
+      "text": "You lob the badge toward her. It sails and falls at her feet. She picks it up and runs her thumb across its surface.\n\nPARKER: So what do you think?\n\nShe puts it around her neck. \n\nPARKER: Cool, right? Can you keep that safe for me?\n\nShe hides it under her shirt and nods. \n\nPARKER: Good-\n\nALICE: You\u2019re bad at this.\n\nPARKER: What do you mean?\n\nALICE: You\u2019re not asking questions right. Questions are important, you know. You need to ask good questions to get good answers. \n\nPARKER: Uh, am I not doing that? I know your name. I know there were police officers here.\n\nALICE: Hi, my name\u2019s Sarah. Hi, my name\u2019s Bob.\n\nPARKER: So are you Sarah, Bob, or Alice?\n\nALICE: See? You don\u2019t know. And now I\u2019ve got your badge. I told you, you\u2019re bad at this.\n\n[[Good. Let her think she\u2019s in control.->64]]\n\n[[Oh yeah?->65]]\n",
+      "links": [
+        {
+          "text": "Good. Let her think she\u2019s in control.",
+          "destination": {
+            "name": "64",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Oh yeah?",
+          "destination": {
+            "name": "65",
+            "pid": 65
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,876 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "try to coax the",
+      "text": "The Triple Fool\\nJohn Donne\\n\\n>I am two fools, I know,\\nFor loving, and for saying so\\n>In whining poetry;\\nBut where's that wiseman, that would not be I,\\n>If she would not deny?\\nThen as th'earth's inward narrow crooked lanes\\nDo purge seawater's fretful salt away,\\n>I thought, if I could draw my pains\\nThrough rhyme's vexation, I should them allay.\\nGrief brought to numbers cannot be so fierce,\\nFor, he tames it, that fetters it in verse.\\n\\n>But when I have done so,\\nSome man, his art and voice to show,\\n>Doth set and sing my pain,\\nAnd, by delighting many, frees again\\n>Grief, which verse did restrain.\\nTo love and grief tribute of verse belongs,\\nBut not of such as pleases when 'tis read,\\n>Both are increased by such songs:\\nFor both their triumphs so are published,\\nAnd I, which was two fools, do so grow three;\\nWho are a little wise, the best fools be.\\n\\n[[END]]",
+      "links": [
+        {
+          "text": "END",
+          "destination": {
+            "name": "END",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "right",
+      "text": "The spoon shines. A crescent of residue encrusts its rim. Left by, what ,you couldn't say. You consider licking the spoon, but settle against it.\\n\\nYou could use the spoon to fill the bag with {{{<<if $fallen is true>>}}}ashes{{{<<else>>}}}sand{{{<<endif>>}}} before you [[continue|third room][$fill = true]]. You could take the spoon with you into the [[third room][$spoon = true]]. Or you could [[leave|third room]] the spoon on the table.\\n\\n{{{<<if $last is true>>}}}The snake has this to offer,\\n{{{<<<}}}\\nFrom the first appearance of an object, we never can conjecture what effect will result from it.\\n{{{<<<}}}\\nan observation perhaps prompted by the spoon.\\n{{{<<endif>>}}}\\n",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "third room",
+            "pid": 22
+          }
+        },
+        {
+          "text": "third room",
+          "destination": {
+            "name": "third room",
+            "pid": 22
+          }
+        },
+        {
+          "text": "leave",
+          "destination": {
+            "name": "third room",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "take these fruits",
+      "text": "You do not pay the snake any mind. You take the <<print $fruit>> in hand<<if $fruit is \"pomegranate\">>, carve it open, extract the seeds<<endif>> and take a hearty bite. You've never tasted anything more sublime.\\n\\nEverything of little consequence -- your thoughts, your bowels, your breath -- have fallen out of frame. You have a direct link with the greatest power in the world, or rather the distinction between you and Them has been erased. You are whole beyond wholeness.\\n\\nOver the course of the next two weeks, the snake lays bare your bones.\\n\\n[[END]]",
+      "links": [
+        {
+          "text": "END",
+          "destination": {
+            "name": "END",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "give",
+      "text": "That spoon's dirty.\\n\\nYes it is.\\n\\nDirty with what.\\n\\nI don't know.\\n\\nIs it safe.\\n\\nI don't know.\\n\\nNo thank you.\\n\\nAll right then.\\n\\nThe train stops at the [[fourth room|ffourth room]].",
+      "links": [
+        {
+          "text": "fourth room",
+          "destination": {
+            "name": "ffourth room",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "taste",
+      "text": "It's been too long. Your last taste was weeks, years ago. Been too long, like you hardly recall what it's like. \\n\\nYour last taste was you were weak you were too long to last years. Too long, two years two year weeks kiss your last two years hardly years ago. It's been long your taste like hardly hardly long too. Two long weak we clung years, been lung like you hardly recall two tons what it's like. \\n\\nYears ago. Your years go along like you hardly like you like you taste you to use you like you eke you to wake you like you freak you like look like you hardly look like you used to.\\n\\nYou go last to taste, to wait to wait years in your waste. To long, like you hardly recall what it's like when weeks last like waits, like when last when you woke with a tape on your waist.\\n\\nIt's been long, it's last long, it's weeks long, it's long like you hardly recall. It's years what it's like.\\n\\n[[END]]",
+      "links": [
+        {
+          "text": "END",
+          "destination": {
+            "name": "END",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Enter",
+      "text": "It is a bit of a difficult commute, I'll admit. Yet here you are, promptly; that's always promising.\\n\\nBefore we begin, we have a sharp--I mean short intake [[form]] for you to fill out.\\n\\nPlease take as much time as you need.",
+      "links": [
+        {
+          "text": "form",
+          "destination": {
+            "name": "form",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "second room",
+      "text": "As you enter the room, {{{<<nobr>>}}}\\n{{{<<if ($formulation < 4)>>}}}a flashing light dazzles you\\n{{{<<elseif (($formulation % 4) is 0)>>}}}you stub your toe\\n{{{<<else>>}}}you recall a time you were disappointed yet unable to articulate why\\n{{{<<endif>><<endnobr>>}}}. A light breeze drifts down from an overhead vent.\\n\\nThe table holds a bowl of {{{<<if $fallen is true>>}}}ashes{{{<<else>>}}}sand{{{<<endif>>}}}. A smock no a small spoon sits to the [[right]] of the bowl. A hempknit bag sits to the [[left]].\\n\\n{{{<<if $last is true>>}}}The snake suggests shearing your mane. You have no razor ready at hand; the idea is apropos of nothing. You don't believe you and the snake are on quite the same wavelength.{{{<<endif>>}}}\\n\\nYou consider passing by the table to enter the [[third room][$pass = $pass + 1]].\\n",
+      "links": [
+        {
+          "text": "right",
+          "destination": {
+            "name": "right",
+            "pid": 2
+          }
+        },
+        {
+          "text": "left",
+          "destination": {
+            "name": "left",
+            "pid": 33
+          }
+        },
+        {
+          "text": "third room",
+          "destination": {
+            "name": "third room",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Start",
+      "text": "Inward Narrow Crooked Lanes\\n\\nB Minus Seven\\n\\n[[Enter]]",
+      "links": [
+        {
+          "text": "Enter",
+          "destination": {
+            "name": "Enter",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "formulation",
+      "text": "Dialed down--\\n\\n1) [[none of the above|dialed][$dialed = 1]]\\n2) [[(XXX) XXX-XXXX|dialed][$dialed = 2]]\\n3) [[0AAAA/BBBBBB-XX|dialed][$dialed = 3]]\\n4) [[mannerisx|dialed][$dialed = 4]]\\n4) [[annodoms|dialed][$dialed = 44]]\\n5) [[oaken|dialed][$dialed = 5]]\\n6) [[never|dialed][$dialed = 6]]\\n7) [[NaNcy|dialed][$dialed = 7]]\\n( 9( [[fallen out of|dialed][$dialed = \"_\"]]",
+      "links": [
+        {
+          "text": "none of the above",
+          "destination": {
+            "name": "dialed",
+            "pid": 24
+          }
+        },
+        {
+          "text": "(XXX) XXX-XXXX",
+          "destination": {
+            "name": "dialed",
+            "pid": 24
+          }
+        },
+        {
+          "text": "0AAAA/BBBBBB-XX",
+          "destination": {
+            "name": "dialed",
+            "pid": 24
+          }
+        },
+        {
+          "text": "mannerisx",
+          "destination": {
+            "name": "dialed",
+            "pid": 24
+          }
+        },
+        {
+          "text": "annodoms",
+          "destination": {
+            "name": "dialed",
+            "pid": 24
+          }
+        },
+        {
+          "text": "oaken",
+          "destination": {
+            "name": "dialed",
+            "pid": 24
+          }
+        },
+        {
+          "text": "never",
+          "destination": {
+            "name": "dialed",
+            "pid": 24
+          }
+        },
+        {
+          "text": "NaNcy",
+          "destination": {
+            "name": "dialed",
+            "pid": 24
+          }
+        },
+        {
+          "text": "fallen out of",
+          "destination": {
+            "name": "dialed",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "xs",
+      "text": "Formulation of filt;h\\n\\n1) [[imbad|formulation][$formulation = 1]]\\n2) [[simbad|formulation][$formulation = 2]]\\n3) [[ismbad|formulation][$formulation = 3]]\\n4) [[whimbad|formulation][$formulation = 4]]\\n4) [[whymibad|formulation][$formulation = 44]]\\n5) [[wimpbad|formulation][$formulation = 5]]\\n6) [[imobad|formulation][$formulation = 6]]\\n7) [[minbad|formulation][$formulation = 7]]",
+      "links": [
+        {
+          "text": "imbad",
+          "destination": {
+            "name": "formulation",
+            "pid": 9
+          }
+        },
+        {
+          "text": "simbad",
+          "destination": {
+            "name": "formulation",
+            "pid": 9
+          }
+        },
+        {
+          "text": "ismbad",
+          "destination": {
+            "name": "formulation",
+            "pid": 9
+          }
+        },
+        {
+          "text": "whimbad",
+          "destination": {
+            "name": "formulation",
+            "pid": 9
+          }
+        },
+        {
+          "text": "whymibad",
+          "destination": {
+            "name": "formulation",
+            "pid": 9
+          }
+        },
+        {
+          "text": "wimpbad",
+          "destination": {
+            "name": "formulation",
+            "pid": 9
+          }
+        },
+        {
+          "text": "imobad",
+          "destination": {
+            "name": "formulation",
+            "pid": 9
+          }
+        },
+        {
+          "text": "minbad",
+          "destination": {
+            "name": "formulation",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "ring",
+      "text": "You were right about the rats: they were chilling in the dollhouse's cellar. Good on you. <<if $last is true>>They are understandably reluctant to speak with you due to the snake on your arm. The snake has this to contribute,\\n<blockquote>g = GM/r^^2^^</blockquote>which doesn't reassure the rats much. You can't cast off the snake after all this time, so you continue on to the [[name-room]].<<else>>They would like to know if you have some <<if $fallen is true>>ashes<<else>>sand<<endif>> to spare. <<if $fill is true>>You suppose you can't use all of this yourself. You shake some out into a miniature bowl.<<else>>You don't. But you know a guy who knows a guy.<<endif>> The rats are almost obscene in their gratitude. They've had a long wait. \\nYou continue on to the [[name-room]].<<endif>>",
+      "links": [
+        {
+          "text": "name-room",
+          "destination": {
+            "name": "name-room",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "the last",
+      "text": "The snake warns you,\\n<<<\\nThe other two are liars. Don't trust them.\\n<<<\\nor something to that effect. You're catching the gist but not the exact phrasing. Its tone is even and authoritative. You decide to listen.\\n\\nThe snake is reluctant to join you,\\n<<<\\nWho knows what those two will get into while I'm gone.\\n<<<\\nthat general sentiment. You try to assure the snake that this room, bare except for the table, will fare just fine in its absence. The snake remains dubious,\\n<<<\\nWho knows what they'll do.\\n<<<\\nbut it agrees to climb aboard. Its scales are smoother than you expected. You go ahead to the [[second room][$last = true]].",
+      "links": [
+        {
+          "text": "second room",
+          "destination": {
+            "name": "second room",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "curse",
+      "text": "You keep it short and sour:\\n\\nMay your openings close and your closings stick open,\\n>May you never know how/when to hose down your hopes.\\nMay the one you most esteem have a sneezing fit\\n>In your face and turn and leave you dripping.\\nMay a turtle drop and dash your brains out;\\n>May you slurp at their gruel as you lie on the ground.\\n\\nThe man does not reply. He makes a note on your file. <<if $last is true>>The snake nods.<<endif>> You feel a little better.\\n\\nYou go onto the [[fourth room][$curse = true]].",
+      "links": [
+        {
+          "text": "fourth room",
+          "destination": {
+            "name": "fourth room",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "stylesheet",
+      "text": "body {\\n  margin: 0;\\n  background-color:#000;\\n}\\n#passages {\\n  margin: 0;\\n  padding: 0;\\n  border: 0;\\n}\\n.passage {\\n  width: 40%;\\n  min-width: 26em;\\n  height: 33%;\\n  min-height: 33%;\\n  font-family: Helvetica, \"Helvetica Neue\", Arial, sans-serif;\\n  letter-spacing: 0.1em;\\n  padding: 1.5em;\\n  padding-left: 2em;\\n  font-size:1.8em;\\n  background-color:#000;\\n  color:#eee;\\n  margin: 10%;\\n  border: silver ridge 0.8em;\\n  border-radius: 1em;\\n}\\n.passage[data-tags~=mint] {\\n  border-color: MediumAquaMarine;\\n}\\n.passage[data-tags~=strawberry] {\\n  border-color: HotPink;\\n}\\n.passage[data-tags~=banana] {\\n  border-color: Gold;\\n}\\n.passage[data-tags~=peanut] {\\n  border-color: Peru;\\n}\\n.content::before {\\n  content: '\u2022';\\n  position: relative;\\n  left: -0.6em;\\n  margin-right: -0.4em;\\n}\\na.internalLink, a.externalLink {\\n  border-bottom: solid #fff 1px;\\n  color:#eee;\\n  font-weight:normal;\\n}\\na.internalLink:hover, a.externalLink:hover {\\n  text-decoration:none;\\n  border-bottom: solid #fff 2px;\\n  color:#fff;\\n  font-weight:normal;\\n  padding-left: 0;\\n}\\na.internalLink:active, a.externalLink:active {\\n  border-bottom: 0;\\n}\\n#sidebar {\\n  display:none;\\n}",
+      "links": []
+    },
+    {
+      "pid": 15,
+      "name": "StoryTitle",
+      "text": "Inward Narrow Crooked Lanes",
+      "links": []
+    },
+    {
+      "pid": 16,
+      "name": "fourth room",
+      "text": "The fourth room is a train. You board it and you sit in the corner to the right of the door. You put your hands in your lap and look at them, or you put a book in your hands and look at it. <<if $one is true>>There's a penny on the seat next to you. You don't pick it up.<<endif>><<if $last is true>>The snake whispers,\\n<blockquote>When</blockquote>you think, or If.<<endif>>\\n\\nCentral is next. Doors open on the left at Central.\\n\\nYou don't think you will ever find a job. If you looked harder you could find one, but you don't so you won't. You will die broken and alone.\\n\\nYour stomach acid has fermented and bubbled over into your throat. There's booze on your breath and the stink of it in your sweat. <<if $fill is true>>You consider lining your gums with <<if $fallen is true>>ashes<<else>>sand<<endif>> to take the [[taste|taste]] away.<<else>>The train leans a little as it turns.<<endif>>\\n\\nSomeone has a cup of yogurt but no spoon. They look hungry. <<if $spoon is true>>You could [[give]] them your spoon, or you could wait for the train to [[take|ffourth room][$pass = $pass + 1]] you to the fourth room.<<else>>You have a sad smile for them, and they have one for you. You trade.<<endif>>\\n\\nYou print $address: <<print $address>> etc. \\n\\nThere is nothing to do but wait.\\n\\n- - -\\n\\nThe train arrives at the last stop, the [[fourth room|ffourth room][$pass = $pass + 1]].\\n\\n",
+      "links": [
+        {
+          "text": "taste",
+          "destination": {
+            "name": "taste",
+            "pid": 5
+          }
+        },
+        {
+          "text": "give",
+          "destination": {
+            "name": "give",
+            "pid": 4
+          }
+        },
+        {
+          "text": "take",
+          "destination": {
+            "name": "ffourth room",
+            "pid": 31
+          }
+        },
+        {
+          "text": "fourth room",
+          "destination": {
+            "name": "ffourth room",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "END",
+      "text": "Thanks due to my friend N. for the timely playtest, Leon Arnott for the stylesheet (I swear I'll build the CSS from scratch for my next one,) to [[Lindsey Turner|https://www.flickr.com/photos/theogeo/2407257656/in/photolist-4EHPQm-4EHNFS-nGoGT]] for the blurb art (which I've modified) and to all those who have kept me writing these few years.\\n\\n[[reEnter|Enter]]",
+      "links": [
+        {
+          "text": "reEnter",
+          "destination": {
+            "name": "Enter",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "form",
+      "text": "Name-form,\\n\\n1) [[first m. last|name][$name = \"A1\"]]\\n2) [[last first|name][$name = \"A2\"]]\\n3) [[third|name][$name = \"A3\"]]\\n4) [[mired/mossy|name][$name = \"A4\"]]\\n4) [[open&closed|name][$name = \"A44\"]]\\n5) [[cold-colder|name][$name = \"A5\"]]\\n6) [[buld-bulder|name][$name = \"A6\"]]\\n7) [[kild-kildeer|name][$name = \"A7\"]]",
+      "links": [
+        {
+          "text": "first m. last",
+          "destination": {
+            "name": "name",
+            "pid": 23
+          }
+        },
+        {
+          "text": "last first",
+          "destination": {
+            "name": "name",
+            "pid": 23
+          }
+        },
+        {
+          "text": "third",
+          "destination": {
+            "name": "name",
+            "pid": 23
+          }
+        },
+        {
+          "text": "mired/mossy",
+          "destination": {
+            "name": "name",
+            "pid": 23
+          }
+        },
+        {
+          "text": "open&closed",
+          "destination": {
+            "name": "name",
+            "pid": 23
+          }
+        },
+        {
+          "text": "cold-colder",
+          "destination": {
+            "name": "name",
+            "pid": 23
+          }
+        },
+        {
+          "text": "buld-bulder",
+          "destination": {
+            "name": "name",
+            "pid": 23
+          }
+        },
+        {
+          "text": "kild-kildeer",
+          "destination": {
+            "name": "name",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "snake",
+      "text": "The snake says,\\n\\n<blockquote>You shouldn't [[take these fruits]]. They taste of ash; they will leave you trembling and fearing unseen eyes. Hurry onto the [[second room][$fallen = true]].</blockquote>",
+      "links": [
+        {
+          "text": "take these fruits",
+          "destination": {
+            "name": "take these fruits",
+            "pid": 3
+          }
+        },
+        {
+          "text": "second room",
+          "destination": {
+            "name": "second room",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "address",
+      "text": "XS?\\n\\n1) [[too many|xs][$xs = \"too many\"]]\\n2) [[also many|xs][$xs = \"also many\"]]\\n3) [[many many|xs][$xs = \"many many\"]]\\n4) [[many many|xs][$xs = \"many many\"]]\\n4) [[more than|xs][$xs = \"more than\"]]\\n5) [[to be|xs][$xs = \"to be\"]]\\n6) [[expected by|xs][$xs = \"expected by\"]]\\n7) [[the \"man-on-the-street\"|xs][$xs = \"the 'man-on-the-sheet'\"]]",
+      "links": [
+        {
+          "text": "too many",
+          "destination": {
+            "name": "xs",
+            "pid": 10
+          }
+        },
+        {
+          "text": "also many",
+          "destination": {
+            "name": "xs",
+            "pid": 10
+          }
+        },
+        {
+          "text": "many many",
+          "destination": {
+            "name": "xs",
+            "pid": 10
+          }
+        },
+        {
+          "text": "more than",
+          "destination": {
+            "name": "xs",
+            "pid": 10
+          }
+        },
+        {
+          "text": "to be",
+          "destination": {
+            "name": "xs",
+            "pid": 10
+          }
+        },
+        {
+          "text": "expected by",
+          "destination": {
+            "name": "xs",
+            "pid": 10
+          }
+        },
+        {
+          "text": "the \"man-on-the-street\"",
+          "destination": {
+            "name": "xs",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "the next",
+      "text": "This next one darts out and bites you. The bite doesn't hurt, though it still leaves a mark. Strange: doesn't the snake have fangs?\\n\\nYou could [[leave well enough alone|second room][$bite = true]] and go on to the second room. Or you [[try to coax the]] snake into coming with you.",
+      "links": [
+        {
+          "text": "leave well enough alone",
+          "destination": {
+            "name": "second room",
+            "pid": 7
+          }
+        },
+        {
+          "text": "try to coax the",
+          "destination": {
+            "name": "try to coax the",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "third room",
+      "text": "You find the third room locked. You knock twice with the cast-iron lion knocker. You wait<<if $last is true>>. The snake tells you of a nest,\\n<blockquote>{ {{} }}</blockquote>giving you a twinge in the back of your neck.<<else>> and listen to your breath.<<endif>>\\n\\nA cough and then:\\n\\nCould you wait a moment while we make a few changes.\\n\\nto which you have to agree. It is a fair while longer before the door yields.\\n\\n- - -\\n\\nA man is sitting at his desk. His hands are interlaced; his face is folded. Your file is open before him.\\n\\nBefore we begin, we have a disgust-- I mean a discrepancy to sort out. You see it says here that you've \"too many\" XS, <<if $xs is \"too many\">>and<<else>>yet<<endif>> on your intake form you said you've \"<<print $xs>>\" XS. <<if $xs is \"too many\">>Yet to my eye you've \"also many\" XS.<<endif>> A simple mistake, surely.\\n\\nYou don't have time for this bullshit. You could pass the man by and leave for the [[fourth room][$pass = $pass + 1]]. Or you could [[curse]] him and the desk he calls his. He may not take kindly to that. Or you could lock your eyes on the floor and speak the [[truth]].\\n\\n<<if $fill is true>>You consider placing a [[taste]] of <<if $fallen is true>>ashes<<else>>sand<<endif>> on your tongue; this room tastes like the man's smile and you couldn't say what he has to smile about if you stood staring for a fair while longer than you could stand.<<endif>>\\n\\n<<if $last is true>>The snake is silent.<<endif>>",
+      "links": [
+        {
+          "text": "fourth room",
+          "destination": {
+            "name": "fourth room",
+            "pid": 16
+          }
+        },
+        {
+          "text": "curse",
+          "destination": {
+            "name": "curse",
+            "pid": 13
+          }
+        },
+        {
+          "text": "truth",
+          "destination": {
+            "name": "truth",
+            "pid": 29
+          }
+        },
+        {
+          "text": "taste",
+          "destination": {
+            "name": "taste",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "name",
+      "text": "Age for purposes of this form ..\\n\\n1) [[Old enough|age][$age = \"B1\"]]\\n2) [[Just old enough|age][$age = \"B2\"]]\\n3) [[Older enough now|age][$age = \"B3\"]]\\n4) [[Enough old|age][$age = \"B4\"]]\\n4) [[Nought old|age][$age = \"B44\"]]\\n5) [[Even enough of this form|age][$age = \"B5\"]]\\n6) [[Seven almost over it|age][$age = \"B6\"]]\\n7) [[Over it|age][$age = \"B7\"]]",
+      "links": [
+        {
+          "text": "Old enough",
+          "destination": {
+            "name": "age",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Just old enough",
+          "destination": {
+            "name": "age",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Older enough now",
+          "destination": {
+            "name": "age",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Enough old",
+          "destination": {
+            "name": "age",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Nought old",
+          "destination": {
+            "name": "age",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Even enough of this form",
+          "destination": {
+            "name": "age",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Seven almost over it",
+          "destination": {
+            "name": "age",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Over it",
+          "destination": {
+            "name": "age",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "dialed",
+      "text": "Very good, that's all we'll be needing for the moment.\\n\\nWe have prepared the [[first room]] for you.",
+      "links": [
+        {
+          "text": "first room",
+          "destination": {
+            "name": "first room",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "first room",
+      "text": "There <<if $dialed is \"_\">>is an [[apple|snake][$fruit = \"apple\"]], a [[pomegranate|snake][$fruit = \"pomegranate\"]] and a snake<<else>>are three snakes<<endif>> on the table.\\n\\n<<if $dialed is \"_\">>The snake is not guarding the fruits, but it does not wish to be disturbed. Best be quick.<<else>>The snakes are calm, even bored. [[One]] is a burnished copper, [[the next]] is as slim as your pinky, and [[the last]] is looking for someone. You could invite one of them onto your arm.<<endif>>\\n\\nOr you could pass by the table and go to the [[second room][$pass = $pass + 1]].",
+      "links": [
+        {
+          "text": "apple",
+          "destination": {
+            "name": "snake",
+            "pid": 19
+          }
+        },
+        {
+          "text": "pomegranate",
+          "destination": {
+            "name": "snake",
+            "pid": 19
+          }
+        },
+        {
+          "text": "One",
+          "destination": {
+            "name": "One",
+            "pid": 28
+          }
+        },
+        {
+          "text": "the next",
+          "destination": {
+            "name": "the next",
+            "pid": 21
+          }
+        },
+        {
+          "text": "the last",
+          "destination": {
+            "name": "the last",
+            "pid": 12
+          }
+        },
+        {
+          "text": "second room",
+          "destination": {
+            "name": "second room",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "age",
+      "text": "Form of address  :\\n\\n1) [[street etc.|address][$address = \"street\"]]\\n2) [[unit etc.|address][$address = \"unit\"]]\\n3) [[ratio etc.|address][$address = \"ratio\"]]\\n4) [[horatio etc.|address][$address = \"horatio\"]]\\n4) [[exhoratio etc.|address][$address = \"exhoratio\"]]\\n5) [[X etc.|address][$address = \"X\"]]\\n6) [[when etc|address][$address = \"when\"]]\\n7) [[Ms. etc.|address][$address = \"Ms.\"]]",
+      "links": [
+        {
+          "text": "street etc.",
+          "destination": {
+            "name": "address",
+            "pid": 20
+          }
+        },
+        {
+          "text": "unit etc.",
+          "destination": {
+            "name": "address",
+            "pid": 20
+          }
+        },
+        {
+          "text": "ratio etc.",
+          "destination": {
+            "name": "address",
+            "pid": 20
+          }
+        },
+        {
+          "text": "horatio etc.",
+          "destination": {
+            "name": "address",
+            "pid": 20
+          }
+        },
+        {
+          "text": "exhoratio etc.",
+          "destination": {
+            "name": "address",
+            "pid": 20
+          }
+        },
+        {
+          "text": "X etc.",
+          "destination": {
+            "name": "address",
+            "pid": 20
+          }
+        },
+        {
+          "text": "when etc",
+          "destination": {
+            "name": "address",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Ms. etc.",
+          "destination": {
+            "name": "address",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "bucket",
+      "text": "The bucket is empty. You hold it over your head to be sure. Yes, empty. You continue on to the [[name-room]].",
+      "links": [
+        {
+          "text": "name-room",
+          "destination": {
+            "name": "name-room",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "One",
+      "text": "This one is too shy to join you on your arm. It licks your hand before turning away.\\n\\nYou understand. The snakes are happy here: you leave them be and head into the [[second room][$one = true]].",
+      "links": [
+        {
+          "text": "second room",
+          "destination": {
+            "name": "second room",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "truth",
+      "text": "Once an angry man dragged his father along the ground through his own orchard. \"Stop !\" cried the groaning old man at last, \"Stop ! I did not drag my father beyond this tree.\"\\n\\nTwice any anger ran ragged its long ladder against the roof rough with orchids. \"Stop .\" grown into a sign glast at last, \"Stop . I did not drag\\n\\nThrice manygears Ann raged if rung gladder a ghost the roost routes intorch ID. \"Stop  \" grn din to design ign to glom l ist,\\n\"Stop   Id dot my her beyond this tree.\"\\n\\nThe man does not reply. He makes a note on your file. <<if $last is true>>The snake nods.<<endif>> You feel a little better.\\n\\nYou go onto the [[fourth room][$truth = true]].",
+      "links": [
+        {
+          "text": "fourth room",
+          "destination": {
+            "name": "fourth room",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "StoryAuthor",
+      "text": "B Minus Seven",
+      "links": []
+    },
+    {
+      "pid": 31,
+      "name": "ffourth room",
+      "text": "Inside the fourth room is a dollhouse. It looks lived in, as if the inhabitants were intelligent rats rather than dolls. Nobody's home. You could [[ring]] the doorbell.\\n\\nA [[bucket]] sits in the far corner of the room; you can't see its contents from here. <<if $fallen is true>>Blood, maybe.<<endif>> You could go take a look.",
+      "links": [
+        {
+          "text": "ring",
+          "destination": {
+            "name": "ring",
+            "pid": 11
+          }
+        },
+        {
+          "text": "bucket",
+          "destination": {
+            "name": "bucket",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "name-room",
+      "text": "A slip of paper is on the table.\\n\\n\"Ann.\"\\n\\n[[END]]",
+      "links": [
+        {
+          "text": "END",
+          "destination": {
+            "name": "END",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "left",
+      "text": "You inspect the bag to see what if anything it might be holding. {{{<<nobr>>}}}\\n{{{<<if ($formulation % 4) is 0>>}}}You turn up a single stub of charcoal.{{{<<$charcoal = 1>>}}}\\n{{{<<else>>}}}After a few moments you are satisfied the bag is completely empty.\\n{{{<<endif>><<endnobr>>}}}\\n\\nYou could use the spoon to fill the bag with {{{<<if $fallen is true>>}}}ashes{{{<<else>>}}}sand{{{<<endif>>}}} before you [[continue|third room][$fill = true]]. You could take the empty bag with you into the [[third room][$empty = true]]. Or you could [[leave|third room]] the bag on the table.\\n\\n{{{<<if $last is true>>}}}The snake sizes up the bag with a flick of its tongue,\\n{{{<<<}}}\\nNothing exists from whose nature some effect does not follow.\\n{{{<<<}}}\\nat least you suppose this pronouncement concerns the bag.\\n{{{<<endif>>}}}",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "third room",
+            "pid": 22
+          }
+        },
+        {
+          "text": "third room",
+          "destination": {
+            "name": "third room",
+            "pid": 22
+          }
+        },
+        {
+          "text": "leave",
+          "destination": {
+            "name": "third room",
+            "pid": 22
+          }
+        }
+      ]
+    }
+  ]
+}

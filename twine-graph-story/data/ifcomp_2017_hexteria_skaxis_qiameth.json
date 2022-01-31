@@ -1,0 +1,507 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Name 1",
+      "text": "(if: $hub1 is true)[(css: \"font-size: 60%;\")[I recall now the name being]]\\\n(else:)[(css: \"font-size: 60%;\")[It was during this discomposure however that the name started dancing in my[$s]mind:]]\n\n(css: \"font-size: 120%;\")[\\\n<tw-link class='cyclingLink' data-cycling-texts='[\"Ip\", \"Vr\", \"Bo\", \"As\", \"Ll\"]' onclick='clickCyclingLink(this, \"$n11\");'>$n11</tw-link>\u00b7\\\n<tw-link class='cyclingLink' data-cycling-texts='[\"ib\", \"ess\", \"opo\", \"ak\", \"om\"]' onclick='clickCyclingLink(this, \"$n12\");'>$n12</tw-link>\u00b7\\\n<tw-link class='cyclingLink' data-cycling-texts='[\"ter\", \"biq\", \"ul\", \"m\", \"ar\"]' onclick='clickCyclingLink(this, \"$n13\");'>$n13</tw-link>]\n\n(if: $hub1 is true)[[[\u2609|Passage]]]\\\n(else:)[[[\u2609|Next Day]]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Passage",
+            "pid": 5
+          }
+        },
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Next Day",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Next Day",
+      "text": "(set: $o1 = $n11 + $n12 + $n13)\\\n$passage[With this //quasi-miraculous// insight, I was finally able to rest wholly. On the next days, I performed a meticulous search about $red[$o1] in my library. To my disappointment, the only result was a brief entry in the volume VI of 1908 Hastings' //Encyclop\u00e6dia of Religion and[$s]Ethics//.]\n[[\u2609|Passage]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Passage",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Language 1",
+      "text": "(if: $hub1 is true)[(css: \"font-size: 60%;\")[I recall now the name being]]\\\n(else:)[(css: \"font-size: 60%;\")[It had this peculiar language[$s]called]\n]\n<big><tw-link class='cyclingLink' data-cycling-texts='[\"Ch\", \"Tr\", \"Pl\", \"Bz\", \"X\"]' onclick='clickCyclingLink(this, \"$v11\");'>$v11</tw-link>\u00b7\\\n<tw-link class='cyclingLink' data-cycling-texts='[\"at\", \"em\", \"obb\", \"il\", \"yz\"]' onclick='clickCyclingLink(this, \"$v12\");'>$v12</tw-link>\u00b7\\\n<tw-link class='cyclingLink' data-cycling-texts='[\"im\", \"ol\", \"uk\", \"ez\", \"zy\"]' onclick='clickCyclingLink(this, \"$v13\");'>$v13</tw-link></big>\n(css: \"font-size: 60%; line-height: -1;\")[\nwhich could only represent concepts by employing[$s]<tw-link class='cyclingLink' data-cycling-texts='[\"actions\", \"qualities\", \"names\"]' onclick='clickCyclingLink(this, \"$q1\");'>$q1</tw-link>]\n\n(if: $hub1 is true)[[[\u2609|Passage]]]\\\n(else:)[[[\u2609|Yes]]]\n",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Passage",
+            "pid": 5
+          }
+        },
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Yes",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Yes",
+      "text": "(set: $l1 = $v11 + $v12 + $v13)\\\n$passage[I tried to remember the name of this //urbs//, but other than this $red[$l1] language, nothing else came to my mind. Alas, unsuccessful in the attempts of recollection, I ended the discussion and decided to go home. On the following weeks, agitated dreams kept me from[$s]sleeping.]\n[[\u2609|Name 1]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Name 1",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Passage",
+      "text": "{\n(set: $hub1 to true)\n(set: $o1 = $n11 + $n12 + $n13)\n(set: $l1 = $v11 + $v12 + $v13)\n(set: $c1 to $o1)\n}$passage[The article, regarding the dogmatic doctrine of the city,[$s]stated:]$quote[\n//\"The legislators of $red[$o1] declared that the basic unit of thought is (if: $q1 is \"actions\")[the verb. Therefore, everything in $red[$l1] must be defined by what it does or states. A road, for instance, is a walker and a crosser while a mirror is a[$s]reflector.]\\\n(if: $q1 is \"qualities\")[the quality. Therefore, everything in $red[$l1] is described. Thus, books were called ''printed/bound/readable''.]\\\n(if: $q1 is \"names\")[the name. Therefore everything in $red[$l1] will always have a unique name. Hence, a coin given has a different name than a coin[$s]received.]\"//]\n(css: \"font-size: 50%;\")[[[About that civilization|Name 1]] / [[About that language|Language 1]]]\n[[\u2609&#xFE0E|Call]]",
+      "links": [
+        {
+          "text": "About that civilization",
+          "destination": {
+            "name": "Name 1",
+            "pid": 1
+          }
+        },
+        {
+          "text": "About that language",
+          "destination": {
+            "name": "Language 1",
+            "pid": 3
+          }
+        },
+        {
+          "text": "\u2609&#xFE0E",
+          "destination": {
+            "name": "Call",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Name 2",
+      "text": "{\n(if: $v11 is \"Ch\")[(set: $v112 to \"Sh\")]\n(if: $v11 is \"Tr\")[(set: $v112 to \"Pr\")]\n(if: $v11 is \"Pl\")[(set: $v112 to \"Bl\")]\n(if: $v11 is \"Bz\")[(set: $v112 to \"Bs\")]\n(if: $v11 is \"X\")[(set: $v112 to \"S\")]\n\n(if: $v13 is \"im\")[(set: $v132 to \"im\")]\n(if: $v13 is \"ol\")[(set: $v132 to \"oll\")]\n(if: $v13 is \"uk\")[(set: $v132 to \"uch\")]\n(if: $v13 is \"ez\")[(set: $v132 to \"es\")]\n(if: $v13 is \"zy\")[(set: $v132 to \"sy\")]\n}\\\n(css: \"font-size: 60%;\")[Then, he explained about the citizens from\n]\n(css: \"font-size: 120%;\")[''$n11''\u00b7<tw-link class='cyclingLink' data-cycling-texts='[\"yq\", \"an\", \"epo\", \"uru\", \"ohs\"]' onclick='clickCyclingLink(this, \"$n22\");'>$n22</tw-link>\u00b7''$n13'']\n\n(css: \"font-size: 60%;\")[and their quaint language:\n]\n(css: \"font-size: 90%;\")[''$v11''\u00b7<tw-link class='cyclingLink' data-cycling-texts='[\"ot\", \"en\", \"opp\", \"el\", \"ys\"]' onclick='clickCyclingLink(this, \"$v122\");'>$v122</tw-link>\u00b7''$v132'']\n\n[[\u2609|Language 2]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Language 2",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Language 2",
+      "text": "{\n(set: $l2 = $v11 + $v122 + $v132)\n(set: $l3 = $v112 + $v12 + $v132)\n(set: $o2 = $n11 + $n22 + $n13)\n(if: $q1 is \"actions\")[(set: $q2 to (either: \"qualities\", \"names\"))]\n(if: $q1 is \"qualities\")[(set: $q2 to (either: \"actions\", \"names\"))]\n(if: $q1 is \"names\")[(set: $q2 to (either: \"actions\", \"qualities\"))]\n}\n$passage[\"$red[$o2]\" I repeated to myself, puzzled. But I was even more surprised when he corrected me and described $red[$l2] as a language solely shaped upon the use of[$s]$red[$q2].]\\\n\n(css: \"font-size: 60%;\")[[[Ask about $q2|About the language]] / [[Ask about his diction|About the civilization]]]",
+      "links": [
+        {
+          "text": "Ask about $q2",
+          "destination": {
+            "name": "About the language",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Ask about his diction",
+          "destination": {
+            "name": "About the civilization",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Curious",
+      "text": "<small>//\"A mere errata\"// </small>\n$passage[\nWas our conclusion. That despite both versions being of the same reprint. Other than that brief passage, we couldn't find any other discrepancy or mentions to[$s](set: $jojoca to $o1)<tw-link class='cyclingLink' data-cycling-texts='[\"$o1\", \"$o2\"]' onclick='clickCyclingLink(this, \"$jojoca\");'>$jojoca</tw-link>.]\n[[\u2609|Many months]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Many months",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "End",
+      "text": "(set: $code = $k1 + $k2 + $k3)\\\n(if: $code is \"Phactos\")[ $passage[\nAnd here ends this account. More and more signs of $red[$o3] came into my attention since[$s]then. \n\nI'm uncertain if the people from $red[$o3] succeeded in their enterprise. G\u00f6del would certainly refute so. Others mention the rapid decrease of the number of languages as a progress towards a single idiom. This seems to be equally invalid or, at worst, a sign of the diminishing potential of our universe \u2014 a parallel of William[$s]Thomson[$s]proposition.\n\nIn retrospect, it is obvious that the passage that Bol\u00edvar found would be different than mine \u2014 as I am sure that many other readers will find many other variations. This near supernatural omnipresent quality of (set: $jojoca to $o1)<tw-link class='cyclingLink' data-cycling-texts='[\"$o1\", \"$o2\", \"$o4\"]' onclick='clickCyclingLink(this, \"$jojoca\");'>$jojoca</tw-link> is what keeps a small part of me away from complete disbelief. In this regard, the potential of this language manipulating the fabric of our existence in this scale is haunting. The creation of $red[$title] is my own feeble attempt to counter that \u2014 and I hope others will take part in[$s]this[$s]endeavor.\n\n(css: \"font-size: 85%;\")[//Reality is divided up into arbitrary categories by every language and the conceptual world with which each of us is familiar could have been divided up very differently. Indeed, no two languages categorize reality in the same way. \u2014 ''Daniel[$s]Chandler''//]\n\nG.F]\n[[\u2609|End2]]]\\\n(else:)[(css: \"font-size:80%;\")[Or was it?]\n\n[[\u2609|Hub]]]\n",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "End2",
+            "pid": 30
+          }
+        },
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Hub",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Many months",
+      "text": "$passage[Months later, having already forgotten about the whole episode, I ended up \u2014 by circumstances of my occupation \u2014 being the possessor of a distinct[$s]bundle.]\n[[\u2609|Heritage]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Heritage",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Suddenly",
+      "text": "$passage[In the midst of our logomachies, I mentioned this remarkable ancient[$s]city.]\n[[\u2609|Language 1]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Language 1",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Start",
+      "text": "\n(css: \"font-size:60%;\")[All this took place four or five years[$s]ago.]\n\n[[\u2609|Next]]\n\n(set: $title = $t1 + $t2 + $t3)",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Next",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Next",
+      "text": "(css: \"font-size:58%;\") + (align: \"<==\")+(css: \"line-height: 1.50;\")[After a late dinner with my friend Bol\u00edvar Escobar, we'd lingered over a discussion on //Wittgensteinian// language-games, conjecturing an argot with so many subtle variations that multiple groups could use concurrently \u2014 recognizing their shared lexicon \u2014 but wielding completely different[$s]understandings.] \n[[\u2609|Suddenly]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Suddenly",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Call",
+      "text": "$passage[The next day, I phoned Bol\u00edvar to apprise him of my findings. However, before I could fully report my discoveries, he informed me that \u2014  while researching for an academic paper on //nihilartikels// and other types of copyright traps, he also found about the community when reading a copy of (what a coincidence!) the //Encyclop\u00e6dia of Religion and[$s]Ethics//.]\n[[\u2609|Name 2]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Name 2",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Hub",
+      "text": "$passage[The book was written in an unknown language \u2014 but one not beyond  my philology abilities. It was similar to //Aklo// in a certain degree: serpentine and luscious \u2014 it's decipherment like a feverish hallucination. The $red[$o3's] ethos is epitomized by the[$s]passage:]\n(css: \"font-size:55%;\")[<tw-link class='cyclingLink' data-cycling-texts='[\"$s14\", \"$s13\", \"$s12\", \"$s11\"]' onclick='clickCyclingLink(this, \"$t1\");'>$t1</tw-link>  / <tw-link class='cyclingLink' data-cycling-texts='[\"$s24\", \"$s23\", \"$s22\", \"$s21\"]' onclick='clickCyclingLink(this, \"$t2\");'>$t2</tw-link> / <tw-link class='cyclingLink' data-cycling-texts='[\"$s34\", \"$s33\", \"$s32\", \"$s31\"]' onclick='clickCyclingLink(this, \"$t3\");'>$t3</tw-link>]\n\n$passage[Among the ordinary sections on geography, zoology and anthropology were some more enigmatic portion regarding[$s]$red[$o3]:]\n(css: \"font-size:120%;\")[[[\u29dc->Memory]]] / (css: \"font-size:120%;\")[[[\u29de->Truth]]] / (css: \"font-size:120%;\")[[[\u29dd->History]]]\n\n(if: $pass1 is true and $pass2  is true and $pass3 is true)[ [[\u2609->Code]] ]",
+      "links": [
+        {
+          "text": "\u29dc",
+          "destination": {
+            "name": "Memory",
+            "pid": 20
+          }
+        },
+        {
+          "text": "\u29de",
+          "destination": {
+            "name": "Truth",
+            "pid": 22
+          }
+        },
+        {
+          "text": "\u29dd",
+          "destination": {
+            "name": "History",
+            "pid": 21
+          }
+        },
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Code",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "About the language",
+      "text": "$passage[I inquired him about the nature of $red[$l1], since I was certain about their exclusive use of $red[$q1]. But Escobar was positive that the language was in fact bounded to $red[$q2], having just consulted the tome a few days ago. I asked him for an opportunity to compare the[$s]texts.]\n[[\u2609|Passage 2]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Passage 2",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Heritage",
+      "text": "$passage[Among the ordinary documents, unsigned contracts and other unremarkable beadledoms there was this hefty blue tome with a yellow spine and a single word in its[$s]cover.]\n[[\u2609|Name 3]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Name 3",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Name 3",
+      "text": "(css: \"font-size: 60%;\")[It read, in a faded hot stamp foil:\n]\n(css: \"font-size: 120%;\")[<tw-link class='cyclingLink' data-cycling-texts='[\"Jaq\", \"Qz\", \"Mi\", \"Kz\", \"Fl\"]' onclick='clickCyclingLink(this, \"$n31\");'>$n31</tw-link>\u00b7<tw-link class='cyclingLink' data-cycling-texts='[\"en\", \"ir\", \"ach\", \"\u00f6n\", \"at\", \"\u00fc\"]' onclick='clickCyclingLink(this, \"$n32\");'>$n32</tw-link>\u00b7<tw-link class='cyclingLink' data-cycling-texts='[\"gid\", \"ev\", \"dd\", \"a\", \"mer\", \"ak\"]' onclick='clickCyclingLink(this, \"$n33\");'>$n33</tw-link>]\n\n[[[\u2609|Discovery]]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Discovery",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Discovery",
+      "text": "(set: $o3 = $n31 + $n32 + $n33)(set: $o4 = $n11 + $n32 + $n13)\\\n$passage[Somehow, the unusual word allured me. The title page[$s]complemented:]\n<small>//A First Atlas of ''$red[$o3]''. Volume XI. On $red[$o4], $red[$o1], $red[$o2] and so forth... //</small> \n(css: \"font-size:60%;\")[\nI was bewildered.\n] \n[[\u2609|Hub]] \n{\n(set: $s11 to \"A colossal empire comprised of numerous cities, with infinite names\")\n(set: $s12 to \"I cenessin omzato cemztasod ef lumoteus caraos, warh alfalaro limos\")\n(set: $s13 to \"I cenerrin omtaso cemtsarod ef lumoseur capaor, waph alfalapo limor\")\n(set: $s14 to \"G iuruyygr ksvoxk iusvxoykj ul taskxuay iozoky, cozn otlotozk tgsky\")\n(set: $s21 to \"Their inhabitants divided themselves according to their lexical predilections\")\n(set: $s22 to \"Rhoat alhibarilrs davadod rhomsonvos iccetdalg re rhoat noxacin ztodanocraels\")\n(set: $s23 to \"Phoas alhibapilpr davadod phomronvor iccesdalg pe phoas noxacin tsodanocpaelr\")\n(set: $s24 to \"Znkox otnghozgtzy jobojkj znksykrbky giiuxjotm zu znkox rkdoigr vxkjorkizouty\")\n(set: $s31 to \"Their idiom like an expression of their existence\")\n(set: $s32 to \"Rhoat adaem nako il oxztossael ef rhoat oxasrolco\")\n(set: $s33 to \"Phoas adaem nako il oxtsorrael ef phoas oxarpolco\")\n(set: $s34 to \"Znkox ojous roqk gt kdvxkyyout ul znkox kdoyzktik\")\n\n(set: $t1 to $s14)\n(set: $t2 to $s24)\n(set: $t3 to $s34)\n}",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Hub",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Memory",
+      "text": "$passage[In $red[$o3] there were debates of whether language belongs to the physical or spiritual realm \u2014 form or substance. Those in favor of the tangible aspect referred  to what can't be expressed through speech. Like so, considering that all physical dimensions in the universe are finite, language must be[$s]of[$s]//substance//. ]\n[[\u2609|Memory 2]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Memory 2",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "History",
+      "text": "$passage[Their late  ventures started to experiment with  languages within languages. For the variations of $red[$l1], $red[$l2], $red[$l3] //et al// are parts of a blueprint for a larger language, it's pieces now scattered around the[$s]world. ]\n[[\u2609|History 2]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "History 2",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Truth",
+      "text": "$passage[The theologians of $red[$o3] aimed for the creation of a language that could describe the essence of the entire cosmos \u2014 not dissimilar from the pre-Babelian ambitions of Henry Dark and[$s]Peter[$s]Stillman. ]\n[[\u2609|Truth 2]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Truth 2",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Passage 2",
+      "text": "$passage[Days later Escobar was at my office, the volume VI of the encyclopaedia under his arms. We compared the[$s]texts:]$quote[\n//\"The legislators of $red[$o1] declared that the basic unit of thought is (if: $q1 is \"actions\")[the verb. Therefore, everything in $red[$l1] must be defined by what it does or states. A road, for instance, is a walker and a crosser while a mirror is a[$s]reflector.]\\\n(if: $q1 is \"qualities\")[the quality. Therefore, everything in $red[$l1] is described. Thus, books were called ''printed/bound/readable''.]\\\n(if: $q1 is \"names\")[the name. Therefore everything in $red[$l1] will always have an unique name. Hence, a coin given has a different name than a coin[$s]received.]\"//\n\n//\"The legislators of $red[$o2] declared that the basic unit of thought is (if: $q2 is \"actions\")[the verb. Therefore, everything in $red[$l2] must be defined by what it does or states. A road, for instance, is a walker and a crosser while a mirror is a[$s]reflector.]\\\n(if: $q2 is \"qualities\")[the quality. Therefore, everything in $red[$l2] is described. Thus, books were called ''printed/bound/readable''.]\\\n(if: $q2 is \"names\")[the name. Therefore everything in $red[$l2] will always have an unique name. Hence, a coin given has a different name than a coin[$s]received.]\"//\n]\n[[\u2609|Curious]]\n\n",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Curious",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "About the civilization",
+      "text": "$passage[I inquired him about his distinct pronunciation of $red[$l1] and $red[$o2], but Bol\u00edvar was positive about the correctness of his ortography, having just consulted the tome a few days ago. I asked him for an opportunity to compare the[$s]texts.]\n[[\u2609|Passage 2]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Passage 2",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Memory 2",
+      "text": "$passage[The antithesis is the concept of language as a pure psychological phenomenon: that of //form//. Language is bound to thought and if something can't be imagined, it's simply because it doesn't exist.  They referred to this development[$s]as[$s]$red[Ph].]\n[[\u2609|Hub]](set: $pass1 to true)",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Hub",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Truth 2",
+      "text": "$passage[But reality is a convoluted tapestry of phenomenons, impossible to contain. No matter how exhaustive their attempts were, some minutia always slipped through their undertaking. This period was alluded[$s]as[$s]$red[Ac].]\n[[\u2609|Hub]](set: $pass2 to true)",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Hub",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "History 2",
+      "text": "$passage[If the result is a language with infinite possibilities, this seems to be deliberate for according to $red[(print: $o3)ans], reality ultimately encompasses infinite possibilities. The result is what they would refer[$s]as[$s]$red[Tos].]\n[[\u2609|Hub]](set: $pass3 to true)",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Hub",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Code",
+      "text": "(css: \"font-size: 60%;\")[So this was the whole conundrum, something that could be sequenced[$s]as: \n]\n(css: \"font-size: 120%;\")[<tw-link class='cyclingLink' data-cycling-texts='[\"Ki\", \"Gy\", \"Cor\", \"Ph\", \"Qi\"]' onclick='clickCyclingLink(this, \"$k1\");'>$k1</tw-link>\u00b7\\\n<tw-link class='cyclingLink' data-cycling-texts='[\"ev\", \"ys\", \"mo\", \"ny\", \"ac\"]' onclick='clickCyclingLink(this, \"$k2\");'>$k2</tw-link>\u00b7\\\n<tw-link class='cyclingLink' data-cycling-texts='[\"el\", \"\u00fcr\", \"tos\", \"ix\", \"ak\"]' onclick='clickCyclingLink(this, \"$k3\");'>$k3</tw-link>]\n\n[[\u2609|End]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "End",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Other stylings",
+      "text": "{\n(set: $s to \"&nbsp;\")\n(set: $quote to (css: \"font-weight: 400; font-size:50%; color: #8A6853; letter-spacing: 0.01em; line-height: 1.4; \") + (align: \"<==\"))\n\n(set: $passage to (css: \"font-size:55%; line-height: 1.5;\") + (align: \"<==\"))\n\n(set: $red to (css: \"color: #157D9A; font-weight: 400;\"))\n}",
+      "links": []
+    },
+    {
+      "pid": 30,
+      "name": "End2",
+      "text": "\n\n(css: \"font-size: 120%;\")[[[\u2609->Credits]]]",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Credits",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Credits",
+      "text": "$passage[Written by $red[Gabriel Floriano]\n<small>Inspired by Tl\u00f6n, Uqbar, Orbis Tertius from $red[Jorge[$s]Luis[$s]Borges]</small>\n\n<small>My gratitude for those who played this game at some stage of it's development and offered their valuable[$s]observations:</small>\n\n$red[Ingrid Sk\u00e5re]\n$red[Bol\u00edvar Escobar] <small>(the real one)</small>\n$red[Kevin Ong]\n$red[Anna Lidia Jacobi]\n$red[Luiz Gilberto de Barros Filho]\n]\n(if: $l1 is \"Xyzzy\")[(css: \"font-size: 35%;\")[If you intentionally spelled Xyzzy, congratulations. However, nothing happens.]]\n<small>[[Start again|Title]]</small>",
+      "links": [
+        {
+          "text": "Start again",
+          "destination": {
+            "name": "Title",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Title",
+      "text": "(set: $t1 to \"Hex\")(set: $t2 to \"ter\")(set: $t3 to \"ia\")\n (css: \"font-size: 170%;\")[\n<tw-link class='cyclingLink' data-cycling-texts='[\"Hex\", \"Sk\", \"Qi\"]' onclick='clickCyclingLink(this, \"$t1\");'>$t1</tw-link>\u00b7\\\n<tw-link class='cyclingLink' data-cycling-texts='[\"ter\", \"ax\", \"am\"]' onclick='clickCyclingLink(this, \"$t2\");'>$t2</tw-link>\u00b7\\\n<tw-link class='cyclingLink' data-cycling-texts='[\"ia\", \"is\", \"eth\"]' onclick='clickCyclingLink(this, \"$t3\");'>$t3</tw-link>\\\n]\n\n\n[[\u2609|Start]]\n\n{\n\n(set: $hub1 to false)\n(set: $pass1 to false)\n(set: $pass2 to false)\n(set: $pass3 to false)\n\n(set: $n11 to \"Ip\")\n(set: $n12 to \"ib\")\n(set: $n13 to \"ter\")\n\n(set: $n21 to \"Ek\")\n(set: $n22 to \"yq\")\n(set: $n23 to \"ro\")\n\n(set: $n31 to \"Jaq\")\n(set: $n32 to \"en\")\n(set: $n33 to \"gid\")\n\n(set: $v11 to \"Ch\")\n(set: $v12 to \"at\")\n(set: $v13 to \"im\")\n\n(set: $v122 to \"ot\")\n\n(set: $q1 to \"actions\")\n\n(set: $k1 to \"Ki\")\n(set: $k2 to \"ev\")\n(set: $k3 to \"el\")\n\n}",
+      "links": [
+        {
+          "text": "\u2609",
+          "destination": {
+            "name": "Start",
+            "pid": 12
+          }
+        }
+      ]
+    }
+  ]
+}

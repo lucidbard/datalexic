@@ -1,0 +1,985 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Start",
+      "text": "In the country of Tuscary, near the town of Clarence, there is a path that runs through the woods and into the nearby mountains. There is a rumor that if you are walking the path at twilight on the night of a waning moon, a figure might appear at a camp by the side of the road. Those brave enough to approach the figure are never heard from again, and those who ignore the figure never have the encounter again.\n\n[[A vagabond emerges from the mountains.|Vagabond Emerges]]",
+      "links": [
+        {
+          "text": "A vagabond emerges from the mountains.",
+          "destination": {
+            "name": "Vagabond Emerges",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Vagabond Emerges",
+      "text": "The vagabond leans against a thick oak tree, polishing off an apple as the sun dips low on the horizon. Looking back at the mountains behind them, they are glad that that stretch of the journey is over and that home is near. The woods lay ahead, beyond them is Clarence, and perhaps a haystack to rest a weary body. With any luck, the walk through the woods will be short and easy, and the vagabond would arrive just as night fell.\n\nThe vagabond finishes the apple and\n[[desides to eat the core, seeds and all, wasting not a bit,|Apple Eaten]] or\n[[casts the core aside, ready to finish the journey,|Apple Cast Aside]] or\n[[takes the time to plant the core, though it might delay them.|Apple Planted]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "desides to eat the core, seeds and all, wasting not a bit,",
+          "destination": {
+            "name": "Apple Eaten",
+            "pid": 5
+          }
+        },
+        {
+          "text": "casts the core aside, ready to finish the journey,",
+          "destination": {
+            "name": "Apple Cast Aside",
+            "pid": 3
+          }
+        },
+        {
+          "text": "takes the time to plant the core, though it might delay them.",
+          "destination": {
+            "name": "Apple Planted",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Apple Cast Aside",
+      "text": "<<set $apple to 2>>The vagabond casts the core into the trees and wipes their hands upon tawny trousers. Turning to the knapsack, they gather the four corners into a knot, noting that a sole apple remains. It will be a good breakfast in the morning, provided that the vagabond makes it through the woods unimpeded. After propping the knapsack on a stick and shouldering it, the vagabond sets forth on the path towards Clarence. A quick glance back into the wood reveals a raccoon sniffing around the apple core, ready to devour what was cast aside.\n\n[[The sun disappears behind the vagabond, and twilight falls.|Twilight Falls]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "The sun disappears behind the vagabond, and twilight falls.",
+          "destination": {
+            "name": "Twilight Falls",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Apple Planted",
+      "text": "<<set $apple to 3>>Despite the impending night, the vagabond decides to return the apple to the earth. Locating an empty patch by the side of the path, the vagabond sets to work digging a hole. After carefully placing the apple in the hole and covering it, the vagabond turns to the knapsack and ties the corners to a stick. A single apple remains, and gives a nice weight to the knapsack as it is shouldered. The apple would make for a good breakfast, provided the vagabond made it through the woods unimpeded.\n\n[[The sun disappears behind them, and twilight falls.|Twilight Falls]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "The sun disappears behind them, and twilight falls.",
+          "destination": {
+            "name": "Twilight Falls",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Apple Eaten",
+      "text": "<<set $apple to 1>>The seeds taste a bit bitter, and the pith from the core is rough in the mouth, but after the long journey through the mountains, the vagabond needs all the sustinance they can get. They tie up their knapsack, which is nearly empty, save for one last apple slated for breakfast. It's looking a bit old, but should still last the night. With a heavy sigh, the vagabond slings the knapsack over their shoulder and walks the path into the woods.\n\n[[The sun disappears behind them, and twilight falls.|Twilight Falls]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "The sun disappears behind them, and twilight falls.",
+          "destination": {
+            "name": "Twilight Falls",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Twilight Falls",
+      "text": "As the vagabond walks along the path, the trees grow closer and darkness sets in.<<if $apple is 3>> Although it is later than the vagabond would like, they are certain that they will make it to Clarence before too long.<<endif>> The sky is still visible overhead, but some wayward branches have knitted together a canopy here and there. Still, the further in, the darker the sky gets, and twilight fills the whole of it. A few minutes of walking in, the vagabond hears a rustling from the side of the road and turns to spy a small cage in a tree some ways into the brush. From the edge of the path, they spy the source of the noise: a meaty pheasant has been trapped, though the trap seems to have gone unchecked for the day.\n\nThe vagabond\n[[leaves the pheasant to its fate,|Ignore Pheasant]] or\n[[opens the cage and sets the pheasant free,|Free Pheasant]] or\n[[takes the pheasant for their own self.|Kill Pheasant]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "leaves the pheasant to its fate,",
+          "destination": {
+            "name": "Ignore Pheasant",
+            "pid": 7
+          }
+        },
+        {
+          "text": "opens the cage and sets the pheasant free,",
+          "destination": {
+            "name": "Free Pheasant",
+            "pid": 8
+          }
+        },
+        {
+          "text": "takes the pheasant for their own self.",
+          "destination": {
+            "name": "Kill Pheasant",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Ignore Pheasant",
+      "text": "<<set $pheasant to 1>>Though the pheasant's cries are distressing, the vagabond resumes their trek through the ever shading woods.<<if $apple is 1>> A rumble in the vagabond's stomach reminds them of the meager supper they have had, but the vagabond decides to ignore it.<<endif>><<if $apple is 3>> A rumble in the vagabond's stomach reminds them of the meager supper they have had, but the vagabond decides to ignore it.<<endif>> The bird surely belongs to the trapper who has done the work in trapping it, and the pheasant is only part of the overall cycle of things. With a heavy sigh and a thought to the nature of being small when the world is large, the vagabond glances to the sky, one foot in front of the other.\n\n[[A waning moon glistenes through the branches, having finally made its appearance.|Waning Moon]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "A waning moon glistenes through the branches, having finally made its appearance.",
+          "destination": {
+            "name": "Waning Moon",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Free Pheasant",
+      "text": "<<set $pheasant to 2>>The cries from the bird are too much for the vagabond's heart to bear. If they left the bird in the cage, it would surely starve before morning.<<if $apple is 1>> A rumble in the vagabond's stomach echoes the pheasant's impending fate.<<endif>><<if $apple is 3>> A rumble in the vagabond's stomach echoes the pheasant's impending fate.<<endif>><<if $apple is 2>> The vagabond remembers the delicious apple from before and decides to provide for the bird.<<endif>> Since the trap had already been overlooked, no one would miss the bird if it were released now. With a careful hand the vagabond slides the catch and the pheasant erupts from the cage, scratching the vagabond's hand as it does. Though their hands are marked, the vagabond's heart is lighter as they make their way back down the path.\n\n[[A waning moon glistenes through the branches, having finally made its appearance.|Waning Moon]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "A waning moon glistenes through the branches, having finally made its appearance.",
+          "destination": {
+            "name": "Waning Moon",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Kill Pheasant",
+      "text": "<<set $pheasant to 3>>With the prospect of only an apple for supper and an apple for breakfast, the thought of a pheasant is too tempting for the vagabond, who approaches the cage.<<if $apple is 1>> A rumble in the vagabond's stomach reminds them of the meager supper they have had, and the prospect of a cooked bird for the next few days causes the rumbling to grow.<<endif>><<if $apple is 3>> A rumble in the vagabond's stomach reminds them of the meager supper they have had, and the prospect of a cooked bird for the next few days causes the rumbling to grow.<<endif>><<if $apple is 2>> Though the vagabond's stomach is filled more or less, the thought of the cooked bird is too tempting.<<endif>> With a swift motion, the vagabond throws the catch and snaps the pheasant's neck, but not before the bird delivers a nasty scratch to their hand. The vagabond then stores the heavy bird in their knapsack. With a sigh and a thought about the frailty of life, the vagabond continues down the path.\n\n[[A waning moon glistenes through the branches, having finally made its appearance.|Waning Moon]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "A waning moon glistenes through the branches, having finally made its appearance.",
+          "destination": {
+            "name": "Waning Moon",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Waning Moon",
+      "text": "The moon sits ominously in the sky, just visible through the trees, and the vagabond fixates upon it, forgetting the path as they walk. How long has it been since they were last home? How much further is that home beyond Clarence?<<if $pheasant is 1>> How long will it be before there is a decent meal?<<endif>> The sound of a cracling fire breaks the vagabond's reverie. Looking down the path, the vagabond spies a light from the side of the path, flickering but warm.<<if $pheasant is 3>> The idea of a fire reminds the vagabond of the pheasant in their knapsack, waiting to be cooked.<<endif>> The vagabond walks along until they spy a figure, cloaked in shrouds and playing at something in their hands. After a moment's pause, the figure looks up, and a haggard voice emanates from the black void of the cloak. \"Won't you sit with me, fair vagabond?\"<<if $pheasant is 2>> The camp looks inviting, but the vagabond is reminded of the pheasant's cage from earlier.<<endif>>\n\nThe vagabond\n[[enters the campsite and sits with the figure,|Enter Campsite]] or\n[[asks the figure who they are,|Question Figure]] or\n[[decides to move on.|Attempt to Leave]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "enters the campsite and sits with the figure,",
+          "destination": {
+            "name": "Enter Campsite",
+            "pid": 12
+          }
+        },
+        {
+          "text": "asks the figure who they are,",
+          "destination": {
+            "name": "Question Figure",
+            "pid": 13
+          }
+        },
+        {
+          "text": "decides to move on.",
+          "destination": {
+            "name": "Attempt to Leave",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "SecondLoop",
+      "text": "<<remember $lastApple = $apple>><<set $apple to 0>><<remember $lastPheasant = $pheasant>><<set $pheasant to 0>><<remember $lastEnter = $enter>><<set $enter to 0>><<remember $lastOffer = $offer>><<set $offer to 0>><<remember $lastShuffle = $shuffle>><<set $shuffle to 0>>In the country of Tuscary, near the town of Clarence, there is a path that runs through the woods and into the nearby mountains. There is a rumor that if you are walking the path at twilight on the night of a waning moon, a figure might appear at a camp by the side of the road. Those brave enough to approach the figure are never heard from again, and those who ignore the figure never have the encounter again.\n\n[[A vagabond emerges from the mountains.|Vagabond Emerges]]",
+      "links": [
+        {
+          "text": "A vagabond emerges from the mountains.",
+          "destination": {
+            "name": "Vagabond Emerges",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Enter Campsite",
+      "text": "<<set $enter to 1>>The figure sweeps an arm and indicates a nearby log. Sitting down upon it, the vagabond addresses the figure as to who they are and why they have stopped in the wood with the town so nearby. Between the two a flat stone rests, and upon it is one of the figure's hands, clutching something hidden by long sleeves.\n\nThe figure dismisses the vagabond with the wave of a gloved hand and instead says, \"Isn't it a lovely evening? The moon is just so.\" After a polite agreement by the vagabond, who had had nothing but hardship for many nights before, the figure asks, \"Might you have something for a poor, hungry person such as is before you?\"\n\nThe vagabond\n[[offers the remaining apple,|Offer Apple]] or<<if $pheasant is 3>>\n[[offers the pheasant from the trap,|Offer Pheasant]] or<<endif>>\n[[offers nothing at all,|Offer Nothing]] or\n[[offers everything they have.|Offer Everything]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "offers the remaining apple,",
+          "destination": {
+            "name": "Offer Apple",
+            "pid": 15
+          }
+        },
+        {
+          "text": "offers the pheasant from the trap,",
+          "destination": {
+            "name": "Offer Pheasant",
+            "pid": 16
+          }
+        },
+        {
+          "text": "offers nothing at all,",
+          "destination": {
+            "name": "Offer Nothing",
+            "pid": 17
+          }
+        },
+        {
+          "text": "offers everything they have.",
+          "destination": {
+            "name": "Offer Everything",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Question Figure",
+      "text": "<<set $enter to 2>>The figure dismisses the vagabond with a wave of a gloved hand and instead indicates a nearby log. The vagabond, compelled, sits upon it and thanks the figure for their hospitality.  Between the two a flat stone rests, and upon it is one of the figure's hands, clutching something hidden by a long sleeve.\n\nIgnoring the vagabond, the figure says, \"Isn't it a lovely evening? The moon is just so.\" After a polite agreement by the vagabond, who had had nothing but hardship for many nights before, the figure asks, \"Might you have something for a poor, hungry person such as is before you?\"\n\nThe vagabond\n[[offers the remaining apple,|Offer Apple]] or<<if $pheasant is 3>>\n[[offers the pheasant from the trap,|Offer Pheasant]] or<<endif>>\n[[offers nothing at all,|Offer Nothing]] or\n[[offers everything they have.|Offer Everything]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "offers the remaining apple,",
+          "destination": {
+            "name": "Offer Apple",
+            "pid": 15
+          }
+        },
+        {
+          "text": "offers the pheasant from the trap,",
+          "destination": {
+            "name": "Offer Pheasant",
+            "pid": 16
+          }
+        },
+        {
+          "text": "offers nothing at all,",
+          "destination": {
+            "name": "Offer Nothing",
+            "pid": 17
+          }
+        },
+        {
+          "text": "offers everything they have.",
+          "destination": {
+            "name": "Offer Everything",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Attempt to Leave",
+      "text": "<<set $enter to 3>>\"Oh, but do stay,\" the figure says, indicating a nearby log. The vagabond, compelled, sits upon it and thanks the figure for their hospitality. With every moment that passes, the warmth of the fire melts away what reluctance the vagabond still held. Between the two a flat stone rests, and upon it is one of the figure's hands, clutching something, hidden by a long sleeve.\n\nAfter the vagabond had settled in, the figure says, \"Isn't it a lovely evening? The moon is just so.\" After a polite agreement by the vagabond, who had had nothing but hardship for many nights before, the figure asks, \"Might you have something for a poor, hungry person such as is before you?\"\n\nThe vagabond\n[[offers the remaining apple,|Offer Apple]] or<<if $pheasant is 3>>\n[[offers the pheasant from the trap,|Offer Pheasant]] or<<endif>>\n[[offers nothing at all,|Offer Nothing]] or\n[[offers everything they have.|Offer Everything]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "offers the remaining apple,",
+          "destination": {
+            "name": "Offer Apple",
+            "pid": 15
+          }
+        },
+        {
+          "text": "offers the pheasant from the trap,",
+          "destination": {
+            "name": "Offer Pheasant",
+            "pid": 16
+          }
+        },
+        {
+          "text": "offers nothing at all,",
+          "destination": {
+            "name": "Offer Nothing",
+            "pid": 17
+          }
+        },
+        {
+          "text": "offers everything they have.",
+          "destination": {
+            "name": "Offer Everything",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Offer Apple",
+      "text": "<<set $offer to 1>><<if $enter is 1>>Since the figure was kind enough to invite the vagabond in, they decide that a gift is in order. <<endif>><<if $enter is 2>>Though the figure has been evasive, the fire is still warm and welcome.  <<endif>><<if $enter is 3>>Although the vagabond had been wanting to get on to Clarence, they thought nothing could be nicer than a fire for the night, and the hospitality should be repaid. <<endif>><<if $pheasant is 2>>Having a whole pheasant, the vagabond decides that the apple can be spared. <<endif>>The vagabond pulls the apple from their knapsack and offers it to the figure, who takes it carefully in their free hand and places it within the folds of their cloak. The figure says, \"Ah, a succulent golden sun in the palm of my hand. I thank you, and in payment I shall tell your fortune.\" The figure lifts their other hand and pulls away the long sleeve, revealing a set of cards, large and with stylized roses painted upon their backs.\n\n[[Without waiting, the figure begins shuffling.|Shuffle]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "Without waiting, the figure begins shuffling.",
+          "destination": {
+            "name": "Shuffle",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Offer Pheasant",
+      "text": "<<set $offer to 2>><<if $enter is 1>>Since the figure was kind enough to invite the vagabond in, they decide that a gift is in order. <<endif>><<if $enter is 2>>Though the figure has been evasive, the fire is still warm and welcome.  <<endif>><<if $enter is 3>>Although the vagabond had been wanting to get on to Clarence, they thought nothing could be nicer than a fire for the night, and the hospitality should be repaid. <<endif>>The vagabond pulls the pheasant from their knapsack and offers it to the figure, who takes it carefully in their free hand and places it within the folds of their cloak. The figure says, \"Ah the lifebread of the woods, sought after by hunters and their children. I thank you, and in payment I shall tell your fortune.\" The figure lifts their other hand and pulls away the long sleeve, revealing a set of cards, large and with stylized roses painted upon their backs.\n\n[[Without waiting, the figure begins shuffling.|Shuffle]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "Without waiting, the figure begins shuffling.",
+          "destination": {
+            "name": "Shuffle",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Offer Nothing",
+      "text": "<<set $offer to 3>><<if $enter is 1>>Although the figure was kind enough to offer the vagabond a seat by the fire, they think ahead to the impending morning. <<endif>><<if $enter is 2>>The figure has been evasive and so the vagabond feels like they should be wary about this person camping in the woods when the town is so close.  <<endif>><<if $enter is 3>>The fire is appreciated, but the vagabond does not intend to stay long. <<endif>>The vagabond says that they have nothing to spare<<if $pheasant is 3>>, despite their heavy knapsack<<endif>>. The figure clutches a hand at their chest and says, \"Ah, the life of a traveler is full of hardship<<if $pheasant is 3>> and worry<<endif>>, is it not? For a fellow traveler such as you, I shall tell your fortune.\" The figure lifts their other hand and pulls away the long sleeve, revealing a set of cards, large and with stylized roses painted upon their backs.\n\n[[Without waiting, the figure begins shuffling.|Shuffle]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "Without waiting, the figure begins shuffling.",
+          "destination": {
+            "name": "Shuffle",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Offer Everything",
+      "text": "<<set $offer to 4>><<if $enter is 1>>Since the figure was kind enough to invite the vagabond in, they decide that such generosity needs to be repaid. <<endif>><<if $enter is 2>>Though the figure has been evasive, the fire is still warm and welcome. <<endif>><<if $enter is 3>>Although the vagabond had been wanting to get on to Clarence, they thought nothing could be nicer than a fire for the night, and the hospitality should be repaid. <<endif>>The vagabond produces their whole<<if $pheasant is 3>>, heavy,<<endif>> knapsack and offers it to the figure. The figure clutches a hand at their chest and says, \"Such generosity you display for me, whom you do not even know. I cannot take this from such a kind person who has surely grown long from their journey. To return the kindness, I shall tell your fortune.\" The figure lifts their other hand and pulls away the long sleeve, revealing a set of cards, large and with stylized roses painted upon their backs.\n\n[[Without waiting, the figure begins shuffling.|Shuffle]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "Without waiting, the figure begins shuffling.",
+          "destination": {
+            "name": "Shuffle",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Shuffle",
+      "text": "The vagabond sits transfixed as the flickering firelight glistens off the figure's hands and the cards moving rapidly between them. Too captivated to move, time seems to stretch out as the anticipation makes the vagabond lose nearly all sense of their self. When nearly all is gone, the figure speaks, breaking the vagabond from the spell. \"Please cut the cards so that a bit of your soul will linger upon them,\" the figure says, and hands the vagabond the cards.\n\nThe vagabond takes the cards and\n[[cuts them exactly in half,|Cut Half]] or\n[[moves the middle cards to the top,|Cut Middle]] or\n[[shuffles the entire set once.|Cut Shuffle]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "cuts them exactly in half,",
+          "destination": {
+            "name": "Cut Half",
+            "pid": 20
+          }
+        },
+        {
+          "text": "moves the middle cards to the top,",
+          "destination": {
+            "name": "Cut Middle",
+            "pid": 21
+          }
+        },
+        {
+          "text": "shuffles the entire set once.",
+          "destination": {
+            "name": "Cut Shuffle",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Cut Half",
+      "text": "<<set $shuffle to 1>>The vagabond returns the cards to the figure and sits in rapt attention. \"A traditionalist,\" the figure says, \"but tradition is there for a reason, isn't it? Very well, we shall begin. Think heavily upon your life's actions as I cast the cards.\" On the stone slab, the figure carefully lays three cards in a row, face down.\n\n\"The first card represents your past,\" the figure says,\n[[and turns over the card farthest to the left.|First Card]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "and turns over the card farthest to the left.",
+          "destination": {
+            "name": "First Card",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Cut Middle",
+      "text": "<<set $shuffle to 2>>The vagabond returns the cards to the figure and sits in rapt attention. \"You like to play with fate,\" the figure says, \"but fate wants to be played with, doesn't it? Very well, we shall begin. Think heavily upon your life's actions as I cast the cards.\" On the stone slab, the figure carefully lays three cards in a row, face down.\n\n\"The first card represents your past,\" the figure says,\n[[and turns over the card farthest to the left.|First Card]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "and turns over the card farthest to the left.",
+          "destination": {
+            "name": "First Card",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Cut Shuffle",
+      "text": "<<set $shuffle to 3>>The vagabond returns the cards to the figure and sits in rapt attention. \"You go against the rules,\" the figure says, \"but rules are made to be broken, right? Very well, we shall begin. Think heavily upon your life's actions as I cast the cards.\" On the stone slab, the figure carefully lays three cards in a row, face down.\n\n\"The first card represents your past,\" the figure says,\n[[and turns over the card farthest to the left.|First Card]]\n\n<<if $loops is 0>>@@#meta-link;[[Restart|A Figure Met in a Shaded Wood]]@@<<else>>@@#meta-link;[[Restart|SecondLoop]]@@<<endif>>",
+      "links": [
+        {
+          "text": "and turns over the card farthest to the left.",
+          "destination": {
+            "name": "First Card",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "A Figure Met in a Shaded Wood",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Restart",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "First Card",
+      "text": "<<set $lastCard to 1>><center>@@#card-title;Death@@\n<img src=\"0xVDeath.png\"/></center>\nThe figure ponders for a moment and then says, \"Ah, it looks like you have had a harrowing journey that has shown you the darkness of your own self. This says that you have cast off that part of you that you no longer wanted, and now you are here laid bare.\"\n\n\"Let's see what the present has to say,\" the figure says\n[[and carefully flips over the center card.|Second Card]]\n\n<<if $loops > 0>>@@#meta-link;[[But...|Interject]]@@\n<<endif>>@@#meta-link;<<click \"Restart\">><<remember $loops = $loops + 1>><<goto \"SecondLoop\">><<endclick>>@@\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        },
+        {
+          "text": "and carefully flips over the center card.",
+          "destination": {
+            "name": "Second Card",
+            "pid": 24
+          }
+        },
+        {
+          "text": "But...",
+          "destination": {
+            "name": "Interject",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Second Card",
+      "text": "<<set $lastCard to 2>><center>@@#card-title;The World@@\n<img src=\"1xUThe_World.png\"/></center>\nA delighted noise escapes from the figure's cloak and they say, \"Oh, but look here, it seems like you have managed to achieve what you set out to do, and now you are at your journey's end. It looks like your search to become someone new and free yourself from your vices has born fruit.\"\n\n\"Why don't we peek ahead at the future,\" the figure says\n[[and turns over the final card.|Third Card]]\n\n<<if $loops > 0>>@@#meta-link;[[But...|Interject]]@@\n<<endif>>@@#meta-link;<<click \"Restart\">><<remember $loops = $loops + 1>><<goto \"SecondLoop\">><<endclick>>@@",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        },
+        {
+          "text": "and turns over the final card.",
+          "destination": {
+            "name": "Third Card",
+            "pid": 26
+          }
+        },
+        {
+          "text": "But...",
+          "destination": {
+            "name": "Interject",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Interject",
+      "text": "<<set $didChange to 0>>The figure raises their hooded head and looks at you. \"What,\" the figure says, \"did you think you could change this creature's fate just by guiding them through these actions again?\"<<display \"Check Apple\">><<display \"Check Pheasant\">><<display \"Check Enter\">><<display \"Check Offer\">><<display \"Check Shuffle\">><<if $didChange is 0>>\n\"Did you think that just by doing nothing different at all, the cards would somehow be different?\"<<endif>>\n\n<<if $loops < 3>>\"Well, maybe. Maybe if you made just the right choices, and guided them in just the right way, maybe something would be different. Will you try?\n\n@@#meta-link;<<click \"Yes\">><<remember $loops = $loops +1>><<goto \"SecondLoop\">><<endclick>>@@\n@@#meta-link;<<click \"No\">><<if $lastCard is 1>><<goto \"First Card\">><<endif>><<if $lastCard is 2>><<goto \"Second Card\">><<endif>><<if $lastCard is 3>><<goto \"Third Card\">><<endif>><<if $lastCard is 4>><<goto \"The End\">><<endif>><<endclick>>@@<<else>>\"You try and try, over and over, and nothing changes, right? Look, this vagabond is gone from this world. They left it before you even came along. I am here to lead them away from this life. There's nothing you can do to change that. Who do you think you are to say who lives and who dies?<<if $loops > 6>> It is you that holds them here, endlessly reliving the end. Is this what you want?<<endif>>\" The figure pauses for a moment and then says, \"But, you're still going to try, aren't you?\"\n\n@@#meta-link;<<click \"Yes\">><<remember $loops = $loops +1>><<goto \"SecondLoop\">><<endclick>>@@\n@@#meta-link;<<click \"No\">><<if $lastCard is 1>><<goto \"First Card\">><<endif>><<if $lastCard is 2>><<goto \"Second Card\">><<endif>><<if $lastCard is 3>><<goto \"Third Card\">><<endif>><<if $lastCard is 4>><<goto \"The End\">><<endif>><<endclick>>@@<<endif>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Check Apple",
+            "pid": 31
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Check Pheasant",
+            "pid": 30
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Check Enter",
+            "pid": 33
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Check Offer",
+            "pid": 34
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Check Shuffle",
+            "pid": 32
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "First Card",
+            "pid": 23
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Second Card",
+            "pid": 24
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Third Card",
+            "pid": 26
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "The End",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Third Card",
+      "text": "<<set $lastCard to 3>><center>@@#card-title;Hanged Man@@\n<img src=\"2xTHanged_Man.png\"/></center>\nThis time a sigh, \"I'm afraid that there's sad news ahead,\" the figure says. \"Though you managed to achieve all you set out to do, and cast aside the darker side of yourself, you are still stuck, hanging, as it were, in the balance between two worlds. I see it as hanging between this and the next world. There is a sacrifice that you still need to make, and all you have left is your tie to this place.\"\n\n\"Here,\" the figure says and offers the vagabond a hand.\n[['\"Let me lead you to that end.\"'|The End]]\n\n<<if $loops > 0>>@@#meta-link;[[But...|Interject]]@@\n<<endif>>@@#meta-link;<<click \"Restart\">><<remember $loops = $loops + 1>><<goto \"SecondLoop\">><<endclick>>@@",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        },
+        {
+          "text": "'\"Let me lead you to that end.\"'",
+          "destination": {
+            "name": "The End",
+            "pid": 27
+          }
+        },
+        {
+          "text": "But...",
+          "destination": {
+            "name": "Interject",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "The End",
+      "text": "<<set $lastCard to 4>>The vagabond, still somewhat entranced and a bit shocked by the revelation, absently takes the figure's hand. Together they walk, away from the fire and into the wood. \"Perhaps if there was a way to take a different path, make different choices in life,\" the figure says, \"then your fate might have turned out differently. But alas, you will not be going on to Clarence tonight.\"\n\nAs the fire fades and the darkness of the night envelops the woods, the vagabond feels a part of them slip away, slowly flowing out and upon the earth, until all that is left is the feeling of the figure's hand.\n\n[[Then nothing.|Final Page]]\n\n<<if $loops > 0>>@@#meta-link;[[But...|Interject]]@@\n<<endif>>@@#meta-link;<<click \"Restart\">><<remember $loops = $loops + 1>><<goto \"SecondLoop\">><<endclick>>@@",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Then nothing.",
+          "destination": {
+            "name": "Final Page",
+            "pid": 28
+          }
+        },
+        {
+          "text": "But...",
+          "destination": {
+            "name": "Interject",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Final Page",
+      "text": "<center>\n\n\n@@#title-style;A Figure Met in a Shaded Wood@@\n\n@@#byline;by Michael Thom&eacute;t@@\n\nA game about fortune telling and choices<<if $loops > 6>> in video games<<endif>>.\n\n\n@@#meta-link;<<click \"Restart\">><<remember $loops = $loops + 1>><<goto \"SecondLoop\">><<endclick>>@@</center>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "A Figure Met in a Shaded Wood",
+      "text": "<<if !$loops>><<remember $lastEnter = 0>><<remember $lastOffer = 0>><<remember $lastApple = 0>><<remember $lastPheasant = 0>><<remember $lastShuffle = 0>><<set $apple to 0>><<set $pheasant to 0>><<set $enter to 0>><<set $offer to 0>><<set $shuffle to 0>><<remember $loops = 0>><<else>><<set $apple to $lastApple>><<set $pheasant to $lastPheasant>><<set $enter to $lastEnter>><<set $offer to $lastOffer>><<set $shuffle to $lastShuffle>><<endif>><center>\n\n\n@@#title-style;A Figure Met in a Shaded Wood@@\n\n@@#byline;by Michael Thom&eacute;t@@\n\nA game about fortune telling and choices.\n\n\n<<if $loops is 0>><i>[[Start]]</i><<else>><i>[[Start|SecondLoop]]</i><<endif>></center>",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Start",
+          "destination": {
+            "name": "SecondLoop",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Check Pheasant",
+      "text": "<<if $pheasant != $lastPheasant>><<set $didChange to 1>>\n\nA pheasant flies into view and sits upon the nearby rock. The figure says, <<if $pheasant is 1>>\"Did you belive that by honestly leaving the pheasant for the trappers to claim, the vagabond's soul would be cleaner and allowed to stay?\"<<elseif $pheasant is 2>>\"Did you believe that by freeing the bird it would mean that this creature would get a pass on this end?\"<<elseif $pheasant is 3>>\"Did you think that by giving the bird to the vagabond, you ensured that they would not starve?\"<<endif>><<endif>>",
+      "links": []
+    },
+    {
+      "pid": 31,
+      "name": "Check Apple",
+      "text": "<<if $apple != $lastApple>><<set $didChange to 1>>\n\nThe figure pulls an apple from their cloak and says, <<if $apple is 1>>\"Did you think that eating the whole apple would be a more symbolic gesture of embracing this world?\"<<elseif $apple is 2>>\"Did you think that by feeding the raccoon this time, the vagabond would be allowed to stay in kind?\"<<elseif $apple is 3>>\"Did you think that by returning the apple to the earth you could buy the vagabond's life to keep them here?\"<<endif>><<endif>>",
+      "links": []
+    },
+    {
+      "pid": 32,
+      "name": "Check Shuffle",
+      "text": "<<if $shuffle != $lastShuffle>><<set $didChange to 1>>\n\nThe figure waves at the cards before them and says, <<if $shuffle is 1>>\"Did you believe by doing what I asked, I would be kind and change the cards?\"<<elseif $shuffle is 2>>\"Did you believe that better cards might be found elsewhere in the deck?\"<<elseif $shuffle is 3>>\"Did you seriously believe that by shuffling the cards, the results would be any different?\"<<endif>><<endif>>",
+      "links": []
+    },
+    {
+      "pid": 33,
+      "name": "Check Enter",
+      "text": "<<if $enter != $lastEnter>><<set $didChange to 1>>\n\nThe figure gestures at the campsite about them and says, <<if $enter is 1>>\"Did you think that by accepting my invitation without hesitation, I would spare the vagabond their fate?\"<<elseif $enter is 2>>\"Did you think that by questioning my presence, the vagabond would be more wary of me and not be so taken in?\"<<elseif $enter is 3>>\"Did you think that if you led the vagabond away, they might escape my game?\"<<endif>><<endif>>",
+      "links": []
+    },
+    {
+      "pid": 34,
+      "name": "Check Offer",
+      "text": "<<if $offer != $lastOffer>><<set $didChange to 1>>\n\nThe figure sweeps their hands in front of them and says, <<if $offer is 1>>\"Did you think I would spare the vagabond if you had them give me their last apple?\"<<elseif $offer is 2>>\"Did you think that by giving me the fruits of your selfish act, I might go easy on the vagabond?\"<<elseif $offer is 3>>\"Did you think that if you gave me nothing I would turn the vagabond away and refuse to play this game?\"<<elseif $offer is 4>>\"Did you think that showing charity and generosity to me would cause me to change the fate of one so needed in the world?\"<<endif>><<endif>>",
+      "links": []
+    },
+    {
+      "pid": 35,
+      "name": "Empty",
+      "text": "<<set $lastApple to 2>><<set $apple to 1>><<set $lastPheasant to 1>><<set $pheasant to 3>><<set $lastEnter to 1>><<set $enter to 2>><<set $lastOffer to 4>><<set $offer to 2>><<set $lastShuffle to 2>><<set $shuffle to 2>><<set $loops to 10>><<goto \"Interject\">>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Interject",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "Debug Reset",
+      "text": "<<forget $loops>>",
+      "links": []
+    }
+  ]
+}

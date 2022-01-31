@@ -1,0 +1,566 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Intro",
+      "text": "The everyday life of a Superhero is more stressful than people realize. New York City is huge, obviously. There's a lot of people, obviously. How can one man, or, woman, I guess, be responsible for ALL of New York City??!\n\nDo you have what it takes to be the [[Hero]] this City needs???",
+      "links": [
+        {
+          "text": "Hero",
+          "destination": {
+            "name": "Hero",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Hero",
+      "text": "Sunday, 11:26 P.M. \n\nAhhhh after a long night battling your Arch-Rival Dr.Papa Hazmat, you finally arrive back to Headquarters. \n\nYour body is terribly sore and in need of some much deserved rest.\n\n\"Hey, where are you going?! Justice NEVER sleeps!\" the Commissioner barks out.\n\nWho does this guy think he is? Telling YOU what to do?! \n\nIn a way he's right, evil is around every corner and can strike at any time... A Hero needs to stay alert and thank God for [[5-hour Energy]]! \n\nBut wait a second, screw this prick, Dr.Papa Hazmat is a tough dude. Take a load off, [[recover your body]], the City will be here in the morning...\n\n\n\n",
+      "links": [
+        {
+          "text": "5-hour Energy",
+          "destination": {
+            "name": "5-hour Energy",
+            "pid": 3
+          }
+        },
+        {
+          "text": "recover your body",
+          "destination": {
+            "name": "recover your body",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "5-hour Energy",
+      "text": "Monday, 3:17 A.M.\n\n\"AHHHHHH!!\" \n\nThe screams of a woman in distress echo through the streets...\n\nThanks to your supersonic hearing you pinpoint her location to about a mile away.\n\nJust one more sip of energy before you [[fly over there]]! \n\nOr call it quits and hit the hay until [[morning]].",
+      "links": [
+        {
+          "text": "fly over there",
+          "destination": {
+            "name": "fly over there",
+            "pid": 6
+          }
+        },
+        {
+          "text": "morning",
+          "destination": {
+            "name": "morning",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "recover your body",
+      "text": "Monday, 3:17 A.M.\n\n\"AHHHHHH!!\" \n\nThe screams of a woman in distress echo through the streets...\n\nAt this point in the night your mind is in a deep sleep... nothing can wake your slumber and besides, your body is still recovering.\n\nWho knows what's happening to this innocent woman and will she survive?\n\nThe commissioner is going to be in your hear in the [[morning]].\n\n",
+      "links": [
+        {
+          "text": "morning",
+          "destination": {
+            "name": "morning",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "morning",
+      "text": "Monday, 10:15 A.M.\n\n\"RING RING RING\" your alarm goes off\n\nYou roll over hitting it with your hand smashing it into pieces... At least you know your strength is back.\n\nAfter your morning routine, you make your way down to the [[briefing room]] where the commissioner awaits.\n",
+      "links": [
+        {
+          "text": "briefing room",
+          "destination": {
+            "name": "briefing room",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "fly over there",
+      "text": "Monday, 3:19 A.M.\n\nYou flew as fast as you could. Damn 5-Hour Energy really works.\n\nPerched on a rooftop, you look down into an alleyway. \n\n[[There she is]]! \n\n\"AHHH! SOMEBODY HELP ME!\" screams the damsel.",
+      "links": [
+        {
+          "text": "There she is",
+          "destination": {
+            "name": "There she is",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Swooping down to investigate",
+      "text": "Monday, 3:20 A.M.\n\nYou swoop down to investigate and maybe get her number ;)\n\n\"Miss it'll be okay, what's the problem here?\"...Damn, you're such a hero.\n\nShe stares at you with a blank face... Kind of weird..\n\nHer expressions change like everything is fine.\n\n\"I knew you would come. You're so easy.\" says the woman\n\nSooo this chick was faking? Maybe she's into you? This could go [[somewhere]].\n\n",
+      "links": [
+        {
+          "text": "somewhere",
+          "destination": {
+            "name": "somewhere",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "knocked unconscious",
+      "text": "Monday, Unknown Time\n\nYou finally come to...You're suspended by chains in the middle of an open space.\n\nYou adjust your eyes to the dim light. Some kind of [[warehouse]]. You attempt to move your arms but the chains bind them together. The 5-Hour energy has long wore off and you're now more weak and tired than before...\n\n",
+      "links": [
+        {
+          "text": "warehouse",
+          "destination": {
+            "name": "warehouse",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Empire State building",
+      "text": "Monday, 11:00 A.M.\n\nYou take off from HQ flying at mach speeds.\n\nAs you're weaving in between buildings, something alarms your super sonic hearing.\n\n\"Somebody HEEEELLLPPPP!! My goldfish fell in the toilet!!\" screams an innocent child.\n\nAh geez, you have such a soft spot for children. Especially children in trouble. This city needs a good role model. Be the [[role model]] this city needs or continue on to [[save those hostages]].\n\n\n\n",
+      "links": [
+        {
+          "text": "role model",
+          "destination": {
+            "name": "role model",
+            "pid": 27
+          }
+        },
+        {
+          "text": "save those hostages",
+          "destination": {
+            "name": "save those hostages",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Central Park",
+      "text": "Monday, 11:24 A.M.\n\nYou hover over Central Park. Crowds of screaming people are franticly scattering around. There it is, the alien portal right in the middle of a grassy field. \n\nWeird alien creatures can be seen chasing down people and dragging them inside the portal. As far as you can tell, the aliens are not killing any people, which is a good thing, but still, [[not good]]. \n\n",
+      "links": [
+        {
+          "text": "not good",
+          "destination": {
+            "name": "not good",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "open you up",
+      "text": "Simon prepares his tools to cut you open. His experiment may kill you. You need to act fast if you want to survive. \n\nUnfortunately, your energy is so drained that you can't break free from the chains. As far as you see it, this is the end... Damn you 5-Hour Energy, the crash hits harder than the burst of energy.\n\nIt's time to [[weigh your options]]...",
+      "links": [
+        {
+          "text": "weigh your options",
+          "destination": {
+            "name": "weigh your options",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "strength your skin",
+      "text": "With all of your might, you strengthen your skin to a rock hard level. No blade can pierce you now! \n\n\"Let's see how my pizza cutter likes your stomach!\" says Simon with excitment.\n\nThe pizza cutter breaks on your intense concrete torso.\n\n\"What the hell!\" says Simon is a rage. \"Don't worry, I have something for you.\"\n\nSimon leaves and comes back with a [[chainsaw]]...\n\n\n",
+      "links": [
+        {
+          "text": "chainsaw",
+          "destination": {
+            "name": "chainsaw",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "telepathic signal",
+      "text": "You close your eyes and send a call for help to the commish. Hopefully he'll get here soon...\n\n\"Let's see how my pizza cutter likes your stomach!\" says Simon with excitment.\n\nThe pizza cutter slowly slices into you ribs. The pain is immense but you don't even have the energy to scream...\n\n\"A perfect inscission! Now hold still, I need to you to stay open.\" \n\nSimon takes a moment to prepare a cooler with ice... You can only assume he's going to [[remove an organ]]...\n \n\n \n\n",
+      "links": [
+        {
+          "text": "remove an organ",
+          "destination": {
+            "name": "remove an organ",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Defeating the aliens",
+      "text": "Entering that portal could be dangerous and would have been foolish to bull rush into. Saving these people is the priority. Don't let these aliens take your City.\n\nYou land in the grassy field, in front of the portal. You march up the closet alien and swing a fist of fury into his chest. The alien explodes from your incredible power. [[That was easy]]...\n",
+      "links": [
+        {
+          "text": "That was easy",
+          "destination": {
+            "name": "That was easy",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "shut it down",
+      "text": "These people will be fine... For now. Closing that portal is more important. \nWhere could it lead? \n\nYou fly down and bullet right [[through the portal]].\n\n",
+      "links": [
+        {
+          "text": "through the portal",
+          "destination": {
+            "name": "through the portal",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "save the woman",
+      "text": "You turn around and quickly dive down. She better be cute...\n\nThankfully, you catch her with ease...Thankfully she's cute too.\n\n\"Thank you, you saved my life...\" says the frightened woman in shock.\n\nYou [[place the woman safely on the ground]]. You'll get her number later.\n\n\n\n\n",
+      "links": [
+        {
+          "text": "place the woman safely on the ground",
+          "destination": {
+            "name": "place the woman safely on the ground",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "save the man",
+      "text": "She wasn't THAT cute. You fly around to the other side of the building where the man is falling to his death. Maybe he has a daughter or a sister. You'll see soon enough. \n\nYou grab his leg only a few feet away from the pavement.\n\n\"OH MY GOD!... Wait, I'm not dead?\" says the man, eyes closed.\n\nThe man looks up at you, jaw opened in shock. You place [[him safely on the ground]].\n\n",
+      "links": [
+        {
+          "text": "him safely on the ground",
+          "destination": {
+            "name": "him safely on the ground",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "There she is",
+      "text": "She's alone in the alley...\n\nThis 5-Hour Energy makes you feel so good by the way. \n\nFrom the looks of things up here, she's fine. Probably just spooked by a rat. \n\nIt's late and your body is still fatigued despite your burst of energy. [[Swooping down to investigate]] might just be a waste of time because hey, you've pretty much did your duty already, just need to [[fly off->morning]] this extra energy and call it a night. ",
+      "links": [
+        {
+          "text": "Swooping down to investigate",
+          "destination": {
+            "name": "Swooping down to investigate",
+            "pid": 7
+          }
+        },
+        {
+          "text": "fly off",
+          "destination": {
+            "name": "morning",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "top of the building",
+      "text": "\"Welcome! Welcome to our party!\" says Mr. Albino the Rhino.\n\n\"That's enough games. I'm going to take you down...\" you say to the Rhino in a sturn superhero voice. Yeah that's the stuff. Show this guy how much of a badass you are.\n\nIn a rage, you swoop in and grab Albino by the throat lifting him up into the sky.\nThis is it, your moment to be the hero you know you are. You fly up even higher into the sky. The Rhino is struggling in your grasp. \n\nThis is what he deserves... You let go without saying a word...Mr. Albino the Rhino falls thousands of feet to his death on the streets of the City you protect.\n\nYou become a Hero once again...",
+      "links": []
+    },
+    {
+      "pid": 20,
+      "name": "somewhere",
+      "text": "You begin to eye her up.. \"Oh Miss I didn't know...\" BANG!\n\nYou get SMACKED over the back of your head and become [[knocked unconscious]]... ",
+      "links": [
+        {
+          "text": "knocked unconscious",
+          "destination": {
+            "name": "knocked unconscious",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "warehouse",
+      "text": "\"HA-HA-HA! WOW! Now THAT was WAYYYY too easy to capture YOU!\" says a sadistic unknown male voice.\n\nA dark figure walks out from the shadows in front of you. You barely have the strength to look up...\n\n\"Do you know who I am?\" says the mystery man.\n\nLooking up you realize it's none other then Simon Fletchingtonburger. An insane scientific surgeon from the military who starting killing American soliders for his experiments.\n\n\"What do you want?\" you barely gasp out.\n\n\"Why, I want to know what makes you so special. What's inside that body of yours? HA-HA-HA-HA! Let's [[open you up]] and find out!\"",
+      "links": [
+        {
+          "text": "open you up",
+          "destination": {
+            "name": "open you up",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "weigh your options",
+      "text": "That's it! You can convert the remainder of your power to [[strength your skin]] and there's a CHANCE it'll be able to withstand the blades.\n\nOR\n\nYou can use the remainder of your power and send a [[telepathic signal]] to the commissioner requesting assistance. It may take some time for them to get here though and who knows how long you'll last during this experiment...",
+      "links": [
+        {
+          "text": "strength your skin",
+          "destination": {
+            "name": "strength your skin",
+            "pid": 12
+          }
+        },
+        {
+          "text": "telepathic signal",
+          "destination": {
+            "name": "telepathic signal",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "chainsaw",
+      "text": "Oh boy! You did not see this coming... It's unlikely your rock hard shell will hold up...\n\n\"uhhh rrrr ww aaiit arhhh.\" you don't even have enough strength to speak.\n\n\"[[ANY LAST WORDS]]!?! DEFENDER OF THE CITY BUT CAN'T DEFEND HIMSELF!\"",
+      "links": [
+        {
+          "text": "ANY LAST WORDS",
+          "destination": {
+            "name": "ANY LAST WORDS",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "ANY LAST WORDS",
+      "text": "Simon Fletchingtonburger hacks the chainsaw into your ribs destroying your protective skin. The ripping teeth of the chainsaw tear through your bones and flesh...Blood gushes out of you forming a pool of blood on the concrete floor.\n\nIt's over... You are dead... New York City is now without a hero to save them...",
+      "links": []
+    },
+    {
+      "pid": 25,
+      "name": "remove an organ",
+      "text": "\"Ahhh yesss almost done!\" say Simon with a grin.\n\nBANG!\n\nAll of a sudden men in all black smash through the boarded up windows.\n\n\"Stop right there Mr. Flethingtonburger!\" demands the commissioner.\n \nThe commish and his men subdue and arrest Simon... They then proceed to cut you down. \n\nYou did it, you saved yourself and in the process, put Simon behind bars... Damn, you're so good.",
+      "links": []
+    },
+    {
+      "pid": 26,
+      "name": "briefing room",
+      "text": "\"What do we have today?\" you ask the commish as you sit down.\n\n\"Great, your here. It seems danger likes working on a Monday.\" says the commish\n\n\"Wait, does any of this have to do with a woman in danger?\" you curiously ask.\n\n\"No, what are you talking about?\" \n\n\"Nevermind then. Carry on with the [[briefing]].\" you say in relief.\n\n",
+      "links": [
+        {
+          "text": "briefing",
+          "destination": {
+            "name": "briefing",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "role model",
+      "text": "You fly through an open window in the child's apartment building.\n\n\"Alright kid what's the situation?\" you say to this poor sobbing child.\n\n\"He's in there!\" says the boy as he points to the toilet.\n\nYou look down into the toilet. WOW GREAT! There's poop in the toilet. Like straight poop everywhere. Damn, it's a creamy mess in there...\n\nLooking closer, you see a small fish flopping around in that gooey disaster. Decision of a lifetime right here... Should you reach in a [[toilet filled with shit]] or continue on to [[save those hostages]]?  ",
+      "links": [
+        {
+          "text": "toilet filled with shit",
+          "destination": {
+            "name": "toilet filled with shit",
+            "pid": 38
+          }
+        },
+        {
+          "text": "save those hostages",
+          "destination": {
+            "name": "save those hostages",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "save those hostages",
+      "text": "You arrive on the scene and things don't look good... It's time to get up there and save some lives.\n\nAs you're flying up the side of the building a screaming lady barrels past you, falling to her death. You begin to quickly turn around when you notice a man being threw off from the top! \n\nGreat! Do you [[save the woman]] who might have been cute? or fly up to [[save the man]]? ",
+      "links": [
+        {
+          "text": "save the woman",
+          "destination": {
+            "name": "save the woman",
+            "pid": 16
+          }
+        },
+        {
+          "text": "save the man",
+          "destination": {
+            "name": "save the man",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "place the woman safely on the ground",
+      "text": "You saved a life. Good for you. You also have blood on your hands. That man fell to his death and you know nothing about him. You played God and an innocent life is lost because of your choice.\n\nYou fly back up to the [[top of the building]]. You weren't angry before, but now you're pissed. ",
+      "links": [
+        {
+          "text": "top of the building",
+          "destination": {
+            "name": "top of the building",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "him safely on the ground",
+      "text": "You saved a life. Good for you. You also have blood on your hands. That woman fell to her death and you know nothing about her. You played God and an innocent life is lost because of your choice.\n\nYou fly back up to the [[top of the building]]. You weren't angry before, but now you're pissed.",
+      "links": [
+        {
+          "text": "top of the building",
+          "destination": {
+            "name": "top of the building",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "briefing",
+      "text": "\"Alright, an old villian of yours, Mr. Albino the Rhino, is holding hostages at the top of the [[Empire State building]]. He demands to fight you or else he'll begin throwing hostages off the top. \n\nHowever, we also have news of an alien portal opening up in [[Central Park]]. There are reports of a strange species sucking people inside the portal.\n\nJust remember, you can't be in two places at once.\" ",
+      "links": [
+        {
+          "text": "Empire State building",
+          "destination": {
+            "name": "Empire State building",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Central Park",
+          "destination": {
+            "name": "Central Park",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "not good",
+      "text": "These people need help. The aliens don't look physically strong. You can probably rip them apart. [[Defeating the aliens]] will save these innocent people from getting dragged into this portal. \n\nOn the other hand, the aliens aren't actually killing anyone. At least not here. Things through that portal might be different. It might be a good idea to travel through the portal and see where it goes and perhaps figure out how to [[shut it down]]...\n\nSuddenly, you over here a radio report from nearby..\n\n\"Mr. Albino the Rhino just threw a hostage off the Empire State Building...Oh god, please bless those people...\" \n\nIt's not too late to [[save those hostages]] instead.",
+      "links": [
+        {
+          "text": "Defeating the aliens",
+          "destination": {
+            "name": "Defeating the aliens",
+            "pid": 14
+          }
+        },
+        {
+          "text": "shut it down",
+          "destination": {
+            "name": "shut it down",
+            "pid": 15
+          }
+        },
+        {
+          "text": "save those hostages",
+          "destination": {
+            "name": "save those hostages",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "through the portal",
+      "text": "You speak but there's no sound... Breath but there's no air...You're in space underneath a massive space ship.\n\nYou might have powers but you're still only human. The bitterness of space and lack of oxygen freeze your body inside and out as you gasp for air... Your [[life is over]] from a foolish mistake...\n",
+      "links": [
+        {
+          "text": "life is over",
+          "destination": {
+            "name": "life is over",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "life is over",
+      "text": "Mr. Albino the Rhino proceeds to throw all of his hostages off the building and escapes by helicopter. \n\nThe aliens continue to throw humans through the portal into space. However, most of the humans are being sucked up into the space ship before they die... Their alien experiments and ability of portal travel eventually allow them to return to Earth and conquer the planet...\n\nWay to go...",
+      "links": []
+    },
+    {
+      "pid": 35,
+      "name": "That was easy",
+      "text": "It doesn't take long before you come to the last alien left. You grab him with two hands. One hand on his right shoulder and one on his left. You pull in opposite directions and rip the final alien in half...\n\nImmediately after the alien dies, the portal automatically closes... You don't know how or why but the important thing is, the [[people are safe now]]. \n\n",
+      "links": [
+        {
+          "text": "people are safe now",
+          "destination": {
+            "name": "people are safe now",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "people are safe now",
+      "text": "Yes, people were lost but there's nothing you can do now. You saved many more than lost and they are thankful for that...\n\nYou saved the city once again...For the most part... You over hear a [[radio signal again]].\n",
+      "links": [
+        {
+          "text": "radio signal again",
+          "destination": {
+            "name": "radio signal again",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "radio signal again",
+      "text": "\"We are sad to announce that Mr. Albino the Rhino proceeded to throw all of his hostages off the building and escaped by helicopter. It seems our Hero never showed and innocent people lost their lifes because of it.\" \n\nIt's like the commish said, you can't be everywhere. ",
+      "links": []
+    },
+    {
+      "pid": 38,
+      "name": "toilet filled with shit",
+      "text": "Oh God here you go. You reach your hand in the toilet and softly grasp the goldfish to free him of that poopy nightmare. \n\n\"YAY YOU SAVED HIM! THANK YOU!\" shouts the boy.\n\nThe deed is done. Thank God. Time to continue on the [[save those hostages]]. Just make sure you don't go around telling everyone what happened here...",
+      "links": [
+        {
+          "text": "save those hostages",
+          "destination": {
+            "name": "save those hostages",
+            "pid": 28
+          }
+        }
+      ]
+    }
+  ]
+}

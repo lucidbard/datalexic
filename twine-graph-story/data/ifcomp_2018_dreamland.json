@@ -1,0 +1,1124 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Start",
+      "text": "(transition: \"dissolve\")[It's been a long day. All people suddenly decided to *(link: \"talk\")[have endless discussions]* about issues and future plans. *(link: \"Amanda\")[The secretary]* was loud and annoying as hell, and only *(link: \"Brian\")[the cool dude from IT]* was trying to defuse the [(link: \"situation.\")[(go-to: \"Start 2\")]]]\n\n(set: $visitedTheater to false)\n(set: $visitedMarket to false)\n(set: $visitedLibrary to false)\n\n(set: $playedGame to false)\n(set: $gotSnack to false)\n(set: $readBook to false)\n(set: $actionString to \"\")\n\n(set: $remember to false)\n(set: $triedFish to false)\n(set: $triedSweet to false)\n\n(set: $chosenBook to 0)\n(set: $chosenBookName to \"\")\n(set: $correctBookName to \"\")\n\n(set: $sleepString to \"...\")\n(set: $shoeStoryto false)\n(set: $talkedFortune to false)\n(set: $sweetAsk to false)\n(set: $revealWall to false)\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Start 2",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Play some computer games",
+      "text": "One of the most comforting feelings - to play a computer game, where everything is *(link: \"under control\")[almost under control]* and the story line is so interesting that the graphics *(link: \"doesn't matter\")[doesn't matter (well, actually it does)]*.\n\nAfter shooting some *(link: \"extraterrestial monsters\")[(link: \"ducks\")[bad guys]]* you are pretty much ready to finish the day, or?\n\n(if: $gotSnack is false) [(link-goto: \"Get a snack\")]\n(if: $readBook is false) [(link-goto: \"Read a book\")]\n[[Go to sleep]]\n\n(set: $playedGame to true)\n(set: $actionString to \"playedGame\")",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Get a snack",
+            "pid": 3
+          }
+        },
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Read a book",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Go to sleep",
+          "destination": {
+            "name": "Go to sleep",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Get a snack",
+      "text": "You get some chips from the upper shelf of your kitchen drawer, pour in your *(link: \"favourite\")[Star Wars]* cup a cold *(link: \"melissa\")[(link: \"sencha\")[jasmine]]* tea from the kettle that's been filled early in the morning, and slowly sit down in the comfortable chair.\n\n(link: \"All is good.\")[It seems like a good evening, after all. Is there something else to make it even better?\n\n(if: $playedGame is false) [(link-goto: \"Play some computer games\")]\n(if: $readBook is false) [(link-goto: \"Read a book\")]\n[[Go to sleep]]\n]\n\n(set: $gotSnack to true)\n(set: $actionString to \"gotSnack\")",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Play some computer games",
+            "pid": 2
+          }
+        },
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Read a book",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Go to sleep",
+          "destination": {
+            "name": "Go to sleep",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Read a book",
+      "text": "There are so many books on your shelf that you have read already several times, but there are a couple of new ones that you got recently. You pick *(link: \"one\")[the heaviest one]* from the upper shelf without looking and make yourself comfortable in the (link: \"sofa.\")[sofa.\n\nAfter half an hour you are already hooked with the story, but you want to keep the tension for tomorrow, so you put the book aside.\n\n(link: \"Fiction is wonderful.\")[Maybe it's already time to sleep?\n\n(if: $playedGame is false) [(link-goto: \"Play some computer games\")]\n(if: $gotSnack is false) [(link-goto: \"Get a snack\")]\n[[Go to sleep]]\n]\n\n(set: $readBook to true)\n(set: $actionString to \"readBook\")\n]",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Play some computer games",
+            "pid": 2
+          }
+        },
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Get a snack",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Go to sleep",
+          "destination": {
+            "name": "Go to sleep",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Go to sleep",
+      "text": "Just one more question:\n\n\n(live: 2s)[(transition: \"dissolve\")[Are you dreaming to [[remember -> Sleeping remember]] or are you dreaming to [[forget? -> Sleeping forget]]](stop:)]",
+      "links": [
+        {
+          "text": "remember ",
+          "destination": {
+            "name": "Sleeping remember",
+            "pid": 6
+          }
+        },
+        {
+          "text": "forget? ",
+          "destination": {
+            "name": "Sleeping forget",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Sleeping remember",
+      "text": "To revive some very old memories, hidden very deep in your mind.\n(set: $remember to true)\n[[What do you try to remember?->Transition]]\n",
+      "links": [
+        {
+          "text": "What do you try to remember?",
+          "destination": {
+            "name": "Transition",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Sleeping forget",
+      "text": "Falling asleep to get lost in another world where everything is different.\n(set: $remember to false)\n[[So, what do you try to forget?->Transition]]",
+      "links": [
+        {
+          "text": "So, what do you try to forget?",
+          "destination": {
+            "name": "Transition",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Library start",
+      "text": "\\||\\\\|\n/||/|/\\/\n|\\|\\|||\n\\|//|\\/\\\n\n\nBooks. (link: \"Books everywhere.\")[Smell of old paper, dust and some unfamiliar spices. The shelves in front of you look enormously tall, stretching far away in the dim light of the hall. You hear someone coughing very gently on the right side of the hall.\n\n[[Go right->Library Reception]]]\n\n(set: $visitedLibrary to true)\n(set: $book1 to \"Fast Food for Noobies\") \\\n(set: $book2 to \"Recipes to Remember\") \\\n(set: $book3 to \"The Food Lab\") \\\n(set: $book4 to \"Fix it and forget it Cookbook\") \\\n(set: $book5 to \"Kitchen Science\") \\\n(set: $book6 to \"The Game of forgetting\") \\\n(set: $book7 to \"Moonwalking with Einstein: The Art and Science of Remembering Everything\") \\\n(set: $book8 to \"How to be a game coder\") \\\n(set: $book9 to \"Game On!: Video Game History from Pong and Pac-Man to Mario, Minecraft, and More\") \\\n(set: $book10 to \"The American Dream\") \\\n(set: $book11 to \"Waiting for Godot\") \\\n(set: $book12 to \"The Theatre of the Absurd\") \\\n\n(if: $actionString is \"readBook\" and $remember is true) [(set: $correctBookName to $book7)]\n(if: $actionString is \"readBook\" and $remember is false) [(set: $correctBookName to $book11)]\n(if: $actionString is \"gotSnack\" and $remember is true) [(set: $correctBookName to $book2)]\n(if: $actionString is \"gotSnack\" and $remember is false) [(set: $correctBookName to $book4)]\n(if: $actionString is \"playedGame\" and $remember is true) [(set: $correctBookName to $book9)]\n(if: $actionString is \"playedGame\" and $remember is false) [(set: $correctBookName to $book6)]\n",
+      "links": [
+        {
+          "text": "Go right",
+          "destination": {
+            "name": "Library Reception",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Theater start",
+      "text": "You open your (link: \"eyes.\")[eyes. \n\nYou sit in a very comfortable chair. Your body is stiff, you try to move your hands but the parts of your body refuse to move. The only thing that is possible is to move your (link: \"head\")[(goto: \"Theater 1\")] left to right.]\n\n(set: $visitedTheater to true)",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Theater 1",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Market start",
+      "text": "Bright light hits your eyes. Silence breaks with loud noises. You find yourself sitting in a dark corner behind a curtain, but the holes in the fabric let so much light in that is is disturbing.\n\n[[Get out of here ->Market corner]]\n\n(set: $visitedMarket to true)\n(set: $triedFish to false)",
+      "links": [
+        {
+          "text": "Get out of here ",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Intro",
+      "text": "(text-color: \"gray\")[...]\n(live: 2s)[(transition: \"dissolve\")[\n(text-color: \"gray\")[\u25a0 Eating in a dream has unpleasant consequences.]\n(text-color: \"gray\")[\u25a0 To dream of being murdered means that you want to get rid of an unpleasant or unneeded aspect of yourself.]\n(text-color: \"gray\")[\u25a0 Dreaming of escaping danger is a good luck charm to the dreamer's life.]\n(text-color: \"gray\")[\u25a0 Visiting a fortune teller signifies your fears related to your past actions.]\n(text-color: \"gray\")[\u25a0 Seeing a building on fire means that your painful old memories are burnt to hell and it's time to make new memories in life.]\n\n(text-color: \"gray\")[(link: \"IMPORTANT>>\")[(transition: \"dissolve\")[IMPORTANT: It is very important what you do right before sleeping.\n\n[[Play->Start]]]\n]]\n](stop:)]\n\n\n\n\n",
+      "links": [
+        {
+          "text": "Play",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Library Reception",
+      "text": "(if: (history:) contains \"Library Reception\")[You are back at the reception. \n(if: $chosenBookName is \"\")[Julian looks at you like he has nothing to say.]\n(else:)[You bring the book to the reception.\n[[Give the book to Julian]]]\n\n[[Go to the Section 1->Section 1]]\n[[Go to the Section 2->Section 2]]\n[[Go to the Section 3->Section 3]]\n\n]\n(else:)[You follow the shelves and end up at the registration desk. You come close and notice a young man sitting behind it on a brown swivel chair. He is busy writing something on a white card, but he notices you and turns his head in your direction.\n\nHis stricking blue eyes look enormously big behind heavy round glasses.\n\n- May I help you?\n\n|Reply>[- Hi. I do not know how I end up here...]\n\n(click: ?Reply)[- At first, you have to remember where you [[started.->Remembering]]]\n]",
+      "links": [
+        {
+          "text": "Give the book to Julian",
+          "destination": {
+            "name": "Give the book to Julian",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Go to the Section 1",
+          "destination": {
+            "name": "Section 1",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Go to the Section 2",
+          "destination": {
+            "name": "Section 2",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Go to the Section 3",
+          "destination": {
+            "name": "Section 3",
+            "pid": 18
+          }
+        },
+        {
+          "text": "started.",
+          "destination": {
+            "name": "Remembering",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Remembering",
+      "text": "You try to remember.\n(if: $visitedTheater is true) [Lights and chairs.](if: $visitedMarket is true) [Was it something about people selling goods and fortune tellers?](if: $visitedTheater is false and $visitedMarket is false) [What was that? Something... Ah, wait, a busy day, your room, and... \n\n- Am I dreaming?]\n\nThe librarian (link: \"grinned.\")[(go-to: \"Remembering 2\")]\n\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Remembering 2",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Transition",
+      "text": "(live: 2s)[(transition: \"dissolve\")[(set: $sleepstring to \"...\")(if: $actionString is \"readBook\") [(link-goto: $sleepstring, \"Library start\")](if: $actionString is \"playedGame\") [(link-goto: $sleepstring, \"Theater start\")](if: $actionString is \"gotSnack\") [(link-goto:  $sleepstring, \"Market start\")]]]",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Library start",
+            "pid": 8
+          }
+        },
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Theater start",
+            "pid": 9
+          }
+        },
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Market start",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Library Task",
+      "text": "- I can help you out of here, if you bring me **your** book and explain why you have chosen it.\n\n- Which kind of book is (link: \"mine?\")[mine?\n\n- You have to find it yourself.\n\nYeah, great. Is this really how the dreams should be? (if: $visitedTheater is false and $visitedMarket is false)[You try pinching yourself, but it doesn't help. ](else:)[Well, maybe it is not so hard to find the right book...]\n\n[[Go to the Section 1->Section 1]]\n[[Go to the Section 2->Section 2]]\n[[Go to the Section 3->Section 3]]\n\n(set: $chosenBook to 0)\n(set: $chosenBookName to \"\")]",
+      "links": [
+        {
+          "text": "Go to the Section 1",
+          "destination": {
+            "name": "Section 1",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Go to the Section 2",
+          "destination": {
+            "name": "Section 2",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Go to the Section 3",
+          "destination": {
+            "name": "Section 3",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Section 1",
+      "text": "(if: $chosenBookName is \"\") [\nIt seems that the first section contains mainly cookbooks. Why would one need a cookbook now? Nevertheless, some books look interesting enough.\n\n[[Pick a book->Books Section 1]]]\n(else:)[You feel that you cannot pick the book since you already got one in your hands.]\n\n[[Go to the Section 2->Section 2]]\n[[Go to the Section 3->Section 3]]\n[[Go to the reception->Library Reception]]\n\n",
+      "links": [
+        {
+          "text": "Pick a book",
+          "destination": {
+            "name": "Books Section 1",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Go to the Section 2",
+          "destination": {
+            "name": "Section 2",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Go to the Section 3",
+          "destination": {
+            "name": "Section 3",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Go to the reception",
+          "destination": {
+            "name": "Library Reception",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Section 2",
+      "text": "(if: $chosenBookName is \"\") [\nThe air in the second section is cool. Tiny colorful lizards slowly move between the books without paying any attention to you. \n\n[[Pick a book->Books Section 2]]]\n(else:)[You feel that you cannot pick the book since you already got one in your hands.]\n\n[[Go to the Section 1->Section 1]]\n[[Go to the Section 3->Section 3]]\n[[Go to the reception->Library Reception]]",
+      "links": [
+        {
+          "text": "Pick a book",
+          "destination": {
+            "name": "Books Section 2",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Go to the Section 1",
+          "destination": {
+            "name": "Section 1",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Go to the Section 3",
+          "destination": {
+            "name": "Section 3",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Go to the reception",
+          "destination": {
+            "name": "Library Reception",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Section 3",
+      "text": "You enter the section out of curiosity and hear a slight buzzing sound. You look up and see that the ceiling is twinkling with little stars. Not stars - shiny pixies are flying around. \n\nYou go to move forward to the book shelves, and suddenly the shiny clouds turns toward you and the buzz becomes louder. Hm, doesn't sound friendly. Perhaps, should leave them in peace.\n\n[[Go to the Section 1->Section 1]]\n[[Go to the Section 2->Section 2]]\n[[Go to the reception->Library Reception]]",
+      "links": [
+        {
+          "text": "Go to the Section 1",
+          "destination": {
+            "name": "Section 1",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Go to the Section 2",
+          "destination": {
+            "name": "Section 2",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Go to the reception",
+          "destination": {
+            "name": "Library Reception",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Books Section 1",
+      "text": "|Book1>[Pick \"$book1\"]\n|Book2>[Pick \"$book2\"]\n|Book3>[Pick \"$book3\"]\n|Book4>[Pick \"$book4\"]\n|Book5>[Pick \"$book5\"]\n|NoBook>[Don't pick anything]\n\n(click: ?Book1)[(set: $chosenBook to 1) (set: $chosenBookName to $book1) (display: \"Picked book\")](click: ?Book2)[(set: $chosenBook to 2) (set: $chosenBookName to $book2) (display: \"Picked book\")](click: ?Book3)[(set: $chosenBook to 3) (set: $chosenBookName to $book3) (display: \"Picked book\")](click: ?Book4)[(set: $chosenBook to 4) (set: $chosenBookName to $book4) (display: \"Picked book\")](click: ?Book5)[(set: $chosenBook to 5) (set: $chosenBookName to $book5)(display: \"Picked book\")](click: ?NoBook)[(set: $chosenBook to 0) (set: $chosenBookName to \"\") \n[[Section 1]]]\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Picked book",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Section 1",
+          "destination": {
+            "name": "Section 1",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Picked book",
+      "text": "You take $chosenBookName in your hands. It feels somehow that you cannot take one more book with you.\n(replace: ?Book1)[](replace: ?Book2)[](replace: ?Book3)[](replace: ?Book4)[](replace: ?Book5)[](replace: ?NoBook)[](replace: ?Book6)[](replace: ?Book7)[](replace: ?Book8)[](replace: ?Book9)[](replace: ?Book10)[](replace: ?Book11)[](replace: ?Book12)[]\n[[Go to the reception->Library Reception]]",
+      "links": [
+        {
+          "text": "Go to the reception",
+          "destination": {
+            "name": "Library Reception",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Give the book to Julian",
+      "text": "(if: $chosenBookName is $correctBookName) [Julian takes a book from you, looks at it and then turns to you.\n\n- Why have you chosen this book?\n\n- (if: $remember is true)[It feels like I remember it from somewhere.](else:)[I do not know, but I am sure I would have forgotten the reason right away.]\n\n-And your choice is (link: \"correct.\")[(go-to: \"Blow\")] \n](else:) [Julian takes a book from you and throws it behind him without any expression on his face. The book disappears.\n\n- This is not the right book. I sent it back. \n(set: $chosenBookName to \"\") \\\n\n[[Go to the Section 1->Section 1]]\n[[Go to the Section 2->Section 2]]\n[[Go to the Section 3->Section 3]]] \n\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Blow",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Go to the Section 1",
+          "destination": {
+            "name": "Section 1",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Go to the Section 2",
+          "destination": {
+            "name": "Section 2",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Go to the Section 3",
+          "destination": {
+            "name": "Section 3",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Books Section 2",
+      "text": "|Book6>[Pick \"$book6\"]\n|Book7>[Pick \"$book7\"]\n|Book8>[Pick \"$book8\"]\n|Book9>[Pick \"$book9\"]\n|Book10>[Pick \"$book10\"]\n|Book11>[Pick \"$book11\"]\n|Book12>[Pick \"$book12\"]\n|NoBook>[Don't pick anything]\n\n(click: ?Book6)[(set: $chosenBook to 6) (set: $chosenBookName to $book6) (display: \"Picked book\")](click: ?Book7)[(set: $chosenBook to 7) (set: $chosenBookName to $book7) (display: \"Picked book\")](click: ?Book8)[(set: $chosenBook to 8) (set: $chosenBookName to $book8) (display: \"Picked book\")](click: ?Book9)[(set: $chosenBook to 9) (set: $chosenBookName to $book9) (display: \"Picked book\")](click: ?Book10)[(set: $chosenBook to 10) (set: $chosenBookName to $book10) (display: \"Picked book\")](click: ?Book11)[(set: $chosenBook to 11) (set: $chosenBookName to $book11) (display: \"Picked book\")](click: ?Book12)[(set: $chosenBook to 12) (set: $chosenBookName to $book12) (display: \"Picked book\")](click: ?NoBook)[(set: $chosenBook to 0) (set: $chosenBookName to \"\") [[Section 2]]]\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Picked book",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Section 2",
+          "destination": {
+            "name": "Section 2",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Library exit",
+      "text": "(set: $sleepstring to \"...\")\n(if: $visitedTheater is false) [(link-goto: $sleepstring, \"Theater start\")]\n(else:)\n[(link-goto: $sleepstring, \"Sleep exit\")] \n",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Theater start",
+            "pid": 9
+          }
+        },
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Sleep exit",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Market corner",
+      "text": "(if: (history:) contains \"Market corner\")[\n(either: \"You find yourself in a tiny square surrounded by colorful stalls. \nThe market seems very busy. When you try to focus your vision on people around, their faces and bodies look very vague.\", \"You are back to the market square.\", \"People, like amorphous shadows, are moving around. You are wondering around a small square, not sure where to go.\")\n](else:)[You move the curtain, screw up your eyes and get out of this pigeonhole. \n\nThe sun. The street. The dust. Many people around, stalls with vegetables, fish, clothes and various things... Market? \n\nYou feel like going around this place, and some places look more attractive than others.]\n\n[[Go to the fish stall->Fish stall]]\n[[Go to the shoe store->Shoe maker]]\n[[Go to the fortune teller->Fortune teller]]\n[[Go to the sweets store->Sweet stall]]\n(if: $revealWall is true)[(link: \"Go to the wall\")[(go-to: \"Wall\")]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Wall",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Go to the fish stall",
+          "destination": {
+            "name": "Fish stall",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Go to the shoe store",
+          "destination": {
+            "name": "Shoe maker",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Go to the fortune teller",
+          "destination": {
+            "name": "Fortune teller",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Go to the sweets store",
+          "destination": {
+            "name": "Sweet stall",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Fish stall",
+      "text": "(if: (history:) contains \"Market corner\")[You enter the fish corner and the fisherman comes to you:\n- Do you want to get grilled fish?\n\n[[Try the fish->Try fish]]\n[[- No thank you->Don't try fish]]](else:)[The first thing that attracts your attention is a pile of fish being smoked upon a metal box full of steaming coal. This smells amazing!\n\nA young fisherman with tanned skin and brown messy hair shows up.\n\n- Try my grilled fish, fella! I catched it myself this morning!\n\n[[Try the fish->Try fish]]\n[[- No thank you->Don't try fish]]]",
+      "links": [
+        {
+          "text": "Try the fish",
+          "destination": {
+            "name": "Try fish",
+            "pid": 30
+          }
+        },
+        {
+          "text": "- No thank you",
+          "destination": {
+            "name": "Don't try fish",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Wall",
+      "text": "You pass by the fortune teller's tent and enter a small place between two red-brick buildings. There is indeed a wall, about three meters high, with very uneven surface, which is not so hard to climb.\n\n[[Climb the wall]]\n[[Go back->Market corner]]",
+      "links": [
+        {
+          "text": "Climb the wall",
+          "destination": {
+            "name": "Climb the wall",
+            "pid": 43
+          }
+        },
+        {
+          "text": "Go back",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Shoe maker",
+      "text": "(if: (history:) contains \"Shoe maker\")[\nThe man looks at you with a sadness in his eyes:\n- So, did you find out the name of my wife?\n\n(link: \"Say no and leave the place\")[(go-to: \"Market corner\")\n]\n(if: $sweetStory is true)[\n(link: \"Make up something to protect the lady's life\")[(set: $revealLady to false)(go-to: \"Lady's Name\")]\n[(link: \"Tell where he could find his wife\")[(set: $revealLady to true)(go-to: \"Lady's Name\")\n]]]](else:)[\nYou enter the shoe store and meet an old man wearing an apron. He is surrounded by lots of shoe pads, standing neatly on the shelves, and shoes laying around. There are even more shoes in the boxes, waiting to be repaired. The instruments lay around but it seems that he never has problems of finding (link: \"the correct ones.\")[(go-to: \"Shoe maker 2\")] \n]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Lady's Name",
+            "pid": 34
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Shoe maker 2",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Sweet stall",
+      "text": "(if: (history:) contains \"Sweet stall\")[\nThe air smells like roasted sugar. The girl plays with toys in the corner, and the lady sits at the counter. \n(if: $sweetAsk is true)[](else:)[(link: \"Ask about the place\")[(goto: \"Sweet place\")]]\n(if: $shoeStory is true and $sweetStory is false)[(link: \"Ask if she knows the shoe maker\")[(go-to: \"Sweet story\")]]\n(link: \"Go outside\")[(go-to: \"Market corner\")]\n](else:)[(set: $sweetStory to false)You enter the tent, where the air smells like roasted sugar. A young girl with dark ginger hair is placing buns under the glass, and a plump lady with same hair color cleans the plates behind the counter. They look very similar, but the lady has much more freckles on her round face.\n\nThey notice you, the lady puts the plates aside and comes to you:\n\n- Hello, would you like to have some sweets? Today we got special sugar buns!\n\n(link: \"- Hi, I would like to take one!\")[(set: $triedSweets to true)(go-to: \"Sweet 1\")]\n(link: \"Refuse the offering\")[(go-to: \"Sweet 1\")]\n]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Sweet place",
+            "pid": 39
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Sweet story",
+            "pid": 40
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Sweet 1",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Fortune teller",
+      "text": "(if: $talkedFortune is true)[\nYou enter the tent, but there is nothing inside. \n.\n.\n.\n.\nWas there ever something?\n.\n.\n.\n.\n(link: \"Go outside\")[(go-to: \"Market corner\")]](else:)[You slide the dark blue curtain to the side and enter a very warm room with humid air. A tiny oval table stands in the middle, and you see a lady sitting there, still like a wax statue. She wears a shawl and you cannot really see her face very well, only the eyes. She slowly moves her hand towards you, inviting to join her at the table.\n\n(link: \"Sit at the table\")[(go-to: \"Conversation with fortune teller\")]\n(link: \"This looks suspicious. Go away\")[(go-to: \"Market corner\")]\n]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Conversation with fortune teller",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Try fish",
+      "text": "You ask for a nice fish. The man takes a fat trout from the grill and gives it to you. You find some coins in your pocket (how did you get some money?) and put it on the table.\n\nThe fish is delicious. You sit at the small woden table and relaxingly enjoy the meal, before going (link: \"outside.\")[(go-to: \"Market corner\")]\n(set: $triedFish to true)\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Don't try fish",
+      "text": "(if: $remember is true)[You politely refuse the invitation to eat something, remembering it may be dangerous.\n\n... How you remember that?\n\nNevertheless, you go (link: \"outside.\")[(goto: \"Market corner\")]](else:)[You politely refuse the invitation to eat. Maybe it is good to save money for something else.\n\nYou say \"bye\" to the fisherman and go (link: \"outside.\")[(goto: \"Market corner\")]]\n\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Shoe Maker Answer",
+      "text": "(if: $shoeAnswer is \"a1\")[The old man's face got rigid.\n\n- Noone just \"walks around\" here! You have to sell or buy something, if you are here. Otherwise, you are just an unproductive human (link: \"being.\")\n[\nOh, that was harsh.\n- What can I do then?\n\nThe shoe maker's expressions softened. And suddenly, he said:\n- You can (link: \"help me.\")[(go-to: \"Shoe Maker Story\")]]\n](else:)[- You are at the market, don't you see? The place where people buy and sell. But there is something in this place that puts me into melancholy. I wish someone would listen to me, but everyone around thinks I am crazy. Would you (link: \"listen\")[(go-to: \"Shoe Maker Story\")] to me?\n]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Shoe Maker Story",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Shoe Maker Story",
+      "text": "- If you ever see a wonderful woman with freckles around here... Let me (link: \"tell you.\")[tell you.\n\nThe man continues:\n- I've met her over than 20 years ago, she has been an amazing woman, but then she was gone. She told me I can get her back only if I could say her name... Before that she will be just a shadow for me.\n- And what is her (link: \"name?\")[name?\n(if: $remember is true)[- I don't remember.](else:)[- I forgot.]\n- You cannot remember a name of a woman of your life?\nThe old man sighs.\n- Magic is on her side. Please, if you see her around, ask for her name. I wish she would be back with me again.\n\nThe old man started to sob. You mumble something about helping him maybe and leave the store.\n\n(set: $shoeStory to true)\n[[Go outside->Market corner]]\n]]",
+      "links": [
+        {
+          "text": "Go outside",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Lady's Name",
+      "text": "(if: $revealLady is true)[You tell the shoe maker about the sweet store.]\n(else:)[You tell the shoe maker that noone around here knows where she is.]\n\nThe old man carefully listens to your story, lie or not. He sits in silence for some time, and then tells you quietly:\n(if: $revealLady is true)[- Thank you for telling me the truth. I am glad she is around here, and I will be happy to give her a smile, even if I see another person in front of me.](else:)[- Maybe I will find her here, I don't know. But thank you for trying.\n\nYou feel a bit bad about lying, but you did not want to bring any troubles to the lady.]\n\nThe man continues: \n\n- Since you helped me, I want to give you something (link: \"back.\")[(go-to: \"Wall story\")]\n\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Wall story",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "Conversation with fortune teller",
+      "text": "You sit down on a chair in front of the lady. She silently takes a deck of cards from her pocket and starts tossing them without showing their faces. \n\nShe stops abruptly and starts talking with a quiet squeaky voice:\n\n- You are searching for answers but coming without (link: \"questions.\")[questions. (if: $remember is true)[You try to remember but you do not even know, which direction to (link: \"look.\")[(go-to: \"Conversation 2\")]](else:)[You want to forget but you do not know what exactly is worth (link: \"remembering.\")[(go-to: \"Conversation 2\")]] \n(set: $talkedFortune to true)\n]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Conversation 2",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "Conversation 2",
+      "text": "She turns the first (link: \"card.\")[card.\n(if: $playedGame is true)[- The Hanged Man. What got you here, won't get you there.](else:)[- Temperance. Deeply inside, you know what you want.]\n\nShe turns the second (link: \"card.\")[card.\n(if: $triedFish is true or $triedSweets is true)[- Reversed Knight of Cups. The greed is too strong in you and you put yourself in danger.](else:)[- Seven of Cups. Too many options you have, don't you?]\n\nThe third (link: \"card.\")[card. \n(if: $remember is true)[- Reversed Three of Sword. Never be afraid to say you are sorry.](else:)[- Four of Pentacles. Don't resist changes, they will come in the right time.]\n\nYou wait for her to (link: \"continue.\")[(go-to: \"Conversation 3\")]\n\n]]]\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Conversation 3",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Conversation 3",
+      "text": "The fortune teller coldly peers into your face.\n\n- There is nothing more I can tell you. You can escape if you climb higher. Or go deeper. Now go.\n\nThe lady leaned back on her chair and closed her (link: \"eyes.\")[eyes.\n\nYou still feel too uncomfortable to speak anything, so the only thing you can pronounce is a very soft \"Thank you\". You move the chair back from the table, stand up, bow to the lady even though she would not notice, and go (link: \"outside.\")[(go-to: \"Market corner\")]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Sweet 1",
+      "text": "(if: (history:) contains \"Sweet 1\")[]\n(else:)[\n(if: $triedSweets is true)[You take from her hands a small yellow bread top-coated with sugar and try it. Surprizingly, it tastes a bit bitter.](else:)[You gently reject the offer.]\n]\n(if: $sweetAsk is true)[](else:)[(link: \"Ask about the place\")[(goto: \"Sweet place\")]]\n(if: $shoeStory is true and $sweetStory is false)[(link: \"Ask if she knows the shoe maker\")[(go-to: \"Sweet story\")]]\n(link: \"Go outside\")[(go-to: \"Market corner\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Sweet place",
+            "pid": 39
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Sweet story",
+            "pid": 40
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Sweet place",
+      "text": "You ask, what is this place is all about. The ladie's face brightens up, and she starts to talk very fast.\n\n- Oh, this is the best place! You buy and you sell... And that's all maybe, but it is enough to be happy here. My little granddaughter spends a lot of time with me because the parents help the fishermen... Most of the time they are at the river which is pretty far away from here.\n\nShe talks very passionately, even though her voice sounds a little bit sad.\n(set: $sweetAsk to true)\n(if: $shoeStory is true and $sweetStory is false)[(link: \"Ask if she knows the shoe maker\")[(go-to: \"Sweet story\")]]\n(link: \"Leave the sweet store\")[(go-to: \"Market corner\")]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Sweet story",
+            "pid": 40
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Sweet story",
+      "text": "You ask the lady:\n\n- Ehm, do you know the shoe maker around the corner? He was mentioning a woman with freckles, who stole his heart and magically disappeared...\n\nThe lady's face turned (link: \"somber.\")[(go-to: \"Sweet story 1\")]\n(set: $sweetStory to true)",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Sweet story 1",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Sweet story 1",
+      "text": "- He asked you to find me, right?\n\nYou (link: \"nod.\")[nod. \n\n- I was so flattered, but I could not stay with him any longer... These shoes, the leather smell... Even though we live and work so close to each other, he cannot see me when he comes to this place, he just sees another woman in front of him. I think it is better for us to be like (link: \"this.\")[this. \n\nPlease, if you see him again, do not say anything that would break his heart again.\n\nYou understand the worries of the lady and assure her that everything will be fine.\n\n(if: $sweetAsk is true)[](else:)[(link: \"Ask about the place\")[(go-to: \"Sweet place\" )]]\n(link: \"Leave the sweet store\")[(go-to: \"Market corner\")]\n]]\n\n\n\n\n\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Sweet place",
+            "pid": 39
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Wall story",
+      "text": "You listen carefully.\n\n- There is a brick wall behind the fortune teller tent, between two buildings. You can try to climb it, if you want to see more.\n\n- To see (link: \"what?\")[what?\n\n- More. That's it. Now please, leave me alone.\n\nThe shoe maker stands up and goes away from you.\n\n(set: $revealWall to true)\n[[Go outside->Market corner]]\n]",
+      "links": [
+        {
+          "text": "Go outside",
+          "destination": {
+            "name": "Market corner",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Climb the wall",
+      "text": "You put your foot on the first brick that peers out of the wall and start (link: \"climbing.\")[climbing. \n\n(if: $triedFish is true or $triedSweets is true)[You feel that every step higher is hard to make, and something constantly drags you down. You struggle with this heavy feeling, trying to fight exhaustion. Finally, you reach the top of the wall.](else:)[The air gets thicker and you feel surrounded by clouds while climbing higher. When you are on top, you cannot see much over the wall because everything is covered in some sort of fog. ]\n\nYou (link: \"hesitate.\")[hesitate.\n\nBut just for a moment. Then, you put your legs over and try to find some place for your feet on the other side of the wall.\n\nSuddenly your hands slip from the top and you slide down, without feeling any supporting surface (link: \"under you.\")[(go-to: \"Market exit\")]]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Market exit",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Market exit",
+      "text": "(set: $sleepstring to \"...\")\n(if: $visitedLibrary is false) [(link-goto: $sleepstring, \"Library start\")]\n(else:)\n[(link-goto: $sleepstring, \"Sleep exit\")] \n",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Library start",
+            "pid": 8
+          }
+        },
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Sleep exit",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Sleep exit",
+      "text": "There were swirls, and there were colors. \n\nThere were people, and there were conversations.\n\n(link: \"...\")[You open your [[eyes.->Wake up]]]",
+      "links": [
+        {
+          "text": "eyes.",
+          "destination": {
+            "name": "Wake up",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Theater 1",
+      "text": "You look around. It's dark but far in front of you, you see a stage with people dressed up in old-fashion peasant clothing and performing a theatrical play. The seats near you are empty, so seems the whole auditorium. The people on stage are talking.\n\n(link: \"You listen.\")[\n*If ever you have look\u2019d on better days,\nIf ever been where bells have knoll\u2019d to church,\nIf ever sat at any good man\u2019s feast,\nIf ever from your eyelids wip'd a tear,\nAnd know what 'tis to pity and be pitied \u2014\nLet gentleness my strong enforcement (link: \"be.\")[(go-to: \"Theater 2\")]*\n]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Theater 2",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "Theater 2",
+      "text": "The play goes on, and you still cannot control any part of your body apart from the head. The feeling of helplessness magnifies the irreality of the place. \n\n(link: \"Continue watching\")[(set: $closeEyes to false)(go-to: \"Theater 3\")]\n(link: \"Try to close the eyes and get to sleep\")[(set: $closeEyes to true)(go-to: \"Theater 3\")]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Theater 3",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Theater 3",
+      "text": "(if: $closeEyes is true)[You press your eyelids hard to get away from this dream. This doesn't help much, so you focus on relaxing. When you already feel that the sleep is coming for you, the last things you hear (link: \"are:\")[\n\n*All the world's a stage,\nAnd all the men and women merely players;\nThey have their exits and their entrances,\nAnd one man in his time plays many parts,\nHis acts being seven ages.*\n\nAnd the world slips (link: \"away.\")[(go-to: \"Theater exit\")]]\n](else:)\n[You continue watching the play since it's actually pretty enjoyable. The drama goes on and on, and when the curtains finally close, suddenly the invisible audience around you starts to clap so loud that you'd wish you could close your ears with your hands. \n\nThe sounds get louder and you feel that you are falling in a dark hole. You close your eyes, and everything around you (link: \"fades.\")[(go-to: \"Theater 4\")]\n]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Theater exit",
+            "pid": 50
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Theater 4",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Theater 4",
+      "text": "(link: \"...\")[\n\n*How bitter a thing it is to look into (link: \"happiness\")[(go-to: \"Theater exit\")] through another man\u2019s eyes...*]\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Theater exit",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Theater exit",
+      "text": "(set: $sleepstring to \"...\")\n(if: $visitedMarket is false) [(link-goto: $sleepstring, \"Market start\")]\n(else:)\n[(link-goto: $sleepstring, \"Sleep exit\")] ",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Market start",
+            "pid": 10
+          }
+        },
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "Sleep exit",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Start 2",
+      "text": "Finally, you are in your cosy place, heavy blue curtains already down, sofa calling for a nap. But there could have been something else before going to sleep, just to make the day better.\n\n[[Play some computer games]]\n[[Get a snack]]\n[[Read a book]]\n",
+      "links": [
+        {
+          "text": "Play some computer games",
+          "destination": {
+            "name": "Play some computer games",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Get a snack",
+          "destination": {
+            "name": "Get a snack",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Read a book",
+          "destination": {
+            "name": "Read a book",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Remembering 2",
+      "text": "- Welcome to the library! My name is Julian and I take care of the place. You can walk around the first two sections and get to know many interesting things! Please do not go in section Three: the pixies live there, they will enchant you, which is never good for someone like you. The lizards in the section Two are friendly, and please do not accidentally set anything on (link: \"fire.\")[fire.\n\nJulian seems to be a nice person. But, well... Spending all of your time between books doesn't seem like a perfect option.\n\n[[- Can I get out of here anyhow?->Library Task]]]",
+      "links": [
+        {
+          "text": "- Can I get out of here anyhow?",
+          "destination": {
+            "name": "Library Task",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Blow",
+      "text": "Julian holds the book in front of him, blows on it, and the book falls into dusty sparkling pieces. The powder moves to you and covers your face. Everything [[shines. -> Library exit]] ",
+      "links": [
+        {
+          "text": "shines. ",
+          "destination": {
+            "name": "Library exit",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Wake up",
+      "text": "All of your body feels stiff - you fell asleep right on the sofa. You cannot remember what exactly you did in the evening, but (if: $triedSweets is true)[your shirt is covered with bread crumbles.](else:)[it was definitely something good.] \n\nIt's going to be a nice day today, isn't it?\n\n\n\n**END**\n\n[[Play again->Intro]]",
+      "links": [
+        {
+          "text": "Play again",
+          "destination": {
+            "name": "Intro",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Shoe maker 2",
+      "text": "The man comes forward, scratches his not-so-well-shaved chin and inspects you from head to toe by slowly moving his head.\n\n- Hello, I do have a feeling you already got a nice pair of shoes. How else may I help you?\n\n(link: \"-Oh, I am just walking around...\")[(set: $shoeAnswer to \"a1\")(goto: \"Shoe Maker Answer\")]\n(link: \"-Hi, I was just wondering where I am...\")[(set: $shoeAnswer to \"a2\")(goto: \"Shoe Maker Answer\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Shoe Maker Answer",
+            "pid": 32
+          }
+        }
+      ]
+    }
+  ]
+}

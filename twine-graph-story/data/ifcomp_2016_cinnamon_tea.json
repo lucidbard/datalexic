@@ -1,0 +1,262 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Start",
+      "text": "\\nYou swirl your cup of cinnamon tea in your hands, the brown sugar you put in it clumping slightly at the bottom of the mug.\\n\\nYou'd heard rumors in your community this would work, that some kinds of tea would open up the past, and even possibly the future, to human eyes in the realm of sleep.\\n\\nIt was hard for you to believe in past lives, and even more difficult to believe in future lives, but you had to give it a shot - even just once. Maybe you were a warrior, once, or a beautiful genderless monarch reigning over a supreme kingdom.\\n\\nYou shake your head, dispelling the thoughts from the inside of your head. The rumors said clear mind, right?\\n\\nYou tilt the cup back against your lips, taking a small sip. It's strong tea, one you've never had before. \\n\\n[[It burns.|pass1]]\\n\\n[[It numbs your lips.|pass2]]\\n\\n[[It feels good against your dry, scratchy throat.|pass3]]",
+      "links": [
+        {
+          "text": "It burns.",
+          "destination": {
+            "name": "pass1",
+            "pid": 6
+          }
+        },
+        {
+          "text": "It numbs your lips.",
+          "destination": {
+            "name": "pass2",
+            "pid": 7
+          }
+        },
+        {
+          "text": "It feels good against your dry, scratchy throat.",
+          "destination": {
+            "name": "pass3",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "1",
+      "text": "data:image/png;base64,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",
+      "links": []
+    },
+    {
+      "pid": 3,
+      "name": "3",
+      "text": "data:image/png;base64,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",
+      "links": []
+    },
+    {
+      "pid": 4,
+      "name": "2",
+      "text": "data:image/png;base64,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",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "StoryTitle",
+      "text": "Cinnamon Tea",
+      "links": []
+    },
+    {
+      "pid": 6,
+      "name": "pass1",
+      "text": "It burns.\\n\\nYou wince, set the mug far away from yourself. Even though you sweetened it, tried to mellow the strong taste of cinnamon, orange peel, and clove, it still singes your lips and tongue like fire.\\n\\nYou didn't expect it to be like that. Maybe you should have gone the other route, with the lavender tea. Maybe it would be less gross and painful.\\n\\nSighing, you comb your hands through your hair, and set yourself to focus on draining the cup of tea in front of you.\\n\\nYou only get about half of it down before you stick your tongue out, getting up and heading to the kitchen. The sugar still clumps to the bottom of the mug as you pour the tea out, and you gie the mug a small shake to loosen the clumps of brown sugar.\\n\\nYou place the mug in the dishwasher and walk back through your home, bare feet making small noises against the wooden floor.\\n\\n[[You lay in bed on your computer until your head nods slowly, your cheek coming to rest on the blanket you lay on.|pass1.1]]",
+      "links": [
+        {
+          "text": "You lay in bed on your computer until your head nods slowly, your cheek coming to rest on the blanket you lay on.",
+          "destination": {
+            "name": "pass1.1",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "pass2",
+      "text": "It numbs your lips.\\n\\nYou shake your head and stick out your tongue a bit, running it over your stinging lips. The warmth is nice, but the taste is unexpected. Cloves, cinnamon, orange. Things you've had separately but never together. It was strange, but not entirely unpleasant.\\n\\nYou take another sip, plodding over to your small, cramped living room and cuddling up against the couch cushions. You brush a lock of hair from your face as you lean forward, grabbing the remote and turning on your tv.\\n\\nIt's some history channel, and for a moment, you chuckle. How fitting, to watch something about history when trying to discover your own.\\n\\n[[You snuggle up into the couch as you finish your tea, setting the mug down on your cluttered coffee table just before you drift off to sleep.|pass2.1]]",
+      "links": [
+        {
+          "text": "You snuggle up into the couch as you finish your tea, setting the mug down on your cluttered coffee table just before you drift off to sleep.",
+          "destination": {
+            "name": "pass2.1",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "pass3",
+      "text": "It feels good against your dry, scratchy throat.\\n\\nThe soothing warmth is something out of this world, and even though you're not entirely a fan of the taste, that's not what matters. You pause for a moment, wondering if you'd like the lavender tea that was given as an alternative to the cinnamon, clove, and orange peel tea, but you shrug the thought off.\\n\\nRelaxation and a clear mind were key, apparently. You sigh, your breath blowing the steam from rising from the opening of the mug away from your face.\\n\\nYou sit on the kitchen floor and steadily drain the mug of tea over the next hour or so. You scratch a spot behind your ear and smile a little - wouldn't this be so cool if it worked?\\n\\nYou lay back against the cool linoleoum and close your eyes, crossing your arms behind your head as a sort of makeshift pillow. \\n\\n[[You set the empty mug next to you, and barely even notice te hard floor against your back as you drift off.|pass3.1]]",
+      "links": [
+        {
+          "text": "You set the empty mug next to you, and barely even notice te hard floor against your back as you drift off.",
+          "destination": {
+            "name": "pass3.1",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "pass1.4",
+      "text": "You awaken with a start in your bed, a small dribble of drool running down over your bottom lip and dropping onto the pillow, where it joins several other pools on the red cotton pillowcase.\\n\\nYou comb your fingers through your hair groggily, glancing into your mirror across the room. You can only make out your eyes, red and bloodshot. You shake your head. What a dream ... who was Ivory? Why had you been captured? Why was he being so ... so ... nice?\\n\\nYou sigh through gritted teeth, pushing your blankets off of your body and onto the rest of the bed. Your knuckles sting, and you chance a glance at them, red-lined eyes growing wide at the sight.\\n\\nBlood.\\n\\nWith a yelp, you scramble out of your bed and into your bathroom, blindly groping for the lightswitch in spite of your pained knuckles.\\n\\nThe light flickers on and you look over your hands: red, bloody, with splinters and cuts littering your flesh.\\n\\n[img[1]]",
+      "links": []
+    },
+    {
+      "pid": 10,
+      "name": "pass1.1",
+      "text": "You wake up, groggy, and a scowl instantly fixes itself onto your pale face.\\n\\nEverything around you is shades of white, gold, and blue, and it's <i>disgusting</i>. You run an arm across your face, staining the white sleeve of your nightgown with varying shades of red, your make-up from the night before you refused to wash off out of spite.\\n\\nA gentle knock at the door - <i>of course he's a gentle knocker.</i> \"What.\" you spit, crimson eyes fixing themselves on the seamless white wall across the room from the bed you lay in.\\n\\nPart of the wall becomes a door, and you see Ivory, your enemy, the one that makes pure, roiling hatred boil in the pit of your stomach. \"Good morning, Carmine. I was wondering if you would join me for breakfast?\"\\n\\n\"I don't eat the young of my people, I'm afraid,\" You quip, grinning a perfect gap-toothed grin as Ivory's peaceful face collapses in on itself. \\n\\n\"We don't-- the war is over, Carmine. Your people have allowed us to eat fruits, vegetables, and other meats again.\"\\n\\nYou make a face, raising the corner of your lips in a sneer.\\n\\n[[\"I should have killed you when I had the chance.\"|pass1.2]]",
+      "links": [
+        {
+          "text": "\"I should have killed you when I had the chance.\"",
+          "destination": {
+            "name": "pass1.2",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "pass1.3",
+      "text": "You sit up on the floor, speckled with blood and the ruins of a chair, a table - most of the furniture in the room - and look down at yourself. You've torn your dress, one of your own that Ivory offered to let you keep. You had hissed that just this one would be fine, but you had lied in anger.\\n\\nYou suppose it was well enough, though. No point in a queenly wardrobe for a dethroned monarch.\\n\\nYou wipe your eyes, scratchy and burning with shed tears, and you wince as your bloodied knuckles brush against your remaining tears.\\n\\nWhat was the point of living now?\\n\\nIvory wanted to spare you, instead of gutting you like the black-blood had wanted to do, and you're still ... not quite sure why. You were this awful, toxic bundle of matches, waiting to be struck so you could burn everything around you down.\\n\\nWhy would someone as nice and good as Ivory want to spare <i>you?</i>\\n\\n\"Because you're weak.\" Your brain whispers, matter-of-fact, and it makes your breath hitch. \\n\\n[[You close your eyes, grimacing, and lay down on a bare spot on the floor, curling up into a ball.|pass1.4]]\\n",
+      "links": [
+        {
+          "text": "You close your eyes, grimacing, and lay down on a bare spot on the floor, curling up into a ball.",
+          "destination": {
+            "name": "pass1.4",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "pass1.2",
+      "text": "\"But you didn't.\" Ivory says, just loud enough for you to hear.\\n\\nThat's when your shoulders shake, your teeth grind, and tears prickle and burn in the corners of your eyes.\\n\\nYou scream, wordless, bloodcurdling noises as you lunge towards the door, towards Ivory, your hands formed into claws.\\n\\nThe door slams on you and you slam into it, pounding against the seamless white wall, cursing, shrieking shrilly at your foe through the border separating you two.\\n\\n\"I didn't kill you because I knew you would die on your own! You are <i>weak</i>, Ivory! You took my world away from me because of what others told you, and you believed them! You are a <i>weakling</i>, Ivory!\" Your knuckles smear rusty red on the white walls as you slam your fists into it, clear red tears running rivulets down your cheeks.\\n\\n\"Strong enough to win against the Red Queen,\" Ivory's voice quips, and you immediately see red.\\n\\nYou black out some time later, after throughly destroying your living quarters your enemy had provided to you under the guise of being kind. He stripped you of your power, your crown, and he had the nerve to <i>pity</i> you.\\n\\n[[You would rather die than be pitied.|pass1.3]]",
+      "links": [
+        {
+          "text": "You would rather die than be pitied.",
+          "destination": {
+            "name": "pass1.3",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "pass2.2",
+      "text": "The guard's greedy gut jiggles as he smacks you so hard you swear you can taste colors for half a heartbeat.\\n\\nYou both fall to the ground, but you immediately shield Rolf with your own body, barely bigger than his but with less sickness invading your bones. You growl like a feral animal, almost ashamed at what they'd made you into. You'd gone from a tailor's apprentice to a snarling, starving animal locked in a camp, made to work like a dog and given just enough to live.\\n\\nYou'd found Rolf, and he made your heart happy, he made the taste of mold and blood bearable. You're already damned, but they would have to drag you away from the boy who made your heart sing kicking and screaming.\\n\\n[[And that's exactly what they try to do.|pass2.3]]",
+      "links": [
+        {
+          "text": "And that's exactly what they try to do.",
+          "destination": {
+            "name": "pass2.3",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "pass2.3",
+      "text": "They'd ripped out a couple of your teeth, coated with gold caps, but you still have the bite of the feral animal you feel inside of you. The guard yelps as he lets go of your face, shoving you back onto Rolf. You stumble but stand, holding your ground with your fists readied.\\n\\nYou hear the crack of the gun before you feel blood and brain at your back.\\n\\nYou spin on your heel just in time to see Rolf fall back, one of his eyes blown out of its socket and replaced with a bullet instead. You scream, hoarse, shrill, before you black out, covered in gore and cracked over the head with the butt of the guard's gun.\\n\\n[[When you come to, you're struggling for breath with a noose around your neck.|pass2.4]]",
+      "links": [
+        {
+          "text": "When you come to, you're struggling for breath with a noose around your neck.",
+          "destination": {
+            "name": "pass2.4",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "pass2.1",
+      "text": "You jump awake as the sharp blare of a whistle screeches into your mind.\\n\\nYou scramble out of bed immediately, half-dressed, pale, disgustingly thin. You hear a soft groan behind you and your face morphs into one of terror.\\n\\nHe slept in your bed, cuddled close to you last night, both of you trying to seek warmth and affection in the bitter cold of the night. The guard looks behind you, scoffing. He mutters something in German under his breath as he pushes past you, grabbing your love, your reason for life by the scruff of his neck.\\n\\nHe throws him to the ground and he lets out a cry of pain over the cracking of weak bones. Your hands ball into fists, and before you can stop yourself you're throwing a punch at the guard. You catch him off-guard by chance and clock him directly in the face.\\n\\nIt's not a very strong punch but it does enough for you to knock him back, so you can hoist your light up onto his feet, into your arms for what might very be for the last time. \\n\\n[[You hold him close as the guard angrily shrieks at you, threatening you with a pistol.|pass2.2]]",
+      "links": [
+        {
+          "text": "You hold him close as the guard angrily shrieks at you, threatening you with a pistol.",
+          "destination": {
+            "name": "pass2.2",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "pass2.4",
+      "text": "Your hands are tied behind you, and your neck didn't snap.\\n\\nThe guards laugh as they watch you struggle, your pink triangle falling gently to the ground in your fight for air, kept on by only a weak safety pink.\\n\\nYou stop struggling and watch with bulging, dimming eyes as the triangle spirals like a snowflake, softly landing on the ground as you gasp for your last breath of air.\\n\\nThoughts race through your mind. Alistair's lips on yours, biting, nervous as his watery blue eyes look into your own. His promises he never kept. Rolf's fluttering lashes, his ribs against pale flesh outlined like a roadmap for your hands. His gorgeous brown eyes swirling red with blood before bursting out of his shapely skull. \\n\\n[[Your heart gives one last pitiful surge before you sag and convulse, arms bound, face blue, eyes open and bulging.|pass2.5]]",
+      "links": [
+        {
+          "text": "Your heart gives one last pitiful surge before you sag and convulse, arms bound, face blue, eyes open and bulging.",
+          "destination": {
+            "name": "pass2.5",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "pass2.5",
+      "text": "You sit up on the couch, your nose dribbling blood freely onto your blue throw pillow. You curse, plug your nose and tilt your head back, grimacing as you swallow your own blood. Maybe the air was just dry, and your nose decided to start bleeding. It, of course, had nothing to do with the dream you just had. Nope. Not a thing.\\n\\nYour staunch the flow of blood and tilt your head back down, eyebrows furrowing as your flex your numb, bloody hands. Your wrists ache, almost as if they'd been bound, and your head is throbbing ... \\n\\nYou shake your head and stand on wobbly legs as you make your way to your shower, pausing as you hear the front door unlock and open. You smile, gently, and bound out to greet your sweetheart. You kiss him bloodily, and rest your forehead against his. \\n\\nHis brown eyes meet yours with questions, but he ultimately melts into your embrace without a word.\\n\\n[img[2]]",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "pass3.4",
+      "text": "The smoky smell of cinnamon and orange, tobacco and pot, makes your eyes slowly open.\\n\\nYour lips tingle with kisses never shared, and for a moment, you smile.\\n\\nYou pull yourself up off of the floor and deposit your cup in the sink. You wipe your mouth and your lips stop tingling. You chew on your lip ring as you go to sit on your couch and think about this ... past? future? life.\\n\\nYou'd panicked, had an anxiety attack about being naked in front of a girl who was exactly like you. Transgender, but beautiful, with smooth walnut skin and dreads twisted up in her head in a bun. Her eyes were the most beautiful shade of brown, and imagining her in your head makes your heart flutter.\\n\\nYou blink as you hear the doorbell ring, and you bustle out to the front door to catch whoever was at the door. It was early in the morning, who the heck would be at the door?\\n\\nA girl, taller than you, with smooth walnut skin, beautiful brown eyes, and blond and pink dreads framing her face grins at you, hands in her pockets.\\n\\n\"Wanna buy some perfume?\"\\n\\n[img[3]]",
+      "links": []
+    },
+    {
+      "pid": 19,
+      "name": "pass3.3",
+      "text": "Alice sighs and you can feel the warmth of her breath, the smell of tobacco on her lips. \"I'll wait for you. We can be slow with this ... or we could not do it at all. I don't blame you, either way.\"\\n\\nShe's so nice, so understanding ... you don't deserve it! You want to scream, and you clutch your head, rocking back and forth. \"Uglyuglyugly!\" You repeat under your breath, and she backs off, hurrying to get you something to tether you to this world before you completely disappear.\\n\\nAlice rubs her palms together before placing her hands on your sobbing face. The smell of her perfume drags you back down to earth, into the moment, and you blink, sniffling and wheezing.\\n\\n\"Welcome back to the realm of the living, lovely.\"\\n\\nYour heart cracks a little, and you rub your eyes with balled-up fists. She nods, wipes her perfumed hands off on her skirt, and smiles. It's such a soft, wonderful smile. She doesn't smile at you like you're stupid, even though you are. She smiles genuinely at you, like her heart beats for only you.\\n\\n[[You know it doesn't, but for a while, it's nice to just think so.|pass3.4]]",
+      "links": [
+        {
+          "text": "You know it doesn't, but for a while, it's nice to just think so.",
+          "destination": {
+            "name": "pass3.4",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "pass3.2",
+      "text": "Before you can utter a word, you burst into tears, covering your face. She hums softly before enveloping you in an embrace, holding you loosely to give you an opportunity to push away if this isn't what you need right now.\\n\\nYou don't and she squeezes you close, kissing the top of your head, running her fake nails down your spine. You sniffle and lean back, pulling on your tight chest binder, your cheap shirt, and your shorts. She hadn't even gotten your boxers off, and you were already blubbering.\\n\\nYou curse out loud and you see her face crumple. She holds your face, streaked with tears, in her hands. \"Baby baby, don't cry. Was it something I did? Talk to me.\" You snuffle and snort and shake your head, pressing your head against her flat chest.\\n\\n\"You- it wasn't- ... you've never seen me naked before.\" Alice nods, combing fingers through your hair. \\n\\n\"Yeah, I know.\"\\n\\n\"You're going to think I'm disgusting. I'm fat, and covered in stretch marks, and I haven't had surgery yet and!\"\\n\\nShe places a finger over your lips, shakes her head quickly. \\n\\n\"Neither have I, and do you think I worry about it? I may be as skinny as a rail, but babe, you're beautiful.\"\\n\\n\"You're just saying that because you have to.\"\\n\\nAlice drapes herself across your lap, leaning against your chest, your stomach. \"I'm saying it because it's true.\" You sniffle, tears dripping off your long, feminine lashes, the one you've spent hours trying to pull out.\\n\\n[[\"No, it's not.\" You stubbornly mutter.|pass3.3]]",
+      "links": [
+        {
+          "text": "\"No, it's not.\" You stubbornly mutter.",
+          "destination": {
+            "name": "pass3.3",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "pass3.1",
+      "text": "She presses her body against yours, running thin, nimble fingers through your cropped-short, dark hair. \"Talk to me, Ches.\" She murmurs into your jaw, and you shiver, golden-brown eyes swiveling to look at the woman in your lap.\\n\\nHer chest is flush against your breasts, and you feel the bulge in her shorts. Your breath quickens and your eyes widen, your chest tightening up. She's never seen you like before, when you've seen her naked plenty of times.\\n\\nYou freeze up, and she can tell you're starting to shut down. She backs up immediately, giving you your space, as she offers you your binder, your shirt, your shorts. She hurries into her own clothes, putting her bra and breastforms into her pocket.\\n\\nShe sits next to you, cross-legged, and instantly goes from vixen to concerned best friend. \\n\\n[[You start to wheeze, and she twiddles her thumbs in her lap, looking at you with sharp yellow eyes.\\n\\n\"Talk to me, Chester.\"|pass3.2]]",
+      "links": [
+        {
+          "text": "You start to wheeze, and she twiddles her thumbs in her lap, looking at you with sharp yellow eyes.\\n\\n\"Talk to me, Chester.\"",
+          "destination": {
+            "name": "pass3.2",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "StoryAuthor",
+      "text": "Daffs o'Dill",
+      "links": []
+    }
+  ]
+}

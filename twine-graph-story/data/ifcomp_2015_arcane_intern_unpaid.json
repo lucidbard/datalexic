@@ -1,0 +1,3544 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "forget",
+      "text": "Mr. Hoth\u2019s eyes, brown and unassuming, seem to pity as you stand, but you don\u2019t know why. You leave with an arm full of glowing references, and the nagging feeling that something has been left behind.\\n\\nOn the way home, you pass by a bookshop. The new Rebecca Butler \u2014 Rebecca Butler and the Marauding Monster \u2014 will be out in a few months. You nip inside and make sure you pre-order it, already getting ready to share into another magical adventure.<<remember $forgetend to true>>\\n\\nIt\u2019s silly to think about, but still, wouldn\u2019t it be cool if magic were real?\\n\\n[[The End|end credits]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "end credits",
+            "pid": 139
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "your dad",
+      "text": "A voicemail from your dad is very rarely something to look forward to. It\u2019s all subtle barbs and hints to come back home and join the family business. He knows the money your grandma left you won\u2019t last much longer.\\n\\nBut it\u2019ll take more than a guilt trip to make you give up.\\n\\n[[Back to your bag.|your bag]]\\n[[Back to the waiting room.|waiting room]]",
+      "links": [
+        {
+          "text": "Back to your bag.",
+          "destination": {
+            "name": "your bag",
+            "pid": 103
+          }
+        },
+        {
+          "text": "Back to the waiting room.",
+          "destination": {
+            "name": "waiting room",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "wh mongoose defeat",
+      "text": "The Banishment Sigil is simple, taking advantage of the universe\u2019s already burning desire to fly away from itself. \\n\\nYou feel a slight tinge of magic as you trace the symbol in the air. It feels like ants running up your spine.\\n\\nThe sigil summons something like a gust of wind, that startles the mongoose away, sending it out into the shadows. You grab the post-it notes, dusted with fur, and [[head back.|wh end test]]<<set $post to true>>",
+      "links": [
+        {
+          "text": "head back.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "books",
+      "text": "You find the pile of books you need huddled in a pile in the shadows, as if they\u2019d been running from something. They don\u2019t move as you approach though, and flip through them, skimming white words off pitch black pages.\\n\\nThey don\u2019t quite make sense to you, but maybe eventually they will.\\n\\nYou cross the books off your list.\\n\\n<<if $map>>[[Go straight to the pens.|pens]]<<endif>>\\n[[Towards a distant glow.|stars]]\\n[[Towards the rustle of wings.|paper birds]]\\n[[Backtrack.|previous()]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "Go straight to the pens.",
+          "destination": {
+            "name": "pens",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Towards a distant glow.",
+          "destination": {
+            "name": "stars",
+            "pid": 99
+          }
+        },
+        {
+          "text": "Towards the rustle of wings.",
+          "destination": {
+            "name": "paper birds",
+            "pid": 57
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Home CSS",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n\\nbody {\\n\\t/* This affects the entire page */\\n\\nbackground: url(arcaneimages/white-wall.png);\\n\\t\\n}",
+      "links": []
+    },
+    {
+      "pid": 6,
+      "name": "nets",
+      "text": "In a pile atop a box, there\u2019s a stack of glittering silver nets. They\u2019re soft to the touch, metallic, but flow like water over your fingers. Most of them have been ripped by something with tiny persistent teeth.\\n\\n<<if visited(\"capture\") is false>>[[A flicker above you.|capture]]<<endif>>\\n[[Towards the growls.|chimera]] \\n[[Towards the smell of disrepair.|rusted sigils]]\\n[[Backtrack.|previous()]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "A flicker above you.",
+          "destination": {
+            "name": "capture",
+            "pid": 138
+          }
+        },
+        {
+          "text": "Towards the growls.",
+          "destination": {
+            "name": "chimera",
+            "pid": 132
+          }
+        },
+        {
+          "text": "Towards the smell of disrepair.",
+          "destination": {
+            "name": "rusted sigils",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "human right",
+      "text": "You turn away before they can say anything else, but you have to wonder. Are they right?\\n\\n[[Back to the cafe.|cafe hoard]]",
+      "links": [
+        {
+          "text": "Back to the cafe.",
+          "destination": {
+            "name": "cafe hoard",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "rusted sigils",
+      "text": "In an unmarked box, there are thousands of sigils like yours. Only while yours is golden and giving, these are rusted and decayed. You try to take one and it crumbles in your grasp. They were never meant to last.\\n\\n[[Towards the cauldron cairn.|wh left]] \\n[[Towards what feels like a trap.|nets]] \\n[[Towards the snores.|sleeping heads]]\\n[[Towards the growing piles.|forest]]\\n[[Backtrack.|previous()]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "Towards the cauldron cairn.",
+          "destination": {
+            "name": "wh left",
+            "pid": 129
+          }
+        },
+        {
+          "text": "Towards what feels like a trap.",
+          "destination": {
+            "name": "nets",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Towards the snores.",
+          "destination": {
+            "name": "sleeping heads",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Towards the growing piles.",
+          "destination": {
+            "name": "forest",
+            "pid": 147
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "pens",
+      "text": "Near the river, a group of glimmering reptiles laze near the flowing current. You harvest the tortoiseshell pens, still attached to their tortoises. \\n\\nBy now, you\u2019d think they\u2019d have upgraded to ballpoint, but then again you don\u2019t want to think about what those are harvested from.\\n\\nYou cross pens off your list.\\n\\n<<if $map>>[[Go straight to the books.|books]]<<endif>>\\n[[Back to the river.|river of ink]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "Go straight to the books.",
+          "destination": {
+            "name": "books",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Back to the river.",
+          "destination": {
+            "name": "river of ink",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "bell",
+      "text": "The wood of boxes clears, and before you there is a bell. It\u2019s small and bronze and would look more at home on the desk of a hotel concierge, instead of perched on a stack of taped closed books.\\n\\nYour journey here has proven only one thing to you.\\n\\nYou definitely need assistance.\\n\\n[[Ring the bell.|ring bell]]",
+      "links": [
+        {
+          "text": "Ring the bell.",
+          "destination": {
+            "name": "ring bell",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "wh portal",
+      "text": "You\u2019ve gotten used to the feeling of the portals by now, the way they cling to your skin as you enter, the way the air gets heavy and scented. You can\u2019t say it makes you feel good, just being in the Otherworld makes you feel like shit afterwards, but it does make you feel alive.\\n\\nEven when the exotic magical locations look more like [[a hoarder\u2019s house|wh center]] than anything you\u2019d find in a Rebecca Butler book.",
+      "links": [
+        {
+          "text": "a hoarder\u2019s house",
+          "destination": {
+            "name": "wh center",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "StoryTitle",
+      "text": "Arcane Intern (Unpaid)",
+      "links": []
+    },
+    {
+      "pid": 13,
+      "name": "excited",
+      "text": "But there doesn\u2019t seem to be anything magical about your cubicle. In fact, the cheap plastic desk, burdened down by reams of paper looks even more mundane than anything you\u2019ve seen before. There\u2019s an old computer there, so old that you wouldn\u2019t be surprised if magic was the only thing that kept it running. \\n\\nOverall, it looks like a shit workstation, and not a magical place. Not even a magical intern place.\\n\\nThe Hiring Manager just smiles as he leaves you there. [[Someone should come by soon|cubicle]] to explain what they want you to do with these.",
+      "links": [
+        {
+          "text": "Someone should come by soon",
+          "destination": {
+            "name": "cubicle",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "wh try 2",
+      "text": "Mind and muscle conspire together to force reality to buckle ever so slightly. The sigil is carved in the air and then launches itself at the mongoose.\\n\\nThe creature twists and writhes under every stroke, but eventually the sigil sinks into it and it falls calm.\\nNose twitching, it grabs a pack of post-it notes and trots right up to you. [[You walk back down the hallway|wh end test]], petting its soft fur as it coils around your neck. <<set $mongoose to true>><<set $post to true>>",
+      "links": [
+        {
+          "text": "You walk back down the hallway",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "no copy sigil",
+      "text": "After what you\u2019ve seen the copier do, you don\u2019t want to take the risk. You finish the book, and add it back to the pile.\\n\\n[[Back to work|cr 2]]",
+      "links": [
+        {
+          "text": "Back to work",
+          "destination": {
+            "name": "cr 2",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "smile end",
+      "text": "She makes it sound like such a good idea. Drunk off power and wine, you both stumble to the computer, conspiracy thick in the air.\\n\\nIt might not change much. Hell, it might not change anything, but a simple sketch and click and the sigil is up.\\n\\nTaylor keeps making plans, about getting everyone she knows this tattoo, but you can only stare at the page.\\n\\nThe world is full of magic. Isn\u2019t it high time everyone knew it too?<<remember $magicend to true>>\\n\\n[[The End|end credits]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "end credits",
+            "pid": 139
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "return",
+      "text": "The air is lighter. A weight you didn\u2019t know had pressed into your lungs is gone. Just being back in the real world makes you feel more solid, more stable.\\n\\nAnd yet, something has still been torn from you.\\n\\nStill, you aren\u2019t bleeding, no matter the lack you feel. You finish your job. You deliver all the coffees. Nigel doesn\u2019t smile or thank you at all when you arrive with a perfectly warm Draconian latte.\\n\\nYou didn\u2019t expect him to, but it still feels like an extra tear within you.\\n\\n[[You trudge back to your desk.|desk coffee]]",
+      "links": [
+        {
+          "text": "You trudge back to your desk.",
+          "destination": {
+            "name": "desk coffee",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "ring bell",
+      "text": "You drop your hand onto the tiny bronze bell and it rings, once. Short and clear and sounding exactly like a normal bell.\\nYou look around.\\n\\nNothing seems to have happened.\\n\\nYou try to ring it again, but it makes no sound even as you pound your hand into it. <<set $bell to true>>\\n\\n[[Go back to the entryway.|wh end test]]\\n[[Go back to the crossroad with the sigils.|rusted sigils]]",
+      "links": [
+        {
+          "text": "Go back to the entryway.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        },
+        {
+          "text": "Go back to the crossroad with the sigils.",
+          "destination": {
+            "name": "rusted sigils",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "early",
+      "text": "It\u2019s a good thing you left early, because this building was much harder to find than you imagined. It didn\u2019t come up on any Map search, and they didn\u2019t even have a website. You had to look for the building at the corner, and then walk down the street in order to even find it at all.\\n\\nBut then again, publishing houses aren\u2019t stores, so maybe Praecantatio is worried about people storming the place for unreleased books. It happened with the last Rebecca Butler book, so maybe they got worried.\\n\\n[[Back|waiting room]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "waiting room",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "warehouse",
+      "text": "\u201cSome Otherworld snakes broke into our storage room here and ate most of our supplies, as well as a few copies of books we were supposed to send out to reviewers. I\u2019d send someone else to do it, but we need those things now and the Janitor is busy trying to beat back those snakes. So I\u2019m sending you. Do try to get it done quickly.\u201d\\n\\nShe doesn\u2019t seem to have much faith in you.\\n\\n\u201cGo down there and get us new pens, post-it notes and copies of those books. Try not to get lost.\u201d\\n\\n[[Head towards the warehouse.|wh find]]",
+      "links": [
+        {
+          "text": "Head towards the warehouse.",
+          "destination": {
+            "name": "wh find",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "hag intern",
+      "text": "She cackles. One of her warts has a glittering piercing through it. \u201cIt\u2019s your sigil,\u201d she says, gesturing at the sigil you were given when you started. \u201cAnyone wearing one never stays forever.\u201d\\n\\nYou want to ask more, but the dragon rumbles a name and she goes to get her coffee. \\n\\n[[Back to the cafe.|cafe hoard]]",
+      "links": [
+        {
+          "text": "Back to the cafe.",
+          "destination": {
+            "name": "cafe hoard",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "basement",
+      "text": "<<if visited(\"olivia coffee\") AND visited(\"recept manage\")>>\\nThe door opens. A set of stairs leads down into a swirling pit. Oddly enough, it does smell like coffee.\\n\\n[[Descend.|Descend]]\\n[[Back to the hallway.|coffee start]]\\n<<else>>\\nYou don\u2019t have all the orders you need yet. Showing up without the coffee is hardly what will impress on your first day.\\n\\n[[Back to the hallway.|coffee start]]<<endif>>",
+      "links": [
+        {
+          "text": "Descend.",
+          "destination": {
+            "name": "Descend",
+            "pid": 124
+          }
+        },
+        {
+          "text": "Back to the hallway.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "waiting room",
+      "text": "<<if $minutes gte 2>>It\u2019s <<print $minutes>> minutes until your interview. Good thing you were [[early][$minutes -=1]].<<else>><<goto \"Ready\">><<endif>>\\n\\nThere\u2019s a large plaque on the wall reading \u201c[[Praecantatio Publishers][$minutes -=1]]\u201d along with some [[weird symbols][$minutes -=1]]. The rest of the waiting room looks like it was lifted from a brochure, plastic plants and all.\\n\\nThe [[receptionist][$minutes -=1]] already signed you in. She now sits behind an ornate wooden desk, flipping through a ridiculously large book. Behind her, a closed door reads HR. \\n\\nNext to your seat, there\u2019s a basket full of [[magazines][$minutes -=1]], and [[your bag][$minutes -=1]].",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Ready",
+            "pid": 33
+          }
+        },
+        {
+          "text": "early",
+          "destination": {
+            "name": "early",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Praecantatio Publishers",
+          "destination": {
+            "name": "Praecantatio Publishers",
+            "pid": 90
+          }
+        },
+        {
+          "text": "weird symbols",
+          "destination": {
+            "name": "weird symbols",
+            "pid": 54
+          }
+        },
+        {
+          "text": "receptionist",
+          "destination": {
+            "name": "receptionist",
+            "pid": 133
+          }
+        },
+        {
+          "text": "magazines",
+          "destination": {
+            "name": "magazines",
+            "pid": 85
+          }
+        },
+        {
+          "text": "your bag",
+          "destination": {
+            "name": "your bag",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "recept manage",
+      "text": "\u201cHe\u2019s busy at the moment, but I know his order. A Turkish Coffee. They\u2019ll be able to give it to you to go.\u201d\\n\\n[[Ask her for her coffee order.|recept coffee]]\\n[[Ask about the different floors.|recept floors]]\\n[[Back to the hallway.|coffee start]]",
+      "links": [
+        {
+          "text": "Ask her for her coffee order.",
+          "destination": {
+            "name": "recept coffee",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Ask about the different floors.",
+          "destination": {
+            "name": "recept floors",
+            "pid": 168
+          }
+        },
+        {
+          "text": "Back to the hallway.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "magic",
+      "text": "You remember being eleven, and burying yourself in fantasy books. It was so much better than the real world, even at that age.\\n\\nWith the blind confidence only a child could have, you told your father you were going away to magic school. \u201cMagic isn\u2019t real,\u201d he\u2019d said, something he\u2019d come to repeat over and over again.\\n\\nSo the question remains, Do you believe in magic?\\n\\n[[Yes.|yes magic]]\\n[[No.|no magic]]",
+      "links": [
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "yes magic",
+            "pid": 77
+          }
+        },
+        {
+          "text": "No.",
+          "destination": {
+            "name": "no magic",
+            "pid": 127
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "human screw",
+      "text": "Seems like magicians still understand rude gestures, because they splutter and huff. You turn before they recover and say anything else.\\n\\n[[Back to the cafe.|cafe hoard]]",
+      "links": [
+        {
+          "text": "Back to the cafe.",
+          "destination": {
+            "name": "cafe hoard",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "recept coffee",
+      "text": "\u201cWell aren\u2019t you sweet. The last intern didn\u2019t even bother asking me, went straight to Mr. Hoth.\u201d \\n\\nShe taps her fingers idly against the same giant book she had before. The symbols look familiar and foreign all at once.\\n\\n\u201cI\u2019ll have a Double Shot Expresso.\u201d\\n\\n[[Don\u2019t you mean Espresso?|expresso]]\\n[[Ask about the different floors.|recept floors]]\\n[[Ask her what she\u2019s smiling about.|recept smile]]\\n[[Ask her where the Hiring Manager is.|recept manage]]\\n[[Back to the hallway.|coffee start]]",
+      "links": [
+        {
+          "text": "Don\u2019t you mean Espresso?",
+          "destination": {
+            "name": "expresso",
+            "pid": 84
+          }
+        },
+        {
+          "text": "Ask about the different floors.",
+          "destination": {
+            "name": "recept floors",
+            "pid": 168
+          }
+        },
+        {
+          "text": "Ask her what she\u2019s smiling about.",
+          "destination": {
+            "name": "recept smile",
+            "pid": 165
+          }
+        },
+        {
+          "text": "Ask her where the Hiring Manager is.",
+          "destination": {
+            "name": "recept manage",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Back to the hallway.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "sleeping heads",
+      "text": "Well this is unnerving. \\n\\nThere are heads propped up in jars among the boxes. At first you think them dead, until one of them snores and rolls in its jar. It seems they\u2019re only sleeping.\\n\\n[[Towards the rustle of wings.|paper birds]]\\n[[Towards a distant glow.|stars]]\\n[[Backtrack.|previous()]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "Towards the rustle of wings.",
+          "destination": {
+            "name": "paper birds",
+            "pid": 57
+          }
+        },
+        {
+          "text": "Towards a distant glow.",
+          "destination": {
+            "name": "stars",
+            "pid": 99
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "theory",
+      "text": "You read, soaking in every line, ever swoop of the pen. Soon, one day, you will cast these. You will etch them into every place that surrounds you and bring the magic into your world by force.\\n\\nThis is so much better than any Rebecca Butler book. Those books may have offered you an escape into a world of magic, but this gives you the real thing.\\n\\nYou read far into the morning, and only [[fall asleep|ch4]] when your eyes literally can\u2019t stay open any longer.",
+      "links": [
+        {
+          "text": "fall asleep",
+          "destination": {
+            "name": "ch4",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "human problem",
+      "text": "You lift your chin, defiant. They seem utterly unimpressed.\\n\\n\u201cYour kind isn\u2019t wanted here, so just run on back out the portal.\u201d \\n\\nYou can\u2019t hide the confusion on your face \u2014 aren\u2019t they human too \u2014 and one of them scoffs. \u201cNo magic, no entry. Just cause you got yourself a viewing sigil doesn\u2019t mean you belong.\u201d\\n\\nOh. They think you\u2019re a mundane, like the regular people in the Rebecca Butler series.\\n\\n[[Screw them. You know you belong here.|human screw]]\\n[[Maybe they\u2019re right? You don\u2019t know anything about magic.|human right]]",
+      "links": [
+        {
+          "text": "Screw them. You know you belong here.",
+          "destination": {
+            "name": "human screw",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Maybe they\u2019re right? You don\u2019t know anything about magic.",
+          "destination": {
+            "name": "human right",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "truth",
+      "text": "You haltingly explain about magic, about the Otherworld that lies tangent to ours, leaking but never mixing. Like oil and water.\\n\\nShe grapples to understand, even as her own mind works against her. She doesn\u2019t have a sigil on her like you do, so your spell seems to only go so far.\\n\\n[[Give her a sigil somehow.|t sigil]]\\n[[Try to undo your spell.|undo]]",
+      "links": [
+        {
+          "text": "Give her a sigil somehow.",
+          "destination": {
+            "name": "t sigil",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Try to undo your spell.",
+          "destination": {
+            "name": "undo",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "wish",
+      "text": "\u201cThanks. You\u2019re sweet.\u201d A sigh, a thump on wood. \u201cBut I\u2019ll get it done, eventually, don\u2019t you worry.\u201d\\n\\n[[Move on.|delivery]]\\n<<if $mongoose>>[[Offer up the mongoose.|j mongoose]]<<endif>>",
+      "links": [
+        {
+          "text": "Move on.",
+          "destination": {
+            "name": "delivery",
+            "pid": 104
+          }
+        },
+        {
+          "text": "Offer up the mongoose.",
+          "destination": {
+            "name": "j mongoose",
+            "pid": 159
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Ready",
+      "text": "It\u2019s time for your interview.\\n\\nThe receptionist doesn\u2019t even look up from her giant book. She just calls your name and nods back.\\n\\nThe door to the office behind her is [[open now.|interview]]",
+      "links": [
+        {
+          "text": "open now.",
+          "destination": {
+            "name": "interview",
+            "pid": 150
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "references",
+      "text": "\u201cWe will, of course provide you with glowing references once your time with us is complete. All of our previous interns have gone on to have exemplary careers.\u201d\\n\\nAt this point a reference letter sounds like winning the lottery. With your interview track record, you don\u2019t really have the luxury of turning this down.\\n\\n[[Take the Job.|employ]]",
+      "links": [
+        {
+          "text": "Take the Job.",
+          "destination": {
+            "name": "employ",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "wh mongoose capture",
+      "text": "You\u2019ve never cast before, but you\u2019ve pieced together how from your week here. Some part determination, some part focus, most parts knowledge. And without a sigil taught to you, there had been nothing to test with.\\n\\nBut now the knowledge burns in your mind, and you can feel it spark in your fingers.\\n\\nYou trace the capture sigil in the air.\\n\\nNothing happens.\\n\\n[[Try again.|wh try]]\\n<<if $banish>>[[Cast the simpler Banishment Sigil.|wh mongoose defeat]]<<endif>>",
+      "links": [
+        {
+          "text": "Try again.",
+          "destination": {
+            "name": "wh try",
+            "pid": 61
+          }
+        },
+        {
+          "text": "Cast the simpler Banishment Sigil.",
+          "destination": {
+            "name": "wh mongoose defeat",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "ofc sir",
+      "text": "He smiles, impressed by your fake-as-hell manners.\\n\\n\u201cDraconian Latte with Hazelnut.\u201d\\n\\nThey definitely don\u2019t serve that at Starbucks.\\n\\n[[Ask where you can get a \u2018Draconian Latte\u2019.|otherworld nigel]]",
+      "links": [
+        {
+          "text": "Ask where you can get a \u2018Draconian Latte\u2019.",
+          "destination": {
+            "name": "otherworld nigel",
+            "pid": 142
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "sbucks",
+      "text": "He laughs, the way a least favorite uncle laughs at his own terrible jokes.\\n\\n\u201cYou\u2019ll hardly be going to Starbucks. There\u2019s an Otherworld coffee shop we frequent in the basement. You\u2019ll recognize the markings.\u201d\\n\\n[[Otherworld?|otherworld nigel]]\\n[[Okay, got it.|coffee start]]",
+      "links": [
+        {
+          "text": "Otherworld?",
+          "destination": {
+            "name": "otherworld nigel",
+            "pid": 142
+          }
+        },
+        {
+          "text": "Okay, got it.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "last give",
+      "text": "You knew this couldn\u2019t last forever. \\n\\nStill, you move a bit reluctantly, urged on by the weight behind his voice.\\n\\n<<if $tattoo>>No matter what you might really want, [[you drop it in his hand.|knowing]]<<else>>No matter what you might really want, [[you drop it in his hand.|forget]]<<endif>>",
+      "links": [
+        {
+          "text": "you drop it in his hand.",
+          "destination": {
+            "name": "knowing",
+            "pid": 53
+          }
+        },
+        {
+          "text": "you drop it in his hand.",
+          "destination": {
+            "name": "forget",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "humans",
+      "text": "Among the gremlins and hags, manticores and dragons, humans stand out like a sore thumb. These particular humans stand out more than most thanks to the way they glare at you. \\n\\n[[Ask them what their problem is.|human problem]]\\n[[Just ignore them.|cafe hoard]]",
+      "links": [
+        {
+          "text": "Ask them what their problem is.",
+          "destination": {
+            "name": "human problem",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Just ignore them.",
+          "destination": {
+            "name": "cafe hoard",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "on the other side",
+      "text": "The portal drops you off directly in front of an Otherworld coffee shop called \u2018Caffeine Hoard\u2019. Even though everything else looks the same, you can tell you aren\u2019t in your world from two main clues:\\n\\nFirstly, the air feels different here, as if it\u2019s spiced with clove and hard to breathe.\\n\\nThe second is that a gigantic dragon's tail curves from out the back of the store, and you\u2019re sure you didn\u2019t see any of those walking around yesterday.\\n\\n[[Walk inside.|cafe hoard]]",
+      "links": [
+        {
+          "text": "Walk inside.",
+          "destination": {
+            "name": "cafe hoard",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "wh end",
+      "text": "With everything crossed off your list, you return to the portal, nodding a goodbye to the skull.\\n\\n<<if $mongoose>>Your new mongoose sits heavy across your collar, but warm, in the same way a favorite toy or blanket might be.<<endif>>\\n\\nReluctantly, even though you feel the air here poison your very being, [[you step back into your own world.|own world]]",
+      "links": [
+        {
+          "text": "you step back into your own world.",
+          "destination": {
+            "name": "own world",
+            "pid": 120
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "computer",
+      "text": "You manage to boot up the computer, even though it takes forever and Oh god, it\u2019s running Windows 95.\\n\\nMaybe it was cursed? That has to be the reason. No one would willingly use Windows 95, would they?\\n\\n[[Back to your desk.|cubicle]]",
+      "links": [
+        {
+          "text": "Back to your desk.",
+          "destination": {
+            "name": "cubicle",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "wh find",
+      "text": "The entrance to the warehouse is three floors up, and next to what is labeled the storage room but currently sounds like it holds a wrestling ring. Cheering and everything.\\n\\n[[Knock on the storage room door.|sr door]]\\n[[Enter the warehouse.|wh portal]]",
+      "links": [
+        {
+          "text": "Knock on the storage room door.",
+          "destination": {
+            "name": "sr door",
+            "pid": 94
+          }
+        },
+        {
+          "text": "Enter the warehouse.",
+          "destination": {
+            "name": "wh portal",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "home",
+      "text": "Today had felt particularly trying, exhausting in a way even the toxic Otherworld can't achieve. You trudge back home, ignoring the flickers of magic you keep catching out of the corner of your eye.\\n\\nBut home, as always, feels pretty great. Taylor is already there before you touching up her newest piece.\\n\\n\u201cRough day at work?\u201d\\n\\nYou think of the hell that is the copy room and feel something rise in you, bitter and burning.\\n\\n[[Stay up and talk to Taylor.|Taylor]]\\n[[Just head to bed.|bed]]",
+      "links": [
+        {
+          "text": "Stay up and talk to Taylor.",
+          "destination": {
+            "name": "Taylor",
+            "pid": 105
+          }
+        },
+        {
+          "text": "Just head to bed.",
+          "destination": {
+            "name": "bed",
+            "pid": 113
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "goto",
+      "text": "version.extensions.timedgotoMacro={major:1,minor:2,revision:0};\\nmacros[\"goto\"]=macros.timedgoto={timer:null,handler:function(a,b,c,d){function cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return +(s.slice(0,-2))||0\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return +(s.slice(0,-1))*1000||0\\n}}}throwError(a,s+\" isn't a CSS time unit\");return 0}var t,d,m,s;\\nt=c[c.length-1];d=d.fullArgs();m=0;if(b!=\"goto\"){d=d.slice(0,d.lastIndexOf(t));\\nm=cssTimeUnit(t)}d=eval(Wikifier.parse(d));if(d+\"\"&&state&&state.init){if(macros[\"goto\"].timer){clearTimeout(macros[\"goto\"].timer)\\n}s=state.history[0].passage.title;macros[\"goto\"].timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a)\\n}},m)}}};",
+      "links": []
+    },
+    {
+      "pid": 46,
+      "name": "Rebecca Butler",
+      "text": "It\u2019s no understatement to say that the Rebecca Butler books changed your life. They swept in when you were just a kid and carried you away into a world of magic, mystery and adventure that you feel you never really left.\\n\\nYou want to bring that magic to other people too. That\u2019s why you\u2019re here waiting for this interview.\\n\\n[[Back|waiting room]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "waiting room",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "olivia coffee",
+      "text": "Ms. Singh ushers you in with a terse word as she brandishes a red pen over paper. The red ink struggles to place itself onto the pages.\\n\\n\u201cA large Masala Chai. Just leave it on the desk when you get back.\u201d\\n\\nShe continues her struggle to correct the text in front of her. Despite your curiosity at what it might have said, you leave the office. That ink didn\u2019t look like it would stay put on the page for long.\\n\\n[[Back to the hallway.|coffee start]]",
+      "links": [
+        {
+          "text": "Back to the hallway.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Colors",
+      "text": "\u201cInteresting\u2026 Where do you see yourself 500 years from now?\u201d\\n\\n[[Dead.|Dead]]\\n[[Don\u2019t you mean 5 years?|Dead]]\\n[[Talk about your dream of publishing the next Rebecca Butler series. It must have been a mistake.|Dead]]",
+      "links": [
+        {
+          "text": "Dead.",
+          "destination": {
+            "name": "Dead",
+            "pid": 74
+          }
+        },
+        {
+          "text": "Don\u2019t you mean 5 years?",
+          "destination": {
+            "name": "Dead",
+            "pid": 74
+          }
+        },
+        {
+          "text": "Talk about your dream of publishing the next Rebecca Butler series. It must have been a mistake.",
+          "destination": {
+            "name": "Dead",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "beckons",
+      "text": "The open door belongs to Nigel Scott and he waves you into the office. It looks like any other office, except for the abomination of a computer that seems to have been transported here from the 90s.\\n\\nNigel himself looks... normal. Bald head, a smooth voice, eyes that don\u2019t look like black holes. Like any other marketing director. After the Hiring Manager, you expected something a bit more bizarre.\\n\\nBut then he makes up for his lack of strangeness with rudeness.\\n\\n\u201cCan\u2019t imagine what they were thinking taking on an outsider, but you\u2019re what we\u2019ve got now so we might as well make the best of it.\u201d\\n\\n\u201cLater today, I want you putting in the old financial data on your desk into that computer thing Accounting keeps raving about. But for now, we\u2019ll give you an easy task, something even you can handle.\u201d\\n\\n\u201cGo get the office some coffee.\u201d\\n\\n[[Of course, sir. What would you like?|ofc sir]]\\n[[The nearest Starbucks is a little far from here, but okay.|sbucks]]",
+      "links": [
+        {
+          "text": "Of course, sir. What would you like?",
+          "destination": {
+            "name": "ofc sir",
+            "pid": 36
+          }
+        },
+        {
+          "text": "The nearest Starbucks is a little far from here, but okay.",
+          "destination": {
+            "name": "sbucks",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "skull map",
+      "text": "How it rolled its eyes at you, you don\u2019t know, but it sure as hell did.\\n\\n\u201cFine. Here.\u201d \\n\\nYou feel a glow in the back of your mind. All the locations will be much easier to find now.<<set $map to true>>\\n\\n<<if $skullname AND visited(\"skull help\") is 0>>[[Ask what you can do to help the Janitor.|skull help]]<<endif>>\\n[[Ask about the warehouse.|skull warehouse]]\\n[[Back to the warehouse.|wh center]]",
+      "links": [
+        {
+          "text": "Ask what you can do to help the Janitor.",
+          "destination": {
+            "name": "skull help",
+            "pid": 145
+          }
+        },
+        {
+          "text": "Ask about the warehouse.",
+          "destination": {
+            "name": "skull warehouse",
+            "pid": 131
+          }
+        },
+        {
+          "text": "Back to the warehouse.",
+          "destination": {
+            "name": "wh center",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "desk coffee",
+      "text": "You toy with your golden amulet, your key into that Otherworld, all through work, as you copy numbers from paper onto an ancient spreadsheet. If it weren\u2019t for the tinge of sulfur, of dragon\u2019s breath, still clinging to you, you\u2019d still think it was all a dream.\\n\\nEven Taylor\u2019s excellent quesadilla dinner couldn\u2019t perk you up. Not when she is blind to this world, and you still feel so separate from it.\\n\\nFalling asleep is hard, but you manage, feeling [[the warm sigil under your fingers.|ch3]]",
+      "links": [
+        {
+          "text": "the warm sigil under your fingers.",
+          "destination": {
+            "name": "ch3",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "jumper",
+      "text": "If this isn't your first time playing <em>Arcane Intern (Unpaid)</em>, then you can navigate your to-do list here.\\n\\n<<if $ch2>><h1>Intern To-Do List</h1><<endif>>\\n<ol>\\n<<if $ch2>><li>[[Get Coffee|ch2]]</li><<endif>>\\n<<if $ch3>><li>[[Restock Storage Room|ch3]]</li><<endif>>\\n<<if $ch4>><li>[[Making Copies|ch4]]</li><<endif>>\\n</ol>\\n[[Back to Front Page|Start]]",
+      "links": [
+        {
+          "text": "Get Coffee",
+          "destination": {
+            "name": "ch2",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Restock Storage Room",
+          "destination": {
+            "name": "ch3",
+            "pid": 118
+          }
+        },
+        {
+          "text": "Making Copies",
+          "destination": {
+            "name": "ch4",
+            "pid": 119
+          }
+        },
+        {
+          "text": "Back to Front Page",
+          "destination": {
+            "name": "Start",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "knowing",
+      "text": "It\u2019s as if the world should have ended, and it didn\u2019t. The sigil drops, and the world stays just as it is. Mr. Hoth\u2019s eyes are still depthless pits, as he smiles and hands you some glowing reference letters.\\n\\nYou leave as soon as you can, before they notice the books you\u2019ve stuffed in your bag. Though you doubt they ever will. \\nStill, you can\u2019t run from the heavy weight of what you\u2019ve done, of what you\u2019ve taken from them. Not just the books, but the secrets.\\n\\n<<if $taylor>>You only feel like they won\u2019t just show up and try to take it all away once you get home and [[close the door.|home taylor]]<<else>>You only feel like they won\u2019t just show up and try to take it all away once you get home and [[close the door.|home door]]<<endif>>",
+      "links": [
+        {
+          "text": "close the door.",
+          "destination": {
+            "name": "home taylor",
+            "pid": 114
+          }
+        },
+        {
+          "text": "close the door.",
+          "destination": {
+            "name": "home door",
+            "pid": 170
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "weird symbols",
+      "text": "Sinuous curves and slashing lines form a border around the plaque on the wall. They waver slightly, and you look away.\\n\\nIt\u2019s not like they\u2019re important, and that plant in the corner looks much more interesting.\\n\\n[[Back|waiting room]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "waiting room",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "janitor coffee",
+      "text": "The door is locked. The lights seem to flicker inside as a friendly voice says, \u201cOh, the new intern. I figured they\u2019d send you on a coffee run soon. Pumpkin Spice Latte for me, if you don\u2019t mind.\u201d\\n\\nThe door never opens. The lights never stop.\\n\\n[[Back to the hallway.|coffee start]]",
+      "links": [
+        {
+          "text": "Back to the hallway.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "StorySettings",
+      "text": "jquery:off\\nhash:off\\nbookmark:off\\nmodernizr:off\\nundo:off\\nobfuscate:off\\nexitprompt:off\\nblankcss:on\\n",
+      "links": []
+    },
+    {
+      "pid": 57,
+      "name": "paper birds",
+      "text": "You come across a pile of cages, full to the brim with paper birds. The area is full of the fluttering of pulpy wings and the bright shine of sigils across beaks.\\n\\n[[Towards the perfume of paper.|books]]\\n[[Towards the smell of disrepair.|rusted sigils]]\\n[[Towards a distant glow.|stars]]\\n[[Backtrack.|previous()]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "Towards the perfume of paper.",
+          "destination": {
+            "name": "books",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Towards the smell of disrepair.",
+          "destination": {
+            "name": "rusted sigils",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Towards a distant glow.",
+          "destination": {
+            "name": "stars",
+            "pid": 99
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "put it on",
+      "text": "Keycards seem more efficient, but whatever. You put on the chain, feeling the metal symbol hot against your skin.\\n\\nActually, now that you\u2019re wearing it, you can see it more clearly. It looks like an eye, stylized and twisted, but an eye nonetheless. \\n\\nYou look back up to ask the Hiring Manager what it means and [[you startle]].",
+      "links": [
+        {
+          "text": "you startle",
+          "destination": {
+            "name": "you startle",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "copy room",
+      "text": "The copy room is a depressing little shack curled up between the break room and the bathroom.\\n\\nA [[modified Xerox machine|c copy]], decades old and littered with sigils takes up most of the room. Beside it, [[a stack of old books|c examine]] rises all the way up to the ceiling.\\n\\n<<if visited(\"c copy 2\") AND visited(\"c examine\")>>[[Take a break.|breakroom]]<<endif>>",
+      "links": [
+        {
+          "text": "modified Xerox machine",
+          "destination": {
+            "name": "c copy",
+            "pid": 163
+          }
+        },
+        {
+          "text": "a stack of old books",
+          "destination": {
+            "name": "c examine",
+            "pid": 155
+          }
+        },
+        {
+          "text": "Take a break.",
+          "destination": {
+            "name": "breakroom",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "dont tell",
+      "text": "You keep it to yourself. It\u2019s too crazy, too far fetched. She might have dragons tattooed up her arm, but the idea of real ones <em>maybe</em> existing just seems too far-fetched.\\n\\nStill, once you figure this out it might be nice to tell her. [[Once you actually know what the hell is going on.|ch2]]",
+      "links": [
+        {
+          "text": "Once you actually know what the hell is going on.",
+          "destination": {
+            "name": "ch2",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "wh try",
+      "text": "You can do this.\\n\\nYou are more than just an intern, more than just a Temp. You can feel the magic in your breath. Your eyes have been opened, you know you can do this.\\n\\nYou wrangle your thoughts into the shape of the thing, breathe it, feel it. If you could, your veins would be twisted to trace its pattern, your hair curled to follow its lines.\\n\\n[[You trace the sigil again.|wh try 2]]",
+      "links": [
+        {
+          "text": "You trace the sigil again.",
+          "destination": {
+            "name": "wh try 2",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "undo",
+      "text": "It isn\u2019t easy, to look her in the eye and watch them widen as you draw the sigil in the air. It isn\u2019t simple as you push you power onto her and watch knowledge drain out of her like water through her hands.\\n\\nShe blinks, and smiles so kindly it twists at you. \u201cStill want some tea?\u201d\\n\\nYou shake your head and [[go to bed|last day]]. It\u2019s probably better this way.",
+      "links": [
+        {
+          "text": "go to bed",
+          "destination": {
+            "name": "last day",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "wh mongoose",
+      "text": "You finally make it to something new, an pile of unopened post-it notes. But you can\u2019t just take them. They are guarded by a ferocious beast.\\n\\nWell, a tiny ferocious beast. A mongoose huddles over the notes, a snarling, sinuous line of fur and fang. You try to shoo it away, but it doesn\u2019t budge.\\n\\n<<if $find>>[[Cast the Banishment Sigil|wh mongoose defeat]]<<endif>>\\n<<if $capture>>[[Cast the Capture Sigil|wh mongoose capture]]<<endif>>\\n[[Get away from it.|wh center]]",
+      "links": [
+        {
+          "text": "Cast the Banishment Sigil",
+          "destination": {
+            "name": "wh mongoose defeat",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Cast the Capture Sigil",
+          "destination": {
+            "name": "wh mongoose capture",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Get away from it.",
+          "destination": {
+            "name": "wh center",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "Get Coffee",
+      "text": "That weekend, you reread all of the Rebecca Butler books in order to try and grapple with the fact that magic is real.\\n \\nIt\u2019s real and it\u2019s yours now.\\n\\nWhat you thought would be just another unpaid internship has given you access to a whole new world. It is a world because you\u2019ve seen it. Buildings marked, books you never saw in bookstores. Things that were hidden from your eyes before now seem to almost glow, as if their very existence has been highlighted.\\n\\nThis is what your new job is going to be about. Magic. [[And you\u2019ve never been more excited.|excited]]",
+      "links": [
+        {
+          "text": "And you\u2019ve never been more excited.",
+          "destination": {
+            "name": "excited",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "hipster hag",
+      "text": "Her nose is dotted with some of the largest warts you've ever seen, but at the same time her face would look incomplete without them. \\n\\n\"Being a Temp doesn't give you an excuse to stare,\" she smirks that revealing her pointed teeth.\\n\\n[[Ask how she knew you were an intern.|hag intern]]\\n[[Mutter an apology and go.|hag excuse]]",
+      "links": [
+        {
+          "text": "Ask how she knew you were an intern.",
+          "destination": {
+            "name": "hag intern",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Mutter an apology and go.",
+          "destination": {
+            "name": "hag excuse",
+            "pid": 171
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "both",
+      "text": "She doesn\u2019t have a sigil <em>yet</em>. You pull out the page and show her the design, holding on frantically to her understanding. \\n\\nHer resulting grin would send a shiver down the devil\u2019s spine, but it only sends a thrill down yours. \u201cYes. Of course I want it. Let\u2019s do it.\u201d\\n\\nShe does yours first. Just in case. You can feel the coils of power as she draws, as you work in tandem. Even now, half blind, she tugs at the fabric of reality. She will be glorious at this, you can tell.\\n\\nYours locks in with a snap of power, but hers, placed snugly in a blank patch of skin, seals shut with a clatter. \\n\\nYou both sit breathless for a moment, before smiling. In the dead of night, the world seems bright with possibility. You lend her one of the books you\u2019ve already finished, and reluctantly, buzzing with energy and exhaustion, [[go to sleep|last day]].<<set $tattoo to true>><<set $taylor to true>>",
+      "links": [
+        {
+          "text": "go to sleep",
+          "destination": {
+            "name": "last day",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "sr start",
+      "text": "By the end of the first week, you know you\u2019re being taken for granted.\\n\\nNever mind that you\u2019re the only person who actually knows what Excel is, let alone Twitter.\\n\\nNever mind that the dragon down at Caffeine Hoard \u2014 calls himself George \u2014 has grown fond of you and gives you free cookies with your order now, burnt crisp all around the edges.\\n\\nNever mind that you hustle and get all the work done faster than anyone else could. Your coworkers still look at you like an outsider, and the golden sigil only gets you scorn from most of the denizens of the other world.\\n\\nToday, like most days, the reward for your hard work is [[more grunt work|grunt]]. Like you\u2019re more minion than magic.",
+      "links": [
+        {
+          "text": "more grunt work",
+          "destination": {
+            "name": "grunt",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "cr 2",
+      "text": "A [[modified Xerox machine|c copy 3]], decades old and littered with sigils takes up most of the room. <<if visited(\"examine 2\")>>Beside it, a stack of old books rises all the way up to the ceiling.<<else>>Beside it, [[a stack of old books|examine 2]] rises all the way up to the ceiling.<<endif>>\\n\\n<<if visited(\"c copy 3\") gte 2>>[[Call it a day.|home]]<<endif>>",
+      "links": [
+        {
+          "text": "modified Xerox machine",
+          "destination": {
+            "name": "c copy 3",
+            "pid": 108
+          }
+        },
+        {
+          "text": "a stack of old books",
+          "destination": {
+            "name": "examine 2",
+            "pid": 110
+          }
+        },
+        {
+          "text": "Call it a day.",
+          "destination": {
+            "name": "home",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "not pay",
+      "text": "You step aside to wait for your order.\\n\\nA few minutes later, the dragon rumbles a name you vaguely recognize as yours and you pickup the tray of colorfully steaming beverages.\\n\\nThey\u2019ll get cold if you loiter, so you head back out, away from the \u2018Caffeine Hoard\u2019 and all its denizens.\\n\\nDespite the experience, you can\u2019t help but feel lonely [[once you return|return]].",
+      "links": [
+        {
+          "text": "once you return",
+          "destination": {
+            "name": "return",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "skull list 2",
+      "text": "\u201cGreat! Don\u2019t forget. River of ink. Paper birds or Stars. Mongoose. You\u2019ll be out of here in no time.\u201d\\n\\n<<if $skullname AND visited(\"skull help\") is 0>>[[Ask what you can do to help the Janitor.|skull help]]<<endif>>\\n[[Ask about the warehouse.|skull warehouse]]\\n[[Back to the warehouse.|wh center]]",
+      "links": [
+        {
+          "text": "Ask what you can do to help the Janitor.",
+          "destination": {
+            "name": "skull help",
+            "pid": 145
+          }
+        },
+        {
+          "text": "Ask about the warehouse.",
+          "destination": {
+            "name": "skull warehouse",
+            "pid": 131
+          }
+        },
+        {
+          "text": "Back to the warehouse.",
+          "destination": {
+            "name": "wh center",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "door help",
+      "text": "\u201cAwful kind of you.\u201d Grunt. Splash. \u201cBut I\u2019ll be fine.\u201d Whinny. Guitar Riff.\\n\\nPause.\\n\\n\u201cThough if you\u2019re heading down into the warehouse, ask my cousin to see if he\u2019s got anything that could help. Just call his name at the help desk and he\u2019ll show.\u201d\\n\\nHe gives you the name then. It twists around your tongue as you repeat it, making your mouth feel salty and slick.\\n\\n[[Head to the warehouse.|wh portal]] <<set $skullname to true>>",
+      "links": [
+        {
+          "text": "Head to the warehouse.",
+          "destination": {
+            "name": "wh portal",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "wh end test",
+      "text": "<<if (visited(\"pens\") AND (visited(\"books\")) AND $post)>><<goto \"wh end\">><<else>><<goto \"wh center\">><<endif>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "wh end",
+            "pid": 41
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "wh center",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "cafe hoard",
+      "text": "[[A crimson dragon|dragon]] sits upon a hoard of coffee beans, filling the store with the nutty scent of roasting beans. The queue snakes through the store, all leading towards him.\\n\\nIn the corner, [[a hag wearing wide brim glasses|hipster hag]] sips from a small steaming cauldron. She keeps shooting looks at you.\\n\\nMeanwhile, a group of [[normal looking people|humans]] huddled over a book near the entrance keeps shooting you dirty looks.\\n\\nYou could go up to one of them, or you could just get in line and [[get this over with|queue]].",
+      "links": [
+        {
+          "text": "A crimson dragon",
+          "destination": {
+            "name": "dragon",
+            "pid": 169
+          }
+        },
+        {
+          "text": "a hag wearing wide brim glasses",
+          "destination": {
+            "name": "hipster hag",
+            "pid": 65
+          }
+        },
+        {
+          "text": "normal looking people",
+          "destination": {
+            "name": "humans",
+            "pid": 39
+          }
+        },
+        {
+          "text": "get this over with",
+          "destination": {
+            "name": "queue",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "Dead",
+      "text": "\u201cAh, never gotten that answer before!\u201d \\n\\nYou highly doubt that.\\n\\n\u201cHow good are you at keeping secrets?\u201d\\n\\n[[No good.|Secrets]]\\n[[Pretty good.|Secrets]]\\n[[I won\u2019t do anything illegal.|Secrets]]",
+      "links": [
+        {
+          "text": "No good.",
+          "destination": {
+            "name": "Secrets",
+            "pid": 157
+          }
+        },
+        {
+          "text": "Pretty good.",
+          "destination": {
+            "name": "Secrets",
+            "pid": 157
+          }
+        },
+        {
+          "text": "I won\u2019t do anything illegal.",
+          "destination": {
+            "name": "Secrets",
+            "pid": 157
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "queue",
+      "text": "You get in line behind what looks like a swamp creature, and a werewolf. The cashier, a pale young girl takes orders quickly and efficiently.\\n\\nWhen you get to the front, she smiles at you, flashing sharp fangs. You force yourself not to step back and you [[place your order.|order]]",
+      "links": [
+        {
+          "text": "place your order.",
+          "destination": {
+            "name": "order",
+            "pid": 172
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "believe in magic",
+      "text": "He ushers you out before you can ask for any explanation, and once in the waiting room you feel like you might need a hundred more.\\n\\nThe strange symbols have coalesced into something legible, something bright and shining, if still foreign, and the Receptionist\u2019s book glows with an eerie light [[that you couldn\u2019t see before|new sight]].",
+      "links": [
+        {
+          "text": "that you couldn\u2019t see before",
+          "destination": {
+            "name": "new sight",
+            "pid": 152
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "yes magic",
+      "text": "The world might say otherwise, but you can feel it in your gut. Magic has to be real.\\n\\nThe Hiring Manager's face twists into what might be a smile. \u201cYou have a lot of faith in what you can\u2019t possibly know.\u201d He sounds terribly patronizing, and you\u2019re just about ready to leave this joke of an interview when he continues.\\n\\n\u201cBut you\u2019ll do. If you want it, the position is yours.\u201d\\n\\n[[Take the Job.|employ]]\\n[[Ask about Job.|askjob]]",
+      "links": [
+        {
+          "text": "Take the Job.",
+          "destination": {
+            "name": "employ",
+            "pid": 115
+          }
+        },
+        {
+          "text": "Ask about Job.",
+          "destination": {
+            "name": "askjob",
+            "pid": 153
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "tat2",
+      "text": "She nods, and it begins. It doesn\u2019t hurt, feels more like a group of very persistent kittens trying to scratch at you, but you have to focus. She might be drawing the sigil, but you\u2019re weaving it with power.\\n\\nIn the end, it burns hotter than the golden amulet ever did, and you end up [[going to bed giddy|last day]], drunk with possibility. <<set $tattoo to true>>",
+      "links": [
+        {
+          "text": "going to bed giddy",
+          "destination": {
+            "name": "last day",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "wh right 1",
+      "text": "You walk, and walk, and walk a little more. Everything looks the same.\\n\\n<<if visited() lte 2>>[[Keep walking forward.|wh right 1]]<<else>>[[Keep walking forward.|wh right 2]]<<endif>>",
+      "links": [
+        {
+          "text": "Keep walking forward.",
+          "destination": {
+            "name": "wh right 1",
+            "pid": 79
+          }
+        },
+        {
+          "text": "Keep walking forward.",
+          "destination": {
+            "name": "wh right 2",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "wh right 3",
+      "text": "No song can make this walk any shorter. How much longer is it?\\n\\n<<if visited() lte 2>>[[Keep walking forward.|wh right 3]]<<else>>[[Keep walking forward.|wh mongoose]]<<endif>>",
+      "links": [
+        {
+          "text": "Keep walking forward.",
+          "destination": {
+            "name": "wh right 3",
+            "pid": 80
+          }
+        },
+        {
+          "text": "Keep walking forward.",
+          "destination": {
+            "name": "wh mongoose",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "wh right 2",
+      "text": "You start to hum a little song. It echoes terribly as you continue to walk forward.\\n\\n<<if visited() lte 2>>[[Keep walking forward.|wh right 2]]<<else>>[[Keep walking forward.|wh right 3]]<<endif>>",
+      "links": [
+        {
+          "text": "Keep walking forward.",
+          "destination": {
+            "name": "wh right 2",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Keep walking forward.",
+          "destination": {
+            "name": "wh right 3",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "Start",
+      "text": "<h1>Arcane Intern (Unpaid)</h1>\\n<h2>A Twine game by <a href=\"http://astriddalmady.com\" target=\"_blank\">Astrid Dalmady</a></h2>\\n\\n<div class=\"big\">[[Apply?|apply]]</div>\\n\\n<div class=\"small\">[[Not your first application? Click here to jump between chapters.|jumper]]\\n[[Credits]]</div>\\n",
+      "links": [
+        {
+          "text": "Apply?",
+          "destination": {
+            "name": "apply",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Not your first application? Click here to jump between chapters.",
+          "destination": {
+            "name": "jumper",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 144
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "t okay",
+      "text": "You rush to check if she\u2019s okay, finding her sitting down at the kitchen table. She looks, confused, looking around the room. Her eyes catch on the sigil you carved into the fridge for the first time and widen. \\n\\nThen she looks up at you and forgets. But she KNOWS she forgot.\\n\\n\u201cWhat\u2019s going on?\u201d Her voice is broken and confused. The kettle whistles, and is completely ignored.\\n\\n[[Tell her the truth.|truth]]\\n[[Try to undo your spell.|undo]]",
+      "links": [
+        {
+          "text": "Tell her the truth.",
+          "destination": {
+            "name": "truth",
+            "pid": 31
+          }
+        },
+        {
+          "text": "Try to undo your spell.",
+          "destination": {
+            "name": "undo",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "expresso",
+      "text": "She laughs, but it\u2019s a nice laugh. Like she\u2019s letting you in on a joke instead of making you the butt of one.\\n\\n\u201cDon\u2019t worry, you\u2019ll get the hang of things. I meant what I said. You\u2019ll see what I mean once you get to the Otherworld. It\u2019s in the basement, so don\u2019t try going to Starbucks or anything.\u201d\\n\\n[[Ask about the different floors.|recept floors]]\\n[[Ask her what she\u2019s smiling about.|recept smile]]\\n[[Ask her where the Hiring Manager is.|recept manage]]\\n[[Back to the hallway.|coffee start]]",
+      "links": [
+        {
+          "text": "Ask about the different floors.",
+          "destination": {
+            "name": "recept floors",
+            "pid": 168
+          }
+        },
+        {
+          "text": "Ask her what she\u2019s smiling about.",
+          "destination": {
+            "name": "recept smile",
+            "pid": 165
+          }
+        },
+        {
+          "text": "Ask her where the Hiring Manager is.",
+          "destination": {
+            "name": "recept manage",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Back to the hallway.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "magazines",
+      "text": "The magazines are 20 years out of date. Nothing like an in-depth interview about that boy band 5ive to kill the time.\\n\\n\u201cThey\u2019ll always be a thing\u201d the magazine claims.\\n\\n[[Back|waiting room]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "waiting room",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "apply",
+      "text": "This is your seventh interview this week. The first two were for editorial positions, the next two book marketing. Internships #5 and #6 were Design and Publicity.\\n\\nThe ad for this one read \u2018Arcane Intern Needed\u2019, whatever that\u2019s supposed to mean. \\n\\nLike all the others, it\u2019s unpaid.\\n\\nBut you\u2019re the one who wanted to get into book publishing, and that means internships. At the very least, this company has [[a nice waiting room.|waiting room]]<<set $minutes to 10>>",
+      "links": [
+        {
+          "text": "a nice waiting room.",
+          "destination": {
+            "name": "waiting room",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "t sigil",
+      "text": "With a halting explanation, you tell her how the sigil gives you access. How anyone without one just forgets, the way she had once forgotten. You explain how you have to carry it everywhere.\\n\\nHer eyes light up with bright, glorious insight. \u201cWhy not tattoo it on?\u201d she says, before the spell buckles and she falls back into confusion.\\n\\n[[Ask her for the tattoo.|tattoo]]\\n[[Suggest you both get tattoos.|both]]\\n[[Don\u2019t risk any more experiments. Just undo your spell.|undo]]",
+      "links": [
+        {
+          "text": "Ask her for the tattoo.",
+          "destination": {
+            "name": "tattoo",
+            "pid": 156
+          }
+        },
+        {
+          "text": "Suggest you both get tattoos.",
+          "destination": {
+            "name": "both",
+            "pid": 66
+          }
+        },
+        {
+          "text": "Don\u2019t risk any more experiments. Just undo your spell.",
+          "destination": {
+            "name": "undo",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "cubicle",
+      "text": "[[Several offices|hallway][$desk +=1]] extend past your cubicle and out into a winding hallway.\\n\\nOn your desk, the [[towers of paper|papers][$desk +=1]] lean on the [[ancient computer screen|computer][$desk +=1]]. Does it even work?\\n\\n<<if $desk gte 4>>A door in the hallway opens, and a silvery voice [[beckons]].<<endif>>",
+      "links": [
+        {
+          "text": "Several offices",
+          "destination": {
+            "name": "hallway",
+            "pid": 154
+          }
+        },
+        {
+          "text": "towers of paper",
+          "destination": {
+            "name": "papers",
+            "pid": 149
+          }
+        },
+        {
+          "text": "ancient computer screen",
+          "destination": {
+            "name": "computer",
+            "pid": 42
+          }
+        },
+        {
+          "text": "beckons",
+          "destination": {
+            "name": "beckons",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "river of ink",
+      "text": "This must be where Olivia Singh gets all that ink she uses. A river of it flows through the warehouse, bright crimson in a way blood never could be. You leap across the stream using footholds made of stained concrete and the remnants of crates.\\n\\nYou try not to get any on you. Stuff like that only ever marks mistakes.\\n\\n<<if $find AND (visited(\"pens\") is false)>>[[A shimmer of something you need.|pens]]<<endif>>\\n[[Towards the cauldron cairn.|wh left]]\\n[[Towards the feeling that someone is watching.|palintir]]\\n[[Towards the smell of disrepair.|rusted sigils]]\\n[[Backtrack.|previous()]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "A shimmer of something you need.",
+          "destination": {
+            "name": "pens",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Towards the cauldron cairn.",
+          "destination": {
+            "name": "wh left",
+            "pid": 129
+          }
+        },
+        {
+          "text": "Towards the feeling that someone is watching.",
+          "destination": {
+            "name": "palintir",
+            "pid": 121
+          }
+        },
+        {
+          "text": "Towards the smell of disrepair.",
+          "destination": {
+            "name": "rusted sigils",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "Praecantatio Publishers",
+      "text": "It was the name that drew you to the company despite the less than descriptive job posting. It shares a name with the magical school in the [[Rebecca Butler][$minutes -=1]] series.\\n\\nAny company that\u2019s a fan of those is somewhere you\u2019re interested in working in.\\n\\n[[Back|waiting room]]",
+      "links": [
+        {
+          "text": "Rebecca Butler",
+          "destination": {
+            "name": "Rebecca Butler",
+            "pid": 46
+          }
+        },
+        {
+          "text": "Back",
+          "destination": {
+            "name": "waiting room",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "etch taylor",
+      "text": "She frowns, and looks down at the sigil again.\\n\\n\u201cI don\u2019t know\u2026 It's a bit abstract.\u201d\\n\\nBut you cajole her, explain that it would make you less nervous. You lie, because you can\u2019t stand lying to her over and over again, night after night.\\n\\nIn the end, she caves. You knew she would, and magic snaps and crackles as she draws on the both of you.\\n\\nShe stares at her own sigil, glowing with boundless energy and remembers. In the dead of night, her smile seems bright with possibility\\n\\n\u201cThank you,\u201d she says, and you spend the next few hours showing her what you know. Her lines are crisp and clear in the air and, when you finally [[fall asleep|last day]], you dream of magic. <<set $tattoo to true>><<set $taylor to true>>",
+      "links": [
+        {
+          "text": "fall asleep",
+          "destination": {
+            "name": "last day",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "try magic",
+      "text": "You can\u2019t just read this and not do anything. You feel excitement buzzing in your blood, almost in time with the metallic hum of the art being made outside.\\n\\nPicking up a pen, you walk up to your door and draw a sigil, curves bouncing in and out over the door frame. As the final line sinks in, the buzzing of the tattoo needle stops, just as you predicted, as magic cloaks the sound from entering the room.\\n\\nYou spend the rest of the night performing simple charms, and don\u2019t bother to contain your glee. It\u2019s not like Taylor can hear you anymore.\\n\\nIn the end, it\u2019s only exhaustion that finally drives you [[to bed.|ch4]]",
+      "links": [
+        {
+          "text": "to bed.",
+          "destination": {
+            "name": "ch4",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "copy sigil",
+      "text": "The sigil does not struggle. Not as you copy it, nor as you tuck it into your pocket. \\n\\nThe world seems brighter for a moment, before it fades back into the reality you\u2019ve come to know. <<set $sigil to true>>\\n\\n[[Back to work.|cr 2]]",
+      "links": [
+        {
+          "text": "Back to work.",
+          "destination": {
+            "name": "cr 2",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "sr door",
+      "text": "You knock, and a honeyed voice calls out from inside. \\n\\n\u201cDon\u2019t come in here!\u201d Hisses. Scrapes. \u201cYou\u2019ll only make them bigger!\u201d Cheers. A sword being drawn.\\n\\n\u201cWhy did it have to be snakes?\u201d\\n\\n[[Back away from the door and just head to the warehouse.|wh portal]] \\n[[Ask if he needs any help?|door help]]",
+      "links": [
+        {
+          "text": "Back away from the door and just head to the warehouse.",
+          "destination": {
+            "name": "wh portal",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Ask if he needs any help?",
+          "destination": {
+            "name": "door help",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "w no magic",
+      "text": "She laughs at you, just as brutal and correcting as the red ink that litters her desk.\\n\\n\u201cYou\u2019re welcome to try. Pick yourself up something nice from the warehouse, but I doubt anyone not born into this could ever make a working sigil. You\u2019re no exception.\u201d\\n\\nShe says this with no pity, only the smug satisfaction of someone who considers themselves better.\\n\\n[[Calm yourself and just ask her what she needs from the warehouse.|warehouse]]",
+      "links": [
+        {
+          "text": "Calm yourself and just ask her what she needs from the warehouse.",
+          "destination": {
+            "name": "warehouse",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "etch",
+      "text": "You have an idea, and it sounds ridiculous, but what if they couldn\u2019t take the sigil from you.\\n\\nYou slide the design over to her, and her eyes light up in understanding. She\u2019s thrilled, having wanted to use you as a canvas since you first met.\\n\\nWithin moments, she\u2019s all set up, sterilized and ready.\\n\\n\u201cWhere do you want it?\u201d\\n\\n[[Upper arm.|tat2]]\\n[[Chest.|tat2]]\\n[[Wrist.|tat2]]\\n[[Leg.|tat2]]\\n[[Suggest you get matching tattoos.|etch taylor]]",
+      "links": [
+        {
+          "text": "Upper arm.",
+          "destination": {
+            "name": "tat2",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Chest.",
+          "destination": {
+            "name": "tat2",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Wrist.",
+          "destination": {
+            "name": "tat2",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Leg.",
+          "destination": {
+            "name": "tat2",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Suggest you get matching tattoos.",
+          "destination": {
+            "name": "etch taylor",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "copy no eaves",
+      "text": "He\u2019s a spiteful, small-minded man and anything he has to say will probably only hurt you. You head back into the safety of [[the copy room|cr 2]], trying not to imagine what he might have said.",
+      "links": [
+        {
+          "text": "the copy room",
+          "destination": {
+            "name": "cr 2",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "you startle",
+      "text": "His eyes are like chasms, but literally this time. They are pits of crushing blackness so deep that even the light around his eyes struggles before being inevitably sucked in.\\n\\nHe smiles again, \u201cOh, and while you\u2019re here, it\u2019d be best to [[believe in magic]].\u201d",
+      "links": [
+        {
+          "text": "believe in magic",
+          "destination": {
+            "name": "believe in magic",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "stars",
+      "text": "A perforated box at the top of a pile burns with an inner light that tosses strange shadows onto the hallway. It flickers like starlight, and like stars, is out of your reach.\\n\\n[[Towards the perfume of paper.|books]]\\n[[Towards the smell of disrepair.|rusted sigils]]\\n[[Towards the rustle of wings.|paper birds]]\\n[[Backtrack.|previous()]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "Towards the perfume of paper.",
+          "destination": {
+            "name": "books",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Towards the smell of disrepair.",
+          "destination": {
+            "name": "rusted sigils",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Towards the rustle of wings.",
+          "destination": {
+            "name": "paper birds",
+            "pid": 57
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "eavesdrop",
+      "text": "You lean in towards the door, hearing his low voice mutter.\\n\\n\u201cI still don\u2019t know why Talib even hired an outsider as an intern, but we\u2019ll fix it soon. My nephew\u2019s looking for a job, and this would be a perfect place for him.\u201d\\n\\nA soft voice, one you don\u2019t recognize, replies.\\n\\n\u201cIt is better to keep it to ourselves. You never know how outsiders will react to magic.\u201d\\n\\n[[You can't listen anymore.|cr 2]]",
+      "links": [
+        {
+          "text": "You can't listen anymore.",
+          "destination": {
+            "name": "cr 2",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "something",
+      "text": "You have taken something more valuable than musty old paperbacks. The copy of the viewing sigil, the one that opened up the world of magic, is still folded up neatly in your pocket.\\n\\nWith the amulet, it is temporary. Taking it off could leave you vacant and unknowing. But now you had the sigil.\\n\\n[[Try to cast it.|cast]]\\n[[Try to etch it on to you.|etch]]",
+      "links": [
+        {
+          "text": "Try to cast it.",
+          "destination": {
+            "name": "cast",
+            "pid": 116
+          }
+        },
+        {
+          "text": "Try to etch it on to you.",
+          "destination": {
+            "name": "etch",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "memo",
+      "text": "<em>There\u2019s a stack of books outside my office. Take them and copy the following pages in the following quantities to send by mail. MUST BE DONE BY TODAY.\\n\\n-Olivia Singh, Head Editor</em>\\n\\nShe signs it like that every time, never mind that you\u2019ve been working here for almost 3 months now.\\n\\nYou carry the books all the way to [[the copy room|copy room]] and get started. This is going to take all day, you can feel it.",
+      "links": [
+        {
+          "text": "the copy room",
+          "destination": {
+            "name": "copy room",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "your bag",
+      "text": "That\u2019s weird. There\u2019s a text from [[your roommate][$minutes -=1]] and a voicemail from [[your dad][$minutes -=1]]. But your phone hasn\u2019t rung at all since you got here.\\n\\nMaybe they were muffled under the weight of [[Rebecca Butler and the Sphinx\u2019s Ink|Rebecca Butler][$minutes -=1]]. It\u2019s the 13th in the series and sized to match.\\n\\n[[Back|waiting room]]",
+      "links": [
+        {
+          "text": "your roommate",
+          "destination": {
+            "name": "your roommate",
+            "pid": 123
+          }
+        },
+        {
+          "text": "your dad",
+          "destination": {
+            "name": "your dad",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Rebecca Butler and the Sphinx\u2019s Ink",
+          "destination": {
+            "name": "Rebecca Butler",
+            "pid": 46
+          }
+        },
+        {
+          "text": "Back",
+          "destination": {
+            "name": "waiting room",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "delivery",
+      "text": "Olivia Singh, unflappable editor, looks a little surprised at how fast you return with the supplies. Still, she seems to appreciate your talent.\\n\\n\u201cGood job. Maybe HR was right about you.\u201d She takes a new pen and smirks. \u201cTake this. See if you can do anything with it.\u201d\\n\\nShe hands you a dusty paperback, the pages curled and yellowed. \u201cThis is for after work, you understand.\u201d\\n\\nYou nod, gripping it tightly, eager to get back to your data entry, and more importantly to [[get back home to the book.|back home]]",
+      "links": [
+        {
+          "text": "get back home to the book.",
+          "destination": {
+            "name": "back home",
+            "pid": 143
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "Taylor",
+      "text": "You can\u2019t take it anymore. You let it all out. The frustration, the crushing soullessness of how they treat you. You like the work, whenever they actually let you do things with the books, but the rest makes you feel so disposable.\\n\\nYou even tell her about the magic, about how thrilling it is to even do the simplest tasks because it\u2019s all tangled up in this brand new world. Your golden sigil burns as you spill all your dirty secrets.\\n\\nOnce you finish your rant, she nods, her mind already forgetting the details of magic, but remembering all the rest.\\n\\n\u201cWhat assholes. Well if they\u2019re using you, you should just use them back? Isn\u2019t there something you can get out of this? Connections? Free books? Something?\u201d\\n\\n[[Nothing.|nothing]]\\n<<if $sigil>>[[\u2026There is something.|something]]<<endif>>",
+      "links": [
+        {
+          "text": "Nothing.",
+          "destination": {
+            "name": "nothing",
+            "pid": 162
+          }
+        },
+        {
+          "text": "\u2026There is something.",
+          "destination": {
+            "name": "something",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "grunt",
+      "text": "Olivia Singh \u2014 Head Editor \u2014 isn\u2019t one of the worst offenders. She\u2019s often too wrapped up in her corrections, forcing typos inside of magical manuscripts to change despite their desire to remain as they are. Her red pen blazes, even as she calls you into her office. \\n\\nYou wait as she tackles a particularly troublesome comma splice. Eventually, she addresses you.\\n\\n\u201cHave you been to the warehouse yet?\u201d Even as she speaks to you, she seems distracted, focused on something else.\\n\\n[[You haven\u2019t, but you ask her what she needs.|warehouse]]\\n[[You haven\u2019t, but maybe you could do something here instead. Maybe finally learn some magic?|w no magic]]",
+      "links": [
+        {
+          "text": "You haven\u2019t, but you ask her what she needs.",
+          "destination": {
+            "name": "warehouse",
+            "pid": 20
+          }
+        },
+        {
+          "text": "You haven\u2019t, but maybe you could do something here instead. Maybe finally learn some magic?",
+          "destination": {
+            "name": "w no magic",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "c copy 2",
+      "text": "<<print either(\"A flight sigil flickers away from the copier. You spend half an hour trying to catch it.\", \"Flooding sigils should not be allowed in rooms full of paper. The fight to make that copy leaves you damp, and soggy for hours.\" , \"You refuse to copy a fire sigil. You won\u2019t be held responsible if this place burns down.\",\"Roses and iris bloom from the copy machine. Vines sprout and cause a paper jam.\" , \"A cockroach scurries out from under the machine. You hope it was summoned by the sigil.\")>>\\n\\n[[Keep copying.|c copy 2]]\\n[[Stop making copies.|copy room]]",
+      "links": [
+        {
+          "text": "Keep copying.",
+          "destination": {
+            "name": "c copy 2",
+            "pid": 107
+          }
+        },
+        {
+          "text": "Stop making copies.",
+          "destination": {
+            "name": "copy room",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "c copy 3",
+      "text": "<<print either(\"A green light, a terrible chill. You don\u2019t want to know what that sigil does.\", \"This sigil does nothing. At least, you hope it did nothing.\" , \"You <em>still</em> refuse to copy a fire sigil. You aren\u2019t nearly paid enough for that.\" , \"A hot wind fills the room. It leaves you smelling like fabric softener, only not the brand you use.\" , \"The toneless sound of the copier going back and forth gets stuck in your head. It's catchier than any pop song.\")>>\\n\\n[[Keep copying.|c copy 3]]\\n[[Stop making copies.|cr 2]]",
+      "links": [
+        {
+          "text": "Keep copying.",
+          "destination": {
+            "name": "c copy 3",
+            "pid": 108
+          }
+        },
+        {
+          "text": "Stop making copies.",
+          "destination": {
+            "name": "cr 2",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "Otherworld Stylesheet",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n\\nbody {\\n\\t/* This affects the entire page */\\nbackground: url(\"arcaneimages/diagmondst.png\") repeat;\\nbackground-color: black;\\n/*background-color: #545454;*/\\n/*background: url(\"arcaneimages/diagmondst.png\");*/\\n\\n\\n\\t\\n}\\n.passage {\\n\\t/* This only affects passages */\\n\\tcolor:#c0c0c0;\\n\\t\\n}\\n.passage a {\\n\\t/* This affects passage links */\\n\\tcolor:#9966b3;\\n\\t\\n}\\n.passage a:hover {\\n\\t/* This affects links while the cursor is over them */\\n\\tcolor:#9966b3;\\n}",
+      "links": []
+    },
+    {
+      "pid": 110,
+      "name": "examine 2",
+      "text": "Taking a short break, you page through <em>So You Married a Mage</em>, and there it is, the sigil you are most familiar with. The sigil that gave you magic.\\n\\nIt\u2019s much clearer on the page than on your tiny golden amulet, and with what you know now, you think you could do it.\\n\\nBut it\u2019s complicated, and the moment you look away you can already feel the details slipping from your grasp.\\n\\n[[Make a copy.|copy sigil]]\\n[[Better not risk it and the copy machine.|no copy sigil]]",
+      "links": [
+        {
+          "text": "Make a copy.",
+          "destination": {
+            "name": "copy sigil",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Better not risk it and the copy machine.",
+          "destination": {
+            "name": "no copy sigil",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "All Stylesheet",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: */\\n@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);\\n\\n\\nbody {\\nbackground: url(\"arcaneimages/paper.png\") repeat;\\nbackground-color: #fcfcfc;\\n}\\n\\n.passage {\\n\\t/* This only affects passages */\\npadding:11%;\\nfont-family: 'Bitter', serif;\\nfont-size:1.5em;\\n\\t\\n}\\n.passage a {\\n\\t/* This affects passage links */\\n}\\n\\nh1 {\\nfont-size: 3em;\\nmargin-bottom:-.7em;\\n}\\n\\nh2 {\\nfont-size: 1.3em;\\n}\\n\\n.big {\\nfont-size: 2.5em;\\n}\\n\\n.small {\\nfont-size:.7em;\\n}\\n\\n.center{\\ntext-align:center;\\n}\\n\\n.passage a {\\n\\t/* This affects passage links */\\n}\\n\\n.passage a:hover {\\n\\t/* This affects links while the cursor is over them */\\ntext-decoration: underline;\\n\\n}\\n\\n#sidebar { display: none; }\\n  \\n#passages { margin-left: 0; }",
+      "links": []
+    },
+    {
+      "pid": 112,
+      "name": "alba coffee",
+      "text": "You knock, and knock, and knock again. No answer comes. She must not be in today.\\n\\n[[Back to the hallway.|coffee start]]",
+      "links": [
+        {
+          "text": "Back to the hallway.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "bed",
+      "text": "You swallow it all. What good could it do to talk to her? She\u2019s just as clueless as you once were, blind to real world around her.\\n\\nYou mutter something vague about work and shut yourself up in your room. Even after a long shower, you can\u2019t get the smell of ink and toner out of your skin.\\n\\n[[Go to sleep.|last day]]",
+      "links": [
+        {
+          "text": "Go to sleep.",
+          "destination": {
+            "name": "last day",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "home taylor",
+      "text": "That night, you and Taylor celebrate. You laugh and sip elf-made wine deep into the night, until your muscles and mind are loose from warmth and fatigue.\\n\\n\u201cYou know,\u201d Taylor says, iridescent with her new knowledge. \u201cWe really shouldn\u2019t keep this all to ourselves.\u201d\\n\\nYou have a feeling she isn\u2019t referring to the wine, but you ask anyway.\\n\\n\u201cWell if all it takes is a tattoo, then we should just do it. Spread the word. I\u2019ll show all the artists, take it to all the trade shows. We could blow this world wide open.\u201d\\n\\n[[Smile.|smile end]]\\n[[Frown.|smile end]]",
+      "links": [
+        {
+          "text": "Smile.",
+          "destination": {
+            "name": "smile end",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Frown.",
+          "destination": {
+            "name": "smile end",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "employ",
+      "text": "His smile is an omen. Of what, you\u2019re not sure, but it sends a shiver down your spine as he congratulates you.\\n\\n\u201cNow there will be some things to sign on Monday, but for today, you\u2019ll get your entry key.\u201d\\n\\nHe slides a length of chain across to you and grins. On the end, there is a strange symbol. \u201cGo ahead,\u201d he says. \u201c[[Put it on.|put it on]]\u201d",
+      "links": [
+        {
+          "text": "Put it on.",
+          "destination": {
+            "name": "put it on",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "cast",
+      "text": "You ask if she can make some tea, a warm ritual you\u2019ve shared before on days when the job hunt went bad or her clients wanted particularly bad tattoos. She jumps, eager to help and it leaves you alone at the table.\\n\\nYou pull out the page and focus. It\u2019s complex, bending under your eye, but you can do this. You have learned how to bend the universe to your will and this will be no different.\\n\\nThe air takes on a static tinge, as you wave your hand. Up, around, downwards in a cutting motion, spreading your fingers wide. You juggle to keep all the pieces together, and you feel it tense, and tense and grow.\\n\\nAnd snap like a rubber band.\\n\\nMagic, pure and heavy and electric fills the apartment, cloying in its power. Taylor yelps from the kitchen.\\n\\n[[See if she\u2019s okay.|t okay]]\\n[[Call it a night. You\u2019re exhausted.|exhausted]]",
+      "links": [
+        {
+          "text": "See if she\u2019s okay.",
+          "destination": {
+            "name": "t okay",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Call it a night. You\u2019re exhausted.",
+          "destination": {
+            "name": "exhausted",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "ch2",
+      "text": "<h1>Intern To-Do List</h1>\\n<ol><<remember $ch2 to true>>\\n<li>[[Get Coffee]]</li>\\n<li>Restock Storage Room</li>\\n<li>Making Copies</li></ol>",
+      "links": [
+        {
+          "text": "Get Coffee",
+          "destination": {
+            "name": "Get Coffee",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "ch3",
+      "text": "<h1>Intern To-Do List</h1>\\n<ol><<remember $ch3 to true>>\\n<li><s>Get Coffee</s></li>\\n<li>[[Restock Storage Room|sr start]]</li>\\n<li>Making Copies</li></ol>",
+      "links": [
+        {
+          "text": "Restock Storage Room",
+          "destination": {
+            "name": "sr start",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "ch4",
+      "text": "<h1>Intern To-Do List</h1>\\n<ol><<remember $ch4 to true>>\\n<li><s>Get Coffee</s></li>\\n<li><s>Restock Storage Room</s></li>\\n<li>[[Making Copies|copies start]]</li></ol>",
+      "links": [
+        {
+          "text": "Making Copies",
+          "destination": {
+            "name": "copies start",
+            "pid": 167
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "own world",
+      "text": "Like always, your breathing is easier here. Your body is lighter, but only because there is an emptiness. Still, there is a certain comfort in your home world, despite its enmeshment with the mundane.\\n\\n<<if $skullname>>[[Look in on the Janitor.|j end]]<<endif>>\\n[[Deliver the supplies.|delivery]]",
+      "links": [
+        {
+          "text": "Look in on the Janitor.",
+          "destination": {
+            "name": "j end",
+            "pid": 134
+          }
+        },
+        {
+          "text": "Deliver the supplies.",
+          "destination": {
+            "name": "delivery",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "palintir",
+      "text": "A darkened orb sits on a pillar. You feel like you\u2019re being watched. You pass by it, and your shadow warps uncomfortably.\\n\\n[[Towards the growls.|chimera]] \\n[[Towards the sound of a stream.|river of ink]] \\n[[Towards the cauldron cairn.|wh left]] \\n[[Backtrack.|previous()]] \\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "Towards the growls.",
+          "destination": {
+            "name": "chimera",
+            "pid": 132
+          }
+        },
+        {
+          "text": "Towards the sound of a stream.",
+          "destination": {
+            "name": "river of ink",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Towards the cauldron cairn.",
+          "destination": {
+            "name": "wh left",
+            "pid": 129
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "skull list",
+      "text": "You place the list in front of the flaming skull and ask for his help in finding these things among the piles and piles of stuff that litter the warehouse.\\n\\nEyeless sockets look down and it smiles.\\n\\n\u201cTo the left you can harvest the pens, on the other side of the river of ink. Obviously. And the books you need are near the paper bird cages or the stars, just go right until you hit the heads. It\u2019s easy from there.\u201d\\n\\nThen its face seems to contort. Impossible since bones can\u2019t move the way muscles do, but it\u2019s the impression it gives nonetheless.\\n\\n\u201cThe post-it notes are tricky. You need to go faaaaaaar right from here, and I mean far, and take down that mongoose. It\u2019s a pain. There are several spells you could use to catch it, but the easiest is just to get rid of it. Just inscribe this banishing sigil in the air and it\u2019ll buzz off.\u201d\\n\\nIts flames curve to form a sweeping line, a series of circles, and the shuddering feeling of not being wanted. The sigil is burned in your mind now.\\n\\n\u201cYou got all that?\u201d<<set $find to true>>\\n\\n[[Yeah, got it.|skull list 2]]\\n[[Uh, could you give me a map or something?|skull map]]",
+      "links": [
+        {
+          "text": "Yeah, got it.",
+          "destination": {
+            "name": "skull list 2",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Uh, could you give me a map or something?",
+          "destination": {
+            "name": "skull map",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "your roommate",
+      "text": "\u2018Bringing home BBQ for dinner. Pick up some napkins, will you?\u2019\\n\\nYou smile. You won the fucking lottery when you got Taylor for a roommate. You were skeptical at first. She\u2019s got tons of tattoos and terrible taste in music, but you guys click really well.\\n\\nIt helps that her tattoo artist gig actually pays, and she doesn\u2019t hold the disparity against you.\\n\\n[[Back to your bag.|your bag]]\\n[[Back to the waiting room.|waiting room]]",
+      "links": [
+        {
+          "text": "Back to your bag.",
+          "destination": {
+            "name": "your bag",
+            "pid": 103
+          }
+        },
+        {
+          "text": "Back to the waiting room.",
+          "destination": {
+            "name": "waiting room",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 124,
+      "name": "Descend",
+      "text": "Walking through the vortex feels like walking through an automatic car wash. Something that feels wet but isn\u2019t splashes against your face, only to be swept away by a fearsome wind.\\n\\nYou end up [[on the other side]], feeling pretty clean, even though your hair is a mess.",
+      "links": [
+        {
+          "text": "on the other side",
+          "destination": {
+            "name": "on the other side",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "breakroom",
+      "text": "You keep a snack in your desk now, and take advantage of the silence in your cubicle. You wonder if you\u2019ll ever get an office here, instead of a desk hastily assembled in the hallway.\\n\\nYou wonder if you even want one.\\n\\nOn the way back to the copy room, you pass by the closed door of the break room. You hear Nigel Scott\u2019s self-important drone, and you\u2019re ready to ignore it, until he says your name.\\n\\n[[Eavesdrop.|eavesdrop]]\\n[[Ignore him.|copy no eaves]]",
+      "links": [
+        {
+          "text": "Eavesdrop.",
+          "destination": {
+            "name": "eavesdrop",
+            "pid": 100
+          }
+        },
+        {
+          "text": "Ignore him.",
+          "destination": {
+            "name": "copy no eaves",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "nigel coffee",
+      "text": "\u201cForgotten already? Figures. A Draconian Latte, and make sure you get it right.\u201d\\n\\nThe door slams behind you, even though you tried to close it gently.\\n\\n[[Back to the hallway.|coffee start]]",
+      "links": [
+        {
+          "text": "Back to the hallway.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "no magic",
+      "text": "You\u2019ve learned the hard way. Magic isn\u2019t real.\\n\\nThe Hiring Manager smiles. \u201cOf course not.\u201d He sounds terribly patronizing, and you\u2019re just about ready to leave this joke of an interview when he continues.\\n\\n\u201cYou\u2019re perfect. If you want it, the position is yours.\u201d\\n\\n[[Take the Job.|employ]]\\n[[Ask about Job.|askjob]]",
+      "links": [
+        {
+          "text": "Take the Job.",
+          "destination": {
+            "name": "employ",
+            "pid": 115
+          }
+        },
+        {
+          "text": "Ask about Job.",
+          "destination": {
+            "name": "askjob",
+            "pid": 153
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "exhausted",
+      "text": "You call out that you\u2019ve changed your mind about the tea, and trudge into your room.\\n\\nYou [[fall asleep|last day]] as soon as your head hits the pillow, still clinging with static energy.",
+      "links": [
+        {
+          "text": "fall asleep",
+          "destination": {
+            "name": "last day",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 129,
+      "name": "wh left",
+      "text": "Just a few steps in and you already feel like you\u2019re in a labyrinth. A stack of cauldrons acts as a cairn, marking the first crossroads in this twisted warehouse.\\n\\n<<if $map>>[[Go straight to the pens.|pens]]\\n[[Go straight to the books.|books]]<<endif>>\\n[[Towards the feeling that someone is watching.|palintir]]\\n[[Towards the sound of a stream.|river of ink]]\\n[[Towards the smell of disrepair.|rusted sigils]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "Go straight to the pens.",
+          "destination": {
+            "name": "pens",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Go straight to the books.",
+          "destination": {
+            "name": "books",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Towards the feeling that someone is watching.",
+          "destination": {
+            "name": "palintir",
+            "pid": 121
+          }
+        },
+        {
+          "text": "Towards the sound of a stream.",
+          "destination": {
+            "name": "river of ink",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Towards the smell of disrepair.",
+          "destination": {
+            "name": "rusted sigils",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "talib coffee",
+      "text": "You knock and a familiar female voice tells you to come in. You do, and find yourself in the waiting room from your interview.\\n\\nBut how? the interview had happened on the first floor, and the offices were on the third floor. You didn\u2019t go down any stairs or anything.\\n\\nThe receptionist \u2014 a Ms. Tran, her name plaque reads now \u2014 is at the desk, grinning smugly.\\n\\n[[Ask about the different floors.|recept floors]]\\n[[Ask her what she\u2019s smiling about.|recept smile]]\\n[[Ask her for her coffee order.|recept coffee]]\\n[[Ask her where the Hiring Manager is.|recept manage]]\\n[[Back to the hallway.|coffee start]]",
+      "links": [
+        {
+          "text": "Ask about the different floors.",
+          "destination": {
+            "name": "recept floors",
+            "pid": 168
+          }
+        },
+        {
+          "text": "Ask her what she\u2019s smiling about.",
+          "destination": {
+            "name": "recept smile",
+            "pid": 165
+          }
+        },
+        {
+          "text": "Ask her for her coffee order.",
+          "destination": {
+            "name": "recept coffee",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Ask her where the Hiring Manager is.",
+          "destination": {
+            "name": "recept manage",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Back to the hallway.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 131,
+      "name": "skull warehouse",
+      "text": "The skull tilts towards you, as if catching sight of your golden sigil.\\n\\n\u201cAh, that does explain things. This is just an Otherworld warehouse, a kind of space out of space. Not exactly safe for you humans to be in, like most of the Otherworld, but you should be fine.\u201d\\n\\nIt grins, but then again, it\u2019s always grinning.\\n\\n\u201cPersonally though, I wouldn\u2019t be flashing that thing around, even if it does help you get here. Some people think you aren\u2019t really magical unless you got the symbol etched at birth, but that\u2019s a load of crock. Still, they\u2019ll think less of you.\u201d\\n\\n<<if $skullname AND visited(\"skull help\") is 0>>[[Ask what you can do to help the Janitor.|skull help]]<<endif>>\\n[[Ask where to find the things on your list.|skull list]]\\n[[Back to the warehouse.|wh center]]",
+      "links": [
+        {
+          "text": "Ask what you can do to help the Janitor.",
+          "destination": {
+            "name": "skull help",
+            "pid": 145
+          }
+        },
+        {
+          "text": "Ask where to find the things on your list.",
+          "destination": {
+            "name": "skull list",
+            "pid": 122
+          }
+        },
+        {
+          "text": "Back to the warehouse.",
+          "destination": {
+            "name": "wh center",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "chimera",
+      "text": "Something growls within closed boxes. A flash of a scaled tail, the glint of claws, a rustle of fur. Whatever it is, its shadow even looks menacing, and you make an effort to stay away.\\n\\n[[Towards the feeling that someone is watching.|palintir]]\\n[[Towards what feels like a trap.|nets]]\\n[[Backtrack.|previous()]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "Towards the feeling that someone is watching.",
+          "destination": {
+            "name": "palintir",
+            "pid": 121
+          }
+        },
+        {
+          "text": "Towards what feels like a trap.",
+          "destination": {
+            "name": "nets",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 133,
+      "name": "receptionist",
+      "text": "The Receptionist is engrossed in a giant leather bound book. Bothering her seems rude when she\u2019s studying such a difficult book.\\n\\nIt has to be, since the letters wobble strangely whenever you try to look at them. So you don't.\\n\\n[[Back|waiting room]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "waiting room",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 134,
+      "name": "j end",
+      "text": "The room is silent, but when you knock, the voice crops up, smooth even in its exhaustion.\\n\\n\u201cOh. You\u2019re back. Good. Just taking a break over here. The snakes are entrenching now, so there\u2019s not much I can do.\u201d\\n\\n[[Wish them luck and move on.|wish]]\\n<<if $mongoose>>[[Offer up the mongoose.|j mongoose]]<<endif>>",
+      "links": [
+        {
+          "text": "Wish them luck and move on.",
+          "destination": {
+            "name": "wish",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Offer up the mongoose.",
+          "destination": {
+            "name": "j mongoose",
+            "pid": 159
+          }
+        }
+      ]
+    },
+    {
+      "pid": 135,
+      "name": "tell magic",
+      "text": "You tell her what happened. Of the chasm eyes and gargoyles and glowing sigils in the street.\\n\\nShe nods and the eye sigil is hot against your skin. You wait to see her reaction.\\n\\n\u201cWill they at least pay for your lunch?\u201d\\n\\nShe didn\u2019t seem to hear it. Just like you didn\u2019t see the Hiring Manager\u2019s eyes. Just like the symbols meant nothing to you until now.\\n\\nYou say yes. [[At least there\u2019s that.|ch2]]",
+      "links": [
+        {
+          "text": "At least there\u2019s that.",
+          "destination": {
+            "name": "ch2",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 136,
+      "name": "wh right",
+      "text": "You step down into the corridor. Despite being awfully messy, there is nothing of interest in the walls. Only plain, poorly stacked boxes and a long way forward.\\n\\n<<if visited(\"wh mongoose\") OR $map>>[[Just rush to the mongoose.|wh mongoose]]<<endif>>\\n[[Walk forward|wh right 1]]",
+      "links": [
+        {
+          "text": "Just rush to the mongoose.",
+          "destination": {
+            "name": "wh mongoose",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Walk forward",
+          "destination": {
+            "name": "wh right 1",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 137,
+      "name": "wh center",
+      "text": "Tall stacks of boxes, all of varying sizes and styles, are piled on top of each other as far as the eye can see. Treasure chests perched atop cardboard boxes balanced atop empty birdcages. \\n\\n[[To your left|wh left]], thin hallways snake deeper into the warehouse, splitting quickly before dashing into the shadows.\\n\\n[[In front of you|wh help]], a shuttered booth built into the wall of stuff has a sign that reads \u2018Ring Bell for Assistance\u2019.\\n\\n[[To your right|wh right]], a wide sweeping corridor cuts through the debris, like someone has run a snowplow to make this road. It goes forward so far, the path seems to dissolve into a haze of darkness and dust motes.\\n\\n/%code for exit path check%/",
+      "links": [
+        {
+          "text": "To your left",
+          "destination": {
+            "name": "wh left",
+            "pid": 129
+          }
+        },
+        {
+          "text": "In front of you",
+          "destination": {
+            "name": "wh help",
+            "pid": 151
+          }
+        },
+        {
+          "text": "To your right",
+          "destination": {
+            "name": "wh right",
+            "pid": 136
+          }
+        }
+      ]
+    },
+    {
+      "pid": 138,
+      "name": "capture",
+      "text": "A scrap of paper floats its way towards you from above. You catch it, sigil burning on the page and in your mind. But the flames that like the paper don't turn it, nor your hand to ash. It keeps it trapped, tamed.\\n\\nThat's what this sigil does.<<set $capture to true>>\\n\\n[[Backtrack.|previous()]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 139,
+      "name": "end credits",
+      "text": "<h2>Thank you for playing <em>Arcane Intern (Unpaid)</em></h2>\\nLet me know what you thought on <a href=\"https://twitter.com/dastridly\" target=\"_blank\">twitter</a> or <a href=\"http://dastridly.tumblr.com/\" target=\"_blank\">tumblr</a>, and sign up to the <a href=\"http://eepurl.com/bjxE5b\" target=\"_blank\">Dastridly Deeds email list</a> for updates on any new projects. <br />You can also check out <a href=\"http://astriddalmady.com/\" target=\"_blank\">my website</a> for more games, podcasts and stories.\\n\\n<u>You've reached the following endings:</u>\\n\\n<<if $forgetend>>1. Oblivious<<else>>1. ????<<endif>>\\n<<if $magicend>>2. WiziLeaks<<else>>2. ????<<endif>>\\n<<if $soloend>>3. Yer a Wizard<<else>>3. ????<<endif>>\\n\\n<div class=\"small\">Hint: Choices that determine an ending are only found in your final to-do item, but you may have missed some information in the others.\\nSo try again. Explore. Help others. Deny Them. Make the Most of Magic.</div>\\n\\n<a href=\"javascript:history.go(0)\">Back to the Main Menu</a>\\n[[Credits]]",
+      "links": [
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 144
+          }
+        }
+      ]
+    },
+    {
+      "pid": 140,
+      "name": "What?",
+      "text": "\u201cI\u2019m sorry, let me speak a little clearer. What is your favorite color?\u201d\\n\\nOkay. So maybe this is some Google interview bullshit.\\n\\n[[Red|Colors]]\\n[[Blue|Colors]]\\n[[Green|Colors]]\\n[[Purple|Colors]]\\n[[Yellow|Colors]]\\n[[Black|Colors]]",
+      "links": [
+        {
+          "text": "Red",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Blue",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Green",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Purple",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Yellow",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Black",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 141,
+      "name": "pay",
+      "text": "She grins, fangs flashing in the dim cafe light. \u201cThe company handled it, but if you\u2019d like to pay more\u2026\u201d\\n\\nYou shake your head vehemently and step aside to wait for your order.\\n\\nA few minutes later, the dragon rumbles a name you vaguely recognize as yours and you pickup the tray of colorfully steaming beverages.\\n\\nThey\u2019ll get cold if you loiter, so you head back out, away from the \u2018Caffeine Hoard\u2019 and all its denizens.\\n\\nDespite the experience, you can\u2019t help but feel lonely [[once you return|return]].",
+      "links": [
+        {
+          "text": "once you return",
+          "destination": {
+            "name": "return",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 142,
+      "name": "otherworld nigel",
+      "text": "You\u2019ve seen people look at gum stuck to the bottom of their shoe with more regard than the way Nigel is looking at you now.\\n\\n\u201cThe Otherworld. Magical Dimension that exists in tandem to our own. Home of all magical creatures\u2014\u201d He stops and makes an exasperated noise.\\n\\n\u201cWhy am I bothering explaining this to you? Just go to the basement and get us all our coffee, and quickly.\u201d\\n\\n[[Leave the office.|coffee start]]",
+      "links": [
+        {
+          "text": "Leave the office.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 143,
+      "name": "back home",
+      "text": "Taylor, like you, sometimes brings her work home with her. Tonight she\u2019s sitting out in the dining room, sketchbooks spread open in front of her as she tries out a new technique on her favorite canvas: herself.\\n\\nYou don\u2019t disrupt her, as you head straight for your room and shut the door. The dull buzz of the needle acts as background noise as you crack open the tome and grin at the simple charms held within.\\n\\n[[Try one out.|try magic]]\\n[[Keep it theoretical.|theory]]",
+      "links": [
+        {
+          "text": "Try one out.",
+          "destination": {
+            "name": "try magic",
+            "pid": 92
+          }
+        },
+        {
+          "text": "Keep it theoretical.",
+          "destination": {
+            "name": "theory",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 144,
+      "name": "Credits",
+      "text": "Writing and Development by <a href=\"http://astriddalmady.com/\" target=\"_blank\">Astrid Dalmady</a>\\n\\nBackgrounds from <a href=\"http://www.transparenttextures.com/\" target=\"_blank\">Transparent Textures</a> and <a href=\"http://subtlepatterns.com/\">Subtle Patterns</a>\\n\\nScripts from <a href=\"http://www.glorioustrainwrecks.com/\" target=\"_blank\">Glorious Trainwrecks</a>\\n\\nMagic Circle from <a href=\"https://commons.wikimedia.org/wiki/Main_Page\">Wikimedia Commons</a>\\n\\nAnd a huge thank you to Gabi, Alex, Sierra, Erica, Cynthia, Sam, Melanie and Emily for play testing!\\n\\n[[Back|previous()]]",
+      "links": []
+    },
+    {
+      "pid": 145,
+      "name": "skull help",
+      "text": "\u201cMagical snakes?! Urgh, nasty creatures. Well the best thing for magical snakes is a magical mongoose. You could try to catch the one here, I guess.\u201d \\n\\nIt looks around and sighs.\\n\\n\u201cCan\u2019t remember the spell for that though. Should be out by the nets though. That\u2019s a left at the sigil graveyard.\u201d\\n\\n[[Ask where to find the things on your list.|skull list]]\\n[[Ask about the warehouse.|skull warehouse]]\\n[[Back to the warehouse.|wh center]]",
+      "links": [
+        {
+          "text": "Ask where to find the things on your list.",
+          "destination": {
+            "name": "skull list",
+            "pid": 122
+          }
+        },
+        {
+          "text": "Ask about the warehouse.",
+          "destination": {
+            "name": "skull warehouse",
+            "pid": 131
+          }
+        },
+        {
+          "text": "Back to the warehouse.",
+          "destination": {
+            "name": "wh center",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 146,
+      "name": "coffee start",
+      "text": "The hallway extends far down to the right, farther than the building would seem to allow from the outside. At least all of the doors are labeled, each with their own bronze plaque and arcane symbols.\\n\\n[[Alba DuBois - CEO|alba coffee]]\\n[[Olivia Singh - Head Editor|olivia coffee]]\\n[[Nigel Scott - Marketing Director|nigel coffee]]\\n[[Talib Hoth - Human and Non-Human Resources|talib coffee]]\\n[[&#128774; &#128803; &#128849; &#128841; - Janitor|janitor coffee]]\\n[[Basement|basement]]",
+      "links": [
+        {
+          "text": "Alba DuBois - CEO",
+          "destination": {
+            "name": "alba coffee",
+            "pid": 112
+          }
+        },
+        {
+          "text": "Olivia Singh - Head Editor",
+          "destination": {
+            "name": "olivia coffee",
+            "pid": 47
+          }
+        },
+        {
+          "text": "Nigel Scott - Marketing Director",
+          "destination": {
+            "name": "nigel coffee",
+            "pid": 126
+          }
+        },
+        {
+          "text": "Talib Hoth - Human and Non-Human Resources",
+          "destination": {
+            "name": "talib coffee",
+            "pid": 130
+          }
+        },
+        {
+          "text": "&#128774; &#128803; &#128849; &#128841; - Janitor",
+          "destination": {
+            "name": "janitor coffee",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Basement",
+          "destination": {
+            "name": "basement",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 147,
+      "name": "forest",
+      "text": "The boxes grow up and up, like massive tree trunks. You weave between the stacks, trying to make your way through what resembles a forest path.\\n\\nReally the only difference between this and a real forest is that this wood is quiet, artificial and dead.\\n\\n[[Forge ahead.|bell]]\\n[[Backtrack.|previous()]]\\n[[Back to the entrance.|wh end test]]",
+      "links": [
+        {
+          "text": "Forge ahead.",
+          "destination": {
+            "name": "bell",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Back to the entrance.",
+          "destination": {
+            "name": "wh end test",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 148,
+      "name": "doors",
+      "text": "<em>Alba DuBois - CEO\\nOlivia Singh - Head Editor\\nNigel Scott - Marketing Director\\nTalib Hoth - Human and Non-Human Resources\\n&#128774; &#128803; &#128849; &#128841; - Janitor</em>\\n\\nThe last two are the only doors with lights. You wonder why Talib\u2019s name was the one that slipped your mind when you don\u2019t even know how to start saying the Janitor\u2019s name.\\n\\n[[Back to your desk.|cubicle]]",
+      "links": [
+        {
+          "text": "Back to your desk.",
+          "destination": {
+            "name": "cubicle",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 149,
+      "name": "papers",
+      "text": "Even magical companies have finances, and their papers are just as esoteric. Still, some of the titles are interesting.\\n\\n<em>So You\u2019ve Married a Mage\\nSimple Hexes for Home Safety\\n50 Stupid Easy Spell Sigils</em>\\n\\nLots of alliteration, if nothing else.\\n\\n[[Back to your desk.|cubicle]]",
+      "links": [
+        {
+          "text": "Back to your desk.",
+          "destination": {
+            "name": "cubicle",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 150,
+      "name": "interview",
+      "text": "\u201cPunctual. That\u2019s a good sign.\u201d\\n\\nThe Hiring Manager has a voice like a chasm, and eyes like them too.  He sits behind a desk with no computer, and stands to shake your hand.\\n\\nNames are traded. Yours must not have been worth the trade, because his name slips your mind immediately.\\n\\n\u201cLet\u2019s not waste any time, and begin with the important questions.\u201d He steeples his fingers and frowns, considering the grave matter before you. You begin to sweat.\\n\\n\u201cWhat is your favorite color?\u201d\\n\\n[[\u201cWhat?\u201d|What?]]\\n[[Red|Colors]]\\n[[Blue|Colors]]\\n[[Green|Colors]]\\n[[Purple|Colors]]\\n[[Yellow|Colors]]\\n[[Black|Colors]]",
+      "links": [
+        {
+          "text": "\u201cWhat?\u201d",
+          "destination": {
+            "name": "What?",
+            "pid": 140
+          }
+        },
+        {
+          "text": "Red",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Blue",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Green",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Purple",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Yellow",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Black",
+          "destination": {
+            "name": "Colors",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 151,
+      "name": "wh help",
+      "text": "<<if $bell is true>>\\s\\nA flaming skull floats inside the once closed help booth. Despite not having any facial expressions, it still manages to look bored.\\n\\n[[Ask where to find the things on your list.|skull list]]\\n[[All about the warehouse.|skull warehouse]]\\n<<if $skullname is true>>[[Ask what you can do to help the Janitor.|skull help]]<<endif>>\\n[[Back to the warehouse.|wh center]]\\n<<else>>\\nThe booth is obviously closed, covered up by thick planks of wood. You look around for the bell you need to ring for assistance, but find nothing.\\n\\n<<if $skullname>>[[Call for help.|skull name]]<<endif>>\\n[[Back to the warehouse.|wh center]]<<endif>>",
+      "links": [
+        {
+          "text": "Ask where to find the things on your list.",
+          "destination": {
+            "name": "skull list",
+            "pid": 122
+          }
+        },
+        {
+          "text": "All about the warehouse.",
+          "destination": {
+            "name": "skull warehouse",
+            "pid": 131
+          }
+        },
+        {
+          "text": "Ask what you can do to help the Janitor.",
+          "destination": {
+            "name": "skull help",
+            "pid": 145
+          }
+        },
+        {
+          "text": "Back to the warehouse.",
+          "destination": {
+            "name": "wh center",
+            "pid": 137
+          }
+        },
+        {
+          "text": "Call for help.",
+          "destination": {
+            "name": "skull name",
+            "pid": 166
+          }
+        }
+      ]
+    },
+    {
+      "pid": 152,
+      "name": "new sight",
+      "text": "There is so much you couldn\u2019t see before. The slate grey tiles of the building outside now match the gargoyles perched upon the windows. Every so often, a house is marked with one of those symbols and where before you would forget them, now they blaze in your memory.\\n\\nYou stumble back to your shitty apartment, seeing less and less sigils as you go. Your roommate Taylor is already there.\\n\\n[[Tell her about magic.|tell magic]]\\n[[Don\u2019t tell her. It\u2019s nuts.|dont tell]]",
+      "links": [
+        {
+          "text": "Tell her about magic.",
+          "destination": {
+            "name": "tell magic",
+            "pid": 135
+          }
+        },
+        {
+          "text": "Don\u2019t tell her. It\u2019s nuts.",
+          "destination": {
+            "name": "dont tell",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 153,
+      "name": "askjob",
+      "text": "The listing didn\u2019t say much about what you\u2019d be doing, and the Hiring Manager manages to almost say even less.\\n\\n\u201cOh, you know. Getting Coffee, Restocking the Storage Room, Making copies. Normal intern things.\u201d\\n\\n[[Take the Job.|employ]]\\n[[That doesn\u2019t sound great.|references]]",
+      "links": [
+        {
+          "text": "Take the Job.",
+          "destination": {
+            "name": "employ",
+            "pid": 115
+          }
+        },
+        {
+          "text": "That doesn\u2019t sound great.",
+          "destination": {
+            "name": "references",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 154,
+      "name": "hallway",
+      "text": "All the offices have their doors tightly shut, but even then you can see sparks of light flicker through the cracks below [[a few of the doors|doors][$desk +=1]].\\n\\n[[Back to your desk.|cubicle]]",
+      "links": [
+        {
+          "text": "a few of the doors",
+          "destination": {
+            "name": "doors",
+            "pid": 148
+          }
+        },
+        {
+          "text": "Back to your desk.",
+          "destination": {
+            "name": "cubicle",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 155,
+      "name": "c examine",
+      "text": "Here\u2019s one of the books you read about earlier in those financial reports. <em>So You\u2019ve Married a Mage</em>. The copy that\u2019s toppled from the stack has had its cover ripped off.\\n\\nYou\u2019re busy now, but you\u2019ll take a closer look later.\\n\\n[[Back|copy room]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "copy room",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 156,
+      "name": "tattoo",
+      "text": "You wait, until the confusion has passed and you slide the copied page with the sigil to her and ask for the favor.\\n\\nShe doesn\u2019t hesitate. She\u2019s been eager to use you as a canvas ever since you moved in. Within moments, she\u2019s all set up, sterilized and ready.\\n\\n\u201cWhere do you want it?\u201d\\n\\n[[Upper arm.|tat2]]\\n[[Chest.|tat2]]\\n[[Wrist.|tat2]]\\n[[Leg.|tat2]]",
+      "links": [
+        {
+          "text": "Upper arm.",
+          "destination": {
+            "name": "tat2",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Chest.",
+          "destination": {
+            "name": "tat2",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Wrist.",
+          "destination": {
+            "name": "tat2",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Leg.",
+          "destination": {
+            "name": "tat2",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 157,
+      "name": "Secrets",
+      "text": "\u201cHonest answer, I admire that. Just one more question.\u201d\\n\\n[[\u201cDo you believe in magic?\u201d|magic]]",
+      "links": [
+        {
+          "text": "\u201cDo you believe in magic?\u201d",
+          "destination": {
+            "name": "magic",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 158,
+      "name": "front page css",
+      "text": "body {\\nbackground: url(\"arcaneimages/paper.png\"), url(\"arcaneimages/magic-circle.png\") no-repeat 90% 150%;\\n}",
+      "links": []
+    },
+    {
+      "pid": 159,
+      "name": "j mongoose",
+      "text": "There is a pause, and the door creaks open. You see a glimpse of something bone white, then darkness.\\n\\n\u201cI can\u2019t thank you enough! A magical mongoose is the best thing for magical snakes. Just let it slip in here.\u201d You release your furry necktie into the darkness, where it leaps gleefully, almost whooping as it bounds in.\\n\\nThe door clicks shut, but you can almost feel the Janitor smiling behind it. \u201cDon\u2019t let any of the others tell you anything, you\u2019re the best intern we\u2019ve ever had, and a fine mage if this capture sigil is any sign. Keep it up, and don\u2019t let them bully you away.\u201d\\n\\nIt shouldn\u2019t affect you much, but it does, the praising filling you with a warm glow. So much else has gone out of its way to make you feel unwelcome, but at least someone here can see that you belong.\\n\\n[[Go finish your deliveries.|delivery]]",
+      "links": [
+        {
+          "text": "Go finish your deliveries.",
+          "destination": {
+            "name": "delivery",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 160,
+      "name": "last day",
+      "text": "Nothing ever changes at work though. Endless numbers, endless slights from the staff. In the end, you aren\u2019t really surprised when HR calls you into the office, the receptionist looking at you with pity.\\n\\n\u201cIt\u2019s a shame,\u201d Mr. Hoth says, eyes shining like pits. \u201cBut I\u2019m afraid you\u2019re not quite the fit we were looking for here.\u201d\\n\\nYou swallow heavily, as the euphemism for \u2018You\u2019re Fired\u2019 hits just as hard as if it\u2019d just been said outright.\\n\\nBut that isn\u2019t the worst of it all.\\n\\n\u201cWe\u2019re going to need your viewing sigil.\u201d \\n\\nHe says, and holds his hand out to you.\\n\\n[[Don't give it back.|last keep]]\\n[[Give it back.|last give]]",
+      "links": [
+        {
+          "text": "Don't give it back.",
+          "destination": {
+            "name": "last keep",
+            "pid": 164
+          }
+        },
+        {
+          "text": "Give it back.",
+          "destination": {
+            "name": "last give",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 161,
+      "name": "StoryAuthor",
+      "text": "Astrid Dalmady",
+      "links": []
+    },
+    {
+      "pid": 162,
+      "name": "nothing",
+      "text": "No. There\u2019s nothing. Not anything more than the pilfered books and furtive studying you\u2019ve already done. \\n\\nTaylor grins sympathetically anyway. She pats your hand and says all the right things and [[you go to bed|last day]] still feeling frustrated and useless.",
+      "links": [
+        {
+          "text": "you go to bed",
+          "destination": {
+            "name": "last day",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 163,
+      "name": "c copy",
+      "text": "Making copies is arduous work, even with the machine. Magical sigils don\u2019t want to be copied. They want to sink into the paper, into whatever they\u2019re written on and not budge. So each copy takes several tries.\\n\\nThe light slides back and forth, trying to force a sigil to be tame.\\n\\n[[Keep copying.|c copy 2]]\\n[[Back|copy room]]",
+      "links": [
+        {
+          "text": "Keep copying.",
+          "destination": {
+            "name": "c copy 2",
+            "pid": 107
+          }
+        },
+        {
+          "text": "Back",
+          "destination": {
+            "name": "copy room",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 164,
+      "name": "last keep",
+      "text": "You try to keep it, clutching to the warm golden comfort but there is a weight to his words. It\u2019s as if they were spoken in whatever tongue the sigils comes from, instead of English. \\n\\n<<if $tattoo>>In the end, no matter what you might want, [[you drop it in his hand.|knowing]]<<else>>In the end, no matter what you might want, [[you drop it in his hand.|forget]]<<endif>>",
+      "links": [
+        {
+          "text": "you drop it in his hand.",
+          "destination": {
+            "name": "knowing",
+            "pid": 53
+          }
+        },
+        {
+          "text": "you drop it in his hand.",
+          "destination": {
+            "name": "forget",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 165,
+      "name": "recept smile",
+      "text": "\u201cOh, just you. It\u2019s always amusing to watch newbies deal with the arcane. But I\u2019m sure you\u2019ll get the hang of it. Mr. Hoth wouldn\u2019t have hired you otherwise.\u201d\\n\\n[[Ask about the different floors.|recept floors]]\\n[[Ask her for her coffee order.|recept coffee]]\\n[[Ask her where the Hiring Manager is.|recept manage]]\\n[[Back to the hallway.|coffee start]]",
+      "links": [
+        {
+          "text": "Ask about the different floors.",
+          "destination": {
+            "name": "recept floors",
+            "pid": 168
+          }
+        },
+        {
+          "text": "Ask her for her coffee order.",
+          "destination": {
+            "name": "recept coffee",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Ask her where the Hiring Manager is.",
+          "destination": {
+            "name": "recept manage",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Back to the hallway.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 166,
+      "name": "skull name",
+      "text": "It feels pretty awkward, but you call the name the Janitor gave you. It feels like an oil slick on your mouth, but the effects are instantaneous.\\n\\nThe wood in front of the booth bursts into wreathing purple flames, rising, and rising. You panic for a moment, thinking the flames might spread, but they vanish, turning to sparks in the air.\\n\\nWhere they began, a floating, flaming skull grins out from the darkness of the booth.\\n\\n\u201cYou rang?\u201d\\n\\n<<if $skullname AND (visited(\"skull help\") is false)>>[[Ask what you can do to help the Janitor.|skull help]]<<endif>>\\n[[Ask where to find the things on your list.|skull list]]\\n[[Ask about the warehouse.|skull warehouse]]\\n[[Back to the warehouse.|wh center]]",
+      "links": [
+        {
+          "text": "Ask what you can do to help the Janitor.",
+          "destination": {
+            "name": "skull help",
+            "pid": 145
+          }
+        },
+        {
+          "text": "Ask where to find the things on your list.",
+          "destination": {
+            "name": "skull list",
+            "pid": 122
+          }
+        },
+        {
+          "text": "Ask about the warehouse.",
+          "destination": {
+            "name": "skull warehouse",
+            "pid": 131
+          }
+        },
+        {
+          "text": "Back to the warehouse.",
+          "destination": {
+            "name": "wh center",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 167,
+      "name": "copies start",
+      "text": "With a yellowed paperback, and smuggled notes, you begin to fuel your magical education. You soundproof your room, rot proof the fridge. Sigils litter the apartment and even Taylor notices that something is different, even if the spell keeps her from knowing what.\\n\\nYou feel like a character in a book, like Rebecca Butler studying magic under cover of night in <em>Rebecca Butler and the Pillars of Storge</em>. \\n\\nBut every hero needs a villain, and every spell has a price.\\n\\nToday, the boredom of work is your punishment. While occasionally you\u2019ll get a meaningful task, it\u2019s still mostly struggling with Windows 95 and forcing sales numbers into the Excel spreadsheet. You welcome the reprieve when a memo, [[one of those paper birds|memo]], flutters onto your desk.",
+      "links": [
+        {
+          "text": "one of those paper birds",
+          "destination": {
+            "name": "memo",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 168,
+      "name": "recept floors",
+      "text": "\u201cOh, just some old construction work. Transport sigils on the door frames. It only works half the time now, but little Ms. CEO can\u2019t spare the magic to fix it.\u201d \\n\\nHer fingers curl on the edge of her book. You wisely don\u2019t press the issue.\\n\\n[[Ask her for her coffee order.|recept coffee]]\\n[[Ask her where the Hiring Manager is.|recept manage]]\\n[[Back to the hallway.|coffee start]]",
+      "links": [
+        {
+          "text": "Ask her for her coffee order.",
+          "destination": {
+            "name": "recept coffee",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Ask her where the Hiring Manager is.",
+          "destination": {
+            "name": "recept manage",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Back to the hallway.",
+          "destination": {
+            "name": "coffee start",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 169,
+      "name": "dragon",
+      "text": "The dragon looks exactly like how you imagined it to look like when you first read <em>Rebecca Butler and the Scales of Destiny </em>. Smoke rises from its nostrils, obscuring its glinting cat-like eyes.\\n\\nYou notice it sorting the beans with razor sharp claws and dropping them into a grinder. They have the same kind that you used during your short stint as a Starbucks employee.\\n\\n[[Back to the cafe.|cafe hoard]]",
+      "links": [
+        {
+          "text": "Back to the cafe.",
+          "destination": {
+            "name": "cafe hoard",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 170,
+      "name": "home door",
+      "text": "The apartment is silent as you arrive. You lock yourself in your room, and just read. They tried to take this from you, so you will learn it all.\\n\\nMagic will submit to you, spilling its secrets page by page.\\n\\nYou think back on being eleven and cracking open the very first Rebecca Butler book. Truth, you realize, tastes a thousand times better than fiction.<<remember $soloend to true>>\\n\\n[[The End|end credits]]",
+      "links": [
+        {
+          "text": "The End",
+          "destination": {
+            "name": "end credits",
+            "pid": 139
+          }
+        }
+      ]
+    },
+    {
+      "pid": 171,
+      "name": "hag excuse",
+      "text": "You avert your gaze and she cackles. It doesn\u2019t sound like any laugh you\u2019ve ever heard before, even in the movies.\\n\\n[[Back to the cafe.|cafe hoard]]",
+      "links": [
+        {
+          "text": "Back to the cafe.",
+          "destination": {
+            "name": "cafe hoard",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 172,
+      "name": "order",
+      "text": "\u201cOh, you must be the new intern at the Praecantatio. It was about time they got a fresh one.\u201d \\n\\nYou just nod as she puts in your order, and nods you aside.\\n\\n[[Should you pay now?|pay]]\\n[[Well if she\u2019s not gonna mention it\u2026|not pay]]",
+      "links": [
+        {
+          "text": "Should you pay now?",
+          "destination": {
+            "name": "pay",
+            "pid": 141
+          }
+        },
+        {
+          "text": "Well if she\u2019s not gonna mention it\u2026",
+          "destination": {
+            "name": "not pay",
+            "pid": 69
+          }
+        }
+      ]
+    }
+  ]
+}

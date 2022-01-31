@@ -1,0 +1,997 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Start",
+      "text": "//Why? Why did it have to be like this?//\n//I was happy. I was sincerely happy.//\n//How did it turn out like this?//\n//Why now?//\nLying down in fetus position, glossy tears drip down on the bed. Clutching your chest, you feel like it is the end of the world. Your heart is beating so fast that it is as if it is going to burst out of your chest. You feel bags under your eyes from the lack of sleep and boogers forming at the corners from all of the crying. You feel the puffiness around your once doe-eyed eyes and snot coming out of your nose. You feel a migraine coming, but it is impossible to sleep it off. All you can do is cry yourself to sleep in the dark room alone.\n\n[[Continue|after_First]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "after_First",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "after_First",
+      "text": "//Knock knock//\n\"...\"\n//Knock knock//\n\"...\"\n\"Tammi, I know you're in there\" Kaylee, your best friend and former roommate from your freshman year of college calmly said.\n\"...\"\n//Creak//\nYou hear the door open and footsteps coming in. Normally, the sound of a creaky door open scares the living life out of you, but today, you are like a lifeless human being.\n\"Tammi, it's 3 A.M. I know you've been crying.\"\n//Sniff//\n\"I'm sorry,\" you barely whisper while sniffling. \"I'll try to be quieter.\"\n\"It's not that. It's just I'm worried about you.\"\n[[Continue|after_First1]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "after_First1",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "after_First1",
+      "text": "\"...\"\n\"Tammi, you're a complete mess. It's summer vacation, and we just finished the first year of college. You just finished taking summer classes. This should be a time for you to relax,\" Kaylee soothingly tried to calm you down. You know she wasn't lecturing you. In fact, you knew she was trying to cheer you up, but it was not working.\n\"I know,\" you mumbled between hiccups. \"It's just that I love him.\" Although you cannot see her face, you can imagine Kaylee's eyes either rolling or widening. You knew she wasn't too fond of your boyfriend since he visited the room too many times to count, but right now you are focusing on your feelings.\n\"I know it hasn't been a year yet,\" you continue, \"but he's my first boyfriend and guy friend. It hurts.\" Your voice gets louder and deeper, and you are breathing in too hard that you can feel the air drowning your throat.\nAs you begin to shake, you feel smooth, large hands rubbing your back. You want to let it all out, but you did not want to wake Kaylee's father up, so you cover your mouth with your hands until you calmed down a bit. You felt guilty that your new best friend had to comfort you despite it being super early in the morning so you faked a smile and sent her away.\n[[Continue|after_First2]]\n",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "after_First2",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "after_First2",
+      "text": "//I wish I can take a walk so I wouldn't disturb anyone.//\nYou have the urge to go on an early morning walk, but you are in a foreign country staying at Kaylee's father's house. Plus, you do not know the language, and you are terrible at directions. All you can do is try to fall asleep and not think about //him//.\n//I miss him, yet I feel hurt on what he did to me.//\nEvery time you try to close your eyes, you think of //him// and end up in even more tears. The feeling is killing you, and you can't help it. This is officially the worst summer ever.\nYou want to contact him since even though it is 3 A.M. where you are now, it is 6P.M. where he is back in America. You have enough data to Facebook message him or use the video chat feature in the app, but you don't have the strength to write a simple message.\n//I want to see you.//\n[[Continue|after_First3]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "after_First3",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "after_First3",
+      "text": "Switching sides, you cannot find a nice position to fall asleep. You were always known to move too much in your sleep whenever you are at a sleepover at your cousins, but this was something else. \n//Why can't I worry about something else, like whether or not I even passed any of the classes I took over summer?//\n//I feel like a depressed teenager, but worse.//\nYou faintly recall the time when you were depressed due to bullying in high school, but compared to now, bullying meant nothing. This is your first relationship, and you were happy until now.\nClosing, your eyes once more, you try to see if thinking about the good times will ease the pain. \n//I remember how we met, though it wasn't that interesting.//\n\n[[Flashback|Flashback1]]\n[[No, it's too painful|after_First4]]",
+      "links": [
+        {
+          "text": "Flashback",
+          "destination": {
+            "name": "Flashback1",
+            "pid": 6
+          }
+        },
+        {
+          "text": "No, it's too painful",
+          "destination": {
+            "name": "after_First4",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Flashback1",
+      "text": "''Flashback''\nYou came back to your dorm all sweaty with your ponytail barely in tact with your roommate Kaylee from ballroom dance practice. Both of you have not tried ballroom dancing before, but after tonight, you both don't believe you will continue with it. \nWhen you came back, you saw an extra person in the room. Your other friend Hanna invited her high school friend from another college to visit, but that wasn't the extra person. \nYou see a dorky-looking man with a loose purple T-shirt with from a hack-a-thon. He was on his computer exchanging friend IDs with your other friend Camilla. Deciding that you want to make friends during your first year of college, you push away any remaining shyness and sit down with the group to introduce yourself.\n[[Continue|after_Flashback1]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "after_Flashback1",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "after_First4",
+      "text": "//Ah, I shouldn't think about it. I might cry even more, if that's possible. I should just go on my phone.//\n\n[[Continue|Same_room_after_toilet_pt3]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Same_room_after_toilet_pt3",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "after_Flashback1",
+      "text": "\"Hi, my name is Tammi. What's your name?\" You bring out your hand to shake like you have done with every new student you have met.\n\"Hey, I'm James.\" He shook your hand in response and you notice that his hands are large, but then again, you are petite for your age, so it might be that every hand except a child's will seem big to you.\n\"What year are you in?\" You learned that asking questions will keep the conversation flowing. At least, that's what you observed in the first week of college.\n\"First. You?\"\n\"Same! What classes are you taking?\"\n\"Single-variable Calculus, Accelerated Programming, History of the Pacific Islanders, and Accelerated Writing.\"\n\"Oh! I'm in Accelerated Writing, too.\"\n\"Yeah, but he has it in a different time,\" Camilla, your cosplaying friend who is also in the same writing class as you.\nAfter talking a bit more, you find out that he is Hanna's visiting friend's high school friend.\n//So he's Cooper's friend. Cooper is way cuter.//\n[[Continue|after_Flashback1-Reality]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "after_Flashback1-Reality",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "after_Flashback1-Reality",
+      "text": "Thinking back on the memory of first meeting, you are able to let out a tiny chuckle because you thought that Cooper was way more interesting and good-looking. \nYou remember that since he lived in the same building as you, he visited so many times.\n//I didn't think he'd still visit even after Cooper had to go back to his college.//\nYour give out a small smile because you remember the feeling of surprise whenever he knocked on your door. Ever since you and your two roommates got in trouble with the supervisors of the building due to being too loud, the sound of the door knocking scared every one. \n//I can't believe we got written up. I have never even gotten a detention in my life!//\n[[Continue|after_Flashback1-Reality1]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "after_Flashback1-Reality1",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "after_Flashback1-Reality1",
+      "text": "Attempting to switch sides once more, you are now facing the door. The lights are still off, but the light of the moon illuminates inside the room giving the faint figure of the door in front of you. You notice that the door wasn't shut all the way because you can see a border of yellow light illuminating the door's edge. \n//Kaylee probably forgot to close it all the way.//\nYou want to close it to be in complete darkness again, but you feel powerless. You feel useless, as if some evil demon extracted all of the living soul of your body.\n\n[[Keep staring at the door|Door]]\n[[Switch positions|switch_pos]]\n",
+      "links": [
+        {
+          "text": "Keep staring at the door",
+          "destination": {
+            "name": "Door",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Switch positions",
+          "destination": {
+            "name": "switch_pos",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Door",
+      "text": "\"Graaghh!\" you softly yell to yourself while attempting to get up. After several attempts, you finally are able to sit upright on your knees. \n//Hah, hah, hah//\nBreathing heavily, your chest starts to hurt once more. Before you get up, you pause, waiting for your heartbeat to slow down. Your vision is still blurry, and the puffiness has obscured a part of your vision. At least you can point out the light from the hallway. You blink and remove your long strands of hair out of your face. You grab your weight and scootch towards the end of the cold bed. You are an inch away from the edge of the bed and look down at the dark floor. When you first arrived at the house, you were nervous because you found so many lizards and cockroaches roaming around. Ever since you found a cockroach in the bathroom sink while getting ready to brush your teeth, you have been cautious. Staring at the floor, you dangle your feet getting ready to finally get up.\n[[Continue|closed_Door]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "closed_Door",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "switch_pos",
+      "text": "You switch positions, but after two minutes, you get frustrated.\n\n[[Continue|Door]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Door",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "closed_Door",
+      "text": "Gulping in air and sniffing in one big sniffle, you slowly place your feet on the cold wooden floor. You feel the tingling sensation taking over the soles of your feet. Standing up straight, you feel your legs wobbling and try to balance yourself but no use. You fall towards the edge of the bed by quickly twisting your body away from the door. Sucking in your breath once more, you bend your arms as if you are doing a push-up and wilth all the force left in your body, you spring up, only to lose your balance once again. Thankfully, you catch your self before hitting the ground and hold in your breath. You can feel your heartbeat increasing once again but you try to ignore it in order to keep going. You bend down to take a breather and close your eyes for a second to calm yourself. You lift your face to see the yellow light shining on the door knob.\nYou're almost there.\n[[Continue|closed_Door_Part2]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "closed_Door_Part2",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "closed_Door_Part2",
+      "text": "As you drag your feet against the cold floor, you see the light getting taking up more of your vision. \n//Almost there//\nOnce you are at arms length with the door, you stare at the knob. Your initial goal was to just close the door all the way, but now you are having second thoughts.\n//Should I sleep in the other room with Kaylee so she won't worry or should I continue to sleep here?//\nYou were supposed to be sleeping in the same room with your best friend, but when you found out that no one is using the room you are in right now, you have been using it to cry and talk to your boyfriend whenever he contacts you.\n[[Sleep in the other room|other_Room]]\n[[Just close the door|stay_In_the_Room]]",
+      "links": [
+        {
+          "text": "Sleep in the other room",
+          "destination": {
+            "name": "other_Room",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Just close the door",
+          "destination": {
+            "name": "stay_In_the_Room",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "other_Room",
+      "text": "//Maybe being in the same room as Kaylee will make me want to try even harder to sleep.//\nYou remember how your parents always taught you that crying in front of people was a no-no, so you have been trying to control crying in public ever since.\nYou softly tip-toe to the door to Kaylee's room like a ninja and open the door.\n//At least the door isn't closed all the way.//\nYou open the door as little as you can to slip in and quickly close the door to remove the light. You cannot see anything and realize that you left your phone in the other room.\n//Should I quickly grab it?//\n[[No. You might end up making more noise than you should.|Stay_In_Kaylee_Room]]\n\n[[Yes. You might end up crashing into something when going to the bed and wake up Kaylee.|Go_Bck_Get_Phone]]",
+      "links": [
+        {
+          "text": "No. You might end up making more noise than you should.",
+          "destination": {
+            "name": "Stay_In_Kaylee_Room",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Yes. You might end up crashing into something when going to the bed and wake up Kaylee.",
+          "destination": {
+            "name": "Go_Bck_Get_Phone",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "stay_In_the_Room",
+      "text": "You did not want to risk having another crying fit and waking up Kaylee. When you first slept in the same room as your roommates, you remember that she did not handle mornings well.\nYou silently and quickly shut the door before you change your mind. You go back to the bed with the last remaining strength remaining and face the ceiling. Your arm is pressed down on your forehead to massage your painful migraine, and you notice your forehead is burning.\n//I hope I don't have a fever.//\nYou feel your eyes tiring out from all the work it took to shut the door.\n//That's good. I might be able to sleep tonight.//\nYou close your eyes, taking in the entire darkness while gripping on your cell phone.\n[[Continue|Flashback_First_Anime]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_First_Anime",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Credits",
+      "text": "\t\t\t\t\t\t\t\t''Back Then''\n\t\t\t\t\t\t\t By Janelynn Camingue\n\t\t\t\t\t\t\t Created on 3/25/2017\n\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t \n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n[[Start|Start]]",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Flashback_Num_2",
+      "text": "''Flashback''\n\"Guys, I can't believe we actually woke up at 6 A.M. just to get breakfast,\" you sleepily remark your roommates as you unlock the door to get back in your room.\n\"Hey, it was free. Plus, they were fresh unlike in the dining hall,\" Kaylee replied, also in a tired voice.\n\"I just can't believe //you// got up,\" Mandy, your other roommate, surprisingly said to Kaylee.\n\"Yeah, that's true,\" you slightly teased your best friend with a sloppy-looking smug look on your face.\n\"Shut up\" Kaylee jokingly replied as she climbed the bunk bed's ladder to go back to her bed. \"I'm gonna go back to sleep.\"\n\"Same.\"\n\"You guys are weak,\" Mandy laughingly said.\n[[Continue|Flashback_Num_2-1]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_Num_2-1",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Flashback_Num_2-1",
+      "text": "Facing the wall slowly waking up from your nap, you can hear two familiar voices in the room. One male and one female. \n//James and Camilla? What are they doing here?//\nYou are too lazy to flip sides, so you just continue to listen.\n\n\"So then he grabbed me and we just started making out and-\" Camilla was cut off by another female voice, presumably Kaylee.\n\"Camilla!\"\n\"Shhhh! Tammi is sleeping.\" Camilla whispered.\n//Alright, I guess that's my queue?// \n\"No, I'm awake now.\" You turn over facing them and sit up, covering your body with the blanket to keep its warmth.\n//I hope I didn't do anything while I was sleeping.//\n\"Good morning!\" everyone cheers to you. \n\"Morning. I didn't do anything weird while I was sleeping, right.\" The room was silent.\n\"Guys!\" Your face becomes hotter than the warmth that the blanket gave you as you hide your face in your pillow.\n[[Continue|Flashback_Num_2-2]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_Num_2-2",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Flashback_First_Anime",
+      "text": "''Flashback''\n\"Oh, where are we sitting?\" you ask Kaylee as you follow her to eat lunch in the dining hall.\n\"Cooper and James are here, so we're sitting with them.\"\n\"Mmkay.\"\nWhen you find the table, you see Hanna sitting with the two men.\n//Oh, right. Kaylee and Hanna have a club meeting right after lunch. Will I be okay by myself with these two?//\nYou are used to hanging out with females since all of your friends in high school were females. \n//Yeah, you'll be okay. Don't worry.//\nYou wave off any worries and continue to smile and greet Cooper and James as you sit down to eat your pasta. \nYou cautiously eat your pasta since you are usually messy whenever you eat food with sauce. \n//I don't want to embarrass myself.//\nYou silently eat your food as you mind your own business as Kaylee and Hanna quickly chow down their food to go to their meeting.\n[[Continue|Flashback_First_Anime1]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_First_Anime1",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Flashback_First_Anime1",
+      "text": "\"See ya!\" Hanna and Kaylee scooted their chairs in to bus their dishes to leave for the meeting.\n//Now what? Should I say something?//\nYou start to listen to the conversation that Cooper and James are having.\n\"So what do you want to do today?\" James asked Cooper as if he was a tour guide. \n\"Do you know any trails?\"\n\"Trails? Yeah. Never took you as the nature type, though\"\n\"Hey, I like exploring, thank you very much.\"\n\"Other than being cooped up in a room on the computer?\"\n\"Whatever, James. So do you know any trails or not?\"\n\"Sorry, sorry,\" James held up his hands in defense. \"Yeah, I know some trails. We can go after lunch.\" Turning towards you, he asked, \"Do you want to go see some trails?\"\n\"Sure!\" You smile for the invite.\n[[Continue|Flashback_First_Anime2]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_First_Anime2",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Flashback_First_Anime2",
+      "text": "//Wow! I've never been through this path before.//\nYou take in every nook and cranny as you swivel your head around your surroundings. The bright summer weather makes the scenery look even ten times better. You look up to see trees as tall as skyscrapers. It is silent except the sound of shoes walking carefully on the stone-carved stairs.\n//Oh, this will definitely be scary to cross when it's raining.//\nYou look behind you to find Cooper taking numerous photos of the beautiful trees and forest. \nLooking ahead, you see James slightly in front of you. You notice how tall he is compared to your small stature as you have to look up just to check out his hair, which just adds to his height since it sticks up.\nAfter admiring James for ten seconds, you look back again to check up on the guest.\n//Still taking pictures? Haha. It's like he's never been outside before//\nAfter walking through the forest with a long moment of silence, you wonder whether you should strike up a conversation with James since you live in the same dorm house and have the same major.\n[[Continue|Flashback_First_Anime3]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_First_Anime3",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Flashback_First_Anime3",
+      "text": "You stare intently at his back to think of a topic to talk about.\n//Should I ask the basic questions like why he decided to major in Computer Science? Or should I go for something like how did he find this trail? Nah, that'll make me seem like I don't go out a lot.//\nNot being able to come up with anything, you decide to stay quiet and notice a familiar building.\n\"Oh, this is our dorm!\" you surprisingly remark as you come out of the forest.\n\"Yeah, it's a pretty nice path if you want to avoid the cars when coming back from the dining hall.\" James neutrally replied.\n\"I see.\"\nOnce you and the two guys reached the door, you let James unlock the door to go to your room since yours was bigger and had more room.\n[[Continue|Flashback_First_Anime_END]]\n",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_First_Anime_END",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Flashback_First_Anime_END",
+      "text": "As you finish remembering that small memory, you slowly stir. Too scared that if you open your eyes all the way that you might not be able to sleep again, you open them just a little to see the time. The room is still dark, but looking outside the window made it seem like maybe one or two hours have passed. The country you are in is always hot, so even when it is early in the morning, there is a significant amount of light. \nReaching for your phone, you press the power button with your thumb. Your hand is too weak, so you have to press the phone against your bottom hip as support.\nOnce you succeeded in turning the screen on, you look down to see a burst of blue light.\n//Ah, so bright.//\n\"It's only 4? Did I really only sleep for an hour?\"\nYou flip your phone upside down to hide the bright light sigh.\n//I really want to sleep.//\n[[Continue|After_Second_flashback]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "After_Second_flashback",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "After_Second_flashback",
+      "text": "As you try to go back to sleep, you have the sudden urge to use the bathroom. \n//Really?//\nAfter all the strength it took you just to close the door, you feel like it is nearly impossible to walk all the way down the hall and down the stairs to reach the toilet.\n//Not that I can help it, I guess.//\nYou are a little faster in getting up and opening the door this time since you actually have to use the toilet and relieve yourself, but once you reach the bathroom, you are out of breathe. You lean on the side of the bathroom door before turning on the light and proceed to use the bathroom.\n[[Continue|After_Second_Flashback_part2]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "After_Second_Flashback_part2",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "After_Second_Flashback_part2",
+      "text": "After you finish your business, you stay on the toilet staring into space. \nBefore completely drifting off, you shake your head violently to wake yourself up.\n//I should head back to the room.//\n\n//Should I head back to bed in Kaylee's room, or should I still try to sleep in the same room?//\n\n[[Head back to Kaylee's room. Maybe you'll get enough sleep?|Kaylee_room_after_toilet]]\n[[Head back to the same room. I don't want to disturb her.|Same_room_after_toilet]]\n",
+      "links": [
+        {
+          "text": "Head back to Kaylee's room. Maybe you'll get enough sleep?",
+          "destination": {
+            "name": "Kaylee_room_after_toilet",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Head back to the same room. I don't want to disturb her.",
+          "destination": {
+            "name": "Same_room_after_toilet",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Kaylee_room_after_toilet",
+      "text": "//Having someone sleeping next to me might help a bit.// Immediately, you miss your loyal, adorable dog who loves to sleep right next to you on the bed.\nYou sneak into the room trying not to wake Kaylee up and swifty make your way to the bed.\n\n[[Continue|Flashback_Num_2]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_Num_2",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Same_room_after_toilet",
+      "text": "//I don't want to disturb her. I should just stay in the other room.//\nYou wash your hands with the cold water and wipe them on your loose shirt. Still pretty tired, you drag your feet on the freezing wooden floor back to the room. Before you open the door to go back to the room, you notice the mirror Kaylee begged her father to buy yesterday. It was hanging in the middle of the room you are staying in and the room Kaylee is sleeping in. \n//Wow. I look like a hot mess.//\nYou bring your right hand up and gently touch the mounds of puffiness that all of your crying caused. \n//Ouch! It stings a little.//\nYou leave the mound surrounding the bottom of your eye alone and droop your hand you your cheek and bring it down to massage your face.\n//My entire face hurts. Whatever.//\nYou try to look at your face profile using the mirror, and your slim face lost its shape and has turned to a plumpy tomato. \n//I hope this goes away in the morning.//\n[[Continue|Same_room_after_toilet_pt2]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Same_room_after_toilet_pt2",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Same_room_after_toilet_pt2",
+      "text": "You continue to head back to the room and bury your face in the shivering sheets.\n//I have three hours to sleep. I guess I can catch up on sleep in the car.//\nYou try to go to sleep again, but after using the toilet, you are more awake than before.\n//I guess I can go on the internet.//\nAt this point, you don't care about your data limit.\n//I'll just purchase another data card and reload it.//\n[[Continue|Same_room_after_toilet_pt3]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Same_room_after_toilet_pt3",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Same_room_after_toilet_pt3",
+      "text": "You turn on your phone and switch your sleeping position to the side facing the outlet since your USB chord is short.\n//What should I look up?//\n[[Facebook|Facebook_App]]\n[[One of your dating sims applications|Dating_Sim]]\n[[Check your summer grades|Summer_Grades]]\n\n\n",
+      "links": [
+        {
+          "text": "Facebook",
+          "destination": {
+            "name": "Facebook_App",
+            "pid": 31
+          }
+        },
+        {
+          "text": "One of your dating sims applications",
+          "destination": {
+            "name": "Dating_Sim",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Check your summer grades",
+          "destination": {
+            "name": "Summer_Grades",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Facebook_App",
+      "text": "\"I wonder what's been going on at home?\" You were curious and opened the Facebook application. Scrolling through the newsfeed, you find uninteresting posts. All of a sudden, you remember that you need to post the recent pictures you took and add them to your vacation album. You check all the photos you want to upload.\n\"120 pictures. Not bad.\"\nAs you wait for the photos to finish uploading, you scroll even further down the newsfeed to see if anything has been going on with you-know-who.\n\"Nothing.\"\n\n[[Continue|AfterFacebookScrolling]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "AfterFacebookScrolling",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Dating_Sim",
+      "text": "\"Ah, I haven't caught up with my stories. I bought so many at the sale last month, but I haven't even touched any.\"\nYou used to be obsessed with dating sims in high school, but your obsession died down ever since you got your first boyfriend. \"I remember always envying the main character for experiencing love and some hot shot falling for her.\"\nYou start to reminisce about those days, but your mood starts to sour quickly.\n\"All of the content in these games are fictional, that I can say for sure.\"\nAs your words turn bitter, you shake your head and try to think happy thoughts.\n\"So who should I romance this time? Let's see...\" You browse all of the stories that you have purchased and not played yet. \"Okay, I have a prince, math teacher, and a journalist.\"\n\n[[Continue|DatingSimRoute]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "DatingSimRoute",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Summer_Grades",
+      "text": "//Are summer grades out yet?// You go online to check your grades, but none of them are out yet.\n//I mean, it's not like I'm worried if I failed. Well, maybe one class, but that's it.//\nYou check to see when grades are supposed to be out by.\n//Oh, in four days. Seems so far away.//\nYou scoot your phone under your pillow and try to sleep after geting that out of the way. Before you know it, you are knocked out.\n\n[[Continue|After_Flashback_Confession]]\n",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "After_Flashback_Confession",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Stay_In_Kaylee_Room",
+      "text": "Double-click this passage to edit it.",
+      "links": []
+    },
+    {
+      "pid": 35,
+      "name": "Go_Bck_Get_Phone",
+      "text": "//I should get my phone so I can see better.//\nYou walk back to the previous room and notice a green light blinking in the room of darkness.\n//Uh-oh.//\nYou know that familiar color of notification.\n//It's him.//\n[[Check your phone.|Check_phone_for_message]]\n[[On second thought, you don't need your phone.|back_to_kayleeRoom]]",
+      "links": [
+        {
+          "text": "Check your phone.",
+          "destination": {
+            "name": "Check_phone_for_message",
+            "pid": 36
+          }
+        },
+        {
+          "text": "On second thought, you don't need your phone.",
+          "destination": {
+            "name": "back_to_kayleeRoom",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "Check_phone_for_message",
+      "text": "//If I don't check it, this will bug me the rest of the night. Or should I say morning? Whatever.//\nYou reach for your phone at the end of the bed and press the power button to get to the lockscreen. \nAlthough you are only on the lockscreen, you can see the short message on the top of the screen.\n''You awake?''\n\nYou feel a mix of emotions as you try to take in the two words. You feel a mix of butterflies and a hole growing in your heart.\n//Should I reply?//\n\n[[Reply. You might not get another chance until tomorrow morning.|Reply]]\n[[Don't reply. You might end up not sleeping at all.|Don't_reply]]",
+      "links": [
+        {
+          "text": "Reply. You might not get another chance until tomorrow morning.",
+          "destination": {
+            "name": "Reply",
+            "pid": 38
+          }
+        },
+        {
+          "text": "Don't reply. You might end up not sleeping at all.",
+          "destination": {
+            "name": "Don't_reply",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "back_to_kayleeRoom",
+      "text": "You see Kaylee still sleeping as you go back on the bed. Gently, you put the covers over your head. Although it is extremely hot where you are vacationing, you have a feeling that it will get cold at night. \nYou close your eyes tight and try to fall asleep. After all of the energy you used up, you find yourself accomplishing the task.\n\n[[Continue|Flashback_Num_2]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_Num_2",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Reply",
+      "text": "//I should keep this short.//\n''Yes.'' you reply. You notice his icon fell next to you message meaning that it ha been read. After a second or two, you see the three dots, indicating that he is typing something.\nYour heart races, wondering what he is typing.\n//No, no, no. Don't get excited.//\nYou scold your feelings as you wait for him to reply.\n''Do you want to video chat?'' he finally typed.\n[[Let's stick to messaging.|Stick-to-messaging]]\n[[Sure.|Answer_Phone]]",
+      "links": [
+        {
+          "text": "Let's stick to messaging.",
+          "destination": {
+            "name": "Stick-to-messaging",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Sure.",
+          "destination": {
+            "name": "Answer_Phone",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Don't_reply",
+      "text": "//No! No, don't do it, Tammi.// You can feel the temptation overcoming you, but you just can't go through with it. For your own good.\n\n//I should just go back. Not like I need my phone, anyway.// You were about to leave again, but you realize you still need your phone for checking the time so you can get ready on time in the morning since you are the one who takes the longest to get ready.\n\n//Darn it//\n\n[[Continue|Darn_It]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Darn_It",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Stick-to-messaging",
+      "text": "''No. Let's stick to messaging.'' you coldly reply.\n''Ok.''\nYou wait for him to type something. \n''How's the trip?''\n//Should I stick with one-worded answers to show my uneasiness? Nah, that sounds too weird.//\n''It's fine. How's work?''\nHe finally got hired at our school as a waiter for special events, so he moved in back to school early.\n''Pretty good. Nice people. The campus is so quiet for once, though.''\n//Nice people?// Your face twists into a scowl.\n//Like who? As in ''females?''//\nYour eyebrows burrow in jealousy and confusion. Maybe even some anger. \n''Oh. I see. That's good.'' you manage to type in a simple response.\n//This is eating me up. Why am I so jealous?//\nYou were never jealous before until //that// happened. What he did to you destroyed your self of steem so much that all you can feel is jealousy and insecurity.\n[[Continue|Wait_for_message]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Wait_for_message",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Wait_for_message",
+      "text": "''I'm trying to make more guy friends.''\n//How did he know?// You were slightly surprised that he had a feeling you were feeling uncomfortable with his message.\n''I guess you're still a mindreader, huh?''\n''No. i just had a feeling. You know I'm not a mindreader.''\n''Well, you always seem like you are one.''\n''It's just that you're easy to read.''\n//I really want to sass him right now.//\nHow should you respond?\n\n[[''If I'm so easy to read, how is it that I'm in this mess in the first place?''|Sass1]]\n\n[[''So what do you think I'm feeling now, then?''|Sass2]]",
+      "links": [
+        {
+          "text": "''If I'm so easy to read, how is it that I'm in this mess in the first place?''",
+          "destination": {
+            "name": "Sass1",
+            "pid": 42
+          }
+        },
+        {
+          "text": "''So what do you think I'm feeling now, then?''",
+          "destination": {
+            "name": "Sass2",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Sass1",
+      "text": "''If I'm so easy to read, how is it that I'm in this mess in the first place?''\n//Ah, should I really have sent him that?//\nYou are second-guessing your choice in words, thinking that it may be a bit severe. \n//I should probably take it back.// As you were typing in an apology, he beat you to the messaging.\n''I'm sorry. :(''\nYou feel tears starting to erupt, skewing your vision of the messaging screen. \n//When will the pain disappear?//\nAll of a sudden, your phone vibrates. You don't need to look at the screen to see what the commotion is. \n//He really is a nice guy.//\n\n[[Continue|Answer_Phone]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Answer_Phone",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Sass2",
+      "text": "''So what do you think I'm feeling now, then?''\nImmediately, you regret the message. \n//Okay, maybe that was a bit harsh.//\nYou are about to type a different message when you receive another message.\n''I know, and I'm sorry.''\n\"Hah. He says sorry too much.\"\n''You say sorry a lot, you know that?'' You irritatingly reply.\n''I know. It's just, I don't know what else to say.'' Your eyebrows furrow at the response.\n//What? What did he just reply to me?// You start to get angry until the phone rings.\n\n[[Continue|Answer_Phone]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Answer_Phone",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Answer_Phone",
+      "text": "You find your index finger reaching for the green button on the screen to accept the call. You cannot find yourself stopping your actions.\n//Beep//\n\"Hello?\" You hear a manly voice and see the familiar black-rimmed glasses staring at you. You don't say anything and just stare. He waves his hands in front of what you suspect is his laptop. You blink once and respond in a faint and cracked voice.\n\"Hey.\"\n\"How is it there?\" he gives a small smile.\n\"Hot. Hot and humid.\"\n\"Haha, I see. Having fun?\"\n//Fun is the last thing I'm having right now.//\n\"...\"\nYou are too preoccupied in your thoughts to notice that his smile faded away.\n\"Hey, remember when I first confessed to you?\"\n\n[[Continue|Flashback3]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback3",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Flashback3",
+      "text": "''Flashback''\n\"See you guys over break!\" Kaylee, the last roommate left, called over her shoulder before the door shut closed as you and James were finishing up an anime he wanted to show you after finals.\n\"So, now what?\" James asked you after finishing the episode. Both of your roommates had left for winter break after their finals, and it was just the both of you in a large dorm room at night. He paused the video since it was just the ending credits that was playing and looked at you in the eyes.\nYou glanced at him and evaded his eyes and suddenly the floor interested you.\n\"So, now that we're alone,\" you started, \"who do you like?\" \n//Omigosh, I cannot believe I just asked that!// Apparently, everyone knew who he liked except you, and you absolutely cannot get it out of your head. You remember when you, James, and Kaylee were going through Facebook profiles of Cooper's old crushes and then when Kaylee asked if James liked anyone, he was smiling and quiet, which caused the whole fiasco of you trying to find out who the person he liked was. You asked everyone, and he dropped subtle hints, but no one would tell you and you could not figure it out.\n[[Continue|Flashback-pt1]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback-pt1",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Flashback-pt1",
+      "text": "After the random question, you look over your shoulder only to see his pale face turn cherry, and he is wearing a bashful smile.\n\"Uh...\" He used his large hand to cover his mouth in embarrassment.\n\"Is she pretty? Oh, of course she is since you like her.\" You began to continue your talk from a few days ago. \"Oh, is it Mandy? You guys both love gaming and stuff. Or is it Kaylee since she is more boyish? Is it Camilla because she cosplays?\" You continue to bombard the poor guy with too many questions.\n//I'm surprised he hasn't told me to shut or or something. Should I keep asking him?//\n\"Well, you know her.\" \n//Do I? I mean, I suspected myself, but I don't want to get too cocky. I mean, I like him, but what will it feel like if he says a different name?//\n\"I know her? Okay. Well, those are the only people we both know.\" You being to ponder like a detetive.\n\"Ah, I almost forgot! Is it Hanna? I know she went to your high school but you didn't know her until Cooper came over.\"\n\"No\" he said firmly.\n[[Continue|Flashback-pt2]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback-pt2",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "Flashback-pt2",
+      "text": "\"Then I don't know.\" You look up at him in a look of defeat. \"I'm completely stumped.\nJames stares at you with a mysterious look. You look in each other's eyes, waiting for someone to talk first.\n\"Do you really want to know who I like?\" he asked in a soft but smooth voice.\n\"Yes!\" You half jokingly and half seriously answered. You giggle and smile at him with a childlish smile, waiting for him to continue.\n\"Okay.\" He went back to his computer and went on YouTube to play a rock song in another foreign language. Taking a deep breath, he faced you once more and spilled the beans.\n\"I like you.\" You faintly hear his voice over the loud music.\n\"You like me?\" You had to clarify. You just had to before you can jump for joy.\nHe nodded. Your heartbeat increases in excitement as you breathe in through your nostrils.\n//Well, here goes nothing.//\n\n[[Continue|Flashback-pt3]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback-pt3",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Flashback-pt3",
+      "text": "You stare into his eyes, trying hard not to look away. \n\"I like you, too.\" The four words barely escape your mouth as he takes you in a hug. It was sort of awkward but sweet nonetheless.\n\n[[Continue|Flashback3Over]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback3Over",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Flashback3Over",
+      "text": "\"No, not that confession.\" James suspected you were remembering the \"unofficial\" confession. \"I'm talking about the second time I confessed to you. The real one.\n//Oh yeah.// \nHe took back the first one because he said it was too early, but then a week later when you met up with him in his hometown, he confessed again, but this time, he asked you to be his girlfriend.\n\"How could I forget that one, too. Both of them are two of my favorite memories.\" You smile as tears roll down your cheeks. \"I,\" you start to stumble over your words again, \"I always thought that that was one of the reasons why last year was the best year of school in my life, but now, I'm not so sure that it should've happened in the first place.\" You start crying harder, but you cover your mouth with your hands to lessen the noise.\n\n[[Continue|Crying_so_Much]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Crying_so_Much",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Crying_so_Much",
+      "text": "//I trusted him. I believed in him.//\n\"I want to say I wish you never were so sweet to be since the beginning, but I can't bring myself to do it. I can't bring myself to let you go.\"\n\"I'm so sorry, Tammi. I'm so sorry I hurt you. I hate doing this over the phone, but we have no choice.\"\n\"I'm sorry, too. I'm sorry for not being who you wanted me to be. I'm sorry for not paying attention. I'm sorry for wasting the rest of our freshman year.\"\nAs you lose control of your emotions, you see the time posted on the top corner of your phone. \n\"James, it's 6A.M. here, so it's like 9P.M. over there. Don't you have work tomorrow?\" You feel your mouth shaking as you tell him. You don't want him to hang up, but he has work.\n\"I can stay up for another hour\" he calmly said, giving you a teary-eyed smile.\n\"Ok.\"\n[[Continue|Flashback_best_Confession]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_best_Confession",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Flashback_best_Confession",
+      "text": "After an hour of having an awkward conversation about random things like your vacation and his job, he tells you goodnight and exits the video chat. \n//I should try to at the least take a nap.//\nYou close your eyes and think about the \"official confession.\"\n\n[[Continue|Official_Confession]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Official_Confession",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Official_Confession",
+      "text": "''Flashback''\n\n''I'm here.'' You look at your phone as you finish the doughnut you purchased at a cafe. It was a week after finals and you, James, Cooper, Kaylee, and Hanna planned to meet up in James, Cooper, and Hanna's hometown since they live in the largest city out of the group. James wanted to meet up with you while Cooper and Hanna planned to meet up with Kaylee, and then everyone would meet in the middle.\nYou throw your trash away and scan the sea of people to find James. \n''Okay,'' you type. ''I'm at one of the tables in front of the cafe.''\n''Cafe?'' \nYou begin to type more specific details until you got another notification.\n''Oh. Found you.''\nYou brush your head up to scour the crowd once more only to see a man in a familiar blue sweater heading towards your table.\n\n[[Continue|You_Made_it]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "You_Made_it",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "You_Made_it",
+      "text": "\"You made it. I'm glad.\" He pats your head like a puppy and both of you head out to meet the others.\n\"How've you been?\" You strike up a conversation. \n\"Pretty good. Did you eat already?\"\n\"Only a small snack.\" You pass by a noodle shop and you stare at the display window full of what the restaraunt serves.\n\"Oh, I need to tie my shoe.\" You look down at his shoes in a confused way because his shoes are perfectly tied, but you don't say anything further.\n//Maybe he meant he wanted to retie it.//\nYou go back to looking at the food and then back at James to find him on one knee as if he is proposing. \n//What is going on?// You start to blush and then look around to see if anyone is staring at the two of you. \n//Okay, good. No one is staring.//\nYou bring your full attention back to James and notice that he is holding a pink paper heart.\n\"Tammi, will you be my girlfriend?\"\n\n[[Continue|Flashback_part3_Confession_good]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_part3_Confession_good",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Flashback_part3_Confession_good",
+      "text": "You're speechless, and all you can do is nod excitedly. \n//I want to cry, and I never cry in romance movies. This is literally the best day ever.//\nHe smiles back at you giving half of a heart with the words ''Yes'' written on it. You open it and it is a note:\n\n\t//Tammi, if you said yes, then this piece is for you. I am so glad yu     said yes.I'm not good at these things because I have never been in a     relationship before, but I'll try my best to make you happy as a         friend and especially as a boyfriend. Your boyfriend. I just ask one     thing in return, which is being honest with me. I don't trust a lot       of people because of the fear of getting hurt, but if we be honest       with each other, I have a feeling this relationship will work. I have     your heart, and you have mine.\n\t\n\tLove,\n\t\tJames//\n\nYour smile brightens even more as you take in word for word. You look at James and give jump into his arms to give him a hug.\n\n[[Continue|Awwww]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Awwww",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Awwww",
+      "text": "You walk side by side in silence as you both smile bashfully.\n\"Can I...\" James started, \"Can I hold your hand?\"\n\"Yes\" you timidly reply. \nYou give him your hand and you can feel his warmth as it wraps around your fingers.\n\"Your hand is so small!\" James surprisingly remarked. You giggle cutely in response. \"Hey, do you want to grab a quick snack before we meet up with them?\"\n\"Sure. Lead the way.\"\n\"Will do.\"\nHe takes you on a little detour, and you find yourself in front of an oriental shop.\n\n\n[[Continue|Shop]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Shop",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "Shop",
+      "text": "You enter to the smell of cakes and sweets. You see that there are small cakes that are smaller than your hand.\n\"Wow!\" You look at the cakes in awe. All of your friends knew you had a sweet tooth.\n\"Which one do you want?\"\n\"Um, I want the Coco Chocolate Swirl.\"\n\"Alri-\"\n\"ACTUALLY, I want the Vanilla Rainbow Heaven.\"\n\"Oka-\"\n\"Oh! Actually nevermind. I want the Coco Chocolate Swirl. Final answer.\"\n\"Haha, alright. You're so cute.\" He softly stroked your head and proceeded to go to the cash register.\n\"Hello, there!\" The cashier greeted James enthusiastically.\n\"Hi. Can I get one piece of the Coco Chocolate Swirl and one piece of the Vanilla Rainbow Heaven?\"\n\"Coming right up!\"\n\n[[Continue|CakesNDStuff]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "CakesNDStuff",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "CakesNDStuff",
+      "text": "//Did he actually want the Vanilla Rainbow Heaven?//\n\"That'll be eight dollars.\" You watch him pay because you had a feeling you would be slow in paying your share. \n//I'll pay him when we exit the shop.//\nJames gets the plastic bag full of treats and both of you head out the shop. You start to rummage through your miniature black purse and take our your wallet.\n\"Here's four dollars for the cake.\" You hand out the four dollar bill to James. \n\"Keep it.\"\n\"Huh?\"\n\"Think of this a date.\"\n\"But even if it's a date, I would like to pay for my own share.\"\n\"Well, how about a gift?\"\nYou pout your lips and put your money back in your wallet.\n\"Alright. Thank you.\" He gives you your cake, and he gets his.\n\"Hey, James. Did you actually want the Vanilla Rainbow Heaven cake?\"\n\"I mean, I've been to this shop a couple of times and never tasted this flavor, so I was going to get it eventually\" he coolly responds.\n\"That doesn't really answer the question\" you whine.\n\"Don't worry about it.\" He gently grabs your hand and you eat your cakes while waiting at the bus stop to meet the others.\n\n[[Continue|FlashbackConfession_OVER]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "FlashbackConfession_OVER",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "FlashbackConfession_OVER",
+      "text": "The memory made your condition worse that your heart feels hollow inside. Your mouth hurts from crying already that remembering the sweet memory didn't help. It's almost time to get ready, so you quietly go into Kaylee's room and grab your suitcase to pick what clothes to wear. Dressing cute usually cheered you up, but right now it had no effect. \n\nWondering what you are going to do today, you finish cleaning up and go on your phone to wait until Kaylee and her father were finished cleaning up.\n\n//I'll just do my best to get my mind off of things. Maybe sleep in the car. I mean, sleep can definitely help, right?//\n\n[[Continue|After_Flashback_Confession]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "After_Flashback_Confession",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "AfterFacebookScrolling",
+      "text": "You decide that you are bored and that you will most likely wake up cranky and be the killjoy of the group, so you use that as your motivation to go back to bed.\n//This is my vacation. I must cherish it, even if I'm feeling blue.//\n\n[[Continue|Flashback_Num_2]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Flashback_Num_2",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "DatingSimRoute",
+      "text": "Before you know it, you caught up with all of your stories and ended up purchasing more. \"I can't believe I forgot how fun these used to be.\"\n\nYou find yourself getting into each story as if you're a part of them. You are not actually distracted, but at least you stopped crying for a bit. \n//I used to wish that my future boyfriend did these things, but even in a relationship, I find myself still wishing for these things. Cute.//\n\nAfter catching up, you decided to go on Facebook to check up on the latest news.\n\n[[Continue|Facebook_App]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Facebook_App",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "After_Flashback_Confession",
+      "text": "As you are in the car, Kaylee's father turns the radio up. Your neutral demeanor twists into salt and sadness as you realize that the current song playing was a love song. \n//I can't believe this is happening. I usually enjoy listening to love songs.//\nTrying to not listen to the song, you grab your earphones and scrol through your phone to find an instrumental music to calm yourself.\n\"There we go.\"\n\"Hm?\" your friend Kaylee asks you.\n\"Oh, nothing. Just mumbling to myself\" you embarrassingly reply, with your ears turning slight red.\n\"Weirdo.\"\n\n[[Continue|Weirdo]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Weirdo",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "Weirdo",
+      "text": "You fall in a deep sleep by the lack of sleep and the calming music. As you become knocked out, you start to relive the devastating experience that corrupted and make you miserable in the first place.\n\n\"I'm sorry, so sorry. I'm sorry you had to find out this way, Tammi.\" You faintly hear a male's voice echoing in the distance. All you hear is sobbing on the other end.\n//Is that me?//\n\"I can't- I can't believe you did this to me! Of all days, after all this time, I find out //now//!\" The woman, presumably you, stops sobbing and you can barely hear every word, but since you know what you are remembering, you can fill in the blanks.\n//Why? Why can't I just forget about this?//\n\"I didn't know how to tell you.\" You hear a man starting to cry, hiccupping as he speaks.\n\n[[Continue|Weirdo_2]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Weirdo_2",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Weirdo_2",
+      "text": "//Didn't know how to tell me? You weren't hesitant when you kept on putting me down. You're lucky I just laughed it off, you jerk!//\n\"Didn't know how to tell me? You are seemingly good at putting me down!\"\n//Oh, I basically said that.//\n\"I'm sorry! I shouldn't have done that. I shou-\"\n\nAll of a sudden, you hear a scream, which woke you from your dream. All you can see is a big rig coming right at you before everything turns black once more.\n\n[[Continue|Done_1]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Done_1",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "Done_1",
+      "text": "Replay? If not, exit the game.\n\n[[Yes|Start]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "Darn_It",
+      "text": "You grab your phone but avert your eyes from the message. You quickly swipe the message away on the lock screen and go back to the room.\n\n[[Continue|back_to_kayleeRoom]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "back_to_kayleeRoom",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Flashback_Num_2-2",
+      "text": "//What a lovely memory.// You are able to sleep a bit better after that small trip down memory lane and fall asleep. \nOnce morning came, you felt a little groggy, but apparently, you are visiting another city by car, and it takes about three hours to get there.\n//More sleep time, I guess.//\n\n[[Continue|After_Flashback_Confession]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "After_Flashback_Confession",
+            "pid": 61
+          }
+        }
+      ]
+    }
+  ]
+}

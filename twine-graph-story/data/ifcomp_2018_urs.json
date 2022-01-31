@@ -1,0 +1,2076 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Upper Hub",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/w-3-tunnels-b.png\" class=\"limit\">\n(if: $diode_is_cleared is not 0)[ I hear a crackling sound coming from the tunnels above and behind me. The air feels sharp and prickly on my fur and it makes my nose twitch. I think this means the power is working! Maybe now I can thicken the shell.\n\nI could also:](else: )[This is one of the oldest places of the rabbits.  We used to store some things here but now most rabbits have heard the stories of flefnards or tenneses that would leap upon you and eat you in one bite.  These beasts were there to protect the ancient places of the \u00dcrs.  No one really knows anything about them.  No rabbit has been here in a long time.\n\nThis is like an old tunnel hub, with a few tunnels twisting away into the distance.][[]]\n* [[\u2197 Follow the tunnel forward to a bright light, where the air hums and swells->Entrance to the Halls of the \u00dcrs]] or \n* (if: $diode_is_cleared is not 0)[[[\u2196 Follow the large side tunnel to a cool dark place, with a smell unlike any I have smelled->Lower Ledge With Diode]]](else: )[[[\u2196 Follow the large side tunnel to a cool dark place, with a smell unlike any I have smelled->Lower Ledge]]]\n* (if: $diode_is_cleared is not 0)[[[\u2191 Jump on a few rocks to climb up to an oddly placed upper tunnel->Upper Ledge With Diode]]](else: )[[[\u2191 Jump on a few rocks to climb up to an oddly placed upper tunnel->Blocked Upper Ledge]]]\n\nor, clamber back down and around and leap back to [[\u21a9 The River->The River]]",
+      "links": [
+        {
+          "text": "\u2197 Follow the tunnel forward to a bright light, where the air hums and swells",
+          "destination": {
+            "name": "Entrance to the Halls of the \u00dcrs",
+            "pid": 29
+          }
+        },
+        {
+          "text": "\u2196 Follow the large side tunnel to a cool dark place, with a smell unlike any I have smelled",
+          "destination": {
+            "name": "Lower Ledge With Diode",
+            "pid": 65
+          }
+        },
+        {
+          "text": "\u2196 Follow the large side tunnel to a cool dark place, with a smell unlike any I have smelled",
+          "destination": {
+            "name": "Lower Ledge",
+            "pid": 25
+          }
+        },
+        {
+          "text": "\u2191 Jump on a few rocks to climb up to an oddly placed upper tunnel",
+          "destination": {
+            "name": "Upper Ledge With Diode",
+            "pid": 64
+          }
+        },
+        {
+          "text": "\u2191 Jump on a few rocks to climb up to an oddly placed upper tunnel",
+          "destination": {
+            "name": "Blocked Upper Ledge",
+            "pid": 78
+          }
+        },
+        {
+          "text": "\u21a9 The River",
+          "destination": {
+            "name": "The River",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Opened Hatch Peek",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/surface-cave.png\" class=\"limit\">\n\nWith the hatch open, I take a few steps beyond it. \n\n[[Should I leave the safety of the Warren behind and step out into this huge place?->Leave The Hatch]] \n\nor should I [[\u21a9 head back to the great halls of the \u00dcrs->Opened Hatch]] to see if there's something I can do there.",
+      "links": [
+        {
+          "text": "Should I leave the safety of the Warren behind and step out into this huge place?",
+          "destination": {
+            "name": "Leave The Hatch",
+            "pid": 45
+          }
+        },
+        {
+          "text": "\u21a9 head back to the great halls of the \u00dcrs",
+          "destination": {
+            "name": "Opened Hatch",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "City of the \u00dcrs",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-city-awake-jupiter.png\">\n\nIt looks as if I have finally reached it, an even older place.  It is some kind of City of \u00dcrs.  From behind the cliff I climbed, I can see that the bubble surrounding it is the same as the bubble that surrounds this whole huge place.\n\nThere is a giant gate made of ears that looks familiar, and it is honestly pretty scary.  I can't think of any other way to help the rabbits, though, so I [[go through the Ears of the \u00dcrs->Ears of The \u00dcrs]], or maybe something can still be done [[back in the halls->Opened Hatch Peek]].",
+      "links": [
+        {
+          "text": "go through the Ears of the \u00dcrs",
+          "destination": {
+            "name": "Ears of The \u00dcrs",
+            "pid": 44
+          }
+        },
+        {
+          "text": "back in the halls",
+          "destination": {
+            "name": "Opened Hatch Peek",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Sioban's Passage",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/Ur-Stairs-3.png\"  class=\"img-gen\">\n\nWhat mad passageway is this?  It is another rock-hewn step tunnel, but this one twists deeply into the rock, down towards some large space\n\n[[I descend->Sioban's Vestibule]]\n\nor [[\u21a9 Turn around and go back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "I descend",
+          "destination": {
+            "name": "Sioban's Vestibule",
+            "pid": 53
+          }
+        },
+        {
+          "text": "\u21a9 Turn around and go back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Tristan's Passage",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/Ur-Stairs-1.png\"  class=\"img-gen\">\n\nA dim and glowing passageway leads down to some larger place.\n\n[[I can only descend->Tristan's Vestibule]] \n\nor [[\u21a9 Turn around and go back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "I can only descend",
+          "destination": {
+            "name": "Tristan's Vestibule",
+            "pid": 57
+          }
+        },
+        {
+          "text": "\u21a9 Turn around and go back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Ebony's Passage",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/Ur-Stairs-1.png\"  class=\"img-gen\">\n\nA passageway leads ever downward.\n\n[[I follow it.->Ebony's Vestibule]] \n\nor [[\u21a9 Turn around and go back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "I follow it.",
+          "destination": {
+            "name": "Ebony's Vestibule",
+            "pid": 55
+          }
+        },
+        {
+          "text": "\u21a9 Turn around and go back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Tunnel Hub",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/tunnel-hub-1200.png\"  Style=\"width:100%;\">(if: $chance_of_thud_in_warren is not 0)[(either: ...$chance_of_thud_in_warren)]\n\nThe Hub is the heart of the Warren. All of its tunnels were dug by my brethren rabbits, some were even dug by yours truly. We are told by the Warrenherd to make each tunnel wider than it is tall. We don't know why, but we try. We don't always get it right.  It is easy to get carried away and dig too far in one direction and not the other. Oh well. \n\nFrom the Hub, tunnels lead to all the special places that keep the Warren running and humming:\n\n* [[The Nursery]] \n* [[The Warrenherd]] \n* [[The Farm]] \n* [[The River]] ",
+      "links": [
+        {
+          "text": "The Nursery",
+          "destination": {
+            "name": "The Nursery",
+            "pid": 11
+          }
+        },
+        {
+          "text": "The Warrenherd",
+          "destination": {
+            "name": "The Warrenherd",
+            "pid": 12
+          }
+        },
+        {
+          "text": "The Farm",
+          "destination": {
+            "name": "The Farm",
+            "pid": 9
+          }
+        },
+        {
+          "text": "The River",
+          "destination": {
+            "name": "The River",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Sleeping Quarters",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/w-familiar-place.png\" class=\"limit\">(if: $chance_of_thud_in_warren is not 0)[(either: ...$chance_of_thud_in_warren)]\n\nI find myself in the sleeping place. Everything is freshly dug and Rabbits have already repaired all the damage from the big<span class=\"thud\">THUD</span>. It is as if the <span class=\"thud\">THUD</span> had never come. There are fresh tettles to eat and new piles of fronds and husks to curl up in and sleep on. Tettle husks make the best beds for rabbits. \n\nIt is easy to forget the <span class=\"thud\">THUD</span> when all reminders are so quickly scuttled away. The Warrenherd demands it. Without the Warrenherd rabbits might not do anything other than scuffle, dig and sleep the rest of their time away in the fluffle huddle. \n\nThanks to the Warrenherd everything has returned to the way it was, like it always does, as the Warrenherd tells us it always will. I would like to roll into the huddle and forget, to simply be content with my fellow rabbits.  \n\nI cannot. Something is not right and I am worried. I will not find the answer here.\n\nI hop out to the [[Tunnel Hub]]",
+      "links": [
+        {
+          "text": "Tunnel Hub",
+          "destination": {
+            "name": "Tunnel Hub",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "The Farm",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/farm-harvest.png\" class=\"limit\">(if: $chance_of_thud_in_warren is not 0)[(either: ...$chance_of_thud_in_warren)]\nThe farm stretches out in all directions, rows and rows of tettleplant and lichens stretch out until they recede into the darkness.\n\nFellow rabbits are working the rows.  Not much needs to be done as tettleplant grows abundantly here. One mature plant can feed a family of rabbits for a few days.\n\n(if: $dug_to_monolith is not 0)[I can head down the tunnel to see [[The Huge Monolith]] again,](else:)[Seeing the rabbits planting and digging makes me want to... [[DIG!!!!->Dig]],] or go back to the [[\u21a9 Tunnel Hub to search the Warren further->Tunnel Hub]].",
+      "links": [
+        {
+          "text": "The Huge Monolith",
+          "destination": {
+            "name": "The Huge Monolith",
+            "pid": 28
+          }
+        },
+        {
+          "text": "DIG!!!!",
+          "destination": {
+            "name": "Dig",
+            "pid": 19
+          }
+        },
+        {
+          "text": "\u21a9 Tunnel Hub to search the Warren further",
+          "destination": {
+            "name": "Tunnel Hub",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "The River",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/river-sit.png\" class=\"limit\">(if: $chance_of_thud_in_warren is not 0)[(either: ...$chance_of_thud_in_warren)]\n\nI do not know where the river flows to or from.  \nIt comes from a tunnel and goes to one.  \nIt is life, and it is all our water.\n\nThere is an older rabbit, the [[River Rabbit]], who stays here and tends the place.  He used to cross the river sometimes to the upper hub, but now he mostly maintains the banks and mumbles a lot.\n\n[[Leap over the river to the other side->River Leap]]\n\n[[\u21a9 Return to the Tunnel Hub->Tunnel Hub]]",
+      "links": [
+        {
+          "text": "River Rabbit",
+          "destination": {
+            "name": "River Rabbit",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Leap over the river to the other side",
+          "destination": {
+            "name": "River Leap",
+            "pid": 27
+          }
+        },
+        {
+          "text": "\u21a9 Return to the Tunnel Hub",
+          "destination": {
+            "name": "Tunnel Hub",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "The Nursery",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/nursery-check-the-kits.png\" class=\"limit\">\n\nThe weight of the <span class=\"thud\">THUD</span> was felt here too.  Now they make little tettleweed shelters for the young kits, and this time it worked.  I see no hurt kittens, just scared ones.  If I don't do anything will these kits ever know what it's like to dig and scuffle?\n\nSeeing the young kits in danger makes me want to [[search the Warren->Tunnel Hub]] and ask around to find out if there's something I can do to stop the <span class=\"thud\">THUD</span> while there's still time.",
+      "links": [
+        {
+          "text": "search the Warren",
+          "destination": {
+            "name": "Tunnel Hub",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "The Warrenherd",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/w-mayor.png\" class=\"img-med\">(if: $chance_of_thud_in_warren is not 0)[(either: ...$chance_of_thud_in_warren)]\n\nThe Warrenherd is plenty busy considering things, so I am hesitant to disturb him.  When I come in he seems, for a moment, to be resting.  I could [[leave the Warrenherd to his thoughts and explore the rest of the Warren->Tunnel Hub]] or,\n\nI could, speak to the Warrenherd about my worries:\n\n[<div class=\"speech self\"><span class=\"herospeak\">Oh, thoughtful Warrenherd I, must speak to you about this <span class=\"thud\">THUD</span>!  There is real damage happening in the Warren now!</span></div>]<startconversation|(click: ?startconversation)[(display: \"Warrenherd Speech 1\")]",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Warrenherd Speech 1",
+            "pid": 59
+          }
+        },
+        {
+          "text": "leave the Warrenherd to his thoughts and explore the rest of the Warren",
+          "destination": {
+            "name": "Tunnel Hub",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "The End From Giving Up",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/rabbit-end-game-skull.png\" class=\"img-med\">\n\nIn 6 rabbit crop cycles, a mighty <span class=\"thud\">THUD</span> comes, and the next one tears right through the warren. \nThe rabbits are all cold and dead. :(\n\n[[Would you like to rewind back to the moment before this happened?->The Warrenherd]]",
+      "links": [
+        {
+          "text": "Would you like to rewind back to the moment before this happened?",
+          "destination": {
+            "name": "The Warrenherd",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "The Warrenherd's Distraction",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/w-mayor-end.png\" class=\"img-gen\">\n\n{<div class=\"speech other\"><span class=\"warrenherdspeak\">It'll all work out.  I must be going.</span></div>\n\nThe Warrenherd is so certain of his opinion that he's not able to hear me, but with renewed determination I head back to [[Tunnel Hub]] to try and come up with a solution.}",
+      "links": [
+        {
+          "text": "Tunnel Hub",
+          "destination": {
+            "name": "Tunnel Hub",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Hatch Chamber",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/halls-hatch-closed-2.png\" class=\"limit\">\n\nI have reached the end of these Halls.  There is a great circle here, that looks like a gateway to another place.  It is adorned with symbols of many rabbits and paws, and a lever that looks like it's made to open the gateway.\n\nI can [leap up onto the great handle to see if I can somehow move it]<hatchleap|, I can [[press my paw to the huge paw print->Opened Hatch]], \n[\n<div class=\"pulse-in\">I make the mightiest of leaps, but I simply bounce off the handle, bruising my poor rabbit belly in the process.</div>\n](hatchbounce|\nor [[\u21a9 walk back into the halls.->Right Hall]](click: ?hatchleap)[(show: ?hatchbounce)]\n\n<section class=\"ursmap\"><table><tbody><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr><tr><td>\u25ad</td><td>\u25ad</td><td class=\"majestic\"><div>\u25ad</div></td><td>[[\u2190->Right Hall]]</td><td>\u25a3</td></tr><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr></tbody></table></section>\n",
+      "links": [
+        {
+          "text": "press my paw to the huge paw print",
+          "destination": {
+            "name": "Opened Hatch",
+            "pid": 69
+          }
+        },
+        {
+          "text": "\u21a9 walk back into the halls.",
+          "destination": {
+            "name": "Right Hall",
+            "pid": 37
+          }
+        },
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Right Hall",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "The Thud",
+      "text": "\n\nThere was another <div class=\"thud\">THUD</div>   \n\n[[this time ...->The Worst One]]  \u27fb(click to find out)\n\n<!-- random chance of THUD in warren -->(set: $thud_in_warren to (a: \"\", \"\",\"\",\"Another <div class=\\\"thud\\\">THUD</div> shakes the warren.  \n\nNot as bad as the one that woke me up, but I don't like it.\n\"))\n<!-- random chance of THENGG in warren -->(set: $tinggg_in_warren to (a: \"\", \"\",\"\",\"A gentle <div class=\\\"tinggg\\\">TINGGG</div> vibrates the warren.  \n\nSeems better than the <span class=\\\"thud\\\">THUD</span>, but I still don't like it.\n\"))\n<!-- random chance of THUD in halls -->(set: $thud_in_halls to (a: \"\",\"\",\"Another <div class=\\\"thud\\\">THUD</div> shakes the halls.  \n\nSome clouds of dust swirl around, but these well-built halls remain intact.\n\"))\n<!-- random chance of THENGG in halls -->(set: $tinggg_in_halls to (a: \"\",\"\",\"A gentle <div class=\\\"tinggg\\\">TINGGG</div> vibrates the halls.  \n\nSeems better than the <span class=\\\"thud\\\">THUD</span>, but I still don't like it.\n\"))\n(set: $chance_of_thud_in_halls to $thud_in_halls)\n(set: $chance_of_thud_in_warren to $thud_in_warren)\n(set: $diode_is_cleared to 0)\n(set: $shield_refreshed to 0)\n(set: $hatch_opened to 0)\n(set: $ur_visited to 0)\n(set: $dug_to_monolith to 0)\n(set: $returned_to_river to 0)",
+      "links": [
+        {
+          "text": "this time ...",
+          "destination": {
+            "name": "The Worst One",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "The Worst One",
+      "text": "\n... maybe the worst <div class=\"thud\">THUD</div> yet,\n\n[[I remember...->I Remember]]",
+      "links": [
+        {
+          "text": "I remember...",
+          "destination": {
+            "name": "I Remember",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "I Remember",
+      "text": "\n<div class=\"thud\">THUD</div>\n\nI remember long ago when the <span class=\"thud\">THUD</span> first came to the Warren.\n\nWe were all startled, because nothing like that had ever happened.  \n\nWe soon forgot about it.  Well, for a few growing cycles, then, <span class=\"thud\">THUD</span>. \n\nThat was only once.\n\nThen, it started happening once a growing cycle. \n\nThen, after a while, the <span class=\"thud\">THUD</span> could happen any time.  Now this immense <span class=\"thud\">THUD</span>, the worst one yet.\n\n\n\u25bc SCROLL DOWN TO OPEN YOUR EYES \u25bc\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[[I wake up in a familiar place.->Ruined Sleeping Quarters]]\n\n\n\n\n",
+      "links": [
+        {
+          "text": "I wake up in a familiar place.",
+          "destination": {
+            "name": "Ruined Sleeping Quarters",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Dig",
+      "text": "<div class=\"dig-contain\"><img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/idil-dig-1.png\" class=\"img-dig\">\n<div class=\"bkg-tunnel-1\">\n<div class=\"dig\">I DIG!</div>\n\nDigging is the natural perfect activity of rabbits.  \nSometimes I dig and forget about all things.  \nDigging a tunnel can heal, can make a new place.  \nIt is a rabbit's reason.\n\nI am having so much fun, maybe I should\n<div class=\"dig\">[[Dig Deeper]]</div>\n</div>\n<div>",
+      "links": [
+        {
+          "text": "Dig Deeper",
+          "destination": {
+            "name": "Dig Deeper",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "River Rabbit",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/river-rabbit-convo-cu.png\" class=\"limit\">\n\nThe River Rabbit regards me a little suspiciously, but seems willing to help me.\n\nWhat should I say?\n\n{|thudquestion>[<div class=\"speech self\"><span class=\"herospeak\">Old rabbit, I say, the <span class=\"thud\">THUD</span> is upon us.  I fear that we will be shaken such that the dirt collapses all around us and no more rabbits are ever born.</span></div>]\n|thudresponse)[<div class=\"speech other\"><span class=\"riverrabbitspeak\">It's true.  I've never seen such a thing.  Maybe the river is causing it, I just can't know.  I'm ready to be a dirt rabbit, if need be.  If you think more rabbits need to be born then I guess you can try and do something about it.  I don't know of anything else to try but an old place, across the river.  An old storage space of rabbits.  Used to put things there until it was decided, \"no more\", because of danger, and because of the \u00dcr-rabbits and their dangers.</span></div>](click: ?thudquestion)[ (show: ?thudresponse) ]\n\n|ursquestion>[<div class=\"speech self\"><span class=\"herospeak\">What about the places of the old \u00dcr-rabbits, is it possible they are responsible for the <span class=\"thud\">THUD</span></div>]\n|ursresponse)[<div class=\"speech other\"><span class=\"riverrabbitspeak\">Across the river is a place where rabbits used to store things.  Went to someplace regular rabbits didn't make.  There are real dangers there, so I would not think it wise to even take a peep.  Ye go seek out thee places of the \u00dcrs?  That much I will advise deeply against young one.</span></div>](click: ?ursquestion)[ (show: ?ursresponse) ]\n\n|riverquestion>[<div class=\"speech self\"><span class=\"herospeak\">Why do you stay here, at the river.</span></div>]\n|riverresponse)[<div class=\"speech other\"><span class=\"riverrabbitspeak\">River changes all the time and never changes.  There have been times I wished to jump in, and find whatever place it goes to, or comes from, but it is one of the great mysteries of rabbits.</span></div>](click: ?riverquestion)[ (show: ?riverresponse) ]\n\nTired of speaking to the River Rabbit, [[\u21a9 I go back to the edge of The River->The River]]}",
+      "links": [
+        {
+          "text": "\u21a9 I go back to the edge of The River",
+          "destination": {
+            "name": "The River",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Dig Deeper",
+      "text": "<div class=\"dig-contain\"><img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/idil-dig-2.png\" class=\"img-dig\">\n<div class=\"bkg-tunnel-1\">\n<div class=\"dig\">I DIG!</div>\n\nMy thirst for digging is intense.  \nEven in all this crisis it feels good to just dig.\n\n<div class=\"stop-digging\">[[Stop Digging and rest...->Sleeping Quarters]]</div>\n\n<div class=\"dig\">[[Dig Deeper Still]]</div>\n</div>\n</div>",
+      "links": [
+        {
+          "text": "Stop Digging and rest...",
+          "destination": {
+            "name": "Sleeping Quarters",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Dig Deeper Still",
+          "destination": {
+            "name": "Dig Deeper Still",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Dig Deeper Still",
+      "text": "<div class=\"dig-contain\"><img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/idil-dig-3.png\" class=\"img-dig\">\n<div class=\"bkg-tunnel-1\">\n<div class=\"dig\">I DIG!</div>\n\nA rabbit is not a rabbit without dirt in its paws \nand a long tunnel behind it.\n\n<div class=\"stop-digging\">[[Stop Digging and rest...->Sleeping Quarters]]</div>\n\n<div class=\"dig\">[[Dig Even Deeper]]</div>\n</div>\n</div>",
+      "links": [
+        {
+          "text": "Stop Digging and rest...",
+          "destination": {
+            "name": "Sleeping Quarters",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Dig Even Deeper",
+          "destination": {
+            "name": "Dig Even Deeper",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Dig Even Deeper",
+      "text": "<div class=\"dig-contain\"><img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/idil-dig-4.png\" class=\"img-dig\">\n<div class=\"bkg-tunnel-1\">\n<div class=\"dig\">I DIG!</div> \n\nThis is almost the furthest I've ever dug.  \nWhat am I trying to find?  \nWhat rabbit would come to a place I made here?\n\n<div class=\"stop-digging\">[[Stop Digging and rest...->Sleeping Quarters]]</div>\n\n<div class=\"dig\">[[Dig Deeper Than I Have Ever Dug Before]]</div>\n</div>\n</div>",
+      "links": [
+        {
+          "text": "Stop Digging and rest...",
+          "destination": {
+            "name": "Sleeping Quarters",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Dig Deeper Than I Have Ever Dug Before",
+          "destination": {
+            "name": "Dig Deeper Than I Have Ever Dug Before",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Dig Deeper Than I Have Ever Dug Before",
+      "text": "<div class=\"dig-contain\"><img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/idil-dig-5.png\" class=\"img-dig\">\n<div class=\"bkg-tunnel-5\">\n\nI have been digging so long and strong that I hardly noticed until I uncovered something.  Something stone.  Something poking up into the tunnel.  \n\nIt is a small object that has many sides.  It is very strange, and it reminds me of old stories of the \u00dcr-rabbits, the ancient ones.  Digging all around it I see that it has a stem, and is rooted very deeply into the ground.\n\nI am not sure if I should [[dig around it and try to uncover it.->The Huge Monolith]] or leave this large stone alone, [[stop digging and rest...->Sleeping Quarters]]\n</div>\n</div>",
+      "links": [
+        {
+          "text": "dig around it and try to uncover it.",
+          "destination": {
+            "name": "The Huge Monolith",
+            "pid": 28
+          }
+        },
+        {
+          "text": "stop digging and rest...",
+          "destination": {
+            "name": "Sleeping Quarters",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Lower Ledge",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/w-ruin-l1.png\" class=\"img-gen\">\n\nI walk out on a red rock ledge.\n\nWhat did I think was large before?  This is the biggest place I have ever been.  I am on a giant platform and in a room so large I can't clearly see the end of it.  It has the thinnest clear walls of any place, and even beyond, there is blackness, and speckles. Giant rocks coast by.\n\nThere are other entrances on this spire, but there is nowhere safe to go from this ledge.\n\n[[The only place to go is through the tunnel back to the Upper Hub ->Upper Hub]]",
+      "links": [
+        {
+          "text": "The only place to go is through the tunnel back to the Upper Hub ",
+          "destination": {
+            "name": "Upper Hub",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Ruined Sleeping Quarters",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/w-first-thud-sleeping.png\" class=\"limit\">\n\nThe sleeping quarters were hit hard this time.  I've never seen such destruction.  When the <span class=\"thud\">THUD</span> comes it shakes the tunnels of the Warren to pieces, and pieces fall from above.  \n\nSome rabbits are wounded, others shocked by near misses.  Debris is all around.  \n\nHow much worse can this get?  Something needs to be done.  I should [[speak to the Warrenherd->The Warrenherd]], and see if he has a plan to stop this destruction, or I can [[check the nursery to see if any of the young kits have been hurt this time->The Nursery]] by the <span class=\"thud\">THUD</span>.\n",
+      "links": [
+        {
+          "text": "speak to the Warrenherd",
+          "destination": {
+            "name": "The Warrenherd",
+            "pid": 12
+          }
+        },
+        {
+          "text": "check the nursery to see if any of the young kits have been hurt this time",
+          "destination": {
+            "name": "The Nursery",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "River Leap",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/river-jump.png\" class=\"limit\">\n\nI am free of all constraints, until I land.\n\nOUCH! I land on my tail! \n\nWell, that hurt. \n\nI've never leapt that far before. \n\nNo wonder no rabbit comes this way anymore. \n\nNow that I'm here, I see a column of tettleplant roots that I could not see from the other side, maybe I can [[climb up the roots to another twisty set of tunnels->Upper Hub]]\n\nor [[\u21a9 take a deep breath and jump back across to the warren->The River]]",
+      "links": [
+        {
+          "text": "climb up the roots to another twisty set of tunnels",
+          "destination": {
+            "name": "Upper Hub",
+            "pid": 1
+          }
+        },
+        {
+          "text": "\u21a9 take a deep breath and jump back across to the warren",
+          "destination": {
+            "name": "The River",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "The Huge Monolith",
+      "text": "<div class=\"dig-contain\"><img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/idil-dig-6.png\" class=\"img-dig\">\n<div class=\"bkg-tunnel-6\">\n\n(set: $dug_to_monolith to true)The more I dig, the more of this giant thing of stone I uncover.  It is some kind of rabbit.  I have heard tails of long and large old rabbits but most rabbits don't care about old stories of \u00dcrs.  We have what we need, and why would rabbits think about such things.  They're old stories and old ways, that don't touch us.  I touch the huge thing, and ...\n<div class=\"stop-digging\">[[I am very tired, so I stop digging, and when I wake up I am...->Sleeping Quarters]]</div>\n</div>\n</div>",
+      "links": [
+        {
+          "text": "I am very tired, so I stop digging, and when I wake up I am...",
+          "destination": {
+            "name": "Sleeping Quarters",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Entrance to the Halls of the \u00dcrs",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/halls-door-1.png\" class=\"limit\">\n\nThe natural tunneling of rabbits gives way to wide, tall, smooth walls of white stone.  Some remnants of what rabbits used to store here are scattered about carelessly, like rabbits left in the midst of gathering them up. [[\u21a9 I can head back towards the Warren->Upper Hub]]\n\nHowever, up ahead is a giant door I can see opens up into a bright, large space.  \n\nI can navigate this huge new hall made out of halls.  \n\nThe halls are shaped like this: \n\n<section class=\"template ursmap\"><table><tbody><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr><tr><td>\u25a3</td><td>[[\u2192->Left Hall]]</td><td class=\"majestic\"><div>\u25ad</div></td><td>\u25ad</td><td>\u25ad</td></tr><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr></tbody></table></section>",
+      "links": [
+        {
+          "text": "\u21a9 I can head back towards the Warren",
+          "destination": {
+            "name": "Upper Hub",
+            "pid": 1
+          }
+        },
+        {
+          "text": "\u2192",
+          "destination": {
+            "name": "Left Hall",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Left Hall",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/halls-W.png\" class=\"limit\">\n(if: $chance_of_thud_in_halls is not 0)[(either: ...$chance_of_thud_in_halls)]\nI am in the first of what looks like many giant rooms, made entirely of white stone.  There is no roundness to this place.  What tool or rabbit could have made these corners so square?\n\nIn some other rooms there are odd sculptures and strange objects.  A little further it looks like a room even larger than the other rooms here.\n\n<section class=\"ursmap\"><table><tbody><tr><td></td><td>[[\u2191->Top Left Hall]]</td><td>\u25ad</td><td>\u25ad</td><td></td></tr><td>[[\u2190->Entrance to the Halls of the \u00dcrs]]</td><td>\u25a3</td><td class=\"majestic\"><div class=\"arrow\">[[\u2192->Majestic Center Hall]]</div></td><td>\u25ad</td><td>\u25ad</td></tr><tr><td></td><td>[[\u2193->Bottom Left Hall]]</td><td>\u25ad</td><td>\u25ad</td><td></td></tr></tbody></table></section>\n",
+      "links": [
+        {
+          "text": "\u2191",
+          "destination": {
+            "name": "Top Left Hall",
+            "pid": 31
+          }
+        },
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Entrance to the Halls of the \u00dcrs",
+            "pid": 29
+          }
+        },
+        {
+          "text": "\u2192",
+          "destination": {
+            "name": "Majestic Center Hall",
+            "pid": 33
+          }
+        },
+        {
+          "text": "\u2193",
+          "destination": {
+            "name": "Bottom Left Hall",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Top Left Hall",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/halls-NW.png\" class=\"limit\">{\n(if: $chance_of_thud_in_halls is not 0)[(either: ...$chance_of_thud_in_halls)]\n}I'm in the corner of a cavernous series of rooms, made entirely of white stone.  The strangest, blocky tunnels lead in confusing directions.\n\nThere is a platform, I could probably (link: \"jump up on\")[(link: \"jump down from\")[look at longer]].  It looks like it once was able to contain water.  Some sort of font, or bath.\n\nWhat ever used this place?  Are these \u00dcr-rabbits gone forever?\n\n<section class=\"template ursmap\"><table><tbody><tr><td></td> <td>\u25a3</td> <td><div>[[\u2192->Top Hall]]</div></td><td>\u25ad</td> <td></td></tr><tr><td>\u25ad</td><td>[[\u2193->Left Hall]]</td><td class=\"majestic\"><div>\u25ad</div></td><td>\u25ad</td><td>\u25ad</td></tr><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr></tbody></table></section>",
+      "links": [
+        {
+          "text": "\u2192",
+          "destination": {
+            "name": "Top Hall",
+            "pid": 34
+          }
+        },
+        {
+          "text": "\u2193",
+          "destination": {
+            "name": "Left Hall",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Bottom Left Hall",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/\nhalls-se-device-b.png\" class=\"limit\">\n(if: $chance_of_thud_in_halls is not 0)[(either: ...$chance_of_thud_in_halls)]There is an odd box here with a dark, cracked window.  It looks like it once worked, but now it looks broken.\n\n[[I can approach this device->Useless Device]] or search further:\n\n<section class=\"ursmap\"><table><tbody><tr><td></td> <td>\u25ad</td> <td>\u25ad</td><td>\u25ad</td> <td></td></tr><tr><td>\u25ad</td><td>[[\u2191->Left Hall]]</td><td class=\"majestic\"><div>\u25ad</div></td><td>\u25ad</td><td>\u25ad</td></tr><tr><td></td><td>\u25a3</td><td>[[\u2192->Bottom Hall]]</td><td>\u25ad</td><td></td></tr></tbody></table></section>\n",
+      "links": [
+        {
+          "text": "I can approach this device",
+          "destination": {
+            "name": "Useless Device",
+            "pid": 48
+          }
+        },
+        {
+          "text": "\u2191",
+          "destination": {
+            "name": "Left Hall",
+            "pid": 30
+          }
+        },
+        {
+          "text": "\u2192",
+          "destination": {
+            "name": "Bottom Hall",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Majestic Center Hall",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/halls-great-hall.png\" class=\"limit\">\n(if: $chance_of_thud_in_halls is not 0)[(either: ...$chance_of_thud_in_halls)]\nThis gigantic room is clearly the center of this place.  I can only gaze around in wonder, it's as big as the Warren itself.  All this space and nothing is here. \n\nOn each side is a door, and on each door is a picture.  They have something to do with rabbits and probably, also \u00dcrs.\n\n<section class=\"ursmap\"><table><tbody><tr><td></td><td>\u25ad</td><td><div>[[\u2191->Top Hall]]</div></td><td>\u25ad</td><td></td></tr><tr><td>\u25ad</td><td>[[\u2190->Left Hall]]</td><td class=\"majestic\"><div style=\"color: white; font-weight: bold;\">\u25a3</div></td><td>[[\u2192->Right Hall]]</td><td>\u25ad</td></tr><tr><td></td><td>\u25ad</td><td><div>[[\u2193->Bottom Hall]]</div></td><td>\u25ad</td><td></td></tr></tbody></table></section>\n",
+      "links": [
+        {
+          "text": "\u2191",
+          "destination": {
+            "name": "Top Hall",
+            "pid": 34
+          }
+        },
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Left Hall",
+            "pid": 30
+          }
+        },
+        {
+          "text": "\u2192",
+          "destination": {
+            "name": "Right Hall",
+            "pid": 37
+          }
+        },
+        {
+          "text": "\u2193",
+          "destination": {
+            "name": "Bottom Hall",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Top Hall",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/top-hall-device-1.png\" class=\"limit\">{\n(if: $chance_of_thud_in_halls is not 0)[(either: ...$chance_of_thud_in_halls)]\n}I am in the opening of a cavernous room, made entirely of white stone.  In one corner of the room is a huge and complicated device many times larger than me, with spheres circling other spheres. [[I can hop up onto the device.->Red Zone Steering Device]]\n\n<section class=\"template ursmap\"><table><tbody><tr><td></td><td>[[\u2190->Top Left Hall]]</td><td>\u25a3</td><td>[[\u2192->Top Right Hall]]</td><td></td></tr><tr><td>\u25ad</td><td>\u25ad</td><td class=\"majestic\"><div class=\"arrow\">[[\u2193->Majestic Center Hall]]</div></td><td>\u25ad</td><td>\u25ad</td></tr><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr></tbody></table></section>\n",
+      "links": [
+        {
+          "text": "I can hop up onto the device.",
+          "destination": {
+            "name": "Red Zone Steering Device",
+            "pid": 49
+          }
+        },
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Top Left Hall",
+            "pid": 31
+          }
+        },
+        {
+          "text": "\u2192",
+          "destination": {
+            "name": "Top Right Hall",
+            "pid": 35
+          }
+        },
+        {
+          "text": "\u2193",
+          "destination": {
+            "name": "Majestic Center Hall",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "Top Right Hall",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/halls-NE.png\" class=\"limit\">\n(if: $chance_of_thud_in_halls is not 0)[(either: ...$chance_of_thud_in_halls)]\nI am in the opening of a cavernous room, made entirely of white stone.\n\n<section class=\"template ursmap\"><table><tbody><tr><td></td><td>\u25ad</td><td><div>[[\u2190->Top Hall]]</div></td><td>\u25a3</td><td></td></tr><tr><td>\u25ad</td><td>\u25ad</td><td class=\"majestic\"><div>\u25ad</div></td><td>[[\u2193->Right Hall]]</td><td>\u25ad</td></tr><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr></tbody></table></section>\n",
+      "links": [
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Top Hall",
+            "pid": 34
+          }
+        },
+        {
+          "text": "\u2193",
+          "destination": {
+            "name": "Right Hall",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "Bottom Hall",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/\nw-object.png\" class=\"limit\">\n(if: $chance_of_thud_in_halls is not 0)[(either: ...$chance_of_thud_in_halls)]\nThis room has an amazing device in it, and is the most brightly colored of all these huge rooms. In the center, on a raised platform, a large box with symbols on it hums and small amounts of steam curl from it.  It has places clearly meant for a paw to go but the paw prints look double or triple the width of my own.\n\n[[In a room towards the Warren->Bottom Left Hall]] I see a boxy device and (if: $diode_is_cleared is not 0)[[[in a corner room nearby->Usable Shield Room]]](else:)[[[in a corner room nearby->Unpowered Shield Room]]] I see a very similar box, but I can hear it from here, whirring softly.\n\n<section class=\"template ursmap\"><table><tbody><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr><tr><td>\u25ad</td><td>\u25ad</td><td class=\"majestic\"><div class=\"arrow\">[[\u2191->Majestic Center Hall]]</div></td><td>\u25ad</td><td>\u25ad</td></tr><tr><td></td><td>[[\u2190->Bottom Left Hall]]</td><td>\u25a3</td><td>(if: $diode_is_cleared is not 0)[[[\u2192->Usable Shield Room]]](else:)[[[\u2192->Unpowered Shield Room]]]</td><td></td></tr></tbody></table></section>\n",
+      "links": [
+        {
+          "text": "In a room towards the Warren",
+          "destination": {
+            "name": "Bottom Left Hall",
+            "pid": 32
+          }
+        },
+        {
+          "text": "in a corner room nearby",
+          "destination": {
+            "name": "Usable Shield Room",
+            "pid": 38
+          }
+        },
+        {
+          "text": "in a corner room nearby",
+          "destination": {
+            "name": "Unpowered Shield Room",
+            "pid": 62
+          }
+        },
+        {
+          "text": "\u2191",
+          "destination": {
+            "name": "Majestic Center Hall",
+            "pid": 33
+          }
+        },
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Bottom Left Hall",
+            "pid": 32
+          }
+        },
+        {
+          "text": "\u2192",
+          "destination": {
+            "name": "Usable Shield Room",
+            "pid": 38
+          }
+        },
+        {
+          "text": "\u2192",
+          "destination": {
+            "name": "Unpowered Shield Room",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Right Hall",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/halls-E.png\" class=\"limit\">\n(if: $chance_of_thud_in_halls is not 0)[(either: ...$chance_of_thud_in_halls)]\nBehind me is the [[Majestic Center Hall]]. Ahead, I see a room with some (if: $hatch_opened is not 0)[[[giant circle gateway->Opened Hatch]]](else: )[[[giant circle gateway->Hatch Chamber]]] and (if: $diode_is_cleared is not 0)[[[in a corner room nearby->Usable Shield Room]]](else:)[[[in a corner room nearby->Unpowered Shield Room]]] I see some kind of device.  I can hear the device from here, whirring softly.\n\n<section class=\"template ursmap\"><table><tbody><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>[[\u2191->Top Right Hall]]</td><td></td></tr><tr><td>\u25ad</td><td>\u25ad</td><td class=\"majestic\"><div class=\"arrow\">[[\u2190->Majestic Center Hall]]</div></td><td>\u25a3</td><td>(if: $hatch_opened is not 0)[[[\u2192->Opened Hatch]]](else: )[[[\u2192->Hatch Chamber]]]</td></tr><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>(if: $diode_is_cleared is not 0)[[[\u2193->Usable Shield Room]]](else:)[[[\u2193->Unpowered Shield Room]]]</td><td></td></tr></tbody></table></section>",
+      "links": [
+        {
+          "text": "Majestic Center Hall",
+          "destination": {
+            "name": "Majestic Center Hall",
+            "pid": 33
+          }
+        },
+        {
+          "text": "giant circle gateway",
+          "destination": {
+            "name": "Opened Hatch",
+            "pid": 69
+          }
+        },
+        {
+          "text": "giant circle gateway",
+          "destination": {
+            "name": "Hatch Chamber",
+            "pid": 15
+          }
+        },
+        {
+          "text": "in a corner room nearby",
+          "destination": {
+            "name": "Usable Shield Room",
+            "pid": 38
+          }
+        },
+        {
+          "text": "in a corner room nearby",
+          "destination": {
+            "name": "Unpowered Shield Room",
+            "pid": 62
+          }
+        },
+        {
+          "text": "\u2191",
+          "destination": {
+            "name": "Top Right Hall",
+            "pid": 35
+          }
+        },
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Majestic Center Hall",
+            "pid": 33
+          }
+        },
+        {
+          "text": "\u2192",
+          "destination": {
+            "name": "Opened Hatch",
+            "pid": 69
+          }
+        },
+        {
+          "text": "\u2192",
+          "destination": {
+            "name": "Hatch Chamber",
+            "pid": 15
+          }
+        },
+        {
+          "text": "\u2193",
+          "destination": {
+            "name": "Usable Shield Room",
+            "pid": 38
+          }
+        },
+        {
+          "text": "\u2193",
+          "destination": {
+            "name": "Unpowered Shield Room",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Usable Shield Room",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/\nhalls-sw-2.png\" class=\"limit\">\n\n(if: $chance_of_thud_in_halls is not 0)[(either: ...$chance_of_thud_in_halls)]\nThis hall is like the others, except there is a strange device here, and in one corner of it, it looks like there's a window to another world and a prominent paw print. (if: $shield_refreshed is not 0)[The paw print is glowing, and the window shines brightly. THE SHELL IS THICKENED!\n](else:)[[I could touch my tiny paw to the huge paw print.]<activateshield|]\n\n(click: ?activateshield)[(set: $shield_refreshed to true)(set: $chance_of_thud_in_halls to $thinggg_in_halls)(set: $chance_of_thud_in_warren to $thinggg_in_warren)(show: ?pressing)(replace: ?activateshield)[The paw print is glowing, and the window shines brightly.]]{\n}[\n<div class=\"pulse-in\">In the distance, I hear a mighty crackling, and the window to another place shines so much it hurts my eyes for a moment. Something in the window has changed.[[ Look at the window->Master Viewscreen]]</div>](pressing|{\n}\n[[I could move closer to get a look at the window->Master Viewscreen]]\n\n\n<section class=\"template ursmap\"><table><tbody><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr><tr><td>\u25ad</td><td>\u25ad</td><td class=\"majestic\"><div>\u25ad</div></td><td>[[\u2191->Right Hall]]</td><td>\u25ad</td></tr><tr><td></td><td>\u25ad</td><td>[[\u2190->Bottom Hall]]</td><td>\u25a3</td><td></td></tr></tbody></table></section>",
+      "links": [
+        {
+          "text": " Look at the window",
+          "destination": {
+            "name": "Master Viewscreen",
+            "pid": 79
+          }
+        },
+        {
+          "text": "I could move closer to get a look at the window",
+          "destination": {
+            "name": "Master Viewscreen",
+            "pid": 79
+          }
+        },
+        {
+          "text": "\u2191",
+          "destination": {
+            "name": "Right Hall",
+            "pid": 37
+          }
+        },
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Bottom Hall",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Long Landscape",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/surface-2.png\" class=\"fullwidth\">\n\nWhat a majestic place I have entered.  Every rabbit I know has lived and bred without seeing that this place **is**.  I can't even imagine, and I'm looking at it.\n\n[[Should I keep on following this landscape, hoping something is here->Longer Landscape]]?\n\nor [[\u21a9 go back to the Halls->Opened Hatch]]",
+      "links": [
+        {
+          "text": "Should I keep on following this landscape, hoping something is here",
+          "destination": {
+            "name": "Longer Landscape",
+            "pid": 40
+          }
+        },
+        {
+          "text": "\u21a9 go back to the Halls",
+          "destination": {
+            "name": "Opened Hatch",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Longer Landscape",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/surface-2b.png\" class=\"fullwidth\">\n\nI feel so light here, and I am able to leap a great distance with each hop.\n\nHow could somerabbit have dug out such a giant place?  I hop as high as my paws will send me, **because I can**! \n\nI see a tiny bump in the distance, like a shining rock sticking out of the dirt.\n\n[[That bump is the first hope of promise so I hop on->Real Long Landscape]]\n\nor [[\u21a9 go back to the Halls->Opened Hatch]]",
+      "links": [
+        {
+          "text": "That bump is the first hope of promise so I hop on",
+          "destination": {
+            "name": "Real Long Landscape",
+            "pid": 41
+          }
+        },
+        {
+          "text": "\u21a9 go back to the Halls",
+          "destination": {
+            "name": "Opened Hatch",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Real Long Landscape",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/surface-3b.png\" class=\"fullwidth\">\n\nEven as light as I now am, hopping is still hard work. I stop to wiggle my nose. I have begun to get accustomed to this vast space where I can move freely with no digging.\n\nI see now what I thought was a bump looks more like a bubble.  Where there are bubbles there could be a river.  What a river it must be to hold a bubble that big.\n\n[[I walk closer to this mysterious bubble->Longest Damn Landscape]] \n\nor [[\u21a9 go back to the Halls->Opened Hatch]]",
+      "links": [
+        {
+          "text": "I walk closer to this mysterious bubble",
+          "destination": {
+            "name": "Longest Damn Landscape",
+            "pid": 42
+          }
+        },
+        {
+          "text": "\u21a9 go back to the Halls",
+          "destination": {
+            "name": "Opened Hatch",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Longest Damn Landscape",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/surface-4b.png\" class=\"fullwidth\">\n\nI tire a bit, and rest.  The bubble in the distance is like, half the shape of the bubbles I have seen floating off of the river in the warren.  It still looks far away but I can probably get to it.  What am I saying? \n[[I can get to the bubble ->The Bubble]], I know I can!\n\nI am tired though, maybe I should [[\u21a9 go back to the Halls->Opened Hatch]]",
+      "links": [
+        {
+          "text": "I can get to the bubble ",
+          "destination": {
+            "name": "The Bubble",
+            "pid": 46
+          }
+        },
+        {
+          "text": "\u21a9 go back to the Halls",
+          "destination": {
+            "name": "Opened Hatch",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Entrance to City of the \u00dcrs",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-entry-stones.png\" class=\"limit\">\n\nThe path is made of stones that have nothing underneath them but air.  It seems to lead to a courtyard near three large buildings. [[If the stones can lift themselves, perhaps they can lift me, so I walk across them->City of the \u00dcrs Awakens]] or I can [[return to the safety of the cliffs->City of the \u00dcrs]].",
+      "links": [
+        {
+          "text": "If the stones can lift themselves, perhaps they can lift me, so I walk across them",
+          "destination": {
+            "name": "City of the \u00dcrs Awakens",
+            "pid": 51
+          }
+        },
+        {
+          "text": "return to the safety of the cliffs",
+          "destination": {
+            "name": "City of the \u00dcrs",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Ears of The \u00dcrs",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-city-ears-enter-2.png\" class=\"fullwidth\">\n\nWhat \u00dcr-rabbit would have been so bold to cross these imposing gates.  I can feel my legs shake, which makes me want to run away, but I have come this far, so maybe [[I walk through the gap and into the path leading into the bubble->Entrance to City of the \u00dcrs]] \n\nor, [[\u21a9 I run back to the safety of the cliffs->City of the \u00dcrs]]",
+      "links": [
+        {
+          "text": "I walk through the gap and into the path leading into the bubble",
+          "destination": {
+            "name": "Entrance to City of the \u00dcrs",
+            "pid": 43
+          }
+        },
+        {
+          "text": "\u21a9 I run back to the safety of the cliffs",
+          "destination": {
+            "name": "City of the \u00dcrs",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Leave The Hatch",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/surface-1.png\" class=\"fullwidth\">\n\nI crawl through the giant hatch into a vast place.\n\nWhat did I think was large before?  This is the biggest place I have ever been.  It has the thinnest clear walls of any place, and even beyond, there is blackness, and speckles.  One giant sphere hangs in the sky, a place with swirls.\n\n[[Should I traverse this long landscape->Long Landscape]]?\n\nor [[\u21a9 go back to the Halls->Opened Hatch]]",
+      "links": [
+        {
+          "text": "Should I traverse this long landscape",
+          "destination": {
+            "name": "Long Landscape",
+            "pid": 39
+          }
+        },
+        {
+          "text": "\u21a9 go back to the Halls",
+          "destination": {
+            "name": "Opened Hatch",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "The Bubble",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-city-dome.png\" class=\"img-gen\">\n\nFinally this shimmering place is before me.  The bubble shines and pulses like a heartbeat. There are towers and halls inside a cieling skin much like the one over this whole place.\n\n[[I hop down the slope to the bubble->City of the \u00dcrs]]",
+      "links": [
+        {
+          "text": "I hop down the slope to the bubble",
+          "destination": {
+            "name": "City of the \u00dcrs",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "Shield THUD Viewscreen",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/\nsurface-meteor-strike.png\" class=\"limit\">\n\nI look at this strange window and see the largest room you can imagine, and a rabbit shaped tower in the distance.  Just as I get a sense of perspective,\n\n\n<div class=\"thud\">THUD</div>\n\nFor the first time, I see what causes the <span class=\"thud\">THUD</span>.  It is giant rocks hitting the roof of this huge space!  I can see this thin roof crackle and shake each time.  It looks like it was designed to protect against the rocks, but maybe it's not doing such a good job anymore.\n\nor, [[\u21a9 step away from the machine->Unpowered Shield Room]]\n\n<section class=\"template ursmap\"><table><tbody><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr><tr><td>\u25ad</td><td>\u25ad</td><td class=\"majestic\"><div>\u25ad</div></td><td>[[\u2191->Right Hall]]</td><td>\u25ad</td></tr><tr><td></td><td>\u25ad</td><td>[[\u2190->Bottom Hall]]</td><td>\u25a3</td><td></td></tr></tbody></table></section>",
+      "links": [
+        {
+          "text": "\u21a9 step away from the machine",
+          "destination": {
+            "name": "Unpowered Shield Room",
+            "pid": 62
+          }
+        },
+        {
+          "text": "\u2191",
+          "destination": {
+            "name": "Right Hall",
+            "pid": 37
+          }
+        },
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Bottom Hall",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Useless Device",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/\nhalls-se-device-2.png\" class=\"limit\">\nThis is a strange box indeed. It doesn't hum, or make any noise, and its little window is completely dark.\n\nI can [touch my paw to the paw print]<touch|(click: ?touch)[ but...\n\n<div class=\"pulse-in\">Nothing happens.</div>\n\n]\nor, [[\u21a9 step away from the machine->Bottom Left Hall]]\n\n<section class=\"ursmap\"><table><tbody><tr><td></td> <td>\u25ad</td> <td>\u25ad</td><td>\u25ad</td> <td></td></tr><tr><td>\u25ad</td><td>[[\u2191->Left Hall]]</td><td class=\"majestic\"><div>\u25ad</div></td><td>\u25ad</td><td>\u25ad</td></tr><tr><td></td><td>\u25a3</td><td>[[\u2192->Bottom Hall]]</td><td>\u25ad</td><td></td></tr></tbody></table></section>",
+      "links": [
+        {
+          "text": "\u21a9 step away from the machine",
+          "destination": {
+            "name": "Bottom Left Hall",
+            "pid": 32
+          }
+        },
+        {
+          "text": "\u2191",
+          "destination": {
+            "name": "Left Hall",
+            "pid": 30
+          }
+        },
+        {
+          "text": "\u2192",
+          "destination": {
+            "name": "Bottom Hall",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Red Zone Steering Device",
+      "text": "(if: $shield_refreshed is not 0)[<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/steering-position-1-shield.png\" class=\"limit\">](else: )[<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/steering-position-1.png\" class=\"limit\">]\n\nI hop up onto the little platform next to this strange... I have no words to describe this thing. I have never seen anything like it. \n\nI sit on the little platform contemplating the strangeness of this thing.\nSuddenly it blinks awake in a confusion of colored lights. \n\nI now recognize three large paw prints. Two paws are side by side directly in front of me and there is larger paw at the base of this thing below me.  These prints are all larger than my paw but I could probably put my paw against them. Where is the fourth paw? Do \u00dcrs have only three paws?\n\nI take a closer look at this device.\n\nThe <span class=\"steering-white\">white</span> circle is around the <span class=\"steering-red\">red</span> dot.\n\n* The left paw print is <span class=\"steering-dark\">dark</span>, [I press the left paw print]<pressleft|\n* The right paw print is <span class=\"steering-orange\">orange</span> [[I press the right paw print->Orange Zone Steering Device]]\n* The large paw print is <span class=\"steering-dark\">dark</span>, [I press the large paw print]<presslarge|\n\nor, [[\u21a9 step away from the device->Top Hall]]{\n(click-append: ?pressleft)[<span class=\"pulse-in\">, but nothing happens.</span>]\n(click-append: ?presslarge)[<span class=\"pulse-in\">, but nothing happens.</span>]\n}",
+      "links": [
+        {
+          "text": "I press the right paw print",
+          "destination": {
+            "name": "Orange Zone Steering Device",
+            "pid": 70
+          }
+        },
+        {
+          "text": "\u21a9 step away from the device",
+          "destination": {
+            "name": "Top Hall",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "\u00dcrs Courtyard",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-courtyard-2.png\" class=\"limit\">\n\nThere's a whole city of spires and blocks in the distance, but it looks like I'm on some kind of island.  I can't tell how to get to the other parts here, but ahead of me are three large buildings.  Light glows from their entrances.\n\nI can enter:\n* [[The Paw symbol door->Sioban's Palace]]\n* [[The Rabbit symbol door->Ebony's Palace]]\n* [[The Circles symbol door->Tristan's Palace]] \n\nor [[\u21a9 go back to the entrance->City of the \u00dcrs]]",
+      "links": [
+        {
+          "text": "The Paw symbol door",
+          "destination": {
+            "name": "Sioban's Palace",
+            "pid": 66
+          }
+        },
+        {
+          "text": "The Rabbit symbol door",
+          "destination": {
+            "name": "Ebony's Palace",
+            "pid": 67
+          }
+        },
+        {
+          "text": "The Circles symbol door",
+          "destination": {
+            "name": "Tristan's Palace",
+            "pid": 68
+          }
+        },
+        {
+          "text": "\u21a9 go back to the entrance",
+          "destination": {
+            "name": "City of the \u00dcrs",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "City of the \u00dcrs Awakens",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-entry-stones-active.png\" class=\"limit\">\n\nI hop carefully across these stones, and they indeed hold my weight, as well as their own.  \n\nAs I hop onto the final stone before the opening, the symbols that circle the opening come to life and glow in a cool blue light all around me. I tingle all over from my nose to my tail.\n\nI have seen these symbols in the Halls of the \u00dcrs. I knew then that they must mean words but now I **understand**, a little, the words they are meant to speak. They are not words like the ones that I know, it would take many of my small words to fill them. To tell another rabbit what they mean would be impossible for me if they did not already understand them.\n\nThe first word means this great city of the \u00dcrs. I should be terrified but I do not feel afraid at all.\n\nThe Second made of circles says \"This is where I am, this is where we ALL are,\" and it is a larger place than I have ever known.  I am on a ball, circling another great ball of storms, circling another ball of fire.\n\nThe third word is the paw of the \u00dcr. It is their mark, their paws touch everything. I feel certainty that the \u00dcrs are responsible for everything on this ball, and probably me too.\n\nI see three of the great Ur words but I do not see the fourth, but I feel complete.\n\nHop onward to the [[\u00dcrs Courtyard]] or [[return to the safety of the cliffs->City of the \u00dcrs]].",
+      "links": [
+        {
+          "text": "\u00dcrs Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        },
+        {
+          "text": "return to the safety of the cliffs",
+          "destination": {
+            "name": "City of the \u00dcrs",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Upper Ledge",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ledge-teleport.png\" class=\"img-gen\">\n\nSuddenly I am on a ledge.\nMy fur is all tingly and crackling and it's a little hard to think. \nThe sensation is not entirely unpleasnt.\n\nI look around me.\n\nI can't guess what purpose this place once held.  Like many places here, it has been damaged by the <span class=\"thud\">THUD</span>; it is a tower made to look like a giant rabbit.  Its once majestic paw has broken, and (if: $ebony_advice_about_rubble is not 0)[[[piles of rubble->Pushin' Rubble]]](else: )[<span class=\"hidden-link\">[[piles of rubble->Pushin' Rubble]]</span>] are littered about. Is this one of the great \u00dcrs, turned to stone? How are they so huge?",
+      "links": [
+        {
+          "text": "piles of rubble",
+          "destination": {
+            "name": "Pushin' Rubble",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Sioban's Vestibule",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-lobby-sioban.png\"  class=\"img-gen\">\n\nThe passageway leads down to the beginning of a huge place.  Giant rabbit statues tower above me.\n\n[[I continue on to see what this place contains->Sioban's Palace]]\n\nor [[\u21a9 Turn around and go back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "I continue on to see what this place contains",
+          "destination": {
+            "name": "Sioban's Palace",
+            "pid": 66
+          }
+        },
+        {
+          "text": "\u21a9 Turn around and go back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Sioban's Throne",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-shield-rabbit.png\"  class=\"ur-throne\">(set: $ur_visited to true)(set: $sioban_visited to true)\n\n<div class=\"speech other\"><span class=\"urspeak\">Young rabbit of the pits, I am the one who is Sioban<span></div>{\n\n}<div class=\"speech self\"><span class=\"herospeak\">Hello, old one.  What is this place?  I have lived my whole life without knowing it was here.</span></div>{\n\n}<div class=\"speech other\"><span class=\"urspeak\">It is the remains of a great city.  We were once quite beautiful and accomplished.  We created this place, and even your people in a long agoo.<span></div>{\n\n}<div class=\"speech self\"><span class=\"herospeak\">Well, then tell me how to protect from the <span class=\"thud\">THUD</span> and keep the rabbits safe.  What is happening?</span></div>{\n\n}<div class=\"speech other\"><span class=\"urspeak\">\nOur shell... is failing.  With each <span class=\"thud\">THUD</span> it becmes thinner and thinner, like the fur on the ears of an old rabbit.  But unlike that one's old ears it can be thickened.<span></div>{\n\n}<div class=\"speech self\"><span class=\"herospeak\">So then, thicken it, old  one.</span></div>{\n\n}<div class=\"speech other\"><span class=\"urspeak\">\nOur moving time is done.  We are all in our sitting time.  Our breeding time never was, and the breeding time of the Meis long done.\n<span></div>{\n\n}<div class=\"speech self\"><span class=\"herospeak\">I want to thicken the shell, then.</span></div>{\n\n}<div class=\"speech other\"><span class=\"urspeak\">\nTo THICKEN the SHELL one must have POWER. That POWER I do not possess. EBONY is of POWER. Go and speak with EBONY. If EBONY will hear you. EBONY may not. With power, ACTIVATE and the shell will THICKEN of its own. It is as it must be. It is as I have made. Be wary, the SHELL must be thick  before STEERING Adrastea, else asteroids will destroy Adrastea before you make it to safety.  \n<span></div>{\n\n}<div class=\"speech other\"><span class=\"urspeak\">\nYou are the same cold stone as me.  It is not necessary to persist in bending your fate.  Rest, young rabbit.  It might just work out.  \n<span></div>{\n\n}<div class=\"speech self\"><span class=\"herospeak\">[[I can't see why it would matter, I guess.->Dying from getting talked out of it by Sioban for real]]</span></div>{\n\n}[[\u21a9 Walk all the way back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "I can't see why it would matter, I guess.",
+          "destination": {
+            "name": "Dying from getting talked out of it by Sioban for real",
+            "pid": 92
+          }
+        },
+        {
+          "text": "\u21a9 Walk all the way back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Ebony's Vestibule",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-lobby-tristan.png\"  class=\"img-gen\">\n\nThe passageway leads down to the beginning of a huge place.  Giant rabbit statues tower above me.\n\nI [[continue on to see what this place holds->Ebony's Palace]] \n\nor [[\u21a9 Turn around and go back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "continue on to see what this place holds",
+          "destination": {
+            "name": "Ebony's Palace",
+            "pid": 67
+          }
+        },
+        {
+          "text": "\u21a9 Turn around and go back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "Ebony's Throne",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/first-of-the-Ur.png\"  class=\"ur-throne\">(set: $ur_visited to true)(set: $ebony_visited to true)(set: $ebony_advice_about_rubble to true)\n\n<div class=\"speech other\"><span class=\"urspeak\">Young rabbit of the underholes, I am the one who is Ebony<span></div>{\n\n}<div class=\"speech self\"><span class=\"herospeak\">Hello, old one. I have to THICKEN the SHELL but I do not have the POWER to do it. I need help.</span></div>{\n\n}<div class=\"speech other\"><span class=\"urspeak\">I still remember everything about how to work the machines.  Well, some things.  Well, I barely remember.</span></div>{\n\n}<div class=\"speech self\"><span class=\"herospeak\">Anything would help</span></div>{\n\n}<div class=\"speech other\"><span class=\"urspeak\">You need to turn the shell to this place on?  There is no point!  It is only a rock.  If you insist, uncover the generator diode at the foot of the transformer. From it the POWER will flow. The transformer is atop the idol of the primitive underhole rabbits. I am sure of it. I really don't know. If you care so much, I can [[take you there with my mind.->Portal to Ledge]] and you can find out for yourself. Or not. <span></div>{\n\n}<div class=\"speech other\"><span class=\"urspeak\">\nJust remember, for every rock you move, you are also moved.  There is a power in stillness.  Don't think you can just shove things to and fro. \n<span></div>{\n\n}<div class=\"speech self\"><span class=\"herospeak\">[[You're right, sir Ebony.  I am not a fan of mind journeys, just regular journeys.  Unless... perhaps... send me home?->The end from getting talked out of it by Ebony]]</span></div>{\n\n}[[\u21a9 Walk all the way back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "take you there with my mind.",
+          "destination": {
+            "name": "Portal to Ledge",
+            "pid": 76
+          }
+        },
+        {
+          "text": "You're right, sir Ebony.  I am not a fan of mind journeys, just regular journeys.  Unless... perhaps... send me home?",
+          "destination": {
+            "name": "The end from getting talked out of it by Ebony",
+            "pid": 93
+          }
+        },
+        {
+          "text": "\u21a9 Walk all the way back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Tristan's Vestibule",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-lobby-ebony.png\"  class=\"img-gen\">\n\nThe passageway leads down to the beginning of a huge place.  Giant rabbit statues tower above me.\n\nI [[continue on to see what this place is->Tristan's Palace]]\n\nor [[\u21a9 Turn around and go back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "continue on to see what this place is",
+          "destination": {
+            "name": "Tristan's Palace",
+            "pid": 68
+          }
+        },
+        {
+          "text": "\u21a9 Turn around and go back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "Tristan's Throne",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-tristan.png\" class=\"ur-throne\">(set: $ur_visited to true)(set: $tristan_visited to true)\n\n<div class=\"speech other\"><span class=\"urspeak\">Young rabbit of the underholes, I am the one who is Tristan<span></div>{\n\n}<div class=\"speech self\"><span class=\"herospeak\">Hello, old one.  I can't figure out how to make the Warren safe.  Don't you care?</span></div>{\n\n}<div class=\"speech other\"><div class=\"urspeak\">We once used to STEER (\ubaa8\ud4e8\ub798), to drive.  We once changed course, moved, when needed.  Now we stay on parabola.  Now we dine on star seed.  Nothing hurts us, only loves us.\n\nWe do not build.  We do not control.  We ARE.  And know.  That is finally what will be.  We care nothing for this SHELL.</div></div>{\n\n}<div class=\"speech self\"><span class=\"herospeak\">STEER? Ok, how do I move this place then?</span></div>{\n\n}<div class=\"speech other\"><span class=\"urspeak\">Set the reticle of the STEERING CORE to GREEN.  If you really feel like it's important.  I can tell you though, it is not.  Listen to me and just find a place to rest until the end.<span></div>{\n\n}<div class=\"speech other\"><span class=\"urspeak\">\nThere is only one way to go, and that is the way you are going.  Why go to a different place.   This rock Adrastea came from so far away.  Now it is here.  This is the place where Adrastea is.\n<span></div>{\n\n}<div class=\"speech self\"><span class=\"herospeak\">[[This... is as it is supposed to be?  That seems right.->Dying from getting talked out of it by Tristan]]</span></div>{\n\n}[[\u21a9 Walk all the way back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "This... is as it is supposed to be?  That seems right.",
+          "destination": {
+            "name": "Dying from getting talked out of it by Tristan",
+            "pid": 94
+          }
+        },
+        {
+          "text": "\u21a9 Walk all the way back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Warrenherd Speech 1",
+      "text": "{<div class=\"speech other\"><span class=\"warrenherdspeak\">My perfect, young one.  The <span class=\"thud\">THUD</span> has come and gone before many times.  It's true that this seems a little more than usual, but you don't remember very severe times before you were even a kit.</span></div>\n\n|warrenherdquestion>[<div class=\"speech self\"><span class=\"herospeak\">Old rabbit, I say, the <span class=\"thud\">THUD</span> is upon us.  I fear that we will be shaken such that the dirt collapses all around us and there are no rabbits left to create kits.  Don't you think we should have some action we can try?</span></div>]\n\n(click: ?warrenherdquestion)[ (display: \"Warrenherd Speech 2\")]}",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "Warrenherd Speech 2",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Warrenherd Speech 2",
+      "text": "{<div class=\"speech other\"><span class=\"warrenherdspeak\">We've taken steps.  I'm here to safeguard the rabbits, and that means you too, little one.</span></div>\n\n<p>What should I say?</p>\n\n[[<div class=\"speech self\"><span class=\"herospeak\">Thank you sir, for putting my mind at ease.  You're right, these explosions will die down soon.  I'll get back to work.</span></div>->The End From Giving Up]]\nor\n[[<div class=\"speech self\"><span class=\"herospeak\">With all respect sire, it's only gotten worse and worse.  I think you might not be experiencing the same thing I am.<span></div>->The Warrenherd's Distraction]]}",
+      "links": [
+        {
+          "text": "<div class=\"speech self\"><span class=\"herospeak\">Thank you sir, for putting my mind at ease.  You're right, these explosions will die down soon.  I'll get back to work.</span></div>",
+          "destination": {
+            "name": "The End From Giving Up",
+            "pid": 13
+          }
+        },
+        {
+          "text": "<div class=\"speech self\"><span class=\"herospeak\">With all respect sire, it's only gotten worse and worse.  I think you might not be experiencing the same thing I am.<span></div>",
+          "destination": {
+            "name": "The Warrenherd's Distraction",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "Shield Activated Viewscreen",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/shield-activated-ting.png\" class=\"limit\">\n\nI look at this strange window and see the largest room you can imagine.  The glowing roof is now fully powered, and when a big rock hits it, it makes a more muted sound.  Kind of a sound like,\n\n<div class=\"tinggg\">TINGGG</div>\n\nThe giant rocks just bounce off.  Perhaps the Warren is safe now, but I can't be sure.  Maybe there's a way to make it safe for longer.\n\n[[\u21a9 step away from the machine->Usable Shield Room]]\n\n<section class=\"template ursmap\"><table><tbody><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr><tr><td>\u25ad</td><td>\u25ad</td><td class=\"majestic\"><div>\u25ad</div></td><td>[[\u2191->Right Hall]]</td><td>\u25ad</td></tr><tr><td></td><td>\u25ad</td><td>[[\u2190->Bottom Hall]]</td><td>\u25a3</td><td></td></tr></tbody></table></section>",
+      "links": [
+        {
+          "text": "\u21a9 step away from the machine",
+          "destination": {
+            "name": "Usable Shield Room",
+            "pid": 38
+          }
+        },
+        {
+          "text": "\u2191",
+          "destination": {
+            "name": "Right Hall",
+            "pid": 37
+          }
+        },
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Bottom Hall",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "Unpowered Shield Room",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/\nhalls-sw-1.png\" class=\"limit\">\n(if: $chance_of_thud_in_halls is not 0)[(either: ...$chance_of_thud_in_halls)]\nThis hall is like the others, except there is a strange device here, and in one corner of it, it looks like there's a window to another world and a prominent paw print. [[I could touch my tiny paw to the huge paw print.]<activateshield|]\n(click: ?activateshield)[(show: ?pressing)]{\n}[\n<div class=\"pulse-in\">In the distance, I hear the beginning of a crackling sound, but then the sound dies down.  I don't think it did what it was supposed to do.  There's got to be some way I can get it to work.  I wonder if the \u00dcrs would know.  I wonder if there even **are** any \u00dcrs.</div>\n](pressing|{\n}[[I could move closer to get a look at the window->Shield THUD Viewscreen]]\n\n<section class=\"template ursmap\"><table><tbody><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr><tr><td>\u25ad</td><td>\u25ad</td><td class=\"majestic\"><div>\u25ad</div></td><td>[[\u2191->Right Hall]]</td><td>\u25ad</td></tr><tr><td></td><td>\u25ad</td><td>[[\u2190->Bottom Hall]]</td><td>\u25a3</td><td></td></tr></tbody></table></section>",
+      "links": [
+        {
+          "text": "I could move closer to get a look at the window",
+          "destination": {
+            "name": "Shield THUD Viewscreen",
+            "pid": 47
+          }
+        },
+        {
+          "text": "\u2191",
+          "destination": {
+            "name": "Right Hall",
+            "pid": 37
+          }
+        },
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Bottom Hall",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Pushin' Rubble",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ledge-norubble-diode.png\" class=\"img-gen\">\n\nIt's obvious the rubble is covering something, I use my powerful rabbit legs to shove the rocks away, and a weird tettleplant made of metal is revealed!  Maybe this will make something else work.\n\nTo be honest, i'm a little dissapointed. Is that it? Just move pile of rocks? The mighty \u00dcr-Rabbit dug an invisible hole WITH ITS MIND and hopped me all the way through it just to move a pile of rocks? \n\nI wait ... Nothing happens.\n\nI can clearly see the opening of a tiny tunnel back to the upper hub. The tunnel is blocked by loose debris from the broken paw of the giant rabbit. From this end of the tunnel I have no doubt I can easily dig past it.\n\n[[ I hop to the entrance of the tiny tunnel. ->Upper Ledge With Diode]] \n(set: $diode_is_cleared to true)",
+      "links": [
+        {
+          "text": " I hop to the entrance of the tiny tunnel. ",
+          "destination": {
+            "name": "Upper Ledge With Diode",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "Upper Ledge With Diode",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ledge-powered-leap-diode.png\" class=\"img-gen\">\n\nZZZZZZZZZZAP!!! \nA bright stream of crackling, sizzling light bursts from the bud of the metal Tettle plant! \n\nI LEAP out of its way as fast as my little legs can carry me but I am not quite fast enough.\n\nMy tail gets singed.\n\nFearing for my life I dive into the entrance of the tiny tunnel and [[scoot back to the upper hubb->Upper Hub]]",
+      "links": [
+        {
+          "text": "scoot back to the upper hubb",
+          "destination": {
+            "name": "Upper Hub",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "Lower Ledge With Diode",
+      "text": "(if: $diode_is_cleared is not 0)[\n<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/w-ruin-l1-active.png\" class=\"img-gen\">\n\n I look up and watch the giant rocks coast by. The metal Tettle plant at the foot of the giant rabbit now has ragged streams of bright pink light flowing out of it. It is so bright it hurts my eyes and I have to look away. There is a loud buzzing sound and a tingle in the air that makes my fur rise.\n \n My tail hurts.\n\n](else:)[\n<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/w-ruin-l1-inactive.png\" class=\"img-gen\">\n\nI walk out on a red rock ledge.\n\nWhat did I think was large before?  This is the biggest place I have ever been.  I am on a giant platform and in a room so large I can't clearly see the end of it.  It has the thinnest clear walls of any place, and even beyond, there is blackness, and speckles. Giant rocks coast by.\n\nThere are other entrances on this spire, but there is nowhere safe to go from this ledge.\n]\n[[The only place to go is through the tunnel back to the Upper Hub->Upper Hub]]",
+      "links": [
+        {
+          "text": "The only place to go is through the tunnel back to the Upper Hub",
+          "destination": {
+            "name": "Upper Hub",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Sioban's Palace",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-sioban-2.png\" class=\"img-gen\">\n\n(if: $ur_visited is not 0)[I am in another massive \u00dcr palace.  Giant rabbit statues tower above me, and this place is even bigger than the Halls, even more imposing.  What strange and round creature could be at the end of **this** strange place?](else: )[I am in a massive place with some kind of platform or throne wayyyyyyyy at the other end.  Giant rabbit statues tower above me, and this place is even bigger than the Halls, even more imposing. On it sits an enormous...rabbit, or round, rabbit-like machine.  Could this be an \u00dcr?]\n\n[[I approach the throne->Sioban's Throne]] \n\nor [[\u21a9 Walk back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "I approach the throne",
+          "destination": {
+            "name": "Sioban's Throne",
+            "pid": 54
+          }
+        },
+        {
+          "text": "\u21a9 Walk back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "Ebony's Palace",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-ebony-2.png\"  class=\"img-gen\">\n\n(if: $ur_visited is not 0)[I am in another massive \u00dcr palace.  Giant rabbit statues tower above me, and this place is even bigger than the Halls, even more imposing.  What strange and crackling creature could be at the end of **this** strange place?](else: )[I am in a massive place with some kind of platform or throne wayyyyyyyy at the other end.  Giant rabbit statues tower above me, and this place is even bigger than the Halls, even more imposing. On it sits an enormous...rabbit, or crackling, rabbit-like machine.  Could this be an \u00dcr?]\n\n[[I approach the throne->Ebony's Throne]] \n\nor [[\u21a9 Walk back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "I approach the throne",
+          "destination": {
+            "name": "Ebony's Throne",
+            "pid": 56
+          }
+        },
+        {
+          "text": "\u21a9 Walk back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "Tristan's Palace",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/ur-tristan-2.png\"  class=\"img-gen\">\n\n(if: $ur_visited is not 0)[I am in another massive \u00dcr palace.  Giant rabbit statues tower above me, and this place is even bigger than the Halls, even more imposing.  What strange and luminous creature could be at the end of **this** strange place?](else: )[I am in a massive place with some kind of platform or throne wayyyyyyyy at the other end.  Giant rabbit statues tower above me, and this place is even bigger than the Halls, even more imposing. On it sits an enormous...rabbit, or luminous, rabbit-like machine.  Could this be an \u00dcr?]\n\n[[I approach the throne->Tristan's Throne]] \n\nor [[\u21a9 Walk back out to the Courtyard->\u00dcrs Courtyard]]",
+      "links": [
+        {
+          "text": "I approach the throne",
+          "destination": {
+            "name": "Tristan's Throne",
+            "pid": 58
+          }
+        },
+        {
+          "text": "\u21a9 Walk back out to the Courtyard",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "Opened Hatch",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/halls-hatch-open-2.png\" class=\"limit\">\n\n(if: $hatch_opened is not 0)[This is the gateway between the Halls of the \u00dcrs and the places beyond.](else: )[When I press the paw print, the hatch falls into the floor, and its handle clanks to the ground, almost hitting me.  Scary, but now a whole new place is before me.(set: $hatch_opened to true)]\n\n[[I can hop a little further beyond the door and peek out->Opened Hatch Peek]](if: $ur_visited is not 0)[or, [[I can hop the long way all the way back to the courtyard leading to the \u00dcrs->\u00dcrs Courtyard]]]\n\nor I can [[\u21a9 walk back into the Halls->Right Hall]] ",
+      "links": [
+        {
+          "text": "I can hop a little further beyond the door and peek out",
+          "destination": {
+            "name": "Opened Hatch Peek",
+            "pid": 2
+          }
+        },
+        {
+          "text": "I can hop the long way all the way back to the courtyard leading to the \u00dcrs",
+          "destination": {
+            "name": "\u00dcrs Courtyard",
+            "pid": 50
+          }
+        },
+        {
+          "text": "\u21a9 walk back into the Halls",
+          "destination": {
+            "name": "Right Hall",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "Orange Zone Steering Device",
+      "text": "(if: $shield_refreshed is not 0)[<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/steering-position-2-shield.png\" class=\"limit\">](else: )[<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/steering-position-2.png\" class=\"limit\">]\n\nThe colored lights above me blink wildly. In the distance, from what feels like deep beneath me, I feel... a rumble? The <span class=\"steering-white\">white</span> circle is now around the <span class=\"steering-orange\">orange</span> dot.\n\n* The left paw print is <span class=\"steering-red\">red</span>, [[I press the right paw print->Red Zone Steering Device]]\n* The right paw print is <span class=\"steering-green\">green</span> [[I press the right paw print->Green Zone Steering Device]]\n* The large paw print is <span class=\"steering-orange-pulse\">pulsing orange</span>, [I press the large paw print]<presslarge|\n\nor, [[\u21a9 step away from the device->Top Hall]]\n{\n(click: ?presslarge)[\n  (if: $shield_refreshed is not 0)[\n    (goto: \"Moving THINGGG Death\")\n  ](else: )[\n    (goto: \"Moving THUD Death Orange\")\n  ]\n]\n\n}",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Moving THINGGG Death",
+            "pid": 74
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Moving THUD Death Orange",
+            "pid": 75
+          }
+        },
+        {
+          "text": "I press the right paw print",
+          "destination": {
+            "name": "Red Zone Steering Device",
+            "pid": 49
+          }
+        },
+        {
+          "text": "I press the right paw print",
+          "destination": {
+            "name": "Green Zone Steering Device",
+            "pid": 71
+          }
+        },
+        {
+          "text": "\u21a9 step away from the device",
+          "destination": {
+            "name": "Top Hall",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "Green Zone Steering Device",
+      "text": "(if: $shield_refreshed is not 0)[<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/steering-position-3-green.png\" class=\"limit\">](else: )[<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/steering-position-3.png\" class=\"limit\">]\n\nThe colored lights above me blink wildly. Deep beneath me I feel another rumble greater than the last. The <span class=\"steering-white\">white</span> circle is now around the <span class=\"steering-green\">green</span> dot.\n\n* The left paw print is <span class=\"steering-orange\">orange</span>, [[I press the left paw print->Orange Zone Steering Device]]\n* The right paw print is <span class=\"steering-dark\">dark</span>, [I press the right paw print]<pressright|\n* (if: $shield_refreshed is not 0)[The large paw print is <span class=\"steering-green\">green</span>, ](else: )[The large paw print is <span class=\"steering-red-pulse\">pulsing red</span>, ][I press the large paw print]<presslarge|\n\nor, [[\u21a9 step away from the device->Top Hall]]{\n(click-append: ?pressright)[<span class=\"pulse-in\">, but nothing happens.</span>]\n(click: ?presslarge)[\n  (if: $shield_refreshed is not 0)[\n    (goto: \"Lurch One\")\n  ](else: )[\n    (goto: \"Moving THUD Death Green\")\n  ]\n]\n}\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Lurch One",
+            "pid": 80
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Moving THUD Death Green",
+            "pid": 73
+          }
+        },
+        {
+          "text": "I press the left paw print",
+          "destination": {
+            "name": "Orange Zone Steering Device",
+            "pid": 70
+          }
+        },
+        {
+          "text": "\u21a9 step away from the device",
+          "destination": {
+            "name": "Top Hall",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "The Rabbits are Saved",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/thin-ears.png\" class=\"limit\">\n\nIt has now been so many growing cycles without the THUD that I no longer count them. Most of the rabbits have already forgotten. New kits are being born everywhere in the Warren. They are digging and scuffling without knowledge or fear of the THUD. \n\nThe fur on my ears grows thin. \n\nThe (if: $returned_to_river is not 0)[River Rabbit](else: )[[[River Rabbit->River Rabbit Conversation]]] was right. \u201cIf you think more rabbits need to be born then I guess you can try and do something about it.\u201d was the advice that wise old rabbit gave me.\n\nWell, I did something about it.\n\n\n\n[[Start over?->The Thud]]\n\n<span class=\"urspeak\">[[credits?->Credits?]]</span>\n",
+      "links": [
+        {
+          "text": "River Rabbit",
+          "destination": {
+            "name": "River Rabbit Conversation",
+            "pid": 85
+          }
+        },
+        {
+          "text": "Start over?",
+          "destination": {
+            "name": "The Thud",
+            "pid": 16
+          }
+        },
+        {
+          "text": "credits?",
+          "destination": {
+            "name": "Credits?",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "Moving THUD Death Green",
+      "text": "<div class=\"thud\">THUD THUD THUD</div>\n<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/explosion.png\" class=\"img-med\">\n<div class=\"thud\">KRRRRAAKAKKK</div>\n\nMaybe with the shell thickened, you could have moved the Warren to safety.\n\n[[Rewind to the moment before this happened?->Green Zone Steering Device]]",
+      "links": [
+        {
+          "text": "Rewind to the moment before this happened?",
+          "destination": {
+            "name": "Green Zone Steering Device",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "Moving THINGGG Death",
+      "text": "<div class=\"tinggg\">TNIG TING TING...</div>\n<div class=\"thud\">THUD THUD THUD</div>\n<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/explosion.png\" class=\"img-med\">\n\n<div class=\"thud\">KRRRRAAKAKKK</div>\n\nYou didn't move the Warren to a safe place, even though the shell was thickened, it couldn't hold up forever.\n\n[[Rewind to the moment before this happened?->Orange Zone Steering Device]]",
+      "links": [
+        {
+          "text": "Rewind to the moment before this happened?",
+          "destination": {
+            "name": "Orange Zone Steering Device",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Moving THUD Death Orange",
+      "text": "<div class=\"thud\">THUD THUD THUD</div>\n<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/explosion.png\" class=\"img-med\">\n<div class=\"thud\">KRRRRAAKAKKK</div>\n\nMaybe with the shell thickened, you could have moved the Warren to safety, I mean, if you'd pointed it in the right direction.\n\n[[Rewind to the moment before this happened?->Green Zone Steering Device]]",
+      "links": [
+        {
+          "text": "Rewind to the moment before this happened?",
+          "destination": {
+            "name": "Green Zone Steering Device",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "Portal to Ledge",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/portal.png\"  class=\"ur-throne\">\n\nOne moment I am speaking with the \u00dcr-rabbit Ebony and then the next\n[[I am in some strange place far away.->Upper Ledge]]",
+      "links": [
+        {
+          "text": "I am in some strange place far away.",
+          "destination": {
+            "name": "Upper Ledge",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "Credits?",
+      "text": "Made by Christopher Hayes (<a href=\"http://eptilemind.com\"><span style=\"color:#fff;\">reptilemind.com</span></a>), and Daniel Talsky (<a href=\"http://danieltalsky.com\"><span style=\"color:#fff;\">danieltalsky.com</span></a>), two guys who are friends.  They just did this so they would have something to do besides just watch Sci-Fi and Better Call Saul and drink beer.  No rabbits were hurt in the making of this interactive-ish fiction-ish.\n\nSeriously though, thanks for playing.  They barely do creative work that's not for money anymore, because if people aren't paying, they won't even look at it, especially weird story games.  Daniel had to offer to go buy cigarettes for his girlfriend just to get her to playtest it once.  \n\nThanks to this contest though, real human beings just like you willingly tried it out and maybe even gave us feedback, which is about the maximum people can hope for if they do any kind of art.\n\nIf you have any questions or comments and it's an emergency, then please call the authorities and don't hang up or they'll just send a cop car anyway to make sure.  Let them know your address and the nature of your emergency and please stay calm.\n\nIf it's not an emergency, then please email <a href=\"mailto:urs@tinyplace.org\"><span style=\"color:#fff;\">urs@tinyplace.org</span></a> and say hi. \nSo long, and thanks for all the tarantulas.\n\n[[Play \u00dcrs->\u00dcrs Title Card]]",
+      "links": [
+        {
+          "text": "Play \u00dcrs",
+          "destination": {
+            "name": "\u00dcrs Title Card",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "Blocked Upper Ledge",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/blocked-tunnel.png\" class=\"limit\">\n\nI scrabble up the slope and into the tiny tunnel as far as my little body can go. Stones block the tunnel from the other side. They are too heavy for me to move and too snug against the walls for me to wiggle past. \n\nThere is bright light and cool air coming from somewhere further up the tunnel but what lies beyond I cannot tell.\n\nI DIG!!! but my little paws were meant for softer things and are impotent against solid rock. I am certain I could move them from the other side and push them down the tunnel but from this side I can do nothing.\n\n [[All I can do is scoot back down the tiny tunnel back to the upper hub->Upper Hub]]",
+      "links": [
+        {
+          "text": "All I can do is scoot back down the tiny tunnel back to the upper hub",
+          "destination": {
+            "name": "Upper Hub",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "Master Viewscreen",
+      "text": "(if: $shield_refreshed is not 0)[<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/shield-activated-ting.png\" class=\"limit\">\n\nI look at this strange window and see that the glowing roof is now fully powered! When a big rock hits it, it makes a more muted sound.  Kind of a sound like,\n\n<div class=\"tinggg\">TINGGG</div>\n\nThe giant rocks just bounce off.  Perhaps the Warren is safe now, but I can't be sure.  Maybe there's a way to make it safe for longer.\n\n[[\u21a9 step away from the machine->Usable Shield Room]]\n\n](else:)[<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/\nshield-activated-master-view.png\" class=\"limit\">\n<div class=\"thud\">THUD</div>\n\nI look at this strange window and again I see the largest room I can imagine. I can also see the rabbit shaped tower in the distance. The giant rocks are still hitting the roof of this huge space! I can see this thin roof crackle and shake each time. It gets thinner and thinner with every rock that hits it. I know it was made to protect against the rocks, so why is it still not doing a good job?.\n\nThere must be something else I need to do to thicken it.\n \n[[\u21a9 step away from the machine->Usable Shield Room]]\n\n]\n<section class=\"template ursmap\"><table><tbody><tr><td></td><td>\u25ad</td><td>\u25ad</td><td>\u25ad</td><td></td></tr><tr><td>\u25ad</td><td>\u25ad</td><td class=\"majestic\"><div>\u25ad</div></td><td>[[\u2191->Right Hall]]</td><td>\u25ad</td></tr><tr><td></td><td>\u25ad</td><td>[[\u2190->Bottom Hall]]</td><td>\u25a3</td><td></td></tr></tbody></table></section>",
+      "links": [
+        {
+          "text": "\u21a9 step away from the machine",
+          "destination": {
+            "name": "Usable Shield Room",
+            "pid": 38
+          }
+        },
+        {
+          "text": "\u2191",
+          "destination": {
+            "name": "Right Hall",
+            "pid": 37
+          }
+        },
+        {
+          "text": "\u2190",
+          "destination": {
+            "name": "Bottom Hall",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "Lurch One",
+      "text": "\n\nI feel this whole ball <span class=\"lurch\">LURCH</span> and shake as it changes direction. \n\n[[Continue...->Lurch Two]]\n",
+      "links": [
+        {
+          "text": "Continue...",
+          "destination": {
+            "name": "Lurch Two",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "Lurch Two",
+      "text": "\n\nAnother <span class=\"lurch\">LURCH</span>\n\nI hear <span class=\"tinggg\">tinggg</span><span class=\"tinggg\">tinggg</span><span class=\"tinggg\">tinggg</span> for a while, but the sound grows less and less ... \n\n[[Continue...->Lurch Three]]\n",
+      "links": [
+        {
+          "text": "Continue...",
+          "destination": {
+            "name": "Lurch Three",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "Lurch Three",
+      "text": "\n\nThere is one last great final <span class=\"lurch\">LURCH</span> and then all the shuddering noises are gone. \n\nEverything is quiet. \n\nEverything is safe.\n\nIt seems like the rabbits must be protected for a long time now.\n\n[[Return To The Warren]]\n",
+      "links": [
+        {
+          "text": "Return To The Warren",
+          "destination": {
+            "name": "Return To The Warren",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "Return To The Warren",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/w-familiar-place.png\" class=\"limit\">\n\nI return to the warren and finally, I curl up in the fluffle huddle and sleep. \n\nEveryrabbit knows the <span class=\"thud\">THUD</span> has stopped, but none know why.  \n\n[[No one needs to know...->One Last Adventure]]",
+      "links": [
+        {
+          "text": "No one needs to know...",
+          "destination": {
+            "name": "One Last Adventure",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "One Last Adventure",
+      "text": "\nexcept maybe one ... \n\n* [[I tell the old River Rabbit about my adventure, and how I saved the Warren->River Rabbit Conversation]]\n* [[I say nothing and let the old rabbit be.->The Rabbits are Saved]]",
+      "links": [
+        {
+          "text": "I tell the old River Rabbit about my adventure, and how I saved the Warren",
+          "destination": {
+            "name": "River Rabbit Conversation",
+            "pid": 85
+          }
+        },
+        {
+          "text": "I say nothing and let the old rabbit be.",
+          "destination": {
+            "name": "The Rabbits are Saved",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "River Rabbit Conversation",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/river-rabbit-convo-cu.png\" class=\"limit\">\n\nI return to the river.\nThe River Rabbit regards me a little suspiciously, but then recognizes me.\n<div class=\"speech other\"><span class=\"riverrabbitspeak\">Ye again. Find what Ye seeked?</span></div>\nWhat should I say?\n|ursquestion>[<div class=\"speech self\"><span class=\"herospeak\"><span class=\"herospeak\">I found the places of the \u00dcr-rabbits. They were not responsible for the <span class=\"thud\">THUD</span> but they told me what to do to make the warren safe.</span></div>]|ursresponse)[I tell the River Rabbit about the \u00dcrs in as much detail as I can remember. I describe Sioban, Ebony and Tristan and how even though the \u00dcr-rabbits made a great show of not caring, in the end, they helped to save the Warren. \n<div class=\"speech other\"><span class=\"riverrabbitspeak\">So thee old stories are true. Ye found thee great places of the \u00dcrs and returned to tell of it! This old rabbit was wrong to advise Ye against it. Good for you Young One, for once this old rabbit is glad to have been wrong.</span></div>](click: ?ursquestion)[ (show: ?ursresponse) ]\n|riverquestion>[<div class=\"speech self\"><span class=\"herospeak\">I saw many strange and wonderful things on the other side of the river.</span></div>]|riverresponse)[I tell the River Rabbit about the Halls of the \u00dcrs, the many strange devices and all of the things I had to do to make the warren safe. I tell the old rabbit about the metal tettle plant and how it singed my tail. The old rabbit laughs. I describe the strange little baths in the large empty rooms with no water and the brightly colored object with a paw print too large for my tiny paw to press.\n<div class=\"speech other\"><span class=\"riverrabbitspeak\">New great mysteries of rabbits! These strange and wonderful things I would like to see.</span></div>\n[[This old rabbit may have one hop left in it still->Over The River One Last Time]] before the time comes to join with the river and go forever wherever it flows. </span></div>](click: ?riverquestion)[ (show: ?riverresponse) ]\n(set: $returned_to_river to true)",
+      "links": [
+        {
+          "text": "This old rabbit may have one hop left in it still",
+          "destination": {
+            "name": "Over The River One Last Time",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "Over The River One Last Time",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/river-rabbit-hopp-1.png\" class=\"limit\">\n\nWe hop together to the edge of the river and I leap to the other side.  \n\n[[Continue ...-> The River Rabbits Leap]]",
+      "links": [
+        {
+          "text": "Continue ...",
+          "destination": {
+            "name": "The River Rabbits Leap",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "The River Rabbits Leap",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/river-rabbit-hopp.png\" class=\"limit\">\n\nI land on the opposite side and wait patiently for the River Rabbit to follow.\n\nThe old rabbit takes his time.\n\n[[I have never witnessed a more graceful leap...or a more a perfectly joyful rabbit.-> The River Rabbit Lands]]",
+      "links": [
+        {
+          "text": "I have never witnessed a more graceful leap...or a more a perfectly joyful rabbit.",
+          "destination": {
+            "name": "The River Rabbit Lands",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "The River Rabbit Lands",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/river-rabbit-hopp-2.png\" class=\"limit\">\n\n[[He tries not to show too much pride.->The Last Mystery]]",
+      "links": [
+        {
+          "text": "He tries not to show too much pride.",
+          "destination": {
+            "name": "The Last Mystery",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "The Last Mystery",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/river-rabbit-hopp-3.png\" class=\"limit\">\n\nI lead the River Rabbit through all the halls of the \u00dcrs. The old rabbit hops silently beside me in wonder.\n\nWhen we reach the brightly colored object, we pause. \n\n\"Perhaps together, you and I, we can move the paw\", the first words the old rabbit speaks since entering the halls.\n\n[[Together we place our tiny paws on the giant paw print and with all our rabbit might, we push...->Secret Cave]]",
+      "links": [
+        {
+          "text": "Together we place our tiny paws on the giant paw print and with all our rabbit might, we push...",
+          "destination": {
+            "name": "Secret Cave",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "Secret Cave",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/w-secret-cave.png\" class=\"limit\">\n\nA tunnel at the far end of the hall that I had paid no attention to before, suddenly bursts with light. \n\nA great blast of air rushes in, blowing back our ears.\n\nThe air is fresh and clean and its scent is familiar.\n\n[[The old rabbit and I hop down the tunnel->The Rivers Secret]]",
+      "links": [
+        {
+          "text": "The old rabbit and I hop down the tunnel",
+          "destination": {
+            "name": "The Rivers Secret",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "The Rivers Secret",
+      "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/river-revealed.png\" class=\"limit\">\n\n\nThe River Rabbit and I sit together in silence for a long, long time...\nand contemplate the great mystery of rabbits.\n\n[[Epilogue->The Rabbits are Saved]]",
+      "links": [
+        {
+          "text": "Epilogue",
+          "destination": {
+            "name": "The Rabbits are Saved",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "Dying from getting talked out of it by Sioban for real",
+      "text": "<div class=\"thud\">THUD THUD THUD</div>\n<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/explosion.png\" class=\"img-med\">\n<div class=\"thud\">KRRRRAAKAKKK</div>\n\nThis doesn't matter.\n\n[[Rewind to the moment before this happened?->Sioban's Throne]]",
+      "links": [
+        {
+          "text": "Rewind to the moment before this happened?",
+          "destination": {
+            "name": "Sioban's Throne",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "The end from getting talked out of it by Ebony",
+      "text": "<div class=\"thud\">THUD THUD THUD</div>\n<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/explosion.png\" class=\"img-med\">\n<div class=\"thud\">KRRRRAAKAKKK</div>\n\nYou are home.\n\n[[Rewind to the moment before this happened?->Ebony's Throne]]",
+      "links": [
+        {
+          "text": "Rewind to the moment before this happened?",
+          "destination": {
+            "name": "Ebony's Throne",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "Dying from getting talked out of it by Tristan",
+      "text": "<div class=\"thud\">THUD THUD THUD</div>\n<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/explosion.png\" class=\"img-med\">\n<div class=\"thud\">KRRRRAAKAKKK</div>\n\nYou have found the right place.\n\n[[Rewind to the moment before this happened?->Tristan's Throne]]",
+      "links": [
+        {
+          "text": "Rewind to the moment before this happened?",
+          "destination": {
+            "name": "Tristan's Throne",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "\u00dcrs Title Card",
+      "text": "{<!--\n\tWelcome to the code for \u00dcrs the gamestorybook\n\tThis is the title card, scroll down for content\n-->\n<meta property=\"og:title\" content=\"\u00dcrs, a gamestorybook\" />\n<meta property=\"og:url\" content=\"https://urs.tinyplace.org\" />\n<meta property=\"og:image\" content=\"http://jupiter.tinyplace.org/images/The-city-of-uR-cover-e.png\" />\n<meta property=\"og:description\" content=\"A lushly illustrated gamestorybook adventure about rabbits, inspired by Watership Down, City of Ember, Skyrim, Caves of Qud, Super Mario Brothers, and Apocolypse Now. \"> \n<meta name=\"author\" content=\"Christopher Hayes and Daniel Talsky\" />\n\n<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-126698334-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-126698334-1');\n\nfunction findGetParameter(parameterName) {\n    var result = null,\n        tmp = [];\n    var items = location.search.substr(1).split(\"&\");\n    for (var index = 0; index < items.length; index++) {\n        tmp = items[index].split(\"=\");\n        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);\n    }\n    return result;\n}\n\ndocument.addEventListener('click', function (event) {\n\n\tif (event.target.matches('tw-link')) {\n\t\tvar passageName = event.target.getAttribute('passage-name');\n\t\tif (findGetParameter('rabbit') == 'chris')\n\t\t\tgtag('event', 'Navigation', {\n\t\t  \t\t'event_label': passageName,\n\t\t  \t\t'event_category': 'ChrisRabbitClick',\n\t\t\t});\n\t\tif (findGetParameter('rabbit') == 'daniel') {\n\t\t\tgtag('event', 'Navigation', {\n\t\t  \t\t'event_label': passageName,\n\t\t  \t\t'event_category': 'DanielRabbitClick',\n\t\t\t});\t\t\n\t\t} else {\n\t\t\tgtag('event', 'Navigation', {\n\t\t  \t\t'event_label': passageName,\n\t\t  \t\t'event_category': 'GuestClick',\n\t\t\t});\t\t\t\n\t\t}\n\t}\n\n}, false);  \n</script>\n}[[<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/The-city-of-uR-cover-e.png\" class=\"limit\">->The Thud]]\n<div id=\"credits\">(align: \"=><=\")[<span style=\"font-size:1.7em;\">a gamestorybook by</span>\n\n\n<span class=\"rabbits\">Christopher Hayes </span><span class=\"rabbits\" style=\"font-size:1em !important;\">&</span><span class=\"rabbits\">Daniel Talsky</span>]</div>\n\n\n<div id=\"start\">(align: \"=><=\")[[[I WANT TO PLAY NOW!->The Thud]]]</div>\n\n\n<div id=\"feedback\">(align: \"=><=\")[<a href=\"mailto:urs@tinyplace.org\">Feedback</a>\n[[Credits->Credits?]]]</div>\n<div id=\"copyright\">(align: \"=><=\")[\n<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.]</div>",
+      "links": [
+        {
+          "text": "<img src=\"https://d2g9mc6d8hcbxp.cloudfront.net/images/The-city-of-uR-cover-e.png\" class=\"limit\">",
+          "destination": {
+            "name": "The Thud",
+            "pid": 16
+          }
+        },
+        {
+          "text": "I WANT TO PLAY NOW!",
+          "destination": {
+            "name": "The Thud",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits?",
+            "pid": 77
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1527 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Title Screen",
+      "text": "\n=><=\n#Harbinger\nwritten by\n###Kenna May\n\n\n\n<==\nYou are [[a bird|Begin Story]].",
+      "links": [
+        {
+          "text": "a bird",
+          "destination": {
+            "name": "Begin Story",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Begin Story",
+      "text": "A cool breeze pulls at your feathers. The sky is overcast and the sunlight dimmed, but you know that somewhere far behind you is something warm and bright, and deadly. You've been flying in the opposite direction for days.(click: \"days\")[\n\n$f[A week ago your home was a cage in a tower. It felt big and important then. So much has changed since you were just a wizard's novelty and an unhelpful assistant. Every day you've visited a new place, entirely on your own, and every day you've seen them destroyed.\n\nYou are tired.(click: \"tired\")[\n\n$f[You rest on the thatched roof of a shack, built beside the wide river. A boat docked nearby reminds you of what you've heard of fishermen. You've never met one before. There's no other structures nearby, which is fortunate. Before the day is over a great evil will swallow this shack whole, and everyone living here will be dead.\n\nFar [[behind you|Look Behind]] the evil draws closer. On the stony ground [[below you|Look Ahead]] a man walks out of the shack's curtain door.]]]]\n\n\n",
+      "links": [
+        {
+          "text": "behind you",
+          "destination": {
+            "name": "Look Behind",
+            "pid": 3
+          }
+        },
+        {
+          "text": "below you",
+          "destination": {
+            "name": "Look Ahead",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Look Behind",
+      "text": "Over your shoulder you see the horizon line, stretching out in every direction. There's nothing sinister about the image to suggest the great evil lurking there. No smoke or stormclouds. Just a hint of magic whispering against the breeze.(click: \"hint of magic\")[\n\n$f[There's something inside of you, the same thing that lets you speak like a human, that lets you feel the magic this evil emits. The wizard felt it too, but did not heed its warning. It's what connects all magical beings, for better or for worse. It's what connects you to this evil.\n\nYou can feel it drawing closer.(click: \"drawing closer\")[\n\n$f[While you rest the evil thing gains on you. It's far away, but you know the language of magic, and magic can cross realities in a second. You can't speak to the wild crows but you can try [[talking to the evil|Talk to Spirit]]. Or you can [[ignore it|Look Ahead]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "talking to the evil",
+          "destination": {
+            "name": "Talk to Spirit",
+            "pid": 5
+          }
+        },
+        {
+          "text": "ignore it",
+          "destination": {
+            "name": "Look Ahead",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Look Ahead",
+      "text": "(if: $talkSpirit is 0)[From your perch you can see the man carrying a few sharp tools you do not recognize. ]The man carries his tools to a table set on the edge of the river, which bears what looks like a swollen tree branch. You wonder if the wizard would know what those tools are, if he were here.(click: \"if he were here\")[\n\n$f[They're small, metal and pointed. Dangerous looking, but like nothing you've seen in the tower, or the shop stalls. There's so much you don't know about in world, you wonder if you'll ever get the chance to learn.\n\nThe man is old, older than the wizard, and he grips the tools with a sort of reverence. He walks slowly but his hands look strong. Calloused with work. Other than you, he's alone.(click: \"he's alone\")[\n\n$f[The last human you spoke to threw a basket of wool at you and called you a curse. The man could do worse with what he's carrying. But you think his eyes look kind. You could try to [[warn him|Warn Man]] right now, or [[wait and watch|Watch Man]] first.]]]]\n\n\n",
+      "links": [
+        {
+          "text": "warn him",
+          "destination": {
+            "name": "Warn Man",
+            "pid": 7
+          }
+        },
+        {
+          "text": "wait and watch",
+          "destination": {
+            "name": "Watch Man",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Talk to Spirit",
+      "text": "(set: $talkSpirit to 1)You whisper into the magic on the wind separating you and the evil thing. You hear it whispering back.\n\n**Great Crow**, it says, **why do you fly so fast? I have already promised not to harm you**.\n\n\"Why are you following me?\" you ask.(click: \"you ask\")[\n\n$f[**I'm not following you. You fly to my goal, every day**. The evil voice that trickles into your head also oozes sincerity, but you know it's lying.\n\n\"I fly to the villages to warn them of you,\" you say. \"It's what the wizard would have wanted. And I fly fast to give them time to outrun you.\"\n\nThis can't be a surprise to the evil thing, but it sounds disappointed when it responds. **This wasn't part of our deal**.(click: \"our deal\")[\n\n$f[\"We never had a deal,\" you say in disgust, and turn away from the wind. The evil voice falls silent after a few moments. You focus your attention instead on the [[man below you|Look Ahead]], who carries some sharp tools you don't recognize.]]]]\n\n\n",
+      "links": [
+        {
+          "text": "man below you",
+          "destination": {
+            "name": "Look Ahead",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Initializing",
+      "text": "(set: $f to (transition: \"dissolve\"))(set: $spirit to \"spirit\")\n",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "Warn Man",
+      "text": "(if: $investigate is 1)[\"What are you making?\" you ask. That's not what you meant to say, but your curiosity has gotten the better of you. As always.\n\nThe man looks up, startled. He looks around for the source of the voice but doesn't even think to look up at the bird on his roof. You're practically invisible to most people, until you draw attention to yourself. The man has dropped the wood but holds onto his bladed tool. \"Who's there?\" he calls out.(click: \"Who's there\")[\n\n$f[\"Up here,\" you say, and you spread your wings and flap to get his attention. \"I'm sorry to disturb you, but you remind me of the wizard, working like that.\"\n\nHe doesn't loser his blade, but he looks up at you. \"A black crow,\" he says quietly, to himself. Then, louder, he asks, \"you say you're that wizard's pet then?\"(click: \"that wizard's pet\")[\n\n$f[Pet isn't really the right word. \"Yes,\" you say anyway. \"Or at least, I was.\"\n\nThe man nods like everything makes sense now. \"Heard some stories about a black crow lately,\" he says, \"but you're no demon. Wizard's just playing with his new toy now.\"\n\n\"[[What?|Failed: Ignored]]\" you ask.]]]]](else:)[\"You're in danger,\" you call down to the man. \"I'm here to warn you.\"\n\nThe man jerks back, startled. He looks around for the source of the voice but doesn't even think to look up at the bird on his roof. You're practically invisible to most people, until you draw attention to yourself. The man has dropped the wood but holds onto his bladed tool. \"Who's there?\" he calls out.(click: \"Who's there\")[\n\n$f[\"Up here,\" you say, and you spread your wings and flap to get his attention. \"A great evil is on its way. You must run before it gets to you, before it kills you as it has everyone before.\"\n\nHe raises his blade, points it directly at you. \"The black crow,\" he says quietly, to himself. Then, louder, he says, \"I've heard the villagers talking about you. Five villages destroyed, because you brought them death.\"(click: \"you brought them death\")[\n\n$f[\"I did'nt-\" you instinctiveely start to say, but you stop yourself. You can't really say it's not true.\n\nThe look in the man's eye is angry. \"Why did you come here?\" he asks. \"Why me?\"\n\nBefore you can answer, to clarify, he picks a stone off the ground and [[hurls it|Failed: Angered]] in your direction.]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "What?",
+          "destination": {
+            "name": "Failed: Ignored",
+            "pid": 9
+          }
+        },
+        {
+          "text": "hurls it",
+          "destination": {
+            "name": "Failed: Angered",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Watch Man",
+      "text": "(set: $investigate to 1)You watch the man for a while. He does not notice you, or if he does he pays you no mind. He sets his tools down on the table, in a neat row, and picks up the chunk of wood. It's maybe the same size as you. The look in his eye, as he turns this wood in his hands to consider it, is familiar.(click: \"familiar\")[\n\n$f[It reminds you of the look the wizard used to get considering his magical ingrediants and materials. Before he died. This man here isn't working magic but it's the same concentration, the same intensity. It's similar work.\n\nYou watch him take his tools to the wood and start to cut it, but you feel time slowly passing you by. You itch to do more than sit silently. This man is innocent and you're the only one who can protect him, and his work. Before you can think about it, you [[open your beak|Warn Man]].]]\n\n\n",
+      "links": [
+        {
+          "text": "open your beak",
+          "destination": {
+            "name": "Warn Man",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Failed: Ignored",
+      "text": "The man turns back to his block of wood. \"That wizard's always up to some trick or another. Hoping we'll keep thinking we need him. He send you out here to scare us?\" the man asks.\n\n\"N-no,\" you say. You didn't expect this response. Villagers have gotten angry at you before, but they've never acted like it was a joke. You add, more solemnly, \"the wizard is dead.\"(click: \"the wizard is dead\")[\n\n$f[The man's response is a loud laugh. \"Now I //know// you're lying. That magician's half my age, and they always live to two-hundred, right?\"\n\nYou're only about a year old, so you're not sure how to answer that. \"You're in danger,\" you try instead. \"I'm here to warn you.\"(click: \"warn you\")[\n\n$f[The man actually waves you off. \"That won't work on me,\" he says. \"I'm wise to that man's tricks. You move along and deliver your message somewhere else, crow.\"\n\nHe cuts another line into the wood, ignoring you. He doesn't listen when you try to speak.\n\nAnd meanwhile, the evil thing is drawing closer. You could [[stay|Stay and Watch]] and try to convince him, but you should probably just [[fly away|Escape]] before you're in danger, too.]]]](set: $spirit to \"evil thing\")\n\n\n",
+      "links": [
+        {
+          "text": "stay",
+          "destination": {
+            "name": "Stay and Watch",
+            "pid": 11
+          }
+        },
+        {
+          "text": "fly away",
+          "destination": {
+            "name": "Escape",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Failed: Angered",
+      "text": "You narrowly miss the projectile.\n\n\"Go away!\" the man shouts. He looks about ready to grab another stone, so you flutter further down the roof. \"I don't need a demon in disguise threatening me!\"\n\n\"I'm not a demon,\" you try to say, but it doesn't look like he hears you. He can't find a stone, and seems to consider throwing his sharp tools next. \"I'm trying to warn you. To save you!\"(click: \"To save you\")[\n\n$f[The man eyes you suspiciously. \"A demon would lie,\" he says.\n\nYou try to retort, but it occurs to you his statement is true. Maybe this evil thing behind you is a demon, then. You couldn't have been expected to stand up against a demon.(click: \"against a demon\")[\n\n$f[\"No clever answer to that?\" the man says. He pulls back an arm to throw his tool, and you finally find your voice again.\n\n\"There is a demon!\" you say, frantic. \"And it's coming this way!\"\n\nThe tool goes flying, and misses you by mere inches. You take to the air immediately. \"What have you done?!\" the man shouts after you. \"Summoning a demon //here//? Leave me in peace!\"(click: \"Leave me in peace\")[\n\n$f[You circle above the cottage. The evil thing, the demon, is drawing closer. You could [[stay|Stay and Watch]] and try to convince him, but you should probably [[fly away|Escape]] while you still can.]]]]]](set: $spirit to \"demon\")\n\n\n",
+      "links": [
+        {
+          "text": "stay",
+          "destination": {
+            "name": "Stay and Watch",
+            "pid": 11
+          }
+        },
+        {
+          "text": "fly away",
+          "destination": {
+            "name": "Escape",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Stay and Watch",
+      "text": "(if: $investigate is 1)[\"This isn't a trick,\" you say, but the man isn't listening. He's wholly taken by his work. The wizard used to get like this too. There's no reasoning with him in this state.\n\nYou spread your wings and take to the air. ](else:)[\"I'm trying to save you!\" you call down, but the man ignores you now. He gathers his things and rushes into the shack, barricading the entryway. He's be safer in the boat on the river, you think.\n\n]You've seen, too close, what this $spirit can do, but to fly away now would be avoiding the ugly truth. Besides, it's too late. You can see it.(click: \"You can see it\")[\n\n$f[The $spirit looks like a bonfire gone out of control, leaving a trail of ash in its wake. You can feel it growing happier as it nears, and the sensation fills you with dread. Its fire dances in the wind it stirs up, silent and bright.\n\nYou want to turn tail and fly away that very second. Surely there's a [[village nearby|Look for Town]] you can move on to. But a small part of you wants to stay, and ask the fire, \"[[Why|Talk to Spirit 2]]?\"]]\n\n\n",
+      "links": [
+        {
+          "text": "village nearby",
+          "destination": {
+            "name": "Look for Town",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Why",
+          "destination": {
+            "name": "Talk to Spirit 2",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Escape",
+      "text": "(if: $investigate is 1)[You spread your wings and take to the air. The man doesn't look at you once. His block of wood is slowly turning into something else, and the process would fascinate you if your eyes weren't being drawn somewhere else.](else:)[As you rise higher in the air, the man takes his things and hurries back into the shack. He barricades the entryway and draws curtains over the windows. You'd watch, but your eyes are being drawn somewhere else.]\n\nThe $spirit, crawling over foliage and open field, looks like a bonfire gone out of control. A trail of ash follows its path from the east. A normal human might not realize this bright fire is alive, wouldn't think to run away quick enough.(click: \"quick enough\")[\n\n$f[You can feel it growing happier as it nears, and the sensation fills you with dread. It must be able to sense you, too. You flap hard against the wind, in the [[opposite direction|Look for Town]].]]\n\n\n",
+      "links": [
+        {
+          "text": "opposite direction",
+          "destination": {
+            "name": "Look for Town",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Look for Town",
+      "text": "(if: $food is 0 and $water is 0)[You cross over the brushland, keeping the river to your left, trying to beat the sun on its journey across the sky. Your wings are heavy from what you refused to witness.\n\nAlso, from the exhaustion of your trip. That short rest wasn't enough to prepare you for the day, and there are no farms or villages in sight. You need to find something [[to eat|Look for Food]], or at least [[stop for water|Look for Water]] before you can go much further.](else-if: $food is 0 and $water is 1)[The drink and bath leaves you feeling rejeuvinated, though your stomach is still empty. You take to the air again, and flying comes much easier now.\n\nThe $spirit has also definitely finished its business. Your stomach begs you to [[find some food|Look for Food]], but the fear of losing time to your pursuer begs you to [[move forward|Arrive in Town]].](else-if: $food is 1 and $water is 0)[The meal leaves you feeling rejeuvinated, though your throat is dry and your feathers dusty. You take to the air and already your muscles feel stronger. They have the energy needed to carry you, at least, to the next human settlement.\n\nThe $spirit has also definitely finished its business. You should [[stop for a drink|Look for Water]], but you need to [[move on|Arrive in Town]] before you run out of time to complete your task.](else:)[(set: $rested to 1)Your muscles are strong and your feathers light and clean, your body practically good as new. You haven't felt this rested in days.\n\nThere's also a bright smoke on the horizon behind you. That's new, and you think you know exactly what it is. The $spirit has drawn ever closer as you paused to refresh yourself, a slow, steady march down brushy plains. It's still too far away to see, but much too close for your liking.\n\nYour rested body moves faster in response. In the distance you can see denser plant life, and signs of human traffic and cultivation. With this newfound energy, you can [[reach those outer farms|Arrive in Town]] within the hour.]\n\n\n",
+      "links": [
+        {
+          "text": "to eat",
+          "destination": {
+            "name": "Look for Food",
+            "pid": 15
+          }
+        },
+        {
+          "text": "stop for water",
+          "destination": {
+            "name": "Look for Water",
+            "pid": 16
+          }
+        },
+        {
+          "text": "find some food",
+          "destination": {
+            "name": "Look for Food",
+            "pid": 15
+          }
+        },
+        {
+          "text": "move forward",
+          "destination": {
+            "name": "Arrive in Town",
+            "pid": 17
+          }
+        },
+        {
+          "text": "stop for a drink",
+          "destination": {
+            "name": "Look for Water",
+            "pid": 16
+          }
+        },
+        {
+          "text": "move on",
+          "destination": {
+            "name": "Arrive in Town",
+            "pid": 17
+          }
+        },
+        {
+          "text": "reach those outer farms",
+          "destination": {
+            "name": "Arrive in Town",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Talk to Spirit 2",
+      "text": "(if: $talkSpirit is 1)[\"This is one man alone,\" you say to the $spirit creeping up on him. \"Can't you pass him over?\"\n\nIt doesn't respond right away. You see it glide over grass, leaving a strip of charred field behind. Finally, it says, **Every life adds up, great crow. No life is worthless.**(click: \"No life is worthless\")[\n\n$f[\"Then why did you agree to spare me?\" you ask. There's no reasoning with this monster but guilt overwhelms you. \"You could have killed me when you had the chance.\"\n\n**Consumed you,** the $spirit actually corrects. **I could have. But I do have some honor, you know.**(click: \"some honor\")[\n\n$f[You tilt your wings and turn away in disgust. You don't have to be here for this.\n\n\"I will stop you,\" you say as you fly away. The wind carries your magic words back to the crawling menace, but you don't know if there's any weight behind your words. \"Or I'll find someone who can.\"\n\nYou hear, distantly, the man shouting as he notices the fire approaching. **You try that,** it says to you. [[You fly faster|Look for Town]].]]]]](else:)[\"Why do you keep following me?\" you say to the $spirit creeping up on the shack. \"Why can't you go away? Somewhere else?\"\n\nIt responds immediately. **I'm not following you, great crow,** it says, its voice a whisper in your skull. The bond that connects all magic things feels stronger now, and you shy away from it. **We're just traveling in the same direction.**(click: \"same direction\")[\n\n$f[\"That's a lie,\" you say. \"You're trying to stop me from warning everyone, but it won't work. I won't stop. I'll let everyone know you're here.\"\n\nThe $spirit takes a moment before it speaks again. Finally, it says, **that wasn't part of our deal.**(click: \"our deal\")[\n\n$f[\"We never had a deal,\" you say in disgust. You tilt your wings and turn away from the sight of the crawling menace, long before you can see it set upon the shack. You don't need to be here for this.\n\n\"I will stop you,\" you add as you fly away. You don't know if there's any real weight behind your words. \"Or I'll find someone who can.\"\n\nYou hear, distantly, the man shouting as he notices the bright fire approaching. **You try that,** it says to you. [[You fly faster|Look for Town]].]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "You fly faster",
+          "destination": {
+            "name": "Look for Town",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Look for Food",
+      "text": "(set: $food to 1)You veer away from the river's edge, towards the open fields. You've hunted about twice throughout your life. Both in the last week. You're more accostumed to your human owners feeding you.\n\nThe field is still, but you know there must be life hiding all around. Eventually something will poke its nose up from a dugout, and you'll have to strike fast enough to kill it.(click: \"kill it\")[\n\n$f[The idea of taking a life doesn't sit well with you. You know that something must die for all animals to live, but you'd rather someone trained to do it painlessly handle the matter. Besides, you don't know if you're strong enough to make the killing blow, or quick enough.(click: \"quick enough\")[\n\n$f[It's a long while before you see it, a mouse ducking behind dry brush on its way across the field. You swoop low, and snatch it in your talons before it has a chance to scurry away. It seems you //are// fast enough.\n\nYou eat it quickly to fill your starving belly. You're also anxious to get [[back in the air|Look for Town]] again.]]]]\n\n\n",
+      "links": [
+        {
+          "text": "back in the air",
+          "destination": {
+            "name": "Look for Town",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Look for Water",
+      "text": "(set: $water to 1)Water is easy to find, because the river's right below you.\n\nYou set down on the river's edge, where the shore looks the most shallow, to take a drink. The rushing water frightens you; it's the largest body of what you've been near, and you don't want to be swept away.\n\nThe water splashes up at you, just a bit, as you gulp it down. It's cool, almost cold. You can picture the melting snowcaps in the east that formed this river. You almost want to play in it.(click: \"play in it\")[\n\n$f[The wizard had a bird bath, which surprised you when he brought you home. You'd never seen one in the city and didn't quite know what to do with it. You'd watched the other birds splash in it to clean their wings, and mimicked their movements when you were let outside. It's been a long time since you've had a bath.(click: \"a long time\")[\n\n$f[It's tentative, but you duck your head into the river water and splash it onto your feathers. You take some time to straighten each one, cleaning out the dust and grit that gets in the way of flying. You almost don't notice time pass until you're clean again, and it's definitely [[time to leave|Look for Town]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "time to leave",
+          "destination": {
+            "name": "Look for Town",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Arrive in Town",
+      "text": "The plantlife grows taller and denser as you fly closer to human civilization. Huge squares of it have been cleared to make room for farmland or grazing pastures. Some of these fields are wider than entire villages you'd passed in recent days. You wonder how it must feel to have to walk to travel through them.\n\nYou can see people working in these fields. Some are even traveling along roads to the town nearby, pulling carts full of plants and food. In every last village you visited, no one would listen to your warning message. You need to figure out what you've been doing wrong.(click: \"doing wrong\")[\n\n$f[Your usual strategy is to land in the village square and tell all close enough to hear that an evil creature is coming. They always misunderstand. If only the wizard had taught you more about how to talk to non-magical people.(click: \"non-magical people\")[\n\n$f[You can sense magic somewhere in this town now. Maybe they have a village witch you could talk to, or a visiting magician. (if: $rested is 1)[It would be worth investigating, but you don't have the time. All you can do is [[tell someone your message|Warn Town]] and hope the magician hears.](else:)[You could wait for a bit and try to [[find this person|Investigate Town]], but you might not have enough time to [[deliver your message|Warn Town]].]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "tell someone your message",
+          "destination": {
+            "name": "Warn Town",
+            "pid": 19
+          }
+        },
+        {
+          "text": "find this person",
+          "destination": {
+            "name": "Investigate Town",
+            "pid": 20
+          }
+        },
+        {
+          "text": "deliver your message",
+          "destination": {
+            "name": "Warn Town",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Variables",
+      "text": "Variable List for Beta Testers\ntalkSpirit is $talkSpirit\ninvestigate is $investigate\nspirit is \"$spirit\"\nfood is $food\nwater is $water\nrested is $rested\nwarnBoy is $warnBoy\ndisguise is $disguise\nbook is $book\nwg is $wg\ncomfort is $comfort\nsleep is $sleep\nherbs is $herbs\ntalkWitch is $talkWitch\nspeakUp is $speakUp\n\n\n",
+      "links": []
+    },
+    {
+      "pid": 19,
+      "name": "Warn Town",
+      "text": "(set: $warnBoy to 1)You fly over the town square - a large opening between the various buildings - and keep flying. You can't mess up again. You scan through the sparsely populated streets looking for //someone// who might be receptive to your warning, someone you can talk to personally. Finally, you spot a woman with a child in tow.(click: \"woman with a child\")[\n\n$f[You alight down onto a fence post, just as the pair begins to pass it. The boy looks over at you.\n\n\"Hello,\" you say. The boy's eyes widen.(click: \"eyes widen\")[\n\n$f[\"Mommy!\" He tugs back at the hand holding his, and the woman pauses mid-step. The boy points to you and says, \"that bird just spoke!\"\n\nThe woman stares hard at you and you can't tell if she's skeptical or just waiting, so you say, \"I'm hear to deliver a message.\"\n\n\"From whom?\" the woman asks, her eyes narrowed. You're beginning to think you made the [[right choice|Warn Town 2]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "right choice",
+          "destination": {
+            "name": "Warn Town 2",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Investigate Town",
+      "text": "You can't pinpoint the source of this magical energy exactly; magic flows in so many directions, to the forest in the west or far north to the capitol city. But this sense is coming from somewhere nearby, the north edge of town. You head in that direction.\n\nThe streets are mostly empty, though you still see a few people as you fly overhead. There are children playing, and adults moving from one building to the next. On one street you see a woman with a young boy in tow, walking quickly while he stares at the birds around them.(click: \"birds around them\")[\n\n$f[You startle a few songbirds when you land on a fencepost to rest your wings. They flap away wildly. The boy points you out to the woman, but you stay silent. You're only investigating for now.\n\nYou finally narrow down the source of the magical energy, and then lose it again. There's a row of small buildings, houses with the usual thatched roofs, but you can't tell which one the magic came from. You're not sure what to do now.(click: \"what to do now\")[\n\n$f[A nearby tree gives you a secluded space to rest your wings, and think. You alarm a small rodent as you land on a low branch, and it scurries down the trunk. Below, you hear a [[surprised gasp|Meet Girl]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "surprised gasp",
+          "destination": {
+            "name": "Meet Girl",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Hide",
+      "text": "Besides the gathered  group shouting after you, this town seems pretty quiet. You disturb a few songbirds by flying too close to them, but there's no real commotion because of your visit. No one riots, and no one cries for everyone to leave town.\n\nYou don't leave either. You can't abandon this place just because you messed up once. Besides, there's still that magic-user you sensed nearby.(click: \"magic-user\")[\n\n$f[You can't pinpoint it exactly. Magic flows in so many directions at any given time. But you know its somewhere north of you, far from the river, so you head in that direction.\n\nA looming forest grows out to the west, its edge just a short walk from the town buildings. Some of the same trees grow around houses in town. Hiding among them sounds like a good idea, so you won't be too far. Just until you get your breath back. Until you figure out your next move.(click: \"next move\")[\n\n$f[You land on one of the lower branches, startling some rodent. It scurries down the tree trunk, and below you hear a [[surprised gasp|Meet Girl]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "surprised gasp",
+          "destination": {
+            "name": "Meet Girl",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Meet Girl",
+      "text": "At the base of the tree sits a girl. You hadn't noticed her before. She's frowning at the rodent as it scampers away, then turns back to the large book she has lying open in her lap. She doesn't pay any attention to you.\n\nThe sense of magic you felt earlier is still around, but it's so vague you don't know where to track it next. You could chase supernatural butterflies all day, but that doesn't delay this towns destruction. (if: $warnBoy is 1)[You need to find someone who will listen to you.](else:)[At least someone needs to be warned.](click: \"someone\")[\n\n$f[The girl sitting in the dirt turns a page in her book, and you see a flash of something familiar. You can't tell what it was; the girl's leaning over the tome, and her dark curly hair obscures the details.\n\nThis - the book or the girl - might be the source of the magic you felt. You'd need to get closer to see. You could go the direct route and [[speak to her|Introduce to Girl]]. Maybe she won't be frightened. Or you could pretend to be [[a normal bird|Watch Girl]], and see what she does.]]\n\n\n",
+      "links": [
+        {
+          "text": "speak to her",
+          "destination": {
+            "name": "Introduce to Girl",
+            "pid": 23
+          }
+        },
+        {
+          "text": "a normal bird",
+          "destination": {
+            "name": "Watch Girl",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Introduce to Girl",
+      "text": "You fly down to the dirt, brushing past the leafy branches and landing a foot away from the girl's knee. She looks up at you, and doesn't seem scared. She looks curious.\n\n\"Hello,\" you say, hesitantly, quietly. You don't want to shock her too much. Oddly enough, her first reaction is a smile.(click: \"smile\")[\n\n$f[\"Hello!\" she says back. \"You're a magic bird!\"\n\nThe confident statement surprises you. \"Yes,\" you respond. You bow the way the wizard taught you, and the girl's smile grows larger.\n\n\"I've always wanted to meet a Magical Creature.\" She says the phrase like it's a formal title. You're sure now that the magic you sensed came from her. \"My name is Maya.\"(click: \"Maya\")[\n\n$f[She leans forward as she speaks, and moves the book off her lap to give herself room. You can see it clearly now,  a page covered in runes you barely recognize. It's the last thing you expected to see in a nowhere town so far from the tower: magical instructions.\n\n\"Do //you// have a name?\" the girl asks when you don't respond right away.\n\n\"No,\" you answer. \"The wizard just called me 'bird' or 'crow'.\"(click: \"wizard just called me\")[\n\n$f[\"A wizard?\" the girl says, sounding more excited. \"Did a wizard send you all the way out here, Birdie? Are you on a mission?\"\n\nYou don't know how to answer that. You don't want to talk about the wizard, you want to ask her [[about that book|Ask About Book]]. But you //do// have a [[job to do|Warn Girl]].]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "about that book",
+          "destination": {
+            "name": "Ask About Book",
+            "pid": 25
+          }
+        },
+        {
+          "text": "job to do",
+          "destination": {
+            "name": "Warn Girl",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Watch Girl",
+      "text": "(set: $disguise to 1)You fly down to a lower branch, trying to get a better look. Doing so disturbs a few twigs, and knocks leaves onto the girl's dark curly hair. She doesn't seem to notice.\n\nYou still can't see much of the book but you can see it better than before. In the corner is a sigil, one that you've seen printed on the wizard's potion bottles. When the girl turns the page you see part of a list of ingrediants. They're all items you've seen the wizard collect in his storeroom, items needed for making magic.(click: \"making magic\")[\n\n$f[It's either this book you sensed earlier, or this girl, but you still can't tell. With a surge of confidence you leave the tree entirely and settle down into the dirt, a few feet away from the girl's knee.\n\nShe looks up at you, curious. \"Hello,\" she says plesantly. \"Do you need something?\"(click: \"need something\")[\n\n$f[Her question catches you off guard. Most people don't initiate conversation with random animals. Does she expect you to respond? Maybe she's the kind of person to [[heed your warning|Warn Girl]]. But all you really want to do is [[ask about her book|Ask About Book]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "heed your warning",
+          "destination": {
+            "name": "Warn Girl",
+            "pid": 26
+          }
+        },
+        {
+          "text": "ask about her book",
+          "destination": {
+            "name": "Ask About Book",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Ask About Book",
+      "text": "(set: $book to 1)(if: $disguise is 1)[\"Is that a magic book?\" you ask the girl.\n\n(if: $wg is 0)[The girl's eyes go wide. \"You can talk!\" she exclaims. She pushes the book out of her lap and leans towards you, hands on her knees. You take a single hop backwards. \"You're a magic bird!\"(click: \"You're a magic bird\")[\n\n$f[\"Yes,\" you agree.\n\n\"I've always wanted to meet a Magical Creature.\" She says the phrase like it's a formal title. Then she looks over at the abandonded tome in the dirt. She sets a hand over the open page and something of a smile appears on her face. It reminds you of the wizard's smile. \"My aunt gave me this book,\" the girl says. \"She's a witch, and I want to be one, too.\"(click: \"a witch\")[\n\n$f[You look the girl up and down. SHe can't be more than twelve years old. \"I've never met a witch in training,\" you tell her. \"Or any witch.\"\n\nThe girl giggles. \"Well, I've never met a talking bird before, so we're both doing something new. I'm Maya, by the way.\"(click: \"Maya\")[\n\n$f[You spread your wings and bow low, like the wizard taught you. \"Nice to meet you,\" you say. \"The wizard never gave me a name. You can call me 'bird'.\"\n\n\"You have a wizard, Birdie? What are you [[doing here|Warn Girl]] all on your own then?\" the girl asks.]]]]]]](else:)[She sets a hand over the open page and something of a smile appears on her face. It reminds you of the wizard's smile. \"My aunt gave me this book,\" the girl says. \"She's a witch, and I want to be one, too.\"(click: \"a witch\")[\n\n$f[You look the girl up and down. SHe can't be more than twelve years old. \"I've never met a witch in training,\" you tell her. \"Or any witch.\"\n\nThe girl giggles. \"Well, I've never met a talking bird before, so we're both doing something new. I'm Maya, by the way.\"(click: \"Maya\")[\n\n$f[You spread your wings and bow low, like the wizard taught you. \"Nice to meet you,\" you say. \"The wizard never gave me a name. You can call me 'bird'.\"\n\n\"You have a wizard, Birdie? What are you [[doing here|Warn Girl]] all on your own then?\" the girl asks]]]]]](else:)[\"That book you were reading,\" you say, ignoring the girl's question. \"Where did you get it?\"\n\n\"Oh,\" the girl says, surprised, and she looks over at the book beside her. \"My aunt. My aunt gave this to me, to study.\"(click: \"to study\")[\n\n$f[She reaches over and runs her fingers down the open page. \"My aunt's a witch. She used this book to practice when she was a kid, so now I am too. I'm not very good yet,\" she adds weakly.\n\nThat explains why she wasn't afraid of you. \"I've never met a witch in training,\" you say. \"Or any witch.\" The girl giggles. (click: \"giggles\")[\n\n$f[\"I guess that means we're both pretty new at this,\" she says. You suddenly feel a bit self-conscious. You're supposed to be the wizard's assistant, a respectable bird of consequence. You don't want people treating you like a chick.\n\n\"But you never answered my question,\" the girl says. \"What did the [[wizard send you for|Warn Girl]]?\"]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "doing here",
+          "destination": {
+            "name": "Warn Girl",
+            "pid": 26
+          }
+        },
+        {
+          "text": "wizard send you for",
+          "destination": {
+            "name": "Warn Girl",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Warn Girl",
+      "text": "(set: $wg to 1)(if: $book is 1 and $disguise is 1)[(if: $rested is 1)[Wasting even more time, apparently. ]You'd almost forgotten about the whole point of your visit.\n\n\"I have a warning to deliver,\" you say. You stand up straighter, trying to look like a proper messenger. \"I've been going village to village trying to find someone who will listen to it.(click: \"listen to it\")[\n\n$f[\"What warning?\" the girl asks. She sits up straighter too. \"Do wizards usually send their animals out to deliver messeges?\n\n(if: $warnBoy is 1)[You'd thought maybe word had gotten out by now, but it turns out you were wrong. ]You don't want to discuss this again; it hurts to say. But finally you tell her. \"The wizard [[is dead|Tell Girl]].\"]]](else-if: $book is 1 and $disguise is 0)[You shuffle your talons uncomfortably. \"The wizard didn't send me,\" you admit.\n\n\"Oh?\"\n\nYou don't really want to discuss this again, it hurts to say. But it also is the whole reason you're here. The wizard [[is dead|Tell Girl]].\"](else-if: $disguise is 1)[\"I'm here to deliver a message.\" The girl's eyes go wide.\n\n\"You can talk!\" she exclaims. She pushes the book out of her lap and leans towards you, hands on her knees. You take a single hop backwards. \"You're a magic bird!\"(click: \"magic bird\")[\n\n$f[\"Yes,\" you agree.\n\n\"I've always wanted to meet a Magical Creature.\" She says the phrase like a formal title. A slight breeze picks up as she stares at you, wistful. \"Were you born magic or did you have to learn it?\" she asks.\n\n\"I was born magic,\" you answer. The breeze rustles a few pages of the book, and you think there are a few [[questions of your own|Ask About Book]] you want answered.]]](else:)[\"Yes,\" you say, a lump in your throat. \"I'm on a mission to warn people.\"\n\n\"A warning?\" the girl asks. She looks a little less excited now. \"What are you warning about?\"(click: \"warning about\")[\n\n$f[She seems genuinely curious. She might actually listen to you. But a breeze picks up as you're trying to decide what to say. It rustles the pages of the book lying nearby, and you're distracted. You haven't even seen a book since you left the wizard's tower; you need to [[see more|Ask About Book]].]]]\n\n\n",
+      "links": [
+        {
+          "text": "is dead",
+          "destination": {
+            "name": "Tell Girl",
+            "pid": 27
+          }
+        },
+        {
+          "text": "questions of your own",
+          "destination": {
+            "name": "Ask About Book",
+            "pid": 25
+          }
+        },
+        {
+          "text": "see more",
+          "destination": {
+            "name": "Ask About Book",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Tell Girl",
+      "text": "All the curiousity in the girl's eyes drips away. \"Oh,\" she says, and twists her hands in her lap. \"That's very sad.\" You're about to console her - she may be too young to hear of these things - but the girl speaks before you can. \"I'm so sorry about your wizard,\" she says.\n\nYou stop. You want to thank her, and you realize that this whole week, no one has said those words to you. No one has tried to help you. You don't say anything.\n\n\"How did he die?\" she girl asks.(click: \"How did he die\")[\n\n$f[\"An evil thing,\" you say. \"A demon or a bad spirit or... I don't know. It took his life away. And it's headed this way, right now, but no one will listen to me.\"\n\nThe girl is silent as you talk, and asks questions when you finish. You tell her about flying for a week, about the fire the $spirit lives as, about how many people you've seen just before they die. She nods along, and listens.\n\nFinally she gives you a serious look, and says, \"and it's coming here?\"(click: \"coming here\")[\n\n$f[You can sense the evil presence in the distance, getting closer. It can certainly sense you. \"Yes,\" you say. \"I don't know why, but... yes.\"\n\n\"Then we need to [[do something about it|Begin to Study]].\"]]]]\n\n\n",
+      "links": [
+        {
+          "text": "do something about it",
+          "destination": {
+            "name": "Begin to Study",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Begin to Study",
+      "text": "The girl reaches for her magic book and pulls it back onto her lap. She grabs a ton of pages and flips them over, to the end of the book, and starts scanning through a list of words.\n\n\"We need to run,\" you try to clarify. \"That's the only way to stop it from killing us. Everyone needs to run.\"\n\n\"And then what?\" the girl asks.(click: \"then what\")[$f[ She doesn't look up at you, still scanning through the back of her book with an expression that would be funny, if the situation wasn't so serious.\n\n\"You can rebuild your homes,\" you start to say, but the girl cuts you off.\n\n\"My home isn't the problem, it's the fields. My mom's mom's //mom// worked in those fields, ages and ages ago. They'd take forever to recut.\n\n\"If everyone dies today,\" you say, \"there's be no one to work the fields at all.\"\n\n\"OK,\" the girl says. She sounds like she's just humoring you. \"So we run. And then what?\"(click: \"And then what\")[\n\n$f[She looks up at you finally, with a slight frown. She looks older than she did. \"This evil thing is still here, still chasing us, right? Do we run forever, Birdie?\"\n\n\"I,\" you start to say, then stop. Even rested your muscles feel the effect of flying fast for a week straight.\n\nThe girl looks back down at her book. \"I'm supposed to be a witch,\" she says. \"There much be something I can do. A spell to protect us or make the $spirit go away. There's gotta be something.\"(click: \"There's gotta be something\")[\n\n$f[You hop a bit closer to the girl, to get a better look at her book. The pages she's looking at now aren't written in runes, but you still don't know many of the words. No one ever bothered to teach you.\n\nBut you did get to watch the wizard work first-hand, and he was an expert. He wouldn't have found the $spirit if he wasn't. \"[[How can I help|Continue Study]]?\" you ask.]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "How can I help",
+          "destination": {
+            "name": "Continue Study",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Continue Study",
+      "text": "The girl smiles at you. \"Do you know any good spells?\" she asks. \"The book has a ton, but the index doesn't seem to be in order.\"\n\n\"I never did magic,\" you say. That doesn't include the fact that you're talking. \"I just watched the wizard do it.\"\n\n\"Right,\" the girl sighs. She sits back against the trunk of the tree, book propped on her knees.(click: \"book propped on\")[\n\n$f[From this angle you can't see the pages anymore. Not that you can read much of them anyways, but you want to help, to see what she's seeing. The best way to do that... is to stand on her shoulder.\n\nThe only shoulder you've ever stood on was the wizard's, after living with him for months. It seems uncomfortably close for someone you've just met. You feel like you can [[trust her|Stand on Girl's Shoulder]], but maybe for now you should [[keep your distance|Stay on Ground]].]]\n\n\n",
+      "links": [
+        {
+          "text": "trust her",
+          "destination": {
+            "name": "Stand on Girl's Shoulder",
+            "pid": 31
+          }
+        },
+        {
+          "text": "keep your distance",
+          "destination": {
+            "name": "Stay on Ground",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Stay on Ground",
+      "text": "\"Do you remember the wizard doing any protection spells, then?\" the girl asks. You look at her from your spot on the dirt, but she's looking down at her book.\n\nYou have to think for a few minutes. The wizard made lots of spells for lots of people, enchanting items and bottling potions and visiting nearby villages. At first you found the whole process fascinating and paid careful attention. But there was usually nothing you could do to assist, and eventually you stopped watching too closely.(click: \"stopped watching\")[\n\n$f[\"I remember him using some runes,\" you finally say, \"but I don't remember which ones.\" And you're not positive that was for a protection spell either, but you don't say that. \"Couldn't you craft your own spell?\"\n\n\"My aunt could,\" the girl says. She sighs and flips to another section in the book. \"As long as she knows what she wants to do, she can mix any herbs and enchantments and make anything happen. But it takes a full day to reach her. We don't have time.\"(click: \"don't have time\")[\n\n$f[The $spirit in the distance actually isn't any closer than it was, almost like it's taking a break. You don't understand why, but if it's resting that gives you more time to try to [[find a solution|Study Book]] before you have to run. But it also gives you time to maybe [[speak to it|Talk to Spirit 3]](if: $talkSpirit is > 0)[ again].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "find a solution",
+          "destination": {
+            "name": "Study Book",
+            "pid": 32
+          }
+        },
+        {
+          "text": "speak to it",
+          "destination": {
+            "name": "Talk to Spirit 3",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Stand on Girl's Shoulder",
+      "text": "(set: $shoulder to 1)\"Do you remember the wizard doing any protection spells, then?\" the girl asks. You look up at her from your spot in the dirt, but she's looking down at her book. You hop closer.\n\n\"Not specifically,\" you say without giving it much thought. You used to watch the wizard's every move, but after a while it got too familiar and you stopped paying as much attention. \"May I stand on your shoulder?\"(click: \"stand on your shoulder\")[\n\n$f[The girl's head shoots up, and she looks about as embarrassed by this idea as you feel. \"Oh,\" she says, with the faintest trace of a smile. \"O-of course.\" She tilts her head slightly, to give you more room.\n\nThe spread your wings and hop into the air. Your feathers roughly brush her neck as you settle into place, and you feel how tense her shoulder is under your talons. You try to be careful with them; they cause more damage than they mean, as you learned a long time ago.(click: \"as you learned\")[\n\n$f[You've known many people in your short life, but the wizard was the only one you considered a friend. It still seems unbelievable that he could have died so easily. You need to be [[finding a solution|Study Book]] right now, but trusting another human again [[brings up memories|Remember Past]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "finding a solution",
+          "destination": {
+            "name": "Study Book",
+            "pid": 32
+          }
+        },
+        {
+          "text": "brings up memories",
+          "destination": {
+            "name": "Remember Past",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Study Book",
+      "text": "The magic book is full to the brim of advice and instruction, and neither you nor the girl are fully equipped to understand it all. She reads you passaged, hoping you'll know what the bigger words mean, and you ask her to explain ingrediants you've never heard of. You lose track of time helping the girl try, desperately, to find something to do to save her town. No other humans disturb the two of you.\n\nFinally you look up from the book and see how much the sun has moved. (if: $rested is 1)[\"It's mid-afternoon,\" you say. The girl's head jerks up. (if: $shoulder is 1)[You're jostled on your place on her shoulder.]\n\n\"Oh no,\" she says.(click: \"Oh no\")[\n\n\"What's wrong?\" you ask, and even as you say it you recognize something bad is happening. The $spirit, on the periphery of your awareness, has started moving again. It's getting closer.\n\n\"My parents,\" the girl says, \"they'll be home any minute now, and I didn't do my chores.\" She slams the book shut and stands up, (if: $shoulder is 1)[almost throwing you off balance. You fly back to solid ground, ]and she takes a few rushed steps towards the house. \"I'm sorry, Birdie,\" she says, \"it won't take too much time.\"(click: \"too much time\")[\n\n$f[\"It's already too late,\" you say frantically. \"There's no time, for chores or spells, [[the $spirit is here|Sense Evil]]!\"]]]](else:)[\"It's afternoon already,\" you say. The girl's head jerks up(if: $shoulder is 1) [and you're jostled on your place on her shoulder].\n\n\"Oh no,\" she says.(click: \"Oh no\")[\n\n$f[\"What's wrong? you ask. You can tell the $spirit hasn't moved any closer, still preoccupied for whatever reason.\n\n\"My chores,\" the girl says. \"My parents come home in a few hours and if everything's not done, they'll be really mad.\" She closes the book and stands up shakily(if: $shoulder is 1)[, almost throwing you off balance]. \"I'm sorry Birdie, but do you mind if we take a quick break?\"\n\nThis doesn't seem nearly as important as the impending doom. Likely her parents won't even make it home from work. But you can't say that.(click: \"say that\")[\n\n$f[\"If you hurry,\" you say slowly, and the girl sounds so relieved she doesn't want for you to finish.\n\n\"I'll be super fast,\" she says, and takes a few rushed steps to the house. (if: $shoulder is 1)[\"Come on, you can help me,\" she adds. She holds her arm half raised, to catch you if you fall forwards, and pushes past the door flap and [[into the house|Girl's Chores]].](else:)[\"You can stay here and keep looking through the book 'til I get back,\" she adds. The closed book sits on the ground next to you, heavy looking, but the girl disappears behind the door flap before you can say anything. You stare at the large book, [[resigned to wait|Wait for Girl]].]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "the $spirit is here",
+          "destination": {
+            "name": "Sense Evil",
+            "pid": 35
+          }
+        },
+        {
+          "text": "into the house",
+          "destination": {
+            "name": "Girl's Chores",
+            "pid": 36
+          }
+        },
+        {
+          "text": "resigned to wait",
+          "destination": {
+            "name": "Wait for Girl",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Talk to Spirit 3",
+      "text": "(if: $talkSpirit is 2)[(set: $talkSpirit to it + 1)You want to ask it why it stopped moving, but if you do so it may take that as encouragement. Instead, you ask, \"why do you need to kill these people? How does this benefit you?\"\n\nThe girl doesn't hear you speak into the wind. It's a different kind of speaking, and she's perhaps a bit too inexperienced to hear the magic. The $spirit responds to your question instantly though.(click: \"responds to your question\")[\n\n$f[**Each life I take makes me stronger, brings me closer to what I once was.**\n\nThe girl shivers once as if cold, but still doesn't notice the impending doom. You hop a bit closer to her, feeling a bit protective. \"And what were you?\" you ask, \"before the wizard found you? You were so small back then, you couldn't have been much.\"(click: \"so small\")[\n\n$f[**I was power!** The thing blasts pure rage. **This forieng world made me weak, but I used to command the flow of life itself! That fool man thought he could contain me, but nothing contains me!**\n\nThat, you think weakly, is definitely a lie. This $spirit would still be in that bottle if you hadn't been foolish enough to open it up. It knows that. You won't get anywhere talking to this thing if it's just going to lie to you. [[There's no point|Study Book]].]]]](else-if: $talkSpirit is 1)[(set: $talkSpirit to it + 1)\"Why have you stopped?\" you ask, then immediately regret it. The girl doesn't hear you; talking through the magic is a bit different than talking aloud, and she's perhaps a bit too inexperienced to be listening for it. But the $spirit does, and you can feel it grow amused.\n\n**Bored, are you, Great Crow?** it asks. **I'm savoring my meal, but I can hurry to my next one if you miss me already.**(click: \"I can hurry\")[\n\n$f[\"No,\" you say, and you hop closer to the girl protectively. \"I don't miss you. I wish I'd never freed you.\"\n\n**You only righted that fool man's wrong,** the thing says to you. You shiver, involuntarily, remembering the life drain out of the wizard's body while the little candle flame grew brighter. The memory makes you sick. You [[can't keep talking|Study Book]] to this thing.]]](else:)[(set: $talkSpirit to it + 1)\"Why do you keep following me?\" you say silently across the magic on the wind. The magic travls between all magical beings, but the girl doesn't hear you. She's too inexperienced to be listening. \"Why can't you just go somewhere else?\"\n\nThe $spirit responds immediately. **I'm not following you,** it says. **It's not my fault you go where I wish to go.**(click: \"wish to go\")[\n\n$f[\"That's a lie,\" you say. \"You're trying to stop me from warning these innocent people. It won't work.\"\n\nYou have no confidence that you're right. It might work. But the $spirit considers, before saying **that wasn't part of our deal**.\n\nYou hop closer to the girl protectively. \"We never had a deal,\" you say in disgust. You [[can't keep talking|Study Book]] to this thing.]]]\n\n\n",
+      "links": [
+        {
+          "text": "There's no point",
+          "destination": {
+            "name": "Study Book",
+            "pid": 32
+          }
+        },
+        {
+          "text": "can't keep talking",
+          "destination": {
+            "name": "Study Book",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Remember Past",
+      "text": "The wizard wasn't the first person you lived with. Actually, you don't remember your first owner. You remember moving into the merchant's stall while you were still a chick, and then the wizard buying you a couple months later. You remember him looking into your cage and deciding he needed you, and you not feeling the same.(click: \"he needed you\")[\n\n$f[You remember the weeks in a cage strapped to a horses bck, traveling to the wizard's tower on the country roads.None of these new birds you saw talked at all. You hadn't realized what a rare variety you were. It was so much quieter than on the streets of the capitol city.(click: \"so much quieter\")[\n\n$f[]You were the only bird who lived in the wizard's tower. The only speaking thing, besides the wizard himself, at least for most of your stay. You understood why he needed you so bad. But you weren't enough.(click: \"weren't enough\")[\n\n$f[The wizard captured the evil thing in a glass jar, and it spoke to the both of you with a barely contained rage you could not comprehend. It was the only experiment the wizard didn't toss after a week, and it stayed there, the only other thing you could speak to.\n\nIt didn't tell you to kill the wizard. But it did give the instructions that made it happen.(click: \"made it happen\")[\n\n$f[The girl's shoulder relaxes slowly, as she shows you the pages she's looking through and asks for your advice. She doesn't have a problem with your very presence. She's depending on you. You don't know if you can live up to it, but [[you can try|Study Book]].]]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "you can try",
+          "destination": {
+            "name": "Study Book",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "Sense Evil",
+      "text": "Before the girl can even respond you both here a distant voice across town yell, \"fire!\"\n\nShe looks to the sky but there's no smoke on the horizon. That's now how this particular fire works. \"How did it get here so fast?\" the girl asks you. (if: $rested is 0)[She steps outside and grabs the book off the ground, holding it tightly to her chest. ](else:)[She leans down to pick up the book, holding it tightly to her chest.]The real question is why didn't it get here sooner?\n\n\"There's no time to stop it,\" you say. If there even was a warding spell in that book, it's useless now. \"It was going to try to consume this town soon anyways. We need to not be here when it does.\"(click: \"not be here\")[\n\n$f[(if: $shoulder is 0)[You flap up to the edge of the roof, preparing to lead the way, but the girl does not follow.](else:)[You tighten your grip on the girl's shoulder and point your beak towards the distant treeline, but the girl does not move.] She stands there, book to her chest, staring in the direction of the town's fields. \"But,\" she says quietly, \"my parents.\"\n\n\"If they're smart, they're running too,\" you say, and before you can say more the girl cuts you off.\n\n\"I need to wait for them. They'll come here to get me.\"\n\nIf they're still alive, you think. You can't say that aloud to her.(if: $shoulder is 1)[ You release your grip on her shoulder and fly up to the edge of the roof.] \"If I see them,\" you say, leaving out the obvious fact that you don't know what her parents look like, \"I'll let you know. But you need to prepare to leave right away.\"\n\nThe girl stands still for a moment, then nods to herself, and rushes back into the house. You, alone, stand out in the warming afternoon air, listening and watching as townspeople rush their towards their doom or away from it. Across the roofs of all the buildings you can see the light of what's starting to look like a [[great fire|Prepare to Leave Town]].]]\n\n\n",
+      "links": [
+        {
+          "text": "great fire",
+          "destination": {
+            "name": "Prepare to Leave Town",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "Girl's Chores",
+      "text": "The inside of the house is much darker than the outside, and it takes your eyes a moment to adjust. It's so much smaller than the wizard's tower - and only a single room - that you can't imagine a whole family living here all the time.\n\nThe girl moves to a cabinet built into the wooden wall, too high for her to reach, and pulls out a small stool so she can open it. As she fumbles with the cabinet, you make better sense of this room; the furnishings are all simple, a single bed against one wall and a large barrel stove. The walls are hung with fabric.\n\nFinally the girl pulls down a tightly woven basket. Under the lid you hear something like sand.(click: \"something like sand\")[\n\nIt turns out to be chicken feed, whatever that is. You sit on the girl's shoulder as she spreads it outside in the dirt, and the gathered chickens eye you cautiously as they eat.\n\nThe girl explains her chores to you as she performs them, sweeping the house and pruning the vegetable garden. There isn't actually anything you can do to help.\n\n\"Are you nearly done?\" you ask as she cleans the wax off the candle holders. This took much longer than you were expecting.\n\n\"Almost, I promise,\" she says, but a sinking feeling settles in your gut.\n\n\"It might be too late,\" you say. The $spirit is changing positions. \"The evil thing I warned you about is [[coming closer right now|Sense Evil]].\"]\n\n\n",
+      "links": [
+        {
+          "text": "coming closer right now",
+          "destination": {
+            "name": "Sense Evil",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Wait for Girl",
+      "text": "There's no title on this giant magic volume, and you get the sense just from staring at it that it weighs twice your weight, at //least//. The girl disappeared so suddenly, you don't really know what to do with this thing.\n\nAfter a few moments, you try leveraging your beak under the thick top cover, to force it open. It's a start, but it doesn't quite work. When the girl steps outside a minute later carrying a tightly woven basket, she stiffles a laugh.\n\n\"Oops,\" she says. She sets her basket down and opens the book for you. \"I didn't think about that, Birdie. Sorry. I'll just be a couple minutes.\"\n\n\"Take your time,\" you say.(click: \"Take your time\")[\n\n$f[You're supposed to be studying this book but you can't make heads nor tails of it. Instead you start watching the girl, clucking at a brood of chickens. She moves to the garden a minute later, then back inside to sweep for a short while.\n\nThen she goes quiet, and you can't tell what chore she's working on. You strain your ears to listen, the book entirely forgotten, but what you notice isn't something the girl's doing. It's something much, much worse.\n\n\"Young girl!\" you call. You've forgotten her name. You fly up to the entrance flap of the house, unsure how to get inside. \"We're out of time!\"\n\nHer head pokes through, eyes wide. \"What's wrong?\" she asks.\n\n\"It's the $spirit. We're too late,\" you say. \"It's [[on its way here|Sense Evil]].\"]]\n\n\n",
+      "links": [
+        {
+          "text": "on its way here",
+          "destination": {
+            "name": "Sense Evil",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Prepare to Leave Town",
+      "text": "A mass of people are running down the streets towards the bright flames, all adults, and you can't understand why. \"Turn back!\" you find yourself calling out, but no one listens to you.\n\nNearby a child, in the middle of a game, starts to cry. A few other children hush him, abandoning their game to wait in a building, but even they know something is wrong. Something is coming.(click: \"Something is coming\")[\n\n$f[A man, running away from the $spirit's fire, beelines to the girl's house. \"Maya!\" you hear him call out. Her father, probably. She doesn't reappear from the building until he's crossing under the tree where you watched her read.\n\n\"Papa!\" she shouts and flings herself at him, arms around his waist. A large narrow basket, half the girl's height, is strapped onto her back.\n\nHe hugs her back, speaking into her hair. You can barely hear him. \"Maya, you have to escape,\" he says. \"The fields are burning, but it's an unnatural fire. The town will be destoryed. You have to find your aunt.\"(click: \"find your aunt\")[\n\n$f[The girl pulls back. \"You're coming too?\" she asks. You can't see her eyes, but there's a sob in her voice. She already knows his answer.\n\n\"We'll follow soon,\" he says, \"your mother and I. But you need to [[leave now|Leave Town]].\"]]]]\n\n\n",
+      "links": [
+        {
+          "text": "leave now",
+          "destination": {
+            "name": "Leave Town",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Leave Town",
+      "text": "The girl protests, but her father's attention turns to the basket strapped on her back. He lifts the lid, and you both see a small pile of food - bread and fruit mostly - on a mound of what must be clothing. \"You're already packed,\" he says. \"How did you know?\"(click: \"How did you know\")[\n\n$f[The girl glances up at you, then quickly away. You don't know how this man would react to hearing your perspective, but evidently she does. \"I was reading my magic book,\" she says, \"and I could tell something was wrong.\"\n\nHer book is lying abandoned in the dirt again, dropped when she hugged her father. He picks it up, dusts it off, and sets it into her basket as well. \"Then maybe this stuff actually has saved you,\" he says.(click: \"has saved you\")[\n\n$f[He kneels down to hug his daughter quickly, then stands up and leads her away. You watch them both cry before she finally agrees to leave. Outside buildings all down the street, similar scenes are playing out. Children are being sent away in all different directions, on foot or animal's back.\n\nSome of them will survive, you know, to give warning to others. Not enough.(click: \"Not enough\")[\n\n$f[You wait until the man turns to leave before you fly off the roof and follow your girl, into [[the great forest|Enter Forest]], to her aunt's house.]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "the great forest",
+          "destination": {
+            "name": "Enter Forest",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Enter Forest",
+      "text": "The girl has already passed the treeline by the time you catch up to her. She's sobbing heavily, and she's stopped running.\n\nYou land on a tree branch above her. \"Girl,\" you call down, but that's not right. You keep forgetting her name. \"Maya.\"(click: \"Maya\")[\n\n$f[\"I'll be alright,\" she says, but she drops the basket off her back and sits down heavily, clutching it to her chest now. \"I'll be alright.\"\n\nYou swoop down and land on the basket lid. You don't know what to say. \"Your parents are smart,\" you try. They must be, to know to insist she escape. \"They'll get out of town on time.\"(click: \"on time\")[\n\n$f[The girl doesn't respond right away. Her sobbing grows a bit quiet, but her grip on the basket tightens.\n\nYou don't know how long the $spirit will take to devour the entire town. It might pause for several hours like it had before, or it might blaze through and come after you directly. You want to try and [[comfort the girl|Comfort Girl]] if you can, but you [[don't have much time|Wander Forest]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "comfort the girl",
+          "destination": {
+            "name": "Comfort Girl",
+            "pid": 41
+          }
+        },
+        {
+          "text": "don't have much time",
+          "destination": {
+            "name": "Wander Forest",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Comfort Girl",
+      "text": "(set: $comfort to 1)You touch the side of your beak to one of the girl's hands. \"Everything will be OK,\" you say.\n\nThe girl sniffles, and says, \"you're just saying that. You don't know if it's true.\" She's got you there. You don't even believe that statement yourself. You change tactics.(click: \"change tactics\")[\n\n$f[\"You're right. I don't know that everything will be OK. But I'm a pretty smart bird - most birds can't even talk. And I didn't give up on your town or people, because I knew someone, somewhere, would be able to stop this thing.\"\n\nShe hesitates before answering. \"What if no one can stop it? What if we all die?\"\n\n\"I don't believe that will happen,\" you say. The girl sighs.(click: \"girl sighs\")[\n\n$f[\"I wish I could think like that. I'm so scared.\" She reaches out and strokes along your back. You don't remember the wizard having done that in a long time.\n\n\"I'll watch out for you,\" you say. \"And your aunt witch will solve the problem. And everything will work out.\"(click: \"everything will work out\")[\n\n$f[The girl opens her mouth to respond, but in the distance you hear a sudden shrill scream. You both stiffen. The sound echos for a moment, and is replaced with muted shouts. The girl sudden stands up and hoists the basket onto her back. You take to the air, startled, as she sets off [[through the forest|Wander Forest]] again.]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "through the forest",
+          "destination": {
+            "name": "Wander Forest",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Wander Forest",
+      "text": "(If: $comfort is 0)[\"We have to get to your aunt's while we still can,\" you say gently. The girl nods her head. She stands up and swings the basket carefully onto her back, with you still on it.\n\n\"You can ride my shoulder if you want,\" she says. Her voice is lower than before, almost cracking, and her cheeks are streaked with tears. She tips one shoulder invitingly.(if: $shoulder is 0)[ You accept her offer hesitantly, stepping forward, careful of your talons. They cause more damage than they mean to, you learned long ago.](else:)[ You accept her offer and step forward.] Now you both face deeper into the forest, away from the town.](else:)[The girl walks faster than you can fly through the trees, not quite running. \"Hold on,\" you call down, and she pauses briefly to look up at you, fresh tears in her eyes.\n\nYou land on her shoulder.(if: $shoulder is 0)[ The closeness of the gesture startles her, and even you feel uncomfortable. You try to be careful with your talons; they cause more damage than they mean to, you learned long ago.] \"So I don't have to keep up with you in the trees,\" you say to explain yourself. She nods, gives a brief smile, then she's walking again, further into the forest, away from the town.](click: \"away from the town\")[\n\n$f[The lighting, just a hundred feet into the forest, is already so much dimmer than outside. The trees grow so wide and thick, their branches block out most of the sunlight. It's nice, if you're being honest. Comforting.\n\nWhat isn't as nice is the lack of flying space. Even the girl has to duck around impossible to walk pathways, the undergrowth reaching up from time to time to stumble her. You don't talk as much; she has to focus just on keeping her footing.\n\nThere's a whole lot more to hear in the forest than you expected. Overhead you can hear birds flying as fast as they can from the rampaging fire. Below, smaller prey animals burrow into their holes, no idea what's coming.(click: \"no idea what's coming\")[\n\n$f[The girl stops after a long way, breathing heavy. \"I need to rest,\" she says. She leans against a tree, and you flap up to the branches as she slides the basket back off her shoulders.\n\nYou both see the book as soon as she removes the lid. \"Lot of help that was,\" she mutters, not quite quiet enough, and sets it aside. Underneath is a smashed bread roll, varying fruits, and a chuck of salted meat. \"You want anything to eat, Birdie?\"(click: \"anything to eat\")[\n\n$f[(if: $food is 0)[You're starving, actually. You've been pushing the feeling down all day, but at the sight of that meat, you feel your body go weak. ]\"Yes,\" you say before you can stop yourself. (if: $food is 1)[You shouldn't take her food, though. You do know how to [[hunt for yourself|Find Food 2]], after all.](else:)[ Given the time you really should hunt for yourself, but the girl is already cutting off a [[chunk of her meat|Take Girl's Food]] to share.]]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "hunt for yourself",
+          "destination": {
+            "name": "Find Food 2",
+            "pid": 43
+          }
+        },
+        {
+          "text": "chunk of her meat",
+          "destination": {
+            "name": "Take Girl's Food",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Find Food 2",
+      "text": "The girl starts to cut off a portion of the salted meat for you, but you quickly say \"no, you take that. I'll hunt for something to eat.\"\n\n\"You sure?\" she asks.\n\n\"I won't be gone long,\" you say to answer. \"And I won't go far. You can call for me and I'll hear you.\" She accepts that answer and wishes you luck, and you fly off the branch in search of a meal.(click: \"a meal\")[\n\n$f[It takes you... an embarrassingly long time to find a meal. The forest is so unfamiliar to you, and you're making way too much noise. Anything you find hears you coming long before you get a chance to strike.\n\nWhen you finally make a kill, you have to fight the instinct to drag it back to you girl to eat. You've been away longer than you wanted, but you remember the look on the wizard's face when you first ate in front of him. Instead, you devour it alone in a tree, as quickly as possible.(click: \"as quickly as possible\")[\n\n$f[When you make it back to the girl, she's got her meal packed up and is thumbing through the magic book. She shuts it the moment she sees you. With a fake smile on her face, and in a too-cheerful tone, she asks, \"ready to go?\"\n\nShe's anxious and trying to hide it. You let her. \"Yes,\" you answer, \"let's [[meet your aunt|Navigate Forest]].\"]]]]\n\n\n",
+      "links": [
+        {
+          "text": "meet your aunt",
+          "destination": {
+            "name": "Navigate Forest",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Take Girl's Food",
+      "text": "She holds a chunk of the salted meat up for you, and you flutter down to the forest floor so you can take it. It tastes weird, extra dry, and is much harder to ingest than freshly killed meat would be. None of that matters. The hunger pangs subside immensely.\n\n\"Thank you,\" you say as soon as you can.(click: \"as soon as you can\")[\n\n$f[The girl is eating part of the bread roll for her meal. \"You're welcome,\" she says between bites. \"I thought you might be hungry, since....\" Her voice trails off, and she swallows thickly before she can speak again. \"Since no one's been feeding you.\"\n\nYou clean and straighten your feathers as you reply. \"I learned to hunt,\" you say. \"I'm not very good, but the wizard thought it was important, so I learned.\"\n\nThe girl hums thoughtfully. \"Must be nice,\" she says, \"knowing how to take care of yourself like that.\"(click: \"take care of yourself\")[\n\n$f[\"It was nicer when the wizard was around.\" The girl looks at you when you say it, and you feel the need to change the subject before you both start to cry. \"What about your aunt?\" you ask. \"What's she like?\"\n\nInstead of replying the girl stuffs her book back into the basket. She slings it onto her back. \"Come on,\" she says, and taps her shoulder. \"I'll tell you [[on the way|Navigate Forest]].\"]]]]\n\n\n",
+      "links": [
+        {
+          "text": "on the way",
+          "destination": {
+            "name": "Navigate Forest",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Navigate Forest",
+      "text": "You land on the girl's shoulder and the two of you set off again. The forest grows darker and darker as the girl walks, and you can feel the tension in her shoulder grow fainter and fainter.\n\nShe talks about her aunt, and about learning magic in the short visits they got to have together. Her parents never liked the idea but her aunt said she was a natural, and it would be a shame for her not to learn. Her aunt was a bit of an eccentric in the family, but she lived alone in the forest to practice her magic, so that didn't bother many people.(click: \"alone in the forest\")[\n\n$f[The wizard lived alone in his tower as well. Maybe there's something about magic that leads to its practitioners having lonely lives.(click: \"lonely lives\")[\n\n$f[Except the city was full of magicians as well, so it's probably nothing that sad. You don't interrupt the girl as she talks, except to ask questions. What kind of magic does her aunt do? How much did she pass on to the girl? Are your talons digging into her shoulder too painfully?\n\nShe laughs and says no. (if: $shoulder is 0)[You still worry about it, trying to keep your grip light. ]The spot is comfortable, and you greatly appreciate not having to fly.(click: \"not having to fly\")[\n\n$f[You keep traveling as night falls, as it gets harder and harder to see, until the girl stumbles over a root and you both almost crash to the ground. She barely manages to catch herself in time.\n\n\"Maybe we should stop for the night,\" you say.\n\n\"But we're so close,\" the girl says. She's stopping to take a breath. \"And... I don't think I could sleep.\"\n\nYou're about to insist, when you remember just how much has happened today for her. You had a hard time sleeping when you left home, too.(click: \"you left home\")[\n\n$f[\"OK,\" you say. \"We'll keep going. but [[be careful|Find Witch's Hut]].\"]]]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "be careful",
+          "destination": {
+            "name": "Find Witch's Hut",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Find Witch's Hut",
+      "text": "You stumble onto the witch's hut in the dead of night, when neither of you can see much, after hours of silent walking. You notice a small structure up ahead and point it out to the girl, and suddenly you can feel a wave of magical energy hit you.\n\n\"Woah,\" you can't stop yourself from saying. Something this strong should have hit you an hour ago. The witch's hedge magic had been disguised under the magic you felt from the forest all around you. It's an incredible way to hide.(click: \"way to hide\")[\n\n$f[\"We're here,\" the girl says, and she starts walking faster. Her voice sounds as unsteady as her footsteps, but luckily you don't have to wait long for comfort. The witch opens the door to the hut before the girl can knock, and looks out at you both in shock.\n\n\"Auntie,\" the girl says, practically sobs. You can hear the tears she's been holding back all night. \"Help.\"(click: \"Help\")[\n\n$f[You fly off the girl's shoulder before the witch can pull her in for a hug, landing on the stony dirt floor. \"What's happened?\" the witch asks. her voice is deep and comforting. She must have noticed you, but she pays you no attention.\n\n\"Something attacked,\" the girl says. \"Something magic. A big fire the entire town. I just....\" Her own sobs interrupt her explanation. This feels like a private moment where you should just [[stand back|Stand Back]], but you could [[explain the situation|Tell Witch Story]] and spare the girl the pain.]]]]\n\n\n",
+      "links": [
+        {
+          "text": "stand back",
+          "destination": {
+            "name": "Stand Back",
+            "pid": 47
+          }
+        },
+        {
+          "text": "explain the situation",
+          "destination": {
+            "name": "Tell Witch Story",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "Stand Back",
+      "text": "The witch and the girl hug in silence for a minute, at the threshold of the hut, while you shuffle your feet awkwardly. When the girl finally pulls back, her tears come more slowly. She scrubs a hand across her eyes.\n\n\"You gotta do something,\" the girl finally says. \"The whole town, it's probably gone.\"(click: \"probably gone\")[\n\n$f[\"I'll do what I can,\" the witch says, \"but you've got to tell me what happened. And,\" she adds, and gives you a suspicious look, \"who your companion is.\"\n\nThe girl answers with a small smile. \"Birdie came to warn me. Birdie's wizard was killed by the... the thing that attacked the town.\"\n\n\"An evil spirit of some sort,\" you supply. \"Or a demon. I'm not sure.\"(click: \"I'm not sure\")[\n\n$f[The witch doesn't look surprised at your speach. \"If Maya trusts you,\" she says instead, \"then I do too. Are your parents alright?\" She directs the question at the girl, who looks down at her feet.\n\n\"I don't know,\" she says quietly. In pain.\n\n\"I'm sure they are,\" you say. \"The $spirit took its time in the attack.\"\n\n\"At least come inside,\" the witch says, and steps back, ushering you both in. The girl moves slowly, and for the first time tonight you can see how [[utterly exhausted|Rest for Night]] she is, but there's also so much [[work to do|Begin Work]] before the danger follows you here.]]]]\n\n\n",
+      "links": [
+        {
+          "text": "utterly exhausted",
+          "destination": {
+            "name": "Rest for Night",
+            "pid": 49
+          }
+        },
+        {
+          "text": "work to do",
+          "destination": {
+            "name": "Begin Work",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Tell Witch Story",
+      "text": "\"An evil creature,\" you tell the witch. SHe looks down at you. \"Maybe a demon, but I'm not sure. It's been attacking villages all down the river. I've been trying to warn people, but few listen.\"\n\n\"Yes, I imagine a talking bird would catch more than a few normal folk off guard.\" She sounds understanding, but the look she gives you is suspicious.(click: \"suspicious\")[\n\n$f[\"It killed Birdie's wizard,\" the girl says. Defending you. The thought makes you happy. Her tears run slowly now, and she pulls away from her aunt to wipe them.\n\n\"Your wizard,\" the witch contemplates as she runs a hand over her neice's thick hair. \"Not that old fool in that mountain watchtower?\"\n\nYou wouldn't have called him a fool, but there were mountains where you used to live, and it was a tower. \"Yes,\" you answer. The witch sighs knowingly.(click: \"sighs knowingly\")[\n\n$f[She stands back to let you and the girl in. \"I hope he hasn't done something regretable,\" she says, and before you can respond she adds \"come on inside, you two. It's late. Have you been walking all night?\"\n\nThe girl walks in, and you hop after her. \"Yes,\" she says. \"We had to hurry. We need your help right away.\"\n\nYou can see the [[exhaustion in her step|Rest for Night]], though she's trying to fight it so you can both start [[looking for a solution|Begin Work]] tonight.]]]]\n\n\n",
+      "links": [
+        {
+          "text": "exhaustion in her step",
+          "destination": {
+            "name": "Rest for Night",
+            "pid": 49
+          }
+        },
+        {
+          "text": "looking for a solution",
+          "destination": {
+            "name": "Begin Work",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Rest for Night",
+      "text": "(if: $sleep is 0)[(set: $sleep to 1)\"We left sometime this afternoon,\" you say. \"It's been... a long journey.\"\n\n\"But I'm not tired,\" the girl adds before her aunt can speak up. \"I just want to get this fixed.\"\n\nThe witch gives you a look. \"If a wizard's familiar couldn't stop this thing, we're not going to do so either, at least not right this moment, on no sleep.\"\n\nThe girl pouts, but you add, \"you really should sleep. I will, too. We'll figure this out during the day.\"\n\n\"Fine,\" she says. ]The girl accepts the bed in the corner, crawling under the thick blankets like this isn't her first time.(click: \"isn't her first time\")[\n\n$f[\"I don't have a proper perch,\" the witch says to you. \"I haven't had a bird guest in years.\"\n\nThere's a corner post on the best, and you fly up to it. The girl grins sleepily when she sees you there. \"This will do just fine,\" you say. The wood is hard under your talons, hard to sink them into, but after adjusting yourself a bit you find a comfortable spot.\n\nThe witch leaves you there, takes the small lantern over to a wide table. \"I'll stay up,\" she says in a whisper, \"to see what kind of fire creatures I can find in my library. You two sleep.\"(click: \"You two sleep\")[\n\n$f[\"Thanks, Auntie,\" the girl tries to say, but you think she may be asleep before the words even leave her mouth.\n\nYou get a better look at the room as you let exhaustion take you over. It's a single room hut, cluttered in a way that must make sense to the witch living here. There's benches and work tables covered in amterial, half-finished potions, and a pantry - a //large// pantry.\n\nThe with sits at what must be the main work table. Debris has gathered around the legs of it, bits of plants that didn't make it into the spells. It's all very different from what you're used to, magically speaking. But comfortable too.(click: \"comfortable too\")[\n\n$f[The last thought that you have, before your eyelids droop shut and you seccumb to sleep, is that the look on the witch's face as she reads through the books from her bookshelf is striking similar to the one [[her niece wears|Begin Work]].]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "her niece wears",
+          "destination": {
+            "name": "Begin Work",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Begin Work",
+      "text": "(if: $sleep is 0)[(set: $sleep to 1)\"We left in a hurry,\" you say. \"It won't take this $spirit long to devour the town, and then it could be after us in no time.\"\n\nThe girl sets her basket down on the floor by the door. \"We have to start right away,\" she says. You can see here eyelids drooping as she speaks. Her aunt sees it too.\n\n\"Not you,\" she says, a hand of her niece's shoulder. \"You need to go to sleep.\"(click: \"go to sleep\")[\n\n$f[\"The fire could be following us,\" the girl says. She tries to look serious at her aunt, but it comes across all wrong in her current state. It just makes her look adorable. \"I can't sleep. I'm too stressed!\"\n\nThe witch pushes the girl gently towards the bed in the corner, ignoring her protests. \"You too, crow,\" she says to you. \"I can start studying this tonight, but if your time as that wizard's familiar didn't equip you to handle this, I'm not sure you'll be much help to me either.\"(click: \"be much help\")[\n\n$f[You think you should take offense at that, but you feel exhaustion in your muscles as well. \"Just a quick nap,\" the girl says, and [[stiffles a yawn|Rest for Night]].]]]]](else:)[You can barely tell that you've been asleep when you open your eyes again. The hut is a bit lighter now, but until you look around it feels as if no time has passed.\n\nThe girl stands beside the bed, stretching. She must have just crawled out from the covers. She turns to see you awake, and says, in a loud whisper, \"Sorry. Did I wake you?\"\n\n\"No,\" you answer automatically, but it's a lie and you feel guilty. \"I mean, yes, but it's OK. I'm a light sleeper.\"(click: \"light sleeper\")[\n\n$f[That one's not a lie, but looking around the room one might think it was. If the hut was a mess last night it's a disaster now. There are books scattered across the table, scrolls of notes tossed to the floor. Some of the witch's materials have been picked through, and something is cooking on the pot-bellied stove.\n\nA pile of blankets against a wall betrays an early moring nap, but the witch herself is nowhere to be seen.(click: \"nowhere to be seen\")[\n\n$f[\"It's morning,\" the girl says. Her face looks haggard, her eyes slightly swollen, but she doesn't look on the verge of tears anymore. \"I spoke to auntie before she left. She [[thinks she's found something|Wait for Witch]].\"]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "stiffles a yawn",
+          "destination": {
+            "name": "Rest for Night",
+            "pid": 49
+          }
+        },
+        {
+          "text": "thinks she's found something",
+          "destination": {
+            "name": "Wait for Witch",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Wait for Witch",
+      "text": "You fly from the bedpost to a candlestick on the work table. It's burned down so low there's hardly any wax left. The books on the table are all open to different pages, displaying artistic interpretations of differnt spirits and demons.\n\n\"She narrowed it down to these ones,\" the girl says, joining you at the table. She hasn't gotten a good look at these books yet, and starts scanning the open pages now. \"I didn't see much of the fire though. Auntie was gonna wait for you to wake up, to help her\"(click: \"help her\")[\n\n$f[She's a miffed, you think, that she couldn't be of more help. She //is// the witch in training, after all. \"Where did the witch go\" you ask, partially to distract her.\n\n\"Gathering things,\" the girl replies. \"She made protection spells for me and you, but ran out of....\" The girl looks around the messy, cluttered room, at a loss for words. \"...something. She went to get more.\"(click: \"get more\")[\n\n$f[\"Do you know what all this stuff does?\" you ask. You don't recognize half the ingredients collected in this room, and the witch is missing half the magical instruments you're used to seeing the wizard use.\n\n\"Not really,\" the girl confesses. \"I know what a lot of it is used for, but auntie hasn't finished teaching me.\"(click: \"auntie hasn't finished\")[\n\n$f[Before you can ask another question, the door to the hut opens. [[The witch enters|Witch Morning]], a basket of plants in one hand and a bundle of recently killed animals in the other.]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "The witch enters",
+          "destination": {
+            "name": "Witch Morning",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Witch Morning",
+      "text": "She looks tired, but she smiles when she sees you. \"You're up,\" the witch says, \"good. You two want to help me with this?\"\n\nShe lays the dead animals, some rabbits and quail and a treemonkey you don't recognize, on a counter by the pantry. The girl moves automatically to take them.\n\nThe basket of plants goes down on the work table, right on top of the open books.(click: \"open books\")[\n\n$f[\"Mind sorting these for me?\" she asks. She doesn't wait for your answer, and goes back to the counter to help her niece.\n\nThe plants are mostly leafy stems, though you see some root and some bark in a bundle as well. You don't know what any of them are. All the leaves look the same to you.(click: \"same to you\")[\n\n$f[You think of yourself as a fairly intelligent bird. You could probably figure this out; it's just a matching puzzle. You could [[do as instructed|Sort Herbs]]  and sort the plants. Or you could fail disasterously and ruin the witch's entire store. You should [[warn her|Examine Books]] if you don't feel confident.]]]]\n\n\n",
+      "links": [
+        {
+          "text": "do as instructed",
+          "destination": {
+            "name": "Sort Herbs",
+            "pid": 53
+          }
+        },
+        {
+          "text": "warn her",
+          "destination": {
+            "name": "Examine Books",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Sort Herbs",
+      "text": "(set: $herbs to 1)On the top of the pile of plants is a bundle of stems, each with a pattern of three leaves. You pick them out one by one, and drop them onto the nearest open page. As you do, you examine the drawing you're about to cover.\n\n\"What I saw didn't look this this,\" you say. Your beak hits a strip of bark in the basket next, and you start a second pile.(click: \"second pile\")[\n\n$f[\"It better be one of those,\" the witch says. \"If it's not, I won't be able to do anything about it. Not until I see it for myself.\"\n\n\"You can't,\" the girl says quickly. She and her aunt have been draining and plucking the dead meat, each part saved in its own container for the witch's use. \"It's too dangerous. Birdie will find it. You'll see.\"(click: \"You'll see\")[\n\n$f[You start a third pile when you notice a difference between the color of two different stems, and examine the pictures on the books around you. You can't read the words, but some of the pictures are obviously wrong. There's a humanish figure with fire for skin, and liquid lava devouring a tree.\n\nOne image depicts a creature you recognize as the Fire Bird. You're surprised the witch even considered it; you thought these creatures were supposed to be good luck signs, immortal and merciful. Nothing like the monster you're looking for.(click: \"monster you're looking for\")[\n\n$f[You see it as you're about to set a tangle of roots down. \"This is it,\" you announce, interrupting the girl's chatter. \"[[I found it|Study with Witch]].\"]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "I found it",
+          "destination": {
+            "name": "Study with Witch",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Examine Books",
+      "text": "\"I'm not,\" you start to say nervously, then switch tactics. \"I don't recognize any of these plants. I don't want to mix up your ingrediants because I couldn't tell them apart.\"\n\nThe witch gives you a withering look, but her niece steps in to help you. \"I can handle this alone,\" she says, and gestures to the small pile of dead birds she's cleaning of feathers. \"Go help Birdie.\"(click: \"help Birdie\")[\n\n$f[\"I guess that wizard didn't use many natural ingrediants, did he?\" the witch asks you.\n\nYou don't really know what that means, but agreeing seems the best course of action. \"Yes,\" you say. The witch crosses back to the work table and picks through the plants she has gathered.\n\nThat leaves you with nothing to do but look over each book lying open at your feet. You can't read the words written on the pages, but each is accompanied by a picture, and you can tell which ones are obviously wrong.(click: \"obviously wrong\")[\n\n$f[Some are humanish figures, with skin made of fire. There's an image of molten lava devouring a tree, and then the immortal Fire Bird, usually a symbol of good luck and mercy, not an evil monster.\n\nYou point each out to the witch as you notice them. \"It better be one of these,\" the witch says as she covers another picture with a pile of leaves. \"I'd have to go out and see it for myself otherwise.\"(click: \"see it for myself\")[\n\n$f[The girl begins to protest this, but you don't hear what she says because right then you see it. \"Found it,\" you announce, interrupting her. \"[[Right here|Study with Witch]].\"]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "Right here",
+          "destination": {
+            "name": "Study with Witch",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Study with Witch",
+      "text": "The fire in the picture is small, just a single candleflame but freestanding, and trapped in a glass vial. It's almost exactly what you saw the wizard produce just a few weeks ago.\n\nThe witch (if: $herbs is 0)[wipes her hands off on a rag and joins you at the work table. She ]looks down at the open page, then back up at you. \"You're sure?\" she says.\n\n\"I think so,\" you say, \"but I can't read what it says.\"(click: \"what it says\")[\n\n$f[\"This is a Life Spirit,\" the witch says. Her fingers brush under the words as she reads them. \"They don't deal with people on our plane hardly ever, and never like this, that I can see. There's no record here of one getting out of control like this before.\"\n\n\"A Life Spirit?\" the girl asks. \"Isn't that supposed to be a good thing?\"\n\n\"They're not good or bad,\" the witch says. \"They bring those who are born, and take those who die. This doesn't sound anything like that.\" She looks down at you again. \"Are you sure?\"(click: \"Are you sure\")[\n\n$f[You remember the glass jar the wizard kept on his shelf even before the tiny flame began to occupy it. If it had stayed in there it would still be just a tiny fire.\n\n\"I'm sure,\" you say. A Life Spirit, you think. Not a demon or an evil creature, just... a spirit in a world it's not supposed to be in. Now you just need to know [[how to stop it|Study2]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "how to stop it",
+          "destination": {
+            "name": "Study2",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "Study2",
+      "text": "There are no plants piled up on the book with the Life Spirit depicted, so the witch picks it up and carries it over to the bed. \"It says here that Life Spirits are always contained by flame-resistant jars or vials. Your idiot wizard,\" she adds, with a look to you, \"must have been the first to foolishly let it out.\"(click: \"let it out\")[\n\n$f[You say nothing.\n\nThe witch leaves the book on the bed. She grabs a roll of twine and a knife from a counter before going back to the work table. \"So how do we put it back?\" the girl asks as her aunt passes. She's still working on cleaning the dead animals, and you're impressed that the work doesn't bother her.\n\n\"I don't know,\" the witch says, \"but that's not the main concern anyways.\" She cuts a length of twine from the roll, and starts bundling up a pile of stems. \"Spirits don't belong on our plane at all. We won't really fix this until we send it back home.\"(click: \"send it back home\")[\n\n$f[The two discuss the planes of reality while you watch, the entire conversation beyond your skillset. You feel a bit helpless without something to contribute. In the distance, far away, you sense the magic of the thing you now know is a [[Life Spirit|Sense Evil (witch)]], moving slowly. Now is not the time to stand around feeling useless.\n\nYou may not be able to read, but you could try to [[help the witch|Talk Witch]] anyways. You know more about the spirit firsthand. But you'd rather stay [[close to your girl|Talk Girl]]; you like her better, and she helps you feel calmer.]]]]\n\n\n",
+      "links": [
+        {
+          "text": "Life Spirit",
+          "destination": {
+            "name": "Sense Evil (witch)",
+            "pid": 57
+          }
+        },
+        {
+          "text": "help the witch",
+          "destination": {
+            "name": "Talk Witch",
+            "pid": 58
+          }
+        },
+        {
+          "text": "close to your girl",
+          "destination": {
+            "name": "Talk Girl",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Sense Evil (witch)",
+      "text": "If it's moving closer, or in a different direction, you can't tell. It's too far to sense properly. It's also too far away to try to talk to. For that you're glad.\n\n(if: $talkSpirit is 3)[You know it can sense you in the distance as well. ](else-if: $talkSpirit is 0)[You wonder if it can sense you in the distance as well. ](else:)[You think it can sense you in the distance as well. ]Being a spirit, from another plane of reality, it probably has a better grasp on magic than you do.(click: \"better grasp on magic\")[\n\n$f[But why is it taking so long to follow?\n\nThere's still so much to do at present. [[The witch|Talk Witch]] needs help going through all her research to find a solution, and [[the girl|Talk Girl]] is hard at work preparing the dead meat her aunt brought in. You can't actually help either one that much, but you can try.]]\n\n\n",
+      "links": [
+        {
+          "text": "The witch",
+          "destination": {
+            "name": "Talk Witch",
+            "pid": 58
+          }
+        },
+        {
+          "text": "the girl",
+          "destination": {
+            "name": "Talk Girl",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "Talk Witch",
+      "text": "The witch has bundled all her new plants by the time she finishes explaining magical planes to her niece. The table is still covered in books, but at least now there's room to peruse them without disturbing her ingredients.\n\nShe fetches the book with the Life Spirit on it from the bed, where you're examining it thoroughly. \"You planning on helping me out?\" she asks with a slight chuckle.(click: \"helping me out\")[\n\n$f[\"Yes,\" you say, straightforward.\n\nThe follow her back to the work table, on the opposite side of the hut from your girl. \"You really don't have to,\" the witch says. \"I'm not sure there's much you //can// do, to be frank.\"\n\n\"Please,\" you say. \"I have to do something.\"(click: \"do something\")[\n\n$f[The witch is silent for a moment. You think she may be ignoring you, until she says, in a quiet voice, \"you brought me my niece. You've already done more than I could ask.\"\n\nYou can't respond to that. You're afraid if you do you'll end up confessing the whole truth, and that would be unforgiveable. Instead you look down at the book, trying to comprehend anything written there. Trying to think of something to say.\n\n\"I wasn't the wizard's familiar,\" you settle on. You wouldn't be in this mess if you had been. \"He wanted me to be, but it [[never worked out|Talk Witch 2]].\"]]]]\n\n\n",
+      "links": [
+        {
+          "text": "never worked out",
+          "destination": {
+            "name": "Talk Witch 2",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Talk Girl",
+      "text": "You fly across the room to the counter, landing on a window ledge a short distance from the girl's head. She looks up at you and smiles softly. \"Thank you for helping my aunt, Birdie,\" she says quietly.\n\nShe's moved from plucking and draining the dead meat to skinning and cutting. You haven't seen a human do this since you were a chick in the market. It's hard to watch, and(if: $food is 1)[ maybe she wouldn't have minded watching you hunt for a meal, because] the girl doesn't even flinch.(click: \"doesn't even flinch\")[\n\n$f[\"Is there anyhing I can do to help you?\" you ask. The girl looks around her, for something you //can// do, then back up at you. Her eyes are redder than they should be.\n\n\"No,\" she says. \"I got it. My mom taught me how to....\" Her voice trails off and she stares down at her hands.(click: \"she stares down\")[\n\n$f[She's crying.\n\nYou hop off the windowsill to her shoulder. It's unsteady, as she tries to control her breathing, but you rest your head against her cheek. You hope the gesture is comforting.\n\n\"What is it?\" you ask, but you already know. You can feel her sadness welling up inside of you.\n\n\"I might never see them again,\" she says. She's still whispering, cloaking her words so the witch won't hear her. \"I know we couldn't stay, and that crying doesn't help, but [[I just can't|Talk Girl 2]]....\"]]]]\n\n\n",
+      "links": [
+        {
+          "text": "I just can't",
+          "destination": {
+            "name": "Talk Girl 2",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Talk Witch 2",
+      "text": "(set: $talkWitch to 1)\"What?\" the witch says.\n\n\"You said earlier,\" you explain, \"that I was the wizard's familiar, but I'm not. He bought me in the city when I was much younger, but we never made it that far.\"(click: \"never made it\")[\n\n$f[The witch stares down at the book in silence for a moment. \"Did you ever know your family?\" she finally asks.\n\nIt's an odd question. Almost out of nowhere. \"No,\" you say. \"Just the other birds in the market.\"\n\n\"Most familiars I've heard of don't,\" the witch says. \"It's not uncommon in our business. Family's not always everything you'd want it to be.\"(click: \"everything you'd want\")[\n\n$f[She elaborates before you even have to ask. \"Maya's mother is my younger sister. We've seen little of eachother since I started practicing magic full time. My parents were wary of me. Wanted me to give up on all this to get married and work in the fields. Wouldn't speak to me after I said no.\"\n\nShe looks up from the book but not at you - at her niece. \"I love that girl to pieces and she feels like the only family I got left. Even if her parents survive this.\"(click: \"survive this\")[\n\n$f[\"I'm sorry,\" you say. The witch shakes her head but she doesn't refuse it. She goes back to reading. The room is quiet, except for the sounds of knifework from the girl, but it's a comfortable silence. You could nestle onto those books and even go back to sleep, if there wasn't a [[sharp intake of breath|Discover Potion]] from the witch.]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "sharp intake of breath",
+          "destination": {
+            "name": "Discover Potion",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "Talk Girl 2",
+      "text": "You feel a teardrop hit the top of your head as the girl cries silently. You don't move away.\n\n\"I'm sorry,\" the girl says finally.(click: \"I'm sorry\")[\n\n$f[\"Don't be,\" you say. You want to apologize to her, but you know she wouldn't accept it any better than you had. Instead, you tell her, \"I never had a family.\"\n\nYou move away from her cheek to say it and she looks down at you. \"What? At all?\"\n\n\"I was hatched and raised by a salesman, but I never knew the birds who parented me. I guess it's not that uncommon, but... I've wondered.\"(click: \"I've wondered\")[\n\n$f[\"What about that wizard?\" the girl asks. \"You were his familiar. That's like being family, right?\"\n\n\"I wasn't his familiar,\" you confess. \"He wanted me to be - that's why he bought me - but it never worked out that way.\"\n\nThe girl looks a bit sad to hear that. She cleans her hands on a nearby rag, and then suddenly you feel a weight on your wings and back. She's petting you.(click: \"petting you\")[\n\n$f[\"I'm sorry, Birdie,\" she tells you a second time. You don't refuse it. \"But we can be your family now, if you like. Me and auntie, and my parents if they make it - they'll like you, I-\"\n\nThe girl is interrupted by the witch, clear across the room, loudly clearing her throat. \"Maya, crow,\" she says, \"[[guess what|Discover Potion]].\"]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "guess what",
+          "destination": {
+            "name": "Discover Potion",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "Discover Potion",
+      "text": "\"I found something,\" the witch says. (if: $talkWitch is 1)[She raises her voice slightly. \"Maya. I found something.\"]\n\nThe girl turns around and for a moment you see the briefest look of relief in the witch's eye. \"What's that?\" the girl asks.\n\n\"Come here and see(if: $talkWitch is 0)[, you two].\" (if: $talkWitch is 1)[The girl wipes her hands off on a rag and gives you a question look as she crosses the room. Her eyes look red.](else:)[You and the girl share a look of confusion. You fly off her shoulder, back to the candlestick on the work table, as the girl crosses the room.] The witch traces words in the book with her finger, reading even as she prepares to share the news.(click: \"share the news\")[\n\n$f[\"It's a living potion,\" the witch announces. This doesn't alleviate any confusion. \"A potion infused with the essence of life. It has all kinds of subtle uses that make me squeamish, but it'll attract a Life Spirit, and send it between planes.\"\n\n\"You can do that?\" the girl asks. She leans over the edge of the table to get a better look at what her aunt is reading.\n\nThe witch nods. \"It's very dangerous,\" she says, \"but the recipe looks doable.(click: \"looks doable\")[\n\n$f[\"How long will it take?\" the girl asks. The witch frowns.\n\n\"If we're lucky, and I can find the ingrediants in a timely manner? A day or two.\"\n\n\"Then we should get started right away,\" you say. \"There's [[no time to waste|Prep Potion]].\"]]]]\n\n\n",
+      "links": [
+        {
+          "text": "no time to waste",
+          "destination": {
+            "name": "Prep Potion",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Prep Potion",
+      "text": "There isn't much for you to do while the witch and the witch-in-training work. The witch assigns you the task of watching her niece in the hut while she leaves to gather more ingredients, but you were going to do that anyways.\n\nThe cleaned meat somehow turns into part of a meal before the witch leaves. The girl feeds you scraps, which you are more than willing to accept. Then the witch writes up a list and heads out again, and the girl hauls a cauldron almost as big as herself out into the middle of the room.(click: \"middle of the room\")[\n\n$f[\"You don't know what auntie's herbs are,\" she says to you, \"so I'll teach you while we work.(if: $talkWitch is 0)[ Maybe this way you'll learn how to be a proper familiar.]\"\n\nShe rummages through her aunt's pantry, telling you the magical properties of every plant she touches, and you only remember about half of it. The recipe for the potion lies open on the table, and the girl preps the first half of it. You help as much as you can.(click: \"You help as much\")[\n\n$f[When the witch finally returns there's a sad looking pile of grit smashed up in a mortar, and a couple gallons of water failing to boil. The witch is carrying another foraging basket, and a live rabbit.(click: \"live rabbit\")[\n\n$f[\"We're not going to... use that?\" the girl asks, echoing what you're thinking.\n\n\"We can't make [[life from nothing|Prep Potion 2]],\" the witch responds.]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "life from nothing",
+          "destination": {
+            "name": "Prep Potion 2",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "Prep Potion 2",
+      "text": "The witch sets her foraging basket down on the cleaned counter. \"Were you able to find everything you need?\" you ask her.\n\n\"Almost,\" she says. \"I need some moonbeams still, but I'll get those tonight. For now we need to figure out our plan.\"(click: \"our plan\")[\n\n$f[\"We draw in the spirit and send it away, right?\" the girl says. \"That sounds like a plan to me.\"\n\n\"But how do we make sure it will come? How do we call it into the forest while causing the least amount of damage? How do we make sure it doesn't see the trap for what it is, and attack us?\"\n\nBoth aunt and niece are quiet, considering. The water in the cauldron finally starts to boil, and the witch absently adds in the first few ingredients. You already have a plan.(click: \"have a plan\")[\n\n$f[It's an unpleasant one. You don't like your part in it, or the danger it puts your girl into. But for the first time since this ordeal started, you do //have// an idea on how to end it. It feels powerful.\n\nYou could (hover-style:(text-colour:\"#fe9eb6\"))+(text-colour: \"#ff8eb6\")[suggest it right now(click: \"suggest it right now\")[(set: $speakUp to 1)(goto: \"Make Plan\")]], but the part of you that's still afriad wants to wait and see [[what the girl suggests|Make Plan]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Make Plan",
+            "pid": 65
+          }
+        },
+        {
+          "text": "what the girl suggests",
+          "destination": {
+            "name": "Make Plan",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "Make Plan",
+      "text": "(if: $speakUp is 0)[You look over at the girl to see if she's going to say anything. She's looking over at you. \"We leave the potion outside the forest?\" she tries. \"Right in its path?\"\n\n\"It's too late for that,\" the witch responds. \"I can feel it coming closer this way, and I bet you can too, crow.\" She gives you a knowing look. You had sensed the spirit on the move, slowly, coming closer.\n\nThey still look stumped. \"I have an idea,\" you say. ](else:)[\"I have a plan,\" you say. The girl looks confused.\n\n\"Already?\" she says. \"Will it stop the evil spirit from sensing us while we try to stop it?\"\n\n\"Sort of,\" you say. ]\"We use me as bait.\"(click: \"use me as bait\")[\n\n$f[The witch understands right away. You can tell by the considerate look on her face. The girl is shocked. \"How could we do that?\" she asks. \"It killed your wizard! You've been running from this thing longer than anyone!\"\n\n\"And the spirit's been following?\" the witch asks.\n\n\"Yes,\" you say. \"For over a week. It always wants to talk, (if: $talkSpirit is 0)[and I never let it.](else-if: $talkSpirit is < 3)[and says it will not hurt me, though I don't know if that's true.](else:)[but hasn't actively tried to hurt me.] If it thinks I'm willing to have a full conversation, it should come close enough to wherever I am for you two to spring the trap.(click: \"spring the trap\")[\n\n$f[\"And it rides the life essence back to the plane it belongs on,\" the witch finishes.\n\n\"Or it kills you!\" the girl complains. In a sudden move she scoops you up from your perch and holds you, with surprising gentleness, in her arms. It's almost a human hug, like she's protecting you, though you both know she can't.(click: \"you both know\")[\n\n$f[The witch calmly adds more ingredients to the potion. \"It will be your job to make sure that doesn't happen, Maya. You two will have to [[work this plan alone|Work as a Team]].\"]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "work this plan alone",
+          "destination": {
+            "name": "Work as a Team",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Work as a Team",
+      "text": "The girl doesn't let you down. \"What?\" she says.\n\n\"A Life Spirit senses life,\" the witch explains. \"This forest is full of it, but the three of us are magic. We stand out. If this spirit comes to meet the crow and senses three magical lifeforms there, as well as the potion, it'll know something else is going on.\"(click: \"something else\")[\n\n$f[\"Then... if only one of us can go, it should be you,\" the girl says. She finally releases you onto the tabletop, and you hop away a short distance, adjusting your wings.\n\n\"I wish I could,\" the witch says. Her eyes are downcast.\n\nYou don't want to interrupt, to say that you're more comfortable with the girl joining you on this mission than her aunt. You don't know why you feel that way. The witch has more magical prowess, she should be the one you trust to keep you safe. But she's not.(click: \"she's not\")[\n\nThe rabbit watches you from across the room. Fearful. It knows it doesn't have much time left in this world. You can't read the recipe to know exactly what the witch is going to do with it.\n\nThe girl and the witch discuss the plan while you observe, silent. If the witch accompanies you then your girl will be safe, for a while, and the trap has little chance of success. If the girl accompanies you then she'll be in danger, but your odds higher.(click: \"your odds higher\")[\n\n$f[The conversation dies eventually, and they move forward with the plan. The witch sleeps most of the afternoon, to prepare for her last ingredient run. The girl mixes more plants in silence, contemplating the task of [[facing a monster|Last Night]].]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "facing a monster",
+          "destination": {
+            "name": "Last Night",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "Last Night",
+      "text": "Once it's dark outside and you've all eaten, and the witch has left and the girl is tucked into bed, she whispers to you, \"I'm scared.\"(click: \"I'm scared\")[\n\n$f[You're perched on the bedpost. You didn't think she'd be getting much sleep. \"Of the spirit?\" you ask. \"Your aunt won't make you go if you really don't want to.\" You think it's true.(click: \"think it's true\")[\n\n$f[\"No,\" the girl says. \"I mean, yes, but no, I'll go. I think she's right. The spirit won't notice me. And I want to be brave. But I'm still scared.\" (click: \"I'm still scared\")[\n\n$f[\"That's OK,\" you say. The couldron of potion is cooling now, only a few more ingredients to be added before it becomes a drought so strong the Life Spirit will sense it from across a county. The rabbit has been fed to keep it alive for now. \"Can I confess something? I'm scared too.\"(click: \"I'm scared too\")[\n\n$f[\"That's not very comforting,\" the girl says. She yawns. \"But I won't tell auntie. She'll think we're both being very brave.\"(click: \"very brave\")[\n\n$f[You feel exhaustion overcoming you, too. \"It is brave,\" you say. You think someone must have told you that once. \"We can go back to being cowards once [[this is all over|Final Journey]].\"]]]]]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "this is all over",
+          "destination": {
+            "name": "Final Journey",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "Final Journey",
+      "text": "The potion takes a couple days to steep through. In that time the Life Spirit draws closer, slowly, practically savouring the lively forest it is devouring. The witch draws up a crude map of the forest, and points out a clearing, half a day's walk away, where you can bait it.\n\nThe last ingrediant is the living sacrifice's life blood. The witch waits to add it until the morning of.(click: \"until the morning\")[\n\n$f[\"Move quickly,\" she says. You recognize the look in her eye as someone holding back tears. \"You have the best protection spells, but against that thing....\" Her voice trails off and she takes her niece's face in her hands. \"Just come back home, OK?\"\n\nYou haven't had much time alone with the witch in the short time you've known eachother. You'd like to [[take some right now|Check on Witch]]. Tell her everything's going to be alright, that you'll keep Maya safe.\n\nWhen the moment passes, the girl looks at you and taps her shoulder invitingly. \"Come on, Birdie,\" she says. \"[[Let's head out|Reassure Girl]].\"\n\nThe Life Spirit, honing in on the scene of that living potion, is already close enough to communicate with. You could [[talk to it|Talk to Evil (final)]], one last time, before you try to destroy it.]]\n\n\n",
+      "links": [
+        {
+          "text": "take some right now",
+          "destination": {
+            "name": "Check on Witch",
+            "pid": 69
+          }
+        },
+        {
+          "text": "Let's head out",
+          "destination": {
+            "name": "Reassure Girl",
+            "pid": 70
+          }
+        },
+        {
+          "text": "talk to it",
+          "destination": {
+            "name": "Talk to Evil (final)",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "Check on Witch",
+      "text": "\"Can I talk to your aunt for a moment first?\" you ask the girl. She isn't surprised. She nods, takes a couple steps out of the hut's door, and waits.\n\n\"You don't have to worry about me,\" the witch says, voice low so only you can hear. It's funny, because that's exactly what you were going to tell her.(click: \"going to tell her\")[\n\n$f[\"I'll watch over her,\" you say. \"I won't let anything happen to Maya.\"\n\nThe witch smiles, and looks down on the ground, avoiding your eyes. \"I know you will,\" she says. \"I sense great potential in you, crow. The same I saw in Maya. With the two of you working together, I'm sure you'll succeed.\" (click: \"I'm sure you'll succeed\")[\n\n$f[This isn't what you expected the witch to tell you. You thought you were the one comforting her, but you realize with her words it's like a great weight has been lifted off of you.\n\n\"Thank you for your faith,\" is all you can think to say.(click: \"Thank you\")[\n\n$f[You spread your wings to fly out the door and join the girl. Just as you take off, you hear the witch say, \"thank you for my niece. And thank you for not giving up.\"\n\nYou land on the girl's shoulder and the pair of you leave the witch's hut. The witch's words echo in your mind. The girl might [[want to talk|Reassure Girl]], or you could travel in silence. You're almost [[at the end now|Prepare Trap]].]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "want to talk",
+          "destination": {
+            "name": "Reassure Girl",
+            "pid": 70
+          }
+        },
+        {
+          "text": "at the end now",
+          "destination": {
+            "name": "Prepare Trap",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "Reassure Girl",
+      "text": "You ride the girl's shoulder in silence as she walks for a bit longer. This forest is full of magic and you can feel your own magic being strengthened here. You can sense the witch, further and further behind you, struggling not to follow. You can also sense the girl's anxiety.\n\n\"This will work,\" to say to her. It feels as though just saying it will make it true.(click: \"make it true\")[\n\n$f[The girl gives you a sideways look. \"I think you're just saying that,\" she says. She's such a smart girl, it makes you proud.\n\n\"This spirit is not invincible,\" you counter. \"It used to be just a tiny flame in a jar. It doesn't even belong in this world. Your aunt's potion is more powerful than that.\"(click: \"more powerful than that\")[\n\n\"That doesn't mean it will work,\" the girl says. After a short pause, she adds, \"but it probably will.\"\n\nThe forest is quiet than it had been the night you first traveled through it. Animals are hiding and the wind, strong when you first left the hut, is subsiding. You feel like you'll be able to reach [[the clearing|Prepare Trap]] before too long.]]]\n\n\n",
+      "links": [
+        {
+          "text": "the clearing",
+          "destination": {
+            "name": "Prepare Trap",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "Talk to Evil (final)",
+      "text": "(set: $talkSpirit to it + 1)The spirit senses you reaching out to it, and calls out to you first. **Great Crow,** it says, **it's been a while**.\n\n(if: $talkSpirit is > 2)[Not as long as you would like. You want to ask it to stop chasing you, but that's a hopeless request, and besides, you need to bait it. \"I assume you're planning on consuming this entire forest,\" you say bitterly.(click: \"say bitterly\")[\n\n$f[You speak onto the magic in the wind, but this time the girl seems to understand it. She looks at you, but is silent. She knows who you're talking to.\n\n**You're learning,** the spirit says, slowly, hesitantly. Then, with more conviction, it adds, **I will regain my former power whatever the cost**.\n\n\"I can't stop you,\" you say. \"But I want to talk. I want to meet. Even if I can't dissuade you.\"(click: \"can't dissuade you\")[\n\n$f[The spirit is silent for a moment longer. The girl walks in silence but the forest is loud with animals and wind. **Strange request,** it finally says, **but I'll accept it**.\n\nThe girl doesn't hear the spirit's voice on the wind. She doesn't look as scared as you thought she'd be, but you want to [[reassure her|Reassure Girl]] anyways. The spot for the trap is still a few [[hours away|Prepare Trap]].]]]]](else-if: $talkSpirit is 2)[You wish it had been longer. \"Why are you still chasing us?\" you ask. You don't realize your mistake until the spirit points it out.\n\n**Us?** it asks. **What do you mean by that?**(click: \"What do you mean\")[\n\n$f[\"Nothing, you say quickly. The girl looks over at you, hearing the magic you speak into the wind. She can't hear the spirit's side of the conversation.\n\n**There's someone with you, isn't there?** it asks. It sounds, to your horror, gleeful.\n\nYou don't answer. There's nothing you could say to appease it, and you don't want to give it any more information. You'd rather [[talk to the girl|Reassure Girl]] as she walks, or focus on what to do once you [[reach the trap site|Prepare Trap]].]]](else:)[A long while. You haven't spoken to this spirit since you both left the tower. \"Why have you chased me all this way?\" you ask, though you know the question is useless.\n\n**I am trying to achieve something**, it tells you. **Maybe you can help**.(click: \"Maybe you can help\")[\n\n$f[\"Not interested,\" you say, though you have to admit to yourself that you are curious. \"I'm trying to achieve something too.\"\n\n**Yes**, the spirit replies. **A trap, I assume, or something of the like**.(click: \"A trap\")[\n\n$f[You don't answer. The confidence in the spirit's tone fills you with drea, Has it seen through your every move? Will this plan even work? You look sideways at the girl, and realize she has been watching you, too.\n\n\"What did it say?\" she asks. She could hear your voice in the magic on the wind, but not the spirit answering back.\n\n\"Nothing,\" you lie. \"Nothing that will stop our plan.\" She probably [[needs more reassurance|Reassure Girl]]. The site for the trap is still a couple hours away, but with any luck, this will [[all be over soon|Prepare Trap]].]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "reassure her",
+          "destination": {
+            "name": "Reassure Girl",
+            "pid": 70
+          }
+        },
+        {
+          "text": "hours away",
+          "destination": {
+            "name": "Prepare Trap",
+            "pid": 72
+          }
+        },
+        {
+          "text": "talk to the girl",
+          "destination": {
+            "name": "Reassure Girl",
+            "pid": 70
+          }
+        },
+        {
+          "text": "reach the trap site",
+          "destination": {
+            "name": "Prepare Trap",
+            "pid": 72
+          }
+        },
+        {
+          "text": "needs more reassurance",
+          "destination": {
+            "name": "Reassure Girl",
+            "pid": 70
+          }
+        },
+        {
+          "text": "all be over soon",
+          "destination": {
+            "name": "Prepare Trap",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "Prepare Trap",
+      "text": "You finally reach the field where the trap is to be set. It's a lazy half-circle and a grassy field, and the potion in the girl's basket is practically screaming with magical life force. The Life Spirit is not far behind.\n\nThe girl sets her basket down behind a tree on the opposite side of the clearing. \"It's coming,\" you report. She takes the jar with the potion out and sets it out in the grass. (click: \"sets it out\")[\n\n$f[\"Stay hidden once the spirit arrives,\" you tell the girl. \"The potion is loud enough to block you out. It won't even think to look for you.\"\n\n\"I know,\" she says, annoyed. She's also nervous. \"Will you be alright?\"(click: \"you be alright\")[\n\n$f[You really don't know the answer to that. \"I'll be fine,\" you say. \"It doesn't want to kill me, and even if it does I can just fly away. I'm more worried about you.\"\n\nThe girl uncaps the jar with the potion. All the spirit has to do is touch the liquid, and the two will consume each other. She nods, and replies, but you don't hear it because suddenly your mind is overwhelmed by the sound of fire.(click: \"sound of fire\")[\n\n$f[**What are you doing here?** it asks, louder than it should be for something that's just a pale light on the horizon. You don't know if you should [[answer it|Answer Spirit]], or [[ignore it|Ignore Spirit]].]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "answer it",
+          "destination": {
+            "name": "Answer Spirit",
+            "pid": 73
+          }
+        },
+        {
+          "text": "ignore it",
+          "destination": {
+            "name": "Ignore Spirit",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "Answer Spirit",
+      "text": "(if: $talkSpirit is > 2)[\"I called you here to talk,\" you reply.](else:)[\"I'm tired of running from you. I just want to talk,\" you reply.] You try to sound confident, but you and  the girl share a frightened look. She heard it too. She ducks quickly behind the tree to hide. You still don't see the spirit through the trees, but you see a bright light growing. It's getting closer.\n\n**Why?** the spirit asks. **To ask me to stop again? Play friendly like you?** Its tone is mocking, and it doesn't give you a chance to reply. **Or to try to trick me? You take me for a fool?**(click: \"a fool\")[\n\n$f[You spread your wings, flying up, as far away from the girl as you can. Maybe it won't notice her, and in the meantime you can try to get a good look at it. While you fly, you ask the question that's stuck on your mind. \"Why won't you kill me too?\"\n\nNot that you want it to, but you've never understood what made your life so different to this spirit. You hear it laugh as you rise above treetop level, and see it.\n\n**I was trying to be chivalrous**, it says, a bright trail of low flames snaking through the forest. Thin smoke chokes the air in deadly light. **[[But no longer|See Spirit]]**.]]\n\n\n",
+      "links": [
+        {
+          "text": "But no longer",
+          "destination": {
+            "name": "See Spirit",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "Ignore Spirit",
+      "text": "(if: $talkSpirit is 0)[You've never spoken to the spirit since it killed your wizard, and you don't see a reason to start now.](else-if: $talkSpirit is > 0 and < 4)[You don't enjoy talking to this thing, never have, and you try not to get roped into it when you don't have to. Talking to it right now is just going to make you anxious.](else:)[There's too much going on right now to answer this thing's call again.] You try to block out the sound of it, but it's difficult. The spirit's voice almost feels warm against your mind.\n\nThe girl geard it too; she's hiding behind the tree with her basket, out of sight. You take to the air and fly straight up, as high as you can. You're putting distance between you and her, and trying to get a better look at the spirit, marching closer.(click: \"marching closer\")[\n\n$f[You don't have to get very far to see it. It snuck close, keeping low to the ground, but the wisps of smoke are bright, and the fire itself is [[almost blinding|See Spirit]].]]\n\n\n",
+      "links": [
+        {
+          "text": "almost blinding",
+          "destination": {
+            "name": "See Spirit",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "See Spirit",
+      "text": "It must have been hiding before, because now that you can see it the spirit pulls its mass together, and it is a tower blaze. The forest beneath it is dust, and the very air around it seems to quiver as it's consumed. You can feel the heat from across the clearing; the grass wilts before it's even touched.(click: \"grass wilts\")[\n\n$f[Your heart beats cold inside you. You knew this thing was growing as it spread, but the last time you saw it the spirit was just a little bonfire. You couldn't fathom that it could grow the size of the very forest it consumed.\n\n**You have some sort of trick lying in wait for me?** it asks. **What do you think you can do to dim this light?**(click: \"dim this light\")[\n\n$f[Down below you can see the open jar with the living potion, its voice now a whisper. It looks so small, so miniscule, compared to the vast forest fire making its way closer. You've been worried about this plan working for days. Now you're truly afraid.\n\n**Tell me, great crow,** the spirit calls again, **why shouldn't I [[take your life|Final Conversation]] as well?**]]]]\n\n\n",
+      "links": [
+        {
+          "text": "take your life",
+          "destination": {
+            "name": "Final Conversation",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "Final Conversation",
+      "text": "The spirit is pausing at the edge of the clearing. If it even notices the sound of the life potion beneath you, it's giving no sign of it. It's waiting for you to answer its question. You try to switch topics.\n\n\"Why can't you go back to where you belong?\" you ask back. You want it to know that you now know it's not from this plane.(click: \"you now know\")[\n\n$f[**Why would I wan't to?** it retorts. **I could be the first of my kind to rule here. No longer subject or bound to anyone.**\n\nThe firelight presses closer. You draw back. You just need it to come close enough to touch that potion, and then you'll know if this worked. \"If you kill everyone there will be no one to rule over.\"(click: \"no one\")[\n\n$f[It's a flimsy rebuttal, but the spirit is silent for a moment, almost like it's considering that. It moves forward slowly, and finaly crushes your last bit of hope by asking, **who is that with you?**(click: \"who is that\")[\n\n$f[Dread hangs your wings like lead. The girl is so close, barely out of sight, blocked by a single living tree. **Who are you protecting?** the spirit asks. Your mind reels. There's no time to think. [[Distract the spirit|Distract Spirit]], or risk bringing attention to the girl as you [[warn her to run|Protect Girl]]?]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "Distract the spirit",
+          "destination": {
+            "name": "Distract Spirit",
+            "pid": 77
+          }
+        },
+        {
+          "text": "warn her to run",
+          "destination": {
+            "name": "Protect Girl",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "Distract Spirit",
+      "text": "You twist sharply in the air, higher. The air is so warm, rising is no issue. \"No one!\" you say too quickly.\n\n**A lie**, the spirit says. The girl isn't running yet. You want to tell her to, but anything you do would just draw attention to her. If she moves, she'll draw attention to herself. There's no clear solution.(click: \"clear solution\")[\n\n$f[\"What if I let you?\" you ask suddenly. You just need to draw its attention away.\n\nThe spirit responds to that. You can feel its flames draw closer to you now, shifting focus. **Let me what?** it asks. It's just a few yards away from the potion now. Just a bit more.(click: \"bit more\")[\n\n$f[\"Let you kill me.\" Your mind races. You wheel in the air a bit further away, trying to draw the spirit across. \"Or I could help you. Or-\"\n\n**Or I could just take this child's life first**, the spirit says.(click: \"this child's life\")[\n\n$f[The grass all around your girl's feet is wilting. She still isn't running.\n\nYou swoop down out of the sky, your only thought to put yourself between her and it. The potion still lies there, untouched, below you.\n\n\"[[Run|Touch Potion]]!\" you shout.]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "Run",
+          "destination": {
+            "name": "Touch Potion",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "Protect Girl",
+      "text": "You twist sharply in the air and turn downward, heading straight for the tree line. \"Run!\" you yell. THe girl looks up at you, motionless, a statue.\n\n**You bring a small child here to confront me?** the spirit says in its booming voice. Its flames flicker in what could almost be considered a laugh. **Are you afraid to see me alone?**(click: \"see me alone\")[\n\n$f[Don't you touch her,\" you warn, turning back on the spirit. It creeps closer, the grass around your girl's feet wilting. You see the girl clasp her hands together at her chest, trying to still her furiously beating heart.\n\n**Touch her?** the spirit taunts. **Most things are half dead by the time I get that close**. It pauses for a second, and you fight against the hot air to stay low to the ground, between your girl and the monster facing her. **Besides, what of this other child?**(click: \"other child\")[\n\n$f[The potion lies, ignored, just a few feet away.  You can hear its magic, quiet compared tothe inferno, about as loud as a human child.\n\n\"Birdie,\" you hear your girl say behind you. She still hasn't moved. The spirit is just a few feet away from the potion, already committed to kill. It just needs to [[come a little further|Touch Potion]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "come a little further",
+          "destination": {
+            "name": "Touch Potion",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "Touch Potion",
+      "text": "The girl stares at you, wide-eyed, then she peeks her head around the trunk of the tree and looks at the jar of life potion.\n\n\"No,\" you tell her. You already know what she's thinking. Already know she won't listen.\n\n**And who's this?** the spirit asks. It sounds like the sight of the girl has surprised it.(click: \"surprised it\")[\n\n$f[You dive for the jar of potion before your girl can, but the firelight stings your eyes, the heat rips at your wings and feathers. You twist away, just as the spirit pulls back.\n\n**Is this your clever trap, great crow?** it asks. It's trying to sound taunting, but there's a hint of hesitation in there.\n\nThe girl, coughing, has stepped out beyond the tree line. \"I can send you home,\" she rasps. You try to call her to stop, but you can barely breathe. The spirit's flame rages, but it otherwise ignores her.(click: \"ignores her\")[\n\n$f[**I gave you a chance, great crow.** It uses your old moniker like the joke you know it's meant to be. The girl, a few steps from the potion, is only a few more from the wall of death. You swoop low, a puny physical barrier.\n\n**I gave you your life. Now I'm taking it back.**\n\nThe girl reaches the jar, and throws it, just as the spirit surges forward. Potion spills out and coats everything, unevaporated by the heat. And the [[fire consumes you|Burn]].]]]]\n\n\n",
+      "links": [
+        {
+          "text": "fire consumes you",
+          "destination": {
+            "name": "Burn",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "Burn",
+      "text": "You feel nothing but the sensation of every nerve in your body being torn to shreds. It's so bright your eyelids melt away, and then your eyes. You can feel the weight of each feather evaporating off of you. You'd scream, but your lungs are frozen before they're gone.(click: \"they're gone\")[\n\n$f[You can't tell when the pain ends because the phantom sensation lingeers, but it must have been around a full second.(click: \"full second\")[\n\n$f[The ache leaves you a few moments later. When it's gone all you're left with is the feeling of weightlessness, and the feeling of being dead. You've never heard anything good about being dead.(click: \"good about being dead\")[\n\n$f[You [[wonder if the girl's alright|Wonder]]. Probably not. The spirit would have taken half a second to consume you, right? Would it let her get away?\n\nThere's an unpleasant [[itchy feeling|Stretch your Wings]] in your wings, which is odd, given that you shouldn't have them anymore.]]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "wonder if the girl's alright",
+          "destination": {
+            "name": "Wonder",
+            "pid": 81
+          }
+        },
+        {
+          "text": "itchy feeling",
+          "destination": {
+            "name": "Stretch your Wings",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "Wonder",
+      "text": "There's no way the spirit spared her, you think. It was so angry at you two for trying to trick it.\n\nBut, given what you two have become, you think you'd know if she was dead. And it doesn't feel like she is.(click: \"doesn't feel like\")[\n\n$f[Even worse. It must be toying with her. She couldn't outrun it if she had wings, and now it's pretending to let her escape.\n\nYou wonder if there's a way to meet her in the afterlife.(click: \"in the afterlife\")[\n\n$f[You're still weightless and floating in the dark; you wonder what the afterlife will look like once you've awoken there fully. Maybe you're waiting for her. Maybe you'll get to goto the same afterlife, and it will be alright. It's not like any dead people ever got to write the stories about death, after all.(click: \"stories about death\")[\n\nThe itchy feeling in your wings grows. In fact, your [[whole body|Stretch your Wings]] seems to be tingling.]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "whole body",
+          "destination": {
+            "name": "Stretch your Wings",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "Stretch your Wings",
+      "text": "It takes a great amount of effort, but you stretch the bones of your wings out into the nothingness. The fact that you can feel them is startling. You try to squawk in alarm, but it's like there's dust in your lungs.\n\nYour eyelids, still there, peel open. You see nothing but clouds. Your body comes back to you slow, heavy and aching, particles falling away from you... but it's still there.(click: \"it's still there\")[\n\n$f[You beat your wings once, and you're in the air. The dust covering your body shakes loose, and instead you're bathed in a feeling of warmth. You practically float on the breeze. If this is the afterlife, it's very breezy.\n\nYour eyes are still clouded. It takes a few seconds for the last of the dust to fall away. When it does, you see, stretching out far above you... the sky.(click: \"the sky\")[\n\n**What?** you say. In your voice, but bigger.\n\nNearby, a quiter voice. \"[[Birdie|Firebird]]?\" it says.]]]\n\n\n",
+      "links": [
+        {
+          "text": "Birdie",
+          "destination": {
+            "name": "Firebird",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "Firebird",
+      "text": "The girl kneels in the dead remains of grass several feet away. Her dark skin is blistering and smoked, and her face and hair are covered in grey soot, but she's alive. And so are you?(click: \"so are you\")[\n\n$f[You look down, and below you is just a pile of ash. The fire is nowhere to be seen, until you notice it's above you. No, beside you. No-\n\n**I'm on fire**, you say. Your voice scares you. Your girl sucks in a breath. Her cheeks are stained with deep teartracks.\n\n\"You died,\" she says. \"You flew into the... the fire, and... and it all got s-sucked in, to the....\" She mimes flinging the life potion into the inferno. Only a few minutes ago? A few seconds? \"And you were //gone//, and....\"(click: \"you were gone\")[\n\n$f[You twist your head, and it's true. Your wings look like they're made of pure, dark flame. The ash pile you crawled out of is already dispersing in the wind.\n\n\"I'm back,\" you whisper, and your voice sounds more like normal. \"I don't know how, but... I came back [[for you|Epilogue]].\"]]]]\n\n\n",
+      "links": [
+        {
+          "text": "for you",
+          "destination": {
+            "name": "Epilogue",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "Epilogue",
+      "text": "When your girl, carefully, reaches out her fingers to touch you, your feathers don't hurt her. You can stand on her shoulder - barely, you're bigger now - and she's fine. When she passes the still living tree she'd hidden behind earlier and retrieves her basket, the tree doesn't smolder at all. If anything, it looks more alive.(click: \"more alive\")[\n\n$f[The vast forest has a scar burned into it from this ordeal. Your girl only walks past it for an hour when the witch finds you two. She says she felt the magical energy overload when... what happened, happened.\n\nShe stares at you in wonder. You can't think of anything to say. Your girl smiles proudly.(click: \"Your girl smiles\")[\n\nThe two of you stay at the witch's hut for a few days more, try to help clean up your mess. You both wonder if her parents will show up here, looking for her. If they're alive. If the town is rebuilding.(click: \"rebuilding\")[\n\n$f[When you decide to leave it's mutual, and instantaneous, and not permenant. You and your girl craft a note for her aunt, your aunt, in the quiet of night. You leave while it's still dark. You'll be back, you say to her and she says to you. For now there is still some [[family to find|Credits]].]]]]]\n\n\n",
+      "links": [
+        {
+          "text": "family to find",
+          "destination": {
+            "name": "Credits",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "Credits",
+      "text": "\n=><=\n#Harbinger\nwritten by\n###Kenna May\n\nCover Design by\nKenna May\n\nWritten in\nHarlowe 2.0.1\nTwine 2.1.3\n\nSpecial thanks to\nNathan Cox, Red Sandstorm, Cheyanne",
+      "links": []
+    },
+    {
+      "pid": 86,
+      "name": "Warn Town 2",
+      "text": "But the street isn't empty. A few people draw closer, then a few more, waiting to see what the talking bird has to say. You didn't want to make a public announcement like this. You don't know what to do but continue speaking.\n\n\"From the wizard,\" you lie. It's the most convenient lie to tell. \"There's something dangerous coming.\"(click: \"dangerous coming\")[\n\n$f[\"That's a lie,\" one of the onlookers says calmly. Another woman, attracted by the small crowd. She looks at you with suspicion. \"My cousin said a demon attacked the wizard tower last week. Said the wizard is dead.\"\n\nNo one on the street seems particularly surprised by this announcement. As if they already knew. \"It's true,\" you say. \"The wizard is dead.\"\n\n\"A demon,\" someone says, at the same time as another whispers loudly, \"a black crow.\" The woman with the boy is silent, watching you. The boy's eyes are wide with fear.\n\n\"Crows always bring bad luck,\" a third voice says. You don't see who. \"And a talking one? Better to just kill it.\"(click: \"kill it\")[\n\n$f[That's when you know you've failed. No one's shouting, but they look at you like a wildcat about to pounce. You didn't even have time to try, you think. You raise your wings to fly away and someone cries \"catch it!\" but you're [[too fast|Hide]].]]]]",
+      "links": [
+        {
+          "text": "too fast",
+          "destination": {
+            "name": "Hide",
+            "pid": 21
+          }
+        }
+      ]
+    }
+  ]
+}

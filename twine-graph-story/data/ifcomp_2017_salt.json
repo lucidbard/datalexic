@@ -1,0 +1,513 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "swim1",
+      "text": "<<audio \"layer1\" play>>\n<div style=\"text-align: center\">\n<<nobr>><<silently>>\n<<set $energy to 250>>\n<<set $effort to 250>>\n<<set $tiredness to 0>>\n<<repeat 50ms>><<if $energy <= -20>><<replace #warning>>@@font-family: 'Alegreya Sans SC', sans-serif;keep swimming!@@<</replace>><<else>><<replace #warning>><</replace>><</if>><</repeat>>\n<<repeat 50ms>><<set $energy to $energy - 8>>\\\n<<if $tiredness >= 30 && $tiredness <= 60>><<set $effort to 200>><<elseif $tiredness  >= 60 && $tiredness <= 80>><<set $effort to 150>><<elseif $tiredness  >= 80 && $tiredness <= 100>><<set $effort to 100>><<elseif $tiredness  >= 100 && $tiredness <= 120>><<set $effort to 50>><<elseif $tiredness  >= 120 && $tiredness <= 140>><<set $effort to 20>><<elseif $tiredness >= 140>><<set $effort to 10>><</if>>\\\n<</repeat>>\n<</silently>><</nobr>><nobr>\n<span id=\"thoughts\">Keep pressing @@font-family: 'Alegreya Sans SC', sans-serif;space@@ to keep swimming...\n\n</span>\n<<timed 5s t8n>><<replace \"#thoughts\">>\n...the more you press, the more you tire...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...pace yourself to swim for longer.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nAs you swim...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...make choices by pressing @@font-family: 'Alegreya Sans SC', sans-serif;up@@ or @@font-family: 'Alegreya Sans SC', sans-serif;down@@ on your keyboard...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2  up  \u25b2@@\">><<display \"tut up\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc down \u25bc@@\">><<display \"tut down\">><</linkappend>></span>\n<</replace>>\\\n<</timed>>\n</nobr>\n<<repeat 50ms>><<replace #bar>><<print '<div id=\"square\" style=\"width:' + $energy + 'px; height=20px; display: inline-block;\"></div>'>><</replace>><</repeat>>\n<span id=\"warning\"></span>\n<span id=\"bar\">-</span>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<set $energy to $effort>>\\<<set $tiredness to $tiredness +1>><</click>></span>\n\n\n<<click \"@@font-family: 'Alegreya Sans SC', sans-serif;click here to skip tutorial@@\">><<goto \"surface1\">><</click>>\n</div>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "tut up",
+            "pid": 4
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "tut down",
+            "pid": 5
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "surface1",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "surface1",
+      "text": "<<audio \"layer1\" stop>><<audio \"salt\" play unloop>>\n<span id=\"title\"></span>\n<<timed 2s>><<replace \"#title\">><div style=\"text-align: center; font-size: 200%;\">s a l t</div><</replace>>\\\n<<next>><<replace \"#title\">><div style=\"text-align: center; font-size: 200%;\">s a l t</div><</replace>>\\\n<<next>><<replace \"#title\">><div style=\"text-align: center; font-size: 200%;\">s a l t</div><</replace>>\\\n<<next>><<replace \"#title\">><div style=\"text-align: center; font-size: 200%;\">s a l t</div><</replace>>\\\n<<next>><<replace \"#title\">><div style=\"text-align: center; font-size: 200%;\">s a l t</div><</replace>>\\\n<<next>><<replace \"#title\">><div style=\"text-align: center; font-size: 200%;\">s a l t</div><</replace>>\\\n<<next>><<replace \"#title\">><div style=\"text-align: center; font-size: 200%;\">s a l t</div><</replace>>\\\n<<next>><<replace \"#title\">>\n\n<</replace>><</timed>><div style=\"text-align: center\"><span id=\"thoughts\">\n</span>\n<<timed 4s>><<replace \"#thoughts\">>@@font-family: 'Alegreya Sans SC', sans-serif;gareth damian martin@@\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>@@font-family: 'Alegreya Sans SC', sans-serif;music by paws menu@@\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n<</replace>><</timed>></div><div style=\"text-align: center\">\n<<timed 20s>><hr class=\"style1\"><</timed>>\n<<timed 48s>><div id=\"squaresurface\" style=\"width:1px; height=20px; display: inline-block;\"></div>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<goto \"swim2\">><</click>></span><</timed>>\n\n<<timed 22s>><<replace #title>><div style=\"text-align: center;\">\nThe beach is a strip of heat.</div><</replace>><</timed>>\n\n<<timed 26s>><<replace #title>><div style=\"text-align: center;\">\n\n</div><</replace>><</timed>>\n\n<<timed 30s>><<replace #title>><div style=\"text-align: center;\">\nYou stand knee deep in the water, facing out to sea.</div><</replace>><</timed>>\n\n<<timed 34s>><<replace #title>><div style=\"text-align: center;\">\n\n</div><</replace>><</timed>>\n\n<<timed 38s>><<replace #title>><div style=\"text-align: center;\">\nFamiliar voices shimmer behind your head.</div><</replace>><</timed>>\n\n<<timed 42s>><<replace #title>><div style=\"text-align: center;\">\n\n</div><</replace>><</timed>>\n\n<<timed 46s>><<replace #title>><div style=\"text-align: center;\">\nYou take a breath, and then begin.</div><</replace>><</timed>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "swim2",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "start",
+      "text": "<div style=\"text-align: center\">\n\n\n\n\n\n\n@@font-family: 'Alegreya Sans SC', sans-serif;salt is best experienced with headphones and a keyboard.@@\n\n<div id=\"square\" style=\"width:1px; height=20px; display: inline-block;\"></div>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<goto \"swim1\">><</click>></span>\n\n</div>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "swim1",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "tut up",
+      "text": "<<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>\nGood...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...if you stop, or become too tired, you'll surface...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and your thoughts are lost...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...try stopping now.\n<<repeat 50ms>><<if $energy <= -10>><<goto \"surface1\">><</if>><</repeat>>\n<</replace>><</timed>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "surface1",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "tut down",
+      "text": "<<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>\nGood...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...if you stop, or become too tired, you'll surface...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and your thoughts are lost...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...try stopping now.\n<<repeat 50ms>><<if $energy <= -10>><<goto \"surface1\">><</if>><</repeat>>\n<</replace>><</timed>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "surface1",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "swim2",
+      "text": "<<audio \"salt\" stop>><<audio \"layer1\" play>>\n<div style=\"text-align: center\">\n<<nobr>><<silently>>\n<<set $energy to 250>>\n<<set $effort to 250>>\n<<set $tiredness to 0>>\n<<repeat 50ms>><<if $energy <= -20>><<audio \"sting\" play>>\\<<goto \"surface2\">><</if>><</repeat>>\n<<repeat 50ms>><<set $energy to $energy - 8>>\\\n<<if $tiredness >= 30 && $tiredness <= 60>><<set $effort to 210>><<elseif $tiredness  >= 60 && $tiredness <= 90>><<set $effort to 170>><<elseif $tiredness  >= 90 && $tiredness <= 110>><<set $effort to 130>><<elseif $tiredness  >= 110 && $tiredness <= 130>><<set $effort to 100>><<elseif $tiredness  >= 130 && $tiredness <= 140>><<set $effort to 80>><<elseif $tiredness >= 140 && $tiredness <= 150>><<set $effort to 50>><<elseif $tiredness >= 150 && $tiredness <= 160>><<set $effort to 20>><<elseif $tiredness >= 160>><<set $effort to 10>><</if>>\\\n<</repeat>>\n<</silently>><</nobr>><nobr>\n<span id=\"thoughts\">\n\n</span>\n<<timed 3s t8n>><<replace \"#thoughts\">>Turquoise...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...impossibly turquoise...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and warm, like no sea you've known.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Though you haven't swum in months...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the action is automatic...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...a memory the body holds in suspension...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...waiting to submerge.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You drag yourself, with each stroke, further from...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...from what?\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>From the tepid pace of the sweltering beach.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>From the static, repeating arrangements of a tidy life.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The trailing ends of familiar thoughts come back to you...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...things left unfinished on the shore...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...you can @@font-family: 'Alegreya Sans SC', sans-serif;hold on to them@@ them, or @@font-family: 'Alegreya Sans SC', sans-serif;let them go@@.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2 hold on \u25b2@@\">><<display \"holdon up\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc let go \u25bc@@\">><<display \"letgo down\">><</linkappend>></span>\n<</replace>>\\\n<</timed>>\n</nobr>\n<<repeat 50ms>><<replace #bar>><<print '<div id=\"square\" style=\"width:' + $energy + 'px; height=20px; display: inline-block;\"></div>'>><</replace>><</repeat>>\n\n<span id=\"bar\">-</span>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<set $energy to $effort>>\\<<set $tiredness to $tiredness +1>><</click>></span>\n\n</div>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "surface2",
+            "pid": 9
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "holdon up",
+            "pid": 7
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "letgo down",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "holdon up",
+      "text": "<<audio \"layer2\" volume 0 fadeoverto 5 1>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>A handful of questions...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the creeping sense of time passing...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...shrouded in senseless lists of things to be done.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nAnd then, something else, deep below...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...something you dare not touch.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nIt has been a hard year.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>A year where, for the first time, you felt yourself disappearing.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nFading into the background hum of a thousand unfinished things.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Dissolving into your own life.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Before you entered the sea...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...you fixed your eyes on the other shore...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...across the turquoise gulf.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nAn imagined target.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>There is a weight to the water...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and you surge against it...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...outrunning the trailing shore.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nThe effort coheres you...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...pushes you down into some compact, muscular thing.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You push harder....\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...as if force alone...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...could strip dead weight...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and make a life livable.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>><</timed>>",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "letgo down",
+      "text": "<<audio \"layer2\" volume 0 fadeoverto 5 1>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>You let go.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nYou flex out your hands as you move them ahead of you...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and watch the ripples of golden light play across them...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the sun's blinding heat dulled by the water.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nIt has been a hard year.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>A year where, for the first time, you felt yourself disappearing.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nFading into the background hum of a thousand unfinished things.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>But you are letting go of that...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...forcing open some cold vault to the warmth that surrounds you.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Before you entered the sea...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...from the edge of the beach...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...you caught the loose shape of the other shore...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...across the gulf.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nAn imagined escape. \n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>On the beach were figures too...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...those you have left behind...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...they seem bright now, burnt out...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...as if the sea was dissolving their image...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...the details bleached bone white.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Faded faces.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Eaten away...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...by a chemical, burning white.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The white of salt.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>><</timed>>",
+      "links": []
+    },
+    {
+      "pid": 9,
+      "name": "surface2",
+      "text": "<<audio \"layer1\" stop>><<audio \"layer2\" stop>><<audio \"layer3\" stop>><<audio \"crystal\" play unloop>>\n\n<div style=\"text-align: center\"><span id=\"thoughts\">\n\n</span>\n<<timed 3s>><<replace \"#thoughts\">>Breathe.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You look back at the shore.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The low sun blinds you, turning the landscape to a ragged edge of black.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You try to pick out the figures of those you left behind on the beach...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...your vision flares white, and you turn away.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You face out to sea.\n\n<</replace>><</timed>></div>\n\n\n<div style=\"text-align: center\">\n<<timed 6s t8n>><hr class=\"style1\"><</timed>>\n<<timed 36s>><div id=\"squaresurface\" style=\"width:1px; height=20px; display: inline-block;\"></div>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<goto \"swim3\">><</click>></span><</timed>>\n</div>\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "swim3",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "swim3",
+      "text": "<<audio \"crystal\" stop>><<audio \"layer1\" play>>\n<div style=\"text-align: center\">\n<<nobr>><<silently>>\n<<set $energy to 250>>\n<<set $effort to 250>>\n<<set $tiredness to 0>>\n<<repeat 50ms>><<if $energy <= -20>><<audio \"sting\" play>>\\<<goto \"surface3\">><</if>><</repeat>>\n<<repeat 50ms>><<set $energy to $energy - 8>>\\\n<<if $tiredness >= 30 && $tiredness <= 60>><<set $effort to 210>><<elseif $tiredness  >= 60 && $tiredness <= 90>><<set $effort to 170>><<elseif $tiredness  >= 90 && $tiredness <= 110>><<set $effort to 130>><<elseif $tiredness  >= 110 && $tiredness <= 130>><<set $effort to 100>><<elseif $tiredness  >= 130 && $tiredness <= 140>><<set $effort to 80>><<elseif $tiredness >= 140 && $tiredness <= 160>><<set $effort to 50>><<elseif $tiredness >= 160 && $tiredness <= 170>><<set $effort to 20>><<elseif $tiredness >= 170>><<set $effort to 10>><</if>>\\\n<</repeat>>\n<</silently>><</nobr>><nobr>\n<span id=\"thoughts\">\n\n</span>\n<<timed 3s t8n>><<replace \"#thoughts\">>You are moving again...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...stretching out some painful joints...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...that spent the year compressed, cold, and closed.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>There are shadows in the turquoise...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the rounded backs of scattered rocks...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">> ...where grasses sway like smoke trails. \n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nTiny sand-colored fish flit through the caustic light...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...while larger shapes shimmer and fade behind.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You think about @@font-family: 'Alegreya Sans SC', sans-serif;watching@@ them from the surface or @@font-family: 'Alegreya Sans SC', sans-serif;diving@@, and swimming among them...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2 watch \u25b2@@\">><<display \"watch up\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc dive \u25bc@@\">><<display \"dive down\">><</linkappend>></span>\n<</replace>>\\\n<</timed>>\n</nobr>\n<<repeat 50ms>><<replace #bar>><<print '<div id=\"square\" style=\"width:' + $energy + 'px; height=20px; display: inline-block;\"></div>'>><</replace>><</repeat>>\n\n<span id=\"bar\">-</span>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<set $energy to $effort>>\\<<set $tiredness to $tiredness +1>><</click>></span>\n\n</div>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "surface3",
+            "pid": 11
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "watch up",
+            "pid": 12
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "dive down",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "surface3",
+      "text": "<<audio \"layer1\" stop>><<audio \"layer2\" stop>><<audio \"layer3\" stop>><<audio \"crystal\" play unloop>>\n\n<div style=\"text-align: center\"><span id=\"thoughts\">\n\n</span>\n<<timed 3s>><<replace \"#thoughts\">>Breathe.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>A soft wind touches your back.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The sun is slipping below the horizon.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The cold begins to rise with the waves...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and the water slowly turns blue and opaque.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Are they still waiting for you on the shore?\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You imagine their worried gaze...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...imprinting a mark in your back.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>A plane trail etches a soft white scar across your vision.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You face out to sea.\n\n<</replace>><</timed>></div>\n\n\n<div style=\"text-align: center\">\n<<timed 6s t8n>><hr class=\"style1\"><</timed>>\n<<timed 57s>><div id=\"squaresurface\" style=\"width:1px; height=20px; display: inline-block;\"></div>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<goto \"swim4\">><</click>></span><</timed>>\n</div>\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "swim4",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "watch up",
+      "text": "<<audio \"layer2\" volume 0 fadeoverto 5 1>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>The glittering shapes of fish flow below you...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...in arrangments that cohere only from above.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>There is a beauty to this elevated viewpoint...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...a fantasy of maps and diagrams, sketched over with chaotic life.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nBelow the rocks grow bigger, reach deeper, become crazed with angular cracks...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The plan of something revealling itself... \n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...or just the senseless patterns of impact and time.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You squint through the water...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the salt fogging your vision.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>There are walls amongst the rocks...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...ruins ancient or modern...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...halls, houses, rooms...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...cathedrals in the silt...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...you imagine @@font-family: 'Alegreya Sans SC', sans-serif;diving@@ to them or @@font-family: 'Alegreya Sans SC', sans-serif;staying@@ above...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2 stay \u25b2@@\">><<display \"stay up2\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc dive \u25bc@@\">><<display \"dive down2\">><</linkappend>></span>\n<</replace>>\\\n<</timed>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "stay up2",
+            "pid": 15
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "dive down2",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "dive down",
+      "text": "<<audio \"layer2\" volume 0 fadeoverto 5 1>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>In your thoughts you dive down...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the sandy fish parting and reforming around your body...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...a granular storm of paper-thin scales and rippling fins.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nThe larger shapes become clearer...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...ponderous bottom-feeders that suddenly dart away like loosed arrows...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...into the growing maze of angular rocks.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Those rocks...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...rise up around you, in  sharp right angles...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...though softened by a fur of sea grass.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nYou see the walls amongst them...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...ruins ancient or modern.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nSome are the size of houses, but others...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...loom like distant cathedrals in the silt...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...your mind wanders to thoughts of exploring their @@font-family: 'Alegreya Sans SC', sans-serif;streets@@ or searching for an @@font-family: 'Alegreya Sans SC', sans-serif;entrance@@...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2 streets \u25b2@@\">><<display \"streets up2\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc entrance \u25bc@@\">><<display \"entrance down2\">><</linkappend>></span>\n<</replace>>\\\n<</timed>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "streets up2",
+            "pid": 16
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "entrance down2",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "dive down2",
+      "text": "<<audio \"layer3\" volume 0 fadeoverto 5 1>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>Your thoughts surge down, through clouds of fish...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and the cold surrounds you...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Salt fills your nostrils as the walls take form...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...you reach out to them...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...close enough now to see their complexity...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...carved with ornate forms that fill your vision.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>A doorway opens ahead...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...a dark aperture in the sand and water... \n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and out of that dark spool eels...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...glassy eyed and straggle-toothed...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...you panic as they whip past...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...cold flesh rippling against your trailing legs...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and then you are inside...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the rooms overgrown but recognisable...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...water thick with heavy silt and dead matter...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...salt-skinned furniture scuttled over by jointed limbs...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and through a sagging door...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...green with growing things...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...your childhood room...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...where you sit, and begin to play...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...at forgetting.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>><</timed>>",
+      "links": []
+    },
+    {
+      "pid": 15,
+      "name": "stay up2",
+      "text": "<<audio \"layer3\" volume 0 fadeoverto 5 1>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>You let them fade into the sand and silt.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nThe fish still flicker, but the light receeds...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and the cold rises up in twisting currents...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...to touch your feet.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You kick it off...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...strike out at it.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You know what lies below...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...because you brought it with you...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...into this blue and borderless place.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nThe need to drown...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...to disappear...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and the means to do so.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Memories, fantasies, carefully cultivated...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and the belief that...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...some place or world you never truly knew...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...but which you touched...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...is lost.\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>><</timed>>",
+      "links": []
+    },
+    {
+      "pid": 16,
+      "name": "streets up2",
+      "text": "<<audio \"layer3\" volume 0 fadeoverto 5 1>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>Your mind twists away between the walls...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...gliding between the carved and flowing forms...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>... of eroded sculptures and collapsed rooms.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nThe cold drifts up out of the passageways like ink or oil...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...spiralling around your body...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and some dark, smooth, limbless shape...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...disappears around a corner.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...you give chase, rushing forward...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...through the closing cold...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...that grips you like a vice...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...desperate to uncover some beautiful unknown...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...rounding corner after corner...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...your vision a blur of decaying architecture...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...each room housing a world...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...of fronds and leaves and corals...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and those delicate creatures that attend them...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and each world promising wonder...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...that quickly fades...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...so you surge on...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...eyes near blind with salt...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...through dead streets...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...in a dying world.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>><</timed>>",
+      "links": []
+    },
+    {
+      "pid": 17,
+      "name": "entrance down2",
+      "text": "<<audio \"layer3\" volume 0 fadeoverto 5 1>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>Your thoughts flow into the shadows...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the cold seeping into your skin...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and a doorway catches your eye, dark against the dying light.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nYou surge towards it...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and out of its dark spool eels...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...glassy eyed and straggle-toothed...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...they curl away into the streets...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...like smooth, limbless, black cats..\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and you enter the house...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the rooms instantly recognisable...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...oddly clean in all that cloying sand...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and through an open door...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...into your childhood room...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...where you sit and begin to play...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...as time stretches out...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and jointed legs scuttle across your back...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...as the eels curl up around your ankles...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and you become green with growing things...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and the echoes of your life on land...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...fade and falter...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...as your eyes glaze over...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...with a white film...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...of acrid salt.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>><</timed>>",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "breathe2",
+      "text": "\n<div style=\"text-align: center\">\n\n\n\n\n\n\n\n\n<div id=\"square\" style=\"width:1px; height=20px; display: inline-block;\"></div>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to breathe@@\">><<audio \"sting\" play>>\\<<goto \"salt1\">><</click>></span>\n\n</div>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "salt1",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "swim4",
+      "text": "<<audio \"crystal\" stop>><<audio \"layer1\" play>>\n<div style=\"text-align: center\">\n<<nobr>><<silently>>\n<<set $energy to 250>>\n<<set $effort to 250>>\n<<set $tiredness to 0>>\n<<repeat 50ms>><<if $energy <= -20>><<audio \"sting\" play>>\\<<goto \"surface4\">><</if>><</repeat>>\n<<repeat 50ms>><<set $energy to $energy - 8>>\\\n<<if $tiredness >= 30 && $tiredness <= 60>><<set $effort to 210>><<elseif $tiredness  >= 60 && $tiredness <= 90>><<set $effort to 170>><<elseif $tiredness  >= 90 && $tiredness <= 110>><<set $effort to 130>><<elseif $tiredness  >= 110 && $tiredness <= 130>><<set $effort to 100>><<elseif $tiredness  >= 130 && $tiredness <= 140>><<set $effort to 80>><<elseif $tiredness >= 140 && $tiredness <= 160>><<set $effort to 50>><<elseif $tiredness >= 160 && $tiredness <= 170>><<set $effort to 20>><<elseif $tiredness >= 170>><<set $effort to 10>><</if>>\\\n<</repeat>>\n<</silently>><</nobr>><nobr>\n<span id=\"thoughts\">\n\n</span>\n<<timed 3s t8n>><<replace \"#thoughts\">>Something is slipping...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...a linkage broken between you and that shadowed shore.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You think of the figures that await your return.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nYou begin to believe it is possible to forget them...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and that the sea, the salt, makes it so.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nYou could @@font-family: 'Alegreya Sans SC', sans-serif;focus@@ on them,  or just as easily, @@font-family: 'Alegreya Sans SC', sans-serif;forget@@ them. \n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2 focus \u25b2@@\">><<display \"focus up\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc forget \u25bc@@\">><<display \"forget down\">><</linkappend>></span>\n<</replace>>\\\n<</timed>>\n</nobr>\n<<repeat 50ms>><<replace #bar>><<print '<div id=\"square\" style=\"width:' + $energy + 'px; height=20px; display: inline-block;\"></div>'>><</replace>><</repeat>>\n\n<span id=\"bar\">-</span>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<set $energy to $effort>>\\<<set $tiredness to $tiredness +1>><</click>></span>\n\n</div>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "surface4",
+            "pid": 22
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "focus up",
+            "pid": 20
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "forget down",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "focus up",
+      "text": "<<audio \"layer3alt\" volume 0 fadeoverto 10 1>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>You know the dangers of forgetting...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the dark formless things that move into the spaces left behind.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You refocus on the things that are close...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the rhythm of your strokes...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...the shape of your body in the water...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and things that are distant...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...the texture of skin which is not your own.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nYou always remember the physical things first...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...moments of contact, like an eyelash flicker against your cheek...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...or the muscular pressure of another living body...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>but they fade quickly after recall...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...like the resonant waves of struck metal...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...that grow dull by the second.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nWhat replaces them is more difficult.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Guilt and fear, and self-presevation...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...undercut by the returning patterns of life.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nIt's cold now.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">> And you have forgotten why you came out here.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nWere you just going to keep swimming?\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You are too far...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and yet you go on...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...a tiny shape receeding...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...in the eyes of the only ones who love you.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Stop.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nStop now.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>It's so cold.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nPlease stop.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Please.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You keep going because you can.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nThe truth of it is obvious.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You don't want to be free...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...you don't know what you want...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...but is it there? Ahead?\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Like two bodies about to touch?\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<</timed>>",
+      "links": []
+    },
+    {
+      "pid": 21,
+      "name": "forget down",
+      "text": "<<audio \"layer3alt\" volume 0 fadeoverto 10 1>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>It's so easy at first...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...a weight lifting from your shoulders...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...you flex more, pull forward faster...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and you reach out further than before...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...touching the edges of the turquoise...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...nerves igniting like struck matches.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You glance it first at a distance...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...a dark shape hovering in the blue...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and it is blue now...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the turquoise sapped away by the slow cold...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>It turns as you approach...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...sending a chill down your spine...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...its soft fins realigning it in the water with ease.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nThis is its sea.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>A sea it watches with the open eyes of the dead...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...with glassy stillness, and cold blood.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nAs you come closer its dead eyes glimmer with a gelatine softness...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>..and its body holds steady in the current.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Don't go closer. \n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nPlease stop.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Please.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You approach.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nYou have never seen anything like it...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...this creature so distinct from the pictures, the diagrams...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...that in its presence, you cannot identify it.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>It has a life you cannot touch.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nOf not knowing.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Of oceans to slice through.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nOf voids to dive deep within.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>All the wonders we will never approach.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nIn the last metres you panic.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nFuck.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Fuck this.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Get out.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nJesus fucking christ.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Fuck. Stop.\n<</replace>>\\\n<</timed>>",
+      "links": []
+    },
+    {
+      "pid": 22,
+      "name": "surface4",
+      "text": "<<audio \"layer1\" stop>><<audio \"layer2\" stop>><<audio \"layer3alt\" stop>><<audio \"crystal\" play unloop>>\n\n<div style=\"text-align: center\"><span id=\"thoughts\">\n\n</span>\n<<timed 3s>><<replace \"#thoughts\">>Breathe.\n\n\n\n\n\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The sun has gone...\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and the waves grow.\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The sky is a gradient from peach to powder blue.\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Across the swell of the sea you catch...\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...the first lights of the other shore flickering on.\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You remember reading stories...\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...of a local tradition of swimming this gulf.\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The idea settles somewhere in your head.\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You look back to the beach, a strip of blue shadow.\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nThey must be cold, waiting there for you...\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...or perhaps they have already forgotten...\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...absorbed in some activity in the sand.\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You face out to the darkening sea, and realise you have a choice.\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2 turn back \u25b2@@\">><<display \"turn back1\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc go on \u25bc@@\">><<display \"go on1\">><</linkappend>></span>\n\n\n\n\n<hr class=\"style1\"><</replace>><</timed>>\n</div>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "turn back1",
+            "pid": 24
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "go on1",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "go on1",
+      "text": "<<replace \"#thoughts\">>\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>><<timed 3s>><<replace \"#thoughts\">><div style=\"text-align: center;\">You fix your eyes on the distant shore.\n\n\n\n\n</div>\n<hr class=\"style1\">\n<<timed 3s>><div id=\"squaresurface\" style=\"width:1px; height=20px; display: inline-block;\"></div>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<goto \"swim5\">><</click>></span>\n<</timed>><</replace>>\\<</timed>>\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "swim5",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "turn back1",
+      "text": "<<replace \"#thoughts\">>\n\n\n\n\n\n<hr class=\"style1\">\n<</replace>><<timed 3s>><<replace \"#thoughts\">><div style=\"text-align: center;\">You turn back to face the beach.\n\n\n\n\n</div>\n<hr class=\"style1\">\n<<timed 3s>><div id=\"squaresurface\" style=\"width:1px; height=20px; display: inline-block;\"></div>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<goto \"swimback\">><</click>></span>\n<</timed>><</replace>>\\<</timed>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "swimback",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "swim5",
+      "text": "<<audio \"crystal\" stop>><<audio \"layer1\" play>>\n<div style=\"text-align: center\">\n<<nobr>><<silently>>\n<<set $energy to 250>>\n<<set $effort to 210>>\n<<set $tiredness to 30>>\n<<repeat 50ms>><<if $energy <= -20>><<goto \"drown\">><</if>><</repeat>>\n<<repeat 50ms>><<set $energy to $energy - 8>>\\\n<<if $tiredness >= 30 && $tiredness <= 60>><<set $effort to 210>><<elseif $tiredness  >= 60 && $tiredness <= 90>><<set $effort to 170>><<elseif $tiredness  >= 90 && $tiredness <= 110>><<set $effort to 130>><<elseif $tiredness  >= 110 && $tiredness <= 130>><<set $effort to 100>><<elseif $tiredness  >= 130 && $tiredness <= 140>><<set $effort to 80>><<elseif $tiredness >= 140 && $tiredness <= 160>><<set $effort to 50>><<elseif $tiredness >= 160 && $tiredness <= 170>><<set $effort to 20>><<elseif $tiredness >= 170>><<set $effort to 10>><</if>>\\\n<</repeat>>\n<</silently>><</nobr>><nobr>\n<span id=\"thoughts\">\n\n</span>\n<<timed 3s t8n>><<replace \"#thoughts\">>The cold is fading...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and something else grows in its shadow.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The waves make swimming hard...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...rippling through your body like kicks and punches.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The sea is a muscle.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2 fight \u25b2@@\">><<display \"fight\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc fight \u25bc@@\">><<display \"fight\">><</linkappend>></span>\n<</replace>>\\\n<</timed>>\n</nobr>\n<<repeat 50ms>><<replace #bar>><<print '<div id=\"square\" style=\"width:' + $energy + 'px; height=20px; display: inline-block;\"></div>'>><</replace>><</repeat>>\n\n<span id=\"bar\">-</span>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<set $energy to $effort>>\\<<set $tiredness to $tiredness +1>><</click>></span>\n\n</div>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "drown",
+            "pid": 30
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "fight",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "swimback",
+      "text": "<<audio \"crystal\" stop>><<audio \"layer1\" play>>\n<div style=\"text-align: center\">\n<<nobr>><<silently>>\n<<set $energy to 250>>\n<<set $effort to 250>>\n<<set $tiredness to 0>>\n<<repeat 50ms>><<set $energy to $energy - 8>>\\\n<<if $tiredness >= 30 && $tiredness <= 60>><<set $effort to 210>><<elseif $tiredness  >= 60 && $tiredness <= 90>><<set $effort to 170>><<elseif $tiredness  >= 90 && $tiredness <= 110>><<set $effort to 130>><<elseif $tiredness  >= 110 && $tiredness <= 130>><<set $effort to 100>><<elseif $tiredness  >= 130 && $tiredness <= 140>><<set $effort to 80>><<elseif $tiredness >= 140 && $tiredness <= 160>><<set $effort to 50>><<elseif $tiredness >= 160 && $tiredness <= 170>><<set $effort to 20>><<elseif $tiredness >= 170>><<set $effort to 10>><</if>>\\\n<</repeat>>\n<</silently>><</nobr>><nobr>\n<span id=\"thoughts\">\n\n</span>\n<<timed 3s t8n>><<replace \"#thoughts\">>You begin to swim back.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>It feels different, heavy and slow...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...a sense of being dragged down...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...the knowledge that you are crossing old, familiar waters.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Out behind you, the water leads away... \n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...to living depths of incredible beauty.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You dream a little of being among them...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...of descending into seas seen only in encyclopedias...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...those ancient Devonian or Cambrian oceans.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Times of plated fish, vast, impossible, mythic...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...gliding over tendrils of bizarre flora.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>All that is gone now. Their last living traces in places you will never go.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><<audio \"layer2\" volume 0 fadeoverto 10 1>>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>There is something white.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nSomething white in the water.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Like an anatomical sketch.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>It looks like an impossible corpse...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...a fish turned inside out.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>It flows with the current.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nYou swim closer, puzzled by its form...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...desperately seeking some understanding...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...but nothing comes...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and it passes in the waves.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You realise how cold you are.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Cold and stupid.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Little more than a child, out here chasing ancient fish.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n<<audio \"layer1\" volume 1 fadeoverto 50 0>><<audio \"layer2\" volume 1 fadeoverto 50 0>>\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Something begins to rise inside you.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nSomething like a pain.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>But soft, changing, malleable.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You let it flow out.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nIn crystal clouds like salt.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You breathe it out.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nAll of it.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Stop.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nStop trying.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Stop chasing.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Stop swimming.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Breathe it all out.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Let the sea have its salt.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Let the fucking ancient fish have it.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Let go.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nLet go of it all.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Breathe.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><<goto \"breathe2\">>\n\n<</replace>>\\\n<</timed>>\n</nobr>\n<<repeat 50ms>><<replace #bar>><<print '<div id=\"square\" style=\"width:' + $energy + 'px; height=20px; display: inline-block;\"></div>'>><</replace>><</repeat>>\n\n<span id=\"bar\">-</span>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<set $energy to $effort>>\\<<set $tiredness to $tiredness +1>><</click>></span>\n\n</div>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "breathe2",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "fight",
+      "text": "<<audio \"layer2\" volume 0 fadeoverto 5 1>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>You kick hard and taste salt.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nAgain.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Again.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nStop thinking so hard and do it.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2 fight \u25b2@@\">><<display \"fight2\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc fight \u25bc@@\">><<display \"fight2\">><</linkappend>></span>\n<</replace>>\\\n<</timed>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "fight2",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "salt1",
+      "text": "\n\n<div style=\"text-align: center\"><span id=\"thoughts\">\n\n</span>\n<<timed 3s>><<replace \"#thoughts\">>You breathe.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You emerge in the warm shallows.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The water is flat, pearly, around your waist.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You walk out of the sea.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The cold of the night meets you. \n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nIt refreshes you.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The last light is fading from the purple sky.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You feel the wind at your back. Even through the salt.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>That sticky layer that remains after every swim.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You will wash it off in the warmth of the shower.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You know that may not rinse it.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>It is in your bones now.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Some figures come down the path...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...through the chirping forest.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The crickets are starting up their dusk songs...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and you walk into the waves of sound...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...towards the descending crowd...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...looking for the faces you know.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n<<audio \"crystal\" fadeout>>\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n<<goto \"surface1\">>\n<</replace>><</timed>></div>\n\n<<timed 6s t8n>><hr class=\"style1\"><</timed>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "surface1",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "salt4",
+      "text": "<<audio \"drone\" stop>>\n\n<div style=\"text-align: center\"><span id=\"thoughts\">\n\n</span>\n<<timed 3s>><<replace \"#thoughts\">>You breathe.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You emerge on the other shore.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The lights have been turned off, or were never there.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Only the dark mass of the forest canopy greets you.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You walk out of the sea.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>It is cold...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...but you cannot feel it.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>The dead eye of the moon rises.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You feel its light on your back. Even through the salt.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>There is no running water, no stream, no tap...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...nowhere to wash this crust from your skin.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>But even if there was... \n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...somehow you know it would not be enough to rinse the salt.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>It is in your bones now.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>A faint whisper of human speech drifts through the trees...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...then it is silenced.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You step off the sharp sand onto still warm rock...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and set off into the ancient forest.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>With eyes of purest white.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n<<audio \"crystal\" fadeout>>\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n<<goto \"surface1\">>\n<</replace>><</timed>></div>\n\n<<timed 6s t8n>><hr class=\"style1\"><</timed>>\n\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "surface1",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "drown",
+      "text": "<<audio \"layer1\" stop>><<audio \"layer2\" stop>><<audio \"layer3\" stop>><<audio \"layer3alt\" stop>><div style=\"text-align: center\"><<audio \"drone\" volume 0 fadeoverto 100 1 loop>>\n<<nobr>><<silently>>\n<<set $energy to 250>>\n<<set $effort to 250>>\n<<set $tiredness to 0>>\n<<repeat 50ms>><<set $energy to $energy - 8>>\\\n<<if $tiredness >= 30 && $tiredness <= 60>><<set $effort to 210>><<elseif $tiredness  >= 60 && $tiredness <= 90>><<set $effort to 170>><<elseif $tiredness  >= 90 && $tiredness <= 110>><<set $effort to 130>><<elseif $tiredness  >= 110 && $tiredness <= 130>><<set $effort to 100>><<elseif $tiredness  >= 130 && $tiredness <= 140>><<set $effort to 80>><<elseif $tiredness >= 140 && $tiredness <= 160>><<set $effort to 50>><<elseif $tiredness >= 160 && $tiredness <= 170>><<set $effort to 20>><<elseif $tiredness >= 170>><<set $effort to 10>><</if>>\\\n<</repeat>>\n<</silently>><</nobr>><nobr>\n<span id=\"thoughts\">\n\n</span>\n<<timed 4s t8n>><<replace \"#thoughts\">>A burst of energy comes back to you...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...fills your limbs with its glow...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...you keep the pace.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nThose glittering lights of the distant shore are now brighter...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...shimmering there like headlights...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...beaming into this new dark.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>New dark.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nWhere did it come from?\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...you glance around at it, away from the lights.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...but it remains closed, lightless and dead.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>A sudden salt sting.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nYour eyes white.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Whitening.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nAnd the shapes gather...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...to pick it away.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nGod stop.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Make them stop.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nStop.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nStop.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nStop.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You can stop now.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You can stop swimming.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nStop and drift down.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>To be among the shapes, touched by their gossamer fins...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nCarried on currents like a returning king.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Pieces of you flake away as the coral crown is laid...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...atop your pale and glossy head.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>They will take your eyes away...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...to be ground up by pharyngeal teeth...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...and distributed among the black sand.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Your hair will spiral in the warm updraft of hydrothermal vents...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...while in the coldest deep a palace is made of your bones.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You will be more beautiful than you could have ever been...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...though no eye will ever see you.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Salt will be your bed.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Salt will be your witness.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Salt will be your lover.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Salt will be your child.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nBreathe it in.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><<goto \"breathe\">>\n\n<</replace>>\\\n<</timed>>\n</nobr>\n<<repeat 50ms>><<replace #bar>><<print '<div id=\"square\" style=\"width:' + $energy + 'px; height=20px; display: inline-block;\"></div>'>><</replace>><</repeat>>\n\n<span id=\"bar\">-</span>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to swim@@\">><<set $energy to $effort>>\\<<set $tiredness to $tiredness +1>><</click>></span>\n\n</div>\n\n\n\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "breathe",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "fight2",
+      "text": "<<replace \"#thoughts\">>\n<<audio \"layer3\" volume 0 fadeoverto 5 1>>\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>Where are you going?\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nWhat are you imagining will happen now?\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>You are already tiring.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nYou are already done.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2 fight \u25b2@@\">><<display \"fight3\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc fight \u25bc@@\">><<display \"fight3\">><</linkappend>></span>\n<</replace>>\\\n<</timed>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "fight3",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "fight3",
+      "text": "<<audio \"layer3alt\" volume 0 fadeoverto 5 1.5>><<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>Salt fills your eyes.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nSalt fills your mouth.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>Let it in.\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\nBreathe.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2 give up \u25b2@@\">><<goto \"drown\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc fight \u25bc@@\">><<display \"fight4\">><</linkappend>></span>\n<</replace>>\\\n<</timed>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "drown",
+            "pid": 30
+          }
+        },
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "fight4",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "fight4",
+      "text": "<<replace \"#thoughts\">>\n\n<</replace>>\n<<timed 3s>><<replace \"#thoughts\">>Below your feet leviathans surge...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...curling down into the blackest waters...\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>...as a dog curls up at the fire...\n\n<</replace>>\\\n<<next>><<replace \"#thoughts\">>\n...and sinks into a fevered sleep.\n<</replace>>\\\n<<next>><<replace \"#thoughts\">><span id=\"upAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25b2 give up \u25b2@@\">><<goto \"drown\">><</linkappend>></span>\n<span id=\"downAct\"><<linkappend \"@@font-family: 'Alegreya Sans SC', sans-serif;\u25bc give up \u25bc@@\">><<goto \"drown\">><</linkappend>></span>\n<</replace>>\\\n<</timed>>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "drown",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "breathe",
+      "text": "\n<div style=\"text-align: center\">\n\n\n\n\n\n\n\n\n<div id=\"square\" style=\"width:1px; height=20px; display: inline-block;\"></div>\n<span id=\"spaceAct\"><<click \"@@font-family: 'Alegreya Sans SC', sans-serif;space to breathe@@\">><<audio \"sting\" play>>\\<<goto \"salt4\">><</click>></span>\n\n</div>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "salt4",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "StoryInit",
+      "text": "<<cacheaudio \"breath\" \"http://www.jumpovertheage.com/Salt/Breathshort.wav\">>\n<<cacheaudio \"layer1\" \"http://www.jumpovertheage.com/Salt/Layer1.wav\">>\n<<cacheaudio \"layer2\" \"http://www.jumpovertheage.com/Salt/Layer2.wav\">>\n<<cacheaudio \"layer3\" \"http://www.jumpovertheage.com/Salt/Layer3.wav\">>\n<<cacheaudio \"salt\" \"http://www.jumpovertheage.com/Salt/SurfaceSalt.wav\">>\n<<cacheaudio \"crystal\" \"http://www.jumpovertheage.com/Salt/Crystal.wav\">>\n<<cacheaudio \"sting\" \"http://www.jumpovertheage.com/Salt/sting2.wav\">><<cacheaudio \"layer3alt\" \"http://www.jumpovertheage.com/Salt/Layer3alt.wav\">>\n<<cacheaudio \"drone\" \"http://www.jumpovertheage.com/Salt/Drone.wav\">>",
+      "links": []
+    }
+  ]
+}

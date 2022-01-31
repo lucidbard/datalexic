@@ -1,0 +1,450 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Cabin",
+      "text": "The disc of the [[moon|MoonDesc]] filled the viewing screen as the ship approached the lunar base.\n\nMaria ran her eyes over the control panel. All was within normal paramenters.\n\nShe sat back in the pilot's seat and sighed.\n\nOver a week since anyone had heard from the Moon Base.\n\n\"No doubt, they've had yet another break down,\" Commander Samster had said. \"Take your ship and find out.\"\n\nMaybe so... Maria had a feeling that there was more to the lack of comms than just a technical fault. She fingered the pulse weapon at her waist and was reassured by her [[axe|Weapons]] hanging on the bulkhead.\n\n<<if $flag1>>The panel flashed [[ENGAGE AUTOPILOT FOR LANDING|Autopilot]]<<else>>Her fingers hovered over the [[communication device|Communication]].<<endif>>",
+      "links": [
+        {
+          "text": "moon",
+          "destination": {
+            "name": "MoonDesc",
+            "pid": 11
+          }
+        },
+        {
+          "text": "axe",
+          "destination": {
+            "name": "Weapons",
+            "pid": 3
+          }
+        },
+        {
+          "text": "ENGAGE AUTOPILOT FOR LANDING",
+          "destination": {
+            "name": "Autopilot",
+            "pid": 5
+          }
+        },
+        {
+          "text": "communication device",
+          "destination": {
+            "name": "Communication",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Communication",
+      "text": "Maria touched the panel and the sound of static filled the cabin.\n\n\"Moon Base,\" said Maria. \"Maria Kenshall calling from the ship, MarGesh. Is there anybody available to answer this call?\"\n\nThe comms unit hissed back at her... Formless, voiceless, useless static...\n<<set $flag1=true>>\n[[It had been a fond hope...|Cabin]]",
+      "links": [
+        {
+          "text": "It had been a fond hope...",
+          "destination": {
+            "name": "Cabin",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Weapons",
+      "text": "The double axe of the Maalarik people was about two feet long and was deadly in even the least experienced hands. Maria had trained with it since she was only a child. It needed space to swing it but it could slice through hardened metal and stone without losing its edge.\n\nA true warrior's weapon.\n\n[[Return|Cabin]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "Cabin",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "SetUpStuff",
+      "text": "<<set $flag1=false>>\n\n<<set $weapontext=\"\">>\n\n<<goto \"Cabin\">>",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Cabin",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Autopilot",
+      "text": "Maria touched the panel and the ship began its descent to the moon's surface...\n\nAt least, she thought, the beacon is still active to guide me in.\n\nAs the ship decelerated towards the surface, Maria could see that the base was well lit inside and out. Maybe the Commander had been right...\n\nBut there was no movement...\n\nNormally, people would be milling around in the docking bay area, preparing for her arrival...\n\nThe docking bay doors opened to allow the entrance of the MarGesh.\n\nA synthesized voice told Maria that her ship had landed, the doors had shut and the bay had been pressurised.\n\nStill no people had appeared... Very odd, she thought. Maria hefted her axe and [[left the ship|DockingBay]].\n",
+      "links": [
+        {
+          "text": "left the ship",
+          "destination": {
+            "name": "DockingBay",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "DockingBay",
+      "text": "Maria stood in the docking bay... The door to the MarGesh slid shut with a hiss...\n\nShe looked around the docking bay...\n\nNobody to meet her... Nobody sitting at ops... Everything was operating on automatic...\n\nShe nervously ran her fingers along the shaft of the axe before strapping it to her back.\n\nMaria walked towards the door leading into the base. An [[intercom|Intercom]] was built into the wall.",
+      "links": [
+        {
+          "text": "intercom",
+          "destination": {
+            "name": "Intercom",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "IntoTheBase",
+      "text": "The door slid open and closed behind her. A long corridor stretched [[left|LeftCorridor]] and right and a single corridor lay directly in front of her. There was a window at the end of this corridor.\n\nAll the corridors ended in darkness. A light flickered at the end of the [[left corridor|LeftCorridor]] from an open doorway.\n\nThere was no sound... Nothing apart from the electric hum of computers and the sound of air being pumped into the base.",
+      "links": [
+        {
+          "text": "left",
+          "destination": {
+            "name": "LeftCorridor",
+            "pid": 9
+          }
+        },
+        {
+          "text": "left corridor",
+          "destination": {
+            "name": "LeftCorridor",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Intercom",
+      "text": "Maria clicked on the intercom.\n\n\"Moon base operations...\" She paused. Nothing. Not even a crackle in response. \"Ops... Report. This is Maria Kenshall...\"\n\nNothing...\n\n[[Nothing at all...|Scream]]\n",
+      "links": [
+        {
+          "text": "Nothing at all...",
+          "destination": {
+            "name": "Scream",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "LeftCorridor",
+      "text": "Maria drew her pulse weapon from its holster and held it at the ready.\n\nAs she walked along the corridor she could feel her feet sticking to the floor. The sound was unnaturally loud in the moon base... As she got closer to the door Maria could see what she was standing in... The flickering light revealed a rusty red, slimy coating on the floor...\n\nBlood. Smeared all over the floor of the corridor. As her eyes became accustomed to the light Maria could also make out [[lumps of flesh|Flesh]] strewn about the floor.\n\n",
+      "links": [
+        {
+          "text": "lumps of flesh",
+          "destination": {
+            "name": "Flesh",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "RightCorridor",
+      "text": "Maria walked to the end of the rightmost corridor and stabbed at a control panel. The door slid open and she went in.\n\nComputer terminals and screens hummed with power. A large screen showed a sensor sweep of the local area. There were several blips on screen A large number in the botanics lab, perhaps twenty. Maria could see her own life reading. A seperate reading showed the creature which had returned to harry the people in the lab.\n\nMaria was hypnotised by the movement of the thing. It would remain stationary for minutes at a time before taking off at high speed to another part of the lab.\n\nAnother group of densely packed life scans lay about a mile to the west of the lab. When Maria clicked on it the display zoomed into a crashed ship. The ship had upwards of thirty life readings. Were they the creature's young? Thirty more of the beast Maria had only just managed to kill...\n\nMaria spotted an intercom and spoke into it.\n\n\"Hello...Hello...\"\n\n\"You've come...\" The voice was tired and panicked. \"Please help us... We're over in the botanics lab and one of the creatures is prowling around the buiding...\"\n\n\"I've seen it,\" said Maria. \"Do you have any weapons over there? I managed to kill a young one but I may not have enough fire power for this one...\"\n\n\"There's a buggy outside the air lock in ops... There aren't any weapons as such but there's drilling gear and explosives.\" There was the sound of powerful thuds and people screaming. \"It's going to be in here soon... Please help us..\"\n\n\"I'll do my best...\" said Maria and headed to [[the airlock|Airlock]].",
+      "links": [
+        {
+          "text": "the airlock",
+          "destination": {
+            "name": "Airlock",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "MoonDesc",
+      "text": "Falx was the second largest moon orbiting the planet Tarv in the Galmerek system.\n\nAlthough not rich in flora or fauna, the only life a lichen which gave the moon a greenish blue colour, Falx was very rich in mineral deposits. Apart from the precious metals gold and titanium, the moon had revealed thick layers of harvicium and boldrum, which were vital in the building of super light ships.\n\nThe base had been established almost twenty years ago and had shown a regular and substantial profit ever since.\n\n[[Return|Cabin]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "Cabin",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Scream",
+      "text": "<font style=\"color:#FF0000\" size=10>\"Arghhhhhhhh!!!\"</font>\n\nThe scream froze Maria's blood. It seemed to come from some distance away. Gods, she thought, what is happening here?\n\nMaria took several deep breaths and slowed her heart beat just as she had been shown by her instructors back on Maalarik. She checked her weapons and [[entered the base|IntoTheBase]].",
+      "links": [
+        {
+          "text": "entered the base",
+          "destination": {
+            "name": "IntoTheBase",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "FightMonster1",
+      "text": "A nightmarish creature with a gaping, slavering maw full of long, sharp fangs, threw itself at Maria.\n\nOnly a lifetime of martial training saved her as she fell to the floor and rolled away to come to rest in a stance with her pulse weapon focussed on the creature.\n\nMaria fired. The bright blue beam hit the thing dead centre and it dropped to the floor.\n\nRising to her feet , Maria kicked the body, which grabbed at her foot with dirty, bloody claws. Another blast from her pulse weapon knocked the creature back. This time, Maria could see the wild, strangely intelligent, eyes fixed on her own.\n\nMaria dropped the pulse weapon and slowly reached for her axe and held it ready...\n\nThe creature opened its mouth to an unnatural degree and screamed at Maria... It raised itself on three of its limbs and leapt at her. Maria swung her axe and lopped off half of its other limbs. Thick black fluid gushed out from the wounds.\n\nMaria narrowly avoided a slash from another of the things appendages before bringing her axe round and burying it deep into its head.\n\nThe thing fell to the floor gushing black fluid...\n\nMaria picked up the pulse weapon and stopped to catch her breath...\n\nShe heard something... [[Someone was groaning in the room...|RoomWithMan]]",
+      "links": [
+        {
+          "text": "Someone was groaning in the room...",
+          "destination": {
+            "name": "RoomWithMan",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "RoomWithMan",
+      "text": "Maria held her axe at the ready. It was still dripping with the creature's black fluid.\n\nA man was lying on the floor. He was covered in blood. He opened his eyes and spoke.\n\n\"I don't have much time...\" He coughed and spat blood.\n\nMaria kneeled down by the man. \"Try to...\"\n\n\"Just listen,\" said the man, coughing again. \"Ten days ago, a ship landed. It had two... Only two... Things like that... We managed to kill one of them but the other one is still prowling...\"\n\n\"So what did I kill?\"\n\n\"A child? A pet? I don't know... The other ones were seven feet tall...\" The man suffered from a coughing fit again.\n\nMaria moved closer to the man and supported his head on her lap.\n\n\"We've been receiving your transmissions but we couldn't reply... We knew somebody would come... I've been watching the scanners for days... Sneaking in and out of the base... We didn't realise there was something else in the base...\"\n\n\"What happened to the rest of you? Was everyone killed?\"\n\n\"After we'd killed one of the things we tricked the other one into the airlock and blew it into space... But it wasn't killed... It was breathing outside... I don't know how... But when it came smashing against the outside of the base, everyone panicked and ran through the blood and guts of the ones who'd sacrificed themselves...\"\n\nThe man's eyes rolled as he spasmed and coughed up more blood.\n\n\"The rest of the team are hiding in the botanics lab... You'll be able to see it from the end of the other corridor... You can get to them from ops... But you'll have to watch for the other thing... Save them...\" He coughed out his last breath.\n\nMaria held the dead man for a moment and offered up a sient prayer.\n\n[[She looked around the room...|FlickeringRoom]]",
+      "links": [
+        {
+          "text": "She looked around the room...",
+          "destination": {
+            "name": "FlickeringRoom",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Flesh",
+      "text": "Something had torn apart three maybe four people.\n\nHuman offal had been torn out of bodies and thrown against the walls. Limbs had been torn off and showed evidence of chewing.\n\nFootprints showed that a lot of people had run through this corridor... \n\nPerhaps fleeing something?\n\n[[Return|LeftCorridorAttack]]",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "LeftCorridorAttack",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "LeftCorridorAttack",
+      "text": "Suddenly, there was a screeching sound and [[something|FightMonster1]] leapt through the open door...",
+      "links": [
+        {
+          "text": "something",
+          "destination": {
+            "name": "FightMonster1",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "FlickeringRoom",
+      "text": "The room had originally been a dormitory but everything had been strewn around as if it had been hit by a hurricane.\n\nPools of blood were drying out all over the floor. The tragic remnants of families light years away were pinned to the walls.\n\nIn the corner of the room was a mess of entrails covered in stinking black fluid. One of the creatures had attacked one of the moon base team who seemed to have ingested an explosive device.\n\nThe creature had bitten down on its victim and had been blown apart.\n\nMaria sighed and [[left the room|MiddleCorridor]].",
+      "links": [
+        {
+          "text": "left the room",
+          "destination": {
+            "name": "MiddleCorridor",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "MiddleCorridor",
+      "text": "Maria made her way from the dormitory her senses strained to maximum.\n\nShe gave a silent prayer that her feet were no longer sticking to the floor.\n\nAt the end of the short corridor was a [[window|LookWindow]].",
+      "links": [
+        {
+          "text": "window",
+          "destination": {
+            "name": "LookWindow",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "LookWindow",
+      "text": "Maria looked out onto the surface of the moon. The greeny blue lichen glowed in the dim light.\n\nA domed building lay about one hundred metres away. Lights were on and there was some movement from inside.\n\nMaria became aware of a shadow moving towards the domed building. One of the creatures was circling, looking for a way in...\n\nOccasionally, it would stop and claw at the walls... The lights were extinguished...\n\nVery wise, thought Maria.\n\nAs if it had heard her thought, the creature turned and seemed to look into her eyes... It ran towards her... A strange, loping half run half jumping gait...\n\nIn seconds the creature's face was pressed up against the window... Saliva dribbled down the outside of the window...\n\nThe creature's claws raked across the strengthened glass..\n\nMaria noticed a metal shutter which closed securely across the window when she pressed a button.\n\nFor the first time, Maria considered leaving the moon and [[calling for backup|Backup]]. But, could she leave the people here? Surely the creature would break into the botanics lab soon... [[The least she could do was give them a chance|RightCorridor]].",
+      "links": [
+        {
+          "text": "calling for backup",
+          "destination": {
+            "name": "Backup",
+            "pid": 20
+          }
+        },
+        {
+          "text": "The least she could do was give them a chance",
+          "destination": {
+            "name": "RightCorridor",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Backup",
+      "text": "Maria re-entered the docking bay and boarded the MarGesh.\n\n\"Emergency request. Emergency request. This is Maria Kenshall on Falx. I have encountered a dangerous alien incursion. Danger to surviving mining team. Requesting backup. Repeat, requesting backup. I will await support in orbit.\"\n\nMaria engaged the engines and touched the control to open the docking bay doors. As the doors slid open, the creature appeared and leapt onto the MarGesh.\n\nMaria heard the air escape from the ship as the creature tore its way into the airlock.\n\nShe turned to see the slavering maw of the creature as it ripped her to pieces.\n\n[[THE END|EndInFailure]]",
+      "links": [
+        {
+          "text": "THE END",
+          "destination": {
+            "name": "EndInFailure",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "EndInFailure",
+      "text": "Oh dear...\n\nMaria Kenshall has gone to join her ancestors...\n\nIf you would like to try to guide this fine young woman again...\n\n[[TRY AGAIN|SetUpStuff]]",
+      "links": [
+        {
+          "text": "TRY AGAIN",
+          "destination": {
+            "name": "SetUpStuff",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Airlock",
+      "text": "The airlock door opened and closed behind her. Maria placed her weapons on the ground and put on a space suit.\n\nShe picked up her axe and carried it to the outside airlock door.\n\nShe could see the buggy. It had been well used but still looked serviceable. There were what looked like high powered laser drills as well as several packs of explosives.\n\nMaria composed herself and [[opened the outer airlock door...|Buggy]]",
+      "links": [
+        {
+          "text": "opened the outer airlock door...",
+          "destination": {
+            "name": "Buggy",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Buggy",
+      "text": "Maria threw her axe into the back of the buggy and leaped in behind the wheel. \n\nShe looked over towards the botanics lab. There was no sign of the creature. It must have been searching around the back of the building.\n\nAt last, thought Maria. A stroke of luck.\n\nA moment of doubt assailed her...\n\n[[Should she try to save the people in the botanics lab|GoLab]] or [[should she destroy the crashed ship|GoShip]]",
+      "links": [
+        {
+          "text": "Should she try to save the people in the botanics lab",
+          "destination": {
+            "name": "GoLab",
+            "pid": 24
+          }
+        },
+        {
+          "text": "should she destroy the crashed ship",
+          "destination": {
+            "name": "GoShip",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "GoLab",
+      "text": "Maria picked up a drill and her axe and did a low gravity run towards the botanics lab.\n\nShe could see some people in the lab. They were waving and shouting but she couldn't hear anything...\n\nShe looked around for the creature. Nothing.\n\nShe pressed the button to open the outer airlock door and was swatted away by a huge clawed hand...\n\nMaria rolled and came back to her feet She shook her head to get rid of the wooliness.\n\nThe creature loomed over her. It was nearly two feet taller than she was herself. It stood on six strong legs and waved another four limbs which terminated in deadly six inch claws. It had a wide mouth full of frighteningly long teeth and two very intelligent looking eyes...\n\nIt lashed at her and Maria switched on the drill and sliced off one of its limbs.\n\nThe creature backed away, hurt.\n\nMaria brandished the drill at the creature. In a flurry of movement it grabbed hold of the drill and made to chew it.\n\nMaria could not believe her good fortune. She switched on the drill and was delighted to see the beam penetrate the creature's skull. It fell to the ground in a pool of dark fluid.\n\nMaria entered the airlock and pressed the button to [[depressurise|EndGame]].",
+      "links": [
+        {
+          "text": "depressurise",
+          "destination": {
+            "name": "EndGame",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "GoShip",
+      "text": "She set several of the fuses on the explosive packs.\n\nMaria engaged the engine and pushed hard on the accelerator pedal setting off at high speed towards the crashed space ship.\n\nAs the surface of the moon flashed by her she looked back to see the creature was now in hot pursuit.\n\nIt would be very close...\n\nMaria could see the crashed ship a few hundred yards in front of her. Using her beloved axe, she wedged the accelerator against the floor.\n\nShe grabbed one of the laser drills and leaped from the buggy, rolling and rolling in the lichen.\n\nMaria watched the creature bound after the buggy, reaching out it's claws to try to stop it but...\n\nIt crashed into the ship at full speed blowing up the crashed ship... Several young creatures were thrown into the air aflame. As other explosive packs were ignited a ball of fire engulfed the ship and the fully grown creature...\n\nMaria lay back in the lichen and offered a silent prayer to the gods of her people...\n\nAfter a few minutes, she got up and, putting the drill over her shoulder, walked back to the botanics lab...\n\nMaria could see the people in the lab waving to her... It felt good to know that she had saved them and things could get back to normal...\n\n[[A clawed hand knocked her to the ground...|KillBeast]]",
+      "links": [
+        {
+          "text": "A clawed hand knocked her to the ground...",
+          "destination": {
+            "name": "KillBeast",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "KillBeast",
+      "text": "Maria rolled and came back to her feet She shook her head to get rid of the wooliness.\n\nThe creature loomed over her. It was nearly two feet taller than she was herself. It stood on six strong legs and waved another four limbs which terminated in deadly six inch claws. It had a wide mouth full of frighteningly long teeth and two very intelligent looking eyes...\n\nIt lashed at her and Maria switched on the drill and sliced off one of its limbs.\n\nThe creature backed away, hurt.\n\nMaria brandished the drill at the creature. In a flurry of movement it grabbed hold of the drill and made to chew it.\n\nMaria could not believe her good fortune. She switched on the drill and was delighted to see the beam penetrate the creature's skull. It fell to the ground in a pool of dark fluid.\n\nMaria entered the airlock and pressed the button to [[depressurize|Success]]",
+      "links": [
+        {
+          "text": "depressurize",
+          "destination": {
+            "name": "Success",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "EndGame",
+      "text": "What Maria had not noticed was the dozen young creature which had sneaked into the airlock during the fight...\n\nAs the inner airlock doors opened, Maria was swamped by the young creatures and torn apart...\n\nThe screams of the survivors in the botanics lab were horrible to hear... Had anyone been there to hear them..\n\n[[THE END|EndInFailure]]",
+      "links": [
+        {
+          "text": "THE END",
+          "destination": {
+            "name": "EndInFailure",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Success",
+      "text": "As the inner airlock doors opened, the moon base survivors ran towards her and embraced her.\n\nMaria removed her suit and slid down the wall of the botanics lab. She was exhausted.\n\nBut she had saved the people on the moon base.\n\nSafety was only a few radio communications away.\n\nUntil then, she would sleep...\n\n[[THE END|EndWin]]",
+      "links": [
+        {
+          "text": "THE END",
+          "destination": {
+            "name": "EndWin",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "EndWin",
+      "text": "I hope you've enjoyed this Twine game/story/interactive fiction...\n\nMy best wishes to all the other writers/programmers/creatives...\n\nAndy Brown",
+      "links": []
+    },
+    {
+      "pid": 30,
+      "name": "CHEAT|",
+      "text": "Double-click this passage to edit it.",
+      "links": []
+    }
+  ]
+}

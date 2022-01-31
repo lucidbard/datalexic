@@ -1,0 +1,3678 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Chapter 1",
+      "text": "''Chapter One - Gina''\n\nIt's only been five minutes but you already feel your eyes closing. The car always lulls you to sleep, especially when the sun is out. This isn't how you were hoping to spend your Saturday, but for the moment you feel all comfy cozy and it doesn't seem that bad. Then again, you //just// left the house. \n\nDad is singing along to the radio... since when did he start listening to Miley Cyrus? \n\nThe GPS says you're about 45 minutes away.\n\n[[Talk to Dad.|Talking to Dad in Car]]\n[[Take a nap.|Shutting Your Eyes]]\n[[Look out the window.|Looking Out Car Window]]\n[[Text Jessica!|Phone Broken]]\n\n(set: $tatte to 0)",
+      "links": [
+        {
+          "text": "Talk to Dad.",
+          "destination": {
+            "name": "Talking to Dad in Car",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Take a nap.",
+          "destination": {
+            "name": "Shutting Your Eyes",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Look out the window.",
+          "destination": {
+            "name": "Looking Out Car Window",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Text Jessica!",
+          "destination": {
+            "name": "Phone Broken",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Talking to Dad in Car",
+      "text": "YOU: Dad, remind me what's so important about this library?\n\nDAD: Alright, well number one, all libraries are important. \n\nYOU: Okay, okay.\n\nDAD: They are the democratization of knowledge. Imagine if no one had access-\n\nYOU: Yeah, yeah, okay, but doesn't the internet already do that?\n\nDAD: The internet is pretty great. Libraries are special too, though. \n\nYOU: If they're all so special, why are we going way out of our way to go to this one?\n\nDAD: You'll see. Just... keep an open mind. It's a pretty magical place.\n\nYOU: You sound like a cliche.\n\nDAD: This whole adventure sounds like a cliche.\n\nYOU: Now I'm confused. \n\nDAD: Hi, Confused! I'm Dad!\n\nYOU: [[Ughhhhhh.|Thinking in Car]]",
+      "links": [
+        {
+          "text": "Ughhhhhh.",
+          "destination": {
+            "name": "Thinking in Car",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Napping in Car",
+      "text": "''Dark Room''\n\nYou walk, hesitantly, through the darkness of a giant room. The seeping ambient light reveals rows upon rows upon rows of shelves, each creating a dark tunnel leading off... somewhere. \n\nAfter walking down the main path for a while, a soft shuffle of papers catches your attention. Someone is turning the pages of a book, slowly and deliberately. A muttering might be coming from that same someone, but you can't be sure. (click-append:\"you can't be sure.\")[\n\nFollowing the noises, you take a left down through the stacks. Of the hundreds of books on the shelves, you can't make out any of their titles in the dim light, but the smell reminds you of a book you used to read. Or maybe it was one that Grandpa read to you.\n\nThe light gets brighter and brighter, but it's still hard to see. As you round the corner of the next row of shelves, you step on a sheet of paper. You hold it up try to make out the small message on the center. It says:\n\n//The lunatic file//\n\nIt slips out of your hand and makes a grinding noise as it slides across the floor. The muttering and page turning stop. \n\n[[You are filled with an inexplicable sense of dread.|Waking Up]]]",
+      "links": [
+        {
+          "text": "You are filled with an inexplicable sense of dread.",
+          "destination": {
+            "name": "Waking Up",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Looking Out Car Window",
+      "text": "You stare blankly out of the window, letting your eyes glaze over as [[everything blurs by. |Still Looking Out Car Window]]",
+      "links": [
+        {
+          "text": "everything blurs by. ",
+          "destination": {
+            "name": "Still Looking Out Car Window",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Phone Broken",
+      "text": "You reach for your phone out of instinct, but nothing is there. \n\n//Right.// \n\nYour phone is back at home, broken, waiting to be thrown out once the replacement comes in the mail. Maybe you can still salvage the X-Files case on it, not that it did much to protect the phone.\n\n[[Talk to Dad.|Talking to Dad in Car]]\n[[Take a nap.|Napping in Car]]\n[[Look out the window.|Looking Out Car Window]]",
+      "links": [
+        {
+          "text": "Talk to Dad.",
+          "destination": {
+            "name": "Talking to Dad in Car",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Take a nap.",
+          "destination": {
+            "name": "Napping in Car",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Look out the window.",
+          "destination": {
+            "name": "Looking Out Car Window",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Thinking in Car",
+      "text": "YOU: So did you go there a lot growing up?\n\nDAD: Well, it's not really a little-kid's type library. I told you already... it has old books and all that.\n\nYOU: Great. So, old books that I can't even touch.\n\nDAD: You can touch them. That's why we're going. To read stuff. It's not a museum.\n\nYOU: I'll break out the white gloves, then.\n\nDAD: No! That's a myth. No white gloves, actually.\n\nYOU: Dad, you can't just touch old books. There's like, skin oils or something that ruins them. \n\nDAD: Wanna bet.\n\nYOU: ...\n\nDAD: 20 bucks. 10 bucks. Come on, smarty pants.\n\nYOU: I'm right, but I'm not gonna bet because I like to //work// for my money. Can't just have you lining my pockets.\n\nDAD: I'll remember this next time you ask me to buy you something at the mall, Gina.\n\nYOU: [[Good one.|Arrival]]",
+      "links": [
+        {
+          "text": "Good one.",
+          "destination": {
+            "name": "Arrival",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Arrival",
+      "text": "''Harvard Square''\n\n//You pull up to the front of a series of buildings.//\n\nYOU: This doesn't look like a library.\n\nDAD: Very funny. It's over that way, in the Yard.\n\nYOU: What's this place right here? Tatte?\n\nDAD: I think it's pronounced Tatte.\n\nYOU: I can't hear the difference. I guess regular coffee isn't good enough for these Harvard kids, huh?\n\nDAD: I guess not. Wanna check it out? We can try whatever weird take on a cup of coffee they have in there?\n\n[[Nah, let's just get to the library.|Passing Weird Man]]\n[[Sure, why not?|Tatte]]",
+      "links": [
+        {
+          "text": "Nah, let's just get to the library.",
+          "destination": {
+            "name": "Passing Weird Man",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Sure, why not?",
+          "destination": {
+            "name": "Tatte",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Shutting Your Eyes",
+      "text": "[[You shut your eyes...|Napping in Car]]",
+      "links": [
+        {
+          "text": "You shut your eyes...",
+          "destination": {
+            "name": "Napping in Car",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Waking Up",
+      "text": "//You jerk forward against the seatbelt as Dad slams the breaks.//\n\nDAD: Sorry, honey. Didn't mean to wake you up. He cut me off.\n\n//The AC is blasting. It feels nice.//\n\nDAD: You can sleep more if you want, but we're almost there.\n\nYOU: //(yawning)// [[It's fine.|Arrival]]",
+      "links": [
+        {
+          "text": "It's fine.",
+          "destination": {
+            "name": "Arrival",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Bookmoss",
+      "text": "//\"It was as if I had found bits of magic looking-glass among the books, with the images of a vanished century in them.\"// \n\n-Nathaniel Hawthorne\n\n(live: 4s)[(transition:\"dissolve\")[[[''BOOKMOSS''|Chapter 1]]](stop:)]",
+      "links": [
+        {
+          "text": "''BOOKMOSS''",
+          "destination": {
+            "name": "Chapter 1",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Introduction",
+      "text": "''A Note from the Author''\n\nI have written a short set of instructions, but have realized that they are utterly unnecessary. If you would still like to read them you can find them below. \n\nOtherwise, thank you for being here. There is no back button, so choose wisely. I hope you enjoy my story.\n\nWarmly,\nDevon Guinn\n\n[[Start|Bookmoss]](if: (saved-games:) contains \"Slot A\")[\n  (link: \"Load game\")[(load-game:\"Slot A\")]]\n-\n[[Acknowledgements and References]]\n[[Publishing Information]]\n[[Instructions|Quick Tips]]",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Bookmoss",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Acknowledgements and References",
+          "destination": {
+            "name": "Acknowledgements and References",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Publishing Information",
+          "destination": {
+            "name": "Publishing Information",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Instructions",
+          "destination": {
+            "name": "Quick Tips",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Still Looking Out Car Window",
+      "text": "\nNow, in the more populated area, the starting and stopping of the car gives you more time to (link-reveal:\"people-watch.\")[ \n\n{(live: 1.7s)[\n    (either: \"Two women stop walking as one of them pulls out her phone... as she answers it, the other one throws up her arms in dismay.\", \"A little kid breaks away from his parents, toddling a few feet down the sidewalk before turning around and running back to his mom.\", \"A dark-haired woman stares out of the coffee shop window directly into your eyes.\", \"Some graffiti says XYZZY.\", \"A bird flies next to the window for a moment.\", \"An old man scoots forward a few feet on his walker.\", \"A police-car blares by.\", \"Some kids, your age, go into a Dunkin Donuts.\")\n]}]\n\nYou wish you could witness the rest of their stories, [[but you keep heading toward the library.|Noticing Dogs From Car]]",
+      "links": [
+        {
+          "text": "but you keep heading toward the library.",
+          "destination": {
+            "name": "Noticing Dogs From Car",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Noticing Dogs From Car",
+      "text": "There are a lot of dogs out today, each one cuter than the last.\n\n//Since when did I get so into dogs?// you think. If only you had your phone: what's a cute dog if you can't share a picture of it with your friends?\n\n[[//Oh well.//|Arrival]]",
+      "links": [
+        {
+          "text": "//Oh well.//",
+          "destination": {
+            "name": "Arrival",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Tatte",
+      "text": "This is the type of coffee shop people go to in overproduced sitcoms. The food looks delicious though. There is not much to say about it other than that it's nice. You get a coffee and a muffin looking-thing. [[The barista was pretty cute.| Barista]]\n\n[[Continue...|Walking up to Houghton]]\n(set:$tatte to 1)",
+      "links": [
+        {
+          "text": "The barista was pretty cute.",
+          "destination": {
+            "name": "Barista",
+            "pid": 172
+          }
+        },
+        {
+          "text": "Continue...",
+          "destination": {
+            "name": "Walking up to Houghton",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Walking up to Houghton",
+      "text": "//You walk up to the library, a stately, symmetrical edifice with two sets of stairs leading up to the entrance.//\n\nDAD: Should we get a picture?\n\nYOU: Can we do it later? It's too hot, now. [[Let's just head inside.|Chapter Two]]",
+      "links": [
+        {
+          "text": "Let's just head inside.",
+          "destination": {
+            "name": "Chapter Two",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Passing Weird Man",
+      "text": "//You cross the street and enter the yard. It's full of tourists, but still feels empty without the usual students and professors, other than a few kids from a summer program. The green of the grass looks worn; the grounds are well kept, but much abused by droves of visitors.//\n\nYOU: When was the last time we were here?\n\nDAD: Oh, I don't know, let's see. Must have been about two years ag-\n\n//A man sprints between you, running with the stride of someone who is both exhausted and bad at running. He would look a professor if not for the sad state of his clothing: a torn shirt, muddied jeans, and a level of dishevelment not usually seen except in the strangest of circumstances.//\n\nMAN: //(yelping between gasps of air)// You'll... Never... why the hell... it's real... I don't... Nooooo!\n\n//A pack of Harvard University Police officers run after him, and one lags behind, following on a clunky motorized standing scooter.//\n\nDAD: //(to the man on the scooter)// I think you've almost got him!\n\n//The officer is not amused.//\n\n[[Continue...|Walking up to Houghton]]",
+      "links": [
+        {
+          "text": "Continue...",
+          "destination": {
+            "name": "Walking up to Houghton",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "In Lobby, Part One",
+      "text": "''Chapter Two - Jon''\n\nYou and your daughter, Gina, stand quietly in the lobby. She is looking at some postcards and you're digging through your messenger bag for your research ID cards. You've got to get more organized if you're going to finish research for your novel. \n\nThe security guard pulls out a black notebook and pauses between writing a few words here and there. (click:\"black notebook\")[The pages are almost entirely full, top to bottom.]\n\n[[A man with small glasses and big eyes is talking to a woman with small eyes and big glasses.|In Lobby, Part Two]] \n\nGina lets out a sigh.(Click-replace:\"Gina lets out a sigh.\")[Gina lets out a sigh as if to say \"we came all the way here for //this?//\" She's just at that age. (if: $tatte > 0)[The muffin you ate left a pleasant taste in your mouth and the coffee a warm feeling in your stomach.]\n\nLobby seems too plain a word for this room, though that's what this is. Though usually observant, [[you're too distracted by the two people talking|In Lobby, Part Two]] to notice your surroundings much, but you certainly appreciate the elegance of this waiting space.]\n",
+      "links": [
+        {
+          "text": "A man with small glasses and big eyes is talking to a woman with small eyes and big glasses.",
+          "destination": {
+            "name": "In Lobby, Part Two",
+            "pid": 18
+          }
+        },
+        {
+          "text": "you're too distracted by the two people talking",
+          "destination": {
+            "name": "In Lobby, Part Two",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "In Lobby, Part Two",
+      "text": "//Gina continues to look at the postcards half heartedly, and you can't help but listen to the people talking.//\n\nMAN: //(to the woman)// Yes, I know but the with the new system we just keep losing too many things. It's sloppy.\n\nWOMAN: All changes take time to settle in.\n\nMAN: But the sheer number of misplaced materials within the system... we're bound to start making mistakes that matter.\n\nWOMAN: Not a single item has been permanently lost. Just a few //temporary// glitches. It's hardly worth ending a hundred thousand dollars worth of work because a few items have fallen through the cracks for an hour or two. \n\nMAN: But, even the swipe logs aren't always matching up. Surely, you can see the issue in not knowing who is coming in and out.\n\nWOMAN: Let's not talk about this now... \n\n//She peers at you through her large spectacles. The lenses make her eyes look slightly less small.// \n\nWOMAN: There are people here.\n\n[[Ask what they are talking about.|Lobby - Getting Ready]]\n[[Pretend you aren't paying attention.|Lobby - Getting Ready]]",
+      "links": [
+        {
+          "text": "Ask what they are talking about.",
+          "destination": {
+            "name": "Lobby - Getting Ready",
+            "pid": 56
+          }
+        },
+        {
+          "text": "Pretend you aren't paying attention.",
+          "destination": {
+            "name": "Lobby - Getting Ready",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Reading Room - Getting Situated",
+      "text": "''Reading Room''\n\n//You are sitting at a middle table. The registration wasn't nearly as difficult as you thought it might be: after buzzing you in, a librarian explained the reading room etiquette and told you that your requested material would be there shortly. Sitting here, this doesn't feel that much different from any other library. Except, of course, from the particular scholarliness of the people reading around you, and the centuries old manuscripts they are reading. And the excitement. \n\nPerhaps it is different, but, then again, perhaps you're a book nerd. The two aren't mutually exclusive.//\n\n(link-reveal:\"//The librarian walks up.//\")[\n\nLIBRARIAN: Here are the papers you requested. Be sure to keep the manuscripts nice and flat when you are reading. \n\nYOU: Got it.\n\nLIBRARIAN: For this, //(pointing to the book)// rest it on one of these cradles. Just make sure it's not overextended. //(producing some thick, heavy strings)// You can use these weights to keep the pages down. I'll be right over there if you have any questions!\n\nYOU: Okay, thanks for all of your help!\n\n//Gina is sure to cause trouble soon... better not waste time. You look at the four items you requested, and decide to open...// \n\n[[The Beige Manila Folder]]\n[[A Different Beige Manila Folder]]\n[[A Weird Looking Manila Folder]]\n[[The Book]]]\n",
+      "links": [
+        {
+          "text": "The Beige Manila Folder",
+          "destination": {
+            "name": "The Beige Manila Folder",
+            "pid": 23
+          }
+        },
+        {
+          "text": "A Different Beige Manila Folder",
+          "destination": {
+            "name": "A Different Beige Manila Folder",
+            "pid": 24
+          }
+        },
+        {
+          "text": "A Weird Looking Manila Folder",
+          "destination": {
+            "name": "A Weird Looking Manila Folder",
+            "pid": 25
+          }
+        },
+        {
+          "text": "The Book",
+          "destination": {
+            "name": "The Book",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Reading Room - Talking to the Twins",
+      "text": "CARLA: Hi, I'm Carla. \n\nJEFF: I'm Jeff.\n\nYOU: Hello, I'm Jon. Do you work at the Houghton?\n\nCARLA: You could say that.\n\nJEFF: But don't.\n\nCARLA: It's not //the// Houghton. It's just Houghton.\n\nJEFF: We're friends of Houghton.\n\nYOU: Whoops. Got it.\n\nCARLA: And we're happy to see you here.\n\nYOU: It's a great place. Are you doing research?\n\nJEFF: We're helping out.\n\nCARLA: Yeah. This place has a lot of...\n\nJEFF: Untapped potential.\n\nCARLA: Lots of cool stuff.\n\nJEFF: If you know where to look.\n\n//As friendly as you are, there is something unsettling about them. Talking to them is like going in to shake someone's hand and getting an awkward hug.//\n\nCARLA: Looks like you've got a good book right there.\n\n[[Have you read it?|Reading Room - Talking About Book]]\n[[Yeah. Anyway, nice to meet you!|Reading Room - Talking About Book]]",
+      "links": [
+        {
+          "text": "Have you read it?",
+          "destination": {
+            "name": "Reading Room - Talking About Book",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Yeah. Anyway, nice to meet you!",
+          "destination": {
+            "name": "Reading Room - Talking About Book",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Reading Room - Talking About Book",
+      "text": "JEFF: //Mosses from an Old Manse,// right?\n\nCARLA: You know that very copy was owned by Melville.\n\nJEFF: I think he and Hawthor-\n\nCARLA: Shh. You can't go spreading rumors, Jeff.\n\nYOU: It's a good book. I came here for this copy.\n\nJEFF: Yeah well, you chose wisely.\n\nCARLA: Yeah. Do you know something we don't? \n\nYOU: Ha.\n\nJEFF: Ha, indeed.\n\nYOU: (link-reveal:\"So what are your favorite things in the library?\")[\n\nCARLA: Ohhh. Plenty.\n\nJEFF: Yeah, plenty...\n\n//Trailing off, his eyes dart to the reading room door. He slowly turns to Carla and whispers something to her. Feeling uncomfortable, you pretend to look back at your papers. Carla whispers something, and then they both turn back to you after collecting their thoughts.//\n\nCARLA: You know, you're technically not supposed to have your wallet out. Can't have you slipping stuff in the pockets.\n\nYOU: Oh, sorry! \n\nJEFF: Don't worry. We won't report you.\n\nCARLA: Yeah we won't report you. That's not even worth reporting. In fact...\n\nJEFF: We should get going.\n\nCARLA: Got some real trouble to get into.\n\nJEFF: Yeah, don't report us!\n\nYOU: I won't! It was nice to meet you.\n\n//By the time you finish saying goodbye they are halfway out the door.//\n(set: $manse to 1)(set: $twinz to -1000)\nYOU: [[Weird. |Reading Room - Looking Back at Papers]]]",
+      "links": [
+        {
+          "text": "Weird. ",
+          "destination": {
+            "name": "Reading Room - Looking Back at Papers",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Reading Room - Looking Back at Papers",
+      "text": "//What was it that had them so interested in the book?//\n\nYou decide to look at:\n\n[[The Beige Manila Folder]]\n[[A Different Beige Manila Folder]]\n[[A Weird Looking Manila Folder]]\n[[The Book]]",
+      "links": [
+        {
+          "text": "The Beige Manila Folder",
+          "destination": {
+            "name": "The Beige Manila Folder",
+            "pid": 23
+          }
+        },
+        {
+          "text": "A Different Beige Manila Folder",
+          "destination": {
+            "name": "A Different Beige Manila Folder",
+            "pid": 24
+          }
+        },
+        {
+          "text": "A Weird Looking Manila Folder",
+          "destination": {
+            "name": "A Weird Looking Manila Folder",
+            "pid": 25
+          }
+        },
+        {
+          "text": "The Book",
+          "destination": {
+            "name": "The Book",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "The Beige Manila Folder",
+      "text": "A letter from Nathaniel Hawthorne. It reads:\n\n//\"I should consider it unfair to quit Shakespeare's house without the frank <s>confession</s> acknowledgment that I was conscious of not the slightest emotion while viewing it, nor any quickening of the imagination. This has often happened to me in my visits to memorable places. Whatever pretty and apposite reflections I may have made upon the subject had either occurred to me before I ever saw Stratford, or have been elaborated since. It is pleasant, nevertheless, to think that I have seen the place; and I believe that I can form a more sensible and vivid idea of Shakspeare as a flesh-and-blood individual now that I have stood on the kitchen-hearth and in the birthchamber; but I am not quite certain that this power of realization is altogether desirable in reference to a great poet.\"//\n\n(link-replace:\"Continue...\")[(set:$twinz to $twinz + 1)(if: $twinz > 1)[You hear someone breathing behind you and look up to see a man and woman standing over you. They look as identical as any man and woman can, as if someone had crafted two versions of the same person, each a stereotypically gendered rendering of the other. Despite their dark skin, they both have blue eyes that look at you as if they know you well.\n\n[[Hello?|Reading Room - Talking to the Twins]]\n]\\\n(if:$twinz < 2)[You decide to look at\n\n[[A Different Beige Manila Folder]]\n[[A Weird Looking Manila Folder]]\n[[The Book]]]]",
+      "links": [
+        {
+          "text": "Hello?",
+          "destination": {
+            "name": "Reading Room - Talking to the Twins",
+            "pid": 20
+          }
+        },
+        {
+          "text": "A Different Beige Manila Folder",
+          "destination": {
+            "name": "A Different Beige Manila Folder",
+            "pid": 24
+          }
+        },
+        {
+          "text": "A Weird Looking Manila Folder",
+          "destination": {
+            "name": "A Weird Looking Manila Folder",
+            "pid": 25
+          }
+        },
+        {
+          "text": "The Book",
+          "destination": {
+            "name": "The Book",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "A Different Beige Manila Folder",
+      "text": "Notes on the Old Manse. A piece of paper describes the wallpaper: \n\n//\"...a delicate tracery of green vines and still brilliantly colored flowers. The paper in the hall dates from 1846, with its hunting scenes. On the third floor one of the bedrooms added in 1846 by Sam Ripley has the bright green flowered paper and the pink paint that decorated it.\"//\n\n(link-replace:\"Continue...\")[(set:$twinz to $twinz + 1)(if: $twinz > 1)[You hear a sniffle and look up to find a man and woman standing over you. They are as identical as any man and woman can be, as if someone had crafted two versions of the same person, each a traditionally gendered rendering of the other. Despite their dark skin, they have blue eyes. They are blue eyes that look at you as if they know you well.\n\n[[Hello?|Reading Room - Talking to the Twins]]\n]\\\n\\(if:$twinz < 2)[You decide to look at\n\n[[The Beige Manila Folder]]\n[[A Weird Looking Manila Folder]]\n[[The Book]]]]",
+      "links": [
+        {
+          "text": "Hello?",
+          "destination": {
+            "name": "Reading Room - Talking to the Twins",
+            "pid": 20
+          }
+        },
+        {
+          "text": "The Beige Manila Folder",
+          "destination": {
+            "name": "The Beige Manila Folder",
+            "pid": 23
+          }
+        },
+        {
+          "text": "A Weird Looking Manila Folder",
+          "destination": {
+            "name": "A Weird Looking Manila Folder",
+            "pid": 25
+          }
+        },
+        {
+          "text": "The Book",
+          "destination": {
+            "name": "The Book",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "A Weird Looking Manila Folder",
+      "text": "The folder contains parts of many stories. You turn to a page:\n\n//\"He had taken a dreary road, darkened by all the gloomiest trees of the forest, which barely stood aside to let the narrow path creep through, and closed immediately behind. It was all as lonely as could be; and there is this peculiarity in such a solitude, that the traveller knows not who may be concealed by the innumerable trunks and the thick boughs overhead; so that with lonely footsteps he may yet be passing through an unseen multitude.\"//\n\n(link-replace:\"Continue...\")[(set:$twinz to $twinz + 1)(if: $twinz > 1)[You hear a sniffle and look up to find a man and woman standing over you. They are as identical as any man and woman can be, as if someone had crafted two versions of the same person, each a traditionally gendered rendering of the other. Despite their dark skin, they have blue eyes. They are blue eyes that look at you as if they know you well.\n\n[[Hello?|Reading Room - Talking to the Twins]]\n]\\\n\\(if:$twinz < 2)[You decide to look at\n\n[[The Beige Manila Folder]]\n[[A Different Beige Manila Folder]]\n[[The Book]]]]",
+      "links": [
+        {
+          "text": "Hello?",
+          "destination": {
+            "name": "Reading Room - Talking to the Twins",
+            "pid": 20
+          }
+        },
+        {
+          "text": "The Beige Manila Folder",
+          "destination": {
+            "name": "The Beige Manila Folder",
+            "pid": 23
+          }
+        },
+        {
+          "text": "A Different Beige Manila Folder",
+          "destination": {
+            "name": "A Different Beige Manila Folder",
+            "pid": 24
+          }
+        },
+        {
+          "text": "The Book",
+          "destination": {
+            "name": "The Book",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "The Book",
+      "text": "The call slip says \"Mosses from an Old Manse\"\n\nOpen the book.(click-replace:\"Open the book.\")[//\"THE AUTHOR MAKES THE READER ACQUAINTED WITH HIS ABODE\n\n''BETWEEN'' two tall gate-posts of rough-hewn stone, (the gate itself having fallen from its hinges, at some unknown epoch,) we beheld the gray front of the old parsonage, terminating the vista of an avenue of black-ash trees. It was now a twelvemonth since the funeral procession of the venerable clergyman, its last inhabitant, had turned from that gate-way towards the village burying-ground. The wheel-track, leading to the door, as well as the whole breadth of the avenue, was almost overgrown with grass, affording dainty mouthfuls to two or three vagrant cows, and an old white horse, who had his own living to pick up along the roadside.\"//\n\n(if:$manse > 0)[You notice a [[piece of moss|Transition]] stuck in the front of the book.]\\\n(if:$manse < 1)[(link-replace:\"Continue...\")[(set:$twinz to $twinz + 1)(if: $twinz > 1)[You hear someone breathing behind you and look up to see a man and woman standing over you. They look as identical as any man and woman can, as if someone had crafted two versions of the same person, each a stereotypically gendered rendering of the other. Despite their dark skin, they both have blue eyes that look at you as if they know you well.\n\n[[Hello?|Reading Room - Talking to the Twins]]\n]\\\n\\(if:$twinz < 2)[You decide to look at\n\n[[The Beige Manila Folder]]\n[[A Different Beige Manila Folder]]\n[[A Weird Looking Manila Folder]]]]]]",
+      "links": [
+        {
+          "text": "piece of moss",
+          "destination": {
+            "name": "Transition",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Hello?",
+          "destination": {
+            "name": "Reading Room - Talking to the Twins",
+            "pid": 20
+          }
+        },
+        {
+          "text": "The Beige Manila Folder",
+          "destination": {
+            "name": "The Beige Manila Folder",
+            "pid": 23
+          }
+        },
+        {
+          "text": "A Different Beige Manila Folder",
+          "destination": {
+            "name": "A Different Beige Manila Folder",
+            "pid": 24
+          }
+        },
+        {
+          "text": "A Weird Looking Manila Folder",
+          "destination": {
+            "name": "A Weird Looking Manila Folder",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Transition",
+      "text": "//The moss feels strangely alive.// \n\n[[As you touch its viny patterns, you suddenly feel very warm.|Old Manse]]",
+      "links": [
+        {
+          "text": "As you touch its viny patterns, you suddenly feel very warm.",
+          "destination": {
+            "name": "Old Manse",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Old Manse",
+      "text": "//You look up and realize you are somewhere else.// \n\nBetween two tall gate-posts, of rough, hewn stone, you behold the gray front of the Old Manse, terminating the vista of an avenue of black ash trees.\n\n[[Continue...|Confusion]]",
+      "links": [
+        {
+          "text": "Continue...",
+          "destination": {
+            "name": "Confusion",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Confusion",
+      "text": "You spin around, looking for the room you were just in. Instead, all you see is the long path up to the abode before you. \n\n[[You take a deep breath and walk down the gravel path.|Chapter Three]]",
+      "links": [
+        {
+          "text": "You take a deep breath and walk down the gravel path.",
+          "destination": {
+            "name": "Chapter Three",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Display Room - C3",
+      "text": "''Chapter Three - Gina''\n\nIt's been about an hour since your dad went into the reading room, and now you're just sitting in the exhibition room twiddling your thumbs. //If only you had your phone.//\n\nYou're determined not to go into the reading room with your dad until you've proven you can (link-reveal:\"entertain yourself on your own. \")[\n\nYou've seen most of the stuff in here already, but there are a few things left to look at. This place is actually pretty cool, but you still can't figure out what he thinks is so groundbreakingly special about it. \n\n[[Look around.|Display Room - Looking Around]]\n[[Keep sitting here.|Display Room - Sitting]]]\n\n",
+      "links": [
+        {
+          "text": "Look around.",
+          "destination": {
+            "name": "Display Room - Looking Around",
+            "pid": 31
+          }
+        },
+        {
+          "text": "Keep sitting here.",
+          "destination": {
+            "name": "Display Room - Sitting",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Display Room - Looking Around",
+      "text": "The items in this room, the exhibition room, are various and varied. The current exhibition comprises a favorite item selected by each member of the staff. Some seem typically library-esque, some look more like they would belong in a museum, but they all most definitely seem to be much more than they seem.\n\nYou decide to look at the...\n\n[[Exhibition Room Announcement|Display Room - Looking at Sign]]\n[[Drawing of Man Playing Tennis|Display Room - Looking at Tennis Drawing]]\n[[Oldish Looking Colorful Manual|Display Room - Looking at Colorful Pamphlet]]\n[[Piece of Paper (on the floor)|Display Room - Looking at Paper]]\n\n[[Eh, never mind. You leave the exhibition room.|Told Not to Wander]]",
+      "links": [
+        {
+          "text": "Exhibition Room Announcement",
+          "destination": {
+            "name": "Display Room - Looking at Sign",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Drawing of Man Playing Tennis",
+          "destination": {
+            "name": "Display Room - Looking at Tennis Drawing",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Oldish Looking Colorful Manual",
+          "destination": {
+            "name": "Display Room - Looking at Colorful Pamphlet",
+            "pid": 38
+          }
+        },
+        {
+          "text": "Piece of Paper (on the floor)",
+          "destination": {
+            "name": "Display Room - Looking at Paper",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Eh, never mind. You leave the exhibition room.",
+          "destination": {
+            "name": "Told Not to Wander",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Display Room - Sitting",
+      "text": "Sitting there, with no one else around, you feel calm and relaxed. The exhibition room, though proper, feels much more welcoming than any museum you've ever visited. \n\n[[Wallow in your boredom.|Display Room - Lamenting]]\n[[Take a nap.|Display Room - Napping]]",
+      "links": [
+        {
+          "text": "Wallow in your boredom.",
+          "destination": {
+            "name": "Display Room - Lamenting",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Take a nap.",
+          "destination": {
+            "name": "Display Room - Napping",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Display Room - Lamenting",
+      "text": "You are bored as can be.\n\n[[Beep boo doop.]]\n\nBlah ba [[da ba da.]] \n\n[[Doop]] doop. ",
+      "links": [
+        {
+          "text": "Beep boo doop.",
+          "destination": {
+            "name": "Beep boo doop.",
+            "pid": 153
+          }
+        },
+        {
+          "text": "da ba da.",
+          "destination": {
+            "name": "da ba da.",
+            "pid": 154
+          }
+        },
+        {
+          "text": "Doop",
+          "destination": {
+            "name": "Doop",
+            "pid": 155
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Display Room - Napping",
+      "text": "[[You shut your eyes...|Napping in DR]]",
+      "links": [
+        {
+          "text": "You shut your eyes...",
+          "destination": {
+            "name": "Napping in DR",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "Display Room - Looking at Sign",
+      "text": "''COMING SOON: Altered States: Sex, Drugs, and Transcendence in the Ludlow-Santo Domingo Library''\n\nThe sign says:\n\n//The search for something beyond the limits of ordinary experience\u2014for transcendence\u2014has preoccupied humanity for millennia. Religion, the occult, music, drugs: various paths have been taken in the hope of achieving it. In Altered States: Sex, Drugs, and Transcendence in the Ludlow-Santo Domingo Library, one collector\u2019s quest to document the history of this search through rare books, manuscripts, photographs, posters, comics, and ephemera is celebrated.\n\n...\n\nThe exhibition, including some 120 objects drawn from the 50,000+ LSD Library items at Harvard, focuses on six of the many topics represented in the collection: opium, psychedelics, cocaine, marijuana, sex, and social protest. The items chosen represent different aspects of each topic: cultivation or synthesis, medical uses and legal constraints, and artistic and literary works, manifested in the rare and precious, the common and the ephemeral.//\n\nYou decide to look at the...\n\n[[Piece of Paper|Display Room - Looking at Paper]]\n[[Tennis Drawing|Display Room - Looking at Tennis Drawing]]\n[[Colorful Manual|Display Room - Looking at Colorful Pamphlet]]\n\n-\n\n[[Leave Display Room|Told Not to Wander]]",
+      "links": [
+        {
+          "text": "Piece of Paper",
+          "destination": {
+            "name": "Display Room - Looking at Paper",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Tennis Drawing",
+          "destination": {
+            "name": "Display Room - Looking at Tennis Drawing",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Colorful Manual",
+          "destination": {
+            "name": "Display Room - Looking at Colorful Pamphlet",
+            "pid": 38
+          }
+        },
+        {
+          "text": "Leave Display Room",
+          "destination": {
+            "name": "Told Not to Wander",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "Display Room - Looking at Paper",
+      "text": "You pick up the small slip of pink paper on the ground, right behind the display case in the back of the room. The message is scrawled in pencil:\n\n//don't forget to order 9 more oz. of orthodicranum viride//\n\nYou decide to look at the...\n\n[[Exhibition Room Announcement|Display Room - Looking at Sign]]\n[[Tennis Drawing|Display Room - Looking at Tennis Drawing]]\n[[Colorful Manual|Display Room - Looking at Colorful Pamphlet]]\n\n-\n\n[[Leave Display Room|Told Not to Wander]]",
+      "links": [
+        {
+          "text": "Exhibition Room Announcement",
+          "destination": {
+            "name": "Display Room - Looking at Sign",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Tennis Drawing",
+          "destination": {
+            "name": "Display Room - Looking at Tennis Drawing",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Colorful Manual",
+          "destination": {
+            "name": "Display Room - Looking at Colorful Pamphlet",
+            "pid": 38
+          }
+        },
+        {
+          "text": "Leave Display Room",
+          "destination": {
+            "name": "Told Not to Wander",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Display Room - Looking at Tennis Drawing",
+      "text": "''Theodore Roosevelt (1858-1919) \nLetter to Ethel Roosevelt, \nThe White House, 22 June 1904''\n\nA letter from Theodore Roosevelt to Ethel, his daughter. Among other things, there is a cute drawing of two men playing tennis. Beneath it, it says:\n\n//Father plays tennis with Mr. Cooley. \n\nFather's shape & spectacles are reproduced with photographic fidelity; also notice Mr. Cooley's smile.//\n\nYou decide to look at the...\n\n[[Exhibition Room Announcement|Display Room - Looking at Sign]]\n[[Piece of Paper|Display Room - Looking at Paper]]\n[[Colorful Manual|Display Room - Looking at Colorful Pamphlet]]\n\n-\n\n[[Leave Display Room|Told Not to Wander]]",
+      "links": [
+        {
+          "text": "Exhibition Room Announcement",
+          "destination": {
+            "name": "Display Room - Looking at Sign",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Piece of Paper",
+          "destination": {
+            "name": "Display Room - Looking at Paper",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Colorful Manual",
+          "destination": {
+            "name": "Display Room - Looking at Colorful Pamphlet",
+            "pid": 38
+          }
+        },
+        {
+          "text": "Leave Display Room",
+          "destination": {
+            "name": "Told Not to Wander",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Display Room - Looking at Colorful Pamphlet",
+      "text": "''A Treatise on Fortune Telling \nThailand, before 1844''\n\nThe manual is accordion folded, with several images visible on the front-facing panels. A few of the panels have beautifully written Thai text, but you can't understand any of it, which is a shame, since it looks pretty important. \n\nThe drawings are of animals, men, women, and what look like gods, doing strange things, some violent and some holy. Your favorite is a drawing of a sneaky goat.\n\n[[You hear footsteps.|Display Room - Twins]]",
+      "links": [
+        {
+          "text": "You hear footsteps.",
+          "destination": {
+            "name": "Display Room - Twins",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Told Not to Wander",
+      "text": "You walk out of the room, past the coat room and lockers, into the lobby. With your dad in the reading room, the best place to explore would be up or down the spiral staircase. With no one else around, the guard will definitely notice, even though he is writing something in a small black journal. \n\nYou eye the staircase, hesitate for a moment, lose your edge, [[and head back into the exhibition room.|Exhibition Room]]",
+      "links": [
+        {
+          "text": "and head back into the exhibition room.",
+          "destination": {
+            "name": "Exhibition Room",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Exhibition Room",
+      "text": "After surveying the displays again, you decide to look at the...\n\n[[Sign|Display Room - Looking at Sign]]\n[[Piece of Paper|Display Room - Looking at Paper]]\n[[Tennis Drawing|Display Room - Looking at Tennis Drawing]]\n[[Colorful Manual|Display Room - Looking at Colorful Pamphlet]]\n",
+      "links": [
+        {
+          "text": "Sign",
+          "destination": {
+            "name": "Display Room - Looking at Sign",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Piece of Paper",
+          "destination": {
+            "name": "Display Room - Looking at Paper",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Tennis Drawing",
+          "destination": {
+            "name": "Display Room - Looking at Tennis Drawing",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Colorful Manual",
+          "destination": {
+            "name": "Display Room - Looking at Colorful Pamphlet",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Display Room - Twins",
+      "text": "A set of twins stands in front of you. They look at you for a long time, waiting for you to speak.\n\nYOU: ...hello?\n\nJEFF and CARLA: Hi.\n\nJEFF: Whatcha doin?\n\nYOU: Just hangin' out? My dad is doing some research in the Reading Room.\n\nCARLA: Oh, is he?\n\nJEFF: You look just like him.\n\nCARLA: Yeah, you two are almost...\n\nJEFF: Twins! \n\nCARLA: Except the 30 year age gap and all that.\n\nYOU: You met my dad?\n\nJEFF: Yeah, he was just mossin' around the Reading Room.\n\nYOU: What?\n\nCARLA: You'd get it if you were there.\n\n[[So, who are you?|Display Room - Talking to Twin 1]]\n[[What's cool around the library?|Display Room - Talking to Twin 2]]",
+      "links": [
+        {
+          "text": "So, who are you?",
+          "destination": {
+            "name": "Display Room - Talking to Twin 1",
+            "pid": 42
+          }
+        },
+        {
+          "text": "What's cool around the library?",
+          "destination": {
+            "name": "Display Room - Talking to Twin 2",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Display Room - Talking to Twin 1",
+      "text": "JEFF: //(pointing at Carla)// Carla.\n\nCARLA: //(pointing at Jeff)// Jeff.\n\nYOU: Do you work here or something?\n\nCARLA: Sure.\n\nYOU: What do you do?\n\nJEFF: Cause trouble.\n\nCARLA: //You// cause trouble. I clean up your mess.\n\nJEFF: Yeah, I guess that's true except for during all the times that it's not. //(turning to you)// What do you do? \n\n//He looks bored with the conversation. Carla starts fidgeting with her ring.//\n\nYOU: Well, I'm in high school. So I guess I do that. I do, like theater and musicals and stuff sometimes. I'm co-president of the Sci Fi Club, which is kinda fun.\n\nCARLA: Nerd.\n\n//You can't tell if she's joking or not. Jeff is smiling again.//\n\n(link-reveal:\"YOU: You two are not really what I expect librarians to be like.\")[ \n\nJEFF: You're not what I expected a nerd to be like. You're missing the broken glasses and all that other stuff that's as equally made up as the whole \"polite librarian\" assumption.\n\nCARLA: You know happens when you assume, right?\n\nJEFF: We make fun of you.\n\nCARLA: Besides, we consider ourselves more curators than anything else.\n\n[[What do you curate?|Display Room - Twin 1 cont.A]]\n[[I like you two.|Display Room - Twin 1 cont.B]]]",
+      "links": [
+        {
+          "text": "What do you curate?",
+          "destination": {
+            "name": "Display Room - Twin 1 cont.A",
+            "pid": 45
+          }
+        },
+        {
+          "text": "I like you two.",
+          "destination": {
+            "name": "Display Room - Twin 1 cont.B",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Display Room - Talking to Twin 2",
+      "text": "CARLA: It would take hours to fully answer that question.\n\nJEFF: There's a lot of stuff about sex, drugs, and rock and roll, if you're into any of that.\n\nYOU: Wait, really?\n\nCARLA: Yeah but you're probably not into any of that, are you?\n\nYOU: Is that a trick question?\n\nJEFF: Yes.\n\n//Jeff and Carla look at each other and switch places.//\n\nYOU: Where is all that? What other cool stuff is here? Any secret things I should know about?\n\nCARLA: Secret things? Like adventures?\n\n//They look at each other and switch places again, Carla's starts twitching her fingers excitedly.//\n\nYOU: Well, I just mean, what are some of the highlights?\n\nJEFF: Do you want the boring answer or the fun answer?\n\n[[Fun Answer.|Adventure Advice]]\n[[Boring Answer.|Display Room - Twin 2 cont.B]]",
+      "links": [
+        {
+          "text": "Fun Answer.",
+          "destination": {
+            "name": "Adventure Advice",
+            "pid": 47
+          }
+        },
+        {
+          "text": "Boring Answer.",
+          "destination": {
+            "name": "Display Room - Twin 2 cont.B",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Display Room - Twin 2 cont.B",
+      "text": "YOU: The boring answer, I guess?\n\nCARLA: Come on! You ask us about secrets and then you tell us to give you a boring answer?\n\nJEFF: You're full of contradictions.\n\nYOU: Yeah I'm a regular dilemma.\n\nCARLA: That's not what that word means.\n\nJEFF: Yeah, a dilemma is where you have to make a choice.\n\nCARLA: A difficult choice.\n\nJEFF: Usually between two particularly undesirable outcomes.\n\nYOU: Okay, well //are// there any good secrets here? You never answered my question.\n\nCARLA: It's better if we show you.\n\nJEFF: Wanna go on an adventure?\n\n[[Yes.|Adventure Advice]]\n[[No.|Twin Goodbye Check]]",
+      "links": [
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "Adventure Advice",
+            "pid": 47
+          }
+        },
+        {
+          "text": "No.",
+          "destination": {
+            "name": "Twin Goodbye Check",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Display Room - Twin 1 cont.A",
+      "text": "CARLA: We curate... adventure.\n\nYOU: With books?\n\nJEFF: Yes.\n\nYOU: What do you mean?\n\nJEFF: What do //you// mean?\n\nYOU: You look for adventurous books, or what?\n\nCARLA: It'd be easier if we show you.\n\nJEFF: Yeah. Wanna go on an adventure?\n\n[[Yes.|Adventure Advice]]\n[[No.|Twin Goodbye Check]]",
+      "links": [
+        {
+          "text": "Yes.",
+          "destination": {
+            "name": "Adventure Advice",
+            "pid": 47
+          }
+        },
+        {
+          "text": "No.",
+          "destination": {
+            "name": "Twin Goodbye Check",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Display Room - Twin 1 cont.B",
+      "text": "CARLA: We like you too.\n\nJEFF: Speak for yourself.\n\nYOU: You don't like me?\n\nJEFF: No, I do, I just don't like it when-\n\nCARLA: Carla speaks for me.\n\nJEFF: See?\n\nYOU: Ha.\n\n//Jeff and Carla start mouthing words to each other and glancing over at you. You switch which way your legs are crossed and rub the sweat off of the skin on your upper calf, now reddened from pressing against your knee. The [[little robot on your ankle]] has almost completely faded.//\n\nCARLA: Yeah so. Hey. Wanna go on an adventure?\n\nYOU: An adventure? Like a tour?\n\nJEFF: Did we say tour? An  a d v e n t u r e. \n\nYOU: What kind of adventure? In the library.\n\nCARLA: Just... do you wanna go or not?\n\n[[Sure!|Adventure Advice]]\n[[No, thanks.|Twin Goodbye Check]]",
+      "links": [
+        {
+          "text": "little robot on your ankle",
+          "destination": {
+            "name": "little robot on your ankle",
+            "pid": 58
+          }
+        },
+        {
+          "text": "Sure!",
+          "destination": {
+            "name": "Adventure Advice",
+            "pid": 47
+          }
+        },
+        {
+          "text": "No, thanks.",
+          "destination": {
+            "name": "Twin Goodbye Check",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "Adventure Advice",
+      "text": "JEFF: We were hoping you'd say that!\n\nCARLA: Wait right here.\n\n//They dart off though a back door you hadn't noticed. The room is still.//\n\n***\n\n(link-reveal:\"//A few minutes later//\")[ //they still haven't returned. Maybe they were just doing some sort of joke. What a strange duo.// \n\n[[//You don't think they're coming back.//|Chapter Four]]]\n",
+      "links": [
+        {
+          "text": "//You don't think they're coming back.//",
+          "destination": {
+            "name": "Chapter Four",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Twin Goodbye Check",
+      "text": "JEFF: Are you sure?\n\nCARLA: Yeah, what fun is there in saying no to adventure?\n\n[[Okay, I'll say yes to adventure.|Adventure Advice]]\n[[I'd rather just look at a few cool things and call it a day.|Twin Goodbye]]",
+      "links": [
+        {
+          "text": "Okay, I'll say yes to adventure.",
+          "destination": {
+            "name": "Adventure Advice",
+            "pid": 47
+          }
+        },
+        {
+          "text": "I'd rather just look at a few cool things and call it a day.",
+          "destination": {
+            "name": "Twin Goodbye",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Chapter Four",
+      "text": "[[''CHAPTER 4''|Outside Manse]]\n\n(if:(save-game:\"Slot A\"))[Your progress has been saved.]\n(set:$chapter to 4)\n(set:$ygb to 0)\n(set:$fc to 0)\n(set:$ob to 0)\n(set:$bk to 0)",
+      "links": [
+        {
+          "text": "''CHAPTER 4''",
+          "destination": {
+            "name": "Outside Manse",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Quick Tips",
+      "text": "You can navigate this interactive story by clicking blue links...\n\nThey start with (link-reveal:\"CHAPTER HEADINGS\")[\n\nWhich must be clicked to advance. \n\nThe other blue links do other stuff.\n\nSome will reveal more information, (link-reveal:\"like this.\")[ Look at all this new information.]\n\nSome will take you to other passages, [[like this.]]\n\nSome will do other weird things, (link-reveal:\"like this.\")[ Look at all \nthis{(live: 0.1s)[\n    (either: \"weird\", \"//awesome//\", \"''cool''\", \"FUN\")\n]} stuff.]\n\nSome things look weird but are (color:\"red\")[not clickable.]\n\n(link:\"Continue...\")[There is no back button. You might find yourself making choices you regret, but, since the game is rather short, you can try playing multiple times. Though this story has only one ending, curious players may enjoy replaying to uncover different paths to get there.\n\nThat's about it! Have fun :)\n\n[[Start Game.|Bookmoss]]]]",
+      "links": [
+        {
+          "text": "<link>",
+          "destination": {
+            "name": "like this.",
+            "pid": 51
+          }
+        },
+        {
+          "text": "like this.",
+          "destination": {
+            "name": "like this.",
+            "pid": 51
+          }
+        },
+        {
+          "text": "Start Game.",
+          "destination": {
+            "name": "Bookmoss",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "like this.",
+      "text": "Look at this new passage.\n\n[[Back.|Quick Tips]] ",
+      "links": [
+        {
+          "text": "Back.",
+          "destination": {
+            "name": "Quick Tips",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Acknowledgements and References",
+      "text": "''ACKNOWLEDGEMENTS and REFERENCES''\n\n''References:'' \n\n<a href=\"https://iiif.lib.harvard.edu/manifests/view/drs:23061751$1i\" target=\"_blank\">//Theodore Roosevelt additional correspondence and compositions,//</a> 1873-1945.\nRoosevelt, Theodore, 1858-1919.\nCall number: MS Am 1834\n\n//Sterling E. Lanier papers,// Box 1 and 2, circa 1962-1992.\nLanier, Sterling E.\nCall number: 2008M-108\n\n//Nathaniel Hawthorne papers,//\t1850-1864.\nHawthorne, Nathaniel.\nCall number: MS Am 121.25\n\n//Ripley and Thayer families papers,// 1759-1964.\nRipley family.\nCall number: MS Am 3068\n\n<a href=\"https://iiif.lib.harvard.edu/manifests/view/drs:13908083$1i\" target=\"_blank\">//Mosses from an old manse... in two parts.//</a> 1846.\nHawthorne, Nathaniel.\nCall number: *AC85 M4977 Zz846h\n\n//The triall of witch-craft : shewing the true and right methode of the discovery, with a confutation of erroneous wayes,// 1616.\nCotta, John.\nCall number: STC 5836\n\n//Songs of Innocence, 1789//\t\nBlake, William.\nCall Number: Lowell 1217.21\n\n<a href=\"http://nrs.harvard.edu/urn-3:FHCL.HOUGH:6666161\">//A Treatise on Fortune Telling//</a>\nThailand, before 1844\nCall Number: MS Typ 439\n\n//About The Old Manse//\nThe Trustees of Reservations \n<a href=\"http://thetrustees.org/places-to-visit/greater-boston/old-manse.html?version=meter%20at%20null&module=meter-Links&pgtype=article&contentId=&mediaId=&referrer=&priority=true&action=click&contentCollection=meter-links-click?referrer=https://www.google.com/\" target=\"_blank\">Webpage.</a>\n\n<a href=\"http://hcl.harvard.edu/libraries/houghton/collections/modern/santo_domingo.cfm\">The LSD Library at Houghton.</a>\n\n-\n\n''A note on the writing:'' \n\nAs in-text citations would prove to be too cumbersome to allow for enjoyable gameplay, let me comment on my sources here. Especially in describing physical locations, and in the spirit of the story, I have spliced in bits of Hawthorne's (and occasionally Emerson's) writing in with my own. Specifically, I have used bits of Young Goodman Brown, The Birthmark, and the descriptions of The Old Manse from Mosses from an Old Manse. I've also used some writings in the Ripley and Thayer family papers, which describe the parsonage and its history. For many of the sci-fi descriptions and some writing quirks, I looked to Sterling Lanier's papers in Houghton, which include letters, short stories (written by him and others) and other personal papers. There are a few other items I referenced, but they are all clearly described in the story (library items on display, etc.). \n\nWith so many sources and sneaky quotations, one might question the originality of the story and writing. I can confidently say that the story is very much my own, and the amalgam of sources is the very spirit of the story. With all of that said, if a description of nature seems particularly eloquent, it's probably Hawthorne! \n\n-\n\n''Acknowledgements''\n\n''This project was supported with a fellowship from Harvard University\u2019s Houghton Library on the occasion of their 75th Anniversary.''\n\n{(live: 2s)[\n    (either: \"A huge\", \"A //special//\", \"An ''eternal''\", \"An IMPORTANT\")\n]} thank you to my mentors, guides, and the amazing creators of the fellowship: \nHeather Cole and Emilie Hardman. \n\n{(live: 2s)[\n    (either: \"A huge\", \"A //special//\", \"An ''eternal''\", \"An IMPORTANT\")\n]} thank you to my cohort: \nAllison Law, Mario Menendez, Jensen Davis, Leon Pan, and Tawanda Mulalu. \n\n{(live: 2s)[\n    (either: \"A huge\", \"A //special//\", \"An ''eternal''\", \"An IMPORTANT\")\n]} thank you to all of the Houghton Staff who answered all my questions and showed me the magic of the library. \n\n{(live: 2s)[\n    (either: \"A huge\", \"A //special//\", \"An ''eternal''\", \"An IMPORTANT\")\n]} thank you to my beta testers:\nAllison Law, Mario Menendez, Jensen Davis, Leon Pan, and Tawanda Mulalu, Emilie Hardman, Heather Cole, Paul Ingemi, Ryan Wheeler, and Nadia Haile.\n\n[[Back.|Introduction]]",
+      "links": [
+        {
+          "text": "Back.",
+          "destination": {
+            "name": "Introduction",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Publishing Information",
+      "text": "''This project was supported with a fellowship from Harvard University\u2019s Houghton Library on the occasion of their 75th Anniversary.''\n\nThe IFID for this story is 4C36F7B7-FB4C-48B2-A076-181C10E3FDCF.\n\nThis story was created with Twine by Devon Guinn in 2017.",
+      "links": []
+    },
+    {
+      "pid": 54,
+      "name": "A Note to my Testers",
+      "text": "(text-color:\"red\")[Hello, my lovely testers/readers. Thanks a million (in advance) for your time and thoughts. A few notes and questions:\n\nAnything in RED (like all this text) is a note for YOU. It will be deleted before publication.\n\nEverything in] black (text-color:\"red\")[is final or draft text I've written. Spelling errors are bugs. Grammar errors (that aren't in dialogue) are bugs. I hope to fix them all before publication, but if I'm consistently making a certain mistake, please let me know. This program has no spell check.\n\nThis is only part of the game, I'll be finishing the other chapters later.\n\n\nHere are my questions:\n\nDoes the story make sense as you are reading it?\n\nIs anything broken or super hard to use (dead links, etc.)?\n\nWhat would make it more enjoyable?\n\nDo you find yourself skipping to choices rather than reading? (A habit I don't want my audience doing.)\n\nDo the choices add, and in what ways?\n\nOther thoughts...\n\nThanks a bunch! \n\n-Devon]\n\n[[Start|Introduction]]\n",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Introduction",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Chapter Two",
+      "text": "[[''CHAPTER 2''|In Lobby, Part One]]\n\n(if:(save-game:\"Slot A\"))[Your progress has been saved.]\n(set:$twinz to 0)(set:$manse to 0)",
+      "links": [
+        {
+          "text": "''CHAPTER 2''",
+          "destination": {
+            "name": "In Lobby, Part One",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "Lobby - Getting Ready",
+      "text": "//They both let out a \"humph\" and exit stiffly out the front door.//\n\nYOU: //(to the guard)// Sounds like you all are having some technical issues. I've been dealing with the same thing at my job. \n\nGUARD: You know how things go. No matter how much technology you use to fix a problem, two more pop up in its place.\n\nGINA: Okay, Dad. What's the plan? \n\nYOU: Well, once we're all set, I'm gonna go look at my letters, and you can look around the exhibition room or come into the reading room with me. Or you can walk around Harvard, if you want.\n\nGINA: Too hot to walk around.\n\nYOU: Looks like you're stuck in here then.\n\nGINA: I'll check out that other room. Let you do your thing.\n\nYOU: //(to the guard)// Am I good to go in?\n\nGUARD: Yes, but I'll have to ask you to leave your bag in the lockers. Do you need me to lend you a quarter? You need one for the locker. \n\nYOU: [[Ah, yes. Thank you.|Reading Room - Getting Situated]]",
+      "links": [
+        {
+          "text": "Ah, yes. Thank you.",
+          "destination": {
+            "name": "Reading Room - Getting Situated",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Chapter Three",
+      "text": "[[''CHAPTER 3''|Display Room - C3 ]]\n\n(if:(save-game:\"Slot A\"))[Your progress has been saved.]",
+      "links": [
+        {
+          "text": "''CHAPTER 3''",
+          "destination": {
+            "name": "Display Room - C3",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "little robot on your ankle",
+      "text": "Last Saturday you went to a pop-up Sci Fi convention. There was a little Dancitron stand and so you and your friends got matching Dancitron tattoos. Too bad they only last a few days. \n\n//Beep boop bop. Nothing a little dancing can't solve, it's Dancitron!//\n\n[[Boop beep.|Display Room - Twin 1 cont.B]]",
+      "links": [
+        {
+          "text": "Boop beep.",
+          "destination": {
+            "name": "Display Room - Twin 1 cont.B",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Napping in DR",
+      "text": "*Dark Room* \n\nYou walk, hesitantly, through the darkness of a giant room. The seeping ambient light reveals rows upon rows upon rows of shelves, each creating a dark tunnel leading off... somewhere. \n\nAfter walking down the main path for a while, a soft shuffle of papers catches your attention. Someone is turning the pages of a book, slowly and deliberately. A muttering might be coming from that same someone, but you can't be sure.(click-append:\"you can't be sure.\")[\n\nFollowing the noises, you take a left down through the stacks. Of the hundreds of books on the shelves, you can't make out any of their titles in the dim light. The smell reminds you of a book you used to read. Or maybe it was one that Grandpa read to you.\n\nThe light gets brighter and brighter, but it's still hard to see. As you round the corner of the next row of shelves, you step on a sheet of paper. You hold it up try to make out the small message on the center. It says:\n\n//The lunatic file//\n\nIt slips out of your hand and makes a grinding noise as it slides across the floor. The page turning stops. \n\n[[You are filled with an inexplicable sense of dread.|Waking Up in DR - 1]]]",
+      "links": [
+        {
+          "text": "You are filled with an inexplicable sense of dread.",
+          "destination": {
+            "name": "Waking Up in DR - 1",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Waking Up in DR - 1",
+      "text": "//You jerk forward against the seatbelt as Dad slams the breaks.//\n\nDAD: Sorry, honey. Didn't mean to wake you up. He cut me off.\n\n//The AC is blasting. It's too cold.//\n\nDAD: We're almost there, anyway.\n\nYOU: Wait, dad, didn't we... Where are we? \n\nDAD: On our way to the Houghton? You fell asleep. What's wrong, bad dream? (link-reveal:\"Hey, whatcha reading?\")[\n\nYOU: What?\n\n//You look down and realize you are holding a manila folder. The light is too bright to make out the words, so you blink several times before you see the red handwriting:\n\n(color:red)[''the lunatic file'']//\n\n[[Continue...|Waking Up in DR - 2]]]",
+      "links": [
+        {
+          "text": "Continue...",
+          "destination": {
+            "name": "Waking Up in DR - 2",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "Waking Up in DR - 2",
+      "text": "You jolt awake yet again. This time, you are [[back in the exhibition room.|Display Room - Twins]]",
+      "links": [
+        {
+          "text": "back in the exhibition room.",
+          "destination": {
+            "name": "Display Room - Twins",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "Twin Goodbye",
+      "text": "CARLA: Suit yourself.\n\nJEFF: //(to Carla)// I thought she'd be more fun.\n\nCARLA: //(to Jeff)// Me too. Especially since she is Jon's kid. \n\nJEFF and CARLA: //(in unison)// Well, let us know if you change your mind!\n\n//They switch places, turn around, and walk out the back door of the exhibition room, whispering to each other on the way out.//\n\n[[//You are left alone with your thoughts.//|Chapter Four]]",
+      "links": [
+        {
+          "text": "//You are left alone with your thoughts.//",
+          "destination": {
+            "name": "Chapter Four",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Outside Manse",
+      "text": "''Chapter Four - Jon''\n\nIt's all so vivid: the sun beating down, a distant mooing in the tall grass, the smell of the trees. \n\nYou stare at the Old Manse in disbelief. Could you really be here? How did you get here? Are you fast asleep on the table in the reading room? No. This feels real.\n\n(link-reveal:\"You sit down in an effort to calm down.\")[\n\nThe panic subsiding, you start taking everything in. Two vagrant cows and a white horse wander nearby, stopping to take dainty mouthfuls of the overgrown grass along the roadside. \n\nWhen you visited the Old Manse as a child it looked much different. Signs described the [[history of the place,|Manse History]] and tiny bits of litter, inescapable even in the most sacred locations, dotted the otherwise manicured grounds. Then, a well-preserved memory of another time, the Manse now feels more real. The difference between then and now is the difference between a moose mounted on a mantle and one in the wild, alive.\n\nStil, when seen through the shadows, the edifice has not quite the aspect of belonging to the material world. \n\n[[You stay sitting and think.|Thinking and Thinking]]\n[[You decide to look around.|Explore Mode]]]",
+      "links": [
+        {
+          "text": "history of the place,",
+          "destination": {
+            "name": "Manse History",
+            "pid": 139
+          }
+        },
+        {
+          "text": "You stay sitting and think.",
+          "destination": {
+            "name": "Thinking and Thinking",
+            "pid": 100
+          }
+        },
+        {
+          "text": "You decide to look around.",
+          "destination": {
+            "name": "Explore Mode",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "Chapter Five",
+      "text": "[[''CHAPTER 5''|Leaving DR]]\n\n(if:(save-game:\"Slot A\"))[Your progress has been saved.]",
+      "links": [
+        {
+          "text": "''CHAPTER 5''",
+          "destination": {
+            "name": "Leaving DR",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "Leaving DR",
+      "text": "''Chapter 5 - Gina''\n\nIt's been quite a while now, and the twins still aren't back. For two people who claim to have adventure up their sleeve, they aren't doing a good job of proving it. You've seen most of what there is to see here in the exhibition room, so it's probably time to (link-reveal:\"head somewhere else.\")[\n\nDad's probably immersed in his materials, whatever they are, but you figure now's a good time to [[check on him.|Lobby]] Maybe there will be some more cool stuff in the reading room, and you've got a few hours left to kill. ]",
+      "links": [
+        {
+          "text": "check on him.",
+          "destination": {
+            "name": "Lobby",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Lobby",
+      "text": "//You walk out of the exhibition room, past the little nook for coats, past the lockers, and into the round lobby. The guard is still there, looking thoughtfully at a black notebook.//\n\nYOU: Hi.\n\nEMEKA: Hello! How can I help you?\n\nYOU: Um, my dad is doing research in there, and I was waiting in the exhibition room but I want to check on him.\n\nEMEKA: Okay, no problem. Do you have an access card?\n\nYOU: Oh! Uh, yeah, is this it?\n\nEMEKA: Yes! Perfect. //(while writing on a spreadsheet)// What did you think of the exhibition?\n\nYOU: It was pretty cool! A lot of stuff in there. \n\nEMEKA: Did you see the William Blake poem?\n\nYOU: Oh, I think I saw it in the case, but I didn't actually get a chance to look at it. Little Lamb, or something.\n\nEMEKA: Yes, exactly! That one's my favorite. So, do you know how to get into the reading room?\n\nYOU: Um. Maybe?\n\nEMEKA: Just press that button, and wait for a buzz. Then, check in at the desk to the left.\n\nYOU: Okay! Thanks a bunch.\n\nEMEKA: No problem. Okay, see you later.\n\n[[Go into Reading Room.|Going into RR]]",
+      "links": [
+        {
+          "text": "Go into Reading Room.",
+          "destination": {
+            "name": "Going into RR",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "Going into RR",
+      "text": "You press the little button next to the door.(click-replace:\"You press the little button next to the door.\")[You press the little button next to the door and within a few seconds someone inside buzzes you in. The room is full of long tables, each with a few people poring over some special looking book or folder. The level of focus of everyone in the room reminds you of that practice SAT test you took, with everyone hunched over, deep in thought, and silent.\n\nYou head straight over to the help desk, at which there are two women working on computers. You walk up to...\n\n[[The nearer one.|RR - Emilie]]\n[[The farther one.|RR - Heather]]]",
+      "links": [
+        {
+          "text": "The nearer one.",
+          "destination": {
+            "name": "RR - Emilie",
+            "pid": 68
+          }
+        },
+        {
+          "text": "The farther one.",
+          "destination": {
+            "name": "RR - Heather",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "RR - Emilie",
+      "text": "EMILIE: Hello! \n\nYOU: Hi, my name's Gina. \n\nEMILIE: I'm Emilie. Is this your first time here?\n\nYOU: Yeah. Here is my card... I'm just here looking for my dad. He is doing research in here.\n\nEMILIE: Okay, well, feel free to go over to him.\n\nYOU: (link-reveal:\"Thanks!\")[\n\n//You put your ID card back in your pocket and look around for your dad, but he isn't here. Taking a few extra seconds, you look again at each person at the tables. He's definitely not here.//\n\nYOU: Um, Emilie?\n\nEMILIE: What's up?\n\nYOU: I don't see him in here. Do you know where he might have gone? His name is Jonathan Kim.\n\nEMILIE: Let me check. //(typing on her computer)// This is odd. His stuff is right there, but he's obviously not at the table and my system doesn't say where he is.\n\nYOU: Oh.\n\nEMILIE: //(turning to her coworker)// Hey, Heather, do you know where the reader at C3 went? \n\n//She points at her screen, and Heather looks back and forth between the screen and the room.//\n\nHEATHER: I am not sure. I saw him earlier, but he's not marked in the system as being out of the room.\n\n[[Uhh.|RR - Em and Heather]]]",
+      "links": [
+        {
+          "text": "Uhh.",
+          "destination": {
+            "name": "RR - Em and Heather",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "RR - Heather",
+      "text": "HEATHER: Hi.\n\nYOU: Hi, my name is Gina. \n\nHEATHER: My name is Heather. Is this your first time in the reading room?\n\nYOU: Yeah. Here is my card... I'm just here looking for my dad. He is doing research in here.\n\nHEATHER: Okay, no problem.\n\nYOU: (link-reveal:\"Thanks!\")[\n\n//You put your ID card back in your pocket and look around for your dad, but he isn't here. Taking a few extra seconds, you look again at each person at the tables. He's definitely not here.//\n\nYOU: Um, Heather?\n\nHEATHER: Yes?\n\nYOU: I don't see him in here. Do you know where he might have gone? His name is Jonathan Kim.\n\nHEATHER: I can check for you right here. //(clicking a few things on her computer)// His stuff is right there, but I don't see him at the table and my system doesn't say where he is. Let me check with Emilie and see what's up.\n\nYOU: Okay.\n\nHEATHER: //(turning to her coworker)// Hey, Emilie, any idea where the reader at C3 went?\n\n//She points at her screen, and Emilie looks back and forth between the screen and the room.//\n\nEMILIE: Hmmm. I'm not sure. I saw him earlier, but he's not marked in the system as being out of the room.\n\n[[Um...|RR - Em and Heather]]]",
+      "links": [
+        {
+          "text": "Um...",
+          "destination": {
+            "name": "RR - Em and Heather",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "RR - Em and Heather",
+      "text": "YOU: Is he in the bathroom?\n\nEMILIE: Well, we track where everyone is, and we have to buzz them in and out, so the system would know if he left the room. \n\nHEATHER: Carla was just working, I can run down and ask her if she knows anything.\n\nEMILIE: That would be great. \n\nHEATHER: Cool. //(walking to the back room)// Be right back. \n\n//Noting Heather and Emilie's synchronicity, you wonder if everyone here works in pairs.//\n\nYOU: Hey, is that Carla the one, like, Carla and Jeff?\n\nEMILIE: Yeah! Have you met them?\n\nYOU: Yeah. They came up to me in the reading room. Said something about adventure. \n\nEMILIE: Really? Are you a big fan of adventures? \n\n[[Yeah, I love Sci Fi stuff. |RR - Talking Scifi]]\n[[Well, I'm in high school so I don't go on that many adventures.|RR - Talking HS]]\n",
+      "links": [
+        {
+          "text": "Yeah, I love Sci Fi stuff. ",
+          "destination": {
+            "name": "RR - Talking Scifi",
+            "pid": 71
+          }
+        },
+        {
+          "text": "Well, I'm in high school so I don't go on that many adventures.",
+          "destination": {
+            "name": "RR - Talking HS",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "RR - Talking Scifi",
+      "text": "EMILIE: What kind of Sci Fi?\n\nYOU: I guess I like all of it. I'm really just now starting to get into it. Big fan of Dancitron.\n\nEMILIE: Beep boop.\n\nYOU: Beep!\n\nEMILIE: Well, you know, we've got a ton of cool stuff here. Have you heard of //I Robot//?\n\nYOU: Yeah! And I saw a first edition in the exhibition in the other room.\n\n//Heather walks up again as you answer.//\n\nHEATHER: So, no news on your dad, but Carla and Jeff asked me to bring you down to meet them in their office downstairs.\n\nYOU: Really?\n\nHEATHER: Yep. If you want we can go this way, and that way we can take the elevator. I'll come back down and let you know when your dad turns back up.\n\nYOU: Okay... //(to Emilie)// I guess I'll be back in a bit.\n\nEMILIE: See ya later.\n\n[[Follow Heather.|Following Heather]]",
+      "links": [
+        {
+          "text": "Follow Heather.",
+          "destination": {
+            "name": "Following Heather",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "RR - Talking HS",
+      "text": "EMILIE: Gotcha.\n\nYOU: But every once in awhile they can be good. \n\nEMILIE: I agree. How do you like high school?\n\nYOU: I don't mind it, but sometimes-\n\n//As you start to answer, Heather walks up again.//\n\nYOU: Any news?\n\nHEATHER: Well, no news on your dad, but Carla and Jeff asked me to bring you down to meet them in their office downstairs.\n\nYOU: Really?\n\nHEATHER: Yep. If you want we can go this way, and that way we can take the elevator.\n\nYOU: Okay... //(to Emilie)// I guess I'll be back in a bit.\n\nEMILIE: See ya later.\n\n[[Follow Heather.|Following Heather]]",
+      "links": [
+        {
+          "text": "Follow Heather.",
+          "destination": {
+            "name": "Following Heather",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "Following Heather",
+      "text": "YOU: So, what's the deal with Carla and Jeff?\n\nHEATHER: What do you mean?\n\nYOU: I don't know, they just seem...\n\nHEATHER: Unique?\n\nYOU: Yeah. Like, they just met me, and then they were asking me these questions. And they have those weird twin powers, where they keep finishing each other's sentences.\n\nHEATHER: Well, a lot of us here get to know our coworkers pretty well if we are usually working with the same person. \n\nYOU: Fair. \n\nHEATHER: They get to work on some cool projects. It's great that you'll get a chance to see some of it.\n\nYOU: Really? Like what?\n\nHEATHER: I don't know what they are working on now, but I know they've been researching the weird non-book stuff we find in a lot of our books and manuscripts. \n\nYOU: Like...\n\nHEATHER: Sometimes people put flowers in books, or hair.\n\nYOU: Hair?\n\nHEATHER: It happens. Here we are! They're right in there.\n\n//You've walked through shelves and shelves of books, all around the basement of the library. You have no clue how you would get back.//\n\nYOU: Thanks, I guess I'll see you later.\n\n[[Enter room. |Basement - Twins Room]]",
+      "links": [
+        {
+          "text": "Enter room. ",
+          "destination": {
+            "name": "Basement - Twins Room",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "Basement - Twins Room",
+      "text": "''Windowless Room''\n\nAfter opening the door, you enter the cramped room. The first five feet of the walls are full of carefully lighted glass drawers, each with different types of plants in them. On top of each of the large drawer systems are stacks of books, and above those, on the walls, are intricate diagrams. Some are diagrams of [[organic compounds,]] and some are beyond your comprehension. \n\nIn the center of the room is a large table with spray bottles, manuscripts, and more plants.\n\nOn the center of the near side of the table, (link-reveal:\"a note faces you.\")[\n\n//BUSY FOR A FEW.\n\nHOLD THIS --> \n\n<--THEN TOUCH THIS.\n\nSEE YOU SOON,\n\nC&J//\n\nThe first arrow points to a small glass container with some [[moss|looking at glass container]] in it. The second points to a sheet of yellow notebook paper. The text at the top says \"Small Change,\" and the rest of the sheet is covered in a thick layer of the same beautiful [[moss. |Transition Gina]]]",
+      "links": [
+        {
+          "text": "organic compounds,",
+          "destination": {
+            "name": "organic compounds,",
+            "pid": 140
+          }
+        },
+        {
+          "text": "moss",
+          "destination": {
+            "name": "looking at glass container",
+            "pid": 141
+          }
+        },
+        {
+          "text": "moss. ",
+          "destination": {
+            "name": "Transition Gina",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Transition Gina",
+      "text": "//The moss on the sheet feels strangely alive.// \n\nAs you stare at its viny patterns, you suddenly feel very warm.\n\n(link-reveal:\"You look up...\")[\n\n[[and you realize you are somewhere else.|Chapter Six]]]",
+      "links": [
+        {
+          "text": "and you realize you are somewhere else.",
+          "destination": {
+            "name": "Chapter Six",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "Chapter Six",
+      "text": "[[''CHAPTER 6''|More Manse Stuff]]\n(set:$chapter to 6)\n(if:(save-game:\"Slot A\"))[Your progress has been saved.]",
+      "links": [
+        {
+          "text": "''CHAPTER 6''",
+          "destination": {
+            "name": "More Manse Stuff",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "More Manse Stuff",
+      "text": "''Chapter Six - Jon''\n\nHmm. You have ended up outside the Manse again. [[You're sitting and thinking in the avenue.|M - Avenue]]\n\n//You are back in explore mode.//\n(set:$exp to 0)",
+      "links": [
+        {
+          "text": "You're sitting and thinking in the avenue.",
+          "destination": {
+            "name": "M - Avenue",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "Chapter Seven",
+      "text": "[[''CHAPTER 7''|SciFi Scene]]\n\n(if:(save-game:\"Slot A\"))[Your progress has been saved.]",
+      "links": [
+        {
+          "text": "''CHAPTER 7''",
+          "destination": {
+            "name": "SciFi Scene",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "SciFi Scene",
+      "text": "''Chapter Seven - Gina''\n\nThis is very clearly //not// the library. You're standing in the middle of a street, with rows of houses on both sides. A weathervane creaks in the wind.  \n\n[[Panic.|SF - Panicking]]\n[[Walk down the street.|SF - Stillness]]",
+      "links": [
+        {
+          "text": "Panic.",
+          "destination": {
+            "name": "SF - Panicking",
+            "pid": 80
+          }
+        },
+        {
+          "text": "Walk down the street.",
+          "destination": {
+            "name": "SF - Stillness",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "SF - Panicking",
+      "text": "You take a few faltering steps forward before sitting on the curb. Your shaky hands wipe the sweat off of your forehead. \n\n[[A few deep breaths will calm you down.|SF - Calming Down]]",
+      "links": [
+        {
+          "text": "A few deep breaths will calm you down.",
+          "destination": {
+            "name": "SF - Calming Down",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "SF - Stillness",
+      "text": "You walk down the street. It's completely empty, and in the twilight looks like a model suburb. It reminds you of your great aunt's retirement community in Sarasota: after 9:30pm, everything is still.\n\nYou put the [[glass container of moss|SF - VOMa]] in your pocket, and notice a man walking in the distance.\n\n[[Call out to him.|SF - Talking to Guy]]\n[[Watch him.|SF - Watching Guy]]",
+      "links": [
+        {
+          "text": "glass container of moss",
+          "destination": {
+            "name": "SF - VOMa",
+            "pid": 85
+          }
+        },
+        {
+          "text": "Call out to him.",
+          "destination": {
+            "name": "SF - Talking to Guy",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Watch him.",
+          "destination": {
+            "name": "SF - Watching Guy",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "SF - Calming Down",
+      "text": "Just as you start to regain your composure, (link-reveal:\"an inhuman yelp echoes down the street.\")[\n\nYou spin around, scanning the street frantically. It's just a dog. Well, not //just// a dog. It's a dog that is being walked by a man. But the dog made the yelp. You feel better, and neither the dog nor the man has yet to see you.\n\n[[Talk to the man.|SF - Talking to Guy]]\n[[Hide.|SF - Hiding]]]",
+      "links": [
+        {
+          "text": "Talk to the man.",
+          "destination": {
+            "name": "SF - Talking to Guy",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Hide.",
+          "destination": {
+            "name": "SF - Hiding",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "SF - Talking to Guy",
+      "text": "YOU: Hey!\n\n//The man looks around, startled.//\n\nYOU: Hey! Over here!\n\nMAN: Oh. Hello. //(hurrying over)//\n\nDOG: Woof!\n\nMAN: I'm glad to see you? Do you know what's going on?\n\nYOU: No idea! Do you know how we got here?\n\nMAN: What?\n\nYOU: How we got here? Were you in the library?\n\nMAN: What are you talking about?\n\nDOG: Woof.\n\nYOU: Um. What are //you// talking about?\n\nMAN: Don't you feel the vibrations? And you're the first person I've seen in the past hour.\n\nYOU: Um...\n\n[[Tell the truth.|SF- Talking to Guy cont.a]]\n[[Lie.|SF - Talking to Guy cont.b]]",
+      "links": [
+        {
+          "text": "Tell the truth.",
+          "destination": {
+            "name": "SF- Talking to Guy cont.a",
+            "pid": 90
+          }
+        },
+        {
+          "text": "Lie.",
+          "destination": {
+            "name": "SF - Talking to Guy cont.b",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "SF - Hiding",
+      "text": "You dart into the bushes behind someone's house. They are scratchy and spidery. Yuck and yuck. Suddenly, a loud, mechanical noise blares across the sky.\n\nYou reach for your (non-existent) phone to call for help, but all you have on you is the [[tiny box of moss.|SF - BOMb]]\n\n[[Keep hiding.|SF - Still Hiding]]",
+      "links": [
+        {
+          "text": "tiny box of moss.",
+          "destination": {
+            "name": "SF - BOMb",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Keep hiding.",
+          "destination": {
+            "name": "SF - Still Hiding",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "SF - VOMa",
+      "text": "You open the glass box, entranced by the lush living fabric.\n\n[[Touch it.|SF - Transition]]\n[[Close the box.|SF - Stillness]]",
+      "links": [
+        {
+          "text": "Touch it.",
+          "destination": {
+            "name": "SF - Transition",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Close the box.",
+          "destination": {
+            "name": "SF - Stillness",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "SF - Watching Guy",
+      "text": "The man looks even more nervous than his dog, which yips every few seconds. He keeps looking up at the sky, as if the clouds are hiding some great secret. He's clean cut, and carries nothing but a small plastic bag as most dog-walkers do.\n\n[[Talk to him.|SF - Talking to Guy]]\n[[Hide.|SF - Hiding]]\n[[Examine the box of moss.|SF - Exmoss]]",
+      "links": [
+        {
+          "text": "Talk to him.",
+          "destination": {
+            "name": "SF - Talking to Guy",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Hide.",
+          "destination": {
+            "name": "SF - Hiding",
+            "pid": 84
+          }
+        },
+        {
+          "text": "Examine the box of moss.",
+          "destination": {
+            "name": "SF - Exmoss",
+            "pid": 150
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "SF - BOMb",
+      "text": "[[You open the box and run your fingers along the viney green.|SF - Transition]]",
+      "links": [
+        {
+          "text": "You open the box and run your fingers along the viney green.",
+          "destination": {
+            "name": "SF - Transition",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "SF - Still Hiding",
+      "text": "You keep hiding. A spider tempts her fate by crawling closer to you. She seems unfazed by both you and that loud mechanical wailing noise. You prepare to squash her, just in case she gets closer, and the box of moss falls out of your pocket.\n\n[[Squash time.]]\n[[Look at the box of moss.|SF - BOMb]]",
+      "links": [
+        {
+          "text": "Squash time.",
+          "destination": {
+            "name": "Squash time.",
+            "pid": 149
+          }
+        },
+        {
+          "text": "Look at the box of moss.",
+          "destination": {
+            "name": "SF - BOMb",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "SF - Transition",
+      "text": "{A warmth washes over you, and \n\n[[everything fades away.|BTW - Talking to Twins]]}",
+      "links": [
+        {
+          "text": "everything fades away.",
+          "destination": {
+            "name": "BTW - Talking to Twins",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "SF- Talking to Guy cont.a",
+      "text": "YOU: Okay, well I don't know anything about that.\n\nDOG: Woof?\n\nYOU: But basically, I was just in a library. At Harvard, you know? And then these twins gave me this moss. Well they didn't give it to me but it was on the table.\n\n//The man takes a cautious step back from you.//\n\nYOU: No, look. I know it sounds weird. But they gave me this! //(taking out the glass container and open it.)// See? \n\nMAN: Uh huh?\n\nYOU: [[And then I touched it like thi-|SF - Transition]]",
+      "links": [
+        {
+          "text": "And then I touched it like thi-",
+          "destination": {
+            "name": "SF - Transition",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "SF - Talking to Guy cont.b",
+      "text": "YOU: Yeah... that's what I meant too.\n\nMAN: I thought you were saying something about a library.\n\nYOU: Oh, I just meant that I'm walking back from the library.\n\nMAN: Walking back? From the public library? It's six miles away!\n\n//His dog's eyes narrow.//\n\nYOU: I guess. Not //that// library. I mean, I just-\n\n//A deep, mechanical sound interrupts you. The man looks up, and the dog starts howling. You jump and cover your ears, and as you do, the glass box falls and lands in the grass, half open.//\n\nMAN: See! Those weird sounds... where is that coming from? //(noticing the glass box)// Hey, you dropped something..\n\nYOU: What? Oh thanks, yeah. \n\n[[//As you pick up the box, your finger touches some of the exposed moss.//|SF - Transition]]",
+      "links": [
+        {
+          "text": "//As you pick up the box, your finger touches some of the exposed moss.//",
+          "destination": {
+            "name": "SF - Transition",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "Smell it.",
+      "text": "It smells like earth.\n\n[[Look at it.]]\n[[Touch it.|SF - Transition]]\n[[Taste it.|SF - Tasting Moss]]",
+      "links": [
+        {
+          "text": "Look at it.",
+          "destination": {
+            "name": "Look at it.",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Touch it.",
+          "destination": {
+            "name": "SF - Transition",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Taste it.",
+          "destination": {
+            "name": "SF - Tasting Moss",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "Look at it.",
+      "text": "It's a beautiful vinery of green. \n\n[[Smell it.]]\n[[Touch it.|SF - Transition]]\n[[Taste it.|SF - Tasting Moss]]",
+      "links": [
+        {
+          "text": "Smell it.",
+          "destination": {
+            "name": "Smell it.",
+            "pid": 92
+          }
+        },
+        {
+          "text": "Touch it.",
+          "destination": {
+            "name": "SF - Transition",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Taste it.",
+          "destination": {
+            "name": "SF - Tasting Moss",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "SF - Tasting Moss",
+      "text": "You stick your tongue out and [[just as you feel the damp, earthy texture...|SF - Transition]]",
+      "links": [
+        {
+          "text": "just as you feel the damp, earthy texture...",
+          "destination": {
+            "name": "SF - Transition",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "BTW - Talking to Twins",
+      "text": "//The basement room is just as you left it, except that the twins are sitting across from you, looking amused.// \n\nCARLA: Welcome back!\n\nJEFF: How was your adventure?\n\nYOU: What... what just happened?\n\nCARLA: Get with the program!\n\nJEFF: Wake up and smell the coffee?\n\nCARLA: Except, they don't let us have coffee down here.\n\nYOU: Where was I? How did I get there?\n\nCARLA: You haven't figured it all out yet?\n\nJEFF: You ask a lot of questions.\n\n[[I think I get it.|BTW - Get It]]\n[[Wait, where's my dad?|BTW - The Dad Question]]",
+      "links": [
+        {
+          "text": "I think I get it.",
+          "destination": {
+            "name": "BTW - Get It",
+            "pid": 142
+          }
+        },
+        {
+          "text": "Wait, where's my dad?",
+          "destination": {
+            "name": "BTW - The Dad Question",
+            "pid": 143
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "YGB3 - 1",
+      "text": "''Dark Forest Road''\n\nYou're back in the strange forest again, but Goodman Brown is nowhere to be seen. Some lights flicker further down the path, and some great commotion can be heard faintly through the sounds of nature.\n\n[[Run back down the path.|YGB3 - Running Away]]\n[[Head toward the commotion.|YGB3 - Commotion]]",
+      "links": [
+        {
+          "text": "Run back down the path.",
+          "destination": {
+            "name": "YGB3 - Running Away",
+            "pid": 124
+          }
+        },
+        {
+          "text": "Head toward the commotion.",
+          "destination": {
+            "name": "YGB3 - Commotion",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "Side Stories, Manse",
+      "text": "(link-reveal:\"Suddenly...\")[\n\n(if:$ygb is 0)[(goto:\"YGB - Sunset\")]\n(if:$ygb is 1)[(goto:\"YGB2 - Forest Clearing 2\")]\n(if:$ygb is 2)[(goto:\"YGB3 - 1\")]]\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "YGB - Sunset",
+            "pid": 98
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "YGB2 - Forest Clearing 2",
+            "pid": 99
+          }
+        },
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "YGB3 - 1",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "YGB - Sunset",
+      "text": "''Path - Sunset''\n\nYou're standing on a path, a little ways back from a small house. There are a few other homes along the path, but this looks like a Puritan village. At the door of the small house, a man and woman are having some sort of argument, but you can't hear what they are saying. \n\nThe man, who is wearing a dark grey coat, is consoling the woman, who is quietly distraught. She wears a pink ribbon in her hair. There is no one else out on the street, except a stray cat, as it is dusk. You don't want the man or woman to see you.\n\nAfter a moment, the man walks off, away from the houses, with hunched shoulders. The woman watches him from the doorway.\n\n[[Follow him.|YGB - Following Man 1]]\n[[Watch her.|YGB - Watching Woman 1]]",
+      "links": [
+        {
+          "text": "Follow him.",
+          "destination": {
+            "name": "YGB - Following Man 1",
+            "pid": 120
+          }
+        },
+        {
+          "text": "Watch her.",
+          "destination": {
+            "name": "YGB - Watching Woman 1",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "YGB2 - Forest Clearing 2",
+      "text": "''Dark Forest Road''\n\nYou are somehow back on the dreary road in the dark forest, and not the forest near the manse. The trees are dark, and the chitter of birds and squirrels sounds like insidious whispers.\n\nAhead is a clearing, in which one man sits, and toward which the man from the small house hastily strides.\n\n[[You continue watching the two men.|YGB2 - Walking Behind the Two Men]]",
+      "links": [
+        {
+          "text": "You continue watching the two men.",
+          "destination": {
+            "name": "YGB2 - Walking Behind the Two Men",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "Thinking and Thinking",
+      "text": "Sitting is nice. Thinking is nice. You do them both for a while.\n\n(either:\"A cow moos between mouthfuls of grass.\", \"The birds sing a midday song.\", \"A light breeze runs its fingers through your hair.\", \"Your brain feels relaxed, but tired.\", \"A fly buzzes near your ear, then up and away.\")\n\n[[Sit and think some more.|Thinking and Thinking]]\n[[Explore.|Explore Mode]]",
+      "links": [
+        {
+          "text": "Sit and think some more.",
+          "destination": {
+            "name": "Thinking and Thinking",
+            "pid": 100
+          }
+        },
+        {
+          "text": "Explore.",
+          "destination": {
+            "name": "Explore Mode",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "Explore Mode",
+      "text": "//You are now in explore mode. Explore away! You may find that locations or items may change on repeat visits, or that they remain exactly the same. You won't uncover every mystery of this wonderful place, so explore wisely.//\n{(set:$exp to 0)\n(set:$emax to 15)}\n[[Yay!|M - Avenue]]",
+      "links": [
+        {
+          "text": "Yay!",
+          "destination": {
+            "name": "M - Avenue",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "M - Avenue",
+      "text": "''Avenue''\n\nA long avenue of (link-reveal:\"black ash trees\")[, at least you think they're ash, you're no expert. Regardless, the trees would be ordinary in any other place, but here they hold a certain dignity]. At the [[east,|M - Gate]] a gate stands between the avenue and the road, and in the [[west|M - Main Hall]] sits The Old Manse. Next to the road is [[a field.|M - Field]]\\\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "east,",
+          "destination": {
+            "name": "M - Gate",
+            "pid": 103
+          }
+        },
+        {
+          "text": "west",
+          "destination": {
+            "name": "M - Main Hall",
+            "pid": 104
+          }
+        },
+        {
+          "text": "a field.",
+          "destination": {
+            "name": "M - Field",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "M - Gate",
+      "text": "''Gate''\n\nWell, it's not quite a gate. On each side of the road stands a tall gate-post of rough hewn stone. The gate itself has fallen from its hinges at some unknown epoch. There is [[something shiny|Frog]] next to the left gate-post.\n\n[[Road|M - Road]]\n[[Avenue|M - Avenue]]\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "something shiny",
+          "destination": {
+            "name": "Frog",
+            "pid": 106
+          }
+        },
+        {
+          "text": "Road",
+          "destination": {
+            "name": "M - Road",
+            "pid": 107
+          }
+        },
+        {
+          "text": "Avenue",
+          "destination": {
+            "name": "M - Avenue",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "M - Main Hall",
+      "text": "''Main Hall''\n\nA rather spacious hall extending to the rear and a [[door|M - River]] giving a beautiful view of the river. The hall contains the stairs with heavy balusters, which lead to the [[upstairs hall.|M - Upper Hall]] \n\nIn the light, the [[books|M - Books]] stand about in great order, seldom to be disturbed. A cheerful coat of paint, and golden-tinted paper-hangings, [[light up the room.]] The shadow of a willow-tree that sweeps against the overhanging eaves alters the cheery western sunshine. (link-reveal:\"In the shadows, the room looks a bit different. \")[Portraits of ministers seem to keep guard over the manse. They look strangely like bad angels, or, at least, like men who had wrestled so continually and so sternly with the devil, that somewhat of his sooty fierceness had been imparted to their own visages. They vanish in the light.]\n\nBehind you is a door that lead back to the [[avenue.|M - Avenue]]\nThere are [[four other rooms|M - Four Lower Rooms]] on this floor.\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "door",
+          "destination": {
+            "name": "M - River",
+            "pid": 158
+          }
+        },
+        {
+          "text": "upstairs hall.",
+          "destination": {
+            "name": "M - Upper Hall",
+            "pid": 137
+          }
+        },
+        {
+          "text": "books",
+          "destination": {
+            "name": "M - Books",
+            "pid": 136
+          }
+        },
+        {
+          "text": "light up the room.",
+          "destination": {
+            "name": "light up the room.",
+            "pid": 165
+          }
+        },
+        {
+          "text": "avenue.",
+          "destination": {
+            "name": "M - Avenue",
+            "pid": 102
+          }
+        },
+        {
+          "text": "four other rooms",
+          "destination": {
+            "name": "M - Four Lower Rooms",
+            "pid": 166
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "M - Field",
+      "text": "''Field''\n\nThe [[avenue|M - Avenue]] is at one edge, and a [[small monument|M - Monument Bridge]] pokes up above the grass at the other. You can't be sure, but it looks like there is a river all the way across the field, past some [[apple trees,|M - Apple Trees]] and you think there is a [[bridge|M - Bridge]] near the monument.\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "avenue",
+          "destination": {
+            "name": "M - Avenue",
+            "pid": 102
+          }
+        },
+        {
+          "text": "small monument",
+          "destination": {
+            "name": "M - Monument Bridge",
+            "pid": 157
+          }
+        },
+        {
+          "text": "apple trees,",
+          "destination": {
+            "name": "M - Apple Trees",
+            "pid": 164
+          }
+        },
+        {
+          "text": "bridge",
+          "destination": {
+            "name": "M - Bridge",
+            "pid": 159
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "Frog",
+      "text": "It's just a frog.\n\n[[Ribbit, ribbit.|M - Gate]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Ribbit, ribbit.",
+          "destination": {
+            "name": "M - Gate",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "M - Road",
+      "text": "''Road''\n\nA public road, quiet and mundane, extends from [[north|Leaving on Road]] to [[south.|Leaving on Road]] A thick forest lines it to the [[east,|M - Forest]] and the avenue leads [[westward|M - Avenue]] through the stone [[gate.|M - Gate]]\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "north",
+          "destination": {
+            "name": "Leaving on Road",
+            "pid": 108
+          }
+        },
+        {
+          "text": "south.",
+          "destination": {
+            "name": "Leaving on Road",
+            "pid": 108
+          }
+        },
+        {
+          "text": "east,",
+          "destination": {
+            "name": "M - Forest",
+            "pid": 109
+          }
+        },
+        {
+          "text": "westward",
+          "destination": {
+            "name": "M - Avenue",
+            "pid": 102
+          }
+        },
+        {
+          "text": "gate.",
+          "destination": {
+            "name": "M - Gate",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "Leaving on Road",
+      "text": "(either:\"As an outsider in this realm, you wisely choose not to brave the complexities and politics of the nearby village.\", \"There is no magic to be found there.\", \"It is too far to walk, and there is plenty to do here.\")\n\n[[You stay on the road.|M - Road]]\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "You stay on the road.",
+          "destination": {
+            "name": "M - Road",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "M - Forest",
+      "text": "''Forest - Near Road'' \n\nIt's a terrifying majesty of green. Despite the cheerful chitter chatter of the birds and the friendly croaking of a frog, anything could lurk beneath the shadows. You ponder the [[devils]] lurking within. \n\n[[Wander.|M - Forest, Deeper]]\n[[Follow the light back to the road.|M - Road]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "devils",
+          "destination": {
+            "name": "devils",
+            "pid": 135
+          }
+        },
+        {
+          "text": "Wander.",
+          "destination": {
+            "name": "M - Forest, Deeper",
+            "pid": 110
+          }
+        },
+        {
+          "text": "Follow the light back to the road.",
+          "destination": {
+            "name": "M - Road",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "M - Forest, Deeper",
+      "text": "''Forest - Somewhere''\n\nThe top leaves are moist enough to dampen the crunch of the ones that lie underneath. The wooden pillars are crawling with tiny bugs, the kind that keep the earth alive. Every now and then, a knock, scuttle, or whistle comes from the branches up above. Some forests are deserts, but this one is warm, full of energy, and powerful.\n\n(either:\"Could that be the same tree as before?\", \"A bullfrog watches from a small puddle.\", \"The sun retreats behind a cloud and the shadows reach toward you.\", \"It is peaceful here.\", \"Something scurries past you.\")\n\n[[Wander.|M - Forest, Deeper Still]]\n[[Follow the light back to the road.|M - Road]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Wander.",
+          "destination": {
+            "name": "M - Forest, Deeper Still",
+            "pid": 111
+          }
+        },
+        {
+          "text": "Follow the light back to the road.",
+          "destination": {
+            "name": "M - Road",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "M - Forest, Deeper Still",
+      "text": "''Forest - Somewhere Else''\n\nThe top leaves are moist enough to dampen the crunch of the ones that lie underneath. The wooden pillars are crawling with tiny bugs, the kind that keep the earth alive. Every now and then, a knock, scuttle, or whistle comes from the branches up above. Some forests are deserts, but this one is warm, full of energy, and powerful.\n\n(either:\"Could that be the same tree as before?\", \"A bullfrog watches from a small puddle.\", \"The sun retreats behind a cloud and the shadows reach toward you.\", \"It is peaceful here.\", \"Something scurries past you.\")\n\n[[Wander.|M - Forest, Deeper Even Still]]\n[[Follow the light back to the road.|M - Road]]\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Wander.",
+          "destination": {
+            "name": "M - Forest, Deeper Even Still",
+            "pid": 112
+          }
+        },
+        {
+          "text": "Follow the light back to the road.",
+          "destination": {
+            "name": "M - Road",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 112,
+      "name": "M - Forest, Deeper Even Still",
+      "text": "''Forest - Somewhere''\n\nThe top leaves are moist enough to dampen the crunch of the ones that lie underneath. The wooden pillars are crawling with tiny bugs, the kind that keep the earth alive. Every now and then, a knock, scuttle, or whistle comes from the branches up above. Some forests are deserts, but this one is warm, full of energy, and powerful.\n\n(either:\"Could that be the same tree as before?\", \"A bullfrog watches from a small puddle.\", \"The sun retreats behind a cloud and the shadows reach toward you.\", \"It is peaceful here.\", \"Something scurries past you.\")\n\n[[Wander.|M - Forest, Even Deeper Still]]\n[[Follow the light back to the road.|M - Road]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Wander.",
+          "destination": {
+            "name": "M - Forest, Even Deeper Still",
+            "pid": 113
+          }
+        },
+        {
+          "text": "Follow the light back to the road.",
+          "destination": {
+            "name": "M - Road",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "M - Forest, Even Deeper Still",
+      "text": "''Forest - Somewhere Else''\n\nThe top leaves are moist enough to dampen the crunch of the ones that lie underneath. The wooden pillars are crawling with tiny bugs, the kind that keep the earth alive. Every now and then, a knock, scuttle, or whistle comes from the branches up above. Some forests are deserts, but this one is warm, full of energy, and powerful.\n\n(either:\"Could that be the same tree as before?\", \"A bullfrog watches from a small puddle.\", \"The sun retreats behind a cloud and the shadows reach toward you.\", \"It is peaceful here.\", \"Something scurries past you.\")\n\n[[Wander.|M - Forest, Deepest]]\n[[Follow the light back to the road.|M - Road]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Wander.",
+          "destination": {
+            "name": "M - Forest, Deepest",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Follow the light back to the road.",
+          "destination": {
+            "name": "M - Road",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "M - Forest, Deepest",
+      "text": "''Forest Center''\n\nThis appears to be the center of the forest, and it certainly feels like it. It is dark except for a single ray of light, tinged green from the blanket above. (if:$fc is 0)[On the ground is a (link-reveal:\"small bundle of papers.\")[\n\nThe papers are mostly a part of the earth now, but you can make out the word \"Goodman\" on the front. Some [[moss|Side Stories, Manse]] is growing on the paper.](set:$fc to 1)]\n\n(link-replace:\"Wander.\")[From the center, any wandering will surely just lead back to the road.]\n[[Follow the light back to the road.|M - Road]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "moss",
+          "destination": {
+            "name": "Side Stories, Manse",
+            "pid": 97
+          }
+        },
+        {
+          "text": "Follow the light back to the road.",
+          "destination": {
+            "name": "M - Road",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "Chapter Nine",
+      "text": "[[''Chapter Nine - Gina''|9 - Outside Manse]] \n\n(if:(save-game:\"Slot A\"))[Your progress has been saved.]",
+      "links": [
+        {
+          "text": "''Chapter Nine - Gina''",
+          "destination": {
+            "name": "9 - Outside Manse",
+            "pid": 144
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "Untitled Passage 1",
+      "text": "(set:$cnote to $c4[\"[[Continue...|Chapter Five]]\"] + $c6[\"[[Continue...|Chapter Seven]]\"] + $c8[\"[[Continue...|Chapter Nine]]\"])\n",
+      "links": [
+        {
+          "text": "Continue...",
+          "destination": {
+            "name": "Chapter Five",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Continue...",
+          "destination": {
+            "name": "Chapter Seven",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Continue...",
+          "destination": {
+            "name": "Chapter Nine",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "Continue Page",
+      "text": "{(if:$chapter is 4)[[[Meanwhile...|Chapter Five]]]\n(if:$chapter is 6)[[[Meanwhile...|Chapter Seven]]]\n(if:$chapter is 8)[[[Meanwhile...|Chapter Nine]]]}",
+      "links": [
+        {
+          "text": "Meanwhile...",
+          "destination": {
+            "name": "Chapter Five",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Meanwhile...",
+          "destination": {
+            "name": "Chapter Seven",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Meanwhile...",
+          "destination": {
+            "name": "Chapter Nine",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "Chapter Eight",
+      "text": "[[''CHAPTER 8''|Chapter 8]]\n(set:$chapter to 8)\n(if:(save-game:\"Slot A\"))[Your progress has been saved.]",
+      "links": [
+        {
+          "text": "''CHAPTER 8''",
+          "destination": {
+            "name": "Chapter 8",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "Chapter 8",
+      "text": "''Chapter Eight - Jon''\n\nHmm. You have ended up outside the Manse again. [[You're sitting and thinking in the avenue.|M - Avenue]]\n\n//You are back in explore mode.//\n(set:$exp to 0)",
+      "links": [
+        {
+          "text": "You're sitting and thinking in the avenue.",
+          "destination": {
+            "name": "M - Avenue",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "YGB - Following Man 1",
+      "text": "You follow the man down a dreary road, darkened by all the gloomiest trees of the forest, which barely stand aside to let the narrow path creep through. The man, hasty, yet resolute, doesn't notice you as you hide behind the innumerable trunks that line road.\n\n[[Keep following him.|YGB - Following Man 2]]\n[[Go back toward the small house.|YGB - Following Woman 2]]",
+      "links": [
+        {
+          "text": "Keep following him.",
+          "destination": {
+            "name": "YGB - Following Man 2",
+            "pid": 122
+          }
+        },
+        {
+          "text": "Go back toward the small house.",
+          "destination": {
+            "name": "YGB - Following Woman 2",
+            "pid": 123
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "YGB - Watching Woman 1",
+      "text": "The woman with the pink ribbon looks out from the door long after the man disappears. She takes a few steps forward, as if to follow him, and then falls down in despair. The cat saunters toward her, whether to harm or help her, it is not clear.\n\n[[Keep watching her.|YGB - Following Woman 2]]\n[[Go follow the man.|YGB - Following Man 2]]",
+      "links": [
+        {
+          "text": "Keep watching her.",
+          "destination": {
+            "name": "YGB - Following Woman 2",
+            "pid": 123
+          }
+        },
+        {
+          "text": "Go follow the man.",
+          "destination": {
+            "name": "YGB - Following Man 2",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "YGB - Following Man 2",
+      "text": "You manage, by the serpentine nature of the path, to somehow get ahead of the man in the grey coat. You realize now that he must be headed toward the small clearing at an upcoming part of the path. \n\nSquinting at the clearing, you behold the figure of a man, in grave and decent attire, seated at the foot of an old tree. \n\n[[Watch the clearing.|YGB Transition]]\n[[Run away, back down the path.|YGB Transition]]",
+      "links": [
+        {
+          "text": "Watch the clearing.",
+          "destination": {
+            "name": "YGB Transition",
+            "pid": 132
+          }
+        },
+        {
+          "text": "Run away, back down the path.",
+          "destination": {
+            "name": "YGB Transition",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "YGB - Following Woman 2",
+      "text": "Three women, who just peeked out from a nearby house, stop and call out to the woman with the pink ribbon. You hear them call her Faith, but can't hear the rest of the conversation. Two more cats appear, and then another. They seem interested in the three women, who pay them no mind.\n\nAfter much deliberation, Faith stands up and starts walking with the three women down the same path the man traversed a few minutes ago.\n\n[[Follow them.|YGB Transition]]\n[[Explore the village.|YGB Transition]]",
+      "links": [
+        {
+          "text": "Follow them.",
+          "destination": {
+            "name": "YGB Transition",
+            "pid": 132
+          }
+        },
+        {
+          "text": "Explore the village.",
+          "destination": {
+            "name": "YGB Transition",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 124,
+      "name": "YGB3 - Running Away",
+      "text": "You sprint down the path, which now looks freshly trod, beaten down by the boots of more than just the two men you saw earlier. After twists and turns, somehow, you end up not at the forest exit, but at [[the gathering from which you ran.|YGB3 - Commotion]]",
+      "links": [
+        {
+          "text": "the gathering from which you ran.",
+          "destination": {
+            "name": "YGB3 - Commotion",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "YGB3 - Commotion",
+      "text": "You reach the gathering, in a large open space in the forest. At one end, hemmed in by the dark wall of the forest, is a rock, bearing some rude, natural resemblance either to an altar or a pulpit, and surrounded by four blazing pines, their tops aflame, their stems untouched, like candles at an evening meeting. The mass of foliage behind the rock, all on fire, blazes high into the night, illuminating the whole field. \n\nThe whole town is huddled, singing, shrieking, a demonic hymn. Their faces are too unpleasant to gaze upon for long.\n\n[[As you back away, you hear someone in the shadows.|YGB3 - 6]]",
+      "links": [
+        {
+          "text": "As you back away, you hear someone in the shadows.",
+          "destination": {
+            "name": "YGB3 - 6",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "YGB3 - 6",
+      "text": "Twenty feet or so behind you is a man seated on a stump, writing by candlelight. Unlike the others, he looks neither deranged, nor excited. His calm demeanor, rather than one of evil confidence, is one thoughtful repose. His furrowed brow dances with his penstrokes.\n\nAn inconsistency in the candlelight makes it shine just a bit brighter on his face, and, for a second, you could swear that he looks just like Nathaniel Hawthorne. He looks over at the gathering, and notices you watching him. [[Just as he shifts his eyes toward you...|YGB3 Transition]]",
+      "links": [
+        {
+          "text": "Just as he shifts his eyes toward you...",
+          "destination": {
+            "name": "YGB3 Transition",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "YGB2 - Deacon and the Lady",
+      "text": "[[Watch man.|YGB2 - The Two Riders]]\n[[THING|YGB2 - 5]]",
+      "links": [
+        {
+          "text": "Watch man.",
+          "destination": {
+            "name": "YGB2 - The Two Riders",
+            "pid": 131
+          }
+        },
+        {
+          "text": "THING",
+          "destination": {
+            "name": "YGB2 - 5",
+            "pid": 130
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "YGB2 - Walking Behind the Two Men",
+      "text": "//The grave man, seated in the clearing, rises at the approach of the other. The two walk side by side, deeper into the forest.//\n\nGRAVE MAN: You're late, Goodman Brown. The clock of the Old South was striking, as I came through Boston; and that is full fifteen minutes agone.\n\nGOODMAN BROWN: //(with a tremor in his voice)// Faith kept me back awhile.\n\n//The grave man is about fifty years old, apparently in the same rank of life as Goodman Brown, and bears a considerable resemblance to him, though perhaps more in expression than features. Still, they might even be father and son. And yet, though the elder person is as simply clad as the younger, and as simple in manner too, he has an indescribable air of one who knows the world.//\n\n[[You follow them.|YGB2 - Following Men 2]]",
+      "links": [
+        {
+          "text": "You follow them.",
+          "destination": {
+            "name": "YGB2 - Following Men 2",
+            "pid": 129
+          }
+        }
+      ]
+    },
+    {
+      "pid": 129,
+      "name": "YGB2 - Following Men 2",
+      "text": "You follow, but can't make out what they are saying. Even without hearing the converation, you can tell that Goodman Brown is deeply upset by something, and he keeps stopping and starting down the road.\n\nYou can now see that the elder is carrying a staff. It bears the likeness of a great black snake, so curiously wrought that it almost twists and wriggles itself like a living serpent. This, of course, must be an ocular deception, assisted by the uncertain light.\n\n[[You cut around to try to get closer.|YGB2 Transition]]",
+      "links": [
+        {
+          "text": "You cut around to try to get closer.",
+          "destination": {
+            "name": "YGB2 Transition",
+            "pid": 134
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "YGB2 - 5",
+      "text": "[[Continue...|YGB2 Transition]]",
+      "links": [
+        {
+          "text": "Continue...",
+          "destination": {
+            "name": "YGB2 Transition",
+            "pid": 134
+          }
+        }
+      ]
+    },
+    {
+      "pid": 131,
+      "name": "YGB2 - The Two Riders",
+      "text": "[[Continue...|YGB2 Transition]]",
+      "links": [
+        {
+          "text": "Continue...",
+          "destination": {
+            "name": "YGB2 Transition",
+            "pid": 134
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "YGB Transition",
+      "text": "[[The world slips away as you are momentarily lost in a void of colors and sensations, sucked back into a different reality...|Continue Page]]\n\n(set:$ygb to 1)",
+      "links": [
+        {
+          "text": "The world slips away as you are momentarily lost in a void of colors and sensations, sucked back into a different reality...",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 133,
+      "name": "YGB3 Transition",
+      "text": "[[The world slips away as you are momentarily lost in a void of colors and sensations, sucked back into a different reality...|Continue Page]]",
+      "links": [
+        {
+          "text": "The world slips away as you are momentarily lost in a void of colors and sensations, sucked back into a different reality...",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 134,
+      "name": "YGB2 Transition",
+      "text": "[[The world slips away as you are momentarily lost in a void of colors and sensations, sucked back into a different reality...|Continue Page]]\n\n(set:$ygb to 2)",
+      "links": [
+        {
+          "text": "The world slips away as you are momentarily lost in a void of colors and sensations, sucked back into a different reality...",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 135,
+      "name": "devils",
+      "text": "[[Best not to think about those things too much.|M - Forest]] \n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Best not to think about those things too much.",
+          "destination": {
+            "name": "M - Forest",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 136,
+      "name": "M - Books",
+      "text": "Funny how the most interesting books and papers in an author's abode are so rarely the ones most easily found. These stacks of books quickly lose your interest, despite your love of the written word. \n\n[[Back|M - Main Hall]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Back",
+          "destination": {
+            "name": "M - Main Hall",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 137,
+      "name": "M - Upper Hall",
+      "text": "''Upper Hall''\n\nThe upper hall is much like the lower main hall. A narrow passage leads to the [[attic.|M - Attic]] Stairs lead down to the [[main hall.|M - Main Hall]] There are [[four rooms|M - Upper Four Rooms]] up here as well. \n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "attic.",
+          "destination": {
+            "name": "M - Attic",
+            "pid": 138
+          }
+        },
+        {
+          "text": "main hall.",
+          "destination": {
+            "name": "M - Main Hall",
+            "pid": 104
+          }
+        },
+        {
+          "text": "four rooms",
+          "destination": {
+            "name": "M - Upper Four Rooms",
+            "pid": 167
+          }
+        }
+      ]
+    },
+    {
+      "pid": 138,
+      "name": "M - Attic",
+      "text": "''Attic''\n\nDimly illuminated through small and dusty windows, the light is but a twilight at best. \n\nThe attic is full of dark (link-reveal:\"nooks\")[, or, rather, (link-reveal:\"caverns of deep obscurity\")[, the secrets of which you will likely never learn, as you are too reverent of their dust and cobwebs (and rightly so)]].\n\nA passage leads back down to the [[Upper Hall.|M - Upper Hall]]\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Upper Hall.",
+          "destination": {
+            "name": "M - Upper Hall",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 139,
+      "name": "Manse History",
+      "text": "You're pretty sure the sign said something like: \n\n//''About The Old Manse''\nThe first shots of the Revolutionary War were fired nearby \u2013 and, less than a century later, Emerson, Hawthorne, and Thoreau spawned a revolution in American philosophy from here.\n\n''What makes the Old Manse a special place?''\nBuilt in 1770 for patriot minister William Emerson, The Old Manse, a National Historic Landmark, became the center of Concord\u2019s political, literary, and social revolutions over the course of the next century. In the mid-19th-century, leading Transcendentalists such as Bronson Alcott, Henry David Thoreau, and Margaret Fuller discussed the issues of the day here, with the Hawthorne and Ripley families.//\n\nSomething like that. It either said that on the sign or you read it on the Trustees of Reservations website. \n\n[[Either way, now, The Old Manse looks different. |Outside Manse]]",
+      "links": [
+        {
+          "text": "Either way, now, The Old Manse looks different. ",
+          "destination": {
+            "name": "Outside Manse",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 140,
+      "name": "organic compounds,",
+      "text": "Chem class taught you a thing or two.\n\n[[Science!|Basement - Twins Room]]",
+      "links": [
+        {
+          "text": "Science!",
+          "destination": {
+            "name": "Basement - Twins Room",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 141,
+      "name": "looking at glass container",
+      "text": "You open the container and touch the moss. It feels like moss. What were you expecting?\n\n[[Back.|Basement - Twins Room]]",
+      "links": [
+        {
+          "text": "Back.",
+          "destination": {
+            "name": "Basement - Twins Room",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 142,
+      "name": "BTW - Get It",
+      "text": "JEFF: Really?\n\nGINA: You get it?\n\nJEFF: What are you, a genius?\n\nYOU: No... but, I mean. When you touch the moss, it takes you somewhere else. God, it sounds crazy when I say it out loud.\n\nGINA: Well, duh!\n\nYOU: Duh it sounds crazy, or duh about the magic moss?\n\nJEFF: Both.\n\nGINA: And it's not magic. It's science. But, if you're so smart, then where does the moss take you?\n\nYOU: I don't know! I was in some crazy suburb. \n\n//Gina and Jeff look down at the notebook paper and push it toward you. You read the first few lines: \n\n''It seemed like a normal day, normal as any. As the man walked his dog down the street, he hardly noticed that not a single person was to be seen, other than himself. As he walked along the provincial street...''\n\nThe moss covers most of the rest of the words, so you skip ahead to the few legible lines at the bottom of the page.\n\n''when the second vibration hit, this time, it was accompanied with a noise. The ghastly mechanical grinding sounded like''\n\nThe page ends. You stare blankly at Jeff.//\n\nYOU: I was... in the story?\n\nCARLA: Duh, again.\n\nYOU: So the moss...\n\nCARLA: Bingo. \n\n//You sit down. The twins begin to look bored.//\n\n[[Wait, where's my dad?|BTW - The Dad Question]]",
+      "links": [
+        {
+          "text": "Wait, where's my dad?",
+          "destination": {
+            "name": "BTW - The Dad Question",
+            "pid": 143
+          }
+        }
+      ]
+    },
+    {
+      "pid": 143,
+      "name": "BTW - The Dad Question",
+      "text": "CARLA: Your dad is... elsewhere. \n\nJEFF: Not too far from here, actually. \n\nCARLA: Nineteenth century Concord, Massachusetts.\n\nJEFF: More like //Moss//achusetts, am I right?\n\nYOU: So he knew about this the whole time?\n\nCARLA: Not exactly.\n\nYOU: Then how did he get there? Did you trick him the way you tricked me? When is he coming back?\n\nJEFF: You already know the answer to your first question. The second question is unfair. We just wanted to show you an adventure. You're in high school, what angsty teen doesn't want adventure?\n\nYOU: Stop. When is my dad coming back?\n\nCARLA: You're gonna have to get him. //Someone// didn't give him any return moss. \n\n//There is a beat of silence.//\n\nCARLA: Okay, fine, it was me. I didn't give him any. Hehe.\n\nYOU: This isn't funny.\n\nJEFF: The dude is probably having a blast, kicking it with Hawthorne, or something. \n\nYOU: (link-reveal:\"Just... gimme the stuff so I can get him back.\")[\n\nCARLA: First, you'll need this, //(handing you the glass container)// well \"first\" first you'll need to lose that snippy attitude. But, yeah, then we can head upstairs. Once you touch the moss in the book he was researching, bap-bah-dah-bap-boom-pow, you're there. After that, just hold his hand while you touch the moss in this container and you'll be back here in a jiff.\n\nYOU: Alright. How did you all even come up with this... magic moss stuff? \n\nJEFF: We didn't! Nathaniel Hawthorne did. Ever heard of //Mosses from an Old Manse//? He loved that place, The Manse, and he found the special moss there. We just study it. \n\nCARLA: He found it, but didn't perfect it. When he experimented with it he couldn't get it to keep him inside the story for very long. The stuff he used on his stories would spit him back to the real world after a few minutes, unlike ours, which is why you have to go get your dad. It's very scientific.\n\nYOU: Okay okay, whatever. [[Let's get this over with.|Chapter Eight]]]\n",
+      "links": [
+        {
+          "text": "Let's get this over with.",
+          "destination": {
+            "name": "Chapter Eight",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 144,
+      "name": "9 - Outside Manse",
+      "text": "''Front of House''\n\nThe moss wormhole thing\u2013or whatever it is the moss did\u2013wasn't so jarring this time. Now you're in a pretty nice gravel path in front of a big house. The sun has almost set, and the trees cast shadows that you could stare at for hours, but it's time to find Dad. You call out \"Hello?\" The only reply is a moo from a big cow a few yards away. It chews and chomps at you, then walks a bit closer, then sneezes. \n\n[[A voice yells \"Gina!\"|9 - G and D]]",
+      "links": [
+        {
+          "text": "A voice yells \"Gina!\"",
+          "destination": {
+            "name": "9 - G and D",
+            "pid": 145
+          }
+        }
+      ]
+    },
+    {
+      "pid": 145,
+      "name": "9 - G and D",
+      "text": "YOU: Hello?\n\nVOICE: Hey! Where are we?\n\n//Your dad pops out from inside the field of tall grass, he gives you a bear hug and a big kiss on the forehead. The cow takes a few steps onto the gravel and sneezes again.//\n\nDAD: Isn't this beautiful?\n\nYOU: Yeah, but aren't you confused about how you got here? What have you been doing for the last few hours?\n\nDAD: I dunno, I touched some moss stuff, then I was here, then I looked around for some cool stuff... what can I say, I like adventure!\n\nYOU: I just don't know how you're so chill about this. When I'm ten minutes past curfew you blow a gasket.\n\nDAD: That's different, and I do //not// blow a gasket. Either way, I actually just thought I was dreaming so you got me. \n\nYOU: You're not, unless I am too. They sent me here to bring you back.\n\nDAD: Who is they?\n\nYOU: Jeff and Carla.\n\nDAD: The twins. Of course. Holy moly. How //do// we get back?\n\n//The cow walks even closer and sneezes for a third time.//\n\nYOU: You know the moss you touched? Well, they have some that'll bring us back to the library.\n\nDAD: Of course! Genius. I really love this magic moss stuff.\n\nYOU: It's not magic, Dad. It's science. Save your magic moss business for the LSD Library! \n\nDAD: How do you know about that? \n\nYOU: I pay attention. (link-reveal:\"Let's head back though.\")[ //You open the glass box of moss.//\n\nDAD: Wait, can we take just one moment to appreciate this place? Think of all the amazing men and women who lived here? Like Nathaniel Hawthorne, and Sarah Alden Bradford Ripley. \n\nYOU: Wait. They both lived here? Also, yeah, where and when are we, actually?\n\nDAD: I thought you said paid attention? \n\nYOU: Touch\u00e9. \n\n//The cow looks very interested in your conversation.//\n\nDAD: Well, even before them, though. Before our great writers, many ministers lived here over the years. In small towns in New England, the minister was usually the best educated man\u2013sometimes the one. He was therefore appealed to for advice in all sorts of troubles, material as well as spiritual. We can imagine, therefore, that many persons approached this parsonage with shrinking, faltering steps, who later departed with problems clarified and armed with new courage and ideals to meet the difficulties of life.\n\nYOU: Parsonage? Therefore? Ideals? Did you read this all somewhere?\n\nDAD: I pay attention. \n\nYOU: I get it, but let's head back. Hold this box, but don't touch the moss yet, and take my hand.\n\nDAD: Fine. \n\n//You hand him the box, hold his hand, and //[[//reach for the moss...//|Moss Drop]]\n]\n",
+      "links": [
+        {
+          "text": "//reach for the moss...//",
+          "destination": {
+            "name": "Moss Drop",
+            "pid": 146
+          }
+        }
+      ]
+    },
+    {
+      "pid": 146,
+      "name": "Moss Drop",
+      "text": "//Just before you touch it, the cow sticks out his long, gooey tongue, licking the glass container. The instant his tongue touches the moss he disappears.//\n\nYOU: Um.\n\nDAD: That doesn't seem like what was supposed to happen. Was that what was supposed to happen?\n\nYOU: (link-reveal:\"Don't panic.\")[ \n\nDAD: Why would you tell me not to panic? WHY ARE YOU TELLING ME NOT TO PANIC!?\n\nYOU: CALM DOWN! Sorry. Calm down. It's fine.\n\nDAD: FINE? Where is your other moss? I'm calm. Where is the rest of your moss?\n\nYOU: Please stop saying \"moss.\"\n\nDAD: WHERE DID THE COW GO!?\n\nCARLA: Now I see where she gets it.\n\n[[//The twins (and the cow) pop into existence a few feet in front of you.//|9 - Twins]]]\n\n",
+      "links": [
+        {
+          "text": "//The twins (and the cow) pop into existence a few feet in front of you.//",
+          "destination": {
+            "name": "9 - Twins",
+            "pid": 147
+          }
+        }
+      ]
+    },
+    {
+      "pid": 147,
+      "name": "9 - Twins",
+      "text": "JEFF: So many questions.\n\nDAD: How could you do this to us? You just sent me here and left me, and then stranded us... what if something had happened?\n\nCARLA: Ooh, are we playing the question game now? \n\nJEFF: Do I hate improv?\n\nCARLA: Gina, why did you send us a cow?\n\nYOU: You really think I did it on purpose?\n\n//Jeff offers you a fist bump, which you accept. Dad's calmed down, marginally.//\n\nCARLA: Okay, everyone hold hands. Let's go home. //(looking at the cow)// Not you, Jon. //(looking at Dad)// No, //you're// fine, Jon, we named the cow after you. But he's staying here. \n\n//Both Jons sneeze.//\n\nYOU: [[Whoa. |Epilogue]]",
+      "links": [
+        {
+          "text": "Whoa. ",
+          "destination": {
+            "name": "Epilogue",
+            "pid": 148
+          }
+        }
+      ]
+    },
+    {
+      "pid": 148,
+      "name": "Epilogue",
+      "text": "[[''TWO WEEKS LATER''|E - 1]]\n\n(if:(save-game:\"Slot A\"))[Your progress has been saved.]",
+      "links": [
+        {
+          "text": "''TWO WEEKS LATER''",
+          "destination": {
+            "name": "E - 1",
+            "pid": 151
+          }
+        }
+      ]
+    },
+    {
+      "pid": 149,
+      "name": "Squash time.",
+      "text": "She scurries away right before you launch your attack. It's probably for the best. \n\nThe box of moss sits beckoningly next to you. \n\n[[Pick it up.|SF - BOMb]]",
+      "links": [
+        {
+          "text": "Pick it up.",
+          "destination": {
+            "name": "SF - BOMb",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 150,
+      "name": "SF - Exmoss",
+      "text": "A loud noise fills the air from something huge, terrible, and, for the moment, distant.\n\nYou open the box of moss. \n\n[[Smell it.]]\n[[Look at it.]]\n[[Touch it.|SF - Transition]]\n[[Taste it.|SF - Tasting Moss]]",
+      "links": [
+        {
+          "text": "Smell it.",
+          "destination": {
+            "name": "Smell it.",
+            "pid": 92
+          }
+        },
+        {
+          "text": "Look at it.",
+          "destination": {
+            "name": "Look at it.",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Touch it.",
+          "destination": {
+            "name": "SF - Transition",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Taste it.",
+          "destination": {
+            "name": "SF - Tasting Moss",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 151,
+      "name": "E - 1",
+      "text": "''Epilogue - Gina''\n\nThis time, you run up the Houghton's front steps. Tourists are trying to take selfies on the porch area, and a woman is smoking a cigarette, which you're pretty sure she's not supposed to be doing. \n\nYou squeeze past them all, through the two sets of glass doors, and see Emeka and Emilie talking at the front desk. \n\nEMILIE: Hey, I remember you. Gina, right?\n\nYOU: Yeah! I met you and Heather when I was looking for my Dad. How's everything been going here? \n\n//Some visitors enter the lobby and start asking Emeka a bunch of questions, so you and Emilie step out of their way.//\n\nEMILIE: It's been good. Busy. Heather left so things have been a little crazy. \n\nYOU: She left? \n\nEMILIE: Yeah, she got an awesome job at Brown's version of Houghton.\n\nYOU: Wow, that's really cool! But I bet that library doesn't have the same secrets.\n\nEMILIE: Nope. But I'm sure it has some of its own.\n\nYOU: I'll have to go check it out\u2013see if there are any adventures there. It's not that far from where I live.\n\nEMILIE: Sounds like a good idea to me. What brings you back here today?\n\nYOU: Oh, I'm supposed to meet with the twins. They're letting me do some research with them for my science class.\n\nEMILIE: The twins?\n\nYOU: You know, the twins! The twins?\n\nEMILIE: Nope.\n\nYOU: The twins. They work in the basement? The moss stuff? And the books? The time travel? The cow!?\n\nEMILIE: I'm not sure I know what you're talking about.\n\nYOU: Carla and Jeff. Their names are Carla and Jeff. I met them here last time.\n\nEMILIE: I'm sorry, no one named Carla works here, and the last employee named Jeff quit four months ago.\n\nYou: (link-reveal:\"Uhh...\")[\n\nEMILIE: I'm just messing with you. I'll go get them.\n\n[[''- THE END -''|END]]]",
+      "links": [
+        {
+          "text": "''- THE END -''",
+          "destination": {
+            "name": "END",
+            "pid": 152
+          }
+        }
+      ]
+    },
+    {
+      "pid": 152,
+      "name": "END",
+      "text": "Thank you for playing! To view the digitized versions of the materials referenced, check out the [[references!|Acknowledgements and References]]\n\n***\n\n[[Back to Start|Introduction]]\n[[Acknowledgements and References]]\n[[Publishing Information]]\n\n***\n\n<a href=\"http://www.devonguinn.com\" target=\"_blank\">Devon's Site</a>\n<a href=\"http://hcl.harvard.edu/libraries/houghton/\">Houghton Library</a>",
+      "links": [
+        {
+          "text": "references!",
+          "destination": {
+            "name": "Acknowledgements and References",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Back to Start",
+          "destination": {
+            "name": "Introduction",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Acknowledgements and References",
+          "destination": {
+            "name": "Acknowledgements and References",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Publishing Information",
+          "destination": {
+            "name": "Publishing Information",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 153,
+      "name": "Beep boo doop.",
+      "text": "Blah blah blah boop bored.\n\nBored [[bored bloop]] doop beep.\n\nYou wallow and wallow in your boredom, surrounded by treasures that you could easily [[look at.|Display Room - Looking Around]]",
+      "links": [
+        {
+          "text": "bored bloop",
+          "destination": {
+            "name": "bored bloop",
+            "pid": 156
+          }
+        },
+        {
+          "text": "look at.",
+          "destination": {
+            "name": "Display Room - Looking Around",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 154,
+      "name": "da ba da.",
+      "text": "Bleep bloop beep.\n\n[[Some people walk into the room.|Display Room - Twins]]",
+      "links": [
+        {
+          "text": "Some people walk into the room.",
+          "destination": {
+            "name": "Display Room - Twins",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 155,
+      "name": "Doop",
+      "text": "Bow bow boop.\n\nBored [[bored bloop]] beep.",
+      "links": [
+        {
+          "text": "bored bloop",
+          "destination": {
+            "name": "bored bloop",
+            "pid": 156
+          }
+        }
+      ]
+    },
+    {
+      "pid": 156,
+      "name": "bored bloop",
+      "text": "You glance up at the incredible collection of books and items around you, but continue to sit and be bored. \n\nBoop doop bah.\n\nBap [[da ba da.]]",
+      "links": [
+        {
+          "text": "da ba da.",
+          "destination": {
+            "name": "da ba da.",
+            "pid": 154
+          }
+        }
+      ]
+    },
+    {
+      "pid": 157,
+      "name": "M - Monument Bridge",
+      "text": "''Nearing Monument''\n\nYou are near enough to the [[bridge|M - Bridge]] to see the monument that lies across from it. \n\nOdd. When you were here months ago, there were two monuments, one the [[Minuteman Statue|M - Minuteman]] and the other the obelisk. Now, you see only the [[obelisk.]] \n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "bridge",
+          "destination": {
+            "name": "M - Bridge",
+            "pid": 159
+          }
+        },
+        {
+          "text": "Minuteman Statue",
+          "destination": {
+            "name": "M - Minuteman",
+            "pid": 160
+          }
+        },
+        {
+          "text": "obelisk.",
+          "destination": {
+            "name": "obelisk.",
+            "pid": 161
+          }
+        }
+      ]
+    },
+    {
+      "pid": 158,
+      "name": "M - River",
+      "text": "''Riverside''\n\nIt is certainly the most unexcitable and sluggish stream that ever loitered, imperceptibly, towards its eternity, the sea. One could spend three weeks beside it before realizing which way the current flows. The torpor of its movement allows it nowhere a bright pebbly shore, nor so much as a narrow strip of glistening sand, in any part of its course.\n\nHowever, in the light of a calm and golden sunset, it is lovely beyond expression. Each tree and rock, and every blade of grass, is distinctly imaged, and, however unsightly in reality, assumes ideal beauty in the reflection. The minutest things of earth, and the broad aspect of the firmament, are pictured equally without effort, and with the same felicity of success.\n\nWalking past [[the orchard,|M - Apple Trees]] you can get back to the [[manse.|M - Main Hall]] Following the river a bit, you'll reach the [[bridge.|M - Bridge]] \n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "the orchard,",
+          "destination": {
+            "name": "M - Apple Trees",
+            "pid": 164
+          }
+        },
+        {
+          "text": "manse.",
+          "destination": {
+            "name": "M - Main Hall",
+            "pid": 104
+          }
+        },
+        {
+          "text": "bridge.",
+          "destination": {
+            "name": "M - Bridge",
+            "pid": 159
+          }
+        }
+      ]
+    },
+    {
+      "pid": 159,
+      "name": "M - Bridge",
+      "text": "''Bridge''\n\nThe bridge covers a peaceful river. On this side, there are two or three elms that, despite their youth, provide ample shade. Behind you is the [[field.|M - Field]] On the farther side is a clump of elderbushes and a large [[obelisk.]] There is [[a large patch of apple trees|M - Apple Trees]] nearer the manse.\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "field.",
+          "destination": {
+            "name": "M - Field",
+            "pid": 105
+          }
+        },
+        {
+          "text": "obelisk.",
+          "destination": {
+            "name": "obelisk.",
+            "pid": 161
+          }
+        },
+        {
+          "text": "a large patch of apple trees",
+          "destination": {
+            "name": "M - Apple Trees",
+            "pid": 164
+          }
+        }
+      ]
+    },
+    {
+      "pid": 160,
+      "name": "M - Minuteman",
+      "text": "''Statue''\n\nThe Minuteman Statue (that is not here) commemorated the start of the Revolutionary War.\n\nIt's lucky that your memory is so sharp. You remember the front inscription, exactly. It's the opening verse to Concord Hymn, a poem by Ralph Waldo Emerson.\n\n//\"By the rude bridge \nthat arched the flood,\nTheir flag to April's\nbreeze unfurled.\nHere once the embattled\nfarmers stood,\nAnd fired the shot heard\nround the world.\"//\n\nOn the back, there was the date the war started: \n\n//\"1775\nThe Nineteenth of April\"//\n\nUnderneath, there was the date the statue was erected, but you can't for the life of you remember when that was. Perhaps your memory isn't so sharp after all.\n\n[[Back.|M - Monument Bridge]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Back.",
+          "destination": {
+            "name": "M - Monument Bridge",
+            "pid": 157
+          }
+        }
+      ]
+    },
+    {
+      "pid": 161,
+      "name": "obelisk.",
+      "text": "''Obelisk''\n\nThe obelisk is a silhouette against the sky. There is a small grave dedicated to the British soldiers to the left. The inscription looks hardly a decade old.\n\n(click:\"The inscription\")[//\u201cHere on the 19 of April 1775 was made the first forcible resistance to British aggression. On the opposite bank stood the American Militia. Here stood the Invading Army and on this spot the first of the Enemy fell in the War of that Revolution which gave Independence to these United States. In gratitude to God and in the love of Freedom this Monument was dedicated. AD 1836.\u201d//\n\n]{\n}Some [[books and papers|M - Ob. Books]] are strewn about, along with some pens and pencils. A [[half eaten apple|M - Apple]] rests on a napkin.\n\nBack across the [[bridge|M - Bridge]] is the [[field.|M - Field]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "books and papers",
+          "destination": {
+            "name": "M - Ob. Books",
+            "pid": 162
+          }
+        },
+        {
+          "text": "half eaten apple",
+          "destination": {
+            "name": "M - Apple",
+            "pid": 163
+          }
+        },
+        {
+          "text": "bridge",
+          "destination": {
+            "name": "M - Bridge",
+            "pid": 159
+          }
+        },
+        {
+          "text": "field.",
+          "destination": {
+            "name": "M - Field",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 162,
+      "name": "M - Ob. Books",
+      "text": "The papers are covered with beautiful handwriting. Some of the books are bookmarked, some open. (if:$ob is 0)[One piece of paper has some [[moss growing on it.|Side Stories, Manse]] On the corner it says \"YGB.\"(set:$ob to 1)]\n\n[[Back.|obelisk.]]\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "moss growing on it.",
+          "destination": {
+            "name": "Side Stories, Manse",
+            "pid": 97
+          }
+        },
+        {
+          "text": "Back.",
+          "destination": {
+            "name": "obelisk.",
+            "pid": 161
+          }
+        }
+      ]
+    },
+    {
+      "pid": 163,
+      "name": "M - Apple",
+      "text": "{(if:$chapter is 4)[The apple looks freshly half-eaten. It is crispy white and looks delicious.]\n\n(if:$chapter is 6)[The apple looks like it's been here for about an hour. The corners are starting to dry, and it is starting to brown, albeit slightly.]\n\n(if:$chapter is 8)[The apple is brown and dry, but not moldy or black. It must have been out here for a few hours.]}\n\n[[Back.|obelisk.]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Back.",
+          "destination": {
+            "name": "obelisk.",
+            "pid": 161
+          }
+        }
+      ]
+    },
+    {
+      "pid": 164,
+      "name": "M - Apple Trees",
+      "text": "''Orchard''\n\nThe apple trees are in their prime. You can get back to the [[avenue|M - Avenue]] from here, go through the [[field,|M - Field]] head toward the [[river,|M - River]] or [[enter the manse|M - Main Hall]] through the back. \n\nThere is a piece of paper resting on the ground. (click:\"piece of paper\")[It reads:\n\n//An orchard has a relation to mankind, and readily connects itself with matters of the heart. The trees possess a domestic character; they have lost the wild nature of their forest-kindred, and have grown humanized by receiving the care of man, as well as by contributing to his wants. There is so much individuality of character, too, among apple-trees, that it gives them an additional claim to be the objects of human interest. One is harsh and crabbed in its manifestations; another gives us fruit as mild as charity. One is churlish and illiberal, evidently grudging the few apples that it bears; another exhausts itself in free-hearted benevolence.//]\n\n",
+      "links": [
+        {
+          "text": "avenue",
+          "destination": {
+            "name": "M - Avenue",
+            "pid": 102
+          }
+        },
+        {
+          "text": "field,",
+          "destination": {
+            "name": "M - Field",
+            "pid": 105
+          }
+        },
+        {
+          "text": "river,",
+          "destination": {
+            "name": "M - River",
+            "pid": 158
+          }
+        },
+        {
+          "text": "enter the manse",
+          "destination": {
+            "name": "M - Main Hall",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 165,
+      "name": "light up the room.",
+      "text": "The only other decorations are a purple vase of flowers, always fresh, and a bronze one containing graceful ferns. A few small clay pots dot the space, all newly empty, all with small scribbles on them that are likely illegible to anyone but the person who wrote it. One looks like it could say \"at forest's center.\"\n\n[[Back.|M - Main Hall]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Back.",
+          "destination": {
+            "name": "M - Main Hall",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 166,
+      "name": "M - Four Lower Rooms",
+      "text": "''Lower Rooms''\n\nThe four rooms occupy the four corners of the house. Each of them has a fireplace, reminiscent of the old times when parishioners would contribute cords of wood to the ministers who once lived here. Each room has exposed ceiling beams and elaborate paneling. They are pleasant, but you find nothing of interest.\n\nThe back door leads to the [[river,|M - River]] and the [[main hall|M - Main Hall]] leads back to the [[avenue.|M - Avenue]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "river,",
+          "destination": {
+            "name": "M - River",
+            "pid": 158
+          }
+        },
+        {
+          "text": "main hall",
+          "destination": {
+            "name": "M - Main Hall",
+            "pid": 104
+          }
+        },
+        {
+          "text": "avenue.",
+          "destination": {
+            "name": "M - Avenue",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 167,
+      "name": "M - Upper Four Rooms",
+      "text": "''Upper Rooms''\n\nThe four upper rooms occupy the four corners of the house. Each of them has a fireplace, like the lower four rooms, and each similarly has exposed ceiling beams and elaborate paneling. You find nothing of interest, other than [[the study.|M - Study]]\n\nThe [[upper hall|M - Upper Hall]] leads back to the [[main hall.|M - Main Hall]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "the study.",
+          "destination": {
+            "name": "M - Study",
+            "pid": 168
+          }
+        },
+        {
+          "text": "upper hall",
+          "destination": {
+            "name": "M - Upper Hall",
+            "pid": 137
+          }
+        },
+        {
+          "text": "main hall.",
+          "destination": {
+            "name": "M - Main Hall",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 168,
+      "name": "M - Study",
+      "text": "''Saints Chamber''\n\nThe study has three windows, set with little, old-fashioned panes of glass, each with a crack across it. The two on the western side look, or rather peep, between the willow-branches, down into the orchard, with glimpses of the river through the trees. The third, facing north-ward, commands a broader view of the river. One of them has [[a small message etched in the glass.]]\n\nThere is a [[small closet,|M - Closet]] a desk with a drawer, a few other random things.\n(click:\"a desk with a drawer\")[\nIn the drawer are years and years worth of sermons that have been untouched for a long time.\n] \nOutside of this small, whitewashed room is the [[upper hall.|M - Upper Hall]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "a small message etched in the glass.",
+          "destination": {
+            "name": "a small message etched in the glass.",
+            "pid": 169
+          }
+        },
+        {
+          "text": "small closet,",
+          "destination": {
+            "name": "M - Closet",
+            "pid": 170
+          }
+        },
+        {
+          "text": "upper hall.",
+          "destination": {
+            "name": "M - Upper Hall",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 169,
+      "name": "a small message etched in the glass.",
+      "text": "//Man's accidents are God's purposes. Sophia A. Hawthorne 1843\n\nNath Hawthorne This is his study\n\nThe smallest twig leans clear against the sky\n\nComposed by my wife and written with her diamond\n\nInscribed by my husband at sunset, April 3 1843. In the Gold light.\n\nSAH//\n\n[[Back.|M - Study]]\n\n(set:$exp to $exp + 1)\n(if:$exp >= $emax)[(goto:\"Continue Page\")]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Continue Page",
+            "pid": 117
+          }
+        },
+        {
+          "text": "Back.",
+          "destination": {
+            "name": "M - Study",
+            "pid": 168
+          }
+        }
+      ]
+    },
+    {
+      "pid": 170,
+      "name": "M - Closet",
+      "text": "''Closet''\n\nThe closet has this and that. It's odd to go through another person's closet. (if:$bk is 0)[Anyway, the back of the closet has a [[loose panel.]]] \n\n[[Back.|M - Study]]",
+      "links": [
+        {
+          "text": "loose panel.",
+          "destination": {
+            "name": "loose panel.",
+            "pid": 171
+          }
+        },
+        {
+          "text": "Back.",
+          "destination": {
+            "name": "M - Study",
+            "pid": 168
+          }
+        }
+      ]
+    },
+    {
+      "pid": 171,
+      "name": "loose panel.",
+      "text": "''Space Under the Attic Stairs''\n\nThe small, secret space must have once been used to hide fugitive slaves. If not that, than some other wholesome but dangerous secret. Now, it's dark, and covered in cobwebs. It's empty, aside from the daddy long legs and a tiny, closed booklet. \n\n(click:\"closed booklet.\")[The booklet opens right up to the middle, likely due to the [[moss|Side Stories, Manse]] that is wedged between those pages. It's too dark to read the writing.]",
+      "links": [
+        {
+          "text": "moss",
+          "destination": {
+            "name": "Side Stories, Manse",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 172,
+      "name": "Barista",
+      "text": "Gosh. What's your thing with baristas? You've dated two already. Though in high school, a lot of students are baristas. This one was particularly cute though. And you're ninety nine percent sure that that was a wink, at the end there, and not a twitch.\n\n[[Ah...|Walking up to Houghton]]",
+      "links": [
+        {
+          "text": "Ah...",
+          "destination": {
+            "name": "Walking up to Houghton",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 173,
+      "name": "Accessibility",
+      "text": "I am in the process of making this game more accessible, especially for screen readers. \n\n(link-reveal:\"Click here if you would like to be alerted when a link will open a new tab.\")[{\n\n(set:$acc to 1)\n\n}]\n\n[[Back.|Introduction]]\n",
+      "links": [
+        {
+          "text": "Back.",
+          "destination": {
+            "name": "Introduction",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 174,
+      "name": "Notes to self",
+      "text": "[[Accessibility]]\n(fix the screen reader issue, tell about new tabs, set the $acc to 0)\n\ndo this!",
+      "links": [
+        {
+          "text": "Accessibility",
+          "destination": {
+            "name": "Accessibility",
+            "pid": 173
+          }
+        }
+      ]
+    }
+  ]
+}

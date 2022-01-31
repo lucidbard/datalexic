@@ -1,0 +1,908 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Run away and open the third door",
+      "text": "As the Orc lets out a gutteral roar I immediately turn on my heal and run narrowly miss being hit by the club.  As I sprint to the third door and fling it open I hear a small click. \\n\\n[As you open the door a ball of fire engulfs you and the Orc charring you both and when it reaches the first room the gasoline ignites blowing up the entrance to the cave.]\\n\\nGame over.",
+      "links": []
+    },
+    {
+      "pid": 2,
+      "name": "Wake up and explore.",
+      "text": "I look down and I\u2019m wearing a soft white garment that goes down to my knees. Reminds me of the blouse I wear at SCA events. Getting a little weirded out because someone must of undressed me while I was out, I get up. My legs feel like rubber and I have to lean against the wall until they feel steady.\\n\\nThe door opens and a girl walks in. She is dressed in beautiful chainmail and plate armor. I start to drool thinking, I would kill my first born for armor like that. You have completely overlooked the grey wings that are coming out of her back.\\n\\nShe says \u201cI was starting to get a little worried. The first time you teleport can be hard on a being.\u201d\\n\\nMy jaw drops. \u201cTeleportation? What in the hell do you want with me?\u201d\\n\\nShe replies, \u201cYou are special. I was told how to find you and when to be there. It is all for your safety that you are here at all. If those in Midgard knew what you are then they would've used you as a lab rat till you died alone and miserable.\\n\\nMy knees went weak at that thought. \u201cThen what am I? I see a person glow with what seems to be an inner light and they get brighter and brighter until THEY DIE. I lost my best friend and my little foster brother. Do you know how hard it is to know that someone is gonna die?\u201d\\n\\n\u201cYou are gonna be fun. That is good. You will recover faster and live longer here.\u201d She chuckled. \u201cHere is Asgard. And the rest I will tell you after we do something. Here we need to get you ready. We can\u2019t keep them waiting.\u201d \\n\\n[[You throw a fit and refuse to get dressed.]]\\n[[You go along with her because you might get some answers. ]]",
+      "links": [
+        {
+          "text": "You throw a fit and refuse to get dressed.",
+          "destination": {
+            "name": "You throw a fit and refuse to get dressed.",
+            "pid": 9
+          }
+        },
+        {
+          "text": "You go along with her because you might get some answers. ",
+          "destination": {
+            "name": "You go along with her because you might get some answers.",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Assume that you lost it and the king will be angry, so you run away",
+      "text": "You don\u2019t think that anyone stole the necklace, because you think you\u2019re the one\\nwho lost it. You decide it would be best to run away. As you are escaping you fall\\ninto a deep hole and can\u2019t get out. Your magic won\u2019t let you escape either. You spend the rest of your days in the hole.\\n\\nThe End\\n\\nGo back to the [[Start]] of the story.",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Grab the necklace and everything in the room",
+      "text": "It took three hours and a \"borrowed\" van but I managed to steal every last coin in the room without anyone noticing.  I returned Freya's necklace and she gave me her thanks and assurance that Loki would not be a problem in the future.  I returned home and began planning a new life with my acquired fortune happily thinking that I now didn't have to rent a van to move. My thoughts wandered to thinking just how pissed Loki would be when he finds out what I did; gold coins... $3 million, historical art... $5 million, the look on Loki's face when he opens the door... priceless.\\n\\nEnd ",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "Start to slowly back up.",
+      "text": "Bryndis put her hand on your back and says \u201cThere is nothing to worry about. Our Lord is a good being but we all must remember that he is a God and they think differently than we do. Only if you do him, or whom he counts as his, wrong will there be retaliation against you.\u201d\\n\\nYou take a deep breath and shake your head yes. \u201cI am terrified of all of this but I still want answers.\u201d You take a step towards the door.\\n\\n[[Go thru the door.]]",
+      "links": [
+        {
+          "text": "Go thru the door.",
+          "destination": {
+            "name": "Go thru the door.",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Accept Loki's offer to work for him",
+      "text": "Working for Loki isn't so bad.  I have a new house and I get to use my skills quite often.  Of course I can't show my face around Freya again but Loki says as long as I keep my end of the bargain I have nothing to worry about.\\n\\nEnd",
+      "links": []
+    },
+    {
+      "pid": 7,
+      "name": "Wait it out until they leave",
+      "text": "After a few minutes you hear footsteps outside your door leaving. You are relieved that\\nsomeone didn\u2019t just come in. You\u2019re still puzzled and confused. A few moments later there\u2019s\\nanother knock on the door. \u201cWho is it?\u201d you yell. \u201cIt\u2019s nobody.\u201d You recognize that voice;\\nit\u2019s the stranger who was there earlier. \u201cCome on in,\u201d you say. The stranger comes in. She\\nhas brought breakfast with her. It looks like a buffet almost. You think about the knock you\\nheard earlier and ask her if it was her. The stranger looks puzzled, \u201cI didn\u2019t knock on the\\ndoor. And if they didn\u2019t tell you who it was, it wasn\u2019t one of our people.\u201d You are glad you\\ndidn\u2019t let them in. \u201cThe king would like to see you as soon as you\u2019re done with breakfast,\u201d\\nthe stranger says.\\n\\n[[Eat your breakfast and meet the king]]\\n[[Avoid seeing the king, you are working out a way to escape]]",
+      "links": [
+        {
+          "text": "Eat your breakfast and meet the king",
+          "destination": {
+            "name": "Eat your breakfast and meet the king",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Avoid seeing the king, you are working out a way to escape",
+          "destination": {
+            "name": "Avoid seeing the king, you are working out a way to escape",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Go to the underworld",
+      "text": "I was able to sneak into the underworld and find Loki's cave without being discovered. Once inside the cave I notice that there are 3 door down the hall all of which are locked. \\n\\n[[Open the first door]]\\n\\n[[Open the second door]]\\n\\n[[Open the third door]]",
+      "links": [
+        {
+          "text": "Open the first door",
+          "destination": {
+            "name": "Open the first door",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Open the second door",
+          "destination": {
+            "name": "Open the second door",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Open the third door",
+          "destination": {
+            "name": "Open the third door",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "You throw a fit and refuse to get dressed.",
+      "text": "\u201cI\u2019m not going anywhere until you tell me what is going on.\u201d I reply after I fold my arms and sit. \u201cYou can\u2019t make me.\u201d\\n\\n\u201cHilda, I\u2019m sorry but I don\u2019t have permission to tell you anything more.\u201d She says with a sad look. \u201cI will come back later to see if you have changed your mind.\u201d\\n\\nShe walks to the door but before she grabs the handle you ask, \u201cWhat is your name anyways?\u201d\\n\\n\u201cIts Bryndis.\u201d As she grabs the handle and walks out.\\n\\nYou sit there for what seems like hours. Another lady walks in and starts to clean around the room. She completely ignores your attempts to chat with her. A little while later she leaves at a knock on the door to come right back in with a tray of food. She sits it down on the dresser on the other side of the room. She leaves again. I wait for about 15 minutes and nobody comes in.\\n\\n[[Eat the food.]]\\n[[Let the food sit.]] ",
+      "links": [
+        {
+          "text": "Eat the food.",
+          "destination": {
+            "name": "Eat the food.",
+            "pid": 49
+          }
+        },
+        {
+          "text": "Let the food sit.",
+          "destination": {
+            "name": "Let the food sit.",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Find another way in",
+      "text": "After circling the building I found a fire escape and quitely climbed to the second floor and forced open the window.  Upon entering I was momentarily dumbstruck by what I saw.  The room was full of gold, treasure, and valuable art.  Everything here looks like it would fetch a high price.  In the center of the room on a pedistal I see Freya's necklace, even more beautiful than she described.  Suddenly, I hear footsteps outside the door and a key being inserted into the lock.\\n\\n[[Grab the necklace and head out the window]]\\n\\n[[Position yourself to assinate the person coming through the door]]\\n\\n[[Hide behind a mound of gold.]]",
+      "links": [
+        {
+          "text": "Grab the necklace and head out the window",
+          "destination": {
+            "name": "Grab the necklace and head out the window",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Position yourself to assinate the person coming through the door",
+          "destination": {
+            "name": "Position yourself to assinate the person coming through the door",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Hide behind a mound of gold.",
+          "destination": {
+            "name": "Hide behind a mound of gold.",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Decide not to go or to help them but start your journey to find your way home",
+      "text": "Crazy people, you think to yourself. You decide to try to find your way home\\ninstead. As you\u2019re walking to what you think is home, you find a little path and decide to\\ntake it. It\u2019s very dark so you use magic to light the way for yourself, but you can only see\\nwhat\u2019s 3 feet in front of you. As you\u2019re walking, you hear what sounds like footprints. You\\nturn around, but there\u2019s nothing there. You keep walking through the path, though now you\\nare very scared. You keep hearing footsteps, but you never see anything. When you\u2019re\\nfinally about to exit the creepy path, you hear a roar and see a wolf running towards you.\\nYou\u2019re too panicked to do anything; you just stand there horrified. The wolf eats your face\\nand you die.\\n\\nThe End\\n\\nGo back to the [[Start]] and play another story",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Position yourself to assinate the person coming through the door",
+      "text": "As a portly, balding man walks through the door I clap my hand over his mouth and sink my blade into his back.  I do not remove my hand until I cannot feel his breath.  When from behind me I hear a slight snicker, look through the door, and see Loki standing there with an amused look on his face. \"You've done very well to get this far and I must congratulate you.  But if you take that necklace I will hunt you down.  So you have a choice; either work for me or die; the choice is yours.\"\\n\\n[[Accept Loki's offer to work for him]]\\n\\n[[Grab the necklace and head out the window]]",
+      "links": [
+        {
+          "text": "Accept Loki's offer to work for him",
+          "destination": {
+            "name": "Accept Loki's offer to work for him",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Grab the necklace and head out the window",
+          "destination": {
+            "name": "Grab the necklace and head out the window",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "You go with the man Loki",
+      "text": "You agree to leave with Loki. \u201cI\u2019ll explain everything once we get to my palace.\u201d Palace?\\nYou think to yourself. Why would he live in a palace? You hold off asking him because he\\nsaid he would explain. Loki takes you to his palace on a carriage. You feel the carriage\\nmoving super-fast, but you don\u2019t want to look out the window. \u201cWe\u2019re here!\u201d Loki exclaims.\\nHe holds the door open for you to get out. As you step out of the carriage, you notice that\\nthis place looks a lot different from where you were before. \u201cWhere exactly are we?\u201d You\\nask Loki. \u201cWe\u2019re at my home, in the underworld.\u201d Loki replies. \u201cUnderworld?\u201d you ask\\nhim. \u201cYes, I am Loki, God of the underworld. You ask him why you were brought to this\\n\\nstrange place and why you are able to see a glowing light around people when they are\\ngoing to die. \u201cI can tell you or I can show you\u201d he says.\\n\\n[[Have Loki tell you]]\\n[[Have Loki show you]]",
+      "links": [
+        {
+          "text": "Have Loki tell you",
+          "destination": {
+            "name": "Have Loki tell you",
+            "pid": 47
+          }
+        },
+        {
+          "text": "Have Loki show you",
+          "destination": {
+            "name": "Have Loki show you",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Run to King Odin and tell him that you assume someone stole it",
+      "text": "You run over to King Odin and tell him that you think someone stole the\\nnecklace. \u201cI can\u2019t find it!\u201d you exclaim. \u201cAll I found was this jewel; it was on the\\nnecklace, but it must have fallen off.\u201d King Odin looks at you with a frown upon\\nhis face. \u201cHilda, we need that necklace to make you become great.\u201d King Odin\\nresponds. \u201cI will send you to my wife,\u201d King Odin says, \u201cShe\u2019ll help you retrieve the\\nnecklace.\u201d You are taken to see Odin\u2019s wife, Freya. You arrive at her study. \u201cI am\\nFreya, goddess of beauty, love, and destiny. How can I assist you?\u201d she kindly\\nasks. \u201cI am Hilda, the wizardess, your husband Odin sent me to you. I seem to\\nhave lost or had stolen the necklace of jewels. King Odin said I would need it to\\nbecome the greatest wizardess there ever was. Can you help me locate it?\u201d you\\nask her. \u201cOf course I can; I created that necklace after all.\u201d Freya responds.\"If you\\ncreated the necklace, then why do I have it?\" you ask Freya. \"It was appointed to\\nyou, because you were the only one that I trusted to keep it safe. Loki, the king\\nof the underworld, has been after it for many years. You had kept if safe for all\\nthese years, but now that you've come to Asgard, it has somehow disappeared.\"\\nFreya explains. You follow Freya as she motions you to do so. \"This crystal ball will\\ntell me exactly where the necklace is, but I need you to use some of your magic\\nto help me with this.\" she tells you. You agree and within moments the crystal\\nball starts glowing and you can see exactly where the necklace is. It is in the\\npossession of Loki in the underworld. \"you must go to the underworld alone and\\nretrieve the necklace,\" Freya tells you.\\n\\n[[Go to the underworld alone to retrieve the necklace]]\\n[[Don't go but help Freya and Odin from Asgard]]\\n[[Decide not to go or to help them but start your journey to find your way home]]",
+      "links": [
+        {
+          "text": "Go to the underworld alone to retrieve the necklace",
+          "destination": {
+            "name": "Go to the underworld alone to retrieve the necklace",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Don't go but help Freya and Odin from Asgard",
+          "destination": {
+            "name": "Don't go but help Freya and Odin from Asgard",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Decide not to go or to help them but start your journey to find your way home",
+          "destination": {
+            "name": "Decide not to go or to help them but start your journey to find your way home",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Eat your breakfast and meet the king",
+      "text": "E.\\nYou decide to eat breakfast and then to meet the king when you are\\nfinished. To finish faster, you use a magic spell to make everything shrink. Once\\nyou have finished you tell the stranger that you are ready to see the king. She\\nsuggests that you clean up before meeting the king. You use another one of\\nyour spells to get clean. You\u2019re so anxious to meet the king and can\u2019t wait. The\\nstranger then agrees to take you to the king. You finally leave the tower and\\nnotice how beautiful it is outside. The stranger takes you on a path surrounded\\nby beautiful roses. Suddenly, you come to a stop; in front of you are two white\\nwooden doors that look as if they\u2019re 20 feet tall. It takes 4 men to open each door.\\nYou are directed to go inside alone. You feel scared since the stranger won\u2019t be\\nat your side anymore. You walk up to the king sitting on his throne, but you say\\nnothing. \u201cMy name is King Odin, I am the king of all,\u201d he says. \u201cI have brought you\\nto Asgard, because you are special,\u201d the king says. \u201cYou\u2019re the one that brought\\nme here? Why did you bring me? How am I special? When can I go home?\u201d you\\nsay. The king stops you there, please let me finish. You let him speak. \u201cYou are\\nHilda, the wizardess. You possess something of great value that can help you\\nimmensely in your training to become the best wizardess there ever was. It\u2019s a\\nnecklace made of many jewels.\u201d You remember taking it off before you got clean\\nand leaving it in the tower where you were. \u201cI left it in the tower before I came\\nhere your majesty,\u201d you tell the king. \u201cMay you retrieve it at this moment?\u201d he\\nasks you. You tell him that you\u2019ll be right back. You go back to the tower, but it\u2019s\\nnowhere to be found. You look everywhere and ask the stranger if she\u2019s seen it.\\nShe replies, \u201cNot since you took if off to get clean.\u201d You see something sparkle in\\nthe corner. You walk over to it; it is one of the jewels that was on the necklace.\\n\\n[[Run to King Odin and tell him that you assume someone stole it]]\\n[[Assume that you lost it and the king will be angry, so you run away]]",
+      "links": [
+        {
+          "text": "Run to King Odin and tell him that you assume someone stole it",
+          "destination": {
+            "name": "Run to King Odin and tell him that you assume someone stole it",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Assume that you lost it and the king will be angry, so you run away",
+          "destination": {
+            "name": "Assume that you lost it and the king will be angry, so you run away",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Have Loki show you",
+      "text": "You think it\u2019s best to keep the spell on you. You don\u2019t want people to die, who you have\\na chance to save. Loki sends you back home and you try to help people from passing\\naway. You are successful, as you had helped all, but one, of the people. However, you are\\nsummoned by King Odin once again. You awake in a tower and are told to eat the breakfast\\nthat has been given you.\\n[[Eat your breakfast and meet the king]]\\n[[Avoid seeing the king, you are working out a way to escape]]",
+      "links": [
+        {
+          "text": "Eat your breakfast and meet the king",
+          "destination": {
+            "name": "Eat your breakfast and meet the king",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Avoid seeing the king, you are working out a way to escape",
+          "destination": {
+            "name": "Avoid seeing the king, you are working out a way to escape",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Mistress Thief",
+      "text": "Thief.. Gets kicked out of homes. Kept getting caught stealing from everywhere. Self trained to be able to sneak into homes undetected while the family was sleeping. \\n\\n[[Speak with Freya]]",
+      "links": [
+        {
+          "text": "Speak with Freya",
+          "destination": {
+            "name": "Speak with Freya",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Open the door",
+      "text": "You open the door and there is a man standing there. It is not the stranger that was there before. \u201cWho are you?\u201d you ask him. He is a rather pale man with a serious expression on his face. \u201cMy name is Loki\u201d the man says. \u201cWhat is your name?\u201d You hesitate at first because the man seems suspicious, but then you answer \u201cHilda, my name is Hilda\u201d.\\n\\nLoki gets a surprised look on his face. \u201cHilda, the wizardess I presume,\u201d he says. \u201cYes, that is me. How did you know I was a wizardess?\u201d you ask him.\\n\\n\u201cNo time to explain,\u201d he says. \u201cWe must go now\u201d.\\n\\n[[You go with the man Loki]]\\n\\n[[You refuse to leave with him and yell for someone to hear you]]",
+      "links": [
+        {
+          "text": "You go with the man Loki",
+          "destination": {
+            "name": "You go with the man Loki",
+            "pid": 13
+          }
+        },
+        {
+          "text": "You refuse to leave with him and yell for someone to hear you",
+          "destination": {
+            "name": "You refuse to leave with him and yell for someone to hear you",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Avoid seeing the king, you are working out a way to escape",
+      "text": "You\u2019re already too freaked out to stay and meet the king. You skip breakfast and run\\npast the stranger as she\u2019s setting up the table. \u201cHilda!\u201d you hear the stranger yell at you.\\nYou use one of your magic spells to teleport yourself elsewhere; but when you teleport it\u2019s\\nto the top of a hill and you tumble down the side. You pass out from hitting your head on a\\nrock. When you wake up, you\u2019re not in Asgard anymore. This place seems like a place you\\nremember. You\u2019re lying in a bed and realize you were just having a dream.\\n\\nThe End\\n\\nGo back to the [[Start]] to begin the story again. ",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Speak with Freya",
+      "text": "I was summoned by Freya becuase she heard that I am the best mortal thief and she needed my assistance to get back her necklace that was stolen by Loki. The necklace is gold and encrusted with diamonds and amber and was broken down into multiple pieces. Freya has been looking into the necklace's where abouts and believes that the necklace is being hidden in one of 2 places the [[underworld or earth]].\\n\\n[[Go to the underworld]] \\n\\n[[Go to earth]]\\n\\n",
+      "links": [
+        {
+          "text": "underworld or earth",
+          "destination": {
+            "name": "underworld or earth",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Go to the underworld",
+          "destination": {
+            "name": "Go to the underworld",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Go to earth",
+          "destination": {
+            "name": "Go to earth",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Go to earth",
+      "text": "With little difficulty I found the restaurant and through the store window I see that Loki and a large group of is men are sitting around and happily conversing.\\n\\n[[Go through the front door]]\\n\\n[[Find another way in]]",
+      "links": [
+        {
+          "text": "Go through the front door",
+          "destination": {
+            "name": "Go through the front door",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Find another way in",
+          "destination": {
+            "name": "Find another way in",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Go to the Underworld.",
+      "text": "Fenrir leads you to the stables\"Well lets go to the Underworld first. Where is Loki?\" I ask.\u201cAnd how much time do we have to get this done and back here to Midgard?\u201d\\n\\n\"He is being distracted at Hogwarts. Not sure doing what.\" Fenrir replies. \\n\\n\"Good can you teleport us directly to his lair?\" I ask. \"I think we can handle anything he has left there to protect the necklace. Now where is this portal?\u201d\\n\\nFenrir points to the back wall and says \u201cWalk thru the wall and it will teleport us there. Be ready for anything. I will lead the way and Bryndis will follow up last. Hilda just follow me and we will get this done.\u201d He starts walking and I follow thru what looks like a solid wall.\\n\\nEverything starts spinning around me. I hear a voice calling my name and I think I moved towards it. Next thing I see is a dim cave with what looks like a foot of dust on everything. \\n\\n\"Well I'm making a guess that nothing is here now if it ever was.\" I say after taking a look around. \"Lets go to Earth.\"\\n\\n[[Go to Midgard (Earth).]]",
+      "links": [
+        {
+          "text": "Go to Midgard (Earth).",
+          "destination": {
+            "name": "Go to Midgard (Earth).",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Go through the front door",
+      "text": "As you enter the restaurant and warmly greet the occupants a dead silence falls over the room, which is only broken when Loki jumps to his feel and shouts, \"Kill him!\"  Without another thought the other patrons leap to their feet and proceed to beat you to a bloody pulp.\\n\\nGame over... why did you think the front door was a good idea?",
+      "links": []
+    },
+    {
+      "pid": 24,
+      "name": "Go to Midgard (Earth).",
+      "text": " Fenrir leads you to the stables and says, \u201cOkay, lets change our looks. Bryndis is in charge of that. We need 3 illusions of bland people. Give us faces, outfits, etc. so when someone looks at us they would never recognize us again. Utility workers, pest control, or even the cable guy will work. Now Hilda what sounds best to you?\u201d\\n\\n\u201cHow much time do we have to get this done and back here to Midgard?\u201d I ask. \u201cBryndis can you turn off the power in the building or make a pipe burst? In the movies they have limits on that stuff so I don\u2019t want to misjudge your abilities.\u201d\\n\\n\u201cWe have one week to find the necklace,\u201d Bryndis replies, \u201cThe only limit I have found is that of my imagination. I can arrange either one just tell me which one and where.\u201d\\n\\n\u201cDo you remember what I was wearing when I was brought here? Just a t-shirt, jeans, and shoes?\u201d Bryndis nods. \u201cOkay put us in dark color variations of those clothes. Is our armor still effective and will all they see is what we want them to see?\u201d Bryndis nods again. \u201cGreat! This will work out fine. Now where is this portal?\u201d\\n\\nFenrir points to the back wall and says \u201cWalk thru the wall and it will teleport us to a safe spot near his restaurant. Loki isn\u2019t very original. It is an Italian restaurant. When he is on Earth he never leaves the place. I know that he is not on this realm for the moment or he would be able to sense our arrival. I will lead the way and Bryndis will follow up last. Hilda just follow me and we will get this done.\u201d He starts walking and I follow thru what looks like a solid wall.\\n\\nEverything starts spinning around me. I hear a voice calling my name and I think I moved towards it. Next thing I see is a dim room around me. It looks like a basement with boxes and other stuff that seems to be in storage.\\n\\n\u201cAre you both ok? If so lets get moving. The sooner we get topside the sooner we can get back to Asgard and training for the next project.\u201d Fenrir states as he starts towards the door.\\n\\n\u201cWe need the nearest library or cyber cafe to look up the building plans for the restaurant. This will give us a better idea on what to expect when we get there.\u201d I say while following Fenrir up the stairs. He leads us out of the building and conveniently there is a Cyber Coffee across the street. \u201cThat will work. Do you guys know how to use a computer?\u201d They both shake their head no. \u201cOk... Anybody have any American money for copies and such?\u201d\\n\\n\u201cPeople will just not notice us and we will get what we need.\u201d Fenrir says. \u201cThey know we are here but won\u2019t care.\u201d\\n\\n\u201cAnd if I wanted a coffee?\u201d I ask.\\n\\n\u201cAsk and they will make it but not notice that they didn\u2019t charge you for it.\u201d He replies.\\n\\n\u201cThat is epic.\u201d I laugh out loud. \u201cLets go get what we need.\u201d We cross the street and go into the shop. I grab a coffee and then a computer and easily pull up the building plans after getting the location of the restaurant from Fenrir. \u201cPrint and done. Lets go find a food place where we can look this over and plan what is next.\u201d I go to the counter and ask for the best pizza place in town. We are in Chicago after all.\\n\\nWe go outside and a taxi pulls up as if by magic. The driver pulls up to the pizza place and we go in. We take a table in the back, order a deep dish pizza, and pull out the building plans. \u201cNow here is the entrance.\u201d I point to a spot on the page. \u201cWe need something to make enough of a mess for them to have to schedule someone to come in and clean overnight. How about the sewer system backs up? Or one of the fridges/ freezer loses power? Something that can be a real enough illusion but needs a crew called in. Bryndis which one would be easiest to do and hold?\u201d\\n\\n\u201cProbably the sewer backing up. All I have to do is push sewage from the drains here, here, and here.\u201d As she points to spots on the map. \u201cBack up all the toilets and wa-la. Somewhere nobody wants to be. Lets make some flyers up and pass around the neighborhood. It will give us the night to get the place searched for the necklace and then hopefully back to Asgard. If not we know where Loki stays in the underworld while he is there. Two days here and maybe another two days there.\u201d\\n\\n\u201cOkay lets enjoy the pizza, find a place to stay for the night, and get going early tomorrow morning. I don\u2019t mean to be bossy but I have the impression that I am supposed to get it done and you are here for support and info on Loki\u2019s normal haunts. I really don\u2019t want to offend either of you because I know we will probably end up friends after this and at the very least I will need your help during the whole process.\u201d\\n\\nFenrir laughs, \u201cI think you are doing fine. And you are exactly right. We have been ordered to be support but the ideas have to come from you. I agree with everything you have done so far. None of us are thieves to get in undetected.\u201d\\n\\nWe all laughed at that and dug into the pizza.\\n\\nThe next morning we went back to the Cyber Coffee to print out some flyers and then off to the street to pass them out. I had Bryndis put a real companies info on all but the one flyer that we dropped at Loki\u2019s restaurant. His looked exactly the same except if they called the number on it they would actually be dialing the prepaid phone number that we had just activated.\\n\\n\u201cAll right Bryndis set the illusion of sewage to go off at the end of the lunch rush with it steadily getting worse thru dinner rush. We should get a call around that time.\u201d I say nervously. \u201cI hope I can keep it together until then.\u201d\\n\\n\u201cSpell is set. Lets find a place to hang out until they call.\u201d Bryndis replies.\\n\\nIt is about 2 hours later and the phone rings. \u201cH&B Sewage Issues. We clean up stuff you don\u2019t want to mention. This is Helen. How can I help you?\u201d I breathe into the phone.\\n\\n\u201cUm, yeah I need immediate help at Loki\u2019s Italian Place on 35th St and 9th. Everything is backing up. I can\u2019t hide it from the customers and the smell won\u2019t get out of my nose. It\u2019s freaking gross. How fast can you get here?\u201d From a deep male voice with a hint of panic in it.\\n\\n\u201cWe can be there in 30 minutes. I have a crew just a little ways from you finishing up a job. Who do I have them ask for?\u201d I reply to the voice.\\n\\n\u201cThat sounds great. Have your people ask for Tony. They will get me.\u201d Tony says.\\n\\n\u201cWe will be there. We guarantee a better day after we are gone.\u201d I say as I hang up the phone.\\n\\n\u201cThat was faster than I expected. I guess someone has a sensitive nose.\u201d I laughed. \u201cLets get moving. We have 30 minutes. The van we are \u201cborrowing\u201d is out back. Bryndis don\u2019t forget to set the illusions on us and the van\u201d\\n\\nWe drive to the restaurant and there is a definite aroma coming from the place. Open the door and the stench about knocked me on my feet. There is a girl at the front door with a cloth over her nose.\\n\\nFenrir asks her, \u201cIs Tony here? He called us about an issue.\u201d\\n\\n\u201cYes... Come right this way.\u201d She leads us down a long hall to an office and opens the door for us. \u201cTony they are here. Can I go home? I\u2019m gonna lock the front door because nobody is gonna come in to eat with this smell.\u201d\\n\\nTony waves her away saying, \u201c You are right. Have everybody else go home also. Have an evening off on me.\u201d\\n\\n\u201cThank you Tony,\u201d she says with relief. She closes the door as she leaves the room.\\n\\n\u201cYou guys are early. Thanks for getting here. Let me show you the mess and you can give me a time frame as to how long it will take for cleanup.\u201d Tony says as he leaves the office.\\n\\nHe takes you back to the kitchen and there is a thin layer of sewage on the floor. He points out the drain on the floor. He then leads everybody to both bathrooms and shows you the drains in them also with a layer of sewage.\\n\\n\u201cSo what do you think?\u201d He asks Fenrir.\\n\\n\u201cWell we should be able to have this cleaned up in a few hours. I need to figure out the issue and then my assistants can help me clean up afterwards. It will cost only $400 because we are trying to build our business. All we ask for you to get the discount is to mention us to your friends and family.\u201d\\n\\n\u201cSounds good. What do you need from me?\u201d Tony replies.\\n\\n\u201cWell just leave us alone for a bit. If you like you can lock us in here and I will call you when we are done. \u201c Fenrir says.\\n\\n\u201cThat sounds good to me. I am done with the stench.\u201d He says with relief. \u201cHere is my number. Call me however late it is and I will let you out.\u201d He hands Fenrir his card as he walks out the front.\\n\\n\u201cThank goddess, can we drop these illusions? They make my eyes itch.\u201d I ask.\\n\\n\u201cNope, there is at least 4 cameras recording video.\u201d Fenrir states. \u201cWe need to start looking for the necklace and then I can teleport us out of here.\u201d\\n\\n\u201cLets all take a room. Check for hidden doors, a safe, anything.\u201d I reply. \u201cBryndis can you get the stench gone and hide what we are actually doing?\u201d\\n\\n\u201cSure. Stench/sewage spell is gone. And the cameras will only show us cleaning it up. I will take the kitchen. Fenrir where do you want to check first?\u201d\\n\\n\u201cI will check the office.\u201d He replies.\\n\\n\u201cThen I will do the dining room.\u201d I state as I walk that direction. I start looking under tables and knocking on the walls. After 30 minutes I step back and yell out, \u201cHey guys, check this out. You will never believe this.\u201d\\n\\nThe both come running and look at the wall I am pointing at. We all break out laughing. The necklace is in the center of the wall artfully displayed in a shadow box.\\n\\n\u201cWell can\u2019t say anything about his originality. Lets grab it and go. They can have the cleanup on us since we are the ones that did it.\u201d I say as I move to get it down. \u201cFenrir where do I carry this thing?\u201d\\n\\n\u201cJust take it right thru that wall its hanging on. We will be right behind you.\u201d He replies.\\n\\nI move to the wall and thru it coming out in the Great Hall where Odin and Freya are still chatting.\\n\\n\u201cHere is your necklace back. You will never believe where he had it. Can I go to bed? My energy just disappeared.\u201d I say as I put the shadow box with necklace on the dias.\\n\\nOdin replies with a smile, \u201c Thank you for your efforts. Be my guest and go lay down for a bit. We will get the story from the two others.\u201d\\n\\nThe End\\n\\nGo back to the [[Start]] to play another story",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Open the second door",
+      "text": "As I opened the door a massive orc turns and look me dead in the eye, after a moment he points at me and lifts a club\\n\\n[[Stand and fight]] \\n\\n[[Run away and open the third door]]",
+      "links": [
+        {
+          "text": "Stand and fight",
+          "destination": {
+            "name": "Stand and fight",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Run away and open the third door",
+          "destination": {
+            "name": "Run away and open the third door",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Get rid of seeing death",
+      "text": "You wish not to see death anymore. Loki says a spell and you see lights all around you\\nand you feel a strange tickle all over your body. Loki finishes the spell and then looks over\\nat you. \u201cDone.\u201d he says, \u201cYou will no longer see death coming\u201d. \u201cThank you.\u201d you reply. \u201cI\\nwill now send you back home, Hilda.\u201d Loki says. And within minutes you\u2019re back home, in\\nyour own house. You live the rest of your life wondering what would have happened if you\\nkept the spell upon yourself.\\n\\nThe End\\n\\nGo back to the [[Start]] to play another story",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Keep seeing death and try to help people",
+      "text": "You think it\u2019s best to keep the spell on you. You don\u2019t want people to die, who you have\\na chance to save. Loki sends you back home and you try to help people from passing\\naway. You are successful, as you had helped all, but one, of the people.\\n\\nThe End\\n\\nGo back to the [[Start]] to play another path",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Stand and fight",
+      "text": "As I draw my dagger and charge the orc swings his club at my head but I narrowly avoid it. Then with all my strength I slash his throat and after a moment of writhing he falls lifeless to the floor. \\n\\n[[Open the first door]]\\n\\n[[Open the third door]]",
+      "links": [
+        {
+          "text": "Open the first door",
+          "destination": {
+            "name": "Open the first door",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Open the third door",
+          "destination": {
+            "name": "Open the third door",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Let the food sit.",
+      "text": "I walk over to the food to check it out. It looks good but not worth the risk of there being something added that might be harmful. I start looking in all the drawers and corners to entertain myself. In the armoire I find a suit of armor that looks to be my size. The fire starts to die down so I add more wood.\\n\\nAfter about 2 hours of waiting Bryndis walks in and there is a large male figure behind her wings. He steps out from behind her and I swallow, trying hard not to run and hide in the nearest corner. Where his head should of been was the head of a black haired wolf. The rest of him was a nice figure of a man.\\n\\nBryndis smiled and blushed as she made introductions. \u201cFenrir, this is Hilda. She is who I was telling you about.\u201d\\n\\nThe wolf head replies, \u201cHello, How are you feeling after everything that has happened?\u201d\\n\\n\u201cAm I in a nightmare?\u201d You retort. \u201cFirst I wake up and I meet an armored angel and now a werewolf. I have had some weird dreams but this is a doozy.\u201d\\n\\n\u201cNo, no.\u201d Bryndis says. \u201cThis is real. You are really in Asgard. I really have wings. And Fenrir can be a man and wolf at the same time. We still aren\u2019t allowed to tell you what you are doing here but I hope this helps to get you to believe in us.\u201d\\n\\n\u201cI don\u2019t know but what do I need to do to get more information?\u201d You say in a quiet voice.\\n\\n\u201cLets get you dressed and then we can go.\u201d Bryndis goes over to the armoire and pulls out the armor you had seen earlier. She holds it up for you and you notice the armor splits in the back leaving your back bare from neck to waist. Kinda weird way to design armor but you put it out of your mind, and you walk right into the arms. Goddess armor is heavy. Bryndis does all the straps and buckles up on the armor and then heads to the door indicating that you and Fenrir follow her. She leads you through a bunch of passageways and stops you at a huge beautiful door. You noticed that Fenrir disappeared somewhere on the way.\\n\\n[[Continue]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Continue",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "smell",
+      "text": "The aroma is strangely familiar and it reminds me of something flammable \\n\\n[[Open the second door]]\\n\\n[[Open the third door]]\\n\\n[[Go to earth]]",
+      "links": [
+        {
+          "text": "Open the second door",
+          "destination": {
+            "name": "Open the second door",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Open the third door",
+          "destination": {
+            "name": "Open the third door",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Go to earth",
+          "destination": {
+            "name": "Go to earth",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Jump into this new life with both both feet running.",
+      "text": "I wipe the tears away and decide that I better stretch out before whatever is scheduled happens. I work out my neck and shoulders before there is a knock on the door.\\n\\nBryndis walks in, \u201cGood you're awake. First thing is food, then to the pools to wash off, and last off to training with Fenrir. I know you will enjoy working with him. He will teach you stuff about how to fight with a sword that you never knew was possible. Oh, and I\u2019m sorry about not telling you what to expect but those are the rules.\u201d\\n\\nI look at the tray she brought in and there is a healthy serving of meat and potatoes with another goblet of the Mead. I couldn\u2019t stop myself from wanting another taste of that divine liquid. I sit down and grab the goblet. I take a sip and it has the same wondrous flavor. I put it down to grab some of the other food and I feel strength building up in my limbs.\\n\\n\u201cAre you done?\u201d She asks after the last crumb is gone from the plate.\\n\u201cYa, lets get to the next thing. I need to get out of this room and see some sky. I hate being cooped-up indoors for too long. I think I could run a marathon with how good I feel.\u201d As I jump up and move towards the door.\\n\\n\u201cWell you do need to wait for me before anything. You would get lost pretty easily on your own.\u201d She chuckles while walking past you to take the lead.\\n\\nI follow her through the passageways and you come out looking at a huge courtyard with people going to and fro. She leads me to a long shallow building that has steam coming out of where the roof should be. You both go thru the doors and there is a giant pool in the middle of the room. There is another Valkyrie across the way that strips off her dress and jumps in.\\n\\nI give Bryndis a look and she says, \u201cYou can walk in with your dress on and then do whatever you need to. Its what I do.\u201d And she proceeds to do just that, tossing the sodden dress to the side. \u201cHere is the soap and don\u2019t worry about getting the water dirty. The pool will re-circulate in clean water. Enjoy!\u201d\\n\\nAfter repeating what Bryndis just did I go straight for the soap and lather up. After completing 3 cycles of rinse-lather-repeat I finally feel clean again. I look over at Bryndis and she is watching for me to be finished. I move over to her and she asks, \u201dAre you ready to start your training? I know that you have had some in swordswork but have you had any other training like hand-to-hand combat or archery?\u201d\\n\\n\u201cI am told I\u2019m a natural with a sword and haven\u2019t had the time/money/teacher for anything else. I want to learn about all of the combat arts.\u201d I start bouncing in excitement at just the thought of learning about these things.\\n\\nBryndis laughs at me saying, \u201cOk lets get moving then. Fenrir will enjoy knocking you on your backside. Here is a clean set of clothes and your armor.\u201d  She points to the benches lining the side of the pool. \u201cAnd here is a towel to get you to the dressing rooms on the side.\u201d Handing me a towel as big as a small blanket. \u201cGo get dressed and let me know when you need the help with your armor.\u201d\\n\\nI take the towel and scurry over to my stuff and then to the dressing rooms. Get everything on except the straps of the armor as you step out of the room, \u201cBryndis would you do these up for me? I can\u2019t get to them.\u201d\\n\\n\u201cI will show you the trick next time.\u201d As she gets them done for you.\\n\\nShe leads you out of the bathhouse toward the sound of metal hitting metal and groans of pain. I can see Fenrir giving a sword lesson to another Valkyrie where he is showing them their openings by hitting them.\\n\\n\u201cYou know you should never fight while angry. That is how I beat you. Now go away and think about what happened here today. I know you are better than this.\u201d He turns and walks towards us. As he is doing so his head changes to that of a normal human male.\\n\\nHe gets up to the fence and asks, \u201cWill this be better for you? I have read the stories and seen the movies of what you call werewolves. I can understand the fear you may have for me in that state.\u201d\\n\\nI shake my head and quietly say, \u201cYes, I think it will help. Bryndis was telling me that you are going to be teaching me the art of combat. I have little to no knowledge about hand-to-hand but in the many areas of the country I have lived my teachers in the SCA have said I am a natural with the sword. I was about to be knighted in the last place I was at but then I was moved to another home again.\u201d\\n\\n\u201cThats good. Then you have some basics. Lets get started.\u201d Fenrir says after he hands you a practice sword. He then proceeds to give you the worst thrashing in your life. While youlat on the ground recovering from the upteenth time of being dropped he comments, \u201cYou might survive. Be prepared, because you will be sent on a quest tonight and can\u2019t come back until you retrieve what was lost.\u201d\\n\\n\u201cOkay... What should I expect?\u201d I ask Fenrir & Bryndis. \u201cWill I have someone helping me or am I stuck all on my own?\u201d\\n\\n\u201cEach quest is different for each person. All I know is that Freya is in charge of this one.\u201d Fenrir says with a worried look on his face. \u201cI have prepared you as much as I can in the time that I have.\u201d\\n\\n\u201cBut, but, but....\u201d and my voice trails off. I move away to think. \u201cWell I guess I will see what happens. Can I go back to my room till dinner?\u201d\\n\\n\u201cRest and drink some Mead. It will rejuvenate your body and mind for the challenge ahead.\u201d Fenrir state as he waves you both off. Bryndis leads me to my room.\\n\\n[[Ask to have a few minutes to yourself.]]\\n[[Ask Bryndis to come in and answer questions.]]",
+      "links": [
+        {
+          "text": "Ask to have a few minutes to yourself.",
+          "destination": {
+            "name": "Ask to have a few minutes to yourself.",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Ask Bryndis to come in and answer questions.",
+          "destination": {
+            "name": "Ask Bryndis to come in and answer questions.",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Hide behind a mound of gold.",
+      "text": "I heard the key turning in the lock I crouched behind a mound of gold so I could get a look the who was coming through the door without being seen.  As a portly, balding man enters the room he walks directly to the pedistal and stares momentarily at the necklace and then around the room. He turns around and leaves the room pocketing two gold coins he picked up from the floor.  As he shuts the door I hear him shout, \"Yeah Boss, the necklace is safe and the room is secure.\"  As the lock clicks I take a deep breath a decide what to do next.\\n\\n[[Grab the necklace and head out the window]]\\n\\n[[Grab the necklace and everything in the room]]",
+      "links": [
+        {
+          "text": "Grab the necklace and head out the window",
+          "destination": {
+            "name": "Grab the necklace and head out the window",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Grab the necklace and everything in the room",
+          "destination": {
+            "name": "Grab the necklace and everything in the room",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "You go along with her because you might get some answers.",
+      "text": "\u201cWhat is your name and what do I wear?\u201d I ask.\\n\\n\u201cIts Bryndis. And I have it right here.\u201d Bryndis pulls a suit of armor out that resembles hers from an armoire sitting across the room.\\n\\n\u201cOh my!\u201d You breathe. Practically drooling, \u201cThis is mine?\u201d\\n\\n\u201cOf course. We can\u2019t have you unprotected. Lets get this on you.\u201d She replies.\\n\\nThe armor splits in the back leaving your back bare from neck to waist. Kinda weird way to design armor but you put it out of your mind, and you walk right into the arms. Goddess armor is heavy. Bryndis walks to the door after doing all the straps and buckles up and you follow her. She leads you through a bunch of passageways and stops you at a huge beautiful door. \\n\\n[[Continue]]",
+      "links": [
+        {
+          "text": "Continue",
+          "destination": {
+            "name": "Continue",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Open the third door",
+      "text": "AS you open the door you hear a small click sound and the ast thing you see is a gigantic ball of fire engulf you, the fire reaches the closest room to the cave entrance egniting the gas blowing up the entire cave and sealing the entrance up.\\n\\n\\nGame Over...Thanks for playing",
+      "links": []
+    },
+    {
+      "pid": 35,
+      "name": "Go to the underworld alone to retrieve the necklace",
+      "text": "You set out to the Underworld alone. You are given new spells to help you\\nin your quest to retrieve the lost necklace. You travel for a couple of days until you finally\\nreach the Underworld. You start looking for the necklace all over the place. Freya gave you\\na spell to tell you exactly where the necklace is, but it\u2019s only good for a few seconds. You\\nsay the spell and are given the exact coordinates of the necklace. You run to that exact\\nspot, trying very carefully not to be seen by anyone. But when you get there, the necklace is\\nnowhere to be found. You\u2019re frantically look around the room it was supposed to be in. You\\nsee no trace of it whatsoever. You decide to use the spell again; the necklace is\\nsomewhere totally different, not even close to where you are now. Just as soon as you\u2019re\\ngoing to leave the room, someone comes in and finds you lurking around. \u201cWhat are you\\ndoing in here? This is a private area, no one is allowed in without Loki\u2019s permission. What\u2019s\\nyour name?\u201d the suspicious man asked. \u201cMy name is Hilda.\u201d you tell him. \u201cI\u2019m looking for\\nsomething that was stolen from me, a necklace made of many jewels.\u201d you tell the\\nman. \u201cI\u2019ve seen the necklace, Loki had it with him last time I saw him. So, you\u2019re saying this\\nwas your necklace and he stole it from you?\u201d the man asks. \u201cYes, I took it out to get clean\\nand left it in my room, but by the time I got back it was gone.\u201d you tell him. \u201cWell that ain\u2019t\\nvery nice of him, now is it. I can\u2019t stand thieves.\u201d the man tells you. I will help you find Loki.\\nYou tell him you have a spell to locate the necklace. You say the spell and you both know\\nwhere the necklace is now. The man says he has a way of getting around, so you decide to\\nturn to his type of transportation instead of running around everywhere. The man has 2\\nblack horses; \u201cOne for you and one for me,\u201d he says. The horses are way faster than you\\nwould have ever been and you find Loki at the next stop. \u201cLoki!\u201d you scream. Loki turns\\naround and sees you; he tries to escape in his carriage. His horses are running at extreme\\nspeeds. Suddenly, you see something shiny fly through one of the windows. You stop to\\nsee what it is. It\u2019s the necklace, Loki must have dropped it without noticing because he was\\nstill speeding off. You get back on the horse and turn around. You find your way back to\\nAsgard and tell King Odin and Freya that you have succeeded. They are very happy you\\nhave found the necklace and throw a feast in your favor. You ask about the ability to see\\ndeath coming and they tell you what happened. It was a spell, a dark spell, that you used\\nwithout knowing what it was. They tell you that you must get rid of the spell. \u201cIt will haunt\\nyou forever.\u201d Freya tells you. They call forth Loki, for he is the only one who knows how to remove the spell. Very angry from losing the necklace, Loki arrives. \u201cWhat is it you want\\nfrom me?\u201d he asks. \u201cWe would like you to remove the death spell from Hilda.\u201d King Odin\\nreplies. \u201cWhy should I help you? What do I get in return?\u201d he asks. King Odin whispers\\namong Freya and then replies \u201cWe will give you the necklace of jewels when we are\\nfinished with them.\u201d Loki looks surprised, \u201cI will do it,\u201d he says. Loki tells you that you can\\nkeep the spell to help people who are going to die and you ask why King Odin and Freya\\ndidn\u2019t tell you this. They looked shocked as why you would actually want to keep the spell\\nupon yourself. \u201cIt\u2019s torture.\u201d they tell you. \u201cCan I have a few minutes to decide what I want to\\ndo?\u201d you ask. \u201cOf course,\u201d King Odin replies.\\n\\n[[Get rid of seeing death]]\\n\\n[[Keep seeing death and try to help people]]",
+      "links": [
+        {
+          "text": "Get rid of seeing death",
+          "destination": {
+            "name": "Get rid of seeing death",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Keep seeing death and try to help people",
+          "destination": {
+            "name": "Keep seeing death and try to help people",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "You refuse to leave with him and yell for someone to hear you",
+      "text": "\u201cGet out of here!\u201d You yell at Loki. \u201cYou must be insane if you think I want to go with\\nyou. Somebody help me!\u201d you yell at the top of your lungs. You both hear many footsteps\\nrunning towards your door. Loki stabs you in the chest and suddenly disappears. About\\na dozen people come into your tower where you are lying on the floor clutching your stab\\nwound. \u201cWhat happened?\u201d someone asks you. \u201cLoki\u201d you say and then you take your last\\nbreath.\\n\\nThe End\\n\\nReturn to the [[Start]] and begin the story again",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Keep believing that everything is a dream.",
+      "text": " I wipe the tears and decide that maybe, just maybe, if I go back to sleep then everything will just go away. \\n\\n[[Go back to sleep.]]",
+      "links": [
+        {
+          "text": "Go back to sleep.",
+          "destination": {
+            "name": "Go back to sleep.",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Ask Bryndis to come in and answer questions.",
+      "text": "\u201cBryndis, would you tell me the basics for a quest? How many people? What weapons?\u201d I start throwing out questions. \u201cWhat am I finding?\\n\\n\u201cHold on a second. I know as much as you do at this point.\u201d She says with a sigh. \u201cThey never tell us where people are going or what they are to find. I do know that they will give you everything you need to complete the quest, but it won\u2019t be easy. Its about dinner time so lets go down to the great Hall and find our places.\u201d\\n\\n\u201cOkay. If this is necessary then lets get it done with. I want it noted that I\u2019m not comfortable with any of this.\u201d As I start towards the door.\\n\\n\u201cUnderstandable, you have taken this a lot better than some people. Lets see what you are up against.\u201d Bryndis says as she gets to the door before me. \u201cAt least the food should be good.\u201d\\n\\nShe leads me back to the great hall where I became a Valkyrie. They transformed the hall into a room with long tables running all the way down to the raised dais that Odin and a beautiful blond woman (that matched Odin in stature and magnificence) sat being served food and drink.\\n\\nOther beings are entering the room from behind you and the doors on the sides of the hall. We find a spot near the middle of the room and I move to sit. Bryndis hisses, \u201cDon\u2019t sit till they tell us. Freya may take it as a sign of disrespect.\u201d\\n\\n\u201cOkay. Whatever.\u201d I say quietly with exasperation. \u201cThis is not how I was raised. But when in Rome.... \u201c\\n\\nOdin\u2019s voice booms out, \u201cPlease sit and enjoy the bounty.\u201d Everybody sits and begins to dig in. There are many different things on the table not all of which is easily recognizable.\\n\\nI decided to try a little of everything and start to pile things on my plate. Some foods are absolutely to die for, but for others one bite is enough. Next thing I notice is the room has gone silent and everybody is looking at me. \u201cPsst\u2026.  Its time to go up and get your quest assignment.\u201d Bryndis whispers.\\n\\n\u201cOh sorry, I got wrapped up in the good food.\u201d I apologize. There is a low chuckle rumbling around the room. I look up and notice it is Odin chuckling. I stand up and trip over the bench behind me. The whole room erupts in laughter.\\n\\n\u201cCome up child. My sister Freya (Valkyrie warrior goddess) has a challenge for you. She wants to see how you go about retrieving the necklace that Loki (God of Mischief) stole from her. I will be sending Fenrir and Bryndis with you as support but you are the one that has to do the looking. They will be briefed with all of the info we have about his whereabouts after the theft and likely places it has been hidden. I have foreseen that you are the one to find it for us. We usually don\u2019t send out new Valkyries this soon but as part of the vision we need you out there as soon as possible. Good luck on your quest.\u201d Odin turns towards Freya and starts to talk to her about something you can\u2019t hear.\\n\\nI guess I\u2019m dismissed. I turn around to see Bryndis and Fenrir waiting for you while everybody else leaves the room. \u201cSo what\u2019s the plan?\u201d\\n\\n\u201cWe need that briefing before anything. Let me have someone take you to your room. We will get you as soon as we have what we need.\u201d Fenrir says waving forward one of the people about to leave. \u201cPlease take her to her room.\u201d The being nodded their head and started moving to the door. I shrug and follow.\\n\\nI get back to the room and sit staring at the fire for what seems like ages before the door opens up and someone comes into the room. I turn around and see Fenrir in full chain mail armor with Bryndis following. Fenrir starts out with, \u201cLets get moving. We need to get you equipped and to the stables to grab supplies in 20 minutes for the portal to be opened. Now Loki has been seen in both Midgard and the underworld since the theft. He tends to stick to the same hangouts on both worlds. Midgard is Earth and Loki pretends to be an Italian Mob Boss in Chicago. The Underworld is easier because he is stuck in a certain area or he gets ate by the patrolling dragons. The dragons are controlled by Hades (God of the Underworld) and he has no love for Loki or anybody else. Which one do you want to try first?\\n\\n[[Go to Midgard (Earth).]]\\n[[Go to the Underworld.]]",
+      "links": [
+        {
+          "text": "Go to Midgard (Earth).",
+          "destination": {
+            "name": "Go to Midgard (Earth).",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Go to the Underworld.",
+          "destination": {
+            "name": "Go to the Underworld.",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Continue",
+      "text": "\u201cJust a few rules before we enter.\u201d She said softly. \u201cDo not speak unless you are directly spoken to. Do not look our Lord in the eyes. And treat him with respect. He is Odin; the Lord of All Things, the Blessed One, the Wielder of Power, the Great Warrior.\u201d She opened the door.\\n\\n[[Go thru the door.]]\\n[[Start to slowly back up.]]",
+      "links": [
+        {
+          "text": "Go thru the door.",
+          "destination": {
+            "name": "Go thru the door.",
+            "pid": 43
+          }
+        },
+        {
+          "text": "Start to slowly back up.",
+          "destination": {
+            "name": "Start to slowly back up.",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Don't go but help Freya and Odin from Asgard",
+      "text": "You think that it would be best to stay in Asgard and help Odin and Freya from\\nthere. Odin, Freya, and yourself locate the necklace using a very powerful spell that\\nwas just created for this very purpose. As you\u2019ve assumed, Loki has the necklace. King\\nOdin gives you a spell book and opens it up to a certain spell. \u201cTransporting others,\u201d you\\nread aloud. \u201cYes,\u201d King Odin says, I want you to use this spell to transport Loki here.\u201d\\nWith a puzzled face you say the spell and out of nowhere Loki appears right in front\\nof your eyes. \u201cWow! This spell actually works.\u201d you exclaim. \u201cOf course it does.\u201d Freya\\nresponds. \u201cLoki!\u201d King Odin yells. \u201cYes, Odin\u201d Loki says with a look of fright on his face. \u201cWe\\nknow you have the necklace and we would like it back.\u201d King Odin replies. \u201cI don\u2019t have\\nthe necklace\u201d Loki tries to proclaim. A few hours go by and Loki gives up and hands over\\nthe necklace; he leaves and you find yourself alone with King Odin and Freya again. King\\nOdin sets up a time to start training for tomorrow. You train for what seems like forever and\\nwhen you are finished King Odin offers you the position of King\u2019s Greatest Sorcerer and you\\naccept. You live out the rest of your days sorcering for the king.\\n\\nThe End\\n\\nReturn to the [[Start]] and play another story.",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Grab the necklace and head out the window",
+      "text": "Without a second thought I snatched the necklace and hurled myself out the window and disappeared into the night.  As soon as I could, I returned to Freya's house and returned the necklace.  She gave me her thanks and assured me that in the near future I would be greatly rewarded.  After she assured me that Loki would never bother me again I returned home where I had a lot of time to ponder over the treasure left behind.\\n\\nEnd",
+      "links": []
+    },
+    {
+      "pid": 42,
+      "name": "Ask to have a few minutes to yourself.",
+      "text": " I go into the room and crawl into the bed. I start rocking back and forth chanting, \u201cThere is no place like home. There is no place like home.\u201d After a while of this I lose consciousness.\\n\\n[[Go back to sleep.]] ",
+      "links": [
+        {
+          "text": "Go back to sleep.",
+          "destination": {
+            "name": "Go back to sleep.",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Go thru the door.",
+      "text": "You walk into a colossal room. There are murals painted and carved into the 60 foot ceilings. You keep walking but the artwork has you completely distracted. Finally you realize there are people staring at you and that you have made it into the middle of the room. At the far end of the room you notice two thrones on a raised stone dias. The thrones are carved out of grey-white marble and are large enough to sit 5 large guys.\\n\\nOn one of the thrones there is giant of a man. Twelve feet tall in beautiful armor and a awesome helmet that threw off sparks of living flame. Reminded me if those guys that are in the bodybuilding contests. Then I remember that I\u2019m not supposed to look him in the eyes and drop my head.\\n\\nA great rumble of laughter echoes around the hall loud enough that specks of dust fall from the ceiling. \u201c Come closer, child.\u201d\\n\\nI couldn\u2019t help but look up to the joy in the voice. I see Him on the throne and there is a soot black raven on his shoulder that tilts its head as if aware of everything going on. The scene reminds me of multiple ones depicted in fantasy novels. This whole situation is surreal. The only thing missing is the elves and dwarves.\\n\\n\u201cDo not be afraid, Hilda.\u201d Odin says. \u201cNow I know that you haven\u2019t been told anything yet. This is what we call the Rites of the Valkyrie. It is time to accept that this is real. Now come forth and drink of the Mead. It will prepare you for the times ahead.\u201d\\n\\nA young girl comes over carrying a wooden tray with an elaborate goblet on it. She hands it to you carefully as if it filled with liquid gold. Bryndis says as you grab it, \u201cTake it with care, its heavier than it looks.\u201d I look into the cup and see that the liquid is a golden shimmer almost irresistible to not take a drink.\\n\\nI hesitate and Odin says, \u201cDrink Hilda, Valkyrie, Warrior of Valhalla, Maiden of Odin. Begin your new life.\u201d There is a feeling of comfort in those words so you lift the goblet up and take a drink.\\n\\nI almost swooned with the first swallow. It was better than the richest European chocolate. Just a cupful of pure pleasure. I closed my eyes to better enjoy while a warmth filled me from top to bottom. My eyes open and I see that I am now filled with the same glow that I had seen in others. A sense of panic hits and then I notice that everybody around me is filled with a similar glow.\\n\\n\u201cHilda, do not be afraid. It is the nature of the Mead. It is nectar from the heavens and will change your body so that it will have the strength to survive the trials of your new life.\u201d Odin\u2019s voice allowed me to focus and start to calm down. I look around and everybody looks calm and even unconcerned allowing me to realize this is a normal thing for them. Everybody moves closer and you start to feel a burning in her back.\\n\\n\u201cJust breathe through it and it will be over in a minute.\u201d Bryndis calmly states.\\n\\nStabs of pain run up my body. I drop to my knees as a gasp of agony escapes. There is a crawling sensation running inside of your shoulders. The pain seems to go on forever and then it changed. It hit another level and I just couldn\u2019t keep the screams inside. The screams seemed to be necessary element because something burst out of my back and an strange weight settled onto my shoulders. With everything else the extra weight caused me to fall backwards. I was caught by multiple arms and held up until my legs could support me again. I look around and notice that everybody in the room is 1- female and 2- have wings spread out behind them..... Including me!\\n\\nI gasped in wonder at them. They are stunning. A red bronze color that shimmer in the light. Then I realized that they are mine and I HAVE WINGS!!! The world goes black.\\nI wake up thinking, That was an awesome dream. Then I notice these are not my bed covers. They feel like fur. Why do I hear a fire? My eyes pop open and I am still in Asgard. I try to get up and there is a weight on my shoulders. I look back and there they are... The wings are waving at me. Then the whole incident came back to me. The tears just start to roll down my cheeks. How long have I been gone? How many days has passed since I was passed out both the first and second time? Does time pass differently here? I am beginning to realize that this isn\u2019t a dream and that I need to adjust to this new life.\\n\\n[[Keep believing that everything is a dream.]]\\n[[Jump into this new life with both both feet running.]] ",
+      "links": [
+        {
+          "text": "Keep believing that everything is a dream.",
+          "destination": {
+            "name": "Keep believing that everything is a dream.",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Jump into this new life with both both feet running.",
+          "destination": {
+            "name": "Jump into this new life with both both feet running.",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Wizardess",
+      "text": "You awaken in a dark tower, all you can see is the moonlight coming from the window. You\\nwalk over to the window and look outside; it looks nothing like home. \u201cWhere am I?\u201d you\\nstart to wonder. As you look down you notice that you are dressed in a silky cloak. This isn\u2019t\\nwhat I was wearing before I woke up here, you think to yourself. You use a magic spell to\\nlight the room and see a door. You try to open the door, but it\u2019s locked from the outside.\\nYou try to escape with magic, but it seems the tower has a shield around it that won\u2019t\\nallow magic to get through. You have no choice, but to sleep in the tower until morning.\\nWhen morning comes there is a stranger in the tower with you. \u201cExcuse me, who are you\\nand where am I?\u201d you ask the stranger. The stranger replies \u201cI am nobody and you are in\\nAsgard.\u201d With a puzzled look on your face you say \u201cAsgard? What is Asgard? Where is\\nAsgard? Why am I here?\u201d The stranger looks at you as says \u201cI\u2019ll be right back.\u201d You wait\\nfor the stranger to come back. As you wait you keep thinking why you were brought to this\\nplace. Could this have been some magic spell you did and weren\u2019t aware of? Or maybe it\\nhas something to do with seeing a glowing light around people before they die. You hear a\\nknock on the door. \u201cWho is it?\u201d you say, but no one answers.\\n\\n[[Open the door]]\\n[[Wait it out until they leave]]",
+      "links": [
+        {
+          "text": "Open the door",
+          "destination": {
+            "name": "Open the door",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Wait it out until they leave",
+          "destination": {
+            "name": "Wait it out until they leave",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Start",
+      "text": "We start out in a cemetery in the middle of a funeral. There are about 40 people\\npresent while the Pastor says the last rites. Family is sitting in the front row with the\\nmother crying and the father with his arm around her. They had just lost their 17-year-old\\nson in a car accident. In the background you see a tall redheaded female approx 17 years\\nold with tear tracks running down her face.\\n\\nTwo weeks later: another funeral. This time it is a 15 year old girl that died from\\ncancer. Same female in the background with tear tracks.\\n\\nThree months later: at the cemetery again. The redhead is in the front row holding\\nher foster mom\u2019s hand while they grieve over the 6 year old that had died in his sleep of a\\nheart issue.\\n\\nChoose what you have trained in\\n[[Mistress Thief]]\\n[[Wizardess]]\\n[[Swordswomen ]] \\n",
+      "links": [
+        {
+          "text": "Mistress Thief",
+          "destination": {
+            "name": "Mistress Thief",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Wizardess",
+          "destination": {
+            "name": "Wizardess",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Swordswomen ",
+          "destination": {
+            "name": "Swordswomen",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Swordswomen",
+      "text": "I move with a groan. While sitting up my head spins. When the head finishes its queasy motions I look around and see a large fireplace with a roaring fire in it. I am sitting on a pile of furs. I just want to curl myself back into them and go back to sleep but this doesn't feel like a dream.\\n\\n[[Go back to sleep.]]\\n[[Wake up and explore.]]",
+      "links": [
+        {
+          "text": "Go back to sleep.",
+          "destination": {
+            "name": "Go back to sleep.",
+            "pid": 51
+          }
+        },
+        {
+          "text": "Wake up and explore.",
+          "destination": {
+            "name": "Wake up and explore.",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "Have Loki tell you",
+      "text": "You wish not to see death anymore. Loki says a spell and you see lights all around you\\nand you feel a strange tickle all over your body. Loki finishes the spell and then looks over\\nat you. \u201cDone.\u201d he says, \u201cYou will no longer see death coming\u201d. \u201cThank you.\u201d you reply. \u201cI\\nwill now send you back home, Hilda.\u201d Loki says. And within minutes you\u2019re back home, in\\nyour own house. You live the rest of your life wondering what would have happened if you\\nkept the spell upon yourself.\\n\\nThe End\\n\\nGo back to the [[Start]] to begin another story",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "underworld or earth",
+      "text": "Ever since Loki stole the necklace he has been seen alot in the underworld with his minons moving large barrels and boxes into a cave that he is known to hideout in. \\n\\nOne of Loki's hideout's on earth is a italian restaurant in Death Valley Californa. Before the theft he was spending alot of time there but ever since then he has not been seen there. \\n\\n[[Go to the underworld]]\\n\\n[[Go to earth]]",
+      "links": [
+        {
+          "text": "Go to the underworld",
+          "destination": {
+            "name": "Go to the underworld",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Go to earth",
+          "destination": {
+            "name": "Go to earth",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Eat the food.",
+      "text": "You go over and it looks delicious. I wonder if they added anything to it? You sniff it. Smells normal. You take a bite and you just can\u2019t stop at the one. Next thing you know it is all gone and you have the overstuffed I ate too much feeling. You eyelids start drooping and you think to yourself, A short nap won\u2019t hurt anything. \\n\\n[[Go back to sleep.]]",
+      "links": [
+        {
+          "text": "Go back to sleep.",
+          "destination": {
+            "name": "Go back to sleep.",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Open the first door",
+      "text": "When I look inside I see that the room is completely filled with the barrels and boxes all of which are exuding a strange and powerful [[smell]]\\n\\n[[Open the second door]]\\n\\n[[Open the third door]]",
+      "links": [
+        {
+          "text": "smell",
+          "destination": {
+            "name": "smell",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Open the second door",
+          "destination": {
+            "name": "Open the second door",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Open the third door",
+          "destination": {
+            "name": "Open the third door",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Go back to sleep.",
+      "text": "You are shaken awake by your foster mom. You continue your existence seeing a glow around people and knowing they will die soon. You avoid any attachments in fear that they will start glowing and die on you. \\n\\nThe End\\n\\nGo back to the [[Start]] for another version of the story.",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 45
+          }
+        }
+      ]
+    }
+  ]
+}

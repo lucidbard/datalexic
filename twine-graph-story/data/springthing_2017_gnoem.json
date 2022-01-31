@@ -1,0 +1,1192 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Greet Tony",
+      "text": "\"Oh heyyy! You're up. Just like the bright morning sun m'dude.\"\\n\\n\"Can I have some bacon?\" you ask.\\n\\n\"Suree just as soon as I sprinkle some oregano -- oh wait oh noooo..\"\\n\\n\"No orega-no?\" you offer.\\n\\n\"Yah. Hm do ya think you can do me a good one?\"\\n\\n[[Sure?]] or [[Nah.]]",
+      "links": [
+        {
+          "text": "Sure?",
+          "destination": {
+            "name": "Sure?",
+            "pid": 47
+          }
+        },
+        {
+          "text": "Nah.",
+          "destination": {
+            "name": "Nah.",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "\"This is a pretzel.\"",
+      "text": "\"What's a pretzel?\" the gnome asks.\\n\\n[[Explain what pretzels are]] or [[\"What areee YOU?]]",
+      "links": [
+        {
+          "text": "Explain what pretzels are",
+          "destination": {
+            "name": "Explain what pretzels are",
+            "pid": 60
+          }
+        },
+        {
+          "text": "\"What areee YOU?",
+          "destination": {
+            "name": "\"What areee YOU?",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "the cave",
+      "text": "You enter the cave.\\n\\nIt is warm.\\n\\nYou make a bed of soft dry leaves and close your eyes.\\n\\n\"I don't have time for this. I'm going to find someone to help me get back. The final's tomorrow after all!\"\\n\\n[[You hear a rustling sound above you.]]",
+      "links": [
+        {
+          "text": "You hear a rustling sound above you.",
+          "destination": {
+            "name": "You hear a rustling sound above you.",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "You hand her your slippers",
+      "text": "She pets the slippers lovingly as one would a small piglet. You sit quietly and wait for her to finish...\\n\\n\"So since you are under my tree roof I will tell you some forest facts!\"\\n\\n<<if $mushroom is false>>\\n[[Mushroom Fact!]]\\n<<endif>>\\n\\n<<if $trees is false>>\\n[[Tree Fact!]]\\n<<endif>>\\n\\n<<if $hedghog is false>>\\n[[Hedgehog Fact!]]\\n<<endif>>\\n\\n<<if $snail is false>>\\n[[Snail Fact!]]\\n<<endif>>\\n\\n<<if $mushroom is true and $trees is true and $hedghog is true and $snail is true>>\\n[[Do you have any more awesome facts!?|move on]]\\n<<endif>>\\n\\n\\n\\n\\n\\n",
+      "links": [
+        {
+          "text": "Mushroom Fact!",
+          "destination": {
+            "name": "Mushroom Fact!",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Tree Fact!",
+          "destination": {
+            "name": "Tree Fact!",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Hedgehog Fact!",
+          "destination": {
+            "name": "Hedgehog Fact!",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Snail Fact!",
+          "destination": {
+            "name": "Snail Fact!",
+            "pid": 78
+          }
+        },
+        {
+          "text": "Do you have any more awesome facts!?",
+          "destination": {
+            "name": "move on",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "move on",
+      "text": "\"Well now that you are more connected with nature, maybe you can listen to my problem!\"\\n\\n[[\"I already have a lot on my plate.\"|mean to dryad]] or [[\"Sure, what's bothering you?\"|nice to dryad]]",
+      "links": [
+        {
+          "text": "\"I already have a lot on my plate.\"",
+          "destination": {
+            "name": "mean to dryad",
+            "pid": 44
+          }
+        },
+        {
+          "text": "\"Sure, what's bothering you?\"",
+          "destination": {
+            "name": "nice to dryad",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "A star twinkles",
+      "text": "The star seems to wink at you.\\n\\nThen you hear a voice:\\n\\n\"What is up?\"\\n\\nTaken aback, you remember that stars can't talk and look to your right.\\n\\nA short gnome wearing a red pointy hat reading \"RBEL\" on the front of it peers at you.\\n\\n[[Ignore the gnoem]] or [[Point out his spelling error]]",
+      "links": [
+        {
+          "text": "Ignore the gnoem",
+          "destination": {
+            "name": "Ignore the gnoem",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Point out his spelling error",
+          "destination": {
+            "name": "Point out his spelling error",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "The Bakery",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 8,
+      "name": "Investigate",
+      "text": "\"Whats wrong... bruh?\" (you do your best to be as hip as Tony but it just isn't working out... who can ever possibly be as rad as Tony?! -Totally not Tony)\\n\\n\"The lamp was from my parents. It reminds me of when I ran away from home. My parents wanted me to be a musician in the family dinner theater, but I wanted to be a chef.\"\\n\\n\"Well couldn't you just be a cook in the kitchen?\"\\n\\n\"We don't actually serve dinner, we only serve music and tea.\"\\n\\n[[\"That's tough, buddy.\"]]",
+      "links": [
+        {
+          "text": "\"That's tough, buddy.\"",
+          "destination": {
+            "name": "\"That's tough, buddy.\"",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "END",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 10,
+      "name": "Dryad's Home",
+      "text": "You feel an earthly presence grace you.\\n\\nShe opens the door.\\n\\nYou recognize her as a dryad, with forest flowers growing from her head with her hair.\\n\\nShe seems a little annoyed that you are disturbing her forest and stares at your turtle slippers.\\n\\n\"I love your turtle slippers,\" she says, brightening.\\n\\n\\n[[Thanks, turtles are the best!|Dryad Conversation 1]]\\n[[Uhhhh yea...|Dryad Conversation 2]]",
+      "links": [
+        {
+          "text": "Thanks, turtles are the best!",
+          "destination": {
+            "name": "Dryad Conversation 1",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Uhhhh yea...",
+          "destination": {
+            "name": "Dryad Conversation 2",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "You stare back.",
+      "text": "You and gnome have a staring contest.\\n\\nThe gnome blinks first.\\n\\n\"Darnit!\" he exclaims. \"Welp, at least I have gained insight to your soul.\"\\n\\n\"My soul?\"\\n\\n\"Yes! I, George, can see that your soul is in need of a magical solution for your problems. Follow me!\"\\n\\nHe makes a portal and jumps in.\\n\\n[[Follow him |Follow him into the shimmery void.]]",
+      "links": [
+        {
+          "text": "Follow him ",
+          "destination": {
+            "name": "Follow him into the shimmery void.",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "\"That's tough, buddy.\"",
+      "text": "\"Yeahh.. well it is what it is. As all things are.\"\\n\\nTony crawls back onto the ceiling.\\n\\nYou take that as a signal for bedtime and [[close your eyes. |next day]]",
+      "links": [
+        {
+          "text": "close your eyes. ",
+          "destination": {
+            "name": "next day",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Forest",
+      "text": "As you run away like a lunatic, (i.e. yelling and flailing your arms about like a sea anemonie...anemony? anemone..) you wake up the spider.\\n\\n~The spider seemed upset that you ruined his chill vibe~\\n\\nYou make your way out to the forest and find a door on a large tree. You feel like you might be safe in there.\\n\\n\\n[[Knock on the door |Dryad's Home 2]]",
+      "links": [
+        {
+          "text": "Knock on the door ",
+          "destination": {
+            "name": "Dryad's Home 2",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "After a while, your phone buzzes.",
+      "text": "On the screen, you read:\\n\\nHEY THERE THIS IS GEORGE OF THE BAKED POTATO VARIETY\\nTHAT YOU JUST AHEM DITCHED\\nYOU CAN'T LEAF UNTIL YOU SOLVE MY PROBELMS\\nMY PARENTS WANT ME 2 B A BAKER\\nBUT I LOVE MUSIC N I WANT TO DO MUSIC FOR A LIVING\\nSO U GOTTA HEPL ME\\nFIND ME WHEN UR DONE THANKS BYE ;D\\n\\n~George seems a little salty that you left him~\\n\\n<<set $george =- 1>>\\n<<set $affinity =- 1>>\\n\\n\\n[[It starts to storm heavily.]]",
+      "links": [
+        {
+          "text": "It starts to storm heavily.",
+          "destination": {
+            "name": "It starts to storm heavily.",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "\"I just ran away from a giant spider!\"",
+      "text": "She seems taken aback.\\n\\n\"Do you mean Tony? Why would you run from him? He is like the chillest.\"\\n\\n\"I'm not usually afraid of spiders, but this one was really big.\"\\n\\nThe Dryad nods and notices your turtle slippers, becoming visibly excited.\\n\\n\"Can I see your slippers?\"\\n\\n[[Can't you see them already?]] or [[Hand them over]]",
+      "links": [
+        {
+          "text": "Can't you see them already?",
+          "destination": {
+            "name": "Can't you see them already?",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Hand them over",
+          "destination": {
+            "name": "Hand them over",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Bakery Final",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 17,
+      "name": "The Gang",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "Dryad Conversation 1",
+      "text": "You talk about cute animals for awhile and she offers for you to stay the night so you don't get sick.\\n\\nYou hope there is still bacon waiting for you at the cave.\\n\\n[[sleep|Next day]]\\n",
+      "links": [
+        {
+          "text": "sleep",
+          "destination": {
+            "name": "Next day",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Get that bacon",
+      "text": "You go back to the cave, where the smell of bacon fills the air. \\n\\nTony squints at you with all eight eyes.\\n\\n[[Apologize]] or [[squint back]]",
+      "links": [
+        {
+          "text": "Apologize",
+          "destination": {
+            "name": "Apologize",
+            "pid": 39
+          }
+        },
+        {
+          "text": "squint back",
+          "destination": {
+            "name": "squint back",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Take pity on him.",
+      "text": "~George is happy to have someone to vent to~\\n\\nThe gnome tells you his tragic backstory about how his parents want him to be a baker but he wants to be a musician.\\n\\nIt begins to rain.\\n\\nGeorge looks worried. \"Oh no! it's past my curfew!, you stay right here and I will see you tomorrow!\"\\n\\nThe Rebel George hurries home leaving you in the middle of the rainy forest.\\n\\n\\nLuckily, you find a [[cave|the cave]].\\n\\n<<set $affinity +=1>>\\n<<set $gearge +=1>>\\n\\n\\n\\n\\n",
+      "links": [
+        {
+          "text": "cave",
+          "destination": {
+            "name": "the cave",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Run",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 22,
+      "name": "Hand them over",
+      "text": "\"Uhhh okay, I guess?\"\\n\\n~She seems very happy that you would share your slippers with her~\\n\\n[[You hand her your slippers]] and she invites you in.\\n\\n<<set $affinity +=1>>\\n<<set $witchAndDryad +=1>>",
+      "links": [
+        {
+          "text": "You hand her your slippers",
+          "destination": {
+            "name": "You hand her your slippers",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "You hear a rustling sound above you.",
+      "text": "You open your eyes to find 8 pairs of eyes staring back at you.\\n\\nA spider!\\n\\nThere is a giant spider on the ceiling of the cave. \\n\\n[[Run away yelling| Forest]] or [[ignore the spider like you ignore all your problems]] ",
+      "links": [
+        {
+          "text": "Run away yelling",
+          "destination": {
+            "name": "Forest",
+            "pid": 13
+          }
+        },
+        {
+          "text": "ignore the spider like you ignore all your problems",
+          "destination": {
+            "name": "ignore the spider like you ignore all your problems",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "bad ending",
+      "text": "Tony seems to reject your idea. You aren't his friend, why should he listen to you?\\n\\nHe tells you that George left the door unlocked the whole time.\\n\\nOh no\\n\\nfeels bad\\n\\nYou don't get to stay. u dont meet the magical unicorns or go to that wonderful dinner theater or the cookie factory\\n\\nYou go back home and take your final.\\n\\nTHE END\\n\\n\\n\\n\\n\\n\\n\\nMaybe you should [[Try for a better ending?|Try to study]]",
+      "links": [
+        {
+          "text": "Try for a better ending?",
+          "destination": {
+            "name": "Try to study",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Finish Room",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 26,
+      "name": "The Gang 2",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 27,
+      "name": "The Dryad Tree",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 28,
+      "name": "Gang Final",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 29,
+      "name": "you walk out",
+      "text": "\"Heyyyyy.. you got the spices?\" Tony stares at you but not quite at you with all eight of his eyes.\\n\\n[[Offer spices|back to the cave]]",
+      "links": [
+        {
+          "text": "Offer spices",
+          "destination": {
+            "name": "back to the cave",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Dryad Conversation 2",
+      "text": "She senses you're not as excited as her and gets upset that you are not a true fan of turtles!!\\n\\nIt gets dark outside. Time passes differently here.\\n\\nShe says you can stay the night but you will be leaving first thing in the morning.\\n\\n[[sleep|Next day]]",
+      "links": [
+        {
+          "text": "sleep",
+          "destination": {
+            "name": "Next day",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Point out his spelling error",
+      "text": "\"Is that supposed to say rebel?\"  you ask.\\n\\n~The Gnome is happy to have his style noticed~\\n\\n\"Maybe. What if it does?\"\\n\\n\"I guess you're a rebel against correct spelling.\"\\n\\nThe gnome stares at you.\\n\\n[[You stare back.]] or [[Ask, \"Who are you?\" |\"What areee YOU?]]\\n",
+      "links": [
+        {
+          "text": "You stare back.",
+          "destination": {
+            "name": "You stare back.",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Ask, \"Who are you?\" ",
+          "destination": {
+            "name": "\"What areee YOU?",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Try to study",
+      "text": "You tried. At least you tried.\\n\\nSlipping on your comfy turtle slippers, you climb out the window on to the roof.\\n\\nYou lie down and contemplate your life.\\n\\n[[A star twinkles]]",
+      "links": [
+        {
+          "text": "A star twinkles",
+          "destination": {
+            "name": "A star twinkles",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Ask him about his problems.",
+      "text": "George blinks.\\n\\n\"Judging from the way your soul has this weird vibe, you're the one with the problems. Come with me and I'll solve them for you!\"\\n\\nHe creates a portal and jumps in.\\n\\n[[Jump in after him. |Follow him into the shimmery void.]]",
+      "links": [
+        {
+          "text": "Jump in after him. ",
+          "destination": {
+            "name": "Follow him into the shimmery void.",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Tree Fact!",
+      "text": "\"Your local coast redwood tree can grow to 300 feet or more\u2014the tallest tree on Earth. Right now, there are about 50 redwood trees taller than 360 feet living along the Pacific Coast.\"\\n\\n[[Radical!|You hand her your slippers]]\\n<<set $trees = true>>",
+      "links": [
+        {
+          "text": "Radical!",
+          "destination": {
+            "name": "You hand her your slippers",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "The Cave 2.1",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "The ultimate question",
+      "text": "\"Tony, your bacon has taught me that there are better things in life than finals, is it possible for me to stay in this world with all of you?\"\\n\\nThere is a pause.\\n\\n<<if $affinity < 2>>\\n\"Nah dude, you're way too negative. You have been killing everybody's vibes. George texted me and like he said the door was never locked... I think its time for you to dip.\"\\n\\nHe goes back in the cave and you take the walk of shame to the big red door and leave.\\n\\nYou do poorly on your final, but you learn an important lesson on the consequences of underappreciating friendship.\\n\\nBetter luck next time.\\n\\nTHE END\\n\\n<<else>>\\n\"Of course fam, you can chill at my place for awhile. Let's work together and fix everyone's problems.\" He seems excited.\\n\\nYou stay in the fantasy world with your new friends and you all work together to make your new home better. The bakery merges with the dinner theater and becomes tremendously popular.\\n\\nAnd you never have to take another final again!\\n\\nTHE END\\n<<endif>>\\n\\n",
+      "links": []
+    },
+    {
+      "pid": 37,
+      "name": "Can't you see them already?",
+      "text": "\"I want to pet them....do you want to come in and get out of the rain or not?!\"\\n\\n[[You hand her your slippers]] and she invites you in.",
+      "links": [
+        {
+          "text": "You hand her your slippers",
+          "destination": {
+            "name": "You hand her your slippers",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Nah.",
+      "text": "\"But m'DUDE.. you want this here good ol' bacon righhhht?\"\\n\\nThe bacon sizzles haughtily in the rich bacon juices on the stove.\\n\\nYou [[agree.|Sure?]] The bacon smells delicious.\\n\\n~Tony is a little discouraged~\\n\\n<<set $affinity -=1>>\\n<<set $tony -=1>>",
+      "links": [
+        {
+          "text": "agree.",
+          "destination": {
+            "name": "Sure?",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Apologize",
+      "text": "\"Sorry about last night, dude.\" You try to mimic how he talks to get in his good graces.\\n\\n~He seems to appreciate this.~\\n\\n\"S'all good. I'm just sad that I don't have any spices for this bacon..\"\\n\\n[[Offer him your spices |back to the cave]] \\n\\n<<set $affinity += 1>>\\n<<set $tony +=1>>",
+      "links": [
+        {
+          "text": "Offer him your spices ",
+          "destination": {
+            "name": "back to the cave",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "StoryAuthor",
+      "text": "Macaroni & Cheese\\n\\nJoyce Lin\\nMatthew Reed\\n",
+      "links": []
+    },
+    {
+      "pid": 41,
+      "name": "Mushroom Fact!",
+      "text": "\"Mushrooms are also called Toadstools. I really like that name better because it sounds like toads use mushrooms as chairs and toads are cute, Fact!\"\\n\\n[[Cool!|You hand her your slippers]]\\n\\n<<set $mushroom = true>>",
+      "links": [
+        {
+          "text": "Cool!",
+          "destination": {
+            "name": "You hand her your slippers",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Hand them over2",
+      "text": "\"Uhhh ok, I guess?\"\\n\\n[[You hand her your slippers]]",
+      "links": [
+        {
+          "text": "You hand her your slippers",
+          "destination": {
+            "name": "You hand her your slippers",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Talk to the spider",
+      "text": "\"Sure...uh dude?\"\\n\\n\"My name is Thomas but I like to keep the vibes chill here so just call me Tony.\"\\n\\nHe starts weaving some webs on the wall and makes you a Super \\nChill Hammock\u2122. \\n\\n[[Climb into the SCH\u2122|Hammock]]",
+      "links": [
+        {
+          "text": "Climb into the SCH\u2122",
+          "destination": {
+            "name": "Hammock",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "mean to dryad",
+      "text": "~The Dryad seemed sad that you would act this way after she just told you about hedgehogs!~\\n\\n\"Nope! I gave you lodging in this log, so you're going to listen.\"\\n\\nYou sit quietly and listen.\\n\\n\"Well there is this witch that keeps stealing my flowers! I have been uhhhh....too shy to talk to her about it, but she can't take so much without replanting! I would be able to talk to her myself.. maybe if the bakery combined with the dinner theater... you will just have to do it for me!\"\\n\\n\"Ok I guess I could help...\"\\n\\n[[Your stomach grumbles.]]\\n\\n",
+      "links": [
+        {
+          "text": "Your stomach grumbles.",
+          "destination": {
+            "name": "Your stomach grumbles.",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Hooray!!",
+      "text": "You were very hungry. And now you are full. What a wonderful gift life is, you think.\\n\\nThen you remember you have a final..\\n\\nThen you think about the bacon, and you decide to ask the ultimate question!\\n\\n[[The ultimate question]]",
+      "links": [
+        {
+          "text": "The ultimate question",
+          "destination": {
+            "name": "The ultimate question",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "The cave 2.2",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 47,
+      "name": "Sure?",
+      "text": "\"Thankss dude.. Just walk out of the cave and find that [[tree | dryad tree]] with that door on it.\"\\n\\n~Tony appriciates your help~\\n\\n<<set $affinity +=1>>\\n<<set $tony +=1>>",
+      "links": [
+        {
+          "text": "tree ",
+          "destination": {
+            "name": "dryad tree",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Start",
+      "text": "It's finals week and you have a computer science final tomorrow that you haven't studied for yet.\\n\\nYou're sad, sprawled over a desk full of notes.\\n\\nThe dark night sky outside your window is full of twinkling stars.\\n[[You think you might play some music|https://www.youtube.com/watch?v=hdmSovWFhig&list=PLOwRb6rgB7uUWegKV6QeNjZ9FZGOl25j7]]\\n\\n[[Try to study]] or [[Climb out the window to the roof]]\\n\\n<<set $mushroom = false>>\\n<<set $trees = false>>\\n<<set $hedghog = false>>\\n<<set $snail = false>>\\n<<set $george = 0>>\\n<<set $tony = 0>>\\n<<set $witchAndDryad = 0>>\\n<<set $gang = 0>>\\n<<set $affinity = 0>>\\n",
+      "links": [
+        {
+          "text": "Try to study",
+          "destination": {
+            "name": "Try to study",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Climb out the window to the roof",
+          "destination": {
+            "name": "Climb out the window to the roof",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Invite yourself in.",
+      "text": "You barge into her humble abode. How rude!\\n\\nShe notices your turtle slippers and forgives you.\\n\\n\"What were you doing out here so late in the rain?\" she asks.\\n\\n\"There was a giant spider!\"\\n\\n\"Do you mean Tony? Why would you run from him? He is like the chillest.\"\\n\\n\"I'm not usually afraid of spiders, but this one was really big.\"\\n\\n\"Can I see your slippers?\"\\n\\n[[Can't you see them already?|Can't you see them already?2]] or [[Hand them over|Hand them over2]]",
+      "links": [
+        {
+          "text": "Can't you see them already?",
+          "destination": {
+            "name": "Can't you see them already?2",
+            "pid": 63
+          }
+        },
+        {
+          "text": "Hand them over",
+          "destination": {
+            "name": "Hand them over2",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Climb out the window to the roof",
+      "text": "You didn't even try to study.\\n\\nSlipping on your comfy turtle slippers, you climb out the window on to the roof.\\n\\nYou lie down and contemplate your life.\\n\\n[[A star twinkles]]",
+      "links": [
+        {
+          "text": "A star twinkles",
+          "destination": {
+            "name": "A star twinkles",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Follow him into the shimmery void.",
+      "text": "The end of the portal is a big red door. You open it and walk through.\\n\\nGeorge closes it with a grin.\\n\\n\"Now you're stuck here forever! Or until you solve my problems.\"\\n\\n\"YOUR problems? I thought you were going to solve mine.\"\\n\\n\"It's a trade, dude.\"\\n\\n[[Decide to ditch the gnome.]] or [[Take pity on him.]]",
+      "links": [
+        {
+          "text": "Decide to ditch the gnome.",
+          "destination": {
+            "name": "Decide to ditch the gnome.",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Take pity on him.",
+          "destination": {
+            "name": "Take pity on him.",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "The Human's Problem",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 53,
+      "name": "ignore the spider like you ignore all your problems",
+      "text": "You are too tired for this at the moment so you close your eyes and block out the fact that there is a giant spider directly above you.\\n\\nThen you hear a really chill voice.\\n\\n\"Sup.....uhhh want me to make you a hammock, you look uncomfy.\"\\n\\n [[Talk to the spider]] or [[Panic on the inside and play dead]]",
+      "links": [
+        {
+          "text": "Talk to the spider",
+          "destination": {
+            "name": "Talk to the spider",
+            "pid": 43
+          }
+        },
+        {
+          "text": "Panic on the inside and play dead",
+          "destination": {
+            "name": "Panic on the inside and play dead",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Tony's bacon.",
+      "text": "\"Oh!\" she says. \"That's the spider whose parents own the dinner theater, right?\"\\n\\n\"Yeah.\"\\n\\n\"I love that place! I go there all the time with the unicorns. I wish they would combine with the bakery though. Nothing like cookies when you're watching musicals.\"\\n\\n\"10 outta 10.\" You utter your catchphrase.\\n\\n\"What?\"\\n\\n\"Oh nothing,\" [[you walk out]] with a smile on your face and wish her a good day.",
+      "links": [
+        {
+          "text": "you walk out",
+          "destination": {
+            "name": "you walk out",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Hedgehog Fact!",
+      "text": "\"The hedgehog got its name because of its peculiar foraging habits. They root through hedges and other undergrowth in search of their favourite food \u2013 small creatures such as insects, worms, centipedes, snails, mice, frogs, and snakes.\"\\n\\n[[Hedgehogs are totally the cutest!|You hand her your slippers]]\\n<<set $hedghog = true>>",
+      "links": [
+        {
+          "text": "Hedgehogs are totally the cutest!",
+          "destination": {
+            "name": "You hand her your slippers",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "nice to dryad",
+      "text": "~The Dryad seems happy that you would listen~\\n\\n\"Well there is this witch that keeps stealing my flowers. I want to talk to her, but I am too shy to let her know she needs to replant flowers if she is taking any... If the bakery combined maybe I would be able to get the courage to talk with her... Could you just tell her for me?\"\\n\\nYour stomach makes the grumblies. The Dryad laughs.\\n\\n\"If you're hungry take these spices to Tony, and apologize for running away from him. He has been really sensitive since he ran away from home.\"\\n\\n[[Ask about Tony]]\\n\\n<<set $affinity += 1>>\\n<<set $witchAndDryad +=1>>\\n",
+      "links": [
+        {
+          "text": "Ask about Tony",
+          "destination": {
+            "name": "Ask about Tony",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Answer his question.",
+      "text": "\"Well I was studying,\" you say.\\n\\n\"I thought that was a form of torture.\"\\n\\nYou look blankly at him.\\n\\n\"You know, student + dying? Studying?\"\\n\\n\"Oh, I guess you're right.\"\\n\\n\"Of course I am. You should come with me! I'm a magical boy so I'll solve all your problems.\"\\n\\nYou guess that means he'll take your final for you.\\n\\n\"Let me create a magicky thingy.\"\\n\\nA shimmery void appears.\\n\\n[[Follow him into the shimmery void.]]",
+      "links": [
+        {
+          "text": "Follow him into the shimmery void.",
+          "destination": {
+            "name": "Follow him into the shimmery void.",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "\"This is a PREZTEL.\"",
+      "text": "\"Shhhh,\" says the gnome.\\n\"It's a cookie and you know it.\"\\n\\nThere is a long silence...\\n\\n\"I am a George. Of the baked potato variety.\"\\n\\nYou deduce that Baked Potato is his last name.\\nAnd that George is his first.\\n\\n\"Okay George, so what are you doing here?\"\\n\\n\"What are YOU doing here?\"\\n\\n\"This is my house.\"\\n\\n\"Nooo.. this is MY roof for contemplating MY problems.\"\\n\\n[[Ask him about his problems.]] or [[Answer his question.]]",
+      "links": [
+        {
+          "text": "Ask him about his problems.",
+          "destination": {
+            "name": "Ask him about his problems.",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Answer his question.",
+          "destination": {
+            "name": "Answer his question.",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Panic on the inside and play dead",
+      "text": "You lay still and think about bunnies nuzzling your cheek. This puts you at ease until you realize the spider is chilling next to you now.\\n\\n\"You still up dude? I finished the Super Chill Hammock\u2122.\"\\n\\n[[Get in the SPH\u2122|Hammock]]\\n\\n\\n\\n",
+      "links": [
+        {
+          "text": "Get in the SPH\u2122",
+          "destination": {
+            "name": "Hammock",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Explain what pretzels are",
+      "text": "You explain to him what pretzels are.\\n\\n\"Oh,\" he exclaims. \"You mean fancy knot bread?\"\\n\\n\"Okay, so if you know what this is why did you call it a cookie?\"\\n\\n\"Oh.. I thought it was a cookie in my pocket. I was wrong. ANYWAY, forgot to introduce myself. I'm George! And you look like you are in need of a magical solution for your problems. Follow me!\"\\n\\nHe makes a portal and jumps in.\\n\\n[[Follow him |Follow him into the shimmery void.]]",
+      "links": [
+        {
+          "text": "Follow him ",
+          "destination": {
+            "name": "Follow him into the shimmery void.",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "Reach for the sizzling bacon",
+      "text": "You get burned.\\n\\n\"DUDE.. no...\"\\n\\n[[You get burned twice.]]",
+      "links": [
+        {
+          "text": "You get burned twice.",
+          "destination": {
+            "name": "You get burned twice.",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "next day",
+      "text": "You wake to the smell of bacon.\\n\\nYou roll out of the hammock and towards where Tony is cooking.\\n\\nYou are starving.\\n\\n[[Reach for the sizzling bacon]] or [[Greet Tony]]",
+      "links": [
+        {
+          "text": "Reach for the sizzling bacon",
+          "destination": {
+            "name": "Reach for the sizzling bacon",
+            "pid": 61
+          }
+        },
+        {
+          "text": "Greet Tony",
+          "destination": {
+            "name": "Greet Tony",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Can't you see them already?2",
+      "text": "\"Well...I wanted to pet them!!\"\\n\\n\"They aren't real you know...\"\\n\\n\"I let you in, now let me pet them slippers.\"\\n\\n[[You hand her your slippers]]",
+      "links": [
+        {
+          "text": "You hand her your slippers",
+          "destination": {
+            "name": "You hand her your slippers",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "Ask about Tony",
+      "text": "\"Well Tony has been wanting to be a chef ever since he was a kid! He always loved to make bacon, but his parents want him to work with them in the dinner theater; same with that baked potato boy George and the cookie factory. I guess combining their shops would solve a lot of problems.\"\\n\\nYou get a brilliant idea.\\n\\n\"Hey! do you think Tony has bacon that I could eat right now?!?\"\\n\\n\"Yes, he makes it every morning.\"\\n\\n\"Awesome! See you later!\"\\n\\n[[Get that bacon]]",
+      "links": [
+        {
+          "text": "Get that bacon",
+          "destination": {
+            "name": "Get that bacon",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "squint back",
+      "text": "You squint back and it becomes a staring match.\\n\\nOne of Tony's eight eyes blinks first. Who wins?\\n\\n~Tony seems upset by the outcome of the contest.~\\n\\n\"What are you doing here?\"\\n\\n[[Offer spices for his bacon |back to the cave]]\\n\\n<<set $affinity -= 1>>\\n<<set $tony -= 1>>",
+      "links": [
+        {
+          "text": "Offer spices for his bacon ",
+          "destination": {
+            "name": "back to the cave",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Hammock",
+      "text": "\\nYou get into the SCH\u2122 and start noticing the pleasant decorations around the cave....like a [[lamp]]...you had wondered why the cave was so well illuminated, now you know.\\n\\n~Tony is happy that you are using his hanmmock~\\n\\n<<set $affinity +=1>>\\n<<set $tony +=1>>",
+      "links": [
+        {
+          "text": "lamp",
+          "destination": {
+            "name": "lamp",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "The Witch",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 68,
+      "name": "Witch/Dryad Final",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "\"What areee YOU?",
+      "text": "\"I am a George. Of the baked potato variety.\"\\n\\nYou deduce that Baked Potato is his last name.\\nAnd that George is his first.\\n\\n\"Okay George, so what are you doing here?\"\\n\\n\"What are YOU doing here?\"\\n\\n\"This is my house.\"\\n\\n\"Nooo.. this is MY roof for contemplating MY problems.\"\\n\\n[[Ask him about his problems.]] or [[Answer his question.]]",
+      "links": [
+        {
+          "text": "Ask him about his problems.",
+          "destination": {
+            "name": "Ask him about his problems.",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Answer his question.",
+          "destination": {
+            "name": "Answer his question.",
+            "pid": 57
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "lamp",
+      "text": "\"Nice lamp, Tony.\"\\n\\n\"Ummmmm... thanks.\"\\n\\nTony seems a bit sad.\\n\\n[[Investigate]]",
+      "links": [
+        {
+          "text": "Investigate",
+          "destination": {
+            "name": "Investigate",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "It starts to storm heavily.",
+      "text": "You find a [[cave|the cave]].",
+      "links": [
+        {
+          "text": "cave",
+          "destination": {
+            "name": "the cave",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "back to the cave",
+      "text": "You hand over the spices.\\n\\nTony seems pleased! He cooks the bacon. Hooray!\\n\\nYou eat the bacon. Hooray!\\n\\n[[Hooray!!]]",
+      "links": [
+        {
+          "text": "Hooray!!",
+          "destination": {
+            "name": "Hooray!!",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "Solution 2",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 74,
+      "name": "Solution 1",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 75,
+      "name": "You get burned twice.",
+      "text": "You end up outside at a stream, the gurgling water rushing over your hand to cool it down.\\n\\nBeside you is a large oak tree with a door embedded in it.\\n\\n[[Knock on the door|Dryad's Home]]",
+      "links": [
+        {
+          "text": "Knock on the door",
+          "destination": {
+            "name": "Dryad's Home",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "Your stomach grumbles.",
+      "text": "\"Well now that you have promised to help you should go see Tony! I hear your tummy grumbling so you must be very hungry. Tony makes amazing bacon! Here are some spices to make it even better. And you should apologize for running away last night - he is sensitive! Especially since he ran away from home.\"\\n\\n[[Ask about Tony]]\\n\\n<<set $affinity -=1>>\\n<<set $witchAndDryad -=1>>",
+      "links": [
+        {
+          "text": "Ask about Tony",
+          "destination": {
+            "name": "Ask about Tony",
+            "pid": 64
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "Next day",
+      "text": "The dryad and you become good friends. She tells you about the neighborhood witch who keeps stealing her tree's flowers.\\n\\nYou are a good listener.\\n\\nBefore you leave, she gives you some herbs as a present. (\"Good for the soul, she says)\\n\\nYou say that they will be perfect for [[Tony's bacon.]]",
+      "links": [
+        {
+          "text": "Tony's bacon.",
+          "destination": {
+            "name": "Tony's bacon.",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "Snail Fact!",
+      "text": "\"A group of snails can be referred to as a rout, walk or escargatoire of snails. The word snail is used for thousands of animal species in the gastropod mollusk family.\"\\n\\n[[Totally Tubular!|You hand her your slippers]]\\n<<set $snail = true>>",
+      "links": [
+        {
+          "text": "Totally Tubular!",
+          "destination": {
+            "name": "You hand her your slippers",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "Dryad's Home 2",
+      "text": "A gentle voice opens the door.\\n\\n\"Are you okay?\" asks a dryad, flowers decorating her hair.\\n\\nThe inside looks warm and inviting.\\n\\n[[\"I just ran away from a giant spider!\"]] or [[Invite yourself in.]]",
+      "links": [
+        {
+          "text": "\"I just ran away from a giant spider!\"",
+          "destination": {
+            "name": "\"I just ran away from a giant spider!\"",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Invite yourself in.",
+          "destination": {
+            "name": "Invite yourself in.",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "dryad tree",
+      "text": "You make your way out to the forest and find a door on a large tree.\\n\\n\\n[[Knock on the door |Dryad's Home]]",
+      "links": [
+        {
+          "text": "Knock on the door ",
+          "destination": {
+            "name": "Dryad's Home",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "Untitled Stylesheet 1",
+      "text": "/* Your story will use the CSS in this passage to style the page.\\nGive this passage more tags, and it will only affect passages with those tags.\\nExample selectors: \\n\\n\\n\\n*/\\n\\nbody {\\n\\t/* This affects the entire page */\\n background-image: linear-gradient(to bottom,  hsl(100, 70%, 30%), blue);\\n  background-image: -webkit-linear-gradient(top,  hsl(120, 39%, 30%), #0c46e8);\\n  background-attachment: fixed;\\n}\\n.passage {\\n\\t/* This only affects passages */\\n\\n \\n\\t\\t\\n\\t\\n}\\n\\n\\n\\n.passage a {\\n\\t/* This affects passage links */\\n\\tcolor:LightSeaGreen;\\n\\n\\t\\n}\\n.passage a:hover {\\n\\t/* This affects links while the cursor is over them */\\n\\t\\tcolor:White;\\n\\n\\t\\n}",
+      "links": []
+    },
+    {
+      "pid": 82,
+      "name": "The Bakery 2",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 83,
+      "name": "Ignore the gnoem",
+      "text": "You ignore the gnome.\\n\\nOut of the corner of your eye, you see him edge closer.\\n\\n~The Gnome semed a bit saddened by your treatment~\\n\\n\"Hey...\\n\\nDo you want a cookie?\"\\n\\nHe unceremoniously shoves a pretzel in your face.\\n\\n[[\"This is a pretzel.\"]] or [[\"This is a PREZTEL.\"]]",
+      "links": [
+        {
+          "text": "\"This is a pretzel.\"",
+          "destination": {
+            "name": "\"This is a pretzel.\"",
+            "pid": 2
+          }
+        },
+        {
+          "text": "\"This is a PREZTEL.\"",
+          "destination": {
+            "name": "\"This is a PREZTEL.\"",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "Solution 3",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 85,
+      "name": "Next day 2",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 86,
+      "name": "Story title",
+      "text": "GNOEM",
+      "links": []
+    },
+    {
+      "pid": 87,
+      "name": "Decide to ditch the gnome.",
+      "text": "You distract him by doing a thing.\\n\\nGeorge looks up.\\n\\nYou make like a tree and run.\\n\\n[[After a while, your phone buzzes.]]",
+      "links": [
+        {
+          "text": "After a while, your phone buzzes.",
+          "destination": {
+            "name": "After a while, your phone buzzes.",
+            "pid": 14
+          }
+        }
+      ]
+    }
+  ]
+}

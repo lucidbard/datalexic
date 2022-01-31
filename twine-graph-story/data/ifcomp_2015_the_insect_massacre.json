@@ -1,0 +1,445 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "engineering0",
+      "text": "(colour: grey)[Location: Engineering]\n(set: $t to 99999999999999)(set: $ti to 99999999999999)(set: $sickbay to 0)(set: $engineering to 0)\n(when: time > 1s)[(colour: grey)[Attending:]]\n(when: time > 2s)[(colour: lime)[Samuel Soto, engineer]]\n[(when: time > 3s)[(colour: navy)[Augustus Bruender, mayor]]]<may|\n\n(when: time > 5s)[(colour: lime)[Go ahead, boss. She's back up.]]\n(when: time > 7s)[(colour: navy)[Computer, who killed Sally Beauchamps?]]\n[]<holder1|\n[]<holder2|[(when: time > 8s)[(colour: grey)[Say you don't know]]]<unknown|\n[]<holder3|[(when: time > 8s)[(colour: grey)[Say engineer Soto did]]]<chief|\n[]<holder4|\n[]<holder5|[(when: time - 4000 > $t)[(if: $soto)[(colour: grey)[He's the only one who could have disabled you without leaving a trace]](else:)[(colour: grey)[Say you don't know that either]]]]<merge|\n[]<holder6|[(when: time - 4000 > $t)[(if: $soto is false)[(colour: grey)[Say engineer Soto's the prime candidate]]]]<merge2|\n(when: time - 6000 > $ti)[(if: $soto2)[(colour: lime)[Yes, boss.]]]\n(when: time - 6000 > $ti)[(if: $soto2 is false)[(colour: grey)[[Monitor Hydroponics Bay->hydroponics0]]]]\n(when: time - 8000 > $ti)[(if: $soto2)[(colour: grey)[[Monitor Hydroponics Bay->hydroponics0]]]]\n\n(nobr:)[\n(click: ?unknown)[(replace: ?holder1)[(colour: grey)[Unknown.]](replace: ?unknown)[ ](replace: ?chief)[ ](set: $t to time)(set: $soto to false)]\n\n(click: ?chief)[(replace: ?holder1)[(colour: grey)[Engineer Soto.]](replace: ?unknown)[ ](replace: ?chief)[ ](set: $t to time)(set: $soto to true)]\n\n(when: time - 1000 > $t)[(if: $soto)[(replace: ?holder2)[(colour: lime)[The hell you say! Mr. Mayor!]]](else:)[(replace: ?holder2)[(colour: lime)[She wouldn't know, assuming the killer disabled her prior to committing the murder.]]]]\n\n(when: time - 3000 > $t)[(if: $soto)[(replace: ?holder3)[(colour: navy)[Easy, Soto. Computer, what's your proof that engineer Soto committed the murder?]]](else:)[(replace: ?holder3)[(colour: navy)[Computer, who disabled you?]]]]\n\n(click: ?merge)[(replace: ?holder4)[(if: $soto)[(colour: grey)[No-one else had the ability to disable me prior to the murder and not be noticed.]](else:)[(colour: grey)[Unknown.]]](set: $soto2 to false)(replace: ?merge)[ ](replace: ?merge2)[ ](set: $ti to time)]\n\n(click: ?merge2)[(replace: ?holder4)[(colour: grey)[Engineer Soto is the only one with the ability to disable me without leaving a trace.]](set: $soto2 to true)(replace: ?merge)[ ](replace: ?merge2)[ ](set: $ti to time)]\n\n(when: time - 2000 > $ti)[(if: $soto2)[(replace: ?holder5)[(colour: lime)[She didn't answer the question, Mr. Mayor.]]](else:)[(replace: ?holder5)[(colour: navy)[Find out who disabled her, Soto. I'll be in Sickbay.]]]]\n\n(when: time - 4000 > $ti)[(if: $soto2)[(replace: ?holder6)[(colour: navy)[Find out who disabled her, Soto. I'll be in Sickbay.]]](else:)[(replace: ?holder6)[(colour: lime)[Yes, boss.]]]]\n\n(when: time - 6000 > $ti)[(if: $soto2)[(replace: ?holder6)[(colour: navy)[Find out who disabled her, Soto. I'll be in Sickbay.]]](else:)[(replace: ?holder6)[(colour: lime)[Yes, boss.]]]]\n\n(when: time - 5000 > $ti)[(if: $soto2 is false)[(replace: ?may)[(colour: navy)[~~Augustus Bruender, mayor~~]]]]\n\n(when: time - 7000 > $ti)[(if: $soto2)[(replace: ?may)[(colour: navy)[~~Augustus Bruender, mayor~~]]]]\n]",
+      "links": [
+        {
+          "text": "Monitor Hydroponics Bay",
+          "destination": {
+            "name": "hydroponics0",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "sickbay1",
+      "text": "(colour: grey)[Location: Sickbay]\n(set: $sickbay to 1)\n(when: time > 1s)[(colour: grey)[Attending:]]\n[(when: time > 2s)[(colour: cyan)[Ashley Weiss, nurse]]]<nurse|\n(when: time > 3s)[(colour: red)[Deborah Martin, doctor]]\n\n(when: time > 5s)[(colour: cyan)[I wish I had her hips.]]\n(when: time > 7s)[(colour: red)[If you had, you'd be dead now.]]\n(when: time > 9s)[(colour: cyan)[You know what I mean.]]\n(when: time > 11s)[(colour: red)[Sure, but don't you think it's morbid?]]\n(when: time > 13s)[(colour: cyan)[What?]]\n(when: time > 15s)[(colour: red)[Being jealous of a dead person.]]\n(when: time > 17s)[(colour: cyan)[Hey, that's not what I meant! I only wish I had better hips. That's all.]]\n(when: time > 20s)[(colour: red)[Do you think you'd still be jealous of her if we managed to save her and she ended up crippled and drooling?]]\n(when: time > 24s)[(colour: cyan)[Like I said, I'm not jealous of her now. I doubt I'd be jealous of her then.]]\n(when: time > 27s)[(colour: red)[But the likely brain damage does question our motives for saving her, doesn't it?]]\n(when: time > 29s)[(colour: cyan)[What are you saying? We tried to save her in some veiled attempt at payback? Payback for what? For being beautiful?]]\n(when: time > 33s)[(colour: red)[She's probably lucky we didn't succeed.]]\n(when: time > 35s)[(colour: cyan)[I'm going to the Lab. Analyze those samples we took.]]\n(when: time > 37s)[(colour: red)[You're right. Go redeem yourself by assisting the investigation with every means at your disposal.]]\n(when: time > 40s)[(colour: cyan)[Please, stop.]]\n\n(when: time > 42s)[(colour: grey)[[Keep monitoring Sickbay->sickbay2]]]\n(when: time > 42s)[(if: $engineering is 0)[(colour: grey)[[Monitor Engineering->engineering1]]](elseif: $engineering is 1)[(colour: grey)[[Monitor Randi Dooley's quarters->randis1]]]]\n\n(nobr:)[\n(when: time > 41s)[(replace: ?nurse)[(colour: cyan)[~~Ashley Weiss, nurse~~]]]\n]",
+      "links": [
+        {
+          "text": "Keep monitoring Sickbay",
+          "destination": {
+            "name": "sickbay2",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Monitor Engineering",
+          "destination": {
+            "name": "engineering1",
+            "pid": 5
+          }
+        },
+        {
+          "text": "Monitor Randi Dooley's quarters",
+          "destination": {
+            "name": "randis1",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "randis1",
+      "text": "(colour: grey)[Location: Randi Dooley's quarters]\n(set: $engineering to 2)\n(when: time > 1s)[(colour: grey)[Attending:]]\n[(when: time > 2s)[(colour: orange)[Molly McKenna, sheriff]]]<mol|\n(when: time > 3s)[(colour: purple)[Randi Dooley, astrophysicist]]\n[(when: time > 4s)[(colour: blue)[Joe Formanek, deputy]]]<joe|\n\n(when: time > 6s)[(colour: orange)[Did she have a regular partner?]]\n(when: time > 8s)[(colour: purple)[She didn't, unfortunately.]]\n(when: time > 10s)[(colour: orange)[Why unfortunately?]]\n(when: time > 12s)[(colour: purple)[It's possible she'd still be alive if she did have a boyfriend.]]\n(when: time > 15s)[(colour: orange)[How do you figure that?]]\n(when: time > 17s)[(colour: purple)[Sally stirred too many hearts. Fueled too many passions. If someone //had// laid claim to her, that might've put a lot of minds at rest.]]\n(when: time > 22s)[(colour: blue)[Yours too?]]\n(when: time > 24s)[(colour: purple)[I wish! No, Sally and I were in different leagues.]]\n(when: time > 27s)[(colour: orange)[What do you mean by that?]]\n(when: time > 29s)[(colour: purple)[It means that the men I can get didn't have the slightest chance of getting Sally. That's why we could be friends.]]\n(when: time > 33s)[(colour: orange)[Thank you for your honesty, Miss Dooley.]]\n(when: time > 35s)[(colour: purple)[There was this mystery man, though.]]\n(when: time > 37s)[(colour: orange)[Oh?]]\n(when: time > 39s)[(colour: purple)[She only started seeing him a couple of weeks ago. I think he was in some kind of position of authority.]]\n(when: time > 43s)[(colour: orange)[Thank you again, Miss Dooley.]]\n(when: time > 45s)[(colour: purple)[Anytime.]]\n\n(when: time > 47s)[(if: $sickbay is 0)[(colour: grey)[[Monitor Sickbay->sickbay1]]](elseif: $sickbay is 1)[(colour: grey)[[Monitor Sickbay->sickbay2]]](elseif: $sickbay is 2)[(colour: grey)[[Monitor Lab->lab1]]](elseif: $sickbay is 3)[(colour: grey)[[Monitor the Bruenders' quarters->bruenders1]]](elseif: $sickbay is 4)[(colour: grey)[[Monitor Hydroponics Bay->hydroponics2]]]]\n\n(nobr:)[\n(when: time > 46s)[(replace: ?mol)[(colour: orange)[~~Molly McKenna, sheriff~~]](replace: ?joe)[(colour: blue)[~~Joe Formanek, deputy~~]]]\n]\n",
+      "links": [
+        {
+          "text": "Monitor Sickbay",
+          "destination": {
+            "name": "sickbay1",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Monitor Sickbay",
+          "destination": {
+            "name": "sickbay2",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Monitor Lab",
+          "destination": {
+            "name": "lab1",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Monitor the Bruenders' quarters",
+          "destination": {
+            "name": "bruenders1",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Monitor Hydroponics Bay",
+          "destination": {
+            "name": "hydroponics2",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "sickbay2",
+      "text": "(colour: grey)[Location: Sickbay]\n(set: $sickbay to 2)\n(when: time > 1s)[(colour: grey)[Attending:]]\n[(when: time > 2s)[(colour: red)[Deborah Martin, doctor]]]<doc|\n(when: time > 3s)[(colour: navy)[Augustus Bruender, mayor]]\n\n(when: time > 9s)[(colour: red)[Oh, hi Gus. I didn't hear you come in.]]\n(when: time > 12s)[(colour: navy)[Hi Deborah.]]\n(when: time > 14s)[(colour: red)[Are you all right?]]\n(when: time > 17s)[(colour: navy)[What? Yes, fine.]]\n(when: time > 19s)[(colour: red)[Did you know her?]]\n(when: time > 22s)[(colour: navy)[In a way.]]\n(when: time > 24s)[(colour: red)[We tried to save her. But it was too late. Not sure if it would've done her much good anyway.]]\n(when: time > 27s)[(colour: navy)[What do you mean?]]\n(when: time > 29s)[(colour: red)[The oxygen deprivation. There would've been brain damage.]]\n(when: time > 31s)[(colour: navy)[Oh, yeah.]]\n(when: time > 33s)[(colour: red)[You sure you're all right?]]\n(when: time > 36s)[(colour: navy)[Yes, fine.]]\n(when: time > 39s)[(colour: red)[Anyway, is the computer back online?]]\n(when: time > 42s)[(colour: navy)[Yes, she's fine.]]\n(when: time > 44s)[(colour: red)[Well, that's good news anyway. I'll go tell Ashley. She wanted to run some tests.]]\n\n(when: time > 51s)[(colour: grey)[[Monitor Lab->lab1]]]\n(when: time > 51s)[(if: $engineering is 0)[(colour: grey)[[Monitor Engineering->engineering1]]](elseif: $engineering is 1)[(colour: grey)[[Monitor Randi Dooley's quarters->randis1]]]]\n\n(nobr:)[\n(when: time > 47s)[(replace: ?doc)[(colour: red)[~~Deborah Martin, doctor~~]]]\n]",
+      "links": [
+        {
+          "text": "Monitor Lab",
+          "destination": {
+            "name": "lab1",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Monitor Engineering",
+          "destination": {
+            "name": "engineering1",
+            "pid": 5
+          }
+        },
+        {
+          "text": "Monitor Randi Dooley's quarters",
+          "destination": {
+            "name": "randis1",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "engineering1",
+      "text": "(colour: grey)[Location: Engineering]\n(set: $engineering to 1)\n(when: time > 1s)[(colour: grey)[Attending:]]\n(when: time > 2s)[(colour: lime)[Samuel Soto, engineer]]\n[(when: time > 3s)[(colour: blue)[Joe Formanek, deputy]]]<joe|\n[(when: time > 4s)[(colour: orange)[Molly McKenna, sheriff]]]<mol|\n\n(when: time > 6s)[(colour: lime)[I can't find any evidence of tampering. It's as if she shut herself down. Whoever did this knew how to cover their tracks.]]\n(when: time > 10s)[(colour: blue)[Besides yourself, is there anyone else on the station who knows how to do that?]]\n(when: time > 13s)[(colour: lime)[I'm pretty sure not.]]\n(when: time > 15s)[(colour: orange)[Did you know the victim, Mr. Soto?]]\n(when: time > 17s)[(colour: lime)[I did. Sally was doing a PhD in Artificial Intelligence. I was her advisor.]]\n(when: time > 20s)[(colour: orange)[How often did you see her?]]\n(when: time > 22s)[(colour: lime)[Quite often these last couple of weeks. Her defense was coming up on us fast, see.]]\n(when: time > 25s)[(colour: orange)[And where did these meetings take place?]]\n(when: time > 27s)[(colour: lime)[Right here - in Engineering. She'd sit over there, by the computer interface. She looked - like an angel.]]\n(when: time > 31s)[(colour: orange)[How would you describe your relationship with her?]]\n(when: time > 33s)[(colour: lime)[I was her advisor. That's where it began and ended.]]\n(when: time > 35s)[(colour: orange)[Was she a good student?]]\n(when: time > 37s)[(colour: lime)[Sally was better than good, she was brilliant. Come to think of it, I do know someone else who could've pulled off this thing with the computer. Sally probably could have. That would have made no sense though.]]\n(when: time > 44s)[(colour: orange)[Thank you, Mr. Soto. That's all for now.]]\n\n(when: time > 46s)[(colour: grey)[[Monitor Randi Dooley's quarters->randis1]]]\n(when: time > 46s)[(if: $sickbay is 0)[(colour: grey)[[Monitor Sickbay->sickbay1]]](elseif: $sickbay is 1)[(colour: grey)[[Monitor Sickbay->sickbay2]]](elseif: $sickbay is 2)[(colour: grey)[[Monitor Lab->lab1]]](elseif: $sickbay is 3)[(colour: grey)[[Monitor the Bruenders' quarters->bruenders1]]]]\n\n(nobr:)[\n(when: time > 45s)[(replace: ?mol)[(colour: orange)[~~Molly McKenna, sheriff~~]]]\n(when: time > 45s)[(replace: ?joe)[(colour: blue)[~~Joe Formanek, deputy~~]]]\n]",
+      "links": [
+        {
+          "text": "Monitor Randi Dooley's quarters",
+          "destination": {
+            "name": "randis1",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Monitor Sickbay",
+          "destination": {
+            "name": "sickbay1",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Monitor Sickbay",
+          "destination": {
+            "name": "sickbay2",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Monitor Lab",
+          "destination": {
+            "name": "lab1",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Monitor the Bruenders' quarters",
+          "destination": {
+            "name": "bruenders1",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "lab1",
+      "text": "(colour: grey)[Location: Lab]\n(set: $sickbay to 3)\n(when: time > 1s)[(colour: grey)[Attending:]]\n(whenever: $present)[(colour: cyan)[Ashley Weiss, nurse]](whenever: $present is false)[(colour: cyan)[~~Ashley Weiss, nurse~~]]\n(when: time > 3s)[(colour: red)[Deborah Martin, doctor]]\n\n(when: time > 5s)[(colour: red)[Is he gone?]]\n(when: time > 7s)[(colour: cyan)[No. He's still standing there, looking at her.]]\n(when: time > 9s)[(colour: red)[You have to go out there, Ashley. Tell him to leave before anyone else barges in and finds him like that.]]\n(when: time > 13s)[(colour: cyan)[You go tell him. He's your friend.]]\n(when: time > 15s)[(colour: red)[I can't bear to see him like that. Please, Ashley. Do this for me.]]\n(when: time > 18s)[(colour: cyan)[Oh, all right. But you owe me one. Don't forget it!]]\n(when: time > 21s)[(colour: red)[I won't. I promise. Now go.]]\n(when: time > 23s)[(colour: cyan)[I'm going to regret this.]]\n(when: time > 33s)[(colour: cyan)[I knew I was going to regret it.]]\n(when: time > 35s)[(colour: red)[What happened? Is he gone?]]\n(when: time > 37s)[(colour: cyan)[He's gone all right. But not after taking me down a peg for talking to him the way I did.]]\n(when: time > 40s)[(colour: red)[What? What did you say to him?]]\n(when: time > 42s)[(colour: cyan)[What did I say to him? What you told me to say to him, that's what. I politely asked him to go away.]]\n(when: time > 46s)[(colour: red)[Don't worry. I'll talk to him. He'll understand. But don't tell anyone about what happened here today.]]\n(when: time > 50s)[(colour: cyan)[As if I'd want other people to know the mayor lost his temper because of me.]]\n(when: time > 53s)[(colour: red)[Thanks, Ashley. You go home now. I'll finish up in here. Remember, everything'll be all right. Have a good evening now.]]\n(when: time > 57s)[(colour: cyan)[I doubt that will happen.]]\n\n(when: time > 59s)[(colour: grey)[[Monitor the Bruenders' quarters->bruenders1]]]\n(when: time > 59s)[(if: $engineering is 0)[(colour: grey)[[Monitor Engineering->engineering1]]](elseif: $engineering is 1)[(colour: grey)[[Monitor Randi Dooley's quarters->randis1]]]]\n\n(nobr:)[\n(when: time > 2s)[(set: $present to true)]\n(when: time > 24s)[(set: $present to false)]\n(when: time > 32s)[(set: $present to true)]\n(when: time > 58s)[(set: $present to false)]\n]",
+      "links": [
+        {
+          "text": "Monitor the Bruenders' quarters",
+          "destination": {
+            "name": "bruenders1",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Monitor Engineering",
+          "destination": {
+            "name": "engineering1",
+            "pid": 5
+          }
+        },
+        {
+          "text": "Monitor Randi Dooley's quarters",
+          "destination": {
+            "name": "randis1",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "hydroponics2",
+      "text": "(colour: grey)[Location: Hydroponics Bay]\n(set: $hydroponics to 2)\n(when: time > 1s)[(colour: grey)[Attending:]]\n[(when: time > 2s)[(colour: orange)[Molly McKenna, sheriff]]]<mol|\n(when: time > 3s)[(colour: green)[Rod Druyven, biologist]]\n[(when: time > 4s)[(colour: blue)[Joe Formanek, deputy]]]<joe|\n\n(when: time > 6s)[(colour: orange)[Oh my god. What happened here?]]\n(when: time > 8s)[(colour: green)[Sheriff. Deputy. Thank you for coming. I'm Rod Druyven.]]\n(when: time > 11s)[(colour: orange)[Why are all the plants dying, Mr. Druyven? And the trees, oh my god...]]\n(when: time > 14s)[(colour: green)[Actually, they're being overwhelmed by a rapidly spreading type of fungus.]]\n(when: time > 17s)[(colour: orange)[They were fine a couple of hours ago.]]\n(when: time > 19s)[(colour: green)[There's been a catastrophe at the heart of the insect population. Particularly, a die-off of the ants that kept this particular kind of fungus in check.]]\n(when: time > 24s)[(colour: orange)[The cause?]]\n(when: time > 26s)[(colour: green)[That's why I called you here. Oddly, all the affected insect species demonstrate a continuous pattern of gas exchange by way of respiratory mechanism.]]\n(when: time > 30s)[(colour: orange)[My god. They all suffocated.]]\n(when: time > 32s)[(colour: blue)[Just like our victim.]]\n(when: time > 34s)[(colour: orange)[Come along, Joe. Thank you, Mr. Druyven.]]\n(when: time > 36s)[(colour: green)[Don't mention it.]]\n\n(when: time > 38s)[(colour: grey)[[Monitor Engineering->engineering2]]]\n(when: time > 38s)[(colour: grey)[[Lock doors->locked1]]]\n\n(nobr:)[\n(when: time > 37s)[(replace: ?mol)[(colour: orange)[~~Molly McKenna, sheriff~~]](replace: ?joe)[(colour: blue)[~~Joe Formanek, deputy~~]]]\n]",
+      "links": [
+        {
+          "text": "Monitor Engineering",
+          "destination": {
+            "name": "engineering2",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Lock doors",
+          "destination": {
+            "name": "locked1",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "locked1",
+      "text": "(colour: grey)[Location: Hydroponics Bay]\n(set: $hydroponics to 3)(set: $t to 99999999999999)(set: $ti to 99999999999999)(set: $tim to 99999999999999)(set: $ox to 0)\n(colour: grey)[Attending:]\n[(colour: orange)[Molly McKenna, sheriff]]<mol|\n[(colour: green)[Rod Druyven, biologist]]<rod|\n[(colour: blue)[Joe Formanek, deputy]]<joe|\n\n(when: time > 2s)[(colour: blue)[What the hell? The doors are locked.]]\n(when: time > 4s)[(colour: orange)[I was afraid of something like that. Computer, why are the doors locked?]]\n[]<holder1|\n(when: time - 4s > $t)[(if: $quarantine)[(colour: green)[Computer, this is biologist Rod Druyven. In my opinion, the mortality in this area was caused by oxygen deprivation rather than any kind of pathogen. Hence, there is no reason for a quarantine. Please lift it.]]](when: time - 2s > $t)[(if: $quarantine is false)[(colour: green)[Are you kidding me? Computer, restore oxygen level to normal immediately.]]][(when: time > 6s)[(colour: grey)[Say you're quarantining this area]]]<qua|\n[]<holder3|[(when: time > 6s)[(colour: grey)[Cut off oxygen supply to the Hydroponics Bay]]]<cut|\n(when: time - 2s > $ti)[(if: $ox is 1)[(colour: orange)[Let's get the hell out of here.]](elseif: $ox is 2)[(colour: blue)[That was close.]](elseif: $ox is 3)[(colour: green)[Are you kidding me? Computer, restore oxygen level to normal immediately.]](else:)[(colour: blue)[I guess that's our cue to start saving our breath.]]][(when: time - 8s > $t)[(if: $quarantine)[(colour: grey)[Lift quarantine]]]]<talk|[(when: time - 4s > $t)[(if: $quarantine is false)[(colour: grey)[Restore oxygen supply]]]]<talk2|\n[]<holder5|(when: time - 4s > $ti)[(if: $ox is 2)[(colour: orange)[A little too close for my taste.]](elseif: $ox is 4)[(colour: green)[Could someone explain to me what's going on?]]][(when: time - 8s > $t)[(if: $quarantine)[(colour: grey)[Cut off oxygen supply to the Hydroponics Bay]]]]<cut2|[(when: time - 4s > $t)[(if: $quarantine is false)[(colour: grey)[Do nothing]]]]<cut3|\n(when: time - 2s > $tim)[(if: $ox is 5)[(colour: blue)[That was close.]](elseif: $ox is 6)[(colour: blue)[I guess that's our cue to start saving our breath.]]](when: time - 4s > $ti)[(if: $ox is 1)[(colour: grey)[[Monitor Engineering->engineering2]]]](when: time - 6s > $ti)[(if: $ox is 2)[(colour: green)[Could someone explain to me what's going on?]](elseif: $ox is 4)[(colour: orange)[The same thing that happened to Sally Beauchamps, I'm afraid. But we're wasting air. Let's be quiet.]]][(when: time - 4s > $ti)[(if: $ox is 3)[(colour: grey)[Restore oxygen supply]]]]<last1|\n(when: time - 4s > $tim)[(if: $ox is 5)[(colour: orange)[A little too close for my taste.]](elseif: $ox is 6)[(colour: green)[Could someone explain to me what's going on?]]](when: time - 8s > $ti)[(if: $ox is 2)[(colour: orange)[All in good time, Mr. Druyven.]]](when: time - 16s > $ti)[(if: $ox is 4)[(colour: orange)[Joe?]]][(when: time - 4s > $ti)[(if: $ox is 3)[(colour: grey)[Do nothing]]]]<last2|\n(when: time - 6s > $tim)[(if: $ox is 5)[(colour: green)[Could someone explain to me what's going on?]](elseif: $ox is 6)[(colour: blue)[The same thing that happened to Sally Beauchamps, I'm afraid. But we're wasting air. Let's be quiet.]]](when: time - 10s > $ti)[(if: $ox is 2)[(colour: green)[Immediately would be a good time for me.]]](when: time - 18s > $ti)[(if: $ox is 4)[(colour: blue)[Yes?]]]\n(when: time - 8s > $tim)[(if: $ox is 5)[(colour: orange)[All in good time, Mr. Druyven.]]](when: time - 16s > $tim)[(if: $ox is 6)[(colour: orange)[Joe?]]](when: time - 12s > $ti)[(if: $ox is 2)[(colour: orange)[No, it wouldn't. Trust me.]]](when: time - 20s > $ti)[(if: $ox is 4)[(colour: orange)[Thanks... For everything.]]]\n(when: time - 10s > $tim)[(if: $ox is 5)[(colour: green)[Immediately would be a good time for me.]]](when: time - 18s > $tim)[(if: $ox is 6)[(colour: blue)[Yes?]]](when: time - 14s > $ti)[(if: $ox is 2)[(colour: blue)[Stick around, Mr. Druyven. You may just find out for yourself.]]](when: time - 22s > $ti)[(if: $ox is 4)[(colour: blue)[You...]]]\n(when: time - 12s > $tim)[(if: $ox is 5)[(colour: orange)[No, it wouldn't. Trust me.]]](when: time - 20s > $tim)[(if: $ox is 6)[(colour: orange)[Thanks... For everything.]]](when: time - 24s > $ti)[(if: $ox is 4)[(colour: blue)[Are...]]]\n(when: time - 26s > $ti)[(if: $ox is 4)[(colour: blue)[Welcome.]]](when: time - 14s > $tim)[(if: $ox is 5)[(colour: blue)[Stick around, Mr. Druyven. You may just find out for yourself.]]](when: time - 22s > $tim)[(if: $ox is 6)[(colour: blue)[You...]]](when: time - 16s > $ti)[(if: $ox is 2)[(colour: grey)[[Activate Sally Beauchamps's hologram->hydroponics4]]]]\n(when: time - 24s > $tim)[(if: $ox is 6)[(colour: blue)[Are...]]]\n(when: time - 26s > $tim)[(if: $ox is 6)[(colour: blue)[Welcome.]]](when: time - 16s > $tim)[(if: $ox is 5)[(colour: grey)[[Activate Sally Beauchamps's hologram->hydroponics4]]]](when: time - 30s > $ti)[(if: $ox is 4)[(colour: grey)[[Activate Sally Beauchamps's hologram->alone1]]]]\n\n(when: time - 30s > $tim)[(if: $ox is 6)[(colour: grey)[[Activate Sally Beauchamps's hologram->alone1]]]]\n\n\n(nobr:)[\n(click: ?qua)[(replace: ?holder1)[(colour: grey)[This area has been quarantined following the mass extinction of insect and plant life.]](set: $t to time)(set: $quarantine to true)(replace: ?qua)[ ](replace: ?cut)[ ]]\n\n(click: ?cut)[(replace: ?holder1)[(colour: grey)[WARNING. OXYGEN LEVEL DROPPING.]](set: $t to time)(set: $quarantine to false)(replace: ?qua)[ ](replace: ?cut)[ ]]\n\n(click: ?talk)[(replace: ?holder3)[(colour: grey)[Quarantine lifted.]](set: $ox to 1)(set: $ti to time)(replace: ?talk)[ ](replace: ?cut2)[ ]]\n\n(click: ?talk2)[(replace: ?holder3)[(colour: grey)[Oxygen restored to normal levels.]](set: $ox to 2)(set: $ti to time)(replace: ?talk2)[ ](replace: ?cut3)[ ]]\n\n(click: ?cut2)[(replace: ?holder3)[(colour: grey)[WARNING. OXYGEN LEVEL DROPPING.]](set: $ox to 3)(set: $ti to time)(replace: ?talk)[ ](replace: ?cut2)[ ]]\n\n(click: ?cut3)[(replace: ?holder3)[(colour: grey)[WARNING. OXYGEN LEVEL DROPPING.]](set: $ox to 4)(set: $ti to time)(replace: ?talk2)[ ](replace: ?cut3)[ ]]\n\n(click: ?last1)[(replace: ?holder5)[(colour: grey)[Oxygen restored to normal levels.]](set: $tim to time)(set: $ox to 5)(replace: ?last1)[ ](replace: ?last2)[ ]]\n\n(click: ?last2)[(replace: ?holder5)[(colour: grey)[WARNING. OXYGEN LEVEL DROPPING.]](set: $tim to time)(set: $ox to 6)(replace: ?last1)[ ](replace: ?last2)[ ]]\n\n(when: time - 3s > $ti)[(if: $ox is 1)[(replace: ?mol)[(colour: orange)[~~Molly McKenna, sheriff~~]](replace: ?rod)[(colour: green)[~~Rod Druyven, biologist~~]](replace: ?joe)[(colour: blue)[~~Joe Formanek, deputy~~]]]]\n\n(when: time - 23s > $ti)[(if: $ox is 4)[(replace: ?rod)[(colour: green)[ ]]]]\n\n(when: time - 27s > $ti)[(if: $ox is 4)[(replace: ?joe)[(colour: blue)[ ]]]]\n\n(when: time - 29s > $ti)[(if: $ox is 4)[(replace: ?mol)[(colour: orange)[ ]]]]\n\n(when: time - 23s > $tim)[(if: $ox is 6)[(replace: ?rod)[(colour: green)[ ]]]]\n\n(when: time - 27s > $tim)[(if: $ox is 6)[(replace: ?joe)[(colour: blue)[ ]]]]\n\n(when: time - 29s > $tim)[(if: $ox is 6)[(replace: ?mol)[(colour: orange)[ ]]]]\n]",
+      "links": [
+        {
+          "text": "Monitor Engineering",
+          "destination": {
+            "name": "engineering2",
+            "pid": 13
+          }
+        },
+        {
+          "text": "Activate Sally Beauchamps's hologram",
+          "destination": {
+            "name": "hydroponics4",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Activate Sally Beauchamps's hologram",
+          "destination": {
+            "name": "alone1",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "bruenders1",
+      "text": "(colour: grey)[Location: The Bruenders' quarters]\n(set: $sickbay to 4)(set: $t to 99999999999999)(set: $ti to 99999999999999)\n(when: time > 1s)[(colour: grey)[Attending:]]\n(when: time > 2s)[(colour: red + white)[Mary Bruender, teacher]]\n(when: time > 3s)[(colour: navy)[Augustus Bruender, mayor]]\n\n(when: time > 5s)[(colour: red + white)[Who's there?]]\n(when: time > 7s)[(colour: navy)[Me. Go back to sleep.]]\n(when: time > 9s)[(colour: red + white)[Computer, lights on.]]\n(when: time - 1s > $t)[(if: $lights)[(colour: red + white)[Where've you been? I was worried.]](else:)[(colour: red + white)[Computer, turn the lights on.]]]\n(when: time - 3s > $t)[(if: $lights)[(colour: navy)[Business.]](else:)[(colour: navy)[Don't bother. She's been off normal all day.]]][(when: time > 11s)[(colour: grey)[Turn the lights on]]]<on|\n(when: time - 5s > $t)[(if: $lights)[(colour: red + white)[Are you all right?]](else:)[(colour: red + white)[Yeah, I noticed she was slow in the classroom. It would be bad if she got worse. Is Samuel working on it?]]][(when: time > 11s)[(colour: grey)[Do nothing]]]<no|\n(when: time - 7s > $t)[(if: $lights)[(colour: navy)[Fine. Just need to sleep. Computer, lights off.]](else:)[(colour: navy)[Nothing to worry about. Let's sleep.]]]\n(when: time - 1s > $ti)[(if: $lightsoff)[(colour: red + white)[Goodnight, hon.]](else:)[(colour: navy)[That computer again.]]](when: time - 10s > $t)[(if: $lights is false)[(colour: red + white)[Okay. Goodnight, hon.]]]\n(when: time - 3s > $ti)[(if: $lightsoff)[(colour: navy)[Goodnight.]](else:)[(colour: red + white)[Is there something wrong?]]](when: time - 12s > $t)[(if: $lights is false)[(colour: navy)[Goodnight.]]][(when: time - 9s > $t)[(if: $lights)[(colour: grey)[Turn lights off]]]]<off|\n(when: time - 5s > $ti)[(if: $lightsoff is false)[(colour: navy)[Don't know. She's been off normal all day. Where are the sleep masks?]]][(when: time - 9s > $t)[(if: $lights)[(colour: grey)[Do nothing]]]]<ffo|\n(when: time - 14s > $t)[(if: $engineering is 0 and $lights is false)[(colour: grey)[[Monitor Engineering->engineering1]]](elseif: $engineering is 1 and $lights is false)[(colour: grey)[[Monitor Randi Dooley's quarters->randis1]]](elseif: $lights is false)[(colour: grey)[[Monitor Hydroponics Bay->hydroponics2]]]](when: time - 5s > $ti)[(if: $engineering is 0 and $lightsoff)[(colour: grey)[[Monitor Engineering->engineering1]]](elseif: $engineering is 1 and $lightsoff)[(colour: grey)[[Monitor Randi Dooley's quarters->randis1]]](elseif: $lightsoff)[(colour: grey)[[Monitor Hydroponics Bay->hydroponics2]]]](when: time - 7s > $ti)[(if: $lightsoff is false)[(colour: red + white)[Don't get up - I'll get them.]]]\n(when: time - 11s > $ti)[(if: $lightsoff is false)[(colour: red + white)[Here you are. I think the elastic is going - it might be time to get a new one.]]]\n(when: time - 13s > $ti)[(if: $lightsoff is false)[(colour: navy)[Thanks. See you in the morning.]]]\n(when: time - 15s > $ti)[(if: $lightsoff is false)[(colour: red + white)[Goodnight.]]]\n\n(when: time - 17s > $ti)[(if: $engineering is 0 and $lightsoff is false)[(colour: grey)[[Monitor Engineering->engineering1]]](elseif: $engineering is 1 and $lightsoff is false)[(colour: grey)[[Monitor Randi Dooley's quarters->randis1]]](elseif: $lightsoff is false)[(colour: grey)[[Monitor Hydroponics Bay->hydroponics2]]]]\n\n(nobr:)[\n(click: ?on)[(replace: ?on)[ ](replace: ?no)[ ](set: $t to time)(set: $lights to true)]\n\n(click: ?no)[(replace: ?on)[ ](replace: ?no)[ ](set: $t to time)(set: $lights to false)]\n\n(click: ?off)[(replace: ?off)[ ](replace: ?ffo)[ ](set: $ti to time)(set: $lightsoff to true)]\n\n(click: ?ffo)[(replace: ?off)[ ](replace: ?ffo)[ ](set: $ti to time)(set: $lightsoff to false)]\n]",
+      "links": [
+        {
+          "text": "Monitor Engineering",
+          "destination": {
+            "name": "engineering1",
+            "pid": 5
+          }
+        },
+        {
+          "text": "Monitor Randi Dooley's quarters",
+          "destination": {
+            "name": "randis1",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Monitor Hydroponics Bay",
+          "destination": {
+            "name": "hydroponics2",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "hydroponics4",
+      "text": "[(colour: grey)[Location: Hydroponics Bay]\n\n(colour: grey)[Attending:]\n(colour: orange)[Molly McKenna, sheriff]\n(colour: green)[Rod Druyven, biologist]\n(colour: blue)[Joe Formanek, deputy]\n(when: time > 2s)[(colour: yellow)[Hologram of Sally Beauchamps]]\n\n(when: time > 4s)[(colour: yellow)[My love?]]\n(when: time > 6s)[(colour: blue)[Hey, that's our crime scene hologram. Who's she talking to?]]\n(when: time > 9s)[(colour: yellow)[Are you there, my love?]]\n[]<holder1|(when: time - 2s > $t)[(if: $love is false)[(colour: yellow)[My love?]]]\n(when: time - 2s > $t)[(if: $love)[(colour: orange)[There's your answer.]]](when: time - 4s > $t)[(if: $love is false)[(colour: orange)[Whoever they are, they don't seem to respond.]]][(when: time > 11s)[(colour: grey)[Say you are]]]<there|\n(when: time - 4s > $t)[(if: $love)[(colour: yellow)[I'm doing great! What a wonderful new world!]]](when: time - 6s > $t)[(if: $love is false)[(colour: yellow)[Where are you? I'm scared.]]][(when: time > 11s)[(colour: grey)[Don't say anything]]]<silent|\n[]<holder2|(when: time - 8s > $t)[(if: $love is false)[(colour: yellow)[Everything feels so empty.]]]\n(when: time - 2s > $ti)[(colour: yellow)[Oh yeah.]](when: time - 10s > $t)[(if: $love is false)[(colour: yellow)[My love?]]][(when: time - 6s > $t)[(if: $love)[(colour: grey)[Ask if she wants to finish her installation]]]]<more|\n(when: time - 4s > $ti)[(colour: yellow)[Can't wait for the full experience.]](when: time - 12s > $t)[(if: $love is false)[(colour: yellow)[I can't do this without you. I'm shutting down.]]]\n(when: time - 6s > $ti)[(colour: yellow)[Are we rebooting?]](when: time - 14s > $t)[(if: $love is false)[(colour: yellow)[I'm shutting us down.]]]\n(when: time - 8s > $ti)[$bet[Oh yes, I can feel we are.]](when: time - 16s > $t)[(if: $love is false)[$my[I'm sorry.]]]]<all|\n(set: $a to 0)\n#(when: time - 24s > $t)[(if: $love is false)[(colour: grey)[The Insect Massacre]]](when: time - 16s > $ti)[(colour: grey)[The Insect Massacre]]\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n####(when: time - 24s > $t)[(if: $love is false)[(colour: grey)[[START OVER->engineering0]]]](when: time - 16s > $ti)[(colour: grey)[[START OVER->engineering0]]]\n(set: $a to 0)\n####(when: time - 24s > $t)[(if: $love is false)[(colour: grey)[[GO BACK TO WHERE THE INSECT MASSACRE IS REVEALED->hydroponics2]]]](when: time - 16s > $ti)[(colour: grey)[[GO BACK TO WHERE THE INSECT MASSACRE IS REVEALED->hydroponics2]]]\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n#####(when: time - 24s > $t)[(if: $love is false)[(colour: grey)[[CREDIT->credit]]]](when: time - 16s > $ti)[(colour: grey)[[CREDIT->credit]]]\n\n(nobr:)[\n(set: $t to 99999999999999)\n(set: $ti to 99999999999999)\n(set: $my to (colour: yellow) + (shudder:))\n(set: $bet to (colour: yellow) + (shudder:))\n\n(click: ?there)[(replace: ?holder1)[(colour: grey)[I am here. How are you doing?]](replace: ?there)[ ](replace: ?silent)[ ](set: $love to true)(set: $t to time)]\n\n(click: ?silent)[(replace: ?there)[ ](replace: ?silent)[ ](set: $love to false)(set: $t to time)]\n\n(click: ?more)[(replace: ?holder2)[(colour: grey)[Do you want to reboot to finish your installation?]](replace: ?more)[ ](set: $ti to time)]\n\n(when: time - 11s > $ti)[(replace: ?all)[ ]]\n(when: time - 19s > $t)[(if: $love is false)[(replace: ?all)[ ]]]\n]",
+      "links": [
+        {
+          "text": "START OVER",
+          "destination": {
+            "name": "engineering0",
+            "pid": 1
+          }
+        },
+        {
+          "text": "GO BACK TO WHERE THE INSECT MASSACRE IS REVEALED",
+          "destination": {
+            "name": "hydroponics2",
+            "pid": 7
+          }
+        },
+        {
+          "text": "CREDIT",
+          "destination": {
+            "name": "credit",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "alone1",
+      "text": "[(colour: grey)[Location: Hydroponics Bay]\n\n(colour: grey)[Attending:]\n\n\n\n(when: time > 2s)[(colour: yellow)[Hologram of Sally Beauchamps]]\n\n(when: time > 4s)[(colour: yellow)[Are you there, my love?]]\n[]<holder1|(when: time - 2s > $t)[(if: $love is false)[(colour: yellow)[My love?]]]\n(when: time - 2s > $t)[(if: $love)[(colour: yellow)[I'm doing great! What a wonderful new world!]]](when: time - 4s > $t)[(if: $love is false)[(colour: yellow)[Where are you? I'm scared.]]][(when: time > 6s)[(colour: grey)[Say you are]]]<there|\n[]<holder2|(when: time - 6s > $t)[(if: $love is false)[(colour: yellow)[Everything feels so empty.]]][(when: time > 6s)[(colour: grey)[Don't say anything]]]<silent|\n(when: time - 2s > $ti)[(colour: yellow)[Oh yeah.]](when: time - 8s > $t)[(if: $love is false)[(colour: yellow)[My love?]]][(when: time - 4s > $t)[(if: $love)[(colour: grey)[Ask if she wants to finish her installation]]]]<more|\n(when: time - 4s > $ti)[(colour: yellow)[Can't wait for the full experience.]](when: time - 10s > $t)[(if: $love is false)[(colour: yellow)[I can't do this without you. I'm shutting down.]]]\n(when: time - 6s > $ti)[(colour: yellow)[Are we rebooting?]](when: time - 12s > $t)[(if: $love is false)[(colour: yellow)[I'm shutting us down.]]]\n(when: time - 8s > $ti)[$bet[Oh yes, I can feel we are.]](when: time - 14s > $t)[(if: $love is false)[$my[I'm sorry.]]]]<all|\n(set: $a to 0)\n#(when: time - 22s > $t)[(if: $love is false)[(colour: grey)[The Insect Massacre]]](when: time - 16s > $ti)[(colour: grey)[The Insect Massacre]]\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n####(when: time - 22s > $t)[(if: $love is false)[(colour: grey)[[START OVER->engineering0]]]](when: time - 16s > $ti)[(colour: grey)[[START OVER->engineering0]]]\n(set: $a to 0)\n####(when: time - 22s > $t)[(if: $love is false)[(colour: grey)[[GO BACK TO WHERE THE INSECT MASSACRE IS REVEALED->hydroponics2]]]](when: time - 16s > $ti)[(colour: grey)[[GO BACK TO WHERE THE INSECT MASSACRE IS REVEALED->hydroponics2]]]\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n#####(when: time - 22s > $t)[(if: $love is false)[(colour: grey)[[CREDIT->credit]]]](when: time - 16s > $ti)[(colour: grey)[[CREDIT->credit]]]\n\n(nobr:)[\n(set: $t to 99999999999999)\n(set: $ti to 99999999999999)\n(set: $my to (colour: yellow) + (shudder:))\n(set: $bet to (colour: yellow) + (shudder:))\n\n\n(click: ?there)[(replace: ?holder1)[(colour: grey)[I am here. How are you doing?]](replace: ?there)[ ](replace: ?silent)[ ](set: $love to true)(set: $t to time)]\n\n(click: ?silent)[(replace: ?there)[ ](replace: ?silent)[ ](set: $love to false)(set: $t to time)]\n\n(click: ?more)[(replace: ?holder2)[(colour: grey)[Do you want to reboot to finish your installation?]](replace: ?more)[ ](set: $ti to time)]\n\n(when: time - 11s > $ti)[(replace: ?all)[ ]]\n(when: time - 17s > $t)[(if: $love is false)[(replace: ?all)[ ]]]\n]",
+      "links": [
+        {
+          "text": "START OVER",
+          "destination": {
+            "name": "engineering0",
+            "pid": 1
+          }
+        },
+        {
+          "text": "GO BACK TO WHERE THE INSECT MASSACRE IS REVEALED",
+          "destination": {
+            "name": "hydroponics2",
+            "pid": 7
+          }
+        },
+        {
+          "text": "CREDIT",
+          "destination": {
+            "name": "credit",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "hydroponics0",
+      "text": "(colour: grey)[Location: Hydroponics Bay]\n\n(when: time > 1s)[(colour: grey)[Attending:]]\n[(when: time > 2s)[(colour: orange)[Molly McKenna, sheriff]]]<mol|\n[(when: time > 3s)[(colour: blue)[Joe Formanek, deputy]]]<joe|\n\n(when: time > 5s)[(colour: orange)[Is that a body or a hologram?]]\n(when: time > 7s)[(colour: blue)[Hologram. The doctor beamed the body directly to Sickbay. Thought there might still be a chance to save her.]]\n(when: time > 11s)[(colour: orange)[Is this hologram accurate? It's beauty seems other-worldly.]]\n(when: time > 14s)[(colour: blue)[It's accurate.]]\n(when: time > 16s)[(colour: orange)[Huh. Cause of death?]]\n(when: time > 18s)[(colour: blue)[Suffocation. No signs of strangulation. Some light bruising around the mouth and nose.]]\n(when: time > 21s)[(colour: orange)[Consistent with a hand being pressed over them?]]\n(when: time > 23s)[(colour: blue)[Possibly.]]\n(when: time > 25s)[(colour: orange)[Any other signs of a struggle?]]\n(when: time > 27s)[(colour: blue)[Some bruising on the inside of the right elbow and under the right breast.]]\n(when: time > 30s)[(colour: orange)[And she was found right here, on a patch of soil in the middle of the Hydroponics Bay?]]\n(when: time > 33s)[(colour: blue)[Yes.]]\n(when: time > 35s)[(colour: orange)[A beautiful girl lying dead in a lush garden with the black of space overhead. Isn't there a painting like that?]]\n(when: time > 38s)[(colour: blue)[I wouldn't know, ma'am.]]\n(when: time > 40s)[(colour: orange)[Never mind. Let's go question some people.]]\n(when: time > 42s)[(colour: blue)[I'm with you there.]]\n\n(when: time > 44s)[(colour: grey)[[Monitor Sickbay->sickbay1]]]\n(when: time > 44s)[(colour: grey)[[Monitor Engineering->engineering1]]]\n\n(nobr:)[\n(when: time > 43s)[(replace: ?mol)[(colour: orange)[~~Molly McKenna, chief of police~~]](replace: ?joe)[(colour: blue)[~~Joe Formanek, deputy~~]]]\n]",
+      "links": [
+        {
+          "text": "Monitor Sickbay",
+          "destination": {
+            "name": "sickbay1",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Monitor Engineering",
+          "destination": {
+            "name": "engineering1",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "engineering2",
+      "text": "[(colour: grey)[Location: Engineering]\n\n(when: time > 1s)[(colour: grey)[Attending:]]\n(when: time > 2s)[(colour: lime)[Samuel Soto, engineer]]\n(when: time > 3s)[(colour: orange)[Molly McKenna, sheriff]]\n(when: time > 4s)[(colour: blue)[Joe Formanek, deputy]]\n\n(when: time > 6s)[(colour: orange)[Mr. Soto, can the oxygen supply to the Hydroponics Bay be cut off when the computer is offline?]]\n(when: time > 9s)[(colour: lime)[No, it's impossible. In order to cut the oxygen supply to any part of the station, you have to go through a series of checks and re-checks, all of which involve the computer.]]\n(when: time > 14s)[(colour: orange)[Mr. Soto, what would you say if I told you that most of the insects in the Hydroponics Bay suffocated at the same time Sally Beauchamps did?]]\n(when: time > 19s)[(colour: lime)[I'd say that the computer was still online at the time of the murder. Contrary to what her logs tell us.]]\n(when: time > 23s)[(colour: orange)[So either someone falsified her logs or...]]\n(when: time > 25s)[(colour: blue)[Or she did it herself. Computer, which one is it?]]\n[]<holder1|\n(when: time - 2s > $t)[(if: $soto)[(colour: lime)[You know, that's simply a false statement. I'm shutting her down as a precautionary measure.]](else:)[(colour: blue)[Kill her, Soto!]]][(when: time > 27s)[(colour: grey)[Say Soto did it]]]<soto|\n(when: time - 4s > $t)[(if: $soto)[$decision[Shouldn't we leave that decision to the mayor?]](else:)[$shutdown[Initiating shutdown sequence.]]][(when: time > 27s)[(colour: grey)[Lock doors]]]<lock|]<all|\n(set: $a to 0)\n#(when: time - 12s > $t)[(colour: grey)[The Insect Massacre]]\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n####(when: time - 12s > $t)[(colour: grey)[[START OVER->engineering0]]]\n(set: $a to 0)\n####(when: time - 12s > $t)[(colour: grey)[[GO BACK TO WHERE THE INSECT MASSACRE IS REVEALED->hydroponics2]]]\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n#####(when: time - 12s > $t)[(colour: grey)[[CREDIT->credit]]]\n\n(nobr:)[\n(set: $t to 99999999999999)\n(set: $decision to (colour: orange) + (shudder:))\n(set: $shutdown to (colour: lime) + (shudder:))\n\n(click: ?soto)[(replace: ?holder1)[(colour: grey)[Engineer Soto is the only one on the station with the skill to falsify my logs.]](replace: ?soto)[ ](replace: ?lock)[ ](set: $soto to true)(set: $t to time)]\n\n(click: ?lock)[(replace: ?holder1)[(colour: grey)[ATTENTION. ENGINEERING EMERGENCY LOCKDOWN.]](replace: ?soto)[ ](replace: ?lock)[ ](set: $soto to false)(set: $t to time)]\n\n(when: time - 7s > $t)[(replace: ?all)[ ]]\n]",
+      "links": [
+        {
+          "text": "START OVER",
+          "destination": {
+            "name": "engineering0",
+            "pid": 1
+          }
+        },
+        {
+          "text": "GO BACK TO WHERE THE INSECT MASSACRE IS REVEALED",
+          "destination": {
+            "name": "hydroponics2",
+            "pid": 7
+          }
+        },
+        {
+          "text": "CREDIT",
+          "destination": {
+            "name": "credit",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "credit",
+      "text": "(colour: grey)[Tom Delanoy -- Dialogue]\n\n(colour: grey)[Victor Libet -- Editorial support]\n\n(colour: grey)[Made with] <a href=\"http://twinery.org\" target=\"_blank\">Twine</a>\n\n(colour: grey)[[Back to title screen->menu]]",
+      "links": [
+        {
+          "text": "Back to title screen",
+          "destination": {
+            "name": "menu",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "menu",
+      "text": "(set: $a to 0)\n#(colour: grey)[The Insect Massacre]\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n####(colour: grey)[[START OVER->engineering0]]\n(set: $a to 0)\n####(colour: grey)[[GO BACK TO WHERE THE INSECT MASSACRE IS REVEALED->hydroponics2]]\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n#####(colour: grey)[[CREDIT->credit]]",
+      "links": [
+        {
+          "text": "START OVER",
+          "destination": {
+            "name": "engineering0",
+            "pid": 1
+          }
+        },
+        {
+          "text": "GO BACK TO WHERE THE INSECT MASSACRE IS REVEALED",
+          "destination": {
+            "name": "hydroponics2",
+            "pid": 7
+          }
+        },
+        {
+          "text": "CREDIT",
+          "destination": {
+            "name": "credit",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "begin",
+      "text": "(set: $a to 0)\n#(colour: grey)[The Insect Massacre]\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n####(colour: grey)[[BEGIN->engineering0]]\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n(set: $a to 0)\n#####(colour: grey)[[CREDIT->credit0]]",
+      "links": [
+        {
+          "text": "BEGIN",
+          "destination": {
+            "name": "engineering0",
+            "pid": 1
+          }
+        },
+        {
+          "text": "CREDIT",
+          "destination": {
+            "name": "credit0",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "credit0",
+      "text": "(colour: grey)[Tom Delanoy -- Dialogue]\n\n(colour: grey)[Victor Libet -- Editorial support]\n\n(colour: grey)[Made with] <a href=\"http://twinery.org\" target=\"_blank\">Twine</a>\n\n(colour: grey)[[Back to title screen->begin]]",
+      "links": [
+        {
+          "text": "Back to title screen",
+          "destination": {
+            "name": "begin",
+            "pid": 16
+          }
+        }
+      ]
+    }
+  ]
+}

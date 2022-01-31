@@ -1,0 +1,1127 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "New Year's Day",
+      "text": "<div id=\"first\"><h3>Deshaun Stevens - Lighting Technician <br />Personal Log \u2013 January 1</h3>\n<br />\n\n<b>Crunches</b> \u2013 one and a very near half.<br />\n<b>Push-ups</b> \u2013 none unless counting getting off floor<br />\n<b>Calories</b> \u2013 lost count, but all from alcohol, so okay<br />\n\n<p>One year ago today vowed I would not spend another year working on this [[stupid cruise ship.]]  One year ago life was exactly as it is now, with exception of having girlfriend.</p>\n\n<p>Trying to have good sulk about lack of gf, but general suckatude of life winning.  Have spent all adult years \u2013 five of them \u2013 treading the same tract of \u201cunexplored\u201d space with end trip to rings of Neptune tacked on by tourist company as apology for boringness of [[unexplored space]].  Have also set lighting and sound cues for thousand ungrateful musicians with combined talent of medium-sized shrub.</p></div>\n\n<div id=\"puzzle\">\n<hr />\n<pre> This is an epistolary game where Deshaun will narrate <br /> the consequences of the decisions you make for him.<br/> You may encounter a few puzzles like this:<br />\nIn the sentence below, click on the words Deshaun would eliminate <br />to create the shortest possible sentence. Then click done.</pre></div> \n\n<a id=\"word1\" onclick=\"count(1)\">Everyday</a> <a id=\"word2\" onclick=\"count(2)\">life</a> <a id=\"word3\" onclick=\"count(3)\">on</a> <a id=\"word4\" onclick=\"count(4)\">a</a> <a id=\"word5\" onclick=\"count(5)\">stellar</a> <a id=\"word6\" onclick=\"count(6)\">cruise</a> <a id=\"word7\" onclick=\"count(7)\">ship</a> <a id=\"word8\" onclick=\"count(8)\">can</a> <a id=\"word9\" onclick=\"count(9)\">sometimes</a> <a id=\"word10\" onclick=\"count(10)\">be</a> <a id=\"word11\" onclick=\"count(11)\">uncomfortably</a> <a id=\"word12\" onclick=\"count(12)\">tedious.</a>\n<button id=\"check\" onclick=\"checkCount()\">Done</button>\n<hr id=\"go\" />\n<div id=\"mop\" style=\"display:none\">Am confused. Removed too many words.<button id=\"reset\" onclick=\"resetFunc()\">Reset</button></div>\n<div id=\"ohm\" style=\"display:none\">Suspect could make even slimmer without losing meaning. <button id=\"reset\" onclick=\"resetFunc()\">Reset</button></div>\n\n<div id=\"replay\" style=\"display:none\"><pre>You're replaying so let's skip this puzzle.</pre><div>\n<div id=\"second\" style=\"display:none\">\n<pre>You solved the puzzle! Now the story continues.</pre>\n<hr />\n\nCurrent misery doubled by working with now-ex gf.  Attempts to avoid said ex at New Year\u2019s party largely consisted of going back to punch bowl repeatedly.  May have sung love ballad composed in throes of self-pity at end of night. Memory foggy.  Hope everyone else\u2019s is, too.\n\nSuspecting ship regulation against alcohol v. wise after all.  Hope they don\u2019t read our logs.\n\nMust decide which of my New Years' Resolutions to work on first: \n<ol>\n<li> [[Get New Job]]</li>\n<li> [[Avoid romantic complications]] with Lido Deck Staff, especially boss, [[xgf]], and cocktail waitresses with unfairly attractive hair.</li>\n<li> Somehow, bearing number 2 in mind, [[get a new gf]].</li>\n<li> [[Exercise and update personal log]] every day</li>\n</ol>\n</div>\n<% gf = \"no one\" %>\n<% plot = \"\" %>\n<% crunchcount = 10 %>\n<% want = \"\" %>\n<% puzzlesDone = 0 %>\n<% glass = \"unset\" %>\n<% total = 0 %>\n<% costume = \"\" %>\n<script>\nfunction count(i){\ntotal++;\ndocument.getElementById('word'+i).style.display='none';\n}\n\nfunction checkCount() {\nif (total==8) {\ndocument.getElementById('second').style.display='block';\ndocument.getElementById('check').style.display='none';\ndocument.getElementById('first').style.display='none';\ndocument.getElementById('puzzle').style.display='none';\nfor ( var a=1; a < 13; a++) {\ndocument.getElementById('word'+a).style.display='none';\ndocument.getElementById('go').style.display='none';\npuzzlesDone = 1;\n}\n}\nelse {\n if (total > 8) {\n document.getElementById('mop').style.display='block';\n document.getElementById('ohm').style.display='none';\n document.getElementById('check').style.display='none';\n   }\n else {\n document.getElementById('ohm').style.display='block';\n document.getElementById('mop').style.display='none';\n document.getElementById('check').style.display='none';\n   }\n   }\n}\nfunction resetFunc() {\ntotal=0;\nfor ( var a=1; a < 13; a++) {\ndocument.getElementById('word'+a).style.display='inline';\ndocument.getElementById('ohm').style.display='none';\ndocument.getElementById('mop').style.display='none';\ndocument.getElementById('check').style.display='block';\n}\n}\nvar replayToken = localStorage.getItem('replayToken') || 0;\nif (replayToken==1) {\ndocument.getElementById('second').style.display='block';\ndocument.getElementById('check').style.display='none';\ndocument.getElementById('puzzle').style.display='none';\nfor ( var a=1; a < 13; a++) {\ndocument.getElementById('word'+a).style.display='none';\ndocument.getElementById('go').style.display='none';\ndocument.getElementById('replay').style.display='block';\npuzzlesDone = 1;\n}\n}\n</script>",
+      "links": [
+        {
+          "text": "stupid cruise ship.",
+          "destination": {
+            "name": "stupid cruise ship.",
+            "pid": 55
+          }
+        },
+        {
+          "text": "unexplored space",
+          "destination": {
+            "name": "unexplored space",
+            "pid": 22
+          }
+        },
+        {
+          "text": "Get New Job",
+          "destination": {
+            "name": "Get New Job",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Avoid romantic complications",
+          "destination": {
+            "name": "Avoid romantic complications",
+            "pid": 3
+          }
+        },
+        {
+          "text": "xgf",
+          "destination": {
+            "name": "xgf",
+            "pid": 45
+          }
+        },
+        {
+          "text": "get a new gf",
+          "destination": {
+            "name": "get a new gf",
+            "pid": 4
+          }
+        },
+        {
+          "text": "Exercise and update personal log",
+          "destination": {
+            "name": "Exercise and update personal log",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Get New Job",
+      "text": "<h3>January 15</h3>\n\n<b>Crunches</b> - Five (hitting alarm to stay in bed)<br />\n<b>Calories</b> - v. good - stole salad bar fruit for breakfast <br />\n\nJob opportunities scarce in deep space.  Have contacted other cruise ships, marked points of transfer, but is that a step ahead?\n\nHumiliation of \u201cLove Ballad\u201d finally wearing down due to co-workers not having infinite time to devote to re-watching video clip recorded by jerk supervisor.  Wish someone else would hurry up and do something embarrassing to capture Lido Deck attention.\n\nFellow workers unreasonably petty.  How do children in adult bodies have better paying jobs than me?\n\nActually - pettiness may be way forward.  Small staff living, working together resembles Byzantine Court.  Jerk supervisor has jerk supervisor of his own.  The correct blackmail may land me Jerk supervisor's job!\n\nMay [[Sabotage Drummer]] with copious drinks, record him being silly for a change.\n\nOr I should [[get back at supervisor]] directly, somehow. \n\nMostly likely will just [[keep head down and do stupid job.]]  Wait for opportunity to proverbially knock.\n\n<% want = \"job\" %>",
+      "links": [
+        {
+          "text": "Sabotage Drummer",
+          "destination": {
+            "name": "Sabotage Drummer",
+            "pid": 6
+          }
+        },
+        {
+          "text": "get back at supervisor",
+          "destination": {
+            "name": "get back at supervisor",
+            "pid": 7
+          }
+        },
+        {
+          "text": "keep head down and do stupid job.",
+          "destination": {
+            "name": "keep head down and do stupid job.",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Avoid romantic complications",
+      "text": "<h3>January 15</h3>\n\n<b>Crunches</b> - Five (hitting alarm to stay in bed)<br />\n<b>Calories</b> - Bacon topped donut (few regrets)<br />\n\n<p>Romance is the source of all my problems.  Will not get forward in life, off stupid cruise ship, until I give up on pursuit thereof.</p>\n\nHumiliation of \u201cLove Ballad\u201d finally wearing down due to co-workers not having infinite time to devote to re-watching video clip recorded by jerk supervisor.  Wish someone else would hurry up and do something embarrassing to capture Lido Deck attention.\n\nNew band contains certified hottie named Cyndee R.  Has body like type usually molded in plastic. Is utterly unlikely to notice mildly fit, intellectual, sadly single lighting and sound engineer.  Good.  \n\nHave decided to shave beard and [[do 400 crunches every day]].\n\nOr is that dishonest, Cyndee-leaning thought?  Recall disaster of last romantic entanglement. I will [[get back at supervisor]] for that tape.\n\nOr should really just [[keep head down and do stupid job.]] \n<% gf = \"no one\" %>\n<% want = \"nomance\" %>",
+      "links": [
+        {
+          "text": "do 400 crunches every day",
+          "destination": {
+            "name": "do 400 crunches every day",
+            "pid": 9
+          }
+        },
+        {
+          "text": "get back at supervisor",
+          "destination": {
+            "name": "get back at supervisor",
+            "pid": 7
+          }
+        },
+        {
+          "text": "keep head down and do stupid job.",
+          "destination": {
+            "name": "keep head down and do stupid job.",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "get a new gf",
+      "text": "<h3>January 15</h3>\n\n<b>Crunches</b> - 10 <br />\n<b>Push-ups</b> - 10 <br />\n<b>Calories</b> - too scared to eat in mess, subsist on crackers - NVG<br />\n\nHumiliation of \u201cLove Ballad\u201d finally wearing down due to co-workers not having infinite time to devote to re-watching video clip recorded by jerk supervisor.  \n\nHowever, fear [[xgf]] unlikely to grow tired of replaying it on wrist-holo whenever I walk by.\n\nNew band contains certified hottie named Cyndee R.  Has body like type usually molded in plastic. Is utterly unlikely to notice mildly fit, intellectual, sadly single lighting and sound engineer, but hope springs eternal.  \n\nHave decided to shave beard and [[do 400 crunches every day]].\n\n<script>\ngf = \"Cyndee\";\nwant = \"romance\";\n</script>",
+      "links": [
+        {
+          "text": "xgf",
+          "destination": {
+            "name": "xgf",
+            "pid": 45
+          }
+        },
+        {
+          "text": "do 400 crunches every day",
+          "destination": {
+            "name": "do 400 crunches every day",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Exercise and update personal log",
+      "text": "<h3>January 15</h3>\n\n<b>Crunches</b> \u2013 45<br />\n<b>Push-ups</b> \u2013 10 (plus two trying to see alarm, stay in bed.)<br />\n\nHumiliation of \u201cLove Ballad\u201d finally wearing down due to co-workers not having infinite time to devote to re-watching video clip recorded by jerk supervisor.  Wish someone else would hurry up and do something embarrassing to capture Lido Deck attention.\n\nNew band contains certified hottie named Cyndee R.  Has body like type usually molded in plastic. Is utterly unlikely to notice mildly fit, intellectual, sadly single lighting and sound engineer, but hope springs eternal.  \n\nHave decided to shave beard and [[do 400 crunches every day]].\n\n<% want = \"selfcon\" %>",
+      "links": [
+        {
+          "text": "do 400 crunches every day",
+          "destination": {
+            "name": "do 400 crunches every day",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Sabotage Drummer",
+      "text": "<h3>January 22</h3>\n\n<b>Push-ups</b> - 2 <br />\n\n<b>Crunches</b> - Currently impossible <br />\n\n<p>Although thin and rangy, drummer can drink surprising amount of alcohol, stay sober, notice camera, kick my ass.</p>\n\nUnless something [[Unexpected ]] happens will be mocked laughingstock of ship for life.\n\n<% plot = \"drum\" %>",
+      "links": [
+        {
+          "text": "Unexpected ",
+          "destination": {
+            "name": "Unexpected",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "get back at supervisor",
+      "text": "<h3>January 22</h3>\n\n<b>Push-ups</b> - 25 <br />\n<div id=\"crunchy\"><a id=crunches onclick=jsfunction()>Do Crunches?</a></div>\n<div id=\"oof\" style=\"display:none\">Crunches: 10</div>\n\nHave concocted most elaborate, brilliant and singularly petty revenge plot since coining of term 'sophomoric'.  \n\nTempted to abandon plot like poultry-based lifeform, [[keep head down and do stupid job.]] \n\nIf I don't, so long as nothing [[Unexpected ]] happens, Jeff will know his crime.\n\n<% plot = \"sec\" %>\n<script>\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 10;\n}\n</script>",
+      "links": [
+        {
+          "text": "keep head down and do stupid job.",
+          "destination": {
+            "name": "keep head down and do stupid job.",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Unexpected ",
+          "destination": {
+            "name": "Unexpected",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "keep head down and do stupid job.",
+      "text": "<h3>January 22</h3>\n\n<a id=\"crunches\" onclick=\"jsfunction()\">Do Crunches?</a>\n<div id=\"oof\" style=\"display:none\">Crunches: 10</div>\n\n<b>Push ups</b> \u2013 25 <br />\n\nSalisbury Steak Day lures me from monk-like asceticism engendered by hope of impressing Lido Deck administrator.  Must some day make pilgrimage to Salisbury.  Imagine fields of mushroom gravy v. picturesque.\n\nAm settling in to embrace boring life, like man made of pudding.\n\n<div id=\"nomance\" style=\"display:none\">This is certainly one way to avoid romantic entanglements, but is there no opportunity for bromance, at least? Feeling v. lonely.</div>\n\n<div id=\"job\" style=\"display:none\"><p>This is no way to get a new job.  No one ever got ahead by being good drone.</p>\n\n<p>Also asked Jerk Supervisor's Supervisor if she had noticed my devotion to duty. She asked me to get her a whisky sour and clean up the vomit in the ladies' room. So... am thinking \"no.\"</p></div>\n\nShould I work on [[kissing Supervisor's Supervisor ass]] or would it be better to start with lower-hanging Supervisor. IE: [[pretend am not still mad]] at Jerk Supervisor?\n<% plot = \"down\" %>\n<script>\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 10;\n}\nif (want==\"job\") {\ndocument.getElementById('job').style.display='block';\n}\nelse {\ndocument.getElementById('nomance').style.display='block';\n}\n</script>",
+      "links": [
+        {
+          "text": "kissing Supervisor's Supervisor ass",
+          "destination": {
+            "name": "kissing Supervisor's Supervisor ass",
+            "pid": 57
+          }
+        },
+        {
+          "text": "pretend am not still mad",
+          "destination": {
+            "name": "pretend am not still mad",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "do 400 crunches every day",
+      "text": "<h3>January 16</h3>\n\nFifty is an acceptable number of crunches to do in one day.  Anything higher uncivilized and leads to back injury which prevents successful completion of job <div id=cyn1 style=display:none> and ability to impress Cyndee.</div>\n\n<hr />\n\n<h3>January 22</h3>\n\n<a onclick='jsfunction()' id='crunches'>Crunches:</a>\n<div id='oof' style=\"display:none\" >What sadist would make me do crunches?  Am thinking need day, week, or lifetime off.</div>\n\nPush ups \u2013 20\n\n\nSalisbury Steak Day lures me from monk-like asceticism<div id=\"cyn\" style=\"display:none\"> engendered by hope of impressing hottie.</div>  Must some day make pilgrimage to Salisbury.  Imagine fields of mushroom gravy v. picturesque.\n\nNot too concerned about diet as have abs of steel \u2013 if steel is made of flabby pain.\n\n<div id='cyn2' style=\"display:none\">Still no notice from Cyndee R, who has more talent than entire history of cruise ship performers and eyes that catch number five cerulean light beautifully.</div>\n<div id='nope' style=\"display:none\">Detatched isolation, aloofness occassional attract notice of xgf, singer Cyndee R.  Am made of stone. (Very weak stone.)</div>\n\nWill bide my time. Hopefully nothing [[Unexpected ]] happens.\n\n\n<script>\nif (gf==\"Cyndee\") {\ndocument.getElementById('cyn').style.display='inline';\ndocument.getElementById('cyn1').style.display='block';\ndocument.getElementById('cyn2').style.display='block';\n}\n\nif (want==\"nomance\") {\ndocument.getElementById('nope').style.display='block';\n}\n\nfunction jsfunction() {\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\n}\n</script>",
+      "links": [
+        {
+          "text": "Unexpected ",
+          "destination": {
+            "name": "Unexpected",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Unexpected",
+      "text": "<h3>January 27</h3>\n\n<b>Crunches</b> \u2013 30 (nearly)<br />\n<b>Push-ups</b> \u2013 25<br />\n\nPerformances cancelled due to unforeseen Actual Interesting Sight in unexplored space.  (May be first ever.)  Passengers crowded into observation decks.  Staff scientists ecstatic at possibility of earning paychecks.  Lido Lounge empty.  \n\n<div id=\"cyn2\" style=\"display:none\"> Down side: Cyndee hanging out with passengers, where performers but not technicians are allowed.  Plus side: no contact with [[xgf]] who is likely just as miserable as me because serving staff also supposed to be invisible off-duty. </div>\n\n<div id=\"sec2\" style=\"display:none\"> Worse: cannot get in touch with [[security gal]] who promised to vid supervisor singing in shower. Did she get the tape? Was it awful?  Will she keep her end of the deal?  Am unaccustomed to being indebted and unable to communicate. </div>\n\n<hr />\n\n<h3>January 28</h3>\n\n<h4>Cruise ship makes first contact with alien species.  Universe (and Lido Deck) justifiably appalled.</h4>\n\n<b>Calories</b> - passengers got champagne, staff got none. Would be v. angry if not trying to lose weight, drink less.  (Reconsidering goal to lose weight, drink less.)\n\nDownside - staff, passengers quarantined.  Musicians with passengers. <div id=\"drum\" style=\"display:none\">Including smug drummer holding aloft champagne.  Musicians CAN come back into lounge.  None choosing to.</div> Social situation tense as must actually intermingle with co-workers due to lack of other options.\n\nDo not wish to intermingle with co-workers. Boredom at breaking point. Need other options for alien news. <div id=\"job2\" style=\"display:none\">(also job advancement)</div><div id=\"rom3\" style=\"display:none\">(also romance)</div><div id=\"else2\" style=\"display:none\">(also excitement)</div>\n\n[[Seek tenuous truce with ex]] <div id=\"rom2\" style=\"display:none\">re: hugs</div><div id=\"job\" style=\"display:none\">re: job opportunities</div><div id=\"else\" style=\"display:none\"> re: safety in numbers</div>\n\n[[Sneak into passenger area]] <div id=\"rom\" style=\"display:none\">re: potentially better hugs</div> <div id=\"else3\" style=\"display:none\"> re: more people, more news</div> <div id=\"drum3\" style=\"display:none\"> re: Drummer obv. thinks I can't.</div> <div id=\"job3\" style=\"display:none\"> re: more people, more news, more job contacts</div>\n\n[[Try to reach security]] <div id=\"sec\" style=\"display:none\">re: security gal still has videos of jerk supervisor.</div> <div id=\"else4\" style=\"display:none\">re: ulitmate news source</div><div id=\"drum2\" style=\"display:none\">re: Security gal TJ possible ally against Drummer.</div><div id=\"rom4\" style=\"display:none\">re: the best hugs are hugs not made while contemplating vast unknown.</div><div id=\"job4\" style=\"display:none\">Re: Am not getting ahead in life sitting around here, am I?</div>\n\n<script>\nif (gf==\"Cyndee\") {\ndocument.getElementById('cyn2').style.display='block';\n}\nif (plot==\"sec\") {\ndocument.getElementById(\"sec\").style.display='inline';\ndocument.getElementById(\"sec2\").style.display='block';\n}\nif (plot==\"drum\") {\ndocument.getElementById(\"drum\").style.display='inline';\ndocument.getElementById(\"drum2\").style.display='inline';\ndocument.getElementById(\"drum3\").style.display='inline';\n}\nif (want==\"romance\") {\ndocument.getElementById(\"rom\").style.display='inline';\ndocument.getElementById(\"rom2\").style.display='inline';\ndocument.getElementById(\"rom3\").style.display='inline';\ndocument.getElementById(\"rom4\").style.display='inline';\n}\nif (want==\"job\") {\ndocument.getElementById('job').style.display='inline';\ndocument.getElementById('job2').style.display='inline';\ndocument.getElementById('job3').style.display='inline';\ndocument.getElementById('job4').style.display='inline';\n}\nif (want!=\"job\" && want!=\"romance\") {\ndocument.getElementById(\"else\").style.display='inline';\ndocument.getElementById(\"else2\").style.display='inline';\ndocument.getElementById(\"else3\").style.display='inline';\ndocument.getElementById(\"else4\").style.display='inline';\n}\n</script>",
+      "links": [
+        {
+          "text": "xgf",
+          "destination": {
+            "name": "xgf",
+            "pid": 45
+          }
+        },
+        {
+          "text": "security gal",
+          "destination": {
+            "name": "security gal",
+            "pid": 46
+          }
+        },
+        {
+          "text": "Seek tenuous truce with ex",
+          "destination": {
+            "name": "Seek tenuous truce with ex",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Sneak into passenger area",
+          "destination": {
+            "name": "Sneak into passenger area",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Try to reach security",
+          "destination": {
+            "name": "Try to reach security",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Seek tenuous truce with ex",
+      "text": "<h3>January 29</h3>\n\n<a id=crunches onclick=jsfunction()>Do Crunches?</a><br />\n<div id=\"oof\" style=\"display:none\">Crunches: 10</div>\n<b>Push-ups</b> \u2013 25 <br />\n\nFirst contact is wonderful!  Got hug from Ex.  Quarantine and mysterious goings-on result in unthinkable: \n<div id=\"cyn3\" style=\"display:none\">conversation between me and the gorgeous Cyndee.  Cyndee v. well-read in science fiction and possessed of astounding array of theories about culture and eating habits of aliens based on brief glimpses of floaty neon-colored things.\n\nRested my head against her arm while she talked. Can still smell her coconut shampoo.  Bliss!</div>\n\n<div id=\"sec2\" style=\"display:none\">Frightening security officer has entrusted me with full logs of jerk supervisor Jeff's showering, tastefully edited for nudity.  Security Officer TJ is angel.  Have ample time to pick worst possible passage to broadcast!  Also showed footage of actual aliens!  Look like floaty neon clouds.  Not unlike effect of smoke machine and concentrated gel-light.  May have job offer in security.</div>\n\n<div id=\"down\" style=\"display:none\">Salisbury steak every night.  Bored cooks allowing other staff free reign of kitchen in exchange for gossip. May have to do more push-ups.\n\nWaste Management staff glimpsed aliens - floaty neon-colored things.  Had theories as to what they might excrete.  It is hard to talk to waste management staff while eating Salisbury steak.</div>\n\n<div id=\"drum1\" style=\"display:none\">Forgiveness from drummer.  Drummer v. well read in science fiction and possessed of astounding array of theories about culture and eating habits of aliens based on brief glimpses of floaty neon-colored things.  Only partially faked admiration.</div>\n\n<div id=\"nomance\" style=\"display:none\">XGF tried to make truce into boink-session, but thoughts of historic moment helped maintain self-respect, deflect hands.  Xgf may actually respect me now! </div>\n\n<p>Will gather all gossip and info I can.</p>\n\n[[There is no way this could go wrong.]]\n\n[[I am convinced this is going to go wrong.]]\n\n<script>\nif (gf==\"Cyndee\") {\ndocument.getElementById('cyn3').style.display='block';\n}\nif (plot==\"sec\") {\ndocument.getElementById('sec2').style.display='block';\n}\nif (plot==\"drum\") {\ndocument.getElementById('drum1').style.display='block';\n}\nif (plot==\"down\") {\ndocument.getElementById('down').style.display='block';\n}\nif (want==\"nomance\") {\ndocument.getElementById('down').style.display='block';\ndocument.getElementById('nomance').style.display='block';\n}\nif (want==\"selfcon\") {\ndocument.getElementById('down').style.display='block';\n}\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 10;\n}\n</script>",
+      "links": [
+        {
+          "text": "There is no way this could go wrong.",
+          "destination": {
+            "name": "There is no way this could go wrong.",
+            "pid": 14
+          }
+        },
+        {
+          "text": "I am convinced this is going to go wrong.",
+          "destination": {
+            "name": "I am convinced this is going to go wrong.",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Sneak into passenger area",
+      "text": "<h3>January 29</h3>\n<div id=\"crunchy\" style=\"display:none\"><a id=crunches onclick=jsfunction()>Do Crunches?</a></div>\n<div id=\"oof\" style=\"display:none\"><b>Crunches</b> - 10</div>\n\nTo people who are not Lido Lounge staff, Lido Lounge staff look vaguely like normal people.  However, Lido Lounge Staff v. much first line of obstacles.\n\nNeed cunning plan.\n\n[[Use stage costume supplies?]]\n<div id=\"lol\" style=\"display:none\"> Waiters suprisingly suspicious bunch.</div>\n<div id=\"linkie\" style=\"display:block\"> [[Steal cocktail tray, impersonate waiter?]]</div>\n\n[[Subtly insinuate self in conversations?]]\n\n<script>\nvar waiters;\nif (waiters==\"hip\") {\ndocument.getElementById('lol').style.display='block';\ndocument.getElementById('linkie').style.display='none';\n}\nif (want==\"selfcon\"){\ndocument.getElementById('crunchy').style.display='block';\n}\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount =10;\n}\n</script>",
+      "links": [
+        {
+          "text": "Use stage costume supplies?",
+          "destination": {
+            "name": "Use stage costume supplies?",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Steal cocktail tray, impersonate waiter?",
+          "destination": {
+            "name": "Steal cocktail tray, impersonate waiter?",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Subtly insinuate self in conversations?",
+          "destination": {
+            "name": "Subtly insinuate self in conversations?",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Try to reach security",
+      "text": "<h3>January 29</h3>\n<a id=crunches onclick=jsfunction()>Do Crunches?</a>\n<div id=\"oof\" style=\"display:none\">Crunches: 10</div>\n\nPretended to have seen pick pocket at snack bar, tried to report it.  \n\nStation security oddly insistant on details, remote reporting.  Suspect are all half-naked and/or watching porn in office.\n\n<div id=\"sec2\" style=\"display:none\"> Second attempt: informed security someone (security gal TJ) was illegally filming people (jerk supervisor) in shower.  Sat back, awaited quick response. \n\nTJ not amused. \n\nIf can't [[convince TJ to forgive me]] will have to [[throw self at supervisor's mercy]] \n\n</div>\n\n<div id=\"drum2\" style=\"display:none\"> Second attmept: informed security someone (drummer) was illegally running drinking games (not wrong, if somewhat self-implicating.)\n\nSecurity uninterested.  Response roughly: Dude. Aliens.  Might be forced to [[commit crime]] just to get in there.\n\nOr maybe switch tactics, try to desguise as passenger, sneak into security station, [[Use stage costume supplies?]] \n</div>\n\n<div id=\"other\" style=\"display:none\">Might be forced to [[commit crime]] just to get in there.\n\nOr maybe switch tactics, try to desguise as passenger, sneak into security station, [[Use stage costume supplies?]] \n</div>\n<script>\nif (plot==\"sec\") {\ndocument.getElementById('sec2').style.display='block';\n}\nif (plot==\"drum\") {\ndocument.getElementById('drum2').style.display='block';\n}\nif (plot!=\"drum\" && plot!=\"sec\") {\ndocument.getElementById('other').style.display='block';\n}\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 10;\n}\n</script>",
+      "links": [
+        {
+          "text": "convince TJ to forgive me",
+          "destination": {
+            "name": "convince TJ to forgive me",
+            "pid": 27
+          }
+        },
+        {
+          "text": "throw self at supervisor's mercy",
+          "destination": {
+            "name": "throw self at supervisor's mercy",
+            "pid": 28
+          }
+        },
+        {
+          "text": "commit crime",
+          "destination": {
+            "name": "commit crime",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Use stage costume supplies?",
+          "destination": {
+            "name": "Use stage costume supplies?",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "There is no way this could go wrong.",
+      "text": "<h3>January 30</h3>\n\nBored <br />\nUncounted push-ups and crunches.<br />\nCalories \u2013 a million.  Completely consumed store of Christmas candies, which had planned to last all year.\n\nCut off from social networking sites.  Possible violation of human rights.\n\n<div id=\"cyn\" style=\"display:none\">Cyndee less magical when not distracted by sultry voice under appropriate gel-tint.  She asked about origin of \u201cDeShaun\u201d.  Told her proud heritage, minus stupid apostrophe.  She felt ancestors couldn\u2019t spell.  Made unfortunate remark about double-e ending of name properly spelled \u201cCindy\u201d and annoyance of constant spell-checker alerts.\n\nApparently this is a sore spot.  Also tits are very likely fake.</div>\n\n<div id=\"rom\" style=\"display:none\">Am doomed to dateless misery. </div>Sealed in cruise ship without even amusement of doing stupid job.\n<% glass = \"full\" %>\n\n<hr />\n<h3>February 1</h3>\n\nDoomed!\n\nSnooping aliens have apparently been in all personal logs to learn about humanity.  Have broadcast interesting segments, asking clarification.  <div id=\"cyn5\" style=\"display:none\">Naturally chose comment about tits.  Tenuous truce with xgf / all hope with current not-gf doomed forever by over-sharing!</div>\n<div id=\"other\" style=\"display:none\">Naturally chose most snarky comments from personal log of personal self, particularly petty revenge plans, calling Jerk Supervisor Jerk.</div>\n\nWould throw self overboard if had authority to open air locks.\n\nWorst of all, having drunk stash, no booze to wallow in.\n\nDO NOT HAVE BOOZE.  That was a joke.  No shipboard rules violated.  (Snooping aliens.)\n\nHave resolved to grow fat on leftover buffet pudding.  Butterscotch is the new whiskey.\n\nAm reduced to writing [[long, self-pitying letter home to Dad]], which I can\u2019t send, anyway.\n\nMay [[give up on log]].  \n\nWill probably [[keep logging]]\n\n<script>\nif (gf == \"Cyndee\"){\ndocument.getElementById('cyn').style.display='block';\ndocument.getElementById('cyn5').style.display='block';\n}\nelse {\n\tdocument.getElementById('other').style.display='block';}\n    \nif (want==\"romance\") {\ndocument.getElementById('rom').style.display='inline';\n}\n</script>\n",
+      "links": [
+        {
+          "text": "long, self-pitying letter home to Dad",
+          "destination": {
+            "name": "long, self-pitying letter home to Dad",
+            "pid": 23
+          }
+        },
+        {
+          "text": "give up on log",
+          "destination": {
+            "name": "give up on log",
+            "pid": 15
+          }
+        },
+        {
+          "text": "keep logging",
+          "destination": {
+            "name": "keep logging",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "give up on log",
+      "text": "<h3>May 14</h3>\n\nCalories: 2300 <br />\n\nCrunches: 30 <br />\n\nPush-ups: 20 <br />\n\nFound bottle of whisky. It is half <%= glass %>.\n\nAfter months of quarantine, we docked at Earth and the aliens and passengers disembarked.  Lucky bastards.\n\n<div id=\"cyn\" style=\"display:none\">Including Cyndee.</div>\n<div id=\"tj\" style=\"display:none\">Including TJ.</div>\n\nEveryone on Lido deck promoted, with exception of self.\n\n<div id=\"drum\" style=\"display:none\">Including Drummer.</div>\n<div id=\"sec\" style=\"display:none\">Including Jerk Supervisor.</div>\n\nWhat is point of resolutions and diaries?  Self-improvement, interesting things never happen.  I give up.\n\nThe End.\n\n<hr />\n<i>This is 1 out of 4 bad endings for poor Deshaun. <br />\nYou completed <%= puzzlesDone %> of 4 potential mini-puzzles. <br />\nYou performed <%= crunchcount %> voluntary crunches. <br />\nYou may <a onclick=\"location.reload()\" class=\"internalLink\">RESTART</a> for a better ending.</i>\n<script>\nif (gf==\"Cyndee\") {\ndocument.getElementById('cyn').style.display='block';\n}\nif (gf==\"TJ\") {\ndocument.getElementById('tj').style.display='block';\n}\nif (plot==\"drum\") {\ndocument.getElementById('drum').style.display='block';\n}\nif (plot==\"sec\") {\ndocument.getElementById('sec').style.display='block';\n}\nlocalStorage.setItem('replayToken', 1);\n</script>",
+      "links": []
+    },
+    {
+      "pid": 16,
+      "name": "keep logging",
+      "text": "<h3>February 2</h3>\n<a id=crunches onclick=jsfunction()>Do Crunches?</a>\n<div id=\"oof\" style=\"display:none\">Crunches: 20</div>\n\nApparently am most consistent logger on ship crew.  Co-workers lazier than ever expected.  Seems impossible.\n\n(Tourists big loggers, but aliens uninterested in descriptions of selves, unexplored space.  Do not blame them, tourists all blend together pretty fast.)\n\nHave special meeting with aliens to discuss \u201cpatterns of diction\u201d.  Am trying to crawl out of puddle of self-pity to be honored, but would be better if had any say in this.  Also would be better to have whisky, or delete key on life.  Neither, alas, in the immediate forecast.\n\nWonder if respect, attention will impress <%= gf %>.\n\n<div id=\"opt\" style=\"display:none\">Perhaps aliens will understand mildy-fit sound and lighting technician with dreams. Humans never have. </div>\n<div id=\"pess\" style=\"display:none\">More likely aliens wish to join in me-directed mockery.</div>\n<div id=\"meh\" style=\"display:none\">Meh.</div>\n\nStill, curious, sick of Lido deck isolation.  I go forth:\n\n[[cautiously]], eye to the exits\n\n[[boldly]], armed with sarcasm\n\n[[reluctantly]], fighting every step down corridor\n\n<script>\n\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount+=20;\n}\nif (glass==\"full\") {\ndocument.getElementById('opt').style.display='block';\n}\nif(glass==\"empty\") {\ndocument.getElementById('pess').style.display='block';\n}\nif(glass==\"unset\") {\ndocument.getElementById('meh').style.display='block';\n}\n</script>",
+      "links": [
+        {
+          "text": "cautiously",
+          "destination": {
+            "name": "cautiously",
+            "pid": 38
+          }
+        },
+        {
+          "text": "boldly",
+          "destination": {
+            "name": "boldly",
+            "pid": 39
+          }
+        },
+        {
+          "text": "reluctantly",
+          "destination": {
+            "name": "reluctantly",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "balance work and life",
+      "text": "<pre>Entries from February 11th through April 23rd <br />redacted by Galactic Security, LLC.</pre>\n\n<h3>April 25</h3>\n\nQuarantine ended. Am flying home without customary stop at Neptune.  Good.  Hate Neptune.\n\nPersonal log will end now, as computer is company property and scary men in black suits want rest.\n\nGood news: have already met New Year\u2019s resolutions.  \n\n<p><b>Resolution one:</b> Get New Job.  Am no longer working for horrible cruise ship.  Am hired by aliens to be human ambassador!  Pay still unclear, fear may consist of interesting smells and tinkling sounds, but def. something Dad can brag about more readily than cruise ship sound engineer.</p>\n\n<p><b>Second resolution:</b> Am dating <%= gf %> - def. not cocktail waitress. </p>\n\n<p><b>Third resolution:</b> See above.</p>\n\n<div id=\"else\" style=\"display:none\"><p>Will forgive self fourth resolution.  Daily logging clearly not necessary \u2013 sporadic updates have done their duty.  Also abs may not be strong, but have universal appeal, so can close this log content in job well done.</p></div>\n<div id=\"selfcon\" style=\"display:none\"><p><b>Fourth resolution:</b> Constant logging and unreasonable number of crunches have resulted in abs of semi-firm tofu, new job.</p></div>\n\n<hr />\nThis is the best ending of 6 possible happy endings (3 romantic, 3 not).\nYou completed <%= puzzlesDone %> of 4 potential mini-puzzles. <br />\nYou performed <%= crunchcount %> voluntary crunches. <br />\nYou may <a onclick=\"location.reload()\" class=\"internalLink\">RESTART</a> for a different ending.\n\n<script>\nif (crunchcount > 50) {\n  document.getElementById('selfcon').style.display=\"block\";\n  }\n  else {\n  document.getElementById('else').style.display=\"block\";\n  }\n  localStorage.setItem('replayToken', 1);\n</script>",
+      "links": []
+    },
+    {
+      "pid": 18,
+      "name": "Use stage costume supplies?",
+      "text": "Stage costume trunk pathetically stocked.  Suspect options are purely for post-rough-night damage camoflage. \n\n<pre>Click a button to have Deshaun try on the item.<br /> He'll keep it on until you click \"Put it Back.\"</pre>\n\n<button id=\"blonde\" type=\"button\" onclick=\"dressUp('blonde')\">A blonde, curly wig</button>\n<div id=\"blondeDesc\" style=\"display:none\">Am undercover lion. <button type=button onclick=\"putBack('blonde')\">Put it Back</button></div>\n<button id=\"pink\" type=\"button\" onclick=\"dressUp('pink')\">Pink, straight wig</button> <br />\n<div id=\"pinkDesc\" style=\"display:none\" >Am uncertain have requiste moxy, but neon hair may distract all eyes from face.<button type=button onclick=\"putBack('pink')\">Put it Back</button></div>\n<button id=\"boa\" type=\"button\" onclick=\"dressUp('boa')\">Feather boa</button> <br />\n<div id=\"boaDesc\" style=\"display:none\" >Feel disturbingly pretty. Could fold and loop over face as pink beard? <button type=button onclick=\"putBack('boa')\">Put it Back</button></div>\n<button id=\"vest\" type=\"button\" onclick=\"dressUp('vest')\">Heavily sequined black satin vest</button> <br />\n<div id=\"vestDesc\" style=\"display:none\" >Suspect still resemble lighting technician, but extremely fancy one.<button type=button onclick=\"putBack('vest')\">Put it Back</button></div>\n<button id=\"shawl\" type=\"button\" onclick=\"dressUp('shawl')\">Lace shawl</button> <br />\n<div id=\"shawlDesc\" style=\"display:none\" >Am Sheik of Antimasicar. Possible cultural apropriation problem, but fetching.<button type=button onclick=\"putBack('shawl')\">Put it Back</button></div>\n<button id=\"hat\" type=\"button\" onclick=\"dressUp('hat')\">Gold fedora</button>\n<div id=\"hatDesc\" style=\"display:none\" >Have immediate urge to use jazz hands.<button type=button onclick=\"putBack('hat')\">Put it Back</button></div>\n\nI think I am ready to [[try my costume]]\n\n<script>\nvar costume = \" \";\n\nfunction dressUp(item) {\n  \nif (item=='blonde') {\n  document.getElementById('blondeDesc').style.display='block';\n  document.getElementById('blonde').style.display='none';\n  costume += \"blonde \";\n \n  }\n  \n if (item=='pink') {\n  document.getElementById('pinkDesc').style.display='block';\n  document.getElementById('pink').style.display='none';\n  costume += \"pink \";\n  } \n  \n  if (item=='boa') {\n  document.getElementById('boaDesc').style.display='block';\n  document.getElementById('boa').style.display='none';\n  costume += \"boa \";\n  } \n  if (item=='vest') {\n  document.getElementById('vestDesc').style.display='block';\n  document.getElementById('vest').style.display='none';\n  costume += \"vest \";\n  } \n  if (item=='shawl') {\n  document.getElementById('shawlDesc').style.display='block';\n  document.getElementById('shawl').style.display='none';\n  costume += \"shawl \";\n  } \n  if (item=='hat') {\n  document.getElementById('hatDesc').style.display='block';\n  document.getElementById('hat').style.display='none';\n  costume += \"hat \";\n  } \n}\n\nfunction putBack(item) {\n \nif (item=='blonde') {\n\tdocument.getElementById('blondeDesc').style.display='none';\n\tdocument.getElementById('blonde').style.display='block';\n\tcostume.replace(\"blonde\",\"\");\n}\nif (item=='pink') {\n\tdocument.getElementById('pinkDesc').style.display='none';\n\tdocument.getElementById('pink').style.display='block';\n\tcostume.replace(\"pink\",\"\");\n}\nif (item=='boa') {\n\tdocument.getElementById('boaDesc').style.display='none';\n\tdocument.getElementById('boa').style.display='block';\n\tcostume.replace(\"boa\",\"\");\n}\nif (item=='vest') {\n\tdocument.getElementById('vestDesc').style.display='none';\n\tdocument.getElementById('vest').style.display='block';\n\tcostume.replace(\"vest\",\"\");\n}\nif (item=='shawl') {\n\tdocument.getElementById('shawlDesc').style.display='none';\n\tdocument.getElementById('shawl').style.display='block';\n\tcostume.replace(\"shawl\",\"\");\n}\nif (item=='hat') {\n\tdocument.getElementById('hatDesc').style.display='none';\n\tdocument.getElementById('hat').style.display='block';\n\tcostume.replace(\"hat\",\"\");\n}\n}\n</script>\n",
+      "links": [
+        {
+          "text": "try my costume",
+          "destination": {
+            "name": "try my costume",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Steal cocktail tray, impersonate waiter?",
+      "text": "Offered to carry empty tray back to bar for ex-gf.\n\nTried to carry out to passenger area. Affected haughty, flirty attitude of cocktail wait-staff.  Bounced right back b/c tray empty.\n\nBrought tray to bar.  Lenny asked if am picking up for Eng - cocktail waiter with sore ankle. Lied. Badly. Lenny apprently uninterested in deducing truth, handed over six highballs and a dish of almonds.\n\nSuccess as close as taste of whiskey and gingerale.  Then discovered the following:\n\n1. Trays much heavier than expected.\n2. Doorways have unusually high threshholds.  (Someone should contact management re: handicap accessibility)\n3. Am clumsy\n4. Waiters do not offer help getting off floor.\n\nAlso: 5. Eng v. annoyed to be considered too weak to carry incredibly heavy tray over impossible door lip.\n\nMust find another way to [[Sneak into passenger area]] \n<% waiters = \"hip\" %>",
+      "links": [
+        {
+          "text": "Sneak into passenger area",
+          "destination": {
+            "name": "Sneak into passenger area",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Subtly insinuate self in conversations?",
+      "text": "Spent four hours hanging around edges of room, doorways, offering deep insights on aliens, sports.\n\nDo not have deep insights on aliens, sports.\n\nMay have accidentally joined \"fantasy football\" league.  Suspect involves dragons playing soccer?\n\nScuttlebutt is: aliens on board ship.  Real aliens.  Really on board.  Glimpses of glowy, cloud-things.\n\nUnclear if glowy cloud things are enlightened hope of mankind or monsters likely to snack on sound and lighting technicians.  \n\nUndecided if I should revisit plan to  [[Use stage costume supplies?]] \n\nor if I should just remain calm, do job. [[There is no way this could go wrong.]] ",
+      "links": [
+        {
+          "text": "Use stage costume supplies?",
+          "destination": {
+            "name": "Use stage costume supplies?",
+            "pid": 18
+          }
+        },
+        {
+          "text": "There is no way this could go wrong.",
+          "destination": {
+            "name": "There is no way this could go wrong.",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "I am convinced this is going to go wrong.",
+      "text": "<h3>January 30</h3>\n\nUncounted push-ups and crunches.  Am accused of being \"Squirrelly guy who flips out in Space Isolation horror movie.\"\n\nWith v. little experience with Things Going Right am v. uncomfortable when they do.\n\n<div id=\"rom\" style=\"display:none\">Fight with ex-gf, Cyndee. <br/> am doomed to dateless life.</div>\n\n<hr />\n<h3>February 1</h3>\n\nDoomed!\n\nSnooping aliens have apparently been in all personal logs to learn about humanity.  Have broadcast interesting segments, asking clarification.  <div id=\"cyn5\" style=\"display:none\">Naturally chose comment about tits.  Tenuous truce with xgf / all hope with current not-gf doomed forever by over-sharing!</div>\n<div id=\"other\" style=\"display:none\">Naturally chose most snarky comments from personal log of personal self, particularly petty revenge plans, calling Jerk Supervisor Jerk.</div>\n\nWould throw self overboard if had authority to open air locks.\n\nWorst of all, having drunk stash, no booze to wallow in.\n\nDO NOT HAVE BOOZE.  That was a joke.  No shipboard rules violated.  (Snooping aliens.)\n\nHave resolved to grow fat on leftover buffet pudding.  Butterscotch is the new whiskey.\n\nAm reduced to writing [[long, self-pitying letter home to Dad]], which I can\u2019t send, anyway.\n\nMay [[give up on log]].  \n\nWill probably [[keep logging]]\n\n<script>\nif (gf == \"Cyndee\"){\ndocument.getElementById('cyn5').style.display='block';\n}\nelse {\n\tdocument.getElementById('other').style.display='block';}\n    \nif (want==\"romance\") {\ndocument.getElementById('rom').style.display='block';\n}\n</script>\n\n<% glass = \"empty\" %>",
+      "links": [
+        {
+          "text": "long, self-pitying letter home to Dad",
+          "destination": {
+            "name": "long, self-pitying letter home to Dad",
+            "pid": 23
+          }
+        },
+        {
+          "text": "give up on log",
+          "destination": {
+            "name": "give up on log",
+            "pid": 15
+          }
+        },
+        {
+          "text": "keep logging",
+          "destination": {
+            "name": "keep logging",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "unexplored space",
+      "text": "\nIs supposedly new tract of space each time, but how can anyone \u2013 especially easily-duped passengers who think cruise ship bands are good \u2013 tell the difference?\n\n<hr /><pre>\nThis space could not have been explored without the help <br />\nof my fabulous beta testers:<br />\nGrace Vibbert<br />\nJennifer Vibbert<br />\nBrian Crick<br />\nVictor Ojuel<br />\nGeoff Landis<br />\n<hr /></pre>\n\n<a href=\"javascript: window.history.back();\">Back --></a>",
+      "links": []
+    },
+    {
+      "pid": 23,
+      "name": "long, self-pitying letter home to Dad",
+      "text": "To: Marius Stevens, Jr. New Albuquerque, Mars\n\nFrom: Your miserable disappointment of a son\n\nYou probably think it's because of you running out on Mum that I ran off to join a cruise ship so I would never have to talk to you again.  You would be right.  Tiffany is too old, too rich, and too orange for you.  I don't know why you don't see she's a terrible person using you to relive her youthful days of using much richer, younger men.\n\nBut okay yes also I wanted a career in the arts and this is sort of the arts or at least arts-ajacent, not that anyone cares about my careful color and sound choices.  Singers always want their voice louder at them and everyone wants to be blue for some reason and the voice controls could take over for me if I didn't disable them.\n\nServes you right Mum ran off to explore volcanoes on Venus.  I hope this letter finds you cast off by Tiffany and miserable.\n\nDidn't mean that. Love you, Dad.  I'm sorry. You were right about maybe this not being the best career choice.  Should have stayed in college, though maybe not Phobos U.\n\n<a href=\"javascript: window.history.back();\">Back --></a>",
+      "links": []
+    },
+    {
+      "pid": 24,
+      "name": "commit crime",
+      "text": "<h3>January 30</h3>\n\nHave manual dexterity of half-eaten sushi, and staff, Lido Lounge, unpossessed of small valuables.  So thought best, easiest crime to commit was hack directly in to security feeds.  Advantage: lazy security likely to care about own systems, and if successful, fulfills desire for information.\n\nAccount locked out on second try.  Tried to put physical connection on nearby camera, caught by Drummer, handed over to [[security gal]], TJ.\n\nTJ patted self on head, called self \"muppet.\"\n\nTurns out, holding cell not a great place to learn things.\n\nTime for another [[letter to dad]].\n\nAsked TJ to maybe let me out. She said I am an embarrassment to know. Had hoped for hijinks, petty vengence. Got idiot accomplice in holding cell.\n\nMust [[convince TJ to forgive me]]\n\nor\n\n[[throw self at supervisor's mercy]]\n\nor\n\n[[hide in quarters]]\n\n<script>\nif ( want==\"romance\" ) {\ngf = \"TJ\";\n\n}\n</script>",
+      "links": [
+        {
+          "text": "security gal",
+          "destination": {
+            "name": "security gal",
+            "pid": 46
+          }
+        },
+        {
+          "text": "letter to dad",
+          "destination": {
+            "name": "letter to dad",
+            "pid": 48
+          }
+        },
+        {
+          "text": "convince TJ to forgive me",
+          "destination": {
+            "name": "convince TJ to forgive me",
+            "pid": 27
+          }
+        },
+        {
+          "text": "throw self at supervisor's mercy",
+          "destination": {
+            "name": "throw self at supervisor's mercy",
+            "pid": 28
+          }
+        },
+        {
+          "text": "hide in quarters",
+          "destination": {
+            "name": "hide in quarters",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "try my costume",
+      "text": "Costume:  <%= costume %>\n\n<div id=\"success\" style=\"Display:none\">Am ludicrisly dressed enough to pass for tourist!  Even Jerk Supervisor Jeff blinded by rockstar-like glam. Can now [[Walk into security]] or [[sweet talk passengers for information]].</div>\n\n<div id=\"failure\" style=\"Display:none\">Costume not elaborate or perhaps silly enough.  Ex-gf saw, snickered. Will try to [[Use stage costume supplies?]] again.  </div>\n<div id=\"failure2\" style=\"Display:none\">Am overburdened. Tripped on self.  Grateful for cover of pile of props. Will try to [[Use stage costume supplies?]] again.  </div>\n\n<script>\nif (costume.length < 14) {\ndocument.getElementById('failure').style.display='block';\n}\nelse if (costume.length > 24) {\ndocument.getElementById('failure2').style.display='block';\n}\nelse {\ndocument.getElementById('success').style.display='block';\npuzzlesDone++;\n}\n</script>",
+      "links": [
+        {
+          "text": "Walk into security",
+          "destination": {
+            "name": "Walk into security",
+            "pid": 59
+          }
+        },
+        {
+          "text": "sweet talk passengers for information",
+          "destination": {
+            "name": "sweet talk passengers for information",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Use stage costume supplies?",
+          "destination": {
+            "name": "Use stage costume supplies?",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "sweet talk passengers for information",
+      "text": "February 1\n\nDoomed!\n\nSnooping aliens have apparently been in all personal logs to learn about humanity.  Have broadcast interesting segments, asking clarification.  \n\n<div id='cyn4' style=\"display:none\">Worse, Cyndee displeased with passages describing self, tits.  Now talking to ex-gf. </div>\n\nWould throw self overboard if had authority to open air locks.\n\nWorst of all, having drunk stash, no booze to wallow in.\n\nDO NOT HAVE BOOZE.  That was a joke.  No shipboard rules violated.  (Snooping aliens.)\n\nHave resolved to grow fat on leftover buffet pudding.  Butterscotch is the new whiskey.\n\nMay [[give up on log]].  \n\nWill probably [[keep logging]]\n\n\n<script>\nif (gf==\"Cyndee\") {\ndocument.getElementById('cyn4').style.display='block';\n}\n</script>",
+      "links": [
+        {
+          "text": "give up on log",
+          "destination": {
+            "name": "give up on log",
+            "pid": 15
+          }
+        },
+        {
+          "text": "keep logging",
+          "destination": {
+            "name": "keep logging",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "convince TJ to forgive me",
+      "text": "<div id=\"rom\" style=\"display:none\">\n<p>Talked too much, trying to keep TJ lingering by holding cell, convince to let me go.  Whined somewhat about not knowing what Cyndee (or unfairly muscular drummer) up to.</p>\n\n<p>TJ despises singers who spell name with too many E's.</p>\n\n<p>TJ jealous? Of me?  Or am imagining?  Strong, confident security professional can surely not see anything in pudgy, insecure lighting technician? </p>\n\n<p>Tell TJ [[Cyndee means nothing to me]]? </p>\n\n<p>Or [[talk about Cyndee]], leverage jealousy?</p>\n\n</div>\n\n<div id=\"nomance\" style=\"display:none\">\n<p>Tried to keep TJ lingering by holding cell through talking.  Offered to be her loyal minion.</p>\n\nShe smirked, said, \"I like the sound of that.\"\n\nAssured her of stupidity of self, brilliance of her, general unworthiness to be in her presence.\n\nGrovelling worked wonders.\n\nTJ suggested I [[Check Messages]] with a conspiratorial wink.\n<% gf = \"TJ\" %>\n</div>\n<script>\n\nif (want==\"romance\") {\ndocument.getElementById('rom').style.display='block';\n}\nelse {\ndocument.getElementById('nomance').style.display='block';\n}\n</script>",
+      "links": [
+        {
+          "text": "Cyndee means nothing to me",
+          "destination": {
+            "name": "Cyndee means nothing to me",
+            "pid": 49
+          }
+        },
+        {
+          "text": "talk about Cyndee",
+          "destination": {
+            "name": "talk about Cyndee",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Check Messages",
+          "destination": {
+            "name": "Check Messages",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "throw self at supervisor's mercy",
+      "text": "Forgot: supervisor has no mercy.\n\nAt least in brig have lots of time for exercise, logging.\n\nOne resolution success?\n\n<hr />\n<pre>This is number 3 out of 4 bad endings for poor Deshaun.<br /> \nYou completed <%= puzzlesDone %> of 4 potential mini-puzzles. <br />\nYou may <a onclick=\"location.reload()\" class=\"internalLink\">RESTART</a> for a better ending.</pre>",
+      "links": []
+    },
+    {
+      "pid": 29,
+      "name": "hide in quarters",
+      "text": "<h3>February 1</h3>\n\n<div id=\"crunchy\" style=\"display:none\"><a id=crunches onclick=jsfunction()>Do Crunches?</a></div>\n\n<div id=\"oof\" style=\"display:none\"><b>Crunches</b> - Held fetal position for eight hours? Counts?</div>\n\nThis was a terrible idea.\n\nNo idea what is going on.\n\nMay [[give up on log]] / everything else\nor\n[[keep logging]] - hope to figure out plan of action that is actual action.\n\n<script>\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 10;\n}\n</script>",
+      "links": [
+        {
+          "text": "give up on log",
+          "destination": {
+            "name": "give up on log",
+            "pid": 15
+          }
+        },
+        {
+          "text": "keep logging",
+          "destination": {
+            "name": "keep logging",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "job as alien ambassador",
+      "text": "<h3>February 6</h3> \n\n<div id=\"pess\" style=\"display:none\">Will never have job as alien ambassador. <br /> Still laughing stock of ship.  Passengers, co-workers all jerks.</div>\n<div id=\"opt\" style=\"display:none\">Job not mine, yet.  Current situation bleak, but hoping for best.</div>\n<div id=\"meh\" style=\"display:none\">Do not have job as alien ambassador. Should not have worn best suit to meeting.  </div>\n\n<div id=\"job\" style=\"display:none\"  >Musicians no longer take my advice on gel colors.</div> \n<div id=\"cyn\" style=\"display:none\">Cyndee is hooking up with unfairly muscular drummer.</div>\n<div id=\"tj\" style=\"display:none\">TJ is hooking up with unfairly muscular drummer.</div>\n\nHave more meetings with aliens.  Dull and yet headache-inducing.  Sadly becoming highlight of day.  Am curiosity to them \u2013 everything I say is interesting.  Waiting for aliens to learn enough to know am complete incompetent and discard self for more charismatic cruise-ship employee, possibly [[xgf]].\n\n<hr />\n\n<h3> February 7 </h3>\n<div id=\"crunchy\"><a id=crunches onclick=jsfunction()>Do Crunches?</a></div>\n<div id=\"oof\" style=\"display:none\">Crunches: 10</div>\n\n\n<div id=\"job2\" style=\"display:none\" >Attempted to discuss gel colors with aliens, lighting design possible common ground?  Teal alien [[may be flirting]]?   Uncertain as has all the expressive range of robot on phone-cam. Boss' boss pulled me aside, asked if I would [[focus on job]]. </div>\n\n<div id=\"cyn2\" style=\"display:none\">Good news: Aliens say Cyndee tits definitely real, and personal log mentions studly but aloof sound technician, which cannot be Tim as Tim is about as aloof as mosquito.</div>\n\n<div id=\"rom2\" style=\"display:none\" >Teal alien [[may be flirting]]?   Uncertain as has all the expressive range of robot on phone-cam, but cannot have been that fascinating a speaker. Boss' boss pulled me aside, asked if I would [[focus on job]].  </div>\n\n<div id=\"nomance\"style=\"display:none\">Teal alien [[may be flirting]]?   Uncertain as has all the expressive range of robot on phone-cam. (At least is not xgf?)  Boss' boss pulled me aside, asked if I would [[focus on job]]. </div>\n\n<div id=\"selfcon\" style=\"display:none\">Aliens impressed with \"quest for self-improvement\" - more tealish one asked if could touch \"rock hard abs\" - [[may be flirting]]? <br/>\n\nConsistent logging got me here.  Slow and steady progress.  Feel like answer is to [[balance work and life]].</div>\n\n<div id=\"selfcon2\" style=\"display:none\">Teal alien [[may be flirting]]?   Uncertain as has all the expressive range of robot on phone-cam, but asked about \"sexy but doomed quest for self-improvement.' Boss' boss pulled me aside, asked if I would [[focus on job]].  </div>\n\n\n<script>\nif (want==\"job\") {\ndocument.getElementById('job').style.display=\"block\";\ndocument.getElementById('job2').style.display=\"block\";\n}\nif (want==\"romance\") {\ndocument.getElementById('rom').style.display=\"block\";\ndocument.getElementById('rom2').style.display=\"block\";\n}\nif (want==\"nomance\") {\ndocument.getElementById('nomance').style.display=\"block\";\n}\nif (gf==\"TJ\") {\n document.getElementById('tj').style.display=\"block\";\n}\nif (gf==\"Cyndee\") {\n document.getElementById('cyn').style.display=\"block\";\n document.getElementById('cyn2').style.display=\"block\";\n}\n\nif (want==\"selfcon\") {\n  if (crunchcount > 40) {\n  document.getElementById('selfcon').style.display=\"block\";\n  }\n  else {\n  document.getElementById('selfcon2').style.display='block';\n  }\n\n}\nif (glass==\"full\") {\ndocument.getElementById('opt').style.display='block';\n}\nif(glass==\"empty\") {\ndocument.getElementById('pess').style.display='block';\n}\nif(glass==\"unset\") {\ndocument.getElementById('meh').style.display='block';\n}\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 10;\n}\n</script>",
+      "links": [
+        {
+          "text": "xgf",
+          "destination": {
+            "name": "xgf",
+            "pid": 45
+          }
+        },
+        {
+          "text": "may be flirting",
+          "destination": {
+            "name": "may be flirting",
+            "pid": 44
+          }
+        },
+        {
+          "text": "focus on job",
+          "destination": {
+            "name": "focus on job",
+            "pid": 31
+          }
+        },
+        {
+          "text": "balance work and life",
+          "destination": {
+            "name": "balance work and life",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "focus on job",
+      "text": "<pre>Entries from February 11th through April 23rd <br />redacted by Galactic Security, LLC.</pre>\n\n<h3>April 25</h3> \n\nQuarantine ended, aliens, security personnel disembarked at Jupiter Station.\n\nCruise company skipped trip to Neptune to save time. Good. Hate Neptune.\n\n<div id=\"job\" style=\"display:none\"> \nNew Year's Resolutions Check Up:\n\n<p><b>#1:</b> Do not have new job. Am still working for cruise ship, though view unexplored space in different light. Perhaps actual discovery will be good for cruise industry, quality of acts booked.</p>\n\n<p><b>#2:</b> Generally successful in being absolutely uninteresting to cocktail waitresses.</p>\n\n<p><b>#3:</b> <%= gf %> accompanying me on new adventure. </p>\n\n<p><b>#4:</b> Was most consistant logger on ship, suspect also most consistant exerciser. Trying to feel proud of these facts despite lack of concrete reward.</p>\n\n<hr />\n<i>This is number 4 of 4 possible unhappy endings. (And the least unhappy, really.)\nYou completed <%= puzzlesDone %> of 4 potential mini-puzzles. <br />\nYou performed <%= crunchcount %> voluntary crunches. <br />\nYou may <a onclick=\"location.reload()\" class=\"internalLink\">RESTART</a> for a different ending.</i>\n</div>\n\n<div id=\"other\" style=\"display:none\"> \nAliens impressed with \"devotion to duty\" also \"humility.\"\n\n<p><b>First Resolution:</b> No longer working on cruise ship! Aliens taking self with them as translator.</p>\n\n<p><b>Second Resolution:</b> Well, no cocktail waitresses, xgf where I am going.</p>\n\n<p><b>Third Resolution:</b> <%= gf %> accompanying me. So there's that.</p>\n\n<p><b>Fourth Resolution:</b> Will forgive self as was best logger on ship.  Possibly this also means most consistant exerciser.</p>\n\n\n<hr />\n<i>This is number 1 of 6 possible happy endings (3 romantic, 3 not).\nYou completed <%= puzzlesDone %> of 4 potential mini-puzzles.\nYou performed <%= crunchcount %> voluntary crunches. <br />\nYou may <a onclick=\"location.reload()\" class=\"internalLink\">RESTART</a> for a different ending.</i>\n</div>\n\n\n<script>\nif(want==\"job\"){\ndocument.getElementById('job').style.display=\"block\";\n}\nelse{\ndocument.getElementById('other').style.display=\"block\";\n}\nlocalStorage.setItem('replayToken', 1);\n</script>",
+      "links": []
+    },
+    {
+      "pid": 32,
+      "name": "focus on self-improvement",
+      "text": "<pre>Entries from February 11th through April 23rd <br />redacted by Galactic Security, LLC.</pre>\n\n<h3>April 25</h3>\n\n<p>Quarantine ended, aliens, security personnel disembarked at Jupiter Station.</p>\n\n<p>Cruise company skipped trip to Neptune to save time. Good. Hate Neptune.</p>\n\n<div id=\"full\" style=\"display:none\">Aliens impressed with optimism, as well as hard work.</div>\n\n<p>Am disembarking now, and log remains company property. (Company, I suspect, slightly evil.)</p>\n\n<p>But in light of losing log, should do a Resolution Check Up:</p>\n\n<p><b>Resolution One: </b> have new job as Alien translator!</p>\n<p><b>Resolution Two: </b> Am dating <%= gf %>, not cocktail waitress.</p>\n<p><b>Resolution Three: </b> See above.</p>\n<p><b>Resolutoin Four: </b></p>\n<div id=\"selfcon\" style=\"display:none\"> Have done <%= crunchcount %> crunches today. Am, shockingly, in best shape of life.  Historic Events good for health. Who knew? </div>\n<div id=\"else\" style=\"display:none\">Will forgive self exercise, logging resolutions. Clearly have done enough to get the job done.  </div>\n\n\n<hr />\n<i>This is number 2 of 6 possible happy endings (3 romantic, 3 not).\nYou completed <%= puzzlesDone %> of 4 potential mini-puzzles. <br />\nYou performed <%= crunchcount %> voluntary crunches. <br />\nYou may <a onclick=\"location.reload()\" class=\"internalLink\">RESTART</a> for a different ending.</i>\n\n<script>\nif (crunchcount > 40) {\n  document.getElementById('selfcon').style.display=\"block\";\n  }\n  else {\n  document.getElementById('else').style.display=\"block\";\n  }\nif (glass == \"full\") {\n  document.getElementById('full').style.display=\"block\";\n  }\n  localStorage.setItem('replayToken', 1);\n</script>",
+      "links": []
+    },
+    {
+      "pid": 33,
+      "name": "Crunch code",
+      "text": "<div id=\"crunchy\" style=\"display:none\"><a id=crunches onclick=jsfunction()>Do Crunches?</a></div>\n<div id=\"oof\" style=\"display:none\">Crunches: 10</div>\n<script>\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 10;\n}\n</script>",
+      "links": []
+    },
+    {
+      "pid": 34,
+      "name": "Play it cool",
+      "text": "<h3>February 6</h3>\n<div id=\"crunchy\"><a id=crunches onclick=jsfunction()>Do Crunches?</a></div>\n<div id=\"oof\" style=\"display:none\">Crunches: 10</div>\n\nFound bottle of whisky. It is half <%= glass %>.\n\n<div id=\"costume\" style=\"display:none\">Kind of hard to play it cool wearing <%= costume %>. </div>\n\n<%= gf %> is watching.\n\n<div id=\"opt\" style=\"display:none\">\nFeel optimistic about chances.  \n\nHave done well so far, could continue to [[focus on self-improvement]] or use exceellent position to [[balance work and life]] more.\n</div>\n\n<div id=\"pess\" style=\"display:none\">\nFeel pessimistic about chances.\nOnly hope is to [[focus on self-improvement]] .\n\n</div>\n\n<div id=\"meh\" style=\"display:none\">\nAm so cool. Cool as slow jazz under blue filters.  \n\nHope <%= gf %> notices how cool I am.\n\n<h3>February 7</h3>\n\nBeing cool exhausting.  Need to change it up.\n[[focus on self-improvement]] or [[balance work and life]] \n\n</div>\n\n<script>\nif (costume != \"\") {\ndocument.getElementById('costume').style.display='block';\n}\nif (glass==\"full\") {\ndocument.getElementById('opt').style.display='block';\n}\nif(glass==\"empty\") {\ndocument.getElementById('pess').style.display='block';\n}\nif(glass==\"unset\") {\ndocument.getElementById('meh').style.display='block';\n}\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 10;\n}\n</script>",
+      "links": [
+        {
+          "text": "focus on self-improvement",
+          "destination": {
+            "name": "focus on self-improvement",
+            "pid": 32
+          }
+        },
+        {
+          "text": "balance work and life",
+          "destination": {
+            "name": "balance work and life",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "TJ",
+      "text": "<h3>February 10</h3>\n\nIs hard to let an alien down gently when just begining to understand each other.  So grateful for TJ.  \n\nShe is possessed of v. straightforward speech patterns.  Also gun.\n\n<pre>Entries from February 11th through April 23rd <br />redacted by Galactic Security, LLC.</pre>\n\n<h3>April 25<?h3>\n\nQuarantine ended. Am flying home without customary stop at Neptune.  Good.  Hate Neptune.\n\nPersonal log will end now, as computer is company property and scary men in black suits want rest.\n\nGood news: have already met New Year\u2019s resolutions.  \n\n<b>Resolution one: Get New Job.</b>  Am no longer working for horrible cruise ship.  Not entirely by choice as was fired for \"potentially destroying intergalactic relations\" however TJ turned out to have side-gig as bouncer at biggest night club on Jupiter Station.  Have interview lined up when we reach there!  Am told acts varied, equipment old, great opportunity for scrappy type to become hero of vacationing audiences, venue owner.\n\n<b>Second resolution:</b> TJ about as far from cocktail waitress as possible while still being human, female.\n\n<b>Third resolution:</b> See above! Asked TJ if I was her bf, she responded \"Don't be a girl,\" and a kiss, which I take as a yes.\n\n<div id=\"else\" style=\"display:none\">Will forgive self fourth resolution.  Daily logging clearly not necessary \u2013 sporadic updates have done their duty.  Also abs may not be strong, but TJ says loves \"Cuddly Bear\", so can close this log content in job well done.</div>\n<div id=\"selfcon\" style=\"display:none\"><b>Fourth Resolution</b>: Constant blogging resulted in interview tih aliens, change in life.  Constant exercise resulted in soreness, so n.v.g. but also means am some minor percentage less afraid of TJ physically breaking me. So v.g. </div>\n\n<hr />\n<i>This is number 3 of 3 possible romantic endings! Deshaun also has 3 non-romantic happy endings.\nYou completed <%= puzzlesDone %> of 4 potential mini-puzzles.<br />\nYou performed <%= crunchcount %> voluntary crunches. <br />\nYou may <a onclick=\"location.reload()\" class=\"internalLink\">RESTART</a> for a different ending.</i>\n\n<script>\nif (crunchcount > 40) {\n  document.getElementById('selfcon').style.display=\"block\";\n  }\n  else {\n  document.getElementById('else').style.display=\"block\";\n  }\n  localStorage.setItem('replayToken', 1);\n</script>\n",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "floaty alien",
+      "text": "<pre>Entries from February 11th through April 23rd <br />redacted by Galactic Security, LLC.</pre>\n\n<h3>April 25</h3>\n\nQuarantine ended. Am flying home without customary stop at Neptune.  Good.  Hate Neptune.\n\nPersonal log will end now, as computer is company property and scary men in black suits want rest.\n\nGood news: have already met New Year\u2019s resolutions.  \n\n<p><b>Resolution one:</b> Get New Job.  Am no longer working for horrible cruise ship.  Am hired by aliens to be human ambassador!  Pay still unclear, fear may consist of interesting smells and tinkling sounds, but def. something Dad can brag about more readily than cruise ship sound engineer.</p>\n\n<p><b>Second resolution:</b> Teal Alien is def. not cocktail waitress.  </p>\n\n<p><b>Third resolution:</b> possibly getting by on technicality.  Alien genderless, but open to being referred to as gf.</p>\n\n<div id=\"else\" style=\"display:none\"><p>Will forgive self fourth resolution.  Daily logging clearly not necessary \u2013 sporadic updates have done their duty.  Also abs may not be strong, but have universal appeal, so can close this log content in job well done.</p></div>\n<div id=\"selfcon\" style=\"display:none\"><b>Fourth resolution:</b> Mirror, universal attractiveness (see: aliens find me hot) stand in testimony to (if not ev. day) regular exercise, monitored progress. </div>\n\n<hr />\n<i>This is 2 of 3 possible romantic endings! Deshaun also has 3 non-romantic happy endings.\nYou completed <%= puzzlesDone %> of 4 potential mini-puzzles.<br />\nYou performed <%= crunchcount %> voluntary crunches. <br />\nYou may <a onclick=\"location.reload()\" class=\"internalLink\">RESTART</a> for a different ending.</i>\n\n<script>\nif (crunchcount > 40) {\n  document.getElementById('selfcon').style.display=\"block\";\n  }\n  else {\n  document.getElementById('else').style.display=\"block\";\n  }\n  localStorage.setItem('replayToken', 1);\n</script>",
+      "links": []
+    },
+    {
+      "pid": 37,
+      "name": "Cyndee",
+      "text": "<h3>February 10</h3>\n\n<p>Found Cyndee after session.  Told her everything.  </p>\n<p>Cyndee amused at idea of self fleeing alien attention, assured self that was not likely as her vast knowledge of science fiction informs her that aliens v. rarely find humans attractive, for real.</p>\n<p>Relieved. Also: cuddled.</p>\n\n<h3>February 11</h3>\n\n<p>Teal Alien DEFINITELY flirting. Also: tingly.</p>\n<p>After told Cyndee, she burst into alien control room, demanded \"Keep your gaseous apendeges off my man!\"</p>\n<p>Am Cyndee's man!!</p>\n\n<pre>Entries from February 11th through April 23rd <br />redacted by Galactic Security, LLC.</pre>\n\n<h3>April 25</h3>\n\nQuarantine ended. Am flying home without customary stop at Neptune.  Good.  Hate Neptune.\n\nPersonal log will end now, as computer is company property and scary men in black suits want rest.\n\nCyndee freely admits pride at snagging \"alien's man\"!\n\nHave new GF.  Do not have new job, but do have interesting resume material.\n\n<div id=\"else\" style=\"display:none\">Will forgive self fourth resolution.  Daily logging clearly not necessary \u2013 sporadic updates have done their duty.  Also abs may not be strong, but have universal appeal, so can close this log content in job well done.</div>\n<div id=\"selfcon\" style=\"display:none\">Did pretty darn good on logging, exercise.  Feel almost fully in control of self, destiny.  Plus have abs of alien-attracting steel! </div>\n\n<hr />\n<i>This is 1 of 3 possible romantic endings! Deshaun also has 3 non-romantic happy endings.\nYou completed <%= puzzlesDone %> of 4 potential mini-puzzles. <br />\nYou performed <%= crunchcount %> voluntary crunches. <br />\nYou may <a onclick=\"location.reload()\" class=\"internalLink\">RESTART</a> for a different ending.</i>\n\n<script>\nif (crunchcount > 40) {\n  document.getElementById('selfcon').style.display=\"block\";\n  }\n  else {\n  document.getElementById('else').style.display=\"block\";\n  }\n  localStorage.setItem('replayToken', 1);\n</script>",
+      "links": []
+    },
+    {
+      "pid": 38,
+      "name": "cautiously",
+      "text": "<h3>February 4</h3>\n<a id=crunches onclick=jsfunction()>Do Crunches?</a>\n<div id=\"oof\" style=\"display:none\">Crunches: 20</div>\n\nAliens mostly look like clouds of talcum smoke lit by stage gels.  Like staging for Cyndee\u2019s solo, only more volumetric.  (Have ideas to replicate effect.)  Aliens speak through artificial synthesizer much like early twenty-first century pop stars, but musical.\n\nAliens ask about words meaning different things at different times.  For example, \"All work and no play\" verses \"Whole Effort Plus Null Experiment\"\n\nWondered about alien culture re: puns.\n\nShould I advise [[memorizing colloquialisms]]? Or tell them to [[ignore phrases that are repeated often]]?\n\n<script>\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount = crunchcount + 20;\n}\n</script>",
+      "links": [
+        {
+          "text": "memorizing colloquialisms",
+          "destination": {
+            "name": "memorizing colloquialisms",
+            "pid": 41
+          }
+        },
+        {
+          "text": "ignore phrases that are repeated often",
+          "destination": {
+            "name": "ignore phrases that are repeated often",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "boldly",
+      "text": "<h3>February 4</h3>\n\n<a id=crunches onclick=jsfunction()>Do Crunches?</a>\n<div id=\"oof\" style=\"display:none\">Crunches: 20</div>\n\nAliens mostly look like clouds of talcum smoke lit by stage gels.  Like staging for Cyndee\u2019s solo, only more volumetric.  (Have ideas to replicate effect.)  Aliens speak through artificial synthesizer much like early twenty-first century pop stars, but musical.\n\nSaid same, out loud.\n\nAliens ask about words meaning different things at different times.  For example, \"All work and no play\" verses \"Whole Effort Plus Null Experiment\"\n\nWondered about alien culture re: puns.\n\n<div id=\"sass\" style=\"display:block\">Uncontrollable urge to sass.  Can I <button type='button' onclick='coinFlip()'>fight it</button>?</div>\n<div id=\"failure\" style=\"display:none\">\"Right now I don't see the difference between vapid and vapor,\" I said, before could stop self.\n\nMiraculously not dead from embarrassment.  Suspect that fair universe would allow death by embarrassment, so that we would not know how far down embarrassment can really go.  Universe not fair.\n\nDragged out by boss, given [[talking to]]\n</div>\n<div id=\"success\" style=\"display:none\">\nThrough supreme act of will, do not sass alien.\n\nShould I advise [[memorizing colloquialisms]]? Or tell them to [[ignore phrases that are repeated often]]?</div>\n\n<script>\nfunction coinFlip() {\n    document.getElementById('sass').style.display='none';\n    result = Math.floor(Math.random() * 2);\n    if (result = 1){\n    document.getElementById('success').style.display='block';\n    }\n    else{\n    document.getElementById('failure').style.display='block';\n    }\n}\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 20;\n}\n</script>",
+      "links": [
+        {
+          "text": "talking to",
+          "destination": {
+            "name": "talking to",
+            "pid": 43
+          }
+        },
+        {
+          "text": "memorizing colloquialisms",
+          "destination": {
+            "name": "memorizing colloquialisms",
+            "pid": 41
+          }
+        },
+        {
+          "text": "ignore phrases that are repeated often",
+          "destination": {
+            "name": "ignore phrases that are repeated often",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "reluctantly",
+      "text": "<h3>February 4</h3>\n\nJeff, station security dragged self down corridor like spoiled toddler being extracted from playground.\n\nMiraculously not dead from embarrassment.  Suspect that fair universe would allow death by embarrassment, so that we would not know how far down embarrassment can really go.  Universe not fair.\n\nAliens mostly look like clouds of talcum smoke lit by stage gels.  Like staging for Cyndee\u2019s solo, only more volumetric.  (Have ideas to replicate effect.)  Aliens speak through artificial synthesizer much like early twenty-first century pop stars, but musical.\n\nAliens ask about words meaning different things at different times.  For example, \"All work and no play\" verses \"Whole Effort Plus Null Experiment\"\n\nWondered about alien culture re: puns.\n\nShould I advise [[memorizing colloquialisms]]? Or tell them to [[ignore phrases that are repeated often]]?\n\n<script>\ncrunchcount = crunchcount -20;\n</script>",
+      "links": [
+        {
+          "text": "memorizing colloquialisms",
+          "destination": {
+            "name": "memorizing colloquialisms",
+            "pid": 41
+          }
+        },
+        {
+          "text": "ignore phrases that are repeated often",
+          "destination": {
+            "name": "ignore phrases that are repeated often",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "memorizing colloquialisms",
+      "text": "<h3>February 5 </h3>\n<% stitch = 0 %> <% bird = 0 %> <% leap = 0 %> <% correct = 0 %>\n<div id=\"top\">\nLong, brain-melting session with aliens, repeating back aphorisms.\n<pre>Select the best translation for the aphorims.</pre>\n</div>\n<div id=\"stitchBit\" style=\"display:block\"> Purple cloud gets denser, flickers.  Audio pickup speaks in monotone.  \"What does it mean that a stitch in time saves nine?\"\n\n<select name=\"stitch\" id=\"stitch\" onchange=\"stitch = this.value\">\n   <option value=\"0\"> </option>\n   <option value=\"1\">First explained stitching, fabric, tears</option>\n   <option value=\"2\">The words don't matter, just means fix fast.</option>\n   <option value=\"3\">No idea. Something to do with M. L'Engle</option>\n             </select>     \n </div> \n             \n <div id=\"stitchYes\" style=\"display:none\">Aliens form more dense clouds, bob.  \"The individual idea-keys are lost, but meaning remains.  What about 'A bird in hand is worth two in a bush'? Why are birds in bushes and what does this represent?\" </div>\n             \n<div id=\"stitchNo\" style=\"display:none\">Aliens flicker, intermingle.  Confused? Conferencing?  \"Why is fabric?\"  \"What is stitching?\"  \"Is this a crime, tearing?\"  Boss ripped my sleeve, attempted demonstration. Should not have worn favorite off-duty shirt.\nAliens interrupt. \"This is not helping. Is the meaning not in the words?  Perhaps another phrase. Why is a bird in a hand worth two in a bush?\"\n             </div>\n             \n<div id=\"stitchNo2\" style=\"display:none\">Aliens diffuse, reform.  Try to explain about best book ever, folding space, kind of thought was related, like, sewing time metaphor for FTL travel?  Aliens ask many follow-up questions, Boss threatens to evict self, give job to xgf.\n            \n Aliens shush boss.  \"Perhaps these details are irrelevant.\" Aliens ask, \"Let's try a different phrase.  Why is a bird in a hand worth two in a bush?\"</div>\n             \n <div id=\"birdBit\" style=\"display:none\">\n         <select name=\"bird\" id=\"bird\" onchange=\"bird = this.value\">\n               <option value=\"0\"> </option>\n               <option value=\"1\">Honestly I'd think the bird in the bush is better b/c no bird poop on hands.</option>\n               <option value=\"2\">Pretty sure this is a dirty joke.</option>\n               <option value=\"3\">The actual should be weighed more than the potential.</option>\n             </select> \n             </div>\n<div id=\"birdYes\" style=\"display:none\">More teal alien floats closer, asks, \"Does this also apply to non-birds?\"  Assured it the birds are metaphorical for any object, goal, desire.  Lots of tiny light flashes, colors deepening.</div>\n<div id=\"birdNo\" style=\"display:none\">Boss, security, science staff get v. uncomfortable, mutter that poop bad to discuss.  Aliens, however, just sway.  ask \"So this is merely a statement of negation?\"  \"Sort of,\" I said.</div>\n<div id=\"birdNo2\" style=\"display:none\">Boss, security, science staff v. uncomfortable. Boss threatens self.  Aliens ask, \"what makes a humorous story soiled?\"\n\nHave many opinions on this.  <%= gf %> interrupts. </div>\n         <div id=\"leapBit\" style=\"display:none\"> \"Fascinating,\" Aliens say.  \"What, then, is meant by \"Look before you leap?\"<br />\n         <select name=\"leap\" id=\"leap\" onchange=\"leap = this.value\">\n               <option value=\"0\"> </option>\n               <option value=\"1\">Think before you act.</option>\n               <option value=\"2\">Just say first thing that comes to mind.</option>\n               <option value=\"3\">Something about cliffs or steps?</option>\n             </select> \n             </div>\n             \n<div id=\"leapNo\" style=\"display:none\">\"There has to be a reason I didn't go into business school,\" I said.\n\nApropos, I should have thought before speaking.  Definitely do not have job as alien ambassador.\n\nOn other hand teal alien [[may be flirting]]? <br />\n\nInvestigate? Or [[Play it cool]]?\n</div>\n<div id=\"leapNo2\" style=\"display:none\">Another long discussion on differences between nouns.  Humans in room irritated, but aliens have endless patience. May have future [[job as alien ambassador]] ! <br /> (Also, more teal-colored alien [[may be flirting]] ? </div>\n         \n        \n  <div id=\"blah\">  <br /> <center><button onclick=\"checkPhrase(stitch,bird,leap)\">Check My Answers</button></center></div>\n    \n<div id=\"leapYes\" style=\"display:none\">Aliens say my minimal diction has simplified their understanding of English grammar.  Am personal author of Rosetta Stone!  Am not expecting any kind of pay bonus.  (Suspect Ptolemy V was also cheapskate.)\n\nMay have future [[job as alien ambassador]] !<br />\n\n(Job sounds hard. May want to [[Play it cool]] )<br />\n\nAlso more tealish alien [[may be flirting]] ? <br />\n</div>\n\n<script>\n\nfunction checkPhrase(stitch,bird,leap) {\n\nstitch = document.getElementById(\"stitch\").value;\nbird = document.getElementById(\"bird\").value;\nleap = document.getElementById(\"leap\").value;\n\nif (stitch==2) {\n document.getElementById('stitchYes').style.display='block';\n correct++;\n document.getElementById('stitchBit').style.display='none';\n document.getElementById('birdBit').style.display='block';\n }\n \n   if (stitch==3) {\n   document.getElementById('stitchNo2').style.display='block';\n   document.getElementById(\"stitchBit\").style.display='none';\n   document.getElementById('birdBit').style.display='block';\n   }\n   if (stitch==1) {\n   document.getElementById('stitchNo').style.display='block';\n   document.getElementById(\"stitchBit\").style.display='none';\n   document.getElementById('birdBit').style.display='block';\n   }\nif (bird==3) {\n document.getElementById('birdYes').style.display='block';\n correct++;\n document.getElementById(\"birdBit\").style.display='none';\n document.getElementById('leapBit').style.display='block';\n document.getElementById('stitchYes').style.display='none';\n document.getElementById('stitchNo').style.display='none';\n document.getElementById('stitchNo2').style.display='none';\n }\n   if (bird==2) {\n   document.getElementById('birdNo2').style.display='block';\n   document.getElementById(\"birdBit\").style.display='none';\n   document.getElementById(\"leapBit\").style.display='block';\n   \n document.getElementById('stitchYes').style.display='none';\n document.getElementById('stitchNo').style.display='none';\n document.getElementById('stitchNo2').style.display='none';\n   }\n   if (bird==1) {\n   document.getElementById('birdNo').style.display='block';\n   document.getElementById(\"birdBit\").style.display='none';\n   document.getElementById(\"leapBit\").style.display='block';\n   \n document.getElementById('stitchYes').style.display='none';\n document.getElementById('stitchNo').style.display='none';\n document.getElementById('stitchNo2').style.display='none';\n   }\n  \n  if (leap==1) {\n document.getElementById('leapYes').style.display='block';\n correct++;\n document.getElementById(\"leapBit\").style.display='none';\n document.getElementById(\"blah\").style.display='none';\n document.getElementById(\"top\").style.display='none';\n \n document.getElementById('birdYes').style.display='none';\n document.getElementById('birdNo').style.display='none';\n document.getElementById('birdNo2').style.display='none';\n }\n   if (leap==3) {\n   document.getElementById('leapNo2').style.display='block';\n   document.getElementById(\"leapBit\").style.display='none';\n   document.getElementById(\"blah\").style.display='none';\n   document.getElementById(\"top\").style.display='none';\n document.getElementById('birdYes').style.display='none';\n document.getElementById('birdNo').style.display='none';\n document.getElementById('birdNo2').style.display='none';\n   }\n   if (leap==2) {\n   document.getElementById('leapNo').style.display='block';\n   document.getElementById(\"leapBit\").style.display='none';\n   document.getElementById(\"blah\").style.display='none';\n   document.getElementById(\"top\").style.display='none';\n document.getElementById('birdYes').style.display='none';\n document.getElementById('birdNo').style.display='none';\n document.getElementById('birdNo2').style.display='none';\n   }\n   if (correct==3) {\n   puzzlesDone++;\n   }\n  }\n</script>",
+      "links": [
+        {
+          "text": "may be flirting",
+          "destination": {
+            "name": "may be flirting",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Play it cool",
+          "destination": {
+            "name": "Play it cool",
+            "pid": 34
+          }
+        },
+        {
+          "text": "job as alien ambassador",
+          "destination": {
+            "name": "job as alien ambassador",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "ignore phrases that are repeated often",
+      "text": "<div id=\"top\"><h3>February 5</h3> \n\nLong meeting with aliens.\n\nAre many words utterly devoid of purpose.  Long, patient discussion with aliens who have insane patience, minute interest in patterns of diction.\n<hr /></div>\n<div id=\"puzzle\">\n<pre>Help Deshaun explain parts of speech <br />by clicking on all the [[adverbs]] to remove them:</pre>\n \n <a id=\"word1\" onclick=\"verb(1)\">Rapidly</a> <a id=\"word2\" onclick=\"noverb(2)\">Deshaun</a> <a id=\"word3\" onclick=\"noverb(3)\">writes,</a> <a id=\"word4\" onclick=\"verb(4)\">cleverly,</a> <a id=\"word5\" onclick=\"verb(5)\">quickly</a> <a id=\"word6\" onclick=\"noverb(6)\">abbreviating</a> <a id=\"word7\" onclick=\"noverb(7)\">like</a> <a id=\"very\" onclick=\"very()\">very<a><div id=\"v\" style=\"display:none\">v.</div> <a id=\"word8\" onclick=\"noverb(8)\">old</a> <a id=\"word9\" onclick=\"noverb(9)\">letters.</a><br /> <br />\n<button id=\"butt\" onclick=\"checkPuzz()\" style=\"display:block\" >Click Here When You Have Removed All Adverbs</button></div>\n<br /> <div id=\"v2\" style=\"display:none\">Yes, 'very' is an adverb here, but Deshaun will keep it in as a 'v'.</div><br />\n</div>\n<div id=\"ohm\" style=\"display:none\">Not quite right. Did you miss one? Adverbs frequently end with \"ly\".<button id\"redo\" onclick=\"reset()\">Try again.</button></div>\n<div id=\"mop\" style=\"display:none\">Oops! You clicked on at least one non-adverb. Adverbs describe or assign a time to an action. Ex: \"Frequently\".<button id\"redo2\" onclick=\"reset()\">Try again.</button> </div>\n\n<div id=\"success\" style=\"display:none\"><p>Aliens say my minimal diction has simplified their understanding of English grammar.  Am personal author of Rosetta Stone!  </p>\n<p>Am not expecting any kind of pay bonus.  (Suspect Ptolemy V was also cheapskate.)</p>\n\nMay have future [[job as alien ambassador]]! <br />\n\n(Job sounds hard. [[Play it cool]]? )\n\nAlso more tealish alien [[may be flirting]]?</div>\n\n<script>\nvar verbs = 0;\nvar nonverbs = 0;\n\nfunction verb(i) {\nverbs++;\ndocument.getElementById('word'+i).style.display='none';\n}\n\nfunction noverb(i) {\nnonverbs++;\ndocument.getElementById('word'+i).style.display='none';\n}\n\nfunction checkPuzz() {\ndocument.getElementById('butt').style.display='none';\nif (verbs==3) {\ndocument.getElementById('success').style.display='block';\ndocument.getElementById('puzzle').style.display='none';\ndocument.getElementById('mop').style.display='none';\ndocument.getElementById('v2').style.display='none';\ndocument.getElementById('top').style.display='none';\npuzzlesDone++;\n}\nelse {\nif (nonverbs > 0) {\ndocument.getElementById('mop').style.display='block';\n}\nif (verbs < 3) {\ndocument.getElementById('ohm').style.display='block';\n}\n}\n}\n\nfunction very() {\ndocument.getElementById('very').style.display='none';\ndocument.getElementById('v').style.display='inline';\ndocument.getElementById('v2').style.display='block';\n}\n\nfunction reset() {\nverbs = 0;\nnonverbs = 0;\n\nfor ( var a=1; a < 10; a++) {\ndocument.getElementById('word'+a).style.display='inline';\ndocument.getElementById('butt').style.display='block';\ndocument.getElementById('ohm').style.display='none';\ndocument.getElementById('mop').style.display='none';\n}\n}\n</script>",
+      "links": [
+        {
+          "text": "adverbs",
+          "destination": {
+            "name": "adverbs",
+            "pid": 54
+          }
+        },
+        {
+          "text": "job as alien ambassador",
+          "destination": {
+            "name": "job as alien ambassador",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Play it cool",
+          "destination": {
+            "name": "Play it cool",
+            "pid": 34
+          }
+        },
+        {
+          "text": "may be flirting",
+          "destination": {
+            "name": "may be flirting",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "talking to",
+      "text": "<% counta = 0 %> <% countb = 0 %> \n<div id=\"failure\" style=\"display:none\">\nBoss lets me have it re: first contact, fate of humanity, moment in history.\nUnable to get word in edgewise.  \n\nThen worst: Boss aware of petty revenge plot.  Am confined to quarters for rest of trip.\n\nBoss said aliens even asked for self, were told have Virulent Contagion.  \n\nGood news: do not have to worry about finding new job resolution since old job gone.  Any job now new job.\n<hr>\n<i>This is number 2 out of 4 bad endings for poor Deshaun.<br />\nYou completed <%= puzzlesDone %> of 4 potential mini-puzzles. <br />\nYou performed <%= crunchcount %> voluntary crunches. <br />\nYou may <a onclick=\"location.reload()\" class=\"internalLink\">RESTART</a> for a better ending.</i>\n</div>\n<div id=\"plead\" style=\"display:none\"> \nBoss lets me have it re: first contact, fate of humanity, moment in history.\n<button id=\"grovel\" type=\"button\" onclick=\"cryFunc(1)\">Grovel</button>\n<button id=\"flatter\" type=\"button\" onclick=\"cryFunc(0)\">Flatter</button>\n</div>\n<div id=\"plea1\" style=\"display:none\"> Think is working. Perhaps if I change up strategy he will crack. </div>\n<div id=\"plea2\" style=\"display:none\"> Definitely working. Can detect boss desire to end conversation. One more debasing action should do it. </div>\n<div id=\"plea3\" style=\"display:none\">YES!</div>\n\n<div id=\"success\" style=\"display:none\">\nMollified boss lets me back to talk to aliens. \n\nAliens still expecting answer.\n\nShould I advise [[memorizing colloquialisms]]? Or tell them to [[ignore phrases that are repeated often]]</div>\n\n<script>\nif (plot==\"sec\") {\ndocument.getElementById('failure').style.display='block';\n}\nelse {\ndocument.getElementById('plead').style.display='block';\n}\n\nfunction cryFunc(a) \n{\n  if (a==0){\n   counta++;\n     }\n  if (a==1){\n    countb++;\n     }\n     checkCount();\n }\n     \nfunction checkCount(){\n  if (counta==1 && countb==0) {\n     document.getElementById('plea1').style.display='block';\n     }\n  if (counta==0 && countb==1) {\n     document.getElementById('plea1').style.display='block';\n     }\n  if (counta==2 && countb==0) {\n    document.getElementById('plea2').style.display='block';\n     }\n  if (countb==2 && counta==0) {\n    document.getElementById('plea2').style.display='block';\n     }\n  if (counta>=1 && countb>=1 ) {\n     document.getElementById('success').style.display='block';\n     document.getElementById('grovel').style.display='none';\n     document.getElementById('flatter').style.display='none';\n     document.getElementById('plea1').style.display='none';\n     document.getElementById('plea2').style.display='none';\n     document.getElementById('plead').style.display='none';\n       }\n  }\n  localStorage.setItem('replayToken', 1);\n</script>\n",
+      "links": [
+        {
+          "text": "memorizing colloquialisms",
+          "destination": {
+            "name": "memorizing colloquialisms",
+            "pid": 41
+          }
+        },
+        {
+          "text": "ignore phrases that are repeated often",
+          "destination": {
+            "name": "ignore phrases that are repeated often",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "may be flirting",
+      "text": "<h3>February 7</h3>\n<div id=\"crunchy\"><a id=crunches onclick=jsfunction()>Do Crunches?</a></div>\n<div id=\"oof\" style=\"display:none\">Crunches: 10</div>\n\n<div id=\"cyn\" style=\"display:none\" >Good news: Aliens say Cyndee tits definitely real, and personal log mentions studly but aloof sound technician, which cannot be Tim as Tim is about as aloof as mosquito.</div>\n\n<div id=\"tj\" style=\"display:none\">Good news: Aliens say TJ personal log mentions charming sound technician, cannot be Tim as Tim is as charming as dandruff.</div>\n\nMore teal-ish alien mentioned \u201cemotional vulnerability\u201d and \u201csexy but doomed quest for self-improvement\u201d.\n\n(Flattered, but kissing cloud not as thrilling an idea as hot-chick-shaped aliens in movies.)\n\n<hr />\n<h3>Feburary 8</h3>\n\nTeal alien flirting?  Gets more turbulent when I enter room.  Other aliens swoosh out to walls, may be laughing.\n\n<hr />\n\n<h3>February 10</h3>\n\nTeal alien definitely flirting.  Also \u2013 tingly.\n\nSuddenly have feeling must choose between [[floaty alien]] and <div id=\"cyn2\" style=\"display:none\">[[Cyndee]] </div>\n<div id=\"tj2\" style=\"display:none\"> [[TJ]]</div>\n<div id=\"none\" style=\"display:none\">[[focus on job]]</div>\n<br />\n \n<script>\nif (gf==\"Cyndee\") {\ndocument.getElementById('cyn').style.display='block';\ndocument.getElementById('cyn2').style.display='inline';\n}\nif(gf==\"TJ\") {\ndocument.getElementById('tj').style.display='block';\ndocument.getElementById('tj2').style.display='inline';\n}\nif(gf==\"no one\") {\ndocument.getElementById('none').style.display='inline';\n}\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 10;\n}\n</script>",
+      "links": [
+        {
+          "text": "floaty alien",
+          "destination": {
+            "name": "floaty alien",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Cyndee",
+          "destination": {
+            "name": "Cyndee",
+            "pid": 37
+          }
+        },
+        {
+          "text": "TJ",
+          "destination": {
+            "name": "TJ",
+            "pid": 35
+          }
+        },
+        {
+          "text": "focus on job",
+          "destination": {
+            "name": "focus on job",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "xgf",
+      "text": "Mary - cocktail waitress with heart of adamantium.  Met, hit it off on initial hire five years ago. Left me for Drummer. Left Drummer for Supervisor. Left Supervisor for another cocktail waitress.  Left her for Drummer again.  Left him for wealthy passenger. \n\nOther cocktail waitress mysteriously blames me.  Am cocktail-waitress-bane.\n\nTwo days before New Year's succumbed to charms, had ill-advised fling with xgf, during which she informed me she is engaged to wealthy passenger, no longer wished to socialize, found self socially awkard, unattractive, uninteresting, still however open to occassional bonk as am \"cheap drunk.\"\n\nIt is best in all circumstances to avoid Mary.\n\n<a href=\"javascript: window.history.back();\">Back --></a>",
+      "links": []
+    },
+    {
+      "pid": 46,
+      "name": "security gal",
+      "text": "TJ, friend of Drummer (ironic), African features, tall, freckles, expression of permanent un-amused-ness.  Hair unknown as always wears security cap.  Willing to enter into hijinks for chocolates, spite.\n\nMay hate Jerk Supervisor for reasons unknown.\n\nShe scares me just a little. Suspect is by design.\n\n<a href=\"javascript: window.history.back();\">Back --></a>",
+      "links": []
+    },
+    {
+      "pid": 47,
+      "name": "Header",
+      "text": "Personal Log: Lighting Technician Deshaun Stevens\n\n\n",
+      "links": []
+    },
+    {
+      "pid": 48,
+      "name": "letter to dad",
+      "text": "To: Marius Stevens, Jr. New Albuquerque, Mars\n\nFrom: Your soon to be disowned criminal child\n\n<p>Would really like excuse to blame you for this.  If you have one, please send.</p>\n\n<p>Also: happy birthday. I hope you had your usual party at Olympus Bonds.  Hope Mom came. Hope you felt crushing misery of your bad choices, much like self.</p>\n\n<p>It is probably good I'm not actually sending this.</p>\n\n<a href=\"javascript: window.history.back();\">Back --></a>",
+      "links": []
+    },
+    {
+      "pid": 49,
+      "name": "Cyndee means nothing to me",
+      "text": "<% gf = \"TJ\" %>\n<p>\"So you consider women you find attractive 'nothing',\" TJ said.</p>\n\n<p>Mayday!  This is going v. bad. TJ self-possessed like rockstar.  Am fumbling idiot. This is why am single.</p>\n\n[[change subject]] to aliens, fear of consumption?\n\nOr perhaps I should  [[Compliment TJ]] Complements always work, right?",
+      "links": [
+        {
+          "text": "change subject",
+          "destination": {
+            "name": "change subject",
+            "pid": 56
+          }
+        },
+        {
+          "text": "Compliment TJ",
+          "destination": {
+            "name": "Compliment TJ",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "talk about Cyndee",
+      "text": "Mentioning sparkling eyes, attractive way hair catches number 4 red light, did not improve TJ's mood.\n\nAm unsure.  Should switch tactics, [[Compliment TJ]]?\n\nor\n\nStay on jealousy course, [[Play Coy]]?\n",
+      "links": [
+        {
+          "text": "Compliment TJ",
+          "destination": {
+            "name": "Compliment TJ",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Play Coy",
+          "destination": {
+            "name": "Play Coy",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Check Messages",
+      "text": "<h3>February 2</h3>\n<div id=\"crunchy\" style=\"display:none\"><a id=crunches onclick=jsfunction()>Do Crunches?</a></div>\n<div id=\"oof\" style=\"display:none\">Crunches: 20</div>\n\nHave special meeting with aliens to discuss \u201cpatterns of diction\u201d!  Needs of inter-species communication over rule petty rule enforcement and am free to go. Directly to quarters, then meeting. With armed guard. (TJ.)\n\nAm trying to crawl out of puddle of self-pity to be honored, but would be better if had any say in this.  Also would be better to have whisky, or delete key on life.  Neither, alas, in the immediate forecast.\n\nWonder if respect, attention will impress <%= gf %>.\n\nPerhaps aliens wish to join in me-directed mockery as inter-species bonding exercise.\n\nStill, curious, and as aforementioned, no choice.  I go forth:\n\n[[boldly]], armed with sarcasm\n\n[[reluctantly]], fighting every step down corridor\n\n<script>\n\nif (want==\"selfcon\"){\ndocument.getElementById('crunchy').style.display='block';\n}\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\n\ncrunchcount += 10;\n}\n</script>",
+      "links": [
+        {
+          "text": "boldly",
+          "destination": {
+            "name": "boldly",
+            "pid": 39
+          }
+        },
+        {
+          "text": "reluctantly",
+          "destination": {
+            "name": "reluctantly",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Compliment TJ",
+      "text": "<% gf = \"TJ\" %>\n\"You don't need special lighting, make up, potentially fake hair to be even more beautiful than an entire season of lead singers,\" I said.\n\nTJ smirked.  \"Awkward,\" she said, \"But I like it.\"\n\nTJ opened holding cell!  \"While I take you back to your quarters, you should really [[Check Messages]].\"",
+      "links": [
+        {
+          "text": "Check Messages",
+          "destination": {
+            "name": "Check Messages",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Play Coy",
+      "text": "<p>Am not coy, except in resembling, mistaken for ornamental carp.</p>\n\n<p>TJ unmoved. Declares prefers \"to date individuals who say what they want.\"</p>\n\n<p>Holding Cell v. uncomfortable.  Would know more of Historic Events back in isolation of Lido Deck.</p>\n\n<b>Resolutions Kept:  (1/4)</b>\nAvoid Romantic conflicts.\n\n<div id=\"else\" style=\"display:none\"><p>Not the one I would have preferred to keep.</p></div>\n<div id=\"nomance\" style=\"display:none\">Well, there's that, at least?</div>\n\n<hr />\n<i>This is number 4 out of 4 bad endings for poor Deshaun.<br /> \nYou completed <%= puzzlesDone %> of 4 potential mini-puzzles. <br />\nYou performed <%= crunchcount %> voluntary crunches. <br />\nYou may <a onclick=\"location.reload()\" class=\"internalLink\">RESTART</a> for a better ending.</i>\n<script>\nif (want==\"nomance\") {\ndocument.getElementById('nomance').style.display='block';\n}\nelse {\ndocument.getElementById('else').style.display='block';\n}\nlocalStorage.setItem('replayToken', 1);\n</script>",
+      "links": []
+    },
+    {
+      "pid": 54,
+      "name": "adverbs",
+      "text": "An adverb is a word that modifies a verb.  For example, in the sentence, \"Deshaun sarcastically explained what an adverb is,\" the word \"sarcastically\" is an adverb.\n\nDespite his abbreviated log files, Deshaun is actually v. into grammar.\n\n\n<a href=\"javascript: window.history.back();\">Back --></a>",
+      "links": []
+    },
+    {
+      "pid": 55,
+      "name": "stupid cruise ship.",
+      "text": "Galactic Cruise Lines! The only cruise line with a guarantee that our tour will cross space No One Has Ever Seen Before.\n\nEnjoy the thrill of being a genuine galactic explorer while our science staff monitor and record anything we encounter for the Galactic Survey Corps. (This activity is in accordance with regulations to make Galactic Cruise Lines LLC a Not For Profit venture.)\n\nWhile you are making history, sit back and enjoy endless buffets(1), comfortable cabins(2), and daily entertainment offerings on the Lido Deck.(3)\n\n<hr />\n<i>\n1. Additional charge for each visit, alcoholic beverages extra.<br />\n2. Cabin upgrades for an additional charge.<br />\n3. Live concerts require additional admission charge.  Other fees may apply.</i>\n\n<a href=\"javascript: window.history.back();\">Back --></a>",
+      "links": []
+    },
+    {
+      "pid": 56,
+      "name": "change subject",
+      "text": "\"Afraid of aliens, eh?\" TJ rolled her eyes.  \"Have you seen these things?\"\n\nNo, I had not. This was the entire point.  Tried to explain calmly.\n\nTJ shook her head. \"You're no danger to ship or crew. I'm letting you out.  But I recommend you [[Check Messages]] right away.\"",
+      "links": [
+        {
+          "text": "Check Messages",
+          "destination": {
+            "name": "Check Messages",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "kissing Supervisor's Supervisor ass",
+      "text": "<h3>January 25</h3>\n<div id=\"crunchy\" style=\"display:none\"><a id=crunches onclick=jsfunction()>Do Crunches?</a></div>\n<div id=\"oof\" style=\"display:none\">Crunches: 10</div>\n\nSupervisor's Supervisor is named Sadia. Sadia likes:\n<ol>\n<li> Whiskey in all combinations and forms. </li>\n<li> Not having to interact with passengers. </li>\n<li> Elaborately printed headscarves. </li>\n<li> Not having to interact with sound technicians.</li>\n</ol>\n\n<p>Had hoped mutual affection for distilled spirits would be basis of beautiful friendship. Instead spent two days as personal mixologist, errand boy.  Questioning whether this will advance my career, but at least Jerk Supervisor looks nervous to see me close to his boss?</p>\n\nUnless something [[Unexpected ]] happens, hope to continue this program of personal debasement in persuit of Jerk Supervisor's job, which doesn't look all that difficult compared to artistic arrangement of color and sound.\n\n<script>\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 10;\n}\n</script>",
+      "links": [
+        {
+          "text": "Unexpected ",
+          "destination": {
+            "name": "Unexpected",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "pretend am not still mad",
+      "text": "<h3>January 24</h3>\n\n<p>Push Ups: an anger-induced 50</p>\n<p>Crunches: two sets of 35</p>\n\n<p>Apparently, anger v. motivating re: physical fitness. Also, Jerk Supervisor even more of a jerk than initially expected.</p>\n\n<p>Making nice repaid with itching powder in shampoo prank, new video shared with crew.  Suspect he still blames me for [[xgf]] who is also <i>his</i> xgf.</p>\n\n<p>Vengence will be mine.  Talked with [[security gal]] named TJ who may be open to revenge-assistance.  At least, when complained about humiliating videos, she said something about people who live in glass houses, and having access to all the security cam feeds.</p>\n\nIf nothing [[Unexpected ]] happens, will meet with TJ after tomorrow's set!\n<% plot = \"sec\" %>",
+      "links": [
+        {
+          "text": "xgf",
+          "destination": {
+            "name": "xgf",
+            "pid": 45
+          }
+        },
+        {
+          "text": "security gal",
+          "destination": {
+            "name": "security gal",
+            "pid": 46
+          }
+        },
+        {
+          "text": "Unexpected ",
+          "destination": {
+            "name": "Unexpected",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Walk into security",
+      "text": "<h3>January 29</h3>\n<a id=crunches onclick=jsfunction()>Do Crunches?</a>\n<div id=\"oof\" style=\"display:none\">Crunches: 10</div>\n\n<p>Pretending to be passenger got me into front of security office, not further.  Demanded to speak to Officer TJ.</p>\n\n<p>Unfortunately, that worked. And implied TJ had done passenger-complaint-generating offence.  TJ not v. pleased with self, threatened arrest.</p>\n\n[[convince TJ to forgive me]] \n\n[[hide in quarters]] \n\n<script>\nfunction jsfunction(){\ndocument.getElementById('crunches').style.display='none';\ndocument.getElementById('oof').style.display='block';\ncrunchcount += 10;\n}\n</script>",
+      "links": [
+        {
+          "text": "convince TJ to forgive me",
+          "destination": {
+            "name": "convince TJ to forgive me",
+            "pid": 27
+          }
+        },
+        {
+          "text": "hide in quarters",
+          "destination": {
+            "name": "hide in quarters",
+            "pid": 29
+          }
+        }
+      ]
+    }
+  ]
+}

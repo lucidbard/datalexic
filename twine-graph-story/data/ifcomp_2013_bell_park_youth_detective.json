@@ -1,0 +1,2980 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "ZZZZZ-DUMMY-ZZZZZ",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 2,
+      "name": "130",
+      "text": "\"Are the Greeks the ones with the togas or is that the Romans?\" you ask.\\n\\n\"I think they both wore togas,\" he says.\\n\\n\"That's not very helpful.\"\\n\\n<<if !$gamification>>\u2022 [[So tell me about gamification?|20]]\\n\u2022 [[You said something about the future?|19]]\\n\u2022 [[Okay well this is all fascinating but...|4]]<<else>>\\n\u2022 [[You said something about the future?|19]]\\n\u2022 [[Okay well this is all fascinating but...|4]]<<endif>>",
+      "links": [
+        {
+          "text": "So tell me about gamification?",
+          "destination": {
+            "name": "20",
+            "pid": 7
+          }
+        },
+        {
+          "text": "You said something about the future?",
+          "destination": {
+            "name": "19",
+            "pid": 109
+          }
+        },
+        {
+          "text": "Okay well this is all fascinating but...",
+          "destination": {
+            "name": "4",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "24",
+      "text": "\"Is there anyone that can confirm your story?\"\\n\\n\"The organizer, Kelbourne, he showed me in. Then that guy up front and the surfer both wandered in around 20 .beats ago.\"<<set $chet = true>>\\n\\n\"And 20 .beats is like... 5 hours?\"\\n\\n\"Thirty minutes. Give or take.\"\\n\\n\"So they came in at ten to nine.\"\\n\\n\"That's a sub-optimal way of thinking of it, but sure.\"\\n\\n\"Hmm.\" You click your phone screen on and off a couple of times. \"And no one else saw you for that like hour in between?\"\\n\\n\"No humans, but those barely disguised security cameras up there would have picked me up the entire time. And the IP log will show constant activity from this box too.\"<<set $camera = true>>\\n\\n\"You could have hacked all that.\"\\n\\n\"I could have hacked your own eyes if I had the right cable, youngling. Gonna have to take my word for it.\"\\n\\n<<if $bzpaige>>\u2022 [[So what'd you find?|12]] \\n\u2022 [[All done.|35]]<<else>>\u2022 [[So what'd you find?|12]] \\n\u2022 [[Ever heard of Paige McKinley?|28]]\\n\u2022 [[All done.|35]]<<endif>> ",
+      "links": [
+        {
+          "text": "So what'd you find?",
+          "destination": {
+            "name": "12",
+            "pid": 104
+          }
+        },
+        {
+          "text": "All done.",
+          "destination": {
+            "name": "35",
+            "pid": 74
+          }
+        },
+        {
+          "text": "Ever heard of Paige McKinley?",
+          "destination": {
+            "name": "28",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "25",
+      "text": "<<if $multitask>>\"So uh... what's your name?\"<<else>>\"Okay, first thing's first: what's your name?\"<<endif>>\\n\\n\"Bitmap Zero.\"\\n\\n\"Is that the number 0 or the word zero?\"\\n\\n\"It's both,\" she says. \"z-e-r and then the number 0.\"\\n\\n\"Uh-huh.\"\\n\\n\"All lowercase.\"\\n\\n\"Okay.\"\\n\\n\"And a hyphen instead of a space. And another hyphen on either end.\"\\n\\nYou type \"-bitmap-zer0-\" into your phone and show it to her. \"Like this?\"\\n\\n\"More or less,\" she says. \"It should really be in a monospaced font though.\"<<set $monospace = true>>\\n\\n\u2022 [[What do you do?|26]] \\n\u2022 [[Is that your real name?|3]] ",
+      "links": [
+        {
+          "text": "What do you do?",
+          "destination": {
+            "name": "26",
+            "pid": 5
+          }
+        },
+        {
+          "text": "Is that your real name?",
+          "destination": {
+            "name": "3",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "26",
+      "text": "\"So what's your job, Ms. ... -zer0-?\"\\n\\n\"Please, call me -bitmap-zer0-.\"\\n\\n\"Sure.\"\\n\\n\"I'm a security analyst slash programmer,\" she says, \"here to give a talk on network vulnerabilities and the limits of encryption in a macroprocessor environment.\"\\n\\n\"I don't know what any of that means.\"\\n\\n\"Basically it means I'm a hacker.\"\\n\\n\u2022 [[Are you a good at hacking?|54]] \\n\u2022 [[Isn't hacking illegal?|23]] \\n\u2022 [[What's that you're up to?|17]] ",
+      "links": [
+        {
+          "text": "Are you a good at hacking?",
+          "destination": {
+            "name": "54",
+            "pid": 31
+          }
+        },
+        {
+          "text": "Isn't hacking illegal?",
+          "destination": {
+            "name": "23",
+            "pid": 10
+          }
+        },
+        {
+          "text": "What's that you're up to?",
+          "destination": {
+            "name": "17",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "27",
+      "text": "\"Name?\" you ask.\\n\\n\"Chet Bader Ginsburg.\"\\n\\n\"Dumb. Occupation?\"\\n\\n\"Professional Surfer.\"\\n\\n\"Weird.\"\\n\\n\"...how, uh, old are you? Exactly?\" he asks.\\n\\n\"I'm 12,\" you say.\\n\\n\"Oh,\" he says. \"So then... uh... does that mean you born after 9/11?\"\\n\\n\"a.m. or p.m.?\"\\n\\n\"Um...\"\\n\\n\u2022 [[What's a surfer doing here?|13]] \\n\u2022 [[Ever heard the name Paige McKinley?|72]] ",
+      "links": [
+        {
+          "text": "What's a surfer doing here?",
+          "destination": {
+            "name": "13",
+            "pid": 103
+          }
+        },
+        {
+          "text": "Ever heard the name Paige McKinley?",
+          "destination": {
+            "name": "72",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "20",
+      "text": "\"What's gamification?\"<<set $gamification = true>>\\n\\n\"Well, gamification means different things in different contexts. You can gamify anything if you set your mind to it. Pick a problem in the world and I'll show you how to gamify it.\"\\n\\n\"Uh...\"\\n\\n\"Overwhelmed by the limitless possibilities already, hmm?  Well allow me to lay out a random scenario. In this city everyone's talking about transit, yes? You have subways over here, LRTs over there, and monorails somewhere else. But the bottom line is everyone's commute is too long. Okay, so let's imagine what would happen if we //gamified// our problem. First thing we would do is to reward people for contributing to the solution. So for example if you shave 10 minutes off your commute, then you earn a gem. Get 50 gems and something good happens. We send you a flashy new hat in the mail, maybe. Perhaps a certificate or a ribbon. But whatever it is, it //incentivizes// us to shorten our commutes. Instead of sitting in traffic all day we find ourselves actively alleviating congestion while we play. And of course if you don't want to bother with the whole commuting thing, you can always just purchase gems directly.\"\\n\\n\"So wait... the subways... where do you get the gems, again?\"\\n\\n\"Yes, now you're beginning to see the possibilities! Infrastructure is expensive, but with gamification we don't have to pay a nickel!\"\\n\\n\"Don't we at least have to pay for the hats?\"\\n\\n\"That's the beauty of it: //the hats pay for themselves.//\"\\n\\n<<if !$brain>>\u2022 [[And brain computers?|127]]\\n\u2022 [[You said something about the future?|19]]\\n\u2022 [[Okay well this is all fascinating but...|4]]<<else>>\u2022 [[You said something about the future?|19]]\\n\u2022 [[Okay well this is all fascinating but...|4]]<<endif>>",
+      "links": [
+        {
+          "text": "And brain computers?",
+          "destination": {
+            "name": "127",
+            "pid": 23
+          }
+        },
+        {
+          "text": "You said something about the future?",
+          "destination": {
+            "name": "19",
+            "pid": 109
+          }
+        },
+        {
+          "text": "Okay well this is all fascinating but...",
+          "destination": {
+            "name": "4",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "21",
+      "text": "\"Let's take it from the top: Where were you this morning between 8:30 and 9:00?\"\\n\\n\"This morning? I don't know. I got here around ten after eight. Something like that. The organizer -- Kelbourne -- he gave me one of the study rooms down the hall. I had an early presentation so I needed somewhere private to get ready. I finished tweaking my slides like half an hour ago so I decided to come out here and get my computer set up. Haven't left since.\"\\n\\n\u2022 [[You've been setting up this whole time?|109]]\\n\u2022 [[What's your presentation about?|111]] \\n\u2022 [[Did you know Paige McKinley?|7]] \\n",
+      "links": [
+        {
+          "text": "You've been setting up this whole time?",
+          "destination": {
+            "name": "109",
+            "pid": 57
+          }
+        },
+        {
+          "text": "What's your presentation about?",
+          "destination": {
+            "name": "111",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Did you know Paige McKinley?",
+          "destination": {
+            "name": "7",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "22",
+      "text": "\"So you don't have any secrets then? Say ones involving... murder? Maybe a murder that you did to someone else?\"\\n\\nHe smiles. \"I think you've been letting your little imagination run wild. That's good though; that type of lateral thinking will serve you well in the information economy. Now I'm sorry to cut our conversation short but I really must get back to work.\"\\n\\n\"Hey, hold on a minute, I'm not finished here!\"\\n\\nHe grabs your arm and gently leads you out of the room. \"I'll be happy to talk to you some more after the conference is over. Now if you'll excuse me.\" He shuts the door.\\n\\n\"You're not excused!!\"\\n\\n\u2022 [[Guess it's time to go the other room.|14]] ",
+      "links": [
+        {
+          "text": "Guess it's time to go the other room.",
+          "destination": {
+            "name": "14",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "23",
+      "text": "\"Isn't hacking totally illegal?\"<<set $illegal = true>>\\n\\nShe stares up at the ceiling for a second. \"It's like this,\" she says, \"every piece of software has exploits. Has to. No executable compiled by man is unhackable. That's what you'd call a boolean truth. Might as well be compiled in the codebase of the universe, you grok me? But an exploit isn't an exploit until it's exploited. So if you want your software to stay unexploited then you have to exploit the exploit before the exploiter exploits it. You see what I'm getting at?\" \\n\\n\"My best friend Cassidy's twitter got hacked and it kept sending out links to this weird Ukrainian lottery thing.\"\\n\\n\"Well now that's an example black hat hacker -- a bad operator. I'm a white hat.\"\\n\\n\"That sounds kind of racist.\"\\n\\n\"I don't see race,\" she says as she leans into the monitor, \"I only see the ones and zeros.\"\\n\\n<<if $problems>>\u2022 [[Okay, what did you find out?|52]]<<else>>\u2022 [[What are you hacking right now?|17]]\\n<<if !$bzpaige>>\u2022 [[Did you know Paige McKinley?|28]]<<endif>><<endif>>",
+      "links": [
+        {
+          "text": "Okay, what did you find out?",
+          "destination": {
+            "name": "52",
+            "pid": 37
+          }
+        },
+        {
+          "text": "What are you hacking right now?",
+          "destination": {
+            "name": "17",
+            "pid": 107
+          }
+        },
+        {
+          "text": "Did you know Paige McKinley?",
+          "destination": {
+            "name": "28",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "28",
+      "text": "\"Does the name Paige McKinley mean anything to you?\"<<set $bzpaige = true>>\\n\\n\"Birth names don't mean anything to anyone. What's her twitter handle?\"\\n\\n\"Wouldn't know.\"\\n\\n\"Email address?\"\\n\\nYou shrug.\\n\\n\"If you're not going to be specific then I can't say for sure,\" she says. \"Doesn't sound familiar though.\" She starts typing really quickly.\\n\\n\"Well,\" you say, \"I'm sorry to be the one to have to tell you this, but Paige McKinley... is //dead//.\"\\n\\n\"Mmm.\" \\n\\n\"You see, Paige McKinley... has been //murdered//.\"\\n\\n\"Uh-huh.\" She doesn't look up from her screen.\\n\\n<<if !$illegal>>\u2022 [[You seem pretty calm.|51]]\\n\u2022 [[Where were you this morning?|83]]<<else>>\u2022 [[You seem pretty calm.|51]]<<endif>>",
+      "links": [
+        {
+          "text": "You seem pretty calm.",
+          "destination": {
+            "name": "51",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "83",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "29",
+      "text": "\"Did you hear anything... unusual in the study room next door?\"<<set $headphones = true>>\\n\\n\"I wear noise cancelling headphones when I am doing my thinking. My work requires perfect immersion. Nothing short of my full attention would be acceptable.\"\\n\\n\"You're not wearing them now.\"\\n\\n\"Well... that wouldn't be polite, would it? We're in the middle of a conversation. Anyway, if there's nothing else, I really should get back to work.\"\\n\\n<<if $mcyou and $mcpaige>>\u2022 [[No more questions.|119]]<<endif>><<if !$mcyou and $mcpaige>>\"Just one more question,\" you say.\\n\\n\u2022 [[Why did you come to the conference?|77]]<<endif>><<if $mcyou and !$mcpaige>>\"Just one more question,\" you say.\\n\\n\u2022 [[Do you know Paige McKinley?|62]]<<endif>><<if !$mcyou and !$mcpaige>>\"Actually I have a few more questions,\" you say.\\n\\n\u2022 [[Why did you come to the conference?|77]]\\n\u2022 [[Do you know Paige McKinley?|62]]<<endif>> ",
+      "links": [
+        {
+          "text": "No more questions.",
+          "destination": {
+            "name": "119",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Why did you come to the conference?",
+          "destination": {
+            "name": "77",
+            "pid": 127
+          }
+        },
+        {
+          "text": "Do you know Paige McKinley?",
+          "destination": {
+            "name": "62",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "4",
+      "text": "\"Look, I could care less about all this internet stuff. I just want to know--\"<<set $careless = true>>\\n\\n\"Ah, but you should care! This conference directly affects you. In this very room a world is being built -- one whose contours will define the entire course of your life. The economy we are making will determine your livelihood! The justice system we are making will protect your freedoms! The 3d printing technology we are making will manufacture your synthetic beef!\" \\n\\n<<if $mcwhere and $mcpaige>>\"Well that's great and everything but...\"\\n\\n\"But nothing! Allow me to give you a history lesson. A history lesson... of the //future//.\\n\\n\u2022 [[Do I have a choice?|19]]<<endif>><<if !$mcwhere and $mcpaige>>\"Well that's great and everything but I'd really like to focus on the here and now.\"\\n\\n\u2022 [[Where were you this morning?|113]]<<endif>><<if $mcwhere and !$mcpaige>>\"Well that's great and everything but I'd really like to focus on the here and now.\"\\n\\n\u2022 [[Do you know Paige McKinley?|62]]<<endif>><<if !$mcwhere and !$mcpaige>>\"Well that's great and everything but I'd really like to focus on the here and now.\"\\n\\n\u2022 [[Do you know Paige McKinley?|62]]\\n\u2022 [[Where were you this morning?|113]]<<endif>>",
+      "links": [
+        {
+          "text": "Do I have a choice?",
+          "destination": {
+            "name": "19",
+            "pid": 109
+          }
+        },
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "113",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Do you know Paige McKinley?",
+          "destination": {
+            "name": "62",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "8",
+      "text": "\"What's mindfulness all about?\" you ask.\\n\\n\"Someone recommended it to me. It's... well, it's tough to explain. It's this thing... you've got your brain, and you have to like... your attention...\"\\n\\nHe trails off and closes his eyes. You wait for him to continue.\\n\\n\"...It's not really working,\" he says. \"I mean, not today anyway. This city is just so... I don't know how people do it. It's bad enough not having the tides, you know, no natural rhythm. But everything here is just so... so big and so rushed! I mean, you've got //countdown timers// on your walk signals! Countdown timers! 10, 9, 8... That little flashing hand. It's so intense.\"\\n\\n\"What? Those things are amazing. You get to know like when to run or when it's too late to run or whatever. It's great.\"\\n\\n\"It's just more pressure! I'm crossing streets all over the place. I feel //compelled// to.\" He's sweating pretty hard now. \"I'm telling you, there's nowhere to... to get away from it.\"\\n\\n\"Have you seen the ones that are like, 'WALK SIGN IS ON FOR ALL CROSSINGS'?\"\\n\\n\"Ohh, don't remind me...\"\\n\\n\u2022 [[When did you get here?|108]]\\n\u2022 [[What do you know about Paige's murder?|44]] ",
+      "links": [
+        {
+          "text": "When did you get here?",
+          "destination": {
+            "name": "108",
+            "pid": 56
+          }
+        },
+        {
+          "text": "What do you know about Paige's murder?",
+          "destination": {
+            "name": "44",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "119",
+      "text": "\"Well, I don't have any more questions. Just stay out of trouble, okay?\"\\n\\n\"Oh child! I am what the scholars call a 'disruptor'! We can't help but make a //bit// of trouble.\" He leads you out of the room.\\n\\n\"Is that like a ray gun?\" you ask.\\n\\nHe chuckles and closes the door.\\n\\n\u2022 [[On to the next room then.|14]] ",
+      "links": [
+        {
+          "text": "On to the next room then.",
+          "destination": {
+            "name": "14",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "120",
+      "text": "\"So what exactly was Paige going to be talking about?\" you ask.\\n\\n\"As I said, she had always been pretty anti-internet. But I think all that NSA stuff this year really hardened her opinion. Now it wasn't just destroying our minds, it was destroying our society. Or something like that. I don't know exactly what she was going to say, but I'm sure it would have been provocative.\"\\n\\nYou get out your phone and tap out a few notes. \"I bet a person like her might have some enemies at a place like this,\" you say.\\n\\n\"Maybe,\" says Kelbourne. \"Why don't I show you the suspects? If she had any enemies here I'm guessing it would have been one of them.\"\\n\\nYou follow him out into the hall.\\n\\n\"I've been out front getting things ready since six o'clock\", he says. \"A couple of people showed up early to work on their presentations. Paige was one of them. There were only four others, and they were all in here when she was murdered. One of those four has to be the killer.\"\\n\\nHe leads you to the threshold of a large conference room. Rows of empty chairs are lined up facing a podium and a projector screen on a makeshift stage. A man in a crisp plaid shirt stands up front, staring at a laptop.\\n\\n\"That's Argent Sunflower,\" says Kelbourne. \"He's a big Silicon Valley guy. Just launched this hot new start-up a couple of weeks ago. People are saying it's going to be bigger than Facebook, Pinterest, iTunes, Tumblr, Google Image Search, Google Regular Search, //and// LinkedIn put together.\"\\n\\nOff to the side, practically camouflaged by a forest of computer equipment, a woman in a hoodie is typing up a storm, only stopping to plug in the occasional cord. She wheels an office chair around as she goes from monitor to monitor.\\n\\n\"That over there is one of the world's foremost hackers,\" says Kelbourne. \"She's going to give a talk about network security today. Her name is... uh... Mapquest Something. I forget. She's very famous in those circles though.\"\\n\\n\"What's that thing she's next to?\"\\n\\n\"Oh, that's the main network centre. This floor has its own mini-network separated from the rest of the library system. There's going to be a lot of people here and we don't want them to have to share bandwidth. That station is where all the routers and servers and whatnot go.\"\\n\\n\"So what's she doing to it?\" you ask.\\n\\n\"I don't know, probably checking out our security. I'm guessing it leaves something to be desired. Anyway, the third person is that professional surfer in the back.\"\\n\\n\"Huh?\" \\n\\nYou turn around. Sitting off in the corner is a little guy with big shorts a big t-shirt. He's sitting next to a bright pink surfboard. The word \"WAVES\" is painted on it in cyan. \\n\\n\"His name's Chet. He's going to be giving a talk about how surfing relates to computers or something. Conferences like these attract all kinds.\"\\n\\n\u2022 [[So where's number four?|110]] ",
+      "links": [
+        {
+          "text": "So where's number four?",
+          "destination": {
+            "name": "110",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "121",
+      "text": "\"So you weren't like... going to confront her here or anything?\"\\n\\n\"No,\" he says. \"And honestly, there would be better ways to do so. At a conference such as this everyone is so rushed and up in their own heads. There's a good chance we won't even run into each other, and if we do it probably won't be in an environment conducive to conversation. No, the best medium for discourse would really be the internet. Only when we're free from physical limitation can we have a truly productive debate.\" He leans forward in his chair. \"No, it won't happen on the streets or in the houses of parliament, but in the comments sections and on the microblogging services. And before too long we will all become pure data and even the limitations of the keyboard and the touchscreen will evaporate. All that shall remain will be pure unfettered dialogue! Whole conversations resolved in a microsecond! ... But of course she's completely opposed to all that. So I suppose the //actual// best medium is no medium at all. Yes, not talking to her. That's the ticket.\"\\n\\n \"...wow. Okay.\"\\n\\n\"But if I may ask, what exactly is prompting all these questions about Ms. McKinley anyway?\"\\n\\n\u2022 [[Just curious.|116]] \\n\u2022 [[She's dead. How's that for not talking to her?|115]] ",
+      "links": [
+        {
+          "text": "Just curious.",
+          "destination": {
+            "name": "116",
+            "pid": 113
+          }
+        },
+        {
+          "text": "She's dead. How's that for not talking to her?",
+          "destination": {
+            "name": "115",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "122",
+      "text": "\"Y'see...\" you begin.\\n\\nChet faints.\\n\\n\"Oh for god's sake,\" says Argent. \"This is ridiculous. That poor old hippie couldn't handle the stress of //thinking// about a murder, let alone committing one.\"\\n\\n\"Now just hear her out...\" says Kelbourne.\\n\\n\"Hear her out! Listen to yourself, Kelbourne! She is a pre-teen playing detective! She doesn't know what she's saying. She is not a substitute for an actual police officer. Not when there's a //dead body// in the other room.\\n\\n\"But--\"\\n\\n\"But nothing! The conference is ruined, okay? Someone got //murdered// here today. I don't know what made you think you could sweep this under the rug, but you can't. This is a serious crime and the police need to be involved! I mean, my god.\"\\n\\nKelbourne sighs. \"...You're right. You're right. I don't know what I was thinking. I'll call the cops now.\" He turns to you. \"I shouldn't have gotten you mixed up in this, Bell.\"\\n\\n\"I'm... I'm sorry,\" you say.\\n\\nHe takes out his phone. \"Damn, out of batteries. Can I borrow someone's cell?\"\\n\\nEveryone digs into their pockets.\\n\\n\"Sorry, mine's dead too,\" says Argent. \"Must not have plugged it in last night.\"\\n\\n\"So's mine,\" says Carnarvon.\\n\\n\"Same,\" says -bitmap-zer0-. \"Okay, something is not right here. We need to find a landline to jack into.\"\\n\\n\u2022 [[There's a phone at the front desk.|88]] \\n\u2022 [[Maybe there's a jack by the router.|9]] ",
+      "links": [
+        {
+          "text": "There's a phone at the front desk.",
+          "destination": {
+            "name": "88",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Maybe there's a jack by the router.",
+          "destination": {
+            "name": "9",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "123",
+      "text": "\"When I asked you if you knew Paige was going to be here, you had to think about it for a really long time, and then you said you 'forgot'. I don't think you'd forget it if your big rival was going to be at the same conference you were.\"<<set $paigehere2 = true>>\\n\\n\"I think you're exaggerating a bit, child. I'm sure I paused for a second to search my memory, but that's all. And besides, if I had wanted to deceive you, why didn't I just say I didn't know she was here? It's not like anyone would have been able to dispute that.\"\\n\\n\u2022 [[You're lying!|102]] \\n\u2022 [[You didn't have an alibi!|45]] ",
+      "links": [
+        {
+          "text": "You're lying!",
+          "destination": {
+            "name": "102",
+            "pid": 58
+          }
+        },
+        {
+          "text": "You didn't have an alibi!",
+          "destination": {
+            "name": "45",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "124",
+      "text": "\"We've got to do something,\" says Kelbourne.\\n\\n\"You're damn right we do,\" you say. \"Grab Chet's surfboard and bash that thing to death!\"\\n\\n\"Me? I don't even know //how// to surf.\"\\n\\n\"You don't need to know how to surf! You just need to know how to hit something with a surfboard!\"\\n\\n\"Okay... okay.\" He picks up the surfboard and holds it like a battering ram, then takes a deep breath and cries, \"GAAAAH!\" He charges at the network station, but before he can even get within ten feet another giant spark shoots out of the router and knocks the surfboard clear out of his hands. It slams into the wall and breaks in half.\\n\\n\"I don't think I did it right!\" he says.\\n\\n\u2022 [[Okay whatever do the hacking thing instead!|41]] ",
+      "links": [
+        {
+          "text": "Okay whatever do the hacking thing instead!",
+          "destination": {
+            "name": "41",
+            "pid": 123
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "125",
+      "text": "\"So what kind of stuff are you going to be talking about?\" you ask.\\n\\nHe whistles. \"What aren't I talking about? Let's see...\" He checks his computer. \"I've got a panel about gamification this morning, some stuff about network infrastructure this afternoon, some online education thing after that, and roundtable about brain-computer interfaces tomorrow. And of course I'll be generally discussing the inevitable future of total human-internet integration all throughout. A full plate, but one I look forward to cleaning!\"\\n\\n\u2022 [[What's gamification?|20]]\\n\u2022 [[What's this about the future?|19]]\\n\u2022 [[Brain computers?|127]] \\n\u2022 [[Whatever.|4]]\\n",
+      "links": [
+        {
+          "text": "What's gamification?",
+          "destination": {
+            "name": "20",
+            "pid": 7
+          }
+        },
+        {
+          "text": "What's this about the future?",
+          "destination": {
+            "name": "19",
+            "pid": 109
+          }
+        },
+        {
+          "text": "Brain computers?",
+          "destination": {
+            "name": "127",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Whatever.",
+          "destination": {
+            "name": "4",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "126",
+      "text": "\"What kind of internet stuff do you think about?\" \\n\\n\"An excellent question,\" he says. He leans back in his chair and stares up at the ceiling. \"Lately my mind has been occupied by the incredible potential of gamification with regards to radically altering social outcomes. I've also spent a lot of time considering brain-computer interfaces -- I'll be attending a roundtable about that tomorrow. And though this is sort of last year's topic, I still find myself taken with the cloud. Such an elegant technology. So disruptive, so transformative.\"\\n\\nYou nod. \"I see. I see... So...\"\\n\\n\u2022 [[What's gamification?|20]]\\n\u2022 [[What are brain computers?|127]] \\n\u2022 [[What's the cloud?|129]] \\n\u2022 [[Can we talk about something else?|4]]\\n",
+      "links": [
+        {
+          "text": "What's gamification?",
+          "destination": {
+            "name": "20",
+            "pid": 7
+          }
+        },
+        {
+          "text": "What are brain computers?",
+          "destination": {
+            "name": "127",
+            "pid": 23
+          }
+        },
+        {
+          "text": "What's the cloud?",
+          "destination": {
+            "name": "129",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Can we talk about something else?",
+          "destination": {
+            "name": "4",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "127",
+      "text": "\"What's that brain... thing all about? Computers in your brain?\"<<set $brain = true>>\\n\\n\"Even better,\" he says. \"Right now, in this very year, we have machines that allow you to operate computers using only your mind! No typing, no touching, no clicking. All that's required is mental energy. It is perhaps the clearest preview of the digital future yet to come.\"\\n\\n\"Oh wow so you can like tell a computer what to do just by thinking at it? Like I could think that I wanted to reblog a post from my friend Cassidy's tumblr and then the computer would just do it?\"\\n\\n\"Well...\"\\n\\n\"Or like I could think about googling something and then Google would tell my brain what I was looking for?\"\\n\\n\"Er, no. Not exactly. The machine can't read conscious thought. It can just distinguish between different types of brain waves. Essentially it detects //how// you're using your brain, not what you're using it for.\"\\n\\n\"Oh. So what's it good for?\"\\n\\n\"It's most effective with things that have a simple on-off state.\"\\n\\n\"Like a light bulb.\"\\n\\n\"Sometimes it takes a while for the potential of a technology to be seen,\" he says. \"The Greeks, remember, treated the steam engine as a mere toy! Thousands of years later that the Industrial Revolution swept the globe.\"\\n\\n\u2022 [[Which ones are the Greeks again?|130]] \\n<<if !$gamification>>\u2022 [[What about gamification?|127]]\\n\u2022 [[You said something about the future?|19]]\\n\u2022 [[Okay well this is all fascinating but...|4]]<<else>>\\n\u2022 [[You said something about the future?|19]]\\n\u2022 [[Okay well this is all fascinating but...|4]]<<endif>>",
+      "links": [
+        {
+          "text": "Which ones are the Greeks again?",
+          "destination": {
+            "name": "130",
+            "pid": 2
+          }
+        },
+        {
+          "text": "What about gamification?",
+          "destination": {
+            "name": "127",
+            "pid": 23
+          }
+        },
+        {
+          "text": "You said something about the future?",
+          "destination": {
+            "name": "19",
+            "pid": 109
+          }
+        },
+        {
+          "text": "Okay well this is all fascinating but...",
+          "destination": {
+            "name": "4",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "128",
+      "text": "\"The security cameras she used as an alibi were fake,\" you explain. \"And I think she's a good enough hacker that she would have known that. There's actually no proof that she //wasn't// in Paige's room at the time of the murder.\"\\n\\n\"Except for the IP logs on the network station, the router cache, and the activity history on my five computers.\" she says. \"They all show that I was working in the main room all morning.\"\\n\\n\u2022 [[Well...|60]]\\n\u2022 [[Okay...|60]]\\n\u2022 [[Uh...|60]] ",
+      "links": [
+        {
+          "text": "Well...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Okay...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Uh...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "129",
+      "text": "\"Why does an internet guy care about clouds?\" you ask.\\n\\n\"Come now, surely a member of a computer-literate generation such as yours is familiar with the cloud. Everyone's heard of the cloud!\"\\n\\n\"Humour me.\"\\n\\n\"Well, in its most basic formulation it's the uploading of our processing tasks and data onto dedicated network servers, freeing our computational activities from their traditional ties to a single physical box.\"\\n\\n\"So... it's the internet?\"\\n\\n\"It's the //future// of the internet,\" he says.\\n\\n\u2022 [[Why do you keep talking about the future so much?|19]]\\n\u2022 [[Okay well this is all fascinating but...|4]] ",
+      "links": [
+        {
+          "text": "Why do you keep talking about the future so much?",
+          "destination": {
+            "name": "19",
+            "pid": 109
+          }
+        },
+        {
+          "text": "Okay well this is all fascinating but...",
+          "destination": {
+            "name": "4",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "118",
+      "text": "\"I, um...\" You clear your throat. \"I don't think I can do this.\"\\n\\n\"You're modest. I like that.\"\\n\\n\"No,\" you say. \"Not modest. This is way more than I can handle. I've never solved... something like this before.\"\\n\\nHe puts his hands on your shoulders, bends down a bit, and looks you in the eyes. \"I have total faith in your abilities.\"\\n\\n\"I really think you should call the cops,\" you say.\\n\\n\"I can't get the police involved,\" he says. \"Not yet. I have a lot riding on this weekend. cyberNExT could be the next big tech conference if everything goes right. But if the police start coming in here and turning everything into a crime scene then it could all just fall apart. I just need someone to figure out what happened discreetly. That way when I //do// call them, the disruption will be minimal. You see what I'm saying.\"\\n\\nYou scratch the back of your neck. \"I... I guess that makes sense.\"\\n\\nHe stands back up. \"Amanda told me you were smart. Now let's see. It's just about 9:10 now and the conference is supposed to be getting underway at 10. People are probably going be starting to show up in, oh, half an hour or so? So it would be really convenient if you figured everything out before then.\"\\n\\n\"Half an hour?\"\\n\\n\"Call it twenty minutes to be safe. I mean I can keep them out of the conference area no problem, but they'll start to get suspicious if they're waiting for too long.\"\\n\\nYou have a difficult time hiding the look of self-doubt on your face.\\n\\n\"I don't need anything fancy,\" he says. \"I just need to know who killed her. Just that one piece of information. Nice and simple.\" \\n\\n\"So you do think, uh... murder.\"\\n\\n\"Cables don't wrap themselves around someone's neck like that.\"\\n\\n\"Right,\" you say, \"I knew that.\"\\n\\n\"Someone must have come in here, grabbed all these cables, twisted them together, and strangled her to death. I can't think of anything else that could have happened.\"\\n\\n\u2022 [[Who are the suspects?|64]] \\n\u2022 [[Were there security cameras?|38]]\\n\u2022 [[Did Paige have any enemies?|65]] \\n\u2022 [[Why was Paige at this conference?|120]] ",
+      "links": [
+        {
+          "text": "Who are the suspects?",
+          "destination": {
+            "name": "64",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Were there security cameras?",
+          "destination": {
+            "name": "38",
+            "pid": 67
+          }
+        },
+        {
+          "text": "Did Paige have any enemies?",
+          "destination": {
+            "name": "65",
+            "pid": 82
+          }
+        },
+        {
+          "text": "Why was Paige at this conference?",
+          "destination": {
+            "name": "120",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "59",
+      "text": "\"Am not!\"\\n\\n\"Okay, you're not.\"\\n\\nShe goes back to typing. You kind of just stand there with your arms crossed.\\n\\n\"...can I be honest here?\"\\n\\nShe nods.\\n\\n\"I uh actually am a little stressed,\" you say. \"You know that guy outside? The one that runs the thing?\"\\n\\n\"Kelbourne.\"\\n\\n\"Uh-huh. I told that guy I can solve who murdered Paige McKinley and now I'm kind of having trouble, kind of.\"\\n\\nFor what seems like the first time in this conversation, -bitmap-zer0- puts her keyboard down and swivels her chair around. It takes you a second to adjust to seeing her face head on.\\n\\n\"Big job for someone your age,\" she says.\\n\\n\"No, that's the problem! It's like not a big job, you know? I mean it is but it's not. Like I know I can totally do it because I'm smart and I solve things and I've solved things before but I'm worried that if I don't do it then people will //think// it was too big even if it wasn't too big. I need to do it so people can see I can do it. And it's hard and I don't know what to do next and I can do it if I know but I don't know //how// to know. And... and...\"\\n\\n\"Hey,\" she says, wheeling her chair a bit closer, \"it's okay.\"\\n\\n\"I //know// it's okay!\" you say. \"I just... I mean, if I don't...\"\\n\\nShe holds up a hand. \"Can I give you a bit of advice?\\n\\n\"...Okay...\"\\n\\n\"Okay. I solve mysteries all the time. They're not big mysteries like murder; they're little mysteries, like where did some data disappear to, or how did someone get into a certain computer. It means I spend a lot of time digging around in programs. See, a program's like a big complicated machine with lots of little parts. And when something like that goes wrong it's not the whole thing, it's just one of the pieces. If you want to find what went wrong you look for the piece that's out of place.\"\\n\\n\"Okay...\"\\n\\n\"The way I see it, our society is kind of a computer program in its own right. Only it was written by a bunch of people over thousands of years, and instead of there being a computer there's just the world. But it still has rules just like an executable does.\"\\n\\n\"Like... 'no murdering'?\\n\\n\"//Exactly.// When the program's working right there should be no murdering at all. Rules are rules, you know? That's programming rule number one and it applies to itself. So when someone does get murdered you should to act like you're debugging the world. You've got to be on the lookout for a piece of the ruleset that looks a bit out of whack. Find the thing that isn't normal.\"\\n\\n\"You mean who's being weird?\"\\n\\nShe shakes her head. \"Weird is normal. There are weird people all over. What you need to look for is someone being weird //weirdly//. Who's being weird in a way that weird people aren't normally weird? Do you get it?\"<<set $weird = true>>\\n\\n\"I... I think so...\"\\n\\nShe winks and then swivels her chair back around.\\n\\n\u2022 [[Have you seen anything out of place?|68]]\\n\u2022 [[Thanks.|73]] ",
+      "links": [
+        {
+          "text": "Have you seen anything out of place?",
+          "destination": {
+            "name": "68",
+            "pid": 85
+          }
+        },
+        {
+          "text": "Thanks.",
+          "destination": {
+            "name": "73",
+            "pid": 131
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "58",
+      "text": "\"I'm sorry, are you saying the //internet// killed Paige McKinley?\"\\n\\n\"In self-defence! The network could tell from her PowerPoint deck that she wanted it dead. It just didn't have enough context to tell that she was on the fringes of society! It couldn't understand that she didn't pose a threat. It was afraid and confused. But it doesn't want to harm us. I can tell. I can //feel// its energy. It wants to be one with us. It wants to bring us forward into the new digital era. Surely we can forgive it this one indiscretion!\"\\n\\n\"Oh for god's sake, Miles,\" says Argent, \"Get a hold of yourself. There's no magic computer.\"\\n\\n\"No? You know the saying as well as I! Any sufficiently advanced technology is indistinguishable from magic! Well before you stands the next great leap in technological advancement! At long last, we have the chance to rebirth our species from a glorious electronic womb!\"\\n\\n\"Just... calm down. Okay?\" Argent reaches out his hand.\\n\\n\"Stay back!\" Carnarvon backs up and bumps into the network station. An ethernet cable shoots out from the tangle of wires and whips around his wrist, tying it to the rack.\\n\\n\"The //fuck//!\" says -bitmap-zer0-.\\n\\n\"Ha!\" says Carnarvon as more cables bind his legs and arms, \"You see? This is no regular computer! This is true intelligence! The singularity is upon us!\"\\n\\nSunflower runs towards Carnarvon. The main router lets off a giant spark, which sends him flying back into a wall and knocks him out. \\n\\nCarnarvon keeps ranting the whole while. \"At long last,\" he says, \"we come to the end of our miserable analog history! The long awaited melding of man and mach--\" Suddenly, a thick black coaxial cable wraps itself around his neck. \"rrrk!\"\\n\\nThis is not good.\\n\\n\u2022 [[-bitmap-zer0-, hack that thing!|41]] \\n<<if $accusechet>>\u2022 [[Kelbourne, hit it with Chet's surfboard!|124]]<<else>>\u2022 [[Chet, hit it with your surfboard!|63]]<<endif>>",
+      "links": [
+        {
+          "text": "-bitmap-zer0-, hack that thing!",
+          "destination": {
+            "name": "41",
+            "pid": 123
+          }
+        },
+        {
+          "text": "Kelbourne, hit it with Chet's surfboard!",
+          "destination": {
+            "name": "124",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Chet, hit it with your surfboard!",
+          "destination": {
+            "name": "63",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "61",
+      "text": "\"You hated Paige McKinley! You were like Mr. Super Internet Guy and she was against everything you stood for.\\n\\n<<if $heaps>>\"I didn't //hate// her. I disagreed with her, certainly--\\n\\n\"Oh please! You were just telling me your creepy fantasy about her dead body being in a heap!\"\\n\\nKelbourne raises an eyebrow. \"You fantasized about her being dead?\"\\n\\n\"It was a metaphor!\" says Carnarvon. \"You know how I am with my oratory.\"\\n\\n<<if $simile>>\"I'm pretty sure it was a simile,\" you say. \"A creepy simile. And that's not all.\"<<else>>\"It was creepy is what it was,\" you say. \"And that's not all.\"<<endif>><<else>>\"I didn't //hate// her. I disagreed with her, certainly, but were any of us sympathetic to her argument? She wanted to get rid of the internet for crying out loud!\"\\n\\n\"Oh, so it wasn't //even// hatred. You killed her over a mere disagreement. That's cold-blooded, Miles.\"\\n\\n\"You're letting yourself get carried away, child.\"\\n\\n\"Oh yeah? Well how about this?\"<<endif>>\\n\\n<<if $headphones>>\u2022 [[You have no alibi.|45]] \\n\u2022 [[You pretended not to hear anything.|101]]<<else>>\u2022 [[You have no alibi.|45]]<<endif>>\\n<<if $paigehere>>\u2022 [[You pretended not to know she was here.|123]]<<endif>>",
+      "links": [
+        {
+          "text": "You have no alibi.",
+          "destination": {
+            "name": "45",
+            "pid": 119
+          }
+        },
+        {
+          "text": "You pretended not to hear anything.",
+          "destination": {
+            "name": "101",
+            "pid": 61
+          }
+        },
+        {
+          "text": "You pretended not to know she was here.",
+          "destination": {
+            "name": "123",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "55",
+      "text": "\"What is it you're... multitasking right now?\"\\n\\n\"Well, when I got here this morning I realized something was up with the network. Little things, but very weird. Atypical variances in the cross-band bitrate for example. I mean you expect your share of problems when you're going through a public router like this, but the fluctuations were pretty asymmetric. I was worried it might have been some kind of malicious attack so I took it on myself to hook up a console and investigate.\"<<set $problems = true>>\\n\\n\"Is that your job?\"\\n\\n\"Generally, yes. In this instantiation, no. I'm going to be speaking at this conference. The name's -bitmap-zer0-.\"\\n\\n\"The name of what?\"\\n\\n\"Of me. I'm a hacker.\"\\n\\n\u2022 [[Is that your real name?|3]]\\n\u2022 [[Isn't hacking illegal?|23]]\\n\u2022 [[What are you going to be speaking about?|96]]\\n\u2022 [[Did you know Paige McKinley?|28]]\\n\u2022 [[When did you get here?|83]] \\n",
+      "links": [
+        {
+          "text": "Is that your real name?",
+          "destination": {
+            "name": "3",
+            "pid": 54
+          }
+        },
+        {
+          "text": "Isn't hacking illegal?",
+          "destination": {
+            "name": "23",
+            "pid": 10
+          }
+        },
+        {
+          "text": "What are you going to be speaking about?",
+          "destination": {
+            "name": "96",
+            "pid": 100
+          }
+        },
+        {
+          "text": "Did you know Paige McKinley?",
+          "destination": {
+            "name": "28",
+            "pid": 11
+          }
+        },
+        {
+          "text": "When did you get here?",
+          "destination": {
+            "name": "83",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "54",
+      "text": "\"Are you any good at hacking?\" you ask.\\n\\n\"I don't mean to brag but I'm one of the best around. I can crack a 32-bit polynomial encryption in one one-thousandth of a kilosecond. I've slipped code through some of the sturdiest firewalls on the planet. People would pay a lot of money to see what you're seeing right now.\"\\n\\n\"The back of your head?\"\\n\\n\"It may not look like much, but I've been flipping bauds and delving ports since before you were born. Hell, I've been at this since //the people who started hacking before you were born// were born. My experience is so magnitudinous that it can only be expressed recursively. Every single keystroke carries with it decades of key-stroking experience. You can't learn this level of digital dexterity in school.\"\\n\\n\"So you're good is what you're saying.\"\\n\\n\u2022 [[What are you hacking right now?|17]]\\n\u2022 [[Did you know Paige McKinley?|28]] ",
+      "links": [
+        {
+          "text": "What are you hacking right now?",
+          "destination": {
+            "name": "17",
+            "pid": 107
+          }
+        },
+        {
+          "text": "Did you know Paige McKinley?",
+          "destination": {
+            "name": "28",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "57",
+      "text": "\"You see, murder is a crime. And do you know what else is a crime? //Hacking.// -bitmap-zer0- is a self-admitted hacker, which means she has the criminal mindset. A person like that is capable\\n\\n\"Oh good grief,\" says Argent, \"this is absurd. -bitmap-zer0- is a well-respected security analyst, not a common criminal. She's worked with some of the biggest tech companies in the world, including mine.\"\\n\\n\"Not to mention law enforcement,\" she says. \"I've consulted with CSIS, the RCMP, and the Toronto Police Department, and that's just the locals.\"\\n\\n\"This kid isn't a detective, Kelbourne,\" says Argent. \"She's a pre-teen with a big imagination. She doesn't have a god damn clue what happened here. It's time we involved someone who does.\"\\n\\n\"Now hold on...\" says Kelbourne.\\n\\n\"Hold on? What do you think I've been doing, exactly? There is a dead body in the other room and for some unfathomable reason I've been letting you run around and play detective with a middle schooler. Well I'm done with that now. Someone got //murdered// here today and we need the police to be involved! The actual police, the ones that graduated high school.\"\\n\\nKelbourne sighs. \"...You're right. I'm sorry, Bell. I shouldn't have gotten you mixed up in this.\"\\n\\nYou sniff. \"I... I just...\" \\n\\n\"It's okay,\" he says. \"I'm calling the cops now. Everything's going to be fine.\" He takes out his phone. \"Damn. Out of batteries. Can I borrow someone's cell?\"\\n\\nEveryone digs into their pockets.\\n\\n\"Sorry, my phone's dead too,\" says Argent. \"Must not have plugged it in last night.\"\\n\\n\"Mine's drained too,\" says -bitmap-zer0-, \"That's weird.\"\\n\\n\"Likewise,\" says Carnarvon. \"Chet?\"\\n\\n\"I left my phone in my other board shorts.\"\\n\\n\"Okay something weird is going on,\" says -bitmap-zer0-. \"We need to find a landline to jack into or something.\"\\n\\n\u2022 [[There's a phone at the front desk.|88]] \\n\u2022 [[Maybe there's a jack by the router.|9]] ",
+      "links": [
+        {
+          "text": "There's a phone at the front desk.",
+          "destination": {
+            "name": "88",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Maybe there's a jack by the router.",
+          "destination": {
+            "name": "9",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "56",
+      "text": "You stroke your chin. \"Sounds like you might have some... violent tendencies.\"\\n\\n\"Okay, kid. If you're done berating me then I really do need to get this projector working.\"\\n\\n\u2022 [[Almost done. Do you know Paige McKinley?|7]]  ",
+      "links": [
+        {
+          "text": "Almost done. Do you know Paige McKinley?",
+          "destination": {
+            "name": "7",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "51",
+      "text": "\"Uh dude I just told you some lady was murdered. Why are not freaking out?\"\\n\\n\"Why should I?\" She shrugs. \"Never heard of this person-unit until just now.\" \\n\\n\"Well it happened here!\"\\n\\n\"That's fine.\"\\n\\n\"In this building! Down the hall! //While you were here!// Not a concern?\"\\n\\n\"Do you think there's a psychotic serial killer on the loose?\"\\n\\nYou scratch the back of your neck. \"I mean... no...\"\\n\\n\"So why should I be worried? Most murders are committed by someone the victim knows. I don't know her or anyone else here.\"\\n\\n\"Wait, is that true? About the murders?\"\\n\\n\"I grok statistics and the statistics are pretty clear,\" she says. \"Trust me, this event is noise and not signal. I mean, not to me anyway. You seem kind of stressed out though.\"\\n\\n\u2022 [[Well I'm not!|59]]\\n\u2022 [[Aren't you at least surprised?|71]] ",
+      "links": [
+        {
+          "text": "Well I'm not!",
+          "destination": {
+            "name": "59",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Aren't you at least surprised?",
+          "destination": {
+            "name": "71",
+            "pid": 133
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "50",
+      "text": "<<if !$accusechet>>Chet rushes over to Carnarvon's body.\\n\\n\"Is he alive?\" you ask.\\n\\n\"Just unconscious,\" says Chet. \"I can give him, you know, first-aid but my training is mainly related to people that get hurt in the ocean. He should uh... really be at a hospital.\"<<else>>Kelbourne rushes over to Carnarvon's body.\\n\\n\"Is he alive?\" you ask.\\n\\n\"Uh... I think so,\" he says. \"I think he's just unconscious. We need to get him to a hospital though.\"<<endif>>\\n\\nYou feel a buzz in your pocket. \"Pretty sure my phone just came back on,\" you say.\\n\\n\"Mine too,\" says -bitmap-zer0-.\\n\\n\"I think you'd better call the police now, Mr. Kelbourne.\"\\n\\n\"Right. Yes. Of course,\" he says. \"Thank you, Bell.\" He takes out his phone and jogs out of the room. \\n\\n\"And I want my <<if $twenty>>twenty<<else>>ten<<endif>> bucks!\" you call after him.\\n\\n<<if $accusebz>>After around a minute of silence you walk over to -bitmap-zer0- and tap her on the shoulder. \"Sorry about that time I called you a murderer,\" you say.\\n\\n\"It's okay,\" she says. \"You got it right in the end. Now we just have to figure out how to deal with this insane killer network.\"\\n\\n\"I might have an idea,\" you say.<<else>>\"So,\" says -bitmap-zer0-, \"what are we going to do about this murderous local area network?\"\\n\\n\"Let's see...\" you say.<<endif>>\\n\\nYou carefully crouch down in front of the tangle of wires. Feeling around a bit, you find the plug for the router and pull it out of the wall. After a couple of seconds you plug it back in. The lights on the front start blinking normally. You stand up and dust off your hands.\\n\\n\"I think we're good.\"\\n\u00a0",
+      "links": []
+    },
+    {
+      "pid": 36,
+      "name": "53",
+      "text": "\"...Argent Sunflower did it.\"\\n\\n\"Me?\"\\n\\n\"Yeah, you! You're a mean creepy jerk and you totally murdered her and I //know// you murdered her and it's obvious. Therefore, you're guilty. Case closed.\"\\n\\n\"Oh for god's sake, I've had enough of this. We are calling the cops.\"\\n\\n\"Deny it all you want, murderer! It won't do you any good!\"\\n\\nHe shakes his phone. \"Shit, no charge. Kelbourne, would you please call the god damned police already?\"\\n\\nKelbourne holds out his hands. \"Just--\"\\n\\n\"No!\" screams Argent. \"No fucking just! This is a serious fucking crime and the authorities need to be involved! I'm not just going to sit here and let some goddamn kid play imaginary detective when there's a //fucking dead body// in the other room!\"\\n\\nKelbourne sighs. \"Okay. Okay, fine. I'll call them.\" He takes out his phone.\\n\\n\"Finally.\"\\n\\n\"...or maybe not. Mine's dead too.\"\\n\\nYour phone won't turn on either, which is weird because you definitely charged it overnight.\\n\\n\"No charge here either,\" says -bitmap-zer0-\\n\\n\"Same,\" says Carnarvon. \"Chet?\"\\n\\n\"Mine's in my other board shorts.\"\\n\\n\"Something's wrong,\" says -bitmap-zer0-. \"We've got to find a landline to jack into or something.\"\\n\\n\u2022 [[There's a phone at the front desk.|88]] \\n\u2022 [[Maybe there's a jack by the router.|9]] ",
+      "links": [
+        {
+          "text": "There's a phone at the front desk.",
+          "destination": {
+            "name": "88",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Maybe there's a jack by the router.",
+          "destination": {
+            "name": "9",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "52",
+      "text": "\"So what was wrong? Was the network was hacked?\"\\n\\n\"I don't believe so. There's been no external access to this network since it was booted up this morning. The ports are mostly sealed and where they're not the data flow on the serial bus is all unidirectional. The only way someone could have gotten a hack into here is if they sent in an ultrahigh-latency trojan or worm, but judging by the state of the hard drive I'd say that's more or less impossible.\"\\n\\n\"So what's wrong with it?\"\\n\\n\"Well...\" she leans out from her monitor a bit. \"That I don't know. I've never seen any kind of disturbances quite like this. They're very mercurial. We're talking micron level shifts. A kilobyte here, a kilobyte there. It's not interference, it's not distortion, it's not lag. It's just... wrong. I mean if I wasn't looking at these drivers with my own two eyes I wouldn't even believe there was a problem.\"\\n\\n<<if !$bzpaige>>\u2022 [[Did you know Paige McKinley?|28]]\\n\u2022 [[All done.|47]]\\n<<else>>\u2022 [[All done.|47]]<<endif>>\\n",
+      "links": [
+        {
+          "text": "Did you know Paige McKinley?",
+          "destination": {
+            "name": "28",
+            "pid": 11
+          }
+        },
+        {
+          "text": "All done.",
+          "destination": {
+            "name": "47",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "115",
+      "text": "\"Paige is dead, Mr. Carnarvon.\"\\n\\n\"Oh...\" he says. \"Oh my. That is... quite distressing.\"\\n\\n\"I think someone killed her and I need to find out who.\"\\n\\nHe shakes his head. \"I'm sorry. This... is quite a lot to process... I think I need some time alone. Will you excuse me?\"\\n\\n\"But I'm not done-- hey!\"\\n\\nHe takes your arm and leads you out of the room without a word, shutting the door behind him. Looks like you are done after all.\\n\\n\u2022 [[Guess it's time to go the other room.|14]] ",
+      "links": [
+        {
+          "text": "Guess it's time to go the other room.",
+          "destination": {
+            "name": "14",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "114",
+      "text": "\"And was there anyone with you?\"\\n\\n\"I'm afraid I sequestered myself. I can't be having outside distractions when I'm trying to do my thinking.\"\\n\\n\u2022 [[Did you hear anything from next door?|29]]\\n<<if !$mcyou and $mcpaige>>\u2022 [[What brings you to this conference?|77]]<<endif>><<if $mcyou and !$mcpaige>>\u2022 [[Do you know Paige McKinley?|62]]<<endif>><<if !$mcyou and !$mcpaige>>\u2022 [[What brings you to this conference?|77]]\\n\u2022 [[Do you know Paige McKinley?|62]]<<endif>> ",
+      "links": [
+        {
+          "text": "Did you hear anything from next door?",
+          "destination": {
+            "name": "29",
+            "pid": 12
+          }
+        },
+        {
+          "text": "What brings you to this conference?",
+          "destination": {
+            "name": "77",
+            "pid": 127
+          }
+        },
+        {
+          "text": "Do you know Paige McKinley?",
+          "destination": {
+            "name": "62",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "88",
+      "text": "You look down at your feet and mumble, \"I uh... I think there's a phone at the front desk.\"\\n\\n\"That's right,\" says Kelbourne. \"Let's go.\" He heads out of the room. -bitmap-zer0- and Argent Sunflower follow after him.\\n\\nYou give Carnarvon an expectant look. \"You coming?\"\\n\\n<<if $accusechet>>\"I'll uh... stay here with Chet,\" he says. \"Make sure nothing happens.\"\\n\\n\"What? He's out cold. He'll be fine. Let's go.\"\\n\\n\"Well I mean, even so. It's probably best if someone stays and watches the room. Wouldn't want anyone coming in here and, you know, messing up the crime scene.\"<<else>>\"I'll uh... hang back,\" he says. \"Make sure nothing happens.\"\\n\\n\"Huh?\"\\n\\n\"You know. Wouldn't want anyone coming in here and messing up the crime scene.\"<<endif>>\\n\\nYou squint. \"Messing up the crime scene?\"\\n\\nKelbourne rushes back in. \"The door won't open and my keycard doesn't work. We need to find like a crowbar or something.\"\\n\\n\"Hey I think this dude knows what's going on,\" you say.\\n\\n\"Ha ha,\" says Carnarvon. \"The child's imagination runs wild once again. This one is a real disruptor, isn't she?\"\\n\\n\"I'm serious, Mr. Kelbourne.\"\\n\\n<<if $accusemc>>\"Bell, we just went over this,\" says Kelbourne. \"There's no evidence that he's the killer.\"\\n\\n\"No, I know. But he knows something about the murder! I'm sure about it.\"<<else>>\"Bell, are you saying he's the killer?\" asks Kelbourne.\\n\\n\"No. Maybe? Probably not. But he definitely knows who it is.\"<<endif>>\\n\\nThe other <<if $accusechet>>two<<else>>three<<endif>> re-enter the room.\\n\\n\"Don't be absurd!\" says Carnarvon, \"This... I...\"\\n\\n\"Look,\" you say, \"I know <<if $accusechet>>I was off base with that whole 'Chet is the killer thing' before<<else>>my theory before didn't make a whole lot sense<<endif>> but I'm telling you, <<if $accusechet>>this guy is<<else>>he's<<endif>> hiding something. He wouldn't leave the room with everyone else, and when I asked him why, he started making up some fake excuse. <<if $weird>>That's not just normal weird, it's //weird// weird.<<else>>It's just too weird, even for him.<<endif>> There's gotta be a clue somewhere in this room.\"\\n\\n\"Come now,\" says Carnarvon, \"a 'clue'? I think you've played enough detective for one day.\"\\n\\n\"But what could he be hiding in //here//?\" asks -bitmap-zer0-. \"I mean, this place is empty. There's nothing around but a bunch of chairs, a podium, and...\" her voice trails off.\\n\\n\u2022 [[And the network thing!|85]] ",
+      "links": [
+        {
+          "text": "And the network thing!",
+          "destination": {
+            "name": "85",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "89",
+      "text": "You walk away from your interview with Chet feeling a bit disheartened. So far none of these people has struck you as a murderer. They've all been weird, but you just haven't gotten that \"killer vibe\" off any of them.\\n\\nYou chew on this for a while and decide the only logical explanation is that you just haven't talked to the killer yet. So process of elimination would mean that it's this last guy: Argent Sunflower, a.k.a. plaid shirt, a.k.a the podium guy. That would explain why he looks so grumpy anyway. \\n\\nYou've got to choose your next move carefully.\\n\\n\u2022 [[Come out swinging.|104]] \\n\u2022 [[Play it cool.|42]] ",
+      "links": [
+        {
+          "text": "Come out swinging.",
+          "destination": {
+            "name": "104",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Play it cool.",
+          "destination": {
+            "name": "42",
+            "pid": 120
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "111",
+      "text": "\"What's your presentation about?\" you ask.\\n\\nHere.\" He hands you a business card. \"My name is Argent Sunflower. I'm here giving a talk about my new business venture.\"\\n\\nYou squint at the card. \"frthr?\"\\n\\n\"It's pronounced 'further'. And it's a social innovation platform and communication solution. It's going to revolutionize the way we connect with one another online.\"\\n\\n\"If it's so great then how come I've never heard of it?\" \\n\\n\"It's a start-up. We just launched. But trust me, all your little your friends will be hooked on it before Christmas.\"\\n\\n\u2022 [[Ever meet Paige McKinley?|7]] ",
+      "links": [
+        {
+          "text": "Ever meet Paige McKinley?",
+          "destination": {
+            "name": "7",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "110",
+      "text": "\"That's three. Who's the last one?\"\\n\\n\"Miles Carnarvon. He's in the study room next to Paige's. And that's where I think you should start.\"\\n\\nThe two of you start walking towards his room.\\n\\n\"So what's his deal?\"\\n\\n\"He's a futurist and a thinker.\"\\n\\n\"What does that mean?\"\\n\\n\"It means he thinks about the future. And he's really smart about it. He's been writing about digital trends since before digital was trendy. He is a very big deal, so you should probably tread lightly in your questioning.\"\\n\\nYou nod.\\n\\n\"Alright, I have to get back to the entrance and make sure no one else comes in. I'm counting on you, Ms. Park.\"\\n\\n\"Okay.\"\\n\\n\"My livelihood is resting on your shoulders.\"\\n\\n\"Got it.\"\\n\\n\"You hold my future in the balance. Whether I thrive or become destitute depends entirely on the outcome of your investigation.\"\\n\\n\"You can count on me.\"\\n\\nHe grasps your hands. \"I am counting on you. Don't let me down.\"\\n\\nHe walks back out front, leaving you alone in the hall.\\n\\n\u2022 [[Better get started.|11]] ",
+      "links": [
+        {
+          "text": "Better get started.",
+          "destination": {
+            "name": "11",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "113",
+      "text": "\"Where were you between 8:30 and 9:00 this morning?\"<<set $mcwhere = true>>\\n\\n\"I was in here. I came here early to get some work done before the conference, and Mr. Kelbourne was kind enough to let me into one of these rooms. I've been here since.\"\\n\\n\"What time did you get here?\"\\n\\n\"Must have been around 8 o'clock.\" \\n\\n\u2022 [[Were you alone?|114]] \\n\u2022 [[Did you hear anything next door?|29]] ",
+      "links": [
+        {
+          "text": "Were you alone?",
+          "destination": {
+            "name": "114",
+            "pid": 39
+          }
+        },
+        {
+          "text": "Did you hear anything next door?",
+          "destination": {
+            "name": "29",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "112",
+      "text": "\"Get him!\" you shout.\\n\\n<<if $noteven>>\"Not even if you didn't want me to,\" says -bitmap-zer0-. She charges at Carnarvon.<<else>>-bitmap-zer0- nods and charges at Carnarvon.<<endif>> \\n\\n\"Stay back!\" he says. He backs up and bumps into the network station. An ethernet cable shoots out from the tangle of wires and whips around his wrist, tying it to the rack. -bitmap-zer0- stops in her tracks.\\n\\n\"What the...\" says Argent.\\n\\n\"Ha!\" says Carnarvon as more cables bind his legs and arms, \"You see? No mere computer could do this! We are witnessing true intelligence! The singularity is upon us!\"\\n\\n\"Miles, get down from there!\" says Argent.\\n\\n\"The future cannot be climbed down from! It can only be //embraced!//\" Thicker cables start binding his torso.\\n\\n\"God damn it,\" says Argent. He runs towards Carnarvon. The main router lets off a giant spark, which sends him flying back into a wall and knocks him out. \\n\\nCarnarvon keeps ranting the whole while. \"Embrace me, machine child! Wrap me in your electronic arms! Soon we shall become--!\" Suddenly, a thick black coaxial cable wraps itself around his neck. \"rrrk!\"\\n\\nOkay, this is not good.\\n\\n\u2022 [[-bitmap-zer0-, hack that thing!|41]] \\n<<if $accusechet>>\u2022 [[Kelbourne, hit it with Chet's surfboard!|124]]<<else>>\u2022 [[Chet, hit it with your surfboard!|63]]<<endif>>",
+      "links": [
+        {
+          "text": "-bitmap-zer0-, hack that thing!",
+          "destination": {
+            "name": "41",
+            "pid": 123
+          }
+        },
+        {
+          "text": "Kelbourne, hit it with Chet's surfboard!",
+          "destination": {
+            "name": "124",
+            "pid": 20
+          }
+        },
+        {
+          "text": "Chet, hit it with your surfboard!",
+          "destination": {
+            "name": "63",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "82",
+      "text": "\"Ugh! Just forget it!\" \\n\\nYou storm off. She doesn't say anything to stop you.\\n\\n\u2022 [[I'll just talk to the stupid surfer or whatever.|15]] ",
+      "links": [
+        {
+          "text": "I'll just talk to the stupid surfer or whatever.",
+          "destination": {
+            "name": "15",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "83",
+      "text": "<<if $problems>>\"When did you start setting up your gear?\"\\n\\n\"Around... 560 .beats? That'd be 7:30 a.m. local time.\"\\n\\n\"And you've been here the whole time?\"\\n\\n\"Came in, started setting up my gear over there,\" she nods her head towards the back of the room, \"noticed the weirdness on the network and decided to check it out. I haven't left the room since.\"<<else>>\"So uh where were you between 8:30 and 9:00 this morning?\"\\n\\n\"I was here. I've been messing around with these boxes since I got here.\"\\n\\n\"And when was that?\"\\n\\n\"560 .beats or so.\"\\n\\n\"Huh?\"\\n\\n\"Internet time. Do they not teach you that in school?\"\\n\\n\"Maybe it's a grade 8 thing.\"\\n\\n\"Well that'd be around 7:30 a.m. local realspace time. I got here early and started setting up my gear when I noticed the network was acting funny. Normally I'd just write it off as some normal bitrate microflux, but I noticed the frequency was askew on a couple of the blips. I decided to come here and see if there was any sort of malicious code floating around. You never know with a public LAN like this.\"\\n\\n\"And you've been here the whole time?\"\\n\\n\"Haven't left since I got here.\"<<endif>>\\n\\n<<if !$problems>>\u2022 [[Not at all?|91]]\\n\u2022 [[Can anyone confirm?|24]]\\n\u2022 [[Did you find any problems?|12]]<<else>>\u2022 [[Not at all?|91]]\\n\u2022 [[Can anyone confirm?|24]]<<endif>><<set $problems = true>>",
+      "links": [
+        {
+          "text": "Not at all?",
+          "destination": {
+            "name": "91",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Can anyone confirm?",
+          "destination": {
+            "name": "24",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Did you find any problems?",
+          "destination": {
+            "name": "12",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "80",
+      "text": "\"Sounds like you don't like her so much,\" you say.<<set $threaten = true>>\\n\\n\"I certainly don't care for her harebrained 'theories'. I imagine she's mostly tolerable as a person.\"\\n\\n\"Really? I mean, you love the internet and she hates the internet. If //I// were you I'd probably have it out for her. You know, maybe start considering something drastic.\"\\n\\n\"I can't say lose sleep over her ramblings,\" he says. \"She may be distasteful but ultimately she's harmless.\\n\\n\u2022 [[So you don't feel threatened by her?|66]] \\n\u2022 [[Did you know she was speaking here?|37]] ",
+      "links": [
+        {
+          "text": "So you don't feel threatened by her?",
+          "destination": {
+            "name": "66",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Did you know she was speaking here?",
+          "destination": {
+            "name": "37",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "81",
+      "text": "\"...Chet's the killer.\"<<set $accusechet = true>>\\n\\nThe color drains from his face. \"b-buh...\"\\n\\n\"Protest all you want,\" you say, \"but it's the truth. And here's the proof:\"\\n\\n\u2022 [[He has no alibi.|122]]\\n\u2022 [[He made up some BS talk just to have an excuse to be here.|122]]\\n\u2022 [[The guilt is eating away at him.|122]]\\n\u2022 [[He's clearly mentally unstable.|122]]\\n\u2022 [[His name sounds made up.|122]]\\n\u2022 [[He was driven mad by the hustle and bustle of the city.|122]] \\n\u2022 [[His internet search history will reveal an unhealthy obsession with Paige.|122]] \\n\u2022 [[If you examine the underside of his surfboard I'm quite certain you will see small flecks of blood.|122]] \\n\u2022 [[Prolonged exposure to salt water has damaged his brain and left him with a case of what scientists refer to as \"Surfer Mania\".|122]] \\n",
+      "links": [
+        {
+          "text": "He has no alibi.",
+          "destination": {
+            "name": "122",
+            "pid": 18
+          }
+        },
+        {
+          "text": "He made up some BS talk just to have an excuse to be here.",
+          "destination": {
+            "name": "122",
+            "pid": 18
+          }
+        },
+        {
+          "text": "The guilt is eating away at him.",
+          "destination": {
+            "name": "122",
+            "pid": 18
+          }
+        },
+        {
+          "text": "He's clearly mentally unstable.",
+          "destination": {
+            "name": "122",
+            "pid": 18
+          }
+        },
+        {
+          "text": "His name sounds made up.",
+          "destination": {
+            "name": "122",
+            "pid": 18
+          }
+        },
+        {
+          "text": "He was driven mad by the hustle and bustle of the city.",
+          "destination": {
+            "name": "122",
+            "pid": 18
+          }
+        },
+        {
+          "text": "His internet search history will reveal an unhealthy obsession with Paige.",
+          "destination": {
+            "name": "122",
+            "pid": 18
+          }
+        },
+        {
+          "text": "If you examine the underside of his surfboard I'm quite certain you will see small flecks of blood.",
+          "destination": {
+            "name": "122",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Prolonged exposure to salt water has damaged his brain and left him with a case of what scientists refer to as \"Surfer Mania\".",
+          "destination": {
+            "name": "122",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "86",
+      "text": "\"See, I don't think you set foot in Paige's room, but you never had to. You could have killed her remotely, using some kind of internet thing. Or a computer or something. You know, hacker stuff.\"\\n\\n\"I'm sorry, how did this woman die exactly?\" asks -bitmap-zer0-.\\n\\n\"She was strangled with an ethernet cable,\" says Kelbourne.\\n\\n\"I can do some pretty unreal things with tech,\" says -bitmap-zer0-, \"but I can't make a cable jump up and strangle someone. That's not how computers work.\"\\n\\n\u2022 [[Okay...|60]] \\n\u2022 [[Well...|60]]\\n\u2022 [[Uh...|60]] ",
+      "links": [
+        {
+          "text": "Okay...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Well...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Uh...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "87",
+      "text": "\"I'm afraid I don't get out of bed in the morning for anything less than twenty dollars,\" you say.<<set $twenty = true>>\\n\\n\"You drive a hard bargain for a twelve-year-old, Ms. Park. It's a deal.\"\\n\\nYou try not to look too pleased with yourself as you shake Kelbourne's hand.\\n\\n\"This way,\" he says.\\n\\nHe leads you down the hall past a bunch of empty rooms.\\n\\n\"We rented the whole top floor for the weekend,\" he says. \"That means we have all these private study rooms reserved on top of the big conference room in the back. We're going to be using them to host smaller discussion groups later, but since the conference hasn't started yet we're letting some of the early presenters get themselves ready in there.\"\\n\\nHe stops in front of a closed study room and starts rummaging through his pockets. A handwritten sign has been taped to the door.\\n\\n\"Sign says 'NO ENTRY',\" you point out.\\n\\n\"I put that there.\"\\n\\n\"Oh. Right. That makes sense.\"\\n\\n\"Aha. Here we go.\" He pulls out a keycard. \"Now, I should warn you, this mystery might be... a bit more serious than the ones you're used to.\"\\n\\n\u2022 [[I've got this.|76]] ",
+      "links": [
+        {
+          "text": "I've got this.",
+          "destination": {
+            "name": "76",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "84",
+      "text": "\"Talk to me about surfing,\" you say.\\n\\n\"It's... It's magnificent. The perfect sport. You get on your board and you just slip into a wave. You feel at one with the tides, and the sun, and the beach, and the ocean. And, you know, not just the water in the ocean. The salt, and the plankton, and the fish, and the algae.\" He closes his eyes. You can see that his breathing has really slowed down. \"Everything ocean-related is right there in your body. An ocean in your bloodstream that flows into your heart and makes it beat in time with the tides.\"\\n\\n\"You really like surfing, don't you?\"\\n\\n\"It centers me, you know? I'm not sure what I'd do without it.\"\\n\\n\"How are you coping with being away from the ocean?\"\\n\\n\"Oh... oh, not very well. I've been trying that mindfulness thing, you know, meditate? But... it's difficult. The pace of the city...\"\\n\\n[[Tell me about mindfulness.|8]]\\n[[Do you know anything about Paige McKinley's murder?|44]] ",
+      "links": [
+        {
+          "text": "Tell me about mindfulness.",
+          "destination": {
+            "name": "8",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Do you know anything about Paige McKinley's murder?",
+          "destination": {
+            "name": "44",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "85",
+      "text": "\"...the network computer thing!\" you say. \"The answer must be in there!\"\\n\\n\"Oh my god, of //course//...\" says -bitmap-zer0-. \"That station has been acting weird all morning. Whatever he's hiding has to be connected to those strange fluctuations.\"\\n\\n\"Don't be absurd,\" says Carnarvon.\\n\\n\"Miles,\" says Argent, \"is there something in that computer we should know about?\"\\n\\n\"Why... surely, you of all people aren't listening to this little girl! I mean of all the preposterous--\" \\n\\n\"Forget it,\" says -bitmap-zer0-. \"I'm going to log back in myself and get to the bottom of this.\"\\n\\nCarnarvon grabs her by the wrist and pulls her away from the network station. \"You stay away from there! I'm not going to let you hurt it!\"\\n\\n\"The fuck--?\" she says.\\n\\nHe puts his back against the station and stretches his arms out.\\n\\n\"If you want to kill it,\" he says, \"you'll have to come through me!\"\\n\\n\u2022 [[What.|94]] ",
+      "links": [
+        {
+          "text": "What.",
+          "destination": {
+            "name": "94",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "3",
+      "text": "\"That doesn't sound like a real name,\" you say.\\n\\nShe chuckles. \"Neither does yours.\"\\n\\n\"Hey.\"\\n\\n\"Look, as far as the law's concerned it's real. I'd been shifting bytes under that handle for so long that I figured it was time to make it official. Went down to a meatspace courtroom last year and got it approved by a judge. Paid my fee and filled in the forms. Undigitized, I might add.\"\\n\\nShe hands you her driver's licence. Sure enough the name's right there. <<if $monospace>> Monospaced font and everything.<<endif>> Card looks authentic too. At least, as far as you can tell.\\n\\n\u2022 [[Ever heard of Paige McKinley?|28]]\\n\u2022 [[Where were you this morning?|83]] \\n<<if !$problems>>\u2022 [[What are you doing?|17]]<<endif>>",
+      "links": [
+        {
+          "text": "Ever heard of Paige McKinley?",
+          "destination": {
+            "name": "28",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "83",
+            "pid": 47
+          }
+        },
+        {
+          "text": "What are you doing?",
+          "destination": {
+            "name": "17",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "7",
+      "text": "\"Are you familiar with Paige McKinley?\"\\n\\n\"The name rings a bell,\" he says. \"Might have read something of hers. I think she's a blogger?\"\\n\\n\u2022 [[Well now she's dead.|10]] \\n\u2022 [[You never met?|46]] ",
+      "links": [
+        {
+          "text": "Well now she's dead.",
+          "destination": {
+            "name": "10",
+            "pid": 102
+          }
+        },
+        {
+          "text": "You never met?",
+          "destination": {
+            "name": "46",
+            "pid": 116
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "108",
+      "text": "\"So when was all this happening? When did you get here?\"\\n\\n\"I... I don't know,\" he says.\\n\\nYou sigh. \"Listen, Chet. There's been a murder. <<if $chetpaige>>Paige McKinley, that woman I was talking about? She was murdered this morning.<<else>>A woman by the name of Paige McKinley was killed this morning.<<endif>>\"\\n\\nHis eyes widen. \"Oh god.\"\\n\\n\"Right now I'm trying to figure out where everyone was when she was killed, so I need you think hard. What time did you get here?\"\\n\\n\"Am... am I a suspect?\"\\n\\n\"Not if you have an alibi.\"\\n\\n\"I'm sorry I really don't know! Honest. I... I normally tell time by the tides. My internal clock is all messed up.\"\\n\\n\"Do you know what time it is now?\" \\n\\n\"...midnight? Or 4pm maybe. I don't know. Murder, oh god...\"\\n\\n<<if $chet>>\u2022 [[Let me refresh your memory.|106]]\\n\u2022 [[You're kind of all over the place man.|92]]\\n\u2022 [[Something's not adding up here.|107]]<<else>>\u2022 [[You're kind of all over the place.|92]]\\n\u2022 [[Something's not adding up.|107]]<<endif>> ",
+      "links": [
+        {
+          "text": "Let me refresh your memory.",
+          "destination": {
+            "name": "106",
+            "pid": 62
+          }
+        },
+        {
+          "text": "You're kind of all over the place man.",
+          "destination": {
+            "name": "92",
+            "pid": 96
+          }
+        },
+        {
+          "text": "Something's not adding up here.",
+          "destination": {
+            "name": "107",
+            "pid": 63
+          }
+        },
+        {
+          "text": "You're kind of all over the place.",
+          "destination": {
+            "name": "92",
+            "pid": 96
+          }
+        },
+        {
+          "text": "Something's not adding up.",
+          "destination": {
+            "name": "107",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "109",
+      "text": "\"That's a long time to set up a computer.\"\\n\\n\"Oh it's a mess. That projector up there is an antique. It keeps shutting off whenever I try to switch the video input. I swear I'm this close to throwing this damn podium across the room.\"\\n\\n\u2022 [[Rage issues, huh?|56]]\\n\u2022 [[What's your presentation about?|111]] \\n\u2022 [[Ever meet Paige McKinley?|7]]\\n",
+      "links": [
+        {
+          "text": "Rage issues, huh?",
+          "destination": {
+            "name": "56",
+            "pid": 33
+          }
+        },
+        {
+          "text": "What's your presentation about?",
+          "destination": {
+            "name": "111",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Ever meet Paige McKinley?",
+          "destination": {
+            "name": "7",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "102",
+      "text": "\"Nuh-uh!\" you say.\\n\\n\"Oh for god's sake, that's it,\" says Argent. \"I've heard enough. The girl is clearly just making stuff up.\"\\n\\n\"Now hold on...\" says Kelbourne.\\n\\n\"Hold on? What do you think I've been doing, exactly? There is a dead body in the other room and for some unfathomable reason I've been letting you run around and play detective with a middle schooler. Well I'm done with that now. Someone got //murdered// here today and we need the police to be involved! The actual police, the ones that graduated high school.\"\\n\\nKelbourne sighs. \"...You're right. I'm sorry, Bell. I shouldn't have gotten you mixed up in this.\"\\n\\nYou sniff. \"I... I just...\" \\n\\n\"It's okay,\" he says. \"I'm calling the cops now. Everything's going to be fine.\"\\n\\nHe takes out his phone.\\n\\n\"Damn. Out of batteries. Can I borrow someone's cell?\"\\n\\nEveryone digs into their pockets.\\n\\n\"Sorry, my phone's dead too,\" says Argent. \"Must not have plugged it in last night.\"\\n\\n\"So's mine,\" says -bitmap-zer0-, \"That's weird.\"\\n\\n\"Likewise,\" says Carnarvon. \"Chet?\"\\n\\n\"I left my phone in my other board shorts.\"\\n\\n\"Okay something weird is going on,\" says -bitmap-zer0-. \"We need to find a landline to jack into or something.\"\\n\\n\u2022 [[There's a phone at the front desk.|88]] \\n\u2022 [[Maybe there's a jack by the router.|9]] ",
+      "links": [
+        {
+          "text": "There's a phone at the front desk.",
+          "destination": {
+            "name": "88",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Maybe there's a jack by the router.",
+          "destination": {
+            "name": "9",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "103",
+      "text": "\"When did you get here?\"\\n\\n\"I... I don't know.\"\\n\\n\"Guess,\" you say.\\n\\n\"I can't guess! I normally tell time by the tides. My internal clock is all messed up.\"\\n\\n\"Do you know what time it is now?\" \\n\\n\"...midnight? Or 4pm maybe. Gosh, what time //is// it? I feel like I'm asleep right now.\"\\n\\n<<if $chet>>\u2022 [[Let me refresh your memory|106]]\\n\u2022 [[You're kind of all over the place man.|92]]\\n\u2022 [[Something's not adding up here.|107]]<<else>>\u2022 [[You're kind of all over the place.|92]]\\n\u2022 [[Something's not adding up.|107]]<<endif>> ",
+      "links": [
+        {
+          "text": "Let me refresh your memory",
+          "destination": {
+            "name": "106",
+            "pid": 62
+          }
+        },
+        {
+          "text": "You're kind of all over the place man.",
+          "destination": {
+            "name": "92",
+            "pid": 96
+          }
+        },
+        {
+          "text": "Something's not adding up here.",
+          "destination": {
+            "name": "107",
+            "pid": 63
+          }
+        },
+        {
+          "text": "You're kind of all over the place.",
+          "destination": {
+            "name": "92",
+            "pid": 96
+          }
+        },
+        {
+          "text": "Something's not adding up.",
+          "destination": {
+            "name": "107",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "100",
+      "text": "You point at Carnarvon and say, \"It was him!\"\\n\\nEveryone turns to look at you. \\n\\n\"Or like... he knows who did it or something. I don't know. There's obviously a clue in the computer station though! That's why he's acting so weird!\"\\n\\n\"Okay, fun time is over little girl,\" he says. \"Just... go back to your Facebook and your BuzzFeed while the grown-ups sort things out.\"\\n\\n\"Our phones are all dead, remember?\"\\n\\n\"Well then sit over there and //think// about Facebook and BuzzFeed!\"\\n\\n\"Miles,\" says Argent, \"is there something you aren't telling us?\"\\n\\n\"Why... surely, you of all people aren't listening to this little girl! I mean of all the preposterous--\" \\n\\n\"Forget it,\" says -bitmap-zer0-. \"I'm going to log back in myself and get to the bottom of this.\"\\n\\nCarnarvon grabs her by the wrist and pulls her away from the network station. \"You stay away from there! I'm not going to let you hurt it!\"\\n\\n\"The fuck--\" she says.\\n\\nHe runs over and stretches his arms out in front of the station. \\n\\n\u2022 [[What.|94]] ",
+      "links": [
+        {
+          "text": "What.",
+          "destination": {
+            "name": "94",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "101",
+      "text": "\"You told me you always wear headphones when you work, but when I came in you weren't wearing them at all. I think you were lying about that so you could pretend like you didn't hear anything.\"<<set $headphones2 = true>>\\n\\n\"You're misremembering, child. I'm fairly certain I took my headphones off when you first came in. In any case I definitely had them on before you entered.\"\\n\\n\u2022 [[You're lying!|102]] \\n\u2022 [[You didn't have an alibi!|45]] ",
+      "links": [
+        {
+          "text": "You're lying!",
+          "destination": {
+            "name": "102",
+            "pid": 58
+          }
+        },
+        {
+          "text": "You didn't have an alibi!",
+          "destination": {
+            "name": "45",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "106",
+      "text": "\"You were seen entering this room around 8:45 this morning. Can you work backwards from there? How long were you here before that?\"\\n\\n\"I guess... maybe a week?\"\\n\\n\"A week?\"\\n\\n\"Or an hour! I don't know! Everything's wrong in this place. I just want to hold some seashells and bury myself in sand! I never wanted murders or computers or carpeting!\"\\n\\n\"Hey, don't get all worked up now.\"\\n\\n\"Why did I even //come here//? It's all-- gah!!!\" \\n\\nHe lets out an anguished groan, grabs his shoulders, buries his head in his lap, and starts rocking back and forth in his seat. His body convulses. You think he might be crying.\\n\\nYou lightly pat his back. \"There... there?\"\\n\\nHe keeps sobbing.\\n\\n\"I'm sorry...?\" you say.\\n\\nHe makes some kind of unintelligible wailing noise.\\n\\n\"I'll just uh, let you be alone for a while.\"\\n\\n\u2022 [[On to the last guy.|89]] ",
+      "links": [
+        {
+          "text": "On to the last guy.",
+          "destination": {
+            "name": "89",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "107",
+      "text": "\"Something's not sitting right, Chet. I'm not tracking your answers.\"\\n\\n\"It's just... You're saying things so fast and it's all so confusing and, and, and...\"\\n\\n\"I think you know a bit more then you're letting on.\"\\n\\n\"No. No, you have to understand, I... I travelled quite far to be here. I haven't been this far from the ocean in some time. The tides and the salt air always calmed me. And now there are all these buildings and there was a murder? It's just a lot to take in. I need to lie down.\" He shuffles off towards the other side of the room.\\n\\n\"Hey, I'm not through with you yet!\" you say.\\n\\nHe looks at you over his shoulder, causing him to bump into one of the rows of chairs. His leg gets tangled up in one of the legs. He tries kicking the chair away but that just pushes him backwards into another chair, which trips him onto the ground. He grabs another chair to pull himself up but he puts so much weight on it that it flies back out of his hands, sending him sprawling to the ground. Finally, he crawls under the next row of chairs and just sort of curls up into a ball.\\n\\n\"Er... okay,\" you say. \"Maybe I am.\"\\n\\n\u2022 [[On to the last guy.|89]]",
+      "links": [
+        {
+          "text": "On to the last guy.",
+          "destination": {
+            "name": "89",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "104",
+      "text": "\"Hey! Murderer!\" you shout. \"I've got some questions for you!\"\\n\\n\"What?\" he says, \"Get out of here, kid. I'm busy.\"\\n\\n\u2022 [[Where were you this morning?|16]] ",
+      "links": [
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "16",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "105",
+      "text": "\"Paige McKinley is dead,\" you say. \"She was murdered this morning and I'm trying to figure out who did it.\"\\n\\n\"Oh my god, that's horrible!\"\\n\\n\"It's horrible that I'm trying to figure out who did it\"\\n\\n\"What?\" He says. \"N-no. It's horrible that she got murdered.\"\\n\\nYou squint. \"I'll ask you point blank, Chet. Do you know who did it?\"\\n\\n\"I... no. I wouldn't even... I have no idea.\"\\n\\n\"Are you lying to me?\"\\n\\n\"No! No. I haven't even seen anything since I got here, honest. No.\"\\n\\n\u2022 [[You seem anxious.|92]] \\n\u2022 [[Didn't say anything about it happening here.|78]] \\n\u2022 [[And when did you get here?|103]] ",
+      "links": [
+        {
+          "text": "You seem anxious.",
+          "destination": {
+            "name": "92",
+            "pid": 96
+          }
+        },
+        {
+          "text": "Didn't say anything about it happening here.",
+          "destination": {
+            "name": "78",
+            "pid": 136
+          }
+        },
+        {
+          "text": "And when did you get here?",
+          "destination": {
+            "name": "103",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "39",
+      "text": "\"Paige's theories threatened your hopes for the future,\" you say. \"You had this big crazy vision of a future world where everyone was a computer and we all had the same brain and there were games or something. I don't know, I wasn't really paying attention. But I do know Paige was a strong advocate of turning off the computer and going outside. She hated the internet, which meant she hated your future. You had to get rid of her.\"\\n\\n\"And how many people have you seen cutting the internet out of their lives? How many of your peers don't use the internet? How many of them leave the internet at home when they go outside? Paige was no threat to me. Her ideas were outdated. Doomed. It wouldn't just be crazy to kill her, it'd be a waste of energy. History was getting rid of her ideology for me.\"\\n\\n\u2022 [[You're lying!|102]] \\n\u2022 [[You didn't have an alibi!|45]] ",
+      "links": [
+        {
+          "text": "You're lying!",
+          "destination": {
+            "name": "102",
+            "pid": 58
+          }
+        },
+        {
+          "text": "You didn't have an alibi!",
+          "destination": {
+            "name": "45",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "38",
+      "text": "You take a look around the room. You see one of those little black dome things hanging in the corner.\\n\\n\"Is that a security camera?\\n\\nHe nods. \"Unfortunately they're just for show. They don't record. At least that's what the library staff told me when I rented the place.\"\\n\\n\"What's the point of that?\"\\n\\n\"I don't know, to scare people? If they didn't think they were being watched they might try and steal all the books from the library or something.\"\\n\\n\"Who would want to steal all the books from a library?\"<<set $library = true>>\\n\\n\"You know what I mean. It's security theatre.\" \\n\\n\u2022 [[Who are the suspects?|64]] \\n\u2022 [[Did Paige have any enemies?|65]] \\n\u2022 [[Why was Paige at this conference?|120]] ",
+      "links": [
+        {
+          "text": "Who are the suspects?",
+          "destination": {
+            "name": "64",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Did Paige have any enemies?",
+          "destination": {
+            "name": "65",
+            "pid": 82
+          }
+        },
+        {
+          "text": "Why was Paige at this conference?",
+          "destination": {
+            "name": "120",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "33",
+      "text": "\"Sure, yeah! Do it,\" you say.\\n\\nShe starts typing out lines of code.\\n\\n\"...how big an explosion are we talking?\" you ask.\\n\\n\"You might want to stand back a bit.\"\\n\\nYou take a few steps back.\\n\\n\"Okay,\" she says, \"Here goes nothing.\"\\n\\nShe shuts her eyes and presses the enter key. The lights on the front of the network station start blinking erratically and little wisps of smoke come out of the main router. One by one the cables that were holding Carnarvon in place go limp. Finally the last couple of them snap and he slumps down to the ground.\\n\\n\u2022 [[Is he okay?|50]] ",
+      "links": [
+        {
+          "text": "Is he okay?",
+          "destination": {
+            "name": "50",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "32",
+      "text": "\"I was about to ask you the same question.\"\\n\\n\"I mean,\" he says, \"this is the first I heard of it. I really have no idea.\"\\n\\n\"Guess.\"\\n\\n\"Car crash?\"\\n\\n\"Guess again,\" you say. \"And this time guess murder.\"\\n\\nHis eyes go wide. \"You're kidding.\"\\n\\n\"Oh I'm serious. As serious as you were when you killed her.\"\\n\\n\"What do you mean, when //I// killed her? What are you talking about?\"\\n\\n\"I'm talking about the murder you did this morning between 8:30 and 9:00 over in that other room.\"\\n\\n\"Other room?\"\\n\\n\"You know the one. It's got a dead body in it?\"\\n\\n\"You mean she was murdered //today//? In this building? Jesus Christ! Does Kelbourne know? Where are the cops?\"\\n\\n\"You're looking at them.\"\\n\\n\"Oh for god's sake, kid. This is serious.\"\\n\\n\"That's right. Reeeal serious. A crime like this can get you... uh... like fifty years in jail probably.\"\\n\\nHe pushes you off to the side and starts jogging towards the door. \"Kelbourne!\" \\n\\n\"Hey, where do you think you're going?\"\\n\\n\"To get the actual police down here. This is a serious crime scene kid, you had better stop poking around.\" He heads out into the hall.\\n\\n\"Oh you'd like that, wouldn't you?\" you call after him.\\n\\n\u2022 [[Time to put all the pieces together|48]] ",
+      "links": [
+        {
+          "text": "Time to put all the pieces together",
+          "destination": {
+            "name": "48",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "31",
+      "text": "\"So what are you doing here?\"\\n\\n\"Well I'm giving a presentation this morning but mainly I'm just here to network.\"\\n\\n\"Oh. So you're like the guy in charge of setting up the network or whatever?\"\\n\\nHe rolls his eyes. \"No. I'm here to meet people. Hand out business cards, that kind of thing.\"\\n\\n\"So you're the guy in charge of handing out business cards.\"\\n\\n\u2022 [[Ever meet Paige McKinley?|7]]  \\n",
+      "links": [
+        {
+          "text": "Ever meet Paige McKinley?",
+          "destination": {
+            "name": "7",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "30",
+      "text": "\"You can deny it all you want but you know it's true! You are the killer!\"\\n\\n\"Alright, enough!\" he says. \"If you're seriously telling me someone died here this morning then this conversation is over. We need to get some actual adults on the scene.\"\\n\\n\"Sounds an awful lot like something a murderer would say to a cop,\" you say.\\n\\n\"Well I'm not a murderer and you're not a cop.\"\\n\\n\"No, I'M not a murderer and YOU'RE not a cop.\"\\n\\n\"Neither of us are murderers and neither of us are cops!\"\\n\\n\"You seem awfully sure about who is and isn't a murderer. Much like the real murderer would be.\"\\n\\n\"Oh for god's sake. Kelbourne!\" He bolts into the hall.\\n\\n\"I'll be watching you!\" you call after him. \"I mean, I can't see you right now but... you know!!\"\\n\\n\u2022 [[Time to put all the pieces together|48]] ",
+      "links": [
+        {
+          "text": "Time to put all the pieces together",
+          "destination": {
+            "name": "48",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "37",
+      "text": "\"Did you know she was booked to speak here?\"<<set $paigehere = true>>\\n\\nHe puts his finger to his temple and stares off to the side. After a couple of seconds of silence, he says, \"Now that you mention it... Ye-es, I think I did see her name listed on the website a couple of weeks ago. It had fallen out of my mind since then though.\"\\n\\n\u2022 [[So you weren't planning on confronting her?|121]] \\n\u2022 [[Took you a while to answer that one.|117]] ",
+      "links": [
+        {
+          "text": "So you weren't planning on confronting her?",
+          "destination": {
+            "name": "121",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Took you a while to answer that one.",
+          "destination": {
+            "name": "117",
+            "pid": 112
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "36",
+      "text": "<<if $surfing>>\"Seriously though. Slang aside, what are you doing here? This doesn't seem like the type of place you'd expect to find a surfer.\"<<else>>\"What brings you here, Chet? This doesn't seem like the type of place you'd expect to find a surfer.\"<<endif>>\\n\\n\"I'm giving a talk.\"\\n\\n\"To these internet guys? What about?\"\\n\\n\"It's complicated.\"\\n\\nYou put on your trusty 'sophisticated' face. \"Chet, I may be young but I get very good grades. I can follow along.\"\\n\\n\"Okay,\" he says, \"well, the gist of is... I mean the way I see it the ocean was uh... the original internet. See, back in the 16th century you couldn't use computers. No computers then. The only way... you know, if you wanted to get a message over to the other side of the world you had to sail it over in a carrack or a galleon. And before that it was, you know ... messages in bottles. So, I mean, you could say that my board is like, the descendant of those ships. I mean, in spirit if not in form. And therefore me and the internet are sort of... cousins? Do you follow?\"\\n\\n\"Not even a little.\"\\n\\n\u2022 [[...but keep talking anyway.|84]]\\n\u2022 [[Where were you this morning?|69]]\\n\u2022 [[What do you know about Paige's murder?|44]] ",
+      "links": [
+        {
+          "text": "...but keep talking anyway.",
+          "destination": {
+            "name": "84",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "69",
+            "pid": 86
+          }
+        },
+        {
+          "text": "What do you know about Paige's murder?",
+          "destination": {
+            "name": "44",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "35",
+      "text": "\"Alright, that's all. Don't leave this room, 'kay?\"\\n\\n\"Not even if you wanted me to.\"<<set $noteven = true>>\\n\\n\u2022 [[On to the surfer.|15]] ",
+      "links": [
+        {
+          "text": "On to the surfer.",
+          "destination": {
+            "name": "15",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "34",
+      "text": "\"Uh...?\"\\n\\n\"No, you're right,\" she says. \"We could never run that kind of bandwidth through a solid state processor... But what we //could// do is bypass the processor entirely. Start shunting core machine commands away from the BIOS and into secondary systems. Yes, that's it! We don't overload it, we starve it! Bellwoods, you're a genius!\"\\n\\n\"Fine! Great! Do it!!\"\\n\\n\"Hmm? Oh yeah. Right.\" \\n\\nShe starts typing commands into the computer. One by one, the cables holding Carnarvon in place start going limp as the lights on the front blink erratically. Finally, the last couple of cords snap and he slumps down to the ground.\\n\\n\u2022 [[Is he okay?|50]] ",
+      "links": [
+        {
+          "text": "Is he okay?",
+          "destination": {
+            "name": "50",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "StoryAuthor",
+      "text": "Brendan Patrick Hennessy",
+      "links": []
+    },
+    {
+      "pid": 77,
+      "name": "60",
+      "text": "\"Uh...\" you say.\\n\\n\"You know what? I've heard enough of this,\" says Argent. \"We're listening to a kid pretend to be a detective. She clearly doesn't know what she's talking about.\"\\n\\n\"Now just hear her out...\" says Kelbourne.\\n\\n\"Hear her out! Listen to yourself, Kelbourne! There is a //dead body// in the other room. Someone got murdered here today and we need the police to be involved. The actual police, the ones that graduated high school.\"\\n\\n\"If you just--\"\\n\\n\"Hey, the conference is ruined, okay? I don't know what made you think you could sweep this under the rug, but you can't. This is a serious crime and it needs to be dealt with properly! I mean, my god.\"\\n\\nKelbourne sighs. \"...You're right. You're right. I don't know what I was thinking. I'll call the cops now.\" He turns to you. \"I shouldn't have gotten you mixed up in this, Bell.\"\\n\\n\"I'm... I'm sorry,\" you say.\\n\\nHe takes out his phone. \"Damn, out of batteries. Can I borrow someone's cell?\"\\n\\nEveryone digs into their pockets.\\n\\n\"Sorry, mine's dead too,\" says Argent. \"Must not have plugged it in last night.\"\\n\\n\"So's mine,\" says -bitmap-zer0-, \"Huh.\"\\n\\n\"Likewise,\" says Carnarvon. \"Chet?\"\\n\\n\"I left my phone in my other board shorts.\"\\n\\n\"Okay something weird is going on,\" says -bitmap-zer0-. \"We need to find a landline to jack into or something.\"\\n\\n\u2022 [[There's a phone at the front desk.|88]] \\n\u2022 [[Maybe there's a jack by the router.|9]] ",
+      "links": [
+        {
+          "text": "There's a phone at the front desk.",
+          "destination": {
+            "name": "88",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Maybe there's a jack by the router.",
+          "destination": {
+            "name": "9",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "Start",
+      "text": "!BELL PARK, YOUTH DETECTIVE\\n!!by [[Brendan Patrick Hennessy|http://bphennessy.com/]]\\n!!![[START|1]] ",
+      "links": [
+        {
+          "text": "START",
+          "destination": {
+            "name": "1",
+            "pid": 124
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "62",
+      "text": "\"Do you know Paige McKinley?\"<<set $mcpaige = true>>\\n\\n\"Ah yes, Ms. McKinley is indeed known to me.\"\\n\\n\"Tell me about her,\" you say.\\n\\n\"I suppose you might say she's a writer. Though personally I would hesitate to dignify her... body of work by calling it 'writing'. 'Incoherent ranting' might be more apt.\\n\\n\"Not a fan, huh?\"\\n\\n\"That's a way of putting it. The woman is a classic luddite.\"\\n\\n\"Is that like a Lutheran?\"\\n\\n\"Ha! Amish is more like it. She absolutely refuses to accept the inexorable march of progress. She wants us to stop using the internet! Can you imagine? Stop using the internet! Apparently she thinks it'll be the death of us. I mean the way she talks about it you'd think it was... er... heroin, or gangster rap or something. The woman is out of her mind.\"\\n\\n\u2022 [[Sounds like she posed a threat.|66]] \\n\u2022 [[Sounds you didn't like her very much.|80]] \\n\u2022 [[Sounds like you murdered her.|75]] ",
+      "links": [
+        {
+          "text": "Sounds like she posed a threat.",
+          "destination": {
+            "name": "66",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Sounds you didn't like her very much.",
+          "destination": {
+            "name": "80",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Sounds like you murdered her.",
+          "destination": {
+            "name": "75",
+            "pid": 129
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "63",
+      "text": "\"We've got to do something,\" says Kelbourne.\\n\\n\"You're damn right we do,\" you say. \"Chet! Bash that thing to death with your dumb giant surfboard!\"\\n\\n\"Ummm.\" He edges towards the network station.\\n\\n\"Come on, guy!\" you say. \"You can do it!\"\\n\\nHe holds the board over his shoulder like he's about to whack a giant fly. Another spark shoots out of the network station and knocks the surfboard clear out of his hands. It slams into the wall and breaks in half.\\n\\n\"...do we have a plan B?\" he asks.\\n\\n\u2022 [[Okay whatever do the hacking thing instead!|41]] ",
+      "links": [
+        {
+          "text": "Okay whatever do the hacking thing instead!",
+          "destination": {
+            "name": "41",
+            "pid": 123
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "64",
+      "text": "\"Is there like, a list of suspects or anything?\" you ask.\\n\\n\"Well,\" he says, \"I've been out front all morning letting the keeners in. People who need to prepare their speeches, that kind of thing. There were only four other people in here when it happened. And as luck would have it they're all still here and no one else has come in. I'll show you.\"\\n\\nHe leads you to the threshold of a large conference room. Rows of empty chairs are lined up facing a podium and a projector screen on a makeshift stage. A man in a crisp plaid shirt stands up front, staring at a laptop.\\n\\n\"That's Argent Sunflower,\" says Kelbourne. \"He's a big Silicon Valley guy. Just launched this hot new start-up a couple of weeks ago. People are saying it's going to be bigger than Facebook, Pinterest, iTunes, Tumblr, Google Image Search, Google Regular Search, //and// LinkedIn put together.\"\\n\\nOff to the side, practically camouflaged by a forest of computer equipment, a woman in a hoodie is typing like mad, only stopping to plug in the occasional wire. She wheels an office chair around as she goes from monitor to monitor.\\n\\n\"That over there is one of the world's foremost hackers,\" says Kelbourne. \"She's going to give a talk about network security today. Her name is... uh... Mapquest Something. I forget. She's very famous in those circles though.\"\\n\\n\"What's that thing she's next to?\"\\n\\n\"Oh, that's the main network centre. This floor has its own mini-network separated from the rest of the library system. There's going to be a lot of people here and we don't want them to have to share bandwidth. That station is where all the routers and servers and whatnot go.\"\\n\\n\"So what's she doing to it?\" you ask.\\n\\n\"I don't know, probably checking out our security. I'm guessing it leaves something to be desired. Anyway, the third person is that professional surfer in the back.\"\\n\\n\"Huh?\" \\n\\nYou turn around. Sitting off in the corner is a little guy with big shorts a big t-shirt. He's sitting next to a bright pink surfboard. The word \"WAVES\" is painted on it in cyan. \\n\\n\"His name's Chet. He's going to be giving a talk about how surfing relates to computers or something. Conferences like these attract all kinds.\"\\n\\n\u2022 [[So where's number four?|110]] ",
+      "links": [
+        {
+          "text": "So where's number four?",
+          "destination": {
+            "name": "110",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "65",
+      "text": "\"Who would have wanted her dead?\" you ask.\\n\\n\"Beats me. That's why I hired you. I can show you who might have done it, though. Come on.\"\\n\\nYou follow him out into the hall.\\n\\n\"I've been out front getting things ready since six o'clock\", he says. \"A couple of people showed up early to work on their presentations. Paige was one of them. There were only four others. One of those four has to be the killer.\"\\n\\nHe leads you to the threshold of a large conference room. Rows of empty chairs are lined up facing a podium and a projector screen on a makeshift stage. A man in a crisp plaid shirt stands up front, staring at a laptop.\\n\\n\"That's Argent Sunflower,\" says Kelbourne. \"He's a big Silicon Valley guy. Just launched this hot new start-up a couple of weeks ago. People are saying it's going to be bigger than Facebook, Pinterest, iTunes, Tumblr, Google Image Search, Google Regular Search, //and// LinkedIn put together.\"\\n\\nOff to the side, practically camouflaged by a forest of computer equipment, a woman in a hoodie is typing like mad, only stopping to plug in the occasional wire. She wheels an office chair around as she goes from monitor to monitor.\\n\\n\"That over there is one of the world's foremost hackers,\" says Kelbourne. \"She's going to give a talk about network security today. Her name is... uh... Mapquest Something. I forget. She's very famous in those circles though.\"\\n\\n\"What's that thing she's next to?\"\\n\\n\"Oh, that's the main network centre. This floor has its own mini-network separated from the rest of the library system. There's going to be a lot of people here and we don't want them to have to share bandwidth. That station is where all the routers and servers and whatnot go.\"\\n\\n\"So what's she doing to it?\" you ask.\\n\\n\"I don't know, probably checking out our security. I'm guessing it leaves something to be desired. Anyway, the third person is that professional surfer in the back.\"\\n\\n\"Huh?\" \\n\\nYou turn around. Sitting off in the corner is a little guy with big shorts a big t-shirt. He's sitting next to a bright pink surfboard. The word \"WAVES\" is painted on it in cyan. \\n\\n\"His name's Chet. He's going to be giving a talk about how surfing relates to computers or something. Conferences like these attract all kinds.\"\\n\\n\u2022 [[So where's number four?|110]] ",
+      "links": [
+        {
+          "text": "So where's number four?",
+          "destination": {
+            "name": "110",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "66",
+      "text": "<<if $threaten>>\"So you don't feel threatened by her ideas?\"<<else>>\"So do you feel threatened by her ideas?\"<<endif>>\\n\\n\"Oh good heavens no. She's a common kook. The irrationality of her anti-technology hysteria is plainly obvious.\"\\n\\n\"To you maybe. What about other people? Do they like her?\"\\n\\n\"She has her devotees, of course. But she's simply fighting a losing battle. History is full of misguided regressives like her. Ultimately they amount to nothing. Their bodies lie in heaps by the side of the information superhighway.\"<<set $heaps = true>>\\n\\n\u2022 [[Okay that definitely sounds like something a murderer would say.|90]] \\n\u2022 [[Information superhighway?|2]] ",
+      "links": [
+        {
+          "text": "Okay that definitely sounds like something a murderer would say.",
+          "destination": {
+            "name": "90",
+            "pid": 94
+          }
+        },
+        {
+          "text": "Information superhighway?",
+          "destination": {
+            "name": "2",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "67",
+      "text": "\"...Miles Carnarvon is the killer.\"<<set $accusemc = true>>\\n\\n\"Me? Don't be absurd.\"\\n\\n\"Oh, I won't be absurd. I'll be entirely regular. First, the motive:\"\\n\\n\u2022 [[You hated Paige.|61]]\\n\u2022 [[You were threatened by Paige.|39]]\\n\u2022 [[You and Paige were having a torrid love affair.|95]] ",
+      "links": [
+        {
+          "text": "You hated Paige.",
+          "destination": {
+            "name": "61",
+            "pid": 29
+          }
+        },
+        {
+          "text": "You were threatened by Paige.",
+          "destination": {
+            "name": "39",
+            "pid": 66
+          }
+        },
+        {
+          "text": "You and Paige were having a torrid love affair.",
+          "destination": {
+            "name": "95",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "68",
+      "text": "\"So have //you// seen anything weird-weird today?\"\\n\\n<<if $problems>>\"Nothing aside from this network. I'm really having a hell of a time pinning down what's wrong.\"<<else>>\"The only unusual thing I've seen today is this network. As soon as I hooked my gear up this morning I saw something was wrong. Weird microfluxes and byte signatures, that kind of thing. I've been racking my brains trying to figure out what's going on but so far I'm stumped.\"\\n\\n\"Uh-huh,\" you say.\\n\\n\"But that's a computer problem, haven't seen any real world problems lately.\"<<endif>>\\n\\n\"Okay. Well, thanks.\"\\n\\n\"Anytime,\" she says.\\n\\n\u2022 [[On to the surfer.|15]] ",
+      "links": [
+        {
+          "text": "On to the surfer.",
+          "destination": {
+            "name": "15",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "69",
+      "text": "\"What were you doing this morning?\"\\n\\n\"I was in the bathroom for a while.\"\\n\\n\"Gross.\"\\n\\n\"N-no. I wasn't... I was just trying to, you know, meditate. Get my bearings. I've been really into that whole mindfulness thing lately and I thought being around all that water might calm me down. But... I don't know...\"\\n\\n\"Okay, so you were hiding in a bathroom. And then?\"\\n\\n\"Well a while I just was getting all claustrophobic in there, so I decided to come out here. Figured the wide open room might be a bit more, um, beach-like.\"\\n\\n\u2022 [[Tell me about mindfulness.|8]]\\n\u2022 [[When did you get here?|108]]\\n\u2022 [[What do you know about Paige's murder?|44]] \\n",
+      "links": [
+        {
+          "text": "Tell me about mindfulness.",
+          "destination": {
+            "name": "8",
+            "pid": 14
+          }
+        },
+        {
+          "text": "When did you get here?",
+          "destination": {
+            "name": "108",
+            "pid": 56
+          }
+        },
+        {
+          "text": "What do you know about Paige's murder?",
+          "destination": {
+            "name": "44",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "stylesheet",
+      "text": "h1 {\\n\ttext-align:center;\\n\tline-height:120%;\\n\tfont-size:24pt;\\n\tfont-weight:bold;\\n}\\n\\nh2 {\\n\tfont-size:18pt;\\n\tline-height:120%;\\n\ttext-align:center;\\n\tfont-weight:normal;\\n\tmargin-top:-15px;\\n}\\n\\nh3 {\\n\tfont-size:16pt;\\n\ttext-align:center;\\n\tmargin-top:30px;\\n}\\n\\nbody {\\n\tbackground-color: #e9d7a8;\\n\tmargin:15px !important;\\n\tcolor: black;\\n}\\n\\n.passage {\\n\tfont-size: 10pt;\\n\tmin-width:200px;\\n\tmax-width:600px;\\n\tpadding:15px !important;\\n\tmargin:0 auto !important;\\n\tbackground-color: #f7f0df;\\n\tborder:solid 3px #5c84b8;\\n\topacity:1 !important;\\n}\\n\\n.passage li {\\n\tmargin:0px !important;\\n\tmargin:0 auto !important;\\n}\\n\\n#passages\\n{\\n\tborder-left:0px !important;\\n\tmargin:0 auto !important;\\n\tpadding:0px !important;\\n}\\n\\n#sidebar {\\n\tdisplay: none !important;\\n}\\n\\na.internalLink,a.externalLink,a.back {\\n\tcolor:#365680;\\n\tfont-weight:bold;\\n\ttext-decoration:none;\\n}\\n\\na.internalLink:hover,a.back:hover {\\n\tcolor:#365680;\\n\tfont-weight:bold;\\n\ttext-decoration:underline;\\n}\\n\\na.externalLink {\\n\tcolor:#365680;\\n\tfont-weight:normal;\\n\ttext-decoration:none;\\n}\\n\\na.externalLink:hover {\\n\tcolor:#365680;\\n\tfont-weight:normal;\\n\ttext-decoration:underline;\\n}\\n\\n::selection\\n{\\ncolor:white;\\nbackground-color:#5c84b8;\\n}\\n::-moz-selection\\n{\\ncolor:white;\\nbackground-color:#f7f0df;\\n}",
+      "links": []
+    },
+    {
+      "pid": 88,
+      "name": "2",
+      "text": "\"Let me stop you there, Mr. Carnarvon. What exactly is a super... thing?\"<<set $superhighway = true>>\\n\\n\"The information superhighway?\"\\n\\n\"Yeah, that.\"\\n\\n\"You're not familiar? Perhaps you know it better as the infobahn.\"\\n\\nYou give him a blank look.\\n\\nHe smiles. \"Ah, history moves so fast. It was the dominant metaphor for the internet when I was a younger man. A vast, magnificent piece of infrastructure, leading towards a new era.\"\\n\\n\"So what, the internet's a road? That doesn't make sense. You don't drive down the internet.\"\\n\\n\"No, it's a road for information. Information travels down it.\"\\n\\n\"...In a car?\"\\n\\n\"Hmm. Perhaps it was an idea for a different time.\"\\n\\n\u2022 [[Did you know Paige was speaking here?|37]] ",
+      "links": [
+        {
+          "text": "Did you know Paige was speaking here?",
+          "destination": {
+            "name": "37",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "6",
+      "text": "\"Well...\" You make a show of stroking your chin. \"It's certainly lower than my going rate... but for you I think I can make an exception. You've got a deal.\"\\n\\n\"Excellent,\" he says. \"This way, Ms. Park.\"\\n\\nKelbourne leads you down the hall past a bunch of empty rooms.\\n\\n\"We rented the whole top floor for the weekend,\" he says. \"That means we've got all these private study rooms reserved on top of the big conference room in the back. We're going to be using them to host smaller discussion groups later, but since the conference hasn't started yet we're letting some of the early presenters get themselves ready in there.\"\\n\\nHe stops in front of a closed study room and starts rummaging through his pockets. A handwritten sign has been taped to the door.\\n\\n\"Sign says 'NO ENTRY',\" you point out.\\n\\n\"I put that there.\"\\n\\n\"Oh. Right. That makes sense.\"\\n\\n\"Aha. Here we go.\" He pulls out a keycard. \"Now, I should warn you, this mystery might be... a //bit// more serious than the ones you're used to. It's not exactly the sort of thing twelve-year-olds normally get involved with.\"\\n\\n\u2022 [[I've got this.|76]] ",
+      "links": [
+        {
+          "text": "I've got this.",
+          "destination": {
+            "name": "76",
+            "pid": 128
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "99",
+      "text": "\"Dude //what// are you even talking about?\"\\n\\n\"Yeah, you need to cool your heatsinks buddy,\" says -bitmap-zer0-. \"Computers can't think. They do what we tell them to do and that's it\"\\n\\n\"No. This is different. This is more. We made it more when we logged on this morning and started uploading our presentations for the conference. It was like lightning striking the primordial soup.\"\\n\\n\"There's literally no technological reason why that would ever happen.\"\\n\\n<<if $accusechet>>\"No? It was your intimate hacking knowledge that gave it a sense of self, of its own body. My insightful essays gave it an intellect. Paige's mindless ranting gave it irrational feminine emotionality. Argent's start-up gave it the ability to socialize. Don't you see? This is our child. All of us! We surrendered ourselves to an orgy of forbidden digital pleasures and birthed this creature out of our online presences! It is a being. We must raise it and name it. And the name I choose is //THE FUTURE!//\"<<else>>\"No? It was your intimate hacking knowledge that gave it a sense of self, of its own body. My insightful essays gave it an intellect. Paige's mindless ranting gave it irrational feminine emotionality. Argent's start-up gave it the ability to socialize.\"\\n\\n\"...and I gave it a love of surfing.\" says Chet.\\n\\n\"You see? This is our child. All of us! We surrendered ourselves to an orgy of forbidden digital pleasures and birthed this creature out of our online presences! It is a being. We must raise it and name it. And the name I choose is //THE FUTURE!//\"<<endif>>\\n\\n\"'Irrational feminine emotionality?' You misogynistic piece of //bloatware.// If you were a computer right now I would fry your phreaking motherboard!\"\\n\\n\"We'll all going to be computers soon! The digital tomorrow is upon us!\"\\n\\nShe holds up a fist. \"Oh, I'll show you digital.\"\\n\\n\u2022 [[Wait, hear him out. What's this about the internet?|58]] \\n\u2022 [[Hell yeah, punch this creep!|112]] ",
+      "links": [
+        {
+          "text": "Wait, hear him out. What's this about the internet?",
+          "destination": {
+            "name": "58",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Hell yeah, punch this creep!",
+          "destination": {
+            "name": "112",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "98",
+      "text": "Kelbourne rounds up the four suspects and sits them down in the front row of the conference. You pace back and forth in front of them.\\n\\n\"I don't know why I'm going along with this,\" mumbles Sunflower.\\n\\n\"Thank you for your patience, everyone,\" says Kelbourne. \"Ms. Park here has something she would like to say to everyone. Go ahead, Bell.\"\\n\\nYou clear your throat. \"As you all know, Paige McKinley was murdered this morning. She was killed when only the four of you were present, and her death obviously wasn't an accident. You also all know that I have been pursuing an investigation into this murder. You know this because you were all interviewed by me, as part of that investigation. So now my investigation is over, and after thinking about the evidence really hard, I've concluded that...\"\\n\\n\u2022 [[Miles Carnarvon did it.|67]]\\n\u2022 [[-bitmap-zer0- did it.|74]]\\n\u2022 [[Chet Bader Ginsburg did it.|81]]\\n\u2022 [[Argent Sunflower did it.|53]] \\n\u2022 [[I don't know who did it.|97]] ",
+      "links": [
+        {
+          "text": "Miles Carnarvon did it.",
+          "destination": {
+            "name": "67",
+            "pid": 84
+          }
+        },
+        {
+          "text": "-bitmap-zer0- did it.",
+          "destination": {
+            "name": "74",
+            "pid": 130
+          }
+        },
+        {
+          "text": "Chet Bader Ginsburg did it.",
+          "destination": {
+            "name": "81",
+            "pid": 49
+          }
+        },
+        {
+          "text": "Argent Sunflower did it.",
+          "destination": {
+            "name": "53",
+            "pid": 36
+          }
+        },
+        {
+          "text": "I don't know who did it.",
+          "destination": {
+            "name": "97",
+            "pid": 99
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "StoryTitle",
+      "text": "Bell Park, Youth Detective",
+      "links": []
+    },
+    {
+      "pid": 93,
+      "name": "91",
+      "text": "\"Not even to go the bathroom?\"\\n\\n\"Nah, all I've consumed today is nutrient powder. Shouldn't have to go for another 30 .beats.\"\\n\\n<<if $bzpaige>>\u2022 [[Can anyone confirm?|24]]\\n\u2022 [[All done.|35]]<<else>>\u2022 [[Ever heard of Paige McKinley?|28]]\\n\u2022 [[Can anyone confirm?|24]]\\n\u2022 [[All done.|35]] <<endif>> \\n",
+      "links": [
+        {
+          "text": "Can anyone confirm?",
+          "destination": {
+            "name": "24",
+            "pid": 3
+          }
+        },
+        {
+          "text": "All done.",
+          "destination": {
+            "name": "35",
+            "pid": 74
+          }
+        },
+        {
+          "text": "Ever heard of Paige McKinley?",
+          "destination": {
+            "name": "28",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "90",
+      "text": "\"That's... kinda morbid.\"\\n\\n\"You'll have to forgive my vivid metaphors. I'm just trying to convey the utter futility of pushing against the tide of history. It's a force unto itself, more powerful than the life or desires of any one human.\"\\n\\nYou stare at him for a couple of seconds.\\n\\n\"Let me ask you a question, Mr. Carnarvon: are you sure that wasn't a simile?\"<<set $simile = true>>\\n\\n\"No. A simile a comparison using 'like' or 'as'.\"\\n\\n\"Then what's a metaphor?\"\\n\\n\"It's like the thing I said earlier about the bodies.\"\\n\\n\"Hmm...\"\\n\\n\"Can I ask what exactly is prompting all these questions?\"\\n\\n\u2022 [[Just curious.|116]] \\n\u2022 [[Paige is dead.|115]] ",
+      "links": [
+        {
+          "text": "Just curious.",
+          "destination": {
+            "name": "116",
+            "pid": 113
+          }
+        },
+        {
+          "text": "Paige is dead.",
+          "destination": {
+            "name": "115",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "93",
+      "text": "\"What's an entrepreneur?\"\\n\\n\"It's a dynamic individual -- such as myself -- who initiates an innovative business venture. I take on all the risks but also reap all the rewards.\"\\n\\n\"You any good at it?\"\\n\\n\"Very good. Entrepreneur Magazine ranked me as one of the Top 20 young entrepreneurs in their 2013 Entrepreneur Rankings.\"\\n\\n\"You don't look young to me.\"\\n\\n\"Yes well, you're not a magazine editor, are you?\"\\n\\n\u2022 [[What are you doing here?|31]] \\n\u2022 [[Ever meet Paige McKinley?|7]] \\n",
+      "links": [
+        {
+          "text": "What are you doing here?",
+          "destination": {
+            "name": "31",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Ever meet Paige McKinley?",
+          "destination": {
+            "name": "7",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "92",
+      "text": "\"You okay, Chet? You seem a little stressed out.\"\\n\\n\"It's just... You're saying things so fast and all this talk of someone died and I don't even know anything about anything.\"\\n\\n\"I think you know a bit more then you're letting on.\"\\n\\n\"No. No, you have to understand, I... I travelled quite far to be here. I haven't been this far from the ocean in some time. The tides and the salt air always calmed me. And now there are all these buildings and there was a murder? It's just a lot to take in. I need to lie down.\" He shuffles off towards the other side of the room.\\n\\n\"Hey, I'm not through with you yet!\"\\n\\nHe looks back at you for a second and stops watching where he's going, causing him to bump into one of the rows of chairs in front of him. His leg gets tangled up in a chair and he tries it off but that just pushes him backwards into another chair, which trips him onto the ground. He grabs a third chair to pull himself up but he puts so much weight on it that it falls back of his hands, sending him sprawling to the ground. Finally, he just sort of crawls under the next row of chairs and curls up into a ball.\\n\\n\"Er... okay,\" you say. \"Maybe I am.\"\\n\\n\u2022 [[On to the last guy.|89]]",
+      "links": [
+        {
+          "text": "On to the last guy.",
+          "destination": {
+            "name": "89",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "95",
+      "text": "\"You and Paige didn't just work in the same industry, you worked in the same //bed.// As lovers!\"\\n\\n\"Who told you that?\" asks Carnarvon.\\n\\n\"Your eyes did,\" you say. \"I saw the look on your face when you were talking about her. You and Paige McKinley were having a torrid love affair. And you killed her because... something... bad happened. With that. Okay, I haven't thought that part all the way through yet, but that's definitely why you killed her.\"\\n\\n\"Well I'm sorry to spoil your theory but Ms. McKinley was a lesbian.\"\\n\\n\"Really?\" You look around to everyone else.\\n\\n\"Sounds familiar,\" says Kelbourne.\\n\\n\"Yeah I think I might have heard something like that,\" says Argent.\\n\\n\"Uh... okay. Can I change my accusation to you being mad because she //wouldn't// be your lover?\"\\n\\n\"I don't think so,\" says Carnarvon.\\n\\n\u2022 [[Uh...|60]]\\n\u2022 [[Well...|60]]\\n\u2022 [[Okay...|60]] ",
+      "links": [
+        {
+          "text": "Uh...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Well...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Okay...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "94",
+      "text": "\"What the heck are you talking about?\" you say.\\n\\n\"There is a living thing in this network,\" says Carnarvon. \"Somehow it was... born this morning. Born out of the PowerPoint presentations and bits of code that we uploaded into it. It's sentient, and //it// was what killed Paige McKinley.\"\\n\\n\"Waaaait a minute,\" you say.\\n\\n\"Let me explain,\" he says. <<if $paigehere2 or $headphones2>>\\n<<if $headphones2>>\"Our young detective was right about one thing. I //could// hear what was going on next door. I heard Ms. McKinley talking to Mr. Kelbourne when she came in this morning, so I knew she was in the room next to mine.<<endif>><<if $paigehere2>>\"Our young detective was right about one thing. I did know Ms. McKinley was here. I heard her talking with Mr. Kelbourne this morning in the room next to mine.<<endif>><<else>>\"You see, I heard Ms. McKinley talking to Mr. Kelbourne through the wall this morning, so I knew she was in the room next to mine.<<endif>> I wanted so dearly to go over there and tell her to stop spreading her cockamamie theories, but I restrained myself. Better to be the bigger man, I thought. And I would have left it at that, but a short while later she started making this... awful racket. It was completely disrupting my work flow. So I went over there with an intention to give her a piece of mind.\\n\\n\"And then you killed her,\" you say. <<if $accusemc>>\"I knew it.\"<<endif>>\\n\\n\"No. When I came in Paige was already on the floor, cables wrapped around her neck, last gasps of air escaping from her helpless body. But the cables... the cables were //moving//. Twisting around of their own accord like charmed snakes! I looked around for the source of the motion, started tracing the wires back to their origin point. And that's when I saw it: the blinking red light on her room's wireless repeater. It was... unlike anything I had ever seen. So expressive, like the eye of a dolphin or a faithful hound. I tell you there was //life// in that point of light! It stared into me and I into it and all at once I knew that something new and beautiful had been born.\"\\n\\n\"You actually saw her being dying?\" asks Argent. \"Why didn't you call for help?\"\\n\\n\"By the time I realized what was happening she was already dead. Her frail material form had failed her. In any case, I couldn't risk letting this tender new being come to harm. You see, I knew the day would come when man and machine would begin their inexorable merging into one. I just never thought it would be the //machines// that initiated it. That complicated things. I knew I could trust the human race to embrace its own works, but the work of an outside intelligence could well be received with anger, or distrust, or fear. We cannot afford to fear this creature. It's a miracle -- more marvellous than any wonder of nature. And it needs to be protected.\"\\n\\n\u2022 [[Okay that sounds kinda wacko.|99]] \\n\u2022 [[The internet killed Paige?|58]] ",
+      "links": [
+        {
+          "text": "Okay that sounds kinda wacko.",
+          "destination": {
+            "name": "99",
+            "pid": 90
+          }
+        },
+        {
+          "text": "The internet killed Paige?",
+          "destination": {
+            "name": "58",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "97",
+      "text": "\"...uh... I don't know who the killer was. I don't think it was any of you anyway and I don't know who else it could have been. <<if $weird>>I mean you're all kind of weird but I don't think... you know, you're //weird// weird?<<endif>> I mean... maybe one of you did? But I think you didn't... I think. So I guess the answer is... there's no answer? Or I don't have the answer. Or the answer isn't the type of answer we thought it was... or... uh...\"\\n\\nYou trail off. Everyone keeps staring it you.\\n\\n\"Satisfied now, Kelbourne?\" asks Argent.\\n\\nKelbourne sighs. \"It's okay, Bell. There's nothing wrong with not knowing the answer.\"\\n\\nYou sniff. \"I... I mean, I //tried//... It's just--\" \\n\\n\"Hey, it'll be okay.\" He puts his hand on your shoulder. I'm calling the cops now. Sorry I got you mixed up in this.\"\\n\\n\"I'm... I'm sorry,\" you say.\\n\\nHe takes out his phone.\\n\\n\"Damn, out of batteries. Can I borrow someone's phone?\"\\n\\nEveryone digs into their pockets.\\n\\n\"Sorry, mine's dead too,\" says Argent. \"Must not have plugged it in last night.\"\\n\\n\"So's mine,\" says -bitmap-zer0-, \"Huh.\"\\n\\n\"Likewise,\" says Carnarvon. \"Chet?\"\\n\\n\"I left my phone in my other board shorts.\"\\n\\n\"Okay something weird is going on,\" says -bitmap-zer0-. \"We need to find a landline to jack into or something.\"\\n\\n\u2022 [[Maybe there's a jack by the router.|9]] \\n\u2022 [[There's a phone at the front desk.|88]] \\n",
+      "links": [
+        {
+          "text": "Maybe there's a jack by the router.",
+          "destination": {
+            "name": "9",
+            "pid": 126
+          }
+        },
+        {
+          "text": "There's a phone at the front desk.",
+          "destination": {
+            "name": "88",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "96",
+      "text": "\"What's your speech about?\"\\n\\n\"It's about network vulnerabilities and the limits of encryption in a macroprocessor environment.\"\\n\\n\"Uh-huh,\" you say. \"Follow up question: what do all those words mean?\"\\n\\nShe smiles. \"It means I'm talking about hacking, basically.\"\\n\\n\u2022 [[Isn't hacking illegal?|23]]\\n\u2022 [[Did you know Paige McKinley?|28]] \\n\u2022 [[When did you get here?|17]] ",
+      "links": [
+        {
+          "text": "Isn't hacking illegal?",
+          "destination": {
+            "name": "23",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Did you know Paige McKinley?",
+          "destination": {
+            "name": "28",
+            "pid": 11
+          }
+        },
+        {
+          "text": "When did you get here?",
+          "destination": {
+            "name": "17",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "11",
+      "text": "You knock on the door.\\n\\n\"Miles Carnarvon?\"\\n\\n\"Yes, yes, come in! Come in!\"\\n\\nYou cautiously open the door and look around. The room looks almost identical to Paige's. Except, you know, no body. A fat old guy in a tan suit with a dumb-looking moustache is sitting at the table, typing on a MacBook Air.\\n\\n\"Ah, a millennial!\" he says, \"A portent of our coming future! Come, little one! Sit on my lap and regale me with stories of your digital nativity.\"\\n\\n\"I'll... stand, thanks.\"\\n\\nHe claps his hands together. \"Standing it is then!\"\\n\\n\"My name is Bell Park,\" you say. \"I'm a Youth Detective. I was wondering if I could ask you a few questions maybe?\"\\n\\n\"Ask away! I am always happy to indulge your nascent generation in its unquenchable thirst for knowledge.\"\\n\\n\u2022 [[Who are you? What are you doing here?|77]]\\n\u2022 [[Do you know Paige McKinley?|62]] \\n\u2022 [[Where were you this morning?|113]] ",
+      "links": [
+        {
+          "text": "Who are you? What are you doing here?",
+          "destination": {
+            "name": "77",
+            "pid": 127
+          }
+        },
+        {
+          "text": "Do you know Paige McKinley?",
+          "destination": {
+            "name": "62",
+            "pid": 79
+          }
+        },
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "113",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "10",
+      "text": "\"Oh, she's a blogger alright. A //dead// blogger.\"\\n\\n\"She died?\"\\n\\n\"As if you didn't know.\"\\n\\n\"Dear god. She can't have been that old. What happened to her?\"\\n\\n\u2022 [[You tell me.|32]]\\n\u2022 [[She was murdered.|49]] ",
+      "links": [
+        {
+          "text": "You tell me.",
+          "destination": {
+            "name": "32",
+            "pid": 69
+          }
+        },
+        {
+          "text": "She was murdered.",
+          "destination": {
+            "name": "49",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "13",
+      "text": "\"Pretty far from the ocean, Chet. What brings you here?\"\\n\\n\"You could say I'm, uh, 'surfing the net.'\"\\n\\nYou stare blankly.\\n\\n\"...//surfing// the net,\" he says.\\n\\n\"I don't know what that means.\"\\n\\n\"You know, surfing?\"\\n\\n\"I know surfing. Are you saying you tweet about surfing or something?\"\\n\\n\"No, it's like... you know... it's that saying. Everyone says it. 'Surfing the internet.' It's, er, what you do to the internet.\"\\n\\n\"Do you mean //using// the internet? Because that's what I do to the internet.\"\\n\\n\"Well, it's a figure of speech.\"\\n\\n\"Hmm.\"\\n\\n\"I guess it's... before your time?\"\\n\\n\"Ohhhh, old person slang. Gotcha.\" You consult your notes.<<set $surfing = true>>\\n\\n\u2022 [[But seriously, what are you doing here?|36]]\\n\u2022 [[What do you know about murder?|40]]\\n\u2022 [[Where were you this morning?|69]] \\n<<if $superhighway>>\u2022 [[Explain this slang to me.|43]]<<endif>>",
+      "links": [
+        {
+          "text": "But seriously, what are you doing here?",
+          "destination": {
+            "name": "36",
+            "pid": 73
+          }
+        },
+        {
+          "text": "What do you know about murder?",
+          "destination": {
+            "name": "40",
+            "pid": 122
+          }
+        },
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "69",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Explain this slang to me.",
+          "destination": {
+            "name": "43",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "12",
+      "text": "\"So were there any problems?\"\\n\\n\"Were there! You know they're using 400-baud encryption routines on all their access ports? If I wanted to I could check every single book out of this library with a single shell command. Reference books and everything. Wouldn't even take me half a subroutine.\"<<set $problems = true>>\\n\\n<<if $library>>\"Okay, why would you ever want to check //every book// out of the library?\" you ask. \"Am I missing something?\"<<else>>\"Why would you want to check every book out of the library?\" you ask.<<endif>>\\n\\n\"Don't ask why I would want to do it, ask why a Chechen cyberterrorist would want to do it.\"\\n\\n\"I don't know what that is.\"\\n\\n\"There are bad people out there in the world my little microhuman. In my line of work you've got to think like they do.\"\\n\\n<<if !$illegal>>\u2022 [[Sounds illegal.|23]]\\n\u2022 [[Did someone hack the system?|52]]<<else>>\u2022 [[Did someone hack the system?|52]]<<endif>>\\n",
+      "links": [
+        {
+          "text": "Sounds illegal.",
+          "destination": {
+            "name": "23",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Did someone hack the system?",
+          "destination": {
+            "name": "52",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "15",
+      "text": "The grumpy man still looks grumpy so you decide to talk to the surfer. He's still in that same corner, staring at the wall. As you get closer you can see that he's tapping his foot super fast and drumming his fingers on his knee.\\n\\n\"You the surfer?\" you ask.\\n\\nHe looks at you and then over at his surfboard. \"Uh... yes?\"\\n\\n\"I need to ask you some questions.\"\\n\\n\"I'm sorry... who... are you?\"\\n\\n\"Bell Park, Youth Detective with the Toronto Police Department.\"\\n\\nHe looks you up and down. \"You're with the Toronto Police Department?\"\\n\\n\"Well like, I'm in Toronto and they're in Toronto and we're both solving crimes. So yeah, I'd call that 'with.' Now I need to ask you some questions.\"\\n\\n\"Uh... well...\"\\n\\n\u2022 [[What's your deal?|27]] ",
+      "links": [
+        {
+          "text": "What's your deal?",
+          "destination": {
+            "name": "27",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "14",
+      "text": "You head out into the big room and survey the scene. The three suspects are still the only people in here and they're still doing pretty much what they were doing when you first saw them. The guy at the podium looks grumpy and the surfer guy looks kind of weird so you figure you'll start with the hacker lady with the mystery name. You walk up behind her and clear your throat.\\n\\nWithout looking up from the screen she says, \"Can I help you, young sub-adult?\"\\n\\n\"Maybe,\" you say. \"The name's Bellwoods W. Park. I'm a Youth Detective. Can we talk for a bit?\"\\n\\n\"Cute. What does the W stand for?\"\\n\\n\"I'll ask the questions here.\"\\n\\n\"Well ask away. I hope you don't mind if I keep multitasking though.\" \\n\\n\u2022 [[What's your name?|25]] \\n\u2022 [[What are you doing?|55]] \\n\u2022 [[Actually I do mind.|70]] ",
+      "links": [
+        {
+          "text": "What's your name?",
+          "destination": {
+            "name": "25",
+            "pid": 4
+          }
+        },
+        {
+          "text": "What are you doing?",
+          "destination": {
+            "name": "55",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Actually I do mind.",
+          "destination": {
+            "name": "70",
+            "pid": 134
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "17",
+      "text": "\"What are you doing with all these keyboards and stuff?\"\\n\\n\"I noticed the network was acting funny when I started plugging in my gear,\" she says. \"Minor fluctuations in bitrate, that sort of thing. Small blips, but out of sync with what you'd expect from normal trigonometric variance. Public LAN like you've got here you expect it to be a bit rickety but I also worried there might be some kind of malicious codeware buried in here somewhere. So I decided to take a look.\"<<set $problems = true>>\\n\\n\"So you're... looking inside a computer using another computer?\"\\n\\n\"Two other computers, actually. And three more offsite.\" \\n\\n\u2022 [[What'd you find?|12]] \\n\u2022 [[How long have you been here?|83]] ",
+      "links": [
+        {
+          "text": "What'd you find?",
+          "destination": {
+            "name": "12",
+            "pid": 104
+          }
+        },
+        {
+          "text": "How long have you been here?",
+          "destination": {
+            "name": "83",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "16",
+      "text": "\"Where were you today between the hours of 8:30 and 9:00?\"\\n\\n\"Come on, little girl. Go play somewhere else.\"\\n\\n\"No alibi, huh? I'll be sure to mention that in my report.\"\\n\\n\"Report? What are you on about?\"\\n\\n\"Oh, you want to know? Well I'm not telling! Not until you answer my questions.\"\\n\\n\"Well I'm certainly not going to answer anything until you tell me who you are.\"\\n\\n\"Fine. The name's Bell Park. I'm a Youth Detective with the Toronto Police Department. I'm 12 years old and my three favourite things are Snapchat, my best friend Cassidy, and twerking. In that order. Now about that murder you totally did.\"\\n\\n\"Aren't you a little young to be twerking?\"\\n\\n\"Aren't you a lot old?\"\\n\\nHe looks like he's about to say something nasty, but then he catches himself and breathes out loudly through his nose. \"Fine,\" he says. \"If it'll get you off my back, then you can ask me some questions or whatever. You've got two minutes.\"\\n\\n\u2022 [[Who are you?|18]] \\n\u2022 [[Where were you this morning?|21]] \\n\u2022 [[Do you know Paige McKinley?|7]] ",
+      "links": [
+        {
+          "text": "Who are you?",
+          "destination": {
+            "name": "18",
+            "pid": 110
+          }
+        },
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "21",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Do you know Paige McKinley?",
+          "destination": {
+            "name": "7",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "19",
+      "text": "<<if $careless>>You roll your eyes. \"Okay whatever.\"\\n\\n\"We are on the cusp of a new era,\" he says. \"One where the boundary between digital and physical has evaporated. A world without poverty, oppression, or war.\"\\n\\n\"Sounds neat.\"\\n\\n\"There are some who deny it, but it's inevitable. The writing is on the wall. On the //Facebook// wall, I should say.<<else>>\"So what's all this stuff about the future?\"\\n\\n\"The future is my main area of study, and there has never been a better present in which to be a futurist. We are coming rapidly to a new era, one where our processing speed is effectively infinite and the distinction between digital and physical is largely meaningless. In this world there is no poverty, no oppression and no war.\\n\\n\"How do you know all this?\"\\n\\n\"It's inevitable. You just have to extrapolate.<<endif>> You see, two million years ago it was all just monkeys and none of them talked to each other. But then we got the printing press, and then the steam engine, and now social media. Every step of the way we have gotten more and more connected. Soon the whole world will be fully integrated into one giant network. All our thoughts will mingle and we shall be as one.\"\\n\\n\"How soon are we talking?\"\\n\\n\"If the rate of exponential growth in computational power continues -- and we have no reason to think that it won't -- we should start to see full-scale connection on this level in 8 to 12 years.\"\\n\\n\"Don't you think that might cause problems?\"\\n\\n\"I don't see how.\"\\n\\n\"Well like no one would have any secrets anymore,\" you say. \"Isn't that kinda bad?\"\\n\\n\"Privacy is an outdated norm and I would not be sad to see it go. It would mean a much improved society.\"\\n\\n<<if $mcwhere and $mcpaige>>\u2022 [[So you don't have any secrets?|22]]<<endif>><<if !$mcwhere and $mcpaige>>\"Well then I guess you won't mind answering a couple more questions.\"\\n\\n\u2022 [[Where were you this morning?|113]]\\n\u2022 [[Do you have any secrets?|22]]<<endif>><<if $mcwhere and !$mcpaige>>\"Well then I guess you won't mind answering a couple more questions.\"\\n\\n\u2022 [[Do you know Paige McKinley?|62]]<<endif>><<if !$mcwhere and !$mcpaige>>\"Well then I guess you won't mind answering a couple more questions.\"\\n\\n\u2022 [[Do you know Paige McKinley?|62]]\\n\u2022 [[Where were you this morning?|113]]<<endif>>",
+      "links": [
+        {
+          "text": "So you don't have any secrets?",
+          "destination": {
+            "name": "22",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "113",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Do you have any secrets?",
+          "destination": {
+            "name": "22",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Do you know Paige McKinley?",
+          "destination": {
+            "name": "62",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "18",
+      "text": "\"Who are you?\" you ask. \"What's your deal?\"\\n\\n\"Here.\" He hands you a business card. \"My name is Argent Sunflower. I'm an entrepreneur.\"\\n\\nYou squint at the card. \"What's frthr?\"\\n\\n\"It's pronounced 'further'. And it's a social innovation platform and communication solution. It's going to revolutionize the way we connect with one another online.\"\\n\\n\"If it's so great then how come I've never heard of it?\" \\n\\n\"It's a start-up. We just launched. But trust me, all your little your friends will be hooked on it before Christmas.\"\\n\\n\u2022 [[What are you doing here?|31]] \\n\u2022 [[Ever meet Paige McKinley?|7]]  \\n\u2022 [[What's an entrepreneur?|93]] ",
+      "links": [
+        {
+          "text": "What are you doing here?",
+          "destination": {
+            "name": "31",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Ever meet Paige McKinley?",
+          "destination": {
+            "name": "7",
+            "pid": 55
+          }
+        },
+        {
+          "text": "What's an entrepreneur?",
+          "destination": {
+            "name": "93",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "Variable Trackin'",
+      "text": "$monospace = -bitmap-zer0- mentions her name should be in a monospaced font.\\n$problems = -bitmap-zer0- has talked about the network problems.\\n$illegal = Bell has asked if hacking is illegal. -bitmap-zer0- talked about hats.\\n$multitask = -bitmap-zer0- refused to stop multitasking.\\n$twenty = Bell negotiated for 20 bucks.\\n$superhighway = Carnarvon explained the superhighway.\\n$threaten = Bell has suggested that Carnarvon might want Paige dead.\\n$weird = -bitmap-zer0- has given Bell the weird weird advice.\\n$heaps = Carnarvon's morbid metaphor \\n$simile = Simile talk.\\n$camera = -bitmap-zer0- mentions the security cameras.\\n$chet = -bitmap-zer0- saw Chet enter at quarter to 9.\\n$chetpaige = Bell has asked Chet about Paige.\\n$surfing = Bell heard surfing slang.\\n$accusebz = Bell accuses -bitmap-zer0- of murder.\\n$mcpaige = Initiated Paige thread with Miles.\\n$mcwhere = Initiated Whereabouts tread with Miles.\\n$mcyou = Initiated Who Are You thread with Miles.\\n$accusemc = Bell accuses Miles\\n$library = Library callback.\\n$noteven = \"not even if\" callback.\\n$careless = approaching future rant from care less passage.\\n$gamification = Heard about Gamification\\n$brain = Heard about Brain Computing.\\n$headphones = Miles claimed about headphones\\n$paigehere = Miles claimed he didn't know Paige was here.\\n$headphones2 = Accusations about the above.\\n$paigehere2 = Accusations about the above.",
+      "links": []
+    },
+    {
+      "pid": 112,
+      "name": "117",
+      "text": "\"That took a while,\" you say.\\n\\nHe waves his hand. \"Oh, so many people come to these things. So many names to keep track of, and of course I'm getting older by the day.\"\\n\\n\"I see.\"\\n\\n\"Anyway, with what does all this have to do? Whence this line of questioning?\"\\n\\n\u2022 [[Just curious.|116]] \\n\u2022 [[Paige McKinley is dead.|115]] ",
+      "links": [
+        {
+          "text": "Just curious.",
+          "destination": {
+            "name": "116",
+            "pid": 113
+          }
+        },
+        {
+          "text": "Paige McKinley is dead.",
+          "destination": {
+            "name": "115",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "116",
+      "text": "\"I'm just curious about the nature of your relationship with Paige,\" you say.\\n\\n\"Well I'd say it was strictly professional but it wasn't even that. I barely ever interacted with her. I responded to some of her articles in public forums, certainly, but we never really had any direct contact. Now if there's nothing else I'm a bit busy. Pre-conference jitters and all that.\"\\n\\n<<if $mcyou and $mcwhere>>\u2022 [[Alright, no more questions.|119]]<<endif>><<if !$mcyou and $mcwhere>>\"One more thing actually,\" you say.\\n\\n\u2022 [[Why did you come to the conference?|77]]<<endif>><<if $mcyou and !$mcwhere>>\"One more thing actually,\" you say.\\n\\n\u2022 [[Where were you this morning?|113]]<<endif>><<if !$mcyou and !$mcwhere>>\"Actually I have a few more questions,\" you say.\\n\\n\u2022 [[Why did you come to the conference?|77]]\\n\u2022 [[Where were you this morning?|113]]<<endif>>",
+      "links": [
+        {
+          "text": "Alright, no more questions.",
+          "destination": {
+            "name": "119",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Why did you come to the conference?",
+          "destination": {
+            "name": "77",
+            "pid": 127
+          }
+        },
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "113",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "48",
+      "text": "You sit down in one of the empty chairs and go over the evidence in your head. Not a whole lot to go on...\\n\\nSuddenly, Kelbourne runs over to your thinking spot. \"Bell, we've got a big crowd of attendees and volunteers out front wondering why they're not being allowed in. And now Argent Sunflower is saying if I don't call the cops then he'll do it for me. If you've got the answers I need to hear them now.\"\\n\\n\"I just need to ask a couple more questions,\" you say.\\n\\n\"There's no time.\"\\n\\n\"But--\"\\n\\n\"I'm sorry, Bell. We're out of time.\" He sighs. \"Maybe it was a mistake to get a 12-year-old involved with this unsanctioned murder investigation after all.\"\\n\\n\"Wait, wait!\" You grab his sleeve. \"I'm ready, alright? I'm ready! Just get everyone together in here and I'll make my accusations.\"\\n\\n\u2022 [[Here goes nothing.|98]] ",
+      "links": [
+        {
+          "text": "Here goes nothing.",
+          "destination": {
+            "name": "98",
+            "pid": 91
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "49",
+      "text": "\"Someone killed her. And by someone I mean you.\\n\\n\"Me?\"\\n\\n\"Yeah, you.\"\\n\\n\"You can't be serious. I never met the woman.\"\\n\\n\"Oh, I think you did. I think you met her here this morning between 8:30 and 9:00. And I think your meeting ended in a murder.\"\\n\\n\"Wait, she was murdered //today//? In this building? Jesus Christ!\"\\n\\n\u2022 [[Don't play dumb with me.|30]] ",
+      "links": [
+        {
+          "text": "Don't play dumb with me.",
+          "destination": {
+            "name": "30",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "46",
+      "text": "\"So you two never met?\"\\n\\n\"I don't think so. I imagine we've been to a few of the same conferences but I can't recall ever having a conversation with her. Why, did you want an introduction? You trying to get an interview for your reporter job?\"\\n\\n\"Detective. And she's dead so it don't think it would be a very good interview.\"\\n\\n\"Oh. God, I'm sorry. I didn't realize she was dead. She must have been young. What happened to her?\"\\n\\n\u2022 [[You tell me.|32]]\\n\u2022 [[She was murdered.|49]] ",
+      "links": [
+        {
+          "text": "You tell me.",
+          "destination": {
+            "name": "32",
+            "pid": 69
+          }
+        },
+        {
+          "text": "She was murdered.",
+          "destination": {
+            "name": "49",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "47",
+      "text": "You scratch the back of your neck. \"That's... uh... interesting.\" \\n\\n\"I know. That's why I'm looking at it.\"\\n\\n\"Well then. I'll leave you to it. Just... make sure you stick around for a while.\"\\n\\n\"Hmm?\" she says, \"Oh yeah. Sure. Not going anywhere.\"\\n\\n\u2022 [[On to the surfer.|15]] ",
+      "links": [
+        {
+          "text": "On to the surfer.",
+          "destination": {
+            "name": "15",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "44",
+      "text": "\"Let's cut to the chase, Chet. <<if $chetpaige>>Paige McKinley? That woman I was talking about? She's dead. Someone murdered her.<<else>>Some lady named Paige McKinley got murdered this morning.<<endif>> Do you know who did it?\"\\n\\n\"Wh-- No! Of course not.\"\\n\\n\"Are you suuuure?\"\\n\\n\"I... I mean, no. I haven't even seen anything since I got here. What murder?\"\\n\\n\u2022 [[You seem anxious.|92]] \\n\u2022 [[Didn't say anything about it happening here.|78]] \\n\u2022 [[And when did you get here?|103]] ",
+      "links": [
+        {
+          "text": "You seem anxious.",
+          "destination": {
+            "name": "92",
+            "pid": 96
+          }
+        },
+        {
+          "text": "Didn't say anything about it happening here.",
+          "destination": {
+            "name": "78",
+            "pid": 136
+          }
+        },
+        {
+          "text": "And when did you get here?",
+          "destination": {
+            "name": "103",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "45",
+      "text": "\"You didn't have an alibi for the time Paige was murdered!\"\\n\\n\"That's true,\" he says. \"I was in my room all morning. Are you saying I'm the only one who was unaccounted for?\"\\n\\n\"Well, no...\"\\n\\n\"So what does that prove exactly?\"\\n\\n\u2022 [[Uh...|60]]\\n\u2022 [[Well...|60]]\\n\u2022 [[Okay...|60]] ",
+      "links": [
+        {
+          "text": "Uh...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Well...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Okay...",
+          "destination": {
+            "name": "60",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "42",
+      "text": "\"Well well,\" you say coolly, \"if it isn't a murderer. I think it's time the two of us had a little chat.\"\\n\\n\"What?\" he says, \"Get out of here, kid. I'm busy.\"\\n\\n\u2022 [[Where were you this morning?|16]] ",
+      "links": [
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "16",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "43",
+      "text": "\"Let me ask you a question, Chet: is the internet supposed to be a highway or a body of water?\"\\n\\n\"Huh?\"\\n\\n\"Not five minutes ago, I was told that the internet was an 'information superhighway.' And now you're telling me you surf on it. Something's not adding up.\"\\n\\n\"I don't understand.\"\\n\\n\"Can't surf on a highway, can't drive on an ocean. So which is it?\"\\n\\n\"It's... I mean I guess it's both.\"\\n\\nYou shake your head. \"Your story doesn't add up, Chet.\"\\n\\n\u2022 [[Tell me about murder.|40]]\\n\u2022 [[Where were you this morning?|69]] \\n\u2022 [[Do you know Paige McKinley?|72]] ",
+      "links": [
+        {
+          "text": "Tell me about murder.",
+          "destination": {
+            "name": "40",
+            "pid": 122
+          }
+        },
+        {
+          "text": "Where were you this morning?",
+          "destination": {
+            "name": "69",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Do you know Paige McKinley?",
+          "destination": {
+            "name": "72",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "40",
+      "text": "You lean forward. \"Tell me about murder, Chat.\"\\n\\n\"I... what? I don't know anything about murder.\"\\n\\n\"It's when someone kills someone else on purpose.\"\\n\\n\"No I know that, I mean--\"\\n\\n\"Oh, so now you //do// know something about murder. I think you better start talking.\"\\n\\n\"About what? I... I don't...\"\\n\\n\u2022 [[About Paige.|44]]\\n\u2022 [[About your whereabouts this morning.|69]] ",
+      "links": [
+        {
+          "text": "About Paige.",
+          "destination": {
+            "name": "44",
+            "pid": 118
+          }
+        },
+        {
+          "text": "About your whereabouts this morning.",
+          "destination": {
+            "name": "69",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "41",
+      "text": "You tug on -bitmap-zer0-'s arm. \"Get in there and start hacking!\"\\n\\n\"Right. I'll go in remotely.\" She grabs one of her laptops and starts typing out commands furiously. \"Uh-oh.\"\\n\\n\"Uh-oh?\"\\n\\n\"This is bad. This is reeeaal bad. The code is all... well, I don't even know. It's all tangled up. I've never seen a network this complex before. And the compression! I mean this thing has gigabytes //inside// of its kilobytes! It's incredible.\"\\n\\n\"Can you hack it?\"\\n\\n\"I... maybe? I mean I wouldn't even know where to begin.\"\\n\\nAll the indicator lights on the station turn red and start blinking in unison as the cables tighten around Carnarvon's neck.\\n\\n\"Come on!\" you say. \"You're the <<if $illegal>>hat lady! <<else>>super hacker! <<endif>> Do something!\"\\n\\n\"There is one thing... With a bit of creative rooting I could bypass all of this upper level stuff and go straight down to the assembly code. Start passing unsigned bits directly up to core subsystems with some truncated machine code. If we can direct enough microchips to start drawing power from incompatible busses, then we //should// be able to start frying the motor controls. The cables would go slack after that. Or I guess the computer could also explode.\"\\n\\n\"What?!\"\\n\\n\"Look, it's risky but it's all I can think of. Your call.\"\\n\\n\u2022 [[Fine!|33]]\\n\u2022 [[Uh...?|34]] ",
+      "links": [
+        {
+          "text": "Fine!",
+          "destination": {
+            "name": "33",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Uh...?",
+          "destination": {
+            "name": "34",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 124,
+      "name": "1",
+      "text": "It's Saturday morning at the Downtown Toronto Reference Library. The entire top floor has been rented out to cyberNExT, an up-and-coming internet technology conference. Its organizer, Mr. Kelbourne, is leading you upstairs.\\n\\n\"...I mean, I'm just so lucky you were downstairs when this all happened,\" he says. \"I'm not sure I would have been able to handle this if I had to go outside the building.\\n\\n\"The best investigators can always be found in the library,\" you explain. \"Reading is the key to good detectiving.\"\\n\\n\"Now look,\" he says, \"I realize you're a bit... well, young, but if you're as good at this as my niece says you are...\"\\n\\n\"Mr. Kelbourne, Amanda was a good sitter, a good client, and a good friend. I didn't let her down, and I don't intend to let a member of her family down either.\\n\\n\"I'm glad to hear that,\" he says. \"This really is quite a difficult situation for me. You see--\"\\n\\nYou hold your hand up. \"Before we get started, there is the matter of my fee.\"\\n\\n\"Oh, right. Of course. I can give you ten dollars.\"\\n\\n\u2022 [[Deal.|6]]\\n\u2022 [[Make it twenty.|87]] ",
+      "links": [
+        {
+          "text": "Deal.",
+          "destination": {
+            "name": "6",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Make it twenty.",
+          "destination": {
+            "name": "87",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "5",
+      "text": "\"That's all. Stay out of trouble, Chet.\"\\n\\n\"Oh god, am I //in// trouble?\"\\n\\n\"You tell me.\"\\n\\nYou get up and start to leave. Chet looks down at his shoes and starts breathing heavily.\\n\\n\"Just one more thing,\" you say. \"Are you a murderer?\"\\n\\n\"N-no. Not a murderer.\"\\n\\nYou stare at him for a couple of seconds.\\n\\n\"Make sure it stays that way.\"\\n\\n\u2022 [[On to the last guy.|89]] ",
+      "links": [
+        {
+          "text": "On to the last guy.",
+          "destination": {
+            "name": "89",
+            "pid": 41
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "9",
+      "text": "You look down at your feet and mumble, \"The uh... the router.\"\\n\\n\"Hmm?\" says Kelbourne.\\n\\n\"The router. There's probably a jack near the router.\"\\n\\n\"Oh yeah,\" says -bitmap-zer0-, \"Good thinking.\" \\n\\nShe starts walking over but Carnarvon moves to intercept her.\\n\\n\"Well now hold on there,\" he says, \"we don't want to start pulling at wires when we don't know what they do.\"\\n\\n\"Uh I definitely know what they do. It's fine.\" She pushes past him.\\n\\n\"Crime scene!\" he says. \"This is a crime scene. We shouldn't touch anything.\"\\n\\n\"The //study room// is a crime scene,\" you say. \"This is just a regular scene. We've all touching things in here all morning.\"\\n\\n\"Stay out of it, little girl. The adults are talking.\"\\n\\n\"Miles, just stop being weird and let her get the phones working!\" says Argent. \\n\\n\u2022 [[Oh shit.|100]] ",
+      "links": [
+        {
+          "text": "Oh shit.",
+          "destination": {
+            "name": "100",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "77",
+      "text": "\"What's your deal?\" you ask. \"Why are you at this conference?\"<<set $mcyou = true>>\\n\\n\"Well, you know my name, at least,\" he says. \"Are you familiar with my body of work?\"\\n\\n\"Um...\"\\n\\nHe chuckles. \"No, I suppose not. No reason why a millennial like yourself would be concerned with the musings of an old boomer like myself, is there? You have your own path to forge across the landscape of ideas.\"\\n\\n\"Yeah...\" you say. \"Totally.\"\\n\\n\"Well, I'm what you might call an intellectual. That means my job is thinking about things. One of the things I think about is the internet and its future. And this conference is all about that future! A perfect fit, you see. That's why I'm here, to think and to talk.\"\\n\\n\u2022 [[What are you going to be talking about?|125]]\\n\u2022 [[What is it you think about?|126]] ",
+      "links": [
+        {
+          "text": "What are you going to be talking about?",
+          "destination": {
+            "name": "125",
+            "pid": 21
+          }
+        },
+        {
+          "text": "What is it you think about?",
+          "destination": {
+            "name": "126",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "76",
+      "text": "\"No need to worry about me, Mr. Kelbourne. I may be young but when it comes to detective work I'm as serious as any grown-up.\"\\n\\nHe nods and opens the door. He leads you into the room, closes the door again, and switches on the lights.\\n\\nA woman's dead body is lying on the ground. Her hands are frozen in place, grasping at a bunch of thick computer cables wrapped around her neck. \\n\\n\"Uh,\" you say.\\n\\n\"This was Paige McKinley,\" says Kelbourne. \"She was an author. Mainly wrote about how the internet was destroying our brains. One of those provocative contrarians, you know.\"\\n\\nYou stare at her eyes. They're still open. She looks afraid.\\n\\n\"Paige was coming to the conference to give a talk about her ideas,\" he says. \"She was on second today. She showed up around 8:30 and I gave her this room. I came back to check on her maybe 25 minutes later and she was... like this.\"\\n\\nYou keep staring at the body.\\n\\n\"What do you think?\" asks Kelbourne.\\n\\nYou don't say anything.\\n\\n\"...Bell?\"\\n\\n\u2022 [[Maybe you should call the police.|79]]\\n\u2022 [[On second thought I definitely cannot handle this.|118]] ",
+      "links": [
+        {
+          "text": "Maybe you should call the police.",
+          "destination": {
+            "name": "79",
+            "pid": 135
+          }
+        },
+        {
+          "text": "On second thought I definitely cannot handle this.",
+          "destination": {
+            "name": "118",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 129,
+      "name": "75",
+      "text": "\"Sounds like the type of person you might want dead.\"<<set $threaten = true>>\\n\\n\"Who, Paige? My word, what an idea!\"\\n\\n\"Well she hates the internet, like you said. And you love the internet, right? So wouldn't you want her to go away?\"\\n\\n\"I certainly think the world would be a better place without her... regressive ideas. But her dying wouldn't change anything. Someone else would just come along and take up her dim torch. No, when it comes to lost souls like her I prefer to let history deal with them. They will be proven wrong in due course.\"\\n\\n\u2022 [[Did you feel threatened by her?|66]] \\n\u2022 [[Did you know she was speaking here?|37]] ",
+      "links": [
+        {
+          "text": "Did you feel threatened by her?",
+          "destination": {
+            "name": "66",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Did you know she was speaking here?",
+          "destination": {
+            "name": "37",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "74",
+      "text": "\"...-bitmap-zer0- is the killer,\" you say.<<set $accusebz = true>>\\n\\nShe raises an eyebrow. \"You sure about that?\"\\n\\n\"Uh... kinda?\"\\n\\n\"Okay,\" says Kelbourne. \"Convince me.\"\\n\\n[[Hacking is illegal, much like murder.|57]]\\n[[She could have killed her with a computer.|86]] \\n<<if $library and $camera>>[[Those cameras aren't real.|128]]<<endif>>",
+      "links": [
+        {
+          "text": "Hacking is illegal, much like murder.",
+          "destination": {
+            "name": "57",
+            "pid": 32
+          }
+        },
+        {
+          "text": "She could have killed her with a computer.",
+          "destination": {
+            "name": "86",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Those cameras aren't real.",
+          "destination": {
+            "name": "128",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 131,
+      "name": "73",
+      "text": "\"...Thanks,\" you say. \"Stick around while I figure this out, okay?\"\\n\\n\"Not planning on going anywhere until I sort all this network stuff out.\"\\n\\n\u2022 [[On to the surfer.|15]] ",
+      "links": [
+        {
+          "text": "On to the surfer.",
+          "destination": {
+            "name": "15",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "72",
+      "text": "\"Do you know Paige McKinley?\"<<set $chetpaige = true>>\\n\\n\"Is she a surfer?\" he asks.\\n\\n\"A surfer? I don't know. I don't think so. I think she's just an internet person\"\\n\\n\"Oh. Then I wouldn't know her. I'm kind of an... uh... outsider to this whole internet world.\"\\n\\n[[So what are you doing here?|36]]\\n[[Paige McKinley is dead.|105]] ",
+      "links": [
+        {
+          "text": "So what are you doing here?",
+          "destination": {
+            "name": "36",
+            "pid": 73
+          }
+        },
+        {
+          "text": "Paige McKinley is dead.",
+          "destination": {
+            "name": "105",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 133,
+      "name": "71",
+      "text": "\"If you're not worried you should at least be //surprised//!\" \\n\\n\"Death isn't surprising. Everything dies. People, goldfish, hard drives, galaxies. Sooner or later it all goes away.\"\\n\\n\"Yeah but--\"\\n\\n\"I mean, think about it,\" she says, \"Would you be surprised if I told you someone died in a car crash today? It's just math.\"\\n\\n\"But... I mean, that's not... Stop answering like that!!\"\\n\\n\"Seriously, are you okay? You seem really agitated right now.\"\\n\\n\u2022 [[Shut up! No I'm not!|59]]\\n\u2022 [[Forget it.|82]] ",
+      "links": [
+        {
+          "text": "Shut up! No I'm not!",
+          "destination": {
+            "name": "59",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Forget it.",
+          "destination": {
+            "name": "82",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 134,
+      "name": "70",
+      "text": "\"I kinda do mind, actually. Could you turn off the computer?\"\\n\\n\"Nope,\" she says.<<set $multitask = true>>\\n\\n\"Er... okay...\"\\n\\n\u2022 [[What's your name?|25]] \\n\u2022 [[What are you doing?|55]] ",
+      "links": [
+        {
+          "text": "What's your name?",
+          "destination": {
+            "name": "25",
+            "pid": 4
+          }
+        },
+        {
+          "text": "What are you doing?",
+          "destination": {
+            "name": "55",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 135,
+      "name": "79",
+      "text": "\"Um...\" You clear your throat. \"Are you sure you don't want to get the police involved?\"\\n\\n\"I mean there's getting the police involved and then there's...\" He lowers his voice to a whisper. \"...//getting the police involved//. Do you know what I mean?\"\\n\\nYou don't but you nod anyway.\\n\\n\"This is a really important day for me,\" he says, \"cyberNExT could be the next big tech conference if everything goes right. But if the police start coming in here and turning everything into a crime scene then it could all just fall apart. I just need someone to figure out what happened discreetly. That way when I //do// call them, the disruption will be minimal. You see what I'm saying.\"\\n\\nYou scratch the back of your neck. \"I... I guess that makes sense.\"\\n\\nHe pats you on the back. \"Amanda told me you were a smart kid. Now let's see. It's just about 9:15 now and the conference is supposed to be getting underway at 10. People are probably going be starting to show up in, oh, half an hour or so? So it would be really convenient if you figured everything out before then.\"\\n\\n\"Half an hour?\"\\n\\n\"Call it twenty minutes to be safe. I mean I can keep them out of the conference area no problem, but they'll start to get suspicious if they're waiting for too long.\"\\n\\nYou have a difficult time hiding the look of self-doubt on your face.\\n\\n\"I don't need anything fancy,\" he says. \"I just need to know who killed her. Just that one piece of information. Nice and simple.\" \\n\\n\"So you do think, uh... murder.\"\\n\\n\"Cables don't wrap themselves around someone's neck like that.\"\\n\\n\"Right,\" you say, \"I knew that.\"\\n\\n\u2022 [[Who are the suspects?|64]] \\n\u2022 [[Were there security cameras?|38]]\\n\u2022 [[Did Paige have any enemies?|65]] \\n\u2022 [[Why was Paige at this conference?|120]] ",
+      "links": [
+        {
+          "text": "Who are the suspects?",
+          "destination": {
+            "name": "64",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Were there security cameras?",
+          "destination": {
+            "name": "38",
+            "pid": 67
+          }
+        },
+        {
+          "text": "Did Paige have any enemies?",
+          "destination": {
+            "name": "65",
+            "pid": 82
+          }
+        },
+        {
+          "text": "Why was Paige at this conference?",
+          "destination": {
+            "name": "120",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 136,
+      "name": "78",
+      "text": "You get up close and look him in the eyes. \"Who said anything about it happening here?\"\\n\\n\"Uh... well... I just assumed.\"\\n\\n\"Is that so?\"\\n\\n\"I mean you're talking to me here and--\"\\n\\n\"Oh yeah, sure.\"\\n\\n\"It's, well it's like, where else, right? I mean she didn't get murdered in my house, did she?\"\\n\\n\"Well now I don't know. //Did// she get murdered in your house?\"\\n\\n\"No!\"\\n\\n\u2022 [[You seem anxious.|92]] \\n\u2022 [[I'll be keeping my eye on you.|5]] ",
+      "links": [
+        {
+          "text": "You seem anxious.",
+          "destination": {
+            "name": "92",
+            "pid": 96
+          }
+        },
+        {
+          "text": "I'll be keeping my eye on you.",
+          "destination": {
+            "name": "5",
+            "pid": 125
+          }
+        }
+      ]
+    }
+  ]
+}

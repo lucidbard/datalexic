@@ -1,0 +1,2079 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Hotel",
+      "text": "@@#output;<span style=\"color:red\"><<fadein 0.5 1>>\u2580<</fadein>><<fadein 0.525 1>>\u2580<</fadein>><<fadein 0.55 1>>\u2580<</fadein>><<fadein 0.575 1>>\u2580<</fadein>><<fadein 0.6 1>>\u2580<</fadein>><<fadein 0.625 1>>\u2580<</fadein>><<fadein 0.65 1>>\u2580<</fadein>><<fadein 0.675 1>>\u2580<</fadein>><<fadein 0.7 1>>\u2580<</fadein>><<fadein 0.725 1>>\u2580<</fadein>><<fadein 0.75 1>>\u2580<</fadein>></span>\n<<nobr>><<if $musicrepeat is 1>>\n<div align='right'><span class=\"redlink\">[[Jump to the next room (keeping the same choices as before) \u2794->Cake]]</span></div><</if>>\n<<audio \"mainmenumusic\" stop>><<audio \"hotelmusic\" volume 0.5 loop play>><</nobr>>\n<img src=\"https://i.imgur.com/mJRljy3.png\">ere we go again.\n\nOnly this place, with all its familiar sights and smells, will ever feel like home. That's the thing about ground floors \u2014 they're always grounded in certainty. And it's always bright, at least whilst you're here. Which is not for long.\n\nTurning away from these thoughts before they can work their effect, you gaze around, for the last time, <<linkreplace \"the room you know so well.\">><<include \"Line Hotel\">><<scrolldown>><</linkreplace>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Hotel",
+            "pid": 106
+          }
+        },
+        {
+          "text": "Jump to the next room (keeping the same choices as before) \u2794",
+          "destination": {
+            "name": "Cake",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Chess Piece",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580<<fadein 0.2 1>>\u2580<</fadein>><<fadein 0.225 1>>\u2580<</fadein>><<fadein 0.25 1>>\u2580<</fadein>><<fadein 0.275 1>>\u2580<</fadein>><<fadein 0.3 1>>\u2580<</fadein>><<fadein 0.325 1>>\u2580<</fadein>><<fadein 0.35 1>>\u2580<</fadein>><<fadein 0.375 1>>\u2580<</fadein>><<fadein 0.4 1>>\u2580<</fadein>><<fadein 0.425 1>>\u2580<</fadein>><<fadein 0.45 1>>\u2580<</fadein>></span>\n<<nobr>><<if $musicrepeat is 1>><div align='right'><span class=\"redlink\">[[Jump to the next room \u2794->Pagoda]]</span></div><<audio \"footstepsmusic\" volume 0.3 play>><<audio \"cakemusic\" stop>><<audio \"chesspiecemusic\" time 0 volume 1 loop play>><<else>><<audio \"footstepsmusic\" volume 0.3 play>><<audio \"cakemusic\" volume 0.4 fadeoverto 1 0>><<audio \"chesspiecemusic\" volume 1 loop play>><</if>><</nobr>>\n<img src=\"https://i.imgur.com/KVDqoSW.png\">reaking open the door, you enter the room. Straightaway the contrast is clear. While in the previous room there had been an unbridled explosion of colours, here the room restrains itself almost to the point of asceticism, filled with whiteness that spreads in all directions like ice on a freshly polished rink. It's bright not because of any light source in particular, but by dint of its sheer lack of dints. \n\nHanging from the ceiling, however, is a single rope, a part in the otherwise seamless clouds. Natural curiosity urges you forward, at which point <<linkreplace \"you can't help but gasp.\">><<include \"Line Chess Piece\">><<scrolldown>><</linkreplace>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Chess Piece",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Jump to the next room \u2794",
+          "destination": {
+            "name": "Pagoda",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Pagoda",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580<<fadein 0.2 1>>\u2580<</fadein>><<fadein 0.225 1>>\u2580<</fadein>><<fadein 0.25 1>>\u2580<</fadein>><<fadein 0.275 1>>\u2580<</fadein>><<fadein 0.3 1>>\u2580<</fadein>><<fadein 0.325 1>>\u2580<</fadein>><<fadein 0.35 1>>\u2580<</fadein>><<fadein 0.375 1>>\u2580<</fadein>><<fadein 0.4 1>>\u2580<</fadein>><<fadein 0.425 1>>\u2580<</fadein>><<fadein 0.45 1>>\u2580<</fadein>></span>\n<<nobr>><<if $musicrepeat is 1>><div align='right'><span class=\"redlink\">[[Jump to the next room \u2794->Castle]]</span></div><<audio \"footstepsmusic\" volume 0.3 play>><<audio \"chesspiecemusic\" stop>><<audio \"flashbackmusic\" stop>><<audio \"pagodamusic\" time 0 volume 0.8 loop play>><<else>><<audio \"footstepsmusic\" volume 0.3 play>><<audio \"flashbackmusic\" volume 0.4 fadeoverto 1 0>><<audio \"pagodamusic\" volume 0.8 loop play>><</if>><</nobr>>\n<img src=\"https://i.imgur.com/2YI4eFR.png\">eace is a relative term \u2014 it is achieved in varying degrees, and for varying amounts of time. But in this room, peace is absolute. It is <<linkreplace \"eternal.\">><<include \"Line Pagoda\">><<scrolldown>><</linkreplace>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Pagoda",
+            "pid": 59
+          }
+        },
+        {
+          "text": "Jump to the next room \u2794",
+          "destination": {
+            "name": "Castle",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Cake",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580<<fadein 0.2 1>>\u2580<</fadein>><<fadein 0.225 1>>\u2580<</fadein>><<fadein 0.25 1>>\u2580<</fadein>><<fadein 0.275 1>>\u2580<</fadein>><<fadein 0.3 1>>\u2580<</fadein>><<fadein 0.325 1>>\u2580<</fadein>><<fadein 0.35 1>>\u2580<</fadein>><<fadein 0.375 1>>\u2580<</fadein>><<fadein 0.4 1>>\u2580<</fadein>><<fadein 0.425 1>>\u2580<</fadein>><<fadein 0.45 1>>\u2580<</fadein>></span>\n<<nobr>><<if $musicrepeat is 1>><div align='right'><span class=\"redlink\">[[Jump to the next room \u2794->Chess Piece]]</span></div><<audio \"footstepsmusic\" volume 0.3 play>><<audio \"hotelmusic\" stop>><<audio \"cakemusic\" time 0 volume 1 loop play>><<else>><<audio \"footstepsmusic\" volume 0.3 play>><<audio \"hotelmusic\" volume 0.4 fadeoverto 1 0>><<audio \"cakemusic\" volume 1 loop play>><</if>><</nobr>>\n<img src=\"https://i.imgur.com/KVDqoSW.png\">herrywood walls all around greet your eye, instantly giving off the impression of a great hall. Yet, the curious sensation of sinking into the ground, combined with an explosion of aromas deeply evocative of Christmas, make you do a double take; almost at once, each of the infinitesimal niches in the walls reveals itself in stunning detail. It's as though the walls are sponges, saturated with pores and rufous and scents of the oven that are simultaneously absorbed and released. And what a smell. It is so refined in its sweetness, so overpowering in its warmth that it transports you to nowhere but the present, a gift you unwrap eagerly even before the <<linkreplace \"rest of the room\">><<include \"Line Cake\">><<scrolldown>><</linkreplace>> presents itself to you.",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Cake",
+            "pid": 51
+          }
+        },
+        {
+          "text": "Jump to the next room \u2794",
+          "destination": {
+            "name": "Chess Piece",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "Lighthouse",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580<<fadein 0.2 1>>\u2580<</fadein>><<fadein 0.225 1>>\u2580<</fadein>><<fadein 0.25 1>>\u2580<</fadein>><<fadein 0.275 1>>\u2580<</fadein>><<fadein 0.3 1>>\u2580<</fadein>><<fadein 0.325 1>>\u2580<</fadein>><<fadein 0.35 1>>\u2580<</fadein>><<fadein 0.375 1>>\u2580<</fadein>><<fadein 0.4 1>>\u2580<</fadein>><<fadein 0.425 1>>\u2580<</fadein>><<fadein 0.45 1>>\u2580<</fadein>></span>\n<<nobr>><<if $musicrepeat is 1>><<audio \"slowfootstepsmusic\" volume 0.3 play>><<audio \"castlemusic\" stop>><<audio \"flashbackmusic\" stop>><<audio \"lighthousemusic\" time 0 volume 0.85 loop play>><<else>><<audio \"slowfootstepsmusic\" volume 0.3 play>><<audio \"flashbackmusic\" volume 0.4 fadeoverto 1 0>><<audio \"lighthousemusic\" volume 0.85 loop play>><</if>><</nobr>>\n<img src=\"https://i.imgur.com/YS4f4Kf.png\">ike a troll, you trudge up the stairs. You've never held the opinion that they were much of an issue, but now, each step is practically a mountain, every breath teeming with adversity. The idea of counting the number of steps you've taken, as a source of consolation, occurs briefly to you, but even that is too much to think about. All that enters your mind are visions of long naps and warm baths \u2014 and automated monorails that take you wherever you need to go, making walking obsolete.\n\n<<linkreplace \"If only.\">><<include \"Line Lighthouse\">><<scrolldown>><</linkreplace>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Lighthouse",
+            "pid": 54
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Castle",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580<<fadein 0.2 1>>\u2580<</fadein>><<fadein 0.225 1>>\u2580<</fadein>><<fadein 0.25 1>>\u2580<</fadein>><<fadein 0.275 1>>\u2580<</fadein>><<fadein 0.3 1>>\u2580<</fadein>><<fadein 0.325 1>>\u2580<</fadein>><<fadein 0.35 1>>\u2580<</fadein>><<fadein 0.375 1>>\u2580<</fadein>><<fadein 0.4 1>>\u2580<</fadein>><<fadein 0.425 1>>\u2580<</fadein>><<fadein 0.45 1>>\u2580<</fadein>></span>\n<<nobr>><<if $musicrepeat is 1>><<audio \"footstepsmusic\" volume 0.3 play>><div align='right'><span class=\"redlink\">[[Jump to the next room \u2794->Lighthouse]]</span></div><<audio \"pagodamusic\" stop>><<audio \"casodamusic\" stop>><<audio \"castlemusic\" time 0 volume 0.4 loop play>><<else>><<audio \"footstepsmusic\" volume 0.3 play>><<audio \"casodamusic\" volume 0.4 fadeoverto 1 0>><<audio \"castlemusic\" volume 0.4 loop play>><</if>><</nobr>>\n<img src=\"https://i.imgur.com/KVDqoSW.png\">inderblock ground, walls and ceiling soak this room in grey, uniform save for a noticeable patch on the ground that appears darker than its surroundings.\n\nAttached to the walls are <<linkreplace \"torches\">><<include \"Line Castle\">><<scrolldown>><</linkreplace>> precariously held by niches in the wall. The iridescent blue of each torch's core complements the enveloping crimson, which, as though in full awareness of its beauty, combusts in an almost conceited fashion, each pocket of illumination scarcely coming into contact with the next, as though unwilling to share the limelight.",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Castle",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Jump to the next room \u2794",
+          "destination": {
+            "name": "Lighthouse",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Top Floor",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580<<fadein 0.2 1>>\u2580<</fadein>><<fadein 0.225 1>>\u2580<</fadein>><<fadein 0.25 1>>\u2580<</fadein>><<fadein 0.275 1>>\u2580<</fadein>><<fadein 0.3 1>>\u2580<</fadein>><<fadein 0.325 1>>\u2580<</fadein>><<fadein 0.35 1>>\u2580<</fadein>><<fadein 0.375 1>>\u2580<</fadein>><<fadein 0.4 1>>\u2580<</fadein>><<fadein 0.425 1>>\u2580<</fadein>><<fadein 0.45 1>>\u2580<</fadein>></span>\n<<nobr>><<audio \"liftbuttonmusic\" stop>><<audio \"topfloormusic\" volume 0.3 loop play>><</nobr>>\n@@#output;\nBrightness in concentrated spots, level with your height above the ground. Candles. <<linkreplace \"Lighthouses.\">><<include \"Line 2\">><</linkreplace>>\n@@\n\n",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line 2",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Lift Lobby",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nA tattered sign hangs on the lift doors: \n\n<img src=\"https://i.imgur.com/dS86dbg.png\">\n\nOh well.\n\n<<set $achievementgood to 1>>\n<span class=\"redlink\">[[Take the stairs->Stairs]]</span>\n",
+      "links": [
+        {
+          "text": "Take the stairs",
+          "destination": {
+            "name": "Stairs",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Lift",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n<<nobr>><<audio \"liftbuttonmusic\" volume 0.35 loop play>><</nobr>>\nThe lift door opens.\n\nAn array of buttons gleams like a minefield. \n\n<map name=\"image-map\"><area shape=\"circle\" coords=\"154,100,27\" data-passage=\"Death\"><area shape=\"circle\" coords=\"153,178,27\" data-passage=\"Death\"><area shape=\"circle\" coords=\"231,178,27\" data-passage=\"Death\"><area shape=\"circle\" coords=\"154,256,27\" data-passage=\"Death\"><area shape=\"circle\" coords=\"232,255,26\" data-passage=\"Death\"><area shape=\"circle\" coords=\"154,333,27\" data-passage=\"Top Floor\"></map><img usemap=\"#image-map\" src=\"https://i.imgur.com/sKo1qlS.png\">",
+      "links": []
+    },
+    {
+      "pid": 10,
+      "name": "Death",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n<<nobr>><<audio \"deathmusic\" volume 0.4 play>><<audio \"liftbuttonmusic\" stop>><</nobr>>\nThe lift door opens to a wall of flame. You have been brought to death's door.\n\n<span style=\"color:white\"><i>Tip: under the main menu, key in the codes \"hint1\" and \"hint2\" for a clue on this last puzzle, or key in \"answer\" to get the solution directly.</i></span>\n\n\n<span class=\"redlink\">[[Try again->Main Menu]]</span>",
+      "links": [
+        {
+          "text": "Try again",
+          "destination": {
+            "name": "Main Menu",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Stairs",
+      "text": "<<set $lighthouse to 0>><span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nAnticipation starts to take the place of nostalgia as you ascend step by step, though there's little time to brood over your emotions. You've arrived.\n\n\n<span class=\"redlink\">[[Hesitate->Stairs Part 2]]\n[[Hurry on in->Cake]]</span>",
+      "links": [
+        {
+          "text": "Hesitate",
+          "destination": {
+            "name": "Stairs Part 2",
+            "pid": 111
+          }
+        },
+        {
+          "text": "Hurry on in",
+          "destination": {
+            "name": "Cake",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "NOTE",
+      "text": "<<set $password to $password.toLowerCase()>><<if $password is \"eiffel\" and $game is 1>> The tower is a tower of life, consisting of rooms that are also miniature towers by themselves. Each of these rooms represents a type of day in a year:\n\n\u265a Castle represents days of control\n\u25d4 Cake represents days of indulgence\n\u224b Lighthouse represents days of isolation\n\u262f Pagoda represents days of zen\n\u265e Chess piece represents days of restlessness\n\u25b2 Top floor represents the birthday\n\nFor example, the element of control is demonstrated in the castle through the (relatively) more complex series of steps that had to be performed to clear the stage.\n\nAs the protagonist goes through each room, i.e. each of the various types of days, and returns to the starting point, it is as though he starts and completes one cycle, i.e. one year. This is marked by the protagonist then making a journey to the top floor, i.e. passing his birthday. The top floor is also where the names of every other tower are reiterated as a form of reflection, as though to summarise the events of that year.\n\nWhile the rooms only make reference to one another from the point of view of the protagonist, the order in which they are arranged is not arbitrary. The lighthouse is placed towards the end to suggest a form of withdrawal as the year draws to a close and we enter a state of pensiveness. The pagoda is placed right in the middle to represent a moment of zen in the midst of conflict and unpredictability. The hotel, where the protagonist starts, is demonstrated to be the most hospitable of all the towers, which parallels how the period just before the start of a new year is when we feel most at home, secure in the knowledge that everything up to that point in our lives can only be as frightening as our memory and imagination permit. Yet, just like how a hotel only provides temporary lodging, we must move on to the new year eventually.\n\nRelated to this, of course, is the game's secondary but no less important purpose of exploring the concept of towers. Only details are given: the definition of citadel, which doesn't explain towers directly; the hidden tower in each room, which insinuates, very subtly, that towers are tall; the multitude of examples throughout the rest of the game, all without answers. In fact, the word 'tower' is mentioned just three times: once at the start, once before the pagoda, and once at the very end. There is thus some sort of closure, as though to say, this is all the game has to offer. As to what towers really are, it is up to readers to come to their own conclusion.\n\nTower is also intended as a symbol of optimism, as the <span class=\"redlink\">[[blurb->Blurb]]</span> hints at. Themes of moving on are seen in the ascent itself, and the protagonist ultimately manages to survive the fire because he realises the value in learning from the very experience that caused him so much trauma (or through sheer luck, which is always a possibility). Herein lies the link to the unlockable excerpt, which is based on a similar premise.\n\n\n<span class=\"redlink\">[[Credits]]\n[[Back->Code]]</span>\n\n<<elseif $lighthouse is 1 and $password is \"hint1\">> There are two towers in each room: one figurative, and one literal.\n\n\n<span class=\"redlink\">[[Back->Code]]</span>\n\n<<elseif $lighthouse is 1 and $password is \"hint2\">> The figurative tower is the scene described by the text. The literal tower is hidden in the text itself \u2014 read the first letters of each paragraph (after expanding all the blue links).\n\n\n<span class=\"redlink\">[[Back->Code]]</span>\n\n<<elseif $password is \"tower\">><<if $game is 1>><<set $pies = [ \"Blueberry\", \"Cherry\", \"Cream\" ]>><<set _randomFlavor = $pies.random()>><<if _randomFlavor == \"Blueberry\">><img src=\"https://i.imgur.com/IMrL5R9.png\">\n\n\n<span class=\"redlink\">[[Back->Code]]</span>\n<<elseif _randomFlavor == \"Cherry\">><img src=\"https://i.imgur.com/tgYVthy.png\">\n\n\n<span class=\"redlink\">[[Back->Code]]</span>\n<<elseif _randomFlavor == \"Cream\">><img src=\"https://i.imgur.com/2z5egH6.png\">\n\n\n<span class=\"redlink\">[[Back->Code]]</span><</if>><<else>>Try entering this code after completing the game!\n\n\n<span class=\"redlink\">[[Back->Code]]</span><</if>>\n\n<<elseif $password is \"xyzzy\">>Find the two hidden codes on the penultimate page!\n\n\n<span class=\"redlink\">[[Back->Code]]</span>\n\n<<elseif $password is \"birth\">><img src=\"https://i.imgur.com/6oq6AdS.png\">\n\n\n<span class=\"redlink\">[[Back->Code]]</span>\n\n<<elseif $lighthouse is 1 and $password is \"answer\">> Read the first letters of each paragraph (after expanding all the blue links). Do this for every room, then cross-reference your list with the set of lift buttons and select the button that does not appear on your list \u2014 the button to the only room you have not explored, and the only room not devastated by the fire.\n\n\n<span class=\"redlink\">[[Back->Code]]</span>\n\n<<elseif $achievementnumber >=5 and $game is 1 and $password is \"mausoleum\">><<nobr>><<audio \"mainmenumusic\" stop>><<audio \"mausoleummusic\" volume 0.4 loop play>><<set $mausoleumplaying to 1>><</nobr>> \"For as long as I could remember, I had never led a contented life. Since most in my vicinity didn't suffer from the same dissatisfaction, I assumed it was just me and left it at that. It was only years later that I noticed something strange: the restrictions. They seemed harmless at first glance, as I had concluded to myself back then. Now, however, I realised they couldn't have been better disguised as wolves in sheep's clothing, designed to the extent that one would obey them without much delay even as they asserted their control. What's more, they were everywhere. No leading of vagrant lives; no usage of loudspeakers near the cemeteries. No conversations with anyone in confinement. It began to dawn on me that the officials were hiding something, and that this something was widespread in the past. Ironically, as I entered the future, the vision of an expedition to see for myself seemed less and less far away. One day I awoke with doubts, the next I had made up my mind.\n\n\"And so I started plotting. Every night, if I wasn't twisting away with my wrench, I would be breaking into appliance shops to dismantle ovens and blenders for spare parts, taking so little that to the average consumer no change in performance would be noticeable. This I confirmed with regular visits to the shops during the day, when I pretended to study the displays in great detail whilst really listening for angry customers barging in to complain about the drop in quality, the possibility of which I was paranoid about. There were none, and I soon began to relax, taking fewer and fewer daylight trips until finally, I stopped going altogether. Months passed. My machine grew steadily. No one noticed my progress, though I once had a close call in which a friend visited without informing me beforehand, apparently intending to invite me to the bar. As I accepted, turning to get my keys, he suddenly enquired about the machine. I was so caught off guard that I nearly stumbled. Somehow I kept my balance, and managed to maintain an artificial calm in my voice as I explained that it was a clothes dryer. But I knew it looked nothing like one, even in its incomplete state, and though I had my back turned, I could almost feel the disbelief on his face. Fortunately, he didn't say anything, or, for that matter, return to the topic for the rest of our trip. \n\n\"The night I expected it to be completed, I carried the three-foot device with me, yet chose to take a longer route than usual to the appliance shop, wanting to find inspiration as to where I could set up the machine along the way. That was, at least, what I told myself, though the precise reason was equally unclear. Perhaps I wanted to view, for the last time, the city I was about to leave. This would be for practical reasons, of course, as I wouldn't have wanted to get lost in the past. But undeniably, it was also for the moonlit boulevards I would never get to see again. \n\n\"That was when I discovered the mausoleum. It was so concealed that in my half-asleep state, it was a wonder that I noticed it at all, though exist it definitely did. I was deathly curious as to what lay within, but because of the delay in walking time I knew I wouldn't be able to explore it, not unless I had an opportunity much later. So I quickened my footsteps, hoping to return soon.\n\n\"By this time I'd been so familiar with the layout of the appliance shop that I could have gone in with a hand tied behind my back and both eyes closed. I might as well have been, however, as my mind was wholly occupied with my recent discovery, so much so that after a few minutes I realised I'd been standing there with what I needed in hand, apparently having completed the task without the assistance of my brain. But exhaustion aside, the room seemed darker than usual. I turned to leave, and there stood the group of officials, along with the person whom I had once called my friend. I didn't blink. My eyes merely travelled up to his, and it was as if they spoke out loud, the voice of a drunkard, monotonous and unapologetic, saying that my machine couldn't have been visible from the door. That the visit all those weeks ago had been no visit at all. \n\n\"So it would appear that my past had caught up with me. But far from wanting to get away from it, I needed to look for it, to find a solution that I had hidden at the back of my head. There it was: the memory of my early morning visit to the shop when I'd had to shield my eyes from the ceiling, from which protruded stalactites of illumination. The effect, I knew, would only be compounded at night. I was right.\n\n\"I took a leap of faith, hugging the pile of cogs and gears in my arms, heading straight towards the mausoleum, all the while expecting to trip, or to drop something, or to forget the way. For all I knew, the mausoleum might not even have existed. But there was nothing of the sort. My legs simply propelled themselves, and by the same sense of foresight I knew the gates would be open for me. By the time the magic stopped, I was in front of the portal, needing only to take a single step to success. Yet I found it impossible. All of a sudden, everything I'd believed in before seemed a fool's dream. Even the ever-increasing pressure created by the pounding door wasn't enough; in fact, it put pressure on me in the opposite direction, compelling me to accept my fate and move on. But then, in the midst of stepping backwards, I realised it wasn't my ideas that were wrong. It was me. The magic hadn't stopped. The mausoleum hadn't abandoned me. It had left something for my eyes, a message of just three words. <i>Revere the past.</i>\n\n\"I had revered that of the ancients. So I began to revere my own.\"\n\n\n<span class=\"redlink\">[[Back->Code]]</span>\n\n<<else>> Invalid code. (Note: some codes can only be used after they are unlocked)\n\n<span class=\"redlink\">[[Try again->Code]]</span>\n\n<</if>>",
+      "links": [
+        {
+          "text": "blurb",
+          "destination": {
+            "name": "Blurb",
+            "pid": 91
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 43
+          }
+        },
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Code",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Try again",
+          "destination": {
+            "name": "Code",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Main Menu",
+      "text": "<<nobr>><<audio \"mausoleummusic\" stop>><<audio \"topfloormusic\" stop>><<audio \"hotelmusic\" stop>><<audio \"mainmenumusic\" volume 0.5 loop play>><<first>><span class=\"mainmenu\">&nbsp;[[Start->Definition]]</span><</first>><<first>><<finally>><span class=\"mainmenu\">&nbsp;[[Start->Hotel]]</span><</first>>\n<<first>><span class=\"entercode\">&nbsp;==Enter code==</span><</first>><<first>><<finally>><span class=\"mainmenu\">&nbsp;[[Enter code->Code]]</span><</first>><</nobr>>\n\n\n\n\n\n<span class=\"byryan\">&nbsp;by Ryan <<link \"\u2709\">><<script>>window.open('mailto:ryantan5577@hotmail.com')<</script>><</link>>\n&nbsp;Final version</span>",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Definition",
+            "pid": 57
+          }
+        },
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Hotel",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Enter code",
+          "destination": {
+            "name": "Code",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Code",
+      "text": "<<nobr>><<audio \"mausoleummusic\" stop>><<audio \"mainmenumusic\" volume 0.5 loop play>><</nobr>>Key in a code, then press enter. (Click <span class=\"redlink\">[[here->Unlocked Codes]]</span> for a list of codes you've unlocked.)\n\n<<textbox \"$password\" \"\" \"NOTE\">>\n\n\n<span class=\"redlink\">[[Return->Main Menu]]</span>\n",
+      "links": [
+        {
+          "text": "here",
+          "destination": {
+            "name": "Unlocked Codes",
+            "pid": 24
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "Main Menu",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Achievements",
+      "text": "<<set $achievementnumber to 0>> <<set $game to 1>><<first>>Author's Note unlocked! Enter the code 'eiffel' in the Main Menu to see the secrets of the game unravelled... in French.\n\n\n<</first>><u>Achievements</u>\n\n''Rapunzel'' \u2014 you made it to the top floor!<<set $achievementnumber to $achievementnumber + 1>>\n\n<<if $achievementgood is 1>> ''Good Girl Gone Bad'' \u2014 you disobeyed the lift sign after first obeying it! <<set $achievementnumber to $achievementnumber + 1>> <<else>> \u2014 locked: Good Girl Gone Bad \u2014 <</if>>\n\n<<if $achievementfeast is 1>> ''Feast For The Eyes'' \u2014 you resisted eating the confection! <<set $achievementnumber to $achievementnumber + 1>> <<else>> \u2014 locked: Feast For The Eyes \u2014 <</if>>\n\n<<if $achievementtreasure is 1>> ''Treasure Hunter'' \u2014 you found and decoded the message on the missing piece! <<set $achievementnumber to $achievementnumber + 1>> <<else>> \u2014 locked: Treasure Hunter \u2014 <</if>>\n\n<<if $achievementaloe is 1>> ''Aloe Vera'' \u2014 you fully recharged! <<set $achievementnumber to $achievementnumber + 1>> <<else>> \u2014 locked: Aloe Vera \u2014 <</if>>\n\n<<if $achievementgrand is 1>> ''Grand Entrance'' \u2014 you crossed the drawbridge surrounded by a moat full of fish! <<set $achievementnumber to $achievementnumber + 1>> <<else>> \u2014 locked: Grand Entrance \u2014 <</if>>\n\n<<if $achievementhistorian is 1>> ''Historian'' \u2014 you revisited the past twice! <<set $achievementnumber to $achievementnumber + 1>> <<else>> \u2014 locked: Historian \u2014 <</if>>\n\n\n<<if $achievementnumber < 5>> Obtain 5 or more achievements to unlock an additional secret code! <<elseif $achievementnumber >= 5>> You've obtained 5 or more achievements! Enter the code \"mausoleum\" to read an excerpt from an unreleased story. <</if>>\n\n<<nobr>><<first>><span class=\"small\">(Just kidding about the French part.)</span><</first>><</nobr>>\n\n\n<span class=\"redlink\">[[Main Menu]]</span>\n",
+      "links": [
+        {
+          "text": "Main Menu",
+          "destination": {
+            "name": "Main Menu",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Resist 2a",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<<set $achievementfeast to 1>> Every opportunity to indulge is different, of course, but being born in December, you've already had one such opportunity not too long ago. Not that having your birthday coincide with the end of the year doesn't have its advantages \u2014 it does \u2014 but it means a higher occurrence of situations like these, awkward junctures where you're damned if you do, damned if you <<linkreplace \"don't.\">><<include \"Line Resist 2a\">><</linkreplace>> And while you wouldn't describe your life as austere, exactly, neither are you the sort to reach for second helpings while your mouth is still full.",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Resist 2a",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Nothing",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou step away from the objects, laughing at yourself for harbouring such an absurd thought. <<linkreplace \"As if you're going to fall into the very trap you've foreseen.\">><<include \"Line Nothing\">><</linkreplace>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Nothing",
+            "pid": 74
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Watermelon",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou find yourself being drawn to the peculiarity \u2014 or, more accurately, the absurdity \u2014 of the appearance of a watermelon in such a place, for which no explanation seems plausible. Some instinct \u2014 or idiosyncrasy \u2014 compels you to <<linkreplace \"tuck the watermelon in your arm.\">><<include \"Line Watermelon\">><</linkreplace>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Watermelon",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Treasure Chest",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nThe chest is locked, and thus of no use to you at the moment, but you tuck it in the nook of your arm anyway, its weight assuring you that something valuable is locked within. The key can always be found <<linkreplace \"later.\">><<include \"Line Treasure Chest\">><</linkreplace>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Treasure Chest",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Both",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nThe watermelon balances in a small concavity on the base of the treasure chest, fitting like two pieces in a jigsaw puzzle, almost as though the two objects were <<linkreplace \"meant to be together.\">><<include \"Line Both X\">><</linkreplace>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Both X",
+            "pid": 80
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Watermelon 2",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nThe watermelon's beauty is no less apparent on this side of the room, with its every stripe emphasised like verdant strokes on blank canvas. The influence of a clear head, however, which fear had previously disrupted, leads you to see the fruit for what it currently is \u2014 a heavy burden, and little more. Dazzling as it is, you can't see yourself lugging this four-pound peacock just for the sake of admiring its hide. Besides, you're in no particular need of food, especially after that gut-churning experience, and in any case, there's always cake available downstairs. There seems no reason why you shouldn't leave the watermelon here and return to this room when melon-cholic desire strikes.\n\n\n<span class=\"redlink\">[[Climb the stairs to the next room->In Between]]</span>",
+      "links": [
+        {
+          "text": "Climb the stairs to the next room",
+          "destination": {
+            "name": "In Between",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Treasure Chest 2",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nAdmittedly, you were hoping to find the key to the chest on this side of the room. But your eyes hadn't played any tricks whilst you were scanning for another way across \u2014 the room is unequivocally empty. There's not a speck of dust on the ground, much less any metal contraption that could pass off as a key. Your dismay is only reinforced when you think about the multitude of stairs you need to climb with this burden on hand, just for a chance at a reward that might, in all likelihood, be next to nothing. With these thoughts in mind, you arrive at the conclusion that leaving the chest here and returning to this room upon finding a key would probably be the best way to go.\n\n\n<span class=\"redlink\">[[Climb the stairs to the next room->In Between]]</span>",
+      "links": [
+        {
+          "text": "Climb the stairs to the next room",
+          "destination": {
+            "name": "In Between",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Both 2",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou can scarcely believe that you made it across with not just the absence of external assistance but with the presence of these pieces of bulky luggage whose combined weight must parallel that of a young elephant, at least. Eagerly you set about examining the objects, only to experience trouble prying them apart; apparently, the watermelon has attached so well to the treasure chest that effort is needed to separate the two. Upon doing so, you notice something you hadn't seen before in the concavity of the chest: a small white cross, purposefully marked. X, like on a treasure map. X marks the spot.\n\nYour eyes fall on the watermelon. <<linkreplace \"It's worth a shot.\">><<include \"Line Both 2 1\">><</linkreplace>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Both 2 1",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Unlocked Codes",
+      "text": "<u>Unlocked codes</u>\n\n<<if $lighthouse is 1>>hint1 \u2014 a clue for the lift puzzle <<else>>\u2014 locked \u2014 <</if>>\n\n<<if $lighthouse is 1>>hint2 \u2014 a second clue for the lift puzzle <<else>>\u2014 locked \u2014 <</if>>\n\n<<if $lighthouse is 1>>answer \u2014 the solution to the lift puzzle <<else>>\u2014 locked \u2014 <</if>>\n\n<<if $game is 1>>eiffel \u2014 an explanation behind the game <<else>>\u2014 locked \u2014 <</if>>\n\n<<if $achievementnumber >= 5>>mausoleum \u2014 an excerpt from an unreleased story <<else>>\u2014 locked \u2014<</if>>\n\n\n<span class=\"redlink\">[[Return->Code]]</span>",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "Code",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Pagoda 2a",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<img src=\"https://i.imgur.com/2YI4eFR.png\">eace is a relative term \u2014 it is achieved in varying degrees, and for varying amounts of time. But in this room, peace is absolute. It is eternal.\n\nArranged around the octagonal room, like dancers before a show, are various objects of sacred worth, predominantly candles, their wicks burning steadily to radiate the mild scent of lotus. Backdrop to the set, the walls are dressed with ornate designs that twist and turn in a natural waltz, as if to allude to some talent of their own, like a foretaste of the elegance of the main artists.\n\nGlazed tiles cover the floor, their collective shimmer reflecting every detail in the room, like a lake at sunrise. Each tile, distinct though it is from others, enhances rather than ruins the aquatic imagery, the crisscross pattern of alternating tiles tantamount to a floating fish net whose holes offer the faintest glimpse into the underworld. But just being on the surface is more than enough; the euphoria of walking on water, combined with the equally assuring sensation of being supported above a thousand miles, bring moisture to your eyes.\n\nOccupying center stage is a red pillar that extends from the ground to the ceiling, around which is a set of spiral stairs, adhering firmly to the pole like a plant dependent on a support. Indeed, climbing these stairs would be akin to climbing a tree, every step an experience in itself, as the ground, and your worries, peel away.\n\nDimly lit lanterns hang from the ceiling, like fruit of the tree, filled with seeds of fire.\n\nAbsorbing \u2014 that's all you want to do. Gathering invisible energy from the atmosphere, taking in the essence of every object. Resting.\n\n\n<span class=\"redlink\">[[Gaze->Pagoda 2b]]\n[[Float->Pagoda 2c]]\n[[Climb->Casoda]]</span>",
+      "links": [
+        {
+          "text": "Gaze",
+          "destination": {
+            "name": "Pagoda 2b",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Float",
+          "destination": {
+            "name": "Pagoda 2c",
+            "pid": 29
+          }
+        },
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Casoda",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Pagoda 3a",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<img src=\"https://i.imgur.com/2YI4eFR.png\">eace is a relative term \u2014 it is achieved in varying degrees, and for varying amounts of time. But in this room, peace is absolute. It is eternal.\n\nArranged around the octagonal room, like dancers before a show, are various objects of sacred worth, predominantly candles, their wicks burning steadily to radiate the mild scent of lotus. Backdrop to the set, the walls are dressed with ornate designs that twist and turn in a natural waltz, as if to allude to some talent of their own, like a foretaste of the elegance of the main artists.\n\nGlazed tiles cover the floor, their collective shimmer reflecting every detail in the room, like a lake at sunrise. Each tile, distinct though it is from others, enhances rather than ruins the aquatic imagery, the crisscross pattern of alternating tiles tantamount to a floating fish net whose holes offer the faintest glimpse into the underworld. But just being on the surface is more than enough; the euphoria of walking on water, combined with the equally assuring sensation of being supported above a thousand miles, bring moisture to your eyes.\n\nOccupying center stage is a red pillar that extends from the ground to the ceiling, around which is a set of spiral stairs, adhering firmly to the pole like a plant dependent on a support. Indeed, climbing these stairs would be akin to climbing a tree, every step an experience in itself, as the ground, and your worries, peel away.\n\nDimly lit lanterns hang from the ceiling, like fruit of the tree, filled with seeds of fire.\n\nAbsorbing \u2014 that's all you want to do. Gathering invisible energy from the atmosphere, taking in the essence of every object. Resting.\n\n\n<span class=\"redlink\">[[Breathe->Pagoda 3b]]\n[[Float->Pagoda 3c]]\n[[Climb->Casoda]]</span>",
+      "links": [
+        {
+          "text": "Breathe",
+          "destination": {
+            "name": "Pagoda 3b",
+            "pid": 31
+          }
+        },
+        {
+          "text": "Float",
+          "destination": {
+            "name": "Pagoda 3c",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Casoda",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Pagoda 4a",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<img src=\"https://i.imgur.com/2YI4eFR.png\">eace is a relative term \u2014 it is achieved in varying degrees, and for varying amounts of time. But in this room, peace is absolute. It is eternal.\n\nArranged around the octagonal room, like dancers before a show, are various objects of sacred worth, predominantly candles, their wicks burning steadily to radiate the mild scent of lotus. Backdrop to the set, the walls are dressed with ornate designs that twist and turn in a natural waltz, as if to allude to some talent of their own, like a foretaste of the elegance of the main artists.\n\nGlazed tiles cover the floor, their collective shimmer reflecting every detail in the room, like a lake at sunrise. Each tile, distinct though it is from others, enhances rather than ruins the aquatic imagery, the crisscross pattern of alternating tiles tantamount to a floating fish net whose holes offer the faintest glimpse into the underworld. But just being on the surface is more than enough; the euphoria of walking on water, combined with the equally assuring sensation of being supported above a thousand miles, bring moisture to your eyes.\n\nOccupying center stage is a red pillar that extends from the ground to the ceiling, around which is a set of spiral stairs, adhering firmly to the pole like a plant dependent on a support. Indeed, climbing these stairs would be akin to climbing a tree, every step an experience in itself, as the ground, and your worries, peel away.\n\nDimly lit lanterns hang from the ceiling, like fruit of the tree, filled with seeds of fire.\n\nAbsorbing \u2014 that's all you want to do. Gathering invisible energy from the atmosphere, taking in the essence of every object. Resting.\n\n\n<span class=\"redlink\">[[Breathe->Pagoda 4b]]\n[[Gaze->Pagoda 4c]]\n[[Climb->Casoda]]</span>",
+      "links": [
+        {
+          "text": "Breathe",
+          "destination": {
+            "name": "Pagoda 4b",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Gaze",
+          "destination": {
+            "name": "Pagoda 4c",
+            "pid": 34
+          }
+        },
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Casoda",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Pagoda 2b",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<img src=\"https://i.imgur.com/2YI4eFR.png\">eace is a relative term \u2014 it is achieved in varying degrees, and for varying amounts of time. But in this room, peace is absolute. It is eternal.\n\nArranged around the octagonal room, like dancers before a show, are various objects of sacred worth, predominantly candles, their wicks burning steadily to radiate the mild scent of lotus. Backdrop to the set, the walls are dressed with ornate designs that twist and turn in a natural waltz, as if to allude to some talent of their own, like a foretaste of the elegance of the main artists.\n\nGlazed tiles cover the floor, their collective shimmer reflecting every detail in the room, like a lake at sunrise. Each tile, distinct though it is from others, enhances rather than ruins the aquatic imagery, the crisscross pattern of alternating tiles tantamount to a floating fish net whose holes offer the faintest glimpse into the underworld. But just being on the surface is more than enough; the euphoria of walking on water, combined with the equally assuring sensation of being supported above a thousand miles, bring moisture to your eyes.\n\nOccupying center stage is a red pillar that extends from the ground to the ceiling, around which is a set of spiral stairs, adhering firmly to the pole like a plant dependent on a support. Indeed, climbing these stairs would be akin to climbing a tree, every step an experience in itself, as the ground, and your worries, peel away.\n\nDimly lit lanterns hang from the ceiling, like fruit of the tree, filled with seeds of fire.\n\nAbsorbing \u2014 that's all you want to do. Gathering invisible energy from the atmosphere, taking in the essence of every object. Resting.\n\n\n<span class=\"redlink\">[[Float->Pagoda 2d]]\n[[Climb->Casoda]]</span>",
+      "links": [
+        {
+          "text": "Float",
+          "destination": {
+            "name": "Pagoda 2d",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Casoda",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "Pagoda 2c",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<img src=\"https://i.imgur.com/2YI4eFR.png\">eace is a relative term \u2014 it is achieved in varying degrees, and for varying amounts of time. But in this room, peace is absolute. It is eternal.\n\nArranged around the octagonal room, like dancers before a show, are various objects of sacred worth, predominantly candles, their wicks burning steadily to radiate the mild scent of lotus. Backdrop to the set, the walls are dressed with ornate designs that twist and turn in a natural waltz, as if to allude to some talent of their own, like a foretaste of the elegance of the main artists.\n\nGlazed tiles cover the floor, their collective shimmer reflecting every detail in the room, like a lake at sunrise. Each tile, distinct though it is from others, enhances rather than ruins the aquatic imagery, the crisscross pattern of alternating tiles tantamount to a floating fish net whose holes offer the faintest glimpse into the underworld. But just being on the surface is more than enough; the euphoria of walking on water, combined with the equally assuring sensation of being supported above a thousand miles, bring moisture to your eyes.\n\nOccupying center stage is a red pillar that extends from the ground to the ceiling, around which is a set of spiral stairs, adhering firmly to the pole like a plant dependent on a support. Indeed, climbing these stairs would be akin to climbing a tree, every step an experience in itself, as the ground, and your worries, peel away.\n\nDimly lit lanterns hang from the ceiling, like fruit of the tree, filled with seeds of fire.\n\nAbsorbing \u2014 that's all you want to do. Gathering invisible energy from the atmosphere, taking in the essence of every object. Resting.\n\n\n<span class=\"redlink\">[[Gaze->Pagoda 2d]]\n[[Climb->Casoda]]</span>",
+      "links": [
+        {
+          "text": "Gaze",
+          "destination": {
+            "name": "Pagoda 2d",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Casoda",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Pagoda 2d",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<img src=\"https://i.imgur.com/2YI4eFR.png\">eace is a relative term \u2014 it is achieved in varying degrees, and for varying amounts of time. But in this room, peace is absolute. It is eternal.\n\nArranged around the octagonal room, like dancers before a show, are various objects of sacred worth, predominantly candles, their wicks burning steadily to radiate the mild scent of lotus. Backdrop to the set, the walls are dressed with ornate designs that twist and turn in a natural waltz, as if to allude to some talent of their own, like a foretaste of the elegance of the main artists.\n\nGlazed tiles cover the floor, their collective shimmer reflecting every detail in the room, like a lake at sunrise. Each tile, distinct though it is from others, enhances rather than ruins the aquatic imagery, the crisscross pattern of alternating tiles tantamount to a floating fish net whose holes offer the faintest glimpse into the underworld. But just being on the surface is more than enough; the euphoria of walking on water, combined with the equally assuring sensation of being supported above a thousand miles, bring moisture to your eyes.\n\nOccupying center stage is a red pillar that extends from the ground to the ceiling, around which is a set of spiral stairs, adhering firmly to the pole like a plant dependent on a support. Indeed, climbing these stairs would be akin to climbing a tree, every step an experience in itself, as the ground, and your worries, peel away.\n\nDimly lit lanterns hang from the ceiling, like fruit of the tree, filled with seeds of fire.\n\nAbsorbing \u2014 that's all you want to do. Gathering invisible energy from the atmosphere, taking in the essence of every object. Resting.\n\n<<set $achievementaloe to 1>>\n<span class=\"redlink\">[[Climb->Casoda]]</span>",
+      "links": [
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Casoda",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Pagoda 3b",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<img src=\"https://i.imgur.com/2YI4eFR.png\">eace is a relative term \u2014 it is achieved in varying degrees, and for varying amounts of time. But in this room, peace is absolute. It is eternal.\n\nArranged around the octagonal room, like dancers before a show, are various objects of sacred worth, predominantly candles, their wicks burning steadily to radiate the mild scent of lotus. Backdrop to the set, the walls are dressed with ornate designs that twist and turn in a natural waltz, as if to allude to some talent of their own, like a foretaste of the elegance of the main artists.\n\nGlazed tiles cover the floor, their collective shimmer reflecting every detail in the room, like a lake at sunrise. Each tile, distinct though it is from others, enhances rather than ruins the aquatic imagery, the crisscross pattern of alternating tiles tantamount to a floating fish net whose holes offer the faintest glimpse into the underworld. But just being on the surface is more than enough; the euphoria of walking on water, combined with the equally assuring sensation of being supported above a thousand miles, bring moisture to your eyes.\n\nOccupying center stage is a red pillar that extends from the ground to the ceiling, around which is a set of spiral stairs, adhering firmly to the pole like a plant dependent on a support. Indeed, climbing these stairs would be akin to climbing a tree, every step an experience in itself, as the ground, and your worries, peel away.\n\nDimly lit lanterns hang from the ceiling, like fruit of the tree, filled with seeds of fire.\n\nAbsorbing \u2014 that's all you want to do. Gathering invisible energy from the atmosphere, taking in the essence of every object. Resting.\n\n\n<span class=\"redlink\">[[Float->Pagoda 2d]]\n[[Climb->Casoda]]</span>",
+      "links": [
+        {
+          "text": "Float",
+          "destination": {
+            "name": "Pagoda 2d",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Casoda",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "Pagoda 3c",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<img src=\"https://i.imgur.com/2YI4eFR.png\">eace is a relative term \u2014 it is achieved in varying degrees, and for varying amounts of time. But in this room, peace is absolute. It is eternal.\n\nArranged around the octagonal room, like dancers before a show, are various objects of sacred worth, predominantly candles, their wicks burning steadily to radiate the mild scent of lotus. Backdrop to the set, the walls are dressed with ornate designs that twist and turn in a natural waltz, as if to allude to some talent of their own, like a foretaste of the elegance of the main artists.\n\nGlazed tiles cover the floor, their collective shimmer reflecting every detail in the room, like a lake at sunrise. Each tile, distinct though it is from others, enhances rather than ruins the aquatic imagery, the crisscross pattern of alternating tiles tantamount to a floating fish net whose holes offer the faintest glimpse into the underworld. But just being on the surface is more than enough; the euphoria of walking on water, combined with the equally assuring sensation of being supported above a thousand miles, bring moisture to your eyes.\n\nOccupying center stage is a red pillar that extends from the ground to the ceiling, around which is a set of spiral stairs, adhering firmly to the pole like a plant dependent on a support. Indeed, climbing these stairs would be akin to climbing a tree, every step an experience in itself, as the ground, and your worries, peel away.\n\nDimly lit lanterns hang from the ceiling, like fruit of the tree, filled with seeds of fire.\n\nAbsorbing \u2014 that's all you want to do. Gathering invisible energy from the atmosphere, taking in the essence of every object. Resting.\n\n\n<span class=\"redlink\">[[Breathe->Pagoda 2d]]\n[[Climb->Casoda]]</span>",
+      "links": [
+        {
+          "text": "Breathe",
+          "destination": {
+            "name": "Pagoda 2d",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Casoda",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Pagoda 4b",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<img src=\"https://i.imgur.com/2YI4eFR.png\">eace is a relative term \u2014 it is achieved in varying degrees, and for varying amounts of time. But in this room, peace is absolute. It is eternal.\n\nArranged around the octagonal room, like dancers before a show, are various objects of sacred worth, predominantly candles, their wicks burning steadily to radiate the mild scent of lotus. Backdrop to the set, the walls are dressed with ornate designs that twist and turn in a natural waltz, as if to allude to some talent of their own, like a foretaste of the elegance of the main artists.\n\nGlazed tiles cover the floor, their collective shimmer reflecting every detail in the room, like a lake at sunrise. Each tile, distinct though it is from others, enhances rather than ruins the aquatic imagery, the crisscross pattern of alternating tiles tantamount to a floating fish net whose holes offer the faintest glimpse into the underworld. But just being on the surface is more than enough; the euphoria of walking on water, combined with the equally assuring sensation of being supported above a thousand miles, bring moisture to your eyes.\n\nOccupying center stage is a red pillar that extends from the ground to the ceiling, around which is a set of spiral stairs, adhering firmly to the pole like a plant dependent on a support. Indeed, climbing these stairs would be akin to climbing a tree, every step an experience in itself, as the ground, and your worries, peel away.\n\nDimly lit lanterns hang from the ceiling, like fruit of the tree, filled with seeds of fire.\n\nAbsorbing \u2014 that's all you want to do. Gathering invisible energy from the atmosphere, taking in the essence of every object. Resting.\n\n\n<span class=\"redlink\">[[Gaze->Pagoda 2d]]\n[[Climb->Casoda]]</span>",
+      "links": [
+        {
+          "text": "Gaze",
+          "destination": {
+            "name": "Pagoda 2d",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Casoda",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Pagoda 4c",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<img src=\"https://i.imgur.com/2YI4eFR.png\">eace is a relative term \u2014 it is achieved in varying degrees, and for varying amounts of time. But in this room, peace is absolute. It is eternal.\n\nArranged around the octagonal room, like dancers before a show, are various objects of sacred worth, predominantly candles, their wicks burning steadily to radiate the mild scent of lotus. Backdrop to the set, the walls are dressed with ornate designs that twist and turn in a natural waltz, as if to allude to some talent of their own, like a foretaste of the elegance of the main artists.\n\nGlazed tiles cover the floor, their collective shimmer reflecting every detail in the room, like a lake at sunrise. Each tile, distinct though it is from others, enhances rather than ruins the aquatic imagery, the crisscross pattern of alternating tiles tantamount to a floating fish net whose holes offer the faintest glimpse into the underworld. But just being on the surface is more than enough; the euphoria of walking on water, combined with the equally assuring sensation of being supported above a thousand miles, bring moisture to your eyes.\n\nOccupying center stage is a red pillar that extends from the ground to the ceiling, around which is a set of spiral stairs, adhering firmly to the pole like a plant dependent on a support. Indeed, climbing these stairs would be akin to climbing a tree, every step an experience in itself, as the ground, and your worries, peel away.\n\nDimly lit lanterns hang from the ceiling, like fruit of the tree, filled with seeds of fire.\n\nAbsorbing \u2014 that's all you want to do. Gathering invisible energy from the atmosphere, taking in the essence of every object. Resting.\n\n\n<span class=\"redlink\">[[Breathe->Pagoda 2d]]\n[[Climb->Casoda]]</span>",
+      "links": [
+        {
+          "text": "Breathe",
+          "destination": {
+            "name": "Pagoda 2d",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Casoda",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "Lamp",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou carefully remove the torch closest to the knight and bring it to the base of the armour. As you do so, you see an engraving on the part of the ground near the knight's foot that was previously obscured by its shadow.\n\n<div align='center'><img src='https://i.imgur.com/shIj1me.png'></div>\nThis isn't the time to ponder, though. Your source of light carefully preserved, you commit the writing to memory and turn your attention back to the more urgent problem at hand. \n\n\n<span class=\"redlink\">[[Position the barrels such that their contents can flow into the moat, then turn each of their spigots on->Keg]]\n\n[[Fire a cannonball at the barrels->Cannonball 2]]</span>\n",
+      "links": [
+        {
+          "text": "Position the barrels such that their contents can flow into the moat, then turn each of their spigots on",
+          "destination": {
+            "name": "Keg",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Fire a cannonball at the barrels",
+          "destination": {
+            "name": "Cannonball 2",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "Keg",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou sprint over to the barrels, arranging them in a row along the edge of the moat, keg ends facing it. Unfortunately, this takes a while, and so does individually turning the spigots on, which dispense beer as if it were honey, each drop appearing to fall in slow motion. By the time the moat is full, the only movement is that of the waterwheel. <<linkappend \"The fish have died.\">>\n\nThere isn't time to mourn the loss, though. The flow of beer into the moat is and was the only thing keeping the waterwheel moving, and the last few drops are approaching; indeed, the portcullis, as though displeased with its dwindling offerings, has already begun its descent. Having little choice, you wade through the moat and make it through the exit with a comfortable distance between the spikes and your head.\n\n\n<span class=\"redlink\">[[Proceed->Between Cont]]</span><</linkappend>>",
+      "links": [
+        {
+          "text": "Proceed",
+          "destination": {
+            "name": "Between Cont",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Cannonball",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou sprint over to the cannons, finding, to your relief, that they're already loaded; all that's left is pointing them at the barrels. Flame from the nearest torch <<linkappend \"does the rest.\">>\n\nThe impact of the cannonball is so great that the barrels burst like bubbles, their contents reaching the deepest recess in the walls. Even your position behind the cannon is not spared \u2014 beer sloshes over you as though you were at a food fight. But examining the damage, including that on yourself, is impossible, because the room has gone dark. Evidently, the beer hadn't missed the torches, either.\n\nThe whirring of the waterwheel, along with the creaking of the portcullis as it is lifted off the ground, reassure you that the moat is full. Relying on your ears to show you the way, you wade through the moat towards the exit, through which you easily fit.\n\n\n<span class=\"redlink\">[[Proceed->Between Cont]]</span><</linkappend>>",
+      "links": [
+        {
+          "text": "Proceed",
+          "destination": {
+            "name": "Between Cont",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "Cannonball 2",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou sprint over to the cannons, finding, to your relief, that they're already loaded; all that's left is pointing them at the barrels. Flame from the nearest torch <<linkreplace \"does the rest.\">><<include \"Line Cannonball 2 1\">><</linkreplace>>\n",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Cannonball 2 1",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Hotel 2",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n<<nobr>><<set $musicrepeat to 1>><<audio \"lighthousemusic\" volume 0.4 fadeoverto 1 0>><</nobr>>\n<<set $flashback to 0>><<set $lighthouse to 1>>Down the stairs you thunder, your feet the fingers of a concert pianist, your heart its accompaniment, the omnipresent heat wave constantly pumping up the ferocity of your brain's conducting. But never once do you manage to drown out the fire, not as you race [[through the moat,->Line Hotel 2ax]]",
+      "links": [
+        {
+          "text": "through the moat,",
+          "destination": {
+            "name": "Line Hotel 2ax",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Lift 2",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n<<nobr>><<audio \"gallerymusic\" stop>><<audio \"liftbuttonmusic\" volume 0.35 loop play>><</nobr>>\nThe lift door opens.\n\nAn array of buttons gleams like a minefield. \n\n<map name=\"image-mappp\"><area shape=\"circle\" coords=\"154,100,26\" data-passage=\"Death\"><area shape=\"circle\" coords=\"231,99,27\" data-passage=\"Gallery\"><area shape=\"circle\" coords=\"154,178,26\" data-passage=\"Death\"><area shape=\"circle\" coords=\"231,178,26\" data-passage=\"Death\"><area shape=\"circle\" coords=\"154,255,27\" data-passage=\"Death\"><area shape=\"circle\" coords=\"232,255,26\" data-passage=\"Death\"><area shape=\"circle\" coords=\"154,333,26\" data-passage=\"Top Floor\"></map><img usemap=\"#image-mappp\" src=\"https://i.imgur.com/ZDRWDcN.png\">\n\n",
+      "links": []
+    },
+    {
+      "pid": 41,
+      "name": "Gallery",
+      "text": "<<nobr>><<audio \"liftbuttonmusic\" stop>><<audio \"gallerymusic\" volume 0.5 loop play>><</nobr>>\n<div align='center'><img src=\"https://i.imgur.com/YsNDVyA.png\"></div>\n<div align='center'><img src=\"https://i.imgur.com/Sy9q6Td.png\"></div>\n\n<div align='center'><img src=\"https://i.imgur.com/zXXGu7G.png\"></div>\n\n\n<span class=\"redlink\">[[Back->Lift 2]]</span>",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Lift 2",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "For Alex",
+      "text": "\n\n<<timed 3.7s>><<goto \"Achievements\">><</timed>>\n<<fadein 0.5 1>><<fadeout 3 0.5>>For A<</fadeout>><</fadein>>\n",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "Achievements",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Credits",
+      "text": "Thanks <<link \"Eric Matyas\">><<script>>window.open('http://soundimage.org/')<</script>><</link>> for the music, and for suggesting that I add sound effects.\n\nThanks <<link \"Cheryl Chong\">><<script>>window.open('https://ccsdg.carbonmade.com/')<</script>><</link>> for investing so much time into designing cover art. Your passion is inspiring and collaborating with you was an incredible experience. <span class=\"small\">Replay the game to find the secret gallery of her drafts!</span>\n\nThanks to my beta-testers: Jack Welch (dhakajack), Brian Rushton (mathbrush), dgtziea, Lucas, and Nelson. \n\nThanks Stephen Granade for the help with the progress bar.\n\nThanks greyelf, Chapel and TheMadExile for the help with coding.\n\nLast but not least, thank you for playing!\n\nTitle screen image by Feliks Tomasz Konczakowski.\n\n\n<span class=\"redlink\">[[Back->NOTE]]</span>\n<span class=\"redlink\">[[Replay the game->Hotel]]</span>",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "NOTE",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Replay the game",
+          "destination": {
+            "name": "Hotel",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Lift Lobby (fire)",
+      "text": "<<if $lighthouse is 1 and $game is 1>><span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nA tattered sign hangs on the lift doors:\n\n<img src=\"https://i.imgur.com/dS86dbg.png\">\n\n\n<span class=\"redlink\">[[Summon the lift anyway->Lift 2]]</span>\n<<elseif $lighthouse is 1>><span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nA tattered sign hangs on the lift doors: \n\n<img src=\"https://i.imgur.com/dS86dbg.png\">\n\n\n<span class=\"redlink\">[[Summon the lift anyway->Lift]]</span>\n<</if>>",
+      "links": [
+        {
+          "text": "Summon the lift anyway",
+          "destination": {
+            "name": "Lift 2",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Summon the lift anyway",
+          "destination": {
+            "name": "Lift",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Line 2",
+      "text": "Lighthouses.\\\n<<append \"#output\">>\n\t\\<br>\n\tIndividual\n\t\\ <<linkreplace \"pagoda\">><<include \"Line 3\">><</linkreplace>>\n\t\\ cream mountains.\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line 3",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Line 3",
+      "text": "pagoda\\\n<<append \"#output\">>\n\t\\<br>\n\tRepeating squares of black and white, knights and\n\t\\ <<linkreplace \"castles.\">><<include \"Line 4\">><</linkreplace>>\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line 4",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "Line 4",
+      "text": "castles.\\\n<<append \"#output\">>\n\t\\<br>\n\tThere you are, on one of the\n\t\\ <<linkreplace \"chess pieces.\">><<include \"Line 5\">><</linkreplace>>\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line 5",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Final Line",
+      "text": "cake.\\\n<<append \"#output\">><br>\n\n<<timed 1.5s t8n>><span class=\"redlink\"><<nobr>><<first>>[[Tower->For Alex]]<</first>><<first>><<finally>>[[Tower->Achievements]]<</first>><</nobr>></span><</timed>><</append>>",
+      "links": [
+        {
+          "text": "Tower",
+          "destination": {
+            "name": "For Alex",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Tower",
+          "destination": {
+            "name": "Achievements",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Line 5",
+      "text": "chess pieces.\\\n<<append \"#output\">>\n\t\\<br>\n\tHungry for\n\t\\ <<linkreplace \"cake.\">><<include \"Final Line\">><</linkreplace>>\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Final Line",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "FUTURE RYAN PLS READ",
+      "text": "- remember to use <span class=\"redlink\"> and </span> for normal links\n\n- if uploading own music/sound tracks, use dropbox, click 'share' after uploading and CHANGE THE '0' AT THE END OF THE DIRECT LINK TO '1'\n\n- to standardise, linkappends should include the full stop but not the comma\n\n- if adding a new paragraph/passage, RUN IT THROUGH A SPELLCHECKER",
+      "links": []
+    },
+    {
+      "pid": 51,
+      "name": "Line Cake",
+      "text": "rest of the room\\\n<<append \"#output\">><br>\nAll in good time. Assorted sprinkles form the ceiling and part of the reason why you haven't launched into the confection right away \u2014 your attention has been seized by its prism of colours, an inch-long plane that redefines rainbows. \n\nKisses of chocolate, chips of brown polished to a sheen, finally make the decision for you. In the same instant, the vague yet perceivable shape of a door enters the ring as a contender for your consideration.\n\nEat \u2014 for a moment you consider examining the door \u2014 eat \u2014 but your stomach seems to think \u2014 eat \u2014 otherwise \u2014 eat \u2014 eat \u2014 //eat//.\n\n\n<span class=\"redlink\">[[Indulge your fantasies->Eat 3]] \n[[Attempt to resist->Resist 2a]]</span><</append>>",
+      "links": [
+        {
+          "text": "Indulge your fantasies",
+          "destination": {
+            "name": "Eat 3",
+            "pid": 64
+          }
+        },
+        {
+          "text": "Attempt to resist",
+          "destination": {
+            "name": "Resist 2a",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Line Chess Piece",
+      "text": "you can't help but gasp.\\\n<<append \"#output\">>\n\t\\<br>\nEmptiness, previously hidden, stretches out in a square that extends nearly to the door at the end of the room, a hole whose bottom cannot be perceived even with the room's ample illumination. In fact, for all its purity, the light only serves to accentuate the darkness, bringing out its infinite depths in a harmonious yin-and-yang. The effect is at once astounding and nauseating.\n\nSomething jerks your head away and pulls the blinds over your eyes.\n\t\\ <<linkreplace \"Fear.\">><<include \"Line Chess Piece 2\">><<scrolldown>><</linkreplace>>\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Chess Piece 2",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Line Chess Piece 2",
+      "text": "Fear.\\\n<<append \"#output\">>\n\t\\<br>\nSeveral minutes spent in quiet agony pass by. Not even the recognition that doing nothing prolongs your pain comes close to persuading you to change your mind; you simply can't bear to think of the alternative. Only when it strikes you that there might be another way across that doesn't risk plummeting to your doom do you <<linkreplace \"open your eyes\">><<include \"Line Chess Piece 3\">><<scrolldown>><</linkreplace>>, and still with an effort, as though trying to overcome the force of imaginary weights attached to your eyelids.\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Chess Piece 3",
+            "pid": 58
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Line Lighthouse",
+      "text": "If only.\\\n<<append \"#output\">><br>\nGasping with effort, you heave the door open and are immediately caught off guard, as some orb of blinding light forces your free hand towards your eyes, which have already snapped shut. And a good thing, too; as though smarting from the pain, you continue to perceive spots of brightness through your closed eyes, which might have sustained permanent damage had they been open an instant longer. In that position, your legs cramping, your eyes burning, your brain struggling to get everything under control \u2014 in short, your body suffering \u2014 you <<linkreplace \"remain for a few minutes.\">><<include \"Line Lighthouse 2\">><<scrolldown>><</linkreplace>><</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Lighthouse 2",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Line Lighthouse 2",
+      "text": "remain for a few minutes.\\\n<<append \"#output\">><br>\nHow, ultimately, the decision to dash across the room materialised in your mind, you cannot be sure, even now. It might have been that, drawing inspiration from the success you enjoyed a few rooms back with the same boldness that dared you to swing across the abyss, you wanted to make a quick escape. Or perhaps the heat, which for all you know might have colluded with the beer barrels to make your life as miserable as possible, induced a thirst for the winds of flight. <<linkreplace \"But dash you did\">><<include \"Line Lighthouse 3\">><<scrolldown>><</linkreplace>>, moving nimbly around the circumference of the room, never realising that there had and would never be such a thing as an easy way out.<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Lighthouse 3",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "Line Lighthouse 3",
+      "text": "But dash you did\\\n<<append \"#output\">><br>\nThere is no exit.\n\nHoping you'd made a mistake, you paw every inch of the wall, relying on your sense of touch to search for the door you'd so clearly observed before your sense of sight was compromised. When the wall persists in its unfaltering smoothness, showing not the subtlest sign of an opening or even a crack, the growing sense of panic becomes impossible to ignore; your attempts to silence it only transforms it to frustration at the room's sheer incongruity. Had your eyes been so delusional as to conjure open doors out of thin air? Had your plan, impetuous as it was, been based purely on a flight of fancy? Surely not. There had been a door, you're sure of it. In fact, there had been <<linkreplace \"more than one.\">><<include \"Line Lighthouse 4\">><<scrolldown>><</linkreplace>><</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Lighthouse 4",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Definition",
+      "text": "<<nobr>><<audio \"mainmenumusic\" volume 0.4 fadeout>><</nobr>>\n<span class=\"definition\"><<timed 6.5s>>C<</timed>><<timed 7s>>i<</timed>><<timed 7.5s>>t<</timed>><<timed 8s>>a<</timed>><<timed 9s>>d<</timed>><<timed 9.2s>>e<</timed>><<timed 9.4s>>l<</timed>></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class=\"definition2\"><<fadein 10.8 1>>ci<</fadein>><<fadein 11.2 1>>\u2022ta<</fadein>><<fadein 11.6 1>>\u2022del<</fadein>></span>\n<<nobr>><div align='center'><<fadein 1 1>><<fadeout 3.5 0.5>><span class=\"headphones\">\n    Headphones recommended for the best experience \n</span><</fadeout>><</fadein>></div><</nobr>><span class=\"definition2\"><<fadein 13.8 1>><i>noun</i><</fadein>></span>\n<span class=\"definition2\"><<fadein 15.1 1>>a fortress, typically one on high ground above a city.<</fadein>></span>\n\n<span class=\"definition2\"><<fadein 19.3 1>><b>see also:</b> [[tower->Hotel]]<</fadein>></span>",
+      "links": [
+        {
+          "text": "tower",
+          "destination": {
+            "name": "Hotel",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "Line Chess Piece 3",
+      "text": "open your eyes\\\n<<append \"#output\">><br>\nPivoting your glance away from the ground as much as possible, you proceed to scan, hastily but meticulously, every inch of the room, willing a solution to appear. But no matter how many times your eyes sweep across the room, or how hard you try to visualise a bridge, none materialises. \n\nInstead, you pick out a dot of green and brown by the east edge of the square that you hadn't thought much of. Realising now that those objects could be the key to your plight, you summon every last bit of courage and\n\t\\ <<linkreplace \"make your way across\">><<include \"Line Chess Piece 4\">><<scrolldown>><</linkreplace>>\n\t\\, feeling a sense of expectation stir within you.\n<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Chess Piece 4",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Line Pagoda",
+      "text": "eternal.\\\n<<append \"#output\">><br>\nArranged around the octagonal room, like dancers before a <<linkreplace \"show\">><<include \"Line Pagoda 2\">><<scrolldown>><</linkreplace>>, are various objects of sacred worth, predominantly candles, their wicks burning steadily to radiate the mild scent of lotus. Backdrop to the set, the walls are dressed with ornate designs that twist and turn in a natural waltz, as if to allude to some talent of their own, like a foretaste of the elegance of the main artists.<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Pagoda 2",
+            "pid": 113
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Line Cannonball 2 2",
+      "text": "All but one.\\\n<<append \"#output\">><br>\nFrom the knight's helmet, the same glow you'd described as \"soft\" now shines like a beacon.\n\nTaking especial care not to lose your last source of light, you bring the torch to the ground, using its rays as a guide. There it is: the dark patch. You yank it open and find a lever; this you grasp with both hands and pull. For a second, nothing happens. \n\nThen, with fluent majesty, like an elephant laying down its trunk, the drawbridge descends.\n\nYou can't help but feel the grandeur of the moment as you cross the bridge, torch in hand, each step forward a path of gold, while the fish thrive below, their newly restored spirits screaming conviviality.\n\n<<set $achievementgrand to 1>>\n<span class=\"redlink\">[[Proceed->Between Cont]]</span>\n<</append>>",
+      "links": [
+        {
+          "text": "Proceed",
+          "destination": {
+            "name": "Between Cont",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "Line Cannonball 2 1",
+      "text": "does the rest.\\\n<<append \"#output\">>\n\t\\<br>The impact of the cannonball is so great that the barrels burst like bubbles, their contents reaching the deepest recess in the walls. Even your position behind the cannon is not spared \u2014 beer sloshes over you as though you were at a food fight. But examining the damage, including that on yourself, is impossible, because the room has gone dark. Evidently, all the torches had been extinguished.\n\t\\ <<linkreplace \"All but one.\">><<include \"Line Cannonball 2 2\">><</linkreplace>>\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Cannonball 2 2",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "StoryInit",
+      "text": "<<cacheaudio \"mainmenumusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2015/06/On-Things-to-Come.mp3\">>\n\n<<cacheaudio \"hotelmusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2015/03/Impossible-Decision.mp3\">>\n\n<<cacheaudio \"cakemusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2014/04/Mister-Sneakypants.mp3\">>\n\n<<cacheaudio \"chesspiecemusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2014/03/Lost-Jungle.mp3\">>\n\n<<cacheaudio \"pagodamusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2014/07/Dusk.mp3\">>\n\n<<cacheaudio \"casodamusic\" \"format:mp3;https://www.dropbox.com/s/ntht12ecggs48op/Pagoda%20%28Dusk%29.mp3?dl=1\">>\n\n<<cacheaudio \"castlemusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2014/11/Moonlit-Secrets.mp3\">>\n\n<<cacheaudio \"lighthousemusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2014/06/Anomaly.mp3\">>\n\n<<cacheaudio \"liftbuttonmusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2015/01/Quiet-Tension.mp3\">>\n\n<<cacheaudio \"deathmusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2016/04/Creepy_Percussion_3.mp3\">>\n\n<<cacheaudio \"topfloormusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2015/04/Back-on-Your-Feet.mp3\">>\n\n<<cacheaudio \"gallerymusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2015/05/Ice-Road-Sunrise.mp3\">>\n\n<<cacheaudio \"footstepsmusic\" \"format:mp3;https://www.dropbox.com/s/55us4eklmg300b5/Footsteps.mp3?dl=1\">>\n\n<<cacheaudio \"slowfootstepsmusic\" \"format:mp3;https://www.dropbox.com/s/8rvycg0zjwxl3ix/Slow%20footsteps%20%28for%20lighthouse%29.mp3?dl=1\">>\n\n<<cacheaudio \"mausoleummusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2015/11/Drafty-Places.mp3\">>\n\n<<cacheaudio \"flashbackmusic\" \"format:mp3;http://soundimage.org/wp-content/uploads/2014/02/Strange-Zone.mp3\">>\n",
+      "links": []
+    },
+    {
+      "pid": 63,
+      "name": "Line Hotel 2f",
+      "text": "But for one.\\\n<<append \"#output\">><br>\n\n<span class=\"redlink\">[[Take the lift->Lift Lobby (fire)]]</span><</append>>",
+      "links": [
+        {
+          "text": "Take the lift",
+          "destination": {
+            "name": "Lift Lobby (fire)",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "Eat 3",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<<set $fragment to 1>> You're halfway through the chocolate, barely able to catch your breath, when you catch a sudden glimpse of yellow. Your first instinct is happiness; surely that must be a concentrated dose of lemon zest, or pineapple, or some other exotic flavour. The thought makes you put down the section of chocolate you're working on \u2014 a temporary, albeit considerable, sacrifice \u2014 and grab the bit with the yellow strip, already feeling its pucker. Yet, though it takes just a few seconds, you can't help but notice, with all your attention on the strip, that it seems to lose more of its shine the closer it is to your lips. By the time it's in front of your face, in fact, you start to wonder how you'd found that artificial colour appetising in the first place. Only then do you realise that it's <<linkappend \"not confectionary at all.\">>\n\nUpon cleaning it off, you take a closer look. It looks like a strip of some kind.\n\n<div align='center'><img src='https://i.imgur.com/XP43bFr.jpg'></div>\nYou notice what looks to be some text at the bottom, but it's too miniscule to be made out. \n\nNo longer in the mood for food, you crumble the rest of the chocolate in your palms, hoping to find more clues, but nothing else turns up. Oh well. Maybe you'll learn more later.\n\n\n<span class=\"redlink\">[[Pocket the fragment and climb the steps to the next room->Chess Piece]]</span><</linkappend>>\n",
+      "links": [
+        {
+          "text": "Pocket the fragment and climb the steps to the next room",
+          "destination": {
+            "name": "Chess Piece",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "Both 3",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou can scarcely believe that you made it across with not just the absence of external assistance but with the presence of these pieces of bulky luggage whose combined weight must parallel that of a young elephant, at least. Eagerly you set about examining the objects, only to experience trouble prying them apart; apparently, the watermelon has attached so well to the treasure chest that effort is needed to separate the two. Upon doing so, you notice something you hadn't seen before in the concavity of the chest: a small white cross, purposefully marked. X, like on a treasure map. X marks the spot.\n\nYour eyes fall on the watermelon. <<linkreplace \"It's worth a shot.\">><<include \"Line Both 3 1\">><</linkreplace>>\n",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Both 3 1",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Line Both 3 1",
+      "text": "It's worth a shot.\\\n<<append \"#output\">>\n\t\\<br>Getting to your feet, you raise the watermelon to stomach level and drop it onto the chest, bracing yourself for the impact. When none comes, you inch your eyes open. The watermelon missed its mark completely, hitting only the iron framework of the chest and succeeding not in smashing but in toppling it. Taking more care this time, you repeat the manoeuvre. This time tiny bits of wood fly from the chest, though the majority of the base remains intact. The watermelon, on the other hand, bruised to the point of cracking open slightly, doesn't look like it can last much longer. Evidently, only one attempt remains. You take a breath, and raise the watermelon all the way above your head. To your dismay, rivulets of juice running from the partially split watermelon make your fingers slip at the last moment and <<linkreplace \"release the ball prematurely.\">><<include \"Line Both 3 2\">><</linkreplace>><</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Both 3 2",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "Line Both 3 2",
+      "text": "release the ball prematurely.\\\n<<append \"#output\">>\n\nFrozen with disappointment, your mind barely registers the explosion of the chest, reacting only as bits of wood, metal and melon pulp come flying your way. You look on in amazement. The X is nowhere to be seen. \n\t\nIn its place, within the confines of the treasure chest, is a mountain of sapphires. Above them, as though to testify for their value, is a <<linkreplace \"loupe.\">><<include \"Line Both 3 3\">><</linkreplace>><</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Both 3 3",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "Line Castle",
+      "text": "torches\\\n<<append \"#output\">>\n\nStill, the lighting is good enough for a set of knight's armour to be visible, a polished iron suit complete with a sword and a shield. Squinting harder yields the sight of barrels, stacked on one another against the wall, presumably, judging by the medieval setting, and by what must be spigots attached to their bases, filled with beer or wine.\n\nTowards the left you can make out cannons oriented towards the opposite end of the room, where teeth-like spikes of a portcullis rest heavily on the ground, blocking your exit. You're tracing the chains linked to the portcullis, trying to find the mechanism responsible for controlling it, when a movement below catches your attention. It doesn't take long for the image projected ahead to become coherent, but it does take a moment for you to believe your eyes. You'd always assumed you were alone.\n\n\n\t\\ <<linkreplace \"Little did you know.\">><<include \"Line Castle 2\">><<scrolldown>><</linkreplace>><</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Castle 2",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "Line Castle 2",
+      "text": "Little did you know.\\\n<<append \"#output\">>Eight fish flop around in a square-shaped pit that must once have been a moat, now drained of fluid but evidently not of life. For a second your open mouth matches that of the fish, neither seeing the passage of air. Your eyes, however, continue to dart from one fish to the next, as though to familiarise themselves with the idea, until some sort of waterwheel, nestled in the corner of the moat, reveals itself as the answer to what you were looking for \u2014 the waterwheel is the mechanism that generates energy to lift the portcullis. You feel your lungs coming into service again as you take a breath. Clearly, time is of the essence here.\n\n\n<span class=\"redlink\">[[Hide a torch in the knight's armour->Lamp]]\n\n[[Position the barrels such that their contents can flow into the moat, then turn each of their spigots on->Keg]]\n\n[[Fire a cannonball at the barrels->Cannonball]]</span>\n<</append>>\n\n",
+      "links": [
+        {
+          "text": "Hide a torch in the knight's armour",
+          "destination": {
+            "name": "Lamp",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Position the barrels such that their contents can flow into the moat, then turn each of their spigots on",
+          "destination": {
+            "name": "Keg",
+            "pid": 36
+          }
+        },
+        {
+          "text": "Fire a cannonball at the barrels",
+          "destination": {
+            "name": "Cannonball",
+            "pid": 37
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "Line Chess Piece 4",
+      "text": "make your way across\\\n<<append \"#output\">>\nExcept... your heart sinks. For by your feet are none other than a treasure chest, bolted with a serious-looking padlock, and a watermelon. A fat, round watermelon.\n\nCuriously enough, however, a spark of hope arrives after the initial burst of disappointment. After all, are these heavy objects not proof of the stability of the rope? Are they not meant for the foolhardy adventurer, desiring more risk than he/she can manage while swinging across? As long as one were to approach the challenge carrying nothing but oneself, <<linkreplace \"success\">><<include \"Line Chess Piece 5\">><<scrolldown>><</linkreplace>> would follow.<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Chess Piece 5",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "Line Watermelon",
+      "text": "tuck the watermelon in your arm.\\\n<<append \"#output\">>\n\nAhead, the rope lies in wait, dormant yet seeming to extend invisible twines in invitation, like some sort of enchanted grapevine. A burst of bravado, combined with your newly found confidence in the rope's sturdiness, overcomes any previous desire of yours to delay the inevitable; with a running start from the entrance area, you fling yourself over the pit, the rush of wind <<linkreplace \"trying and failing to weaken your resolve.\">><<include \"Line Watermelon 2\">><</linkreplace>>\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Watermelon 2",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "Line Watermelon 2",
+      "text": "trying and failing to weaken your resolve.\\\n<<append \"#output\">>\n\nBefore long you feel your hands come smoothly into contact with the rope and the rest of your body with spine-chilling relief, though your anxiety is only just beginning, for in the few milliseconds it takes for the rope to move towards salvation, the boundless darkness that occupies more and more of your vision repeats its warning, a wordless knell screaming of the omnipresent risk of a plummet. It wasn't, in fact, the point of absolute darkness that finally managed to take your breath away, but the instant immediately after that, when the first sliver of white cut into your sightline, looking for all the world like <<linkreplace \"the scythe of Grim Reaper.\">><<include \"Line Watermelon 3\">><</linkreplace>>\n<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Watermelon 3",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "Line Watermelon 3",
+      "text": "the scythe of Grim Reaper.\\\n<<append \"#output\">>\nBut then, as quickly as it appeared, the darkness fades, as though it were covering light all along. You've made it.\n\n\n<span class=\"redlink\">[[Examine your prize->Watermelon 2]]</span><</append>>",
+      "links": [
+        {
+          "text": "Examine your prize",
+          "destination": {
+            "name": "Watermelon 2",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "Line Nothing",
+      "text": "As if you're going to fall into the very trap you've foreseen.\\\n<<append \"#output\">>\n\nAhead, the rope lies in wait, dormant yet seeming to extend invisible twines in invitation, like some sort of enchanted grapevine. A burst of bravado, combined with your newly found confidence in the rope's sturdiness, overcomes any previous desire of yours to delay the inevitable; with a running start from the entrance area, you fling yourself over the pit, the rush of wind <<linkreplace \"trying and failing to weaken your resolve.\">><<include \"Line Nothing 2\">><</linkreplace>>\n<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Nothing 2",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Line Nothing 2",
+      "text": "trying and failing to weaken your resolve.\\\n<<append \"#output\">>\nBefore long you feel your hands come smoothly into contact with the rope and the rest of your body with spine-chilling relief, though your anxiety is only just beginning, for in the few milliseconds it takes for the rope to move towards salvation, the boundless darkness that occupies more and more of your vision repeats its warning, a wordless knell screaming of the omnipresent risk of a plummet. It wasn't, in fact, the point of absolute darkness that finally managed to take your breath away, but the instant immediately after that, when the first sliver of white cut into your sightline, looking for all the world like <<linkreplace \"the scythe of Grim Reaper.\">><<include \"Line Nothing 3\">><</linkreplace>>\n<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Nothing 3",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "Line Nothing 3",
+      "text": "the scythe of Grim Reaper.\\\n<<append \"#output\">>\nBut then, as quickly as it appeared, the darkness fades, as though it were covering light all along. You've made it.\n\n\n<span class=\"redlink\">[[Climb the stairs to the next room->In Between]]</span><</append>>",
+      "links": [
+        {
+          "text": "Climb the stairs to the next room",
+          "destination": {
+            "name": "In Between",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "Line Treasure Chest",
+      "text": "later.\\\n<<append \"#output\">>\n\nAhead, the rope lies in wait, dormant yet seeming to extend invisible twines in invitation, like some sort of enchanted grapevine. A burst of bravado, combined with your newly found confidence in the rope's sturdiness, overcomes any previous desire of yours to delay the inevitable; with a running start from the entrance area, you fling yourself over the pit, the rush of wind <<linkreplace \"trying and failing to weaken your resolve.\">><<include \"Line Treasure Chest 2\">><</linkreplace>>\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Treasure Chest 2",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "Line Treasure Chest 2",
+      "text": "trying and failing to weaken your resolve.\\\n<<append \"#output\">>\n\nBefore long you feel your hands come smoothly into contact with the rope and the rest of your body with spine-chilling relief, though your anxiety is only just beginning, for in the few milliseconds it takes for the rope to move towards salvation, the boundless darkness that occupies more and more of your vision repeats its warning, a wordless knell screaming of the omnipresent risk of a plummet. It wasn't, in fact, the point of absolute darkness that finally managed to take your breath away, but the instant immediately after that, when the first sliver of white cut into your sightline, looking for all the world like <<linkreplace \"the scythe of Grim Reaper.\">><<include \"Line Treasure Chest 3\">><</linkreplace>>\n<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Treasure Chest 3",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "Line Treasure Chest 3",
+      "text": "the scythe of Grim Reaper.\\\n<<append \"#output\">>\nBut then, as quickly as it appeared, the darkness fades, as though it were covering light all along. You've made it.\n\n\n<span class=\"redlink\">[[Examine your prize->Treasure Chest 2]]</span><</append>>",
+      "links": [
+        {
+          "text": "Examine your prize",
+          "destination": {
+            "name": "Treasure Chest 2",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "Line Both X",
+      "text": "meant to be together.\\\n<<append \"#output\">>\n\nAhead, the rope lies in wait, dormant yet seeming to extend invisible twines in invitation, like some sort of enchanted grapevine. A burst of bravado, combined with your newly found confidence in the rope's sturdiness, overcomes any previous desire of yours to delay the inevitable; with a running start from the entrance area, you fling yourself over the pit, the rush of wind <<linkreplace \"trying and failing to weaken your resolve.\">><<include \"Line Both X 2\">><</linkreplace>>\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Both X 2",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "Line Both X 2",
+      "text": "trying and failing to weaken your resolve.\\\n<<append \"#output\">>\n\nBefore long you feel your hands come smoothly into contact with the rope and the rest of your body with spine-chilling relief, though your anxiety is only just beginning, for in the few milliseconds it takes for the rope to move towards salvation, the boundless darkness that occupies more and more of your vision repeats its warning, a wordless knell screaming of the omnipresent risk of a plummet. It wasn't, in fact, the point of absolute darkness that finally managed to take your breath away, but the instant immediately after that, when the first sliver of white cut into your sightline, looking for all the world like <<linkreplace \"the scythe of Grim Reaper.\">><<include \"Line Both X 3\">><</linkreplace>>\n<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Both X 3",
+            "pid": 82
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "Line Both X 3",
+      "text": "the scythe of Grim Reaper.\\\n<<append \"#output\">>\nBut then, as quickly as it appeared, the darkness fades, as though it were covering light all along. You've made it.\n\n\n<<if $fragment is 1>><span class=\"redlink\">[[Examine your prizes->Both 3]]</span><<else>><span class=\"redlink\">[[Examine your prizes->Both 2]]</span><</if>><</append>>",
+      "links": [
+        {
+          "text": "Examine your prizes",
+          "destination": {
+            "name": "Both 3",
+            "pid": 65
+          }
+        },
+        {
+          "text": "Examine your prizes",
+          "destination": {
+            "name": "Both 2",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "Line Both 2 1",
+      "text": "It's worth a shot.\\\n<<append \"#output\">>\n\nGetting to your feet, you raise the watermelon to stomach level and drop it onto the chest, bracing yourself for the impact. When none comes, you inch your eyes open. The watermelon missed its mark completely, hitting only the iron framework of the chest and succeeding not in smashing but in toppling it. Taking more care this time, you repeat the manoeuvre. This time tiny bits of wood fly from the chest, though the majority of the base remains intact. The watermelon, on the other hand, bruised to the point of cracking open slightly, doesn't look like it can last much longer. Evidently, only one attempt remains. You take a breath, and raise the watermelon all the way above your head. To your dismay, rivulets of juice running from the partially split watermelon make your fingers slip at the last moment and <<linkreplace \"release the ball prematurely.\">><<include \"Line Both 2 2\">><</linkreplace>>\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Both 2 2",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "Line Both 2 2",
+      "text": "release the ball prematurely.\\\n<<append \"#output\">>\n\nFrozen with disappointment, your mind barely registers the explosion of the chest, reacting only as bits of wood, metal and melon pulp come flying your way. You look on in amazement. The X is nowhere to be seen. \n\nIn its place, within the confines of the treasure chest, is a mountain of sapphires. A loupe lies in the corner, as though to testify for their value.\n\n\n<span class=\"redlink\">[[Place a handful in your pocket and climb the stairs to the next room->In Between]]</span><</append>>",
+      "links": [
+        {
+          "text": "Place a handful in your pocket and climb the stairs to the next room",
+          "destination": {
+            "name": "In Between",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "Line Both 3 3",
+      "text": "loupe.\\\n<<append \"#output\">>\n\nRemembering the strip you'd recovered from the chocolate, you use the loupe to magnify the words on the strip.\n\n<div align='center'><img src='https://i.imgur.com/0nd0eLY.png'></div>\nYou mull over this as you dust yourself off.\n<<set $achievementtreasure to 1>>\n\n<span class=\"redlink\">[[Climb the stairs to the next room->In Between]]</span>\n<</append>>",
+      "links": [
+        {
+          "text": "Climb the stairs to the next room",
+          "destination": {
+            "name": "In Between",
+            "pid": 86
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "In Between",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n<<nobr>><<if $musicrepeat is 1>><<audio \"footstepsmusic\" volume 0.3 play>><<audio \"chesspiecemusic\" stop>><<audio \"flashbackmusic\" time 0 volume 1 loop play>><<else>><<audio \"footstepsmusic\" volume 0.3 play>><<audio \"chesspiecemusic\" volume 0.4 fadeoverto 1 0>><<audio \"flashbackmusic\" volume 1 loop play>><</if>><</nobr>>\nHigher and higher you climb, pumping energy into every step. If only your heart could beat at twice that speed. The rhythm of your stomps calms you a little, and there is strength in survival, but their combined effect is dwarfed by the stature of the tower, [[looming large like a forgotten nightmare.->In Between 2]]\n\n\n<span class=\"redlink\">[[Shake it off->Pagoda]]</span>",
+      "links": [
+        {
+          "text": "looming large like a forgotten nightmare.",
+          "destination": {
+            "name": "In Between 2",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Shake it off",
+          "destination": {
+            "name": "Pagoda",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "In Between 2",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nHigher and higher you climb, pumping energy into every step. If only your heart could beat at twice that speed. The rhythm of your stomps calms you a little, and there is strength in survival, but their combined effect is dwarfed by the stature of the tower, looming large like a forgotten nightmare.\n\nIt was only a blunder, and you were only a kid, lost and sidelined. But the brush with death had been [[less forgiving.->In Between 3]]\n\n\n<span class=\"redlink\">[[Dismiss it->Pagoda]]</span>",
+      "links": [
+        {
+          "text": "less forgiving.",
+          "destination": {
+            "name": "In Between 3",
+            "pid": 88
+          }
+        },
+        {
+          "text": "Dismiss it",
+          "destination": {
+            "name": "Pagoda",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "In Between 3",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nHigher and higher you climb, pumping energy into every step. If only your heart could beat at twice that speed. The rhythm of your stomps calms you a little, and there is strength in survival, but their combined effect is dwarfed by the stature of the tower, looming large like a forgotten nightmare.\n\nIt was only a blunder, and you were only a kid, lost and sidelined. But the brush with death had been less forgiving.\n\nNearing the next room does nothing to allay your fears, even as you stand inches from the door.\n\nTill today, the memory remains, [[some details more vivid than others->In Between 4]]. The bile as you left the ledge, the crippling pain after. Words from an overheard conversation: mischief, children, environment, attention, not right.\n\n\n<span class=\"redlink\">[[Blink->Pagoda]]</span>",
+      "links": [
+        {
+          "text": "some details more vivid than others",
+          "destination": {
+            "name": "In Between 4",
+            "pid": 89
+          }
+        },
+        {
+          "text": "Blink",
+          "destination": {
+            "name": "Pagoda",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "In Between 4",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nHigher and higher you climb, pumping energy into every step. If only your heart could beat at twice that speed. The rhythm of your stomps calms you a little, and there is strength in survival, but their combined effect is dwarfed by the stature of the <span style=\"color:red\"><b>tower</b></span>, looming large like a forgotten nightmare.\n\nIt was only a blunder, and you were only a kid, lost and <span style=\"color:red\"><b>sidelined</b></span>. But the brush with death had been less forgiving.\n\nNearing the next room does nothing to allay your fears, even as you stand inches from the door.\n\nTill today, the memory remains, <u>some details more vivid than others</u>. The bile as you left the ledge, the crippling pain after. Words from an overheard conversation: mischief, children, environment, attention, <span style=\"color:red\"><b>not right</b></span>.<<set $flashback to 1>>\n\n\n<<fadeout 0.8 0.5>><span style=\"color:red\">Blink</span><</fadeout>><<timed 2.5s t8n>><span class=\"redlink\"><<linkreplace \"Try to move on\">>[[Enter->Pagoda]]<</linkreplace>></span><</timed>>",
+      "links": [
+        {
+          "text": "Enter",
+          "destination": {
+            "name": "Pagoda",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "Between Cont",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n<<nobr>><<audio \"footstepsmusic\" volume 0.3 play>><<audio \"castlemusic\" stop>><<audio \"flashbackmusic\" time 0 volume 1 loop play>><</nobr>>\n<i>Here we go again.</i>\n\nIts voice had been loud and demolishing, like a bulldozer, drowning out even the pain. [[The voice of Death.->Between Cont 2]]\n\n\n<span class=\"redlink\">[[Move on->Lighthouse]]</span>",
+      "links": [
+        {
+          "text": "The voice of Death.",
+          "destination": {
+            "name": "Between Cont 2",
+            "pid": 94
+          }
+        },
+        {
+          "text": "Move on",
+          "destination": {
+            "name": "Lighthouse",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "Blurb",
+      "text": "\"So through endless twilights I dreamed and waited, though I knew not what I waited for. Then in the shadowy solitude my longing for light grew so frantic that I could rest no more, and I lifted entreating hands to the single black ruined tower that reached above the forest into the unknown outer sky. <i>And at last I resolved to scale that tower, fall though I might; since it were better to glimpse the sky and perish, than to live without ever beholding day.</i>\"\n\n\u2014 H.P. Lovecraft, The Outsider\n\n\n<span class=\"redlink\">[[Back->NOTE]]</span>",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "NOTE",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 92,
+      "name": "Between Cont 5",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nDespite the sheer terror of it all, you take your chances and recall the image of your tormentor. \n\nFor weeks and weeks after the incident, the notion that Death itself had come for you was something you'd clung on to as tightly as you did the blanket, bedtime coming and going, as you listened for the slightest hint of a footfall, relying on pure exhaustion to force a bout of sleep with the obstinate certainty that comes with adolescence. You <i>had</i> given their suggestion a second chance, that it was possible the mounting lack of sleep was causing hallucinations, but by then even they had lost interest, and with little motivation to [[do otherwise->Between Cont 6]], you had relapsed into the old way of thinking.",
+      "links": [
+        {
+          "text": "do otherwise",
+          "destination": {
+            "name": "Between Cont 6",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "Between Cont 4a",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n<<set $achievementhistorian to 1>>\nDespite the sheer terror of it all, you take your chances and [[recall the image of your tormentor.->Between Cont 5]]",
+      "links": [
+        {
+          "text": "recall the image of your tormentor.",
+          "destination": {
+            "name": "Between Cont 5",
+            "pid": 92
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "Between Cont 2",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<i>Here we go again.</i>\n\nIts voice had been loud and demolishing, like a bulldozer, drowning out even the pain. The voice of Death.\n\nNo one believed you'd pull through. The last thing you saw as you lost consciousness was a figure draped in black, hunched over you, mumbling something unintelligible and [[extending long, crooked fingers.->Between Cont 3]]\n\n\n<span class=\"redlink\">[[Enough->Lighthouse]]</span>",
+      "links": [
+        {
+          "text": "extending long, crooked fingers.",
+          "destination": {
+            "name": "Between Cont 3",
+            "pid": 95
+          }
+        },
+        {
+          "text": "Enough",
+          "destination": {
+            "name": "Lighthouse",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "Between Cont 3",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<i>Here we go again.</i>\n\nIts voice had been loud and demolishing, like a bulldozer, drowning out even the pain. The voice of Death.\n\nNo one believed you'd pull through. The last thing you saw as you lost consciousness was a figure draped in black, hunched over you, mumbling something unintelligible and extending long, crooked fingers.\n\nThereafter to sleep was to dream, and to dream was to dream of it. The one time your nightmare became reality, you hadn't let your guard down, either. The doorway had been dim and its movements soft, but there was no mistaking its face. The jolt of fear coursing through your body alerted the monitors, you got one last image, and then everything was a mess of alarms blaring, assistants running in, your mind drifting, doctors raising their voices in an effort to overcome the pierce of someone's screams, the instigator of which it took you a moment to realise was [[you.->Between Cont 3b]]",
+      "links": [
+        {
+          "text": "you.",
+          "destination": {
+            "name": "Between Cont 3b",
+            "pid": 110
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "Between Cont 4b",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nTry as you might, you simply can't muster the courage to face the past. You know it'll only be re-opening old wounds.\n\n\n[[Climb the stairs to the next room->Lighthouse]]",
+      "links": [
+        {
+          "text": "Climb the stairs to the next room",
+          "destination": {
+            "name": "Lighthouse",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "Between Cont 6",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nDespite the sheer terror of it all, you take your chances and recall the image of your tormentor. \n\nFor weeks and weeks after the incident, the notion that Death itself had come for you was something you'd clung on to as tightly as you did the blanket, bedtime coming and going, as you listened for the slightest hint of a footfall, relying on pure exhaustion to force a bout of sleep with the obstinate certainty that comes with adolescence. You <i>had</i> given their suggestion a second chance, that it was possible the mounting lack of sleep was causing hallucinations, but by then even they had lost interest, and with little motivation to do otherwise, you had relapsed into the old way of thinking.\n\nBut now, separated from the trauma by time, the influence of a rested mind and the distance of several floors, not to mention the less-than-terrifying reality of confronting the memory, you consider the image in front of you. Why exactly had it been so troubling? [[What had they said that you'd chosen to ignore?->Between Cont 7]]",
+      "links": [
+        {
+          "text": "What had they said that you'd chosen to ignore?",
+          "destination": {
+            "name": "Between Cont 7",
+            "pid": 98
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "Between Cont 7",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou remember it now, like dozens of sparrows bursting from a cage. That adolescent imagination had filled in what the view from the corner of your eye couldn't tell. That you'd blacked out in front of the very person who'd lifted you to safety. [[That she, not it, had been the one checking on you.->Between Cont 8]]",
+      "links": [
+        {
+          "text": "That she, not it, had been the one checking on you.",
+          "destination": {
+            "name": "Between Cont 8",
+            "pid": 99
+          }
+        }
+      ]
+    },
+    {
+      "pid": 99,
+      "name": "Between Cont 8",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou remember it now, like dozens of sparrows bursting from a cage. That adolescent imagination had filled in what the view from the corner of your eye couldn't tell. That you'd blacked out in front of the very person who'd lifted you to safety. That she, not it, had been the one checking on you.\n\nThe sense of satisfaction is subdued, not least because of the novelty of the idea, and the knowledge that it is but a theory, a perspective. Still, the day seems [[brighter than it had been for a while.->Between Cont 9]]",
+      "links": [
+        {
+          "text": "brighter than it had been for a while.",
+          "destination": {
+            "name": "Between Cont 9",
+            "pid": 100
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "Between Cont 9",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou remember it now, like dozens of sparrows bursting from a cage. That adolescent imagination had filled in what the view from the <span style=\"color:red\"><b>corner</b></span> of your eye couldn't tell. That you'd blacked out in front of the very person who'd <span style=\"color:red\"><b>lifted</b></span> you to safety. That she, not it, had been the one checking on you.\n\nThe sense of satisfaction is subdued, not least because of the novelty of the idea, and the knowledge that it is but a theory, a perspective. Still, the day seems brighter than it had been for a while.\n\n\n<<timed 2.5s t8n>><span class=\"redlink\">[[Climb the stairs to the next room->Lighthouse]]</span><</timed>>\n",
+      "links": [
+        {
+          "text": "Climb the stairs to the next room",
+          "destination": {
+            "name": "Lighthouse",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "Casoda",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n<<nobr>><<if $musicrepeat is 1>><<audio \"pagodamusic\" stop>><<else>><<audio \"pagodamusic\" volume 0.4 fadeoverto 1 0>><</if>><</nobr>>\nThrough the spaces in between the steps, your reflection, an other you, looks up. Another part of you [[spiralling down->Casoda 2]], sinking into the depths of the floor, your half-smile his half-frown, even as you appear to rise above the surface.",
+      "links": [
+        {
+          "text": "spiralling down",
+          "destination": {
+            "name": "Casoda 2",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "Casoda 2",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nThrough the spaces in between the steps, your reflection, an other you, looks up. Another part of you spiralling down, sinking into the depths of the floor, your half-smile his half-frown, even as you appear to rise above the surface.\n\nSo maybe all of this is futile. Maybe, even as sheer obligation dictates your ascent, welcoming the change with open arms is [[embracing betrayal.->Casoda 2b]]",
+      "links": [
+        {
+          "text": "embracing betrayal.",
+          "destination": {
+            "name": "Casoda 2b",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "Casoda 3",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nThrough the spaces in between the steps, your reflection, an other you, looks up. Another part of you spiralling down, sinking into the depths of the floor, your half-smile his half-frown, even as you appear to rise above the surface.\n\nSo maybe all of this is futile. Maybe, even as sheer obligation dictates your ascent, welcoming the change with open arms is embracing betrayal.\n\nNo. You've been through this before. \n\nYou squeeze your eyes shut and [[focus on your breathing.->Casoda 4]]",
+      "links": [
+        {
+          "text": "focus on your breathing.",
+          "destination": {
+            "name": "Casoda 4",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "Casoda 4",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n<<nobr>><<if $musicrepeat is 1>><<audio \"casodamusic\" time 0 volume 0.8 loop play>><<else>><<audio \"casodamusic\" volume 0.8 loop play>><</if>><</nobr>>\nThrough the spaces in between the steps, your reflection, an other you, looks up. Another part of you spiralling down, sinking into the depths of the floor, your half-smile his half-frown, even as you appear to rise above the surface.\n\nSo maybe all of this is futile. Maybe, even as sheer obligation dictates your ascent, welcoming the change with open arms is embracing betrayal.\n\nNo. You've been through this before. \n\nYou squeeze your eyes shut and focus on your breathing.\n\n<<timed 3s t8n>>When you look again, you see, against the backdrop of the lotus wisps, your reflection in sharp focus, staring at you steadily. The eye of the storm, calm amidst calamity, [[at least for the time being.->Casoda 5]]<</timed>>",
+      "links": [
+        {
+          "text": "at least for the time being.",
+          "destination": {
+            "name": "Casoda 5",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "Casoda 5",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nThrough the spaces in between the steps, your reflection, an other you, looks up. Another part of you spiralling down, sinking into the depths of the floor, your half-smile his half-frown, even as you appear to rise above the surface.\n\nSo maybe all of this is futile. Maybe, even as sheer obligation dictates your ascent, welcoming the change with open arms is embracing betrayal.\n\nNo. You've been through this before. \n\nYou squeeze your eyes shut and focus on your breathing.\n\nWhen you look again, you see, against the backdrop of the lotus wisps, your reflection in sharp focus, staring at you steadily. The eye of the storm, calm amidst calamity, at least for the time being.\n\n\n<span class=\"redlink\">[[Climb->Castle]]</span>",
+      "links": [
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Castle",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "Line Hotel",
+      "text": "the room you know so well.\\\n<<append \"#output\">>\n\nEverything, from the cushions on the sofa to the petals of every flower, is in its place, as you know they'd be. A bowl of apples on the receptionist's desk remains the only addition that can be considered new, along with identical money trees on either side, positioned such that their distance from the apples match perfectly, as though part of a binary star system presided over by Adam and Eve.\n\nLight pours from every corner of the room: the fireplace, the lamps, the polished marble floor. A pity, considering you won't be here to bathe in their warmth. As if to rub it in further, the frost-covered windows start to acquire an almost iridescent quality. But as much as you loathe to dismiss your anger, or, for that matter, your other feelings of wistfulness, you know their glow is not just an insult, but a sign. Daylight has broken. <<linkreplace \"It's time to go.\">><<include \"Line Hotel 2\">><<scrolldown>><</linkreplace>>\n\\<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Hotel 2",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "Line Hotel 2",
+      "text": "It's time to go.\\\n<<append \"#output\">>\n\n\n<span class=\"redlink\">[[Take the stairs->Stairs]]\n[[Take the lift->Lift Lobby]]\n\n<<nobr>><<first>><</first>><<first>><<finally>>[[Main Menu->Main Menu]]<</first>><</nobr>></span><</append>>",
+      "links": [
+        {
+          "text": "Take the stairs",
+          "destination": {
+            "name": "Stairs",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Take the lift",
+          "destination": {
+            "name": "Lift Lobby",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Main Menu",
+          "destination": {
+            "name": "Main Menu",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "Casoda 2b",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nThrough the spaces in between the steps, your reflection, an other you, looks up. Another part of you spiralling down, sinking into the depths of the floor, your half-smile his half-frown, even as you appear to rise above the surface.\n\nSo maybe all of this is futile. Maybe, even as sheer obligation dictates your ascent, welcoming the change with open arms is embracing betrayal.\n\n[[No.->Casoda 2c]]",
+      "links": [
+        {
+          "text": "No.",
+          "destination": {
+            "name": "Casoda 2c",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "Casoda 2c",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nThrough the spaces in between the steps, your reflection, an other you, looks up. Another part of you spiralling down, sinking into the depths of the floor, your half-smile his half-frown, even as you appear to rise above the surface.\n\nSo maybe all of this is futile. Maybe, even as sheer obligation dictates your ascent, welcoming the change with open arms is embracing betrayal.\n\nNo. [[You've been through this before.->Casoda 3]]",
+      "links": [
+        {
+          "text": "You've been through this before.",
+          "destination": {
+            "name": "Casoda 3",
+            "pid": 103
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "Between Cont 3b",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\n<i>Here we go again.</i>\n\nIts voice had been loud and demolishing, like a bulldozer, drowning out even the pain. The voice of Death.\n\nNo one believed you'd pull through. The last thing you saw as you lost consciousness was a figure draped in black, hunched over you, mumbling something unintelligible and extending long, crooked fingers.\n\nThereafter to sleep was to dream, and to dream was to dream of it. The one time your nightmare became reality, you hadn't let your guard down, either. The doorway had been dim and its movements soft, but there was no mistaking its face. The jolt of fear coursing through your body alerted the monitors, you got one last image, and then everything was a mess of alarms blaring, assistants running in, your mind drifting, doctors raising their voices in an effort to overcome the pierce of someone's screams, the instigator of which it took you a moment to realise was you.\n\n\n<<if $flashback is 1>><span class=\"redlink\">[[Dig deeper->Between Cont 4a]]\n[[Bury the memory->Lighthouse]]</span><<else>><span class=\"redlink\">[[Try to dig deeper->Between Cont 4b]]\n[[Bury the memory->Lighthouse]]</span><</if>>",
+      "links": [
+        {
+          "text": "Dig deeper",
+          "destination": {
+            "name": "Between Cont 4a",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Bury the memory",
+          "destination": {
+            "name": "Lighthouse",
+            "pid": 5
+          }
+        },
+        {
+          "text": "Try to dig deeper",
+          "destination": {
+            "name": "Between Cont 4b",
+            "pid": 96
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "Stairs Part 2",
+      "text": "@@#output;<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nYou pause at the <<linkreplace \"landing.\">><<include \"Line Stairs Part 2\">><</linkreplace>> From here, the room you were in is obstructed from view, but you can still see the waves of light emanating from it. The sight makes your heart lurch with longing. You allow yourself a few seconds, savouring every instant.",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Stairs Part 2",
+            "pid": 112
+          }
+        }
+      ]
+    },
+    {
+      "pid": 112,
+      "name": "Line Stairs Part 2",
+      "text": "landing.\\\n<<append \"#output\">><br>\nOverhead, the ceiling that you know conceals the rooms beyond hangs expressionless, unwilling to divulge its secrets. You used to think a lot more about the future, when your courage was still fresh and unblemished. Unblemished by what? By age, and... unfortunate incidents. The involuntary thought makes you shudder. Suddenly the lights from below don't look as attractive. Maybe it's better to get this over with.\n\n\n<span class=\"redlink\">[[Enter->Cake]]</span>\n<</append>>",
+      "links": [
+        {
+          "text": "Enter",
+          "destination": {
+            "name": "Cake",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "Line Pagoda 2",
+      "text": "show\\\n<<append \"#output\">><br>\nGlazed tiles cover the floor, their collective shimmer reflecting <<linkreplace \"every detail\">><<include \"Line Pagoda 3\">><<scrolldown>><</linkreplace>> in the room, like a lake at sunrise. Each tile, distinct though it is from others, enhances rather than ruins the aquatic imagery, the crisscross pattern of alternating tiles tantamount to a floating fish net whose holes offer the faintest glimpse into the underworld. But just being on the surface is more than enough; the euphoria of walking on water, combined with the equally assuring sensation of being supported above a thousand miles, bring moisture to your eyes.<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Pagoda 3",
+            "pid": 114
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "Line Pagoda 3",
+      "text": "every detail\\\n<<append \"#output\">><br>\nOccupying center stage is a red pillar that extends from the ground to the ceiling, around which is a set of spiral stairs, adhering firmly to the pole like a plant dependent on a support. Indeed, climbing these stairs would be akin to climbing a tree, every step an experience in itself, as the ground, and your worries, peel away.\n\nDimly lit lanterns hang from the ceiling, like fruit of the tree, filled with seeds of flame.\n\nAbsorbing \u2014 that's all you want to do. Gathering invisible energy from the atmosphere, taking in the essence of every object. Resting.\n\n\n<span class=\"redlink\">[[Breathe->Pagoda 2a]]\n[[Gaze->Pagoda 3a]]\n[[Float->Pagoda 4a]]\n[[Climb->Casoda]]</span>\n<</append>>",
+      "links": [
+        {
+          "text": "Breathe",
+          "destination": {
+            "name": "Pagoda 2a",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Gaze",
+          "destination": {
+            "name": "Pagoda 3a",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Float",
+          "destination": {
+            "name": "Pagoda 4a",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Climb",
+          "destination": {
+            "name": "Casoda",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "Line Chess Piece 5",
+      "text": "success\\\n<<append \"#output\">><br>\nEven then, you hesitate. Surely the significance of these objects lies beyond a simple reassurance that the rope is to be trusted. And on that subject, a closer examination of the rope does nothing to support this belief; it appears neither fraying nor in top-notch condition. But then again, it's not like you have a choice. The real dilemma, indeed, is in the objects lying before you: <<linkreplace \"which, and how many.\">><<include \"Line Chess Piece 6\">><<scrolldown>><</linkreplace>><</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Chess Piece 6",
+            "pid": 116
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "Line Chess Piece 6",
+      "text": "which, and how many.\\\n<<append \"#output\">><br>\n\n<span class=\"redlink\">[[Take nothing->Nothing]]\n[[Take the watermelon->Watermelon]]\n[[Take the treasure chest->Treasure Chest]]\n[[Take both->Both]]</span>\n<</append>>",
+      "links": [
+        {
+          "text": "Take nothing",
+          "destination": {
+            "name": "Nothing",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Take the watermelon",
+          "destination": {
+            "name": "Watermelon",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Take the treasure chest",
+          "destination": {
+            "name": "Treasure Chest",
+            "pid": 19
+          }
+        },
+        {
+          "text": "Take both",
+          "destination": {
+            "name": "Both",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "Line Lighthouse 4",
+      "text": "more than one.\\\n<<append \"#output\">><br>\nOnly then do you realise the truth: the room is mirrored on all sides. That is why the doors you'd seen were, in a sense, neither real nor imaginary \u2014 the door you'd come from had been the only one in the room, single-handedly giving rise to the multiple reflections all around. Too late. The door has clicked shut. You are at an arbitrary position in a hot, bright, symmetrical room whose only exit you have to find blindfolded, and... <<linkreplace \"what on earth is that crackling sound?\">><<include \"Line Lighthouse 5\">><<scrolldown>><</linkreplace>><</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Lighthouse 5",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "Line Lighthouse 5",
+      "text": "what on earth is that crackling sound?\\\n<<append \"#output\">><br>\nUnusually, you perceive the light getting dimmer, as though under someone's control. With your eyes still closed, you turn this over in your mind, find no satisfactory explanation, and put it aside for consideration at a time when the issue of getting out of the room is a thing of the past. But there eventually comes a point when the room appears dim enough for you to <<linkreplace \"look around\">><<include \"Line Lighthouse 6\">><<scrolldown>><</linkreplace>>, which would obviously be of great help. Thus, taking care to limit the exposure of light to a little at a time, you open your eyes. When you do, you wish unconditionally for the light to be back.<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Lighthouse 6",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "Line Lighthouse 6",
+      "text": "look around\\\n<<append \"#output\">><br>\nShards, the only evidence of the lamp ever having existed, lie scattered on the ground. A distance below the position where it must have hung is a literal diamond ring, a circle of ten gems suspended by ropes. Below that is a <<linkreplace \"fire\">><<scrolldown>><<include \"Line Lighthouse 7\">><</linkreplace>>, growing by the second, devouring everything in its path.<</append>>",
+      "links": [
+        {
+          "text": "<include>",
+          "destination": {
+            "name": "Line Lighthouse 7",
+            "pid": 120
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "Line Lighthouse 7",
+      "text": "fire\\\n<<append \"#output\">><br>\nExhaustion, like the lurking seal, chooses this time to strike. After a moment you can't tell if the room is blurring because of your fading consciousness, or because of the heat waves emanating from the flames. You can't tell if your eyes are tearing because you're trying and failing to stifle a yawn, or because, in the face of death, you can only offer despair.\n\n\n<span class=\"redlink\">[[Run->Hotel 2]]</span>\n<</append>>",
+      "links": [
+        {
+          "text": "Run",
+          "destination": {
+            "name": "Hotel 2",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "Line Resist 2a",
+      "text": "don't.\\\n<<append \"#output\">><br>\nThus, taking a light breath (so as to refrain from accidentally inhaling that scent once more and changing your mind), you scan the room with as disinterested a perspective as you can manage, taking particular care to note the crevices in the ground, over which you might trip. Then, satisfied with the blueprint you've drawn in your mind, you squeeze your eyes closed and put the rest of your plan into action. Before you know it, you're on the other side of the door.\n\n\n<span class=\"redlink\">[[Climb the stairs to the next room->Chess Piece]]</span><</append>>",
+      "links": [
+        {
+          "text": "Climb the stairs to the next room",
+          "destination": {
+            "name": "Chess Piece",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "Line Hotel 2ax",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nDown the stairs you thunder, your feet the fingers of a concert pianist, your heart its accompaniment, the omnipresent heat wave constantly pumping up the ferocity of your brain's conducting. But never once do you manage to drown out the fire, not as you race <span style=\"color:red\">throu</span>gh the moat, [[down the spiral,->Line Hotel 2bx]]",
+      "links": [
+        {
+          "text": "down the spiral,",
+          "destination": {
+            "name": "Line Hotel 2bx",
+            "pid": 123
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "Line Hotel 2bx",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nDown the stairs you thunder, your feet the fingers of a concert pianist, your heart its accompaniment, the omnipresent heat wave constantly pumping up the ferocity of your brain's conducting. But never once do you manage to drown out the fire, not as you race <span style=\"color:red\">through the moat,</span> down the spiral, [[across the pit,->Line Hotel 2cx]]",
+      "links": [
+        {
+          "text": "across the pit,",
+          "destination": {
+            "name": "Line Hotel 2cx",
+            "pid": 124
+          }
+        }
+      ]
+    },
+    {
+      "pid": 124,
+      "name": "Line Hotel 2cx",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nDown the stairs you thunder, your feet the fingers of a concert pianist, your heart its accompaniment, the omnipresent heat wave constantly pumping up the ferocity of your brain's conducting. But never once do you manage to drown out the fire, not as you race <span style=\"color:red\">through the moat, down th</span>e spiral, across the pit, [[past the chocolates,->Line Hotel 2dx]]",
+      "links": [
+        {
+          "text": "past the chocolates,",
+          "destination": {
+            "name": "Line Hotel 2dx",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "Line Hotel 2dx",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nDown the stairs you thunder, your feet the fingers of a concert pianist, your heart its accompaniment, the omnipresent heat wave constantly pumping up the ferocity of your brain's conducting. But never once do you manage to drown out the fire, not as you race <span style=\"color:red\">through the moat, down the spiral, across the</span> pit, past the chocolates, not even as you skid to a stop in the [[first room->Line Hotel 2ex]] you'd entered, the one you'd felt safest in.",
+      "links": [
+        {
+          "text": "first room",
+          "destination": {
+            "name": "Line Hotel 2ex",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "Line Hotel 2ex",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nDown the stairs you thunder, your feet the fingers of a concert pianist, your heart its accompaniment, the omnipresent heat wave constantly pumping up the ferocity of your brain's conducting. But never once do you manage to drown out the fire, not as you race <span style=\"color:red\">through the moat, down the spiral, across the pit, past the</span> chocolates, not even as you skid to a stop in the first room you'd entered, the one you'd felt safest in. If anything, the very fingers of warmth that had lent the room its cosiness now clasp like a curse, sealing off any chance of escape.\n\n<<timed 2.5s t8n>>[[But for one.->Line Hotel 2fx]]<</timed>>",
+      "links": [
+        {
+          "text": "But for one.",
+          "destination": {
+            "name": "Line Hotel 2fx",
+            "pid": 127
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "Line Hotel 2fx",
+      "text": "<span style=\"color:red\">\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580\u2580</span>\n\nDown the stairs you thunder, your feet the fingers of a concert pianist, your heart its accompaniment, the omnipresent heat wave constantly pumping up the ferocity of your brain's conducting. But never once do you manage to drown out the fire, not as you race <span style=\"color:red\">through the moat, down the spiral, across the pit, past the chocolates,</span> not even as you skid to a stop in the first room you'd entered, the one you'd felt safest in. If anything, the very fingers of warmth that had lent the room its cosiness now clasp like a curse, sealing off any chance of escape.\n\nBut for one.\n\n\n<span class=\"redlink\">[[Take the lift->Lift Lobby (fire)]]</span>",
+      "links": [
+        {
+          "text": "Take the lift",
+          "destination": {
+            "name": "Lift Lobby (fire)",
+            "pid": 44
+          }
+        }
+      ]
+    }
+  ]
+}

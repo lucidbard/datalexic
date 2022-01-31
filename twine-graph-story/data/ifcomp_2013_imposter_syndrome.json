@@ -1,0 +1,1078 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "everyone",
+      "text": "Everyone's eyes are on you now.\\n\\nIt's funny, isn't it? You've spent the entirety of your career being virtually [[invisible]], and now? Now, you're more visible than ever. Look, Georgiana, it's what you've always wanted! Are you happy now? [[Are you?|you]]",
+      "links": [
+        {
+          "text": "invisible",
+          "destination": {
+            "name": "invisible",
+            "pid": 31
+          }
+        },
+        {
+          "text": "Are you?",
+          "destination": {
+            "name": "you",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "followed",
+      "text": "Or at least, tried to follow. The actual development of the project was a such a haphazard mess that if it were a physical product, it would be held together by nothing more than bubble gum and duct tape. Of course, nobody ever talks about failure at these sorts of conferences, otherwise who would go to them? So, inevitably, you have to make sense out of all the randomness and somehow make it look intentional. [[Even though you doubt they're buying it.|slide 3]]",
+      "links": [
+        {
+          "text": "Even though you doubt they're buying it.",
+          "destination": {
+            "name": "slide 3",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Georgiana",
+      "text": "This is what it says on your speaker bio:\\n\\n\"Georgiana Bourbonnais is a veteran programmer and user experience designer with a passion for making the world a more connected place. She cofounded [[Braingarten|not now]], worked as a senior engineer at [[Goggle|not now]], and is currently an independent consultant.\"\\n\\nTo people who don't know any better, it actually kind of sounds like you've accomplished some things in life. [[But all you can see are your many failures.|intro]]",
+      "links": [
+        {
+          "text": "Braingarten",
+          "destination": {
+            "name": "not now",
+            "pid": 43
+          }
+        },
+        {
+          "text": "Goggle",
+          "destination": {
+            "name": "not now",
+            "pid": 43
+          }
+        },
+        {
+          "text": "But all you can see are your many failures.",
+          "destination": {
+            "name": "intro",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Start",
+      "text": "<<display intro>>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "intro",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "intro",
+      "text": "You don't belong up here.\\n\\nWhat were you thinking, [[Georgiana]]? Volunteering to go up on stage and speak to all those people, as if you actually know anything about programming augmented reality apps in [[PITBULL]]. There are exactly 268 people down there... 268 people, all of whom are way smarter and more talented than you are. Which, you have to admit, isn't saying a lot.\\n\\nIn all fairness, you never thought your [[speaker proposal]] would even get selected. But it did. And here you are.\\n\\nOkay, Georgiana. Breathe. They're all waiting for you. [[Might as well get it over with.|slide 1]]",
+      "links": [
+        {
+          "text": "Georgiana",
+          "destination": {
+            "name": "Georgiana",
+            "pid": 3
+          }
+        },
+        {
+          "text": "PITBULL",
+          "destination": {
+            "name": "PITBULL",
+            "pid": 30
+          }
+        },
+        {
+          "text": "speaker proposal",
+          "destination": {
+            "name": "speaker proposal",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Might as well get it over with.",
+          "destination": {
+            "name": "slide 1",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "slide 1",
+      "text": "Your first [[slide]] goes up. It has your name and the title of your talk on it. Well, at least this part's easy.\\n\\nYou hear someone cough from somewhere near the back row. You wonder whether they're doing it on purpose, just to mess you up. You're probably just being paranoid. Geez, Georgiana, what's wrong with you?\\n\\n[[Next slide.|slide 2]]",
+      "links": [
+        {
+          "text": "slide",
+          "destination": {
+            "name": "slide",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Next slide.",
+          "destination": {
+            "name": "slide 2",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "after all that happened",
+      "text": "\"...we're going to have to let you go.\"\\n\"But we haven't even hit beta and I've still got 76 tasks in the bug tracker--\"\\n\"We'll pass them on to the more experienced programmers. They'll get the work done faster than you can, anyway...\"\\n\\nThat was then, Georgiana. This is now. [[Focus.|slide 2]]",
+      "links": [
+        {
+          "text": "Focus.",
+          "destination": {
+            "name": "slide 2",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "a threat",
+      "text": "Threat? Hah. [[You don't feel particularly threatening.|slide 4]]",
+      "links": [
+        {
+          "text": "You don't feel particularly threatening.",
+          "destination": {
+            "name": "slide 4",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Styles",
+      "text": "* {\\n\tfont-family: Helvetica, sans-serif;\\n}\\n\\nbody {\\n\tcolor: #000;\\n\tbackground-color: #fff;\\n\tfont-size: 100%;\\n}\\n\\na.internalLink:hover {\\n\ttext-decoration: none;\\n}\\n\\n#sidebar li:hover {\\n\tcolor: #999;\\n}\\n\\n#snapback, #share, #credits {\\n\tdisplay: none;\\n}",
+      "links": []
+    },
+    {
+      "pid": 10,
+      "name": "try",
+      "text": "But you're here. You have the floor. You have everyone's attention. [[Maybe you can try?|speak]]",
+      "links": [
+        {
+          "text": "Maybe you can try?",
+          "destination": {
+            "name": "speak",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "end",
+      "text": "''IMPOSTOR SYNDROME''\\n//some things never change//\\n\\n(author and credits to be revealed after the competition)",
+      "links": []
+    },
+    {
+      "pid": 12,
+      "name": "TrollChan",
+      "text": "When proponents of AR eyewear were attacked for denying people their privacy, they always used sites like TrollChan as examples for why anonymity was actually a bad thing. It is, after all, the armpit of the internet. The place where people can say or do whatever they want without fearing any consequences towards their \"real name\".\\n\\nOf course, people still say and do plenty of horrific things under said \"real names\". And TrollChan still exists. [[It never went away.|look]]",
+      "links": [
+        {
+          "text": "It never went away.",
+          "destination": {
+            "name": "look",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "interesting",
+      "text": "\"Interesting.\" It sounds like a compliment, but the more you think about it, the more you realise it's the kiss of death. Calling something \"interesting\" doesn't really say much of anything at all. It's an excuse to not have to engage with a piece of work because it's too weird, too different, too uncomfortable. [[It's a polite rejection.|last project]]",
+      "links": [
+        {
+          "text": "It's a polite rejection.",
+          "destination": {
+            "name": "last project",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "nah",
+      "text": "You'd better just [[get the rest of this talk over with|finish your talk]].",
+      "links": [
+        {
+          "text": "get the rest of this talk over with",
+          "destination": {
+            "name": "finish your talk",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "she understands",
+      "text": "Most people know Catherine as the woman who very vocally named and shamed [[Jerry Gabriel]] for mistaking her for the entertainment at one of Pomelo's renowned parties. He invited her back to his place for \"coffee\" *wink wink nudge nudge* while leeringly admiring her orchestra, mezzazine, and balcony. Catherine, of course, got the short end of the ordeal, having to deal with the loss of her job and the hordes of Pomelo fanboys calling her all manner of transphobic slurs and threatening her with rape. Meanwhile, Jerry G got to keep his cushy job and be constantly reassured that he's really a great guy, honest! He even runs a generous scholarship for women in tech and everything! Clearly, that harlot was making up the story for attention.\\n\\nStill, Catherine doesn't regret a thing. As she always says, while the fallout from speaking out nearly destroyed her, staying silent any longer would've outright killed her.\\n\\nShe's so strong, and you... you don't even deserve to compare yourself to her. What happened to you was nothing compared to this. [[Pull yourself together.|slide 3]]",
+      "links": [
+        {
+          "text": "Jerry Gabriel",
+          "destination": {
+            "name": "Jerry Gabriel",
+            "pid": 23
+          }
+        },
+        {
+          "text": "Pull yourself together.",
+          "destination": {
+            "name": "slide 3",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "AR glasses",
+      "text": "You remember when those augmented reality glasses first appeared as mass-market consumer products, when they weren't just for researchers at universities anymore. You remember when they were trumpeted as changing the way we interact with computers forever. Never again will we be forced into the [[terrible slavery]] of disconnectedly staring at screens all day, they said.\\n\\nOf course, there were problems. Privacy issues inherent in wearing a video-recording device at all times. Publicised incidents with peeping toms and other unsavoury predators. Not to mention the dangerous ramifications of allowing internet trolls to immediately know everything about their targets at first sight. You remember that there were a handful of vocal [[detractors]] who tried to opt out of the system, with varying degrees of success.\\n\\nEventually, though, society adapted to the new technology, like it always does. You, of course, were young and na\u00efve enough to embrace it without reservation, not understanding how anyone could possibly reject this invention that made life so much more convenient. [[How could you have been so ignorant?|slide 2]]",
+      "links": [
+        {
+          "text": "terrible slavery",
+          "destination": {
+            "name": "terrible slavery",
+            "pid": 25
+          }
+        },
+        {
+          "text": "detractors",
+          "destination": {
+            "name": "detractors",
+            "pid": 27
+          }
+        },
+        {
+          "text": "How could you have been so ignorant?",
+          "destination": {
+            "name": "slide 2",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "say something",
+      "text": "Say... [[what|nah]]? [[What|nah]] [[could|nah]] [[you|nah]] [[possibly|nah]] [[say|nah]] [[to|nah]] [[make|nah]] [[it|nah]] [[any|nah]] [[better|try]]? [[It's|nah]] [[not|nah]] [[like|nah]] [[you|nah]] [[have|nah]] [[any|nah]] [[real|nah]] [[power|try]] [[to|nah]] [[make|nah]] [[change|try]] [[or|nah]] [[anything|nah]]. [[There|nah]] [[will|nah]] [[always|nah]] [[be|nah]] [[trolls|nah]]. [[There|nah]] [[will|nah]] [[always|nah]] [[be|nah]] [[sexism|nah]]. [[That's|nah]] [[just|nah]] [[the|nah]] [[way|nah]] [[this|nah]] [[industry|nah]] [[is|nah]]. [[It's|nah]] [[the|nah]] [[way|nah]] [[it|nah]] [[always|nah]] [[has|nah]] [[been|nah]].",
+      "links": [
+        {
+          "text": "what",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "What",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "could",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "you",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "possibly",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "say",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "to",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "make",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "it",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "any",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "better",
+          "destination": {
+            "name": "try",
+            "pid": 10
+          }
+        },
+        {
+          "text": "It's",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "not",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "like",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "have",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "real",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "power",
+          "destination": {
+            "name": "try",
+            "pid": 10
+          }
+        },
+        {
+          "text": "change",
+          "destination": {
+            "name": "try",
+            "pid": 10
+          }
+        },
+        {
+          "text": "or",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "anything",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "There",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "will",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "always",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "be",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "trolls",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "sexism",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "That's",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "just",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "the",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "way",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "this",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "industry",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "is",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "has",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        },
+        {
+          "text": "been",
+          "destination": {
+            "name": "nah",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "kludgey solution",
+      "text": "Griff always used to criticise your code. It was too messy, he said. Not spaced and punctuated in the right places. Not commented enough. Not optimised enough. Mind you, he criticised almost everything you did. The way you ride your bike. The way you do the laundry. The way you splay out when you sleep.\\n\\nYou know that constant condescension is just his way of making him feel better about himself; he does that to everyone he perceives as [[a threat]] of some kind. [[That said, you sometimes think he was right.|slide 4]]",
+      "links": [
+        {
+          "text": "a threat",
+          "destination": {
+            "name": "a threat",
+            "pid": 8
+          }
+        },
+        {
+          "text": "That said, you sometimes think he was right.",
+          "destination": {
+            "name": "slide 4",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "don't even like people",
+      "text": "Being an introvert isn't the same as being a misanthrope. You don't leave pub nights and networking mixers early out of disdain for humankind; you leave because your senses get overloaded and need recharging. You don't hate talking to people; you hate having to shout at them. You feel like the world would be a much more pleasant place if important business meetings were conducted quietly, over tea and baked goods. That doesn't make you a sociopath. [[It shouldn't.|slide 5]]",
+      "links": [
+        {
+          "text": "It shouldn't.",
+          "destination": {
+            "name": "slide 5",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "talking too fast",
+      "text": "Yet another thing that Griff used to condescend at you for doing, and why he insisted on handling all the speaking and publicity gigs for Braingarten, even though you were ostensibly equals as cofounders. He claimed he had a more personable stage presence, and that he had more experience doing all this marketing stuff.\\n\\n\"Besides,\" he argued, \"you [[don't even like people]] all that much.\" He thought he was doing you a favour. [[You thought so to.|slide 5]]",
+      "links": [
+        {
+          "text": "don't even like people",
+          "destination": {
+            "name": "don't even like people",
+            "pid": 19
+          }
+        },
+        {
+          "text": "You thought so to.",
+          "destination": {
+            "name": "slide 5",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "StoryTitle",
+      "text": "Impostor Syndrome",
+      "links": []
+    },
+    {
+      "pid": 22,
+      "name": "you",
+      "text": "Oh, look at yourself. You're shaking. You're almost about to cry. Seriously, Georgiana? Crying over a childish TrollChan shop? Don't you know that most women deal with much worse in life? [[You overprivileged, oversensitive, pathetic excuse for a human being.|what now?]]",
+      "links": [
+        {
+          "text": "You overprivileged, oversensitive, pathetic excuse for a human being.",
+          "destination": {
+            "name": "what now?",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Jerry Gabriel",
+      "text": "CEO of Pomelo Inc. and highly revered design visionary. Also an accomplished contra dancer, artisanal coffee roaster, and family man. [[You actually looked up to him once.|she understands]]",
+      "links": [
+        {
+          "text": "You actually looked up to him once.",
+          "destination": {
+            "name": "she understands",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "...",
+      "text": "...oh, who are you kidding? Of course you're going to look. [[You idiot.|look]]",
+      "links": [
+        {
+          "text": "You idiot.",
+          "destination": {
+            "name": "look",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "terrible slavery",
+      "text": "There was that famous guy, way back when, who said that old-style smartphones were \"emasculating\". People found his wording confusing and unintentionally hilarious -- there was, after all, nothing particularly un-manly about smartphones of the time -- but it then emerged that what he really meant was that they were \"dehumanising\". To be human meant to be a man. [[Go figure.|AR glasses]]",
+      "links": [
+        {
+          "text": "Go figure.",
+          "destination": {
+            "name": "AR glasses",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Catherine Stinson",
+      "text": "You met Catherine online a couple of years ago, after she shared some blog post of yours that was apparently useful and/or interesting to people. You're actually staying with her and her partner Desir\u00e9e this week for the conference. It was nice of them to offer. They're good people.\\n\\nPart of you wishes you lived closer to Catherine, so you could maybe get to know one another better, but it's more likely that she'd be too busy to hang out with the likes of you. Her online life suggests she's constantly involved in all sorts of awesome social justice-related events and organisations. What use would she have in spending otherwise quality time with a boring, nerdy introvert?\\n\\nShe's here, though, sitting in the third row, near the aisle, her tall, broad frame and neon green hair making it easy to pick her out of any crowd. And she's watching you expectantly. [[Better not disappoint her.|intro]]",
+      "links": [
+        {
+          "text": "Better not disappoint her.",
+          "destination": {
+            "name": "intro",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "detractors",
+      "text": "You laughed at them then for overreacting. Luddites, you thought to yourself. Afraid of new technology, afraid of evolution... no different from those old geezers who railed against rap music and videogames back in the dinosaur ages. Now, though? [[You're not quite sure you'd be quick to make such a judgement.|AR glasses]]",
+      "links": [
+        {
+          "text": "You're not quite sure you'd be quick to make such a judgement.",
+          "destination": {
+            "name": "AR glasses",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "speak",
+      "text": "\"That... that wasn't funny.\"\\n\\nAnd then you let loose, ranting -- almost shouting -- about how they all should be ashamed of themselves, how porn has no place at a professional conference, how fucking hostile this industry is to women -- no, to every kind of minority in existence. None of it's coherent, and [[you probably look ridiculous]], but right now, //you don't care//.\\n\\n[[And before you know it, it's over.|aftermath]]",
+      "links": [
+        {
+          "text": "you probably look ridiculous",
+          "destination": {
+            "name": "you probably look ridiculous",
+            "pid": 37
+          }
+        },
+        {
+          "text": "And before you know it, it's over.",
+          "destination": {
+            "name": "aftermath",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "live feed",
+      "text": "It seems like every conference has one, these days. A way for people in the audience -- and also people playing along at home -- to \"add their voice\" to the discussion. Because in this day and age, everything's a discussion. Everything's participatory. No one ever sits back and listens anymore.\\n\\nThey'd all rather talk about themselves, anyway. [[Right?|slide 5]]",
+      "links": [
+        {
+          "text": "Right?",
+          "destination": {
+            "name": "slide 5",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "PITBULL",
+      "text": "Programming languages are constantly getting replaced with newer, shinier ones. You barely have a handle on PITBULL, but its similarity to PuppyScript keeps it from being completely unfamiliar to you. Generally speaking, you'd much rather work in PuppyScript, as it handles the things you do often in fewer lines of code, but PITBULL is what the AR app dev community is into right now -- the aggressively powerful language that <html><em>real</em></html> coders prefer, complete with an obscure acronym you can never quite remember... something like \"Programmatic Instruction Technobabble somethingorother\" -- so of course, that's what you're giving a talk about.\\n\\nYeah, they say all the time that the tech industry is always changing. [[Some things never change, though.|intro]]",
+      "links": [
+        {
+          "text": "Some things never change, though.",
+          "destination": {
+            "name": "intro",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "invisible",
+      "text": "The acquisition by Goggle that happened regardless of your protests against it. Griff's cushy new position as Director of Shared Experiences, and your relegation to working on what they termed \"special projects\". Informal meetings -- lunches, after-work beers, even a burlesque show -- none of which you were invited to, until one day, you realised that the big thing you'd co-created, your proudest career achievement, had nothing to do with you anymore.\\n\\nAnd then you were culled in the next round of layoffs. [[Go figure.|everyone]]",
+      "links": [
+        {
+          "text": "Go figure.",
+          "destination": {
+            "name": "everyone",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "aftermath",
+      "text": "Afterwards, people -- mostly other women -- come up to you and thank you for speaking up. You particularly remember one young woman shyly handing you a note hastily scrawled on a piece of scrap paper (a method of communication you'd always thought died out after elementary school) saying that what you said was the best thing to happen at this conference and, in her words, \"sparked what is perhaps the most important conversation to ever happen in our industry\".\\n\\nYou're not sure how you feel about that.\\n\\nWhat they're saying about you online... well, to say it's a mixed bag would be the understatement of the century. There's hate mail -- the awful, awful kind you'd previously only heard about in other, braver women's narratives, the kind that makes you fear for your personal safety -- and there's enough of it that you have to disengage from the internet for a good long time. No small feat for such a constantly connected society, but there are ways...\\n\\nYou have allies, though. Catherine and Desir\u00e9e. Other women and other minorities who've been through this before. They've got your back.\\n\\n[[You're not alone.|end]]",
+      "links": [
+        {
+          "text": "You're not alone.",
+          "destination": {
+            "name": "end",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "finish your talk",
+      "text": "The rest of the talk -- the rest of the afternoon, at that -- goes by in a blur. You don't really so much as talk to anyone until you're back at Catherine and Desir\u00e9e's place.\\n\\nThen, when Catherine asks if you're okay, you completely break down. She listens. You rant. Desir\u00e9e makes tea and brings you some. The three of you exchange war stories until you all collapse from exhaustion.\\n\\nThere's another day left in the conference; you consider not going and booking an early trip home, but ultimately decide to stay. You won't let them win.\\n\\nPeople are terrible, but at least there are some people who aren't. People who've got your back.\\n\\n[[You're not alone.|end]]",
+      "links": [
+        {
+          "text": "You're not alone.",
+          "destination": {
+            "name": "end",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "slide 3",
+      "text": "As you start to detail the PITBULL best practices you [[followed]] in the development of your app, your glasses inform you that a 269th person has just entered the auditorium. You notice an unruly mop of curly hair that looks an awful lot like...\\n\\n...oh. Oh, no. It's him. [[Griff]]. Of course he's at RealiCon this year. In a way, nonchalantly showing up late to your talk feels like even more of a slap in the face than being too busy to show up at all.\\n\\nCatherine sees him too; she looks over at you and makes what looks to be a sympathetic scowl. She knows all about what happened, and [[she understands]]. She's one of the few who would, really.\\n\\nAck. Come on, Georgiana. [[Next slide.|slide 4]]",
+      "links": [
+        {
+          "text": "followed",
+          "destination": {
+            "name": "followed",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Griff",
+          "destination": {
+            "name": "Griff",
+            "pid": 41
+          }
+        },
+        {
+          "text": "she understands",
+          "destination": {
+            "name": "she understands",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Next slide.",
+          "destination": {
+            "name": "slide 4",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "look",
+      "text": "Quickly, and surreptitiously, you bring up the live feed. There's virtually no lag time, so it's like you're looking in a mirror, except...\\n\\n...you're naked. Except, that's not even how you look naked; it's like they decided to superimpose some cartoonishly proportioned porn star's body below your head. The usual sort of uncreative [[TrollChan]] hack job that's existed ever since Photoshop became a thing.\\n\\nIt still makes your stomach lurch, though. Even despite the fact that this particular kind of hack is actually pretty tame for TrollChan standards.\\n\\nNo, what's worse are the comments... the disgusting, skeevy comments. How many of them are from people you've met? Worked with? Talked to at conferences like these?\\n\\nAnd then, just as suddenly, you're back to normal again. The mods reverted the hack as fast as they could, but it was several seconds too late. [[Everyone's already seen it.|everyone]]",
+      "links": [
+        {
+          "text": "TrollChan",
+          "destination": {
+            "name": "TrollChan",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Everyone's already seen it.",
+          "destination": {
+            "name": "everyone",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "a couple of guys",
+      "text": "You sort of vaguely recognise one of them, the one with reddish hair and a scruffy beard, wearing a t-shirt from that web series about philosophical dinosaurs. You wound up sitting together at dinner during some meetup last year; at the time, he worked for Knig Media. His name was Dan or Dave or Doug or something. Insert joke about how white bearded dudes are so hard to tell apart. Ha ha ha. Georgiana, you're a regular comedian.\\n\\nThe other guy has blonde dreads in a ponytail. You've never seen him before; you'd definitely recognise him if you had.\\n\\nAt any rate, they're not being THAT disruptive. [[You should just let it go.|slide 4]]",
+      "links": [
+        {
+          "text": "You should just let it go.",
+          "destination": {
+            "name": "slide 4",
+            "pid": 47
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "you probably look ridiculous",
+      "text": "You know damn well that you're fulfilling the tired old \"angry woman of colour\" stereotype. You know damn well that no one's going to take you seriously because of it.\\n\\nFuck it. [[Let them think what they want.|speak]]",
+      "links": [
+        {
+          "text": "Let them think what they want.",
+          "destination": {
+            "name": "speak",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "keep on going",
+      "text": "\"Don't look at the comments.\" The most commonly passed-on maxim to any reasonable person wanting to read anything on the internet ever, yourself included. Pulling up the live feed will do nothing but derail your talk. Don't do it, Georgiana. You'll regret it forever.\\n\\n[[...]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "...",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "what now?",
+      "text": "Okay, Georgiana. Calm down. Try to relax. Breathe.\\n\\nJust [[finish your talk]]. You're almost done. Just rush through the rest of it and then you can go away and be alone.\\n\\nBut maybe... maybe you should [[say something]]?",
+      "links": [
+        {
+          "text": "finish your talk",
+          "destination": {
+            "name": "finish your talk",
+            "pid": 33
+          }
+        },
+        {
+          "text": "say something",
+          "destination": {
+            "name": "say something",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "slide",
+      "text": "Crisp, black, bullet-pointed text on a white background. No clever pictures or videos or holographic 3D animations or anything fancy. Only clean, legible text. [[Just the way you like it.|slide 1]]",
+      "links": [
+        {
+          "text": "Just the way you like it.",
+          "destination": {
+            "name": "slide 1",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Griff",
+      "text": "Griffin Holmes. Your ex-partner, in both the business and personal sense. [[You've learned since then to never mix the two again.|slide 3]]",
+      "links": [
+        {
+          "text": "You've learned since then to never mix the two again.",
+          "destination": {
+            "name": "slide 3",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "speaker proposal",
+      "text": "It was [[Catherine Stinson]] who urged you to submit something. She's part of RealiCon's speaker selection committee this year, and worked very hard to get more female presenters up on stage than the usual single-digit percentage one winds up seeing at these sorts of conferences.\\n\\nWhile you do believe that diversity in the tech industry is a thing that's very much needed, there's a part of you that feels like you were only selected to present because you're a woman. And a woman of colour too, at that. That's already two ticky boxes on the fabled affirmative action checklist for the price of one. [[Hooray.|intro]]",
+      "links": [
+        {
+          "text": "Catherine Stinson",
+          "destination": {
+            "name": "Catherine Stinson",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Hooray.",
+          "destination": {
+            "name": "intro",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "not now",
+      "text": "Don't think about that right now, Georgiana. [[You're supposed to be giving a talk.|intro]]",
+      "links": [
+        {
+          "text": "You're supposed to be giving a talk.",
+          "destination": {
+            "name": "intro",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "StoryAuthor",
+      "text": "by Georgiana Bourbonnais",
+      "links": []
+    },
+    {
+      "pid": 45,
+      "name": "slide 2",
+      "text": "You start to talk about the [[last project]] you worked on. You're barely even conscious of the words that are coming out of your mouth; it's like there's a robot version of you on stage running on autopilot and your consciousness is elsewhere, not really occupying a physical space.\\n\\nNevertheless, you see the audience's eyes start to glaze over. Some take out their phones and start typing, others get the strange cross-eyed looks one gets when wearing [[AR glasses]] or contacts -- when you're not really looking at what's right there in front of you so much as what your news ticker is flashing in your peripheral vision. Wonderful, Georgiana. You've lost them already.\\n\\n[[Next slide.|slide 3]]",
+      "links": [
+        {
+          "text": "last project",
+          "destination": {
+            "name": "last project",
+            "pid": 46
+          }
+        },
+        {
+          "text": "AR glasses",
+          "destination": {
+            "name": "AR glasses",
+            "pid": 16
+          }
+        },
+        {
+          "text": "Next slide.",
+          "destination": {
+            "name": "slide 3",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "last project",
+      "text": "A storygame in which you explore a physical space to find clues about a murder. Some people found it [[interesting]]. A few dismissed it, finding it too derivative of all those \"hidden object\" non-augmented games of the past. That said, for the most part, the community couldn't really see the point. What do silly little games have to do with using technology to make the world a better place?\\n\\nStill, you wrote it because it was all you had in you to write, [[after all that happened]].\\n\\nIt must have been worth something to some people, though, because here you are, giving a talk. [[And you still have 45 minutes left.|slide 2]]",
+      "links": [
+        {
+          "text": "interesting",
+          "destination": {
+            "name": "interesting",
+            "pid": 13
+          }
+        },
+        {
+          "text": "after all that happened",
+          "destination": {
+            "name": "after all that happened",
+            "pid": 7
+          }
+        },
+        {
+          "text": "And you still have 45 minutes left.",
+          "destination": {
+            "name": "slide 2",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "slide 4",
+      "text": "You do your best to collect yourself as you start talking about how you had to hack PITBULL's built-in audio features to get the dynamic sound cues you wanted. You observe people in the crowd nodding and smiling, but for all you know, they're really just smugly judging you for coming up with such a [[kludgey solution]] to the problem.\\n\\nYou notice [[a couple of guys]] sitting up front, nudging and whispering to each other.\\n\\nOkay... [[next slide|slide 5]].",
+      "links": [
+        {
+          "text": "kludgey solution",
+          "destination": {
+            "name": "kludgey solution",
+            "pid": 18
+          }
+        },
+        {
+          "text": "a couple of guys",
+          "destination": {
+            "name": "a couple of guys",
+            "pid": 36
+          }
+        },
+        {
+          "text": "next slide",
+          "destination": {
+            "name": "slide 5",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "slide 5",
+      "text": "You keep talking. Your next slides come up, one by one and you say the right words, just as you did when rehearsing. You catch yourself [[talking too fast]], and you pause for a minute to slow down.\\n\\nThat's when you notice the anonymous notification in the corner of your eye.\\n\\n\"umm... you might want to have a look at the [[live feed]]...\"\\n\\nAnd then you look around and notice groups of people smirking. Not all of them, though. Some of them look kind of uncomfortable, their laughter being of the nervous sort. Catherine appears more visibly vexed than her usual cool, collected demeanour. Griff has a blank stare on his face.\\n\\nThis can't be good.\\n\\nSo, what now, Georgiana? Do you dare [[look]]? Or do you just [[keep on going]]?",
+      "links": [
+        {
+          "text": "talking too fast",
+          "destination": {
+            "name": "talking too fast",
+            "pid": 20
+          }
+        },
+        {
+          "text": "live feed",
+          "destination": {
+            "name": "live feed",
+            "pid": 29
+          }
+        },
+        {
+          "text": "look",
+          "destination": {
+            "name": "look",
+            "pid": 35
+          }
+        },
+        {
+          "text": "keep on going",
+          "destination": {
+            "name": "keep on going",
+            "pid": 38
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1251 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "The Beginning Of The Tale",
+      "text": "<font color=\"red\" size=\"6\">\n=><=\n(text-style: \"shadow\")[Thaxted Havershill And The Golden Wombat]\n\n(text-style: \"shadow\")[by Andy Brown]</font>\n=><=\nThe story so far...\n\nThaxted Havershill, adventurer, treasure hunter, rapscallion, man's man and lady's man is searching for the Golden Wombat...\n\nFor months he has tracked its location through libraries and museums, consulting manuscripts and people of dubious character in his search...\n\nFinally, he has found it...\n\nIt lies hidden in the ancient castle of Baron Krunge, deep in the Carpathian mountains. It has always been reckoned to be impregnable but Thaxted has managed to get inside...\n\nUnfortunately, he has achieved this end by being captured by the Baron's men...\n\nOur hero finds himself in a locked room within Castle Krunge...\n\n[[Now, read on...|Locked Room]]",
+      "links": [
+        {
+          "text": "Now, read on...",
+          "destination": {
+            "name": "Locked Room",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "StoryBanner",
+      "text": "@@color:red;font-size:1.5em;\nThaxted Havershill And The Tiny Wombat.",
+      "links": []
+    },
+    {
+      "pid": 3,
+      "name": "StoryAuthor",
+      "text": "@@color:yellow;font-size:2em;\nAndy Brown",
+      "links": []
+    },
+    {
+      "pid": 4,
+      "name": "Locked Room",
+      "text": "Thaxted Havershill sits upon a miserable bed. He has a black eye, a bloody nose and several bruised ribs.\n\nDespite his injuries, he smiles at the thought that he had acquitted himself well, leaving three of the Baron's men lying on the ground in various states of potential hospitalisation.\n\nBut, five men were just too many...\n\nHe gets up and takes a closer look at his room...\n\nThere is a tall, thin [[window|WindowDesc]], no more than a foot wide. The wind blows wickedly in from the freezing night.\n\nA single, wall mounted [[gas lamp|LampDesc]] gutters above a grimy looking [[bed|BedDesc]].\n\nThe [[door|DoorDesc]] is closed.\n\n[[What to do?|What To Do]]",
+      "links": [
+        {
+          "text": "window",
+          "destination": {
+            "name": "WindowDesc",
+            "pid": 5
+          }
+        },
+        {
+          "text": "gas lamp",
+          "destination": {
+            "name": "LampDesc",
+            "pid": 6
+          }
+        },
+        {
+          "text": "bed",
+          "destination": {
+            "name": "BedDesc",
+            "pid": 7
+          }
+        },
+        {
+          "text": "door",
+          "destination": {
+            "name": "DoorDesc",
+            "pid": 8
+          }
+        },
+        {
+          "text": "What to do?",
+          "destination": {
+            "name": "What To Do",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "WindowDesc",
+      "text": "The window looks out across a wild, rocky vista. Even if Thaxted could climb through he would plunge hundreds of feet to his doom.\n\n(Hmmm? There's a jolly thought!)\n{\n(Set:$windowflag to false)\n}\n[[Back|Locked Room]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Locked Room",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "LampDesc",
+      "text": "The lamp is very loosely fixed to the wall. A strong smell of gas emanates from it. There's a leak somewhere although the flame burns enough to light the room.\n{\n(Set:$lampflag to false)\n}\n[[Back|Locked Room]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Locked Room",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "BedDesc",
+      "text": "The mattress is damp and has a grubby sheet rolled up as an improvised pillow. There are bloodstains from Thaxted's nose.\n\n(Not exactly the Ritz, Thaxted, old chap...)\n{\n(Set:$bedflag to false)\n}\n[[Back|Locked Room]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Locked Room",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "DoorDesc",
+      "text": "The door is very heavy, very wooden and very much not about to open.\nThere is a solid door handle.\n\nThaxted (If:$doorflag)[[[tries to open the door...|HearGuards]]](Else:)[slaps the door in frustration...] (If:not $doorflag)[ All that happens is that the guards start grumbling...]\n\nThere is no keyhole or locking method. It must be secured on the outside, he thinks.\n\n[[Back|Locked Room]]",
+      "links": [
+        {
+          "text": "tries to open the door...",
+          "destination": {
+            "name": "HearGuards",
+            "pid": 9
+          }
+        },
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Locked Room",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "HearGuards",
+      "text": "Someone on the other side of the door bangs his foot against the it. A rough voice from outside the room shouts, \"Shut up!\"\n\n\"Settle down, Havershill,\" says a second voice, laughing cruelly. \"You won't have long to wait for the Baron...\"\n\nThaxted is quietly pleased that they feel he is such a threat that two men are needed to guard him.\n{\n(Set:$doorflag to false)\n}\n[[Back|Locked Room]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Locked Room",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Set Up Variables",
+      "text": "{\n(set: $doorflag to false)\n(set: $doorflag to true)\n(set: $windowflag to true)\n(set: $lampflag to true)\n(set: $bedflag to true)\n(set: $bugflag to true)\n\n(set: $MyRandom to 0)\n(set: $ZoltanRandom to 0)\n(set: $SerpentRandom to 0)\n(set: $MyStamina to 0)\n(set: $ZoltanStamina to 0)\n(set: $SerpentStamina to 0)\n(set: $SerpentAttack to 1)\n(set: $InfoFlag to true)\n(set: $KnifeFlag to true)\n(set: $HoldingKnife to true)\n(set: $PoisonKnife to false)\n(set: $RandomOption to true)\n\n(set: $GuardCount to 0)\n(set: $GuardFlag to false)\n(set: $GuardsScared to false)\n(set: $Hidden to false)\n(set: $HidYourself to false)\n(set: $KnifeFlag to 0)\n\n(set: $windowflag to false)\n(set: $lampflag to false)\n(set: $bedflag to false)\n}\n\n",
+      "links": []
+    },
+    {
+      "pid": 11,
+      "name": "What To Do",
+      "text": "Thaxted contemplates his choices...\n\n\"Hmmm?\", he muses. \"What can I use to make my escape?\"\n\nPerchance the [[bed sheet|Bed Sheet]]? Possibly the [[lamp|Lamp]]? Mayhap the [[bed|Bed]]?\n\n\"It's a quandry, and no mistake...\"",
+      "links": [
+        {
+          "text": "bed sheet",
+          "destination": {
+            "name": "Bed Sheet",
+            "pid": 12
+          }
+        },
+        {
+          "text": "lamp",
+          "destination": {
+            "name": "Lamp",
+            "pid": 13
+          }
+        },
+        {
+          "text": "bed",
+          "destination": {
+            "name": "Bed",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Bed Sheet",
+      "text": "Thaxted grabs the sheet from the bed and holds it to the gas lamp. In a few moments the sheet begins to burn and smoke starts to fill the room.\n\nPushing the burning sheet against the door, smoke filters out into the hall. The guards start to cough and splutter.\n\n\"What are you doing, Havershill?\" asks one.\n\n\"Idiot's trying to kill himself,\" says the other.\n\nThaxted stands over by the window breathing in the freezing air.\n\n\"Get him out of there! The Baron wants him alive!\"\n\nFrom outside Thaxted hears the guards lift a heavy wooden bar. Coughing, a guard comes into the room.\n\n[[Thaxted rushes towards the guard...|Attack the Guards]]",
+      "links": [
+        {
+          "text": "Thaxted rushes towards the guard...",
+          "destination": {
+            "name": "Attack the Guards",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Lamp",
+      "text": "Thaxted grabs hold of the lamp and pulls the pipe from the wall.\n\nGas immediately strikes him full in the face.\n\nThaxted coughs violently and falls to the floor.\n\n\"Help me,\" he shouts.\n\n\"Go to sleep, Havershill,\" replies the guard.\n\nThaxted falls to the floor, gasping weakly. \"Help me... Please...\"\n\nIn a few moments he has passed into unconsciousness and shortly after breathes his last...\n\n[[Not such a clever move...|Restart Game]]",
+      "links": [
+        {
+          "text": "Not such a clever move...",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Bed",
+      "text": "Thaxted tries to lift the bed but it has been bolted to the floor. Why? he muses. Is it likely to run away?\n\nAlarmingly, the mattress seems to be moving... There are obviously some substantially sized (if: $bugflag)[[[bed bugs|Bed Bugs]]](if: not $bugflag)[bed bugs] in Castle Krunge. (if:not $bugflag)[Thaxted can see wriggling bodies inside the mattress through the little hole he poked.]\n\n[[BACK|What To Do]]\n\n",
+      "links": [
+        {
+          "text": "bed bugs",
+          "destination": {
+            "name": "Bed Bugs",
+            "pid": 16
+          }
+        },
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "What To Do",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Attack the Guards",
+      "text": "Moving like a steam train, Thaxted barrels into the guard, knocking him to the ground.\n\n\"Take that, you swine,\" he says, kicking him in the head. The guard groans satisfyingly and passes out.\n\nThaxted leaps into the hall and faces up to the other guard.\n\n\"What's it to be?\" says Thaxted, full of vim and vigour. \"A broken nose, a concussion or should I just break your scrawny neck?\"\n\n\"You didn't mention option four,\" replies the guard, drawing a six inch knife from a sheath at his waist. \"The option where I risk the Baron's anger and slit your throat.\" The guard takes up a stance, balanced on the balls of his feet.\n\nIt's a rum looking do for Thaxted...\n\nHe considers his options...\n\n[[Sweep his legs|Sweep His Legs]], [[kick the knife from his hand|Kick The Knife]] or [[give him a jolly good beating...|Jolly Good Beating]]",
+      "links": [
+        {
+          "text": "Sweep his legs",
+          "destination": {
+            "name": "Sweep His Legs",
+            "pid": 17
+          }
+        },
+        {
+          "text": "kick the knife from his hand",
+          "destination": {
+            "name": "Kick The Knife",
+            "pid": 18
+          }
+        },
+        {
+          "text": "give him a jolly good beating...",
+          "destination": {
+            "name": "Jolly Good Beating",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Bed Bugs",
+      "text": "Unable to resist the temptation, Thaxted pokes the mattress. The fragile material splits and a multicoloured head pops out.\n\nThe bug's head is as big as Thaxted's thumb nail and he is reknowned for his large thumbs!!!\n\nFortunately, the bug's body is too big to squeeze through the hole in the mattress... For the time being...\n{\n{\n(Set:$bugflag to false)\n}\n}\nInvoluntarilly shuddering, [[Thaxted thinks again...|What To Do]]",
+      "links": [
+        {
+          "text": "Thaxted thinks again...",
+          "destination": {
+            "name": "What To Do",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Sweep His Legs",
+      "text": "The guard is obviously familiar with the martial arts. Nevertheless, a leg sweep can often be successful.\n\nAs fast as a striking cobra, Thaxted sweeps the guard's legs from under him, knocking him to the ground. The guard smacks his head on the floor and grunts into uncosciousness.\n\nGrinning, Thaxted reaches out for the guard's knife.\n\nBut, the guard has been faking it and in a flurry of movement slices across Thaxted's throat.\n\nThaxted looks down with unbelieving eyes. How could he have been so stupid...\n\n[[End of the line, Thaxted, old chap|Restart Game]]",
+      "links": [
+        {
+          "text": "End of the line, Thaxted, old chap",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Kick The Knife",
+      "text": "Thaxted kicks out at the guard with astonishing speed.\n\nThe guard blocks the kick and knocks Thaxted's leg to the side, unbalancing him.\n\nThaxted regains his balance just in time to defend himself against the guard's expert knife strike. As if to underline his expertise and his confidence, the guard moves out of range and spins the knife between his hands. The long blade catches the gas light in the corridor.\n\nThaxted takes up his own stance and prepares to renew his attack.\n\nSuddenly, a heavy lump of wood makes contact with his head. Thaxted turns round in time to see the first guard holding the bar which locked the door.\n\nAs he passes out, Thaxted thinks, I should have given him a harder kick... \n\n\n[[It's a failure, I'm afraid, Thaxted, old bean...|Restart Game]]",
+      "links": [
+        {
+          "text": "It's a failure, I'm afraid, Thaxted, old bean...",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Jolly Good Beating",
+      "text": "The guard is heavily muscled with the low brow of a borderline neanderthal. Despite his appearance, he moves into a fighting stance with ease holding his knife securely in his right hand.\n\nHe looks about the same height and weight as myself, thinks Thaxted. And possibly, as well practised in the fighting arts. Hmmm...\n\nWithout another thought, Thaxted runs headlong at the guard, grabbing him around the waist and lifting him off his feet. With a thud he lands on top of the guard and is relieved to see the knife clatter to the ground.\n\n\"Weren't expecting this, were you?\" shouts Thaxted as he repeatedly punches the guard's face. \"No subtlety, no style, just a jolly good beating.\"\n\nWith a final mighty punch, he knocks the guard out.\n\nBreathing heavily, Thaxted drags the guard into his erstwhile prison and bars the door, locking both guards inside. Picking up the dropped knife, he walks down the corridor towards a [[staircase leading down into the castle...| Pre Into The Castle]]",
+      "links": [
+        {
+          "text": "staircase leading down into the castle...",
+          "destination": {
+            "name": "Pre Into The Castle",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Restart Game",
+      "text": "(reload:)",
+      "links": []
+    },
+    {
+      "pid": 21,
+      "name": "Into The Castle",
+      "text": "Creeping down the stairs, Thaxted notes how old the [[castle|CastleHistory]] is. Hundreds of years of feet pounding the stairs have worn the steps away, the polished stone making it a much more difficult descent than normal.\n\nAfter a few moments, Thaxted sees another guard sitting in front of a roaring fire. Thaxted's sharp eyes reveal that the guard's eyelids are drooping. He seems very dopey but it seems unlikely that even the almost supernaturally light footed Thaxted Havershill would be able to [[sneak by him...|Sneak By Guard]]\n\nThaxted fingers the knife... [[A well thrown knife|Throw Knife]] would kill the guard before he knew it (although it could miss and clatter to the ground) or perhaps he should resist the temptation to get rid of another guard and [[question him...|Question Guard]]\n\n",
+      "links": [
+        {
+          "text": "castle",
+          "destination": {
+            "name": "CastleHistory",
+            "pid": 29
+          }
+        },
+        {
+          "text": "sneak by him...",
+          "destination": {
+            "name": "Sneak By Guard",
+            "pid": 22
+          }
+        },
+        {
+          "text": "A well thrown knife",
+          "destination": {
+            "name": "Throw Knife",
+            "pid": 23
+          }
+        },
+        {
+          "text": "question him...",
+          "destination": {
+            "name": "Question Guard",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Sneak By Guard",
+      "text": "Thaxted takes a deep breath and prepares to sneak by the guard.\n\nDuring his studies at the ninja schools of the orient, Thaxted had learned to be as silent as a cloud and as light footed as a cat filled with helium. Unfortunately, he had not learned to be invisible...\n(set: $KnifeFlag to (random: 1,10))(if: $KnifeFlag < 6)[\nA log sparks loudly in the fireplace and falls crackling onto the floor, waking the guard. Thaxted leaps the few feet between himself and the guard but alas, too late to stop him from yelling for help.\n\nThe sound of several pairs of boots rushing up from below signals the appearance of six armed guards.\n\nResigned to his fate, Thaxted raises his hands...\n\n[[Not looking too tickety boo, Thaxted, m'dear fellow...|Restart Game]]\n](if: $KnifeFlag > 5)[\nLuckilly, Thaxted sneaks by the guard and heads on [[into the castle...|Corridor Room]]\n]",
+      "links": [
+        {
+          "text": "Not looking too tickety boo, Thaxted, m'dear fellow...",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        },
+        {
+          "text": "into the castle...",
+          "destination": {
+            "name": "Corridor Room",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "Throw Knife",
+      "text": "{(set: $KnifeFlag to (random: 1,10))\n}(if: $KnifeFlag < 6)[Taking aim, Thaxted throws the knife at the guard. The knife plunges deeply into the guard's throat. Moving swiftly, he rushes across to finish the man off.\n\nWiping the knife on the guard's uniform, Thaxted heads on down, deeper into the castle...\n\n[[Carry on...|Corridor Room]]\n]\n(if: $KnifeFlag > 5)[The Knife spins through the air and clatters harmlessly against the guards chest.\n\nHe splutters awake and sees Thaxted.\n\n\"He's escaped!!! Havershill's escaped!!!\" He yells at the top of his voice.\n\nWith a voice like that he should be a bally opera singer, thinks Thaxted as half a dozen fully armed guards appear from a corridor.\n\n[[Oh dear, Thaxted... The end is very nigh...|Restart Game]]\n]\n",
+      "links": [
+        {
+          "text": "Carry on...",
+          "destination": {
+            "name": "Corridor Room",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Oh dear, Thaxted... The end is very nigh...",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Question Guard",
+      "text": "Thaxted walks silently towards the sleepy guard. With a blur of movement, he holds the knife to the guard's throat who, unsurprisingly, is rather surprised.\n\n\"Now listen here, chummy. I'm giving you a choice. I could slit your throat and leave your body sitting here roasting in front of the fire. All very well and good for any passing cannibals but not too splendid for you, eh?\"\n\nThe guard gulps and nods his head slowly.\n\n\"Or,\" continues Thaxted, speaking directly into the guard's ear. \"You could let me have a bit of info about the layout of this venerable old pile and I'll just knock you out... Howsabout that?\"\n\nThe guard gulps again. \"What would you like to know?\"\n\n\"Now, there's a sensible fellow...\" says Thaxted, keeping the razor sharp knife at the guard's throat. \"Firstly, how many of you delightful chaps are guarding the Baron? Not counting the two sleeping beauties upstairs of course...\"\n\n\"There are six guards... next floor down...\"\n\n\"Armed?\"\n\n\"Yes. And there's Zoltan...\"\n\n\"And who, pray, is 'Zoltan'?\" Chuckles Thaxted. \"He sounds like a circus strongman.\"\n\n\"He's much more than that,\" says the guard. \"He comes from a nearby village in the mountains. He's huge... Seven feet tall and solid muscle... He carried you up to the turret room under one arm. Didn't even breathe heavily...\"\n\nThis information brought Thaxted no cause to chuckle.\n\n\"And the tiny wombat? Where can I find that?\"\n\n\"I don't know.\" Thaxted presses the knife a little harder against the guard's throat.\n\n\"Please believe me,\" begs the guard. \"I don't know. I don't know. One more thing I can tell you... Take the furthest right corridor at the bottom of the staircase... That'll take you to the Baron's rooms... Maybe it's there... Please don't kill me... I've told you everything I know...\"\n\nThaxted removes the knife from the guard's throat and applies a strangle hold until the man relaxes and slides to the ground. Tearing off a length of material from the guard's shirt he stuffs it in his mouth then, using his belt, he secures the guard to the chair and lays them both on the ground.\n\n[[Thaxted walks towards the stairs.|Corridor Room]]",
+      "links": [
+        {
+          "text": "Thaxted walks towards the stairs.",
+          "destination": {
+            "name": "Corridor Room",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Far Left Corridor",
+      "text": "{(If:$GuardFlag)[(set:$GuardFlag to false)\n(go-to:\"Silly Thaxted\")]\n}The corridor is dark here. Thaxted can hear talking from up ahead...\n\n[[BACK|Corridor Room]]\n\n[[Continue down the corridor.|FLCorridor1]]\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Silly Thaxted",
+            "pid": 40
+          }
+        },
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "Corridor Room",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Continue down the corridor.",
+          "destination": {
+            "name": "FLCorridor1",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Far Right Corridor",
+      "text": "This the right hand corridor. All righty...\n\n{(if: not $GuardsScared and $GuardFlag)[(set: $GuardsScared to true)[\n\"Reckon he's scampered off down this corridor,\" says a guard. \"Well, I won't be following him down there... The Baron doesn't like peoplr sneaking into his rooms... Zoltan will take care of him...\"\n]]}\n\n[[BACK|Corridor Room]]\n\n[[Continue down the corridor.|FRCorridor1]]",
+      "links": [
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "Corridor Room",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Continue down the corridor.",
+          "destination": {
+            "name": "FRCorridor1",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Middle Corridor",
+      "text": "Thaxted presses himself against the dark, strangely slimy wall of the corridor.\n{(if: not $GuardsScared and $GuardFlag)[(set: $GuardsScared to true)[\n\"Reckon he's scampered off down this corridor,\" says a guard. \"Well, I won't be following him down there... The Baron keeps something very strange down there...\"\n]]\n}\n\n[[BACK|Corridor Room]]\n\n[[Continue down the corridor.|MidCorridor1]]",
+      "links": [
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "Corridor Room",
+            "pid": 28
+          }
+        },
+        {
+          "text": "Continue down the corridor.",
+          "destination": {
+            "name": "MidCorridor1",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Corridor Room",
+      "text": "{(if:$GuardFlag)[\n(if: $GuardsScared)[\n(set:$GuardFlag to false)\n(go-to: \"Corridor After Hiding\")]]\n}Thaxted arrives in a well lit room(if: (history:) contains \"Corridor Room\")[ (again)]. In front of him are three corridors...\n\nThere is nothing to suggest that the [[left corridor|Far Left Corridor]] is any different to the [[right corridor|Far Right Corridor]], or that either is any different from the [[middle...|Middle Corridor]]\n\n[[Of course, Thaxted could always go back...|Castle Caught]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Corridor After Hiding",
+            "pid": 41
+          }
+        },
+        {
+          "text": "left corridor",
+          "destination": {
+            "name": "Far Left Corridor",
+            "pid": 25
+          }
+        },
+        {
+          "text": "right corridor",
+          "destination": {
+            "name": "Far Right Corridor",
+            "pid": 26
+          }
+        },
+        {
+          "text": "middle...",
+          "destination": {
+            "name": "Middle Corridor",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Of course, Thaxted could always go back...",
+          "destination": {
+            "name": "Castle Caught",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "CastleHistory",
+      "text": "Castle Krunge was built in the early part of the 9th century by the Fertingals, who for many generations had been poor carrot growers. Their sudden change of fortune occurred after a freak accident involving a falling elephant and a villager.\n\nPargetty Fertingal, the matriarch of the family, pointed out that no elephant had fallen on or near a carrot and so, eating a carrot became a talisman against being crushed by an elephant.\n\nIn fact, as Pergetty was at pains to point out, even her own family elephant had been driven away by carrots.\n\nIn defence of the Pergetty Fertingal, not one villager was killed by a falling elephant from that day forward.\n\nThe price of carrots rocketed overnight and the Fertingal's fortune was made.\n\nFor three hundred years the Fertingal's ruled this part of Carpathia until the Orange riots of 1184 when groups of orange skinned villagers stormed the castle.\n\nNature and Romania deplore a vaccuum so, Gorrodan Splavek, a retired pastry chef, who, unfeasibly, managed to raise a small army and take the castle from the orange skinned denizens.\n\nThere followed five hundred years of peace and tranquility during which the villagers thrived on a range of pies, tarts and pasties.\n\nThe Krunge family arrived in the late seventeenth cntury from the frozen steppes far to the North. Hard men living hard lives, they had no time for pastries, sweet or savoury and so the era of the Splavek family came to an abrupt and horrid end.\n\nHaving inherited the family traits of viciousness, callousness and a truly extraordinary level of physical repulsiveness, Baron Zanzar Krunge is the current ruler of Castle Krunge.\n\n[[BACK|Into The Castle]] ",
+      "links": [
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "Into The Castle",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Move The Guards",
+      "text": "{\n(if: $GuardFlag)[\n(if: not $Hidden)[\n(set: $GuardCount to $GuardCount-1)[\n(if: $GuardCount is 0)[\n(go-to: \"Guards Catch You\")\n]\n]\n]\n]\n}",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Guards Catch You",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Guards Catch You",
+      "text": "THE GUARDS ARRIVE AND BLOW YOU TO BITS!!!\n\n[[BACK|Restart Game]]",
+      "links": [
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "FLCorridor1",
+      "text": "As you walk down the corridor Thaxted can hear the noise of a group of men talking and drinking from a room.\n\n[[Thaxted takes a moment to listen|Listen To Guards]]\n\n[[BACK|Far Left Corridor]]",
+      "links": [
+        {
+          "text": "Thaxted takes a moment to listen",
+          "destination": {
+            "name": "Listen To Guards",
+            "pid": 37
+          }
+        },
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "Far Left Corridor",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "FRCorridor1",
+      "text": "[[BACK|Far Right Corridor]] \n\n[[Onwards, Old Bean!!!|FRCorridor2]]",
+      "links": [
+        {
+          "text": "BACK",
+          "destination": {
+            "name": "Far Right Corridor",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Onwards, Old Bean!!!",
+          "destination": {
+            "name": "FRCorridor2",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "MidCorridor1",
+      "text": "The corridor is poorly lit. A guttering gas lamp hardly illumines the opposite wall.\n\nThere is a curious slopping, slithering sound from further up the corridor.\n\n\"By Jingo,\" says Thaxted. \"That doesn't sound too jolly...\"\n\n\"Maybe I should go back?\"\n\n[[Keep going...|MidCorridor2]]\n\n[[Behave like a bally coward and go back...|Middle Corridor]]",
+      "links": [
+        {
+          "text": "Keep going...",
+          "destination": {
+            "name": "MidCorridor2",
+            "pid": 35
+          }
+        },
+        {
+          "text": "Behave like a bally coward and go back...",
+          "destination": {
+            "name": "Middle Corridor",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "MidCorridor2",
+      "text": "Thaxted emerges into a room which contains a large, dark pool. Something slithers beneath the surface...\n\nSuddenly, from the impenetrable water a huge reptillian head appears attached to an positively ophidian neck which ripples with muscle...\n\nThe creature fixes it cold eyes upon Thaxted and it opens its jaws to reveal deadly sharp fangs... The creature hisses angrilly...\n{(set: $MyStamina to 10)\n(set: $SerpentStamina to 10)\n(set: $HoldingKnife to true)\n(set: $KnifeFlag to true)\n}\n[[Fight the serpent...|Pre Fight Serpent]]",
+      "links": [
+        {
+          "text": "Fight the serpent...",
+          "destination": {
+            "name": "Pre Fight Serpent",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "FRCorridor2",
+      "text": "There is a very large chap standing here.\n\n\"Zoltan, I'm guessing,\" says Thaxted. \"You don't look so big to me...\"\n\nAs Thaxted confidently prepares himself for a fight, Zoltan, who has been standing in recess in the floor, steps up and looms in the way only a truly giantic person can loom...\n\nThaxted looks up at Zoltan who is considerably more huge than he appeared a moment ago...\n\nZoltan smiles cruelly, revealing perfect teeth... His arm muscles are so enormous that Thaxted can hear them flexing...\n{(set: $MyStamina to 10)\n(set: $ZoltanStamina to 20)\n(set: $HoldingKnife to true)\n}\n[[The fight is on...|Pre Fight Zoltan]]",
+      "links": [
+        {
+          "text": "The fight is on...",
+          "destination": {
+            "name": "Pre Fight Zoltan",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Listen To Guards",
+      "text": "{(set: $GuardFlag to true)\n(set: $GuardCount to 6)\n(set: $HeardGuards to true)\n}The guards are talking amongst themselves...\n\n\"He can't be that big...\"\n\n\"I've seen him... He must be about seven feet tall... And built like a brick shi...\"\n\n\"I don't know what's in there but, I never saw the cat again...\"\n\n\"Well, well,\" says a gruff voice in Thaxted's ear. \"I don't think the Baron wants the likes of you wandering about. Guards! Guar...\"\n\nThaxted aims a punch at the guard's chin and knocks him to the ground, unconscious. He has very little time to admire his handiwork however as the guards run to the door to investigate the noise...\n\n[[Time to go, Thaxted...|RunBack1]]",
+      "links": [
+        {
+          "text": "Time to go, Thaxted...",
+          "destination": {
+            "name": "RunBack1",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "RunBack1",
+      "text": "The guards chase Thaxted... And they're doing it quickly...\n\n[[Keep running, old chap...|RunBack2]]",
+      "links": [
+        {
+          "text": "Keep running, old chap...",
+          "destination": {
+            "name": "RunBack2",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "RunBack2",
+      "text": "Thaxted can almost feel the foul breath of the guards on his neck...\n\n[[Run like it's sport's day...|Corridor Room]]",
+      "links": [
+        {
+          "text": "Run like it's sport's day...",
+          "destination": {
+            "name": "Corridor Room",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Silly Thaxted",
+      "text": "Thaxted, in an extremely foolish move, runs back down the same corridor that his pursuing guards are running up... The same corridor he, himself, has just run up... Fleeing from the aforementioned guards...\n\n(And people say the upper classes are stupid...)\n\nNeedless to say, the chaps lay hands upon Thaxted and return him to his  turret room...\n\n[[Oh, Dear...|Restart Game]]",
+      "links": [
+        {
+          "text": "Oh, Dear...",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Corridor After Hiding",
+      "text": "Running back into the corridor room Thaxted runs into the guards waiting here for him to reappear...\n\nShould have stayed hidden, Thaxted...\n\n[[Back to the turret room...|Restart Game]]",
+      "links": [
+        {
+          "text": "Back to the turret room...",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Castle Caught",
+      "text": "Thaxted, rather less than courageously, goes back into the castle.\n\nHe encounters his two erstwhile guards from the turret room... This time though, they are heavilly armed with machine guns...\n\n\"Very poor show, Thaxted,\" sneers the marginally uglier one of the guards. \"Just goes to show what a cowardly fellow you really are... Back to the turret room with you...\"\n\n[[Hang your head, Thaxted, and off you go...|Restart Game]]",
+      "links": [
+        {
+          "text": "Hang your head, Thaxted, and off you go...",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "Fight Zoltan",
+      "text": "(set: $MyRandom to (random: 1,10))\n(set: $ZoltanRandom to (random: 1,10))\n\n(set: $Attack to 1)\n(if: (random: 1,10) > 3)[\n(if: $HoldingKnife)[\n(set: $Attack to 2)\n(if: $PoisonKnife)[\n(set: $Attack to 4)\n]]]\n\n(if: $MyRandom is $ZoltanRandom)[\n(go-to: \"Nobody Hits\")\n]\n(if: $MyRandom > $ZoltanRandom)[\n(set: $ZoltanStamina to $ZoltanStamina-$Attack)\n(go-to: \"I Hit\")\n]\n(if: $MyRandom < $ZoltanRandom)[\n(set: $MyStamina to $MyStamina-1)\n(go-to: \"Zoltan Hits\")\n]\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Nobody Hits",
+            "pid": 45
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "I Hit",
+            "pid": 47
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Zoltan Hits",
+            "pid": 46
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "Fight Serpent",
+      "text": "(set: $MyRandom to (random: 1,10))\n(set: $SerpentRandom to (random: 1,10))\n\n(set: $Attack to 1)\n(if: (random: 1,10) > 4)[\n(if: $HoldingKnife)[\n(set: $Attack to 2)\n]]\n\n(set: $SerpentAttack to 1)\n(if: $SerpentRandom > 8)[\n(set: $SerpentAttack to 2)\n]\n\n(if: $MyRandom is $SerpentRandom)[\n(go-to: \"Nobody Hits Serpent\")\n]\n(if: $MyRandom > $SerpentRandom)[\n(set: $SerpentStamina to $SerpentStamina-$Attack)\n(go-to: \"I Hit Serpent\")\n]\n(if: $MyRandom < $SerpentRandom)[\n(set: $MyStamina to $MyStamina-$SerpentAttack)\n(if: (random: 1,10) > 8)[\n(set: $HoldingKnife to false)\n]\n(go-to: \"Serpent Hits\")\n]\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Nobody Hits Serpent",
+            "pid": 53
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "I Hit Serpent",
+            "pid": 51
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Serpent Hits",
+            "pid": 52
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "Nobody Hits",
+      "text": "{<font color = \"red\" size = \"6\">\n(print: \"Thaxted's Stamina \" + (text: $MyStamina) + \" Zoltan's Stamina \" + (text: $ZoltanStamina))\n</font>}\n\n(either: \"You block each other...\",\"When two fine warriors battle there is no quarter given or expected...\",\"Thaxted and Zoltan epitomise the pugilist's skill...\",\"Two fists crash together like mighty rocks...\",\"Boot meets boot as kick matches kick...\")\n\n[[Keep Fighting|Fight Zoltan]]",
+      "links": [
+        {
+          "text": "Keep Fighting",
+          "destination": {
+            "name": "Fight Zoltan",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "Zoltan Hits",
+      "text": "{<font color = \"red\" size = \"6\">\n(print: \"Thaxted's Stamina \" + (text: $MyStamina) + \" Zoltan's Stamina \" + (text: $ZoltanStamina))\n</font>}\n\n(either: \"Zoltan balls his hand into a huge fist and brings it crashing down onto Thaxted's head...\",\"Zoltan raises a big boot and kicks Thaxted in the stomach...\",\"Zoltan smacks Thaxted...\",\"Zoltan punches Thaxted on the chin...\")\n{\n(if: $MyStamina is 0)[\n(go-to: \"Beaten By Zoltan\")\n]\n}\n[[Keep fighting...|Fight Zoltan]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Beaten By Zoltan",
+            "pid": 49
+          }
+        },
+        {
+          "text": "Keep fighting...",
+          "destination": {
+            "name": "Fight Zoltan",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 47,
+      "name": "I Hit",
+      "text": "{<font color = \"red\" size = \"6\">\n(print: \"Thaxted's Stamina \" + (text: $MyStamina) + \" Zoltan's Stamina  \" + (text: $ZoltanStamina))\n</font>}\n\n{(either: \"Thaxted gives Zoltan a damn good biff...\",\"Thaxted slaps the big fellow around the chops...\",\"Thaxted delivers a jolly good roundhouse kick to the guts...\",\"Thaxted feints to his right and socks Zoltan with a short punch to the chin...\")\n\n(if: $Attack > 1)[\nAnd catches him with his (if: $PoisonKnife)[poisoned ]knife...\n]\n\n(if: $ZoltanStamina < 1)[\n(go-to: \"Beat Zoltan\")\n]}\n\n[[Keep fighting|Fight Zoltan]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Beat Zoltan",
+            "pid": 48
+          }
+        },
+        {
+          "text": "Keep fighting",
+          "destination": {
+            "name": "Fight Zoltan",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "Beat Zoltan",
+      "text": "You give Zoltan a good old fashioned boot in the old family jewels and he falls to the ground exhausted, squeaking and more than a little tearful...\n\nA good hard punch to the head knocks the big lummox out...\n\n[[There is a wooden door leading deeper into the castle...|Barons Room]]",
+      "links": [
+        {
+          "text": "There is a wooden door leading deeper into the castle...",
+          "destination": {
+            "name": "Barons Room",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "Beaten By Zoltan",
+      "text": "Zoltan gives Thaxted a final, terminal blow...\n\n[[Good try, Thaxted...|Restart Game]]",
+      "links": [
+        {
+          "text": "Good try, Thaxted...",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "Barons Room",
+      "text": "Thaxted pushes the door and it opens with a little creak.\n\n\"Come in, Mister Havershill,\" says a reedy voice. \"I've been expecting you... The rumours of your phsyical prowess are not exagerrated is see... I had thought that my protector(if:$PoisonKnife)[s] would present you with more of a challenge... I, on the other hand, am a different level of threat...\"\n\nThaxted looks around the room and sees no fewer than thirty machine guns pointing directly at him. The Baron is sitting on a large, throne like chair holding what appears to be a box covered in buttons one of which he presses.\n\nThe door slams shut.\n\n\"The guns are automatically trained on you. All I have to do is press this button and you will, admittedly for a very short time, have the unique experience of thousands of bullets ripping into and through your body.\" The Baron's smile does not comfort Thaxted.\n\nSitting on a table next to the Baron is the object of Thaxted's quest... The Golden Wombat is four inches high and cast from solid gold. Its eyes are emeralds which twinkle in the gas light.\n\n\"And all for this... This trinket...\" The Baron picks up the Wombat and turns it over in his hand.\n\nThaxted feels his fury rise like bile in his throat.\n\n\"Not so much of a trinket since you killed my sister and her family to steal it...\"\n\n\"That was your sister? She didn't put up much of a fight.\" The Baron smirks cruelly. Thaxted makes to jump forward and wring the Baron's scrawny neck. The guns click and whirr to find their target again.\n\n\"Now, now, Thaxted. Settle down...\"\n\nThaxted clenched his fists and stood fuming.\n\n\"Mister Havershill,\" says the Baron, pensively. \"I'm a fellow who enjoys a game and a puzzle... Why don't we play a little game, eh?\"\n\nThaxted stares at the Baron with a look of utter hatred.\n\n\"Now, at the start of the story, the person reading this story opted to (if: $RandomOption)[play with random options] (if: not $RandomOption)[play without any randomness].\"\n\nThaxted looks confused.\n\n\"Didn't you realise that this is just a story? A game? Actually, it's what they call an interactive fiction so, it's a combination of both...\"\n\n\"So... My sister and her family?\"\n\n\"Never existed.\"\n\n\"But I hate you for stealing the Wombat and killing them...\"\n\n\"Yes, it's a strange feeling isn't it? But, consider this. I have thirty machine guns following your every move ready to fill you full of lead at a single button press. How are they doing that? The castle is full of gas lighting... Suddenly, I've developed an A.I. tracking system...\"\n\n\"So, where do we go from here?\" asks Thaxted.\n\n\"Well, there's a good chance they've stopped reading this by now but just in case they haven't...\"\n\n[[Carry On|End Of Story]]",
+      "links": [
+        {
+          "text": "Carry On",
+          "destination": {
+            "name": "End Of Story",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "I Hit Serpent",
+      "text": "{<font color = \"red\" size = \"6\">\n(print: \"Thaxted's Stamina \" + (text: $MyStamina) + \" Serpent's Stamina  \" + (text: $SerpentStamina))\n</font>}\n\n{(either: \"Thaxted finds a way though the serpent's defences...\",\"Thaxted's attack is successful...\",\"Moving like a tap dancer, Thaxted strikes the serpent...\",\"Dodging the creature's wicked fangs, Thaxted delivers a good old punch...\")\n\n(if: $Attack > 1)[\nAnd catches the creature with his knife...\n]\n\n(if: $SerpentStamina < 1)[\n(go-to: \"Beat Serpent\")\n]\n}\n\n[[Keep fighting|Fight Serpent]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Beat Serpent",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Keep fighting",
+          "destination": {
+            "name": "Fight Serpent",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "Serpent Hits",
+      "text": "{<font color = \"red\" size = \"6\">\n(print: \"Thaxted's Stamina \" + (text: $MyStamina) + \" Serpent's Stamina \" + (text: $SerpentStamina))\n</font>}\n\n{(either: \"The serpent strikes at Thaxted...\",\"In a blur of speed, the serpent attacks Thaxted...\",\"The serpent moves like lightning and breaks through Thaxted's defences...\",\"With open jaws, the serpent lashes out at Thaxted...\")\n(if: $SerpentAttack > 1)[\nAnd catches him with its fangs...(if: $InfoFlag)[There is a dumbing sensation... The creature's fangs are poisoned...(set: $InfoFlag to false)]\n]\n(if: $MyStamina < 1)[\n(go-to: \"Beaten By Serpent\")\n]\n(if: not $HoldingKnife and $KnifeFlag)[\n<font color = \"white\">The knife is knocked from Thaxted's hand...(set:$KnifeFlag to false)</font>]}\n\n[[Keep fighting...|Fight Serpent]]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Beaten By Serpent",
+            "pid": 54
+          }
+        },
+        {
+          "text": "Keep fighting...",
+          "destination": {
+            "name": "Fight Serpent",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Nobody Hits Serpent",
+      "text": "{<font color = \"red\" size = \"6\">\n(print: \"Thaxted's Stamina \" + (text: $MyStamina) + \" Serpent's Stamina \" + (text: $SerpentStamina))\n</font>}\n\n(either: \"Thaxted dodges one way and the serpent the other...\",\"The serpent misses its strike and Thaxted misses his...\",\"Thaxted and the serpent avoid their oponent's attack...\")\n\n[[Keep Fighting|Fight Serpent]]",
+      "links": [
+        {
+          "text": "Keep Fighting",
+          "destination": {
+            "name": "Fight Serpent",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Beaten By Serpent",
+      "text": "The serpent twists and sinks it's slavering fangs into Thaxted's neck...\n\n[[Thaxted loses...|Restart Game]]",
+      "links": [
+        {
+          "text": "Thaxted loses...",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Beat Serpent",
+      "text": "You fingers close around the serpent's neck and you feel the bones crunch...\n\nThe serpent is dead...\n\n[[Well done, Thaxted...|Dead Serpent]]",
+      "links": [
+        {
+          "text": "Well done, Thaxted...",
+          "destination": {
+            "name": "Dead Serpent",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "Dead Serpent",
+      "text": "Sweating, Thaxted looks down at the serpent's body twitching with its final convulsion...\n\nVenom drips from the creatures fangs onto the floor of the corridor...(if: not $HoldingKnife)[Picking up the knife,] Thaxted bends down and dips the blade (if: $HoldingKnife)[of his knife] into the fluid...\n\n{(set: $PoisonKnife to true)\n(set: $HoldingKnife to true)\n}[[Carry on...|FRCorridor2]]",
+      "links": [
+        {
+          "text": "Carry on...",
+          "destination": {
+            "name": "FRCorridor2",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Start",
+      "text": "Hello!!!\n\nI'm the writer of this little piece of interactive fiction...\n\nI hope you're having a lovely day... And I hope you enjoy reading/playing the story in a few seconds...\n\n[[Here is a walk through|WalkThrough]] for you... (Should you want such a thing...) Take note of the info because this is the only place you can see it...\n\nThere are a few occasions during this tale where I opted to use a bit of random determination... Not unlike real life...\n\nHowever, if you do not want to finish the story as a result of a computer determined random outcome feel free to disable that particular option [[here...|Disable Random]]\n\nOtherwise, if you fancy your chances... [[please carry on...|The Beginning Of The Tale]]",
+      "links": [
+        {
+          "text": "Here is a walk through",
+          "destination": {
+            "name": "WalkThrough",
+            "pid": 70
+          }
+        },
+        {
+          "text": "here...",
+          "destination": {
+            "name": "Disable Random",
+            "pid": 58
+          }
+        },
+        {
+          "text": "please carry on...",
+          "destination": {
+            "name": "The Beginning Of The Tale",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "Disable Random",
+      "text": "(set: $RandomOption to false)\n(go-to: \"The Beginning Of The Tale\")",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "The Beginning Of The Tale",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "Fight Serpent NOT RANDOM",
+      "text": "Thaxted watches the serpent's eyes carefully in an attempt to guess its next move...\n\nThe creature moves like a cobra hypnotising its prey... Thaxted shakes his head to clear the strange influence...\n\nPurely by chance, Thaxted slips on the wet floor and falls just as the serpent lunges... Rolling away, he watches as the serpent slides back into the dirty water...\n\nThaxted edges towards the pool again and the serpent rises up once more, hissing with fury... Throwning himself towards the creature, Thaxted grabs its neck and begins to squeeze...\n\nThe serpent thrashes around wrapping its sinuous length around Thaxted's legs...\n\nThe sound of bones crunching beneath his fingers signals the death of the serpent and Thaxted throws the dead body to the floor...\n{(set: $PoisonKnife to true)\n}\n[[Carry on down the corridor...|FRCorridor2]]",
+      "links": [
+        {
+          "text": "Carry on down the corridor...",
+          "destination": {
+            "name": "FRCorridor2",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "Pre Fight Serpent",
+      "text": "(if: not $RandomOption)[\n(go-to: \"Fight Serpent NOT RANDOM\")]\n\n(if: $RandomOption)[\n(go-to: \"Fight Serpent\")]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Fight Serpent NOT RANDOM",
+            "pid": 59
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Fight Serpent",
+            "pid": 44
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "Pre Fight Zoltan",
+      "text": "(if: not $RandomOption)[\n(go-to: \"Fight Zoltan NOT RANDOM\")]\n\n(if: $RandomOption)[\n(go-to: \"Fight Zoltan\")]\n\n",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Fight Zoltan NOT RANDOM",
+            "pid": 62
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Fight Zoltan",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "Fight Zoltan NOT RANDOM",
+      "text": "Thaxted looks up at the enormous fellow and swallows hard.\n\n\"You're no bigger than some of the chaps in the rugger teams back home... Actually,\" Thaxted smirks. \"You're only a bit bigger than some of the women's rugby squad!\"\n\nZoltan makes a low rumbling sound which may well have been a laugh. It may have been wind...\n\nHe moves very quickly for a man with a chest the size of a wardrobe. Thaxted found himself reeling from Zoltan's fist.\n\n\"Ha ha ha,\" laughs Thaxted, shaking his head. \"Call that a punch? I've punched myself harder...\" Despite his bravado, Thaxted takes up a fighting stance and blocks the gargantuan man's next attack.\n\nWith absolutely no shame, Thaxted kicks Zoltan very hard in the nether regions of his trousers and is rewarded by seeing Zoltan fall groaning to his knees and with even less shame, clutch his bruised danglies.\n\nThaxted aims a boot to Zoltan's head and the big man falls unconscious to the floor.\n\n[[There is a wooden door leading deeper into the castle...|Barons Room]]",
+      "links": [
+        {
+          "text": "There is a wooden door leading deeper into the castle...",
+          "destination": {
+            "name": "Barons Room",
+            "pid": 50
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Pre Into The Castle",
+      "text": "(if: not $RandomOption)[\n(go-to: \"Into The Castle NOT RANDOM\")]\n\n(if: $RandomOption)[\n(go-to: \"Into The Castle\")]",
+      "links": [
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Into The Castle NOT RANDOM",
+            "pid": 64
+          }
+        },
+        {
+          "text": "<go-to>",
+          "destination": {
+            "name": "Into The Castle",
+            "pid": 21
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "Into The Castle NOT RANDOM",
+      "text": "Creeping down the stairs, Thaxted notes how old the [[castle|CastleHistory]] is. Hundreds of years of feet pounding the stairs have worn the steps away, the polished stone making it a much more difficult descent than normal.\n\nAfter a few moments, Thaxted sees another guard sitting in front of a roaring fire. Thaxted's sharp eyes reveal that the guard's eyelids are drooping. He seems very dopey but it seems unlikely that even the almost supernaturally light footed Thaxted Havershill would be able to [[sneak by him...|Sneak By Guard NOT RANDOM]]\n\nThaxted fingers the knife... [[A well thrown knife|Throw Knife NOT RANDOM]] would kill the guard before he knew it (although it could miss and clatter to the ground) or perhaps he should resist the temptation to get rid of another guard and [[question him...|Question Guard]]\n\n",
+      "links": [
+        {
+          "text": "castle",
+          "destination": {
+            "name": "CastleHistory",
+            "pid": 29
+          }
+        },
+        {
+          "text": "sneak by him...",
+          "destination": {
+            "name": "Sneak By Guard NOT RANDOM",
+            "pid": 65
+          }
+        },
+        {
+          "text": "A well thrown knife",
+          "destination": {
+            "name": "Throw Knife NOT RANDOM",
+            "pid": 66
+          }
+        },
+        {
+          "text": "question him...",
+          "destination": {
+            "name": "Question Guard",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "Sneak By Guard NOT RANDOM",
+      "text": "Thaxted takes a deep breath and prepares to sneak by the guard.\n\nDuring his studies at the ninja schools of the orient, Thaxted had learned to be as silent as a cloud and as light footed as a cat filled with helium. Unfortunately, he had not learned to be invisible...\n\nGood fortune favour him and Thaxted sneaks by the guard and heads on [[into the castle...|Corridor Room]]",
+      "links": [
+        {
+          "text": "into the castle...",
+          "destination": {
+            "name": "Corridor Room",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Throw Knife NOT RANDOM",
+      "text": "The Knife spins through the air and clatters harmlessly against the guards chest.\n\nHe splutters awake and sees Thaxted.\n\n\"He's escaped!!! Havershill's escaped!!!\" He yells at the top of his voice.\n\nWith a voice like that he should be a bally opera singer, thinks Thaxted as half a dozen fully armed guards appear from a corridor.\n\n[[Oh dear, Thaxted... The end is very nigh...|Restart Game]]",
+      "links": [
+        {
+          "text": "Oh dear, Thaxted... The end is very nigh...",
+          "destination": {
+            "name": "Restart Game",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "End Of Story",
+      "text": "After moving from one [[virtual|Life Of Thaxted]] location to another, the Baron continues...\n\n\"If the reader has a look through this text they will notice a number of words highlighted... Only one will allow you to escape with your life and the Golden [[Wombat.|Death Of Thaxted]] If they get it wrong, it's a hail of bullet style [[death|Death Of Thaxted]] for you...\"\n\nThaxted looks out at you. \"Please pick carefully... And please be [[forgiving|Death Of Thaxted]] of the writer who thought this would be amusing enough to entertain you...\"\n\n",
+      "links": [
+        {
+          "text": "virtual",
+          "destination": {
+            "name": "Life Of Thaxted",
+            "pid": 68
+          }
+        },
+        {
+          "text": "Wombat.",
+          "destination": {
+            "name": "Death Of Thaxted",
+            "pid": 69
+          }
+        },
+        {
+          "text": "death",
+          "destination": {
+            "name": "Death Of Thaxted",
+            "pid": 69
+          }
+        },
+        {
+          "text": "forgiving",
+          "destination": {
+            "name": "Death Of Thaxted",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "Life Of Thaxted",
+      "text": "The Baron looks at Thaxted and looks at you. He presses a button and the weapons turn to focus on him.\n\n\"Well done,\" he says sadly, tossing the Wombat to Thaxted. \"My car is parked outside. It's not far to the nearest town. Farewell, Thaxted Havershill.\" With that, the Baron stands up in front of the guns and presses the button.\n\nThaxted watches dumfounded as the Baron is torn to pieces by the hails of bullets. Blood, bone, guts and sinews are strewn far and wide in the thunderous attack.\n\nWhen it all finishes, Thaxted turns away from the disintegrated Baron and walks out of a door towards the Baron's car.\n\nAlthough none of it has been real, Thaxted feels that he has avenged his fictitious family.\n\n\"Hmmm,\" he muses. \"It IS a strange feeling.\"",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "Death Of Thaxted",
+      "text": "\"Oh dear,\" says the Baron. \"Time to die, Thaxted, old chap.\"\n\nThe Baron presses a button and Thaxted feels the first hundred bullets pass through his body.\n\nAfter that... Nothing.\n\nThe Baron looks out at you. \"Poor choice there...I know it was all a bit random but, the writer realised that he had less that a day to get the entry to the IF Comp finished so, bless him, he tried this... I don't know if I would have done it this way myself but...\" The Baron shrugs his shoulders.\n\n\"Anyway. I ve enjoyed existing for this short period of time, albeit only in your mind.\"\n\nThe Baron picks up a broom and starts to push the squelchy remnants of Thaxted to the side of the room.\n\n\"Must get on,\" says the Baron.",
+      "links": []
+    },
+    {
+      "pid": 70,
+      "name": "WalkThrough",
+      "text": "In the first room you should look at everything... Then select \"What to do...\"\n\nOnce you've done that the way out is to use the sheet...\n\nOnce outside, give the guard a \"jolly good beating\"...\n\nWhen you encounter the sleeping guard, question him...\n\nThe most informative/helpful choice of corridors is LEFT then MIDDLE... You will be chased by the guards after going LEFT... But you  can make it back into the corridor room... Do not backtrack from the corridor room or you will be caught...\n\nAt the very end, the word to chose is \"VIRTUAL\"\n\n\n\nBlimey!!! It's taken me a couple of weeks to write this and these are the only decisions you have to make... Hmmm... Is it me or are all TWINE games like this? ;-)\n\n[[Back you go...|Start]]",
+      "links": [
+        {
+          "text": "Back you go...",
+          "destination": {
+            "name": "Start",
+            "pid": 57
+          }
+        }
+      ]
+    }
+  ]
+}

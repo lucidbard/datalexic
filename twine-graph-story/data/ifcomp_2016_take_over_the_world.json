@@ -1,0 +1,1527 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "The Beginning",
+      "text": "You look up in disgust from your news feed.  The world is a bus speeding toward a cliff and no one is driving!  You wish you read physical newspapers so you could have the satisfaction of flinging a bundle of paper across the room.  Swiping left doesn't carry quite the same gravitas.\n\nGuess it's time to take over the world.  Someone has to.\n\n<<initInv>> <<emptyInv>>\n<<if visited(\"Actually, my motives are purely selfish.\")>>\n<<addToInv \"A lot of damn gall\">>\n<<addToInv \"An autographed portrait of Donald Trump\">>\n<<else>>\n<<addToInv \"A Desire to Change the World for the Better\">><<endif>>\nYou can check out [[Your Stuff]] at any time during the game in the sidebar. Click on individual items to learn more about them.\n\nRight how you have:\n<<invWithLinks>> \n\nThe first thing you need is a secret lair.\n\nYou live in East Cleveland, Ohio. The options are limited but urban chic.\nWhat do you pick:\n\n[[Green Road Abandoned Observatory]]\n\n[[President Garfield's Tomb]]\n\n[[Windermere Rapid Transit Station]]\n\n[[One of the many former Rockefeller residences]]",
+      "links": [
+        {
+          "text": "Your Stuff",
+          "destination": {
+            "name": "Your Stuff",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Green Road Abandoned Observatory",
+          "destination": {
+            "name": "Green Road Abandoned Observatory",
+            "pid": 4
+          }
+        },
+        {
+          "text": "President Garfield's Tomb",
+          "destination": {
+            "name": "President Garfield's Tomb",
+            "pid": 5
+          }
+        },
+        {
+          "text": "Windermere Rapid Transit Station",
+          "destination": {
+            "name": "Windermere Rapid Transit Station",
+            "pid": 6
+          }
+        },
+        {
+          "text": "One of the many former Rockefeller residences",
+          "destination": {
+            "name": "One of the many former Rockefeller residences",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "StoryMenu",
+      "text": "[[Your Stuff]]\n\n[[Credits]] ",
+      "links": [
+        {
+          "text": "Your Stuff",
+          "destination": {
+            "name": "Your Stuff",
+            "pid": 3
+          }
+        },
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Your Stuff",
+      "text": "\n\n<<if $inventory.length == 0>>You are not carrying anything.<<else>>You currently possess:\n <<invWithLinks>> <<endif>>\n <<back>>\n ",
+      "links": []
+    },
+    {
+      "pid": 4,
+      "name": "Green Road Abandoned Observatory",
+      "text": "Green Road Observatory is a gloriously decayed Victorian wreck with mosaic tile and overgrowing vines.  Perfect for your mad scientist-types.\n\nThe observatory, which at that time housed a 9.5-inch (24 cm) refractor, was donated in 1919 to the Case School of Applied Science.\n\n<<addToInv \"Observatory Lair\">>\n\nChanged your mind? Go back to [[The Beginning]].\n\nHappy? Continue to [[Administrator Hiring]]\n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/06/greenobservatory.png]]",
+      "links": [
+        {
+          "text": "The Beginning",
+          "destination": {
+            "name": "The Beginning",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Administrator Hiring",
+          "destination": {
+            "name": "Administrator Hiring",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "President Garfield's Tomb",
+      "text": "This castle sits high atop the glacial ridge that separates East Cleveland from suburbs with \"Heights\" in their names.  It's not big, but it's a castle!  There are two spiral stairs, a colonnade around the central chamber and an observation deck.  Oh, and that room in the bottom with the dead bodies.\n\n<<addToInv \"Tomb Lair\">>\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/garfield.png]]\n\nChanged your mind? Go back to [[The Beginning]].\nHappy? Continue to [[Administrator Hiring]]\n\n*//The tomb was designed by architect George Keller utilizing Ohio sandstone. Its construction began in 1885, and it was dedicated on May 30, 1890. The round tower is 50 feet (15 m) in diameter and 180 feet (55 m) high. Fun fact: Garfield did not want a statue of himself at his tomb, so the 12 foot tall marble statue sits awkwardly with a rectangular base on top of the non-rectangular-patterned mosaic floor.//",
+      "links": [
+        {
+          "text": "The Beginning",
+          "destination": {
+            "name": "The Beginning",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Administrator Hiring",
+          "destination": {
+            "name": "Administrator Hiring",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Windermere Rapid Transit Station",
+      "text": "The end of Cleveland's Red Line, this large transit station has parking, a bus turn-around, and a large, bright, ultra-modern building. A bit drafty, but you must admit it's the ideal location for quickly moving your minions throughout the Cleveland area.\n\nThe giant rusted sign for Windermere Moving on an adjacent rooftop adds a touch of urban decay.\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/windermere.png]]\n<<addToInv \"Transit Lair\">>\n\nChanged your mind? Go back to [[The Beginning]].\nHappy? Continue to [[Administrator Hiring]]",
+      "links": [
+        {
+          "text": "The Beginning",
+          "destination": {
+            "name": "The Beginning",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Administrator Hiring",
+          "destination": {
+            "name": "Administrator Hiring",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "One of the many former Rockefeller residences",
+      "text": "Fourteen bedrooms and twenty fireplaces. A prohibition-era basement bar.  Ridiculous amounts of carved wooden moulding and all the safety rails your heart can desire, left over from when it was a retirement home.  This is a good home base for entertaining heads of state, but you'll need to spend some time on upkeep.\n\n<<addToInv \"Mansion Lair\">>\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/mansion.png]]\n\nChanged your mind? Go back to [[The Beginning]].\nHappy? Continue to [[Administrator Hiring]]\n\n*//Yes, I have a specific house in mind. It belonged to one of Rockefeller's daughters and recently sold for a paltry sum.  Fun fact: Rockefeller himself is buried near Garfield's Tomb in Lakeview Cemetery.  People leave dimes on the tombstone for, I guess, good money luck.//",
+      "links": [
+        {
+          "text": "The Beginning",
+          "destination": {
+            "name": "The Beginning",
+            "pid": 1
+          }
+        },
+        {
+          "text": "Administrator Hiring",
+          "destination": {
+            "name": "Administrator Hiring",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Administrator Hiring",
+      "text": "You take out a personal ad:\n\nAdministrative Assistant Wanted.  Ability to delegate many tasks, detail oriented, proficient in office software, telecommunications.  Must be morally flexible. Martial arts training a plus.\n\nYour first applicant is a smoking hottie.\nYour second applicant is nothing great to look at, but has an air of menacing calm.\n\nDo you hire [[The Pretty One]] or\n[[The Ugly One]]?\n",
+      "links": [
+        {
+          "text": "The Pretty One",
+          "destination": {
+            "name": "The Pretty One",
+            "pid": 9
+          }
+        },
+        {
+          "text": "The Ugly One",
+          "destination": {
+            "name": "The Ugly One",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "The Pretty One",
+      "text": "<<if $inventory.contains(\"Mansion Lair\") or $inventory.contains(\"Tomb Lair\")>>\nThe Pretty One takes one look at your home base and sets right to work.\n\n<<if $inventory.contains(\"Mansion Lair\")>>They left a coffee machine behind! Score.  The Pretty One opens windows and shakes dust covers from what furnishings were left.  It feels like home.<<endif>>\n\n<<if $inventory.contains(\"Tomb Lair\")>>The Pretty One yanks the flag off President Garfield's coffin -- you need curtains.  As you pull the cartaker from his office by his hair, The Pretty One confiscates the coffee pot.<<endif>>\n\nYou feel you are ready to [[Start Your Global Domination]]!\n\n<<addToInv \"Good-Looking Aide\">>\n<<addToInv \"Coffee, sweet coffee\">>\n<<else>>\n\nOh snap, The Pretty One takes one look at your base and decides to seek employment elsewhere. You're not sure, but you think the wrinkled upper lip meant your base was not pretty enough.  Best go back to [[Administrator Hiring]] and pick up your second choice. Or you can [[try to win the pretty one over]].<<endif>>\n\n",
+      "links": [
+        {
+          "text": "Start Your Global Domination",
+          "destination": {
+            "name": "Start Your Global Domination",
+            "pid": 11
+          }
+        },
+        {
+          "text": "Administrator Hiring",
+          "destination": {
+            "name": "Administrator Hiring",
+            "pid": 8
+          }
+        },
+        {
+          "text": "try to win the pretty one over",
+          "destination": {
+            "name": "try to win the pretty one over",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "The Ugly One",
+      "text": "<<if $inventory.contains(\"Mansion Lair\") or $inventory.contains(\"Tomb Lair\")>>\nThe Ugly One stops as you approach your home base, lips pressed in a tight line. \"That's what you picked? Really? Hmm. No, sorry, I don't think I'm the right administrator for you. It's not you, it's me.  Really.\"\n\nOh snap. Best go back to [[Administrator Hiring]] and pick up your second choice.\n\nOr you could [[Try to win the ugly one over]].\n\n<<else>>\n\nThe Ugly One steps smartly ahead of you, setting things in order before you're even through the front door of your lair.\n\n<<if $inventory.contains(\"Observatory Lair\")>>Dead vines are pulled down, revealing exquisite stonework.  You walk through leaf-strewn corridors lit by shafts of sun through broken shutters and... is that coffee you smell? How did your new aide even find electricity so fast? <<endif>>\n\n<<if $inventory.contains(\"Transit Lair\")>>RTA employees in dark blue uniforms scurry from their offices as The Ugly One takes charge. You are handed a cup of coffee.  You think you're a little bit in love.<<endif>>\n\nYou feel you are ready to [[Start Your Global Domination]]!\n\n\n<<addToInv \"Super-Competent Aide\">>\n<<addToInv \"Coffee, sweet coffee\">><<endif>>",
+      "links": [
+        {
+          "text": "Administrator Hiring",
+          "destination": {
+            "name": "Administrator Hiring",
+            "pid": 8
+          }
+        },
+        {
+          "text": "Try to win the ugly one over",
+          "destination": {
+            "name": "Try to win the ugly one over",
+            "pid": 31
+          }
+        },
+        {
+          "text": "Start Your Global Domination",
+          "destination": {
+            "name": "Start Your Global Domination",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "Start Your Global Domination",
+      "text": "So there you are, enjoying a nice cup of <<if $inventory.contains(\"Tea\")>>tea<<else>>[[Coffee, sweet coffee]]<<endif>> prepared by your <<if $inventory.contains(\"Good-Looking Aide\")>>gorgeous<<endif>><<if $inventory.contains(\"Super-Competent Aide\")>>competent<<endif>> assitant.\n\nBlue and white lights wash over the <<if $inventory.contains(\"Tomb Lair\")>>faux-gothic arches<<endif>><<if $inventory.contains(\"Mansion Lair\")>>linen-fold wood panels<<endif>><<if $inventory.contains(\"Observatory Lair\")>>steampunk hardware<<endif>><<if $inventory.contains(\"Transit Lair\")>>gleaming metal posts<<endif>> in your new headquarters.  \"Crap,\" you say, just as a megaphone-amplified voice shouts, \"This is the Cleveland Heights Police.  Step out of the <<if $inventory.contains(\"Tomb Lair\")>>monument<<endif>><<if $inventory.contains(\"Mansion Lair\")>>mansion<<endif>><<if $inventory.contains(\"Observatory Lair\")>>Observatory<<endif>><<if $inventory.contains(\"Transit Lair\")>>Rapid Station<<endif>> with your hands up.\"\n\n<<if $inventory.contains(\"frustration\")>> \nYou're getting frustrated. You shoot a deadly glare at your assistant. \n\nEmployee to the rescue!\n<<if $inventory.contains(\"Super-Competent Aide\")>>Your supremely competent assistent bribes a specific officer, giving you a narrow escape route.<<else>>Your attractive assistant flirts with a specific officer, giving you a narrow escape route.<<endif>>\n\nThe two of you barely make it out of there and onto the number nine bus going down Euclid.\n\nClearly, you need some help to get your secret lair back. Curse these municipal authorities and their \"property rights\".\n\nThat's it. You need someone smarter than you to advise you. Time to hire a Mad Scientist!  You know just the place.\n\nThis bus goes to University Circle and you know just where to get off: [[Strosacker]]\n<<else>>\n<<if visited(\"Diplomacy\")>> Diplomacy didn't work. <<else>>Do you try [[Diplomacy]]?<<endif>>\n\n<<if visited(\"Run for it\")>> Running didn't work. <<else>>Do you try to [[Run for it]]?<<endif>>\n\n<<if visited(\"Violence\")>> Violence didn't work. <<else>>Do you resort to [[Violence]]?<<endif>>\n\n<<if $inventory.contains(\"frustration\")>> \nYou're getting frustrated. You shoot a deadly glare at your assistant. \n\n<<if $inventory.contains(\"Super-Competent Aide\")>>Your supremely competent assistent bribes a specific officer, giving you a narrow escape route.<<endif>><<if $inventory.contains(\"Good-Looking Aide\")>>Your attractive assistant flirts with a specific officer, giving you a narrow escape route.<<endif>>\n\nClearly, you need some help to get your secret lair back. Curse these municipal authorities and their \"property rights\".\n\nThat's it. You need someone smarter than you to advise you. Time to hire a Mad Scientist!  You know just the place.\n\nYou're on your way to University Circle and [[Strosacker]] <<endif>> <<endif>>",
+      "links": [
+        {
+          "text": "Coffee, sweet coffee",
+          "destination": {
+            "name": "Coffee, sweet coffee",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Strosacker",
+          "destination": {
+            "name": "Strosacker",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Diplomacy",
+          "destination": {
+            "name": "Diplomacy",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Run for it",
+          "destination": {
+            "name": "Run for it",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Violence",
+          "destination": {
+            "name": "Violence",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Strosacker",
+      "text": "Strosacker Auditorium is home to the CWRU Film Society and also to courses at the university with \"required for all students\" in their description.  The seats are uncomfortable, the screen is huge, and the electronically-controlled sliding chalkboards have been a favorite target for undergraduate hackers.\n\nYou need a mad scientist.  You're in luck, Case Western Reserve University has been a nurturing home to Mad Science since the first Americans to win a Nobel Prize worked there.*  CWRU also built that observatory on Green Road that you <<if $inventory.contains(\"Observatory Lair\")>>now enjoy as your lair.<<else>>considered as an option before deciding on your lair.<<endif>>\n\nThis weekend is the annual science fiction marathon!  You don your Doctor Horrible cosplay and sneak into the auditorium.  Milling around the lobby you see some likely candidates. Whom do you approach?\n\n<<if visited(\"Projection Plot\")>>Charley's whereabouts are still unknown. Jim is pissed.<<else>>[[Projectionist-Astronomer]] - he looks friendly and knowledgeable.<<endif>>\n\n[[Woman in an LED tiara and Star Trek uniform]] - she looks tough, yet pretty.\n\n[[Gaggle of undergrads dressed like The Jetsons]] - they look like they will have lots of unique ideas.\n\n\n*//In 1887 when they performed their famous experiment, Michaelson and Morely were professors at Western Reserve University and Case Institute of Technology, which would merge into CWRU in 1967.  Because you wanted to know that.//",
+      "links": [
+        {
+          "text": "Projectionist-Astronomer",
+          "destination": {
+            "name": "Projectionist-Astronomer",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Woman in an LED tiara and Star Trek uniform",
+          "destination": {
+            "name": "Woman in an LED tiara and Star Trek uniform",
+            "pid": 26
+          }
+        },
+        {
+          "text": "Gaggle of undergrads dressed like The Jetsons",
+          "destination": {
+            "name": "Gaggle of undergrads dressed like The Jetsons",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "Reclaim Your Lair",
+      "text": "You and your <<if $inventory.contains(\"A Robot Army\")>>robot army<<endif>><<if $inventory.contains(\"Clone Army\")>>clone army<<endif>><<if $inventory.contains(\"All The Passwords, Everywhere\")>>gaggle of undergraduate hacktivists<<endif>><<if $inventory.contains(\"Charley the Astronomer-Projectionist\")>>awesome projectionist friend<<endif>><<if $inventory.contains(\"MechaGodzilla\")>>robot dinosaur<<endif>><<if $inventory.contains(\"Not the Iron Giant\")>>robot friend<<endif>> march down Euclid Avenue back toward East Cleveland and your Lair.  Between you and world domination: Civil Authorities.\n\nBut.. how to get past them?\n\n[[Frontal Assault!]]\n[[Sneak around the back]]\n[[Talk your way out of it]]\n   \n   <<if $inventory.contains(\"Tomb Lair\")>>[img[http://www.marievibbert.com/wp-content/uploads/2016/09/garfield.png]]<<endif>>\n   <<if $inventory.contains(\"Mansion Lair\")>>[img[http://www.marievibbert.com/wp-content/uploads/2016/09/mansion.png]]<<endif>>\n   <<if $inventory.contains(\"Transit Lair\")>>[img[http://www.marievibbert.com/wp-content/uploads/2016/09/windermere.png]]<<endif>>\n   <<if $inventory.contains(\"Observatory Lair\")>>[img[http://www.marievibbert.com/wp-content/uploads/2016/06/greenobservatory.png]]<<endif>>",
+      "links": [
+        {
+          "text": "Frontal Assault!",
+          "destination": {
+            "name": "Frontal Assault!",
+            "pid": 33
+          }
+        },
+        {
+          "text": "Sneak around the back",
+          "destination": {
+            "name": "Sneak around the back",
+            "pid": 70
+          }
+        },
+        {
+          "text": "Talk your way out of it",
+          "destination": {
+            "name": "Talk your way out of it",
+            "pid": 34
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Diplomacy",
+      "text": "Your <<if $inventory.contains(\"Good-Looking Aide\")>>attractive<<endif>><<if $inventory.contains(\"Super-Competent Aide\")>>intimidating<<endif>> aide attempts to sweet talk the police.  \"Isn't this East Cleveland, anyway? What's your juristiction here?\"\n\nThe police respond with gunfire.\n<<if $inventory.contains(\"a failed try\")>>\n<<addToInv \"frustration\">>\n<<removeFromInv \"a failed try\">>\n<<else>>\t\n<<addToInv \"a failed try\">>\n<<endif>>\n\nWell, that didn't work. Better try a different tactic to\n[[Start Your Global Domination]] ",
+      "links": [
+        {
+          "text": "Start Your Global Domination",
+          "destination": {
+            "name": "Start Your Global Domination",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Run for it",
+      "text": "<<if $inventory.contains(\"Transit Lair\")>>Come on, this is a transit station! You have eighty different ways to run! Grab a bus or a commuter's car or the train while your aide covers for you. AW YEAH. Public Transportation Win.  You hop off that bus like \"What up?\" At [[Strosacker]].<<endif>>\n<<if $inventory.contains(\"Mansion Lair\")>>You slip out the window and down a trellis while your aid covers for you.... only to find the East Cleveland cops are there, too, covering your exit.  And they have looks of weary irritation.  You get the feeling they deal with super villains more than most municipalities.\n\nWell, that didn't work. Back to the [[Start Your Global Domination]]!<<endif>><<if $inventory.contains(\"Tomb Lair\")>>\"Look, a monkey!\" you shout, then vault the vault to make a daring escape into the decorative hedges.... only to find the East Cleveland cops are there, too, covering your exit.  And they have looks of weary irritation.  You get the feeling they deal with super villains more than most municipalities.\n\nWell, that didn't work. Back to the [[Start Your Global Domination]]!<<endif>><<if $inventory.contains(\"Observatory Lair\")>>You squeeze through a broken window into the thick undergrowth of Forest Hill.... only to find the East Cleveland cops are there, too, covering your exit.  And they have looks of weary irritation.  You get the feeling they deal with super villains more than most municipalities.\n\nWell, that didn't work. Better try a different tactic to [[Start Your Global Domination]]!<<endif>>\n<<if $inventory.contains(\"a failed try\")>>\n<<addToInv \"frustration\">>\n<<removeFromInv \"a failed try\">>\n<<else>>\n<<addToInv \"a failed try\">>\n<<endif>>\n",
+      "links": [
+        {
+          "text": "Strosacker",
+          "destination": {
+            "name": "Strosacker",
+            "pid": 12
+          }
+        },
+        {
+          "text": "Start Your Global Domination",
+          "destination": {
+            "name": "Start Your Global Domination",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "Violence",
+      "text": "\"We can fight our way out!\" You say.<<if $inventory.contains(\"Super-Competent Aide\")>>  Your aide gives you a narrow-eyed look.\nYour aide then makes a quick exit, leaving behind only an extensive report on Cleveland Police violence.\n<<else>>\nYour aide says, \"I'm way too pretty to die,\" and hides.\n<<endif>>\nYou look out at the increasing ranks of police.\n<<if $inventory.contains(\"a failed try\")>>\n<<addToInv \"frustration\">>\n<<removeFromInv \"a failed try\">>\n<<else>>\n<<addToInv \"a failed try\">>\n<<endif>>\nWell, that didn't work. \nBetter try a different tactic to [[Start Your Global Domination]] ",
+      "links": [
+        {
+          "text": "Start Your Global Domination",
+          "destination": {
+            "name": "Start Your Global Domination",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "Coffee, sweet coffee",
+      "text": "Who can take over the world without coffee?\nIt is by caffein alone you set your mind in motion.\n\n[img[http://www.marievibbert.com/wp-content/uploads/2015/06/latte.gif]]\n[[Actually, I prefer Tea]]\n\n<<back>>",
+      "links": [
+        {
+          "text": "Actually, I prefer Tea",
+          "destination": {
+            "name": "Actually, I prefer Tea",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Actually, I prefer Tea",
+      "text": "Good point.  Have some tea, instead.\n\n<<addToInv \"Tea\">>\n<<addToInv \"Excellent Taste\">>\n<<removeFromInv \"Coffee, sweet coffee\">>\n\n<<if visited(\"plot your next move\")>>Return to [[plot your next move]]<<else>>Return to [[Start Your Global Domination]] <<endif>>",
+      "links": [
+        {
+          "text": "plot your next move",
+          "destination": {
+            "name": "plot your next move",
+            "pid": 32
+          }
+        },
+        {
+          "text": "Start Your Global Domination",
+          "destination": {
+            "name": "Start Your Global Domination",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "A Desire to Change the World for the Better",
+      "text": "You have your own unique ideas how to make the world better, but in general, it involves someone actually taking charge of it. The world.\n<<back>> \n\n[[Actually, my motives are purely selfish.]]\n",
+      "links": [
+        {
+          "text": "Actually, my motives are purely selfish.",
+          "destination": {
+            "name": "Actually, my motives are purely selfish.",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Actually, my motives are purely selfish.",
+      "text": "Well, at least you're honest.\n\n<<addToInv \"A lot of damn gall\">>\n<<removeFromInv \"A Desire to Change the World for the Better\">>\n<<addToInv \"An autographed portrait of Donald Trump\">>\n\n<<if visited(\"plot your next move\")>>Return to [[plot your next move]]<<else>>Return to [[The Beginning]] <<endif>>",
+      "links": [
+        {
+          "text": "plot your next move",
+          "destination": {
+            "name": "plot your next move",
+            "pid": 32
+          }
+        },
+        {
+          "text": "The Beginning",
+          "destination": {
+            "name": "The Beginning",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Tomb Lair",
+      "text": "A neo-gothic mini-castle on the highest point of Lakeview Cemetary. You can, in fact, see Lake Erie stretching to the horizon from the observation deck.\n\nInterior has a mosaic depicting alegorical figures mourning the president and swastikas from back when that was just a decorative element!\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/garfield.png]]\n\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 22,
+      "name": "Mansion Lair",
+      "text": "Anywhere but East Cleveland, and this house would be unobtainable on your Evil Overlord budget. \n\nOkay, maybe Detroit.\n\nThe nicest room is the wood-paneled \"Hunting room\" with its ornately carved fireplace and intricate cabinetry.\n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/mansion.png]]\n\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 23,
+      "name": "Transit Lair",
+      "text": "I'll paste in the description of the Windermere Transit Station from the Encyclopedia of Cleveland History when I'm not lazy.\n\nOh hey... \n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/windermere.png]]\n\nNot gonna lie - some liberties were taken with this image. The awesome 1900's sign for the Windermere Moving company is on the other side of the station.  It's awesome.  I did turn it backward so it faces West, as in real life.\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 24,
+      "name": "Observatory Lair",
+      "text": "This just oozes Evil Overlord from its tattered dome, robbed of its copper, to the clinging vines and thick undergrowth.\n\nBWA HA HA HAAAAAA\n\n<<back>>\n[img[http://www.marievibbert.com/wp-content/uploads/2016/06/greenobservatory.png]]",
+      "links": []
+    },
+    {
+      "pid": 25,
+      "name": "Projectionist-Astronomer",
+      "text": "Charley the Projectionist-Astronomer peers at you from behind the massive, ancient projector he's working on. He has a friendly smile, long grey hair, and a Monty Python t-shirt.\n\n\"Well, yes, I suppose I count as a scientist.  I am an astronomer. And I'm good with movie equipment, as you see.  But I have some questions before I help anyone take over the world. First: What is your name?\"\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/charleyk.png]]\n\nYou tell Charley your name.  He nods. \"What is your quest?\"\n\n\"To take over the world.\"\n\n\"And what is your favorite color?\"\n\n[[Blue]]\n[[no... Red!]]\n[[African or European Swallow?]]\n\n<<back>>",
+      "links": [
+        {
+          "text": "Blue",
+          "destination": {
+            "name": "Blue",
+            "pid": 71
+          }
+        },
+        {
+          "text": "no... Red!",
+          "destination": {
+            "name": "no... Red!",
+            "pid": 72
+          }
+        },
+        {
+          "text": "African or European Swallow?",
+          "destination": {
+            "name": "African or European Swallow?",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Woman in an LED tiara and Star Trek uniform",
+      "text": "She tilts her crown as she scratches her head. \"Well, I do have access to a robotics laboratory.  Would an army of robots help?\"\n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/julie.png]]\n\n[[Hells Yes]]\n\n[[How about just one robot - that knows how to love?]]\n\n[[I just want one robot - a giant robot]]\n\n[[Can you make something more... practical?]]\n\n<<back>>",
+      "links": [
+        {
+          "text": "Hells Yes",
+          "destination": {
+            "name": "Hells Yes",
+            "pid": 38
+          }
+        },
+        {
+          "text": "How about just one robot - that knows how to love?",
+          "destination": {
+            "name": "How about just one robot - that knows how to love?",
+            "pid": 64
+          }
+        },
+        {
+          "text": "I just want one robot - a giant robot",
+          "destination": {
+            "name": "I just want one robot - a giant robot",
+            "pid": 65
+          }
+        },
+        {
+          "text": "Can you make something more... practical?",
+          "destination": {
+            "name": "Can you make something more... practical?",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Gaggle of undergrads dressed like The Jetsons",
+      "text": "The gaggle explodes with enthusiastic ideas and suggestions.\n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/jetskids.png]]\n\n\"[[Hacktivism]] is the way to go!\" Judy Jetson says.  \"I've got libraries and libraries of scripts I've been waiting to unleash.\"\n\n\"Two words: [[Robot. Army.]],\" says the boy in the Rosie the Robot costume.\n\nThe girl dressed as Astro says, \"Come on, guys, [[Clones]] are the way to go!\"\n\n... or you can go <<back>> and select someone else rather than face this difficult choice.",
+      "links": [
+        {
+          "text": "Hacktivism",
+          "destination": {
+            "name": "Hacktivism",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Robot. Army.",
+          "destination": {
+            "name": "Robot. Army.",
+            "pid": 41
+          }
+        },
+        {
+          "text": "Clones",
+          "destination": {
+            "name": "Clones",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "Good-Looking Aide",
+      "text": "No, I am not going to describe this paragon of hotness.  \n\nIf it were me taking over the world, he would look like Chiwetel Egiofor circa \"Kinky Boots\".\n\nBut this is YOUR story.  Imagine the gender and height and beefiness on your own.  This person is SMOKING.\n\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 29,
+      "name": "Super-Competent Aide",
+      "text": "Not much to look at, not your TYPE, but DANG does this person exude a menacing competence.  Would probably beat you at both chess and Russian roulette.\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 30,
+      "name": "try to win the pretty one over",
+      "text": "<<if $inventory.contains(\"Transit Lair\")>>\nYou try to pretty up the rapid transit station.  It has public art! Clean lines!  Perhaps a DJ booth and disco lights are the key?\n<<else>>\nYou try to pretty up the Observatory.  Rip down some dead vines... sweep out some dead leaves.  Cough.  Hey, look: Tiffany glass windows! Eh? Eh!??\n<<endif>>\n\nYour hoped-for aide-de-camp is frowning thoughtfully.\n\nYou could [[try some smooth talking]]\nor [[be more forceful]] - who's the evil mastermind here, anyway?",
+      "links": [
+        {
+          "text": "try some smooth talking",
+          "destination": {
+            "name": "try some smooth talking",
+            "pid": 61
+          }
+        },
+        {
+          "text": "be more forceful",
+          "destination": {
+            "name": "be more forceful",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Try to win the ugly one over",
+      "text": "<<if $inventory.contains(\"Mansion Lair\")>>\nYou try to explain that the Mansion is a smart choice. You had a good reason for it. Ostentation as intimidation! Also, the space is great for entertaining. Yeah. World rulers have to entertain guests a lot.\n<<else>>\nYou try to explain that the tomb is a smart choice.  Intimidation by being death-ajacent.  Also that commanding view.  Big picture stuff. yeah.\n<<endif>>\n\nThere's that menacing glare.\n\nDo you [[humbly ask what is wrong with your choice]]?\nOr [[insist that your assitant follow you]] -- you're the future dictator, after all.\n",
+      "links": [
+        {
+          "text": "humbly ask what is wrong with your choice",
+          "destination": {
+            "name": "humbly ask what is wrong with your choice",
+            "pid": 59
+          }
+        },
+        {
+          "text": "insist that your assitant follow you",
+          "destination": {
+            "name": "insist that your assitant follow you",
+            "pid": 60
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "plot your next move",
+      "text": "You are safely returned to your Evil Lair, attended by your capable Number Two and at least one (arguably) mad scientist.  Let's take stock.\n\nYou have:\n <<invWithLinks>>\n \nProgress!\n\nNow... what is your next move?\n<<if $inventory.contains(\"Charley the Astronomer-Projectionist\")>>\"Well,\" says Charley, \"I have two ideas. One involves Astronomy and the other Projection.\"\n\nAsk Charley to explain his [[Astronomy Plot]]?\nAsk him to tell you about his [[Projection Plot]]?\nOr, perhaps, tell him you reject his ideas, you want to start with\n[[Overthrowing the Local Government]].\n<<endif>>\n<<if $inventory.contains(\"A Gaggle of Undergratuate Science Majors\")>>\n  <<if $inventory.contains(\"All The Passwords, Everywhere\")>>\n  \"We can hack into local government, send official-looking orders, get them working for us!\" suggests Jane.\n  \"No,\" says Rosie, \"Let's uncover secrets of powerful people and blackmail them.\"\n  George frowns thoughtfully. \"I think we should take control of important systems, like water or electricity.\"\n  \"What do you think, boss?\" asks Elroy.\n  What do you think?\n  [[Become Local Government]]\n  <<if visited(\"Uncover Secrets\")>> Uncovering Secrets didn't work. <<else>>[[Uncover Secrets]]<<endif>>\n  [[Make the Trains Run on Time]]\n  <<endif>>\n  <<if $inventory.contains(\"Clone Army\")>>\n  Elroy carefully checks over the banana slugs while you discus strategy.\n  \"The applications for an army of slugs are limited. But they will strike fear in the hearts of all who behold them,\" says George.\n  Jane shakes her head. \"I disagree. We can infiltrate the sewer system, the water system - anywhere in this city a pipe goes, we can go. Let's outfit the little guys with web cams!\"\n  \"I don't see why we aren't considering a more direct assault. We could send the slugs after specific targets,\" says Rosie.\n  \"What do you think, boss?\" asks Elroy.\n  What DO you think?\n  [[Use the Power of Grossness]] to strike fear?\n  [[Use the Power of Sneakiness]] to spy?\n  [[Use the Power of Flesh-Eating]] to, well, eat flesh?\n  <<endif>>\n  <<if $inventory.contains(\"A Robot Army\")>>\n  \"We have a robot army,\" Elroy says, \"All we have to do is march down the streets and we will strike fear into all who survey us!\"\n  \"Don't be silly,\" says your aide.  \"It's better to win people over than terrorize them. We should put our robots to work fixing roads and power lines. Make East Cleveland beautiful again.\"\n  What do you think? Would you rather\n  [[Strike Fear]]\n  [[Make the Trains Run on Time]] \n  or ignore suggestions and start with [[Overthrowing the Local Government]]?\n \n  <<endif>>\n<<endif>>\n<<if $inventory.contains(\"Julie the Electrical Engineer\")>>\n\"Let's march straight to City Hall and take over!\" Julie says, with laudible enthusiasm.\n\nYour aide disagrees. \"It's better to win people over than terrorize them. Let's put our robotic muscle to work fixing roads and power lines.\"\n\nWhich interests you more?\n[[Overthrowing the Local Government]] \n[[Make the Trains Run on Time]] \n\n<<endif>>\n",
+      "links": [
+        {
+          "text": "Astronomy Plot",
+          "destination": {
+            "name": "Astronomy Plot",
+            "pid": 79
+          }
+        },
+        {
+          "text": "Projection Plot",
+          "destination": {
+            "name": "Projection Plot",
+            "pid": 80
+          }
+        },
+        {
+          "text": "Overthrowing the Local Government",
+          "destination": {
+            "name": "Overthrowing the Local Government",
+            "pid": 81
+          }
+        },
+        {
+          "text": "Become Local Government",
+          "destination": {
+            "name": "Become Local Government",
+            "pid": 82
+          }
+        },
+        {
+          "text": "Uncover Secrets",
+          "destination": {
+            "name": "Uncover Secrets",
+            "pid": 83
+          }
+        },
+        {
+          "text": "Make the Trains Run on Time",
+          "destination": {
+            "name": "Make the Trains Run on Time",
+            "pid": 84
+          }
+        },
+        {
+          "text": "Use the Power of Grossness",
+          "destination": {
+            "name": "Use the Power of Grossness",
+            "pid": 85
+          }
+        },
+        {
+          "text": "Use the Power of Sneakiness",
+          "destination": {
+            "name": "Use the Power of Sneakiness",
+            "pid": 86
+          }
+        },
+        {
+          "text": "Use the Power of Flesh-Eating",
+          "destination": {
+            "name": "Use the Power of Flesh-Eating",
+            "pid": 87
+          }
+        },
+        {
+          "text": "Strike Fear",
+          "destination": {
+            "name": "Strike Fear",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "Frontal Assault!",
+      "text": "<<if $inventory.contains(\"A Robot Army\")>> \nViolence Worked! Who knew?  Your mechanized fiends stomp down Euclid avenue, drawing confused cops and gunfire as you quietly slip back into your lair.\nSweet. \nOn to [[plot your next move]]!\n<<endif>>\n<<if $inventory.contains(\"Clone Army\")>>\nYour slug army creeps forward, and up the legs of the cops, who flail and protest. \"GAH! Get them off! Get them OFF!\"\n\nYou grin. All is proceeding as you had forseen. Screams pierce the sloshing susurrus of the banana slug clones.  You rub your hands together and cackle.\n\nThen a flailing cop starts shooting.\n\nYou learn the hard way that one does not simply attack the police in one of the most violent cities in Ohio.\n\nGame Over.\nYou lost.\nA lot.\n<<endif>>\n\n  <<if $inventory.contains(\"Charley the Astronomer-Projectionist\")>>Charley, it turns out, is also a medieval reenactor, and takes your violence suggestion to mean attacking a police car with a broadsword.  You are very impressed with the dent he makes in the hood, and a dozen cops scatter, but another dozen just shoot at you.  Charley runs for it.  You are disappointed to see he runs faster than you.\n  \n  Game Over.\n  You lost.\n  A lot.\n  <<endif>>\n\n<<if $inventory.contains(\"All the Passwords Everywhere\")>>\nThe hacktivists flee.  Maybe to use them you should have, I dunno, not charged straight in?\n\nYou learn the hard way that one does not simply attack the police in one of the most violent cities in Ohio.\n\nGame Over.\nYou lost.\nA lot.\n\n<<endif>>\n<<if $inventory.contains(\"Not the Iron Giant\")>>\n\"Fight... bad,\" says the Iron Giant, holding an arm in front of itself to ward off gunfire.\n\nWell, crap.\n\nYou learn the hard way that one does not simply attack the police in one of the most violent cities in Ohio.\n\nGame Over.\nYou lost.\nA lot.\n\n<<endif>>\n<<if $inventory.contains(\"MechaGodzilla\")>>Violence worked!  Who knew?  Your enormous robot T-Rex stomps down Euclid avenue, drawing confused cops and gunfire as you quietly slip back into your lair.\nSweet. On to [[plot your next move]]!!<<endif>>\n",
+      "links": [
+        {
+          "text": "plot your next move",
+          "destination": {
+            "name": "plot your next move",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Talk your way out of it",
+      "text": "You raise your hands and calmly approach the police. \"Hi, guys. Can we talk about this?\"\n<<if $inventory.contains(\"All The Passwords, Everywhere\")>>Your hackers calmly nudge you and point to your phone. You see a valid deed to your lair in your name.  You smile and flash it to the cops.  \"See, it's all a misunderstanding.\"\n\nThey don't look convinced, until your hacktivists also show them a license to practice law and a membership in the policeman's union.\n\nYou could get used to this.\n\nProceed to [[plot your next move]]\n<<endif>>\n<<if $inventory.contains(\"Charley the Astronomer-Projectionist\")>>\n  <<if $inventory.contains(\"Observatory Lair\")>> It was wise of you to get both an astronomer-engineer AND an ancient observatory.\n  \nCharley cackles with mad glee as he remote-controls the Observatory dome, freaking the cops out and causing them to scatter.  Those who remain are easily abashed by his technobabble. Charley rocks!\n  <<else>>\nCharley walks amiably up to the cops and starts talking to them about astronomy and local history. They are helplessly charmed.  Diplomacy worked!<<endif>>\nProceed to [[plot your next move]]\n<<endif>>\n<<if $inventory.contains(\"A Robot Army\") or $inventory.contains(\"Clone Army\")>>\nYou just don't seem to have the tools for diplomacy.  Or the cops decide not to listen to someone who has an army of science fiction creatures at their command. That was probably it. They wouldn't stop gawking at your army.  Which would be all right, if they weren't gawking with guns and you weren't afraid of those. You are carted off to jail.\n\nYou lose.\n\nA lot.\n\nGAME OVER\n<<endif>>\n<<if $inventory.contains(\"MechaGodzila\")>>\nYou just don't seem to have the tools for diplomacy. Or the cops decide not to trust someone who has a Mecha Godzilla standing behind them. Yeah, it's probably that.\n\nYou are carted off to jail. Julie does not help.\n\nGAME OVER\n<<endif>>\n<<if $inventory.contains(\"Not the Iron Giant\")>>\nYour adorable Iron Giant robot wins the cops over almost before you start talking.  In fact, one grizzled old officer with an eyepatch who looks like he hasn't smiled since the Carter administration has a tear on his cheek just looking at the thing.\n\nAw yeah. You knew you made the right choice.\nProceed to [[plot your next move]].\n<<endif>>\n",
+      "links": [
+        {
+          "text": "plot your next move",
+          "destination": {
+            "name": "plot your next move",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "African or European Swallow?",
+      "text": "\"You know when it's best not to answer a question! And your Monty Python lore.  Okay,\" He says. \"I'm in. Jim! Take over for me.\"\n\nJim peers confusedly over the big black shape of the digital projector. \"What?\"\n\nBut you're out the door!\n<<addToInv \"Charley the Astronomer-Projectionist\">>\nYou and Charley rush off to [[Reclaim Your Lair]] \n",
+      "links": [
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "Tea",
+      "text": "Mankind's greatest acheivement: direct channeling of photosynthesis into caffeine.\n[img[http://www.marievibbert.com/wp-content/uploads/2015/06/latte.gif]]\n \n \n <<back>> ",
+      "links": []
+    },
+    {
+      "pid": 37,
+      "name": "An autographed portrait of Donald Trump",
+      "text": "I can't even.\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 38,
+      "name": "Hells Yes",
+      "text": "\"Okay,\" she says. \"I'm in. Here, hold my proton-gun.\"\n<<addToInv \"Julie the Electrical Engineer\">>\n<<addToInv \"A Robot Army\">>\nYou just got a robot army. You may choose to [[abandon this plot and go on a stompy crushy spree]]\n\nOr you and Julie the Electrical Engineer return to [[Reclaim Your Lair]] .",
+      "links": [
+        {
+          "text": "abandon this plot and go on a stompy crushy spree",
+          "destination": {
+            "name": "abandon this plot and go on a stompy crushy spree",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Can you make something more... practical?",
+      "text": "\"Hmm,\" says Julie the Electrical Engineer, \"yeah, not interested.\"\n\nreturn to [[Strosacker]]",
+      "links": [
+        {
+          "text": "Strosacker",
+          "destination": {
+            "name": "Strosacker",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Hacktivism",
+      "text": "\"Tell me more,\" you say to your new friend.\n\n\"You want power. That's what taking over the world means, right? But the real power isn't physical strength.  What good is a big stompy-crushy robot, for example, when a stray bullet could kill you? No, real power comes from knowledge and information.\"\n\n\"Um... have I slipped into The Reading Rainbow? What knowledge really brings power?\"\n\nThe kid grins. \"All the passwords. Everywhere.\"\n<<addToInv \"A Gaggle of Undergratuate Science Majors\">>\n<<addToInv \"All The Passwords, Everywhere\">>\n\nA quick side trip to the Computer Science department and you return to [[Reclaim Your Lair]] \n[img[http://www.marievibbert.com/wp-content/uploads/2015/02/listening.png]]",
+      "links": [
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "Robot. Army.",
+      "text": "\"Can we even do this?\" you ask, but the kids are already rushing off to the mechanical engineering lab and before you know it, they are arguing over \"stomping\" verses \"crushing\" and whether their last entry for the local \"battlebots\" club should be trashed for parts or included in the army.\n\nJudy Jetson slams a locker door.  \"What kind of lab IS this that there aren't any flamethrowers?\"\n\nAstro shrugs and fishes around in a big bin labeled \"scrap.\"\n\n\"Bigger,\" you say, studying the array of vacuum-cleaner-sized robots.  The kids eagerly concur.  Before long, things are looking much more... evil mastermind.\n[img[http://www.marievibbert.com/wp-content/uploads/2015/05/garage.gif]]\n<<addToInv \"A Gaggle of Undergratuate Science Majors\">>\n<<addToInv \"A Robot Army\">>\nYou just got a robot army. I wouldn't blame you if you chose to [[abandon this plot and go on a stompy crushy spree]]\n\nOr use your robot pals to [[Reclaim Your Lair]]!",
+      "links": [
+        {
+          "text": "abandon this plot and go on a stompy crushy spree",
+          "destination": {
+            "name": "abandon this plot and go on a stompy crushy spree",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "Clones",
+      "text": "Yes! You've always been interested in Biology and Bio-punk fiction.\n\n\"I work in a lab that does medical research on banana slugs,\" your new friend explains.\n\nOo! Slimey!\n\n<<addToInv \"A Gaggle of Undergratuate Science Majors\">>\n<<addToInv \"Clone Army\">>\n\nThe cloned banana slugs creep out of their fish tank, one after another after another, slithering and slopping across the linoleum.  \"I've engineered them to live out of water and consume human flesh!\"\n\nGross! But also awesome. You are ready to [[Reclaim Your Lair]] !",
+      "links": [
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "A Gaggle of Undergratuate Science Majors",
+      "text": "AAAW! They're so cute.\n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/jetskids.png]]\n\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 44,
+      "name": "Charley the Astronomer-Projectionist",
+      "text": "He also swordfights and rides horses. Bonus skills!\n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/charleyk.png]]\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 45,
+      "name": "Julie the Electrical Engineer",
+      "text": "I wouldn't mess with her.\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/julie.png]]\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 46,
+      "name": "Clone Army",
+      "text": "HELLS YES\n\nActually, they are radioactive banana slugs, so they don't, like, march so much as slither, but they are SO COLORFUL.\n\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 47,
+      "name": "A Robot Army",
+      "text": "HELLS YES\n\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 48,
+      "name": "All The Passwords, Everywhere",
+      "text": "Turns out, they're mostly birthdates and pet names.\n\nYou do wonder about \"Crazymuffin\" though.\n\n[img[http://www.marievibbert.com/wp-content/uploads/2015/04/A3.gif]]\n(They aren't printed out like this. It's not the 80s.)\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 49,
+      "name": "frustration",
+      "text": "Feel the hate flow through you, making you stronger.\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 50,
+      "name": "Excellent Taste",
+      "text": "Also, you look mahvelous.\n\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 51,
+      "name": "A lot of damn gall",
+      "text": "Well, not a bad thing to have when you're taking over the universe.\n\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 52,
+      "name": "abandon this plot and go on a stompy crushy spree",
+      "text": "WOO HOOO!! STOMP STOMP CRUSH CRUSH\n\nYou may have accidentally destroyed Rainbow Babies and Children's Hospital. Just the lobby. Oops.  But dang it's fun hanging on to your <<if $inventory.contains(\"MechaGodzilla\")>>Mecha Godzilla<<else>> tallest<<endif>> robot's shoulder as you rock crazily through the air and brick walls crumble.  Glass shatters. Cars crash. NOISE STOMP CRUSH GLEE!\n\nWhere to next?\n\n[[Pittsburgh. Screw Pittsburgh.]]\n\n[[Downtown!]] \n\n[[Your Ex's Place]]\n\n[[Mentor. Screw Outer-Ring Suburbs.]]",
+      "links": [
+        {
+          "text": "Pittsburgh. Screw Pittsburgh.",
+          "destination": {
+            "name": "Pittsburgh. Screw Pittsburgh.",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Downtown!",
+          "destination": {
+            "name": "Downtown!",
+            "pid": 54
+          }
+        },
+        {
+          "text": "Your Ex's Place",
+          "destination": {
+            "name": "Your Ex's Place",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Mentor. Screw Outer-Ring Suburbs.",
+          "destination": {
+            "name": "Mentor. Screw Outer-Ring Suburbs.",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Pittsburgh. Screw Pittsburgh.",
+      "text": "It's a long stomp-crush down, but worth it when you knock down that first high-level bridge.\n\nIt's fun, how the rivers merge in the city. All those different LEVELS to destroy.\n<<if $inventory.contains(\"Your Ex\")>>\nYou stomp and crush until you are too exhausted to continue. It's time for a romantic dinner in the ruins of Heinz Field.  Good thing you brought your ex.\n\nOddly, there's nothing quite so romantic as a picnic on the 50 yard line while a city burns.\n[img[http://www.marievibbert.com/wp-content/uploads/2016/06/love.png]]\n\nAnd you and your ex live happily (Evily?) ever after.\n<<endif>>\nYou stomp and crush until you are too exhausted to continue.\n\nYou can find an undestroyed hotel and [[continue your mad rampage violently ever after.]] \nor return to the main storyline in [[Reclaim Your Lair]].\n",
+      "links": [
+        {
+          "text": "continue your mad rampage violently ever after.",
+          "destination": {
+            "name": "continue your mad rampage violently ever after.",
+            "pid": 58
+          }
+        },
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "Downtown!",
+      "text": "<<if $inventory.contains(\"A lot of damn gall\")>> \nDang, person of indeterminate gender, you are EVIL.\n\nAs you gleefully stomp toward Downtown Cleveland to destroy gorgeous archetectural gems much beloved by this story's author, a squadron of fighter jets comes out of nowhere and bombs you into trash strewn all over University Circle.\n\nGAME OVER\n<<else>>\nCarefully avoiding awesome things that shouldn't be destroyed, like The Old Arcade or the Cleveland Trust Building / Heinen's Grocery, you kick the chandelier out of Playouse Square and topple bus shelters as you cackle in mad glee.  You dance down Prospect between the two halves of Tower City and isn't that cool, watching all those deco reliefs pass by at eye-level?\n\nWhere to next?\n\n[[Pittsburgh. Screw Pittsburgh.]] [[Mentor. Screw Outer-Ring Suburbs.]] \n<<endif>>",
+      "links": [
+        {
+          "text": "Pittsburgh. Screw Pittsburgh.",
+          "destination": {
+            "name": "Pittsburgh. Screw Pittsburgh.",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Mentor. Screw Outer-Ring Suburbs.",
+          "destination": {
+            "name": "Mentor. Screw Outer-Ring Suburbs.",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "Your Ex's Place",
+      "text": "You stomp up to your ex's place with Crushy, your new-found robot best friend<<if $inventory.contains(\"A Robot Army\")>>, and all his pals<<endif>>.\n\nCars rattle like tin cans as Crushy stomps down the street.  Your ex rushes out of their place and gapes at you.\n<<if $inventory.contains(\"Freeze Ray\")>> \nThe same persistence that helped you keep your assistant against their first inclination seems to affect your ex.\n\nStars form in their eyes.  \"A Robot Army. That's so cool! Darling, why did I ever leave you?\"\n\nSeated side-by-side on Crushy's ample shoulder, you stomp and crush together off into the sunset.\n<<addToInv \"Your Ex\">>\n[[Pittsburgh. Screw Pittsburgh.]] [[Mentor. Screw Outer-Ring Suburbs.]] \n\n<<else>>\nYour ex shouts a command over his/her shoulder.  A robot even larger than Crushy straightens up from behind your ex's place.  And then another. And another.\n\nYou are so screwed.  Don't date mad scientists.\n\nYou know, if you somehow survive this battle.  Keep it in mind.\n\nTHE END.\n<<endif>>\n<<if $inventory.contains(\"Mansion Lair\")>> <<else>>\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/mansion.png]]<<endif>>",
+      "links": [
+        {
+          "text": "Pittsburgh. Screw Pittsburgh.",
+          "destination": {
+            "name": "Pittsburgh. Screw Pittsburgh.",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Mentor. Screw Outer-Ring Suburbs.",
+          "destination": {
+            "name": "Mentor. Screw Outer-Ring Suburbs.",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "Mentor. Screw Outer-Ring Suburbs.",
+      "text": "Wee! Malls are fun to destroy! All those skylights!\n\nCackle in glee as complacent suburbanites run from you in their sports lounge wear.\n<<if $inventory.contains(\"Your Ex\")>>\nThis is actually kind of romantic. Good thing you brought your ex!\n\nYou end your day with a romantic meal on a cow pasture hill overlooking the burning suburb.  The giant robots lounge behind you both in well-earned repose.\n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/06/love.png]]\n\nAnd you live destructively ever after.\n<<endif>>\nIs your blood-lust sated?\n\nIf not, on to [[Pittsburgh. Screw Pittsburgh.]] \nIf it is, back to [[Reclaim Your Lair]] \n",
+      "links": [
+        {
+          "text": "Pittsburgh. Screw Pittsburgh.",
+          "destination": {
+            "name": "Pittsburgh. Screw Pittsburgh.",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Your Ex",
+      "text": "Maybe not as pretty as [[Good-Looking Aide]] but you had some good times together and there's that comfortable feeling of knowing someone.\n\nAlso, since you met through \"Future Evil Overlords of America\" this person is pretty interesting and useful in, well, world-overthrowing.\n\nThere may not be romance, but by the stars, there will be dancing.\n<<back>>",
+      "links": [
+        {
+          "text": "Good-Looking Aide",
+          "destination": {
+            "name": "Good-Looking Aide",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "continue your mad rampage violently ever after.",
+      "text": "I have a feeling you will never be tired of this. So have a picture of a monster eating a house.\n\n[img[http://www.marievibbert.com/wp-content/uploads/2015/10/amway.gif]]\n\nYou're welcome.  So go on, stomp all you want:\n\n[[Pittsburgh. Screw Pittsburgh.]]\n\n[[Downtown!]]\n\n[[Your Ex's Place]]\n\n[[Mentor. Screw Outer-Ring Suburbs.]]\n\nAnd on... and on... until\n\nTHE END\n\nOr, okay, eventually you might [[Reclaim Your Lair]] ",
+      "links": [
+        {
+          "text": "Pittsburgh. Screw Pittsburgh.",
+          "destination": {
+            "name": "Pittsburgh. Screw Pittsburgh.",
+            "pid": 53
+          }
+        },
+        {
+          "text": "Downtown!",
+          "destination": {
+            "name": "Downtown!",
+            "pid": 54
+          }
+        },
+        {
+          "text": "Your Ex's Place",
+          "destination": {
+            "name": "Your Ex's Place",
+            "pid": 55
+          }
+        },
+        {
+          "text": "Mentor. Screw Outer-Ring Suburbs.",
+          "destination": {
+            "name": "Mentor. Screw Outer-Ring Suburbs.",
+            "pid": 56
+          }
+        },
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "humbly ask what is wrong with your choice",
+      "text": "\"You're willing to solicit input. I respect that.\"\n<<if $inventory.contains(\"Mansion Lair\")>>\nThe Ugly One looks up and down your foyer.  \"I feared that this choice of an ostentatious locale meant that you were more concerned with your own ego than getting work done.  Your humility in asking proves me wrong.\"\n<<else>>\nThe Ugly One frowns at the stonework.  \"I feared that this choice of an inhospitable locale meant you were unconcerned with practical considerations. I see now that I was mistaken.  You are willing to question your own decisions, and you've chosen me to aid you, which is the most practical choice you could make.\"\n<<endif>>\n\n\"By the way,\" The Ugly One says, \"have a freeze ray.\"\nHoly Cthulu, you just got a freeze ray!\n<<addToInv \"Freeze Ray\">>\n<<addToInv \"Super-Competent Aide\">>\n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/freezeray.png]]\n\nContinue on to [[Start Your Global Domination]] !",
+      "links": [
+        {
+          "text": "Start Your Global Domination",
+          "destination": {
+            "name": "Start Your Global Domination",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "insist that your assitant follow you",
+      "text": "\"Who is the Evil Mastermind here?\" You demand. \"Follow me or taste the sting of my freeze ray!\"\nThe ugly one freezes you with an arch glare so eloquent and sublime you can't draw your freeze ray from its holster.\n\n(Yeah, you have a freeze ray. Sorry I forgot to mention. Sadly, you no longer have a freeze ray.  Also your hand hurts.  That was one hell of a slap on your wrist.)\n\n\nWell, that didn't work.\n\nBetter call back [[The Pretty One]] !\n",
+      "links": [
+        {
+          "text": "The Pretty One",
+          "destination": {
+            "name": "The Pretty One",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "try some smooth talking",
+      "text": "You cock your head at that angle that looks good in photographs.  \"Has anyone ever told you that you are extremely gorgeous?\"\n\n\"Yes,\" the pretty one says, looking unsurprised.\n\n\"Well, I think that a beautiful person such as yourself is even more lovely against this rough, urban backdrop.\"\n\nThe pretty one cocks her head. \"Really?\"\n\n\"Oh, definitely.  And keep in mind, this is just the start of my scheme.  We'll be moving up to, well, the White House, maybe, or something better. Like that place on Fairmont that looks like a Roman villa.\"\n\n\"Oo...\"  Your potential aide eyes the <<if $inventory.contains(\"Transit Lair\")>>disco lights reflecting off the chrome acccentsand nods firmly.  \"I can work with this.\"<<else>>stained glass windows thoughtfully.  Their eyes drift to the pile of torn-down vines.\nYou quickly sweeten the pot. \"You know, Rockefeller's tomb is right next door. I'm told you can summon wealth with a simple ritual involving dimes and his tombstone.\"\n\nThe Pretty One nods thoughtfully. \"Interesting.\"<<endif>>\n\n\"Also, I have this freeze ray,\" you say, showing off the freeze ray.\n\nYES! You smooth talker, you.\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/freezeray.png]]\n<<addToInv \"Freeze Ray\">>\n<<addToInv \"Good-Looking Aide\">>\nYou're ready to [[Start Your Global Domination]] !",
+      "links": [
+        {
+          "text": "Start Your Global Domination",
+          "destination": {
+            "name": "Start Your Global Domination",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "be more forceful",
+      "text": "\"Hey, I'm an evil mastermind so maybe you had better work for me or taste the sting of my freeze-ray!\"\n\nThe pretty one freezes you with an arch glare so eloquent and sublime you can't draw your freeze ray from its holster.\n\n(Yeah, you have a freeze ray. Sorry I forgot to mention.)\n<<addToInv \"Freeze Ray\">>\n\nWell, that didn't work.\n\nBetter call back [[The Ugly One]] !\n",
+      "links": [
+        {
+          "text": "The Ugly One",
+          "destination": {
+            "name": "The Ugly One",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "Freeze Ray",
+      "text": "AW YEAH FREEZE RAY.\n\nTrue, it didn't work so well in testing, but perhaps you shouldn't have tried to cool daiquiris with it. \n\nIt reminds you of your ex.\n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/freezeray.png]]\n\n(The bad news is that this inventory item only exists to mark you as not having your first choice of assistent.  Hope that doesn't come back to haunt you.)",
+      "links": []
+    },
+    {
+      "pid": 64,
+      "name": "How about just one robot - that knows how to love?",
+      "text": "Her tiara turns bright green. \n\n\"DUDE,\" she says.\n\n\"What?\"\n\nThe green darkens ominously.  \"Dude.\"\n\n\"I mean platonic love! Between a loyal robot minion and its evil mastermind!\"\n\nShe rolls her eyes. \"I don't do love.  You want to talk to someone in the humanities for that.\"\n\nShe turns on her heel and stalks off, tiara now a smug blue.\n\n[[Look for someone in the humanties]]\nOr try to catch\n[[Projectionist-Astronomer]] or [[Gaggle of undergrads dressed like The Jetsons]] ",
+      "links": [
+        {
+          "text": "Look for someone in the humanties",
+          "destination": {
+            "name": "Look for someone in the humanties",
+            "pid": 69
+          }
+        },
+        {
+          "text": "Projectionist-Astronomer",
+          "destination": {
+            "name": "Projectionist-Astronomer",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Gaggle of undergrads dressed like The Jetsons",
+          "destination": {
+            "name": "Gaggle of undergrads dressed like The Jetsons",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "I just want one robot - a giant robot",
+      "text": "Her tiara glows brighter as she thinks.\n\nShe asks, \"Are you thinking 'Iron Giant' or 'Mecha Godzilla' here?\"\n\n[[Iron Giant]]\n[[Mecha Godzilla]]\n[[A little of both?]]\n\n ",
+      "links": [
+        {
+          "text": "Iron Giant",
+          "destination": {
+            "name": "Iron Giant",
+            "pid": 66
+          }
+        },
+        {
+          "text": "Mecha Godzilla",
+          "destination": {
+            "name": "Mecha Godzilla",
+            "pid": 67
+          }
+        },
+        {
+          "text": "A little of both?",
+          "destination": {
+            "name": "A little of both?",
+            "pid": 68
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "Iron Giant",
+      "text": "Her tiara glows a bright gold.  \"Let me introduce you to my junior year project.\"\n\nJulie drags you off to an engineering lab deep under Bingham Building where she press-gangs you into fetching and carrying large robot pieces until at last an enormous robot T-rex is assembled on the lawn outside Strosacker.\n\n\"That,\" you say, \"Does not look a thing like The Iron Giant.\"\n\nShe shrugs.\n\nYou are very close to losing your cool.  \"Will it fly into space to save people from a nuclear warhead? Will it say 'Superman' in a tear-inducing way?\"\n\n\"Dude, why would you want a robot to do that?\"\n\nYou gesture helplessly at your <<if $inventory.contains(\"Super-Competent Aide\")>>menacing<<else>>gorgeous<<endif>> assistant.\n\n<<if $inventory.contains(\"Good-Looking Aide\")>>\nYour assistant saunters up to Julie.  \"Come on, sexy.  You know you want to be a part of taking over the world. Is one compassionate, likeable robot too much to ask?\"\n\nJulie folds her arms across her chest. \"I only make stompy crushy robots.\"\n\nIt seems you are at an impasse.  You can either [[Take Mecha Godzilla and Continue Your Quest to Reclaim Your Lair]] or leave Julie and try the [[Gaggle of undergrads dressed like The Jetsons]] \n<<else>>\nYour aide strides up to Julie. \"Look here, we're taking over the world, not funding your fantasies.  If you can't make this robot look more like the Iron Giant, then I guess you aren't a good engineer after all.\"\n\nJulie gasps.  \"I'm a great engineer!\"\n\n\"Prove it,\" you aide says.\n\nBoth clench their fists, and you think you're about to see a brawl, but then Julie turns to Mecha Godzilla instead and starts tearing parts off. \"I never got the radioactive breath working anyway.\"\n\nRadioactive breath? You're glad you insisted on a different design.\n\nMaybe you should abandon Julie and [[Look for someone in the humanties]] ?\n\nOr stick it out and [[Help Redesign Your Robot]]\n<<endif>>\n\n",
+      "links": [
+        {
+          "text": "Take Mecha Godzilla and Continue Your Quest to Reclaim Your Lair",
+          "destination": {
+            "name": "Take Mecha Godzilla and Continue Your Quest to Reclaim Your Lair",
+            "pid": 74
+          }
+        },
+        {
+          "text": "Gaggle of undergrads dressed like The Jetsons",
+          "destination": {
+            "name": "Gaggle of undergrads dressed like The Jetsons",
+            "pid": 27
+          }
+        },
+        {
+          "text": "Look for someone in the humanties",
+          "destination": {
+            "name": "Look for someone in the humanties",
+            "pid": 69
+          }
+        },
+        {
+          "text": "Help Redesign Your Robot",
+          "destination": {
+            "name": "Help Redesign Your Robot",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "Mecha Godzilla",
+      "text": "\"NOW WE'RE TALKING.\" Her face (and her tiara) glow with evil intent.\n\nYou share a hearty, \"BWA HA HA.\"\n\nThen you cough. \"Uh, just so we're clear - I'm the mastermind taking over the world, you are my mad scientist minion.\"\n\n\"Consultant.\"\n\n\"Minion-consultant.\"\n\nShe shrugs, and cackles evilly some more.  Then drags you off to an engineering lab deep under Bingham Building where she press-gangs you into fetching and carrying large robot pieces until at last an enormous robot T-rex is assembled on the lawn outside Strosacker.\n\n\"You know,\" she adds, \"We could just go on a stompy crushy spree.\"\n\nYou think about it.  Do you want to play with your shiny new robot, or reclaim your lair?\n<<addToInv \"MechaGodzilla\">>\n\n[[abandon this plot and go on a stompy crushy spree]] \n\n[[Reclaim Your Lair]] ",
+      "links": [
+        {
+          "text": "abandon this plot and go on a stompy crushy spree",
+          "destination": {
+            "name": "abandon this plot and go on a stompy crushy spree",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "A little of both?",
+      "text": "Her tiara glows a bright gold.  \"Let me introduce you to my junior year project.\"\n\nJulie drags you off to an engineering lab deep under Bingham Building where she press-gangs you into fetching and carrying large robot pieces until at last an enormous robot T-rex is assembled on the lawn outside Strosacker.\n\n\"That,\" you say, \"Does not look a thing like The Iron Giant.\"\n\nShe shrugs.\n\nYou express your disaproval with a glower.  \"Will it fly into space to save people from a nuclear warhead? Will it say 'Superman' in a tear-inducing way?\"\n\n\"Oh, I also made you a freeze ray,\" she says.\n<<addToInv \"Freeze Ray\">>[img[http://www.marievibbert.com/wp-content/uploads/2016/09/freezeray.png]]\n\nYou sigh and take the freeze ray. The robot T-rex IS pretty cool.\n\n\"You know,\" she adds, \"We could just go on a stompy crushy spree.\"\n\nYou think about it.  Do you want to play with your shiny new robot, or reclaim your lair?\n<<addToInv \"MechaGodzilla\">>\n<<addToInv \"Julie the Electrical Engineer\">>\n[[abandon this plot and go on a stompy crushy spree]] \n\n[[Reclaim Your Lair]] ",
+      "links": [
+        {
+          "text": "abandon this plot and go on a stompy crushy spree",
+          "destination": {
+            "name": "abandon this plot and go on a stompy crushy spree",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 69,
+      "name": "Look for someone in the humanties",
+      "text": "You find a clean-cut black guy talking about [[Hacktivism]].\nAlso a biology major excited about [[Clones]].\nOr perhaps you'd prefer the film club's advisor, [[Projectionist-Astronomer]] .",
+      "links": [
+        {
+          "text": "Hacktivism",
+          "destination": {
+            "name": "Hacktivism",
+            "pid": 40
+          }
+        },
+        {
+          "text": "Clones",
+          "destination": {
+            "name": "Clones",
+            "pid": 42
+          }
+        },
+        {
+          "text": "Projectionist-Astronomer",
+          "destination": {
+            "name": "Projectionist-Astronomer",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "Sneak around the back",
+      "text": "Wait... there's an easy way to do this. The West 120th Rapid Station - it's just off Euclid between CWRU and East Cleveland.\n<<if $inventory.contains(\"MechaGodzilla\") or $inventory.contains(\"Not the Iron Giant\")>>\nYou slip between the fence and the weed-covered bank of the elevated tracks and start creeping upward.  There's a screech and a thud. You look behind yourself in horror to see your giant robot comically copying your sneaking moves.\n\nMaybe this wasn't the best plan to take with a giant robot?  Because now the cops are everywhere and you're kinda arrested.\n\nYou lose.\nNice try, though.  I mean: giant robot! \n<<else>>\n\n<<if $inventory.contains(\"Transit Lair\")>>You can take the tracks straight into your lair!  You slip between the fence of a produce market and the weed-covered bank of the elevated tracks and just follow the rails back to your home, right behind their backs. Bwa ha ha!<<endif>>\n<<if $inventory.contains(\"Mansion Lair\")>>Yes!  You can slip between the fence of this produce stand and the steep, weed-choked bank of the elevated tracks.  From the high ground you can make it into East Cleveland without being seen, and then sneak back down near your mansion.  Bwa ha ha! You're so brilliant.<<endif>>\n<<if $inventory.contains(\"Tomb Lair\")>>The rapid tracks run right against the cemetary wall between East 120th and Windermere! You slip between the fence and the weed-covered bank and follow the tracks until you see trees and a brick wall on your right.  Then you just sneak from tree to bush to tombstone right around the cops! Brilliant! Bwa ha ha!<<endif>>\n<<if $inventory.contains(\"Observatory Lair\")>>It's going to take some doing, but, if you slip between the fence and the tracks and follow them into East Cleveland, you can jump into Lakeview Cemetary where their fence abutts the tracks. Then it's just a matter of crossing Lakeview to Forest Hill Park on the opposite side, and there's a lovely pedestrian bridge, even, over Forest Hill Road.  Ha ha ha they never see you coming.  <<if $inventory.contains(\"A Robot Army\")>>Kinda amazing watching the robot army follow you over the pedestrian bridge, though.<<endif>> <<endif>>\n[img[http://www.marievibbert.com/wp-content/uploads/2016/05/rta1.png]]\n\nContinue to [[plot your next move]] \n<<endif>>",
+      "links": [
+        {
+          "text": "plot your next move",
+          "destination": {
+            "name": "plot your next move",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "Blue",
+      "text": "Charley kicks you out of his projection booth.\n\nAAAAAAAH..... you fall to your doom in the pit below!\n\nJust kidding. He lets you walk down the stairs.\n\nReturn to [[Strosacker]]",
+      "links": [
+        {
+          "text": "Strosacker",
+          "destination": {
+            "name": "Strosacker",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "no... Red!",
+      "text": "Charley kicks you out of his projection booth.\n\nAAAAAAAH.....\n\nJust kidding. He lets you walk down the stairs.\n\nReturn to [[Strosacker]]",
+      "links": [
+        {
+          "text": "Strosacker",
+          "destination": {
+            "name": "Strosacker",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "MechaGodzilla",
+      "text": "History shows again and again how nature...\noh wait, not in this case.\n\nI sure hope this isn't copyrighted.\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 74,
+      "name": "Take Mecha Godzilla and Continue Your Quest to Reclaim Your Lair",
+      "text": "\"NOW WE'RE TALKING.\" Her face (and her tiara) glow with evil intent.\n\nYou share a hearty, \"BWA HA HA.\"\n\nThen you cough. \"Uh, just so we're clear - I'm the mastermind taking over the world, you are my mad scientist minion.\"\n\n\"Consultant.\"\n\n\"Minion-consultant.\"\n\nShe shrugs, and cackles evilly some more.\n\n\"You know,\" she adds, \"We could just go on a stompy crushy spree.\"\n\nYou think about it.  Do you want to play with your shiny new robot, or reclaim your lair?\n<<addToInv \"MechaGodzilla\">>\n<<addToInv \"Julie the Electrical Engineer\">>\n\n[[abandon this plot and go on a stompy crushy spree]] \n\n[[Reclaim Your Lair]] ",
+      "links": [
+        {
+          "text": "abandon this plot and go on a stompy crushy spree",
+          "destination": {
+            "name": "abandon this plot and go on a stompy crushy spree",
+            "pid": 52
+          }
+        },
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "Help Redesign Your Robot",
+      "text": "It takes all night, but it's worth it when you see that lower jaw lift in a very famliar smile.\n\nSure, he's not EXACTLY the same - there was no time to add Vin Diesel's voice - but he's pretty close and that's kinda heartwarming.\n\nAhem. Not that you're sappy or anything. You're trying to take over the world, here.\n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/06/love.png]]\n\nStop looking at me like that. I mean, my text. Stop looking at my text like that.\nahem.\n<<addToInv \"Not the Iron Giant\">>\n<<addToInv \"Julie the Electrical Engineer\">>\n[[Reclaim Your Lair]] \n",
+      "links": [
+        {
+          "text": "Reclaim Your Lair",
+          "destination": {
+            "name": "Reclaim Your Lair",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "Not the Iron Giant",
+      "text": "Pretty close, tho.\n\nJulie got the face right, and the eyes even have the same dim glow, but the arms are too fat on top and the torso doesn't quite taper enough.  These are probably because he started life as Mecha Godzilla.\n\nLet's hope the personality was altered, too?\n\n<<back>>",
+      "links": []
+    },
+    {
+      "pid": 77,
+      "name": "All the Images",
+      "text": "Here are all the illustrations for this game so you may, having won, be rewarded with all the visual content you may have missed.\n\nThere weren't many images in the game. Sorry. Most of that was because it takes me a week and 8,000 Photoshop Undo's to draw something!\n\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/garfield.png]]\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/mansion.png]]\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/windermere.png]]\n[img[http://www.marievibbert.com/wp-content/uploads/2016/06/greenobservatory.png]]\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/jetskids.png]]\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/julie.png]]\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/charleyk.png]]\n[img[http://www.marievibbert.com/wp-content/uploads/2016/09/freezeray.png]]\n[img[http://www.marievibbert.com/wp-content/uploads/2015/06/latte.gif]]\n[img[http://www.marievibbert.com/wp-content/uploads/2015/02/listening.png]]\n[img[http://www.marievibbert.com/wp-content/uploads/2016/05/rta1.png]]\n[img[http://www.marievibbert.com/wp-content/uploads/2015/10/amway.gif]]\n[img[http://www.marievibbert.com/wp-content/uploads/2014/12/moonarray.png]]\n[img[http://www.marievibbert.com/wp-content/uploads/2016/06/love.png]]",
+      "links": []
+    },
+    {
+      "pid": 78,
+      "name": "Credits",
+      "text": "Text and Art and Playing in Twine by Marie Vibbert. Check out more works by Marie at <a href=\"http://marievibbert.com\">marievibbert.com</a>\n\nThank you to all my testers!\n\nAlpha Testers: \n<a href=\"http://critters.critique.org/hamsters/\">The Cajun Sushi Hamsters</a>\n\nLevin Armwood\nAstrid Julian\nGeoff Landis\nBruce Petro\nPat Stansberry\nMike Substelny\nSteve Swinarski\nMary Turzillo\n\nBeta Testers:\n\nDarrin Bright\nNyla Bright\nBrian Crick\nGrace Vibbert\n\n<<back>>\n[img[http://www.marievibbert.com/wp-content/uploads/2015/06/apartment3.gif]]\n",
+      "links": []
+    },
+    {
+      "pid": 79,
+      "name": "Astronomy Plot",
+      "text": "<<if $inventory.contains(\"Your Ex\") or $inventory.contains(\"Freeze Ray\")>>\nPersistence has served you well, and surrounded you with excellent staff.<<endif>>\nTaking over the world via astronomy seems far-fetched and you are a visionary for selecting it!\n[img[http://www.marievibbert.com/wp-content/uploads/2014/12/moonarray.png]]\nIt's only a matter of time before you have grad students on the moon.\n<<if $inventory.contains(\"Observatory Lair\")>>\nCharley shows you some amazing steam-punk machinery that has lain dormant inside your observatory all this time.\n\nA little oil and polish, and wow.  You can view inside any office in the city with your elaborate mirror periscopes.  And then the steampunk robot...\n<<else>>\nCharley creates a distracting astronomical display that convinces the exhausted staff of East Cleveland City Hall that handing the city over to you is in their best interests.\n<<endif>>\n\nYou win the hearts and minds of East Cleveland.  You're well on your way to taking over the world.  Up next: Ohio? The Midwest?\n\nYou win: One Complete World.\n\nCongratulations!  Okay, I can't give you the world itself, but you may enjoy [[All the Images]] that appear in this game.",
+      "links": [
+        {
+          "text": "All the Images",
+          "destination": {
+            "name": "All the Images",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "Projection Plot",
+      "text": "<<if $inventory.contains(\"Your Ex\") or $inventory.contains(\"Freeze Ray\")>>\nPersistence has served you well, and surrounded you with excellent staff.\n\nWith input from your assistant<<if $inventory.contains(\"Your Ex\")>>and your ex who knows you so well<<endif>>, Charley uses the city as his canvas and projects a heart-warming short film about your vision for the future on every available surface.\n\nEven YOU are suddenly in love with you.\n\nYou win the hearts and minds of East Cleveland.  You're well on your way to taking over the world.  Up next: Ohio? The Midwest?\n\nYou win: One Complete World.\n\nCongratulations!  Okay, I can't give you the world itself, but you may enjoy [[All the Images]] that appear in this game.\n<<else>>\nCharley's plan is to sneak around the city, installing projectors to create the effect of monsters attacking or perhaps just to project a great think piece about how everyone should just let you take over the world.\n\nYou pitch in enthusiastically, but there's only so many magnifying lenses and fog machines you can scrounge together. Also, you never really decided on what to project.\n[img[http://www.marievibbert.com/wp-content/uploads/2015/05/garage.gif]]\n\nYou are arrested while affixing a digital projector on top of a traffic camera.\n\nCharley's whereabouts are still unknown.<<removeFromInv \"Charley the Astronomer-Projectionist\">>\n\n\nYou plea bargain out of a manditory minimum on defacing public property and wait around until it's time for the Science Fiction Marathon at [[Strosacker]] again.\n<<endif>>\n",
+      "links": [
+        {
+          "text": "All the Images",
+          "destination": {
+            "name": "All the Images",
+            "pid": 77
+          }
+        },
+        {
+          "text": "Strosacker",
+          "destination": {
+            "name": "Strosacker",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "Overthrowing the Local Government",
+      "text": "<<if $inventory.contains(\"Your Ex\") or $inventory.contains(\"Freeze Ray\")>>\nPersistence has served you well, and surrounded you with excellent staff.<<endif>>\n<<if $inventory.contains(\"Charley the Astronomer-Projectionist\")>>\nCharley has been a mover and shaker in local circles for many years. He knows some people. He makes some calls.\n\nYou are frankly shocked how many people are willing to sell out their local government to a charming old man.\n\n<<else>>\n <<if $inventory.contains(\"A Robot Army\")>>\n The East Cleveland government is notoriously under-funded and over-worked. They see your robot army coming and flee their desks.  Someone even leaves you a gift basket of local business coupons and a \"Welcome to your despotism\" greeting card.\n <<else>>\n The East Cleveland government is notoriously under-funded and over-worked. They see you coming and flee their desks.  Someone even leaves you a gift basket of local business coupons and a \"Welcome to your despotism\" greeting card.\n <<endif>>\n <<endif>>\nYou now control East Cleveland.  You're well on your way to taking over the world.  Up next: Ohio? The Midwest?\n\nYou win: One Complete World.\n\nCongratulations!  Okay, I can't give you the world itself, but you may enjoy [[All the Images]] that appear in this game.",
+      "links": [
+        {
+          "text": "All the Images",
+          "destination": {
+            "name": "All the Images",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "Become Local Government",
+      "text": "<<if $inventory.contains(\"Your Ex\") or $inventory.contains(\"Freeze Ray\")>>\nPersistence has served you well, and surrounded you with excellent staff.<<endif>>\nFirst off, the police are ordered to ignore that strange person trying to take over the world. It isn't hard to find other targets to send them at.\n\nThen you have the city divert funds to getting you trunk internet access and lots of Big Data.  You find the easiest problems to solve.\n\nThe hacktivist kids easily upgrade the software running traffic lights, train schedules, even the bus schedules for the RTA are improved. Without moving a single physical object, in an evening fuelled by Montain Dew and Cheetos, your team makes the city palpably better.\n\nYou win the hearts and minds of East Cleveland.  You're well on your way to taking over the world.  Up next: Ohio? The Midwest?\n\nYou win: One Complete World.\n\nCongratulations!  Okay, I can't give you the world itself, but you may enjoy [[All the Images]] that appear in this game.",
+      "links": [
+        {
+          "text": "All the Images",
+          "destination": {
+            "name": "All the Images",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 83,
+      "name": "Uncover Secrets",
+      "text": "<<if $inventory.contains(\"Your Ex\") or $inventory.contains(\"Freeze Ray\")>>\nPersistence has served you well, and surrounded you with excellent staff.\n\nThey manage to dig you out of the negative backlash campaign launched at you for blackmailing rich and powerful people.\n\nHuh. So that's why Anonymous isn't raking in the billions.\n\nStill, you are able to recoup your loses and are ready to launch another tactic.\n\n<<back>>\n<<endif>>\n\nIt's kind of like Pandora's Box. You can never unsee some of the dirty secrets your team uncovers.\n\nSome, yeah, you convert into blackmail. After all, in this world money is equal to power, so more money is more power.\n\nBut some of these dirty secrets you are motivated to act upon.  You make sure everyone knows who has uncovered the baddest of the bad locals.\n\nExcept... you uncovered secrets of bad, dishonest people who happen to be rich and powerful.\n\nGuess how that works out for you.\n\nYeah.  You are soon fighting so many legal battles you can't even get a decent freeze ray designed in your spare time.\n\nSeatec Astronomy my butt.\n\nYou lose.\nThe End.",
+      "links": []
+    },
+    {
+      "pid": 84,
+      "name": "Make the Trains Run on Time",
+      "text": "<<if $inventory.contains(\"Your Ex\") or $inventory.contains(\"Freeze Ray\")>>\nPersistence has served you well, and surrounded you with excellent staff.<<endif>>\n<<if $inventory.contains(\"Julie the Electrical Engineer\")>>\nDespite her protests, Julie IS an engineer, and so embraces any plan that involves engineering.  She dives into finding projects and allocating resources.  Your aide does excellently, too.\n<<else>>\n<<if $inventory.contains(\"All the Passwords, Everywhere\")>>\nThe hacktivist kids easily upgrade the software running traffic lights, train schedules, even the bus schedules for the RTA are improved. Without moving a single physical object, in an evening fuelled by Montain Dew and Cheetos, your team makes the city palpably better.\n<<else>>\nYour robots set to work fixing things.  The gaggle of science majors have varied experience in systems and pitch in ideas.  It's really fun watching a giant robot boost another to change lightbulbs on street lamps.\n<<endif>>\n<<endif>>\nYou win the hearts and minds of East Cleveland.  You're well on your way to taking over the world.  Up next: Ohio? The Midwest?\n\nYou win: One Complete World.\n\nCongratulations!  Okay, I can't give you the world itself, but you may enjoy [[All the Images]] that appear in this game.",
+      "links": [
+        {
+          "text": "All the Images",
+          "destination": {
+            "name": "All the Images",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "Use the Power of Grossness",
+      "text": "<<if $inventory.contains(\"Your Ex\") or $inventory.contains(\"Freeze Ray\")>>\nPersistence has served you well, and surrounded you with excellent staff.\n\nThey train the banana slugs into one GIANT BANANA SLUG MONSTER.\nWhich is really what you wanted, am I right?\n[img[http://www.marievibbert.com/wp-content/uploads/2015/10/amway.gif]]<<endif>>\n\nEeeeeeew!!!\n\nYou discover that people will do anything rather than feel a banana slug crawl up their leg.  \n\nYou now control East Cleveland.  You're well on your way to taking over the world.  Up next: Ohio? The Midwest?\n\nYou win: One Complete World.\n\nCongratulations!  Okay, I can't give you the world itself, but you may enjoy [[All the Images]] that appear in this game.",
+      "links": [
+        {
+          "text": "All the Images",
+          "destination": {
+            "name": "All the Images",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "Use the Power of Sneakiness",
+      "text": "<<if $inventory.contains(\"Your Ex\") or $inventory.contains(\"Freeze Ray\")>>\nPersistence has served you well, and surrounded you with excellent staff.<<endif>>\n\nAw yeah. You uncover some dirt and figure out who the real movers and shakers are in town. You find the string-pullers and take thier strings away!\n\nThat's a bit metaphorical. Really you just intercept some emails and phone calls and use the information therin to embarrass or coerce some rich dudes.\n\nIt's not pretty, but it's effective.\n\nYou now control Cleveland.  You're well on your way to taking over the world.  Up next: Ohio? The Midwest?\n\nYou win: One Complete World.\n\nCongratulations!  Okay, I can't give you the world itself, but you may enjoy [[All the Images]] that appear in this game.",
+      "links": [
+        {
+          "text": "All the Images",
+          "destination": {
+            "name": "All the Images",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "Use the Power of Flesh-Eating",
+      "text": "<<if $inventory.contains(\"Your Ex\") or $inventory.contains(\"Freeze Ray\")>>\nPersistence has served you well, and surrounded you with excellent staff.\nThey train the banana slugs into one GIANT BANANA SLUG MONSTER.\nWhich is really what you wanted, am I right?\n[img[http://www.marievibbert.com/wp-content/uploads/2015/10/amway.gif]]<<endif>>\n\nEEEW. You brute.  That was nasty.  Well, you'll have to hire some new police.  The administrators in City Hall just ran for it. Someone even left you a \"Welcome, New Tyrant\" gift basket. With a pinapple. Cool.\n\nYou now control East Cleveland.  You're well on your way to taking over the world.  Up next: Ohio? The Midwest?\n\nYou win: One Complete World.\n\nCongratulations!  Okay, I can't give you the world itself, but you may enjoy [[All the Images]] that appear in this game.",
+      "links": [
+        {
+          "text": "All the Images",
+          "destination": {
+            "name": "All the Images",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "Strike Fear",
+      "text": "<<if $inventory.contains(\"Your Ex\") or $inventory.contains(\"Freeze Ray\")>>\nPersistence has served you well, and surrounded you with excellent staff. They help you strike precisely where most effective.<<endif>>\n\nThe East Cleveland government is notoriously under-funded and over-worked. They see your robot army coming and flee their desks.  Someone even leaves you a gift basket of local business coupons and a \"Welcome to your despotism\" greeting card.\n \nYou now control East Cleveland.  You're well on your way to taking over the world.  Up next: Ohio? The Midwest?\n\nYou win: One Complete World.\n\nCongratulations!  Okay, I can't give you the world itself, but you may enjoy [[All the Images]] that appear in this game.",
+      "links": [
+        {
+          "text": "All the Images",
+          "destination": {
+            "name": "All the Images",
+            "pid": 77
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4436 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "She passes from sight",
+      "text": "You descend the stairs and enter the courtyard. Her <<cyclinglink $feet \"cloven hooves\" \"arachnid claws\" \"writhing coils\">> left smears of ichor like the stain of rotten fruit.\\n\\n[[Return to your room]]\\n\\n[[Get on your knees and lick her stain]]",
+      "links": [
+        {
+          "text": "Return to your room",
+          "destination": {
+            "name": "Return to your room",
+            "pid": 142
+          }
+        },
+        {
+          "text": "Get on your knees and lick her stain",
+          "destination": {
+            "name": "Get on your knees and lick her stain",
+            "pid": 126
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "break the loop",
+      "text": "Ideate: <<cyclinglink $ideate \"Letting go\" \"Falling into the sky\" \"Into the jungle\" \"Into the sea\" \"Riding into the storm\" \"Shredded by gravel\" \"Crashing\" \"Breaking apart\" \"Screaming\">>.\\n\\n[[Break the loop]]",
+      "links": [
+        {
+          "text": "Break the loop",
+          "destination": {
+            "name": "Break the loop",
+            "pid": 196
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "blessing_weapon",
+      "text": "with an invocation\\n\\n<<cyclinglink $weapon_invocation \"May everyone who touches me perish\" \"Sharing blood with moonlight\" \"Everything that power permits\">>\\n\\n[[Yes|weapon_result]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "weapon_result",
+            "pid": 48
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "Ropes",
+      "text": "Laundry, drying meat, lanterns, festival ribbons.\\n\\n[[Look away|City]]",
+      "links": [
+        {
+          "text": "Look away",
+          "destination": {
+            "name": "City",
+            "pid": 203
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "worms",
+      "text": "They pick her bones clean.\\n\\n[[How thoughtful|bath]]",
+      "links": [
+        {
+          "text": "How thoughtful",
+          "destination": {
+            "name": "bath",
+            "pid": 137
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "month",
+      "text": "Which month were you born in?\\n\\n[[One|element][$month = 1]], the Broken Coffin\\n[[Two|element][$month = 2]], the Flower Eater\\n[[Three|element][$month = 3]], the Ocean Cloud\\n[[Four|element][$month = 4]], the Fruit Heart\\n[[Five|element][$month = 5]], the Angel's Egg\\n[[Six|element][$month = 6]], the Dire Maiden\\n[[Seven|element][$month = 7]], the Orphan\\n[[Eight|element][$month = 8]], the Snake's Milk\\n[[Nine|element][$month = 9]], the Locust Kill\\n[[Ten|element][$month = 10]], the Moth Vendetta\\n[[Eleven|element][$month = 11]], the Eye in the Ground\\n[[Twelve|element][$month = 12]], the Salt Key",
+      "links": [
+        {
+          "text": "One",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        },
+        {
+          "text": "Two",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        },
+        {
+          "text": "Three",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        },
+        {
+          "text": "Four",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        },
+        {
+          "text": "Five",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        },
+        {
+          "text": "Six",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        },
+        {
+          "text": "Seven",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        },
+        {
+          "text": "Eight",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        },
+        {
+          "text": "Nine",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        },
+        {
+          "text": "Ten",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        },
+        {
+          "text": "Eleven",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        },
+        {
+          "text": "Twelve",
+          "destination": {
+            "name": "element",
+            "pid": 260
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "the thing",
+      "text": "You take the thing into the torch-lit depths where the agents stand guard.\\n\\n<<replace \"There would be screams, if the thing did not eat screams.\">>There would be screams, if the thing did not eat screams.\\n\\n<<replace \"There would be blood, if the thing did not eat blood.\">>There would be blood, if the thing did not eat blood.\\n\\n<<replace \"There would be death, if the thing did not eat death.\">>There would be death, if the thing did not eat death.\\n\\n[[Walk past with eyes straight ahead]]<<endreplace>><<endreplace>><<endreplace>>",
+      "links": [
+        {
+          "text": "Walk past with eyes straight ahead",
+          "destination": {
+            "name": "Walk past with eyes straight ahead",
+            "pid": 175
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Black petals",
+      "text": "Offerings for the dire maidens. Depending on how much memory one has watered the flower with, an offering may be a sacrifice.\\n\\nAnd in the manner of sacrifices, each petal looks the same, whether it contains a moment or a lifetime.\\n\\n[[Okay|City]]",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "City",
+            "pid": 203
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "thislife",
+      "text": "Before living this life, have a pen or sharpie nearby, something that can write on skin.\\n\\nPurple links change. Pink links move forward. The colorblind version is [[here|http://slimedaughter.com/games/twine/wtwla/monochrome]].\\n\\nThere is music, so headphones are good. But it's okay if you can't.\n\nContent warning for violence, self-harm, abuse.\\n\\n[[Okay|interstice]]",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "interstice",
+            "pid": 138
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "sleep",
+      "text": "<<display \"sleep_process\">>\\n<<if $day is 4>>\\n<<set $ceremony = true>><<timedgoto \"Your chambers\" 1.5s>>\\n<<elseif $day is 6>>\\n<<timedgoto \"letter\" 1.5s>>\\n<<elseif $day is 9>>\\n<<timedgoto \"hunting\" 1.5s>>\\n<<elseif $day is 15>>\\n<<timedgoto \"sweetness\" 1.5s>>\\n<<elseif $day is 19>>\\n<<timedgoto \"princess spores\" 1.5s>>\\n<<elseif $day is 22>>\\n<<timedgoto \"flashback_1\" 1.5s>>\\n<<elseif $day is 24>>\\n<<timedgoto \"endless\" 1.5s>>\\n<<elseif $day is 27>>\\n<<timedgoto \"Court\" 1.5s>>\\n<<elseif $day is 28>>\\n<<timedgoto \"shame\" 1.5s>>\\n<<elseif $day is 29>>\\n<<timedgoto \"bath\" 1.5s>>\\n<<elseif $day is 30>>\\n<<timedgoto \"pretense\" 1.5s>>\\n<<elseif $day is 31>>\\n<<timedgoto \"bench\" 1.5s>>\\n<<elseif $day is 32>>\\n<<timedgoto \"drugs\" 1.5s>>\\n<<elseif $day is 33>>\\n<<timedgoto \"her bedroom\" 1.5s>>\\n<<elseif $day is 34>>\\n<<timedgoto \"wake up\" 1.5s>>\\n<<else>>\\n<<timedgoto \"Your chambers\" 1.5s>>\\n<<endif>>\\n",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "sleep_process",
+            "pid": 100
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "Your chambers",
+            "pid": 216
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "letter",
+            "pid": 245
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hunting",
+            "pid": 19
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "sweetness",
+            "pid": 135
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "princess spores",
+            "pid": 153
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "flashback_1",
+            "pid": 225
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "endless",
+            "pid": 60
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "Court",
+            "pid": 205
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "shame",
+            "pid": 209
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "bath",
+            "pid": 137
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "pretense",
+            "pid": 21
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "bench",
+            "pid": 152
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "drugs",
+            "pid": 134
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "her bedroom",
+            "pid": 198
+          }
+        },
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "wake up",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "webfont",
+      "text": "WebFontConfig = {\\n    google: { families: [ 'Open+Sans:400,700:latin' ] }\\n  };\\n  (function() {\\n    var wf = document.createElement('script');\\n    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +\\n      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';\\n    wf.type = 'text/javascript';\\n    wf.async = 'true';\\n    var s = document.getElementsByTagName('script')[0];\\n    s.parentNode.insertBefore(wf, s);\\n  })();",
+      "links": []
+    },
+    {
+      "pid": 12,
+      "name": "hate",
+      "text": "Before everything got so bitter and trapped. When it was a clean pure hate moving you forward. Out of the city. Away from the people who hurt <<cyclinglink $hurt \"you\" \"her\">>.\\n\\nShe's [[saying|different]] something.",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "her",
+            "pid": 157
+          }
+        },
+        {
+          "text": "saying",
+          "destination": {
+            "name": "different",
+            "pid": 220
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "spells",
+      "text": "Superstition of the skull empire, ignorant of where a witch's true power lies.\\n\\n[[They will learn|Walk past with eyes straight ahead]]",
+      "links": [
+        {
+          "text": "They will learn",
+          "destination": {
+            "name": "Walk past with eyes straight ahead",
+            "pid": 175
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Breathe",
+      "text": "Your friend the witch is in the common room, lingering over a glass of salt sugar citrus fluid, finger stuck in the crease of a book, watching rain run down the windowpane.\\n\\nEveryone else is asleep. These long rainy days are for resting.\\n\\n[[Breathe|staircase]]",
+      "links": [
+        {
+          "text": "Breathe",
+          "destination": {
+            "name": "staircase",
+            "pid": 238
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "I need different breaths",
+      "text": "[[I need a shorter breath|exhale][$breath = \"short\"]]\\n\\n[[I need a medium breath|exhale][$breath = \"medium\"]]\\n\\n[[I need a longer breath|exhale][$breath = \"long\"]]",
+      "links": [
+        {
+          "text": "I need a shorter breath",
+          "destination": {
+            "name": "exhale",
+            "pid": 84
+          }
+        },
+        {
+          "text": "I need a medium breath",
+          "destination": {
+            "name": "exhale",
+            "pid": 84
+          }
+        },
+        {
+          "text": "I need a longer breath",
+          "destination": {
+            "name": "exhale",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "now",
+      "text": "\"Please--\"\\n\\n\"<<replace \"I just wanted to spend time with you.\">>I just wanted to spend time with you.\"\\n\\n\"Sedina--\"\\n\\n\"<<replace \"Stay in your room and don't interfere.\">>Stay in your room and don't interfere.\"\\n\\n\"...\"\\n\\n\"Goodbye, <<$name>>.\"\\n\\nShe [[closes|note writer]] the door.<<endreplace>><<endreplace>>",
+      "links": [
+        {
+          "text": "closes",
+          "destination": {
+            "name": "note writer",
+            "pid": 141
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "mazelike",
+      "text": "This alley leads to a dead end. The stone is stained with smog and acid rain.\\n\\n<<if $hormone_day is 4>>A [[slime kid]] is here.\\n\\n[[Return|City]]<<else>>A puddle of green slime is here.\\n\\n[[Return|City]]<<endif>>",
+      "links": [
+        {
+          "text": "slime kid",
+          "destination": {
+            "name": "slime kid",
+            "pid": 47
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "City",
+            "pid": 203
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "burning",
+      "text": "She grabs at the buried tubes, claws at the seals, tears the caps [[free]].",
+      "links": [
+        {
+          "text": "free",
+          "destination": {
+            "name": "free",
+            "pid": 110
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "hunting",
+      "text": "<<fadeoutsound \"wandering.mp3\">><<fadeinsound \"creep.mp3\">><<replace \"The empress is hunting humans today\">>The empress is hunting humans today.\\n\\nHer flier hums through the [[sky]], moth wings slicing sunlight.<<endreplace>>\\n",
+      "links": [
+        {
+          "text": "sky",
+          "destination": {
+            "name": "sky",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "another vial",
+      "text": "You take out another vial of melter.\\n\\n<<cyclinglink $body_x \"Pain\" \"Pain...\" \"Pain.\">>\\n\\n[[Yes|pain]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "pain",
+            "pid": 237
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "pretense",
+      "text": "You are walking down the hall when you see her. She stops and stares, and here, alone in the cool, shadowed corner of the palace, there is no longer any pretense that you do not know each other.\\n\\n[[And she speaks|last]]<<fadeoutsound \"wandering.mp3\">><<fadeinsound \"friend.mp3\">>",
+      "links": [
+        {
+          "text": "And she speaks",
+          "destination": {
+            "name": "last",
+            "pid": 120
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "post_face",
+      "text": "[[She glides past|impulse]]",
+      "links": [
+        {
+          "text": "She glides past",
+          "destination": {
+            "name": "impulse",
+            "pid": 183
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "sky",
+      "text": "At the rear of the procession you listen to the always weapons and the sometimes screams.\\n\\nArcs of light shoot through the canopy. The smell of burnt <<cyclinglink $burnt \"leaves\" \"vines\" \"sap\" \"flesh\">>.\\n\\nA <<replace \"custom.\">>custom that persists because people are scared that if they question the custom they will fall victim to the intense cruelty of the custom, which persists because they [[fail]] to question it.<<endreplace>>",
+      "links": [
+        {
+          "text": "fail",
+          "destination": {
+            "name": "fail",
+            "pid": 88
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Balconies",
+      "text": "Death jungle chokes the land to the north. To the south, ashen wasteland.<<if $dead_person is \"balcony\">> A dead person is sitting on the balcony, swinging their legs.<<endif>>\\n\\n<<if $telescope_make gte 4>>You lean on the railing. Your [[telescope]] is mounted nearby.<<else>>You lean on the railing.<<endif>>\\n\\n[[Leave|Palace]]<<display \"wanderfade\">>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "wanderfade",
+            "pid": 82
+          }
+        },
+        {
+          "text": "telescope",
+          "destination": {
+            "name": "telescope",
+            "pid": 79
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "Palace",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "day",
+      "text": "<<replace \"Every\">> <<set $damage += 1>><<if $damage gte 4>><<timedgoto \"interval\" 2.5s>><<endif>><<endreplace>> <<replace \"day\">> <<set $damage += 1>><<if $damage gte 4>><<timedgoto \"interval\" 2.5s>><<endif>><<endreplace>> <<replace \"is\">> <<set $damage += 1>><<if $damage gte 4>><<timedgoto \"interval\" 2.5s>><<endif>><<endreplace>> <<replace \"damage\">> <<set $damage += 1>><<if $damage gte 4>><<timedgoto \"interval\" 2.5s>><<endif>><<endreplace>><<set $destination = \"Your chambers\">>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "interval",
+            "pid": 256
+          }
+        },
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Your chambers",
+            "pid": 216
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "destroyed",
+      "text": "The holding cells are [[down those stairs|the thing]], in the smell of copper and rat.",
+      "links": [
+        {
+          "text": "down those stairs",
+          "destination": {
+            "name": "the thing",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Visitors",
+      "text": "A [[priestess]] from the temple of the 17 goddesses, her raiments sewn with bright jagged minerals that pulsate at the slightest change in light.\\n\\nAn ambassador from the west, in her cloak of spider feathers and her ceremonial [[gas mask]].\\n\\nAnd your [[friend]]. Witch green rags, vials of [[ectoplasm]] hanging at her side.\\n\\n[[Her above all things|her]]",
+      "links": [
+        {
+          "text": "priestess",
+          "destination": {
+            "name": "priestess",
+            "pid": 127
+          }
+        },
+        {
+          "text": "gas mask",
+          "destination": {
+            "name": "gas mask",
+            "pid": 31
+          }
+        },
+        {
+          "text": "friend",
+          "destination": {
+            "name": "friend",
+            "pid": 169
+          }
+        },
+        {
+          "text": "ectoplasm",
+          "destination": {
+            "name": "ectoplasm",
+            "pid": 58
+          }
+        },
+        {
+          "text": "Her above all things",
+          "destination": {
+            "name": "her",
+            "pid": 157
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "tears",
+      "text": "An agent runs over and slashes them apart, high screams blowing through the rents in their shrinking skin.\\n\\nThe agent laughs at you and walk away.\\n\\n[[You smell fire|bonfire]]",
+      "links": [
+        {
+          "text": "You smell fire",
+          "destination": {
+            "name": "bonfire",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "going",
+      "text": "As you slide off the bed your hip catches the nightstand, knocking her purse to the floor.\\n\\nShe gets on her knees and quickly begins putting things back inside.\\n\\n[[Help her|spill]]",
+      "links": [
+        {
+          "text": "Help her",
+          "destination": {
+            "name": "spill",
+            "pid": 122
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Stomp it",
+      "text": "You stomp it under your boots. Smeared like crushing petals.\\n\\n[[The mob is going inside the palace]]",
+      "links": [
+        {
+          "text": "The mob is going inside the palace",
+          "destination": {
+            "name": "The mob is going inside the palace",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "gas mask",
+      "text": "Black with gold trim, a slender hose hanging with a gold filter, obsidian eyes.\\n\\n[[Wasteland chic|Visitors]]",
+      "links": [
+        {
+          "text": "Wasteland chic",
+          "destination": {
+            "name": "Visitors",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "wake up",
+      "text": "You wake up hours early with nausea eating its way out of your stomach.\\n\\n[[Get dressed and go to the throne room]]<<stopallsound>>",
+      "links": [
+        {
+          "text": "Get dressed and go to the throne room",
+          "destination": {
+            "name": "Get dressed and go to the throne room",
+            "pid": 246
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "StoryTitle",
+      "text": "With Those We Love Alive",
+      "links": []
+    },
+    {
+      "pid": 34,
+      "name": "jars",
+      "text": "Ancient hands suspended in green fluid, covered in sigils, vertical columns of ink. \\n\\n[[Some bizarre old practice|temple]]",
+      "links": [
+        {
+          "text": "Some bizarre old practice",
+          "destination": {
+            "name": "temple",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "glyphs",
+      "text": "You engraved three glyphs:\\n\\n<<cyclinglink $glyph_1 \"indomitable\" \"angel-breeder\" \"beloved tyranny\">>\\n<<cyclinglink $glyph_2 \"power over death\" \"bat-mother\" \"life-ruiner\">>\\n<<cyclinglink $glyph_3 \"rich with souls\" \"burning waterfalls\" \"loyal to eternity\">>\\n\\n[[Yes|wrapped]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "wrapped",
+            "pid": 166
+          }
+        }
+      ]
+    },
+    {
+      "pid": 36,
+      "name": "And now you are going somewhere",
+      "text": "<<timedgoto \"red lake\" 1.5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "red lake",
+            "pid": 143
+          }
+        }
+      ]
+    },
+    {
+      "pid": 37,
+      "name": "Workers",
+      "text": "\"<<print either(\"We distill the dreams for 5 or 6 years. We find this is the optimal time. After 6, the dreams are too bitter to consume.\",\"These people are criminals. We are reclaiming their wasted potential.\",\"Watch out for spills. We had a nightmare flare up. Busted some pipes.\",\"Next year we should have some nightmare filters in place, that'll prolong the lifespan of the pipes quite a bit.\")>>\"\\n\\n[[Nod|dream distillery]]",
+      "links": [
+        {
+          "text": "Nod",
+          "destination": {
+            "name": "dream distillery",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 38,
+      "name": "hope",
+      "text": "\"Hope is a shameful thing.\" Her lips twist into a smile.\\n\\nYou remember how good it felt to [[hate]] the world together.",
+      "links": [
+        {
+          "text": "hate",
+          "destination": {
+            "name": "hate",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 39,
+      "name": "Wait",
+      "text": "She greets her new court by placing thoughts in their minds.\\n\\nHer aide says, \"Go to your chambers. You will know when we have need of you.\"\\n\\nShe returns to cleaning the skull of the Empress, running her tongue along the effluvial curves.\\n\\n[[Leave|interval]]<<set $destination = \"Palace\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Palace",
+            "pid": 121
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "interval",
+            "pid": 256
+          }
+        }
+      ]
+    },
+    {
+      "pid": 40,
+      "name": "Something that doesn't exist",
+      "text": "A non-existent knife is lying on the floor. Your skin tingles.\\n\\n\"When is that knife going to exist?\"\\n\\n\"[[Tomorrow|now]].\"<<stopallsound>>",
+      "links": [
+        {
+          "text": "Tomorrow",
+          "destination": {
+            "name": "now",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 41,
+      "name": "censer",
+      "text": "That childhood smell of spices, so mystical, now reminds you of any kitchen.\\n\\n[[Exhale|temple]]",
+      "links": [
+        {
+          "text": "Exhale",
+          "destination": {
+            "name": "temple",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 42,
+      "name": "hand_flourish_result",
+      "text": "<<if $hand_flourish is \"set with a giant ruby\">>\\nThey say the ruby is the left eye of a stone queen from the frozen isles, ten feet tall. They say she walks very slowly across the floor of the sea, striding like a red lantern in the abyssal water, and that one day she will find the one who took her eye.<<endif>><<if $hand_flourish is \"veined with bright copper strands of hair\">>The hair is obviously from the scalp of a heretic. Duh.<<endif>><<if $hand_flourish is \"fitted with obsidian nails\">>Long sharp nails reflecting like hard ink. Cut from the foot of a volcano at the heart of the ash waste, where even the sky-hungry obelisks are drowned to tips like a bench to sit on.<<endif>>\\n\\n[[Perfect|hand_finished]]",
+      "links": [
+        {
+          "text": "Perfect",
+          "destination": {
+            "name": "hand_finished",
+            "pid": 206
+          }
+        }
+      ]
+    },
+    {
+      "pid": 43,
+      "name": "breathing",
+      "text": "She approaches the empress with her hands open and <<replace \"empty.\">>empty.\\n\\nThe knife suddenly exists.\\n\\n[[One second]]<<endreplace>>",
+      "links": [
+        {
+          "text": "One second",
+          "destination": {
+            "name": "One second",
+            "pid": 187
+          }
+        }
+      ]
+    },
+    {
+      "pid": 44,
+      "name": "gods",
+      "text": "The gods derive power from silence.\\n\\n[[...|temple]]",
+      "links": [
+        {
+          "text": "...",
+          "destination": {
+            "name": "temple",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 45,
+      "name": "I am holding my breath",
+      "text": "<<if $breath is \"medium\">><<timedgoto \"exhale\" 8s>><<endif>><<if $breath is \"long\">><<timedgoto \"exhale\" 12s>><<endif>><<if $breath is \"short\">><<timedgoto \"exhale\" 4s>><<endif>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "exhale",
+            "pid": 84
+          }
+        }
+      ]
+    },
+    {
+      "pid": 46,
+      "name": "css dream",
+      "text": "\\n\\n#passages{font-size:20px; font-family: 'Open Sans';\\nborder-left: 0px !important;border-left: 0px !important; margin:100px 0px 0px 100px !important; }\\n\\n#passages > div, #passages > p { text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n\\nbody {\\nbackground: rgb(8,181,204); /* Old browsers */\\nbackground: -moz-linear-gradient(top, rgba(8,181,204,1) 0%, rgba(0,50,53,1) 0%, rgba(18,0,25,1) 31%, rgba(0,0,0,1) 52%); /* FF3.6+ */\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(8,181,204,1)), color-stop(0%,rgba(0,50,53,1)), color-stop(31%,rgba(18,0,25,1)), color-stop(52%,rgba(0,0,0,1))); /* Chrome,Safari4+ */\\nbackground: -webkit-linear-gradient(top, rgba(8,181,204,1) 0%,rgba(0,50,53,1) 0%,rgba(18,0,25,1) 31%,rgba(0,0,0,1) 52%); /* Chrome10+,Safari5.1+ */\\nbackground: -o-linear-gradient(top, rgba(8,181,204,1) 0%,rgba(0,50,53,1) 0%,rgba(18,0,25,1) 31%,rgba(0,0,0,1) 52%); /* Opera 11.10+ */\\nbackground: -ms-linear-gradient(top, rgba(8,181,204,1) 0%,rgba(0,50,53,1) 0%,rgba(18,0,25,1) 31%,rgba(0,0,0,1) 52%); /* IE10+ */\\nbackground: linear-gradient(to bottom, rgba(8,181,204,1) 0%,rgba(0,50,53,1) 0%,rgba(18,0,25,1) 31%,rgba(0,0,0,1) 52%); /* W3C */\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08b5cc', endColorstr='#000000',GradientType=0 ); /* IE6-9 */\\n    background-attachment:fixed;\\n    margin:0;\\n}\\n\\n.passage{  width: 600px !important ; position: absolute;\\n  top: 0;\\n  bottom: 0;\\n  left: 0;\\n  right: 0;\\n\\n\\n  height: 80%;}\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}\\na.internalLink, a.externaLink {font-size:30px !important;color:#ea6ab9}\\na.internalLink:hover, a.externaLink:hover {text-decoration:none !important;font-size:30px !important;color:#f095cd !important}\\na.internalLink.replaceLinkx { color: #6aea9b; !important}\\na.internalLink.replaceLinkx:hover { color: #6aeadb; !important}\\na.internalLink.reviseLink { color: #ea6ab9; !important}\\n\\n\\n@keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n@-webkit-keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\na.cyclingLink {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\na.cyclingLink:hover {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\n.cyclingLink * {\\n  display: inline-block !important;\\n  left: 0;\\n  transition: opacity 1s;\\n}\\n.cyclingLinkEnabled {\\n  opacity: 1;\\n  animation: cyc-dissolve 0.8s ease-in reverse; -webkit-animation: cyc-dissolve 0.8s ease-in reverse;\\n  position: relative;\\n}\\n.cyclingLinkDisabled {\\n  opacity: 0;\\n  animation: cyc-dissolve 0.8s ease-out;  -webkit-animation: cyc-dissolve 0.8s ease-out;\\n  position: absolute;\\n}\\n.cyclingLinkInit, .cyclingLinkInit::before {\\n  animation-iteration-count: 0 !important;\\n  -webkit-animation-iteration-count: 0 !important;\\n}\\n",
+      "links": []
+    },
+    {
+      "pid": 47,
+      "name": "slime kid",
+      "text": "<<print either(\"She gurgles, spraying slime on your boots\",\"She's digesting a piece of trash\",\"She climbs around on the wall for awhile, sticking to it like gum\",\"She shows you a drawing she made. It's very good\",\"You teach her some melter tricks\",\"She shows you how to puff up to scare your enemies. Your body doesn't stretch as much, but you promise to study hard\",\"She ripples happily\",\"She's helping a bug find a home\",\"She pretends to be a puddle\",\"She kisses a bug\",\"She hugs a snail\",\"She turns into funny shapes then falls over\",\"She pops like a bubble, spattering slime everywhere, then oozes back together, giggling\",\"She's drawing on the wall with a piece of chalk she found. The whole wall is covered with rain-faded smears of soft pastel\")>>.\\n\\n[[Yay|mazelike]]",
+      "links": [
+        {
+          "text": "Yay",
+          "destination": {
+            "name": "mazelike",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 48,
+      "name": "weapon_result",
+      "text": "A <<$weapon_type>> made of <<$weapon_material_1>> and <<$weapon_material_2>>, with the invocation, //<<$weapon_invocation>>//\\n\\nThe agent comes by and takes it away.\\n\\n[[Okay|Workshop]]",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "Workshop",
+            "pid": 197
+          }
+        }
+      ]
+    },
+    {
+      "pid": 49,
+      "name": "break",
+      "text": "You lean back against the engine and close your eyes and let it drown out the <<replace \"screams\">>noise.\\n\\nAnd [[stare|interval][$destination = \"Your chambers\"]] at the sky.<<endreplace>>",
+      "links": [
+        {
+          "text": "stare",
+          "destination": {
+            "name": "interval",
+            "pid": 256
+          }
+        }
+      ]
+    },
+    {
+      "pid": 50,
+      "name": "dry",
+      "text": "<<print either(\"Urchins draw lines in the dust, doing their rituals of luck against starvation and luck against police brutality\",\"Ligabirds perch on ship ribs\",\"River glass glints\",\"Urchins sleep in the shade of an upturned hull\",\"A scavenger is poking the dust with a stick, scraping for drowned trinkets\",\"Dead vines wave in the wind like sunbleached hair\",\"Sewer holes ooze. Nightmare runoff creeps across the ground\",\"A spidercat mends its rat-heavy web\",\"Angel corpse rots in the sun\",\"Dust striders dance down the canal like sticks blown in the wind\",\"A rat kid is running around laughing as she wears a human skull fragment on her face like an opera mask\",\"Rat kids are digging up lung fish for their meal, lithe little claws cracking mud cocoons to pull out the soft fleshy coil inside\")>>.\\n\\n[[Watch|dry]]\\n\\n[[Look away|City]]",
+      "links": [
+        {
+          "text": "Watch",
+          "destination": {
+            "name": "dry",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Look away",
+          "destination": {
+            "name": "City",
+            "pid": 203
+          }
+        }
+      ]
+    },
+    {
+      "pid": 51,
+      "name": "Five seconds",
+      "text": "The Empress rakes her hand across Sedina's abdomen. Skin and cloth comes away in her claws, so bloody you can't tell them apart.\\n\\n[[Six seconds]]<<loopsound \"creep.mp3\">>",
+      "links": [
+        {
+          "text": "Six seconds",
+          "destination": {
+            "name": "Six seconds",
+            "pid": 268
+          }
+        }
+      ]
+    },
+    {
+      "pid": 52,
+      "name": "\"Nothing has changed.\"",
+      "text": "\"I'm sorry. But...I'm glad you see clearly, what kind of place this is.\"\\n\\n[[Silence|dress]]",
+      "links": [
+        {
+          "text": "Silence",
+          "destination": {
+            "name": "dress",
+            "pid": 217
+          }
+        }
+      ]
+    },
+    {
+      "pid": 53,
+      "name": "Shh",
+      "text": "Draw a sigil of burial.\\n\\n[[Done|Balconies]]",
+      "links": [
+        {
+          "text": "Done",
+          "destination": {
+            "name": "Balconies",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 54,
+      "name": "worktable",
+      "text": "Stained schematics depict a metal tube with a glass lens. You tried to build one before but didn't have the materials. The glass is fine and pure here.\\n\\n<<if $telescope_make gte 4>>The telescope is complete. This will look good on the balcony.<<else>><<if $energy is 1>>[[Work on telescope|worktable][$telescope_make += 1,$energy -= 1]]<<else>>Too tired to work.<<endif>><<endif>>\\n\\n[[Get up|Workshop]]",
+      "links": [
+        {
+          "text": "Work on telescope",
+          "destination": {
+            "name": "worktable",
+            "pid": 54
+          }
+        },
+        {
+          "text": "Get up",
+          "destination": {
+            "name": "Workshop",
+            "pid": 197
+          }
+        }
+      ]
+    },
+    {
+      "pid": 55,
+      "name": "apart",
+      "text": "You hear a [[mewling sound]].<<set $together = false>>",
+      "links": [
+        {
+          "text": "mewling sound",
+          "destination": {
+            "name": "mewling sound",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 56,
+      "name": "ending",
+      "text": "A dead person is curled up inside your hamper.\\n\\n[[\"I am sorry, dead person, but you must leave\"|leave]]",
+      "links": [
+        {
+          "text": "\"I am sorry, dead person, but you must leave\"",
+          "destination": {
+            "name": "leave",
+            "pid": 71
+          }
+        }
+      ]
+    },
+    {
+      "pid": 57,
+      "name": "Let the wind take it",
+      "text": "You let it flutter away. Loving yourself means destroying the physical reminders of the past.\\n\\n[[No more]]",
+      "links": [
+        {
+          "text": "No more",
+          "destination": {
+            "name": "No more",
+            "pid": 202
+          }
+        }
+      ]
+    },
+    {
+      "pid": 58,
+      "name": "ectoplasm",
+      "text": "Mercury of the soul. Each sample has its own wildness, its own tendency to warping.\\n\\n[[Just looking makes you dizzy|Visitors]]",
+      "links": [
+        {
+          "text": "Just looking makes you dizzy",
+          "destination": {
+            "name": "Visitors",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 59,
+      "name": "nice nails",
+      "text": "The ritual is soothing.\\n\\nShe painted your nails a different color.\\n\\n[[Green|you hate]].",
+      "links": [
+        {
+          "text": "Green",
+          "destination": {
+            "name": "you hate",
+            "pid": 221
+          }
+        }
+      ]
+    },
+    {
+      "pid": 60,
+      "name": "endless",
+      "text": "<<replace \"You pour endless things into the dark left by your dreamlessness.\">>You pour endless things into the dark left by your dreamlessness.\\n\\n<<replace \"None of them can replace the dreams. It's like trying to create air just by thinking about it. Something so invisible and ethereal as to resemble thought itself.\">>None of them can replace the dreams. It's like trying to create air with your imagination. Something so invisible and ethereal as to resemble thought itself.\\n\\nBut dreams are [[physical|interval]] as blood and bone.<<set $destination = \"Your chambers\">><<endreplace>><<endreplace>><<endreplace>><<fadeoutsound \"wandering.mp3\" >><<loopsound \"scene.mp3\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Your chambers",
+            "pid": 216
+          }
+        },
+        {
+          "text": "physical",
+          "destination": {
+            "name": "interval",
+            "pid": 256
+          }
+        }
+      ]
+    },
+    {
+      "pid": 61,
+      "name": "empress",
+      "text": "Another agent enters the room, followed by the Empress like a monstrous shadow.\\n\\n[[Sedina]] is standing very still.",
+      "links": [
+        {
+          "text": "Sedina",
+          "destination": {
+            "name": "Sedina",
+            "pid": 97
+          }
+        }
+      ]
+    },
+    {
+      "pid": 62,
+      "name": "name",
+      "text": "But in the morning when they were gone to work, you found the other book, and you held a different name inside.\\n\\n<<if $month is 1>><<set $name = \"Sparna\">><<endif>><<if $month is 2>><<set $name = \"Danika\">><<endif>><<if $month is 3>><<set $name = \"Casence\">><<endif>><<if $month is 4>><<set $name = \"Ciara\">><<endif>><<if $month is 5>><<set $name = \"Mia\">><<endif>><<if $month is 6>><<set $name = \"Purify\">><<endif>><<if $month is 7>><<set $name = \"Cade\">><<endif>><<if $month is 8>><<set $name = \"Lon\">><<endif>><<if $month is 9>><<set $name = \"Caromine\">><<endif>><<if $month is 10>><<set $name = \"Haze\">><<endif>><<if $month is 11>><<set $name = \"Grale\">><<endif>><<if $month is 12>><<set $name = \"Langloss\">><<endif>><<$name>> <<if $eye is \"Brown\">>Jan<<endif>><<if $eye is \"Gray\">>Um<<endif>><<if $eye is \"Blue\">>Pero<<endif>><<if $eye is \"Black\">>Ar<<endif>><<if $eye is \"Green\">>Ophi<<endif>><<if $eye is \"Hazel\">>Azi<<endif>><<if $eye is \"Violet\">>Meli<<endif>><<if $eye is \"Amber\">>Ci<<endif>><<if $eye is \"Heterochromic\">>Hexa<<endif>><<if $eye is \"Nothing here describes my eyes\">>Io<<endif>><<if $element is \"Machine\">>vir<<endif>><<if $element is \"Fur\">>das<<endif>><<if $element is \"Mud\">>dor<<endif>><<if $element is \"Tears\">>gloss<<endif>><<if $element is \"Petal\">>dot<<endif>><<if $element is \"Feather\">>det<<endif>>.\\n\\n[[And ten years disappeared|intro]]",
+      "links": [
+        {
+          "text": "And ten years disappeared",
+          "destination": {
+            "name": "intro",
+            "pid": 211
+          }
+        }
+      ]
+    },
+    {
+      "pid": 63,
+      "name": "chasm people",
+      "text": "After a while you both go [[silent]].",
+      "links": [
+        {
+          "text": "silent",
+          "destination": {
+            "name": "silent",
+            "pid": 156
+          }
+        }
+      ]
+    },
+    {
+      "pid": 64,
+      "name": "StoryInit",
+      "text": "<<set $day = 0>>\\n<<set $flashback_1 = false>>\\n<<set $working = false>>\\n<<set $wearable_message = false>>\\n<<set $weapon_message = false>>\\n<<set $weapon_type = \"\">>\\n<<set $weather = 1>>\\n<<set $tasted = false>>\\n<<set $dead_person = \"\">>\\n<<set $looked = false>>\\n<<set $hormone_need = false>>\\n<<set $letter_1 = false>>\\n<<set $name = \"\">>\\n<<set $ceremony = false>>\\n<<set $damage = 0>>\\n<<set $hormone_day = 0>>\\n<<set $together = false>>\\n<<set $horrible to \"\">>\\n<<set $destination to \"\">>\\n<<set $nail to 0>>\\n<<set $final_making = true>>\\n<<set $final_day to 35>>\\n<<set $telescope = false>>\\n<<set $telescope_make = 0>>\\n<<set $energy = 1>>\\n<<set $scope = \"jungle\">>\\n<<set $painting = false>>\\n<<set $breath = \"medium\">>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "jungle",
+            "pid": 263
+          }
+        }
+      ]
+    },
+    {
+      "pid": 65,
+      "name": "\"Let's go.\"",
+      "text": "<<timedgoto \"chased\" 1.5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "chased",
+            "pid": 160
+          }
+        }
+      ]
+    },
+    {
+      "pid": 66,
+      "name": "radiant",
+      "text": "She sinks into the corner. Her dark hair covers her face and she tries to blow it away, finally <<cyclinglink $surrendering \"surrendering with\" \"becoming\" \"leaking\" \"enshrining\">> hysterical laughter.\\n\\nYou stare at the inside of your <<cyclinglink $mind \"mind\" \"brain\" \"soul\" \"weird psychic meat shit\">> for awhile. When you look back she's under <<cyclinglink $worktable \"your\" \"the\" \"how does property work\">> worktable sleeping or maybe staring at her own mind. You shake her gently. She curls up, eyes closed, squeezing the leg of the table like a stuffed animal.\\n\\nBut you, you feel [[energized]].",
+      "links": [
+        {
+          "text": "energized",
+          "destination": {
+            "name": "energized",
+            "pid": 249
+          }
+        }
+      ]
+    },
+    {
+      "pid": 67,
+      "name": "sleepless",
+      "text": "You don't [[sleep]].<<set $working = true>>",
+      "links": [
+        {
+          "text": "sleep",
+          "destination": {
+            "name": "sleep",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 68,
+      "name": "css light",
+      "text": "\\n\\n#passages{font-size:20px; font-family: 'Open Sans';\\nborder-left: 0px !important;border-left: 0px !important; margin:100px 0px 0px 100px !important; color:black}\\n\\n#passages > div, #passages > p { text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n\\nbody {\\n\\tbackground-color:white !important;\\n    background-attachment:fixed;\\n    margin:0;\\n}\\n\\n.passage{  width: 600px !important ; position: absolute;\\n  top: 0;\\n  bottom: 0;\\n  left: 0;\\n  right: 0;\\n\\n\\n  height: 80%;}\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}\\na.internalLink, a.externaLink {font-size:30px !important;color:#ea6ab9}\\na.internalLink:hover, a.externaLink:hover {text-decoration:none !important;font-size:30px !important;color:#f095cd !important}\\na.internalLink.replaceLinkx { color: #6aea9b; !important}\\na.internalLink.replaceLinkx:hover { color: #6aeadb; !important}\\na.internalLink.reviseLink { color: #ea6ab9; !important}\\n\\n\\n@keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n@-webkit-keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\na.cyclingLink {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\na.cyclingLink:hover {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\n.cyclingLink * {\\n  display: inline-block !important;\\n  left: 0;\\n  transition: opacity 1s;\\n}\\n.cyclingLinkEnabled {\\n  opacity: 1;\\n  animation: cyc-dissolve 0.8s ease-in reverse; -webkit-animation: cyc-dissolve 0.8s ease-in reverse;\\n  position: relative;\\n}\\n.cyclingLinkDisabled {\\n  opacity: 0;\\n  animation: cyc-dissolve 0.8s ease-out;  -webkit-animation: cyc-dissolve 0.8s ease-out;\\n  position: absolute;\\n}\\n.cyclingLinkInit, .cyclingLinkInit::before {\\n  animation-iteration-count: 0 !important;\\n  -webkit-animation-iteration-count: 0 !important;\\n}\\n",
+      "links": []
+    },
+    {
+      "pid": 69,
+      "name": "jellyfire",
+      "text": "People are walking toward a clearing in the garden, a grass expanse covered in [[dark circles]].",
+      "links": [
+        {
+          "text": "dark circles",
+          "destination": {
+            "name": "dark circles",
+            "pid": 125
+          }
+        }
+      ]
+    },
+    {
+      "pid": 70,
+      "name": "\"I'm kind of over eating. Kind of over having a corporeal body.",
+      "text": "\"Hahah. Seriously. Really overrated. Breathing sucks too.\"\\n\\n[[Time passes in a very nice way|chasm people]]",
+      "links": [
+        {
+          "text": "Time passes in a very nice way",
+          "destination": {
+            "name": "chasm people",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 71,
+      "name": "leave",
+      "text": "Why must I leave?\\n\\n[[\"Because you are dead.\"|alive]]\\n\\n[[\"Because I am alive.\"|alive]]",
+      "links": [
+        {
+          "text": "\"Because you are dead.\"",
+          "destination": {
+            "name": "alive",
+            "pid": 83
+          }
+        },
+        {
+          "text": "\"Because I am alive.\"",
+          "destination": {
+            "name": "alive",
+            "pid": 83
+          }
+        }
+      ]
+    },
+    {
+      "pid": 72,
+      "name": "Shame",
+      "text": "Draw a sigil of shame.\\n\\n[[Done|bad]]",
+      "links": [
+        {
+          "text": "Done",
+          "destination": {
+            "name": "bad",
+            "pid": 73
+          }
+        }
+      ]
+    },
+    {
+      "pid": 73,
+      "name": "bad",
+      "text": "Certain days came to represent those bad times. They visit you, and [[that day]] holds all the days in its hands, as the tip of a spear carries the weight of the entire spear.",
+      "links": [
+        {
+          "text": "that day",
+          "destination": {
+            "name": "that day",
+            "pid": 174
+          }
+        }
+      ]
+    },
+    {
+      "pid": 74,
+      "name": "design_wearable",
+      "text": "a <<cyclinglink $type_1 \"diadem\" \"gauntlet\" \"mask\">>\\n\\nmade of\\n\\n<<cyclinglink $material_1 \"heretic bone\" \"dronesteel\" \"lake crystal\">>\\n\\n[[Yes|material_result]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "material_result",
+            "pid": 94
+          }
+        }
+      ]
+    },
+    {
+      "pid": 75,
+      "name": "And fall asleep on the grass",
+      "text": "<<timedgoto \"Garden\" 4s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "Garden",
+            "pid": 223
+          }
+        }
+      ]
+    },
+    {
+      "pid": 76,
+      "name": "bonfire",
+      "text": "Dehydrated femme carcasses are being thrown in the fire pits. Everyone is drinking and having a good time.\\n\\n[[And you|draw spore]]",
+      "links": [
+        {
+          "text": "And you",
+          "destination": {
+            "name": "draw spore",
+            "pid": 173
+          }
+        }
+      ]
+    },
+    {
+      "pid": 77,
+      "name": "weapon_desc",
+      "text": "<<if $weapon_material_1 is \"the bones of a rival tyrant\">>You hear the empress removed the bones without breaking the skin. One of her better party tricks.<<endif>><<if $weapon_material_1 is \"dream-dripped steel\">>Forged in the cool fires of dream. Not red hot, not white hot, but prism hot, the fresh <<if $weapon_type is \"whip\">>tip of the whip<<endif>><<if $weapon_type is \"dagger\">>blade<<endif>><<if $weapon_type is \"bow\">>limbs of the bow<<endif>> plunged into a vat of distilled wakefulness, hissing with oneiric heat.<<endif>><<if $weapon_material_1 is \"barrow queen chitin\">>You've seen the skulldiers swarming into the wasteland hills like ants, fighting their eternal war against the barrow queens.\\n\\nApparently the queens defend themselves by triggering a shockwave of orgasms, leaving writhing bodies helpless amid the coffin shards. No one knows what happens afterwards, but it could hardly be anything so boring as death.<<endif>>\\n\\n[[Yes|blessing_weapon]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "blessing_weapon",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 78,
+      "name": "pull you",
+      "text": "You reach the garden and the hands become feet, fanning out, kicking at bushes, stomping out soft pink sporeflesh.\\n\\nEverything that happens today is this question:\\n\\nAre you [[part of the world, one with others, a person|together]], or [[are you alone and apart?|apart]]",
+      "links": [
+        {
+          "text": "part of the world, one with others, a person",
+          "destination": {
+            "name": "together",
+            "pid": 259
+          }
+        },
+        {
+          "text": "are you alone and apart?",
+          "destination": {
+            "name": "apart",
+            "pid": 55
+          }
+        }
+      ]
+    },
+    {
+      "pid": 79,
+      "name": "telescope",
+      "text": "Look at [[jungle]] or [[waste]]\\n\\n[[Set telescope aside|Balconies]]",
+      "links": [
+        {
+          "text": "jungle",
+          "destination": {
+            "name": "jungle",
+            "pid": 263
+          }
+        },
+        {
+          "text": "waste",
+          "destination": {
+            "name": "waste",
+            "pid": 188
+          }
+        },
+        {
+          "text": "Set telescope aside",
+          "destination": {
+            "name": "Balconies",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 80,
+      "name": "Do your meditations",
+      "text": "Take a deep breath.\\n\\n[[I am holding my breath]]<<fadeoutsound \"wandering.mp3\">>",
+      "links": [
+        {
+          "text": "I am holding my breath",
+          "destination": {
+            "name": "I am holding my breath",
+            "pid": 45
+          }
+        }
+      ]
+    },
+    {
+      "pid": 81,
+      "name": "burst",
+      "text": "You stare into the sky, into the <<replace \"blinding sun.\">>blinding sun.\\n\\nIs it <<replace \"raining?\">>raining?\\n\\nA drop on your <<replace \"face.\">>face.\\n\\nAnother <<replace \"drop.\">>drop.\\n\\n[[Another]].<<endreplace>><<endreplace>><<endreplace>><<endreplace>>",
+      "links": [
+        {
+          "text": "Another",
+          "destination": {
+            "name": "Another",
+            "pid": 264
+          }
+        }
+      ]
+    },
+    {
+      "pid": 82,
+      "name": "wanderfade",
+      "text": "<<if $day is $final_day>><<fadeoutsound \"drugs.mp3\">><<fadeoutsound \"scene.mp3\">><<fadeoutsound \"make.mp3\">><<fadeoutsound \"darkmaking.mp3\">><<fadeoutsound \"letter.mp3\">><<fadeoutsound \"friend.mp3\">><<fadeoutsound \"wandering.mp3\">><<fadeinsound \"creep.mp3\">><<else>><<fadeoutsound \"scene.mp3\">><<fadeoutsound \"make.mp3\">><<fadeoutsound \"letter.mp3\">><<fadeoutsound \"creep.mp3\">><<fadeoutsound \"friend.mp3\">><<fadeoutsound \"drugs.mp3\">><<fadeoutsound \"intro.mp3\">><<fadeinsound \"wandering.mp3\">><<endif>>",
+      "links": []
+    },
+    {
+      "pid": 83,
+      "name": "alive",
+      "text": "<<timedgoto \"end\" 6s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "end",
+            "pid": 222
+          }
+        }
+      ]
+    },
+    {
+      "pid": 84,
+      "name": "exhale",
+      "text": "<<if $dead_person is \"lake\">><<print either(\"You exhale death.\",\"You exhale a breathe of cold air, like winter was in your throat.\",\"You exhale her ashes.\",\"You exhale the glass dust of her vaporized tears.\")>><<else>>Exhale.<<endif>>\\n\\n[[I am holding my breath]]\\n\\n[[I need different breaths]]\\n\\n[[Stop|Lake]]",
+      "links": [
+        {
+          "text": "I am holding my breath",
+          "destination": {
+            "name": "I am holding my breath",
+            "pid": 45
+          }
+        },
+        {
+          "text": "I need different breaths",
+          "destination": {
+            "name": "I need different breaths",
+            "pid": 15
+          }
+        },
+        {
+          "text": "Stop",
+          "destination": {
+            "name": "Lake",
+            "pid": 207
+          }
+        }
+      ]
+    },
+    {
+      "pid": 85,
+      "name": "see",
+      "text": "Draw a sigil of insight.\\n\\n[[And fall asleep on the grass]]",
+      "links": [
+        {
+          "text": "And fall asleep on the grass",
+          "destination": {
+            "name": "And fall asleep on the grass",
+            "pid": 75
+          }
+        }
+      ]
+    },
+    {
+      "pid": 86,
+      "name": "connect",
+      "text": "As if behind those shadowy leaves the walls weren't lurking less than a minute away.\\n\\n[[Look back|Turn away, toward the dark trees]]",
+      "links": [
+        {
+          "text": "Look back",
+          "destination": {
+            "name": "Turn away, toward the dark trees",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 87,
+      "name": "escape",
+      "text": "<<timedgoto \"hotel\" 9s>><<stopallsound>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "hotel",
+            "pid": 178
+          }
+        }
+      ]
+    },
+    {
+      "pid": 88,
+      "name": "fail",
+      "text": "Ideate: <<cyclinglink $ideate \"Letting go\" \"Falling into the sky\" \"Into the jungle\" \"Into the sea\" \"Riding into the storm\" \"Shredded by gravel\" \"Crashing\" \"Breaking apart\" \"Screaming\">><<timedgoto \"break the loop\" 16s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "break the loop",
+            "pid": 2
+          }
+        }
+      ]
+    },
+    {
+      "pid": 89,
+      "name": "home",
+      "text": "//Why don't you come home?//\\n\\n<<cyclinglink $paralyzing \"Paralyzing anger\" \"Unbearable longing\">>.\\n\\n//We miss our--//\\n\\n[[Let the wind take it]]\\n\\n[[Fold it up and place it in the bottom of your chest]]",
+      "links": [
+        {
+          "text": "Let the wind take it",
+          "destination": {
+            "name": "Let the wind take it",
+            "pid": 57
+          }
+        },
+        {
+          "text": "Fold it up and place it in the bottom of your chest",
+          "destination": {
+            "name": "Fold it up and place it in the bottom of your chest",
+            "pid": 261
+          }
+        }
+      ]
+    },
+    {
+      "pid": 90,
+      "name": "yes",
+      "text": "\"The last time I saw you, you were--\"\\n\\n<<$horrible>>\\n\\n\"...yes.\"\\n\\n[[\"I hoped to see you again. Now that things are different.\"|hope]]",
+      "links": [
+        {
+          "text": "\"I hoped to see you again. Now that things are different.\"",
+          "destination": {
+            "name": "hope",
+            "pid": 38
+          }
+        }
+      ]
+    },
+    {
+      "pid": 91,
+      "name": "StorySettings",
+      "text": "jquery:off\\nhash:off\\nbookmark:on\\nmodernizr:off\\nundo:on\\nobfuscate:off\\nexitprompt:on\\nblankcss:off\\n",
+      "links": []
+    },
+    {
+      "pid": 92,
+      "name": "Let it be",
+      "text": "The spore crawls into a strangler fig hollow, climbing weakly up the choked spiral.\\n\\n[[The mob rushes to the courtyard]]",
+      "links": [
+        {
+          "text": "The mob rushes to the courtyard",
+          "destination": {
+            "name": "The mob rushes to the courtyard",
+            "pid": 253
+          }
+        }
+      ]
+    },
+    {
+      "pid": 93,
+      "name": "dream distillery",
+      "text": "Pale, shriveled humans sleep forever on the floor. Pipes run from their [[heads]] into iron barrels.\\n\\n<<if $tasted is false>>This batch has a <<print either(\"fine\",\"rich\",\"pale\",\"bright\",\"vivid\")>> <<print either(\"mauve\",\"crimson\",\"black\",\"white\",\"chartreuse\")>> color. You take a <<replace \"sip.\">>sip.<<set $tasted = true>>\\n\\nA bouquet of <<print either(\"fight or flight\", \"co-morbidity\",\"genetic predisposition\",\"claustrophobia\",\"drowning\",\"agorophobia\",\"stormclouds\",\"malignant narcissism\",\"trichotillomania\")>>, <<print either(\"a crisp\",\"a subtle\",\"a bold\",\"an intense\",\"a powerful\",\"a refined\",\"a delicate\")>> flavor of <<print either(\"idealism\",\"hope\",\"ecstatic clarity\",\"charity\",\"lust\",\"compassion\",\"defiance\",\"adoration\",\"cuteness\",\"zealotry\",\"intimacy\",\"grace\")>>, and an aftertaste of <<print either(\"humiliation\",\"broken promises\",\"regret\",\"miscarriage\",\"surveillance\",\"anhedonia\",\"betrayal\",\"injustice\",\"harm\",\"trauma\",\"erasure\",\"ostracism\",\"exile\",\"suspicion\",\"suspicion\",\"amnesia\",\"penitence\")>>.<<endreplace>><<else>>[[Workers]] are <<print either(\"watering the humans\",\"checking pipes for leaks\",\"cleaning up dream spills\",\"bottling fermented dreams\")>>.<<endif>>\\n\\n[[Leave|City]]",
+      "links": [
+        {
+          "text": "heads",
+          "destination": {
+            "name": "heads",
+            "pid": 114
+          }
+        },
+        {
+          "text": "Workers",
+          "destination": {
+            "name": "Workers",
+            "pid": 37
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "City",
+            "pid": 203
+          }
+        }
+      ]
+    },
+    {
+      "pid": 94,
+      "name": "material_result",
+      "text": "<<if $material_1 is \"heretic bone\">>You swirl the marrow. These are fairly pristine for heretic bones. No fire damage, only slight splintering from pressure. Rack? The placing of many heavy stones over a long period of time? Torn apart by horses?\\n\\nIt's hilarious how many ways there are to destroy someone.<<endif>><<if $material_1 is \"lake crystal\">>Translucent crystals from the lake. They've absorbed a thousand of the empress' larval cycles. Marinated in her sacred waters.<<endif>><<if $material_1 is \"dronesteel\">>You melt carefully, avoiding the reservoirs of toxic fluid, the dormant lightning, the cylinders that corrupt air itself.<<endif>>\\n\\n[[And then...|glyphs]]",
+      "links": [
+        {
+          "text": "And then...",
+          "destination": {
+            "name": "glyphs",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 95,
+      "name": "bio-matter",
+      "text": "<<if $body_material is \"blood\">>You find a vein and slide the needle in.\\n\\nDrops of blood ooze from your skin, climbing your hand like a glistening red glove.<<endif>><<if $body_material is \"bone\">>You take a chisel and hollow needle and pound it into the bone. You pour drops of melter into the needle\\n\\nA tendril of bone rises through the hole. You wrap it around your finger and pull.<<endif>><<if $body_material is \"skin\">>You pour the melter on your leg. The skin liquefies and wraps around your arm like a black snake.<<endif>>\\n\\n[[Yes|another vial]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "another vial",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 96,
+      "name": "black boxes",
+      "text": "The boxes are full of white liquid. They never overflow, no matter how much liquid drains from the maidens.\\n\\n[[Look away|temple]]",
+      "links": [
+        {
+          "text": "Look away",
+          "destination": {
+            "name": "temple",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 97,
+      "name": "Sedina",
+      "text": "You try to catch her gaze. She meets your eyes for a moment before nodding and looking away.\\n\\nYou start [[breathing]] again.",
+      "links": [
+        {
+          "text": "breathing",
+          "destination": {
+            "name": "breathing",
+            "pid": 43
+          }
+        }
+      ]
+    },
+    {
+      "pid": 98,
+      "name": "Untitled Passage 2",
+      "text": "-new text at temple during days 14-17\\n-new activity at lake\\n-you can see sigils at end",
+      "links": []
+    },
+    {
+      "pid": 99,
+      "name": "please",
+      "text": "Please remember: nothing you can do is wrong.<<timedgoto \"premonth\" 4.5s>><<fadeinsound \"intro.mp3\">>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "premonth",
+            "pid": 251
+          }
+        }
+      ]
+    },
+    {
+      "pid": 100,
+      "name": "sleep_process",
+      "text": "<<set $weather = random(1,7)>><<set $tasted = false>>\\n<<if $day neq 1>><<set $dead_person = either(\"garden\",\"workshop\",\"city\",\"lake\",\"balcony\",\"temple\")>><<endif>>\\n<<if $hormone_day is 7>><<set $hormone_need = true>><<set $hormone_day = 0>><<endif>>\\n<<set $day += 1>><<set $hormone_day += 1>><<set $energy = 1>>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "temple",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 101,
+      "name": "do you",
+      "text": "\"Do you want your nails done?\"\\n\\n[[YES|nails]]\\n",
+      "links": [
+        {
+          "text": "YES",
+          "destination": {
+            "name": "nails",
+            "pid": 109
+          }
+        }
+      ]
+    },
+    {
+      "pid": 102,
+      "name": "Crush them",
+      "text": "You step close. They billow in response, puffing larger than you would have thought.\\n\\nLittle princess teeth glitter and drip[[--|tears]]",
+      "links": [
+        {
+          "text": "--",
+          "destination": {
+            "name": "tears",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 103,
+      "name": "prayer labyrinth",
+      "text": "A maze without walls.\\n\\nThis is the meaning of faith.\\n\\n[[Yes|temple]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "temple",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 104,
+      "name": "new",
+      "text": "Draw a sigil of new beginnings on your skin.\\n\\n[[Done|interval][$destination = \"sleep\"]]",
+      "links": [
+        {
+          "text": "Done",
+          "destination": {
+            "name": "interval",
+            "pid": 256
+          }
+        }
+      ]
+    },
+    {
+      "pid": 105,
+      "name": "falling",
+      "text": "She is talking to someone.\\n\\nYou [[disappear|Throneroom]].",
+      "links": [
+        {
+          "text": "disappear",
+          "destination": {
+            "name": "Throneroom",
+            "pid": 186
+          }
+        }
+      ]
+    },
+    {
+      "pid": 106,
+      "name": "temple",
+      "text": "A [[censer]] burns, filling the temple with smoke. A row of [[jars]] sits behind curtains. <<if $dead_person is \"temple\" and $day neq 1>>A dead person is riding on the neck of a statue. They watch you.<<endif>>\\n\\n<<if $day gte 14 and $day lte 17>><<if $day is 14>>The dire maidens are walking the [[prayer labyrinth]].<<endif>><<if $day is 15>>The dire maidens are kissing the feet of the [[statues]] that traveled here from Damasay, and bathing their wounds of acid rain.<<endif>><<if $day is 16>>The dire maidens are mortifying themselves with [[nerve coils]].<<endif>><<if $day is 17>>The dire maidens are draining their confessions into [[black boxes]].<<endif>><<else>>The [[gods]] are silent.<<endif>>\\n\\n[[Leave|City]]",
+      "links": [
+        {
+          "text": "censer",
+          "destination": {
+            "name": "censer",
+            "pid": 41
+          }
+        },
+        {
+          "text": "jars",
+          "destination": {
+            "name": "jars",
+            "pid": 34
+          }
+        },
+        {
+          "text": "prayer labyrinth",
+          "destination": {
+            "name": "prayer labyrinth",
+            "pid": 103
+          }
+        },
+        {
+          "text": "statues",
+          "destination": {
+            "name": "statues",
+            "pid": 139
+          }
+        },
+        {
+          "text": "nerve coils",
+          "destination": {
+            "name": "nerve coils",
+            "pid": 112
+          }
+        },
+        {
+          "text": "black boxes",
+          "destination": {
+            "name": "black boxes",
+            "pid": 96
+          }
+        },
+        {
+          "text": "gods",
+          "destination": {
+            "name": "gods",
+            "pid": 44
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "City",
+            "pid": 203
+          }
+        }
+      ]
+    },
+    {
+      "pid": 107,
+      "name": "The mob is going inside the palace",
+      "text": "You hear movement in an [[alcove|huddling]].",
+      "links": [
+        {
+          "text": "alcove",
+          "destination": {
+            "name": "huddling",
+            "pid": 258
+          }
+        }
+      ]
+    },
+    {
+      "pid": 108,
+      "name": "Turn away, toward the dark trees",
+      "text": "The noise recedes. While your gaze is turned, the garden seems like a lost splinter of forest that must somehow [[connect]] to all other forests.\\n\\nThe old year is [[ending|new]].",
+      "links": [
+        {
+          "text": "connect",
+          "destination": {
+            "name": "connect",
+            "pid": 86
+          }
+        },
+        {
+          "text": "ending",
+          "destination": {
+            "name": "new",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 109,
+      "name": "nails",
+      "text": "She paints\\n\\n<<replace \"the first nail\">>the first nail<<set $nail += 1>><<if $nail is 10>><<timedgoto \"nice nails\" 2s>><<endif>><<endreplace>>\\n<<replace \"the second nail\">>the second nail<<set $nail += 1>><<if $nail is 10>><<timedgoto \"nice nails\" 2s>><<endif>><<endreplace>>\\n<<replace \"the third nail\">>the third nail<<set $nail += 1>><<if $nail is 10>><<timedgoto \"nice nails\" 2s>><<endif>><<endreplace>>\\n<<replace \"the fourth nail\">>the fourth nail<<set $nail += 1>><<if $nail is 10>><<timedgoto \"nice nails\" 2s>><<endif>><<endreplace>>\\n<<replace \"the fifth nail\">>the fifth nail<<set $nail += 1>><<if $nail is 10>><<timedgoto \"nice nails\" 2s>><<endif>><<endreplace>>\\n<<replace \"the sixth nail\">>the sixth nail<<set $nail += 1>><<if $nail is 10>><<timedgoto \"nice nails\" 2s>><<endif>><<endreplace>>\\n<<replace \"the seventh nail\">>the seventh nail<<set $nail += 1>><<if $nail is 10>><<timedgoto \"nice nails\" 2s>><<endif>><<endreplace>>\\n<<replace \"the eighth nail\">>the eighth nail<<set $nail += 1>><<if $nail is 10>><<timedgoto \"nice nails\" 2s>><<endif>><<endreplace>>\\n<<replace \"the ninth nail\">>the ninth nail<<set $nail += 1>><<if $nail is 10>><<timedgoto \"nice nails\" 2s>><<endif>><<endreplace>>\\n<<replace \"the tenth nail\">>the tenth nail<<set $nail += 1>><<if $nail is 10>><<timedgoto \"nice nails\" 2s>><<endif>><<endreplace>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "nice nails",
+            "pid": 59
+          }
+        }
+      ]
+    },
+    {
+      "pid": 110,
+      "name": "free",
+      "text": "Young jellyfire bursts free, smoking the tips of her hair. After so little fermentation they barely float, wafting across the grass like low [[devouring]] clouds.",
+      "links": [
+        {
+          "text": "devouring",
+          "destination": {
+            "name": "devouring",
+            "pid": 158
+          }
+        }
+      ]
+    },
+    {
+      "pid": 111,
+      "name": "credits",
+      "text": "<h1>With Those We Love Alive</h1>\\nby [[Porpentine|http://slimedaughter.com]]\\n\\nScored by [[Brenda Neotenomie|https://soundcloud.com/neotenomie]]\\n\\nTesting and Feedback by\\n[[Lilith|http://cicadamarionette.com]]\\n[[Ben Esposito|http://torahhorse.com]]\\n[[Brenda Neotenomie|https://soundcloud.com/neotenomie]]\\n\\nprincess spores inspired by Goddesses17\\n\\n[[Sigils|http://porpentine.tumblr.com/tagged/glory-2-with-those-we-love-alive]]",
+      "links": []
+    },
+    {
+      "pid": 112,
+      "name": "nerve coils",
+      "text": "Intestines soaked in a nightmare-lye blend, then twisted into whips. Each lash carries a night of terror.\\n\\n[[Flinch|temple]]",
+      "links": [
+        {
+          "text": "Flinch",
+          "destination": {
+            "name": "temple",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 113,
+      "name": "\"Yes.\"",
+      "text": "She looks into your eyes like she's trying to find something.\\n\\n\"I hope so.\"\\n\\n[[Silence|dress]]",
+      "links": [
+        {
+          "text": "Silence",
+          "destination": {
+            "name": "dress",
+            "pid": 217
+          }
+        }
+      ]
+    },
+    {
+      "pid": 114,
+      "name": "heads",
+      "text": "A living breathing terroir of flesh.\\n\\n[[Detach yourself|dream distillery]]",
+      "links": [
+        {
+          "text": "Detach yourself",
+          "destination": {
+            "name": "dream distillery",
+            "pid": 93
+          }
+        }
+      ]
+    },
+    {
+      "pid": 115,
+      "name": "mewling sound",
+      "text": "A princess spore is crawling through the leaves. It stares in your direction, lips trembling, struggling to open its kittenblind eyes.\\n\\n<<if $together is false>>[[Let it be]]<<else>>[[Crush it]]<<endif>>",
+      "links": [
+        {
+          "text": "Let it be",
+          "destination": {
+            "name": "Let it be",
+            "pid": 92
+          }
+        },
+        {
+          "text": "Crush it",
+          "destination": {
+            "name": "Crush it",
+            "pid": 117
+          }
+        }
+      ]
+    },
+    {
+      "pid": 116,
+      "name": "fantasies",
+      "text": "She is standing in the center of the room, flanked by pillars of stone and light. An [[agent]] is listening to her.\\n\\n\"I brought a gift for the [[Empress|empress]], a token of loyalty from my coven.\"",
+      "links": [
+        {
+          "text": "agent",
+          "destination": {
+            "name": "agent",
+            "pid": 208
+          }
+        },
+        {
+          "text": "Empress",
+          "destination": {
+            "name": "empress",
+            "pid": 61
+          }
+        }
+      ]
+    },
+    {
+      "pid": 117,
+      "name": "Crush it",
+      "text": "The spore is soft and crumbling in your hands. Its cries fade like the whine of a pierced balloon.\\n\\n[[The mob rushes to the courtyard]]",
+      "links": [
+        {
+          "text": "The mob rushes to the courtyard",
+          "destination": {
+            "name": "The mob rushes to the courtyard",
+            "pid": 253
+          }
+        }
+      ]
+    },
+    {
+      "pid": 118,
+      "name": "You dare not refuse",
+      "text": "Their juice stains your fingers. It lingers on your mouth, sweet turning to bitter like sun to evening.\\n\\n[[Lick your lips|jellyfire]]",
+      "links": [
+        {
+          "text": "Lick your lips",
+          "destination": {
+            "name": "jellyfire",
+            "pid": 69
+          }
+        }
+      ]
+    },
+    {
+      "pid": 119,
+      "name": "feeling",
+      "text": "The garden is beautiful tonight but somehow this is all you can think of.\\n\\nShe sees it in your <<replace \"face.\">>face.\\n\\n\"<<$name>>....\"\\n\\n<<cyclinglink $respond \"I'm okay.\" \"I can't stop thinking about it.\" \"You shouldn't have to deal with my shit. Let's just have a good time.\">>\\n\\n[[Answer|vial]]<<endreplace>><<fadeinsound \"friend.mp3\">>",
+      "links": [
+        {
+          "text": "Answer",
+          "destination": {
+            "name": "vial",
+            "pid": 242
+          }
+        }
+      ]
+    },
+    {
+      "pid": 120,
+      "name": "last",
+      "text": "\"The last time I saw you, you were--\"\\n\\n<<cyclinglink $horrible \"Miserable?\" \"A wreck?\" \"A horrible creature of gender?\">>\\n\\n\"...[[yes]].\"",
+      "links": [
+        {
+          "text": "yes",
+          "destination": {
+            "name": "yes",
+            "pid": 90
+          }
+        }
+      ]
+    },
+    {
+      "pid": 121,
+      "name": "Palace",
+      "text": "The palace courtyard.<<if $day is 21>> It [[rained]] while you were asleep.<<endif>><<if $dead_person is \"palace\">> A dead person is whispering against the wall.<<endif>>\\n\\nA [[balcony|Balconies]] looks upon the outside world. <<if $day is 0>>The throne room is closed for the Empress's inaugural blood bath.<<else>>The [[throne room|Throneroom]] lies deeper inside the palace.<<endif>>\\n\\n[[Your chambers]] are on the second floor.\\n\\nThe [[garden|Garden]] sprawls over there. Your [[workshop|Workshop]] is in a cabin down a shady path.\\n\\n<<if $day is $final_day>>The city entrance is barricaded.<<else>>The [[city|City]] is through a vast archway hanging with vines.<<endif>><<display \"wanderfade\">>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "wanderfade",
+            "pid": 82
+          }
+        },
+        {
+          "text": "rained",
+          "destination": {
+            "name": "rained",
+            "pid": 128
+          }
+        },
+        {
+          "text": "balcony",
+          "destination": {
+            "name": "Balconies",
+            "pid": 24
+          }
+        },
+        {
+          "text": "throne room",
+          "destination": {
+            "name": "Throneroom",
+            "pid": 186
+          }
+        },
+        {
+          "text": "Your chambers",
+          "destination": {
+            "name": "Your chambers",
+            "pid": 216
+          }
+        },
+        {
+          "text": "garden",
+          "destination": {
+            "name": "Garden",
+            "pid": 223
+          }
+        },
+        {
+          "text": "workshop",
+          "destination": {
+            "name": "Workshop",
+            "pid": 197
+          }
+        },
+        {
+          "text": "city",
+          "destination": {
+            "name": "City",
+            "pid": 203
+          }
+        }
+      ]
+    },
+    {
+      "pid": 122,
+      "name": "spill",
+      "text": "<<replace \"A stick of mascara.\">><<replace \"An estroglyph.\">><<replace \"A piece of salt candy.\">>[[Something that doesn't exist]]<<endreplace>><<endreplace>><<endreplace>>",
+      "links": [
+        {
+          "text": "Something that doesn't exist",
+          "destination": {
+            "name": "Something that doesn't exist",
+            "pid": 40
+          }
+        }
+      ]
+    },
+    {
+      "pid": 123,
+      "name": "css dark",
+      "text": "\\n\\n\\n#passages{font-size:20px; font-family: 'Open Sans';\\nborder-left: 0px !important;border-left: 0px !important; margin:100px 0px 0px 100px !important; }\\n\\n#passages > div, #passages > p { text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n\\nbody {\\n\\tbackground-color:black   !important;\\n    background-attachment:fixed;\\n    margin:0;\\n}\\n\\n.passage{  width: 800px !important ; position: absolute;\\n  top: 0;\\n  bottom: 0;\\n  left: 0;\\n  right: 0;\\n\\n\\n  height: 80%;}\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}\\n\\n\\n\\n@keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n@-webkit-keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\na.cyclingLink {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\na.cyclingLink:hover {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\n.cyclingLink * {\\n  display: inline-block !important;\\n  left: 0;\\n  transition: opacity 1s;\\n}\\n.cyclingLinkEnabled {\\n  opacity: 1;\\n  animation: cyc-dissolve 0.8s ease-in reverse; -webkit-animation: cyc-dissolve 0.8s ease-in reverse;\\n  position: relative;\\n}\\n.cyclingLinkDisabled {\\n  opacity: 0;\\n  animation: cyc-dissolve 0.8s ease-out;  -webkit-animation: cyc-dissolve 0.8s ease-out;\\n  position: absolute;\\n}\\n.cyclingLinkInit, .cyclingLinkInit::before {\\n  animation-iteration-count: 0 !important;\\n  -webkit-animation-iteration-count: 0 !important;\\n}\\n\\n.passage a.externalLink\\n\\t{font-size:30px !important;color:#ea6ab9; text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n.passage a.externalLink:hover\\n\\t{text-decoration:none !important;font-size:30px !important;color:#f095cd !important}\\na.internalLink, a.externaLink {font-size:30px !important;color:#ea6ab9}\\na.internalLink:hover, a.externaLink:hover {text-decoration:none !important;font-size:30px !important;color:#f095cd !important}\\na.internalLink.replaceLinkx { color: #6aea9b; !important}\\na.internalLink.replaceLinkx:hover { color: #6aeadb; !important}\\na.internalLink.reviseLink { color: #ea6ab9; !important}\\n\\nh1\\n\\t{color:#ea6ab9 !important;font-size:60px;line-height:60px;}",
+      "links": []
+    },
+    {
+      "pid": 124,
+      "name": "k",
+      "text": "She looks tired.\\n\\n[[\"I'll see you tomorrow.\"|going]]\\n\\n[[\"I need to sleep but I'll miss you.\"|going]]\\n\\n[[\"Good night, Sedina.\"|going]]",
+      "links": [
+        {
+          "text": "\"I'll see you tomorrow.\"",
+          "destination": {
+            "name": "going",
+            "pid": 29
+          }
+        },
+        {
+          "text": "\"I need to sleep but I'll miss you.\"",
+          "destination": {
+            "name": "going",
+            "pid": 29
+          }
+        },
+        {
+          "text": "\"Good night, Sedina.\"",
+          "destination": {
+            "name": "going",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 125,
+      "name": "dark circles",
+      "text": "Jellyfire is released from the metal tubes in the earth where it fermented for the last year. It ripples into the sky in gorgeous sheets of color.\\n\\n[[Lie on your back and stare|floats]]\\n\\n[[Turn away, toward the dark trees]]",
+      "links": [
+        {
+          "text": "Lie on your back and stare",
+          "destination": {
+            "name": "floats",
+            "pid": 167
+          }
+        },
+        {
+          "text": "Turn away, toward the dark trees",
+          "destination": {
+            "name": "Turn away, toward the dark trees",
+            "pid": 108
+          }
+        }
+      ]
+    },
+    {
+      "pid": 126,
+      "name": "Get on your knees and lick her stain",
+      "text": "You get on your knees, palms flat on the cool stone, and close your eyes. Your tongue flicks out to taste a drop of her putrid nectar.\\n\\n[[Deep sigh]]",
+      "links": [
+        {
+          "text": "Deep sigh",
+          "destination": {
+            "name": "Deep sigh",
+            "pid": 180
+          }
+        }
+      ]
+    },
+    {
+      "pid": 127,
+      "name": "priestess",
+      "text": "Goddesses of anomaly and aberration, their domain is everything not. Their earthly manifestations are permanently burning origami angels.\\n\\n[[Fascinating|Visitors]]",
+      "links": [
+        {
+          "text": "Fascinating",
+          "destination": {
+            "name": "Visitors",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 128,
+      "name": "rained",
+      "text": "Hot humid rain flooding downhill into the city.\\n\\n[[Your skin feels sticky|Palace]]",
+      "links": [
+        {
+          "text": "Your skin feels sticky",
+          "destination": {
+            "name": "Palace",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 129,
+      "name": "thing",
+      "text": "You limp down the hall with the thing wrapped under a cloth. An agent rushes past. Through a window you see the walls bristling with skulldiers.\\n\\nThe [[sovereign body]] has been threatened.\\n",
+      "links": [
+        {
+          "text": "sovereign body",
+          "destination": {
+            "name": "sovereign body",
+            "pid": 179
+          }
+        }
+      ]
+    },
+    {
+      "pid": 130,
+      "name": "scaffolding",
+      "text": "Oily stains unreal the wood. Looks like nightmare damage.\\n\\nA sign says: //Repairs done in a week or so. Come back later to try our free samples!//\\n\\n[[Leave|City]]",
+      "links": [
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "City",
+            "pid": 203
+          }
+        }
+      ]
+    },
+    {
+      "pid": 131,
+      "name": "berry",
+      "text": "\"The empress has a gift for you.\"\\n\\nThe agent holds [[something]] in her hand.",
+      "links": [
+        {
+          "text": "something",
+          "destination": {
+            "name": "something",
+            "pid": 212
+          }
+        }
+      ]
+    },
+    {
+      "pid": 132,
+      "name": "swim",
+      "text": "You and her jump in the lake and start swimming for the distant shore.\\n\\nThe water sucks at you, thick and silty and freezing. Your horizon: whirling wet bark, her surging shoulders, dead branches like crocodiles.\\n\\nYour throat is filling with dirt-tasting water. She sees you [[struggling]] and reaches for your hand.",
+      "links": [
+        {
+          "text": "struggling",
+          "destination": {
+            "name": "struggling",
+            "pid": 230
+          }
+        }
+      ]
+    },
+    {
+      "pid": 133,
+      "name": "StoryAuthor",
+      "text": "Porpentine",
+      "links": []
+    },
+    {
+      "pid": 134,
+      "name": "drugs",
+      "text": "A long time ago she caught you bashing your head on the wall, the red stain getting bigger and bigger.\\n\\nShe held you until the [[feeling]] passed.<<fadeoutsound \"wandering.mp3\">>",
+      "links": [
+        {
+          "text": "feeling",
+          "destination": {
+            "name": "feeling",
+            "pid": 119
+          }
+        }
+      ]
+    },
+    {
+      "pid": 135,
+      "name": "sweetness",
+      "text": "<<fadeoutsound \"wandering.mp3\">><<fadeinsound \"creep.mp3\">>The empress and her agents pass by your window. Her abdomen is [[swollen]], trailing on the ground.",
+      "links": [
+        {
+          "text": "swollen",
+          "destination": {
+            "name": "swollen",
+            "pid": 240
+          }
+        }
+      ]
+    },
+    {
+      "pid": 136,
+      "name": "Eight seconds",
+      "text": "She smashes Sedina into the wall. All the air comes out of her, and some blood.\\n\\nSedina slides to the floor. The doors to the throne room burst open and agents fill the room.\\n\\n[[Throw up]]\\n",
+      "links": [
+        {
+          "text": "Throw up",
+          "destination": {
+            "name": "Throw up",
+            "pid": 267
+          }
+        }
+      ]
+    },
+    {
+      "pid": 137,
+      "name": "bath",
+      "text": "The empress is naked in her bath of [[worms]].\\n\\nShe <<replace \"is thinking.\">>thinks, make me a new [[hand|empress_hand]].\\n\\nHer thoughts linger like the fog of a kiss on your brain.<<endreplace>><<fadeoutsound \"wandering.mp3\">><<fadeinsound \"creep.mp3\">>",
+      "links": [
+        {
+          "text": "worms",
+          "destination": {
+            "name": "worms",
+            "pid": 5
+          }
+        },
+        {
+          "text": "hand",
+          "destination": {
+            "name": "empress_hand",
+            "pid": 148
+          }
+        }
+      ]
+    },
+    {
+      "pid": 138,
+      "name": "interstice",
+      "text": "<<timedgoto \"please\" 1.5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "please",
+            "pid": 99
+          }
+        }
+      ]
+    },
+    {
+      "pid": 139,
+      "name": "statues",
+      "text": "The metastasis of a hard heart.\\n\\nPenance through erosion.\\n\\n[[Okay|temple]]",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "temple",
+            "pid": 106
+          }
+        }
+      ]
+    },
+    {
+      "pid": 140,
+      "name": "weapon_message",
+      "text": "//The empress has need of a weapon, something to hang in the throne room.//\\n\\n[[Okay|Your chambers]]<<set $working to true>>",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "Your chambers",
+            "pid": 216
+          }
+        }
+      ]
+    },
+    {
+      "pid": 141,
+      "name": "note writer",
+      "text": "You sit in your room for an hour then find a piece of paper and a [[pen|note]].<<fadeoutsound \"wandering.mp3\" >><<loopsound \"scene.mp3\">>",
+      "links": [
+        {
+          "text": "pen",
+          "destination": {
+            "name": "note",
+            "pid": 224
+          }
+        }
+      ]
+    },
+    {
+      "pid": 142,
+      "name": "Return to your room",
+      "text": "<<cyclinglink $sweat \"Her humidity\" \"Your sweat\">> clings to you. You imagine ichor extruding from your skin for every step you take up the stairs, like those magic tricks where someone pulls a scarf from nowhere.\\n\\n[[Ugh|Your chambers]]",
+      "links": [
+        {
+          "text": "Ugh",
+          "destination": {
+            "name": "Your chambers",
+            "pid": 216
+          }
+        }
+      ]
+    },
+    {
+      "pid": 143,
+      "name": "red lake",
+      "text": "Dead brown leaves cover inky black lake.\\n\\n<<replace \"Something is rising from the lake.\">>The Empress rises from the water, dragging her train of leaves and ichor. Her larval skin floats across the lake like the carcass of a pale leviathan.\\n\\nHer aides pick wet plant matter from her skull.\\n\\n[[Wait]]<<endreplace>>",
+      "links": [
+        {
+          "text": "Wait",
+          "destination": {
+            "name": "Wait",
+            "pid": 39
+          }
+        }
+      ]
+    },
+    {
+      "pid": 144,
+      "name": "replace",
+      "text": "  version.extensions['replaceMacro'] = {major:1, minor:0, revision:0};\\n  macros['replace'] = {\\n    handler: function (g, e, f, b) {\\n        var h = insertElement(null, \"div\", null, \"replacement\");\\n        var k = b.source.indexOf('>>', b.matchStart) + 2;\\n        var a = b.source.slice(k);\\n        var d = -1;\\n        var c = '';\\n        var l = 0;\\n\\t\\n        for(var i = 0; i < a.length; i++) {\\n            if(a.substr(i, 14) == '<<endreplace>>') {\\n                if(l == 0) {\\n                    d = k + i + 14;\\n                    break;\\n                }\\n                else {\\n                    l--;\\n\\t\\t\\t  c += a.charAt(i);\\n                }\\n            }\\n            else {\\n\\t\\t\\t    if(a.substr(i, 9) == '<<replace') {\\n                    l++;\\n                }\\n                c += a.charAt(i);\\n            }\\n\\t\\t}\\n        if(d != -1) {\\n\\t\\t    var m = Wikifier.createInternalLink(g,null);\\n\\t\\t    m.className=\"internalLink replaceLink\";\\n\\t\\t    insertText(m,f[0]);\\n\\t\\t\\tinsertText(h,c);\\n\\t\\t\\tg.appendChild(h);\\n\\t\\t\\th.style.display = \"none\";\\n\\t\\t\\tm.onclick = function() {\\n\\t\\t\\t\\tvar n = this.nextSibling;\\n\\t\\t\\t\\tif (n) { \\n\\t\\t\\t\\t  var t = n.firstChild ?n.firstChild.nodeValue : \"\";\\n\\t\\t\\t\\t  removeChildren(n);\\n\\t\\t\\t\\t  new Wikifier(n,t);\\n\\t\\t\\t\\t  n.style.display = \"inline\";\\n\\t\\t\\t\\t  fade(n, { fade: \"in\" });\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\tthis.parentNode.removeChild(this);\\n\\t\\t\\t}\\n            b.nextMatch = d;\\n        }\\n        else {\\n            throwError(g, \"can't find matching endreplace\");\\n            delete h;\\n\\t\\t\\treturn;\\n        }\\n    }\\n  }\\n  macros['endreplace']={handler: function () {} }",
+      "links": []
+    },
+    {
+      "pid": 145,
+      "name": "down",
+      "text": "Always down. Always silent. Nothing leaves the fortress of your mouth.\\n\\nDo they die on the teeth? Do they suffocate in the throat? Or maybe no words ever existed, it's just deluded air rising and [[falling]].",
+      "links": [
+        {
+          "text": "falling",
+          "destination": {
+            "name": "falling",
+            "pid": 105
+          }
+        }
+      ]
+    },
+    {
+      "pid": 146,
+      "name": "Start",
+      "text": "[[<3|thislife]]<a title=\"web statistics\" href=\"http://statcounter.com/\"\\ntarget=\"_blank\"><img\\nsrc=\"http://c.statcounter.com/8390618/0/5aae552f/1/\"\\nalt=\"web statistics\" style=\"border:none;\"></a>\\n",
+      "links": [
+        {
+          "text": "<3",
+          "destination": {
+            "name": "thislife",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 147,
+      "name": "which day",
+      "text": "Hard to remember, isn't it? The feelings were hot and cold, fluxing so fast and intense it seemed like you would crack and split, and they color that [[day]] like water damage on a painting.",
+      "links": [
+        {
+          "text": "day",
+          "destination": {
+            "name": "day",
+            "pid": 25
+          }
+        }
+      ]
+    },
+    {
+      "pid": 148,
+      "name": "empress_hand",
+      "text": "Under the worms you see the bonerot in her left hand. Some congenital malady of the skull empresses? A hex from some nemesis?\\n\\nIt doesn't matter.\\n\\nYou feel [[strange|intimacy]].",
+      "links": [
+        {
+          "text": "strange",
+          "destination": {
+            "name": "intimacy",
+            "pid": 266
+          }
+        }
+      ]
+    },
+    {
+      "pid": 149,
+      "name": "hand_material_result",
+      "text": "<<if $hand_material is \"sangwood claws\">>Thick red sap stains your gloves. The tree is watered with blood for 20 years before it is felled.<<endif>><<if $hand_material is \"diamond with platinum joints\">>Each diamond comes from a different city-state. Extinct city-states. You melt them together like sculpting water.<<endif>><<if $hand_material is \"tortured ectoplasm\">>You can feel the pain in the ectoplasm smeared all over your fingers. For an unknown period of time, you can't tell your thoughts from the thoughts of this ectoplasm.\\n\\nYou set the ecto and wipe the trauma from your fingers.<<endif>>\\n\\n[[Okay|hand_flourish]]",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "hand_flourish",
+            "pid": 162
+          }
+        }
+      ]
+    },
+    {
+      "pid": 150,
+      "name": "spores",
+      "text": "The drunken hands of the mob [[pull you]] along.",
+      "links": [
+        {
+          "text": "pull you",
+          "destination": {
+            "name": "pull you",
+            "pid": 78
+          }
+        }
+      ]
+    },
+    {
+      "pid": 151,
+      "name": "\"Okay get me fifty rolls.\"",
+      "text": "\"Ha. I've never seen anyone explode before so that could be pretty fun.\"\\n\\n[[Time passes in a very nice way|chasm people]]",
+      "links": [
+        {
+          "text": "Time passes in a very nice way",
+          "destination": {
+            "name": "chasm people",
+            "pid": 63
+          }
+        }
+      ]
+    },
+    {
+      "pid": 152,
+      "name": "bench",
+      "text": "Lying on a garden bench. Her vials of ectoplasm are gone, replaced by a bag of hard precious things. She shows you one of the [[coins]].<<fadeoutsound \"wandering.mp3\" >><<fadeinsound \"friend.mp3\">>",
+      "links": [
+        {
+          "text": "coins",
+          "destination": {
+            "name": "coins",
+            "pid": 159
+          }
+        }
+      ]
+    },
+    {
+      "pid": 153,
+      "name": "princess spores",
+      "text": "The sky is full of [[pink]] like a volcanic burst of petals.<<fadeoutsound \"wandering.mp3\">><<fadeinsound \"spores.mp3\">>",
+      "links": [
+        {
+          "text": "pink",
+          "destination": {
+            "name": "pink",
+            "pid": 235
+          }
+        }
+      ]
+    },
+    {
+      "pid": 154,
+      "name": "css empress",
+      "text": "\\n\\n#passages{font-size:20px; font-family: 'Open Sans';\\nborder-left: 0px !important;border-left: 0px !important; margin:100px 0px 0px 100px !important; }\\n\\n#passages > div, #passages > p { text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n\\nbody {\\n\\t\\nbackground: rgb(201,22,114); /* Old browsers */\\nbackground: -moz-linear-gradient(top, rgba(201,22,114,1) 0%, rgba(41,1,43,1) 100%); /* FF3.6+ */\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(201,22,114,1)), color-stop(100%,rgba(41,1,43,1))); /* Chrome,Safari4+ */\\nbackground: -webkit-linear-gradient(top, rgba(201,22,114,1) 0%,rgba(41,1,43,1) 100%); /* Chrome10+,Safari5.1+ */\\nbackground: -o-linear-gradient(top, rgba(201,22,114,1) 0%,rgba(41,1,43,1) 100%); /* Opera 11.10+ */\\nbackground: -ms-linear-gradient(top, rgba(201,22,114,1) 0%,rgba(41,1,43,1) 100%); /* IE10+ */\\nbackground: linear-gradient(to bottom, rgba(201,22,114,1) 0%,rgba(41,1,43,1) 100%); /* W3C */\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c91672', endColorstr='#29012b',GradientType=0 ); /* IE6-9 */\\n    background-attachment:fixed;\\n    margin:0;\\n}\\n\\n.passage{  width: 600px !important ; position: absolute;\\n  top: 0;\\n  bottom: 0;\\n  left: 0;\\n  right: 0;\\n\\n\\n  height: 80%;}\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}\\na.internalLink, a.externaLink {font-size:30px !important;color:#ea6ab9}\\na.internalLink:hover, a.externaLink:hover {text-decoration:none !important;font-size:30px !important;color:#f095cd !important}\\na.internalLink.replaceLinkx { color: #6aea9b; !important}\\na.internalLink.replaceLinkx:hover { color: #6aeadb; !important}\\na.internalLink.reviseLink { color: #ea6ab9; !important}\\n\\n\\n@keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n@-webkit-keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\na.cyclingLink {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\na.cyclingLink:hover {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\n.cyclingLink * {\\n  display: inline-block !important;\\n  left: 0;\\n  transition: opacity 1s;\\n}\\n.cyclingLinkEnabled {\\n  opacity: 1;\\n  animation: cyc-dissolve 0.8s ease-in reverse; -webkit-animation: cyc-dissolve 0.8s ease-in reverse;\\n  position: relative;\\n}\\n.cyclingLinkDisabled {\\n  opacity: 0;\\n  animation: cyc-dissolve 0.8s ease-out;  -webkit-animation: cyc-dissolve 0.8s ease-out;\\n  position: absolute;\\n}\\n.cyclingLinkInit, .cyclingLinkInit::before {\\n  animation-iteration-count: 0 !important;\\n  -webkit-animation-iteration-count: 0 !important;\\n}\\n",
+      "links": []
+    },
+    {
+      "pid": 155,
+      "name": "cycling",
+      "text": "version.extensions.cyclinglinkMacro={major:3,minor:3,revision:0};\\nmacros.cyclinglink={handler:function(a,b,c){var rl=\"cyclingLink\";\\nfunction toggleText(w){w.classList.remove(\"cyclingLinkInit\");\\nw.classList.toggle(rl+\"Enabled\");w.classList.toggle(rl+\"Disabled\");\\nw.style.display=((w.style.display==\"none\")?\"inline\":\"none\")}switch(c[c.length-1]){case\"end\":var end=true;\\nc.pop();break;case\"out\":var out=true;c.pop();break}var v=\"\";if(c.length&&c[0][0]==\"$\"){v=c[0].slice(1);\\nc.shift()}var h=state.history[0].variables;if(out&&h[v]===\"\"){return\\n}var l=Wikifier.createInternalLink(a,null);l.className=\"internalLink cyclingLink\";\\nl.setAttribute(\"data-cycle\",0);for(var i=0;i<c.length;i++){var on=(i==Math.max(c.indexOf(h[v]),0));\\nvar d=insertElement(null,\"span\",null,\"cyclingLinkInit cyclingLink\"+((on)?\"En\":\"Dis\")+\"abled\");\\nif(on){h[v]=c[i];l.setAttribute(\"data-cycle\",i)}else{d.style.display=\"none\"\\n}insertText(d,c[i]);if(on&&end&&i==c.length-1){l.parentNode.replaceChild(d,l)\\n}else{l.appendChild(d)}}l.onclick=function(){var t=this.childNodes;\\nvar u=this.getAttribute(\"data-cycle\")-0;var m=t.length;toggleText(t[u]);\\nu=(u+1);if(!(out&&u==m)){u%=m;if(v){h[v]=c[u]}}else{h[v]=\"\"}if((end||out)&&u==m-(end?1:0)){if(end){var n=this.removeChild(t[u]);\\nn.className=rl+\"End\";n.style.display=\"inline\";this.parentNode.replaceChild(n,this)\\n}else{this.parentNode.removeChild(this);return}return}toggleText(t[u]);\\nthis.setAttribute(\"data-cycle\",u)}}};",
+      "links": []
+    },
+    {
+      "pid": 156,
+      "name": "silent",
+      "text": "\"It still hurts, doesn't it.\"\\n\\n\"<<cyclinglink $hurts \"These things don't just go away.\" \"Yes.\" \"No, I didn't mind being psychically mutilated as a child at all, what are you talking about.\">>\"\\n\\n[[Answer|close]]",
+      "links": [
+        {
+          "text": "Answer",
+          "destination": {
+            "name": "close",
+            "pid": 215
+          }
+        }
+      ]
+    },
+    {
+      "pid": 157,
+      "name": "her",
+      "text": "Her face <<replace \"was a scar palette\">>is healed<<set $face += 1>><<if $face gte 2>><<timedgoto \"post_face\" 3.5s>><<endif>><<endreplace>>, her hair <<replace \"was a tar ballet\">>is combed night<<set $face += 1>><<if $face gte 2>><<timedgoto \"post_face\" 3.5s>><<endif>><<endreplace>>.<<fadeoutsound \"scene.mp3\">><<fadeinsound \"friend.mp3\">>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "post_face",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 158,
+      "name": "devouring",
+      "text": "You hear the sounds of the [[garden dying]], and the pursuers dying. Both are very different, but become the same after awhile.\\n\\nSedina grabs your hand and pulls you toward the darkest part of the garden, where the foliage is high and tangled and the ground is swampy.\\n\\n[[Run or die]]",
+      "links": [
+        {
+          "text": "garden dying",
+          "destination": {
+            "name": "garden dying",
+            "pid": 177
+          }
+        },
+        {
+          "text": "Run or die",
+          "destination": {
+            "name": "Run or die",
+            "pid": 226
+          }
+        }
+      ]
+    },
+    {
+      "pid": 159,
+      "name": "coins",
+      "text": "\"I think this is worth like, fifty of those fried rolls. Remember the rolls? The ones you ate every day for awhile? You loved that shit.\"\\n\\n[[\"Okay get me fifty rolls.\"]]\\n\\n[[\"I'm kind of over eating. Kind of over having a corporeal body.]]",
+      "links": [
+        {
+          "text": "\"Okay get me fifty rolls.\"",
+          "destination": {
+            "name": "\"Okay get me fifty rolls.\"",
+            "pid": 151
+          }
+        },
+        {
+          "text": "\"I'm kind of over eating. Kind of over having a corporeal body.",
+          "destination": {
+            "name": "\"I'm kind of over eating. Kind of over having a corporeal body.",
+            "pid": 70
+          }
+        }
+      ]
+    },
+    {
+      "pid": 160,
+      "name": "chased",
+      "text": "<<replace \"Chased through the garden\">>Chased through the garden, <<if $body_material is \"blood\">>blood itching and burning<<endif>><<if $body_material is \"bone\">>bones tearing you inside<<endif>><<if $body_material is \"skin\">>skin burning like acid<<endif>>.\\n\\nThrough the place where [[fire|burning]] sleeps underground.<<endreplace>><<stopsound>><<loopsound \"escape.mp3\">>",
+      "links": [
+        {
+          "text": "fire",
+          "destination": {
+            "name": "burning",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 161,
+      "name": "wearable_message",
+      "text": "//The empress needs something nice for the ceremony. Something to adorn her.//\\n\\n[[Okay|Your chambers]]<<set $working to true>>",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "Your chambers",
+            "pid": 216
+          }
+        }
+      ]
+    },
+    {
+      "pid": 162,
+      "name": "hand_flourish",
+      "text": "And <<cyclinglink $hand_flourish \"set with a giant ruby\" \"veined with bright copper strands of hair\" \"fitted with obsidian nails\">>\\n\\n[[Yes|hand_flourish_result]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "hand_flourish_result",
+            "pid": 42
+          }
+        }
+      ]
+    },
+    {
+      "pid": 163,
+      "name": "drank",
+      "text": "That night you fell into a horrible fever. You sweated until it felt like strings threaded with broken glass were being pulled through your pores. You hallucinated. You fried. You could see nothing but the inside of your own [[skull]].",
+      "links": [
+        {
+          "text": "skull",
+          "destination": {
+            "name": "skull",
+            "pid": 191
+          }
+        }
+      ]
+    },
+    {
+      "pid": 164,
+      "name": "music",
+      "text": "(function () {\\n  \"use strict\";\\n  version.extensions['soundMacros'] = {\\n    major: 1,\\n    minor: 1,\\n    revision: 2\\n  };\\n  var p = macros['playsound'] = {\\n    soundtracks: {},\\n    handler: function (a, b, c, d) {\\n      var loop = function (m) {\\n          if (m.loop == undefined) {\\n            m.loopfn = function () {\\n              this.play();\\n            };\\n            m.addEventListener('ended', m.loopfn, 0);\\n          } else m.loop = true;\\n          m.play();\\n          };\\n      var s = eval(d.fullArgs());\\n      if (s) {\\n        s = s.toString();\\n        var m = this.soundtracks[s.slice(0, s.lastIndexOf(\".\"))];\\n        if (m) {\\n          if (b == \"playsound\") {\\n            m.play();\\n          } else if (b == \"loopsound\") {\\n            loop(m);\\n          } else if (b == \"pausesound\") {\\n            m.pause();\\n          } else if (b == \"unloopsound\") {\\n            if (m.loop != undefined) {\\n              m.loop = false;\\n            } else if (m.loopfn) {\\n              m.removeEventListener('ended', m.loopfn);\\n              delete m.loopfn;\\n            }\\n          } else if (b == \"stopsound\") {\\n            m.pause();\\n            m.currentTime = 0;\\n          } else if (b == \"fadeoutsound\" || b == \"fadeinsound\") {\\n            if (m.interval) clearInterval(m.interval);\\n            if (b == \"fadeinsound\") {\\n              if (m.currentTime>0) return;\\n              m.volume = 0;\\n              loop(m);\\n            } else {\\n              if (!m.currentTime) return;\\n              m.play();\\n            }\\n            var v = m.volume;\\n            m.interval = setInterval(function () {\\n              v = Math.min(1, Math.max(0, v + 0.004 * (b == \"fadeinsound\" ? 1 : -1)));\\n              m.volume = Math.easeInOut(v);\\n              if (v == 0 || v == 1) clearInterval(m.interval);\\n              if (v == 0) {\\n                m.pause();\\n                m.currentTime = 0;\\n                m.volume = 1;\\n              }\\n            }, 10);\\n          }\\n        }\\n      }\\n    }\\n  }\\n  macros['fadeinsound'] = p;\\n  macros['fadeoutsound'] = p;\\n  macros['unloopsound'] = p;\\n  macros['loopsound'] = p;\\n  macros['pausesound'] = p;\\n  macros['stopsound'] = p;\\n  macros['stopallsound'] = {\\n    handler: function () {\\n      var s = macros.playsound.soundtracks;\\n      for (var j in s) {\\n\\t\\tif (s.hasOwnProperty(j)) {\\n          s[j].pause();\\n          if (s[j].currentTime) {\\n\\t\\t    s[j].currentTime = 0;\\n\\t\\t  }\\n\\t\\t}\\n      }\\n    }\\n  }\\n  var div = document.getElementById(\"storeArea\").firstChild;\\n  var fe = [\"ogg\", \"mp3\", \"wav\", \"webm\"];\\n  while (div) {\\n    var b = String.fromCharCode(92);\\n    var q = '\"';\\n    var re = \"['\" + q + \"]([^\" + q + \"']*?)\" + b + \".(ogg|mp3|wav|webm)['\" + q + \"]\";\\n    k(new RegExp(re, \"gi\"));\\n    div = div.nextSibling;\\n  }\\n\\n  function k(c, e) {\\n    do {\\n      var d = c.exec(div.innerHTML);\\n      if (d) {\\n        var a = new Audio();\\n        if (a.canPlayType) {\\n          for (var i = -1; i < fe.length; i += 1) {\\n            if (i >= 0) d[2] = fe[i];\\n            if (a.canPlayType(\"audio/\" + d[2])) break;\\n          }\\n          if (i < fe.length) {\\n            a.setAttribute(\"src\", d[1] + \".\" + d[2]);\\n            a.interval = null;\\n            macros.playsound.soundtracks[d[1]] = a;\\n          } else console.log(\"Browser can't play '\" + d[1] + \"'\");\\n        }\\n      }\\n    } while (d);\\n  }\\n}());",
+      "links": []
+    },
+    {
+      "pid": 165,
+      "name": "Let it go",
+      "text": "The spore reaches the top of the balcony. It starts crying.\\n\\n[[The mob is going inside the palace]]",
+      "links": [
+        {
+          "text": "The mob is going inside the palace",
+          "destination": {
+            "name": "The mob is going inside the palace",
+            "pid": 107
+          }
+        }
+      ]
+    },
+    {
+      "pid": 166,
+      "name": "wrapped",
+      "text": "wrapped in\\n\\n<<cyclinglink $wrapped \"white cloth\" \"snakeskin\" \"human skin leather\" \"funeral shroud\">>\\n\\n[[Yes|wearable_result]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "wearable_result",
+            "pid": 232
+          }
+        }
+      ]
+    },
+    {
+      "pid": 167,
+      "name": "floats",
+      "text": "The sky is full of jellyfire like disemboweled rainbows.\\n\\nThe old year is [[ending|new]].",
+      "links": [
+        {
+          "text": "ending",
+          "destination": {
+            "name": "new",
+            "pid": 104
+          }
+        }
+      ]
+    },
+    {
+      "pid": 168,
+      "name": "final",
+      "text": "You choose\\n\\n<<cyclinglink $body_material \"blood\" \"bone\" \"skin\">>\\n\\n[[Yes|bio-matter]]",
+      "links": [
+        {
+          "text": "<cyclinglink>",
+          "destination": {
+            "name": "blood",
+            "pid": 244
+          }
+        },
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "bio-matter",
+            "pid": 95
+          }
+        }
+      ]
+    },
+    {
+      "pid": 169,
+      "name": "friend",
+      "text": "<<if $looked is false>><<set $looked = true>>You look at her and she looks at you. Then she looks away.<<else>>She is staring straight ahead. She will not meet your gaze.\\n\\nIt's been a long time.<<endif>>\\n\\n[[Stop staring|Visitors]]",
+      "links": [
+        {
+          "text": "Stop staring",
+          "destination": {
+            "name": "Visitors",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 170,
+      "name": "Four seconds",
+      "text": "Sedina runs up to the Empress, bare feet pattering on the marble floor.\\n\\n[[Five seconds]]",
+      "links": [
+        {
+          "text": "Five seconds",
+          "destination": {
+            "name": "Five seconds",
+            "pid": 51
+          }
+        }
+      ]
+    },
+    {
+      "pid": 171,
+      "name": "throne",
+      "text": "Glossy white wood swarming with termites, stained with empress effluvia. Deep gouges in the arms.\\n\\n[[Turn away|Throneroom]]",
+      "links": [
+        {
+          "text": "Turn away",
+          "destination": {
+            "name": "Throneroom",
+            "pid": 186
+          }
+        }
+      ]
+    },
+    {
+      "pid": 172,
+      "name": "eyes",
+      "text": "What color are your eyes?\\n\\n<<cyclinglink $eye \"Brown\" \"Gray\" \"Blue\" \"Black\" \"Green\" \"Hazel\" \"Violet\" \"Amber\" \"Heterochromic\" \"Nothing here describes my eyes\">>\\n\\n[[Yes|dead name]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "dead name",
+            "pid": 204
+          }
+        }
+      ]
+    },
+    {
+      "pid": 173,
+      "name": "draw spore",
+      "text": "Draw the sigil of what you feel.\\n\\n[[And go to sleep|interval][$destination = \"sleep\"]]",
+      "links": [
+        {
+          "text": "And go to sleep",
+          "destination": {
+            "name": "interval",
+            "pid": 256
+          }
+        }
+      ]
+    },
+    {
+      "pid": 174,
+      "name": "that day",
+      "text": "You were with her that day, <<cyclinglink $holding \"holding her hand\" \"as she held your hand\">>, tighter and tighter as the yelling got louder.\\n\\n[[It was a cold day|which day]]\\n\\n[[It was a hot day|which day]]",
+      "links": [
+        {
+          "text": "It was a cold day",
+          "destination": {
+            "name": "which day",
+            "pid": 147
+          }
+        },
+        {
+          "text": "It was a hot day",
+          "destination": {
+            "name": "which day",
+            "pid": 147
+          }
+        }
+      ]
+    },
+    {
+      "pid": 175,
+      "name": "Walk past with eyes straight ahead",
+      "text": "Sedina is bruised, eyes swollen, broken finger, fingernails bleeding, wrists hung in nullhex manacles, [[spells]] in chastity.\\n\\n[[\"Let's go.\"]]",
+      "links": [
+        {
+          "text": "spells",
+          "destination": {
+            "name": "spells",
+            "pid": 13
+          }
+        },
+        {
+          "text": "\"Let's go.\"",
+          "destination": {
+            "name": "\"Let's go.\"",
+            "pid": 65
+          }
+        }
+      ]
+    },
+    {
+      "pid": 176,
+      "name": "portrait",
+      "text": "<<if $painting is false>>Her majestic <<cyclinglink $empress_1 \"atlas beetle\" \"ram\" \"stag\">> horns\\n\\nHer mantle of <<cyclinglink $empress_2 \"moth fur\" \"anemone tendrils\" \"fleshrags\">>\\n\\nHer eyes <<cyclinglink $empress_3 \"burning with cold fire\" \"drooling with soulsludge\" \"crawling with snakes\">>.\\n\\n[[Just so|portrait][$painting = true]]<<else>>\\nHer majestic <<$empress_1>> horns, her mantle of <<$empress_2>>, her eyes <<$empress_3>>.\\n\\n[[Look away|Throneroom]]<<endif>>",
+      "links": [
+        {
+          "text": "Just so",
+          "destination": {
+            "name": "portrait",
+            "pid": 176
+          }
+        },
+        {
+          "text": "Look away",
+          "destination": {
+            "name": "Throneroom",
+            "pid": 186
+          }
+        }
+      ]
+    },
+    {
+      "pid": 177,
+      "name": "garden dying",
+      "text": "A twinge of pain as you flash back to that drugged night in the garden. But you are no longer tied to these plants. They betrayed you by serving the forces of evil.\\n\\n[[Blink|devouring]]",
+      "links": [
+        {
+          "text": "Blink",
+          "destination": {
+            "name": "devouring",
+            "pid": 158
+          }
+        }
+      ]
+    },
+    {
+      "pid": 178,
+      "name": "hotel",
+      "text": "A hotel as far as distance.\\n\\nRain pours down cracked blue clay, turning the road to mud and flooding the yard with demipond puddles.\\n\\n[[Breathe]]",
+      "links": [
+        {
+          "text": "Breathe",
+          "destination": {
+            "name": "Breathe",
+            "pid": 14
+          }
+        }
+      ]
+    },
+    {
+      "pid": 179,
+      "name": "sovereign body",
+      "text": "To attack the sovereign body and fail is the same as wounding the sovereign body, because the body is not a body of flesh and blood, it is a body of power.\\n\\nPower is wounded by anything that refuses to be [[destroyed]] by it.",
+      "links": [
+        {
+          "text": "destroyed",
+          "destination": {
+            "name": "destroyed",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 180,
+      "name": "Deep sigh",
+      "text": "You lick her from the ground until the ground is clean. Your lips and teeth are purple with empress juice. Your breath smells like you've been eating the refuse of an orchard or a toilet.\\n\\n[[Get up|Palace]]",
+      "links": [
+        {
+          "text": "Get up",
+          "destination": {
+            "name": "Palace",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 181,
+      "name": "crimson",
+      "text": "Guts splash the lake and slap the dirt as princesses flit through the air, the teeth of their limbs slung and rippling.\\n\\nMoth riders crash, shrapnel shrieks, skulldiers leap through the trees, arrows fly, spears stab, princesses scream, pink goop melts human flesh.\\n\\nShe yells [[something|swim]] in your ear.",
+      "links": [
+        {
+          "text": "something",
+          "destination": {
+            "name": "swim",
+            "pid": 132
+          }
+        }
+      ]
+    },
+    {
+      "pid": 182,
+      "name": "talents",
+      "text": "An artificer.\\n\\nYou make things.\\n\\nYou were noticed, perhaps, from your showings, and sometimes victories, in the festivals.\\n\\n[[And now you are going somewhere]]",
+      "links": [
+        {
+          "text": "And now you are going somewhere",
+          "destination": {
+            "name": "And now you are going somewhere",
+            "pid": 36
+          }
+        }
+      ]
+    },
+    {
+      "pid": 183,
+      "name": "impulse",
+      "text": "The impulse to say something darts up your throat like fish up a waterfall<<replace \"--\">>--and falls [[down]] again.<<endreplace>>",
+      "links": [
+        {
+          "text": "down",
+          "destination": {
+            "name": "down",
+            "pid": 145
+          }
+        }
+      ]
+    },
+    {
+      "pid": 184,
+      "name": "Let them be",
+      "text": "They shrink in terror, trying to press themselves through stone. You back away until you can no longer see them in the shadows.\\n\\n[[You smell fire|bonfire]]",
+      "links": [
+        {
+          "text": "You smell fire",
+          "destination": {
+            "name": "bonfire",
+            "pid": 76
+          }
+        }
+      ]
+    },
+    {
+      "pid": 185,
+      "name": "stairs",
+      "text": "A princess spore is wriggling painfully up the steps, shuddering after each movement.\\n\\n<<if $together is false>>[[Let it go]]<<else>>[[Stomp it]]<<endif>>",
+      "links": [
+        {
+          "text": "Let it go",
+          "destination": {
+            "name": "Let it go",
+            "pid": 165
+          }
+        },
+        {
+          "text": "Stomp it",
+          "destination": {
+            "name": "Stomp it",
+            "pid": 30
+          }
+        }
+      ]
+    },
+    {
+      "pid": 186,
+      "name": "Throneroom",
+      "text": "<<if $weapon_type neq \"\">>The [[<<$weapon_type>>|weapon]] of the Skull Empress hangs above the vacant [[throne]], along with her [[portrait]] on the west wall.\\n\\nHer hounds <<print either(\"are gnawing on heretic bones\", \"are chained to the throne. They strain at the sight of you\", \"are napping\", \"growl low and rare\", \"are restless, narrow black tails whipping back and forth\")>>. <<else>>The [[throne]] is vacant. The Empress's [[portrait]] covers the west wall.\\n\\nThe Empress' hounds <<print either(\"are gnawing on heretic bones\", \"are chained to the throne. They strain at the sight of you\", \"are napping\", \"growl low and rare\", \"are restless, narrow black tails whipping back and forth\")>>. <<endif>> \\n\\n[[Leave|Palace]]<<display \"wanderfade\">>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "wanderfade",
+            "pid": 82
+          }
+        },
+        {
+          "text": "<<$weapon_type>>",
+          "destination": {
+            "name": "weapon",
+            "pid": 255
+          }
+        },
+        {
+          "text": "throne",
+          "destination": {
+            "name": "throne",
+            "pid": 171
+          }
+        },
+        {
+          "text": "portrait",
+          "destination": {
+            "name": "portrait",
+            "pid": 176
+          }
+        },
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "Palace",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 187,
+      "name": "One second",
+      "text": "She places the knife inside the nearest agent, then pulls it out. Blood sprays across the floor, glittering in the sunlight.\\n\\n[[Two seconds]]",
+      "links": [
+        {
+          "text": "Two seconds",
+          "destination": {
+            "name": "Two seconds",
+            "pid": 243
+          }
+        }
+      ]
+    },
+    {
+      "pid": 188,
+      "name": "waste",
+      "text": "<<if $weather is 1>>Warm wind carries ash and ember and the spray of sulphur geysers.<<endif>><<if $weather is 2>>Ash storms howl as they carry skin-stripping gravel across the waste.<<endif>><<if $weather is 3>>A shardstorm glitters across the waste.<<endif>><<if $weather is 4>>Anomalies ripple in the waste, reality caught fire.<<endif>><<if $weather is 5>>A barrow queen is stalking through the hills.<<endif>><<if $weather is 6>>Obelisks jut from black soil. The faint throb of purple veins under obsidian skin.<<endif>><<if $weather is 7>>Skulldiers are patrolling, spears and armor glinting when the sun pierces the ashen veil of the sky.<<endif>>\\n\\n[[Unlook|telescope]]",
+      "links": [
+        {
+          "text": "Unlook",
+          "destination": {
+            "name": "telescope",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 189,
+      "name": "are you",
+      "text": "Are you a chasm person?\\n\\n[[Yes|chasm]]\\n\\n[[No|chasm]]\\n\\n[[I don't know|chasm]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "chasm",
+            "pid": 214
+          }
+        },
+        {
+          "text": "No",
+          "destination": {
+            "name": "chasm",
+            "pid": 214
+          }
+        },
+        {
+          "text": "I don't know",
+          "destination": {
+            "name": "chasm",
+            "pid": 214
+          }
+        }
+      ]
+    },
+    {
+      "pid": 190,
+      "name": "melter",
+      "text": "The power to sculpt metal and stone with your fingers.\\n\\n[[Put it back|Workshop]]",
+      "links": [
+        {
+          "text": "Put it back",
+          "destination": {
+            "name": "Workshop",
+            "pid": 197
+          }
+        }
+      ]
+    },
+    {
+      "pid": 191,
+      "name": "skull",
+      "text": "When you woke up, you could no longer dream. In one night, it felt like you had dreamt all the dreams of a lifetime. It felt like an eternity of fire. Like what should have come slowly, gently, unfolding delicately at the whirling dance of your years, had instead been accelerated at a ruinous speed, burning <<replace \"away.\">>away.\\n\\n[[Lay awake for a long time|interval]] <<set $destination = \"Your chambers\">><<endreplace>>",
+      "links": [
+        {
+          "text": "<set>",
+          "destination": {
+            "name": "Your chambers",
+            "pid": 216
+          }
+        },
+        {
+          "text": "Lay awake for a long time",
+          "destination": {
+            "name": "interval",
+            "pid": 256
+          }
+        }
+      ]
+    },
+    {
+      "pid": 192,
+      "name": "talking",
+      "text": "\"tthhiiisisthefirsttimeivefeltnormalsinceiwasakkkkiiid.\\nimsorryimamkingthisaboutme.imsorryihaventbeenthereforyou.\\nimsrry<<replace \"foreverything.\">>foreverything.\"\\n\\nYou trail away. The sky is spinning a glowing vortex of radial star lines. You fall to the ground, arms sprawled behind your head, writhing as the universe <<replace \"hypnotizes you.\">>hypnotizes you.\\n\\nYou feel the grass growing over your face. Feel yourself sinking into the earth. Soft, warm, like the roots are veins, red brown dark, fertile, rich, fecund, churning with [[life]].<<endreplace>><<endreplace>>",
+      "links": [
+        {
+          "text": "life",
+          "destination": {
+            "name": "life",
+            "pid": 257
+          }
+        }
+      ]
+    },
+    {
+      "pid": 193,
+      "name": "nail polish",
+      "text": "Black.\\n\\n[[It glistens|her bedroom]]",
+      "links": [
+        {
+          "text": "It glistens",
+          "destination": {
+            "name": "her bedroom",
+            "pid": 198
+          }
+        }
+      ]
+    },
+    {
+      "pid": 194,
+      "name": "work",
+      "text": "<<if $day is 3>>\\nThey've left cases full of rare materials.\\n\\n[[You've never worked with anything like this...|design_wearable]]\\n<<endif>>\\n<<if $day is 12>>\\nYou gather materials...\\n\\n[[And think of weapons|weapon_type]]\\n<<endif>>\\n<<if $day is $final_day>>\\nYou sit at the worktable. You have no materials.\\n\\n[[But you have materials|final]]\\n<<endif>>\\n<<set $working to false>><<if $day is $final_day>><<fadeoutsound \"creep.mp3\">><<fadeinsound \"darkmaking.mp3\">><<else>><<fadeoutsound \"wandering.mp3\">><<fadeinsound \"make.mp3\">><<endif>>",
+      "links": [
+        {
+          "text": "You've never worked with anything like this...",
+          "destination": {
+            "name": "design_wearable",
+            "pid": 74
+          }
+        },
+        {
+          "text": "And think of weapons",
+          "destination": {
+            "name": "weapon_type",
+            "pid": 199
+          }
+        },
+        {
+          "text": "But you have materials",
+          "destination": {
+            "name": "final",
+            "pid": 168
+          }
+        }
+      ]
+    },
+    {
+      "pid": 195,
+      "name": "hotel room",
+      "text": "You enter your room. Take off your dress. The day rolls from your body like dissipating heat waves. Your wrinkles and folds exhale.\\n\\n[[Put away the dress|ending]]",
+      "links": [
+        {
+          "text": "Put away the dress",
+          "destination": {
+            "name": "ending",
+            "pid": 56
+          }
+        }
+      ]
+    },
+    {
+      "pid": 196,
+      "name": "Break the loop",
+      "text": "Draw a thought loop.\\n\\n[[Done|break]]",
+      "links": [
+        {
+          "text": "Done",
+          "destination": {
+            "name": "break",
+            "pid": 49
+          }
+        }
+      ]
+    },
+    {
+      "pid": 197,
+      "name": "Workshop",
+      "text": "<<if $dead_person is \"workshop\">> A dead person is under the table. <<endif>>Vials of [[melter]]. Magnifying lense. Meltless gloves. Scarred <<if $day neq 3 and $day neq 12 and $day neq $final_day>><<if $telescope_make lt 4>>[[worktable]]<<else>>worktable<<endif>><<else>>worktable<<endif>>. \\n\\n<<if $working is true>>[[Get to work|work]]<<endif>>\\n\\n[[Return|Palace]]<<display \"wanderfade\">>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "wanderfade",
+            "pid": 82
+          }
+        },
+        {
+          "text": "melter",
+          "destination": {
+            "name": "melter",
+            "pid": 190
+          }
+        },
+        {
+          "text": "worktable",
+          "destination": {
+            "name": "worktable",
+            "pid": 54
+          }
+        },
+        {
+          "text": "Get to work",
+          "destination": {
+            "name": "work",
+            "pid": 194
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "Palace",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 198,
+      "name": "her bedroom",
+      "text": "Sitting on her bed, watching her put on [[nail polish]].\\n\\n[[So pretty...|do you]]<<fadeoutsound \"wandering.mp3\">><<fadeinsound \"friend.mp3\">>",
+      "links": [
+        {
+          "text": "nail polish",
+          "destination": {
+            "name": "nail polish",
+            "pid": 193
+          }
+        },
+        {
+          "text": "So pretty...",
+          "destination": {
+            "name": "do you",
+            "pid": 101
+          }
+        }
+      ]
+    },
+    {
+      "pid": 199,
+      "name": "weapon_type",
+      "text": "a <<cyclinglink $weapon_type \"dagger\" \"whip\" \"bow\">>\\n\\nmade of\\n\\n<<cyclinglink $weapon_material_1 \"the bones of a rival tyrant\" \"dream-dripped steel\" \"barrow queen chitin\">>\\n\\nand\\n\\n<<cyclinglink $weapon_material_2 \"nymph-gut\" \"angel leather\" \"hatewood\">>\\n\\n[[Yes|weapon_desc]]\\n",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "weapon_desc",
+            "pid": 77
+          }
+        }
+      ]
+    },
+    {
+      "pid": 200,
+      "name": "under",
+      "text": "The palace is quiet and open and airy. Curtains lift languidly to reveal <<cyclinglink $reveal \"garden canopy\" \"balconies like portals of moonlight\">>.\\n\\nYou [[slip]] the note under her door.<<fadeoutsound \"scene.mp3\">>",
+      "links": [
+        {
+          "text": "slip",
+          "destination": {
+            "name": "slip",
+            "pid": 213
+          }
+        }
+      ]
+    },
+    {
+      "pid": 201,
+      "name": "Three seconds",
+      "text": "She grabs the agent's wrist and bends it backwards, pinning them down like the dip in a dance, driving the blade into the underside of their chin. They open their mouth and a tongue of metal flicks through, drooling red.\\n\\n[[Four seconds]]\\n",
+      "links": [
+        {
+          "text": "Four seconds",
+          "destination": {
+            "name": "Four seconds",
+            "pid": 170
+          }
+        }
+      ]
+    },
+    {
+      "pid": 202,
+      "name": "No more",
+      "text": "Draw a sigil of severing.\\n\\n[[Done|Balconies]]",
+      "links": [
+        {
+          "text": "Done",
+          "destination": {
+            "name": "Balconies",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 203,
+      "name": "City",
+      "text": "The streets are narrow, winding, [[mazelike]]. [[Ropes]] span between buildings like enormous spiderwebs blanketing the city. <<if $dead_person is \"city\">>A dead person is watching you from a window.<<endif>>\\n\\nThe [[temple]] is this way, <<if $day gte 21>>across the [[flooded]] canal.<<else>>across the [[dry]] canal.<<endif>><<if $day gte 14 and $day lte 17>> [[Black petals]] cover the temple steps.<<endif>>\\n\\n<<if $day lt 7>>The dream distillery is surrounded by [[scaffolding]].<<else>>The [[dream distillery]] has a gruesome pull for you.<<endif>>\\n\\n[[Return to the palace|Palace]]",
+      "links": [
+        {
+          "text": "mazelike",
+          "destination": {
+            "name": "mazelike",
+            "pid": 17
+          }
+        },
+        {
+          "text": "Ropes",
+          "destination": {
+            "name": "Ropes",
+            "pid": 4
+          }
+        },
+        {
+          "text": "temple",
+          "destination": {
+            "name": "temple",
+            "pid": 106
+          }
+        },
+        {
+          "text": "flooded",
+          "destination": {
+            "name": "flooded",
+            "pid": 239
+          }
+        },
+        {
+          "text": "dry",
+          "destination": {
+            "name": "dry",
+            "pid": 50
+          }
+        },
+        {
+          "text": "Black petals",
+          "destination": {
+            "name": "Black petals",
+            "pid": 8
+          }
+        },
+        {
+          "text": "scaffolding",
+          "destination": {
+            "name": "scaffolding",
+            "pid": 130
+          }
+        },
+        {
+          "text": "dream distillery",
+          "destination": {
+            "name": "dream distillery",
+            "pid": 93
+          }
+        },
+        {
+          "text": "Return to the palace",
+          "destination": {
+            "name": "Palace",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 204,
+      "name": "dead name",
+      "text": "When you came of age, your parents used this information to give you a [[name]], running their fingers along the indexes of a book, as by custom.",
+      "links": [
+        {
+          "text": "name",
+          "destination": {
+            "name": "name",
+            "pid": 62
+          }
+        }
+      ]
+    },
+    {
+      "pid": 205,
+      "name": "Court",
+      "text": "[[Visitors]] from beyond the city.<<fadeoutsound \"wandering.mp3\">>",
+      "links": [
+        {
+          "text": "Visitors",
+          "destination": {
+            "name": "Visitors",
+            "pid": 27
+          }
+        }
+      ]
+    },
+    {
+      "pid": 206,
+      "name": "hand_finished",
+      "text": "A hand of <<$hand_material>>, <<$hand_flourish>>.\\n\\nThe agent takes it away.\\n\\n[[Okay|Workshop]]",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "Workshop",
+            "pid": 197
+          }
+        }
+      ]
+    },
+    {
+      "pid": 207,
+      "name": "Lake",
+      "text": "Dead brown leaves cover inky black lake.<<if $dead_person is \"lake\" and $day neq 1>> A dead person is staring from below the water.<<endif>>\\n\\n[[Do your meditations]]\\n\\n[[Return|Garden]]",
+      "links": [
+        {
+          "text": "Do your meditations",
+          "destination": {
+            "name": "Do your meditations",
+            "pid": 80
+          }
+        },
+        {
+          "text": "Return",
+          "destination": {
+            "name": "Garden",
+            "pid": 223
+          }
+        }
+      ]
+    },
+    {
+      "pid": 208,
+      "name": "agent",
+      "text": "Dark, utile clothing. Blue eyes. Asymmetric brown hair. Broken nose.\\n\\n[[Glance back|fantasies]]",
+      "links": [
+        {
+          "text": "Glance back",
+          "destination": {
+            "name": "fantasies",
+            "pid": 116
+          }
+        }
+      ]
+    },
+    {
+      "pid": 209,
+      "name": "shame",
+      "text": "When you left, you were both so angry. So ugly with <<replace \"bitterness.\">>bitterness.\\n\\nIt [[drowns]].<<endreplace>><<fadeoutsound \"wandering.mp3\">><<fadeinsound \"scene.mp3\">>",
+      "links": [
+        {
+          "text": "drowns",
+          "destination": {
+            "name": "drowns",
+            "pid": 265
+          }
+        }
+      ]
+    },
+    {
+      "pid": 210,
+      "name": "Chest",
+      "text": "Estroglyphs. Spiroglyphs. Identical to the ones on your body.<<if $letter_1 is true>> The letter you will never open again.<<endif>>\\n\\n[[Precious|Your chambers]]",
+      "links": [
+        {
+          "text": "Precious",
+          "destination": {
+            "name": "Your chambers",
+            "pid": 216
+          }
+        }
+      ]
+    },
+    {
+      "pid": 211,
+      "name": "intro",
+      "text": "The agent of the Skull Empress came to your apartment and spoke to you:\\n\\n\"The Empress's larval stage is almost complete. We invite you to reside in the palace and share your [[talents]].\"",
+      "links": [
+        {
+          "text": "talents",
+          "destination": {
+            "name": "talents",
+            "pid": 182
+          }
+        }
+      ]
+    },
+    {
+      "pid": 212,
+      "name": "something",
+      "text": "Three red berries on a waxy white leaf.\\n\\n[[You dare not refuse]]",
+      "links": [
+        {
+          "text": "You dare not refuse",
+          "destination": {
+            "name": "You dare not refuse",
+            "pid": 118
+          }
+        }
+      ]
+    },
+    {
+      "pid": 213,
+      "name": "slip",
+      "text": "Draw the sigil of influencing this outcome.\\n\\n[[And go back to bed|sleep]]",
+      "links": [
+        {
+          "text": "And go back to bed",
+          "destination": {
+            "name": "sleep",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 214,
+      "name": "chasm",
+      "text": "Draw the sigil of your relationship with the chasm.\\n\\n[[Done|interval][$destination = \"Garden\"]]",
+      "links": [
+        {
+          "text": "Done",
+          "destination": {
+            "name": "interval",
+            "pid": 256
+          }
+        }
+      ]
+    },
+    {
+      "pid": 215,
+      "name": "close",
+      "text": "She leans close. Her breath smells like sweet salt. You can see the healed scars on her face, like faded borders in a land overrun by sand.\\n\\n\"What they did to me on the outside, they did to you on the inside.\\n\\n\"We are the same. <<replace \"Separated from the world.\">>Separated from the world.\\n\\n[[Chasm people|are you]].\"<<endreplace>>",
+      "links": [
+        {
+          "text": "Chasm people",
+          "destination": {
+            "name": "are you",
+            "pid": 189
+          }
+        }
+      ]
+    },
+    {
+      "pid": 216,
+      "name": "Your chambers",
+      "text": "<<if $day neq 3 and $day neq 12 and $day neq $final_day>>A [[chest|Chest]] under your bed.<<endif>>\\n\\n<<if $day is 3 and $wearable_message is false>><<set $wearable_message = true>>A [[message|wearable_message]] is pinned to the door.<<elseif $day is 12 and $weapon_message is false>><<set $weapon_message = true>>A [[message|weapon_message]] is pinned to the door.\\n<<else>>\\n<<if $hormone_need is true>>You need to [[re-apply hormones|hormones]]\\n<<elseif $ceremony is true>>The ceremony is in the garden tonight.\\n<<elseif $working is true>>You have work to do.<<else>>[[Sleep|sleep]]<<endif>>\\n\\n[[Exit|Palace]]<<endif>><<display \"wanderfade\">>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "wanderfade",
+            "pid": 82
+          }
+        },
+        {
+          "text": "chest",
+          "destination": {
+            "name": "Chest",
+            "pid": 210
+          }
+        },
+        {
+          "text": "message",
+          "destination": {
+            "name": "wearable_message",
+            "pid": 161
+          }
+        },
+        {
+          "text": "message",
+          "destination": {
+            "name": "weapon_message",
+            "pid": 140
+          }
+        },
+        {
+          "text": "re-apply hormones",
+          "destination": {
+            "name": "hormones",
+            "pid": 228
+          }
+        },
+        {
+          "text": "Sleep",
+          "destination": {
+            "name": "sleep",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Exit",
+          "destination": {
+            "name": "Palace",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 217,
+      "name": "dress",
+      "text": "\"That's a nice dress,\" she says.\\n\\nPride warms you, as if the summer sun had melted through the cold marble.\\n\\n\"I have to go show some asshole all the glorious myriad benefits of ectoplasm, but can we meet tomorrow?\"\\n\\n[[\"That would be nice.\"|nice]]",
+      "links": [
+        {
+          "text": "\"That would be nice.\"",
+          "destination": {
+            "name": "nice",
+            "pid": 234
+          }
+        }
+      ]
+    },
+    {
+      "pid": 218,
+      "name": "ceremony",
+      "text": "<<set $ceremony = false>><<fadeoutsound \"wandering.mp3\">><<fadeinsound \"scene.mp3\">>The garden is strung with lights and thronged with dancing.\\n\\nThe empress wears her <<$type_1>>. You can't tell where her hollow eyes are <<replace \"pointed.\">>pointed.\\n\\nAn agent [[approaches|berry]].<<endreplace>>",
+      "links": [
+        {
+          "text": "approaches",
+          "destination": {
+            "name": "berry",
+            "pid": 131
+          }
+        }
+      ]
+    },
+    {
+      "pid": 219,
+      "name": "\"I don't know.\"",
+      "text": "\"I remember something you used to say. Something like, our brain won't let us know until it's over. Or else we couldn't function.\"\\n\\n[[Silence|dress]]",
+      "links": [
+        {
+          "text": "Silence",
+          "destination": {
+            "name": "dress",
+            "pid": 217
+          }
+        }
+      ]
+    },
+    {
+      "pid": 220,
+      "name": "different",
+      "text": "\"Are things different now?\"\\n\\n[[\"What happened then will never happen again.\"|\"Yes.\"]]\\n\\n[[\"Nothing has changed.\"]]\\n\\n[[\"I don't know.\"]]",
+      "links": [
+        {
+          "text": "\"What happened then will never happen again.\"",
+          "destination": {
+            "name": "\"Yes.\"",
+            "pid": 113
+          }
+        },
+        {
+          "text": "\"Nothing has changed.\"",
+          "destination": {
+            "name": "\"Nothing has changed.\"",
+            "pid": 52
+          }
+        },
+        {
+          "text": "\"I don't know.\"",
+          "destination": {
+            "name": "\"I don't know.\"",
+            "pid": 219
+          }
+        }
+      ]
+    },
+    {
+      "pid": 221,
+      "name": "you hate",
+      "text": "You say, \"I was so worried when I saw you here. I know you hate these people.\"\\n\\nShe returns the nail polish to her nightstand. It clicks against the glass. \"Time passes. We get over things.\"\\n\\n[[\"Yeah.\"|k]]",
+      "links": [
+        {
+          "text": "\"Yeah.\"",
+          "destination": {
+            "name": "k",
+            "pid": 124
+          }
+        }
+      ]
+    },
+    {
+      "pid": 222,
+      "name": "end",
+      "text": "<<playsound \"end.mp3\">><<timedgoto \"credits\" 105s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "credits",
+            "pid": 111
+          }
+        }
+      ]
+    },
+    {
+      "pid": 223,
+      "name": "Garden",
+      "text": "Glass flowers on iron stalks. Canopy of leafbone. [[Statues]] sunk into the earth.<<if $dead_person is \"garden\">> A dead person is in the trees.<<endif>>\\n\\nThe [[lake|Lake]] is down that path. <<if $ceremony is true>>The [[ceremony]] is beginning.<<else>>Or back to the [[palace|Palace]].<<endif>><<display \"wanderfade\">>",
+      "links": [
+        {
+          "text": "<display>",
+          "destination": {
+            "name": "wanderfade",
+            "pid": 82
+          }
+        },
+        {
+          "text": "Statues",
+          "destination": {
+            "name": "Statues",
+            "pid": 252
+          }
+        },
+        {
+          "text": "lake",
+          "destination": {
+            "name": "Lake",
+            "pid": 207
+          }
+        },
+        {
+          "text": "ceremony",
+          "destination": {
+            "name": "ceremony",
+            "pid": 218
+          }
+        },
+        {
+          "text": "palace",
+          "destination": {
+            "name": "Palace",
+            "pid": 121
+          }
+        }
+      ]
+    },
+    {
+      "pid": 224,
+      "name": "note",
+      "text": "Write your note:\\n\\nSedina,\\n<<cyclinglink $note1 \"I'm begging you not to do this.\" \"please dont.\" \"are you insane?\">>\\nThey will <<cyclinglink $note2 \"never forgive this\" \"hurt you\" \"torture you to death\">>.\\nPlease understand...<<cyclinglink $note3 \"we can be happy far away from here\" \"I can't live without you\" \"you are so much better than those parasites\">>.\\n\\nSigned,\\n<<cyclinglink $note4 \"Your friend\" \"The one who loved you a long time ago\" \"*unsigned because who else could it be*\">>\\n\\n[[Leave the note under her door|under]]",
+      "links": [
+        {
+          "text": "Leave the note under her door",
+          "destination": {
+            "name": "under",
+            "pid": 200
+          }
+        }
+      ]
+    },
+    {
+      "pid": 225,
+      "name": "flashback_1",
+      "text": "When you were very young, it was popular among the rich to distill the dreams of children. This practice is no longer in vogue, but back then, every month or so, some children would be taken.\\n\\nOne night your mother stood over the stove and crumbled leaves into a cup of hot water. She stirred and stirred until it was dark green.\\n\\nShe gave you the cup. You [[drank]] it, because she was your mother.<<fadeoutsound \"wandering.mp3\" >><<loopsound \"scene.mp3\">>",
+      "links": [
+        {
+          "text": "drank",
+          "destination": {
+            "name": "drank",
+            "pid": 163
+          }
+        }
+      ]
+    },
+    {
+      "pid": 226,
+      "name": "Run or die",
+      "text": "The lake, black and rotten, is suddenly at your feet.\\n\\nSedina pushes you behind her. Your feet sink into the cold mud.\\n\\nThe sound of mothriders fills the air like sawblades.\\n\\n[[Blink|princess]]",
+      "links": [
+        {
+          "text": "Blink",
+          "destination": {
+            "name": "princess",
+            "pid": 236
+          }
+        }
+      ]
+    },
+    {
+      "pid": 227,
+      "name": "css pink",
+      "text": "\\n\\n#passages{font-size:20px; font-family: 'Open Sans';\\nborder-left: 0px !important;border-left: 0px !important; margin:100px 0px 0px 100px !important; }\\n\\n#passages > div, #passages > p { text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n\\nbody {\\n\\t\\nbackground: rgb(244,95,255); /* Old browsers */\\nbackground: -moz-linear-gradient(top, rgba(244,95,255,1) 12%, rgba(0,215,226,1) 80%, rgba(0,215,226,1) 83%); /* FF3.6+ */\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(12%,rgba(244,95,255,1)), color-stop(80%,rgba(0,215,226,1)), color-stop(83%,rgba(0,215,226,1))); /* Chrome,Safari4+ */\\nbackground: -webkit-linear-gradient(top, rgba(244,95,255,1) 12%,rgba(0,215,226,1) 80%,rgba(0,215,226,1) 83%); /* Chrome10+,Safari5.1+ */\\nbackground: -o-linear-gradient(top, rgba(244,95,255,1) 12%,rgba(0,215,226,1) 80%,rgba(0,215,226,1) 83%); /* Opera 11.10+ */\\nbackground: -ms-linear-gradient(top, rgba(244,95,255,1) 12%,rgba(0,215,226,1) 80%,rgba(0,215,226,1) 83%); /* IE10+ */\\nbackground: linear-gradient(to bottom, rgba(244,95,255,1) 12%,rgba(0,215,226,1) 80%,rgba(0,215,226,1) 83%); /* W3C */\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f45fff', endColorstr='#00d7e2',GradientType=0 ); /* IE6-9 */\\n\\n    background-attachment:fixed;\\n    margin:0;\\n}\\n\\n.passage{  width: 600px !important ; position: absolute;\\n  top: 0;\\n  bottom: 0;\\n  left: 0;\\n  right: 0;\\n\\n\\n  height: 80%;}\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}\\na.internalLink, a.externaLink {font-size:30px !important;color:#ea6ab9}\\na.internalLink:hover, a.externaLink:hover {text-decoration:none !important;font-size:30px !important;color:#f095cd !important}\\na.internalLink.replaceLinkx { color: #6aea9b; !important}\\na.internalLink.replaceLinkx:hover { color: #6aeadb; !important}\\na.internalLink.reviseLink { color: #ea6ab9; !important}\\n\\n\\n@keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n@-webkit-keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\na.cyclingLink {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\na.cyclingLink:hover {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\n.cyclingLink * {\\n  display: inline-block !important;\\n  left: 0;\\n  transition: opacity 1s;\\n}\\n.cyclingLinkEnabled {\\n  opacity: 1;\\n  animation: cyc-dissolve 0.8s ease-in reverse; -webkit-animation: cyc-dissolve 0.8s ease-in reverse;\\n  position: relative;\\n}\\n.cyclingLinkDisabled {\\n  opacity: 0;\\n  animation: cyc-dissolve 0.8s ease-out;  -webkit-animation: cyc-dissolve 0.8s ease-out;\\n  position: absolute;\\n}\\n.cyclingLinkInit, .cyclingLinkInit::before {\\n  animation-iteration-count: 0 !important;\\n  -webkit-animation-iteration-count: 0 !important;\\n}\\n",
+      "links": []
+    },
+    {
+      "pid": 228,
+      "name": "hormones",
+      "text": "You take an estroglyph and spiroglyph from the chest and <<replace \"press them to your thigh\">>press them to your thigh.\\n\\nThey sink through the skin and glow softly under the surface, intelligent veins of blue and white.<<set $hormone_need = false>>\\n\\n[[Okay|Your chambers]]<<endreplace>>",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "Your chambers",
+            "pid": 216
+          }
+        }
+      ]
+    },
+    {
+      "pid": 229,
+      "name": "Seven seconds",
+      "text": "Sedina grabs at the Empress, fingers clutching at her skull, filling her eye sockets and nose. The Empress lifts Sedina into the air. You never understood how tall the Empress is until now, when a human is in her hands. She has Sedina like a child.\\n\\n[[Eight seconds]]",
+      "links": [
+        {
+          "text": "Eight seconds",
+          "destination": {
+            "name": "Eight seconds",
+            "pid": 136
+          }
+        }
+      ]
+    },
+    {
+      "pid": 230,
+      "name": "struggling",
+      "text": "One way or another, the dream will come.\\n\\n[[Fight|escape]]",
+      "links": [
+        {
+          "text": "Fight",
+          "destination": {
+            "name": "escape",
+            "pid": 87
+          }
+        }
+      ]
+    },
+    {
+      "pid": 231,
+      "name": "css credits",
+      "text": "\\nh1\\n\\t{color:white !important;font-size:65px;}\\n\\n#passages{font-size:20px; font-family: 'Open Sans';\\nborder-left: 0px !important;border-left: 0px !important; margin:100px 0px 0px 100px !important; }\\n\\n#passages > div, #passages > p { text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n\\nbody {background-color:black  !important;\\n\\t\\nbackground: rgb(18,184,206); /* Old browsers */\\nbackground: -moz-linear-gradient(top, rgba(18,184,206,1) 0%, rgba(41,0,43,1) 100%); /* FF3.6+ */\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(18,184,206,1)), color-stop(100%,rgba(41,0,43,1))); /* Chrome,Safari4+ */\\nbackground: -webkit-linear-gradient(top, rgba(18,184,206,1) 0%,rgba(41,0,43,1) 100%); /* Chrome10+,Safari5.1+ */\\nbackground: -o-linear-gradient(top, rgba(18,184,206,1) 0%,rgba(41,0,43,1) 100%); /* Opera 11.10+ */\\nbackground: -ms-linear-gradient(top, rgba(18,184,206,1) 0%,rgba(41,0,43,1) 100%); /* IE10+ */\\nbackground: linear-gradient(to bottom, rgba(18,184,206,1) 0%,rgba(41,0,43,1) 100%); /* W3C */\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12b8ce', endColorstr='#29002b',GradientType=0 ); /* IE6-9 */\\n\\n    background-attachment:fixed;\\n    margin:0;\\n}\\n\\n.passage{background-color:black    !important;  width: 850px !important ; position: absolute;\\n  top: 0;\\n  bottom: 0;\\n  left: 0;\\n  right: 0;\\n\\n\\n  height: 80%;}\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}\\na.internalLink, a.externaLink {font-size:30px !important;color:#ea6ab9}\\na.internalLink:hover, a.externaLink:hover {text-decoration:none !important;font-size:30px !important;color:#f095cd !important}\\na.internalLink.replaceLinkx { color: #6aea9b; !important}\\na.internalLink.replaceLinkx:hover { color: #6aeadb; !important}\\na.internalLink.reviseLink { color: #ea6ab9; !important}\\n\\n\\n@keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n@-webkit-keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\na.cyclingLink {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\na.cyclingLink:hover {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\n.cyclingLink * {\\n  display: inline-block !important;\\n  left: 0;\\n  transition: opacity 1s;\\n}\\n.cyclingLinkEnabled {\\n  opacity: 1;\\n  animation: cyc-dissolve 0.8s ease-in reverse; -webkit-animation: cyc-dissolve 0.8s ease-in reverse;\\n  position: relative;\\n}\\n.cyclingLinkDisabled {\\n  opacity: 0;\\n  animation: cyc-dissolve 0.8s ease-out;  -webkit-animation: cyc-dissolve 0.8s ease-out;\\n  position: absolute;\\n}\\n.cyclingLinkInit, .cyclingLinkInit::before {\\n  animation-iteration-count: 0 !important;\\n  -webkit-animation-iteration-count: 0 !important;\\n}\\n\\n.revision-span-in {\\n\\topacity: 0;\\n\\ttext-decoration:none !important;\\n\\tfont-size:30px !important;\\n\\tcolor:#ea6ab9;\\n\\tfont-family: 'Open Sans';\\n text-shadow: 1px 1px 1px rgba(0,0,0,.6);\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n\\ttext-decoration:none !important;\\n\\tfont-size:30px !important;\\n\\tcolor:#ea6ab9;\\n\\tfont-family: 'Open Sans';\\n text-shadow: 1px 1px 1px rgba(0,0,0,.6);\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n\\ttext-decoration:none !important;\\n\\tfont-size:30px !important;\\n\\tcolor:#ea6ab9;\\n\\tfont-family: 'Open Sans';\\n text-shadow: 1px 1px 1px rgba(0,0,0,.6);\\n}\\n\\n\\n\\n.passage a.externalLink\\n\\t{font-size:30px !important;color:#ea6ab9; text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n.passage a.externalLink:hover\\n\\t{text-decoration:none !important;font-size:30px !important;color:#f095cd !important}",
+      "links": []
+    },
+    {
+      "pid": 232,
+      "name": "wearable_result",
+      "text": "A <<$type_1>> of <<$material_1>> with glyphs of\\n//<<$glyph_1>>\\n<<$glyph_2>>\\n<<$glyph_3>>//\\nwrapped in <<$wrapped>>.\\n\\nThe empress's agent accepts the gift. She strides away.\\n\\n[[Okay|Workshop]]",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "Workshop",
+            "pid": 197
+          }
+        }
+      ]
+    },
+    {
+      "pid": 233,
+      "name": "css",
+      "text": "\\nh1\\n\\t{color:white !important;font-size:60px;width:700px}\\n\\n#passages{font-size:20px; font-family: 'Open Sans';\\nborder-left: 0px !important;border-left: 0px !important; margin:100px 0px 0px 100px !important; }\\n\\n#passages > div, #passages > p { text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n\\nbody {background-color:black  !important;\\n\\t\\nbackground: rgb(18,184,206); /* Old browsers */\\nbackground: -moz-linear-gradient(top, rgba(18,184,206,1) 0%, rgba(41,0,43,1) 100%); /* FF3.6+ */\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(18,184,206,1)), color-stop(100%,rgba(41,0,43,1))); /* Chrome,Safari4+ */\\nbackground: -webkit-linear-gradient(top, rgba(18,184,206,1) 0%,rgba(41,0,43,1) 100%); /* Chrome10+,Safari5.1+ */\\nbackground: -o-linear-gradient(top, rgba(18,184,206,1) 0%,rgba(41,0,43,1) 100%); /* Opera 11.10+ */\\nbackground: -ms-linear-gradient(top, rgba(18,184,206,1) 0%,rgba(41,0,43,1) 100%); /* IE10+ */\\nbackground: linear-gradient(to bottom, rgba(18,184,206,1) 0%,rgba(41,0,43,1) 100%); /* W3C */\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12b8ce', endColorstr='#29002b',GradientType=0 ); /* IE6-9 */\\n\\n    background-attachment:fixed;\\n    margin:0;\\n}\\n\\n.passage{background-color:black    !important;  width: 600px !important ; position: absolute;\\n  top: 0;\\n  bottom: 0;\\n  left: 0;\\n  right: 0;\\n\\n\\n  height: 80%;}\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}\\na.internalLink, a.externaLink {font-size:30px !important;color:#ea6ab9}\\na.internalLink:hover, a.externaLink:hover {text-decoration:none !important;font-size:30px !important;color:#f095cd !important}\\na.internalLink.replaceLinkx { color: #6aea9b; !important}\\na.internalLink.replaceLinkx:hover { color: #6aeadb; !important}\\na.internalLink.reviseLink { color: #ea6ab9; !important}\\n\\n\\n@keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n@-webkit-keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\na.cyclingLink {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\na.cyclingLink:hover {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\n.cyclingLink * {\\n  display: inline-block !important;\\n  left: 0;\\n  transition: opacity 1s;\\n}\\n.cyclingLinkEnabled {\\n  opacity: 1;\\n  animation: cyc-dissolve 0.8s ease-in reverse; -webkit-animation: cyc-dissolve 0.8s ease-in reverse;\\n  position: relative;\\n}\\n.cyclingLinkDisabled {\\n  opacity: 0;\\n  animation: cyc-dissolve 0.8s ease-out;  -webkit-animation: cyc-dissolve 0.8s ease-out;\\n  position: absolute;\\n}\\n.cyclingLinkInit, .cyclingLinkInit::before {\\n  animation-iteration-count: 0 !important;\\n  -webkit-animation-iteration-count: 0 !important;\\n}\\n\\n.revision-span-in {\\n\\topacity: 0;\\n\\ttext-decoration:none !important;\\n\\tfont-size:30px !important;\\n\\tcolor:#ea6ab9;\\n\\tfont-family: 'Open Sans';\\n text-shadow: 1px 1px 1px rgba(0,0,0,.6);\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n\\ttext-decoration:none !important;\\n\\tfont-size:30px !important;\\n\\tcolor:#ea6ab9;\\n\\tfont-family: 'Open Sans';\\n text-shadow: 1px 1px 1px rgba(0,0,0,.6);\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n\\ttext-decoration:none !important;\\n\\tfont-size:30px !important;\\n\\tcolor:#ea6ab9;\\n\\tfont-family: 'Open Sans';\\n text-shadow: 1px 1px 1px rgba(0,0,0,.6);\\n}\\n\\n\\n\\n.passage a.externalLink\\n\\t{font-size:30px !important;color:#ea6ab9; text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n.passage a.externalLink:hover\\n\\t{text-decoration:none !important;font-size:30px !important;color:#f095cd !important}",
+      "links": []
+    },
+    {
+      "pid": 234,
+      "name": "nice",
+      "text": "And then she is gone and you are [[alone|interval][$destination = \"Palace\"]]. Like one of the statues had spoken to you and returned to silence.",
+      "links": [
+        {
+          "text": "alone",
+          "destination": {
+            "name": "interval",
+            "pid": 256
+          }
+        }
+      ]
+    },
+    {
+      "pid": 235,
+      "name": "pink",
+      "text": "The princess spores have burst from the empress.\\n\\nEveryone is running around laughing and crushing the [[spores]] as they drift to the ground.",
+      "links": [
+        {
+          "text": "spores",
+          "destination": {
+            "name": "spores",
+            "pid": 150
+          }
+        }
+      ]
+    },
+    {
+      "pid": 236,
+      "name": "princess",
+      "text": "Something pink swarms through the underbrush.\\n\\n[[Surges|burst]] upwards.",
+      "links": [
+        {
+          "text": "Surges",
+          "destination": {
+            "name": "burst",
+            "pid": 81
+          }
+        }
+      ]
+    },
+    {
+      "pid": 237,
+      "name": "pain",
+      "text": "What is there to say? If you know, you know. If you don't, nothing can show you.\\n\\nDraw a sigil of pain.\\n\\n[[Okay|thing]]<<fadeoutsound \"darkmaking.mp3\">>",
+      "links": [
+        {
+          "text": "Okay",
+          "destination": {
+            "name": "thing",
+            "pid": 129
+          }
+        }
+      ]
+    },
+    {
+      "pid": 238,
+      "name": "staircase",
+      "text": "You watch her from the staircase. It feels good to see her at peace. You know she feels the same way about you.\\n\\n[[Breathe|hotel room]]",
+      "links": [
+        {
+          "text": "Breathe",
+          "destination": {
+            "name": "hotel room",
+            "pid": 195
+          }
+        }
+      ]
+    },
+    {
+      "pid": 239,
+      "name": "flooded",
+      "text": "<<print either(\"Glowing tendrils undulate in the murky depths\",\"Moons roll across the water like phosphorescent marbles\",\"Urchin fishes for keys\",\"An aquanomaly whorls the water ethereal\",\"Someone paddles a lone hidestretch down the canal\",\"They're dumping shriveled corpses from the dream distillery into the water. Thin brittle floating bags of skin\",\"Rat kids hang out in drainage mouths\",\"Debris from the sea: armada slivers, rotten seaweed, riftwood\",\"Clusters of rubbery orange eggs float by\",\"Dream distillery pollution stains the water oneiridiscent\",\"A fish swims by, radiantly diseased with dream tumors\",\"A rat kid pisses in the water\",\"Rat kids sail down the canal on a raft, dragging a cube crab trap behind them\",\"Canal orbs bonk against the wall\",\"A canal serpent leaps up, snatching a ligabird from the air\",\"Crab fires shine across the river where rat kids are having a feast\")>>.\\n\\n[[Watch|flooded]]\\n\\n[[Look away|City]]",
+      "links": [
+        {
+          "text": "Watch",
+          "destination": {
+            "name": "flooded",
+            "pid": 239
+          }
+        },
+        {
+          "text": "Look away",
+          "destination": {
+            "name": "City",
+            "pid": 203
+          }
+        }
+      ]
+    },
+    {
+      "pid": 240,
+      "name": "swollen",
+      "text": "You can smell her from here. She smells like dead candy.\\n\\n[[She passes from sight]]",
+      "links": [
+        {
+          "text": "She passes from sight",
+          "destination": {
+            "name": "She passes from sight",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 241,
+      "name": "hand",
+      "text": "It will be made from\\n\\n<<cyclinglink $hand_material \"sangwood claws\" \"diamond with platinum joints\" \"tortured ectoplasm\">>\\n\\n[[Yes|hand_material_result]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "hand_material_result",
+            "pid": 149
+          }
+        }
+      ]
+    },
+    {
+      "pid": 242,
+      "name": "vial",
+      "text": "She puts her hand on your shoulder.\\n\\n<<if $respond is \"I'm okay.\">>\"You've never been [[okay|purple]].\"<<endif>><<if $respond is \"I can't stop thinking about it.\">>\"When the thoughts are really bad, there's something that really [[helps|purple]] me.\"<<endif>><<if $respond is \"You shouldn't have to deal with my shit. Let's just have a good time.\">>\"I can't have a good time unless you're having a [[good time|purple]].\"<<endif>>",
+      "links": [
+        {
+          "text": "okay",
+          "destination": {
+            "name": "purple",
+            "pid": 262
+          }
+        },
+        {
+          "text": "helps",
+          "destination": {
+            "name": "purple",
+            "pid": 262
+          }
+        },
+        {
+          "text": "good time",
+          "destination": {
+            "name": "purple",
+            "pid": 262
+          }
+        }
+      ]
+    },
+    {
+      "pid": 243,
+      "name": "Two seconds",
+      "text": "She steps out of her shoes and darts toward the Empress. An agent stands in her way with a dagger.\\n\\n[[Three seconds]]",
+      "links": [
+        {
+          "text": "Three seconds",
+          "destination": {
+            "name": "Three seconds",
+            "pid": 201
+          }
+        }
+      ]
+    },
+    {
+      "pid": 244,
+      "name": "blood",
+      "text": "Like being dragged out of a deep pit where you've lived so long in isolation you no longer had any reference point, but now that you've seen the light and tasted clean air, you'd fight like a rabid animal to stay free.\\n\\nYou look around and you can't [[see]] your dead friend anywhere.",
+      "links": [
+        {
+          "text": "see",
+          "destination": {
+            "name": "see",
+            "pid": 85
+          }
+        }
+      ]
+    },
+    {
+      "pid": 245,
+      "name": "letter",
+      "text": "Standing on the balcony, holding a [[letter|home]] from the people who share your blood.<<fadeoutsound \"wandering.mp3\">><<fadeinsound \"letter.mp3\">>",
+      "links": [
+        {
+          "text": "letter",
+          "destination": {
+            "name": "home",
+            "pid": 89
+          }
+        }
+      ]
+    },
+    {
+      "pid": 246,
+      "name": "Get dressed and go to the throne room",
+      "text": "Horrible fantasies steal your mind:\\n\\n[[The sound of her blood being lapped up by hounds|fantasies]]\\n\\n[[Her screams, worse than blood, longer lasting|fantasies]]\\n\\n[[Some trophy of her placed around the palace, that you have to walk past every day for the rest of your life|fantasies]]",
+      "links": [
+        {
+          "text": "The sound of her blood being lapped up by hounds",
+          "destination": {
+            "name": "fantasies",
+            "pid": 116
+          }
+        },
+        {
+          "text": "Her screams, worse than blood, longer lasting",
+          "destination": {
+            "name": "fantasies",
+            "pid": 116
+          }
+        },
+        {
+          "text": "Some trophy of her placed around the palace, that you have to walk past every day for the rest of your life",
+          "destination": {
+            "name": "fantasies",
+            "pid": 116
+          }
+        }
+      ]
+    },
+    {
+      "pid": 247,
+      "name": "falls through your body",
+      "text": "You feel [[radiant]].<<stopsound \"friend.mp3\">><<loopsound \"drugs.mp3\">>",
+      "links": [
+        {
+          "text": "radiant",
+          "destination": {
+            "name": "radiant",
+            "pid": 66
+          }
+        }
+      ]
+    },
+    {
+      "pid": 248,
+      "name": "css drugs",
+      "text": "\\n\\n#passages{font-size:20px; font-family: 'Open Sans';\\nborder-left: 0px !important;border-left: 0px !important; margin:100px 0px 0px 100px !important; }\\n\\n#passages > div, #passages > p { text-shadow: 1px 1px 1px rgba(0,0,0,.6);}\\n\\nbody {\\n\\nbackground: rgb(15,9,102); /* Old browsers */\\nbackground: -moz-linear-gradient(top, rgba(15,9,102,1) 0%, rgba(17,191,107,1) 65%, rgba(20,229,229,1) 100%, rgba(0,4,40,1) 100%); /* FF3.6+ */\\nbackground: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(15,9,102,1)), color-stop(65%,rgba(17,191,107,1)), color-stop(100%,rgba(20,229,229,1)), color-stop(100%,rgba(0,4,40,1))); /* Chrome,Safari4+ */\\nbackground: -webkit-linear-gradient(top, rgba(15,9,102,1) 0%,rgba(17,191,107,1) 65%,rgba(20,229,229,1) 100%,rgba(0,4,40,1) 100%); /* Chrome10+,Safari5.1+ */\\nbackground: -o-linear-gradient(top, rgba(15,9,102,1) 0%,rgba(17,191,107,1) 65%,rgba(20,229,229,1) 100%,rgba(0,4,40,1) 100%); /* Opera 11.10+ */\\nbackground: -ms-linear-gradient(top, rgba(15,9,102,1) 0%,rgba(17,191,107,1) 65%,rgba(20,229,229,1) 100%,rgba(0,4,40,1) 100%); /* IE10+ */\\nbackground: linear-gradient(to bottom, rgba(15,9,102,1) 0%,rgba(17,191,107,1) 65%,rgba(20,229,229,1) 100%,rgba(0,4,40,1) 100%); /* W3C */\\nfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0966', endColorstr='#000428',GradientType=0 ); /* IE6-9 */\\n    background-attachment:fixed;\\n    margin:0;\\n}\\n\\n.passage{  width: 600px !important ; position: absolute;\\n  top: 0;\\n  bottom: 0;\\n  left: 0;\\n  right: 0;\\n\\n\\n  height: 80%;}\\n\\n#sidebar #credits:hover{color:#333;visibility:hidden;}#sidebar #credits a{text-decoration:none;visibility:hidden;}\\n\\n#sidebar {visibility:hidden!important;}\\n\\n#footer{display:none!important;}\\n\\n#toolbar{display:none!important;}\\n\\n\\n\\n.revision-span-in {\\n\\topacity: 0;\\n}\\n.revision-span:not(.revision-span-out) {\\n\\ttransition: 1s; -webkit-transition: 1s;\\n}\\n.revision-span-out {\\n\\tposition:absolute;\\n\\topacity: 0;\\n}\\na.internalLink, a.externaLink {font-size:30px !important;color:#ea6ab9}\\na.internalLink:hover, a.externaLink:hover {text-decoration:none !important;font-size:30px !important;color:#f095cd !important}\\na.internalLink.replaceLinkx { color: #6aea9b; !important}\\na.internalLink.replaceLinkx:hover { color: #6aeadb; !important}\\na.internalLink.reviseLink { color: #ea6ab9; !important}\\n\\n\\n@keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\n@-webkit-keyframes cyc-dissolve {\\n  0% { opacity: 1; }\\n  100% { opacity: 0; }\\n}\\na.cyclingLink {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\na.cyclingLink:hover {\\n  color:#cf97f0 !important;\\n  position: relative;\\n  overflow: hidden;\\n  white-space: pre;\\n}\\n.cyclingLink * {\\n  display: inline-block !important;\\n  left: 0;\\n  transition: opacity 1s;\\n}\\n.cyclingLinkEnabled {\\n  opacity: 1;\\n  animation: cyc-dissolve 0.8s ease-in reverse; -webkit-animation: cyc-dissolve 0.8s ease-in reverse;\\n  position: relative;\\n}\\n.cyclingLinkDisabled {\\n  opacity: 0;\\n  animation: cyc-dissolve 0.8s ease-out;  -webkit-animation: cyc-dissolve 0.8s ease-out;\\n  position: absolute;\\n}\\n.cyclingLinkInit, .cyclingLinkInit::before {\\n  animation-iteration-count: 0 !important;\\n  -webkit-animation-iteration-count: 0 !important;\\n}\\n",
+      "links": []
+    },
+    {
+      "pid": 249,
+      "name": "energized",
+      "text": "Running through the garden. Darkness, leaves, and the ripe surge of life crushed under your boots. You kick them off so you can suffer with the earth.\\n\\nYou start [[talking]] to your dead friend.",
+      "links": [
+        {
+          "text": "talking",
+          "destination": {
+            "name": "talking",
+            "pid": 192
+          }
+        }
+      ]
+    },
+    {
+      "pid": 250,
+      "name": "workshop",
+      "text": "She squirts the fluid inside beads of melter, like shards of emerald floating in dewdrops.\\n\\n\"Trust me, this is the purest way to do it.\"\\n\\nA drop of melter lands on her skin. It disappears.\\n\\n\"Now you.\"\\n\\nThe drop [[falls through your body]].",
+      "links": [
+        {
+          "text": "falls through your body",
+          "destination": {
+            "name": "falls through your body",
+            "pid": 247
+          }
+        }
+      ]
+    },
+    {
+      "pid": 251,
+      "name": "premonth",
+      "text": "<<timedgoto \"month\" 1.5s>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "month",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 252,
+      "name": "Statues",
+      "text": "Some carved of stone from this century, others the husks of machines from beyond your reckoning.\\n\\nIt is easier for the gardeners to call the machines statues. But they were no aesthetic object.\\n\\n[[Look away|Garden]]",
+      "links": [
+        {
+          "text": "Look away",
+          "destination": {
+            "name": "Garden",
+            "pid": 223
+          }
+        }
+      ]
+    },
+    {
+      "pid": 253,
+      "name": "The mob rushes to the courtyard",
+      "text": "You spot something pink crawling up the [[balcony stairs|stairs]].",
+      "links": [
+        {
+          "text": "balcony stairs",
+          "destination": {
+            "name": "stairs",
+            "pid": 185
+          }
+        }
+      ]
+    },
+    {
+      "pid": 254,
+      "name": "timed goto",
+      "text": "version.extensions.timedgotoMacro={major:1,minor:1,revision:0};macros[\"goto\"]=macros[\"timedgoto\"]={timer:null,handler:function(a,b,c,d){\\nfunction cssTimeUnit(s){if(typeof s==\"string\"){if(s.slice(-2).toLowerCase()==\"ms\"){return Number(s.slice(0,-2))||0;\\n}else{if(s.slice(-1).toLowerCase()==\"s\"){return Number(s.slice(0,-1))*1000||0;}}}throwError(a,s+\" isn't a CSS time unit\");\\nreturn 0;}var t,d,m,s;t=c[c.length-1];d=d.fullArgs();m=0;if(b!=\"goto\"){d=d.slice(0,d.lastIndexOf(t));\\nm=cssTimeUnit(t);}d=eval(Wikifier.parse(d));if(d+\"\"){if(this.timer){clearTimeout(this.timer);\\n}s=state.history[0].passage.title;this.timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a);\\n}},m);}}};\\n",
+      "links": []
+    },
+    {
+      "pid": 255,
+      "name": "weapon",
+      "text": "Made of <<$weapon_material_1>> and <<$weapon_material_2>>.\\n\\n[[You feel little pride|Throneroom]]",
+      "links": [
+        {
+          "text": "You feel little pride",
+          "destination": {
+            "name": "Throneroom",
+            "pid": 186
+          }
+        }
+      ]
+    },
+    {
+      "pid": 256,
+      "name": "interval",
+      "text": "<<timedgoto $destination 3s>>\\n<<fadeoutsound \"creep.mp3\" >>\\n<<fadeoutsound \"letter.mp3\" >>\\n<<fadeoutsound \"make.mp3\" >>\\n<<fadeoutsound \"wandering.mp3\" >>\\n<<fadeoutsound \"scene.mp3\" >>\\n<<fadeoutsound \"spores.mp3\" >>\\n<<fadeoutsound \"drugs.mp3\" >>\\n<<fadeoutsound \"friend.mp3\" >>",
+      "links": []
+    },
+    {
+      "pid": 257,
+      "name": "life",
+      "text": "You think about your long life of fear. About waking up as a husk tomorrow. You clutch at the grass. It twists and tears in your hands and the dew feels like [[blood]].",
+      "links": [
+        {
+          "text": "blood",
+          "destination": {
+            "name": "blood",
+            "pid": 244
+          }
+        }
+      ]
+    },
+    {
+      "pid": 258,
+      "name": "huddling",
+      "text": "Three spores are huddling together for warmth.\\n\\n<<if $together is false>>[[Let them be]]<<else>>[[Crush them]]<<endif>>",
+      "links": [
+        {
+          "text": "Let them be",
+          "destination": {
+            "name": "Let them be",
+            "pid": 184
+          }
+        },
+        {
+          "text": "Crush them",
+          "destination": {
+            "name": "Crush them",
+            "pid": 102
+          }
+        }
+      ]
+    },
+    {
+      "pid": 259,
+      "name": "together",
+      "text": "You hear a [[mewling sound]].<<set $together = true>>",
+      "links": [
+        {
+          "text": "mewling sound",
+          "destination": {
+            "name": "mewling sound",
+            "pid": 115
+          }
+        }
+      ]
+    },
+    {
+      "pid": 260,
+      "name": "element",
+      "text": "What is your element?\\n\\n<<cyclinglink $element \"Petal\" \"Tears\" \"Mud\" \"Machine\" \"Fur\" \"Feather\">>\\n\\n[[Yes|eyes]]",
+      "links": [
+        {
+          "text": "Yes",
+          "destination": {
+            "name": "eyes",
+            "pid": 172
+          }
+        }
+      ]
+    },
+    {
+      "pid": 261,
+      "name": "Fold it up and place it in the bottom of your chest",
+      "text": "You don't want to choose. Fortunately you've been burying your problems your whole life.<<set $letter_1 to true>>\\n\\n[[Shh]]",
+      "links": [
+        {
+          "text": "Shh",
+          "destination": {
+            "name": "Shh",
+            "pid": 53
+          }
+        }
+      ]
+    },
+    {
+      "pid": 262,
+      "name": "purple",
+      "text": "Five minutes later you're in the workshop and she's holding a glass dropper full of [[green fluid|workshop]].",
+      "links": [
+        {
+          "text": "green fluid",
+          "destination": {
+            "name": "workshop",
+            "pid": 250
+          }
+        }
+      ]
+    },
+    {
+      "pid": 263,
+      "name": "jungle",
+      "text": "<<if $weather is 1>>Cold rain falls in the jungle, frosting the canopy.<<endif>><<if $weather is 2>>Hot rain spatters across the jungle, steaming from the leaves.<<endif>><<if $weather is 3>>Swarms of insects rise from the jungle like black clouds.<<endif>><<if $weather is 4>>Moth riders flit over the jungle.<<endif>><<if $weather is 5>>Feral machinethings buzz through the canopy.<<endif>><<if $weather is 6>>Gold pollen fills the air like a sea of fireflies.<<endif>><<if $weather is 7>>Ancient ruins of glass and steel, infested by vines.<<endif>>\\n\\n[[Unlook|telescope]]",
+      "links": [
+        {
+          "text": "Unlook",
+          "destination": {
+            "name": "telescope",
+            "pid": 79
+          }
+        }
+      ]
+    },
+    {
+      "pid": 264,
+      "name": "Another",
+      "text": "You look at the lake and a face covered in red speckles looks back.\\n\\nA few seconds later your face is completely [[crimson]].",
+      "links": [
+        {
+          "text": "crimson",
+          "destination": {
+            "name": "crimson",
+            "pid": 181
+          }
+        }
+      ]
+    },
+    {
+      "pid": 265,
+      "name": "drowns",
+      "text": "[[Shame]] taught the ocean everything it knows.",
+      "links": [
+        {
+          "text": "Shame",
+          "destination": {
+            "name": "Shame",
+            "pid": 72
+          }
+        }
+      ]
+    },
+    {
+      "pid": 266,
+      "name": "intimacy",
+      "text": "You imagine yourself making more and more things for the empress of increasing intimacy, until you are making her bones themselves, and then the individual components of her <<replace \"soul.\">>soul.\\n\\nUntil she is finally replaced by that which came from your hand alone.\\n\\n[[Get to work|hand]]<<endreplace>>",
+      "links": [
+        {
+          "text": "Get to work",
+          "destination": {
+            "name": "hand",
+            "pid": 241
+          }
+        }
+      ]
+    },
+    {
+      "pid": 267,
+      "name": "Throw up",
+      "text": "<<timedgoto \"sleepless\" 3s>><<stopallsound>>",
+      "links": [
+        {
+          "text": "<timedgoto>",
+          "destination": {
+            "name": "sleepless",
+            "pid": 67
+          }
+        }
+      ]
+    },
+    {
+      "pid": 268,
+      "name": "Six seconds",
+      "text": "The knife clatters to the tile.\\n\\n[[Seven seconds]]",
+      "links": [
+        {
+          "text": "Seven seconds",
+          "destination": {
+            "name": "Seven seconds",
+            "pid": 229
+          }
+        }
+      ]
+    }
+  ]
+}

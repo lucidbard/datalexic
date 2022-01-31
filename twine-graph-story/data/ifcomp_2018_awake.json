@@ -1,0 +1,557 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Chapter 1",
+      "text": "\t\t\t\t\t\t\tPART 1\n\n\nYou open your eyes. The digital clock on the nightstand beside you reads 2:55. \nThe phone keeps ringing, its shrill tone hurting your ears, pushing sleep away with every passing second.\n\"Uhh,\" Sarah groans.\"The phone.\"\n\t\t\t[[Pick up]] or [[Let it ring]]?\n",
+      "links": [
+        {
+          "text": "Pick up",
+          "destination": {
+            "name": "Pick up",
+            "pid": 2
+          }
+        },
+        {
+          "text": "Let it ring",
+          "destination": {
+            "name": "Let it ring",
+            "pid": 3
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "Pick up",
+      "text": "You decide to pick up the phone. If anyone's calling this late, it must be pretty urgent. You get up and go to the living room. The living room is bathed in shadows, strips of light sneaking through the gaps between the curtains. Down below, the familiar whooshing sounds of the cars - white-noise for a new generation - show that the city is very much awake.\nYou pick up the phone.\n\"Hello? William here.\" \nYour voice is heavy with sleep.\n\"Deputy Joyce here. We need you to come in ASAP.\"\n\"Now? Is it...is it...*her*?\"\n\"It's under control for now. Just get here.\"\n\"We'll be there soon.\"\n\"No. Dr. Sarah's presence is unwanted. For now.\"\nBefore you can protest, he ends the call.\nYou try to blink away the sleep, and ready yourself for a long day [[ahead]].",
+      "links": [
+        {
+          "text": "ahead",
+          "destination": {
+            "name": "ahead",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Let it ring",
+      "text": "You decide to let the phone ring. The caller leaves you a message.\n\"William. It's Deputy Joyce. Are you there? Pick up the phone, William. It's urgent. Call me back ASAP.\"\nYou get up and shake your head, trying to shrug off the sleep.\nThe bedroom is lit by the glowing halo-like light sources towering over the city - or the \"Rings\" as the kids like to call it. They were launched into the sky a couple of years ago and were an instant hit with the populace. Now, every corner was equally lit - no crime festered in dark alleys and other shady spots. \n\"What's that about?\" Sarah asks you, stifling a yawn.\nYou grunt in reply and walk to the living room. You call Deputy Joyce. He picks up on the second ring.\n\"William.\"\n\"Deputy.\"\n\"We need you up here. ASAP.\"\n\"What's happened?\"\n\"Get here. Now. Alone.\"\n\"Why can't Sarah...\"\nBefore you can finish, he ends the call.\nYou let out a groan and get ready for a long day [[ahead]].\n",
+      "links": [
+        {
+          "text": "ahead",
+          "destination": {
+            "name": "ahead",
+            "pid": 4
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "ahead",
+      "text": "You get out of the shower and wrap a towel around your waist. You walk up to the wardrobe and open it. Inside it, all your clothes are arranged in order, according to the days of the week. Its a brilliant idea that you loved the moment Sarah proposed it.\nTuesday. Blue shirt day. Check. \nThe clock reads 3:34.\n\"What happened?\" Sarah asks you. She props herself up on an elbow and looks at you inquisitively.\n\"Don't know. The Deputy was insistent on my presence.\"\n\"Hmm...same as last time? Unpredictable responses by test subjects?\"\n\"I don't know. He sounded pretty pissed, though.\"\n\"Are you going alone?\"\n\"Yes.\"\n\"He told you to not bring me along, didn't he?\"\nYou choose to remain silent.\n\"That bastard has had it for me ever since I joined the Project team.\"\n\"Sarah, I don't...\"\n\"He's always trying to get rid of me,\" she goes on, ignoring your feeble attempt to defend the Deputy. \"Do you know how hard he tried to pursuade the others on the committee to vote against bringing me on board?\"\n\"Yeah. I remember.\"\nAn awkward silence ensues.\n\"Okay then. See you later. Don't forget to lock the door behind you.\" Sarah pulls the covers over her head and turns off the table lamp. She turns away from you.\nYou sigh.\n\"Goodbye, Sarah. Sleep tight.\"\n\"Hmm.\"\nYou walk out of your house and lock the door behind you. You take the elevator down to the parking level. You get in your car and [[drive to work]].",
+      "links": [
+        {
+          "text": "drive to work",
+          "destination": {
+            "name": "drive to work",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "drive to work",
+      "text": "You realize you have turned on your headlights - out of habit.\n\"Shit.\" \nYou turn them off and pray you won't be getting the letter the next morning. \nEver since the Rings were launched, it was made mandatory to stop using headlights, which became redundant. The newer models did not have any headlights, but for the older models - such as the one you possess - the drivers had to remember to keep them switched off at all times. \nThe roads are almost empty at this time. You take a moment to look around you. The huge building dominates the skyline. It's easily one of the tallest in the city, you predict as you park your car in your reserved spot. It's marked \"Lead Scientist, Research Division.\" \nIt still feels as good as the first day you parked your car there.\nYour mind suddenly switches over to Sarah upon seeing the empty space next to your car. Why did they ask you not to bring her? They were in the Project together from the very beginning. Well, not the very beginning, but they need not know that.\nYou mind flashes back to the day she entered Company premises for the first time.\n\n                [[Embrace memory]] or [[Move forward]]?                 \n\n\n(You've just discovered a Fragment. They mostly contain background info on the characters. They'll crop up as the story progresses. Other Fragments will only be accessible upon choosing a certain path!)\n\n",
+      "links": [
+        {
+          "text": "Embrace memory",
+          "destination": {
+            "name": "Embrace memory",
+            "pid": 6
+          }
+        },
+        {
+          "text": "Move forward",
+          "destination": {
+            "name": "Move forward",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 6,
+      "name": "Embrace memory",
+      "text": "\t\t\t\t\t\t\t5 YEARS AGO\n\"So, this is it.\"\n\"What do you think they'll ask of me?\" Sarah looks at you with nervous eyes, then looks up in equal awe at the huge building in front of her.\n\"Impressive, isn't it? I remember how...insignificant...I felt on my first day here. Don't worry. I'll be in the room all the time,\" you reassure her.\n\"I know. But it won't just be you. I hope I don't freeze in front of them.\"\n\"Like the day we met?\" you ask jokingly.\nShe laughs at your question. Somehow, it feels forced.\n\"You're stressing yourself. You've lost your laugh.\"\n\"It's just that I really want this. I can't imagine life without this job.\"\n\"And you will get it. Just be yourself. Ready?\"\n\"Okay.\" She takes a deep breath and grips your hand.\nYou [[walk in together|Move forward]].",
+      "links": [
+        {
+          "text": "walk in together",
+          "destination": {
+            "name": "Move forward",
+            "pid": 7
+          }
+        }
+      ]
+    },
+    {
+      "pid": 7,
+      "name": "Move forward",
+      "text": "\"Dr. William,\" Deputy Joyce greets you as you step out of the elevator.\nTall and broad-shouldered, Paul Joyce immigrated from Africa in the early 2000s.\nAfter 2 decades, he suddenly came into the spotlight in the aftermath of the 2020 incident. He had been but a new recruit at the security agency the Company employed at the time. Many resented the sudden change in his fortune following the event and questioned what it was that he'd actually done. \nTaking the best of the promotion that followed, he rose through the ranks to eventually become Deputy. His first act as Deputy had been to cancel the Company's contract with the security agency, and form their own security force.\nNo one had the courage to talk about his past. It was an unspoken rule among the employees.\n\"Deputy.\"\n\"They need you in A101.\"\n\"What happened? Oh god, did she escape?\"\nThe Deputy chooses to stay silent.\n\"I thought we patched that up last month. Any casualties?\"\n\"Three of my men dead. Two of the first responders were injured. They were shifted to the hospital as soon as we secured the area.\"\n\"Fuck.\"\n\"I expect you to get your act together.\" He looks you in the eye. For a moment, you feel truly exposed. In danger.\n\"You have a lot to answer for, Doctor. Meet me in my office after you finish reviewing her.\"\nHe turns around and starts talking to a security personnel.\n\t\t\t             Walk to [[Anna's room]].\n",
+      "links": [
+        {
+          "text": "Anna's room",
+          "destination": {
+            "name": "Anna's room",
+            "pid": 8
+          }
+        }
+      ]
+    },
+    {
+      "pid": 8,
+      "name": "Anna's room",
+      "text": "You enter the room. Four security guards, armed with SMGs, stand guard around a bed. Apart from the bed and a chair, the room has been stripped bare. Although poorly furnished, the room had always held a rustic feel to it. Now, though, the sheets are on the floor. The lamp that had always resided on the nightstand lies shattered on the floor, its colored pieces a stark contrast against the white flooring.\nOn the bed lies Anna, with her legs tied together and arms chained to the bedpost.\n\"William...\"she tries to get up as you approach.\n\"Down,\" one of the guards smacks his SMG into her nose. As Anna falls back onto the bed, a trickle of blood starts flowing from her nose. \nYou almost feel a pang of sympathy before you remember who she is.\n\"Anna.\" You pull up the chair to the bed until a guard blocks your way. \"That's close enough, sir.\" \n\"Okay. Can we at least talk in private?\"\n\"No sir. We're to be here at all times now. Deputy's orders.\"\n\"Of course.\" You turn to Anna. \"I thought we were past this.\"\n\"Past what? Why am I being detained, William? What have I done?\"\nYou shake your head in defeat. Just like last time, she has no memory of what she's done. There's nothing else left to do, really.\n\t\t\t\t[[Decommission her]] or [[Probe the matter]]?",
+      "links": [
+        {
+          "text": "Decommission her",
+          "destination": {
+            "name": "Decommission her",
+            "pid": 10
+          }
+        },
+        {
+          "text": "Probe the matter",
+          "destination": {
+            "name": "Probe the matter",
+            "pid": 9
+          }
+        }
+      ]
+    },
+    {
+      "pid": 9,
+      "name": "Probe the matter",
+      "text": "You decide to investigate why she acted this way. \n\"What is the last thing you remember?\" \nYou look at her expectantly, waiting for an answer, watching for a telltale flicker of her eyes or a twitch of her nose. \nYou get nothing.\n\"I woke up this morning. Went through the usual routine and...well, I guess I fell asleep sometime in the afternoon. And when I woke up, these men arrived and...and...\" she starts to sob.\nThe guard nearest to you shakes his head. \n\"Very well.\" You get to your feet. \nThere's nothing more to be gained here.\n\"Should I do it then?\" The guard looks to you for an answer.\n\"Yes,\" you say with just a moment's hesitation. But it is enough for him to notice. You're sure he'll be talking about it to the Deputy later.\n\"Very well, sir.\"\n\t\t\t\t[[Walk out|Decommission her]] of the room",
+      "links": [
+        {
+          "text": "Walk out",
+          "destination": {
+            "name": "Decommission her",
+            "pid": 10
+          }
+        }
+      ]
+    },
+    {
+      "pid": 10,
+      "name": "Decommission her",
+      "text": "You get up and start walking out of the room.\n\"Keep it clean.\" You turn around and address the guards. \"You made one hell of a mess last time. Some of the things you did were...totally unnecessary.\"\nYour mind goes back to when you last witnessed one of them being decommissioned. You push the thought out of your head. \n\"All right, sir.\"\nYou walk out the door. One of the men shuts it behind you. In the room, Anna starts to scream. \nThough the sounds are muffled, you barely stop yourself from wincing. It would not do to show the slightest sign of sympathy to her kind in this building.\n\"Sir,\" one of the Deputy's men calls out to you. \"He's waiting for you in his office.\"\n\"Yes.\" You take a few seconds to compose yourself. In that moment, you realise the true gravity of the situation. The company would be in deep shit if news of this incident got out. People would start panicking all over again, just like when news of 2020 got out. Hell, they still hadn't rounded up all of the escapees. But of course, it wouldn't do to let the public know. \nYou take a deep breath.\n\"You've got this, William.\" You expect Deputy Joyce to be in one of his foulest moods. \nYou take a deep breath and [[open the door]] to his office. ",
+      "links": [
+        {
+          "text": "open the door",
+          "destination": {
+            "name": "open the door",
+            "pid": 11
+          }
+        }
+      ]
+    },
+    {
+      "pid": 11,
+      "name": "open the door",
+      "text": "You enter the office to find Deputy Joyce standing at the window, looking out onto the road below. \nThe room is simply furnished, with zero extravagance. Everything is arranged in an orderly fashion, just the way the Deputy likes it.\nMost of the space is taken up by his huge desk, which is piled high with books, letters and folders, several of which are marked \"Classified.\" A bookshelf is lined up along the left wall of the room, while the right wall stares back at it, strangely bare but for a window in a corner. \nDeputy Joyce breaks the silence.\n\"Did you know the previous Deputy, William?\"\n\"Not really, no. I was hired shortly before the 2020 thing happened, and I didn't really get a chance to know him before he was...\"\n\"Suspended.\" Deputy Joyce fills in for you. \"And eventually the Company decided to cut all ties with him to win back public support. He did what was asked of him, though. Took all the blame. To this day, the people blame him for what happened. And look where his loyalty got him, William.\"\nYou remain silent.\n\"Do you know where he lives now? Oh, he fled the country as soon as the official investigation was wrapped up. Thought he could escape the incident. Poor guy.\"\n\"So where is he now?\"\n\"Oh, he's dead. He died a sorry death, away from home, in a strange country, surrounded by strangers.\"\nDeputy Joyce pauses while he walks to his desk. He sits in the chair and motions for you to do the same. \n\"When the locals found out what he'd done-when they found out about his time here-they assumed that he was consorting with a 'spirit.' They held this spirit responsible for the sudden death of their cattle. And so they rounded up some men, and confronted him at his home.\"\n\t\t\t\t\tYou wait for him to [[continue|Story 2]].",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "Story 2",
+            "pid": 12
+          }
+        }
+      ]
+    },
+    {
+      "pid": 12,
+      "name": "Story 2",
+      "text": "\"What place did he flee to?\" you ask.\nThe Deputy ignores your question and continues with his story.\n\"It turned ugly. In a desperate attempt to placate the unruly crowd, he showed them a little something he'd been working on in his spare time. A new update to the memory core, based on our own models. They took it as proof of him practising witchcraft.\"\n\"What happened to him?\"\n\"They beat him to death.\"\nYou feel a chill run down your spine. \n\"What's the point of this story, sir?\"\n\"No point, William. You see, it was only a common infection killing off the cows. The people see what they want to see. The good guy, the bad guy; it's who they *want* to be the good guy. Just a tragic end to one of the brightest minds the Company has ever seen.\"\n\"Sir, about the incident today...\"\n\"Save it. I already have the details. Did you find anything else?\"\n\"No, sir. I still don't understand why she acted that way. I specifically addressed that section of the code just a month ago. I provided against such behaviour...\"\n\"I'll stop you there, William. Did it help? The patch?\"\n\"Sir, I...\"\n\"Did it help?\"\nYou stare at the floor resignedly.\n\"I want you to...rethink your decisions. Take a week off.\"\n\"Sir?\" You get up to your feet in surprise. \"Are you getting rid of me?\"\n\"You'll know when you're no longer wanted, William.\"\nYou don't know how to respond.\n\"Collect your things from your office. Before leaving, make sure you update Dr. Sophia on that patch you mentioned. I don't have to tell you this, but make sure nobody knows of what happened here today. You don't share it with anybody unless expressly told to do so. Understood?\"\n\"Understood.\"\n\"Okay then. Have a nice vacation, Dr. William.\"\nYou get up and [[walk out of the room]].",
+      "links": [
+        {
+          "text": "walk out of the room",
+          "destination": {
+            "name": "walk out of the room",
+            "pid": 13
+          }
+        }
+      ]
+    },
+    {
+      "pid": 13,
+      "name": "walk out of the room",
+      "text": "You close the door to the Deputy's office behind you and stand there for a while. You still can't believe he's getting rid of you. Before you decide whether to go back in and try to convince him of your update, you hear what sounds like an argument going on in the hallway. From what you can hear, the security are trying to stop someone from coming into the hallway.\n[[Investigate]] or [[Move to your Office]]?\n",
+      "links": [
+        {
+          "text": "Investigate",
+          "destination": {
+            "name": "Investigate",
+            "pid": 14
+          }
+        },
+        {
+          "text": "Move to your Office",
+          "destination": {
+            "name": "Move to your Office",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 14,
+      "name": "Investigate",
+      "text": "You decide to check out the commotion. As you round the corner, you're in for a surprise. \n\"Sarah?\"\n\"Hey. They just won't let me through! What's going on?\"\nYou seem to have arrived right on time. The guards have already put Sarah in cuffs, and were about to lead her away, probably to the Security Room for temporary holding until they figured out what to do with her.\n\"Un-cuff her,\" you demand.\n\"Sorry, sir. She was trying to get into a restricted area. She clearly does not have the clearance.\"\n\"I TOLD you,\" Sarah interjects angrily,\" I forgot my ID at home! Goddamn it, I work here! Where is Ben? Isn't this supposed to be his shift?\"\nThe guards fall quiet. \n\"We're on special duty, ma'am.\"\n\"What for? What happened?\" She turns to you. \n\"It's best if we don't discuss this now,\" you say.\n\"Dr. Sarah.\" Deputy Joyce sounds almost exhausted as he appears behind you. \"I see you invited yourself in.\"\n\"Deputy. I believe I have a right to know what's going on with the Project. It has something to do with Anna, right?\"\n\"I'm afraid Anna is no longer part of The Project. We'll be shifting her to the 5th floor now. I am pleased to inform you that your husband has decided to take a break from this nightmare. I suggest you take advantage of this and unwind over the week. Forget about work for a while. Right, William?\"\nHe looks at you with those laser-eyes of his.\n\"Right,\" you answer in a flat voice.\n\"So [[what next]]?\" Sarah turns to you.",
+      "links": [
+        {
+          "text": "what next",
+          "destination": {
+            "name": "what next",
+            "pid": 17
+          }
+        }
+      ]
+    },
+    {
+      "pid": 15,
+      "name": "Move to your Office",
+      "text": "You walk down the hallway and towards your office. You can't believe you won't be working on the Project anymore. If it weren't for you, there wouldn't be a Project! You see someone standing outside your office, probably waiting for you to arrive.\nGetting closer, you see that it's Dr. Sophia. \n\"Hello, Dr. William,\" she says as you approach her. She gives you a nervous smile. \nDr. Sophia is tall and dark-haired. She is an accomplished scientist, another young prodigy recruited by the Company right out of grad school. She completed her further studies alongwith a part-time position at the company. \nSince her first day on the Project, she has always been on her toes around you. She's the best in her field - her thesis centred on Machine Learning - but sometimes her nervousness tends to rub you off the wrong way. You admire courage - you always have - and the sight of fluttery people makes you like them a little less almost instantly.\n\"Dr. Sophia. I figure you're here for information on the patch I rolled out.\" You get right to the point. You're in no mood for bullshit. Your initial confusion is dissipating fast, being replaced by a red-hot fury.\n\"About that. Umm, I...\" she stares down at her feet, thinking hard.\"I don't know how to say this...\"\n\"What is it?\"\n\"Why?\" she suddenly looks up at you. \"Why did you do it?\"\nA single tear rolls down her cheek.\nYou stare at her in astonishment. You wait for her to [[continue]].\n",
+      "links": [
+        {
+          "text": "continue",
+          "destination": {
+            "name": "continue",
+            "pid": 16
+          }
+        }
+      ]
+    },
+    {
+      "pid": 16,
+      "name": "continue",
+      "text": "\"What do you mean?\" You are taken aback by the sudden change in her behaviour. You've never seen Dr. Sophia upset, and the single tear rolling down her cheek jolts you to the core in a way even Deputy Joyce's laser-sight doesn't.\n\"Don't. Just don't deny it. I have proof.\" At this point, she breaks down, waving a bunch of papers in the air, while her sobs heighten and she doubles up, clutching her knees for support. \nYou look around you. If anyone happens to chance upon you, both of you  would surely be detained by security for further questioning by the Deputy, who also handles all personnel matters. The Deputy takes special pride in his ability to resolve employee conflicts, either by making them get along or firing one of them.\nNo, you decide. You do not want another meeting with the Deputy. \n\"Dr. Sophia, I...\" you try again in a calmer, helpful tone. \nShe's mistaking the \"proof\" as mine, you deduce. Someone else screwed up, and she's pinning it on me. No. I won't be screwed over again. Not twice. \n\"Show me the proof.\" \n\"No...\"she is slowly regaining her composure.\"I'll turn you in for what you did, you bastard. Do you know that people died today?\"\nLuckily, no one has come your way yet, but that won't remain true after a while - Dr. Sophia is causing quite a commotion.\nYou look at the papers. They seem to be security records with Employee Numbers and Time entries, but you cannot say for sure. \n[[Grab the Papers]] or [[Reason with Dr. Sophia]]?\n\n\n",
+      "links": [
+        {
+          "text": "Grab the Papers",
+          "destination": {
+            "name": "Grab the Papers",
+            "pid": 18
+          }
+        },
+        {
+          "text": "Reason with Dr. Sophia",
+          "destination": {
+            "name": "Reason with Dr. Sophia",
+            "pid": 19
+          }
+        }
+      ]
+    },
+    {
+      "pid": 17,
+      "name": "what next",
+      "text": "You shrug. \n\"I am officially on leave now, I guess. Nothing to do but go home and wait it out.\"\n\"Wait for what? For god's sake William, what the hell happened here?\"\n\"That's enough, Sarah,\" Deputy Joyce interjects.\"I think it best if the two of you would leave. And William? Think on what we agreed.\"\nYou give him a nod. Clearly, he doesn't want you telling Sarah about the incident. You'll need to think of a good cover story. Usually, Sarah can see through your bullshit without any trouble. \nI'll deal with that later, you decide. \n\"Is that a threat?\" Sarah stares defiantly at the Deputy.\nYou think now is the right time for you to intervene, before things get out of hand. \n\"Sarah,\" you take her by the arm and lead her out the door, into the hallway. \n\"Is Anna okay?\" she asks you.\n\"Yes,\" you lie, without a moment of hesitation. If Sarah finds out what has happened, she would no doubt want to have a lengthy talk with the Deputy. You can't have that, not with your entire Project on the line. \n\"You have to calm down and trust me, Sarah. Just wait for me in the lobby, okay? Wait by the main exit.\"\n\"Where are you going?\"\n\"I still have to collect my things from the office. Like I said, I am on leave for a while now.\"\n\"Okay.\" She seems a bit dazed. \"I'll wait by the main exit.\"\n\"I'll be there before you know it.\"\n\nYou send her off and [[proceed|Move to your Office]] towards your office. ",
+      "links": [
+        {
+          "text": "proceed",
+          "destination": {
+            "name": "Move to your Office",
+            "pid": 15
+          }
+        }
+      ]
+    },
+    {
+      "pid": 18,
+      "name": "Grab the Papers",
+      "text": "You have had enough of this. \n\"Give me the papers!\" You walk up to her and snatch them out of her hands.\nDr. Sophia stares at you with equal parts rage and surprise-clearly she never expected you to use physical force. \nShe turns around and starts running away from you. Before you can decide whether to pursue her or not, you hear footsteps running towards you from the other end of the hallway. \nSarah is breathless as she bounds into view. \n\"What are you doing here?\" you exclaim. \"I thought...\"\n\"No time...\" she breathes heavily. \"I slipped past them, but I'm sure they'll be on to me in a while.\"\nYou never really expected Sarah to stay put once she realised that the Project was in danger. \n\"Yeah, about that.\" You wince when you recall Dr. Sophia's sudden departure, and your actions preceding it. \"I think Security's onto us already.\"\n\"What's that?\" she points to the bunch of papers in your hand. \n\"Evidence,\" you reply.\nShe looks at you quizically. \n\"Later,\" you say. \"We need to leave. Now.\"\n\t\t\t\t\t[[Leave]] the building",
+      "links": [
+        {
+          "text": "Leave",
+          "destination": {
+            "name": "Leave",
+            "pid": 20
+          }
+        }
+      ]
+    },
+    {
+      "pid": 19,
+      "name": "Reason with Dr. Sophia",
+      "text": "\"Dr. Sophia,\" you begin. \"This is all a big misunderstanding. I've worked here for years.\"\nSuddenly, you're overwhelmed by everything. The Deputy dissing you, Anna breaking out and now, Dr. Sophia threatening to turn you in? \n\"Fuck you!\"\nShe drops the papers to the floor and stares at you in total shock. The expression on her face is almost comical. \nIn all your time on the Project, you've never once lost it-not on Company premises. You've always been cordial to all of your teammates and respectful to your superiors-the model Lead Scientist. \nLooking at her ridiculous expression, you start to laugh. Loudly. \n\"You think you can all fuck around with me-at the same time? That sick shit-what a joke. Sending me on a sabbatical. Taking away my work. MY creation!\"\nYou spray spittle as you raise your voice. Dr. Sophia looks scared now.\nShe looks up at you - she's on her knees, gathering the last sheet of paper from the floor. \n\n\t\t\t\t\t[[Obtain the papers|Grab the Papers]]",
+      "links": [
+        {
+          "text": "Obtain the papers",
+          "destination": {
+            "name": "Grab the Papers",
+            "pid": 18
+          }
+        }
+      ]
+    },
+    {
+      "pid": 20,
+      "name": "Leave",
+      "text": "You turn and lead the way-you choose to go in the opposite direction from Dr. Sophia. \nYou stop at the corner and peer around. The place is deserted. The two security guards are nowhere to be seen, and the room is devoid of any other staff.\nTo the left is Anna's room-for a moment, you're saddened by the thought of never talking to her again. You'll forever cherish those late night debugging sessions when she could only respond through the screen.\nGod, that wasn't all that long ago, you realise. Things sure moved ahead quickly.\nYou're reminded of the day she woke up for the first time. Back when she was just rows of processors with no physical form.\n\n[[Reminisce]] or [[Clear head]]",
+      "links": [
+        {
+          "text": "Reminisce",
+          "destination": {
+            "name": "Reminisce",
+            "pid": 21
+          }
+        },
+        {
+          "text": "Clear head",
+          "destination": {
+            "name": "Clear head",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 21,
+      "name": "Reminisce",
+      "text": "3 YEARS AGO\n\n\"Ok,\" you declare. \"I think we're ready to try again.\"\n\"Are you sure?\" Sarah looks to you for confirmation. \"The last time we tried to interact with it, we fried the memory code.\"\n\"It shouldn't do that now that I have applied the patch.\" Dr. Sophia replies.\n\"Okay then. Here we go.\"\nYou turn to your console and type in the command. \nThe rows of machines begin to whir-you inadvertently think of literal gears turning in one's head- and emit a single 'beep.'\n\"Any moment now.\"\nThe three of you stare eagerly at the console screen, waiting for the magic to take place. To witness what you have been working towards for years. \nTwo words appear on the screen. Beside you, Sarah draws in a sharp breath.\nYou steal a quick glance at Dr. Sophia, who's equally entranced.\nHELLO WORLD, it reads.  \nAnd then, WHO AM I?\nYou look at Sarah. She's grinning widely.\n\"We've done it. The Company's first AI venture. Goodbye, VI.\"\nYou return her smile and turn to the console. \n\"What should I name...it?\"\n\"I have a name in mind,\" Sarah steps forward.\n\n\t\t\t\t[[Return|Clear head]] to the present",
+      "links": [
+        {
+          "text": "Return",
+          "destination": {
+            "name": "Clear head",
+            "pid": 22
+          }
+        }
+      ]
+    },
+    {
+      "pid": 22,
+      "name": "Clear head",
+      "text": "This is no time to indulge yourself in thoughts about the past, you realize.\nI'll find a way to salvage my work, you decide. I won't let them take it away from me. \nYou move into the empty hall. Just to your right, is the door leading to the emergency staircase. \nYou run to the door, with Sarah on your heels. \nThe light shines off the steel railing as you prepare to descend the first flight of stairs. Before you can do so, a door opens up on the floor below you. You hear someone speak.\n\"All clear on this floor. The stairwell is clear too. Moving upwards.\"\n\"Shit.\" You turn back and retreat into the hall. You hear multiple footsteps hurrying to your location from down the hall, probably Dr. Sophia returning with security.\n\"Shit. Shit.\" Without thinking, you move to Anna's room. You swipe your card for access. \n*ACCESS DENIED. PLEASE CONTACT NEAREST SECURITY PERSONNEL FOR HELP*\nYou're boxed in. Dr. Sophia will be rounding the corner any moment now. \nYou feel the sweat running down your back. \nBefore you can react, the security panel beside Anna's door flashes green. \nACCESS GRANTED\n\"What the...\"\n\"Quick.\" Sarah shoves you into the room and shuts it behind you.\nOnly then do you take in the [[view]] in front of you.",
+      "links": [
+        {
+          "text": "view",
+          "destination": {
+            "name": "view",
+            "pid": 23
+          }
+        }
+      ]
+    },
+    {
+      "pid": 23,
+      "name": "view",
+      "text": "\"Wh..Oh god.\"\nAnna is splayed on the bed, with her arms and legs staring lifelessly at the ceiling. Several bullet holes riddle her skin cover.\nHer eyes are wide open, staring lifelessly at the ceiling. \n\"No...\" Sarah lets out a low moan as she sinks to her knees. \"You said everything was fine. You lied.\" \nThe four guards are all on the floor, one of them with his gun still in his hand, a finger ready on the trigger. \nIt's clear they were taken by surprise. They never expected Anna to fight back THIS hard. \nThe guard nearest to you has a deep cut on his throat - the very thought of choking to death on one's own blood makes you gag. \n\"I can't...nope.\" You turn around so you won't have to look at the mutilated bodies. You steady yourself by leaning against the wall. \nSarah stands up straight all of a sudden. You are scared by the look on her face - last you'd seen her that way, she had taken on Deputy Joyce. The first of many arguments to follow.\n\"We need to get her out of here.\"\n\"Yeah.\" You agree. \"Wait. What?\"\n\"Yes.\" She looks straight at you. \"I mean, we need to get Anna out of here. Take her back. With us.\"\nYou stare at her incredulously. \n\"You're serious.\"\n\"[[Let's go.]]\"",
+      "links": [
+        {
+          "text": "Let's go.",
+          "destination": {
+            "name": "Let's go.",
+            "pid": 24
+          }
+        }
+      ]
+    },
+    {
+      "pid": 24,
+      "name": "Let's go.",
+      "text": "\"Hold on. I don't think...\"\n\"No, it's perfect.\" She walks up to the bed and shoves a dead guard off of it.\n\"We'll find out what went wrong. Think about it. We have her, we have her memory core. We'll solve this whole thing before the Deputy can even start blaming us.\"\n\"I don't know, Sarah. It sounds...\"\n\"Are you going to help me or not?\"\nYou take a deep breath.\n\"That's...you're asking me to openly defy the Deputy. We'll be fired. We'll...we'll lose everything, Sarah.\"\n\"Trust me. We won't. Now, are you with me?\"\n[[Trust Sarah|Go with  Sarah]]  or  [[Turn yourself in]]\n",
+      "links": [
+        {
+          "text": "Trust Sarah",
+          "destination": {
+            "name": "Go with  Sarah",
+            "pid": 25
+          }
+        },
+        {
+          "text": "Turn yourself in",
+          "destination": {
+            "name": "Turn yourself in",
+            "pid": 26
+          }
+        }
+      ]
+    },
+    {
+      "pid": 25,
+      "name": "Go with  Sarah",
+      "text": "You think back on all the sleepless nights you spent working on Anna's responses, her personality traits. Correcting bugs, discovering new ones. \nYour mind then switches to Deputy Joyce. \nThat prick, you vent internally. What's *he* ever done for the Company after the 2020 thing? Nothing! And he's always telling *us* what to do! Like he knows shit about our work. And he suspended me! To hell with him and the Company.\n\"Fine. Let's do it.\" \nYou step over the dead guard still clutching his gun. Sarah flings Anna over her shoulders in one swift motion.\n\"Whoa.\" You exclaim. \"That's...impressive?\"\n\"What? She doesn't weigh all that much.\"\n\"You sure you don't need help carrying her?\"\n\"I'll manage. Could you check if everything's clear outside?\"\n\"Yeah.\"\nIt suddenly hits you. The gun. It could be useful out there. \nNO! You try to control yourself. What the hell am I thinking? A gun? It's not like you're going to use it.\n\n[[Grab the gun]] or  [[leave it]] on the floor?",
+      "links": [
+        {
+          "text": "Grab the gun",
+          "destination": {
+            "name": "Grab the gun",
+            "pid": 27
+          }
+        },
+        {
+          "text": "leave it",
+          "destination": {
+            "name": "leave it",
+            "pid": 28
+          }
+        }
+      ]
+    },
+    {
+      "pid": 26,
+      "name": "Turn yourself in",
+      "text": "\"No.\"\n\"What?\"\n\"No. I'm NOT okay with this. I think we need to sort this mess out. I can talk to the Deputy, have him bring in Dr. Sophia and clear up this-\"\n\"Have you lost it?\" Sarah exclaims. \"She...Anna is OUR creation. And the Deputy suspended you without so much as a thought! These are the people you want to stay loyal to?\"\n\"It's not about loyalty. It's about doing the right thing. We can't just smuggle her out of here!\"\n\"Shit. Do what you want. Just don't try and stop me.\"\n\"You're not thinking clearly! Where will you go? Do you think they haven't secured the building already? God, Sarah, you're not thinking straight! They know where we live! Where will you go?\"\n\"I'll figure something out! At least I am not running away from it all!\"\n\"Have it your way.\"\nYou never thought Sarah would take it this far. You knew she was always a bit...passionate and...vocal about her feelings, but this was a whole new side of her.\nYou turn and walk up to the door.\nHere goes nothing.\nYou [[open]] the door.\n",
+      "links": [
+        {
+          "text": "open",
+          "destination": {
+            "name": "open",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 27,
+      "name": "Grab the gun",
+      "text": "You decide to grab the gun. \nJust in case things go completely downhill. You never can tell. \nWith Sarah waiting behind you, you crack open the door and take a peek.\nNobody is in sight.\nCarefully, slowly, you open the door wide, almost expecting a guard to show up and point a gun at you.\nYou are about to give Sarah the 'all-clear' signal, but suddenly a guard comes bounding around the corner. You raise your gun at him.\n\"Whoa...\"he stops short. He's out of breath; you don't receognise him. He must be one of the new ones. \n\"Sir...where'd you get that gun?\" he asks you. He raises both hands, trying to reason with you. \"Put down the gun, sir.\"\nSlowly, he starts moving towards you. \n\"Don't.\" You hear yourself say. It's like you're not in control anymore. You feel like you're watching the scene from far away. \n\"One more step and I'll...\" you threaten the guard.\n\"Please, sir.\" He doesn't stop moving. He's inching towards you steadily. Soon, he'll be close enough to pounce onto you.\nYou can hear your heart pounding noisily. You can suddenly feel the sweat running down your forehead. Just like that, you're back in the moment.\n\n\t\t\t[[Shoot Guard]]    or   [[Drop the gun]]\n",
+      "links": [
+        {
+          "text": "Shoot Guard",
+          "destination": {
+            "name": "Shoot Guard",
+            "pid": 30
+          }
+        },
+        {
+          "text": "Drop the gun",
+          "destination": {
+            "name": "Drop the gun",
+            "pid": 31
+          }
+        }
+      ]
+    },
+    {
+      "pid": 28,
+      "name": "leave it",
+      "text": "No, you stop yourself. What am I doing? A gun? No way! That's taking it way overboard.\nYou walk up to the door and turn the knob, [[opening|open]] it slowly. ",
+      "links": [
+        {
+          "text": "opening",
+          "destination": {
+            "name": "open",
+            "pid": 29
+          }
+        }
+      ]
+    },
+    {
+      "pid": 29,
+      "name": "open",
+      "text": "The lobby is deserted, but you hear someone rushing towards you. \nFrom the sounds, it seems as if it's two or three people running together. \nYour guess is proven correct as three guards come running around the corner. \n\"Sir, you're to come with us for questioning. Do not try to evade capture.\"\nThe squad leader approaches you, weapon raised.\n\"Are you by any chance in possession of a weapon, sir? If yes, turn it in right now or we will be forced to take you down.\"\nYou are so relieved you chose to leave the gun behind.\n\"No, no. No weapons. I'm coming in. Peacefully.\"\nThe guard approaches you and turns you around. He slaps a pair of cuffs onto your wrists and shoves you down onto your knees. \n\"Hey!\" You protest. \"I said I'll come quietly.\"\nHe ignores you and shoves Sarah beside you as Anna's body thuds lifelessly on the floor.\nShit. It's out of control now, you think. The guard walks behind you. The very next instant, you feel a sharp pain blossoming from the bottom of your head as you fall face-first onto the floor. You crush your nose in the fall-you can see the blood, but you cannot feel a thing. \nAnd then your eyes start to close. The last thing you feel is your body being lifted into the air.\n\n[[End of Part 1]] ",
+      "links": [
+        {
+          "text": "End of Part 1",
+          "destination": {
+            "name": "End of Part 1",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 30,
+      "name": "Shoot Guard",
+      "text": "BANG!\nYou stare in horror as the guard drops to the floor, clutching his throat with his eyes wide in horror. The bullet went clean through the throat.\nThe blood spurts through his fingers, running down the front of his shirt, turning it red. The guard drops onto his knees, and then facedown onto the floor. The blood begins form a small pool around his face. \nYou are paralyzed. You cannot move. You cannot hear Sarah, even though judging from her face she's clearly shouting at you. The scene keeps replaying in your head; the guard clutching his throat, the blood leaking out...\n\"Ohh...\" you brace yourself as you heave the contents of your stomach all over the floor. \nWhat have I done? you keep thinking over and over again. \nSlowly, Sarah's voice comes into focus. You glance over to her. She has Anna on the floor, and she's talking to you with a worried expression.\n\"William? We won't make it out of here.\"\nYou go through another bout of vomiting in response.\n\"It's over. They're almost here. They won't wait for any explanations. They'll knock us out straight away. William, whatever happens, know that I won't let anything happen to you. Do you understand that?\"\nIt all feels very strange. You nod your head.\nA group of guards is approaching you from the hallway.\nYou [[brace yourself]].",
+      "links": [
+        {
+          "text": "brace yourself",
+          "destination": {
+            "name": "brace yourself",
+            "pid": 33
+          }
+        }
+      ]
+    },
+    {
+      "pid": 31,
+      "name": "Drop the gun",
+      "text": "No. I can't do it. \n\"Please. I...\" you drop to your knees as you let the gun clatter onto the floor. \nThe guard quickly walks up to the gun and kicks it out of your reach. \n\"I am truly sorry, sir.\"\nYou remember the Company's policy of neutralize-first, ask-questions-later policy. You're about to tell the guard that you'll go without a fuss when he hits you on the head with his gun.\nYou fall to the ground, and try to battle the darkness that is closing in fast.\nThe last thing you see is Sarah being forced to the ground beside you. \nThe guard puts a gun to her head as she tries to resist him. \n\"Sarah...don't.\" At least that's what you think you say. \nAnd then the world turns black.\n*BANG*\n\n[[End of Part 1]]",
+      "links": [
+        {
+          "text": "End of Part 1",
+          "destination": {
+            "name": "End of Part 1",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 32,
+      "name": "End of Part 1",
+      "text": "So what next? Is this all? (My thoughts exactly after two hours with The Awesome Adventures of Captain Spirit). \nThis is all for now, though. \nPlease leave your comments and provide feedback on whatever aspect of the game bugged you (or if you liked something or want to see it differently).\nI'll start work on the next part of William's story soon.\nI promise one thing; the next iteration shall definitely have a much more interactive, enhanced playing experience. Hope you had fun! \n\n\t\t\t\t\t\t\t\t[[Credits]]\n\t\t\t\t\t\t",
+      "links": [
+        {
+          "text": "Credits",
+          "destination": {
+            "name": "Credits",
+            "pid": 35
+          }
+        }
+      ]
+    },
+    {
+      "pid": 33,
+      "name": "brace yourself",
+      "text": "Four guards burst into your field of view, guns at the ready.\n\"Stop!\"\n\"Drop the weapon!\"\n\"Drop the Subject!\"\nYou look down to see that you're still holding on to the gun. Shocked, you let go of it in a violent motion that startles the guards.\nOne of them holsters his gun and draws a smaller, compact pistol.\nShit, you realize. They're gonna tranquilise us. And take us in. Too late to do anything now. Shit. Shit. Shit. How did it all go so wrong?\nAnd then he fires. \nYou feel a stinging sensation in your neck. Instantly, your knees buckle beneath you.\nAs you lie on the ground, in your final moments of consciousness, you see a guard pushing Sarah to her knees and putting a gun to her head.\nHe seems to hesitate for a moment. One of the other guards walks forward, shouting at the others. \nThen everything goes black.\n*BANG*\n\n[[End of Part 1]]",
+      "links": [
+        {
+          "text": "End of Part 1",
+          "destination": {
+            "name": "End of Part 1",
+            "pid": 32
+          }
+        }
+      ]
+    },
+    {
+      "pid": 34,
+      "name": "Start",
+      "text": "This is a simple, hypertext IF Game so I believe no tutorial is required.\nEven if you're completely new to the genre, you'll intuitively click on the link and *voila*! You're on the next passage, you just made your first choice. It's as easy as that!\nInstead of one huge story, I've decided to make several games, which will cover a bigger story between them in a non-linear fashion. So, enjoy the first Part of I don't know how many there will be.\nWARNING : *Contains infrequent swearing*\n[[Start Game|Chapter 1]]\n(link: \"Quit\")[<script>window.close()</script>]",
+      "links": [
+        {
+          "text": "Start Game",
+          "destination": {
+            "name": "Chapter 1",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 35,
+      "name": "Credits",
+      "text": "Parth Sharma : Beta-Tester\nImage Credit : Juhasz Imre (photo from pexels.com)\n\n\n(Captions on image added using Picfont)\n\n[[Back|Start]]",
+      "links": [
+        {
+          "text": "Back",
+          "destination": {
+            "name": "Start",
+            "pid": 34
+          }
+        }
+      ]
+    }
+  ]
+}
